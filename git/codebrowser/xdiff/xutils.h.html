@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>xutils.h source code [codebrowser/xdiff/xutils.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/xdiff/xutils.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>xdiff</a>/<a href='xutils.h.html'>xutils.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *  LibXDiff by Davide Libenzi ( File Differential Library )</i></td></tr>
+<tr><th id="3">3</th><td><i> *  Copyright (C) 2003  Davide Libenzi</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> *  This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> *  modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> *  License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> *  version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> *  This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="13">13</th><td><i> *  Lesser General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> *  You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> *  License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="17">17</th><td><i> *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> *  Davide Libenzi &lt;davidel@xmailserver.org&gt;</i></td></tr>
+<tr><th id="20">20</th><td><i> *</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined(<span class="macro" data-ref="_M/XUTILS_H">XUTILS_H</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/XUTILS_H" data-ref="_M/XUTILS_H">XUTILS_H</dfn></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><em>long</em> <dfn class="decl" id="xdl_bogosqrt" title='xdl_bogosqrt' data-ref="xdl_bogosqrt">xdl_bogosqrt</dfn>(<em>long</em> <dfn class="local col5 decl" id="15n" title='n' data-type='long' data-ref="15n">n</dfn>);</td></tr>
+<tr><th id="29">29</th><td><em>int</em> <dfn class="decl" id="xdl_emit_diffrec" title='xdl_emit_diffrec' data-ref="xdl_emit_diffrec">xdl_emit_diffrec</dfn>(<em>char</em> <em>const</em> *<dfn class="local col6 decl" id="16rec" title='rec' data-type='const char *' data-ref="16rec">rec</dfn>, <em>long</em> <dfn class="local col7 decl" id="17size" title='size' data-type='long' data-ref="17size">size</dfn>, <em>char</em> <em>const</em> *<dfn class="local col8 decl" id="18pre" title='pre' data-type='const char *' data-ref="18pre">pre</dfn>, <em>long</em> <dfn class="local col9 decl" id="19psize" title='psize' data-type='long' data-ref="19psize">psize</dfn>,</td></tr>
+<tr><th id="30">30</th><td>		     <a class="typedef" href="xdiff.h.html#xdemitcb_t" title='xdemitcb_t' data-type='struct s_xdemitcb' data-ref="xdemitcb_t">xdemitcb_t</a> *<dfn class="local col0 decl" id="20ecb" title='ecb' data-type='xdemitcb_t *' data-ref="20ecb">ecb</dfn>);</td></tr>
+<tr><th id="31">31</th><td><em>int</em> <dfn class="decl" id="xdl_cha_init" title='xdl_cha_init' data-ref="xdl_cha_init">xdl_cha_init</dfn>(<a class="typedef" href="xtypes.h.html#chastore_t" title='chastore_t' data-type='struct s_chastore' data-ref="chastore_t">chastore_t</a> *<dfn class="local col1 decl" id="21cha" title='cha' data-type='chastore_t *' data-ref="21cha">cha</dfn>, <em>long</em> <dfn class="local col2 decl" id="22isize" title='isize' data-type='long' data-ref="22isize">isize</dfn>, <em>long</em> <dfn class="local col3 decl" id="23icount" title='icount' data-type='long' data-ref="23icount">icount</dfn>);</td></tr>
+<tr><th id="32">32</th><td><em>void</em> <dfn class="decl" id="xdl_cha_free" title='xdl_cha_free' data-ref="xdl_cha_free">xdl_cha_free</dfn>(<a class="typedef" href="xtypes.h.html#chastore_t" title='chastore_t' data-type='struct s_chastore' data-ref="chastore_t">chastore_t</a> *<dfn class="local col4 decl" id="24cha" title='cha' data-type='chastore_t *' data-ref="24cha">cha</dfn>);</td></tr>
+<tr><th id="33">33</th><td><em>void</em> *<dfn class="decl" id="xdl_cha_alloc" title='xdl_cha_alloc' data-ref="xdl_cha_alloc">xdl_cha_alloc</dfn>(<a class="typedef" href="xtypes.h.html#chastore_t" title='chastore_t' data-type='struct s_chastore' data-ref="chastore_t">chastore_t</a> *<dfn class="local col5 decl" id="25cha" title='cha' data-type='chastore_t *' data-ref="25cha">cha</dfn>);</td></tr>
+<tr><th id="34">34</th><td><em>long</em> <dfn class="decl" id="xdl_guess_lines" title='xdl_guess_lines' data-ref="xdl_guess_lines">xdl_guess_lines</dfn>(<a class="typedef" href="xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col6 decl" id="26mf" title='mf' data-type='mmfile_t *' data-ref="26mf">mf</dfn>, <em>long</em> <dfn class="local col7 decl" id="27sample" title='sample' data-type='long' data-ref="27sample">sample</dfn>);</td></tr>
+<tr><th id="35">35</th><td><em>int</em> <dfn class="decl" id="xdl_blankline" title='xdl_blankline' data-ref="xdl_blankline">xdl_blankline</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="28line" title='line' data-type='const char *' data-ref="28line">line</dfn>, <em>long</em> <dfn class="local col9 decl" id="29size" title='size' data-type='long' data-ref="29size">size</dfn>, <em>long</em> <dfn class="local col0 decl" id="30flags" title='flags' data-type='long' data-ref="30flags">flags</dfn>);</td></tr>
+<tr><th id="36">36</th><td><em>int</em> <dfn class="decl" id="xdl_recmatch" title='xdl_recmatch' data-ref="xdl_recmatch">xdl_recmatch</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="31l1" title='l1' data-type='const char *' data-ref="31l1">l1</dfn>, <em>long</em> <dfn class="local col2 decl" id="32s1" title='s1' data-type='long' data-ref="32s1">s1</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="33l2" title='l2' data-type='const char *' data-ref="33l2">l2</dfn>, <em>long</em> <dfn class="local col4 decl" id="34s2" title='s2' data-type='long' data-ref="34s2">s2</dfn>, <em>long</em> <dfn class="local col5 decl" id="35flags" title='flags' data-type='long' data-ref="35flags">flags</dfn>);</td></tr>
+<tr><th id="37">37</th><td><em>unsigned</em> <em>long</em> <dfn class="decl" id="xdl_hash_record" title='xdl_hash_record' data-ref="xdl_hash_record">xdl_hash_record</dfn>(<em>char</em> <em>const</em> **<dfn class="local col6 decl" id="36data" title='data' data-type='const char **' data-ref="36data">data</dfn>, <em>char</em> <em>const</em> *<dfn class="local col7 decl" id="37top" title='top' data-type='const char *' data-ref="37top">top</dfn>, <em>long</em> <dfn class="local col8 decl" id="38flags" title='flags' data-type='long' data-ref="38flags">flags</dfn>);</td></tr>
+<tr><th id="38">38</th><td><em>unsigned</em> <em>int</em> <dfn class="decl" id="xdl_hashbits" title='xdl_hashbits' data-ref="xdl_hashbits">xdl_hashbits</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col9 decl" id="39size" title='size' data-type='unsigned int' data-ref="39size">size</dfn>);</td></tr>
+<tr><th id="39">39</th><td><em>int</em> <dfn class="decl" id="xdl_num_out" title='xdl_num_out' data-ref="xdl_num_out">xdl_num_out</dfn>(<em>char</em> *<dfn class="local col0 decl" id="40out" title='out' data-type='char *' data-ref="40out">out</dfn>, <em>long</em> <dfn class="local col1 decl" id="41val" title='val' data-type='long' data-ref="41val">val</dfn>);</td></tr>
+<tr><th id="40">40</th><td><em>int</em> <dfn class="decl" id="xdl_emit_hunk_hdr" title='xdl_emit_hunk_hdr' data-ref="xdl_emit_hunk_hdr">xdl_emit_hunk_hdr</dfn>(<em>long</em> <dfn class="local col2 decl" id="42s1" title='s1' data-type='long' data-ref="42s1">s1</dfn>, <em>long</em> <dfn class="local col3 decl" id="43c1" title='c1' data-type='long' data-ref="43c1">c1</dfn>, <em>long</em> <dfn class="local col4 decl" id="44s2" title='s2' data-type='long' data-ref="44s2">s2</dfn>, <em>long</em> <dfn class="local col5 decl" id="45c2" title='c2' data-type='long' data-ref="45c2">c2</dfn>,</td></tr>
+<tr><th id="41">41</th><td>		      <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="46func" title='func' data-type='const char *' data-ref="46func">func</dfn>, <em>long</em> <dfn class="local col7 decl" id="47funclen" title='funclen' data-type='long' data-ref="47funclen">funclen</dfn>, <a class="typedef" href="xdiff.h.html#xdemitcb_t" title='xdemitcb_t' data-type='struct s_xdemitcb' data-ref="xdemitcb_t">xdemitcb_t</a> *<dfn class="local col8 decl" id="48ecb" title='ecb' data-type='xdemitcb_t *' data-ref="48ecb">ecb</dfn>);</td></tr>
+<tr><th id="42">42</th><td><em>int</em> <dfn class="decl" id="xdl_fall_back_diff" title='xdl_fall_back_diff' data-ref="xdl_fall_back_diff">xdl_fall_back_diff</dfn>(<a class="typedef" href="xtypes.h.html#xdfenv_t" title='xdfenv_t' data-type='struct s_xdfenv' data-ref="xdfenv_t">xdfenv_t</a> *<dfn class="local col9 decl" id="49diff_env" title='diff_env' data-type='xdfenv_t *' data-ref="49diff_env">diff_env</dfn>, <a class="typedef" href="xdiff.h.html#xpparam_t" title='xpparam_t' data-type='struct s_xpparam' data-ref="xpparam_t">xpparam_t</a> <em>const</em> *<dfn class="local col0 decl" id="50xpp" title='xpp' data-type='const xpparam_t *' data-ref="50xpp">xpp</dfn>,</td></tr>
+<tr><th id="43">43</th><td>		       <em>int</em> <dfn class="local col1 decl" id="51line1" title='line1' data-type='int' data-ref="51line1">line1</dfn>, <em>int</em> <dfn class="local col2 decl" id="52count1" title='count1' data-type='int' data-ref="52count1">count1</dfn>, <em>int</em> <dfn class="local col3 decl" id="53line2" title='line2' data-type='int' data-ref="53line2">line2</dfn>, <em>int</em> <dfn class="local col4 decl" id="54count2" title='count2' data-type='int' data-ref="54count2">count2</dfn>);</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="23">endif</span> /* #if !defined(XUTILS_H) */</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='xdiffi.c.html'>codebrowser/xdiff/xdiffi.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

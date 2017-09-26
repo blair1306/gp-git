@@ -1,0 +1,3 @@
+<def f='codebrowser/refs.h' l='324' ll='327' type='const char * has_glob_specials(const char * pattern)'/>
+<use f='codebrowser/notes.c' l='949' u='c' c='string_list_add_refs_by_glob'/>
+<use f='codebrowser/refs.c' l='405' u='c' c='for_each_glob_ref_in'/>

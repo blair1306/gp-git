@@ -1,0 +1,9 @@
+<dec f='codebrowser/convert.c' l='26' type='0'/>
+<use f='codebrowser/convert.c' l='182' c='output_eol'/>
+<use f='codebrowser/convert.c' l='984' u='r' c='git_path_check_crlf'/>
+<use f='codebrowser/convert.c' l='1041' u='r' c='convert_attrs'/>
+<use f='codebrowser/convert.c' l='1060' u='r' c='convert_attrs'/>
+<use f='codebrowser/convert.c' l='1065' u='r' c='convert_attrs'/>
+<use f='codebrowser/convert.c' l='1067' u='r' c='convert_attrs'/>
+<use f='codebrowser/convert.c' l='1069' u='r' c='convert_attrs'/>
+<use f='codebrowser/convert.c' l='1098' c='get_convert_attr_ascii'/>

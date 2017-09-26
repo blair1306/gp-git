@@ -1,0 +1,8 @@
+<dec f='codebrowser/worktree.h' l='10' type='int'/>
+<use f='codebrowser/branch.c' l='358' u='r' c='replace_each_worktree_head_symref'/>
+<offset>416</offset>
+<use f='codebrowser/builtin/branch.c' l='444' u='r' c='reject_rebase_or_bisect_branch'/>
+<use f='codebrowser/builtin/worktree.c' l='394' u='r' c='show_worktree_porcelain'/>
+<use f='codebrowser/builtin/worktree.c' l='414' u='r' c='show_worktree'/>
+<use f='codebrowser/worktree.c' l='41' u='w' c='add_head_info'/>
+<use f='codebrowser/worktree.c' l='317' u='r' c='find_shared_symref'/>

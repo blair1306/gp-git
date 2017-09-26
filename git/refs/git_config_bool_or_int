@@ -1,0 +1,15 @@
+<dec f='codebrowser/config.h' l='57' type='int git_config_bool_or_int(const char * , const char * , int * )'/>
+<use f='codebrowser/builtin/commit.c' l='1280' u='c' c='git_status_config'/>
+<use f='codebrowser/builtin/commit.c' l='1523' u='c' c='git_commit_config'/>
+<use f='codebrowser/builtin/config.c' l='151' u='c' c='format_config'/>
+<use f='codebrowser/builtin/config.c' l='290' u='c' c='normalize_value'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='25' u='c' c='fmt_merge_msg_config'/>
+<def f='codebrowser/config.c' l='964' ll='973' type='int git_config_bool_or_int(const char * name, const char * value, int * is_bool)'/>
+<use f='codebrowser/config.c' l='978' u='c' c='git_config_bool'/>
+<use f='codebrowser/config.c' l='1850' u='c' c='git_configset_get_bool_or_int'/>
+<use f='codebrowser/sequencer.c' l='1424' u='c' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1426' u='c' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1428' u='c' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1430' u='c' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1432' u='c' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1444' u='c' c='populate_opts_cb'/>

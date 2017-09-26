@@ -1,0 +1,3 @@
+<def f='codebrowser/help.h' l='13' ll='17' type='void mput_char(char c, unsigned int num)'/>
+<use f='codebrowser/builtin/help.c' l='426' u='c' c='list_common_guides_help'/>
+<use f='codebrowser/help.c' l='226' u='c' c='list_common_cmds_help'/>

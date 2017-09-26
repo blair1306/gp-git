@@ -1,0 +1,4 @@
+<def f='codebrowser/notes-cache.h' l='6' ll='9'/>
+<size>64</size>
+<mbr r='notes_cache::tree' o='0' t='struct notes_tree'/>
+<mbr r='notes_cache::validity' o='448' t='char *'/>

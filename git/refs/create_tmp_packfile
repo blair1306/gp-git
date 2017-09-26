@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack.h' l='101' type='struct sha1file * create_tmp_packfile(char ** pack_tmp_name)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='800' u='c' c='write_pack_file'/>
+<use f='codebrowser/bulk-checkin.c' l='175' u='c' c='prepare_to_stream'/>
+<def f='codebrowser/pack-write.c' l='330' ll='338' type='struct sha1file * create_tmp_packfile(char ** pack_tmp_name)'/>

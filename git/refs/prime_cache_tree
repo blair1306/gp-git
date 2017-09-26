@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache-tree.h' l='52' type='void prime_cache_tree(struct index_state * , struct tree * )'/>
+<use f='codebrowser/builtin/read-tree.c' l='261' u='c' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/reset.c' l='91' u='c' c='reset_index'/>
+<def f='codebrowser/cache-tree.c' l='688' ll='694' type='void prime_cache_tree(struct index_state * istate, struct tree * tree)'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/parse-options.h' l='248'/>
+<use f='codebrowser/builtin/branch.c' l='568' u='c'/>
+<use f='codebrowser/builtin/grep.c' l='837' u='c'/>
+<use f='codebrowser/builtin/show-branch.c' l='629' u='c'/>

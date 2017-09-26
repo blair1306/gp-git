@@ -1,0 +1,14 @@
+<dec f='codebrowser/remote.h' l='89' type='unsigned int'/>
+<offset>640</offset>
+<use f='codebrowser/builtin/fetch.c' l='707' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='805' u='w' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='805' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/remote.c' l='406' u='r' c='get_push_ref_states'/>
+<use f='codebrowser/http-push.c' l='1865' u='r' c='cmd_main'/>
+<use f='codebrowser/remote.c' l='1217' u='w' c='match_explicit'/>
+<use f='codebrowser/remote.c' l='1486' u='w' c='match_push_refs'/>
+<use f='codebrowser/remote.c' l='1529' u='r' c='set_ref_status_for_push'/>
+<use f='codebrowser/remote.c' l='1829' u='w' c='get_expanded_map'/>
+<use f='codebrowser/remote.c' l='1898' u='w' c='get_fetch_map'/>
+<use f='codebrowser/transport-helper.c' l='858' u='w' c='push_refs_with_push'/>
+<use f='codebrowser/transport-helper.c' l='862' u='r' c='push_refs_with_push'/>

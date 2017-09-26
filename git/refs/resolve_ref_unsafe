@@ -1,0 +1,28 @@
+<dec f='codebrowser/refs.h' l='66' type='const char * resolve_ref_unsafe(const char * refname, int resolve_flags, unsigned char * sha1, int * flags)'/>
+<use f='codebrowser/blame.c' l='169' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/blame.c' l='1692' u='c' c='dwim_reverse_initial'/>
+<use f='codebrowser/branch.c' l='196' u='c' c='validate_new_branchname'/>
+<use f='codebrowser/builtin/commit.c' l='1488' u='c' c='print_summary'/>
+<use f='codebrowser/builtin/fsck.c' l='562' u='c' c='fsck_head_link'/>
+<use f='codebrowser/builtin/log.c' l='1665' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1213' u='c' c='check_aliased_update'/>
+<use f='codebrowser/builtin/remote.c' l='567' u='c' c='read_remote_branches'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='22' u='c' c='get_default_remote'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1081' u='c' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/symbolic-ref.c' l='17' u='c' c='check_symref'/>
+<use f='codebrowser/http-backend.c' l='489' u='c' c='show_head_ref'/>
+<use f='codebrowser/log-tree.c' l='201' u='c' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/refs.c' l='243' u='c' c='ref_exists'/>
+<use f='codebrowser/refs.c' l='294' u='c' c='warn_if_dangling_symref'/>
+<use f='codebrowser/refs.c' l='502' u='c' c='expand_ref'/>
+<use f='codebrowser/refs.c' l='533' u='c' c='dwim_log'/>
+<def f='codebrowser/refs.c' l='1496' ll='1501' type='const char * resolve_ref_unsafe(const char * refname, int resolve_flags, unsigned char * sha1, int * flags)'/>
+<use f='codebrowser/remote.c' l='478' u='c' c='read_config'/>
+<use f='codebrowser/remote.c' l='1110' u='c' c='guess_ref'/>
+<use f='codebrowser/remote.c' l='1172' u='c' c='match_explicit'/>
+<use f='codebrowser/remote.c' l='1798' u='c' c='ignore_symref_update'/>
+<use f='codebrowser/revision.c' l='2184' u='c' c='diagnose_missing_default'/>
+<use f='codebrowser/sequencer.c' l='491' u='c' c='is_index_unchanged'/>
+<use f='codebrowser/transport-helper.c' l='944' u='c' c='push_refs_with_export'/>
+<use f='codebrowser/transport.c' l='46' u='c' c='set_upstreams'/>
+<use f='codebrowser/upload-pack.c' l='972' u='c' c='find_symref'/>

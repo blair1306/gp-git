@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>parse-options.h source code [codebrowser/parse-options.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="option,parse_opt_ctx_t,parse_opt_flags,parse_opt_option_flags,parse_opt_type "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/parse-options.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='parse-options.h.html'>parse-options.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/PARSE_OPTIONS_H">PARSE_OPTIONS_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/PARSE_OPTIONS_H" data-ref="_M/PARSE_OPTIONS_H">PARSE_OPTIONS_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>enum</b> <dfn class="type def" id="parse_opt_type" title='parse_opt_type' data-ref="parse_opt_type">parse_opt_type</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<i>/* special types */</i></td></tr>
+<tr><th id="6">6</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_END" title='parse_opt_type::OPTION_END' data-ref="parse_opt_type::OPTION_END">OPTION_END</dfn>,</td></tr>
+<tr><th id="7">7</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_ARGUMENT" title='parse_opt_type::OPTION_ARGUMENT' data-ref="parse_opt_type::OPTION_ARGUMENT">OPTION_ARGUMENT</dfn>,</td></tr>
+<tr><th id="8">8</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_GROUP" title='parse_opt_type::OPTION_GROUP' data-ref="parse_opt_type::OPTION_GROUP">OPTION_GROUP</dfn>,</td></tr>
+<tr><th id="9">9</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_NUMBER" title='parse_opt_type::OPTION_NUMBER' data-ref="parse_opt_type::OPTION_NUMBER">OPTION_NUMBER</dfn>,</td></tr>
+<tr><th id="10">10</th><td>	<i>/* options with no arguments */</i></td></tr>
+<tr><th id="11">11</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_BIT" title='parse_opt_type::OPTION_BIT' data-ref="parse_opt_type::OPTION_BIT">OPTION_BIT</dfn>,</td></tr>
+<tr><th id="12">12</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_NEGBIT" title='parse_opt_type::OPTION_NEGBIT' data-ref="parse_opt_type::OPTION_NEGBIT">OPTION_NEGBIT</dfn>,</td></tr>
+<tr><th id="13">13</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_COUNTUP" title='parse_opt_type::OPTION_COUNTUP' data-ref="parse_opt_type::OPTION_COUNTUP">OPTION_COUNTUP</dfn>,</td></tr>
+<tr><th id="14">14</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_SET_INT" title='parse_opt_type::OPTION_SET_INT' data-ref="parse_opt_type::OPTION_SET_INT">OPTION_SET_INT</dfn>,</td></tr>
+<tr><th id="15">15</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_CMDMODE" title='parse_opt_type::OPTION_CMDMODE' data-ref="parse_opt_type::OPTION_CMDMODE">OPTION_CMDMODE</dfn>,</td></tr>
+<tr><th id="16">16</th><td>	<i>/* options with arguments (usually) */</i></td></tr>
+<tr><th id="17">17</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_STRING" title='parse_opt_type::OPTION_STRING' data-ref="parse_opt_type::OPTION_STRING">OPTION_STRING</dfn>,</td></tr>
+<tr><th id="18">18</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_INTEGER" title='parse_opt_type::OPTION_INTEGER' data-ref="parse_opt_type::OPTION_INTEGER">OPTION_INTEGER</dfn>,</td></tr>
+<tr><th id="19">19</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_MAGNITUDE" title='parse_opt_type::OPTION_MAGNITUDE' data-ref="parse_opt_type::OPTION_MAGNITUDE">OPTION_MAGNITUDE</dfn>,</td></tr>
+<tr><th id="20">20</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_CALLBACK" title='parse_opt_type::OPTION_CALLBACK' data-ref="parse_opt_type::OPTION_CALLBACK">OPTION_CALLBACK</dfn>,</td></tr>
+<tr><th id="21">21</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_LOWLEVEL_CALLBACK" title='parse_opt_type::OPTION_LOWLEVEL_CALLBACK' data-ref="parse_opt_type::OPTION_LOWLEVEL_CALLBACK">OPTION_LOWLEVEL_CALLBACK</dfn>,</td></tr>
+<tr><th id="22">22</th><td>	<dfn class="enum" id="parse_opt_type::OPTION_FILENAME" title='parse_opt_type::OPTION_FILENAME' data-ref="parse_opt_type::OPTION_FILENAME">OPTION_FILENAME</dfn></td></tr>
+<tr><th id="23">23</th><td>};</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><b>enum</b> <dfn class="type def" id="parse_opt_flags" title='parse_opt_flags' data-ref="parse_opt_flags">parse_opt_flags</dfn> {</td></tr>
+<tr><th id="26">26</th><td>	<dfn class="enum" id="parse_opt_flags::PARSE_OPT_KEEP_DASHDASH" title='parse_opt_flags::PARSE_OPT_KEEP_DASHDASH' data-ref="parse_opt_flags::PARSE_OPT_KEEP_DASHDASH">PARSE_OPT_KEEP_DASHDASH</dfn> = <var>1</var>,</td></tr>
+<tr><th id="27">27</th><td>	<dfn class="enum" id="parse_opt_flags::PARSE_OPT_STOP_AT_NON_OPTION" title='parse_opt_flags::PARSE_OPT_STOP_AT_NON_OPTION' data-ref="parse_opt_flags::PARSE_OPT_STOP_AT_NON_OPTION">PARSE_OPT_STOP_AT_NON_OPTION</dfn> = <var>2</var>,</td></tr>
+<tr><th id="28">28</th><td>	<dfn class="enum" id="parse_opt_flags::PARSE_OPT_KEEP_ARGV0" title='parse_opt_flags::PARSE_OPT_KEEP_ARGV0' data-ref="parse_opt_flags::PARSE_OPT_KEEP_ARGV0">PARSE_OPT_KEEP_ARGV0</dfn> = <var>4</var>,</td></tr>
+<tr><th id="29">29</th><td>	<dfn class="enum" id="parse_opt_flags::PARSE_OPT_KEEP_UNKNOWN" title='parse_opt_flags::PARSE_OPT_KEEP_UNKNOWN' data-ref="parse_opt_flags::PARSE_OPT_KEEP_UNKNOWN">PARSE_OPT_KEEP_UNKNOWN</dfn> = <var>8</var>,</td></tr>
+<tr><th id="30">30</th><td>	<dfn class="enum" id="parse_opt_flags::PARSE_OPT_NO_INTERNAL_HELP" title='parse_opt_flags::PARSE_OPT_NO_INTERNAL_HELP' data-ref="parse_opt_flags::PARSE_OPT_NO_INTERNAL_HELP">PARSE_OPT_NO_INTERNAL_HELP</dfn> = <var>16</var></td></tr>
+<tr><th id="31">31</th><td>};</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>enum</b> <dfn class="type def" id="parse_opt_option_flags" title='parse_opt_option_flags' data-ref="parse_opt_option_flags">parse_opt_option_flags</dfn> {</td></tr>
+<tr><th id="34">34</th><td>	<dfn class="enum" id="parse_opt_option_flags::PARSE_OPT_OPTARG" title='parse_opt_option_flags::PARSE_OPT_OPTARG' data-ref="parse_opt_option_flags::PARSE_OPT_OPTARG">PARSE_OPT_OPTARG</dfn>  = <var>1</var>,</td></tr>
+<tr><th id="35">35</th><td>	<dfn class="enum" id="parse_opt_option_flags::PARSE_OPT_NOARG" title='parse_opt_option_flags::PARSE_OPT_NOARG' data-ref="parse_opt_option_flags::PARSE_OPT_NOARG">PARSE_OPT_NOARG</dfn>   = <var>2</var>,</td></tr>
+<tr><th id="36">36</th><td>	<dfn class="enum" id="parse_opt_option_flags::PARSE_OPT_NONEG" title='parse_opt_option_flags::PARSE_OPT_NONEG' data-ref="parse_opt_option_flags::PARSE_OPT_NONEG">PARSE_OPT_NONEG</dfn>   = <var>4</var>,</td></tr>
+<tr><th id="37">37</th><td>	<dfn class="enum" id="parse_opt_option_flags::PARSE_OPT_HIDDEN" title='parse_opt_option_flags::PARSE_OPT_HIDDEN' data-ref="parse_opt_option_flags::PARSE_OPT_HIDDEN">PARSE_OPT_HIDDEN</dfn>  = <var>8</var>,</td></tr>
+<tr><th id="38">38</th><td>	<dfn class="enum" id="parse_opt_option_flags::PARSE_OPT_LASTARG_DEFAULT" title='parse_opt_option_flags::PARSE_OPT_LASTARG_DEFAULT' data-ref="parse_opt_option_flags::PARSE_OPT_LASTARG_DEFAULT">PARSE_OPT_LASTARG_DEFAULT</dfn> = <var>16</var>,</td></tr>
+<tr><th id="39">39</th><td>	<dfn class="enum" id="parse_opt_option_flags::PARSE_OPT_NODASH" title='parse_opt_option_flags::PARSE_OPT_NODASH' data-ref="parse_opt_option_flags::PARSE_OPT_NODASH">PARSE_OPT_NODASH</dfn> = <var>32</var>,</td></tr>
+<tr><th id="40">40</th><td>	<dfn class="enum" id="parse_opt_option_flags::PARSE_OPT_LITERAL_ARGHELP" title='parse_opt_option_flags::PARSE_OPT_LITERAL_ARGHELP' data-ref="parse_opt_option_flags::PARSE_OPT_LITERAL_ARGHELP">PARSE_OPT_LITERAL_ARGHELP</dfn> = <var>64</var>,</td></tr>
+<tr><th id="41">41</th><td>	<dfn class="enum" id="parse_opt_option_flags::PARSE_OPT_SHELL_EVAL" title='parse_opt_option_flags::PARSE_OPT_SHELL_EVAL' data-ref="parse_opt_option_flags::PARSE_OPT_SHELL_EVAL">PARSE_OPT_SHELL_EVAL</dfn> = <var>256</var></td></tr>
+<tr><th id="42">42</th><td>};</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a>;</td></tr>
+<tr><th id="45">45</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="parse_opt_cb" title='parse_opt_cb' data-type='int (const struct option *, const char *, int)' data-ref="parse_opt_cb">parse_opt_cb</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="425arg" title='arg' data-type='const char *' data-ref="425arg">arg</dfn>, <em>int</em> <dfn class="local col6 decl" id="426unset" title='unset' data-type='int' data-ref="426unset">unset</dfn>);</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><b>struct</b> <a class="type" href="#parse_opt_ctx_t" title='parse_opt_ctx_t' data-ref="parse_opt_ctx_t">parse_opt_ctx_t</a>;</td></tr>
+<tr><th id="48">48</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="parse_opt_ll_cb" title='parse_opt_ll_cb' data-type='int (struct parse_opt_ctx_t *, const struct option *, int)' data-ref="parse_opt_ll_cb">parse_opt_ll_cb</dfn>(<b>struct</b> <a class="type" href="#parse_opt_ctx_t" title='parse_opt_ctx_t' data-ref="parse_opt_ctx_t">parse_opt_ctx_t</a> *<dfn class="local col7 decl" id="427ctx" title='ctx' data-type='struct parse_opt_ctx_t *' data-ref="427ctx">ctx</dfn>,</td></tr>
+<tr><th id="49">49</th><td>				<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="local col8 decl" id="428opt" title='opt' data-type='const struct option *' data-ref="428opt">opt</dfn>, <em>int</em> <dfn class="local col9 decl" id="429unset" title='unset' data-type='int' data-ref="429unset">unset</dfn>);</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><i>/*</i></td></tr>
+<tr><th id="52">52</th><td><i> * `type`::</i></td></tr>
+<tr><th id="53">53</th><td><i> *   holds the type of the option, you must have an OPTION_END last in your</i></td></tr>
+<tr><th id="54">54</th><td><i> *   array.</i></td></tr>
+<tr><th id="55">55</th><td><i> *</i></td></tr>
+<tr><th id="56">56</th><td><i> * `short_name`::</i></td></tr>
+<tr><th id="57">57</th><td><i> *   the character to use as a short option name, '\0' if none.</i></td></tr>
+<tr><th id="58">58</th><td><i> *</i></td></tr>
+<tr><th id="59">59</th><td><i> * `long_name`::</i></td></tr>
+<tr><th id="60">60</th><td><i> *   the long option name, without the leading dashes, NULL if none.</i></td></tr>
+<tr><th id="61">61</th><td><i> *</i></td></tr>
+<tr><th id="62">62</th><td><i> * `value`::</i></td></tr>
+<tr><th id="63">63</th><td><i> *   stores pointers to the values to be filled.</i></td></tr>
+<tr><th id="64">64</th><td><i> *</i></td></tr>
+<tr><th id="65">65</th><td><i> * `argh`::</i></td></tr>
+<tr><th id="66">66</th><td><i> *   token to explain the kind of argument this option wants. Keep it</i></td></tr>
+<tr><th id="67">67</th><td><i> *   homogeneous across the repository. Should be wrapped by N_() for</i></td></tr>
+<tr><th id="68">68</th><td><i> *   translation.</i></td></tr>
+<tr><th id="69">69</th><td><i> *</i></td></tr>
+<tr><th id="70">70</th><td><i> * `help`::</i></td></tr>
+<tr><th id="71">71</th><td><i> *   the short help associated to what the option does.</i></td></tr>
+<tr><th id="72">72</th><td><i> *   Must never be NULL (except for OPTION_END).</i></td></tr>
+<tr><th id="73">73</th><td><i> *   OPTION_GROUP uses this pointer to store the group header.</i></td></tr>
+<tr><th id="74">74</th><td><i> *   Should be wrapped by N_() for translation.</i></td></tr>
+<tr><th id="75">75</th><td><i> *</i></td></tr>
+<tr><th id="76">76</th><td><i> * `flags`::</i></td></tr>
+<tr><th id="77">77</th><td><i> *   mask of parse_opt_option_flags.</i></td></tr>
+<tr><th id="78">78</th><td><i> *   PARSE_OPT_OPTARG: says that the argument is optional (not for BOOLEANs)</i></td></tr>
+<tr><th id="79">79</th><td><i> *   PARSE_OPT_NOARG: says that this option does not take an argument</i></td></tr>
+<tr><th id="80">80</th><td><i> *   PARSE_OPT_NONEG: says that this option cannot be negated</i></td></tr>
+<tr><th id="81">81</th><td><i> *   PARSE_OPT_HIDDEN: this option is skipped in the default usage, and</i></td></tr>
+<tr><th id="82">82</th><td><i> *                     shown only in the full usage.</i></td></tr>
+<tr><th id="83">83</th><td><i> *   PARSE_OPT_LASTARG_DEFAULT: says that this option will take the default</i></td></tr>
+<tr><th id="84">84</th><td><i> *				value if no argument is given when the option</i></td></tr>
+<tr><th id="85">85</th><td><i> *				is last on the command line. If the option is</i></td></tr>
+<tr><th id="86">86</th><td><i> *				not last it will require an argument.</i></td></tr>
+<tr><th id="87">87</th><td><i> *				Should not be used with PARSE_OPT_OPTARG.</i></td></tr>
+<tr><th id="88">88</th><td><i> *   PARSE_OPT_NODASH: this option doesn't start with a dash.</i></td></tr>
+<tr><th id="89">89</th><td><i> *   PARSE_OPT_LITERAL_ARGHELP: says that argh shouldn't be enclosed in brackets</i></td></tr>
+<tr><th id="90">90</th><td><i> *				(i.e. '&lt;argh&gt;') in the help message.</i></td></tr>
+<tr><th id="91">91</th><td><i> *				Useful for options with multiple parameters.</i></td></tr>
+<tr><th id="92">92</th><td><i> *</i></td></tr>
+<tr><th id="93">93</th><td><i> * `callback`::</i></td></tr>
+<tr><th id="94">94</th><td><i> *   pointer to the callback to use for OPTION_CALLBACK or</i></td></tr>
+<tr><th id="95">95</th><td><i> *   OPTION_LOWLEVEL_CALLBACK.</i></td></tr>
+<tr><th id="96">96</th><td><i> *</i></td></tr>
+<tr><th id="97">97</th><td><i> * `defval`::</i></td></tr>
+<tr><th id="98">98</th><td><i> *   default value to fill (*-&gt;value) with for PARSE_OPT_OPTARG.</i></td></tr>
+<tr><th id="99">99</th><td><i> *   OPTION_{BIT,SET_INT} store the {mask,integer} to put in the value when met.</i></td></tr>
+<tr><th id="100">100</th><td><i> *   CALLBACKS can use it like they want.</i></td></tr>
+<tr><th id="101">101</th><td><i> */</i></td></tr>
+<tr><th id="102">102</th><td><b>struct</b> <dfn class="type def" id="option" title='option' data-ref="option">option</dfn> {</td></tr>
+<tr><th id="103">103</th><td>	<b>enum</b> <a class="type" href="#parse_opt_type" title='parse_opt_type' data-ref="parse_opt_type">parse_opt_type</a> <dfn class="decl" id="option::type" title='option::type' data-ref="option::type">type</dfn>;</td></tr>
+<tr><th id="104">104</th><td>	<em>int</em> <dfn class="decl" id="option::short_name" title='option::short_name' data-ref="option::short_name">short_name</dfn>;</td></tr>
+<tr><th id="105">105</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="option::long_name" title='option::long_name' data-ref="option::long_name">long_name</dfn>;</td></tr>
+<tr><th id="106">106</th><td>	<em>void</em> *<dfn class="decl" id="option::value" title='option::value' data-ref="option::value">value</dfn>;</td></tr>
+<tr><th id="107">107</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="option::argh" title='option::argh' data-ref="option::argh">argh</dfn>;</td></tr>
+<tr><th id="108">108</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="option::help" title='option::help' data-ref="option::help">help</dfn>;</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>	<em>int</em> <dfn class="decl" id="option::flags" title='option::flags' data-ref="option::flags">flags</dfn>;</td></tr>
+<tr><th id="111">111</th><td>	<a class="typedef" href="#parse_opt_cb" title='parse_opt_cb' data-type='int (const struct option *, const char *, int)' data-ref="parse_opt_cb">parse_opt_cb</a> *<dfn class="decl" id="option::callback" title='option::callback' data-ref="option::callback">callback</dfn>;</td></tr>
+<tr><th id="112">112</th><td>	<a class="typedef" href="../include/unistd.h.html#intptr_t" title='intptr_t' data-type='__intptr_t' data-ref="intptr_t">intptr_t</a> <dfn class="decl" id="option::defval" title='option::defval' data-ref="option::defval">defval</dfn>;</td></tr>
+<tr><th id="113">113</th><td>};</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><u>#define <dfn class="macro" id="_M/OPT_END" data-ref="_M/OPT_END">OPT_END</dfn>()                   { OPTION_END }</u></td></tr>
+<tr><th id="116">116</th><td><u>#define <dfn class="macro" id="_M/OPT_ARGUMENT" data-ref="_M/OPT_ARGUMENT">OPT_ARGUMENT</dfn>(l, h)          { OPTION_ARGUMENT, 0, (l), NULL, NULL, \</u></td></tr>
+<tr><th id="117">117</th><td><u>				      (h), PARSE_OPT_NOARG}</u></td></tr>
+<tr><th id="118">118</th><td><u>#define <dfn class="macro" id="_M/OPT_GROUP" data-ref="_M/OPT_GROUP">OPT_GROUP</dfn>(h)                { OPTION_GROUP, 0, NULL, NULL, NULL, (h) }</u></td></tr>
+<tr><th id="119">119</th><td><u>#define <dfn class="macro" id="_M/OPT_BIT" data-ref="_M/OPT_BIT">OPT_BIT</dfn>(s, l, v, h, b)      { OPTION_BIT, (s), (l), (v), NULL, (h), \</u></td></tr>
+<tr><th id="120">120</th><td><u>				      PARSE_OPT_NOARG, NULL, (b) }</u></td></tr>
+<tr><th id="121">121</th><td><u>#define <dfn class="macro" id="_M/OPT_NEGBIT" data-ref="_M/OPT_NEGBIT">OPT_NEGBIT</dfn>(s, l, v, h, b)   { OPTION_NEGBIT, (s), (l), (v), NULL, \</u></td></tr>
+<tr><th id="122">122</th><td><u>				      (h), PARSE_OPT_NOARG, NULL, (b) }</u></td></tr>
+<tr><th id="123">123</th><td><u>#define <dfn class="macro" id="_M/OPT_COUNTUP" data-ref="_M/OPT_COUNTUP">OPT_COUNTUP</dfn>(s, l, v, h)     { OPTION_COUNTUP, (s), (l), (v), NULL, \</u></td></tr>
+<tr><th id="124">124</th><td><u>				      (h), PARSE_OPT_NOARG }</u></td></tr>
+<tr><th id="125">125</th><td><u>#define <dfn class="macro" id="_M/OPT_SET_INT" data-ref="_M/OPT_SET_INT">OPT_SET_INT</dfn>(s, l, v, h, i)  { OPTION_SET_INT, (s), (l), (v), NULL, \</u></td></tr>
+<tr><th id="126">126</th><td><u>				      (h), PARSE_OPT_NOARG, NULL, (i) }</u></td></tr>
+<tr><th id="127">127</th><td><u>#define <dfn class="macro" id="_M/OPT_BOOL" data-ref="_M/OPT_BOOL">OPT_BOOL</dfn>(s, l, v, h)        OPT_SET_INT(s, l, v, h, 1)</u></td></tr>
+<tr><th id="128">128</th><td><u>#define <dfn class="macro" id="_M/OPT_HIDDEN_BOOL" data-ref="_M/OPT_HIDDEN_BOOL">OPT_HIDDEN_BOOL</dfn>(s, l, v, h) { OPTION_SET_INT, (s), (l), (v), NULL, \</u></td></tr>
+<tr><th id="129">129</th><td><u>				      (h), PARSE_OPT_NOARG | PARSE_OPT_HIDDEN, NULL, 1}</u></td></tr>
+<tr><th id="130">130</th><td><u>#define <dfn class="macro" id="_M/OPT_CMDMODE" data-ref="_M/OPT_CMDMODE">OPT_CMDMODE</dfn>(s, l, v, h, i)  { OPTION_CMDMODE, (s), (l), (v), NULL, \</u></td></tr>
+<tr><th id="131">131</th><td><u>				      (h), PARSE_OPT_NOARG|PARSE_OPT_NONEG, NULL, (i) }</u></td></tr>
+<tr><th id="132">132</th><td><u>#define <dfn class="macro" id="_M/OPT_INTEGER" data-ref="_M/OPT_INTEGER">OPT_INTEGER</dfn>(s, l, v, h)     { OPTION_INTEGER, (s), (l), (v), N_("n"), (h) }</u></td></tr>
+<tr><th id="133">133</th><td><u>#define <dfn class="macro" id="_M/OPT_MAGNITUDE" data-ref="_M/OPT_MAGNITUDE">OPT_MAGNITUDE</dfn>(s, l, v, h)   { OPTION_MAGNITUDE, (s), (l), (v), \</u></td></tr>
+<tr><th id="134">134</th><td><u>				      N_("n"), (h), PARSE_OPT_NONEG }</u></td></tr>
+<tr><th id="135">135</th><td><u>#define <dfn class="macro" id="_M/OPT_STRING" data-ref="_M/OPT_STRING">OPT_STRING</dfn>(s, l, v, a, h)   { OPTION_STRING,  (s), (l), (v), (a), (h) }</u></td></tr>
+<tr><th id="136">136</th><td><u>#define <dfn class="macro" id="_M/OPT_STRING_LIST" data-ref="_M/OPT_STRING_LIST">OPT_STRING_LIST</dfn>(s, l, v, a, h) \</u></td></tr>
+<tr><th id="137">137</th><td><u>				    { OPTION_CALLBACK, (s), (l), (v), (a), \</u></td></tr>
+<tr><th id="138">138</th><td><u>				      (h), 0, &amp;parse_opt_string_list }</u></td></tr>
+<tr><th id="139">139</th><td><u>#define <dfn class="macro" id="_M/OPT_UYN" data-ref="_M/OPT_UYN">OPT_UYN</dfn>(s, l, v, h)         { OPTION_CALLBACK, (s), (l), (v), NULL, \</u></td></tr>
+<tr><th id="140">140</th><td><u>				      (h), PARSE_OPT_NOARG, &amp;parse_opt_tertiary }</u></td></tr>
+<tr><th id="141">141</th><td><u>#define <dfn class="macro" id="_M/OPT_DATE" data-ref="_M/OPT_DATE">OPT_DATE</dfn>(s, l, v, h) \</u></td></tr>
+<tr><th id="142">142</th><td><u>	{ OPTION_CALLBACK, (s), (l), (v), N_("time"),(h), 0,	\</u></td></tr>
+<tr><th id="143">143</th><td><u>	  parse_opt_approxidate_cb }</u></td></tr>
+<tr><th id="144">144</th><td><u>#define <dfn class="macro" id="_M/OPT_EXPIRY_DATE" data-ref="_M/OPT_EXPIRY_DATE">OPT_EXPIRY_DATE</dfn>(s, l, v, h) \</u></td></tr>
+<tr><th id="145">145</th><td><u>	{ OPTION_CALLBACK, (s), (l), (v), N_("expiry-date"),(h), 0,	\</u></td></tr>
+<tr><th id="146">146</th><td><u>	  parse_opt_expiry_date_cb }</u></td></tr>
+<tr><th id="147">147</th><td><u>#define <dfn class="macro" id="_M/OPT_CALLBACK" data-ref="_M/OPT_CALLBACK">OPT_CALLBACK</dfn>(s, l, v, a, h, f) \</u></td></tr>
+<tr><th id="148">148</th><td><u>	{ OPTION_CALLBACK, (s), (l), (v), (a), (h), 0, (f) }</u></td></tr>
+<tr><th id="149">149</th><td><u>#define <dfn class="macro" id="_M/OPT_NUMBER_CALLBACK" data-ref="_M/OPT_NUMBER_CALLBACK">OPT_NUMBER_CALLBACK</dfn>(v, h, f) \</u></td></tr>
+<tr><th id="150">150</th><td><u>	{ OPTION_NUMBER, 0, NULL, (v), NULL, (h), \</u></td></tr>
+<tr><th id="151">151</th><td><u>	  PARSE_OPT_NOARG | PARSE_OPT_NONEG, (f) }</u></td></tr>
+<tr><th id="152">152</th><td><u>#define <dfn class="macro" id="_M/OPT_FILENAME" data-ref="_M/OPT_FILENAME">OPT_FILENAME</dfn>(s, l, v, h)    { OPTION_FILENAME, (s), (l), (v), \</u></td></tr>
+<tr><th id="153">153</th><td><u>				       N_("file"), (h) }</u></td></tr>
+<tr><th id="154">154</th><td><u>#define <dfn class="macro" id="_M/OPT_COLOR_FLAG" data-ref="_M/OPT_COLOR_FLAG">OPT_COLOR_FLAG</dfn>(s, l, v, h) \</u></td></tr>
+<tr><th id="155">155</th><td><u>	{ OPTION_CALLBACK, (s), (l), (v), N_("when"), (h), PARSE_OPT_OPTARG, \</u></td></tr>
+<tr><th id="156">156</th><td><u>		parse_opt_color_flag_cb, (intptr_t)"always" }</u></td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><u>#define <dfn class="macro" id="_M/OPT_NOOP_NOARG" data-ref="_M/OPT_NOOP_NOARG">OPT_NOOP_NOARG</dfn>(s, l) \</u></td></tr>
+<tr><th id="159">159</th><td><u>	{ OPTION_CALLBACK, (s), (l), NULL, NULL, \</u></td></tr>
+<tr><th id="160">160</th><td><u>	  N_("no-op (backward compatibility)"),		\</u></td></tr>
+<tr><th id="161">161</th><td><u>	  PARSE_OPT_HIDDEN | PARSE_OPT_NOARG, parse_opt_noop_cb }</u></td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><i>/* parse_options() will filter out the processed options and leave the</i></td></tr>
+<tr><th id="164">164</th><td><i> * non-option arguments in argv[]. usagestr strings should be marked</i></td></tr>
+<tr><th id="165">165</th><td><i> * for translation with N_().</i></td></tr>
+<tr><th id="166">166</th><td><i> * Returns the number of arguments left in argv[].</i></td></tr>
+<tr><th id="167">167</th><td><i> */</i></td></tr>
+<tr><th id="168">168</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_options" title='parse_options' data-ref="parse_options">parse_options</dfn>(<em>int</em> <dfn class="local col0 decl" id="430argc" title='argc' data-type='int' data-ref="430argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col1 decl" id="431argv" title='argv' data-type='const char **' data-ref="431argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="432prefix" title='prefix' data-type='const char *' data-ref="432prefix">prefix</dfn>,</td></tr>
+<tr><th id="169">169</th><td>                         <em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="local col3 decl" id="433options" title='options' data-type='const struct option *' data-ref="433options">options</dfn>,</td></tr>
+<tr><th id="170">170</th><td>                         <em>const</em> <em>char</em> * <em>const</em> <dfn class="local col4 decl" id="434usagestr" title='usagestr' data-type='const char *const *' data-ref="434usagestr">usagestr</dfn>[], <em>int</em> <dfn class="local col5 decl" id="435flags" title='flags' data-type='int' data-ref="435flags">flags</dfn>);</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><b>extern</b> <a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <em>void</em> <dfn class="decl" id="usage_with_options" title='usage_with_options' data-ref="usage_with_options">usage_with_options</dfn>(<em>const</em> <em>char</em> * <em>const</em> *<dfn class="local col6 decl" id="436usagestr" title='usagestr' data-type='const char *const *' data-ref="436usagestr">usagestr</dfn>,</td></tr>
+<tr><th id="173">173</th><td>                                        <em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="local col7 decl" id="437options" title='options' data-type='const struct option *' data-ref="437options">options</dfn>);</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td><b>extern</b> <a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <em>void</em> <dfn class="decl" id="usage_msg_opt" title='usage_msg_opt' data-ref="usage_msg_opt">usage_msg_opt</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="438msg" title='msg' data-type='const char *' data-ref="438msg">msg</dfn>,</td></tr>
+<tr><th id="176">176</th><td>				   <em>const</em> <em>char</em> * <em>const</em> *<dfn class="local col9 decl" id="439usagestr" title='usagestr' data-type='const char *const *' data-ref="439usagestr">usagestr</dfn>,</td></tr>
+<tr><th id="177">177</th><td>				   <em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="local col0 decl" id="440options" title='options' data-type='const struct option *' data-ref="440options">options</dfn>);</td></tr>
+<tr><th id="178">178</th><td></td></tr>
+<tr><th id="179">179</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="optbug" title='optbug' data-ref="optbug">optbug</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="local col1 decl" id="441opt" title='opt' data-type='const struct option *' data-ref="441opt">opt</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="442reason" title='reason' data-type='const char *' data-ref="442reason">reason</dfn>);</td></tr>
+<tr><th id="180">180</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="opterror" title='opterror' data-ref="opterror">opterror</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="local col3 decl" id="443opt" title='opt' data-type='const struct option *' data-ref="443opt">opt</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="444reason" title='reason' data-type='const char *' data-ref="444reason">reason</dfn>, <em>int</em> <dfn class="local col5 decl" id="445flags" title='flags' data-type='int' data-ref="445flags">flags</dfn>);</td></tr>
+<tr><th id="181">181</th><td><u>#<span data-ppcond="181">if</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>)</u></td></tr>
+<tr><th id="182">182</th><td><u>#define <dfn class="macro" id="_M/opterror" data-ref="_M/opterror">opterror</dfn>(o,r,f) (opterror((o),(r),(f)), const_error())</u></td></tr>
+<tr><th id="183">183</th><td><u>#<span data-ppcond="181">endif</span></u></td></tr>
+<tr><th id="184">184</th><td></td></tr>
+<tr><th id="185">185</th><td><i>/*----- incremental advanced APIs -----*/</i></td></tr>
+<tr><th id="186">186</th><td></td></tr>
+<tr><th id="187">187</th><td><b>enum</b> {</td></tr>
+<tr><th id="188">188</th><td>	<dfn class="enum" id="PARSE_OPT_HELP" title='PARSE_OPT_HELP' data-ref="PARSE_OPT_HELP">PARSE_OPT_HELP</dfn> = -<var>1</var>,</td></tr>
+<tr><th id="189">189</th><td>	<dfn class="enum" id="PARSE_OPT_DONE" title='PARSE_OPT_DONE' data-ref="PARSE_OPT_DONE">PARSE_OPT_DONE</dfn>,</td></tr>
+<tr><th id="190">190</th><td>	<dfn class="enum" id="PARSE_OPT_NON_OPTION" title='PARSE_OPT_NON_OPTION' data-ref="PARSE_OPT_NON_OPTION">PARSE_OPT_NON_OPTION</dfn>,</td></tr>
+<tr><th id="191">191</th><td>	<dfn class="enum" id="PARSE_OPT_UNKNOWN" title='PARSE_OPT_UNKNOWN' data-ref="PARSE_OPT_UNKNOWN">PARSE_OPT_UNKNOWN</dfn></td></tr>
+<tr><th id="192">192</th><td>};</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><i>/*</i></td></tr>
+<tr><th id="195">195</th><td><i> * It's okay for the caller to consume argv/argc in the usual way.</i></td></tr>
+<tr><th id="196">196</th><td><i> * Other fields of that structure are private to parse-options and should not</i></td></tr>
+<tr><th id="197">197</th><td><i> * be modified in any way.</i></td></tr>
+<tr><th id="198">198</th><td><i> */</i></td></tr>
+<tr><th id="199">199</th><td><b>struct</b> <dfn class="type def" id="parse_opt_ctx_t" title='parse_opt_ctx_t' data-ref="parse_opt_ctx_t">parse_opt_ctx_t</dfn> {</td></tr>
+<tr><th id="200">200</th><td>	<em>const</em> <em>char</em> **<dfn class="decl" id="parse_opt_ctx_t::argv" title='parse_opt_ctx_t::argv' data-ref="parse_opt_ctx_t::argv">argv</dfn>;</td></tr>
+<tr><th id="201">201</th><td>	<em>const</em> <em>char</em> **<dfn class="decl" id="parse_opt_ctx_t::out" title='parse_opt_ctx_t::out' data-ref="parse_opt_ctx_t::out">out</dfn>;</td></tr>
+<tr><th id="202">202</th><td>	<em>int</em> <dfn class="decl" id="parse_opt_ctx_t::argc" title='parse_opt_ctx_t::argc' data-ref="parse_opt_ctx_t::argc">argc</dfn>, <dfn class="decl" id="parse_opt_ctx_t::cpidx" title='parse_opt_ctx_t::cpidx' data-ref="parse_opt_ctx_t::cpidx">cpidx</dfn>, <dfn class="decl" id="parse_opt_ctx_t::total" title='parse_opt_ctx_t::total' data-ref="parse_opt_ctx_t::total">total</dfn>;</td></tr>
+<tr><th id="203">203</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="parse_opt_ctx_t::opt" title='parse_opt_ctx_t::opt' data-ref="parse_opt_ctx_t::opt">opt</dfn>;</td></tr>
+<tr><th id="204">204</th><td>	<em>int</em> <dfn class="decl" id="parse_opt_ctx_t::flags" title='parse_opt_ctx_t::flags' data-ref="parse_opt_ctx_t::flags">flags</dfn>;</td></tr>
+<tr><th id="205">205</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="parse_opt_ctx_t::prefix" title='parse_opt_ctx_t::prefix' data-ref="parse_opt_ctx_t::prefix">prefix</dfn>;</td></tr>
+<tr><th id="206">206</th><td>};</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="parse_options_start" title='parse_options_start' data-ref="parse_options_start">parse_options_start</dfn>(<b>struct</b> <a class="type" href="#parse_opt_ctx_t" title='parse_opt_ctx_t' data-ref="parse_opt_ctx_t">parse_opt_ctx_t</a> *<dfn class="local col6 decl" id="446ctx" title='ctx' data-type='struct parse_opt_ctx_t *' data-ref="446ctx">ctx</dfn>,</td></tr>
+<tr><th id="209">209</th><td>				<em>int</em> <dfn class="local col7 decl" id="447argc" title='argc' data-type='int' data-ref="447argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col8 decl" id="448argv" title='argv' data-type='const char **' data-ref="448argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="449prefix" title='prefix' data-type='const char *' data-ref="449prefix">prefix</dfn>,</td></tr>
+<tr><th id="210">210</th><td>				<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="local col0 decl" id="450options" title='options' data-type='const struct option *' data-ref="450options">options</dfn>, <em>int</em> <dfn class="local col1 decl" id="451flags" title='flags' data-type='int' data-ref="451flags">flags</dfn>);</td></tr>
+<tr><th id="211">211</th><td></td></tr>
+<tr><th id="212">212</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_options_step" title='parse_options_step' data-ref="parse_options_step">parse_options_step</dfn>(<b>struct</b> <a class="type" href="#parse_opt_ctx_t" title='parse_opt_ctx_t' data-ref="parse_opt_ctx_t">parse_opt_ctx_t</a> *<dfn class="local col2 decl" id="452ctx" title='ctx' data-type='struct parse_opt_ctx_t *' data-ref="452ctx">ctx</dfn>,</td></tr>
+<tr><th id="213">213</th><td>			      <em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="local col3 decl" id="453options" title='options' data-type='const struct option *' data-ref="453options">options</dfn>,</td></tr>
+<tr><th id="214">214</th><td>			      <em>const</em> <em>char</em> * <em>const</em> <dfn class="local col4 decl" id="454usagestr" title='usagestr' data-type='const char *const *' data-ref="454usagestr">usagestr</dfn>[]);</td></tr>
+<tr><th id="215">215</th><td></td></tr>
+<tr><th id="216">216</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_options_end" title='parse_options_end' data-ref="parse_options_end">parse_options_end</dfn>(<b>struct</b> <a class="type" href="#parse_opt_ctx_t" title='parse_opt_ctx_t' data-ref="parse_opt_ctx_t">parse_opt_ctx_t</a> *<dfn class="local col5 decl" id="455ctx" title='ctx' data-type='struct parse_opt_ctx_t *' data-ref="455ctx">ctx</dfn>);</td></tr>
+<tr><th id="217">217</th><td></td></tr>
+<tr><th id="218">218</th><td><b>extern</b> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="decl" id="parse_options_concat" title='parse_options_concat' data-ref="parse_options_concat">parse_options_concat</dfn>(<b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="local col6 decl" id="456a" title='a' data-type='struct option *' data-ref="456a">a</dfn>, <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *<dfn class="local col7 decl" id="457b" title='b' data-type='struct option *' data-ref="457b">b</dfn>);</td></tr>
+<tr><th id="219">219</th><td></td></tr>
+<tr><th id="220">220</th><td><i>/*----- some often used options -----*/</i></td></tr>
+<tr><th id="221">221</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_abbrev_cb" title='parse_opt_abbrev_cb' data-ref="parse_opt_abbrev_cb">parse_opt_abbrev_cb</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="222">222</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_approxidate_cb" title='parse_opt_approxidate_cb' data-ref="parse_opt_approxidate_cb">parse_opt_approxidate_cb</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="223">223</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_expiry_date_cb" title='parse_opt_expiry_date_cb' data-ref="parse_opt_expiry_date_cb">parse_opt_expiry_date_cb</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="224">224</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_color_flag_cb" title='parse_opt_color_flag_cb' data-ref="parse_opt_color_flag_cb">parse_opt_color_flag_cb</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="225">225</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_verbosity_cb" title='parse_opt_verbosity_cb' data-ref="parse_opt_verbosity_cb">parse_opt_verbosity_cb</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="226">226</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_object_name" title='parse_opt_object_name' data-ref="parse_opt_object_name">parse_opt_object_name</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="227">227</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_commits" title='parse_opt_commits' data-ref="parse_opt_commits">parse_opt_commits</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="228">228</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_tertiary" title='parse_opt_tertiary' data-ref="parse_opt_tertiary">parse_opt_tertiary</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="229">229</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_string_list" title='parse_opt_string_list' data-ref="parse_opt_string_list">parse_opt_string_list</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="230">230</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_noop_cb" title='parse_opt_noop_cb' data-ref="parse_opt_noop_cb">parse_opt_noop_cb</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="231">231</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_unknown_cb" title='parse_opt_unknown_cb' data-ref="parse_opt_unknown_cb">parse_opt_unknown_cb</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="232">232</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_passthru" title='parse_opt_passthru' data-ref="parse_opt_passthru">parse_opt_passthru</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="233">233</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_opt_passthru_argv" title='parse_opt_passthru_argv' data-ref="parse_opt_passthru_argv">parse_opt_passthru_argv</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td><u>#define <dfn class="macro" id="_M/OPT__VERBOSE" data-ref="_M/OPT__VERBOSE">OPT__VERBOSE</dfn>(var, h)  OPT_COUNTUP('v', "verbose", (var), (h))</u></td></tr>
+<tr><th id="236">236</th><td><u>#define <dfn class="macro" id="_M/OPT__QUIET" data-ref="_M/OPT__QUIET">OPT__QUIET</dfn>(var, h)    OPT_COUNTUP('q', "quiet",   (var), (h))</u></td></tr>
+<tr><th id="237">237</th><td><u>#define <dfn class="macro" id="_M/OPT__VERBOSITY" data-ref="_M/OPT__VERBOSITY">OPT__VERBOSITY</dfn>(var) \</u></td></tr>
+<tr><th id="238">238</th><td><u>	{ OPTION_CALLBACK, 'v', "verbose", (var), NULL, N_("be more verbose"), \</u></td></tr>
+<tr><th id="239">239</th><td><u>	  PARSE_OPT_NOARG, &amp;parse_opt_verbosity_cb, 0 }, \</u></td></tr>
+<tr><th id="240">240</th><td><u>	{ OPTION_CALLBACK, 'q', "quiet", (var), NULL, N_("be more quiet"), \</u></td></tr>
+<tr><th id="241">241</th><td><u>	  PARSE_OPT_NOARG, &amp;parse_opt_verbosity_cb, 0 }</u></td></tr>
+<tr><th id="242">242</th><td><u>#define <dfn class="macro" id="_M/OPT__DRY_RUN" data-ref="_M/OPT__DRY_RUN">OPT__DRY_RUN</dfn>(var, h)  OPT_BOOL('n', "dry-run", (var), (h))</u></td></tr>
+<tr><th id="243">243</th><td><u>#define <dfn class="macro" id="_M/OPT__FORCE" data-ref="_M/OPT__FORCE">OPT__FORCE</dfn>(var, h)    OPT_COUNTUP('f', "force",   (var), (h))</u></td></tr>
+<tr><th id="244">244</th><td><u>#define <dfn class="macro" id="_M/OPT__ABBREV" data-ref="_M/OPT__ABBREV">OPT__ABBREV</dfn>(var)  \</u></td></tr>
+<tr><th id="245">245</th><td><u>	{ OPTION_CALLBACK, 0, "abbrev", (var), N_("n"),	\</u></td></tr>
+<tr><th id="246">246</th><td><u>	  N_("use &lt;n&gt; digits to display SHA-1s"),	\</u></td></tr>
+<tr><th id="247">247</th><td><u>	  PARSE_OPT_OPTARG, &amp;parse_opt_abbrev_cb, 0 }</u></td></tr>
+<tr><th id="248">248</th><td><u>#define <dfn class="macro" id="_M/OPT__COLOR" data-ref="_M/OPT__COLOR">OPT__COLOR</dfn>(var, h) \</u></td></tr>
+<tr><th id="249">249</th><td><u>	OPT_COLOR_FLAG(0, "color", (var), (h))</u></td></tr>
+<tr><th id="250">250</th><td><u>#define <dfn class="macro" id="_M/OPT_COLUMN" data-ref="_M/OPT_COLUMN">OPT_COLUMN</dfn>(s, l, v, h) \</u></td></tr>
+<tr><th id="251">251</th><td><u>	{ OPTION_CALLBACK, (s), (l), (v), N_("style"), (h), PARSE_OPT_OPTARG, parseopt_column_callback }</u></td></tr>
+<tr><th id="252">252</th><td><u>#define <dfn class="macro" id="_M/OPT_PASSTHRU" data-ref="_M/OPT_PASSTHRU">OPT_PASSTHRU</dfn>(s, l, v, a, h, f) \</u></td></tr>
+<tr><th id="253">253</th><td><u>	{ OPTION_CALLBACK, (s), (l), (v), (a), (h), (f), parse_opt_passthru }</u></td></tr>
+<tr><th id="254">254</th><td><u>#define <dfn class="macro" id="_M/OPT_PASSTHRU_ARGV" data-ref="_M/OPT_PASSTHRU_ARGV">OPT_PASSTHRU_ARGV</dfn>(s, l, v, a, h, f) \</u></td></tr>
+<tr><th id="255">255</th><td><u>	{ OPTION_CALLBACK, (s), (l), (v), (a), (h), (f), parse_opt_passthru_argv }</u></td></tr>
+<tr><th id="256">256</th><td><u>#define <dfn class="macro" id="_M/_OPT_CONTAINS_OR_WITH" data-ref="_M/_OPT_CONTAINS_OR_WITH">_OPT_CONTAINS_OR_WITH</dfn>(name, variable, help, flag) \</u></td></tr>
+<tr><th id="257">257</th><td><u>	{ OPTION_CALLBACK, 0, name, (variable), N_("commit"), (help), \</u></td></tr>
+<tr><th id="258">258</th><td><u>	  PARSE_OPT_LASTARG_DEFAULT | flag, \</u></td></tr>
+<tr><th id="259">259</th><td><u>	  parse_opt_commits, (intptr_t) "HEAD" \</u></td></tr>
+<tr><th id="260">260</th><td><u>	}</u></td></tr>
+<tr><th id="261">261</th><td><u>#define <dfn class="macro" id="_M/OPT_CONTAINS" data-ref="_M/OPT_CONTAINS">OPT_CONTAINS</dfn>(v, h) _OPT_CONTAINS_OR_WITH("contains", v, h, PARSE_OPT_NONEG)</u></td></tr>
+<tr><th id="262">262</th><td><u>#define <dfn class="macro" id="_M/OPT_NO_CONTAINS" data-ref="_M/OPT_NO_CONTAINS">OPT_NO_CONTAINS</dfn>(v, h) _OPT_CONTAINS_OR_WITH("no-contains", v, h, PARSE_OPT_NONEG)</u></td></tr>
+<tr><th id="263">263</th><td><u>#define <dfn class="macro" id="_M/OPT_WITH" data-ref="_M/OPT_WITH">OPT_WITH</dfn>(v, h) _OPT_CONTAINS_OR_WITH("with", v, h, PARSE_OPT_HIDDEN | PARSE_OPT_NONEG)</u></td></tr>
+<tr><th id="264">264</th><td><u>#define <dfn class="macro" id="_M/OPT_WITHOUT" data-ref="_M/OPT_WITHOUT">OPT_WITHOUT</dfn>(v, h) _OPT_CONTAINS_OR_WITH("without", v, h, PARSE_OPT_HIDDEN | PARSE_OPT_NONEG)</u></td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="267">267</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='apply.c.html'>codebrowser/apply.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/parse-options.h' l='29' type='8'/>
+<use f='codebrowser/builtin/archive.c' l='79' u='r' c='cmd_archive'/>
+<use f='codebrowser/builtin/difftool.c' l='724' u='r' c='cmd_difftool'/>
+<use f='codebrowser/builtin/fast-export.c' l='1017' u='r' c='cmd_fast_export'/>
+<use f='codebrowser/builtin/log.c' l='165' u='r' c='cmd_log_init_finish'/>
+<use f='codebrowser/builtin/log.c' l='1533' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/revert.c' l='132' u='r' c='run_sequencer'/>
+<use f='codebrowser/parse-options.c' l='422' u='r' c='parse_options_start'/>
+<use f='codebrowser/parse-options.c' l='513' u='r' c='parse_options_step'/>

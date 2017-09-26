@@ -1,0 +1,8 @@
+<dec f='codebrowser/kwset.h' l='32' type='size_t [1]'/>
+<offset>128</offset>
+<doc f='codebrowser/kwset.h' l='32'>/* Length of each submatch. */</doc>
+<use f='codebrowser/diffcore-pickaxe.c' l='102' u='r' c='contains'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='103' u='r' c='contains'/>
+<use f='codebrowser/grep.c' l='1091' u='r' c='fixmatch'/>
+<use f='codebrowser/kwset.c' l='730' u='w' c='cwexec'/>
+<use f='codebrowser/kwset.c' l='754' u='w' c='kwsexec'/>

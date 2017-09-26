@@ -1,0 +1,8 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='44' type='int'/>
+<offset>320</offset>
+<use f='codebrowser/xdiff/xdiffi.c' l='397' u='w' c='xdl_add_change'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1014' u='w' c='xdl_mark_ignorable'/>
+<use f='codebrowser/xdiff/xemit.c' l='60' u='r' c='xdl_get_hunk'/>
+<use f='codebrowser/xdiff/xemit.c' l='78' u='r' c='xdl_get_hunk'/>
+<use f='codebrowser/xdiff/xemit.c' l='81' u='r' c='xdl_get_hunk'/>
+<use f='codebrowser/xdiff/xemit.c' l='86' u='r' c='xdl_get_hunk'/>

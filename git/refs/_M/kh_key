@@ -1,0 +1,7 @@
+<dec f='codebrowser/khash.h' l='247'/>
+<doc f='codebrowser/khash.h' l='241'>/*! @function
+  @abstract     Get key given an iterator
+  @param  h     Pointer to the hash table [khash_t(name)*]
+  @param  x     Iterator to the bucket [khint_t]
+  @return       Key [type of keys]
+ */</doc>

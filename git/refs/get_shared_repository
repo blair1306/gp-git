@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='756' type='int get_shared_repository()'/>
+<use f='codebrowser/builtin/init-db.c' l='215' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='378' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='386' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='388' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='389' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='391' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='403' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='408' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='506' u='c' c='cmd_init_db'/>
+<def f='codebrowser/environment.c' l='323' ll='333' type='int get_shared_repository()'/>
+<use f='codebrowser/path.c' l='840' u='c' c='calc_shared_perm'/>
+<use f='codebrowser/path.c' l='841' u='c' c='calc_shared_perm'/>
+<use f='codebrowser/path.c' l='843' u='c' c='calc_shared_perm'/>
+<use f='codebrowser/path.c' l='850' u='c' c='calc_shared_perm'/>
+<use f='codebrowser/path.c' l='863' u='c' c='adjust_shared_perm'/>

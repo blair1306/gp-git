@@ -1,0 +1,14 @@
+<def f='codebrowser/strbuf.h' l='573' ll='576' type='void strbuf_complete_line(struct strbuf * sb)'/>
+<use f='codebrowser/builtin/commit-tree.c' l='80' u='c' c='cmd_commit_tree'/>
+<use f='codebrowser/builtin/commit-tree.c' l='105' u='c' c='cmd_commit_tree'/>
+<use f='codebrowser/builtin/commit.c' l='175' u='c' c='opt_parse_m'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='221' u='c' c='add_branch_desc'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='474' u='c' c='fmt_tag_signature'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='644' u='c' c='fmt_merge_msg'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='652' u='c' c='fmt_merge_msg'/>
+<use f='codebrowser/notes-utils.c' l='48' u='c' c='commit_notes'/>
+<use f='codebrowser/sequencer.c' l='1052' u='c' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='2387' u='c' c='append_signoff'/>
+<use f='codebrowser/strbuf.c' l='239' u='c' c='add_lines'/>
+<use f='codebrowser/trace.c' l='148' u='c' c='print_trace_line'/>
+<use f='codebrowser/wrapper.c' l='670' u='c' c='write_file'/>

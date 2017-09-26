@@ -1,0 +1,4 @@
+<dec f='codebrowser/http.h' l='229' type='struct http_object_request * new_http_object_request(const char * base_url, unsigned char * sha1)'/>
+<use f='codebrowser/http-push.c' l='254' u='c' c='start_fetch_loose'/>
+<use f='codebrowser/http-walker.c' l='58' u='c' c='start_object_request'/>
+<def f='codebrowser/http.c' l='2147' ll='2271' type='struct http_object_request * new_http_object_request(const char * base_url, unsigned char * sha1)'/>

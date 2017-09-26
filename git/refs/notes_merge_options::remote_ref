@@ -1,0 +1,13 @@
+<dec f='codebrowser/notes-merge.h' l='15' type='const char *'/>
+<use f='codebrowser/builtin/notes.c' l='819' u='w' c='merge'/>
+<offset>64</offset>
+<use f='codebrowser/notes-merge.c' l='351' u='r' c='ll_merge_in_worktree'/>
+<use f='codebrowser/notes-merge.c' l='371' u='r' c='merge_one_change_manual'/>
+<use f='codebrowser/notes-merge.c' l='371' u='r' c='merge_one_change_manual'/>
+<use f='codebrowser/notes-merge.c' l='544' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='549' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='563' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='568' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='573' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='577' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='583' u='r' c='notes_merge'/>

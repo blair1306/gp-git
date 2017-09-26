@@ -1,0 +1,3 @@
+<dec f='codebrowser/submodule-config.h' l='28' type='void submodule_cache_free(struct submodule_cache * cache)'/>
+<use f='codebrowser/repository.c' l='225' u='c' c='repo_clear'/>
+<def f='codebrowser/submodule-config.c' l='104' ll='108' type='void submodule_cache_free(struct submodule_cache * cache)'/>

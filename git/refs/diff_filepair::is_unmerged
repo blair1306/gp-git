@@ -1,0 +1,12 @@
+<dec f='codebrowser/diffcore.h' l='72' type='unsigned int'/>
+<offset>154</offset>
+<use f='codebrowser/diff.c' l='2556' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='3286' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='3326' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='3350' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='4267' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='4385' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='4605' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='5171' u='w' c='diff_unmerge'/>
+<use f='codebrowser/diffcore-rename.c' l='479' macro='1' u='r'/>
+<use f='codebrowser/diffcore-rename.c' l='595' macro='1' u='r'/>

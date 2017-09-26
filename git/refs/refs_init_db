@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='111' type='int refs_init_db(struct strbuf * err)'/>
+<use f='codebrowser/builtin/init-db.c' l='226' u='c' c='create_default_files'/>
+<def f='codebrowser/refs.c' l='1489' ll='1494' type='int refs_init_db(struct strbuf * err)'/>
+<doc f='codebrowser/refs.c' l='1488'>/* backend functions */</doc>

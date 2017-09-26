@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule.h' l='40' type='void stage_updated_gitmodules()'/>
+<use f='codebrowser/builtin/mv.c' l='295' u='c' c='cmd_mv'/>
+<use f='codebrowser/builtin/rm.c' l='386' u='c' c='cmd_rm'/>
+<def f='codebrowser/submodule.c' l='139' ll='143' type='void stage_updated_gitmodules()'/>

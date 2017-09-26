@@ -1,0 +1,6 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='102' type='xdl_emit_hunk_consume_func_t'/>
+<offset>320</offset>
+<use f='codebrowser/blame.c' l='279' u='w' c='diff_hunks'/>
+<use f='codebrowser/line-log.c' l='340' u='w' c='collect_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='989' u='r' c='xdl_call_hunk_func'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1022' u='r' c='xdl_diff'/>

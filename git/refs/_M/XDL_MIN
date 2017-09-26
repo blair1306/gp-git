@@ -1,0 +1,9 @@
+<dec f='codebrowser/xdiff/xmacros.h' l='29'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='224' u='c'/>
+<use f='codebrowser/xdiff/xemit.c' l='213' u='c'/>
+<use f='codebrowser/xdiff/xemit.c' l='214' u='c'/>
+<use f='codebrowser/xdiff/xemit.c' l='238' u='c'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='132' u='c'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='196' u='c'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='203' u='c'/>
+<use f='codebrowser/xdiff/xprepare.c' l='454' u='c'/>

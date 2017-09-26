@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='548'/>
+<doc f='include/curl/curl.h' l='547'>/* Previously obsolete error codes re-used in 7.24.0 */</doc>

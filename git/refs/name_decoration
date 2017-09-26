@@ -1,0 +1,6 @@
+<def f='codebrowser/commit.h' l='29' ll='33'/>
+<size>16</size>
+<doc f='codebrowser/commit.h' l='28'>/* While we can decorate any object with a name, it&apos;s only used for commits.. */</doc>
+<mbr r='name_decoration::next' o='0' t='struct name_decoration *'/>
+<mbr r='name_decoration::type' o='64' t='int'/>
+<mbr r='name_decoration::name' o='96' t='char []'/>

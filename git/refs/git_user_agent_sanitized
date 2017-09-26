@@ -1,0 +1,6 @@
+<dec f='codebrowser/version.h' l='7' type='const char * git_user_agent_sanitized()'/>
+<use f='codebrowser/builtin/receive-pack.c' l='246' u='c' c='show_ref'/>
+<use f='codebrowser/fetch-pack.c' l='380' u='c' c='find_common'/>
+<use f='codebrowser/send-pack.c' l='463' u='c' c='send_pack'/>
+<use f='codebrowser/upload-pack.c' l='952' u='c' c='send_ref'/>
+<def f='codebrowser/version.c' l='20' ll='38' type='const char * git_user_agent_sanitized()'/>

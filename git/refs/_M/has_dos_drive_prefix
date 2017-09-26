@@ -1,0 +1,7 @@
+<dec f='codebrowser/git-compat-util.h' l='346'/>
+<use f='codebrowser/cache.h' l='1123' u='c'/>
+<use f='codebrowser/connect.c' l='267' u='c'/>
+<use f='codebrowser/connect.c' l='655' u='c'/>
+<use f='codebrowser/path.c' l='925' u='c'/>
+<use f='codebrowser/read-cache.c' l='835' u='c'/>
+<use f='codebrowser/setup.c' l='892' u='c'/>

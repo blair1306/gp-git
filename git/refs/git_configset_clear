@@ -1,0 +1,8 @@
+<dec f='codebrowser/config.h' l='156' type='void git_configset_clear(struct config_set * cs)'/>
+<def f='codebrowser/config.c' l='1746' ll='1764' type='void git_configset_clear(struct config_set * cs)'/>
+<use f='codebrowser/config.c' l='1889' u='c' c='repo_read_config'/>
+<use f='codebrowser/config.c' l='1919' u='c' c='repo_config_clear'/>
+<use f='codebrowser/repository.c' l='219' u='c' c='repo_clear'/>
+<use f='codebrowser/t/helper/test-config.c' l='197' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-config.c' l='201' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-config.c' l='205' u='c' c='cmd_main'/>

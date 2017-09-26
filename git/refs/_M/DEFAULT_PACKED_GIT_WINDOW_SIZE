@@ -1,0 +1,3 @@
+<dec f='codebrowser/git-compat-util.h' l='574'/>
+<doc f='codebrowser/git-compat-util.h' l='573'>/* This value must be multiple of (pagesize * 2) */</doc>
+<use f='codebrowser/environment.c' l='40' u='c'/>

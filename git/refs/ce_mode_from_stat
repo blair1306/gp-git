@@ -1,0 +1,8 @@
+<def f='codebrowser/cache.h' l='282' ll='295' type='unsigned int ce_mode_from_stat(const struct cache_entry * ce, unsigned int mode)'/>
+<use f='codebrowser/apply.c' l='3696' u='c' c='check_preimage'/>
+<use f='codebrowser/builtin/update-index.c' l='281' u='c' c='add_one_path'/>
+<use f='codebrowser/diff-lib.c' l='134' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='160' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='226' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='291' u='c' c='get_stat_data'/>
+<use f='codebrowser/read-cache.c' l='669' u='c' c='add_to_index'/>

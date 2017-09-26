@@ -1,0 +1,4 @@
+<dec f='codebrowser/path.h' l='22' type='void strbuf_git_common_path(struct strbuf * sb, const struct repository * repo, const char * fmt)'/>
+<use f='codebrowser/path.c' l='401' u='c' c='strbuf_worktree_gitdir'/>
+<def f='codebrowser/path.c' l='626' ll='634' type='void strbuf_git_common_path(struct strbuf * sb, const struct repository * repo, const char * fmt)'/>
+<use f='codebrowser/worktree.c' l='80' u='c' c='get_linked_worktree'/>

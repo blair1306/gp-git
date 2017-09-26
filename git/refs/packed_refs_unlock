@@ -1,0 +1,8 @@
+<dec f='codebrowser/refs/packed-backend.h' l='14' type='void packed_refs_unlock(struct ref_store * ref_store)'/>
+<use f='codebrowser/refs/files-backend.c' l='1135' u='c' c='files_pack_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='1157' u='c' c='files_delete_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='1161' u='c' c='files_delete_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='2586' u='c' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2590' u='c' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2718' u='c' c='files_initial_transaction_commit'/>
+<def f='codebrowser/refs/packed-backend.c' l='569' ll='580' type='void packed_refs_unlock(struct ref_store * ref_store)'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/prio-queue.h' l='31' type='unsigned int'/>
+<offset>64</offset>
+<use f='codebrowser/prio-queue.c' l='33' u='w' c='clear_prio_queue'/>
+<use f='codebrowser/prio-queue.c' l='42' u='w' c='prio_queue_put'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/transport.h' l='42' type='unsigned int'/>
+<offset>256</offset>
+<doc f='codebrowser/transport.h' l='38'>/**
+	 * Indicates whether we already called get_refs_list(); set by
+	 * transport.c::transport_get_remote_refs().
+	 */</doc>
+<use f='codebrowser/transport.c' l='767' u='w' c='transport_get'/>
+<use f='codebrowser/transport.c' l='1101' u='r' c='transport_get_remote_refs'/>
+<use f='codebrowser/transport.c' l='1103' u='w' c='transport_get_remote_refs'/>

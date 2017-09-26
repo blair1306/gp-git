@@ -1,0 +1,10 @@
+<dec f='codebrowser/tempfile.h' l='105' type='void register_tempfile(struct tempfile * tempfile, const char * path)'/>
+<doc f='codebrowser/tempfile.h' l='99'>/*
+ * Register an existing file as a tempfile, meaning that it will be
+ * deleted when the program exits. The tempfile is considered closed,
+ * but it can be worked with like any other closed tempfile (for
+ * example, it can be opened using reopen_tempfile()).
+ */</doc>
+<use f='codebrowser/builtin/gc.c' l='295' u='c' c='lock_repo_for_gc'/>
+<use f='codebrowser/credential-cache--daemon.c' l='288' u='c' c='cmd_main'/>
+<def f='codebrowser/tempfile.c' l='145' ll='151' type='void register_tempfile(struct tempfile * tempfile, const char * path)'/>

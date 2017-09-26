@@ -1,0 +1,52 @@
+<dec f='codebrowser/blame.h' l='89' type='int'/>
+<use f='codebrowser/blame.c' l='340' u='r' c='blame_merge'/>
+<use f='codebrowser/blame.c' l='340' u='r' c='blame_merge'/>
+<use f='codebrowser/blame.c' l='347' u='r' c='blame_merge'/>
+<use f='codebrowser/blame.c' l='347' u='r' c='blame_merge'/>
+<use f='codebrowser/blame.c' l='357' u='r' c='blame_merge'/>
+<use f='codebrowser/blame.c' l='357' u='r' c='blame_merge'/>
+<use f='codebrowser/blame.c' l='365' u='r' c='blame_merge'/>
+<use f='codebrowser/blame.c' l='365' u='r' c='blame_merge'/>
+<use f='codebrowser/blame.c' l='402' u='r' c='compare_blame_suspect'/>
+<use f='codebrowser/blame.c' l='402' u='r' c='compare_blame_suspect'/>
+<use f='codebrowser/blame.c' l='404' u='r' c='compare_blame_suspect'/>
+<use f='codebrowser/blame.c' l='404' u='r' c='compare_blame_suspect'/>
+<use f='codebrowser/blame.c' l='454' u='r' c='blame_coalesce'/>
+<use f='codebrowser/blame.c' l='454' u='r' c='blame_coalesce'/>
+<use f='codebrowser/blame.c' l='705' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='709' u='w' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='709' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='710' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='711' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='712' u='w' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='716' u='w' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='716' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='719' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='722' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='723' u='w' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='723' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='723' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='724' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='829' u='r' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='836' u='r' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='838' u='r' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='842' u='w' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='842' u='r' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='854' u='w' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='881' u='r' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='887' u='r' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='892' u='r' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='896' u='w' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='896' u='r' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='1050' u='r' c='handle_split'/>
+<use f='codebrowser/blame.c' l='1051' u='r' c='handle_split'/>
+<use f='codebrowser/blame.c' l='1860' u='w' c='blame_entry_prepend'/>
+<offset>192</offset>
+<doc f='codebrowser/blame.h' l='86'>/* the line number of the first line of this group in the
+	 * suspect&apos;s file; internally all line numbers are 0 based.
+	 */</doc>
+<use f='codebrowser/builtin/blame.c' l='276' u='r' c='found_guilty_entry'/>
+<use f='codebrowser/builtin/blame.c' l='343' u='r' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='353' u='r' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='417' u='r' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='546' u='r' c='find_alignment'/>

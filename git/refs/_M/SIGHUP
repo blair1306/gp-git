@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/signum.h' l='32'/>
+<doc f='include/x86_64-linux-gnu/bits/signum.h' l='31'>/* Signals.  */</doc>
+<use f='codebrowser/credential-cache--daemon.c' l='291' u='c'/>
+<use f='codebrowser/sigchain.c' l='48' u='c'/>
+<use f='codebrowser/sigchain.c' l='59' u='c'/>

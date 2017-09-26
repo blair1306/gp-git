@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1860' type='const char *'/>
+<use f='codebrowser/config.c' l='1330' u='a' c='git_default_mailmap_config'/>
+<def f='codebrowser/mailmap.c' l='15' type='const char *'/>
+<use f='codebrowser/mailmap.c' l='246' u='r' c='read_mailmap'/>
+<use f='codebrowser/mailmap.c' l='247' u='w' c='read_mailmap'/>
+<use f='codebrowser/mailmap.c' l='251' u='r' c='read_mailmap'/>

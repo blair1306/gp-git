@@ -1,0 +1,15 @@
+<dec f='codebrowser/blame.h' l='139' type='int'/>
+<use f='codebrowser/blame.c' l='1409' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1425' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1457' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1478' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1505' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1573' u='r' c='assign_blame'/>
+<use f='codebrowser/blame.c' l='1756' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1759' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1770' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1785' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1799' u='r' c='setup_scoreboard'/>
+<offset>1088</offset>
+<doc f='codebrowser/blame.h' l='138'>/* flags */</doc>
+<use f='codebrowser/builtin/blame.c' l='866' u='w' c='cmd_blame'/>

@@ -1,0 +1,7 @@
+<dec f='include/x86_64-linux-gnu/bits/string2.h' l='1063'/>
+<use f='codebrowser/refs.h' l='326' u='c'/>
+<use f='codebrowser/builtin/cat-file.c' l='502' u='c'/>
+<use f='codebrowser/builtin/mktag.c' l='113' u='c'/>
+<use f='codebrowser/builtin/mktag.c' l='114' u='c'/>
+<use f='codebrowser/builtin/rev-parse.c' l='461' u='c'/>
+<use f='codebrowser/sideband.c' l='67' u='c'/>

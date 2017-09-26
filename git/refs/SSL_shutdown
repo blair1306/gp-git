@@ -1,0 +1,2 @@
+<dec f='include/openssl/ssl.h' l='2397' type='int SSL_shutdown(SSL * s)'/>
+<use f='codebrowser/imap-send.c' l='397' u='c' c='socket_shutdown'/>

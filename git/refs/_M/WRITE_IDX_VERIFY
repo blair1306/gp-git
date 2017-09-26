@@ -1,0 +1,5 @@
+<dec f='codebrowser/pack.h' l='41'/>
+<doc f='codebrowser/pack.h' l='40'>/* flag bits */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='1755' u='c'/>
+<use f='codebrowser/pack-write.c' l='69' u='c'/>
+<use f='codebrowser/pack-write.c' l='173' u='c'/>

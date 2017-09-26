@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='226' type='void git_die_config_linenr(const char * key, const char * filename, int linenr)'/>
+<use f='codebrowser/config.c' l='1625' u='c' c='configset_iter'/>
+<def f='codebrowser/config.c' l='2146' ll='2154' macro='1' type='void git_die_config_linenr(const char * key, const char * filename, int linenr)'/>
+<use f='codebrowser/config.c' l='2170' u='c' c='git_die_config'/>

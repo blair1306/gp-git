@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff-delta.c' l='127' type='const void *'/>
+<use f='codebrowser/diff-delta.c' l='270' u='w' c='create_delta_index'/>
+<use f='codebrowser/diff-delta.c' l='354' u='r' c='create_delta'/>
+<offset>64</offset>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/revision.h' l='217' type='struct decoration'/>
+<offset>16640</offset>
+<doc f='codebrowser/revision.h' l='216'>/* line level range that we are chasing */</doc>
+<use f='codebrowser/line-log.c' l='702' u='a' c='add_line_range'/>
+<use f='codebrowser/line-log.c' l='710' u='a' c='add_line_range'/>
+<use f='codebrowser/line-log.c' l='716' u='a' c='clear_commit_line_range'/>
+<use f='codebrowser/line-log.c' l='720' u='a' c='clear_commit_line_range'/>
+<use f='codebrowser/line-log.c' l='729' u='a' c='lookup_line_range'/>

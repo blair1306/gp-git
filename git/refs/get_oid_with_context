@@ -1,0 +1,17 @@
+<dec f='codebrowser/cache.h' l='1316' type='int get_oid_with_context(const char * str, unsigned int flags, struct object_id * oid, struct object_context * oc)'/>
+<use f='codebrowser/builtin/cat-file.c' l='66' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='367' u='c' c='batch_one_object'/>
+<use f='codebrowser/builtin/grep.c' l='986' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/log.c' l='491' u='c' c='show_blob_object'/>
+<use f='codebrowser/builtin/rev-parse.c' l='914' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/revision.c' l='1468' u='c' c='handle_dotdot_1'/>
+<use f='codebrowser/revision.c' l='1469' u='c' c='handle_dotdot_1'/>
+<use f='codebrowser/revision.c' l='1603' u='c' c='handle_revision_arg'/>
+<use f='codebrowser/revision.c' l='2321' u='c' c='setup_revisions'/>
+<use f='codebrowser/sha1_name.c' l='1347' u='c' c='get_oid'/>
+<use f='codebrowser/sha1_name.c' l='1364' u='c' c='get_oid_committish'/>
+<use f='codebrowser/sha1_name.c' l='1371' u='c' c='get_oid_treeish'/>
+<use f='codebrowser/sha1_name.c' l='1378' u='c' c='get_oid_commit'/>
+<use f='codebrowser/sha1_name.c' l='1385' u='c' c='get_oid_tree'/>
+<use f='codebrowser/sha1_name.c' l='1392' u='c' c='get_oid_blob'/>
+<def f='codebrowser/sha1_name.c' l='1645' ll='1650' type='int get_oid_with_context(const char * str, unsigned int flags, struct object_id * oid, struct object_context * oc)'/>

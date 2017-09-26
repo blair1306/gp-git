@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='259' type='struct commit_list * get_merge_bases_many_dirty(struct commit * one, int n, struct commit ** twos)'/>
+<doc f='codebrowser/commit.h' l='258'>/* To be used only when object flags after this call no longer matter */</doc>
+<use f='codebrowser/builtin/merge-base.c' l='14' u='c' c='show_merge_base'/>
+<use f='codebrowser/builtin/merge-base.c' l='183' u='c' c='handle_fork_point'/>
+<def f='codebrowser/commit.c' l='993' ll='998' type='struct commit_list * get_merge_bases_many_dirty(struct commit * one, int n, struct commit ** twos)'/>

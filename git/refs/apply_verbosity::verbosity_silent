@@ -1,0 +1,18 @@
+<dec f='codebrowser/apply.h' l='17' type='-1'/>
+<use f='codebrowser/apply.c' l='152' u='r' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='1648' u='r' c='record_ws_error'/>
+<use f='codebrowser/apply.c' l='1845' u='r' c='parse_single_patch'/>
+<use f='codebrowser/apply.c' l='3058' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='3553' u='r' c='try_threeway'/>
+<use f='codebrowser/apply.c' l='3584' u='r' c='try_threeway'/>
+<use f='codebrowser/apply.c' l='3598' u='r' c='try_threeway'/>
+<use f='codebrowser/apply.c' l='3603' u='r' c='try_threeway'/>
+<use f='codebrowser/apply.c' l='4521' u='r' c='write_out_one_reject'/>
+<use f='codebrowser/apply.c' l='4549' u='r' c='write_out_one_reject'/>
+<use f='codebrowser/apply.c' l='4553' u='r' c='write_out_one_reject'/>
+<use f='codebrowser/apply.c' l='4603' u='r' c='write_out_results'/>
+<use f='codebrowser/apply.c' l='4727' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4730' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4733' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4900' u='r' c='apply_all_patches'/>
+<use f='codebrowser/builtin/am.c' l='1509' u='r' c='run_apply'/>

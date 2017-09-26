@@ -1,0 +1,40 @@
+<dec f='codebrowser/trace.h' l='101' type='void trace_printf_key_fl(const char * file, int line, struct trace_key * key, const char * format)'/>
+<doc f='codebrowser/trace.h' l='99'>/* backend functions, use non-*fl macros instead */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='881' macro='1' u='c'/>
+<use f='codebrowser/dir.c' l='2139' macro='1' u='c'/>
+<use f='codebrowser/exec_cmd.c' l='123' macro='1' u='c'/>
+<use f='codebrowser/http.c' l='639' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='124' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='143' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='168' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='187' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='204' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='212' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='254' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='373' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='419' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='475' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='478' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='485' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='488' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='492' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='498' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='515' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='548' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='560' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='579' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='655' macro='1' u='c'/>
+<use f='codebrowser/run-command.c' l='41' macro='1' u='c'/>
+<use f='codebrowser/run-command.c' l='1452' macro='1' u='c'/>
+<use f='codebrowser/run-command.c' l='1484' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2496' macro='1' u='c'/>
+<use f='codebrowser/shallow.c' l='391' macro='1' u='c'/>
+<use f='codebrowser/shallow.c' l='422' macro='1' u='c'/>
+<use f='codebrowser/shallow.c' l='572' macro='1' u='c'/>
+<use f='codebrowser/shallow.c' l='678' macro='1' u='c'/>
+<def f='codebrowser/trace.c' l='263' ll='270' type='void trace_printf_key_fl(const char * file, int line, struct trace_key * key, const char * format)'/>
+<use f='codebrowser/trace.c' l='333' macro='1' u='c'/>
+<use f='codebrowser/trace.c' l='334' macro='1' u='c'/>
+<use f='codebrowser/trace.c' l='335' macro='1' u='c'/>
+<use f='codebrowser/trace.c' l='336' macro='1' u='c'/>
+<use f='codebrowser/trace.c' l='337' macro='1' u='c'/>

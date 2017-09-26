@@ -1,0 +1,17 @@
+<dec f='codebrowser/http.h' l='117' type='char [256]'/>
+<use f='codebrowser/http-push.c' l='583' c='finish_request'/>
+<use f='codebrowser/http-push.c' l='1524' c='remote_exists'/>
+<use f='codebrowser/http-push.c' l='1540' c='fetch_symref'/>
+<use f='codebrowser/http-walker.c' l='449' c='http_fetch_pack'/>
+<def f='codebrowser/http.c' l='41' type='char [256]'/>
+<use f='codebrowser/http.c' l='1105' c='get_active_slot'/>
+<use f='codebrowser/http.c' l='1380' u='r' c='handle_curl_result'/>
+<use f='codebrowser/http.c' l='1380' u='r' c='handle_curl_result'/>
+<use f='codebrowser/http.c' l='1410' u='r' c='handle_curl_result'/>
+<use f='codebrowser/http.c' l='1411' u='r' c='handle_curl_result'/>
+<use f='codebrowser/http.c' l='1413' u='r' c='handle_curl_result'/>
+<use f='codebrowser/http.c' l='1424' u='r' c='run_one_slot'/>
+<use f='codebrowser/http.c' l='1424' u='r' c='run_one_slot'/>
+<use f='codebrowser/remote-curl.c' l='320' c='discover_refs'/>
+<use f='codebrowser/remote-curl.c' l='494' u='r' c='run_slot'/>
+<use f='codebrowser/remote-curl.c' l='496' u='r' c='run_slot'/>

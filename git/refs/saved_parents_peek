@@ -1,0 +1,1 @@
+<def f='codebrowser/revision.c' l='3025' macro='1' type='struct commit_list ** saved_parents_peek(struct saved_parents * s, const struct commit * c)'/>

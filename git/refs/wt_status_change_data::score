@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='41' type='int'/>
+<offset>96</offset>
+<use f='codebrowser/wt-status.c' l='536' u='w' c='wt_status_collect_updated_cb'/>
+<use f='codebrowser/wt-status.c' l='2071' u='r' c='wt_porcelain_v2_print_changed_entry'/>

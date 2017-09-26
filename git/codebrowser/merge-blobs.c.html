@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>merge-blobs.c source code [codebrowser/merge-blobs.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/merge-blobs.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='merge-blobs.c.html'>merge-blobs.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="run-command.h.html">"run-command.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="xdiff-interface.h.html">"xdiff-interface.h"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="ll-merge.h.html">"ll-merge.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="blob.h.html">"blob.h"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="merge-blobs.h.html">"merge-blobs.h"</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="fill_mmfile_blob" title='fill_mmfile_blob' data-type='int fill_mmfile_blob(mmfile_t * f, struct blob * obj)' data-ref="fill_mmfile_blob">fill_mmfile_blob</dfn>(<a class="typedef" href="xdiff/xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col1 decl" id="1f" title='f' data-type='mmfile_t *' data-ref="1f">f</dfn>, <b>struct</b> <a class="type" href="blob.h.html#blob" title='blob' data-ref="blob">blob</a> *<dfn class="local col2 decl" id="2obj" title='obj' data-type='struct blob *' data-ref="2obj">obj</dfn>)</td></tr>
+<tr><th id="9">9</th><td>{</td></tr>
+<tr><th id="10">10</th><td>	<em>void</em> *<dfn class="local col3 decl" id="3buf" title='buf' data-type='void *' data-ref="3buf">buf</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	<em>unsigned</em> <em>long</em> <dfn class="local col4 decl" id="4size" title='size' data-type='unsigned long' data-ref="4size">size</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<b>enum</b> <a class="type" href="cache.h.html#object_type" title='object_type' data-ref="object_type">object_type</a> <dfn class="local col5 decl" id="5type" title='type' data-type='enum object_type' data-ref="5type">type</dfn>;</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td>	<a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a> = <a class="ref" href="cache.h.html#read_sha1_file" title='read_sha1_file' data-ref="read_sha1_file">read_sha1_file</a>(<a class="local col2 ref" href="#2obj" title='obj' data-ref="2obj">obj</a>-&gt;<a class="ref" href="blob.h.html#blob::object" title='blob::object' data-ref="blob::object">object</a>.<a class="ref" href="object.h.html#object::oid" title='object::oid' data-ref="object::oid">oid</a>.<a class="ref" href="cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>, &amp;<a class="local col5 ref" href="#5type" title='type' data-ref="5type">type</a>, &amp;<a class="local col4 ref" href="#4size" title='size' data-ref="4size">size</a>);</td></tr>
+<tr><th id="15">15</th><td>	<b>if</b> (!<a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a>)</td></tr>
+<tr><th id="16">16</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="17">17</th><td>	<b>if</b> (<a class="local col5 ref" href="#5type" title='type' data-ref="5type">type</a> != <a class="enum" href="cache.h.html#object_type::OBJ_BLOB" title='object_type::OBJ_BLOB' data-ref="object_type::OBJ_BLOB">OBJ_BLOB</a>) {</td></tr>
+<tr><th id="18">18</th><td>		<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a>);</td></tr>
+<tr><th id="19">19</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="20">20</th><td>	}</td></tr>
+<tr><th id="21">21</th><td>	<a class="local col1 ref" href="#1f" title='f' data-ref="1f">f</a>-&gt;<a class="ref" href="xdiff/xdiff.h.html#s_mmfile::ptr" title='s_mmfile::ptr' data-ref="s_mmfile::ptr">ptr</a> = <a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a>;</td></tr>
+<tr><th id="22">22</th><td>	<a class="local col1 ref" href="#1f" title='f' data-ref="1f">f</a>-&gt;<a class="ref" href="xdiff/xdiff.h.html#s_mmfile::size" title='s_mmfile::size' data-ref="s_mmfile::size">size</a> = <a class="local col4 ref" href="#4size" title='size' data-ref="4size">size</a>;</td></tr>
+<tr><th id="23">23</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="24">24</th><td>}</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="free_mmfile" title='free_mmfile' data-type='void free_mmfile(mmfile_t * f)' data-ref="free_mmfile">free_mmfile</dfn>(<a class="typedef" href="xdiff/xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col6 decl" id="6f" title='f' data-type='mmfile_t *' data-ref="6f">f</dfn>)</td></tr>
+<tr><th id="27">27</th><td>{</td></tr>
+<tr><th id="28">28</th><td>	<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col6 ref" href="#6f" title='f' data-ref="6f">f</a>-&gt;<a class="ref" href="xdiff/xdiff.h.html#s_mmfile::ptr" title='s_mmfile::ptr' data-ref="s_mmfile::ptr">ptr</a>);</td></tr>
+<tr><th id="29">29</th><td>}</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><em>static</em> <em>void</em> *<dfn class="tu decl def" id="three_way_filemerge" title='three_way_filemerge' data-type='void * three_way_filemerge(const char * path, mmfile_t * base, mmfile_t * our, mmfile_t * their, unsigned long * size)' data-ref="three_way_filemerge">three_way_filemerge</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7path" title='path' data-type='const char *' data-ref="7path">path</dfn>, <a class="typedef" href="xdiff/xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col8 decl" id="8base" title='base' data-type='mmfile_t *' data-ref="8base">base</dfn>, <a class="typedef" href="xdiff/xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col9 decl" id="9our" title='our' data-type='mmfile_t *' data-ref="9our">our</dfn>, <a class="typedef" href="xdiff/xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col0 decl" id="10their" title='their' data-type='mmfile_t *' data-ref="10their">their</dfn>, <em>unsigned</em> <em>long</em> *<dfn class="local col1 decl" id="11size" title='size' data-type='unsigned long *' data-ref="11size">size</dfn>)</td></tr>
+<tr><th id="32">32</th><td>{</td></tr>
+<tr><th id="33">33</th><td>	<em>int</em> <dfn class="local col2 decl" id="12merge_status" title='merge_status' data-type='int' data-ref="12merge_status">merge_status</dfn>;</td></tr>
+<tr><th id="34">34</th><td>	<a class="typedef" href="xdiff/xdiff.h.html#mmbuffer_t" title='mmbuffer_t' data-type='struct s_mmbuffer' data-ref="mmbuffer_t">mmbuffer_t</a> <dfn class="local col3 decl" id="13res" title='res' data-type='mmbuffer_t' data-ref="13res">res</dfn>;</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>	<i>/*</i></td></tr>
+<tr><th id="37">37</th><td><i>	 * This function is only used by cmd_merge_tree, which</i></td></tr>
+<tr><th id="38">38</th><td><i>	 * does not respect the merge.conflictstyle option.</i></td></tr>
+<tr><th id="39">39</th><td><i>	 * There is no need to worry about a label for the</i></td></tr>
+<tr><th id="40">40</th><td><i>	 * common ancestor.</i></td></tr>
+<tr><th id="41">41</th><td><i>	 */</i></td></tr>
+<tr><th id="42">42</th><td>	<a class="local col2 ref" href="#12merge_status" title='merge_status' data-ref="12merge_status">merge_status</a> = <a class="ref" href="ll-merge.h.html#ll_merge" title='ll_merge' data-ref="ll_merge">ll_merge</a>(&amp;<a class="local col3 ref" href="#13res" title='res' data-ref="13res">res</a>, <a class="local col7 ref" href="#7path" title='path' data-ref="7path">path</a>, <a class="local col8 ref" href="#8base" title='base' data-ref="8base">base</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>,</td></tr>
+<tr><th id="43">43</th><td>				<a class="local col9 ref" href="#9our" title='our' data-ref="9our">our</a>, <q>".our"</q>, <a class="local col0 ref" href="#10their" title='their' data-ref="10their">their</a>, <q>".their"</q>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="44">44</th><td>	<b>if</b> (<a class="local col2 ref" href="#12merge_status" title='merge_status' data-ref="12merge_status">merge_status</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="45">45</th><td>		<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>	*<a class="local col1 ref" href="#11size" title='size' data-ref="11size">size</a> = <a class="local col3 ref" href="#13res" title='res' data-ref="13res">res</a>.<a class="ref" href="xdiff/xdiff.h.html#s_mmbuffer::size" title='s_mmbuffer::size' data-ref="s_mmbuffer::size">size</a>;</td></tr>
+<tr><th id="48">48</th><td>	<b>return</b> <a class="local col3 ref" href="#13res" title='res' data-ref="13res">res</a>.<a class="ref" href="xdiff/xdiff.h.html#s_mmbuffer::ptr" title='s_mmbuffer::ptr' data-ref="s_mmbuffer::ptr">ptr</a>;</td></tr>
+<tr><th id="49">49</th><td>}</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><em>void</em> *<dfn class="decl def" id="merge_blobs" title='merge_blobs' data-ref="merge_blobs">merge_blobs</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="14path" title='path' data-type='const char *' data-ref="14path">path</dfn>, <b>struct</b> <a class="type" href="blob.h.html#blob" title='blob' data-ref="blob">blob</a> *<dfn class="local col5 decl" id="15base" title='base' data-type='struct blob *' data-ref="15base">base</dfn>, <b>struct</b> <a class="type" href="blob.h.html#blob" title='blob' data-ref="blob">blob</a> *<dfn class="local col6 decl" id="16our" title='our' data-type='struct blob *' data-ref="16our">our</dfn>, <b>struct</b> <a class="type" href="blob.h.html#blob" title='blob' data-ref="blob">blob</a> *<dfn class="local col7 decl" id="17their" title='their' data-type='struct blob *' data-ref="17their">their</dfn>, <em>unsigned</em> <em>long</em> *<dfn class="local col8 decl" id="18size" title='size' data-type='unsigned long *' data-ref="18size">size</dfn>)</td></tr>
+<tr><th id="52">52</th><td>{</td></tr>
+<tr><th id="53">53</th><td>	<em>void</em> *<dfn class="local col9 decl" id="19res" title='res' data-type='void *' data-ref="19res">res</dfn> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="54">54</th><td>	<a class="typedef" href="xdiff/xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> <dfn class="local col0 decl" id="20f1" title='f1' data-type='mmfile_t' data-ref="20f1">f1</dfn>, <dfn class="local col1 decl" id="21f2" title='f2' data-type='mmfile_t' data-ref="21f2">f2</dfn>, <dfn class="local col2 decl" id="22common" title='common' data-type='mmfile_t' data-ref="22common">common</dfn>;</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>	<i>/*</i></td></tr>
+<tr><th id="57">57</th><td><i>	 * Removed in either branch?</i></td></tr>
+<tr><th id="58">58</th><td><i>	 *</i></td></tr>
+<tr><th id="59">59</th><td><i>	 * NOTE! This depends on the caller having done the</i></td></tr>
+<tr><th id="60">60</th><td><i>	 * proper warning about removing a file that got</i></td></tr>
+<tr><th id="61">61</th><td><i>	 * modified in the other branch!</i></td></tr>
+<tr><th id="62">62</th><td><i>	 */</i></td></tr>
+<tr><th id="63">63</th><td>	<b>if</b> (!<a class="local col6 ref" href="#16our" title='our' data-ref="16our">our</a> || !<a class="local col7 ref" href="#17their" title='their' data-ref="17their">their</a>) {</td></tr>
+<tr><th id="64">64</th><td>		<b>enum</b> <a class="type" href="cache.h.html#object_type" title='object_type' data-ref="object_type">object_type</a> <dfn class="local col3 decl" id="23type" title='type' data-type='enum object_type' data-ref="23type">type</dfn>;</td></tr>
+<tr><th id="65">65</th><td>		<b>if</b> (<a class="local col5 ref" href="#15base" title='base' data-ref="15base">base</a>)</td></tr>
+<tr><th id="66">66</th><td>			<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="67">67</th><td>		<b>if</b> (!<a class="local col6 ref" href="#16our" title='our' data-ref="16our">our</a>)</td></tr>
+<tr><th id="68">68</th><td>			<a class="local col6 ref" href="#16our" title='our' data-ref="16our">our</a> = <a class="local col7 ref" href="#17their" title='their' data-ref="17their">their</a>;</td></tr>
+<tr><th id="69">69</th><td>		<b>return</b> <a class="ref" href="cache.h.html#read_sha1_file" title='read_sha1_file' data-ref="read_sha1_file">read_sha1_file</a>(<a class="local col6 ref" href="#16our" title='our' data-ref="16our">our</a>-&gt;<a class="ref" href="blob.h.html#blob::object" title='blob::object' data-ref="blob::object">object</a>.<a class="ref" href="object.h.html#object::oid" title='object::oid' data-ref="object::oid">oid</a>.<a class="ref" href="cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>, &amp;<a class="local col3 ref" href="#23type" title='type' data-ref="23type">type</a>, <a class="local col8 ref" href="#18size" title='size' data-ref="18size">size</a>);</td></tr>
+<tr><th id="70">70</th><td>	}</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>	<b>if</b> (<a class="tu ref" href="#fill_mmfile_blob" title='fill_mmfile_blob' data-use='c' data-ref="fill_mmfile_blob">fill_mmfile_blob</a>(&amp;<a class="local col0 ref" href="#20f1" title='f1' data-ref="20f1">f1</a>, <a class="local col6 ref" href="#16our" title='our' data-ref="16our">our</a>) &lt; <var>0</var>)</td></tr>
+<tr><th id="73">73</th><td>		<b>goto</b> <a class="lbl" href="#24out_no_mmfile" data-ref="24out_no_mmfile">out_no_mmfile</a>;</td></tr>
+<tr><th id="74">74</th><td>	<b>if</b> (<a class="tu ref" href="#fill_mmfile_blob" title='fill_mmfile_blob' data-use='c' data-ref="fill_mmfile_blob">fill_mmfile_blob</a>(&amp;<a class="local col1 ref" href="#21f2" title='f2' data-ref="21f2">f2</a>, <a class="local col7 ref" href="#17their" title='their' data-ref="17their">their</a>) &lt; <var>0</var>)</td></tr>
+<tr><th id="75">75</th><td>		<b>goto</b> <a class="lbl" href="#25out_free_f1" data-ref="25out_free_f1">out_free_f1</a>;</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>	<b>if</b> (<a class="local col5 ref" href="#15base" title='base' data-ref="15base">base</a>) {</td></tr>
+<tr><th id="78">78</th><td>		<b>if</b> (<a class="tu ref" href="#fill_mmfile_blob" title='fill_mmfile_blob' data-use='c' data-ref="fill_mmfile_blob">fill_mmfile_blob</a>(&amp;<a class="local col2 ref" href="#22common" title='common' data-ref="22common">common</a>, <a class="local col5 ref" href="#15base" title='base' data-ref="15base">base</a>) &lt; <var>0</var>)</td></tr>
+<tr><th id="79">79</th><td>			<b>goto</b> <a class="lbl" href="#26out_free_f2_f1" data-ref="26out_free_f2_f1">out_free_f2_f1</a>;</td></tr>
+<tr><th id="80">80</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="81">81</th><td>		<a class="local col2 ref" href="#22common" title='common' data-ref="22common">common</a>.<a class="ref" href="xdiff/xdiff.h.html#s_mmfile::ptr" title='s_mmfile::ptr' data-ref="s_mmfile::ptr">ptr</a> = <a class="ref" href="git-compat-util.h.html#xstrdup" title='xstrdup' data-ref="xstrdup">xstrdup</a>(<q>""</q>);</td></tr>
+<tr><th id="82">82</th><td>		<a class="local col2 ref" href="#22common" title='common' data-ref="22common">common</a>.<a class="ref" href="xdiff/xdiff.h.html#s_mmfile::size" title='s_mmfile::size' data-ref="s_mmfile::size">size</a> = <var>0</var>;</td></tr>
+<tr><th id="83">83</th><td>	}</td></tr>
+<tr><th id="84">84</th><td>	<a class="local col9 ref" href="#19res" title='res' data-ref="19res">res</a> = <a class="tu ref" href="#three_way_filemerge" title='three_way_filemerge' data-use='c' data-ref="three_way_filemerge">three_way_filemerge</a>(<a class="local col4 ref" href="#14path" title='path' data-ref="14path">path</a>, &amp;<a class="local col2 ref" href="#22common" title='common' data-ref="22common">common</a>, &amp;<a class="local col0 ref" href="#20f1" title='f1' data-ref="20f1">f1</a>, &amp;<a class="local col1 ref" href="#21f2" title='f2' data-ref="21f2">f2</a>, <a class="local col8 ref" href="#18size" title='size' data-ref="18size">size</a>);</td></tr>
+<tr><th id="85">85</th><td>	<a class="tu ref" href="#free_mmfile" title='free_mmfile' data-use='c' data-ref="free_mmfile">free_mmfile</a>(&amp;<a class="local col2 ref" href="#22common" title='common' data-ref="22common">common</a>);</td></tr>
+<tr><th id="86">86</th><td><dfn class="lbl" id="26out_free_f2_f1" data-ref="26out_free_f2_f1">out_free_f2_f1</dfn>:</td></tr>
+<tr><th id="87">87</th><td>	<a class="tu ref" href="#free_mmfile" title='free_mmfile' data-use='c' data-ref="free_mmfile">free_mmfile</a>(&amp;<a class="local col1 ref" href="#21f2" title='f2' data-ref="21f2">f2</a>);</td></tr>
+<tr><th id="88">88</th><td><dfn class="lbl" id="25out_free_f1" data-ref="25out_free_f1">out_free_f1</dfn>:</td></tr>
+<tr><th id="89">89</th><td>	<a class="tu ref" href="#free_mmfile" title='free_mmfile' data-use='c' data-ref="free_mmfile">free_mmfile</a>(&amp;<a class="local col0 ref" href="#20f1" title='f1' data-ref="20f1">f1</a>);</td></tr>
+<tr><th id="90">90</th><td><dfn class="lbl" id="24out_no_mmfile" data-ref="24out_no_mmfile">out_no_mmfile</dfn>:</td></tr>
+<tr><th id="91">91</th><td>	<b>return</b> <a class="local col9 ref" href="#19res" title='res' data-ref="19res">res</a>;</td></tr>
+<tr><th id="92">92</th><td>}</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

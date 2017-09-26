@@ -1,0 +1,10 @@
+<dec f='codebrowser/fsck.h' l='29' type='int fsck_error_function(struct fsck_options * o, struct object * obj, int type, const char * message)'/>
+<use f='codebrowser/builtin/fsck.c' l='33' macro='1'/>
+<use f='codebrowser/builtin/fsck.c' l='33' macro='1'/>
+<use f='codebrowser/builtin/fsck.c' l='34' macro='1'/>
+<use f='codebrowser/builtin/fsck.c' l='34' macro='1'/>
+<use f='codebrowser/builtin/index-pack.c' l='79' macro='1'/>
+<use f='codebrowser/builtin/index-pack.c' l='79' macro='1'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='25' macro='1'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='25' macro='1'/>
+<def f='codebrowser/fsck.c' l='924' ll='933' type='int fsck_error_function(struct fsck_options * o, struct object * obj, int msg_type, const char * message)'/>

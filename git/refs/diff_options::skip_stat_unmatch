@@ -1,0 +1,9 @@
+<dec f='codebrowser/diff.h' l='137' type='int'/>
+<offset>736</offset>
+<use f='codebrowser/builtin/diff.c' l='348' u='w' c='cmd_diff'/>
+<use f='codebrowser/builtin/diff.c' l='467' u='r' c='cmd_diff'/>
+<use f='codebrowser/combine-diff.c' l='1437' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/diff-no-index.c' l='275' u='w' c='diff_no_index'/>
+<use f='codebrowser/diff.c' l='4969' u='w' c='diffcore_skip_stat_unmatch'/>
+<use f='codebrowser/diff.c' l='4997' u='r' c='diffcore_std'/>
+<use f='codebrowser/diff.c' l='5152' u='r' c='diff_change'/>

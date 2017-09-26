@@ -1,0 +1,9 @@
+<dec f='codebrowser/xdiff/xemit.h' l='30' type='xdchange_t * xdl_get_hunk(xdchange_t ** xscr, const xdemitconf_t * xecfg)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='986' u='c' c='xdl_call_hunk_func'/>
+<def f='codebrowser/xdiff/xemit.c' l='52' ll='95' type='xdchange_t * xdl_get_hunk(xdchange_t ** xscr, const xdemitconf_t * xecfg)'/>
+<use f='codebrowser/xdiff/xemit.c' l='169' u='c' c='xdl_emit_diff'/>
+<doc f='codebrowser/xdiff/xemit.c' l='47'>/*
+ * Starting at the passed change atom, find the latest change atom to be included
+ * inside the differential hunk according to the specified configuration.
+ * Also advance xscr if the first changes must be discarded.
+ */</doc>

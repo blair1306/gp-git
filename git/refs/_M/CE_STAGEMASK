@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='186'/>
+<use f='codebrowser/builtin/ls-files.c' l='432' u='c'/>
+<use f='codebrowser/split-index.c' l='197' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1823' u='c'/>

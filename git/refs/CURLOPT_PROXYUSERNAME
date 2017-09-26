@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='1447' macro='1' type='10175'/>
+<use f='codebrowser/http.c' l='468' u='r' c='set_proxyauth_name_password'/>

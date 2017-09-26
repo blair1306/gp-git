@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='717' type='void update_index_if_able(struct index_state * , struct lock_file * )'/>
+<use f='codebrowser/builtin/commit.c' l='1404' u='c' c='cmd_status'/>
+<use f='codebrowser/builtin/describe.c' l='545' u='c' c='cmd_describe'/>
+<use f='codebrowser/builtin/diff.c' l='216' u='c' c='refresh_index_quietly'/>
+<def f='codebrowser/read-cache.c' l='2181' ll='2187' type='void update_index_if_able(struct index_state * istate, struct lock_file * lockfile)'/>
+<doc f='codebrowser/read-cache.c' l='2178'>/*
+ * Opportunistically update the index but do not complain if we can&apos;t
+ */</doc>
+<use f='codebrowser/wt-status.c' l='2306' u='c' c='require_clean_work_tree'/>

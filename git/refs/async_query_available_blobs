@@ -1,0 +1,3 @@
+<dec f='codebrowser/convert.h' l='74' type='int async_query_available_blobs(const char * cmd, struct string_list * available_paths)'/>
+<def f='codebrowser/convert.c' l='668' ll='715' type='int async_query_available_blobs(const char * cmd, struct string_list * available_paths)'/>
+<use f='codebrowser/entry.c' l='175' u='c' c='finish_delayed_checkout'/>

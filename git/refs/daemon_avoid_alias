@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1139' type='int daemon_avoid_alias(const char * path)'/>
+<use f='codebrowser/daemon.c' l='166' u='c' c='path_ok'/>
+<use f='codebrowser/http-backend.c' l='610' u='c' c='getdir'/>
+<def f='codebrowser/path.c' l='1244' ll='1289' type='int daemon_avoid_alias(const char * p)'/>

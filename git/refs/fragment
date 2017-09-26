@@ -1,0 +1,9 @@
+<def f='codebrowser/apply.c' l='175' ll='189'/>
+<size>80</size>
+<doc f='codebrowser/apply.c' l='168'>/*
+ * This represents one &quot;hunk&quot; from a patch, starting with
+ * &quot;@@ -oldpos,oldlines +newpos,newlines @@&quot; marker.  The
+ * patch text is pointed at by patch, and its byte length
+ * is stored in size.  leading and trailing are the number
+ * of context lines.
+ */</doc>

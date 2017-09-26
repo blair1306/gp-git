@@ -1,0 +1,10 @@
+<def f='codebrowser/xdiff/xdiff.h' l='120' ll='129'/>
+<size>48</size>
+<mbr r='s_xmparam::xpp' o='0' t='xpparam_t'/>
+<mbr r='s_xmparam::marker_size' o='64' t='int'/>
+<mbr r='s_xmparam::level' o='96' t='int'/>
+<mbr r='s_xmparam::favor' o='128' t='int'/>
+<mbr r='s_xmparam::style' o='160' t='int'/>
+<mbr r='s_xmparam::ancestor' o='192' t='const char *'/>
+<mbr r='s_xmparam::file1' o='256' t='const char *'/>
+<mbr r='s_xmparam::file2' o='320' t='const char *'/>

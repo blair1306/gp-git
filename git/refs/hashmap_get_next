@@ -1,0 +1,13 @@
+<dec f='codebrowser/hashmap.h' l='310' type='void * hashmap_get_next(const struct hashmap * map, const void * entry)'/>
+<doc f='codebrowser/hashmap.h' l='302'>/*
+ * Returns the next equal hashmap entry, or NULL if not found. This can be
+ * used to iterate over duplicate entries (see `hashmap_add`).
+ *
+ * `map` is the hashmap structure.
+ * `entry` is the hashmap_entry to start the search from, obtained via a previous
+ * call to `hashmap_get` or `hashmap_get_next`.
+ */</doc>
+<use f='codebrowser/diffcore-rename.c' l='283' u='c' c='find_identical_files'/>
+<def f='codebrowser/hashmap.c' l='191' ll='198' type='void * hashmap_get_next(const struct hashmap * map, const void * entry)'/>
+<use f='codebrowser/name-hash.c' l='714' u='c' c='index_file_exists'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='212' u='c' c='cmd_main'/>

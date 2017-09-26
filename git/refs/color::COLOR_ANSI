@@ -1,0 +1,5 @@
+<dec f='codebrowser/color.c' l='35' type='2'/>
+<use f='codebrowser/color.c' l='94' u='r' c='parse_color'/>
+<use f='codebrowser/color.c' l='114' u='r' c='parse_color'/>
+<use f='codebrowser/color.c' l='180' c='color_output'/>
+<doc f='codebrowser/color.c' l='35'>/* basic 0-7 ANSI colors */</doc>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/attr.h' l='47' type='struct attr_check * attr_check_dup(const struct attr_check * check)'/>
+<def f='codebrowser/attr.c' l='610' ll='625' type='struct attr_check * attr_check_dup(const struct attr_check * check)'/>
+<use f='codebrowser/pathspec.c' l='646' u='c' c='copy_pathspec'/>

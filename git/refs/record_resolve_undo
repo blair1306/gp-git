@@ -1,0 +1,4 @@
+<dec f='codebrowser/resolve-undo.h' l='9' type='void record_resolve_undo(struct index_state * , struct cache_entry * )'/>
+<use f='codebrowser/read-cache.c' l='511' u='c' c='remove_index_entry_at'/>
+<def f='codebrowser/resolve-undo.c' l='7' ll='29' type='void record_resolve_undo(struct index_state * istate, struct cache_entry * ce)'/>
+<doc f='codebrowser/resolve-undo.c' l='6'>/* The only error case is to run out of memory in string-list */</doc>

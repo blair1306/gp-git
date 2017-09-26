@@ -1,0 +1,14 @@
+<dec f='codebrowser/repository.h' l='38' type='char *'/>
+<offset>256</offset>
+<doc f='codebrowser/repository.h' l='34'>/*
+	 * Path to the current worktree&apos;s index file.
+	 * Cannot be NULL after initialization.
+	 */</doc>
+<use f='codebrowser/environment.c' l='282' u='r' c='get_index_file'/>
+<use f='codebrowser/environment.c' l='284' u='r' c='get_index_file'/>
+<use f='codebrowser/path.c' l='383' u='r' c='adjust_git_path'/>
+<use f='codebrowser/path.c' l='383' u='r' c='adjust_git_path'/>
+<use f='codebrowser/repository.c' l='48' u='w' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='211' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='212' u='w' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='241' u='r' c='repo_read_index'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='200' type='8'/>
+<use f='codebrowser/combine-diff.c' l='731' u='r' c='dump_sline'/>
+<use f='codebrowser/diff.c' l='83' u='r' c='parse_diff_color_slot'/>
+<use f='codebrowser/diff.c' l='626' u='r' c='emit_hunk_header'/>

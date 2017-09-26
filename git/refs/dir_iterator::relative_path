@@ -1,0 +1,10 @@
+<dec f='codebrowser/dir-iterator.h' l='50' type='const char *'/>
+<use f='codebrowser/dir-iterator.c' l='153' u='w' c='dir_iterator_advance'/>
+<offset>192</offset>
+<doc f='codebrowser/dir-iterator.h' l='45'>/*
+	 * The current path relative to the starting path. This part
+	 * of the path always uses &quot;/&quot; characters to separate path
+	 * components:
+	 */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2015' u='r' c='files_reflog_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='2021' u='r' c='files_reflog_iterator_advance'/>

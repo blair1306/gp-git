@@ -1,0 +1,5 @@
+<dec f='include/curl/curlbuild.h' l='175'/>
+<use f='include/curl/curlbuild.h' l='178' u='c'/>
+<use f='include/curl/curlrules.h' l='93' u='a'/>
+<use f='include/curl/curlrules.h' l='256' u='w'/>
+<doc f='include/curl/curlbuild.h' l='174'>/* Signed integral data type used for curl_off_t. */</doc>

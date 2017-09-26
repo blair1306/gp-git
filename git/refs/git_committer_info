@@ -1,0 +1,19 @@
+<dec f='codebrowser/cache.h' l='1448' type='const char * git_committer_info(int )'/>
+<use f='codebrowser/builtin/am.c' l='2309' u='c' c='cmd_am'/>
+<use f='codebrowser/builtin/commit.c' l='804' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='301' u='c' c='credit_people'/>
+<use f='codebrowser/builtin/log.c' l='833' u='c' c='git_format_config'/>
+<use f='codebrowser/builtin/log.c' l='929' u='c' c='gen_message_id'/>
+<use f='codebrowser/builtin/log.c' l='1007' u='c' c='make_cover_letter'/>
+<use f='codebrowser/builtin/log.c' l='1248' u='c' c='from_callback'/>
+<use f='codebrowser/builtin/merge.c' l='1402' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1444' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/tag.c' l='225' u='c' c='create_tag'/>
+<use f='codebrowser/builtin/var.c' l='35'/>
+<use f='codebrowser/builtin/var.c' l='35'/>
+<use f='codebrowser/builtin/var.c' l='35'/>
+<use f='codebrowser/builtin/var.c' l='35'/>
+<use f='codebrowser/commit.c' l='1550' u='c' c='commit_tree_extended'/>
+<use f='codebrowser/gpg-interface.c' l='145' u='c' c='get_signing_key'/>
+<def f='codebrowser/ident.c' l='442' ll='452' type='const char * git_committer_info(int flag)'/>
+<use f='codebrowser/refs/files-backend.c' l='1574' u='c' c='files_log_ref_write'/>

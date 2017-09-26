@@ -1,0 +1,6 @@
+<dec f='codebrowser/connect.h' l='14' type='int url_is_local_not_ssh(const char * url)'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='122' u='c' c='relative_url'/>
+<def f='codebrowser/connect.c' l='262' ll='268' type='int url_is_local_not_ssh(const char * url)'/>
+<use f='codebrowser/connect.c' l='641' u='c' c='parse_connect_url'/>
+<use f='codebrowser/transport.c' l='789' u='c' c='transport_get'/>
+<use f='codebrowser/transport.c' l='1181' u='c' c='transport_anonymize_url'/>

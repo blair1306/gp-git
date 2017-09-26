@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='446' type='int rename_ref(const char * oldref, const char * newref, const char * logmsg)'/>
+<use f='codebrowser/builtin/branch.c' l='493' u='c' c='rename_branch'/>
+<use f='codebrowser/builtin/remote.c' l='710' u='c' c='mv'/>
+<def f='codebrowser/refs.c' l='2062' ll='2065' type='int rename_ref(const char * oldref, const char * newref, const char * logmsg)'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='61' type='void git_deflate_end(git_zstream * )'/>
+<use f='codebrowser/archive-zip.c' l='216' u='c' c='zlib_deflate_raw'/>
+<use f='codebrowser/archive-zip.c' l='489' u='c' c='write_zip_entry'/>
+<use f='codebrowser/builtin/index-pack.c' l='1308' u='c' c='write_compressed'/>
+<use f='codebrowser/builtin/pack-objects.c' l='146' u='c' c='do_compress'/>
+<use f='codebrowser/builtin/pack-objects.c' l='187' u='c' c='write_large_blob_data'/>
+<use f='codebrowser/bulk-checkin.c' l='164' u='c' c='stream_to_pack'/>
+<use f='codebrowser/diff.c' l='2215' u='c' c='deflate_it'/>
+<use f='codebrowser/fast-import.c' l='1140' u='c' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1161' u='c' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1292' u='c' c='stream_blob'/>
+<use f='codebrowser/http-push.c' l='387' u='c' c='start_put'/>
+<def f='codebrowser/zlib.c' l='216' ll='224' type='void git_deflate_end(git_zstream * strm)'/>

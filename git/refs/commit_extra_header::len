@@ -1,0 +1,14 @@
+<dec f='codebrowser/commit.h' l='322' type='size_t'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/replace.c' l='358' u='r' c='check_one_mergetag'/>
+<use f='codebrowser/builtin/replace.c' l='362' u='r' c='check_one_mergetag'/>
+<use f='codebrowser/commit.c' l='1231' u='w' c='handle_signed_tag'/>
+<use f='codebrowser/commit.c' l='1277' u='r' c='add_extra_header'/>
+<use f='codebrowser/commit.c' l='1278' u='r' c='add_extra_header'/>
+<use f='codebrowser/commit.c' l='1350' u='a' c='read_commit_extra_header_lines'/>
+<use f='codebrowser/commit.c' l='1369' u='a' c='read_commit_extra_header_lines'/>
+<use f='codebrowser/log-tree.c' l='491' u='r' c='show_one_mergetag'/>
+<use f='codebrowser/log-tree.c' l='497' u='r' c='show_one_mergetag'/>
+<use f='codebrowser/log-tree.c' l='512' u='r' c='show_one_mergetag'/>
+<use f='codebrowser/log-tree.c' l='514' u='r' c='show_one_mergetag'/>
+<use f='codebrowser/log-tree.c' l='518' u='r' c='show_one_mergetag'/>

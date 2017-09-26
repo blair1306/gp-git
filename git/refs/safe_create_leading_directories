@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1072' type='enum scld_error safe_create_leading_directories(char * path)'/>
+<use f='codebrowser/apply.c' l='4370' u='c' c='create_one_file'/>
+<use f='codebrowser/builtin/difftool.c' l='265' u='c' c='ensure_leading_directories'/>
+<use f='codebrowser/environment.c' l='263' u='c' c='odb_mkstemp'/>
+<use f='codebrowser/refs/files-backend.c' l='484' u='c' c='lock_raw_ref'/>
+<use f='codebrowser/server-info.c' l='19' u='c' c='update_info_file'/>
+<def f='codebrowser/sha1_file.c' l='108' ll='160' type='enum scld_error safe_create_leading_directories(char * path)'/>
+<use f='codebrowser/sha1_file.c' l='167' u='c' c='safe_create_leading_directories_const'/>
+<use f='codebrowser/sha1_file.c' l='231' u='c' c='raceproof_create_file'/>

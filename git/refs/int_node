@@ -1,0 +1,15 @@
+<def f='codebrowser/notes.c' l='24' ll='26'/>
+<size>128</size>
+<doc f='codebrowser/notes.c' l='12'>/*
+ * Use a non-balancing simple 16-tree structure with struct int_node as
+ * internal nodes, and struct leaf_node as leaf nodes. Each int_node has a
+ * 16-array of pointers to its children.
+ * The bottom 2 bits of each pointer is used to identify the pointer type
+ * - ptr &amp; 3 == 0 - NULL pointer, assert(ptr == NULL)
+ * - ptr &amp; 3 == 1 - pointer to next internal node - cast to struct int_node *
+ * - ptr &amp; 3 == 2 - pointer to note entry - cast to struct leaf_node *
+ * - ptr &amp; 3 == 3 - pointer to subtree entry - cast to struct leaf_node *
+ *
+ * The root node is a statically allocated struct int_node.
+ */</doc>
+<mbr r='int_node::a' o='0' t='void *[16]'/>

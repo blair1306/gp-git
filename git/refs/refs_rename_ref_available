@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs/refs-internal.h' l='265' type='int refs_rename_ref_available(struct ref_store * refs, const char * old_refname, const char * new_refname)'/>
+<def f='codebrowser/refs.c' l='1232' ll='1249' type='int refs_rename_ref_available(struct ref_store * refs, const char * old_refname, const char * new_refname)'/>
+<doc f='codebrowser/refs/refs-internal.h' l='255'>/*
+ * Check whether an attempt to rename old_refname to new_refname would
+ * cause a D/F conflict with any existing reference (other than
+ * possibly old_refname). If there would be a conflict, emit an error
+ * message and return false; otherwise, return true.
+ *
+ * Note that this function is not safe against all races with other
+ * processes (though rename_ref() catches some races that might get by
+ * this check).
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='1295' u='c' c='files_rename_ref'/>

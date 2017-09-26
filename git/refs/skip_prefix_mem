@@ -1,0 +1,9 @@
+<def f='codebrowser/git-compat-util.h' l='491' ll='502' type='int skip_prefix_mem(const char * buf, size_t len, const char * prefix, const char ** out, size_t * outlen)'/>
+<doc f='codebrowser/git-compat-util.h' l='487'>/*
+ * Like skip_prefix, but promises never to read past &quot;len&quot; bytes of the input
+ * buffer, and returns the remaining number of bytes in &quot;out&quot; via &quot;outlen&quot;.
+ */</doc>
+<use f='codebrowser/color.c' l='147' u='c' c='parse_attr'/>
+<use f='codebrowser/color.c' l='148' u='c' c='parse_attr'/>
+<use f='codebrowser/config.c' l='268' u='c' c='include_condition_is_true'/>
+<use f='codebrowser/config.c' l='270' u='c' c='include_condition_is_true'/>

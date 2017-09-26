@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='174' type='int cmd_index_pack(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/index-pack.c' l='1629' ll='1816' type='int cmd_index_pack(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='410'/>
+<use f='codebrowser/git.c' l='410'/>
+<use f='codebrowser/git.c' l='410'/>
+<use f='codebrowser/git.c' l='410'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/config.h' l='34' type='const char *'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/config.c' l='542' u='w' c='cmd_config'/>
+<use f='codebrowser/config.c' l='215' u='r' c='include_by_gitdir'/>
+<use f='codebrowser/config.c' l='216' u='r' c='include_by_gitdir'/>
+<use f='codebrowser/config.c' l='1643' u='w' c='read_early_config'/>
+<use f='codebrowser/config.c' l='1654' u='w' c='read_early_config'/>
+<use f='codebrowser/config.c' l='1884' u='w' c='repo_read_config'/>

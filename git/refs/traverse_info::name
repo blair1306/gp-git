@@ -1,0 +1,14 @@
+<dec f='codebrowser/tree-walk.h' l='72' type='struct name_entry'/>
+<offset>128</offset>
+<use f='codebrowser/cache-tree.c' l='712' u='m' c='find_cache_tree_from_traversal'/>
+<use f='codebrowser/tree-walk.c' l='176' u='m' c='setup_traverse_info'/>
+<use f='codebrowser/tree-walk.c' l='177' u='m' c='setup_traverse_info'/>
+<use f='codebrowser/tree-walk.c' l='193' u='a' c='make_traverse_path'/>
+<use f='codebrowser/tree-walk.c' l='394' u='a' c='traverse_trees'/>
+<use f='codebrowser/tree-walk.c' l='399' u='m' c='traverse_trees'/>
+<use f='codebrowser/unpack-trees.c' l='605' u='a' c='switch_cache_bottom'/>
+<use f='codebrowser/unpack-trees.c' l='638' u='w' c='traverse_trees_recursive'/>
+<use f='codebrowser/unpack-trees.c' l='697' u='a' c='do_compare_entry_piecewise'/>
+<use f='codebrowser/unpack-trees.c' l='766' u='a' c='ce_in_traverse_path'/>
+<use f='codebrowser/unpack-trees.c' l='945' u='m' c='debug_path'/>
+<use f='codebrowser/unpack-trees.c' l='948' u='m' c='debug_path'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/attr.h' l='49' type='struct attr_check_item * attr_check_append(struct attr_check * check, const struct git_attr * attr)'/>
+<def f='codebrowser/attr.c' l='627' ll='636' type='struct attr_check_item * attr_check_append(struct attr_check * check, const struct git_attr * attr)'/>
+<use f='codebrowser/attr.c' l='1166' u='c' c='git_all_attrs'/>
+<use f='codebrowser/builtin/check-attr.c' l='175' u='c' c='cmd_check_attr'/>
+<use f='codebrowser/pathspec.c' l='195' u='c' c='parse_pathspec_attr_match'/>

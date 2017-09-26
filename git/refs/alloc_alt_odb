@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1555' type='struct alternate_object_database * alloc_alt_odb(const char * dir)'/>
+<doc f='codebrowser/cache.h' l='1551'>/*
+ * Allocate a &quot;struct alternate_object_database&quot; but do _not_ actually
+ * add it to the list of alternates.
+ */</doc>
+<use f='codebrowser/sha1_file.c' l='382' u='c' c='link_alt_odb_entry'/>
+<def f='codebrowser/sha1_file.c' l='478' ll='488' type='struct alternate_object_database * alloc_alt_odb(const char * dir)'/>
+<use f='codebrowser/sha1_name.c' l='104' u='c' c='find_short_object_filename'/>

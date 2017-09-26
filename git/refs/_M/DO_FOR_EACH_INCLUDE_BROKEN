@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs/refs-internal.h' l='273'/>
+<use f='codebrowser/refs.c' l='1283' u='c'/>
+<use f='codebrowser/refs.c' l='1350' u='c'/>
+<use f='codebrowser/refs.c' l='1369' u='c'/>
+<use f='codebrowser/refs.c' l='1396' u='c'/>
+<use f='codebrowser/refs.c' l='1906' u='c'/>
+<doc f='codebrowser/refs/refs-internal.h' l='272'>/* Include broken references in a do_for_each_ref*() iteration: */</doc>
+<use f='codebrowser/refs/files-backend.c' l='711' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='768' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='810' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='424' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='481' u='c'/>

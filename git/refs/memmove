@@ -1,0 +1,36 @@
+<dec f='include/string.h' l='46' type='void * memmove(void * __dest, const void * __src, size_t __n)'/>
+<use f='codebrowser/git-compat-util.h' l='836' u='c' c='move_array'/>
+<doc f='include/string.h' l='44'>/* Copy N bytes of SRC to DEST, guaranteeing
+   correct behavior for overlapping strings.  */</doc>
+<use f='codebrowser/apply.c' l='2336' u='c' c='update_pre_post_images'/>
+<use f='codebrowser/builtin/index-pack.c' l='256' u='c' c='flush'/>
+<use f='codebrowser/builtin/mv.c' l='253' u='c' c='cmd_mv'/>
+<use f='codebrowser/builtin/mv.c' l='255' u='c' c='cmd_mv'/>
+<use f='codebrowser/builtin/mv.c' l='257' u='c' c='cmd_mv'/>
+<use f='codebrowser/builtin/mv.c' l='259' u='c' c='cmd_mv'/>
+<use f='codebrowser/builtin/shortlog.c' l='106' u='c' c='insert_one_record'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='66' u='c' c='fill'/>
+<use f='codebrowser/cache-tree.c' l='87' u='c' c='find_subtree'/>
+<use f='codebrowser/commit.c' l='129' u='c' c='register_commit_graft'/>
+<use f='codebrowser/connect.c' l='314' u='c' c='host_end'/>
+<use f='codebrowser/convert.c' l='862' u='c' c='ident_to_git'/>
+<use f='codebrowser/convert.c' l='882' u='c' c='ident_to_git'/>
+<use f='codebrowser/convert.c' l='1250' u='c' c='null_filter_fn'/>
+<use f='codebrowser/diffcore-rename.c' l='60' u='c' c='add_rename_dst'/>
+<use f='codebrowser/diffcore-rename.c' l='101' u='c' c='register_rename_src'/>
+<use f='codebrowser/dir.c' l='708' u='c' c='lookup_untracked'/>
+<use f='codebrowser/git.c' l='258' u='c' c='handle_alias'/>
+<use f='codebrowser/imap-send.c' l='424' u='c' c='buffer_gets'/>
+<use f='codebrowser/parse-options.c' l='528' u='c' c='parse_options_end'/>
+<use f='codebrowser/read-cache.c' l='1200' u='c' c='add_index_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='242' u='c' c='remove_entry_from_dir'/>
+<use f='codebrowser/replace_object.c' l='47' u='c' c='register_replace_object'/>
+<use f='codebrowser/rerere.c' l='162' u='c' c='find_rerere_dir'/>
+<use f='codebrowser/revision.c' l='523' u='c' c='compact_treesame'/>
+<use f='codebrowser/setup.c' l='43' u='c' c='abspath_part_inside_repo'/>
+<use f='codebrowser/setup.c' l='47' u='c' c='abspath_part_inside_repo'/>
+<use f='codebrowser/setup.c' l='62' u='c' c='abspath_part_inside_repo'/>
+<use f='codebrowser/strbuf.c' l='90' u='c' c='strbuf_ltrim'/>
+<use f='codebrowser/strbuf.c' l='176' u='c' c='strbuf_splice'/>
+<use f='codebrowser/strbuf.c' l='912' u='c' c='strbuf_stripspace'/>
+<use f='codebrowser/transport-helper.c' l='1231' u='c' c='udt_do_write'/>

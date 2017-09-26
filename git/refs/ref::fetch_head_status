@@ -1,0 +1,23 @@
+<dec f='codebrowser/remote.h' l='110' type='enum (anonymous enum at /home/jon/workspace/git/remote.h:106:2)'/>
+<offset>704</offset>
+<doc f='codebrowser/remote.h' l='100'>/*
+	 * Order is important here, as we write to FETCH_HEAD
+	 * in numeric order. And the default NOT_FOR_MERGE
+	 * should be 0, so that xcalloc&apos;d structures get it
+	 * by default.
+	 */</doc>
+<use f='codebrowser/builtin/fetch.c' l='193' u='w' c='add_merge_config'/>
+<use f='codebrowser/builtin/fetch.c' l='214' u='w' c='add_merge_config'/>
+<use f='codebrowser/builtin/fetch.c' l='350' u='w' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='400' u='w' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='416' u='w' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='430' u='w' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='796' u='w' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='798' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='843' u='r' c='store_updated_refs'/>
+<use f='codebrowser/remote.c' l='749' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='750' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='753' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='754' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='757' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='758' u='r' c='handle_duplicate'/>

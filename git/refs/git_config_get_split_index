@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='212' type='int git_config_get_split_index()'/>
+<use f='codebrowser/builtin/update-index.c' l='1107' u='c' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='1116' u='c' c='cmd_update_index'/>
+<def f='codebrowser/config.c' l='2121' ll='2129' type='int git_config_get_split_index()'/>
+<use f='codebrowser/read-cache.c' l='1705' u='c' c='tweak_split_index'/>

@@ -1,0 +1,25 @@
+<dec f='codebrowser/http.h' l='73' type='struct strbuf'/>
+<offset>0</offset>
+<use f='codebrowser/http-push.c' l='199' u='m' c='curl_setup_http'/>
+<use f='codebrowser/http-push.c' l='369' u='a' c='start_put'/>
+<use f='codebrowser/http-push.c' l='373' u='m' c='start_put'/>
+<use f='codebrowser/http-push.c' l='390' u='m' c='start_put'/>
+<use f='codebrowser/http-push.c' l='877' u='a' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='923' u='a' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='1133' u='a' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1176' u='a' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1206' u='a' c='locking_available'/>
+<use f='codebrowser/http-push.c' l='1256' u='a' c='locking_available'/>
+<use f='codebrowser/http-push.c' l='1377' u='a' c='update_remote'/>
+<use f='codebrowser/http-push.c' l='1387' u='a' c='update_remote'/>
+<use f='codebrowser/http-push.c' l='1396' u='a' c='update_remote'/>
+<use f='codebrowser/http-push.c' l='1488' u='a' c='update_remote_info_refs'/>
+<use f='codebrowser/http-push.c' l='1507' u='a' c='update_remote_info_refs'/>
+<use f='codebrowser/http.c' l='152' u='m' c='fread_buffer'/>
+<use f='codebrowser/http.c' l='153' u='m' c='fread_buffer'/>
+<use f='codebrowser/http.c' l='154' u='m' c='fread_buffer'/>
+<use f='codebrowser/imap-send.c' l='1468' u='m' c='curl_append_msgs_to_imap'/>
+<use f='codebrowser/imap-send.c' l='1469' u='a' c='curl_append_msgs_to_imap'/>
+<use f='codebrowser/imap-send.c' l='1472' u='a' c='curl_append_msgs_to_imap'/>
+<use f='codebrowser/imap-send.c' l='1473' u='a' c='curl_append_msgs_to_imap'/>
+<use f='codebrowser/imap-send.c' l='1476' u='m' c='curl_append_msgs_to_imap'/>

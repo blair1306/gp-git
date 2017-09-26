@@ -1,0 +1,18 @@
+<dec f='codebrowser/notes.h' l='143' type='const struct object_id * get_note(struct notes_tree * t, const struct object_id * object_oid)'/>
+<doc f='codebrowser/notes.h' l='138'>/*
+ * Get the note object SHA1 containing the note data for the given object
+ *
+ * Return NULL if the given object has no notes.
+ */</doc>
+<use f='codebrowser/builtin/notes.c' l='376' u='c' c='list'/>
+<use f='codebrowser/builtin/notes.c' l='433' u='c' c='add'/>
+<use f='codebrowser/builtin/notes.c' l='524' u='c' c='copy'/>
+<use f='codebrowser/builtin/notes.c' l='538' u='c' c='copy'/>
+<use f='codebrowser/builtin/notes.c' l='602' u='c' c='append_edit'/>
+<use f='codebrowser/builtin/notes.c' l='664' u='c' c='show'/>
+<use f='codebrowser/notes-cache.c' l='77' u='c' c='notes_cache_get'/>
+<def f='codebrowser/notes.c' l='1123' ll='1133' type='const struct object_id * get_note(struct notes_tree * t, const struct object_id * oid)'/>
+<use f='codebrowser/notes.c' l='1233' u='c' c='format_note'/>
+<use f='codebrowser/notes.c' l='1295' u='c' c='copy_note'/>
+<use f='codebrowser/notes.c' l='1296' u='c' c='copy_note'/>
+<use f='codebrowser/remote-testsvn.c' l='62' u='c' c='read_ref_note'/>

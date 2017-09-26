@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/sys/un.h' l='32' type='char [108]'/>
+<offset>16</offset>
+<doc f='include/x86_64-linux-gnu/sys/un.h' l='32'>/* Path name.  */</doc>
+<use f='codebrowser/unix-socket.c' l='44' u='r' c='unix_sockaddr_init'/>
+<use f='codebrowser/unix-socket.c' l='57' u='r' c='unix_sockaddr_init'/>
+<use f='codebrowser/unix-socket.c' l='70' u='r' c='unix_sockaddr_init'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/archive.h' l='24' type='int (*)(const struct archiver *, struct archiver_args *)'/>
+<use f='codebrowser/archive-tar.c' l='384' u='w' c='tar_filter_config'/>
+<offset>64</offset>
+<use f='codebrowser/archive.c' l='520' u='r' c='write_archive'/>

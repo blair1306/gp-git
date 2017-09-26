@@ -1,0 +1,16 @@
+<dec f='codebrowser/unpack-trees.h' l='68' type='struct cache_entry *'/>
+<offset>4160</offset>
+<use f='codebrowser/builtin/read-tree.c' l='79' u='r' c='debug_stage'/>
+<use f='codebrowser/diff-lib.c' l='465' u='r' c='oneway_diff'/>
+<use f='codebrowser/unpack-trees.c' l='811' u='r' c='unpack_nondirectories'/>
+<use f='codebrowser/unpack-trees.c' l='832' u='r' c='unpack_nondirectories'/>
+<use f='codebrowser/unpack-trees.c' l='839' u='r' c='unpack_nondirectories'/>
+<use f='codebrowser/unpack-trees.c' l='1288' u='w' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1885' u='r' c='threeway_merge'/>
+<use f='codebrowser/unpack-trees.c' l='1894' u='r' c='threeway_merge'/>
+<use f='codebrowser/unpack-trees.c' l='1899' u='r' c='threeway_merge'/>
+<use f='codebrowser/unpack-trees.c' l='1967' u='r' c='threeway_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2012' u='r' c='threeway_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2051' u='r' c='twoway_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2053' u='r' c='twoway_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2140' u='r' c='oneway_merge'/>

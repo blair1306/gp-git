@@ -1,0 +1,11 @@
+<dec f='codebrowser/pack-objects.h' l='57' type='struct object_entry * packlist_find(struct packing_data * pdata, const unsigned char * sha1, uint32_t * index_pos)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='560' u='c' c='mark_tagged'/>
+<use f='codebrowser/builtin/pack-objects.c' l='565' u='c' c='mark_tagged'/>
+<use f='codebrowser/builtin/pack-objects.c' l='936' u='c' c='have_duplicate_entry'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1461' u='c' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2344' u='c' c='add_tag_chain'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2368' u='c' c='add_ref_tag'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2713' u='c' c='loosen_unused_packed_objects'/>
+<use f='codebrowser/pack-bitmap-write.c' l='143' u='c' c='find_object_pos'/>
+<use f='codebrowser/pack-bitmap.c' l='1035' u='c' c='rebuild_existing_bitmaps'/>
+<def f='codebrowser/pack-objects.c' l='68' ll='87' type='struct object_entry * packlist_find(struct packing_data * pdata, const unsigned char * sha1, uint32_t * index_pos)'/>

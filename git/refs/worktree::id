@@ -1,0 +1,36 @@
+<dec f='codebrowser/worktree.h' l='6' type='char *'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/worktree.c' l='503' u='r' c='lock_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='529' u='r' c='unlock_worktree'/>
+<use f='codebrowser/path.c' l='398' u='r' c='strbuf_worktree_gitdir'/>
+<use f='codebrowser/path.c' l='401' u='r' c='strbuf_worktree_gitdir'/>
+<use f='codebrowser/refs.c' l='1683' u='r' c='get_worktree_ref_store'/>
+<use f='codebrowser/refs.c' l='1683' u='r' c='get_worktree_ref_store'/>
+<use f='codebrowser/refs.c' l='1688' u='r' c='get_worktree_ref_store'/>
+<use f='codebrowser/refs.c' l='1689' u='r' c='get_worktree_ref_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='42' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='46' u='r' c='get_store'/>
+<use f='codebrowser/worktree.c' l='15' u='r' c='free_worktrees'/>
+<use f='codebrowser/worktree.c' l='97' u='w' c='get_linked_worktree'/>
+<use f='codebrowser/worktree.c' l='176' u='r' c='get_worktree_git_dir'/>
+<use f='codebrowser/worktree.c' l='179' u='r' c='get_worktree_git_dir'/>
+<use f='codebrowser/worktree.c' l='231' u='r' c='is_main_worktree'/>

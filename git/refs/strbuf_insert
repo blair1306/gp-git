@@ -1,0 +1,34 @@
+<dec f='codebrowser/strbuf.h' l='221' type='void strbuf_insert(struct strbuf * , size_t pos, const void * , size_t )'/>
+<doc f='codebrowser/strbuf.h' l='217'>/**
+ * Insert data to the given position of the buffer. The remaining contents
+ * will be shifted, not overwritten.
+ */</doc>
+<use f='codebrowser/apply.c' l='514' u='c' c='find_name_gnu'/>
+<use f='codebrowser/builtin/checkout.c' l='661' u='c' c='update_refs_for_switch'/>
+<use f='codebrowser/builtin/commit.c' l='1780' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1781' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='514' u='c' c='fmt_merge_msg_sigs'/>
+<use f='codebrowser/builtin/grep.c' l='323' u='c' c='grep_oid'/>
+<use f='codebrowser/builtin/notes.c' l='614' u='c' c='append_edit'/>
+<use f='codebrowser/builtin/notes.c' l='616' u='c' c='append_edit'/>
+<use f='codebrowser/builtin/notes.c' l='737' u='c' c='merge_commit'/>
+<use f='codebrowser/builtin/tag.c' l='263' u='c' c='create_tag'/>
+<use f='codebrowser/builtin/tag.c' l='304' u='c' c='create_reflog_msg'/>
+<use f='codebrowser/commit.c' l='1115' u='c' c='do_sign_commit'/>
+<use f='codebrowser/commit.c' l='1118' u='c' c='do_sign_commit'/>
+<use f='codebrowser/commit.c' l='1119' u='c' c='do_sign_commit'/>
+<use f='codebrowser/commit.c' l='1504' u='c' c='verify_utf8'/>
+<use f='codebrowser/config.c' l='197' u='c' c='prepare_include_condition_pattern'/>
+<use f='codebrowser/http.c' l='594' u='c' c='curl_dump_header'/>
+<use f='codebrowser/http.c' l='595' u='c' c='curl_dump_header'/>
+<use f='codebrowser/mailinfo.c' l='247' u='c' c='handle_content_type'/>
+<use f='codebrowser/mailinfo.c' l='558' u='c' c='check_header'/>
+<use f='codebrowser/mailinfo.c' l='993' u='c' c='handle_body'/>
+<use f='codebrowser/notes-utils.c' l='51' u='c' c='commit_notes'/>
+<use f='codebrowser/notes.c' l='1314' u='c' c='expand_notes_ref'/>
+<use f='codebrowser/notes.c' l='1316' u='c' c='expand_notes_ref'/>
+<use f='codebrowser/pretty.c' l='1356' u='c' c='format_and_pad_commit'/>
+<use f='codebrowser/pretty.c' l='1447' u='c' c='format_commit_item'/>
+<use f='codebrowser/pretty.c' l='1449' u='c' c='format_commit_item'/>
+<use f='codebrowser/setup.c' l='1004' u='c' c='discover_git_directory'/>
+<def f='codebrowser/strbuf.c' l='183' ll='186' type='void strbuf_insert(struct strbuf * sb, size_t pos, const void * data, size_t len)'/>

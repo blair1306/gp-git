@@ -1,0 +1,8 @@
+<dec f='codebrowser/grep.h' l='161' type='char [75]'/>
+<offset>4192</offset>
+<use f='codebrowser/grep.c' l='44' u='r' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='110' u='r' c='grep_config'/>
+<use f='codebrowser/grep.c' l='121' u='r' c='grep_config'/>
+<use f='codebrowser/grep.c' l='162' u='r' c='grep_init'/>
+<use f='codebrowser/grep.c' l='162' u='r' c='grep_init'/>
+<use f='codebrowser/grep.c' l='1377' u='r' c='show_line'/>

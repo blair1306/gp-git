@@ -1,0 +1,15 @@
+<dec f='codebrowser/pack-objects.h' l='19' type='uint32_t'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1053' u='w' c='create_object_entry'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1740' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1740' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1742' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1742' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2234' u='r' c='ll_find_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2235' u='r' c='ll_find_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2235' u='r' c='ll_find_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2289' u='r' c='ll_find_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2290' u='r' c='ll_find_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2290' u='r' c='ll_find_deltas'/>
+<offset>896</offset>
+<doc f='codebrowser/pack-objects.h' l='19'>/* name hint hash */</doc>
+<use f='codebrowser/pack-bitmap-write.c' l='498' u='r' c='write_hash_cache'/>

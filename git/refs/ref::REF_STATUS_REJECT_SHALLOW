@@ -1,0 +1,6 @@
+<dec f='codebrowser/remote.h' l='121' type='8'/>
+<use f='codebrowser/builtin/fetch.c' l='537' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='734' u='r' c='iterate_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='786' u='r' c='store_updated_refs'/>
+<use f='codebrowser/fetch-pack.c' l='1142' u='r' c='update_shallow'/>
+<use f='codebrowser/transport.c' l='421' c='print_one_push_status'/>

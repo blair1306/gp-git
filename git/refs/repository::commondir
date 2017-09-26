@@ -1,0 +1,18 @@
+<dec f='codebrowser/repository.h' l='20' type='char *'/>
+<offset>64</offset>
+<doc f='codebrowser/repository.h' l='16'>/*
+	 * Path to the common git directory.
+	 * Cannot be NULL after initialization.
+	 */</doc>
+<use f='codebrowser/config.c' l='1883' u='r' c='repo_read_config'/>
+<use f='codebrowser/environment.c' l='184' u='r' c='get_git_common_dir'/>
+<use f='codebrowser/environment.c' l='186' u='r' c='get_git_common_dir'/>
+<use f='codebrowser/path.c' l='389' u='r' c='adjust_git_path'/>
+<use f='codebrowser/path.c' l='399' u='r' c='strbuf_worktree_gitdir'/>
+<use f='codebrowser/path.c' l='609' u='r' c='do_git_common_path'/>
+<use f='codebrowser/repository.c' l='43' u='w' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='44' u='r' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='46' u='r' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='136' u='r' c='repo_init'/>
+<use f='codebrowser/repository.c' l='205' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='206' u='w' c='repo_clear'/>

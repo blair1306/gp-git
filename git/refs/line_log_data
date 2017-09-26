@@ -1,0 +1,17 @@
+<def f='codebrowser/line-log.h' l='46' ll='55'/>
+<size>96</size>
+<doc f='codebrowser/line-log.h' l='40'>/* Linked list of interesting files and their associated ranges.  The
+ * list must be kept sorted by path.
+ *
+ * For simplicity, even though this is highly redundant, each
+ * line_log_data owns its &apos;path&apos;.
+ */</doc>
+<mbr r='line_log_data::next' o='0' t='struct line_log_data *'/>
+<mbr r='line_log_data::path' o='64' t='char *'/>
+<mbr r='line_log_data::status' o='128' t='char'/>
+<mbr r='line_log_data::ranges' o='192' t='struct range_set'/>
+<mbr r='line_log_data::arg_alloc' o='320' t='int'/>
+<mbr r='line_log_data::arg_nr' o='352' t='int'/>
+<mbr r='line_log_data::args' o='384' t='const char **'/>
+<mbr r='line_log_data::pair' o='448' t='struct diff_filepair *'/>
+<mbr r='line_log_data::diff' o='512' t='struct diff_ranges'/>

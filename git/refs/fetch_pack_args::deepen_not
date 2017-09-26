@@ -1,0 +1,9 @@
+<dec f='codebrowser/fetch-pack.h' l='14' type='const struct string_list *'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/fetch-pack.c' l='149' u='w' c='cmd_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='402' u='r' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='404' u='r' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='405' u='r' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='923' u='r' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='977' u='r' c='do_fetch_pack'/>
+<use f='codebrowser/transport.c' l='226' u='w' c='fetch_refs_via_pack'/>

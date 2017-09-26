@@ -1,0 +1,5 @@
+<dec f='codebrowser/dir.h' l='141' type='int'/>
+<offset>1440</offset>
+<use f='codebrowser/dir.c' l='1740' u='w' c='open_cached_dir'/>
+<use f='codebrowser/dir.c' l='2147' u='r' c='read_directory'/>
+<use f='codebrowser/dir.c' l='2149' u='r' c='read_directory'/>

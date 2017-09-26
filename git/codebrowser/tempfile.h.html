@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>tempfile.h source code [codebrowser/tempfile.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="tempfile "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/tempfile.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='tempfile.h.html'>tempfile.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/TEMPFILE_H">TEMPFILE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/TEMPFILE_H" data-ref="_M/TEMPFILE_H">TEMPFILE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/*</i></td></tr>
+<tr><th id="5">5</th><td><i> * Handle temporary files.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * The tempfile API allows temporary files to be created, deleted, and</i></td></tr>
+<tr><th id="8">8</th><td><i> * atomically renamed. Temporary files that are still active when the</i></td></tr>
+<tr><th id="9">9</th><td><i> * program ends are cleaned up automatically. Lockfiles (see</i></td></tr>
+<tr><th id="10">10</th><td><i> * "lockfile.h") are built on top of this API.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * Calling sequence</i></td></tr>
+<tr><th id="14">14</th><td><i> * ----------------</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * The caller:</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> * * Allocates a `struct tempfile` either as a static variable or on</i></td></tr>
+<tr><th id="19">19</th><td><i> *   the heap, initialized to zeros. Once you use the structure to</i></td></tr>
+<tr><th id="20">20</th><td><i> *   call `create_tempfile()`, it belongs to the tempfile subsystem</i></td></tr>
+<tr><th id="21">21</th><td><i> *   and its storage must remain valid throughout the life of the</i></td></tr>
+<tr><th id="22">22</th><td><i> *   program (i.e. you cannot use an on-stack variable to hold this</i></td></tr>
+<tr><th id="23">23</th><td><i> *   structure).</i></td></tr>
+<tr><th id="24">24</th><td><i> *</i></td></tr>
+<tr><th id="25">25</th><td><i> * * Attempts to create a temporary file by calling</i></td></tr>
+<tr><th id="26">26</th><td><i> *   `create_tempfile()`.</i></td></tr>
+<tr><th id="27">27</th><td><i> *</i></td></tr>
+<tr><th id="28">28</th><td><i> * * Writes new content to the file by either:</i></td></tr>
+<tr><th id="29">29</th><td><i> *</i></td></tr>
+<tr><th id="30">30</th><td><i> *   * writing to the file descriptor returned by `create_tempfile()`</i></td></tr>
+<tr><th id="31">31</th><td><i> *     (also available via `tempfile-&gt;fd`).</i></td></tr>
+<tr><th id="32">32</th><td><i> *</i></td></tr>
+<tr><th id="33">33</th><td><i> *   * calling `fdopen_tempfile()` to get a `FILE` pointer for the</i></td></tr>
+<tr><th id="34">34</th><td><i> *     open file and writing to the file using stdio.</i></td></tr>
+<tr><th id="35">35</th><td><i> *</i></td></tr>
+<tr><th id="36">36</th><td><i> *   Note that the file descriptor returned by create_tempfile()</i></td></tr>
+<tr><th id="37">37</th><td><i> *   is marked O_CLOEXEC, so the new contents must be written by</i></td></tr>
+<tr><th id="38">38</th><td><i> *   the current process, not any spawned one.</i></td></tr>
+<tr><th id="39">39</th><td><i> *</i></td></tr>
+<tr><th id="40">40</th><td><i> * When finished writing, the caller can:</i></td></tr>
+<tr><th id="41">41</th><td><i> *</i></td></tr>
+<tr><th id="42">42</th><td><i> * * Close the file descriptor and remove the temporary file by</i></td></tr>
+<tr><th id="43">43</th><td><i> *   calling `delete_tempfile()`.</i></td></tr>
+<tr><th id="44">44</th><td><i> *</i></td></tr>
+<tr><th id="45">45</th><td><i> * * Close the temporary file and rename it atomically to a specified</i></td></tr>
+<tr><th id="46">46</th><td><i> *   filename by calling `rename_tempfile()`. This relinquishes</i></td></tr>
+<tr><th id="47">47</th><td><i> *   control of the file.</i></td></tr>
+<tr><th id="48">48</th><td><i> *</i></td></tr>
+<tr><th id="49">49</th><td><i> * * Close the file descriptor without removing or renaming the</i></td></tr>
+<tr><th id="50">50</th><td><i> *   temporary file by calling `close_tempfile()`, and later call</i></td></tr>
+<tr><th id="51">51</th><td><i> *   `delete_tempfile()` or `rename_tempfile()`.</i></td></tr>
+<tr><th id="52">52</th><td><i> *</i></td></tr>
+<tr><th id="53">53</th><td><i> * Even after the temporary file is renamed or deleted, the `tempfile`</i></td></tr>
+<tr><th id="54">54</th><td><i> * object must not be freed or altered by the caller. However, it may</i></td></tr>
+<tr><th id="55">55</th><td><i> * be reused; just pass it to another call of `create_tempfile()`.</i></td></tr>
+<tr><th id="56">56</th><td><i> *</i></td></tr>
+<tr><th id="57">57</th><td><i> * If the program exits before `rename_tempfile()` or</i></td></tr>
+<tr><th id="58">58</th><td><i> * `delete_tempfile()` is called, an `atexit(3)` handler will close</i></td></tr>
+<tr><th id="59">59</th><td><i> * and remove the temporary file.</i></td></tr>
+<tr><th id="60">60</th><td><i> *</i></td></tr>
+<tr><th id="61">61</th><td><i> * If you need to close the file descriptor yourself, do so by calling</i></td></tr>
+<tr><th id="62">62</th><td><i> * `close_tempfile()`. You should never call `close(2)` or `fclose(3)`</i></td></tr>
+<tr><th id="63">63</th><td><i> * yourself, otherwise the `struct tempfile` structure would still</i></td></tr>
+<tr><th id="64">64</th><td><i> * think that the file descriptor needs to be closed, and a later</i></td></tr>
+<tr><th id="65">65</th><td><i> * cleanup would result in duplicate calls to `close(2)`. Worse yet,</i></td></tr>
+<tr><th id="66">66</th><td><i> * if you close and then later open another file descriptor for a</i></td></tr>
+<tr><th id="67">67</th><td><i> * completely different purpose, then the unrelated file descriptor</i></td></tr>
+<tr><th id="68">68</th><td><i> * might get closed.</i></td></tr>
+<tr><th id="69">69</th><td><i> *</i></td></tr>
+<tr><th id="70">70</th><td><i> *</i></td></tr>
+<tr><th id="71">71</th><td><i> * Error handling</i></td></tr>
+<tr><th id="72">72</th><td><i> * --------------</i></td></tr>
+<tr><th id="73">73</th><td><i> *</i></td></tr>
+<tr><th id="74">74</th><td><i> * `create_tempfile()` returns a file descriptor on success or -1 on</i></td></tr>
+<tr><th id="75">75</th><td><i> * failure. On errors, `errno` describes the reason for failure.</i></td></tr>
+<tr><th id="76">76</th><td><i> *</i></td></tr>
+<tr><th id="77">77</th><td><i> * `delete_tempfile()`, `rename_tempfile()`, and `close_tempfile()`</i></td></tr>
+<tr><th id="78">78</th><td><i> * return 0 on success. On failure they set `errno` appropriately, do</i></td></tr>
+<tr><th id="79">79</th><td><i> * their best to delete the temporary file, and return -1.</i></td></tr>
+<tr><th id="80">80</th><td><i> */</i></td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><b>struct</b> <dfn class="type def" id="tempfile" title='tempfile' data-ref="tempfile">tempfile</dfn> {</td></tr>
+<tr><th id="83">83</th><td>	<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<em>volatile</em> <dfn class="decl" id="tempfile::next" title='tempfile::next' data-ref="tempfile::next">next</dfn>;</td></tr>
+<tr><th id="84">84</th><td>	<em>volatile</em> <a class="typedef" href="../include/signal.h.html#sig_atomic_t" title='sig_atomic_t' data-type='__sig_atomic_t' data-ref="sig_atomic_t">sig_atomic_t</a> <dfn class="decl" id="tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</dfn>;</td></tr>
+<tr><th id="85">85</th><td>	<em>volatile</em> <em>int</em> <dfn class="decl" id="tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</dfn>;</td></tr>
+<tr><th id="86">86</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<em>volatile</em> <dfn class="decl" id="tempfile::fp" title='tempfile::fp' data-ref="tempfile::fp">fp</dfn>;</td></tr>
+<tr><th id="87">87</th><td>	<em>volatile</em> <a class="typedef" href="../include/unistd.h.html#pid_t" title='pid_t' data-type='__pid_t' data-ref="pid_t">pid_t</a> <dfn class="decl" id="tempfile::owner" title='tempfile::owner' data-ref="tempfile::owner">owner</dfn>;</td></tr>
+<tr><th id="88">88</th><td>	<em>char</em> <dfn class="decl" id="tempfile::on_list" title='tempfile::on_list' data-ref="tempfile::on_list">on_list</dfn>;</td></tr>
+<tr><th id="89">89</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</dfn>;</td></tr>
+<tr><th id="90">90</th><td>};</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><i>/*</i></td></tr>
+<tr><th id="93">93</th><td><i> * Attempt to create a temporary file at the specified `path`. Return</i></td></tr>
+<tr><th id="94">94</th><td><i> * a file descriptor for writing to it, or -1 on error. It is an error</i></td></tr>
+<tr><th id="95">95</th><td><i> * if a file already exists at that path.</i></td></tr>
+<tr><th id="96">96</th><td><i> */</i></td></tr>
+<tr><th id="97">97</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="create_tempfile" title='create_tempfile' data-ref="create_tempfile">create_tempfile</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col6 decl" id="356tempfile" title='tempfile' data-type='struct tempfile *' data-ref="356tempfile">tempfile</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="357path" title='path' data-type='const char *' data-ref="357path">path</dfn>);</td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><i>/*</i></td></tr>
+<tr><th id="100">100</th><td><i> * Register an existing file as a tempfile, meaning that it will be</i></td></tr>
+<tr><th id="101">101</th><td><i> * deleted when the program exits. The tempfile is considered closed,</i></td></tr>
+<tr><th id="102">102</th><td><i> * but it can be worked with like any other closed tempfile (for</i></td></tr>
+<tr><th id="103">103</th><td><i> * example, it can be opened using reopen_tempfile()).</i></td></tr>
+<tr><th id="104">104</th><td><i> */</i></td></tr>
+<tr><th id="105">105</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="register_tempfile" title='register_tempfile' data-ref="register_tempfile">register_tempfile</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col8 decl" id="358tempfile" title='tempfile' data-type='struct tempfile *' data-ref="358tempfile">tempfile</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="359path" title='path' data-type='const char *' data-ref="359path">path</dfn>);</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><i>/*</i></td></tr>
+<tr><th id="109">109</th><td><i> * mks_tempfile functions</i></td></tr>
+<tr><th id="110">110</th><td><i> *</i></td></tr>
+<tr><th id="111">111</th><td><i> * The following functions attempt to create and open temporary files</i></td></tr>
+<tr><th id="112">112</th><td><i> * with names derived automatically from a template, in the manner of</i></td></tr>
+<tr><th id="113">113</th><td><i> * mkstemps(), and arrange for them to be deleted if the program ends</i></td></tr>
+<tr><th id="114">114</th><td><i> * before they are deleted explicitly. There is a whole family of such</i></td></tr>
+<tr><th id="115">115</th><td><i> * functions, named according to the following pattern:</i></td></tr>
+<tr><th id="116">116</th><td><i> *</i></td></tr>
+<tr><th id="117">117</th><td><i> *     x?mks_tempfile_t?s?m?()</i></td></tr>
+<tr><th id="118">118</th><td><i> *</i></td></tr>
+<tr><th id="119">119</th><td><i> * The optional letters have the following meanings:</i></td></tr>
+<tr><th id="120">120</th><td><i> *</i></td></tr>
+<tr><th id="121">121</th><td><i> *   x - die if the temporary file cannot be created.</i></td></tr>
+<tr><th id="122">122</th><td><i> *</i></td></tr>
+<tr><th id="123">123</th><td><i> *   t - create the temporary file under $TMPDIR (as opposed to</i></td></tr>
+<tr><th id="124">124</th><td><i> *       relative to the current directory). When these variants are</i></td></tr>
+<tr><th id="125">125</th><td><i> *       used, template should be the pattern for the filename alone,</i></td></tr>
+<tr><th id="126">126</th><td><i> *       without a path.</i></td></tr>
+<tr><th id="127">127</th><td><i> *</i></td></tr>
+<tr><th id="128">128</th><td><i> *   s - template includes a suffix that is suffixlen characters long.</i></td></tr>
+<tr><th id="129">129</th><td><i> *</i></td></tr>
+<tr><th id="130">130</th><td><i> *   m - the temporary file should be created with the specified mode</i></td></tr>
+<tr><th id="131">131</th><td><i> *       (otherwise, the mode is set to 0600).</i></td></tr>
+<tr><th id="132">132</th><td><i> *</i></td></tr>
+<tr><th id="133">133</th><td><i> * None of these functions modify template. If the caller wants to</i></td></tr>
+<tr><th id="134">134</th><td><i> * know the (absolute) path of the file that was created, it can be</i></td></tr>
+<tr><th id="135">135</th><td><i> * read from tempfile-&gt;filename.</i></td></tr>
+<tr><th id="136">136</th><td><i> *</i></td></tr>
+<tr><th id="137">137</th><td><i> * On success, the functions return a file descriptor that is open for</i></td></tr>
+<tr><th id="138">138</th><td><i> * writing the temporary file. On errors, they return -1 and set errno</i></td></tr>
+<tr><th id="139">139</th><td><i> * appropriately (except for the "x" variants, which die() on errors).</i></td></tr>
+<tr><th id="140">140</th><td><i> */</i></td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><i>/* See "mks_tempfile functions" above. */</i></td></tr>
+<tr><th id="143">143</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="mks_tempfile_sm" title='mks_tempfile_sm' data-ref="mks_tempfile_sm">mks_tempfile_sm</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col0 decl" id="360tempfile" title='tempfile' data-type='struct tempfile *' data-ref="360tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="144">144</th><td>			   <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="361template" title='template' data-type='const char *' data-ref="361template">template</dfn>, <em>int</em> <dfn class="local col2 decl" id="362suffixlen" title='suffixlen' data-type='int' data-ref="362suffixlen">suffixlen</dfn>, <em>int</em> <dfn class="local col3 decl" id="363mode" title='mode' data-type='int' data-ref="363mode">mode</dfn>);</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><i>/* See "mks_tempfile functions" above. */</i></td></tr>
+<tr><th id="147">147</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="mks_tempfile_s" title='mks_tempfile_s' data-ref="mks_tempfile_s">mks_tempfile_s</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col4 decl" id="364tempfile" title='tempfile' data-type='struct tempfile *' data-ref="364tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="148">148</th><td>				 <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="365template" title='template' data-type='const char *' data-ref="365template">template</dfn>, <em>int</em> <dfn class="local col6 decl" id="366suffixlen" title='suffixlen' data-type='int' data-ref="366suffixlen">suffixlen</dfn>)</td></tr>
+<tr><th id="149">149</th><td>{</td></tr>
+<tr><th id="150">150</th><td>	<b>return</b> <a class="ref" href="#mks_tempfile_sm" title='mks_tempfile_sm' data-ref="mks_tempfile_sm">mks_tempfile_sm</a>(<a class="local col4 ref" href="#364tempfile" title='tempfile' data-ref="364tempfile">tempfile</a>, <a class="local col5 ref" href="#365template" title='template' data-ref="365template">template</a>, <a class="local col6 ref" href="#366suffixlen" title='suffixlen' data-ref="366suffixlen">suffixlen</a>, <var>0600</var>);</td></tr>
+<tr><th id="151">151</th><td>}</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td><i>/* See "mks_tempfile functions" above. */</i></td></tr>
+<tr><th id="154">154</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="mks_tempfile_m" title='mks_tempfile_m' data-ref="mks_tempfile_m">mks_tempfile_m</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col7 decl" id="367tempfile" title='tempfile' data-type='struct tempfile *' data-ref="367tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="155">155</th><td>				 <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="368template" title='template' data-type='const char *' data-ref="368template">template</dfn>, <em>int</em> <dfn class="local col9 decl" id="369mode" title='mode' data-type='int' data-ref="369mode">mode</dfn>)</td></tr>
+<tr><th id="156">156</th><td>{</td></tr>
+<tr><th id="157">157</th><td>	<b>return</b> <a class="ref" href="#mks_tempfile_sm" title='mks_tempfile_sm' data-ref="mks_tempfile_sm">mks_tempfile_sm</a>(<a class="local col7 ref" href="#367tempfile" title='tempfile' data-ref="367tempfile">tempfile</a>, <a class="local col8 ref" href="#368template" title='template' data-ref="368template">template</a>, <var>0</var>, <a class="local col9 ref" href="#369mode" title='mode' data-ref="369mode">mode</a>);</td></tr>
+<tr><th id="158">158</th><td>}</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><i>/* See "mks_tempfile functions" above. */</i></td></tr>
+<tr><th id="161">161</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="mks_tempfile" title='mks_tempfile' data-ref="mks_tempfile">mks_tempfile</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col0 decl" id="370tempfile" title='tempfile' data-type='struct tempfile *' data-ref="370tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="162">162</th><td>			       <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="371template" title='template' data-type='const char *' data-ref="371template">template</dfn>)</td></tr>
+<tr><th id="163">163</th><td>{</td></tr>
+<tr><th id="164">164</th><td>	<b>return</b> <a class="ref" href="#mks_tempfile_sm" title='mks_tempfile_sm' data-ref="mks_tempfile_sm">mks_tempfile_sm</a>(<a class="local col0 ref" href="#370tempfile" title='tempfile' data-ref="370tempfile">tempfile</a>, <a class="local col1 ref" href="#371template" title='template' data-ref="371template">template</a>, <var>0</var>, <var>0600</var>);</td></tr>
+<tr><th id="165">165</th><td>}</td></tr>
+<tr><th id="166">166</th><td></td></tr>
+<tr><th id="167">167</th><td><i>/* See "mks_tempfile functions" above. */</i></td></tr>
+<tr><th id="168">168</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="mks_tempfile_tsm" title='mks_tempfile_tsm' data-ref="mks_tempfile_tsm">mks_tempfile_tsm</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col2 decl" id="372tempfile" title='tempfile' data-type='struct tempfile *' data-ref="372tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="169">169</th><td>			    <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="373template" title='template' data-type='const char *' data-ref="373template">template</dfn>, <em>int</em> <dfn class="local col4 decl" id="374suffixlen" title='suffixlen' data-type='int' data-ref="374suffixlen">suffixlen</dfn>, <em>int</em> <dfn class="local col5 decl" id="375mode" title='mode' data-type='int' data-ref="375mode">mode</dfn>);</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td><i>/* See "mks_tempfile functions" above. */</i></td></tr>
+<tr><th id="172">172</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="mks_tempfile_ts" title='mks_tempfile_ts' data-ref="mks_tempfile_ts">mks_tempfile_ts</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col6 decl" id="376tempfile" title='tempfile' data-type='struct tempfile *' data-ref="376tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="173">173</th><td>				  <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="377template" title='template' data-type='const char *' data-ref="377template">template</dfn>, <em>int</em> <dfn class="local col8 decl" id="378suffixlen" title='suffixlen' data-type='int' data-ref="378suffixlen">suffixlen</dfn>)</td></tr>
+<tr><th id="174">174</th><td>{</td></tr>
+<tr><th id="175">175</th><td>	<b>return</b> <a class="ref" href="#mks_tempfile_tsm" title='mks_tempfile_tsm' data-ref="mks_tempfile_tsm">mks_tempfile_tsm</a>(<a class="local col6 ref" href="#376tempfile" title='tempfile' data-ref="376tempfile">tempfile</a>, <a class="local col7 ref" href="#377template" title='template' data-ref="377template">template</a>, <a class="local col8 ref" href="#378suffixlen" title='suffixlen' data-ref="378suffixlen">suffixlen</a>, <var>0600</var>);</td></tr>
+<tr><th id="176">176</th><td>}</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td><i>/* See "mks_tempfile functions" above. */</i></td></tr>
+<tr><th id="179">179</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="mks_tempfile_tm" title='mks_tempfile_tm' data-ref="mks_tempfile_tm">mks_tempfile_tm</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col9 decl" id="379tempfile" title='tempfile' data-type='struct tempfile *' data-ref="379tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="180">180</th><td>				  <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="380template" title='template' data-type='const char *' data-ref="380template">template</dfn>, <em>int</em> <dfn class="local col1 decl" id="381mode" title='mode' data-type='int' data-ref="381mode">mode</dfn>)</td></tr>
+<tr><th id="181">181</th><td>{</td></tr>
+<tr><th id="182">182</th><td>	<b>return</b> <a class="ref" href="#mks_tempfile_tsm" title='mks_tempfile_tsm' data-ref="mks_tempfile_tsm">mks_tempfile_tsm</a>(<a class="local col9 ref" href="#379tempfile" title='tempfile' data-ref="379tempfile">tempfile</a>, <a class="local col0 ref" href="#380template" title='template' data-ref="380template">template</a>, <var>0</var>, <a class="local col1 ref" href="#381mode" title='mode' data-ref="381mode">mode</a>);</td></tr>
+<tr><th id="183">183</th><td>}</td></tr>
+<tr><th id="184">184</th><td></td></tr>
+<tr><th id="185">185</th><td><i>/* See "mks_tempfile functions" above. */</i></td></tr>
+<tr><th id="186">186</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="mks_tempfile_t" title='mks_tempfile_t' data-ref="mks_tempfile_t">mks_tempfile_t</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col2 decl" id="382tempfile" title='tempfile' data-type='struct tempfile *' data-ref="382tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="187">187</th><td>				 <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="383template" title='template' data-type='const char *' data-ref="383template">template</dfn>)</td></tr>
+<tr><th id="188">188</th><td>{</td></tr>
+<tr><th id="189">189</th><td>	<b>return</b> <a class="ref" href="#mks_tempfile_tsm" title='mks_tempfile_tsm' data-ref="mks_tempfile_tsm">mks_tempfile_tsm</a>(<a class="local col2 ref" href="#382tempfile" title='tempfile' data-ref="382tempfile">tempfile</a>, <a class="local col3 ref" href="#383template" title='template' data-ref="383template">template</a>, <var>0</var>, <var>0600</var>);</td></tr>
+<tr><th id="190">190</th><td>}</td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td><i>/* See "mks_tempfile functions" above. */</i></td></tr>
+<tr><th id="193">193</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="xmks_tempfile_m" title='xmks_tempfile_m' data-ref="xmks_tempfile_m">xmks_tempfile_m</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col4 decl" id="384tempfile" title='tempfile' data-type='struct tempfile *' data-ref="384tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="194">194</th><td>			   <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="385template" title='template' data-type='const char *' data-ref="385template">template</dfn>, <em>int</em> <dfn class="local col6 decl" id="386mode" title='mode' data-type='int' data-ref="386mode">mode</dfn>);</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td><i>/* See "mks_tempfile functions" above. */</i></td></tr>
+<tr><th id="197">197</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="xmks_tempfile" title='xmks_tempfile' data-ref="xmks_tempfile">xmks_tempfile</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col7 decl" id="387tempfile" title='tempfile' data-type='struct tempfile *' data-ref="387tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="198">198</th><td>				<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="388template" title='template' data-type='const char *' data-ref="388template">template</dfn>)</td></tr>
+<tr><th id="199">199</th><td>{</td></tr>
+<tr><th id="200">200</th><td>	<b>return</b> <a class="ref" href="#xmks_tempfile_m" title='xmks_tempfile_m' data-ref="xmks_tempfile_m">xmks_tempfile_m</a>(<a class="local col7 ref" href="#387tempfile" title='tempfile' data-ref="387tempfile">tempfile</a>, <a class="local col8 ref" href="#388template" title='template' data-ref="388template">template</a>, <var>0600</var>);</td></tr>
+<tr><th id="201">201</th><td>}</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><i>/*</i></td></tr>
+<tr><th id="204">204</th><td><i> * Associate a stdio stream with the temporary file (which must still</i></td></tr>
+<tr><th id="205">205</th><td><i> * be open). Return `NULL` (*without* deleting the file) on error. The</i></td></tr>
+<tr><th id="206">206</th><td><i> * stream is closed automatically when `close_tempfile()` is called or</i></td></tr>
+<tr><th id="207">207</th><td><i> * when the file is deleted or renamed.</i></td></tr>
+<tr><th id="208">208</th><td><i> */</i></td></tr>
+<tr><th id="209">209</th><td><b>extern</b> <a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="fdopen_tempfile" title='fdopen_tempfile' data-ref="fdopen_tempfile">fdopen_tempfile</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col9 decl" id="389tempfile" title='tempfile' data-type='struct tempfile *' data-ref="389tempfile">tempfile</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="390mode" title='mode' data-type='const char *' data-ref="390mode">mode</dfn>);</td></tr>
+<tr><th id="210">210</th><td></td></tr>
+<tr><th id="211">211</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="is_tempfile_active" title='is_tempfile_active' data-ref="is_tempfile_active">is_tempfile_active</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col1 decl" id="391tempfile" title='tempfile' data-type='struct tempfile *' data-ref="391tempfile">tempfile</dfn>)</td></tr>
+<tr><th id="212">212</th><td>{</td></tr>
+<tr><th id="213">213</th><td>	<b>return</b> <a class="local col1 ref" href="#391tempfile" title='tempfile' data-ref="391tempfile">tempfile</a>-&gt;<a class="ref" href="#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a>;</td></tr>
+<tr><th id="214">214</th><td>}</td></tr>
+<tr><th id="215">215</th><td></td></tr>
+<tr><th id="216">216</th><td><i>/*</i></td></tr>
+<tr><th id="217">217</th><td><i> * Return the path of the lockfile. The return value is a pointer to a</i></td></tr>
+<tr><th id="218">218</th><td><i> * field within the lock_file object and should not be freed.</i></td></tr>
+<tr><th id="219">219</th><td><i> */</i></td></tr>
+<tr><th id="220">220</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="get_tempfile_path" title='get_tempfile_path' data-ref="get_tempfile_path">get_tempfile_path</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col2 decl" id="392tempfile" title='tempfile' data-type='struct tempfile *' data-ref="392tempfile">tempfile</dfn>);</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="get_tempfile_fd" title='get_tempfile_fd' data-ref="get_tempfile_fd">get_tempfile_fd</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col3 decl" id="393tempfile" title='tempfile' data-type='struct tempfile *' data-ref="393tempfile">tempfile</dfn>);</td></tr>
+<tr><th id="223">223</th><td><b>extern</b> <a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="get_tempfile_fp" title='get_tempfile_fp' data-ref="get_tempfile_fp">get_tempfile_fp</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col4 decl" id="394tempfile" title='tempfile' data-type='struct tempfile *' data-ref="394tempfile">tempfile</dfn>);</td></tr>
+<tr><th id="224">224</th><td></td></tr>
+<tr><th id="225">225</th><td><i>/*</i></td></tr>
+<tr><th id="226">226</th><td><i> * If the temporary file is still open, close it (and the file pointer</i></td></tr>
+<tr><th id="227">227</th><td><i> * too, if it has been opened using `fdopen_tempfile()`) without</i></td></tr>
+<tr><th id="228">228</th><td><i> * deleting the file. Return 0 upon success. On failure to `close(2)`,</i></td></tr>
+<tr><th id="229">229</th><td><i> * return a negative value and delete the file. Usually</i></td></tr>
+<tr><th id="230">230</th><td><i> * `delete_tempfile()` or `rename_tempfile()` should eventually be</i></td></tr>
+<tr><th id="231">231</th><td><i> * called if `close_tempfile()` succeeds.</i></td></tr>
+<tr><th id="232">232</th><td><i> */</i></td></tr>
+<tr><th id="233">233</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="close_tempfile" title='close_tempfile' data-ref="close_tempfile">close_tempfile</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col5 decl" id="395tempfile" title='tempfile' data-type='struct tempfile *' data-ref="395tempfile">tempfile</dfn>);</td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td><i>/*</i></td></tr>
+<tr><th id="236">236</th><td><i> * Re-open a temporary file that has been closed using</i></td></tr>
+<tr><th id="237">237</th><td><i> * `close_tempfile()` but not yet deleted or renamed. This can be used</i></td></tr>
+<tr><th id="238">238</th><td><i> * to implement a sequence of operations like the following:</i></td></tr>
+<tr><th id="239">239</th><td><i> *</i></td></tr>
+<tr><th id="240">240</th><td><i> * * Create temporary file.</i></td></tr>
+<tr><th id="241">241</th><td><i> *</i></td></tr>
+<tr><th id="242">242</th><td><i> * * Write new contents to file, then `close_tempfile()` to cause the</i></td></tr>
+<tr><th id="243">243</th><td><i> *   contents to be written to disk.</i></td></tr>
+<tr><th id="244">244</th><td><i> *</i></td></tr>
+<tr><th id="245">245</th><td><i> * * Pass the name of the temporary file to another program to allow</i></td></tr>
+<tr><th id="246">246</th><td><i> *   it (and nobody else) to inspect or even modify the file's</i></td></tr>
+<tr><th id="247">247</th><td><i> *   contents.</i></td></tr>
+<tr><th id="248">248</th><td><i> *</i></td></tr>
+<tr><th id="249">249</th><td><i> * * `reopen_tempfile()` to reopen the temporary file. Make further</i></td></tr>
+<tr><th id="250">250</th><td><i> *   updates to the contents.</i></td></tr>
+<tr><th id="251">251</th><td><i> *</i></td></tr>
+<tr><th id="252">252</th><td><i> * * `rename_tempfile()` to move the file to its permanent location.</i></td></tr>
+<tr><th id="253">253</th><td><i> */</i></td></tr>
+<tr><th id="254">254</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="reopen_tempfile" title='reopen_tempfile' data-ref="reopen_tempfile">reopen_tempfile</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col6 decl" id="396tempfile" title='tempfile' data-type='struct tempfile *' data-ref="396tempfile">tempfile</dfn>);</td></tr>
+<tr><th id="255">255</th><td></td></tr>
+<tr><th id="256">256</th><td><i>/*</i></td></tr>
+<tr><th id="257">257</th><td><i> * Close the file descriptor and/or file pointer and remove the</i></td></tr>
+<tr><th id="258">258</th><td><i> * temporary file associated with `tempfile`. It is a NOOP to call</i></td></tr>
+<tr><th id="259">259</th><td><i> * `delete_tempfile()` for a `tempfile` object that has already been</i></td></tr>
+<tr><th id="260">260</th><td><i> * deleted or renamed.</i></td></tr>
+<tr><th id="261">261</th><td><i> */</i></td></tr>
+<tr><th id="262">262</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="delete_tempfile" title='delete_tempfile' data-ref="delete_tempfile">delete_tempfile</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col7 decl" id="397tempfile" title='tempfile' data-type='struct tempfile *' data-ref="397tempfile">tempfile</dfn>);</td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td><i>/*</i></td></tr>
+<tr><th id="265">265</th><td><i> * Close the file descriptor and/or file pointer if they are still</i></td></tr>
+<tr><th id="266">266</th><td><i> * open, and atomically rename the temporary file to `path`. `path`</i></td></tr>
+<tr><th id="267">267</th><td><i> * must be on the same filesystem as the lock file. Return 0 on</i></td></tr>
+<tr><th id="268">268</th><td><i> * success. On failure, delete the temporary file and return -1, with</i></td></tr>
+<tr><th id="269">269</th><td><i> * `errno` set to the value from the failing call to `close(2)` or</i></td></tr>
+<tr><th id="270">270</th><td><i> * `rename(2)`. It is a bug to call `rename_tempfile()` for a</i></td></tr>
+<tr><th id="271">271</th><td><i> * `tempfile` object that is not currently active.</i></td></tr>
+<tr><th id="272">272</th><td><i> */</i></td></tr>
+<tr><th id="273">273</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="rename_tempfile" title='rename_tempfile' data-ref="rename_tempfile">rename_tempfile</dfn>(<b>struct</b> <a class="type" href="#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col8 decl" id="398tempfile" title='tempfile' data-type='struct tempfile *' data-ref="398tempfile">tempfile</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="399path" title='path' data-type='const char *' data-ref="399path">path</dfn>);</td></tr>
+<tr><th id="274">274</th><td></td></tr>
+<tr><th id="275">275</th><td><u>#<span data-ppcond="1">endif</span> /* TEMPFILE_H */</u></td></tr>
+<tr><th id="276">276</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='apply.c.html'>codebrowser/apply.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

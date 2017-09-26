@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='47' type='unsigned long'/>
+<offset>1024</offset>
+<use f='codebrowser/builtin/pack-objects.c' l='218' u='r' c='check_pack_inflate'/>
+<use f='codebrowser/zlib.c' l='41' u='r' c='zlib_pre_call'/>
+<use f='codebrowser/zlib.c' l='56' u='r' c='zlib_post_call'/>
+<use f='codebrowser/zlib.c' l='60' u='w' c='zlib_post_call'/>

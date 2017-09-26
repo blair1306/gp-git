@@ -1,0 +1,6 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='47' type='int'/>
+<offset>864</offset>
+<use f='codebrowser/sha1dc/sha1.c' l='1738' u='r' c='sha1_process'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1768' u='w' c='SHA1DCInit'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1800' u='w' c='SHA1DCSetDetectReducedRoundCollision'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1802' u='w' c='SHA1DCSetDetectReducedRoundCollision'/>

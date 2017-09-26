@@ -1,0 +1,16 @@
+<def f='codebrowser/http.h' l='213' ll='227'/>
+<size>6992</size>
+<doc f='codebrowser/http.h' l='212'>/* Helpers for fetching object */</doc>
+<mbr r='http_object_request::url' o='0' t='char *'/>
+<mbr r='http_object_request::tmpfile' o='64' t='char [4096]'/>
+<mbr r='http_object_request::localfile' o='32832' t='int'/>
+<mbr r='http_object_request::curl_result' o='32864' t='CURLcode'/>
+<mbr r='http_object_request::errorstr' o='32896' t='char [256]'/>
+<mbr r='http_object_request::http_code' o='34944' t='long'/>
+<mbr r='http_object_request::sha1' o='35008' t='unsigned char [20]'/>
+<mbr r='http_object_request::real_sha1' o='35168' t='unsigned char [20]'/>
+<mbr r='http_object_request::c' o='35328' t='SHA1_CTX'/>
+<mbr r='http_object_request::stream' o='54528' t='git_zstream'/>
+<mbr r='http_object_request::zret' o='55808' t='int'/>
+<mbr r='http_object_request::rename' o='55840' t='int'/>
+<mbr r='http_object_request::slot' o='55872' t='struct active_request_slot *'/>

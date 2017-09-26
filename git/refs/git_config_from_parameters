@@ -1,0 +1,3 @@
+<dec f='codebrowser/config.h' l='45' type='int git_config_from_parameters(config_fn_t fn, void * data)'/>
+<def f='codebrowser/config.c' l='442' ll='480' type='int git_config_from_parameters(config_fn_t fn, void * data)'/>
+<use f='codebrowser/config.c' l='1572' u='c' c='do_git_config_sequence'/>

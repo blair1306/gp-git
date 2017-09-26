@@ -1,0 +1,94 @@
+<def f='include/x86_64-linux-gnu/bits/stat.h' l='119' ll='168'/>
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='216' type='int stat(const char *restrict __file, struct stat *restrict __buf)'/>
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='227' type='int stat64(const char *restrict __file, struct stat64 *restrict __buf)'/>
+<def f='include/x86_64-linux-gnu/sys/stat.h' l='451' ll='455' macro='1' type='int stat(const char * __path, struct stat * __statbuf)'/>
+<def f='include/x86_64-linux-gnu/sys/stat.h' l='500' ll='504' macro='1' type='int stat64(const char * __path, struct stat64 * __statbuf)'/>
+<use f='codebrowser/abspath.c' l='11' u='c' c='is_directory'/>
+<size>144</size>
+<doc f='include/x86_64-linux-gnu/bits/stat.h' l='118'>/* Note stat64 has the same shape as stat for x86-64.  */</doc>
+<mbr r='stat64::st_dev' o='0' t='__dev_t'/>
+<mbr r='stat64::st_ino' o='64' t='__ino64_t'/>
+<mbr r='stat64::st_nlink' o='128' t='__nlink_t'/>
+<mbr r='stat64::st_mode' o='192' t='__mode_t'/>
+<mbr r='stat64::st_uid' o='224' t='__uid_t'/>
+<mbr r='stat64::st_gid' o='256' t='__gid_t'/>
+<mbr r='stat64::__pad0' o='288' t='int'/>
+<mbr r='stat64::st_rdev' o='320' t='__dev_t'/>
+<mbr r='stat64::st_size' o='384' t='__off_t'/>
+<mbr r='stat64::st_blksize' o='448' t='__blksize_t'/>
+<mbr r='stat64::st_blocks' o='512' t='__blkcnt64_t'/>
+<mbr r='stat64::st_atim' o='576' t='struct timespec'/>
+<mbr r='stat64::st_mtim' o='704' t='struct timespec'/>
+<mbr r='stat64::st_ctim' o='832' t='struct timespec'/>
+<mbr r='stat64::__glibc_reserved' o='960' t='__syscall_slong_t [3]'/>
+<use f='codebrowser/bisect.c' l='667' u='c' c='is_expected_rev'/>
+<use f='codebrowser/bisect.c' l='852' u='c' c='check_good_are_ancestors_of_bad'/>
+<use f='codebrowser/blame.c' l='199' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/add.c' l='231' u='c' c='edit_patch'/>
+<use f='codebrowser/builtin/am.c' l='42' u='c' c='is_empty_file'/>
+<use f='codebrowser/builtin/clone.c' l='151' u='c' c='get_repo_path_1'/>
+<use f='codebrowser/builtin/clone.c' l='178' u='c' c='get_repo_path_1'/>
+<use f='codebrowser/builtin/clone.c' l='402' u='c' c='copy_or_link_directory'/>
+<use f='codebrowser/builtin/clone.c' l='418' u='c' c='copy_or_link_directory'/>
+<use f='codebrowser/builtin/clone.c' l='940' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/clone.c' l='951' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/commit.c' l='731' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='736' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='744' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1718' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/count-objects.c' l='45' u='c' c='real_report_garbage'/>
+<use f='codebrowser/builtin/difftool.c' l='512' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/gc.c' l='307' u='c' c='report_last_gc_error'/>
+<use f='codebrowser/builtin/help.c' l='375' u='c' c='get_html_page_path'/>
+<use f='codebrowser/builtin/init-db.c' l='320' u='c' c='separate_git_dir'/>
+<use f='codebrowser/builtin/init-db.c' l='347' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='350' u='c' c='init_db'/>
+<use f='codebrowser/builtin/mailsplit.c' l='348' u='c' c='cmd_mailsplit'/>
+<use f='codebrowser/builtin/pack-objects.c' l='850' u='c' c='write_pack_file'/>
+<use f='codebrowser/builtin/repack.c' l='383' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/update-index.c' l='85' u='c' c='xstat_mtime_dir'/>
+<use f='codebrowser/builtin/worktree.c' l='49' u='c' c='prune_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='78' u='c' c='prune_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='224' u='c' c='add_worktree'/>
+<use f='codebrowser/copy.c' l='22' u='c' c='copy_times'/>
+<use f='codebrowser/credential-cache--daemon.c' l='234' u='c' c='init_socket_directory'/>
+<use f='codebrowser/credential-cache.c' l='91' u='c' c='get_socket_path'/>
+<use f='codebrowser/dir.c' l='1691' u='c' c='valid_cached_dir'/>
+<use f='codebrowser/http.c' l='2294' u='c' c='finish_http_object_request'/>
+<use f='codebrowser/notes-merge.c' l='710' u='c' c='notes_merge_commit'/>
+<use f='codebrowser/path.c' l='800' u='c' c='enter_repo'/>
+<use f='codebrowser/reachable.c' l='113' u='c' c='add_recent_loose'/>
+<use f='codebrowser/read-cache.c' l='2308' u='c' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2381' u='c' c='should_delete_shared_index'/>
+<use f='codebrowser/read-cache.c' l='2626' u='c' c='stat_validity_check'/>
+<use f='codebrowser/refs/files-backend.c' l='190' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/rerere.c' l='1140' u='c' c='rerere_created_at'/>
+<use f='codebrowser/rerere.c' l='1147' u='c' c='rerere_last_used_at'/>
+<use f='codebrowser/run-command.c' l='124' u='c' c='is_executable'/>
+<use f='codebrowser/sequencer.c' l='1352' u='c' c='read_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='2072' u='c' c='pick_commits'/>
+<use f='codebrowser/sequencer.c' l='2159' u='c' c='pick_commits'/>
+<use f='codebrowser/setup.c' l='567' u='c' c='read_gitfile_gently'/>
+<use f='codebrowser/setup.c' l='820' u='c' c='get_device_or_die'/>
+<use f='codebrowser/sha1_file.c' l='131' u='c' c='safe_create_leading_directories'/>
+<use f='codebrowser/sha1_file.c' l='139' u='c' c='safe_create_leading_directories'/>
+<use f='codebrowser/sha1_file.c' l='1347' u='c' c='add_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='3451' u='c' c='has_pack_index'/>
+<use f='codebrowser/strbuf.c' l='700' u='c' c='strbuf_add_absolute_path'/>
+<use f='codebrowser/strbuf.c' l='702' u='c' c='strbuf_add_absolute_path'/>
+<use f='codebrowser/symlinks.c' l='136' u='c' c='lstat_cache_matchlen'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='84' u='c' c='cmd_main'/>
+<use f='codebrowser/tmp-objdir.c' l='220' u='c' c='migrate_one'/>
+<use f='codebrowser/trailer.c' l='949' u='c' c='create_in_place_tempfile'/>
+<use f='codebrowser/transport.c' l='643' u='c' c='is_file'/>
+<use f='codebrowser/wt-status.c' l='1284' u='c' c='show_rebase_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1478' u='c' c='wt_status_check_rebase'/>
+<use f='codebrowser/wt-status.c' l='1479' u='c' c='wt_status_check_rebase'/>
+<use f='codebrowser/wt-status.c' l='1481' u='c' c='wt_status_check_rebase'/>
+<use f='codebrowser/wt-status.c' l='1488' u='c' c='wt_status_check_rebase'/>
+<use f='codebrowser/wt-status.c' l='1489' u='c' c='wt_status_check_rebase'/>
+<use f='codebrowser/wt-status.c' l='1505' u='c' c='wt_status_check_bisect'/>
+<use f='codebrowser/wt-status.c' l='1519' u='c' c='wt_status_get_state'/>
+<use f='codebrowser/wt-status.c' l='1523' u='c' c='wt_status_get_state'/>
+<use f='codebrowser/wt-status.c' l='1529' u='c' c='wt_status_get_state'/>
+<use f='codebrowser/xdiff-interface.c' l='167' u='c' c='read_mmfile'/>

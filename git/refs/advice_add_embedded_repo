@@ -1,0 +1,8 @@
+<dec f='codebrowser/advice.h' l='21' type='int'/>
+<def f='codebrowser/advice.c' l='19' type='int'/>
+<use f='codebrowser/advice.c' l='40' u='a'/>
+<use f='codebrowser/advice.c' l='40' u='a'/>
+<use f='codebrowser/advice.c' l='40' u='a'/>
+<use f='codebrowser/advice.c' l='40' u='a'/>
+<use f='codebrowser/builtin/add.c' l='332' u='r' c='check_embedded_repo'/>
+<use f='codebrowser/builtin/add.c' l='335' u='w' c='check_embedded_repo'/>

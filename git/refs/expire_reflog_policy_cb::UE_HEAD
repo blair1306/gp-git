@@ -1,0 +1,4 @@
+<dec f='codebrowser/builtin/reflog.c' l='35' type='2'/>
+<use f='codebrowser/builtin/reflog.c' l='337' u='r' c='reflog_expiry_prepare'/>
+<use f='codebrowser/builtin/reflog.c' l='352' u='r' c='reflog_expiry_prepare'/>
+<use f='codebrowser/builtin/reflog.c' l='371' u='r' c='reflog_expiry_cleanup'/>

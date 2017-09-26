@@ -1,0 +1,10 @@
+<def f='codebrowser/hashmap.h' l='370' ll='374'/>
+<size>24</size>
+<doc f='codebrowser/hashmap.h' l='365'>/*
+ * Used to iterate over all entries of a hashmap. Note that it is
+ * not safe to add or remove entries to the hashmap while
+ * iterating.
+ */</doc>
+<mbr r='hashmap_iter::map' o='0' t='struct hashmap *'/>
+<mbr r='hashmap_iter::next' o='64' t='struct hashmap_entry *'/>
+<mbr r='hashmap_iter::tablepos' o='128' t='unsigned int'/>

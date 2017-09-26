@@ -1,0 +1,6 @@
+<def f='codebrowser/shallow.c' l='432' macro='1'/>
+<size>24</size>
+<mbr r='ref_bitmap::slab_size' o='0' t='unsigned int'/>
+<mbr r='ref_bitmap::stride' o='32' t='unsigned int'/>
+<mbr r='ref_bitmap::slab_count' o='64' t='unsigned int'/>
+<mbr r='ref_bitmap::slab' o='128' t='uint32_t ***'/>

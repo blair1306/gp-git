@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='141' type='int cmd_checkout_index(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/checkout-index.c' l='150' ll='258' type='int cmd_checkout_index(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='379'/>
+<use f='codebrowser/git.c' l='379'/>
+<use f='codebrowser/git.c' l='379'/>
+<use f='codebrowser/git.c' l='379'/>

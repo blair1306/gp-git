@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs.h' l='659' type='int ref_is_hidden(const char * , const char * )'/>
+<doc f='codebrowser/refs.h' l='651'>/*
+ * Check whether a ref is hidden. If no namespace is set, both the first and
+ * the second parameter point to the full ref name. If a namespace is set and
+ * the ref is inside that namespace, the first parameter is a pointer to the
+ * name of the ref with the namespace prefix removed. If a namespace is set and
+ * the ref is outside that namespace, the first parameter is NULL. The second
+ * parameter always points to the full ref name.
+ */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='260' u='c' c='show_ref_cb'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1348' u='c' c='reject_updates_to_hidden'/>
+<def f='codebrowser/refs.c' l='1171' ll='1202' type='int ref_is_hidden(const char * refname, const char * refname_full)'/>
+<use f='codebrowser/upload-pack.c' l='900' u='c' c='mark_our_ref'/>

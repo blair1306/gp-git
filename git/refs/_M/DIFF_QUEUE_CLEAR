@@ -1,0 +1,12 @@
+<dec f='codebrowser/diffcore.h' l='98'/>
+<use f='codebrowser/diff.c' l='4677' u='c'/>
+<use f='codebrowser/diff.c' l='4835' u='c'/>
+<use f='codebrowser/diff.c' l='4869' u='c'/>
+<use f='codebrowser/diff.c' l='4955' u='c'/>
+<use f='codebrowser/diffcore-break.c' l='167' u='c'/>
+<use f='codebrowser/diffcore-break.c' l='267' u='c'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='172' u='c'/>
+<use f='codebrowser/diffcore-rename.c' l='590' u='c'/>
+<use f='codebrowser/line-log.c' l='767' u='c'/>
+<use f='codebrowser/line-log.c' l='774' u='c'/>
+<use f='codebrowser/line-log.c' l='819' u='c'/>

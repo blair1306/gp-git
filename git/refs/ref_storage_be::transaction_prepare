@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs/refs-internal.h' l='643' type='ref_transaction_prepare_fn *'/>
+<use f='codebrowser/refs.c' l='1790' u='r' c='ref_transaction_prepare'/>
+<offset>256</offset>

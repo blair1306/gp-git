@@ -1,0 +1,7 @@
+<dec f='codebrowser/connect.h' l='9' type='int finish_connect(struct child_process * conn)'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='211' u='c' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/send-pack.c' l='291' u='c' c='cmd_send_pack'/>
+<def f='codebrowser/connect.c' l='927' ll='936' type='int finish_connect(struct child_process * conn)'/>
+<use f='codebrowser/transport.c' l='246' u='c' c='fetch_refs_via_pack'/>
+<use f='codebrowser/transport.c' l='579' u='c' c='git_transport_push'/>
+<use f='codebrowser/transport.c' l='605' u='c' c='disconnect_git'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='101' type='const struct config_options *'/>
+<offset>192</offset>
+<use f='codebrowser/config.c' l='296' u='r' c='git_config_include'/>
+<use f='codebrowser/config.c' l='1591' u='w' c='config_with_options'/>

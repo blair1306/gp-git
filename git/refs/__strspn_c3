@@ -1,0 +1,29 @@
+<dec f='include/x86_64-linux-gnu/bits/string2.h' l='1044' type='size_t __strspn_c3(const char * __s, int __accept1, int __accept2, int __accept3)'/>
+<def f='include/x86_64-linux-gnu/bits/string2.h' l='1046' ll='1055' macro='1' type='size_t __strspn_c3(const char * __s, int __accept1, int __accept2, int __accept3)'/>
+<use f='codebrowser/attr.c' l='343' macro='1' u='c'/>
+<use f='codebrowser/attr.c' l='356' macro='1' u='c'/>
+<use f='codebrowser/attr.c' l='378' macro='1' u='c'/>
+<use f='codebrowser/attr.c' l='388' macro='1' u='c'/>
+<use f='codebrowser/builtin/gc.c' l='154' macro='1' u='c'/>
+<use f='codebrowser/builtin/mailsplit.c' l='58' macro='1' u='c'/>
+<use f='codebrowser/builtin/mktag.c' l='125' macro='1' u='c'/>
+<use f='codebrowser/builtin/mktag.c' l='136' macro='1' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='35' macro='1' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='38' macro='1' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='44' macro='1' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='47' macro='1' u='c'/>
+<use f='codebrowser/column.c' l='31' macro='1' u='c'/>
+<use f='codebrowser/column.c' l='309' macro='1' u='c'/>
+<use f='codebrowser/ident.c' l='318' macro='1' u='c'/>
+<use f='codebrowser/ident.c' l='327' macro='1' u='c'/>
+<use f='codebrowser/mailinfo.c' l='356' macro='1' u='c'/>
+<use f='codebrowser/pretty.c' l='1722' macro='1' u='c'/>
+<use f='codebrowser/sequencer.c' l='1233' macro='1' u='c'/>
+<use f='codebrowser/sequencer.c' l='1263' macro='1' u='c'/>
+<use f='codebrowser/sequencer.c' l='1280' macro='1' u='c'/>
+<use f='codebrowser/urlmatch.c' l='158' macro='1' u='c'/>
+<use f='codebrowser/urlmatch.c' l='239' macro='1' u='c'/>
+<use f='codebrowser/urlmatch.c' l='241' macro='1' u='c'/>
+<use f='codebrowser/urlmatch.c' l='265' macro='1' u='c'/>
+<use f='codebrowser/urlmatch.c' l='287' macro='1' u='c'/>
+<use f='codebrowser/ws.c' l='35' macro='1' u='c'/>

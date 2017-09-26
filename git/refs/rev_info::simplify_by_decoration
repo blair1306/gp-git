@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='98' type='unsigned int'/>
+<offset>939</offset>
+<use f='codebrowser/revision.c' l='436' u='r' c='rev_compare_tree'/>
+<use f='codebrowser/revision.c' l='1776' u='w' c='handle_revision_opt'/>

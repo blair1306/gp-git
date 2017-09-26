@@ -1,0 +1,9 @@
+<def f='codebrowser/attr.h' l='31' ll='34'/>
+<size>16</size>
+<doc f='codebrowser/attr.h' l='26'>/*
+ * Send one or more git_attr_check to git_check_attrs(), and
+ * each &apos;value&apos; member tells what its value is.
+ * Unset one is returned as NULL.
+ */</doc>
+<mbr r='attr_check_item::attr' o='0' t='const struct git_attr *'/>
+<mbr r='attr_check_item::value' o='64' t='const char *'/>

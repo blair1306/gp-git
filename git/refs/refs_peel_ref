@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs.h' l='121' type='int refs_peel_ref(struct ref_store * refs, const char * refname, unsigned char * sha1)'/>
+<doc f='codebrowser/refs.h' l='113'>/*
+ * If refname is a non-symbolic reference that refers to a tag object,
+ * and the tag can be (recursively) dereferenced to a non-tag object,
+ * store the SHA1 of the referred-to object to sha1 and return 0.  If
+ * any of these conditions are not met, return a non-zero value.
+ * Symbolic references are considered unpeelable, even if they
+ * ultimately resolve to a peelable tag.
+ */</doc>
+<def f='codebrowser/refs.c' l='1713' ll='1717' type='int refs_peel_ref(struct ref_store * refs, const char * refname, unsigned char * sha1)'/>
+<use f='codebrowser/refs.c' l='1721' u='c' c='peel_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='687' u='c' c='files_peel_ref'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='78' u='c' c='cmd_peel_ref'/>

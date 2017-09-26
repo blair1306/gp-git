@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs/refs-internal.h' l='492' type='int do_for_each_ref_iterator(struct ref_iterator * iter, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='1316' u='c' c='do_for_each_ref'/>
+<use f='codebrowser/refs.c' l='1940' u='c' c='refs_for_each_reflog'/>
+<doc f='codebrowser/refs/refs-internal.h' l='483'>/*
+ * The common backend for the for_each_*ref* functions. Call fn for
+ * each reference in iter. If the iterator itself ever returns
+ * ITER_ERROR, return -1. If fn ever returns a non-zero value, stop
+ * the iteration and return that value. Otherwise, return 0. In any
+ * case, free the iterator when done. This function is basically an
+ * adapter between the callback style of reference iteration and the
+ * iterator style.
+ */</doc>
+<def f='codebrowser/refs/iterator.c' l='375' ll='400' type='int do_for_each_ref_iterator(struct ref_iterator * iter, each_ref_fn * fn, void * cb_data)'/>

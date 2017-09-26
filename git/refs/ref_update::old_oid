@@ -1,0 +1,15 @@
+<dec f='codebrowser/refs/refs-internal.h' l='148' type='struct object_id'/>
+<use f='codebrowser/refs.c' l='920' u='m' c='ref_transaction_add_update'/>
+<offset>160</offset>
+<doc f='codebrowser/refs/refs-internal.h' l='144'>/*
+	 * If (flags &amp; REF_HAVE_OLD), check that the reference
+	 * previously had this value:
+	 */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2114' u='m' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2171' u='m' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2210' u='a' c='check_old_oid'/>
+<use f='codebrowser/refs/files-backend.c' l='2213' u='a' c='check_old_oid'/>
+<use f='codebrowser/refs/files-backend.c' l='2221' u='a' c='check_old_oid'/>
+<use f='codebrowser/refs/files-backend.c' l='2227' u='a' c='check_old_oid'/>
+<use f='codebrowser/refs/files-backend.c' l='2254' u='a' c='lock_ref_for_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2688' u='a' c='files_initial_transaction_commit'/>

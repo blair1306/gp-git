@@ -1,0 +1,10 @@
+<dec f='codebrowser/diff.h' l='354' type='int run_diff_files(struct rev_info * revs, unsigned int option)'/>
+<use f='codebrowser/builtin/add.c' l='120' u='c' c='add_files_to_cache'/>
+<use f='codebrowser/builtin/add.c' l='225' u='c' c='edit_patch'/>
+<use f='codebrowser/builtin/diff-files.c' l='73' u='c' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff.c' l='254' u='c' c='builtin_diff_files'/>
+<use f='codebrowser/builtin/merge.c' l='871' u='c' c='evaluate_result'/>
+<def f='codebrowser/diff-lib.c' l='87' ll='247' type='int run_diff_files(struct rev_info * revs, unsigned int option)'/>
+<use f='codebrowser/wt-status.c' l='575' u='c' c='wt_status_collect_changes_worktree'/>
+<use f='codebrowser/wt-status.c' l='994' u='c' c='wt_longstatus_print_verbose'/>
+<use f='codebrowser/wt-status.c' l='2269' u='c' c='has_unstaged_changes'/>

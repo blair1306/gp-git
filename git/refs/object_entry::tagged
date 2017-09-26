@@ -1,0 +1,8 @@
+<dec f='codebrowser/pack-objects.h' l='28' type='unsigned int'/>
+<use f='codebrowser/builtin/pack-objects.c' l='563' u='w' c='mark_tagged'/>
+<use f='codebrowser/builtin/pack-objects.c' l='567' u='w' c='mark_tagged'/>
+<use f='codebrowser/builtin/pack-objects.c' l='644' u='w' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='675' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='685' u='r' c='compute_write_order'/>
+<offset>970</offset>
+<doc f='codebrowser/pack-objects.h' l='28'>/* near the very tip of refs */</doc>

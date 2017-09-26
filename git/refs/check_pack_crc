@@ -1,0 +1,5 @@
+<dec f='codebrowser/pack.h' l='81' type='int check_pack_crc(struct packed_git * p, struct pack_window ** w_curs, off_t offset, off_t len, unsigned int nr)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='375' u='c' c='write_reuse_object'/>
+<def f='codebrowser/pack-check.c' l='26' ll='46' type='int check_pack_crc(struct packed_git * p, struct pack_window ** w_curs, off_t offset, off_t len, unsigned int nr)'/>
+<use f='codebrowser/pack-check.c' l='115' u='c' c='verify_packfile'/>
+<use f='codebrowser/sha1_file.c' l='2543' u='c' c='unpack_entry'/>

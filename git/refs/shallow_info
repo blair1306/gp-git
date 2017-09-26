@@ -1,0 +1,14 @@
+<def f='codebrowser/commit.h' l='283' ll='296'/>
+<size>96</size>
+<mbr r='shallow_info::shallow' o='0' t='struct oid_array *'/>
+<mbr r='shallow_info::ours' o='64' t='int *'/>
+<mbr r='shallow_info::nr_ours' o='128' t='int'/>
+<mbr r='shallow_info::theirs' o='192' t='int *'/>
+<mbr r='shallow_info::nr_theirs' o='256' t='int'/>
+<mbr r='shallow_info::ref' o='320' t='struct oid_array *'/>
+<mbr r='shallow_info::used_shallow' o='384' t='uint32_t **'/>
+<mbr r='shallow_info::need_reachability_test' o='448' t='int *'/>
+<mbr r='shallow_info::reachable' o='512' t='int *'/>
+<mbr r='shallow_info::shallow_ref' o='576' t='int *'/>
+<mbr r='shallow_info::commits' o='640' t='struct commit **'/>
+<mbr r='shallow_info::nr_commits' o='704' t='int'/>

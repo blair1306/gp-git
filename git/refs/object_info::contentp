@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1798' type='void **'/>
+<offset>320</offset>
+<use f='codebrowser/sha1_file.c' l='2382' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2383' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2385' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2391' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2923' u='r' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2958' u='r' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2959' u='r' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2999' u='r' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_file.c' l='3000' u='r' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_file.c' l='3081' u='w' c='read_object'/>

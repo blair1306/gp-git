@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache-tree.h' l='33' type='int cache_tree_fully_valid(struct cache_tree * )'/>
+<use f='codebrowser/builtin/checkout.c' l='590' u='c' c='merge_working_tree'/>
+<use f='codebrowser/builtin/commit.c' l='423' u='c' c='prepare_index'/>
+<def f='codebrowser/cache-tree.c' l='222' ll='234' type='int cache_tree_fully_valid(struct cache_tree * it)'/>
+<use f='codebrowser/cache-tree.c' l='230' u='c' c='cache_tree_fully_valid'/>
+<use f='codebrowser/cache-tree.c' l='625' u='c' c='write_index_as_tree'/>
+<use f='codebrowser/merge-recursive.c' l='302' u='c' c='write_tree_from_memory'/>
+<use f='codebrowser/sequencer.c' l='510' u='c' c='is_index_unchanged'/>
+<use f='codebrowser/unpack-trees.c' l='1396' u='c' c='unpack_trees'/>

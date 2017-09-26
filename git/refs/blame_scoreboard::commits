@@ -1,0 +1,9 @@
+<dec f='codebrowser/blame.h' l='104' type='struct prio_queue'/>
+<use f='codebrowser/blame.c' l='488' u='a' c='queue_blames'/>
+<use f='codebrowser/blame.c' l='1550' u='a' c='assign_blame'/>
+<use f='codebrowser/blame.c' l='1561' u='a' c='assign_blame'/>
+<use f='codebrowser/blame.c' l='1761' u='m' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1764' u='m' c='setup_scoreboard'/>
+<offset>64</offset>
+<doc f='codebrowser/blame.h' l='103'>/* Priority queue for commits with unassigned blame records */</doc>
+<use f='codebrowser/builtin/blame.c' l='901' u='a' c='cmd_blame'/>

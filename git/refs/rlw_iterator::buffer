@@ -1,0 +1,13 @@
+<dec f='codebrowser/ewah/ewok_rlw.h' l='84' type='const eword_t *'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='445' u='r' c='ewah_xor'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='446' u='r' c='ewah_xor'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='513' u='r' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='514' u='r' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='586' u='r' c='ewah_and_not'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='587' u='r' c='ewah_and_not'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='654' u='r' c='ewah_or'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='655' u='r' c='ewah_or'/>
+<offset>0</offset>
+<use f='codebrowser/ewah/ewah_rlw.c' l='29' u='r' c='next_word'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='42' u='w' c='rlwit_init'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='100' u='r' c='rlwit_discharge'/>

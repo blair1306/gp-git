@@ -1,0 +1,9 @@
+<dec f='codebrowser/commit.h' l='266' type='int register_shallow(const struct object_id * oid)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2796' u='c' c='get_object_list'/>
+<use f='codebrowser/builtin/receive-pack.c' l='904' u='c' c='update_shallow_ref'/>
+<use f='codebrowser/fetch-pack.c' l='422' u='c' c='find_common'/>
+<def f='codebrowser/shallow.c' l='30' ll='41' type='int register_shallow(const struct object_id * oid)'/>
+<use f='codebrowser/shallow.c' l='71' u='c' c='is_repository_shallow'/>
+<use f='codebrowser/upload-pack.c' l='646' u='c' c='send_shallow'/>
+<use f='codebrowser/upload-pack.c' l='683' u='c' c='send_unshallow'/>
+<use f='codebrowser/upload-pack.c' l='887' u='c' c='receive_needs'/>

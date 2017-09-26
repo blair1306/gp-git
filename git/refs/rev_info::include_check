@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='196' type='int (*)(struct commit *, void *)'/>
+<offset>10048</offset>
+<use f='codebrowser/pack-bitmap-write.c' l='267' u='w' c='bitmap_writer_build'/>
+<use f='codebrowser/pack-bitmap.c' l='564' u='w' c='find_objects'/>
+<use f='codebrowser/revision.c' l='742' u='r' c='add_parents_to_list'/>
+<use f='codebrowser/revision.c' l='743' u='r' c='add_parents_to_list'/>

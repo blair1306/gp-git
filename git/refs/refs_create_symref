@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='448' type='int refs_create_symref(struct ref_store * refs, const char * refname, const char * target, const char * logmsg)'/>
+<use f='codebrowser/branch.c' l='365' u='c' c='replace_each_worktree_head_symref'/>
+<def f='codebrowser/refs.c' l='1724' ll='1732' type='int refs_create_symref(struct ref_store * refs, const char * ref_target, const char * refs_heads_master, const char * logmsg)'/>
+<use f='codebrowser/refs.c' l='1737' u='c' c='create_symref'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='90' u='c' c='cmd_create_symref'/>

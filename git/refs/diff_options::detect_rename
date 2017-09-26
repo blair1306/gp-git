@@ -1,0 +1,24 @@
+<dec f='codebrowser/diff.h' l='135' type='int'/>
+<offset>672</offset>
+<use f='codebrowser/blame.c' l='545' u='w' c='find_origin'/>
+<use f='codebrowser/blame.c' l='619' u='w' c='find_rename'/>
+<use f='codebrowser/builtin/commit.c' l='1484' u='w' c='print_summary'/>
+<use f='codebrowser/builtin/diff-tree.c' l='164' u='r' c='cmd_diff_tree'/>
+<use f='codebrowser/builtin/merge.c' l='419' u='w' c='finish'/>
+<use f='codebrowser/combine-diff.c' l='1440' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/diff.c' l='3388' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='3436' u='w' c='diff_setup_done'/>
+<use f='codebrowser/diff.c' l='3481' u='r' c='diff_setup_done'/>
+<use f='codebrowser/diff.c' l='3847' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3854' u='r' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3858' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3861' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='5003' u='r' c='diffcore_std'/>
+<use f='codebrowser/diffcore-rename.c' l='297' u='r' c='find_identical_files'/>
+<use f='codebrowser/diffcore-rename.c' l='446' u='r' c='diffcore_rename'/>
+<use f='codebrowser/line-log.c' l='746' u='r' c='line_log_init'/>
+<use f='codebrowser/line-log.c' l='822' u='r' c='queue_diffs'/>
+<use f='codebrowser/merge-recursive.c' l='524' u='w' c='get_renames'/>
+<use f='codebrowser/patch-ids.c' l='63' u='w' c='init_patch_ids'/>
+<use f='codebrowser/wt-status.c' l='607' u='w' c='wt_status_collect_changes_index'/>
+<use f='codebrowser/wt-status.c' l='962' u='w' c='wt_longstatus_print_verbose'/>

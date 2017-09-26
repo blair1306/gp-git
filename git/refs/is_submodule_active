@@ -1,0 +1,12 @@
+<dec f='codebrowser/submodule.h' l='53' type='int is_submodule_active(struct repository * repo, const char * path)'/>
+<use f='codebrowser/builtin/grep.c' l='416' u='c' c='grep_submodule'/>
+<use f='codebrowser/builtin/ls-files.c' l='228' u='c' c='show_ce'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='283' u='c' c='module_list_active'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='365' u='c' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='820' u='c' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1236' u='c' c='is_active'/>
+<def f='codebrowser/submodule.c' l='276' ll='324' type='int is_submodule_active(struct repository * repo, const char * path)'/>
+<use f='codebrowser/submodule.c' l='1551' u='c' c='submodule_move_head'/>
+<doc f='codebrowser/submodule.c' l='273'>/*
+ * Determine if a submodule has been initialized at a given &apos;path&apos;
+ */</doc>

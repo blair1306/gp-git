@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='473' type='int have_git_dir()'/>
+<doc f='codebrowser/cache.h' l='469'>/*
+ * Returns true iff we have a configured git repository (either via
+ * setup_git_directory, or in the environment via $GIT_DIR).
+ */</doc>
+<use f='codebrowser/config.c' l='1641' u='c' c='read_early_config'/>
+<def f='codebrowser/environment.c' l='169' ll='173' type='int have_git_dir()'/>
+<use f='codebrowser/remote.c' l='693' u='c' c='remote_get_1'/>
+<use f='codebrowser/transport-helper.c' l='127' u='c' c='get_helper'/>

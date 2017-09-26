@@ -1,0 +1,4 @@
+<dec f='codebrowser/grep.h' l='123' type='struct grep_pat **'/>
+<offset>192</offset>
+<use f='codebrowser/grep.c' l='147' u='w' c='grep_init'/>
+<use f='codebrowser/grep.c' l='293' u='a' c='append_header_grep_pattern'/>

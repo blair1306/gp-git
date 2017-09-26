@@ -1,0 +1,18 @@
+<dec f='codebrowser/strbuf.h' l='443' type='void strbuf_add_absolute_path(struct strbuf * sb, const char * path)'/>
+<use f='codebrowser/abspath.c' l='238' u='c' c='absolute_path'/>
+<use f='codebrowser/abspath.c' l='245' u='c' c='absolute_pathdup'/>
+<doc f='codebrowser/strbuf.h' l='438'>/**
+ * Add a path to a buffer, converting a relative path to an
+ * absolute one in the process.  Symbolic links are not
+ * resolved.
+ */</doc>
+<use f='codebrowser/config.c' l='254' u='c' c='include_by_gitdir'/>
+<use f='codebrowser/exec_cmd.c' l='85' u='c' c='add_path'/>
+<use f='codebrowser/sha1_file.c' l='437' u='c' c='link_alt_odb_entries'/>
+<def f='codebrowser/strbuf.c' l='690' ll='713' type='void strbuf_add_absolute_path(struct strbuf * sb, const char * path)'/>
+<use f='codebrowser/tempfile.c' l='122' u='c' c='create_tempfile'/>
+<use f='codebrowser/tempfile.c' l='148' u='c' c='register_tempfile'/>
+<use f='codebrowser/tempfile.c' l='158' u='c' c='mks_tempfile_sm'/>
+<use f='codebrowser/tempfile.c' l='196' u='c' c='xmks_tempfile_m'/>
+<use f='codebrowser/worktree.c' l='54' u='c' c='get_main_worktree'/>
+<use f='codebrowser/worktree.c' l='88' u='c' c='get_linked_worktree'/>

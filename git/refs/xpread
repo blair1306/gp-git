@@ -1,0 +1,9 @@
+<dec f='codebrowser/git-compat-util.h' l='804' type='ssize_t xpread(int fd, void * buf, size_t len, off_t offset)'/>
+<use f='codebrowser/builtin/index-pack.c' l='573' u='c' c='unpack_data'/>
+<def f='codebrowser/wrapper.c' l='299' ll='310' type='ssize_t xpread(int fd, void * buf, size_t len, off_t offset)'/>
+<use f='codebrowser/wrapper.c' l='358' u='c' c='pread_in_full'/>
+<doc f='codebrowser/wrapper.c' l='294'>/*
+ * xpread() is the same as pread(), but it automatically restarts pread()
+ * operations with a recoverable error (EAGAIN and EINTR). xpread() DOES
+ * NOT GUARANTEE that &quot;len&quot; bytes is read even if the data is available.
+ */</doc>

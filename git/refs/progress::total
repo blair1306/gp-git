@@ -1,0 +1,9 @@
+<dec f='codebrowser/progress.c' l='34' type='unsigned int'/>
+<use f='codebrowser/progress.c' l='89' u='r' c='display'/>
+<use f='codebrowser/progress.c' l='90' u='r' c='display'/>
+<use f='codebrowser/progress.c' l='95' u='w' c='display'/>
+<use f='codebrowser/progress.c' l='104' u='r' c='display'/>
+<use f='codebrowser/progress.c' l='105' u='r' c='display'/>
+<use f='codebrowser/progress.c' l='111' u='r' c='display'/>
+<use f='codebrowser/progress.c' l='219' u='w' c='start_progress_delay'/>
+<offset>96</offset>

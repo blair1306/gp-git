@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='298' type='int for_each_glob_ref(each_ref_fn * fn, const char * pattern, void * cb_data)'/>
+<use f='codebrowser/notes.c' l='950' u='c' c='string_list_add_refs_by_glob'/>
+<def f='codebrowser/refs.c' l='421' ll='424' type='int for_each_glob_ref(each_ref_fn * fn, const char * pattern, void * cb_data)'/>
+<use f='codebrowser/revision.c' l='2129' u='c' c='handle_revision_pseudo_opt'/>

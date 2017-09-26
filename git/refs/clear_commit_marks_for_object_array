@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='222' type='void clear_commit_marks_for_object_array(struct object_array * a, unsigned int mark)'/>
+<use f='codebrowser/bisect.c' l='828' u='c' c='check_ancestors'/>
+<use f='codebrowser/builtin/checkout.c' l='809' u='c' c='orphaned_commit_warning'/>
+<use f='codebrowser/bundle.c' l='179' u='c' c='verify_bundle'/>
+<def f='codebrowser/commit.c' l='556' ll='568' type='void clear_commit_marks_for_object_array(struct object_array * a, unsigned int mark)'/>

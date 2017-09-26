@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='357' type='void relocate_gitdir(const char * path, const char * old_git_dir, const char * new_git_dir)'/>
+<def f='codebrowser/dir.c' l='2877' ll='2884' type='void relocate_gitdir(const char * path, const char * old_git_dir, const char * new_git_dir)'/>
+<doc f='codebrowser/dir.c' l='2874'>/*
+ * Migrate the git directory of the given path from old_git_dir to new_git_dir.
+ */</doc>
+<use f='codebrowser/submodule.c' l='1857' u='c' c='relocate_single_git_dir_into_superproject'/>

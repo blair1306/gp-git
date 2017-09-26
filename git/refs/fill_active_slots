@@ -1,0 +1,9 @@
+<dec f='codebrowser/http.h' l='101' type='void fill_active_slots()'/>
+<use f='codebrowser/http-push.c' l='653' u='c' c='add_fetch_request'/>
+<use f='codebrowser/http-push.c' l='691' u='c' c='add_send_request'/>
+<use f='codebrowser/http-push.c' l='1671' u='c' c='run_request_queue'/>
+<use f='codebrowser/http-push.c' l='1677' u='c' c='run_request_queue'/>
+<use f='codebrowser/http-walker.c' l='159' u='c' c='prefetch'/>
+<def f='codebrowser/http.c' l='1182' ll='1205' type='void fill_active_slots()'/>
+<use f='codebrowser/http.c' l='1217' u='c' c='step_active_slots'/>
+<use f='codebrowser/http.c' l='1295' u='c' c='release_active_slot'/>

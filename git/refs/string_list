@@ -1,0 +1,7 @@
+<def f='codebrowser/string-list.h' l='11' ll='16'/>
+<size>32</size>
+<mbr r='string_list::items' o='0' t='struct string_list_item *'/>
+<mbr r='string_list::nr' o='64' t='unsigned int'/>
+<mbr r='string_list::alloc' o='96' t='unsigned int'/>
+<mbr r='string_list::strdup_strings' o='128' t='unsigned int'/>
+<mbr r='string_list::cmp' o='192' t='compare_strings_fn'/>

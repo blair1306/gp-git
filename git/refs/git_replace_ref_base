@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='768' type='char *'/>
+<use f='codebrowser/builtin/replace.c' l='102' u='r' c='for_each_replace_name'/>
+<use f='codebrowser/builtin/replace.c' l='143' u='r' c='check_ref_valid'/>
+<def f='codebrowser/environment.c' l='50' type='char *'/>
+<use f='codebrowser/environment.c' l='155' u='w' c='setup_git_env'/>
+<use f='codebrowser/log-tree.c' l='100' u='r' c='add_ref_decoration'/>
+<use f='codebrowser/log-tree.c' l='104' u='r' c='add_ref_decoration'/>
+<use f='codebrowser/refs.c' l='1377' u='r' c='for_each_replace_ref'/>
+<use f='codebrowser/refs.c' l='1378' u='r' c='for_each_replace_ref'/>

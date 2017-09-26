@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs/packed-backend.h' l='20' type='int commit_packed_refs(struct ref_store * ref_store, struct strbuf * err)'/>
+<use f='codebrowser/refs/files-backend.c' l='1133' u='c' c='files_pack_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='2712' u='c' c='files_initial_transaction_commit'/>
+<def f='codebrowser/refs/packed-backend.c' l='606' ll='687' type='int commit_packed_refs(struct ref_store * ref_store, struct strbuf * err)'/>
+<use f='codebrowser/refs/packed-backend.c' l='742' u='c' c='repack_without_refs'/>
+<doc f='codebrowser/refs/packed-backend.c' l='599'>/*
+ * Write the current version of the packed refs cache from memory to
+ * disk. The packed-refs file must already be locked for writing (see
+ * packed_refs_lock()). Return zero on success. On errors, rollback
+ * the lockfile, write an error message to `err`, and return a nonzero
+ * value.
+ */</doc>

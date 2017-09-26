@@ -1,0 +1,14 @@
+<dec f='codebrowser/commit.h' l='25' type='int'/>
+<use f='codebrowser/builtin/blame.c' l='714' u='w' c='cmd_blame'/>
+<use f='codebrowser/builtin/describe.c' l='480' u='w' c='cmd_describe'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2774' u='w' c='get_object_list'/>
+<use f='codebrowser/builtin/prune.c' l='115' u='w' c='cmd_prune'/>
+<use f='codebrowser/builtin/reflog.c' l='528' u='w' c='cmd_reflog_expire'/>
+<use f='codebrowser/builtin/rev-list.c' l='363' u='w' c='cmd_rev_list'/>
+<use f='codebrowser/bundle.c' l='436' u='w' c='create_bundle'/>
+<def f='codebrowser/commit.c' l='18' type='int'/>
+<use f='codebrowser/commit.c' l='393' u='r' c='parse_commit_gently'/>
+<use f='codebrowser/fetch-pack.c' l='713' u='w' c='everything_local'/>
+<use f='codebrowser/shallow.c' l='171' u='w' c='get_shallow_commits_by_rev_list'/>
+<use f='codebrowser/upload-pack.c' l='392' u='w' c='get_common_commits'/>
+<use f='codebrowser/walker.c' l='266' u='w' c='walker_fetch'/>

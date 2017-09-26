@@ -1,0 +1,14 @@
+<dec f='codebrowser/parse-options.h' l='226' type='int parse_opt_object_name(const struct option * , const char * , int )'/>
+<use f='codebrowser/builtin/branch.c' l='596' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='596' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='596' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='596' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='43' u='r' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='43' u='r' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='43' u='r' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='43' u='r' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='410' u='r' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='410' u='r' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='410' u='r' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='410' u='r' c='cmd_tag'/>
+<def f='codebrowser/parse-options-cb.c' l='97' ll='111' type='int parse_opt_object_name(const struct option * opt, const char * arg, int unset)'/>

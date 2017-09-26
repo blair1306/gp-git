@@ -1,0 +1,6 @@
+svndiff0_apply|svndiff0_apply
+svndump_deinit|svndump_deinit
+svndump_init|svndump_init
+svndump_init_fd|svndump_init_fd
+svndump_read|svndump_read
+svndump_reset|svndump_reset

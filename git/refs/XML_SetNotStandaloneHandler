@@ -1,0 +1,1 @@
+<dec f='include/expat.h' l='621' type='void XML_SetNotStandaloneHandler(XML_Parser parser, XML_NotStandaloneHandler handler)'/>

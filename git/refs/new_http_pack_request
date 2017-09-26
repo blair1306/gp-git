@@ -1,0 +1,4 @@
+<dec f='codebrowser/http.h' l='207' type='struct http_pack_request * new_http_pack_request(struct packed_git * target, const char * base_url)'/>
+<use f='codebrowser/http-push.c' l='317' u='c' c='start_fetch_packed'/>
+<use f='codebrowser/http-walker.c' l='439' u='c' c='http_fetch_pack'/>
+<def f='codebrowser/http.c' l='2055' ll='2105' type='struct http_pack_request * new_http_pack_request(struct packed_git * target, const char * base_url)'/>

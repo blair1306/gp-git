@@ -1,0 +1,9 @@
+<dec f='codebrowser/split-index.h' l='14' type='unsigned int'/>
+<offset>448</offset>
+<use f='codebrowser/split-index.c' l='111' u='r' c='replace_entry'/>
+<use f='codebrowser/split-index.c' l='113' u='r' c='replace_entry'/>
+<use f='codebrowser/split-index.c' l='138' u='w' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='152' u='r' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='173' u='w' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='259' u='w' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='274' u='r' c='finish_writing_split_index'/>

@@ -1,0 +1,1 @@
+<dec f='include/expat.h' l='784' type='enum XML_Status XML_ParseBuffer(XML_Parser parser, int len, int isFinal)'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/revision.h' l='122' type='unsigned int'/>
+<offset>964</offset>
+<use f='codebrowser/blame.c' l='1357' u='r' c='first_scapegoat'/>
+<use f='codebrowser/blame.c' l='1770' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1785' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1799' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/builtin/log.c' l='550' u='r' c='show_setup_revisions_tweak'/>
+<use f='codebrowser/graph.c' l='371' u='r' c='next_interesting_parent'/>
+<use f='codebrowser/line-log.c' l='1140' u='r' c='process_ranges_merge_commit'/>
+<use f='codebrowser/log-tree.c' l='819' u='r' c='log_tree_diff'/>
+<use f='codebrowser/revision.c' l='365' u='r' c='one_relevant_parent'/>
+<use f='codebrowser/revision.c' l='587' u='r' c='limiting_can_increase_treesame'/>
+<use f='codebrowser/revision.c' l='636' u='r' c='try_to_simplify_commit'/>
+<use f='codebrowser/revision.c' l='800' u='r' c='add_parents_to_list'/>
+<use f='codebrowser/revision.c' l='1748' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2384' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2629' u='r' c='simplify_one'/>
+<use f='codebrowser/revision.c' l='2645' u='r' c='simplify_one'/>
+<use f='codebrowser/revision.c' l='2649' u='r' c='simplify_one'/>
+<use f='codebrowser/submodule.c' l='469' u='w' c='prepare_submodule_summary'/>

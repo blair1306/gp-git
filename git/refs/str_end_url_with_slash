@@ -1,0 +1,5 @@
+<dec f='codebrowser/url.h' l='12' type='void str_end_url_with_slash(const char * url, char ** dest)'/>
+<use f='codebrowser/http-fetch.c' l='63' u='c' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1063' u='c' c='handle_remote_ls_ctx'/>
+<use f='codebrowser/http-push.c' l='1745' u='c' c='cmd_main'/>
+<def f='codebrowser/url.c' l='107' ll='112' type='void str_end_url_with_slash(const char * url, char ** dest)'/>

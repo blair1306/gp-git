@@ -1,0 +1,19 @@
+<dec f='codebrowser/cache.h' l='1684' type='void unuse_pack(struct pack_window ** )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='378' u='c' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='389' u='c' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='400' u='c' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='409' u='c' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='418' u='c' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='424' u='c' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1420' u='c' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1477' u='c' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1491' u='c' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1501' u='c' c='check_object'/>
+<use f='codebrowser/pack-check.c' l='85' u='c' c='verify_packfile'/>
+<use f='codebrowser/pack-check.c' l='124' u='c' c='verify_packfile'/>
+<use f='codebrowser/pack-check.c' l='197' u='c' c='verify_pack'/>
+<def f='codebrowser/sha1_file.c' l='1073' ll='1080' type='void unuse_pack(struct pack_window ** w_cursor)'/>
+<use f='codebrowser/sha1_file.c' l='2452' u='c' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2689' u='c' c='unpack_entry'/>
+<use f='codebrowser/streaming.c' l='399' u='c' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='439' u='c' c='open_istream_pack_non_delta'/>

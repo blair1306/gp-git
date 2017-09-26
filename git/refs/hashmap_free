@@ -1,0 +1,19 @@
+<dec f='codebrowser/hashmap.h' l='233' type='void hashmap_free(struct hashmap * map, int free_entries)'/>
+<doc f='codebrowser/hashmap.h' l='227'>/*
+ * Frees a hashmap structure and allocated memory.
+ *
+ * If `free_entries` is true, each hashmap_entry in the map is freed as well
+ * using stdlibs free().
+ */</doc>
+<use f='codebrowser/config.c' l='1758' u='c' c='git_configset_clear'/>
+<use f='codebrowser/diffcore-rename.c' l='353' u='c' c='find_exact_renames'/>
+<def f='codebrowser/hashmap.c' l='171' ll='184' type='void hashmap_free(struct hashmap * map, int free_entries)'/>
+<use f='codebrowser/name-hash.c' l='725' u='c' c='free_name_hash'/>
+<use f='codebrowser/name-hash.c' l='726' u='c' c='free_name_hash'/>
+<use f='codebrowser/oidset.c' l='49' u='c' c='oidset_clear'/>
+<use f='codebrowser/patch-ids.c' l='72' u='c' c='free_patch_ids'/>
+<use f='codebrowser/submodule-config.c' l='99' u='c' c='submodule_cache_clear'/>
+<use f='codebrowser/submodule-config.c' l='100' u='c' c='submodule_cache_clear'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='107' u='c' c='perf_hashmap'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='127' u='c' c='perf_hashmap'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='265' u='c' c='cmd_main'/>

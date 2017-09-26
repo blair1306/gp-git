@@ -1,0 +1,11 @@
+<dec f='codebrowser/split-index.h' l='13' type='struct cache_entry **'/>
+<offset>384</offset>
+<use f='codebrowser/split-index.c' l='118' u='r' c='replace_entry'/>
+<use f='codebrowser/split-index.c' l='137' u='w' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='153' u='r' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='156' u='r' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='165' u='r' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='170' u='r' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='170' u='w' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='258' u='w' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='273' u='r' c='finish_writing_split_index'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1404' type='struct object * peel_to_type(const char * name, int namelen, struct object * o, enum object_type )'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='565' u='c' c='find_merge_parents'/>
+<use f='codebrowser/commit.c' l='1592' u='c' c='get_merge_parent'/>
+<def f='codebrowser/sha1_name.c' l='782' ll='805' type='struct object * peel_to_type(const char * name, int namelen, struct object * o, enum object_type expected_type)'/>
+<use f='codebrowser/sha1_name.c' l='877' u='c' c='peel_onion'/>

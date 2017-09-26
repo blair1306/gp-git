@@ -1,0 +1,10 @@
+<def f='codebrowser/read-cache.c' l='1467' ll='1479'/>
+<size>64</size>
+<doc f='codebrowser/read-cache.c' l='1459'>/*
+ * dev/ino/uid/gid/size are also just tracked to the low 32 bits
+ * Again - this is just a (very strong in practice) heuristic that
+ * the inode hasn&apos;t changed.
+ *
+ * We save the fields in big-endian order to allow using the
+ * index file over NFS transparently.
+ */</doc>

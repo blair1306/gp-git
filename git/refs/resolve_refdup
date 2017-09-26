@@ -1,0 +1,23 @@
+<dec f='codebrowser/refs.h' l='72' type='char * resolve_refdup(const char * refname, int resolve_flags, unsigned char * sha1, int * flags)'/>
+<use f='codebrowser/builtin/am.c' l='2127' u='c' c='am_abort'/>
+<use f='codebrowser/builtin/branch.c' l='126' u='c' c='branch_merged'/>
+<use f='codebrowser/builtin/branch.c' l='239' u='c' c='delete_branches'/>
+<use f='codebrowser/builtin/branch.c' l='616' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/checkout.c' l='822' u='c' c='switch_branches'/>
+<use f='codebrowser/builtin/checkout.c' l='1121' u='c' c='checkout_branch'/>
+<use f='codebrowser/builtin/clone.c' l='717' u='c' c='checkout'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='606' u='c' c='fmt_merge_msg'/>
+<use f='codebrowser/builtin/merge.c' l='1123' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/notes.c' l='726' u='c' c='merge_commit'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1518' u='c' c='execute_commands'/>
+<use f='codebrowser/builtin/show-branch.c' l='707' u='c' c='cmd_show_branch'/>
+<use f='codebrowser/builtin/show-branch.c' l='777' u='c' c='cmd_show_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1137' u='c' c='push_check'/>
+<use f='codebrowser/ref-filter.c' l='300' u='c' c='head_atom_parser'/>
+<use f='codebrowser/ref-filter.c' l='1321' u='c' c='populate_value'/>
+<use f='codebrowser/reflog-walk.c' l='67' u='c' c='read_complete_reflog'/>
+<use f='codebrowser/reflog-walk.c' l='156' u='c' c='add_reflog_for_walk'/>
+<def f='codebrowser/refs.c' l='206' ll='212' type='char * resolve_refdup(const char * refname, int resolve_flags, unsigned char * sha1, int * flags)'/>
+<use f='codebrowser/submodule.c' l='1053' u='c' c='push_unpushed_submodules'/>
+<use f='codebrowser/transport.c' l='479' u='c' c='transport_print_push_status'/>
+<use f='codebrowser/wt-status.c' l='132' u='c' c='wt_status_prepare'/>

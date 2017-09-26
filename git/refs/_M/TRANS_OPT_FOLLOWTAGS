@@ -1,0 +1,7 @@
+<dec f='codebrowser/transport.h' l='205'/>
+<doc f='codebrowser/transport.h' l='204'>/* Aggressively fetch annotated tags if possible */</doc>
+<use f='codebrowser/builtin/clone.c' l='1100' u='c'/>
+<use f='codebrowser/builtin/fetch.c' l='1067' u='c'/>
+<use f='codebrowser/builtin/fetch.c' l='1123' u='c'/>
+<use f='codebrowser/transport-helper.c' l='260' u='c'/>
+<use f='codebrowser/transport.c' l='136' u='c'/>

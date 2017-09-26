@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='294'/>
+<doc f='codebrowser/dir.h' l='290'>/*
+ * If any Git work trees are found within path, skip them without
+ * considering it an error.
+ */</doc>
+<use f='codebrowser/builtin/clean.c' l='162' u='c'/>
+<use f='codebrowser/builtin/clean.c' l='896' u='c'/>
+<use f='codebrowser/dir.c' l='2249' u='c'/>

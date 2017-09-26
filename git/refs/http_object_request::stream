@@ -1,0 +1,14 @@
+<dec f='codebrowser/http.h' l='223' type='git_zstream'/>
+<offset>54528</offset>
+<use f='codebrowser/http.c' l='2135' u='m' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2136' u='m' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2138' u='m' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2139' u='m' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2140' u='a' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2142' u='m' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2143' u='m' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2196' u='a' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2230' u='a' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2230' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2231' u='a' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2300' u='a' c='finish_http_object_request'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='146' type='int'/>
+<offset>96</offset>
+<use f='codebrowser/dir.c' l='1277' u='r' c='dir_add_ignored'/>
+<use f='codebrowser/dir.c' l='1277' u='r' c='dir_add_ignored'/>
+<use f='codebrowser/dir.c' l='1277' u='w' c='dir_add_ignored'/>
+<use f='codebrowser/dir.c' l='1277' u='w' c='dir_add_ignored'/>
+<use f='codebrowser/dir.c' l='1277' u='r' c='dir_add_ignored'/>
+<use f='codebrowser/dir.c' l='1277' u='r' c='dir_add_ignored'/>

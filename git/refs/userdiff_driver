@@ -1,0 +1,10 @@
+<def f='codebrowser/userdiff.h' l='11' ll='20'/>
+<size>72</size>
+<mbr r='userdiff_driver::name' o='0' t='const char *'/>
+<mbr r='userdiff_driver::external' o='64' t='const char *'/>
+<mbr r='userdiff_driver::binary' o='128' t='int'/>
+<mbr r='userdiff_driver::funcname' o='192' t='struct userdiff_funcname'/>
+<mbr r='userdiff_driver::word_regex' o='320' t='const char *'/>
+<mbr r='userdiff_driver::textconv' o='384' t='const char *'/>
+<mbr r='userdiff_driver::textconv_cache' o='448' t='struct notes_cache *'/>
+<mbr r='userdiff_driver::textconv_want_cache' o='512' t='int'/>

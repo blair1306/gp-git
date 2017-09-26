@@ -1,0 +1,5 @@
+<dec f='codebrowser/notes-merge.h' l='19' type='unsigned int'/>
+<offset>384</offset>
+<use f='codebrowser/notes-merge.c' l='264' u='r' c='check_notes_merge_worktree'/>
+<use f='codebrowser/notes-merge.c' l='287' u='w' c='check_notes_merge_worktree'/>
+<use f='codebrowser/notes-merge.c' l='379' u='r' c='merge_one_change_manual'/>

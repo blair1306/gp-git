@@ -1,0 +1,15 @@
+<dec f='codebrowser/refs/refs-internal.h' l='85' type='int ref_resolves_to_object(const char * refname, const struct object_id * oid, unsigned int flags)'/>
+<def f='codebrowser/refs.c' l='182' ll='193' type='int ref_resolves_to_object(const char * refname, const struct object_id * oid, unsigned int flags)'/>
+<doc f='codebrowser/refs.c' l='177'>/*
+ * Return true if refname, which has the specified oid and flags, can
+ * be resolved to an object in the database. If the referred-to object
+ * does not exist, emit a warning and return false.
+ */</doc>
+<doc f='codebrowser/refs/refs-internal.h' l='80'>/*
+ * Helper function: return true if refname, which has the specified
+ * oid and flags, can be resolved to an object in the database. If the
+ * referred-to object does not exist, emit a warning and return false.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='712' u='c' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='1084' u='c' c='should_pack_ref'/>
+<use f='codebrowser/refs/packed-backend.c' l='425' u='c' c='packed_ref_iterator_advance'/>

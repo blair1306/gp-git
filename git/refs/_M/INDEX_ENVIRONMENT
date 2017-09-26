@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='422'/>
+<use f='codebrowser/builtin/commit.c' l='362' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='363' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='369' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='371' u='c'/>
+<use f='codebrowser/environment.c' l='116' u='c'/>
+<use f='codebrowser/repository.c' l='48' u='c'/>

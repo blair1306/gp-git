@@ -1,0 +1,15 @@
+<dec f='include/unistd.h' l='363' type='ssize_t read(int __fd, void * __buf, size_t __nbytes)'/>
+<doc f='include/unistd.h' l='358'>/* Read NBYTES into BUF from FD.  Return the
+   number read, -1 for errors or 0 for EOF.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='codebrowser/builtin/upload-archive.c' l='65' u='c' c='process_input'/>
+<use f='codebrowser/ewah/ewah_io.c' l='169' u='c' c='ewah_deserialize'/>
+<use f='codebrowser/ewah/ewah_io.c' l='175' u='c' c='ewah_deserialize'/>
+<use f='codebrowser/ewah/ewah_io.c' l='186' u='c' c='ewah_deserialize'/>
+<use f='codebrowser/ewah/ewah_io.c' l='196' u='c' c='ewah_deserialize'/>
+<use f='codebrowser/ewah/ewah_io.c' l='204' u='c' c='ewah_deserialize'/>
+<use f='codebrowser/t/helper/test-index-version.c' l='9' u='c' c='cmd_main'/>
+<use f='codebrowser/transport-helper.c' l='1196' u='c' c='udt_do_read'/>
+<use f='codebrowser/wrapper.c' l='260' u='c' c='xread'/>

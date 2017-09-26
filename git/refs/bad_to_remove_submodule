@@ -1,0 +1,10 @@
+<dec f='codebrowser/submodule.h' l='98' type='int bad_to_remove_submodule(const char * path, unsigned int flags)'/>
+<use f='codebrowser/builtin/rm.c' l='169' u='c' c='check_local_mod'/>
+<def f='codebrowser/submodule.c' l='1438' ll='1489' type='int bad_to_remove_submodule(const char * path, unsigned int flags)'/>
+<doc f='codebrowser/submodule.c' l='1431'>/*
+ * Check if it is a bad idea to remove a submodule, i.e. if we&apos;d lose data
+ * when doing so.
+ *
+ * Return 1 if we&apos;d lose data, return 0 if the removal is fine,
+ * and negative values for errors.
+ */</doc>

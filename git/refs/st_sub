@@ -1,0 +1,2 @@
+<def f='codebrowser/git-compat-util.h' l='775' ll='781' type='size_t st_sub(size_t a, size_t b)'/>
+<use f='codebrowser/apply.c' l='2788' u='c' c='update_image'/>

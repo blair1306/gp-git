@@ -1,0 +1,28 @@
+<dec f='codebrowser/cache.h' l='162' type='uint32_t'/>
+<offset>32</offset>
+<use f='codebrowser/builtin/ls-files.c' l='113' u='r' c='print_debug'/>
+<use f='codebrowser/builtin/ls-files.c' l='114' u='r' c='print_debug'/>
+<use f='codebrowser/dir.c' l='2417' u='w' c='stat_data_to_disk'/>
+<use f='codebrowser/dir.c' l='2417' u='r' c='stat_data_to_disk'/>
+<use f='codebrowser/dir.c' l='2419' u='w' c='stat_data_to_disk'/>
+<use f='codebrowser/dir.c' l='2419' u='r' c='stat_data_to_disk'/>
+<use f='codebrowser/dir.c' l='2568' u='w' c='stat_data_from_disk'/>
+<use f='codebrowser/dir.c' l='2568' u='r' c='stat_data_from_disk'/>
+<use f='codebrowser/dir.c' l='2570' u='w' c='stat_data_from_disk'/>
+<use f='codebrowser/dir.c' l='2570' u='r' c='stat_data_from_disk'/>
+<use f='codebrowser/read-cache.c' l='90' u='w' c='fill_stat_data'/>
+<use f='codebrowser/read-cache.c' l='91' u='w' c='fill_stat_data'/>
+<use f='codebrowser/read-cache.c' l='1581' u='w' c='cache_entry_from_ondisk'/>
+<use f='codebrowser/read-cache.c' l='1581' u='a' c='cache_entry_from_ondisk'/>
+<use f='codebrowser/read-cache.c' l='1582' u='w' c='cache_entry_from_ondisk'/>
+<use f='codebrowser/read-cache.c' l='1582' u='a' c='cache_entry_from_ondisk'/>
+<use f='codebrowser/read-cache.c' l='1741' u='w' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1791' u='w' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1893' u='w' c='discard_index'/>
+<use f='codebrowser/read-cache.c' l='2042' u='w' c='copy_cache_entry_to_ondisk'/>
+<use f='codebrowser/read-cache.c' l='2042' u='r' c='copy_cache_entry_to_ondisk'/>
+<use f='codebrowser/read-cache.c' l='2043' u='w' c='copy_cache_entry_to_ondisk'/>
+<use f='codebrowser/read-cache.c' l='2043' u='r' c='copy_cache_entry_to_ondisk'/>
+<use f='codebrowser/read-cache.c' l='2311' u='w' c='do_write_index'/>
+<use f='codebrowser/unpack-trees.c' l='1271' u='w' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1271' u='r' c='unpack_trees'/>

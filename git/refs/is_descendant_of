@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit.h' l='308' type='int is_descendant_of(struct commit * , struct commit_list * )'/>
+<use f='codebrowser/builtin/pull.c' l='916' u='c' c='cmd_pull'/>
+<def f='codebrowser/commit.c' l='1008' ll='1021' type='int is_descendant_of(struct commit * commit, struct commit_list * with_commit)'/>
+<doc f='codebrowser/commit.c' l='1005'>/*
+ * Is &quot;commit&quot; a descendant of one of the elements on the &quot;with_commit&quot; list?
+ */</doc>
+<use f='codebrowser/ref-filter.c' l='1608' u='c' c='commit_contains'/>

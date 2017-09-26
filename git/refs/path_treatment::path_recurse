@@ -1,0 +1,5 @@
+<dec f='codebrowser/dir.c' l='30' type='1'/>
+<use f='codebrowser/dir.c' l='1384' u='r' c='treat_directory'/>
+<use f='codebrowser/dir.c' l='1397' u='r' c='treat_directory'/>
+<use f='codebrowser/dir.c' l='1643' u='r' c='treat_path_fast'/>
+<use f='codebrowser/dir.c' l='1824' u='r' c='read_directory_recursive'/>

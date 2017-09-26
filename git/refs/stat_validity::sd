@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='2002' type='struct stat_data *'/>
+<offset>0</offset>
+<use f='codebrowser/read-cache.c' l='2619' u='r' c='stat_validity_clear'/>
+<use f='codebrowser/read-cache.c' l='2619' u='w' c='stat_validity_clear'/>
+<use f='codebrowser/read-cache.c' l='2627' u='r' c='stat_validity_check'/>
+<use f='codebrowser/read-cache.c' l='2628' u='r' c='stat_validity_check'/>
+<use f='codebrowser/read-cache.c' l='2630' u='r' c='stat_validity_check'/>
+<use f='codebrowser/read-cache.c' l='2640' u='r' c='stat_validity_update'/>
+<use f='codebrowser/read-cache.c' l='2641' u='w' c='stat_validity_update'/>
+<use f='codebrowser/read-cache.c' l='2642' u='r' c='stat_validity_update'/>

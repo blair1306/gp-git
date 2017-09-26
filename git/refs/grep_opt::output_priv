@@ -1,0 +1,7 @@
+<dec f='codebrowser/grep.h' l='174' type='void *'/>
+<offset>6912</offset>
+<use f='codebrowser/builtin/grep.c' l='182' u='w' c='run'/>
+<use f='codebrowser/builtin/grep.c' l='195' u='r' c='strbuf_out'/>
+<use f='codebrowser/builtin/grep.c' l='379' u='r' c='append_path'/>
+<use f='codebrowser/builtin/grep.c' l='388' u='r' c='run_pager'/>
+<use f='codebrowser/builtin/grep.c' l='944' u='w' c='cmd_grep'/>

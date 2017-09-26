@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs/refs-internal.h' l='14'/>
+<doc f='codebrowser/refs/refs-internal.h' l='10'>/*
+ * Flag passed to lock_ref_sha1_basic() telling it to tolerate broken
+ * refs (i.e., because the reference is about to be deleted anyway).
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='897' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2261' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2339' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2559' u='c'/>

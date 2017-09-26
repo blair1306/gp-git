@@ -1,0 +1,16 @@
+<dec f='codebrowser/refs/ref-cache.h' l='48' type='struct object_id'/>
+<offset>160</offset>
+<doc f='codebrowser/refs/ref-cache.h' l='42'>/*
+	 * If REF_KNOWS_PEELED, then this field holds the peeled value
+	 * of this reference, or null if the reference is known not to
+	 * be peelable.  See the documentation for peel_ref() for an
+	 * exact definition of &quot;peelable&quot;.
+	 */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='265' u='a' c='read_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='351' u='a' c='add_packed_ref'/>
+<use f='codebrowser/refs/packed-backend.c' l='401' u='m' c='packed_peel_ref'/>
+<use f='codebrowser/refs/ref-cache.c' l='41' u='a' c='create_ref_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='501' u='a' c='peel_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='503' u='a' c='peel_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='512' u='m' c='peel_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='535' u='a' c='cache_ref_iterator_peel'/>

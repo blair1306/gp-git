@@ -1,0 +1,4 @@
+<def f='codebrowser/cache.h' l='296' ll='307' type='int ce_to_dtype(const struct cache_entry * ce)'/>
+<use f='codebrowser/builtin/ls-files.c' l='283' u='c' c='ce_excluded'/>
+<use f='codebrowser/unpack-trees.c' l='1179' u='c' c='clear_ce_flags_1'/>
+<use f='codebrowser/unpack-trees.c' l='1724' u='c' c='verify_absent_1'/>

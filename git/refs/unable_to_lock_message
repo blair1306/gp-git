@@ -1,0 +1,13 @@
+<dec f='codebrowser/lockfile.h' l='191' type='void unable_to_lock_message(const char * path, int err, struct strbuf * buf)'/>
+<doc f='codebrowser/lockfile.h' l='186'>/*
+ * Append an appropriate error message to `buf` following the failure
+ * of `hold_lock_file_for_update()` to lock `path`. `err` should be the
+ * `errno` set by the failing call.
+ */</doc>
+<def f='codebrowser/lockfile.c' l='149' ll='162' type='void unable_to_lock_message(const char * path, int err, struct strbuf * buf)'/>
+<use f='codebrowser/lockfile.c' l='168' u='c' c='unable_to_lock_die'/>
+<use f='codebrowser/lockfile.c' l='182' u='c' c='hold_lock_file_for_update_timeout'/>
+<use f='codebrowser/refs/files-backend.c' l='549' u='c' c='lock_raw_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='954' u='c' c='lock_ref_sha1_basic'/>
+<use f='codebrowser/refs/files-backend.c' l='2816' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/refs/packed-backend.c' l='544' u='c' c='packed_refs_lock'/>

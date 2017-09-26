@@ -1,0 +1,6 @@
+<dec f='codebrowser/pathspec.h' l='11'/>
+<use f='codebrowser/dir.c' l='150' u='c'/>
+<use f='codebrowser/dir.c' l='391' u='c'/>
+<use f='codebrowser/dir.c' l='1431' u='c'/>
+<use f='codebrowser/pathspec.c' l='80' u='c'/>
+<use f='codebrowser/pathspec.c' l='312' u='c'/>

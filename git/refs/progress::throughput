@@ -1,0 +1,11 @@
+<dec f='codebrowser/progress.c' l='38' type='struct throughput *'/>
+<use f='codebrowser/progress.c' l='102' u='r' c='display'/>
+<use f='codebrowser/progress.c' l='102' u='r' c='display'/>
+<use f='codebrowser/progress.c' l='149' u='r' c='display_throughput'/>
+<use f='codebrowser/progress.c' l='154' u='w' c='display_throughput'/>
+<use f='codebrowser/progress.c' l='224' u='w' c='start_progress_delay'/>
+<use f='codebrowser/progress.c' l='254' u='r' c='stop_progress_msg'/>
+<use f='codebrowser/progress.c' l='269' u='r' c='stop_progress_msg'/>
+<use f='codebrowser/progress.c' l='270' u='r' c='stop_progress_msg'/>
+<use f='codebrowser/progress.c' l='271' u='r' c='stop_progress_msg'/>
+<offset>256</offset>

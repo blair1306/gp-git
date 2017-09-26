@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='131' type='long'/>
+<offset>256</offset>
+<doc f='include/curl/curl.h' l='131'>/* length of contents field, see also
+                                       CURL_HTTPPOST_LARGE */</doc>

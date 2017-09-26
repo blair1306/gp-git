@@ -1,0 +1,10 @@
+<dec f='codebrowser/notes.h' l='252' type='struct string_list'/>
+<offset>64</offset>
+<use f='codebrowser/notes.c' l='1066' u='m' c='init_display_notes'/>
+<use f='codebrowser/notes.c' l='1081' u='a' c='init_display_notes'/>
+<use f='codebrowser/notes.c' l='1081' u='a' c='init_display_notes'/>
+<use f='codebrowser/notes.c' l='1081' u='a' c='init_display_notes'/>
+<use f='codebrowser/revision.c' l='1939' u='a' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1947' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1948' u='a' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1949' u='m' c='handle_revision_opt'/>

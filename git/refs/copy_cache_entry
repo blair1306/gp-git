@@ -1,0 +1,9 @@
+<def f='codebrowser/cache.h' l='246' ll='258' type='void copy_cache_entry(struct cache_entry * dst, const struct cache_entry * src)'/>
+<doc f='codebrowser/cache.h' l='242'>/*
+ * Copy the sha1 and stat state of a cache entry from one to
+ * another. But we never change the name, or the hash state!
+ */</doc>
+<use f='codebrowser/read-cache.c' l='74' u='c' c='rename_index_entry_at'/>
+<use f='codebrowser/read-cache.c' l='616' u='c' c='create_alias_ce'/>
+<use f='codebrowser/split-index.c' l='125' u='c' c='replace_entry'/>
+<use f='codebrowser/unpack-trees.c' l='1796' u='c' c='merged_entry'/>

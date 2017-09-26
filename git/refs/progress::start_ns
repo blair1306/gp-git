@@ -1,0 +1,4 @@
+<dec f='codebrowser/progress.c' l='39' type='uint64_t'/>
+<use f='codebrowser/progress.c' l='225' u='w' c='start_progress_delay'/>
+<use f='codebrowser/progress.c' l='259' u='r' c='stop_progress_msg'/>
+<offset>320</offset>

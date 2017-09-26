@@ -1,0 +1,4 @@
+<def f='codebrowser/decorate.h' l='4' ll='7'/>
+<size>16</size>
+<mbr r='object_decoration::base' o='0' t='const struct object *'/>
+<mbr r='object_decoration::decoration' o='64' t='void *'/>

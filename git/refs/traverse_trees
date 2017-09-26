@@ -1,0 +1,5 @@
+<dec f='codebrowser/tree-walk.h' l='49' type='int traverse_trees(int n, struct tree_desc * t, struct traverse_info * info)'/>
+<use f='codebrowser/builtin/merge-tree.c' l='345' u='c' c='merge_trees'/>
+<def f='codebrowser/tree-walk.c' l='379' ll='487' type='int traverse_trees(int n, struct tree_desc * t, struct traverse_info * info)'/>
+<use f='codebrowser/unpack-trees.c' l='672' u='c' c='traverse_trees_recursive'/>
+<use f='codebrowser/unpack-trees.c' l='1317' u='c' c='unpack_trees'/>

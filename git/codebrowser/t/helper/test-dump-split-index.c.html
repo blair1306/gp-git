@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>test-dump-split-index.c source code [codebrowser/t/helper/test-dump-split-index.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/t/helper/test-dump-split-index.c'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>t</a>/<a href='./'>helper</a>/<a href='test-dump-split-index.c.html'>test-dump-split-index.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../../split-index.h.html">"split-index.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../ewah/ewok.h.html">"ewah/ewok.h"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="show_bit" title='show_bit' data-type='void show_bit(size_t pos, void * data)' data-ref="show_bit">show_bit</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="1pos" title='pos' data-type='size_t' data-ref="1pos">pos</dfn>, <em>void</em> *<dfn class="local col2 decl" id="2data" title='data' data-type='void *' data-ref="2data">data</dfn>)</td></tr>
+<tr><th id="6">6</th><td>{</td></tr>
+<tr><th id="7">7</th><td>	<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>" %d"</q>, (<em>int</em>)<a class="local col1 ref" href="#1pos" title='pos' data-ref="1pos">pos</a>);</td></tr>
+<tr><th id="8">8</th><td>}</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><em>int</em> <dfn class="decl def" id="cmd_main" title='cmd_main' data-ref="cmd_main">cmd_main</dfn>(<em>int</em> <dfn class="local col3 decl" id="3ac" title='ac' data-type='int' data-ref="3ac">ac</dfn>, <em>const</em> <em>char</em> **<dfn class="local col4 decl" id="4av" title='av' data-type='const char **' data-ref="4av">av</dfn>)</td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td>	<b>struct</b> <a class="type" href="../../split-index.h.html#split_index" title='split_index' data-ref="split_index">split_index</a> *<dfn class="local col5 decl" id="5si" title='si' data-type='struct split_index *' data-ref="5si">si</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<em>int</em> <dfn class="local col6 decl" id="6i" title='i' data-type='int' data-ref="6i">i</dfn>;</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td>	<a class="ref" href="../../cache.h.html#do_read_index" title='do_read_index' data-ref="do_read_index">do_read_index</a>(&amp;<a class="ref" href="../../cache.h.html#the_index" title='the_index' data-ref="the_index">the_index</a>, <a class="local col4 ref" href="#4av" title='av' data-ref="4av">av</a>[<var>1</var>], <var>1</var>);</td></tr>
+<tr><th id="16">16</th><td>	<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"own %s\n"</q>, <a class="ref" href="../../cache.h.html#sha1_to_hex" title='sha1_to_hex' data-ref="sha1_to_hex">sha1_to_hex</a>(<a class="ref" href="../../cache.h.html#the_index" title='the_index' data-ref="the_index">the_index</a>.<a class="ref" href="../../cache.h.html#index_state::sha1" title='index_state::sha1' data-ref="index_state::sha1">sha1</a>));</td></tr>
+<tr><th id="17">17</th><td>	<a class="local col5 ref" href="#5si" title='si' data-ref="5si">si</a> = <a class="ref" href="../../cache.h.html#the_index" title='the_index' data-ref="the_index">the_index</a>.<a class="ref" href="../../cache.h.html#index_state::split_index" title='index_state::split_index' data-ref="index_state::split_index">split_index</a>;</td></tr>
+<tr><th id="18">18</th><td>	<b>if</b> (!<a class="local col5 ref" href="#5si" title='si' data-ref="5si">si</a>) {</td></tr>
+<tr><th id="19">19</th><td>		<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"not a split index\n"</q>);</td></tr>
+<tr><th id="20">20</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="21">21</th><td>	}</td></tr>
+<tr><th id="22">22</th><td>	<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"base %s\n"</q>, <a class="ref" href="../../cache.h.html#sha1_to_hex" title='sha1_to_hex' data-ref="sha1_to_hex">sha1_to_hex</a>(<a class="local col5 ref" href="#5si" title='si' data-ref="5si">si</a>-&gt;<a class="ref" href="../../split-index.h.html#split_index::base_sha1" title='split_index::base_sha1' data-ref="split_index::base_sha1">base_sha1</a>));</td></tr>
+<tr><th id="23">23</th><td>	<b>for</b> (<a class="local col6 ref" href="#6i" title='i' data-ref="6i">i</a> = <var>0</var>; <a class="local col6 ref" href="#6i" title='i' data-ref="6i">i</a> &lt; <a class="ref" href="../../cache.h.html#the_index" title='the_index' data-ref="the_index">the_index</a>.<a class="ref" href="../../cache.h.html#index_state::cache_nr" title='index_state::cache_nr' data-ref="index_state::cache_nr">cache_nr</a>; <a class="local col6 ref" href="#6i" title='i' data-ref="6i">i</a>++) {</td></tr>
+<tr><th id="24">24</th><td>		<b>struct</b> <a class="type" href="../../cache.h.html#cache_entry" title='cache_entry' data-ref="cache_entry">cache_entry</a> *<dfn class="local col7 decl" id="7ce" title='ce' data-type='struct cache_entry *' data-ref="7ce">ce</dfn> = <a class="ref" href="../../cache.h.html#the_index" title='the_index' data-ref="the_index">the_index</a>.<a class="ref" href="../../cache.h.html#index_state::cache" title='index_state::cache' data-ref="index_state::cache">cache</a>[<a class="local col6 ref" href="#6i" title='i' data-ref="6i">i</a>];</td></tr>
+<tr><th id="25">25</th><td>		<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"%06o %s %d\t%s\n"</q>, <a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>-&gt;<a class="ref" href="../../cache.h.html#cache_entry::ce_mode" title='cache_entry::ce_mode' data-ref="cache_entry::ce_mode">ce_mode</a>,</td></tr>
+<tr><th id="26">26</th><td>		       <a class="ref" href="../../cache.h.html#oid_to_hex" title='oid_to_hex' data-ref="oid_to_hex">oid_to_hex</a>(&amp;<a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>-&gt;<a class="ref" href="../../cache.h.html#cache_entry::oid" title='cache_entry::oid' data-ref="cache_entry::oid">oid</a>), <a class="macro" href="../../cache.h.html#267" title="(((0x3000) &amp; (ce)-&gt;ce_flags) &gt;&gt; 12)" data-ref="_M/ce_stage">ce_stage</a>(<a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>), <a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>-&gt;<a class="ref" href="../../cache.h.html#cache_entry::name" title='cache_entry::name' data-ref="cache_entry::name">name</a>);</td></tr>
+<tr><th id="27">27</th><td>	}</td></tr>
+<tr><th id="28">28</th><td>	<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"replacements:"</q>);</td></tr>
+<tr><th id="29">29</th><td>	<b>if</b> (<a class="local col5 ref" href="#5si" title='si' data-ref="5si">si</a>-&gt;<a class="ref" href="../../split-index.h.html#split_index::replace_bitmap" title='split_index::replace_bitmap' data-ref="split_index::replace_bitmap">replace_bitmap</a>)</td></tr>
+<tr><th id="30">30</th><td>		<a class="ref" href="../../ewah/ewok.h.html#ewah_each_bit" title='ewah_each_bit' data-ref="ewah_each_bit">ewah_each_bit</a>(<a class="local col5 ref" href="#5si" title='si' data-ref="5si">si</a>-&gt;<a class="ref" href="../../split-index.h.html#split_index::replace_bitmap" title='split_index::replace_bitmap' data-ref="split_index::replace_bitmap">replace_bitmap</a>, <a class="tu ref" href="#show_bit" title='show_bit' data-use='r' data-ref="show_bit">show_bit</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="31">31</th><td>	<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"\ndeletions:"</q>);</td></tr>
+<tr><th id="32">32</th><td>	<b>if</b> (<a class="local col5 ref" href="#5si" title='si' data-ref="5si">si</a>-&gt;<a class="ref" href="../../split-index.h.html#split_index::delete_bitmap" title='split_index::delete_bitmap' data-ref="split_index::delete_bitmap">delete_bitmap</a>)</td></tr>
+<tr><th id="33">33</th><td>		<a class="ref" href="../../ewah/ewok.h.html#ewah_each_bit" title='ewah_each_bit' data-ref="ewah_each_bit">ewah_each_bit</a>(<a class="local col5 ref" href="#5si" title='si' data-ref="5si">si</a>-&gt;<a class="ref" href="../../split-index.h.html#split_index::delete_bitmap" title='split_index::delete_bitmap' data-ref="split_index::delete_bitmap">delete_bitmap</a>, <a class="tu ref" href="#show_bit" title='show_bit' data-use='r' data-ref="show_bit">show_bit</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="34">34</th><td>	<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"\n"</q>);</td></tr>
+<tr><th id="35">35</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="36">36</th><td>}</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

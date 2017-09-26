@@ -1,0 +1,5 @@
+<def f='codebrowser/utf8.h' l='39' ll='46' type='char * reencode_string(const char * in, const char * out_encoding, const char * in_encoding)'/>
+<use f='codebrowser/builtin/fast-export.c' l='590' u='c' c='handle_commit'/>
+<use f='codebrowser/mailinfo.c' l='436' u='c' c='convert_to_utf8'/>
+<use f='codebrowser/notes.c' l='1244' u='c' c='format_note'/>
+<use f='codebrowser/pretty.c' l='645' u='c' c='logmsg_reencode'/>

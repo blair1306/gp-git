@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs/refs-internal.h' l='196' type='struct ref_update * ref_transaction_add_update(struct ref_transaction * transaction, const char * refname, unsigned int flags, const unsigned char * new_sha1, const unsigned char * old_sha1, const char * msg)'/>
+<def f='codebrowser/refs.c' l='896' ll='923' type='struct ref_update * ref_transaction_add_update(struct ref_transaction * transaction, const char * refname, unsigned int flags, const unsigned char * new_sha1, const unsigned char * old_sha1, const char * msg)'/>
+<use f='codebrowser/refs.c' l='944' u='c' c='ref_transaction_update'/>
+<doc f='codebrowser/refs/refs-internal.h' l='189'>/*
+ * Add a ref_update with the specified properties to transaction, and
+ * return a pointer to the new object. This function does not verify
+ * that refname is well-formed. new_sha1 and old_sha1 are only
+ * dereferenced if the REF_HAVE_NEW and REF_HAVE_OLD bits,
+ * respectively, are set in flags.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2111' u='c' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2169' u='c' c='split_symref_update'/>

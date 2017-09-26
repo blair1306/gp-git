@@ -1,0 +1,7 @@
+<dec f='codebrowser/tar.h' l='17' type='char [100]'/>
+<use f='codebrowser/archive-tar.c' l='293' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='294' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='294' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='299' u='r' c='write_tar_entry'/>
+<offset>1256</offset>
+<doc f='codebrowser/tar.h' l='17'>/* 157 */</doc>

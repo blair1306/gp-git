@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='51' type='char *'/>
+<offset>64</offset>
+<doc f='codebrowser/dir.h' l='50'>/* remember pointer to exclude file contents so we can free() */</doc>
+<use f='codebrowser/dir.c' l='642' u='r' c='clear_exclude_list'/>
+<use f='codebrowser/dir.c' l='816' u='w' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='819' u='r' c='add_excludes'/>

@@ -1,0 +1,22 @@
+<dec f='codebrowser/config.h' l='207' type='int git_config_get_bool(const char * key, int * dest)'/>
+<use f='codebrowser/archive.c' l='501' u='c' c='write_archive'/>
+<use f='codebrowser/builtin/am.c' l='150' u='c' c='am_state_init'/>
+<use f='codebrowser/builtin/am.c' l='154' u='c' c='am_state_init'/>
+<use f='codebrowser/builtin/am.c' l='160' u='c' c='am_state_init'/>
+<use f='codebrowser/builtin/am.c' l='960' u='c' c='split_mail'/>
+<use f='codebrowser/builtin/am.c' l='1855' u='c' c='am_run'/>
+<use f='codebrowser/builtin/gc.c' l='123' u='c' c='gc_config'/>
+<use f='codebrowser/builtin/grep.c' l='912' u='c' c='cmd_grep'/>
+<def f='codebrowser/config.c' l='2047' ll='2050' type='int git_config_get_bool(const char * key, int * dest)'/>
+<use f='codebrowser/credential-cache--daemon.c' l='276' u='c' c='cmd_main'/>
+<use f='codebrowser/daemon.c' l='402' u='c' c='run_service'/>
+<use f='codebrowser/fetch-pack.c' l='1013' u='c' c='fetch_pack_config'/>
+<use f='codebrowser/fetch-pack.c' l='1014' u='c' c='fetch_pack_config'/>
+<use f='codebrowser/fetch-pack.c' l='1015' u='c' c='fetch_pack_config'/>
+<use f='codebrowser/http-backend.c' l='235' u='c' c='http_config'/>
+<use f='codebrowser/http-backend.c' l='241' u='c' c='http_config'/>
+<use f='codebrowser/imap-send.c' l='1329' u='c' c='git_imap_config'/>
+<use f='codebrowser/imap-send.c' l='1330' u='c' c='git_imap_config'/>
+<use f='codebrowser/rerere.c' l='865' u='c' c='git_rerere_config'/>
+<use f='codebrowser/rerere.c' l='866' u='c' c='git_rerere_config'/>
+<use f='codebrowser/t/helper/test-config.c' l='134' u='c' c='cmd_main'/>

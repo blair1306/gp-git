@@ -1,0 +1,17 @@
+<dec f='codebrowser/dir.h' l='67' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/dir.c' l='1078' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1079' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1079' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1079' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1079' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1103' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1129' u='w' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1133' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1134' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1137' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1139' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1142' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1144' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1183' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1206' u='r' c='prep_exclude'/>

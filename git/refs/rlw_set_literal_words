@@ -1,0 +1,5 @@
+<def f='codebrowser/ewah/ewok_rlw.h' l='72' ll='76' type='void rlw_set_literal_words(eword_t * word, eword_t l)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='115' u='c' c='add_literal'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='120' u='c' c='add_literal'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='139' u='c' c='ewah_add_dirty_words'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='241' u='c' c='ewah_set'/>

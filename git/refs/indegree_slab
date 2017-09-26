@@ -1,0 +1,6 @@
+<def f='codebrowser/commit.c' l='587' macro='1'/>
+<size>24</size>
+<mbr r='indegree_slab::slab_size' o='0' t='unsigned int'/>
+<mbr r='indegree_slab::stride' o='32' t='unsigned int'/>
+<mbr r='indegree_slab::slab_count' o='64' t='unsigned int'/>
+<mbr r='indegree_slab::slab' o='128' t='int **'/>

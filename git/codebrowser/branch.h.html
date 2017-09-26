@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>branch.h source code [codebrowser/branch.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/branch.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='branch.h.html'>branch.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/BRANCH_H">BRANCH_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/BRANCH_H" data-ref="_M/BRANCH_H">BRANCH_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/* Functions for acting on the information about branches. */</i></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/*</i></td></tr>
+<tr><th id="7">7</th><td><i> * Creates a new branch, where:</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *   - name is the new branch name</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> *   - start_name is the name of the existing branch that the new branch should</i></td></tr>
+<tr><th id="12">12</th><td><i> *     start from</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> *   - force enables overwriting an existing (non-head) branch</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> *   - reflog creates a reflog for the branch</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> *   - track causes the new branch to be configured to merge the remote branch</i></td></tr>
+<tr><th id="19">19</th><td><i> *     that start_name is a tracking branch for (if any).</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td><em>void</em> <a class="decl" href="branch.c.html#create_branch" title='create_branch' data-ref="create_branch" id="create_branch">create_branch</a>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1name" title='name' data-type='const char *' data-ref="1name">name</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2start_name" title='start_name' data-type='const char *' data-ref="2start_name">start_name</dfn>,</td></tr>
+<tr><th id="22">22</th><td>		   <em>int</em> <dfn class="local col3 decl" id="3force" title='force' data-type='int' data-ref="3force">force</dfn>, <em>int</em> <dfn class="local col4 decl" id="4reflog" title='reflog' data-type='int' data-ref="4reflog">reflog</dfn>,</td></tr>
+<tr><th id="23">23</th><td>		   <em>int</em> <dfn class="local col5 decl" id="5clobber_head" title='clobber_head' data-type='int' data-ref="5clobber_head">clobber_head</dfn>, <em>int</em> <dfn class="local col6 decl" id="6quiet" title='quiet' data-type='int' data-ref="6quiet">quiet</dfn>, <b>enum</b> <a class="type" href="cache.h.html#branch_track" title='branch_track' data-ref="branch_track">branch_track</a> <dfn class="local col7 decl" id="7track" title='track' data-type='enum branch_track' data-ref="7track">track</dfn>);</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i>/*</i></td></tr>
+<tr><th id="26">26</th><td><i> * Validates that the requested branch may be created, returning the</i></td></tr>
+<tr><th id="27">27</th><td><i> * interpreted ref in ref, force indicates whether (non-head) branches</i></td></tr>
+<tr><th id="28">28</th><td><i> * may be overwritten. A non-zero return value indicates that the force</i></td></tr>
+<tr><th id="29">29</th><td><i> * parameter was non-zero and the branch already exists.</i></td></tr>
+<tr><th id="30">30</th><td><i> *</i></td></tr>
+<tr><th id="31">31</th><td><i> * Contrary to all of the above, when attr_only is 1, the caller is</i></td></tr>
+<tr><th id="32">32</th><td><i> * not interested in verifying if it is Ok to update the named</i></td></tr>
+<tr><th id="33">33</th><td><i> * branch to point at a potentially different commit. It is merely</i></td></tr>
+<tr><th id="34">34</th><td><i> * asking if it is OK to change some attribute for the named branch</i></td></tr>
+<tr><th id="35">35</th><td><i> * (e.g. tracking upstream).</i></td></tr>
+<tr><th id="36">36</th><td><i> *</i></td></tr>
+<tr><th id="37">37</th><td><i> * NEEDSWORK: This needs to be split into two separate functions in the</i></td></tr>
+<tr><th id="38">38</th><td><i> * longer run for sanity.</i></td></tr>
+<tr><th id="39">39</th><td><i> *</i></td></tr>
+<tr><th id="40">40</th><td><i> */</i></td></tr>
+<tr><th id="41">41</th><td><em>int</em> <a class="decl" href="branch.c.html#validate_new_branchname" title='validate_new_branchname' data-ref="validate_new_branchname" id="validate_new_branchname">validate_new_branchname</a>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8name" title='name' data-type='const char *' data-ref="8name">name</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col9 decl" id="9ref" title='ref' data-type='struct strbuf *' data-ref="9ref">ref</dfn>, <em>int</em> <dfn class="local col0 decl" id="10force" title='force' data-type='int' data-ref="10force">force</dfn>, <em>int</em> <dfn class="local col1 decl" id="11attr_only" title='attr_only' data-type='int' data-ref="11attr_only">attr_only</dfn>);</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><i>/*</i></td></tr>
+<tr><th id="44">44</th><td><i> * Remove information about the state of working on the current</i></td></tr>
+<tr><th id="45">45</th><td><i> * branch. (E.g., MERGE_HEAD)</i></td></tr>
+<tr><th id="46">46</th><td><i> */</i></td></tr>
+<tr><th id="47">47</th><td><em>void</em> <a class="decl" href="branch.c.html#remove_branch_state" title='remove_branch_state' data-ref="remove_branch_state" id="remove_branch_state">remove_branch_state</a>(<em>void</em>);</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><i>/*</i></td></tr>
+<tr><th id="50">50</th><td><i> * Configure local branch "local" as downstream to branch "remote"</i></td></tr>
+<tr><th id="51">51</th><td><i> * from remote "origin".  Used by git branch --set-upstream.</i></td></tr>
+<tr><th id="52">52</th><td><i> * Returns 0 on success.</i></td></tr>
+<tr><th id="53">53</th><td><i> */</i></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/BRANCH_CONFIG_VERBOSE" data-ref="_M/BRANCH_CONFIG_VERBOSE">BRANCH_CONFIG_VERBOSE</dfn> 01</u></td></tr>
+<tr><th id="55">55</th><td><b>extern</b> <em>int</em> <a class="decl" href="branch.c.html#install_branch_config" title='install_branch_config' data-ref="install_branch_config" id="install_branch_config">install_branch_config</a>(<em>int</em> <dfn class="local col2 decl" id="12flag" title='flag' data-type='int' data-ref="12flag">flag</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="13local" title='local' data-type='const char *' data-ref="13local">local</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="14origin" title='origin' data-type='const char *' data-ref="14origin">origin</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="15remote" title='remote' data-type='const char *' data-ref="15remote">remote</dfn>);</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><i>/*</i></td></tr>
+<tr><th id="58">58</th><td><i> * Read branch description</i></td></tr>
+<tr><th id="59">59</th><td><i> */</i></td></tr>
+<tr><th id="60">60</th><td><b>extern</b> <em>int</em> <a class="decl" href="branch.c.html#read_branch_desc" title='read_branch_desc' data-ref="read_branch_desc" id="read_branch_desc">read_branch_desc</a>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="16branch_name" title='branch_name' data-type='const char *' data-ref="16branch_name">branch_name</dfn>);</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><i>/*</i></td></tr>
+<tr><th id="63">63</th><td><i> * Check if a branch is checked out in the main worktree or any linked</i></td></tr>
+<tr><th id="64">64</th><td><i> * worktree and die (with a message describing its checkout location) if</i></td></tr>
+<tr><th id="65">65</th><td><i> * it is.</i></td></tr>
+<tr><th id="66">66</th><td><i> */</i></td></tr>
+<tr><th id="67">67</th><td><b>extern</b> <em>void</em> <a class="decl" href="branch.c.html#die_if_checked_out" title='die_if_checked_out' data-ref="die_if_checked_out" id="die_if_checked_out">die_if_checked_out</a>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="17branch" title='branch' data-type='const char *' data-ref="17branch">branch</dfn>, <em>int</em> <dfn class="local col8 decl" id="18ignore_current_worktree" title='ignore_current_worktree' data-type='int' data-ref="18ignore_current_worktree">ignore_current_worktree</dfn>);</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i>/*</i></td></tr>
+<tr><th id="70">70</th><td><i> * Update all per-worktree HEADs pointing at the old ref to point the new ref.</i></td></tr>
+<tr><th id="71">71</th><td><i> * This will be used when renaming a branch. Returns 0 if successful, non-zero</i></td></tr>
+<tr><th id="72">72</th><td><i> * otherwise.</i></td></tr>
+<tr><th id="73">73</th><td><i> */</i></td></tr>
+<tr><th id="74">74</th><td><b>extern</b> <em>int</em> <a class="decl" href="branch.c.html#replace_each_worktree_head_symref" title='replace_each_worktree_head_symref' data-ref="replace_each_worktree_head_symref" id="replace_each_worktree_head_symref">replace_each_worktree_head_symref</a>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="19oldref" title='oldref' data-type='const char *' data-ref="19oldref">oldref</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="20newref" title='newref' data-type='const char *' data-ref="20newref">newref</dfn>,</td></tr>
+<tr><th id="75">75</th><td>					     <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="21logmsg" title='logmsg' data-type='const char *' data-ref="21logmsg">logmsg</dfn>);</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='branch.c.html'>codebrowser/branch.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/strbuf.h' l='169' type='void strbuf_rtrim(struct strbuf * )'/>
+<use f='codebrowser/builtin/notes.c' l='303' u='c' c='notes_copy_from_stdin'/>
+<use f='codebrowser/builtin/notes.c' l='304' u='c' c='notes_copy_from_stdin'/>
+<use f='codebrowser/builtin/notes.c' l='926' u='c' c='remove_cmd'/>
+<use f='codebrowser/bundle.c' l='51' u='c' c='parse_bundle_header'/>
+<use f='codebrowser/http-push.c' l='1550' u='c' c='fetch_symref'/>
+<use f='codebrowser/http.c' l='596' u='c' c='curl_dump_header'/>
+<use f='codebrowser/http.c' l='1867' u='c' c='http_fetch_ref'/>
+<use f='codebrowser/mailinfo.c' l='872' u='c' c='read_one_header_line'/>
+<use f='codebrowser/mailinfo.c' l='895' u='c' c='read_one_header_line'/>
+<use f='codebrowser/pretty.c' l='1824' u='c' c='pretty_print_commit'/>
+<use f='codebrowser/refs/files-backend.c' l='384' u='c' c='files_read_raw_ref'/>
+<use f='codebrowser/remote.c' l='271' u='c' c='read_remotes_file'/>
+<use f='codebrowser/strbuf.c' l='73' u='c' c='strbuf_trim'/>
+<def f='codebrowser/strbuf.c' l='76' ll='81' type='void strbuf_rtrim(struct strbuf * sb)'/>
+<use f='codebrowser/worktree.c' l='85' u='c' c='get_linked_worktree'/>

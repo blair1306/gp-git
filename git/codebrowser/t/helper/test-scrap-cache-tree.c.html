@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>test-scrap-cache-tree.c source code [codebrowser/t/helper/test-scrap-cache-tree.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/t/helper/test-scrap-cache-tree.c'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>t</a>/<a href='./'>helper</a>/<a href='test-scrap-cache-tree.c.html'>test-scrap-cache-tree.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../../lockfile.h.html">"lockfile.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../tree.h.html">"tree.h"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../../cache-tree.h.html">"cache-tree.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><em>static</em> <b>struct</b> <a class="type" href="../../lockfile.h.html#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> <dfn class="tu decl def" id="index_lock" title='index_lock' data-type='struct lock_file' data-ref="index_lock">index_lock</dfn>;</td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><em>int</em> <dfn class="decl def" id="cmd_main" title='cmd_main' data-ref="cmd_main">cmd_main</dfn>(<em>int</em> <dfn class="local col1 decl" id="1ac" title='ac' data-type='int' data-ref="1ac">ac</dfn>, <em>const</em> <em>char</em> **<dfn class="local col2 decl" id="2av" title='av' data-type='const char **' data-ref="2av">av</dfn>)</td></tr>
+<tr><th id="9">9</th><td>{</td></tr>
+<tr><th id="10">10</th><td>	<a class="ref" href="../../cache.h.html#setup_git_directory" title='setup_git_directory' data-ref="setup_git_directory">setup_git_directory</a>();</td></tr>
+<tr><th id="11">11</th><td>	<a class="ref" href="../../cache.h.html#hold_locked_index" title='hold_locked_index' data-ref="hold_locked_index">hold_locked_index</a>(&amp;<a class="tu ref" href="#index_lock" title='index_lock' data-use='a' data-ref="index_lock">index_lock</a>, <a class="macro" href="../../lockfile.h.html#134" title="1" data-ref="_M/LOCK_DIE_ON_ERROR">LOCK_DIE_ON_ERROR</a>);</td></tr>
+<tr><th id="12">12</th><td>	<b>if</b> (<a class="macro" href="../../cache.h.html#365" title="read_index(&amp;the_index)" data-ref="_M/read_cache">read_cache</a>() &lt; <var>0</var>)</td></tr>
+<tr><th id="13">13</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"unable to read index file"</q>);</td></tr>
+<tr><th id="14">14</th><td>	<a class="macro" href="../../cache.h.html#363" title="(the_index.cache_tree)" data-ref="_M/active_cache_tree">active_cache_tree</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="15">15</th><td>	<b>if</b> (<a class="ref" href="../../cache.h.html#write_locked_index" title='write_locked_index' data-ref="write_locked_index">write_locked_index</a>(&amp;<a class="ref" href="../../cache.h.html#the_index" title='the_index' data-ref="the_index">the_index</a>, &amp;<a class="tu ref" href="#index_lock" title='index_lock' data-use='a' data-ref="index_lock">index_lock</a>, <a class="macro" href="../../cache.h.html#603" title="(1 &lt;&lt; 0)" data-ref="_M/COMMIT_LOCK">COMMIT_LOCK</a>))</td></tr>
+<tr><th id="16">16</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"unable to write index file"</q>);</td></tr>
+<tr><th id="17">17</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="18">18</th><td>}</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

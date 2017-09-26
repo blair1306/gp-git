@@ -1,0 +1,4 @@
+<dec f='codebrowser/column.h' l='16'/>
+<use f='codebrowser/builtin/clean.c' l='287' u='c'/>
+<use f='codebrowser/column.c' l='212' u='c'/>
+<use f='codebrowser/column.c' l='251' u='c'/>

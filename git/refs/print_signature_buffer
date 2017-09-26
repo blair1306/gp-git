@@ -1,0 +1,4 @@
+<dec f='codebrowser/gpg-interface.h' l='36' type='void print_signature_buffer(const struct signature_check * sigc, unsigned int flags)'/>
+<use f='codebrowser/builtin/verify-commit.c' l='30' u='c' c='run_gpg_verify'/>
+<def f='codebrowser/gpg-interface.c' l='92' ll='102' type='void print_signature_buffer(const struct signature_check * sigc, unsigned int flags)'/>
+<use f='codebrowser/tag.c' l='30' u='c' c='run_gpg_verify'/>

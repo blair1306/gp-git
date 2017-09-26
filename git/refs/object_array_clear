@@ -1,0 +1,9 @@
+<dec f='codebrowser/object.h' l='139' type='void object_array_clear(struct object_array * array)'/>
+<doc f='codebrowser/object.h' l='135'>/*
+ * Remove any objects from the array, freeing all used memory; afterwards
+ * the array is ready to store more objects with add_object_array().
+ */</doc>
+<use f='codebrowser/list-objects.c' l='232' u='c' c='traverse_commit_list'/>
+<def f='codebrowser/object.c' l='374' ll='381' type='void object_array_clear(struct object_array * array)'/>
+<use f='codebrowser/revision.c' l='2786' u='c' c='prepare_revision_walk'/>
+<use f='codebrowser/upload-pack.c' l='707' u='c' c='deepen'/>

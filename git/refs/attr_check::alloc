@@ -1,0 +1,12 @@
+<dec f='codebrowser/attr.h' l='38' type='int'/>
+<offset>32</offset>
+<use f='codebrowser/attr.c' l='590' u='w' c='attr_check_initl'/>
+<use f='codebrowser/attr.c' l='620' u='w' c='attr_check_dup'/>
+<use f='codebrowser/attr.c' l='620' u='r' c='attr_check_dup'/>
+<use f='codebrowser/attr.c' l='632' u='r' c='attr_check_append'/>
+<use f='codebrowser/attr.c' l='632' u='r' c='attr_check_append'/>
+<use f='codebrowser/attr.c' l='632' u='w' c='attr_check_append'/>
+<use f='codebrowser/attr.c' l='632' u='w' c='attr_check_append'/>
+<use f='codebrowser/attr.c' l='632' u='r' c='attr_check_append'/>
+<use f='codebrowser/attr.c' l='632' u='r' c='attr_check_append'/>
+<use f='codebrowser/attr.c' l='646' u='w' c='attr_check_clear'/>

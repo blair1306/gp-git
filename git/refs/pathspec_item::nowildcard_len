@@ -1,0 +1,28 @@
+<dec f='codebrowser/pathspec.h' l='34' type='int'/>
+<offset>224</offset>
+<use f='codebrowser/builtin/ls-tree.c' l='182' u='w' c='cmd_ls_tree'/>
+<use f='codebrowser/dir.c' l='159' u='r' c='common_prefix_len'/>
+<use f='codebrowser/dir.c' l='328' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='330' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='342' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='344' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='1435' u='r' c='simplify_away'/>
+<use f='codebrowser/dir.c' l='1475' u='r' c='exclude_matches_pathspec'/>
+<use f='codebrowser/pathspec.c' l='466' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='468' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='469' u='r' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='470' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='480' u='r' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='481' u='r' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='482' u='r' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='487' u='r' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='565' u='w' c='parse_pathspec'/>
+<use f='codebrowser/pathspec.c' l='602' u='r' c='parse_pathspec'/>
+<use f='codebrowser/tree-walk.c' l='888' u='r' c='match_wildcard_base'/>
+<use f='codebrowser/tree-walk.c' l='996' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='998' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1018' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1026' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1029' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1052' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1066' u='r' c='do_match'/>

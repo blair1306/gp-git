@@ -1,0 +1,31 @@
+<dec f='include/unistd.h' l='782' type='int isatty(int __fd)'/>
+<doc f='include/unistd.h' l='780'>/* Return 1 if FD is a valid descriptor associated
+   with a terminal, zero if not.  */</doc>
+<use f='codebrowser/builtin/am.c' l='1722' u='c' c='do_interactive'/>
+<use f='codebrowser/builtin/am.c' l='2326' u='c' c='cmd_am'/>
+<use f='codebrowser/builtin/blame.c' l='747' u='c' c='cmd_blame'/>
+<use f='codebrowser/builtin/checkout.c' l='1197' u='c' c='cmd_checkout'/>
+<use f='codebrowser/builtin/commit.c' l='704' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/fsck.c' l='678' u='c' c='cmd_fsck'/>
+<use f='codebrowser/builtin/log.c' l='59' u='c' c='auto_decoration_style'/>
+<use f='codebrowser/builtin/merge.c' l='669' u='c' c='try_merge_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='956' u='c' c='default_edit_option'/>
+<use f='codebrowser/builtin/merge.c' l='956' u='c' c='default_edit_option'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2956' u='c' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='650' u='c' c='cmd_pack_redundant'/>
+<use f='codebrowser/builtin/prune-packed.c' l='52' u='c' c='cmd_prune_packed'/>
+<use f='codebrowser/builtin/prune.c' l='139' u='c' c='cmd_prune'/>
+<use f='codebrowser/builtin/repack.c' l='425' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/revert.c' l='208' u='c' c='cmd_revert'/>
+<use f='codebrowser/builtin/send-pack.c' l='247' u='c' c='cmd_send_pack'/>
+<use f='codebrowser/builtin/shortlog.c' l='291' u='c' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/shortlog.c' l='294' u='c' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='515' u='c' c='cmd_unpack_objects'/>
+<use f='codebrowser/color.c' l='330' u='c' c='check_auto_color'/>
+<use f='codebrowser/column.c' l='225' u='c' c='finalize_colopts'/>
+<use f='codebrowser/pager.c' l='106' u='c' c='setup_pager'/>
+<use f='codebrowser/pager.c' l='128' u='c' c='setup_pager'/>
+<use f='codebrowser/remote-curl.c' l='1042' u='c' c='cmd_main'/>
+<use f='codebrowser/sideband.c' l='29' u='c' c='recv_sideband'/>
+<use f='codebrowser/transport.c' l='762' u='c' c='transport_get'/>
+<use f='codebrowser/transport.c' l='883' u='c' c='transport_set_verbosity'/>

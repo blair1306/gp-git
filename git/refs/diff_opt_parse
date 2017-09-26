@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='281' type='int diff_opt_parse(struct diff_options * , const char ** , int , const char * )'/>
+<use f='codebrowser/builtin/am.c' l='1588' u='c' c='fall_back_threeway'/>
+<use f='codebrowser/diff-no-index.c' l='252' u='c' c='diff_no_index'/>
+<def f='codebrowser/diff.c' l='3783' ll='4074' type='int diff_opt_parse(struct diff_options * options, const char ** av, int ac, const char * prefix)'/>
+<use f='codebrowser/revision.c' l='2046' u='c' c='handle_revision_opt'/>

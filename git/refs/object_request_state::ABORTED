@@ -1,0 +1,4 @@
+<dec f='codebrowser/http-walker.c' l='17' type='1'/>
+<use f='codebrowser/http-walker.c' l='60' u='r' c='start_object_request'/>
+<use f='codebrowser/http-walker.c' l='72' u='r' c='start_object_request'/>
+<use f='codebrowser/http-walker.c' l='530' u='r' c='fetch_object'/>

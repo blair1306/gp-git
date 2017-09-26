@@ -1,0 +1,13 @@
+<dec f='codebrowser/csum-file.h' l='14' type='const char *'/>
+<offset>19456</offset>
+<use f='codebrowser/csum-file.c' l='21' u='r' c='flush'/>
+<use f='codebrowser/csum-file.c' l='23' u='r' c='flush'/>
+<use f='codebrowser/csum-file.c' l='25' u='r' c='flush'/>
+<use f='codebrowser/csum-file.c' l='40' u='r' c='flush'/>
+<use f='codebrowser/csum-file.c' l='41' u='r' c='flush'/>
+<use f='codebrowser/csum-file.c' l='68' u='r' c='sha1close'/>
+<use f='codebrowser/csum-file.c' l='70' u='r' c='sha1close'/>
+<use f='codebrowser/csum-file.c' l='79' u='r' c='sha1close'/>
+<use f='codebrowser/csum-file.c' l='81' u='r' c='sha1close'/>
+<use f='codebrowser/csum-file.c' l='83' u='r' c='sha1close'/>
+<use f='codebrowser/csum-file.c' l='150' u='w' c='sha1fd_throughput'/>

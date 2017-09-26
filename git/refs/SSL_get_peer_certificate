@@ -1,0 +1,2 @@
+<dec f='include/openssl/ssl.h' l='2253' type='X509 * SSL_get_peer_certificate(const SSL * s)'/>
+<use f='codebrowser/imap-send.c' l='346' u='c' c='ssl_socket_connect'/>

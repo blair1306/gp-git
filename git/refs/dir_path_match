@@ -1,0 +1,7 @@
+<def f='codebrowser/dir.h' l='334' ll='342' type='int dir_path_match(const struct dir_entry * ent, const struct pathspec * pathspec, int prefix, char * seen)'/>
+<use f='codebrowser/builtin/add.c' l='136' u='c' c='prune_directory'/>
+<use f='codebrowser/builtin/clean.c' l='980' u='c' c='cmd_clean'/>
+<use f='codebrowser/builtin/grep.c' l='672' u='c' c='grep_directory'/>
+<use f='codebrowser/builtin/ls-files.c' l='128' u='c' c='show_dir_entry'/>
+<use f='codebrowser/wt-status.c' l='674' u='c' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='682' u='c' c='wt_status_collect_untracked'/>

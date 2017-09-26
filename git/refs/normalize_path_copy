@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1136' type='int normalize_path_copy(char * dst, const char * src)'/>
+<use f='codebrowser/builtin/clone.c' l='376' u='c' c='copy_alternates'/>
+<def f='codebrowser/path.c' l='1164' ll='1167' type='int normalize_path_copy(char * dst, const char * src)'/>
+<use f='codebrowser/refs.c' l='164' u='c' c='refname_is_safe'/>
+<use f='codebrowser/strbuf.c' l='927' u='c' c='strbuf_normalize_path'/>
+<use f='codebrowser/t/helper/test-path-utils.c' l='17' u='c' c='normalize_ceiling_entry'/>
+<use f='codebrowser/t/helper/test-path-utils.c' l='177' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-path-utils.c' l='217' u='c' c='cmd_main'/>

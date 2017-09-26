@@ -1,0 +1,2 @@
+<def f='codebrowser/pathspec.h' l='90' ll='97' type='int ps_strcmp(const struct pathspec_item * item, const char * s1, const char * s2)'/>
+<use f='codebrowser/dir.c' l='89' u='c' c='git_fnmatch'/>

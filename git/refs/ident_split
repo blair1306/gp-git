@@ -1,0 +1,10 @@
+<def f='codebrowser/cache.h' l='1458' ll='1467'/>
+<size>64</size>
+<mbr r='ident_split::name_begin' o='0' t='const char *'/>
+<mbr r='ident_split::name_end' o='64' t='const char *'/>
+<mbr r='ident_split::mail_begin' o='128' t='const char *'/>
+<mbr r='ident_split::mail_end' o='192' t='const char *'/>
+<mbr r='ident_split::date_begin' o='256' t='const char *'/>
+<mbr r='ident_split::date_end' o='320' t='const char *'/>
+<mbr r='ident_split::tz_begin' o='384' t='const char *'/>
+<mbr r='ident_split::tz_end' o='448' t='const char *'/>

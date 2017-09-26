@@ -1,0 +1,5 @@
+<def f='codebrowser/dir.c' l='38' ll='47'/>
+<size>48</size>
+<doc f='codebrowser/dir.c' l='35'>/*
+ * Support data structure for our opendir/readdir/closedir wrappers
+ */</doc>

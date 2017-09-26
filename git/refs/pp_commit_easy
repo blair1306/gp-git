@@ -1,0 +1,6 @@
+<dec f='codebrowser/commit.h' l='196' type='void pp_commit_easy(enum cmit_fmt fmt, const struct commit * commit, struct strbuf * sb)'/>
+<use f='codebrowser/builtin/checkout.c' l='406' u='c' c='describe_detached_head'/>
+<use f='codebrowser/builtin/checkout.c' l='721' u='c' c='describe_one_orphan'/>
+<use f='codebrowser/builtin/log.c' l='1868' u='c' c='print_commit'/>
+<use f='codebrowser/builtin/show-branch.c' l='277' u='c' c='show_one_commit'/>
+<def f='codebrowser/pretty.c' l='1841' ll='1847' type='void pp_commit_easy(enum cmit_fmt fmt, const struct commit * commit, struct strbuf * sb)'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/xdiff/xdiff.h' l='71' ll='74'/>
+<size>16</size>
+<mbr r='s_mmfile::ptr' o='0' t='char *'/>
+<mbr r='s_mmfile::size' o='64' t='long'/>

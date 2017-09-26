@@ -1,0 +1,6 @@
+<def f='codebrowser/grep.h' l='228' ll='232' type='void grep_read_lock()'/>
+<use f='codebrowser/builtin/grep.c' l='309' u='c' c='lock_and_read_oid_file'/>
+<use f='codebrowser/builtin/grep.c' l='445' u='c' c='grep_submodule'/>
+<use f='codebrowser/builtin/grep.c' l='607' u='c' c='grep_object'/>
+<use f='codebrowser/grep.c' l='1611' u='c' c='fill_textconv_grep'/>
+<use f='codebrowser/grep.c' l='1965' u='c' c='grep_source_load_oid'/>

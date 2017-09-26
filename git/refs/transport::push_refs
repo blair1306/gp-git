@@ -1,0 +1,22 @@
+<dec f='codebrowser/transport.h' l='105' type='int (*)(struct transport *, struct ref *, int)'/>
+<offset>576</offset>
+<doc f='codebrowser/transport.h' l='91'>/**
+	 * Push the objects and refs. Send the necessary objects, and
+	 * then, for any refs where peer_ref is set and
+	 * peer_ref-&gt;new_oid is different from old_oid, tell the
+	 * remote side to update each ref in the list from old_oid to
+	 * peer_ref-&gt;new_oid.
+	 *
+	 * Where possible, set the status for each ref appropriately.
+	 *
+	 * The transport must modify new_sha1 in the ref to the new
+	 * value if the remote accepted the change. Note that this
+	 * could be a different value from peer_ref-&gt;new_oid if the
+	 * process involved generating new commits.
+	 **/</doc>
+<use f='codebrowser/transport-helper.c' l='990' u='r' c='push_refs'/>
+<use f='codebrowser/transport-helper.c' l='1101' u='w' c='transport_helper_init'/>
+<use f='codebrowser/transport.c' l='633' u='w' c='transport_take_over'/>
+<use f='codebrowser/transport.c' l='813' u='w' c='transport_get'/>
+<use f='codebrowser/transport.c' l='980' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1068' u='r' c='transport_push'/>

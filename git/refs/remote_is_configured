@@ -1,0 +1,10 @@
+<dec f='codebrowser/remote.h' l='63' type='int remote_is_configured(struct remote * remote, int in_repo)'/>
+<use f='codebrowser/builtin/fetch.c' l='1203' u='c' c='add_remote_or_group'/>
+<use f='codebrowser/builtin/remote.c' l='190' u='c' c='add'/>
+<use f='codebrowser/builtin/remote.c' l='622' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='629' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='757' u='c' c='rm'/>
+<use f='codebrowser/builtin/remote.c' l='1424' u='c' c='set_remote_branches'/>
+<use f='codebrowser/builtin/remote.c' l='1478' u='c' c='get_url'/>
+<use f='codebrowser/builtin/remote.c' l='1546' u='c' c='set_url'/>
+<def f='codebrowser/remote.c' l='718' ll='725' type='int remote_is_configured(struct remote * remote, int in_repo)'/>

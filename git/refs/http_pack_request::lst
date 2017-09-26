@@ -1,0 +1,5 @@
+<dec f='codebrowser/http.h' l='201' type='struct packed_git **'/>
+<offset>128</offset>
+<use f='codebrowser/http-push.c' l='322' u='w' c='start_fetch_packed'/>
+<use f='codebrowser/http-walker.c' l='442' u='w' c='http_fetch_pack'/>
+<use f='codebrowser/http.c' l='2015' u='r' c='finish_http_pack_request'/>

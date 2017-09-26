@@ -1,0 +1,4 @@
+<dec f='include/unistd.h' l='622' type='long sysconf(int __name)'/>
+<doc f='include/unistd.h' l='621'>/* Get the value of the system variable NAME.  */</doc>
+<use f='codebrowser/sha1_file.c' l='1103' u='c' c='get_max_fd_limit'/>
+<use f='codebrowser/thread-utils.c' l='57' u='c' c='online_cpus'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/revision.h' l='90' type='unsigned int'/>
+<offset>930</offset>
+<use f='codebrowser/revision.c' l='535' u='r' c='compact_treesame'/>
+<use f='codebrowser/revision.c' l='585' u='r' c='limiting_can_increase_treesame'/>
+<use f='codebrowser/revision.c' l='616' u='r' c='try_to_simplify_commit'/>
+<use f='codebrowser/revision.c' l='1349' u='w' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1797' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1799' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='3000' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='3086' u='r' c='simplify_commit'/>

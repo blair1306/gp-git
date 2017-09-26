@@ -1,0 +1,9 @@
+<dec f='codebrowser/commit-slab.h' l='149'/>
+<use f='codebrowser/commit.c' l='237' u='c'/>
+<doc f='codebrowser/commit-slab.h' l='142'>/*
+ * Statically initialize a commit slab named &quot;var&quot;. Note that this
+ * evaluates &quot;stride&quot; multiple times! Example:
+ *
+ *   struct indegree indegrees = COMMIT_SLAB_INIT(1, indegrees);
+ *
+ */</doc>

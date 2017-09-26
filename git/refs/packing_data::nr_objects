@@ -1,0 +1,29 @@
+<dec f='codebrowser/pack-objects.h' l='47' type='uint32_t'/>
+<use f='codebrowser/builtin/pack-objects.c' l='643' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='655' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='673' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='674' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='684' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='692' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='702' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='711' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='716' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='717' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='790' u='r' c='write_pack_file'/>
+<use f='codebrowser/builtin/pack-objects.c' l='813' u='r' c='write_pack_file'/>
+<use f='codebrowser/builtin/pack-objects.c' l='897' u='r' c='write_pack_file'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1700' u='r' c='get_object_details'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1701' u='r' c='get_object_details'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1703' u='r' c='get_object_details'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1705' u='r' c='get_object_details'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1716' u='r' c='get_object_details'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2391' u='r' c='prepare_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2394' u='r' c='prepare_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2397' u='r' c='prepare_pack'/>
+<offset>64</offset>
+<use f='codebrowser/pack-objects.c' l='45' u='r' c='rehash_objects'/>
+<use f='codebrowser/pack-objects.c' l='54' u='r' c='rehash_objects'/>
+<use f='codebrowser/pack-objects.c' l='95' u='r' c='packlist_alloc'/>
+<use f='codebrowser/pack-objects.c' l='100' u='w' c='packlist_alloc'/>
+<use f='codebrowser/pack-objects.c' l='105' u='r' c='packlist_alloc'/>
+<use f='codebrowser/pack-objects.c' l='108' u='r' c='packlist_alloc'/>

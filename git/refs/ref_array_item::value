@@ -1,0 +1,10 @@
+<dec f='codebrowser/ref-filter.h' l='42' type='struct atom_value *'/>
+<offset>384</offset>
+<use f='codebrowser/ref-filter.c' l='1317' u='w' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1331' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1425' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1440' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1470' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1481' u='r' c='get_ref_atom_value'/>
+<use f='codebrowser/ref-filter.c' l='1483' u='r' c='get_ref_atom_value'/>
+<use f='codebrowser/ref-filter.c' l='1485' u='r' c='get_ref_atom_value'/>

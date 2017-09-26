@@ -1,0 +1,6 @@
+<def f='codebrowser/ref-filter.c' l='363' ll='368'/>
+<size>32</size>
+<mbr r='atom_value::s' o='0' t='const char *'/>
+<mbr r='atom_value::handler' o='64' t='void (*)(struct atom_value *, struct ref_formatting_state *)'/>
+<mbr r='atom_value::value' o='128' t='uintmax_t'/>
+<mbr r='atom_value::atom' o='192' t='struct used_atom *'/>

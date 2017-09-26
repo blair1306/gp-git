@@ -1,0 +1,7 @@
+<dec f='codebrowser/refs.h' l='453' type='0'/>
+<use f='codebrowser/builtin/reset.c' l='259' u='r' c='reset_refs'/>
+<use f='codebrowser/builtin/reset.c' l='264' u='r' c='reset_refs'/>
+<use f='codebrowser/refs.c' l='1021' c='refs_update_ref'/>
+<use f='codebrowser/sequencer.c' l='1118' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1122' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='2124' u='r' c='pick_commits'/>

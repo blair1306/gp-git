@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='673' type='8'/>
+<use f='codebrowser/builtin/reflog.c' l='552' u='r' c='cmd_reflog_expire'/>
+<use f='codebrowser/builtin/reflog.c' l='642' u='r' c='cmd_reflog_delete'/>
+<use f='codebrowser/refs/files-backend.c' l='2739' u='r' c='expire_reflog_ent'/>

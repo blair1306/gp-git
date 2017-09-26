@@ -1,0 +1,4 @@
+<dec f='codebrowser/line-range.h' l='22' type='int parse_range_arg(const char * arg, nth_line_fn_t nth_line_cb, void * cb_data, long lines, long anchor, long * begin, long * end, const char * path)'/>
+<use f='codebrowser/builtin/blame.c' l='877' u='c' c='cmd_blame'/>
+<use f='codebrowser/line-log.c' l='598' u='c' c='parse_lines'/>
+<def f='codebrowser/line-range.c' l='245' ll='276' type='int parse_range_arg(const char * arg, nth_line_fn_t nth_line_cb, void * cb_data, long lines, long anchor, long * begin, long * end, const char * path)'/>

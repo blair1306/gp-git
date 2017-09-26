@@ -1,0 +1,4 @@
+<def f='codebrowser/pack-objects.h' l='61' ll='79' type='uint32_t pack_name_hash(const char * name)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1091' u='c' c='add_object_entry'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1311' u='c' c='add_preferred_base_object'/>
+<use f='codebrowser/pack-bitmap.c' l='407' u='c' c='ext_index_add_object'/>

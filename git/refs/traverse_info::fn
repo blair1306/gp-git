@@ -1,0 +1,5 @@
+<dec f='codebrowser/tree-walk.h' l='77' type='traverse_callback_t'/>
+<offset>512</offset>
+<use f='codebrowser/builtin/merge-tree.c' l='344' u='w' c='merge_trees'/>
+<use f='codebrowser/tree-walk.c' l='467' u='r' c='traverse_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1295' u='w' c='unpack_trees'/>

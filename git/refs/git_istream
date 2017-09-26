@@ -1,0 +1,7 @@
+<def f='codebrowser/streaming.c' l='66' ll='93'/>
+<size>32992</size>
+<mbr r='git_istream::vtbl' o='0' t='const struct stream_vtbl *'/>
+<mbr r='git_istream::size' o='64' t='unsigned long'/>
+<mbr r='git_istream::z' o='128' t='git_zstream'/>
+<mbr r='git_istream::z_state' o='1408' t='enum (anonymous enum at /home/jon/workspace/git/streaming.c:70:2)'/>
+<mbr r='git_istream::u' o='1472' t='union (anonymous union at /home/jon/workspace/git/streaming.c:72:2)'/>

@@ -1,0 +1,21 @@
+<dec f='codebrowser/tempfile.h' l='262' type='void delete_tempfile(struct tempfile * tempfile)'/>
+<use f='codebrowser/lockfile.h' l='304' u='c' c='rollback_lock_file'/>
+<doc f='codebrowser/tempfile.h' l='256'>/*
+ * Close the file descriptor and/or file pointer and remove the
+ * temporary file associated with `tempfile`. It is a NOOP to call
+ * `delete_tempfile()` for a `tempfile` object that has already been
+ * deleted or renamed.
+ */</doc>
+<use f='codebrowser/builtin/gc.c' l='421' u='c' c='cmd_gc'/>
+<use f='codebrowser/credential-cache--daemon.c' l='294' u='c' c='cmd_main'/>
+<use f='codebrowser/diff.c' l='692' u='c' c='remove_tempfile'/>
+<use f='codebrowser/gpg-interface.c' l='215' u='c' c='verify_signed_buffer'/>
+<use f='codebrowser/gpg-interface.c' l='235' u='c' c='verify_signed_buffer'/>
+<use f='codebrowser/read-cache.c' l='2430' u='c' c='write_shared_index'/>
+<use f='codebrowser/read-cache.c' l='2437' u='c' c='write_shared_index'/>
+<use f='codebrowser/refs/packed-backend.c' l='682' u='c' c='commit_packed_refs'/>
+<use f='codebrowser/tempfile.c' l='70' u='c' c='remove_tempfiles'/>
+<use f='codebrowser/tempfile.c' l='138' u='c' c='create_tempfile'/>
+<use f='codebrowser/tempfile.c' l='263' u='c' c='close_tempfile'/>
+<use f='codebrowser/tempfile.c' l='291' u='c' c='rename_tempfile'/>
+<def f='codebrowser/tempfile.c' l='301' ll='311' type='void delete_tempfile(struct tempfile * tempfile)'/>

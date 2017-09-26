@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1710' type='const struct object_id * nth_packed_object_oid(struct object_id * , struct packed_git * , uint32_t n)'/>
+<doc f='codebrowser/cache.h' l='1705'>/*
+ * Like nth_packed_object_sha1, but write the data into the object specified by
+ * the the first argument.  Returns the first argument on success, and NULL on
+ * error.
+ */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='2712' u='c' c='loosen_unused_packed_objects'/>
+<def f='codebrowser/sha1_file.c' l='2717' ll='2726' type='const struct object_id * nth_packed_object_oid(struct object_id * oid, struct packed_git * p, uint32_t n)'/>
+<use f='codebrowser/sha1_file.c' l='3862' u='c' c='for_each_object_in_pack'/>
+<use f='codebrowser/sha1_name.c' l='183' u='c' c='unique_in_pack'/>

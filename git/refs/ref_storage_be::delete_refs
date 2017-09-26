@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs/refs-internal.h' l='651' type='delete_refs_fn *'/>
+<use f='codebrowser/refs.c' l='2047' u='r' c='refs_delete_refs'/>
+<offset>704</offset>

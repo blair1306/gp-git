@@ -1,0 +1,10 @@
+<dec f='codebrowser/send-pack.h' l='7'/>
+<use f='codebrowser/builtin/push.c' l='451' u='c'/>
+<use f='codebrowser/builtin/push.c' l='486' u='c'/>
+<doc f='codebrowser/send-pack.h' l='6'>/* Possible values for push_cert field in send_pack_args. */</doc>
+<use f='codebrowser/builtin/send-pack.c' l='110' u='c'/>
+<use f='codebrowser/remote-curl.c' l='138' u='c'/>
+<use f='codebrowser/send-pack.c' l='22' u='c'/>
+<use f='codebrowser/send-pack.c' l='30' u='c'/>
+<use f='codebrowser/send-pack.c' l='422' u='c'/>
+<use f='codebrowser/transport.c' l='572' u='c'/>

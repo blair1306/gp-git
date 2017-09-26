@@ -1,0 +1,5 @@
+<dec f='codebrowser/vcs-svn/repo_tree.h' l='9'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='213' u='c'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='247' u='c'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='323' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='143' u='c'/>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>repo_tree.c source code [codebrowser/vcs-svn/repo_tree.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/vcs-svn/repo_tree.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>vcs-svn</a>/<a href='repo_tree.c.html'>repo_tree.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Licensed under a two-clause BSD-style license.</i></td></tr>
+<tr><th id="3">3</th><td><i> * See LICENSE for details.</i></td></tr>
+<tr><th id="4">4</th><td><i> */</i></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../git-compat-util.h.html">"git-compat-util.h"</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../strbuf.h.html">"strbuf.h"</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="repo_tree.h.html">"repo_tree.h"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="fast_export.h.html">"fast_export.h"</a></u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="repo_read_path" title='repo_read_path' data-ref="repo_read_path">repo_read_path</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1path" title='path' data-type='const char *' data-ref="1path">path</dfn>, <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> *<dfn class="local col2 decl" id="2mode_out" title='mode_out' data-type='uint32_t *' data-ref="2mode_out">mode_out</dfn>)</td></tr>
+<tr><th id="12">12</th><td>{</td></tr>
+<tr><th id="13">13</th><td>	<em>int</em> <dfn class="local col3 decl" id="3err" title='err' data-type='int' data-ref="3err">err</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>static</em> <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col4 decl" id="4buf" title='buf' data-type='struct strbuf' data-ref="4buf">buf</dfn> = <a class="macro" href="../strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td>	<a class="macro" href="../strbuf.h.html#156" title="strbuf_setlen(&amp;buf, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col4 ref" href="#4buf" title='buf' data-ref="4buf">buf</a>);</td></tr>
+<tr><th id="17">17</th><td>	<a class="local col3 ref" href="#3err" title='err' data-ref="3err">err</a> = <a class="ref" href="fast_export.h.html#fast_export_ls" title='fast_export_ls' data-ref="fast_export_ls">fast_export_ls</a>(<a class="local col1 ref" href="#1path" title='path' data-ref="1path">path</a>, <a class="local col2 ref" href="#2mode_out" title='mode_out' data-ref="2mode_out">mode_out</a>, &amp;<a class="local col4 ref" href="#4buf" title='buf' data-ref="4buf">buf</a>);</td></tr>
+<tr><th id="18">18</th><td>	<b>if</b> (<a class="local col3 ref" href="#3err" title='err' data-ref="3err">err</a>) {</td></tr>
+<tr><th id="19">19</th><td>		<b>if</b> (<a class="macro" href="../../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> != <a class="macro" href="../../include/asm-generic/errno-base.h.html#5" title="2" data-ref="_M/ENOENT">ENOENT</a>)</td></tr>
+<tr><th id="20">20</th><td>			<a class="ref" href="../git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"BUG: unexpected fast_export_ls error"</q>);</td></tr>
+<tr><th id="21">21</th><td>		<i>/* Treat missing paths as directories. */</i></td></tr>
+<tr><th id="22">22</th><td>		*<a class="local col2 ref" href="#2mode_out" title='mode_out' data-ref="2mode_out">mode_out</a> = <a class="macro" href="repo_tree.h.html#6" title="0040000" data-ref="_M/REPO_MODE_DIR">REPO_MODE_DIR</a>;</td></tr>
+<tr><th id="23">23</th><td>		<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="24">24</th><td>	}</td></tr>
+<tr><th id="25">25</th><td>	<b>return</b> <a class="local col4 ref" href="#4buf" title='buf' data-ref="4buf">buf</a>.<a class="ref" href="../strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>;</td></tr>
+<tr><th id="26">26</th><td>}</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><em>void</em> <dfn class="decl def" id="repo_copy" title='repo_copy' data-ref="repo_copy">repo_copy</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col5 decl" id="5revision" title='revision' data-type='uint32_t' data-ref="5revision">revision</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="6src" title='src' data-type='const char *' data-ref="6src">src</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7dst" title='dst' data-type='const char *' data-ref="7dst">dst</dfn>)</td></tr>
+<tr><th id="29">29</th><td>{</td></tr>
+<tr><th id="30">30</th><td>	<em>int</em> <dfn class="local col8 decl" id="8err" title='err' data-type='int' data-ref="8err">err</dfn>;</td></tr>
+<tr><th id="31">31</th><td>	<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col9 decl" id="9mode" title='mode' data-type='uint32_t' data-ref="9mode">mode</dfn>;</td></tr>
+<tr><th id="32">32</th><td>	<em>static</em> <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col0 decl" id="10data" title='data' data-type='struct strbuf' data-ref="10data">data</dfn> = <a class="macro" href="../strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>	<a class="macro" href="../strbuf.h.html#156" title="strbuf_setlen(&amp;data, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col0 ref" href="#10data" title='data' data-ref="10data">data</a>);</td></tr>
+<tr><th id="35">35</th><td>	<a class="local col8 ref" href="#8err" title='err' data-ref="8err">err</a> = <a class="ref" href="fast_export.h.html#fast_export_ls_rev" title='fast_export_ls_rev' data-ref="fast_export_ls_rev">fast_export_ls_rev</a>(<a class="local col5 ref" href="#5revision" title='revision' data-ref="5revision">revision</a>, <a class="local col6 ref" href="#6src" title='src' data-ref="6src">src</a>, &amp;<a class="local col9 ref" href="#9mode" title='mode' data-ref="9mode">mode</a>, &amp;<a class="local col0 ref" href="#10data" title='data' data-ref="10data">data</a>);</td></tr>
+<tr><th id="36">36</th><td>	<b>if</b> (<a class="local col8 ref" href="#8err" title='err' data-ref="8err">err</a>) {</td></tr>
+<tr><th id="37">37</th><td>		<b>if</b> (<a class="macro" href="../../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> != <a class="macro" href="../../include/asm-generic/errno-base.h.html#5" title="2" data-ref="_M/ENOENT">ENOENT</a>)</td></tr>
+<tr><th id="38">38</th><td>			<a class="ref" href="../git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"BUG: unexpected fast_export_ls_rev error"</q>);</td></tr>
+<tr><th id="39">39</th><td>		<a class="ref" href="fast_export.h.html#fast_export_delete" title='fast_export_delete' data-ref="fast_export_delete">fast_export_delete</a>(<a class="local col7 ref" href="#7dst" title='dst' data-ref="7dst">dst</a>);</td></tr>
+<tr><th id="40">40</th><td>		<b>return</b>;</td></tr>
+<tr><th id="41">41</th><td>	}</td></tr>
+<tr><th id="42">42</th><td>	<a class="ref" href="fast_export.h.html#fast_export_modify" title='fast_export_modify' data-ref="fast_export_modify">fast_export_modify</a>(<a class="local col7 ref" href="#7dst" title='dst' data-ref="7dst">dst</a>, <a class="local col9 ref" href="#9mode" title='mode' data-ref="9mode">mode</a>, <a class="local col0 ref" href="#10data" title='data' data-ref="10data">data</a>.<a class="ref" href="../strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="43">43</th><td>}</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><em>void</em> <dfn class="decl def" id="repo_delete" title='repo_delete' data-ref="repo_delete">repo_delete</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="11path" title='path' data-type='const char *' data-ref="11path">path</dfn>)</td></tr>
+<tr><th id="46">46</th><td>{</td></tr>
+<tr><th id="47">47</th><td>	<a class="ref" href="fast_export.h.html#fast_export_delete" title='fast_export_delete' data-ref="fast_export_delete">fast_export_delete</a>(<a class="local col1 ref" href="#11path" title='path' data-ref="11path">path</a>);</td></tr>
+<tr><th id="48">48</th><td>}</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

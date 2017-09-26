@@ -1,0 +1,26 @@
+<dec f='codebrowser/refs/refs-internal.h' l='352' type='int ref_iterator_abort(struct ref_iterator * ref_iterator)'/>
+<use f='codebrowser/refs.c' l='1914' u='c' c='refs_verify_refname_available'/>
+<doc f='codebrowser/refs/refs-internal.h' l='347'>/*
+ * End the iteration before it has been exhausted, freeing the
+ * reference iterator and any associated resources and returning
+ * ITER_DONE. If the abort itself failed, return ITER_ERROR.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='724' u='c' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='746' u='c' c='files_ref_iterator_abort'/>
+<use f='codebrowser/refs/files-backend.c' l='2028' u='c' c='files_reflog_iterator_advance'/>
+<def f='codebrowser/refs/iterator.c' l='22' ll='25' type='int ref_iterator_abort(struct ref_iterator * ref_iterator)'/>
+<use f='codebrowser/refs/iterator.c' l='49' u='c' c='empty_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='136' u='c' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='138' u='c' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='167' u='c' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='190' u='c' c='merge_ref_iterator_abort'/>
+<use f='codebrowser/refs/iterator.c' l='194' u='c' c='merge_ref_iterator_abort'/>
+<use f='codebrowser/refs/iterator.c' l='266' u='c' c='overlay_ref_iterator_begin'/>
+<use f='codebrowser/refs/iterator.c' l='269' u='c' c='overlay_ref_iterator_begin'/>
+<use f='codebrowser/refs/iterator.c' l='318' u='c' c='prefix_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='339' u='c' c='prefix_ref_iterator_abort'/>
+<use f='codebrowser/refs/iterator.c' l='390' u='c' c='do_for_each_ref_iterator'/>
+<use f='codebrowser/refs/packed-backend.c' l='437' u='c' c='packed_ref_iterator_advance'/>
+<use f='codebrowser/refs/packed-backend.c' l='459' u='c' c='packed_ref_iterator_abort'/>
+<use f='codebrowser/refs/packed-backend.c' l='661' u='c' c='commit_packed_refs'/>
+<use f='codebrowser/refs/ref-cache.c' l='461' u='c' c='cache_ref_iterator_advance'/>

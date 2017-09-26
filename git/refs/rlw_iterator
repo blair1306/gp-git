@@ -1,0 +1,7 @@
+<def f='codebrowser/ewah/ewok_rlw.h' l='83' ll='96'/>
+<size>56</size>
+<mbr r='rlw_iterator::buffer' o='0' t='const eword_t *'/>
+<mbr r='rlw_iterator::size' o='64' t='size_t'/>
+<mbr r='rlw_iterator::pointer' o='128' t='size_t'/>
+<mbr r='rlw_iterator::literal_word_start' o='192' t='size_t'/>
+<mbr r='rlw_iterator::rlw' o='256' t='struct (anonymous struct at /home/jon/workspace/git/ewah/ewok_rlw.h:89:2)'/>

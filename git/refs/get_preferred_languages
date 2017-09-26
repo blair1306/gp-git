@@ -1,0 +1,9 @@
+<dec f='codebrowser/gettext.h' l='92' type='const char * get_preferred_languages()'/>
+<def f='codebrowser/gettext.c' l='29' ll='46' type='const char * get_preferred_languages()'/>
+<doc f='codebrowser/gettext.c' l='23'>/*
+ * Guess the user&apos;s preferred languages from the value in LANGUAGE environment
+ * variable and LC_MESSAGES locale category if NO_GETTEXT is not defined.
+ *
+ * The result can be a colon-separated list like &quot;ko:ja:en&quot;.
+ */</doc>
+<use f='codebrowser/http.c' l='1545' u='c' c='write_accept_language'/>

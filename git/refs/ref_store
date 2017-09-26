@@ -1,0 +1,8 @@
+<def f='codebrowser/refs/refs-internal.h' l='674' ll='677'/>
+<size>8</size>
+<doc f='codebrowser/refs/refs-internal.h' l='669'>/*
+ * A representation of the reference store for the main repository or
+ * a submodule. The ref_store instances for submodules are kept in a
+ * linked list.
+ */</doc>
+<mbr r='ref_store::be' o='0' t='const struct ref_storage_be *'/>

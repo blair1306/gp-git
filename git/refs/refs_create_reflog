@@ -1,0 +1,7 @@
+<dec f='codebrowser/refs.h' l='360' type='int refs_create_reflog(struct ref_store * refs, const char * refname, int force_create, struct strbuf * err)'/>
+<doc f='codebrowser/refs.h' l='357'>/*
+ * Setup reflog before using. Fill in err and return -1 on failure.
+ */</doc>
+<def f='codebrowser/refs.c' l='1987' ll='1991' type='int refs_create_reflog(struct ref_store * refs, const char * refname, int force_create, struct strbuf * err)'/>
+<use f='codebrowser/refs.c' l='1996' u='c' c='safe_create_reflog'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='197' u='c' c='cmd_create_reflog'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/streaming.c' l='70' type='enum (anonymous enum at /home/jon/workspace/git/streaming.c:70:2)'/>
+<use f='codebrowser/streaming.c' l='175' u='r' c='close_deflated_stream'/>
+<use f='codebrowser/streaming.c' l='282' u='r' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='311' u='w' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='316' u='w' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='353' u='w' c='open_istream_loose'/>
+<use f='codebrowser/streaming.c' l='370' u='r' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='374' u='w' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='403' u='w' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='408' u='w' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='449' u='w' c='open_istream_pack_non_delta'/>
+<offset>1408</offset>

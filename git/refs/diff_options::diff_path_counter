@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='188' type='int'/>
+<offset>2624</offset>
+<use f='codebrowser/diff.c' l='3089' u='w' c='run_external_diff'/>
+<use f='codebrowser/diff.c' l='3506' u='w' c='diff_setup_done'/>

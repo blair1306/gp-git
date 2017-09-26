@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='301' type='int rewrite_parents(struct rev_info * revs, struct commit * commit, rewrite_parent_fn_t rewrite_parent)'/>
+<use f='codebrowser/line-log.c' l='1246' u='c' c='line_log_filter'/>
+<def f='codebrowser/revision.c' l='2832' ll='2851' type='int rewrite_parents(struct rev_info * revs, struct commit * commit, rewrite_parent_fn_t rewrite_parent)'/>
+<use f='codebrowser/revision.c' l='3095' u='c' c='simplify_commit'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/mailinfo.h' l='35' type='int'/>
+<offset>2112</offset>
+<use f='codebrowser/mailinfo.c' l='250' u='w' c='handle_content_type'/>
+<use f='codebrowser/mailinfo.c' l='438' u='w' c='convert_to_utf8'/>
+<use f='codebrowser/mailinfo.c' l='528' u='w' c='decode_header'/>
+<use f='codebrowser/mailinfo.c' l='930' u='w' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='936' u='r' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='1022' u='r' c='handle_body'/>
+<use f='codebrowser/mailinfo.c' l='1123' u='r' c='mailinfo'/>

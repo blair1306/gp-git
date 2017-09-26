@@ -1,0 +1,10 @@
+<dec f='codebrowser/wt-status.h' l='69' type='int'/>
+<offset>544</offset>
+<use f='codebrowser/wt-status.c' l='1777' u='r' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1777' u='r' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1777' u='r' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1777' u='r' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1777' u='r' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1777' u='r' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1777' u='r' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1857' u='w' c='wt_porcelain_print'/>

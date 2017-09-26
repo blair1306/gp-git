@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>blob.c source code [codebrowser/blob.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/blob.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='blob.c.html'>blob.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="blob.h.html">"blob.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="blob_type" title='blob_type' data-ref="blob_type">blob_type</dfn> = <q>"blob"</q>;</td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <a class="type" href="blob.h.html#blob" title='blob' data-ref="blob">blob</a> *<dfn class="decl def" id="lookup_blob" title='lookup_blob' data-ref="lookup_blob">lookup_blob</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col1 decl" id="1oid" title='oid' data-type='const struct object_id *' data-ref="1oid">oid</dfn>)</td></tr>
+<tr><th id="7">7</th><td>{</td></tr>
+<tr><th id="8">8</th><td>	<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col2 decl" id="2obj" title='obj' data-type='struct object *' data-ref="2obj">obj</dfn> = <a class="ref" href="object.h.html#lookup_object" title='lookup_object' data-ref="lookup_object">lookup_object</a>(<a class="local col1 ref" href="#1oid" title='oid' data-ref="1oid">oid</a>-&gt;<a class="ref" href="cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>);</td></tr>
+<tr><th id="9">9</th><td>	<b>if</b> (!<a class="local col2 ref" href="#2obj" title='obj' data-ref="2obj">obj</a>)</td></tr>
+<tr><th id="10">10</th><td>		<b>return</b> <a class="ref" href="object.h.html#create_object" title='create_object' data-ref="create_object">create_object</a>(<a class="local col1 ref" href="#1oid" title='oid' data-ref="1oid">oid</a>-&gt;<a class="ref" href="cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>, <a class="ref" href="cache.h.html#alloc_blob_node" title='alloc_blob_node' data-ref="alloc_blob_node">alloc_blob_node</a>());</td></tr>
+<tr><th id="11">11</th><td>	<b>return</b> <a class="ref" href="object.h.html#object_as_type" title='object_as_type' data-ref="object_as_type">object_as_type</a>(<a class="local col2 ref" href="#2obj" title='obj' data-ref="2obj">obj</a>, <a class="enum" href="cache.h.html#object_type::OBJ_BLOB" title='object_type::OBJ_BLOB' data-ref="object_type::OBJ_BLOB">OBJ_BLOB</a>, <var>0</var>);</td></tr>
+<tr><th id="12">12</th><td>}</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><em>int</em> <dfn class="decl def" id="parse_blob_buffer" title='parse_blob_buffer' data-ref="parse_blob_buffer">parse_blob_buffer</dfn>(<b>struct</b> <a class="type" href="blob.h.html#blob" title='blob' data-ref="blob">blob</a> *<dfn class="local col3 decl" id="3item" title='item' data-type='struct blob *' data-ref="3item">item</dfn>, <em>void</em> *<dfn class="local col4 decl" id="4buffer" title='buffer' data-type='void *' data-ref="4buffer">buffer</dfn>, <em>unsigned</em> <em>long</em> <dfn class="local col5 decl" id="5size" title='size' data-type='unsigned long' data-ref="5size">size</dfn>)</td></tr>
+<tr><th id="15">15</th><td>{</td></tr>
+<tr><th id="16">16</th><td>	<a class="local col3 ref" href="#3item" title='item' data-ref="3item">item</a>-&gt;<a class="ref" href="blob.h.html#blob::object" title='blob::object' data-ref="blob::object">object</a>.<a class="ref" href="object.h.html#object::parsed" title='object::parsed' data-ref="object::parsed">parsed</a> = <var>1</var>;</td></tr>
+<tr><th id="17">17</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="18">18</th><td>}</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/unpack-trees.h' l='19' type='4'/>
+<use f='codebrowser/unpack-trees.c' l='139' u='w' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='1833' u='r' c='deleted_entry'/>
+<use f='codebrowser/unpack-trees.c' l='1984' u='r' c='threeway_merge'/>

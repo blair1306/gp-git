@@ -1,0 +1,24 @@
+<dec f='codebrowser/dir.h' l='306' type='int remove_dir_recursively(struct strbuf * path, int flag)'/>
+<doc f='codebrowser/dir.h' l='299'>/*
+ * Remove path and its contents, recursively. flags is a combination
+ * of the above REMOVE_DIR_* constants. Return 0 on success.
+ *
+ * This function uses path as temporary scratch space, but restores it
+ * before returning.
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='480' u='c' c='am_destroy'/>
+<use f='codebrowser/builtin/clone.c' l='503' u='c' c='remove_junk'/>
+<use f='codebrowser/builtin/clone.c' l='508' u='c' c='remove_junk'/>
+<use f='codebrowser/builtin/difftool.c' l='257' u='c' c='exit_cleanup'/>
+<use f='codebrowser/builtin/rm.c' l='369' u='c' c='cmd_rm'/>
+<use f='codebrowser/builtin/update-index.c' l='65' u='c' c='remove_test_directory'/>
+<use f='codebrowser/builtin/worktree.c' l='112' u='c' c='prune_worktrees'/>
+<use f='codebrowser/builtin/worktree.c' l='155' u='c' c='remove_junk'/>
+<use f='codebrowser/builtin/worktree.c' l='160' u='c' c='remove_junk'/>
+<def f='codebrowser/dir.c' l='2315' ll='2318' type='int remove_dir_recursively(struct strbuf * path, int flag)'/>
+<use f='codebrowser/notes-merge.c' l='747' u='c' c='notes_merge_abort'/>
+<use f='codebrowser/refs/files-backend.c' l='599' u='c' c='lock_raw_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='861' u='c' c='remove_empty_directories'/>
+<use f='codebrowser/sequencer.c' l='207' u='c' c='sequencer_remove_state'/>
+<use f='codebrowser/sha1_file.c' l='216' u='c' c='raceproof_create_file'/>
+<use f='codebrowser/tmp-objdir.c' l='45' u='c' c='tmp_objdir_destroy_1'/>

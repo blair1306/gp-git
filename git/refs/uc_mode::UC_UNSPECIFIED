@@ -1,0 +1,3 @@
+<dec f='codebrowser/builtin/update-index.c' l='41' type='-1'/>
+<use f='codebrowser/builtin/update-index.c' l='910' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='1124' c='cmd_update_index'/>

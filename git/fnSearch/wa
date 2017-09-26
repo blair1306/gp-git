@@ -1,0 +1,11 @@
+want_color|want_color
+warn_dangling_symref|warn_dangling_symref
+warn_dangling_symrefs|warn_dangling_symrefs
+warning|warning
+warning_errno|warning_errno
+walker_fetch|walker_fetch
+walker_free|walker_free
+walker_say|walker_say
+walker_targets_free|walker_targets_free
+walker_targets_stdin|walker_targets_stdin
+warn_on_fopen_errors|warn_on_fopen_errors

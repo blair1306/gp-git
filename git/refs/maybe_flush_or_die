@@ -1,0 +1,26 @@
+<dec f='codebrowser/cache.h' l='1863' type='void maybe_flush_or_die(FILE * , const char * )'/>
+<doc f='codebrowser/cache.h' l='1862'>/* IO helper functions */</doc>
+<use f='codebrowser/builtin/blame.c' l='279' u='c' c='found_guilty_entry'/>
+<use f='codebrowser/builtin/check-attr.c' l='93' u='c' c='check_attr_stdin_paths'/>
+<use f='codebrowser/builtin/check-attr.c' l='184' u='c' c='cmd_check_attr'/>
+<use f='codebrowser/builtin/check-ignore.c' l='139' u='c' c='check_ignore_stdin_paths'/>
+<use f='codebrowser/builtin/check-ignore.c' l='185' u='c' c='cmd_check_ignore'/>
+<use f='codebrowser/builtin/check-mailmap.c' l='54' u='c' c='cmd_check_mailmap'/>
+<use f='codebrowser/builtin/check-mailmap.c' l='60' u='c' c='cmd_check_mailmap'/>
+<use f='codebrowser/builtin/hash-object.c' l='46' u='c' c='hash_fd'/>
+<use f='codebrowser/builtin/rev-list.c' l='168' u='c' c='show_commit'/>
+<use f='codebrowser/log-tree.c' l='881' u='c' c='log_tree_commit'/>
+<def f='codebrowser/write_or_die.c' l='17' ll='41' type='void maybe_flush_or_die(FILE * f, const char * desc)'/>
+<doc f='codebrowser/write_or_die.c' l='4'>/*
+ * Some cases use stdio, but want to flush after the write
+ * to get error handling (and to get better interactive
+ * behaviour - not buffering excessively).
+ *
+ * Of course, if the flush happened within the write itself,
+ * we&apos;ve already lost the error code, and cannot report it any
+ * more. So we just ignore that case instead (and hope we get
+ * the right error code on the flush).
+ *
+ * If the file handle is stdout, and stdout is a file, then skip the
+ * flush entirely since it&apos;s not needed.
+ */</doc>

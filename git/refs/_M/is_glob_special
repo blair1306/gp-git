@@ -1,0 +1,4 @@
+<dec f='codebrowser/git-compat-util.h' l='953'/>
+<use f='codebrowser/dir.c' l='529' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1693' u='c'/>
+<use f='codebrowser/wildmatch.c' l='144' u='c'/>

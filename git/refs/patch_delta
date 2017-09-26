@@ -1,0 +1,15 @@
+<dec f='codebrowser/delta.h' l='78' type='void * patch_delta(const void * src_buf, unsigned long src_size, const void * delta_buf, unsigned long delta_size, unsigned long * dst_size)'/>
+<use f='codebrowser/apply.c' l='3103' u='c' c='apply_binary_fragment'/>
+<doc f='codebrowser/delta.h' l='71'>/*
+ * patch_delta: recreate target buffer given source buffer and delta data
+ *
+ * On success, a non-NULL pointer to the target buffer is returned and
+ * *trg_bufsize is updated with its size.  On failure a NULL pointer is
+ * returned.  The returned buffer must be freed by the caller.
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='922' u='c' c='get_base_data'/>
+<use f='codebrowser/builtin/index-pack.c' l='955' u='c' c='resolve_delta'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='280' u='c' c='resolve_delta'/>
+<def f='codebrowser/patch-delta.c' l='15' ll='86' type='void * patch_delta(const void * src_buf, unsigned long src_size, const void * delta_buf, unsigned long delta_size, unsigned long * dst_size)'/>
+<use f='codebrowser/sha1_file.c' l='2664' u='c' c='unpack_entry'/>
+<use f='codebrowser/t/helper/test-delta.c' l='63' u='c' c='cmd_main'/>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/strbuf.h' l='509' type='struct strbuf ** strbuf_split_buf(const char * , size_t , int terminator, int max)'/>
+<use f='codebrowser/strbuf.h' l='515' u='c' c='strbuf_split_str'/>
+<use f='codebrowser/strbuf.h' l='521' u='c' c='strbuf_split_max'/>
+<doc f='codebrowser/strbuf.h' l='491'>/**
+ * Split str (of length slen) at the specified terminator character.
+ * Return a null-terminated array of pointers to strbuf objects
+ * holding the substrings.  The substrings include the terminator,
+ * except for the last substring, which might be unterminated if the
+ * original string did not end with a terminator.  If max is positive,
+ * then split the string into at most max substrings (with the last
+ * substring containing everything following the (max-1)th terminator
+ * character).
+ *
+ * The most generic form is `strbuf_split_buf`, which takes an arbitrary
+ * pointer/len buffer. The `_str` variant takes a NUL-terminated string,
+ * the `_max` variant takes a strbuf, and just `strbuf_split` is a convenience
+ * wrapper to drop the `max` parameter.
+ *
+ * For lighter-weight alternatives, see string_list_split() and
+ * string_list_split_in_place().
+ */</doc>
+<def f='codebrowser/strbuf.c' l='117' ll='142' type='struct strbuf ** strbuf_split_buf(const char * str, size_t slen, int terminator, int max)'/>
+<use f='codebrowser/trailer.c' l='1021' u='c' c='trailer_info_get'/>

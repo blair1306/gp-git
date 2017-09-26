@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache-tree.h' l='14' type='char []'/>
+<offset>160</offset>
+<use f='codebrowser/cache-tree.c' l='55' u='r' c='subtree_pos'/>
+<use f='codebrowser/cache-tree.c' l='82' u='r' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='475' u='r' c='write_one'/>
+<use f='codebrowser/cache-tree.c' l='476' u='r' c='write_one'/>
+<use f='codebrowser/cache-tree.c' l='479' u='r' c='write_one'/>
+<use f='codebrowser/revision.c' l='1258' c='add_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='49' u='r' c='dump_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='50' c='dump_cache_tree'/>

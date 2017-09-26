@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>common-main.c source code [codebrowser/common-main.c] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="main "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/common-main.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='common-main.c.html'>common-main.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="exec_cmd.h.html">"exec_cmd.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="attr.h.html">"attr.h"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><i  data-doc="restore_sigpipe_to_default">/*</i></td></tr>
+<tr><th id="6">6</th><td><i  data-doc="restore_sigpipe_to_default"> * Many parts of Git have subprograms communicate via pipe, expect the</i></td></tr>
+<tr><th id="7">7</th><td><i  data-doc="restore_sigpipe_to_default"> * upstream of a pipe to die with SIGPIPE when the downstream of a</i></td></tr>
+<tr><th id="8">8</th><td><i  data-doc="restore_sigpipe_to_default"> * pipe does not need to read all that is written.  Some third-party</i></td></tr>
+<tr><th id="9">9</th><td><i  data-doc="restore_sigpipe_to_default"> * programs that ignore or block SIGPIPE for their own reason forget</i></td></tr>
+<tr><th id="10">10</th><td><i  data-doc="restore_sigpipe_to_default"> * to restore SIGPIPE handling to the default before spawning Git and</i></td></tr>
+<tr><th id="11">11</th><td><i  data-doc="restore_sigpipe_to_default"> * break this carefully orchestrated machinery.</i></td></tr>
+<tr><th id="12">12</th><td><i  data-doc="restore_sigpipe_to_default"> *</i></td></tr>
+<tr><th id="13">13</th><td><i  data-doc="restore_sigpipe_to_default"> * Restore the way SIGPIPE is handled to default, which is what we</i></td></tr>
+<tr><th id="14">14</th><td><i  data-doc="restore_sigpipe_to_default"> * expect.</i></td></tr>
+<tr><th id="15">15</th><td><i  data-doc="restore_sigpipe_to_default"> */</i></td></tr>
+<tr><th id="16">16</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="restore_sigpipe_to_default" title='restore_sigpipe_to_default' data-type='void restore_sigpipe_to_default()' data-ref="restore_sigpipe_to_default">restore_sigpipe_to_default</dfn>(<em>void</em>)</td></tr>
+<tr><th id="17">17</th><td>{</td></tr>
+<tr><th id="18">18</th><td>	<a class="typedef" href="../include/x86_64-linux-gnu/sys/select.h.html#sigset_t" title='sigset_t' data-type='__sigset_t' data-ref="sigset_t">sigset_t</a> <dfn class="local col1 decl" id="1unblock" title='unblock' data-type='sigset_t' data-ref="1unblock">unblock</dfn>;</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td>	<a class="ref" href="../include/signal.h.html#sigemptyset" title='sigemptyset' data-ref="sigemptyset">sigemptyset</a>(&amp;<a class="local col1 ref" href="#1unblock" title='unblock' data-ref="1unblock">unblock</a>);</td></tr>
+<tr><th id="21">21</th><td>	<a class="ref" href="../include/signal.h.html#sigaddset" title='sigaddset' data-ref="sigaddset">sigaddset</a>(&amp;<a class="local col1 ref" href="#1unblock" title='unblock' data-ref="1unblock">unblock</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/signum.h.html#45" title="13" data-ref="_M/SIGPIPE">SIGPIPE</a>);</td></tr>
+<tr><th id="22">22</th><td>	<a class="ref" href="../include/signal.h.html#sigprocmask" title='sigprocmask' data-ref="sigprocmask">sigprocmask</a>(<a class="macro" href="../include/x86_64-linux-gnu/bits/sigaction.h.html#77" title="1" data-ref="_M/SIG_UNBLOCK">SIG_UNBLOCK</a>, &amp;<a class="local col1 ref" href="#1unblock" title='unblock' data-ref="1unblock">unblock</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="23">23</th><td>	<a class="ref" href="../include/signal.h.html#signal" title='signal' data-ref="signal">signal</a>(<a class="macro" href="../include/x86_64-linux-gnu/bits/signum.h.html#45" title="13" data-ref="_M/SIGPIPE">SIGPIPE</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/signum.h.html#23" title="((__sighandler_t) 0)" data-ref="_M/SIG_DFL">SIG_DFL</a>);</td></tr>
+<tr><th id="24">24</th><td>}</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><em>int</em> <dfn class="decl def" id="main" title='main' data-ref="main">main</dfn>(<em>int</em> <dfn class="local col2 decl" id="2argc" title='argc' data-type='int' data-ref="2argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col3 decl" id="3argv" title='argv' data-type='const char **' data-ref="3argv">argv</dfn>)</td></tr>
+<tr><th id="27">27</th><td>{</td></tr>
+<tr><th id="28">28</th><td>	<i>/*</i></td></tr>
+<tr><th id="29">29</th><td><i>	 * Always open file descriptors 0/1/2 to avoid clobbering files</i></td></tr>
+<tr><th id="30">30</th><td><i>	 * in die().  It also avoids messing up when the pipes are dup'ed</i></td></tr>
+<tr><th id="31">31</th><td><i>	 * onto stdin/stdout/stderr in the child processes we spawn.</i></td></tr>
+<tr><th id="32">32</th><td><i>	 */</i></td></tr>
+<tr><th id="33">33</th><td>	<a class="ref" href="cache.h.html#sanitize_stdfds" title='sanitize_stdfds' data-ref="sanitize_stdfds">sanitize_stdfds</a>();</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>	<a class="ref" href="gettext.h.html#git_setup_gettext" title='git_setup_gettext' data-ref="git_setup_gettext">git_setup_gettext</a>();</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>	<a class="ref" href="attr.h.html#attr_start" title='attr_start' data-ref="attr_start">attr_start</a>();</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td>	<a class="ref" href="exec_cmd.h.html#git_extract_argv0_path" title='git_extract_argv0_path' data-ref="git_extract_argv0_path">git_extract_argv0_path</a>(<a class="local col3 ref" href="#3argv" title='argv' data-ref="3argv">argv</a>[<var>0</var>]);</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td>	<a class="tu ref" href="#restore_sigpipe_to_default" title='restore_sigpipe_to_default' data-use='c' data-ref="restore_sigpipe_to_default">restore_sigpipe_to_default</a>();</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>	<b>return</b> <a class="ref" href="git-compat-util.h.html#cmd_main" title='cmd_main' data-ref="cmd_main">cmd_main</a>(<a class="local col2 ref" href="#2argc" title='argc' data-ref="2argc">argc</a>, <a class="local col3 ref" href="#3argv" title='argv' data-ref="3argv">argv</a>);</td></tr>
+<tr><th id="44">44</th><td>}</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

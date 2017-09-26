@@ -1,0 +1,6 @@
+<dec f='codebrowser/pkt-line.h' l='96' type='ssize_t read_packetized_to_strbuf(int fd_in, struct strbuf * sb_out)'/>
+<doc f='codebrowser/pkt-line.h' l='93'>/*
+ * Reads a stream of variable sized packets until a flush packet is detected.
+ */</doc>
+<use f='codebrowser/convert.c' l='645' u='c' c='apply_multi_file_filter'/>
+<def f='codebrowser/pkt-line.c' l='343' ll='373' type='ssize_t read_packetized_to_strbuf(int fd_in, struct strbuf * sb_out)'/>

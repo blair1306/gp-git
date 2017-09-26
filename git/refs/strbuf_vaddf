@@ -1,0 +1,29 @@
+<dec f='codebrowser/strbuf.h' l='333' type='void strbuf_vaddf(struct strbuf * sb, const char * fmt, struct __va_list_tag * ap)'/>
+<use f='codebrowser/advice.c' l='53' u='c' c='advise'/>
+<use f='codebrowser/argv-array.c' l='35' u='c' c='argv_array_pushf'/>
+<use f='codebrowser/builtin/upload-archive.c' l='56' u='c' c='error_clnt'/>
+<use f='codebrowser/fsck.c' l='294' u='c' c='report'/>
+<use f='codebrowser/fsck.c' l='322' u='c' c='put_object_name'/>
+<use f='codebrowser/merge-recursive.c' l='46' u='c' c='err'/>
+<use f='codebrowser/merge-recursive.c' l='191' u='c' c='output'/>
+<use f='codebrowser/path.c' l='413' u='c' c='do_git_path'/>
+<use f='codebrowser/path.c' l='483' u='c' c='mkpathdup'/>
+<use f='codebrowser/path.c' l='494' u='c' c='mkpath'/>
+<use f='codebrowser/path.c' l='517' u='c' c='do_worktree_path'/>
+<use f='codebrowser/path.c' l='564' u='c' c='do_submodule_path'/>
+<use f='codebrowser/path.c' l='612' u='c' c='do_git_common_path'/>
+<use f='codebrowser/pkt-line.c' l='126' u='c' c='format_packet'/>
+<use f='codebrowser/quote.c' l='52' u='c' c='sq_quotef'/>
+<use f='codebrowser/remote.c' l='1675' u='c' c='error_buf'/>
+<use f='codebrowser/sequencer.c' l='1982' u='c' c='reflog_message'/>
+<use f='codebrowser/strbuf.c' l='218' u='c' c='strbuf_addf'/>
+<use f='codebrowser/strbuf.c' l='261' u='c' c='strbuf_commented_addf'/>
+<def f='codebrowser/strbuf.c' l='271' ll='290' type='void strbuf_vaddf(struct strbuf * sb, const char * fmt, struct __va_list_tag * ap)'/>
+<use f='codebrowser/strbuf.c' l='766' u='c' c='xstrvfmt'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='72' u='c' c='show'/>
+<use f='codebrowser/trace.c' l='161' u='c' c='trace_vprintf_fl'/>
+<use f='codebrowser/trace.c' l='174' u='c' c='trace_argv_vprintf_fl'/>
+<use f='codebrowser/trace.c' l='207' u='c' c='trace_performance_vprintf_fl'/>
+<use f='codebrowser/utf8.c' l='430' u='c' c='utf8_fprintf'/>
+<use f='codebrowser/wrapper.c' l='667' u='c' c='write_file'/>
+<use f='codebrowser/wt-status.c' l='53' u='c' c='status_vprintf'/>

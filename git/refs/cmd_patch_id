@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='198' type='int cmd_patch_id(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/patch-id.c' l='180' ll='199' type='int cmd_patch_id(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='438'/>
+<use f='codebrowser/git.c' l='438'/>
+<use f='codebrowser/git.c' l='438'/>
+<use f='codebrowser/git.c' l='438'/>

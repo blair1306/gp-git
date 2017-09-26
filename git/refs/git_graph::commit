@@ -1,0 +1,19 @@
+<dec f='codebrowser/graph.c' l='129' type='struct commit *'/>
+<use f='codebrowser/graph.c' l='280' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='387' u='r' c='first_interesting_parent'/>
+<use f='codebrowser/graph.c' l='553' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='558' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='612' u='w' c='graph_update'/>
+<use f='codebrowser/graph.c' l='719' u='r' c='graph_output_padding_line'/>
+<use f='codebrowser/graph.c' l='787' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='836' u='r' c='graph_output_commit_char'/>
+<use f='codebrowser/graph.c' l='845' u='r' c='graph_output_commit_char'/>
+<use f='codebrowser/graph.c' l='892' u='r' c='graph_output_commit_line'/>
+<use f='codebrowser/graph.c' l='897' u='r' c='graph_output_commit_line'/>
+<use f='codebrowser/graph.c' l='975' u='r' c='graph_output_post_merge_line'/>
+<use f='codebrowser/graph.c' l='980' u='r' c='graph_output_post_merge_line'/>
+<use f='codebrowser/graph.c' l='1226' u='r' c='graph_padding_line'/>
+<offset>0</offset>
+<doc f='codebrowser/graph.c' l='126'>/*
+	 * The commit currently being processed
+	 */</doc>

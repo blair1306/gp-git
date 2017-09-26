@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='393' type='-1'/>
+<use f='codebrowser/builtin/index-pack.c' l='1149' u='r' c='parse_pack_objects'/>
+<use f='codebrowser/builtin/index-pack.c' l='1176' u='r' c='parse_pack_objects'/>
+<use f='codebrowser/builtin/ls-tree.c' l='97' u='r' c='show_tree'/>
+<use f='codebrowser/sha1_file.c' l='2138' u='r' c='unpack_object_header'/>
+<use f='codebrowser/sha1_file.c' l='2152' u='r' c='retry_bad_packed_offset'/>
+<use f='codebrowser/sha1_file.c' l='2157' u='r' c='retry_bad_packed_offset'/>
+<use f='codebrowser/sha1_file.c' l='2202' c='packed_to_object_type'/>
+<use f='codebrowser/sha1_file.c' l='2211' u='r' c='packed_to_object_type'/>
+<use f='codebrowser/sha1_file.c' l='2226' u='r' c='packed_to_object_type'/>
+<use f='codebrowser/sha1_file.c' l='2386' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2397' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2402' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2427' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2439' u='r' c='packed_object_info'/>

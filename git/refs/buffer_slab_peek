@@ -1,0 +1,5 @@
+<def f='codebrowser/commit.c' l='236' macro='1' type='struct commit_buffer * buffer_slab_peek(struct buffer_slab * s, const struct commit * c)'/>
+<use f='codebrowser/commit.c' l='248' u='c' c='get_cached_commit_buffer'/>
+<use f='codebrowser/commit.c' l='280' u='c' c='unuse_commit_buffer'/>
+<use f='codebrowser/commit.c' l='287' u='c' c='free_commit_buffer'/>
+<use f='codebrowser/commit.c' l='296' u='c' c='detach_commit_buffer'/>

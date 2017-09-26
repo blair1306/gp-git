@@ -1,0 +1,18 @@
+<dec f='codebrowser/graph.h' l='66' type='int graph_is_commit_finished(const struct git_graph * graph)'/>
+<doc f='codebrowser/graph.h' l='56'>/*
+ * Determine if a graph has finished outputting lines for the current
+ * commit.
+ *
+ * Returns 1 if graph_next_line() needs to be called again before
+ * graph_update() should be called.  Returns 0 if no more lines are needed
+ * for this commit.  If 0 is returned, graph_next_line() may still be
+ * called without calling graph_update(), and it will merely output
+ * appropriate &quot;vertical padding&quot; in the graph.
+ */</doc>
+<def f='codebrowser/graph.c' l='1244' ll='1247' type='int graph_is_commit_finished(const struct git_graph * graph)'/>
+<use f='codebrowser/graph.c' l='1264' u='c' c='graph_show_commit'/>
+<use f='codebrowser/graph.c' l='1269' u='c' c='graph_show_commit'/>
+<use f='codebrowser/graph.c' l='1321' u='c' c='graph_show_remainder'/>
+<use f='codebrowser/graph.c' l='1331' u='c' c='graph_show_remainder'/>
+<use f='codebrowser/graph.c' l='1389' u='c' c='graph_show_commit_msg'/>
+<use f='codebrowser/log-tree.c' l='556' u='c' c='show_log'/>

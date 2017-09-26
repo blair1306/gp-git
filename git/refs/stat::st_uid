@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/stat.h' l='64' type='__uid_t'/>
+<offset>224</offset>
+<doc f='include/x86_64-linux-gnu/bits/stat.h' l='64'>/* User ID of the file&apos;s owner.	*/</doc>
+<use f='codebrowser/read-cache.c' l='94' u='r' c='fill_stat_data'/>
+<use f='codebrowser/read-cache.c' l='118' u='r' c='match_stat_data'/>

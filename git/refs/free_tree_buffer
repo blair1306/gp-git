@@ -1,0 +1,8 @@
+<dec f='codebrowser/tree.h' l='24' type='void free_tree_buffer(struct tree * tree)'/>
+<use f='codebrowser/builtin/fsck.c' l='365' u='c' c='fsck_obj'/>
+<use f='codebrowser/builtin/reflog.c' l='94' u='c' c='tree_is_complete'/>
+<use f='codebrowser/http-push.c' l='1318' u='c' c='process_tree'/>
+<use f='codebrowser/list-objects.c' l='127' u='c' c='process_tree'/>
+<use f='codebrowser/revision.c' l='77' u='c' c='mark_tree_contents_uninteresting'/>
+<def f='codebrowser/tree.c' l='235' ll='240' type='void free_tree_buffer(struct tree * tree)'/>
+<use f='codebrowser/walker.c' l='62' u='c' c='process_tree'/>

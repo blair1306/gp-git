@@ -1,0 +1,8 @@
+<dec f='codebrowser/tree-walk.h' l='54' type='-2'/>
+<doc f='codebrowser/tree-walk.h' l='54'>/*
+				* The initial symlink is there, but
+				* (transitively) points to a missing
+				* in-tree file
+				*/</doc>
+<use f='codebrowser/builtin/cat-file.c' l='373' c='batch_one_object'/>
+<use f='codebrowser/tree-walk.c' l='716' u='r' c='get_tree_entry_follow_symlinks'/>

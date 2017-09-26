@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='1759' type='1'/>
+<doc f='include/curl/curl.h' l='1759'>/* A user:password in the URL will be preferred
+                           * to one in the .netrc. */</doc>
+<use f='codebrowser/http.c' l='716' c='get_curl_handle'/>

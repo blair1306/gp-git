@@ -1,0 +1,7 @@
+<def f='codebrowser/bisect.h' l='17' ll='23'/>
+<size>32</size>
+<mbr r='rev_list_info::revs' o='0' t='struct rev_info *'/>
+<mbr r='rev_list_info::flags' o='64' t='int'/>
+<mbr r='rev_list_info::show_timestamp' o='96' t='int'/>
+<mbr r='rev_list_info::hdr_termination' o='128' t='int'/>
+<mbr r='rev_list_info::header_prefix' o='192' t='const char *'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/http.h' l='182'/>
+<use f='codebrowser/http.c' l='1404' u='c'/>
+<use f='codebrowser/http.c' l='1783' u='c'/>
+<use f='codebrowser/http.c' l='1794' u='c'/>
+<use f='codebrowser/remote-curl.c' l='486' u='c'/>
+<use f='codebrowser/remote-curl.c' l='577' u='c'/>
+<use f='codebrowser/remote-curl.c' l='579' u='c'/>
+<use f='codebrowser/remote-curl.c' l='683' u='c'/>

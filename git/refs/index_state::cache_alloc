@@ -1,0 +1,24 @@
+<dec f='codebrowser/cache.h' l='336' type='unsigned int'/>
+<offset>128</offset>
+<use f='codebrowser/read-cache.c' l='1195' u='r' c='add_index_entry'/>
+<use f='codebrowser/read-cache.c' l='1195' u='r' c='add_index_entry'/>
+<use f='codebrowser/read-cache.c' l='1195' u='w' c='add_index_entry'/>
+<use f='codebrowser/read-cache.c' l='1195' u='w' c='add_index_entry'/>
+<use f='codebrowser/read-cache.c' l='1195' u='r' c='add_index_entry'/>
+<use f='codebrowser/read-cache.c' l='1195' u='r' c='add_index_entry'/>
+<use f='codebrowser/read-cache.c' l='1768' u='w' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1769' u='r' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1898' u='w' c='discard_index'/>
+<use f='codebrowser/split-index.c' l='84' u='r' c='move_cache_to_base_index'/>
+<use f='codebrowser/split-index.c' l='84' u='r' c='move_cache_to_base_index'/>
+<use f='codebrowser/split-index.c' l='84' u='w' c='move_cache_to_base_index'/>
+<use f='codebrowser/split-index.c' l='84' u='w' c='move_cache_to_base_index'/>
+<use f='codebrowser/split-index.c' l='84' u='r' c='move_cache_to_base_index'/>
+<use f='codebrowser/split-index.c' l='84' u='r' c='move_cache_to_base_index'/>
+<use f='codebrowser/split-index.c' l='141' u='w' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='142' u='r' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='142' u='r' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='142' u='w' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='142' u='w' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='142' u='r' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='142' u='r' c='merge_base_index'/>

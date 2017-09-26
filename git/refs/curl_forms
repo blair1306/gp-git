@@ -1,0 +1,5 @@
+<def f='include/curl/curl.h' l='1859' ll='1862'/>
+<size>16</size>
+<doc f='include/curl/curl.h' l='1858'>/* structure to be used as parameter for CURLFORM_ARRAY */</doc>
+<mbr r='curl_forms::option' o='0' t='CURLformoption'/>
+<mbr r='curl_forms::value' o='64' t='const char *'/>

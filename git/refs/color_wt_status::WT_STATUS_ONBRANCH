@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='20' type='8'/>
+<use f='codebrowser/builtin/commit.c' l='1253' u='r' c='parse_status_slot'/>
+<use f='codebrowser/wt-status.c' l='41' u='r' c='color'/>
+<use f='codebrowser/wt-status.c' l='1559' u='r' c='wt_longstatus_print'/>

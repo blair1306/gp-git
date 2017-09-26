@@ -1,0 +1,24 @@
+<dec f='include/stdio.h' l='846' type='void perror(const char * __s)'/>
+<doc f='include/stdio.h' l='842'>/* Print a message describing the meaning of the value of errno.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/builtin/diff-files.c' l='70' u='c' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-index.c' l='52' u='c' c='cmd_diff_index'/>
+<use f='codebrowser/builtin/diff-index.c' l='56' u='c' c='cmd_diff_index'/>
+<use f='codebrowser/builtin/diff.c' l='149' u='c' c='builtin_diff_index'/>
+<use f='codebrowser/builtin/diff.c' l='153' u='c' c='builtin_diff_index'/>
+<use f='codebrowser/builtin/diff.c' l='251' u='c' c='builtin_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='137' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='208' u='c' c='run_diff_files'/>
+<use f='codebrowser/imap-send.c' l='205' u='c' c='socket_perror'/>
+<use f='codebrowser/imap-send.c' l='215' u='c' c='socket_perror'/>
+<use f='codebrowser/imap-send.c' l='996' u='c' c='imap_open_store'/>
+<use f='codebrowser/mailinfo.c' l='1090' u='c' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1095' u='c' c='mailinfo'/>
+<use f='codebrowser/path.c' l='885' u='c' c='safe_create_dir'/>
+<use f='codebrowser/t/helper/test-delta.c' l='32' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-delta.c' l='38' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-delta.c' l='46' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-delta.c' l='52' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-delta.c' l='73' u='c' c='cmd_main'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/walker.h' l='29' type='void walker_targets_free(int targets, char ** target, const char ** write_ref)'/>
+<use f='codebrowser/http-fetch.c' l='80' u='c' c='cmd_main'/>
+<doc f='codebrowser/walker.h' l='28'>/* Free up loaded targets */</doc>
+<def f='codebrowser/walker.c' l='247' ll='254' type='void walker_targets_free(int targets, char ** target, const char ** write_ref)'/>

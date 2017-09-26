@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='421'/>
+<use f='codebrowser/environment.c' l='111' u='c'/>
+<use f='codebrowser/repository.c' l='44' u='c'/>
+<use f='codebrowser/setup.c' l='324' u='c'/>
+<use f='codebrowser/setup.c' l='325' u='c'/>
+<use f='codebrowser/tmp-objdir.c' l='165' u='c'/>

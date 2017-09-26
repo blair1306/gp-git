@@ -1,0 +1,11 @@
+<dec f='codebrowser/submodule.h' l='43' type='int submodule_config(const char * var, const char * value, void * cb)'/>
+<use f='codebrowser/builtin/checkout.c' l='864' u='c' c='git_checkout_config'/>
+<use f='codebrowser/builtin/fetch.c' l='1365' u='r' c='cmd_fetch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1030' u='r' c='update_clone'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1070' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1217' u='r' c='absorb_git_dirs'/>
+<def f='codebrowser/submodule.c' l='184' ll='194' type='int submodule_config(const char * var, const char * value, void * cb)'/>
+<use f='codebrowser/submodule.c' l='230' u='r' c='load_submodule_cache'/>
+<use f='codebrowser/submodule.c' l='267' u='r' c='gitmodules_config_oid'/>
+<doc f='codebrowser/submodule.c' l='183'>/* Loads all submodule settings from the config. */</doc>
+<use f='codebrowser/unpack-trees.c' l='296' u='r' c='reload_gitmodules_file'/>

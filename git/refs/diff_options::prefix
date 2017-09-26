@@ -1,0 +1,128 @@
+<dec f='codebrowser/diff.h' l='155' type='const char *'/>
+<offset>1216</offset>
+<use f='codebrowser/builtin/diff.c' l='53' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='54' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='55' u='r' c='stuff_change'/>
+<use f='codebrowser/diff-no-index.c' l='282' u='w' c='diff_no_index'/>
+<use f='codebrowser/diff.c' l='3439' u='w' c='diff_setup_done'/>
+<use f='codebrowser/diff.c' l='3440' u='r' c='diff_setup_done'/>
+<use f='codebrowser/diff.c' l='3441' u='r' c='diff_setup_done'/>
+<use f='codebrowser/diff.c' l='3870' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='5096' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5097' u='r' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5137' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5138' u='r' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5164' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/diff.c' l='5165' u='r' c='diff_unmerge'/>
+<use f='codebrowser/revision.c' l='1366' u='r' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1367' u='w' c='init_revisions'/>

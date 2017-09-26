@@ -1,0 +1,83 @@
+<dec f='codebrowser/git-compat-util.h' l='795' type='void * xmemdupz(const void * data, size_t len)'/>
+<use f='codebrowser/apply.c' l='725' u='c' c='find_name_common'/>
+<use f='codebrowser/apply.c' l='1315' u='c' c='git_header_name'/>
+<use f='codebrowser/apply.c' l='3114' u='c' c='apply_binary_fragment'/>
+<use f='codebrowser/archive-tar.c' l='383' u='c' c='tar_filter_config'/>
+<use f='codebrowser/attr.c' l='339' u='c' c='parse_attr'/>
+<use f='codebrowser/blame.c' l='1820' u='c' c='setup_scoreboard'/>
+<use f='codebrowser/builtin/am.c' l='1363' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/am.c' l='1370' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/commit.c' l='587' u='c' c='determine_author_info'/>
+<use f='codebrowser/builtin/commit.c' l='588' u='c' c='determine_author_info'/>
+<use f='codebrowser/builtin/commit.c' l='605' u='c' c='determine_author_info'/>
+<use f='codebrowser/builtin/commit.c' l='606' u='c' c='determine_author_info'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='182' u='c' c='handle_line'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='247' u='c' c='record_person_from_buf'/>
+<use f='codebrowser/builtin/log.c' l='1088' u='c' c='clean_message_id'/>
+<use f='codebrowser/builtin/mv.c' l='42' u='c' c='internal_prefix_pathspec'/>
+<use f='codebrowser/builtin/receive-pack.c' l='493' u='c' c='find_header'/>
+<use f='codebrowser/builtin/remote.c' l='272' u='c' c='config_read_branches'/>
+<use f='codebrowser/builtin/remote.c' l='275' u='c' c='config_read_branches'/>
+<use f='codebrowser/builtin/remote.c' l='278' u='c' c='config_read_branches'/>
+<use f='codebrowser/builtin/repack.c' l='102' u='c' c='get_non_kept_pack_filenames'/>
+<use f='codebrowser/builtin/rev-parse.c' l='468' u='c' c='cmd_parseopt'/>
+<use f='codebrowser/builtin/rev-parse.c' l='471' u='c' c='cmd_parseopt'/>
+<use f='codebrowser/builtin/rev-parse.c' l='496' u='c' c='cmd_parseopt'/>
+<use f='codebrowser/commit.c' l='1362' u='c' c='read_commit_extra_header_lines'/>
+<use f='codebrowser/connect.c' l='65' u='c' c='parse_one_symref_info'/>
+<use f='codebrowser/connect.c' l='559' u='c' c='git_proxy_command_options'/>
+<use f='codebrowser/convert.c' l='770' u='c' c='read_convert_config'/>
+<use f='codebrowser/credential.c' l='53' u='c' c='credential_config_callback'/>
+<use f='codebrowser/credential.c' l='358' u='c' c='credential_from_url'/>
+<use f='codebrowser/diffcore-order.c' l='45' u='c' c='prepare_order'/>
+<use f='codebrowser/dir.c' l='185' u='c' c='common_prefix'/>
+<use f='codebrowser/gpg-interface.c' l='56' u='c' c='parse_gpg_output'/>
+<use f='codebrowser/gpg-interface.c' l='61' u='c' c='parse_gpg_output'/>
+<use f='codebrowser/gpg-interface.c' l='80' u='c' c='check_signature'/>
+<use f='codebrowser/grep.c' l='240' u='c' c='create_grep_pat'/>
+<use f='codebrowser/http-backend.c' l='690' u='c' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='830' u='c' c='xml_cdata'/>
+<use f='codebrowser/http-push.c' l='1554' u='c' c='fetch_symref'/>
+<use f='codebrowser/imap-send.c' l='83' u='c' c='nfvasprintf'/>
+<use f='codebrowser/ll-merge.c' l='258' u='c' c='read_merge_config'/>
+<use f='codebrowser/merge-recursive.c' l='837' u='c' c='update_file_flags'/>
+<use f='codebrowser/parse-options.c' l='229' u='c' c='parse_short_opt'/>
+<use f='codebrowser/path.c' l='690' u='c' c='getpw_str'/>
+<use f='codebrowser/pathspec.c' l='190' u='c' c='parse_pathspec_attr_match'/>
+<use f='codebrowser/pathspec.c' l='310' u='c' c='parse_long_magic'/>
+<use f='codebrowser/pretty.c' l='564' u='c' c='get_header'/>
+<use f='codebrowser/ref-filter.c' l='416' u='c' c='parse_ref_filter_atom'/>
+<use f='codebrowser/ref-filter.c' l='826' u='c' c='copy_line'/>
+<use f='codebrowser/ref-filter.c' l='834' u='c' c='copy_name'/>
+<use f='codebrowser/ref-filter.c' l='848' u='c' c='copy_email'/>
+<use f='codebrowser/ref-filter.c' l='853' u='c' c='copy_subject'/>
+<use f='codebrowser/ref-filter.c' l='1057' u='c' c='grab_sub_body_contents'/>
+<use f='codebrowser/ref-filter.c' l='1059' u='c' c='grab_sub_body_contents'/>
+<use f='codebrowser/ref-filter.c' l='1061' u='c' c='grab_sub_body_contents'/>
+<use f='codebrowser/ref-filter.c' l='1074' u='c' c='grab_sub_body_contents'/>
+<use f='codebrowser/refs.c' l='1518' u='c' c='resolve_gitlink_ref'/>
+<use f='codebrowser/refs/ref-cache.c' l='229' u='c' c='remove_entry_from_dir'/>
+<use f='codebrowser/remote.c' l='2277' u='c' c='add_cas_entry'/>
+<use f='codebrowser/send-pack.c' l='427' u='c' c='send_pack'/>
+<use f='codebrowser/sequencer.c' l='248' u='c' c='get_message'/>
+<use f='codebrowser/setup.c' l='787' u='c' c='setup_bare_git_dir'/>
+<use f='codebrowser/sh-i18n--envsubst.c' l='277' u='c' c='note_variable'/>
+<use f='codebrowser/sha1_file.c' l='2322' u='c' c='cache_or_unpack_entry'/>
+<use f='codebrowser/sha1_file.c' l='3000' u='c' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_name.c' l='1255' u='c' c='interpret_branch_mark'/>
+<use f='codebrowser/shallow.c' l='620' u='c' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/string-list.c' l='286' u='c' c='string_list_split'/>
+<use f='codebrowser/tag.c' l='165' u='c' c='parse_tag_buffer'/>
+<use f='codebrowser/transport.c' l='823' u='c' c='transport_get'/>
+<use f='codebrowser/unix-socket.c' l='14' u='c' c='chdir_len'/>
+<use f='codebrowser/unpack-trees.c' l='1700' u='c' c='verify_absent_1'/>
+<use f='codebrowser/urlmatch.c' l='571' u='c' c='urlmatch_config_entry'/>
+<use f='codebrowser/userdiff.c' l='237' u='c' c='userdiff_config'/>
+<def f='codebrowser/wrapper.c' l='122' ll='125' type='void * xmemdupz(const void * data, size_t len)'/>
+<use f='codebrowser/wrapper.c' l='130' u='c' c='xstrndup'/>
+<doc f='codebrowser/wrapper.c' l='116'>/*
+ * xmemdupz() allocates (len + 1) bytes of memory, duplicates &quot;len&quot; bytes of
+ * &quot;data&quot; to the allocated memory, zero terminates the allocated memory,
+ * and returns a pointer to the allocated memory. If the allocation fails,
+ * the program dies.
+ */</doc>

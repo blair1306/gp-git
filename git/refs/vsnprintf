@@ -1,0 +1,14 @@
+<dec f='include/stdio.h' l='390' type='int vsnprintf(char *restrict __s, size_t __maxlen, const char *restrict __format, struct __va_list_tag * __arg)'/>
+<use f='codebrowser/builtin/index-pack.c' l='356' u='c' c='bad_object'/>
+<use f='codebrowser/builtin/receive-pack.c' l='327' u='c' c='report_message'/>
+<use f='codebrowser/daemon.c' l='79' u='c' c='logreport'/>
+<use f='codebrowser/fast-import.c' l='507' u='c' c='die_nicely'/>
+<use f='codebrowser/http-backend.c' l='71' u='c' c='format_write'/>
+<use f='codebrowser/imap-send.c' l='78' u='c' c='nfvasprintf'/>
+<use f='codebrowser/imap-send.c' l='514' u='c' c='nfsnprintf'/>
+<use f='codebrowser/path.c' l='60' u='c' c='mksnpath'/>
+<use f='codebrowser/strbuf.c' l='279' u='c' c='strbuf_vaddf'/>
+<use f='codebrowser/strbuf.c' l='285' u='c' c='strbuf_vaddf'/>
+<use f='codebrowser/transport-helper.c' l='1130' u='c' c='transfer_debug'/>
+<use f='codebrowser/usage.c' l='14' u='c' c='vreportf'/>
+<use f='codebrowser/wrapper.c' l='642' u='c' c='xsnprintf'/>

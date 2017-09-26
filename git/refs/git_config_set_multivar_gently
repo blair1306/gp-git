@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='68' type='int git_config_set_multivar_gently(const char * , const char * , const char * , int )'/>
+<use f='codebrowser/builtin/clone.c' l='783' u='c' c='write_one_config'/>
+<use f='codebrowser/builtin/remote.c' l='1399' u='c' c='remove_all_fetch_refspecs'/>
+<use f='codebrowser/config.c' l='2391' u='c' c='git_config_set_gently'/>
+<def f='codebrowser/config.c' l='2668' ll='2673' type='int git_config_set_multivar_gently(const char * key, const char * value, const char * value_regex, int multi_replace)'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/submodule.h' l='123'/>
+<use f='codebrowser/submodule.c' l='1578' u='c'/>
+<use f='codebrowser/submodule.c' l='1611' u='c'/>
+<use f='codebrowser/submodule.c' l='1629' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='256' u='c'/>

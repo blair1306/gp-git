@@ -1,0 +1,10 @@
+<dec f='codebrowser/config.h' l='143' type='unsigned int'/>
+<offset>96</offset>
+<use f='codebrowser/config.c' l='1703' u='r' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='r' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='w' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='w' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='r' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='r' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1742' u='w' c='git_configset_init'/>
+<use f='codebrowser/config.c' l='1762' u='w' c='git_configset_clear'/>

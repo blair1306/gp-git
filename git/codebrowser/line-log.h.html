@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>line-log.h source code [codebrowser/line-log.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="diff_ranges,line_log_data,range,range_set "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/line-log.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='line-log.h.html'>line-log.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/LINE_LOG_H">LINE_LOG_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/LINE_LOG_H" data-ref="_M/LINE_LOG_H">LINE_LOG_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="diffcore.h.html">"diffcore.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info" id="rev_info">rev_info</a>;</td></tr>
+<tr><th id="7">7</th><td><b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit" id="commit">commit</a>;</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><i>/* A range [start,end].  Lines are numbered starting at 0, and the</i></td></tr>
+<tr><th id="10">10</th><td><i> * ranges include start but exclude end. */</i></td></tr>
+<tr><th id="11">11</th><td><b>struct</b> <dfn class="type def" id="range" title='range' data-ref="range">range</dfn> {</td></tr>
+<tr><th id="12">12</th><td>	<em>long</em> <dfn class="decl" id="range::start" title='range::start' data-ref="range::start">start</dfn>, <dfn class="decl" id="range::end" title='range::end' data-ref="range::end">end</dfn>;</td></tr>
+<tr><th id="13">13</th><td>};</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><i>/* A set of ranges.  The ranges must always be disjoint and sorted. */</i></td></tr>
+<tr><th id="16">16</th><td><b>struct</b> <dfn class="type def" id="range_set" title='range_set' data-ref="range_set">range_set</dfn> {</td></tr>
+<tr><th id="17">17</th><td>	<em>int</em> <dfn class="decl" id="range_set::alloc" title='range_set::alloc' data-ref="range_set::alloc">alloc</dfn>, <dfn class="decl" id="range_set::nr" title='range_set::nr' data-ref="range_set::nr">nr</dfn>;</td></tr>
+<tr><th id="18">18</th><td>	<b>struct</b> <a class="type" href="#range" title='range' data-ref="range">range</a> *<dfn class="decl" id="range_set::ranges" title='range_set::ranges' data-ref="range_set::ranges">ranges</dfn>;</td></tr>
+<tr><th id="19">19</th><td>};</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><i>/* A diff, encoded as the set of pre- and post-image ranges where the</i></td></tr>
+<tr><th id="22">22</th><td><i> * files differ. A pair of ranges corresponds to a hunk. */</i></td></tr>
+<tr><th id="23">23</th><td><b>struct</b> <dfn class="type def" id="diff_ranges" title='diff_ranges' data-ref="diff_ranges">diff_ranges</dfn> {</td></tr>
+<tr><th id="24">24</th><td>	<b>struct</b> <a class="type" href="#range_set" title='range_set' data-ref="range_set">range_set</a> <dfn class="decl" id="diff_ranges::parent" title='diff_ranges::parent' data-ref="diff_ranges::parent">parent</dfn>;</td></tr>
+<tr><th id="25">25</th><td>	<b>struct</b> <a class="type" href="#range_set" title='range_set' data-ref="range_set">range_set</a> <dfn class="decl" id="diff_ranges::target" title='diff_ranges::target' data-ref="diff_ranges::target">target</dfn>;</td></tr>
+<tr><th id="26">26</th><td>};</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="range_set_init" title='range_set_init' data-ref="range_set_init">range_set_init</dfn>(<b>struct</b> <a class="type" href="#range_set" title='range_set' data-ref="range_set">range_set</a> *, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="20prealloc" title='prealloc' data-type='size_t' data-ref="20prealloc">prealloc</dfn>);</td></tr>
+<tr><th id="29">29</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="range_set_release" title='range_set_release' data-ref="range_set_release">range_set_release</dfn>(<b>struct</b> <a class="type" href="#range_set" title='range_set' data-ref="range_set">range_set</a> *);</td></tr>
+<tr><th id="30">30</th><td><i>/* Range includes start; excludes end */</i></td></tr>
+<tr><th id="31">31</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="range_set_append_unsafe" title='range_set_append_unsafe' data-ref="range_set_append_unsafe">range_set_append_unsafe</dfn>(<b>struct</b> <a class="type" href="#range_set" title='range_set' data-ref="range_set">range_set</a> *, <em>long</em> <dfn class="local col1 decl" id="21start" title='start' data-type='long' data-ref="21start">start</dfn>, <em>long</em> <dfn class="local col2 decl" id="22end" title='end' data-type='long' data-ref="22end">end</dfn>);</td></tr>
+<tr><th id="32">32</th><td><i>/* New range must begin at or after end of last added range */</i></td></tr>
+<tr><th id="33">33</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="range_set_append" title='range_set_append' data-ref="range_set_append">range_set_append</dfn>(<b>struct</b> <a class="type" href="#range_set" title='range_set' data-ref="range_set">range_set</a> *, <em>long</em> <dfn class="local col3 decl" id="23start" title='start' data-type='long' data-ref="23start">start</dfn>, <em>long</em> <dfn class="local col4 decl" id="24end" title='end' data-type='long' data-ref="24end">end</dfn>);</td></tr>
+<tr><th id="34">34</th><td><i>/*</i></td></tr>
+<tr><th id="35">35</th><td><i> * In-place pass of sorting and merging the ranges in the range set,</i></td></tr>
+<tr><th id="36">36</th><td><i> * to sort and make the ranges disjoint.</i></td></tr>
+<tr><th id="37">37</th><td><i> */</i></td></tr>
+<tr><th id="38">38</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="sort_and_merge_range_set" title='sort_and_merge_range_set' data-ref="sort_and_merge_range_set">sort_and_merge_range_set</dfn>(<b>struct</b> <a class="type" href="#range_set" title='range_set' data-ref="range_set">range_set</a> *);</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i>/* Linked list of interesting files and their associated ranges.  The</i></td></tr>
+<tr><th id="41">41</th><td><i> * list must be kept sorted by path.</i></td></tr>
+<tr><th id="42">42</th><td><i> *</i></td></tr>
+<tr><th id="43">43</th><td><i> * For simplicity, even though this is highly redundant, each</i></td></tr>
+<tr><th id="44">44</th><td><i> * line_log_data owns its 'path'.</i></td></tr>
+<tr><th id="45">45</th><td><i> */</i></td></tr>
+<tr><th id="46">46</th><td><b>struct</b> <dfn class="type def" id="line_log_data" title='line_log_data' data-ref="line_log_data">line_log_data</dfn> {</td></tr>
+<tr><th id="47">47</th><td>	<b>struct</b> <a class="type" href="#line_log_data" title='line_log_data' data-ref="line_log_data">line_log_data</a> *<dfn class="decl" id="line_log_data::next" title='line_log_data::next' data-ref="line_log_data::next">next</dfn>;</td></tr>
+<tr><th id="48">48</th><td>	<em>char</em> *<dfn class="decl" id="line_log_data::path" title='line_log_data::path' data-ref="line_log_data::path">path</dfn>;</td></tr>
+<tr><th id="49">49</th><td>	<em>char</em> <dfn class="decl" id="line_log_data::status" title='line_log_data::status' data-ref="line_log_data::status">status</dfn>;</td></tr>
+<tr><th id="50">50</th><td>	<b>struct</b> <a class="type" href="#range_set" title='range_set' data-ref="range_set">range_set</a> <dfn class="decl" id="line_log_data::ranges" title='line_log_data::ranges' data-ref="line_log_data::ranges">ranges</dfn>;</td></tr>
+<tr><th id="51">51</th><td>	<em>int</em> <dfn class="decl" id="line_log_data::arg_alloc" title='line_log_data::arg_alloc' data-ref="line_log_data::arg_alloc">arg_alloc</dfn>, <dfn class="decl" id="line_log_data::arg_nr" title='line_log_data::arg_nr' data-ref="line_log_data::arg_nr">arg_nr</dfn>;</td></tr>
+<tr><th id="52">52</th><td>	<em>const</em> <em>char</em> **<dfn class="decl" id="line_log_data::args" title='line_log_data::args' data-ref="line_log_data::args">args</dfn>;</td></tr>
+<tr><th id="53">53</th><td>	<b>struct</b> <a class="type" href="diffcore.h.html#diff_filepair" title='diff_filepair' data-ref="diff_filepair">diff_filepair</a> *<dfn class="decl" id="line_log_data::pair" title='line_log_data::pair' data-ref="line_log_data::pair">pair</dfn>;</td></tr>
+<tr><th id="54">54</th><td>	<b>struct</b> <a class="type" href="#diff_ranges" title='diff_ranges' data-ref="diff_ranges">diff_ranges</a> <dfn class="decl" id="line_log_data::diff" title='line_log_data::diff' data-ref="line_log_data::diff">diff</dfn>;</td></tr>
+<tr><th id="55">55</th><td>};</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="line_log_init" title='line_log_init' data-ref="line_log_init">line_log_init</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col5 decl" id="25rev" title='rev' data-type='struct rev_info *' data-ref="25rev">rev</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="26prefix" title='prefix' data-type='const char *' data-ref="26prefix">prefix</dfn>, <b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col7 decl" id="27args" title='args' data-type='struct string_list *' data-ref="27args">args</dfn>);</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="line_log_filter" title='line_log_filter' data-ref="line_log_filter">line_log_filter</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col8 decl" id="28rev" title='rev' data-type='struct rev_info *' data-ref="28rev">rev</dfn>);</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="line_log_print" title='line_log_print' data-ref="line_log_print">line_log_print</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col9 decl" id="29rev" title='rev' data-type='struct rev_info *' data-ref="29rev">rev</dfn>, <b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col0 decl" id="30commit" title='commit' data-type='struct commit *' data-ref="30commit">commit</dfn>);</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="1">endif</span> /* LINE_LOG_H */</u></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/blame.c.html'>codebrowser/builtin/blame.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

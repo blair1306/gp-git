@@ -1,0 +1,13 @@
+<dec f='codebrowser/strbuf.h' l='598' type='int strbuf_check_branch_ref(struct strbuf * sb, const char * name)'/>
+<doc f='codebrowser/strbuf.h' l='592'>/*
+ * Like strbuf_branchname() above, but confirm that the result is
+ * syntactically valid to be used as a local branch name in refs/heads/.
+ *
+ * The return value is &quot;0&quot; if the result is valid, and &quot;-1&quot; otherwise.
+ */</doc>
+<use f='codebrowser/branch.c' l='184' u='c' c='validate_new_branchname'/>
+<use f='codebrowser/builtin/branch.c' l='469' u='c' c='rename_branch'/>
+<use f='codebrowser/builtin/check-ref-format.c' l='45' u='c' c='check_ref_format_branch'/>
+<use f='codebrowser/builtin/worktree.c' l='208' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='359' u='c' c='add'/>
+<def f='codebrowser/sha1_name.c' l='1331' ll='1338' type='int strbuf_check_branch_ref(struct strbuf * sb, const char * name)'/>

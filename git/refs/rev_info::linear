@@ -1,0 +1,8 @@
+<dec f='codebrowser/revision.h' l='156' type='unsigned int'/>
+<offset>993</offset>
+<use f='codebrowser/log-tree.c' l='870' u='r' c='log_tree_commit'/>
+<use f='codebrowser/log-tree.c' l='878' u='r' c='log_tree_commit'/>
+<use f='codebrowser/revision.c' l='3104' u='w' c='track_linear'/>
+<use f='codebrowser/revision.c' l='3112' u='w' c='track_linear'/>
+<use f='codebrowser/revision.c' l='3115' u='r' c='track_linear'/>
+<use f='codebrowser/revision.c' l='3334' u='w' c='get_revision'/>

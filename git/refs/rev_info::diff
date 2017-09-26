@@ -1,0 +1,21 @@
+<dec f='codebrowser/revision.h' l='126' type='unsigned int'/>
+<use f='codebrowser/bisect.c' l='885' u='w' c='show_diff_tree'/>
+<offset>966</offset>
+<use f='codebrowser/builtin/am.c' l='1396' u='w' c='write_commit_patch'/>
+<use f='codebrowser/builtin/am.c' l='1430' u='w' c='write_index_patch'/>
+<use f='codebrowser/builtin/commit.c' l='1476' u='w' c='print_summary'/>
+<use f='codebrowser/builtin/diff-tree.c' l='115' u='w' c='cmd_diff_tree'/>
+<use f='codebrowser/builtin/log.c' l='456' u='w' c='cmd_whatchanged'/>
+<use f='codebrowser/builtin/log.c' l='573' u='w' c='cmd_show'/>
+<use f='codebrowser/builtin/log.c' l='1513' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/rev-list.c' l='357' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/log-tree.c' l='797' u='r' c='log_tree_diff'/>
+<use f='codebrowser/revision.c' l='1873' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1876' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1882' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1886' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1986' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2329' u='w' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2335' u='w' c='setup_revisions'/>
+<use f='codebrowser/sequencer.c' l='1782' u='w' c='make_patch'/>
+<use f='codebrowser/sequencer.c' l='2145' u='w' c='pick_commits'/>

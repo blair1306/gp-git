@@ -1,0 +1,7 @@
+<dec f='codebrowser/apply.h' l='89' type='int'/>
+<use f='codebrowser/apply.c' l='2233' u='r' c='show_stats'/>
+<use f='codebrowser/apply.c' l='4222' u='r' c='patch_stats'/>
+<use f='codebrowser/apply.c' l='4223' u='w' c='patch_stats'/>
+<use f='codebrowser/apply.c' l='4229' u='r' c='patch_stats'/>
+<use f='codebrowser/apply.c' l='4230' u='w' c='patch_stats'/>
+<offset>1888</offset>

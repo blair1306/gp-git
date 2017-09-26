@@ -1,0 +1,6 @@
+<def f='codebrowser/decorate.h' l='9' ll='13'/>
+<size>24</size>
+<mbr r='decoration::name' o='0' t='const char *'/>
+<mbr r='decoration::size' o='64' t='unsigned int'/>
+<mbr r='decoration::nr' o='96' t='unsigned int'/>
+<mbr r='decoration::hash' o='128' t='struct object_decoration *'/>

@@ -1,0 +1,26 @@
+<dec f='codebrowser/parse-options.h' l='21' type='13'/>
+<use f='codebrowser/builtin/blame.c' l='690' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='690' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='690' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='690' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/update-index.c' l='946' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='946' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='974' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='974' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='978' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='978' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='982' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='982' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='986' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='986' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='946' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='946' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='974' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='974' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='978' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='978' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='982' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='982' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='986' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='986' u='r' c='cmd_update_index'/>
+<use f='codebrowser/parse-options.c' l='96' c='get_value'/>

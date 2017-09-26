@@ -1,0 +1,32 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='58' type='void SHA1DCInit(SHA1_CTX * )'/>
+<doc f='codebrowser/sha1dc/sha1.h' l='57'>/* Initialize SHA-1 context. */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='328' macro='1' u='c'/>
+<use f='codebrowser/builtin/index-pack.c' l='451' macro='1' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='64' macro='1' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='80' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='432' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='446' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='452' macro='1' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='567' macro='1' u='c'/>
+<use f='codebrowser/bulk-checkin.c' l='203' macro='1' u='c'/>
+<use f='codebrowser/csum-file.c' l='152' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4583' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='1099' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='1248' macro='1' u='c'/>
+<use f='codebrowser/http-push.c' l='769' macro='1' u='c'/>
+<use f='codebrowser/http.c' l='2198' macro='1' u='c'/>
+<use f='codebrowser/http.c' l='2232' macro='1' u='c'/>
+<use f='codebrowser/pack-check.c' l='66' macro='1' u='c'/>
+<use f='codebrowser/pack-check.c' l='177' macro='1' u='c'/>
+<use f='codebrowser/pack-write.c' l='217' macro='1' u='c'/>
+<use f='codebrowser/pack-write.c' l='218' macro='1' u='c'/>
+<use f='codebrowser/pack-write.c' l='265' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='1527' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='2230' macro='1' u='c'/>
+<use f='codebrowser/rerere.c' l='413' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1657' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3187' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3329' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3906' macro='1' u='c'/>
+<def f='codebrowser/sha1dc/sha1.c' l='1756' ll='1770' type='void SHA1DCInit(SHA1_CTX * ctx)'/>
+<use f='codebrowser/t/helper/test-sha1.c' l='28' macro='1' u='c'/>

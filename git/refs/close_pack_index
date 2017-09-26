@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1679' type='void close_pack_index(struct packed_git * )'/>
+<doc f='codebrowser/cache.h' l='1675'>/*
+ * munmap the index file for the specified packfile (if it is
+ * currently mmapped).
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='1569' u='c' c='read_idx_option'/>
+<use f='codebrowser/http.c' l='1934' u='c' c='fetch_and_setup_pack_index'/>
+<use f='codebrowser/http.c' l='2010' u='c' c='finish_http_pack_request'/>
+<use f='codebrowser/sha1_file.c' l='985' u='c' c='close_pack'/>
+<def f='codebrowser/sha1_file.c' l='1082' ll='1088' type='void close_pack_index(struct packed_git * p)'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/rerere.h' l='26' type='int rerere(int )'/>
+<use f='codebrowser/apply.c' l='4609' u='c' c='write_out_results'/>
+<use f='codebrowser/builtin/am.c' l='1624' u='c' c='fall_back_threeway'/>
+<use f='codebrowser/builtin/am.c' l='1922' u='c' c='am_resolve'/>
+<use f='codebrowser/builtin/commit.c' l='1807' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/merge.c' l='853' u='c' c='suggest_conflicts'/>
+<use f='codebrowser/builtin/rerere.c' l='73' u='c' c='cmd_rerere'/>
+<def f='codebrowser/rerere.c' l='912' ll='923' type='int rerere(int flags)'/>
+<doc f='codebrowser/rerere.c' l='907'>/*
+ * The main entry point that is called internally from codepaths that
+ * perform mergy operations, possibly leaving conflicted index entries
+ * and working tree files.
+ */</doc>
+<use f='codebrowser/sequencer.c' l='1131' u='c' c='do_pick_commit'/>

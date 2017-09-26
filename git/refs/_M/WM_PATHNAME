@@ -1,0 +1,11 @@
+<dec f='codebrowser/wildmatch.h' l='5'/>
+<use f='codebrowser/dir.c' l='94' u='c'/>
+<use f='codebrowser/dir.c' l='963' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1651' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1666' u='c'/>
+<use f='codebrowser/t/helper/test-wildmatch.c' l='14' u='c'/>
+<use f='codebrowser/t/helper/test-wildmatch.c' l='16' u='c'/>
+<use f='codebrowser/wildmatch.c' l='81' u='c'/>
+<use f='codebrowser/wildmatch.c' l='88' u='c'/>
+<use f='codebrowser/wildmatch.c' l='111' u='c'/>
+<use f='codebrowser/wildmatch.c' l='265' u='c'/>

@@ -1,0 +1,25 @@
+<dec f='codebrowser/refs/ref-cache.h' l='156' type='unsigned char'/>
+<use f='codebrowser/refs/files-backend.c' l='260' u='w' c='get_loose_ref_cache'/>
+<offset>0</offset>
+<doc f='codebrowser/refs/ref-cache.h' l='156'>/* ISSYMREF? ISPACKED? */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='209' u='w' c='read_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='258' u='w' c='read_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='271' u='w' c='read_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='350' u='w' c='add_packed_ref'/>
+<use f='codebrowser/refs/ref-cache.c' l='22' u='r' c='get_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='24' u='r' c='get_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='29' u='w' c='get_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='42' u='w' c='create_ref_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='61' u='r' c='free_ref_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='97' u='w' c='create_dir_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='213' u='r' c='find_ref_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='274' u='r' c='is_dup_ref'/>
+<use f='codebrowser/refs/ref-cache.c' l='274' u='r' c='is_dup_ref'/>
+<use f='codebrowser/refs/ref-cache.c' l='360' u='r' c='prime_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='476' u='r' c='cache_ref_iterator_advance'/>
+<use f='codebrowser/refs/ref-cache.c' l='488' u='r' c='cache_ref_iterator_advance'/>
+<use f='codebrowser/refs/ref-cache.c' l='498' u='r' c='peel_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='500' u='w' c='peel_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='507' u='r' c='peel_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='509' u='r' c='peel_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='514' u='w' c='peel_entry'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/apply.h' l='110' type='int'/>
+<use f='codebrowser/apply.c' l='51' u='w' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='89' u='w' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='1643' u='r' c='record_ws_error'/>
+<use f='codebrowser/apply.c' l='1644' u='r' c='record_ws_error'/>
+<use f='codebrowser/apply.c' l='4851' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4852' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4854' u='r' c='apply_all_patches'/>
+<offset>2464</offset>

@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='1239' macro='1' type='111'/>
+<use f='codebrowser/http.c' l='498' u='r' c='init_curl_proxy_auth'/>
+<use f='codebrowser/http.c' l='506' u='r' c='init_curl_proxy_auth'/>
+<use f='codebrowser/http.c' l='510' u='r' c='init_curl_proxy_auth'/>

@@ -1,0 +1,30 @@
+<dec f='codebrowser/revision.h' l='191' type='int'/>
+<offset>9824</offset>
+<use f='codebrowser/builtin/add.c' l='119' u='w' c='add_files_to_cache'/>
+<use f='codebrowser/builtin/diff-files.c' l='36' u='w' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-files.c' l='38' u='w' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-files.c' l='40' u='w' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-files.c' l='57' u='r' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-files.c' l='65' u='r' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-index.c' l='47' u='r' c='cmd_diff_index'/>
+<use f='codebrowser/builtin/diff.c' l='143' u='r' c='builtin_diff_index'/>
+<use f='codebrowser/builtin/diff.c' l='225' u='w' c='builtin_diff_files'/>
+<use f='codebrowser/builtin/diff.c' l='227' u='w' c='builtin_diff_files'/>
+<use f='codebrowser/builtin/diff.c' l='229' u='w' c='builtin_diff_files'/>
+<use f='codebrowser/builtin/diff.c' l='245' u='r' c='builtin_diff_files'/>
+<use f='codebrowser/builtin/log.c' l='369' u='r' c='cmd_log_walk'/>
+<use f='codebrowser/builtin/log.c' l='374' u='w' c='cmd_log_walk'/>
+<use f='codebrowser/builtin/log.c' l='1643' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/rev-list.c' l='375' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='383' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/diff-lib.c' l='90' u='r' c='run_diff_files'/>
+<use f='codebrowser/diff-no-index.c' l='284' u='w' c='diff_no_index'/>
+<use f='codebrowser/revision.c' l='1354' u='w' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1708' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1716' u='a' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1717' u='r' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1723' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1727' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='3259' u='r' c='get_revision_internal'/>
+<use f='codebrowser/revision.c' l='3270' u='r' c='get_revision_internal'/>
+<use f='codebrowser/revision.c' l='3271' u='w' c='get_revision_internal'/>

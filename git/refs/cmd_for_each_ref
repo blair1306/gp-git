@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='166' type='int cmd_for_each_ref(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/for-each-ref.c' l='17' ll='87' type='int cmd_for_each_ref(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='401'/>
+<use f='codebrowser/git.c' l='401'/>
+<use f='codebrowser/git.c' l='401'/>
+<use f='codebrowser/git.c' l='401'/>

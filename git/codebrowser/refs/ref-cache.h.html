@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ref-cache.h source code [codebrowser/refs/ref-cache.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ref_cache,ref_dir,ref_entry,ref_value "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/refs/ref-cache.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>refs</a>/<a href='ref-cache.h.html'>ref-cache.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/REFS_REF_CACHE_H">REFS_REF_CACHE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/REFS_REF_CACHE_H" data-ref="_M/REFS_REF_CACHE_H">REFS_REF_CACHE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <a class="type" href="#ref_dir" title='ref_dir' data-ref="ref_dir">ref_dir</a>;</td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/*</i></td></tr>
+<tr><th id="7">7</th><td><i> * If this ref_cache is filled lazily, this function is used to load</i></td></tr>
+<tr><th id="8">8</th><td><i> * information into the specified ref_dir (shallow or deep, at the</i></td></tr>
+<tr><th id="9">9</th><td><i> * option of the ref_store). dirname includes a trailing slash.</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td><b>typedef</b> <em>void</em> <dfn class="typedef" id="fill_ref_dir_fn" title='fill_ref_dir_fn' data-type='void (struct ref_store *, struct ref_dir *, const char *)' data-ref="fill_ref_dir_fn">fill_ref_dir_fn</dfn>(<b>struct</b> <a class="type" href="refs-internal.h.html#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col1 decl" id="1ref_store" title='ref_store' data-type='struct ref_store *' data-ref="1ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="12">12</th><td>			     <b>struct</b> <a class="type" href="#ref_dir" title='ref_dir' data-ref="ref_dir">ref_dir</a> *<dfn class="local col2 decl" id="2dir" title='dir' data-type='struct ref_dir *' data-ref="2dir">dir</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3dirname" title='dirname' data-type='const char *' data-ref="3dirname">dirname</dfn>);</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><b>struct</b> <dfn class="type def" id="ref_cache" title='ref_cache' data-ref="ref_cache">ref_cache</dfn> {</td></tr>
+<tr><th id="15">15</th><td>	<b>struct</b> <a class="type" href="#ref_entry" title='ref_entry' data-ref="ref_entry">ref_entry</a> *<dfn class="decl" id="ref_cache::root" title='ref_cache::root' data-ref="ref_cache::root">root</dfn>;</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td>	<i>/* A pointer to the ref_store whose cache this is: */</i></td></tr>
+<tr><th id="18">18</th><td>	<b>struct</b> <a class="type" href="refs-internal.h.html#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="decl" id="ref_cache::ref_store" title='ref_cache::ref_store' data-ref="ref_cache::ref_store">ref_store</dfn>;</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td>	<i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i>	 * Function used (if necessary) to lazily-fill cache. May be</i></td></tr>
+<tr><th id="22">22</th><td><i>	 * NULL.</i></td></tr>
+<tr><th id="23">23</th><td><i>	 */</i></td></tr>
+<tr><th id="24">24</th><td>	<a class="typedef" href="#fill_ref_dir_fn" title='fill_ref_dir_fn' data-type='void (struct ref_store *, struct ref_dir *, const char *)' data-ref="fill_ref_dir_fn">fill_ref_dir_fn</a> *<dfn class="decl" id="ref_cache::fill_ref_dir" title='ref_cache::fill_ref_dir' data-ref="ref_cache::fill_ref_dir">fill_ref_dir</dfn>;</td></tr>
+<tr><th id="25">25</th><td>};</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><i>/*</i></td></tr>
+<tr><th id="28">28</th><td><i> * Information used (along with the information in ref_entry) to</i></td></tr>
+<tr><th id="29">29</th><td><i> * describe a single cached reference.  This data structure only</i></td></tr>
+<tr><th id="30">30</th><td><i> * occurs embedded in a union in struct ref_entry, and only when</i></td></tr>
+<tr><th id="31">31</th><td><i> * (ref_entry-&gt;flag &amp; REF_DIR) is zero.</i></td></tr>
+<tr><th id="32">32</th><td><i> */</i></td></tr>
+<tr><th id="33">33</th><td><b>struct</b> <dfn class="type def" id="ref_value" title='ref_value' data-ref="ref_value">ref_value</dfn> {</td></tr>
+<tr><th id="34">34</th><td>	<i>/*</i></td></tr>
+<tr><th id="35">35</th><td><i>	 * The name of the object to which this reference resolves</i></td></tr>
+<tr><th id="36">36</th><td><i>	 * (which may be a tag object).  If REF_ISBROKEN, this is</i></td></tr>
+<tr><th id="37">37</th><td><i>	 * null.  If REF_ISSYMREF, then this is the name of the object</i></td></tr>
+<tr><th id="38">38</th><td><i>	 * referred to by the last reference in the symlink chain.</i></td></tr>
+<tr><th id="39">39</th><td><i>	 */</i></td></tr>
+<tr><th id="40">40</th><td>	<b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="ref_value::oid" title='ref_value::oid' data-ref="ref_value::oid">oid</dfn>;</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>	<i>/*</i></td></tr>
+<tr><th id="43">43</th><td><i>	 * If REF_KNOWS_PEELED, then this field holds the peeled value</i></td></tr>
+<tr><th id="44">44</th><td><i>	 * of this reference, or null if the reference is known not to</i></td></tr>
+<tr><th id="45">45</th><td><i>	 * be peelable.  See the documentation for peel_ref() for an</i></td></tr>
+<tr><th id="46">46</th><td><i>	 * exact definition of "peelable".</i></td></tr>
+<tr><th id="47">47</th><td><i>	 */</i></td></tr>
+<tr><th id="48">48</th><td>	<b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="ref_value::peeled" title='ref_value::peeled' data-ref="ref_value::peeled">peeled</dfn>;</td></tr>
+<tr><th id="49">49</th><td>};</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><i>/*</i></td></tr>
+<tr><th id="52">52</th><td><i> * Information used (along with the information in ref_entry) to</i></td></tr>
+<tr><th id="53">53</th><td><i> * describe a level in the hierarchy of references.  This data</i></td></tr>
+<tr><th id="54">54</th><td><i> * structure only occurs embedded in a union in struct ref_entry, and</i></td></tr>
+<tr><th id="55">55</th><td><i> * only when (ref_entry.flag &amp; REF_DIR) is set.  In that case,</i></td></tr>
+<tr><th id="56">56</th><td><i> * (ref_entry.flag &amp; REF_INCOMPLETE) determines whether the references</i></td></tr>
+<tr><th id="57">57</th><td><i> * in the directory have already been read:</i></td></tr>
+<tr><th id="58">58</th><td><i> *</i></td></tr>
+<tr><th id="59">59</th><td><i> *     (ref_entry.flag &amp; REF_INCOMPLETE) unset -- a directory of loose</i></td></tr>
+<tr><th id="60">60</th><td><i> *         or packed references, already read.</i></td></tr>
+<tr><th id="61">61</th><td><i> *</i></td></tr>
+<tr><th id="62">62</th><td><i> *     (ref_entry.flag &amp; REF_INCOMPLETE) set -- a directory of loose</i></td></tr>
+<tr><th id="63">63</th><td><i> *         references that hasn't been read yet (nor has any of its</i></td></tr>
+<tr><th id="64">64</th><td><i> *         subdirectories).</i></td></tr>
+<tr><th id="65">65</th><td><i> *</i></td></tr>
+<tr><th id="66">66</th><td><i> * Entries within a directory are stored within a growable array of</i></td></tr>
+<tr><th id="67">67</th><td><i> * pointers to ref_entries (entries, nr, alloc).  Entries 0 &lt;= i &lt;</i></td></tr>
+<tr><th id="68">68</th><td><i> * sorted are sorted by their component name in strcmp() order and the</i></td></tr>
+<tr><th id="69">69</th><td><i> * remaining entries are unsorted.</i></td></tr>
+<tr><th id="70">70</th><td><i> *</i></td></tr>
+<tr><th id="71">71</th><td><i> * Loose references are read lazily, one directory at a time.  When a</i></td></tr>
+<tr><th id="72">72</th><td><i> * directory of loose references is read, then all of the references</i></td></tr>
+<tr><th id="73">73</th><td><i> * in that directory are stored, and REF_INCOMPLETE stubs are created</i></td></tr>
+<tr><th id="74">74</th><td><i> * for any subdirectories, but the subdirectories themselves are not</i></td></tr>
+<tr><th id="75">75</th><td><i> * read.  The reading is triggered by get_ref_dir().</i></td></tr>
+<tr><th id="76">76</th><td><i> */</i></td></tr>
+<tr><th id="77">77</th><td><b>struct</b> <dfn class="type def" id="ref_dir" title='ref_dir' data-ref="ref_dir">ref_dir</dfn> {</td></tr>
+<tr><th id="78">78</th><td>	<em>int</em> <dfn class="decl" id="ref_dir::nr" title='ref_dir::nr' data-ref="ref_dir::nr">nr</dfn>, <dfn class="decl" id="ref_dir::alloc" title='ref_dir::alloc' data-ref="ref_dir::alloc">alloc</dfn>;</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>	<i>/*</i></td></tr>
+<tr><th id="81">81</th><td><i>	 * Entries with index 0 &lt;= i &lt; sorted are sorted by name.  New</i></td></tr>
+<tr><th id="82">82</th><td><i>	 * entries are appended to the list unsorted, and are sorted</i></td></tr>
+<tr><th id="83">83</th><td><i>	 * only when required; thus we avoid the need to sort the list</i></td></tr>
+<tr><th id="84">84</th><td><i>	 * after the addition of every reference.</i></td></tr>
+<tr><th id="85">85</th><td><i>	 */</i></td></tr>
+<tr><th id="86">86</th><td>	<em>int</em> <dfn class="decl" id="ref_dir::sorted" title='ref_dir::sorted' data-ref="ref_dir::sorted">sorted</dfn>;</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td>	<i>/* The ref_cache containing this entry: */</i></td></tr>
+<tr><th id="89">89</th><td>	<b>struct</b> <a class="type" href="#ref_cache" title='ref_cache' data-ref="ref_cache">ref_cache</a> *<dfn class="decl" id="ref_dir::cache" title='ref_dir::cache' data-ref="ref_dir::cache">cache</dfn>;</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>	<b>struct</b> <a class="type" href="#ref_entry" title='ref_entry' data-ref="ref_entry">ref_entry</a> **<dfn class="decl" id="ref_dir::entries" title='ref_dir::entries' data-ref="ref_dir::entries">entries</dfn>;</td></tr>
+<tr><th id="92">92</th><td>};</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><i>/*</i></td></tr>
+<tr><th id="95">95</th><td><i> * Bit values for ref_entry::flag.  REF_ISSYMREF=0x01,</i></td></tr>
+<tr><th id="96">96</th><td><i> * REF_ISPACKED=0x02, REF_ISBROKEN=0x04 and REF_BAD_NAME=0x08 are</i></td></tr>
+<tr><th id="97">97</th><td><i> * public values; see refs.h.</i></td></tr>
+<tr><th id="98">98</th><td><i> */</i></td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><i>/*</i></td></tr>
+<tr><th id="101">101</th><td><i> * The field ref_entry-&gt;u.value.peeled of this value entry contains</i></td></tr>
+<tr><th id="102">102</th><td><i> * the correct peeled value for the reference, which might be</i></td></tr>
+<tr><th id="103">103</th><td><i> * null_sha1 if the reference is not a tag or if it is broken.</i></td></tr>
+<tr><th id="104">104</th><td><i> */</i></td></tr>
+<tr><th id="105">105</th><td><u>#define <dfn class="macro" id="_M/REF_KNOWS_PEELED" data-ref="_M/REF_KNOWS_PEELED">REF_KNOWS_PEELED</dfn> 0x10</u></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><i>/* ref_entry represents a directory of references */</i></td></tr>
+<tr><th id="108">108</th><td><u>#define <dfn class="macro" id="_M/REF_DIR" data-ref="_M/REF_DIR">REF_DIR</dfn> 0x20</u></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><i>/*</i></td></tr>
+<tr><th id="111">111</th><td><i> * Entry has not yet been read from disk (used only for REF_DIR</i></td></tr>
+<tr><th id="112">112</th><td><i> * entries representing loose references)</i></td></tr>
+<tr><th id="113">113</th><td><i> */</i></td></tr>
+<tr><th id="114">114</th><td><u>#define <dfn class="macro" id="_M/REF_INCOMPLETE" data-ref="_M/REF_INCOMPLETE">REF_INCOMPLETE</dfn> 0x40</u></td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><i>/*</i></td></tr>
+<tr><th id="117">117</th><td><i> * A ref_entry represents either a reference or a "subdirectory" of</i></td></tr>
+<tr><th id="118">118</th><td><i> * references.</i></td></tr>
+<tr><th id="119">119</th><td><i> *</i></td></tr>
+<tr><th id="120">120</th><td><i> * Each directory in the reference namespace is represented by a</i></td></tr>
+<tr><th id="121">121</th><td><i> * ref_entry with (flags &amp; REF_DIR) set and containing a subdir member</i></td></tr>
+<tr><th id="122">122</th><td><i> * that holds the entries in that directory that have been read so</i></td></tr>
+<tr><th id="123">123</th><td><i> * far.  If (flags &amp; REF_INCOMPLETE) is set, then the directory and</i></td></tr>
+<tr><th id="124">124</th><td><i> * its subdirectories haven't been read yet.  REF_INCOMPLETE is only</i></td></tr>
+<tr><th id="125">125</th><td><i> * used for loose reference directories.</i></td></tr>
+<tr><th id="126">126</th><td><i> *</i></td></tr>
+<tr><th id="127">127</th><td><i> * References are represented by a ref_entry with (flags &amp; REF_DIR)</i></td></tr>
+<tr><th id="128">128</th><td><i> * unset and a value member that describes the reference's value.  The</i></td></tr>
+<tr><th id="129">129</th><td><i> * flag member is at the ref_entry level, but it is also needed to</i></td></tr>
+<tr><th id="130">130</th><td><i> * interpret the contents of the value field (in other words, a</i></td></tr>
+<tr><th id="131">131</th><td><i> * ref_value object is not very much use without the enclosing</i></td></tr>
+<tr><th id="132">132</th><td><i> * ref_entry).</i></td></tr>
+<tr><th id="133">133</th><td><i> *</i></td></tr>
+<tr><th id="134">134</th><td><i> * Reference names cannot end with slash and directories' names are</i></td></tr>
+<tr><th id="135">135</th><td><i> * always stored with a trailing slash (except for the top-level</i></td></tr>
+<tr><th id="136">136</th><td><i> * directory, which is always denoted by "").  This has two nice</i></td></tr>
+<tr><th id="137">137</th><td><i> * consequences: (1) when the entries in each subdir are sorted</i></td></tr>
+<tr><th id="138">138</th><td><i> * lexicographically by name (as they usually are), the references in</i></td></tr>
+<tr><th id="139">139</th><td><i> * a whole tree can be generated in lexicographic order by traversing</i></td></tr>
+<tr><th id="140">140</th><td><i> * the tree in left-to-right, depth-first order; (2) the names of</i></td></tr>
+<tr><th id="141">141</th><td><i> * references and subdirectories cannot conflict, and therefore the</i></td></tr>
+<tr><th id="142">142</th><td><i> * presence of an empty subdirectory does not block the creation of a</i></td></tr>
+<tr><th id="143">143</th><td><i> * similarly-named reference.  (The fact that reference names with the</i></td></tr>
+<tr><th id="144">144</th><td><i> * same leading components can conflict *with each other* is a</i></td></tr>
+<tr><th id="145">145</th><td><i> * separate issue that is regulated by refs_verify_refname_available().)</i></td></tr>
+<tr><th id="146">146</th><td><i> *</i></td></tr>
+<tr><th id="147">147</th><td><i> * Please note that the name field contains the fully-qualified</i></td></tr>
+<tr><th id="148">148</th><td><i> * reference (or subdirectory) name.  Space could be saved by only</i></td></tr>
+<tr><th id="149">149</th><td><i> * storing the relative names.  But that would require the full names</i></td></tr>
+<tr><th id="150">150</th><td><i> * to be generated on the fly when iterating in do_for_each_ref(), and</i></td></tr>
+<tr><th id="151">151</th><td><i> * would break callback functions, who have always been able to assume</i></td></tr>
+<tr><th id="152">152</th><td><i> * that the name strings that they are passed will not be freed during</i></td></tr>
+<tr><th id="153">153</th><td><i> * the iteration.</i></td></tr>
+<tr><th id="154">154</th><td><i> */</i></td></tr>
+<tr><th id="155">155</th><td><b>struct</b> <dfn class="type def" id="ref_entry" title='ref_entry' data-ref="ref_entry">ref_entry</dfn> {</td></tr>
+<tr><th id="156">156</th><td>	<em>unsigned</em> <em>char</em> <dfn class="decl" id="ref_entry::flag" title='ref_entry::flag' data-ref="ref_entry::flag">flag</dfn>; <i>/* ISSYMREF? ISPACKED? */</i></td></tr>
+<tr><th id="157">157</th><td>	<b>union</b> {</td></tr>
+<tr><th id="158">158</th><td>		<b>struct</b> <a class="type" href="#ref_value" title='ref_value' data-ref="ref_value">ref_value</a> <dfn class="decl" id="ref_entry::(anonymous)::value" title='ref_entry::(anonymous union)::value' data-ref="ref_entry::(anonymous)::value">value</dfn>; <i>/* if not (flags&amp;REF_DIR) */</i></td></tr>
+<tr><th id="159">159</th><td>		<b>struct</b> <a class="type" href="#ref_dir" title='ref_dir' data-ref="ref_dir">ref_dir</a> <dfn class="decl" id="ref_entry::(anonymous)::subdir" title='ref_entry::(anonymous union)::subdir' data-ref="ref_entry::(anonymous)::subdir">subdir</dfn>; <i>/* if (flags&amp;REF_DIR) */</i></td></tr>
+<tr><th id="160">160</th><td>	} <dfn class="decl" id="ref_entry::u" title='ref_entry::u' data-ref="ref_entry::u">u</dfn>;</td></tr>
+<tr><th id="161">161</th><td>	<i>/*</i></td></tr>
+<tr><th id="162">162</th><td><i>	 * The full name of the reference (e.g., "refs/heads/master")</i></td></tr>
+<tr><th id="163">163</th><td><i>	 * or the full name of the directory with a trailing slash</i></td></tr>
+<tr><th id="164">164</th><td><i>	 * (e.g., "refs/heads/"):</i></td></tr>
+<tr><th id="165">165</th><td><i>	 */</i></td></tr>
+<tr><th id="166">166</th><td>	<em>char</em> <dfn class="decl" id="ref_entry::name" title='ref_entry::name' data-ref="ref_entry::name">name</dfn>[<a class="macro" href="../git-compat-util.h.html#28" title="" data-ref="_M/FLEX_ARRAY">FLEX_ARRAY</a>];</td></tr>
+<tr><th id="167">167</th><td>};</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><i>/*</i></td></tr>
+<tr><th id="170">170</th><td><i> * Return the index of the entry with the given refname from the</i></td></tr>
+<tr><th id="171">171</th><td><i> * ref_dir (non-recursively), sorting dir if necessary.  Return -1 if</i></td></tr>
+<tr><th id="172">172</th><td><i> * no such entry is found.  dir must already be complete.</i></td></tr>
+<tr><th id="173">173</th><td><i> */</i></td></tr>
+<tr><th id="174">174</th><td><em>int</em> <dfn class="decl" id="search_ref_dir" title='search_ref_dir' data-ref="search_ref_dir">search_ref_dir</dfn>(<b>struct</b> <a class="type" href="#ref_dir" title='ref_dir' data-ref="ref_dir">ref_dir</a> *<dfn class="local col4 decl" id="4dir" title='dir' data-type='struct ref_dir *' data-ref="4dir">dir</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5refname" title='refname' data-type='const char *' data-ref="5refname">refname</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="6len" title='len' data-type='size_t' data-ref="6len">len</dfn>);</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><b>struct</b> <a class="type" href="#ref_dir" title='ref_dir' data-ref="ref_dir">ref_dir</a> *<dfn class="decl" id="get_ref_dir" title='get_ref_dir' data-ref="get_ref_dir">get_ref_dir</dfn>(<b>struct</b> <a class="type" href="#ref_entry" title='ref_entry' data-ref="ref_entry">ref_entry</a> *<dfn class="local col7 decl" id="7entry" title='entry' data-type='struct ref_entry *' data-ref="7entry">entry</dfn>);</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td><i>/*</i></td></tr>
+<tr><th id="179">179</th><td><i> * Create a struct ref_entry object for the specified dirname.</i></td></tr>
+<tr><th id="180">180</th><td><i> * dirname is the name of the directory with a trailing slash (e.g.,</i></td></tr>
+<tr><th id="181">181</th><td><i> * "refs/heads/") or "" for the top-level directory.</i></td></tr>
+<tr><th id="182">182</th><td><i> */</i></td></tr>
+<tr><th id="183">183</th><td><b>struct</b> <a class="type" href="#ref_entry" title='ref_entry' data-ref="ref_entry">ref_entry</a> *<dfn class="decl" id="create_dir_entry" title='create_dir_entry' data-ref="create_dir_entry">create_dir_entry</dfn>(<b>struct</b> <a class="type" href="#ref_cache" title='ref_cache' data-ref="ref_cache">ref_cache</a> *<dfn class="local col8 decl" id="8cache" title='cache' data-type='struct ref_cache *' data-ref="8cache">cache</dfn>,</td></tr>
+<tr><th id="184">184</th><td>				   <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="9dirname" title='dirname' data-type='const char *' data-ref="9dirname">dirname</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="10len" title='len' data-type='size_t' data-ref="10len">len</dfn>,</td></tr>
+<tr><th id="185">185</th><td>				   <em>int</em> <dfn class="local col1 decl" id="11incomplete" title='incomplete' data-type='int' data-ref="11incomplete">incomplete</dfn>);</td></tr>
+<tr><th id="186">186</th><td></td></tr>
+<tr><th id="187">187</th><td><b>struct</b> <a class="type" href="#ref_entry" title='ref_entry' data-ref="ref_entry">ref_entry</a> *<dfn class="decl" id="create_ref_entry" title='create_ref_entry' data-ref="create_ref_entry">create_ref_entry</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12refname" title='refname' data-type='const char *' data-ref="12refname">refname</dfn>,</td></tr>
+<tr><th id="188">188</th><td>				   <em>const</em> <b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="13oid" title='oid' data-type='const struct object_id *' data-ref="13oid">oid</dfn>, <em>int</em> <dfn class="local col4 decl" id="14flag" title='flag' data-type='int' data-ref="14flag">flag</dfn>);</td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td><i>/*</i></td></tr>
+<tr><th id="191">191</th><td><i> * Return a pointer to a new `ref_cache`. Its top-level starts out</i></td></tr>
+<tr><th id="192">192</th><td><i> * marked incomplete. If `fill_ref_dir` is non-NULL, it is the</i></td></tr>
+<tr><th id="193">193</th><td><i> * function called to fill in incomplete directories in the</i></td></tr>
+<tr><th id="194">194</th><td><i> * `ref_cache` when they are accessed. If it is NULL, then the whole</i></td></tr>
+<tr><th id="195">195</th><td><i> * `ref_cache` must be filled (including clearing its directories'</i></td></tr>
+<tr><th id="196">196</th><td><i> * `REF_INCOMPLETE` bits) before it is used, and `refs` can be NULL,</i></td></tr>
+<tr><th id="197">197</th><td><i> * too.</i></td></tr>
+<tr><th id="198">198</th><td><i> */</i></td></tr>
+<tr><th id="199">199</th><td><b>struct</b> <a class="type" href="#ref_cache" title='ref_cache' data-ref="ref_cache">ref_cache</a> *<dfn class="decl" id="create_ref_cache" title='create_ref_cache' data-ref="create_ref_cache">create_ref_cache</dfn>(<b>struct</b> <a class="type" href="refs-internal.h.html#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col5 decl" id="15refs" title='refs' data-type='struct ref_store *' data-ref="15refs">refs</dfn>,</td></tr>
+<tr><th id="200">200</th><td>				   <a class="typedef" href="#fill_ref_dir_fn" title='fill_ref_dir_fn' data-type='void (struct ref_store *, struct ref_dir *, const char *)' data-ref="fill_ref_dir_fn">fill_ref_dir_fn</a> *<dfn class="local col6 decl" id="16fill_ref_dir" title='fill_ref_dir' data-type='fill_ref_dir_fn *' data-ref="16fill_ref_dir">fill_ref_dir</dfn>);</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td><i>/*</i></td></tr>
+<tr><th id="203">203</th><td><i> * Free the `ref_cache` and all of its associated data.</i></td></tr>
+<tr><th id="204">204</th><td><i> */</i></td></tr>
+<tr><th id="205">205</th><td><em>void</em> <dfn class="decl" id="free_ref_cache" title='free_ref_cache' data-ref="free_ref_cache">free_ref_cache</dfn>(<b>struct</b> <a class="type" href="#ref_cache" title='ref_cache' data-ref="ref_cache">ref_cache</a> *<dfn class="local col7 decl" id="17cache" title='cache' data-type='struct ref_cache *' data-ref="17cache">cache</dfn>);</td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td><i>/*</i></td></tr>
+<tr><th id="208">208</th><td><i> * Add a ref_entry to the end of dir (unsorted).  Entry is always</i></td></tr>
+<tr><th id="209">209</th><td><i> * stored directly in dir; no recursion into subdirectories is</i></td></tr>
+<tr><th id="210">210</th><td><i> * done.</i></td></tr>
+<tr><th id="211">211</th><td><i> */</i></td></tr>
+<tr><th id="212">212</th><td><em>void</em> <dfn class="decl" id="add_entry_to_dir" title='add_entry_to_dir' data-ref="add_entry_to_dir">add_entry_to_dir</dfn>(<b>struct</b> <a class="type" href="#ref_dir" title='ref_dir' data-ref="ref_dir">ref_dir</a> *<dfn class="local col8 decl" id="18dir" title='dir' data-type='struct ref_dir *' data-ref="18dir">dir</dfn>, <b>struct</b> <a class="type" href="#ref_entry" title='ref_entry' data-ref="ref_entry">ref_entry</a> *<dfn class="local col9 decl" id="19entry" title='entry' data-type='struct ref_entry *' data-ref="19entry">entry</dfn>);</td></tr>
+<tr><th id="213">213</th><td></td></tr>
+<tr><th id="214">214</th><td><i>/*</i></td></tr>
+<tr><th id="215">215</th><td><i> * Remove the entry with the given name from dir, recursing into</i></td></tr>
+<tr><th id="216">216</th><td><i> * subdirectories as necessary.  If refname is the name of a directory</i></td></tr>
+<tr><th id="217">217</th><td><i> * (i.e., ends with '/'), then remove the directory and its contents.</i></td></tr>
+<tr><th id="218">218</th><td><i> * If the removal was successful, return the number of entries</i></td></tr>
+<tr><th id="219">219</th><td><i> * remaining in the directory entry that contained the deleted entry.</i></td></tr>
+<tr><th id="220">220</th><td><i> * If the name was not found, return -1.  Please note that this</i></td></tr>
+<tr><th id="221">221</th><td><i> * function only deletes the entry from the cache; it does not delete</i></td></tr>
+<tr><th id="222">222</th><td><i> * it from the filesystem or ensure that other cache entries (which</i></td></tr>
+<tr><th id="223">223</th><td><i> * might be symbolic references to the removed entry) are updated.</i></td></tr>
+<tr><th id="224">224</th><td><i> * Nor does it remove any containing dir entries that might be made</i></td></tr>
+<tr><th id="225">225</th><td><i> * empty by the removal.  dir must represent the top-level directory</i></td></tr>
+<tr><th id="226">226</th><td><i> * and must already be complete.</i></td></tr>
+<tr><th id="227">227</th><td><i> */</i></td></tr>
+<tr><th id="228">228</th><td><em>int</em> <dfn class="decl" id="remove_entry_from_dir" title='remove_entry_from_dir' data-ref="remove_entry_from_dir">remove_entry_from_dir</dfn>(<b>struct</b> <a class="type" href="#ref_dir" title='ref_dir' data-ref="ref_dir">ref_dir</a> *<dfn class="local col0 decl" id="20dir" title='dir' data-type='struct ref_dir *' data-ref="20dir">dir</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="21refname" title='refname' data-type='const char *' data-ref="21refname">refname</dfn>);</td></tr>
+<tr><th id="229">229</th><td></td></tr>
+<tr><th id="230">230</th><td><i>/*</i></td></tr>
+<tr><th id="231">231</th><td><i> * Add a ref_entry to the ref_dir (unsorted), recursing into</i></td></tr>
+<tr><th id="232">232</th><td><i> * subdirectories as necessary.  dir must represent the top-level</i></td></tr>
+<tr><th id="233">233</th><td><i> * directory.  Return 0 on success.</i></td></tr>
+<tr><th id="234">234</th><td><i> */</i></td></tr>
+<tr><th id="235">235</th><td><em>int</em> <dfn class="decl" id="add_ref_entry" title='add_ref_entry' data-ref="add_ref_entry">add_ref_entry</dfn>(<b>struct</b> <a class="type" href="#ref_dir" title='ref_dir' data-ref="ref_dir">ref_dir</a> *<dfn class="local col2 decl" id="22dir" title='dir' data-type='struct ref_dir *' data-ref="22dir">dir</dfn>, <b>struct</b> <a class="type" href="#ref_entry" title='ref_entry' data-ref="ref_entry">ref_entry</a> *<dfn class="local col3 decl" id="23ref" title='ref' data-type='struct ref_entry *' data-ref="23ref">ref</dfn>);</td></tr>
+<tr><th id="236">236</th><td></td></tr>
+<tr><th id="237">237</th><td><i>/*</i></td></tr>
+<tr><th id="238">238</th><td><i> * Find the value entry with the given name in dir, sorting ref_dirs</i></td></tr>
+<tr><th id="239">239</th><td><i> * and recursing into subdirectories as necessary.  If the name is not</i></td></tr>
+<tr><th id="240">240</th><td><i> * found or it corresponds to a directory entry, return NULL.</i></td></tr>
+<tr><th id="241">241</th><td><i> */</i></td></tr>
+<tr><th id="242">242</th><td><b>struct</b> <a class="type" href="#ref_entry" title='ref_entry' data-ref="ref_entry">ref_entry</a> *<dfn class="decl" id="find_ref_entry" title='find_ref_entry' data-ref="find_ref_entry">find_ref_entry</dfn>(<b>struct</b> <a class="type" href="#ref_dir" title='ref_dir' data-ref="ref_dir">ref_dir</a> *<dfn class="local col4 decl" id="24dir" title='dir' data-type='struct ref_dir *' data-ref="24dir">dir</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="25refname" title='refname' data-type='const char *' data-ref="25refname">refname</dfn>);</td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td><i>/*</i></td></tr>
+<tr><th id="245">245</th><td><i> * Start iterating over references in `cache`. If `prefix` is</i></td></tr>
+<tr><th id="246">246</th><td><i> * specified, only include references whose names start with that</i></td></tr>
+<tr><th id="247">247</th><td><i> * prefix. If `prime_dir` is true, then fill any incomplete</i></td></tr>
+<tr><th id="248">248</th><td><i> * directories before beginning the iteration.</i></td></tr>
+<tr><th id="249">249</th><td><i> */</i></td></tr>
+<tr><th id="250">250</th><td><b>struct</b> <a class="type" href="refs-internal.h.html#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="decl" id="cache_ref_iterator_begin" title='cache_ref_iterator_begin' data-ref="cache_ref_iterator_begin">cache_ref_iterator_begin</dfn>(<b>struct</b> <a class="type" href="#ref_cache" title='ref_cache' data-ref="ref_cache">ref_cache</a> *<dfn class="local col6 decl" id="26cache" title='cache' data-type='struct ref_cache *' data-ref="26cache">cache</dfn>,</td></tr>
+<tr><th id="251">251</th><td>					      <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="27prefix" title='prefix' data-type='const char *' data-ref="27prefix">prefix</dfn>,</td></tr>
+<tr><th id="252">252</th><td>					      <em>int</em> <dfn class="local col8 decl" id="28prime_dir" title='prime_dir' data-type='int' data-ref="28prime_dir">prime_dir</dfn>);</td></tr>
+<tr><th id="253">253</th><td></td></tr>
+<tr><th id="254">254</th><td><i>/*</i></td></tr>
+<tr><th id="255">255</th><td><i> * Peel the entry (if possible) and return its new peel_status.  If</i></td></tr>
+<tr><th id="256">256</th><td><i> * repeel is true, re-peel the entry even if there is an old peeled</i></td></tr>
+<tr><th id="257">257</th><td><i> * value that is already stored in it.</i></td></tr>
+<tr><th id="258">258</th><td><i> *</i></td></tr>
+<tr><th id="259">259</th><td><i> * It is OK to call this function with a packed reference entry that</i></td></tr>
+<tr><th id="260">260</th><td><i> * might be stale and might even refer to an object that has since</i></td></tr>
+<tr><th id="261">261</th><td><i> * been garbage-collected.  In such a case, if the entry has</i></td></tr>
+<tr><th id="262">262</th><td><i> * REF_KNOWS_PEELED then leave the status unchanged and return</i></td></tr>
+<tr><th id="263">263</th><td><i> * PEEL_PEELED or PEEL_NON_TAG; otherwise, return PEEL_INVALID.</i></td></tr>
+<tr><th id="264">264</th><td><i> */</i></td></tr>
+<tr><th id="265">265</th><td><b>enum</b> <a class="type" href="refs-internal.h.html#peel_status" title='peel_status' data-ref="peel_status">peel_status</a> <dfn class="decl" id="peel_entry" title='peel_entry' data-ref="peel_entry">peel_entry</dfn>(<b>struct</b> <a class="type" href="#ref_entry" title='ref_entry' data-ref="ref_entry">ref_entry</a> *<dfn class="local col9 decl" id="29entry" title='entry' data-type='struct ref_entry *' data-ref="29entry">entry</dfn>, <em>int</em> <dfn class="local col0 decl" id="30repeel" title='repeel' data-type='int' data-ref="30repeel">repeel</dfn>);</td></tr>
+<tr><th id="266">266</th><td></td></tr>
+<tr><th id="267">267</th><td><u>#<span data-ppcond="1">endif</span> /* REFS_REF_CACHE_H */</u></td></tr>
+<tr><th id="268">268</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='files-backend.c.html'>codebrowser/refs/files-backend.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

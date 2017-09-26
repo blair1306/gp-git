@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='201' type='void pp_title_line(struct pretty_print_context * pp, const char ** msg_p, struct strbuf * sb, const char * encoding, int need_8bit_cte)'/>
+<use f='codebrowser/builtin/log.c' l='1031' u='c' c='make_cover_letter'/>
+<def f='codebrowser/pretty.c' l='1584' ll='1647' type='void pp_title_line(struct pretty_print_context * pp, const char ** msg_p, struct strbuf * sb, const char * encoding, int need_8bit_cte)'/>
+<use f='codebrowser/pretty.c' l='1819' u='c' c='pretty_print_commit'/>

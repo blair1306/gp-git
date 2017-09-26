@@ -1,0 +1,5 @@
+<dec f='codebrowser/ref-filter.h' l='113' type='void format_ref_array_item(struct ref_array_item * info, const struct ref_format * format, struct strbuf * final_buf)'/>
+<use f='codebrowser/builtin/branch.c' l='420' u='c' c='print_ref_list'/>
+<doc f='codebrowser/ref-filter.h' l='112'>/*  Based on the given format and quote_style, fill the strbuf */</doc>
+<def f='codebrowser/ref-filter.c' l='2071' ll='2105' type='void format_ref_array_item(struct ref_array_item * info, const struct ref_format * format, struct strbuf * final_buf)'/>
+<use f='codebrowser/ref-filter.c' l='2112' u='c' c='show_ref_array_item'/>

@@ -1,0 +1,8 @@
+<def f='codebrowser/commit.h' l='16' ll='23'/>
+<size>64</size>
+<mbr r='commit::object' o='0' t='struct object'/>
+<mbr r='commit::util' o='192' t='void *'/>
+<mbr r='commit::index' o='256' t='unsigned int'/>
+<mbr r='commit::date' o='320' t='timestamp_t'/>
+<mbr r='commit::parents' o='384' t='struct commit_list *'/>
+<mbr r='commit::tree' o='448' t='struct tree *'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1576' type='struct strbuf * alt_scratch_buf(struct alternate_object_database * alt)'/>
+<doc f='codebrowser/cache.h' l='1570'>/*
+ * Returns a scratch strbuf pre-filled with the alternate object directory,
+ * including a trailing slash, which can be used to access paths in the
+ * alternate. Always use this over direct access to alt-&gt;scratch, as it
+ * cleans up any previous use of the scratch buffer.
+ */</doc>
+<def f='codebrowser/sha1_file.c' l='267' ll='271' type='struct strbuf * alt_scratch_buf(struct alternate_object_database * alt)'/>
+<use f='codebrowser/sha1_file.c' l='276' u='c' c='alt_sha1_path'/>
+<use f='codebrowser/sha1_name.c' l='112' u='c' c='find_short_object_filename'/>

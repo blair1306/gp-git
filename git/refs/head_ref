@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs.h' l='289' type='int head_ref(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/builtin/show-ref.c' l='213' u='c' c='cmd_show_ref'/>
+<use f='codebrowser/log-tree.c' l='158' u='c' c='load_ref_decorations'/>
+<use f='codebrowser/reachable.c' l='178' u='c' c='mark_reachable_objects'/>
+<use f='codebrowser/ref-filter.c' l='1991' u='c' c='filter_refs'/>
+<def f='codebrowser/refs.c' l='1269' ll='1272' type='int head_ref(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/shallow.c' l='601' u='c' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='700' u='c' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='735' u='c' c='delayed_reachability_test'/>

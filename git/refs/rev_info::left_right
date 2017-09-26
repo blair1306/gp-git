@@ -1,0 +1,8 @@
+<dec f='codebrowser/revision.h' l='109' type='unsigned int'/>
+<offset>951</offset>
+<use f='codebrowser/builtin/rev-list.c' l='373' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='412' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='414' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/revision.c' l='1819' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='3359' u='r' c='get_revision_mark'/>
+<use f='codebrowser/submodule.c' l='468' u='w' c='prepare_submodule_summary'/>

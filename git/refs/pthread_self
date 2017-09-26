@@ -1,0 +1,4 @@
+<dec f='include/pthread.h' l='275' type='pthread_t pthread_self()'/>
+<doc f='include/pthread.h' l='274'>/* Obtain the identifier of the current thread.  */</doc>
+<use f='codebrowser/run-command.c' l='964' u='c' c='in_async'/>
+<use f='codebrowser/run-command.c' l='1116' u='c' c='start_async'/>

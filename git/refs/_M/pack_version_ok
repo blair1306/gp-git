@@ -1,0 +1,5 @@
+<dec f='codebrowser/pack.h' l='12'/>
+<use f='codebrowser/builtin/index-pack.c' l='339' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='488' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1187' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3696' u='c'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/pack.h' l='52' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/index-pack.c' l='1540' u='r' c='read_v2_anomalous_offsets'/>
+<use f='codebrowser/builtin/index-pack.c' l='1540' u='r' c='read_v2_anomalous_offsets'/>
+<use f='codebrowser/builtin/index-pack.c' l='1540' u='r' c='read_v2_anomalous_offsets'/>
+<use f='codebrowser/builtin/index-pack.c' l='1541' u='w' c='read_v2_anomalous_offsets'/>
+<use f='codebrowser/builtin/index-pack.c' l='1544' u='r' c='read_v2_anomalous_offsets'/>
+<use f='codebrowser/pack-write.c' l='33' u='r' c='need_large_offset'/>
+<use f='codebrowser/pack-write.c' l='36' u='r' c='need_large_offset'/>

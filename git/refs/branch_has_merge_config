@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='227' type='int branch_has_merge_config(struct branch * branch)'/>
+<use f='codebrowser/builtin/branch.c' l='751' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='388' u='c' c='get_ref_map'/>
+<def f='codebrowser/remote.c' l='1655' ll='1658' type='int branch_has_merge_config(struct branch * branch)'/>

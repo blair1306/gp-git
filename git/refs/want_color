@@ -1,0 +1,23 @@
+<dec f='codebrowser/color.h' l='84' type='int want_color(int var)'/>
+<use f='codebrowser/builtin/branch.c' l='100' u='c' c='branch_get_color'/>
+<use f='codebrowser/builtin/clean.c' l='134' u='c' c='clean_get_color'/>
+<use f='codebrowser/builtin/config.c' l='368' u='c' c='get_colorbool'/>
+<use f='codebrowser/builtin/show-branch.c' l='33' u='c' c='get_color_code'/>
+<use f='codebrowser/builtin/show-branch.c' l='40' u='c' c='get_color_reset_code'/>
+<def f='codebrowser/color.c' l='339' ll='352' type='int want_color(int var)'/>
+<use f='codebrowser/diff.c' l='785' u='c' c='emit_rewrite_diff'/>
+<use f='codebrowser/diff.c' l='1195' u='c' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1222' u='c' c='diff_get_color'/>
+<use f='codebrowser/diff.c' l='2501' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='3216' u='c' c='run_diff_cmd'/>
+<use f='codebrowser/graph.c' l='410' u='c' c='graph_get_current_column_color'/>
+<use f='codebrowser/grep.c' l='1059' u='c' c='output_color'/>
+<use f='codebrowser/log-tree.c' l='32' u='c' c='decorate_get_color'/>
+<use f='codebrowser/pretty.c' l='961' u='c' c='parse_color'/>
+<use f='codebrowser/pretty.c' l='967' u='c' c='parse_color'/>
+<use f='codebrowser/pretty.c' l='991' u='c' c='parse_color'/>
+<use f='codebrowser/pretty.c' l='1083' u='c' c='format_commit_one'/>
+<use f='codebrowser/ref-filter.c' l='111' u='c' c='color_atom_parser'/>
+<use f='codebrowser/ref-filter.c' l='684' u='c' c='verify_ref_format'/>
+<use f='codebrowser/wt-status.c' l='39' u='c' c='color'/>
+<use f='codebrowser/wt-status.c' l='912' u='c' c='wt_longstatus_print_other'/>

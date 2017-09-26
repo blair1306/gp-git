@@ -1,0 +1,34 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='78' type='long'/>
+<use f='codebrowser/apply.c' l='3479' u='r' c='three_way_merge'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/checkout.c' l='229' u='r' c='checkout_merged'/>
+<use f='codebrowser/builtin/merge-file.c' l='103' u='r' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='104' u='r' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-tree.c' l='95' u='r' c='show_outf'/>
+<use f='codebrowser/builtin/rerere.c' l='21' u='r' c='outf'/>
+<use f='codebrowser/builtin/rerere.c' l='21' u='r' c='outf'/>
+<use f='codebrowser/ll-merge.c' l='73' u='w' c='ll_binary_merge'/>
+<use f='codebrowser/ll-merge.c' l='195' u='w' c='ll_ext_merge'/>
+<use f='codebrowser/ll-merge.c' l='210' u='w' c='ll_ext_merge'/>
+<use f='codebrowser/ll-merge.c' l='211' u='r' c='ll_ext_merge'/>
+<use f='codebrowser/ll-merge.c' l='212' u='r' c='ll_ext_merge'/>
+<use f='codebrowser/ll-merge.c' l='212' u='r' c='ll_ext_merge'/>
+<use f='codebrowser/ll-merge.c' l='214' u='w' c='ll_ext_merge'/>
+<use f='codebrowser/merge-blobs.c' l='47' u='r' c='three_way_filemerge'/>
+<use f='codebrowser/merge-recursive.c' l='988' u='r' c='merge_file_1'/>
+<use f='codebrowser/notes-merge.c' l='360' u='r' c='ll_merge_in_worktree'/>
+<use f='codebrowser/rerere.c' l='694' u='r' c='merge'/>
+<use f='codebrowser/rerere.c' l='1010' u='r' c='handle_cache'/>
+<use f='codebrowser/rerere.c' l='1010' u='r' c='handle_cache'/>
+<use f='codebrowser/xdiff-interface.c' l='80' u='r' c='xdiff_outf'/>
+<use f='codebrowser/xdiff-interface.c' l='82' u='r' c='xdiff_outf'/>
+<use f='codebrowser/xdiff-interface.c' l='88' u='r' c='xdiff_outf'/>
+<use f='codebrowser/xdiff-interface.c' l='91' u='r' c='xdiff_outf'/>
+<use f='codebrowser/xdiff/xmerge.c' l='625' u='w' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='642' u='w' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='669' u='w' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='673' u='w' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xutils.c' l='49' u='w' c='xdl_emit_diffrec'/>
+<use f='codebrowser/xdiff/xutils.c' l='51' u='w' c='xdl_emit_diffrec'/>
+<use f='codebrowser/xdiff/xutils.c' l='54' u='w' c='xdl_emit_diffrec'/>
+<use f='codebrowser/xdiff/xutils.c' l='355' u='w' c='xdl_emit_hunk_hdr'/>

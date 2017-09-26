@@ -1,0 +1,14 @@
+<dec f='codebrowser/apply.h' l='70' type='struct strbuf'/>
+<use f='codebrowser/apply.c' l='96' u='a' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='110' u='a' c='clear_apply_state'/>
+<use f='codebrowser/apply.c' l='513' u='m' c='find_name_gnu'/>
+<use f='codebrowser/apply.c' l='514' u='m' c='find_name_gnu'/>
+<use f='codebrowser/apply.c' l='514' u='m' c='find_name_gnu'/>
+<use f='codebrowser/apply.c' l='720' u='m' c='find_name_common'/>
+<use f='codebrowser/apply.c' l='721' u='m' c='find_name_common'/>
+<use f='codebrowser/apply.c' l='1352' u='m' c='parse_git_header'/>
+<use f='codebrowser/apply.c' l='1353' u='m' c='parse_git_header'/>
+<use f='codebrowser/apply.c' l='4795' u='a' c='apply_option_parse_directory'/>
+<use f='codebrowser/apply.c' l='4796' u='a' c='apply_option_parse_directory'/>
+<use f='codebrowser/apply.c' l='4797' u='a' c='apply_option_parse_directory'/>
+<offset>960</offset>

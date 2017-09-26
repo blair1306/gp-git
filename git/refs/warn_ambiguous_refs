@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='734' type='int'/>
+<use f='codebrowser/builtin/rev-parse.c' l='739' u='r' c='cmd_rev_parse'/>
+<use f='codebrowser/config.c' l='1064' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='26' type='int'/>
+<use f='codebrowser/ref-filter.c' l='1204' u='r' c='show_ref'/>
+<use f='codebrowser/refs.c' l='507' u='r' c='expand_ref'/>
+<use f='codebrowser/refs.c' l='547' u='r' c='dwim_log'/>
+<use f='codebrowser/sha1_name.c' l='604' u='r' c='get_oid_basic'/>
+<use f='codebrowser/sha1_name.c' l='665' u='r' c='get_oid_basic'/>

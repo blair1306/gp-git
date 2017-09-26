@@ -1,0 +1,8 @@
+<dec f='codebrowser/diffcore.h' l='70' type='unsigned int'/>
+<offset>152</offset>
+<use f='codebrowser/diffcore-break.c' l='200' u='w' c='diffcore_break'/>
+<use f='codebrowser/diffcore-break.c' l='206' u='w' c='diffcore_break'/>
+<use f='codebrowser/diffcore-break.c' l='274' u='r' c='diffcore_merge_broken'/>
+<use f='codebrowser/diffcore-break.c' l='281' u='r' c='diffcore_merge_broken'/>
+<use f='codebrowser/diffcore-rename.c' l='487' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='633' macro='1' u='r'/>

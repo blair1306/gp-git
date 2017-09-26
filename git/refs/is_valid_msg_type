@@ -1,0 +1,3 @@
+<dec f='codebrowser/fsck.h' l='13' type='int is_valid_msg_type(const char * msg_id, const char * msg_type)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='150' u='c' c='receive_pack_config'/>
+<def f='codebrowser/fsck.c' l='183' ll='189' type='int is_valid_msg_type(const char * msg_id, const char * msg_type)'/>

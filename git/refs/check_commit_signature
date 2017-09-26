@@ -1,0 +1,12 @@
+<dec f='codebrowser/commit.h' l='388' type='int check_commit_signature(const struct commit * commit, struct signature_check * sigc)'/>
+<doc f='codebrowser/commit.h' l='381'>/*
+ * Check the signature of the given commit. The result of the check is stored
+ * in sig-&gt;check_result, &apos;G&apos; for a good signature, &apos;U&apos; for a good signature
+ * from an untrusted signer, &apos;B&apos; for a bad signature and &apos;N&apos; for no signature
+ * at all.  This may allocate memory for sig-&gt;gpg_output, sig-&gt;gpg_status,
+ * sig-&gt;signer and sig-&gt;key.
+ */</doc>
+<use f='codebrowser/builtin/merge.c' l='1265' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/verify-commit.c' l='29' u='c' c='run_gpg_verify'/>
+<def f='codebrowser/commit.c' l='1241' ll='1259' type='int check_commit_signature(const struct commit * commit, struct signature_check * sigc)'/>
+<use f='codebrowser/pretty.c' l='1222' u='c' c='format_commit_one'/>

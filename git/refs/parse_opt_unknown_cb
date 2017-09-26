@@ -1,0 +1,13 @@
+<dec f='codebrowser/parse-options.h' l='231' type='int parse_opt_unknown_cb(const struct option * , const char * , int )'/>
+<use f='codebrowser/builtin/blame.c' l='690' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='690' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='690' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='690' u='r' c='cmd_blame'/>
+<def f='codebrowser/parse-options-cb.c' l='168' ll='171' type='int parse_opt_unknown_cb(const struct option * opt, const char * arg, int unset)'/>
+<doc f='codebrowser/parse-options-cb.c' l='161'>/**
+ * Report that the option is unknown, so that other code can handle
+ * it. This can be used as a callback together with
+ * OPTION_LOWLEVEL_CALLBACK to allow an option to be documented in the
+ * &quot;-h&quot; output even if it&apos;s not being handled directly by
+ * parse_options().
+ */</doc>

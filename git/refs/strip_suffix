@@ -1,0 +1,22 @@
+<def f='codebrowser/git-compat-util.h' l='525' ll='529' type='int strip_suffix(const char * str, const char * suffix, size_t * len)'/>
+<use f='codebrowser/git-compat-util.h' l='534' u='c' c='ends_with'/>
+<doc f='codebrowser/git-compat-util.h' l='518'>/*
+ * If str ends with suffix, return 1 and set *len to the size of the string
+ * without the suffix. Otherwise, return 0 and set *len to the size of the
+ * string.
+ *
+ * Note that we do _not_ NUL-terminate str to the new length.
+ */</doc>
+<use f='codebrowser/builtin/help.c' l='147' u='c' c='exec_man_konqueror'/>
+<use f='codebrowser/builtin/index-pack.c' l='1621' u='c' c='derive_filename'/>
+<use f='codebrowser/builtin/name-rev.c' l='109' u='c' c='name_rev'/>
+<use f='codebrowser/builtin/remote.c' l='271' u='c' c='config_read_branches'/>
+<use f='codebrowser/builtin/remote.c' l='274' u='c' c='config_read_branches'/>
+<use f='codebrowser/builtin/remote.c' l='277' u='c' c='config_read_branches'/>
+<use f='codebrowser/builtin/repack.c' l='99' u='c' c='get_non_kept_pack_filenames'/>
+<use f='codebrowser/connected.c' l='43' u='c' c='check_connected'/>
+<use f='codebrowser/help.c' l='132' u='c' c='list_commands_in_dir'/>
+<use f='codebrowser/http.c' l='2020' u='c' c='finish_http_pack_request'/>
+<use f='codebrowser/pack-bitmap.c' l='254' u='c' c='pack_bitmap_filename'/>
+<use f='codebrowser/sha1_file.c' l='858' u='c' c='open_pack_index'/>
+<use f='codebrowser/sha1_file.c' l='1469' u='c' c='prepare_packed_git_one'/>

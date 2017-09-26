@@ -1,0 +1,4 @@
+<dec f='codebrowser/log-tree.h' l='24' type='void log_write_email_headers(struct rev_info * opt, struct commit * commit, const char ** extra_headers_p, int * need_8bit_cte_p)'/>
+<use f='codebrowser/builtin/log.c' l='1013' u='c' c='make_cover_letter'/>
+<def f='codebrowser/log-tree.c' l='352' ll='418' type='void log_write_email_headers(struct rev_info * opt, struct commit * commit, const char ** extra_headers_p, int * need_8bit_cte_p)'/>
+<use f='codebrowser/log-tree.c' l='601' u='c' c='show_log'/>

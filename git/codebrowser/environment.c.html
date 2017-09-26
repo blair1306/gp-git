@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>environment.c source code [codebrowser/environment.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/environment.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='environment.c.html'>environment.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * We put all the git config variables in this same object</i></td></tr>
+<tr><th id="3">3</th><td><i> * file, so that programs can link against the config parser</i></td></tr>
+<tr><th id="4">4</th><td><i> * without having to link against all the rest of git.</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * In particular, no need to bring in libz etc unless needed,</i></td></tr>
+<tr><th id="7">7</th><td><i> * even if you might want to know where the git directory etc</i></td></tr>
+<tr><th id="8">8</th><td><i> * are.</i></td></tr>
+<tr><th id="9">9</th><td><i> */</i></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="repository.h.html">"repository.h"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="config.h.html">"config.h"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="refs.h.html">"refs.h"</a></u></td></tr>
+<tr><th id="14">14</th><td><u>#include <a href="fmt-merge-msg.h.html">"fmt-merge-msg.h"</a></u></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="commit.h.html">"commit.h"</a></u></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><em>int</em> <dfn class="decl def" id="trust_executable_bit" title='trust_executable_bit' data-ref="trust_executable_bit">trust_executable_bit</dfn> = <var>1</var>;</td></tr>
+<tr><th id="18">18</th><td><em>int</em> <dfn class="decl def" id="trust_ctime" title='trust_ctime' data-ref="trust_ctime">trust_ctime</dfn> = <var>1</var>;</td></tr>
+<tr><th id="19">19</th><td><em>int</em> <dfn class="decl def" id="check_stat" title='check_stat' data-ref="check_stat">check_stat</dfn> = <var>1</var>;</td></tr>
+<tr><th id="20">20</th><td><em>int</em> <dfn class="decl def" id="has_symlinks" title='has_symlinks' data-ref="has_symlinks">has_symlinks</dfn> = <var>1</var>;</td></tr>
+<tr><th id="21">21</th><td><em>int</em> <dfn class="decl def" id="minimum_abbrev" title='minimum_abbrev' data-ref="minimum_abbrev">minimum_abbrev</dfn> = <var>4</var>, <dfn class="decl def" id="default_abbrev" title='default_abbrev' data-ref="default_abbrev">default_abbrev</dfn> = -<var>1</var>;</td></tr>
+<tr><th id="22">22</th><td><em>int</em> <dfn class="decl def" id="ignore_case" title='ignore_case' data-ref="ignore_case">ignore_case</dfn>;</td></tr>
+<tr><th id="23">23</th><td><em>int</em> <dfn class="decl def" id="assume_unchanged" title='assume_unchanged' data-ref="assume_unchanged">assume_unchanged</dfn>;</td></tr>
+<tr><th id="24">24</th><td><em>int</em> <dfn class="decl def" id="prefer_symlink_refs" title='prefer_symlink_refs' data-ref="prefer_symlink_refs">prefer_symlink_refs</dfn>;</td></tr>
+<tr><th id="25">25</th><td><em>int</em> <dfn class="decl def" id="is_bare_repository_cfg" title='is_bare_repository_cfg' data-ref="is_bare_repository_cfg">is_bare_repository_cfg</dfn> = -<var>1</var>; <i>/* unspecified */</i></td></tr>
+<tr><th id="26">26</th><td><em>int</em> <dfn class="decl def" id="warn_ambiguous_refs" title='warn_ambiguous_refs' data-ref="warn_ambiguous_refs">warn_ambiguous_refs</dfn> = <var>1</var>;</td></tr>
+<tr><th id="27">27</th><td><em>int</em> <dfn class="decl def" id="warn_on_object_refname_ambiguity" title='warn_on_object_refname_ambiguity' data-ref="warn_on_object_refname_ambiguity">warn_on_object_refname_ambiguity</dfn> = <var>1</var>;</td></tr>
+<tr><th id="28">28</th><td><em>int</em> <dfn class="decl def" id="ref_paranoia" title='ref_paranoia' data-ref="ref_paranoia">ref_paranoia</dfn> = -<var>1</var>;</td></tr>
+<tr><th id="29">29</th><td><em>int</em> <dfn class="decl def" id="repository_format_precious_objects" title='repository_format_precious_objects' data-ref="repository_format_precious_objects">repository_format_precious_objects</dfn>;</td></tr>
+<tr><th id="30">30</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="git_commit_encoding" title='git_commit_encoding' data-ref="git_commit_encoding">git_commit_encoding</dfn>;</td></tr>
+<tr><th id="31">31</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="git_log_output_encoding" title='git_log_output_encoding' data-ref="git_log_output_encoding">git_log_output_encoding</dfn>;</td></tr>
+<tr><th id="32">32</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="apply_default_whitespace" title='apply_default_whitespace' data-ref="apply_default_whitespace">apply_default_whitespace</dfn>;</td></tr>
+<tr><th id="33">33</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="apply_default_ignorewhitespace" title='apply_default_ignorewhitespace' data-ref="apply_default_ignorewhitespace">apply_default_ignorewhitespace</dfn>;</td></tr>
+<tr><th id="34">34</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="git_attributes_file" title='git_attributes_file' data-ref="git_attributes_file">git_attributes_file</dfn>;</td></tr>
+<tr><th id="35">35</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="git_hooks_path" title='git_hooks_path' data-ref="git_hooks_path">git_hooks_path</dfn>;</td></tr>
+<tr><th id="36">36</th><td><em>int</em> <dfn class="decl def" id="zlib_compression_level" title='zlib_compression_level' data-ref="zlib_compression_level">zlib_compression_level</dfn> = <a class="macro" href="../include/zlib.h.html#187" title="1" data-ref="_M/Z_BEST_SPEED">Z_BEST_SPEED</a>;</td></tr>
+<tr><th id="37">37</th><td><em>int</em> <dfn class="decl def" id="core_compression_level" title='core_compression_level' data-ref="core_compression_level">core_compression_level</dfn>;</td></tr>
+<tr><th id="38">38</th><td><em>int</em> <dfn class="decl def" id="pack_compression_level" title='pack_compression_level' data-ref="pack_compression_level">pack_compression_level</dfn> = <a class="macro" href="../include/zlib.h.html#189" title="(-1)" data-ref="_M/Z_DEFAULT_COMPRESSION">Z_DEFAULT_COMPRESSION</a>;</td></tr>
+<tr><th id="39">39</th><td><em>int</em> <dfn class="decl def" id="fsync_object_files" title='fsync_object_files' data-ref="fsync_object_files">fsync_object_files</dfn>;</td></tr>
+<tr><th id="40">40</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="packed_git_window_size" title='packed_git_window_size' data-ref="packed_git_window_size">packed_git_window_size</dfn> = <a class="macro" href="git-compat-util.h.html#574" title="(sizeof(void*) &gt;= 8 ? 1 * 1024 * 1024 * 1024 : 32 * 1024 * 1024)" data-ref="_M/DEFAULT_PACKED_GIT_WINDOW_SIZE">DEFAULT_PACKED_GIT_WINDOW_SIZE</a>;</td></tr>
+<tr><th id="41">41</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="packed_git_limit" title='packed_git_limit' data-ref="packed_git_limit">packed_git_limit</dfn> = <a class="macro" href="git-compat-util.h.html#625" title="((1024L * 1024L) * (size_t)(sizeof(void*) &gt;= 8 ? (32 * 1024L * 1024L) : 256))" data-ref="_M/DEFAULT_PACKED_GIT_LIMIT">DEFAULT_PACKED_GIT_LIMIT</a>;</td></tr>
+<tr><th id="42">42</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="delta_base_cache_limit" title='delta_base_cache_limit' data-ref="delta_base_cache_limit">delta_base_cache_limit</dfn> = <var>96</var> * <var>1024</var> * <var>1024</var>;</td></tr>
+<tr><th id="43">43</th><td><em>unsigned</em> <em>long</em> <dfn class="decl def" id="big_file_threshold" title='big_file_threshold' data-ref="big_file_threshold">big_file_threshold</dfn> = <var>512</var> * <var>1024</var> * <var>1024</var>;</td></tr>
+<tr><th id="44">44</th><td><em>int</em> <dfn class="decl def" id="pager_use_color" title='pager_use_color' data-ref="pager_use_color">pager_use_color</dfn> = <var>1</var>;</td></tr>
+<tr><th id="45">45</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="editor_program" title='editor_program' data-ref="editor_program">editor_program</dfn>;</td></tr>
+<tr><th id="46">46</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="askpass_program" title='askpass_program' data-ref="askpass_program">askpass_program</dfn>;</td></tr>
+<tr><th id="47">47</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="excludes_file" title='excludes_file' data-ref="excludes_file">excludes_file</dfn>;</td></tr>
+<tr><th id="48">48</th><td><b>enum</b> <a class="type" href="convert.h.html#auto_crlf" title='auto_crlf' data-ref="auto_crlf">auto_crlf</a> <dfn class="decl def" id="auto_crlf" title='auto_crlf' data-ref="auto_crlf">auto_crlf</dfn> = <a class="enum" href="convert.h.html#auto_crlf::AUTO_CRLF_FALSE" title='auto_crlf::AUTO_CRLF_FALSE' data-ref="auto_crlf::AUTO_CRLF_FALSE">AUTO_CRLF_FALSE</a>;</td></tr>
+<tr><th id="49">49</th><td><em>int</em> <dfn class="decl def" id="check_replace_refs" title='check_replace_refs' data-ref="check_replace_refs">check_replace_refs</dfn> = <var>1</var>;</td></tr>
+<tr><th id="50">50</th><td><em>char</em> *<dfn class="decl def" id="git_replace_ref_base" title='git_replace_ref_base' data-ref="git_replace_ref_base">git_replace_ref_base</dfn>;</td></tr>
+<tr><th id="51">51</th><td><b>enum</b> <a class="type" href="convert.h.html#eol" title='eol' data-ref="eol">eol</a> <dfn class="decl def" id="core_eol" title='core_eol' data-ref="core_eol">core_eol</dfn> = <a class="enum" href="convert.h.html#eol::EOL_UNSET" title='eol::EOL_UNSET' data-ref="eol::EOL_UNSET">EOL_UNSET</a>;</td></tr>
+<tr><th id="52">52</th><td><b>enum</b> <a class="type" href="convert.h.html#safe_crlf" title='safe_crlf' data-ref="safe_crlf">safe_crlf</a> <dfn class="decl def" id="safe_crlf" title='safe_crlf' data-ref="safe_crlf">safe_crlf</dfn> = <a class="enum" href="convert.h.html#safe_crlf::SAFE_CRLF_WARN" title='safe_crlf::SAFE_CRLF_WARN' data-ref="safe_crlf::SAFE_CRLF_WARN">SAFE_CRLF_WARN</a>;</td></tr>
+<tr><th id="53">53</th><td><em>unsigned</em> <dfn class="decl def" id="whitespace_rule_cfg" title='whitespace_rule_cfg' data-ref="whitespace_rule_cfg">whitespace_rule_cfg</dfn> = <a class="macro" href="cache.h.html#1956" title="((0100|02000)|0200|8)" data-ref="_M/WS_DEFAULT_RULE">WS_DEFAULT_RULE</a>;</td></tr>
+<tr><th id="54">54</th><td><b>enum</b> <a class="type" href="cache.h.html#branch_track" title='branch_track' data-ref="branch_track">branch_track</a> <dfn class="decl def" id="git_branch_track" title='git_branch_track' data-ref="git_branch_track">git_branch_track</dfn> = <a class="enum" href="cache.h.html#branch_track::BRANCH_TRACK_REMOTE" title='branch_track::BRANCH_TRACK_REMOTE' data-ref="branch_track::BRANCH_TRACK_REMOTE">BRANCH_TRACK_REMOTE</a>;</td></tr>
+<tr><th id="55">55</th><td><b>enum</b> <a class="type" href="cache.h.html#rebase_setup_type" title='rebase_setup_type' data-ref="rebase_setup_type">rebase_setup_type</a> <dfn class="decl def" id="autorebase" title='autorebase' data-ref="autorebase">autorebase</dfn> = <a class="enum" href="cache.h.html#rebase_setup_type::AUTOREBASE_NEVER" title='rebase_setup_type::AUTOREBASE_NEVER' data-ref="rebase_setup_type::AUTOREBASE_NEVER">AUTOREBASE_NEVER</a>;</td></tr>
+<tr><th id="56">56</th><td><b>enum</b> <a class="type" href="cache.h.html#push_default_type" title='push_default_type' data-ref="push_default_type">push_default_type</a> <dfn class="decl def" id="push_default" title='push_default' data-ref="push_default">push_default</dfn> = <a class="enum" href="cache.h.html#push_default_type::PUSH_DEFAULT_UNSPECIFIED" title='push_default_type::PUSH_DEFAULT_UNSPECIFIED' data-ref="push_default_type::PUSH_DEFAULT_UNSPECIFIED">PUSH_DEFAULT_UNSPECIFIED</a>;</td></tr>
+<tr><th id="57">57</th><td><u>#<span data-ppcond="57">ifndef</span> <span class="macro" data-ref="_M/OBJECT_CREATION_MODE">OBJECT_CREATION_MODE</span></u></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/OBJECT_CREATION_MODE" data-ref="_M/OBJECT_CREATION_MODE">OBJECT_CREATION_MODE</dfn> <a class="enum" href="cache.h.html#object_creation_mode::OBJECT_CREATION_USES_HARDLINKS" title='object_creation_mode::OBJECT_CREATION_USES_HARDLINKS' data-ref="object_creation_mode::OBJECT_CREATION_USES_HARDLINKS">OBJECT_CREATION_USES_HARDLINKS</a></u></td></tr>
+<tr><th id="59">59</th><td><u>#<span data-ppcond="57">endif</span></u></td></tr>
+<tr><th id="60">60</th><td><b>enum</b> <a class="type" href="cache.h.html#object_creation_mode" title='object_creation_mode' data-ref="object_creation_mode">object_creation_mode</a> <dfn class="decl def" id="object_creation_mode" title='object_creation_mode' data-ref="object_creation_mode">object_creation_mode</dfn> = <a class="macro" href="#58" title="OBJECT_CREATION_USES_HARDLINKS" data-ref="_M/OBJECT_CREATION_MODE">OBJECT_CREATION_MODE</a>;</td></tr>
+<tr><th id="61">61</th><td><em>char</em> *<dfn class="decl def" id="notes_ref_name" title='notes_ref_name' data-ref="notes_ref_name">notes_ref_name</dfn>;</td></tr>
+<tr><th id="62">62</th><td><em>int</em> <dfn class="decl def" id="grafts_replace_parents" title='grafts_replace_parents' data-ref="grafts_replace_parents">grafts_replace_parents</dfn> = <var>1</var>;</td></tr>
+<tr><th id="63">63</th><td><em>int</em> <dfn class="decl def" id="core_apply_sparse_checkout" title='core_apply_sparse_checkout' data-ref="core_apply_sparse_checkout">core_apply_sparse_checkout</dfn>;</td></tr>
+<tr><th id="64">64</th><td><em>int</em> <dfn class="decl def" id="merge_log_config" title='merge_log_config' data-ref="merge_log_config">merge_log_config</dfn> = -<var>1</var>;</td></tr>
+<tr><th id="65">65</th><td><em>int</em> <dfn class="decl def" id="precomposed_unicode" title='precomposed_unicode' data-ref="precomposed_unicode">precomposed_unicode</dfn> = -<var>1</var>; <i>/* see probe_utf8_pathname_composition() */</i></td></tr>
+<tr><th id="66">66</th><td><em>unsigned</em> <em>long</em> <dfn class="decl def" id="pack_size_limit_cfg" title='pack_size_limit_cfg' data-ref="pack_size_limit_cfg">pack_size_limit_cfg</dfn>;</td></tr>
+<tr><th id="67">67</th><td><b>enum</b> <a class="type" href="cache.h.html#hide_dotfiles_type" title='hide_dotfiles_type' data-ref="hide_dotfiles_type">hide_dotfiles_type</a> <dfn class="decl def" id="hide_dotfiles" title='hide_dotfiles' data-ref="hide_dotfiles">hide_dotfiles</dfn> = <a class="enum" href="cache.h.html#hide_dotfiles_type::HIDE_DOTFILES_DOTGITONLY" title='hide_dotfiles_type::HIDE_DOTFILES_DOTGITONLY' data-ref="hide_dotfiles_type::HIDE_DOTFILES_DOTGITONLY">HIDE_DOTFILES_DOTGITONLY</a>;</td></tr>
+<tr><th id="68">68</th><td><b>enum</b> <a class="type" href="cache.h.html#log_refs_config" title='log_refs_config' data-ref="log_refs_config">log_refs_config</a> <dfn class="decl def" id="log_all_ref_updates" title='log_all_ref_updates' data-ref="log_all_ref_updates">log_all_ref_updates</dfn> = <a class="enum" href="cache.h.html#log_refs_config::LOG_REFS_UNSET" title='log_refs_config::LOG_REFS_UNSET' data-ref="log_refs_config::LOG_REFS_UNSET">LOG_REFS_UNSET</a>;</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><u>#<span data-ppcond="70">ifndef</span> <span class="macro" data-ref="_M/PROTECT_HFS_DEFAULT">PROTECT_HFS_DEFAULT</span></u></td></tr>
+<tr><th id="71">71</th><td><u>#define <dfn class="macro" id="_M/PROTECT_HFS_DEFAULT" data-ref="_M/PROTECT_HFS_DEFAULT">PROTECT_HFS_DEFAULT</dfn> 0</u></td></tr>
+<tr><th id="72">72</th><td><u>#<span data-ppcond="70">endif</span></u></td></tr>
+<tr><th id="73">73</th><td><em>int</em> <dfn class="decl def" id="protect_hfs" title='protect_hfs' data-ref="protect_hfs">protect_hfs</dfn> = <a class="macro" href="#71" title="0" data-ref="_M/PROTECT_HFS_DEFAULT">PROTECT_HFS_DEFAULT</a>;</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><u>#<span data-ppcond="75">ifndef</span> <span class="macro" data-ref="_M/PROTECT_NTFS_DEFAULT">PROTECT_NTFS_DEFAULT</span></u></td></tr>
+<tr><th id="76">76</th><td><u>#define <dfn class="macro" id="_M/PROTECT_NTFS_DEFAULT" data-ref="_M/PROTECT_NTFS_DEFAULT">PROTECT_NTFS_DEFAULT</dfn> 0</u></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="75">endif</span></u></td></tr>
+<tr><th id="78">78</th><td><em>int</em> <dfn class="decl def" id="protect_ntfs" title='protect_ntfs' data-ref="protect_ntfs">protect_ntfs</dfn> = <a class="macro" href="#76" title="0" data-ref="_M/PROTECT_NTFS_DEFAULT">PROTECT_NTFS_DEFAULT</a>;</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><i>/*</i></td></tr>
+<tr><th id="81">81</th><td><i> * The character that begins a commented line in user-editable file</i></td></tr>
+<tr><th id="82">82</th><td><i> * that is subject to stripspace.</i></td></tr>
+<tr><th id="83">83</th><td><i> */</i></td></tr>
+<tr><th id="84">84</th><td><em>char</em> <dfn class="decl def" id="comment_line_char" title='comment_line_char' data-ref="comment_line_char">comment_line_char</dfn> = <kbd>'#'</kbd>;</td></tr>
+<tr><th id="85">85</th><td><em>int</em> <dfn class="decl def" id="auto_comment_line_char" title='auto_comment_line_char' data-ref="auto_comment_line_char">auto_comment_line_char</dfn>;</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><i>/* Parallel index stat data preload? */</i></td></tr>
+<tr><th id="88">88</th><td><em>int</em> <dfn class="decl def" id="core_preload_index" title='core_preload_index' data-ref="core_preload_index">core_preload_index</dfn> = <var>1</var>;</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><i>/*</i></td></tr>
+<tr><th id="91">91</th><td><i> * This is a hack for test programs like test-dump-untracked-cache to</i></td></tr>
+<tr><th id="92">92</th><td><i> * ensure that they do not modify the untracked cache when reading it.</i></td></tr>
+<tr><th id="93">93</th><td><i> * Do not use it otherwise!</i></td></tr>
+<tr><th id="94">94</th><td><i> */</i></td></tr>
+<tr><th id="95">95</th><td><em>int</em> <dfn class="decl def" id="ignore_untracked_cache_config" title='ignore_untracked_cache_config' data-ref="ignore_untracked_cache_config">ignore_untracked_cache_config</dfn>;</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><i>/* This is set by setup_git_dir_gently() and/or git_default_config() */</i></td></tr>
+<tr><th id="98">98</th><td><em>char</em> *<dfn class="decl def" id="git_work_tree_cfg" title='git_work_tree_cfg' data-ref="git_work_tree_cfg">git_work_tree_cfg</dfn>;</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><em>static</em> <em>const</em> <em>char</em> *<dfn class="tu decl def" id="namespace" title='namespace' data-type='const char *' data-ref="namespace">namespace</dfn>;</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><em>static</em> <em>const</em> <em>char</em> *<dfn class="tu decl def" id="super_prefix" title='super_prefix' data-type='const char *' data-ref="super_prefix">super_prefix</dfn>;</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><i>/*</i></td></tr>
+<tr><th id="105">105</th><td><i> * Repository-local GIT_* environment variables; see cache.h for details.</i></td></tr>
+<tr><th id="106">106</th><td><i> */</i></td></tr>
+<tr><th id="107">107</th><td><em>const</em> <em>char</em> * <em>const</em> <dfn class="decl def" id="local_repo_env" title='local_repo_env' data-ref="local_repo_env">local_repo_env</dfn>[] = {</td></tr>
+<tr><th id="108">108</th><td>	<a class="macro" href="cache.h.html#528" title="&quot;GIT_ALTERNATE_OBJECT_DIRECTORIES&quot;" data-ref="_M/ALTERNATE_DB_ENVIRONMENT">ALTERNATE_DB_ENVIRONMENT</a>,</td></tr>
+<tr><th id="109">109</th><td>	<a class="macro" href="cache.h.html#426" title="&quot;GIT_CONFIG&quot;" data-ref="_M/CONFIG_ENVIRONMENT">CONFIG_ENVIRONMENT</a>,</td></tr>
+<tr><th id="110">110</th><td>	<a class="macro" href="cache.h.html#427" title="&quot;GIT_CONFIG_PARAMETERS&quot;" data-ref="_M/CONFIG_DATA_ENVIRONMENT">CONFIG_DATA_ENVIRONMENT</a>,</td></tr>
+<tr><th id="111">111</th><td>	<a class="macro" href="cache.h.html#421" title="&quot;GIT_OBJECT_DIRECTORY&quot;" data-ref="_M/DB_ENVIRONMENT">DB_ENVIRONMENT</a>,</td></tr>
+<tr><th id="112">112</th><td>	<a class="macro" href="cache.h.html#414" title="&quot;GIT_DIR&quot;" data-ref="_M/GIT_DIR_ENVIRONMENT">GIT_DIR_ENVIRONMENT</a>,</td></tr>
+<tr><th id="113">113</th><td>	<a class="macro" href="cache.h.html#417" title="&quot;GIT_WORK_TREE&quot;" data-ref="_M/GIT_WORK_TREE_ENVIRONMENT">GIT_WORK_TREE_ENVIRONMENT</a>,</td></tr>
+<tr><th id="114">114</th><td>	<a class="macro" href="cache.h.html#457" title="&quot;GIT_IMPLICIT_WORK_TREE&quot;" data-ref="_M/GIT_IMPLICIT_WORK_TREE_ENVIRONMENT">GIT_IMPLICIT_WORK_TREE_ENVIRONMENT</a>,</td></tr>
+<tr><th id="115">115</th><td>	<a class="macro" href="cache.h.html#423" title="&quot;GIT_GRAFT_FILE&quot;" data-ref="_M/GRAFT_ENVIRONMENT">GRAFT_ENVIRONMENT</a>,</td></tr>
+<tr><th id="116">116</th><td>	<a class="macro" href="cache.h.html#422" title="&quot;GIT_INDEX_FILE&quot;" data-ref="_M/INDEX_ENVIRONMENT">INDEX_ENVIRONMENT</a>,</td></tr>
+<tr><th id="117">117</th><td>	<a class="macro" href="cache.h.html#430" title="&quot;GIT_NO_REPLACE_OBJECTS&quot;" data-ref="_M/NO_REPLACE_OBJECTS_ENVIRONMENT">NO_REPLACE_OBJECTS_ENVIRONMENT</a>,</td></tr>
+<tr><th id="118">118</th><td>	<a class="macro" href="cache.h.html#431" title="&quot;GIT_REPLACE_REF_BASE&quot;" data-ref="_M/GIT_REPLACE_REF_BASE_ENVIRONMENT">GIT_REPLACE_REF_BASE_ENVIRONMENT</a>,</td></tr>
+<tr><th id="119">119</th><td>	<a class="macro" href="cache.h.html#418" title="&quot;GIT_PREFIX&quot;" data-ref="_M/GIT_PREFIX_ENVIRONMENT">GIT_PREFIX_ENVIRONMENT</a>,</td></tr>
+<tr><th id="120">120</th><td>	<a class="macro" href="cache.h.html#419" title="&quot;GIT_INTERNAL_SUPER_PREFIX&quot;" data-ref="_M/GIT_SUPER_PREFIX_ENVIRONMENT">GIT_SUPER_PREFIX_ENVIRONMENT</a>,</td></tr>
+<tr><th id="121">121</th><td>	<a class="macro" href="cache.h.html#424" title="&quot;GIT_SHALLOW_FILE&quot;" data-ref="_M/GIT_SHALLOW_FILE_ENVIRONMENT">GIT_SHALLOW_FILE_ENVIRONMENT</a>,</td></tr>
+<tr><th id="122">122</th><td>	<a class="macro" href="cache.h.html#415" title="&quot;GIT_COMMON_DIR&quot;" data-ref="_M/GIT_COMMON_DIR_ENVIRONMENT">GIT_COMMON_DIR_ENVIRONMENT</a>,</td></tr>
+<tr><th id="123">123</th><td>	<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span></td></tr>
+<tr><th id="124">124</th><td>};</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><em>static</em> <em>char</em> *<dfn class="tu decl def" id="expand_namespace" title='expand_namespace' data-type='char * expand_namespace(const char * raw_namespace)' data-ref="expand_namespace">expand_namespace</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1raw_namespace" title='raw_namespace' data-type='const char *' data-ref="1raw_namespace">raw_namespace</dfn>)</td></tr>
+<tr><th id="127">127</th><td>{</td></tr>
+<tr><th id="128">128</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col2 decl" id="2buf" title='buf' data-type='struct strbuf' data-ref="2buf">buf</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="129">129</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> **<dfn class="local col3 decl" id="3components" title='components' data-type='struct strbuf **' data-ref="3components">components</dfn>, **<dfn class="local col4 decl" id="4c" title='c' data-type='struct strbuf **' data-ref="4c">c</dfn>;</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>	<b>if</b> (!<a class="local col1 ref" href="#1raw_namespace" title='raw_namespace' data-ref="1raw_namespace">raw_namespace</a> || !*<a class="local col1 ref" href="#1raw_namespace" title='raw_namespace' data-ref="1raw_namespace">raw_namespace</a>)</td></tr>
+<tr><th id="132">132</th><td>		<b>return</b> <a class="ref" href="git-compat-util.h.html#xstrdup" title='xstrdup' data-ref="xstrdup">xstrdup</a>(<q>""</q>);</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addstr" title='strbuf_addstr' data-ref="strbuf_addstr">strbuf_addstr</a>(&amp;<a class="local col2 ref" href="#2buf" title='buf' data-ref="2buf">buf</a>, <a class="local col1 ref" href="#1raw_namespace" title='raw_namespace' data-ref="1raw_namespace">raw_namespace</a>);</td></tr>
+<tr><th id="135">135</th><td>	<a class="local col3 ref" href="#3components" title='components' data-ref="3components">components</a> = <a class="ref" href="strbuf.h.html#strbuf_split" title='strbuf_split' data-ref="strbuf_split">strbuf_split</a>(&amp;<a class="local col2 ref" href="#2buf" title='buf' data-ref="2buf">buf</a>, <kbd>'/'</kbd>);</td></tr>
+<tr><th id="136">136</th><td>	<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(&amp;buf, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col2 ref" href="#2buf" title='buf' data-ref="2buf">buf</a>);</td></tr>
+<tr><th id="137">137</th><td>	<b>for</b> (<a class="local col4 ref" href="#4c" title='c' data-ref="4c">c</a> = <a class="local col3 ref" href="#3components" title='components' data-ref="3components">components</a>; *<a class="local col4 ref" href="#4c" title='c' data-ref="4c">c</a>; <a class="local col4 ref" href="#4c" title='c' data-ref="4c">c</a>++)</td></tr>
+<tr><th id="138">138</th><td>		<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p ((*c)-&gt;buf) &amp;&amp; __builtin_constant_p (&quot;/&quot;) &amp;&amp; (__s1_len = __builtin_strlen ((*c)-&gt;buf), __s2_len = __builtin_strlen (&quot;/&quot;), (!((size_t)(const void *)(((*c)-&gt;buf) + 1) - (size_t)(const void *)((*c)-&gt;buf) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;/&quot;) + 1) - (size_t)(const void *)(&quot;/&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp ((*c)-&gt;buf, &quot;/&quot;) : (__builtin_constant_p ((*c)-&gt;buf) &amp;&amp; ((size_t)(const void *)(((*c)-&gt;buf) + 1) - (size_t)(const void *)((*c)-&gt;buf) == 1) &amp;&amp; (__s1_len = __builtin_strlen ((*c)-&gt;buf), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;/&quot;) &amp;&amp; ((size_t)(const void *)((&quot;/&quot;) + 1) - (size_t)(const void *)(&quot;/&quot;) == 1) ? __builtin_strcmp ((*c)-&gt;buf, &quot;/&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;/&quot;); int __result = (((const unsigned char *) (const char *) ((*c)-&gt;buf))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) ((*c)-&gt;buf))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) ((*c)-&gt;buf))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) ((*c)-&gt;buf))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;/&quot;) &amp;&amp; ((size_t)(const void *)((&quot;/&quot;) + 1) - (size_t)(const void *)(&quot;/&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;/&quot;), __s2_len &lt; 4) ? (__builtin_constant_p ((*c)-&gt;buf) &amp;&amp; ((size_t)(const void *)(((*c)-&gt;buf) + 1) - (size_t)(const void *)((*c)-&gt;buf) == 1) ? __builtin_strcmp ((*c)-&gt;buf, &quot;/&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) ((*c)-&gt;buf); int __result = (((const unsigned char *) (const char *) (&quot;/&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;/&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;/&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;/&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp ((*c)-&gt;buf, &quot;/&quot;)))); })" data-ref="_M/strcmp">strcmp</a>((*<a class="local col4 ref" href="#4c" title='c' data-ref="4c">c</a>)-&gt;<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <q>"/"</q>) != <var>0</var>)</td></tr>
+<tr><th id="139">139</th><td>			<a class="ref" href="strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(&amp;<a class="local col2 ref" href="#2buf" title='buf' data-ref="2buf">buf</a>, <q>"refs/namespaces/%s"</q>, (*<a class="local col4 ref" href="#4c" title='c' data-ref="4c">c</a>)-&gt;<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="140">140</th><td>	<a class="ref" href="strbuf.h.html#strbuf_list_free" title='strbuf_list_free' data-ref="strbuf_list_free">strbuf_list_free</a>(<a class="local col3 ref" href="#3components" title='components' data-ref="3components">components</a>);</td></tr>
+<tr><th id="141">141</th><td>	<b>if</b> (<a class="ref" href="refs.h.html#check_refname_format" title='check_refname_format' data-ref="check_refname_format">check_refname_format</a>(<a class="local col2 ref" href="#2buf" title='buf' data-ref="2buf">buf</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <var>0</var>))</td></tr>
+<tr><th id="142">142</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"bad git namespace path \"%s\""</q>, <a class="local col1 ref" href="#1raw_namespace" title='raw_namespace' data-ref="1raw_namespace">raw_namespace</a>);</td></tr>
+<tr><th id="143">143</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addch" title='strbuf_addch' data-ref="strbuf_addch">strbuf_addch</a>(&amp;<a class="local col2 ref" href="#2buf" title='buf' data-ref="2buf">buf</a>, <kbd>'/'</kbd>);</td></tr>
+<tr><th id="144">144</th><td>	<b>return</b> <a class="ref" href="strbuf.h.html#strbuf_detach" title='strbuf_detach' data-ref="strbuf_detach">strbuf_detach</a>(&amp;<a class="local col2 ref" href="#2buf" title='buf' data-ref="2buf">buf</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="145">145</th><td>}</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td><em>void</em> <dfn class="decl def" id="setup_git_env" title='setup_git_env' data-ref="setup_git_env">setup_git_env</dfn>(<em>void</em>)</td></tr>
+<tr><th id="148">148</th><td>{</td></tr>
+<tr><th id="149">149</th><td>	<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5shallow_file" title='shallow_file' data-type='const char *' data-ref="5shallow_file">shallow_file</dfn>;</td></tr>
+<tr><th id="150">150</th><td>	<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="6replace_ref_base" title='replace_ref_base' data-type='const char *' data-ref="6replace_ref_base">replace_ref_base</dfn>;</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td>	<b>if</b> (<a class="ref" href="../include/stdlib.h.html#getenv" title='getenv' data-ref="getenv">getenv</a>(<a class="macro" href="cache.h.html#430" title="&quot;GIT_NO_REPLACE_OBJECTS&quot;" data-ref="_M/NO_REPLACE_OBJECTS_ENVIRONMENT">NO_REPLACE_OBJECTS_ENVIRONMENT</a>))</td></tr>
+<tr><th id="153">153</th><td>		<a class="ref" href="cache.h.html#check_replace_refs" title='check_replace_refs' data-ref="check_replace_refs">check_replace_refs</a> = <var>0</var>;</td></tr>
+<tr><th id="154">154</th><td>	<a class="local col6 ref" href="#6replace_ref_base" title='replace_ref_base' data-ref="6replace_ref_base">replace_ref_base</a> = <a class="ref" href="../include/stdlib.h.html#getenv" title='getenv' data-ref="getenv">getenv</a>(<a class="macro" href="cache.h.html#431" title="&quot;GIT_REPLACE_REF_BASE&quot;" data-ref="_M/GIT_REPLACE_REF_BASE_ENVIRONMENT">GIT_REPLACE_REF_BASE_ENVIRONMENT</a>);</td></tr>
+<tr><th id="155">155</th><td>	<a class="ref" href="cache.h.html#git_replace_ref_base" title='git_replace_ref_base' data-ref="git_replace_ref_base">git_replace_ref_base</a> = <a class="ref" href="git-compat-util.h.html#xstrdup" title='xstrdup' data-ref="xstrdup">xstrdup</a>(<a class="local col6 ref" href="#6replace_ref_base" title='replace_ref_base' data-ref="6replace_ref_base">replace_ref_base</a> ? <a class="local col6 ref" href="#6replace_ref_base" title='replace_ref_base' data-ref="6replace_ref_base">replace_ref_base</a></td></tr>
+<tr><th id="156">156</th><td>							  : <q>"refs/replace/"</q>);</td></tr>
+<tr><th id="157">157</th><td>	<a class="tu ref" href="#namespace" title='namespace' data-use='w' data-ref="namespace">namespace</a> = <a class="tu ref" href="#expand_namespace" title='expand_namespace' data-use='c' data-ref="expand_namespace">expand_namespace</a>(<a class="ref" href="../include/stdlib.h.html#getenv" title='getenv' data-ref="getenv">getenv</a>(<a class="macro" href="cache.h.html#416" title="&quot;GIT_NAMESPACE&quot;" data-ref="_M/GIT_NAMESPACE_ENVIRONMENT">GIT_NAMESPACE_ENVIRONMENT</a>));</td></tr>
+<tr><th id="158">158</th><td>	<a class="local col5 ref" href="#5shallow_file" title='shallow_file' data-ref="5shallow_file">shallow_file</a> = <a class="ref" href="../include/stdlib.h.html#getenv" title='getenv' data-ref="getenv">getenv</a>(<a class="macro" href="cache.h.html#424" title="&quot;GIT_SHALLOW_FILE&quot;" data-ref="_M/GIT_SHALLOW_FILE_ENVIRONMENT">GIT_SHALLOW_FILE_ENVIRONMENT</a>);</td></tr>
+<tr><th id="159">159</th><td>	<b>if</b> (<a class="local col5 ref" href="#5shallow_file" title='shallow_file' data-ref="5shallow_file">shallow_file</a>)</td></tr>
+<tr><th id="160">160</th><td>		<a class="ref" href="commit.h.html#set_alternate_shallow_file" title='set_alternate_shallow_file' data-ref="set_alternate_shallow_file">set_alternate_shallow_file</a>(<a class="local col5 ref" href="#5shallow_file" title='shallow_file' data-ref="5shallow_file">shallow_file</a>, <var>0</var>);</td></tr>
+<tr><th id="161">161</th><td>}</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><em>int</em> <dfn class="decl def" id="is_bare_repository" title='is_bare_repository' data-ref="is_bare_repository">is_bare_repository</dfn>(<em>void</em>)</td></tr>
+<tr><th id="164">164</th><td>{</td></tr>
+<tr><th id="165">165</th><td>	<i>/* if core.bare is not 'false', let's see if there is a work tree */</i></td></tr>
+<tr><th id="166">166</th><td>	<b>return</b> <a class="ref" href="cache.h.html#is_bare_repository_cfg" title='is_bare_repository_cfg' data-ref="is_bare_repository_cfg">is_bare_repository_cfg</a> &amp;&amp; !<a class="ref" href="#get_git_work_tree" title='get_git_work_tree' data-ref="get_git_work_tree">get_git_work_tree</a>();</td></tr>
+<tr><th id="167">167</th><td>}</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><em>int</em> <dfn class="decl def" id="have_git_dir" title='have_git_dir' data-ref="have_git_dir">have_git_dir</dfn>(<em>void</em>)</td></tr>
+<tr><th id="170">170</th><td>{</td></tr>
+<tr><th id="171">171</th><td>	<b>return</b> <a class="ref" href="cache.h.html#startup_info" title='startup_info' data-ref="startup_info">startup_info</a>-&gt;<a class="ref" href="cache.h.html#startup_info::have_repository" title='startup_info::have_repository' data-ref="startup_info::have_repository">have_repository</a></td></tr>
+<tr><th id="172">172</th><td>		|| <a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::gitdir" title='repository::gitdir' data-ref="repository::gitdir">gitdir</a>;</td></tr>
+<tr><th id="173">173</th><td>}</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="get_git_dir" title='get_git_dir' data-ref="get_git_dir">get_git_dir</dfn>(<em>void</em>)</td></tr>
+<tr><th id="176">176</th><td>{</td></tr>
+<tr><th id="177">177</th><td>	<b>if</b> (!<a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::gitdir" title='repository::gitdir' data-ref="repository::gitdir">gitdir</a>)</td></tr>
+<tr><th id="178">178</th><td>		<a class="macro" href="git-compat-util.h.html#1094" title="BUG_fl(&quot;/home/jon/workspace/git/environment.c&quot;, 178, &quot;git environment hasn&apos;t been setup&quot;)" data-ref="_M/BUG">BUG</a>(<q>"git environment hasn't been setup"</q>);</td></tr>
+<tr><th id="179">179</th><td>	<b>return</b> <a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::gitdir" title='repository::gitdir' data-ref="repository::gitdir">gitdir</a>;</td></tr>
+<tr><th id="180">180</th><td>}</td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="get_git_common_dir" title='get_git_common_dir' data-ref="get_git_common_dir">get_git_common_dir</dfn>(<em>void</em>)</td></tr>
+<tr><th id="183">183</th><td>{</td></tr>
+<tr><th id="184">184</th><td>	<b>if</b> (!<a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::commondir" title='repository::commondir' data-ref="repository::commondir">commondir</a>)</td></tr>
+<tr><th id="185">185</th><td>		<a class="macro" href="git-compat-util.h.html#1094" title="BUG_fl(&quot;/home/jon/workspace/git/environment.c&quot;, 185, &quot;git environment hasn&apos;t been setup&quot;)" data-ref="_M/BUG">BUG</a>(<q>"git environment hasn't been setup"</q>);</td></tr>
+<tr><th id="186">186</th><td>	<b>return</b> <a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::commondir" title='repository::commondir' data-ref="repository::commondir">commondir</a>;</td></tr>
+<tr><th id="187">187</th><td>}</td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="get_git_namespace" title='get_git_namespace' data-ref="get_git_namespace">get_git_namespace</dfn>(<em>void</em>)</td></tr>
+<tr><th id="190">190</th><td>{</td></tr>
+<tr><th id="191">191</th><td>	<b>if</b> (!<a class="tu ref" href="#namespace" title='namespace' data-use='r' data-ref="namespace">namespace</a>)</td></tr>
+<tr><th id="192">192</th><td>		<a class="macro" href="git-compat-util.h.html#1094" title="BUG_fl(&quot;/home/jon/workspace/git/environment.c&quot;, 192, &quot;git environment hasn&apos;t been setup&quot;)" data-ref="_M/BUG">BUG</a>(<q>"git environment hasn't been setup"</q>);</td></tr>
+<tr><th id="193">193</th><td>	<b>return</b> <a class="tu ref" href="#namespace" title='namespace' data-use='r' data-ref="namespace">namespace</a>;</td></tr>
+<tr><th id="194">194</th><td>}</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="strip_namespace" title='strip_namespace' data-ref="strip_namespace">strip_namespace</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7namespaced_ref" title='namespaced_ref' data-type='const char *' data-ref="7namespaced_ref">namespaced_ref</dfn>)</td></tr>
+<tr><th id="197">197</th><td>{</td></tr>
+<tr><th id="198">198</th><td>	<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8out" title='out' data-type='const char *' data-ref="8out">out</dfn>;</td></tr>
+<tr><th id="199">199</th><td>	<b>if</b> (<a class="ref" href="git-compat-util.h.html#skip_prefix" title='skip_prefix' data-ref="skip_prefix">skip_prefix</a>(<a class="local col7 ref" href="#7namespaced_ref" title='namespaced_ref' data-ref="7namespaced_ref">namespaced_ref</a>, <a class="ref" href="#get_git_namespace" title='get_git_namespace' data-ref="get_git_namespace">get_git_namespace</a>(), &amp;<a class="local col8 ref" href="#8out" title='out' data-ref="8out">out</a>))</td></tr>
+<tr><th id="200">200</th><td>		<b>return</b> <a class="local col8 ref" href="#8out" title='out' data-ref="8out">out</a>;</td></tr>
+<tr><th id="201">201</th><td>	<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="202">202</th><td>}</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="get_super_prefix" title='get_super_prefix' data-ref="get_super_prefix">get_super_prefix</dfn>(<em>void</em>)</td></tr>
+<tr><th id="205">205</th><td>{</td></tr>
+<tr><th id="206">206</th><td>	<em>static</em> <em>int</em> <dfn class="local col9 decl" id="9initialized" title='initialized' data-type='int' data-ref="9initialized">initialized</dfn>;</td></tr>
+<tr><th id="207">207</th><td>	<b>if</b> (!<a class="local col9 ref" href="#9initialized" title='initialized' data-ref="9initialized">initialized</a>) {</td></tr>
+<tr><th id="208">208</th><td>		<a class="tu ref" href="#super_prefix" title='super_prefix' data-use='w' data-ref="super_prefix">super_prefix</a> = <a class="ref" href="../include/stdlib.h.html#getenv" title='getenv' data-ref="getenv">getenv</a>(<a class="macro" href="cache.h.html#419" title="&quot;GIT_INTERNAL_SUPER_PREFIX&quot;" data-ref="_M/GIT_SUPER_PREFIX_ENVIRONMENT">GIT_SUPER_PREFIX_ENVIRONMENT</a>);</td></tr>
+<tr><th id="209">209</th><td>		<a class="local col9 ref" href="#9initialized" title='initialized' data-ref="9initialized">initialized</a> = <var>1</var>;</td></tr>
+<tr><th id="210">210</th><td>	}</td></tr>
+<tr><th id="211">211</th><td>	<b>return</b> <a class="tu ref" href="#super_prefix" title='super_prefix' data-use='r' data-ref="super_prefix">super_prefix</a>;</td></tr>
+<tr><th id="212">212</th><td>}</td></tr>
+<tr><th id="213">213</th><td></td></tr>
+<tr><th id="214">214</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="git_work_tree_initialized" title='git_work_tree_initialized' data-type='int' data-ref="git_work_tree_initialized">git_work_tree_initialized</dfn>;</td></tr>
+<tr><th id="215">215</th><td></td></tr>
+<tr><th id="216">216</th><td><i>/*</i></td></tr>
+<tr><th id="217">217</th><td><i> * Note.  This works only before you used a work tree.  This was added</i></td></tr>
+<tr><th id="218">218</th><td><i> * primarily to support git-clone to work in a new repository it just</i></td></tr>
+<tr><th id="219">219</th><td><i> * created, and is not meant to flip between different work trees.</i></td></tr>
+<tr><th id="220">220</th><td><i> */</i></td></tr>
+<tr><th id="221">221</th><td><em>void</em> <dfn class="decl def" id="set_git_work_tree" title='set_git_work_tree' data-ref="set_git_work_tree">set_git_work_tree</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10new_work_tree" title='new_work_tree' data-type='const char *' data-ref="10new_work_tree">new_work_tree</dfn>)</td></tr>
+<tr><th id="222">222</th><td>{</td></tr>
+<tr><th id="223">223</th><td>	<b>if</b> (<a class="tu ref" href="#git_work_tree_initialized" title='git_work_tree_initialized' data-use='r' data-ref="git_work_tree_initialized">git_work_tree_initialized</a>) {</td></tr>
+<tr><th id="224">224</th><td>		<a class="local col0 ref" href="#10new_work_tree" title='new_work_tree' data-ref="10new_work_tree">new_work_tree</a> = <a class="ref" href="cache.h.html#real_path" title='real_path' data-ref="real_path">real_path</a>(<a class="local col0 ref" href="#10new_work_tree" title='new_work_tree' data-ref="10new_work_tree">new_work_tree</a>);</td></tr>
+<tr><th id="225">225</th><td>		<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (new_work_tree) &amp;&amp; __builtin_constant_p (the_repository-&gt;worktree) &amp;&amp; (__s1_len = __builtin_strlen (new_work_tree), __s2_len = __builtin_strlen (the_repository-&gt;worktree), (!((size_t)(const void *)((new_work_tree) + 1) - (size_t)(const void *)(new_work_tree) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((the_repository-&gt;worktree) + 1) - (size_t)(const void *)(the_repository-&gt;worktree) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (new_work_tree, the_repository-&gt;worktree) : (__builtin_constant_p (new_work_tree) &amp;&amp; ((size_t)(const void *)((new_work_tree) + 1) - (size_t)(const void *)(new_work_tree) == 1) &amp;&amp; (__s1_len = __builtin_strlen (new_work_tree), __s1_len &lt; 4) ? (__builtin_constant_p (the_repository-&gt;worktree) &amp;&amp; ((size_t)(const void *)((the_repository-&gt;worktree) + 1) - (size_t)(const void *)(the_repository-&gt;worktree) == 1) ? __builtin_strcmp (new_work_tree, the_repository-&gt;worktree) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (the_repository-&gt;worktree); int __result = (((const unsigned char *) (const char *) (new_work_tree))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (new_work_tree))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (new_work_tree))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (new_work_tree))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (the_repository-&gt;worktree) &amp;&amp; ((size_t)(const void *)((the_repository-&gt;worktree) + 1) - (size_t)(const void *)(the_repository-&gt;worktree) == 1) &amp;&amp; (__s2_len = __builtin_strlen (the_repository-&gt;worktree), __s2_len &lt; 4) ? (__builtin_constant_p (new_work_tree) &amp;&amp; ((size_t)(const void *)((new_work_tree) + 1) - (size_t)(const void *)(new_work_tree) == 1) ? __builtin_strcmp (new_work_tree, the_repository-&gt;worktree) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (new_work_tree); int __result = (((const unsigned char *) (const char *) (the_repository-&gt;worktree))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (the_repository-&gt;worktree))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (the_repository-&gt;worktree))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (the_repository-&gt;worktree))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (new_work_tree, the_repository-&gt;worktree)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col0 ref" href="#10new_work_tree" title='new_work_tree' data-ref="10new_work_tree">new_work_tree</a>, <a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::worktree" title='repository::worktree' data-ref="repository::worktree">worktree</a>))</td></tr>
+<tr><th id="226">226</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"internal error: work tree has already been set\n"</q></td></tr>
+<tr><th id="227">227</th><td>			    <q>"Current worktree: %s\nNew worktree: %s"</q>,</td></tr>
+<tr><th id="228">228</th><td>			    <a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::worktree" title='repository::worktree' data-ref="repository::worktree">worktree</a>, <a class="local col0 ref" href="#10new_work_tree" title='new_work_tree' data-ref="10new_work_tree">new_work_tree</a>);</td></tr>
+<tr><th id="229">229</th><td>		<b>return</b>;</td></tr>
+<tr><th id="230">230</th><td>	}</td></tr>
+<tr><th id="231">231</th><td>	<a class="tu ref" href="#git_work_tree_initialized" title='git_work_tree_initialized' data-use='w' data-ref="git_work_tree_initialized">git_work_tree_initialized</a> = <var>1</var>;</td></tr>
+<tr><th id="232">232</th><td>	<a class="ref" href="repository.h.html#repo_set_worktree" title='repo_set_worktree' data-ref="repo_set_worktree">repo_set_worktree</a>(<a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>, <a class="local col0 ref" href="#10new_work_tree" title='new_work_tree' data-ref="10new_work_tree">new_work_tree</a>);</td></tr>
+<tr><th id="233">233</th><td>}</td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="get_git_work_tree" title='get_git_work_tree' data-ref="get_git_work_tree">get_git_work_tree</dfn>(<em>void</em>)</td></tr>
+<tr><th id="236">236</th><td>{</td></tr>
+<tr><th id="237">237</th><td>	<b>return</b> <a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::worktree" title='repository::worktree' data-ref="repository::worktree">worktree</a>;</td></tr>
+<tr><th id="238">238</th><td>}</td></tr>
+<tr><th id="239">239</th><td></td></tr>
+<tr><th id="240">240</th><td><em>char</em> *<dfn class="decl def" id="get_object_directory" title='get_object_directory' data-ref="get_object_directory">get_object_directory</dfn>(<em>void</em>)</td></tr>
+<tr><th id="241">241</th><td>{</td></tr>
+<tr><th id="242">242</th><td>	<b>if</b> (!<a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::objectdir" title='repository::objectdir' data-ref="repository::objectdir">objectdir</a>)</td></tr>
+<tr><th id="243">243</th><td>		<a class="macro" href="git-compat-util.h.html#1094" title="BUG_fl(&quot;/home/jon/workspace/git/environment.c&quot;, 243, &quot;git environment hasn&apos;t been setup&quot;)" data-ref="_M/BUG">BUG</a>(<q>"git environment hasn't been setup"</q>);</td></tr>
+<tr><th id="244">244</th><td>	<b>return</b> <a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::objectdir" title='repository::objectdir' data-ref="repository::objectdir">objectdir</a>;</td></tr>
+<tr><th id="245">245</th><td>}</td></tr>
+<tr><th id="246">246</th><td></td></tr>
+<tr><th id="247">247</th><td><em>int</em> <dfn class="decl def" id="odb_mkstemp" title='odb_mkstemp' data-ref="odb_mkstemp">odb_mkstemp</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col1 decl" id="11template" title='template' data-type='struct strbuf *' data-ref="11template">template</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12pattern" title='pattern' data-type='const char *' data-ref="12pattern">pattern</dfn>)</td></tr>
+<tr><th id="248">248</th><td>{</td></tr>
+<tr><th id="249">249</th><td>	<em>int</em> <dfn class="local col3 decl" id="13fd" title='fd' data-type='int' data-ref="13fd">fd</dfn>;</td></tr>
+<tr><th id="250">250</th><td>	<i>/*</i></td></tr>
+<tr><th id="251">251</th><td><i>	 * we let the umask do its job, don't try to be more</i></td></tr>
+<tr><th id="252">252</th><td><i>	 * restrictive except to remove write permission.</i></td></tr>
+<tr><th id="253">253</th><td><i>	 */</i></td></tr>
+<tr><th id="254">254</th><td>	<em>int</em> <dfn class="local col4 decl" id="14mode" title='mode' data-type='int' data-ref="14mode">mode</dfn> = <var>0444</var>;</td></tr>
+<tr><th id="255">255</th><td>	<a class="ref" href="path.h.html#git_path_buf" title='git_path_buf' data-ref="git_path_buf">git_path_buf</a>(<a class="local col1 ref" href="#11template" title='template' data-ref="11template">template</a>, <q>"objects/%s"</q>, <a class="local col2 ref" href="#12pattern" title='pattern' data-ref="12pattern">pattern</a>);</td></tr>
+<tr><th id="256">256</th><td>	<a class="local col3 ref" href="#13fd" title='fd' data-ref="13fd">fd</a> = <a class="ref" href="cache.h.html#git_mkstemp_mode" title='git_mkstemp_mode' data-ref="git_mkstemp_mode">git_mkstemp_mode</a>(<a class="local col1 ref" href="#11template" title='template' data-ref="11template">template</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="local col4 ref" href="#14mode" title='mode' data-ref="14mode">mode</a>);</td></tr>
+<tr><th id="257">257</th><td>	<b>if</b> (<var>0</var> &lt;= <a class="local col3 ref" href="#13fd" title='fd' data-ref="13fd">fd</a>)</td></tr>
+<tr><th id="258">258</th><td>		<b>return</b> <a class="local col3 ref" href="#13fd" title='fd' data-ref="13fd">fd</a>;</td></tr>
+<tr><th id="259">259</th><td></td></tr>
+<tr><th id="260">260</th><td>	<i>/* slow path */</i></td></tr>
+<tr><th id="261">261</th><td>	<i>/* some mkstemp implementations erase template on failure */</i></td></tr>
+<tr><th id="262">262</th><td>	<a class="ref" href="path.h.html#git_path_buf" title='git_path_buf' data-ref="git_path_buf">git_path_buf</a>(<a class="local col1 ref" href="#11template" title='template' data-ref="11template">template</a>, <q>"objects/%s"</q>, <a class="local col2 ref" href="#12pattern" title='pattern' data-ref="12pattern">pattern</a>);</td></tr>
+<tr><th id="263">263</th><td>	<a class="ref" href="cache.h.html#safe_create_leading_directories" title='safe_create_leading_directories' data-ref="safe_create_leading_directories">safe_create_leading_directories</a>(<a class="local col1 ref" href="#11template" title='template' data-ref="11template">template</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="264">264</th><td>	<b>return</b> <a class="ref" href="git-compat-util.h.html#xmkstemp_mode" title='xmkstemp_mode' data-ref="xmkstemp_mode">xmkstemp_mode</a>(<a class="local col1 ref" href="#11template" title='template' data-ref="11template">template</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="local col4 ref" href="#14mode" title='mode' data-ref="14mode">mode</a>);</td></tr>
+<tr><th id="265">265</th><td>}</td></tr>
+<tr><th id="266">266</th><td></td></tr>
+<tr><th id="267">267</th><td><em>int</em> <dfn class="decl def" id="odb_pack_keep" title='odb_pack_keep' data-ref="odb_pack_keep">odb_pack_keep</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="15name" title='name' data-type='const char *' data-ref="15name">name</dfn>)</td></tr>
+<tr><th id="268">268</th><td>{</td></tr>
+<tr><th id="269">269</th><td>	<em>int</em> <dfn class="local col6 decl" id="16fd" title='fd' data-type='int' data-ref="16fd">fd</dfn>;</td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td>	<a class="local col6 ref" href="#16fd" title='fd' data-ref="16fd">fd</a> = <a class="ref" href="../include/fcntl.h.html#159" title='open' data-ref="open64">open</a>(<a class="local col5 ref" href="#15name" title='name' data-ref="15name">name</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#45" title="02" data-ref="_M/O_RDWR">O_RDWR</a>|<a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#47" title="0100" data-ref="_M/O_CREAT">O_CREAT</a>|<a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#50" title="0200" data-ref="_M/O_EXCL">O_EXCL</a>, <var>0600</var>);</td></tr>
+<tr><th id="272">272</th><td>	<b>if</b> (<var>0</var> &lt;= <a class="local col6 ref" href="#16fd" title='fd' data-ref="16fd">fd</a>)</td></tr>
+<tr><th id="273">273</th><td>		<b>return</b> <a class="local col6 ref" href="#16fd" title='fd' data-ref="16fd">fd</a>;</td></tr>
+<tr><th id="274">274</th><td></td></tr>
+<tr><th id="275">275</th><td>	<i>/* slow path */</i></td></tr>
+<tr><th id="276">276</th><td>	<a class="ref" href="cache.h.html#safe_create_leading_directories_const" title='safe_create_leading_directories_const' data-ref="safe_create_leading_directories_const">safe_create_leading_directories_const</a>(<a class="local col5 ref" href="#15name" title='name' data-ref="15name">name</a>);</td></tr>
+<tr><th id="277">277</th><td>	<b>return</b> <a class="ref" href="../include/fcntl.h.html#159" title='open' data-ref="open64">open</a>(<a class="local col5 ref" href="#15name" title='name' data-ref="15name">name</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#45" title="02" data-ref="_M/O_RDWR">O_RDWR</a>|<a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#47" title="0100" data-ref="_M/O_CREAT">O_CREAT</a>|<a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#50" title="0200" data-ref="_M/O_EXCL">O_EXCL</a>, <var>0600</var>);</td></tr>
+<tr><th id="278">278</th><td>}</td></tr>
+<tr><th id="279">279</th><td></td></tr>
+<tr><th id="280">280</th><td><em>char</em> *<dfn class="decl def" id="get_index_file" title='get_index_file' data-ref="get_index_file">get_index_file</dfn>(<em>void</em>)</td></tr>
+<tr><th id="281">281</th><td>{</td></tr>
+<tr><th id="282">282</th><td>	<b>if</b> (!<a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::index_file" title='repository::index_file' data-ref="repository::index_file">index_file</a>)</td></tr>
+<tr><th id="283">283</th><td>		<a class="macro" href="git-compat-util.h.html#1094" title="BUG_fl(&quot;/home/jon/workspace/git/environment.c&quot;, 283, &quot;git environment hasn&apos;t been setup&quot;)" data-ref="_M/BUG">BUG</a>(<q>"git environment hasn't been setup"</q>);</td></tr>
+<tr><th id="284">284</th><td>	<b>return</b> <a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::index_file" title='repository::index_file' data-ref="repository::index_file">index_file</a>;</td></tr>
+<tr><th id="285">285</th><td>}</td></tr>
+<tr><th id="286">286</th><td></td></tr>
+<tr><th id="287">287</th><td><em>char</em> *<dfn class="decl def" id="get_graft_file" title='get_graft_file' data-ref="get_graft_file">get_graft_file</dfn>(<em>void</em>)</td></tr>
+<tr><th id="288">288</th><td>{</td></tr>
+<tr><th id="289">289</th><td>	<b>if</b> (!<a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::graft_file" title='repository::graft_file' data-ref="repository::graft_file">graft_file</a>)</td></tr>
+<tr><th id="290">290</th><td>		<a class="macro" href="git-compat-util.h.html#1094" title="BUG_fl(&quot;/home/jon/workspace/git/environment.c&quot;, 290, &quot;git environment hasn&apos;t been setup&quot;)" data-ref="_M/BUG">BUG</a>(<q>"git environment hasn't been setup"</q>);</td></tr>
+<tr><th id="291">291</th><td>	<b>return</b> <a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>-&gt;<a class="ref" href="repository.h.html#repository::graft_file" title='repository::graft_file' data-ref="repository::graft_file">graft_file</a>;</td></tr>
+<tr><th id="292">292</th><td>}</td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><em>int</em> <dfn class="decl def" id="set_git_dir" title='set_git_dir' data-ref="set_git_dir">set_git_dir</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="17path" title='path' data-type='const char *' data-ref="17path">path</dfn>)</td></tr>
+<tr><th id="295">295</th><td>{</td></tr>
+<tr><th id="296">296</th><td>	<b>if</b> (<a class="ref" href="../include/stdlib.h.html#setenv" title='setenv' data-ref="setenv">setenv</a>(<a class="macro" href="cache.h.html#414" title="&quot;GIT_DIR&quot;" data-ref="_M/GIT_DIR_ENVIRONMENT">GIT_DIR_ENVIRONMENT</a>, <a class="local col7 ref" href="#17path" title='path' data-ref="17path">path</a>, <var>1</var>))</td></tr>
+<tr><th id="297">297</th><td>		<b>return</b> <a class="macro" href="git-compat-util.h.html#446" title="(error(&quot;Could not set GIT_DIR to &apos;%s&apos;&quot;, path), const_error())" data-ref="_M/error">error</a>(<q>"Could not set GIT_DIR to '%s'"</q>, <a class="local col7 ref" href="#17path" title='path' data-ref="17path">path</a>);</td></tr>
+<tr><th id="298">298</th><td>	<a class="ref" href="repository.h.html#repo_set_gitdir" title='repo_set_gitdir' data-ref="repo_set_gitdir">repo_set_gitdir</a>(<a class="ref" href="repository.h.html#the_repository" title='the_repository' data-ref="the_repository">the_repository</a>, <a class="local col7 ref" href="#17path" title='path' data-ref="17path">path</a>);</td></tr>
+<tr><th id="299">299</th><td>	<a class="ref" href="#setup_git_env" title='setup_git_env' data-ref="setup_git_env">setup_git_env</a>();</td></tr>
+<tr><th id="300">300</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="301">301</th><td>}</td></tr>
+<tr><th id="302">302</th><td></td></tr>
+<tr><th id="303">303</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="get_log_output_encoding" title='get_log_output_encoding' data-ref="get_log_output_encoding">get_log_output_encoding</dfn>(<em>void</em>)</td></tr>
+<tr><th id="304">304</th><td>{</td></tr>
+<tr><th id="305">305</th><td>	<b>return</b> <a class="ref" href="cache.h.html#git_log_output_encoding" title='git_log_output_encoding' data-ref="git_log_output_encoding">git_log_output_encoding</a> ? <a class="ref" href="cache.h.html#git_log_output_encoding" title='git_log_output_encoding' data-ref="git_log_output_encoding">git_log_output_encoding</a></td></tr>
+<tr><th id="306">306</th><td>		: <a class="ref" href="#get_commit_output_encoding" title='get_commit_output_encoding' data-ref="get_commit_output_encoding">get_commit_output_encoding</a>();</td></tr>
+<tr><th id="307">307</th><td>}</td></tr>
+<tr><th id="308">308</th><td></td></tr>
+<tr><th id="309">309</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="get_commit_output_encoding" title='get_commit_output_encoding' data-ref="get_commit_output_encoding">get_commit_output_encoding</dfn>(<em>void</em>)</td></tr>
+<tr><th id="310">310</th><td>{</td></tr>
+<tr><th id="311">311</th><td>	<b>return</b> <a class="ref" href="cache.h.html#git_commit_encoding" title='git_commit_encoding' data-ref="git_commit_encoding">git_commit_encoding</a> ? <a class="ref" href="cache.h.html#git_commit_encoding" title='git_commit_encoding' data-ref="git_commit_encoding">git_commit_encoding</a> : <q>"UTF-8"</q>;</td></tr>
+<tr><th id="312">312</th><td>}</td></tr>
+<tr><th id="313">313</th><td></td></tr>
+<tr><th id="314">314</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="the_shared_repository" title='the_shared_repository' data-type='int' data-ref="the_shared_repository">the_shared_repository</dfn> = <a class="enum" href="cache.h.html#sharedrepo::PERM_UMASK" title='sharedrepo::PERM_UMASK' data-ref="sharedrepo::PERM_UMASK">PERM_UMASK</a>;</td></tr>
+<tr><th id="315">315</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="need_shared_repository_from_config" title='need_shared_repository_from_config' data-type='int' data-ref="need_shared_repository_from_config">need_shared_repository_from_config</dfn> = <var>1</var>;</td></tr>
+<tr><th id="316">316</th><td></td></tr>
+<tr><th id="317">317</th><td><em>void</em> <dfn class="decl def" id="set_shared_repository" title='set_shared_repository' data-ref="set_shared_repository">set_shared_repository</dfn>(<em>int</em> <dfn class="local col8 decl" id="18value" title='value' data-type='int' data-ref="18value">value</dfn>)</td></tr>
+<tr><th id="318">318</th><td>{</td></tr>
+<tr><th id="319">319</th><td>	<a class="tu ref" href="#the_shared_repository" title='the_shared_repository' data-use='w' data-ref="the_shared_repository">the_shared_repository</a> = <a class="local col8 ref" href="#18value" title='value' data-ref="18value">value</a>;</td></tr>
+<tr><th id="320">320</th><td>	<a class="tu ref" href="#need_shared_repository_from_config" title='need_shared_repository_from_config' data-use='w' data-ref="need_shared_repository_from_config">need_shared_repository_from_config</a> = <var>0</var>;</td></tr>
+<tr><th id="321">321</th><td>}</td></tr>
+<tr><th id="322">322</th><td></td></tr>
+<tr><th id="323">323</th><td><em>int</em> <dfn class="decl def" id="get_shared_repository" title='get_shared_repository' data-ref="get_shared_repository">get_shared_repository</dfn>(<em>void</em>)</td></tr>
+<tr><th id="324">324</th><td>{</td></tr>
+<tr><th id="325">325</th><td>	<b>if</b> (<a class="tu ref" href="#need_shared_repository_from_config" title='need_shared_repository_from_config' data-use='r' data-ref="need_shared_repository_from_config">need_shared_repository_from_config</a>) {</td></tr>
+<tr><th id="326">326</th><td>		<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="19var" title='var' data-type='const char *' data-ref="19var">var</dfn> = <q>"core.sharedrepository"</q>;</td></tr>
+<tr><th id="327">327</th><td>		<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="20value" title='value' data-type='const char *' data-ref="20value">value</dfn>;</td></tr>
+<tr><th id="328">328</th><td>		<b>if</b> (!<a class="ref" href="config.h.html#git_config_get_value" title='git_config_get_value' data-ref="git_config_get_value">git_config_get_value</a>(<a class="local col9 ref" href="#19var" title='var' data-ref="19var">var</a>, &amp;<a class="local col0 ref" href="#20value" title='value' data-ref="20value">value</a>))</td></tr>
+<tr><th id="329">329</th><td>			<a class="tu ref" href="#the_shared_repository" title='the_shared_repository' data-use='w' data-ref="the_shared_repository">the_shared_repository</a> = <a class="ref" href="cache.h.html#git_config_perm" title='git_config_perm' data-ref="git_config_perm">git_config_perm</a>(<a class="local col9 ref" href="#19var" title='var' data-ref="19var">var</a>, <a class="local col0 ref" href="#20value" title='value' data-ref="20value">value</a>);</td></tr>
+<tr><th id="330">330</th><td>		<a class="tu ref" href="#need_shared_repository_from_config" title='need_shared_repository_from_config' data-use='w' data-ref="need_shared_repository_from_config">need_shared_repository_from_config</a> = <var>0</var>;</td></tr>
+<tr><th id="331">331</th><td>	}</td></tr>
+<tr><th id="332">332</th><td>	<b>return</b> <a class="tu ref" href="#the_shared_repository" title='the_shared_repository' data-use='r' data-ref="the_shared_repository">the_shared_repository</a>;</td></tr>
+<tr><th id="333">333</th><td>}</td></tr>
+<tr><th id="334">334</th><td></td></tr>
+<tr><th id="335">335</th><td><em>void</em> <dfn class="decl def" id="reset_shared_repository" title='reset_shared_repository' data-ref="reset_shared_repository">reset_shared_repository</dfn>(<em>void</em>)</td></tr>
+<tr><th id="336">336</th><td>{</td></tr>
+<tr><th id="337">337</th><td>	<a class="tu ref" href="#need_shared_repository_from_config" title='need_shared_repository_from_config' data-use='w' data-ref="need_shared_repository_from_config">need_shared_repository_from_config</a> = <var>1</var>;</td></tr>
+<tr><th id="338">338</th><td>}</td></tr>
+<tr><th id="339">339</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

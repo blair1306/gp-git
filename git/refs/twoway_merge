@@ -1,0 +1,16 @@
+<dec f='codebrowser/unpack-trees.h' l='83' type='int twoway_merge(const struct cache_entry *const * src, struct unpack_trees_options * o)'/>
+<use f='codebrowser/builtin/am.c' l='1958' u='r' c='fast_forward_to'/>
+<use f='codebrowser/builtin/checkout.c' l='510' u='r' c='merge_working_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='224' u='r' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/reset.c' l='81' u='r' c='reset_index'/>
+<use f='codebrowser/merge.c' l='79' u='r' c='checkout_fast_forward'/>
+<def f='codebrowser/unpack-trees.c' l='2040' ll='2096' type='int twoway_merge(const struct cache_entry *const * src, struct unpack_trees_options * o)'/>
+<doc f='codebrowser/unpack-trees.c' l='2031'>/*
+ * Two-way merge.
+ *
+ * The rule is to &quot;carry forward&quot; what is in the index without losing
+ * information across a &quot;fast-forward&quot;, favoring a successful merge
+ * over a merge failure when it makes sense.  For details of the
+ * &quot;carry forward&quot; rule, please see &lt;Documentation/git-read-tree.txt&gt;.
+ *
+ */</doc>

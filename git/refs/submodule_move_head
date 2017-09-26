@@ -1,0 +1,12 @@
+<dec f='codebrowser/submodule.h' l='125' type='int submodule_move_head(const char * path, const char * old, const char * new, unsigned int flags)'/>
+<use f='codebrowser/entry.c' l='332' u='c' c='write_entry'/>
+<use f='codebrowser/entry.c' l='407' u='c' c='checkout_entry'/>
+<use f='codebrowser/entry.c' l='410' u='c' c='checkout_entry'/>
+<def f='codebrowser/submodule.c' l='1541' ll='1657' type='int submodule_move_head(const char * path, const char * old, const char * new, unsigned int flags)'/>
+<doc f='codebrowser/submodule.c' l='1536'>/**
+ * Moves a submodule at a given path from a given head to another new head.
+ * For edge cases (a submodule coming into existence or removing a submodule)
+ * pass NULL for old or new respectively.
+ */</doc>
+<use f='codebrowser/unpack-trees.c' l='267' u='c' c='check_submodule_move_head'/>
+<use f='codebrowser/unpack-trees.c' l='317' u='c' c='unlink_entry'/>

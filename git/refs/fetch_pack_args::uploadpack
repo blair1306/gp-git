@@ -1,0 +1,7 @@
+<dec f='codebrowser/fetch-pack.h' l='10' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/fetch-pack.c' l='59' u='w' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='65' u='w' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='69' u='w' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='191' u='r' c='cmd_fetch_pack'/>
+<use f='codebrowser/transport.c' l='216' u='w' c='fetch_refs_via_pack'/>

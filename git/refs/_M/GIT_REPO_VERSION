@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='853'/>
+<doc f='codebrowser/cache.h' l='848'>/*
+ * GIT_REPO_VERSION is the version we write by default. The
+ * _READ variant is the highest number we know how to
+ * handle.
+ */</doc>
+<use f='codebrowser/builtin/init-db.c' l='243' u='c'/>

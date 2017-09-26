@@ -1,0 +1,10 @@
+no_wildcard|no_wildcard
+notes_cache_get|notes_cache_get
+notes_cache_init|notes_cache_init
+notes_cache_put|notes_cache_put
+notes_cache_write|notes_cache_write
+notes_merge|notes_merge
+notes_merge_abort|notes_merge_abort
+notes_merge_commit|notes_merge_commit
+normalize_path_copy|normalize_path_copy
+normalize_path_copy_len|normalize_path_copy_len

@@ -1,0 +1,33 @@
+<dec f='codebrowser/cache.h' l='1331' type='int get_sha1_hex(const char * hex, unsigned char * sha1)'/>
+<doc f='codebrowser/cache.h' l='1324'>/*
+ * Try to read a SHA1 in hexadecimal format from the 40 characters
+ * starting at hex.  Write the 20-byte result to sha1 in binary form.
+ * Return 0 on success.  Reading stops if a NUL is encountered in the
+ * input, so it is safe to pass this function an arbitrary
+ * null-terminated string.
+ */</doc>
+<use f='codebrowser/builtin/mktag.c' l='55' u='c' c='verify_tag'/>
+<use f='codebrowser/builtin/mktree.c' l='90' u='c' c='mktree_line'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2516' u='c' c='read_object_list_from_stdin'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2522' u='c' c='read_object_list_from_stdin'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='653' u='c' c='cmd_pack_redundant'/>
+<use f='codebrowser/commit.c' l='158' u='c' c='read_graft_line'/>
+<use f='codebrowser/commit.c' l='330' u='c' c='parse_commit_buffer'/>
+<use f='codebrowser/commit.c' l='342' u='c' c='parse_commit_buffer'/>
+<use f='codebrowser/fsck.c' l='724' u='c' c='fsck_commit_buffer'/>
+<use f='codebrowser/fsck.c' l='731' u='c' c='fsck_commit_buffer'/>
+<use f='codebrowser/fsck.c' l='836' u='c' c='fsck_tag_buffer'/>
+<def f='codebrowser/hex.c' l='38' ll='49' type='int get_sha1_hex(const char * hex, unsigned char * sha1)'/>
+<use f='codebrowser/hex.c' l='53' u='c' c='get_oid_hex'/>
+<use f='codebrowser/http.c' l='1972' u='c' c='http_get_info_packs'/>
+<use f='codebrowser/path.c' l='681' u='c' c='validate_headref'/>
+<use f='codebrowser/refs/files-backend.c' l='402' u='c' c='files_read_raw_ref'/>
+<use f='codebrowser/replace_object.c' l='64' u='c' c='register_replace_ref'/>
+<use f='codebrowser/rerere.c' l='147' u='c' c='find_rerere_dir'/>
+<use f='codebrowser/rerere.c' l='214' u='c' c='read_rr'/>
+<use f='codebrowser/sha1_file.c' l='1358' u='c' c='add_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='3167' u='c' c='read_object_with_reference'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='223' u='c' c='cmd_delete_ref'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='239' u='c' c='cmd_update_ref'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='240' u='c' c='cmd_update_ref'/>
+<use f='codebrowser/walker.c' l='192' u='c' c='interpret_target'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/ewah/ewok_rlw.h' l='47' ll='54' type='void rlw_xor_run_bit(eword_t * word)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='388' u='c' c='ewah_not'/>

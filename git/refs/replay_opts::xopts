@@ -1,0 +1,21 @@
+<dec f='codebrowser/sequencer.h' l='35' type='char **'/>
+<offset>512</offset>
+<use f='codebrowser/builtin/revert.c' l='53' u='w' c='option_parse_x'/>
+<use f='codebrowser/builtin/revert.c' l='53' u='r' c='option_parse_x'/>
+<use f='codebrowser/builtin/revert.c' l='53' u='r' c='option_parse_x'/>
+<use f='codebrowser/builtin/revert.c' l='54' u='r' c='option_parse_x'/>
+<use f='codebrowser/builtin/revert.c' l='155' u='r' c='run_sequencer'/>
+<use f='codebrowser/sequencer.c' l='203' u='r' c='sequencer_remove_state'/>
+<use f='codebrowser/sequencer.c' l='204' u='r' c='sequencer_remove_state'/>
+<use f='codebrowser/sequencer.c' l='455' u='r' c='do_recursive_merge'/>
+<use f='codebrowser/sequencer.c' l='455' u='r' c='do_recursive_merge'/>
+<use f='codebrowser/sequencer.c' l='1103' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1440' u='w' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1440' u='r' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1440' u='r' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1441' u='r' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1466' u='a' c='read_strategy_opts'/>
+<use f='codebrowser/sequencer.c' l='1468' u='r' c='read_strategy_opts'/>
+<use f='codebrowser/sequencer.c' l='1471' u='r' c='read_strategy_opts'/>
+<use f='codebrowser/sequencer.c' l='1753' u='r' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1758' u='r' c='save_opts'/>

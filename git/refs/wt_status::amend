@@ -1,0 +1,7 @@
+<dec f='codebrowser/wt-status.h' l='65' type='int'/>
+<offset>416</offset>
+<use f='codebrowser/builtin/commit.c' l='506' u='w' c='run_status'/>
+<use f='codebrowser/wt-status.c' l='843' u='r' c='wt_longstatus_print_submodule_summary'/>
+<use f='codebrowser/wt-status.c' l='1111' u='r' c='split_commit_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1310' u='r' c='show_rebase_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1640' u='r' c='wt_longstatus_print'/>

@@ -1,0 +1,4 @@
+<dec f='include/dirent.h' l='111' type='10'/>
+<use f='codebrowser/cache.h' l='304' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1545' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1608' macro='1' c='treat_one_path'/>

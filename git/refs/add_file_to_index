@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='663' type='int add_file_to_index(struct index_state * , const char * path, int flags)'/>
+<use f='codebrowser/builtin/add.c' l='85' u='c' c='update_callback'/>
+<use f='codebrowser/builtin/add.c' l='355' u='c' c='add_files'/>
+<def f='codebrowser/read-cache.c' l='720' ll='726' type='int add_file_to_index(struct index_state * istate, const char * path, int flags)'/>
+<use f='codebrowser/rerere.c' l='716' macro='1' u='c'/>
+<use f='codebrowser/submodule.c' l='141' macro='1' u='c'/>

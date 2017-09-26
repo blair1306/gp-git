@@ -1,0 +1,4 @@
+<dec f='codebrowser/convert.h' l='84' type='void convert_to_git_filter_fd(const struct index_state * istate, const char * path, int fd, struct strbuf * dst, enum safe_crlf checksafe)'/>
+<doc f='codebrowser/convert.h' l='83'>/* Precondition: would_convert_to_git_filter_fd(path) == true */</doc>
+<def f='codebrowser/convert.c' l='1143' ll='1158' type='void convert_to_git_filter_fd(const struct index_state * istate, const char * path, int fd, struct strbuf * dst, enum safe_crlf checksafe)'/>
+<use f='codebrowser/sha1_file.c' l='3557' u='c' c='index_stream_convert_blob'/>

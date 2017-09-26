@@ -1,0 +1,45 @@
+<dec f='codebrowser/refs.h' l='437' type='int check_refname_format(const char * refname, int flags)'/>
+<doc f='codebrowser/refs.h' l='429'>/*
+ * Return 0 iff refname has the correct format for a refname according
+ * to the rules described in Documentation/git-check-ref-format.txt.
+ * If REFNAME_ALLOW_ONELEVEL is set in flags, then accept one-level
+ * reference names.  If REFNAME_REFSPEC_PATTERN is set in flags, then
+ * allow a single &quot;*&quot; wildcard character in the refspec. No leading or
+ * repeated slashes are accepted.
+ */</doc>
+<use f='codebrowser/builtin/check-ref-format.c' l='82' u='c' c='cmd_check_ref_format'/>
+<use f='codebrowser/builtin/checkout.c' l='1032' u='c' c='parse_branchname_arg'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1038' u='c' c='update'/>
+<use f='codebrowser/builtin/reflog.c' l='717' u='c' c='cmd_reflog_exists'/>
+<use f='codebrowser/builtin/replace.c' l='144' u='c' c='check_ref_valid'/>
+<use f='codebrowser/builtin/show-ref.c' l='130' u='c' c='exclude_existing'/>
+<use f='codebrowser/builtin/tag.c' l='352' u='c' c='strbuf_check_tag_ref'/>
+<use f='codebrowser/builtin/update-ref.c' l='70' u='c' c='parse_refname'/>
+<use f='codebrowser/connect.c' l='27' u='c' c='check_ref'/>
+<use f='codebrowser/connect.c' l='71' u='c' c='parse_one_symref_info'/>
+<use f='codebrowser/connect.c' l='72' u='c' c='parse_one_symref_info'/>
+<use f='codebrowser/environment.c' l='141' u='c' c='expand_namespace'/>
+<use f='codebrowser/fast-import.c' l='762' u='c' c='new_branch'/>
+<use f='codebrowser/fetch-pack.c' l='637' u='c' c='filter_refs'/>
+<use f='codebrowser/fsck.c' l='868' u='c' c='fsck_tag_buffer'/>
+<use f='codebrowser/notes-merge.c' l='554' u='c' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='568' u='c' c='notes_merge'/>
+<def f='codebrowser/refs.c' l='117' ll='143' type='int check_refname_format(const char * refname, int flags)'/>
+<use f='codebrowser/refs.c' l='935' u='c' c='ref_transaction_update'/>
+<use f='codebrowser/refs.c' l='1426' u='c' c='refs_resolve_ref_unsafe'/>
+<use f='codebrowser/refs.c' l='1473' u='c' c='refs_resolve_ref_unsafe'/>
+<use f='codebrowser/refs/files-backend.c' l='216' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='335' u='c' c='files_read_raw_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1039' u='c' c='prune_ref'/>
+<use f='codebrowser/refs/packed-backend.c' l='249' u='c' c='read_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='342' u='c' c='add_packed_ref'/>
+<use f='codebrowser/remote.c' l='545' u='c' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='554' u='c' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='569' u='c' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='582' u='c' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='587' u='c' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='1905' u='c' c='get_fetch_map'/>
+<use f='codebrowser/remote.c' l='2134' u='c' c='one_local_ref'/>
+<use f='codebrowser/sha1_name.c' l='1337' u='c' c='strbuf_check_branch_ref'/>
+<use f='codebrowser/transport.c' l='532' u='c' c='transport_verify_remote_names'/>
+<use f='codebrowser/walker.c' l='194' u='c' c='interpret_target'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/tempfile.h' l='87' type='volatile pid_t'/>
+<offset>192</offset>
+<use f='codebrowser/tempfile.c' l='66' u='r' c='remove_tempfiles'/>
+<use f='codebrowser/tempfile.c' l='106' u='w' c='prepare_tempfile_object'/>
+<use f='codebrowser/tempfile.c' l='133' u='w' c='create_tempfile'/>
+<use f='codebrowser/tempfile.c' l='149' u='w' c='register_tempfile'/>
+<use f='codebrowser/tempfile.c' l='164' u='w' c='mks_tempfile_sm'/>
+<use f='codebrowser/tempfile.c' l='186' u='w' c='mks_tempfile_tsm'/>

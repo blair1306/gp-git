@@ -1,0 +1,13 @@
+<dec f='codebrowser/tmp-objdir.c' l='11' type='struct strbuf'/>
+<use f='codebrowser/tmp-objdir.c' l='25' u='a' c='tmp_objdir_free'/>
+<use f='codebrowser/tmp-objdir.c' l='45' u='a' c='tmp_objdir_destroy_1'/>
+<use f='codebrowser/tmp-objdir.c' l='132' u='a' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='135' u='a' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='143' u='a' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='145' u='m' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='158' u='m' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='165' u='m' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='167' u='m' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='269' u='a' c='tmp_objdir_migrate'/>
+<use f='codebrowser/tmp-objdir.c' l='290' u='m' c='tmp_objdir_add_as_alternate'/>
+<offset>0</offset>

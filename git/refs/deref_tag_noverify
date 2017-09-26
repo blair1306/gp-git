@@ -1,0 +1,3 @@
+<dec f='codebrowser/tag.h' l='19' type='struct object * deref_tag_noverify(struct object * )'/>
+<use f='codebrowser/refs.c' l='269' u='c' c='peel_object'/>
+<def f='codebrowser/tag.c' l='80' ll='90' type='struct object * deref_tag_noverify(struct object * o)'/>

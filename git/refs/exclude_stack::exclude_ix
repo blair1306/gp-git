@@ -1,0 +1,5 @@
+<dec f='codebrowser/dir.h' l='68' type='int'/>
+<offset>96</offset>
+<doc f='codebrowser/dir.h' l='68'>/* index of exclude_list within EXC_DIRS exclude_list_group */</doc>
+<use f='codebrowser/dir.c' l='1081' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1130' u='w' c='prep_exclude'/>

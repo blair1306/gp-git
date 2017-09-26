@@ -1,0 +1,11 @@
+<dec f='codebrowser/revision.h' l='119' type='unsigned int'/>
+<offset>961</offset>
+<use f='codebrowser/builtin/rev-list.c' l='373' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='412' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='416' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/revision.c' l='851' u='r' c='cherry_pick_list'/>
+<use f='codebrowser/revision.c' l='1068' u='r' c='limit_list'/>
+<use f='codebrowser/revision.c' l='1832' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1841' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1844' u='r' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='3366' u='r' c='get_revision_mark'/>

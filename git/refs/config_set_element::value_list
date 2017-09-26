@@ -1,0 +1,8 @@
+<dec f='codebrowser/config.h' l='127' type='struct string_list'/>
+<offset>192</offset>
+<use f='codebrowser/config.c' l='1620' u='a' c='configset_iter'/>
+<use f='codebrowser/config.c' l='1698' u='a' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1701' u='a' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1706' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1756' u='a' c='git_configset_clear'/>
+<use f='codebrowser/config.c' l='1798' u='a' c='git_configset_get_value_multi'/>

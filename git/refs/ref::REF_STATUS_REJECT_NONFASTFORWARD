@@ -1,0 +1,9 @@
+<dec f='codebrowser/remote.h' l='115' type='2'/>
+<use f='codebrowser/builtin/send-pack.c' l='51' c='print_helper_status'/>
+<use f='codebrowser/remote.c' l='1591' u='r' c='set_ref_status_for_push'/>
+<use f='codebrowser/send-pack.c' l='246' c='check_to_send_update'/>
+<use f='codebrowser/transport-helper.c' l='720' u='r' c='push_update_ref_status'/>
+<use f='codebrowser/transport-helper.c' l='848' c='push_refs_with_push'/>
+<use f='codebrowser/transport.c' l='401' c='print_one_push_status'/>
+<use f='codebrowser/transport.c' l='500' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='935' u='r' c='run_pre_push_hook'/>

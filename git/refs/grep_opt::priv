@@ -1,0 +1,6 @@
+<dec f='codebrowser/grep.h' l='171' type='void *'/>
+<offset>6784</offset>
+<use f='codebrowser/grep.c' l='1435' u='r' c='match_funcname'/>
+<use f='codebrowser/grep.c' l='1442' u='w' c='match_funcname'/>
+<use f='codebrowser/grep.c' l='1704' u='w' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1832' u='w' c='grep_source_1'/>

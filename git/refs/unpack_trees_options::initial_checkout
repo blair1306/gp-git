@@ -1,0 +1,5 @@
+<dec f='codebrowser/unpack-trees.h' l='45' type='unsigned int'/>
+<offset>288</offset>
+<use f='codebrowser/builtin/checkout.c' l='505' u='w' c='merge_working_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='225' u='w' c='cmd_read_tree'/>
+<use f='codebrowser/unpack-trees.c' l='2085' u='r' c='twoway_merge'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/http-walker.c' l='19' type='3'/>
+<use f='codebrowser/http-walker.c' l='96' u='r' c='process_object_response'/>
+<use f='codebrowser/http-walker.c' l='132' u='r' c='fill_active_slot'/>

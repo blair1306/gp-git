@@ -1,0 +1,10 @@
+<dec f='codebrowser/remote.h' l='73' type='unsigned int'/>
+<offset>2</offset>
+<use f='codebrowser/builtin/remote.c' l='445' u='r' c='get_push_ref_states_noquery'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1161' u='r' c='push_check'/>
+<use f='codebrowser/remote.c' l='514' u='w' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='1161' u='r' c='match_explicit'/>
+<use f='codebrowser/remote.c' l='1240' u='r' c='get_ref_match'/>
+<use f='codebrowser/remote.c' l='1263' u='r' c='get_ref_match'/>
+<use f='codebrowser/remote.c' l='1413' u='r' c='check_push_refs'/>
+<use f='codebrowser/remote.c' l='1471' u='r' c='match_push_refs'/>

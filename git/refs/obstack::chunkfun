@@ -1,0 +1,5 @@
+<dec f='codebrowser/compat/obstack.h' l='167' type='struct _obstack_chunk *(*)(void *, long)'/>
+<offset>448</offset>
+<doc f='codebrowser/compat/obstack.h' l='164'>/* These prototypes vary based on `use_extra_arg&apos;, and we use
+     casts to the prototypeless function type in all assignments,
+     but having prototypes here quiets -Wstrict-prototypes.  */</doc>

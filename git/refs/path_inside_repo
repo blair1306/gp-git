@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='563' type='int path_inside_repo(const char * prefix, const char * path)'/>
+<use f='codebrowser/builtin/diff.c' l='313' u='c' c='cmd_diff'/>
+<use f='codebrowser/builtin/diff.c' l='314' u='c' c='cmd_diff'/>
+<def f='codebrowser/setup.c' l='126' ll='135' type='int path_inside_repo(const char * prefix, const char * path)'/>

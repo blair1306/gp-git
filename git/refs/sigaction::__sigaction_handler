@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/sigaction.h' l='35' type='union (anonymous union at /usr/include/x86_64-linux-gnu/bits/sigaction.h:28:5)'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/log.c' l='323' macro='1' u='m'/>
+<use f='codebrowser/fast-import.c' l='540' macro='1' u='m'/>
+<use f='codebrowser/progress.c' l='57' macro='1' u='m'/>

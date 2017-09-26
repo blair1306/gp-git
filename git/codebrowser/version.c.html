@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>version.c source code [codebrowser/version.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/version.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='version.c.html'>version.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="git-compat-util.h.html">"git-compat-util.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="version.h.html">"version.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="strbuf.h.html">"strbuf.h"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><em>const</em> <em>char</em> <dfn class="decl def" id="git_version_string" title='git_version_string' data-ref="git_version_string">git_version_string</dfn>[] = <span class="macro" title="&quot;2.14.1.326.g3dc57eb&quot;" data-ref="_M/GIT_VERSION">GIT_VERSION</span>;</td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="git_user_agent" title='git_user_agent' data-ref="git_user_agent">git_user_agent</dfn>(<em>void</em>)</td></tr>
+<tr><th id="8">8</th><td>{</td></tr>
+<tr><th id="9">9</th><td>	<em>static</em> <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1agent" title='agent' data-type='const char *' data-ref="1agent">agent</dfn> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td>	<b>if</b> (!<a class="local col1 ref" href="#1agent" title='agent' data-ref="1agent">agent</a>) {</td></tr>
+<tr><th id="12">12</th><td>		<a class="local col1 ref" href="#1agent" title='agent' data-ref="1agent">agent</a> = <a class="ref" href="../include/stdlib.h.html#getenv" title='getenv' data-ref="getenv">getenv</a>(<q>"GIT_USER_AGENT"</q>);</td></tr>
+<tr><th id="13">13</th><td>		<b>if</b> (!<a class="local col1 ref" href="#1agent" title='agent' data-ref="1agent">agent</a>)</td></tr>
+<tr><th id="14">14</th><td>			<a class="local col1 ref" href="#1agent" title='agent' data-ref="1agent">agent</a> = <span class="macro" title="&quot;git/2.14.1.326.g3dc57eb&quot;" data-ref="_M/GIT_USER_AGENT">GIT_USER_AGENT</span>;</td></tr>
+<tr><th id="15">15</th><td>	}</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td>	<b>return</b> <a class="local col1 ref" href="#1agent" title='agent' data-ref="1agent">agent</a>;</td></tr>
+<tr><th id="18">18</th><td>}</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="git_user_agent_sanitized" title='git_user_agent_sanitized' data-ref="git_user_agent_sanitized">git_user_agent_sanitized</dfn>(<em>void</em>)</td></tr>
+<tr><th id="21">21</th><td>{</td></tr>
+<tr><th id="22">22</th><td>	<em>static</em> <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2agent" title='agent' data-type='const char *' data-ref="2agent">agent</dfn> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td>	<b>if</b> (!<a class="local col2 ref" href="#2agent" title='agent' data-ref="2agent">agent</a>) {</td></tr>
+<tr><th id="25">25</th><td>		<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col3 decl" id="3buf" title='buf' data-type='struct strbuf' data-ref="3buf">buf</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="26">26</th><td>		<em>int</em> <dfn class="local col4 decl" id="4i" title='i' data-type='int' data-ref="4i">i</dfn>;</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td>		<a class="ref" href="strbuf.h.html#strbuf_addstr" title='strbuf_addstr' data-ref="strbuf_addstr">strbuf_addstr</a>(&amp;<a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a>, <a class="ref" href="#git_user_agent" title='git_user_agent' data-ref="git_user_agent">git_user_agent</a>());</td></tr>
+<tr><th id="29">29</th><td>		<a class="ref" href="strbuf.h.html#strbuf_trim" title='strbuf_trim' data-ref="strbuf_trim">strbuf_trim</a>(&amp;<a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a>);</td></tr>
+<tr><th id="30">30</th><td>		<b>for</b> (<a class="local col4 ref" href="#4i" title='i' data-ref="4i">i</a> = <var>0</var>; <a class="local col4 ref" href="#4i" title='i' data-ref="4i">i</a> &lt; <a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>; <a class="local col4 ref" href="#4i" title='i' data-ref="4i">i</a>++) {</td></tr>
+<tr><th id="31">31</th><td>			<b>if</b> (<a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="local col4 ref" href="#4i" title='i' data-ref="4i">i</a>] &lt;= <var>32</var> || <a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="local col4 ref" href="#4i" title='i' data-ref="4i">i</a>] &gt;= <var>127</var>)</td></tr>
+<tr><th id="32">32</th><td>				<a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="local col4 ref" href="#4i" title='i' data-ref="4i">i</a>] = <kbd>'.'</kbd>;</td></tr>
+<tr><th id="33">33</th><td>		}</td></tr>
+<tr><th id="34">34</th><td>		<a class="local col2 ref" href="#2agent" title='agent' data-ref="2agent">agent</a> = <a class="local col3 ref" href="#3buf" title='buf' data-ref="3buf">buf</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>;</td></tr>
+<tr><th id="35">35</th><td>	}</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>	<b>return</b> <a class="local col2 ref" href="#2agent" title='agent' data-ref="2agent">agent</a>;</td></tr>
+<tr><th id="38">38</th><td>}</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>unpack-trees.h source code [codebrowser/unpack-trees.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="unpack_trees_error_types,unpack_trees_options "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/unpack-trees.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='unpack-trees.h.html'>unpack-trees.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/UNPACK_TREES_H">UNPACK_TREES_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/UNPACK_TREES_H" data-ref="_M/UNPACK_TREES_H">UNPACK_TREES_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="string-list.h.html">"string-list.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/MAX_UNPACK_TREES" data-ref="_M/MAX_UNPACK_TREES">MAX_UNPACK_TREES</dfn> 8</u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>struct</b> <a class="type" href="#unpack_trees_options" title='unpack_trees_options' data-ref="unpack_trees_options">unpack_trees_options</a>;</td></tr>
+<tr><th id="9">9</th><td><b>struct</b> <a class="type" href="dir.h.html#exclude_list" title='exclude_list' data-ref="exclude_list" id="exclude_list">exclude_list</a>;</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="merge_fn_t" title='merge_fn_t' data-type='int (*)(const struct cache_entry *const *, struct unpack_trees_options *)' data-ref="merge_fn_t">merge_fn_t</dfn>)(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#cache_entry" title='cache_entry' data-ref="cache_entry">cache_entry</a> * <em>const</em> *<dfn class="local col1 decl" id="331src" title='src' data-type='const struct cache_entry *const *' data-ref="331src">src</dfn>,</td></tr>
+<tr><th id="12">12</th><td>		<b>struct</b> <a class="type" href="#unpack_trees_options" title='unpack_trees_options' data-ref="unpack_trees_options">unpack_trees_options</a> *<dfn class="local col2 decl" id="332options" title='options' data-type='struct unpack_trees_options *' data-ref="332options">options</dfn>);</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><b>enum</b> <dfn class="type def" id="unpack_trees_error_types" title='unpack_trees_error_types' data-ref="unpack_trees_error_types">unpack_trees_error_types</dfn> {</td></tr>
+<tr><th id="15">15</th><td>	<dfn class="enum" id="unpack_trees_error_types::ERROR_WOULD_OVERWRITE" title='unpack_trees_error_types::ERROR_WOULD_OVERWRITE' data-ref="unpack_trees_error_types::ERROR_WOULD_OVERWRITE">ERROR_WOULD_OVERWRITE</dfn> = <var>0</var>,</td></tr>
+<tr><th id="16">16</th><td>	<dfn class="enum" id="unpack_trees_error_types::ERROR_NOT_UPTODATE_FILE" title='unpack_trees_error_types::ERROR_NOT_UPTODATE_FILE' data-ref="unpack_trees_error_types::ERROR_NOT_UPTODATE_FILE">ERROR_NOT_UPTODATE_FILE</dfn>,</td></tr>
+<tr><th id="17">17</th><td>	<dfn class="enum" id="unpack_trees_error_types::ERROR_NOT_UPTODATE_DIR" title='unpack_trees_error_types::ERROR_NOT_UPTODATE_DIR' data-ref="unpack_trees_error_types::ERROR_NOT_UPTODATE_DIR">ERROR_NOT_UPTODATE_DIR</dfn>,</td></tr>
+<tr><th id="18">18</th><td>	<dfn class="enum" id="unpack_trees_error_types::ERROR_WOULD_LOSE_UNTRACKED_OVERWRITTEN" title='unpack_trees_error_types::ERROR_WOULD_LOSE_UNTRACKED_OVERWRITTEN' data-ref="unpack_trees_error_types::ERROR_WOULD_LOSE_UNTRACKED_OVERWRITTEN">ERROR_WOULD_LOSE_UNTRACKED_OVERWRITTEN</dfn>,</td></tr>
+<tr><th id="19">19</th><td>	<dfn class="enum" id="unpack_trees_error_types::ERROR_WOULD_LOSE_UNTRACKED_REMOVED" title='unpack_trees_error_types::ERROR_WOULD_LOSE_UNTRACKED_REMOVED' data-ref="unpack_trees_error_types::ERROR_WOULD_LOSE_UNTRACKED_REMOVED">ERROR_WOULD_LOSE_UNTRACKED_REMOVED</dfn>,</td></tr>
+<tr><th id="20">20</th><td>	<dfn class="enum" id="unpack_trees_error_types::ERROR_BIND_OVERLAP" title='unpack_trees_error_types::ERROR_BIND_OVERLAP' data-ref="unpack_trees_error_types::ERROR_BIND_OVERLAP">ERROR_BIND_OVERLAP</dfn>,</td></tr>
+<tr><th id="21">21</th><td>	<dfn class="enum" id="unpack_trees_error_types::ERROR_SPARSE_NOT_UPTODATE_FILE" title='unpack_trees_error_types::ERROR_SPARSE_NOT_UPTODATE_FILE' data-ref="unpack_trees_error_types::ERROR_SPARSE_NOT_UPTODATE_FILE">ERROR_SPARSE_NOT_UPTODATE_FILE</dfn>,</td></tr>
+<tr><th id="22">22</th><td>	<dfn class="enum" id="unpack_trees_error_types::ERROR_WOULD_LOSE_ORPHANED_OVERWRITTEN" title='unpack_trees_error_types::ERROR_WOULD_LOSE_ORPHANED_OVERWRITTEN' data-ref="unpack_trees_error_types::ERROR_WOULD_LOSE_ORPHANED_OVERWRITTEN">ERROR_WOULD_LOSE_ORPHANED_OVERWRITTEN</dfn>,</td></tr>
+<tr><th id="23">23</th><td>	<dfn class="enum" id="unpack_trees_error_types::ERROR_WOULD_LOSE_ORPHANED_REMOVED" title='unpack_trees_error_types::ERROR_WOULD_LOSE_ORPHANED_REMOVED' data-ref="unpack_trees_error_types::ERROR_WOULD_LOSE_ORPHANED_REMOVED">ERROR_WOULD_LOSE_ORPHANED_REMOVED</dfn>,</td></tr>
+<tr><th id="24">24</th><td>	<dfn class="enum" id="unpack_trees_error_types::ERROR_WOULD_LOSE_SUBMODULE" title='unpack_trees_error_types::ERROR_WOULD_LOSE_SUBMODULE' data-ref="unpack_trees_error_types::ERROR_WOULD_LOSE_SUBMODULE">ERROR_WOULD_LOSE_SUBMODULE</dfn>,</td></tr>
+<tr><th id="25">25</th><td>	<dfn class="enum" id="unpack_trees_error_types::NB_UNPACK_TREES_ERROR_TYPES" title='unpack_trees_error_types::NB_UNPACK_TREES_ERROR_TYPES' data-ref="unpack_trees_error_types::NB_UNPACK_TREES_ERROR_TYPES">NB_UNPACK_TREES_ERROR_TYPES</dfn></td></tr>
+<tr><th id="26">26</th><td>};</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i>/*</i></td></tr>
+<tr><th id="29">29</th><td><i> * Sets the list of user-friendly error messages to be used by the</i></td></tr>
+<tr><th id="30">30</th><td><i> * command "cmd" (either merge or checkout), and show_all_errors to 1.</i></td></tr>
+<tr><th id="31">31</th><td><i> */</i></td></tr>
+<tr><th id="32">32</th><td><em>void</em> <dfn class="decl" id="setup_unpack_trees_porcelain" title='setup_unpack_trees_porcelain' data-ref="setup_unpack_trees_porcelain">setup_unpack_trees_porcelain</dfn>(<b>struct</b> <a class="type" href="#unpack_trees_options" title='unpack_trees_options' data-ref="unpack_trees_options">unpack_trees_options</a> *<dfn class="local col3 decl" id="333opts" title='opts' data-type='struct unpack_trees_options *' data-ref="333opts">opts</dfn>,</td></tr>
+<tr><th id="33">33</th><td>				  <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="334cmd" title='cmd' data-type='const char *' data-ref="334cmd">cmd</dfn>);</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><b>struct</b> <dfn class="type def" id="unpack_trees_options" title='unpack_trees_options' data-ref="unpack_trees_options">unpack_trees_options</dfn> {</td></tr>
+<tr><th id="36">36</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="unpack_trees_options::reset" title='unpack_trees_options::reset' data-ref="unpack_trees_options::reset">reset</dfn>,</td></tr>
+<tr><th id="37">37</th><td>		     <dfn class="decl" id="unpack_trees_options::merge" title='unpack_trees_options::merge' data-ref="unpack_trees_options::merge">merge</dfn>,</td></tr>
+<tr><th id="38">38</th><td>		     <dfn class="decl" id="unpack_trees_options::update" title='unpack_trees_options::update' data-ref="unpack_trees_options::update">update</dfn>,</td></tr>
+<tr><th id="39">39</th><td>		     <dfn class="decl" id="unpack_trees_options::index_only" title='unpack_trees_options::index_only' data-ref="unpack_trees_options::index_only">index_only</dfn>,</td></tr>
+<tr><th id="40">40</th><td>		     <dfn class="decl" id="unpack_trees_options::nontrivial_merge" title='unpack_trees_options::nontrivial_merge' data-ref="unpack_trees_options::nontrivial_merge">nontrivial_merge</dfn>,</td></tr>
+<tr><th id="41">41</th><td>		     <dfn class="decl" id="unpack_trees_options::trivial_merges_only" title='unpack_trees_options::trivial_merges_only' data-ref="unpack_trees_options::trivial_merges_only">trivial_merges_only</dfn>,</td></tr>
+<tr><th id="42">42</th><td>		     <dfn class="decl" id="unpack_trees_options::verbose_update" title='unpack_trees_options::verbose_update' data-ref="unpack_trees_options::verbose_update">verbose_update</dfn>,</td></tr>
+<tr><th id="43">43</th><td>		     <dfn class="decl" id="unpack_trees_options::aggressive" title='unpack_trees_options::aggressive' data-ref="unpack_trees_options::aggressive">aggressive</dfn>,</td></tr>
+<tr><th id="44">44</th><td>		     <dfn class="decl" id="unpack_trees_options::skip_unmerged" title='unpack_trees_options::skip_unmerged' data-ref="unpack_trees_options::skip_unmerged">skip_unmerged</dfn>,</td></tr>
+<tr><th id="45">45</th><td>		     <dfn class="decl" id="unpack_trees_options::initial_checkout" title='unpack_trees_options::initial_checkout' data-ref="unpack_trees_options::initial_checkout">initial_checkout</dfn>,</td></tr>
+<tr><th id="46">46</th><td>		     <dfn class="decl" id="unpack_trees_options::diff_index_cached" title='unpack_trees_options::diff_index_cached' data-ref="unpack_trees_options::diff_index_cached">diff_index_cached</dfn>,</td></tr>
+<tr><th id="47">47</th><td>		     <dfn class="decl" id="unpack_trees_options::debug_unpack" title='unpack_trees_options::debug_unpack' data-ref="unpack_trees_options::debug_unpack">debug_unpack</dfn>,</td></tr>
+<tr><th id="48">48</th><td>		     <dfn class="decl" id="unpack_trees_options::skip_sparse_checkout" title='unpack_trees_options::skip_sparse_checkout' data-ref="unpack_trees_options::skip_sparse_checkout">skip_sparse_checkout</dfn>,</td></tr>
+<tr><th id="49">49</th><td>		     <dfn class="decl" id="unpack_trees_options::gently" title='unpack_trees_options::gently' data-ref="unpack_trees_options::gently">gently</dfn>,</td></tr>
+<tr><th id="50">50</th><td>		     <dfn class="decl" id="unpack_trees_options::exiting_early" title='unpack_trees_options::exiting_early' data-ref="unpack_trees_options::exiting_early">exiting_early</dfn>,</td></tr>
+<tr><th id="51">51</th><td>		     <dfn class="decl" id="unpack_trees_options::show_all_errors" title='unpack_trees_options::show_all_errors' data-ref="unpack_trees_options::show_all_errors">show_all_errors</dfn>,</td></tr>
+<tr><th id="52">52</th><td>		     <dfn class="decl" id="unpack_trees_options::dry_run" title='unpack_trees_options::dry_run' data-ref="unpack_trees_options::dry_run">dry_run</dfn>;</td></tr>
+<tr><th id="53">53</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="unpack_trees_options::prefix" title='unpack_trees_options::prefix' data-ref="unpack_trees_options::prefix">prefix</dfn>;</td></tr>
+<tr><th id="54">54</th><td>	<em>int</em> <dfn class="decl" id="unpack_trees_options::cache_bottom" title='unpack_trees_options::cache_bottom' data-ref="unpack_trees_options::cache_bottom">cache_bottom</dfn>;</td></tr>
+<tr><th id="55">55</th><td>	<b>struct</b> <a class="type" href="dir.h.html#dir_struct" title='dir_struct' data-ref="dir_struct" id="dir_struct"><a class="type" href="dir.h.html#dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</a></a> *<dfn class="decl" id="unpack_trees_options::dir" title='unpack_trees_options::dir' data-ref="unpack_trees_options::dir">dir</dfn>;</td></tr>
+<tr><th id="56">56</th><td>	<b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="decl" id="unpack_trees_options::pathspec" title='unpack_trees_options::pathspec' data-ref="unpack_trees_options::pathspec">pathspec</dfn>;</td></tr>
+<tr><th id="57">57</th><td>	<a class="typedef" href="#merge_fn_t" title='merge_fn_t' data-type='int (*)(const struct cache_entry *const *, struct unpack_trees_options *)' data-ref="merge_fn_t">merge_fn_t</a> <dfn class="decl" id="unpack_trees_options::fn" title='unpack_trees_options::fn' data-ref="unpack_trees_options::fn">fn</dfn>;</td></tr>
+<tr><th id="58">58</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="unpack_trees_options::msgs" title='unpack_trees_options::msgs' data-ref="unpack_trees_options::msgs">msgs</dfn>[<a class="enum" href="#unpack_trees_error_types::NB_UNPACK_TREES_ERROR_TYPES" title='unpack_trees_error_types::NB_UNPACK_TREES_ERROR_TYPES' data-ref="unpack_trees_error_types::NB_UNPACK_TREES_ERROR_TYPES">NB_UNPACK_TREES_ERROR_TYPES</a>];</td></tr>
+<tr><th id="59">59</th><td>	<i>/*</i></td></tr>
+<tr><th id="60">60</th><td><i>	 * Store error messages in an array, each case</i></td></tr>
+<tr><th id="61">61</th><td><i>	 * corresponding to a error message type</i></td></tr>
+<tr><th id="62">62</th><td><i>	 */</i></td></tr>
+<tr><th id="63">63</th><td>	<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> <dfn class="decl" id="unpack_trees_options::unpack_rejects" title='unpack_trees_options::unpack_rejects' data-ref="unpack_trees_options::unpack_rejects">unpack_rejects</dfn>[<a class="enum" href="#unpack_trees_error_types::NB_UNPACK_TREES_ERROR_TYPES" title='unpack_trees_error_types::NB_UNPACK_TREES_ERROR_TYPES' data-ref="unpack_trees_error_types::NB_UNPACK_TREES_ERROR_TYPES">NB_UNPACK_TREES_ERROR_TYPES</a>];</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td>	<em>int</em> <dfn class="decl" id="unpack_trees_options::head_idx" title='unpack_trees_options::head_idx' data-ref="unpack_trees_options::head_idx">head_idx</dfn>;</td></tr>
+<tr><th id="66">66</th><td>	<em>int</em> <dfn class="decl" id="unpack_trees_options::merge_size" title='unpack_trees_options::merge_size' data-ref="unpack_trees_options::merge_size">merge_size</dfn>;</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>	<b>struct</b> <a class="type" href="cache.h.html#cache_entry" title='cache_entry' data-ref="cache_entry">cache_entry</a> *<dfn class="decl" id="unpack_trees_options::df_conflict_entry" title='unpack_trees_options::df_conflict_entry' data-ref="unpack_trees_options::df_conflict_entry">df_conflict_entry</dfn>;</td></tr>
+<tr><th id="69">69</th><td>	<em>void</em> *<dfn class="decl" id="unpack_trees_options::unpack_data" title='unpack_trees_options::unpack_data' data-ref="unpack_trees_options::unpack_data">unpack_data</dfn>;</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>	<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="decl" id="unpack_trees_options::dst_index" title='unpack_trees_options::dst_index' data-ref="unpack_trees_options::dst_index">dst_index</dfn>;</td></tr>
+<tr><th id="72">72</th><td>	<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="decl" id="unpack_trees_options::src_index" title='unpack_trees_options::src_index' data-ref="unpack_trees_options::src_index">src_index</dfn>;</td></tr>
+<tr><th id="73">73</th><td>	<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> <dfn class="decl" id="unpack_trees_options::result" title='unpack_trees_options::result' data-ref="unpack_trees_options::result">result</dfn>;</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>	<b>struct</b> <a class="type" href="dir.h.html#exclude_list" title='exclude_list' data-ref="exclude_list">exclude_list</a> *<dfn class="decl" id="unpack_trees_options::el" title='unpack_trees_options::el' data-ref="unpack_trees_options::el">el</dfn>; <i>/* for internal use */</i></td></tr>
+<tr><th id="76">76</th><td>};</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="unpack_trees" title='unpack_trees' data-ref="unpack_trees">unpack_trees</dfn>(<em>unsigned</em> <dfn class="local col5 decl" id="335n" title='n' data-type='unsigned int' data-ref="335n">n</dfn>, <b>struct</b> <a class="type" href="tree-walk.h.html#tree_desc" title='tree_desc' data-ref="tree_desc">tree_desc</a> *<dfn class="local col6 decl" id="336t" title='t' data-type='struct tree_desc *' data-ref="336t">t</dfn>,</td></tr>
+<tr><th id="79">79</th><td>		<b>struct</b> <a class="type" href="#unpack_trees_options" title='unpack_trees_options' data-ref="unpack_trees_options">unpack_trees_options</a> *<dfn class="local col7 decl" id="337options" title='options' data-type='struct unpack_trees_options *' data-ref="337options">options</dfn>);</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><em>int</em> <dfn class="decl" id="threeway_merge" title='threeway_merge' data-ref="threeway_merge">threeway_merge</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#cache_entry" title='cache_entry' data-ref="cache_entry">cache_entry</a> * <em>const</em> *<dfn class="local col8 decl" id="338stages" title='stages' data-type='const struct cache_entry *const *' data-ref="338stages">stages</dfn>,</td></tr>
+<tr><th id="82">82</th><td>		   <b>struct</b> <a class="type" href="#unpack_trees_options" title='unpack_trees_options' data-ref="unpack_trees_options">unpack_trees_options</a> *<dfn class="local col9 decl" id="339o" title='o' data-type='struct unpack_trees_options *' data-ref="339o">o</dfn>);</td></tr>
+<tr><th id="83">83</th><td><em>int</em> <dfn class="decl" id="twoway_merge" title='twoway_merge' data-ref="twoway_merge">twoway_merge</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#cache_entry" title='cache_entry' data-ref="cache_entry">cache_entry</a> * <em>const</em> *<dfn class="local col0 decl" id="340src" title='src' data-type='const struct cache_entry *const *' data-ref="340src">src</dfn>,</td></tr>
+<tr><th id="84">84</th><td>		 <b>struct</b> <a class="type" href="#unpack_trees_options" title='unpack_trees_options' data-ref="unpack_trees_options">unpack_trees_options</a> *<dfn class="local col1 decl" id="341o" title='o' data-type='struct unpack_trees_options *' data-ref="341o">o</dfn>);</td></tr>
+<tr><th id="85">85</th><td><em>int</em> <dfn class="decl" id="bind_merge" title='bind_merge' data-ref="bind_merge">bind_merge</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#cache_entry" title='cache_entry' data-ref="cache_entry">cache_entry</a> * <em>const</em> *<dfn class="local col2 decl" id="342src" title='src' data-type='const struct cache_entry *const *' data-ref="342src">src</dfn>,</td></tr>
+<tr><th id="86">86</th><td>	       <b>struct</b> <a class="type" href="#unpack_trees_options" title='unpack_trees_options' data-ref="unpack_trees_options">unpack_trees_options</a> *<dfn class="local col3 decl" id="343o" title='o' data-type='struct unpack_trees_options *' data-ref="343o">o</dfn>);</td></tr>
+<tr><th id="87">87</th><td><em>int</em> <dfn class="decl" id="oneway_merge" title='oneway_merge' data-ref="oneway_merge">oneway_merge</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#cache_entry" title='cache_entry' data-ref="cache_entry">cache_entry</a> * <em>const</em> *<dfn class="local col4 decl" id="344src" title='src' data-type='const struct cache_entry *const *' data-ref="344src">src</dfn>,</td></tr>
+<tr><th id="88">88</th><td>		 <b>struct</b> <a class="type" href="#unpack_trees_options" title='unpack_trees_options' data-ref="unpack_trees_options">unpack_trees_options</a> *<dfn class="local col5 decl" id="345o" title='o' data-type='struct unpack_trees_options *' data-ref="345o">o</dfn>);</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='archive.c.html'>codebrowser/archive.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

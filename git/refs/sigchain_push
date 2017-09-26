@@ -1,0 +1,25 @@
+<dec f='codebrowser/sigchain.h' l='6' type='int sigchain_push(int sig, sigchain_fun f)'/>
+<use f='codebrowser/builtin/commit.c' l='1556' u='c' c='run_rewrite_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='738' u='c' c='run_and_feed_hook'/>
+<use f='codebrowser/connected.c' l='77' u='c' c='check_connected'/>
+<use f='codebrowser/convert.c' l='429' u='c' c='filter_buffer_or_fd'/>
+<use f='codebrowser/convert.c' l='596' u='c' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='684' u='c' c='async_query_available_blobs'/>
+<use f='codebrowser/editor.c' l='50' u='c' c='launch_editor'/>
+<use f='codebrowser/editor.c' l='51' u='c' c='launch_editor'/>
+<use f='codebrowser/gpg-interface.c' l='173' u='c' c='sign_buffer'/>
+<use f='codebrowser/gpg-interface.c' l='230' u='c' c='verify_signed_buffer'/>
+<def f='codebrowser/sigchain.c' l='19' ll='30' type='int sigchain_push(int sig, sigchain_fun f)'/>
+<use f='codebrowser/sigchain.c' l='47' u='c' c='sigchain_push_common'/>
+<use f='codebrowser/sigchain.c' l='48' u='c' c='sigchain_push_common'/>
+<use f='codebrowser/sigchain.c' l='49' u='c' c='sigchain_push_common'/>
+<use f='codebrowser/sigchain.c' l='50' u='c' c='sigchain_push_common'/>
+<use f='codebrowser/sigchain.c' l='51' u='c' c='sigchain_push_common'/>
+<use f='codebrowser/sub-process.c' l='66' u='c' c='subprocess_exit_handler'/>
+<use f='codebrowser/sub-process.c' l='205' u='c' c='subprocess_handshake'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='17' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='18' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='19' u='c' c='cmd_main'/>
+<use f='codebrowser/transport-helper.c' l='237' u='c' c='disconnect_helper'/>
+<use f='codebrowser/transport.c' l='929' u='c' c='run_pre_push_hook'/>
+<use f='codebrowser/upload-pack.c' l='490' u='c' c='do_reachable_revlist'/>

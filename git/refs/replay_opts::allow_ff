@@ -1,0 +1,17 @@
+<dec f='codebrowser/sequencer.h' l='22' type='int'/>
+<offset>160</offset>
+<use f='codebrowser/builtin/rebase--helper.c' l='19' u='a' c='cmd_rebase__helper'/>
+<use f='codebrowser/builtin/rebase--helper.c' l='19' u='a' c='cmd_rebase__helper'/>
+<use f='codebrowser/builtin/rebase--helper.c' l='19' u='a' c='cmd_rebase__helper'/>
+<use f='codebrowser/builtin/rebase--helper.c' l='19' u='a' c='cmd_rebase__helper'/>
+<use f='codebrowser/builtin/rebase--helper.c' l='30' u='w' c='cmd_rebase__helper'/>
+<use f='codebrowser/builtin/revert.c' l='121' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='121' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='121' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='121' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='157' u='r' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='163' u='r' c='run_sequencer'/>
+<use f='codebrowser/sequencer.c' l='995' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1432' u='w' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1741' u='r' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1994' u='r' c='pick_commits'/>

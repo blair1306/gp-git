@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1597' type='time_t'/>
+<offset>512</offset>
+<use f='codebrowser/builtin/pack-objects.c' l='2715' u='r' c='loosen_unused_packed_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2716' u='r' c='loosen_unused_packed_objects'/>
+<use f='codebrowser/reachable.c' l='137' u='r' c='add_recent_packed'/>
+<use f='codebrowser/sha1_file.c' l='1014' u='r' c='find_lru_pack'/>
+<use f='codebrowser/sha1_file.c' l='1014' u='r' c='find_lru_pack'/>
+<use f='codebrowser/sha1_file.c' l='1357' u='w' c='add_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1557' u='r' c='sort_pack'/>
+<use f='codebrowser/sha1_file.c' l='1557' u='r' c='sort_pack'/>
+<use f='codebrowser/sha1_file.c' l='1559' u='r' c='sort_pack'/>
+<use f='codebrowser/sha1_file.c' l='1559' u='r' c='sort_pack'/>

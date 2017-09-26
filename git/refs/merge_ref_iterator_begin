@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs/refs-internal.h' l='398' type='struct ref_iterator * merge_ref_iterator_begin(struct ref_iterator * iter0, struct ref_iterator * iter1, ref_iterator_select_fn * select, void * cb_data)'/>
+<doc f='codebrowser/refs/refs-internal.h' l='392'>/*
+ * Iterate over the entries from iter0 and iter1, with the values
+ * interleaved as directed by the select function. The iterator takes
+ * ownership of iter0 and iter1 and frees them when the iteration is
+ * over.
+ */</doc>
+<def f='codebrowser/refs/iterator.c' l='207' ll='229' type='struct ref_iterator * merge_ref_iterator_begin(struct ref_iterator * iter0, struct ref_iterator * iter1, ref_iterator_select_fn * select, void * cb_data)'/>
+<use f='codebrowser/refs/iterator.c' l='273' u='c' c='overlay_ref_iterator_begin'/>

@@ -1,0 +1,6 @@
+<dec f='include/time.h' l='254' type='struct tm * localtime_r(const time_t *restrict __timer, struct tm *restrict __tp)'/>
+<use f='codebrowser/date.c' l='93' u='c' c='local_tzoffset'/>
+<use f='codebrowser/date.c' l='886' u='c' c='update_tm'/>
+<use f='codebrowser/date.c' l='955' u='c' c='date_never'/>
+<use f='codebrowser/date.c' l='1150' u='c' c='approxidate_str'/>
+<use f='codebrowser/trace.c' l='114' u='c' c='prepare_trace_line'/>

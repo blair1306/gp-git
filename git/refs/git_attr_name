@@ -1,0 +1,9 @@
+<dec f='codebrowser/attr.h' l='61' type='const char * git_attr_name(const struct git_attr * )'/>
+<doc f='codebrowser/attr.h' l='56'>/*
+ * Return the name of the attribute represented by the argument.  The
+ * return value is a pointer to a null-delimited string that is part
+ * of the internal data structure; it should not be modified or freed.
+ */</doc>
+<def f='codebrowser/attr.c' l='37' ll='40' type='const char * git_attr_name(const struct git_attr * attr)'/>
+<use f='codebrowser/builtin/check-attr.c' l='48' u='c' c='output_attr'/>
+<use f='codebrowser/builtin/check-attr.c' l='52' u='c' c='output_attr'/>

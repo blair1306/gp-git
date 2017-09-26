@@ -1,0 +1,16 @@
+<dec f='codebrowser/commit.h' l='269' type='int is_repository_shallow()'/>
+<use f='codebrowser/builtin/fetch.c' l='1351' u='c' c='cmd_fetch'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2778' u='c' c='get_object_list'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3040' u='c' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/prune.c' l='154' u='c' c='cmd_prune'/>
+<use f='codebrowser/commit.c' l='198' u='c' c='prepare_commit_graft'/>
+<use f='codebrowser/fetch-pack.c' l='394' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='921' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/send-pack.c' l='87' u='c' c='pack_objects'/>
+<use f='codebrowser/send-pack.c' l='231' u='c' c='advertise_shallow_grafts_buf'/>
+<use f='codebrowser/send-pack.c' l='545' u='c' c='send_pack'/>
+<def f='codebrowser/shallow.c' l='43' ll='75' type='int is_repository_shallow()'/>
+<use f='codebrowser/shallow.c' l='109' u='c' c='get_shallow_commits'/>
+<use f='codebrowser/shallow.c' l='168' u='c' c='get_shallow_commits_by_rev_list'/>
+<use f='codebrowser/shallow.c' l='347' u='c' c='advertise_shallow_grafts'/>
+<use f='codebrowser/upload-pack.c' l='690' u='c' c='deepen'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/ref-filter.c' l='365' type='void (*)(struct atom_value *, struct ref_formatting_state *)'/>
+<use f='codebrowser/ref-filter.c' l='1336' u='w' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1397' u='w' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1400' u='w' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1407' u='w' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1410' u='w' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1413' u='w' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='2090' u='r' c='format_ref_array_item'/>
+<offset>64</offset>

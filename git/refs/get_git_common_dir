@@ -1,0 +1,17 @@
+<dec f='codebrowser/cache.h' l='481' type='const char * get_git_common_dir()'/>
+<use f='codebrowser/builtin/config.c' l='541' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/init-db.c' l='141' u='c' c='copy_templates'/>
+<use f='codebrowser/builtin/rev-parse.c' l='852' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/worktree.c' l='260' u='c' c='add_worktree'/>
+<use f='codebrowser/config.c' l='1642' u='c' c='read_early_config'/>
+<def f='codebrowser/environment.c' l='182' ll='187' type='const char * get_git_common_dir()'/>
+<use f='codebrowser/refs.c' l='1692' u='c' c='get_worktree_ref_store'/>
+<use f='codebrowser/submodule.c' l='1585' u='c' c='submodule_move_head'/>
+<use f='codebrowser/submodule.c' l='1595' u='c' c='submodule_move_head'/>
+<use f='codebrowser/submodule.c' l='1908' u='c' c='absorb_git_dir_into_superproject'/>
+<use f='codebrowser/trace.c' l='334' u='c' c='trace_repo_setup'/>
+<use f='codebrowser/worktree.c' l='54' u='c' c='get_main_worktree'/>
+<use f='codebrowser/worktree.c' l='59' u='c' c='get_main_worktree'/>
+<use f='codebrowser/worktree.c' l='93' u='c' c='get_linked_worktree'/>
+<use f='codebrowser/worktree.c' l='142' u='c' c='get_worktrees'/>
+<use f='codebrowser/worktree.c' l='177' u='c' c='get_worktree_git_dir'/>

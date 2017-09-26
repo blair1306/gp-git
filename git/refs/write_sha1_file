@@ -1,0 +1,29 @@
+<dec f='codebrowser/cache.h' l='1194' type='int write_sha1_file(const void * buf, unsigned long len, const char * type, unsigned char * return_sha1)'/>
+<use f='codebrowser/apply.c' l='3548' u='c' c='try_threeway'/>
+<use f='codebrowser/apply.c' l='3564' u='c' c='try_threeway'/>
+<use f='codebrowser/apply.c' l='3577' u='c' c='try_threeway'/>
+<use f='codebrowser/apply.c' l='4285' u='c' c='add_index_file'/>
+<use f='codebrowser/builtin/checkout.c' l='229' u='c' c='checkout_merged'/>
+<use f='codebrowser/builtin/mktag.c' l='168' u='c' c='cmd_mktag'/>
+<use f='codebrowser/builtin/mktree.c' l='60' u='c' c='write_tree'/>
+<use f='codebrowser/builtin/notes.c' l='203' u='c' c='write_note_data'/>
+<use f='codebrowser/builtin/receive-pack.c' l='634' u='c' c='prepare_push_cert_sha1'/>
+<use f='codebrowser/builtin/replace.c' l='413' u='c' c='create_graft'/>
+<use f='codebrowser/builtin/tag.c' l='190' u='c' c='build_tag_object'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='175' u='c' c='write_cached_object'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='240' u='c' c='write_object'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='247' u='c' c='write_object'/>
+<use f='codebrowser/cache-tree.c' l='412' u='c' c='update_one'/>
+<use f='codebrowser/commit.c' l='1570' u='c' c='commit_tree_extended'/>
+<use f='codebrowser/match-trees.c' l='219' u='c' c='splice_tree'/>
+<use f='codebrowser/merge-recursive.c' l='988' u='c' c='merge_file_1'/>
+<use f='codebrowser/notes-cache.c' l='91' u='c' c='notes_cache_put'/>
+<use f='codebrowser/notes.c' l='688' u='c' c='tree_write_stack_finish_subtree'/>
+<use f='codebrowser/notes.c' l='846' u='c' c='combine_notes_concatenate'/>
+<use f='codebrowser/notes.c' l='926' u='c' c='combine_notes_cat_sort_uniq'/>
+<use f='codebrowser/notes.c' l='1167' u='c' c='write_notes_tree'/>
+<use f='codebrowser/read-cache.c' l='624' u='c' c='set_object_name_for_intent_to_add_entry'/>
+<def f='codebrowser/sha1_file.c' l='3391' ll='3403' type='int write_sha1_file(const void * buf, unsigned long len, const char * type, unsigned char * sha1)'/>
+<use f='codebrowser/sha1_file.c' l='3539' u='c' c='index_mem'/>
+<use f='codebrowser/sha1_file.c' l='3561' u='c' c='index_stream_convert_blob'/>
+<use f='codebrowser/sha1_file.c' l='3674' u='c' c='index_path'/>

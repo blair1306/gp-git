@@ -1,0 +1,4 @@
+<dec f='codebrowser/csum-file.h' l='23' type='SHA1_CTX'/>
+<offset>64</offset>
+<use f='codebrowser/csum-file.c' l='160' u='w' c='sha1file_checkpoint'/>
+<use f='codebrowser/csum-file.c' l='171' u='r' c='sha1file_truncate'/>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/cache.h' l='1439' type='timestamp_t approxidate_careful(const char * , int * )'/>
+<use f='codebrowser/builtin/commit.c' l='552' u='c' c='parse_force_date'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2860' macro='1' u='c'/>
+<use f='codebrowser/builtin/reflog.c' l='681' macro='1' u='c'/>
+<use f='codebrowser/builtin/rev-parse.c' l='222' macro='1' u='c'/>
+<use f='codebrowser/builtin/show-branch.c' l='733' macro='1' u='c'/>
+<use f='codebrowser/config.c' l='2090' macro='1' u='c'/>
+<use f='codebrowser/config.c' l='2091' macro='1' u='c'/>
+<use f='codebrowser/date.c' l='790' u='c' c='parse_expiry_date'/>
+<def f='codebrowser/date.c' l='1188' ll='1204' type='timestamp_t approxidate_careful(const char * date, int * error_ret)'/>
+<use f='codebrowser/fetch-pack.c' l='399' macro='1' u='c'/>
+<use f='codebrowser/parse-options-cb.c' l='34' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='2365' macro='1' u='c'/>
+<use f='codebrowser/reflog-walk.c' l='141' macro='1' u='c'/>
+<use f='codebrowser/revision.c' l='1733' macro='1' u='c'/>
+<use f='codebrowser/revision.c' l='1736' macro='1' u='c'/>
+<use f='codebrowser/revision.c' l='1742' macro='1' u='c'/>
+<use f='codebrowser/revision.c' l='1745' macro='1' u='c'/>
+<use f='codebrowser/sha1_name.c' l='692' u='c' c='get_oid_basic'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/resolve-undo.h' l='12' type='void resolve_undo_clear_index(struct index_state * )'/>
+<use f='codebrowser/builtin/checkout.c' l='480' macro='1' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1197' macro='1' u='c'/>
+<use f='codebrowser/builtin/read-tree.c' l='189' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='798' macro='1' u='c'/>
+<use f='codebrowser/merge.c' l='42' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='1889' u='c' c='discard_index'/>
+<def f='codebrowser/resolve-undo.c' l='105' ll='114' type='void resolve_undo_clear_index(struct index_state * istate)'/>

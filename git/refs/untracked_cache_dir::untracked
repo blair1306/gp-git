@@ -1,0 +1,17 @@
+<dec f='codebrowser/dir.h' l='113' type='char **'/>
+<offset>64</offset>
+<use f='codebrowser/dir.c' l='1675' u='w' c='add_untracked'/>
+<use f='codebrowser/dir.c' l='1675' u='r' c='add_untracked'/>
+<use f='codebrowser/dir.c' l='1675' u='r' c='add_untracked'/>
+<use f='codebrowser/dir.c' l='1677' u='r' c='add_untracked'/>
+<use f='codebrowser/dir.c' l='1767' u='r' c='read_cached_dir'/>
+<use f='codebrowser/dir.c' l='2470' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2471' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2541' u='r' c='free_untracked'/>
+<use f='codebrowser/dir.c' l='2542' u='r' c='free_untracked'/>
+<use f='codebrowser/dir.c' l='2596' u='w' c='read_one_dir'/>
+<use f='codebrowser/dir.c' l='2596' u='r' c='read_one_dir'/>
+<use f='codebrowser/dir.c' l='2620' u='r' c='read_one_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='21' u='r' c='dump'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='21' u='r' c='dump'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='35' u='r' c='dump'/>

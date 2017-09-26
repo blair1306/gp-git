@@ -1,0 +1,4 @@
+<dec f='codebrowser/path.h' l='46' type='char * repo_worktree_path(const struct repository * repo, const char * fmt)'/>
+<use f='codebrowser/config.c' l='2078' u='c' c='config_from_gitmodules'/>
+<def f='codebrowser/path.c' l='521' ll='534' type='char * repo_worktree_path(const struct repository * repo, const char * fmt)'/>
+<use f='codebrowser/submodule.c' l='247' u='c' c='repo_read_gitmodules'/>

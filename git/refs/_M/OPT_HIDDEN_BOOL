@@ -1,0 +1,13 @@
+<dec f='codebrowser/parse-options.h' l='128'/>
+<use f='codebrowser/builtin/add.c' l='287' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2209' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2286' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='1168' u='c'/>
+<use f='codebrowser/builtin/clone.c' l='84' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='1635' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='1637' u='c'/>
+<use f='codebrowser/builtin/help.c' l='44' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1934' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1935' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1936' u='c'/>
+<use f='codebrowser/builtin/show-ref.c' l='163' u='c'/>

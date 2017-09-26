@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache-tree.h' l='39'/>
+<doc f='codebrowser/cache-tree.h' l='38'>/* bitmasks to write_cache_as_tree flags */</doc>
+<use f='codebrowser/builtin/write-tree.c' l='26' u='c'/>
+<use f='codebrowser/cache-tree.c' l='245' u='c'/>

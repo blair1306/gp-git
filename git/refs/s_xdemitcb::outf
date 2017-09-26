@@ -1,0 +1,7 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='87' type='int (*)(void *, mmbuffer_t *, int)'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/merge-tree.c' l='110' u='w' c='show_diff'/>
+<use f='codebrowser/builtin/rerere.c' l='44' u='w' c='diff_two'/>
+<use f='codebrowser/xdiff-interface.c' l='153' u='w' c='xdi_diff_outf'/>
+<use f='codebrowser/xdiff/xutils.c' l='57' u='r' c='xdl_emit_diffrec'/>
+<use f='codebrowser/xdiff/xutils.c' l='356' u='r' c='xdl_emit_hunk_hdr'/>

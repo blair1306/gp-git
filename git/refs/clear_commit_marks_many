@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit.h' l='221' type='void clear_commit_marks_many(int nr, struct commit ** commit, unsigned int mark)'/>
+<def f='codebrowser/commit.c' l='539' ll='549' type='void clear_commit_marks_many(int nr, struct commit ** commit, unsigned int mark)'/>
+<use f='codebrowser/commit.c' l='553' u='c' c='clear_commit_marks'/>
+<use f='codebrowser/commit.c' l='963' u='c' c='get_merge_bases_many_0'/>
+<use f='codebrowser/commit.c' l='976' u='c' c='get_merge_bases_many_0'/>
+<use f='codebrowser/commit.c' l='1041' u='c' c='in_merge_bases_many'/>
+<use f='codebrowser/remote.c' l='1327' u='c' c='add_missing_tags'/>

@@ -1,0 +1,8 @@
+<def f='codebrowser/tree.h' l='9' ll='13'/>
+<size>40</size>
+<mbr r='tree::object' o='0' t='struct object'/>
+<mbr r='tree::buffer' o='192' t='void *'/>
+<mbr r='tree::size' o='256' t='unsigned long'/>
+<def f='codebrowser/kwset.c' l='49' ll='56'/>
+<size>32</size>
+<doc f='codebrowser/kwset.c' l='48'>/* Balanced tree of edges and labels leaving a given trie node. */</doc>

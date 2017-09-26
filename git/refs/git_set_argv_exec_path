@@ -1,0 +1,3 @@
+<dec f='codebrowser/exec_cmd.h' l='6' type='void git_set_argv_exec_path(const char * exec_path)'/>
+<def f='codebrowser/exec_cmd.c' l='54' ll='61' type='void git_set_argv_exec_path(const char * exec_path)'/>
+<use f='codebrowser/git.c' l='68' u='c' c='handle_options'/>

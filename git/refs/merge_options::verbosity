@@ -1,0 +1,11 @@
+<dec f='codebrowser/merge-recursive.h' l='19' type='int'/>
+<use f='codebrowser/builtin/am.c' l='1621' u='w' c='fall_back_threeway'/>
+<offset>448</offset>
+<use f='codebrowser/builtin/checkout.c' l='565' u='w' c='merge_working_tree'/>
+<use f='codebrowser/builtin/merge-recursive.c' l='76' u='r' c='cmd_merge_recursive'/>
+<use f='codebrowser/merge-recursive.c' l='177' u='r' c='show'/>
+<use f='codebrowser/merge-recursive.c' l='177' u='r' c='show'/>
+<use f='codebrowser/merge-recursive.c' l='2158' u='a' c='merge_recursive_config'/>
+<use f='codebrowser/merge-recursive.c' l='2167' u='w' c='init_merge_options'/>
+<use f='codebrowser/merge-recursive.c' l='2175' u='w' c='init_merge_options'/>
+<use f='codebrowser/merge-recursive.c' l='2177' u='r' c='init_merge_options'/>

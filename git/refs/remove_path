@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='309' type='int remove_path(const char * path)'/>
+<use f='codebrowser/apply.c' l='4242' u='c' c='remove_file'/>
+<doc f='codebrowser/dir.h' l='308'>/* tries to remove the path with empty directories along it, ignores ENOENT */</doc>
+<use f='codebrowser/builtin/repack.c' l='405' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/rm.c' l='377' u='c' c='cmd_rm'/>
+<def f='codebrowser/dir.c' l='2342' ll='2359' type='int remove_path(const char * name)'/>
+<use f='codebrowser/merge-recursive.c' l='631' u='c' c='remove_file'/>
+<use f='codebrowser/refs/files-backend.c' l='1806' u='c' c='files_delete_reflog'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/unpack-trees.h' l='75' type='struct exclude_list *'/>
+<offset>5952</offset>
+<doc f='codebrowser/unpack-trees.h' l='75'>/* for internal use */</doc>
+<use f='codebrowser/unpack-trees.c' l='1264' u='w' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1284' u='r' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1346' u='r' c='unpack_trees'/>

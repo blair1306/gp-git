@@ -1,0 +1,9 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='40' type='uint64_t'/>
+<offset>0</offset>
+<use f='codebrowser/sha1dc/sha1.c' l='1758' u='w' c='SHA1DCInit'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1817' u='r' c='SHA1DCUpdate'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1822' u='w' c='SHA1DCUpdate'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1831' u='w' c='SHA1DCUpdate'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1844' u='w' c='SHA1DCUpdate'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1859' u='r' c='SHA1DCFinal'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1864' u='r' c='SHA1DCFinal'/>

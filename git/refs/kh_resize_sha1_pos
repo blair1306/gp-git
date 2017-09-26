@@ -1,0 +1,3 @@
+<def f='codebrowser/khash.h' l='324' macro='1' type='int kh_resize_sha1_pos(kh_sha1_pos_t * h, khint_t new_n_buckets)'/>
+<use f='codebrowser/khash.h' l='324' macro='1' u='c'/>
+<use f='codebrowser/khash.h' l='324' macro='1' u='c'/>

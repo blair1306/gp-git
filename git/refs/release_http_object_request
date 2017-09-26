@@ -1,0 +1,8 @@
+<dec f='codebrowser/http.h' l='234' type='void release_http_object_request(struct http_object_request * freq)'/>
+<use f='codebrowser/http-push.c' l='271' u='c' c='start_fetch_loose'/>
+<use f='codebrowser/http-push.c' l='574' u='c' c='finish_request'/>
+<use f='codebrowser/http-walker.c' l='73' u='c' c='start_object_request'/>
+<use f='codebrowser/http-walker.c' l='104' u='c' c='process_object_response'/>
+<use f='codebrowser/http-walker.c' l='550' u='c' c='fetch_object'/>
+<use f='codebrowser/http.c' l='2320' u='c' c='abort_http_object_request'/>
+<def f='codebrowser/http.c' l='2323' ll='2338' type='void release_http_object_request(struct http_object_request * freq)'/>

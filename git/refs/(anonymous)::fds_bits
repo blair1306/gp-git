@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/sys/select.h' l='69' type='__fd_mask [16]'/>
+<offset>0</offset>
+<use f='codebrowser/http.c' l='1255' macro='1' u='a'/>
+<use f='codebrowser/http.c' l='1256' macro='1' u='a'/>
+<use f='codebrowser/http.c' l='1257' macro='1' u='a'/>

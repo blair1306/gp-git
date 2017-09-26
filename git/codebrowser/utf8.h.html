@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>utf8.h source code [codebrowser/utf8.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/utf8.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='utf8.h.html'>utf8.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/GIT_UTF8_H">GIT_UTF8_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/GIT_UTF8_H" data-ref="_M/GIT_UTF8_H">GIT_UTF8_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>typedef</b> <em>unsigned</em> <em>int</em> <dfn class="typedef" id="ucs_char_t" title='ucs_char_t' data-type='unsigned int' data-ref="ucs_char_t">ucs_char_t</dfn>;  <i>/* assuming 32bit int */</i></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="display_mode_esc_sequence_len" title='display_mode_esc_sequence_len' data-ref="display_mode_esc_sequence_len">display_mode_esc_sequence_len</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1s" title='s' data-type='const char *' data-ref="1s">s</dfn>);</td></tr>
+<tr><th id="7">7</th><td><em>int</em> <dfn class="decl" id="utf8_width" title='utf8_width' data-ref="utf8_width">utf8_width</dfn>(<em>const</em> <em>char</em> **<dfn class="local col2 decl" id="2start" title='start' data-type='const char **' data-ref="2start">start</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col3 decl" id="3remainder_p" title='remainder_p' data-type='size_t *' data-ref="3remainder_p">remainder_p</dfn>);</td></tr>
+<tr><th id="8">8</th><td><em>int</em> <dfn class="decl" id="utf8_strnwidth" title='utf8_strnwidth' data-ref="utf8_strnwidth">utf8_strnwidth</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="4string" title='string' data-type='const char *' data-ref="4string">string</dfn>, <em>int</em> <dfn class="local col5 decl" id="5len" title='len' data-type='int' data-ref="5len">len</dfn>, <em>int</em> <dfn class="local col6 decl" id="6skip_ansi" title='skip_ansi' data-type='int' data-ref="6skip_ansi">skip_ansi</dfn>);</td></tr>
+<tr><th id="9">9</th><td><em>int</em> <dfn class="decl" id="utf8_strwidth" title='utf8_strwidth' data-ref="utf8_strwidth">utf8_strwidth</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7string" title='string' data-type='const char *' data-ref="7string">string</dfn>);</td></tr>
+<tr><th id="10">10</th><td><em>int</em> <dfn class="decl" id="is_utf8" title='is_utf8' data-ref="is_utf8">is_utf8</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8text" title='text' data-type='const char *' data-ref="8text">text</dfn>);</td></tr>
+<tr><th id="11">11</th><td><em>int</em> <dfn class="decl" id="is_encoding_utf8" title='is_encoding_utf8' data-ref="is_encoding_utf8">is_encoding_utf8</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="9name" title='name' data-type='const char *' data-ref="9name">name</dfn>);</td></tr>
+<tr><th id="12">12</th><td><em>int</em> <dfn class="decl" id="same_encoding" title='same_encoding' data-ref="same_encoding">same_encoding</dfn>(<em>const</em> <em>char</em> *, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="13">13</th><td><b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)))</td></tr>
+<tr><th id="14">14</th><td><em>int</em> <dfn class="decl" id="utf8_fprintf" title='utf8_fprintf' data-ref="utf8_fprintf">utf8_fprintf</dfn>(<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *, <em>const</em> <em>char</em> *, ...);</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><b>extern</b> <em>const</em> <em>char</em> <dfn class="decl" id="utf8_bom" title='utf8_bom' data-ref="utf8_bom">utf8_bom</dfn>[];</td></tr>
+<tr><th id="17">17</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="skip_utf8_bom" title='skip_utf8_bom' data-ref="skip_utf8_bom">skip_utf8_bom</dfn>(<em>char</em> **, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>);</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><em>void</em> <dfn class="decl" id="strbuf_add_wrapped_text" title='strbuf_add_wrapped_text' data-ref="strbuf_add_wrapped_text">strbuf_add_wrapped_text</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col0 decl" id="10buf" title='buf' data-type='struct strbuf *' data-ref="10buf">buf</dfn>,</td></tr>
+<tr><th id="20">20</th><td>		<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="11text" title='text' data-type='const char *' data-ref="11text">text</dfn>, <em>int</em> <dfn class="local col2 decl" id="12indent" title='indent' data-type='int' data-ref="12indent">indent</dfn>, <em>int</em> <dfn class="local col3 decl" id="13indent2" title='indent2' data-type='int' data-ref="13indent2">indent2</dfn>, <em>int</em> <dfn class="local col4 decl" id="14width" title='width' data-type='int' data-ref="14width">width</dfn>);</td></tr>
+<tr><th id="21">21</th><td><em>void</em> <dfn class="decl" id="strbuf_add_wrapped_bytes" title='strbuf_add_wrapped_bytes' data-ref="strbuf_add_wrapped_bytes">strbuf_add_wrapped_bytes</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col5 decl" id="15buf" title='buf' data-type='struct strbuf *' data-ref="15buf">buf</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="16data" title='data' data-type='const char *' data-ref="16data">data</dfn>, <em>int</em> <dfn class="local col7 decl" id="17len" title='len' data-type='int' data-ref="17len">len</dfn>,</td></tr>
+<tr><th id="22">22</th><td>			     <em>int</em> <dfn class="local col8 decl" id="18indent" title='indent' data-type='int' data-ref="18indent">indent</dfn>, <em>int</em> <dfn class="local col9 decl" id="19indent2" title='indent2' data-type='int' data-ref="19indent2">indent2</dfn>, <em>int</em> <dfn class="local col0 decl" id="20width" title='width' data-type='int' data-ref="20width">width</dfn>);</td></tr>
+<tr><th id="23">23</th><td><em>void</em> <dfn class="decl" id="strbuf_utf8_replace" title='strbuf_utf8_replace' data-ref="strbuf_utf8_replace">strbuf_utf8_replace</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col1 decl" id="21sb" title='sb' data-type='struct strbuf *' data-ref="21sb">sb</dfn>, <em>int</em> <dfn class="local col2 decl" id="22pos" title='pos' data-type='int' data-ref="22pos">pos</dfn>, <em>int</em> <dfn class="local col3 decl" id="23width" title='width' data-type='int' data-ref="23width">width</dfn>,</td></tr>
+<tr><th id="24">24</th><td>			 <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="24subst" title='subst' data-type='const char *' data-ref="24subst">subst</dfn>);</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="26">ifndef</span> <span class="macro" data-ref="_M/NO_ICONV">NO_ICONV</span></u></td></tr>
+<tr><th id="27">27</th><td><em>char</em> *<dfn class="decl" id="reencode_string_iconv" title='reencode_string_iconv' data-ref="reencode_string_iconv">reencode_string_iconv</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="25in" title='in' data-type='const char *' data-ref="25in">in</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="26insz" title='insz' data-type='size_t' data-ref="26insz">insz</dfn>,</td></tr>
+<tr><th id="28">28</th><td>			    <a class="typedef" href="../include/iconv.h.html#iconv_t" title='iconv_t' data-type='void *' data-ref="iconv_t">iconv_t</a> <dfn class="local col7 decl" id="27conv" title='conv' data-type='iconv_t' data-ref="27conv">conv</dfn>, <em>int</em> *<dfn class="local col8 decl" id="28outsz" title='outsz' data-type='int *' data-ref="28outsz">outsz</dfn>);</td></tr>
+<tr><th id="29">29</th><td><em>char</em> *<dfn class="decl" id="reencode_string_len" title='reencode_string_len' data-ref="reencode_string_len">reencode_string_len</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="29in" title='in' data-type='const char *' data-ref="29in">in</dfn>, <em>int</em> <dfn class="local col0 decl" id="30insz" title='insz' data-type='int' data-ref="30insz">insz</dfn>,</td></tr>
+<tr><th id="30">30</th><td>			  <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="31out_encoding" title='out_encoding' data-type='const char *' data-ref="31out_encoding">out_encoding</dfn>,</td></tr>
+<tr><th id="31">31</th><td>			  <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="32in_encoding" title='in_encoding' data-type='const char *' data-ref="32in_encoding">in_encoding</dfn>,</td></tr>
+<tr><th id="32">32</th><td>			  <em>int</em> *<dfn class="local col3 decl" id="33outsz" title='outsz' data-type='int *' data-ref="33outsz">outsz</dfn>);</td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="26">else</span></u></td></tr>
+<tr><th id="34">34</th><td><em>static</em> <b>inline</b> <em>char</em> *reencode_string_len(<em>const</em> <em>char</em> *a, <em>int</em> b,</td></tr>
+<tr><th id="35">35</th><td>					<em>const</em> <em>char</em> *c, <em>const</em> <em>char</em> *d, <em>int</em> *e)</td></tr>
+<tr><th id="36">36</th><td>{ <b>if</b> (e) *e = <var>0</var>; <b>return</b> NULL; }</td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="26">endif</span></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><em>static</em> <b>inline</b> <em>char</em> *<dfn class="decl def" id="reencode_string" title='reencode_string' data-ref="reencode_string">reencode_string</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="34in" title='in' data-type='const char *' data-ref="34in">in</dfn>,</td></tr>
+<tr><th id="40">40</th><td>				    <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="35out_encoding" title='out_encoding' data-type='const char *' data-ref="35out_encoding">out_encoding</dfn>,</td></tr>
+<tr><th id="41">41</th><td>				    <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="36in_encoding" title='in_encoding' data-type='const char *' data-ref="36in_encoding">in_encoding</dfn>)</td></tr>
+<tr><th id="42">42</th><td>{</td></tr>
+<tr><th id="43">43</th><td>	<b>return</b> <a class="ref" href="#reencode_string_len" title='reencode_string_len' data-ref="reencode_string_len">reencode_string_len</a>(<a class="local col4 ref" href="#34in" title='in' data-ref="34in">in</a>, <a class="ref" href="../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col4 ref" href="#34in" title='in' data-ref="34in">in</a>),</td></tr>
+<tr><th id="44">44</th><td>				   <a class="local col5 ref" href="#35out_encoding" title='out_encoding' data-ref="35out_encoding">out_encoding</a>, <a class="local col6 ref" href="#36in_encoding" title='in_encoding' data-ref="36in_encoding">in_encoding</a>,</td></tr>
+<tr><th id="45">45</th><td>				   <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="46">46</th><td>}</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><em>int</em> <dfn class="decl" id="mbs_chrlen" title='mbs_chrlen' data-ref="mbs_chrlen">mbs_chrlen</dfn>(<em>const</em> <em>char</em> **<dfn class="local col7 decl" id="37text" title='text' data-type='const char **' data-ref="37text">text</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col8 decl" id="38remainder_p" title='remainder_p' data-type='size_t *' data-ref="38remainder_p">remainder_p</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="39encoding" title='encoding' data-type='const char *' data-ref="39encoding">encoding</dfn>);</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><i>/*</i></td></tr>
+<tr><th id="51">51</th><td><i> * Returns true if the path would match ".git" after HFS case-folding.</i></td></tr>
+<tr><th id="52">52</th><td><i> * The path should be NUL-terminated, but we will match variants of both ".git\0"</i></td></tr>
+<tr><th id="53">53</th><td><i> * and ".git/..." (but _not_ ".../.git"). This makes it suitable for both fsck</i></td></tr>
+<tr><th id="54">54</th><td><i> * and verify_path().</i></td></tr>
+<tr><th id="55">55</th><td><i> */</i></td></tr>
+<tr><th id="56">56</th><td><em>int</em> <dfn class="decl" id="is_hfs_dotgit" title='is_hfs_dotgit' data-ref="is_hfs_dotgit">is_hfs_dotgit</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="40path" title='path' data-type='const char *' data-ref="40path">path</dfn>);</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="59">59</th><td>	<dfn class="enum" id="ALIGN_LEFT" title='ALIGN_LEFT' data-ref="ALIGN_LEFT">ALIGN_LEFT</dfn>,</td></tr>
+<tr><th id="60">60</th><td>	<dfn class="enum" id="ALIGN_MIDDLE" title='ALIGN_MIDDLE' data-ref="ALIGN_MIDDLE">ALIGN_MIDDLE</dfn>,</td></tr>
+<tr><th id="61">61</th><td>	<dfn class="enum" id="ALIGN_RIGHT" title='ALIGN_RIGHT' data-ref="ALIGN_RIGHT">ALIGN_RIGHT</dfn></td></tr>
+<tr><th id="62">62</th><td>} <dfn class="typedef" id="align_type" title='align_type' data-type='enum align_type' data-ref="align_type">align_type</dfn>;</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i>/*</i></td></tr>
+<tr><th id="65">65</th><td><i> * Align the string given and store it into a strbuf as per the</i></td></tr>
+<tr><th id="66">66</th><td><i> * 'position' and 'width'. If the given string length is larger than</i></td></tr>
+<tr><th id="67">67</th><td><i> * 'width' than then the input string is not truncated and no</i></td></tr>
+<tr><th id="68">68</th><td><i> * alignment is done.</i></td></tr>
+<tr><th id="69">69</th><td><i> */</i></td></tr>
+<tr><th id="70">70</th><td><em>void</em> <dfn class="decl" id="strbuf_utf8_align" title='strbuf_utf8_align' data-ref="strbuf_utf8_align">strbuf_utf8_align</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col1 decl" id="41buf" title='buf' data-type='struct strbuf *' data-ref="41buf">buf</dfn>, <a class="typedef" href="#align_type" title='align_type' data-type='enum align_type' data-ref="align_type">align_type</a> <dfn class="local col2 decl" id="42position" title='position' data-type='align_type' data-ref="42position">position</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col3 decl" id="43width" title='width' data-type='unsigned int' data-ref="43width">width</dfn>,</td></tr>
+<tr><th id="71">71</th><td>		       <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="44s" title='s' data-type='const char *' data-ref="44s">s</dfn>);</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="74">74</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='archive-zip.c.html'>codebrowser/archive-zip.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

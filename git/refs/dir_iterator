@@ -1,0 +1,42 @@
+<def f='codebrowser/dir-iterator.h' l='41' ll='57'/>
+<size>184</size>
+<doc f='codebrowser/dir-iterator.h' l='4'>/*
+ * Iterate over a directory tree.
+ *
+ * Iterate over a directory tree, recursively, including paths of all
+ * types and hidden paths. Skip &quot;.&quot; and &quot;..&quot; entries and don&apos;t follow
+ * symlinks except for the original path.
+ *
+ * Every time dir_iterator_advance() is called, update the members of
+ * the dir_iterator structure to reflect the next path in the
+ * iteration. The order that paths are iterated over within a
+ * directory is undefined, but directory paths are always iterated
+ * over before the subdirectory contents.
+ *
+ * A typical iteration looks like this:
+ *
+ *     int ok;
+ *     struct iterator *iter = dir_iterator_begin(path);
+ *
+ *     while ((ok = dir_iterator_advance(iter)) == ITER_OK) {
+ *             if (want_to_stop_iteration()) {
+ *                     ok = dir_iterator_abort(iter);
+ *                     break;
+ *             }
+ *
+ *             // Access information about the current path:
+ *             if (S_ISDIR(iter-&gt;st.st_mode))
+ *                     printf(&quot;%s is a directory\n&quot;, iter-&gt;relative_path);
+ *     }
+ *
+ *     if (ok != ITER_DONE)
+ *             handle_error();
+ *
+ * Callers are allowed to modify iter-&gt;path while they are working,
+ * but they must restore it to its original contents before calling
+ * dir_iterator_advance() again.
+ */</doc>
+<mbr r='dir_iterator::path' o='0' t='struct strbuf'/>
+<mbr r='dir_iterator::relative_path' o='192' t='const char *'/>
+<mbr r='dir_iterator::__xpg_basename' o='256' t='const char *'/>
+<mbr r='dir_iterator::st' o='320' t='struct stat'/>

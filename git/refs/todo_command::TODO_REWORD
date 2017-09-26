@@ -1,0 +1,5 @@
+<dec f='codebrowser/sequencer.c' l='761' type='3'/>
+<use f='codebrowser/sequencer.c' l='1002' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1005' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1061' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='2059' u='r' c='pick_commits'/>

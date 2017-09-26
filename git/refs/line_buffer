@@ -1,0 +1,4 @@
+<def f='codebrowser/vcs-svn/line_buffer.h' l='8' ll='11'/>
+<size>10008</size>
+<mbr r='line_buffer::line_buffer' o='0' t='char [10000]'/>
+<mbr r='line_buffer::infile' o='80000' t='FILE *'/>

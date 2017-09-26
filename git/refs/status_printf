@@ -1,0 +1,8 @@
+<dec f='codebrowser/wt-status.h' l='131' type='void status_printf(struct wt_status * s, const char * color, const char * fmt)'/>
+<use f='codebrowser/builtin/commit.c' l='832' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='839' u='c' c='prepare_to_commit'/>
+<def f='codebrowser/wt-status.c' l='102' ll='110' type='void status_printf(struct wt_status * s, const char * color, const char * fmt)'/>
+<use f='codebrowser/wt-status.c' l='328' u='c' c='wt_longstatus_print_unmerged_data'/>
+<use f='codebrowser/wt-status.c' l='390' u='c' c='wt_longstatus_print_change_data'/>
+<use f='codebrowser/wt-status.c' l='896' u='c' c='wt_longstatus_print_other'/>
+<use f='codebrowser/wt-status.c' l='1590' u='c' c='wt_longstatus_print'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='145' type='int'/>
+<offset>992</offset>
+<use f='codebrowser/diffcore-rename.c' l='534' u='r' c='diffcore_rename'/>
+<use f='codebrowser/merge-recursive.c' l='529' u='w' c='get_renames'/>

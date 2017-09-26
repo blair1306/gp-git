@@ -1,0 +1,12 @@
+<dec f='codebrowser/parse-options.h' l='254'/>
+<use f='codebrowser/builtin/am.c' l='2233' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2236' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2239' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2242' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2245' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2248' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2251' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2254' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2260' u='c'/>
+<use f='codebrowser/builtin/pull.c' l='165' u='c'/>
+<use f='codebrowser/builtin/pull.c' l='168' u='c'/>

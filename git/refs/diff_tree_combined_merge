@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='242' type='void diff_tree_combined_merge(const struct commit * commit, int dense, struct rev_info * rev)'/>
+<def f='codebrowser/combine-diff.c' l='1532' ll='1544' type='void diff_tree_combined_merge(const struct commit * commit, int dense, struct rev_info * rev)'/>
+<use f='codebrowser/log-tree.c' l='782' u='c' c='do_diff_combined'/>
+<use f='codebrowser/submodule.c' l='801' u='c' c='collect_changed_submodules'/>

@@ -1,0 +1,14 @@
+<def f='include/expat.h' l='45' ll='52'/>
+<doc f='include/expat.h' l='32'>/* The XML_Status enum gives the possible return values for several
+   API functions.  The preprocessor #defines are included so this
+   stanza can be added to code that still needs to support older
+   versions of Expat 1.95.x:
+
+   #ifndef XML_STATUS_OK
+   #define XML_STATUS_OK    1
+   #define XML_STATUS_ERROR 0
+   #endif
+
+   Otherwise, the #define hackery is quite ugly and would have been
+   dropped.
+*/</doc>

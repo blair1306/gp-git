@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='1720' type='0'/>
+<doc f='include/curl/curl.h' l='1720'>/* setting this means we don&apos;t care, and that we&apos;d
+                             like the library to choose the best possible
+                             for us! */</doc>

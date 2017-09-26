@@ -1,0 +1,9 @@
+<dec f='codebrowser/apply.h' l='41' type='int'/>
+<use f='codebrowser/apply.c' l='84' u='w' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='4681' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4683' u='w' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4687' u='w' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4889' u='w' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4895' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4897' u='w' c='apply_all_patches'/>
+<offset>128</offset>

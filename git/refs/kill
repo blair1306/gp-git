@@ -1,0 +1,6 @@
+<dec f='include/signal.h' l='127' type='int kill(__pid_t __pid, int __sig)'/>
+<use f='codebrowser/builtin/gc.c' l='278' u='c' c='lock_repo_for_gc'/>
+<use f='codebrowser/daemon.c' l='805' u='c' c='kill_some_child'/>
+<use f='codebrowser/run-command.c' l='49' u='c' c='cleanup_children'/>
+<use f='codebrowser/run-command.c' l='1426' u='c' c='kill_children'/>
+<use f='codebrowser/sub-process.c' l='58' u='c' c='subprocess_stop'/>

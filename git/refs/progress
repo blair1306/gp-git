@@ -1,0 +1,10 @@
+<def f='codebrowser/progress.c' l='31' ll='40'/>
+<size>48</size>
+<mbr r='progress::title' o='0' t='const char *'/>
+<mbr r='progress::last_value' o='64' t='int'/>
+<mbr r='progress::total' o='96' t='unsigned int'/>
+<mbr r='progress::last_percent' o='128' t='unsigned int'/>
+<mbr r='progress::delay' o='160' t='unsigned int'/>
+<mbr r='progress::delayed_percent_threshold' o='192' t='unsigned int'/>
+<mbr r='progress::throughput' o='256' t='struct throughput *'/>
+<mbr r='progress::start_ns' o='320' t='uint64_t'/>

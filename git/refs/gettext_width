@@ -1,0 +1,2 @@
+<def f='codebrowser/gettext.h' l='38' ll='41' type='int gettext_width(const char * s)'/>
+<use f='codebrowser/builtin/fetch.c' l='602' u='c' c='format_display'/>

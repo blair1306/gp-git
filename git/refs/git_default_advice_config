@@ -1,0 +1,3 @@
+<dec f='codebrowser/advice.h' l='23' type='int git_default_advice_config(const char * var, const char * value)'/>
+<def f='codebrowser/advice.c' l='65' ll='81' type='int git_default_advice_config(const char * var, const char * value)'/>
+<use f='codebrowser/config.c' l='1357' u='c' c='git_default_config'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/notes-utils.h' l='31' type='struct notes_tree **'/>
+<offset>0</offset>
+<use f='codebrowser/notes-utils.c' l='155' u='w' c='init_copy_notes_for_rewrite'/>
+<use f='codebrowser/notes-utils.c' l='166' u='r' c='copy_note_for_rewrite'/>
+<use f='codebrowser/notes-utils.c' l='167' u='r' c='copy_note_for_rewrite'/>
+<use f='codebrowser/notes-utils.c' l='174' u='r' c='finish_copy_notes_for_rewrite'/>
+<use f='codebrowser/notes-utils.c' l='175' u='r' c='finish_copy_notes_for_rewrite'/>
+<use f='codebrowser/notes-utils.c' l='176' u='r' c='finish_copy_notes_for_rewrite'/>
+<use f='codebrowser/notes-utils.c' l='178' u='r' c='finish_copy_notes_for_rewrite'/>

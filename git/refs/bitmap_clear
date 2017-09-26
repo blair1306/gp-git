@@ -1,0 +1,2 @@
+<dec f='codebrowser/ewah/ewok.h' l='208' type='void bitmap_clear(struct bitmap * self, size_t pos)'/>
+<def f='codebrowser/ewah/bitmap.c' l='49' ll='55' type='void bitmap_clear(struct bitmap * self, size_t pos)'/>

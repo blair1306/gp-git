@@ -1,0 +1,19 @@
+<dec f='codebrowser/decorate.h' l='15' type='void * add_decoration(struct decoration * n, const struct object * obj, void * decoration)'/>
+<use f='codebrowser/blame.c' l='1808' u='c' c='setup_scoreboard'/>
+<use f='codebrowser/builtin/fast-export.c' l='172' u='c' c='mark_object'/>
+<use f='codebrowser/builtin/fsck.c' l='400' u='c' c='fsck_handle_reflog_oid'/>
+<use f='codebrowser/builtin/fsck.c' l='453' u='c' c='fsck_handle_ref'/>
+<use f='codebrowser/builtin/fsck.c' l='604' u='c' c='fsck_cache_tree'/>
+<use f='codebrowser/builtin/fsck.c' l='745' u='c' c='cmd_fsck'/>
+<use f='codebrowser/builtin/fsck.c' l='781' u='c' c='cmd_fsck'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='50' u='c' c='add_object_buffer'/>
+<def f='codebrowser/decorate.c' l='57' ll='65' type='void * add_decoration(struct decoration * n, const struct object * obj, void * decoration)'/>
+<doc f='codebrowser/decorate.c' l='56'>/* Add a decoration pointer, return any old one */</doc>
+<use f='codebrowser/fsck.c' l='323' u='c' c='put_object_name'/>
+<use f='codebrowser/line-log.c' l='710' u='c' c='add_line_range'/>
+<use f='codebrowser/line-log.c' l='720' u='c' c='clear_commit_line_range'/>
+<use f='codebrowser/log-tree.c' l='84' u='c' c='add_name_decoration'/>
+<use f='codebrowser/revision.c' l='487' u='c' c='initialise_treesame'/>
+<use f='codebrowser/revision.c' l='539' u='c' c='compact_treesame'/>
+<use f='codebrowser/revision.c' l='2398' u='c' c='add_child'/>
+<use f='codebrowser/revision.c' l='2441' u='c' c='locate_simplify_state'/>

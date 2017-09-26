@@ -1,0 +1,13 @@
+<dec f='codebrowser/remote.h' l='26' type='const char **'/>
+<offset>448</offset>
+<use f='codebrowser/builtin/push.c' l='118' u='r' c='push_url_of_remote'/>
+<use f='codebrowser/builtin/remote.c' l='1069' u='r' c='get_one_entry'/>
+<use f='codebrowser/builtin/remote.c' l='1148' u='r' c='show'/>
+<use f='codebrowser/builtin/remote.c' l='1483' u='r' c='get_url'/>
+<use f='codebrowser/builtin/remote.c' l='1551' u='r' c='set_url'/>
+<use f='codebrowser/remote.c' l='114' u='w' c='add_pushurl'/>
+<use f='codebrowser/remote.c' l='114' u='r' c='add_pushurl'/>
+<use f='codebrowser/remote.c' l='114' u='r' c='add_pushurl'/>
+<use f='codebrowser/remote.c' l='115' u='r' c='add_pushurl'/>
+<use f='codebrowser/remote.c' l='455' u='r' c='alias_all_urls'/>
+<use f='codebrowser/remote.c' l='455' u='r' c='alias_all_urls'/>

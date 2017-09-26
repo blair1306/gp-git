@@ -1,0 +1,10 @@
+<dec f='include/stdio.h' l='531' type='int fgetc(FILE * __stream)'/>
+<doc f='include/stdio.h' l='527'>/* Read a character from STREAM.
+
+   These functions are possible cancellation points and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/builtin/mailsplit.c' l='234' u='c' c='split_mbox'/>
+<use f='codebrowser/fast-import.c' l='1989' u='c' c='skip_optional_lf'/>
+<use f='codebrowser/mailinfo.c' l='886' u='c' c='read_one_header_line'/>
+<use f='codebrowser/mailinfo.c' l='1104' u='c' c='mailinfo'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='69' u='c' c='buffer_read_char'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/trailer.c' l='13' type='1'/>
+<use f='codebrowser/trailer.c' l='68' u='r' c='after_or_end'/>
+<use f='codebrowser/trailer.c' l='335' u='r' c='find_same_and_apply_arg'/>
+<use f='codebrowser/trailer.c' l='379' u='r' c='set_where'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/connect.h' l='10' type='int git_connection_is_socket(struct child_process * conn)'/>
+<def f='codebrowser/connect.c' l='922' ll='925' type='int git_connection_is_socket(struct child_process * conn)'/>
+<use f='codebrowser/connect.c' l='930' u='c' c='finish_connect'/>
+<use f='codebrowser/send-pack.c' l='573' u='c' c='send_pack'/>

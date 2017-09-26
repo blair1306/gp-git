@@ -1,0 +1,6 @@
+<dec f='codebrowser/bisect.h' l='18' type='struct rev_info *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/rev-list.c' l='62' u='r' c='show_commit'/>
+<use f='codebrowser/builtin/rev-list.c' l='186' u='r' c='finish_object'/>
+<use f='codebrowser/builtin/rev-list.c' l='220' u='r' c='show_bisect_vars'/>
+<use f='codebrowser/builtin/rev-list.c' l='293' u='w' c='cmd_rev_list'/>

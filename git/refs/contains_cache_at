@@ -1,0 +1,4 @@
+<def f='codebrowser/ref-filter.c' l='1498' macro='1' type='enum contains_result * contains_cache_at(struct contains_cache * s, const struct commit * c)'/>
+<use f='codebrowser/ref-filter.c' l='1538' u='c' c='contains_test'/>
+<use f='codebrowser/ref-filter.c' l='1579' u='c' c='contains_tag_algo'/>
+<use f='codebrowser/ref-filter.c' l='1588' u='c' c='contains_tag_algo'/>

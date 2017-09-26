@@ -1,0 +1,7 @@
+<dec f='codebrowser/wt-status.h' l='135' type='int has_uncommitted_changes(int ignore_submodules)'/>
+<use f='codebrowser/sequencer.c' l='2217' u='c' c='commit_staged_changes'/>
+<def f='codebrowser/wt-status.c' l='2276' ll='2292' type='int has_uncommitted_changes(int ignore_submodules)'/>
+<use f='codebrowser/wt-status.c' l='2315' u='c' c='require_clean_work_tree'/>
+<doc f='codebrowser/wt-status.c' l='2273'>/**
+ * Returns 1 if there are uncommitted changes, 0 otherwise.
+ */</doc>

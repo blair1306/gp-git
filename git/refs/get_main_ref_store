@@ -1,0 +1,35 @@
+<dec f='codebrowser/refs.h' l='725' type='struct ref_store * get_main_ref_store()'/>
+<use f='codebrowser/builtin/pack-refs.c' l='20' u='c' c='cmd_pack_refs'/>
+<use f='codebrowser/refs.c' l='209' u='c' c='resolve_refdup'/>
+<use f='codebrowser/refs.c' l='231' u='c' c='read_ref_full'/>
+<use f='codebrowser/refs.c' l='336' u='c' c='for_each_tag_ref'/>
+<use f='codebrowser/refs.c' l='352' u='c' c='for_each_branch_ref'/>
+<use f='codebrowser/refs.c' l='368' u='c' c='for_each_remote_ref'/>
+<use f='codebrowser/refs.c' l='667' u='c' c='refs_delete_ref'/>
+<use f='codebrowser/refs.c' l='689' u='c' c='delete_ref'/>
+<use f='codebrowser/refs.c' l='865' u='c' c='ref_transaction_begin'/>
+<use f='codebrowser/refs.c' l='1005' u='c' c='refs_update_ref'/>
+<use f='codebrowser/refs.c' l='1044' u='c' c='update_ref'/>
+<use f='codebrowser/refs.c' l='1326' u='c' c='for_each_ref'/>
+<use f='codebrowser/refs.c' l='1342' u='c' c='for_each_ref_in'/>
+<use f='codebrowser/refs.c' l='1351' u='c' c='for_each_fullref_in'/>
+<use f='codebrowser/refs.c' l='1376' u='c' c='for_each_replace_ref'/>
+<use f='codebrowser/refs.c' l='1387' u='c' c='for_each_namespaced_ref'/>
+<use f='codebrowser/refs.c' l='1401' u='c' c='for_each_rawref'/>
+<use f='codebrowser/refs.c' l='1491' u='c' c='refs_init_db'/>
+<use f='codebrowser/refs.c' l='1499' u='c' c='resolve_ref_unsafe'/>
+<def f='codebrowser/refs.c' l='1610' ll='1617' type='struct ref_store * get_main_ref_store()'/>
+<use f='codebrowser/refs.c' l='1646' u='c' c='get_submodule_ref_store'/>
+<use f='codebrowser/refs.c' l='1681' u='c' c='get_worktree_ref_store'/>
+<use f='codebrowser/refs.c' l='1721' u='c' c='peel_ref'/>
+<use f='codebrowser/refs.c' l='1737' u='c' c='create_symref'/>
+<use f='codebrowser/refs.c' l='1945' u='c' c='for_each_reflog'/>
+<use f='codebrowser/refs.c' l='1960' u='c' c='for_each_reflog_ent_reverse'/>
+<use f='codebrowser/refs.c' l='1973' u='c' c='for_each_reflog_ent'/>
+<use f='codebrowser/refs.c' l='1984' u='c' c='reflog_exists'/>
+<use f='codebrowser/refs.c' l='1996' u='c' c='safe_create_reflog'/>
+<use f='codebrowser/refs.c' l='2007' u='c' c='delete_reflog'/>
+<use f='codebrowser/refs.c' l='2030' u='c' c='reflog_expire'/>
+<use f='codebrowser/refs.c' l='2053' u='c' c='delete_refs'/>
+<use f='codebrowser/refs.c' l='2064' u='c' c='rename_ref'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='24' u='c' c='get_store'/>

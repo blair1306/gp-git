@@ -1,0 +1,6 @@
+<dec f='codebrowser/git-compat-util.h' l='1130' type='int access_or_warn(const char * path, int mode, unsigned int flag)'/>
+<use f='codebrowser/builtin/config.c' l='520' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/config.c' l='521' u='c' c='cmd_config'/>
+<use f='codebrowser/dir.c' l='2329' u='c' c='setup_standard_excludes'/>
+<use f='codebrowser/dir.c' l='2336' u='c' c='setup_standard_excludes'/>
+<def f='codebrowser/wrapper.c' l='612' ll='618' type='int access_or_warn(const char * path, int mode, unsigned int flag)'/>

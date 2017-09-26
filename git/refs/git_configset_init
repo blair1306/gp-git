@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='152' type='void git_configset_init(struct config_set * cs)'/>
+<def f='codebrowser/config.c' l='1737' ll='1744' type='void git_configset_init(struct config_set * cs)'/>
+<use f='codebrowser/config.c' l='1891' u='c' c='repo_read_config'/>
+<use f='codebrowser/t/helper/test-config.c' l='94' u='c' c='cmd_main'/>

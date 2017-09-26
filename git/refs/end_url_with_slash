@@ -1,0 +1,12 @@
+<dec f='codebrowser/url.h' l='11' type='void end_url_with_slash(struct strbuf * buf, const char * url)'/>
+<use f='codebrowser/http-backend.c' l='612' u='c' c='getdir'/>
+<use f='codebrowser/http.c' l='1331' u='c' c='quote_ref_url'/>
+<use f='codebrowser/http.c' l='1346' u='c' c='append_remote_object_url'/>
+<use f='codebrowser/http.c' l='1890' u='c' c='fetch_pack_index'/>
+<use f='codebrowser/http.c' l='1955' u='c' c='http_get_info_packs'/>
+<use f='codebrowser/http.c' l='2065' u='c' c='new_http_pack_request'/>
+<use f='codebrowser/remote-curl.c' l='1050' u='c' c='cmd_main'/>
+<use f='codebrowser/remote-curl.c' l='1052' u='c' c='cmd_main'/>
+<use f='codebrowser/remote-testsvn.c' l='304' u='c' c='cmd_main'/>
+<def f='codebrowser/url.c' l='101' ll='105' type='void end_url_with_slash(struct strbuf * buf, const char * url)'/>
+<use f='codebrowser/url.c' l='109' u='c' c='str_end_url_with_slash'/>

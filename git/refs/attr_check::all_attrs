@@ -1,0 +1,16 @@
+<dec f='codebrowser/attr.h' l='41' type='struct all_attrs_item *'/>
+<offset>192</offset>
+<use f='codebrowser/attr.c' l='171' u='w' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='171' u='r' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='171' u='r' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='176' u='r' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='188' u='r' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='189' u='r' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='649' u='r' c='attr_check_clear'/>
+<use f='codebrowser/attr.c' l='649' u='w' c='attr_check_clear'/>
+<use f='codebrowser/attr.c' l='1116' u='r' c='collect_some_attrs'/>
+<use f='codebrowser/attr.c' l='1122' u='r' c='collect_some_attrs'/>
+<use f='codebrowser/attr.c' l='1133' u='r' c='collect_some_attrs'/>
+<use f='codebrowser/attr.c' l='1144' u='r' c='git_check_attr'/>
+<use f='codebrowser/attr.c' l='1161' u='r' c='git_all_attrs'/>
+<use f='codebrowser/attr.c' l='1162' u='r' c='git_all_attrs'/>

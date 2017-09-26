@@ -1,0 +1,5 @@
+<dec f='codebrowser/git-compat-util.h' l='764'/>
+<use f='codebrowser/apply.c' l='2788' u='c'/>
+<use f='codebrowser/parse-options-cb.c' l='130' u='c'/>
+<use f='codebrowser/remote.c' l='943' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1338' u='c'/>

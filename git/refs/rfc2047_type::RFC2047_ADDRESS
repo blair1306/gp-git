@@ -1,0 +1,4 @@
+<dec f='codebrowser/pretty.c' l='287' type='1'/>
+<use f='codebrowser/pretty.c' l='335' u='r' c='is_rfc2047_special'/>
+<use f='codebrowser/pretty.c' l='469' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='471' u='r' c='pp_user_info'/>

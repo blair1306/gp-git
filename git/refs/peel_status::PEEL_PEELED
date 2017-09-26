@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs/refs-internal.h' l='91' type='0'/>
+<use f='codebrowser/refs.c' l='274' u='r' c='peel_object'/>
+<doc f='codebrowser/refs/refs-internal.h' l='90'>/* object was peeled successfully: */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='504' u='r' c='peel_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='513' u='r' c='peel_entry'/>

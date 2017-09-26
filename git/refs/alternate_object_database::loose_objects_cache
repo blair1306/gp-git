@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1542' type='struct oid_array'/>
+<offset>2368</offset>
+<use f='codebrowser/sha1_name.c' l='116' u='a' c='find_short_object_filename'/>
+<use f='codebrowser/sha1_name.c' l='120' u='a' c='find_short_object_filename'/>
+<use f='codebrowser/sha1_name.c' l='123' u='m' c='find_short_object_filename'/>
+<use f='codebrowser/sha1_name.c' l='125' u='m' c='find_short_object_filename'/>

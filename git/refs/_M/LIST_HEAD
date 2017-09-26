@@ -1,0 +1,7 @@
+<dec f='codebrowser/list.h' l='42'/>
+<use f='codebrowser/http-walker.c' l='46' u='c'/>
+<doc f='codebrowser/list.h' l='41'>/* Define a variable with the head and tail of the list. */</doc>
+<use f='codebrowser/sha1_file.c' l='2233' u='c'/>
+<use f='codebrowser/trailer.c' l='46' u='c'/>
+<use f='codebrowser/trailer.c' l='973' u='c'/>
+<use f='codebrowser/trailer.c' l='974' u='c'/>

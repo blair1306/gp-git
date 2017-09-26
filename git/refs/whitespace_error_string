@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1963' type='char * whitespace_error_string(unsigned int ws)'/>
+<use f='codebrowser/apply.c' l='1647' u='c' c='record_ws_error'/>
+<use f='codebrowser/diff.c' l='2179' u='c' c='checkdiff_consume'/>
+<use f='codebrowser/diff.c' l='2665' u='c' c='builtin_checkdiff'/>
+<def f='codebrowser/ws.c' l='110' ll='140' type='char * whitespace_error_string(unsigned int ws)'/>
+<doc f='codebrowser/ws.c' l='109'>/* The returned string should be freed by the caller. */</doc>

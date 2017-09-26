@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>color.h source code [codebrowser/color.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/color.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='color.h.html'>color.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/COLOR_H">COLOR_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/COLOR_H" data-ref="_M/COLOR_H">COLOR_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf" id="strbuf">strbuf</a>;</td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/*</i></td></tr>
+<tr><th id="7">7</th><td><i> * The maximum length of ANSI color sequence we would generate:</i></td></tr>
+<tr><th id="8">8</th><td><i> * - leading ESC '['            2</i></td></tr>
+<tr><th id="9">9</th><td><i> * - attr + ';'                 2 * num_attr (e.g. "1;")</i></td></tr>
+<tr><th id="10">10</th><td><i> * - no-attr + ';'              3 * num_attr (e.g. "22;")</i></td></tr>
+<tr><th id="11">11</th><td><i> * - fg color + ';'             17 (e.g. "38;2;255;255;255;")</i></td></tr>
+<tr><th id="12">12</th><td><i> * - bg color + ';'             17 (e.g. "48;2;255;255;255;")</i></td></tr>
+<tr><th id="13">13</th><td><i> * - terminating 'm' NUL        2</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * The above overcounts by one semicolon but it is close enough.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * The space for attributes is also slightly overallocated, as</i></td></tr>
+<tr><th id="18">18</th><td><i> * the negation for some attributes is the same (e.g., nobold and nodim).</i></td></tr>
+<tr><th id="19">19</th><td><i> *</i></td></tr>
+<tr><th id="20">20</th><td><i> * We allocate space for 7 attributes.</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td><u>#define <dfn class="macro" id="_M/COLOR_MAXLEN" data-ref="_M/COLOR_MAXLEN">COLOR_MAXLEN</dfn> 75</u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_NORMAL" data-ref="_M/GIT_COLOR_NORMAL">GIT_COLOR_NORMAL</dfn>	""</u></td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_RESET" data-ref="_M/GIT_COLOR_RESET">GIT_COLOR_RESET</dfn>		"\033[m"</u></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BOLD" data-ref="_M/GIT_COLOR_BOLD">GIT_COLOR_BOLD</dfn>		"\033[1m"</u></td></tr>
+<tr><th id="27">27</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_RED" data-ref="_M/GIT_COLOR_RED">GIT_COLOR_RED</dfn>		"\033[31m"</u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_GREEN" data-ref="_M/GIT_COLOR_GREEN">GIT_COLOR_GREEN</dfn>		"\033[32m"</u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_YELLOW" data-ref="_M/GIT_COLOR_YELLOW">GIT_COLOR_YELLOW</dfn>	"\033[33m"</u></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BLUE" data-ref="_M/GIT_COLOR_BLUE">GIT_COLOR_BLUE</dfn>		"\033[34m"</u></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_MAGENTA" data-ref="_M/GIT_COLOR_MAGENTA">GIT_COLOR_MAGENTA</dfn>	"\033[35m"</u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_CYAN" data-ref="_M/GIT_COLOR_CYAN">GIT_COLOR_CYAN</dfn>		"\033[36m"</u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BOLD_RED" data-ref="_M/GIT_COLOR_BOLD_RED">GIT_COLOR_BOLD_RED</dfn>	"\033[1;31m"</u></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BOLD_GREEN" data-ref="_M/GIT_COLOR_BOLD_GREEN">GIT_COLOR_BOLD_GREEN</dfn>	"\033[1;32m"</u></td></tr>
+<tr><th id="35">35</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BOLD_YELLOW" data-ref="_M/GIT_COLOR_BOLD_YELLOW">GIT_COLOR_BOLD_YELLOW</dfn>	"\033[1;33m"</u></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BOLD_BLUE" data-ref="_M/GIT_COLOR_BOLD_BLUE">GIT_COLOR_BOLD_BLUE</dfn>	"\033[1;34m"</u></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BOLD_MAGENTA" data-ref="_M/GIT_COLOR_BOLD_MAGENTA">GIT_COLOR_BOLD_MAGENTA</dfn>	"\033[1;35m"</u></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BOLD_CYAN" data-ref="_M/GIT_COLOR_BOLD_CYAN">GIT_COLOR_BOLD_CYAN</dfn>	"\033[1;36m"</u></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BG_RED" data-ref="_M/GIT_COLOR_BG_RED">GIT_COLOR_BG_RED</dfn>	"\033[41m"</u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BG_GREEN" data-ref="_M/GIT_COLOR_BG_GREEN">GIT_COLOR_BG_GREEN</dfn>	"\033[42m"</u></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BG_YELLOW" data-ref="_M/GIT_COLOR_BG_YELLOW">GIT_COLOR_BG_YELLOW</dfn>	"\033[43m"</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BG_BLUE" data-ref="_M/GIT_COLOR_BG_BLUE">GIT_COLOR_BG_BLUE</dfn>	"\033[44m"</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BG_MAGENTA" data-ref="_M/GIT_COLOR_BG_MAGENTA">GIT_COLOR_BG_MAGENTA</dfn>	"\033[45m"</u></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_BG_CYAN" data-ref="_M/GIT_COLOR_BG_CYAN">GIT_COLOR_BG_CYAN</dfn>	"\033[46m"</u></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><i>/* A special value meaning "no color selected" */</i></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_NIL" data-ref="_M/GIT_COLOR_NIL">GIT_COLOR_NIL</dfn> "NIL"</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><i>/*</i></td></tr>
+<tr><th id="50">50</th><td><i> * The first three are chosen to match common usage in the code, and what is</i></td></tr>
+<tr><th id="51">51</th><td><i> * returned from git_config_colorbool. The "auto" value can be returned from</i></td></tr>
+<tr><th id="52">52</th><td><i> * config_colorbool, and will be converted by want_color() into either 0 or 1.</i></td></tr>
+<tr><th id="53">53</th><td><i> */</i></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_UNKNOWN" data-ref="_M/GIT_COLOR_UNKNOWN">GIT_COLOR_UNKNOWN</dfn> -1</u></td></tr>
+<tr><th id="55">55</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_NEVER" data-ref="_M/GIT_COLOR_NEVER">GIT_COLOR_NEVER</dfn>  0</u></td></tr>
+<tr><th id="56">56</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_ALWAYS" data-ref="_M/GIT_COLOR_ALWAYS">GIT_COLOR_ALWAYS</dfn> 1</u></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/GIT_COLOR_AUTO" data-ref="_M/GIT_COLOR_AUTO">GIT_COLOR_AUTO</dfn>   2</u></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><i>/* A default list of colors to use for commit graphs and show-branch output */</i></td></tr>
+<tr><th id="60">60</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="column_colors_ansi" title='column_colors_ansi' data-ref="column_colors_ansi">column_colors_ansi</dfn>[];</td></tr>
+<tr><th id="61">61</th><td><b>extern</b> <em>const</em> <em>int</em> <dfn class="decl" id="column_colors_ansi_max" title='column_colors_ansi_max' data-ref="column_colors_ansi_max">column_colors_ansi_max</dfn>;</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><i>/*</i></td></tr>
+<tr><th id="64">64</th><td><i> * Generally the color code will lazily figure this out itself, but</i></td></tr>
+<tr><th id="65">65</th><td><i> * this provides a mechanism for callers to override autodetection.</i></td></tr>
+<tr><th id="66">66</th><td><i> */</i></td></tr>
+<tr><th id="67">67</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="color_stdout_is_tty" title='color_stdout_is_tty' data-ref="color_stdout_is_tty">color_stdout_is_tty</dfn>;</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i>/*</i></td></tr>
+<tr><th id="70">70</th><td><i> * Use the first one if you need only color config; the second is a convenience</i></td></tr>
+<tr><th id="71">71</th><td><i> * if you are just going to change to git_default_config, too.</i></td></tr>
+<tr><th id="72">72</th><td><i> */</i></td></tr>
+<tr><th id="73">73</th><td><em>int</em> <dfn class="decl" id="git_color_config" title='git_color_config' data-ref="git_color_config">git_color_config</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1var" title='var' data-type='const char *' data-ref="1var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2value" title='value' data-type='const char *' data-ref="2value">value</dfn>, <em>void</em> *<dfn class="local col3 decl" id="3cb" title='cb' data-type='void *' data-ref="3cb">cb</dfn>);</td></tr>
+<tr><th id="74">74</th><td><em>int</em> <dfn class="decl" id="git_color_default_config" title='git_color_default_config' data-ref="git_color_default_config">git_color_default_config</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="4var" title='var' data-type='const char *' data-ref="4var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5value" title='value' data-type='const char *' data-ref="5value">value</dfn>, <em>void</em> *<dfn class="local col6 decl" id="6cb" title='cb' data-type='void *' data-ref="6cb">cb</dfn>);</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><i>/*</i></td></tr>
+<tr><th id="77">77</th><td><i> * Set the color buffer (which must be COLOR_MAXLEN bytes)</i></td></tr>
+<tr><th id="78">78</th><td><i> * to the raw color bytes; this is useful for initializing</i></td></tr>
+<tr><th id="79">79</th><td><i> * default color variables.</i></td></tr>
+<tr><th id="80">80</th><td><i> */</i></td></tr>
+<tr><th id="81">81</th><td><em>void</em> <dfn class="decl" id="color_set" title='color_set' data-ref="color_set">color_set</dfn>(<em>char</em> *<dfn class="local col7 decl" id="7dst" title='dst' data-type='char *' data-ref="7dst">dst</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8color_bytes" title='color_bytes' data-type='const char *' data-ref="8color_bytes">color_bytes</dfn>);</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><em>int</em> <dfn class="decl" id="git_config_colorbool" title='git_config_colorbool' data-ref="git_config_colorbool">git_config_colorbool</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="9var" title='var' data-type='const char *' data-ref="9var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10value" title='value' data-type='const char *' data-ref="10value">value</dfn>);</td></tr>
+<tr><th id="84">84</th><td><em>int</em> <dfn class="decl" id="want_color" title='want_color' data-ref="want_color">want_color</dfn>(<em>int</em> <dfn class="local col1 decl" id="11var" title='var' data-type='int' data-ref="11var">var</dfn>);</td></tr>
+<tr><th id="85">85</th><td><em>int</em> <dfn class="decl" id="color_parse" title='color_parse' data-ref="color_parse">color_parse</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12value" title='value' data-type='const char *' data-ref="12value">value</dfn>, <em>char</em> *<dfn class="local col3 decl" id="13dst" title='dst' data-type='char *' data-ref="13dst">dst</dfn>);</td></tr>
+<tr><th id="86">86</th><td><em>int</em> <dfn class="decl" id="color_parse_mem" title='color_parse_mem' data-ref="color_parse_mem">color_parse_mem</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="14value" title='value' data-type='const char *' data-ref="14value">value</dfn>, <em>int</em> <dfn class="local col5 decl" id="15len" title='len' data-type='int' data-ref="15len">len</dfn>, <em>char</em> *<dfn class="local col6 decl" id="16dst" title='dst' data-type='char *' data-ref="16dst">dst</dfn>);</td></tr>
+<tr><th id="87">87</th><td><b>__attribute__</b>((format (printf, <var>3</var>, <var>4</var>)))</td></tr>
+<tr><th id="88">88</th><td><em>int</em> <dfn class="decl" id="color_fprintf" title='color_fprintf' data-ref="color_fprintf">color_fprintf</dfn>(<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col7 decl" id="17fp" title='fp' data-type='FILE *' data-ref="17fp">fp</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="18color" title='color' data-type='const char *' data-ref="18color">color</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="19fmt" title='fmt' data-type='const char *' data-ref="19fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="89">89</th><td><b>__attribute__</b>((format (printf, <var>3</var>, <var>4</var>)))</td></tr>
+<tr><th id="90">90</th><td><em>int</em> <dfn class="decl" id="color_fprintf_ln" title='color_fprintf_ln' data-ref="color_fprintf_ln">color_fprintf_ln</dfn>(<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col0 decl" id="20fp" title='fp' data-type='FILE *' data-ref="20fp">fp</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="21color" title='color' data-type='const char *' data-ref="21color">color</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="22fmt" title='fmt' data-type='const char *' data-ref="22fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="91">91</th><td><em>void</em> <dfn class="decl" id="color_print_strbuf" title='color_print_strbuf' data-ref="color_print_strbuf">color_print_strbuf</dfn>(<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col3 decl" id="23fp" title='fp' data-type='FILE *' data-ref="23fp">fp</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="24color" title='color' data-type='const char *' data-ref="24color">color</dfn>, <em>const</em> <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col5 decl" id="25sb" title='sb' data-type='const struct strbuf *' data-ref="25sb">sb</dfn>);</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><em>int</em> <dfn class="decl" id="color_is_nil" title='color_is_nil' data-ref="color_is_nil">color_is_nil</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="26color" title='color' data-type='const char *' data-ref="26color">color</dfn>);</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><u>#<span data-ppcond="1">endif</span> /* COLOR_H */</u></td></tr>
+<tr><th id="96">96</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='bisect.c.html'>codebrowser/bisect.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

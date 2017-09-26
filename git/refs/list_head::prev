@@ -1,0 +1,25 @@
+<dec f='codebrowser/list.h' l='36' type='struct list_head *'/>
+<use f='codebrowser/list.h' l='54' u='w' c='list_add'/>
+<use f='codebrowser/list.h' l='56' u='w' c='list_add'/>
+<use f='codebrowser/list.h' l='63' u='r' c='list_add_tail'/>
+<use f='codebrowser/list.h' l='65' u='w' c='list_add_tail'/>
+<use f='codebrowser/list.h' l='65' u='r' c='list_add_tail'/>
+<use f='codebrowser/list.h' l='66' u='w' c='list_add_tail'/>
+<use f='codebrowser/list.h' l='72' u='w' c='__list_del'/>
+<use f='codebrowser/list.h' l='79' u='r' c='list_del'/>
+<use f='codebrowser/list.h' l='47' u='w' c='list_del_init'/>
+<use f='codebrowser/list.h' l='92' u='r' c='list_move'/>
+<use f='codebrowser/list.h' l='100' u='w' c='list_replace'/>
+<use f='codebrowser/list.h' l='100' u='r' c='list_replace'/>
+<use f='codebrowser/list.h' l='101' u='r' c='list_replace'/>
+<use f='codebrowser/list.h' l='102' u='w' c='list_replace'/>
+<use f='codebrowser/list.h' l='110' u='w' c='list_splice'/>
+<use f='codebrowser/list.h' l='111' u='r' c='list_splice'/>
+<use f='codebrowser/list.h' l='112' u='w' c='list_splice'/>
+<use f='codebrowser/list.h' l='112' u='r' c='list_splice'/>
+<use f='codebrowser/list.h' l='47' u='w' c='list_replace_init'/>
+<offset>64</offset>
+<use f='codebrowser/trailer.c' l='213' u='r' c='check_if_different'/>
+<use f='codebrowser/trailer.c' l='342' u='r' c='find_same_and_apply_arg'/>
+<use f='codebrowser/trailer.c' l='62' u='r' c='find_same_and_apply_arg'/>
+<use f='codebrowser/trailer.c' l='64' u='r' c='find_same_and_apply_arg'/>

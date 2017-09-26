@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule.h' l='41' type='void set_diffopt_flags_from_submodule_config(struct diff_options * , const char * path)'/>
+<use f='codebrowser/diff-lib.c' l='76' u='c' c='match_stat_with_submodule'/>
+<use f='codebrowser/diff.c' l='5062' u='c' c='is_submodule_ignored'/>
+<def f='codebrowser/submodule.c' l='163' ll='173' type='void set_diffopt_flags_from_submodule_config(struct diff_options * diffopt, const char * path)'/>

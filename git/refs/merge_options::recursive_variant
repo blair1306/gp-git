@@ -1,0 +1,5 @@
+<dec f='codebrowser/merge-recursive.h' l='14' type='enum (anonymous enum at /home/jon/workspace/git/merge-recursive.h:10:2)'/>
+<offset>192</offset>
+<use f='codebrowser/merge-recursive.c' l='895' u='r' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='2192' u='w' c='parse_merge_opt'/>
+<use f='codebrowser/merge-recursive.c' l='2194' u='w' c='parse_merge_opt'/>

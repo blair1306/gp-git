@@ -1,0 +1,3 @@
+<dec f='include/ctype.h' l='59' type='8'/>
+<doc f='include/ctype.h' l='59'>/* Alphanumeric.  */</doc>
+<use f='codebrowser/xdiff/xmerge.c' l='401' macro='1' u='r'/>

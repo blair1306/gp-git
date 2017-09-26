@@ -1,0 +1,10 @@
+<dec f='codebrowser/dir.h' l='288'/>
+<doc f='codebrowser/dir.h' l='283'>/*
+ * If a non-directory is found within path, stop and return an error.
+ * (In this case some empty directories might already have been
+ * removed.)
+ */</doc>
+<use f='codebrowser/dir.c' l='2245' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='600' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='861' u='c'/>
+<use f='codebrowser/sha1_file.c' l='216' u='c'/>

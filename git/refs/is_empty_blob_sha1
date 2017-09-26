@@ -1,0 +1,2 @@
+<def f='codebrowser/cache.h' l='1005' ll='1008' type='int is_empty_blob_sha1(const unsigned char * sha1)'/>
+<use f='codebrowser/read-cache.c' l='266' u='c' c='ce_match_stat_basic'/>

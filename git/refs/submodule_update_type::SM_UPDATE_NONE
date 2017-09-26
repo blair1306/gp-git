@@ -1,0 +1,7 @@
+<dec f='codebrowser/submodule.h' l='26' type='4'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='811' u='r' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='813' u='r' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/submodule.c' l='407' u='r' c='parse_submodule_update_strategy'/>
+<use f='codebrowser/submodule.c' l='432' c='submodule_strategy_to_string'/>
+<use f='codebrowser/unpack-trees.c' l='271' c='check_submodule_move_head'/>
+<use f='codebrowser/unpack-trees.c' l='320' c='unlink_entry'/>

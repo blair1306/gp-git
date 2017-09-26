@@ -1,0 +1,45 @@
+<dec f='codebrowser/sub-process.h' l='28' type='const char *'/>
+<use f='codebrowser/convert.c' l='546' u='r' c='handle_filter_error'/>
+<offset>128</offset>
+<use f='codebrowser/sub-process.c' l='16' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='16' u='r' c='cmd2process_cmp'/>
+<use f='codebrowser/sub-process.c' l='24' u='w' c='subprocess_find_entry'/>
+<use f='codebrowser/sub-process.c' l='82' u='w' c='subprocess_start'/>

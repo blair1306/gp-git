@@ -1,0 +1,3 @@
+<dec f='codebrowser/commit.h' l='40' type='4'/>
+<use f='codebrowser/log-tree.c' l='56' u='r' c='parse_decorate_color_slot'/>
+<use f='codebrowser/log-tree.c' l='126' u='r' c='add_ref_decoration'/>

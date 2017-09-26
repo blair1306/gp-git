@@ -1,0 +1,19 @@
+<dec f='codebrowser/diffcore.h' l='61' type='void diff_free_filespec_data(struct diff_filespec * )'/>
+<use f='codebrowser/diff.c' l='2018' u='c' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='2019' u='c' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='2023' u='c' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='2028' u='c' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='2537' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2538' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2607' u='c' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='2608' u='c' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='2673' u='c' c='builtin_checkdiff'/>
+<use f='codebrowser/diff.c' l='2674' u='c' c='builtin_checkdiff'/>
+<use f='codebrowser/diff.c' l='2692' u='c' c='free_filespec'/>
+<def f='codebrowser/diff.c' l='2943' ll='2947' type='void diff_free_filespec_data(struct diff_filespec * s)'/>
+<use f='codebrowser/diffcore-break.c' l='216' u='c' c='diffcore_break'/>
+<use f='codebrowser/diffcore-break.c' l='217' u='c' c='diffcore_break'/>
+<use f='codebrowser/diffcore-break.c' l='255' u='c' c='merge_broken'/>
+<use f='codebrowser/diffcore-break.c' l='256' u='c' c='merge_broken'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='160' u='c' c='pickaxe_match'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='161' u='c' c='pickaxe_match'/>

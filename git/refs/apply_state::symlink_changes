@@ -1,0 +1,8 @@
+<dec f='codebrowser/apply.h' l='81' type='struct string_list'/>
+<use f='codebrowser/apply.c' l='95' u='a' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='109' u='a' c='clear_apply_state'/>
+<use f='codebrowser/apply.c' l='3761' u='a' c='register_symlink_changes'/>
+<use f='codebrowser/apply.c' l='3763' u='a' c='register_symlink_changes'/>
+<use f='codebrowser/apply.c' l='3774' u='a' c='check_symlink_changes'/>
+<offset>1600</offset>
+<doc f='codebrowser/apply.h' l='81'>/* we have to track symlinks */</doc>

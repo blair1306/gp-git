@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='716' type='int reflog_expire(const char * refname, const unsigned char * sha1, unsigned int flags, reflog_expiry_prepare_fn * prepare_fn, reflog_expiry_should_prune_fn * should_prune_fn, reflog_expiry_cleanup_fn * cleanup_fn, void * policy_cb_data)'/>
+<use f='codebrowser/builtin/reflog.c' l='592' u='c' c='cmd_reflog_expire'/>
+<use f='codebrowser/builtin/reflog.c' l='610' u='c' c='cmd_reflog_expire'/>
+<use f='codebrowser/builtin/reflog.c' l='686' u='c' c='cmd_reflog_delete'/>
+<def f='codebrowser/refs.c' l='2023' ll='2034' type='int reflog_expire(const char * refname, const unsigned char * sha1, unsigned int flags, reflog_expiry_prepare_fn * prepare_fn, reflog_expiry_should_prune_fn * should_prune_fn, reflog_expiry_cleanup_fn * cleanup_fn, void * policy_cb_data)'/>

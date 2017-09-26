@@ -1,0 +1,4 @@
+<dec f='codebrowser/http-walker.c' l='16' type='0'/>
+<use f='codebrowser/http-walker.c' l='130' u='r' c='fill_active_slot'/>
+<use f='codebrowser/http-walker.c' l='152' u='r' c='prefetch'/>
+<use f='codebrowser/http-walker.c' l='497' u='r' c='fetch_object'/>

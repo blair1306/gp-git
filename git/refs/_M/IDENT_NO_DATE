@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1445'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='298' u='c'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='301' u='c'/>
+<use f='codebrowser/builtin/log.c' l='833' u='c'/>
+<use f='codebrowser/builtin/log.c' l='929' u='c'/>
+<use f='codebrowser/builtin/log.c' l='1248' u='c'/>
+<use f='codebrowser/gpg-interface.c' l='145' u='c'/>
+<use f='codebrowser/ident.c' l='359' u='c'/>
+<use f='codebrowser/ident.c' l='427' u='c'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='52' type='uint32_t [80]'/>
+<offset>1280</offset>
+<use f='codebrowser/sha1dc/sha1.c' l='1716' u='r' c='sha1_process'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1722' u='r' c='sha1_process'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1732' u='r' c='sha1_process'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1744' u='r' c='sha1_process'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1745' u='r' c='sha1_process'/>

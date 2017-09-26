@@ -1,0 +1,9 @@
+<dec f='codebrowser/submodule.h' l='121' type='int submodule_to_gitdir(struct strbuf * buf, const char * submodule)'/>
+<doc f='codebrowser/submodule.h' l='116'>/*
+ * Given a submodule path (as in the index), return the repository
+ * path of that submodule in &apos;buf&apos;. Return -1 on error or when the
+ * submodule is not initialized.
+ */</doc>
+<use f='codebrowser/path.c' l='558' u='c' c='do_submodule_path'/>
+<use f='codebrowser/refs.c' l='1659' u='c' c='get_submodule_ref_store'/>
+<def f='codebrowser/submodule.c' l='2025' ll='2054' type='int submodule_to_gitdir(struct strbuf * buf, const char * submodule)'/>

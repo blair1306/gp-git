@@ -1,0 +1,7 @@
+<dec f='codebrowser/diff.h' l='161' type='int'/>
+<offset>1504</offset>
+<use f='codebrowser/diff.c' l='1704' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1705' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1706' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='3600' u='r' c='stat_opt'/>
+<use f='codebrowser/diff.c' l='3661' u='w' c='stat_opt'/>

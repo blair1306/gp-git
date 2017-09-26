@@ -1,0 +1,14 @@
+<dec f='codebrowser/notes.h' l='49' type='int'/>
+<offset>384</offset>
+<use f='codebrowser/notes-cache.c' l='51' u='r' c='notes_cache_write'/>
+<use f='codebrowser/notes-utils.c' l='13' u='r' c='create_notes_commit'/>
+<use f='codebrowser/notes-utils.c' l='41' u='r' c='commit_notes'/>
+<use f='codebrowser/notes.c' l='1011' u='r' c='init_notes'/>
+<use f='codebrowser/notes.c' l='1025' u='w' c='init_notes'/>
+<use f='codebrowser/notes.c' l='1097' u='r' c='add_note'/>
+<use f='codebrowser/notes.c' l='1113' u='r' c='remove_note'/>
+<use f='codebrowser/notes.c' l='1130' u='r' c='get_note'/>
+<use f='codebrowser/notes.c' l='1140' u='r' c='for_each_note'/>
+<use f='codebrowser/notes.c' l='1152' u='r' c='write_notes_tree'/>
+<use f='codebrowser/notes.c' l='1178' u='r' c='prune_notes'/>
+<use f='codebrowser/notes.c' l='1230' u='r' c='format_note'/>

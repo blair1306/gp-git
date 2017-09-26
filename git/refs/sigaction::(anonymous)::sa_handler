@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/bits/sigaction.h' l='31' type='__sighandler_t'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/bits/sigaction.h' l='30'>/* Used if SA_SIGINFO is not set.  */</doc>
+<use f='codebrowser/builtin/log.c' l='323' macro='1' u='w'/>
+<use f='codebrowser/fast-import.c' l='540' macro='1' u='w'/>
+<use f='codebrowser/progress.c' l='57' macro='1' u='w'/>

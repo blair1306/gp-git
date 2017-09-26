@@ -1,0 +1,8 @@
+<dec f='codebrowser/connect.h' l='4'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='188' u='c'/>
+<use f='codebrowser/builtin/send-pack.c' l='256' u='c'/>
+<use f='codebrowser/connect.c' l='388' u='c'/>
+<use f='codebrowser/connect.c' l='395' u='c'/>
+<use f='codebrowser/connect.c' l='410' u='c'/>
+<use f='codebrowser/connect.c' l='422' u='c'/>
+<use f='codebrowser/transport.c' l='171' u='c'/>

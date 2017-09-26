@@ -1,0 +1,6 @@
+<dec f='codebrowser/line-log.h' l='53' type='struct diff_filepair *'/>
+<offset>448</offset>
+<use f='codebrowser/line-log.c' l='249' u='r' c='line_log_data_clear'/>
+<use f='codebrowser/line-log.c' l='250' u='r' c='line_log_data_clear'/>
+<use f='codebrowser/line-log.c' l='879' u='r' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='1093' u='w' c='process_all_files'/>

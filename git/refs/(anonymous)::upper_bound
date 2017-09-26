@@ -1,0 +1,7 @@
+<dec f='codebrowser/khash.h' l='63' type='khint_t'/>
+<use f='codebrowser/khash.h' l='166' u='w' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='173' u='r' c='kh_put_sha1'/>
+<dec f='codebrowser/khash.h' l='63' type='khint_t'/>
+<use f='codebrowser/khash.h' l='166' u='w' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='173' u='r' c='kh_put_sha1_pos'/>
+<offset>96</offset>

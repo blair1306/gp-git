@@ -1,0 +1,4 @@
+<dec f='codebrowser/builtin/commit.c' l='132' type='0'/>
+<use f='codebrowser/builtin/commit.c' l='1212' u='r' c='parse_and_validate_options'/>
+<use f='codebrowser/builtin/commit.c' l='1216' u='r' c='parse_and_validate_options'/>
+<use f='codebrowser/builtin/commit.c' l='1220' u='r' c='parse_and_validate_options'/>

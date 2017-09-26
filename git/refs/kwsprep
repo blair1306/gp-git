@@ -1,0 +1,8 @@
+<dec f='codebrowser/kwset.h' l='51' type='const char * kwsprep(kwset_t )'/>
+<doc f='codebrowser/kwset.h' l='49'>/* When the keyword set has been completely built, prepare it for
+   use.  Return NULL for success, or an error message. */</doc>
+<use f='codebrowser/diffcore-pickaxe.c' l='242' u='c' c='diffcore_pickaxe'/>
+<use f='codebrowser/grep.c' l='643' u='c' c='compile_regexp'/>
+<def f='codebrowser/kwset.c' l='378' ll='491' type='const char * kwsprep(kwset_t kws)'/>
+<doc f='codebrowser/kwset.c' l='376'>/* Compute the shift for each trie node, as well as the delta
+   table and next cache for the given keyword set. */</doc>

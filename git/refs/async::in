@@ -1,0 +1,17 @@
+<dec f='codebrowser/run-command.h' l='131' type='int'/>
+<offset>128</offset>
+<doc f='codebrowser/run-command.h' l='131'>/* caller writes here and closes it */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='722' u='w' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='726' u='r' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1475' u='w' c='execute_commands'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1477' u='r' c='execute_commands'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1796' u='w' c='unpack_with_sideband'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1800' u='r' c='unpack_with_sideband'/>
+<use f='codebrowser/run-command.c' l='1043' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1050' u='w' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1058' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1059' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1067' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1068' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1142' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1143' u='r' c='start_async'/>

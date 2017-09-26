@@ -1,0 +1,2 @@
+<dec f='codebrowser/refs.h' l='305' type='int for_each_ref_in_submodule(const char * submodule, const char * prefix, each_ref_fn * fn, void * cb_data)'/>
+<def f='codebrowser/refs.c' l='1355' ll='1360' type='int for_each_ref_in_submodule(const char * submodule, const char * prefix, each_ref_fn * fn, void * cb_data)'/>

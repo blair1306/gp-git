@@ -1,0 +1,7 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='98' type='long'/>
+<offset>64</offset>
+<use f='codebrowser/diff.c' l='2509' u='w' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2601' u='w' c='builtin_diffstat'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='64' u='w' c='diff_grep'/>
+<use f='codebrowser/line-log.c' l='337' u='w' c='collect_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='55' u='r' c='xdl_get_hunk'/>

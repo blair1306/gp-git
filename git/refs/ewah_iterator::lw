@@ -1,0 +1,7 @@
+<dec f='codebrowser/ewah/ewok.h' l='140' type='eword_t'/>
+<offset>384</offset>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='322' u='w' c='read_new_rlw'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='325' u='r' c='read_new_rlw'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='346' u='r' c='ewah_iterator_next'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='356' u='r' c='ewah_iterator_next'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='370' u='w' c='ewah_iterator_init'/>

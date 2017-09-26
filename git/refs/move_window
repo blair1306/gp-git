@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/sliding_window.h' l='16' type='int move_window(struct sliding_view * view, off_t off, size_t width)'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='225' u='c' c='apply_delta'/>
+<def f='codebrowser/vcs-svn/sliding_window.c' l='46' ll='79' type='int move_window(struct sliding_view * view, off_t off, size_t width)'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='304' u='c' c='svndiff0_apply'/>

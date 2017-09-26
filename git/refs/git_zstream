@@ -1,0 +1,9 @@
+<def f='codebrowser/cache.h' l='43' ll='51'/>
+<size>160</size>
+<mbr r='git_zstream::z' o='0' t='z_stream'/>
+<mbr r='git_zstream::avail_in' o='896' t='unsigned long'/>
+<mbr r='git_zstream::avail_out' o='960' t='unsigned long'/>
+<mbr r='git_zstream::total_in' o='1024' t='unsigned long'/>
+<mbr r='git_zstream::total_out' o='1088' t='unsigned long'/>
+<mbr r='git_zstream::next_in' o='1152' t='unsigned char *'/>
+<mbr r='git_zstream::next_out' o='1216' t='unsigned char *'/>

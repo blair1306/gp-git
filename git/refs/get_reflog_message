@@ -1,0 +1,4 @@
+<dec f='codebrowser/reflog-walk.h' l='13' type='void get_reflog_message(struct strbuf * sb, struct reflog_walk_info * reflog_info)'/>
+<use f='codebrowser/pretty.c' l='1200' u='c' c='format_commit_one'/>
+<def f='codebrowser/reflog-walk.c' l='238' ll='253' type='void get_reflog_message(struct strbuf * sb, struct reflog_walk_info * reflog_info)'/>
+<use f='codebrowser/revision.c' l='2911' u='c' c='commit_match'/>

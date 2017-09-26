@@ -1,0 +1,5 @@
+<dec f='codebrowser/wt-status.h' l='96' type='uint32_t'/>
+<offset>7680</offset>
+<use f='codebrowser/wt-status.c' l='692' u='w' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='1624' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1630' u='r' c='wt_longstatus_print'/>

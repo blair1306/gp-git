@@ -1,0 +1,15 @@
+<dec f='codebrowser/pathspec.h' l='26' type='unsigned int'/>
+<offset>33</offset>
+<use f='codebrowser/archive.c' l='311' u='w' c='path_exists'/>
+<use f='codebrowser/archive.c' l='329' u='w' c='parse_pathspec_arg'/>
+<use f='codebrowser/builtin/grep.c' l='1015' u='w' c='cmd_grep'/>
+<use f='codebrowser/diff-lib.c' l='503' u='w' c='diff_cache'/>
+<use f='codebrowser/dir.c' l='394' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/dir.c' l='425' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/tree-diff.c' l='428' u='w' c='ll_diff_tree_paths'/>
+<use f='codebrowser/tree-walk.c' l='950' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='977' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1005' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1015' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1064' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1080' u='r' c='do_match'/>

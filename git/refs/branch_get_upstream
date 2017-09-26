@@ -1,0 +1,20 @@
+<dec f='codebrowser/remote.h' l='239' type='const char * branch_get_upstream(struct branch * branch, struct strbuf * err)'/>
+<doc f='codebrowser/remote.h' l='230'>/**
+ * Return the fully-qualified refname of the tracking branch for `branch`.
+ * I.e., what &quot;branch@{upstream}&quot; would give you. Returns NULL if no
+ * upstream is defined.
+ *
+ * If `err` is not NULL and no upstream is defined, a more specific error
+ * message is recorded there (if the function does not return NULL, then
+ * `err` is not touched).
+ */</doc>
+<use f='codebrowser/builtin/branch.c' l='121' u='c' c='branch_merged'/>
+<use f='codebrowser/builtin/log.c' l='1272' u='c' c='get_base_commit'/>
+<use f='codebrowser/builtin/log.c' l='1908' u='c' c='cmd_cherry'/>
+<use f='codebrowser/builtin/pull.c' l='643' u='c' c='get_upstream_branch'/>
+<use f='codebrowser/ref-filter.c' l='1356' u='c' c='populate_value'/>
+<def f='codebrowser/remote.c' l='1681' ll='1706' type='const char * branch_get_upstream(struct branch * branch, struct strbuf * err)'/>
+<use f='codebrowser/remote.c' l='1760' u='c' c='branch_get_push_1'/>
+<use f='codebrowser/remote.c' l='1767' u='c' c='branch_get_push_1'/>
+<use f='codebrowser/remote.c' l='2002' u='c' c='stat_tracking_info'/>
+<use f='codebrowser/sha1_name.c' l='1306' u='r' c='interpret_branch_name'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/grep.h' l='180' type='void grep_commit_pattern_type(enum grep_pattern_type , struct grep_opt * opt)'/>
+<use f='codebrowser/builtin/grep.c' l='908' u='c' c='cmd_grep'/>
+<def f='codebrowser/grep.c' l='219' ll='232' type='void grep_commit_pattern_type(enum grep_pattern_type pattern_type, struct grep_opt * opt)'/>
+<use f='codebrowser/revision.c' l='2360' u='c' c='setup_revisions'/>

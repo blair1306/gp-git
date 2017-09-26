@@ -1,0 +1,28 @@
+<dec f='codebrowser/cache.h' l='521' type='const char * read_gitfile_gently(const char * path, int * return_error_code)'/>
+<use f='codebrowser/builtin/clone.c' l='167' macro='1' u='c'/>
+<use f='codebrowser/builtin/init-db.c' l='324' macro='1' u='c'/>
+<use f='codebrowser/builtin/mv.c' l='87' macro='1' u='c'/>
+<use f='codebrowser/path.c' l='810' macro='1' u='c'/>
+<use f='codebrowser/path.c' l='820' macro='1' u='c'/>
+<use f='codebrowser/repository.c' l='54' macro='1' u='c'/>
+<use f='codebrowser/setup.c' l='354' u='c' c='is_nonbare_repository_dir'/>
+<def f='codebrowser/setup.c' l='556' ll='626' type='const char * read_gitfile_gently(const char * path, int * return_error_code)'/>
+<use f='codebrowser/setup.c' l='640' macro='1' u='c'/>
+<use f='codebrowser/setup.c' l='940' u='c' c='setup_git_directory_gently_1'/>
+<use f='codebrowser/setup.c' l='1195' u='c' c='resolve_gitdir_gently'/>
+<doc f='codebrowser/setup.c' l='547'>/*
+ * Try to read the location of the git directory from the .git file,
+ * return path to git directory if found.
+ *
+ * On failure, if return_error_code is not NULL, return_error_code
+ * will be set to an error code and NULL will be returned. If
+ * return_error_code is NULL the function will die instead (for most
+ * cases).
+ */</doc>
+<use f='codebrowser/sha1_file.c' l='570' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='572' macro='1' u='c'/>
+<use f='codebrowser/submodule.c' l='1227' macro='1' u='c'/>
+<use f='codebrowser/submodule.c' l='1326' macro='1' u='c'/>
+<use f='codebrowser/submodule.c' l='1410' macro='1' u='c'/>
+<use f='codebrowser/submodule.c' l='1838' macro='1' u='c'/>
+<use f='codebrowser/submodule.c' l='2036' macro='1' u='c'/>

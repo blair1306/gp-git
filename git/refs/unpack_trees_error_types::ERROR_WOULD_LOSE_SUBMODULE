@@ -1,0 +1,3 @@
+<dec f='codebrowser/unpack-trees.h' l='24' type='9'/>
+<use f='codebrowser/unpack-trees.c' l='170' u='w' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='269' u='r' c='check_submodule_move_head'/>

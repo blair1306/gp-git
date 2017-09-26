@@ -1,0 +1,9 @@
+<dec f='codebrowser/notes-merge.h' l='16' type='struct strbuf'/>
+<use f='codebrowser/builtin/notes.c' l='846' u='a' c='merge'/>
+<offset>128</offset>
+<use f='codebrowser/notes-merge.c' l='21' u='a' c='init_notes_merge_options'/>
+<use f='codebrowser/notes-merge.c' l='380' u='a' c='merge_one_change_manual'/>
+<use f='codebrowser/notes-merge.c' l='382' u='a' c='merge_one_change_manual'/>
+<use f='codebrowser/notes-merge.c' l='648' u='m' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='648' u='m' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='654' u='a' c='notes_merge'/>

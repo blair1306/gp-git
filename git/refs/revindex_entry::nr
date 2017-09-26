@@ -1,0 +1,15 @@
+<dec f='codebrowser/pack-revindex.h' l='8' type='unsigned int'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/pack-objects.c' l='375' u='r' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1455' u='r' c='check_object'/>
+<use f='codebrowser/pack-bitmap.c' l='627' u='r' c='show_objects_for_type'/>
+<use f='codebrowser/pack-bitmap.c' l='630' u='r' c='show_objects_for_type'/>
+<use f='codebrowser/pack-bitmap.c' l='1034' u='r' c='rebuild_existing_bitmaps'/>
+<use f='codebrowser/pack-revindex.c' l='142' u='w' c='create_pack_revindex'/>
+<use f='codebrowser/pack-revindex.c' l='148' u='w' c='create_pack_revindex'/>
+<use f='codebrowser/pack-revindex.c' l='156' u='w' c='create_pack_revindex'/>
+<use f='codebrowser/sha1_file.c' l='2114' u='r' c='get_delta_base_sha1'/>
+<use f='codebrowser/sha1_file.c' l='2153' u='r' c='retry_bad_packed_offset'/>
+<use f='codebrowser/sha1_file.c' l='2543' u='r' c='unpack_entry'/>
+<use f='codebrowser/sha1_file.c' l='2545' u='r' c='unpack_entry'/>
+<use f='codebrowser/sha1_file.c' l='2634' u='r' c='unpack_entry'/>

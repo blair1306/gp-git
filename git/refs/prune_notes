@@ -1,0 +1,13 @@
+<dec f='codebrowser/notes.h' l='238' type='void prune_notes(struct notes_tree * t, int flags)'/>
+<doc f='codebrowser/notes.h' l='228'>/*
+ * Remove all notes annotating non-existing objects from the given notes tree
+ *
+ * All notes in the given notes_tree that are associated with objects that no
+ * longer exist in the database, are removed from the notes tree.
+ *
+ * IMPORTANT: The changes made by prune_notes() to the given notes_tree
+ * structure are not persistent until a subsequent call to write_notes_tree()
+ * returns zero.
+ */</doc>
+<use f='codebrowser/builtin/notes.c' l='957' u='c' c='prune'/>
+<def f='codebrowser/notes.c' l='1172' ll='1189' type='void prune_notes(struct notes_tree * t, int flags)'/>

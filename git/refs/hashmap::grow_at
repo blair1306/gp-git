@@ -1,0 +1,5 @@
+<dec f='codebrowser/hashmap.h' l='196' type='unsigned int'/>
+<offset>256</offset>
+<use f='codebrowser/hashmap.c' l='82' u='w' c='alloc_table'/>
+<use f='codebrowser/hashmap.c' l='91' u='r' c='alloc_table'/>
+<use f='codebrowser/hashmap.c' l='210' u='r' c='hashmap_add'/>

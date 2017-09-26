@@ -1,0 +1,6 @@
+<dec f='codebrowser/connected.h' l='35' type='int'/>
+<use f='codebrowser/builtin/clone.c' l='651' u='w' c='update_remote_refs'/>
+<offset>224</offset>
+<doc f='codebrowser/connected.h' l='34'>/* If non-zero, show progress as we traverse the objects. */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='1484' u='w' c='execute_commands'/>
+<use f='codebrowser/connected.c' l='61' u='r' c='check_connected'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/http.h' l='78' type='size_t fread_buffer(char * ptr, size_t eltsize, size_t nmemb, void * strbuf)'/>
+<doc f='codebrowser/http.h' l='77'>/* Curl request read/write callbacks */</doc>
+<use f='codebrowser/http-push.c' l='200' c='curl_setup_http'/>
+<def f='codebrowser/http.c' l='147' ll='158' type='size_t fread_buffer(char * ptr, size_t eltsize, size_t nmemb, void * buffer_)'/>
+<use f='codebrowser/imap-send.c' l='1439' c='setup_curl'/>

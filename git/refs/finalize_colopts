@@ -1,0 +1,6 @@
+<dec f='codebrowser/column.h' l='33' type='int finalize_colopts(unsigned int * colopts, int stdout_is_tty)'/>
+<use f='codebrowser/builtin/branch.c' l='642' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/column.c' l='54' u='c' c='cmd_column'/>
+<use f='codebrowser/builtin/commit.c' l='1378' u='c' c='cmd_status'/>
+<use f='codebrowser/builtin/tag.c' l='449' u='c' c='cmd_tag'/>
+<def f='codebrowser/column.c' l='221' ll='231' type='int finalize_colopts(unsigned int * colopts, int stdout_is_tty)'/>

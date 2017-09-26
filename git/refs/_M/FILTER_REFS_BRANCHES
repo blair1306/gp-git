@@ -1,0 +1,11 @@
+<dec f='codebrowser/ref-filter.h' l='18'/>
+<use f='codebrowser/builtin/branch.c' l='119' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='206' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='227' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='579' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='606' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='660' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='771' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1797' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1815' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1982' u='c'/>

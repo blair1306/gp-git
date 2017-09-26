@@ -1,0 +1,10 @@
+<dec f='codebrowser/grep.h' l='155' type='int'/>
+<offset>1728</offset>
+<use f='codebrowser/grep.c' l='80' u='w' c='grep_config'/>
+<use f='codebrowser/grep.c' l='150' u='w' c='grep_init'/>
+<use f='codebrowser/grep.c' l='150' u='r' c='grep_init'/>
+<use f='codebrowser/grep.c' l='185' u='r' c='grep_set_pattern_type_option'/>
+<use f='codebrowser/grep.c' l='186' u='w' c='grep_set_pattern_type_option'/>
+<use f='codebrowser/grep.c' l='196' u='w' c='grep_set_pattern_type_option'/>
+<use f='codebrowser/grep.c' l='225' u='r' c='grep_commit_pattern_type'/>
+<use f='codebrowser/grep.c' l='667' u='r' c='compile_regexp'/>

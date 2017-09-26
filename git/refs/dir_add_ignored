@@ -1,0 +1,4 @@
+<dec f='codebrowser/dir.h' l='232' type='struct dir_entry * dir_add_ignored(struct dir_struct * dir, struct index_state * istate, const char * pathname, int len)'/>
+<use f='codebrowser/builtin/add.c' l='489' u='c' c='cmd_add'/>
+<def f='codebrowser/dir.c' l='1270' ll='1279' type='struct dir_entry * dir_add_ignored(struct dir_struct * dir, struct index_state * istate, const char * pathname, int len)'/>
+<use f='codebrowser/dir.c' l='1860' u='c' c='read_directory_recursive'/>

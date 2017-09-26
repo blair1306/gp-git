@@ -1,0 +1,136 @@
+<dec f='codebrowser/pathspec.h' l='30' type='char *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/add.c' l='155' u='r' c='refresh'/>
+<use f='codebrowser/builtin/add.c' l='479' u='r' c='cmd_add'/>
+<use f='codebrowser/builtin/check-ignore.c' l='104' u='r' c='check_ignore'/>
+<use f='codebrowser/builtin/diff.c' l='78' u='r' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/ls-tree.c' l='44' u='r' c='show_recursive'/>
+<use f='codebrowser/dir.c' l='161' u='r' c='common_prefix_len'/>
+<use f='codebrowser/dir.c' l='162' u='r' c='common_prefix_len'/>
+<use f='codebrowser/dir.c' l='185' u='r' c='common_prefix'/>
+<use f='codebrowser/dir.c' l='200' u='r' c='fill_directory'/>
+<use f='codebrowser/dir.c' l='273' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='1439' u='r' c='simplify_away'/>
+<use f='codebrowser/dir.c' l='1478' u='r' c='exclude_matches_pathspec'/>
+<use f='codebrowser/dir.c' l='1481' u='r' c='exclude_matches_pathspec'/>
+<use f='codebrowser/dir.c' l='1482' u='r' c='exclude_matches_pathspec'/>
+<use f='codebrowser/pathspec.c' l='444' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='445' u='r' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='468' u='r' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='481' u='r' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='482' u='r' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='499' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='499' u='r' c='pathspec_item_cmp'/>
+<use f='codebrowser/pathspec.c' l='563' u='w' c='parse_pathspec'/>
+<use f='codebrowser/pathspec.c' l='598' u='r' c='parse_pathspec'/>
+<use f='codebrowser/pathspec.c' l='636' u='w' c='copy_pathspec'/>
+<use f='codebrowser/pathspec.c' l='636' u='r' c='copy_pathspec'/>
+<use f='codebrowser/pathspec.c' l='655' u='r' c='clear_pathspec'/>
+<use f='codebrowser/submodule.c' l='388' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/submodule.c' l='390' u='r' c='die_path_inside_submodule'/>
+<use f='codebrowser/tree-diff.c' l='614' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='633' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-walk.c' l='886' u='r' c='match_wildcard_base'/>
+<use f='codebrowser/tree-walk.c' l='964' u='r' c='do_match'/>

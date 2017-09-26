@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='170' type='int valid_fetch_refspec(const char * refspec)'/>
+<use f='codebrowser/builtin/remote.c' l='194' u='c' c='add'/>
+<use f='codebrowser/builtin/remote.c' l='633' u='c' c='mv'/>
+<def f='codebrowser/remote.c' l='607' ll='614' type='int valid_fetch_refspec(const char * fetch_refspec_str)'/>

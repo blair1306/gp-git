@@ -1,0 +1,10 @@
+<dec f='include/expat.h' l='247' type='XML_Bool XML_ParserReset(XML_Parser parser, const XML_Char * encoding)'/>
+<doc f='include/expat.h' l='237'>/* Prepare a parser object to be re-used.  This is particularly
+   valuable when memory allocation overhead is disproportionatly high,
+   such as when a large number of small documnents need to be parsed.
+   All handlers are cleared from the parser, except for the
+   unknownEncodingHandler. The parser&apos;s external state is re-initialized
+   except for the values of ns and ns_triplets.
+
+   Added in Expat 1.95.3.
+*/</doc>

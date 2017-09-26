@@ -1,0 +1,6 @@
+<dec f='codebrowser/merge-recursive.h' l='41' type='int merge_trees(struct merge_options * o, struct tree * head, struct tree * merge, struct tree * common, struct tree ** result)'/>
+<doc f='codebrowser/merge-recursive.h' l='40'>/* rename-detecting three-way merge, no recursion */</doc>
+<use f='codebrowser/builtin/checkout.c' l='575' u='c' c='merge_working_tree'/>
+<def f='codebrowser/merge-recursive.c' l='1916' ll='1993' type='int merge_trees(struct merge_options * o, struct tree * head, struct tree * merge, struct tree * common, struct tree ** result)'/>
+<use f='codebrowser/merge-recursive.c' l='2082' u='c' c='merge_recursive'/>
+<use f='codebrowser/sequencer.c' l='458' u='c' c='do_recursive_merge'/>

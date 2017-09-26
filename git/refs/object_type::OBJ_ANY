@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='402' type='8'/>
+<use f='codebrowser/builtin/fsck.c' l='139' u='r' c='mark_object'/>
+<use f='codebrowser/builtin/fsck.c' l='144' u='r' c='mark_object'/>
+<use f='codebrowser/builtin/fsck.c' l='168' u='r' c='mark_object_reachable'/>
+<use f='codebrowser/builtin/index-pack.c' l='204' u='r' c='mark_link'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='195' u='r' c='check_object'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='224' u='r' c='write_rest'/>
+<use f='codebrowser/fsck.c' l='455' c='fsck_walk_tag'/>
+<use f='codebrowser/sha1_name.c' l='790' u='r' c='peel_to_type'/>
+<use f='codebrowser/sha1_name.c' l='844' u='r' c='peel_onion'/>

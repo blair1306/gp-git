@@ -1,0 +1,25 @@
+<dec f='codebrowser/cache.h' l='1238' type='int has_object_file(const struct object_id * oid)'/>
+<doc f='codebrowser/cache.h' l='1237'>/* Same as the above, except for struct object_id. */</doc>
+<use f='codebrowser/builtin/cat-file.c' l='96' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/clone.c' l='610' u='c' c='write_followtags'/>
+<use f='codebrowser/builtin/fsck.c' l='152' u='c' c='mark_object'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1068' u='c' c='update'/>
+<use f='codebrowser/builtin/remote.c' l='415' u='c' c='get_push_ref_states'/>
+<use f='codebrowser/builtin/rev-list.c' l='184' u='c' c='finish_object'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='355' u='c' c='unpack_delta_entry'/>
+<use f='codebrowser/fetch-pack.c' l='718' u='c' c='everything_local'/>
+<use f='codebrowser/fetch-pack.c' l='1084' u='c' c='update_shallow'/>
+<use f='codebrowser/http-push.c' l='1425' u='c' c='one_remote_ref'/>
+<use f='codebrowser/http-push.c' l='1625' u='c' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1632' u='c' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1866' u='c' c='cmd_main'/>
+<use f='codebrowser/notes.c' l='796' u='c' c='prune_notes_helper'/>
+<use f='codebrowser/object.c' l='256' u='c' c='parse_object'/>
+<use f='codebrowser/remote.c' l='1585' u='c' c='set_ref_status_for_push'/>
+<use f='codebrowser/revision.c' l='53' u='c' c='mark_tree_contents_uninteresting'/>
+<use f='codebrowser/revision.c' l='113' u='c' c='mark_parents_uninteresting'/>
+<def f='codebrowser/sha1_file.c' l='3470' ll='3473' type='int has_object_file(const struct object_id * oid)'/>
+<use f='codebrowser/shallow.c' l='399' u='c' c='prepare_shallow_info'/>
+<use f='codebrowser/shallow.c' l='426' u='c' c='remove_nonexistent_theirs_shallow'/>
+<use f='codebrowser/upload-pack.c' l='297' u='c' c='got_oid'/>
+<use f='codebrowser/walker.c' l='146' u='c' c='process'/>

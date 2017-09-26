@@ -1,0 +1,10 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='49' type='int xdl_recs_cmp(diffdata_t * dd1, long off1, long lim1, diffdata_t * dd2, long off2, long lim2, long * kvdf, long * kvdb, int need_min, xdalgoenv_t * xenv)'/>
+<def f='codebrowser/xdiff/xdiffi.c' l='268' ll='321' type='int xdl_recs_cmp(diffdata_t * dd1, long off1, long lim1, diffdata_t * dd2, long off2, long lim2, long * kvdf, long * kvdb, int need_min, xdalgoenv_t * xenv)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='311' u='c' c='xdl_recs_cmp'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='313' u='c' c='xdl_recs_cmp'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='372' u='c' c='xdl_do_diff'/>
+<doc f='codebrowser/xdiff/xdiffi.c' l='263'>/*
+ * Rule: &quot;Divide et Impera&quot;. Recursively split the box in sub-boxes by calling
+ * the box splitting function. Note that the real job (marking changed lines)
+ * is done in the two boundary reaching checks.
+ */</doc>

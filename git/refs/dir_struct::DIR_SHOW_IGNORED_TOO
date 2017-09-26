@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='153' type='32'/>
+<use f='codebrowser/builtin/clean.c' l='951' u='r' c='cmd_clean'/>
+<use f='codebrowser/dir.c' l='1597' u='r' c='treat_one_path'/>
+<use f='codebrowser/dir.c' l='1826' u='r' c='read_directory_recursive'/>
+<use f='codebrowser/dir.c' l='1856' u='r' c='read_directory_recursive'/>
+<use f='codebrowser/dir.c' l='2047' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2120' u='r' c='read_directory'/>
+<use f='codebrowser/wt-status.c' l='664' u='r' c='wt_status_collect_untracked'/>

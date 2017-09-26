@@ -1,0 +1,34 @@
+<def f='codebrowser/unpack-trees.h' l='35' ll='76'/>
+<size>752</size>
+<mbr r='unpack_trees_options::reset' o='0' t='unsigned int'/>
+<mbr r='unpack_trees_options::merge' o='32' t='unsigned int'/>
+<mbr r='unpack_trees_options::update' o='64' t='unsigned int'/>
+<mbr r='unpack_trees_options::index_only' o='96' t='unsigned int'/>
+<mbr r='unpack_trees_options::nontrivial_merge' o='128' t='unsigned int'/>
+<mbr r='unpack_trees_options::trivial_merges_only' o='160' t='unsigned int'/>
+<mbr r='unpack_trees_options::verbose_update' o='192' t='unsigned int'/>
+<mbr r='unpack_trees_options::aggressive' o='224' t='unsigned int'/>
+<mbr r='unpack_trees_options::skip_unmerged' o='256' t='unsigned int'/>
+<mbr r='unpack_trees_options::initial_checkout' o='288' t='unsigned int'/>
+<mbr r='unpack_trees_options::diff_index_cached' o='320' t='unsigned int'/>
+<mbr r='unpack_trees_options::debug_unpack' o='352' t='unsigned int'/>
+<mbr r='unpack_trees_options::skip_sparse_checkout' o='384' t='unsigned int'/>
+<mbr r='unpack_trees_options::gently' o='416' t='unsigned int'/>
+<mbr r='unpack_trees_options::exiting_early' o='448' t='unsigned int'/>
+<mbr r='unpack_trees_options::show_all_errors' o='480' t='unsigned int'/>
+<mbr r='unpack_trees_options::dry_run' o='512' t='unsigned int'/>
+<mbr r='unpack_trees_options::prefix' o='576' t='const char *'/>
+<mbr r='unpack_trees_options::cache_bottom' o='640' t='int'/>
+<mbr r='unpack_trees_options::dir' o='704' t='struct dir_struct *'/>
+<mbr r='unpack_trees_options::pathspec' o='768' t='struct pathspec *'/>
+<mbr r='unpack_trees_options::fn' o='832' t='merge_fn_t'/>
+<mbr r='unpack_trees_options::msgs' o='896' t='const char *[10]'/>
+<mbr r='unpack_trees_options::unpack_rejects' o='1536' t='struct string_list [10]'/>
+<mbr r='unpack_trees_options::head_idx' o='4096' t='int'/>
+<mbr r='unpack_trees_options::merge_size' o='4128' t='int'/>
+<mbr r='unpack_trees_options::df_conflict_entry' o='4160' t='struct cache_entry *'/>
+<mbr r='unpack_trees_options::unpack_data' o='4224' t='void *'/>
+<mbr r='unpack_trees_options::dst_index' o='4288' t='struct index_state *'/>
+<mbr r='unpack_trees_options::src_index' o='4352' t='struct index_state *'/>
+<mbr r='unpack_trees_options::result' o='4416' t='struct index_state'/>
+<mbr r='unpack_trees_options::el' o='5952' t='struct exclude_list *'/>

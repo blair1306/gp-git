@@ -1,0 +1,9 @@
+<dec f='codebrowser/builtin/fetch.c' l='31' type='1'/>
+<use f='codebrowser/builtin/fetch.c' l='41'/>
+<use f='codebrowser/builtin/fetch.c' l='424' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='1089' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1122' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1148' u='r' c='do_fetch'/>
+<dec f='codebrowser/builtin/remote.c' l='103' type='1'/>
+<use f='codebrowser/builtin/remote.c' l='150' c='add'/>
+<use f='codebrowser/builtin/remote.c' l='217' u='r' c='add'/>

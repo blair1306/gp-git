@@ -1,0 +1,5 @@
+<dec f='include/curl/curl.h' l='2121'/>
+<use f='include/curl/curl.h' l='2154' u='c'/>
+<use f='include/curl/curl.h' l='2155' u='c'/>
+<use f='include/curl/curl.h' l='2161' u='c'/>
+<use f='include/curl/curl.h' l='2170' u='c'/>

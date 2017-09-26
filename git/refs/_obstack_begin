@@ -1,0 +1,2 @@
+<dec f='codebrowser/compat/obstack.h' l='183' type='int _obstack_begin(struct obstack * , int , int , void *(*)(long) , void (*)(void *) )'/>
+<use f='codebrowser/kwset.c' l='95' macro='1' u='c'/>

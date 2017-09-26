@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='274' type='void add_pending_oid(struct rev_info * revs, const char * name, const struct object_id * oid, unsigned int flags)'/>
+<use f='codebrowser/builtin/am.c' l='1589' u='c' c='fall_back_threeway'/>
+<use f='codebrowser/builtin/checkout.c' l='711' u='c' c='add_pending_uninteresting_ref'/>
+<use f='codebrowser/builtin/checkout.c' l='797' u='c' c='orphaned_commit_warning'/>
+<def f='codebrowser/revision.c' l='204' ll='209' type='void add_pending_oid(struct rev_info * revs, const char * name, const struct object_id * oid, unsigned int flags)'/>
+<use f='codebrowser/revision.c' l='1160' u='c' c='handle_one_ref'/>

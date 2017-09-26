@@ -1,0 +1,11 @@
+<dec f='codebrowser/submodule.h' l='36' type='int is_gitmodules_unmerged(const struct index_state * istate)'/>
+<def f='codebrowser/submodule.c' l='34' ll='48' type='int is_gitmodules_unmerged(const struct index_state * istate)'/>
+<use f='codebrowser/submodule.c' l='85' u='c' c='update_path_in_gitmodules'/>
+<use f='codebrowser/submodule.c' l='119' u='c' c='remove_path_from_gitmodules'/>
+<use f='codebrowser/submodule.c' l='170' u='c' c='set_diffopt_flags_from_submodule_config'/>
+<use f='codebrowser/submodule.c' l='249' u='c' c='repo_read_gitmodules'/>
+<doc f='codebrowser/submodule.c' l='29'>/*
+ * Check if the .gitmodules file is unmerged. Parsing of the .gitmodules file
+ * will be disabled because we can&apos;t guess what might be configured in
+ * .gitmodules unless the user resolves the conflict.
+ */</doc>

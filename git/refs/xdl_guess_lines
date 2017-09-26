@@ -1,0 +1,4 @@
+<dec f='codebrowser/xdiff/xutils.h' l='34' type='long xdl_guess_lines(mmfile_t * mf, long sample)'/>
+<use f='codebrowser/xdiff/xprepare.c' l='279' u='c' c='xdl_prepare_env'/>
+<use f='codebrowser/xdiff/xprepare.c' l='280' u='c' c='xdl_prepare_env'/>
+<def f='codebrowser/xdiff/xutils.c' l='125' ll='144' type='long xdl_guess_lines(mmfile_t * mf, long sample)'/>

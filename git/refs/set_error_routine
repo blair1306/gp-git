@@ -1,0 +1,7 @@
+<dec f='codebrowser/git-compat-util.h' l='451' type='void set_error_routine(void (*)(const char *, struct __va_list_tag *) routine)'/>
+<use f='codebrowser/apply.c' l='155' u='c' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='4901' u='c' c='apply_all_patches'/>
+<use f='codebrowser/run-command.c' l='352' u='c' c='child_err_spew'/>
+<use f='codebrowser/run-command.c' l='378' u='c' c='child_err_spew'/>
+<use f='codebrowser/run-command.c' l='670' u='c' c='start_command'/>
+<def f='codebrowser/usage.c' l='79' ll='82' type='void set_error_routine(void (*)(const char *, struct __va_list_tag *) routine)'/>

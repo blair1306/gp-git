@@ -1,0 +1,4 @@
+<def f='codebrowser/commit.h' l='362' ll='365'/>
+<size>8</size>
+<mbr r='merge_remote_desc::obj' o='0' t='struct object *'/>
+<mbr r='merge_remote_desc::name' o='64' t='char []'/>

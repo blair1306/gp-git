@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs.h' l='292' type='int for_each_fullref_in(const char * prefix, each_ref_fn * fn, void * cb_data, unsigned int broken)'/>
+<use f='codebrowser/ref-filter.c' l='1718' u='c' c='for_each_fullref_in_pattern'/>
+<use f='codebrowser/ref-filter.c' l='1723' u='c' c='for_each_fullref_in_pattern'/>
+<use f='codebrowser/ref-filter.c' l='1734' u='c' c='for_each_fullref_in_pattern'/>
+<use f='codebrowser/ref-filter.c' l='1739' u='c' c='for_each_fullref_in_pattern'/>
+<use f='codebrowser/ref-filter.c' l='1983' u='c' c='filter_refs'/>
+<use f='codebrowser/ref-filter.c' l='1985' u='c' c='filter_refs'/>
+<use f='codebrowser/ref-filter.c' l='1987' u='c' c='filter_refs'/>
+<def f='codebrowser/refs.c' l='1345' ll='1353' type='int for_each_fullref_in(const char * prefix, each_ref_fn * fn, void * cb_data, unsigned int broken)'/>

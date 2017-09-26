@@ -1,0 +1,4 @@
+<dec f='codebrowser/builtin/receive-pack.c' l='37' type='4'/>
+<use f='codebrowser/builtin/receive-pack.c' l='104' u='r' c='parse_deny_action'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1060' c='update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1089' c='update'/>

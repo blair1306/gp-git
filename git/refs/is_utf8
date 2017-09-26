@@ -1,0 +1,3 @@
+<dec f='codebrowser/utf8.h' l='10' type='int is_utf8(const char * text)'/>
+<use f='codebrowser/archive-zip.c' l='309' u='c' c='write_zip_entry'/>
+<def f='codebrowser/utf8.c' l='228' ll='240' type='int is_utf8(const char * text)'/>

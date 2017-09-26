@@ -1,0 +1,3 @@
+<dec f='codebrowser/merge-blobs.h' l='6' type='void * merge_blobs(const char * , struct blob * , struct blob * , struct blob * , unsigned long * )'/>
+<use f='codebrowser/builtin/merge-tree.c' l='77' u='c' c='result'/>
+<def f='codebrowser/merge-blobs.c' l='51' ll='92' type='void * merge_blobs(const char * path, struct blob * base, struct blob * our, struct blob * their, unsigned long * size)'/>

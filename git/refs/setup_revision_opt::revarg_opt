@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='245' type='unsigned int'/>
+<offset>224</offset>
+<use f='codebrowser/builtin/log.c' l='460' u='w' c='cmd_whatchanged'/>
+<use f='codebrowser/builtin/log.c' l='695' u='w' c='cmd_log'/>
+<use f='codebrowser/builtin/log.c' l='1519' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/revision.c' l='2230' u='r' c='setup_revisions'/>

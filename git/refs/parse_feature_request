@@ -1,0 +1,17 @@
+<dec f='codebrowser/connect.h' l='12' type='int parse_feature_request(const char * features, const char * feature)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1600' u='c' c='read_head_info'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1602' u='c' c='read_head_info'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1604' u='c' c='read_head_info'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1607' u='c' c='read_head_info'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1610' u='c' c='read_head_info'/>
+<def f='codebrowser/connect.c' l='240' ll='243' type='int parse_feature_request(const char * feature_list, const char * feature)'/>
+<use f='codebrowser/upload-pack.c' l='804' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='806' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='808' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='810' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='812' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='814' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='816' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='818' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='820' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='822' u='c' c='receive_needs'/>

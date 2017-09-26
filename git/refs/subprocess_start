@@ -1,0 +1,4 @@
+<dec f='codebrowser/sub-process.h' l='57' type='int subprocess_start(struct hashmap * hashmap, struct subprocess_entry * entry, const char * cmd, subprocess_start_fn startfn)'/>
+<use f='codebrowser/convert.c' l='579' u='c' c='apply_multi_file_filter'/>
+<doc f='codebrowser/sub-process.h' l='56'>/* Start a subprocess and add it to the subprocess hashmap. */</doc>
+<def f='codebrowser/sub-process.c' l='75' ll='110' type='int subprocess_start(struct hashmap * hashmap, struct subprocess_entry * entry, const char * cmd, subprocess_start_fn startfn)'/>

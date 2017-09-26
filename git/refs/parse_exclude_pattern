@@ -1,0 +1,4 @@
+<dec f='codebrowser/dir.h' l='259' type='void parse_exclude_pattern(const char ** string, int * patternlen, unsigned int * flags, int * nowildcardlen)'/>
+<use f='codebrowser/attr.c' l='407' u='c' c='parse_attr_line'/>
+<def f='codebrowser/dir.c' l='539' ll='575' type='void parse_exclude_pattern(const char ** pattern, int * patternlen, unsigned int * flags, int * nowildcardlen)'/>
+<use f='codebrowser/dir.c' l='585' u='c' c='add_exclude'/>

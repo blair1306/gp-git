@@ -1,0 +1,28 @@
+<dec f='codebrowser/strbuf.h' l='416' type='int strbuf_getline(struct strbuf * , FILE * )'/>
+<doc f='codebrowser/strbuf.h' l='409'>/*
+ * Similar to strbuf_getline_lf(), but additionally treats a CR that
+ * comes immediately before the LF as part of the terminator.
+ * This is the most friendly version to be used to read &quot;text&quot; files
+ * that can come from platforms whose native text format is CRLF
+ * terminated.
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='606' u='c' c='is_mail'/>
+<use f='codebrowser/builtin/am.c' l='653' u='c' c='detect_patch_format'/>
+<use f='codebrowser/builtin/am.c' l='674' u='c' c='detect_patch_format'/>
+<use f='codebrowser/builtin/am.c' l='676' u='c' c='detect_patch_format'/>
+<use f='codebrowser/builtin/cat-file.c' l='495' u='c' c='batch_objects'/>
+<use f='codebrowser/builtin/clone.c' l='367' u='c' c='copy_alternates'/>
+<use f='codebrowser/builtin/column.c' l='55' u='c' c='cmd_column'/>
+<use f='codebrowser/builtin/grep.c' l='712' u='c' c='file_callback'/>
+<use f='codebrowser/builtin/hash-object.c' l='65' u='c' c='hash_stdin_paths'/>
+<use f='codebrowser/builtin/rev-parse.c' l='422' u='c' c='cmd_parseopt'/>
+<use f='codebrowser/builtin/rev-parse.c' l='435' u='c' c='cmd_parseopt'/>
+<use f='codebrowser/builtin/send-pack.c' l='221' u='c' c='cmd_send_pack'/>
+<use f='codebrowser/ident.c' l='80' u='c' c='add_mailname_host'/>
+<use f='codebrowser/remote.c' l='268' u='c' c='read_remotes_file'/>
+<use f='codebrowser/revision.c' l='1631' u='c' c='read_pathspec_from_stdin'/>
+<use f='codebrowser/revision.c' l='1648' u='c' c='read_revisions_from_stdin'/>
+<use f='codebrowser/sha1_file.c' l='506' u='c' c='add_to_alternates_file'/>
+<def f='codebrowser/strbuf.c' l='548' ll='558' type='int strbuf_getline(struct strbuf * sb, FILE * fp)'/>
+<use f='codebrowser/t/helper/test-sha1-array.c' l='15' u='c' c='cmd_main'/>
+<use f='codebrowser/transport-helper.c' l='57' u='c' c='recvline_fh'/>

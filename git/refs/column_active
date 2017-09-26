@@ -1,0 +1,9 @@
+<def f='codebrowser/column.h' l='34' ll='37' type='int column_active(unsigned int colopts)'/>
+<use f='codebrowser/builtin/branch.c' l='421' u='c' c='print_ref_list'/>
+<use f='codebrowser/builtin/branch.c' l='644' macro='1' u='c'/>
+<use f='codebrowser/builtin/tag.c' l='451' macro='1' u='c'/>
+<use f='codebrowser/builtin/tag.c' l='461' u='c' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='469' u='c' c='cmd_tag'/>
+<use f='codebrowser/column.c' l='204' u='c' c='print_columns'/>
+<use f='codebrowser/wt-status.c' l='892' u='c' c='wt_longstatus_print_other'/>
+<use f='codebrowser/wt-status.c' l='902' u='c' c='wt_longstatus_print_other'/>

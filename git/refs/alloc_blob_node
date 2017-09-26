@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1919' type='void * alloc_blob_node()'/>
+<doc f='codebrowser/cache.h' l='1918'>/* alloc.c */</doc>
+<def f='codebrowser/alloc.c' l='52' ll='57' type='void * alloc_blob_node()'/>
+<use f='codebrowser/blob.c' l='10' u='c' c='lookup_blob'/>

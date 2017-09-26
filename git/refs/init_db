@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='568' type='int init_db(const char * git_dir, const char * real_git_dir, const char * template_dir, unsigned int flags)'/>
+<use f='codebrowser/builtin/clone.c' l='1023' u='c' c='cmd_clone'/>
+<def f='codebrowser/builtin/init-db.c' l='337' ll='416' type='int init_db(const char * git_dir, const char * real_git_dir, const char * template_dir, unsigned int flags)'/>
+<use f='codebrowser/builtin/init-db.c' l='583' u='c' c='cmd_init_db'/>

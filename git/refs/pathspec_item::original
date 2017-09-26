@@ -1,0 +1,54 @@
+<dec f='codebrowser/pathspec.h' l='31' type='char *'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/add.c' l='174' u='r' c='run_add_interactive'/>
+<use f='codebrowser/builtin/add.c' l='493' u='r' c='cmd_add'/>
+<use f='codebrowser/builtin/check-ignore.c' l='111' u='r' c='check_ignore'/>
+<use f='codebrowser/builtin/rm.c' l='297' u='r' c='cmd_rm'/>
+<use f='codebrowser/dir.c' l='502' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='502' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='503' u='r' c='report_path_error'/>
+<use f='codebrowser/dir.c' l='513' u='r' c='report_path_error'/>
+<use f='codebrowser/pathspec.c' l='460' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='462' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='564' u='w' c='parse_pathspec'/>
+<use f='codebrowser/pathspec.c' l='637' u='w' c='copy_pathspec'/>
+<use f='codebrowser/pathspec.c' l='637' u='r' c='copy_pathspec'/>
+<use f='codebrowser/pathspec.c' l='656' u='r' c='clear_pathspec'/>
+<use f='codebrowser/submodule.c' l='396' u='r' c='die_path_inside_submodule'/>

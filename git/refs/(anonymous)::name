@@ -1,0 +1,4 @@
+<dec f='include/openssl/conf.h' l='76' type='char *'/>
+<offset>64</offset>
+<dec f='include/expat.h' l='1026' type='const XML_LChar *'/>
+<offset>64</offset>

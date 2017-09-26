@@ -1,0 +1,5 @@
+<dec f='codebrowser/submodule-config.h' l='30' type='int parse_submodule_fetchjobs(const char * var, const char * value)'/>
+<use f='codebrowser/builtin/fetch.c' l='72' u='c' c='git_fetch_config'/>
+<use f='codebrowser/builtin/fetch.c' l='85' u='c' c='gitmodules_fetch_config'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='968' u='c' c='gitmodules_update_clone_config'/>
+<def f='codebrowser/submodule-config.c' l='257' ll='263' type='int parse_submodule_fetchjobs(const char * var, const char * value)'/>

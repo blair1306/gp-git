@@ -1,0 +1,12 @@
+<dec f='codebrowser/notes.h' l='44' type='struct int_node *'/>
+<offset>0</offset>
+<use f='codebrowser/notes.c' l='220' u='r' c='note_tree_remove'/>
+<use f='codebrowser/notes.c' l='1019' u='w' c='init_notes'/>
+<use f='codebrowser/notes.c' l='1039' u='r' c='init_notes'/>
+<use f='codebrowser/notes.c' l='1104' u='r' c='add_note'/>
+<use f='codebrowser/notes.c' l='1116' u='r' c='remove_note'/>
+<use f='codebrowser/notes.c' l='1131' u='r' c='get_note'/>
+<use f='codebrowser/notes.c' l='1141' u='r' c='for_each_note'/>
+<use f='codebrowser/notes.c' l='1195' u='r' c='free_notes'/>
+<use f='codebrowser/notes.c' l='1196' u='r' c='free_notes'/>
+<use f='codebrowser/notes.c' l='1197' u='r' c='free_notes'/>

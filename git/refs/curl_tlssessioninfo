@@ -1,0 +1,7 @@
+<def f='include/curl/curl.h' l='2113' ll='2116'/>
+<size>16</size>
+<doc f='include/curl/curl.h' l='2110'>/* Information about the SSL library used and the respective internal SSL
+   handle, which can be used to obtain further information regarding the
+   connection. Asked for with CURLINFO_TLS_SESSION. */</doc>
+<mbr r='curl_tlssessioninfo::backend' o='0' t='curl_sslbackend'/>
+<mbr r='curl_tlssessioninfo::internals' o='64' t='void *'/>

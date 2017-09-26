@@ -1,0 +1,7 @@
+<dec f='codebrowser/strbuf.h' l='176' type='int strbuf_reencode(struct strbuf * sb, const char * from, const char * to)'/>
+<doc f='codebrowser/strbuf.h' l='172'>/**
+ * Replace the contents of the strbuf with a reencoded form.  Returns -1
+ * on error, 0 on success.
+ */</doc>
+<use f='codebrowser/remote-curl.c' l='257' u='c' c='show_http_message'/>
+<def f='codebrowser/strbuf.c' l='94' ll='108' type='int strbuf_reencode(struct strbuf * sb, const char * from, const char * to)'/>

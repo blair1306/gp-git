@@ -1,0 +1,10 @@
+<dec f='codebrowser/refs.h' l='395' type='int refs_delete_refs(struct ref_store * refs, const char * msg, struct string_list * refnames, unsigned int flags)'/>
+<doc f='codebrowser/refs.h' l='389'>/*
+ * Delete the specified references. If there are any problems, emit
+ * errors but attempt to keep going (i.e., the deletes are not done in
+ * an all-or-nothing transaction). msg and flags are passed through to
+ * ref_transaction_delete().
+ */</doc>
+<def f='codebrowser/refs.c' l='2044' ll='2048' type='int refs_delete_refs(struct ref_store * refs, const char * msg, struct string_list * refnames, unsigned int flags)'/>
+<use f='codebrowser/refs.c' l='2053' u='c' c='delete_refs'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='102' u='c' c='cmd_delete_refs'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/transport.h' l='115' type='char *'/>
+<offset>832</offset>
+<use f='codebrowser/connected.c' l='42' u='r' c='check_connected'/>
+<use f='codebrowser/connected.c' l='43' u='r' c='check_connected'/>
+<use f='codebrowser/connected.c' l='45' u='r' c='check_connected'/>
+<use f='codebrowser/transport-helper.c' l='409' u='r' c='fetch_with_fetch'/>
+<use f='codebrowser/transport-helper.c' l='412' u='w' c='fetch_with_fetch'/>
+<use f='codebrowser/transport.c' l='243' u='a' c='fetch_refs_via_pack'/>
+<use f='codebrowser/transport.c' l='1147' u='r' c='transport_unlock_pack'/>
+<use f='codebrowser/transport.c' l='1148' u='r' c='transport_unlock_pack'/>
+<use f='codebrowser/transport.c' l='1149' u='r' c='transport_unlock_pack'/>
+<use f='codebrowser/transport.c' l='1149' u='w' c='transport_unlock_pack'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='223' type='const char *'/>
+<offset>16960</offset>
+<use f='codebrowser/log-tree.c' l='871' u='r' c='log_tree_commit'/>
+<use f='codebrowser/log-tree.c' l='879' u='r' c='log_tree_commit'/>
+<use f='codebrowser/revision.c' l='1922' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1926' u='w' c='handle_revision_opt'/>

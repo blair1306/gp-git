@@ -1,0 +1,2 @@
+<dec f='codebrowser/pack-objects.h' l='38' type='0'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1608' u='r' c='break_delta_chains'/>

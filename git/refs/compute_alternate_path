@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1547' type='char * compute_alternate_path(const char * path, struct strbuf * err)'/>
+<use f='codebrowser/builtin/clone.c' l='318' u='c' c='add_one_reference'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='558' u='c' c='add_possible_reference_from_superproject'/>
+<def f='codebrowser/sha1_file.c' l='552' ll='619' type='char * compute_alternate_path(const char * path, struct strbuf * err)'/>
+<doc f='codebrowser/sha1_file.c' l='546'>/*
+ * Compute the exact path an alternate is at and returns it. In case of
+ * error NULL is returned and the human readable error is added to `err`
+ * `path` may be relative and should point to $GITDIR.
+ * `err` must not be null.
+ */</doc>

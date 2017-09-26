@@ -1,0 +1,3 @@
+<dec f='codebrowser/ewah/ewok.h' l='192' type='void ewah_add_dirty_words(struct ewah_bitmap * self, const eword_t * buffer, size_t number, int negate)'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='129' ll='163' type='void ewah_add_dirty_words(struct ewah_bitmap * self, const eword_t * buffer, size_t number, int negate)'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='99' u='c' c='rlwit_discharge'/>

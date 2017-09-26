@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='42' type='int git_config_from_blob_oid(config_fn_t fn, const char * name, const struct object_id * oid, void * data)'/>
+<def f='codebrowser/config.c' l='1472' ll='1494' type='int git_config_from_blob_oid(config_fn_t fn, const char * name, const struct object_id * oid, void * data)'/>
+<use f='codebrowser/config.c' l='1504' u='c' c='git_config_from_blob_ref'/>
+<use f='codebrowser/submodule.c' l='267' u='c' c='gitmodules_config_oid'/>

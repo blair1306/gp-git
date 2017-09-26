@@ -1,0 +1,7 @@
+<dec f='codebrowser/submodule-config.c' l='18' type='struct hashmap'/>
+<use f='codebrowser/submodule-config.c' l='68' u='a' c='submodule_cache_init'/>
+<use f='codebrowser/submodule-config.c' l='99' u='a' c='submodule_cache_clear'/>
+<use f='codebrowser/submodule-config.c' l='124' u='a' c='cache_put_path'/>
+<use f='codebrowser/submodule-config.c' l='136' u='a' c='cache_remove_path'/>
+<use f='codebrowser/submodule-config.c' l='165' u='a' c='cache_lookup_path'/>
+<offset>0</offset>

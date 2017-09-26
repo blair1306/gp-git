@@ -1,0 +1,10 @@
+xmks_tempfile|xmks_tempfile
+xmmap|xmmap
+xmmap_gently|xmmap_gently
+xmks_tempfile_m|xmks_tempfile_m
+xmalloc|xmalloc
+xmallocz|xmallocz
+xmallocz_gently|xmallocz_gently
+xmemdupz|xmemdupz
+xmkstemp|xmkstemp
+xmkstemp_mode|xmkstemp_mode

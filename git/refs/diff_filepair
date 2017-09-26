@@ -1,0 +1,11 @@
+<def f='codebrowser/diffcore.h' l='65' ll='75'/>
+<size>24</size>
+<mbr r='diff_filepair::one' o='0' t='struct diff_filespec *'/>
+<mbr r='diff_filepair::two' o='64' t='struct diff_filespec *'/>
+<mbr r='diff_filepair::score' o='128' t='unsigned short'/>
+<mbr r='diff_filepair::status' o='144' t='char'/>
+<mbr r='diff_filepair::broken_pair' o='152' t='unsigned int'/>
+<mbr r='diff_filepair::renamed_pair' o='153' t='unsigned int'/>
+<mbr r='diff_filepair::is_unmerged' o='154' t='unsigned int'/>
+<mbr r='diff_filepair::done_skip_stat_unmatch' o='155' t='unsigned int'/>
+<mbr r='diff_filepair::skip_stat_unmatch_result' o='156' t='unsigned int'/>

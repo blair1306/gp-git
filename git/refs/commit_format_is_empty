@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='188' type='int commit_format_is_empty(enum cmit_fmt )'/>
+<use f='codebrowser/combine-diff.c' l='1409' u='c' c='diff_tree_combined'/>
+<use f='codebrowser/log-tree.c' l='717' u='c' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='745' u='c' c='log_tree_diff_flush'/>
+<def f='codebrowser/pretty.c' l='30' ll='33' type='int commit_format_is_empty(enum cmit_fmt fmt)'/>

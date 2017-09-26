@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs.h' l='365' type='int read_ref_at(const char * refname, unsigned int flags, timestamp_t at_time, int cnt, unsigned char * sha1, char ** msg, timestamp_t * cutoff_time, int * cutoff_tz, int * cutoff_cnt)'/>
+<doc f='codebrowser/refs.h' l='364'>/** Reads log for the value of ref during at_time. **/</doc>
+<use f='codebrowser/builtin/show-branch.c' l='734' u='c' c='cmd_show_branch'/>
+<use f='codebrowser/builtin/show-branch.c' l='746' u='c' c='cmd_show_branch'/>
+<def f='codebrowser/refs.c' l='820' ll='850' type='int read_ref_at(const char * refname, unsigned int flags, timestamp_t at_time, int cnt, unsigned char * sha1, char ** msg, timestamp_t * cutoff_time, int * cutoff_tz, int * cutoff_cnt)'/>
+<use f='codebrowser/sha1_name.c' l='699' u='c' c='get_oid_basic'/>

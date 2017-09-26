@@ -1,0 +1,5 @@
+<dec f='codebrowser/transport.h' l='219' type='void transport_set_verbosity(struct transport * transport, int verbosity, int force_progress)'/>
+<use f='codebrowser/builtin/clone.c' l='1063' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='1029' u='c' c='prepare_transport'/>
+<use f='codebrowser/builtin/push.c' l='319' u='c' c='push_with_options'/>
+<def f='codebrowser/transport.c' l='863' ll='884' type='void transport_set_verbosity(struct transport * transport, int verbosity, int force_progress)'/>

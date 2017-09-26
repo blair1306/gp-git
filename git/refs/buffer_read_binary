@@ -1,0 +1,6 @@
+<dec f='codebrowser/vcs-svn/line_buffer.h' l='25' type='size_t buffer_read_binary(struct line_buffer * buf, struct strbuf * sb, size_t len)'/>
+<use f='codebrowser/t/helper/test-line-buffer.c' l='25' u='c' c='handle_command'/>
+<def f='codebrowser/vcs-svn/line_buffer.c' l='94' ll='98' type='size_t buffer_read_binary(struct line_buffer * buf, struct strbuf * sb, size_t size)'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='28' u='c' c='read_to_fill_or_whine'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='83' u='c' c='read_chunk'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='181' u='c' c='read_props'/>

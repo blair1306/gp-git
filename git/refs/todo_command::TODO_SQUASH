@@ -1,0 +1,4 @@
+<dec f='codebrowser/sequencer.c' l='763' type='5'/>
+<use f='codebrowser/sequencer.c' l='803' u='r' c='is_fixup'/>
+<use f='codebrowser/sequencer.c' l='877' u='r' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='2024' u='r' c='pick_commits'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1907' type='int check_pager_config(const char * cmd)'/>
+<use f='codebrowser/diff.c' l='5295' u='c' c='setup_diff_pager'/>
+<use f='codebrowser/git.c' l='40' u='c' c='setup_auto_pager'/>
+<use f='codebrowser/git.c' l='322' u='c' c='run_builtin'/>
+<use f='codebrowser/git.c' l='563' u='c' c='execv_dashed_external'/>
+<def f='codebrowser/pager.c' l='210' ll='223' type='int check_pager_config(const char * cmd)'/>
+<doc f='codebrowser/pager.c' l='209'>/* returns 0 for &quot;no pager&quot;, 1 for &quot;use pager&quot;, and -1 for &quot;not specified&quot; */</doc>

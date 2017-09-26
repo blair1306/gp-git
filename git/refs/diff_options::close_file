@@ -1,0 +1,16 @@
+<dec f='codebrowser/diff.h' l='177' type='int'/>
+<offset>1920</offset>
+<use f='codebrowser/builtin/add.c' l='224' u='w' c='edit_patch'/>
+<use f='codebrowser/builtin/am.c' l='1406' u='w' c='write_commit_patch'/>
+<use f='codebrowser/builtin/am.c' l='1436' u='w' c='write_index_patch'/>
+<use f='codebrowser/builtin/log.c' l='257' u='r' c='log_show_early'/>
+<use f='codebrowser/builtin/log.c' l='260' u='w' c='log_show_early'/>
+<use f='codebrowser/builtin/log.c' l='351' u='r' c='cmd_log_walk'/>
+<use f='codebrowser/builtin/log.c' l='367' u='w' c='cmd_log_walk'/>
+<use f='codebrowser/diff.c' l='4066' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='4797' u='r' c='diff_flush'/>
+<use f='codebrowser/diff.c' l='4800' u='w' c='diff_flush'/>
+<use f='codebrowser/diff.c' l='4836' u='r' c='diff_flush'/>
+<use f='codebrowser/log-tree.c' l='860' u='r' c='log_tree_commit'/>
+<use f='codebrowser/log-tree.c' l='865' u='w' c='log_tree_commit'/>
+<use f='codebrowser/wt-status.c' l='964' u='w' c='wt_longstatus_print_verbose'/>

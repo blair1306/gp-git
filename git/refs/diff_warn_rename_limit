@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='326' type='void diff_warn_rename_limit(const char * varname, int needed, int degraded_cc)'/>
+<def f='codebrowser/diff.c' l='4717' ll='4727' type='void diff_warn_rename_limit(const char * varname, int needed, int degraded_cc)'/>
+<use f='codebrowser/diff.c' l='5029' u='c' c='diff_result_code'/>
+<use f='codebrowser/merge-recursive.c' l='2098' u='c' c='merge_recursive'/>

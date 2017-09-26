@@ -1,0 +1,5 @@
+<dec f='codebrowser/wt-status.h' l='66' type='enum commit_whence'/>
+<offset>448</offset>
+<use f='codebrowser/builtin/commit.c' l='192' u='w' c='determine_whence'/>
+<use f='codebrowser/wt-status.c' l='176' u='r' c='wt_longstatus_print_unmerged_header'/>
+<use f='codebrowser/wt-status.c' l='203' u='r' c='wt_longstatus_print_cached_header'/>

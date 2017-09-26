@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/fcntl-linux.h' l='59'/>
+<use f='codebrowser/refs/files-backend.c' l='1443' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1482' u='c'/>
+<use f='codebrowser/sequencer.c' l='1711' u='c'/>
+<use f='codebrowser/trace.c' l='62' u='c'/>

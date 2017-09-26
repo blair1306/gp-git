@@ -1,0 +1,25 @@
+<dec f='codebrowser/string-list.h' l='103' type='void string_list_sort(struct string_list * list)'/>
+<use f='codebrowser/apply.c' l='4602' u='c' c='write_out_results'/>
+<use f='codebrowser/builtin/clone.c' l='992' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1263' u='c' c='check_aliased_updates'/>
+<use f='codebrowser/builtin/remote.c' l='359' u='c' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='360' u='c' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='361' u='c' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='876' u='c' c='get_remote_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='1096' u='c' c='show_all'/>
+<use f='codebrowser/builtin/remote.c' l='1305' u='c' c='prune_remote'/>
+<use f='codebrowser/builtin/repack.c' l='415' u='c' c='cmd_repack'/>
+<use f='codebrowser/connect.c' l='98' u='c' c='annotate_refs_with_symref_info'/>
+<use f='codebrowser/merge-recursive.c' l='456' u='c' c='record_df_conflict_files'/>
+<use f='codebrowser/notes.c' l='918' u='c' c='combine_notes_cat_sort_uniq'/>
+<use f='codebrowser/refs/files-backend.c' l='2439' u='c' c='files_transaction_prepare'/>
+<use f='codebrowser/refs/files-backend.c' l='2662' u='c' c='files_initial_transaction_commit'/>
+<use f='codebrowser/remote.c' l='1329' u='c' c='add_missing_tags'/>
+<use f='codebrowser/remote.c' l='1395' u='c' c='prepare_ref_index'/>
+<use f='codebrowser/remote.c' l='2250' u='c' c='get_stale_heads'/>
+<use f='codebrowser/run-command.c' l='437' u='c' c='prep_childenv'/>
+<use f='codebrowser/sha1_file.c' l='1407' u='c' c='report_pack_garbage'/>
+<def f='codebrowser/string-list.c' l='235' ll='239' type='void string_list_sort(struct string_list * list)'/>
+<use f='codebrowser/t/helper/test-string-list.c' l='115' u='c' c='cmd_main'/>
+<use f='codebrowser/tmp-objdir.c' l='243' u='c' c='migrate_paths'/>
+<use f='codebrowser/transport.c' l='662' u='c' c='protocol_whitelist'/>

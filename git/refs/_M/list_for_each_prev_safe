@@ -1,0 +1,5 @@
+<dec f='codebrowser/list.h' l='146'/>
+<doc f='codebrowser/list.h' l='142'>/*
+ * Iterate backwards over the elements list. The list elements can be
+ * removed from the list while doing this.
+ */</doc>

@@ -1,0 +1,2 @@
+<def f='codebrowser/list.h' l='83' ll='87' type='void list_del_init(struct list_head * elem)'/>
+<doc f='codebrowser/list.h' l='82'>/* Remove element from list, initializing the element&apos;s list pointers. */</doc>

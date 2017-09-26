@@ -1,0 +1,13 @@
+<dec f='codebrowser/attr.c' l='143' type='const struct match_attr *'/>
+<use f='codebrowser/attr.c' l='189' u='w' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='1062' u='r' c='macroexpand_one'/>
+<use f='codebrowser/attr.c' l='1063' u='r' c='macroexpand_one'/>
+<use f='codebrowser/attr.c' l='1082' u='r' c='determine_macros'/>
+<use f='codebrowser/attr.c' l='1083' u='w' c='determine_macros'/>
+<use f='codebrowser/attr.c' l='1123' u='r' c='collect_some_attrs'/>
+<offset>128</offset>
+<doc f='codebrowser/attr.c' l='138'>/*
+	 * If &apos;macro&apos; is non-NULL, indicates that &apos;attr&apos; is a macro based on
+	 * the current attribute stack and contains a pointer to the match_attr
+	 * definition of the macro
+	 */</doc>

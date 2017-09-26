@@ -1,0 +1,9 @@
+<dec f='codebrowser/sub-process.h' l='96' type='int subprocess_read_status(int fd, struct strbuf * status)'/>
+<use f='codebrowser/convert.c' l='632' u='c' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='649' u='c' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='703' u='c' c='async_query_available_blobs'/>
+<doc f='codebrowser/sub-process.h' l='91'>/*
+ * Helper function that will read packets looking for &quot;status=&lt;foo&gt;&quot;
+ * key/value pairs and return the value from the last &quot;status&quot; packet
+ */</doc>
+<def f='codebrowser/sub-process.c' l='28' ll='50' type='int subprocess_read_status(int fd, struct strbuf * status)'/>

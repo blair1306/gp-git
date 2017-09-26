@@ -1,0 +1,6 @@
+<dec f='codebrowser/ref-filter.c' l='367' type='struct used_atom *'/>
+<use f='codebrowser/ref-filter.c' l='504' u='r' c='align_atom_handler'/>
+<use f='codebrowser/ref-filter.c' l='547' u='r' c='if_atom_handler'/>
+<use f='codebrowser/ref-filter.c' l='548' u='r' c='if_atom_handler'/>
+<use f='codebrowser/ref-filter.c' l='1337' u='w' c='populate_value'/>
+<offset>192</offset>

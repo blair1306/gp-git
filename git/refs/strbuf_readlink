@@ -1,0 +1,19 @@
+<dec f='codebrowser/strbuf.h' l='384' type='int strbuf_readlink(struct strbuf * sb, const char * path, size_t hint)'/>
+<use f='codebrowser/abspath.c' l='153' u='c' c='strbuf_realpath'/>
+<doc f='codebrowser/strbuf.h' l='380'>/**
+ * Read the target of a symbolic link, specified by its path.  The third
+ * argument can be used to give a hint about the size, to avoid reallocs.
+ */</doc>
+<use f='codebrowser/apply.c' l='2273' u='c' c='read_old_data'/>
+<use f='codebrowser/blame.c' l='219' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/difftool.c' l='300' u='c' c='get_symlink'/>
+<use f='codebrowser/builtin/init-db.c' l='76' u='c' c='copy_templates_1'/>
+<use f='codebrowser/combine-diff.c' l='1008' u='c' c='show_patch_diff'/>
+<use f='codebrowser/diff.c' l='2858' u='c' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='3011' u='c' c='prepare_temp_file'/>
+<use f='codebrowser/lockfile.c' l='54' u='c' c='resolve_symlink'/>
+<use f='codebrowser/read-cache.c' l='179' u='c' c='ce_compare_link'/>
+<use f='codebrowser/refs/files-backend.c' l='327' u='c' c='files_read_raw_ref'/>
+<use f='codebrowser/sha1_file.c' l='96' u='c' c='mkdir_in_gitdir'/>
+<use f='codebrowser/sha1_file.c' l='3670' u='c' c='index_path'/>
+<def f='codebrowser/strbuf.c' l='406' ll='432' type='int strbuf_readlink(struct strbuf * sb, const char * path, size_t hint)'/>

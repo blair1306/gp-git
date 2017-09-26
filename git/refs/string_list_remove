@@ -1,0 +1,7 @@
+<dec f='codebrowser/string-list.h' l='69' type='void string_list_remove(struct string_list * list, const char * string, int free_util)'/>
+<doc f='codebrowser/string-list.h' l='65'>/*
+ * Removes the given string from the sorted list.
+ * If the string doesn&apos;t exist, the list is not altered.
+ */</doc>
+<use f='codebrowser/run-command.c' l='450' u='c' c='prep_childenv'/>
+<def f='codebrowser/string-list.c' l='66' ll='81' type='void string_list_remove(struct string_list * list, const char * string, int free_util)'/>

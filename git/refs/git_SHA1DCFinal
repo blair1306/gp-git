@@ -1,0 +1,36 @@
+<dec f='codebrowser/sha1dc_git.h' l='9' type='void git_SHA1DCFinal(unsigned char * , SHA1_CTX * )'/>
+<doc f='codebrowser/sha1dc_git.h' l='6'>/*
+ * Same as SHA1DCFinal, but convert collision attack case into a verbose die().
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='482' macro='1' u='c'/>
+<use f='codebrowser/builtin/index-pack.c' l='1162' macro='1' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='63' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='434' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='449' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='455' macro='1' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='570' macro='1' u='c'/>
+<use f='codebrowser/bulk-checkin.c' l='235' macro='1' u='c'/>
+<use f='codebrowser/csum-file.c' l='61' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4663' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='1102' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='1293' macro='1' u='c'/>
+<use f='codebrowser/http-push.c' l='771' macro='1' u='c'/>
+<use f='codebrowser/http.c' l='2301' macro='1' u='c'/>
+<use f='codebrowser/pack-check.c' l='77' macro='1' u='c'/>
+<use f='codebrowser/pack-check.c' l='179' macro='1' u='c'/>
+<use f='codebrowser/pack-write.c' l='256' macro='1' u='c'/>
+<use f='codebrowser/pack-write.c' l='273' macro='1' u='c'/>
+<use f='codebrowser/pack-write.c' l='274' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='1529' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='1979' macro='1' u='c'/>
+<use f='codebrowser/rerere.c' l='466' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1671' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3190' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3356' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3941' macro='1' u='c'/>
+<def f='codebrowser/sha1dc_git.c' l='6' ll='12' type='void git_SHA1DCFinal(unsigned char * hash, SHA1_CTX * ctx)'/>
+<doc f='codebrowser/sha1dc_git.c' l='1'>/*
+ * This code is included at the end of sha1dc/sha1.c with the
+ * SHA1DC_CUSTOM_TRAILING_INCLUDE_SHA1_C macro.
+ */</doc>
+<use f='codebrowser/t/helper/test-sha1.c' l='49' macro='1' u='c'/>

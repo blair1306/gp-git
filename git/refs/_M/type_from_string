@@ -1,0 +1,6 @@
+<dec f='codebrowser/object.h' l='57'/>
+<use f='codebrowser/builtin/cat-file.c' l='139' u='c'/>
+<use f='codebrowser/builtin/hash-object.c' l='41' u='c'/>
+<use f='codebrowser/builtin/mktag.c' l='30' u='c'/>
+<use f='codebrowser/builtin/mktree.c' l='113' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3139' u='c'/>

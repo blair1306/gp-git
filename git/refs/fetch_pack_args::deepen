@@ -1,0 +1,9 @@
+<dec f='codebrowser/fetch-pack.h' l='31' type='unsigned int'/>
+<offset>272</offset>
+<use f='codebrowser/fetch-pack.c' l='240' u='r' c='consume_shallow_list'/>
+<use f='codebrowser/fetch-pack.c' l='412' u='r' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='653' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='736' u='r' c='everything_local'/>
+<use f='codebrowser/fetch-pack.c' l='924' u='w' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='995' u='r' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='1062' u='r' c='update_shallow'/>

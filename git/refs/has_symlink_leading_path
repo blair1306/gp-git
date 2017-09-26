@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1520' type='int has_symlink_leading_path(const char * name, int len)'/>
+<use f='codebrowser/apply.c' l='3394' u='c' c='load_patch_target'/>
+<use f='codebrowser/apply.c' l='3745' u='c' c='check_to_create'/>
+<use f='codebrowser/builtin/update-index.c' l='369' u='c' c='process_path'/>
+<use f='codebrowser/diff-lib.c' l='36' u='c' c='check_removed'/>
+<use f='codebrowser/dir.c' l='2100' u='c' c='read_directory'/>
+<use f='codebrowser/pathspec.c' l='598' u='c' c='parse_pathspec'/>
+<use f='codebrowser/read-cache.c' l='1249' u='c' c='refresh_cache_ent'/>
+<def f='codebrowser/symlinks.c' l='208' ll='211' type='int has_symlink_leading_path(const char * name, int len)'/>
+<doc f='codebrowser/symlinks.c' l='205'>/*
+ * Return non-zero if path &apos;name&apos; has a leading symlink component
+ */</doc>

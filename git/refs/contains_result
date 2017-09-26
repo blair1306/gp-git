@@ -1,0 +1,5 @@
+<def f='codebrowser/ref-filter.c' l='1492' ll='1496'/>
+<doc f='codebrowser/ref-filter.c' l='1488'>/*
+ * Unknown has to be &quot;0&quot; here, because that&apos;s the default value for
+ * contains_cache slab entries that have not yet been assigned.
+ */</doc>

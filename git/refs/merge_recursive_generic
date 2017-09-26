@@ -1,0 +1,8 @@
+<dec f='codebrowser/merge-recursive.h' l='51' type='int merge_recursive_generic(struct merge_options * o, const struct object_id * head, const struct object_id * merge, int num_ca, const struct object_id ** ca, struct commit ** result)'/>
+<use f='codebrowser/builtin/am.c' l='1623' u='c' c='fall_back_threeway'/>
+<doc f='codebrowser/merge-recursive.h' l='47'>/*
+ * &quot;git-merge-recursive&quot; can be fed trees; wrap them into
+ * virtual commits and call merge_recursive() proper.
+ */</doc>
+<use f='codebrowser/builtin/merge-recursive.c' l='79' u='c' c='cmd_merge_recursive'/>
+<def f='codebrowser/merge-recursive.c' l='2119' ll='2154' type='int merge_recursive_generic(struct merge_options * o, const struct object_id * head, const struct object_id * merge, int num_base_list, const struct object_id ** base_list, struct commit ** result)'/>

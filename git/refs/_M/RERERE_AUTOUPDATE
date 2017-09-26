@@ -1,0 +1,10 @@
+<dec f='codebrowser/rerere.h' l='8'/>
+<use f='codebrowser/builtin/am.c' l='437' u='c'/>
+<use f='codebrowser/builtin/am.c' l='1016' u='c'/>
+<use f='codebrowser/builtin/rerere.c' l='68' u='c'/>
+<use f='codebrowser/builtin/revert.c' l='158' u='c'/>
+<use f='codebrowser/rerere.c' l='896' u='c'/>
+<use f='codebrowser/rerere.c' l='897' u='c'/>
+<use f='codebrowser/sequencer.c' l='1445' u='c'/>
+<use f='codebrowser/sequencer.c' l='1492' u='c'/>
+<use f='codebrowser/sequencer.c' l='1762' u='c'/>

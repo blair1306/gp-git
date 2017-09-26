@@ -1,0 +1,6 @@
+<dec f='codebrowser/diff.h' l='186' type='void *'/>
+<offset>2560</offset>
+<use f='codebrowser/diff.c' l='1233' u='r' c='diff_line_prefix'/>
+<use f='codebrowser/graph.c' l='313' u='w' c='graph_init'/>
+<use f='codebrowser/line-log.c' l='867' u='r' c='output_prefix'/>
+<use f='codebrowser/log-tree.c' l='756' u='r' c='log_tree_diff_flush'/>

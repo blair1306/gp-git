@@ -1,0 +1,11 @@
+<dec f='codebrowser/git-compat-util.h' l='831'/>
+<use f='codebrowser/apply.c' l='2810' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='381' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='542' u='c'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1301' u='c'/>
+<use f='codebrowser/cache-tree.c' l='134' u='c'/>
+<use f='codebrowser/commit.c' l='226' u='c'/>
+<use f='codebrowser/notes-merge.c' l='102' u='c'/>
+<use f='codebrowser/read-cache.c' l='518' u='c'/>
+<use f='codebrowser/string-list.c' l='46' u='c'/>
+<use f='codebrowser/string-list.c' l='79' u='c'/>

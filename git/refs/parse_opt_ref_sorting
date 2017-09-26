@@ -1,0 +1,15 @@
+<dec f='codebrowser/ref-filter.h' l='121' type='int parse_opt_ref_sorting(const struct option * opt, const char * arg, int unset)'/>
+<use f='codebrowser/builtin/branch.c' l='593' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='593' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='593' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='593' u='a' c='cmd_branch'/>
+<doc f='codebrowser/ref-filter.h' l='120'>/*  Callback function for parsing the sort option */</doc>
+<use f='codebrowser/builtin/for-each-ref.c' l='40' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='40' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='40' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='40' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='406' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='406' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='406' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='406' u='a' c='cmd_tag'/>
+<def f='codebrowser/ref-filter.c' l='2169' ll='2175' type='int parse_opt_ref_sorting(const struct option * opt, const char * arg, int unset)'/>

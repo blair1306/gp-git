@@ -1,0 +1,4 @@
+<dec f='codebrowser/bundle.h' l='26' type='int list_bundle_refs(struct bundle_header * header, int argc, const char ** argv)'/>
+<use f='codebrowser/builtin/bundle.c' l='50' u='c' c='cmd_bundle'/>
+<use f='codebrowser/builtin/bundle.c' l='64' u='c' c='cmd_bundle'/>
+<def f='codebrowser/bundle.c' l='205' ll='208' type='int list_bundle_refs(struct bundle_header * header, int argc, const char ** argv)'/>

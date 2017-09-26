@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='171' type='unsigned int'/>
+<offset>224</offset>
+<use f='codebrowser/builtin/ls-files.c' l='116' u='r' c='print_debug'/>
+<use f='codebrowser/dir.c' l='2423' u='w' c='stat_data_to_disk'/>
+<use f='codebrowser/dir.c' l='2423' u='r' c='stat_data_to_disk'/>
+<use f='codebrowser/dir.c' l='2574' u='w' c='stat_data_from_disk'/>
+<use f='codebrowser/dir.c' l='2574' u='r' c='stat_data_from_disk'/>
+<use f='codebrowser/read-cache.c' l='95' u='w' c='fill_stat_data'/>
+<use f='codebrowser/read-cache.c' l='119' u='r' c='match_stat_data'/>
+<use f='codebrowser/read-cache.c' l='1587' u='w' c='cache_entry_from_ondisk'/>
+<use f='codebrowser/read-cache.c' l='2048' u='r' c='copy_cache_entry_to_ondisk'/>

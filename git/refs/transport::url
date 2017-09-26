@@ -1,0 +1,21 @@
+<dec f='codebrowser/transport.h' l='34' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/clone.c' l='1086' u='r' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='927' u='r' c='fetch_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='1019' u='r' c='set_option'/>
+<use f='codebrowser/builtin/fetch.c' l='1022' u='r' c='set_option'/>
+<use f='codebrowser/builtin/fetch.c' l='1097' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1131' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1136' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/push.c' l='335' u='r' c='push_with_options'/>
+<use f='codebrowser/builtin/push.c' l='339' u='r' c='push_with_options'/>
+<use f='codebrowser/transport-helper.c' l='123' u='r' c='get_helper'/>
+<use f='codebrowser/transport.c' l='85' u='r' c='get_refs_from_bundle'/>
+<use f='codebrowser/transport.c' l='87' u='r' c='get_refs_from_bundle'/>
+<use f='codebrowser/transport.c' l='182' u='r' c='connect_setup'/>
+<use f='codebrowser/transport.c' l='211' u='r' c='fetch_refs_via_pack'/>
+<use f='codebrowser/transport.c' l='565' u='r' c='git_transport_push'/>
+<use f='codebrowser/transport.c' l='590' u='r' c='connect_git'/>
+<use f='codebrowser/transport.c' l='773' u='w' c='transport_get'/>
+<use f='codebrowser/transport.c' l='918' u='r' c='run_pre_push_hook'/>
+<use f='codebrowser/transport.c' l='1075' u='r' c='transport_push'/>

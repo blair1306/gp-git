@@ -1,0 +1,11 @@
+<dec f='include/curl/curl.h' l='602'/>
+<doc f='include/curl/curl.h' l='601'>/* Provide defines for really old option names */</doc>
+<use f='codebrowser/http-push.c' l='888' u='c'/>
+<use f='codebrowser/http-push.c' l='1143' u='c'/>
+<use f='codebrowser/http-push.c' l='1217' u='c'/>
+<use f='codebrowser/http-walker.c' l='376' u='c'/>
+<use f='codebrowser/http.c' l='1672' u='c'/>
+<use f='codebrowser/http.c' l='2080' u='c'/>
+<use f='codebrowser/http.c' l='2246' u='c'/>
+<use f='codebrowser/remote-curl.c' l='526' u='c'/>
+<use f='codebrowser/remote-curl.c' l='678' u='c'/>

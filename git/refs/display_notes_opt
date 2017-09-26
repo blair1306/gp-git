@@ -1,0 +1,4 @@
+<def f='codebrowser/notes.h' l='250' ll='253'/>
+<size>40</size>
+<mbr r='display_notes_opt::use_default_notes' o='0' t='int'/>
+<mbr r='display_notes_opt::extra_notes_refs' o='64' t='struct string_list'/>

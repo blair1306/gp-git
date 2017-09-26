@@ -1,0 +1,5 @@
+<def f='codebrowser/convert.h' l='45' ll='57'/>
+<size>72</size>
+<mbr r='delayed_checkout::state' o='0' t='enum ce_delay_state'/>
+<mbr r='delayed_checkout::filters' o='64' t='struct string_list'/>
+<mbr r='delayed_checkout::paths' o='320' t='struct string_list'/>

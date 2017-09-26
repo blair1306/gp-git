@@ -1,0 +1,20 @@
+<dec f='codebrowser/mailinfo.h' l='21' type='struct strbuf **'/>
+<offset>1152</offset>
+<use f='codebrowser/mailinfo.c' l='248' u='w' c='handle_content_type'/>
+<use f='codebrowser/mailinfo.c' l='251' u='w' c='handle_content_type'/>
+<use f='codebrowser/mailinfo.c' l='254' u='r' c='handle_content_type'/>
+<use f='codebrowser/mailinfo.c' l='278' u='r' c='is_multipart_boundary'/>
+<use f='codebrowser/mailinfo.c' l='906' u='r' c='find_boundary'/>
+<use f='codebrowser/mailinfo.c' l='918' u='r' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='919' u='r' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='922' u='r' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='923' u='r' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='923' u='r' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='928' u='w' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='931' u='w' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='966' u='r' c='handle_body'/>
+<use f='codebrowser/mailinfo.c' l='973' u='r' c='handle_body'/>
+<use f='codebrowser/mailinfo.c' l='1150' u='w' c='setup_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1171' u='r' c='clear_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1172' u='r' c='clear_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1173' u='w' c='clear_mailinfo'/>

@@ -1,0 +1,17 @@
+<dec f='include/regex.h' l='273'/>
+<doc f='include/regex.h' l='271'>/* If this bit is set, then use extended regular expression syntax.
+   If not set, then use basic regular expression syntax.  */</doc>
+<use f='codebrowser/apply.c' l='834' u='c'/>
+<use f='codebrowser/builtin/am.c' l='603' u='c'/>
+<use f='codebrowser/builtin/config.c' l='216' u='c'/>
+<use f='codebrowser/builtin/config.c' l='236' u='c'/>
+<use f='codebrowser/builtin/remote.c' l='1572' u='c'/>
+<use f='codebrowser/config.c' l='2499' u='c'/>
+<use f='codebrowser/diff.c' l='1184' u='c'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='224' u='c'/>
+<use f='codebrowser/grep.c' l='668' u='c'/>
+<use f='codebrowser/http-backend.c' l='680' u='c'/>
+<use f='codebrowser/sha1_name.c' l='1026' u='c'/>
+<use f='codebrowser/t/helper/test-regex.c' l='10' u='c'/>
+<use f='codebrowser/t/helper/test-regex.c' l='27' u='c'/>
+<use f='codebrowser/userdiff.c' l='244' u='c'/>

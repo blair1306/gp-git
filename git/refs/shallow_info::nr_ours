@@ -1,0 +1,17 @@
+<dec f='codebrowser/commit.h' l='285' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/receive-pack.c' l='1706' u='r' c='unpack'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1820' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1859' u='r' c='update_shallow_info'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1984' u='r' c='cmd_receive_pack'/>
+<use f='codebrowser/fetch-pack.c' l='998' u='r' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='1096' u='r' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1100' u='r' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1116' u='r' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1120' u='r' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1139' u='r' c='update_shallow'/>
+<use f='codebrowser/shallow.c' l='404' u='w' c='prepare_shallow_info'/>
+<use f='codebrowser/shallow.c' l='573' u='r' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='574' u='r' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='704' u='r' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='720' u='w' c='post_assign_shallow'/>

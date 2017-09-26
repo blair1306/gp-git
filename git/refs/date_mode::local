@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1420' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/date.c' l='190' u='w' c='date_mode_from_type'/>
+<use f='codebrowser/date.c' l='205' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='223' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='259' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='267' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='841' u='w' c='parse_date_format'/>
+<use f='codebrowser/date.c' l='844' u='w' c='parse_date_format'/>

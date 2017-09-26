@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='558' type='int check_filename(const char * prefix, const char * name)'/>
+<use f='codebrowser/builtin/checkout.c' l='996' u='c' c='parse_branchname_arg'/>
+<def f='codebrowser/setup.c' l='137' ll='164' type='int check_filename(const char * prefix, const char * arg)'/>
+<use f='codebrowser/setup.c' l='234' u='c' c='verify_filename'/>
+<use f='codebrowser/setup.c' l='250' u='c' c='verify_non_filename'/>

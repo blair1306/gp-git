@@ -1,0 +1,27 @@
+<dec f='codebrowser/refs/refs-internal.h' l='676' type='const struct ref_storage_be *'/>
+<use f='codebrowser/refs.c' l='1285' u='r' c='refs_ref_iterator_begin'/>
+<use f='codebrowser/refs.c' l='1408' u='r' c='refs_read_raw_ref'/>
+<use f='codebrowser/refs.c' l='1493' u='r' c='refs_init_db'/>
+<use f='codebrowser/refs.c' l='1704' u='w' c='base_ref_store_init'/>
+<use f='codebrowser/refs.c' l='1710' u='r' c='refs_pack_refs'/>
+<use f='codebrowser/refs.c' l='1716' u='r' c='refs_peel_ref'/>
+<use f='codebrowser/refs.c' l='1729' u='r' c='refs_create_symref'/>
+<use f='codebrowser/refs.c' l='1790' u='r' c='ref_transaction_prepare'/>
+<use f='codebrowser/refs.c' l='1804' u='r' c='ref_transaction_abort'/>
+<use f='codebrowser/refs.c' l='1842' u='r' c='ref_transaction_commit'/>
+<use f='codebrowser/refs.c' l='1938' u='r' c='refs_for_each_reflog'/>
+<use f='codebrowser/refs.c' l='1953' u='r' c='refs_for_each_reflog_ent_reverse'/>
+<use f='codebrowser/refs.c' l='1967' u='r' c='refs_for_each_reflog_ent'/>
+<use f='codebrowser/refs.c' l='1979' u='r' c='refs_reflog_exists'/>
+<use f='codebrowser/refs.c' l='1990' u='r' c='refs_create_reflog'/>
+<use f='codebrowser/refs.c' l='2002' u='r' c='refs_delete_reflog'/>
+<use f='codebrowser/refs.c' l='2018' u='r' c='refs_reflog_expire'/>
+<use f='codebrowser/refs.c' l='2041' u='r' c='initial_ref_transaction_commit'/>
+<use f='codebrowser/refs.c' l='2047' u='r' c='refs_delete_refs'/>
+<use f='codebrowser/refs.c' l='2059' u='r' c='refs_rename_ref'/>
+<offset>0</offset>
+<doc f='codebrowser/refs/refs-internal.h' l='675'>/* The backend describing this ref_store&apos;s storage scheme: */</doc>
+<use f='codebrowser/refs/files-backend.c' l='92' u='r' c='files_downcast'/>
+<use f='codebrowser/refs/files-backend.c' l='94' u='r' c='files_downcast'/>
+<use f='codebrowser/refs/packed-backend.c' l='119' u='r' c='packed_downcast'/>
+<use f='codebrowser/refs/packed-backend.c' l='121' u='r' c='packed_downcast'/>

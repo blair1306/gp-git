@@ -1,0 +1,5 @@
+<dec f='codebrowser/revision.h' l='238' type='volatile show_early_output_fn_t'/>
+<use f='codebrowser/builtin/log.c' l='308' u='w' c='early_output'/>
+<def f='codebrowser/revision.c' l='23' type='volatile show_early_output_fn_t'/>
+<use f='codebrowser/revision.c' l='1061' u='r' c='limit_list'/>
+<use f='codebrowser/revision.c' l='1066' u='w' c='limit_list'/>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>blame.h source code [codebrowser/blame.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="blame_entry,blame_origin,blame_scoreboard "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/blame.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='blame.h.html'>blame.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/BLAME_H">BLAME_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/BLAME_H" data-ref="_M/BLAME_H">BLAME_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="commit.h.html">"commit.h"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="xdiff-interface.h.html">"xdiff-interface.h"</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="revision.h.html">"revision.h"</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="prio-queue.h.html">"prio-queue.h"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="diff.h.html">"diff.h"</a></u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><u>#define <dfn class="macro" id="_M/PICKAXE_BLAME_MOVE" data-ref="_M/PICKAXE_BLAME_MOVE">PICKAXE_BLAME_MOVE</dfn>		01</u></td></tr>
+<tr><th id="12">12</th><td><u>#define <dfn class="macro" id="_M/PICKAXE_BLAME_COPY" data-ref="_M/PICKAXE_BLAME_COPY">PICKAXE_BLAME_COPY</dfn>		02</u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/PICKAXE_BLAME_COPY_HARDER" data-ref="_M/PICKAXE_BLAME_COPY_HARDER">PICKAXE_BLAME_COPY_HARDER</dfn>	04</u></td></tr>
+<tr><th id="14">14</th><td><u>#define <dfn class="macro" id="_M/PICKAXE_BLAME_COPY_HARDEST" data-ref="_M/PICKAXE_BLAME_COPY_HARDEST">PICKAXE_BLAME_COPY_HARDEST</dfn>	010</u></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#define <dfn class="macro" id="_M/BLAME_DEFAULT_MOVE_SCORE" data-ref="_M/BLAME_DEFAULT_MOVE_SCORE">BLAME_DEFAULT_MOVE_SCORE</dfn>	20</u></td></tr>
+<tr><th id="17">17</th><td><u>#define <dfn class="macro" id="_M/BLAME_DEFAULT_COPY_SCORE" data-ref="_M/BLAME_DEFAULT_COPY_SCORE">BLAME_DEFAULT_COPY_SCORE</dfn>	40</u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><i>/*</i></td></tr>
+<tr><th id="20">20</th><td><i> * One blob in a commit that is being suspected</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td><b>struct</b> <dfn class="type def" id="blame_origin" title='blame_origin' data-ref="blame_origin">blame_origin</dfn> {</td></tr>
+<tr><th id="23">23</th><td>	<em>int</em> <dfn class="decl" id="blame_origin::refcnt" title='blame_origin::refcnt' data-ref="blame_origin::refcnt">refcnt</dfn>;</td></tr>
+<tr><th id="24">24</th><td>	<i>/* Record preceding blame record for this blob */</i></td></tr>
+<tr><th id="25">25</th><td>	<b>struct</b> <a class="type" href="#blame_origin" title='blame_origin' data-ref="blame_origin">blame_origin</a> *<dfn class="decl" id="blame_origin::previous" title='blame_origin::previous' data-ref="blame_origin::previous">previous</dfn>;</td></tr>
+<tr><th id="26">26</th><td>	<i>/* origins are put in a list linked via `next' hanging off the</i></td></tr>
+<tr><th id="27">27</th><td><i>	 * corresponding commit's util field in order to make finding</i></td></tr>
+<tr><th id="28">28</th><td><i>	 * them fast.  The presence in this chain does not count</i></td></tr>
+<tr><th id="29">29</th><td><i>	 * towards the origin's reference count.  It is tempting to</i></td></tr>
+<tr><th id="30">30</th><td><i>	 * let it count as long as the commit is pending examination,</i></td></tr>
+<tr><th id="31">31</th><td><i>	 * but even under circumstances where the commit will be</i></td></tr>
+<tr><th id="32">32</th><td><i>	 * present multiple times in the priority queue of unexamined</i></td></tr>
+<tr><th id="33">33</th><td><i>	 * commits, processing the first instance will not leave any</i></td></tr>
+<tr><th id="34">34</th><td><i>	 * work requiring the origin data for the second instance.  An</i></td></tr>
+<tr><th id="35">35</th><td><i>	 * interspersed commit changing that would have to be</i></td></tr>
+<tr><th id="36">36</th><td><i>	 * preexisting with a different ancestry and with the same</i></td></tr>
+<tr><th id="37">37</th><td><i>	 * commit date in order to wedge itself between two instances</i></td></tr>
+<tr><th id="38">38</th><td><i>	 * of the same commit in the priority queue _and_ produce</i></td></tr>
+<tr><th id="39">39</th><td><i>	 * blame entries relevant for it.  While we don't want to let</i></td></tr>
+<tr><th id="40">40</th><td><i>	 * us get tripped up by this case, it certainly does not seem</i></td></tr>
+<tr><th id="41">41</th><td><i>	 * worth optimizing for.</i></td></tr>
+<tr><th id="42">42</th><td><i>	 */</i></td></tr>
+<tr><th id="43">43</th><td>	<b>struct</b> <a class="type" href="#blame_origin" title='blame_origin' data-ref="blame_origin">blame_origin</a> *<dfn class="decl" id="blame_origin::next" title='blame_origin::next' data-ref="blame_origin::next">next</dfn>;</td></tr>
+<tr><th id="44">44</th><td>	<b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="decl" id="blame_origin::commit" title='blame_origin::commit' data-ref="blame_origin::commit">commit</dfn>;</td></tr>
+<tr><th id="45">45</th><td>	<i>/* `suspects' contains blame entries that may be attributed to</i></td></tr>
+<tr><th id="46">46</th><td><i>	 * this origin's commit or to parent commits.  When a commit</i></td></tr>
+<tr><th id="47">47</th><td><i>	 * is being processed, all suspects will be moved, either by</i></td></tr>
+<tr><th id="48">48</th><td><i>	 * assigning them to an origin in a different commit, or by</i></td></tr>
+<tr><th id="49">49</th><td><i>	 * shipping them to the scoreboard's ent list because they</i></td></tr>
+<tr><th id="50">50</th><td><i>	 * cannot be attributed to a different commit.</i></td></tr>
+<tr><th id="51">51</th><td><i>	 */</i></td></tr>
+<tr><th id="52">52</th><td>	<b>struct</b> <a class="type" href="#blame_entry" title='blame_entry' data-ref="blame_entry">blame_entry</a> *<dfn class="decl" id="blame_origin::suspects" title='blame_origin::suspects' data-ref="blame_origin::suspects">suspects</dfn>;</td></tr>
+<tr><th id="53">53</th><td>	<a class="typedef" href="xdiff/xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> <dfn class="decl" id="blame_origin::file" title='blame_origin::file' data-ref="blame_origin::file">file</dfn>;</td></tr>
+<tr><th id="54">54</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="blame_origin::blob_oid" title='blame_origin::blob_oid' data-ref="blame_origin::blob_oid">blob_oid</dfn>;</td></tr>
+<tr><th id="55">55</th><td>	<em>unsigned</em> <dfn class="decl" id="blame_origin::mode" title='blame_origin::mode' data-ref="blame_origin::mode">mode</dfn>;</td></tr>
+<tr><th id="56">56</th><td>	<i>/* guilty gets set when shipping any suspects to the final</i></td></tr>
+<tr><th id="57">57</th><td><i>	 * blame list instead of other commits</i></td></tr>
+<tr><th id="58">58</th><td><i>	 */</i></td></tr>
+<tr><th id="59">59</th><td>	<em>char</em> <dfn class="decl" id="blame_origin::guilty" title='blame_origin::guilty' data-ref="blame_origin::guilty">guilty</dfn>;</td></tr>
+<tr><th id="60">60</th><td>	<em>char</em> <dfn class="decl" id="blame_origin::path" title='blame_origin::path' data-ref="blame_origin::path">path</dfn>[<a class="macro" href="git-compat-util.h.html#28" title="" data-ref="_M/FLEX_ARRAY">FLEX_ARRAY</a>];</td></tr>
+<tr><th id="61">61</th><td>};</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><i>/*</i></td></tr>
+<tr><th id="64">64</th><td><i> * Each group of lines is described by a blame_entry; it can be split</i></td></tr>
+<tr><th id="65">65</th><td><i> * as we pass blame to the parents.  They are arranged in linked lists</i></td></tr>
+<tr><th id="66">66</th><td><i> * kept as `suspects' of some unprocessed origin, or entered (when the</i></td></tr>
+<tr><th id="67">67</th><td><i> * blame origin has been finalized) into the scoreboard structure.</i></td></tr>
+<tr><th id="68">68</th><td><i> * While the scoreboard structure is only sorted at the end of</i></td></tr>
+<tr><th id="69">69</th><td><i> * processing (according to final image line number), the lists</i></td></tr>
+<tr><th id="70">70</th><td><i> * attached to an origin are sorted by the target line number.</i></td></tr>
+<tr><th id="71">71</th><td><i> */</i></td></tr>
+<tr><th id="72">72</th><td><b>struct</b> <dfn class="type def" id="blame_entry" title='blame_entry' data-ref="blame_entry">blame_entry</dfn> {</td></tr>
+<tr><th id="73">73</th><td>	<b>struct</b> <a class="type" href="#blame_entry" title='blame_entry' data-ref="blame_entry">blame_entry</a> *<dfn class="decl" id="blame_entry::next" title='blame_entry::next' data-ref="blame_entry::next">next</dfn>;</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>	<i>/* the first line of this group in the final image;</i></td></tr>
+<tr><th id="76">76</th><td><i>	 * internally all line numbers are 0 based.</i></td></tr>
+<tr><th id="77">77</th><td><i>	 */</i></td></tr>
+<tr><th id="78">78</th><td>	<em>int</em> <dfn class="decl" id="blame_entry::lno" title='blame_entry::lno' data-ref="blame_entry::lno">lno</dfn>;</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>	<i>/* how many lines this group has */</i></td></tr>
+<tr><th id="81">81</th><td>	<em>int</em> <dfn class="decl" id="blame_entry::num_lines" title='blame_entry::num_lines' data-ref="blame_entry::num_lines">num_lines</dfn>;</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>	<i>/* the commit that introduced this group into the final image */</i></td></tr>
+<tr><th id="84">84</th><td>	<b>struct</b> <a class="type" href="#blame_origin" title='blame_origin' data-ref="blame_origin">blame_origin</a> *<dfn class="decl" id="blame_entry::suspect" title='blame_entry::suspect' data-ref="blame_entry::suspect">suspect</dfn>;</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>	<i>/* the line number of the first line of this group in the</i></td></tr>
+<tr><th id="87">87</th><td><i>	 * suspect's file; internally all line numbers are 0 based.</i></td></tr>
+<tr><th id="88">88</th><td><i>	 */</i></td></tr>
+<tr><th id="89">89</th><td>	<em>int</em> <dfn class="decl" id="blame_entry::s_lno" title='blame_entry::s_lno' data-ref="blame_entry::s_lno">s_lno</dfn>;</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>	<i>/* how significant this entry is -- cached to avoid</i></td></tr>
+<tr><th id="92">92</th><td><i>	 * scanning the lines over and over.</i></td></tr>
+<tr><th id="93">93</th><td><i>	 */</i></td></tr>
+<tr><th id="94">94</th><td>	<em>unsigned</em> <dfn class="decl" id="blame_entry::score" title='blame_entry::score' data-ref="blame_entry::score">score</dfn>;</td></tr>
+<tr><th id="95">95</th><td>};</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><i>/*</i></td></tr>
+<tr><th id="98">98</th><td><i> * The current state of the blame assignment.</i></td></tr>
+<tr><th id="99">99</th><td><i> */</i></td></tr>
+<tr><th id="100">100</th><td><b>struct</b> <dfn class="type def" id="blame_scoreboard" title='blame_scoreboard' data-ref="blame_scoreboard">blame_scoreboard</dfn> {</td></tr>
+<tr><th id="101">101</th><td>	<i>/* the final commit (i.e. where we started digging from) */</i></td></tr>
+<tr><th id="102">102</th><td>	<b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="decl" id="blame_scoreboard::final" title='blame_scoreboard::final' data-ref="blame_scoreboard::final">final</dfn>;</td></tr>
+<tr><th id="103">103</th><td>	<i>/* Priority queue for commits with unassigned blame records */</i></td></tr>
+<tr><th id="104">104</th><td>	<b>struct</b> <a class="type" href="prio-queue.h.html#prio_queue" title='prio_queue' data-ref="prio_queue">prio_queue</a> <dfn class="decl" id="blame_scoreboard::commits" title='blame_scoreboard::commits' data-ref="blame_scoreboard::commits">commits</dfn>;</td></tr>
+<tr><th id="105">105</th><td>	<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="decl" id="blame_scoreboard::revs" title='blame_scoreboard::revs' data-ref="blame_scoreboard::revs">revs</dfn>;</td></tr>
+<tr><th id="106">106</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="blame_scoreboard::path" title='blame_scoreboard::path' data-ref="blame_scoreboard::path">path</dfn>;</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td>	<i>/*</i></td></tr>
+<tr><th id="109">109</th><td><i>	 * The contents in the final image.</i></td></tr>
+<tr><th id="110">110</th><td><i>	 * Used by many functions to obtain contents of the nth line,</i></td></tr>
+<tr><th id="111">111</th><td><i>	 * indexed with scoreboard.lineno[blame_entry.lno].</i></td></tr>
+<tr><th id="112">112</th><td><i>	 */</i></td></tr>
+<tr><th id="113">113</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="blame_scoreboard::final_buf" title='blame_scoreboard::final_buf' data-ref="blame_scoreboard::final_buf">final_buf</dfn>;</td></tr>
+<tr><th id="114">114</th><td>	<em>unsigned</em> <em>long</em> <dfn class="decl" id="blame_scoreboard::final_buf_size" title='blame_scoreboard::final_buf_size' data-ref="blame_scoreboard::final_buf_size">final_buf_size</dfn>;</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td>	<i>/* linked list of blames */</i></td></tr>
+<tr><th id="117">117</th><td>	<b>struct</b> <a class="type" href="#blame_entry" title='blame_entry' data-ref="blame_entry">blame_entry</a> *<dfn class="decl" id="blame_scoreboard::ent" title='blame_scoreboard::ent' data-ref="blame_scoreboard::ent">ent</dfn>;</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td>	<i>/* look-up a line in the final buffer */</i></td></tr>
+<tr><th id="120">120</th><td>	<em>int</em> <dfn class="decl" id="blame_scoreboard::num_lines" title='blame_scoreboard::num_lines' data-ref="blame_scoreboard::num_lines">num_lines</dfn>;</td></tr>
+<tr><th id="121">121</th><td>	<em>int</em> *<dfn class="decl" id="blame_scoreboard::lineno" title='blame_scoreboard::lineno' data-ref="blame_scoreboard::lineno">lineno</dfn>;</td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td>	<i>/* stats */</i></td></tr>
+<tr><th id="124">124</th><td>	<em>int</em> <dfn class="decl" id="blame_scoreboard::num_read_blob" title='blame_scoreboard::num_read_blob' data-ref="blame_scoreboard::num_read_blob">num_read_blob</dfn>;</td></tr>
+<tr><th id="125">125</th><td>	<em>int</em> <dfn class="decl" id="blame_scoreboard::num_get_patch" title='blame_scoreboard::num_get_patch' data-ref="blame_scoreboard::num_get_patch">num_get_patch</dfn>;</td></tr>
+<tr><th id="126">126</th><td>	<em>int</em> <dfn class="decl" id="blame_scoreboard::num_commits" title='blame_scoreboard::num_commits' data-ref="blame_scoreboard::num_commits">num_commits</dfn>;</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td>	<i>/*</i></td></tr>
+<tr><th id="129">129</th><td><i>	 * blame for a blame_entry with score lower than these thresholds</i></td></tr>
+<tr><th id="130">130</th><td><i>	 * is not passed to the parent using move/copy logic.</i></td></tr>
+<tr><th id="131">131</th><td><i>	 */</i></td></tr>
+<tr><th id="132">132</th><td>	<em>unsigned</em> <dfn class="decl" id="blame_scoreboard::move_score" title='blame_scoreboard::move_score' data-ref="blame_scoreboard::move_score">move_score</dfn>;</td></tr>
+<tr><th id="133">133</th><td>	<em>unsigned</em> <dfn class="decl" id="blame_scoreboard::copy_score" title='blame_scoreboard::copy_score' data-ref="blame_scoreboard::copy_score">copy_score</dfn>;</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>	<i>/* use this file's contents as the final image */</i></td></tr>
+<tr><th id="136">136</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="blame_scoreboard::contents_from" title='blame_scoreboard::contents_from' data-ref="blame_scoreboard::contents_from">contents_from</dfn>;</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td>	<i>/* flags */</i></td></tr>
+<tr><th id="139">139</th><td>	<em>int</em> <dfn class="decl" id="blame_scoreboard::reverse" title='blame_scoreboard::reverse' data-ref="blame_scoreboard::reverse">reverse</dfn>;</td></tr>
+<tr><th id="140">140</th><td>	<em>int</em> <dfn class="decl" id="blame_scoreboard::show_root" title='blame_scoreboard::show_root' data-ref="blame_scoreboard::show_root">show_root</dfn>;</td></tr>
+<tr><th id="141">141</th><td>	<em>int</em> <dfn class="decl" id="blame_scoreboard::xdl_opts" title='blame_scoreboard::xdl_opts' data-ref="blame_scoreboard::xdl_opts">xdl_opts</dfn>;</td></tr>
+<tr><th id="142">142</th><td>	<em>int</em> <dfn class="decl" id="blame_scoreboard::no_whole_file_rename" title='blame_scoreboard::no_whole_file_rename' data-ref="blame_scoreboard::no_whole_file_rename">no_whole_file_rename</dfn>;</td></tr>
+<tr><th id="143">143</th><td>	<em>int</em> <dfn class="decl" id="blame_scoreboard::debug" title='blame_scoreboard::debug' data-ref="blame_scoreboard::debug">debug</dfn>;</td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td>	<i>/* callbacks */</i></td></tr>
+<tr><th id="146">146</th><td>	<em>void</em>(*<dfn class="decl" id="blame_scoreboard::on_sanity_fail" title='blame_scoreboard::on_sanity_fail' data-ref="blame_scoreboard::on_sanity_fail">on_sanity_fail</dfn>)(<b>struct</b> <a class="type" href="#blame_scoreboard" title='blame_scoreboard' data-ref="blame_scoreboard">blame_scoreboard</a> *, <em>int</em>);</td></tr>
+<tr><th id="147">147</th><td>	<em>void</em>(*<dfn class="decl" id="blame_scoreboard::found_guilty_entry" title='blame_scoreboard::found_guilty_entry' data-ref="blame_scoreboard::found_guilty_entry">found_guilty_entry</dfn>)(<b>struct</b> <a class="type" href="#blame_entry" title='blame_entry' data-ref="blame_entry">blame_entry</a> *, <em>void</em> *);</td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td>	<em>void</em> *<dfn class="decl" id="blame_scoreboard::found_guilty_entry_data" title='blame_scoreboard::found_guilty_entry_data' data-ref="blame_scoreboard::found_guilty_entry_data">found_guilty_entry_data</dfn>;</td></tr>
+<tr><th id="150">150</th><td>};</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><i>/*</i></td></tr>
+<tr><th id="153">153</th><td><i> * Origin is refcounted and usually we keep the blob contents to be</i></td></tr>
+<tr><th id="154">154</th><td><i> * reused.</i></td></tr>
+<tr><th id="155">155</th><td><i> */</i></td></tr>
+<tr><th id="156">156</th><td><em>static</em> <b>inline</b> <b>struct</b> <a class="type" href="#blame_origin" title='blame_origin' data-ref="blame_origin">blame_origin</a> *<dfn class="decl def" id="blame_origin_incref" title='blame_origin_incref' data-ref="blame_origin_incref">blame_origin_incref</dfn>(<b>struct</b> <a class="type" href="#blame_origin" title='blame_origin' data-ref="blame_origin">blame_origin</a> *<dfn class="local col4 decl" id="34o" title='o' data-type='struct blame_origin *' data-ref="34o">o</dfn>)</td></tr>
+<tr><th id="157">157</th><td>{</td></tr>
+<tr><th id="158">158</th><td>	<b>if</b> (<a class="local col4 ref" href="#34o" title='o' data-ref="34o">o</a>)</td></tr>
+<tr><th id="159">159</th><td>		<a class="local col4 ref" href="#34o" title='o' data-ref="34o">o</a>-&gt;<a class="ref" href="#blame_origin::refcnt" title='blame_origin::refcnt' data-ref="blame_origin::refcnt">refcnt</a>++;</td></tr>
+<tr><th id="160">160</th><td>	<b>return</b> <a class="local col4 ref" href="#34o" title='o' data-ref="34o">o</a>;</td></tr>
+<tr><th id="161">161</th><td>}</td></tr>
+<tr><th id="162">162</th><td><b>extern</b> <em>void</em> <a class="decl" href="blame.c.html#blame_origin_decref" title='blame_origin_decref' data-ref="blame_origin_decref" id="blame_origin_decref">blame_origin_decref</a>(<b>struct</b> <a class="type" href="#blame_origin" title='blame_origin' data-ref="blame_origin">blame_origin</a> *<dfn class="local col5 decl" id="35o" title='o' data-type='struct blame_origin *' data-ref="35o">o</dfn>);</td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td><b>extern</b> <em>void</em> <a class="decl" href="blame.c.html#blame_coalesce" title='blame_coalesce' data-ref="blame_coalesce" id="blame_coalesce">blame_coalesce</a>(<b>struct</b> <a class="type" href="#blame_scoreboard" title='blame_scoreboard' data-ref="blame_scoreboard">blame_scoreboard</a> *<dfn class="local col6 decl" id="36sb" title='sb' data-type='struct blame_scoreboard *' data-ref="36sb">sb</dfn>);</td></tr>
+<tr><th id="165">165</th><td><b>extern</b> <em>void</em> <a class="decl" href="blame.c.html#blame_sort_final" title='blame_sort_final' data-ref="blame_sort_final" id="blame_sort_final">blame_sort_final</a>(<b>struct</b> <a class="type" href="#blame_scoreboard" title='blame_scoreboard' data-ref="blame_scoreboard">blame_scoreboard</a> *<dfn class="local col7 decl" id="37sb" title='sb' data-type='struct blame_scoreboard *' data-ref="37sb">sb</dfn>);</td></tr>
+<tr><th id="166">166</th><td><b>extern</b> <em>unsigned</em> <a class="decl" href="blame.c.html#blame_entry_score" title='blame_entry_score' data-ref="blame_entry_score" id="blame_entry_score">blame_entry_score</a>(<b>struct</b> <a class="type" href="#blame_scoreboard" title='blame_scoreboard' data-ref="blame_scoreboard">blame_scoreboard</a> *<dfn class="local col8 decl" id="38sb" title='sb' data-type='struct blame_scoreboard *' data-ref="38sb">sb</dfn>, <b>struct</b> <a class="type" href="#blame_entry" title='blame_entry' data-ref="blame_entry">blame_entry</a> *<dfn class="local col9 decl" id="39e" title='e' data-type='struct blame_entry *' data-ref="39e">e</dfn>);</td></tr>
+<tr><th id="167">167</th><td><b>extern</b> <em>void</em> <a class="decl" href="blame.c.html#assign_blame" title='assign_blame' data-ref="assign_blame" id="assign_blame">assign_blame</a>(<b>struct</b> <a class="type" href="#blame_scoreboard" title='blame_scoreboard' data-ref="blame_scoreboard">blame_scoreboard</a> *<dfn class="local col0 decl" id="40sb" title='sb' data-type='struct blame_scoreboard *' data-ref="40sb">sb</dfn>, <em>int</em> <dfn class="local col1 decl" id="41opt" title='opt' data-type='int' data-ref="41opt">opt</dfn>);</td></tr>
+<tr><th id="168">168</th><td><b>extern</b> <em>const</em> <em>char</em> *<a class="decl" href="blame.c.html#blame_nth_line" title='blame_nth_line' data-ref="blame_nth_line" id="blame_nth_line">blame_nth_line</a>(<b>struct</b> <a class="type" href="#blame_scoreboard" title='blame_scoreboard' data-ref="blame_scoreboard">blame_scoreboard</a> *<dfn class="local col2 decl" id="42sb" title='sb' data-type='struct blame_scoreboard *' data-ref="42sb">sb</dfn>, <em>long</em> <dfn class="local col3 decl" id="43lno" title='lno' data-type='long' data-ref="43lno">lno</dfn>);</td></tr>
+<tr><th id="169">169</th><td></td></tr>
+<tr><th id="170">170</th><td><b>extern</b> <em>void</em> <a class="decl" href="blame.c.html#init_scoreboard" title='init_scoreboard' data-ref="init_scoreboard" id="init_scoreboard">init_scoreboard</a>(<b>struct</b> <a class="type" href="#blame_scoreboard" title='blame_scoreboard' data-ref="blame_scoreboard">blame_scoreboard</a> *<dfn class="local col4 decl" id="44sb" title='sb' data-type='struct blame_scoreboard *' data-ref="44sb">sb</dfn>);</td></tr>
+<tr><th id="171">171</th><td><b>extern</b> <em>void</em> <a class="decl" href="blame.c.html#setup_scoreboard" title='setup_scoreboard' data-ref="setup_scoreboard" id="setup_scoreboard">setup_scoreboard</a>(<b>struct</b> <a class="type" href="#blame_scoreboard" title='blame_scoreboard' data-ref="blame_scoreboard">blame_scoreboard</a> *<dfn class="local col5 decl" id="45sb" title='sb' data-type='struct blame_scoreboard *' data-ref="45sb">sb</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="46path" title='path' data-type='const char *' data-ref="46path">path</dfn>, <b>struct</b> <a class="type" href="#blame_origin" title='blame_origin' data-ref="blame_origin">blame_origin</a> **<dfn class="local col7 decl" id="47orig" title='orig' data-type='struct blame_origin **' data-ref="47orig">orig</dfn>);</td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td><b>extern</b> <b>struct</b> <a class="type" href="#blame_entry" title='blame_entry' data-ref="blame_entry">blame_entry</a> *<a class="decl" href="blame.c.html#blame_entry_prepend" title='blame_entry_prepend' data-ref="blame_entry_prepend" id="blame_entry_prepend">blame_entry_prepend</a>(<b>struct</b> <a class="type" href="#blame_entry" title='blame_entry' data-ref="blame_entry">blame_entry</a> *<dfn class="local col8 decl" id="48head" title='head' data-type='struct blame_entry *' data-ref="48head">head</dfn>, <em>long</em> <dfn class="local col9 decl" id="49start" title='start' data-type='long' data-ref="49start">start</dfn>, <em>long</em> <dfn class="local col0 decl" id="50end" title='end' data-type='long' data-ref="50end">end</dfn>, <b>struct</b> <a class="type" href="#blame_origin" title='blame_origin' data-ref="blame_origin">blame_origin</a> *<dfn class="local col1 decl" id="51o" title='o' data-type='struct blame_origin *' data-ref="51o">o</dfn>);</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td><u>#<span data-ppcond="1">endif</span> /* BLAME_H */</u></td></tr>
+<tr><th id="176">176</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='blame.c.html'>codebrowser/blame.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

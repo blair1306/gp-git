@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ewok_rlw.h source code [codebrowser/ewah/ewok_rlw.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="rlw_iterator "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/ewah/ewok_rlw.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>ewah</a>/<a href='ewok_rlw.h.html'>ewok_rlw.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="2">2</th><td><i class="doc"> * Copyright 2013, GitHub, Inc</i></td></tr>
+<tr><th id="3">3</th><td><i class="doc"> * Copyright 2009-2013, Daniel Lemire, Cliff Moon,</i></td></tr>
+<tr><th id="4">4</th><td><i class="doc"> *	David McIntosh, Robert Becho, Google Inc. and Veronika Zenz</i></td></tr>
+<tr><th id="5">5</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="6">6</th><td><i class="doc"> * This program is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i class="doc"> * modify it under the terms of the GNU General Public License</i></td></tr>
+<tr><th id="8">8</th><td><i class="doc"> * as published by the Free Software Foundation; either version 2</i></td></tr>
+<tr><th id="9">9</th><td><i class="doc"> * of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="11">11</th><td><i class="doc"> * This program is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i class="doc"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i class="doc"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</i></td></tr>
+<tr><th id="14">14</th><td><i class="doc"> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="16">16</th><td><i class="doc"> * You should have received a copy of the GNU General Public License</i></td></tr>
+<tr><th id="17">17</th><td><i class="doc"> * along with this program; if not, write to the Free Software</i></td></tr>
+<tr><th id="18">18</th><td><i class="doc"> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</i></td></tr>
+<tr><th id="19">19</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifndef</span> <span class="macro" data-ref="_M/__EWOK_RLW_H__">__EWOK_RLW_H__</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/__EWOK_RLW_H__" data-ref="_M/__EWOK_RLW_H__">__EWOK_RLW_H__</dfn></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/RLW_RUNNING_BITS" data-ref="_M/RLW_RUNNING_BITS">RLW_RUNNING_BITS</dfn> (sizeof(<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a>) * 4)</u></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/RLW_LITERAL_BITS" data-ref="_M/RLW_LITERAL_BITS">RLW_LITERAL_BITS</dfn> (sizeof(eword_t) * 8 - 1 - RLW_RUNNING_BITS)</u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/RLW_LARGEST_RUNNING_COUNT" data-ref="_M/RLW_LARGEST_RUNNING_COUNT">RLW_LARGEST_RUNNING_COUNT</dfn> (((<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a>)1 &lt;&lt; RLW_RUNNING_BITS) - 1)</u></td></tr>
+<tr><th id="27">27</th><td><u>#define <dfn class="macro" id="_M/RLW_LARGEST_LITERAL_COUNT" data-ref="_M/RLW_LARGEST_LITERAL_COUNT">RLW_LARGEST_LITERAL_COUNT</dfn> (((eword_t)1 &lt;&lt; RLW_LITERAL_BITS) - 1)</u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/RLW_LARGEST_RUNNING_COUNT_SHIFT" data-ref="_M/RLW_LARGEST_RUNNING_COUNT_SHIFT">RLW_LARGEST_RUNNING_COUNT_SHIFT</dfn> (RLW_LARGEST_RUNNING_COUNT &lt;&lt; 1)</u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/RLW_RUNNING_LEN_PLUS_BIT" data-ref="_M/RLW_RUNNING_LEN_PLUS_BIT">RLW_RUNNING_LEN_PLUS_BIT</dfn> (((<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a>)1 &lt;&lt; (RLW_RUNNING_BITS + 1)) - 1)</u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><em>static</em> <em>int</em> <dfn class="decl def" id="rlw_get_run_bit" title='rlw_get_run_bit' data-ref="rlw_get_run_bit">rlw_get_run_bit</dfn>(<em>const</em> <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="local col1 decl" id="1word" title='word' data-type='const eword_t *' data-ref="1word">word</dfn>)</td></tr>
+<tr><th id="34">34</th><td>{</td></tr>
+<tr><th id="35">35</th><td>	<b>return</b> *<a class="local col1 ref" href="#1word" title='word' data-ref="1word">word</a> &amp; (<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a>)<var>1</var>;</td></tr>
+<tr><th id="36">36</th><td>}</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="rlw_set_run_bit" title='rlw_set_run_bit' data-ref="rlw_set_run_bit">rlw_set_run_bit</dfn>(<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="local col2 decl" id="2word" title='word' data-type='eword_t *' data-ref="2word">word</dfn>, <em>int</em> <dfn class="local col3 decl" id="3b" title='b' data-type='int' data-ref="3b">b</dfn>)</td></tr>
+<tr><th id="39">39</th><td>{</td></tr>
+<tr><th id="40">40</th><td>	<b>if</b> (<a class="local col3 ref" href="#3b" title='b' data-ref="3b">b</a>) {</td></tr>
+<tr><th id="41">41</th><td>		*<a class="local col2 ref" href="#2word" title='word' data-ref="2word">word</a> |= (<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a>)<var>1</var>;</td></tr>
+<tr><th id="42">42</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="43">43</th><td>		*<a class="local col2 ref" href="#2word" title='word' data-ref="2word">word</a> &amp;= (<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a>)(~<var>1</var>);</td></tr>
+<tr><th id="44">44</th><td>	}</td></tr>
+<tr><th id="45">45</th><td>}</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="rlw_xor_run_bit" title='rlw_xor_run_bit' data-ref="rlw_xor_run_bit">rlw_xor_run_bit</dfn>(<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="local col4 decl" id="4word" title='word' data-type='eword_t *' data-ref="4word">word</dfn>)</td></tr>
+<tr><th id="48">48</th><td>{</td></tr>
+<tr><th id="49">49</th><td>	<b>if</b> (*<a class="local col4 ref" href="#4word" title='word' data-ref="4word">word</a> &amp; <var>1</var>) {</td></tr>
+<tr><th id="50">50</th><td>		*<a class="local col4 ref" href="#4word" title='word' data-ref="4word">word</a> &amp;= (<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a>)(~<var>1</var>);</td></tr>
+<tr><th id="51">51</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="52">52</th><td>		*<a class="local col4 ref" href="#4word" title='word' data-ref="4word">word</a> |= (<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a>)<var>1</var>;</td></tr>
+<tr><th id="53">53</th><td>	}</td></tr>
+<tr><th id="54">54</th><td>}</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="rlw_set_running_len" title='rlw_set_running_len' data-ref="rlw_set_running_len">rlw_set_running_len</dfn>(<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="local col5 decl" id="5word" title='word' data-type='eword_t *' data-ref="5word">word</dfn>, <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> <dfn class="local col6 decl" id="6l" title='l' data-type='eword_t' data-ref="6l">l</dfn>)</td></tr>
+<tr><th id="57">57</th><td>{</td></tr>
+<tr><th id="58">58</th><td>	*<a class="local col5 ref" href="#5word" title='word' data-ref="5word">word</a> |= <a class="macro" href="#29" title="((((eword_t)1 &lt;&lt; (sizeof(eword_t) * 4)) - 1) &lt;&lt; 1)" data-ref="_M/RLW_LARGEST_RUNNING_COUNT_SHIFT">RLW_LARGEST_RUNNING_COUNT_SHIFT</a>;</td></tr>
+<tr><th id="59">59</th><td>	*<a class="local col5 ref" href="#5word" title='word' data-ref="5word">word</a> &amp;= (<a class="local col6 ref" href="#6l" title='l' data-ref="6l">l</a> &lt;&lt; <var>1</var>) | (~<a class="macro" href="#29" title="((((eword_t)1 &lt;&lt; (sizeof(eword_t) * 4)) - 1) &lt;&lt; 1)" data-ref="_M/RLW_LARGEST_RUNNING_COUNT_SHIFT">RLW_LARGEST_RUNNING_COUNT_SHIFT</a>);</td></tr>
+<tr><th id="60">60</th><td>}</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><em>static</em> <b>inline</b> <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> <dfn class="decl def" id="rlw_get_running_len" title='rlw_get_running_len' data-ref="rlw_get_running_len">rlw_get_running_len</dfn>(<em>const</em> <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="local col7 decl" id="7word" title='word' data-type='const eword_t *' data-ref="7word">word</dfn>)</td></tr>
+<tr><th id="63">63</th><td>{</td></tr>
+<tr><th id="64">64</th><td>	<b>return</b> (*<a class="local col7 ref" href="#7word" title='word' data-ref="7word">word</a> &gt;&gt; <var>1</var>) &amp; <a class="macro" href="#26" title="(((eword_t)1 &lt;&lt; (sizeof(eword_t) * 4)) - 1)" data-ref="_M/RLW_LARGEST_RUNNING_COUNT">RLW_LARGEST_RUNNING_COUNT</a>;</td></tr>
+<tr><th id="65">65</th><td>}</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><em>static</em> <b>inline</b> <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> <dfn class="decl def" id="rlw_get_literal_words" title='rlw_get_literal_words' data-ref="rlw_get_literal_words">rlw_get_literal_words</dfn>(<em>const</em> <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="local col8 decl" id="8word" title='word' data-type='const eword_t *' data-ref="8word">word</dfn>)</td></tr>
+<tr><th id="68">68</th><td>{</td></tr>
+<tr><th id="69">69</th><td>	<b>return</b> *<a class="local col8 ref" href="#8word" title='word' data-ref="8word">word</a> &gt;&gt; (<var>1</var> + <a class="macro" href="#23" title="(sizeof(eword_t) * 4)" data-ref="_M/RLW_RUNNING_BITS">RLW_RUNNING_BITS</a>);</td></tr>
+<tr><th id="70">70</th><td>}</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="rlw_set_literal_words" title='rlw_set_literal_words' data-ref="rlw_set_literal_words">rlw_set_literal_words</dfn>(<a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="local col9 decl" id="9word" title='word' data-type='eword_t *' data-ref="9word">word</dfn>, <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> <dfn class="local col0 decl" id="10l" title='l' data-type='eword_t' data-ref="10l">l</dfn>)</td></tr>
+<tr><th id="73">73</th><td>{</td></tr>
+<tr><th id="74">74</th><td>	*<a class="local col9 ref" href="#9word" title='word' data-ref="9word">word</a> |= ~<a class="macro" href="#31" title="(((eword_t)1 &lt;&lt; ((sizeof(eword_t) * 4) + 1)) - 1)" data-ref="_M/RLW_RUNNING_LEN_PLUS_BIT">RLW_RUNNING_LEN_PLUS_BIT</a>;</td></tr>
+<tr><th id="75">75</th><td>	*<a class="local col9 ref" href="#9word" title='word' data-ref="9word">word</a> &amp;= (<a class="local col0 ref" href="#10l" title='l' data-ref="10l">l</a> &lt;&lt; (<a class="macro" href="#23" title="(sizeof(eword_t) * 4)" data-ref="_M/RLW_RUNNING_BITS">RLW_RUNNING_BITS</a> + <var>1</var>)) | <a class="macro" href="#31" title="(((eword_t)1 &lt;&lt; ((sizeof(eword_t) * 4) + 1)) - 1)" data-ref="_M/RLW_RUNNING_LEN_PLUS_BIT">RLW_RUNNING_LEN_PLUS_BIT</a>;</td></tr>
+<tr><th id="76">76</th><td>}</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><em>static</em> <b>inline</b> <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> <dfn class="decl def" id="rlw_size" title='rlw_size' data-ref="rlw_size">rlw_size</dfn>(<em>const</em> <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="local col1 decl" id="11self" title='self' data-type='const eword_t *' data-ref="11self">self</dfn>)</td></tr>
+<tr><th id="79">79</th><td>{</td></tr>
+<tr><th id="80">80</th><td>	<b>return</b> <a class="ref" href="#rlw_get_running_len" title='rlw_get_running_len' data-ref="rlw_get_running_len">rlw_get_running_len</a>(<a class="local col1 ref" href="#11self" title='self' data-ref="11self">self</a>) + <a class="ref" href="#rlw_get_literal_words" title='rlw_get_literal_words' data-ref="rlw_get_literal_words">rlw_get_literal_words</a>(<a class="local col1 ref" href="#11self" title='self' data-ref="11self">self</a>);</td></tr>
+<tr><th id="81">81</th><td>}</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><b>struct</b> <dfn class="type def" id="rlw_iterator" title='rlw_iterator' data-ref="rlw_iterator">rlw_iterator</dfn> {</td></tr>
+<tr><th id="84">84</th><td>	<em>const</em> <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="decl" id="rlw_iterator::buffer" title='rlw_iterator::buffer' data-ref="rlw_iterator::buffer">buffer</dfn>;</td></tr>
+<tr><th id="85">85</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="rlw_iterator::size" title='rlw_iterator::size' data-ref="rlw_iterator::size">size</dfn>;</td></tr>
+<tr><th id="86">86</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="rlw_iterator::pointer" title='rlw_iterator::pointer' data-ref="rlw_iterator::pointer">pointer</dfn>;</td></tr>
+<tr><th id="87">87</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="rlw_iterator::literal_word_start" title='rlw_iterator::literal_word_start' data-ref="rlw_iterator::literal_word_start">literal_word_start</dfn>;</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td>	<b>struct</b> {</td></tr>
+<tr><th id="90">90</th><td>		<em>const</em> <a class="typedef" href="ewok.h.html#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="decl" id="rlw_iterator::(anonymous)::word" title='rlw_iterator::(anonymous struct)::word' data-ref="rlw_iterator::(anonymous)::word">word</dfn>;</td></tr>
+<tr><th id="91">91</th><td>		<em>int</em> <dfn class="decl" id="rlw_iterator::(anonymous)::literal_words" title='rlw_iterator::(anonymous struct)::literal_words' data-ref="rlw_iterator::(anonymous)::literal_words">literal_words</dfn>;</td></tr>
+<tr><th id="92">92</th><td>		<em>int</em> <dfn class="decl" id="rlw_iterator::(anonymous)::running_len" title='rlw_iterator::(anonymous struct)::running_len' data-ref="rlw_iterator::(anonymous)::running_len">running_len</dfn>;</td></tr>
+<tr><th id="93">93</th><td>		<em>int</em> <dfn class="decl" id="rlw_iterator::(anonymous)::literal_word_offset" title='rlw_iterator::(anonymous struct)::literal_word_offset' data-ref="rlw_iterator::(anonymous)::literal_word_offset">literal_word_offset</dfn>;</td></tr>
+<tr><th id="94">94</th><td>		<em>int</em> <dfn class="decl" id="rlw_iterator::(anonymous)::running_bit" title='rlw_iterator::(anonymous struct)::running_bit' data-ref="rlw_iterator::(anonymous)::running_bit">running_bit</dfn>;</td></tr>
+<tr><th id="95">95</th><td>	} <dfn class="decl" id="rlw_iterator::rlw" title='rlw_iterator::rlw' data-ref="rlw_iterator::rlw">rlw</dfn>;</td></tr>
+<tr><th id="96">96</th><td>};</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><em>void</em> <dfn class="decl" id="rlwit_init" title='rlwit_init' data-ref="rlwit_init">rlwit_init</dfn>(<b>struct</b> <a class="type" href="#rlw_iterator" title='rlw_iterator' data-ref="rlw_iterator">rlw_iterator</a> *<dfn class="local col2 decl" id="12it" title='it' data-type='struct rlw_iterator *' data-ref="12it">it</dfn>, <b>struct</b> <a class="type" href="ewok.h.html#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col3 decl" id="13bitmap" title='bitmap' data-type='struct ewah_bitmap *' data-ref="13bitmap">bitmap</dfn>);</td></tr>
+<tr><th id="99">99</th><td><em>void</em> <dfn class="decl" id="rlwit_discard_first_words" title='rlwit_discard_first_words' data-ref="rlwit_discard_first_words">rlwit_discard_first_words</dfn>(<b>struct</b> <a class="type" href="#rlw_iterator" title='rlw_iterator' data-ref="rlw_iterator">rlw_iterator</a> *<dfn class="local col4 decl" id="14it" title='it' data-type='struct rlw_iterator *' data-ref="14it">it</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="15x" title='x' data-type='size_t' data-ref="15x">x</dfn>);</td></tr>
+<tr><th id="100">100</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="rlwit_discharge" title='rlwit_discharge' data-ref="rlwit_discharge">rlwit_discharge</dfn>(</td></tr>
+<tr><th id="101">101</th><td>	<b>struct</b> <a class="type" href="#rlw_iterator" title='rlw_iterator' data-ref="rlw_iterator">rlw_iterator</a> *<dfn class="local col6 decl" id="16it" title='it' data-type='struct rlw_iterator *' data-ref="16it">it</dfn>, <b>struct</b> <a class="type" href="ewok.h.html#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col7 decl" id="17out" title='out' data-type='struct ewah_bitmap *' data-ref="17out">out</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="18max" title='max' data-type='size_t' data-ref="18max">max</dfn>, <em>int</em> <dfn class="local col9 decl" id="19negate" title='negate' data-type='int' data-ref="19negate">negate</dfn>);</td></tr>
+<tr><th id="102">102</th><td><em>void</em> <dfn class="decl" id="rlwit_discharge_empty" title='rlwit_discharge_empty' data-ref="rlwit_discharge_empty">rlwit_discharge_empty</dfn>(<b>struct</b> <a class="type" href="#rlw_iterator" title='rlw_iterator' data-ref="rlw_iterator">rlw_iterator</a> *<dfn class="local col0 decl" id="20it" title='it' data-type='struct rlw_iterator *' data-ref="20it">it</dfn>, <b>struct</b> <a class="type" href="ewok.h.html#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col1 decl" id="21out" title='out' data-type='struct ewah_bitmap *' data-ref="21out">out</dfn>);</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><em>static</em> <b>inline</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="rlwit_word_size" title='rlwit_word_size' data-ref="rlwit_word_size">rlwit_word_size</dfn>(<b>struct</b> <a class="type" href="#rlw_iterator" title='rlw_iterator' data-ref="rlw_iterator">rlw_iterator</a> *<dfn class="local col2 decl" id="22it" title='it' data-type='struct rlw_iterator *' data-ref="22it">it</dfn>)</td></tr>
+<tr><th id="105">105</th><td>{</td></tr>
+<tr><th id="106">106</th><td>	<b>return</b> <a class="local col2 ref" href="#22it" title='it' data-ref="22it">it</a>-&gt;<a class="ref" href="#rlw_iterator::rlw" title='rlw_iterator::rlw' data-ref="rlw_iterator::rlw">rlw</a>.<a class="ref" href="#rlw_iterator::(anonymous)::running_len" title='rlw_iterator::(anonymous struct)::running_len' data-ref="rlw_iterator::(anonymous)::running_len">running_len</a> + <a class="local col2 ref" href="#22it" title='it' data-ref="22it">it</a>-&gt;<a class="ref" href="#rlw_iterator::rlw" title='rlw_iterator::rlw' data-ref="rlw_iterator::rlw">rlw</a>.<a class="ref" href="#rlw_iterator::(anonymous)::literal_words" title='rlw_iterator::(anonymous struct)::literal_words' data-ref="rlw_iterator::(anonymous)::literal_words">literal_words</a>;</td></tr>
+<tr><th id="107">107</th><td>}</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><em>static</em> <b>inline</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="rlwit_literal_words" title='rlwit_literal_words' data-ref="rlwit_literal_words">rlwit_literal_words</dfn>(<b>struct</b> <a class="type" href="#rlw_iterator" title='rlw_iterator' data-ref="rlw_iterator">rlw_iterator</a> *<dfn class="local col3 decl" id="23it" title='it' data-type='struct rlw_iterator *' data-ref="23it">it</dfn>)</td></tr>
+<tr><th id="110">110</th><td>{</td></tr>
+<tr><th id="111">111</th><td>	<b>return</b> <a class="local col3 ref" href="#23it" title='it' data-ref="23it">it</a>-&gt;<a class="ref" href="#rlw_iterator::pointer" title='rlw_iterator::pointer' data-ref="rlw_iterator::pointer">pointer</a> - <a class="local col3 ref" href="#23it" title='it' data-ref="23it">it</a>-&gt;<a class="ref" href="#rlw_iterator::rlw" title='rlw_iterator::rlw' data-ref="rlw_iterator::rlw">rlw</a>.<a class="ref" href="#rlw_iterator::(anonymous)::literal_words" title='rlw_iterator::(anonymous struct)::literal_words' data-ref="rlw_iterator::(anonymous)::literal_words">literal_words</a>;</td></tr>
+<tr><th id="112">112</th><td>}</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><u>#<span data-ppcond="20">endif</span></u></td></tr>
+<tr><th id="115">115</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='ewah_bitmap.c.html'>codebrowser/ewah/ewah_bitmap.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

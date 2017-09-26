@@ -1,0 +1,10 @@
+<dec f='codebrowser/patch-ids.h' l='12' type='struct diff_options'/>
+<offset>384</offset>
+<use f='codebrowser/patch-ids.c' l='62' u='a' c='init_patch_ids'/>
+<use f='codebrowser/patch-ids.c' l='63' u='m' c='init_patch_ids'/>
+<use f='codebrowser/patch-ids.c' l='64' u='a' c='init_patch_ids'/>
+<use f='codebrowser/patch-ids.c' l='64' u='a' c='init_patch_ids'/>
+<use f='codebrowser/patch-ids.c' l='65' u='a' c='init_patch_ids'/>
+<use f='codebrowser/patch-ids.c' l='66' u='a' c='init_patch_ids'/>
+<use f='codebrowser/patch-ids.c' l='83' u='a' c='init_patch_id_entry'/>
+<use f='codebrowser/revision.c' l='831' u='m' c='cherry_pick_list'/>

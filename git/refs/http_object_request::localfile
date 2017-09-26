@@ -1,0 +1,22 @@
+<dec f='codebrowser/http.h' l='216' type='int'/>
+<offset>32832</offset>
+<use f='codebrowser/http-walker.c' l='115' u='r' c='release_object_request'/>
+<use f='codebrowser/http-walker.c' l='116' u='r' c='release_object_request'/>
+<use f='codebrowser/http-walker.c' l='513' u='r' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='514' u='r' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='515' u='w' c='fetch_object'/>
+<use f='codebrowser/http.c' l='2128' u='r' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2161' u='w' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2172' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2173' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2174' u='w' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2180' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2187' u='w' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2191' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2235' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2236' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2286' u='r' c='finish_http_object_request'/>
+<use f='codebrowser/http.c' l='2287' u='w' c='finish_http_object_request'/>
+<use f='codebrowser/http.c' l='2325' u='r' c='release_http_object_request'/>
+<use f='codebrowser/http.c' l='2326' u='r' c='release_http_object_request'/>
+<use f='codebrowser/http.c' l='2327' u='w' c='release_http_object_request'/>

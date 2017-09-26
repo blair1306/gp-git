@@ -1,0 +1,4 @@
+<dec f='codebrowser/http.h' l='49'/>
+<use f='codebrowser/http.c' l='814' u='a'/>
+<use f='codebrowser/http.c' l='816' u='c'/>
+<use f='codebrowser/imap-send.c' l='1434' u='c'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/compat/obstack.h' l='211'/>
+<doc f='codebrowser/compat/obstack.h' l='209'>/* Pointer to next byte not yet allocated in current chunk.  */</doc>

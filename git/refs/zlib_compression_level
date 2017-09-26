@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='740' type='int'/>
+<use f='codebrowser/builtin/index-pack.c' l='1294' u='r' c='write_compressed'/>
+<use f='codebrowser/config.c' l='1091' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1105' u='w' c='git_default_core_config'/>
+<use f='codebrowser/diff.c' l='2205' u='r' c='deflate_it'/>
+<def f='codebrowser/environment.c' l='36' type='int'/>
+<use f='codebrowser/http-push.c' l='367' u='r' c='start_put'/>
+<use f='codebrowser/sha1_file.c' l='3326' u='r' c='write_loose_object'/>

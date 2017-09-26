@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='153' type='int cmd_config(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/config.c' l='481' ll='729' type='int cmd_config(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='388'/>
+<use f='codebrowser/git.c' l='388'/>
+<use f='codebrowser/git.c' l='388'/>
+<use f='codebrowser/git.c' l='388'/>

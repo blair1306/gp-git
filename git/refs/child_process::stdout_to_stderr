@@ -1,0 +1,22 @@
+<dec f='codebrowser/run-command.h' l='43' type='unsigned int'/>
+<offset>581</offset>
+<use f='codebrowser/builtin/am.c' l='520' u='w' c='run_post_rewrite_hook'/>
+<use f='codebrowser/builtin/commit.c' l='1550' u='w' c='run_rewrite_hook'/>
+<use f='codebrowser/builtin/help.c' l='92' u='w' c='check_emacsclient_version'/>
+<use f='codebrowser/builtin/receive-pack.c' l='704' u='w' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='815' u='w' c='run_update_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='950' u='w' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='961' u='w' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='974' u='w' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='986' u='w' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1193' u='w' c='run_update_post_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='2008' u='w' c='cmd_receive_pack'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='840' u='w' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/fast-import.c' l='992' u='w' c='loosen_small_pack'/>
+<use f='codebrowser/run-command.c' l='588' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='699' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='902' u='w' c='run_command_v_opt_cd_env'/>
+<use f='codebrowser/run-command.c' l='1196' u='w' c='run_hook_ve'/>
+<use f='codebrowser/run-command.c' l='1530' u='w' c='pp_start_one'/>
+<use f='codebrowser/sequencer.c' l='637' u='w' c='run_git_commit'/>
+<use f='codebrowser/sequencer.c' l='2178' u='w' c='pick_commits'/>

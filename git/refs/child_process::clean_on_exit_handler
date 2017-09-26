@@ -1,0 +1,5 @@
+<dec f='codebrowser/run-command.h' l='47' type='void (*)(struct child_process *)'/>
+<offset>640</offset>
+<use f='codebrowser/run-command.c' l='40' u='r' c='cleanup_children'/>
+<use f='codebrowser/run-command.c' l='45' u='r' c='cleanup_children'/>
+<use f='codebrowser/sub-process.c' l='91' u='w' c='subprocess_start'/>

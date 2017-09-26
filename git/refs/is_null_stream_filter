@@ -1,0 +1,4 @@
+<dec f='codebrowser/convert.h' l='100' type='int is_null_stream_filter(struct stream_filter * )'/>
+<def f='codebrowser/convert.c' l='1271' ll='1274' type='int is_null_stream_filter(struct stream_filter * filter)'/>
+<use f='codebrowser/convert.c' l='1477' u='c' c='cascade_filter'/>
+<use f='codebrowser/convert.c' l='1479' u='c' c='cascade_filter'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/git-compat-util.h' l='327'/>
+<use f='codebrowser/builtin/am.c' l='895' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='541' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='559' u='c'/>
+<use f='codebrowser/bundle.c' l='231' u='c'/>
+<use f='codebrowser/commit.c' l='94' u='c'/>
+<use f='codebrowser/commit.c' l='609' u='c'/>
+<use f='codebrowser/date.c' l='536' u='c'/>
+<use f='codebrowser/date.c' l='684' u='c'/>
+<use f='codebrowser/date.c' l='1092' u='c'/>
+<use f='codebrowser/fsck.c' l='694' u='c'/>
+<use f='codebrowser/pretty.c' l='413' u='c'/>
+<use f='codebrowser/ref-filter.c' l='886' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1825' u='c'/>
+<use f='codebrowser/t/helper/test-date.c' l='37' u='c'/>
+<use f='codebrowser/tag.c' l='114' u='c'/>
+<use f='codebrowser/upload-pack.c' l='779' u='c'/>

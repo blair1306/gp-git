@@ -1,0 +1,3 @@
+<dec f='include/unistd.h' l='548' type='char **'/>
+<dec f='codebrowser/run-command.c' l='418' type='char **'/>
+<use f='codebrowser/run-command.c' l='426' u='r' c='prep_childenv'/>

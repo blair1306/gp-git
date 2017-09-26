@@ -1,0 +1,2 @@
+<dec f='include/openssl/ssl.h' l='2334' type='int SSL_read(SSL * ssl, void * buf, int num)'/>
+<use f='codebrowser/imap-send.c' l='362' u='c' c='socket_read'/>

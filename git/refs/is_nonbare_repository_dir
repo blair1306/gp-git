@@ -1,0 +1,14 @@
+<dec f='codebrowser/cache.h' l='510' type='int is_nonbare_repository_dir(struct strbuf * path)'/>
+<doc f='codebrowser/cache.h' l='500'>/*
+ * Return 1 if the given path is the root of a git repository or
+ * submodule, else 0. Will not return 1 for bare repositories with the
+ * exception of creating a bare repository in &quot;foo/.git&quot; and calling
+ * is_git_repository(&quot;foo&quot;).
+ *
+ * If we run into read errors, we err on the side of saying &quot;yes, it is&quot;,
+ * as we usually consider sub-repos precious, and would prefer to err on the
+ * side of not disrupting or deleting them.
+ */</doc>
+<use f='codebrowser/builtin/clean.c' l='162' u='c' c='remove_dirs'/>
+<use f='codebrowser/refs.c' l='1654' u='c' c='get_submodule_ref_store'/>
+<def f='codebrowser/setup.c' l='346' ll='361' type='int is_nonbare_repository_dir(struct strbuf * path)'/>

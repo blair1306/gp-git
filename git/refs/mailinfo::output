@@ -1,0 +1,10 @@
+<dec f='codebrowser/mailinfo.h' l='8' type='FILE *'/>
+<use f='codebrowser/builtin/am.c' l='1260' u='w' c='parse_mail'/>
+<use f='codebrowser/builtin/am.c' l='1265' u='r' c='parse_mail'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/mailinfo.c' l='54' u='w' c='cmd_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1068' u='r' c='handle_info'/>
+<use f='codebrowser/mailinfo.c' l='1072' u='r' c='handle_info'/>
+<use f='codebrowser/mailinfo.c' l='1073' u='r' c='handle_info'/>
+<use f='codebrowser/mailinfo.c' l='1076' u='r' c='handle_info'/>
+<use f='codebrowser/mailinfo.c' l='1079' u='r' c='handle_info'/>

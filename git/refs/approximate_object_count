@@ -1,0 +1,14 @@
+<dec f='codebrowser/cache.h' l='1638' type='unsigned long approximate_object_count()'/>
+<doc f='codebrowser/cache.h' l='1634'>/*
+ * Give a rough count of objects in the repository. This sacrifices accuracy
+ * for speed.
+ */</doc>
+<def f='codebrowser/sha1_file.c' l='1509' ll='1524' type='unsigned long approximate_object_count()'/>
+<doc f='codebrowser/sha1_file.c' l='1502'>/*
+ * Give a fast, rough count of the number of objects in the repository. This
+ * ignores loose objects completely. If you have a lot of them, then either
+ * you should repack because your performance will be awful, or they are
+ * all unreachable objects about to be pruned, in which case they&apos;re not really
+ * interesting as a measure of repo size in the first place.
+ */</doc>
+<use f='codebrowser/sha1_name.c' l='481' u='c' c='find_unique_abbrev_r'/>

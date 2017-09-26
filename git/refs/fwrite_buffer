@@ -1,0 +1,9 @@
+<dec f='codebrowser/http.h' l='79' type='size_t fwrite_buffer(char * ptr, size_t eltsize, size_t nmemb, void * strbuf)'/>
+<use f='codebrowser/http-push.c' l='886' u='r' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='1141' u='r' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1215' u='r' c='locking_available'/>
+<use f='codebrowser/http-walker.c' l='238' u='c' c='process_alternates_response'/>
+<use f='codebrowser/http-walker.c' l='377' c='fetch_alternates'/>
+<def f='codebrowser/http.c' l='179' ll='186' type='size_t fwrite_buffer(char * ptr, size_t eltsize, size_t nmemb, void * buffer_)'/>
+<use f='codebrowser/http.c' l='1682' c='http_request'/>
+<use f='codebrowser/remote-curl.c' l='525' c='probe_rpc'/>

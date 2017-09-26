@@ -1,0 +1,5 @@
+<def f='codebrowser/convert.c' l='1281' ll='1285'/>
+<size>16</size>
+<doc f='codebrowser/convert.c' l='1277'>/*
+ * LF-to-CRLF filter
+ */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/transport.h' l='184'/>
+<doc f='codebrowser/transport.h' l='183'>/* Transfer the data as a thin pack if not null */</doc>
+<use f='codebrowser/builtin/push.c' l='325' u='c'/>
+<use f='codebrowser/transport-helper.c' l='253' u='c'/>
+<use f='codebrowser/transport-helper.c' l='258' u='c'/>
+<use f='codebrowser/transport.c' l='133' u='c'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/diff.h' l='226' type='struct object_id'/>
+<offset>160</offset>
+<use f='codebrowser/combine-diff.c' l='47' u='a' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='922' u='m' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='995' u='a' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1018' u='a' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1209' u='a' c='show_raw_diff'/>
+<use f='codebrowser/combine-diff.c' l='1280' u='a' c='combined_pair'/>
+<use f='codebrowser/combine-diff.c' l='1281' u='a' c='combined_pair'/>
+<use f='codebrowser/diff-lib.c' l='128' u='a' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='350' u='a' c='show_modified'/>
+<use f='codebrowser/tree-diff.c' l='78' u='a' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='88' u='a' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='164' u='a' c='path_appendnew'/>

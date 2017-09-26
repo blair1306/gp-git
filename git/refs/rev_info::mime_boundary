@@ -1,0 +1,15 @@
+<dec f='codebrowser/revision.h' l='166' type='const char *'/>
+<offset>1472</offset>
+<use f='codebrowser/builtin/log.c' l='1185' u='w' c='attach_callback'/>
+<use f='codebrowser/builtin/log.c' l='1187' u='w' c='attach_callback'/>
+<use f='codebrowser/builtin/log.c' l='1189' u='w' c='attach_callback'/>
+<use f='codebrowser/builtin/log.c' l='1198' u='w' c='inline_callback'/>
+<use f='codebrowser/builtin/log.c' l='1200' u='w' c='inline_callback'/>
+<use f='codebrowser/builtin/log.c' l='1202' u='w' c='inline_callback'/>
+<use f='codebrowser/builtin/log.c' l='1522' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1820' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1823' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='377' u='r' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='395' u='r' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='396' u='r' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='410' u='r' c='log_write_email_headers'/>

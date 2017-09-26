@@ -1,0 +1,2 @@
+<dec f='codebrowser/path.h' l='38' type='char * repo_git_path(const struct repository * repo, const char * fmt)'/>
+<def f='codebrowser/path.c' l='419' ll='428' type='char * repo_git_path(const struct repository * repo, const char * fmt)'/>

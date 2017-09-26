@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='57'/>
+<use f='codebrowser/credential-cache.c' l='21' u='c'/>
+<use f='codebrowser/send-pack.c' l='574' u='c'/>
+<use f='codebrowser/transport-helper.c' l='1177' u='c'/>

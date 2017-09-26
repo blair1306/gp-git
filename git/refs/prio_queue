@@ -1,0 +1,8 @@
+<def f='codebrowser/prio-queue.h' l='29' ll='35'/>
+<size>40</size>
+<mbr r='prio_queue::compare' o='0' t='prio_queue_compare_fn'/>
+<mbr r='prio_queue::insertion_ctr' o='64' t='unsigned int'/>
+<mbr r='prio_queue::cb_data' o='128' t='void *'/>
+<mbr r='prio_queue::alloc' o='192' t='int'/>
+<mbr r='prio_queue::nr' o='224' t='int'/>
+<mbr r='prio_queue::array' o='256' t='struct prio_queue_entry *'/>

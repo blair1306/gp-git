@@ -1,0 +1,7 @@
+<dec f='include/regex.h' l='571' type='size_t regerror(int __errcode, const regex_t *restrict __preg, char *restrict __errbuf, size_t __errbuf_size)'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='210' u='c' c='regcomp_or_die'/>
+<use f='codebrowser/grep.c' l='607' u='c' c='compile_fixed_regexp'/>
+<use f='codebrowser/grep.c' l='672' u='c' c='compile_regexp'/>
+<use f='codebrowser/line-range.c' l='112' u='c' c='parse_loc'/>
+<use f='codebrowser/line-range.c' l='145' u='c' c='find_funcname_matching_regexp'/>
+<use f='codebrowser/line-range.c' l='211' u='c' c='parse_range_funcname'/>

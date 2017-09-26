@@ -1,0 +1,7 @@
+<def f='codebrowser/diff-delta.c' l='125' ll='131'/>
+<size>32</size>
+<mbr r='delta_index::memsize' o='0' t='unsigned long'/>
+<mbr r='delta_index::src_buf' o='64' t='const void *'/>
+<mbr r='delta_index::src_size' o='128' t='unsigned long'/>
+<mbr r='delta_index::hash_mask' o='192' t='unsigned int'/>
+<mbr r='delta_index::hash' o='256' t='struct index_entry *[]'/>

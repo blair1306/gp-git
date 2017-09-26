@@ -1,0 +1,4 @@
+<dec f='codebrowser/urlmatch.h' l='53' type='int urlmatch_config_entry(const char * var, const char * value, void * cb)'/>
+<use f='codebrowser/builtin/config.c' l='443' u='r' c='get_urlmatch'/>
+<use f='codebrowser/http.c' l='915' u='r' c='http_init'/>
+<def f='codebrowser/urlmatch.c' l='551' ll='607' type='int urlmatch_config_entry(const char * var, const char * value, void * cb)'/>

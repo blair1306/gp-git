@@ -1,0 +1,21 @@
+<dec f='codebrowser/grep.h' l='120' type='struct grep_pat *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/grep.c' l='925' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='931' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='949' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='1058' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='1058' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='1072' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/rev-list.c' l='364' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/grep.c' l='146' u='a' c='grep_init'/>
+<use f='codebrowser/grep.c' l='315' u='w' c='grep_opt_dup'/>
+<use f='codebrowser/grep.c' l='316' u='a' c='grep_opt_dup'/>
+<use f='codebrowser/grep.c' l='318' u='r' c='grep_opt_dup'/>
+<use f='codebrowser/grep.c' l='946' u='r' c='compile_grep_patterns_real'/>
+<use f='codebrowser/grep.c' l='964' u='r' c='compile_grep_patterns_real'/>
+<use f='codebrowser/grep.c' l='1013' u='r' c='free_grep_patterns'/>
+<use f='codebrowser/grep.c' l='1280' u='r' c='match_line'/>
+<use f='codebrowser/grep.c' l='1316' u='r' c='next_match'/>
+<use f='codebrowser/grep.c' l='1531' u='r' c='should_lookahead'/>
+<use f='codebrowser/grep.c' l='1549' u='r' c='look_ahead'/>
+<use f='codebrowser/revision.c' l='2905' u='r' c='commit_match'/>

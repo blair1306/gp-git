@@ -1,0 +1,1 @@
+<def f='codebrowser/commit.c' l='590' macro='1' type='unsigned long * author_date_slab_peek(struct author_date_slab * s, const struct commit * c)'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/graph.c' l='186' type='int'/>
+<use f='codebrowser/graph.c' l='288' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='428' u='r' c='graph_find_commit_color'/>
+<use f='codebrowser/graph.c' l='475' u='r' c='graph_update_width'/>
+<use f='codebrowser/graph.c' l='514' u='w' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='525' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='547' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='549' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='661' u='r' c='graph_update'/>
+<use f='codebrowser/graph.c' l='750' u='r' c='graph_output_skip_line'/>
+<use f='codebrowser/graph.c' l='785' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='886' u='r' c='graph_output_commit_line'/>
+<use f='codebrowser/graph.c' l='889' u='r' c='graph_output_commit_line'/>
+<use f='codebrowser/graph.c' l='969' u='r' c='graph_output_post_merge_line'/>
+<use f='codebrowser/graph.c' l='972' u='r' c='graph_output_post_merge_line'/>
+<use f='codebrowser/graph.c' l='1220' u='r' c='graph_padding_line'/>
+<offset>384</offset>
+<doc f='codebrowser/graph.c' l='183'>/*
+	 * The number of columns (also called &quot;branch lines&quot; in some places)
+	 */</doc>

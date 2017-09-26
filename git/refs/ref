@@ -1,0 +1,17 @@
+<def f='codebrowser/remote.h' l='82' ll='130'/>
+<size>112</size>
+<mbr r='ref::next' o='0' t='struct ref *'/>
+<mbr r='ref::old_oid' o='64' t='struct object_id'/>
+<mbr r='ref::new_oid' o='224' t='struct object_id'/>
+<mbr r='ref::old_oid_expect' o='384' t='struct object_id'/>
+<mbr r='ref::symref' o='576' t='char *'/>
+<mbr r='ref::force' o='640' t='unsigned int'/>
+<mbr r='ref::forced_update' o='641' t='unsigned int'/>
+<mbr r='ref::expect_old_sha1' o='642' t='unsigned int'/>
+<mbr r='ref::deletion' o='643' t='unsigned int'/>
+<mbr r='ref::match_status' o='672' t='enum (anonymous enum at /home/jon/workspace/git/remote.h:94:2)'/>
+<mbr r='ref::fetch_head_status' o='704' t='enum (anonymous enum at /home/jon/workspace/git/remote.h:106:2)'/>
+<mbr r='ref::status' o='736' t='enum (anonymous enum at /home/jon/workspace/git/remote.h:112:2)'/>
+<mbr r='ref::remote_status' o='768' t='char *'/>
+<mbr r='ref::peer_ref' o='832' t='struct ref *'/>
+<mbr r='ref::name' o='896' t='char []'/>

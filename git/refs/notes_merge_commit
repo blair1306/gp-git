@@ -1,0 +1,14 @@
+<dec f='codebrowser/notes-merge.h' l='68' type='int notes_merge_commit(struct notes_merge_options * o, struct notes_tree * partial_tree, struct commit * partial_commit, struct object_id * result_oid)'/>
+<use f='codebrowser/builtin/notes.c' l='730' u='c' c='merge_commit'/>
+<doc f='codebrowser/notes-merge.h' l='57'>/*
+ * Finalize conflict resolution from an earlier notes_merge()
+ *
+ * The given notes tree &apos;partial_tree&apos; must be the notes_tree corresponding to
+ * the given &apos;partial_commit&apos;, the partial result commit created by a previous
+ * call to notes_merge().
+ *
+ * This function will add the (now resolved) notes in .git/NOTES_MERGE_WORKTREE
+ * to &apos;partial_tree&apos;, and create a final notes merge commit, the OID of which
+ * will be stored in &apos;result_oid&apos;.
+ */</doc>
+<def f='codebrowser/notes-merge.c' l='660' ll='732' type='int notes_merge_commit(struct notes_merge_options * o, struct notes_tree * partial_tree, struct commit * partial_commit, struct object_id * result_oid)'/>

@@ -1,0 +1,2 @@
+<dec f='include/openssl/ssl.h' l='2441' type='int SSL_CTX_set_default_verify_paths(SSL_CTX * ctx)'/>
+<use f='codebrowser/imap-send.c' l='309' u='c' c='ssl_socket_connect'/>

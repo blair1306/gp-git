@@ -1,0 +1,9 @@
+<def f='codebrowser/ref-filter.h' l='36' ll='44'/>
+<size>56</size>
+<mbr r='ref_array_item::objectname' o='0' t='struct object_id'/>
+<mbr r='ref_array_item::flag' o='160' t='int'/>
+<mbr r='ref_array_item::kind' o='192' t='unsigned int'/>
+<mbr r='ref_array_item::symref' o='256' t='const char *'/>
+<mbr r='ref_array_item::commit' o='320' t='struct commit *'/>
+<mbr r='ref_array_item::value' o='384' t='struct atom_value *'/>
+<mbr r='ref_array_item::refname' o='448' t='char []'/>

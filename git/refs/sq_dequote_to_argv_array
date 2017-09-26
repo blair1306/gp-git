@@ -1,0 +1,4 @@
+<dec f='codebrowser/quote.h' l='55' type='int sq_dequote_to_argv_array(char * arg, struct argv_array * )'/>
+<use f='codebrowser/bisect.c' l='446' u='c' c='read_bisect_paths'/>
+<use f='codebrowser/builtin/am.c' l='463' u='c' c='am_load'/>
+<def f='codebrowser/quote.c' l='149' ll='152' type='int sq_dequote_to_argv_array(char * arg, struct argv_array * array)'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='117' type='4'/>
+<use f='codebrowser/builtin/send-pack.c' l='76' c='print_helper_status'/>
+<use f='codebrowser/send-pack.c' l='251' c='check_to_send_update'/>
+<use f='codebrowser/send-pack.c' l='472' u='r' c='send_pack'/>
+<use f='codebrowser/transport.c' l='392' c='print_one_push_status'/>

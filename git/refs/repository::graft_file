@@ -1,0 +1,13 @@
+<dec f='codebrowser/repository.h' l='32' type='char *'/>
+<offset>192</offset>
+<doc f='codebrowser/repository.h' l='28'>/*
+	 * Path to the repository&apos;s graft file.
+	 * Cannot be NULL after initialization.
+	 */</doc>
+<use f='codebrowser/environment.c' l='289' u='r' c='get_graft_file'/>
+<use f='codebrowser/environment.c' l='291' u='r' c='get_graft_file'/>
+<use f='codebrowser/path.c' l='380' u='r' c='adjust_git_path'/>
+<use f='codebrowser/path.c' l='380' u='r' c='adjust_git_path'/>
+<use f='codebrowser/repository.c' l='46' u='w' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='209' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='210' u='w' c='repo_clear'/>

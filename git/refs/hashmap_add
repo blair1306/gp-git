@@ -1,0 +1,30 @@
+<dec f='codebrowser/hashmap.h' l='319' type='void hashmap_add(struct hashmap * map, void * entry)'/>
+<doc f='codebrowser/hashmap.h' l='312'>/*
+ * Adds a hashmap entry. This allows to add duplicate entries (i.e.
+ * separate values with the same key according to hashmap_cmp_fn).
+ *
+ * `map` is the hashmap structure.
+ * `entry` is the entry to add.
+ */</doc>
+<use f='codebrowser/attr.c' l='132' u='c' c='attr_hashmap_add'/>
+<use f='codebrowser/builtin/describe.c' l='118' u='c' c='add_to_known_names'/>
+<use f='codebrowser/builtin/difftool.c' l='177' u='c' c='add_left_or_right'/>
+<use f='codebrowser/builtin/difftool.c' l='244' u='c' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='475' u='c' c='run_dir_diff'/>
+<use f='codebrowser/config.c' l='1699' u='c' c='configset_add_value'/>
+<use f='codebrowser/diffcore-rename.c' l='326' u='c' c='insert_file_table'/>
+<def f='codebrowser/hashmap.c' l='200' ll='212' type='void hashmap_add(struct hashmap * map, void * entry)'/>
+<use f='codebrowser/hashmap.c' l='236' u='c' c='hashmap_put'/>
+<use f='codebrowser/hashmap.c' l='296' u='c' c='memintern'/>
+<use f='codebrowser/name-hash.c' l='73' u='c' c='hash_dir_entry'/>
+<use f='codebrowser/name-hash.c' l='110' u='c' c='hash_index_entry'/>
+<use f='codebrowser/name-hash.c' l='302' u='c' c='hash_dir_entry_with_parent_and_prefix'/>
+<use f='codebrowser/name-hash.c' l='491' u='c' c='lazy_name_thread_proc'/>
+<use f='codebrowser/oidset.c' l='43' u='c' c='oidset_insert'/>
+<use f='codebrowser/patch-ids.c' l='119' u='c' c='add_commit_patch_id'/>
+<use f='codebrowser/sha1_file.c' l='2367' u='c' c='add_delta_base_cache'/>
+<use f='codebrowser/sub-process.c' l='108' u='c' c='subprocess_start'/>
+<use f='codebrowser/submodule-config.c' l='148' u='c' c='cache_add'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='104' u='c' c='perf_hashmap'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='117' u='c' c='perf_hashmap'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='188' u='c' c='cmd_main'/>

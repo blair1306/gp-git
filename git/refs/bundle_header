@@ -1,0 +1,4 @@
+<def f='codebrowser/bundle.h' l='14' ll='17'/>
+<size>32</size>
+<mbr r='bundle_header::prerequisites' o='0' t='struct ref_list'/>
+<mbr r='bundle_header::references' o='128' t='struct ref_list'/>

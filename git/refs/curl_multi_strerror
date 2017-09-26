@@ -1,0 +1,11 @@
+<dec f='include/curl/multi.h' l='241' type='const char * curl_multi_strerror(CURLMcode )'/>
+<doc f='include/curl/multi.h' l='232'>/*
+ * Name:    curl_multi_strerror()
+ *
+ * Desc:    The curl_multi_strerror function may be used to turn a CURLMcode
+ *          value into the equivalent human readable error string.  This is
+ *          useful for printing meaningful error messages.
+ *
+ * Returns: A pointer to a zero-terminated error message.
+ */</doc>
+<use f='codebrowser/http.c' l='1146' u='c' c='start_active_slot'/>

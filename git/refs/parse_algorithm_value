@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='397' type='long parse_algorithm_value(const char * value)'/>
+<def f='codebrowser/diff.c' l='162' ll='175' type='long parse_algorithm_value(const char * value)'/>
+<use f='codebrowser/diff.c' l='288' u='c' c='git_diff_ui_config'/>
+<use f='codebrowser/diff.c' l='3895' u='c' c='diff_opt_parse'/>
+<use f='codebrowser/merge-recursive.c' l='2204' u='c' c='parse_merge_opt'/>

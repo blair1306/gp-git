@@ -1,0 +1,26 @@
+<dec f='codebrowser/cache-tree.h' l='20' type='int'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/fsck.c' l='610' u='r' c='fsck_cache_tree'/>
+<use f='codebrowser/cache-tree.c' l='25' u='r' c='cache_tree_free'/>
+<use f='codebrowser/cache-tree.c' l='50' u='r' c='subtree_pos'/>
+<use f='codebrowser/cache-tree.c' l='79' u='r' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='79' u='r' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='79' u='r' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='80' u='w' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='86' u='r' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='89' u='r' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='135' u='r' c='do_invalidate_path'/>
+<use f='codebrowser/cache-tree.c' l='136' u='w' c='do_invalidate_path'/>
+<use f='codebrowser/cache-tree.c' l='208' u='r' c='discard_unused_subtrees'/>
+<use f='codebrowser/cache-tree.c' l='217' u='w' c='discard_unused_subtrees'/>
+<use f='codebrowser/cache-tree.c' l='229' u='r' c='cache_tree_fully_valid'/>
+<use f='codebrowser/cache-tree.c' l='263' u='r' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='456' u='r' c='write_one'/>
+<use f='codebrowser/cache-tree.c' l='471' u='r' c='write_one'/>
+<use f='codebrowser/cache-tree.c' l='560' u='r' c='read_one'/>
+<use f='codebrowser/revision.c' l='1256' u='r' c='add_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='10' u='r' c='dump_one'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='14' u='r' c='dump_one'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='37' u='r' c='dump_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='37' u='r' c='dump_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='44' u='r' c='dump_cache_tree'/>

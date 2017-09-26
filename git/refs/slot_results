@@ -1,0 +1,6 @@
+<def f='codebrowser/http.h' l='53' ll='58'/>
+<size>32</size>
+<mbr r='slot_results::curl_result' o='0' t='CURLcode'/>
+<mbr r='slot_results::http_code' o='64' t='long'/>
+<mbr r='slot_results::auth_avail' o='128' t='long'/>
+<mbr r='slot_results::http_connectcode' o='192' t='long'/>

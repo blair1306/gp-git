@@ -1,0 +1,15 @@
+<dec f='codebrowser/prio-queue.h' l='47' type='void * prio_queue_get(struct prio_queue * )'/>
+<use f='codebrowser/blame.c' l='1550' u='c' c='assign_blame'/>
+<use f='codebrowser/blame.c' l='1561' u='c' c='assign_blame'/>
+<doc f='codebrowser/prio-queue.h' l='42'>/*
+ * Extract the &quot;thing&quot; that compares the smallest out of the queue,
+ * or NULL.  If compare function is NULL, the queue acts as a LIFO
+ * stack.
+ */</doc>
+<use f='codebrowser/commit.c' l='726' u='c' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='800' u='c' c='paint_down_to_common'/>
+<use f='codebrowser/fetch-pack.c' l='199' u='c' c='get_rev'/>
+<def f='codebrowser/prio-queue.c' l='58' ll='87' type='void * prio_queue_get(struct prio_queue * queue)'/>
+<use f='codebrowser/t/helper/test-prio-queue.c' l='25' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-prio-queue.c' l='28' u='c' c='cmd_main'/>
+<use f='codebrowser/upload-pack.c' l='331' u='c' c='reachable'/>

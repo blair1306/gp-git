@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs.h' l='258'/>
+<doc f='codebrowser/refs.h' l='253'>/*
+ * Reference name is not well formed.
+ *
+ * See git-check-ref-format(1) for the definition of well formed ref names.
+ */</doc>
+<use f='codebrowser/ref-filter.c' l='1834' u='c'/>
+<use f='codebrowser/refs.c' l='1441' u='c'/>
+<use f='codebrowser/refs.c' l='1453' u='c'/>
+<use f='codebrowser/refs.c' l='1461' u='c'/>
+<use f='codebrowser/refs.c' l='1480' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='221' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='253' u='c'/>

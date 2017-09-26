@@ -1,0 +1,4 @@
+<dec f='codebrowser/parse-options.h' l='202' type='int'/>
+<offset>192</offset>
+<use f='codebrowser/parse-options.c' l='416' u='w' c='parse_options_start'/>
+<use f='codebrowser/parse-options.c' l='455' u='r' c='parse_options_step'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='2024' type='void sleep_millisec(int millisec)'/>
+<use f='codebrowser/help.c' l='371' u='c' c='help_unknown_cmd'/>
+<use f='codebrowser/lockfile.c' l='137' u='c' c='lock_file_timeout'/>
+<def f='codebrowser/wrapper.c' l='676' ll='679' type='void sleep_millisec(int millisec)'/>

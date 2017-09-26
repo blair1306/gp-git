@@ -1,0 +1,6 @@
+<dec f='include/zlib.h' l='91' type='uInt'/>
+<offset>256</offset>
+<doc f='include/zlib.h' l='91'>/* remaining free space at next_out */</doc>
+<use f='codebrowser/zlib.c' l='44' u='w' c='zlib_pre_call'/>
+<use f='codebrowser/zlib.c' l='129' u='r' c='git_inflate'/>
+<use f='codebrowser/zlib.c' l='255' u='r' c='git_deflate'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='108' type='2'/>
+<use f='codebrowser/diff.c' l='858'/>
+<use f='codebrowser/diff.c' l='858'/>
+<use f='codebrowser/diff.c' l='858'/>
+<use f='codebrowser/diff.c' l='858'/>
+<use f='codebrowser/diff.c' l='3945' u='r' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3949' u='r' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3963' u='r' c='diff_opt_parse'/>

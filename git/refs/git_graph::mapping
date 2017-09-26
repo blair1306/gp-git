@@ -1,0 +1,31 @@
+<dec f='codebrowser/graph.c' l='216' type='int *'/>
+<use f='codebrowser/graph.c' l='305' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='305' u='r' c='graph_init'/>
+<use f='codebrowser/graph.c' l='335' u='w' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='335' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='335' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='447' u='r' c='graph_insert_into_new_columns'/>
+<use f='codebrowser/graph.c' l='458' u='r' c='graph_insert_into_new_columns'/>
+<use f='codebrowser/graph.c' l='533' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='596' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='678' u='r' c='graph_is_mapping_correct'/>
+<use f='codebrowser/graph.c' l='1042' u='r' c='graph_output_collapsing_line'/>
+<use f='codebrowser/graph.c' l='1165' u='a' c='graph_output_collapsing_line'/>
+<use f='codebrowser/graph.c' l='1165' c='graph_output_collapsing_line'/>
+<use f='codebrowser/graph.c' l='1165' u='r' c='graph_output_collapsing_line'/>
+<use f='codebrowser/graph.c' l='1165' u='r' c='graph_output_collapsing_line'/>
+<use f='codebrowser/graph.c' l='1165' u='r' c='graph_output_collapsing_line'/>
+<use f='codebrowser/graph.c' l='1165' u='r' c='graph_output_collapsing_line'/>
+<offset>640</offset>
+<doc f='codebrowser/graph.c' l='204'>/*
+	 * An array that tracks the current state of each
+	 * character in the output line during state GRAPH_COLLAPSING.
+	 * Each entry is -1 if this character is empty, or a non-negative
+	 * integer if the character contains a branch line.  The value of
+	 * the integer indicates the target position for this branch line.
+	 * (I.e., this array maps the current column positions to their
+	 * desired positions.)
+	 *
+	 * The maximum capacity of this array is always
+	 * sizeof(int) * 2 * column_capacity.
+	 */</doc>

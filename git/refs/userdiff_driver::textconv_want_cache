@@ -1,0 +1,4 @@
+<dec f='codebrowser/userdiff.h' l='19' type='int'/>
+<offset>512</offset>
+<use f='codebrowser/userdiff.c' l='252' u='a' c='userdiff_config'/>
+<use f='codebrowser/userdiff.c' l='289' u='r' c='userdiff_get_textconv'/>

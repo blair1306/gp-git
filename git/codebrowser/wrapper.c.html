@@ -1,0 +1,710 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>wrapper.c source code [codebrowser/wrapper.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/wrapper.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='wrapper.c.html'>wrapper.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Various trivial helper wrappers around standard functions</i></td></tr>
+<tr><th id="3">3</th><td><i> */</i></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="config.h.html">"config.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="do_nothing" title='do_nothing' data-type='void do_nothing(size_t size)' data-ref="do_nothing">do_nothing</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="1size" title='size' data-type='size_t' data-ref="1size">size</dfn>)</td></tr>
+<tr><th id="8">8</th><td>{</td></tr>
+<tr><th id="9">9</th><td>}</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><em>static</em> <em>void</em> (*<dfn class="tu decl def" id="try_to_free_routine" title='try_to_free_routine' data-type='void (*)(size_t)' data-ref="try_to_free_routine">try_to_free_routine</dfn>)(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="2size" title='size' data-type='size_t' data-ref="2size">size</dfn>) = <a class="tu ref" href="#do_nothing" title='do_nothing' data-use='r' data-ref="do_nothing">do_nothing</a>;</td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="memory_limit_check" title='memory_limit_check' data-type='int memory_limit_check(size_t size, int gentle)' data-ref="memory_limit_check">memory_limit_check</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="3size" title='size' data-type='size_t' data-ref="3size">size</dfn>, <em>int</em> <dfn class="local col4 decl" id="4gentle" title='gentle' data-type='int' data-ref="4gentle">gentle</dfn>)</td></tr>
+<tr><th id="14">14</th><td>{</td></tr>
+<tr><th id="15">15</th><td>	<em>static</em> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="5limit" title='limit' data-type='size_t' data-ref="5limit">limit</dfn> = <var>0</var>;</td></tr>
+<tr><th id="16">16</th><td>	<b>if</b> (!<a class="local col5 ref" href="#5limit" title='limit' data-ref="5limit">limit</a>) {</td></tr>
+<tr><th id="17">17</th><td>		<a class="local col5 ref" href="#5limit" title='limit' data-ref="5limit">limit</a> = <a class="ref" href="config.h.html#git_env_ulong" title='git_env_ulong' data-ref="git_env_ulong">git_env_ulong</a>(<q>"GIT_ALLOC_LIMIT"</q>, <var>0</var>);</td></tr>
+<tr><th id="18">18</th><td>		<b>if</b> (!<a class="local col5 ref" href="#5limit" title='limit' data-ref="5limit">limit</a>)</td></tr>
+<tr><th id="19">19</th><td>			<a class="local col5 ref" href="#5limit" title='limit' data-ref="5limit">limit</a> = <a class="macro" href="../include/stdint.h.html#261" title="(18446744073709551615UL)" data-ref="_M/SIZE_MAX">SIZE_MAX</a>;</td></tr>
+<tr><th id="20">20</th><td>	}</td></tr>
+<tr><th id="21">21</th><td>	<b>if</b> (<a class="local col3 ref" href="#3size" title='size' data-ref="3size">size</a> &gt; <a class="local col5 ref" href="#5limit" title='limit' data-ref="5limit">limit</a>) {</td></tr>
+<tr><th id="22">22</th><td>		<b>if</b> (<a class="local col4 ref" href="#4gentle" title='gentle' data-ref="4gentle">gentle</a>) {</td></tr>
+<tr><th id="23">23</th><td>			<a class="macro" href="git-compat-util.h.html#446" title="(error(&quot;attempting to allocate %&quot;&quot;l&quot; &quot;u&quot;&quot; over limit %&quot;&quot;l&quot; &quot;u&quot;, (uintmax_t)size, (uintmax_t)limit), const_error())" data-ref="_M/error">error</a>(<q>"attempting to allocate %"</q><a class="macro" href="../include/inttypes.h.html#154" title="&quot;l&quot; &quot;u&quot;" data-ref="_M/PRIuMAX">PRIuMAX</a><q>" over limit %"</q><a class="macro" href="../include/inttypes.h.html#154" title="&quot;l&quot; &quot;u&quot;" data-ref="_M/PRIuMAX">PRIuMAX</a>,</td></tr>
+<tr><th id="24">24</th><td>			      (<a class="typedef" href="../include/stdint.h.html#uintmax_t" title='uintmax_t' data-type='unsigned long' data-ref="uintmax_t">uintmax_t</a>)<a class="local col3 ref" href="#3size" title='size' data-ref="3size">size</a>, (<a class="typedef" href="../include/stdint.h.html#uintmax_t" title='uintmax_t' data-type='unsigned long' data-ref="uintmax_t">uintmax_t</a>)<a class="local col5 ref" href="#5limit" title='limit' data-ref="5limit">limit</a>);</td></tr>
+<tr><th id="25">25</th><td>			<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="26">26</th><td>		} <b>else</b></td></tr>
+<tr><th id="27">27</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"attempting to allocate %"</q><a class="macro" href="../include/inttypes.h.html#154" title="&quot;l&quot; &quot;u&quot;" data-ref="_M/PRIuMAX">PRIuMAX</a><q>" over limit %"</q><a class="macro" href="../include/inttypes.h.html#154" title="&quot;l&quot; &quot;u&quot;" data-ref="_M/PRIuMAX">PRIuMAX</a>,</td></tr>
+<tr><th id="28">28</th><td>			    (<a class="typedef" href="../include/stdint.h.html#uintmax_t" title='uintmax_t' data-type='unsigned long' data-ref="uintmax_t">uintmax_t</a>)<a class="local col3 ref" href="#3size" title='size' data-ref="3size">size</a>, (<a class="typedef" href="../include/stdint.h.html#uintmax_t" title='uintmax_t' data-type='unsigned long' data-ref="uintmax_t">uintmax_t</a>)<a class="local col5 ref" href="#5limit" title='limit' data-ref="5limit">limit</a>);</td></tr>
+<tr><th id="29">29</th><td>	}</td></tr>
+<tr><th id="30">30</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="31">31</th><td>}</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><a class="typedef" href="git-compat-util.h.html#try_to_free_t" title='try_to_free_t' data-type='void (*)(size_t)' data-ref="try_to_free_t">try_to_free_t</a> <dfn class="decl def" id="set_try_to_free_routine" title='set_try_to_free_routine' data-ref="set_try_to_free_routine">set_try_to_free_routine</dfn>(<a class="typedef" href="git-compat-util.h.html#try_to_free_t" title='try_to_free_t' data-type='void (*)(size_t)' data-ref="try_to_free_t">try_to_free_t</a> <dfn class="local col6 decl" id="6routine" title='routine' data-type='try_to_free_t' data-ref="6routine">routine</dfn>)</td></tr>
+<tr><th id="34">34</th><td>{</td></tr>
+<tr><th id="35">35</th><td>	<a class="typedef" href="git-compat-util.h.html#try_to_free_t" title='try_to_free_t' data-type='void (*)(size_t)' data-ref="try_to_free_t">try_to_free_t</a> <dfn class="local col7 decl" id="7old" title='old' data-type='try_to_free_t' data-ref="7old">old</dfn> = <a class="tu ref" href="#try_to_free_routine" title='try_to_free_routine' data-use='r' data-ref="try_to_free_routine">try_to_free_routine</a>;</td></tr>
+<tr><th id="36">36</th><td>	<b>if</b> (!<a class="local col6 ref" href="#6routine" title='routine' data-ref="6routine">routine</a>)</td></tr>
+<tr><th id="37">37</th><td>		<a class="local col6 ref" href="#6routine" title='routine' data-ref="6routine">routine</a> = <a class="tu ref" href="#do_nothing" title='do_nothing' data-use='r' data-ref="do_nothing">do_nothing</a>;</td></tr>
+<tr><th id="38">38</th><td>	<a class="tu ref" href="#try_to_free_routine" title='try_to_free_routine' data-use='w' data-ref="try_to_free_routine">try_to_free_routine</a> = <a class="local col6 ref" href="#6routine" title='routine' data-ref="6routine">routine</a>;</td></tr>
+<tr><th id="39">39</th><td>	<b>return</b> <a class="local col7 ref" href="#7old" title='old' data-ref="7old">old</a>;</td></tr>
+<tr><th id="40">40</th><td>}</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><em>char</em> *<dfn class="decl def" id="xstrdup" title='xstrdup' data-ref="xstrdup">xstrdup</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8str" title='str' data-type='const char *' data-ref="8str">str</dfn>)</td></tr>
+<tr><th id="43">43</th><td>{</td></tr>
+<tr><th id="44">44</th><td>	<em>char</em> *<dfn class="local col9 decl" id="9ret" title='ret' data-type='char *' data-ref="9ret">ret</dfn> = <a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#1291" title="(__extension__ (__builtin_constant_p (str) &amp;&amp; ((size_t)(const void *)((str) + 1) - (size_t)(const void *)(str) == 1) ? (((const char *) (str))[0] == &apos;\0&apos; ? (char *) calloc ((size_t) 1, (size_t) 1) : ({ size_t __len = strlen (str) + 1; char *__retval = (char *) malloc (__len); if (__retval != ((void*)0)) __retval = (char *) memcpy (__retval, str, __len); __retval; })) : __strdup (str)))" data-ref="_M/strdup">strdup</a>(<a class="local col8 ref" href="#8str" title='str' data-ref="8str">str</a>);</td></tr>
+<tr><th id="45">45</th><td>	<b>if</b> (!<a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a>) {</td></tr>
+<tr><th id="46">46</th><td>		<a class="tu ref" href="#try_to_free_routine" title='try_to_free_routine' data-use='r' data-ref="try_to_free_routine">try_to_free_routine</a>(<a class="ref" href="../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col8 ref" href="#8str" title='str' data-ref="8str">str</a>) + <var>1</var>);</td></tr>
+<tr><th id="47">47</th><td>		<a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a> = <a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#1291" title="(__extension__ (__builtin_constant_p (str) &amp;&amp; ((size_t)(const void *)((str) + 1) - (size_t)(const void *)(str) == 1) ? (((const char *) (str))[0] == &apos;\0&apos; ? (char *) calloc ((size_t) 1, (size_t) 1) : ({ size_t __len = strlen (str) + 1; char *__retval = (char *) malloc (__len); if (__retval != ((void*)0)) __retval = (char *) memcpy (__retval, str, __len); __retval; })) : __strdup (str)))" data-ref="_M/strdup">strdup</a>(<a class="local col8 ref" href="#8str" title='str' data-ref="8str">str</a>);</td></tr>
+<tr><th id="48">48</th><td>		<b>if</b> (!<a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a>)</td></tr>
+<tr><th id="49">49</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"Out of memory, strdup failed"</q>);</td></tr>
+<tr><th id="50">50</th><td>	}</td></tr>
+<tr><th id="51">51</th><td>	<b>return</b> <a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a>;</td></tr>
+<tr><th id="52">52</th><td>}</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><em>static</em> <em>void</em> *<dfn class="tu decl def" id="do_xmalloc" title='do_xmalloc' data-type='void * do_xmalloc(size_t size, int gentle)' data-ref="do_xmalloc">do_xmalloc</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="10size" title='size' data-type='size_t' data-ref="10size">size</dfn>, <em>int</em> <dfn class="local col1 decl" id="11gentle" title='gentle' data-type='int' data-ref="11gentle">gentle</dfn>)</td></tr>
+<tr><th id="55">55</th><td>{</td></tr>
+<tr><th id="56">56</th><td>	<em>void</em> *<dfn class="local col2 decl" id="12ret" title='ret' data-type='void *' data-ref="12ret">ret</dfn>;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td>	<b>if</b> (<a class="tu ref" href="#memory_limit_check" title='memory_limit_check' data-use='c' data-ref="memory_limit_check">memory_limit_check</a>(<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a>, <a class="local col1 ref" href="#11gentle" title='gentle' data-ref="11gentle">gentle</a>))</td></tr>
+<tr><th id="59">59</th><td>		<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="60">60</th><td>	<a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#malloc" title='malloc' data-ref="malloc">malloc</a>(<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a>);</td></tr>
+<tr><th id="61">61</th><td>	<b>if</b> (!<a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a> &amp;&amp; !<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a>)</td></tr>
+<tr><th id="62">62</th><td>		<a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#malloc" title='malloc' data-ref="malloc">malloc</a>(<var>1</var>);</td></tr>
+<tr><th id="63">63</th><td>	<b>if</b> (!<a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a>) {</td></tr>
+<tr><th id="64">64</th><td>		<a class="tu ref" href="#try_to_free_routine" title='try_to_free_routine' data-use='r' data-ref="try_to_free_routine">try_to_free_routine</a>(<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a>);</td></tr>
+<tr><th id="65">65</th><td>		<a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#malloc" title='malloc' data-ref="malloc">malloc</a>(<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a>);</td></tr>
+<tr><th id="66">66</th><td>		<b>if</b> (!<a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a> &amp;&amp; !<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a>)</td></tr>
+<tr><th id="67">67</th><td>			<a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#malloc" title='malloc' data-ref="malloc">malloc</a>(<var>1</var>);</td></tr>
+<tr><th id="68">68</th><td>		<b>if</b> (!<a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a>) {</td></tr>
+<tr><th id="69">69</th><td>			<b>if</b> (!<a class="local col1 ref" href="#11gentle" title='gentle' data-ref="11gentle">gentle</a>)</td></tr>
+<tr><th id="70">70</th><td>				<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"Out of memory, malloc failed (tried to allocate %lu bytes)"</q>,</td></tr>
+<tr><th id="71">71</th><td>				    (<em>unsigned</em> <em>long</em>)<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a>);</td></tr>
+<tr><th id="72">72</th><td>			<b>else</b> {</td></tr>
+<tr><th id="73">73</th><td>				<a class="macro" href="git-compat-util.h.html#446" title="(error(&quot;Out of memory, malloc failed (tried to allocate %lu bytes)&quot;, (unsigned long)size), const_error())" data-ref="_M/error">error</a>(<q>"Out of memory, malloc failed (tried to allocate %lu bytes)"</q>,</td></tr>
+<tr><th id="74">74</th><td>				      (<em>unsigned</em> <em>long</em>)<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a>);</td></tr>
+<tr><th id="75">75</th><td>				<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="76">76</th><td>			}</td></tr>
+<tr><th id="77">77</th><td>		}</td></tr>
+<tr><th id="78">78</th><td>	}</td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="79">ifdef</span> <span class="macro" data-ref="_M/XMALLOC_POISON">XMALLOC_POISON</span></u></td></tr>
+<tr><th id="80">80</th><td>	memset(ret, <var>0xA5</var>, size);</td></tr>
+<tr><th id="81">81</th><td><u>#<span data-ppcond="79">endif</span></u></td></tr>
+<tr><th id="82">82</th><td>	<b>return</b> <a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a>;</td></tr>
+<tr><th id="83">83</th><td>}</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><em>void</em> *<dfn class="decl def" id="xmalloc" title='xmalloc' data-ref="xmalloc">xmalloc</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="13size" title='size' data-type='size_t' data-ref="13size">size</dfn>)</td></tr>
+<tr><th id="86">86</th><td>{</td></tr>
+<tr><th id="87">87</th><td>	<b>return</b> <a class="tu ref" href="#do_xmalloc" title='do_xmalloc' data-use='c' data-ref="do_xmalloc">do_xmalloc</a>(<a class="local col3 ref" href="#13size" title='size' data-ref="13size">size</a>, <var>0</var>);</td></tr>
+<tr><th id="88">88</th><td>}</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><em>static</em> <em>void</em> *<dfn class="tu decl def" id="do_xmallocz" title='do_xmallocz' data-type='void * do_xmallocz(size_t size, int gentle)' data-ref="do_xmallocz">do_xmallocz</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="14size" title='size' data-type='size_t' data-ref="14size">size</dfn>, <em>int</em> <dfn class="local col5 decl" id="15gentle" title='gentle' data-type='int' data-ref="15gentle">gentle</dfn>)</td></tr>
+<tr><th id="91">91</th><td>{</td></tr>
+<tr><th id="92">92</th><td>	<em>void</em> *<dfn class="local col6 decl" id="16ret" title='ret' data-type='void *' data-ref="16ret">ret</dfn>;</td></tr>
+<tr><th id="93">93</th><td>	<b>if</b> (<a class="macro" href="git-compat-util.h.html#96" title="((1) &gt; ((18446744073709551615UL) &gt;&gt; ((8 * sizeof(uintmax_t)) - (8 * sizeof(size)))) - (size))" data-ref="_M/unsigned_add_overflows">unsigned_add_overflows</a>(<a class="local col4 ref" href="#14size" title='size' data-ref="14size">size</a>, <var>1</var>)) {</td></tr>
+<tr><th id="94">94</th><td>		<b>if</b> (<a class="local col5 ref" href="#15gentle" title='gentle' data-ref="15gentle">gentle</a>) {</td></tr>
+<tr><th id="95">95</th><td>			<a class="macro" href="git-compat-util.h.html#446" title="(error(&quot;Data too large to fit into virtual memory space.&quot;), const_error())" data-ref="_M/error">error</a>(<q>"Data too large to fit into virtual memory space."</q>);</td></tr>
+<tr><th id="96">96</th><td>			<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="97">97</th><td>		} <b>else</b></td></tr>
+<tr><th id="98">98</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"Data too large to fit into virtual memory space."</q>);</td></tr>
+<tr><th id="99">99</th><td>	}</td></tr>
+<tr><th id="100">100</th><td>	<a class="local col6 ref" href="#16ret" title='ret' data-ref="16ret">ret</a> = <a class="tu ref" href="#do_xmalloc" title='do_xmalloc' data-use='c' data-ref="do_xmalloc">do_xmalloc</a>(<a class="local col4 ref" href="#14size" title='size' data-ref="14size">size</a> + <var>1</var>, <a class="local col5 ref" href="#15gentle" title='gentle' data-ref="15gentle">gentle</a>);</td></tr>
+<tr><th id="101">101</th><td>	<b>if</b> (<a class="local col6 ref" href="#16ret" title='ret' data-ref="16ret">ret</a>)</td></tr>
+<tr><th id="102">102</th><td>		((<em>char</em>*)<a class="local col6 ref" href="#16ret" title='ret' data-ref="16ret">ret</a>)[<a class="local col4 ref" href="#14size" title='size' data-ref="14size">size</a>] = <var>0</var>;</td></tr>
+<tr><th id="103">103</th><td>	<b>return</b> <a class="local col6 ref" href="#16ret" title='ret' data-ref="16ret">ret</a>;</td></tr>
+<tr><th id="104">104</th><td>}</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><em>void</em> *<dfn class="decl def" id="xmallocz" title='xmallocz' data-ref="xmallocz">xmallocz</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="17size" title='size' data-type='size_t' data-ref="17size">size</dfn>)</td></tr>
+<tr><th id="107">107</th><td>{</td></tr>
+<tr><th id="108">108</th><td>	<b>return</b> <a class="tu ref" href="#do_xmallocz" title='do_xmallocz' data-use='c' data-ref="do_xmallocz">do_xmallocz</a>(<a class="local col7 ref" href="#17size" title='size' data-ref="17size">size</a>, <var>0</var>);</td></tr>
+<tr><th id="109">109</th><td>}</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><em>void</em> *<dfn class="decl def" id="xmallocz_gently" title='xmallocz_gently' data-ref="xmallocz_gently">xmallocz_gently</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="18size" title='size' data-type='size_t' data-ref="18size">size</dfn>)</td></tr>
+<tr><th id="112">112</th><td>{</td></tr>
+<tr><th id="113">113</th><td>	<b>return</b> <a class="tu ref" href="#do_xmallocz" title='do_xmallocz' data-use='c' data-ref="do_xmallocz">do_xmallocz</a>(<a class="local col8 ref" href="#18size" title='size' data-ref="18size">size</a>, <var>1</var>);</td></tr>
+<tr><th id="114">114</th><td>}</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><i>/*</i></td></tr>
+<tr><th id="117">117</th><td><i> * xmemdupz() allocates (len + 1) bytes of memory, duplicates "len" bytes of</i></td></tr>
+<tr><th id="118">118</th><td><i> * "data" to the allocated memory, zero terminates the allocated memory,</i></td></tr>
+<tr><th id="119">119</th><td><i> * and returns a pointer to the allocated memory. If the allocation fails,</i></td></tr>
+<tr><th id="120">120</th><td><i> * the program dies.</i></td></tr>
+<tr><th id="121">121</th><td><i> */</i></td></tr>
+<tr><th id="122">122</th><td><em>void</em> *<dfn class="decl def" id="xmemdupz" title='xmemdupz' data-ref="xmemdupz">xmemdupz</dfn>(<em>const</em> <em>void</em> *<dfn class="local col9 decl" id="19data" title='data' data-type='const void *' data-ref="19data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="20len" title='len' data-type='size_t' data-ref="20len">len</dfn>)</td></tr>
+<tr><th id="123">123</th><td>{</td></tr>
+<tr><th id="124">124</th><td>	<b>return</b> <a class="ref" href="../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="ref" href="#xmallocz" title='xmallocz' data-ref="xmallocz">xmallocz</a>(<a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a>), <a class="local col9 ref" href="#19data" title='data' data-ref="19data">data</a>, <a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a>);</td></tr>
+<tr><th id="125">125</th><td>}</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><em>char</em> *<dfn class="decl def" id="xstrndup" title='xstrndup' data-ref="xstrndup">xstrndup</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="21str" title='str' data-type='const char *' data-ref="21str">str</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="22len" title='len' data-type='size_t' data-ref="22len">len</dfn>)</td></tr>
+<tr><th id="128">128</th><td>{</td></tr>
+<tr><th id="129">129</th><td>	<em>char</em> *<dfn class="local col3 decl" id="23p" title='p' data-type='char *' data-ref="23p">p</dfn> = <a class="ref" href="../include/string.h.html#memchr" title='memchr' data-ref="memchr">memchr</a>(<a class="local col1 ref" href="#21str" title='str' data-ref="21str">str</a>, <kbd>'\0'</kbd>, <a class="local col2 ref" href="#22len" title='len' data-ref="22len">len</a>);</td></tr>
+<tr><th id="130">130</th><td>	<b>return</b> <a class="ref" href="#xmemdupz" title='xmemdupz' data-ref="xmemdupz">xmemdupz</a>(<a class="local col1 ref" href="#21str" title='str' data-ref="21str">str</a>, <a class="local col3 ref" href="#23p" title='p' data-ref="23p">p</a> ? <a class="local col3 ref" href="#23p" title='p' data-ref="23p">p</a> - <a class="local col1 ref" href="#21str" title='str' data-ref="21str">str</a> : <a class="local col2 ref" href="#22len" title='len' data-ref="22len">len</a>);</td></tr>
+<tr><th id="131">131</th><td>}</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><em>void</em> *<dfn class="decl def" id="xrealloc" title='xrealloc' data-ref="xrealloc">xrealloc</dfn>(<em>void</em> *<dfn class="local col4 decl" id="24ptr" title='ptr' data-type='void *' data-ref="24ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="25size" title='size' data-type='size_t' data-ref="25size">size</dfn>)</td></tr>
+<tr><th id="134">134</th><td>{</td></tr>
+<tr><th id="135">135</th><td>	<em>void</em> *<dfn class="local col6 decl" id="26ret" title='ret' data-type='void *' data-ref="26ret">ret</dfn>;</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td>	<a class="tu ref" href="#memory_limit_check" title='memory_limit_check' data-use='c' data-ref="memory_limit_check">memory_limit_check</a>(<a class="local col5 ref" href="#25size" title='size' data-ref="25size">size</a>, <var>0</var>);</td></tr>
+<tr><th id="138">138</th><td>	<a class="local col6 ref" href="#26ret" title='ret' data-ref="26ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#realloc" title='realloc' data-ref="realloc">realloc</a>(<a class="local col4 ref" href="#24ptr" title='ptr' data-ref="24ptr">ptr</a>, <a class="local col5 ref" href="#25size" title='size' data-ref="25size">size</a>);</td></tr>
+<tr><th id="139">139</th><td>	<b>if</b> (!<a class="local col6 ref" href="#26ret" title='ret' data-ref="26ret">ret</a> &amp;&amp; !<a class="local col5 ref" href="#25size" title='size' data-ref="25size">size</a>)</td></tr>
+<tr><th id="140">140</th><td>		<a class="local col6 ref" href="#26ret" title='ret' data-ref="26ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#realloc" title='realloc' data-ref="realloc">realloc</a>(<a class="local col4 ref" href="#24ptr" title='ptr' data-ref="24ptr">ptr</a>, <var>1</var>);</td></tr>
+<tr><th id="141">141</th><td>	<b>if</b> (!<a class="local col6 ref" href="#26ret" title='ret' data-ref="26ret">ret</a>) {</td></tr>
+<tr><th id="142">142</th><td>		<a class="tu ref" href="#try_to_free_routine" title='try_to_free_routine' data-use='r' data-ref="try_to_free_routine">try_to_free_routine</a>(<a class="local col5 ref" href="#25size" title='size' data-ref="25size">size</a>);</td></tr>
+<tr><th id="143">143</th><td>		<a class="local col6 ref" href="#26ret" title='ret' data-ref="26ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#realloc" title='realloc' data-ref="realloc">realloc</a>(<a class="local col4 ref" href="#24ptr" title='ptr' data-ref="24ptr">ptr</a>, <a class="local col5 ref" href="#25size" title='size' data-ref="25size">size</a>);</td></tr>
+<tr><th id="144">144</th><td>		<b>if</b> (!<a class="local col6 ref" href="#26ret" title='ret' data-ref="26ret">ret</a> &amp;&amp; !<a class="local col5 ref" href="#25size" title='size' data-ref="25size">size</a>)</td></tr>
+<tr><th id="145">145</th><td>			<a class="local col6 ref" href="#26ret" title='ret' data-ref="26ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#realloc" title='realloc' data-ref="realloc">realloc</a>(<a class="local col4 ref" href="#24ptr" title='ptr' data-ref="24ptr">ptr</a>, <var>1</var>);</td></tr>
+<tr><th id="146">146</th><td>		<b>if</b> (!<a class="local col6 ref" href="#26ret" title='ret' data-ref="26ret">ret</a>)</td></tr>
+<tr><th id="147">147</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"Out of memory, realloc failed"</q>);</td></tr>
+<tr><th id="148">148</th><td>	}</td></tr>
+<tr><th id="149">149</th><td>	<b>return</b> <a class="local col6 ref" href="#26ret" title='ret' data-ref="26ret">ret</a>;</td></tr>
+<tr><th id="150">150</th><td>}</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><em>void</em> *<dfn class="decl def" id="xcalloc" title='xcalloc' data-ref="xcalloc">xcalloc</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="27nmemb" title='nmemb' data-type='size_t' data-ref="27nmemb">nmemb</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="28size" title='size' data-type='size_t' data-ref="28size">size</dfn>)</td></tr>
+<tr><th id="153">153</th><td>{</td></tr>
+<tr><th id="154">154</th><td>	<em>void</em> *<dfn class="local col9 decl" id="29ret" title='ret' data-type='void *' data-ref="29ret">ret</dfn>;</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td>	<b>if</b> (<a class="macro" href="git-compat-util.h.html#104" title="((nmemb) &amp;&amp; (size) &gt; ((18446744073709551615UL) &gt;&gt; ((8 * sizeof(uintmax_t)) - (8 * sizeof(nmemb)))) / (nmemb))" data-ref="_M/unsigned_mult_overflows">unsigned_mult_overflows</a>(<a class="local col7 ref" href="#27nmemb" title='nmemb' data-ref="27nmemb">nmemb</a>, <a class="local col8 ref" href="#28size" title='size' data-ref="28size">size</a>))</td></tr>
+<tr><th id="157">157</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"data too large to fit into virtual memory space"</q>);</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td>	<a class="tu ref" href="#memory_limit_check" title='memory_limit_check' data-use='c' data-ref="memory_limit_check">memory_limit_check</a>(<a class="local col8 ref" href="#28size" title='size' data-ref="28size">size</a> * <a class="local col7 ref" href="#27nmemb" title='nmemb' data-ref="27nmemb">nmemb</a>, <var>0</var>);</td></tr>
+<tr><th id="160">160</th><td>	<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#calloc" title='calloc' data-ref="calloc">calloc</a>(<a class="local col7 ref" href="#27nmemb" title='nmemb' data-ref="27nmemb">nmemb</a>, <a class="local col8 ref" href="#28size" title='size' data-ref="28size">size</a>);</td></tr>
+<tr><th id="161">161</th><td>	<b>if</b> (!<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a> &amp;&amp; (!<a class="local col7 ref" href="#27nmemb" title='nmemb' data-ref="27nmemb">nmemb</a> || !<a class="local col8 ref" href="#28size" title='size' data-ref="28size">size</a>))</td></tr>
+<tr><th id="162">162</th><td>		<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#calloc" title='calloc' data-ref="calloc">calloc</a>(<var>1</var>, <var>1</var>);</td></tr>
+<tr><th id="163">163</th><td>	<b>if</b> (!<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a>) {</td></tr>
+<tr><th id="164">164</th><td>		<a class="tu ref" href="#try_to_free_routine" title='try_to_free_routine' data-use='r' data-ref="try_to_free_routine">try_to_free_routine</a>(<a class="local col7 ref" href="#27nmemb" title='nmemb' data-ref="27nmemb">nmemb</a> * <a class="local col8 ref" href="#28size" title='size' data-ref="28size">size</a>);</td></tr>
+<tr><th id="165">165</th><td>		<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#calloc" title='calloc' data-ref="calloc">calloc</a>(<a class="local col7 ref" href="#27nmemb" title='nmemb' data-ref="27nmemb">nmemb</a>, <a class="local col8 ref" href="#28size" title='size' data-ref="28size">size</a>);</td></tr>
+<tr><th id="166">166</th><td>		<b>if</b> (!<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a> &amp;&amp; (!<a class="local col7 ref" href="#27nmemb" title='nmemb' data-ref="27nmemb">nmemb</a> || !<a class="local col8 ref" href="#28size" title='size' data-ref="28size">size</a>))</td></tr>
+<tr><th id="167">167</th><td>			<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a> = <a class="ref" href="../include/stdlib.h.html#calloc" title='calloc' data-ref="calloc">calloc</a>(<var>1</var>, <var>1</var>);</td></tr>
+<tr><th id="168">168</th><td>		<b>if</b> (!<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a>)</td></tr>
+<tr><th id="169">169</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"Out of memory, calloc failed"</q>);</td></tr>
+<tr><th id="170">170</th><td>	}</td></tr>
+<tr><th id="171">171</th><td>	<b>return</b> <a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a>;</td></tr>
+<tr><th id="172">172</th><td>}</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><i>/*</i></td></tr>
+<tr><th id="175">175</th><td><i> * Limit size of IO chunks, because huge chunks only cause pain.  OS X</i></td></tr>
+<tr><th id="176">176</th><td><i> * 64-bit is buggy, returning EINVAL if len &gt;= INT_MAX; and even in</i></td></tr>
+<tr><th id="177">177</th><td><i> * the absence of bugs, large chunks can result in bad latencies when</i></td></tr>
+<tr><th id="178">178</th><td><i> * you decide to kill the process.</i></td></tr>
+<tr><th id="179">179</th><td><i> *</i></td></tr>
+<tr><th id="180">180</th><td><i> * We pick 8 MiB as our default, but if the platform defines SSIZE_MAX</i></td></tr>
+<tr><th id="181">181</th><td><i> * that is smaller than that, clip it to SSIZE_MAX, as a call to</i></td></tr>
+<tr><th id="182">182</th><td><i> * read(2) or write(2) larger than that is allowed to fail.  As the last</i></td></tr>
+<tr><th id="183">183</th><td><i> * resort, we allow a port to pass via CFLAGS e.g. "-DMAX_IO_SIZE=value"</i></td></tr>
+<tr><th id="184">184</th><td><i> * to override this, if the definition of SSIZE_MAX given by the platform</i></td></tr>
+<tr><th id="185">185</th><td><i> * is broken.</i></td></tr>
+<tr><th id="186">186</th><td><i> */</i></td></tr>
+<tr><th id="187">187</th><td><u>#<span data-ppcond="187">ifndef</span> <span class="macro" data-ref="_M/MAX_IO_SIZE">MAX_IO_SIZE</span></u></td></tr>
+<tr><th id="188">188</th><td><u># define <dfn class="macro" id="_M/MAX_IO_SIZE_DEFAULT" data-ref="_M/MAX_IO_SIZE_DEFAULT">MAX_IO_SIZE_DEFAULT</dfn> (8*1024*1024)</u></td></tr>
+<tr><th id="189">189</th><td><u># <span data-ppcond="189">if</span> defined(<a class="macro" href="../include/x86_64-linux-gnu/bits/posix1_lim.h.html#164" data-ref="_M/SSIZE_MAX">SSIZE_MAX</a>) &amp;&amp; (<a class="macro" href="../include/x86_64-linux-gnu/bits/posix1_lim.h.html#164" title="9223372036854775807L" data-ref="_M/SSIZE_MAX">SSIZE_MAX</a> &lt; <a class="macro" href="#188" title="(8*1024*1024)" data-ref="_M/MAX_IO_SIZE_DEFAULT">MAX_IO_SIZE_DEFAULT</a>)</u></td></tr>
+<tr><th id="190">190</th><td><u>#  define MAX_IO_SIZE SSIZE_MAX</u></td></tr>
+<tr><th id="191">191</th><td><u># <span data-ppcond="189">else</span></u></td></tr>
+<tr><th id="192">192</th><td><u>#  define <dfn class="macro" id="_M/MAX_IO_SIZE" data-ref="_M/MAX_IO_SIZE">MAX_IO_SIZE</dfn> MAX_IO_SIZE_DEFAULT</u></td></tr>
+<tr><th id="193">193</th><td><u># <span data-ppcond="189">endif</span></u></td></tr>
+<tr><th id="194">194</th><td><u>#<span data-ppcond="187">endif</span></u></td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> * xopen() is the same as open(), but it die()s if the open() fails.</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="199">199</th><td><em>int</em> <dfn class="decl def" id="xopen" title='xopen' data-ref="xopen">xopen</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="30path" title='path' data-type='const char *' data-ref="30path">path</dfn>, <em>int</em> <dfn class="local col1 decl" id="31oflag" title='oflag' data-type='int' data-ref="31oflag">oflag</dfn>, ...)</td></tr>
+<tr><th id="200">200</th><td>{</td></tr>
+<tr><th id="201">201</th><td>	<a class="typedef" href="../include/x86_64-linux-gnu/sys/stat.h.html#mode_t" title='mode_t' data-type='__mode_t' data-ref="mode_t">mode_t</a> <dfn class="local col2 decl" id="32mode" title='mode' data-type='mode_t' data-ref="32mode">mode</dfn> = <var>0</var>;</td></tr>
+<tr><th id="202">202</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col3 decl" id="33ap" title='ap' data-type='va_list' data-ref="33ap">ap</dfn>;</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td>	<i>/*</i></td></tr>
+<tr><th id="205">205</th><td><i>	 * va_arg() will have undefined behavior if the specified type is not</i></td></tr>
+<tr><th id="206">206</th><td><i>	 * compatible with the argument type. Since integers are promoted to</i></td></tr>
+<tr><th id="207">207</th><td><i>	 * ints, we fetch the next argument as an int, and then cast it to a</i></td></tr>
+<tr><th id="208">208</th><td><i>	 * mode_t to avoid undefined behavior.</i></td></tr>
+<tr><th id="209">209</th><td><i>	 */</i></td></tr>
+<tr><th id="210">210</th><td>	<span class="macro" title="__builtin_va_start(ap, oflag)" data-ref="_M/va_start">va_start</span>(<a class="local col3 ref" href="#33ap" title='ap' data-ref="33ap">ap</a>, <a class="local col1 ref" href="#31oflag" title='oflag' data-ref="31oflag">oflag</a>);</td></tr>
+<tr><th id="211">211</th><td>	<b>if</b> (<a class="local col1 ref" href="#31oflag" title='oflag' data-ref="31oflag">oflag</a> &amp; <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#47" title="0100" data-ref="_M/O_CREAT">O_CREAT</a>)</td></tr>
+<tr><th id="212">212</th><td>		<a class="local col2 ref" href="#32mode" title='mode' data-ref="32mode">mode</a> = <span class="macro" title="__builtin_va_arg(ap, int)" data-ref="_M/va_arg">va_arg</span>(<a class="local col3 ref" href="#33ap" title='ap' data-ref="33ap">ap</a>, <em>int</em>);</td></tr>
+<tr><th id="213">213</th><td>	<span class="macro" title="__builtin_va_end(ap)" data-ref="_M/va_end">va_end</span>(<a class="local col3 ref" href="#33ap" title='ap' data-ref="33ap">ap</a>);</td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td>	<b>for</b> (;;) {</td></tr>
+<tr><th id="216">216</th><td>		<em>int</em> <dfn class="local col4 decl" id="34fd" title='fd' data-type='int' data-ref="34fd">fd</dfn> = <a class="ref" href="../include/fcntl.h.html#159" title='open' data-ref="open64">open</a>(<a class="local col0 ref" href="#30path" title='path' data-ref="30path">path</a>, <a class="local col1 ref" href="#31oflag" title='oflag' data-ref="31oflag">oflag</a>, <a class="local col2 ref" href="#32mode" title='mode' data-ref="32mode">mode</a>);</td></tr>
+<tr><th id="217">217</th><td>		<b>if</b> (<a class="local col4 ref" href="#34fd" title='fd' data-ref="34fd">fd</a> &gt;= <var>0</var>)</td></tr>
+<tr><th id="218">218</th><td>			<b>return</b> <a class="local col4 ref" href="#34fd" title='fd' data-ref="34fd">fd</a>;</td></tr>
+<tr><th id="219">219</th><td>		<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#7" title="4" data-ref="_M/EINTR">EINTR</a>)</td></tr>
+<tr><th id="220">220</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td>		<b>if</b> ((<a class="local col1 ref" href="#31oflag" title='oflag' data-ref="31oflag">oflag</a> &amp; <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#45" title="02" data-ref="_M/O_RDWR">O_RDWR</a>) == <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#45" title="02" data-ref="_M/O_RDWR">O_RDWR</a>)</td></tr>
+<tr><th id="223">223</th><td>			<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"could not open '%s' for reading and writing"</q>), <a class="local col0 ref" href="#30path" title='path' data-ref="30path">path</a>);</td></tr>
+<tr><th id="224">224</th><td>		<b>else</b> <b>if</b> ((<a class="local col1 ref" href="#31oflag" title='oflag' data-ref="31oflag">oflag</a> &amp; <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#44" title="01" data-ref="_M/O_WRONLY">O_WRONLY</a>) == <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#44" title="01" data-ref="_M/O_WRONLY">O_WRONLY</a>)</td></tr>
+<tr><th id="225">225</th><td>			<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"could not open '%s' for writing"</q>), <a class="local col0 ref" href="#30path" title='path' data-ref="30path">path</a>);</td></tr>
+<tr><th id="226">226</th><td>		<b>else</b></td></tr>
+<tr><th id="227">227</th><td>			<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"could not open '%s' for reading"</q>), <a class="local col0 ref" href="#30path" title='path' data-ref="30path">path</a>);</td></tr>
+<tr><th id="228">228</th><td>	}</td></tr>
+<tr><th id="229">229</th><td>}</td></tr>
+<tr><th id="230">230</th><td></td></tr>
+<tr><th id="231">231</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="handle_nonblock" title='handle_nonblock' data-type='int handle_nonblock(int fd, short poll_events, int err)' data-ref="handle_nonblock">handle_nonblock</dfn>(<em>int</em> <dfn class="local col5 decl" id="35fd" title='fd' data-type='int' data-ref="35fd">fd</dfn>, <em>short</em> <dfn class="local col6 decl" id="36poll_events" title='poll_events' data-type='short' data-ref="36poll_events">poll_events</dfn>, <em>int</em> <dfn class="local col7 decl" id="37err" title='err' data-type='int' data-ref="37err">err</dfn>)</td></tr>
+<tr><th id="232">232</th><td>{</td></tr>
+<tr><th id="233">233</th><td>	<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/sys/poll.h.html#pollfd" title='pollfd' data-ref="pollfd">pollfd</a> <dfn class="local col8 decl" id="38pfd" title='pfd' data-type='struct pollfd' data-ref="38pfd">pfd</dfn>;</td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td>	<b>if</b> (<a class="local col7 ref" href="#37err" title='err' data-ref="37err">err</a> != <a class="macro" href="../include/asm-generic/errno-base.h.html#14" title="11" data-ref="_M/EAGAIN">EAGAIN</a> &amp;&amp; <a class="local col7 ref" href="#37err" title='err' data-ref="37err">err</a> != <a class="macro" href="../include/asm-generic/errno.h.html#21" title="11" data-ref="_M/EWOULDBLOCK">EWOULDBLOCK</a>)</td></tr>
+<tr><th id="236">236</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="237">237</th><td></td></tr>
+<tr><th id="238">238</th><td>	<a class="local col8 ref" href="#38pfd" title='pfd' data-ref="38pfd">pfd</a>.<a class="ref" href="../include/x86_64-linux-gnu/sys/poll.h.html#pollfd::fd" title='pollfd::fd' data-ref="pollfd::fd">fd</a> = <a class="local col5 ref" href="#35fd" title='fd' data-ref="35fd">fd</a>;</td></tr>
+<tr><th id="239">239</th><td>	<a class="local col8 ref" href="#38pfd" title='pfd' data-ref="38pfd">pfd</a>.<a class="ref" href="../include/x86_64-linux-gnu/sys/poll.h.html#pollfd::events" title='pollfd::events' data-ref="pollfd::events">events</a> = <a class="local col6 ref" href="#36poll_events" title='poll_events' data-ref="36poll_events">poll_events</a>;</td></tr>
+<tr><th id="240">240</th><td></td></tr>
+<tr><th id="241">241</th><td>	<i>/*</i></td></tr>
+<tr><th id="242">242</th><td><i>	 * no need to check for errors, here;</i></td></tr>
+<tr><th id="243">243</th><td><i>	 * a subsequent read/write will detect unrecoverable errors</i></td></tr>
+<tr><th id="244">244</th><td><i>	 */</i></td></tr>
+<tr><th id="245">245</th><td>	<a class="ref" href="../include/x86_64-linux-gnu/sys/poll.h.html#poll" title='poll' data-ref="poll">poll</a>(&amp;<a class="local col8 ref" href="#38pfd" title='pfd' data-ref="38pfd">pfd</a>, <var>1</var>, -<var>1</var>);</td></tr>
+<tr><th id="246">246</th><td>	<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="247">247</th><td>}</td></tr>
+<tr><th id="248">248</th><td></td></tr>
+<tr><th id="249">249</th><td><i>/*</i></td></tr>
+<tr><th id="250">250</th><td><i> * xread() is the same a read(), but it automatically restarts read()</i></td></tr>
+<tr><th id="251">251</th><td><i> * operations with a recoverable error (EAGAIN and EINTR). xread()</i></td></tr>
+<tr><th id="252">252</th><td><i> * DOES NOT GUARANTEE that "len" bytes is read even if the data is available.</i></td></tr>
+<tr><th id="253">253</th><td><i> */</i></td></tr>
+<tr><th id="254">254</th><td><a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="decl def" id="xread" title='xread' data-ref="xread">xread</dfn>(<em>int</em> <dfn class="local col9 decl" id="39fd" title='fd' data-type='int' data-ref="39fd">fd</dfn>, <em>void</em> *<dfn class="local col0 decl" id="40buf" title='buf' data-type='void *' data-ref="40buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="41len" title='len' data-type='size_t' data-ref="41len">len</dfn>)</td></tr>
+<tr><th id="255">255</th><td>{</td></tr>
+<tr><th id="256">256</th><td>	<a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="local col2 decl" id="42nr" title='nr' data-type='ssize_t' data-ref="42nr">nr</dfn>;</td></tr>
+<tr><th id="257">257</th><td>	<b>if</b> (<a class="local col1 ref" href="#41len" title='len' data-ref="41len">len</a> &gt; <a class="macro" href="#192" title="(8*1024*1024)" data-ref="_M/MAX_IO_SIZE">MAX_IO_SIZE</a>)</td></tr>
+<tr><th id="258">258</th><td>	    <a class="local col1 ref" href="#41len" title='len' data-ref="41len">len</a> = <a class="macro" href="#192" title="(8*1024*1024)" data-ref="_M/MAX_IO_SIZE">MAX_IO_SIZE</a>;</td></tr>
+<tr><th id="259">259</th><td>	<b>while</b> (<var>1</var>) {</td></tr>
+<tr><th id="260">260</th><td>		<a class="local col2 ref" href="#42nr" title='nr' data-ref="42nr">nr</a> = <a class="ref" href="../include/unistd.h.html#read" title='read' data-ref="read">read</a>(<a class="local col9 ref" href="#39fd" title='fd' data-ref="39fd">fd</a>, <a class="local col0 ref" href="#40buf" title='buf' data-ref="40buf">buf</a>, <a class="local col1 ref" href="#41len" title='len' data-ref="41len">len</a>);</td></tr>
+<tr><th id="261">261</th><td>		<b>if</b> (<a class="local col2 ref" href="#42nr" title='nr' data-ref="42nr">nr</a> &lt; <var>0</var>) {</td></tr>
+<tr><th id="262">262</th><td>			<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#7" title="4" data-ref="_M/EINTR">EINTR</a>)</td></tr>
+<tr><th id="263">263</th><td>				<b>continue</b>;</td></tr>
+<tr><th id="264">264</th><td>			<b>if</b> (<a class="tu ref" href="#handle_nonblock" title='handle_nonblock' data-use='c' data-ref="handle_nonblock">handle_nonblock</a>(<a class="local col9 ref" href="#39fd" title='fd' data-ref="39fd">fd</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/poll.h.html#25" title="0x001" data-ref="_M/POLLIN">POLLIN</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>))</td></tr>
+<tr><th id="265">265</th><td>				<b>continue</b>;</td></tr>
+<tr><th id="266">266</th><td>		}</td></tr>
+<tr><th id="267">267</th><td>		<b>return</b> <a class="local col2 ref" href="#42nr" title='nr' data-ref="42nr">nr</a>;</td></tr>
+<tr><th id="268">268</th><td>	}</td></tr>
+<tr><th id="269">269</th><td>}</td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td><i>/*</i></td></tr>
+<tr><th id="272">272</th><td><i> * xwrite() is the same a write(), but it automatically restarts write()</i></td></tr>
+<tr><th id="273">273</th><td><i> * operations with a recoverable error (EAGAIN and EINTR). xwrite() DOES NOT</i></td></tr>
+<tr><th id="274">274</th><td><i> * GUARANTEE that "len" bytes is written even if the operation is successful.</i></td></tr>
+<tr><th id="275">275</th><td><i> */</i></td></tr>
+<tr><th id="276">276</th><td><a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="decl def" id="xwrite" title='xwrite' data-ref="xwrite">xwrite</dfn>(<em>int</em> <dfn class="local col3 decl" id="43fd" title='fd' data-type='int' data-ref="43fd">fd</dfn>, <em>const</em> <em>void</em> *<dfn class="local col4 decl" id="44buf" title='buf' data-type='const void *' data-ref="44buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="45len" title='len' data-type='size_t' data-ref="45len">len</dfn>)</td></tr>
+<tr><th id="277">277</th><td>{</td></tr>
+<tr><th id="278">278</th><td>	<a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="local col6 decl" id="46nr" title='nr' data-type='ssize_t' data-ref="46nr">nr</dfn>;</td></tr>
+<tr><th id="279">279</th><td>	<b>if</b> (<a class="local col5 ref" href="#45len" title='len' data-ref="45len">len</a> &gt; <a class="macro" href="#192" title="(8*1024*1024)" data-ref="_M/MAX_IO_SIZE">MAX_IO_SIZE</a>)</td></tr>
+<tr><th id="280">280</th><td>	    <a class="local col5 ref" href="#45len" title='len' data-ref="45len">len</a> = <a class="macro" href="#192" title="(8*1024*1024)" data-ref="_M/MAX_IO_SIZE">MAX_IO_SIZE</a>;</td></tr>
+<tr><th id="281">281</th><td>	<b>while</b> (<var>1</var>) {</td></tr>
+<tr><th id="282">282</th><td>		<a class="local col6 ref" href="#46nr" title='nr' data-ref="46nr">nr</a> = <a class="ref" href="../include/unistd.h.html#write" title='write' data-ref="write">write</a>(<a class="local col3 ref" href="#43fd" title='fd' data-ref="43fd">fd</a>, <a class="local col4 ref" href="#44buf" title='buf' data-ref="44buf">buf</a>, <a class="local col5 ref" href="#45len" title='len' data-ref="45len">len</a>);</td></tr>
+<tr><th id="283">283</th><td>		<b>if</b> (<a class="local col6 ref" href="#46nr" title='nr' data-ref="46nr">nr</a> &lt; <var>0</var>) {</td></tr>
+<tr><th id="284">284</th><td>			<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#7" title="4" data-ref="_M/EINTR">EINTR</a>)</td></tr>
+<tr><th id="285">285</th><td>				<b>continue</b>;</td></tr>
+<tr><th id="286">286</th><td>			<b>if</b> (<a class="tu ref" href="#handle_nonblock" title='handle_nonblock' data-use='c' data-ref="handle_nonblock">handle_nonblock</a>(<a class="local col3 ref" href="#43fd" title='fd' data-ref="43fd">fd</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/poll.h.html#27" title="0x004" data-ref="_M/POLLOUT">POLLOUT</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>))</td></tr>
+<tr><th id="287">287</th><td>				<b>continue</b>;</td></tr>
+<tr><th id="288">288</th><td>		}</td></tr>
+<tr><th id="289">289</th><td></td></tr>
+<tr><th id="290">290</th><td>		<b>return</b> <a class="local col6 ref" href="#46nr" title='nr' data-ref="46nr">nr</a>;</td></tr>
+<tr><th id="291">291</th><td>	}</td></tr>
+<tr><th id="292">292</th><td>}</td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><i>/*</i></td></tr>
+<tr><th id="295">295</th><td><i> * xpread() is the same as pread(), but it automatically restarts pread()</i></td></tr>
+<tr><th id="296">296</th><td><i> * operations with a recoverable error (EAGAIN and EINTR). xpread() DOES</i></td></tr>
+<tr><th id="297">297</th><td><i> * NOT GUARANTEE that "len" bytes is read even if the data is available.</i></td></tr>
+<tr><th id="298">298</th><td><i> */</i></td></tr>
+<tr><th id="299">299</th><td><a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="decl def" id="xpread" title='xpread' data-ref="xpread">xpread</dfn>(<em>int</em> <dfn class="local col7 decl" id="47fd" title='fd' data-type='int' data-ref="47fd">fd</dfn>, <em>void</em> *<dfn class="local col8 decl" id="48buf" title='buf' data-type='void *' data-ref="48buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="49len" title='len' data-type='size_t' data-ref="49len">len</dfn>, <a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col0 decl" id="50offset" title='offset' data-type='off_t' data-ref="50offset">offset</dfn>)</td></tr>
+<tr><th id="300">300</th><td>{</td></tr>
+<tr><th id="301">301</th><td>	<a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="local col1 decl" id="51nr" title='nr' data-type='ssize_t' data-ref="51nr">nr</dfn>;</td></tr>
+<tr><th id="302">302</th><td>	<b>if</b> (<a class="local col9 ref" href="#49len" title='len' data-ref="49len">len</a> &gt; <a class="macro" href="#192" title="(8*1024*1024)" data-ref="_M/MAX_IO_SIZE">MAX_IO_SIZE</a>)</td></tr>
+<tr><th id="303">303</th><td>		<a class="local col9 ref" href="#49len" title='len' data-ref="49len">len</a> = <a class="macro" href="#192" title="(8*1024*1024)" data-ref="_M/MAX_IO_SIZE">MAX_IO_SIZE</a>;</td></tr>
+<tr><th id="304">304</th><td>	<b>while</b> (<var>1</var>) {</td></tr>
+<tr><th id="305">305</th><td>		<a class="local col1 ref" href="#51nr" title='nr' data-ref="51nr">nr</a> = <a class="ref" href="../include/unistd.h.html#391" title='pread' data-ref="pread64">pread</a>(<a class="local col7 ref" href="#47fd" title='fd' data-ref="47fd">fd</a>, <a class="local col8 ref" href="#48buf" title='buf' data-ref="48buf">buf</a>, <a class="local col9 ref" href="#49len" title='len' data-ref="49len">len</a>, <a class="local col0 ref" href="#50offset" title='offset' data-ref="50offset">offset</a>);</td></tr>
+<tr><th id="306">306</th><td>		<b>if</b> ((<a class="local col1 ref" href="#51nr" title='nr' data-ref="51nr">nr</a> &lt; <var>0</var>) &amp;&amp; (<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#14" title="11" data-ref="_M/EAGAIN">EAGAIN</a> || <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#7" title="4" data-ref="_M/EINTR">EINTR</a>))</td></tr>
+<tr><th id="307">307</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="308">308</th><td>		<b>return</b> <a class="local col1 ref" href="#51nr" title='nr' data-ref="51nr">nr</a>;</td></tr>
+<tr><th id="309">309</th><td>	}</td></tr>
+<tr><th id="310">310</th><td>}</td></tr>
+<tr><th id="311">311</th><td></td></tr>
+<tr><th id="312">312</th><td><a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="decl def" id="read_in_full" title='read_in_full' data-ref="read_in_full">read_in_full</dfn>(<em>int</em> <dfn class="local col2 decl" id="52fd" title='fd' data-type='int' data-ref="52fd">fd</dfn>, <em>void</em> *<dfn class="local col3 decl" id="53buf" title='buf' data-type='void *' data-ref="53buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="54count" title='count' data-type='size_t' data-ref="54count">count</dfn>)</td></tr>
+<tr><th id="313">313</th><td>{</td></tr>
+<tr><th id="314">314</th><td>	<em>char</em> *<dfn class="local col5 decl" id="55p" title='p' data-type='char *' data-ref="55p">p</dfn> = <a class="local col3 ref" href="#53buf" title='buf' data-ref="53buf">buf</a>;</td></tr>
+<tr><th id="315">315</th><td>	<a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="local col6 decl" id="56total" title='total' data-type='ssize_t' data-ref="56total">total</dfn> = <var>0</var>;</td></tr>
+<tr><th id="316">316</th><td></td></tr>
+<tr><th id="317">317</th><td>	<b>while</b> (<a class="local col4 ref" href="#54count" title='count' data-ref="54count">count</a> &gt; <var>0</var>) {</td></tr>
+<tr><th id="318">318</th><td>		<a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="local col7 decl" id="57loaded" title='loaded' data-type='ssize_t' data-ref="57loaded">loaded</dfn> = <a class="ref" href="#xread" title='xread' data-ref="xread">xread</a>(<a class="local col2 ref" href="#52fd" title='fd' data-ref="52fd">fd</a>, <a class="local col5 ref" href="#55p" title='p' data-ref="55p">p</a>, <a class="local col4 ref" href="#54count" title='count' data-ref="54count">count</a>);</td></tr>
+<tr><th id="319">319</th><td>		<b>if</b> (<a class="local col7 ref" href="#57loaded" title='loaded' data-ref="57loaded">loaded</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="320">320</th><td>			<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="321">321</th><td>		<b>if</b> (<a class="local col7 ref" href="#57loaded" title='loaded' data-ref="57loaded">loaded</a> == <var>0</var>)</td></tr>
+<tr><th id="322">322</th><td>			<b>return</b> <a class="local col6 ref" href="#56total" title='total' data-ref="56total">total</a>;</td></tr>
+<tr><th id="323">323</th><td>		<a class="local col4 ref" href="#54count" title='count' data-ref="54count">count</a> -= <a class="local col7 ref" href="#57loaded" title='loaded' data-ref="57loaded">loaded</a>;</td></tr>
+<tr><th id="324">324</th><td>		<a class="local col5 ref" href="#55p" title='p' data-ref="55p">p</a> += <a class="local col7 ref" href="#57loaded" title='loaded' data-ref="57loaded">loaded</a>;</td></tr>
+<tr><th id="325">325</th><td>		<a class="local col6 ref" href="#56total" title='total' data-ref="56total">total</a> += <a class="local col7 ref" href="#57loaded" title='loaded' data-ref="57loaded">loaded</a>;</td></tr>
+<tr><th id="326">326</th><td>	}</td></tr>
+<tr><th id="327">327</th><td></td></tr>
+<tr><th id="328">328</th><td>	<b>return</b> <a class="local col6 ref" href="#56total" title='total' data-ref="56total">total</a>;</td></tr>
+<tr><th id="329">329</th><td>}</td></tr>
+<tr><th id="330">330</th><td></td></tr>
+<tr><th id="331">331</th><td><a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="decl def" id="write_in_full" title='write_in_full' data-ref="write_in_full">write_in_full</dfn>(<em>int</em> <dfn class="local col8 decl" id="58fd" title='fd' data-type='int' data-ref="58fd">fd</dfn>, <em>const</em> <em>void</em> *<dfn class="local col9 decl" id="59buf" title='buf' data-type='const void *' data-ref="59buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="60count" title='count' data-type='size_t' data-ref="60count">count</dfn>)</td></tr>
+<tr><th id="332">332</th><td>{</td></tr>
+<tr><th id="333">333</th><td>	<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="61p" title='p' data-type='const char *' data-ref="61p">p</dfn> = <a class="local col9 ref" href="#59buf" title='buf' data-ref="59buf">buf</a>;</td></tr>
+<tr><th id="334">334</th><td>	<a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="local col2 decl" id="62total" title='total' data-type='ssize_t' data-ref="62total">total</dfn> = <var>0</var>;</td></tr>
+<tr><th id="335">335</th><td></td></tr>
+<tr><th id="336">336</th><td>	<b>while</b> (<a class="local col0 ref" href="#60count" title='count' data-ref="60count">count</a> &gt; <var>0</var>) {</td></tr>
+<tr><th id="337">337</th><td>		<a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="local col3 decl" id="63written" title='written' data-type='ssize_t' data-ref="63written">written</dfn> = <a class="ref" href="#xwrite" title='xwrite' data-ref="xwrite">xwrite</a>(<a class="local col8 ref" href="#58fd" title='fd' data-ref="58fd">fd</a>, <a class="local col1 ref" href="#61p" title='p' data-ref="61p">p</a>, <a class="local col0 ref" href="#60count" title='count' data-ref="60count">count</a>);</td></tr>
+<tr><th id="338">338</th><td>		<b>if</b> (<a class="local col3 ref" href="#63written" title='written' data-ref="63written">written</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="339">339</th><td>			<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="340">340</th><td>		<b>if</b> (!<a class="local col3 ref" href="#63written" title='written' data-ref="63written">written</a>) {</td></tr>
+<tr><th id="341">341</th><td>			<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="macro" href="../include/asm-generic/errno-base.h.html#31" title="28" data-ref="_M/ENOSPC">ENOSPC</a>;</td></tr>
+<tr><th id="342">342</th><td>			<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="343">343</th><td>		}</td></tr>
+<tr><th id="344">344</th><td>		<a class="local col0 ref" href="#60count" title='count' data-ref="60count">count</a> -= <a class="local col3 ref" href="#63written" title='written' data-ref="63written">written</a>;</td></tr>
+<tr><th id="345">345</th><td>		<a class="local col1 ref" href="#61p" title='p' data-ref="61p">p</a> += <a class="local col3 ref" href="#63written" title='written' data-ref="63written">written</a>;</td></tr>
+<tr><th id="346">346</th><td>		<a class="local col2 ref" href="#62total" title='total' data-ref="62total">total</a> += <a class="local col3 ref" href="#63written" title='written' data-ref="63written">written</a>;</td></tr>
+<tr><th id="347">347</th><td>	}</td></tr>
+<tr><th id="348">348</th><td></td></tr>
+<tr><th id="349">349</th><td>	<b>return</b> <a class="local col2 ref" href="#62total" title='total' data-ref="62total">total</a>;</td></tr>
+<tr><th id="350">350</th><td>}</td></tr>
+<tr><th id="351">351</th><td></td></tr>
+<tr><th id="352">352</th><td><a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="decl def" id="pread_in_full" title='pread_in_full' data-ref="pread_in_full">pread_in_full</dfn>(<em>int</em> <dfn class="local col4 decl" id="64fd" title='fd' data-type='int' data-ref="64fd">fd</dfn>, <em>void</em> *<dfn class="local col5 decl" id="65buf" title='buf' data-type='void *' data-ref="65buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="66count" title='count' data-type='size_t' data-ref="66count">count</dfn>, <a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col7 decl" id="67offset" title='offset' data-type='off_t' data-ref="67offset">offset</dfn>)</td></tr>
+<tr><th id="353">353</th><td>{</td></tr>
+<tr><th id="354">354</th><td>	<em>char</em> *<dfn class="local col8 decl" id="68p" title='p' data-type='char *' data-ref="68p">p</dfn> = <a class="local col5 ref" href="#65buf" title='buf' data-ref="65buf">buf</a>;</td></tr>
+<tr><th id="355">355</th><td>	<a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="local col9 decl" id="69total" title='total' data-type='ssize_t' data-ref="69total">total</dfn> = <var>0</var>;</td></tr>
+<tr><th id="356">356</th><td></td></tr>
+<tr><th id="357">357</th><td>	<b>while</b> (<a class="local col6 ref" href="#66count" title='count' data-ref="66count">count</a> &gt; <var>0</var>) {</td></tr>
+<tr><th id="358">358</th><td>		<a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="local col0 decl" id="70loaded" title='loaded' data-type='ssize_t' data-ref="70loaded">loaded</dfn> = <a class="ref" href="#xpread" title='xpread' data-ref="xpread">xpread</a>(<a class="local col4 ref" href="#64fd" title='fd' data-ref="64fd">fd</a>, <a class="local col8 ref" href="#68p" title='p' data-ref="68p">p</a>, <a class="local col6 ref" href="#66count" title='count' data-ref="66count">count</a>, <a class="local col7 ref" href="#67offset" title='offset' data-ref="67offset">offset</a>);</td></tr>
+<tr><th id="359">359</th><td>		<b>if</b> (<a class="local col0 ref" href="#70loaded" title='loaded' data-ref="70loaded">loaded</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="360">360</th><td>			<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="361">361</th><td>		<b>if</b> (<a class="local col0 ref" href="#70loaded" title='loaded' data-ref="70loaded">loaded</a> == <var>0</var>)</td></tr>
+<tr><th id="362">362</th><td>			<b>return</b> <a class="local col9 ref" href="#69total" title='total' data-ref="69total">total</a>;</td></tr>
+<tr><th id="363">363</th><td>		<a class="local col6 ref" href="#66count" title='count' data-ref="66count">count</a> -= <a class="local col0 ref" href="#70loaded" title='loaded' data-ref="70loaded">loaded</a>;</td></tr>
+<tr><th id="364">364</th><td>		<a class="local col8 ref" href="#68p" title='p' data-ref="68p">p</a> += <a class="local col0 ref" href="#70loaded" title='loaded' data-ref="70loaded">loaded</a>;</td></tr>
+<tr><th id="365">365</th><td>		<a class="local col9 ref" href="#69total" title='total' data-ref="69total">total</a> += <a class="local col0 ref" href="#70loaded" title='loaded' data-ref="70loaded">loaded</a>;</td></tr>
+<tr><th id="366">366</th><td>		<a class="local col7 ref" href="#67offset" title='offset' data-ref="67offset">offset</a> += <a class="local col0 ref" href="#70loaded" title='loaded' data-ref="70loaded">loaded</a>;</td></tr>
+<tr><th id="367">367</th><td>	}</td></tr>
+<tr><th id="368">368</th><td></td></tr>
+<tr><th id="369">369</th><td>	<b>return</b> <a class="local col9 ref" href="#69total" title='total' data-ref="69total">total</a>;</td></tr>
+<tr><th id="370">370</th><td>}</td></tr>
+<tr><th id="371">371</th><td></td></tr>
+<tr><th id="372">372</th><td><em>int</em> <dfn class="decl def" id="xdup" title='xdup' data-ref="xdup">xdup</dfn>(<em>int</em> <dfn class="local col1 decl" id="71fd" title='fd' data-type='int' data-ref="71fd">fd</dfn>)</td></tr>
+<tr><th id="373">373</th><td>{</td></tr>
+<tr><th id="374">374</th><td>	<em>int</em> <dfn class="local col2 decl" id="72ret" title='ret' data-type='int' data-ref="72ret">ret</dfn> = <a class="ref" href="../include/unistd.h.html#dup" title='dup' data-ref="dup">dup</a>(<a class="local col1 ref" href="#71fd" title='fd' data-ref="71fd">fd</a>);</td></tr>
+<tr><th id="375">375</th><td>	<b>if</b> (<a class="local col2 ref" href="#72ret" title='ret' data-ref="72ret">ret</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="376">376</th><td>		<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"dup failed"</q>);</td></tr>
+<tr><th id="377">377</th><td>	<b>return</b> <a class="local col2 ref" href="#72ret" title='ret' data-ref="72ret">ret</a>;</td></tr>
+<tr><th id="378">378</th><td>}</td></tr>
+<tr><th id="379">379</th><td></td></tr>
+<tr><th id="380">380</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="381">381</th><td><i class="doc"> * xfopen() is the same as fopen(), but it die()s if the fopen() fails.</i></td></tr>
+<tr><th id="382">382</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="383">383</th><td><a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl def" id="xfopen" title='xfopen' data-ref="xfopen">xfopen</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="73path" title='path' data-type='const char *' data-ref="73path">path</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="74mode" title='mode' data-type='const char *' data-ref="74mode">mode</dfn>)</td></tr>
+<tr><th id="384">384</th><td>{</td></tr>
+<tr><th id="385">385</th><td>	<b>for</b> (;;) {</td></tr>
+<tr><th id="386">386</th><td>		<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col5 decl" id="75fp" title='fp' data-type='FILE *' data-ref="75fp">fp</dfn> = <a class="macro" href="git-compat-util.h.html#703" title="git_fopen(path,mode)" data-ref="_M/fopen">fopen</a>(<a class="local col3 ref" href="#73path" title='path' data-ref="73path">path</a>, <a class="local col4 ref" href="#74mode" title='mode' data-ref="74mode">mode</a>);</td></tr>
+<tr><th id="387">387</th><td>		<b>if</b> (<a class="local col5 ref" href="#75fp" title='fp' data-ref="75fp">fp</a>)</td></tr>
+<tr><th id="388">388</th><td>			<b>return</b> <a class="local col5 ref" href="#75fp" title='fp' data-ref="75fp">fp</a>;</td></tr>
+<tr><th id="389">389</th><td>		<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#7" title="4" data-ref="_M/EINTR">EINTR</a>)</td></tr>
+<tr><th id="390">390</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="391">391</th><td></td></tr>
+<tr><th id="392">392</th><td>		<b>if</b> (*<a class="local col4 ref" href="#74mode" title='mode' data-ref="74mode">mode</a> &amp;&amp; <a class="local col4 ref" href="#74mode" title='mode' data-ref="74mode">mode</a>[<var>1</var>] == <kbd>'+'</kbd>)</td></tr>
+<tr><th id="393">393</th><td>			<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"could not open '%s' for reading and writing"</q>), <a class="local col3 ref" href="#73path" title='path' data-ref="73path">path</a>);</td></tr>
+<tr><th id="394">394</th><td>		<b>else</b> <b>if</b> (*<a class="local col4 ref" href="#74mode" title='mode' data-ref="74mode">mode</a> == <kbd>'w'</kbd> || *<a class="local col4 ref" href="#74mode" title='mode' data-ref="74mode">mode</a> == <kbd>'a'</kbd>)</td></tr>
+<tr><th id="395">395</th><td>			<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"could not open '%s' for writing"</q>), <a class="local col3 ref" href="#73path" title='path' data-ref="73path">path</a>);</td></tr>
+<tr><th id="396">396</th><td>		<b>else</b></td></tr>
+<tr><th id="397">397</th><td>			<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"could not open '%s' for reading"</q>), <a class="local col3 ref" href="#73path" title='path' data-ref="73path">path</a>);</td></tr>
+<tr><th id="398">398</th><td>	}</td></tr>
+<tr><th id="399">399</th><td>}</td></tr>
+<tr><th id="400">400</th><td></td></tr>
+<tr><th id="401">401</th><td><a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl def" id="xfdopen" title='xfdopen' data-ref="xfdopen">xfdopen</dfn>(<em>int</em> <dfn class="local col6 decl" id="76fd" title='fd' data-type='int' data-ref="76fd">fd</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="77mode" title='mode' data-type='const char *' data-ref="77mode">mode</dfn>)</td></tr>
+<tr><th id="402">402</th><td>{</td></tr>
+<tr><th id="403">403</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col8 decl" id="78stream" title='stream' data-type='FILE *' data-ref="78stream">stream</dfn> = <a class="ref" href="../include/stdio.h.html#fdopen" title='fdopen' data-ref="fdopen">fdopen</a>(<a class="local col6 ref" href="#76fd" title='fd' data-ref="76fd">fd</a>, <a class="local col7 ref" href="#77mode" title='mode' data-ref="77mode">mode</a>);</td></tr>
+<tr><th id="404">404</th><td>	<b>if</b> (<a class="local col8 ref" href="#78stream" title='stream' data-ref="78stream">stream</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>)</td></tr>
+<tr><th id="405">405</th><td>		<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"Out of memory? fdopen failed"</q>);</td></tr>
+<tr><th id="406">406</th><td>	<b>return</b> <a class="local col8 ref" href="#78stream" title='stream' data-ref="78stream">stream</a>;</td></tr>
+<tr><th id="407">407</th><td>}</td></tr>
+<tr><th id="408">408</th><td></td></tr>
+<tr><th id="409">409</th><td><a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl def" id="fopen_for_writing" title='fopen_for_writing' data-ref="fopen_for_writing">fopen_for_writing</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="79path" title='path' data-type='const char *' data-ref="79path">path</dfn>)</td></tr>
+<tr><th id="410">410</th><td>{</td></tr>
+<tr><th id="411">411</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col0 decl" id="80ret" title='ret' data-type='FILE *' data-ref="80ret">ret</dfn> = <a class="macro" href="git-compat-util.h.html#703" title="git_fopen(path,&quot;w&quot;)" data-ref="_M/fopen">fopen</a>(<a class="local col9 ref" href="#79path" title='path' data-ref="79path">path</a>, <q>"w"</q>);</td></tr>
+<tr><th id="412">412</th><td></td></tr>
+<tr><th id="413">413</th><td>	<b>if</b> (!<a class="local col0 ref" href="#80ret" title='ret' data-ref="80ret">ret</a> &amp;&amp; <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#4" title="1" data-ref="_M/EPERM">EPERM</a>) {</td></tr>
+<tr><th id="414">414</th><td>		<b>if</b> (!<a class="ref" href="../include/unistd.h.html#unlink" title='unlink' data-ref="unlink">unlink</a>(<a class="local col9 ref" href="#79path" title='path' data-ref="79path">path</a>))</td></tr>
+<tr><th id="415">415</th><td>			<a class="local col0 ref" href="#80ret" title='ret' data-ref="80ret">ret</a> = <a class="macro" href="git-compat-util.h.html#703" title="git_fopen(path,&quot;w&quot;)" data-ref="_M/fopen">fopen</a>(<a class="local col9 ref" href="#79path" title='path' data-ref="79path">path</a>, <q>"w"</q>);</td></tr>
+<tr><th id="416">416</th><td>		<b>else</b></td></tr>
+<tr><th id="417">417</th><td>			<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="macro" href="../include/asm-generic/errno-base.h.html#4" title="1" data-ref="_M/EPERM">EPERM</a>;</td></tr>
+<tr><th id="418">418</th><td>	}</td></tr>
+<tr><th id="419">419</th><td>	<b>return</b> <a class="local col0 ref" href="#80ret" title='ret' data-ref="80ret">ret</a>;</td></tr>
+<tr><th id="420">420</th><td>}</td></tr>
+<tr><th id="421">421</th><td></td></tr>
+<tr><th id="422">422</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="warn_on_inaccessible" title='warn_on_inaccessible' data-type='void warn_on_inaccessible(const char * path)' data-ref="warn_on_inaccessible">warn_on_inaccessible</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="81path" title='path' data-type='const char *' data-ref="81path">path</dfn>)</td></tr>
+<tr><th id="423">423</th><td>{</td></tr>
+<tr><th id="424">424</th><td>	<a class="ref" href="git-compat-util.h.html#warning_errno" title='warning_errno' data-ref="warning_errno">warning_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"unable to access '%s'"</q>), <a class="local col1 ref" href="#81path" title='path' data-ref="81path">path</a>);</td></tr>
+<tr><th id="425">425</th><td>}</td></tr>
+<tr><th id="426">426</th><td></td></tr>
+<tr><th id="427">427</th><td><em>int</em> <dfn class="decl def" id="warn_on_fopen_errors" title='warn_on_fopen_errors' data-ref="warn_on_fopen_errors">warn_on_fopen_errors</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="82path" title='path' data-type='const char *' data-ref="82path">path</dfn>)</td></tr>
+<tr><th id="428">428</th><td>{</td></tr>
+<tr><th id="429">429</th><td>	<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> != <a class="macro" href="../include/asm-generic/errno-base.h.html#5" title="2" data-ref="_M/ENOENT">ENOENT</a> &amp;&amp; <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> != <a class="macro" href="../include/asm-generic/errno-base.h.html#23" title="20" data-ref="_M/ENOTDIR">ENOTDIR</a>) {</td></tr>
+<tr><th id="430">430</th><td>		<a class="tu ref" href="#warn_on_inaccessible" title='warn_on_inaccessible' data-use='c' data-ref="warn_on_inaccessible">warn_on_inaccessible</a>(<a class="local col2 ref" href="#82path" title='path' data-ref="82path">path</a>);</td></tr>
+<tr><th id="431">431</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="432">432</th><td>	}</td></tr>
+<tr><th id="433">433</th><td></td></tr>
+<tr><th id="434">434</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="435">435</th><td>}</td></tr>
+<tr><th id="436">436</th><td></td></tr>
+<tr><th id="437">437</th><td><a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl def" id="fopen_or_warn" title='fopen_or_warn' data-ref="fopen_or_warn">fopen_or_warn</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="83path" title='path' data-type='const char *' data-ref="83path">path</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="84mode" title='mode' data-type='const char *' data-ref="84mode">mode</dfn>)</td></tr>
+<tr><th id="438">438</th><td>{</td></tr>
+<tr><th id="439">439</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col5 decl" id="85fp" title='fp' data-type='FILE *' data-ref="85fp">fp</dfn> = <a class="macro" href="git-compat-util.h.html#703" title="git_fopen(path,mode)" data-ref="_M/fopen">fopen</a>(<a class="local col3 ref" href="#83path" title='path' data-ref="83path">path</a>, <a class="local col4 ref" href="#84mode" title='mode' data-ref="84mode">mode</a>);</td></tr>
+<tr><th id="440">440</th><td></td></tr>
+<tr><th id="441">441</th><td>	<b>if</b> (<a class="local col5 ref" href="#85fp" title='fp' data-ref="85fp">fp</a>)</td></tr>
+<tr><th id="442">442</th><td>		<b>return</b> <a class="local col5 ref" href="#85fp" title='fp' data-ref="85fp">fp</a>;</td></tr>
+<tr><th id="443">443</th><td></td></tr>
+<tr><th id="444">444</th><td>	<a class="ref" href="#warn_on_fopen_errors" title='warn_on_fopen_errors' data-ref="warn_on_fopen_errors">warn_on_fopen_errors</a>(<a class="local col3 ref" href="#83path" title='path' data-ref="83path">path</a>);</td></tr>
+<tr><th id="445">445</th><td>	<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="446">446</th><td>}</td></tr>
+<tr><th id="447">447</th><td></td></tr>
+<tr><th id="448">448</th><td><em>int</em> <dfn class="decl def" id="xmkstemp" title='xmkstemp' data-ref="xmkstemp">xmkstemp</dfn>(<em>char</em> *<dfn class="local col6 decl" id="86template" title='template' data-type='char *' data-ref="86template">template</dfn>)</td></tr>
+<tr><th id="449">449</th><td>{</td></tr>
+<tr><th id="450">450</th><td>	<em>int</em> <dfn class="local col7 decl" id="87fd" title='fd' data-type='int' data-ref="87fd">fd</dfn>;</td></tr>
+<tr><th id="451">451</th><td>	<em>char</em> <dfn class="local col8 decl" id="88origtemplate" title='origtemplate' data-type='char [4096]' data-ref="88origtemplate">origtemplate</dfn>[<a class="macro" href="../include/linux/limits.h.html#12" title="4096" data-ref="_M/PATH_MAX">PATH_MAX</a>];</td></tr>
+<tr><th id="452">452</th><td>	<a class="macro" href="git-compat-util.h.html#660" title="gitstrlcpy" data-ref="_M/strlcpy">strlcpy</a>(<a class="local col8 ref" href="#88origtemplate" title='origtemplate' data-ref="88origtemplate">origtemplate</a>, <a class="local col6 ref" href="#86template" title='template' data-ref="86template">template</a>, <b>sizeof</b>(<a class="local col8 ref" href="#88origtemplate" title='origtemplate' data-ref="88origtemplate">origtemplate</a>));</td></tr>
+<tr><th id="453">453</th><td></td></tr>
+<tr><th id="454">454</th><td>	<a class="local col7 ref" href="#87fd" title='fd' data-ref="87fd">fd</a> = <a class="ref" href="../include/stdlib.h.html#622" title='mkstemp' data-ref="mkstemp64">mkstemp</a>(<a class="local col6 ref" href="#86template" title='template' data-ref="86template">template</a>);</td></tr>
+<tr><th id="455">455</th><td>	<b>if</b> (<a class="local col7 ref" href="#87fd" title='fd' data-ref="87fd">fd</a> &lt; <var>0</var>) {</td></tr>
+<tr><th id="456">456</th><td>		<em>int</em> <dfn class="local col9 decl" id="89saved_errno" title='saved_errno' data-type='int' data-ref="89saved_errno">saved_errno</dfn> = <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>;</td></tr>
+<tr><th id="457">457</th><td>		<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="90nonrelative_template" title='nonrelative_template' data-type='const char *' data-ref="90nonrelative_template">nonrelative_template</dfn>;</td></tr>
+<tr><th id="458">458</th><td></td></tr>
+<tr><th id="459">459</th><td>		<b>if</b> (<a class="ref" href="../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col6 ref" href="#86template" title='template' data-ref="86template">template</a>) != <a class="ref" href="../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col8 ref" href="#88origtemplate" title='origtemplate' data-ref="88origtemplate">origtemplate</a>))</td></tr>
+<tr><th id="460">460</th><td>			<a class="local col6 ref" href="#86template" title='template' data-ref="86template">template</a> = <a class="local col8 ref" href="#88origtemplate" title='origtemplate' data-ref="88origtemplate">origtemplate</a>;</td></tr>
+<tr><th id="461">461</th><td></td></tr>
+<tr><th id="462">462</th><td>		<a class="local col0 ref" href="#90nonrelative_template" title='nonrelative_template' data-ref="90nonrelative_template">nonrelative_template</a> = <a class="ref" href="cache.h.html#absolute_path" title='absolute_path' data-ref="absolute_path">absolute_path</a>(<a class="local col6 ref" href="#86template" title='template' data-ref="86template">template</a>);</td></tr>
+<tr><th id="463">463</th><td>		<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="local col9 ref" href="#89saved_errno" title='saved_errno' data-ref="89saved_errno">saved_errno</a>;</td></tr>
+<tr><th id="464">464</th><td>		<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"Unable to create temporary file '%s'"</q>,</td></tr>
+<tr><th id="465">465</th><td>			<a class="local col0 ref" href="#90nonrelative_template" title='nonrelative_template' data-ref="90nonrelative_template">nonrelative_template</a>);</td></tr>
+<tr><th id="466">466</th><td>	}</td></tr>
+<tr><th id="467">467</th><td>	<b>return</b> <a class="local col7 ref" href="#87fd" title='fd' data-ref="87fd">fd</a>;</td></tr>
+<tr><th id="468">468</th><td>}</td></tr>
+<tr><th id="469">469</th><td></td></tr>
+<tr><th id="470">470</th><td><i>/* Adapted from libiberty's mkstemp.c. */</i></td></tr>
+<tr><th id="471">471</th><td></td></tr>
+<tr><th id="472">472</th><td><u>#undef <a class="macro" href="../include/x86_64-linux-gnu/bits/stdio_lim.h.html#24" data-ref="_M/TMP_MAX">TMP_MAX</a></u></td></tr>
+<tr><th id="473">473</th><td><u>#define <dfn class="macro" id="_M/TMP_MAX" data-ref="_M/TMP_MAX">TMP_MAX</dfn> 16384</u></td></tr>
+<tr><th id="474">474</th><td></td></tr>
+<tr><th id="475">475</th><td><em>int</em> <dfn class="decl def" id="git_mkstemps_mode" title='git_mkstemps_mode' data-ref="git_mkstemps_mode">git_mkstemps_mode</dfn>(<em>char</em> *<dfn class="local col1 decl" id="91pattern" title='pattern' data-type='char *' data-ref="91pattern">pattern</dfn>, <em>int</em> <dfn class="local col2 decl" id="92suffix_len" title='suffix_len' data-type='int' data-ref="92suffix_len">suffix_len</dfn>, <em>int</em> <dfn class="local col3 decl" id="93mode" title='mode' data-type='int' data-ref="93mode">mode</dfn>)</td></tr>
+<tr><th id="476">476</th><td>{</td></tr>
+<tr><th id="477">477</th><td>	<em>static</em> <em>const</em> <em>char</em> <dfn class="local col4 decl" id="94letters" title='letters' data-type='const char [63]' data-ref="94letters">letters</dfn>[] =</td></tr>
+<tr><th id="478">478</th><td>		<q>"abcdefghijklmnopqrstuvwxyz"</q></td></tr>
+<tr><th id="479">479</th><td>		<q>"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</q></td></tr>
+<tr><th id="480">480</th><td>		<q>"0123456789"</q>;</td></tr>
+<tr><th id="481">481</th><td>	<em>static</em> <em>const</em> <em>int</em> <dfn class="local col5 decl" id="95num_letters" title='num_letters' data-type='const int' data-ref="95num_letters">num_letters</dfn> = <var>62</var>;</td></tr>
+<tr><th id="482">482</th><td>	<a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col6 decl" id="96value" title='value' data-type='uint64_t' data-ref="96value">value</dfn>;</td></tr>
+<tr><th id="483">483</th><td>	<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/bits/time.h.html#timeval" title='timeval' data-ref="timeval">timeval</a> <dfn class="local col7 decl" id="97tv" title='tv' data-type='struct timeval' data-ref="97tv">tv</dfn>;</td></tr>
+<tr><th id="484">484</th><td>	<em>char</em> *<dfn class="local col8 decl" id="98template" title='template' data-type='char *' data-ref="98template">template</dfn>;</td></tr>
+<tr><th id="485">485</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="99len" title='len' data-type='size_t' data-ref="99len">len</dfn>;</td></tr>
+<tr><th id="486">486</th><td>	<em>int</em> <dfn class="local col0 decl" id="100fd" title='fd' data-type='int' data-ref="100fd">fd</dfn>, <dfn class="local col1 decl" id="101count" title='count' data-type='int' data-ref="101count">count</dfn>;</td></tr>
+<tr><th id="487">487</th><td></td></tr>
+<tr><th id="488">488</th><td>	<a class="local col9 ref" href="#99len" title='len' data-ref="99len">len</a> = <a class="ref" href="../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col1 ref" href="#91pattern" title='pattern' data-ref="91pattern">pattern</a>);</td></tr>
+<tr><th id="489">489</th><td></td></tr>
+<tr><th id="490">490</th><td>	<b>if</b> (<a class="local col9 ref" href="#99len" title='len' data-ref="99len">len</a> &lt; <var>6</var> + <a class="local col2 ref" href="#92suffix_len" title='suffix_len' data-ref="92suffix_len">suffix_len</a>) {</td></tr>
+<tr><th id="491">491</th><td>		<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="macro" href="../include/asm-generic/errno-base.h.html#25" title="22" data-ref="_M/EINVAL">EINVAL</a>;</td></tr>
+<tr><th id="492">492</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="493">493</th><td>	}</td></tr>
+<tr><th id="494">494</th><td></td></tr>
+<tr><th id="495">495</th><td>	<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#896" title="(__extension__ (__builtin_constant_p (6) &amp;&amp; ((__builtin_constant_p (&amp;pattern[len - 6 - suffix_len]) &amp;&amp; strlen (&amp;pattern[len - 6 - suffix_len]) &lt; ((size_t) (6))) || (__builtin_constant_p (&quot;XXXXXX&quot;) &amp;&amp; strlen (&quot;XXXXXX&quot;) &lt; ((size_t) (6)))) ? __extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (&amp;pattern[len - 6 - suffix_len]) &amp;&amp; __builtin_constant_p (&quot;XXXXXX&quot;) &amp;&amp; (__s1_len = __builtin_strlen (&amp;pattern[len - 6 - suffix_len]), __s2_len = __builtin_strlen (&quot;XXXXXX&quot;), (!((size_t)(const void *)((&amp;pattern[len - 6 - suffix_len]) + 1) - (size_t)(const void *)(&amp;pattern[len - 6 - suffix_len]) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;XXXXXX&quot;) + 1) - (size_t)(const void *)(&quot;XXXXXX&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (&amp;pattern[len - 6 - suffix_len], &quot;XXXXXX&quot;) : (__builtin_constant_p (&amp;pattern[len - 6 - suffix_len]) &amp;&amp; ((size_t)(const void *)((&amp;pattern[len - 6 - suffix_len]) + 1) - (size_t)(const void *)(&amp;pattern[len - 6 - suffix_len]) == 1) &amp;&amp; (__s1_len = __builtin_strlen (&amp;pattern[len - 6 - suffix_len]), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;XXXXXX&quot;) &amp;&amp; ((size_t)(const void *)((&quot;XXXXXX&quot;) + 1) - (size_t)(const void *)(&quot;XXXXXX&quot;) == 1) ? __builtin_strcmp (&amp;pattern[len - 6 - suffix_len], &quot;XXXXXX&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;XXXXXX&quot;); int __result = (((const unsigned char *) (const char *) (&amp;pattern[len - 6 - suffix_len]))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&amp;pattern[len - 6 - suffix_len]))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&amp;pattern[len - 6 - suffix_len]))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&amp;pattern[len - 6 - suffix_len]))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;XXXXXX&quot;) &amp;&amp; ((size_t)(const void *)((&quot;XXXXXX&quot;) + 1) - (size_t)(const void *)(&quot;XXXXXX&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;XXXXXX&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (&amp;pattern[len - 6 - suffix_len]) &amp;&amp; ((size_t)(const void *)((&amp;pattern[len - 6 - suffix_len]) + 1) - (size_t)(const void *)(&amp;pattern[len - 6 - suffix_len]) == 1) ? __builtin_strcmp (&amp;pattern[len - 6 - suffix_len], &quot;XXXXXX&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&amp;pattern[len - 6 - suffix_len]); int __result = (((const unsigned char *) (const char *) (&quot;XXXXXX&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;XXXXXX&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;XXXXXX&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;XXXXXX&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (&amp;pattern[len - 6 - suffix_len], &quot;XXXXXX&quot;)))); }) : strncmp (&amp;pattern[len - 6 - suffix_len], &quot;XXXXXX&quot;, 6)))" data-ref="_M/strncmp">strncmp</a>(&amp;<a class="local col1 ref" href="#91pattern" title='pattern' data-ref="91pattern">pattern</a>[<a class="local col9 ref" href="#99len" title='len' data-ref="99len">len</a> - <var>6</var> - <a class="local col2 ref" href="#92suffix_len" title='suffix_len' data-ref="92suffix_len">suffix_len</a>], <q>"XXXXXX"</q>, <var>6</var>)) {</td></tr>
+<tr><th id="496">496</th><td>		<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="macro" href="../include/asm-generic/errno-base.h.html#25" title="22" data-ref="_M/EINVAL">EINVAL</a>;</td></tr>
+<tr><th id="497">497</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="498">498</th><td>	}</td></tr>
+<tr><th id="499">499</th><td></td></tr>
+<tr><th id="500">500</th><td>	<i>/*</i></td></tr>
+<tr><th id="501">501</th><td><i>	 * Replace pattern's XXXXXX characters with randomness.</i></td></tr>
+<tr><th id="502">502</th><td><i>	 * Try TMP_MAX different filenames.</i></td></tr>
+<tr><th id="503">503</th><td><i>	 */</i></td></tr>
+<tr><th id="504">504</th><td>	<a class="ref" href="../include/x86_64-linux-gnu/sys/time.h.html#gettimeofday" title='gettimeofday' data-ref="gettimeofday">gettimeofday</a>(&amp;<a class="local col7 ref" href="#97tv" title='tv' data-ref="97tv">tv</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="505">505</th><td>	<a class="local col6 ref" href="#96value" title='value' data-ref="96value">value</a> = ((<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>)(<a class="local col7 ref" href="#97tv" title='tv' data-ref="97tv">tv</a>.<a class="ref" href="../include/x86_64-linux-gnu/bits/time.h.html#timeval::tv_usec" title='timeval::tv_usec' data-ref="timeval::tv_usec">tv_usec</a> &lt;&lt; <var>16</var>)) ^ <a class="local col7 ref" href="#97tv" title='tv' data-ref="97tv">tv</a>.<a class="ref" href="../include/x86_64-linux-gnu/bits/time.h.html#timeval::tv_sec" title='timeval::tv_sec' data-ref="timeval::tv_sec">tv_sec</a> ^ <a class="ref" href="../include/unistd.h.html#getpid" title='getpid' data-ref="getpid">getpid</a>();</td></tr>
+<tr><th id="506">506</th><td>	<a class="local col8 ref" href="#98template" title='template' data-ref="98template">template</a> = &amp;<a class="local col1 ref" href="#91pattern" title='pattern' data-ref="91pattern">pattern</a>[<a class="local col9 ref" href="#99len" title='len' data-ref="99len">len</a> - <var>6</var> - <a class="local col2 ref" href="#92suffix_len" title='suffix_len' data-ref="92suffix_len">suffix_len</a>];</td></tr>
+<tr><th id="507">507</th><td>	<b>for</b> (<a class="local col1 ref" href="#101count" title='count' data-ref="101count">count</a> = <var>0</var>; <a class="local col1 ref" href="#101count" title='count' data-ref="101count">count</a> &lt; <a class="macro" href="#473" title="16384" data-ref="_M/TMP_MAX">TMP_MAX</a>; ++<a class="local col1 ref" href="#101count" title='count' data-ref="101count">count</a>) {</td></tr>
+<tr><th id="508">508</th><td>		<a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col2 decl" id="102v" title='v' data-type='uint64_t' data-ref="102v">v</dfn> = <a class="local col6 ref" href="#96value" title='value' data-ref="96value">value</a>;</td></tr>
+<tr><th id="509">509</th><td>		<i>/* Fill in the random bits. */</i></td></tr>
+<tr><th id="510">510</th><td>		<a class="local col8 ref" href="#98template" title='template' data-ref="98template">template</a>[<var>0</var>] = <a class="local col4 ref" href="#94letters" title='letters' data-ref="94letters">letters</a>[<a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> % <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>]; <a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> /= <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>;</td></tr>
+<tr><th id="511">511</th><td>		<a class="local col8 ref" href="#98template" title='template' data-ref="98template">template</a>[<var>1</var>] = <a class="local col4 ref" href="#94letters" title='letters' data-ref="94letters">letters</a>[<a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> % <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>]; <a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> /= <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>;</td></tr>
+<tr><th id="512">512</th><td>		<a class="local col8 ref" href="#98template" title='template' data-ref="98template">template</a>[<var>2</var>] = <a class="local col4 ref" href="#94letters" title='letters' data-ref="94letters">letters</a>[<a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> % <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>]; <a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> /= <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>;</td></tr>
+<tr><th id="513">513</th><td>		<a class="local col8 ref" href="#98template" title='template' data-ref="98template">template</a>[<var>3</var>] = <a class="local col4 ref" href="#94letters" title='letters' data-ref="94letters">letters</a>[<a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> % <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>]; <a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> /= <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>;</td></tr>
+<tr><th id="514">514</th><td>		<a class="local col8 ref" href="#98template" title='template' data-ref="98template">template</a>[<var>4</var>] = <a class="local col4 ref" href="#94letters" title='letters' data-ref="94letters">letters</a>[<a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> % <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>]; <a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> /= <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>;</td></tr>
+<tr><th id="515">515</th><td>		<a class="local col8 ref" href="#98template" title='template' data-ref="98template">template</a>[<var>5</var>] = <a class="local col4 ref" href="#94letters" title='letters' data-ref="94letters">letters</a>[<a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> % <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>]; <a class="local col2 ref" href="#102v" title='v' data-ref="102v">v</a> /= <a class="local col5 ref" href="#95num_letters" title='num_letters' data-ref="95num_letters">num_letters</a>;</td></tr>
+<tr><th id="516">516</th><td></td></tr>
+<tr><th id="517">517</th><td>		<a class="local col0 ref" href="#100fd" title='fd' data-ref="100fd">fd</a> = <a class="ref" href="../include/fcntl.h.html#159" title='open' data-ref="open64">open</a>(<a class="local col1 ref" href="#91pattern" title='pattern' data-ref="91pattern">pattern</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#47" title="0100" data-ref="_M/O_CREAT">O_CREAT</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#50" title="0200" data-ref="_M/O_EXCL">O_EXCL</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#45" title="02" data-ref="_M/O_RDWR">O_RDWR</a>, <a class="local col3 ref" href="#93mode" title='mode' data-ref="93mode">mode</a>);</td></tr>
+<tr><th id="518">518</th><td>		<b>if</b> (<a class="local col0 ref" href="#100fd" title='fd' data-ref="100fd">fd</a> &gt;= <var>0</var>)</td></tr>
+<tr><th id="519">519</th><td>			<b>return</b> <a class="local col0 ref" href="#100fd" title='fd' data-ref="100fd">fd</a>;</td></tr>
+<tr><th id="520">520</th><td>		<i>/*</i></td></tr>
+<tr><th id="521">521</th><td><i>		 * Fatal error (EPERM, ENOSPC etc).</i></td></tr>
+<tr><th id="522">522</th><td><i>		 * It doesn't make sense to loop.</i></td></tr>
+<tr><th id="523">523</th><td><i>		 */</i></td></tr>
+<tr><th id="524">524</th><td>		<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> != <a class="macro" href="../include/asm-generic/errno-base.h.html#20" title="17" data-ref="_M/EEXIST">EEXIST</a>)</td></tr>
+<tr><th id="525">525</th><td>			<b>break</b>;</td></tr>
+<tr><th id="526">526</th><td>		<i>/*</i></td></tr>
+<tr><th id="527">527</th><td><i>		 * This is a random value.  It is only necessary that</i></td></tr>
+<tr><th id="528">528</th><td><i>		 * the next TMP_MAX values generated by adding 7777 to</i></td></tr>
+<tr><th id="529">529</th><td><i>		 * VALUE are different with (module 2^32).</i></td></tr>
+<tr><th id="530">530</th><td><i>		 */</i></td></tr>
+<tr><th id="531">531</th><td>		<a class="local col6 ref" href="#96value" title='value' data-ref="96value">value</a> += <var>7777</var>;</td></tr>
+<tr><th id="532">532</th><td>	}</td></tr>
+<tr><th id="533">533</th><td>	<i>/* We return the null string if we can't find a unique file name.  */</i></td></tr>
+<tr><th id="534">534</th><td>	<a class="local col1 ref" href="#91pattern" title='pattern' data-ref="91pattern">pattern</a>[<var>0</var>] = <kbd>'\0'</kbd>;</td></tr>
+<tr><th id="535">535</th><td>	<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="536">536</th><td>}</td></tr>
+<tr><th id="537">537</th><td></td></tr>
+<tr><th id="538">538</th><td><em>int</em> <dfn class="decl def" id="git_mkstemp_mode" title='git_mkstemp_mode' data-ref="git_mkstemp_mode">git_mkstemp_mode</dfn>(<em>char</em> *<dfn class="local col3 decl" id="103pattern" title='pattern' data-type='char *' data-ref="103pattern">pattern</dfn>, <em>int</em> <dfn class="local col4 decl" id="104mode" title='mode' data-type='int' data-ref="104mode">mode</dfn>)</td></tr>
+<tr><th id="539">539</th><td>{</td></tr>
+<tr><th id="540">540</th><td>	<i>/* mkstemp is just mkstemps with no suffix */</i></td></tr>
+<tr><th id="541">541</th><td>	<b>return</b> <a class="ref" href="#git_mkstemps_mode" title='git_mkstemps_mode' data-ref="git_mkstemps_mode">git_mkstemps_mode</a>(<a class="local col3 ref" href="#103pattern" title='pattern' data-ref="103pattern">pattern</a>, <var>0</var>, <a class="local col4 ref" href="#104mode" title='mode' data-ref="104mode">mode</a>);</td></tr>
+<tr><th id="542">542</th><td>}</td></tr>
+<tr><th id="543">543</th><td></td></tr>
+<tr><th id="544">544</th><td><em>int</em> <dfn class="decl def" id="xmkstemp_mode" title='xmkstemp_mode' data-ref="xmkstemp_mode">xmkstemp_mode</dfn>(<em>char</em> *<dfn class="local col5 decl" id="105template" title='template' data-type='char *' data-ref="105template">template</dfn>, <em>int</em> <dfn class="local col6 decl" id="106mode" title='mode' data-type='int' data-ref="106mode">mode</dfn>)</td></tr>
+<tr><th id="545">545</th><td>{</td></tr>
+<tr><th id="546">546</th><td>	<em>int</em> <dfn class="local col7 decl" id="107fd" title='fd' data-type='int' data-ref="107fd">fd</dfn>;</td></tr>
+<tr><th id="547">547</th><td>	<em>char</em> <dfn class="local col8 decl" id="108origtemplate" title='origtemplate' data-type='char [4096]' data-ref="108origtemplate">origtemplate</dfn>[<a class="macro" href="../include/linux/limits.h.html#12" title="4096" data-ref="_M/PATH_MAX">PATH_MAX</a>];</td></tr>
+<tr><th id="548">548</th><td>	<a class="macro" href="git-compat-util.h.html#660" title="gitstrlcpy" data-ref="_M/strlcpy">strlcpy</a>(<a class="local col8 ref" href="#108origtemplate" title='origtemplate' data-ref="108origtemplate">origtemplate</a>, <a class="local col5 ref" href="#105template" title='template' data-ref="105template">template</a>, <b>sizeof</b>(<a class="local col8 ref" href="#108origtemplate" title='origtemplate' data-ref="108origtemplate">origtemplate</a>));</td></tr>
+<tr><th id="549">549</th><td></td></tr>
+<tr><th id="550">550</th><td>	<a class="local col7 ref" href="#107fd" title='fd' data-ref="107fd">fd</a> = <a class="ref" href="#git_mkstemp_mode" title='git_mkstemp_mode' data-ref="git_mkstemp_mode">git_mkstemp_mode</a>(<a class="local col5 ref" href="#105template" title='template' data-ref="105template">template</a>, <a class="local col6 ref" href="#106mode" title='mode' data-ref="106mode">mode</a>);</td></tr>
+<tr><th id="551">551</th><td>	<b>if</b> (<a class="local col7 ref" href="#107fd" title='fd' data-ref="107fd">fd</a> &lt; <var>0</var>) {</td></tr>
+<tr><th id="552">552</th><td>		<em>int</em> <dfn class="local col9 decl" id="109saved_errno" title='saved_errno' data-type='int' data-ref="109saved_errno">saved_errno</dfn> = <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>;</td></tr>
+<tr><th id="553">553</th><td>		<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="110nonrelative_template" title='nonrelative_template' data-type='const char *' data-ref="110nonrelative_template">nonrelative_template</dfn>;</td></tr>
+<tr><th id="554">554</th><td></td></tr>
+<tr><th id="555">555</th><td>		<b>if</b> (!<a class="local col5 ref" href="#105template" title='template' data-ref="105template">template</a>[<var>0</var>])</td></tr>
+<tr><th id="556">556</th><td>			<a class="local col5 ref" href="#105template" title='template' data-ref="105template">template</a> = <a class="local col8 ref" href="#108origtemplate" title='origtemplate' data-ref="108origtemplate">origtemplate</a>;</td></tr>
+<tr><th id="557">557</th><td></td></tr>
+<tr><th id="558">558</th><td>		<a class="local col0 ref" href="#110nonrelative_template" title='nonrelative_template' data-ref="110nonrelative_template">nonrelative_template</a> = <a class="ref" href="cache.h.html#absolute_path" title='absolute_path' data-ref="absolute_path">absolute_path</a>(<a class="local col5 ref" href="#105template" title='template' data-ref="105template">template</a>);</td></tr>
+<tr><th id="559">559</th><td>		<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="local col9 ref" href="#109saved_errno" title='saved_errno' data-ref="109saved_errno">saved_errno</a>;</td></tr>
+<tr><th id="560">560</th><td>		<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"Unable to create temporary file '%s'"</q>,</td></tr>
+<tr><th id="561">561</th><td>			<a class="local col0 ref" href="#110nonrelative_template" title='nonrelative_template' data-ref="110nonrelative_template">nonrelative_template</a>);</td></tr>
+<tr><th id="562">562</th><td>	}</td></tr>
+<tr><th id="563">563</th><td>	<b>return</b> <a class="local col7 ref" href="#107fd" title='fd' data-ref="107fd">fd</a>;</td></tr>
+<tr><th id="564">564</th><td>}</td></tr>
+<tr><th id="565">565</th><td></td></tr>
+<tr><th id="566">566</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="warn_if_unremovable" title='warn_if_unremovable' data-type='int warn_if_unremovable(const char * op, const char * file, int rc)' data-ref="warn_if_unremovable">warn_if_unremovable</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="111op" title='op' data-type='const char *' data-ref="111op">op</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="112file" title='file' data-type='const char *' data-ref="112file">file</dfn>, <em>int</em> <dfn class="local col3 decl" id="113rc" title='rc' data-type='int' data-ref="113rc">rc</dfn>)</td></tr>
+<tr><th id="567">567</th><td>{</td></tr>
+<tr><th id="568">568</th><td>	<em>int</em> <dfn class="local col4 decl" id="114err" title='err' data-type='int' data-ref="114err">err</dfn>;</td></tr>
+<tr><th id="569">569</th><td>	<b>if</b> (!<a class="local col3 ref" href="#113rc" title='rc' data-ref="113rc">rc</a> || <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#5" title="2" data-ref="_M/ENOENT">ENOENT</a>)</td></tr>
+<tr><th id="570">570</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="571">571</th><td>	<a class="local col4 ref" href="#114err" title='err' data-ref="114err">err</a> = <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>;</td></tr>
+<tr><th id="572">572</th><td>	<a class="ref" href="git-compat-util.h.html#warning_errno" title='warning_errno' data-ref="warning_errno">warning_errno</a>(<q>"unable to %s %s"</q>, <a class="local col1 ref" href="#111op" title='op' data-ref="111op">op</a>, <a class="local col2 ref" href="#112file" title='file' data-ref="112file">file</a>);</td></tr>
+<tr><th id="573">573</th><td>	<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="local col4 ref" href="#114err" title='err' data-ref="114err">err</a>;</td></tr>
+<tr><th id="574">574</th><td>	<b>return</b> <a class="local col3 ref" href="#113rc" title='rc' data-ref="113rc">rc</a>;</td></tr>
+<tr><th id="575">575</th><td>}</td></tr>
+<tr><th id="576">576</th><td></td></tr>
+<tr><th id="577">577</th><td><em>int</em> <dfn class="decl def" id="unlink_or_msg" title='unlink_or_msg' data-ref="unlink_or_msg">unlink_or_msg</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="115file" title='file' data-type='const char *' data-ref="115file">file</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col6 decl" id="116err" title='err' data-type='struct strbuf *' data-ref="116err">err</dfn>)</td></tr>
+<tr><th id="578">578</th><td>{</td></tr>
+<tr><th id="579">579</th><td>	<em>int</em> <dfn class="local col7 decl" id="117rc" title='rc' data-type='int' data-ref="117rc">rc</dfn> = <a class="ref" href="../include/unistd.h.html#unlink" title='unlink' data-ref="unlink">unlink</a>(<a class="local col5 ref" href="#115file" title='file' data-ref="115file">file</a>);</td></tr>
+<tr><th id="580">580</th><td></td></tr>
+<tr><th id="581">581</th><td>	<a class="macro" href="../include/assert.h.html#88" title="((err) ? (void) (0) : __assert_fail (&quot;err&quot;, &quot;/home/jon/workspace/git/wrapper.c&quot;, 581, __PRETTY_FUNCTION__))" data-ref="_M/assert">assert</a>(<a class="local col6 ref" href="#116err" title='err' data-ref="116err">err</a>);</td></tr>
+<tr><th id="582">582</th><td></td></tr>
+<tr><th id="583">583</th><td>	<b>if</b> (!<a class="local col7 ref" href="#117rc" title='rc' data-ref="117rc">rc</a> || <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#5" title="2" data-ref="_M/ENOENT">ENOENT</a>)</td></tr>
+<tr><th id="584">584</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="585">585</th><td></td></tr>
+<tr><th id="586">586</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(<a class="local col6 ref" href="#116err" title='err' data-ref="116err">err</a>, <q>"unable to unlink %s: %s"</q>,</td></tr>
+<tr><th id="587">587</th><td>		    <a class="local col5 ref" href="#115file" title='file' data-ref="115file">file</a>, <a class="ref" href="../include/string.h.html#strerror" title='strerror' data-ref="strerror">strerror</a>(<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>));</td></tr>
+<tr><th id="588">588</th><td>	<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="589">589</th><td>}</td></tr>
+<tr><th id="590">590</th><td></td></tr>
+<tr><th id="591">591</th><td><em>int</em> <dfn class="decl def" id="unlink_or_warn" title='unlink_or_warn' data-ref="unlink_or_warn">unlink_or_warn</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="118file" title='file' data-type='const char *' data-ref="118file">file</dfn>)</td></tr>
+<tr><th id="592">592</th><td>{</td></tr>
+<tr><th id="593">593</th><td>	<b>return</b> <a class="tu ref" href="#warn_if_unremovable" title='warn_if_unremovable' data-use='c' data-ref="warn_if_unremovable">warn_if_unremovable</a>(<q>"unlink"</q>, <a class="local col8 ref" href="#118file" title='file' data-ref="118file">file</a>, <a class="ref" href="../include/unistd.h.html#unlink" title='unlink' data-ref="unlink">unlink</a>(<a class="local col8 ref" href="#118file" title='file' data-ref="118file">file</a>));</td></tr>
+<tr><th id="594">594</th><td>}</td></tr>
+<tr><th id="595">595</th><td></td></tr>
+<tr><th id="596">596</th><td><em>int</em> <dfn class="decl def" id="rmdir_or_warn" title='rmdir_or_warn' data-ref="rmdir_or_warn">rmdir_or_warn</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="119file" title='file' data-type='const char *' data-ref="119file">file</dfn>)</td></tr>
+<tr><th id="597">597</th><td>{</td></tr>
+<tr><th id="598">598</th><td>	<b>return</b> <a class="tu ref" href="#warn_if_unremovable" title='warn_if_unremovable' data-use='c' data-ref="warn_if_unremovable">warn_if_unremovable</a>(<q>"rmdir"</q>, <a class="local col9 ref" href="#119file" title='file' data-ref="119file">file</a>, <a class="ref" href="../include/unistd.h.html#rmdir" title='rmdir' data-ref="rmdir">rmdir</a>(<a class="local col9 ref" href="#119file" title='file' data-ref="119file">file</a>));</td></tr>
+<tr><th id="599">599</th><td>}</td></tr>
+<tr><th id="600">600</th><td></td></tr>
+<tr><th id="601">601</th><td><em>int</em> <dfn class="decl def" id="remove_or_warn" title='remove_or_warn' data-ref="remove_or_warn">remove_or_warn</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col0 decl" id="120mode" title='mode' data-type='unsigned int' data-ref="120mode">mode</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="121file" title='file' data-type='const char *' data-ref="121file">file</dfn>)</td></tr>
+<tr><th id="602">602</th><td>{</td></tr>
+<tr><th id="603">603</th><td>	<b>return</b> <a class="macro" href="cache.h.html#103" title="(((mode) &amp; 0170000) == 0160000)" data-ref="_M/S_ISGITLINK">S_ISGITLINK</a>(<a class="local col0 ref" href="#120mode" title='mode' data-ref="120mode">mode</a>) ? <a class="ref" href="#rmdir_or_warn" title='rmdir_or_warn' data-ref="rmdir_or_warn">rmdir_or_warn</a>(<a class="local col1 ref" href="#121file" title='file' data-ref="121file">file</a>) : <a class="ref" href="#unlink_or_warn" title='unlink_or_warn' data-ref="unlink_or_warn">unlink_or_warn</a>(<a class="local col1 ref" href="#121file" title='file' data-ref="121file">file</a>);</td></tr>
+<tr><th id="604">604</th><td>}</td></tr>
+<tr><th id="605">605</th><td></td></tr>
+<tr><th id="606">606</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="access_error_is_ok" title='access_error_is_ok' data-type='int access_error_is_ok(int err, unsigned int flag)' data-ref="access_error_is_ok">access_error_is_ok</dfn>(<em>int</em> <dfn class="local col2 decl" id="122err" title='err' data-type='int' data-ref="122err">err</dfn>, <em>unsigned</em> <dfn class="local col3 decl" id="123flag" title='flag' data-type='unsigned int' data-ref="123flag">flag</dfn>)</td></tr>
+<tr><th id="607">607</th><td>{</td></tr>
+<tr><th id="608">608</th><td>	<b>return</b> (<a class="ref" href="git-compat-util.h.html#is_missing_file_error" title='is_missing_file_error' data-ref="is_missing_file_error">is_missing_file_error</a>(<a class="local col2 ref" href="#122err" title='err' data-ref="122err">err</a>) ||</td></tr>
+<tr><th id="609">609</th><td>		((<a class="local col3 ref" href="#123flag" title='flag' data-ref="123flag">flag</a> &amp; <a class="macro" href="git-compat-util.h.html#1129" title="(1U &lt;&lt; 0)" data-ref="_M/ACCESS_EACCES_OK">ACCESS_EACCES_OK</a>) &amp;&amp; <a class="local col2 ref" href="#122err" title='err' data-ref="122err">err</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#16" title="13" data-ref="_M/EACCES">EACCES</a>));</td></tr>
+<tr><th id="610">610</th><td>}</td></tr>
+<tr><th id="611">611</th><td></td></tr>
+<tr><th id="612">612</th><td><em>int</em> <dfn class="decl def" id="access_or_warn" title='access_or_warn' data-ref="access_or_warn">access_or_warn</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="124path" title='path' data-type='const char *' data-ref="124path">path</dfn>, <em>int</em> <dfn class="local col5 decl" id="125mode" title='mode' data-type='int' data-ref="125mode">mode</dfn>, <em>unsigned</em> <dfn class="local col6 decl" id="126flag" title='flag' data-type='unsigned int' data-ref="126flag">flag</dfn>)</td></tr>
+<tr><th id="613">613</th><td>{</td></tr>
+<tr><th id="614">614</th><td>	<em>int</em> <dfn class="local col7 decl" id="127ret" title='ret' data-type='int' data-ref="127ret">ret</dfn> = <a class="ref" href="../include/unistd.h.html#access" title='access' data-ref="access">access</a>(<a class="local col4 ref" href="#124path" title='path' data-ref="124path">path</a>, <a class="local col5 ref" href="#125mode" title='mode' data-ref="125mode">mode</a>);</td></tr>
+<tr><th id="615">615</th><td>	<b>if</b> (<a class="local col7 ref" href="#127ret" title='ret' data-ref="127ret">ret</a> &amp;&amp; !<a class="tu ref" href="#access_error_is_ok" title='access_error_is_ok' data-use='c' data-ref="access_error_is_ok">access_error_is_ok</a>(<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>, <a class="local col6 ref" href="#126flag" title='flag' data-ref="126flag">flag</a>))</td></tr>
+<tr><th id="616">616</th><td>		<a class="tu ref" href="#warn_on_inaccessible" title='warn_on_inaccessible' data-use='c' data-ref="warn_on_inaccessible">warn_on_inaccessible</a>(<a class="local col4 ref" href="#124path" title='path' data-ref="124path">path</a>);</td></tr>
+<tr><th id="617">617</th><td>	<b>return</b> <a class="local col7 ref" href="#127ret" title='ret' data-ref="127ret">ret</a>;</td></tr>
+<tr><th id="618">618</th><td>}</td></tr>
+<tr><th id="619">619</th><td></td></tr>
+<tr><th id="620">620</th><td><em>int</em> <dfn class="decl def" id="access_or_die" title='access_or_die' data-ref="access_or_die">access_or_die</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="128path" title='path' data-type='const char *' data-ref="128path">path</dfn>, <em>int</em> <dfn class="local col9 decl" id="129mode" title='mode' data-type='int' data-ref="129mode">mode</dfn>, <em>unsigned</em> <dfn class="local col0 decl" id="130flag" title='flag' data-type='unsigned int' data-ref="130flag">flag</dfn>)</td></tr>
+<tr><th id="621">621</th><td>{</td></tr>
+<tr><th id="622">622</th><td>	<em>int</em> <dfn class="local col1 decl" id="131ret" title='ret' data-type='int' data-ref="131ret">ret</dfn> = <a class="ref" href="../include/unistd.h.html#access" title='access' data-ref="access">access</a>(<a class="local col8 ref" href="#128path" title='path' data-ref="128path">path</a>, <a class="local col9 ref" href="#129mode" title='mode' data-ref="129mode">mode</a>);</td></tr>
+<tr><th id="623">623</th><td>	<b>if</b> (<a class="local col1 ref" href="#131ret" title='ret' data-ref="131ret">ret</a> &amp;&amp; !<a class="tu ref" href="#access_error_is_ok" title='access_error_is_ok' data-use='c' data-ref="access_error_is_ok">access_error_is_ok</a>(<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>, <a class="local col0 ref" href="#130flag" title='flag' data-ref="130flag">flag</a>))</td></tr>
+<tr><th id="624">624</th><td>		<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"unable to access '%s'"</q>), <a class="local col8 ref" href="#128path" title='path' data-ref="128path">path</a>);</td></tr>
+<tr><th id="625">625</th><td>	<b>return</b> <a class="local col1 ref" href="#131ret" title='ret' data-ref="131ret">ret</a>;</td></tr>
+<tr><th id="626">626</th><td>}</td></tr>
+<tr><th id="627">627</th><td></td></tr>
+<tr><th id="628">628</th><td><em>char</em> *<dfn class="decl def" id="xgetcwd" title='xgetcwd' data-ref="xgetcwd">xgetcwd</dfn>(<em>void</em>)</td></tr>
+<tr><th id="629">629</th><td>{</td></tr>
+<tr><th id="630">630</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col2 decl" id="132sb" title='sb' data-type='struct strbuf' data-ref="132sb">sb</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="631">631</th><td>	<b>if</b> (<a class="ref" href="strbuf.h.html#strbuf_getcwd" title='strbuf_getcwd' data-ref="strbuf_getcwd">strbuf_getcwd</a>(&amp;<a class="local col2 ref" href="#132sb" title='sb' data-ref="132sb">sb</a>))</td></tr>
+<tr><th id="632">632</th><td>		<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"unable to get current working directory"</q>));</td></tr>
+<tr><th id="633">633</th><td>	<b>return</b> <a class="ref" href="strbuf.h.html#strbuf_detach" title='strbuf_detach' data-ref="strbuf_detach">strbuf_detach</a>(&amp;<a class="local col2 ref" href="#132sb" title='sb' data-ref="132sb">sb</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="634">634</th><td>}</td></tr>
+<tr><th id="635">635</th><td></td></tr>
+<tr><th id="636">636</th><td><em>int</em> <dfn class="decl def" id="xsnprintf" title='xsnprintf' data-ref="xsnprintf">xsnprintf</dfn>(<em>char</em> *<dfn class="local col3 decl" id="133dst" title='dst' data-type='char *' data-ref="133dst">dst</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="134max" title='max' data-type='size_t' data-ref="134max">max</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="135fmt" title='fmt' data-type='const char *' data-ref="135fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="637">637</th><td>{</td></tr>
+<tr><th id="638">638</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col6 decl" id="136ap" title='ap' data-type='va_list' data-ref="136ap">ap</dfn>;</td></tr>
+<tr><th id="639">639</th><td>	<em>int</em> <dfn class="local col7 decl" id="137len" title='len' data-type='int' data-ref="137len">len</dfn>;</td></tr>
+<tr><th id="640">640</th><td></td></tr>
+<tr><th id="641">641</th><td>	<span class="macro" title="__builtin_va_start(ap, fmt)" data-ref="_M/va_start">va_start</span>(<a class="local col6 ref" href="#136ap" title='ap' data-ref="136ap">ap</a>, <a class="local col5 ref" href="#135fmt" title='fmt' data-ref="135fmt">fmt</a>);</td></tr>
+<tr><th id="642">642</th><td>	<a class="local col7 ref" href="#137len" title='len' data-ref="137len">len</a> = <a class="ref" href="../include/stdio.h.html#vsnprintf" title='vsnprintf' data-ref="vsnprintf">vsnprintf</a>(<a class="local col3 ref" href="#133dst" title='dst' data-ref="133dst">dst</a>, <a class="local col4 ref" href="#134max" title='max' data-ref="134max">max</a>, <a class="local col5 ref" href="#135fmt" title='fmt' data-ref="135fmt">fmt</a>, <a class="local col6 ref" href="#136ap" title='ap' data-ref="136ap">ap</a>);</td></tr>
+<tr><th id="643">643</th><td>	<span class="macro" title="__builtin_va_end(ap)" data-ref="_M/va_end">va_end</span>(<a class="local col6 ref" href="#136ap" title='ap' data-ref="136ap">ap</a>);</td></tr>
+<tr><th id="644">644</th><td></td></tr>
+<tr><th id="645">645</th><td>	<b>if</b> (<a class="local col7 ref" href="#137len" title='len' data-ref="137len">len</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="646">646</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: your snprintf is broken"</q>);</td></tr>
+<tr><th id="647">647</th><td>	<b>if</b> (<a class="local col7 ref" href="#137len" title='len' data-ref="137len">len</a> &gt;= <a class="local col4 ref" href="#134max" title='max' data-ref="134max">max</a>)</td></tr>
+<tr><th id="648">648</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: attempt to snprintf into too-small buffer"</q>);</td></tr>
+<tr><th id="649">649</th><td>	<b>return</b> <a class="local col7 ref" href="#137len" title='len' data-ref="137len">len</a>;</td></tr>
+<tr><th id="650">650</th><td>}</td></tr>
+<tr><th id="651">651</th><td></td></tr>
+<tr><th id="652">652</th><td><em>void</em> <dfn class="decl def" id="write_file_buf" title='write_file_buf' data-ref="write_file_buf">write_file_buf</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="138path" title='path' data-type='const char *' data-ref="138path">path</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="139buf" title='buf' data-type='const char *' data-ref="139buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="140len" title='len' data-type='size_t' data-ref="140len">len</dfn>)</td></tr>
+<tr><th id="653">653</th><td>{</td></tr>
+<tr><th id="654">654</th><td>	<em>int</em> <dfn class="local col1 decl" id="141fd" title='fd' data-type='int' data-ref="141fd">fd</dfn> = <a class="ref" href="#xopen" title='xopen' data-ref="xopen">xopen</a>(<a class="local col8 ref" href="#138path" title='path' data-ref="138path">path</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#44" title="01" data-ref="_M/O_WRONLY">O_WRONLY</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#47" title="0100" data-ref="_M/O_CREAT">O_CREAT</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#56" title="01000" data-ref="_M/O_TRUNC">O_TRUNC</a>, <var>0666</var>);</td></tr>
+<tr><th id="655">655</th><td>	<b>if</b> (<a class="ref" href="#write_in_full" title='write_in_full' data-ref="write_in_full">write_in_full</a>(<a class="local col1 ref" href="#141fd" title='fd' data-ref="141fd">fd</a>, <a class="local col9 ref" href="#139buf" title='buf' data-ref="139buf">buf</a>, <a class="local col0 ref" href="#140len" title='len' data-ref="140len">len</a>) != <a class="local col0 ref" href="#140len" title='len' data-ref="140len">len</a>)</td></tr>
+<tr><th id="656">656</th><td>		<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"could not write to %s"</q>), <a class="local col8 ref" href="#138path" title='path' data-ref="138path">path</a>);</td></tr>
+<tr><th id="657">657</th><td>	<b>if</b> (<a class="ref" href="../include/unistd.h.html#close" title='close' data-ref="close">close</a>(<a class="local col1 ref" href="#141fd" title='fd' data-ref="141fd">fd</a>))</td></tr>
+<tr><th id="658">658</th><td>		<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"could not close %s"</q>), <a class="local col8 ref" href="#138path" title='path' data-ref="138path">path</a>);</td></tr>
+<tr><th id="659">659</th><td>}</td></tr>
+<tr><th id="660">660</th><td></td></tr>
+<tr><th id="661">661</th><td><em>void</em> <dfn class="decl def" id="write_file" title='write_file' data-ref="write_file">write_file</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="142path" title='path' data-type='const char *' data-ref="142path">path</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="143fmt" title='fmt' data-type='const char *' data-ref="143fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="662">662</th><td>{</td></tr>
+<tr><th id="663">663</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col4 decl" id="144params" title='params' data-type='va_list' data-ref="144params">params</dfn>;</td></tr>
+<tr><th id="664">664</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col5 decl" id="145sb" title='sb' data-type='struct strbuf' data-ref="145sb">sb</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="665">665</th><td></td></tr>
+<tr><th id="666">666</th><td>	<span class="macro" title="__builtin_va_start(params, fmt)" data-ref="_M/va_start">va_start</span>(<a class="local col4 ref" href="#144params" title='params' data-ref="144params">params</a>, <a class="local col3 ref" href="#143fmt" title='fmt' data-ref="143fmt">fmt</a>);</td></tr>
+<tr><th id="667">667</th><td>	<a class="ref" href="strbuf.h.html#strbuf_vaddf" title='strbuf_vaddf' data-ref="strbuf_vaddf">strbuf_vaddf</a>(&amp;<a class="local col5 ref" href="#145sb" title='sb' data-ref="145sb">sb</a>, <a class="local col3 ref" href="#143fmt" title='fmt' data-ref="143fmt">fmt</a>, <a class="local col4 ref" href="#144params" title='params' data-ref="144params">params</a>);</td></tr>
+<tr><th id="668">668</th><td>	<span class="macro" title="__builtin_va_end(params)" data-ref="_M/va_end">va_end</span>(<a class="local col4 ref" href="#144params" title='params' data-ref="144params">params</a>);</td></tr>
+<tr><th id="669">669</th><td></td></tr>
+<tr><th id="670">670</th><td>	<a class="ref" href="strbuf.h.html#strbuf_complete_line" title='strbuf_complete_line' data-ref="strbuf_complete_line">strbuf_complete_line</a>(&amp;<a class="local col5 ref" href="#145sb" title='sb' data-ref="145sb">sb</a>);</td></tr>
+<tr><th id="671">671</th><td></td></tr>
+<tr><th id="672">672</th><td>	<a class="ref" href="#write_file_buf" title='write_file_buf' data-ref="write_file_buf">write_file_buf</a>(<a class="local col2 ref" href="#142path" title='path' data-ref="142path">path</a>, <a class="local col5 ref" href="#145sb" title='sb' data-ref="145sb">sb</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="local col5 ref" href="#145sb" title='sb' data-ref="145sb">sb</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>);</td></tr>
+<tr><th id="673">673</th><td>	<a class="ref" href="strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(&amp;<a class="local col5 ref" href="#145sb" title='sb' data-ref="145sb">sb</a>);</td></tr>
+<tr><th id="674">674</th><td>}</td></tr>
+<tr><th id="675">675</th><td></td></tr>
+<tr><th id="676">676</th><td><em>void</em> <dfn class="decl def" id="sleep_millisec" title='sleep_millisec' data-ref="sleep_millisec">sleep_millisec</dfn>(<em>int</em> <dfn class="local col6 decl" id="146millisec" title='millisec' data-type='int' data-ref="146millisec">millisec</dfn>)</td></tr>
+<tr><th id="677">677</th><td>{</td></tr>
+<tr><th id="678">678</th><td>	<a class="ref" href="../include/x86_64-linux-gnu/sys/poll.h.html#poll" title='poll' data-ref="poll">poll</a>(<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <var>0</var>, <a class="local col6 ref" href="#146millisec" title='millisec' data-ref="146millisec">millisec</a>);</td></tr>
+<tr><th id="679">679</th><td>}</td></tr>
+<tr><th id="680">680</th><td></td></tr>
+<tr><th id="681">681</th><td><em>int</em> <dfn class="decl def" id="xgethostname" title='xgethostname' data-ref="xgethostname">xgethostname</dfn>(<em>char</em> *<dfn class="local col7 decl" id="147buf" title='buf' data-type='char *' data-ref="147buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="148len" title='len' data-type='size_t' data-ref="148len">len</dfn>)</td></tr>
+<tr><th id="682">682</th><td>{</td></tr>
+<tr><th id="683">683</th><td>	<i>/*</i></td></tr>
+<tr><th id="684">684</th><td><i>	 * If the full hostname doesn't fit in buf, POSIX does not</i></td></tr>
+<tr><th id="685">685</th><td><i>	 * specify whether the buffer will be null-terminated, so to</i></td></tr>
+<tr><th id="686">686</th><td><i>	 * be safe, do it ourselves.</i></td></tr>
+<tr><th id="687">687</th><td><i>	 */</i></td></tr>
+<tr><th id="688">688</th><td>	<em>int</em> <dfn class="local col9 decl" id="149ret" title='ret' data-type='int' data-ref="149ret">ret</dfn> = <a class="ref" href="../include/unistd.h.html#gethostname" title='gethostname' data-ref="gethostname">gethostname</a>(<a class="local col7 ref" href="#147buf" title='buf' data-ref="147buf">buf</a>, <a class="local col8 ref" href="#148len" title='len' data-ref="148len">len</a>);</td></tr>
+<tr><th id="689">689</th><td>	<b>if</b> (!<a class="local col9 ref" href="#149ret" title='ret' data-ref="149ret">ret</a>)</td></tr>
+<tr><th id="690">690</th><td>		<a class="local col7 ref" href="#147buf" title='buf' data-ref="147buf">buf</a>[<a class="local col8 ref" href="#148len" title='len' data-ref="148len">len</a> - <var>1</var>] = <var>0</var>;</td></tr>
+<tr><th id="691">691</th><td>	<b>return</b> <a class="local col9 ref" href="#149ret" title='ret' data-ref="149ret">ret</a>;</td></tr>
+<tr><th id="692">692</th><td>}</td></tr>
+<tr><th id="693">693</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

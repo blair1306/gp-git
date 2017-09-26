@@ -1,0 +1,5 @@
+<def f='codebrowser/khash.h' l='59' type='const double'/>
+<use f='codebrowser/khash.h' l='118' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='166' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='118' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='166' u='r' c='kh_resize_sha1_pos'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/progress.h' l='6' type='void display_throughput(struct progress * progress, off_t total)'/>
+<use f='codebrowser/builtin/index-pack.c' l='285' u='c' c='fill'/>
+<use f='codebrowser/csum-file.c' l='32' u='c' c='flush'/>
+<def f='codebrowser/progress.c' l='141' ll='201' type='void display_throughput(struct progress * progress, off_t total)'/>

@@ -1,0 +1,11 @@
+<def f='codebrowser/git-compat-util.h' l='970' ll='979' type='int sane_iscase(int x, int is_lower)'/>
+<use f='codebrowser/refs.c' l='170' macro='1' u='c'/>
+<use f='codebrowser/refs.c' l='566' macro='1' u='c'/>
+<use f='codebrowser/wildmatch.c' l='65' macro='1' u='c'/>
+<use f='codebrowser/wildmatch.c' l='67' macro='1' u='c'/>
+<use f='codebrowser/wildmatch.c' l='146' macro='1' u='c'/>
+<use f='codebrowser/wildmatch.c' l='150' macro='1' u='c'/>
+<use f='codebrowser/wildmatch.c' l='199' macro='1' u='c'/>
+<use f='codebrowser/wildmatch.c' l='239' macro='1' u='c'/>
+<use f='codebrowser/wildmatch.c' l='251' macro='1' u='c'/>
+<use f='codebrowser/wildmatch.c' l='253' macro='1' u='c'/>

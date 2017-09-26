@@ -1,0 +1,11 @@
+<dec f='codebrowser/vcs-svn/repo_tree.h' l='6'/>
+<use f='codebrowser/vcs-svn/repo_tree.c' l='22' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='240' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='247' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='253' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='253' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='255' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='255' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='260' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='283' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='388' u='c'/>

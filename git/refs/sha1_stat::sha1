@@ -1,0 +1,18 @@
+<dec f='codebrowser/dir.h' l='79' type='unsigned char [20]'/>
+<offset>288</offset>
+<use f='codebrowser/dir.c' l='626' u='r' c='read_skip_worktree_file_from_index'/>
+<use f='codebrowser/dir.c' l='783' u='r' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='807' u='r' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='810' u='r' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='1155' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1201' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1203' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2079' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2080' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2084' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2085' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2489' u='r' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2490' u='r' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2672' u='r' c='load_sha1_stat'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='57' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='58' u='r' c='cmd_main'/>

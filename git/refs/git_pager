@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1454' type='const char * git_pager(int stdout_is_tty)'/>
+<use f='codebrowser/builtin/am.c' l='1758' u='c' c='do_interactive'/>
+<use f='codebrowser/builtin/grep.c' l='939' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/var.c' l='23' u='c' c='pager'/>
+<def f='codebrowser/pager.c' l='47' ll='68' type='const char * git_pager(int stdout_is_tty)'/>
+<use f='codebrowser/pager.c' l='106' u='c' c='setup_pager'/>

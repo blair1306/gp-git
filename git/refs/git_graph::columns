@@ -1,0 +1,24 @@
+<dec f='codebrowser/graph.c' l='198' type='struct column *'/>
+<use f='codebrowser/graph.c' l='303' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='303' u='r' c='graph_init'/>
+<use f='codebrowser/graph.c' l='333' u='w' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='333' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='333' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='429' u='r' c='graph_find_commit_color'/>
+<use f='codebrowser/graph.c' l='430' u='r' c='graph_find_commit_color'/>
+<use f='codebrowser/graph.c' l='513' u='a' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='513' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='513' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='513' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='513' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='513' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='555' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='786' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='887' u='r' c='graph_output_commit_line'/>
+<use f='codebrowser/graph.c' l='894' u='r' c='graph_output_commit_line'/>
+<use f='codebrowser/graph.c' l='970' u='r' c='graph_output_post_merge_line'/>
+<use f='codebrowser/graph.c' l='1221' u='r' c='graph_padding_line'/>
+<offset>512</offset>
+<doc f='codebrowser/graph.c' l='195'>/*
+	 * The column state before we output the current commit.
+	 */</doc>

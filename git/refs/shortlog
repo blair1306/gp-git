@@ -1,0 +1,16 @@
+<def f='codebrowser/shortlog.h' l='6' ll='22'/>
+<size>128</size>
+<mbr r='shortlog::list' o='0' t='struct string_list'/>
+<mbr r='shortlog::summary' o='256' t='int'/>
+<mbr r='shortlog::wrap_lines' o='288' t='int'/>
+<mbr r='shortlog::sort_by_number' o='320' t='int'/>
+<mbr r='shortlog::wrap' o='352' t='int'/>
+<mbr r='shortlog::in1' o='384' t='int'/>
+<mbr r='shortlog::in2' o='416' t='int'/>
+<mbr r='shortlog::user_format' o='448' t='int'/>
+<mbr r='shortlog::abbrev' o='480' t='int'/>
+<mbr r='shortlog::committer' o='512' t='int'/>
+<mbr r='shortlog::common_repo_prefix' o='576' t='char *'/>
+<mbr r='shortlog::email' o='640' t='int'/>
+<mbr r='shortlog::mailmap' o='704' t='struct string_list'/>
+<mbr r='shortlog::file' o='960' t='FILE *'/>

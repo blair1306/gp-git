@@ -1,0 +1,4 @@
+<dec f='codebrowser/builtin/clean.c' l='75' type='1'/>
+<use f='codebrowser/builtin/clean.c' l='351' c='print_highlight_menu_stuff'/>
+<use f='codebrowser/builtin/clean.c' l='404' c='find_unique'/>
+<use f='codebrowser/builtin/clean.c' l='721' u='r' c='select_by_numbers_cmd'/>

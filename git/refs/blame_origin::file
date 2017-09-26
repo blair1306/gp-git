@@ -1,0 +1,19 @@
+<dec f='codebrowser/blame.h' l='53' type='mmfile_t'/>
+<use f='codebrowser/blame.c' l='16' u='m' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='233' u='m' c='fake_working_tree_commit'/>
+<use f='codebrowser/blame.c' l='234' u='m' c='fake_working_tree_commit'/>
+<use f='codebrowser/blame.c' l='291' u='m' c='fill_origin_blob'/>
+<use f='codebrowser/blame.c' l='308' u='w' c='fill_origin_blob'/>
+<use f='codebrowser/blame.c' l='311' u='r' c='fill_origin_blob'/>
+<use f='codebrowser/blame.c' l='316' u='m' c='drop_origin_blob'/>
+<use f='codebrowser/blame.c' l='317' u='m' c='drop_origin_blob'/>
+<use f='codebrowser/blame.c' l='317' u='m' c='drop_origin_blob'/>
+<use f='codebrowser/blame.c' l='1333' u='m' c='pass_whole_blame'/>
+<use f='codebrowser/blame.c' l='1333' u='m' c='pass_whole_blame'/>
+<use f='codebrowser/blame.c' l='1335' u='w' c='pass_whole_blame'/>
+<use f='codebrowser/blame.c' l='1335' u='r' c='pass_whole_blame'/>
+<use f='codebrowser/blame.c' l='1336' u='m' c='pass_whole_blame'/>
+<use f='codebrowser/blame.c' l='1820' u='m' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1820' u='m' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1821' u='m' c='setup_scoreboard'/>
+<offset>320</offset>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/blame.h' l='141' type='int'/>
+<use f='codebrowser/blame.c' l='958' u='r' c='pass_blame_to_parent'/>
+<use f='codebrowser/blame.c' l='1107' u='r' c='find_copy_in_blob'/>
+<offset>1152</offset>
+<use f='codebrowser/builtin/blame.c' l='920' u='w' c='cmd_blame'/>

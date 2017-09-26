@@ -1,0 +1,7 @@
+<dec f='codebrowser/apply.h' l='8' type='3'/>
+<use f='codebrowser/apply.c' l='55' u='r' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='1715' u='r' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='2471' u='r' c='match_fragment'/>
+<use f='codebrowser/apply.c' l='2543' u='r' c='match_fragment'/>
+<use f='codebrowser/apply.c' l='2910' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='3027' u='r' c='apply_one_fragment'/>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>unix-socket.c source code [codebrowser/unix-socket.c] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="unix_sockaddr_context "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/unix-socket.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='unix-socket.c.html'>unix-socket.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="unix-socket.h.html">"unix-socket.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="unix_stream_socket" title='unix_stream_socket' data-type='int unix_stream_socket()' data-ref="unix_stream_socket">unix_stream_socket</dfn>(<em>void</em>)</td></tr>
+<tr><th id="5">5</th><td>{</td></tr>
+<tr><th id="6">6</th><td>	<em>int</em> <dfn class="local col1 decl" id="1fd" title='fd' data-type='int' data-ref="1fd">fd</dfn> = <a class="ref" href="../include/x86_64-linux-gnu/sys/socket.h.html#socket" title='socket' data-ref="socket">socket</a>(<a class="macro" href="../include/x86_64-linux-gnu/bits/socket.h.html#90" title="1" data-ref="_M/AF_UNIX">AF_UNIX</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/socket_type.h.html#28" title="SOCK_STREAM" data-ref="_M/SOCK_STREAM">SOCK_STREAM</a>, <var>0</var>);</td></tr>
+<tr><th id="7">7</th><td>	<b>if</b> (<a class="local col1 ref" href="#1fd" title='fd' data-ref="1fd">fd</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="8">8</th><td>		<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"unable to create socket"</q>);</td></tr>
+<tr><th id="9">9</th><td>	<b>return</b> <a class="local col1 ref" href="#1fd" title='fd' data-ref="1fd">fd</a>;</td></tr>
+<tr><th id="10">10</th><td>}</td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="chdir_len" title='chdir_len' data-type='int chdir_len(const char * orig, int len)' data-ref="chdir_len">chdir_len</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2orig" title='orig' data-type='const char *' data-ref="2orig">orig</dfn>, <em>int</em> <dfn class="local col3 decl" id="3len" title='len' data-type='int' data-ref="3len">len</dfn>)</td></tr>
+<tr><th id="13">13</th><td>{</td></tr>
+<tr><th id="14">14</th><td>	<em>char</em> *<dfn class="local col4 decl" id="4path" title='path' data-type='char *' data-ref="4path">path</dfn> = <a class="ref" href="git-compat-util.h.html#xmemdupz" title='xmemdupz' data-ref="xmemdupz">xmemdupz</a>(<a class="local col2 ref" href="#2orig" title='orig' data-ref="2orig">orig</a>, <a class="local col3 ref" href="#3len" title='len' data-ref="3len">len</a>);</td></tr>
+<tr><th id="15">15</th><td>	<em>int</em> <dfn class="local col5 decl" id="5r" title='r' data-type='int' data-ref="5r">r</dfn> = <a class="ref" href="../include/unistd.h.html#chdir" title='chdir' data-ref="chdir">chdir</a>(<a class="local col4 ref" href="#4path" title='path' data-ref="4path">path</a>);</td></tr>
+<tr><th id="16">16</th><td>	<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col4 ref" href="#4path" title='path' data-ref="4path">path</a>);</td></tr>
+<tr><th id="17">17</th><td>	<b>return</b> <a class="local col5 ref" href="#5r" title='r' data-ref="5r">r</a>;</td></tr>
+<tr><th id="18">18</th><td>}</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><b>struct</b> <dfn class="type def" id="unix_sockaddr_context" title='unix_sockaddr_context' data-ref="unix_sockaddr_context">unix_sockaddr_context</dfn> {</td></tr>
+<tr><th id="21">21</th><td>	<em>char</em> *<dfn class="tu decl" id="unix_sockaddr_context::orig_dir" title='unix_sockaddr_context::orig_dir' data-type='char *' data-ref="unix_sockaddr_context::orig_dir">orig_dir</dfn>;</td></tr>
+<tr><th id="22">22</th><td>};</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="unix_sockaddr_cleanup" title='unix_sockaddr_cleanup' data-type='void unix_sockaddr_cleanup(struct unix_sockaddr_context * ctx)' data-ref="unix_sockaddr_cleanup">unix_sockaddr_cleanup</dfn>(<b>struct</b> <a class="type" href="#unix_sockaddr_context" title='unix_sockaddr_context' data-ref="unix_sockaddr_context">unix_sockaddr_context</a> *<dfn class="local col6 decl" id="6ctx" title='ctx' data-type='struct unix_sockaddr_context *' data-ref="6ctx">ctx</dfn>)</td></tr>
+<tr><th id="25">25</th><td>{</td></tr>
+<tr><th id="26">26</th><td>	<b>if</b> (!<a class="local col6 ref" href="#6ctx" title='ctx' data-ref="6ctx">ctx</a>-&gt;<a class="tu ref" href="#unix_sockaddr_context::orig_dir" title='unix_sockaddr_context::orig_dir' data-use='r' data-ref="unix_sockaddr_context::orig_dir">orig_dir</a>)</td></tr>
+<tr><th id="27">27</th><td>		<b>return</b>;</td></tr>
+<tr><th id="28">28</th><td>	<i>/*</i></td></tr>
+<tr><th id="29">29</th><td><i>	 * If we fail, we can't just return an error, since we have</i></td></tr>
+<tr><th id="30">30</th><td><i>	 * moved the cwd of the whole process, which could confuse calling</i></td></tr>
+<tr><th id="31">31</th><td><i>	 * code.  We are better off to just die.</i></td></tr>
+<tr><th id="32">32</th><td><i>	 */</i></td></tr>
+<tr><th id="33">33</th><td>	<b>if</b> (<a class="ref" href="../include/unistd.h.html#chdir" title='chdir' data-ref="chdir">chdir</a>(<a class="local col6 ref" href="#6ctx" title='ctx' data-ref="6ctx">ctx</a>-&gt;<a class="tu ref" href="#unix_sockaddr_context::orig_dir" title='unix_sockaddr_context::orig_dir' data-use='r' data-ref="unix_sockaddr_context::orig_dir">orig_dir</a>) &lt; <var>0</var>)</td></tr>
+<tr><th id="34">34</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"unable to restore original working directory"</q>);</td></tr>
+<tr><th id="35">35</th><td>	<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col6 ref" href="#6ctx" title='ctx' data-ref="6ctx">ctx</a>-&gt;<a class="tu ref" href="#unix_sockaddr_context::orig_dir" title='unix_sockaddr_context::orig_dir' data-use='r' data-ref="unix_sockaddr_context::orig_dir">orig_dir</a>);</td></tr>
+<tr><th id="36">36</th><td>}</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="unix_sockaddr_init" title='unix_sockaddr_init' data-type='int unix_sockaddr_init(struct sockaddr_un * sa, const char * path, struct unix_sockaddr_context * ctx)' data-ref="unix_sockaddr_init">unix_sockaddr_init</dfn>(<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/sys/un.h.html#sockaddr_un" title='sockaddr_un' data-ref="sockaddr_un">sockaddr_un</a> *<dfn class="local col7 decl" id="7sa" title='sa' data-type='struct sockaddr_un *' data-ref="7sa">sa</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8path" title='path' data-type='const char *' data-ref="8path">path</dfn>,</td></tr>
+<tr><th id="39">39</th><td>			      <b>struct</b> <a class="type" href="#unix_sockaddr_context" title='unix_sockaddr_context' data-ref="unix_sockaddr_context">unix_sockaddr_context</a> *<dfn class="local col9 decl" id="9ctx" title='ctx' data-type='struct unix_sockaddr_context *' data-ref="9ctx">ctx</dfn>)</td></tr>
+<tr><th id="40">40</th><td>{</td></tr>
+<tr><th id="41">41</th><td>	<em>int</em> <dfn class="local col0 decl" id="10size" title='size' data-type='int' data-ref="10size">size</dfn> = <a class="ref" href="../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col8 ref" href="#8path" title='path' data-ref="8path">path</a>) + <var>1</var>;</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>	<a class="local col9 ref" href="#9ctx" title='ctx' data-ref="9ctx">ctx</a>-&gt;<a class="tu ref" href="#unix_sockaddr_context::orig_dir" title='unix_sockaddr_context::orig_dir' data-use='w' data-ref="unix_sockaddr_context::orig_dir">orig_dir</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="44">44</th><td>	<b>if</b> (<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a> &gt; <b>sizeof</b>(<a class="local col7 ref" href="#7sa" title='sa' data-ref="7sa">sa</a>-&gt;<a class="ref" href="../include/x86_64-linux-gnu/sys/un.h.html#sockaddr_un::sun_path" title='sockaddr_un::sun_path' data-ref="sockaddr_un::sun_path">sun_path</a>)) {</td></tr>
+<tr><th id="45">45</th><td>		<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="11slash" title='slash' data-type='const char *' data-ref="11slash">slash</dfn> = <a class="macro" href="git-compat-util.h.html#378" title="git_find_last_dir_sep" data-ref="_M/find_last_dir_sep">find_last_dir_sep</a>(<a class="local col8 ref" href="#8path" title='path' data-ref="8path">path</a>);</td></tr>
+<tr><th id="46">46</th><td>		<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12dir" title='dir' data-type='const char *' data-ref="12dir">dir</dfn>;</td></tr>
+<tr><th id="47">47</th><td>		<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col3 decl" id="13cwd" title='cwd' data-type='struct strbuf' data-ref="13cwd">cwd</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>		<b>if</b> (!<a class="local col1 ref" href="#11slash" title='slash' data-ref="11slash">slash</a>) {</td></tr>
+<tr><th id="50">50</th><td>			<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="macro" href="../include/asm-generic/errno.h.html#7" title="36" data-ref="_M/ENAMETOOLONG">ENAMETOOLONG</a>;</td></tr>
+<tr><th id="51">51</th><td>			<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="52">52</th><td>		}</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>		<a class="local col2 ref" href="#12dir" title='dir' data-ref="12dir">dir</a> = <a class="local col8 ref" href="#8path" title='path' data-ref="8path">path</a>;</td></tr>
+<tr><th id="55">55</th><td>		<a class="local col8 ref" href="#8path" title='path' data-ref="8path">path</a> = <a class="local col1 ref" href="#11slash" title='slash' data-ref="11slash">slash</a> + <var>1</var>;</td></tr>
+<tr><th id="56">56</th><td>		<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a> = <a class="ref" href="../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col8 ref" href="#8path" title='path' data-ref="8path">path</a>) + <var>1</var>;</td></tr>
+<tr><th id="57">57</th><td>		<b>if</b> (<a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a> &gt; <b>sizeof</b>(<a class="local col7 ref" href="#7sa" title='sa' data-ref="7sa">sa</a>-&gt;<a class="ref" href="../include/x86_64-linux-gnu/sys/un.h.html#sockaddr_un::sun_path" title='sockaddr_un::sun_path' data-ref="sockaddr_un::sun_path">sun_path</a>)) {</td></tr>
+<tr><th id="58">58</th><td>			<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="macro" href="../include/asm-generic/errno.h.html#7" title="36" data-ref="_M/ENAMETOOLONG">ENAMETOOLONG</a>;</td></tr>
+<tr><th id="59">59</th><td>			<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="60">60</th><td>		}</td></tr>
+<tr><th id="61">61</th><td>		<b>if</b> (<a class="ref" href="strbuf.h.html#strbuf_getcwd" title='strbuf_getcwd' data-ref="strbuf_getcwd">strbuf_getcwd</a>(&amp;<a class="local col3 ref" href="#13cwd" title='cwd' data-ref="13cwd">cwd</a>))</td></tr>
+<tr><th id="62">62</th><td>			<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="63">63</th><td>		<a class="local col9 ref" href="#9ctx" title='ctx' data-ref="9ctx">ctx</a>-&gt;<a class="tu ref" href="#unix_sockaddr_context::orig_dir" title='unix_sockaddr_context::orig_dir' data-use='w' data-ref="unix_sockaddr_context::orig_dir">orig_dir</a> = <a class="ref" href="strbuf.h.html#strbuf_detach" title='strbuf_detach' data-ref="strbuf_detach">strbuf_detach</a>(&amp;<a class="local col3 ref" href="#13cwd" title='cwd' data-ref="13cwd">cwd</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="64">64</th><td>		<b>if</b> (<a class="tu ref" href="#chdir_len" title='chdir_len' data-use='c' data-ref="chdir_len">chdir_len</a>(<a class="local col2 ref" href="#12dir" title='dir' data-ref="12dir">dir</a>, <a class="local col1 ref" href="#11slash" title='slash' data-ref="11slash">slash</a> - <a class="local col2 ref" href="#12dir" title='dir' data-ref="12dir">dir</a>) &lt; <var>0</var>)</td></tr>
+<tr><th id="65">65</th><td>			<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="66">66</th><td>	}</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>	<a class="ref" href="../include/string.h.html#memset" title='memset' data-ref="memset">memset</a>(<a class="local col7 ref" href="#7sa" title='sa' data-ref="7sa">sa</a>, <var>0</var>, <b>sizeof</b>(*<a class="local col7 ref" href="#7sa" title='sa' data-ref="7sa">sa</a>));</td></tr>
+<tr><th id="69">69</th><td>	<a class="local col7 ref" href="#7sa" title='sa' data-ref="7sa">sa</a>-&gt;<a class="ref" href="../include/x86_64-linux-gnu/sys/un.h.html#31" title='sockaddr_un::sun_family' data-ref="sockaddr_un::sun_family">sun_family</a> = <a class="macro" href="../include/x86_64-linux-gnu/bits/socket.h.html#90" title="1" data-ref="_M/AF_UNIX">AF_UNIX</a>;</td></tr>
+<tr><th id="70">70</th><td>	<a class="ref" href="../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col7 ref" href="#7sa" title='sa' data-ref="7sa">sa</a>-&gt;<a class="ref" href="../include/x86_64-linux-gnu/sys/un.h.html#sockaddr_un::sun_path" title='sockaddr_un::sun_path' data-ref="sockaddr_un::sun_path">sun_path</a>, <a class="local col8 ref" href="#8path" title='path' data-ref="8path">path</a>, <a class="local col0 ref" href="#10size" title='size' data-ref="10size">size</a>);</td></tr>
+<tr><th id="71">71</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="72">72</th><td>}</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><em>int</em> <dfn class="decl def" id="unix_stream_connect" title='unix_stream_connect' data-ref="unix_stream_connect">unix_stream_connect</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="14path" title='path' data-type='const char *' data-ref="14path">path</dfn>)</td></tr>
+<tr><th id="75">75</th><td>{</td></tr>
+<tr><th id="76">76</th><td>	<em>int</em> <dfn class="local col5 decl" id="15fd" title='fd' data-type='int' data-ref="15fd">fd</dfn>, <dfn class="local col6 decl" id="16saved_errno" title='saved_errno' data-type='int' data-ref="16saved_errno">saved_errno</dfn>;</td></tr>
+<tr><th id="77">77</th><td>	<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/sys/un.h.html#sockaddr_un" title='sockaddr_un' data-ref="sockaddr_un">sockaddr_un</a> <dfn class="local col7 decl" id="17sa" title='sa' data-type='struct sockaddr_un' data-ref="17sa">sa</dfn>;</td></tr>
+<tr><th id="78">78</th><td>	<b>struct</b> <a class="type" href="#unix_sockaddr_context" title='unix_sockaddr_context' data-ref="unix_sockaddr_context">unix_sockaddr_context</a> <dfn class="local col8 decl" id="18ctx" title='ctx' data-type='struct unix_sockaddr_context' data-ref="18ctx">ctx</dfn>;</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>	<b>if</b> (<a class="tu ref" href="#unix_sockaddr_init" title='unix_sockaddr_init' data-use='c' data-ref="unix_sockaddr_init">unix_sockaddr_init</a>(&amp;<a class="local col7 ref" href="#17sa" title='sa' data-ref="17sa">sa</a>, <a class="local col4 ref" href="#14path" title='path' data-ref="14path">path</a>, &amp;<a class="local col8 ref" href="#18ctx" title='ctx' data-ref="18ctx">ctx</a>) &lt; <var>0</var>)</td></tr>
+<tr><th id="81">81</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="82">82</th><td>	<a class="local col5 ref" href="#15fd" title='fd' data-ref="15fd">fd</a> = <a class="tu ref" href="#unix_stream_socket" title='unix_stream_socket' data-use='c' data-ref="unix_stream_socket">unix_stream_socket</a>();</td></tr>
+<tr><th id="83">83</th><td>	<b>if</b> (<a class="ref" href="../include/x86_64-linux-gnu/sys/socket.h.html#connect" title='connect' data-ref="connect">connect</a>(<a class="local col5 ref" href="#15fd" title='fd' data-ref="15fd">fd</a>, (<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr">sockaddr</a> *)&amp;<a class="local col7 ref" href="#17sa" title='sa' data-ref="17sa">sa</a>, <b>sizeof</b>(<a class="local col7 ref" href="#17sa" title='sa' data-ref="17sa">sa</a>)) &lt; <var>0</var>)</td></tr>
+<tr><th id="84">84</th><td>		<b>goto</b> <a class="lbl" href="#19fail" data-ref="19fail">fail</a>;</td></tr>
+<tr><th id="85">85</th><td>	<a class="tu ref" href="#unix_sockaddr_cleanup" title='unix_sockaddr_cleanup' data-use='c' data-ref="unix_sockaddr_cleanup">unix_sockaddr_cleanup</a>(&amp;<a class="local col8 ref" href="#18ctx" title='ctx' data-ref="18ctx">ctx</a>);</td></tr>
+<tr><th id="86">86</th><td>	<b>return</b> <a class="local col5 ref" href="#15fd" title='fd' data-ref="15fd">fd</a>;</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><dfn class="lbl" id="19fail" data-ref="19fail">fail</dfn>:</td></tr>
+<tr><th id="89">89</th><td>	<a class="local col6 ref" href="#16saved_errno" title='saved_errno' data-ref="16saved_errno">saved_errno</a> = <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>;</td></tr>
+<tr><th id="90">90</th><td>	<a class="tu ref" href="#unix_sockaddr_cleanup" title='unix_sockaddr_cleanup' data-use='c' data-ref="unix_sockaddr_cleanup">unix_sockaddr_cleanup</a>(&amp;<a class="local col8 ref" href="#18ctx" title='ctx' data-ref="18ctx">ctx</a>);</td></tr>
+<tr><th id="91">91</th><td>	<a class="ref" href="../include/unistd.h.html#close" title='close' data-ref="close">close</a>(<a class="local col5 ref" href="#15fd" title='fd' data-ref="15fd">fd</a>);</td></tr>
+<tr><th id="92">92</th><td>	<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="local col6 ref" href="#16saved_errno" title='saved_errno' data-ref="16saved_errno">saved_errno</a>;</td></tr>
+<tr><th id="93">93</th><td>	<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="94">94</th><td>}</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><em>int</em> <dfn class="decl def" id="unix_stream_listen" title='unix_stream_listen' data-ref="unix_stream_listen">unix_stream_listen</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="20path" title='path' data-type='const char *' data-ref="20path">path</dfn>)</td></tr>
+<tr><th id="97">97</th><td>{</td></tr>
+<tr><th id="98">98</th><td>	<em>int</em> <dfn class="local col1 decl" id="21fd" title='fd' data-type='int' data-ref="21fd">fd</dfn>, <dfn class="local col2 decl" id="22saved_errno" title='saved_errno' data-type='int' data-ref="22saved_errno">saved_errno</dfn>;</td></tr>
+<tr><th id="99">99</th><td>	<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/sys/un.h.html#sockaddr_un" title='sockaddr_un' data-ref="sockaddr_un">sockaddr_un</a> <dfn class="local col3 decl" id="23sa" title='sa' data-type='struct sockaddr_un' data-ref="23sa">sa</dfn>;</td></tr>
+<tr><th id="100">100</th><td>	<b>struct</b> <a class="type" href="#unix_sockaddr_context" title='unix_sockaddr_context' data-ref="unix_sockaddr_context">unix_sockaddr_context</a> <dfn class="local col4 decl" id="24ctx" title='ctx' data-type='struct unix_sockaddr_context' data-ref="24ctx">ctx</dfn>;</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>	<a class="ref" href="../include/unistd.h.html#unlink" title='unlink' data-ref="unlink">unlink</a>(<a class="local col0 ref" href="#20path" title='path' data-ref="20path">path</a>);</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td>	<b>if</b> (<a class="tu ref" href="#unix_sockaddr_init" title='unix_sockaddr_init' data-use='c' data-ref="unix_sockaddr_init">unix_sockaddr_init</a>(&amp;<a class="local col3 ref" href="#23sa" title='sa' data-ref="23sa">sa</a>, <a class="local col0 ref" href="#20path" title='path' data-ref="20path">path</a>, &amp;<a class="local col4 ref" href="#24ctx" title='ctx' data-ref="24ctx">ctx</a>) &lt; <var>0</var>)</td></tr>
+<tr><th id="105">105</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="106">106</th><td>	<a class="local col1 ref" href="#21fd" title='fd' data-ref="21fd">fd</a> = <a class="tu ref" href="#unix_stream_socket" title='unix_stream_socket' data-use='c' data-ref="unix_stream_socket">unix_stream_socket</a>();</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td>	<b>if</b> (<a class="ref" href="../include/x86_64-linux-gnu/sys/socket.h.html#bind" title='bind' data-ref="bind">bind</a>(<a class="local col1 ref" href="#21fd" title='fd' data-ref="21fd">fd</a>, (<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/bits/socket.h.html#sockaddr" title='sockaddr' data-ref="sockaddr">sockaddr</a> *)&amp;<a class="local col3 ref" href="#23sa" title='sa' data-ref="23sa">sa</a>, <b>sizeof</b>(<a class="local col3 ref" href="#23sa" title='sa' data-ref="23sa">sa</a>)) &lt; <var>0</var>)</td></tr>
+<tr><th id="109">109</th><td>		<b>goto</b> <a class="lbl" href="#25fail" data-ref="25fail">fail</a>;</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td>	<b>if</b> (<a class="ref" href="../include/x86_64-linux-gnu/sys/socket.h.html#listen" title='listen' data-ref="listen">listen</a>(<a class="local col1 ref" href="#21fd" title='fd' data-ref="21fd">fd</a>, <var>5</var>) &lt; <var>0</var>)</td></tr>
+<tr><th id="112">112</th><td>		<b>goto</b> <a class="lbl" href="#25fail" data-ref="25fail">fail</a>;</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td>	<a class="tu ref" href="#unix_sockaddr_cleanup" title='unix_sockaddr_cleanup' data-use='c' data-ref="unix_sockaddr_cleanup">unix_sockaddr_cleanup</a>(&amp;<a class="local col4 ref" href="#24ctx" title='ctx' data-ref="24ctx">ctx</a>);</td></tr>
+<tr><th id="115">115</th><td>	<b>return</b> <a class="local col1 ref" href="#21fd" title='fd' data-ref="21fd">fd</a>;</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><dfn class="lbl" id="25fail" data-ref="25fail">fail</dfn>:</td></tr>
+<tr><th id="118">118</th><td>	<a class="local col2 ref" href="#22saved_errno" title='saved_errno' data-ref="22saved_errno">saved_errno</a> = <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>;</td></tr>
+<tr><th id="119">119</th><td>	<a class="tu ref" href="#unix_sockaddr_cleanup" title='unix_sockaddr_cleanup' data-use='c' data-ref="unix_sockaddr_cleanup">unix_sockaddr_cleanup</a>(&amp;<a class="local col4 ref" href="#24ctx" title='ctx' data-ref="24ctx">ctx</a>);</td></tr>
+<tr><th id="120">120</th><td>	<a class="ref" href="../include/unistd.h.html#close" title='close' data-ref="close">close</a>(<a class="local col1 ref" href="#21fd" title='fd' data-ref="21fd">fd</a>);</td></tr>
+<tr><th id="121">121</th><td>	<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="local col2 ref" href="#22saved_errno" title='saved_errno' data-ref="22saved_errno">saved_errno</a>;</td></tr>
+<tr><th id="122">122</th><td>	<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="123">123</th><td>}</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

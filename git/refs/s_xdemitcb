@@ -1,0 +1,4 @@
+<def f='codebrowser/xdiff/xdiff.h' l='85' ll='88'/>
+<size>16</size>
+<mbr r='s_xdemitcb::priv' o='0' t='void *'/>
+<mbr r='s_xdemitcb::outf' o='64' t='int (*)(void *, mmbuffer_t *, int)'/>

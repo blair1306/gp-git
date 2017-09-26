@@ -1,0 +1,12 @@
+<dec f='codebrowser/apply.h' l='95' type='struct string_list'/>
+<use f='codebrowser/apply.c' l='93' u='a' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='3260' u='a' c='in_fn_table'/>
+<use f='codebrowser/apply.c' l='3302' u='a' c='add_to_fn_table'/>
+<use f='codebrowser/apply.c' l='3311' u='a' c='add_to_fn_table'/>
+<use f='codebrowser/apply.c' l='3324' u='a' c='prepare_fn_table'/>
+<use f='codebrowser/apply.c' l='4739' u='a' c='apply_patch'/>
+<offset>1920</offset>
+<doc f='codebrowser/apply.h' l='91'>/*
+	 * Records filenames that have been touched, in order to handle
+	 * the case where more than one patches touch the same file.
+	 */</doc>

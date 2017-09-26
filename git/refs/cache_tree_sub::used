@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache-tree.h' l='13' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/cache-tree.c' l='212' u='r' c='discard_unused_subtrees'/>
+<use f='codebrowser/cache-tree.c' l='264' u='w' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='308' u='w' c='update_one'/>

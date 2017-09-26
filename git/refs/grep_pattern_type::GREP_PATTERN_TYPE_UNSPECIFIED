@@ -1,0 +1,8 @@
+<dec f='codebrowser/grep.h' l='99' type='0'/>
+<use f='codebrowser/builtin/grep.c' l='776' u='r' c='cmd_grep'/>
+<use f='codebrowser/grep.c' l='39' u='r' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='55' u='r' c='parse_pattern_type_arg'/>
+<use f='codebrowser/grep.c' l='189' c='grep_set_pattern_type_option'/>
+<use f='codebrowser/grep.c' l='221' u='r' c='grep_commit_pattern_type'/>
+<use f='codebrowser/grep.c' l='223' u='r' c='grep_commit_pattern_type'/>
+<use f='codebrowser/revision.c' l='2360' u='r' c='setup_revisions'/>

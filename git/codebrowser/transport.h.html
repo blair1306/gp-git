@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>transport.h source code [codebrowser/transport.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="git_transport_options,transport,transport_family "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/transport.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='transport.h.html'>transport.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/TRANSPORT_H">TRANSPORT_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_H" data-ref="_M/TRANSPORT_H">TRANSPORT_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="run-command.h.html">"run-command.h"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="remote.h.html">"remote.h"</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list" id="string_list">string_list</a>;</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>struct</b> <dfn class="type def" id="git_transport_options" title='git_transport_options' data-ref="git_transport_options">git_transport_options</dfn> {</td></tr>
+<tr><th id="11">11</th><td>	<em>unsigned</em> <dfn class="decl" id="git_transport_options::thin" title='git_transport_options::thin' data-ref="git_transport_options::thin">thin</dfn> : <var>1</var>;</td></tr>
+<tr><th id="12">12</th><td>	<em>unsigned</em> <dfn class="decl" id="git_transport_options::keep" title='git_transport_options::keep' data-ref="git_transport_options::keep">keep</dfn> : <var>1</var>;</td></tr>
+<tr><th id="13">13</th><td>	<em>unsigned</em> <dfn class="decl" id="git_transport_options::followtags" title='git_transport_options::followtags' data-ref="git_transport_options::followtags">followtags</dfn> : <var>1</var>;</td></tr>
+<tr><th id="14">14</th><td>	<em>unsigned</em> <dfn class="decl" id="git_transport_options::check_self_contained_and_connected" title='git_transport_options::check_self_contained_and_connected' data-ref="git_transport_options::check_self_contained_and_connected">check_self_contained_and_connected</dfn> : <var>1</var>;</td></tr>
+<tr><th id="15">15</th><td>	<em>unsigned</em> <dfn class="decl" id="git_transport_options::self_contained_and_connected" title='git_transport_options::self_contained_and_connected' data-ref="git_transport_options::self_contained_and_connected">self_contained_and_connected</dfn> : <var>1</var>;</td></tr>
+<tr><th id="16">16</th><td>	<em>unsigned</em> <dfn class="decl" id="git_transport_options::update_shallow" title='git_transport_options::update_shallow' data-ref="git_transport_options::update_shallow">update_shallow</dfn> : <var>1</var>;</td></tr>
+<tr><th id="17">17</th><td>	<em>unsigned</em> <dfn class="decl" id="git_transport_options::deepen_relative" title='git_transport_options::deepen_relative' data-ref="git_transport_options::deepen_relative">deepen_relative</dfn> : <var>1</var>;</td></tr>
+<tr><th id="18">18</th><td>	<em>int</em> <dfn class="decl" id="git_transport_options::depth" title='git_transport_options::depth' data-ref="git_transport_options::depth">depth</dfn>;</td></tr>
+<tr><th id="19">19</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="git_transport_options::deepen_since" title='git_transport_options::deepen_since' data-ref="git_transport_options::deepen_since">deepen_since</dfn>;</td></tr>
+<tr><th id="20">20</th><td>	<em>const</em> <b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="decl" id="git_transport_options::deepen_not" title='git_transport_options::deepen_not' data-ref="git_transport_options::deepen_not">deepen_not</dfn>;</td></tr>
+<tr><th id="21">21</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="git_transport_options::uploadpack" title='git_transport_options::uploadpack' data-ref="git_transport_options::uploadpack">uploadpack</dfn>;</td></tr>
+<tr><th id="22">22</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="git_transport_options::receivepack" title='git_transport_options::receivepack' data-ref="git_transport_options::receivepack">receivepack</dfn>;</td></tr>
+<tr><th id="23">23</th><td>	<b>struct</b> <a class="type" href="remote.h.html#push_cas_option" title='push_cas_option' data-ref="push_cas_option">push_cas_option</a> *<dfn class="decl" id="git_transport_options::cas" title='git_transport_options::cas' data-ref="git_transport_options::cas">cas</dfn>;</td></tr>
+<tr><th id="24">24</th><td>};</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>enum</b> <dfn class="type def" id="transport_family" title='transport_family' data-ref="transport_family">transport_family</dfn> {</td></tr>
+<tr><th id="27">27</th><td>	<dfn class="enum" id="transport_family::TRANSPORT_FAMILY_ALL" title='transport_family::TRANSPORT_FAMILY_ALL' data-ref="transport_family::TRANSPORT_FAMILY_ALL">TRANSPORT_FAMILY_ALL</dfn> = <var>0</var>,</td></tr>
+<tr><th id="28">28</th><td>	<dfn class="enum" id="transport_family::TRANSPORT_FAMILY_IPV4" title='transport_family::TRANSPORT_FAMILY_IPV4' data-ref="transport_family::TRANSPORT_FAMILY_IPV4">TRANSPORT_FAMILY_IPV4</dfn>,</td></tr>
+<tr><th id="29">29</th><td>	<dfn class="enum" id="transport_family::TRANSPORT_FAMILY_IPV6" title='transport_family::TRANSPORT_FAMILY_IPV6' data-ref="transport_family::TRANSPORT_FAMILY_IPV6">TRANSPORT_FAMILY_IPV6</dfn></td></tr>
+<tr><th id="30">30</th><td>};</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><b>struct</b> <dfn class="type def" id="transport" title='transport' data-ref="transport">transport</dfn> {</td></tr>
+<tr><th id="33">33</th><td>	<b>struct</b> <a class="type" href="remote.h.html#remote" title='remote' data-ref="remote">remote</a> *<dfn class="decl" id="transport::remote" title='transport::remote' data-ref="transport::remote">remote</dfn>;</td></tr>
+<tr><th id="34">34</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="transport::url" title='transport::url' data-ref="transport::url">url</dfn>;</td></tr>
+<tr><th id="35">35</th><td>	<em>void</em> *<dfn class="decl" id="transport::data" title='transport::data' data-ref="transport::data">data</dfn>;</td></tr>
+<tr><th id="36">36</th><td>	<em>const</em> <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="transport::remote_refs" title='transport::remote_refs' data-ref="transport::remote_refs">remote_refs</dfn>;</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc">	 * Indicates whether we already called get_refs_list(); set by</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc">	 * transport.c::transport_get_remote_refs().</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc">	 */</i></td></tr>
+<tr><th id="42">42</th><td>	<em>unsigned</em> <dfn class="decl" id="transport::got_remote_refs" title='transport::got_remote_refs' data-ref="transport::got_remote_refs">got_remote_refs</dfn> : <var>1</var>;</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>	<i>/*</i></td></tr>
+<tr><th id="45">45</th><td><i>	 * Transports that call take-over destroys the data specific to</i></td></tr>
+<tr><th id="46">46</th><td><i>	 * the transport type while doing so, and cannot be reused.</i></td></tr>
+<tr><th id="47">47</th><td><i>	 */</i></td></tr>
+<tr><th id="48">48</th><td>	<em>unsigned</em> <dfn class="decl" id="transport::cannot_reuse" title='transport::cannot_reuse' data-ref="transport::cannot_reuse">cannot_reuse</dfn> : <var>1</var>;</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>	<i>/*</i></td></tr>
+<tr><th id="51">51</th><td><i>	 * A hint from caller that it will be performing a clone, not</i></td></tr>
+<tr><th id="52">52</th><td><i>	 * normal fetch. IOW the repository is guaranteed empty.</i></td></tr>
+<tr><th id="53">53</th><td><i>	 */</i></td></tr>
+<tr><th id="54">54</th><td>	<em>unsigned</em> <dfn class="decl" id="transport::cloning" title='transport::cloning' data-ref="transport::cloning">cloning</dfn> : <var>1</var>;</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>	<i>/*</i></td></tr>
+<tr><th id="57">57</th><td><i>	 * These strings will be passed to the {pre, post}-receive hook,</i></td></tr>
+<tr><th id="58">58</th><td><i>	 * on the remote side, if both sides support the push options capability.</i></td></tr>
+<tr><th id="59">59</th><td><i>	 */</i></td></tr>
+<tr><th id="60">60</th><td>	<em>const</em> <b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="decl" id="transport::push_options" title='transport::push_options' data-ref="transport::push_options">push_options</dfn>;</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc">	 * Returns 0 if successful, positive if the option is not</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc">	 * recognized or is inapplicable, and negative if the option</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc">	 * is applicable but the value is invalid.</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc">	 **/</i></td></tr>
+<tr><th id="67">67</th><td>	<em>int</em> (*<dfn class="decl" id="transport::set_option" title='transport::set_option' data-ref="transport::set_option">set_option</dfn>)(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col1 decl" id="1connection" title='connection' data-type='struct transport *' data-ref="1connection">connection</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2name" title='name' data-type='const char *' data-ref="2name">name</dfn>,</td></tr>
+<tr><th id="68">68</th><td>			  <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3value" title='value' data-type='const char *' data-ref="3value">value</dfn>);</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc">	 * Returns a list of the remote side's refs. In order to allow</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc">	 * the transport to try to share connections, for_push is a</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc">	 * hint as to whether the ultimate operation is a push or a fetch.</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc">	 *</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc">	 * If the transport is able to determine the remote hash for</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc">	 * the ref without a huge amount of effort, it should store it</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc">	 * in the ref's old_sha1 field; otherwise it should be all 0.</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc">	 **/</i></td></tr>
+<tr><th id="79">79</th><td>	<b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *(*<dfn class="decl" id="transport::get_refs_list" title='transport::get_refs_list' data-ref="transport::get_refs_list">get_refs_list</dfn>)(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col4 decl" id="4transport" title='transport' data-type='struct transport *' data-ref="4transport">transport</dfn>, <em>int</em> <dfn class="local col5 decl" id="5for_push" title='for_push' data-type='int' data-ref="5for_push">for_push</dfn>);</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc">	 * Fetch the objects for the given refs. Note that this gets</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">	 * an array, and should ignore the list structure.</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc">	 *</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc">	 * If the transport did not get hashes for refs in</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc">	 * get_refs_list(), it should set the old_sha1 fields in the</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc">	 * provided refs now.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc">	 **/</i></td></tr>
+<tr><th id="89">89</th><td>	<em>int</em> (*<dfn class="decl" id="transport::fetch" title='transport::fetch' data-ref="transport::fetch">fetch</dfn>)(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col6 decl" id="6transport" title='transport' data-type='struct transport *' data-ref="6transport">transport</dfn>, <em>int</em> <dfn class="local col7 decl" id="7refs_nr" title='refs_nr' data-type='int' data-ref="7refs_nr">refs_nr</dfn>, <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> **<dfn class="local col8 decl" id="8refs" title='refs' data-type='struct ref **' data-ref="8refs">refs</dfn>);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc">	 * Push the objects and refs. Send the necessary objects, and</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc">	 * then, for any refs where peer_ref is set and</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc">	 * peer_ref-&gt;new_oid is different from old_oid, tell the</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc">	 * remote side to update each ref in the list from old_oid to</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc">	 * peer_ref-&gt;new_oid.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc">	 *</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc">	 * Where possible, set the status for each ref appropriately.</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">	 *</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc">	 * The transport must modify new_sha1 in the ref to the new</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc">	 * value if the remote accepted the change. Note that this</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc">	 * could be a different value from peer_ref-&gt;new_oid if the</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc">	 * process involved generating new commits.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc">	 **/</i></td></tr>
+<tr><th id="105">105</th><td>	<em>int</em> (*<dfn class="decl" id="transport::push_refs" title='transport::push_refs' data-ref="transport::push_refs">push_refs</dfn>)(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col9 decl" id="9transport" title='transport' data-type='struct transport *' data-ref="9transport">transport</dfn>, <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col0 decl" id="10refs" title='refs' data-type='struct ref *' data-ref="10refs">refs</dfn>, <em>int</em> <dfn class="local col1 decl" id="11flags" title='flags' data-type='int' data-ref="11flags">flags</dfn>);</td></tr>
+<tr><th id="106">106</th><td>	<em>int</em> (*<dfn class="decl" id="transport::push" title='transport::push' data-ref="transport::push">push</dfn>)(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col2 decl" id="12connection" title='connection' data-type='struct transport *' data-ref="12connection">connection</dfn>, <em>int</em> <dfn class="local col3 decl" id="13refspec_nr" title='refspec_nr' data-type='int' data-ref="13refspec_nr">refspec_nr</dfn>, <em>const</em> <em>char</em> **<dfn class="local col4 decl" id="14refspec" title='refspec' data-type='const char **' data-ref="14refspec">refspec</dfn>, <em>int</em> <dfn class="local col5 decl" id="15flags" title='flags' data-type='int' data-ref="15flags">flags</dfn>);</td></tr>
+<tr><th id="107">107</th><td>	<em>int</em> (*<dfn class="decl" id="transport::connect" title='transport::connect' data-ref="transport::connect">connect</dfn>)(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col6 decl" id="16connection" title='connection' data-type='struct transport *' data-ref="16connection">connection</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="17name" title='name' data-type='const char *' data-ref="17name">name</dfn>,</td></tr>
+<tr><th id="108">108</th><td>		       <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="18executable" title='executable' data-type='const char *' data-ref="18executable">executable</dfn>, <em>int</em> <dfn class="local col9 decl" id="19fd" title='fd' data-type='int *' data-ref="19fd">fd</dfn>[<var>2</var>]);</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>	<i class="doc">/** get_refs_list(), fetch(), and push_refs() can keep</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc">	 * resources (such as a connection) reserved for further</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc">	 * use. disconnect() releases these resources.</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc">	 **/</i></td></tr>
+<tr><th id="114">114</th><td>	<em>int</em> (*<dfn class="decl" id="transport::disconnect" title='transport::disconnect' data-ref="transport::disconnect">disconnect</dfn>)(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col0 decl" id="20connection" title='connection' data-type='struct transport *' data-ref="20connection">connection</dfn>);</td></tr>
+<tr><th id="115">115</th><td>	<em>char</em> *<dfn class="decl" id="transport::pack_lockfile" title='transport::pack_lockfile' data-ref="transport::pack_lockfile">pack_lockfile</dfn>;</td></tr>
+<tr><th id="116">116</th><td>	<em>signed</em> <dfn class="decl" id="transport::verbose" title='transport::verbose' data-ref="transport::verbose">verbose</dfn> : <var>3</var>;</td></tr>
+<tr><th id="117">117</th><td>	<i class="doc">/**</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc">	 * Transports should not set this directly, and should use this</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc">	 * value without having to check isatty(2), -q/--quiet</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc">	 * (transport-&gt;verbose &lt; 0), etc. - checking has already been done</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc">	 * in transport_set_verbosity().</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc">	 **/</i></td></tr>
+<tr><th id="123">123</th><td>	<em>unsigned</em> <dfn class="decl" id="transport::progress" title='transport::progress' data-ref="transport::progress">progress</dfn> : <var>1</var>;</td></tr>
+<tr><th id="124">124</th><td>	<i>/*</i></td></tr>
+<tr><th id="125">125</th><td><i>	 * If transport is at least potentially smart, this points to</i></td></tr>
+<tr><th id="126">126</th><td><i>	 * git_transport_options structure to use in case transport</i></td></tr>
+<tr><th id="127">127</th><td><i>	 * actually turns out to be smart.</i></td></tr>
+<tr><th id="128">128</th><td><i>	 */</i></td></tr>
+<tr><th id="129">129</th><td>	<b>struct</b> <a class="type" href="#git_transport_options" title='git_transport_options' data-ref="git_transport_options">git_transport_options</a> *<dfn class="decl" id="transport::smart_options" title='transport::smart_options' data-ref="transport::smart_options">smart_options</dfn>;</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>	<b>enum</b> <a class="type" href="#transport_family" title='transport_family' data-ref="transport_family">transport_family</a> <dfn class="decl" id="transport::family" title='transport::family' data-ref="transport::family">family</dfn>;</td></tr>
+<tr><th id="132">132</th><td>};</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_ALL" data-ref="_M/TRANSPORT_PUSH_ALL">TRANSPORT_PUSH_ALL</dfn>			(1&lt;&lt;0)</u></td></tr>
+<tr><th id="135">135</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_FORCE" data-ref="_M/TRANSPORT_PUSH_FORCE">TRANSPORT_PUSH_FORCE</dfn>			(1&lt;&lt;1)</u></td></tr>
+<tr><th id="136">136</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_DRY_RUN" data-ref="_M/TRANSPORT_PUSH_DRY_RUN">TRANSPORT_PUSH_DRY_RUN</dfn>			(1&lt;&lt;2)</u></td></tr>
+<tr><th id="137">137</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_MIRROR" data-ref="_M/TRANSPORT_PUSH_MIRROR">TRANSPORT_PUSH_MIRROR</dfn>			(1&lt;&lt;3)</u></td></tr>
+<tr><th id="138">138</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_PORCELAIN" data-ref="_M/TRANSPORT_PUSH_PORCELAIN">TRANSPORT_PUSH_PORCELAIN</dfn>		(1&lt;&lt;4)</u></td></tr>
+<tr><th id="139">139</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_SET_UPSTREAM" data-ref="_M/TRANSPORT_PUSH_SET_UPSTREAM">TRANSPORT_PUSH_SET_UPSTREAM</dfn>		(1&lt;&lt;5)</u></td></tr>
+<tr><th id="140">140</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_RECURSE_SUBMODULES_CHECK" data-ref="_M/TRANSPORT_RECURSE_SUBMODULES_CHECK">TRANSPORT_RECURSE_SUBMODULES_CHECK</dfn>	(1&lt;&lt;6)</u></td></tr>
+<tr><th id="141">141</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_PRUNE" data-ref="_M/TRANSPORT_PUSH_PRUNE">TRANSPORT_PUSH_PRUNE</dfn>			(1&lt;&lt;7)</u></td></tr>
+<tr><th id="142">142</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_RECURSE_SUBMODULES_ON_DEMAND" data-ref="_M/TRANSPORT_RECURSE_SUBMODULES_ON_DEMAND">TRANSPORT_RECURSE_SUBMODULES_ON_DEMAND</dfn>	(1&lt;&lt;8)</u></td></tr>
+<tr><th id="143">143</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_NO_HOOK" data-ref="_M/TRANSPORT_PUSH_NO_HOOK">TRANSPORT_PUSH_NO_HOOK</dfn>			(1&lt;&lt;9)</u></td></tr>
+<tr><th id="144">144</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_FOLLOW_TAGS" data-ref="_M/TRANSPORT_PUSH_FOLLOW_TAGS">TRANSPORT_PUSH_FOLLOW_TAGS</dfn>		(1&lt;&lt;10)</u></td></tr>
+<tr><th id="145">145</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_CERT_ALWAYS" data-ref="_M/TRANSPORT_PUSH_CERT_ALWAYS">TRANSPORT_PUSH_CERT_ALWAYS</dfn>		(1&lt;&lt;11)</u></td></tr>
+<tr><th id="146">146</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_CERT_IF_ASKED" data-ref="_M/TRANSPORT_PUSH_CERT_IF_ASKED">TRANSPORT_PUSH_CERT_IF_ASKED</dfn>		(1&lt;&lt;12)</u></td></tr>
+<tr><th id="147">147</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_ATOMIC" data-ref="_M/TRANSPORT_PUSH_ATOMIC">TRANSPORT_PUSH_ATOMIC</dfn>			(1&lt;&lt;13)</u></td></tr>
+<tr><th id="148">148</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_PUSH_OPTIONS" data-ref="_M/TRANSPORT_PUSH_OPTIONS">TRANSPORT_PUSH_OPTIONS</dfn>			(1&lt;&lt;14)</u></td></tr>
+<tr><th id="149">149</th><td><u>#define <dfn class="macro" id="_M/TRANSPORT_RECURSE_SUBMODULES_ONLY" data-ref="_M/TRANSPORT_RECURSE_SUBMODULES_ONLY">TRANSPORT_RECURSE_SUBMODULES_ONLY</dfn>	(1&lt;&lt;15)</u></td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="transport_summary_width" title='transport_summary_width' data-ref="transport_summary_width">transport_summary_width</dfn>(<em>const</em> <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col1 decl" id="21refs" title='refs' data-type='const struct ref *' data-ref="21refs">refs</dfn>);</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td><i>/* Returns a transport suitable for the url */</i></td></tr>
+<tr><th id="154">154</th><td><b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="decl" id="transport_get" title='transport_get' data-ref="transport_get">transport_get</dfn>(<b>struct</b> <a class="type" href="remote.h.html#remote" title='remote' data-ref="remote">remote</a> *, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><i>/*</i></td></tr>
+<tr><th id="157">157</th><td><i> * Check whether a transport is allowed by the environment.</i></td></tr>
+<tr><th id="158">158</th><td><i> *</i></td></tr>
+<tr><th id="159">159</th><td><i> * Type should generally be the URL scheme, as described in</i></td></tr>
+<tr><th id="160">160</th><td><i> * Documentation/git.txt</i></td></tr>
+<tr><th id="161">161</th><td><i> *</i></td></tr>
+<tr><th id="162">162</th><td><i> * from_user specifies if the transport was given by the user.  If unknown pass</i></td></tr>
+<tr><th id="163">163</th><td><i> * a -1 to read from the environment to determine if the transport was given by</i></td></tr>
+<tr><th id="164">164</th><td><i> * the user.</i></td></tr>
+<tr><th id="165">165</th><td><i> *</i></td></tr>
+<tr><th id="166">166</th><td><i> */</i></td></tr>
+<tr><th id="167">167</th><td><em>int</em> <dfn class="decl" id="is_transport_allowed" title='is_transport_allowed' data-ref="is_transport_allowed">is_transport_allowed</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="22type" title='type' data-type='const char *' data-ref="22type">type</dfn>, <em>int</em> <dfn class="local col3 decl" id="23from_user" title='from_user' data-type='int' data-ref="23from_user">from_user</dfn>);</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><i>/*</i></td></tr>
+<tr><th id="170">170</th><td><i> * Check whether a transport is allowed by the environment,</i></td></tr>
+<tr><th id="171">171</th><td><i> * and die otherwise.</i></td></tr>
+<tr><th id="172">172</th><td><i> */</i></td></tr>
+<tr><th id="173">173</th><td><em>void</em> <dfn class="decl" id="transport_check_allowed" title='transport_check_allowed' data-ref="transport_check_allowed">transport_check_allowed</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="24type" title='type' data-type='const char *' data-ref="24type">type</dfn>);</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td><i>/* Transport options which apply to git:// and scp-style URLs */</i></td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td><i>/* The program to use on the remote side to send a pack */</i></td></tr>
+<tr><th id="178">178</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_UPLOADPACK" data-ref="_M/TRANS_OPT_UPLOADPACK">TRANS_OPT_UPLOADPACK</dfn> "uploadpack"</u></td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td><i>/* The program to use on the remote side to receive a pack */</i></td></tr>
+<tr><th id="181">181</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_RECEIVEPACK" data-ref="_M/TRANS_OPT_RECEIVEPACK">TRANS_OPT_RECEIVEPACK</dfn> "receivepack"</u></td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td><i>/* Transfer the data as a thin pack if not null */</i></td></tr>
+<tr><th id="184">184</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_THIN" data-ref="_M/TRANS_OPT_THIN">TRANS_OPT_THIN</dfn> "thin"</u></td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><i>/* Check the current value of the remote ref */</i></td></tr>
+<tr><th id="187">187</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_CAS" data-ref="_M/TRANS_OPT_CAS">TRANS_OPT_CAS</dfn> "cas"</u></td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><i>/* Keep the pack that was transferred if not null */</i></td></tr>
+<tr><th id="190">190</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_KEEP" data-ref="_M/TRANS_OPT_KEEP">TRANS_OPT_KEEP</dfn> "keep"</u></td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td><i>/* Limit the depth of the fetch if not null */</i></td></tr>
+<tr><th id="193">193</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_DEPTH" data-ref="_M/TRANS_OPT_DEPTH">TRANS_OPT_DEPTH</dfn> "depth"</u></td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td><i>/* Limit the depth of the fetch based on time if not null */</i></td></tr>
+<tr><th id="196">196</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_DEEPEN_SINCE" data-ref="_M/TRANS_OPT_DEEPEN_SINCE">TRANS_OPT_DEEPEN_SINCE</dfn> "deepen-since"</u></td></tr>
+<tr><th id="197">197</th><td></td></tr>
+<tr><th id="198">198</th><td><i>/* Limit the depth of the fetch based on revs if not null */</i></td></tr>
+<tr><th id="199">199</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_DEEPEN_NOT" data-ref="_M/TRANS_OPT_DEEPEN_NOT">TRANS_OPT_DEEPEN_NOT</dfn> "deepen-not"</u></td></tr>
+<tr><th id="200">200</th><td></td></tr>
+<tr><th id="201">201</th><td><i>/* Limit the deepen of the fetch if not null */</i></td></tr>
+<tr><th id="202">202</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_DEEPEN_RELATIVE" data-ref="_M/TRANS_OPT_DEEPEN_RELATIVE">TRANS_OPT_DEEPEN_RELATIVE</dfn> "deepen-relative"</u></td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td><i>/* Aggressively fetch annotated tags if possible */</i></td></tr>
+<tr><th id="205">205</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_FOLLOWTAGS" data-ref="_M/TRANS_OPT_FOLLOWTAGS">TRANS_OPT_FOLLOWTAGS</dfn> "followtags"</u></td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td><i>/* Accept refs that may update .git/shallow without --depth */</i></td></tr>
+<tr><th id="208">208</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_UPDATE_SHALLOW" data-ref="_M/TRANS_OPT_UPDATE_SHALLOW">TRANS_OPT_UPDATE_SHALLOW</dfn> "updateshallow"</u></td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td><i>/* Send push certificates */</i></td></tr>
+<tr><th id="211">211</th><td><u>#define <dfn class="macro" id="_M/TRANS_OPT_PUSH_CERT" data-ref="_M/TRANS_OPT_PUSH_CERT">TRANS_OPT_PUSH_CERT</dfn> "pushcert"</u></td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc"> * Returns 0 if the option was used, non-zero otherwise. Prints a</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> * message to stderr if the option is not used.</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="217">217</th><td><em>int</em> <dfn class="decl" id="transport_set_option" title='transport_set_option' data-ref="transport_set_option">transport_set_option</dfn>(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col5 decl" id="25transport" title='transport' data-type='struct transport *' data-ref="25transport">transport</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="26name" title='name' data-type='const char *' data-ref="26name">name</dfn>,</td></tr>
+<tr><th id="218">218</th><td>			 <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="27value" title='value' data-type='const char *' data-ref="27value">value</dfn>);</td></tr>
+<tr><th id="219">219</th><td><em>void</em> <dfn class="decl" id="transport_set_verbosity" title='transport_set_verbosity' data-ref="transport_set_verbosity">transport_set_verbosity</dfn>(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col8 decl" id="28transport" title='transport' data-type='struct transport *' data-ref="28transport">transport</dfn>, <em>int</em> <dfn class="local col9 decl" id="29verbosity" title='verbosity' data-type='int' data-ref="29verbosity">verbosity</dfn>,</td></tr>
+<tr><th id="220">220</th><td>	<em>int</em> <dfn class="local col0 decl" id="30force_progress" title='force_progress' data-type='int' data-ref="30force_progress">force_progress</dfn>);</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td><u>#define <dfn class="macro" id="_M/REJECT_NON_FF_HEAD" data-ref="_M/REJECT_NON_FF_HEAD">REJECT_NON_FF_HEAD</dfn>     0x01</u></td></tr>
+<tr><th id="223">223</th><td><u>#define <dfn class="macro" id="_M/REJECT_NON_FF_OTHER" data-ref="_M/REJECT_NON_FF_OTHER">REJECT_NON_FF_OTHER</dfn>    0x02</u></td></tr>
+<tr><th id="224">224</th><td><u>#define <dfn class="macro" id="_M/REJECT_ALREADY_EXISTS" data-ref="_M/REJECT_ALREADY_EXISTS">REJECT_ALREADY_EXISTS</dfn>  0x04</u></td></tr>
+<tr><th id="225">225</th><td><u>#define <dfn class="macro" id="_M/REJECT_FETCH_FIRST" data-ref="_M/REJECT_FETCH_FIRST">REJECT_FETCH_FIRST</dfn>     0x08</u></td></tr>
+<tr><th id="226">226</th><td><u>#define <dfn class="macro" id="_M/REJECT_NEEDS_FORCE" data-ref="_M/REJECT_NEEDS_FORCE">REJECT_NEEDS_FORCE</dfn>     0x10</u></td></tr>
+<tr><th id="227">227</th><td></td></tr>
+<tr><th id="228">228</th><td><em>int</em> <dfn class="decl" id="transport_push" title='transport_push' data-ref="transport_push">transport_push</dfn>(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col1 decl" id="31connection" title='connection' data-type='struct transport *' data-ref="31connection">connection</dfn>,</td></tr>
+<tr><th id="229">229</th><td>		   <em>int</em> <dfn class="local col2 decl" id="32refspec_nr" title='refspec_nr' data-type='int' data-ref="32refspec_nr">refspec_nr</dfn>, <em>const</em> <em>char</em> **<dfn class="local col3 decl" id="33refspec" title='refspec' data-type='const char **' data-ref="33refspec">refspec</dfn>, <em>int</em> <dfn class="local col4 decl" id="34flags" title='flags' data-type='int' data-ref="34flags">flags</dfn>,</td></tr>
+<tr><th id="230">230</th><td>		   <em>unsigned</em> <em>int</em> * <dfn class="local col5 decl" id="35reject_reasons" title='reject_reasons' data-type='unsigned int *' data-ref="35reject_reasons">reject_reasons</dfn>);</td></tr>
+<tr><th id="231">231</th><td></td></tr>
+<tr><th id="232">232</th><td><em>const</em> <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="transport_get_remote_refs" title='transport_get_remote_refs' data-ref="transport_get_remote_refs">transport_get_remote_refs</dfn>(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col6 decl" id="36transport" title='transport' data-type='struct transport *' data-ref="36transport">transport</dfn>);</td></tr>
+<tr><th id="233">233</th><td></td></tr>
+<tr><th id="234">234</th><td><em>int</em> <dfn class="decl" id="transport_fetch_refs" title='transport_fetch_refs' data-ref="transport_fetch_refs">transport_fetch_refs</dfn>(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col7 decl" id="37transport" title='transport' data-type='struct transport *' data-ref="37transport">transport</dfn>, <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col8 decl" id="38refs" title='refs' data-type='struct ref *' data-ref="38refs">refs</dfn>);</td></tr>
+<tr><th id="235">235</th><td><em>void</em> <dfn class="decl" id="transport_unlock_pack" title='transport_unlock_pack' data-ref="transport_unlock_pack">transport_unlock_pack</dfn>(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col9 decl" id="39transport" title='transport' data-type='struct transport *' data-ref="39transport">transport</dfn>);</td></tr>
+<tr><th id="236">236</th><td><em>int</em> <dfn class="decl" id="transport_disconnect" title='transport_disconnect' data-ref="transport_disconnect">transport_disconnect</dfn>(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col0 decl" id="40transport" title='transport' data-type='struct transport *' data-ref="40transport">transport</dfn>);</td></tr>
+<tr><th id="237">237</th><td><em>char</em> *<dfn class="decl" id="transport_anonymize_url" title='transport_anonymize_url' data-ref="transport_anonymize_url">transport_anonymize_url</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="41url" title='url' data-type='const char *' data-ref="41url">url</dfn>);</td></tr>
+<tr><th id="238">238</th><td><em>void</em> <dfn class="decl" id="transport_take_over" title='transport_take_over' data-ref="transport_take_over">transport_take_over</dfn>(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col2 decl" id="42transport" title='transport' data-type='struct transport *' data-ref="42transport">transport</dfn>,</td></tr>
+<tr><th id="239">239</th><td>			 <b>struct</b> <a class="type" href="run-command.h.html#child_process" title='child_process' data-ref="child_process">child_process</a> *<dfn class="local col3 decl" id="43child" title='child' data-type='struct child_process *' data-ref="43child">child</dfn>);</td></tr>
+<tr><th id="240">240</th><td></td></tr>
+<tr><th id="241">241</th><td><em>int</em> <dfn class="decl" id="transport_connect" title='transport_connect' data-ref="transport_connect">transport_connect</dfn>(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col4 decl" id="44transport" title='transport' data-type='struct transport *' data-ref="44transport">transport</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="45name" title='name' data-type='const char *' data-ref="45name">name</dfn>,</td></tr>
+<tr><th id="242">242</th><td>		      <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="46exec" title='exec' data-type='const char *' data-ref="46exec">exec</dfn>, <em>int</em> <dfn class="local col7 decl" id="47fd" title='fd' data-type='int *' data-ref="47fd">fd</dfn>[<var>2</var>]);</td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td><i>/* Transport methods defined outside transport.c */</i></td></tr>
+<tr><th id="245">245</th><td><em>int</em> <dfn class="decl" id="transport_helper_init" title='transport_helper_init' data-ref="transport_helper_init">transport_helper_init</dfn>(<b>struct</b> <a class="type" href="#transport" title='transport' data-ref="transport">transport</a> *<dfn class="local col8 decl" id="48transport" title='transport' data-type='struct transport *' data-ref="48transport">transport</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="49name" title='name' data-type='const char *' data-ref="49name">name</dfn>);</td></tr>
+<tr><th id="246">246</th><td><em>int</em> <dfn class="decl" id="bidirectional_transfer_loop" title='bidirectional_transfer_loop' data-ref="bidirectional_transfer_loop">bidirectional_transfer_loop</dfn>(<em>int</em> <dfn class="local col0 decl" id="50input" title='input' data-type='int' data-ref="50input">input</dfn>, <em>int</em> <dfn class="local col1 decl" id="51output" title='output' data-type='int' data-ref="51output">output</dfn>);</td></tr>
+<tr><th id="247">247</th><td></td></tr>
+<tr><th id="248">248</th><td><i>/* common methods used by transport.c and builtin/send-pack.c */</i></td></tr>
+<tr><th id="249">249</th><td><em>void</em> <dfn class="decl" id="transport_verify_remote_names" title='transport_verify_remote_names' data-ref="transport_verify_remote_names">transport_verify_remote_names</dfn>(<em>int</em> <dfn class="local col2 decl" id="52nr_heads" title='nr_heads' data-type='int' data-ref="52nr_heads">nr_heads</dfn>, <em>const</em> <em>char</em> **<dfn class="local col3 decl" id="53heads" title='heads' data-type='const char **' data-ref="53heads">heads</dfn>);</td></tr>
+<tr><th id="250">250</th><td></td></tr>
+<tr><th id="251">251</th><td><em>void</em> <dfn class="decl" id="transport_update_tracking_ref" title='transport_update_tracking_ref' data-ref="transport_update_tracking_ref">transport_update_tracking_ref</dfn>(<b>struct</b> <a class="type" href="remote.h.html#remote" title='remote' data-ref="remote">remote</a> *<dfn class="local col4 decl" id="54remote" title='remote' data-type='struct remote *' data-ref="54remote">remote</dfn>, <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col5 decl" id="55ref" title='ref' data-type='struct ref *' data-ref="55ref">ref</dfn>, <em>int</em> <dfn class="local col6 decl" id="56verbose" title='verbose' data-type='int' data-ref="56verbose">verbose</dfn>);</td></tr>
+<tr><th id="252">252</th><td></td></tr>
+<tr><th id="253">253</th><td><em>int</em> <dfn class="decl" id="transport_refs_pushed" title='transport_refs_pushed' data-ref="transport_refs_pushed">transport_refs_pushed</dfn>(<b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col7 decl" id="57ref" title='ref' data-type='struct ref *' data-ref="57ref">ref</dfn>);</td></tr>
+<tr><th id="254">254</th><td></td></tr>
+<tr><th id="255">255</th><td><em>void</em> <dfn class="decl" id="transport_print_push_status" title='transport_print_push_status' data-ref="transport_print_push_status">transport_print_push_status</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="58dest" title='dest' data-type='const char *' data-ref="58dest">dest</dfn>, <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col9 decl" id="59refs" title='refs' data-type='struct ref *' data-ref="59refs">refs</dfn>,</td></tr>
+<tr><th id="256">256</th><td>		  <em>int</em> <dfn class="local col0 decl" id="60verbose" title='verbose' data-type='int' data-ref="60verbose">verbose</dfn>, <em>int</em> <dfn class="local col1 decl" id="61porcelain" title='porcelain' data-type='int' data-ref="61porcelain">porcelain</dfn>, <em>unsigned</em> <em>int</em> *<dfn class="local col2 decl" id="62reject_reasons" title='reject_reasons' data-type='unsigned int *' data-ref="62reject_reasons">reject_reasons</dfn>);</td></tr>
+<tr><th id="257">257</th><td></td></tr>
+<tr><th id="258">258</th><td><b>typedef</b> <em>void</em> <dfn class="typedef" id="alternate_ref_fn" title='alternate_ref_fn' data-type='void (const char *, const struct object_id *, void *)' data-ref="alternate_ref_fn">alternate_ref_fn</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="63refname" title='refname' data-type='const char *' data-ref="63refname">refname</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col4 decl" id="64oid" title='oid' data-type='const struct object_id *' data-ref="64oid">oid</dfn>, <em>void</em> *);</td></tr>
+<tr><th id="259">259</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="for_each_alternate_ref" title='for_each_alternate_ref' data-ref="for_each_alternate_ref">for_each_alternate_ref</dfn>(<a class="typedef" href="#alternate_ref_fn" title='alternate_ref_fn' data-type='void (const char *, const struct object_id *, void *)' data-ref="alternate_ref_fn">alternate_ref_fn</a>, <em>void</em> *);</td></tr>
+<tr><th id="260">260</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="261">261</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/archive.c.html'>codebrowser/builtin/archive.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='123' type='int wt_status_check_rebase(const struct worktree * wt, struct wt_status_state * state)'/>
+<use f='codebrowser/worktree.c' l='264' u='c' c='is_worktree_being_rebased'/>
+<def f='codebrowser/wt-status.c' l='1473' ll='1498' type='int wt_status_check_rebase(const struct worktree * wt, struct wt_status_state * state)'/>
+<use f='codebrowser/wt-status.c' l='1521' u='c' c='wt_status_get_state'/>

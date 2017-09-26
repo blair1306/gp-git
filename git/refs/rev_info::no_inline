@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='177' type='int'/>
+<offset>2560</offset>
+<use f='codebrowser/builtin/log.c' l='1190' u='w' c='attach_callback'/>
+<use f='codebrowser/builtin/log.c' l='1203' u='w' c='inline_callback'/>
+<use f='codebrowser/builtin/log.c' l='1523' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='412' u='r' c='log_write_email_headers'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='140' type='struct ref * copy_ref_list(const struct ref * ref)'/>
+<use f='codebrowser/builtin/remote.c' l='388' u='c' c='get_push_ref_states'/>
+<use f='codebrowser/fetch-pack.c' l='913' u='c' c='do_fetch_pack'/>
+<def f='codebrowser/remote.c' l='953' ll='963' type='struct ref * copy_ref_list(const struct ref * ref)'/>

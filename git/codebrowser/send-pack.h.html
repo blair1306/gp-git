@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>send-pack.h source code [codebrowser/send-pack.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="send_pack_args "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/send-pack.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='send-pack.h.html'>send-pack.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/SEND_PACK_H">SEND_PACK_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/SEND_PACK_H" data-ref="_M/SEND_PACK_H">SEND_PACK_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="string-list.h.html">"string-list.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/* Possible values for push_cert field in send_pack_args. */</i></td></tr>
+<tr><th id="7">7</th><td><u>#define <dfn class="macro" id="_M/SEND_PACK_PUSH_CERT_NEVER" data-ref="_M/SEND_PACK_PUSH_CERT_NEVER">SEND_PACK_PUSH_CERT_NEVER</dfn> 0</u></td></tr>
+<tr><th id="8">8</th><td><u>#define <dfn class="macro" id="_M/SEND_PACK_PUSH_CERT_IF_ASKED" data-ref="_M/SEND_PACK_PUSH_CERT_IF_ASKED">SEND_PACK_PUSH_CERT_IF_ASKED</dfn> 1</u></td></tr>
+<tr><th id="9">9</th><td><u>#define <dfn class="macro" id="_M/SEND_PACK_PUSH_CERT_ALWAYS" data-ref="_M/SEND_PACK_PUSH_CERT_ALWAYS">SEND_PACK_PUSH_CERT_ALWAYS</dfn> 2</u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><b>struct</b> <dfn class="type def" id="send_pack_args" title='send_pack_args' data-ref="send_pack_args">send_pack_args</dfn> {</td></tr>
+<tr><th id="12">12</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="send_pack_args::url" title='send_pack_args::url' data-ref="send_pack_args::url">url</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<em>unsigned</em> <dfn class="decl" id="send_pack_args::verbose" title='send_pack_args::verbose' data-ref="send_pack_args::verbose">verbose</dfn>:<var>1</var>,</td></tr>
+<tr><th id="14">14</th><td>		<dfn class="decl" id="send_pack_args::quiet" title='send_pack_args::quiet' data-ref="send_pack_args::quiet">quiet</dfn>:<var>1</var>,</td></tr>
+<tr><th id="15">15</th><td>		<dfn class="decl" id="send_pack_args::porcelain" title='send_pack_args::porcelain' data-ref="send_pack_args::porcelain">porcelain</dfn>:<var>1</var>,</td></tr>
+<tr><th id="16">16</th><td>		<dfn class="decl" id="send_pack_args::progress" title='send_pack_args::progress' data-ref="send_pack_args::progress">progress</dfn>:<var>1</var>,</td></tr>
+<tr><th id="17">17</th><td>		<dfn class="decl" id="send_pack_args::send_mirror" title='send_pack_args::send_mirror' data-ref="send_pack_args::send_mirror">send_mirror</dfn>:<var>1</var>,</td></tr>
+<tr><th id="18">18</th><td>		<dfn class="decl" id="send_pack_args::force_update" title='send_pack_args::force_update' data-ref="send_pack_args::force_update">force_update</dfn>:<var>1</var>,</td></tr>
+<tr><th id="19">19</th><td>		<dfn class="decl" id="send_pack_args::use_thin_pack" title='send_pack_args::use_thin_pack' data-ref="send_pack_args::use_thin_pack">use_thin_pack</dfn>:<var>1</var>,</td></tr>
+<tr><th id="20">20</th><td>		<dfn class="decl" id="send_pack_args::use_ofs_delta" title='send_pack_args::use_ofs_delta' data-ref="send_pack_args::use_ofs_delta">use_ofs_delta</dfn>:<var>1</var>,</td></tr>
+<tr><th id="21">21</th><td>		<dfn class="decl" id="send_pack_args::dry_run" title='send_pack_args::dry_run' data-ref="send_pack_args::dry_run">dry_run</dfn>:<var>1</var>,</td></tr>
+<tr><th id="22">22</th><td>		<i>/* One of the SEND_PACK_PUSH_CERT_* constants. */</i></td></tr>
+<tr><th id="23">23</th><td>		<dfn class="decl" id="send_pack_args::push_cert" title='send_pack_args::push_cert' data-ref="send_pack_args::push_cert">push_cert</dfn>:<var>2</var>,</td></tr>
+<tr><th id="24">24</th><td>		<dfn class="decl" id="send_pack_args::stateless_rpc" title='send_pack_args::stateless_rpc' data-ref="send_pack_args::stateless_rpc">stateless_rpc</dfn>:<var>1</var>,</td></tr>
+<tr><th id="25">25</th><td>		<dfn class="decl" id="send_pack_args::atomic" title='send_pack_args::atomic' data-ref="send_pack_args::atomic">atomic</dfn>:<var>1</var>;</td></tr>
+<tr><th id="26">26</th><td>	<em>const</em> <b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="decl" id="send_pack_args::push_options" title='send_pack_args::push_options' data-ref="send_pack_args::push_options">push_options</dfn>;</td></tr>
+<tr><th id="27">27</th><td>};</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><b>struct</b> <a class="type" href="parse-options.h.html#option" title='option' data-ref="option" id="option">option</a>;</td></tr>
+<tr><th id="30">30</th><td><em>int</em> <dfn class="decl" id="option_parse_push_signed" title='option_parse_push_signed' data-ref="option_parse_push_signed">option_parse_push_signed</dfn>(<em>const</em> <b>struct</b> <a class="type" href="parse-options.h.html#option" title='option' data-ref="option">option</a> *<dfn class="local col1 decl" id="1opt" title='opt' data-type='const struct option *' data-ref="1opt">opt</dfn>,</td></tr>
+<tr><th id="31">31</th><td>			     <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2arg" title='arg' data-type='const char *' data-ref="2arg">arg</dfn>, <em>int</em> <dfn class="local col3 decl" id="3unset" title='unset' data-type='int' data-ref="3unset">unset</dfn>);</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><em>int</em> <dfn class="decl" id="send_pack" title='send_pack' data-ref="send_pack">send_pack</dfn>(<b>struct</b> <a class="type" href="#send_pack_args" title='send_pack_args' data-ref="send_pack_args">send_pack_args</a> *<dfn class="local col4 decl" id="4args" title='args' data-type='struct send_pack_args *' data-ref="4args">args</dfn>,</td></tr>
+<tr><th id="34">34</th><td>	      <em>int</em> <dfn class="local col5 decl" id="5fd" title='fd' data-type='int *' data-ref="5fd">fd</dfn>[], <b>struct</b> <a class="type" href="run-command.h.html#child_process" title='child_process' data-ref="child_process">child_process</a> *<dfn class="local col6 decl" id="6conn" title='conn' data-type='struct child_process *' data-ref="6conn">conn</dfn>,</td></tr>
+<tr><th id="35">35</th><td>	      <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col7 decl" id="7remote_refs" title='remote_refs' data-type='struct ref *' data-ref="7remote_refs">remote_refs</dfn>, <b>struct</b> <a class="type" href="sha1-array.h.html#oid_array" title='oid_array' data-ref="oid_array">oid_array</a> *<dfn class="local col8 decl" id="8extra_have" title='extra_have' data-type='struct oid_array *' data-ref="8extra_have">extra_have</dfn>);</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/push.c.html'>codebrowser/builtin/push.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

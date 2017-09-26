@@ -1,0 +1,5 @@
+<dec f='codebrowser/wildmatch.h' l='9'/>
+<use f='codebrowser/wildmatch.c' l='104' u='c'/>
+<use f='codebrowser/wildmatch.c' l='105' u='c'/>
+<use f='codebrowser/wildmatch.c' l='119' u='c'/>
+<use f='codebrowser/wildmatch.c' l='271' u='c'/>

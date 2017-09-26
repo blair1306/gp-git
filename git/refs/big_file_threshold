@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='746' type='unsigned long'/>
+<use f='codebrowser/archive-tar.c' l='280' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-zip.c' l='339' u='r' c='write_zip_entry'/>
+<use f='codebrowser/builtin/index-pack.c' l='455' u='r' c='unpack_entry_data'/>
+<use f='codebrowser/builtin/index-pack.c' l='768' u='r' c='check_collison'/>
+<use f='codebrowser/builtin/pack-objects.c' l='254' u='r' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1708' u='r' c='get_object_details'/>
+<use f='codebrowser/config.c' l='1124' u='w' c='git_default_core_config'/>
+<use f='codebrowser/diff.c' l='2885' u='r' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2917' u='r' c='diff_populate_filespec'/>
+<def f='codebrowser/environment.c' l='43' type='unsigned long'/>
+<use f='codebrowser/fast-import.c' l='2130' u='r' c='parse_and_store_blob'/>
+<use f='codebrowser/fast-import.c' l='3308' u='w' c='parse_one_option'/>
+<use f='codebrowser/pack-check.c' l='126' u='r' c='verify_packfile'/>
+<use f='codebrowser/sha1_file.c' l='3644' u='r' c='index_fd'/>
+<use f='codebrowser/streaming.c' l='124' u='r' c='istream_source'/>

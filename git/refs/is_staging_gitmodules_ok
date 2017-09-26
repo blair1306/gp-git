@@ -1,0 +1,12 @@
+<dec f='codebrowser/submodule.h' l='37' type='int is_staging_gitmodules_ok(const struct index_state * istate)'/>
+<use f='codebrowser/builtin/mv.c' l='84' u='c' c='prepare_move_submodule'/>
+<use f='codebrowser/builtin/rm.c' l='289' u='c' c='cmd_rm'/>
+<def f='codebrowser/submodule.c' l='58' ll='70' type='int is_staging_gitmodules_ok(const struct index_state * istate)'/>
+<doc f='codebrowser/submodule.c' l='50'>/*
+ * Check if the .gitmodules file has unstaged modifications.  This must be
+ * checked before allowing modifications to the .gitmodules file with the
+ * intention to stage them later, because when continuing we would stage the
+ * modifications the user didn&apos;t stage herself too. That might change in a
+ * future version when we learn to stage the changes we do ourselves without
+ * staging any previous modifications.
+ */</doc>

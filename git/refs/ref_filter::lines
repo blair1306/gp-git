@@ -1,0 +1,14 @@
+<dec f='codebrowser/ref-filter.h' l='70' type='unsigned int'/>
+<offset>576</offset>
+<use f='codebrowser/builtin/tag.c' l='44' u='r' c='list_tags'/>
+<use f='codebrowser/builtin/tag.c' l='45' u='w' c='list_tags'/>
+<use f='codebrowser/builtin/tag.c' l='48' u='r' c='list_tags'/>
+<use f='codebrowser/builtin/tag.c' l='51' u='r' c='list_tags'/>
+<use f='codebrowser/builtin/tag.c' l='377' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='377' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='377' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='377' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='424' u='w' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='439' u='r' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='450' u='r' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='473' u='r' c='cmd_tag'/>

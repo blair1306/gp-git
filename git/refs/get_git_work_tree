@@ -1,0 +1,21 @@
+<dec f='codebrowser/cache.h' l='491' type='const char * get_git_work_tree()'/>
+<use f='codebrowser/builtin/difftool.c' l='355' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='732' u='c' c='cmd_difftool'/>
+<use f='codebrowser/builtin/init-db.c' l='263' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='573' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='575' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/reset.c' l='354' u='c' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='377' u='c' c='cmd_reset'/>
+<use f='codebrowser/builtin/rev-parse.c' l='785' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/rev-parse.c' l='807' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='671' u='c' c='module_clone'/>
+<use f='codebrowser/builtin/update-index.c' l='1144' u='c' c='cmd_update_index'/>
+<use f='codebrowser/dir.c' l='1949' u='c' c='get_ident_string'/>
+<use f='codebrowser/environment.c' l='166' u='c' c='is_bare_repository'/>
+<def f='codebrowser/environment.c' l='235' ll='238' type='const char * get_git_work_tree()'/>
+<use f='codebrowser/setup.c' l='32' u='c' c='abspath_part_inside_repo'/>
+<use f='codebrowser/setup.c' l='373' u='c' c='is_inside_work_tree'/>
+<use f='codebrowser/setup.c' l='388' u='c' c='setup_work_tree'/>
+<use f='codebrowser/setup.c' l='701' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/submodule.c' l='1285' u='c' c='fetch_populated_submodules'/>
+<use f='codebrowser/trace.c' l='327' u='c' c='trace_repo_setup'/>

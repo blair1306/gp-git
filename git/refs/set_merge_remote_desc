@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='367' type='void set_merge_remote_desc(struct commit * commit, const char * name, struct object * obj)'/>
+<def f='codebrowser/commit.c' l='1575' ll='1582' type='void set_merge_remote_desc(struct commit * commit, const char * name, struct object * obj)'/>
+<use f='codebrowser/commit.c' l='1594' u='c' c='get_merge_parent'/>
+<use f='codebrowser/merge-recursive.c' l='78' u='c' c='make_virtual_commit'/>

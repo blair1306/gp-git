@@ -1,0 +1,10 @@
+<dec f='codebrowser/dir-iterator.h' l='85' type='int dir_iterator_abort(struct dir_iterator * iterator)'/>
+<use f='codebrowser/dir-iterator.c' l='108' u='c' c='dir_iterator_advance'/>
+<use f='codebrowser/dir-iterator.c' l='133' u='c' c='dir_iterator_advance'/>
+<def f='codebrowser/dir-iterator.c' l='164' ll='183' type='int dir_iterator_abort(struct dir_iterator * dir_iterator)'/>
+<doc f='codebrowser/dir-iterator.h' l='80'>/*
+ * End the iteration before it has been exhausted. Free the
+ * dir_iterator and any associated resources and return ITER_DONE. On
+ * error, free the dir_iterator and return ITER_ERROR.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2046' u='c' c='files_reflog_iterator_abort'/>

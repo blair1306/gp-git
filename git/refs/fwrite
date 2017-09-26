@@ -1,0 +1,61 @@
+<dec f='include/stdio.h' l='715' type='size_t fwrite(const void *restrict __ptr, size_t __size, size_t __n, FILE *restrict __s)'/>
+<doc f='include/stdio.h' l='711'>/* Write chunks of generic data to STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/builtin/am.c' l='822' u='c' c='stgit_patch_to_mail'/>
+<use f='codebrowser/builtin/am.c' l='930' u='c' c='hg_patch_to_mail'/>
+<use f='codebrowser/builtin/branch.c' l='426' u='c' c='print_ref_list'/>
+<use f='codebrowser/builtin/cat-file.c' l='274' u='c' c='batch_write'/>
+<use f='codebrowser/builtin/commit.c' l='796' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/config.c' l='117' u='c' c='show_all_config'/>
+<use f='codebrowser/builtin/config.c' l='252' u='c' c='get_value'/>
+<use f='codebrowser/builtin/config.c' l='454' u='c' c='get_urlmatch'/>
+<use f='codebrowser/builtin/fast-export.c' l='254' u='c' c='export_blob'/>
+<use f='codebrowser/builtin/log.c' l='530' u='c' c='show_tag_object'/>
+<use f='codebrowser/builtin/mailsplit.c' l='96' u='c' c='split_one'/>
+<use f='codebrowser/builtin/merge-file.c' l='104' u='c' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/name-rev.c' l='384' u='c' c='name_rev_line'/>
+<use f='codebrowser/builtin/shortlog.c' l='337' u='c' c='shortlog_output'/>
+<use f='codebrowser/diff.c' l='542' u='c' c='emit_line_0'/>
+<use f='codebrowser/diff.c' l='888' u='c' c='fn_out_diff_words_write_helper'/>
+<use f='codebrowser/fast-import.c' l='3205' u='c' c='parse_progress'/>
+<use f='codebrowser/graph.c' l='75' u='c' c='graph_show_line_prefix'/>
+<use f='codebrowser/graph.c' l='1271' u='c' c='graph_show_commit'/>
+<use f='codebrowser/graph.c' l='1293' u='c' c='graph_show_oneline'/>
+<use f='codebrowser/graph.c' l='1307' u='c' c='graph_show_padding'/>
+<use f='codebrowser/graph.c' l='1326' u='c' c='graph_show_remainder'/>
+<use f='codebrowser/graph.c' l='1363' u='c' c='graph_show_strbuf'/>
+<use f='codebrowser/grep.c' l='18' u='c' c='std_output'/>
+<use f='codebrowser/http.c' l='1677' c='http_request'/>
+<use f='codebrowser/http.c' l='2081' c='new_http_pack_request'/>
+<use f='codebrowser/line-log.c' l='855' u='c' c='print_line'/>
+<use f='codebrowser/log-tree.c' l='757' u='c' c='log_tree_diff_flush'/>
+<use f='codebrowser/mailinfo.c' l='815' u='c' c='handle_patch'/>
+<use f='codebrowser/mailinfo.c' l='1117' u='c' c='mailinfo'/>
+<use f='codebrowser/quote.c' l='219' u='c' c='quote_c_style_counted'/>
+<use f='codebrowser/quote.c' l='219' u='c' c='quote_c_style_counted'/>
+<use f='codebrowser/ref-filter.c' l='2113' u='c' c='show_ref_array_item'/>
+<use f='codebrowser/rerere.c' l='290' u='c' c='ferr_write'/>
+<use f='codebrowser/rerere.c' l='694' u='c' c='merge'/>
+<use f='codebrowser/sh-i18n--envsubst.c' l='172' u='c' c='print_variable'/>
+<use f='codebrowser/sh-i18n--envsubst.c' l='410' u='c' c='subst_from_stdin'/>
+<use f='codebrowser/strbuf.c' l='400' u='c' c='strbuf_write'/>
+<use f='codebrowser/submodule.c' l='599' u='c' c='show_submodule_header'/>
+<use f='codebrowser/t/helper/test-line-buffer.c' l='26' u='c' c='handle_command'/>
+<use f='codebrowser/t/helper/test-sha1.c' l='52' u='c' c='cmd_main'/>
+<use f='codebrowser/trailer.c' l='900' u='c' c='process_input_file'/>
+<use f='codebrowser/trailer.c' l='998' u='c' c='process_trailers'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='78' u='c' c='fast_export_begin_note'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='116' u='c' c='fast_export_begin_commit'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='240' u='c' c='fast_export_buf_to_data'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='109' u='c' c='buffer_copy_bytes'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='65' u='c' c='write_strbuf'/>
+<use f='codebrowser/ws.c' l='190' u='c' c='ws_check_emit_1'/>
+<use f='codebrowser/ws.c' l='192' u='c' c='ws_check_emit_1'/>
+<use f='codebrowser/ws.c' l='197' u='c' c='ws_check_emit_1'/>
+<use f='codebrowser/ws.c' l='199' u='c' c='ws_check_emit_1'/>
+<use f='codebrowser/ws.c' l='203' u='c' c='ws_check_emit_1'/>
+<use f='codebrowser/ws.c' l='213' u='c' c='ws_check_emit_1'/>
+<use f='codebrowser/ws.c' l='228' u='c' c='ws_check_emit_1'/>
+<use f='codebrowser/ws.c' l='236' u='c' c='ws_check_emit_1'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/git-compat-util.h' l='242'/>
+<use f='codebrowser/builtin/diff-files.c' l='31' u='c'/>
+<use f='codebrowser/builtin/diff-index.c' l='28' u='c'/>
+<use f='codebrowser/builtin/diff-tree.c' l='120' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='322' u='c'/>
+<use f='codebrowser/parse-options.c' l='558' u='c'/>

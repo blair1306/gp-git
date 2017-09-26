@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='251' type='int register_commit_graft(struct commit_graft * , int )'/>
+<use f='codebrowser/builtin/blame.c' l='493' u='c' c='read_ancestry'/>
+<def f='codebrowser/commit.c' l='112' ll='135' type='int register_commit_graft(struct commit_graft * graft, int ignore_dups)'/>
+<use f='codebrowser/commit.c' l='180' u='c' c='read_graft_file'/>
+<use f='codebrowser/shallow.c' l='40' u='c' c='register_shallow'/>

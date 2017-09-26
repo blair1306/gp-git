@@ -1,0 +1,3 @@
+<dec f='include/curl/curl.h' l='624' type='1'/>
+<doc f='include/curl/curl.h' l='624'>/* added in 7.19.4, force to use CONNECT
+                               HTTP/1.0  */</doc>

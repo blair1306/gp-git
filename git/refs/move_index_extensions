@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='607' type='void move_index_extensions(struct index_state * dst, struct index_state * src)'/>
+<def f='codebrowser/read-cache.c' l='2646' ll='2650' type='void move_index_extensions(struct index_state * dst, struct index_state * src)'/>
+<use f='codebrowser/unpack-trees.c' l='1401' u='c' c='unpack_trees'/>

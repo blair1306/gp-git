@@ -1,0 +1,3 @@
+<dec f='codebrowser/delta.h' l='83'/>
+<doc f='codebrowser/delta.h' l='82'>/* the smallest possible delta size is 4 bytes */</doc>
+<use f='codebrowser/patch-delta.c' l='23' u='c'/>

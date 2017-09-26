@@ -1,0 +1,17 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='124' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/merge-file.c' l='35' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='35' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='37' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='37' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='39' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='39' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='35' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='35' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='37' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='37' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='39' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='39' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='51' u='w' c='cmd_merge_file'/>
+<use f='codebrowser/ll-merge.c' l='111' u='w' c='ll_xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='483' u='r' c='xdl_do_merge'/>

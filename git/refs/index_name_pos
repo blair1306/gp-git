@@ -1,0 +1,63 @@
+<dec f='codebrowser/cache.h' l='632' type='int index_name_pos(const struct index_state * , const char * name, int namelen)'/>
+<doc f='codebrowser/cache.h' l='615'>/*
+ * Searches for an entry defined by name and namelen in the given index.
+ * If the return value is positive (including 0) it is the position of an
+ * exact match. If the return value is negative, the negated value minus 1
+ * is the position where the entry would be inserted.
+ * Example: The current index consists of these files and its stages:
+ *
+ *   b#0, d#0, f#1, f#3
+ *
+ * index_name_pos(&amp;index, &quot;a&quot;, 1) -&gt; -1
+ * index_name_pos(&amp;index, &quot;b&quot;, 1) -&gt;  0
+ * index_name_pos(&amp;index, &quot;c&quot;, 1) -&gt; -2
+ * index_name_pos(&amp;index, &quot;d&quot;, 1) -&gt;  1
+ * index_name_pos(&amp;index, &quot;e&quot;, 1) -&gt; -3
+ * index_name_pos(&amp;index, &quot;f&quot;, 1) -&gt; -3
+ * index_name_pos(&amp;index, &quot;g&quot;, 1) -&gt; -5
+ */</doc>
+<use f='codebrowser/apply.c' l='3505' macro='1' u='c'/>
+<use f='codebrowser/apply.c' l='3674' macro='1' u='c'/>
+<use f='codebrowser/apply.c' l='3729' macro='1' u='c'/>
+<use f='codebrowser/apply.c' l='4006' macro='1' u='c'/>
+<use f='codebrowser/blame.c' l='88' macro='1' u='c'/>
+<use f='codebrowser/blame.c' l='248' macro='1' u='c'/>
+<use f='codebrowser/builtin/checkout-index.c' l='50' macro='1' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='92' macro='1' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='164' u='c' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='186' u='c' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='367' u='c' c='prune_index'/>
+<use f='codebrowser/builtin/merge-index.c' l='47' macro='1' u='c'/>
+<use f='codebrowser/builtin/mv.c' l='101' macro='1' u='c'/>
+<use f='codebrowser/builtin/mv.c' l='191' macro='1' u='c'/>
+<use f='codebrowser/builtin/mv.c' l='222' macro='1' u='c'/>
+<use f='codebrowser/builtin/mv.c' l='288' macro='1' u='c'/>
+<use f='codebrowser/builtin/rm.c' l='71' macro='1' u='c'/>
+<use f='codebrowser/builtin/rm.c' l='116' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='229' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='321' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='372' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='432' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='614' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='2754' macro='1' u='c'/>
+<use f='codebrowser/dir.c' l='613' u='c' c='read_skip_worktree_file_from_index'/>
+<use f='codebrowser/dir.c' l='803' u='c' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='1322' u='c' c='directory_exists_in_index'/>
+<use f='codebrowser/dir.c' l='1508' u='c' c='get_index_dtype'/>
+<use f='codebrowser/merge-recursive.c' l='683' macro='1' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='700' macro='1' u='c'/>
+<def f='codebrowser/read-cache.c' l='502' ll='505' type='int index_name_pos(const struct index_state * istate, const char * name, int namelen)'/>
+<use f='codebrowser/read-cache.c' l='549' u='c' c='remove_file_from_index'/>
+<use f='codebrowser/read-cache.c' l='567' u='c' c='index_name_pos_also_unmerged'/>
+<use f='codebrowser/read-cache.c' l='2569' u='c' c='index_name_is_other'/>
+<use f='codebrowser/read-cache.c' l='2591' u='c' c='read_blob_data_from_index'/>
+<use f='codebrowser/rerere.c' l='970' macro='1' u='c'/>
+<use f='codebrowser/sha1_name.c' l='1445' macro='1' u='c'/>
+<use f='codebrowser/sha1_name.c' l='1461' macro='1' u='c'/>
+<use f='codebrowser/sha1_name.c' l='1559' macro='1' u='c'/>
+<use f='codebrowser/submodule.c' l='36' u='c' c='is_gitmodules_unmerged'/>
+<use f='codebrowser/submodule.c' l='60' u='c' c='is_staging_gitmodules_ok'/>
+<use f='codebrowser/unpack-trees.c' l='505' u='c' c='locate_in_src_index'/>
+<use f='codebrowser/unpack-trees.c' l='551' u='c' c='add_same_unmerged'/>
+<use f='codebrowser/wt-status.c' l='485' macro='1' u='c'/>
+<use f='codebrowser/wt-status.c' l='2130' macro='1' u='c'/>

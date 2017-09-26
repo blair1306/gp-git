@@ -1,0 +1,10 @@
+<def f='codebrowser/cache.h' l='308' ll='317' type='unsigned int canon_mode(unsigned int mode)'/>
+<use f='codebrowser/blame.c' l='208' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/diff.c' l='88' u='c' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/diff.c' l='91' u='c' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/diff.c' l='105' u='c' c='builtin_diff_blobs'/>
+<use f='codebrowser/combine-diff.c' l='1014' u='c' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1033' u='c' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1041' u='c' c='show_patch_diff'/>
+<use f='codebrowser/diff.c' l='2701' u='c' c='fill_filespec'/>
+<use f='codebrowser/tree-walk.c' l='48' u='c' c='decode_tree_entry'/>

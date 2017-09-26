@@ -1,0 +1,3 @@
+<dec f='codebrowser/run-command.c' l='275' type='1'/>
+<use f='codebrowser/run-command.c' l='303' u='r' c='child_dup2'/>
+<use f='codebrowser/run-command.c' l='360' c='child_err_spew'/>

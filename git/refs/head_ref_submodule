@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='302' type='int head_ref_submodule(const char * submodule, each_ref_fn * fn, void * cb_data)'/>
+<def f='codebrowser/refs.c' l='1251' ll='1267' type='int head_ref_submodule(const char * submodule, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='1271' u='c' c='head_ref'/>
+<use f='codebrowser/revision.c' l='2110' u='r' c='handle_revision_pseudo_opt'/>

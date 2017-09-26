@@ -1,0 +1,7 @@
+<dec f='include/expat.h' l='922' type='enum XML_Error XML_GetErrorCode(XML_Parser parser)'/>
+<use f='codebrowser/http-push.c' l='913' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='1166' u='c' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1239' u='c' c='locking_available'/>
+<doc f='include/expat.h' l='918'>/* If XML_Parse or XML_ParseBuffer have returned XML_STATUS_ERROR, then
+   XML_GetErrorCode returns information about the error.
+*/</doc>

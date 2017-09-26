@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache-tree.h' l='21' type='int'/>
+<offset>224</offset>
+<use f='codebrowser/cache-tree.c' l='79' u='r' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='79' u='r' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='79' u='w' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='79' u='w' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='79' u='r' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='79' u='r' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='546' u='w' c='read_one'/>
+<use f='codebrowser/cache-tree.c' l='547' u='r' c='read_one'/>

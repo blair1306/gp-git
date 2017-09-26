@@ -1,0 +1,8 @@
+<dec f='codebrowser/log-tree.h' l='15' type='void show_log(struct rev_info * opt)'/>
+<use f='codebrowser/combine-diff.c' l='912' u='c' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='1190' u='c' c='show_raw_diff'/>
+<use f='codebrowser/combine-diff.c' l='1405' u='c' c='diff_tree_combined'/>
+<use f='codebrowser/line-log.c' l='1106' u='c' c='line_log_print'/>
+<def f='codebrowser/log-tree.c' l='535' ll='725' type='void show_log(struct rev_info * opt)'/>
+<use f='codebrowser/log-tree.c' l='741' u='c' c='log_tree_diff_flush'/>
+<use f='codebrowser/log-tree.c' l='875' u='c' c='log_tree_commit'/>

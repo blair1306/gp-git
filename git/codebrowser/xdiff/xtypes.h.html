@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>xtypes.h source code [codebrowser/xdiff/xtypes.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="s_chanode,s_chastore,s_xdfenv,s_xdfile,s_xrecord "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/xdiff/xtypes.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>xdiff</a>/<a href='xtypes.h.html'>xtypes.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *  LibXDiff by Davide Libenzi ( File Differential Library )</i></td></tr>
+<tr><th id="3">3</th><td><i> *  Copyright (C) 2003  Davide Libenzi</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> *  This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> *  modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> *  License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> *  version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> *  This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="13">13</th><td><i> *  Lesser General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> *  You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> *  License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="17">17</th><td><i> *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> *  Davide Libenzi &lt;davidel@xmailserver.org&gt;</i></td></tr>
+<tr><th id="20">20</th><td><i> *</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined(<span class="macro" data-ref="_M/XTYPES_H">XTYPES_H</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/XTYPES_H" data-ref="_M/XTYPES_H">XTYPES_H</dfn></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_chanode" title='s_chanode' data-ref="s_chanode"><a class="type" href="#s_chanode" title='s_chanode' data-ref="s_chanode">s_chanode</a></dfn> {</td></tr>
+<tr><th id="29">29</th><td>	<b>struct</b> <a class="type" href="#s_chanode" title='s_chanode' data-ref="s_chanode">s_chanode</a> *<dfn class="decl" id="s_chanode::next" title='s_chanode::next' data-ref="s_chanode::next">next</dfn>;</td></tr>
+<tr><th id="30">30</th><td>	<em>long</em> <dfn class="decl" id="s_chanode::icurr" title='s_chanode::icurr' data-ref="s_chanode::icurr">icurr</dfn>;</td></tr>
+<tr><th id="31">31</th><td>} <dfn class="typedef" id="chanode_t" title='chanode_t' data-type='struct s_chanode' data-ref="chanode_t">chanode_t</dfn>;</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_chastore" title='s_chastore' data-ref="s_chastore"><a class="type" href="#s_chastore" title='s_chastore' data-ref="s_chastore">s_chastore</a></dfn> {</td></tr>
+<tr><th id="34">34</th><td>	<a class="typedef" href="#chanode_t" title='chanode_t' data-type='struct s_chanode' data-ref="chanode_t">chanode_t</a> *<dfn class="decl" id="s_chastore::head" title='s_chastore::head' data-ref="s_chastore::head">head</dfn>, *<dfn class="decl" id="s_chastore::tail" title='s_chastore::tail' data-ref="s_chastore::tail">tail</dfn>;</td></tr>
+<tr><th id="35">35</th><td>	<em>long</em> <dfn class="decl" id="s_chastore::isize" title='s_chastore::isize' data-ref="s_chastore::isize">isize</dfn>, <dfn class="decl" id="s_chastore::nsize" title='s_chastore::nsize' data-ref="s_chastore::nsize">nsize</dfn>;</td></tr>
+<tr><th id="36">36</th><td>	<a class="typedef" href="#chanode_t" title='chanode_t' data-type='struct s_chanode' data-ref="chanode_t">chanode_t</a> *<dfn class="decl" id="s_chastore::ancur" title='s_chastore::ancur' data-ref="s_chastore::ancur">ancur</dfn>;</td></tr>
+<tr><th id="37">37</th><td>	<a class="typedef" href="#chanode_t" title='chanode_t' data-type='struct s_chanode' data-ref="chanode_t">chanode_t</a> *<dfn class="decl" id="s_chastore::sncur" title='s_chastore::sncur' data-ref="s_chastore::sncur">sncur</dfn>;</td></tr>
+<tr><th id="38">38</th><td>	<em>long</em> <dfn class="decl" id="s_chastore::scurr" title='s_chastore::scurr' data-ref="s_chastore::scurr">scurr</dfn>;</td></tr>
+<tr><th id="39">39</th><td>} <dfn class="typedef" id="chastore_t" title='chastore_t' data-type='struct s_chastore' data-ref="chastore_t">chastore_t</dfn>;</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_xrecord" title='s_xrecord' data-ref="s_xrecord"><a class="type" href="#s_xrecord" title='s_xrecord' data-ref="s_xrecord">s_xrecord</a></dfn> {</td></tr>
+<tr><th id="42">42</th><td>	<b>struct</b> <a class="type" href="#s_xrecord" title='s_xrecord' data-ref="s_xrecord">s_xrecord</a> *<dfn class="decl" id="s_xrecord::next" title='s_xrecord::next' data-ref="s_xrecord::next">next</dfn>;</td></tr>
+<tr><th id="43">43</th><td>	<em>char</em> <em>const</em> *<dfn class="decl" id="s_xrecord::ptr" title='s_xrecord::ptr' data-ref="s_xrecord::ptr">ptr</dfn>;</td></tr>
+<tr><th id="44">44</th><td>	<em>long</em> <dfn class="decl" id="s_xrecord::size" title='s_xrecord::size' data-ref="s_xrecord::size">size</dfn>;</td></tr>
+<tr><th id="45">45</th><td>	<em>unsigned</em> <em>long</em> <dfn class="decl" id="s_xrecord::ha" title='s_xrecord::ha' data-ref="s_xrecord::ha">ha</dfn>;</td></tr>
+<tr><th id="46">46</th><td>} <dfn class="typedef" id="xrecord_t" title='xrecord_t' data-type='struct s_xrecord' data-ref="xrecord_t">xrecord_t</dfn>;</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_xdfile" title='s_xdfile' data-ref="s_xdfile"><a class="type" href="#s_xdfile" title='s_xdfile' data-ref="s_xdfile">s_xdfile</a></dfn> {</td></tr>
+<tr><th id="49">49</th><td>	<a class="typedef" href="#chastore_t" title='chastore_t' data-type='struct s_chastore' data-ref="chastore_t">chastore_t</a> <dfn class="decl" id="s_xdfile::rcha" title='s_xdfile::rcha' data-ref="s_xdfile::rcha">rcha</dfn>;</td></tr>
+<tr><th id="50">50</th><td>	<em>long</em> <dfn class="decl" id="s_xdfile::nrec" title='s_xdfile::nrec' data-ref="s_xdfile::nrec">nrec</dfn>;</td></tr>
+<tr><th id="51">51</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="s_xdfile::hbits" title='s_xdfile::hbits' data-ref="s_xdfile::hbits">hbits</dfn>;</td></tr>
+<tr><th id="52">52</th><td>	<a class="typedef" href="#xrecord_t" title='xrecord_t' data-type='struct s_xrecord' data-ref="xrecord_t">xrecord_t</a> **<dfn class="decl" id="s_xdfile::rhash" title='s_xdfile::rhash' data-ref="s_xdfile::rhash">rhash</dfn>;</td></tr>
+<tr><th id="53">53</th><td>	<em>long</em> <dfn class="decl" id="s_xdfile::dstart" title='s_xdfile::dstart' data-ref="s_xdfile::dstart">dstart</dfn>, <dfn class="decl" id="s_xdfile::dend" title='s_xdfile::dend' data-ref="s_xdfile::dend">dend</dfn>;</td></tr>
+<tr><th id="54">54</th><td>	<a class="typedef" href="#xrecord_t" title='xrecord_t' data-type='struct s_xrecord' data-ref="xrecord_t">xrecord_t</a> **<dfn class="decl" id="s_xdfile::recs" title='s_xdfile::recs' data-ref="s_xdfile::recs">recs</dfn>;</td></tr>
+<tr><th id="55">55</th><td>	<em>char</em> *<dfn class="decl" id="s_xdfile::rchg" title='s_xdfile::rchg' data-ref="s_xdfile::rchg">rchg</dfn>;</td></tr>
+<tr><th id="56">56</th><td>	<em>long</em> *<dfn class="decl" id="s_xdfile::rindex" title='s_xdfile::rindex' data-ref="s_xdfile::rindex">rindex</dfn>;</td></tr>
+<tr><th id="57">57</th><td>	<em>long</em> <dfn class="decl" id="s_xdfile::nreff" title='s_xdfile::nreff' data-ref="s_xdfile::nreff">nreff</dfn>;</td></tr>
+<tr><th id="58">58</th><td>	<em>unsigned</em> <em>long</em> *<dfn class="decl" id="s_xdfile::ha" title='s_xdfile::ha' data-ref="s_xdfile::ha">ha</dfn>;</td></tr>
+<tr><th id="59">59</th><td>} <dfn class="typedef" id="xdfile_t" title='xdfile_t' data-type='struct s_xdfile' data-ref="xdfile_t">xdfile_t</dfn>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_xdfenv" title='s_xdfenv' data-ref="s_xdfenv"><a class="type" href="#s_xdfenv" title='s_xdfenv' data-ref="s_xdfenv">s_xdfenv</a></dfn> {</td></tr>
+<tr><th id="62">62</th><td>	<a class="typedef" href="#xdfile_t" title='xdfile_t' data-type='struct s_xdfile' data-ref="xdfile_t">xdfile_t</a> <dfn class="decl" id="s_xdfenv::xdf1" title='s_xdfenv::xdf1' data-ref="s_xdfenv::xdf1">xdf1</dfn>, <dfn class="decl" id="s_xdfenv::xdf2" title='s_xdfenv::xdf2' data-ref="s_xdfenv::xdf2">xdf2</dfn>;</td></tr>
+<tr><th id="63">63</th><td>} <dfn class="typedef" id="xdfenv_t" title='xdfenv_t' data-type='struct s_xdfenv' data-ref="xdfenv_t">xdfenv_t</dfn>;</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><u>#<span data-ppcond="23">endif</span> /* #if !defined(XTYPES_H) */</u></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../xdiff-interface.c.html'>codebrowser/xdiff-interface.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

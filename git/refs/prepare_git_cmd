@@ -1,0 +1,3 @@
+<dec f='codebrowser/exec_cmd.h' l='10' type='const char ** prepare_git_cmd(struct argv_array * out, const char ** argv)'/>
+<def f='codebrowser/exec_cmd.c' l='107' ll='112' type='const char ** prepare_git_cmd(struct argv_array * out, const char ** argv)'/>
+<use f='codebrowser/exec_cmd.c' l='117' u='c' c='execv_git_cmd'/>

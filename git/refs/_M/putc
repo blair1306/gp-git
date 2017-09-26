@@ -1,0 +1,30 @@
+<dec f='include/stdio.h' l='585'/>
+<doc f='include/stdio.h' l='583'>/* The C standard explicitly says this can be a macro,
+   so we always do the optimization for it.  */</doc>
+<use f='codebrowser/builtin/am.c' l='217' u='c'/>
+<use f='codebrowser/builtin/log.c' l='940' u='c'/>
+<use f='codebrowser/builtin/log.c' l='941' u='c'/>
+<use f='codebrowser/builtin/shortlog.c' l='342' u='c'/>
+<use f='codebrowser/compat/terminal.c' l='127' u='c'/>
+<use f='codebrowser/diff.c' l='737' u='c'/>
+<use f='codebrowser/diff.c' l='1311' u='c'/>
+<use f='codebrowser/diff.c' l='1528' u='c'/>
+<use f='codebrowser/diff.c' l='1763' u='c'/>
+<use f='codebrowser/diff.c' l='1884' u='c'/>
+<use f='codebrowser/diff.c' l='1888' u='c'/>
+<use f='codebrowser/graph.c' l='1274' u='c'/>
+<use f='codebrowser/graph.c' l='1332' u='c'/>
+<use f='codebrowser/graph.c' l='1396' u='c'/>
+<use f='codebrowser/graph.c' l='1404' u='c'/>
+<use f='codebrowser/line-log.c' l='854' u='c'/>
+<use f='codebrowser/line-log.c' l='857' u='c'/>
+<use f='codebrowser/log-tree.c' l='557' u='c'/>
+<use f='codebrowser/log-tree.c' l='560' u='c'/>
+<use f='codebrowser/log-tree.c' l='586' u='c'/>
+<use f='codebrowser/log-tree.c' l='625' u='c'/>
+<use f='codebrowser/log-tree.c' l='627' u='c'/>
+<use f='codebrowser/log-tree.c' l='720' u='c'/>
+<use f='codebrowser/log-tree.c' l='773' u='c'/>
+<use f='codebrowser/send-pack.c' l='46' u='c'/>
+<use f='codebrowser/send-pack.c' l='48' u='c'/>
+<use f='codebrowser/strbuf.c' l='745' u='c'/>

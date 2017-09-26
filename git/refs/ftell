@@ -1,0 +1,8 @@
+<dec f='include/stdio.h' l='754' type='long ftell(FILE * __stream)'/>
+<doc f='include/stdio.h' l='750'>/* Return the current position of STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/config.c' l='89' u='c' c='config_file_ftell'/>
+<use f='codebrowser/refs/files-backend.c' l='1874' u='c' c='files_for_each_reflog_ent_reverse'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='54' u='c' c='buffer_tmpfile_prepare_to_read'/>

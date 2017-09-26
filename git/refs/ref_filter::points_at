@@ -1,0 +1,19 @@
+<dec f='codebrowser/ref-filter.h' l='54' type='struct oid_array'/>
+<use f='codebrowser/builtin/branch.c' l='595' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='595' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='595' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='595' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='630' u='m' c='cmd_branch'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/for-each-ref.c' l='41' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='41' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='41' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='41' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='408' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='408' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='408' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='408' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='438' u='m' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='479' u='m' c='cmd_tag'/>
+<use f='codebrowser/ref-filter.c' l='1852' u='m' c='ref_filter_handler'/>
+<use f='codebrowser/ref-filter.c' l='1852' u='a' c='ref_filter_handler'/>

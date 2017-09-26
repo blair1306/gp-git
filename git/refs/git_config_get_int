@@ -1,0 +1,21 @@
+<dec f='codebrowser/config.h' l='205' type='int git_config_get_int(const char * key, int * dest)'/>
+<use f='codebrowser/builtin/gc.c' l='119' u='c' c='gc_config'/>
+<use f='codebrowser/builtin/gc.c' l='120' u='c' c='gc_config'/>
+<use f='codebrowser/builtin/gc.c' l='121' u='c' c='gc_config'/>
+<use f='codebrowser/builtin/gc.c' l='122' u='c' c='gc_config'/>
+<def f='codebrowser/config.c' l='2037' ll='2040' type='int git_config_get_int(const char * key, int * dest)'/>
+<use f='codebrowser/config.c' l='2135' u='c' c='git_config_get_max_percent_split_change'/>
+<use f='codebrowser/fast-import.c' l='3391' u='c' c='git_pack_config'/>
+<use f='codebrowser/fast-import.c' l='3400' u='c' c='git_pack_config'/>
+<use f='codebrowser/fast-import.c' l='3402' u='c' c='git_pack_config'/>
+<use f='codebrowser/fetch-pack.c' l='1011' u='c' c='fetch_pack_config'/>
+<use f='codebrowser/fetch-pack.c' l='1012' u='c' c='fetch_pack_config'/>
+<use f='codebrowser/imap-send.c' l='1351' u='c' c='git_imap_config'/>
+<use f='codebrowser/merge-recursive.c' l='2158' u='c' c='merge_recursive_config'/>
+<use f='codebrowser/merge-recursive.c' l='2159' u='c' c='merge_recursive_config'/>
+<use f='codebrowser/merge-recursive.c' l='2160' u='c' c='merge_recursive_config'/>
+<use f='codebrowser/read-cache.c' l='1439' u='c' c='get_index_format_default'/>
+<use f='codebrowser/refs/packed-backend.c' l='531' u='c' c='packed_refs_lock'/>
+<use f='codebrowser/rerere.c' l='1192' u='c' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1193' u='c' c='rerere_gc'/>
+<use f='codebrowser/t/helper/test-config.c' l='126' u='c' c='cmd_main'/>

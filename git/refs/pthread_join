@@ -1,0 +1,15 @@
+<dec f='include/pthread.h' l='250' type='int pthread_join(pthread_t __th, void ** __thread_return)'/>
+<doc f='include/pthread.h' l='244'>/* Make calling thread wait for termination of the thread TH.  The
+   exit status of the thread is stored in *THREAD_RETURN, if THREAD_RETURN
+   is not NULL.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='codebrowser/builtin/grep.c' l='251' u='c' c='wait_all'/>
+<use f='codebrowser/builtin/index-pack.c' l='1222' u='c' c='resolve_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2319' u='c' c='ll_find_deltas'/>
+<use f='codebrowser/name-hash.c' l='546' u='c' c='threaded_lazy_init_name_hash'/>
+<use f='codebrowser/name-hash.c' l='567' u='c' c='threaded_lazy_init_name_hash'/>
+<use f='codebrowser/preload-index.c' l='102' u='c' c='preload_index'/>
+<use f='codebrowser/run-command.c' l='1159' u='c' c='finish_async'/>
+<use f='codebrowser/transport-helper.c' l='1273' u='c' c='tloop_join'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/apply.h' l='114' type='int apply_parse_options(int argc, const char ** argv, struct apply_state * state, int * force_apply, int * options, const char *const * apply_usage)'/>
+<def f='codebrowser/apply.c' l='4910' ll='4985' type='int apply_parse_options(int argc, const char ** argv, struct apply_state * state, int * force_apply, int * options, const char *const * apply_usage)'/>
+<use f='codebrowser/builtin/am.c' l='1491' u='c' c='run_apply'/>
+<use f='codebrowser/builtin/apply.c' l='24' u='c' c='cmd_apply'/>

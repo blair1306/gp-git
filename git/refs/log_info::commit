@@ -1,0 +1,4 @@
+<dec f='codebrowser/log-tree.h' l='7' type='struct commit *'/>
+<offset>0</offset>
+<use f='codebrowser/log-tree.c' l='539' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='862' u='w' c='log_tree_commit'/>

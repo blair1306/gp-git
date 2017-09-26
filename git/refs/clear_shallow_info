@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='299' type='void clear_shallow_info(struct shallow_info * )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='2022' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/fetch-pack.c' l='1172' u='c' c='fetch_pack'/>
+<def f='codebrowser/shallow.c' l='410' ll='414' type='void clear_shallow_info(struct shallow_info * info)'/>

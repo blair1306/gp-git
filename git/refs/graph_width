@@ -1,0 +1,6 @@
+<dec f='codebrowser/graph.h' l='86' type='int graph_width(struct git_graph * graph)'/>
+<doc f='codebrowser/graph.h' l='83'>/*
+ * Return current width of the graph in on-screen characters.
+ */</doc>
+<def f='codebrowser/graph.c' l='734' ll='737' type='int graph_width(struct git_graph * graph)'/>
+<use f='codebrowser/log-tree.c' l='687' u='c' c='show_log'/>

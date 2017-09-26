@@ -1,0 +1,5 @@
+<dec f='codebrowser/progress.c' l='35' type='unsigned int'/>
+<use f='codebrowser/progress.c' l='106' u='r' c='display'/>
+<use f='codebrowser/progress.c' l='107' u='w' c='display'/>
+<use f='codebrowser/progress.c' l='221' u='w' c='start_progress_delay'/>
+<offset>128</offset>

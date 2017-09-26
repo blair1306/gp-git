@@ -1,0 +1,17 @@
+<dec f='include/x86_64-linux-gnu/bits/time.h' l='32' type='__time_t'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/bits/time.h' l='32'>/* Seconds.  */</doc>
+<use f='codebrowser/builtin/log.c' l='301' u='w' c='log_show_early'/>
+<use f='codebrowser/builtin/log.c' l='335' u='w' c='setup_early_output'/>
+<use f='codebrowser/date.c' l='115' u='r' c='show_date_relative'/>
+<use f='codebrowser/date.c' l='119' u='r' c='show_date_relative'/>
+<use f='codebrowser/date.c' l='1149' u='r' c='approxidate_str'/>
+<use f='codebrowser/http.c' l='1243' u='w' c='run_active_slot'/>
+<use f='codebrowser/http.c' l='1246' u='w' c='run_active_slot'/>
+<use f='codebrowser/http.c' l='1266' u='r' c='run_active_slot'/>
+<use f='codebrowser/http.c' l='1268' u='w' c='run_active_slot'/>
+<use f='codebrowser/progress.c' l='62' u='w' c='set_progress_signal'/>
+<use f='codebrowser/t/helper/test-date.c' l='81' u='w' c='cmd_main'/>
+<use f='codebrowser/trace.c' l='113' u='r' c='prepare_trace_line'/>
+<use f='codebrowser/trace.c' l='401' u='r' c='gettimeofday_nanos'/>
+<use f='codebrowser/wrapper.c' l='505' u='r' c='git_mkstemps_mode'/>

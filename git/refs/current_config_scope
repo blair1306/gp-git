@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='93' type='enum config_scope current_config_scope()'/>
+<def f='codebrowser/config.c' l='2934' ll='2940' type='enum config_scope current_config_scope()'/>
+<use f='codebrowser/remote.c' l='384' u='c' c='handle_config'/>
+<use f='codebrowser/t/helper/test-config.c' l='65' u='c' c='iterate_cb'/>
+<use f='codebrowser/upload-pack.c' l='1028' u='c' c='upload_pack_config'/>

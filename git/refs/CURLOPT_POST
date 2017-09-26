@@ -1,0 +1,3 @@
+<dec f='include/curl/curl.h' l='1015' macro='1' type='47'/>
+<use f='codebrowser/remote-curl.c' l='519' u='r' c='probe_rpc'/>
+<use f='codebrowser/remote-curl.c' l='596' u='r' c='post_rpc'/>

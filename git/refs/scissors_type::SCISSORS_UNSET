@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin/am.c' l='87' type='-1'/>
+<use f='codebrowser/builtin/am.c' l='156' u='r' c='am_state_init'/>
+<use f='codebrowser/builtin/am.c' l='459' u='r' c='am_load'/>
+<use f='codebrowser/builtin/am.c' l='1036' c='am_setup'/>
+<use f='codebrowser/builtin/am.c' l='1247' c='parse_mail'/>

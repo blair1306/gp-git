@@ -1,0 +1,5 @@
+<dec f='codebrowser/compat/obstack.h' l='197' type='void (*)(void)'/>
+<doc f='codebrowser/compat/obstack.h' l='193'>/* Error handler called when `obstack_chunk_alloc&apos; failed to allocate
+   more memory.  This can be set to a user defined function which
+   should either abort gracefully or use longjump - but shouldn&apos;t
+   return.  The default action is to print a message and abort.  */</doc>

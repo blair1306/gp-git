@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='100' type='void *'/>
+<offset>128</offset>
+<use f='codebrowser/config.c' l='288' u='r' c='git_config_include'/>
+<use f='codebrowser/config.c' l='1590' u='w' c='config_with_options'/>

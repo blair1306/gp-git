@@ -1,0 +1,21 @@
+<dec f='codebrowser/commit.h' l='309' type='int in_merge_bases(struct commit * , struct commit * )'/>
+<use f='codebrowser/builtin/branch.c' l='133' u='c' c='branch_merged'/>
+<use f='codebrowser/builtin/branch.c' l='143' u='c' c='branch_merged'/>
+<use f='codebrowser/builtin/fetch.c' l='692' u='c' c='update_local_ref'/>
+<use f='codebrowser/builtin/log.c' l='1318' u='c' c='get_base_commit'/>
+<use f='codebrowser/builtin/merge-base.c' l='104' u='c' c='handle_is_ancestor'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1117' u='c' c='update'/>
+<use f='codebrowser/commit.c' l='1017' u='c' c='is_descendant_of'/>
+<def f='codebrowser/commit.c' l='1049' ll='1052' type='int in_merge_bases(struct commit * commit, struct commit * reference)'/>
+<doc f='codebrowser/commit.c' l='1046'>/*
+ * Is &quot;commit&quot; an ancestor of (i.e. reachable from) the &quot;reference&quot;?
+ */</doc>
+<use f='codebrowser/fast-import.c' l='1770' u='c' c='update_branch'/>
+<use f='codebrowser/http-push.c' l='1568' u='c' c='verify_merge_base'/>
+<use f='codebrowser/pack-bitmap-write.c' l='286' u='c' c='bitmap_writer_build'/>
+<use f='codebrowser/submodule.c' l='1688' u='c' c='find_first_merges'/>
+<use f='codebrowser/submodule.c' l='1703' u='c' c='find_first_merges'/>
+<use f='codebrowser/submodule.c' l='1764' u='c' c='merge_submodule'/>
+<use f='codebrowser/submodule.c' l='1765' u='c' c='merge_submodule'/>
+<use f='codebrowser/submodule.c' l='1771' u='c' c='merge_submodule'/>
+<use f='codebrowser/submodule.c' l='1775' u='c' c='merge_submodule'/>

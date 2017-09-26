@@ -1,0 +1,4 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='133' type='int xdl_merge(mmfile_t * orig, mmfile_t * mf1, mmfile_t * mf2, const xmparam_t * xmp, mmbuffer_t * result)'/>
+<use f='codebrowser/builtin/merge-file.c' l='90' u='c' c='cmd_merge_file'/>
+<use f='codebrowser/ll-merge.c' l='120' u='c' c='ll_xdl_merge'/>
+<def f='codebrowser/xdiff/xmerge.c' l='633' ll='686' type='int xdl_merge(mmfile_t * orig, mmfile_t * mf1, mmfile_t * mf2, const xmparam_t * xmp, mmbuffer_t * result)'/>

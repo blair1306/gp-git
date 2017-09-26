@@ -1,0 +1,16 @@
+<dec f='codebrowser/revision.h' l='48' type='struct rev_cmdline_entry *'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/fast-export.c' l='803' u='r' c='get_tags_and_duplicates'/>
+<use f='codebrowser/builtin/log.c' l='967' u='r' c='find_branch_name'/>
+<use f='codebrowser/builtin/log.c' l='976' u='r' c='find_branch_name'/>
+<use f='codebrowser/builtin/log.c' l='977' u='r' c='find_branch_name'/>
+<use f='codebrowser/list-objects.c' l='168' u='r' c='mark_edges_uninteresting'/>
+<use f='codebrowser/revision.c' l='1108' u='w' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1108' u='r' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1108' u='r' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1109' u='r' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1110' u='r' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1111' u='r' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1112' u='r' c='add_rev_cmdline'/>
+<use f='codebrowser/sequencer.c' l='2342' u='r' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2344' u='r' c='sequencer_pick_revisions'/>

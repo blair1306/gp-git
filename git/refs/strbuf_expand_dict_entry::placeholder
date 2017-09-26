@@ -1,0 +1,33 @@
+<dec f='codebrowser/strbuf.h' l='300' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/ll-merge.c' l='184' u='w' c='ll_ext_merge'/>
+<use f='codebrowser/ll-merge.c' l='185' u='w' c='ll_ext_merge'/>
+<use f='codebrowser/ll-merge.c' l='186' u='w' c='ll_ext_merge'/>
+<use f='codebrowser/ll-merge.c' l='187' u='w' c='ll_ext_merge'/>
+<use f='codebrowser/ll-merge.c' l='188' u='w' c='ll_ext_merge'/>
+<use f='codebrowser/ll-merge.c' l='189' u='w' c='ll_ext_merge'/>
+<use f='codebrowser/strbuf.c' l='325' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='325' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>
+<use f='codebrowser/strbuf.c' l='326' u='r' c='strbuf_expand_dict_cb'/>

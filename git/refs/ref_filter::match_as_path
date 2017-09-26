@@ -1,0 +1,5 @@
+<dec f='codebrowser/ref-filter.h' l='66' type='unsigned int'/>
+<offset>513</offset>
+<use f='codebrowser/builtin/for-each-ref.c' l='77' u='w' c='cmd_for_each_ref'/>
+<use f='codebrowser/ref-filter.c' l='1677' u='r' c='filter_pattern_match'/>
+<use f='codebrowser/ref-filter.c' l='1712' u='r' c='for_each_fullref_in_pattern'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/send-pack.h' l='20' type='unsigned int'/>
+<offset>71</offset>
+<use f='codebrowser/send-pack.c' l='81' u='r' c='pack_objects'/>
+<use f='codebrowser/send-pack.c' l='408' u='w' c='send_pack'/>

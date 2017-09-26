@@ -1,0 +1,12 @@
+<dec f='codebrowser/remote.h' l='18' type='int'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/remote.c' l='594' u='r' c='migrate_file'/>
+<use f='codebrowser/builtin/remote.c' l='596' u='r' c='migrate_file'/>
+<use f='codebrowser/builtin/remote.c' l='625' u='r' c='mv'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1148' u='r' c='push_check'/>
+<use f='codebrowser/remote.c' l='267' u='w' c='read_remotes_file'/>
+<use f='codebrowser/remote.c' l='302' u='w' c='read_branches_file'/>
+<use f='codebrowser/remote.c' l='383' u='w' c='handle_config'/>
+<use f='codebrowser/remote.c' l='724' u='r' c='remote_is_configured'/>
+<use f='codebrowser/submodule.c' l='978' u='r' c='push_submodule'/>
+<use f='codebrowser/submodule.c' l='1049' u='r' c='push_unpushed_submodules'/>

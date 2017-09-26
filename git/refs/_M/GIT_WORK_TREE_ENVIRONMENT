@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='417'/>
+<use f='codebrowser/builtin/difftool.c' l='732' u='c'/>
+<use f='codebrowser/builtin/init-db.c' l='544' u='c'/>
+<use f='codebrowser/builtin/init-db.c' l='548' u='c'/>
+<use f='codebrowser/builtin/worktree.c' l='278' u='c'/>
+<use f='codebrowser/environment.c' l='113' u='c'/>
+<use f='codebrowser/git.c' l='126' u='c'/>
+<use f='codebrowser/git.c' l='132' u='c'/>
+<use f='codebrowser/setup.c' l='399' u='c'/>
+<use f='codebrowser/setup.c' l='400' u='c'/>
+<use f='codebrowser/setup.c' l='632' u='c'/>
+<use f='codebrowser/setup.c' l='734' u='c'/>
+<use f='codebrowser/setup.c' l='784' u='c'/>

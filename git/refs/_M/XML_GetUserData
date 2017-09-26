@@ -1,0 +1,2 @@
+<dec f='include/expat.h' l='674'/>
+<doc f='include/expat.h' l='673'>/* Returns the last value set by XML_SetUserData or NULL. */</doc>

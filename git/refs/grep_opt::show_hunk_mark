@@ -1,0 +1,6 @@
+<dec f='codebrowser/grep.h' l='168' type='int'/>
+<offset>6688</offset>
+<use f='codebrowser/grep.c' l='1339' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1343' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1660' u='w' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1667' u='w' c='grep_source_1'/>

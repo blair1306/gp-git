@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='172' type='int cmd_hash_object(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/hash-object.c' l='79' ll='159' type='int cmd_hash_object(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='408'/>
+<use f='codebrowser/git.c' l='408'/>
+<use f='codebrowser/git.c' l='408'/>
+<use f='codebrowser/git.c' l='408'/>

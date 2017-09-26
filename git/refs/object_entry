@@ -1,0 +1,27 @@
+<def f='codebrowser/builtin/index-pack.c' l='19' ll='25'/>
+<size>48</size>
+<def f='codebrowser/pack-objects.h' l='4' ll='43'/>
+<size>136</size>
+<mbr r='object_entry::idx' o='0' t='struct pack_idx_entry'/>
+<mbr r='object_entry::size' o='256' t='unsigned long'/>
+<mbr r='object_entry::in_pack' o='320' t='struct packed_git *'/>
+<mbr r='object_entry::in_pack_offset' o='384' t='off_t'/>
+<mbr r='object_entry::delta' o='448' t='struct object_entry *'/>
+<mbr r='object_entry::delta_child' o='512' t='struct object_entry *'/>
+<mbr r='object_entry::delta_sibling' o='576' t='struct object_entry *'/>
+<mbr r='object_entry::delta_data' o='640' t='void *'/>
+<mbr r='object_entry::delta_size' o='704' t='unsigned long'/>
+<mbr r='object_entry::z_delta_size' o='768' t='unsigned long'/>
+<mbr r='object_entry::type' o='832' t='enum object_type'/>
+<mbr r='object_entry::in_pack_type' o='864' t='enum object_type'/>
+<mbr r='object_entry::hash' o='896' t='uint32_t'/>
+<mbr r='object_entry::in_pack_pos' o='928' t='unsigned int'/>
+<mbr r='object_entry::in_pack_header_size' o='960' t='unsigned char'/>
+<mbr r='object_entry::preferred_base' o='968' t='unsigned int'/>
+<mbr r='object_entry::no_try_delta' o='969' t='unsigned int'/>
+<mbr r='object_entry::tagged' o='970' t='unsigned int'/>
+<mbr r='object_entry::filled' o='971' t='unsigned int'/>
+<mbr r='object_entry::dfs_state' o='992' t='enum (anonymous enum at /home/jon/workspace/git/pack-objects.h:37:2)'/>
+<mbr r='object_entry::depth' o='1024' t='int'/>
+<def f='codebrowser/fast-import.c' l='181' ll='187'/>
+<size>48</size>

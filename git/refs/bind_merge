@@ -1,0 +1,9 @@
+<dec f='codebrowser/unpack-trees.h' l='85' type='int bind_merge(const struct cache_entry *const * src, struct unpack_trees_options * o)'/>
+<use f='codebrowser/builtin/read-tree.c' l='221' u='r' c='cmd_read_tree'/>
+<def f='codebrowser/unpack-trees.c' l='2104' ll='2122' type='int bind_merge(const struct cache_entry *const * src, struct unpack_trees_options * o)'/>
+<doc f='codebrowser/unpack-trees.c' l='2098'>/*
+ * Bind merge.
+ *
+ * Keep the index entries at stage0, collapse stage1 but make sure
+ * stage0 does not have anything there.
+ */</doc>

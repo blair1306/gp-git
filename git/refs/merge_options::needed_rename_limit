@@ -1,0 +1,5 @@
+<dec f='codebrowser/merge-recursive.h' l='24' type='int'/>
+<offset>608</offset>
+<use f='codebrowser/merge-recursive.c' l='534' u='r' c='get_renames'/>
+<use f='codebrowser/merge-recursive.c' l='535' u='w' c='get_renames'/>
+<use f='codebrowser/merge-recursive.c' l='2099' u='r' c='merge_recursive'/>

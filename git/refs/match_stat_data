@@ -1,0 +1,18 @@
+<dec f='codebrowser/cache.h' l='702' type='int match_stat_data(const struct stat_data * sd, struct stat * st)'/>
+<doc f='codebrowser/cache.h' l='696'>/*
+ * Return 0 if st is consistent with a file not having been changed
+ * since sd was filled.  If there are differences, return a
+ * combination of MTIME_CHANGED, CTIME_CHANGED, OWNER_CHANGED,
+ * INODE_CHANGED, and DATA_CHANGED.
+ */</doc>
+<use f='codebrowser/builtin/update-index.c' l='147' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='160' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='174' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='185' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='196' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='209' u='c' c='test_if_untracked_cache_is_supported'/>
+<def f='codebrowser/read-cache.c' l='99' ll='139' type='int match_stat_data(const struct stat_data * sd, struct stat * st)'/>
+<use f='codebrowser/read-cache.c' l='262' u='c' c='ce_match_stat_basic'/>
+<use f='codebrowser/read-cache.c' l='300' u='c' c='match_stat_data_racy'/>
+<use f='codebrowser/read-cache.c' l='2630' u='c' c='stat_validity_check'/>
+<use f='codebrowser/sequencer.c' l='2075' u='c' c='pick_commits'/>

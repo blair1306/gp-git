@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='296'/>
+<use f='codebrowser/builtin/diff-files.c' l='16' u='c'/>
+<use f='codebrowser/builtin/diff-index.c' l='12' u='c'/>
+<use f='codebrowser/builtin/diff-tree.c' l='88' u='c'/>

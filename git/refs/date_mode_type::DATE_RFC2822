@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1414' type='5'/>
+<use f='codebrowser/builtin/am.c' l='919' macro='1' u='r'/>
+<use f='codebrowser/builtin/blame.c' l='767' c='cmd_blame'/>
+<use f='codebrowser/builtin/log.c' l='1027' u='r' c='make_cover_letter'/>
+<use f='codebrowser/date.c' l='252' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='817' u='r' c='parse_date_type'/>
+<use f='codebrowser/http-backend.c' l='96' macro='1' u='r'/>
+<use f='codebrowser/pretty.c' l='502' macro='1' u='r'/>
+<use f='codebrowser/pretty.c' l='719' macro='1' u='r'/>
+<use f='codebrowser/refs.c' l='779' macro='1' u='r'/>
+<use f='codebrowser/refs.c' l='786' macro='1' u='r'/>
+<use f='codebrowser/sha1_name.c' l='715' macro='1' u='r'/>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>merge-ours.c source code [codebrowser/builtin/merge-ours.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/builtin/merge-ours.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>builtin</a>/<a href='merge-ours.c.html'>merge-ours.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Implementation of git-merge-ours.sh as builtin</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (c) 2007 Thomas Harning Jr</i></td></tr>
+<tr><th id="5">5</th><td><i> * Original:</i></td></tr>
+<tr><th id="6">6</th><td><i> * Original Copyright (c) 2005 Junio C Hamano</i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> * Pretend we resolved the heads, but declare our tree trumps everybody else.</i></td></tr>
+<tr><th id="9">9</th><td><i> */</i></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="../git-compat-util.h.html">"git-compat-util.h"</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="../builtin.h.html">"builtin.h"</a></u></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><em>static</em> <em>const</em> <em>char</em> <dfn class="tu decl def" id="builtin_merge_ours_usage" title='builtin_merge_ours_usage' data-type='const char [45]' data-ref="builtin_merge_ours_usage">builtin_merge_ours_usage</dfn>[] =</td></tr>
+<tr><th id="14">14</th><td>	<q>"git merge-ours &lt;base&gt;... -- HEAD &lt;remote&gt;..."</q>;</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><em>static</em> <em>const</em> <em>char</em> *<dfn class="tu decl def" id="diff_index_args" title='diff_index_args' data-type='const char *[6]' data-ref="diff_index_args">diff_index_args</dfn>[] = {</td></tr>
+<tr><th id="17">17</th><td>	<q>"diff-index"</q>, <q>"--quiet"</q>, <q>"--cached"</q>, <q>"HEAD"</q>, <q>"--"</q>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span></td></tr>
+<tr><th id="18">18</th><td>};</td></tr>
+<tr><th id="19">19</th><td><u>#define <dfn class="macro" id="_M/NARGS" data-ref="_M/NARGS">NARGS</dfn> (ARRAY_SIZE(<a class="tu ref" href="#diff_index_args" title='diff_index_args' data-use='r' data-ref="diff_index_args"><a class="tu ref" href="#diff_index_args" title='diff_index_args' data-use='a' data-ref="diff_index_args">diff_index_args</a></a>) - 1)</u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><em>int</em> <dfn class="decl def" id="cmd_merge_ours" title='cmd_merge_ours' data-ref="cmd_merge_ours">cmd_merge_ours</dfn>(<em>int</em> <dfn class="local col1 decl" id="1argc" title='argc' data-type='int' data-ref="1argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col2 decl" id="2argv" title='argv' data-type='const char **' data-ref="2argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3prefix" title='prefix' data-type='const char *' data-ref="3prefix">prefix</dfn>)</td></tr>
+<tr><th id="22">22</th><td>{</td></tr>
+<tr><th id="23">23</th><td>	<b>if</b> (<a class="local col1 ref" href="#1argc" title='argc' data-ref="1argc">argc</a> == <var>2</var> &amp;&amp; !<a class="macro" href="../../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (argv[1]) &amp;&amp; __builtin_constant_p (&quot;-h&quot;) &amp;&amp; (__s1_len = __builtin_strlen (argv[1]), __s2_len = __builtin_strlen (&quot;-h&quot;), (!((size_t)(const void *)((argv[1]) + 1) - (size_t)(const void *)(argv[1]) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;-h&quot;) + 1) - (size_t)(const void *)(&quot;-h&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (argv[1], &quot;-h&quot;) : (__builtin_constant_p (argv[1]) &amp;&amp; ((size_t)(const void *)((argv[1]) + 1) - (size_t)(const void *)(argv[1]) == 1) &amp;&amp; (__s1_len = __builtin_strlen (argv[1]), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;-h&quot;) &amp;&amp; ((size_t)(const void *)((&quot;-h&quot;) + 1) - (size_t)(const void *)(&quot;-h&quot;) == 1) ? __builtin_strcmp (argv[1], &quot;-h&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;-h&quot;); int __result = (((const unsigned char *) (const char *) (argv[1]))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (argv[1]))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (argv[1]))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (argv[1]))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;-h&quot;) &amp;&amp; ((size_t)(const void *)((&quot;-h&quot;) + 1) - (size_t)(const void *)(&quot;-h&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;-h&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (argv[1]) &amp;&amp; ((size_t)(const void *)((argv[1]) + 1) - (size_t)(const void *)(argv[1]) == 1) ? __builtin_strcmp (argv[1], &quot;-h&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (argv[1]); int __result = (((const unsigned char *) (const char *) (&quot;-h&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;-h&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;-h&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;-h&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (argv[1], &quot;-h&quot;)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col2 ref" href="#2argv" title='argv' data-ref="2argv">argv</a>[<var>1</var>], <q>"-h"</q>))</td></tr>
+<tr><th id="24">24</th><td>		<a class="ref" href="../git-compat-util.h.html#usage" title='usage' data-ref="usage">usage</a>(<a class="tu ref" href="#builtin_merge_ours_usage" title='builtin_merge_ours_usage' data-use='r' data-ref="builtin_merge_ours_usage">builtin_merge_ours_usage</a>);</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>	<i>/*</i></td></tr>
+<tr><th id="27">27</th><td><i>	 * We need to exit with 2 if the index does not match our HEAD tree,</i></td></tr>
+<tr><th id="28">28</th><td><i>	 * because the current index is what we will be committing as the</i></td></tr>
+<tr><th id="29">29</th><td><i>	 * merge result.</i></td></tr>
+<tr><th id="30">30</th><td><i>	 */</i></td></tr>
+<tr><th id="31">31</th><td>	<b>if</b> (<a class="ref" href="../builtin.h.html#cmd_diff_index" title='cmd_diff_index' data-ref="cmd_diff_index">cmd_diff_index</a>(<a class="macro" href="#19" title="((sizeof(diff_index_args) / sizeof((diff_index_args)[0]) + (sizeof(char [1 - 2*!(!__builtin_types_compatible_p(__typeof__(diff_index_args), __typeof__(&amp;(diff_index_args)[0])))]) - 1)) - 1)" data-ref="_M/NARGS">NARGS</a>, <a class="tu ref" href="#diff_index_args" title='diff_index_args' data-use='r' data-ref="diff_index_args">diff_index_args</a>, <a class="local col3 ref" href="#3prefix" title='prefix' data-ref="3prefix">prefix</a>))</td></tr>
+<tr><th id="32">32</th><td>		<a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>2</var>);</td></tr>
+<tr><th id="33">33</th><td>	<a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>0</var>);</td></tr>
+<tr><th id="34">34</th><td>}</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/mailinfo.h' l='9' type='FILE *'/>
+<offset>128</offset>
+<use f='codebrowser/mailinfo.c' l='815' u='r' c='handle_patch'/>
+<use f='codebrowser/mailinfo.c' l='1093' u='w' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1094' u='r' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1119' u='r' c='mailinfo'/>

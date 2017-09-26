@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1416' type='7'/>
+<use f='codebrowser/builtin/blame.c' l='776' c='cmd_blame'/>
+<use f='codebrowser/date.c' l='208' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='823' u='r' c='parse_date_type'/>

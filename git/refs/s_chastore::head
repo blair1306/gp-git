@@ -1,0 +1,7 @@
+<dec f='codebrowser/xdiff/xtypes.h' l='34' type='chanode_t *'/>
+<offset>0</offset>
+<use f='codebrowser/xdiff/xhistogram.c' l='293' u='w' c='histogram_diff'/>
+<use f='codebrowser/xdiff/xutils.c' l='80' u='w' c='xdl_cha_init'/>
+<use f='codebrowser/xdiff/xutils.c' l='93' u='r' c='xdl_cha_free'/>
+<use f='codebrowser/xdiff/xutils.c' l='113' u='r' c='xdl_cha_alloc'/>
+<use f='codebrowser/xdiff/xutils.c' l='114' u='w' c='xdl_cha_alloc'/>

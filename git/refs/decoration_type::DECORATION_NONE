@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='36' type='0'/>
+<use f='codebrowser/bisect.c' l='226' u='r' c='best_bisection_sorted'/>
+<use f='codebrowser/log-tree.c' l='96' u='r' c='add_ref_decoration'/>
+<use f='codebrowser/log-tree.c' l='242' u='r' c='format_decorations_extended'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='345' type='int check_dir_entry_contains(const struct dir_entry * out, const struct dir_entry * in)'/>
+<use f='codebrowser/builtin/clean.c' l='870' u='c' c='correct_untracked_entries'/>
+<use f='codebrowser/builtin/clean.c' l='881' u='c' c='correct_untracked_entries'/>
+<def f='codebrowser/dir.c' l='1891' ll='1896' type='int check_dir_entry_contains(const struct dir_entry * out, const struct dir_entry * in)'/>
+<use f='codebrowser/dir.c' l='2127' u='c' c='read_directory'/>
+<doc f='codebrowser/dir.c' l='1890'>/* check if *out lexically strictly contains *in */</doc>

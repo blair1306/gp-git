@@ -1,0 +1,7 @@
+<def f='codebrowser/git-compat-util.h' l='342' ll='345' type='int git_has_dos_drive_prefix(const char * path)'/>
+<use f='codebrowser/cache.h' l='1123' macro='1' u='c'/>
+<use f='codebrowser/connect.c' l='267' macro='1' u='c'/>
+<use f='codebrowser/connect.c' l='655' macro='1' u='c'/>
+<use f='codebrowser/path.c' l='925' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='835' macro='1' u='c'/>
+<use f='codebrowser/setup.c' l='892' macro='1' u='c'/>

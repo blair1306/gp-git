@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='123' type='const char *'/>
+<offset>320</offset>
+<use f='codebrowser/diff.c' l='4043' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='4044' u='r' c='diff_opt_parse'/>
+<use f='codebrowser/graph.c' l='72' u='r' c='graph_show_line_prefix'/>
+<use f='codebrowser/graph.c' l='75' u='r' c='graph_show_line_prefix'/>
+<use f='codebrowser/graph.c' l='239' u='r' c='diff_output_prefix_callback'/>
+<use f='codebrowser/graph.c' l='240' u='r' c='diff_output_prefix_callback'/>

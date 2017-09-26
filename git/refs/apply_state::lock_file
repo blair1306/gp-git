@@ -1,0 +1,9 @@
+<dec f='codebrowser/apply.h' l='40' type='struct lock_file *'/>
+<use f='codebrowser/apply.c' l='83' u='w' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='149' u='r' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='4683' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4687' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4883' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4896' u='r' c='apply_all_patches'/>
+<offset>64</offset>
+<doc f='codebrowser/apply.h' l='39'>/* These are lock_file related */</doc>

@@ -1,0 +1,11 @@
+verify_opt_compatible|verify_opt_compatible
+verify_bundle|verify_bundle
+verify_signed_buffer|verify_signed_buffer
+verify_pack|verify_pack
+verify_pack_index|verify_pack_index
+verify_path|verify_path
+verify_ref_format|verify_ref_format
+verify_filename|verify_filename
+verify_non_filename|verify_non_filename
+verify_repository_format|verify_repository_format
+versioncmp|versioncmp

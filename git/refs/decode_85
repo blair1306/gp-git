@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1915' type='int decode_85(char * dst, const char * line, int linelen)'/>
+<doc f='codebrowser/cache.h' l='1914'>/* base85 */</doc>
+<use f='codebrowser/apply.c' l='1971' u='c' c='parse_binary_hunk'/>
+<def f='codebrowser/base85.c' l='40' ll='77' type='int decode_85(char * dst, const char * buffer, int len)'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='809' type='-1'/>
+<use f='codebrowser/builtin/checkout.c' l='252' u='r' c='checkout_paths'/>
+<use f='codebrowser/builtin/checkout.c' l='1105' u='r' c='checkout_branch'/>
+<use f='codebrowser/builtin/checkout.c' l='1108' u='r' c='checkout_branch'/>
+<use f='codebrowser/builtin/checkout.c' l='1110' u='r' c='checkout_branch'/>
+<use f='codebrowser/builtin/checkout.c' l='1188' u='r' c='cmd_checkout'/>
+<use f='codebrowser/builtin/checkout.c' l='1220' u='r' c='cmd_checkout'/>
+<use f='codebrowser/builtin/checkout.c' l='1250' u='r' c='cmd_checkout'/>

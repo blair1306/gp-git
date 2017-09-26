@@ -1,0 +1,7 @@
+<def f='codebrowser/reflog-walk.c' l='107' ll='112'/>
+<size>64</size>
+<mbr r='reflog_walk_info::logs' o='0' t='struct commit_reflog **'/>
+<mbr r='reflog_walk_info::nr' o='64' t='size_t'/>
+<mbr r='reflog_walk_info::alloc' o='128' t='size_t'/>
+<mbr r='reflog_walk_info::complete_reflogs' o='192' t='struct string_list'/>
+<mbr r='reflog_walk_info::last_commit_reflog' o='448' t='struct commit_reflog *'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit.h' l='52' type='struct commit * lookup_commit_reference_by_name(const char * name)'/>
+<use f='codebrowser/builtin/commit.c' l='691' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='724' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1094' u='c' c='read_commit_message'/>
+<use f='codebrowser/builtin/log.c' l='1267' u='c' c='get_base_commit'/>
+<use f='codebrowser/builtin/worktree.c' l='213' u='c' c='add_worktree'/>
+<def f='codebrowser/commit.c' l='57' ll='68' type='struct commit * lookup_commit_reference_by_name(const char * name)'/>

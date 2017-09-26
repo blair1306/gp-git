@@ -1,0 +1,4 @@
+<dec f='codebrowser/ref-filter.h' l='65' type='unsigned int'/>
+<offset>512</offset>
+<use f='codebrowser/builtin/tag.c' l='59' u='w' c='list_tags'/>
+<use f='codebrowser/ref-filter.c' l='1606' u='r' c='commit_contains'/>

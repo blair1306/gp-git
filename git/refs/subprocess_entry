@@ -1,0 +1,6 @@
+<def f='codebrowser/sub-process.h' l='26' ll='30'/>
+<size>120</size>
+<doc f='codebrowser/sub-process.h' l='25'>/* Members should not be accessed directly. */</doc>
+<mbr r='subprocess_entry::ent' o='0' t='struct hashmap_entry'/>
+<mbr r='subprocess_entry::cmd' o='128' t='const char *'/>
+<mbr r='subprocess_entry::process' o='192' t='struct child_process'/>

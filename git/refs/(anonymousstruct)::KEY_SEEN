@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.c' l='2185' type='3'/>
+<use f='codebrowser/config.c' l='2208' c='store_aux'/>
+<use f='codebrowser/config.c' l='2254' u='r' c='store_aux'/>
+<use f='codebrowser/config.c' l='2576' u='r' c='git_config_set_multivar_in_file_gently'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='267' type='int unregister_shallow(const struct object_id * oid)'/>
+<def f='codebrowser/commit.c' l='220' ll='230' type='int unregister_shallow(const struct object_id * oid)'/>
+<use f='codebrowser/fetch-pack.c' l='433' u='c' c='find_common'/>
+<use f='codebrowser/upload-pack.c' l='671' u='c' c='send_unshallow'/>

@@ -1,0 +1,16 @@
+<def f='codebrowser/send-pack.h' l='11' ll='27'/>
+<size>24</size>
+<mbr r='send_pack_args::url' o='0' t='const char *'/>
+<mbr r='send_pack_args::verbose' o='64' t='unsigned int'/>
+<mbr r='send_pack_args::quiet' o='65' t='unsigned int'/>
+<mbr r='send_pack_args::porcelain' o='66' t='unsigned int'/>
+<mbr r='send_pack_args::progress' o='67' t='unsigned int'/>
+<mbr r='send_pack_args::send_mirror' o='68' t='unsigned int'/>
+<mbr r='send_pack_args::force_update' o='69' t='unsigned int'/>
+<mbr r='send_pack_args::use_thin_pack' o='70' t='unsigned int'/>
+<mbr r='send_pack_args::use_ofs_delta' o='71' t='unsigned int'/>
+<mbr r='send_pack_args::dry_run' o='72' t='unsigned int'/>
+<mbr r='send_pack_args::push_cert' o='73' t='unsigned int'/>
+<mbr r='send_pack_args::stateless_rpc' o='75' t='unsigned int'/>
+<mbr r='send_pack_args::atomic' o='76' t='unsigned int'/>
+<mbr r='send_pack_args::push_options' o='128' t='const struct string_list *'/>

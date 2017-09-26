@@ -1,0 +1,8 @@
+<dec f='codebrowser/pkt-line.h' l='26' type='int packet_flush_gently(int fd)'/>
+<use f='codebrowser/convert.c' l='621' u='c' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='691' u='c' c='async_query_available_blobs'/>
+<def f='codebrowser/pkt-line.c' l='94' ll='100' type='int packet_flush_gently(int fd)'/>
+<use f='codebrowser/pkt-line.c' l='215' u='c' c='write_packetized_from_fd'/>
+<use f='codebrowser/pkt-line.c' l='236' u='c' c='write_packetized_from_buf'/>
+<use f='codebrowser/sub-process.c' l='132' u='c' c='handshake_version'/>
+<use f='codebrowser/sub-process.c' l='171' u='c' c='handshake_capabilities'/>

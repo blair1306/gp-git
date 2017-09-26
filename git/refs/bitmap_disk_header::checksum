@@ -1,0 +1,3 @@
+<dec f='codebrowser/pack-bitmap.h' l='13' type='unsigned char [20]'/>
+<offset>96</offset>
+<use f='codebrowser/pack-bitmap-write.c' l='528' u='r' c='bitmap_writer_finish'/>

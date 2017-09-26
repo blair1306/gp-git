@@ -1,0 +1,6 @@
+<dec f='codebrowser/submodule.h' l='61' type='void die_in_unpopulated_submodule(const struct index_state * istate, const char * prefix)'/>
+<use f='codebrowser/builtin/add.c' l='428' u='c' c='cmd_add'/>
+<def f='codebrowser/submodule.c' l='341' ll='366' type='void die_in_unpopulated_submodule(const struct index_state * istate, const char * prefix)'/>
+<doc f='codebrowser/submodule.c' l='338'>/*
+ * Dies if the provided &apos;prefix&apos; corresponds to an unpopulated submodule
+ */</doc>

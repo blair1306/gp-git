@@ -1,0 +1,15 @@
+<def f='codebrowser/attr.c' l='282' ll='290'/>
+<size>32</size>
+<doc f='codebrowser/attr.c' l='269'>/*
+ * One rule, as from a .gitattributes file.
+ *
+ * If is_macro is true, then u.attr is a pointer to the git_attr being
+ * defined.
+ *
+ * If is_macro is false, then u.pat is the filename pattern to which the
+ * rule applies.
+ *
+ * In either case, num_attr is the number of attributes affected by
+ * this rule, and state is an array listing them.  The attributes are
+ * listed as they appear in the file (macros unexpanded).
+ */</doc>

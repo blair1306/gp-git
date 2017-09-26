@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1501'/>
+<use f='codebrowser/apply.c' l='3334' u='c'/>
+<use f='codebrowser/builtin/checkout-index.c' l='20' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='245' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='355' u='c'/>

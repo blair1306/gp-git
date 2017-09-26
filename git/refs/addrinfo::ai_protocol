@@ -1,0 +1,9 @@
+<dec f='include/netdb.h' l='572' type='int'/>
+<offset>96</offset>
+<doc f='include/netdb.h' l='572'>/* Protocol for socket.  */</doc>
+<use f='codebrowser/connect.c' l='386' u='w' c='git_tcp_connect_sock'/>
+<use f='codebrowser/connect.c' l='400' u='r' c='git_tcp_connect_sock'/>
+<use f='codebrowser/daemon.c' l='939' u='w' c='setup_named_sock'/>
+<use f='codebrowser/daemon.c' l='951' u='r' c='setup_named_sock'/>
+<use f='codebrowser/imap-send.c' l='971' u='w' c='imap_open_store'/>
+<use f='codebrowser/imap-send.c' l='985' u='r' c='imap_open_store'/>

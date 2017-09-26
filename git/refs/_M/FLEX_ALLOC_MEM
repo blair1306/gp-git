@@ -1,0 +1,57 @@
+<dec f='codebrowser/git-compat-util.h' l='880'/>
+<doc f='codebrowser/git-compat-util.h' l='839'>/*
+ * These functions help you allocate structs with flex arrays, and copy
+ * the data directly into the array. For example, if you had:
+ *
+ *   struct foo {
+ *     int bar;
+ *     char name[FLEX_ARRAY];
+ *   };
+ *
+ * you can do:
+ *
+ *   struct foo *f;
+ *   FLEX_ALLOC_MEM(f, name, src, len);
+ *
+ * to allocate a &quot;foo&quot; with the contents of &quot;src&quot; in the &quot;name&quot; field.
+ * The resulting struct is automatically zero&apos;d, and the flex-array field
+ * is NUL-terminated (whether the incoming src buffer was or not).
+ *
+ * The FLEXPTR_* variants operate on structs that don&apos;t use flex-arrays,
+ * but do want to store a pointer to some extra data in the same allocated
+ * block. For example, if you have:
+ *
+ *   struct foo {
+ *     char *name;
+ *     int bar;
+ *   };
+ *
+ * you can do:
+ *
+ *   struct foo *f;
+ *   FLEXPTR_ALLOC_STR(f, name, src);
+ *
+ * and &quot;name&quot; will point to a block of memory after the struct, which will be
+ * freed along with the struct (but the pointer can be repointed anywhere).
+ *
+ * The *_STR variants accept a string parameter rather than a ptr/len
+ * combination.
+ *
+ * Note that these macros will evaluate the first parameter multiple
+ * times, and it must be assignable as an lvalue.
+ */</doc>
+<use f='codebrowser/attr.c' l='239' u='c'/>
+<use f='codebrowser/builtin/help.c' l='195' u='c'/>
+<use f='codebrowser/builtin/mktree.c' l='26' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1547' u='c'/>
+<use f='codebrowser/builtin/reflog.c' l='413' u='c'/>
+<use f='codebrowser/cache-tree.c' l='82' u='c'/>
+<use f='codebrowser/combine-diff.c' l='323' u='c'/>
+<use f='codebrowser/dir.c' l='705' u='c'/>
+<use f='codebrowser/dir.c' l='1254' u='c'/>
+<use f='codebrowser/dir.c' l='2486' u='c'/>
+<use f='codebrowser/hashmap.c' l='293' u='c'/>
+<use f='codebrowser/help.c' l='18' u='c'/>
+<use f='codebrowser/name-hash.c' l='70' u='c'/>
+<use f='codebrowser/name-hash.c' l='298' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='95' u='c'/>

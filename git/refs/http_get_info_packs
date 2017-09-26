@@ -1,0 +1,5 @@
+<dec f='codebrowser/http.h' l='195' type='int http_get_info_packs(const char * base_url, struct packed_git ** packs_head)'/>
+<doc f='codebrowser/http.h' l='194'>/* Helpers for fetching packs */</doc>
+<use f='codebrowser/http-push.c' l='705' u='c' c='fetch_indices'/>
+<use f='codebrowser/http-walker.c' l='405' u='c' c='fetch_indices'/>
+<def f='codebrowser/http.c' l='1947' ll='1988' type='int http_get_info_packs(const char * base_url, struct packed_git ** packs_head)'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1986' type='int try_merge_command(const char * strategy, size_t xopts_nr, const char ** xopts, struct commit_list * common, const char * head_arg, struct commit_list * remotes)'/>
+<use f='codebrowser/builtin/merge.c' l='692' u='c' c='try_merge_strategy'/>
+<def f='codebrowser/merge.c' l='18' ll='45' type='int try_merge_command(const char * strategy, size_t xopts_nr, const char ** xopts, struct commit_list * common, const char * head_arg, struct commit_list * remotes)'/>
+<use f='codebrowser/sequencer.c' l='1102' u='c' c='do_pick_commit'/>

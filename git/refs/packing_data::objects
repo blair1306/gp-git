@@ -1,0 +1,13 @@
+<dec f='codebrowser/pack-objects.h' l='46' type='struct object_entry *'/>
+<use f='codebrowser/builtin/pack-objects.c' l='641' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1702' u='r' c='get_object_details'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1717' u='r' c='get_object_details'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2398' u='r' c='prepare_pack'/>
+<offset>0</offset>
+<use f='codebrowser/pack-objects.c' l='17' u='r' c='locate_object_entry_hash'/>
+<use f='codebrowser/pack-objects.c' l='52' u='r' c='rehash_objects'/>
+<use f='codebrowser/pack-objects.c' l='86' u='r' c='packlist_find'/>
+<use f='codebrowser/pack-objects.c' l='97' u='w' c='packlist_alloc'/>
+<use f='codebrowser/pack-objects.c' l='97' u='r' c='packlist_alloc'/>
+<use f='codebrowser/pack-objects.c' l='97' u='r' c='packlist_alloc'/>
+<use f='codebrowser/pack-objects.c' l='100' u='r' c='packlist_alloc'/>

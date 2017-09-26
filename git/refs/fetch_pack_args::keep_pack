@@ -1,0 +1,8 @@
+<dec f='codebrowser/fetch-pack.h' l='17' type='unsigned int'/>
+<offset>258</offset>
+<use f='codebrowser/builtin/fetch-pack.c' l='77' u='r' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='78' u='w' c='cmd_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='795' u='r' c='get_pack'/>
+<use f='codebrowser/fetch-pack.c' l='818' u='r' c='get_pack'/>
+<use f='codebrowser/fetch-pack.c' l='987' u='r' c='do_fetch_pack'/>
+<use f='codebrowser/transport.c' l='217' u='w' c='fetch_refs_via_pack'/>

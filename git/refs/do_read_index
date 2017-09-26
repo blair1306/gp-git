@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='598' type='int do_read_index(struct index_state * istate, const char * path, int must_exist)'/>
+<def f='codebrowser/read-cache.c' l='1727' ll='1817' type='int do_read_index(struct index_state * istate, const char * path, int must_exist)'/>
+<use f='codebrowser/read-cache.c' l='1844' u='c' c='read_index_from'/>
+<use f='codebrowser/read-cache.c' l='1859' u='c' c='read_index_from'/>
+<doc f='codebrowser/read-cache.c' l='1726'>/* remember to discard_cache() before reading a different cache! */</doc>
+<use f='codebrowser/t/helper/test-dump-split-index.c' l='15' u='c' c='cmd_main'/>

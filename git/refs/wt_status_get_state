@@ -1,0 +1,5 @@
+<dec f='codebrowser/wt-status.h' l='122' type='void wt_status_get_state(struct wt_status_state * state, int get_detached_from)'/>
+<use f='codebrowser/ref-filter.c' l='1259' u='c' c='get_head_description'/>
+<def f='codebrowser/wt-status.c' l='1513' ll='1537' type='void wt_status_get_state(struct wt_status_state * state, int get_detached_from)'/>
+<use f='codebrowser/wt-status.c' l='1564' u='c' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1903' u='c' c='wt_porcelain_v2_print_tracking'/>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/cache.h' l='1418' type='enum date_mode_type'/>
+<offset>0</offset>
+<use f='codebrowser/archive.c' l='38' u='w' c='format_subst'/>
+<use f='codebrowser/builtin/blame.c' l='760' u='w' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='766' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/commit.c' l='1065' u='w' c='find_author_by_nickname'/>
+<use f='codebrowser/builtin/log.c' l='1027' u='w' c='make_cover_letter'/>
+<use f='codebrowser/builtin/shortlog.c' l='153' u='w' c='shortlog_add_commit'/>
+<use f='codebrowser/date.c' l='189' u='w' c='date_mode_from_type'/>
+<use f='codebrowser/date.c' l='199' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='208' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='214' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='233' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='236' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='243' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='252' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='257' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='840' u='w' c='parse_date_format'/>
+<use f='codebrowser/date.c' l='846' u='r' c='parse_date_format'/>
+<use f='codebrowser/revision.c' l='1991' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/sha1_name.c' l='370' u='w' c='show_ambiguous_object'/>
+<use f='codebrowser/submodule.c' l='1721' u='w' c='print_commit'/>
+<use f='codebrowser/t/helper/test-revision-walking.c' l='20' u='w' c='print_commit'/>

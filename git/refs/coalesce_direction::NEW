@@ -1,0 +1,4 @@
+<dec f='codebrowser/combine-diff.c' l='161' type='2'/>
+<use f='codebrowser/combine-diff.c' l='200' u='r' c='coalesce_lines'/>
+<use f='codebrowser/combine-diff.c' l='210' u='r' c='coalesce_lines'/>
+<use f='codebrowser/combine-diff.c' l='236' u='r' c='coalesce_lines'/>

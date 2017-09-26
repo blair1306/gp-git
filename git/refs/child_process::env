@@ -1,0 +1,21 @@
+<dec f='codebrowser/run-command.h' l='37' type='const char *const *'/>
+<offset>512</offset>
+<use f='codebrowser/builtin/difftool.c' l='223' u='w' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='236' u='w' c='changed_files'/>
+<use f='codebrowser/builtin/receive-pack.c' l='947' u='w' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='958' u='w' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='971' u='w' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='982' u='w' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1718' u='w' c='unpack'/>
+<use f='codebrowser/builtin/worktree.c' l='287' u='w' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='296' u='w' c='add_worktree'/>
+<use f='codebrowser/connect.c' l='840' u='w' c='git_connect'/>
+<use f='codebrowser/connected.c' l='66' u='w' c='check_connected'/>
+<use f='codebrowser/editor.c' l='45' u='w' c='launch_editor'/>
+<use f='codebrowser/run-command.c' l='567' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='568' u='w' c='start_command'/>
+<use f='codebrowser/run-command.c' l='649' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='907' u='w' c='run_command_v_opt_cd_env'/>
+<use f='codebrowser/run-command.c' l='1194' u='w' c='run_hook_ve'/>
+<use f='codebrowser/trailer.c' l='236' u='w' c='apply_command'/>
+<use f='codebrowser/transport.c' l='1229' u='w' c='read_alternate_refs'/>

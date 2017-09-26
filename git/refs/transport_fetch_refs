@@ -1,0 +1,5 @@
+<dec f='codebrowser/transport.h' l='234' type='int transport_fetch_refs(struct transport * transport, struct ref * refs)'/>
+<use f='codebrowser/builtin/clone.c' l='1130' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/clone.c' l='1169' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='925' u='c' c='fetch_refs'/>
+<def f='codebrowser/transport.c' l='1109' ll='1143' type='int transport_fetch_refs(struct transport * transport, struct ref * refs)'/>

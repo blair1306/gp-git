@@ -1,0 +1,11 @@
+<dec f='codebrowser/merge-recursive.h' l='16' type='unsigned int'/>
+<offset>320</offset>
+<doc f='codebrowser/merge-recursive.h' l='16'>/* 1: output at end, 2: keep buffered */</doc>
+<use f='codebrowser/merge-recursive.c' l='29' u='r' c='flush_output'/>
+<use f='codebrowser/merge-recursive.c' l='39' u='r' c='err'/>
+<use f='codebrowser/merge-recursive.c' l='48' u='r' c='err'/>
+<use f='codebrowser/merge-recursive.c' l='195' u='r' c='output'/>
+<use f='codebrowser/merge-recursive.c' l='2095' u='r' c='merge_recursive'/>
+<use f='codebrowser/merge-recursive.c' l='2168' u='w' c='init_merge_options'/>
+<use f='codebrowser/merge-recursive.c' l='2178' u='w' c='init_merge_options'/>
+<use f='codebrowser/sequencer.c' l='449' u='w' c='do_recursive_merge'/>

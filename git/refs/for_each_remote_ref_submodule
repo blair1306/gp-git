@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='314' type='int for_each_remote_ref_submodule(const char * submodule, each_ref_fn * fn, void * cb_data)'/>
+<def f='codebrowser/refs.c' l='371' ll='375' type='int for_each_remote_ref_submodule(const char * submodule, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/revision.c' l='2124' u='r' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/submodule.c' l='899' u='c' c='submodule_needs_pushing'/>
+<use f='codebrowser/submodule.c' l='965' u='c' c='push_submodule'/>

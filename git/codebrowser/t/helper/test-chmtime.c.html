@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>test-chmtime.c source code [codebrowser/t/helper/test-chmtime.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/t/helper/test-chmtime.c'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>t</a>/<a href='./'>helper</a>/<a href='test-chmtime.c.html'>test-chmtime.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * This program can either change modification time of the given</i></td></tr>
+<tr><th id="3">3</th><td><i> * file(s) or just print it. The program does not change atime or</i></td></tr>
+<tr><th id="4">4</th><td><i> * ctime (their values are explicitly preserved).</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * The mtime can be changed to an absolute value:</i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> *	test-chmtime =&lt;seconds&gt; file...</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * Relative to the current time as returned by time(3):</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> *	test-chmtime =+&lt;seconds&gt; (or =-&lt;seconds&gt;) file...</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * Or relative to the current mtime of the file:</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> *	test-chmtime &lt;seconds&gt; file...</i></td></tr>
+<tr><th id="17">17</th><td><i> *	test-chmtime +&lt;seconds&gt; (or -&lt;seconds&gt;) file...</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> * Examples:</i></td></tr>
+<tr><th id="20">20</th><td><i> *</i></td></tr>
+<tr><th id="21">21</th><td><i> * To just print the mtime use --verbose and set the file mtime offset to 0:</i></td></tr>
+<tr><th id="22">22</th><td><i> *</i></td></tr>
+<tr><th id="23">23</th><td><i> *	test-chmtime -v +0 file</i></td></tr>
+<tr><th id="24">24</th><td><i> *</i></td></tr>
+<tr><th id="25">25</th><td><i> * To set the mtime to current time:</i></td></tr>
+<tr><th id="26">26</th><td><i> *</i></td></tr>
+<tr><th id="27">27</th><td><i> *	test-chmtime =+0 file</i></td></tr>
+<tr><th id="28">28</th><td><i> *</i></td></tr>
+<tr><th id="29">29</th><td><i> */</i></td></tr>
+<tr><th id="30">30</th><td><u>#include <a href="../../git-compat-util.h.html">"git-compat-util.h"</a></u></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="../../../include/utime.h.html">&lt;utime.h&gt;</a></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><em>static</em> <em>const</em> <em>char</em> <dfn class="tu decl def" id="usage_str" title='usage_str' data-type='const char [46]' data-ref="usage_str">usage_str</dfn>[] = <q>"-v|--verbose (+|=|=+|=-|-)&lt;seconds&gt; &lt;file&gt;..."</q>;</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="timespec_arg" title='timespec_arg' data-type='int timespec_arg(const char * arg, long * set_time, int * set_eq)' data-ref="timespec_arg">timespec_arg</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1arg" title='arg' data-type='const char *' data-ref="1arg">arg</dfn>, <em>long</em> <em>int</em> *<dfn class="local col2 decl" id="2set_time" title='set_time' data-type='long *' data-ref="2set_time">set_time</dfn>, <em>int</em> *<dfn class="local col3 decl" id="3set_eq" title='set_eq' data-type='int *' data-ref="3set_eq">set_eq</dfn>)</td></tr>
+<tr><th id="36">36</th><td>{</td></tr>
+<tr><th id="37">37</th><td>	<em>char</em> *<dfn class="local col4 decl" id="4test" title='test' data-type='char *' data-ref="4test">test</dfn>;</td></tr>
+<tr><th id="38">38</th><td>	<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5timespec" title='timespec' data-type='const char *' data-ref="5timespec">timespec</dfn> = <a class="local col1 ref" href="#1arg" title='arg' data-ref="1arg">arg</a>;</td></tr>
+<tr><th id="39">39</th><td>	*<a class="local col3 ref" href="#3set_eq" title='set_eq' data-ref="3set_eq">set_eq</a> = (*<a class="local col5 ref" href="#5timespec" title='timespec' data-ref="5timespec">timespec</a> == <kbd>'='</kbd>) ? <var>1</var> : <var>0</var>;</td></tr>
+<tr><th id="40">40</th><td>	<b>if</b> (*<a class="local col3 ref" href="#3set_eq" title='set_eq' data-ref="3set_eq">set_eq</a>) {</td></tr>
+<tr><th id="41">41</th><td>		<a class="local col5 ref" href="#5timespec" title='timespec' data-ref="5timespec">timespec</a>++;</td></tr>
+<tr><th id="42">42</th><td>		<b>if</b> (*<a class="local col5 ref" href="#5timespec" title='timespec' data-ref="5timespec">timespec</a> == <kbd>'+'</kbd>) {</td></tr>
+<tr><th id="43">43</th><td>			*<a class="local col3 ref" href="#3set_eq" title='set_eq' data-ref="3set_eq">set_eq</a> = <var>2</var>; <i>/* relative "in the future" */</i></td></tr>
+<tr><th id="44">44</th><td>			<a class="local col5 ref" href="#5timespec" title='timespec' data-ref="5timespec">timespec</a>++;</td></tr>
+<tr><th id="45">45</th><td>		}</td></tr>
+<tr><th id="46">46</th><td>	}</td></tr>
+<tr><th id="47">47</th><td>	*<a class="local col2 ref" href="#2set_time" title='set_time' data-ref="2set_time">set_time</a> = <a class="ref" href="../../../include/stdlib.h.html#strtol" title='strtol' data-ref="strtol">strtol</a>(<a class="local col5 ref" href="#5timespec" title='timespec' data-ref="5timespec">timespec</a>, &amp;<a class="local col4 ref" href="#4test" title='test' data-ref="4test">test</a>, <var>10</var>);</td></tr>
+<tr><th id="48">48</th><td>	<b>if</b> (*<a class="local col4 ref" href="#4test" title='test' data-ref="4test">test</a>) {</td></tr>
+<tr><th id="49">49</th><td>		<a class="ref" href="../../../include/stdio.h.html#fprintf" title='fprintf' data-ref="fprintf">fprintf</a>(<a class="macro" href="../../../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>, <q>"Not a base-10 integer: %s\n"</q>, <a class="local col1 ref" href="#1arg" title='arg' data-ref="1arg">arg</a> + <var>1</var>);</td></tr>
+<tr><th id="50">50</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="51">51</th><td>	}</td></tr>
+<tr><th id="52">52</th><td>	<b>if</b> ((*<a class="local col3 ref" href="#3set_eq" title='set_eq' data-ref="3set_eq">set_eq</a> &amp;&amp; *<a class="local col2 ref" href="#2set_time" title='set_time' data-ref="2set_time">set_time</a> &lt; <var>0</var>) || *<a class="local col3 ref" href="#3set_eq" title='set_eq' data-ref="3set_eq">set_eq</a> == <var>2</var>) {</td></tr>
+<tr><th id="53">53</th><td>		<a class="typedef" href="../../../include/time.h.html#time_t" title='time_t' data-type='__time_t' data-ref="time_t">time_t</a> <dfn class="local col6 decl" id="6now" title='now' data-type='time_t' data-ref="6now">now</dfn> = <a class="ref" href="../../../include/time.h.html#time" title='time' data-ref="time">time</a>(<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="54">54</th><td>		*<a class="local col2 ref" href="#2set_time" title='set_time' data-ref="2set_time">set_time</a> += <a class="local col6 ref" href="#6now" title='now' data-ref="6now">now</a>;</td></tr>
+<tr><th id="55">55</th><td>	}</td></tr>
+<tr><th id="56">56</th><td>	<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="57">57</th><td>}</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><em>int</em> <dfn class="decl def" id="cmd_main" title='cmd_main' data-ref="cmd_main">cmd_main</dfn>(<em>int</em> <dfn class="local col7 decl" id="7argc" title='argc' data-type='int' data-ref="7argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col8 decl" id="8argv" title='argv' data-type='const char **' data-ref="8argv">argv</dfn>)</td></tr>
+<tr><th id="60">60</th><td>{</td></tr>
+<tr><th id="61">61</th><td>	<em>static</em> <em>int</em> <dfn class="local col9 decl" id="9verbose" title='verbose' data-type='int' data-ref="9verbose">verbose</dfn>;</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>	<em>int</em> <dfn class="local col0 decl" id="10i" title='i' data-type='int' data-ref="10i">i</dfn> = <var>1</var>;</td></tr>
+<tr><th id="64">64</th><td>	<i>/* no mtime change by default */</i></td></tr>
+<tr><th id="65">65</th><td>	<em>int</em> <dfn class="local col1 decl" id="11set_eq" title='set_eq' data-type='int' data-ref="11set_eq">set_eq</dfn> = <var>0</var>;</td></tr>
+<tr><th id="66">66</th><td>	<em>long</em> <em>int</em> <dfn class="local col2 decl" id="12set_time" title='set_time' data-type='long' data-ref="12set_time">set_time</dfn> = <var>0</var>;</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>	<b>if</b> (<a class="local col7 ref" href="#7argc" title='argc' data-ref="7argc">argc</a> &lt; <var>3</var>)</td></tr>
+<tr><th id="69">69</th><td>		<b>goto</b> <a class="lbl" href="#13usage" data-ref="13usage">usage</a>;</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>	<b>if</b> (<a class="macro" href="../../../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (argv[i]) &amp;&amp; __builtin_constant_p (&quot;--verbose&quot;) &amp;&amp; (__s1_len = __builtin_strlen (argv[i]), __s2_len = __builtin_strlen (&quot;--verbose&quot;), (!((size_t)(const void *)((argv[i]) + 1) - (size_t)(const void *)(argv[i]) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;--verbose&quot;) + 1) - (size_t)(const void *)(&quot;--verbose&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (argv[i], &quot;--verbose&quot;) : (__builtin_constant_p (argv[i]) &amp;&amp; ((size_t)(const void *)((argv[i]) + 1) - (size_t)(const void *)(argv[i]) == 1) &amp;&amp; (__s1_len = __builtin_strlen (argv[i]), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;--verbose&quot;) &amp;&amp; ((size_t)(const void *)((&quot;--verbose&quot;) + 1) - (size_t)(const void *)(&quot;--verbose&quot;) == 1) ? __builtin_strcmp (argv[i], &quot;--verbose&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;--verbose&quot;); int __result = (((const unsigned char *) (const char *) (argv[i]))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (argv[i]))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (argv[i]))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (argv[i]))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;--verbose&quot;) &amp;&amp; ((size_t)(const void *)((&quot;--verbose&quot;) + 1) - (size_t)(const void *)(&quot;--verbose&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;--verbose&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (argv[i]) &amp;&amp; ((size_t)(const void *)((argv[i]) + 1) - (size_t)(const void *)(argv[i]) == 1) ? __builtin_strcmp (argv[i], &quot;--verbose&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (argv[i]); int __result = (((const unsigned char *) (const char *) (&quot;--verbose&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;--verbose&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;--verbose&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;--verbose&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (argv[i], &quot;--verbose&quot;)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col8 ref" href="#8argv" title='argv' data-ref="8argv">argv</a>[<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>], <q>"--verbose"</q>) == <var>0</var> || <a class="macro" href="../../../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (argv[i]) &amp;&amp; __builtin_constant_p (&quot;-v&quot;) &amp;&amp; (__s1_len = __builtin_strlen (argv[i]), __s2_len = __builtin_strlen (&quot;-v&quot;), (!((size_t)(const void *)((argv[i]) + 1) - (size_t)(const void *)(argv[i]) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;-v&quot;) + 1) - (size_t)(const void *)(&quot;-v&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (argv[i], &quot;-v&quot;) : (__builtin_constant_p (argv[i]) &amp;&amp; ((size_t)(const void *)((argv[i]) + 1) - (size_t)(const void *)(argv[i]) == 1) &amp;&amp; (__s1_len = __builtin_strlen (argv[i]), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;-v&quot;) &amp;&amp; ((size_t)(const void *)((&quot;-v&quot;) + 1) - (size_t)(const void *)(&quot;-v&quot;) == 1) ? __builtin_strcmp (argv[i], &quot;-v&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;-v&quot;); int __result = (((const unsigned char *) (const char *) (argv[i]))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (argv[i]))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (argv[i]))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (argv[i]))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;-v&quot;) &amp;&amp; ((size_t)(const void *)((&quot;-v&quot;) + 1) - (size_t)(const void *)(&quot;-v&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;-v&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (argv[i]) &amp;&amp; ((size_t)(const void *)((argv[i]) + 1) - (size_t)(const void *)(argv[i]) == 1) ? __builtin_strcmp (argv[i], &quot;-v&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (argv[i]); int __result = (((const unsigned char *) (const char *) (&quot;-v&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;-v&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;-v&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;-v&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (argv[i], &quot;-v&quot;)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col8 ref" href="#8argv" title='argv' data-ref="8argv">argv</a>[<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>], <q>"-v"</q>) == <var>0</var>) {</td></tr>
+<tr><th id="72">72</th><td>		<a class="local col9 ref" href="#9verbose" title='verbose' data-ref="9verbose">verbose</a> = <var>1</var>;</td></tr>
+<tr><th id="73">73</th><td>		++<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>;</td></tr>
+<tr><th id="74">74</th><td>	}</td></tr>
+<tr><th id="75">75</th><td>	<b>if</b> (<a class="tu ref" href="#timespec_arg" title='timespec_arg' data-use='c' data-ref="timespec_arg">timespec_arg</a>(<a class="local col8 ref" href="#8argv" title='argv' data-ref="8argv">argv</a>[<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>], &amp;<a class="local col2 ref" href="#12set_time" title='set_time' data-ref="12set_time">set_time</a>, &amp;<a class="local col1 ref" href="#11set_eq" title='set_eq' data-ref="11set_eq">set_eq</a>))</td></tr>
+<tr><th id="76">76</th><td>		++<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>;</td></tr>
+<tr><th id="77">77</th><td>	<b>else</b></td></tr>
+<tr><th id="78">78</th><td>		<b>goto</b> <a class="lbl" href="#13usage" data-ref="13usage">usage</a>;</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>	<b>for</b> (; <a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a> &lt; <a class="local col7 ref" href="#7argc" title='argc' data-ref="7argc">argc</a>; <a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>++) {</td></tr>
+<tr><th id="81">81</th><td>		<b>struct</b> <a class="type" href="../../../include/x86_64-linux-gnu/bits/stat.h.html#stat" title='stat' data-ref="stat">stat</a> <dfn class="local col4 decl" id="14sb" title='sb' data-type='struct stat' data-ref="14sb">sb</dfn>;</td></tr>
+<tr><th id="82">82</th><td>		<b>struct</b> <a class="type" href="../../../include/utime.h.html#utimbuf" title='utimbuf' data-ref="utimbuf">utimbuf</a> <dfn class="local col5 decl" id="15utb" title='utb' data-type='struct utimbuf' data-ref="15utb">utb</dfn>;</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>		<b>if</b> (<a class="ref" href="../../../include/x86_64-linux-gnu/sys/stat.h.html#216" title='stat' data-ref="stat64">stat</a>(<a class="local col8 ref" href="#8argv" title='argv' data-ref="8argv">argv</a>[<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>], &amp;<a class="local col4 ref" href="#14sb" title='sb' data-ref="14sb">sb</a>) &lt; <var>0</var>) {</td></tr>
+<tr><th id="85">85</th><td>			<a class="ref" href="../../../include/stdio.h.html#fprintf" title='fprintf' data-ref="fprintf">fprintf</a>(<a class="macro" href="../../../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>, <q>"Failed to stat %s: %s\n"</q>,</td></tr>
+<tr><th id="86">86</th><td>			        <a class="local col8 ref" href="#8argv" title='argv' data-ref="8argv">argv</a>[<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>], <a class="ref" href="../../../include/string.h.html#strerror" title='strerror' data-ref="strerror">strerror</a>(<a class="macro" href="../../../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>));</td></tr>
+<tr><th id="87">87</th><td>			<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="88">88</th><td>		}</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><u>#<span data-ppcond="90">ifdef</span> <span class="macro" data-ref="_M/GIT_WINDOWS_NATIVE">GIT_WINDOWS_NATIVE</span></u></td></tr>
+<tr><th id="91">91</th><td>		<b>if</b> (!(sb.st_mode &amp; S_IWUSR) &amp;&amp;</td></tr>
+<tr><th id="92">92</th><td>				chmod(argv[i], sb.st_mode | S_IWUSR)) {</td></tr>
+<tr><th id="93">93</th><td>			fprintf(stderr, <q>"Could not make user-writable %s: %s"</q>,</td></tr>
+<tr><th id="94">94</th><td>				argv[i], strerror(errno));</td></tr>
+<tr><th id="95">95</th><td>			<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="96">96</th><td>		}</td></tr>
+<tr><th id="97">97</th><td><u>#<span data-ppcond="90">endif</span></u></td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td>		<a class="local col5 ref" href="#15utb" title='utb' data-ref="15utb">utb</a>.<a class="ref" href="../../../include/utime.h.html#utimbuf::actime" title='utimbuf::actime' data-ref="utimbuf::actime">actime</a> = <a class="local col4 ref" href="#14sb" title='sb' data-ref="14sb">sb</a>.<a class="macro" href="../../../include/x86_64-linux-gnu/bits/stat.h.html#94" title="st_atim.tv_sec" data-ref="_M/st_atime">st_atime</a>;</td></tr>
+<tr><th id="100">100</th><td>		<a class="local col5 ref" href="#15utb" title='utb' data-ref="15utb">utb</a>.<a class="ref" href="../../../include/utime.h.html#utimbuf::modtime" title='utimbuf::modtime' data-ref="utimbuf::modtime">modtime</a> = <a class="local col1 ref" href="#11set_eq" title='set_eq' data-ref="11set_eq">set_eq</a> ? <a class="local col2 ref" href="#12set_time" title='set_time' data-ref="12set_time">set_time</a> : <a class="local col4 ref" href="#14sb" title='sb' data-ref="14sb">sb</a>.<a class="macro" href="../../../include/x86_64-linux-gnu/bits/stat.h.html#95" title="st_mtim.tv_sec" data-ref="_M/st_mtime">st_mtime</a> + <a class="local col2 ref" href="#12set_time" title='set_time' data-ref="12set_time">set_time</a>;</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>		<b>if</b> (<a class="local col9 ref" href="#9verbose" title='verbose' data-ref="9verbose">verbose</a>) {</td></tr>
+<tr><th id="103">103</th><td>			<a class="typedef" href="../../../include/stdint.h.html#uintmax_t" title='uintmax_t' data-type='unsigned long' data-ref="uintmax_t">uintmax_t</a> <dfn class="local col6 decl" id="16mtime" title='mtime' data-type='uintmax_t' data-ref="16mtime">mtime</dfn> = <a class="local col5 ref" href="#15utb" title='utb' data-ref="15utb">utb</a>.<a class="ref" href="../../../include/utime.h.html#utimbuf::modtime" title='utimbuf::modtime' data-ref="utimbuf::modtime">modtime</a> &lt; <var>0</var> ? <var>0</var>: <a class="local col5 ref" href="#15utb" title='utb' data-ref="15utb">utb</a>.<a class="ref" href="../../../include/utime.h.html#utimbuf::modtime" title='utimbuf::modtime' data-ref="utimbuf::modtime">modtime</a>;</td></tr>
+<tr><th id="104">104</th><td>			<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"%"</q><a class="macro" href="../../../include/inttypes.h.html#154" title="&quot;l&quot; &quot;u&quot;" data-ref="_M/PRIuMAX">PRIuMAX</a><q>"\t%s\n"</q>, <a class="local col6 ref" href="#16mtime" title='mtime' data-ref="16mtime">mtime</a>, <a class="local col8 ref" href="#8argv" title='argv' data-ref="8argv">argv</a>[<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>]);</td></tr>
+<tr><th id="105">105</th><td>		}</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td>		<b>if</b> (<a class="local col5 ref" href="#15utb" title='utb' data-ref="15utb">utb</a>.<a class="ref" href="../../../include/utime.h.html#utimbuf::modtime" title='utimbuf::modtime' data-ref="utimbuf::modtime">modtime</a> != <a class="local col4 ref" href="#14sb" title='sb' data-ref="14sb">sb</a>.<a class="macro" href="../../../include/x86_64-linux-gnu/bits/stat.h.html#95" title="st_mtim.tv_sec" data-ref="_M/st_mtime">st_mtime</a> &amp;&amp; <a class="ref" href="../../../include/utime.h.html#utime" title='utime' data-ref="utime">utime</a>(<a class="local col8 ref" href="#8argv" title='argv' data-ref="8argv">argv</a>[<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>], &amp;<a class="local col5 ref" href="#15utb" title='utb' data-ref="15utb">utb</a>) &lt; <var>0</var>) {</td></tr>
+<tr><th id="108">108</th><td>			<a class="ref" href="../../../include/stdio.h.html#fprintf" title='fprintf' data-ref="fprintf">fprintf</a>(<a class="macro" href="../../../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>, <q>"Failed to modify time on %s: %s\n"</q>,</td></tr>
+<tr><th id="109">109</th><td>			        <a class="local col8 ref" href="#8argv" title='argv' data-ref="8argv">argv</a>[<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>], <a class="ref" href="../../../include/string.h.html#strerror" title='strerror' data-ref="strerror">strerror</a>(<a class="macro" href="../../../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>));</td></tr>
+<tr><th id="110">110</th><td>			<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="111">111</th><td>		}</td></tr>
+<tr><th id="112">112</th><td>	}</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><dfn class="lbl" id="13usage" data-ref="13usage">usage</dfn>:</td></tr>
+<tr><th id="117">117</th><td>	<a class="ref" href="../../../include/stdio.h.html#fprintf" title='fprintf' data-ref="fprintf">fprintf</a>(<a class="macro" href="../../../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>, <q>"usage: %s %s\n"</q>, <a class="local col8 ref" href="#8argv" title='argv' data-ref="8argv">argv</a>[<var>0</var>], <a class="tu ref" href="#usage_str" title='usage_str' data-ref="usage_str">usage_str</a>);</td></tr>
+<tr><th id="118">118</th><td>	<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="119">119</th><td>}</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

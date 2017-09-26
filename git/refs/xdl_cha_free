@@ -1,0 +1,8 @@
+<dec f='codebrowser/xdiff/xutils.h' l='32' type='void xdl_cha_free(chastore_t * cha)'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='349' u='c' c='histogram_diff'/>
+<use f='codebrowser/xdiff/xprepare.c' l='83' u='c' c='xdl_init_classifier'/>
+<use f='codebrowser/xdiff/xprepare.c' l='92' u='c' c='xdl_init_classifier'/>
+<use f='codebrowser/xdiff/xprepare.c' l='106' u='c' c='xdl_free_classifier'/>
+<use f='codebrowser/xdiff/xprepare.c' l='246' u='c' c='xdl_prepare_ctx'/>
+<use f='codebrowser/xdiff/xprepare.c' l='258' u='c' c='xdl_free_ctx'/>
+<def f='codebrowser/xdiff/xutils.c' l='90' ll='97' type='void xdl_cha_free(chastore_t * cha)'/>

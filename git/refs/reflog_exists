@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs.h' l='372' type='int reflog_exists(const char * refname)'/>
+<use f='codebrowser/builtin/checkout.c' l='696' u='c' c='update_refs_for_switch'/>
+<use f='codebrowser/builtin/reflog.c' l='719' u='c' c='cmd_reflog_exists'/>
+<use f='codebrowser/refs.c' l='537' u='c' c='dwim_log'/>
+<use f='codebrowser/refs.c' l='539' u='c' c='dwim_log'/>
+<def f='codebrowser/refs.c' l='1982' ll='1985' type='int reflog_exists(const char * refname)'/>

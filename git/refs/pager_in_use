@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1903' type='int pager_in_use()'/>
+<use f='codebrowser/builtin/log.c' l='59' u='c' c='auto_decoration_style'/>
+<use f='codebrowser/color.c' l='331' u='c' c='check_auto_color'/>
+<use f='codebrowser/git.c' l='38' u='c' c='setup_auto_pager'/>
+<def f='codebrowser/pager.c' l='137' ll='140' type='int pager_in_use()'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/bulk-checkin.h' l='7' type='int index_bulk_checkin(unsigned char * sha1, int fd, size_t size, enum object_type type, const char * path, unsigned int flags)'/>
+<def f='codebrowser/bulk-checkin.c' l='254' ll='263' type='int index_bulk_checkin(unsigned char * sha1, int fd, size_t size, enum object_type type, const char * path, unsigned int flags)'/>
+<use f='codebrowser/sha1_file.c' l='3628' u='c' c='index_stream'/>

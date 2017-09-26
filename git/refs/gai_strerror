@@ -1,0 +1,5 @@
+<dec f='include/netdb.h' l='671' type='const char * gai_strerror(int __ecode)'/>
+<doc f='include/netdb.h' l='670'>/* Convert error return from getaddrinfo() to a string.  */</doc>
+<use f='codebrowser/connect.c' l='393' u='c' c='git_tcp_connect_sock'/>
+<use f='codebrowser/daemon.c' l='944' u='c' c='setup_named_sock'/>
+<use f='codebrowser/imap-send.c' l='976' u='c' c='imap_open_store'/>

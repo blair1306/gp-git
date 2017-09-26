@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='150' type='4'/>
+<use f='codebrowser/builtin/ls-files.c' l='540' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='540' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='540' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='540' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/dir.c' l='1402' u='r' c='treat_directory'/>
+<use f='codebrowser/dir.c' l='1983' u='r' c='new_untracked_cache'/>
+<use f='codebrowser/wt-status.c' l='662' u='r' c='wt_status_collect_untracked'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/xdiff/xmacros.h' l='30'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='236' u='c'/>
+<use f='codebrowser/xdiff/xemit.c' l='173' u='c'/>
+<use f='codebrowser/xdiff/xemit.c' l='174' u='c'/>

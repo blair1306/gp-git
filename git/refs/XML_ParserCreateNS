@@ -1,0 +1,12 @@
+<dec f='include/expat.h' l='220' type='XML_Parser XML_ParserCreateNS(const XML_Char * encoding, XML_Char namespaceSeparator)'/>
+<doc f='include/expat.h' l='208'>/* Constructs a new parser and namespace processor.  Element type
+   names and attribute names that belong to a namespace will be
+   expanded; unprefixed attribute names are never expanded; unprefixed
+   element type names are expanded only if there is a default
+   namespace. The expanded name is the concatenation of the namespace
+   URI, the namespace separator character, and the local part of the
+   name.  If the namespace separator is &apos;\0&apos; then the namespace URI
+   and the local part will be concatenated without any separator.
+   It is a programming error to use the separator &apos;\0&apos; with namespace
+   triplets (see XML_SetReturnNSTriplet).
+*/</doc>

@@ -1,0 +1,17 @@
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='108'/>
+<dec f='include/fcntl.h' l='80'/>
+<use f='codebrowser/cache.h' l='315' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='590' u='c'/>
+<use f='codebrowser/cache-tree.c' l='343' u='c'/>
+<use f='codebrowser/entry.c' l='404' u='c'/>
+<use f='codebrowser/fast-import.c' l='768' u='c'/>
+<use f='codebrowser/fast-import.c' l='769' u='c'/>
+<use f='codebrowser/fast-import.c' l='1603' u='c'/>
+<use f='codebrowser/fast-import.c' l='1624' u='c'/>
+<use f='codebrowser/fast-import.c' l='2381' u='c'/>
+<use f='codebrowser/fast-import.c' l='3158' u='c'/>
+<use f='codebrowser/fsck.c' l='580' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='410' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='411' u='c'/>
+<use f='codebrowser/read-cache.c' l='220' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3679' u='c'/>

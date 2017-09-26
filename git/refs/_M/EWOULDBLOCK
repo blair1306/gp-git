@@ -1,0 +1,4 @@
+<dec f='include/asm-generic/errno.h' l='21'/>
+<use f='codebrowser/transport-helper.c' l='1197' u='c'/>
+<use f='codebrowser/transport-helper.c' l='1225' u='c'/>
+<use f='codebrowser/wrapper.c' l='235' u='c'/>

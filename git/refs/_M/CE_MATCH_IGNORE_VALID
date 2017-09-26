@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='673'/>
+<doc f='codebrowser/cache.h' l='672'>/* do stat comparison even if CE_VALID is true */</doc>
+<use f='codebrowser/apply.c' l='3373' u='c'/>
+<use f='codebrowser/entry.c' l='392' u='c'/>
+<use f='codebrowser/read-cache.c' l='308' u='c'/>
+<use f='codebrowser/read-cache.c' l='634' u='c'/>
+<use f='codebrowser/read-cache.c' l='1228' u='c'/>
+<use f='codebrowser/read-cache.c' l='1339' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1468' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1624' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='2148' u='c'/>

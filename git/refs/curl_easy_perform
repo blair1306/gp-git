@@ -1,0 +1,2 @@
+<dec f='include/curl/easy.h' l='30' type='CURLcode curl_easy_perform(CURL * curl)'/>
+<use f='codebrowser/imap-send.c' l='1478' u='c' c='curl_append_msgs_to_imap'/>

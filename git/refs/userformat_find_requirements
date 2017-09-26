@@ -1,0 +1,3 @@
+<dec f='codebrowser/commit.h' l='187' type='void userformat_find_requirements(const char * fmt, struct userformat_want * w)'/>
+<use f='codebrowser/builtin/log.c' l='177' u='c' c='cmd_log_init_finish'/>
+<def f='codebrowser/pretty.c' l='1470' ll='1481' type='void userformat_find_requirements(const char * fmt, struct userformat_want * w)'/>

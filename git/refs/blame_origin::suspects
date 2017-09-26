@@ -1,0 +1,40 @@
+<dec f='codebrowser/blame.h' l='52' type='struct blame_entry *'/>
+<use f='codebrowser/blame.c' l='477' u='r' c='queue_blames'/>
+<use f='codebrowser/blame.c' l='478' u='w' c='queue_blames'/>
+<use f='codebrowser/blame.c' l='478' u='r' c='queue_blames'/>
+<use f='codebrowser/blame.c' l='482' u='r' c='queue_blames'/>
+<use f='codebrowser/blame.c' l='483' u='w' c='queue_blames'/>
+<use f='codebrowser/blame.c' l='487' u='w' c='queue_blames'/>
+<use f='codebrowser/blame.c' l='947' u='r' c='pass_blame_to_parent'/>
+<use f='codebrowser/blame.c' l='952' u='a' c='pass_blame_to_parent'/>
+<use f='codebrowser/blame.c' l='1153' u='r' c='find_move_in_parent'/>
+<use f='codebrowser/blame.c' l='1187' u='w' c='find_move_in_parent'/>
+<use f='codebrowser/blame.c' l='1234' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1319' u='w' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1338' u='r' c='pass_whole_blame'/>
+<use f='codebrowser/blame.c' l='1339' u='w' c='pass_whole_blame'/>
+<use f='codebrowser/blame.c' l='1468' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1476' u='a' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1477' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1485' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1496' u='a' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1498' u='w' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1498' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1500' u='a' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1502' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1511' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1529' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1530' u='w' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1557' u='r' c='assign_blame'/>
+<use f='codebrowser/blame.c' l='1587' u='r' c='assign_blame'/>
+<use f='codebrowser/blame.c' l='1599' u='r' c='assign_blame'/>
+<use f='codebrowser/blame.c' l='1600' u='w' c='assign_blame'/>
+<offset>256</offset>
+<doc f='codebrowser/blame.h' l='45'>/* `suspects&apos; contains blame entries that may be attributed to
+	 * this origin&apos;s commit or to parent commits.  When a commit
+	 * is being processed, all suspects will be moved, either by
+	 * assigning them to an origin in a different commit, or by
+	 * shipping them to the scoreboard&apos;s ent list because they
+	 * cannot be attributed to a different commit.
+	 */</doc>
+<use f='codebrowser/builtin/blame.c' l='900' u='w' c='cmd_blame'/>

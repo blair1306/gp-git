@@ -1,0 +1,13 @@
+<dec f='codebrowser/commit.h' l='254' type='struct commit_list * get_merge_bases(struct commit * rev1, struct commit * rev2)'/>
+<use f='codebrowser/builtin/log.c' l='1306' u='c' c='get_base_commit'/>
+<use f='codebrowser/builtin/merge.c' l='1329' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1428' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/rev-parse.c' l='285' u='c' c='try_difference'/>
+<use f='codebrowser/commit.c' l='876' u='c' c='get_octopus_merge_bases'/>
+<def f='codebrowser/commit.c' l='1000' ll='1003' type='struct commit_list * get_merge_bases(struct commit * one, struct commit * two)'/>
+<use f='codebrowser/merge-recursive.c' l='2028' u='c' c='merge_recursive'/>
+<use f='codebrowser/notes-merge.c' l='597' u='c' c='notes_merge'/>
+<use f='codebrowser/revision.c' l='1402' u='c' c='prepare_show_merge'/>
+<use f='codebrowser/revision.c' l='1497' u='c' c='handle_dotdot_1'/>
+<use f='codebrowser/sha1_name.c' l='1157' u='c' c='get_oid_mb'/>
+<use f='codebrowser/submodule.c' l='577' u='c' c='show_submodule_header'/>

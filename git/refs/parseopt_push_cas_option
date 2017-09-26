@@ -1,0 +1,10 @@
+<dec f='codebrowser/remote.h' l='293' type='int parseopt_push_cas_option(const struct option * , const char * arg, int unset)'/>
+<use f='codebrowser/builtin/push.c' l='535' u='r' c='cmd_push'/>
+<use f='codebrowser/builtin/push.c' l='535' u='r' c='cmd_push'/>
+<use f='codebrowser/builtin/push.c' l='535' u='r' c='cmd_push'/>
+<use f='codebrowser/builtin/push.c' l='535' u='r' c='cmd_push'/>
+<use f='codebrowser/builtin/send-pack.c' l='182' u='r' c='cmd_send_pack'/>
+<use f='codebrowser/builtin/send-pack.c' l='182' u='r' c='cmd_send_pack'/>
+<use f='codebrowser/builtin/send-pack.c' l='182' u='r' c='cmd_send_pack'/>
+<use f='codebrowser/builtin/send-pack.c' l='182' u='r' c='cmd_send_pack'/>
+<def f='codebrowser/remote.c' l='2310' ll='2313' type='int parseopt_push_cas_option(const struct option * opt, const char * arg, int unset)'/>

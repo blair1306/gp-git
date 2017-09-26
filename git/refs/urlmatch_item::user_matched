@@ -1,0 +1,6 @@
+<dec f='codebrowser/urlmatch.h' l='39' type='char'/>
+<offset>128</offset>
+<use f='codebrowser/urlmatch.c' l='533' u='w' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='546' u='r' c='cmp_matches'/>
+<use f='codebrowser/urlmatch.c' l='546' u='r' c='cmp_matches'/>
+<use f='codebrowser/urlmatch.c' l='547' u='r' c='cmp_matches'/>

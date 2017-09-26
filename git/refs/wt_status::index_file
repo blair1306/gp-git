@@ -1,0 +1,5 @@
+<dec f='codebrowser/wt-status.h' l='90' type='const char *'/>
+<offset>6720</offset>
+<use f='codebrowser/builtin/commit.c' l='510' u='w' c='run_status'/>
+<use f='codebrowser/wt-status.c' l='135' u='w' c='wt_status_prepare'/>
+<use f='codebrowser/wt-status.c' l='834' u='r' c='wt_longstatus_print_submodule_summary'/>

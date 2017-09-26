@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>object.h source code [codebrowser/object.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="object,object_array,object_array_entry,object_list "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/object.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='object.h.html'>object.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/OBJECT_H">OBJECT_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/OBJECT_H" data-ref="_M/OBJECT_H">OBJECT_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="object_list" title='object_list' data-ref="object_list">object_list</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="object_list::item" title='object_list::item' data-ref="object_list::item">item</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<b>struct</b> <a class="type" href="#object_list" title='object_list' data-ref="object_list">object_list</a> *<dfn class="decl" id="object_list::next" title='object_list::next' data-ref="object_list::next">next</dfn>;</td></tr>
+<tr><th id="7">7</th><td>};</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>struct</b> <dfn class="type def" id="object_array" title='object_array' data-ref="object_array">object_array</dfn> {</td></tr>
+<tr><th id="10">10</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="object_array::nr" title='object_array::nr' data-ref="object_array::nr">nr</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="object_array::alloc" title='object_array::alloc' data-ref="object_array::alloc">alloc</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<b>struct</b> <dfn class="type def" id="object_array_entry" title='object_array_entry' data-ref="object_array_entry"><a class="type" href="#object_array_entry" title='object_array_entry' data-ref="object_array_entry">object_array_entry</a></dfn> {</td></tr>
+<tr><th id="13">13</th><td>		<b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="object_array_entry::item" title='object_array_entry::item' data-ref="object_array_entry::item">item</dfn>;</td></tr>
+<tr><th id="14">14</th><td>		<i>/*</i></td></tr>
+<tr><th id="15">15</th><td><i>		 * name or NULL.  If non-NULL, the memory pointed to</i></td></tr>
+<tr><th id="16">16</th><td><i>		 * is owned by this object *except* if it points at</i></td></tr>
+<tr><th id="17">17</th><td><i>		 * object_array_slopbuf, which is a static copy of the</i></td></tr>
+<tr><th id="18">18</th><td><i>		 * empty string.</i></td></tr>
+<tr><th id="19">19</th><td><i>		 */</i></td></tr>
+<tr><th id="20">20</th><td>		<em>char</em> *<dfn class="decl" id="object_array_entry::name" title='object_array_entry::name' data-ref="object_array_entry::name">name</dfn>;</td></tr>
+<tr><th id="21">21</th><td>		<em>char</em> *<dfn class="decl" id="object_array_entry::path" title='object_array_entry::path' data-ref="object_array_entry::path">path</dfn>;</td></tr>
+<tr><th id="22">22</th><td>		<em>unsigned</em> <dfn class="decl" id="object_array_entry::mode" title='object_array_entry::mode' data-ref="object_array_entry::mode">mode</dfn>;</td></tr>
+<tr><th id="23">23</th><td>	} *<dfn class="decl" id="object_array::objects" title='object_array::objects' data-ref="object_array::objects">objects</dfn>;</td></tr>
+<tr><th id="24">24</th><td>};</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/OBJECT_ARRAY_INIT" data-ref="_M/OBJECT_ARRAY_INIT">OBJECT_ARRAY_INIT</dfn> { 0, 0, NULL }</u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/TYPE_BITS" data-ref="_M/TYPE_BITS">TYPE_BITS</dfn>   3</u></td></tr>
+<tr><th id="29">29</th><td><i>/*</i></td></tr>
+<tr><th id="30">30</th><td><i> * object flag allocation:</i></td></tr>
+<tr><th id="31">31</th><td><i> * revision.h:      0---------10                                26</i></td></tr>
+<tr><th id="32">32</th><td><i> * fetch-pack.c:    0---5</i></td></tr>
+<tr><th id="33">33</th><td><i> * walker.c:        0-2</i></td></tr>
+<tr><th id="34">34</th><td><i> * upload-pack.c:       4       11----------------19</i></td></tr>
+<tr><th id="35">35</th><td><i> * builtin/blame.c:               12-13</i></td></tr>
+<tr><th id="36">36</th><td><i> * bisect.c:                               16</i></td></tr>
+<tr><th id="37">37</th><td><i> * bundle.c:                               16</i></td></tr>
+<tr><th id="38">38</th><td><i> * http-push.c:                            16-----19</i></td></tr>
+<tr><th id="39">39</th><td><i> * commit.c:                               16-----19</i></td></tr>
+<tr><th id="40">40</th><td><i> * sha1_name.c:                                     20</i></td></tr>
+<tr><th id="41">41</th><td><i> * builtin/fsck.c:  0--3</i></td></tr>
+<tr><th id="42">42</th><td><i> */</i></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/FLAG_BITS" data-ref="_M/FLAG_BITS">FLAG_BITS</dfn>  27</u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i>/*</i></td></tr>
+<tr><th id="46">46</th><td><i> * The object type is stored in 3 bits.</i></td></tr>
+<tr><th id="47">47</th><td><i> */</i></td></tr>
+<tr><th id="48">48</th><td><b>struct</b> <dfn class="type def" id="object" title='object' data-ref="object">object</dfn> {</td></tr>
+<tr><th id="49">49</th><td>	<em>unsigned</em> <dfn class="decl" id="object::parsed" title='object::parsed' data-ref="object::parsed">parsed</dfn> : <var>1</var>;</td></tr>
+<tr><th id="50">50</th><td>	<em>unsigned</em> <dfn class="decl" id="object::type" title='object::type' data-ref="object::type">type</dfn> : <a class="macro" href="#28" title="3" data-ref="_M/TYPE_BITS">TYPE_BITS</a>;</td></tr>
+<tr><th id="51">51</th><td>	<em>unsigned</em> <dfn class="decl" id="object::flags" title='object::flags' data-ref="object::flags">flags</dfn> : <a class="macro" href="#43" title="27" data-ref="_M/FLAG_BITS">FLAG_BITS</a>;</td></tr>
+<tr><th id="52">52</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="object::oid" title='object::oid' data-ref="object::oid">oid</dfn>;</td></tr>
+<tr><th id="53">53</th><td>};</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="typename" title='typename' data-ref="typename">typename</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="1type" title='type' data-type='unsigned int' data-ref="1type">type</dfn>);</td></tr>
+<tr><th id="56">56</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="type_from_string_gently" title='type_from_string_gently' data-ref="type_from_string_gently">type_from_string_gently</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2str" title='str' data-type='const char *' data-ref="2str">str</dfn>, <a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a>, <em>int</em> <dfn class="local col3 decl" id="3gentle" title='gentle' data-type='int' data-ref="3gentle">gentle</dfn>);</td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/type_from_string" data-ref="_M/type_from_string">type_from_string</dfn>(str) type_from_string_gently(str, -1, 0)</u></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><i>/*</i></td></tr>
+<tr><th id="60">60</th><td><i> * Return the current number of buckets in the object hashmap.</i></td></tr>
+<tr><th id="61">61</th><td><i> */</i></td></tr>
+<tr><th id="62">62</th><td><b>extern</b> <em>unsigned</em> <em>int</em> <dfn class="decl" id="get_max_object_index" title='get_max_object_index' data-ref="get_max_object_index">get_max_object_index</dfn>(<em>void</em>);</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i>/*</i></td></tr>
+<tr><th id="65">65</th><td><i> * Return the object from the specified bucket in the object hashmap.</i></td></tr>
+<tr><th id="66">66</th><td><i> */</i></td></tr>
+<tr><th id="67">67</th><td><b>extern</b> <b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="get_indexed_object" title='get_indexed_object' data-ref="get_indexed_object">get_indexed_object</dfn>(<em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i>/*</i></td></tr>
+<tr><th id="70">70</th><td><i> * This can be used to see if we have heard of the object before, but</i></td></tr>
+<tr><th id="71">71</th><td><i> * it can return "yes we have, and here is a half-initialised object"</i></td></tr>
+<tr><th id="72">72</th><td><i> * for an object that we haven't loaded/parsed yet.</i></td></tr>
+<tr><th id="73">73</th><td><i> *</i></td></tr>
+<tr><th id="74">74</th><td><i> * When parsing a commit to create an in-core commit object, its</i></td></tr>
+<tr><th id="75">75</th><td><i> * parents list holds commit objects that represent its parents, but</i></td></tr>
+<tr><th id="76">76</th><td><i> * they are expected to be lazily initialized and do not know what</i></td></tr>
+<tr><th id="77">77</th><td><i> * their trees or parents are yet.  When this function returns such a</i></td></tr>
+<tr><th id="78">78</th><td><i> * half-initialised objects, the caller is expected to initialize them</i></td></tr>
+<tr><th id="79">79</th><td><i> * by calling parse_object() on them.</i></td></tr>
+<tr><th id="80">80</th><td><i> */</i></td></tr>
+<tr><th id="81">81</th><td><b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="lookup_object" title='lookup_object' data-ref="lookup_object">lookup_object</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="4sha1" title='sha1' data-type='const unsigned char *' data-ref="4sha1">sha1</dfn>);</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><b>extern</b> <em>void</em> *<dfn class="decl" id="create_object" title='create_object' data-ref="create_object">create_object</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col5 decl" id="5sha1" title='sha1' data-type='const unsigned char *' data-ref="5sha1">sha1</dfn>, <em>void</em> *<dfn class="local col6 decl" id="6obj" title='obj' data-type='void *' data-ref="6obj">obj</dfn>);</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><em>void</em> *<dfn class="decl" id="object_as_type" title='object_as_type' data-ref="object_as_type">object_as_type</dfn>(<b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="local col7 decl" id="7obj" title='obj' data-type='struct object *' data-ref="7obj">obj</dfn>, <b>enum</b> <a class="type" href="cache.h.html#object_type" title='object_type' data-ref="object_type">object_type</a> <dfn class="local col8 decl" id="8type" title='type' data-type='enum object_type' data-ref="8type">type</dfn>, <em>int</em> <dfn class="local col9 decl" id="9quiet" title='quiet' data-type='int' data-ref="9quiet">quiet</dfn>);</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><i>/*</i></td></tr>
+<tr><th id="88">88</th><td><i> * Returns the object, having parsed it to find out what it is.</i></td></tr>
+<tr><th id="89">89</th><td><i> *</i></td></tr>
+<tr><th id="90">90</th><td><i> * Returns NULL if the object is missing or corrupt.</i></td></tr>
+<tr><th id="91">91</th><td><i> */</i></td></tr>
+<tr><th id="92">92</th><td><b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="parse_object" title='parse_object' data-ref="parse_object">parse_object</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col0 decl" id="10oid" title='oid' data-type='const struct object_id *' data-ref="10oid">oid</dfn>);</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><i>/*</i></td></tr>
+<tr><th id="95">95</th><td><i> * Like parse_object, but will die() instead of returning NULL. If the</i></td></tr>
+<tr><th id="96">96</th><td><i> * "name" parameter is not NULL, it is included in the error message</i></td></tr>
+<tr><th id="97">97</th><td><i> * (otherwise, the hex object ID is given).</i></td></tr>
+<tr><th id="98">98</th><td><i> */</i></td></tr>
+<tr><th id="99">99</th><td><b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="parse_object_or_die" title='parse_object_or_die' data-ref="parse_object_or_die">parse_object_or_die</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col1 decl" id="11oid" title='oid' data-type='const struct object_id *' data-ref="11oid">oid</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12name" title='name' data-type='const char *' data-ref="12name">name</dfn>);</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><i>/* Given the result of read_sha1_file(), returns the object after</i></td></tr>
+<tr><th id="102">102</th><td><i> * parsing it.  eaten_p indicates if the object has a borrowed copy</i></td></tr>
+<tr><th id="103">103</th><td><i> * of buffer and the caller should not free() it.</i></td></tr>
+<tr><th id="104">104</th><td><i> */</i></td></tr>
+<tr><th id="105">105</th><td><b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="parse_object_buffer" title='parse_object_buffer' data-ref="parse_object_buffer">parse_object_buffer</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="13oid" title='oid' data-type='const struct object_id *' data-ref="13oid">oid</dfn>, <b>enum</b> <a class="type" href="cache.h.html#object_type" title='object_type' data-ref="object_type">object_type</a> <dfn class="local col4 decl" id="14type" title='type' data-type='enum object_type' data-ref="14type">type</dfn>, <em>unsigned</em> <em>long</em> <dfn class="local col5 decl" id="15size" title='size' data-type='unsigned long' data-ref="15size">size</dfn>, <em>void</em> *<dfn class="local col6 decl" id="16buffer" title='buffer' data-type='void *' data-ref="16buffer">buffer</dfn>, <em>int</em> *<dfn class="local col7 decl" id="17eaten_p" title='eaten_p' data-type='int *' data-ref="17eaten_p">eaten_p</dfn>);</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><i class="doc">/** Returns the object, with potentially excess memory allocated. **/</i></td></tr>
+<tr><th id="108">108</th><td><b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="lookup_unknown_object" title='lookup_unknown_object' data-ref="lookup_unknown_object">lookup_unknown_object</dfn>(<em>const</em> <em>unsigned</em>  <em>char</em> *<dfn class="local col8 decl" id="18sha1" title='sha1' data-type='const unsigned char *' data-ref="18sha1">sha1</dfn>);</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><b>struct</b> <a class="type" href="#object_list" title='object_list' data-ref="object_list">object_list</a> *<dfn class="decl" id="object_list_insert" title='object_list_insert' data-ref="object_list_insert">object_list_insert</dfn>(<b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="local col9 decl" id="19item" title='item' data-type='struct object *' data-ref="19item">item</dfn>,</td></tr>
+<tr><th id="111">111</th><td>				       <b>struct</b> <a class="type" href="#object_list" title='object_list' data-ref="object_list">object_list</a> **<dfn class="local col0 decl" id="20list_p" title='list_p' data-type='struct object_list **' data-ref="20list_p">list_p</dfn>);</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><em>int</em> <dfn class="decl" id="object_list_contains" title='object_list_contains' data-ref="object_list_contains">object_list_contains</dfn>(<b>struct</b> <a class="type" href="#object_list" title='object_list' data-ref="object_list">object_list</a> *<dfn class="local col1 decl" id="21list" title='list' data-type='struct object_list *' data-ref="21list">list</dfn>, <b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="local col2 decl" id="22obj" title='obj' data-type='struct object *' data-ref="22obj">obj</dfn>);</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><i>/* Object array handling .. */</i></td></tr>
+<tr><th id="116">116</th><td><em>void</em> <dfn class="decl" id="add_object_array" title='add_object_array' data-ref="add_object_array">add_object_array</dfn>(<b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="local col3 decl" id="23obj" title='obj' data-type='struct object *' data-ref="23obj">obj</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="24name" title='name' data-type='const char *' data-ref="24name">name</dfn>, <b>struct</b> <a class="type" href="#object_array" title='object_array' data-ref="object_array">object_array</a> *<dfn class="local col5 decl" id="25array" title='array' data-type='struct object_array *' data-ref="25array">array</dfn>);</td></tr>
+<tr><th id="117">117</th><td><em>void</em> <dfn class="decl" id="add_object_array_with_path" title='add_object_array_with_path' data-ref="add_object_array_with_path">add_object_array_with_path</dfn>(<b>struct</b> <a class="type" href="#object" title='object' data-ref="object">object</a> *<dfn class="local col6 decl" id="26obj" title='obj' data-type='struct object *' data-ref="26obj">obj</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="27name" title='name' data-type='const char *' data-ref="27name">name</dfn>, <b>struct</b> <a class="type" href="#object_array" title='object_array' data-ref="object_array">object_array</a> *<dfn class="local col8 decl" id="28array" title='array' data-type='struct object_array *' data-ref="28array">array</dfn>, <em>unsigned</em> <dfn class="local col9 decl" id="29mode" title='mode' data-type='unsigned int' data-ref="29mode">mode</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="30path" title='path' data-type='const char *' data-ref="30path">path</dfn>);</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="object_array_each_func_t" title='object_array_each_func_t' data-type='int (*)(struct object_array_entry *, void *)' data-ref="object_array_each_func_t">object_array_each_func_t</dfn>)(<b>struct</b> <a class="type" href="#object_array_entry" title='object_array_entry' data-ref="object_array_entry">object_array_entry</a> *, <em>void</em> *);</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td><i>/*</i></td></tr>
+<tr><th id="122">122</th><td><i> * Apply want to each entry in array, retaining only the entries for</i></td></tr>
+<tr><th id="123">123</th><td><i> * which the function returns true.  Preserve the order of the entries</i></td></tr>
+<tr><th id="124">124</th><td><i> * that are retained.</i></td></tr>
+<tr><th id="125">125</th><td><i> */</i></td></tr>
+<tr><th id="126">126</th><td><em>void</em> <dfn class="decl" id="object_array_filter" title='object_array_filter' data-ref="object_array_filter">object_array_filter</dfn>(<b>struct</b> <a class="type" href="#object_array" title='object_array' data-ref="object_array">object_array</a> *<dfn class="local col1 decl" id="31array" title='array' data-type='struct object_array *' data-ref="31array">array</dfn>,</td></tr>
+<tr><th id="127">127</th><td>			 <a class="typedef" href="#object_array_each_func_t" title='object_array_each_func_t' data-type='int (*)(struct object_array_entry *, void *)' data-ref="object_array_each_func_t">object_array_each_func_t</a> <dfn class="local col2 decl" id="32want" title='want' data-type='object_array_each_func_t' data-ref="32want">want</dfn>, <em>void</em> *<dfn class="local col3 decl" id="33cb_data" title='cb_data' data-type='void *' data-ref="33cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><i>/*</i></td></tr>
+<tr><th id="130">130</th><td><i> * Remove from array all but the first entry with a given name.</i></td></tr>
+<tr><th id="131">131</th><td><i> * Warning: this function uses an O(N^2) algorithm.</i></td></tr>
+<tr><th id="132">132</th><td><i> */</i></td></tr>
+<tr><th id="133">133</th><td><em>void</em> <dfn class="decl" id="object_array_remove_duplicates" title='object_array_remove_duplicates' data-ref="object_array_remove_duplicates">object_array_remove_duplicates</dfn>(<b>struct</b> <a class="type" href="#object_array" title='object_array' data-ref="object_array">object_array</a> *<dfn class="local col4 decl" id="34array" title='array' data-type='struct object_array *' data-ref="34array">array</dfn>);</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td><i>/*</i></td></tr>
+<tr><th id="136">136</th><td><i> * Remove any objects from the array, freeing all used memory; afterwards</i></td></tr>
+<tr><th id="137">137</th><td><i> * the array is ready to store more objects with add_object_array().</i></td></tr>
+<tr><th id="138">138</th><td><i> */</i></td></tr>
+<tr><th id="139">139</th><td><em>void</em> <dfn class="decl" id="object_array_clear" title='object_array_clear' data-ref="object_array_clear">object_array_clear</dfn>(<b>struct</b> <a class="type" href="#object_array" title='object_array' data-ref="object_array">object_array</a> *<dfn class="local col5 decl" id="35array" title='array' data-type='struct object_array *' data-ref="35array">array</dfn>);</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><em>void</em> <dfn class="decl" id="clear_object_flags" title='clear_object_flags' data-ref="clear_object_flags">clear_object_flags</dfn>(<em>unsigned</em> <dfn class="local col6 decl" id="36flags" title='flags' data-type='unsigned int' data-ref="36flags">flags</dfn>);</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><u>#<span data-ppcond="1">endif</span> /* OBJECT_H */</u></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='alloc.c.html'>codebrowser/alloc.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

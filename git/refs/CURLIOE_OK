@@ -1,0 +1,6 @@
+<dec f='include/curl/curl.h' l='360' type='0'/>
+<doc f='include/curl/curl.h' l='360'>/* I/O operation successful */</doc>
+<use f='codebrowser/http.c' l='167' u='r' c='ioctl_buffer'/>
+<use f='codebrowser/http.c' l='171' u='r' c='ioctl_buffer'/>
+<use f='codebrowser/remote-curl.c' l='448' u='r' c='rpc_ioctl'/>
+<use f='codebrowser/remote-curl.c' l='453' u='r' c='rpc_ioctl'/>

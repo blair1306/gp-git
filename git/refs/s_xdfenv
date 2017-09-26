@@ -1,0 +1,4 @@
+<def f='codebrowser/xdiff/xtypes.h' l='61' ll='63'/>
+<size>272</size>
+<mbr r='s_xdfenv::xdf1' o='0' t='xdfile_t'/>
+<mbr r='s_xdfenv::xdf2' o='1088' t='xdfile_t'/>

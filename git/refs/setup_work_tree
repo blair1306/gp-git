@@ -1,0 +1,22 @@
+<dec f='codebrowser/cache.h' l='530' type='void setup_work_tree()'/>
+<use f='codebrowser/blame.c' l='1779' u='c' c='setup_scoreboard'/>
+<use f='codebrowser/builtin/blame.c' l='855' u='c' c='cmd_blame'/>
+<use f='codebrowser/builtin/check-attr.c' l='111' u='c' c='cmd_check_attr'/>
+<use f='codebrowser/builtin/clone.c' l='733' u='c' c='checkout'/>
+<use f='codebrowser/builtin/diff-index.c' l='50' u='c' c='cmd_diff_index'/>
+<use f='codebrowser/builtin/diff.c' l='147' u='c' c='builtin_diff_index'/>
+<use f='codebrowser/builtin/diff.c' l='249' u='c' c='builtin_diff_files'/>
+<use f='codebrowser/builtin/grep.c' l='1094' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/ls-files.c' l='610' u='c' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/read-tree.c' l='213' u='c' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/reset.c' l='355' u='c' c='cmd_reset'/>
+<use f='codebrowser/builtin/rm.c' l='267' u='c' c='cmd_rm'/>
+<use f='codebrowser/builtin/update-index.c' l='767' u='c' c='refresh'/>
+<use f='codebrowser/builtin/update-index.c' l='896' u='c' c='reupdate_callback'/>
+<use f='codebrowser/builtin/update-index.c' l='1050' u='c' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='1087' u='c' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='1135' u='c' c='cmd_update_index'/>
+<use f='codebrowser/git.c' l='338' u='c' c='run_builtin'/>
+<def f='codebrowser/setup.c' l='377' ll='409' type='void setup_work_tree()'/>
+<use f='codebrowser/t/helper/test-subprocess.c' l='13' u='c' c='cmd_main'/>
+<use f='codebrowser/wt-status.c' l='991' u='c' c='wt_longstatus_print_verbose'/>

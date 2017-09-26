@@ -1,0 +1,9 @@
+<dec f='codebrowser/parse-options.h' l='237'/>
+<use f='codebrowser/builtin/clone.c' l='78' u='c'/>
+<use f='codebrowser/builtin/fetch.c' l='109' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='226' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='774' u='c'/>
+<use f='codebrowser/builtin/pull.c' l='118' u='c'/>
+<use f='codebrowser/builtin/push.c' l='522' u='c'/>
+<use f='codebrowser/builtin/send-pack.c' l='159' u='c'/>
+<use f='codebrowser/imap-send.c' l='52' u='c'/>

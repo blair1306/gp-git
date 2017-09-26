@@ -1,0 +1,9 @@
+<dec f='codebrowser/wt-status.h' l='81' type='int'/>
+<offset>6368</offset>
+<use f='codebrowser/builtin/commit.c' l='1297' u='w' c='git_status_config'/>
+<use f='codebrowser/builtin/commit.c' l='1348' u='a' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1348' u='a' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1348' u='a' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1348' u='a' c='cmd_status'/>
+<use f='codebrowser/wt-status.c' l='140' u='w' c='wt_status_prepare'/>
+<use f='codebrowser/wt-status.c' l='1670' u='r' c='wt_longstatus_print'/>

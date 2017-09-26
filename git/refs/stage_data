@@ -1,0 +1,6 @@
+<def f='codebrowser/merge-recursive.c' l='119' ll='126'/>
+<size>112</size>
+<doc f='codebrowser/merge-recursive.c' l='115'>/*
+ * Since we want to write the index eventually, we cannot reuse the index
+ * for these (temporary) data.
+ */</doc>

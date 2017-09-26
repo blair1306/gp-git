@@ -1,0 +1,6 @@
+<dec f='codebrowser/ref-filter.h' l='38' type='int'/>
+<offset>160</offset>
+<use f='codebrowser/ref-filter.c' l='1319' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1377' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1379' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1784' u='w' c='new_ref_array_item'/>

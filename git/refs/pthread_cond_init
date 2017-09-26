@@ -1,0 +1,8 @@
+<dec f='include/pthread.h' l='968' type='int pthread_cond_init(pthread_cond_t *restrict __cond, const pthread_condattr_t *restrict __cond_attr)'/>
+<doc f='include/pthread.h' l='966'>/* Initialize condition variable COND using attributes ATTR, or use
+   the default values if later is NULL.  */</doc>
+<use f='codebrowser/builtin/grep.c' l='206' u='c' c='start_threads'/>
+<use f='codebrowser/builtin/grep.c' l='207' u='c' c='start_threads'/>
+<use f='codebrowser/builtin/grep.c' l='208' u='c' c='start_threads'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2156' u='c' c='init_threaded_search'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2251' u='c' c='ll_find_deltas'/>

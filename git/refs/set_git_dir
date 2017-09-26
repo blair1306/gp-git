@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='485' type='int set_git_dir(const char * path)'/>
+<use f='codebrowser/builtin/init-db.c' l='353' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='358' u='c' c='init_db'/>
+<def f='codebrowser/environment.c' l='294' ll='301' type='int set_git_dir(const char * path)'/>
+<use f='codebrowser/path.c' l='828' u='c' c='enter_repo'/>
+<use f='codebrowser/setup.c' l='407' u='c' c='setup_work_tree'/>
+<use f='codebrowser/setup.c' l='671' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='693' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='705' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='712' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='721' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='749' u='c' c='setup_discovered_git_dir'/>
+<use f='codebrowser/setup.c' l='758' u='c' c='setup_discovered_git_dir'/>
+<use f='codebrowser/setup.c' l='800' u='c' c='setup_bare_git_dir'/>
+<use f='codebrowser/setup.c' l='803' u='c' c='setup_bare_git_dir'/>

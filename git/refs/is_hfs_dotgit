@@ -1,0 +1,10 @@
+<dec f='codebrowser/utf8.h' l='56' type='int is_hfs_dotgit(const char * path)'/>
+<doc f='codebrowser/utf8.h' l='50'>/*
+ * Returns true if the path would match &quot;.git&quot; after HFS case-folding.
+ * The path should be NUL-terminated, but we will match variants of both &quot;.git\0&quot;
+ * and &quot;.git/...&quot; (but _not_ &quot;.../.git&quot;). This makes it suitable for both fsck
+ * and verify_path().
+ */</doc>
+<use f='codebrowser/fsck.c' l='565' u='c' c='fsck_tree'/>
+<use f='codebrowser/read-cache.c' l='844' u='c' c='verify_path'/>
+<def f='codebrowser/utf8.c' l='622' ll='649' type='int is_hfs_dotgit(const char * path)'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1437' type='void datestamp(struct strbuf * out)'/>
+<def f='codebrowser/date.c' l='854' ll='865' type='void datestamp(struct strbuf * out)'/>
+<use f='codebrowser/fast-import.c' l='2115' u='c' c='parse_ident'/>
+<use f='codebrowser/ident.c' l='182' u='c' c='ident_default_date'/>
+<use f='codebrowser/send-pack.c' l='289' u='c' c='generate_push_cert'/>

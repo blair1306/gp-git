@@ -1,0 +1,14 @@
+<dec f='codebrowser/pathspec.h' l='8'/>
+<use f='codebrowser/builtin/add.c' l='474' u='c'/>
+<use f='codebrowser/builtin/add.c' l='484' u='c'/>
+<use f='codebrowser/dir.c' l='92' u='c'/>
+<use f='codebrowser/dir.c' l='147' u='c'/>
+<use f='codebrowser/dir.c' l='388' u='c'/>
+<use f='codebrowser/dir.c' l='1428' u='c'/>
+<use f='codebrowser/dir.c' l='1469' u='c'/>
+<use f='codebrowser/pathspec.c' l='77' u='c'/>
+<use f='codebrowser/pathspec.c' l='255' u='c'/>
+<use f='codebrowser/pathspec.c' l='269' u='c'/>
+<use f='codebrowser/pathspec.c' l='427' u='c'/>
+<use f='codebrowser/pathspec.c' l='474' u='c'/>
+<use f='codebrowser/tree-walk.c' l='945' u='c'/>

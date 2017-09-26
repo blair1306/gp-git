@@ -1,0 +1,8 @@
+<dec f='codebrowser/archive.h' l='25' type='unsigned int'/>
+<use f='codebrowser/archive-tar.c' l='385' u='w' c='tar_filter_config'/>
+<use f='codebrowser/archive-tar.c' l='399' u='w' c='tar_filter_config'/>
+<use f='codebrowser/archive-tar.c' l='401' u='w' c='tar_filter_config'/>
+<offset>128</offset>
+<use f='codebrowser/archive.c' l='461' u='r' c='parse_archive_args'/>
+<use f='codebrowser/archive.c' l='475' u='r' c='parse_archive_args'/>
+<use f='codebrowser/archive.c' l='480' u='r' c='parse_archive_args'/>

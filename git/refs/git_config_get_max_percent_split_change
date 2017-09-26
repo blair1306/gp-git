@@ -1,0 +1,3 @@
+<dec f='codebrowser/config.h' l='213' type='int git_config_get_max_percent_split_change()'/>
+<def f='codebrowser/config.c' l='2131' ll='2144' type='int git_config_get_max_percent_split_change()'/>
+<use f='codebrowser/read-cache.c' l='2456' u='c' c='too_many_not_shared_entries'/>

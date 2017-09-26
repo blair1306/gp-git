@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack.h' l='84' type='off_t write_pack_header(struct sha1file * f, uint32_t )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='802' u='c' c='write_pack_file'/>
+<use f='codebrowser/bulk-checkin.c' l='179' u='c' c='prepare_to_stream'/>
+<def f='codebrowser/pack-write.c' l='178' ll='187' type='off_t write_pack_header(struct sha1file * f, uint32_t nr_entries)'/>

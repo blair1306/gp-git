@@ -1,0 +1,6 @@
+<dec f='codebrowser/split-index.h' l='17' type='int'/>
+<offset>544</offset>
+<use f='codebrowser/split-index.c' l='9' u='w' c='init_split_index'/>
+<use f='codebrowser/split-index.c' l='283' u='w' c='discard_split_index'/>
+<use f='codebrowser/split-index.c' l='284' u='r' c='discard_split_index'/>
+<use f='codebrowser/unpack-trees.c' l='1275' u='w' c='unpack_trees'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/wt-status.h' l='63' type='struct pathspec'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/commit.c' l='1384' u='a' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1388' u='a' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1389' u='a' c='cmd_status'/>
+<use f='codebrowser/wt-status.c' l='574' u='a' c='wt_status_collect_changes_worktree'/>
+<use f='codebrowser/wt-status.c' l='610' u='a' c='wt_status_collect_changes_index'/>
+<use f='codebrowser/wt-status.c' l='623' u='a' c='wt_status_collect_changes_initial'/>
+<use f='codebrowser/wt-status.c' l='669' u='a' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='674' u='a' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='682' u='a' c='wt_status_collect_untracked'/>

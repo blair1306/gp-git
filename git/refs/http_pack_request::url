@@ -1,0 +1,27 @@
+<dec f='codebrowser/http.h' l='199' type='char *'/>
+<offset>0</offset>
+<use f='codebrowser/http-push.c' l='327' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='327' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-walker.c' l='448' u='r' c='http_fetch_pack'/>
+<use f='codebrowser/http.c' l='1997' u='r' c='release_http_pack_request'/>
+<use f='codebrowser/http.c' l='2068' u='w' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2082' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2102' u='r' c='new_http_pack_request'/>

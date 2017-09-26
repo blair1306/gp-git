@@ -1,0 +1,5 @@
+<dec f='codebrowser/xdiff-interface.h' l='27' type='void xdiff_set_find_func(xdemitconf_t * xecfg, const char * line, int cflags)'/>
+<use f='codebrowser/diff.c' l='2514' u='c' c='builtin_diff'/>
+<use f='codebrowser/grep.c' l='1440' u='c' c='match_funcname'/>
+<use f='codebrowser/line-range.c' l='205' u='c' c='parse_range_funcname'/>
+<def f='codebrowser/xdiff-interface.c' l='252' ll='282' type='void xdiff_set_find_func(xdemitconf_t * xecfg, const char * value, int cflags)'/>

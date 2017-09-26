@@ -1,0 +1,10 @@
+<dec f='codebrowser/submodule.h' l='68' type='void handle_ignore_submodules_arg(struct diff_options * , const char * )'/>
+<use f='codebrowser/builtin/checkout.c' l='859' u='c' c='git_checkout_config'/>
+<use f='codebrowser/diff.c' l='278' u='c' c='git_diff_ui_config'/>
+<use f='codebrowser/diff.c' l='3981' u='c' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3984' u='c' c='diff_opt_parse'/>
+<use f='codebrowser/submodule.c' l='169' u='c' c='set_diffopt_flags_from_submodule_config'/>
+<def f='codebrowser/submodule.c' l='443' ll='458' type='void handle_ignore_submodules_arg(struct diff_options * diffopt, const char * arg)'/>
+<use f='codebrowser/wt-status.c' l='570' u='c' c='wt_status_collect_changes_worktree'/>
+<use f='codebrowser/wt-status.c' l='591' u='c' c='wt_status_collect_changes_index'/>
+<use f='codebrowser/wt-status.c' l='601' u='c' c='wt_status_collect_changes_index'/>

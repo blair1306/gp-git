@@ -1,0 +1,4 @@
+<dec f='codebrowser/log-tree.h' l='31' type='void fmt_output_subject(struct strbuf * , const char * subject, struct rev_info * )'/>
+<use f='codebrowser/builtin/log.c' l='866' u='c' c='open_next_file'/>
+<def f='codebrowser/log-tree.c' l='306' ll='322' type='void fmt_output_subject(struct strbuf * filename, const char * subject, struct rev_info * info)'/>
+<use f='codebrowser/log-tree.c' l='332' u='c' c='fmt_output_commit'/>

@@ -1,0 +1,4 @@
+<dec f='include/netinet/in.h' l='242' type='in_port_t'/>
+<offset>16</offset>
+<doc f='include/netinet/in.h' l='242'>/* Port number.  */</doc>
+<use f='codebrowser/daemon.c' l='854' u='r' c='handle'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/urlmatch.h' l='27' type='size_t'/>
+<offset>768</offset>
+<doc f='codebrowser/urlmatch.h' l='27'>/* offset into url to the start of the url path;
+				 * this will always point to a &apos;/&apos; character
+				 * after the url has been normalized */</doc>
+<use f='codebrowser/urlmatch.c' l='427' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='524' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='525' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='526' u='r' c='match_urls'/>

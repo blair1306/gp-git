@@ -1,0 +1,9 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='101' type='void *'/>
+<offset>256</offset>
+<use f='codebrowser/grep.c' l='1449' u='r' c='match_funcname'/>
+<use f='codebrowser/line-range.c' l='123' u='r' c='match_funcname'/>
+<use f='codebrowser/xdiff-interface.c' l='258' u='w' c='xdiff_set_find_func'/>
+<use f='codebrowser/xdiff-interface.c' l='288' u='r' c='xdiff_clear_find_func'/>
+<use f='codebrowser/xdiff-interface.c' l='295' u='w' c='xdiff_clear_find_func'/>
+<use f='codebrowser/xdiff/xemit.c' l='120' u='r' c='match_func_rec'/>
+<use f='codebrowser/xdiff/xemit.c' l='121' u='r' c='match_func_rec'/>

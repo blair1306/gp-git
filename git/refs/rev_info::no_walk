@@ -1,0 +1,22 @@
+<dec f='codebrowser/revision.h' l='92' type='unsigned int'/>
+<offset>932</offset>
+<use f='codebrowser/builtin/log.c' l='575' u='w' c='cmd_show'/>
+<use f='codebrowser/builtin/log.c' l='583' u='r' c='cmd_show'/>
+<use f='codebrowser/builtin/revert.c' l='177' u='w' c='run_sequencer'/>
+<use f='codebrowser/pack-bitmap-write.c' l='265' u='w' c='bitmap_writer_build'/>
+<use f='codebrowser/revision.c' l='146' u='r' c='add_pending_object_with_path'/>
+<use f='codebrowser/revision.c' l='147' u='w' c='add_pending_object_with_path'/>
+<use f='codebrowser/revision.c' l='783' u='r' c='add_parents_to_list'/>
+<use f='codebrowser/revision.c' l='1709' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1719' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1724' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1728' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2157' u='w' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2164' u='w' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2166' u='w' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2170' u='w' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2379' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2793' u='r' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='2795' u='r' c='prepare_revision_walk'/>
+<use f='codebrowser/sequencer.c' l='1163' u='r' c='prepare_revs'/>
+<use f='codebrowser/sequencer.c' l='2343' u='r' c='sequencer_pick_revisions'/>

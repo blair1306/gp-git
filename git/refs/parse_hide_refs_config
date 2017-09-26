@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='649' type='int parse_hide_refs_config(const char * var, const char * value, const char * )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='113' u='c' c='receive_pack_config'/>
+<def f='codebrowser/refs.c' l='1147' ll='1169' type='int parse_hide_refs_config(const char * var, const char * value, const char * section)'/>
+<use f='codebrowser/upload-pack.c' l='1032' u='c' c='upload_pack_config'/>

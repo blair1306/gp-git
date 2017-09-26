@@ -1,0 +1,35 @@
+<dec f='codebrowser/tag.h' l='11' type='char *'/>
+<offset>256</offset>
+<use f='codebrowser/builtin/describe.c' l='259' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='261' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='262' u='r' c='display_name'/>
+<use f='codebrowser/builtin/describe.c' l='267' u='r' c='display_name'/>
+<use f='codebrowser/builtin/fsck.c' l='358' u='r' c='fsck_obj'/>
+<use f='codebrowser/builtin/log.c' l='602' u='r' c='cmd_show'/>
+<use f='codebrowser/log-tree.c' l='503' u='r' c='show_one_mergetag'/>
+<use f='codebrowser/log-tree.c' l='506' u='r' c='show_one_mergetag'/>
+<use f='codebrowser/log-tree.c' l='509' u='r' c='show_one_mergetag'/>
+<use f='codebrowser/ref-filter.c' l='763' u='r' c='grab_tag_values'/>
+<use f='codebrowser/revision.c' l='226' u='r' c='handle_commit'/>
+<use f='codebrowser/sha1_name.c' l='375' u='r' c='show_ambiguous_object'/>
+<use f='codebrowser/sha1_name.c' l='376' u='r' c='show_ambiguous_object'/>
+<use f='codebrowser/tag.c' l='165' u='w' c='parse_tag_buffer'/>

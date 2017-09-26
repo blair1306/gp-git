@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='1681' type='unsigned char * use_pack(struct packed_git * , struct pack_window ** , off_t , unsigned long * )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='208' u='c' c='check_pack_inflate'/>
+<use f='codebrowser/builtin/pack-objects.c' l='231' u='c' c='copy_pack_data'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1396' u='c' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1424' u='c' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1429' u='c' c='check_object'/>
+<use f='codebrowser/pack-check.c' l='34' u='c' c='check_pack_crc'/>
+<use f='codebrowser/pack-check.c' l='69' u='c' c='verify_packfile'/>
+<use f='codebrowser/pack-check.c' l='78' u='c' c='verify_packfile'/>
+<def f='codebrowser/sha1_file.c' l='1229' ll='1300' type='unsigned char * use_pack(struct packed_git * p, struct pack_window ** w_cursor, off_t offset, unsigned long * left)'/>
+<use f='codebrowser/sha1_file.c' l='2024' u='c' c='get_size_from_delta'/>
+<use f='codebrowser/sha1_file.c' l='2054' u='c' c='get_delta_base'/>
+<use f='codebrowser/sha1_file.c' l='2100' u='c' c='get_delta_base_sha1'/>
+<use f='codebrowser/sha1_file.c' l='2135' u='c' c='unpack_object_header'/>
+<use f='codebrowser/sha1_file.c' l='2474' u='c' c='unpack_compressed_entry'/>
+<use f='codebrowser/streaming.c' l='389' u='c' c='read_istream_pack_non_delta'/>

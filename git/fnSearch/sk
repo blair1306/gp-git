@@ -1,0 +1,5 @@
+skip_prefix|skip_prefix
+skip_prefix_mem|skip_prefix_mem
+skip_range_arg|skip_range_arg
+skip_blank_lines|skip_blank_lines
+skip_utf8_bom|skip_utf8_bom

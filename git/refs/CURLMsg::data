@@ -1,0 +1,3 @@
+<dec f='include/curl/multi.h' l='95' type='union (anonymous union at /usr/include/curl/multi.h:92:3)'/>
+<offset>128</offset>
+<use f='codebrowser/http.c' l='243' u='m' c='process_curl_messages'/>

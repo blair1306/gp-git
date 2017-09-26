@@ -1,0 +1,4 @@
+<dec f='codebrowser/builtin/pack-objects.c' l='500' type='2'/>
+<use f='codebrowser/builtin/pack-objects.c' l='519' u='r' c='write_one'/>
+<use f='codebrowser/builtin/pack-objects.c' l='529' c='write_one'/>
+<doc f='codebrowser/builtin/pack-objects.c' l='500'>/* already scheduled to be written */</doc>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/git-compat-util.h' l='455' type='void set_die_is_recursing_routine(int (*)(void) routine)'/>
+<use f='codebrowser/http-backend.c' l='667' u='c' c='cmd_main'/>
+<use f='codebrowser/run-command.c' l='1120' u='c' c='start_async'/>
+<def f='codebrowser/usage.c' l='99' ll='102' type='void set_die_is_recursing_routine(int (*)(void) routine)'/>

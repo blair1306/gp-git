@@ -1,0 +1,11 @@
+<dec f='codebrowser/convert.h' l='98' type='struct stream_filter * get_stream_filter(const char * path, const unsigned char * )'/>
+<def f='codebrowser/convert.c' l='1643' ll='1664' type='struct stream_filter * get_stream_filter(const char * path, const unsigned char * sha1)'/>
+<doc f='codebrowser/convert.c' l='1635'>/*
+ * Return an appropriately constructed filter for the path, or NULL if
+ * the contents cannot be filtered without reading the whole thing
+ * in-core.
+ *
+ * Note that you would be crazy to set CRLF, smuge/clean or ident to a
+ * large binary blob you would want us not to slurp into the memory!
+ */</doc>
+<use f='codebrowser/entry.c' l='252' u='c' c='write_entry'/>

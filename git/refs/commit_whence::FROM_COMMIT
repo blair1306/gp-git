@@ -1,0 +1,9 @@
+<dec f='codebrowser/wt-status.h' l='32' type='0'/>
+<doc f='codebrowser/wt-status.h' l='32'>/* normal */</doc>
+<use f='codebrowser/builtin/commit.c' l='190' u='r' c='determine_whence'/>
+<use f='codebrowser/builtin/commit.c' l='457' u='r' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='810' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='836' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1164' u='r' c='parse_and_validate_options'/>
+<use f='codebrowser/wt-status.c' l='176' u='r' c='wt_longstatus_print_unmerged_header'/>
+<use f='codebrowser/wt-status.c' l='203' u='r' c='wt_longstatus_print_cached_header'/>

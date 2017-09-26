@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule-config.h' l='36' type='int parse_push_recurse_submodules_arg(const char * opt, const char * arg)'/>
+<use f='codebrowser/builtin/push.c' l='441' u='c' c='option_parse_recurse_submodules'/>
+<use f='codebrowser/builtin/push.c' l='501' u='c' c='git_push_config'/>
+<def f='codebrowser/submodule-config.c' l='337' ll='340' type='int parse_push_recurse_submodules_arg(const char * opt, const char * arg)'/>

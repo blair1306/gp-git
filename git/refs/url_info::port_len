@@ -1,0 +1,12 @@
+<dec f='codebrowser/urlmatch.h' l='24' type='size_t'/>
+<offset>704</offset>
+<doc f='codebrowser/urlmatch.h' l='24'>/* if a portnum is present (port_off != 0), it has
+				 * this length (excluding the leading &apos;:&apos;) starting
+				 * from port_off (always 0 for file urls) */</doc>
+<use f='codebrowser/urlmatch.c' l='426' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='517' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='517' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='519' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='519' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='519' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='519' u='r' c='match_urls'/>

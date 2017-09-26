@@ -1,0 +1,5 @@
+<dec f='codebrowser/split-index.h' l='21' type='void save_or_free_index_entry(struct index_state * istate, struct cache_entry * ce)'/>
+<use f='codebrowser/read-cache.c' l='513' u='c' c='remove_index_entry_at'/>
+<use f='codebrowser/read-cache.c' l='536' u='c' c='remove_marked_cache_entries'/>
+<use f='codebrowser/read-cache.c' l='617' u='c' c='create_alias_ce'/>
+<def f='codebrowser/split-index.c' l='293' ll='303' type='void save_or_free_index_entry(struct index_state * istate, struct cache_entry * ce)'/>

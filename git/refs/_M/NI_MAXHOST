@@ -1,0 +1,4 @@
+<dec f='include/netdb.h' l='640'/>
+<use f='codebrowser/git-compat-util.h' l='290' u='a'/>
+<use f='codebrowser/connect.c' l='356' u='c'/>
+<use f='codebrowser/imap-send.c' l='982' u='c'/>

@@ -1,0 +1,35 @@
+<dec f='codebrowser/blame.h' l='78' type='int'/>
+<use f='codebrowser/blame.c' l='386' u='r' c='compare_blame_final'/>
+<use f='codebrowser/blame.c' l='386' u='r' c='compare_blame_final'/>
+<use f='codebrowser/blame.c' l='708' u='w' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='708' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='711' u='w' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='711' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='715' u='w' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='715' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='722' u='w' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='722' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='725' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='728' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='729' u='r' c='split_overlap'/>
+<use f='codebrowser/blame.c' l='841' u='w' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='841' u='r' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='895' u='w' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='895' u='r' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='988' u='r' c='blame_entry_score'/>
+<use f='codebrowser/blame.c' l='989' u='r' c='blame_entry_score'/>
+<use f='codebrowser/blame.c' l='1098' u='r' c='find_copy_in_blob'/>
+<use f='codebrowser/blame.c' l='1100' u='r' c='find_copy_in_blob'/>
+<use f='codebrowser/blame.c' l='1857' u='w' c='blame_entry_prepend'/>
+<offset>64</offset>
+<doc f='codebrowser/blame.h' l='75'>/* the first line of this group in the final image;
+	 * internally all line numbers are 0 based.
+	 */</doc>
+<use f='codebrowser/builtin/blame.c' l='276' u='r' c='found_guilty_entry'/>
+<use f='codebrowser/builtin/blame.c' l='344' u='r' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='348' u='r' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='354' u='r' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='382' u='r' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='406' u='r' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='434' u='r' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='549' u='r' c='find_alignment'/>

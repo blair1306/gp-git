@@ -1,0 +1,3 @@
+<dec f='codebrowser/pathspec.h' l='64'/>
+<use f='codebrowser/builtin/check-ignore.c' l='92' u='c'/>
+<use f='codebrowser/pathspec.c' l='618' u='c'/>

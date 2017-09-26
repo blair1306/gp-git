@@ -1,0 +1,4 @@
+<dec f='include/openssl/crypto.h' l='264' type='struct CRYPTO_dynlock_value *'/>
+<offset>64</offset>
+<dec f='include/expat.h' l='508' type='void *'/>
+<offset>8192</offset>

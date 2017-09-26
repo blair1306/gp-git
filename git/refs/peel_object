@@ -1,0 +1,11 @@
+<dec f='codebrowser/refs/refs-internal.h' l='121' type='enum peel_status peel_object(const unsigned char * name, unsigned char * sha1)'/>
+<def f='codebrowser/refs.c' l='256' ll='275' type='enum peel_status peel_object(const unsigned char * name, unsigned char * sha1)'/>
+<doc f='codebrowser/refs/refs-internal.h' l='114'>/*
+ * Peel the named object; i.e., if the object is a tag, resolve the
+ * tag recursively until a non-tag is found.  If successful, store the
+ * result to sha1 and return PEEL_PEELED.  If the object is not a tag
+ * or is not valid, return PEEL_NON_TAG or PEEL_INVALID, respectively,
+ * and leave sha1 unchanged.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='690' u='c' c='files_peel_ref'/>
+<use f='codebrowser/refs/ref-cache.c' l='512' u='c' c='peel_entry'/>

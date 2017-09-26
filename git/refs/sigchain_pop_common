@@ -1,0 +1,3 @@
+<dec f='codebrowser/sigchain.h' l='10' type='void sigchain_pop_common()'/>
+<use f='codebrowser/run-command.c' l='1500' u='c' c='pp_cleanup'/>
+<def f='codebrowser/sigchain.c' l='54' ll='61' type='void sigchain_pop_common()'/>

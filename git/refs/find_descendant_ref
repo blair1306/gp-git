@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs/refs-internal.h' l='251' type='const char * find_descendant_ref(const char * dirname, const struct string_list * extras, const struct string_list * skip)'/>
+<def f='codebrowser/refs.c' l='1204' ll='1230' type='const char * find_descendant_ref(const char * dirname, const struct string_list * extras, const struct string_list * skip)'/>
+<use f='codebrowser/refs.c' l='1921' u='c' c='refs_verify_refname_available'/>
+<doc f='codebrowser/refs/refs-internal.h' l='241'>/*
+ * Check for entries in extras that are within the specified
+ * directory, where dirname is a reference directory name including
+ * the trailing slash (e.g., &quot;refs/heads/foo/&quot;). Ignore any
+ * conflicting references that are found in skip. If there is a
+ * conflicting reference, return its name.
+ *
+ * extras and skip must be sorted lists of reference names. Either one
+ * can be NULL, signifying the empty list.
+ */</doc>

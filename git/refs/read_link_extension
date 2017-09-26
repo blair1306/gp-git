@@ -1,0 +1,3 @@
+<dec f='codebrowser/split-index.h' l='25' type='int read_link_extension(struct index_state * istate, const void * data, unsigned long sz)'/>
+<use f='codebrowser/read-cache.c' l='1546' u='c' c='read_index_extension'/>
+<def f='codebrowser/split-index.c' l='14' ll='42' type='int read_link_extension(struct index_state * istate, const void * data_, unsigned long sz)'/>

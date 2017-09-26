@@ -1,0 +1,33 @@
+<dec f='codebrowser/commit.h' l='94' type='void unuse_commit_buffer(const struct commit * , const void * buffer)'/>
+<doc f='codebrowser/commit.h' l='88'>/*
+ * Tell the commit subsytem that we are done with a particular commit buffer.
+ * The commit and buffer should be the input and return value, respectively,
+ * from an earlier call to get_commit_buffer.  The buffer may or may not be
+ * freed by this call; callers should not access the memory afterwards.
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='1383' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/blame.c' l='194' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/blame.c' l='208' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/fast-export.c' l='602' u='c' c='handle_commit'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='264' u='c' c='record_person'/>
+<use f='codebrowser/builtin/log.c' l='1019' u='c' c='make_cover_letter'/>
+<use f='codebrowser/builtin/replace.c' l='402' u='c' c='create_graft'/>
+<use f='codebrowser/builtin/reset.c' l='116' u='c' c='print_new_head_line'/>
+<def f='codebrowser/commit.c' l='278' ll='283' type='void unuse_commit_buffer(const struct commit * commit, const void * buffer)'/>
+<use f='codebrowser/commit.c' l='615' u='c' c='record_author_date'/>
+<use f='codebrowser/commit.c' l='1163' u='c' c='parse_signed_commit'/>
+<use f='codebrowser/commit.c' l='1290' u='c' c='read_commit_extra_headers'/>
+<use f='codebrowser/fsck.c' l='794' u='c' c='fsck_commit'/>
+<use f='codebrowser/merge-recursive.c' l='217' u='c' c='output_commit_title'/>
+<use f='codebrowser/notes-merge.c' l='725' u='c' c='notes_merge_commit'/>
+<use f='codebrowser/pretty.c' l='647' u='c' c='logmsg_reencode'/>
+<use f='codebrowser/pretty.c' l='1525' u='c' c='format_commit_message'/>
+<use f='codebrowser/pretty.c' l='1838' u='c' c='pretty_print_commit'/>
+<use f='codebrowser/revision.c' l='2958' u='c' c='commit_match'/>
+<use f='codebrowser/sequencer.c' l='260' u='c' c='free_message'/>
+<use f='codebrowser/sequencer.c' l='855' u='c' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='869' u='c' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='891' u='c' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='1546' u='c' c='walk_revs_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='1801' u='c' c='make_patch'/>
+<use f='codebrowser/sha1_name.c' l='1044' u='c' c='get_oid_oneline'/>

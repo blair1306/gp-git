@@ -1,0 +1,5 @@
+<dec f='codebrowser/urlmatch.h' l='18' type='size_t'/>
+<offset>448</offset>
+<doc f='codebrowser/urlmatch.h' l='18'>/* length of passwd; if passwd_off != 0 but
+				   passwd_len == 0, an empty passwd was given */</doc>
+<use f='codebrowser/urlmatch.c' l='422' u='w' c='url_normalize_1'/>

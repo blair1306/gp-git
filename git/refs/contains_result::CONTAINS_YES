@@ -1,0 +1,6 @@
+<dec f='codebrowser/ref-filter.c' l='1495' type='2'/>
+<use f='codebrowser/ref-filter.c' l='1546' u='r' c='contains_test'/>
+<use f='codebrowser/ref-filter.c' l='1547' u='r' c='contains_test'/>
+<use f='codebrowser/ref-filter.c' l='1587' c='contains_tag_algo'/>
+<use f='codebrowser/ref-filter.c' l='1588' u='r' c='contains_tag_algo'/>
+<use f='codebrowser/ref-filter.c' l='1607' u='r' c='commit_contains'/>

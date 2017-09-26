@@ -1,0 +1,8 @@
+<def f='codebrowser/kwset.h' l='28' ll='33'/>
+<size>24</size>
+<doc f='codebrowser/kwset.h' l='24'>/* Written August 1989 by Mike Haertel.
+   The author may be reached (Email) at the address mike@ai.mit.edu,
+   or (US mail) as Mike Haertel c/o Free Software Foundation. */</doc>
+<mbr r='kwsmatch::index' o='0' t='int'/>
+<mbr r='kwsmatch::offset' o='64' t='size_t [1]'/>
+<mbr r='kwsmatch::size' o='128' t='size_t [1]'/>

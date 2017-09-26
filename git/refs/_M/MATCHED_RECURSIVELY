@@ -1,0 +1,13 @@
+<dec f='codebrowser/dir.h' l='209'/>
+<doc f='codebrowser/dir.h' l='203'>/*
+ * The ordering of these constants is significant, with
+ * higher-numbered match types signifying &quot;closer&quot; (i.e. more
+ * specific) matches which will override lower-numbered match types
+ * when populating the seen[] array.
+ */</doc>
+<use f='codebrowser/builtin/rm.c' l='307' u='c'/>
+<use f='codebrowser/dir.c' l='314' u='c'/>
+<use f='codebrowser/dir.c' l='321' u='c'/>
+<use f='codebrowser/dir.c' l='339' u='c'/>
+<use f='codebrowser/dir.c' l='356' u='c'/>
+<use f='codebrowser/dir.c' l='397' u='c'/>

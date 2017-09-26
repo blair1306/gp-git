@@ -1,0 +1,10 @@
+<dec f='codebrowser/commit.h' l='181' type='const char * logmsg_reencode(const struct commit * commit, char ** commit_encoding, const char * output_encoding)'/>
+<use f='codebrowser/builtin/am.c' l='1353' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/blame.c' l='188' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/commit.c' l='1098' u='c' c='read_commit_message'/>
+<use f='codebrowser/builtin/reset.c' l='104' u='c' c='print_new_head_line'/>
+<def f='codebrowser/pretty.c' l='598' ll='664' type='const char * logmsg_reencode(const struct commit * commit, char ** commit_encoding, const char * output_encoding)'/>
+<use f='codebrowser/pretty.c' l='1499' u='c' c='format_commit_message'/>
+<use f='codebrowser/pretty.c' l='1781' u='c' c='pretty_print_commit'/>
+<use f='codebrowser/revision.c' l='2923' u='c' c='commit_match'/>
+<use f='codebrowser/sequencer.c' l='243' u='c' c='get_message'/>

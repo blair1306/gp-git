@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1320' type='int for_each_abbrev(const char * prefix, each_abbrev_fn * , void * )'/>
+<use f='codebrowser/builtin/rev-parse.c' l='756' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/sha1_name.c' l='431' u='c' c='get_short_oid'/>
+<def f='codebrowser/sha1_name.c' l='443' ll='461' type='int for_each_abbrev(const char * prefix, each_abbrev_fn * fn, void * cb_data)'/>

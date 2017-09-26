@@ -1,0 +1,4 @@
+<dec f='codebrowser/worktree.h' l='18'/>
+<doc f='codebrowser/worktree.h' l='16'>/* Functions for acting on the information about worktrees. */</doc>
+<use f='codebrowser/builtin/worktree.c' l='457' u='c'/>
+<use f='codebrowser/worktree.c' l='161' u='c'/>

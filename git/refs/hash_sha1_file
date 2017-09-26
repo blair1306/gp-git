@@ -1,0 +1,18 @@
+<dec f='codebrowser/cache.h' l='1193' type='int hash_sha1_file(const void * buf, unsigned long len, const char * type, unsigned char * sha1)'/>
+<use f='codebrowser/apply.c' l='3149' u='c' c='apply_binary'/>
+<use f='codebrowser/apply.c' l='3194' u='c' c='apply_binary'/>
+<use f='codebrowser/builtin/index-pack.c' l='960' u='c' c='resolve_delta'/>
+<use f='codebrowser/builtin/replace.c' l='358' u='c' c='check_one_mergetag'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='261' u='c' c='write_object'/>
+<use f='codebrowser/cache-tree.c' l='404' u='c' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='410' u='c' c='update_one'/>
+<use f='codebrowser/convert.c' l='904' u='c' c='ident_to_worktree'/>
+<use f='codebrowser/diffcore-rename.c' l='263' u='c' c='hash_filespec'/>
+<use f='codebrowser/dir.c' l='810' u='c' c='add_excludes'/>
+<use f='codebrowser/log-tree.c' l='491' u='c' c='show_one_mergetag'/>
+<use f='codebrowser/sha1_file.c' l='1645' u='c' c='check_sha1_signature'/>
+<use f='codebrowser/sha1_file.c' l='3061' u='c' c='pretend_sha1_file'/>
+<def f='codebrowser/sha1_file.c' l='3243' ll='3250' type='int hash_sha1_file(const void * buf, unsigned long len, const char * type, unsigned char * sha1)'/>
+<use f='codebrowser/sha1_file.c' l='3541' u='c' c='index_mem'/>
+<use f='codebrowser/sha1_file.c' l='3564' u='c' c='index_stream_convert_blob'/>
+<use f='codebrowser/sha1_file.c' l='3673' u='c' c='index_path'/>

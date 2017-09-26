@@ -1,0 +1,13 @@
+<dec f='codebrowser/sha1-lookup.h' l='6' type='int sha1_pos(const unsigned char * sha1, void * table, size_t nr, sha1_access_fn * fn)'/>
+<use f='codebrowser/builtin/name-rev.c' l='283' u='c' c='get_exact_ref_match'/>
+<use f='codebrowser/commit.c' l='108' u='c' c='commit_graft_pos'/>
+<use f='codebrowser/pack-bitmap-write.c' l='477' u='c' c='write_selected_commits_v1'/>
+<use f='codebrowser/replace_object.c' l='25' u='c' c='replace_object_pos'/>
+<use f='codebrowser/rerere.c' l='149' u='c' c='find_rerere_dir'/>
+<use f='codebrowser/sha1-array.c' l='33' u='c' c='oid_array_lookup'/>
+<def f='codebrowser/sha1-lookup.c' l='53' ll='101' type='int sha1_pos(const unsigned char * sha1, void * table, size_t nr, sha1_access_fn * fn)'/>
+<doc f='codebrowser/sha1-lookup.c' l='48'>/*
+ * The table should contain &quot;nr&quot; elements.
+ * The sha1 of element i (between 0 and nr - 1) should be returned
+ * by &quot;fn(i, table)&quot;.
+ */</doc>

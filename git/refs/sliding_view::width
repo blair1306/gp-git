@@ -1,0 +1,6 @@
+<dec f='codebrowser/vcs-svn/sliding_window.h' l='9' type='size_t'/>
+<offset>128</offset>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='50' u='r' c='move_window'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='55' u='r' c='move_window'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='77' u='w' c='move_window'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='175' u='r' c='copyfrom_source'/>

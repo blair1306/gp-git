@@ -1,0 +1,14 @@
+<dec f='codebrowser/cache.h' l='597' type='int read_index_preload(struct index_state * , const struct pathspec * pathspec)'/>
+<use f='codebrowser/builtin/am.c' l='2311' u='c' c='cmd_am'/>
+<use f='codebrowser/builtin/checkout.c' l='281' macro='1' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='477' macro='1' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='350' macro='1' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='1388' macro='1' u='c'/>
+<use f='codebrowser/builtin/describe.c' l='540' macro='1' u='c'/>
+<use f='codebrowser/builtin/diff-files.c' l='69' macro='1' u='c'/>
+<use f='codebrowser/builtin/diff-index.c' l='51' macro='1' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='148' macro='1' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='250' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='768' macro='1' u='c'/>
+<def f='codebrowser/preload-index.c' l='108' ll='115' type='int read_index_preload(struct index_state * index, const struct pathspec * pathspec)'/>
+<use f='codebrowser/sequencer.c' l='1178' u='c' c='read_and_refresh_cache'/>

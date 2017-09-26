@@ -1,0 +1,9 @@
+<dec f='codebrowser/dir.h' l='115' type='unsigned int'/>
+<offset>480</offset>
+<use f='codebrowser/dir.c' l='707' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='707' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='707' u='w' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='707' u='w' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='707' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='707' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='2600' u='w' c='read_one_dir'/>

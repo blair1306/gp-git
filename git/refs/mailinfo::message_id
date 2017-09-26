@@ -1,0 +1,6 @@
+<dec f='codebrowser/mailinfo.h' l='23' type='char *'/>
+<offset>1408</offset>
+<use f='codebrowser/mailinfo.c' l='576' u='w' c='check_header'/>
+<use f='codebrowser/mailinfo.c' l='803' u='r' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='805' u='r' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='1162' u='r' c='clear_mailinfo'/>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>path.h source code [codebrowser/path.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/path.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='path.h.html'>path.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/PATH_H">PATH_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/PATH_H" data-ref="_M/PATH_H">PATH_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type" id="repository" title='repository' data-ref="repository">repository</dfn>;</td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/*</i></td></tr>
+<tr><th id="7">7</th><td><i> * Return a statically allocated filename, either generically (mkpath), in</i></td></tr>
+<tr><th id="8">8</th><td><i> * the repository directory (git_path), or in a submodule's repository</i></td></tr>
+<tr><th id="9">9</th><td><i> * directory (git_path_submodule). In all cases, note that the result</i></td></tr>
+<tr><th id="10">10</th><td><i> * may be overwritten by another call to _any_ of the functions. Consider</i></td></tr>
+<tr><th id="11">11</th><td><i> * using the safer "dup" or "strbuf" formats below (in some cases, the</i></td></tr>
+<tr><th id="12">12</th><td><i> * unsafe versions have already been removed).</i></td></tr>
+<tr><th id="13">13</th><td><i> */</i></td></tr>
+<tr><th id="14">14</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="mkpath" title='mkpath' data-ref="mkpath">mkpath</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="8906fmt" title='fmt' data-type='const char *' data-ref="8906fmt">fmt</dfn>, ...) <b>__attribute__</b>((format (printf, <var>1</var>, <var>2</var>)));</td></tr>
+<tr><th id="15">15</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="git_path" title='git_path' data-ref="git_path">git_path</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="8907fmt" title='fmt' data-type='const char *' data-ref="8907fmt">fmt</dfn>, ...) <b>__attribute__</b>((format (printf, <var>1</var>, <var>2</var>)));</td></tr>
+<tr><th id="16">16</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="git_common_path" title='git_common_path' data-ref="git_common_path">git_common_path</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8908fmt" title='fmt' data-type='const char *' data-ref="8908fmt">fmt</dfn>, ...) <b>__attribute__</b>((format (printf, <var>1</var>, <var>2</var>)));</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="mksnpath" title='mksnpath' data-ref="mksnpath">mksnpath</dfn>(<em>char</em> *<dfn class="local col9 decl" id="8909buf" title='buf' data-type='char *' data-ref="8909buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="8910n" title='n' data-type='size_t' data-ref="8910n">n</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="8911fmt" title='fmt' data-type='const char *' data-ref="8911fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="19">19</th><td>	<b>__attribute__</b>((format (printf, <var>3</var>, <var>4</var>)));</td></tr>
+<tr><th id="20">20</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="strbuf_git_path" title='strbuf_git_path' data-ref="strbuf_git_path">strbuf_git_path</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col2 decl" id="8912sb" title='sb' data-type='struct strbuf *' data-ref="8912sb">sb</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="8913fmt" title='fmt' data-type='const char *' data-ref="8913fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="21">21</th><td>	<b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)));</td></tr>
+<tr><th id="22">22</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="strbuf_git_common_path" title='strbuf_git_common_path' data-ref="strbuf_git_common_path">strbuf_git_common_path</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col4 decl" id="8914sb" title='sb' data-type='struct strbuf *' data-ref="8914sb">sb</dfn>,</td></tr>
+<tr><th id="23">23</th><td>				   <em>const</em> <b>struct</b> <a class="type" href="#repository" title='repository' data-ref="repository">repository</a> *<dfn class="local col5 decl" id="8915repo" title='repo' data-type='const struct repository *' data-ref="8915repo">repo</dfn>,</td></tr>
+<tr><th id="24">24</th><td>				   <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="8916fmt" title='fmt' data-type='const char *' data-ref="8916fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="25">25</th><td>	<b>__attribute__</b>((format (printf, <var>3</var>, <var>4</var>)));</td></tr>
+<tr><th id="26">26</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="git_path_buf" title='git_path_buf' data-ref="git_path_buf">git_path_buf</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col7 decl" id="8917buf" title='buf' data-type='struct strbuf *' data-ref="8917buf">buf</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8918fmt" title='fmt' data-type='const char *' data-ref="8918fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="27">27</th><td>	<b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)));</td></tr>
+<tr><th id="28">28</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="strbuf_git_path_submodule" title='strbuf_git_path_submodule' data-ref="strbuf_git_path_submodule">strbuf_git_path_submodule</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col9 decl" id="8919sb" title='sb' data-type='struct strbuf *' data-ref="8919sb">sb</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="8920path" title='path' data-type='const char *' data-ref="8920path">path</dfn>,</td></tr>
+<tr><th id="29">29</th><td>				     <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="8921fmt" title='fmt' data-type='const char *' data-ref="8921fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="30">30</th><td>	<b>__attribute__</b>((format (printf, <var>3</var>, <var>4</var>)));</td></tr>
+<tr><th id="31">31</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="git_pathdup" title='git_pathdup' data-ref="git_pathdup">git_pathdup</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="8922fmt" title='fmt' data-type='const char *' data-ref="8922fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="32">32</th><td>	<b>__attribute__</b>((format (printf, <var>1</var>, <var>2</var>)));</td></tr>
+<tr><th id="33">33</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="mkpathdup" title='mkpathdup' data-ref="mkpathdup">mkpathdup</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="8923fmt" title='fmt' data-type='const char *' data-ref="8923fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="34">34</th><td>	<b>__attribute__</b>((format (printf, <var>1</var>, <var>2</var>)));</td></tr>
+<tr><th id="35">35</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="git_pathdup_submodule" title='git_pathdup_submodule' data-ref="git_pathdup_submodule">git_pathdup_submodule</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="8924path" title='path' data-type='const char *' data-ref="8924path">path</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="8925fmt" title='fmt' data-type='const char *' data-ref="8925fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="36">36</th><td>	<b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)));</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="repo_git_path" title='repo_git_path' data-ref="repo_git_path">repo_git_path</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#repository" title='repository' data-ref="repository">repository</a> *<dfn class="local col6 decl" id="8926repo" title='repo' data-type='const struct repository *' data-ref="8926repo">repo</dfn>,</td></tr>
+<tr><th id="39">39</th><td>			   <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="8927fmt" title='fmt' data-type='const char *' data-ref="8927fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="40">40</th><td>	<b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)));</td></tr>
+<tr><th id="41">41</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="strbuf_repo_git_path" title='strbuf_repo_git_path' data-ref="strbuf_repo_git_path">strbuf_repo_git_path</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col8 decl" id="8928sb" title='sb' data-type='struct strbuf *' data-ref="8928sb">sb</dfn>,</td></tr>
+<tr><th id="42">42</th><td>				 <em>const</em> <b>struct</b> <a class="type" href="#repository" title='repository' data-ref="repository">repository</a> *<dfn class="local col9 decl" id="8929repo" title='repo' data-type='const struct repository *' data-ref="8929repo">repo</dfn>,</td></tr>
+<tr><th id="43">43</th><td>				 <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="8930fmt" title='fmt' data-type='const char *' data-ref="8930fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="44">44</th><td>	<b>__attribute__</b>((format (printf, <var>3</var>, <var>4</var>)));</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="repo_worktree_path" title='repo_worktree_path' data-ref="repo_worktree_path">repo_worktree_path</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#repository" title='repository' data-ref="repository">repository</a> *<dfn class="local col1 decl" id="8931repo" title='repo' data-type='const struct repository *' data-ref="8931repo">repo</dfn>,</td></tr>
+<tr><th id="47">47</th><td>				<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="8932fmt" title='fmt' data-type='const char *' data-ref="8932fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="48">48</th><td>	<b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)));</td></tr>
+<tr><th id="49">49</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="strbuf_repo_worktree_path" title='strbuf_repo_worktree_path' data-ref="strbuf_repo_worktree_path">strbuf_repo_worktree_path</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col3 decl" id="8933sb" title='sb' data-type='struct strbuf *' data-ref="8933sb">sb</dfn>,</td></tr>
+<tr><th id="50">50</th><td>				      <em>const</em> <b>struct</b> <a class="type" href="#repository" title='repository' data-ref="repository">repository</a> *<dfn class="local col4 decl" id="8934repo" title='repo' data-type='const struct repository *' data-ref="8934repo">repo</dfn>,</td></tr>
+<tr><th id="51">51</th><td>				      <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="8935fmt" title='fmt' data-type='const char *' data-ref="8935fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="52">52</th><td>	<b>__attribute__</b>((format (printf, <var>3</var>, <var>4</var>)));</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="report_linked_checkout_garbage" title='report_linked_checkout_garbage' data-ref="report_linked_checkout_garbage">report_linked_checkout_garbage</dfn>(<em>void</em>);</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><i>/*</i></td></tr>
+<tr><th id="57">57</th><td><i> * You can define a static memoized git path like:</i></td></tr>
+<tr><th id="58">58</th><td><i> *</i></td></tr>
+<tr><th id="59">59</th><td><i> *    static GIT_PATH_FUNC(git_path_foo, "FOO");</i></td></tr>
+<tr><th id="60">60</th><td><i> *</i></td></tr>
+<tr><th id="61">61</th><td><i> * or use one of the global ones below.</i></td></tr>
+<tr><th id="62">62</th><td><i> */</i></td></tr>
+<tr><th id="63">63</th><td><u>#define <dfn class="macro" id="_M/GIT_PATH_FUNC" data-ref="_M/GIT_PATH_FUNC">GIT_PATH_FUNC</dfn>(func, filename) \</u></td></tr>
+<tr><th id="64">64</th><td><u>	const char *func(void) \</u></td></tr>
+<tr><th id="65">65</th><td><u>	{ \</u></td></tr>
+<tr><th id="66">66</th><td><u>		static char *ret; \</u></td></tr>
+<tr><th id="67">67</th><td><u>		if (!ret) \</u></td></tr>
+<tr><th id="68">68</th><td><u>			ret = git_pathdup(filename); \</u></td></tr>
+<tr><th id="69">69</th><td><u>		return ret; \</u></td></tr>
+<tr><th id="70">70</th><td><u>	}</u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="git_path_cherry_pick_head" title='git_path_cherry_pick_head' data-ref="git_path_cherry_pick_head">git_path_cherry_pick_head</dfn>(<em>void</em>);</td></tr>
+<tr><th id="73">73</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="git_path_revert_head" title='git_path_revert_head' data-ref="git_path_revert_head">git_path_revert_head</dfn>(<em>void</em>);</td></tr>
+<tr><th id="74">74</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="git_path_squash_msg" title='git_path_squash_msg' data-ref="git_path_squash_msg">git_path_squash_msg</dfn>(<em>void</em>);</td></tr>
+<tr><th id="75">75</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="git_path_merge_msg" title='git_path_merge_msg' data-ref="git_path_merge_msg">git_path_merge_msg</dfn>(<em>void</em>);</td></tr>
+<tr><th id="76">76</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="git_path_merge_rr" title='git_path_merge_rr' data-ref="git_path_merge_rr">git_path_merge_rr</dfn>(<em>void</em>);</td></tr>
+<tr><th id="77">77</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="git_path_merge_mode" title='git_path_merge_mode' data-ref="git_path_merge_mode">git_path_merge_mode</dfn>(<em>void</em>);</td></tr>
+<tr><th id="78">78</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="git_path_merge_head" title='git_path_merge_head' data-ref="git_path_merge_head">git_path_merge_head</dfn>(<em>void</em>);</td></tr>
+<tr><th id="79">79</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="git_path_fetch_head" title='git_path_fetch_head' data-ref="git_path_fetch_head">git_path_fetch_head</dfn>(<em>void</em>);</td></tr>
+<tr><th id="80">80</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="git_path_shallow" title='git_path_shallow' data-ref="git_path_shallow">git_path_shallow</dfn>(<em>void</em>);</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><u>#<span data-ppcond="1">endif</span> /* PATH_H */</u></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='abspath.c.html'>codebrowser/abspath.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

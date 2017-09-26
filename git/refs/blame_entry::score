@@ -1,0 +1,12 @@
+<dec f='codebrowser/blame.h' l='94' type='unsigned int'/>
+<use f='codebrowser/blame.c' l='459' u='w' c='blame_coalesce'/>
+<use f='codebrowser/blame.c' l='845' u='w' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='899' u='w' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='984' u='r' c='blame_entry_score'/>
+<use f='codebrowser/blame.c' l='985' u='r' c='blame_entry_score'/>
+<use f='codebrowser/blame.c' l='996' u='w' c='blame_entry_score'/>
+<offset>224</offset>
+<doc f='codebrowser/blame.h' l='91'>/* how significant this entry is -- cached to avoid
+	 * scanning the lines over and over.
+	 */</doc>
+<use f='codebrowser/builtin/blame.c' l='410' u='r' c='emit_other'/>

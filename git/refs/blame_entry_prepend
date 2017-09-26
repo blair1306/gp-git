@@ -1,0 +1,3 @@
+<dec f='codebrowser/blame.h' l='173' type='struct blame_entry * blame_entry_prepend(struct blame_entry * head, long start, long end, struct blame_origin * o)'/>
+<def f='codebrowser/blame.c' l='1852' ll='1864' type='struct blame_entry * blame_entry_prepend(struct blame_entry * head, long start, long end, struct blame_origin * o)'/>
+<use f='codebrowser/builtin/blame.c' l='897' u='c' c='cmd_blame'/>

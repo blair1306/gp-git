@@ -1,0 +1,6 @@
+<dec f='codebrowser/pack-bitmap.h' l='47' type='void bitmap_writer_build_type_index(struct pack_idx_entry ** index, uint32_t index_nr)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='866' u='c' c='write_pack_file'/>
+<def f='codebrowser/pack-bitmap-write.c' l='51' ll='104' type='void bitmap_writer_build_type_index(struct pack_idx_entry ** index, uint32_t index_nr)'/>
+<doc f='codebrowser/pack-bitmap-write.c' l='48'>/**
+ * Build the initial type index for the packfile
+ */</doc>

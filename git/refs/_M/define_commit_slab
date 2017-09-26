@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit-slab.h' l='51'/>
+<use f='codebrowser/commit.c' l='236' u='c'/>
+<use f='codebrowser/commit.c' l='587' u='c'/>
+<use f='codebrowser/commit.c' l='590' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1498' u='c'/>
+<use f='codebrowser/revision.c' l='3025' u='c'/>
+<use f='codebrowser/shallow.c' l='432' u='c'/>

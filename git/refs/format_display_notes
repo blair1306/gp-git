@@ -1,0 +1,15 @@
+<dec f='codebrowser/notes.h' l='280' type='void format_display_notes(const struct object_id * object_oid, struct strbuf * sb, const char * output_encoding, int raw)'/>
+<doc f='codebrowser/notes.h' l='269'>/*
+ * Append notes for the given &apos;object_sha1&apos; from all trees set up by
+ * init_display_notes() to &apos;sb&apos;.  The &apos;flags&apos; are a bitwise
+ * combination of
+ *
+ * - NOTES_SHOW_HEADER: add a &apos;Notes (refname):&apos; header
+ *
+ * - NOTES_INDENT: indent the notes by 4 places
+ *
+ * You *must* call init_display_notes() before using this function.
+ */</doc>
+<use f='codebrowser/log-tree.c' l='659' u='c' c='show_log'/>
+<def f='codebrowser/notes.c' l='1281' ll='1289' type='void format_display_notes(const struct object_id * object_oid, struct strbuf * sb, const char * output_encoding, int raw)'/>
+<use f='codebrowser/revision.c' l='2941' u='c' c='commit_match'/>

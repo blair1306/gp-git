@@ -1,0 +1,5 @@
+<dec f='codebrowser/dir.h' l='297'/>
+<doc f='codebrowser/dir.h' l='296'>/* Remove the contents of path, but leave path itself. */</doc>
+<use f='codebrowser/dir.c' l='2246' u='c'/>
+<use f='codebrowser/dir.c' l='2257' u='c'/>
+<use f='codebrowser/notes-merge.c' l='747' u='c'/>

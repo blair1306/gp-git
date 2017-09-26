@@ -1,0 +1,4 @@
+<dec f='codebrowser/apply.h' l='77' type='int'/>
+<use f='codebrowser/apply.c' l='2109' u='r' c='use_patch'/>
+<use f='codebrowser/apply.c' l='4756' u='w' c='apply_option_parse_include'/>
+<offset>1536</offset>

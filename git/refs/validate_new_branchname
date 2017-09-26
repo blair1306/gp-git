@@ -1,0 +1,21 @@
+<dec f='codebrowser/branch.h' l='41' type='int validate_new_branchname(const char * name, struct strbuf * ref, int force, int attr_only)'/>
+<def f='codebrowser/branch.c' l='181' ll='201' type='int validate_new_branchname(const char * name, struct strbuf * ref, int force, int attr_only)'/>
+<use f='codebrowser/branch.c' l='246' u='c' c='create_branch'/>
+<doc f='codebrowser/branch.h' l='25'>/*
+ * Validates that the requested branch may be created, returning the
+ * interpreted ref in ref, force indicates whether (non-head) branches
+ * may be overwritten. A non-zero return value indicates that the force
+ * parameter was non-zero and the branch already exists.
+ *
+ * Contrary to all of the above, when attr_only is 1, the caller is
+ * not interested in verifying if it is Ok to update the named
+ * branch to point at a potentially different commit. It is merely
+ * asking if it is OK to change some attribute for the named branch
+ * (e.g. tracking upstream).
+ *
+ * NEEDSWORK: This needs to be split into two separate functions in the
+ * longer run for sanity.
+ *
+ */</doc>
+<use f='codebrowser/builtin/branch.c' l='486' u='c' c='rename_branch'/>
+<use f='codebrowser/builtin/checkout.c' l='1287' u='c' c='cmd_checkout'/>

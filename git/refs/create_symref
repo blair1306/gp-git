@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs.h' l='450' type='int create_symref(const char * refname, const char * target, const char * logmsg)'/>
+<use f='codebrowser/builtin/checkout.c' l='675' u='c' c='update_refs_for_switch'/>
+<use f='codebrowser/builtin/checkout.c' l='1075' u='c' c='switch_unborn_to_new_branch'/>
+<use f='codebrowser/builtin/clone.c' l='667' u='c' c='update_remote_refs'/>
+<use f='codebrowser/builtin/clone.c' l='681' u='c' c='update_head'/>
+<use f='codebrowser/builtin/init-db.c' l='237' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/notes.c' l='864' u='c' c='merge'/>
+<use f='codebrowser/builtin/remote.c' l='234' u='c' c='add'/>
+<use f='codebrowser/builtin/remote.c' l='729' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='1267' u='c' c='set_head'/>
+<use f='codebrowser/builtin/symbolic-ref.c' l='73' u='c' c='cmd_symbolic_ref'/>
+<def f='codebrowser/refs.c' l='1734' ll='1739' type='int create_symref(const char * ref_target, const char * refs_heads_master, const char * logmsg)'/>
+<use f='codebrowser/sequencer.c' l='2131' u='c' c='pick_commits'/>

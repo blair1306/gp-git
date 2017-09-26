@@ -1,0 +1,7 @@
+<dec f='codebrowser/ewah/ewok.h' l='211' type='void bitmap_free(struct bitmap * self)'/>
+<def f='codebrowser/ewah/bitmap.c' l='206' ll='213' type='void bitmap_free(struct bitmap * bitmap)'/>
+<use f='codebrowser/pack-bitmap-write.c' l='321' u='c' c='bitmap_writer_build'/>
+<use f='codebrowser/pack-bitmap.c' l='741' u='c' c='prepare_bitmap_walk'/>
+<use f='codebrowser/pack-bitmap.c' l='821' u='c' c='traverse_bitmap_commit_list'/>
+<use f='codebrowser/pack-bitmap.c' l='975' u='c' c='test_bitmap_walk'/>
+<use f='codebrowser/pack-bitmap.c' l='1066' u='c' c='rebuild_existing_bitmaps'/>

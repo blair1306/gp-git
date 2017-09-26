@@ -1,0 +1,3 @@
+<def f='codebrowser/tempfile.h' l='186' ll='190' type='int mks_tempfile_t(struct tempfile * tempfile, const char * template)'/>
+<doc f='codebrowser/tempfile.h' l='185'>/* See &quot;mks_tempfile functions&quot; above. */</doc>
+<use f='codebrowser/gpg-interface.c' l='209' u='c' c='verify_signed_buffer'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/vcs-svn/sliding_window.h' l='10' type='off_t'/>
+<offset>192</offset>
+<doc f='codebrowser/vcs-svn/sliding_window.h' l='10'>/* -1 means unlimited */</doc>
+<use f='codebrowser/vcs-svn/fast_export.c' l='209' u='a' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='211' u='r' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='215' u='r' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='216' u='w' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='217' u='r' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='223' u='r' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='223' u='r' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='224' u='w' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='225' u='r' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='57' u='r' c='move_window'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='57' u='r' c='move_window'/>

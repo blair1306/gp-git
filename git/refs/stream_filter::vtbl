@@ -1,0 +1,7 @@
+<dec f='codebrowser/convert.c' l='1235' type='struct stream_filter_vtbl *'/>
+<use f='codebrowser/convert.c' l='1380' u='w' c='lf_to_crlf_filter'/>
+<use f='codebrowser/convert.c' l='1486' u='w' c='cascade_filter'/>
+<use f='codebrowser/convert.c' l='1630' u='w' c='ident_filter'/>
+<use f='codebrowser/convert.c' l='1668' u='r' c='free_stream_filter'/>
+<use f='codebrowser/convert.c' l='1675' u='r' c='stream_filter'/>
+<offset>0</offset>

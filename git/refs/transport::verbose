@@ -1,0 +1,12 @@
+<dec f='codebrowser/transport.h' l='116' type='int'/>
+<offset>896</offset>
+<use f='codebrowser/transport-helper.c' l='349' u='r' c='standard_options'/>
+<use f='codebrowser/transport.c' l='171' u='r' c='connect_setup'/>
+<use f='codebrowser/transport.c' l='221' u='r' c='fetch_refs_via_pack'/>
+<use f='codebrowser/transport.c' l='222' u='r' c='fetch_refs_via_pack'/>
+<use f='codebrowser/transport.c' l='558' u='r' c='git_transport_push'/>
+<use f='codebrowser/transport.c' l='559' u='r' c='git_transport_push'/>
+<use f='codebrowser/transport.c' l='867' u='w' c='transport_set_verbosity'/>
+<use f='codebrowser/transport.c' l='869' u='w' c='transport_set_verbosity'/>
+<use f='codebrowser/transport.c' l='984' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='985' u='r' c='transport_push'/>

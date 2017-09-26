@@ -1,0 +1,28 @@
+<def f='codebrowser/blame.h' l='100' ll='150'/>
+<size>184</size>
+<doc f='codebrowser/blame.h' l='97'>/*
+ * The current state of the blame assignment.
+ */</doc>
+<mbr r='blame_scoreboard::final' o='0' t='struct commit *'/>
+<mbr r='blame_scoreboard::commits' o='64' t='struct prio_queue'/>
+<mbr r='blame_scoreboard::revs' o='384' t='struct rev_info *'/>
+<mbr r='blame_scoreboard::path' o='448' t='const char *'/>
+<mbr r='blame_scoreboard::final_buf' o='512' t='const char *'/>
+<mbr r='blame_scoreboard::final_buf_size' o='576' t='unsigned long'/>
+<mbr r='blame_scoreboard::ent' o='640' t='struct blame_entry *'/>
+<mbr r='blame_scoreboard::num_lines' o='704' t='int'/>
+<mbr r='blame_scoreboard::lineno' o='768' t='int *'/>
+<mbr r='blame_scoreboard::num_read_blob' o='832' t='int'/>
+<mbr r='blame_scoreboard::num_get_patch' o='864' t='int'/>
+<mbr r='blame_scoreboard::num_commits' o='896' t='int'/>
+<mbr r='blame_scoreboard::move_score' o='928' t='unsigned int'/>
+<mbr r='blame_scoreboard::copy_score' o='960' t='unsigned int'/>
+<mbr r='blame_scoreboard::contents_from' o='1024' t='const char *'/>
+<mbr r='blame_scoreboard::reverse' o='1088' t='int'/>
+<mbr r='blame_scoreboard::show_root' o='1120' t='int'/>
+<mbr r='blame_scoreboard::xdl_opts' o='1152' t='int'/>
+<mbr r='blame_scoreboard::no_whole_file_rename' o='1184' t='int'/>
+<mbr r='blame_scoreboard::debug' o='1216' t='int'/>
+<mbr r='blame_scoreboard::on_sanity_fail' o='1280' t='void (*)(struct blame_scoreboard *, int)'/>
+<mbr r='blame_scoreboard::found_guilty_entry' o='1344' t='void (*)(struct blame_entry *, void *)'/>
+<mbr r='blame_scoreboard::found_guilty_entry_data' o='1408' t='void *'/>

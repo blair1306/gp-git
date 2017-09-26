@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='813' type='3'/>
+<use f='codebrowser/branch.c' l='148' c='setup_tracking'/>
+<use f='codebrowser/branch.c' l='243' u='r' c='create_branch'/>
+<use f='codebrowser/builtin/branch.c' l='563' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='563' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='563' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='563' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/checkout.c' l='1154' u='r' c='cmd_checkout'/>
+<use f='codebrowser/builtin/checkout.c' l='1154' u='r' c='cmd_checkout'/>
+<use f='codebrowser/builtin/checkout.c' l='1154' u='r' c='cmd_checkout'/>
+<use f='codebrowser/builtin/checkout.c' l='1154' u='r' c='cmd_checkout'/>

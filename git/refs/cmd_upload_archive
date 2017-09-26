@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='232' type='int cmd_upload_archive(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/upload-archive.c' l='75' ll='130' type='int cmd_upload_archive(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='475'/>
+<use f='codebrowser/git.c' l='475'/>
+<use f='codebrowser/git.c' l='475'/>
+<use f='codebrowser/git.c' l='475'/>

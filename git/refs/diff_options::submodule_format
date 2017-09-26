@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='166' type='enum diff_submodule_format'/>
+<offset>1696</offset>
+<use f='codebrowser/diff.c' l='143' u='w' c='parse_submodule_params'/>
+<use f='codebrowser/diff.c' l='145' u='w' c='parse_submodule_params'/>
+<use f='codebrowser/diff.c' l='147' u='w' c='parse_submodule_params'/>
+<use f='codebrowser/diff.c' l='2361' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2372' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='3986' u='w' c='diff_opt_parse'/>

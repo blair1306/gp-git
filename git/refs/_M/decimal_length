@@ -1,0 +1,2 @@
+<dec f='codebrowser/git-compat-util.h' l='119'/>
+<doc f='codebrowser/git-compat-util.h' l='118'>/* Approximation of the length of the decimal representation of this type. */</doc>

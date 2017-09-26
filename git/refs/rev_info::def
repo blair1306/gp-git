@@ -1,0 +1,10 @@
+<dec f='codebrowser/revision.h' l='71' type='const char *'/>
+<offset>576</offset>
+<use f='codebrowser/revision.c' l='1758' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2311' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2312' u='w' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2317' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2321' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2322' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2323' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2324' u='r' c='setup_revisions'/>

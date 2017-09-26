@@ -1,0 +1,4 @@
+<dec f='codebrowser/tree.h' l='19' type='int parse_tree_gently(struct tree * tree, int quiet_on_missing)'/>
+<use f='codebrowser/tree.h' l='22' u='c' c='parse_tree'/>
+<use f='codebrowser/list-objects.c' l='87' u='c' c='process_tree'/>
+<def f='codebrowser/tree.c' l='214' ll='233' type='int parse_tree_gently(struct tree * item, int quiet_on_missing)'/>

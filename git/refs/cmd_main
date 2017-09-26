@@ -1,0 +1,67 @@
+<dec f='codebrowser/git-compat-util.h' l='1172' type='int cmd_main(int , const char ** )'/>
+<use f='codebrowser/common-main.c' l='43' u='c' c='main'/>
+<def f='codebrowser/credential-cache--daemon.c' l='261' ll='297' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/credential-cache.c' l='99' ll='136' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/credential-store.c' l='145' ll='194' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/daemon.c' l='1206' ll='1403' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/fast-import.c' l='3445' ll='3551' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/git.c' l='621' ll='699' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/http-backend.c' l='657' ll='713' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/http-fetch.c' l='10' ll='95' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/http-push.c' l='1686' ll='1981' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/imap-send.c' l='1497' ll='1566' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/remote-curl.c' l='1030' ll='1114' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/remote-testsvn.c' l='282' ll='336' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/sh-i18n--envsubst.c' l='66' ll='112' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/shell.c' l='141' ll='212' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/show-index.c' l='7' ll='85' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-chmtime.c' l='59' ll='119' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-config.c' l='80' ll='207' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-ctype.c' l='31' ll='42' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-date.c' l='74' ll='105' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-delta.c' l='18' ll='78' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-dump-cache-tree.c' l='57' ll='68' type='int cmd_main(int ac, const char ** av)'/>
+<def f='codebrowser/t/helper/test-dump-split-index.c' l='10' ll='36' type='int cmd_main(int ac, const char ** av)'/>
+<def f='codebrowser/t/helper/test-dump-untracked-cache.c' l='41' ll='64' type='int cmd_main(int ac, const char ** av)'/>
+<def f='codebrowser/t/helper/test-fake-ssh.c' l='5' ll='30' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-genrandom.c' l='9' ll='33' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-hashmap.c' l='145' ll='267' type='int cmd_main(int argc, const char ** argv)'/>
+<doc f='codebrowser/t/helper/test-hashmap.c' l='133'>/*
+ * Read stdin line by line and print result of commands to stdout:
+ *
+ * hash key -&gt; strhash(key) memhash(key) strihash(key) memihash(key)
+ * put key value -&gt; NULL / old value
+ * get key -&gt; NULL / value
+ * remove key -&gt; NULL / old value
+ * iterate -&gt; key1 value1\nkey2 value2\n...
+ * size -&gt; tablesize numentries
+ *
+ * perfhashmap method rounds -&gt; test hashmap.[ch] performance
+ */</doc>
+<def f='codebrowser/t/helper/test-index-version.c' l='3' ll='14' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='187' ll='264' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-line-buffer.c' l='53' ll='91' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-match-trees.c' l='4' ll='26' type='int cmd_main(int ac, const char ** av)'/>
+<def f='codebrowser/t/helper/test-mergesort.c' l='25' ll='52' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-mktemp.c' l='6' ll='14' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-online-cpus.c' l='4' ll='8' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-parse-options.c' l='97' ll='179' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-path-utils.c' l='173' ll='276' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-prio-queue.c' l='19' ll='39' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-read-cache.c' l='3' ll='14' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-ref-store.c' l='277' ll='296' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-regex.c' l='39' ll='75' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-revision-walking.c' l='48' ll='68' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-run-command.c' l='52' ll='87' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-scrap-cache-tree.c' l='8' ll='18' type='int cmd_main(int ac, const char ** av)'/>
+<def f='codebrowser/t/helper/test-sha1-array.c' l='10' ll='35' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-sha1.c' l='3' ll='56' type='int cmd_main(int ac, const char ** av)'/>
+<def f='codebrowser/t/helper/test-sigchain.c' l='16' ll='22' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-strcmp-offset.c' l='3' ll='22' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-string-list.c' l='44' ll='128' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-submodule-config.c' l='18' ll='77' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-subprocess.c' l='4' ll='19' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-svn-fe.c' l='38' ll='52' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-urlmatch-normalization.c' l='4' ll='50' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/t/helper/test-wildmatch.c' l='3' ll='21' type='int cmd_main(int argc, const char ** argv)'/>
+<def f='codebrowser/upload-pack.c' l='1035' ll='1072' type='int cmd_main(int argc, const char ** argv)'/>

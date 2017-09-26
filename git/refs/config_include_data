@@ -1,0 +1,6 @@
+<def f='codebrowser/config.h' l='97' ll='102'/>
+<size>32</size>
+<mbr r='config_include_data::depth' o='0' t='int'/>
+<mbr r='config_include_data::fn' o='64' t='config_fn_t'/>
+<mbr r='config_include_data::data' o='128' t='void *'/>
+<mbr r='config_include_data::opts' o='192' t='const struct config_options *'/>

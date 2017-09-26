@@ -1,0 +1,3 @@
+<dec f='codebrowser/http.h' l='233' type='void abort_http_object_request(struct http_object_request * freq)'/>
+<use f='codebrowser/http-walker.c' l='491' u='c' c='fetch_object'/>
+<def f='codebrowser/http.c' l='2316' ll='2321' type='void abort_http_object_request(struct http_object_request * freq)'/>

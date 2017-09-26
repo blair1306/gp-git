@@ -1,0 +1,17 @@
+<dec f='codebrowser/run-command.h' l='66' type='const char * find_hook(const char * name)'/>
+<doc f='codebrowser/run-command.h' l='61'>/*
+ * Returns the path to the hook file, or NULL if the hook is missing
+ * or disabled. Note that this points to static storage that will be
+ * overwritten by further calls to find_hook and run_hook_*.
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='510' u='c' c='run_post_rewrite_hook'/>
+<use f='codebrowser/builtin/commit.c' l='943' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1541' u='c' c='run_rewrite_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='696' u='c' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='805' u='c' c='run_update_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1019' u='c' c='update_worktree'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1178' u='c' c='run_update_post_hook'/>
+<def f='codebrowser/run-command.c' l='1165' ll='1180' type='const char * find_hook(const char * name)'/>
+<use f='codebrowser/run-command.c' l='1187' u='c' c='run_hook_ve'/>
+<use f='codebrowser/sequencer.c' l='2163' u='c' c='pick_commits'/>
+<use f='codebrowser/transport.c' l='914' u='c' c='run_pre_push_hook'/>

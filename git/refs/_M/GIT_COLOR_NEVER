@@ -1,0 +1,4 @@
+<dec f='codebrowser/color.h' l='55'/>
+<use f='codebrowser/builtin/log.c' l='1632' u='c'/>
+<use f='codebrowser/diff.c' l='4068' u='c'/>
+<use f='codebrowser/sequencer.c' l='1787' u='c'/>

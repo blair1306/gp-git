@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>connect.h source code [codebrowser/connect.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/connect.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='connect.h.html'>connect.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/CONNECT_H">CONNECT_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/CONNECT_H" data-ref="_M/CONNECT_H">CONNECT_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#define <dfn class="macro" id="_M/CONNECT_VERBOSE" data-ref="_M/CONNECT_VERBOSE">CONNECT_VERBOSE</dfn>       (1u &lt;&lt; 0)</u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/CONNECT_DIAG_URL" data-ref="_M/CONNECT_DIAG_URL">CONNECT_DIAG_URL</dfn>      (1u &lt;&lt; 1)</u></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/CONNECT_IPV4" data-ref="_M/CONNECT_IPV4">CONNECT_IPV4</dfn>          (1u &lt;&lt; 2)</u></td></tr>
+<tr><th id="7">7</th><td><u>#define <dfn class="macro" id="_M/CONNECT_IPV6" data-ref="_M/CONNECT_IPV6">CONNECT_IPV6</dfn>          (1u &lt;&lt; 3)</u></td></tr>
+<tr><th id="8">8</th><td><b>extern</b> <b>struct</b> <a class="type" href="run-command.h.html#child_process" title='child_process' data-ref="child_process">child_process</a> *<dfn class="decl" id="git_connect" title='git_connect' data-ref="git_connect">git_connect</dfn>(<em>int</em> <dfn class="local col1 decl" id="1fd" title='fd' data-type='int *' data-ref="1fd">fd</dfn>[<var>2</var>], <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2url" title='url' data-type='const char *' data-ref="2url">url</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3prog" title='prog' data-type='const char *' data-ref="3prog">prog</dfn>, <em>int</em> <dfn class="local col4 decl" id="4flags" title='flags' data-type='int' data-ref="4flags">flags</dfn>);</td></tr>
+<tr><th id="9">9</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="finish_connect" title='finish_connect' data-ref="finish_connect">finish_connect</dfn>(<b>struct</b> <a class="type" href="run-command.h.html#child_process" title='child_process' data-ref="child_process">child_process</a> *<dfn class="local col5 decl" id="5conn" title='conn' data-type='struct child_process *' data-ref="5conn">conn</dfn>);</td></tr>
+<tr><th id="10">10</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="git_connection_is_socket" title='git_connection_is_socket' data-ref="git_connection_is_socket">git_connection_is_socket</dfn>(<b>struct</b> <a class="type" href="run-command.h.html#child_process" title='child_process' data-ref="child_process">child_process</a> *<dfn class="local col6 decl" id="6conn" title='conn' data-type='struct child_process *' data-ref="6conn">conn</dfn>);</td></tr>
+<tr><th id="11">11</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="server_supports" title='server_supports' data-ref="server_supports">server_supports</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7feature" title='feature' data-type='const char *' data-ref="7feature">feature</dfn>);</td></tr>
+<tr><th id="12">12</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_feature_request" title='parse_feature_request' data-ref="parse_feature_request">parse_feature_request</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8features" title='features' data-type='const char *' data-ref="8features">features</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="9feature" title='feature' data-type='const char *' data-ref="9feature">feature</dfn>);</td></tr>
+<tr><th id="13">13</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="server_feature_value" title='server_feature_value' data-ref="server_feature_value">server_feature_value</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10feature" title='feature' data-type='const char *' data-ref="10feature">feature</dfn>, <em>int</em> *<dfn class="local col1 decl" id="11len_ret" title='len_ret' data-type='int *' data-ref="11len_ret">len_ret</dfn>);</td></tr>
+<tr><th id="14">14</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="url_is_local_not_ssh" title='url_is_local_not_ssh' data-ref="url_is_local_not_ssh">url_is_local_not_ssh</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12url" title='url' data-type='const char *' data-ref="12url">url</dfn>);</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/fetch-pack.c.html'>codebrowser/builtin/fetch-pack.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

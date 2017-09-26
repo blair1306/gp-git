@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='270' type='struct commit_list * get_shallow_commits(struct object_array * heads, int depth, int shallow_flag, int not_shallow_flag)'/>
+<def f='codebrowser/shallow.c' l='77' ll='140' type='struct commit_list * get_shallow_commits(struct object_array * heads, int depth, int shallow_flag, int not_shallow_flag)'/>
+<use f='codebrowser/upload-pack.c' l='702' u='c' c='deepen'/>
+<use f='codebrowser/upload-pack.c' l='711' u='c' c='deepen'/>

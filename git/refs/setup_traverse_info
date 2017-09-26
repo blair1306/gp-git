@@ -1,0 +1,4 @@
+<dec f='codebrowser/tree-walk.h' l='84' type='void setup_traverse_info(struct traverse_info * info, const char * base)'/>
+<use f='codebrowser/builtin/merge-tree.c' l='343' u='c' c='merge_trees'/>
+<def f='codebrowser/tree-walk.c' l='167' ll='180' type='void setup_traverse_info(struct traverse_info * info, const char * base)'/>
+<use f='codebrowser/unpack-trees.c' l='1294' u='c' c='unpack_trees'/>

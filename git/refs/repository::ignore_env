@@ -1,0 +1,15 @@
+<dec f='codebrowser/repository.h' l='79' type='unsigned int'/>
+<offset>640</offset>
+<doc f='codebrowser/repository.h' l='71'>/*
+	 * Bit used during initialization to indicate if repository state (like
+	 * the location of the &apos;objectdir&apos;) should be read from the
+	 * environment.  By default this bit will be set at the begining of
+	 * &apos;repo_init()&apos; so that all repositories will ignore the environment.
+	 * The exception to this is &apos;the_repository&apos;, which doesn&apos;t go through
+	 * the normal &apos;repo_init()&apos; process.
+	 */</doc>
+<use f='codebrowser/repository.c' l='42' u='r' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='45' u='r' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='47' u='r' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='49' u='r' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='131' u='w' c='repo_init'/>

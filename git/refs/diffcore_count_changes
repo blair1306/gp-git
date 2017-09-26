@@ -1,0 +1,5 @@
+<dec f='codebrowser/diffcore.h' l='141' type='int diffcore_count_changes(struct diff_filespec * src, struct diff_filespec * dst, void ** src_count_p, void ** dst_count_p, unsigned long * src_copied, unsigned long * literal_added)'/>
+<use f='codebrowser/diff.c' l='2016' u='c' c='show_dirstat'/>
+<use f='codebrowser/diffcore-break.c' l='74' u='c' c='should_break'/>
+<def f='codebrowser/diffcore-delta.c' l='165' ll='231' type='int diffcore_count_changes(struct diff_filespec * src, struct diff_filespec * dst, void ** src_count_p, void ** dst_count_p, unsigned long * src_copied, unsigned long * literal_added)'/>
+<use f='codebrowser/diffcore-rename.c' l='193' u='c' c='estimate_similarity'/>

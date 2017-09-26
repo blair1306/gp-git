@@ -1,0 +1,4 @@
+<dec f='codebrowser/xdiff-interface.h' l='28' type='void xdiff_clear_find_func(xdemitconf_t * xecfg)'/>
+<use f='codebrowser/diff.c' l='2532' u='c' c='builtin_diff'/>
+<use f='codebrowser/grep.c' l='1831' u='c' c='grep_source_1'/>
+<def f='codebrowser/xdiff-interface.c' l='284' ll='297' type='void xdiff_clear_find_func(xdemitconf_t * xecfg)'/>

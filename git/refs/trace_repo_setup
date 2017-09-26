@@ -1,0 +1,4 @@
+<dec f='codebrowser/trace.h' l='16' type='void trace_repo_setup(const char * prefix)'/>
+<use f='codebrowser/git.c' l='328' u='c' c='run_builtin'/>
+<def f='codebrowser/trace.c' l='316' ll='340' type='void trace_repo_setup(const char * prefix)'/>
+<doc f='codebrowser/trace.c' l='315'>/* FIXME: move prefix to startup_info struct and get rid of this arg */</doc>

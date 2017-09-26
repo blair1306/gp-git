@@ -1,0 +1,19 @@
+<dec f='include/stdio.h' l='709' type='size_t fread(void *restrict __ptr, size_t __size, size_t __n, FILE *restrict __stream)'/>
+<doc f='include/stdio.h' l='705'>/* Read chunks of generic data from STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/fast-import.c' l='1263' u='c' c='stream_blob'/>
+<use f='codebrowser/refs/files-backend.c' l='1888' u='c' c='files_for_each_reflog_ent_reverse'/>
+<use f='codebrowser/show-index.c' l='16' u='c' c='cmd_main'/>
+<use f='codebrowser/show-index.c' l='22' u='c' c='cmd_main'/>
+<use f='codebrowser/show-index.c' l='26' u='c' c='cmd_main'/>
+<use f='codebrowser/show-index.c' l='40' u='c' c='cmd_main'/>
+<use f='codebrowser/show-index.c' l='54' u='c' c='cmd_main'/>
+<use f='codebrowser/show-index.c' l='57' u='c' c='cmd_main'/>
+<use f='codebrowser/show-index.c' l='60' u='c' c='cmd_main'/>
+<use f='codebrowser/show-index.c' l='71' u='c' c='cmd_main'/>
+<use f='codebrowser/strbuf.c' l='352' u='c' c='strbuf_fread'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='107' u='c' c='buffer_copy_bytes'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='123' u='c' c='buffer_skip_bytes'/>
+<use f='codebrowser/xdiff-interface.c' l='173' u='c' c='read_mmfile'/>

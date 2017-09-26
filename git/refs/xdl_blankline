@@ -1,0 +1,4 @@
+<dec f='codebrowser/xdiff/xutils.h' l='35' type='int xdl_blankline(const char * line, long size, long flags)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1008' u='c' c='xdl_mark_ignorable'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1012' u='c' c='xdl_mark_ignorable'/>
+<def f='codebrowser/xdiff/xutils.c' l='146' ll='157' type='int xdl_blankline(const char * line, long size, long flags)'/>

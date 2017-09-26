@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs/ref-cache.h' l='250' type='struct ref_iterator * cache_ref_iterator_begin(struct ref_cache * cache, const char * prefix, int prime_dir)'/>
+<use f='codebrowser/refs/files-backend.c' l='794' u='c' c='files_ref_iterator_begin'/>
+<use f='codebrowser/refs/files-backend.c' l='1102' u='c' c='files_pack_refs'/>
+<doc f='codebrowser/refs/ref-cache.h' l='244'>/*
+ * Start iterating over references in `cache`. If `prefix` is
+ * specified, only include references whose names start with that
+ * prefix. If `prime_dir` is true, then fill any incomplete
+ * directories before beginning the iteration.
+ */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='497' u='c' c='packed_ref_iterator_begin'/>
+<use f='codebrowser/refs/packed-backend.c' l='651' u='c' c='commit_packed_refs'/>
+<def f='codebrowser/refs/ref-cache.c' l='556' ll='593' type='struct ref_iterator * cache_ref_iterator_begin(struct ref_cache * cache, const char * prefix, int prime_dir)'/>

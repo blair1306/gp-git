@@ -1,0 +1,16 @@
+<dec f='codebrowser/git-compat-util.h' l='812' type='FILE * fopen_or_warn(const char * path, const char * mode)'/>
+<use f='codebrowser/attr.c' l='725' u='c' c='read_attr_from_file'/>
+<use f='codebrowser/bisect.c' l='670' u='c' c='is_expected_rev'/>
+<use f='codebrowser/builtin/blame.c' l='485' u='c' c='read_ancestry'/>
+<use f='codebrowser/commit.c' l='171' u='c' c='read_graft_file'/>
+<use f='codebrowser/config.c' l='1443' u='c' c='git_config_from_file'/>
+<use f='codebrowser/ident.c' l='76' u='c' c='add_mailname_host'/>
+<use f='codebrowser/remote.c' l='262' u='c' c='read_remotes_file'/>
+<use f='codebrowser/remote.c' l='288' u='c' c='read_branches_file'/>
+<use f='codebrowser/rerere.c' l='203' u='c' c='read_rr'/>
+<use f='codebrowser/sequencer.c' l='905' u='c' c='flush_rewritten_pending'/>
+<use f='codebrowser/sequencer.c' l='924' u='c' c='record_in_rewritten'/>
+<use f='codebrowser/sequencer.c' l='1385' u='c' c='read_populate_todo'/>
+<use f='codebrowser/server-info.c' l='136' u='c' c='read_pack_info_file'/>
+<def f='codebrowser/wrapper.c' l='437' ll='446' type='FILE * fopen_or_warn(const char * path, const char * mode)'/>
+<use f='codebrowser/wt-status.c' l='1091' u='c' c='read_line_from_git_path'/>

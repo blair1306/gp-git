@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1132' type='char * absolute_pathdup(const char * path)'/>
+<def f='codebrowser/abspath.c' l='242' ll='247' type='char * absolute_pathdup(const char * path)'/>
+<use f='codebrowser/builtin/clone.c' l='195' u='c' c='get_repo_path'/>
+<use f='codebrowser/builtin/clone.c' l='924' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='667' u='c' c='module_clone'/>
+<use f='codebrowser/worktree.c' l='108' u='c' c='mark_current_worktree'/>

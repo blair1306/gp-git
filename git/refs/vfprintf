@@ -1,0 +1,16 @@
+<dec f='include/stdio.h' l='371' type='int vfprintf(FILE *restrict __s, const char *restrict __format, struct __va_list_tag * __arg)'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='38' u='c' c='vprintf'/>
+<doc f='include/stdio.h' l='367'>/* Write formatted output to S from argument list ARG.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/builtin/am.c' l='216' u='c' c='say'/>
+<use f='codebrowser/color.c' l='380' u='c' c='color_vfprintf'/>
+<use f='codebrowser/daemon.c' l='88' u='c' c='logreport'/>
+<use f='codebrowser/fetch-pack.c' l='68' u='c' c='print_verbose'/>
+<use f='codebrowser/http-backend.c' l='133' u='c' c='not_found'/>
+<use f='codebrowser/http-backend.c' l='149' u='c' c='forbidden'/>
+<use f='codebrowser/imap-send.c' l='473' u='c' c='imap_warn'/>
+<use f='codebrowser/strbuf.c' l='743' u='c' c='fprintf_ln'/>
+<use f='codebrowser/walker.c' l='17' u='c' c='walker_say'/>
+<use f='codebrowser/write_or_die.c' l='49' u='c' c='fprintf_or_die'/>

@@ -1,0 +1,2 @@
+<dec f='include/openssl/ssl.h' l='2131' type='SSL_CTX * SSL_CTX_new(const SSL_METHOD * meth)'/>
+<use f='codebrowser/imap-send.c' l='297' u='c' c='ssl_socket_connect'/>

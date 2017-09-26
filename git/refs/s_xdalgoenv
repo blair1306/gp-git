@@ -1,0 +1,5 @@
+<def f='codebrowser/xdiff/xdiffi.h' l='34' ll='38'/>
+<size>24</size>
+<mbr r='s_xdalgoenv::mxcost' o='0' t='long'/>
+<mbr r='s_xdalgoenv::snake_cnt' o='64' t='long'/>
+<mbr r='s_xdalgoenv::heur_min' o='128' t='long'/>

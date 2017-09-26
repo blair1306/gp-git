@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='2145' type='1048594'/>
+<use f='codebrowser/http.c' l='1709' u='r' c='http_request'/>

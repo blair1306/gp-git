@@ -1,0 +1,8 @@
+<dec f='codebrowser/grep.h' l='108' type='unsigned int'/>
+<offset>32</offset>
+<use f='codebrowser/grep.c' l='1252' u='w' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1259' u='w' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1859' u='w' c='clr_hit_marker'/>
+<use f='codebrowser/grep.c' l='1862' u='w' c='clr_hit_marker'/>
+<use f='codebrowser/grep.c' l='1872' u='r' c='chk_hit_marker'/>
+<use f='codebrowser/grep.c' l='1873' u='r' c='chk_hit_marker'/>

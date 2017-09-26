@@ -1,0 +1,2 @@
+<dec f='codebrowser/refs.h' l='723' type='int ref_storage_backend_exists(const char * name)'/>
+<def f='codebrowser/refs.c' l='31' ll='34' type='int ref_storage_backend_exists(const char * name)'/>

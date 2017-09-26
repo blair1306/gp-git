@@ -1,0 +1,25 @@
+<dec f='codebrowser/revision.h' l='182' type='struct grep_opt'/>
+<offset>2688</offset>
+<doc f='codebrowser/revision.h' l='181'>/* Filter by commit log message */</doc>
+<use f='codebrowser/builtin/rev-list.c' l='364' u='m' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='365' u='m' c='cmd_rev_list'/>
+<use f='codebrowser/revision.c' l='1362' u='a' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1363' u='m' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1672' u='a' c='add_grep'/>
+<use f='codebrowser/revision.c' l='1677' u='a' c='add_header_grep'/>
+<use f='codebrowser/revision.c' l='2016' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2018' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2020' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2022' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2025' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2027' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2029' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2361' u='a' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2362' u='a' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2381' u='m' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2905' u='m' c='commit_match'/>
+<use f='codebrowser/revision.c' l='2905' u='m' c='commit_match'/>
+<use f='codebrowser/revision.c' l='2909' u='m' c='commit_match'/>
+<use f='codebrowser/revision.c' l='2929' u='m' c='commit_match'/>
+<use f='codebrowser/revision.c' l='2953' u='a' c='commit_match'/>
+<use f='codebrowser/revision.c' l='2955' u='a' c='commit_match'/>

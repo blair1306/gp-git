@@ -1,0 +1,4 @@
+<dec f='codebrowser/git-compat-util.h' l='952'/>
+<use f='codebrowser/refs.c' l='170' u='c'/>
+<use f='codebrowser/refs.c' l='566' u='c'/>
+<dec f='include/ctype.h' l='206'/>

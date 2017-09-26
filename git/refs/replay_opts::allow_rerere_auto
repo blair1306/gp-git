@@ -1,0 +1,14 @@
+<dec f='codebrowser/sequencer.h' l='23' type='int'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/revert.c' l='108' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='108' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='108' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='108' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='158' u='r' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='159' u='r' c='run_sequencer'/>
+<use f='codebrowser/sequencer.c' l='1131' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1443' u='w' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1492' u='w' c='read_populate_opts'/>
+<use f='codebrowser/sequencer.c' l='1494' u='w' c='read_populate_opts'/>
+<use f='codebrowser/sequencer.c' l='1760' u='r' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1762' u='r' c='save_opts'/>

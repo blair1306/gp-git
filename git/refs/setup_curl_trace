@@ -1,0 +1,5 @@
+<dec f='codebrowser/http.h' l='237' type='void setup_curl_trace(CURL * handle)'/>
+<doc f='codebrowser/http.h' l='236'>/* setup routine for curl_easy_setopt CURLOPT_DEBUGFUNCTION */</doc>
+<def f='codebrowser/http.c' l='671' ll='678' type='void setup_curl_trace(CURL * handle)'/>
+<use f='codebrowser/http.c' l='806' u='c' c='get_curl_handle'/>
+<use f='codebrowser/imap-send.c' l='1445' u='c' c='setup_curl'/>

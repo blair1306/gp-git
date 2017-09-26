@@ -1,0 +1,9 @@
+<dec f='codebrowser/commit.h' l='166' type='struct ident_split *'/>
+<offset>896</offset>
+<use f='codebrowser/log-tree.c' l='685' u='w' c='show_log'/>
+<use f='codebrowser/pretty.c' l='451' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='451' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='462' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='463' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='464' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='465' u='r' c='pp_user_info'/>

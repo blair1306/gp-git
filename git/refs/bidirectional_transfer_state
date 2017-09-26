@@ -1,0 +1,3 @@
+<def f='codebrowser/transport-helper.c' l='1240' ll='1245'/>
+<size>131168</size>
+<doc f='codebrowser/transport-helper.c' l='1239'>/* State of bidirectional transfer loop. */</doc>

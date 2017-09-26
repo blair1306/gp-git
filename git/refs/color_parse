@@ -1,0 +1,14 @@
+<dec f='codebrowser/color.h' l='85' type='int color_parse(const char * value, char * dst)'/>
+<use f='codebrowser/builtin/branch.c' l='93' u='c' c='git_branch_config'/>
+<use f='codebrowser/builtin/clean.c' l='121' u='c' c='git_clean_config'/>
+<use f='codebrowser/builtin/commit.c' l='1315' u='c' c='git_status_config'/>
+<use f='codebrowser/builtin/config.c' l='310' u='c' c='git_get_color_config'/>
+<use f='codebrowser/builtin/config.c' l='326' u='c' c='get_color'/>
+<def f='codebrowser/color.c' l='159' ll='162' type='int color_parse(const char * value, char * dst)'/>
+<use f='codebrowser/diff.c' l='324' u='c' c='git_diff_basic_config'/>
+<use f='codebrowser/grep.c' l='121' u='c' c='grep_config'/>
+<use f='codebrowser/grep.c' l='122' u='c' c='grep_config'/>
+<use f='codebrowser/grep.c' l='129' u='c' c='grep_config'/>
+<use f='codebrowser/log-tree.c' l='69' u='c' c='parse_decorate_color_config'/>
+<use f='codebrowser/ref-filter.c' l='105' u='c' c='color_atom_parser'/>
+<use f='codebrowser/ref-filter.c' l='112' u='c' c='color_atom_parser'/>

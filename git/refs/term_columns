@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1905' type='int term_columns()'/>
+<use f='codebrowser/builtin/column.c' l='45' u='c' c='cmd_column'/>
+<use f='codebrowser/builtin/fetch.c' l='494' u='c' c='adjust_refcol_width'/>
+<use f='codebrowser/column.c' l='203' u='c' c='print_columns'/>
+<use f='codebrowser/diff.c' l='1678' u='c' c='show_stats'/>
+<use f='codebrowser/pager.c' l='115' u='c' c='setup_pager'/>
+<def f='codebrowser/pager.c' l='147' ll='171' type='int term_columns()'/>
+<doc f='codebrowser/pager.c' l='142'>/*
+ * Return cached value (if set) or $COLUMNS environment variable (if
+ * set and positive) or ioctl(1, TIOCGWINSZ).ws_col (if positive),
+ * and default to 80 if all else fails.
+ */</doc>
+<use f='codebrowser/pretty.c' l='1041' u='c' c='parse_padding_placeholder'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/ewah/ewok.h' l='206' type='struct bitmap * bitmap_new()'/>
+<def f='codebrowser/ewah/bitmap.c' l='26' ll='32' type='struct bitmap * bitmap_new()'/>
+<use f='codebrowser/ewah/bitmap.c' l='93' u='c' c='ewah_to_bitmap'/>
+<use f='codebrowser/pack-bitmap-write.c' l='252' u='c' c='bitmap_writer_build'/>
+<use f='codebrowser/pack-bitmap.c' l='559' u='c' c='find_objects'/>
+<use f='codebrowser/pack-bitmap.c' l='962' u='c' c='test_bitmap_walk'/>
+<use f='codebrowser/pack-bitmap.c' l='1041' u='c' c='rebuild_existing_bitmaps'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/mru.h' l='34' type='struct mru_entry *'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1014' u='r' c='want_object_in_pack'/>
+<offset>128</offset>
+<use f='codebrowser/mru.c' l='9' u='w' c='mru_append'/>
+<use f='codebrowser/mru.c' l='12' u='w' c='mru_append'/>
+<use f='codebrowser/mru.c' l='26' u='w' c='mru_mark'/>
+<use f='codebrowser/mru.c' l='26' u='r' c='mru_mark'/>
+<use f='codebrowser/mru.c' l='27' u='r' c='mru_mark'/>
+<use f='codebrowser/mru.c' l='28' u='r' c='mru_mark'/>
+<use f='codebrowser/mru.c' l='34' u='w' c='mru_mark'/>
+<use f='codebrowser/mru.c' l='46' u='r' c='mru_clear'/>
+<use f='codebrowser/sha1_file.c' l='2878' u='r' c='find_pack_entry'/>

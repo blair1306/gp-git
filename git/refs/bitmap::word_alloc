@@ -1,0 +1,37 @@
+<dec f='codebrowser/ewah/ewok.h' l='203' type='size_t'/>
+<offset>64</offset>
+<use f='codebrowser/ewah/bitmap.c' l='30' u='w' c='bitmap_new'/>
+<use f='codebrowser/ewah/bitmap.c' l='38' u='r' c='bitmap_set'/>
+<use f='codebrowser/ewah/bitmap.c' l='39' u='r' c='bitmap_set'/>
+<use f='codebrowser/ewah/bitmap.c' l='40' u='w' c='bitmap_set'/>
+<use f='codebrowser/ewah/bitmap.c' l='41' u='r' c='bitmap_set'/>
+<use f='codebrowser/ewah/bitmap.c' l='43' u='r' c='bitmap_set'/>
+<use f='codebrowser/ewah/bitmap.c' l='53' u='r' c='bitmap_clear'/>
+<use f='codebrowser/ewah/bitmap.c' l='60' u='r' c='bitmap_get'/>
+<use f='codebrowser/ewah/bitmap.c' l='70' u='r' c='bitmap_to_ewah'/>
+<use f='codebrowser/ewah/bitmap.c' l='101' u='r' c='ewah_to_bitmap'/>
+<use f='codebrowser/ewah/bitmap.c' l='101' u='r' c='ewah_to_bitmap'/>
+<use f='codebrowser/ewah/bitmap.c' l='101' u='w' c='ewah_to_bitmap'/>
+<use f='codebrowser/ewah/bitmap.c' l='101' u='w' c='ewah_to_bitmap'/>
+<use f='codebrowser/ewah/bitmap.c' l='101' u='r' c='ewah_to_bitmap'/>
+<use f='codebrowser/ewah/bitmap.c' l='101' u='r' c='ewah_to_bitmap'/>
+<use f='codebrowser/ewah/bitmap.c' l='105' u='w' c='ewah_to_bitmap'/>
+<use f='codebrowser/ewah/bitmap.c' l='111' u='r' c='bitmap_and_not'/>
+<use f='codebrowser/ewah/bitmap.c' l='111' u='r' c='bitmap_and_not'/>
+<use f='codebrowser/ewah/bitmap.c' l='112' u='r' c='bitmap_and_not'/>
+<use f='codebrowser/ewah/bitmap.c' l='112' u='r' c='bitmap_and_not'/>
+<use f='codebrowser/ewah/bitmap.c' l='122' u='r' c='bitmap_or_ewah'/>
+<use f='codebrowser/ewah/bitmap.c' l='128' u='r' c='bitmap_or_ewah'/>
+<use f='codebrowser/ewah/bitmap.c' l='129' u='w' c='bitmap_or_ewah'/>
+<use f='codebrowser/ewah/bitmap.c' l='130' u='r' c='bitmap_or_ewah'/>
+<use f='codebrowser/ewah/bitmap.c' l='132' u='r' c='bitmap_or_ewah'/>
+<use f='codebrowser/ewah/bitmap.c' l='145' u='r' c='bitmap_each_bit'/>
+<use f='codebrowser/ewah/bitmap.c' l='169' u='r' c='bitmap_popcount'/>
+<use f='codebrowser/ewah/bitmap.c' l='180' u='r' c='bitmap_equals'/>
+<use f='codebrowser/ewah/bitmap.c' l='180' u='r' c='bitmap_equals'/>
+<use f='codebrowser/ewah/bitmap.c' l='188' u='r' c='bitmap_equals'/>
+<use f='codebrowser/ewah/bitmap.c' l='193' u='r' c='bitmap_equals'/>
+<use f='codebrowser/ewah/bitmap.c' l='203' u='r' c='bitmap_reset'/>
+<use f='codebrowser/pack-bitmap.c' l='610' u='r' c='show_objects_for_type'/>
+<use f='codebrowser/pack-bitmap.c' l='761' u='r' c='reuse_partial_packfile_from_bitmap'/>
+<use f='codebrowser/pack-bitmap.c' l='855' u='r' c='count_object_type'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='935' type='int find_unique_abbrev_r(char * hex, const unsigned char * sha1, int len)'/>
+<use f='codebrowser/builtin/merge.c' l='1267' u='c' c='cmd_merge'/>
+<def f='codebrowser/sha1_name.c' l='476' ll='518' type='int find_unique_abbrev_r(char * hex, const unsigned char * sha1, int len)'/>
+<use f='codebrowser/sha1_name.c' l='526' u='c' c='find_unique_abbrev'/>
+<use f='codebrowser/strbuf.c' l='852' u='c' c='strbuf_add_unique_abbrev'/>
+<use f='codebrowser/transport.c' l='452' u='c' c='measure_abbrev'/>

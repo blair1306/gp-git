@@ -1,0 +1,20 @@
+<dec f='codebrowser/config.h' l='198' type='void config_from_gitmodules(config_fn_t fn, void * data)'/>
+<doc f='codebrowser/config.h' l='190'>/*
+ * Note: This function exists solely to maintain backward compatibility with
+ * &apos;fetch&apos; and &apos;update_clone&apos; storing configuration in &apos;.gitmodules&apos; and should
+ * NOT be used anywhere else.
+ *
+ * Runs the provided config function on the &apos;.gitmodules&apos; file found in the
+ * working directory.
+ */</doc>
+<use f='codebrowser/builtin/fetch.c' l='1335' u='c' c='cmd_fetch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1012' u='c' c='update_clone'/>
+<def f='codebrowser/config.c' l='2075' ll='2082' type='void config_from_gitmodules(config_fn_t fn, void * data)'/>
+<doc f='codebrowser/config.c' l='2067'>/*
+ * Note: This function exists solely to maintain backward compatibility with
+ * &apos;fetch&apos; and &apos;update_clone&apos; storing configuration in &apos;.gitmodules&apos; and should
+ * NOT be used anywhere else.
+ *
+ * Runs the provided config function on the &apos;.gitmodules&apos; file found in the
+ * working directory.
+ */</doc>

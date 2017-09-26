@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='146' type='int'/>
+<offset>1024</offset>
+<use f='codebrowser/diff.c' l='123' u='w' c='parse_dirstat_params'/>
+<use f='codebrowser/diff.c' l='337' u='w' c='git_diff_basic_config'/>
+<use f='codebrowser/diff.c' l='342' u='r' c='git_diff_basic_config'/>
+<use f='codebrowser/diff.c' l='1974' u='r' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='2075' u='r' c='show_dirstat_by_line'/>
+<use f='codebrowser/diff.c' l='3378' u='w' c='diff_setup'/>

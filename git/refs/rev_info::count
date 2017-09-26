@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='108' type='unsigned int'/>
+<offset>950</offset>
+<use f='codebrowser/builtin/rev-list.c' l='73' u='r' c='show_commit'/>
+<use f='codebrowser/builtin/rev-list.c' l='373' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='411' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/revision.c' l='1837' u='w' c='handle_revision_opt'/>

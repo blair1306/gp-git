@@ -1,0 +1,11 @@
+<dec f='codebrowser/refs/refs-internal.h' l='158' type='void *'/>
+<offset>384</offset>
+<use f='codebrowser/refs/files-backend.c' l='2284' u='w' c='lock_ref_for_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2333' u='r' c='lock_ref_for_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2355' u='w' c='lock_ref_for_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2390' u='r' c='files_transaction_cleanup'/>
+<use f='codebrowser/refs/files-backend.c' l='2394' u='w' c='files_transaction_cleanup'/>
+<use f='codebrowser/refs/files-backend.c' l='2522' u='r' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2538' u='w' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2548' u='w' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2557' u='r' c='files_transaction_finish'/>

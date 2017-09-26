@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='1871' type='int copy_file_with_time(const char * dst, const char * src, int mode)'/>
+<use f='codebrowser/builtin/clone.c' l='444' u='c' c='copy_or_link_directory'/>
+<def f='codebrowser/copy.c' l='61' ll='67' type='int copy_file_with_time(const char * dst, const char * src, int mode)'/>

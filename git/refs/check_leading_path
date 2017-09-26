@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1522' type='int check_leading_path(const char * name, int len)'/>
+<def f='codebrowser/symlinks.c' l='222' ll='225' type='int check_leading_path(const char * name, int len)'/>
+<doc f='codebrowser/symlinks.c' l='213'>/*
+ * Return zero if path &apos;name&apos; has a leading symlink component or
+ * if some leading path component does not exists.
+ *
+ * Return -1 if leading path exists and is a directory.
+ *
+ * Return path length if leading path exists and is neither a
+ * directory nor a symlink.
+ */</doc>
+<use f='codebrowser/unpack-trees.c' l='325' u='c' c='unlink_entry'/>
+<use f='codebrowser/unpack-trees.c' l='1693' u='c' c='verify_absent_1'/>

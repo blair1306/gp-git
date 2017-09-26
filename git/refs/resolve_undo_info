@@ -1,0 +1,4 @@
+<def f='codebrowser/resolve-undo.h' l='4' ll='7'/>
+<size>72</size>
+<mbr r='resolve_undo_info::mode' o='0' t='unsigned int [3]'/>
+<mbr r='resolve_undo_info::sha1' o='96' t='unsigned char [3][20]'/>

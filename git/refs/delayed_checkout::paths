@@ -1,0 +1,12 @@
+<dec f='codebrowser/convert.h' l='56' type='struct string_list'/>
+<offset>320</offset>
+<doc f='codebrowser/convert.h' l='55'>/* List of delayed blobs identified by their path. */</doc>
+<use f='codebrowser/convert.c' l='638' u='a' c='apply_multi_file_filter'/>
+<use f='codebrowser/entry.c' l='146' u='a' c='enable_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='197' u='a' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='227' u='m' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='228' u='a' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='228' u='a' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='228' u='a' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='231' u='a' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='291' u='a' c='write_entry'/>

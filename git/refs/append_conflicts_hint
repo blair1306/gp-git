@@ -1,0 +1,4 @@
+<dec f='codebrowser/sequencer.h' l='51' type='void append_conflicts_hint(struct strbuf * msgbuf)'/>
+<use f='codebrowser/builtin/merge.c' l='849' u='c' c='suggest_conflicts'/>
+<def f='codebrowser/sequencer.c' l='412' ll='427' type='void append_conflicts_hint(struct strbuf * msgbuf)'/>
+<use f='codebrowser/sequencer.c' l='481' u='c' c='do_recursive_merge'/>

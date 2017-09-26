@@ -1,0 +1,16 @@
+<def f='codebrowser/urlmatch.h' l='4' ll='32'/>
+<size>112</size>
+<mbr r='url_info::url' o='0' t='char *'/>
+<mbr r='url_info::err' o='64' t='const char *'/>
+<mbr r='url_info::url_len' o='128' t='size_t'/>
+<mbr r='url_info::scheme_len' o='192' t='size_t'/>
+<mbr r='url_info::user_off' o='256' t='size_t'/>
+<mbr r='url_info::user_len' o='320' t='size_t'/>
+<mbr r='url_info::passwd_off' o='384' t='size_t'/>
+<mbr r='url_info::passwd_len' o='448' t='size_t'/>
+<mbr r='url_info::host_off' o='512' t='size_t'/>
+<mbr r='url_info::host_len' o='576' t='size_t'/>
+<mbr r='url_info::port_off' o='640' t='size_t'/>
+<mbr r='url_info::port_len' o='704' t='size_t'/>
+<mbr r='url_info::path_off' o='768' t='size_t'/>
+<mbr r='url_info::path_len' o='832' t='size_t'/>

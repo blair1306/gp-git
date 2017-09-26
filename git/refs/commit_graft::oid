@@ -1,0 +1,12 @@
+<dec f='codebrowser/commit.h' l='244' type='struct object_id'/>
+<offset>0</offset>
+<use f='codebrowser/commit.c' l='103' u='m' c='commit_graft_sha1_access'/>
+<use f='codebrowser/commit.c' l='114' u='m' c='register_commit_graft'/>
+<use f='codebrowser/commit.c' l='153' u='a' c='read_graft_line'/>
+<use f='codebrowser/log-tree.c' l='144' u='a' c='add_graft_decoration'/>
+<use f='codebrowser/send-pack.c' l='225' u='a' c='advertise_shallow_grafts_cb'/>
+<use f='codebrowser/shallow.c' l='36' u='a' c='register_shallow'/>
+<use f='codebrowser/shallow.c' l='240' u='a' c='write_one_shallow'/>
+<use f='codebrowser/shallow.c' l='244' u='a' c='write_one_shallow'/>
+<use f='codebrowser/shallow.c' l='341' u='a' c='advertise_shallow_grafts_cb'/>
+<use f='codebrowser/upload-pack.c' l='93' u='a' c='write_one_shallow'/>

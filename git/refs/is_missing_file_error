@@ -1,0 +1,20 @@
+<def f='codebrowser/git-compat-util.h' l='1167' ll='1170' type='int is_missing_file_error(int errno_)'/>
+<doc f='codebrowser/git-compat-util.h' l='1157'>/*
+ * Our code often opens a path to an optional file, to work on its
+ * contents when we can successfully open it.  We can ignore a failure
+ * to open if such an optional file does not exist, but we do want to
+ * report a failure in opening for other reasons (e.g. we got an I/O
+ * error, or the file is there, but we lack the permission to open).
+ *
+ * Call this function after seeing an error from open() or fopen() to
+ * see if the errno indicates a missing file that we can safely ignore.
+ */</doc>
+<use f='codebrowser/apply.c' l='3749' u='c' c='check_to_create'/>
+<use f='codebrowser/builtin/rm.c' l='133' u='c' c='check_local_mod'/>
+<use f='codebrowser/builtin/update-index.c' l='261' u='c' c='process_lstat_error'/>
+<use f='codebrowser/diff-lib.c' l='32' u='c' c='check_removed'/>
+<use f='codebrowser/dir.c' l='2346' u='c' c='remove_path'/>
+<use f='codebrowser/setup.c' l='159' u='c' c='check_filename'/>
+<use f='codebrowser/sha1_name.c' l='1412' u='c' c='diagnose_invalid_oid_path'/>
+<use f='codebrowser/sha1_name.c' l='1477' u='c' c='diagnose_invalid_index_path'/>
+<use f='codebrowser/wrapper.c' l='608' u='c' c='access_error_is_ok'/>

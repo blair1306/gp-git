@@ -1,0 +1,11 @@
+<dec f='codebrowser/mailinfo.h' l='29' type='int'/>
+<offset>1568</offset>
+<doc f='codebrowser/mailinfo.h' l='29'>/* still checking in-body headers? */</doc>
+<use f='codebrowser/mailinfo.c' l='760' u='r' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='764' u='w' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='770' u='r' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='771' u='w' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='772' u='r' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='778' u='w' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='788' u='w' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='1148' u='w' c='setup_mailinfo'/>

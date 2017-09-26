@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='102' type='unsigned int'/>
+<offset>943</offset>
+<use f='codebrowser/builtin/rev-list.c' l='186' u='r' c='finish_object'/>
+<use f='codebrowser/revision.c' l='1867' u='w' c='handle_revision_opt'/>

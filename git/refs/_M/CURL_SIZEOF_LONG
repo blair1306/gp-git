@@ -1,0 +1,4 @@
+<dec f='include/curl/curlbuild.h' l='163'/>
+<use f='include/curl/curlrules.h' l='78' u='a'/>
+<use f='include/curl/curlrules.h' l='143' u='c'/>
+<doc f='include/curl/curlbuild.h' l='162'>/* The size of `long&apos;, as computed by sizeof. */</doc>

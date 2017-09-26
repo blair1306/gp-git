@@ -1,0 +1,14 @@
+<dec f='codebrowser/wt-status.h' l='39' type='int'/>
+<offset>32</offset>
+<use f='codebrowser/wt-status.c' l='364' u='r' c='wt_longstatus_print_change_data'/>
+<use f='codebrowser/wt-status.c' l='519' u='r' c='wt_status_collect_updated_cb'/>
+<use f='codebrowser/wt-status.c' l='520' u='w' c='wt_status_collect_updated_cb'/>
+<use f='codebrowser/wt-status.c' l='634' u='w' c='wt_status_collect_changes_initial'/>
+<use f='codebrowser/wt-status.c' l='642' u='w' c='wt_status_collect_changes_initial'/>
+<use f='codebrowser/wt-status.c' l='739' u='r' c='wt_longstatus_print_updated'/>
+<use f='codebrowser/wt-status.c' l='740' u='r' c='wt_longstatus_print_updated'/>
+<use f='codebrowser/wt-status.c' l='1706' u='r' c='wt_shortstatus_status'/>
+<use f='codebrowser/wt-status.c' l='1707' u='r' c='wt_shortstatus_status'/>
+<use f='codebrowser/wt-status.c' l='1980' u='r' c='wt_porcelain_v2_fix_up_changed'/>
+<use f='codebrowser/wt-status.c' l='2039' u='r' c='wt_porcelain_v2_print_changed_entry'/>
+<use f='codebrowser/wt-status.c' l='2039' u='r' c='wt_porcelain_v2_print_changed_entry'/>

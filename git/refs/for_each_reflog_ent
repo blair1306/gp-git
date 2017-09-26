@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs.h' l='416' type='int for_each_reflog_ent(const char * refname, each_reflog_ent_fn * fn, void * cb_data)'/>
+<use f='codebrowser/builtin/fsck.c' l='430' u='c' c='fsck_handle_reflog'/>
+<use f='codebrowser/builtin/merge-base.c' l='175' u='c' c='handle_fork_point'/>
+<use f='codebrowser/builtin/reflog.c' l='679' u='c' c='cmd_reflog_delete'/>
+<use f='codebrowser/builtin/reflog.c' l='682' u='c' c='cmd_reflog_delete'/>
+<use f='codebrowser/reflog-walk.c' l='62' u='c' c='read_complete_reflog'/>
+<use f='codebrowser/reflog-walk.c' l='70' u='c' c='read_complete_reflog'/>
+<use f='codebrowser/reflog-walk.c' l='76' u='c' c='read_complete_reflog'/>
+<use f='codebrowser/reflog-walk.c' l='80' u='c' c='read_complete_reflog'/>
+<use f='codebrowser/refs.c' l='847' u='c' c='read_ref_at'/>
+<def f='codebrowser/refs.c' l='1970' ll='1975' type='int for_each_reflog_ent(const char * refname, each_reflog_ent_fn * fn, void * cb_data)'/>
+<use f='codebrowser/revision.c' l='1231' u='c' c='handle_one_reflog'/>
+<use f='codebrowser/wt-status.c' l='818' u='c' c='wt_longstatus_print_stash_summary'/>

@@ -1,0 +1,33 @@
+<def f='codebrowser/refs/ref-cache.h' l='77' ll='92'/>
+<size>32</size>
+<doc f='codebrowser/refs/ref-cache.h' l='51'>/*
+ * Information used (along with the information in ref_entry) to
+ * describe a level in the hierarchy of references.  This data
+ * structure only occurs embedded in a union in struct ref_entry, and
+ * only when (ref_entry.flag &amp; REF_DIR) is set.  In that case,
+ * (ref_entry.flag &amp; REF_INCOMPLETE) determines whether the references
+ * in the directory have already been read:
+ *
+ *     (ref_entry.flag &amp; REF_INCOMPLETE) unset -- a directory of loose
+ *         or packed references, already read.
+ *
+ *     (ref_entry.flag &amp; REF_INCOMPLETE) set -- a directory of loose
+ *         references that hasn&apos;t been read yet (nor has any of its
+ *         subdirectories).
+ *
+ * Entries within a directory are stored within a growable array of
+ * pointers to ref_entries (entries, nr, alloc).  Entries 0 &lt;= i &lt;
+ * sorted are sorted by their component name in strcmp() order and the
+ * remaining entries are unsorted.
+ *
+ * Loose references are read lazily, one directory at a time.  When a
+ * directory of loose references is read, then all of the references
+ * in that directory are stored, and REF_INCOMPLETE stubs are created
+ * for any subdirectories, but the subdirectories themselves are not
+ * read.  The reading is triggered by get_ref_dir().
+ */</doc>
+<mbr r='ref_dir::nr' o='0' t='int'/>
+<mbr r='ref_dir::alloc' o='32' t='int'/>
+<mbr r='ref_dir::sorted' o='64' t='int'/>
+<mbr r='ref_dir::cache' o='128' t='struct ref_cache *'/>
+<mbr r='ref_dir::entries' o='192' t='struct ref_entry **'/>

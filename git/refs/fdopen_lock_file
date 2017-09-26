@@ -1,0 +1,11 @@
+<def f='codebrowser/lockfile.h' l='208' ll='211' type='FILE * fdopen_lock_file(struct lock_file * lk, const char * mode)'/>
+<doc f='codebrowser/lockfile.h' l='202'>/*
+ * Associate a stdio stream with the lockfile (which must still be
+ * open). Return `NULL` (*without* rolling back the lockfile) on
+ * error. The stream is closed automatically when `close_lock_file()`
+ * is called or when the file is committed or rolled back.
+ */</doc>
+<use f='codebrowser/fast-import.c' l='1870' u='c' c='dump_marks'/>
+<use f='codebrowser/refs/files-backend.c' l='1744' u='c' c='create_symref_locked'/>
+<use f='codebrowser/refs/files-backend.c' l='2821' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/sha1_file.c' l='497' u='c' c='add_to_alternates_file'/>

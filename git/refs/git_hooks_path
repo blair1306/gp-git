@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='739' type='const char *'/>
+<use f='codebrowser/config.c' l='1036' u='a' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='35' type='const char *'/>
+<use f='codebrowser/path.c' l='386' u='r' c='adjust_git_path'/>
+<use f='codebrowser/path.c' l='387' u='r' c='adjust_git_path'/>

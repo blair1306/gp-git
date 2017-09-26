@@ -1,0 +1,15 @@
+<def f='codebrowser/blame.h' l='22' ll='61'/>
+<size>88</size>
+<doc f='codebrowser/blame.h' l='19'>/*
+ * One blob in a commit that is being suspected
+ */</doc>
+<mbr r='blame_origin::refcnt' o='0' t='int'/>
+<mbr r='blame_origin::previous' o='64' t='struct blame_origin *'/>
+<mbr r='blame_origin::next' o='128' t='struct blame_origin *'/>
+<mbr r='blame_origin::commit' o='192' t='struct commit *'/>
+<mbr r='blame_origin::suspects' o='256' t='struct blame_entry *'/>
+<mbr r='blame_origin::file' o='320' t='mmfile_t'/>
+<mbr r='blame_origin::blob_oid' o='448' t='struct object_id'/>
+<mbr r='blame_origin::mode' o='608' t='unsigned int'/>
+<mbr r='blame_origin::guilty' o='640' t='char'/>
+<mbr r='blame_origin::path' o='648' t='char []'/>

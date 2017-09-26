@@ -1,0 +1,14 @@
+<dec f='codebrowser/dir.h' l='158' type='struct dir_entry **'/>
+<offset>256</offset>
+<use f='codebrowser/builtin/add.c' l='348' u='r' c='add_files'/>
+<use f='codebrowser/builtin/clean.c' l='866' u='r' c='correct_untracked_entries'/>
+<use f='codebrowser/builtin/clean.c' l='870' u='r' c='correct_untracked_entries'/>
+<use f='codebrowser/builtin/clean.c' l='1000' u='r' c='cmd_clean'/>
+<use f='codebrowser/dir.c' l='1277' u='w' c='dir_add_ignored'/>
+<use f='codebrowser/dir.c' l='1277' u='r' c='dir_add_ignored'/>
+<use f='codebrowser/dir.c' l='1277' u='r' c='dir_add_ignored'/>
+<use f='codebrowser/dir.c' l='1278' u='r' c='dir_add_ignored'/>
+<use f='codebrowser/dir.c' l='2113' u='r' c='read_directory'/>
+<use f='codebrowser/dir.c' l='2113' u='r' c='read_directory'/>
+<use f='codebrowser/wt-status.c' l='680' u='r' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='688' u='r' c='wt_status_collect_untracked'/>

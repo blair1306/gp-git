@@ -1,0 +1,4 @@
+<dec f='include/openssl/ssl.h' l='2360' type='const SSL_METHOD * SSLv23_method()'/>
+<doc f='include/openssl/ssl.h' l='2360'>/* Negotiate highest available SSL/TLS
+                                        * version */</doc>
+<use f='codebrowser/imap-send.c' l='291' u='c' c='ssl_socket_connect'/>

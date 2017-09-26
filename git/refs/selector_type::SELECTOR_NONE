@@ -1,0 +1,3 @@
+<dec f='codebrowser/reflog-walk.c' l='100' type='0'/>
+<use f='codebrowser/reflog-walk.c' l='129' u='r' c='add_reflog_for_walk'/>
+<use f='codebrowser/reflog-walk.c' l='227' u='r' c='get_reflog_selector'/>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/tempfile.h' l='84' type='volatile sig_atomic_t'/>
+<use f='codebrowser/tempfile.h' l='213' u='r' c='is_tempfile_active'/>
+<offset>64</offset>
+<use f='codebrowser/tempfile.c' l='99' u='r' c='prepare_tempfile_object'/>
+<use f='codebrowser/tempfile.c' l='105' u='w' c='prepare_tempfile_object'/>
+<use f='codebrowser/tempfile.c' l='134' u='w' c='create_tempfile'/>
+<use f='codebrowser/tempfile.c' l='150' u='w' c='register_tempfile'/>
+<use f='codebrowser/tempfile.c' l='165' u='w' c='mks_tempfile_sm'/>
+<use f='codebrowser/tempfile.c' l='187' u='w' c='mks_tempfile_tsm'/>
+<use f='codebrowser/tempfile.c' l='208' u='r' c='fdopen_tempfile'/>
+<use f='codebrowser/tempfile.c' l='219' u='r' c='get_tempfile_path'/>
+<use f='codebrowser/tempfile.c' l='226' u='r' c='get_tempfile_fd'/>
+<use f='codebrowser/tempfile.c' l='233' u='r' c='get_tempfile_fp'/>
+<use f='codebrowser/tempfile.c' l='275' u='r' c='reopen_tempfile'/>
+<use f='codebrowser/tempfile.c' l='283' u='r' c='rename_tempfile'/>
+<use f='codebrowser/tempfile.c' l='296' u='w' c='rename_tempfile'/>
+<use f='codebrowser/tempfile.c' l='303' u='r' c='delete_tempfile'/>
+<use f='codebrowser/tempfile.c' l='308' u='w' c='delete_tempfile'/>

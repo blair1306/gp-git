@@ -1,0 +1,15 @@
+<dec f='codebrowser/config.h' l='69' type='void git_config_set_multivar(const char * , const char * , const char * , int )'/>
+<use f='codebrowser/builtin/branch.c' l='755' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='758' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/clone.c' l='836' u='c' c='write_refspec_config'/>
+<use f='codebrowser/builtin/remote.c' l='123' u='c' c='add_branch'/>
+<use f='codebrowser/builtin/remote.c' l='585' u='c' c='migrate_file'/>
+<use f='codebrowser/builtin/remote.c' l='589' u='c' c='migrate_file'/>
+<use f='codebrowser/builtin/remote.c' l='593' u='c' c='migrate_file'/>
+<use f='codebrowser/builtin/remote.c' l='645' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='665' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='1562' u='c' c='set_url'/>
+<use f='codebrowser/builtin/remote.c' l='1588' u='c' c='set_url'/>
+<use f='codebrowser/builtin/remote.c' l='1590' u='c' c='set_url'/>
+<use f='codebrowser/config.c' l='2396' u='c' c='git_config_set'/>
+<def f='codebrowser/config.c' l='2675' ll='2680' type='void git_config_set_multivar(const char * key, const char * value, const char * value_regex, int multi_replace)'/>

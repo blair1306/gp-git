@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='278' type='void add_head_to_pending(struct rev_info * )'/>
+<use f='codebrowser/builtin/diff.c' l='382' u='c' c='cmd_diff'/>
+<use f='codebrowser/builtin/log.c' l='1650' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/shortlog.c' l='292' u='c' c='cmd_shortlog'/>
+<def f='codebrowser/revision.c' l='176' ll='186' type='void add_head_to_pending(struct rev_info * revs)'/>
+<use f='codebrowser/wt-status.c' l='2288' u='c' c='has_uncommitted_changes'/>

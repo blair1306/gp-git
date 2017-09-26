@@ -1,0 +1,14 @@
+<def f='codebrowser/notes.c' l='51' ll='56'/>
+<size>40</size>
+<doc f='codebrowser/notes.c' l='43'>/*
+ * A notes tree may contain entries that are not notes, and that do not follow
+ * the naming conventions of notes. There are typically none/few of these, but
+ * we still need to keep track of them. Keep a simple linked list sorted alpha-
+ * betically on the non-note path. The list is populated when parsing tree
+ * objects in load_subtree(), and the non-notes are correctly written back into
+ * the tree objects produced by write_notes_tree().
+ */</doc>
+<mbr r='non_note::next' o='0' t='struct non_note *'/>
+<mbr r='non_note::path' o='64' t='char *'/>
+<mbr r='non_note::mode' o='128' t='unsigned int'/>
+<mbr r='non_note::oid' o='160' t='struct object_id'/>

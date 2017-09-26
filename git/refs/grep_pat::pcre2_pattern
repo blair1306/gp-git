@@ -1,0 +1,4 @@
+<dec f='codebrowser/grep.h' l='78' type='pcre2_code *'/>
+<offset>1216</offset>
+<use f='codebrowser/grep.c' l='1023' u='r' c='free_grep_patterns'/>
+<use f='codebrowser/grep.c' l='1105' u='r' c='patmatch'/>

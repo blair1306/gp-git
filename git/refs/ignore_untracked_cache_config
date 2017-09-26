@@ -1,0 +1,14 @@
+<dec f='codebrowser/cache.h' l='1852' type='int'/>
+<doc f='codebrowser/cache.h' l='1847'>/*
+ * This is a hack for test programs like test-dump-untracked-cache to
+ * ensure that they do not modify the untracked cache when reading it.
+ * Do not use it otherwise!
+ */</doc>
+<use f='codebrowser/config.c' l='2103' u='r' c='git_config_get_untracked_cache'/>
+<def f='codebrowser/environment.c' l='95' type='int'/>
+<doc f='codebrowser/environment.c' l='90'>/*
+ * This is a hack for test programs like test-dump-untracked-cache to
+ * ensure that they do not modify the untracked cache when reading it.
+ * Do not use it otherwise!
+ */</doc>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='47' u='w' c='cmd_main'/>

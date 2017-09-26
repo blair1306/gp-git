@@ -1,0 +1,45 @@
+<dec f='codebrowser/git-compat-util.h' l='1105' type='int unlink_or_warn(const char * path)'/>
+<doc f='codebrowser/git-compat-util.h' l='1100'>/*
+ * Preserves errno, prints a message, but gives no warning for ENOENT.
+ * Returns 0 on success, which includes trying to unlink an object that does
+ * not exist.
+ */</doc>
+<use f='codebrowser/apply.c' l='4400' u='c' c='create_one_file'/>
+<use f='codebrowser/builtin/gc.c' l='58' u='c' c='clean_pack_garbage'/>
+<use f='codebrowser/builtin/notes.c' l='107' u='c' c='free_note_data'/>
+<use f='codebrowser/builtin/prune-packed.c' l='33' u='c' c='prune_object'/>
+<use f='codebrowser/builtin/prune.c' l='29' u='c' c='prune_tmp_file'/>
+<use f='codebrowser/builtin/prune.c' l='58' u='c' c='prune_object'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1994' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/builtin/remote.c' l='595' u='c' c='migrate_file'/>
+<use f='codebrowser/builtin/remote.c' l='597' u='c' c='migrate_file'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='690' u='c' c='module_clone'/>
+<use f='codebrowser/builtin/tag.c' l='273' u='c' c='create_tag'/>
+<use f='codebrowser/builtin/worktree.c' l='310' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='529' u='c' c='unlock_worktree'/>
+<use f='codebrowser/entry.c' l='40' u='c' c='create_directories'/>
+<use f='codebrowser/entry.c' l='405' u='c' c='checkout_entry'/>
+<use f='codebrowser/fast-import.c' l='978' u='c' c='unkeep_all_packs'/>
+<use f='codebrowser/fast-import.c' l='1065' u='c' c='end_packfile'/>
+<use f='codebrowser/fetch-pack.c' l='1064' u='c' c='update_shallow'/>
+<use f='codebrowser/http.c' l='2168' u='c' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2170' u='c' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2223' u='c' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2296' u='c' c='finish_http_object_request'/>
+<use f='codebrowser/http.c' l='2303' u='c' c='finish_http_object_request'/>
+<use f='codebrowser/http.c' l='2307' u='c' c='finish_http_object_request'/>
+<use f='codebrowser/http.c' l='2318' u='c' c='abort_http_object_request'/>
+<use f='codebrowser/ll-merge.c' l='220' u='c' c='ll_ext_merge'/>
+<use f='codebrowser/refs/files-backend.c' l='2596' u='c' c='files_transaction_finish'/>
+<use f='codebrowser/rerere.c' l='509' u='c' c='handle_file'/>
+<use f='codebrowser/rerere.c' l='731' u='c' c='remove_variant'/>
+<use f='codebrowser/rerere.c' l='732' u='c' c='remove_variant'/>
+<use f='codebrowser/rerere.c' l='1155' u='c' c='unlink_rr_item'/>
+<use f='codebrowser/rerere.c' l='1251' u='c' c='rerere_clear'/>
+<use f='codebrowser/server-info.c' l='284' u='c' c='update_server_info'/>
+<use f='codebrowser/sha1_file.c' l='3222' u='c' c='finalize_object_file'/>
+<use f='codebrowser/submodule.c' l='1648' u='c' c='submodule_move_head'/>
+<use f='codebrowser/tempfile.c' l='307' u='c' c='delete_tempfile'/>
+<use f='codebrowser/transport.c' l='1148' u='c' c='transport_unlock_pack'/>
+<def f='codebrowser/wrapper.c' l='591' ll='594' type='int unlink_or_warn(const char * file)'/>
+<use f='codebrowser/wrapper.c' l='603' u='c' c='remove_or_warn'/>

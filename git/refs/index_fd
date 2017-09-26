@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='687' type='int index_fd(unsigned char * sha1, int fd, struct stat * st, enum object_type type, const char * path, unsigned int flags)'/>
+<use f='codebrowser/builtin/difftool.c' l='114' u='c' c='use_wt_file'/>
+<use f='codebrowser/builtin/hash-object.c' l='41' u='c' c='hash_fd'/>
+<use f='codebrowser/builtin/replace.c' l='272' u='c' c='import_object'/>
+<use f='codebrowser/read-cache.c' l='164' u='c' c='ce_compare_data'/>
+<def f='codebrowser/sha1_file.c' l='3631' ll='3653' type='int index_fd(unsigned char * sha1, int fd, struct stat * st, enum object_type type, const char * path, unsigned int flags)'/>
+<use f='codebrowser/sha1_file.c' l='3665' u='c' c='index_path'/>

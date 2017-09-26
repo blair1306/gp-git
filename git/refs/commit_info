@@ -1,0 +1,5 @@
+<def f='codebrowser/builtin/blame.c' l='79' ll='92'/>
+<size>184</size>
+<doc f='codebrowser/builtin/blame.c' l='76'>/*
+ * Information on commits, used for output.
+ */</doc>

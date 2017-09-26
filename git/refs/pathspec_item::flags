@@ -1,0 +1,5 @@
+<dec f='codebrowser/pathspec.h' l='35' type='int'/>
+<offset>256</offset>
+<use f='codebrowser/dir.c' l='85' u='r' c='git_fnmatch'/>
+<use f='codebrowser/pathspec.c' l='473' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='483' u='w' c='init_pathspec_item'/>

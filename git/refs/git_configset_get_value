@@ -1,0 +1,11 @@
+<dec f='codebrowser/config.h' l='154' type='int git_configset_get_value(struct config_set * cs, const char * key, const char ** value)'/>
+<def f='codebrowser/config.c' l='1778' ll='1793' type='int git_configset_get_value(struct config_set * cs, const char * key, const char ** value)'/>
+<use f='codebrowser/config.c' l='1804' u='c' c='git_configset_get_string_const'/>
+<use f='codebrowser/config.c' l='1818' u='c' c='git_configset_get_int'/>
+<use f='codebrowser/config.c' l='1828' u='c' c='git_configset_get_ulong'/>
+<use f='codebrowser/config.c' l='1838' u='c' c='git_configset_get_bool'/>
+<use f='codebrowser/config.c' l='1849' u='c' c='git_configset_get_bool_or_int'/>
+<use f='codebrowser/config.c' l='1859' u='c' c='git_configset_get_maybe_bool'/>
+<use f='codebrowser/config.c' l='1871' u='c' c='git_configset_get_pathname'/>
+<use f='codebrowser/config.c' l='1932' u='c' c='repo_config_get_value'/>
+<use f='codebrowser/t/helper/test-config.c' l='157' u='c' c='cmd_main'/>

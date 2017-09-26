@@ -1,0 +1,4 @@
+<dec f='codebrowser/csum-file.h' l='35' type='struct sha1file * sha1fd_throughput(int fd, const char * name, struct progress * tp)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='798' u='c' c='write_pack_file'/>
+<use f='codebrowser/csum-file.c' l='123' u='c' c='sha1fd'/>
+<def f='codebrowser/csum-file.c' l='142' ll='154' type='struct sha1file * sha1fd_throughput(int fd, const char * name, struct progress * tp)'/>

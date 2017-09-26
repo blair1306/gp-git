@@ -1,0 +1,7 @@
+<dec f='codebrowser/transport.h' l='178'/>
+<doc f='codebrowser/transport.h' l='177'>/* The program to use on the remote side to send a pack */</doc>
+<use f='codebrowser/builtin/clone.c' l='1103' u='c'/>
+<use f='codebrowser/builtin/fetch.c' l='1032' u='c'/>
+<use f='codebrowser/builtin/ls-remote.c' l='97' u='c'/>
+<use f='codebrowser/transport-helper.c' l='251' u='c'/>
+<use f='codebrowser/transport.c' l='127' u='c'/>

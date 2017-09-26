@@ -1,0 +1,5 @@
+<dec f='include/curl/multi.h' l='90' type='CURLMSG'/>
+<offset>0</offset>
+<doc f='include/curl/multi.h' l='90'>/* what this message means */</doc>
+<use f='codebrowser/http.c' l='242' u='r' c='process_curl_messages'/>
+<use f='codebrowser/http.c' l='257' u='r' c='process_curl_messages'/>

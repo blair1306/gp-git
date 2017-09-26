@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='285' type='struct object_id'/>
+<offset>0</offset>
+<use f='codebrowser/remote.c' l='2304' u='a' c='parse_push_cas_option'/>
+<use f='codebrowser/remote.c' l='2305' u='a' c='parse_push_cas_option'/>
+<use f='codebrowser/remote.c' l='2352' u='a' c='apply_cas'/>

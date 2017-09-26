@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='490' type='const char * get_super_prefix()'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='343' u='c' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='347' u='c' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='348' u='c' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1270' u='c' c='cmd_submodule__helper'/>
+<def f='codebrowser/environment.c' l='204' ll='212' type='const char * get_super_prefix()'/>
+<use f='codebrowser/git.c' l='332' u='c' c='run_builtin'/>
+<use f='codebrowser/git.c' l='559' u='c' c='execv_dashed_external'/>
+<use f='codebrowser/submodule.c' l='1493' u='c' c='get_super_prefix_or_empty'/>
+<use f='codebrowser/unpack-trees.c' l='73' u='c' c='super_prefixed'/>

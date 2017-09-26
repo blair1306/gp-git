@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='523' type='const char * resolve_gitdir_gently(const char * suspect, int * return_error_code)'/>
+<use f='codebrowser/builtin/rev-parse.c' l='617' macro='1' u='c'/>
+<use f='codebrowser/repository.c' l='85' u='c' c='repo_init_gitdir'/>
+<def f='codebrowser/setup.c' l='1191' ll='1196' type='const char * resolve_gitdir_gently(const char * suspect, int * return_error_code)'/>
+<use f='codebrowser/submodule.c' l='331' u='c' c='is_submodule_populated_gently'/>
+<use f='codebrowser/submodule.c' l='1877' u='c' c='absorb_git_dir_into_superproject'/>

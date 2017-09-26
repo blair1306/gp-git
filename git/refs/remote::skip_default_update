@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='47' type='int'/>
+<offset>992</offset>
+<use f='codebrowser/builtin/fetch.c' l='1165' u='r' c='get_one_remote_for_fetch'/>
+<use f='codebrowser/remote.c' l='389' u='w' c='handle_config'/>
+<use f='codebrowser/remote.c' l='391' u='w' c='handle_config'/>

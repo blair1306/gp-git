@@ -1,0 +1,13 @@
+<dec f='codebrowser/diff.h' l='119' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/combine-diff.c' l='1321' u='r' c='find_paths_generic'/>
+<use f='codebrowser/combine-diff.c' l='1325' u='w' c='find_paths_generic'/>
+<use f='codebrowser/combine-diff.c' l='1353' u='w' c='find_paths_generic'/>
+<use f='codebrowser/combine-diff.c' l='1468' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1469' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1479' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1485' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/diff.c' l='3393' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='4017' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='5010' u='r' c='diffcore_std'/>
+<use f='codebrowser/diff.c' l='5011' u='r' c='diffcore_std'/>

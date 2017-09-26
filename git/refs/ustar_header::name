@@ -1,0 +1,13 @@
+<dec f='codebrowser/tar.h' l='9' type='char [100]'/>
+<use f='codebrowser/archive-tar.c' l='229' u='r' c='write_extended_header'/>
+<use f='codebrowser/archive-tar.c' l='229' u='r' c='write_extended_header'/>
+<use f='codebrowser/archive-tar.c' l='262' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='266' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='268' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='270' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='270' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='276' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='348' u='r' c='write_global_extended_header'/>
+<use f='codebrowser/archive-tar.c' l='348' u='r' c='write_global_extended_header'/>
+<offset>0</offset>
+<doc f='codebrowser/tar.h' l='9'>/*   0 */</doc>

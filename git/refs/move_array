@@ -1,0 +1,11 @@
+<def f='codebrowser/git-compat-util.h' l='833' ll='837' type='void move_array(void * dst, const void * src, size_t n, size_t size)'/>
+<use f='codebrowser/apply.c' l='2810' macro='1' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='381' macro='1' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='542' macro='1' u='c'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1301' macro='1' u='c'/>
+<use f='codebrowser/cache-tree.c' l='134' macro='1' u='c'/>
+<use f='codebrowser/commit.c' l='226' macro='1' u='c'/>
+<use f='codebrowser/notes-merge.c' l='102' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='518' macro='1' u='c'/>
+<use f='codebrowser/string-list.c' l='46' macro='1' u='c'/>
+<use f='codebrowser/string-list.c' l='79' macro='1' u='c'/>

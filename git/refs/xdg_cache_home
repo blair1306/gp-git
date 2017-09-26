@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1162' type='char * xdg_cache_home(const char * filename)'/>
+<doc f='codebrowser/cache.h' l='1157'>/**
+ * Return a newly allocated string with the evaluation of
+ * &quot;$XDG_CACHE_HOME/git/$filename&quot; if $XDG_CACHE_HOME is non-empty, otherwise
+ * &quot;$HOME/.cache/git/$filename&quot;. Return NULL upon error.
+ */</doc>
+<use f='codebrowser/credential-cache.c' l='94' u='c' c='get_socket_path'/>
+<def f='codebrowser/path.c' l='1344' ll='1357' type='char * xdg_cache_home(const char * filename)'/>

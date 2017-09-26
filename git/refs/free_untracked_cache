@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='351' type='void free_untracked_cache(struct untracked_cache * )'/>
+<use f='codebrowser/dir.c' l='1995' u='c' c='add_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2004' u='c' c='remove_untracked_cache'/>
+<def f='codebrowser/dir.c' l='2547' ll='2552' type='void free_untracked_cache(struct untracked_cache * uc)'/>
+<use f='codebrowser/dir.c' l='2758' u='c' c='read_untracked_extension'/>
+<use f='codebrowser/read-cache.c' l='1900' u='c' c='discard_index'/>

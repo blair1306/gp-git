@@ -1,0 +1,6 @@
+<dec f='codebrowser/pack.h' l='56' type='void reset_pack_idx_option(struct pack_idx_option * )'/>
+<use f='codebrowser/builtin/index-pack.c' l='1649' u='c' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2953' u='c' c='cmd_pack_objects'/>
+<use f='codebrowser/bulk-checkin.c' l='176' u='c' c='prepare_to_stream'/>
+<use f='codebrowser/fast-import.c' l='3453' u='c' c='cmd_main'/>
+<def f='codebrowser/pack-write.c' l='5' ll='10' type='void reset_pack_idx_option(struct pack_idx_option * opts)'/>

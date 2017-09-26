@@ -1,0 +1,8 @@
+<dec f='codebrowser/ewah/ewok.h' l='95' type='int ewah_read_mmap(struct ewah_bitmap * self, const void * map, size_t len)'/>
+<use f='codebrowser/dir.c' l='2731' u='c' c='read_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2736' u='c' c='read_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2741' u='c' c='read_untracked_extension'/>
+<def f='codebrowser/ewah/ewah_io.c' l='126' ll='154' type='int ewah_read_mmap(struct ewah_bitmap * self, const void * map, size_t len)'/>
+<use f='codebrowser/pack-bitmap.c' l='120' u='c' c='read_bitmap_1'/>
+<use f='codebrowser/split-index.c' l='30' u='c' c='read_link_extension'/>
+<use f='codebrowser/split-index.c' l='36' u='c' c='read_link_extension'/>

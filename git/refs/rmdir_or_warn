@@ -1,0 +1,9 @@
+<dec f='codebrowser/git-compat-util.h' l='1118' type='int rmdir_or_warn(const char * path)'/>
+<doc f='codebrowser/git-compat-util.h' l='1113'>/*
+ * Preserves errno, prints a message, but gives no warning for ENOENT.
+ * Returns 0 on success, which includes trying to remove a directory that does
+ * not exist.
+ */</doc>
+<use f='codebrowser/submodule.c' l='1652' u='c' c='submodule_move_head'/>
+<def f='codebrowser/wrapper.c' l='596' ll='599' type='int rmdir_or_warn(const char * file)'/>
+<use f='codebrowser/wrapper.c' l='603' u='c' c='remove_or_warn'/>

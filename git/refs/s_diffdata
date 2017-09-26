@@ -1,0 +1,6 @@
+<def f='codebrowser/xdiff/xdiffi.h' l='27' ll='32'/>
+<size>32</size>
+<mbr r='s_diffdata::nrec' o='0' t='long'/>
+<mbr r='s_diffdata::ha' o='64' t='const unsigned long *'/>
+<mbr r='s_diffdata::rindex' o='128' t='long *'/>
+<mbr r='s_diffdata::rchg' o='192' t='char *'/>

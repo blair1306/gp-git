@@ -1,0 +1,8 @@
+<dec f='codebrowser/commit.h' l='328' type='int commit_tree(const char * msg, size_t msg_len, const unsigned char * tree, struct commit_list * parents, unsigned char * ret, const char * author, const char * sign_commit)'/>
+<use f='codebrowser/builtin/am.c' l='1668' u='c' c='do_commit'/>
+<use f='codebrowser/builtin/commit-tree.c' l='121' u='c' c='cmd_commit_tree'/>
+<use f='codebrowser/builtin/merge.c' l='805' u='c' c='merge_trivial'/>
+<use f='codebrowser/builtin/merge.c' l='830' u='c' c='finish_automerge'/>
+<def f='codebrowser/commit.c' l='1384' ll='1397' type='int commit_tree(const char * msg, size_t msg_len, const unsigned char * tree, struct commit_list * parents, unsigned char * ret, const char * author, const char * sign_commit)'/>
+<use f='codebrowser/notes-cache.c' l='59' u='c' c='notes_cache_write'/>
+<use f='codebrowser/notes-utils.c' l='30' u='c' c='create_notes_commit'/>

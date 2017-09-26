@@ -1,0 +1,12 @@
+<dec f='codebrowser/revision.h' l='176' type='const char *'/>
+<offset>2496</offset>
+<use f='codebrowser/builtin/log.c' l='131' u='w' c='cmd_log_init_defaults'/>
+<use f='codebrowser/builtin/log.c' l='1131' u='w' c='subject_prefix_callback'/>
+<use f='codebrowser/builtin/log.c' l='1516' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1539' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1541' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='340' u='r' c='fmt_output_email_subject'/>
+<use f='codebrowser/log-tree.c' l='341' u='r' c='fmt_output_email_subject'/>
+<use f='codebrowser/log-tree.c' l='344' u='r' c='fmt_output_email_subject'/>
+<use f='codebrowser/log-tree.c' l='344' u='r' c='fmt_output_email_subject'/>
+<use f='codebrowser/log-tree.c' l='346' u='r' c='fmt_output_email_subject'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/revision.h' l='204' type='struct decoration'/>
+<offset>15616</offset>
+<use f='codebrowser/blame.c' l='1365' u='a' c='first_scapegoat'/>
+<use f='codebrowser/blame.c' l='1771' u='m' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1802' u='m' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1808' u='a' c='setup_scoreboard'/>
+<use f='codebrowser/builtin/rev-list.c' l='103' u='m' c='show_commit'/>
+<use f='codebrowser/builtin/rev-list.c' l='106' u='a' c='show_commit'/>
+<use f='codebrowser/log-tree.c' l='174' u='a' c='show_children'/>
+<use f='codebrowser/log-tree.c' l='553' u='m' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='616' u='m' c='show_log'/>
+<use f='codebrowser/revision.c' l='2041' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2368' u='m' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2398' u='a' c='add_child'/>
+<use f='codebrowser/revision.c' l='2806' u='m' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='2964' u='m' c='want_ancestry'/>

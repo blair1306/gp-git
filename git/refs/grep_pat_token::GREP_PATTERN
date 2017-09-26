@@ -1,0 +1,13 @@
+<dec f='codebrowser/grep.h' l='39' type='0'/>
+<use f='codebrowser/builtin/grep.c' l='718' u='r' c='file_callback'/>
+<use f='codebrowser/builtin/grep.c' l='758' u='r' c='pattern_callback'/>
+<use f='codebrowser/builtin/grep.c' l='933' u='r' c='cmd_grep'/>
+<use f='codebrowser/grep.c' l='256' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='688' c='compile_pattern_atom'/>
+<use f='codebrowser/grep.c' l='795' c='dump_grep_pat'/>
+<use f='codebrowser/grep.c' l='811' c='dump_grep_pat'/>
+<use f='codebrowser/grep.c' l='948' c='compile_grep_patterns_real'/>
+<use f='codebrowser/grep.c' l='1016' c='free_grep_patterns'/>
+<use f='codebrowser/grep.c' l='1147' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1318' c='next_match'/>
+<use f='codebrowser/grep.c' l='1532' u='r' c='should_lookahead'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/diff.h' l='134' type='int'/>
+<offset>640</offset>
+<use f='codebrowser/builtin/commit.c' l='1485' u='w' c='print_summary'/>
+<use f='codebrowser/combine-diff.c' l='1439' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/diff.c' l='3376' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='3840' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='5001' u='r' c='diffcore_std'/>
+<use f='codebrowser/diff.c' l='5002' u='r' c='diffcore_std'/>
+<use f='codebrowser/diff.c' l='5005' u='r' c='diffcore_std'/>
+<use f='codebrowser/tree-diff.c' l='615' u='w' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='615' u='r' c='try_to_follow_renames'/>
+<use f='codebrowser/wt-status.c' l='609' u='w' c='wt_status_collect_changes_index'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='1920' type='void * alloc_tree_node()'/>
+<def f='codebrowser/alloc.c' l='60' ll='65' type='void * alloc_tree_node()'/>
+<use f='codebrowser/tree.c' l='199' u='c' c='lookup_tree'/>

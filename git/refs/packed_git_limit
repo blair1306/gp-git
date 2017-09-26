@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='744' type='size_t'/>
+<use f='codebrowser/config.c' l='1129' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='41' type='size_t'/>
+<use f='codebrowser/sha1_file.c' l='729' u='r' c='pack_report'/>
+<use f='codebrowser/sha1_file.c' l='1269' u='r' c='use_pack'/>

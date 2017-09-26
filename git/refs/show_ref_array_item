@@ -1,0 +1,6 @@
+<dec f='codebrowser/ref-filter.h' l='117' type='void show_ref_array_item(struct ref_array_item * info, const struct ref_format * format)'/>
+<doc f='codebrowser/ref-filter.h' l='116'>/*  Print the ref using the given format and quote_style */</doc>
+<use f='codebrowser/builtin/for-each-ref.c' l='84' u='c' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='64' u='c' c='list_tags'/>
+<def f='codebrowser/ref-filter.c' l='2107' ll='2116' type='void show_ref_array_item(struct ref_array_item * info, const struct ref_format * format)'/>
+<use f='codebrowser/ref-filter.c' l='2124' u='c' c='pretty_print_ref'/>

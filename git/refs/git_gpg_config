@@ -1,0 +1,12 @@
+<dec f='codebrowser/gpg-interface.h' l='31' type='int git_gpg_config(const char * , const char * , void * )'/>
+<use f='codebrowser/builtin/am.c' l='2184' u='c' c='git_am_config'/>
+<use f='codebrowser/builtin/commit-tree.c' l='34' u='c' c='commit_tree_config'/>
+<use f='codebrowser/builtin/commit.c' l='1527' u='c' c='git_commit_config'/>
+<use f='codebrowser/builtin/log.c' l='442' u='c' c='git_log_config'/>
+<use f='codebrowser/builtin/merge.c' l='589' u='c' c='git_merge_config'/>
+<use f='codebrowser/builtin/push.c' l='471' u='c' c='git_push_config'/>
+<use f='codebrowser/builtin/send-pack.c' l='103' u='c' c='send_pack_config'/>
+<use f='codebrowser/builtin/tag.c' l='151' u='c' c='git_tag_config'/>
+<use f='codebrowser/builtin/verify-commit.c' l='62' u='c' c='git_verify_commit_config'/>
+<use f='codebrowser/builtin/verify-tag.c' l='25' u='c' c='git_verify_tag_config'/>
+<def f='codebrowser/gpg-interface.c' l='128' ll='139' type='int git_gpg_config(const char * var, const char * value, void * cb)'/>

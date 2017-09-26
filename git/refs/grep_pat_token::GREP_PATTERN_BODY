@@ -1,0 +1,10 @@
+<dec f='codebrowser/grep.h' l='41' type='2'/>
+<use f='codebrowser/grep.c' l='258' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='690' c='compile_pattern_atom'/>
+<use f='codebrowser/grep.c' l='797' c='dump_grep_pat'/>
+<use f='codebrowser/grep.c' l='804' c='dump_grep_pat'/>
+<use f='codebrowser/grep.c' l='810' c='dump_grep_pat'/>
+<use f='codebrowser/grep.c' l='950' c='compile_grep_patterns_real'/>
+<use f='codebrowser/grep.c' l='1018' c='free_grep_patterns'/>
+<use f='codebrowser/grep.c' l='1320' c='next_match'/>
+<use f='codebrowser/revision.c' l='1682' u='r' c='add_message_grep'/>

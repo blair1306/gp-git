@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='724' type='1'/>
+<doc f='include/curl/curl.h' l='724'>/* try using SSL, proceed anyway otherwise */</doc>
+<use f='codebrowser/http.c' l='816' macro='1' c='get_curl_handle'/>
+<use f='codebrowser/imap-send.c' l='1434' macro='1' c='setup_curl'/>

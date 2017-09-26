@@ -1,0 +1,71 @@
+<dec f='codebrowser/remote.h' l='212' type='const char *'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/fetch.c' l='392' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='392' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='410' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/merge.c' l='894' u='r' c='setup_with_upstream'/>
+<use f='codebrowser/builtin/merge.c' l='903' u='r' c='setup_with_upstream'/>
+<use f='codebrowser/builtin/pull.c' l='395' u='r' c='die_no_merge_candidates'/>
+<use f='codebrowser/builtin/push.c' l='175' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/remote.c' l='340' u='a' c='handle_config'/>
+<use f='codebrowser/remote.c' l='654' u='r' c='remote_for_branch'/>
+<use f='codebrowser/remote.c' l='657' u='r' c='remote_for_branch'/>
+<use f='codebrowser/remote.c' l='1616' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1625' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1632' u='r' c='set_merge'/>

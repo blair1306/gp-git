@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='401' type='void setup_diff_pager(struct diff_options * )'/>
+<use f='codebrowser/builtin/diff.c' l='368' u='c' c='cmd_diff'/>
+<use f='codebrowser/diff-no-index.c' l='287' u='c' c='diff_no_index'/>
+<def f='codebrowser/diff.c' l='5283' ll='5297' type='void setup_diff_pager(struct diff_options * opt)'/>

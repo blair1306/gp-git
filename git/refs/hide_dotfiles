@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='798' type='enum hide_dotfiles_type'/>
+<use f='codebrowser/config.c' l='1244' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1246' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='67' type='enum hide_dotfiles_type'/>

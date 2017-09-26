@@ -1,0 +1,2 @@
+<dec f='include/time.h' l='342' type='int clock_gettime(clockid_t __clock_id, struct timespec * __tp)'/>
+<use f='codebrowser/trace.c' l='352' u='c' c='highres_nanos'/>

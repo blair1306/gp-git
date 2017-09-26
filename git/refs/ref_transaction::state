@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs/refs-internal.h' l='238' type='enum ref_transaction_state'/>
+<use f='codebrowser/refs.c' l='875' u='r' c='ref_transaction_free'/>
+<use f='codebrowser/refs.c' l='905' u='r' c='ref_transaction_add_update'/>
+<use f='codebrowser/refs.c' l='1769' u='r' c='ref_transaction_prepare'/>
+<use f='codebrowser/refs.c' l='1799' u='r' c='ref_transaction_abort'/>
+<use f='codebrowser/refs.c' l='1824' u='r' c='ref_transaction_commit'/>
+<offset>256</offset>
+<use f='codebrowser/refs/files-backend.c' l='2398' u='w' c='files_transaction_cleanup'/>
+<use f='codebrowser/refs/files-backend.c' l='2495' u='w' c='files_transaction_prepare'/>
+<use f='codebrowser/refs/files-backend.c' l='2515' u='w' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2655' u='r' c='files_initial_transaction_commit'/>
+<use f='codebrowser/refs/files-backend.c' l='2719' u='w' c='files_initial_transaction_commit'/>

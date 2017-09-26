@@ -1,0 +1,2 @@
+<dec f='codebrowser/config.h' l='67' type='int git_config_key_is_valid(const char * key)'/>
+<def f='codebrowser/config.c' l='402' ll='405' type='int git_config_key_is_valid(const char * key)'/>

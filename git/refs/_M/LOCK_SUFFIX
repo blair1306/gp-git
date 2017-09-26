@@ -1,0 +1,5 @@
+<dec f='codebrowser/lockfile.h' l='118'/>
+<doc f='codebrowser/lockfile.h' l='117'>/* String appended to a filename to derive the lockfile name: */</doc>
+<use f='codebrowser/lockfile.c' l='82' u='c'/>
+<use f='codebrowser/lockfile.c' l='196' u='c'/>
+<use f='codebrowser/refs.c' l='112' u='c'/>

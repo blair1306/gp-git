@@ -1,0 +1,9 @@
+<dec f='codebrowser/repository.h' l='89' type='int repo_init(struct repository * repo, const char * gitdir, const char * worktree)'/>
+<def f='codebrowser/repository.c' l='126' ll='147' type='int repo_init(struct repository * repo, const char * gitdir, const char * worktree)'/>
+<use f='codebrowser/repository.c' l='172' u='c' c='repo_submodule_init'/>
+<use f='codebrowser/repository.c' l='184' u='c' c='repo_submodule_init'/>
+<doc f='codebrowser/repository.c' l='122'>/*
+ * Initialize &apos;repo&apos; based on the provided &apos;gitdir&apos;.
+ * Return 0 upon success and a non-zero value upon failure.
+ */</doc>
+<dec f='codebrowser/vcs-svn/repo_tree.h' l='20' type='void repo_init()'/>

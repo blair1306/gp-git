@@ -1,0 +1,12 @@
+<dec f='codebrowser/list-objects.h' l='6' type='void traverse_commit_list(struct rev_info * , show_commit_fn , show_object_fn , void * )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2812' u='c' c='get_object_list'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2821' u='c' c='get_object_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='246' u='c' c='show_bisect_vars'/>
+<use f='codebrowser/builtin/rev-list.c' l='407' u='c' c='cmd_rev_list'/>
+<def f='codebrowser/list-objects.c' l='186' ll='234' type='void traverse_commit_list(struct rev_info * revs, show_commit_fn show_commit, show_object_fn show_object, void * data)'/>
+<use f='codebrowser/pack-bitmap-write.c' l='298' u='c' c='bitmap_writer_build'/>
+<use f='codebrowser/pack-bitmap.c' l='570' u='c' c='find_objects'/>
+<use f='codebrowser/pack-bitmap.c' l='966' u='c' c='test_bitmap_walk'/>
+<use f='codebrowser/reachable.c' l='193' u='c' c='mark_reachable_objects'/>
+<use f='codebrowser/reachable.c' l='201' u='c' c='mark_reachable_objects'/>
+<use f='codebrowser/shallow.c' l='176' u='c' c='get_shallow_commits_by_rev_list'/>

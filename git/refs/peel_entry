@@ -1,0 +1,15 @@
+<dec f='codebrowser/refs/ref-cache.h' l='265' type='enum peel_status peel_entry(struct ref_entry * entry, int repeel)'/>
+<doc f='codebrowser/refs/ref-cache.h' l='254'>/*
+ * Peel the entry (if possible) and return its new peel_status.  If
+ * repeel is true, re-peel the entry even if there is an old peeled
+ * value that is already stored in it.
+ *
+ * It is OK to call this function with a packed reference entry that
+ * might be stale and might even refer to an object that has since
+ * been garbage-collected.  In such a case, if the entry has
+ * REF_KNOWS_PEELED then leave the status unchanged and return
+ * PEEL_PEELED or PEEL_NON_TAG; otherwise, return PEEL_INVALID.
+ */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='398' u='c' c='packed_peel_ref'/>
+<def f='codebrowser/refs/ref-cache.c' l='494' ll='516' type='enum peel_status peel_entry(struct ref_entry * entry, int repeel)'/>
+<use f='codebrowser/refs/ref-cache.c' l='533' u='c' c='cache_ref_iterator_peel'/>

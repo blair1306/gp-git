@@ -1,0 +1,30 @@
+<dec f='codebrowser/pathspec.h' l='73' type='void parse_pathspec(struct pathspec * pathspec, unsigned int magic_mask, unsigned int flags, const char * prefix, const char ** args)'/>
+<use f='codebrowser/archive.c' l='310' u='c' c='path_exists'/>
+<use f='codebrowser/archive.c' l='326' u='c' c='parse_pathspec_arg'/>
+<use f='codebrowser/blame.c' l='550' u='c' c='find_origin'/>
+<use f='codebrowser/builtin/add.c' l='185' u='c' c='interactive_add'/>
+<use f='codebrowser/builtin/add.c' l='434' u='c' c='cmd_add'/>
+<use f='codebrowser/builtin/check-ignore.c' l='89' u='c' c='check_ignore'/>
+<use f='codebrowser/builtin/checkout.c' l='1259' u='c' c='cmd_checkout'/>
+<use f='codebrowser/builtin/clean.c' l='963' u='c' c='cmd_clean'/>
+<use f='codebrowser/builtin/commit.c' l='346' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='1384' u='c' c='cmd_status'/>
+<use f='codebrowser/builtin/grep.c' l='1010' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/ls-files.c' l='438' u='c' c='overlay_tree_on_index'/>
+<use f='codebrowser/builtin/ls-files.c' l='624' u='c' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-tree.c' l='177' u='c' c='cmd_ls_tree'/>
+<use f='codebrowser/builtin/rerere.c' l='79' u='c' c='cmd_rerere'/>
+<use f='codebrowser/builtin/reset.c' l='240' u='c' c='parse_args'/>
+<use f='codebrowser/builtin/rm.c' l='274' u='c' c='cmd_rm'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='236' u='c' c='module_list_compute'/>
+<use f='codebrowser/builtin/update-index.c' l='718' u='c' c='do_reupdate'/>
+<use f='codebrowser/line-log.c' l='755' u='c' c='line_log_init'/>
+<def f='codebrowser/pathspec.c' l='533' ll='622' type='void parse_pathspec(struct pathspec * pathspec, unsigned int magic_mask, unsigned int flags, const char * prefix, const char ** argv)'/>
+<doc f='codebrowser/pathspec.c' l='529'>/*
+ * Given command line arguments and a prefix, convert the input to
+ * pathspec. die() if any magic in magic_mask is used.
+ */</doc>
+<use f='codebrowser/revision.c' l='1425' u='c' c='prepare_show_merge'/>
+<use f='codebrowser/revision.c' l='2307' u='c' c='setup_revisions'/>
+<use f='codebrowser/submodule.c' l='309' u='c' c='is_submodule_active'/>
+<use f='codebrowser/tree-diff.c' l='644' u='c' c='try_to_follow_renames'/>

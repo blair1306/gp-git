@@ -1,0 +1,4 @@
+<dec f='codebrowser/reachable.h' l='7' type='void mark_reachable_objects(struct rev_info * revs, int mark_reflog, timestamp_t mark_recent, struct progress * )'/>
+<use f='codebrowser/builtin/prune.c' l='143' u='c' c='cmd_prune'/>
+<use f='codebrowser/builtin/reflog.c' l='578' u='c' c='cmd_reflog_expire'/>
+<def f='codebrowser/reachable.c' l='158' ll='205' type='void mark_reachable_objects(struct rev_info * revs, int mark_reflog, timestamp_t mark_recent, struct progress * progress)'/>

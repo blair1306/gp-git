@@ -1,0 +1,6 @@
+<def f='codebrowser/xdiff/xtypes.h' l='41' ll='46'/>
+<size>32</size>
+<mbr r='s_xrecord::next' o='0' t='struct s_xrecord *'/>
+<mbr r='s_xrecord::ptr' o='64' t='const char *'/>
+<mbr r='s_xrecord::size' o='128' t='long'/>
+<mbr r='s_xrecord::ha' o='192' t='unsigned long'/>

@@ -1,0 +1,1 @@
+<dec f='include/expat.h' l='539' type='void XML_SetStartElementHandler(XML_Parser parser, XML_StartElementHandler handler)'/>

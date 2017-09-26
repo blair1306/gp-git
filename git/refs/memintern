@@ -1,0 +1,16 @@
+<dec f='codebrowser/hashmap.h' l='405' type='const void * memintern(const void * data, size_t len)'/>
+<use f='codebrowser/hashmap.h' l='408' u='c' c='strintern'/>
+<doc f='codebrowser/hashmap.h' l='392'>/*
+ * Returns the unique, interned version of the specified string or data,
+ * similar to the `String.intern` API in Java and .NET, respectively.
+ * Interned strings remain valid for the entire lifetime of the process.
+ *
+ * Can be used as `[x]strdup()` or `xmemdupz` replacement, except that interned
+ * strings / data must not be modified or freed.
+ *
+ * Interned strings are best used for short strings with high probability of
+ * duplicates.
+ *
+ * Uses a hashmap to store the pool of interned strings.
+ */</doc>
+<def f='codebrowser/hashmap.c' l='278' ll='299' type='const void * memintern(const void * data, size_t len)'/>

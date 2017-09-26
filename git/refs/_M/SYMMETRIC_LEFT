@@ -1,0 +1,14 @@
+<dec f='codebrowser/revision.h' l='19'/>
+<use f='codebrowser/builtin/rev-list.c' l='76' u='c'/>
+<use f='codebrowser/remote.c' l='2047' u='c'/>
+<use f='codebrowser/revision.c' l='786' u='c'/>
+<use f='codebrowser/revision.c' l='820' u='c'/>
+<use f='codebrowser/revision.c' l='845' u='c'/>
+<use f='codebrowser/revision.c' l='865' u='c'/>
+<use f='codebrowser/revision.c' l='1008' u='c'/>
+<use f='codebrowser/revision.c' l='1011' u='c'/>
+<use f='codebrowser/revision.c' l='1406' u='c'/>
+<use f='codebrowser/revision.c' l='1504' u='c'/>
+<use f='codebrowser/revision.c' l='3360' u='c'/>
+<use f='codebrowser/submodule.c' l='470' u='c'/>
+<use f='codebrowser/submodule.c' l='495' u='c'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/pkt-line.h' l='101' type='char [65520]'/>
+<use f='codebrowser/connect.c' l='135' u='r' c='get_remote_heads'/>
+<use f='codebrowser/connect.c' l='139' u='r' c='get_remote_heads'/>
+<use f='codebrowser/connect.c' l='139' u='r' c='get_remote_heads'/>
+<use f='codebrowser/daemon.c' l='694' u='r' c='execute'/>
+<use f='codebrowser/daemon.c' l='706' u='r' c='execute'/>
+<use f='codebrowser/daemon.c' l='706' u='r' c='execute'/>
+<def f='codebrowser/pkt-line.c' l='5' type='char [65520]'/>
+<use f='codebrowser/pkt-line.c' l='314' u='r' c='packet_read_line_generic'/>
+<use f='codebrowser/pkt-line.c' l='314' u='r' c='packet_read_line_generic'/>
+<use f='codebrowser/pkt-line.c' l='318' u='r' c='packet_read_line_generic'/>
+<use f='codebrowser/pkt-line.c' l='329' u='r' c='packet_read_line_gently'/>
+<use f='codebrowser/pkt-line.c' l='329' u='r' c='packet_read_line_gently'/>
+<use f='codebrowser/pkt-line.c' l='334' u='r' c='packet_read_line_gently'/>

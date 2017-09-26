@@ -1,0 +1,40 @@
+<dec f='codebrowser/object.h' l='81' type='struct object * lookup_object(const unsigned char * sha1)'/>
+<doc f='codebrowser/object.h' l='69'>/*
+ * This can be used to see if we have heard of the object before, but
+ * it can return &quot;yes we have, and here is a half-initialised object&quot;
+ * for an object that we haven&apos;t loaded/parsed yet.
+ *
+ * When parsing a commit to create an in-core commit object, its
+ * parents list holds commit objects that represent its parents, but
+ * they are expected to be lazily initialized and do not know what
+ * their trees or parents are yet.  When this function returns such a
+ * half-initialised objects, the caller is expected to initialize them
+ * by calling parse_object() on them.
+ */</doc>
+<use f='codebrowser/blob.c' l='8' u='c' c='lookup_blob'/>
+<use f='codebrowser/builtin/fast-export.c' l='231' u='c' c='export_blob'/>
+<use f='codebrowser/builtin/fast-export.c' l='391' u='c' c='show_filemodify'/>
+<use f='codebrowser/builtin/fsck.c' l='397' u='c' c='fsck_handle_reflog_oid'/>
+<use f='codebrowser/builtin/fsck.c' l='735' u='c' c='cmd_fsck'/>
+<use f='codebrowser/builtin/name-rev.c' l='365' u='c' c='name_rev_line'/>
+<use f='codebrowser/builtin/prune.c' l='42' u='c' c='prune_object'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='329' u='c' c='resolve_against_held'/>
+<use f='codebrowser/commit.c' l='51' u='c' c='lookup_commit'/>
+<use f='codebrowser/fetch-pack.c' l='359' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='428' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='749' u='c' c='everything_local'/>
+<use f='codebrowser/fetch-pack.c' l='768' u='c' c='everything_local'/>
+<use f='codebrowser/http-push.c' l='721' u='c' c='one_remote_object'/>
+<def f='codebrowser/object.c' l='85' ll='110' type='struct object * lookup_object(const unsigned char * sha1)'/>
+<use f='codebrowser/object.c' l='176' u='c' c='lookup_unknown_object'/>
+<use f='codebrowser/object.c' l='251' u='c' c='parse_object'/>
+<use f='codebrowser/object.c' l='263' u='c' c='parse_object'/>
+<doc f='codebrowser/object.c' l='81'>/*
+ * Look up the record for the given sha1 in the hash map stored in
+ * obj_hash.  Return NULL if it was not found.
+ */</doc>
+<use f='codebrowser/reachable.c' l='108' u='c' c='add_recent_loose'/>
+<use f='codebrowser/reachable.c' l='133' u='c' c='add_recent_packed'/>
+<use f='codebrowser/tag.c' l='94' u='c' c='lookup_tag'/>
+<use f='codebrowser/tree.c' l='197' u='c' c='lookup_tree'/>
+<use f='codebrowser/upload-pack.c' l='556' u='c' c='get_reachable_list'/>

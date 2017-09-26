@@ -1,0 +1,5 @@
+<dec f='codebrowser/ref-filter.h' l='129' type='void setup_ref_filter_porcelain_msg()'/>
+<use f='codebrowser/builtin/branch.c' l='603' u='c' c='cmd_branch'/>
+<doc f='codebrowser/ref-filter.h' l='128'>/*  Set up translated strings in the output. */</doc>
+<use f='codebrowser/builtin/tag.c' l='418' u='c' c='cmd_tag'/>
+<def f='codebrowser/ref-filter.c' l='33' ll='39' type='void setup_ref_filter_porcelain_msg()'/>

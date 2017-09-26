@@ -1,0 +1,5 @@
+<dec f='codebrowser/submodule.h' l='13' type='-3'/>
+<use f='codebrowser/submodule-config.c' l='253' u='r' c='parse_fetch_recurse'/>
+<use f='codebrowser/submodule-config.c' l='302' u='r' c='parse_update_recurse'/>
+<use f='codebrowser/submodule-config.c' l='320' u='r' c='parse_push_recurse'/>
+<use f='codebrowser/submodule-config.c' l='333' u='r' c='parse_push_recurse'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/parse-options.h' l='205' type='const char *'/>
+<offset>384</offset>
+<use f='codebrowser/parse-options.c' l='152' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='419' u='w' c='parse_options_start'/>

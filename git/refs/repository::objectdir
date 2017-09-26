@@ -1,0 +1,13 @@
+<dec f='codebrowser/repository.h' l='26' type='char *'/>
+<use f='codebrowser/builtin/grep.c' l='434' u='r' c='grep_submodule'/>
+<offset>128</offset>
+<doc f='codebrowser/repository.h' l='22'>/*
+	 * Path to the repository&apos;s object store.
+	 * Cannot be NULL after initialization.
+	 */</doc>
+<use f='codebrowser/environment.c' l='242' u='r' c='get_object_directory'/>
+<use f='codebrowser/environment.c' l='244' u='r' c='get_object_directory'/>
+<use f='codebrowser/path.c' l='385' u='r' c='adjust_git_path'/>
+<use f='codebrowser/repository.c' l='44' u='w' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='207' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='208' u='w' c='repo_clear'/>

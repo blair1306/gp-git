@@ -1,0 +1,10 @@
+<dec f='codebrowser/kwset.h' l='42' type='kwset_t kwsalloc(const unsigned char * )'/>
+<doc f='codebrowser/kwset.h' l='38'>/* Return an opaque pointer to a newly allocated keyword set, or NULL
+   if enough memory cannot be obtained.  The argument if non-NULL
+   specifies a table of character translations to be applied to all
+   pattern and search text. */</doc>
+<use f='codebrowser/diffcore-pickaxe.c' l='239' u='c' c='diffcore_pickaxe'/>
+<use f='codebrowser/grep.c' l='641' u='c' c='compile_regexp'/>
+<def f='codebrowser/kwset.c' l='88' ll='117' type='kwset_t kwsalloc(const unsigned char * trans)'/>
+<doc f='codebrowser/kwset.c' l='86'>/* Allocate and initialize a keyword set object, returning an opaque
+   pointer to it.  Return NULL if memory is not available. */</doc>

@@ -1,0 +1,6 @@
+<def f='codebrowser/builtin/difftool.c' l='147' ll='151'/>
+<size>8208</size>
+<doc f='codebrowser/builtin/difftool.c' l='143'>/*
+ * The `left` and `right` entries hold paths for the symlinks hashmap,
+ * and a SHA-1 surrounded by brief text for submodules.
+ */</doc>

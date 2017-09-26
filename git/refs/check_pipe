@@ -1,0 +1,6 @@
+<dec f='codebrowser/run-command.h' l='146' type='void check_pipe(int err)'/>
+<use f='codebrowser/pkt-line.c' l='148' u='c' c='packet_write_fmt_1'/>
+<def f='codebrowser/run-command.c' l='1024' ll='1035' type='void check_pipe(int err)'/>
+<use f='codebrowser/write_or_die.c' l='38' u='c' c='maybe_flush_or_die'/>
+<use f='codebrowser/write_or_die.c' l='53' u='c' c='fprintf_or_die'/>
+<use f='codebrowser/write_or_die.c' l='68' u='c' c='write_or_die'/>

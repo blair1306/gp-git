@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>submodule-config.h source code [codebrowser/submodule-config.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="submodule "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/submodule-config.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='submodule-config.h.html'>submodule-config.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/SUBMODULE_CONFIG_CACHE_H">SUBMODULE_CONFIG_CACHE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/SUBMODULE_CONFIG_CACHE_H" data-ref="_M/SUBMODULE_CONFIG_CACHE_H">SUBMODULE_CONFIG_CACHE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="hashmap.h.html">"hashmap.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="submodule.h.html">"submodule.h"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="strbuf.h.html">"strbuf.h"</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><i>/*</i></td></tr>
+<tr><th id="9">9</th><td><i> * Submodule entry containing the information about a certain submodule</i></td></tr>
+<tr><th id="10">10</th><td><i> * in a certain revision.</i></td></tr>
+<tr><th id="11">11</th><td><i> */</i></td></tr>
+<tr><th id="12">12</th><td><b>struct</b> <dfn class="type def" id="submodule" title='submodule' data-ref="submodule">submodule</dfn> {</td></tr>
+<tr><th id="13">13</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="submodule::path" title='submodule::path' data-ref="submodule::path">path</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="submodule::name" title='submodule::name' data-ref="submodule::name">name</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="submodule::url" title='submodule::url' data-ref="submodule::url">url</dfn>;</td></tr>
+<tr><th id="16">16</th><td>	<em>int</em> <dfn class="decl" id="submodule::fetch_recurse" title='submodule::fetch_recurse' data-ref="submodule::fetch_recurse">fetch_recurse</dfn>;</td></tr>
+<tr><th id="17">17</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="submodule::ignore" title='submodule::ignore' data-ref="submodule::ignore">ignore</dfn>;</td></tr>
+<tr><th id="18">18</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="submodule::branch" title='submodule::branch' data-ref="submodule::branch">branch</dfn>;</td></tr>
+<tr><th id="19">19</th><td>	<b>struct</b> <a class="type" href="submodule.h.html#submodule_update_strategy" title='submodule_update_strategy' data-ref="submodule_update_strategy">submodule_update_strategy</a> <dfn class="decl" id="submodule::update_strategy" title='submodule::update_strategy' data-ref="submodule::update_strategy">update_strategy</dfn>;</td></tr>
+<tr><th id="20">20</th><td>	<i>/* the sha1 blob id of the responsible .gitmodules file */</i></td></tr>
+<tr><th id="21">21</th><td>	<em>unsigned</em> <em>char</em> <dfn class="decl" id="submodule::gitmodules_sha1" title='submodule::gitmodules_sha1' data-ref="submodule::gitmodules_sha1">gitmodules_sha1</dfn>[<var>20</var>];</td></tr>
+<tr><th id="22">22</th><td>	<em>int</em> <dfn class="decl" id="submodule::recommend_shallow" title='submodule::recommend_shallow' data-ref="submodule::recommend_shallow">recommend_shallow</dfn>;</td></tr>
+<tr><th id="23">23</th><td>};</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><b>struct</b> <dfn class="type" id="submodule_cache" title='submodule_cache' data-ref="submodule_cache">submodule_cache</dfn>;</td></tr>
+<tr><th id="26">26</th><td><b>struct</b> <a class="type" href="path.h.html#repository" title='repository' data-ref="repository" id="repository">repository</a>;</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="submodule_cache_free" title='submodule_cache_free' data-ref="submodule_cache_free">submodule_cache_free</dfn>(<b>struct</b> <a class="type" href="#submodule_cache" title='submodule_cache' data-ref="submodule_cache">submodule_cache</a> *<dfn class="local col1 decl" id="1cache" title='cache' data-type='struct submodule_cache *' data-ref="1cache">cache</dfn>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_submodule_fetchjobs" title='parse_submodule_fetchjobs' data-ref="parse_submodule_fetchjobs">parse_submodule_fetchjobs</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2var" title='var' data-type='const char *' data-ref="2var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3value" title='value' data-type='const char *' data-ref="3value">value</dfn>);</td></tr>
+<tr><th id="31">31</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_fetch_recurse_submodules_arg" title='parse_fetch_recurse_submodules_arg' data-ref="parse_fetch_recurse_submodules_arg">parse_fetch_recurse_submodules_arg</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="4opt" title='opt' data-type='const char *' data-ref="4opt">opt</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5arg" title='arg' data-type='const char *' data-ref="5arg">arg</dfn>);</td></tr>
+<tr><th id="32">32</th><td><b>struct</b> <a class="type" href="parse-options.h.html#option" title='option' data-ref="option" id="option">option</a>;</td></tr>
+<tr><th id="33">33</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="option_fetch_parse_recurse_submodules" title='option_fetch_parse_recurse_submodules' data-ref="option_fetch_parse_recurse_submodules">option_fetch_parse_recurse_submodules</dfn>(<em>const</em> <b>struct</b> <a class="type" href="parse-options.h.html#option" title='option' data-ref="option">option</a> *<dfn class="local col6 decl" id="6opt" title='opt' data-type='const struct option *' data-ref="6opt">opt</dfn>,</td></tr>
+<tr><th id="34">34</th><td>						 <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7arg" title='arg' data-type='const char *' data-ref="7arg">arg</dfn>, <em>int</em> <dfn class="local col8 decl" id="8unset" title='unset' data-type='int' data-ref="8unset">unset</dfn>);</td></tr>
+<tr><th id="35">35</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_update_recurse_submodules_arg" title='parse_update_recurse_submodules_arg' data-ref="parse_update_recurse_submodules_arg">parse_update_recurse_submodules_arg</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="9opt" title='opt' data-type='const char *' data-ref="9opt">opt</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10arg" title='arg' data-type='const char *' data-ref="10arg">arg</dfn>);</td></tr>
+<tr><th id="36">36</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_push_recurse_submodules_arg" title='parse_push_recurse_submodules_arg' data-ref="parse_push_recurse_submodules_arg">parse_push_recurse_submodules_arg</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="11opt" title='opt' data-type='const char *' data-ref="11opt">opt</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12arg" title='arg' data-type='const char *' data-ref="12arg">arg</dfn>);</td></tr>
+<tr><th id="37">37</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_submodule_config_option" title='parse_submodule_config_option' data-ref="parse_submodule_config_option">parse_submodule_config_option</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="13var" title='var' data-type='const char *' data-ref="13var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="14value" title='value' data-type='const char *' data-ref="14value">value</dfn>);</td></tr>
+<tr><th id="38">38</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="submodule_config_option" title='submodule_config_option' data-ref="submodule_config_option">submodule_config_option</dfn>(<b>struct</b> <a class="type" href="path.h.html#repository" title='repository' data-ref="repository">repository</a> *<dfn class="local col5 decl" id="15repo" title='repo' data-type='struct repository *' data-ref="15repo">repo</dfn>,</td></tr>
+<tr><th id="39">39</th><td>				   <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="16var" title='var' data-type='const char *' data-ref="16var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="17value" title='value' data-type='const char *' data-ref="17value">value</dfn>);</td></tr>
+<tr><th id="40">40</th><td><b>extern</b> <em>const</em> <b>struct</b> <a class="type" href="#submodule" title='submodule' data-ref="submodule">submodule</a> *<dfn class="decl" id="submodule_from_name" title='submodule_from_name' data-ref="submodule_from_name">submodule_from_name</dfn>(</td></tr>
+<tr><th id="41">41</th><td>		<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col8 decl" id="18commit_or_tree" title='commit_or_tree' data-type='const struct object_id *' data-ref="18commit_or_tree">commit_or_tree</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="19name" title='name' data-type='const char *' data-ref="19name">name</dfn>);</td></tr>
+<tr><th id="42">42</th><td><b>extern</b> <em>const</em> <b>struct</b> <a class="type" href="#submodule" title='submodule' data-ref="submodule">submodule</a> *<dfn class="decl" id="submodule_from_path" title='submodule_from_path' data-ref="submodule_from_path">submodule_from_path</dfn>(</td></tr>
+<tr><th id="43">43</th><td>		<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col0 decl" id="20commit_or_tree" title='commit_or_tree' data-type='const struct object_id *' data-ref="20commit_or_tree">commit_or_tree</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="21path" title='path' data-type='const char *' data-ref="21path">path</dfn>);</td></tr>
+<tr><th id="44">44</th><td><b>extern</b> <em>const</em> <b>struct</b> <a class="type" href="#submodule" title='submodule' data-ref="submodule">submodule</a> *<dfn class="decl" id="submodule_from_cache" title='submodule_from_cache' data-ref="submodule_from_cache">submodule_from_cache</dfn>(<b>struct</b> <a class="type" href="path.h.html#repository" title='repository' data-ref="repository">repository</a> *<dfn class="local col2 decl" id="22repo" title='repo' data-type='struct repository *' data-ref="22repo">repo</dfn>,</td></tr>
+<tr><th id="45">45</th><td>						    <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="23treeish_name" title='treeish_name' data-type='const struct object_id *' data-ref="23treeish_name">treeish_name</dfn>,</td></tr>
+<tr><th id="46">46</th><td>						    <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="24key" title='key' data-type='const char *' data-ref="24key">key</dfn>);</td></tr>
+<tr><th id="47">47</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="gitmodule_oid_from_commit" title='gitmodule_oid_from_commit' data-ref="gitmodule_oid_from_commit">gitmodule_oid_from_commit</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col5 decl" id="25commit_oid" title='commit_oid' data-type='const struct object_id *' data-ref="25commit_oid">commit_oid</dfn>,</td></tr>
+<tr><th id="48">48</th><td>				     <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col6 decl" id="26gitmodules_oid" title='gitmodules_oid' data-type='struct object_id *' data-ref="26gitmodules_oid">gitmodules_oid</dfn>,</td></tr>
+<tr><th id="49">49</th><td>				     <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col7 decl" id="27rev" title='rev' data-type='struct strbuf *' data-ref="27rev">rev</dfn>);</td></tr>
+<tr><th id="50">50</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="submodule_free" title='submodule_free' data-ref="submodule_free">submodule_free</dfn>(<em>void</em>);</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><u>#<span data-ppcond="1">endif</span> /* SUBMODULE_CONFIG_H */</u></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/checkout.c.html'>codebrowser/builtin/checkout.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/cache.h' l='414'/>
+<doc f='codebrowser/cache.h' l='413'>/* Double-check local_repo_env below if you add to this list. */</doc>
+<use f='codebrowser/builtin/difftool.c' l='731' u='c'/>
+<use f='codebrowser/builtin/init-db.c' l='532' u='c'/>
+<use f='codebrowser/builtin/init-db.c' l='543' u='c'/>
+<use f='codebrowser/builtin/init-db.c' l='549' u='c'/>
+<use f='codebrowser/builtin/rev-parse.c' l='824' u='c'/>
+<use f='codebrowser/builtin/worktree.c' l='277' u='c'/>
+<use f='codebrowser/environment.c' l='112' u='c'/>
+<use f='codebrowser/environment.c' l='296' u='c'/>
+<use f='codebrowser/git.c' l='98' u='c'/>
+<use f='codebrowser/git.c' l='104' u='c'/>
+<use f='codebrowser/git.c' l='152' u='c'/>
+<use f='codebrowser/setup.c' l='638' u='c'/>
+<use f='codebrowser/setup.c' l='901' u='c'/>
+<use f='codebrowser/setup.c' l='1107' u='c'/>
+<use f='codebrowser/setup.c' l='1109' u='c'/>
+<use f='codebrowser/submodule.c' l='523' u='c'/>
+<use f='codebrowser/transport-helper.c' l='129' u='c'/>

@@ -1,0 +1,9 @@
+<dec f='include/curl/multi.h' l='128' type='CURLMcode curl_multi_add_handle(CURLM * multi_handle, CURL * curl_handle)'/>
+<doc f='include/curl/multi.h' l='121'>/*
+ * Name:    curl_multi_add_handle()
+ *
+ * Desc:    add a standard curl handle to the multi stack
+ *
+ * Returns: CURLMcode type, general multi error code.
+ */</doc>
+<use f='codebrowser/http.c' l='1140' u='c' c='start_active_slot'/>

@@ -1,0 +1,52 @@
+<dec f='codebrowser/userdiff.h' l='12' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/userdiff.c' l='188' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='188' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='193' u='r' c='userdiff_find_by_namelen'/>
+<use f='codebrowser/userdiff.c' l='237' u='w' c='userdiff_config'/>
+<use f='codebrowser/userdiff.c' l='293' u='r' c='userdiff_get_textconv'/>

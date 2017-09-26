@@ -1,0 +1,12 @@
+<dec f='codebrowser/hashmap.h' l='179' type='struct hashmap_entry **'/>
+<offset>0</offset>
+<use f='codebrowser/hashmap.c' l='79' u='w' c='alloc_table'/>
+<use f='codebrowser/hashmap.c' l='117' u='r' c='rehash'/>
+<use f='codebrowser/hashmap.c' l='128' u='r' c='rehash'/>
+<use f='codebrowser/hashmap.c' l='129' u='r' c='rehash'/>
+<use f='codebrowser/hashmap.c' l='139' u='r' c='find_entry_ptr'/>
+<use f='codebrowser/hashmap.c' l='173' u='r' c='hashmap_free'/>
+<use f='codebrowser/hashmap.c' l='182' u='r' c='hashmap_free'/>
+<use f='codebrowser/hashmap.c' l='205' u='r' c='hashmap_add'/>
+<use f='codebrowser/hashmap.c' l='206' u='r' c='hashmap_add'/>
+<use f='codebrowser/hashmap.c' l='259' u='r' c='hashmap_iter_next'/>

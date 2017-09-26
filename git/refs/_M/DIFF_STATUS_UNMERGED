@@ -1,0 +1,11 @@
+<dec f='codebrowser/diff.h' l='336'/>
+<use f='codebrowser/builtin/add.c' l='53' u='c'/>
+<use f='codebrowser/diff.c' l='3699' u='c'/>
+<use f='codebrowser/diff.c' l='4386' u='c'/>
+<use f='codebrowser/wt-status.c' l='289' u='c'/>
+<use f='codebrowser/wt-status.c' l='466' u='c'/>
+<use f='codebrowser/wt-status.c' l='545' u='c'/>
+<use f='codebrowser/wt-status.c' l='634' u='c'/>
+<use f='codebrowser/wt-status.c' l='740' u='c'/>
+<use f='codebrowser/wt-status.c' l='770' u='c'/>
+<use f='codebrowser/wt-status.c' l='798' u='c'/>

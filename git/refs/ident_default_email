@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1452' type='const char * ident_default_email()'/>
+<use f='codebrowser/builtin/config.c' l='477' u='c' c='default_user_config'/>
+<use f='codebrowser/http-push.c' l='876' u='c' c='lock_remote'/>
+<def f='codebrowser/ident.c' l='162' ll='177' type='const char * ident_default_email()'/>
+<use f='codebrowser/ident.c' l='368' u='c' c='fmt_ident'/>

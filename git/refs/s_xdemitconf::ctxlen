@@ -1,0 +1,22 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='97' type='long'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/merge-tree.c' l='109' u='w' c='show_diff'/>
+<use f='codebrowser/builtin/rerere.c' l='43' u='w' c='diff_two'/>
+<use f='codebrowser/diff.c' l='1113' u='w' c='diff_words_show'/>
+<use f='codebrowser/diff.c' l='2508' u='w' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2518' u='w' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2520' u='w' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2600' u='w' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='2648' u='w' c='builtin_checkdiff'/>
+<use f='codebrowser/diff.c' l='4655' u='w' c='diff_get_patch_id'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='63' u='w' c='diff_grep'/>
+<use f='codebrowser/line-log.c' l='337' u='w' c='collect_diff'/>
+<use f='codebrowser/xdiff-interface.c' l='135' u='r' c='xdi_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='55' u='r' c='xdl_get_hunk'/>
+<use f='codebrowser/xdiff/xemit.c' l='56' u='r' c='xdl_get_hunk'/>
+<use f='codebrowser/xdiff/xemit.c' l='173' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='173' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='174' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='174' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='212' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='240' u='r' c='xdl_emit_diff'/>

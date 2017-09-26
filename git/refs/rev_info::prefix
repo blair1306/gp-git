@@ -1,0 +1,13 @@
+<dec f='codebrowser/revision.h' l='70' type='const char *'/>
+<offset>512</offset>
+<doc f='codebrowser/revision.h' l='69'>/* Basic information */</doc>
+<use f='codebrowser/builtin/am.c' l='1588' u='r' c='fall_back_threeway'/>
+<use f='codebrowser/builtin/log.c' l='904' u='r' c='get_patch_ids'/>
+<use f='codebrowser/diff-no-index.c' l='242' u='r' c='diff_no_index'/>
+<use f='codebrowser/diff-no-index.c' l='253' u='r' c='diff_no_index'/>
+<use f='codebrowser/revision.c' l='1350' u='w' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1474' u='r' c='handle_dotdot_1'/>
+<use f='codebrowser/revision.c' l='1606' u='r' c='handle_revision_arg'/>
+<use f='codebrowser/revision.c' l='2046' u='r' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2281' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2308' u='r' c='setup_revisions'/>

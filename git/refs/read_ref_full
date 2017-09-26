@@ -1,0 +1,11 @@
+<dec f='codebrowser/refs.h' l='77' type='int read_ref_full(const char * refname, int resolve_flags, unsigned char * sha1, int * flags)'/>
+<use f='codebrowser/builtin/checkout.c' l='382' u='c' c='checkout_paths'/>
+<use f='codebrowser/builtin/checkout.c' l='1132' u='c' c='checkout_branch'/>
+<use f='codebrowser/builtin/remote.c' l='692' u='c' c='mv'/>
+<use f='codebrowser/bundle.c' l='336' u='c' c='write_bundle_refs'/>
+<use f='codebrowser/notes-merge.c' l='552' u='c' c='notes_merge'/>
+<def f='codebrowser/refs.c' l='229' ll='233' type='int read_ref_full(const char * refname, int resolve_flags, unsigned char * sha1, int * flags)'/>
+<use f='codebrowser/refs.c' l='237' u='c' c='read_ref'/>
+<use f='codebrowser/refs.c' l='385' u='c' c='head_ref_namespaced'/>
+<use f='codebrowser/refs.c' l='1263' u='c' c='head_ref_submodule'/>
+<use f='codebrowser/sequencer.c' l='1629' u='c' c='rollback_single_pick'/>

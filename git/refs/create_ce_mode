@@ -1,0 +1,16 @@
+<def f='codebrowser/cache.h' l='274' ll='281' type='unsigned int create_ce_mode(unsigned int mode)'/>
+<use f='codebrowser/cache.h' l='292' u='c' c='ce_mode_from_stat'/>
+<use f='codebrowser/cache.h' l='294' u='c' c='ce_mode_from_stat'/>
+<use f='codebrowser/apply.c' l='4264' u='c' c='add_index_file'/>
+<use f='codebrowser/apply.c' l='4431' u='c' c='add_conflicted_stages_file'/>
+<use f='codebrowser/blame.c' l='261' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/checkout.c' l='85' u='c' c='update_some'/>
+<use f='codebrowser/builtin/checkout.c' l='192' u='c' c='checkout_merged'/>
+<use f='codebrowser/builtin/rm.c' l='182' u='c' c='check_local_mod'/>
+<use f='codebrowser/builtin/update-index.c' l='415' u='c' c='add_cacheinfo'/>
+<use f='codebrowser/builtin/update-index.c' l='602' u='c' c='read_one_ent'/>
+<use f='codebrowser/diff-no-index.c' l='54' u='c' c='get_mode'/>
+<use f='codebrowser/read-cache.c' l='660' u='c' c='add_to_index'/>
+<use f='codebrowser/read-cache.c' l='748' u='c' c='make_cache_entry'/>
+<use f='codebrowser/tree.c' l='29' u='c' c='read_one_entry_opt'/>
+<use f='codebrowser/unpack-trees.c' l='780' u='c' c='create_ce_entry'/>

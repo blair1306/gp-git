@@ -1,0 +1,5 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='47'/>
+<use f='codebrowser/diff.c' l='2512' u='c'/>
+<use f='codebrowser/xdiff-interface.c' l='135' u='c'/>
+<use f='codebrowser/xdiff/xemit.c' l='176' u='c'/>
+<use f='codebrowser/xdiff/xemit.c' l='219' u='c'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='367'/>
+<use f='codebrowser/builtin/checkout.c' l='281' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='477' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='350' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='1388' u='c'/>
+<use f='codebrowser/builtin/describe.c' l='540' u='c'/>
+<use f='codebrowser/builtin/diff-files.c' l='69' u='c'/>
+<use f='codebrowser/builtin/diff-index.c' l='51' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='148' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='250' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='768' u='c'/>

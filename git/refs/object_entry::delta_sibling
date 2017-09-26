@@ -1,0 +1,17 @@
+<dec f='codebrowser/pack-objects.h' l='11' type='struct object_entry *'/>
+<use f='codebrowser/builtin/pack-objects.c' l='593' u='r' c='add_descendants_to_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='593' u='r' c='add_descendants_to_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='604' u='r' c='add_descendants_to_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='605' u='r' c='add_descendants_to_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='610' u='r' c='add_descendants_to_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='620' u='r' c='add_descendants_to_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='647' u='w' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='660' u='w' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1475' u='w' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1550' u='r' c='drop_reused_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1552' u='a' c='drop_reused_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1958' u='r' c='check_delta_limit'/>
+<offset>576</offset>
+<doc f='codebrowser/pack-objects.h' l='11'>/* other deltified objects who
+					     * uses the same base as me
+					     */</doc>

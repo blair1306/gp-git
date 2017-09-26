@@ -1,0 +1,28 @@
+<dec f='codebrowser/pkt-line.h' l='74' type='char * packet_read_line(int fd, int * size)'/>
+<use f='codebrowser/builtin/archive.c' l='56' u='c' c='run_remote_archiver'/>
+<use f='codebrowser/builtin/archive.c' l='67' u='c' c='run_remote_archiver'/>
+<doc f='codebrowser/pkt-line.h' l='67'>/*
+ * Convenience wrapper for packet_read that is not gentle, and sets the
+ * CHOMP_NEWLINE option. The return value is NULL for a flush packet,
+ * and otherwise points to a static buffer (that may be overwritten by
+ * subsequent calls). If the size parameter is not NULL, the length of the
+ * packet is written to it.
+ */</doc>
+<use f='codebrowser/builtin/fetch-pack.c' l='168' u='c' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1584' u='c' c='read_head_info'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1650' u='c' c='read_push_options'/>
+<use f='codebrowser/builtin/send-pack.c' l='217' u='c' c='cmd_send_pack'/>
+<use f='codebrowser/builtin/upload-archive.c' l='34' u='c' c='cmd_upload_archive_writer'/>
+<use f='codebrowser/convert.c' l='695' u='c' c='async_query_available_blobs'/>
+<use f='codebrowser/fetch-pack.c' l='246' u='c' c='consume_shallow_list'/>
+<use f='codebrowser/fetch-pack.c' l='259' u='c' c='get_ack'/>
+<use f='codebrowser/fetch-pack.c' l='418' u='c' c='find_common'/>
+<def f='codebrowser/pkt-line.c' l='321' ll='324' type='char * packet_read_line(int fd, int * len_p)'/>
+<use f='codebrowser/send-pack.c' l='149' u='c' c='receive_unpack_status'/>
+<use f='codebrowser/send-pack.c' l='167' u='c' c='receive_status'/>
+<use f='codebrowser/sub-process.c' l='135' u='c' c='handshake_version'/>
+<use f='codebrowser/sub-process.c' l='140' u='c' c='handshake_version'/>
+<use f='codebrowser/sub-process.c' l='145' u='c' c='handshake_version'/>
+<use f='codebrowser/sub-process.c' l='174' u='c' c='handshake_capabilities'/>
+<use f='codebrowser/upload-pack.c' l='395' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='747' u='c' c='receive_needs'/>

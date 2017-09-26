@@ -1,0 +1,5 @@
+<dec f='codebrowser/connect.h' l='13' type='const char * server_feature_value(const char * feature, int * len_ret)'/>
+<def f='codebrowser/connect.c' l='245' ll='248' type='const char * server_feature_value(const char * feature, int * len)'/>
+<use f='codebrowser/connect.c' l='252' u='c' c='server_supports'/>
+<use f='codebrowser/fetch-pack.c' l='965' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/send-pack.c' l='424' u='c' c='send_pack'/>

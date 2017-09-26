@@ -1,0 +1,10 @@
+<dec f='codebrowser/lockfile.h' l='200' type='void unable_to_lock_die(const char * path, int err)'/>
+<doc f='codebrowser/lockfile.h' l='194'>/*
+ * Emit an appropriate error message and `die()` following the failure
+ * of `hold_lock_file_for_update()` to lock `path`. `err` should be the
+ * `errno` set by the failing
+ * call.
+ */</doc>
+<use f='codebrowser/builtin/update-index.c' l='1154' u='c' c='cmd_update_index'/>
+<def f='codebrowser/lockfile.c' l='164' ll='170' macro='1' type='void unable_to_lock_die(const char * path, int err)'/>
+<use f='codebrowser/lockfile.c' l='179' u='c' c='hold_lock_file_for_update_timeout'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/fsck.h' l='42'/>
+<use f='codebrowser/builtin/index-pack.c' l='79' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='25' u='c'/>

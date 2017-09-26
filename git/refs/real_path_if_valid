@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1129' type='const char * real_path_if_valid(const char * path)'/>
+<def f='codebrowser/abspath.c' l='211' ll='215' type='const char * real_path_if_valid(const char * path)'/>
+<use f='codebrowser/sha1_file.c' l='558' u='c' c='compute_alternate_path'/>
+<use f='codebrowser/submodule.c' l='1947' u='c' c='get_superproject_working_tree'/>

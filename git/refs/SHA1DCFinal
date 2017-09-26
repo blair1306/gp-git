@@ -1,0 +1,4 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='100' type='int SHA1DCFinal(unsigned char * , SHA1_CTX * )'/>
+<doc f='codebrowser/sha1dc/sha1.h' l='99'>/* returns: 0 = no collision detected, otherwise = collision found =&gt; warn user for active attack */</doc>
+<def f='codebrowser/sha1dc/sha1.c' l='1857' ll='1896' type='int SHA1DCFinal(unsigned char * output, SHA1_CTX * ctx)'/>
+<use f='codebrowser/sha1dc_git.c' l='8' u='c' c='git_SHA1DCFinal'/>

@@ -1,0 +1,1 @@
+<dec f='include/expat.h' l='604' type='void XML_SetNotationDeclHandler(XML_Parser parser, XML_NotationDeclHandler handler)'/>

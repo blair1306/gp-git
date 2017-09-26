@@ -1,0 +1,22 @@
+<dec f='codebrowser/run-command.h' l='132' type='int'/>
+<offset>160</offset>
+<doc f='codebrowser/run-command.h' l='132'>/* caller reads from here and closes it */</doc>
+<use f='codebrowser/convert.c' l='474' u='w' c='apply_single_file_filter'/>
+<use f='codebrowser/convert.c' l='485' u='r' c='apply_single_file_filter'/>
+<use f='codebrowser/convert.c' l='488' u='r' c='apply_single_file_filter'/>
+<use f='codebrowser/fetch-pack.c' l='810' u='w' c='get_pack'/>
+<use f='codebrowser/fetch-pack.c' l='816' u='w' c='get_pack'/>
+<use f='codebrowser/fetch-pack.c' l='820' u='r' c='get_pack'/>
+<use f='codebrowser/fetch-pack.c' l='874' u='r' c='get_pack'/>
+<use f='codebrowser/run-command.c' l='1046' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1047' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1053' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1062' u='w' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1074' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1075' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1147' u='r' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1148' u='r' c='start_async'/>
+<use f='codebrowser/send-pack.c' l='560' u='w' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='564' u='r' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='584' u='r' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='605' u='r' c='send_pack'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/http.h' l='174' type='struct strbuf *'/>
+<offset>256</offset>
+<doc f='codebrowser/http.h' l='168'>/*
+	 * If both base_url and effective_url are non-NULL, the base URL will
+	 * be munged to reflect any redirections going from the requested url
+	 * to effective_url. See the definition of update_url_from_redirect
+	 * for details.
+	 */</doc>
+<use f='codebrowser/http.c' l='1786' u='r' c='http_request_reauth'/>
+<use f='codebrowser/http.c' l='1787' u='r' c='http_request_reauth'/>
+<use f='codebrowser/http.c' l='1789' u='r' c='http_request_reauth'/>
+<use f='codebrowser/remote-curl.c' l='303' u='w' c='discover_refs'/>

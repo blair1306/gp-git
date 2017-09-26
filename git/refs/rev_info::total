@@ -1,0 +1,8 @@
+<dec f='codebrowser/revision.h' l='165' type='int'/>
+<offset>1440</offset>
+<use f='codebrowser/builtin/log.c' l='1120' u='w' c='keep_callback'/>
+<use f='codebrowser/builtin/log.c' l='1720' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='338' u='r' c='fmt_output_email_subject'/>
+<use f='codebrowser/log-tree.c' l='342' u='r' c='fmt_output_email_subject'/>
+<use f='codebrowser/log-tree.c' l='343' u='r' c='fmt_output_email_subject'/>
+<use f='codebrowser/log-tree.c' l='344' u='r' c='fmt_output_email_subject'/>

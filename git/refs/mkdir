@@ -1,0 +1,25 @@
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='320' type='int mkdir(const char * __path, __mode_t __mode)'/>
+<doc f='include/x86_64-linux-gnu/sys/stat.h' l='319'>/* Create a new directory named PATH, with permission bits MODE.  */</doc>
+<use f='codebrowser/apply.c' l='4314' u='c' c='try_create_file'/>
+<use f='codebrowser/builtin/am.c' l='998' u='c' c='am_setup'/>
+<use f='codebrowser/builtin/clone.c' l='399' u='c' c='copy_or_link_directory'/>
+<use f='codebrowser/builtin/clone.c' l='969' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/difftool.c' l='367' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='368' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/init-db.c' l='520' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/log.c' l='1635' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/update-index.c' l='79' u='c' c='xmkdir'/>
+<use f='codebrowser/builtin/worktree.c' l='235' u='c' c='add_worktree'/>
+<use f='codebrowser/credential-cache--daemon.c' l='246' u='c' c='init_socket_directory'/>
+<use f='codebrowser/entry.c' l='38' u='c' c='create_directories'/>
+<use f='codebrowser/entry.c' l='40' u='c' c='create_directories'/>
+<use f='codebrowser/entry.c' l='328' u='c' c='write_entry'/>
+<use f='codebrowser/http.c' l='2184' u='c' c='new_http_object_request'/>
+<use f='codebrowser/path.c' l='883' u='c' c='safe_create_dir'/>
+<use f='codebrowser/sequencer.c' l='1557' u='c' c='create_seq_dir'/>
+<use f='codebrowser/sha1_file.c' l='81' u='c' c='mkdir_in_gitdir'/>
+<use f='codebrowser/sha1_file.c' l='98' u='c' c='mkdir_in_gitdir'/>
+<use f='codebrowser/sha1_file.c' l='137' u='c' c='safe_create_leading_directories'/>
+<use f='codebrowser/sha1_file.c' l='3294' u='c' c='create_tmpfile'/>
+<use f='codebrowser/tmp-objdir.c' l='117' u='c' c='setup_tmp_objdir'/>
+<use f='codebrowser/tmp-objdir.c' l='223' u='c' c='migrate_one'/>

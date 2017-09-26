@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>repo_tree.h source code [codebrowser/vcs-svn/repo_tree.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/vcs-svn/repo_tree.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>vcs-svn</a>/<a href='repo_tree.h.html'>repo_tree.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/REPO_TREE_H_">REPO_TREE_H_</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/REPO_TREE_H_" data-ref="_M/REPO_TREE_H_">REPO_TREE_H_</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf" id="strbuf">strbuf</a>;</td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/REPO_MODE_DIR" data-ref="_M/REPO_MODE_DIR">REPO_MODE_DIR</dfn> 0040000</u></td></tr>
+<tr><th id="7">7</th><td><u>#define <dfn class="macro" id="_M/REPO_MODE_BLB" data-ref="_M/REPO_MODE_BLB">REPO_MODE_BLB</dfn> 0100644</u></td></tr>
+<tr><th id="8">8</th><td><u>#define <dfn class="macro" id="_M/REPO_MODE_EXE" data-ref="_M/REPO_MODE_EXE">REPO_MODE_EXE</dfn> 0100755</u></td></tr>
+<tr><th id="9">9</th><td><u>#define <dfn class="macro" id="_M/REPO_MODE_LNK" data-ref="_M/REPO_MODE_LNK">REPO_MODE_LNK</dfn> 0120000</u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="next_blob_mark" title='next_blob_mark' data-ref="next_blob_mark">next_blob_mark</dfn>(<em>void</em>);</td></tr>
+<tr><th id="12">12</th><td><em>void</em> <dfn class="decl" id="repo_copy" title='repo_copy' data-ref="repo_copy">repo_copy</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col7 decl" id="37revision" title='revision' data-type='uint32_t' data-ref="37revision">revision</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="38src" title='src' data-type='const char *' data-ref="38src">src</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="39dst" title='dst' data-type='const char *' data-ref="39dst">dst</dfn>);</td></tr>
+<tr><th id="13">13</th><td><em>void</em> <dfn class="decl" id="repo_add" title='repo_add' data-ref="repo_add">repo_add</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="40path" title='path' data-type='const char *' data-ref="40path">path</dfn>, <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col1 decl" id="41mode" title='mode' data-type='uint32_t' data-ref="41mode">mode</dfn>, <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col2 decl" id="42blob_mark" title='blob_mark' data-type='uint32_t' data-ref="42blob_mark">blob_mark</dfn>);</td></tr>
+<tr><th id="14">14</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="repo_read_path" title='repo_read_path' data-ref="repo_read_path">repo_read_path</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="43path" title='path' data-type='const char *' data-ref="43path">path</dfn>, <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> *<dfn class="local col4 decl" id="44mode_out" title='mode_out' data-type='uint32_t *' data-ref="44mode_out">mode_out</dfn>);</td></tr>
+<tr><th id="15">15</th><td><em>void</em> <dfn class="decl" id="repo_delete" title='repo_delete' data-ref="repo_delete">repo_delete</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="45path" title='path' data-type='const char *' data-ref="45path">path</dfn>);</td></tr>
+<tr><th id="16">16</th><td><em>void</em> <dfn class="decl" id="repo_commit" title='repo_commit' data-ref="repo_commit">repo_commit</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col6 decl" id="46revision" title='revision' data-type='uint32_t' data-ref="46revision">revision</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="47author" title='author' data-type='const char *' data-ref="47author">author</dfn>,</td></tr>
+<tr><th id="17">17</th><td>		<em>const</em> <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col8 decl" id="48log" title='log' data-type='const struct strbuf *' data-ref="48log">log</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="49uuid" title='uuid' data-type='const char *' data-ref="49uuid">uuid</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="50url" title='url' data-type='const char *' data-ref="50url">url</dfn>,</td></tr>
+<tr><th id="18">18</th><td>		<em>long</em> <em>unsigned</em> <dfn class="local col1 decl" id="51timestamp" title='timestamp' data-type='unsigned long' data-ref="51timestamp">timestamp</dfn>);</td></tr>
+<tr><th id="19">19</th><td><em>void</em> <dfn class="decl" id="repo_diff" title='repo_diff' data-ref="repo_diff">repo_diff</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col2 decl" id="52r1" title='r1' data-type='uint32_t' data-ref="52r1">r1</dfn>, <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col3 decl" id="53r2" title='r2' data-type='uint32_t' data-ref="53r2">r2</dfn>);</td></tr>
+<tr><th id="20">20</th><td><em>void</em> <dfn class="decl" id="repo_init" title='repo_init' data-ref="repo_init">repo_init</dfn>(<em>void</em>);</td></tr>
+<tr><th id="21">21</th><td><em>void</em> <dfn class="decl" id="repo_reset" title='repo_reset' data-ref="repo_reset">repo_reset</dfn>(<em>void</em>);</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='fast_export.c.html'>codebrowser/vcs-svn/fast_export.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

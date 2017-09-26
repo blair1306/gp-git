@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='1628' type='void (*)(unsigned int, const char *)'/>
+<use f='codebrowser/builtin/count-objects.c' l='54' u='r' c='loose_garbage'/>
+<use f='codebrowser/builtin/count-objects.c' l='108' u='w' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/gc.c' l='474' u='w' c='cmd_gc'/>
+<use f='codebrowser/path.c' l='369' u='r' c='report_linked_checkout_garbage'/>
+<def f='codebrowser/sha1_file.c' l='1388' type='void (*)(unsigned int, const char *)'/>
+<use f='codebrowser/sha1_file.c' l='1397' u='r' c='report_helper'/>
+<use f='codebrowser/sha1_file.c' l='1404' u='r' c='report_pack_garbage'/>
+<use f='codebrowser/sha1_file.c' l='1420' u='r' c='report_pack_garbage'/>
+<use f='codebrowser/sha1_file.c' l='1483' u='r' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1492' u='r' c='prepare_packed_git_one'/>

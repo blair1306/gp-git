@@ -1,0 +1,8 @@
+<def f='codebrowser/cache.h' l='392' ll='404'/>
+<def f='codebrowser/cache.h' l='406' ll='411' type='enum object_type object_type(unsigned int mode)'/>
+<use f='codebrowser/builtin/mktree.c' l='112' u='c' c='mktree_line'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1250' u='c' c='add_pbase_object'/>
+<use f='codebrowser/diffcore-break.c' l='178' u='c' c='diffcore_break'/>
+<use f='codebrowser/diffcore-break.c' l='179' u='c' c='diffcore_break'/>
+<use f='codebrowser/http-push.c' l='1306' u='c' c='process_tree'/>
+<use f='codebrowser/revision.c' l='60' u='c' c='mark_tree_contents_uninteresting'/>

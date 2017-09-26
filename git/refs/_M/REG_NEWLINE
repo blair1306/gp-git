@@ -1,0 +1,12 @@
+<dec f='include/regex.h' l='282'/>
+<doc f='include/regex.h' l='279'>/* If this bit is set, then anchors do not match at newline
+     characters in the string.
+   If not set, then anchors do match at newlines.  */</doc>
+<use f='codebrowser/diff.c' l='1184' u='c'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='224' u='c'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='232' u='c'/>
+<use f='codebrowser/grep.c' l='617' u='c'/>
+<use f='codebrowser/line-range.c' l='94' u='c'/>
+<use f='codebrowser/line-range.c' l='208' u='c'/>
+<use f='codebrowser/t/helper/test-regex.c' l='11' u='c'/>
+<use f='codebrowser/t/helper/test-regex.c' l='27' u='c'/>

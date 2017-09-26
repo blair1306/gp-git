@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='201' type='struct ref * get_remote_ref(const struct ref * remote_refs, const char * name)'/>
+<use f='codebrowser/builtin/fetch.c' l='413' u='c' c='get_ref_map'/>
+<def f='codebrowser/remote.c' l='1849' ll='1857' type='struct ref * get_remote_ref(const struct ref * remote_refs, const char * name)'/>
+<use f='codebrowser/remote.c' l='1891' u='c' c='get_fetch_map'/>

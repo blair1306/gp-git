@@ -1,0 +1,6 @@
+<dec f='codebrowser/xdiff/xutils.h' l='39' type='int xdl_num_out(char * out, long val)'/>
+<def f='codebrowser/xdiff/xutils.c' l='291' ll='311' type='int xdl_num_out(char * out, long val)'/>
+<use f='codebrowser/xdiff/xutils.c' l='322' u='c' c='xdl_emit_hunk_hdr'/>
+<use f='codebrowser/xdiff/xutils.c' l='328' u='c' c='xdl_emit_hunk_hdr'/>
+<use f='codebrowser/xdiff/xutils.c' l='334' u='c' c='xdl_emit_hunk_hdr'/>
+<use f='codebrowser/xdiff/xutils.c' l='340' u='c' c='xdl_emit_hunk_hdr'/>

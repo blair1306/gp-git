@@ -1,0 +1,5 @@
+<dec f='codebrowser/vcs-svn/line_buffer.h' l='15' type='int buffer_fdinit(struct line_buffer * buf, int fd)'/>
+<use f='codebrowser/t/helper/test-line-buffer.c' l='72' u='c' c='cmd_main'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='34' u='c' c='fast_export_init'/>
+<def f='codebrowser/vcs-svn/line_buffer.c' l='20' ll='26' type='int buffer_fdinit(struct line_buffer * buf, int fd)'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='511' u='c' c='svndump_init_fd'/>

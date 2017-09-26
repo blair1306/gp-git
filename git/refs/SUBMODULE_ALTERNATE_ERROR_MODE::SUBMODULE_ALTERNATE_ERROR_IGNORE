@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin/submodule--helper.c' l='528' type='2'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='570' c='add_possible_reference_from_superproject'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='533' u='r' c='prepare_possible_alternates'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='533' u='r' c='prepare_possible_alternates'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='602' u='r' c='prepare_possible_alternates'/>

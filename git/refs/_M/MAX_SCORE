@@ -1,0 +1,20 @@
+<dec f='codebrowser/diffcore.h' l='18'/>
+<doc f='codebrowser/diffcore.h' l='12'>/* We internally use unsigned short as the score value,
+ * and rely on an int capable to hold 32-bits.  -B can take
+ * -Bmerge_score/break_score format and the two scores are
+ * passed around in one int (high 16-bit for merge and low 16-bit
+ * for break).
+ */</doc>
+<use f='codebrowser/diff.c' l='3102' u='c'/>
+<use f='codebrowser/diff.c' l='4109' u='c'/>
+<use f='codebrowser/diff.c' l='4109' u='c'/>
+<use f='codebrowser/diffcore-break.c' l='56' u='c'/>
+<use f='codebrowser/diffcore-break.c' l='95' u='c'/>
+<use f='codebrowser/diffcore-break.c' l='103' u='c'/>
+<use f='codebrowser/diffcore-break.c' l='109' u='c'/>
+<use f='codebrowser/diffcore-rename.c' l='185' u='c'/>
+<use f='codebrowser/diffcore-rename.c' l='185' u='c'/>
+<use f='codebrowser/diffcore-rename.c' l='204' u='c'/>
+<use f='codebrowser/diffcore-rename.c' l='312' u='c'/>
+<use f='codebrowser/diffcore-rename.c' l='510' u='c'/>
+<use f='codebrowser/wt-status.c' l='536' u='c'/>

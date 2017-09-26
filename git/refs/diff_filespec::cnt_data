@@ -1,0 +1,12 @@
+<dec f='codebrowser/diffcore.h' l='31' type='void *'/>
+<offset>320</offset>
+<use f='codebrowser/diff.c' l='2946' u='r' c='diff_free_filespec_data'/>
+<use f='codebrowser/diff.c' l='2946' u='w' c='diff_free_filespec_data'/>
+<use f='codebrowser/diffcore-break.c' l='75' u='a' c='should_break'/>
+<use f='codebrowser/diffcore-break.c' l='75' u='a' c='should_break'/>
+<use f='codebrowser/diffcore-rename.c' l='166' u='r' c='estimate_similarity'/>
+<use f='codebrowser/diffcore-rename.c' l='169' u='r' c='estimate_similarity'/>
+<use f='codebrowser/diffcore-rename.c' l='188' u='r' c='estimate_similarity'/>
+<use f='codebrowser/diffcore-rename.c' l='190' u='r' c='estimate_similarity'/>
+<use f='codebrowser/diffcore-rename.c' l='194' u='a' c='estimate_similarity'/>
+<use f='codebrowser/diffcore-rename.c' l='194' u='a' c='estimate_similarity'/>

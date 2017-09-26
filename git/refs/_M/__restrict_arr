@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/sys/cdefs.h' l='370'/>
+<use f='include/regex.h' l='552' u='a'/>
+<use f='include/regex.h' l='568' u='c'/>
+<use f='include/netdb.h' l='692' u='c'/>

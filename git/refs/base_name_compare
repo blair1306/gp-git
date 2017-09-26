@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1394' type='int base_name_compare(const char * name1, int len1, int mode1, const char * name2, int len2, int mode2)'/>
+<use f='codebrowser/builtin/mktree.c' l='39' u='c' c='ent_compare'/>
+<use f='codebrowser/combine-diff.c' l='21' u='c' c='compare_paths'/>
+<use f='codebrowser/fast-import.c' l='1443' u='c' c='tecmp0'/>
+<use f='codebrowser/fast-import.c' l='1452' u='c' c='tecmp1'/>
+<use f='codebrowser/match-trees.c' l='69' u='c' c='base_name_entries_compare'/>
+<def f='codebrowser/read-cache.c' l='399' ll='416' type='int base_name_compare(const char * name1, int len1, int mode1, const char * name2, int len2, int mode2)'/>
+<use f='codebrowser/tree-diff.c' l='62' u='c' c='tree_entry_pathcmp'/>

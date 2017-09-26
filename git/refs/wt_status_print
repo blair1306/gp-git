@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='120' type='void wt_status_print(struct wt_status * s)'/>
+<use f='codebrowser/builtin/commit.c' l='520' u='c' c='run_status'/>
+<use f='codebrowser/builtin/commit.c' l='1409' u='c' c='cmd_status'/>
+<def f='codebrowser/wt-status.c' l='2234' ll='2254' type='void wt_status_print(struct wt_status * s)'/>

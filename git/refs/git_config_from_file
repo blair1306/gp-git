@@ -1,0 +1,14 @@
+<dec f='codebrowser/config.h' l='39' type='int git_config_from_file(config_fn_t fn, const char * , void * )'/>
+<use f='codebrowser/config.c' l='162' u='c' c='handle_path_include'/>
+<def f='codebrowser/config.c' l='1438' ll='1451' type='int git_config_from_file(config_fn_t fn, const char * filename, void * data)'/>
+<use f='codebrowser/config.c' l='1557' u='c' c='do_git_config_sequence'/>
+<use f='codebrowser/config.c' l='1562' u='c' c='do_git_config_sequence'/>
+<use f='codebrowser/config.c' l='1565' u='c' c='do_git_config_sequence'/>
+<use f='codebrowser/config.c' l='1569' u='c' c='do_git_config_sequence'/>
+<use f='codebrowser/config.c' l='1603' u='c' c='config_with_options'/>
+<use f='codebrowser/config.c' l='1775' u='c' c='git_configset_add_file'/>
+<use f='codebrowser/config.c' l='2079' u='c' c='config_from_gitmodules'/>
+<use f='codebrowser/config.c' l='2518' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/sequencer.c' l='1515' u='c' c='read_populate_opts'/>
+<use f='codebrowser/setup.c' l='496' u='c' c='read_repository_format'/>
+<use f='codebrowser/submodule.c' l='250' u='c' c='repo_read_gitmodules'/>

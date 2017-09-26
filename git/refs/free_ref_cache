@@ -1,0 +1,7 @@
+<dec f='codebrowser/refs/ref-cache.h' l='205' type='void free_ref_cache(struct ref_cache * cache)'/>
+<use f='codebrowser/refs/files-backend.c' l='38' u='c' c='clear_loose_ref_cache'/>
+<doc f='codebrowser/refs/ref-cache.h' l='202'>/*
+ * Free the `ref_cache` and all of its associated data.
+ */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='40' u='c' c='release_packed_ref_cache'/>
+<def f='codebrowser/refs/ref-cache.c' l='71' ll='75' type='void free_ref_cache(struct ref_cache * cache)'/>

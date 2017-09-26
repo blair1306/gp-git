@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='342' type='unsigned int'/>
+<offset>449</offset>
+<use f='codebrowser/read-cache.c' l='1737' u='r' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1770' u='w' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1841' u='r' c='read_index_from'/>
+<use f='codebrowser/read-cache.c' l='1896' u='w' c='discard_index'/>
+<use f='codebrowser/read-cache.c' l='2132' u='r' c='verify_index_from'/>
+<use f='codebrowser/unpack-trees.c' l='1269' u='w' c='unpack_trees'/>

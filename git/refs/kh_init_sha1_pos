@@ -1,0 +1,2 @@
+<def f='codebrowser/khash.h' l='324' macro='1' type='kh_sha1_pos_t * kh_init_sha1_pos()'/>
+<use f='codebrowser/pack-bitmap.c' l='307' u='c' c='load_pack_bitmap'/>

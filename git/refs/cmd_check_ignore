@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='143' type='int cmd_check_ignore(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/check-ignore.c' l='146' ll='191' type='int cmd_check_ignore(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='375'/>
+<use f='codebrowser/git.c' l='375'/>
+<use f='codebrowser/git.c' l='375'/>
+<use f='codebrowser/git.c' l='375'/>

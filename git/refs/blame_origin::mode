@@ -1,0 +1,11 @@
+<dec f='codebrowser/blame.h' l='55' type='unsigned int'/>
+<use f='codebrowser/blame.c' l='297' u='r' c='fill_origin_blob'/>
+<use f='codebrowser/blame.c' l='507' u='a' c='fill_blob_sha1_and_mode'/>
+<use f='codebrowser/blame.c' l='514' u='w' c='fill_blob_sha1_and_mode'/>
+<use f='codebrowser/blame.c' l='567' u='w' c='find_origin'/>
+<use f='codebrowser/blame.c' l='567' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='593' u='w' c='find_origin'/>
+<use f='codebrowser/blame.c' l='638' u='w' c='find_rename'/>
+<use f='codebrowser/blame.c' l='1288' u='w' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1829' u='r' c='setup_scoreboard'/>
+<offset>608</offset>

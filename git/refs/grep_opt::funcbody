@@ -1,0 +1,12 @@
+<dec f='codebrowser/grep.h' l='154' type='int'/>
+<offset>1696</offset>
+<use f='codebrowser/builtin/grep.c' l='856' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='856' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='856' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='856' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='1045' u='r' c='cmd_grep'/>
+<use f='codebrowser/grep.c' l='1341' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1485' u='r' c='show_pre_context'/>
+<use f='codebrowser/grep.c' l='1657' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1776' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1782' u='r' c='grep_source_1'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/dir.h' l='266' type='int is_inside_dir(const char * dir)'/>
+<def f='codebrowser/dir.c' l='2207' ll='2219' type='int is_inside_dir(const char * dir)'/>
+<use f='codebrowser/setup.c' l='366' u='c' c='is_inside_git_dir'/>
+<use f='codebrowser/setup.c' l='373' u='c' c='is_inside_work_tree'/>

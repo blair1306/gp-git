@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1964' type='void ws_fix_copy(struct strbuf * , const char * , int , unsigned int , int * )'/>
+<use f='codebrowser/apply.c' l='2584' u='c' c='match_fragment'/>
+<use f='codebrowser/apply.c' l='2588' u='c' c='match_fragment'/>
+<use f='codebrowser/apply.c' l='2629' u='c' c='match_fragment'/>
+<use f='codebrowser/apply.c' l='2914' u='c' c='apply_one_fragment'/>
+<def f='codebrowser/ws.c' l='276' ll='388' type='void ws_fix_copy(struct strbuf * dst, const char * src, int len, unsigned int ws_rule, int * error_count)'/>
+<doc f='codebrowser/ws.c' l='275'>/* Copy the line onto the end of the strbuf while fixing whitespaces */</doc>

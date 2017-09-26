@@ -1,0 +1,6 @@
+<def f='codebrowser/submodule-config.c' l='27' ll='30'/>
+<size>24</size>
+<doc f='codebrowser/submodule-config.c' l='23'>/*
+ * thin wrapper struct needed to insert &apos;struct submodule&apos; entries to
+ * the hashmap
+ */</doc>

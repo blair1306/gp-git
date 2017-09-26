@@ -1,0 +1,3 @@
+<dec f='codebrowser/sequencer.c' l='762' type='4'/>
+<use f='codebrowser/sequencer.c' l='803' u='r' c='is_fixup'/>
+<use f='codebrowser/sequencer.c' l='883' u='r' c='update_squash_messages'/>

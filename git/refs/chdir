@@ -1,0 +1,24 @@
+<dec f='include/unistd.h' l='500' type='int chdir(const char * __path)'/>
+<doc f='include/unistd.h' l='499'>/* Change the process&apos;s working directory to PATH.  */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='1651' u='c' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/init-db.c' l='498' u='c' c='cmd_init_db'/>
+<use f='codebrowser/credential-cache--daemon.c' l='250' u='c' c='init_socket_directory'/>
+<use f='codebrowser/git.c' l='197' u='c' c='handle_options'/>
+<use f='codebrowser/path.c' l='815' u='c' c='enter_repo'/>
+<use f='codebrowser/path.c' l='823' u='c' c='enter_repo'/>
+<use f='codebrowser/run-command.c' l='709' u='c' c='start_command'/>
+<use f='codebrowser/setup.c' l='392' u='c' c='setup_work_tree'/>
+<use f='codebrowser/setup.c' l='680' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='682' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='685' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='713' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='740' u='c' c='setup_discovered_git_dir'/>
+<use f='codebrowser/setup.c' l='750' u='c' c='setup_discovered_git_dir'/>
+<use f='codebrowser/setup.c' l='788' u='c' c='setup_bare_git_dir'/>
+<use f='codebrowser/setup.c' l='796' u='c' c='setup_bare_git_dir'/>
+<use f='codebrowser/setup.c' l='811' u='c' c='setup_nongit'/>
+<use f='codebrowser/setup.c' l='1061' u='c' c='setup_git_directory_gently'/>
+<use f='codebrowser/setup.c' l='1067' u='c' c='setup_git_directory_gently'/>
+<use f='codebrowser/shell.c' l='57' u='c' c='cd_to_homedir'/>
+<use f='codebrowser/unix-socket.c' l='15' u='c' c='chdir_len'/>
+<use f='codebrowser/unix-socket.c' l='33' u='c' c='unix_sockaddr_cleanup'/>

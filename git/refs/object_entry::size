@@ -1,0 +1,22 @@
+<dec f='codebrowser/pack-objects.h' l='6' type='unsigned long'/>
+<use f='codebrowser/builtin/pack-objects.c' l='254' u='r' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='369' u='r' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='386' u='r' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1404' u='a' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1474' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1487' u='w' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1489' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1504' u='a' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1557' u='a' c='drop_reused_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1567' u='a' c='drop_reused_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1708' u='r' c='get_object_details'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1748' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1748' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1750' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1750' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1837' u='r' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1849' u='r' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1969' u='r' c='free_unpacked'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2406' u='r' c='prepare_pack'/>
+<offset>256</offset>
+<doc f='codebrowser/pack-objects.h' l='6'>/* uncompressed size */</doc>

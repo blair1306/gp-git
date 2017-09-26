@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='377' type='int parse_signed_commit(const struct commit * commit, struct strbuf * message, struct strbuf * signature)'/>
+<def f='codebrowser/commit.c' l='1127' ll='1165' type='int parse_signed_commit(const struct commit * commit, struct strbuf * payload, struct strbuf * signature)'/>
+<use f='codebrowser/commit.c' l='1249' u='c' c='check_commit_signature'/>
+<use f='codebrowser/log-tree.c' l='443' u='c' c='show_signature'/>

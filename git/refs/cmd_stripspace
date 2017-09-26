@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='222' type='int cmd_stripspace(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/stripspace.c' l='29' ll='64' type='int cmd_stripspace(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='466'/>
+<use f='codebrowser/git.c' l='466'/>
+<use f='codebrowser/git.c' l='466'/>
+<use f='codebrowser/git.c' l='466'/>

@@ -1,0 +1,7 @@
+<def f='codebrowser/lockfile.h' l='222' ll='225' type='int get_lock_file_fd(struct lock_file * lk)'/>
+<use f='codebrowser/builtin/gc.c' l='71' u='c' c='process_log_file'/>
+<use f='codebrowser/builtin/gc.c' l='444' u='c' c='cmd_gc'/>
+<use f='codebrowser/credential-store.c' l='55' u='c' c='print_line'/>
+<use f='codebrowser/refs/files-backend.c' l='1626' u='c' c='write_ref_to_lockfile'/>
+<use f='codebrowser/refs/files-backend.c' l='2851' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/refs/files-backend.c' l='2853' u='c' c='files_reflog_expire'/>

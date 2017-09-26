@@ -1,0 +1,18 @@
+<dec f='codebrowser/pack-objects.h' l='7' type='struct packed_git *'/>
+<use f='codebrowser/builtin/pack-objects.c' l='355' u='r' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='466' u='r' c='write_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1061' u='w' c='create_object_entry'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1386' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1387' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1519' u='r' c='pack_offset_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1519' u='r' c='pack_offset_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1522' u='r' c='pack_offset_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1522' u='r' c='pack_offset_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1524' u='r' c='pack_offset_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1524' u='r' c='pack_offset_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1559' u='r' c='drop_reused_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1825' u='r' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1826' u='r' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1826' u='r' c='try_delta'/>
+<offset>320</offset>
+<doc f='codebrowser/pack-objects.h' l='7'>/* already in pack */</doc>

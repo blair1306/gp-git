@@ -1,0 +1,5 @@
+<dec f='codebrowser/revision.h' l='120' type='unsigned int'/>
+<offset>962</offset>
+<use f='codebrowser/builtin/rev-list.c' l='294' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/revision.c' l='2119' u='w' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2384' u='r' c='setup_revisions'/>

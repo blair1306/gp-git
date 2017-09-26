@@ -1,0 +1,12 @@
+<dec f='codebrowser/tmp-objdir.h' l='34' type='const char ** tmp_objdir_env(const struct tmp_objdir * )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='717' u='c' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='889' u='c' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1298' u='c' c='set_connectivity_errors'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1485' u='c' c='execute_commands'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1718' u='c' c='unpack'/>
+<doc f='codebrowser/tmp-objdir.h' l='29'>/*
+ * Return a list of environment strings, suitable for use with
+ * child_process.env, that can be passed to child programs to make use of the
+ * temporary object directory.
+ */</doc>
+<def f='codebrowser/tmp-objdir.c' l='281' ll='286' type='const char ** tmp_objdir_env(const struct tmp_objdir * t)'/>

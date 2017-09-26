@@ -1,0 +1,6 @@
+<def f='codebrowser/diffcore.h' l='117' ll='123'/>
+<size>16</size>
+<doc f='codebrowser/diffcore.h' l='116'>/* low-level interface to diffcore_order */</doc>
+<mbr r='obj_order::obj' o='0' t='void *'/>
+<mbr r='obj_order::orig_order' o='64' t='int'/>
+<mbr r='obj_order::order' o='96' t='int'/>

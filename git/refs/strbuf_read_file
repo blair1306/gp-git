@@ -1,0 +1,39 @@
+<dec f='codebrowser/strbuf.h' l='378' type='ssize_t strbuf_read_file(struct strbuf * sb, const char * path, size_t hint)'/>
+<doc f='codebrowser/strbuf.h' l='372'>/**
+ * Read the contents of a file, specified by its path. The third argument
+ * can be used to give a hint about the file size, to avoid reallocs.
+ * Return the number of bytes read or a negative value if some error
+ * occurred while opening or reading the file.
+ */</doc>
+<use f='codebrowser/apply.c' l='2277' u='c' c='read_old_data'/>
+<use f='codebrowser/blame.c' l='215' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/am.c' l='248' u='c' c='read_state_file'/>
+<use f='codebrowser/builtin/commit.c' l='710' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='737' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='742' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='745' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='749' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1031' u='c' c='template_untouched'/>
+<use f='codebrowser/builtin/commit.c' l='1719' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1736' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/difftool.c' l='302' u='c' c='get_symlink'/>
+<use f='codebrowser/builtin/gc.c' l='318' u='c' c='report_last_gc_error'/>
+<use f='codebrowser/builtin/log.c' l='1729' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/merge.c' l='739' u='c' c='read_merge_msg'/>
+<use f='codebrowser/builtin/notes.c' l='235' u='c' c='parse_file_arg'/>
+<use f='codebrowser/builtin/tag.c' l='501' u='c' c='cmd_tag'/>
+<use f='codebrowser/convert.c' l='154' u='c' c='get_wt_convert_stats_ascii'/>
+<use f='codebrowser/diffcore-order.c' l='22' u='c' c='prepare_order'/>
+<use f='codebrowser/editor.c' l='65' u='c' c='launch_editor'/>
+<use f='codebrowser/sequencer.c' l='330' u='c' c='read_oneliner'/>
+<use f='codebrowser/sequencer.c' l='574' u='c' c='read_env_script'/>
+<use f='codebrowser/sequencer.c' l='817' u='c' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='903' u='c' c='flush_rewritten_pending'/>
+<use f='codebrowser/sequencer.c' l='1387' u='c' c='read_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='1592' u='c' c='rollback_is_safe'/>
+<use f='codebrowser/setup.c' l='276' u='c' c='get_common_dir_noenv'/>
+<def f='codebrowser/strbuf.c' l='586' ll='600' type='ssize_t strbuf_read_file(struct strbuf * sb, const char * path, size_t hint)'/>
+<use f='codebrowser/trailer.c' l='722' u='c' c='read_input_file'/>
+<use f='codebrowser/worktree.c' l='81' u='c' c='get_linked_worktree'/>
+<use f='codebrowser/worktree.c' l='244' u='c' c='is_worktree_locked'/>
+<use f='codebrowser/wt-status.c' l='1384' u='c' c='get_branch'/>

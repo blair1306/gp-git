@@ -1,0 +1,8 @@
+<def f='codebrowser/graph.c' l='49' ll='59'/>
+<size>16</size>
+<doc f='codebrowser/graph.c' l='42'>/*
+ * TODO:
+ * - Limit the number of columns, similar to the way gitk does.
+ *   If we reach more than a specified number of columns, omit
+ *   sections of some columns.
+ */</doc>

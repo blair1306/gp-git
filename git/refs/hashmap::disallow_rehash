@@ -1,0 +1,5 @@
+<dec f='codebrowser/hashmap.h' l='200' type='unsigned int'/>
+<use f='codebrowser/hashmap.h' l='362' u='w' c='hashmap_disallow_rehash'/>
+<offset>320</offset>
+<doc f='codebrowser/hashmap.h' l='199'>/* See `hashmap_disallow_rehash`. */</doc>
+<use f='codebrowser/hashmap.c' l='119' u='r' c='rehash'/>

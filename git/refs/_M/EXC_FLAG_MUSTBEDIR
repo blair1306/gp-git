@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='15'/>
+<use f='codebrowser/attr.c' l='999' u='c'/>
+<use f='codebrowser/builtin/check-ignore.c' l='37' u='c'/>
+<use f='codebrowser/dir.c' l='555' u='c'/>
+<use f='codebrowser/dir.c' l='586' u='c'/>
+<use f='codebrowser/dir.c' l='990' u='c'/>

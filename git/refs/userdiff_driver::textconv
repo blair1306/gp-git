@@ -1,0 +1,8 @@
+<dec f='codebrowser/userdiff.h' l='17' type='const char *'/>
+<offset>384</offset>
+<use f='codebrowser/diff.c' l='5229' u='r' c='fill_textconv'/>
+<use f='codebrowser/diff.c' l='5240' u='r' c='fill_textconv'/>
+<use f='codebrowser/grep.c' l='1586' u='r' c='fill_textconv_grep'/>
+<use f='codebrowser/userdiff.c' l='250' u='a' c='userdiff_config'/>
+<use f='codebrowser/userdiff.c' l='286' u='r' c='userdiff_get_textconv'/>
+<use f='codebrowser/userdiff.c' l='294' u='r' c='userdiff_get_textconv'/>

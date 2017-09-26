@@ -1,0 +1,47 @@
+<dec f='codebrowser/revision.h' l='57' type='struct commit_list *'/>
+<use f='codebrowser/bisect.c' l='825' u='r' c='check_ancestors'/>
+<use f='codebrowser/bisect.c' l='956' u='w' c='bisect_next_all'/>
+<use f='codebrowser/bisect.c' l='956' u='r' c='bisect_next_all'/>
+<use f='codebrowser/bisect.c' l='958' u='w' c='bisect_next_all'/>
+<use f='codebrowser/bisect.c' l='958' u='r' c='bisect_next_all'/>
+<use f='codebrowser/bisect.c' l='960' u='r' c='bisect_next_all'/>
+<use f='codebrowser/bisect.c' l='980' u='r' c='bisect_next_all'/>
+<use f='codebrowser/bisect.c' l='986' u='r' c='bisect_next_all'/>
+<offset>0</offset>
+<doc f='codebrowser/revision.h' l='56'>/* Starting list */</doc>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='401' u='r' c='shortlog'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='402' u='w' c='shortlog'/>
+<use f='codebrowser/builtin/log.c' l='342' u='r' c='finish_early_output'/>
+<use f='codebrowser/builtin/rev-list.c' l='222' u='r' c='show_bisect_vars'/>
+<use f='codebrowser/builtin/rev-list.c' l='225' u='w' c='show_bisect_vars'/>
+<use f='codebrowser/builtin/rev-list.c' l='225' u='r' c='show_bisect_vars'/>
+<use f='codebrowser/builtin/rev-list.c' l='242' u='r' c='show_bisect_vars'/>
+<use f='codebrowser/builtin/rev-list.c' l='243' u='r' c='show_bisect_vars'/>
+<use f='codebrowser/builtin/rev-list.c' l='353' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='400' u='w' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='400' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/line-log.c' l='1229' u='r' c='line_log_filter'/>
+<use f='codebrowser/line-log.c' l='1248' u='w' c='line_log_filter'/>
+<use f='codebrowser/list-objects.c' l='153' u='r' c='mark_edges_uninteresting'/>
+<use f='codebrowser/revision.c' l='1020' u='r' c='limit_list'/>
+<use f='codebrowser/revision.c' l='1091' u='w' c='limit_list'/>
+<use f='codebrowser/revision.c' l='2715' u='r' c='simplify_merges'/>
+<use f='codebrowser/revision.c' l='2735' u='r' c='simplify_merges'/>
+<use f='codebrowser/revision.c' l='2736' u='w' c='simplify_merges'/>
+<use f='codebrowser/revision.c' l='2737' u='a' c='simplify_merges'/>
+<use f='codebrowser/revision.c' l='2751' u='r' c='set_children'/>
+<use f='codebrowser/revision.c' l='2769' u='a' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='2794' u='a' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='2801' u='a' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='2818' u='a' c='rewrite_one'/>
+<use f='codebrowser/revision.c' l='3130' u='a' c='get_revision_1'/>
+<use f='codebrowser/revision.c' l='3150' u='a' c='get_revision_1'/>
+<use f='codebrowser/revision.c' l='3203' u='r' c='create_boundary_commit_list'/>
+<use f='codebrowser/revision.c' l='3204' u='r' c='create_boundary_commit_list'/>
+<use f='codebrowser/revision.c' l='3205' u='w' c='create_boundary_commit_list'/>
+<use f='codebrowser/revision.c' l='3221' u='a' c='create_boundary_commit_list'/>
+<use f='codebrowser/revision.c' l='3228' u='a' c='create_boundary_commit_list'/>
+<use f='codebrowser/revision.c' l='3243' u='a' c='get_revision_internal'/>
+<use f='codebrowser/revision.c' l='3326' u='w' c='get_revision'/>
+<use f='codebrowser/revision.c' l='3332' u='a' c='get_revision'/>
+<use f='codebrowser/sequencer.c' l='1169' u='r' c='prepare_revs'/>

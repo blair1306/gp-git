@@ -1,0 +1,11 @@
+<dec f='codebrowser/line-log.h' l='33' type='void range_set_append(struct range_set * , long start, long end)'/>
+<doc f='codebrowser/line-log.h' l='32'>/* New range must begin at or after end of last added range */</doc>
+<def f='codebrowser/line-log.c' l='69' ll='73' type='void range_set_append(struct range_set * rs, long a, long b)'/>
+<use f='codebrowser/line-log.c' l='206' u='c' c='range_set_difference'/>
+<use f='codebrowser/line-log.c' l='221' u='c' c='range_set_difference'/>
+<use f='codebrowser/line-log.c' l='300' u='c' c='line_log_data_insert'/>
+<use f='codebrowser/line-log.c' l='321' u='c' c='collect_diff_cb'/>
+<use f='codebrowser/line-log.c' l='323' u='c' c='collect_diff_cb'/>
+<use f='codebrowser/line-log.c' l='411' u='c' c='diff_ranges_filter_touched'/>
+<use f='codebrowser/line-log.c' l='414' u='c' c='diff_ranges_filter_touched'/>
+<use f='codebrowser/line-log.c' l='441' u='c' c='range_set_shift_diff'/>

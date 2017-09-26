@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='197' type='int cmd_pack_redundant(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/pack-redundant.c' l='596' ll='696' type='int cmd_pack_redundant(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='436'/>
+<use f='codebrowser/git.c' l='436'/>
+<use f='codebrowser/git.c' l='436'/>
+<use f='codebrowser/git.c' l='436'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1026' type='int git_mkstemps_mode(char * pattern, int suffix_len, int mode)'/>
+<doc f='codebrowser/cache.h' l='1025'>/* set default permissions by passing mode arguments to open(2) */</doc>
+<use f='codebrowser/tempfile.c' l='159' u='c' c='mks_tempfile_sm'/>
+<use f='codebrowser/tempfile.c' l='181' u='c' c='mks_tempfile_tsm'/>
+<def f='codebrowser/wrapper.c' l='475' ll='536' type='int git_mkstemps_mode(char * pattern, int suffix_len, int mode)'/>
+<use f='codebrowser/wrapper.c' l='541' u='c' c='git_mkstemp_mode'/>

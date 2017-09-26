@@ -1,0 +1,9 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='86' type='void *'/>
+<offset>0</offset>
+<use f='codebrowser/blame.c' l='280' u='w' c='diff_hunks'/>
+<use f='codebrowser/builtin/merge-tree.c' l='111' u='w' c='show_diff'/>
+<use f='codebrowser/line-log.c' l='342' u='w' c='collect_diff'/>
+<use f='codebrowser/xdiff-interface.c' l='154' u='w' c='xdi_diff_outf'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='991' u='r' c='xdl_call_hunk_func'/>
+<use f='codebrowser/xdiff/xutils.c' l='57' u='r' c='xdl_emit_diffrec'/>
+<use f='codebrowser/xdiff/xutils.c' l='356' u='r' c='xdl_emit_hunk_hdr'/>

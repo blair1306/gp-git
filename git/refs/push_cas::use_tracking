@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='286' type='unsigned int'/>
+<offset>160</offset>
+<use f='codebrowser/remote.c' l='2302' u='w' c='parse_push_cas_option'/>
+<use f='codebrowser/remote.c' l='2351' u='r' c='apply_cas'/>

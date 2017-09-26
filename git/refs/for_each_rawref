@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs.h' l='322' type='int for_each_rawref(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/builtin/describe.c' l='510' u='c' c='cmd_describe'/>
+<use f='codebrowser/builtin/fsck.c' l='464' u='c' c='get_default_heads'/>
+<use f='codebrowser/refs.c' l='315' u='c' c='warn_dangling_symref'/>
+<use f='codebrowser/refs.c' l='326' u='c' c='warn_dangling_symrefs'/>
+<def f='codebrowser/refs.c' l='1399' ll='1402' type='int for_each_rawref(each_ref_fn * fn, void * cb_data)'/>

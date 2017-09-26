@@ -1,0 +1,11 @@
+<def f='codebrowser/commit.h' l='140' ll='143' type='int cmit_fmt_is_mail(enum cmit_fmt fmt)'/>
+<use f='codebrowser/builtin/log.c' l='1004' u='c' c='make_cover_letter'/>
+<use f='codebrowser/log-tree.c' l='600' u='c' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='695' u='c' c='show_log'/>
+<use f='codebrowser/pretty.c' l='450' u='c' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='542' u='c' c='add_merge_info'/>
+<use f='codebrowser/pretty.c' l='1632' u='c' c='pp_title_line'/>
+<use f='codebrowser/pretty.c' l='1783' u='c' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1790' u='c' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1818' u='c' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1835' u='c' c='pretty_print_commit'/>

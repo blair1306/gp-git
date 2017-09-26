@@ -1,0 +1,4 @@
+<dec f='codebrowser/archive.h' l='11' type='const struct commit *'/>
+<offset>256</offset>
+<use f='codebrowser/archive.c' l='72' u='r' c='sha1_file_to_archive'/>
+<use f='codebrowser/archive.c' l='391' u='w' c='parse_treeish_arg'/>

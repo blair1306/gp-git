@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1148' type='int looks_like_command_line_option(const char * str)'/>
+<doc f='codebrowser/cache.h' l='1142'>/*
+ * Returns true iff &quot;str&quot; could be confused as a command-line option when
+ * passed to a sub-program like &quot;ssh&quot;. Note that this has nothing to do with
+ * shell-quoting, which should be handled separately; we&apos;re assuming here that
+ * the string makes it verbatim to the sub-program.
+ */</doc>
+<use f='codebrowser/connect.c' l='581' u='c' c='git_proxy_connect'/>
+<use f='codebrowser/connect.c' l='583' u='c' c='git_proxy_connect'/>
+<use f='codebrowser/connect.c' l='832' u='c' c='git_connect'/>
+<use f='codebrowser/connect.c' l='868' u='c' c='git_connect'/>
+<def f='codebrowser/path.c' l='1324' ll='1327' type='int looks_like_command_line_option(const char * str)'/>

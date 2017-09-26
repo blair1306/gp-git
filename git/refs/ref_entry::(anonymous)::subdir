@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs/ref-cache.h' l='159' type='struct ref_dir'/>
+<offset>0</offset>
+<doc f='codebrowser/refs/ref-cache.h' l='159'>/* if (flags&amp;REF_DIR) */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='23' u='a' c='get_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='66' u='a' c='free_ref_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='96' u='m' c='create_dir_entry'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/config.h' l='59' type='int git_config_maybe_bool(const char * , const char * )'/>
+<def f='codebrowser/config.c' l='959' ll='962' type='int git_config_maybe_bool(const char * name, const char * value)'/>

@@ -1,0 +1,8 @@
+<def f='codebrowser/pathspec.h' l='23' ll='48'/>
+<size>24</size>
+<mbr r='pathspec::nr' o='0' t='int'/>
+<mbr r='pathspec::has_wildcard' o='32' t='unsigned int'/>
+<mbr r='pathspec::recursive' o='33' t='unsigned int'/>
+<mbr r='pathspec::magic' o='64' t='unsigned int'/>
+<mbr r='pathspec::max_depth' o='96' t='int'/>
+<mbr r='pathspec::items' o='128' t='struct pathspec_item *'/>

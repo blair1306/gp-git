@@ -1,0 +1,56 @@
+<def f='codebrowser/cache.h' l='1587' ll='1607'/>
+<dec f='codebrowser/cache.h' l='1607' type='struct packed_git *'/>
+<size>112</size>
+<mbr r='packed_git::next' o='0' t='struct packed_git *'/>
+<mbr r='packed_git::windows' o='64' t='struct pack_window *'/>
+<mbr r='packed_git::pack_size' o='128' t='off_t'/>
+<mbr r='packed_git::index_data' o='192' t='const void *'/>
+<mbr r='packed_git::index_size' o='256' t='size_t'/>
+<mbr r='packed_git::num_objects' o='320' t='uint32_t'/>
+<mbr r='packed_git::num_bad_objects' o='352' t='uint32_t'/>
+<mbr r='packed_git::bad_object_sha1' o='384' t='unsigned char *'/>
+<mbr r='packed_git::index_version' o='448' t='int'/>
+<mbr r='packed_git::mtime' o='512' t='time_t'/>
+<mbr r='packed_git::pack_fd' o='576' t='int'/>
+<mbr r='packed_git::pack_local' o='608' t='unsigned int'/>
+<mbr r='packed_git::pack_keep' o='609' t='unsigned int'/>
+<mbr r='packed_git::freshened' o='610' t='unsigned int'/>
+<mbr r='packed_git::do_not_close' o='611' t='unsigned int'/>
+<mbr r='packed_git::sha1' o='616' t='unsigned char [20]'/>
+<mbr r='packed_git::revindex' o='832' t='struct revindex_entry *'/>
+<mbr r='packed_git::pack_name' o='896' t='char []'/>
+<use f='codebrowser/builtin/count-objects.c' l='122' u='r' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/count-objects.c' l='124' u='r' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/fsck.c' l='712' u='r' c='cmd_fsck'/>
+<use f='codebrowser/builtin/fsck.c' l='720' u='r' c='cmd_fsck'/>
+<use f='codebrowser/builtin/gc.c' l='175' u='r' c='too_many_packs'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2596' u='r' c='add_objects_in_unpacked_packs'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2659' u='r' c='has_sha1_pack_kept_or_nonlocal'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2668' u='r' c='has_sha1_pack_kept_or_nonlocal'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2704' u='r' c='loosen_unused_packed_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3052' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3065' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='573' u='r' c='add_pack_file'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='588' u='r' c='load_all'/>
+<use f='codebrowser/fast-import.c' l='1112' u='r' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1307' u='r' c='stream_blob'/>
+<use f='codebrowser/http-backend.c' l='521' u='r' c='get_info_packs'/>
+<use f='codebrowser/http-backend.c' l='527' u='r' c='get_info_packs'/>
+<use f='codebrowser/pack-bitmap.c' l='337' u='r' c='open_pack_bitmap'/>
+<use f='codebrowser/server-info.c' l='202' u='r' c='init_pack_info'/>
+<use f='codebrowser/server-info.c' l='212' u='r' c='init_pack_info'/>
+<def f='codebrowser/sha1_file.c' l='716' type='struct packed_git *'/>
+<use f='codebrowser/sha1_file.c' l='892' u='r' c='unuse_one_window'/>
+<use f='codebrowser/sha1_file.c' l='992' u='r' c='close_all_packs'/>
+<use f='codebrowser/sha1_file.c' l='1061' u='r' c='close_one_pack'/>
+<use f='codebrowser/sha1_file.c' l='1384' u='r' c='install_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1385' u='w' c='install_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1467' u='r' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1517' u='r' c='approximate_object_count'/>
+<use f='codebrowser/sha1_file.c' l='1566' u='w' c='rearrange_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1566' u='r' c='rearrange_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1575' u='r' c='prepare_packed_git_mru'/>
+<use f='codebrowser/sha1_file.c' l='1621' u='r' c='has_packed_and_bad'/>
+<use f='codebrowser/sha1_file.c' l='2875' u='r' c='find_pack_entry'/>
+<use f='codebrowser/sha1_file.c' l='3880' u='r' c='for_each_packed_object'/>
+<use f='codebrowser/sha1_name.c' l='195' u='r' c='find_short_packed_object'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/submodule.h' l='38' type='int update_path_in_gitmodules(const char * oldpath, const char * newpath)'/>
+<use f='codebrowser/builtin/mv.c' l='281' u='c' c='cmd_mv'/>
+<def f='codebrowser/submodule.c' l='77' ll='104' type='int update_path_in_gitmodules(const char * oldpath, const char * newpath)'/>
+<doc f='codebrowser/submodule.c' l='72'>/*
+ * Try to update the &quot;path&quot; entry in the &quot;submodule.&lt;name&gt;&quot; section of the
+ * .gitmodules file. Return 0 only if a .gitmodules file was found, a section
+ * with the correct path=&lt;oldpath&gt; setting was found and we could update it.
+ */</doc>

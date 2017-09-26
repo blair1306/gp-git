@@ -1,0 +1,8 @@
+<dec f='include/x86_64-linux-gnu/bits/fcntl-linux.h' l='144'/>
+<use f='codebrowser/git-compat-util.h' l='694' u='a'/>
+<use f='codebrowser/run-command.c' l='642' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1679' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1682' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1684' u='c'/>
+<use f='codebrowser/tempfile.c' l='124' u='c'/>
+<use f='codebrowser/tempfile.c' l='125' u='c'/>

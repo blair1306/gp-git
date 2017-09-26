@@ -1,0 +1,6 @@
+<dec f='codebrowser/khash.h' l='282'/>
+<doc f='codebrowser/khash.h' l='277'>/*! @function
+  @abstract     Get the number of elements in the hash table
+  @param  h     Pointer to the hash table [khash_t(name)*]
+  @return       Number of elements in the hash table [khint_t]
+ */</doc>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/tempfile.h' l='220' type='const char * get_tempfile_path(struct tempfile * tempfile)'/>
+<use f='codebrowser/lockfile.h' l='219' u='c' c='get_lock_file_path'/>
+<doc f='codebrowser/tempfile.h' l='216'>/*
+ * Return the path of the lockfile. The return value is a pointer to a
+ * field within the lock_file object and should not be freed.
+ */</doc>
+<use f='codebrowser/builtin/gc.c' l='80' u='c' c='process_log_file'/>
+<use f='codebrowser/diff.c' l='2976' u='c' c='prep_temp_blob'/>
+<use f='codebrowser/lockfile.c' l='194' u='c' c='get_locked_file_path'/>
+<use f='codebrowser/read-cache.c' l='2433' u='c' c='write_shared_index'/>
+<use f='codebrowser/read-cache.c' l='2436' u='c' c='write_shared_index'/>
+<use f='codebrowser/refs/packed-backend.c' l='647' u='c' c='commit_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='659' u='c' c='commit_packed_refs'/>
+<use f='codebrowser/shallow.c' l='301' u='c' c='setup_temporary_shallow'/>
+<use f='codebrowser/shallow.c' l='304' u='c' c='setup_temporary_shallow'/>
+<use f='codebrowser/shallow.c' l='310' u='c' c='setup_temporary_shallow'/>
+<def f='codebrowser/tempfile.c' l='217' ll='222' type='const char * get_tempfile_path(struct tempfile * tempfile)'/>

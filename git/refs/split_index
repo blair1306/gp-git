@@ -1,0 +1,11 @@
+<def f='codebrowser/split-index.h' l='8' ll='18'/>
+<size>72</size>
+<mbr r='split_index::base_sha1' o='0' t='unsigned char [20]'/>
+<mbr r='split_index::base' o='192' t='struct index_state *'/>
+<mbr r='split_index::delete_bitmap' o='256' t='struct ewah_bitmap *'/>
+<mbr r='split_index::replace_bitmap' o='320' t='struct ewah_bitmap *'/>
+<mbr r='split_index::saved_cache' o='384' t='struct cache_entry **'/>
+<mbr r='split_index::saved_cache_nr' o='448' t='unsigned int'/>
+<mbr r='split_index::nr_deletions' o='480' t='unsigned int'/>
+<mbr r='split_index::nr_replacements' o='512' t='unsigned int'/>
+<mbr r='split_index::refcount' o='544' t='int'/>

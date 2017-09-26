@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='155' type='unsigned int'/>
+<offset>992</offset>
+<use f='codebrowser/revision.c' l='1924' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1928' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='3103' u='r' c='track_linear'/>
+<use f='codebrowser/revision.c' l='3105' u='w' c='track_linear'/>

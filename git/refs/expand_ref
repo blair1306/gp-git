@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='141' type='int expand_ref(const char * str, int len, unsigned char * sha1, char ** ref)'/>
+<use f='codebrowser/refs.c' l='482' u='c' c='dwim_ref'/>
+<def f='codebrowser/refs.c' l='487' ll='517' type='int expand_ref(const char * str, int len, unsigned char * sha1, char ** ref)'/>
+<use f='codebrowser/upload-pack.c' l='790' u='c' c='receive_needs'/>

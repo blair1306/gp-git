@@ -1,0 +1,13 @@
+<dec f='codebrowser/xdiff/xtypes.h' l='53' type='long'/>
+<offset>704</offset>
+<use f='codebrowser/xdiff/xhistogram.c' l='361' u='r' c='xdl_do_histogram_diff'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='362' u='r' c='xdl_do_histogram_diff'/>
+<use f='codebrowser/xdiff/xprepare.c' l='236' u='w' c='xdl_prepare_ctx'/>
+<use f='codebrowser/xdiff/xprepare.c' l='401' u='r' c='xdl_cleanup_records'/>
+<use f='codebrowser/xdiff/xprepare.c' l='409' u='r' c='xdl_cleanup_records'/>
+<use f='codebrowser/xdiff/xprepare.c' l='416' u='r' c='xdl_cleanup_records'/>
+<use f='codebrowser/xdiff/xprepare.c' l='418' u='r' c='xdl_cleanup_records'/>
+<use f='codebrowser/xdiff/xprepare.c' l='428' u='r' c='xdl_cleanup_records'/>
+<use f='codebrowser/xdiff/xprepare.c' l='430' u='r' c='xdl_cleanup_records'/>
+<use f='codebrowser/xdiff/xprepare.c' l='467' u='w' c='xdl_trim_ends'/>
+<use f='codebrowser/xdiff/xprepare.c' l='468' u='w' c='xdl_trim_ends'/>

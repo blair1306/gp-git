@@ -1,0 +1,4 @@
+<dec f='include/unistd.h' l='606' type='void _exit(int __status)'/>
+<doc f='include/unistd.h' l='605'>/* Terminate program execution with the low-order 8 bits of STATUS.  */</doc>
+<use f='codebrowser/run-command.c' l='297' u='c' c='child_die'/>
+<use f='codebrowser/run-command.c' l='343' u='c' c='child_die_fn'/>

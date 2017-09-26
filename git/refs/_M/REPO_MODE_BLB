@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/repo_tree.h' l='7'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='137' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='222' u='c'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='390' u='c'/>

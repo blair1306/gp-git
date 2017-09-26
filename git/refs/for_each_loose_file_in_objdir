@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1767' type='int for_each_loose_file_in_objdir(const char * path, each_loose_object_fn * obj_cb, each_loose_cruft_fn * cruft_cb, each_loose_subdir_fn * subdir_cb, void * data)'/>
+<use f='codebrowser/builtin/count-objects.c' l='112' u='c' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/fsck.c' l='549' u='c' c='fsck_object_dir'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2649' u='c' c='add_unreachable_loose_objects'/>
+<use f='codebrowser/builtin/prune-packed.c' l='42' u='c' c='prune_packed_objects'/>
+<use f='codebrowser/builtin/prune.c' l='145' u='c' c='cmd_prune'/>
+<def f='codebrowser/sha1_file.c' l='3799' ll='3814' type='int for_each_loose_file_in_objdir(const char * path, each_loose_object_fn * obj_cb, each_loose_cruft_fn * cruft_cb, each_loose_subdir_fn * subdir_cb, void * data)'/>
+<use f='codebrowser/sha1_file.c' l='3841' u='c' c='for_each_loose_object'/>

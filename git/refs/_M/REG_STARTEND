@@ -1,0 +1,7 @@
+<dec f='include/regex.h' l='303'/>
+<use f='codebrowser/git-compat-util.h' l='1035' u='a'/>
+<use f='codebrowser/git-compat-util.h' l='1045' u='c'/>
+<doc f='include/regex.h' l='301'>/* Use PMATCH[0] to delimit the start and end of the search in the
+   buffer.  */</doc>
+<use f='codebrowser/t/helper/test-regex.c' l='14' u='a'/>
+<use f='codebrowser/t/helper/test-regex.c' l='15' u='c'/>

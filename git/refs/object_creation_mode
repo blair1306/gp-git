@@ -1,0 +1,6 @@
+<def f='codebrowser/cache.h' l='837' ll='840'/>
+<dec f='codebrowser/cache.h' l='842' type='enum object_creation_mode'/>
+<use f='codebrowser/config.c' l='1214' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1216' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='60' type='enum object_creation_mode'/>
+<use f='codebrowser/sha1_file.c' l='3200' u='r' c='finalize_object_file'/>

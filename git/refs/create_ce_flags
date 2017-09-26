@@ -1,0 +1,12 @@
+<def f='codebrowser/cache.h' l='260' ll='263' type='unsigned int create_ce_flags(unsigned int stage)'/>
+<use f='codebrowser/apply.c' l='4265' u='c' c='add_index_file'/>
+<use f='codebrowser/apply.c' l='4432' u='c' c='add_conflicted_stages_file'/>
+<use f='codebrowser/blame.c' l='259' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/checkout.c' l='83' u='c' c='update_some'/>
+<use f='codebrowser/builtin/update-index.c' l='278' u='c' c='add_one_path'/>
+<use f='codebrowser/builtin/update-index.c' l='413' u='c' c='add_cacheinfo'/>
+<use f='codebrowser/builtin/update-index.c' l='600' u='c' c='read_one_ent'/>
+<use f='codebrowser/read-cache.c' l='746' u='c' c='make_cache_entry'/>
+<use f='codebrowser/read-cache.c' l='2544' u='c' c='read_index_unmerged'/>
+<use f='codebrowser/tree.c' l='30' u='c' c='read_one_entry_opt'/>
+<use f='codebrowser/unpack-trees.c' l='781' u='c' c='create_ce_entry'/>

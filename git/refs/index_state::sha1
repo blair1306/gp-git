@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='345' type='unsigned char [20]'/>
+<offset>1280</offset>
+<use f='codebrowser/read-cache.c' l='1765' u='r' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1860' u='r' c='read_index_from'/>
+<use f='codebrowser/read-cache.c' l='1863' u='r' c='read_index_from'/>
+<use f='codebrowser/read-cache.c' l='2149' u='r' c='verify_index_from'/>
+<use f='codebrowser/read-cache.c' l='2304' u='r' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2442' u='r' c='write_shared_index'/>
+<use f='codebrowser/read-cache.c' l='2444' u='r' c='write_shared_index'/>
+<use f='codebrowser/read-cache.c' l='2445' u='r' c='write_shared_index'/>
+<use f='codebrowser/t/helper/test-dump-split-index.c' l='16' u='r' c='cmd_main'/>
+<use f='codebrowser/unpack-trees.c' l='1276' u='r' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1276' u='r' c='unpack_trees'/>

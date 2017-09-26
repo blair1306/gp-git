@@ -1,0 +1,15 @@
+<dec f='codebrowser/ewah/ewok.h' l='191' type='size_t ewah_add_empty_words(struct ewah_bitmap * self, int v, size_t number)'/>
+<doc f='codebrowser/ewah/ewok.h' l='188'>/**
+ * Direct word access
+ */</doc>
+<use f='codebrowser/ewah/bitmap.c' l='80' u='c' c='bitmap_to_ewah'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='99' ll='106' type='size_t ewah_add_empty_words(struct ewah_bitmap * self, int v, size_t number)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='429' u='c' c='ewah_xor'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='488' u='c' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='497' u='c' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='557' u='c' c='ewah_and_not'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='570' u='c' c='ewah_and_not'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='629' u='c' c='ewah_or'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='638' u='c' c='ewah_or'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='92' u='c' c='rlwit_discharge'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='112' u='c' c='rlwit_discharge_empty'/>

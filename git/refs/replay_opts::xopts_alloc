@@ -1,0 +1,14 @@
+<dec f='codebrowser/sequencer.h' l='36' type='size_t'/>
+<offset>640</offset>
+<use f='codebrowser/builtin/revert.c' l='53' u='r' c='option_parse_x'/>
+<use f='codebrowser/builtin/revert.c' l='53' u='r' c='option_parse_x'/>
+<use f='codebrowser/builtin/revert.c' l='53' u='w' c='option_parse_x'/>
+<use f='codebrowser/builtin/revert.c' l='53' u='w' c='option_parse_x'/>
+<use f='codebrowser/builtin/revert.c' l='53' u='r' c='option_parse_x'/>
+<use f='codebrowser/builtin/revert.c' l='53' u='r' c='option_parse_x'/>
+<use f='codebrowser/sequencer.c' l='1440' u='r' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1440' u='r' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1440' u='w' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1440' u='w' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1440' u='r' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1440' u='r' c='populate_opts_cb'/>

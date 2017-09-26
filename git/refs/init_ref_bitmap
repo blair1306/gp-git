@@ -1,0 +1,2 @@
+<def f='codebrowser/shallow.c' l='432' macro='1' type='void init_ref_bitmap(struct ref_bitmap * s)'/>
+<use f='codebrowser/shallow.c' l='593' u='c' c='assign_shallow_commits_to_refs'/>

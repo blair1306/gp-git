@@ -1,0 +1,13 @@
+<dec f='codebrowser/oidset.h' l='37' type='int oidset_insert(struct oidset * set, const struct object_id * oid)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='269' u='c' c='show_ref_cb'/>
+<use f='codebrowser/builtin/receive-pack.c' l='273' u='c' c='show_ref_cb'/>
+<use f='codebrowser/builtin/receive-pack.c' l='285' u='c' c='show_one_alternate_ref'/>
+<doc f='codebrowser/oidset.h' l='30'>/**
+ * Insert the oid into the set; a copy is made, so &quot;oid&quot; does not need
+ * to persist after this function is called.
+ *
+ * Returns 1 if the oid was already in the set, 0 otherwise. This can be used
+ * to perform an efficient check-and-add.
+ */</doc>
+<use f='codebrowser/fetch-pack.c' l='600' u='c' c='add_refs_to_oidset'/>
+<def f='codebrowser/oidset.c' l='29' ll='45' type='int oidset_insert(struct oidset * set, const struct object_id * oid)'/>

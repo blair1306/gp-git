@@ -1,0 +1,2 @@
+<dec f='include/openssl/evp.h' l='716' type='const EVP_MD * EVP_md5()'/>
+<use f='codebrowser/imap-send.c' l='882' u='c' c='cram'/>

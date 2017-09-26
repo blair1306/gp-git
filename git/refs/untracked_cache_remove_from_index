@@ -1,0 +1,4 @@
+<dec f='codebrowser/dir.h' l='348' type='void untracked_cache_remove_from_index(struct index_state * , const char * )'/>
+<def f='codebrowser/dir.c' l='2827' ll='2831' type='void untracked_cache_remove_from_index(struct index_state * istate, const char * path)'/>
+<use f='codebrowser/read-cache.c' l='81' u='c' c='rename_index_entry_at'/>
+<use f='codebrowser/read-cache.c' l='553' u='c' c='remove_file_from_index'/>

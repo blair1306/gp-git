@@ -1,0 +1,18 @@
+<dec f='codebrowser/tree-walk.h' l='67' type='enum follow_symlinks_result get_tree_entry_follow_symlinks(unsigned char * tree_sha1, const char * name, unsigned char * result, struct strbuf * result_path, unsigned int * mode)'/>
+<use f='codebrowser/sha1_name.c' l='1604' u='c' c='get_oid_with_context_1'/>
+<def f='codebrowser/tree-walk.c' l='580' ll='755' type='enum follow_symlinks_result get_tree_entry_follow_symlinks(unsigned char * tree_sha1, const char * name, unsigned char * result, struct strbuf * result_path, unsigned int * mode)'/>
+<doc f='codebrowser/tree-walk.c' l='565'>/**
+ * Find a tree entry by following symlinks in tree_sha (which is
+ * assumed to be the root of the repository).  In the event that a
+ * symlink points outside the repository (e.g. a link to /foo or a
+ * root-level link to ../foo), the portion of the link which is
+ * outside the repository will be returned in result_path, and *mode
+ * will be set to 0.  It is assumed that result_path is uninitialized.
+ * If there are no symlinks, or the end result of the symlink chain
+ * points to an object inside the repository, result will be filled in
+ * with the sha1 of the found object, and *mode will hold the mode of
+ * the object.
+ *
+ * See the code for enum follow_symlink_result for a description of
+ * the return values.
+ */</doc>

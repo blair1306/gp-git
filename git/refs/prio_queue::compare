@@ -1,0 +1,11 @@
+<dec f='codebrowser/prio-queue.h' l='30' type='prio_queue_compare_fn'/>
+<use f='codebrowser/blame.c' l='1761' u='w' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1764' u='w' c='setup_scoreboard'/>
+<offset>0</offset>
+<use f='codebrowser/commit.c' l='666' u='w' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='669' u='w' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='673' u='w' c='sort_in_topological_order'/>
+<use f='codebrowser/prio-queue.c' l='6' u='r' c='compare'/>
+<use f='codebrowser/prio-queue.c' l='22' u='r' c='prio_queue_reverse'/>
+<use f='codebrowser/prio-queue.c' l='45' u='r' c='prio_queue_put'/>
+<use f='codebrowser/prio-queue.c' l='65' u='r' c='prio_queue_get'/>

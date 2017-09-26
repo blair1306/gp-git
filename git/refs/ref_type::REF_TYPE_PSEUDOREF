@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs.h' l='663' type='1'/>
+<use f='codebrowser/refs.c' l='578' u='r' c='ref_type'/>
+<use f='codebrowser/refs.c' l='666' u='r' c='refs_delete_ref'/>
+<use f='codebrowser/refs.c' l='1004' u='r' c='refs_update_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='120' c='files_reflog_path'/>
+<use f='codebrowser/refs/files-backend.c' l='138' c='files_ref_path'/>

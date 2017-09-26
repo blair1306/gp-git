@@ -1,0 +1,10 @@
+<dec f='codebrowser/transport.h' l='237' type='char * transport_anonymize_url(const char * url)'/>
+<use f='codebrowser/builtin/fetch.c' l='762' u='c' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='946' u='c' c='prune_refs'/>
+<use f='codebrowser/send-pack.c' l='292' u='c' c='generate_push_cert'/>
+<use f='codebrowser/transport.c' l='382' u='c' c='print_one_push_status'/>
+<def f='codebrowser/transport.c' l='1175' ll='1215' type='char * transport_anonymize_url(const char * url)'/>
+<doc f='codebrowser/transport.c' l='1171'>/*
+ * Strip username (and password) from a URL and return
+ * it in a newly allocated string.
+ */</doc>

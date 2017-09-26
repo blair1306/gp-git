@@ -1,0 +1,15 @@
+<dec f='codebrowser/commit.h' l='114' type='unsigned int commit_list_count(const struct commit_list * l)'/>
+<use f='codebrowser/blame.c' l='1371' u='c' c='num_scapegoats'/>
+<use f='codebrowser/builtin/rev-parse.c' l='338' u='c' c='try_parent_shorthands'/>
+<def f='codebrowser/commit.c' l='435' ll='441' type='unsigned int commit_list_count(const struct commit_list * l)'/>
+<use f='codebrowser/commit.c' l='969' u='c' c='get_merge_bases_many_0'/>
+<use f='codebrowser/fsck.c' l='740' u='c' c='fsck_commit_buffer'/>
+<use f='codebrowser/line-log.c' l='1138' u='c' c='process_ranges_merge_commit'/>
+<use f='codebrowser/merge-recursive.c' l='2033' u='c' c='merge_recursive'/>
+<use f='codebrowser/pretty.c' l='1560' u='c' c='pp_header'/>
+<use f='codebrowser/ref-filter.c' l='788' u='c' c='grab_commit_values'/>
+<use f='codebrowser/revision.c' l='484' u='c' c='initialise_treesame'/>
+<use f='codebrowser/revision.c' l='1321' u='c' c='add_parents_only'/>
+<use f='codebrowser/revision.c' l='2453' u='c' c='mark_redundant_parents'/>
+<use f='codebrowser/revision.c' l='2454' u='c' c='mark_redundant_parents'/>
+<use f='codebrowser/revision.c' l='2993' u='c' c='get_commit_action'/>

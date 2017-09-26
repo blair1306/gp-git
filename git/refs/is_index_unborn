@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='601' type='int is_index_unborn(struct index_state * )'/>
+<use f='codebrowser/builtin/checkout.c' l='505' macro='1' u='c'/>
+<use f='codebrowser/builtin/pull.c' l='847' macro='1' u='c'/>
+<use f='codebrowser/builtin/read-tree.c' l='225' macro='1' u='c'/>
+<def f='codebrowser/read-cache.c' l='1871' ll='1874' type='int is_index_unborn(struct index_state * istate)'/>
+<use f='codebrowser/wt-status.c' l='2281' macro='1' u='c'/>

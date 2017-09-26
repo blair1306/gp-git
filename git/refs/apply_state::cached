@@ -1,0 +1,19 @@
+<dec f='codebrowser/apply.h' l='45' type='int'/>
+<use f='codebrowser/apply.c' l='126' u='r' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='142' u='r' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='3385' u='r' c='load_patch_target'/>
+<use f='codebrowser/apply.c' l='3667' u='r' c='check_preimage'/>
+<use f='codebrowser/apply.c' l='3685' u='r' c='check_preimage'/>
+<use f='codebrowser/apply.c' l='3687' u='r' c='check_preimage'/>
+<use f='codebrowser/apply.c' l='3695' u='r' c='check_preimage'/>
+<use f='codebrowser/apply.c' l='3732' u='r' c='check_to_create'/>
+<use f='codebrowser/apply.c' l='4240' u='r' c='remove_file'/>
+<use f='codebrowser/apply.c' l='4276' u='r' c='add_index_file'/>
+<use f='codebrowser/apply.c' l='4360' u='r' c='create_one_file'/>
+<use f='codebrowser/apply.c' l='4939' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4939' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4939' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4939' u='a' c='apply_parse_options'/>
+<offset>192</offset>
+<doc f='codebrowser/apply.h' l='45'>/* apply to the index only */</doc>
+<use f='codebrowser/builtin/am.c' l='1500' u='w' c='run_apply'/>

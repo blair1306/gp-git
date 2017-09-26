@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='62' type='int parse_commit_gently(struct commit * item, int quiet_on_missing)'/>
+<use f='codebrowser/commit.h' l='65' u='c' c='parse_commit'/>
+<def f='codebrowser/commit.c' l='371' ll='399' type='int parse_commit_gently(struct commit * item, int quiet_on_missing)'/>
+<use f='codebrowser/revision.c' l='764' u='c' c='add_parents_to_list'/>
+<use f='codebrowser/revision.c' l='791' u='c' c='add_parents_to_list'/>

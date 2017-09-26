@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack.h' l='99' type='int read_pack_header(int fd, struct pack_header * )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1661' u='c' c='parse_pack_header'/>
+<use f='codebrowser/fetch-pack.c' l='820' u='c' c='get_pack'/>
+<def f='codebrowser/sha1_file.c' l='3687' ll='3700' type='int read_pack_header(int fd, struct pack_header * header)'/>

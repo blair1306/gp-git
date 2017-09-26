@@ -1,0 +1,12 @@
+<dec f='codebrowser/xdiff-interface.h' l='12'/>
+<doc f='codebrowser/xdiff-interface.h' l='7'>/*
+ * xdiff isn&apos;t equipped to handle content over a gigabyte;
+ * we make the cutoff 1GB - 1MB to give some breathing
+ * room for constant-sized additions (e.g., merge markers)
+ */</doc>
+<use f='codebrowser/builtin/merge-file.c' l='81' u='c'/>
+<use f='codebrowser/ll-merge.c' l='95' u='c'/>
+<use f='codebrowser/ll-merge.c' l='96' u='c'/>
+<use f='codebrowser/ll-merge.c' l='97' u='c'/>
+<use f='codebrowser/xdiff-interface.c' l='132' u='c'/>
+<use f='codebrowser/xdiff-interface.c' l='132' u='c'/>

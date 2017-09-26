@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='179' type='int cmd_ls_files(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/ls-files.c' l='504' ll='681' type='int cmd_ls_files(int argc, const char ** argv, const char * cmd_prefix)'/>
+<use f='codebrowser/git.c' l='415'/>
+<use f='codebrowser/git.c' l='415'/>
+<use f='codebrowser/git.c' l='415'/>
+<use f='codebrowser/git.c' l='415'/>

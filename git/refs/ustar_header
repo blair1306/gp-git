@@ -1,0 +1,18 @@
+<def f='codebrowser/tar.h' l='8' ll='25'/>
+<size>500</size>
+<mbr r='ustar_header::name' o='0' t='char [100]'/>
+<mbr r='ustar_header::mode' o='800' t='char [8]'/>
+<mbr r='ustar_header::uid' o='864' t='char [8]'/>
+<mbr r='ustar_header::gid' o='928' t='char [8]'/>
+<mbr r='ustar_header::size' o='992' t='char [12]'/>
+<mbr r='ustar_header::mtime' o='1088' t='char [12]'/>
+<mbr r='ustar_header::chksum' o='1184' t='char [8]'/>
+<mbr r='ustar_header::typeflag' o='1248' t='char [1]'/>
+<mbr r='ustar_header::linkname' o='1256' t='char [100]'/>
+<mbr r='ustar_header::magic' o='2056' t='char [6]'/>
+<mbr r='ustar_header::version' o='2104' t='char [2]'/>
+<mbr r='ustar_header::uname' o='2120' t='char [32]'/>
+<mbr r='ustar_header::gname' o='2376' t='char [32]'/>
+<mbr r='ustar_header::devmajor' o='2632' t='char [8]'/>
+<mbr r='ustar_header::devminor' o='2696' t='char [8]'/>
+<mbr r='ustar_header::prefix' o='2760' t='char [155]'/>

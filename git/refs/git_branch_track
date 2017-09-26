@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='833' type='enum branch_track'/>
+<use f='codebrowser/builtin/branch.c' l='614' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/checkout.c' l='1111' u='r' c='checkout_branch'/>
+<use f='codebrowser/config.c' l='1270' u='w' c='git_default_branch_config'/>
+<use f='codebrowser/config.c' l='1273' u='w' c='git_default_branch_config'/>
+<def f='codebrowser/environment.c' l='54' type='enum branch_track'/>

@@ -1,0 +1,30 @@
+<dec f='codebrowser/xdiff/xtypes.h' l='44' type='long'/>
+<offset>128</offset>
+<use f='codebrowser/xdiff/xdiffi.c' l='406' u='r' c='recs_match'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='407' u='r' c='recs_match'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='429' u='r' c='get_indent'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1008' u='r' c='xdl_mark_ignorable'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1012' u='r' c='xdl_mark_ignorable'/>
+<use f='codebrowser/xdiff/xemit.c' l='29' u='r' c='xdl_get_rec'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='97' u='r' c='cmp_recs'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='97' u='r' c='cmp_recs'/>
+<use f='codebrowser/xdiff/xmerge.c' l='104' u='r' c='xdl_merge_cmp_lines'/>
+<use f='codebrowser/xdiff/xmerge.c' l='105' u='r' c='xdl_merge_cmp_lines'/>
+<use f='codebrowser/xdiff/xmerge.c' l='122' u='r' c='xdl_recs_copy_0'/>
+<use f='codebrowser/xdiff/xmerge.c' l='124' u='r' c='xdl_recs_copy_0'/>
+<use f='codebrowser/xdiff/xmerge.c' l='126' u='r' c='xdl_recs_copy_0'/>
+<use f='codebrowser/xdiff/xmerge.c' l='163' u='r' c='is_eol_crlf'/>
+<use f='codebrowser/xdiff/xmerge.c' l='168' u='r' c='is_eol_crlf'/>
+<use f='codebrowser/xdiff/xmerge.c' l='177' u='r' c='is_eol_crlf'/>
+<use f='codebrowser/xdiff/xmerge.c' l='352' u='r' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='355' u='r' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='410' u='r' c='lines_contain_alnum'/>
+<use f='codebrowser/xdiff/xpatience.c' l='94' u='r' c='insert_record'/>
+<use f='codebrowser/xdiff/xpatience.c' l='95' u='r' c='insert_record'/>
+<use f='codebrowser/xdiff/xpatience.c' l='226' u='r' c='match'/>
+<use f='codebrowser/xdiff/xpatience.c' l='227' u='r' c='match'/>
+<use f='codebrowser/xdiff/xprepare.c' l='122' u='r' c='xdl_classify_record'/>
+<use f='codebrowser/xdiff/xprepare.c' l='141' u='r' c='xdl_classify_record'/>
+<use f='codebrowser/xdiff/xprepare.c' l='208' u='w' c='xdl_prepare_ctx'/>
+<use f='codebrowser/xdiff/xutils.c' l='378' u='r' c='xdl_fall_back_diff'/>
+<use f='codebrowser/xdiff/xutils.c' l='381' u='r' c='xdl_fall_back_diff'/>

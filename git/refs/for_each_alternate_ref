@@ -1,0 +1,4 @@
+<dec f='codebrowser/transport.h' l='259' type='void for_each_alternate_ref(alternate_ref_fn * , void * )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='296' u='c' c='write_head_info'/>
+<use f='codebrowser/fetch-pack.c' l='100' u='c' c='for_each_cached_alternate'/>
+<def f='codebrowser/transport.c' l='1284' ll='1290' type='void for_each_alternate_ref(alternate_ref_fn * fn, void * data)'/>

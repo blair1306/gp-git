@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='80' type='const struct refspec *'/>
+<use f='codebrowser/builtin/clone.c' l='565' u='r' c='wanted_peer_refs'/>
+<use f='codebrowser/builtin/clone.c' l='571' u='r' c='wanted_peer_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='423' u='r' c='get_ref_map'/>
+<def f='codebrowser/remote.c' l='25' type='const struct refspec *'/>

@@ -1,0 +1,25 @@
+<dec f='codebrowser/cache-tree.h' l='18' type='int'/>
+<offset>0</offset>
+<doc f='codebrowser/cache-tree.h' l='18'>/* negative means &quot;invalid&quot; */</doc>
+<use f='codebrowser/builtin/fsck.c' l='594' u='r' c='fsck_cache_tree'/>
+<use f='codebrowser/cache-tree.c' l='14' u='w' c='cache_tree'/>
+<use f='codebrowser/cache-tree.c' l='121' u='w' c='do_invalidate_path'/>
+<use f='codebrowser/cache-tree.c' l='227' u='r' c='cache_tree_fully_valid'/>
+<use f='codebrowser/cache-tree.c' l='255' u='r' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='256' u='r' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='344' u='r' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='418' u='w' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='456' u='r' c='write_one'/>
+<use f='codebrowser/cache-tree.c' l='468' u='r' c='write_one'/>
+<use f='codebrowser/cache-tree.c' l='509' u='w' c='read_one'/>
+<use f='codebrowser/cache-tree.c' l='523' u='r' c='read_one'/>
+<use f='codebrowser/cache-tree.c' l='682' u='r' c='prime_cache_tree_rec'/>
+<use f='codebrowser/cache-tree.c' l='685' u='w' c='prime_cache_tree_rec'/>
+<use f='codebrowser/cache-tree.c' l='723' u='r' c='cache_tree_matches_traversal'/>
+<use f='codebrowser/cache-tree.c' l='724' u='r' c='cache_tree_matches_traversal'/>
+<use f='codebrowser/revision.c' l='1250' u='r' c='add_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='8' u='r' c='dump_one'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='14' u='r' c='dump_one'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='28' u='r' c='dump_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='36' u='r' c='dump_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='36' u='r' c='dump_cache_tree'/>

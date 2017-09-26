@@ -1,0 +1,8 @@
+<def f='codebrowser/http.h' l='198' ll='205'/>
+<size>4136</size>
+<mbr r='http_pack_request::url' o='0' t='char *'/>
+<mbr r='http_pack_request::target' o='64' t='struct packed_git *'/>
+<mbr r='http_pack_request::lst' o='128' t='struct packed_git **'/>
+<mbr r='http_pack_request::packfile' o='192' t='FILE *'/>
+<mbr r='http_pack_request::tmpfile' o='256' t='char [4096]'/>
+<mbr r='http_pack_request::slot' o='33024' t='struct active_request_slot *'/>

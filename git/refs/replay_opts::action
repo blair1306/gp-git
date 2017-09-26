@@ -1,0 +1,16 @@
+<dec f='codebrowser/sequencer.h' l='15' type='enum replay_action'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/rebase--helper.c' l='29' u='w' c='cmd_rebase__helper'/>
+<use f='codebrowser/builtin/revert.c' l='36' u='r' c='action_name'/>
+<use f='codebrowser/builtin/revert.c' l='41' u='r' c='revert_or_cherry_pick_usage'/>
+<use f='codebrowser/builtin/revert.c' l='118' u='r' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='210' u='w' c='cmd_revert'/>
+<use f='codebrowser/builtin/revert.c' l='223' u='w' c='cmd_cherry_pick'/>
+<use f='codebrowser/sequencer.c' l='134' u='r' c='is_rebase_i'/>
+<use f='codebrowser/sequencer.c' l='215' u='r' c='action_name'/>
+<use f='codebrowser/sequencer.c' l='223' u='r' c='action_name'/>
+<use f='codebrowser/sequencer.c' l='1163' u='r' c='prepare_revs'/>
+<use f='codebrowser/sequencer.c' l='1371' u='r' c='read_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='1524' u='r' c='walk_revs_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='2302' u='r' c='single_pick'/>
+<use f='codebrowser/sequencer.c' l='2363' u='r' c='sequencer_pick_revisions'/>

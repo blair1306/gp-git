@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1583' type='unsigned int'/>
+<offset>256</offset>
+<use f='codebrowser/sha1_file.c' l='875' u='r' c='scan_windows'/>
+<use f='codebrowser/sha1_file.c' l='875' u='r' c='scan_windows'/>
+<use f='codebrowser/sha1_file.c' l='1031' u='r' c='find_lru_pack'/>
+<use f='codebrowser/sha1_file.c' l='1031' u='r' c='find_lru_pack'/>
+<use f='codebrowser/sha1_file.c' l='1043' u='r' c='find_lru_pack'/>
+<use f='codebrowser/sha1_file.c' l='1043' u='r' c='find_lru_pack'/>
+<use f='codebrowser/sha1_file.c' l='1292' u='w' c='use_pack'/>

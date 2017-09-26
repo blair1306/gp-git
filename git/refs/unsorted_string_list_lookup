@@ -1,0 +1,7 @@
+<dec f='codebrowser/string-list.h' l='105' type='struct string_list_item * unsorted_string_list_lookup(struct string_list * list, const char * string)'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='150' u='c' c='handle_line'/>
+<def f='codebrowser/string-list.c' l='241' ll='251' type='struct string_list_item * unsorted_string_list_lookup(struct string_list * list, const char * string)'/>
+<use f='codebrowser/string-list.c' l='256' u='c' c='unsorted_string_list_has_string'/>
+<use f='codebrowser/submodule.c' l='1205' u='c' c='get_next_submodule'/>
+<use f='codebrowser/submodule.c' l='1213' u='c' c='get_next_submodule'/>
+<use f='codebrowser/submodule.c' l='1219' u='c' c='get_next_submodule'/>

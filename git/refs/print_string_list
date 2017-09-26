@@ -1,0 +1,2 @@
+<dec f='codebrowser/string-list.h' l='23' type='void print_string_list(const struct string_list * p, const char * text)'/>
+<def f='codebrowser/string-list.c' l='199' ll='206' type='void print_string_list(const struct string_list * p, const char * text)'/>

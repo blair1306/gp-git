@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='101' type='int'/>
+<offset>32</offset>
+<use f='codebrowser/wt-status.c' l='1480' u='w' c='wt_status_check_rebase'/>
+<use f='codebrowser/wt-status.c' l='1545' u='r' c='wt_longstatus_print_state'/>

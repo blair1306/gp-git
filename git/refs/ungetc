@@ -1,0 +1,11 @@
+<dec f='include/stdio.h' l='702' type='int ungetc(int __c, FILE * __stream)'/>
+<doc f='include/stdio.h' l='698'>/* Push a character back onto the input buffer of STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/builtin/mailsplit.c' l='246' u='c' c='split_mbox'/>
+<use f='codebrowser/config.c' l='84' u='c' c='config_file_ungetc'/>
+<use f='codebrowser/fast-import.c' l='1991' u='c' c='skip_optional_lf'/>
+<use f='codebrowser/mailinfo.c' l='889' u='c' c='read_one_header_line'/>
+<use f='codebrowser/mailinfo.c' l='1110' u='c' c='mailinfo'/>
+<use f='codebrowser/sh-i18n--envsubst.c' l='310' u='c' c='do_ungetc'/>

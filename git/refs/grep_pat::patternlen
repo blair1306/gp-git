@@ -1,0 +1,11 @@
+<dec f='codebrowser/grep.h' l='70' type='size_t'/>
+<offset>256</offset>
+<use f='codebrowser/grep.c' l='241' u='w' c='create_grep_pat'/>
+<use f='codebrowser/grep.c' l='262' u='r' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='263' u='r' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='278' u='w' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='324' u='r' c='grep_opt_dup'/>
+<use f='codebrowser/grep.c' l='636' u='r' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='637' u='r' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='642' u='r' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='812' u='r' c='dump_grep_pat'/>

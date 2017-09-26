@@ -1,0 +1,4 @@
+<dec f='codebrowser/archive.h' l='42' type='void * sha1_file_to_archive(const struct archiver_args * args, const char * path, const unsigned char * sha1, unsigned int mode, enum object_type * type, unsigned long * sizep)'/>
+<use f='codebrowser/archive-tar.c' l='284' u='c' c='write_tar_entry'/>
+<use f='codebrowser/archive-zip.c' l='347' u='c' c='write_zip_entry'/>
+<def f='codebrowser/archive.c' l='66' ll='89' type='void * sha1_file_to_archive(const struct archiver_args * args, const char * path, const unsigned char * sha1, unsigned int mode, enum object_type * type, unsigned long * sizep)'/>

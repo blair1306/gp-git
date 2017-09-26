@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1925' type='unsigned int alloc_commit_index()'/>
+<def f='codebrowser/alloc.c' l='85' ll='89' type='unsigned int alloc_commit_index()'/>
+<use f='codebrowser/alloc.c' l='95' u='c' c='alloc_commit_node'/>
+<use f='codebrowser/object.c' l='161' u='c' c='object_as_type'/>

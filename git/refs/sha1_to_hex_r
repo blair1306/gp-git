@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='1345' type='char * sha1_to_hex_r(char * out, const unsigned char * sha1)'/>
+<doc f='codebrowser/cache.h' l='1334'>/*
+ * Convert a binary sha1 to its hex equivalent. The `_r` variant is reentrant,
+ * and writes the NUL-terminated output to the buffer `out`, which must be at
+ * least `GIT_SHA1_HEXSZ + 1` bytes, and returns a pointer to out for
+ * convenience.
+ *
+ * The non-`_r` variant returns a static buffer, but uses a ring of 4
+ * buffers, making it safe to make multiple calls for a single statement, like:
+ *
+ *   printf(&quot;%s -&gt; %s&quot;, sha1_to_hex(one), sha1_to_hex(two));
+ */</doc>
+<def f='codebrowser/hex.c' l='64' ll='78' type='char * sha1_to_hex_r(char * buffer, const unsigned char * sha1)'/>
+<use f='codebrowser/hex.c' l='82' u='c' c='oid_to_hex_r'/>
+<use f='codebrowser/hex.c' l='90' u='c' c='sha1_to_hex'/>
+<use f='codebrowser/sha1_name.c' l='502' u='c' c='find_unique_abbrev_r'/>

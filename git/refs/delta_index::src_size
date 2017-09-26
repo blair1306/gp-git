@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff-delta.c' l='128' type='unsigned long'/>
+<use f='codebrowser/diff-delta.c' l='271' u='w' c='create_delta_index'/>
+<use f='codebrowser/diff-delta.c' l='339' u='r' c='create_delta'/>
+<use f='codebrowser/diff-delta.c' l='355' u='r' c='create_delta'/>
+<offset>128</offset>

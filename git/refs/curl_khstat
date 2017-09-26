@@ -1,0 +1,3 @@
+<def f='include/curl/curl.h' l='696' ll='704'/>
+<doc f='include/curl/curl.h' l='694'>/* this is the set of return values expected from the curl_sshkeycallback
+   callback */</doc>

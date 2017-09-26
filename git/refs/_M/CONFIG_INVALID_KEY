@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='5'/>
+<doc f='codebrowser/config.h' l='4'>/* git_config_parse_key() returns these negated: */</doc>
+<use f='codebrowser/builtin/config.c' l='224' u='c'/>
+<use f='codebrowser/config.c' l='394' u='c'/>

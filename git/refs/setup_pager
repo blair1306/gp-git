@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1902' type='void setup_pager()'/>
+<doc f='codebrowser/cache.h' l='1901'>/* pager.c */</doc>
+<use f='codebrowser/builtin/blame.c' l='935' u='c' c='cmd_blame'/>
+<use f='codebrowser/builtin/grep.c' l='1082' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/log.c' l='215' u='c' c='cmd_log_init_finish'/>
+<use f='codebrowser/builtin/log.c' l='1628' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/diff.c' l='5296' u='c' c='setup_diff_pager'/>
+<use f='codebrowser/git.c' l='29' u='c' c='commit_pager_choice'/>
+<def f='codebrowser/pager.c' l='104' ll='135' type='void setup_pager()'/>

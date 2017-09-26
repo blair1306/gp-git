@@ -1,0 +1,38 @@
+<dec f='codebrowser/notes-merge.h' l='14' type='const char *'/>
+<use f='codebrowser/builtin/notes.c' l='725' u='w' c='merge_commit'/>
+<use f='codebrowser/builtin/notes.c' l='727' u='r' c='merge_commit'/>
+<use f='codebrowser/builtin/notes.c' l='738' u='r' c='merge_commit'/>
+<use f='codebrowser/builtin/notes.c' l='816' u='w' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='832' u='r' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='834' u='r' c='merge'/>
+<offset>0</offset>
+<use f='codebrowser/notes-merge.c' l='351' u='r' c='ll_merge_in_worktree'/>
+<use f='codebrowser/notes-merge.c' l='370' u='r' c='merge_one_change_manual'/>
+<use f='codebrowser/notes-merge.c' l='370' u='r' c='merge_one_change_manual'/>
+<use f='codebrowser/notes-merge.c' l='544' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='549' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='552' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='553' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='554' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='559' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='583' u='r' c='notes_merge'/>

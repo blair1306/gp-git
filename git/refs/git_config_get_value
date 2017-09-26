@@ -1,0 +1,14 @@
+<dec f='codebrowser/config.h' l='200' type='int git_config_get_value(const char * key, const char ** value)'/>
+<use f='codebrowser/builtin/gc.c' l='112' u='c' c='gc_config'/>
+<use f='codebrowser/builtin/pull.c' l='274' u='c' c='config_get_ff'/>
+<use f='codebrowser/builtin/pull.c' l='305' u='c' c='config_get_rebase'/>
+<use f='codebrowser/builtin/pull.c' l='314' u='c' c='config_get_rebase'/>
+<use f='codebrowser/builtin/push.c' l='483' u='c' c='git_push_config'/>
+<use f='codebrowser/builtin/push.c' l='500' u='c' c='git_push_config'/>
+<use f='codebrowser/builtin/send-pack.c' l='107' u='c' c='send_pack_config'/>
+<def f='codebrowser/config.c' l='2017' ll='2020' type='int git_config_get_value(const char * key, const char ** value)'/>
+<use f='codebrowser/config.c' l='2109' u='c' c='git_config_get_untracked_cache'/>
+<use f='codebrowser/environment.c' l='328' u='c' c='get_shared_repository'/>
+<use f='codebrowser/imap-send.c' l='1333' u='c' c='git_imap_config'/>
+<use f='codebrowser/sequencer.c' l='667' u='c' c='run_git_commit'/>
+<use f='codebrowser/t/helper/test-config.c' l='100' u='c' c='cmd_main'/>

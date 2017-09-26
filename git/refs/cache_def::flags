@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1510' type='int'/>
+<offset>192</offset>
+<use f='codebrowser/symlinks.c' l='43' u='w' c='reset_lstat_cache'/>
+<use f='codebrowser/symlinks.c' l='97' u='r' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='164' u='w' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='179' u='w' c='lstat_cache_matchlen'/>

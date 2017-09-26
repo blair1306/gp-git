@@ -1,0 +1,20 @@
+<dec f='codebrowser/cache.h' l='1673' type='int open_pack_index(struct packed_git * )'/>
+<doc f='codebrowser/cache.h' l='1669'>/*
+ * mmap the index file for the specified packfile (if it is not
+ * already mmapped).  Return 0 on success.
+ */</doc>
+<use f='codebrowser/builtin/count-objects.c' l='127' u='c' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/fsck.c' l='713' u='c' c='cmd_fsck'/>
+<use f='codebrowser/builtin/index-pack.c' l='1553' u='c' c='read_idx_option'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2602' u='c' c='add_objects_in_unpacked_packs'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2708' u='c' c='loosen_unused_packed_objects'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='553' u='c' c='add_pack'/>
+<use f='codebrowser/pack-bitmap.c' l='265' u='c' c='open_pack_bitmap_1'/>
+<use f='codebrowser/pack-check.c' l='171' u='c' c='verify_pack_index'/>
+<def f='codebrowser/sha1_file.c' l='849' ll='864' type='int open_pack_index(struct packed_git * p)'/>
+<use f='codebrowser/sha1_file.c' l='1143' u='c' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='1518' u='c' c='approximate_object_count'/>
+<use f='codebrowser/sha1_file.c' l='2702' u='c' c='nth_packed_object_sha1'/>
+<use f='codebrowser/sha1_file.c' l='2773' u='c' c='find_pack_entry_one'/>
+<use f='codebrowser/sha1_file.c' l='3883' u='c' c='for_each_packed_object'/>
+<use f='codebrowser/sha1_name.c' l='155' u='c' c='unique_in_pack'/>

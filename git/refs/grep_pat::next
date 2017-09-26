@@ -1,0 +1,27 @@
+<dec f='codebrowser/grep.h' l='65' type='struct grep_pat *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/grep.c' l='1058' u='r' c='cmd_grep'/>
+<use f='codebrowser/grep.c' l='252' u='a' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='253' u='w' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='273' u='w' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='273' u='r' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='274' u='r' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='275' u='a' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='276' u='w' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='318' u='r' c='grep_opt_dup'/>
+<use f='codebrowser/grep.c' l='694' u='r' c='compile_pattern_atom'/>
+<use f='codebrowser/grep.c' l='697' u='r' c='compile_pattern_atom'/>
+<use f='codebrowser/grep.c' l='701' u='r' c='compile_pattern_atom'/>
+<use f='codebrowser/grep.c' l='718' u='r' c='compile_pattern_not'/>
+<use f='codebrowser/grep.c' l='720' u='r' c='compile_pattern_not'/>
+<use f='codebrowser/grep.c' l='740' u='r' c='compile_pattern_and'/>
+<use f='codebrowser/grep.c' l='742' u='r' c='compile_pattern_and'/>
+<use f='codebrowser/grep.c' l='887' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='899' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='904' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='946' u='r' c='compile_grep_patterns_real'/>
+<use f='codebrowser/grep.c' l='1014' u='r' c='free_grep_patterns'/>
+<use f='codebrowser/grep.c' l='1280' u='r' c='match_line'/>
+<use f='codebrowser/grep.c' l='1316' u='r' c='next_match'/>
+<use f='codebrowser/grep.c' l='1531' u='r' c='should_lookahead'/>
+<use f='codebrowser/grep.c' l='1549' u='r' c='look_ahead'/>

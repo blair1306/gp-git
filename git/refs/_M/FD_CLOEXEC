@@ -1,0 +1,7 @@
+<dec f='include/x86_64-linux-gnu/bits/fcntl-linux.h' l='212'/>
+<doc f='include/x86_64-linux-gnu/bits/fcntl-linux.h' l='211'>/* For F_[GET|SET]FD.  */</doc>
+<use f='codebrowser/daemon.c' l='994' u='c'/>
+<use f='codebrowser/run-command.c' l='517' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1178' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1688' u='a'/>
+<use f='codebrowser/sha1_file.c' l='1690' u='c'/>

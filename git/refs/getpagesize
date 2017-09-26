@@ -1,0 +1,5 @@
+<dec f='include/unistd.h' l='981' type='int getpagesize()'/>
+<doc f='include/unistd.h' l='979'>/* Return the number of bytes in a page.  This is the system&apos;s page size,
+   which is not necessarily the same as the hardware page size.  */</doc>
+<use f='codebrowser/config.c' l='1112' u='c' c='git_default_core_config'/>
+<use f='codebrowser/sha1_file.c' l='727' u='c' c='pack_report'/>

@@ -1,0 +1,35 @@
+<dec f='codebrowser/strbuf.h' l='226' type='void strbuf_remove(struct strbuf * , size_t pos, size_t len)'/>
+<use f='codebrowser/abspath.c' l='48' u='c' c='get_next_component'/>
+<use f='codebrowser/abspath.c' l='61' u='c' c='get_root_part'/>
+<doc f='codebrowser/strbuf.h' l='223'>/**
+ * Remove given amount of data from a given position of the buffer.
+ */</doc>
+<use f='codebrowser/apply.c' l='512' u='c' c='find_name_gnu'/>
+<use f='codebrowser/apply.c' l='1205' u='c' c='git_header_name'/>
+<use f='codebrowser/apply.c' l='1270' u='c' c='git_header_name'/>
+<use f='codebrowser/builtin/clean.c' l='475' u='c' c='parse_choice'/>
+<use f='codebrowser/builtin/help.c' l='110' u='c' c='check_emacsclient_version'/>
+<use f='codebrowser/builtin/mailsplit.c' l='94' u='c' c='split_one'/>
+<use f='codebrowser/bundle.c' l='49' u='c' c='parse_bundle_header'/>
+<use f='codebrowser/column.c' l='33' u='c' c='item_length'/>
+<use f='codebrowser/commit.c' l='1196' u='c' c='remove_signature'/>
+<use f='codebrowser/commit.c' l='1499' u='c' c='verify_utf8'/>
+<use f='codebrowser/convert.c' l='1523' u='c' c='ident_drain'/>
+<use f='codebrowser/http.c' l='1606' u='c' c='write_accept_language'/>
+<use f='codebrowser/mailinfo.c' l='14' u='c' c='cleanup_space'/>
+<use f='codebrowser/mailinfo.c' l='179' u='c' c='handle_from'/>
+<use f='codebrowser/mailinfo.c' l='196' u='c' c='handle_from'/>
+<use f='codebrowser/mailinfo.c' l='299' u='c' c='cleanup_subject'/>
+<use f='codebrowser/mailinfo.c' l='305' u='c' c='cleanup_subject'/>
+<use f='codebrowser/mailinfo.c' l='315' u='c' c='cleanup_subject'/>
+<use f='codebrowser/path.c' l='51' u='c' c='strbuf_cleanup_path'/>
+<use f='codebrowser/pretty.c' l='588' u='c' c='replace_encoding_header'/>
+<use f='codebrowser/pretty.c' l='847' u='c' c='format_sanitized_subject'/>
+<use f='codebrowser/read-cache.c' l='1612' u='c' c='expand_name_field'/>
+<use f='codebrowser/rerere.c' l='953' u='c' c='rerere_mem_getline'/>
+<def f='codebrowser/strbuf.c' l='188' ll='191' type='void strbuf_remove(struct strbuf * sb, size_t pos, size_t len)'/>
+<use f='codebrowser/tree-walk.c' l='632' u='c' c='get_tree_entry_follow_symlinks'/>
+<use f='codebrowser/tree-walk.c' l='662' u='c' c='get_tree_entry_follow_symlinks'/>
+<use f='codebrowser/tree-walk.c' l='688' u='c' c='get_tree_entry_follow_symlinks'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='63' u='c' c='move_window'/>
+<use f='codebrowser/wt-status.c' l='1392' u='c' c='get_branch'/>

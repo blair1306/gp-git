@@ -1,0 +1,19 @@
+<dec f='codebrowser/remote.h' l='37' type='int'/>
+<offset>896</offset>
+<use f='codebrowser/builtin/fetch.c' l='377' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='390' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='393' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='1134' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/remote.c' l='335' u='r' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='350' u='r' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='592' u='r' c='migrate_file'/>
+<use f='codebrowser/builtin/remote.c' l='647' u='r' c='mv'/>
+<use f='codebrowser/remote.c' l='101' u='r' c='add_fetch_refspec'/>
+<use f='codebrowser/remote.c' l='101' u='r' c='add_fetch_refspec'/>
+<use f='codebrowser/remote.c' l='101' u='r' c='add_fetch_refspec'/>
+<use f='codebrowser/remote.c' l='103' u='w' c='add_fetch_refspec'/>
+<use f='codebrowser/remote.c' l='703' u='r' c='remote_get_1'/>
+<use f='codebrowser/remote.c' l='736' u='r' c='for_each_remote'/>
+<use f='codebrowser/remote.c' l='919' u='r' c='remote_find_tracking'/>
+<use f='codebrowser/remote.c' l='1714' u='r' c='tracking_for_push_dest'/>
+<use f='codebrowser/remote.c' l='2331' u='r' c='remote_tracking'/>

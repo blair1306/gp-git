@@ -1,0 +1,8 @@
+<dec f='codebrowser/worktree.h' l='58' type='const char * is_worktree_locked(struct worktree * wt)'/>
+<doc f='codebrowser/worktree.h' l='54'>/*
+ * Return the reason string if the given worktree is locked or NULL
+ * otherwise.
+ */</doc>
+<use f='codebrowser/builtin/worktree.c' l='495' u='c' c='lock_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='527' u='c' c='unlock_worktree'/>
+<def f='codebrowser/worktree.c' l='234' ll='255' type='const char * is_worktree_locked(struct worktree * wt)'/>

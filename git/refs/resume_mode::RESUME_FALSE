@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin/am.c' l='2173' type='0'/>
+<use f='codebrowser/builtin/am.c' l='2197' u='r' c='cmd_am'/>
+<use f='codebrowser/builtin/am.c' l='2326' u='r' c='cmd_am'/>
+<use f='codebrowser/builtin/am.c' l='2330' u='r' c='cmd_am'/>
+<use f='codebrowser/builtin/am.c' l='2372' c='cmd_am'/>

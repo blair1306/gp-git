@@ -1,0 +1,19 @@
+<dec f='codebrowser/refs.h' l='592' type='int ref_transaction_prepare(struct ref_transaction * transaction, struct strbuf * err)'/>
+<doc f='codebrowser/refs.h' l='576'>/*
+ * Perform the preparatory stages of committing `transaction`. Acquire
+ * any needed locks, check preconditions, etc.; basically, do as much
+ * as possible to ensure that the transaction will be able to go
+ * through, stopping just short of making any irrevocable or
+ * user-visible changes. The updates that this function prepares can
+ * be finished up by calling `ref_transaction_commit()` or rolled back
+ * by calling `ref_transaction_abort()`.
+ *
+ * On success, return 0 and leave the transaction in &quot;prepared&quot; state.
+ * On failure, abort the transaction, write an error message to `err`,
+ * and return one of the `TRANSACTION_*` constants.
+ *
+ * Callers who don&apos;t need such fine-grained control over committing
+ * reference transactions should just call `ref_transaction_commit()`.
+ */</doc>
+<def f='codebrowser/refs.c' l='1764' ll='1791' type='int ref_transaction_prepare(struct ref_transaction * transaction, struct strbuf * err)'/>
+<use f='codebrowser/refs.c' l='1827' u='c' c='ref_transaction_commit'/>

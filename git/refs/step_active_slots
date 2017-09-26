@@ -1,0 +1,8 @@
+<dec f='codebrowser/http.h' l='103' type='void step_active_slots()'/>
+<use f='codebrowser/http-push.c' l='654' u='c' c='add_fetch_request'/>
+<use f='codebrowser/http-push.c' l='692' u='c' c='add_send_request'/>
+<use f='codebrowser/http-walker.c' l='160' u='c' c='prefetch'/>
+<use f='codebrowser/http-walker.c' l='351' u='c' c='fetch_alternates'/>
+<use f='codebrowser/http-walker.c' l='498' u='c' c='fetch_object'/>
+<def f='codebrowser/http.c' l='1207' ll='1219' type='void step_active_slots()'/>
+<use f='codebrowser/http.c' l='1234' u='c' c='run_active_slot'/>

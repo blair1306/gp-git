@@ -1,0 +1,5 @@
+<def f='codebrowser/tree-walk.h' l='4' ll='8'/>
+<size>24</size>
+<mbr r='name_entry::oid' o='0' t='const struct object_id *'/>
+<mbr r='name_entry::path' o='64' t='const char *'/>
+<mbr r='name_entry::mode' o='128' t='unsigned int'/>

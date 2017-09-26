@@ -1,0 +1,10 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='40'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='331' u='c'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='334' u='c'/>
+<use f='codebrowser/xdiff/xprepare.c' l='184' u='c'/>
+<use f='codebrowser/xdiff/xprepare.c' l='212' u='c'/>
+<use f='codebrowser/xdiff/xprepare.c' l='276' u='c'/>
+<use f='codebrowser/xdiff/xprepare.c' l='282' u='c'/>
+<use f='codebrowser/xdiff/xprepare.c' l='298' u='c'/>
+<use f='codebrowser/xdiff/xprepare.c' l='299' u='c'/>
+<use f='codebrowser/xdiff/xprepare.c' l='308' u='c'/>

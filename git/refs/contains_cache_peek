@@ -1,0 +1,1 @@
+<def f='codebrowser/ref-filter.c' l='1498' macro='1' type='enum contains_result * contains_cache_peek(struct contains_cache * s, const struct commit * c)'/>

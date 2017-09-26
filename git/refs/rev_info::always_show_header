@@ -1,0 +1,10 @@
+<dec f='codebrowser/revision.h' l='134' type='unsigned int'/>
+<offset>974</offset>
+<use f='codebrowser/builtin/commit.c' l='1483' u='w' c='print_summary'/>
+<use f='codebrowser/builtin/commit.c' l='1496' u='w' c='print_summary'/>
+<use f='codebrowser/builtin/log.c' l='186' u='w' c='cmd_log_init_finish'/>
+<use f='codebrowser/builtin/log.c' l='574' u='w' c='cmd_show'/>
+<use f='codebrowser/builtin/log.c' l='661' u='w' c='cmd_log_reflog'/>
+<use f='codebrowser/builtin/log.c' l='692' u='w' c='cmd_log'/>
+<use f='codebrowser/log-tree.c' l='873' u='r' c='log_tree_commit'/>
+<use f='codebrowser/revision.c' l='1969' u='w' c='handle_revision_opt'/>

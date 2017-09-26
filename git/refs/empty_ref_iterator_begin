@@ -1,0 +1,8 @@
+<dec f='codebrowser/refs/refs-internal.h' l='358' type='struct ref_iterator * empty_ref_iterator_begin()'/>
+<doc f='codebrowser/refs/refs-internal.h' l='354'>/*
+ * An iterator over nothing (its first ref_iterator_advance() call
+ * returns ITER_DONE).
+ */</doc>
+<def f='codebrowser/refs/iterator.c' l='70' ll='77' type='struct ref_iterator * empty_ref_iterator_begin()'/>
+<use f='codebrowser/refs/packed-backend.c' l='811' u='c' c='packed_reflog_iterator_begin'/>
+<use f='codebrowser/refs/ref-cache.c' l='570' u='c' c='cache_ref_iterator_begin'/>

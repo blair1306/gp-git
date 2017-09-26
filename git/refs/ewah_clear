@@ -1,0 +1,9 @@
+<dec f='codebrowser/ewah/ewok.h' l='80' type='void ewah_clear(struct ewah_bitmap * self)'/>
+<doc f='codebrowser/ewah/ewok.h' l='76'>/**
+ * Clear all the bits in the bitmap. Does not free or resize
+ * memory.
+ */</doc>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='288' u='c' c='ewah_new'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='292' ll='298' type='void ewah_clear(struct ewah_bitmap * self)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='696' u='c' c='ewah_pool_free'/>
+<use f='codebrowser/ewah/ewah_io.c' l='166' u='c' c='ewah_deserialize'/>

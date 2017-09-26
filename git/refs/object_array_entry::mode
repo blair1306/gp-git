@@ -1,0 +1,13 @@
+<dec f='codebrowser/object.h' l='22' type='unsigned int'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/diff.c' l='87' u='r' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/diff.c' l='88' u='w' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/diff.c' l='91' u='r' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/diff.c' l='110' u='r' c='builtin_diff_blobs'/>
+<use f='codebrowser/builtin/diff.c' l='111' u='w' c='builtin_diff_blobs'/>
+<use f='codebrowser/builtin/diff.c' l='113' u='r' c='builtin_diff_blobs'/>
+<use f='codebrowser/builtin/diff.c' l='114' u='w' c='builtin_diff_blobs'/>
+<use f='codebrowser/builtin/diff.c' l='117' u='r' c='builtin_diff_blobs'/>
+<use f='codebrowser/builtin/diff.c' l='117' u='r' c='builtin_diff_blobs'/>
+<use f='codebrowser/object.c' l='332' u='w' c='add_object_array_with_path'/>
+<use f='codebrowser/revision.c' l='217' u='r' c='handle_commit'/>

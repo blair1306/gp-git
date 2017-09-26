@@ -1,0 +1,11 @@
+<def f='codebrowser/worktree.h' l='4' ll='14'/>
+<size>72</size>
+<mbr r='worktree::path' o='0' t='char *'/>
+<mbr r='worktree::id' o='64' t='char *'/>
+<mbr r='worktree::head_ref' o='128' t='char *'/>
+<mbr r='worktree::lock_reason' o='192' t='char *'/>
+<mbr r='worktree::head_sha1' o='256' t='unsigned char [20]'/>
+<mbr r='worktree::is_detached' o='416' t='int'/>
+<mbr r='worktree::is_bare' o='448' t='int'/>
+<mbr r='worktree::is_current' o='480' t='int'/>
+<mbr r='worktree::lock_reason_valid' o='512' t='int'/>

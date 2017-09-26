@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='256' type='struct commit_list * get_octopus_merge_bases(struct commit_list * in)'/>
+<use f='codebrowser/builtin/merge-base.c' l='81' u='c' c='handle_octopus'/>
+<use f='codebrowser/builtin/merge.c' l='1333' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/pull.c' l='744' u='c' c='get_octopus_merge_base'/>
+<def f='codebrowser/commit.c' l='862' ll='887' type='struct commit_list * get_octopus_merge_bases(struct commit_list * in)'/>

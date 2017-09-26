@@ -1,0 +1,11 @@
+<dec f='codebrowser/notes.h' l='251' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/notes.c' l='1065' u='r' c='init_display_notes'/>
+<use f='codebrowser/notes.c' l='1066' u='r' c='init_display_notes'/>
+<use f='codebrowser/revision.c' l='1371' u='w' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1916' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1935' u='r' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1936' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1944' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1952' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1954' u='w' c='handle_revision_opt'/>

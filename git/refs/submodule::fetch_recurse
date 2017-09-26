@@ -1,0 +1,8 @@
+<dec f='codebrowser/submodule-config.h' l='16' type='int'/>
+<offset>192</offset>
+<use f='codebrowser/submodule-config.c' l='226' u='w' c='lookup_or_create_by_name'/>
+<use f='codebrowser/submodule-config.c' l='392' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='396' u='w' c='parse_config'/>
+<use f='codebrowser/submodule.c' l='1198' u='r' c='get_next_submodule'/>
+<use f='codebrowser/submodule.c' l='1200' u='r' c='get_next_submodule'/>
+<use f='codebrowser/submodule.c' l='1203' u='r' c='get_next_submodule'/>

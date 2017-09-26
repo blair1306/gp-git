@@ -1,0 +1,9 @@
+<dec f='codebrowser/attr.h' l='24'/>
+<use f='codebrowser/builtin/check-attr.c' l='40' u='c'/>
+<use f='codebrowser/convert.c' l='978' u='c'/>
+<use f='codebrowser/convert.c' l='991' u='c'/>
+<use f='codebrowser/convert.c' l='1005' u='c'/>
+<use f='codebrowser/dir.c' l='245' u='c'/>
+<use f='codebrowser/ll-merge.c' l='318' u='c'/>
+<use f='codebrowser/userdiff.c' l='279' u='c'/>
+<use f='codebrowser/ws.c' l='97' u='c'/>

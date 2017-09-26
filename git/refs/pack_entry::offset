@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1617' type='off_t'/>
+<offset>0</offset>
+<use f='codebrowser/sha1_file.c' l='2860' u='w' c='fill_pack_entry'/>
+<use f='codebrowser/sha1_file.c' l='3028' u='r' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_file.c' l='3033' u='r' c='sha1_object_info_extended'/>

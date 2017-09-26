@@ -1,0 +1,3 @@
+<dec f='codebrowser/builtin/clone.c' l='478' type='2'/>
+<use f='codebrowser/builtin/clone.c' l='494' c='remove_junk'/>
+<use f='codebrowser/builtin/clone.c' l='1199' u='r' c='cmd_clone'/>

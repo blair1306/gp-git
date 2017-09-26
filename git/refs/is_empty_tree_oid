@@ -1,0 +1,2 @@
+<def f='codebrowser/cache.h' l='1020' ll='1023' type='int is_empty_tree_oid(const struct object_id * oid)'/>
+<use f='codebrowser/fast-import.c' l='2411' u='c' c='file_change_m'/>

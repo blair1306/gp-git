@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='474' type='47'/>
+<doc f='include/curl/curl.h' l='474'>/* 47 - catch endless re-direct loops */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/log-tree.h' l='23' type='void show_decorations(struct rev_info * opt, struct commit * commit)'/>
+<use f='codebrowser/builtin/rev-list.c' l='112' u='c' c='show_commit'/>
+<def f='codebrowser/log-tree.c' l='283' ll='294' type='void show_decorations(struct rev_info * opt, struct commit * commit)'/>
+<use f='codebrowser/log-tree.c' l='555' u='c' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='623' u='c' c='show_log'/>

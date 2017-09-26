@@ -1,0 +1,15 @@
+<dec f='codebrowser/revision.h' l='96' type='unsigned int'/>
+<offset>937</offset>
+<use f='codebrowser/builtin/fast-export.c' l='1013' u='w' c='cmd_fast_export'/>
+<use f='codebrowser/builtin/log.c' l='1351' u='w' c='prepare_bases'/>
+<use f='codebrowser/revision.c' l='1764' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1767' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1773' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1782' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1785' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1788' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1792' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1961' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2337' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2355' u='w' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2800' u='r' c='prepare_revision_walk'/>

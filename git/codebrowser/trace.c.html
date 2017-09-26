@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>trace.c source code [codebrowser/trace.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/trace.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='trace.c.html'>trace.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * GIT - The information manager from hell</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2000-2002 Michael R. Elkins &lt;me@mutt.org&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2002-2004 Oswald Buddenhagen &lt;ossi@users.sf.net&gt;</i></td></tr>
+<tr><th id="6">6</th><td><i> * Copyright (C) 2004 Theodore Y. Ts'o &lt;tytso@mit.edu&gt;</i></td></tr>
+<tr><th id="7">7</th><td><i> * Copyright (C) 2006 Mike McCormack</i></td></tr>
+<tr><th id="8">8</th><td><i> * Copyright (C) 2006 Christian Couder</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> *  This program is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="11">11</th><td><i> *  it under the terms of the GNU General Public License as published by</i></td></tr>
+<tr><th id="12">12</th><td><i> *  the Free Software Foundation; either version 2 of the License, or</i></td></tr>
+<tr><th id="13">13</th><td><i> *  (at your option) any later version.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> *  This program is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="16">16</th><td><i> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="17">17</th><td><i> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</i></td></tr>
+<tr><th id="18">18</th><td><i> *  GNU General Public License for more details.</i></td></tr>
+<tr><th id="19">19</th><td><i> *</i></td></tr>
+<tr><th id="20">20</th><td><i> *  You should have received a copy of the GNU General Public License</i></td></tr>
+<tr><th id="21">21</th><td><i> *  along with this program; if not, write to the Free Software</i></td></tr>
+<tr><th id="22">22</th><td><i> *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</i></td></tr>
+<tr><th id="23">23</th><td><i> */</i></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="quote.h.html">"quote.h"</a></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i  data-doc="normalize_trace_key">/*</i></td></tr>
+<tr><th id="29">29</th><td><i  data-doc="normalize_trace_key"> * "Normalize" a key argument by converting NULL to our trace_default,</i></td></tr>
+<tr><th id="30">30</th><td><i  data-doc="normalize_trace_key"> * and otherwise passing through the value. All caller-facing functions</i></td></tr>
+<tr><th id="31">31</th><td><i  data-doc="normalize_trace_key"> * should normalize their inputs in this way, though most get it</i></td></tr>
+<tr><th id="32">32</th><td><i  data-doc="normalize_trace_key"> * for free by calling get_trace_fd() (directly or indirectly).</i></td></tr>
+<tr><th id="33">33</th><td><i  data-doc="normalize_trace_key"> */</i></td></tr>
+<tr><th id="34">34</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="normalize_trace_key" title='normalize_trace_key' data-type='void normalize_trace_key(struct trace_key ** key)' data-ref="normalize_trace_key">normalize_trace_key</dfn>(<b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> **<dfn class="local col1 decl" id="1key" title='key' data-type='struct trace_key **' data-ref="1key">key</dfn>)</td></tr>
+<tr><th id="35">35</th><td>{</td></tr>
+<tr><th id="36">36</th><td>	<em>static</em> <b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> <dfn class="local col2 decl" id="2trace_default" title='trace_default' data-type='struct trace_key' data-ref="2trace_default">trace_default</dfn> = { <q>"GIT_TRACE"</q> };</td></tr>
+<tr><th id="37">37</th><td>	<b>if</b> (!*<a class="local col1 ref" href="#1key" title='key' data-ref="1key">key</a>)</td></tr>
+<tr><th id="38">38</th><td>		*<a class="local col1 ref" href="#1key" title='key' data-ref="1key">key</a> = &amp;<a class="local col2 ref" href="#2trace_default" title='trace_default' data-ref="2trace_default">trace_default</a>;</td></tr>
+<tr><th id="39">39</th><td>}</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><i  data-doc="get_trace_fd">/* Get a trace file descriptor from "key" env variable. */</i></td></tr>
+<tr><th id="42">42</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="get_trace_fd" title='get_trace_fd' data-type='int get_trace_fd(struct trace_key * key)' data-ref="get_trace_fd">get_trace_fd</dfn>(<b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> *<dfn class="local col3 decl" id="3key" title='key' data-type='struct trace_key *' data-ref="3key">key</dfn>)</td></tr>
+<tr><th id="43">43</th><td>{</td></tr>
+<tr><th id="44">44</th><td>	<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="4trace" title='trace' data-type='const char *' data-ref="4trace">trace</dfn>;</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td>	<a class="tu ref" href="#normalize_trace_key" title='normalize_trace_key' data-use='c' data-ref="normalize_trace_key">normalize_trace_key</a>(&amp;<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>);</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>	<i>/* don't open twice */</i></td></tr>
+<tr><th id="49">49</th><td>	<b>if</b> (<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::initialized" title='trace_key::initialized' data-ref="trace_key::initialized">initialized</a>)</td></tr>
+<tr><th id="50">50</th><td>		<b>return</b> <a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::fd" title='trace_key::fd' data-ref="trace_key::fd">fd</a>;</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>	<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a> = <a class="ref" href="../include/stdlib.h.html#getenv" title='getenv' data-ref="getenv">getenv</a>(<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::key" title='trace_key::key' data-ref="trace_key::key">key</a>);</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>	<b>if</b> (!<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a> || !<a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (trace) &amp;&amp; __builtin_constant_p (&quot;&quot;) &amp;&amp; (__s1_len = __builtin_strlen (trace), __s2_len = __builtin_strlen (&quot;&quot;), (!((size_t)(const void *)((trace) + 1) - (size_t)(const void *)(trace) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;&quot;) + 1) - (size_t)(const void *)(&quot;&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (trace, &quot;&quot;) : (__builtin_constant_p (trace) &amp;&amp; ((size_t)(const void *)((trace) + 1) - (size_t)(const void *)(trace) == 1) &amp;&amp; (__s1_len = __builtin_strlen (trace), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;&quot;) &amp;&amp; ((size_t)(const void *)((&quot;&quot;) + 1) - (size_t)(const void *)(&quot;&quot;) == 1) ? __builtin_strcmp (trace, &quot;&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;&quot;); int __result = (((const unsigned char *) (const char *) (trace))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (trace))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (trace))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (trace))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;&quot;) &amp;&amp; ((size_t)(const void *)((&quot;&quot;) + 1) - (size_t)(const void *)(&quot;&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (trace) &amp;&amp; ((size_t)(const void *)((trace) + 1) - (size_t)(const void *)(trace) == 1) ? __builtin_strcmp (trace, &quot;&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (trace); int __result = (((const unsigned char *) (const char *) (&quot;&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (trace, &quot;&quot;)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>, <q>""</q>) ||</td></tr>
+<tr><th id="55">55</th><td>	    !<a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (trace) &amp;&amp; __builtin_constant_p (&quot;0&quot;) &amp;&amp; (__s1_len = __builtin_strlen (trace), __s2_len = __builtin_strlen (&quot;0&quot;), (!((size_t)(const void *)((trace) + 1) - (size_t)(const void *)(trace) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;0&quot;) + 1) - (size_t)(const void *)(&quot;0&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (trace, &quot;0&quot;) : (__builtin_constant_p (trace) &amp;&amp; ((size_t)(const void *)((trace) + 1) - (size_t)(const void *)(trace) == 1) &amp;&amp; (__s1_len = __builtin_strlen (trace), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;0&quot;) &amp;&amp; ((size_t)(const void *)((&quot;0&quot;) + 1) - (size_t)(const void *)(&quot;0&quot;) == 1) ? __builtin_strcmp (trace, &quot;0&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;0&quot;); int __result = (((const unsigned char *) (const char *) (trace))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (trace))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (trace))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (trace))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;0&quot;) &amp;&amp; ((size_t)(const void *)((&quot;0&quot;) + 1) - (size_t)(const void *)(&quot;0&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;0&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (trace) &amp;&amp; ((size_t)(const void *)((trace) + 1) - (size_t)(const void *)(trace) == 1) ? __builtin_strcmp (trace, &quot;0&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (trace); int __result = (((const unsigned char *) (const char *) (&quot;0&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;0&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;0&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;0&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (trace, &quot;0&quot;)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>, <q>"0"</q>) || !<a class="ref" href="../include/string.h.html#strcasecmp" title='strcasecmp' data-ref="strcasecmp">strcasecmp</a>(<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>, <q>"false"</q>))</td></tr>
+<tr><th id="56">56</th><td>		<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::fd" title='trace_key::fd' data-ref="trace_key::fd">fd</a> = <var>0</var>;</td></tr>
+<tr><th id="57">57</th><td>	<b>else</b> <b>if</b> (!<a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (trace) &amp;&amp; __builtin_constant_p (&quot;1&quot;) &amp;&amp; (__s1_len = __builtin_strlen (trace), __s2_len = __builtin_strlen (&quot;1&quot;), (!((size_t)(const void *)((trace) + 1) - (size_t)(const void *)(trace) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;1&quot;) + 1) - (size_t)(const void *)(&quot;1&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (trace, &quot;1&quot;) : (__builtin_constant_p (trace) &amp;&amp; ((size_t)(const void *)((trace) + 1) - (size_t)(const void *)(trace) == 1) &amp;&amp; (__s1_len = __builtin_strlen (trace), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;1&quot;) &amp;&amp; ((size_t)(const void *)((&quot;1&quot;) + 1) - (size_t)(const void *)(&quot;1&quot;) == 1) ? __builtin_strcmp (trace, &quot;1&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;1&quot;); int __result = (((const unsigned char *) (const char *) (trace))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (trace))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (trace))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (trace))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;1&quot;) &amp;&amp; ((size_t)(const void *)((&quot;1&quot;) + 1) - (size_t)(const void *)(&quot;1&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;1&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (trace) &amp;&amp; ((size_t)(const void *)((trace) + 1) - (size_t)(const void *)(trace) == 1) ? __builtin_strcmp (trace, &quot;1&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (trace); int __result = (((const unsigned char *) (const char *) (&quot;1&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;1&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;1&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;1&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (trace, &quot;1&quot;)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>, <q>"1"</q>) || !<a class="ref" href="../include/string.h.html#strcasecmp" title='strcasecmp' data-ref="strcasecmp">strcasecmp</a>(<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>, <q>"true"</q>))</td></tr>
+<tr><th id="58">58</th><td>		<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::fd" title='trace_key::fd' data-ref="trace_key::fd">fd</a> = <a class="macro" href="../include/unistd.h.html#215" title="2" data-ref="_M/STDERR_FILENO">STDERR_FILENO</a>;</td></tr>
+<tr><th id="59">59</th><td>	<b>else</b> <b>if</b> (<a class="ref" href="../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>) == <var>1</var> &amp;&amp; <a class="macro" href="git-compat-util.h.html#947" title="((sane_ctype[(unsigned char)(*trace)] &amp; (0x02)) != 0)" data-ref="_M/isdigit">isdigit</a>(*<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>))</td></tr>
+<tr><th id="60">60</th><td>		<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::fd" title='trace_key::fd' data-ref="trace_key::fd">fd</a> = <a class="ref" href="../include/stdlib.h.html#atoi" title='atoi' data-ref="atoi">atoi</a>(<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>);</td></tr>
+<tr><th id="61">61</th><td>	<b>else</b> <b>if</b> (<a class="ref" href="cache.h.html#is_absolute_path" title='is_absolute_path' data-ref="is_absolute_path">is_absolute_path</a>(<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>)) {</td></tr>
+<tr><th id="62">62</th><td>		<em>int</em> <dfn class="local col5 decl" id="5fd" title='fd' data-type='int' data-ref="5fd">fd</dfn> = <a class="ref" href="../include/fcntl.h.html#159" title='open' data-ref="open64">open</a>(<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#44" title="01" data-ref="_M/O_WRONLY">O_WRONLY</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#59" title="02000" data-ref="_M/O_APPEND">O_APPEND</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#47" title="0100" data-ref="_M/O_CREAT">O_CREAT</a>, <var>0666</var>);</td></tr>
+<tr><th id="63">63</th><td>		<b>if</b> (<a class="local col5 ref" href="#5fd" title='fd' data-ref="5fd">fd</a> == -<var>1</var>) {</td></tr>
+<tr><th id="64">64</th><td>			<a class="ref" href="git-compat-util.h.html#warning" title='warning' data-ref="warning">warning</a>(<q>"could not open '%s' for tracing: %s"</q>,</td></tr>
+<tr><th id="65">65</th><td>				<a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>, <a class="ref" href="../include/string.h.html#strerror" title='strerror' data-ref="strerror">strerror</a>(<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>));</td></tr>
+<tr><th id="66">66</th><td>			<a class="ref" href="#trace_disable" title='trace_disable' data-ref="trace_disable">trace_disable</a>(<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>);</td></tr>
+<tr><th id="67">67</th><td>		} <b>else</b> {</td></tr>
+<tr><th id="68">68</th><td>			<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::fd" title='trace_key::fd' data-ref="trace_key::fd">fd</a> = <a class="local col5 ref" href="#5fd" title='fd' data-ref="5fd">fd</a>;</td></tr>
+<tr><th id="69">69</th><td>			<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::need_close" title='trace_key::need_close' data-ref="trace_key::need_close">need_close</a> = <var>1</var>;</td></tr>
+<tr><th id="70">70</th><td>		}</td></tr>
+<tr><th id="71">71</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="72">72</th><td>		<a class="ref" href="git-compat-util.h.html#warning" title='warning' data-ref="warning">warning</a>(<q>"unknown trace value for '%s': %s\n"</q></td></tr>
+<tr><th id="73">73</th><td>			<q>"         If you want to trace into a file, then please set %s\n"</q></td></tr>
+<tr><th id="74">74</th><td>			<q>"         to an absolute pathname (starting with /)"</q>,</td></tr>
+<tr><th id="75">75</th><td>			<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::key" title='trace_key::key' data-ref="trace_key::key">key</a>, <a class="local col4 ref" href="#4trace" title='trace' data-ref="4trace">trace</a>, <a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::key" title='trace_key::key' data-ref="trace_key::key">key</a>);</td></tr>
+<tr><th id="76">76</th><td>		<a class="ref" href="#trace_disable" title='trace_disable' data-ref="trace_disable">trace_disable</a>(<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>);</td></tr>
+<tr><th id="77">77</th><td>	}</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>	<a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::initialized" title='trace_key::initialized' data-ref="trace_key::initialized">initialized</a> = <var>1</var>;</td></tr>
+<tr><th id="80">80</th><td>	<b>return</b> <a class="local col3 ref" href="#3key" title='key' data-ref="3key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::fd" title='trace_key::fd' data-ref="trace_key::fd">fd</a>;</td></tr>
+<tr><th id="81">81</th><td>}</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><em>void</em> <dfn class="decl def" id="trace_disable" title='trace_disable' data-ref="trace_disable">trace_disable</dfn>(<b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> *<dfn class="local col6 decl" id="6key" title='key' data-type='struct trace_key *' data-ref="6key">key</dfn>)</td></tr>
+<tr><th id="84">84</th><td>{</td></tr>
+<tr><th id="85">85</th><td>	<a class="tu ref" href="#normalize_trace_key" title='normalize_trace_key' data-use='c' data-ref="normalize_trace_key">normalize_trace_key</a>(&amp;<a class="local col6 ref" href="#6key" title='key' data-ref="6key">key</a>);</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>	<b>if</b> (<a class="local col6 ref" href="#6key" title='key' data-ref="6key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::need_close" title='trace_key::need_close' data-ref="trace_key::need_close">need_close</a>)</td></tr>
+<tr><th id="88">88</th><td>		<a class="ref" href="../include/unistd.h.html#close" title='close' data-ref="close">close</a>(<a class="local col6 ref" href="#6key" title='key' data-ref="6key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::fd" title='trace_key::fd' data-ref="trace_key::fd">fd</a>);</td></tr>
+<tr><th id="89">89</th><td>	<a class="local col6 ref" href="#6key" title='key' data-ref="6key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::fd" title='trace_key::fd' data-ref="trace_key::fd">fd</a> = <var>0</var>;</td></tr>
+<tr><th id="90">90</th><td>	<a class="local col6 ref" href="#6key" title='key' data-ref="6key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::initialized" title='trace_key::initialized' data-ref="trace_key::initialized">initialized</a> = <var>1</var>;</td></tr>
+<tr><th id="91">91</th><td>	<a class="local col6 ref" href="#6key" title='key' data-ref="6key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::need_close" title='trace_key::need_close' data-ref="trace_key::need_close">need_close</a> = <var>0</var>;</td></tr>
+<tr><th id="92">92</th><td>}</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="prepare_trace_line" title='prepare_trace_line' data-type='int prepare_trace_line(const char * file, int line, struct trace_key * key, struct strbuf * buf)' data-ref="prepare_trace_line">prepare_trace_line</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7file" title='file' data-type='const char *' data-ref="7file">file</dfn>, <em>int</em> <dfn class="local col8 decl" id="8line" title='line' data-type='int' data-ref="8line">line</dfn>,</td></tr>
+<tr><th id="95">95</th><td>			      <b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> *<dfn class="local col9 decl" id="9key" title='key' data-type='struct trace_key *' data-ref="9key">key</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col0 decl" id="10buf" title='buf' data-type='struct strbuf *' data-ref="10buf">buf</dfn>)</td></tr>
+<tr><th id="96">96</th><td>{</td></tr>
+<tr><th id="97">97</th><td>	<em>static</em> <b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> <dfn class="local col1 decl" id="11trace_bare" title='trace_bare' data-type='struct trace_key' data-ref="11trace_bare">trace_bare</dfn> = <a class="macro" href="trace.h.html#14" title="{ &quot;GIT_TRACE_&quot; &quot;BARE&quot;, 0, 0, 0 }" data-ref="_M/TRACE_KEY_INIT">TRACE_KEY_INIT</a>(BARE);</td></tr>
+<tr><th id="98">98</th><td>	<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/bits/time.h.html#timeval" title='timeval' data-ref="timeval">timeval</a> <dfn class="local col2 decl" id="12tv" title='tv' data-type='struct timeval' data-ref="12tv">tv</dfn>;</td></tr>
+<tr><th id="99">99</th><td>	<b>struct</b> <a class="type" href="../include/time.h.html#tm" title='tm' data-ref="tm">tm</a> <dfn class="local col3 decl" id="13tm" title='tm' data-type='struct tm' data-ref="13tm">tm</dfn>;</td></tr>
+<tr><th id="100">100</th><td>	<a class="typedef" href="../include/time.h.html#time_t" title='time_t' data-type='__time_t' data-ref="time_t">time_t</a> <dfn class="local col4 decl" id="14secs" title='secs' data-type='time_t' data-ref="14secs">secs</dfn>;</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>	<b>if</b> (!<a class="ref" href="#trace_want" title='trace_want' data-ref="trace_want">trace_want</a>(<a class="local col9 ref" href="#9key" title='key' data-ref="9key">key</a>))</td></tr>
+<tr><th id="103">103</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td>	<a class="ref" href="git-compat-util.h.html#set_try_to_free_routine" title='set_try_to_free_routine' data-ref="set_try_to_free_routine">set_try_to_free_routine</a>(<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);	<i>/* is never reset */</i></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td>	<i>/* unit tests may want to disable additional trace output */</i></td></tr>
+<tr><th id="108">108</th><td>	<b>if</b> (<a class="ref" href="#trace_want" title='trace_want' data-ref="trace_want">trace_want</a>(&amp;<a class="local col1 ref" href="#11trace_bare" title='trace_bare' data-ref="11trace_bare">trace_bare</a>))</td></tr>
+<tr><th id="109">109</th><td>		<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td>	<i>/* print current timestamp */</i></td></tr>
+<tr><th id="112">112</th><td>	<a class="ref" href="../include/x86_64-linux-gnu/sys/time.h.html#gettimeofday" title='gettimeofday' data-ref="gettimeofday">gettimeofday</a>(&amp;<a class="local col2 ref" href="#12tv" title='tv' data-ref="12tv">tv</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="113">113</th><td>	<a class="local col4 ref" href="#14secs" title='secs' data-ref="14secs">secs</a> = <a class="local col2 ref" href="#12tv" title='tv' data-ref="12tv">tv</a>.<a class="ref" href="../include/x86_64-linux-gnu/bits/time.h.html#timeval::tv_sec" title='timeval::tv_sec' data-ref="timeval::tv_sec">tv_sec</a>;</td></tr>
+<tr><th id="114">114</th><td>	<a class="ref" href="../include/time.h.html#localtime_r" title='localtime_r' data-ref="localtime_r">localtime_r</a>(&amp;<a class="local col4 ref" href="#14secs" title='secs' data-ref="14secs">secs</a>, &amp;<a class="local col3 ref" href="#13tm" title='tm' data-ref="13tm">tm</a>);</td></tr>
+<tr><th id="115">115</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(<a class="local col0 ref" href="#10buf" title='buf' data-ref="10buf">buf</a>, <q>"%02d:%02d:%02d.%06ld "</q>, <a class="local col3 ref" href="#13tm" title='tm' data-ref="13tm">tm</a>.<a class="ref" href="../include/time.h.html#tm::tm_hour" title='tm::tm_hour' data-ref="tm::tm_hour">tm_hour</a>, <a class="local col3 ref" href="#13tm" title='tm' data-ref="13tm">tm</a>.<a class="ref" href="../include/time.h.html#tm::tm_min" title='tm::tm_min' data-ref="tm::tm_min">tm_min</a>,</td></tr>
+<tr><th id="116">116</th><td>		    <a class="local col3 ref" href="#13tm" title='tm' data-ref="13tm">tm</a>.<a class="ref" href="../include/time.h.html#tm::tm_sec" title='tm::tm_sec' data-ref="tm::tm_sec">tm_sec</a>, (<em>long</em>) <a class="local col2 ref" href="#12tv" title='tv' data-ref="12tv">tv</a>.<a class="ref" href="../include/x86_64-linux-gnu/bits/time.h.html#timeval::tv_usec" title='timeval::tv_usec' data-ref="timeval::tv_usec">tv_usec</a>);</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><u>#<span data-ppcond="118">ifdef</span> <a class="macro" href="git-compat-util.h.html#1088" data-ref="_M/HAVE_VARIADIC_MACROS">HAVE_VARIADIC_MACROS</a></u></td></tr>
+<tr><th id="119">119</th><td>	<i>/* print file:line */</i></td></tr>
+<tr><th id="120">120</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(<a class="local col0 ref" href="#10buf" title='buf' data-ref="10buf">buf</a>, <q>"%s:%d "</q>, <a class="local col7 ref" href="#7file" title='file' data-ref="7file">file</a>, <a class="local col8 ref" href="#8line" title='line' data-ref="8line">line</a>);</td></tr>
+<tr><th id="121">121</th><td>	<i>/* align trace output (column 40 catches most files names in git) */</i></td></tr>
+<tr><th id="122">122</th><td>	<b>while</b> (<a class="local col0 ref" href="#10buf" title='buf' data-ref="10buf">buf</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a> &lt; <var>40</var>)</td></tr>
+<tr><th id="123">123</th><td>		<a class="ref" href="strbuf.h.html#strbuf_addch" title='strbuf_addch' data-ref="strbuf_addch">strbuf_addch</a>(<a class="local col0 ref" href="#10buf" title='buf' data-ref="10buf">buf</a>, <kbd>' '</kbd>);</td></tr>
+<tr><th id="124">124</th><td><u>#<span data-ppcond="118">endif</span></u></td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td>	<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="127">127</th><td>}</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="trace_write" title='trace_write' data-type='void trace_write(struct trace_key * key, const void * buf, unsigned int len)' data-ref="trace_write">trace_write</dfn>(<b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> *<dfn class="local col5 decl" id="15key" title='key' data-type='struct trace_key *' data-ref="15key">key</dfn>, <em>const</em> <em>void</em> *<dfn class="local col6 decl" id="16buf" title='buf' data-type='const void *' data-ref="16buf">buf</dfn>, <em>unsigned</em> <dfn class="local col7 decl" id="17len" title='len' data-type='unsigned int' data-ref="17len">len</dfn>)</td></tr>
+<tr><th id="130">130</th><td>{</td></tr>
+<tr><th id="131">131</th><td>	<b>if</b> (<a class="ref" href="cache.h.html#write_in_full" title='write_in_full' data-ref="write_in_full">write_in_full</a>(<a class="tu ref" href="#get_trace_fd" title='get_trace_fd' data-use='c' data-ref="get_trace_fd">get_trace_fd</a>(<a class="local col5 ref" href="#15key" title='key' data-ref="15key">key</a>), <a class="local col6 ref" href="#16buf" title='buf' data-ref="16buf">buf</a>, <a class="local col7 ref" href="#17len" title='len' data-ref="17len">len</a>) &lt; <var>0</var>) {</td></tr>
+<tr><th id="132">132</th><td>		<a class="tu ref" href="#normalize_trace_key" title='normalize_trace_key' data-use='c' data-ref="normalize_trace_key">normalize_trace_key</a>(&amp;<a class="local col5 ref" href="#15key" title='key' data-ref="15key">key</a>);</td></tr>
+<tr><th id="133">133</th><td>		<a class="ref" href="git-compat-util.h.html#warning" title='warning' data-ref="warning">warning</a>(<q>"unable to write trace for %s: %s"</q>,</td></tr>
+<tr><th id="134">134</th><td>			<a class="local col5 ref" href="#15key" title='key' data-ref="15key">key</a>-&gt;<a class="ref" href="trace.h.html#trace_key::key" title='trace_key::key' data-ref="trace_key::key">key</a>, <a class="ref" href="../include/string.h.html#strerror" title='strerror' data-ref="strerror">strerror</a>(<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>));</td></tr>
+<tr><th id="135">135</th><td>		<a class="ref" href="#trace_disable" title='trace_disable' data-ref="trace_disable">trace_disable</a>(<a class="local col5 ref" href="#15key" title='key' data-ref="15key">key</a>);</td></tr>
+<tr><th id="136">136</th><td>	}</td></tr>
+<tr><th id="137">137</th><td>}</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><em>void</em> <dfn class="decl def" id="trace_verbatim" title='trace_verbatim' data-ref="trace_verbatim">trace_verbatim</dfn>(<b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> *<dfn class="local col8 decl" id="18key" title='key' data-type='struct trace_key *' data-ref="18key">key</dfn>, <em>const</em> <em>void</em> *<dfn class="local col9 decl" id="19buf" title='buf' data-type='const void *' data-ref="19buf">buf</dfn>, <em>unsigned</em> <dfn class="local col0 decl" id="20len" title='len' data-type='unsigned int' data-ref="20len">len</dfn>)</td></tr>
+<tr><th id="140">140</th><td>{</td></tr>
+<tr><th id="141">141</th><td>	<b>if</b> (!<a class="ref" href="#trace_want" title='trace_want' data-ref="trace_want">trace_want</a>(<a class="local col8 ref" href="#18key" title='key' data-ref="18key">key</a>))</td></tr>
+<tr><th id="142">142</th><td>		<b>return</b>;</td></tr>
+<tr><th id="143">143</th><td>	<a class="tu ref" href="#trace_write" title='trace_write' data-use='c' data-ref="trace_write">trace_write</a>(<a class="local col8 ref" href="#18key" title='key' data-ref="18key">key</a>, <a class="local col9 ref" href="#19buf" title='buf' data-ref="19buf">buf</a>, <a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a>);</td></tr>
+<tr><th id="144">144</th><td>}</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="print_trace_line" title='print_trace_line' data-type='void print_trace_line(struct trace_key * key, struct strbuf * buf)' data-ref="print_trace_line">print_trace_line</dfn>(<b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> *<dfn class="local col1 decl" id="21key" title='key' data-type='struct trace_key *' data-ref="21key">key</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col2 decl" id="22buf" title='buf' data-type='struct strbuf *' data-ref="22buf">buf</dfn>)</td></tr>
+<tr><th id="147">147</th><td>{</td></tr>
+<tr><th id="148">148</th><td>	<a class="ref" href="strbuf.h.html#strbuf_complete_line" title='strbuf_complete_line' data-ref="strbuf_complete_line">strbuf_complete_line</a>(<a class="local col2 ref" href="#22buf" title='buf' data-ref="22buf">buf</a>);</td></tr>
+<tr><th id="149">149</th><td>	<a class="tu ref" href="#trace_write" title='trace_write' data-use='c' data-ref="trace_write">trace_write</a>(<a class="local col1 ref" href="#21key" title='key' data-ref="21key">key</a>, <a class="local col2 ref" href="#22buf" title='buf' data-ref="22buf">buf</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="local col2 ref" href="#22buf" title='buf' data-ref="22buf">buf</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>);</td></tr>
+<tr><th id="150">150</th><td>	<a class="ref" href="strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(<a class="local col2 ref" href="#22buf" title='buf' data-ref="22buf">buf</a>);</td></tr>
+<tr><th id="151">151</th><td>}</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="trace_vprintf_fl" title='trace_vprintf_fl' data-type='void trace_vprintf_fl(const char * file, int line, struct trace_key * key, const char * format, struct __va_list_tag * ap)' data-ref="trace_vprintf_fl">trace_vprintf_fl</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="23file" title='file' data-type='const char *' data-ref="23file">file</dfn>, <em>int</em> <dfn class="local col4 decl" id="24line" title='line' data-type='int' data-ref="24line">line</dfn>, <b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> *<dfn class="local col5 decl" id="25key" title='key' data-type='struct trace_key *' data-ref="25key">key</dfn>,</td></tr>
+<tr><th id="154">154</th><td>			     <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="26format" title='format' data-type='const char *' data-ref="26format">format</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col7 decl" id="27ap" title='ap' data-type='struct __va_list_tag *' data-ref="27ap">ap</dfn>)</td></tr>
+<tr><th id="155">155</th><td>{</td></tr>
+<tr><th id="156">156</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col8 decl" id="28buf" title='buf' data-type='struct strbuf' data-ref="28buf">buf</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td>	<b>if</b> (!<a class="tu ref" href="#prepare_trace_line" title='prepare_trace_line' data-use='c' data-ref="prepare_trace_line">prepare_trace_line</a>(<a class="local col3 ref" href="#23file" title='file' data-ref="23file">file</a>, <a class="local col4 ref" href="#24line" title='line' data-ref="24line">line</a>, <a class="local col5 ref" href="#25key" title='key' data-ref="25key">key</a>, &amp;<a class="local col8 ref" href="#28buf" title='buf' data-ref="28buf">buf</a>))</td></tr>
+<tr><th id="159">159</th><td>		<b>return</b>;</td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td>	<a class="ref" href="strbuf.h.html#strbuf_vaddf" title='strbuf_vaddf' data-ref="strbuf_vaddf">strbuf_vaddf</a>(&amp;<a class="local col8 ref" href="#28buf" title='buf' data-ref="28buf">buf</a>, <a class="local col6 ref" href="#26format" title='format' data-ref="26format">format</a>, <a class="local col7 ref" href="#27ap" title='ap' data-ref="27ap">ap</a>);</td></tr>
+<tr><th id="162">162</th><td>	<a class="tu ref" href="#print_trace_line" title='print_trace_line' data-use='c' data-ref="print_trace_line">print_trace_line</a>(<a class="local col5 ref" href="#25key" title='key' data-ref="25key">key</a>, &amp;<a class="local col8 ref" href="#28buf" title='buf' data-ref="28buf">buf</a>);</td></tr>
+<tr><th id="163">163</th><td>}</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="trace_argv_vprintf_fl" title='trace_argv_vprintf_fl' data-type='void trace_argv_vprintf_fl(const char * file, int line, const char ** argv, const char * format, struct __va_list_tag * ap)' data-ref="trace_argv_vprintf_fl">trace_argv_vprintf_fl</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="29file" title='file' data-type='const char *' data-ref="29file">file</dfn>, <em>int</em> <dfn class="local col0 decl" id="30line" title='line' data-type='int' data-ref="30line">line</dfn>,</td></tr>
+<tr><th id="166">166</th><td>				  <em>const</em> <em>char</em> **<dfn class="local col1 decl" id="31argv" title='argv' data-type='const char **' data-ref="31argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="32format" title='format' data-type='const char *' data-ref="32format">format</dfn>,</td></tr>
+<tr><th id="167">167</th><td>				  <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col3 decl" id="33ap" title='ap' data-type='struct __va_list_tag *' data-ref="33ap">ap</dfn>)</td></tr>
+<tr><th id="168">168</th><td>{</td></tr>
+<tr><th id="169">169</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col4 decl" id="34buf" title='buf' data-type='struct strbuf' data-ref="34buf">buf</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td>	<b>if</b> (!<a class="tu ref" href="#prepare_trace_line" title='prepare_trace_line' data-use='c' data-ref="prepare_trace_line">prepare_trace_line</a>(<a class="local col9 ref" href="#29file" title='file' data-ref="29file">file</a>, <a class="local col0 ref" href="#30line" title='line' data-ref="30line">line</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, &amp;<a class="local col4 ref" href="#34buf" title='buf' data-ref="34buf">buf</a>))</td></tr>
+<tr><th id="172">172</th><td>		<b>return</b>;</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td>	<a class="ref" href="strbuf.h.html#strbuf_vaddf" title='strbuf_vaddf' data-ref="strbuf_vaddf">strbuf_vaddf</a>(&amp;<a class="local col4 ref" href="#34buf" title='buf' data-ref="34buf">buf</a>, <a class="local col2 ref" href="#32format" title='format' data-ref="32format">format</a>, <a class="local col3 ref" href="#33ap" title='ap' data-ref="33ap">ap</a>);</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td>	<a class="ref" href="quote.h.html#sq_quote_argv" title='sq_quote_argv' data-ref="sq_quote_argv">sq_quote_argv</a>(&amp;<a class="local col4 ref" href="#34buf" title='buf' data-ref="34buf">buf</a>, <a class="local col1 ref" href="#31argv" title='argv' data-ref="31argv">argv</a>, <var>0</var>);</td></tr>
+<tr><th id="177">177</th><td>	<a class="tu ref" href="#print_trace_line" title='print_trace_line' data-use='c' data-ref="print_trace_line">print_trace_line</a>(<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, &amp;<a class="local col4 ref" href="#34buf" title='buf' data-ref="34buf">buf</a>);</td></tr>
+<tr><th id="178">178</th><td>}</td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td><em>void</em> <dfn class="decl def" id="trace_strbuf_fl" title='trace_strbuf_fl' data-ref="trace_strbuf_fl">trace_strbuf_fl</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="35file" title='file' data-type='const char *' data-ref="35file">file</dfn>, <em>int</em> <dfn class="local col6 decl" id="36line" title='line' data-type='int' data-ref="36line">line</dfn>, <b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> *<dfn class="local col7 decl" id="37key" title='key' data-type='struct trace_key *' data-ref="37key">key</dfn>,</td></tr>
+<tr><th id="181">181</th><td>		     <em>const</em> <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col8 decl" id="38data" title='data' data-type='const struct strbuf *' data-ref="38data">data</dfn>)</td></tr>
+<tr><th id="182">182</th><td>{</td></tr>
+<tr><th id="183">183</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col9 decl" id="39buf" title='buf' data-type='struct strbuf' data-ref="39buf">buf</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="184">184</th><td></td></tr>
+<tr><th id="185">185</th><td>	<b>if</b> (!<a class="tu ref" href="#prepare_trace_line" title='prepare_trace_line' data-use='c' data-ref="prepare_trace_line">prepare_trace_line</a>(<a class="local col5 ref" href="#35file" title='file' data-ref="35file">file</a>, <a class="local col6 ref" href="#36line" title='line' data-ref="36line">line</a>, <a class="local col7 ref" href="#37key" title='key' data-ref="37key">key</a>, &amp;<a class="local col9 ref" href="#39buf" title='buf' data-ref="39buf">buf</a>))</td></tr>
+<tr><th id="186">186</th><td>		<b>return</b>;</td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addbuf" title='strbuf_addbuf' data-ref="strbuf_addbuf">strbuf_addbuf</a>(&amp;<a class="local col9 ref" href="#39buf" title='buf' data-ref="39buf">buf</a>, <a class="local col8 ref" href="#38data" title='data' data-ref="38data">data</a>);</td></tr>
+<tr><th id="189">189</th><td>	<a class="tu ref" href="#print_trace_line" title='print_trace_line' data-use='c' data-ref="print_trace_line">print_trace_line</a>(<a class="local col7 ref" href="#37key" title='key' data-ref="37key">key</a>, &amp;<a class="local col9 ref" href="#39buf" title='buf' data-ref="39buf">buf</a>);</td></tr>
+<tr><th id="190">190</th><td>}</td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td><em>static</em> <b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> <dfn class="tu decl def" id="trace_perf_key" title='trace_perf_key' data-type='struct trace_key' data-ref="trace_perf_key">trace_perf_key</dfn> = <a class="macro" href="trace.h.html#14" title="{ &quot;GIT_TRACE_&quot; &quot;PERFORMANCE&quot;, 0, 0, 0 }" data-ref="_M/TRACE_KEY_INIT">TRACE_KEY_INIT</a>(PERFORMANCE);</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="trace_performance_vprintf_fl" title='trace_performance_vprintf_fl' data-type='void trace_performance_vprintf_fl(const char * file, int line, uint64_t nanos, const char * format, struct __va_list_tag * ap)' data-ref="trace_performance_vprintf_fl">trace_performance_vprintf_fl</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="40file" title='file' data-type='const char *' data-ref="40file">file</dfn>, <em>int</em> <dfn class="local col1 decl" id="41line" title='line' data-type='int' data-ref="41line">line</dfn>,</td></tr>
+<tr><th id="195">195</th><td>					 <a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col2 decl" id="42nanos" title='nanos' data-type='uint64_t' data-ref="42nanos">nanos</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="43format" title='format' data-type='const char *' data-ref="43format">format</dfn>,</td></tr>
+<tr><th id="196">196</th><td>					 <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col4 decl" id="44ap" title='ap' data-type='struct __va_list_tag *' data-ref="44ap">ap</dfn>)</td></tr>
+<tr><th id="197">197</th><td>{</td></tr>
+<tr><th id="198">198</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col5 decl" id="45buf" title='buf' data-type='struct strbuf' data-ref="45buf">buf</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="199">199</th><td></td></tr>
+<tr><th id="200">200</th><td>	<b>if</b> (!<a class="tu ref" href="#prepare_trace_line" title='prepare_trace_line' data-use='c' data-ref="prepare_trace_line">prepare_trace_line</a>(<a class="local col0 ref" href="#40file" title='file' data-ref="40file">file</a>, <a class="local col1 ref" href="#41line" title='line' data-ref="41line">line</a>, &amp;<a class="tu ref" href="#trace_perf_key" title='trace_perf_key' data-use='a' data-ref="trace_perf_key">trace_perf_key</a>, &amp;<a class="local col5 ref" href="#45buf" title='buf' data-ref="45buf">buf</a>))</td></tr>
+<tr><th id="201">201</th><td>		<b>return</b>;</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(&amp;<a class="local col5 ref" href="#45buf" title='buf' data-ref="45buf">buf</a>, <q>"performance: %.9f s"</q>, (<em>double</em>) <a class="local col2 ref" href="#42nanos" title='nanos' data-ref="42nanos">nanos</a> / <var>1000000000</var>);</td></tr>
+<tr><th id="204">204</th><td></td></tr>
+<tr><th id="205">205</th><td>	<b>if</b> (<a class="local col3 ref" href="#43format" title='format' data-ref="43format">format</a> &amp;&amp; *<a class="local col3 ref" href="#43format" title='format' data-ref="43format">format</a>) {</td></tr>
+<tr><th id="206">206</th><td>		<a class="ref" href="strbuf.h.html#strbuf_addstr" title='strbuf_addstr' data-ref="strbuf_addstr">strbuf_addstr</a>(&amp;<a class="local col5 ref" href="#45buf" title='buf' data-ref="45buf">buf</a>, <q>": "</q>);</td></tr>
+<tr><th id="207">207</th><td>		<a class="ref" href="strbuf.h.html#strbuf_vaddf" title='strbuf_vaddf' data-ref="strbuf_vaddf">strbuf_vaddf</a>(&amp;<a class="local col5 ref" href="#45buf" title='buf' data-ref="45buf">buf</a>, <a class="local col3 ref" href="#43format" title='format' data-ref="43format">format</a>, <a class="local col4 ref" href="#44ap" title='ap' data-ref="44ap">ap</a>);</td></tr>
+<tr><th id="208">208</th><td>	}</td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td>	<a class="tu ref" href="#print_trace_line" title='print_trace_line' data-use='c' data-ref="print_trace_line">print_trace_line</a>(&amp;<a class="tu ref" href="#trace_perf_key" title='trace_perf_key' data-use='a' data-ref="trace_perf_key">trace_perf_key</a>, &amp;<a class="local col5 ref" href="#45buf" title='buf' data-ref="45buf">buf</a>);</td></tr>
+<tr><th id="211">211</th><td>}</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><u>#<span data-ppcond="213">ifndef</span> <a class="macro" href="git-compat-util.h.html#1088" data-ref="_M/HAVE_VARIADIC_MACROS">HAVE_VARIADIC_MACROS</a></u></td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td><em>void</em> trace_printf(<em>const</em> <em>char</em> *format, ...)</td></tr>
+<tr><th id="216">216</th><td>{</td></tr>
+<tr><th id="217">217</th><td>	va_list ap;</td></tr>
+<tr><th id="218">218</th><td>	va_start(ap, format);</td></tr>
+<tr><th id="219">219</th><td>	trace_vprintf_fl(NULL, <var>0</var>, NULL, format, ap);</td></tr>
+<tr><th id="220">220</th><td>	va_end(ap);</td></tr>
+<tr><th id="221">221</th><td>}</td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td><em>void</em> trace_printf_key(<b>struct</b> trace_key *key, <em>const</em> <em>char</em> *format, ...)</td></tr>
+<tr><th id="224">224</th><td>{</td></tr>
+<tr><th id="225">225</th><td>	va_list ap;</td></tr>
+<tr><th id="226">226</th><td>	va_start(ap, format);</td></tr>
+<tr><th id="227">227</th><td>	trace_vprintf_fl(NULL, <var>0</var>, key, format, ap);</td></tr>
+<tr><th id="228">228</th><td>	va_end(ap);</td></tr>
+<tr><th id="229">229</th><td>}</td></tr>
+<tr><th id="230">230</th><td></td></tr>
+<tr><th id="231">231</th><td><em>void</em> trace_argv_printf(<em>const</em> <em>char</em> **argv, <em>const</em> <em>char</em> *format, ...)</td></tr>
+<tr><th id="232">232</th><td>{</td></tr>
+<tr><th id="233">233</th><td>	va_list ap;</td></tr>
+<tr><th id="234">234</th><td>	va_start(ap, format);</td></tr>
+<tr><th id="235">235</th><td>	trace_argv_vprintf_fl(NULL, <var>0</var>, argv, format, ap);</td></tr>
+<tr><th id="236">236</th><td>	va_end(ap);</td></tr>
+<tr><th id="237">237</th><td>}</td></tr>
+<tr><th id="238">238</th><td></td></tr>
+<tr><th id="239">239</th><td><em>void</em> trace_strbuf(<b>struct</b> trace_key *key, <em>const</em> <b>struct</b> strbuf *data)</td></tr>
+<tr><th id="240">240</th><td>{</td></tr>
+<tr><th id="241">241</th><td>	trace_strbuf_fl(NULL, <var>0</var>, key, data);</td></tr>
+<tr><th id="242">242</th><td>}</td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td><em>void</em> trace_performance(uint64_t nanos, <em>const</em> <em>char</em> *format, ...)</td></tr>
+<tr><th id="245">245</th><td>{</td></tr>
+<tr><th id="246">246</th><td>	va_list ap;</td></tr>
+<tr><th id="247">247</th><td>	va_start(ap, format);</td></tr>
+<tr><th id="248">248</th><td>	trace_performance_vprintf_fl(NULL, <var>0</var>, nanos, format, ap);</td></tr>
+<tr><th id="249">249</th><td>	va_end(ap);</td></tr>
+<tr><th id="250">250</th><td>}</td></tr>
+<tr><th id="251">251</th><td></td></tr>
+<tr><th id="252">252</th><td><em>void</em> trace_performance_since(uint64_t start, <em>const</em> <em>char</em> *format, ...)</td></tr>
+<tr><th id="253">253</th><td>{</td></tr>
+<tr><th id="254">254</th><td>	va_list ap;</td></tr>
+<tr><th id="255">255</th><td>	va_start(ap, format);</td></tr>
+<tr><th id="256">256</th><td>	trace_performance_vprintf_fl(NULL, <var>0</var>, getnanotime() - start,</td></tr>
+<tr><th id="257">257</th><td>				     format, ap);</td></tr>
+<tr><th id="258">258</th><td>	va_end(ap);</td></tr>
+<tr><th id="259">259</th><td>}</td></tr>
+<tr><th id="260">260</th><td></td></tr>
+<tr><th id="261">261</th><td><u>#<span data-ppcond="213">else</span></u></td></tr>
+<tr><th id="262">262</th><td></td></tr>
+<tr><th id="263">263</th><td><em>void</em> <dfn class="decl def" id="trace_printf_key_fl" title='trace_printf_key_fl' data-ref="trace_printf_key_fl">trace_printf_key_fl</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="46file" title='file' data-type='const char *' data-ref="46file">file</dfn>, <em>int</em> <dfn class="local col7 decl" id="47line" title='line' data-type='int' data-ref="47line">line</dfn>, <b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> *<dfn class="local col8 decl" id="48key" title='key' data-type='struct trace_key *' data-ref="48key">key</dfn>,</td></tr>
+<tr><th id="264">264</th><td>			 <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="49format" title='format' data-type='const char *' data-ref="49format">format</dfn>, ...)</td></tr>
+<tr><th id="265">265</th><td>{</td></tr>
+<tr><th id="266">266</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col0 decl" id="50ap" title='ap' data-type='va_list' data-ref="50ap">ap</dfn>;</td></tr>
+<tr><th id="267">267</th><td>	<span class="macro" title="__builtin_va_start(ap, format)" data-ref="_M/va_start">va_start</span>(<a class="local col0 ref" href="#50ap" title='ap' data-ref="50ap">ap</a>, <a class="local col9 ref" href="#49format" title='format' data-ref="49format">format</a>);</td></tr>
+<tr><th id="268">268</th><td>	<a class="tu ref" href="#trace_vprintf_fl" title='trace_vprintf_fl' data-use='c' data-ref="trace_vprintf_fl">trace_vprintf_fl</a>(<a class="local col6 ref" href="#46file" title='file' data-ref="46file">file</a>, <a class="local col7 ref" href="#47line" title='line' data-ref="47line">line</a>, <a class="local col8 ref" href="#48key" title='key' data-ref="48key">key</a>, <a class="local col9 ref" href="#49format" title='format' data-ref="49format">format</a>, <a class="local col0 ref" href="#50ap" title='ap' data-ref="50ap">ap</a>);</td></tr>
+<tr><th id="269">269</th><td>	<span class="macro" title="__builtin_va_end(ap)" data-ref="_M/va_end">va_end</span>(<a class="local col0 ref" href="#50ap" title='ap' data-ref="50ap">ap</a>);</td></tr>
+<tr><th id="270">270</th><td>}</td></tr>
+<tr><th id="271">271</th><td></td></tr>
+<tr><th id="272">272</th><td><em>void</em> <dfn class="decl def" id="trace_argv_printf_fl" title='trace_argv_printf_fl' data-ref="trace_argv_printf_fl">trace_argv_printf_fl</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="51file" title='file' data-type='const char *' data-ref="51file">file</dfn>, <em>int</em> <dfn class="local col2 decl" id="52line" title='line' data-type='int' data-ref="52line">line</dfn>, <em>const</em> <em>char</em> **<dfn class="local col3 decl" id="53argv" title='argv' data-type='const char **' data-ref="53argv">argv</dfn>,</td></tr>
+<tr><th id="273">273</th><td>			  <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="54format" title='format' data-type='const char *' data-ref="54format">format</dfn>, ...)</td></tr>
+<tr><th id="274">274</th><td>{</td></tr>
+<tr><th id="275">275</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col5 decl" id="55ap" title='ap' data-type='va_list' data-ref="55ap">ap</dfn>;</td></tr>
+<tr><th id="276">276</th><td>	<span class="macro" title="__builtin_va_start(ap, format)" data-ref="_M/va_start">va_start</span>(<a class="local col5 ref" href="#55ap" title='ap' data-ref="55ap">ap</a>, <a class="local col4 ref" href="#54format" title='format' data-ref="54format">format</a>);</td></tr>
+<tr><th id="277">277</th><td>	<a class="tu ref" href="#trace_argv_vprintf_fl" title='trace_argv_vprintf_fl' data-use='c' data-ref="trace_argv_vprintf_fl">trace_argv_vprintf_fl</a>(<a class="local col1 ref" href="#51file" title='file' data-ref="51file">file</a>, <a class="local col2 ref" href="#52line" title='line' data-ref="52line">line</a>, <a class="local col3 ref" href="#53argv" title='argv' data-ref="53argv">argv</a>, <a class="local col4 ref" href="#54format" title='format' data-ref="54format">format</a>, <a class="local col5 ref" href="#55ap" title='ap' data-ref="55ap">ap</a>);</td></tr>
+<tr><th id="278">278</th><td>	<span class="macro" title="__builtin_va_end(ap)" data-ref="_M/va_end">va_end</span>(<a class="local col5 ref" href="#55ap" title='ap' data-ref="55ap">ap</a>);</td></tr>
+<tr><th id="279">279</th><td>}</td></tr>
+<tr><th id="280">280</th><td></td></tr>
+<tr><th id="281">281</th><td><em>void</em> <dfn class="decl def" id="trace_performance_fl" title='trace_performance_fl' data-ref="trace_performance_fl">trace_performance_fl</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="56file" title='file' data-type='const char *' data-ref="56file">file</dfn>, <em>int</em> <dfn class="local col7 decl" id="57line" title='line' data-type='int' data-ref="57line">line</dfn>, <a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col8 decl" id="58nanos" title='nanos' data-type='uint64_t' data-ref="58nanos">nanos</dfn>,</td></tr>
+<tr><th id="282">282</th><td>			      <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="59format" title='format' data-type='const char *' data-ref="59format">format</dfn>, ...)</td></tr>
+<tr><th id="283">283</th><td>{</td></tr>
+<tr><th id="284">284</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col0 decl" id="60ap" title='ap' data-type='va_list' data-ref="60ap">ap</dfn>;</td></tr>
+<tr><th id="285">285</th><td>	<span class="macro" title="__builtin_va_start(ap, format)" data-ref="_M/va_start">va_start</span>(<a class="local col0 ref" href="#60ap" title='ap' data-ref="60ap">ap</a>, <a class="local col9 ref" href="#59format" title='format' data-ref="59format">format</a>);</td></tr>
+<tr><th id="286">286</th><td>	<a class="tu ref" href="#trace_performance_vprintf_fl" title='trace_performance_vprintf_fl' data-use='c' data-ref="trace_performance_vprintf_fl">trace_performance_vprintf_fl</a>(<a class="local col6 ref" href="#56file" title='file' data-ref="56file">file</a>, <a class="local col7 ref" href="#57line" title='line' data-ref="57line">line</a>, <a class="local col8 ref" href="#58nanos" title='nanos' data-ref="58nanos">nanos</a>, <a class="local col9 ref" href="#59format" title='format' data-ref="59format">format</a>, <a class="local col0 ref" href="#60ap" title='ap' data-ref="60ap">ap</a>);</td></tr>
+<tr><th id="287">287</th><td>	<span class="macro" title="__builtin_va_end(ap)" data-ref="_M/va_end">va_end</span>(<a class="local col0 ref" href="#60ap" title='ap' data-ref="60ap">ap</a>);</td></tr>
+<tr><th id="288">288</th><td>}</td></tr>
+<tr><th id="289">289</th><td></td></tr>
+<tr><th id="290">290</th><td><u>#<span data-ppcond="213">endif</span> /* HAVE_VARIADIC_MACROS */</u></td></tr>
+<tr><th id="291">291</th><td></td></tr>
+<tr><th id="292">292</th><td></td></tr>
+<tr><th id="293">293</th><td><em>static</em> <em>const</em> <em>char</em> *<dfn class="tu decl def" id="quote_crnl" title='quote_crnl' data-type='const char * quote_crnl(const char * path)' data-ref="quote_crnl">quote_crnl</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="61path" title='path' data-type='const char *' data-ref="61path">path</dfn>)</td></tr>
+<tr><th id="294">294</th><td>{</td></tr>
+<tr><th id="295">295</th><td>	<em>static</em> <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col2 decl" id="62new_path" title='new_path' data-type='struct strbuf' data-ref="62new_path">new_path</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="296">296</th><td></td></tr>
+<tr><th id="297">297</th><td>	<b>if</b> (!<a class="local col1 ref" href="#61path" title='path' data-ref="61path">path</a>)</td></tr>
+<tr><th id="298">298</th><td>		<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="299">299</th><td></td></tr>
+<tr><th id="300">300</th><td>	<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(&amp;new_path, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col2 ref" href="#62new_path" title='new_path' data-ref="62new_path">new_path</a>);</td></tr>
+<tr><th id="301">301</th><td></td></tr>
+<tr><th id="302">302</th><td>	<b>while</b> (*<a class="local col1 ref" href="#61path" title='path' data-ref="61path">path</a>) {</td></tr>
+<tr><th id="303">303</th><td>		<b>switch</b> (*<a class="local col1 ref" href="#61path" title='path' data-ref="61path">path</a>) {</td></tr>
+<tr><th id="304">304</th><td>		<b>case</b> <kbd>'\\'</kbd>: <a class="ref" href="strbuf.h.html#strbuf_addstr" title='strbuf_addstr' data-ref="strbuf_addstr">strbuf_addstr</a>(&amp;<a class="local col2 ref" href="#62new_path" title='new_path' data-ref="62new_path">new_path</a>, <q>"\\\\"</q>); <b>break</b>;</td></tr>
+<tr><th id="305">305</th><td>		<b>case</b> <kbd>'\n'</kbd>: <a class="ref" href="strbuf.h.html#strbuf_addstr" title='strbuf_addstr' data-ref="strbuf_addstr">strbuf_addstr</a>(&amp;<a class="local col2 ref" href="#62new_path" title='new_path' data-ref="62new_path">new_path</a>, <q>"\\n"</q>); <b>break</b>;</td></tr>
+<tr><th id="306">306</th><td>		<b>case</b> <kbd>'\r'</kbd>: <a class="ref" href="strbuf.h.html#strbuf_addstr" title='strbuf_addstr' data-ref="strbuf_addstr">strbuf_addstr</a>(&amp;<a class="local col2 ref" href="#62new_path" title='new_path' data-ref="62new_path">new_path</a>, <q>"\\r"</q>); <b>break</b>;</td></tr>
+<tr><th id="307">307</th><td>		<b>default</b>:</td></tr>
+<tr><th id="308">308</th><td>			<a class="ref" href="strbuf.h.html#strbuf_addch" title='strbuf_addch' data-ref="strbuf_addch">strbuf_addch</a>(&amp;<a class="local col2 ref" href="#62new_path" title='new_path' data-ref="62new_path">new_path</a>, *<a class="local col1 ref" href="#61path" title='path' data-ref="61path">path</a>);</td></tr>
+<tr><th id="309">309</th><td>		}</td></tr>
+<tr><th id="310">310</th><td>		<a class="local col1 ref" href="#61path" title='path' data-ref="61path">path</a>++;</td></tr>
+<tr><th id="311">311</th><td>	}</td></tr>
+<tr><th id="312">312</th><td>	<b>return</b> <a class="local col2 ref" href="#62new_path" title='new_path' data-ref="62new_path">new_path</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>;</td></tr>
+<tr><th id="313">313</th><td>}</td></tr>
+<tr><th id="314">314</th><td></td></tr>
+<tr><th id="315">315</th><td><i>/* FIXME: move prefix to startup_info struct and get rid of this arg */</i></td></tr>
+<tr><th id="316">316</th><td><em>void</em> <dfn class="decl def" id="trace_repo_setup" title='trace_repo_setup' data-ref="trace_repo_setup">trace_repo_setup</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="63prefix" title='prefix' data-type='const char *' data-ref="63prefix">prefix</dfn>)</td></tr>
+<tr><th id="317">317</th><td>{</td></tr>
+<tr><th id="318">318</th><td>	<em>static</em> <b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> <dfn class="local col4 decl" id="64key" title='key' data-type='struct trace_key' data-ref="64key">key</dfn> = <a class="macro" href="trace.h.html#14" title="{ &quot;GIT_TRACE_&quot; &quot;SETUP&quot;, 0, 0, 0 }" data-ref="_M/TRACE_KEY_INIT">TRACE_KEY_INIT</a>(SETUP);</td></tr>
+<tr><th id="319">319</th><td>	<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="65git_work_tree" title='git_work_tree' data-type='const char *' data-ref="65git_work_tree">git_work_tree</dfn>;</td></tr>
+<tr><th id="320">320</th><td>	<em>char</em> *<dfn class="local col6 decl" id="66cwd" title='cwd' data-type='char *' data-ref="66cwd">cwd</dfn>;</td></tr>
+<tr><th id="321">321</th><td></td></tr>
+<tr><th id="322">322</th><td>	<b>if</b> (!<a class="ref" href="#trace_want" title='trace_want' data-ref="trace_want">trace_want</a>(&amp;<a class="local col4 ref" href="#64key" title='key' data-ref="64key">key</a>))</td></tr>
+<tr><th id="323">323</th><td>		<b>return</b>;</td></tr>
+<tr><th id="324">324</th><td></td></tr>
+<tr><th id="325">325</th><td>	<a class="local col6 ref" href="#66cwd" title='cwd' data-ref="66cwd">cwd</a> = <a class="ref" href="git-compat-util.h.html#xgetcwd" title='xgetcwd' data-ref="xgetcwd">xgetcwd</a>();</td></tr>
+<tr><th id="326">326</th><td></td></tr>
+<tr><th id="327">327</th><td>	<b>if</b> (!(<a class="local col5 ref" href="#65git_work_tree" title='git_work_tree' data-ref="65git_work_tree">git_work_tree</a> = <a class="ref" href="cache.h.html#get_git_work_tree" title='get_git_work_tree' data-ref="get_git_work_tree">get_git_work_tree</a>()))</td></tr>
+<tr><th id="328">328</th><td>		<a class="local col5 ref" href="#65git_work_tree" title='git_work_tree' data-ref="65git_work_tree">git_work_tree</a> = <q>"(null)"</q>;</td></tr>
+<tr><th id="329">329</th><td></td></tr>
+<tr><th id="330">330</th><td>	<b>if</b> (!<a class="local col3 ref" href="#63prefix" title='prefix' data-ref="63prefix">prefix</a>)</td></tr>
+<tr><th id="331">331</th><td>		<a class="local col3 ref" href="#63prefix" title='prefix' data-ref="63prefix">prefix</a> = <q>"(null)"</q>;</td></tr>
+<tr><th id="332">332</th><td></td></tr>
+<tr><th id="333">333</th><td>	<a class="macro" href="trace.h.html#83" title="trace_printf_key_fl(&quot;/home/jon/workspace/git/trace.c&quot;, 333, &amp;key, &quot;setup: git_dir: %s\n&quot;, quote_crnl(get_git_dir()))" data-ref="_M/trace_printf_key">trace_printf_key</a>(&amp;<a class="local col4 ref" href="#64key" title='key' data-ref="64key">key</a>, <q>"setup: git_dir: %s\n"</q>, <a class="tu ref" href="#quote_crnl" title='quote_crnl' data-use='c' data-ref="quote_crnl">quote_crnl</a>(<a class="ref" href="cache.h.html#get_git_dir" title='get_git_dir' data-ref="get_git_dir">get_git_dir</a>()));</td></tr>
+<tr><th id="334">334</th><td>	<a class="macro" href="trace.h.html#83" title="trace_printf_key_fl(&quot;/home/jon/workspace/git/trace.c&quot;, 334, &amp;key, &quot;setup: git_common_dir: %s\n&quot;, quote_crnl(get_git_common_dir()))" data-ref="_M/trace_printf_key">trace_printf_key</a>(&amp;<a class="local col4 ref" href="#64key" title='key' data-ref="64key">key</a>, <q>"setup: git_common_dir: %s\n"</q>, <a class="tu ref" href="#quote_crnl" title='quote_crnl' data-use='c' data-ref="quote_crnl">quote_crnl</a>(<a class="ref" href="cache.h.html#get_git_common_dir" title='get_git_common_dir' data-ref="get_git_common_dir">get_git_common_dir</a>()));</td></tr>
+<tr><th id="335">335</th><td>	<a class="macro" href="trace.h.html#83" title="trace_printf_key_fl(&quot;/home/jon/workspace/git/trace.c&quot;, 335, &amp;key, &quot;setup: worktree: %s\n&quot;, quote_crnl(git_work_tree))" data-ref="_M/trace_printf_key">trace_printf_key</a>(&amp;<a class="local col4 ref" href="#64key" title='key' data-ref="64key">key</a>, <q>"setup: worktree: %s\n"</q>, <a class="tu ref" href="#quote_crnl" title='quote_crnl' data-use='c' data-ref="quote_crnl">quote_crnl</a>(<a class="local col5 ref" href="#65git_work_tree" title='git_work_tree' data-ref="65git_work_tree">git_work_tree</a>));</td></tr>
+<tr><th id="336">336</th><td>	<a class="macro" href="trace.h.html#83" title="trace_printf_key_fl(&quot;/home/jon/workspace/git/trace.c&quot;, 336, &amp;key, &quot;setup: cwd: %s\n&quot;, quote_crnl(cwd))" data-ref="_M/trace_printf_key">trace_printf_key</a>(&amp;<a class="local col4 ref" href="#64key" title='key' data-ref="64key">key</a>, <q>"setup: cwd: %s\n"</q>, <a class="tu ref" href="#quote_crnl" title='quote_crnl' data-use='c' data-ref="quote_crnl">quote_crnl</a>(<a class="local col6 ref" href="#66cwd" title='cwd' data-ref="66cwd">cwd</a>));</td></tr>
+<tr><th id="337">337</th><td>	<a class="macro" href="trace.h.html#83" title="trace_printf_key_fl(&quot;/home/jon/workspace/git/trace.c&quot;, 337, &amp;key, &quot;setup: prefix: %s\n&quot;, quote_crnl(prefix))" data-ref="_M/trace_printf_key">trace_printf_key</a>(&amp;<a class="local col4 ref" href="#64key" title='key' data-ref="64key">key</a>, <q>"setup: prefix: %s\n"</q>, <a class="tu ref" href="#quote_crnl" title='quote_crnl' data-use='c' data-ref="quote_crnl">quote_crnl</a>(<a class="local col3 ref" href="#63prefix" title='prefix' data-ref="63prefix">prefix</a>));</td></tr>
+<tr><th id="338">338</th><td></td></tr>
+<tr><th id="339">339</th><td>	<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col6 ref" href="#66cwd" title='cwd' data-ref="66cwd">cwd</a>);</td></tr>
+<tr><th id="340">340</th><td>}</td></tr>
+<tr><th id="341">341</th><td></td></tr>
+<tr><th id="342">342</th><td><em>int</em> <dfn class="decl def" id="trace_want" title='trace_want' data-ref="trace_want">trace_want</dfn>(<b>struct</b> <a class="type" href="trace.h.html#trace_key" title='trace_key' data-ref="trace_key">trace_key</a> *<dfn class="local col7 decl" id="67key" title='key' data-type='struct trace_key *' data-ref="67key">key</dfn>)</td></tr>
+<tr><th id="343">343</th><td>{</td></tr>
+<tr><th id="344">344</th><td>	<b>return</b> !!<a class="tu ref" href="#get_trace_fd" title='get_trace_fd' data-use='c' data-ref="get_trace_fd">get_trace_fd</a>(<a class="local col7 ref" href="#67key" title='key' data-ref="67key">key</a>);</td></tr>
+<tr><th id="345">345</th><td>}</td></tr>
+<tr><th id="346">346</th><td></td></tr>
+<tr><th id="347">347</th><td><u>#<span data-ppcond="347">if</span> defined(<span class="macro" data-ref="_M/HAVE_CLOCK_GETTIME">HAVE_CLOCK_GETTIME</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/HAVE_CLOCK_MONOTONIC">HAVE_CLOCK_MONOTONIC</span>)</u></td></tr>
+<tr><th id="348">348</th><td></td></tr>
+<tr><th id="349">349</th><td><em>static</em> <b>inline</b> <a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="tu decl def" id="highres_nanos" title='highres_nanos' data-type='uint64_t highres_nanos()' data-ref="highres_nanos">highres_nanos</dfn>(<em>void</em>)</td></tr>
+<tr><th id="350">350</th><td>{</td></tr>
+<tr><th id="351">351</th><td>	<b>struct</b> <a class="type" href="../include/time.h.html#timespec" title='timespec' data-ref="timespec">timespec</a> <dfn class="local col8 decl" id="68ts" title='ts' data-type='struct timespec' data-ref="68ts">ts</dfn>;</td></tr>
+<tr><th id="352">352</th><td>	<b>if</b> (<a class="ref" href="../include/time.h.html#clock_gettime" title='clock_gettime' data-ref="clock_gettime">clock_gettime</a>(<a class="macro" href="../include/x86_64-linux-gnu/bits/time.h.html#63" title="1" data-ref="_M/CLOCK_MONOTONIC">CLOCK_MONOTONIC</a>, &amp;<a class="local col8 ref" href="#68ts" title='ts' data-ref="68ts">ts</a>))</td></tr>
+<tr><th id="353">353</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="354">354</th><td>	<b>return</b> (<a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>) <a class="local col8 ref" href="#68ts" title='ts' data-ref="68ts">ts</a>.<a class="ref" href="../include/time.h.html#timespec::tv_sec" title='timespec::tv_sec' data-ref="timespec::tv_sec">tv_sec</a> * <var>1000000000</var> + <a class="local col8 ref" href="#68ts" title='ts' data-ref="68ts">ts</a>.<a class="ref" href="../include/time.h.html#timespec::tv_nsec" title='timespec::tv_nsec' data-ref="timespec::tv_nsec">tv_nsec</a>;</td></tr>
+<tr><th id="355">355</th><td>}</td></tr>
+<tr><th id="356">356</th><td></td></tr>
+<tr><th id="357">357</th><td><u>#<span data-ppcond="347">elif</span> defined (GIT_WINDOWS_NATIVE)</u></td></tr>
+<tr><th id="358">358</th><td></td></tr>
+<tr><th id="359">359</th><td><em>static</em> <b>inline</b> uint64_t highres_nanos(<em>void</em>)</td></tr>
+<tr><th id="360">360</th><td>{</td></tr>
+<tr><th id="361">361</th><td>	<em>static</em> uint64_t high_ns, scaled_low_ns;</td></tr>
+<tr><th id="362">362</th><td>	<em>static</em> <em>int</em> scale;</td></tr>
+<tr><th id="363">363</th><td>	LARGE_INTEGER cnt;</td></tr>
+<tr><th id="364">364</th><td></td></tr>
+<tr><th id="365">365</th><td>	<b>if</b> (!scale) {</td></tr>
+<tr><th id="366">366</th><td>		<b>if</b> (!QueryPerformanceFrequency(&amp;cnt))</td></tr>
+<tr><th id="367">367</th><td>			<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="368">368</th><td></td></tr>
+<tr><th id="369">369</th><td>		<i>/* high_ns = number of ns per cnt.HighPart */</i></td></tr>
+<tr><th id="370">370</th><td>		high_ns = (<var>1000000000LL</var> &lt;&lt; <var>32</var>) / (uint64_t) cnt.QuadPart;</td></tr>
+<tr><th id="371">371</th><td></td></tr>
+<tr><th id="372">372</th><td>		<i>/*</i></td></tr>
+<tr><th id="373">373</th><td><i>		 * Number of ns per cnt.LowPart is 10^9 / frequency (or</i></td></tr>
+<tr><th id="374">374</th><td><i>		 * high_ns &gt;&gt; 32). For maximum precision, we scale this factor</i></td></tr>
+<tr><th id="375">375</th><td><i>		 * so that it just fits within 32 bit (i.e. won't overflow if</i></td></tr>
+<tr><th id="376">376</th><td><i>		 * multiplied with cnt.LowPart).</i></td></tr>
+<tr><th id="377">377</th><td><i>		 */</i></td></tr>
+<tr><th id="378">378</th><td>		scaled_low_ns = high_ns;</td></tr>
+<tr><th id="379">379</th><td>		scale = <var>32</var>;</td></tr>
+<tr><th id="380">380</th><td>		<b>while</b> (scaled_low_ns &gt;= <var>0x100000000LL</var>) {</td></tr>
+<tr><th id="381">381</th><td>			scaled_low_ns &gt;&gt;= <var>1</var>;</td></tr>
+<tr><th id="382">382</th><td>			scale--;</td></tr>
+<tr><th id="383">383</th><td>		}</td></tr>
+<tr><th id="384">384</th><td>	}</td></tr>
+<tr><th id="385">385</th><td></td></tr>
+<tr><th id="386">386</th><td>	<i>/* if QPF worked on initialization, we expect QPC to work as well */</i></td></tr>
+<tr><th id="387">387</th><td>	QueryPerformanceCounter(&amp;cnt);</td></tr>
+<tr><th id="388">388</th><td></td></tr>
+<tr><th id="389">389</th><td>	<b>return</b> (high_ns * cnt.HighPart) +</td></tr>
+<tr><th id="390">390</th><td>	       ((scaled_low_ns * cnt.LowPart) &gt;&gt; scale);</td></tr>
+<tr><th id="391">391</th><td>}</td></tr>
+<tr><th id="392">392</th><td></td></tr>
+<tr><th id="393">393</th><td><u>#else</u></td></tr>
+<tr><th id="394">394</th><td><u># define highres_nanos() 0</u></td></tr>
+<tr><th id="395">395</th><td><u>#<span data-ppcond="347">endif</span></u></td></tr>
+<tr><th id="396">396</th><td></td></tr>
+<tr><th id="397">397</th><td><em>static</em> <b>inline</b> <a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="tu decl def" id="gettimeofday_nanos" title='gettimeofday_nanos' data-type='uint64_t gettimeofday_nanos()' data-ref="gettimeofday_nanos">gettimeofday_nanos</dfn>(<em>void</em>)</td></tr>
+<tr><th id="398">398</th><td>{</td></tr>
+<tr><th id="399">399</th><td>	<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/bits/time.h.html#timeval" title='timeval' data-ref="timeval">timeval</a> <dfn class="local col9 decl" id="69tv" title='tv' data-type='struct timeval' data-ref="69tv">tv</dfn>;</td></tr>
+<tr><th id="400">400</th><td>	<a class="ref" href="../include/x86_64-linux-gnu/sys/time.h.html#gettimeofday" title='gettimeofday' data-ref="gettimeofday">gettimeofday</a>(&amp;<a class="local col9 ref" href="#69tv" title='tv' data-ref="69tv">tv</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="401">401</th><td>	<b>return</b> (<a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>) <a class="local col9 ref" href="#69tv" title='tv' data-ref="69tv">tv</a>.<a class="ref" href="../include/x86_64-linux-gnu/bits/time.h.html#timeval::tv_sec" title='timeval::tv_sec' data-ref="timeval::tv_sec">tv_sec</a> * <var>1000000000</var> + <a class="local col9 ref" href="#69tv" title='tv' data-ref="69tv">tv</a>.<a class="ref" href="../include/x86_64-linux-gnu/bits/time.h.html#timeval::tv_usec" title='timeval::tv_usec' data-ref="timeval::tv_usec">tv_usec</a> * <var>1000</var>;</td></tr>
+<tr><th id="402">402</th><td>}</td></tr>
+<tr><th id="403">403</th><td></td></tr>
+<tr><th id="404">404</th><td><i>/*</i></td></tr>
+<tr><th id="405">405</th><td><i> * Returns nanoseconds since the epoch (01/01/1970), for performance tracing</i></td></tr>
+<tr><th id="406">406</th><td><i> * (i.e. favoring high precision over wall clock time accuracy).</i></td></tr>
+<tr><th id="407">407</th><td><i> */</i></td></tr>
+<tr><th id="408">408</th><td><a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="decl def" id="getnanotime" title='getnanotime' data-ref="getnanotime">getnanotime</dfn>(<em>void</em>)</td></tr>
+<tr><th id="409">409</th><td>{</td></tr>
+<tr><th id="410">410</th><td>	<em>static</em> <a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col0 decl" id="70offset" title='offset' data-type='uint64_t' data-ref="70offset">offset</dfn>;</td></tr>
+<tr><th id="411">411</th><td>	<b>if</b> (<a class="local col0 ref" href="#70offset" title='offset' data-ref="70offset">offset</a> &gt; <var>1</var>) {</td></tr>
+<tr><th id="412">412</th><td>		<i>/* initialization succeeded, return offset + high res time */</i></td></tr>
+<tr><th id="413">413</th><td>		<b>return</b> <a class="local col0 ref" href="#70offset" title='offset' data-ref="70offset">offset</a> + <a class="tu ref" href="#highres_nanos" title='highres_nanos' data-use='c' data-ref="highres_nanos">highres_nanos</a>();</td></tr>
+<tr><th id="414">414</th><td>	} <b>else</b> <b>if</b> (<a class="local col0 ref" href="#70offset" title='offset' data-ref="70offset">offset</a> == <var>1</var>) {</td></tr>
+<tr><th id="415">415</th><td>		<i>/* initialization failed, fall back to gettimeofday */</i></td></tr>
+<tr><th id="416">416</th><td>		<b>return</b> <a class="tu ref" href="#gettimeofday_nanos" title='gettimeofday_nanos' data-use='c' data-ref="gettimeofday_nanos">gettimeofday_nanos</a>();</td></tr>
+<tr><th id="417">417</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="418">418</th><td>		<i>/* initialize offset if high resolution timer works */</i></td></tr>
+<tr><th id="419">419</th><td>		<a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col1 decl" id="71now" title='now' data-type='uint64_t' data-ref="71now">now</dfn> = <a class="tu ref" href="#gettimeofday_nanos" title='gettimeofday_nanos' data-use='c' data-ref="gettimeofday_nanos">gettimeofday_nanos</a>();</td></tr>
+<tr><th id="420">420</th><td>		<a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col2 decl" id="72highres" title='highres' data-type='uint64_t' data-ref="72highres">highres</dfn> = <a class="tu ref" href="#highres_nanos" title='highres_nanos' data-use='c' data-ref="highres_nanos">highres_nanos</a>();</td></tr>
+<tr><th id="421">421</th><td>		<b>if</b> (<a class="local col2 ref" href="#72highres" title='highres' data-ref="72highres">highres</a>)</td></tr>
+<tr><th id="422">422</th><td>			<a class="local col0 ref" href="#70offset" title='offset' data-ref="70offset">offset</a> = <a class="local col1 ref" href="#71now" title='now' data-ref="71now">now</a> - <a class="local col2 ref" href="#72highres" title='highres' data-ref="72highres">highres</a>;</td></tr>
+<tr><th id="423">423</th><td>		<b>else</b></td></tr>
+<tr><th id="424">424</th><td>			<a class="local col0 ref" href="#70offset" title='offset' data-ref="70offset">offset</a> = <var>1</var>;</td></tr>
+<tr><th id="425">425</th><td>		<b>return</b> <a class="local col1 ref" href="#71now" title='now' data-ref="71now">now</a>;</td></tr>
+<tr><th id="426">426</th><td>	}</td></tr>
+<tr><th id="427">427</th><td>}</td></tr>
+<tr><th id="428">428</th><td></td></tr>
+<tr><th id="429">429</th><td><em>static</em> <a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="tu decl def" id="command_start_time" title='command_start_time' data-type='uint64_t' data-ref="command_start_time">command_start_time</dfn>;</td></tr>
+<tr><th id="430">430</th><td><em>static</em> <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="tu decl def" id="command_line" title='command_line' data-type='struct strbuf' data-ref="command_line">command_line</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="431">431</th><td></td></tr>
+<tr><th id="432">432</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="print_command_performance_atexit" title='print_command_performance_atexit' data-type='void print_command_performance_atexit()' data-ref="print_command_performance_atexit">print_command_performance_atexit</dfn>(<em>void</em>)</td></tr>
+<tr><th id="433">433</th><td>{</td></tr>
+<tr><th id="434">434</th><td>	<a class="macro" href="trace.h.html#95" title="trace_performance_fl(&quot;/home/jon/workspace/git/trace.c&quot;, 435, getnanotime() - (command_start_time), &quot;git command:%s&quot;, command_line.buf)" data-ref="_M/trace_performance_since">trace_performance_since</a>(<a class="tu ref" href="#command_start_time" title='command_start_time' data-use='r' data-ref="command_start_time">command_start_time</a>, <q>"git command:%s"</q>,</td></tr>
+<tr><th id="435">435</th><td>				<a class="tu ref" href="#command_line" title='command_line' data-use='m' data-ref="command_line">command_line</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="436">436</th><td>}</td></tr>
+<tr><th id="437">437</th><td></td></tr>
+<tr><th id="438">438</th><td><em>void</em> <dfn class="decl def" id="trace_command_performance" title='trace_command_performance' data-ref="trace_command_performance">trace_command_performance</dfn>(<em>const</em> <em>char</em> **<dfn class="local col3 decl" id="73argv" title='argv' data-type='const char **' data-ref="73argv">argv</dfn>)</td></tr>
+<tr><th id="439">439</th><td>{</td></tr>
+<tr><th id="440">440</th><td>	<b>if</b> (!<a class="ref" href="#trace_want" title='trace_want' data-ref="trace_want">trace_want</a>(&amp;<a class="tu ref" href="#trace_perf_key" title='trace_perf_key' data-use='a' data-ref="trace_perf_key">trace_perf_key</a>))</td></tr>
+<tr><th id="441">441</th><td>		<b>return</b>;</td></tr>
+<tr><th id="442">442</th><td></td></tr>
+<tr><th id="443">443</th><td>	<b>if</b> (!<a class="tu ref" href="#command_start_time" title='command_start_time' data-use='r' data-ref="command_start_time">command_start_time</a>)</td></tr>
+<tr><th id="444">444</th><td>		<a class="ref" href="../include/stdlib.h.html#atexit" title='atexit' data-ref="atexit">atexit</a>(<a class="tu ref" href="#print_command_performance_atexit" title='print_command_performance_atexit' data-use='r' data-ref="print_command_performance_atexit">print_command_performance_atexit</a>);</td></tr>
+<tr><th id="445">445</th><td></td></tr>
+<tr><th id="446">446</th><td>	<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(&amp;command_line, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="tu ref" href="#command_line" title='command_line' data-use='a' data-ref="command_line">command_line</a>);</td></tr>
+<tr><th id="447">447</th><td>	<a class="ref" href="quote.h.html#sq_quote_argv" title='sq_quote_argv' data-ref="sq_quote_argv">sq_quote_argv</a>(&amp;<a class="tu ref" href="#command_line" title='command_line' data-use='a' data-ref="command_line">command_line</a>, <a class="local col3 ref" href="#73argv" title='argv' data-ref="73argv">argv</a>, <var>0</var>);</td></tr>
+<tr><th id="448">448</th><td>	<a class="tu ref" href="#command_start_time" title='command_start_time' data-use='w' data-ref="command_start_time">command_start_time</a> = <a class="ref" href="#getnanotime" title='getnanotime' data-ref="getnanotime">getnanotime</a>();</td></tr>
+<tr><th id="449">449</th><td>}</td></tr>
+<tr><th id="450">450</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

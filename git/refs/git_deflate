@@ -1,0 +1,18 @@
+<dec f='codebrowser/cache.h' l='64' type='int git_deflate(git_zstream * , int flush)'/>
+<use f='codebrowser/archive-zip.c' l='208' u='c' c='zlib_deflate_raw'/>
+<use f='codebrowser/archive-zip.c' l='466' u='c' c='write_zip_entry'/>
+<use f='codebrowser/archive-zip.c' l='485' u='c' c='write_zip_entry'/>
+<use f='codebrowser/builtin/index-pack.c' l='1301' u='c' c='write_compressed'/>
+<use f='codebrowser/builtin/pack-objects.c' l='144' u='c' c='do_compress'/>
+<use f='codebrowser/builtin/pack-objects.c' l='175' u='c' c='write_large_blob_data'/>
+<use f='codebrowser/bulk-checkin.c' l='134' u='c' c='stream_to_pack'/>
+<use f='codebrowser/diff.c' l='2213' u='c' c='deflate_it'/>
+<use f='codebrowser/fast-import.c' l='1138' u='c' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1159' u='c' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1273' u='c' c='stream_blob'/>
+<use f='codebrowser/http-push.c' l='379' u='c' c='start_put'/>
+<use f='codebrowser/http-push.c' l='385' u='c' c='start_put'/>
+<use f='codebrowser/remote-curl.c' l='643' u='c' c='post_rpc'/>
+<use f='codebrowser/sha1_file.c' l='3334' u='c' c='write_loose_object'/>
+<use f='codebrowser/sha1_file.c' l='3343' u='c' c='write_loose_object'/>
+<def f='codebrowser/zlib.c' l='236' ll='273' type='int git_deflate(git_zstream * strm, int flush)'/>

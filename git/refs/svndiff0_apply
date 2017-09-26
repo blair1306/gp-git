@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/svndiff.h' l='7' type='int svndiff0_apply(struct line_buffer * delta, off_t delta_len, struct sliding_view * preimage, FILE * postimage)'/>
+<use f='codebrowser/t/helper/test-svn-fe.c' l='27' u='c' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='219' u='c' c='apply_delta'/>
+<def f='codebrowser/vcs-svn/svndiff.c' l='291' ll='309' type='int svndiff0_apply(struct line_buffer * delta, off_t delta_len, struct sliding_view * preimage, FILE * postimage)'/>

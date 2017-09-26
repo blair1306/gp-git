@@ -1,0 +1,8 @@
+<dec f='codebrowser/refs/refs-internal.h' l='98' type='-1'/>
+<use f='codebrowser/refs.c' l='263' u='r' c='peel_object'/>
+<use f='codebrowser/refs.c' l='271' u='r' c='peel_object'/>
+<doc f='codebrowser/refs/refs-internal.h' l='93'>/*
+	 * object cannot be peeled because the named object (or an
+	 * object referred to by a tag in the peel chain), does not
+	 * exist.
+	 */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/transport.h' l='67' type='int (*)(struct transport *, const char *, const char *)'/>
+<offset>384</offset>
+<doc f='codebrowser/transport.h' l='62'>/**
+	 * Returns 0 if successful, positive if the option is not
+	 * recognized or is inapplicable, and negative if the option
+	 * is applicable but the value is invalid.
+	 **/</doc>
+<use f='codebrowser/transport-helper.c' l='1098' u='w' c='transport_helper_init'/>
+<use f='codebrowser/transport.c' l='629' u='w' c='transport_take_over'/>
+<use f='codebrowser/transport.c' l='810' u='w' c='transport_get'/>
+<use f='codebrowser/transport.c' l='849' u='r' c='transport_set_option'/>
+<use f='codebrowser/transport.c' l='850' u='r' c='transport_set_option'/>

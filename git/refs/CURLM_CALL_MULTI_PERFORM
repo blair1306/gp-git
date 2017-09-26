@@ -1,0 +1,5 @@
+<dec f='include/curl/multi.h' l='58' type='-1'/>
+<doc f='include/curl/multi.h' l='58'>/* please call curl_multi_perform() or
+                                    curl_multi_socket*() soon */</doc>
+<use f='codebrowser/http.c' l='1144' u='r' c='start_active_slot'/>
+<use f='codebrowser/http.c' l='1214' u='r' c='step_active_slots'/>

@@ -1,0 +1,53 @@
+<def f='codebrowser/grep.h' l='119' ll='175'/>
+<size>872</size>
+<mbr r='grep_opt::pattern_list' o='0' t='struct grep_pat *'/>
+<mbr r='grep_opt::pattern_tail' o='64' t='struct grep_pat **'/>
+<mbr r='grep_opt::header_list' o='128' t='struct grep_pat *'/>
+<mbr r='grep_opt::header_tail' o='192' t='struct grep_pat **'/>
+<mbr r='grep_opt::pattern_expression' o='256' t='struct grep_expr *'/>
+<mbr r='grep_opt::prefix' o='320' t='const char *'/>
+<mbr r='grep_opt::prefix_length' o='384' t='int'/>
+<mbr r='grep_opt::regexp' o='448' t='regex_t'/>
+<mbr r='grep_opt::linenum' o='960' t='int'/>
+<mbr r='grep_opt::invert' o='992' t='int'/>
+<mbr r='grep_opt::ignore_case' o='1024' t='int'/>
+<mbr r='grep_opt::status_only' o='1056' t='int'/>
+<mbr r='grep_opt::name_only' o='1088' t='int'/>
+<mbr r='grep_opt::unmatch_name_only' o='1120' t='int'/>
+<mbr r='grep_opt::count' o='1152' t='int'/>
+<mbr r='grep_opt::word_regexp' o='1184' t='int'/>
+<mbr r='grep_opt::fixed' o='1216' t='int'/>
+<mbr r='grep_opt::all_match' o='1248' t='int'/>
+<mbr r='grep_opt::debug' o='1280' t='int'/>
+<mbr r='grep_opt::binary' o='1312' t='int'/>
+<mbr r='grep_opt::allow_textconv' o='1344' t='int'/>
+<mbr r='grep_opt::extended' o='1376' t='int'/>
+<mbr r='grep_opt::use_reflog_filter' o='1408' t='int'/>
+<mbr r='grep_opt::pcre1' o='1440' t='int'/>
+<mbr r='grep_opt::pcre2' o='1472' t='int'/>
+<mbr r='grep_opt::relative' o='1504' t='int'/>
+<mbr r='grep_opt::pathname' o='1536' t='int'/>
+<mbr r='grep_opt::null_following_name' o='1568' t='int'/>
+<mbr r='grep_opt::color' o='1600' t='int'/>
+<mbr r='grep_opt::max_depth' o='1632' t='int'/>
+<mbr r='grep_opt::funcname' o='1664' t='int'/>
+<mbr r='grep_opt::funcbody' o='1696' t='int'/>
+<mbr r='grep_opt::extended_regexp_option' o='1728' t='int'/>
+<mbr r='grep_opt::pattern_type_option' o='1760' t='int'/>
+<mbr r='grep_opt::color_context' o='1792' t='char [75]'/>
+<mbr r='grep_opt::color_filename' o='2392' t='char [75]'/>
+<mbr r='grep_opt::color_function' o='2992' t='char [75]'/>
+<mbr r='grep_opt::color_lineno' o='3592' t='char [75]'/>
+<mbr r='grep_opt::color_match_context' o='4192' t='char [75]'/>
+<mbr r='grep_opt::color_match_selected' o='4792' t='char [75]'/>
+<mbr r='grep_opt::color_selected' o='5392' t='char [75]'/>
+<mbr r='grep_opt::color_sep' o='5992' t='char [75]'/>
+<mbr r='grep_opt::pre_context' o='6592' t='unsigned int'/>
+<mbr r='grep_opt::post_context' o='6624' t='unsigned int'/>
+<mbr r='grep_opt::last_shown' o='6656' t='unsigned int'/>
+<mbr r='grep_opt::show_hunk_mark' o='6688' t='int'/>
+<mbr r='grep_opt::file_break' o='6720' t='int'/>
+<mbr r='grep_opt::heading' o='6752' t='int'/>
+<mbr r='grep_opt::priv' o='6784' t='void *'/>
+<mbr r='grep_opt::output' o='6848' t='void (*)(struct grep_opt *, const void *, size_t)'/>
+<mbr r='grep_opt::output_priv' o='6912' t='void *'/>

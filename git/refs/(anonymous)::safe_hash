@@ -1,0 +1,6 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='44' type='int'/>
+<offset>768</offset>
+<use f='codebrowser/sha1dc/sha1.c' l='1742' u='r' c='sha1_process'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1765' u='w' c='SHA1DCInit'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1775' u='w' c='SHA1DCSetSafeHash'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1777' u='w' c='SHA1DCSetSafeHash'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='416'/>
+<use f='codebrowser/environment.c' l='157' u='c'/>
+<use f='codebrowser/git.c' l='112' u='c'/>
+<use f='codebrowser/git.c' l='118' u='c'/>

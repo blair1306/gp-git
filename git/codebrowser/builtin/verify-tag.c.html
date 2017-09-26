@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>verify-tag.c source code [codebrowser/builtin/verify-tag.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/builtin/verify-tag.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>builtin</a>/<a href='verify-tag.c.html'>verify-tag.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Builtin "git verify-tag"</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (c) 2007 Carlos Rica &lt;jasampler@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * Based on git-verify-tag.sh</i></td></tr>
+<tr><th id="7">7</th><td><i> */</i></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="../config.h.html">"config.h"</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="../builtin.h.html">"builtin.h"</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="../tag.h.html">"tag.h"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="../run-command.h.html">"run-command.h"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="../../include/signal.h.html">&lt;signal.h&gt;</a></u></td></tr>
+<tr><th id="14">14</th><td><u>#include <a href="../parse-options.h.html">"parse-options.h"</a></u></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../gpg-interface.h.html">"gpg-interface.h"</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="../ref-filter.h.html">"ref-filter.h"</a></u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><em>static</em> <em>const</em> <em>char</em> * <em>const</em> <dfn class="tu decl def" id="verify_tag_usage" title='verify_tag_usage' data-type='const char *const [2]' data-ref="verify_tag_usage">verify_tag_usage</dfn>[] = {</td></tr>
+<tr><th id="19">19</th><td>		<a class="macro" href="../gettext.h.html#89" title="(&quot;git verify-tag [-v | --verbose] [--format=&lt;format&gt;] &lt;tag&gt;...&quot;)" data-ref="_M/N_">N_</a>(<q>"git verify-tag [-v | --verbose] [--format=&lt;format&gt;] &lt;tag&gt;..."</q>),</td></tr>
+<tr><th id="20">20</th><td>		<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span></td></tr>
+<tr><th id="21">21</th><td>};</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="git_verify_tag_config" title='git_verify_tag_config' data-type='int git_verify_tag_config(const char * var, const char * value, void * cb)' data-ref="git_verify_tag_config">git_verify_tag_config</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1var" title='var' data-type='const char *' data-ref="1var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2value" title='value' data-type='const char *' data-ref="2value">value</dfn>, <em>void</em> *<dfn class="local col3 decl" id="3cb" title='cb' data-type='void *' data-ref="3cb">cb</dfn>)</td></tr>
+<tr><th id="24">24</th><td>{</td></tr>
+<tr><th id="25">25</th><td>	<em>int</em> <dfn class="local col4 decl" id="4status" title='status' data-type='int' data-ref="4status">status</dfn> = <a class="ref" href="../gpg-interface.h.html#git_gpg_config" title='git_gpg_config' data-ref="git_gpg_config">git_gpg_config</a>(<a class="local col1 ref" href="#1var" title='var' data-ref="1var">var</a>, <a class="local col2 ref" href="#2value" title='value' data-ref="2value">value</a>, <a class="local col3 ref" href="#3cb" title='cb' data-ref="3cb">cb</a>);</td></tr>
+<tr><th id="26">26</th><td>	<b>if</b> (<a class="local col4 ref" href="#4status" title='status' data-ref="4status">status</a>)</td></tr>
+<tr><th id="27">27</th><td>		<b>return</b> <a class="local col4 ref" href="#4status" title='status' data-ref="4status">status</a>;</td></tr>
+<tr><th id="28">28</th><td>	<b>return</b> <a class="ref" href="../config.h.html#git_default_config" title='git_default_config' data-ref="git_default_config">git_default_config</a>(<a class="local col1 ref" href="#1var" title='var' data-ref="1var">var</a>, <a class="local col2 ref" href="#2value" title='value' data-ref="2value">value</a>, <a class="local col3 ref" href="#3cb" title='cb' data-ref="3cb">cb</a>);</td></tr>
+<tr><th id="29">29</th><td>}</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><em>int</em> <dfn class="decl def" id="cmd_verify_tag" title='cmd_verify_tag' data-ref="cmd_verify_tag">cmd_verify_tag</dfn>(<em>int</em> <dfn class="local col5 decl" id="5argc" title='argc' data-type='int' data-ref="5argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col6 decl" id="6argv" title='argv' data-type='const char **' data-ref="6argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7prefix" title='prefix' data-type='const char *' data-ref="7prefix">prefix</dfn>)</td></tr>
+<tr><th id="32">32</th><td>{</td></tr>
+<tr><th id="33">33</th><td>	<em>int</em> <dfn class="local col8 decl" id="8i" title='i' data-type='int' data-ref="8i">i</dfn> = <var>1</var>, <dfn class="local col9 decl" id="9verbose" title='verbose' data-type='int' data-ref="9verbose">verbose</dfn> = <var>0</var>, <dfn class="local col0 decl" id="10had_error" title='had_error' data-type='int' data-ref="10had_error">had_error</dfn> = <var>0</var>;</td></tr>
+<tr><th id="34">34</th><td>	<em>unsigned</em> <dfn class="local col1 decl" id="11flags" title='flags' data-type='unsigned int' data-ref="11flags">flags</dfn> = <var>0</var>;</td></tr>
+<tr><th id="35">35</th><td>	<b>struct</b> <a class="type" href="../ref-filter.h.html#ref_format" title='ref_format' data-ref="ref_format">ref_format</a> <dfn class="local col2 decl" id="12format" title='format' data-type='struct ref_format' data-ref="12format">format</dfn> = <a class="macro" href="../ref-filter.h.html#88" title="{ ((void*)0), 0, -1 }" data-ref="_M/REF_FORMAT_INIT">REF_FORMAT_INIT</a>;</td></tr>
+<tr><th id="36">36</th><td>	<em>const</em> <b>struct</b> <a class="type" href="../parse-options.h.html#option" title='option' data-ref="option">option</a> <dfn class="local col3 decl" id="13verify_tag_options" title='verify_tag_options' data-type='const struct option [4]' data-ref="13verify_tag_options">verify_tag_options</dfn>[] = {</td></tr>
+<tr><th id="37">37</th><td>		<a class="macro" href="../parse-options.h.html#235" title="{ OPTION_COUNTUP, (&apos;v&apos;), (&quot;verbose&quot;), ((&amp;verbose)), ((void*)0), (((&quot;print tag contents&quot;))), PARSE_OPT_NOARG }" data-ref="_M/OPT__VERBOSE">OPT__VERBOSE</a>(&amp;<a class="local col9 ref" href="#9verbose" title='verbose' data-ref="9verbose">verbose</a>, <a class="macro" href="../gettext.h.html#89" title="(&quot;print tag contents&quot;)" data-ref="_M/N_">N_</a>(<q>"print tag contents"</q>)),</td></tr>
+<tr><th id="38">38</th><td>		<a class="macro" href="../parse-options.h.html#119" title="{ OPTION_BIT, (0), (&quot;raw&quot;), (&amp;flags), ((void*)0), ((&quot;print raw gpg status output&quot;)), PARSE_OPT_NOARG, ((void*)0), (2) }" data-ref="_M/OPT_BIT">OPT_BIT</a>(<var>0</var>, <q>"raw"</q>, &amp;<a class="local col1 ref" href="#11flags" title='flags' data-ref="11flags">flags</a>, <a class="macro" href="../gettext.h.html#89" title="(&quot;print raw gpg status output&quot;)" data-ref="_M/N_">N_</a>(<q>"print raw gpg status output"</q>), <a class="macro" href="../gpg-interface.h.html#5" title="2" data-ref="_M/GPG_VERIFY_RAW">GPG_VERIFY_RAW</a>),</td></tr>
+<tr><th id="39">39</th><td>		<a class="macro" href="../parse-options.h.html#135" title="{ OPTION_STRING, (0), (&quot;format&quot;), (&amp;format.format), ((&quot;format&quot;)), ((&quot;format to use for the output&quot;)) }" data-ref="_M/OPT_STRING">OPT_STRING</a>(<var>0</var>, <q>"format"</q>, &amp;<a class="local col2 ref" href="#12format" title='format' data-ref="12format">format</a>.<a class="ref" href="../ref-filter.h.html#ref_format::format" title='ref_format::format' data-ref="ref_format::format">format</a>, <a class="macro" href="../gettext.h.html#89" title="(&quot;format&quot;)" data-ref="_M/N_">N_</a>(<q>"format"</q>), <a class="macro" href="../gettext.h.html#89" title="(&quot;format to use for the output&quot;)" data-ref="_M/N_">N_</a>(<q>"format to use for the output"</q>)),</td></tr>
+<tr><th id="40">40</th><td>		<a class="macro" href="../parse-options.h.html#115" title="{ OPTION_END }" data-ref="_M/OPT_END">OPT_END</a>()</td></tr>
+<tr><th id="41">41</th><td>	};</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>	<a class="ref" href="../config.h.html#git_config" title='git_config' data-ref="git_config">git_config</a>(<a class="tu ref" href="#git_verify_tag_config" title='git_verify_tag_config' data-use='r' data-ref="git_verify_tag_config">git_verify_tag_config</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>	<a class="local col5 ref" href="#5argc" title='argc' data-ref="5argc">argc</a> = <a class="ref" href="../parse-options.h.html#parse_options" title='parse_options' data-ref="parse_options">parse_options</a>(<a class="local col5 ref" href="#5argc" title='argc' data-ref="5argc">argc</a>, <a class="local col6 ref" href="#6argv" title='argv' data-ref="6argv">argv</a>, <a class="local col7 ref" href="#7prefix" title='prefix' data-ref="7prefix">prefix</a>, <a class="local col3 ref" href="#13verify_tag_options" title='verify_tag_options' data-ref="13verify_tag_options">verify_tag_options</a>,</td></tr>
+<tr><th id="46">46</th><td>			     <a class="tu ref" href="#verify_tag_usage" title='verify_tag_usage' data-use='r' data-ref="verify_tag_usage">verify_tag_usage</a>, <a class="enum" href="../parse-options.h.html#parse_opt_flags::PARSE_OPT_KEEP_ARGV0" title='parse_opt_flags::PARSE_OPT_KEEP_ARGV0' data-ref="parse_opt_flags::PARSE_OPT_KEEP_ARGV0">PARSE_OPT_KEEP_ARGV0</a>);</td></tr>
+<tr><th id="47">47</th><td>	<b>if</b> (<a class="local col5 ref" href="#5argc" title='argc' data-ref="5argc">argc</a> &lt;= <a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>)</td></tr>
+<tr><th id="48">48</th><td>		<a class="ref" href="../parse-options.h.html#usage_with_options" title='usage_with_options' data-ref="usage_with_options">usage_with_options</a>(<a class="tu ref" href="#verify_tag_usage" title='verify_tag_usage' data-use='r' data-ref="verify_tag_usage">verify_tag_usage</a>, <a class="local col3 ref" href="#13verify_tag_options" title='verify_tag_options' data-ref="13verify_tag_options">verify_tag_options</a>);</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>	<b>if</b> (<a class="local col9 ref" href="#9verbose" title='verbose' data-ref="9verbose">verbose</a>)</td></tr>
+<tr><th id="51">51</th><td>		<a class="local col1 ref" href="#11flags" title='flags' data-ref="11flags">flags</a> |= <a class="macro" href="../gpg-interface.h.html#4" title="1" data-ref="_M/GPG_VERIFY_VERBOSE">GPG_VERIFY_VERBOSE</a>;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>	<b>if</b> (<a class="local col2 ref" href="#12format" title='format' data-ref="12format">format</a>.<a class="ref" href="../ref-filter.h.html#ref_format::format" title='ref_format::format' data-ref="ref_format::format">format</a>) {</td></tr>
+<tr><th id="54">54</th><td>		<b>if</b> (<a class="ref" href="../ref-filter.h.html#verify_ref_format" title='verify_ref_format' data-ref="verify_ref_format">verify_ref_format</a>(&amp;<a class="local col2 ref" href="#12format" title='format' data-ref="12format">format</a>))</td></tr>
+<tr><th id="55">55</th><td>			<a class="ref" href="../parse-options.h.html#usage_with_options" title='usage_with_options' data-ref="usage_with_options">usage_with_options</a>(<a class="tu ref" href="#verify_tag_usage" title='verify_tag_usage' data-use='r' data-ref="verify_tag_usage">verify_tag_usage</a>,</td></tr>
+<tr><th id="56">56</th><td>					   <a class="local col3 ref" href="#13verify_tag_options" title='verify_tag_options' data-ref="13verify_tag_options">verify_tag_options</a>);</td></tr>
+<tr><th id="57">57</th><td>		<a class="local col1 ref" href="#11flags" title='flags' data-ref="11flags">flags</a> |= <a class="macro" href="../gpg-interface.h.html#6" title="4" data-ref="_M/GPG_VERIFY_OMIT_STATUS">GPG_VERIFY_OMIT_STATUS</a>;</td></tr>
+<tr><th id="58">58</th><td>	}</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>	<b>while</b> (<a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a> &lt; <a class="local col5 ref" href="#5argc" title='argc' data-ref="5argc">argc</a>) {</td></tr>
+<tr><th id="61">61</th><td>		<b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="local col4 decl" id="14oid" title='oid' data-type='struct object_id' data-ref="14oid">oid</dfn>;</td></tr>
+<tr><th id="62">62</th><td>		<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="15name" title='name' data-type='const char *' data-ref="15name">name</dfn> = <a class="local col6 ref" href="#6argv" title='argv' data-ref="6argv">argv</a>[<a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>++];</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>		<b>if</b> (<a class="ref" href="../cache.h.html#get_oid" title='get_oid' data-ref="get_oid">get_oid</a>(<a class="local col5 ref" href="#15name" title='name' data-ref="15name">name</a>, &amp;<a class="local col4 ref" href="#14oid" title='oid' data-ref="14oid">oid</a>)) {</td></tr>
+<tr><th id="65">65</th><td>			<a class="local col0 ref" href="#10had_error" title='had_error' data-ref="10had_error">had_error</a> = !!<a class="macro" href="../git-compat-util.h.html#446" title="(error(&quot;tag &apos;%s&apos; not found.&quot;, name), const_error())" data-ref="_M/error">error</a>(<q>"tag '%s' not found."</q>, <a class="local col5 ref" href="#15name" title='name' data-ref="15name">name</a>);</td></tr>
+<tr><th id="66">66</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="67">67</th><td>		}</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td>		<b>if</b> (<a class="ref" href="../tag.h.html#gpg_verify_tag" title='gpg_verify_tag' data-ref="gpg_verify_tag">gpg_verify_tag</a>(&amp;<a class="local col4 ref" href="#14oid" title='oid' data-ref="14oid">oid</a>, <a class="local col5 ref" href="#15name" title='name' data-ref="15name">name</a>, <a class="local col1 ref" href="#11flags" title='flags' data-ref="11flags">flags</a>)) {</td></tr>
+<tr><th id="70">70</th><td>			<a class="local col0 ref" href="#10had_error" title='had_error' data-ref="10had_error">had_error</a> = <var>1</var>;</td></tr>
+<tr><th id="71">71</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="72">72</th><td>		}</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>		<b>if</b> (<a class="local col2 ref" href="#12format" title='format' data-ref="12format">format</a>.<a class="ref" href="../ref-filter.h.html#ref_format::format" title='ref_format::format' data-ref="ref_format::format">format</a>)</td></tr>
+<tr><th id="75">75</th><td>			<a class="ref" href="../ref-filter.h.html#pretty_print_ref" title='pretty_print_ref' data-ref="pretty_print_ref">pretty_print_ref</a>(<a class="local col5 ref" href="#15name" title='name' data-ref="15name">name</a>, <a class="local col4 ref" href="#14oid" title='oid' data-ref="14oid">oid</a>.<a class="ref" href="../cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>, &amp;<a class="local col2 ref" href="#12format" title='format' data-ref="12format">format</a>);</td></tr>
+<tr><th id="76">76</th><td>	}</td></tr>
+<tr><th id="77">77</th><td>	<b>return</b> <a class="local col0 ref" href="#10had_error" title='had_error' data-ref="10had_error">had_error</a>;</td></tr>
+<tr><th id="78">78</th><td>}</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

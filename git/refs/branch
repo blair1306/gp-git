@@ -1,0 +1,13 @@
+<def f='codebrowser/remote.h' l='208' ll='221'/>
+<size>64</size>
+<mbr r='branch::name' o='0' t='const char *'/>
+<mbr r='branch::refname' o='64' t='const char *'/>
+<mbr r='branch::remote_name' o='128' t='const char *'/>
+<mbr r='branch::pushremote_name' o='192' t='const char *'/>
+<mbr r='branch::merge_name' o='256' t='const char **'/>
+<mbr r='branch::merge' o='320' t='struct refspec **'/>
+<mbr r='branch::merge_nr' o='384' t='int'/>
+<mbr r='branch::merge_alloc' o='416' t='int'/>
+<mbr r='branch::push_tracking_ref' o='448' t='const char *'/>
+<def f='codebrowser/fast-import.c' l='246' ll='257'/>
+<size>128</size>

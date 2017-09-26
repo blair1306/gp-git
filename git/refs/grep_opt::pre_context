@@ -1,0 +1,14 @@
+<dec f='codebrowser/grep.h' l='165' type='unsigned int'/>
+<offset>6592</offset>
+<use f='codebrowser/builtin/grep.c' l='689' u='w' c='context_callback'/>
+<use f='codebrowser/builtin/grep.c' l='697' u='w' c='context_callback'/>
+<use f='codebrowser/builtin/grep.c' l='846' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='846' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='846' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='846' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='1044' u='r' c='cmd_grep'/>
+<use f='codebrowser/grep.c' l='1341' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1488' u='r' c='show_pre_context'/>
+<use f='codebrowser/grep.c' l='1489' u='r' c='show_pre_context'/>
+<use f='codebrowser/grep.c' l='1656' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1776' u='r' c='grep_source_1'/>

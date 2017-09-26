@@ -1,0 +1,4 @@
+<dec f='codebrowser/userdiff.h' l='16' type='const char *'/>
+<offset>320</offset>
+<use f='codebrowser/diff.c' l='1157' u='r' c='userdiff_word_regex'/>
+<use f='codebrowser/userdiff.c' l='254' u='a' c='userdiff_config'/>

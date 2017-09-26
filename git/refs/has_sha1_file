@@ -1,0 +1,16 @@
+<def f='codebrowser/cache.h' l='1232' ll='1235' type='int has_sha1_file(const unsigned char * sha1)'/>
+<use f='codebrowser/apply.c' l='3169' u='c' c='apply_binary'/>
+<use f='codebrowser/builtin/reflog.c' l='88' u='c' c='tree_is_complete'/>
+<use f='codebrowser/builtin/show-ref.c' l='25' u='c' c='show_one'/>
+<use f='codebrowser/bulk-checkin.c' l='67' u='c' c='already_written'/>
+<use f='codebrowser/cache-tree.c' l='227' u='c' c='cache_tree_fully_valid'/>
+<use f='codebrowser/cache-tree.c' l='255' u='c' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='358' u='c' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='405' u='c' c='update_one'/>
+<use f='codebrowser/http-walker.c' l='131' u='c' c='fill_active_slot'/>
+<use f='codebrowser/http-walker.c' l='489' u='c' c='fetch_object'/>
+<use f='codebrowser/refs.c' l='188' u='c' c='ref_resolves_to_object'/>
+<use f='codebrowser/send-pack.c' l='42' u='c' c='feed_object'/>
+<use f='codebrowser/sha1_file.c' l='3062' u='c' c='pretend_sha1_file'/>
+<use f='codebrowser/sha1_file.c' l='3472' u='c' c='has_object_file'/>
+<use f='codebrowser/sha1_name.c' l='505' u='c' c='find_unique_abbrev_r'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/revision.h' l='91' type='unsigned int'/>
+<offset>931</offset>
+<use f='codebrowser/builtin/rev-list.c' l='372' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/revision.c' l='585' u='r' c='limiting_can_increase_treesame'/>
+<use f='codebrowser/revision.c' l='600' u='r' c='try_to_simplify_commit'/>
+<use f='codebrowser/revision.c' l='1778' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2344' u='w' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2710' u='r' c='simplify_merges'/>
+<use f='codebrowser/revision.c' l='3000' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='3086' u='r' c='simplify_commit'/>

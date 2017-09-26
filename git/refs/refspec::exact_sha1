@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='74' type='unsigned int'/>
+<offset>3</offset>
+<use f='codebrowser/remote.c' l='544' u='w' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='1887' u='r' c='get_fetch_map'/>

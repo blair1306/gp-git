@@ -1,0 +1,11 @@
+sane_case|sane_case
+sane_iscase|sane_iscase
+sane_qsort|sane_qsort
+safe_create_dir|safe_create_dir
+safe_create_reflog|safe_create_reflog
+sane_execvp|sane_execvp
+sanitize_stdfds|sanitize_stdfds
+safe_create_leading_directories|safe_create_leading_directories
+safe_create_leading_directories_const|safe_create_leading_directories_const
+save_or_free_index_entry|save_or_free_index_entry
+same_encoding|same_encoding

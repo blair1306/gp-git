@@ -1,0 +1,6 @@
+<dec f='codebrowser/http.h' l='80' type='size_t fwrite_null(char * ptr, size_t eltsize, size_t nmemb, void * strbuf)'/>
+<use f='codebrowser/http-push.c' l='189' c='curl_setup_http_get'/>
+<use f='codebrowser/http-push.c' l='404' u='r' c='start_put'/>
+<use f='codebrowser/http-push.c' l='1382' u='r' c='update_remote'/>
+<use f='codebrowser/http-push.c' l='1495' u='r' c='update_remote_info_refs'/>
+<def f='codebrowser/http.c' l='188' ll='191' type='size_t fwrite_null(char * ptr, size_t eltsize, size_t nmemb, void * strbuf)'/>

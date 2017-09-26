@@ -1,0 +1,4 @@
+<dec f='codebrowser/notes-utils.h' l='40' type='int parse_notes_merge_strategy(const char * v, enum notes_merge_strategy * s)'/>
+<use f='codebrowser/builtin/notes.c' l='756' u='c' c='git_config_get_notes_strategy'/>
+<use f='codebrowser/builtin/notes.c' l='824' u='c' c='merge'/>
+<def f='codebrowser/notes-utils.c' l='58' ll='74' type='int parse_notes_merge_strategy(const char * v, enum notes_merge_strategy * s)'/>

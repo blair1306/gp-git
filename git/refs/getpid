@@ -1,0 +1,21 @@
+<dec f='include/unistd.h' l='631' type='__pid_t getpid()'/>
+<doc f='include/unistd.h' l='630'>/* Get the process ID of the calling process.  */</doc>
+<use f='codebrowser/apply.c' l='4389' u='c' c='create_one_file'/>
+<use f='codebrowser/builtin/commit.c' l='481' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/gc.c' l='291' u='c' c='lock_repo_for_gc'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1754' u='c' c='unpack'/>
+<use f='codebrowser/builtin/repack.c' l='223' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/worktree.c' l='151' u='c' c='remove_junk'/>
+<use f='codebrowser/builtin/worktree.c' l='231' u='c' c='add_worktree'/>
+<use f='codebrowser/daemon.c' l='87' u='c' c='logreport'/>
+<use f='codebrowser/daemon.c' l='1394' u='c' c='cmd_main'/>
+<use f='codebrowser/fast-import.c' l='413' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='428' u='c' c='write_crash_report'/>
+<use f='codebrowser/fetch-pack.c' l='850' u='c' c='get_pack'/>
+<use f='codebrowser/lockfile.c' l='114' u='c' c='lock_file_timeout'/>
+<use f='codebrowser/tempfile.c' l='63' u='c' c='remove_tempfiles'/>
+<use f='codebrowser/tempfile.c' l='133' u='c' c='create_tempfile'/>
+<use f='codebrowser/tempfile.c' l='149' u='c' c='register_tempfile'/>
+<use f='codebrowser/tempfile.c' l='164' u='c' c='mks_tempfile_sm'/>
+<use f='codebrowser/tempfile.c' l='186' u='c' c='mks_tempfile_tsm'/>
+<use f='codebrowser/wrapper.c' l='505' u='c' c='git_mkstemps_mode'/>

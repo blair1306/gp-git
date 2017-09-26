@@ -1,0 +1,4 @@
+<dec f='codebrowser/bundle.h' l='25' type='int unbundle(struct bundle_header * header, int bundle_fd, int flags)'/>
+<use f='codebrowser/builtin/bundle.c' l='63' u='c' c='cmd_bundle'/>
+<def f='codebrowser/bundle.c' l='478' ll='496' type='int unbundle(struct bundle_header * header, int bundle_fd, int flags)'/>
+<use f='codebrowser/transport.c' l='102' u='c' c='fetch_refs_from_bundle'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='104' type='int git_config_include(const char * name, const char * value, void * data)'/>
+<use f='codebrowser/config.c' l='162' u='r' c='handle_path_include'/>
+<def f='codebrowser/config.c' l='277' ll='301' type='int git_config_include(const char * var, const char * value, void * data)'/>
+<use f='codebrowser/config.c' l='1592' u='r' c='config_with_options'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/convert.c' l='30' type='4'/>
+<use f='codebrowser/convert.c' l='178' c='output_eol'/>
+<use f='codebrowser/convert.c' l='1055' u='r' c='convert_attrs'/>
+<use f='codebrowser/convert.c' l='1064' u='r' c='convert_attrs'/>
+<use f='codebrowser/convert.c' l='1106' c='get_convert_attr_ascii'/>

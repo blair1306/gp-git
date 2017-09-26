@@ -1,0 +1,8 @@
+<dec f='codebrowser/revision.h' l='35' type='unsigned int'/>
+<offset>32</offset>
+<use f='codebrowser/revision.c' l='1108' u='r' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1108' u='r' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1108' u='w' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1108' u='w' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1108' u='r' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1108' u='r' c='add_rev_cmdline'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/csum-file.h' l='38' type='void sha1flush(struct sha1file * f)'/>
+<use f='codebrowser/builtin/index-pack.c' l='1337' u='c' c='append_obj_to_pack'/>
+<def f='codebrowser/csum-file.c' l='45' ll='54' type='void sha1flush(struct sha1file * f)'/>
+<use f='codebrowser/csum-file.c' l='60' u='c' c='sha1close'/>
+<use f='codebrowser/csum-file.c' l='158' u='c' c='sha1file_checkpoint'/>
+<use f='codebrowser/fast-import.c' l='1362' u='c' c='gfi_unpack_entry'/>

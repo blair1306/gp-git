@@ -1,0 +1,25 @@
+<dec f='codebrowser/cache.h' l='346' type='struct untracked_cache *'/>
+<offset>1472</offset>
+<use f='codebrowser/dir.c' l='1985' u='w' c='new_untracked_cache'/>
+<use f='codebrowser/dir.c' l='1991' u='r' c='add_untracked_cache'/>
+<use f='codebrowser/dir.c' l='1994' u='r' c='add_untracked_cache'/>
+<use f='codebrowser/dir.c' l='1995' u='r' c='add_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2003' u='r' c='remove_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2004' u='r' c='remove_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2005' u='w' c='remove_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2148' u='r' c='read_directory'/>
+<use f='codebrowser/dir.c' l='2153' u='r' c='read_directory'/>
+<use f='codebrowser/dir.c' l='2821' u='r' c='untracked_cache_invalidate_path'/>
+<use f='codebrowser/dir.c' l='2821' u='r' c='untracked_cache_invalidate_path'/>
+<use f='codebrowser/dir.c' l='2823' u='r' c='untracked_cache_invalidate_path'/>
+<use f='codebrowser/dir.c' l='2823' u='r' c='untracked_cache_invalidate_path'/>
+<use f='codebrowser/read-cache.c' l='1550' u='w' c='read_index_extension'/>
+<use f='codebrowser/read-cache.c' l='1900' u='r' c='discard_index'/>
+<use f='codebrowser/read-cache.c' l='1901' u='w' c='discard_index'/>
+<use f='codebrowser/read-cache.c' l='2292' u='r' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2295' u='r' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2648' u='w' c='move_index_extensions'/>
+<use f='codebrowser/read-cache.c' l='2648' u='r' c='move_index_extensions'/>
+<use f='codebrowser/read-cache.c' l='2649' u='w' c='move_index_extensions'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='52' u='r' c='cmd_main'/>
+<use f='codebrowser/wt-status.c' l='666' u='r' c='wt_status_collect_untracked'/>

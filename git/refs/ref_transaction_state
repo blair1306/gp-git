@@ -1,0 +1,20 @@
+<def f='codebrowser/refs/refs-internal.h' l='222' ll='226'/>
+<doc f='codebrowser/refs/refs-internal.h' l='203'>/*
+ * Transaction states.
+ *
+ * OPEN:   The transaction is initialized and new updates can still be
+ *         added to it. An OPEN transaction can be prepared,
+ *         committed, freed, or aborted (freeing and aborting an open
+ *         transaction are equivalent).
+ *
+ * PREPARED: ref_transaction_prepare(), which locks all of the
+ *         references involved in the update and checks that the
+ *         update has no errors, has been called successfully for the
+ *         transaction. A PREPARED transaction can be committed or
+ *         aborted.
+ *
+ * CLOSED: The transaction is no longer active. A transaction becomes
+ *         CLOSED if there is a failure while building the transaction
+ *         or if a transaction is committed or aborted. A CLOSED
+ *         transaction can only be freed.
+ */</doc>

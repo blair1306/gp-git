@@ -1,0 +1,12 @@
+atof|atof
+atoi|atoi
+atol|atol
+atoll|atoll
+attr_check_alloc|attr_check_alloc
+attr_check_append|attr_check_append
+attr_check_clear|attr_check_clear
+attr_check_dup|attr_check_dup
+attr_check_free|attr_check_free
+attr_check_initl|attr_check_initl
+attr_check_reset|attr_check_reset
+attr_start|attr_start

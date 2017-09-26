@@ -1,0 +1,7 @@
+<dec f='include/netinet/in.h' l='259' type='struct in6_addr'/>
+<offset>64</offset>
+<doc f='include/netinet/in.h' l='259'>/* IPv6 address */</doc>
+<use f='codebrowser/daemon.c' l='758' u='a' c='addrcmp'/>
+<use f='codebrowser/daemon.c' l='759' u='a' c='addrcmp'/>
+<use f='codebrowser/daemon.c' l='859' u='a' c='handle'/>
+<use f='codebrowser/daemon.c' l='913' u='a' c='ip2str'/>

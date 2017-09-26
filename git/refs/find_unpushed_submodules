@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule.h' l='107' type='int find_unpushed_submodules(struct oid_array * commits, const char * remotes_name, struct string_list * needs_pushing)'/>
+<def f='codebrowser/submodule.c' l='927' ll='954' type='int find_unpushed_submodules(struct oid_array * commits, const char * remotes_name, struct string_list * needs_pushing)'/>
+<use f='codebrowser/submodule.c' l='1040' u='c' c='push_unpushed_submodules'/>
+<use f='codebrowser/transport.c' l='1058' u='c' c='transport_push'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/color.c' l='33' type='0'/>
+<use f='codebrowser/color.c' l='177' c='color_output'/>
+<use f='codebrowser/color.c' l='208' u='r' c='color_parse_mem'/>
+<use f='codebrowser/color.c' l='208' u='r' c='color_parse_mem'/>
+<use f='codebrowser/color.c' l='209' u='r' c='color_parse_mem'/>
+<use f='codebrowser/color.c' l='209' u='r' c='color_parse_mem'/>
+<use f='codebrowser/color.c' l='229' u='r' c='color_parse_mem'/>
+<use f='codebrowser/color.c' l='229' u='r' c='color_parse_mem'/>
+<use f='codebrowser/color.c' l='244' u='r' c='color_parse_mem'/>
+<use f='codebrowser/color.c' l='248' u='r' c='color_parse_mem'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='142' type='int cmd_check_attr(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/check-attr.c' l='105' ll='189' type='int cmd_check_attr(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='374'/>
+<use f='codebrowser/git.c' l='374'/>
+<use f='codebrowser/git.c' l='374'/>
+<use f='codebrowser/git.c' l='374'/>

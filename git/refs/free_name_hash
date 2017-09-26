@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='355' type='void free_name_hash(struct index_state * istate)'/>
+<def f='codebrowser/name-hash.c' l='719' ll='727' type='void free_name_hash(struct index_state * istate)'/>
+<use f='codebrowser/read-cache.c' l='1894' u='c' c='discard_index'/>

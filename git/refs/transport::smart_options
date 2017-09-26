@@ -1,0 +1,31 @@
+<dec f='codebrowser/transport.h' l='129' type='struct git_transport_options *'/>
+<offset>960</offset>
+<doc f='codebrowser/transport.h' l='124'>/*
+	 * If transport is at least potentially smart, this points to
+	 * git_transport_options structure to use in case transport
+	 * actually turns out to be smart.
+	 */</doc>
+<use f='codebrowser/builtin/clone.c' l='1106' u='r' c='cmd_clone'/>
+<use f='codebrowser/builtin/clone.c' l='1107' u='r' c='cmd_clone'/>
+<use f='codebrowser/builtin/push.c' l='328' u='r' c='push_with_options'/>
+<use f='codebrowser/builtin/push.c' l='331' u='r' c='push_with_options'/>
+<use f='codebrowser/connected.c' l='40' u='r' c='check_connected'/>
+<use f='codebrowser/connected.c' l='41' u='r' c='check_connected'/>
+<use f='codebrowser/transport-helper.c' l='1104' u='w' c='transport_helper_init'/>
+<use f='codebrowser/transport.c' l='617' u='r' c='transport_take_over'/>
+<use f='codebrowser/transport.c' l='622' u='r' c='transport_take_over'/>
+<use f='codebrowser/transport.c' l='635' u='w' c='transport_take_over'/>
+<use f='codebrowser/transport.c' l='796' u='w' c='transport_get'/>
+<use f='codebrowser/transport.c' l='816' u='w' c='transport_get'/>
+<use f='codebrowser/transport.c' l='827' u='r' c='transport_get'/>
+<use f='codebrowser/transport.c' l='828' u='r' c='transport_get'/>
+<use f='codebrowser/transport.c' l='829' u='r' c='transport_get'/>
+<use f='codebrowser/transport.c' l='831' u='r' c='transport_get'/>
+<use f='codebrowser/transport.c' l='832' u='r' c='transport_get'/>
+<use f='codebrowser/transport.c' l='834' u='r' c='transport_get'/>
+<use f='codebrowser/transport.c' l='845' u='r' c='transport_set_option'/>
+<use f='codebrowser/transport.c' l='846' u='r' c='transport_set_option'/>
+<use f='codebrowser/transport.c' l='1009' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1010' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1011' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1012' u='r' c='transport_push'/>

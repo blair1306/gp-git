@@ -1,0 +1,5 @@
+<dec f='codebrowser/unpack-trees.h' l='20' type='5'/>
+<use f='codebrowser/unpack-trees.c' l='162' u='w' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='2115' u='r' c='bind_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2115' u='r' c='bind_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2115' u='r' c='bind_merge'/>

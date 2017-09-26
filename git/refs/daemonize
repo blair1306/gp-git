@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='572' type='int daemonize()'/>
+<use f='codebrowser/builtin/gc.c' l='427' u='c' c='cmd_gc'/>
+<use f='codebrowser/daemon.c' l='1389' u='c' c='cmd_main'/>
+<def f='codebrowser/setup.c' l='1210' ll='1232' type='int daemonize()'/>

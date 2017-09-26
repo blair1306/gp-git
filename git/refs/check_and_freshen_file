@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1253' type='int check_and_freshen_file(const char * fn, int freshen)'/>
+<doc f='codebrowser/cache.h' l='1252'>/* Helper to check and &quot;touch&quot; a file */</doc>
+<use f='codebrowser/read-cache.c' l='1828' u='c' c='freshen_shared_index'/>
+<def f='codebrowser/sha1_file.c' l='666' ll='673' type='int check_and_freshen_file(const char * fn, int freshen)'/>
+<use f='codebrowser/sha1_file.c' l='677' u='c' c='check_and_freshen_local'/>
+<use f='codebrowser/sha1_file.c' l='686' u='c' c='check_and_freshen_nonlocal'/>
+<doc f='codebrowser/sha1_file.c' l='659'>/*
+ * All of the check_and_freshen functions return 1 if the file exists and was
+ * freshened (if freshening was requested), 0 otherwise. If they return
+ * 0, you should not assume that it is safe to skip a write of the object (it
+ * either does not exist on disk, or has a stale mtime and may be subject to
+ * pruning).
+ */</doc>

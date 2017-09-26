@@ -1,0 +1,12 @@
+<dec f='codebrowser/color.h' l='60' type='const char *[]'/>
+<doc f='codebrowser/color.h' l='59'>/* A default list of colors to use for commit graphs and show-branch output */</doc>
+<use f='codebrowser/builtin/show-branch.c' l='34' u='r' c='get_color_code'/>
+<def f='codebrowser/color.c' l='11' ll='25' type='const char *[13]'/>
+<use f='codebrowser/color.c' l='28' u='r'/>
+<use f='codebrowser/color.c' l='28' u='r'/>
+<use f='codebrowser/color.c' l='28' u='r'/>
+<use f='codebrowser/color.c' l='28' u='a'/>
+<doc f='codebrowser/color.c' l='8'>/*
+ * The list of available column colors.
+ */</doc>
+<use f='codebrowser/graph.c' l='267' u='r' c='graph_init'/>

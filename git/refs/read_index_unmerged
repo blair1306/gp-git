@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='602' type='int read_index_unmerged(struct index_state * )'/>
+<use f='codebrowser/builtin/am.c' l='2025' macro='1' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1176' macro='1' u='c'/>
+<use f='codebrowser/builtin/pull.c' l='830' macro='1' u='c'/>
+<use f='codebrowser/builtin/read-tree.c' l='185' macro='1' u='c'/>
+<use f='codebrowser/builtin/reset.c' l='72' macro='1' u='c'/>
+<def f='codebrowser/read-cache.c' l='2526' ll='2552' type='int read_index_unmerged(struct index_state * istate)'/>
+<doc f='codebrowser/read-cache.c' l='2519'>/*
+ * Read the index file that is potentially unmerged into given
+ * index_state, dropping any unmerged entries.  Returns true if
+ * the index is unmerged.  Callers who want to refuse to work
+ * from an unmerged state can call this and check its return value,
+ * instead of calling read_cache().
+ */</doc>
+<use f='codebrowser/sequencer.c' l='354' macro='1' u='c'/>

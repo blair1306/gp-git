@@ -1,0 +1,4 @@
+<dec f='codebrowser/http.h' l='209' type='int finish_http_pack_request(struct http_pack_request * preq)'/>
+<use f='codebrowser/http-push.c' l='588' u='c' c='finish_request'/>
+<use f='codebrowser/http-walker.c' l='457' u='c' c='http_fetch_pack'/>
+<def f='codebrowser/http.c' l='2001' ll='2053' type='int finish_http_pack_request(struct http_pack_request * preq)'/>

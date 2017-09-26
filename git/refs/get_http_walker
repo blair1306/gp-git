@@ -1,0 +1,4 @@
+<dec f='codebrowser/walker.h' l='38' type='struct walker * get_http_walker(const char * url)'/>
+<use f='codebrowser/http-fetch.c' l='70' u='c' c='cmd_main'/>
+<def f='codebrowser/http-walker.c' l='598' ll='626' type='struct walker * get_http_walker(const char * url)'/>
+<use f='codebrowser/remote-curl.c' l='776' u='c' c='fetch_dumb'/>

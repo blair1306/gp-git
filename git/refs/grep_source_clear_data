@@ -1,0 +1,5 @@
+<dec f='codebrowser/grep.h' l='209' type='void grep_source_clear_data(struct grep_source * gs)'/>
+<use f='codebrowser/builtin/grep.c' l='184' u='c' c='run'/>
+<use f='codebrowser/grep.c' l='1624' u='c' c='fill_textconv_grep'/>
+<use f='codebrowser/grep.c' l='1944' u='c' c='grep_source_clear'/>
+<def f='codebrowser/grep.c' l='1947' ll='1959' type='void grep_source_clear_data(struct grep_source * gs)'/>

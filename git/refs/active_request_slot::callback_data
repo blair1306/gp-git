@@ -1,0 +1,12 @@
+<dec f='codebrowser/http.h' l='67' type='void *'/>
+<offset>320</offset>
+<use f='codebrowser/http-push.c' l='262' u='w' c='start_fetch_loose'/>
+<use f='codebrowser/http-push.c' l='285' u='w' c='start_mkcol'/>
+<use f='codebrowser/http-push.c' l='336' u='w' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='402' u='w' c='start_put'/>
+<use f='codebrowser/http-push.c' l='422' u='w' c='start_move'/>
+<use f='codebrowser/http-walker.c' l='67' u='w' c='start_object_request'/>
+<use f='codebrowser/http-walker.c' l='374' u='w' c='fetch_alternates'/>
+<use f='codebrowser/http.c' l='224' u='r' c='finish_active_slot'/>
+<use f='codebrowser/http.c' l='1099' u='w' c='get_active_slot'/>
+<use f='codebrowser/http.c' l='2334' u='w' c='release_http_object_request'/>

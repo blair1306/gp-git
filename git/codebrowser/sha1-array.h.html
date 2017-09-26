@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sha1-array.h source code [codebrowser/sha1-array.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="oid_array "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/sha1-array.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='sha1-array.h.html'>sha1-array.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/SHA1_ARRAY_H">SHA1_ARRAY_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/SHA1_ARRAY_H" data-ref="_M/SHA1_ARRAY_H">SHA1_ARRAY_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="oid_array" title='oid_array' data-ref="oid_array">oid_array</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id" id="object_id"><a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a></a> *<dfn class="decl" id="oid_array::oid" title='oid_array::oid' data-ref="oid_array::oid">oid</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<em>int</em> <dfn class="decl" id="oid_array::nr" title='oid_array::nr' data-ref="oid_array::nr">nr</dfn>;</td></tr>
+<tr><th id="7">7</th><td>	<em>int</em> <dfn class="decl" id="oid_array::alloc" title='oid_array::alloc' data-ref="oid_array::alloc">alloc</dfn>;</td></tr>
+<tr><th id="8">8</th><td>	<em>int</em> <dfn class="decl" id="oid_array::sorted" title='oid_array::sorted' data-ref="oid_array::sorted">sorted</dfn>;</td></tr>
+<tr><th id="9">9</th><td>};</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><u>#define <dfn class="macro" id="_M/OID_ARRAY_INIT" data-ref="_M/OID_ARRAY_INIT">OID_ARRAY_INIT</dfn> { NULL, 0, 0, 0 }</u></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><em>void</em> <dfn class="decl" id="oid_array_append" title='oid_array_append' data-ref="oid_array_append">oid_array_append</dfn>(<b>struct</b> <a class="type" href="#oid_array" title='oid_array' data-ref="oid_array">oid_array</a> *<dfn class="local col6 decl" id="8936array" title='array' data-type='struct oid_array *' data-ref="8936array">array</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col7 decl" id="8937oid" title='oid' data-type='const struct object_id *' data-ref="8937oid">oid</dfn>);</td></tr>
+<tr><th id="14">14</th><td><em>int</em> <dfn class="decl" id="oid_array_lookup" title='oid_array_lookup' data-ref="oid_array_lookup">oid_array_lookup</dfn>(<b>struct</b> <a class="type" href="#oid_array" title='oid_array' data-ref="oid_array">oid_array</a> *<dfn class="local col8 decl" id="8938array" title='array' data-type='struct oid_array *' data-ref="8938array">array</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col9 decl" id="8939oid" title='oid' data-type='const struct object_id *' data-ref="8939oid">oid</dfn>);</td></tr>
+<tr><th id="15">15</th><td><em>void</em> <dfn class="decl" id="oid_array_clear" title='oid_array_clear' data-ref="oid_array_clear">oid_array_clear</dfn>(<b>struct</b> <a class="type" href="#oid_array" title='oid_array' data-ref="oid_array">oid_array</a> *<dfn class="local col0 decl" id="8940array" title='array' data-type='struct oid_array *' data-ref="8940array">array</dfn>);</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="for_each_oid_fn" title='for_each_oid_fn' data-type='int (*)(const struct object_id *, void *)' data-ref="for_each_oid_fn">for_each_oid_fn</dfn>)(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col1 decl" id="8941oid" title='oid' data-type='const struct object_id *' data-ref="8941oid">oid</dfn>,</td></tr>
+<tr><th id="18">18</th><td>			       <em>void</em> *<dfn class="local col2 decl" id="8942data" title='data' data-type='void *' data-ref="8942data">data</dfn>);</td></tr>
+<tr><th id="19">19</th><td><em>int</em> <dfn class="decl" id="oid_array_for_each_unique" title='oid_array_for_each_unique' data-ref="oid_array_for_each_unique">oid_array_for_each_unique</dfn>(<b>struct</b> <a class="type" href="#oid_array" title='oid_array' data-ref="oid_array">oid_array</a> *<dfn class="local col3 decl" id="8943array" title='array' data-type='struct oid_array *' data-ref="8943array">array</dfn>,</td></tr>
+<tr><th id="20">20</th><td>			       <a class="typedef" href="#for_each_oid_fn" title='for_each_oid_fn' data-type='int (*)(const struct object_id *, void *)' data-ref="for_each_oid_fn">for_each_oid_fn</a> <dfn class="local col4 decl" id="8944fn" title='fn' data-type='for_each_oid_fn' data-ref="8944fn">fn</dfn>,</td></tr>
+<tr><th id="21">21</th><td>			       <em>void</em> *<dfn class="local col5 decl" id="8945data" title='data' data-type='void *' data-ref="8945data">data</dfn>);</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="1">endif</span> /* SHA1_ARRAY_H */</u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='abspath.c.html'>codebrowser/abspath.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

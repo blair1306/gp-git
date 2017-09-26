@@ -1,0 +1,5 @@
+<dec f='codebrowser/unpack-trees.h' l='81' type='int threeway_merge(const struct cache_entry *const * stages, struct unpack_trees_options * o)'/>
+<use f='codebrowser/builtin/merge.c' l='620' u='r' c='read_tree_trivial'/>
+<use f='codebrowser/builtin/read-tree.c' l='229' u='r' c='cmd_read_tree'/>
+<use f='codebrowser/merge-recursive.c' l='269' u='r' c='git_merge_trees'/>
+<def f='codebrowser/unpack-trees.c' l='1867' ll='2029' type='int threeway_merge(const struct cache_entry *const * stages, struct unpack_trees_options * o)'/>

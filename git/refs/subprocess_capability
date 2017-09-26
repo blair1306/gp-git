@@ -1,0 +1,4 @@
+<def f='codebrowser/sub-process.h' l='32' ll='40'/>
+<size>16</size>
+<mbr r='subprocess_capability::name' o='0' t='const char *'/>
+<mbr r='subprocess_capability::flag' o='64' t='unsigned int'/>

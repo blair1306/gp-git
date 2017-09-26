@@ -1,0 +1,6 @@
+<dec f='codebrowser/commit.h' l='185' type='const char * format_subject(struct strbuf * sb, const char * msg, const char * line_separator)'/>
+<use f='codebrowser/builtin/shortlog.c' l='97' u='c' c='insert_one_record'/>
+<def f='codebrowser/pretty.c' l='850' ll='872' type='const char * format_subject(struct strbuf * sb, const char * msg, const char * line_separator)'/>
+<use f='codebrowser/pretty.c' l='892' u='c' c='parse_commit_message'/>
+<use f='codebrowser/pretty.c' l='1285' u='c' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1594' u='c' c='pp_title_line'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='53' type='void git_inflate_init(git_zstream * )'/>
+<use f='codebrowser/apply.c' l='1877' u='c' c='inflate_it'/>
+<use f='codebrowser/builtin/index-pack.c' l='461' u='c' c='unpack_entry_data'/>
+<use f='codebrowser/builtin/index-pack.c' l='567' u='c' c='unpack_data'/>
+<use f='codebrowser/builtin/pack-objects.c' l='206' u='c' c='check_pack_inflate'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='107' u='c' c='get_data'/>
+<use f='codebrowser/http.c' l='2196' u='c' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2231' u='c' c='new_http_object_request'/>
+<use f='codebrowser/sha1_file.c' l='1834' u='c' c='unpack_sha1_short_header'/>
+<use f='codebrowser/sha1_file.c' l='2022' u='c' c='get_size_from_delta'/>
+<use f='codebrowser/sha1_file.c' l='2472' u='c' c='unpack_compressed_entry'/>
+<use f='codebrowser/streaming.c' l='373' u='c' c='read_istream_pack_non_delta'/>
+<def f='codebrowser/zlib.c' l='67' ll='78' type='void git_inflate_init(git_zstream * strm)'/>

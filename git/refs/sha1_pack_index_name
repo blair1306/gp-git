@@ -1,0 +1,14 @@
+<dec f='codebrowser/cache.h' l='917' type='char * sha1_pack_index_name(const unsigned char * sha1)'/>
+<doc f='codebrowser/cache.h' l='912'>/*
+ * Return the name of the (local) pack index file with the specified
+ * sha1 in its name.  The return value is a pointer to memory that is
+ * overwritten each time this function is called.
+ */</doc>
+<use f='codebrowser/builtin/pack-redundant.c' l='687' u='c' c='cmd_pack_redundant'/>
+<use f='codebrowser/http.c' l='1894' u='c' c='fetch_pack_index'/>
+<use f='codebrowser/http.c' l='1914' u='c' c='fetch_and_setup_pack_index'/>
+<use f='codebrowser/http.c' l='1935' u='c' c='fetch_and_setup_pack_index'/>
+<use f='codebrowser/http.c' l='2042' u='c' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2045' u='c' c='finish_http_pack_request'/>
+<def f='codebrowser/sha1_file.c' l='297' ll='301' type='char * sha1_pack_index_name(const unsigned char * sha1)'/>
+<use f='codebrowser/sha1_file.c' l='3451' u='c' c='has_pack_index'/>

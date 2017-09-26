@@ -1,0 +1,7 @@
+<dec f='codebrowser/bundle.h' l='16' type='struct ref_list'/>
+<offset>128</offset>
+<use f='codebrowser/bundle.c' l='70' u='a' c='parse_bundle_header'/>
+<use f='codebrowser/bundle.c' l='185' u='a' c='verify_bundle'/>
+<use f='codebrowser/bundle.c' l='207' u='a' c='list_bundle_refs'/>
+<use f='codebrowser/transport.c' l='88' u='m' c='get_refs_from_bundle'/>
+<use f='codebrowser/transport.c' l='89' u='m' c='get_refs_from_bundle'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/submodule.h' l='86' type='const struct submodule * submodule_from_ce(const struct cache_entry * ce)'/>
+<doc f='codebrowser/submodule.h' l='82'>/*
+ * Returns the submodule struct if the given ce entry is a submodule
+ * and it should be updated. Returns NULL otherwise.
+ */</doc>
+<use f='codebrowser/entry.c' l='330' u='c' c='write_entry'/>
+<use f='codebrowser/entry.c' l='397' u='c' c='checkout_entry'/>
+<def f='codebrowser/submodule.c' l='716' ll='725' type='const struct submodule * submodule_from_ce(const struct cache_entry * ce)'/>
+<use f='codebrowser/unpack-trees.c' l='257' u='c' c='check_submodule_move_head'/>
+<use f='codebrowser/unpack-trees.c' l='309' u='c' c='unlink_entry'/>
+<use f='codebrowser/unpack-trees.c' l='1471' u='c' c='verify_uptodate_1'/>
+<use f='codebrowser/unpack-trees.c' l='1533' u='c' c='verify_clean_submodule'/>
+<use f='codebrowser/unpack-trees.c' l='1704' u='c' c='verify_absent_1'/>
+<use f='codebrowser/unpack-trees.c' l='1719' u='c' c='verify_absent_1'/>
+<use f='codebrowser/unpack-trees.c' l='1779' u='c' c='merged_entry'/>
+<use f='codebrowser/unpack-trees.c' l='1808' u='c' c='merged_entry'/>

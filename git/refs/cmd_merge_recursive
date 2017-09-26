@@ -1,0 +1,18 @@
+<dec f='codebrowser/builtin.h' l='189' type='int cmd_merge_recursive(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/merge-recursive.c' l='22' ll='83' type='int cmd_merge_recursive(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='425'/>
+<use f='codebrowser/git.c' l='425'/>
+<use f='codebrowser/git.c' l='426'/>
+<use f='codebrowser/git.c' l='426'/>
+<use f='codebrowser/git.c' l='427'/>
+<use f='codebrowser/git.c' l='427'/>
+<use f='codebrowser/git.c' l='428'/>
+<use f='codebrowser/git.c' l='428'/>
+<use f='codebrowser/git.c' l='425'/>
+<use f='codebrowser/git.c' l='425'/>
+<use f='codebrowser/git.c' l='426'/>
+<use f='codebrowser/git.c' l='426'/>
+<use f='codebrowser/git.c' l='427'/>
+<use f='codebrowser/git.c' l='427'/>
+<use f='codebrowser/git.c' l='428'/>
+<use f='codebrowser/git.c' l='428'/>

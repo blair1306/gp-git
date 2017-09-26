@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='887' type='void check_repository_format()'/>
+<doc f='codebrowser/cache.h' l='881'>/*
+ * Check the repository format version in the path found in get_git_dir(),
+ * and die if it is a version we don&apos;t understand. Generally one would
+ * set_git_dir() before calling this, and use it only for &quot;are we in a valid
+ * repo?&quot;.
+ */</doc>
+<use f='codebrowser/builtin/init-db.c' l='372' u='c' c='init_db'/>
+<use f='codebrowser/path.c' l='829' u='c' c='enter_repo'/>
+<def f='codebrowser/setup.c' l='1174' ll='1178' type='void check_repository_format()'/>

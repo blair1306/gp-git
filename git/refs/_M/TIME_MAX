@@ -1,0 +1,12 @@
+<dec f='codebrowser/git-compat-util.h' l='328'/>
+<use f='codebrowser/archive-tar.c' l='34' u='c'/>
+<use f='codebrowser/builtin/name-rev.c' l='20' u='c'/>
+<use f='codebrowser/builtin/name-rev.c' l='194' u='c'/>
+<use f='codebrowser/builtin/prune.c' l='114' u='c'/>
+<use f='codebrowser/builtin/worktree.c' l='135' u='c'/>
+<use f='codebrowser/credential-cache--daemon.c' l='56' u='c'/>
+<use f='codebrowser/date.c' l='685' u='c'/>
+<use f='codebrowser/date.c' l='788' u='c'/>
+<use f='codebrowser/date.c' l='1211' u='c'/>
+<use f='codebrowser/ref-filter.c' l='887' u='c'/>
+<use f='codebrowser/revision.c' l='1019' u='c'/>

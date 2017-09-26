@@ -1,0 +1,11 @@
+<dec f='codebrowser/parse-options.h' l='27' type='2'/>
+<use f='codebrowser/builtin/config.c' l='490' u='r' c='cmd_config'/>
+<use f='codebrowser/builtin/grep.c' l='907' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/ls-remote.c' l='71' u='r' c='cmd_ls_remote'/>
+<use f='codebrowser/builtin/notes.c' l='992' u='r' c='cmd_notes'/>
+<use f='codebrowser/builtin/remote.c' l='1603' u='r' c='cmd_remote'/>
+<use f='codebrowser/builtin/rev-parse.c' l='505' u='r' c='cmd_parseopt'/>
+<use f='codebrowser/builtin/show-branch.c' l='672' u='r' c='cmd_show_branch'/>
+<use f='codebrowser/builtin/update-index.c' l='1034' u='r' c='cmd_update_index'/>
+<use f='codebrowser/parse-options.c' l='423' u='r' c='parse_options_start'/>
+<use f='codebrowser/parse-options.c' l='448' u='r' c='parse_options_step'/>

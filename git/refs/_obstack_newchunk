@@ -1,0 +1,6 @@
+<dec f='codebrowser/compat/obstack.h' l='182' type='void _obstack_newchunk(struct obstack * , int )'/>
+<doc f='codebrowser/compat/obstack.h' l='180'>/* Declare the external functions we use; they are in obstack.c.  */</doc>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='c'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='c'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='c'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='c'/>

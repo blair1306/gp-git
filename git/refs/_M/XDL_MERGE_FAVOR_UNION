@@ -1,0 +1,3 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='66'/>
+<use f='codebrowser/builtin/merge-file.c' l='40' u='c'/>
+<use f='codebrowser/ll-merge.c' l='136' u='c'/>

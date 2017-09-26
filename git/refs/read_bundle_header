@@ -1,0 +1,4 @@
+<dec f='codebrowser/bundle.h' l='20' type='int read_bundle_header(const char * path, struct bundle_header * header)'/>
+<use f='codebrowser/builtin/bundle.c' l='34' u='c' c='cmd_bundle'/>
+<def f='codebrowser/bundle.c' l='83' ll='90' type='int read_bundle_header(const char * path, struct bundle_header * header)'/>
+<use f='codebrowser/transport.c' l='85' u='c' c='get_refs_from_bundle'/>

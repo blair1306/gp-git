@@ -1,0 +1,3 @@
+<dec f='codebrowser/csum-file.h' l='34' type='struct sha1file * sha1fd_check(const char * name)'/>
+<def f='codebrowser/csum-file.c' l='126' ll='140' type='struct sha1file * sha1fd_check(const char * name)'/>
+<use f='codebrowser/pack-write.c' l='71' u='c' c='write_idx_file'/>

@@ -1,0 +1,29 @@
+<dec f='codebrowser/diff.h' l='223' type='struct combine_diff_path *'/>
+<offset>0</offset>
+<use f='codebrowser/combine-diff.c' l='43' u='w' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='53' u='a' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='69' u='r' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='84' u='a' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='1297' u='r' c='handle_combined_callback'/>
+<use f='codebrowser/combine-diff.c' l='1376' u='w' c='find_paths_multitree'/>
+<use f='codebrowser/combine-diff.c' l='1383' u='r' c='find_paths_multitree'/>
+<use f='codebrowser/combine-diff.c' l='1475' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1483' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1488' u='w' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1492' u='w' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1502' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1516' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1525' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/diff-lib.c' l='125' u='w' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='346' u='w' c='show_modified'/>
+<use f='codebrowser/tree-diff.c' l='142' u='r' c='path_appendnew'/>
+<use f='codebrowser/tree-diff.c' l='143' u='r' c='path_appendnew'/>
+<use f='codebrowser/tree-diff.c' l='154' u='w' c='path_appendnew'/>
+<use f='codebrowser/tree-diff.c' l='157' u='w' c='path_appendnew'/>
+<use f='codebrowser/tree-diff.c' l='272' u='w' c='emit_path'/>
+<use f='codebrowser/tree-diff.c' l='560' u='r' c='diff_tree_paths'/>
+<use f='codebrowser/tree-diff.c' l='561' u='r' c='diff_tree_paths'/>
+<use f='codebrowser/tree-diff.c' l='561' u='w' c='diff_tree_paths'/>
+<use f='codebrowser/tree-diff.c' l='684' u='w' c='ll_diff_tree_oid'/>
+<use f='codebrowser/tree-diff.c' l='688' u='r' c='ll_diff_tree_oid'/>
+<use f='codebrowser/tree-diff.c' l='690' u='r' c='ll_diff_tree_oid'/>

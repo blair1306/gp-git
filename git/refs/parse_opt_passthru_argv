@@ -1,0 +1,52 @@
+<dec f='codebrowser/parse-options.h' l='233' type='int parse_opt_passthru_argv(const struct option * , const char * , int )'/>
+<use f='codebrowser/builtin/am.c' l='2233' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2233' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2236' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2236' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2239' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2239' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2242' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2242' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2245' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2245' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2248' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2248' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2251' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2251' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2254' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2254' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2260' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2260' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2233' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2233' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2236' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2236' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2239' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2239' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2242' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2242' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2245' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2245' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2248' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2248' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2251' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2251' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2254' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2254' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2260' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2260' macro='1' u='r'/>
+<use f='codebrowser/builtin/pull.c' l='165' macro='1'/>
+<use f='codebrowser/builtin/pull.c' l='165' macro='1'/>
+<use f='codebrowser/builtin/pull.c' l='168' macro='1'/>
+<use f='codebrowser/builtin/pull.c' l='168' macro='1'/>
+<use f='codebrowser/builtin/pull.c' l='165' macro='1'/>
+<use f='codebrowser/builtin/pull.c' l='165' macro='1'/>
+<use f='codebrowser/builtin/pull.c' l='168' macro='1'/>
+<use f='codebrowser/builtin/pull.c' l='168' macro='1'/>
+<def f='codebrowser/parse-options-cb.c' l='227' ll='238' type='int parse_opt_passthru_argv(const struct option * opt, const char * arg, int unset)'/>
+<doc f='codebrowser/parse-options-cb.c' l='221'>/**
+ * For an option opt, recreate the command-line option, appending it to
+ * opt-&gt;value which must be a argv_array. This is useful when we need to pass
+ * the command-line option, which can be specified multiple times, to another
+ * command.
+ */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/builtin.h' l='136' type='int cmd_blame(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/builtin/annotate.c' l='21' u='c' c='cmd_annotate'/>
+<def f='codebrowser/builtin/blame.c' l='652' ll='960' type='int cmd_blame(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='370'/>
+<use f='codebrowser/git.c' l='370'/>
+<use f='codebrowser/git.c' l='439'/>
+<use f='codebrowser/git.c' l='439'/>
+<use f='codebrowser/git.c' l='370'/>
+<use f='codebrowser/git.c' l='370'/>
+<use f='codebrowser/git.c' l='439'/>
+<use f='codebrowser/git.c' l='439'/>

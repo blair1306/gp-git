@@ -1,0 +1,4 @@
+<dec f='codebrowser/grep.h' l='184' type='void append_header_grep_pattern(struct grep_opt * , enum grep_header_field , const char * )'/>
+<def f='codebrowser/grep.c' l='286' ll='294' type='void append_header_grep_pattern(struct grep_opt * opt, enum grep_header_field field, const char * pat)'/>
+<use f='codebrowser/grep.c' l='321' u='c' c='grep_opt_dup'/>
+<use f='codebrowser/revision.c' l='1677' u='c' c='add_header_grep'/>

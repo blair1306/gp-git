@@ -1,0 +1,4 @@
+<dec f='codebrowser/utf8.h' l='59' type='0'/>
+<use f='codebrowser/ref-filter.c' l='239' u='r' c='parse_align_position'/>
+<use f='codebrowser/ref-filter.c' l='253' u='r' c='align_atom_parser'/>
+<use f='codebrowser/utf8.c' l='674' u='r' c='strbuf_utf8_align'/>

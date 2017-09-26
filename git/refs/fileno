@@ -1,0 +1,15 @@
+<dec f='include/stdio.h' l='858' type='int fileno(FILE * __stream)'/>
+<doc f='include/stdio.h' l='857'>/* Return the system file descriptor for STREAM.  */</doc>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='696' u='c' c='cmd_fmt_merge_msg'/>
+<use f='codebrowser/builtin/fsck.c' l='277' u='c' c='check_unreachable_object'/>
+<use f='codebrowser/builtin/gc.c' l='265' u='c' c='lock_repo_for_gc'/>
+<use f='codebrowser/compat/fopen.c' l='25' u='c' c='git_fopen'/>
+<use f='codebrowser/config.c' l='2772' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/git.c' l='347' u='c' c='run_builtin'/>
+<use f='codebrowser/progress.c' l='108' u='c' c='display'/>
+<use f='codebrowser/progress.c' l='118' u='c' c='display'/>
+<use f='codebrowser/refs/packed-backend.c' l='225' u='c' c='read_packed_refs'/>
+<use f='codebrowser/shallow.c' l='64' u='c' c='is_repository_shallow'/>
+<use f='codebrowser/submodule.c' l='669' u='c' c='show_submodule_inline_diff'/>
+<use f='codebrowser/trailer.c' l='725' u='c' c='read_input_file'/>
+<use f='codebrowser/write_or_die.c' l='28' u='c' c='maybe_flush_or_die'/>

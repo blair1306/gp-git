@@ -1,0 +1,11 @@
+<dec f='codebrowser/commit.h' l='79' type='const void * get_cached_commit_buffer(const struct commit * , unsigned long * size)'/>
+<doc f='codebrowser/commit.h' l='75'>/*
+ * Get any cached object buffer associated with the commit. Returns NULL
+ * if none. The resulting memory should not be freed.
+ */</doc>
+<use f='codebrowser/builtin/rev-list.c' l='118' u='c' c='show_commit'/>
+<def f='codebrowser/commit.c' l='246' ll='257' type='const void * get_cached_commit_buffer(const struct commit * commit, unsigned long * sizep)'/>
+<use f='codebrowser/commit.c' l='261' u='c' c='get_commit_buffer'/>
+<use f='codebrowser/log-tree.c' l='651' u='c' c='show_log'/>
+<use f='codebrowser/object.c' l='212' u='c' c='parse_object_buffer'/>
+<use f='codebrowser/pretty.c' l='633' u='c' c='logmsg_reencode'/>

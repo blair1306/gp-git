@@ -1,0 +1,17 @@
+<dec f='codebrowser/cache.h' l='362'/>
+<use f='codebrowser/builtin/add.c' l='511' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='422' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='425' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='646' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='686' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='795' u='c'/>
+<use f='codebrowser/builtin/mv.c' l='297' u='c'/>
+<use f='codebrowser/builtin/rm.c' l='389' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='237' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='882' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='900' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='1079' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='1150' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='2149' u='c'/>
+<use f='codebrowser/rerere.c' l='722' u='c'/>
+<use f='codebrowser/sequencer.c' l='467' u='c'/>

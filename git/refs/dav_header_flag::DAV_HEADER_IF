@@ -1,0 +1,5 @@
+<dec f='codebrowser/http-push.c' l='171' type='1'/>
+<use f='codebrowser/http-push.c' l='216' u='r' c='get_dav_token_headers'/>
+<use f='codebrowser/http-push.c' l='446' u='r' c='refresh_lock'/>
+<use f='codebrowser/http-push.c' l='1375' u='r' c='update_remote'/>
+<use f='codebrowser/http-push.c' l='1490' u='r' c='update_remote_info_refs'/>

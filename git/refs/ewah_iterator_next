@@ -1,0 +1,14 @@
+<dec f='codebrowser/ewah/ewok.h' l='166' type='int ewah_iterator_next(eword_t * next, struct ewah_iterator * it)'/>
+<doc f='codebrowser/ewah/ewok.h' l='159'>/**
+ * Yield every single word in the bitmap in uncompressed form. This is:
+ * yield single words (32-64 bits) where each bit represents an actual
+ * bit from the bitmap.
+ *
+ * Return: true if a word was yield, false if there are no words left
+ */</doc>
+<use f='codebrowser/ewah/bitmap.c' l='100' u='c' c='ewah_to_bitmap'/>
+<use f='codebrowser/ewah/bitmap.c' l='137' u='c' c='bitmap_or_ewah'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='337' ll='362' type='int ewah_iterator_next(eword_t * next, struct ewah_iterator * it)'/>
+<use f='codebrowser/pack-bitmap.c' l='610' u='c' c='show_objects_for_type'/>
+<use f='codebrowser/pack-bitmap.c' l='855' u='c' c='count_object_type'/>
+<use f='codebrowser/pack-bitmap.c' l='988' u='c' c='rebuild_bitmap'/>

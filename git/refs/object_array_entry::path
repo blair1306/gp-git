@@ -1,0 +1,12 @@
+<dec f='codebrowser/object.h' l='21' type='char *'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/diff.c' l='29' u='r' c='blob_path'/>
+<use f='codebrowser/builtin/diff.c' l='29' u='r' c='blob_path'/>
+<use f='codebrowser/builtin/diff.c' l='94' u='r' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/diff.c' l='94' u='r' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/grep.c' l='648' u='r' c='grep_objects'/>
+<use f='codebrowser/list-objects.c' l='209' u='r' c='traverse_commit_list'/>
+<use f='codebrowser/object.c' l='334' u='w' c='add_object_array_with_path'/>
+<use f='codebrowser/object.c' l='336' u='w' c='add_object_array_with_path'/>
+<use f='codebrowser/object.c' l='353' u='r' c='object_array_release_entry'/>
+<use f='codebrowser/revision.c' l='216' u='r' c='handle_commit'/>

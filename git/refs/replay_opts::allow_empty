@@ -1,0 +1,9 @@
+<dec f='codebrowser/sequencer.h' l='24' type='int'/>
+<offset>224</offset>
+<use f='codebrowser/builtin/rebase--helper.c' l='31' u='w' c='cmd_rebase__helper'/>
+<use f='codebrowser/builtin/revert.c' l='122' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='122' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='122' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='122' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='136' u='w' c='run_sequencer'/>
+<use f='codebrowser/sequencer.c' l='730' u='r' c='allow_empty'/>

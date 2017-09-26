@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1839' type='int packed_object_info(struct packed_git * pack, off_t offset, struct object_info * )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1559' u='c' c='drop_reused_delta'/>
+<def f='codebrowser/sha1_file.c' l='2370' ll='2454' type='int packed_object_info(struct packed_git * p, off_t obj_offset, struct object_info * oi)'/>
+<use f='codebrowser/sha1_file.c' l='3028' u='c' c='sha1_object_info_extended'/>

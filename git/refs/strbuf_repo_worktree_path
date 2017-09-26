@@ -1,0 +1,4 @@
+<dec f='codebrowser/path.h' l='49' type='void strbuf_repo_worktree_path(struct strbuf * sb, const struct repository * repo, const char * fmt)'/>
+<def f='codebrowser/path.c' l='536' ll='548' type='void strbuf_repo_worktree_path(struct strbuf * sb, const struct repository * repo, const char * fmt)'/>
+<use f='codebrowser/repository.c' l='169' u='c' c='repo_submodule_init'/>
+<use f='codebrowser/repository.c' l='170' u='c' c='repo_submodule_init'/>

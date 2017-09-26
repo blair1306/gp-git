@@ -1,0 +1,9 @@
+<dec f='codebrowser/http.h' l='160' type='struct strbuf *'/>
+<offset>128</offset>
+<doc f='codebrowser/http.h' l='155'>/*
+	 * If non-NULL, and content_type above is non-NULL, returns
+	 * the charset parameter from the content-type. If none is
+	 * present, returns an empty string.
+	 */</doc>
+<use f='codebrowser/http.c' l='1711' u='r' c='http_request'/>
+<use f='codebrowser/remote-curl.c' l='301' u='w' c='discover_refs'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit.h' l='193' type='void pretty_print_commit(struct pretty_print_context * pp, const struct commit * commit, struct strbuf * sb)'/>
+<use f='codebrowser/builtin/merge.c' l='373' u='c' c='squash_message'/>
+<use f='codebrowser/builtin/rev-list.c' l='127' u='c' c='show_commit'/>
+<use f='codebrowser/builtin/shortlog.c' l='161' u='c' c='shortlog_add_commit'/>
+<use f='codebrowser/log-tree.c' l='688' u='c' c='show_log'/>
+<def f='codebrowser/pretty.c' l='1764' ll='1839' type='void pretty_print_commit(struct pretty_print_context * pp, const struct commit * commit, struct strbuf * sb)'/>
+<use f='codebrowser/pretty.c' l='1846' u='c' c='pp_commit_easy'/>

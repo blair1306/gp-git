@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1783'/>
+<doc f='codebrowser/cache.h' l='1778'>/*
+ * Iterate over loose and packed objects in both the local
+ * repository and any alternates repositories (unless the
+ * LOCAL_ONLY flag is set).
+ */</doc>
+<use f='codebrowser/reachable.c' l='151' u='c'/>
+<use f='codebrowser/reachable.c' l='155' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3846' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3881' u='c'/>

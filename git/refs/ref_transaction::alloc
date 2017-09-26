@@ -1,0 +1,8 @@
+<dec f='codebrowser/refs/refs-internal.h' l='236' type='size_t'/>
+<use f='codebrowser/refs.c' l='912' u='r' c='ref_transaction_add_update'/>
+<use f='codebrowser/refs.c' l='912' u='r' c='ref_transaction_add_update'/>
+<use f='codebrowser/refs.c' l='912' u='w' c='ref_transaction_add_update'/>
+<use f='codebrowser/refs.c' l='912' u='w' c='ref_transaction_add_update'/>
+<use f='codebrowser/refs.c' l='912' u='r' c='ref_transaction_add_update'/>
+<use f='codebrowser/refs.c' l='912' u='r' c='ref_transaction_add_update'/>
+<offset>128</offset>

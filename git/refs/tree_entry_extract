@@ -1,0 +1,7 @@
+<def f='codebrowser/tree-walk.h' l='16' ll='21' type='const struct object_id * tree_entry_extract(struct tree_desc * desc, const char ** pathp, unsigned int * modep)'/>
+<use f='codebrowser/fsck.c' l='557' u='c' c='fsck_tree'/>
+<use f='codebrowser/match-trees.c' l='138' u='c' c='match_trees'/>
+<use f='codebrowser/match-trees.c' l='196' u='c' c='splice_tree'/>
+<use f='codebrowser/tree-diff.c' l='196' u='c' c='emit_path'/>
+<use f='codebrowser/tree-diff.c' l='207' u='c' c='emit_path'/>
+<use f='codebrowser/tree-walk.c' l='503' u='c' c='find_tree_entry'/>

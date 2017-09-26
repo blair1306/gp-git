@@ -1,0 +1,5 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='121' type='xpparam_t'/>
+<offset>0</offset>
+<use f='codebrowser/ll-merge.c' l='112' u='m' c='ll_xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='476' u='a' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='639' u='a' c='xdl_merge'/>

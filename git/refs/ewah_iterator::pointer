@@ -1,0 +1,13 @@
+<dec f='codebrowser/ewah/ewok.h' l='138' type='size_t'/>
+<offset>128</offset>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='319' u='r' c='read_new_rlw'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='328' u='r' c='read_new_rlw'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='329' u='w' c='read_new_rlw'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='331' u='w' c='read_new_rlw'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='339' u='r' c='ewah_iterator_next'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='349' u='w' c='ewah_iterator_next'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='351' u='r' c='ewah_iterator_next'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='353' u='r' c='ewah_iterator_next'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='357' u='w' c='ewah_iterator_next'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='368' u='w' c='ewah_iterator_init'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='376' u='r' c='ewah_iterator_init'/>

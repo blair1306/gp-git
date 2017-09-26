@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/line_buffer.h' l='24' type='int buffer_read_char(struct line_buffer * buf)'/>
+<def f='codebrowser/vcs-svn/line_buffer.c' l='67' ll='70' type='int buffer_read_char(struct line_buffer * buf)'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='111' u='c' c='read_int'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='186' u='c' c='read_props'/>

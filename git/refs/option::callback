@@ -1,0 +1,9 @@
+<dec f='codebrowser/parse-options.h' l='111' type='parse_opt_cb *'/>
+<offset>384</offset>
+<use f='codebrowser/builtin/rev-parse.c' l='458' u='w' c='cmd_parseopt'/>
+<use f='codebrowser/parse-options.c' l='97' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='157' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='159' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='161' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='164' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='231' u='r' c='parse_short_opt'/>

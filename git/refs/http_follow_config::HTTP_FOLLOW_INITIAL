@@ -1,0 +1,4 @@
+<dec f='codebrowser/http.h' l='122' type='2'/>
+<use f='codebrowser/http.c' l='115'/>
+<use f='codebrowser/http.c' l='387' u='r' c='http_options'/>
+<use f='codebrowser/http.c' l='1696' u='r' c='http_request'/>

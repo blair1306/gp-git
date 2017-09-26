@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1953'/>
+<use f='codebrowser/apply.c' l='2472' u='c'/>
+<use f='codebrowser/apply.c' l='2891' u='c'/>
+<use f='codebrowser/apply.c' l='2919' u='c'/>
+<use f='codebrowser/apply.c' l='3023' u='c'/>
+<use f='codebrowser/apply.c' l='3025' u='c'/>
+<use f='codebrowser/diff.c' l='559' u='c'/>
+<use f='codebrowser/diff.c' l='788' u='c'/>
+<use f='codebrowser/diff.c' l='2503' u='c'/>
+<use f='codebrowser/diff.c' l='2654' u='c'/>
+<use f='codebrowser/diff.c' l='2665' u='c'/>
+<use f='codebrowser/ws.c' l='21' u='c'/>
+<use f='codebrowser/ws.c' l='118' u='c'/>

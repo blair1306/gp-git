@@ -1,0 +1,3 @@
+<dec f='codebrowser/convert.h' l='35' type='2'/>
+<use f='codebrowser/config.c' l='1162' u='r' c='git_default_core_config'/>
+<use f='codebrowser/convert.c' l='168' u='r' c='text_eol_is_crlf'/>

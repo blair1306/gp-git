@@ -1,0 +1,10 @@
+<dec f='codebrowser/refs/packed-backend.h' l='17' type='void add_packed_ref(struct ref_store * ref_store, const char * refname, const struct object_id * oid)'/>
+<use f='codebrowser/refs/files-backend.c' l='1119' u='c' c='files_pack_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='2708' u='c' c='files_initial_transaction_commit'/>
+<def f='codebrowser/refs/packed-backend.c' l='330' ll='356' type='void add_packed_ref(struct ref_store * ref_store, const char * refname, const struct object_id * oid)'/>
+<doc f='codebrowser/refs/packed-backend.c' l='324'>/*
+ * Add or overwrite a reference in the in-memory packed reference
+ * cache. This may only be called while the packed-refs file is locked
+ * (see packed_refs_lock()). To actually write the packed-refs file,
+ * call commit_packed_refs().
+ */</doc>

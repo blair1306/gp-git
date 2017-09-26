@@ -1,0 +1,4 @@
+<dec f='codebrowser/parse-options.h' l='191' type='2'/>
+<use f='codebrowser/builtin/update-index.c' l='921' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='1060' c='cmd_update_index'/>
+<use f='codebrowser/parse-options.c' l='514' u='r' c='parse_options_step'/>

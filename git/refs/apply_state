@@ -1,0 +1,44 @@
+<def f='codebrowser/apply.h' l='36' ll='112'/>
+<size>320</size>
+<mbr r='apply_state::prefix' o='0' t='const char *'/>
+<mbr r='apply_state::lock_file' o='64' t='struct lock_file *'/>
+<mbr r='apply_state::newfd' o='128' t='int'/>
+<mbr r='apply_state::apply' o='160' t='int'/>
+<mbr r='apply_state::cached' o='192' t='int'/>
+<mbr r='apply_state::check' o='224' t='int'/>
+<mbr r='apply_state::check_index' o='256' t='int'/>
+<mbr r='apply_state::update_index' o='288' t='int'/>
+<mbr r='apply_state::diffstat' o='320' t='int'/>
+<mbr r='apply_state::numstat' o='352' t='int'/>
+<mbr r='apply_state::summary' o='384' t='int'/>
+<mbr r='apply_state::allow_overlap' o='416' t='int'/>
+<mbr r='apply_state::apply_in_reverse' o='448' t='int'/>
+<mbr r='apply_state::apply_with_reject' o='480' t='int'/>
+<mbr r='apply_state::no_add' o='512' t='int'/>
+<mbr r='apply_state::threeway' o='544' t='int'/>
+<mbr r='apply_state::unidiff_zero' o='576' t='int'/>
+<mbr r='apply_state::unsafe_paths' o='608' t='int'/>
+<mbr r='apply_state::index_file' o='640' t='const char *'/>
+<mbr r='apply_state::apply_verbosity' o='704' t='enum apply_verbosity'/>
+<mbr r='apply_state::fake_ancestor' o='768' t='const char *'/>
+<mbr r='apply_state::patch_input_file' o='832' t='const char *'/>
+<mbr r='apply_state::line_termination' o='896' t='int'/>
+<mbr r='apply_state::root' o='960' t='struct strbuf'/>
+<mbr r='apply_state::p_value' o='1152' t='int'/>
+<mbr r='apply_state::p_value_known' o='1184' t='int'/>
+<mbr r='apply_state::p_context' o='1216' t='unsigned int'/>
+<mbr r='apply_state::limit_by_name' o='1280' t='struct string_list'/>
+<mbr r='apply_state::has_include' o='1536' t='int'/>
+<mbr r='apply_state::linenr' o='1568' t='int'/>
+<mbr r='apply_state::symlink_changes' o='1600' t='struct string_list'/>
+<mbr r='apply_state::max_change' o='1856' t='int'/>
+<mbr r='apply_state::max_len' o='1888' t='int'/>
+<mbr r='apply_state::fn_table' o='1920' t='struct string_list'/>
+<mbr r='apply_state::saved_error_routine' o='2176' t='void (*)(const char *, struct __va_list_tag *)'/>
+<mbr r='apply_state::saved_warn_routine' o='2240' t='void (*)(const char *, struct __va_list_tag *)'/>
+<mbr r='apply_state::ws_error_action' o='2304' t='enum apply_ws_error_action'/>
+<mbr r='apply_state::ws_ignore_action' o='2336' t='enum apply_ws_ignore'/>
+<mbr r='apply_state::whitespace_option' o='2368' t='const char *'/>
+<mbr r='apply_state::whitespace_error' o='2432' t='int'/>
+<mbr r='apply_state::squelch_whitespace_errors' o='2464' t='int'/>
+<mbr r='apply_state::applied_after_fixing_ws' o='2496' t='int'/>

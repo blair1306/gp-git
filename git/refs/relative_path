@@ -1,0 +1,21 @@
+<dec f='codebrowser/cache.h' l='1134' type='const char * relative_path(const char * in, const char * prefix, struct strbuf * sb)'/>
+<use f='codebrowser/builtin/clean.c' l='992' u='c' c='cmd_clean'/>
+<use f='codebrowser/builtin/rev-parse.c' l='635' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/rev-parse.c' l='852' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/rev-parse.c' l='878' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='346' u='c' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='801' u='c' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1061' u='c' c='resolve_relative_path'/>
+<use f='codebrowser/dir.c' l='2862' u='c' c='connect_work_tree_and_git_dir'/>
+<use f='codebrowser/dir.c' l='2865' u='c' c='connect_work_tree_and_git_dir'/>
+<def f='codebrowser/path.c' l='909' ll='1004' type='const char * relative_path(const char * in, const char * prefix, struct strbuf * sb)'/>
+<doc f='codebrowser/path.c' l='903'>/*
+ * Give path as relative to prefix.
+ *
+ * The strbuf may or may not be used, so do not assume it contains the
+ * returned path.
+ */</doc>
+<use f='codebrowser/quote.c' l='296' u='c' c='write_name_quoted_relative'/>
+<use f='codebrowser/quote.c' l='307' u='c' c='quote_path_relative'/>
+<use f='codebrowser/submodule.c' l='1965' u='c' c='get_superproject_working_tree'/>
+<use f='codebrowser/t/helper/test-path-utils.c' l='258' u='c' c='cmd_main'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='720' type='void set_alternate_index_output(const char * )'/>
+<use f='codebrowser/builtin/read-tree.c' l='47' u='c' c='index_output_cb'/>
+<def f='codebrowser/read-cache.c' l='2315' ll='2318' type='void set_alternate_index_output(const char * name)'/>

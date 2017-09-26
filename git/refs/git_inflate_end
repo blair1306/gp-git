@@ -1,0 +1,22 @@
+<dec f='codebrowser/cache.h' l='55' type='void git_inflate_end(git_zstream * )'/>
+<use f='codebrowser/apply.c' l='1879' u='c' c='inflate_it'/>
+<use f='codebrowser/builtin/index-pack.c' l='480' u='c' c='unpack_entry_data'/>
+<use f='codebrowser/builtin/index-pack.c' l='605' u='c' c='unpack_data'/>
+<use f='codebrowser/builtin/pack-objects.c' l='215' u='c' c='check_pack_inflate'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='125' u='c' c='get_data'/>
+<use f='codebrowser/http-backend.c' l='370' u='c' c='inflate_request'/>
+<use f='codebrowser/http.c' l='2300' u='c' c='finish_http_object_request'/>
+<use f='codebrowser/sha1_file.c' l='1922' u='c' c='unpack_sha1_rest'/>
+<use f='codebrowser/sha1_file.c' l='2030' u='c' c='get_size_from_delta'/>
+<use f='codebrowser/sha1_file.c' l='2481' u='c' c='unpack_compressed_entry'/>
+<use f='codebrowser/sha1_file.c' l='2962' u='c' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='3929' u='c' c='check_stream_sha1'/>
+<use f='codebrowser/sha1_file.c' l='3979' u='c' c='read_loose_object'/>
+<use f='codebrowser/sha1_file.c' l='3990' u='c' c='read_loose_object'/>
+<use f='codebrowser/streaming.c' l='176' u='c' c='close_deflated_stream'/>
+<use f='codebrowser/streaming.c' l='310' u='c' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='315' u='c' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='346' u='c' c='open_istream_loose'/>
+<use f='codebrowser/streaming.c' l='402' u='c' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='407' u='c' c='read_istream_pack_non_delta'/>
+<def f='codebrowser/zlib.c' l='98' ll='109' type='void git_inflate_end(git_zstream * strm)'/>

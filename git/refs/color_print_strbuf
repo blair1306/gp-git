@@ -1,0 +1,4 @@
+<dec f='codebrowser/color.h' l='91' type='void color_print_strbuf(FILE * fp, const char * color, const struct strbuf * sb)'/>
+<def f='codebrowser/color.c' l='364' ll='371' type='void color_print_strbuf(FILE * fp, const char * color, const struct strbuf * sb)'/>
+<use f='codebrowser/wt-status.c' l='60' u='c' c='status_vprintf'/>
+<use f='codebrowser/wt-status.c' l='79' u='c' c='status_vprintf'/>

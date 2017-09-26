@@ -1,0 +1,17 @@
+<dec f='codebrowser/lockfile.h' l='114' type='struct tempfile'/>
+<use f='codebrowser/lockfile.h' l='183' u='a' c='is_lock_file_locked'/>
+<use f='codebrowser/lockfile.h' l='210' u='a' c='fdopen_lock_file'/>
+<use f='codebrowser/lockfile.h' l='219' u='a' c='get_lock_file_path'/>
+<use f='codebrowser/lockfile.h' l='224' u='a' c='get_lock_file_fd'/>
+<use f='codebrowser/lockfile.h' l='229' u='a' c='get_lock_file_fp'/>
+<use f='codebrowser/lockfile.h' l='249' u='a' c='close_lock_file'/>
+<use f='codebrowser/lockfile.h' l='273' u='a' c='reopen_lock_file'/>
+<use f='codebrowser/lockfile.h' l='293' u='a' c='commit_lock_file_to'/>
+<use f='codebrowser/lockfile.h' l='304' u='a' c='rollback_lock_file'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/gc.c' l='80' u='a' c='process_log_file'/>
+<use f='codebrowser/lockfile.c' l='83' u='a' c='lock_file'/>
+<use f='codebrowser/lockfile.c' l='194' u='a' c='get_locked_file_path'/>
+<use f='codebrowser/read-cache.c' l='2331' u='a' c='do_write_locked_index'/>
+<use f='codebrowser/refs/files-backend.c' l='1746' u='m' c='create_symref_locked'/>
+<use f='codebrowser/refs/files-backend.c' l='1751' u='m' c='create_symref_locked'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/apply.h' l='109' type='int'/>
+<use f='codebrowser/apply.c' l='1642' u='w' c='record_ws_error'/>
+<use f='codebrowser/apply.c' l='1644' u='r' c='record_ws_error'/>
+<use f='codebrowser/apply.c' l='2909' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='4677' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4850' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4852' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4854' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4863' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4864' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4875' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4878' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4879' u='r' c='apply_all_patches'/>
+<offset>2432</offset>

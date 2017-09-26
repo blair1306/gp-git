@@ -1,0 +1,6 @@
+<dec f='include/zlib.h' l='88' type='uLong'/>
+<offset>128</offset>
+<doc f='include/zlib.h' l='88'>/* total number of input bytes read so far */</doc>
+<use f='codebrowser/zlib.c' l='41' u='w' c='zlib_pre_call'/>
+<use f='codebrowser/zlib.c' l='56' u='r' c='zlib_post_call'/>
+<use f='codebrowser/zlib.c' l='60' u='r' c='zlib_post_call'/>

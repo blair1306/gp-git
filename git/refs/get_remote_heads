@@ -1,0 +1,11 @@
+<dec f='codebrowser/remote.h' l='153' type='struct ref ** get_remote_heads(int in, char * src_buf, size_t src_len, struct ref ** list, unsigned int flags, struct oid_array * extra_have, struct oid_array * shallow)'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='196' u='c' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/send-pack.c' l='259' u='c' c='cmd_send_pack'/>
+<def f='codebrowser/connect.c' l='113' ll='201' type='struct ref ** get_remote_heads(int in, char * src_buf, size_t src_len, struct ref ** list, unsigned int flags, struct oid_array * extra_have, struct oid_array * shallow_points)'/>
+<doc f='codebrowser/connect.c' l='110'>/*
+ * Read all the refs from the other end
+ */</doc>
+<use f='codebrowser/remote-curl.c' l='179' u='c' c='parse_git_refs'/>
+<use f='codebrowser/transport.c' l='196' u='c' c='get_refs_via_connect'/>
+<use f='codebrowser/transport.c' l='235' u='c' c='fetch_refs_via_pack'/>
+<use f='codebrowser/transport.c' l='549' u='c' c='git_transport_push'/>

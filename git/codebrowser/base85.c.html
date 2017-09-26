@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>base85.c source code [codebrowser/base85.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/base85.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='base85.c.html'>base85.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#undef <span class="macro" data-ref="_M/DEBUG_85">DEBUG_85</span></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#<span data-ppcond="5">ifdef</span> <span class="macro" data-ref="_M/DEBUG_85">DEBUG_85</span></u></td></tr>
+<tr><th id="6">6</th><td><u>#define say(a) fprintf(stderr, a)</u></td></tr>
+<tr><th id="7">7</th><td><u>#define say1(a,b) fprintf(stderr, a, b)</u></td></tr>
+<tr><th id="8">8</th><td><u>#define say2(a,b,c) fprintf(stderr, a, b, c)</u></td></tr>
+<tr><th id="9">9</th><td><u>#<span data-ppcond="5">else</span></u></td></tr>
+<tr><th id="10">10</th><td><u>#define <dfn class="macro" id="_M/say" data-ref="_M/say">say</dfn>(a) do { /* nothing */ } while (0)</u></td></tr>
+<tr><th id="11">11</th><td><u>#define <dfn class="macro" id="_M/say1" data-ref="_M/say1">say1</dfn>(a,b) do { /* nothing */ } while (0)</u></td></tr>
+<tr><th id="12">12</th><td><u>#define <dfn class="macro" id="_M/say2" data-ref="_M/say2">say2</dfn>(a,b,c) do { /* nothing */ } while (0)</u></td></tr>
+<tr><th id="13">13</th><td><u>#<span data-ppcond="5">endif</span></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><em>static</em> <em>const</em> <em>char</em> <dfn class="tu decl def" id="en85" title='en85' data-type='const char [85]' data-ref="en85">en85</dfn>[] = {</td></tr>
+<tr><th id="16">16</th><td>	<kbd>'0'</kbd>, <kbd>'1'</kbd>, <kbd>'2'</kbd>, <kbd>'3'</kbd>, <kbd>'4'</kbd>, <kbd>'5'</kbd>, <kbd>'6'</kbd>, <kbd>'7'</kbd>, <kbd>'8'</kbd>, <kbd>'9'</kbd>,</td></tr>
+<tr><th id="17">17</th><td>	<kbd>'A'</kbd>, <kbd>'B'</kbd>, <kbd>'C'</kbd>, <kbd>'D'</kbd>, <kbd>'E'</kbd>, <kbd>'F'</kbd>, <kbd>'G'</kbd>, <kbd>'H'</kbd>, <kbd>'I'</kbd>, <kbd>'J'</kbd>,</td></tr>
+<tr><th id="18">18</th><td>	<kbd>'K'</kbd>, <kbd>'L'</kbd>, <kbd>'M'</kbd>, <kbd>'N'</kbd>, <kbd>'O'</kbd>, <kbd>'P'</kbd>, <kbd>'Q'</kbd>, <kbd>'R'</kbd>, <kbd>'S'</kbd>, <kbd>'T'</kbd>,</td></tr>
+<tr><th id="19">19</th><td>	<kbd>'U'</kbd>, <kbd>'V'</kbd>, <kbd>'W'</kbd>, <kbd>'X'</kbd>, <kbd>'Y'</kbd>, <kbd>'Z'</kbd>,</td></tr>
+<tr><th id="20">20</th><td>	<kbd>'a'</kbd>, <kbd>'b'</kbd>, <kbd>'c'</kbd>, <kbd>'d'</kbd>, <kbd>'e'</kbd>, <kbd>'f'</kbd>, <kbd>'g'</kbd>, <kbd>'h'</kbd>, <kbd>'i'</kbd>, <kbd>'j'</kbd>,</td></tr>
+<tr><th id="21">21</th><td>	<kbd>'k'</kbd>, <kbd>'l'</kbd>, <kbd>'m'</kbd>, <kbd>'n'</kbd>, <kbd>'o'</kbd>, <kbd>'p'</kbd>, <kbd>'q'</kbd>, <kbd>'r'</kbd>, <kbd>'s'</kbd>, <kbd>'t'</kbd>,</td></tr>
+<tr><th id="22">22</th><td>	<kbd>'u'</kbd>, <kbd>'v'</kbd>, <kbd>'w'</kbd>, <kbd>'x'</kbd>, <kbd>'y'</kbd>, <kbd>'z'</kbd>,</td></tr>
+<tr><th id="23">23</th><td>	<kbd>'!'</kbd>, <kbd>'#'</kbd>, <kbd>'$'</kbd>, <kbd>'%'</kbd>, <kbd>'&amp;'</kbd>, <kbd>'('</kbd>, <kbd>')'</kbd>, <kbd>'*'</kbd>, <kbd>'+'</kbd>, <kbd>'-'</kbd>,</td></tr>
+<tr><th id="24">24</th><td>	<kbd>';'</kbd>, <kbd>'&lt;'</kbd>, <kbd>'='</kbd>, <kbd>'&gt;'</kbd>, <kbd>'?'</kbd>, <kbd>'@'</kbd>, <kbd>'^'</kbd>, <kbd>'_'</kbd>,	<kbd>'`'</kbd>, <kbd>'{'</kbd>,</td></tr>
+<tr><th id="25">25</th><td>	<kbd>'|'</kbd>, <kbd>'}'</kbd>, <kbd>'~'</kbd></td></tr>
+<tr><th id="26">26</th><td>};</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><em>static</em> <em>char</em> <dfn class="tu decl def" id="de85" title='de85' data-type='char [256]' data-ref="de85">de85</dfn>[<var>256</var>];</td></tr>
+<tr><th id="29">29</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="prep_base85" title='prep_base85' data-type='void prep_base85()' data-ref="prep_base85">prep_base85</dfn>(<em>void</em>)</td></tr>
+<tr><th id="30">30</th><td>{</td></tr>
+<tr><th id="31">31</th><td>	<em>int</em> <dfn class="local col1 decl" id="1i" title='i' data-type='int' data-ref="1i">i</dfn>;</td></tr>
+<tr><th id="32">32</th><td>	<b>if</b> (<a class="tu ref" href="#de85" title='de85' data-use='r' data-ref="de85">de85</a>[<kbd>'Z'</kbd>])</td></tr>
+<tr><th id="33">33</th><td>		<b>return</b>;</td></tr>
+<tr><th id="34">34</th><td>	<b>for</b> (<a class="local col1 ref" href="#1i" title='i' data-ref="1i">i</a> = <var>0</var>; <a class="local col1 ref" href="#1i" title='i' data-ref="1i">i</a> &lt; <a class="macro" href="git-compat-util.h.html#77" title="(sizeof(en85) / sizeof((en85)[0]) + (sizeof(char [1 - 2*!(!__builtin_types_compatible_p(__typeof__(en85), __typeof__(&amp;(en85)[0])))]) - 1))" data-ref="_M/ARRAY_SIZE">ARRAY_SIZE</a>(<a class="tu ref" href="#en85" title='en85' data-use='r' data-ref="en85"><a class="tu ref" href="#en85" title='en85' data-use='a' data-ref="en85">en85</a></a>); <a class="local col1 ref" href="#1i" title='i' data-ref="1i">i</a>++) {</td></tr>
+<tr><th id="35">35</th><td>		<em>int</em> <dfn class="local col2 decl" id="2ch" title='ch' data-type='int' data-ref="2ch">ch</dfn> = <a class="tu ref" href="#en85" title='en85' data-use='r' data-ref="en85">en85</a>[<a class="local col1 ref" href="#1i" title='i' data-ref="1i">i</a>];</td></tr>
+<tr><th id="36">36</th><td>		<a class="tu ref" href="#de85" title='de85' data-use='w' data-ref="de85">de85</a>[<a class="local col2 ref" href="#2ch" title='ch' data-ref="2ch">ch</a>] = <a class="local col1 ref" href="#1i" title='i' data-ref="1i">i</a> + <var>1</var>;</td></tr>
+<tr><th id="37">37</th><td>	}</td></tr>
+<tr><th id="38">38</th><td>}</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><em>int</em> <dfn class="decl def" id="decode_85" title='decode_85' data-ref="decode_85">decode_85</dfn>(<em>char</em> *<dfn class="local col3 decl" id="3dst" title='dst' data-type='char *' data-ref="3dst">dst</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="4buffer" title='buffer' data-type='const char *' data-ref="4buffer">buffer</dfn>, <em>int</em> <dfn class="local col5 decl" id="5len" title='len' data-type='int' data-ref="5len">len</dfn>)</td></tr>
+<tr><th id="41">41</th><td>{</td></tr>
+<tr><th id="42">42</th><td>	<a class="tu ref" href="#prep_base85" title='prep_base85' data-use='c' data-ref="prep_base85">prep_base85</a>();</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>	<a class="macro" href="#12" title="do { } while (0)" data-ref="_M/say2">say2</a>(<q>"decode 85 &lt;%.*s&gt;"</q>, len / <var>4</var> * <var>5</var>, buffer);</td></tr>
+<tr><th id="45">45</th><td>	<b>while</b> (<a class="local col5 ref" href="#5len" title='len' data-ref="5len">len</a>) {</td></tr>
+<tr><th id="46">46</th><td>		<em>unsigned</em> <dfn class="local col6 decl" id="6acc" title='acc' data-type='unsigned int' data-ref="6acc">acc</dfn> = <var>0</var>;</td></tr>
+<tr><th id="47">47</th><td>		<em>int</em> <dfn class="local col7 decl" id="7de" title='de' data-type='int' data-ref="7de">de</dfn>, <dfn class="local col8 decl" id="8cnt" title='cnt' data-type='int' data-ref="8cnt">cnt</dfn> = <var>4</var>;</td></tr>
+<tr><th id="48">48</th><td>		<em>unsigned</em> <em>char</em> <dfn class="local col9 decl" id="9ch" title='ch' data-type='unsigned char' data-ref="9ch">ch</dfn>;</td></tr>
+<tr><th id="49">49</th><td>		<b>do</b> {</td></tr>
+<tr><th id="50">50</th><td>			<a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a> = *<a class="local col4 ref" href="#4buffer" title='buffer' data-ref="4buffer">buffer</a>++;</td></tr>
+<tr><th id="51">51</th><td>			<a class="local col7 ref" href="#7de" title='de' data-ref="7de">de</a> = <a class="tu ref" href="#de85" title='de85' data-use='r' data-ref="de85">de85</a>[<a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a>];</td></tr>
+<tr><th id="52">52</th><td>			<b>if</b> (--<a class="local col7 ref" href="#7de" title='de' data-ref="7de">de</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="53">53</th><td>				<b>return</b> <a class="macro" href="git-compat-util.h.html#446" title="(error(&quot;invalid base85 alphabet %c&quot;, ch), const_error())" data-ref="_M/error">error</a>(<q>"invalid base85 alphabet %c"</q>, <a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a>);</td></tr>
+<tr><th id="54">54</th><td>			<a class="local col6 ref" href="#6acc" title='acc' data-ref="6acc">acc</a> = <a class="local col6 ref" href="#6acc" title='acc' data-ref="6acc">acc</a> * <var>85</var> + <a class="local col7 ref" href="#7de" title='de' data-ref="7de">de</a>;</td></tr>
+<tr><th id="55">55</th><td>		} <b>while</b> (--<a class="local col8 ref" href="#8cnt" title='cnt' data-ref="8cnt">cnt</a>);</td></tr>
+<tr><th id="56">56</th><td>		<a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a> = *<a class="local col4 ref" href="#4buffer" title='buffer' data-ref="4buffer">buffer</a>++;</td></tr>
+<tr><th id="57">57</th><td>		<a class="local col7 ref" href="#7de" title='de' data-ref="7de">de</a> = <a class="tu ref" href="#de85" title='de85' data-use='r' data-ref="de85">de85</a>[<a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a>];</td></tr>
+<tr><th id="58">58</th><td>		<b>if</b> (--<a class="local col7 ref" href="#7de" title='de' data-ref="7de">de</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="59">59</th><td>			<b>return</b> <a class="macro" href="git-compat-util.h.html#446" title="(error(&quot;invalid base85 alphabet %c&quot;, ch), const_error())" data-ref="_M/error">error</a>(<q>"invalid base85 alphabet %c"</q>, <a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a>);</td></tr>
+<tr><th id="60">60</th><td>		<i>/* Detect overflow. */</i></td></tr>
+<tr><th id="61">61</th><td>		<b>if</b> (<var>0xffffffff</var> / <var>85</var> &lt; <a class="local col6 ref" href="#6acc" title='acc' data-ref="6acc">acc</a> ||</td></tr>
+<tr><th id="62">62</th><td>		    <var>0xffffffff</var> - <a class="local col7 ref" href="#7de" title='de' data-ref="7de">de</a> &lt; (<a class="local col6 ref" href="#6acc" title='acc' data-ref="6acc">acc</a> *= <var>85</var>))</td></tr>
+<tr><th id="63">63</th><td>			<b>return</b> <a class="macro" href="git-compat-util.h.html#446" title="(error(&quot;invalid base85 sequence %.5s&quot;, buffer-5), const_error())" data-ref="_M/error">error</a>(<q>"invalid base85 sequence %.5s"</q>, <a class="local col4 ref" href="#4buffer" title='buffer' data-ref="4buffer">buffer</a>-<var>5</var>);</td></tr>
+<tr><th id="64">64</th><td>		<a class="local col6 ref" href="#6acc" title='acc' data-ref="6acc">acc</a> += <a class="local col7 ref" href="#7de" title='de' data-ref="7de">de</a>;</td></tr>
+<tr><th id="65">65</th><td>		<a class="macro" href="#11" title="do { } while (0)" data-ref="_M/say1">say1</a>(<q>" %08x"</q>, acc);</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>		<a class="local col8 ref" href="#8cnt" title='cnt' data-ref="8cnt">cnt</a> = (<a class="local col5 ref" href="#5len" title='len' data-ref="5len">len</a> &lt; <var>4</var>) ? <a class="local col5 ref" href="#5len" title='len' data-ref="5len">len</a> : <var>4</var>;</td></tr>
+<tr><th id="68">68</th><td>		<a class="local col5 ref" href="#5len" title='len' data-ref="5len">len</a> -= <a class="local col8 ref" href="#8cnt" title='cnt' data-ref="8cnt">cnt</a>;</td></tr>
+<tr><th id="69">69</th><td>		<b>do</b> {</td></tr>
+<tr><th id="70">70</th><td>			<a class="local col6 ref" href="#6acc" title='acc' data-ref="6acc">acc</a> = (<a class="local col6 ref" href="#6acc" title='acc' data-ref="6acc">acc</a> &lt;&lt; <var>8</var>) | (<a class="local col6 ref" href="#6acc" title='acc' data-ref="6acc">acc</a> &gt;&gt; <var>24</var>);</td></tr>
+<tr><th id="71">71</th><td>			*<a class="local col3 ref" href="#3dst" title='dst' data-ref="3dst">dst</a>++ = <a class="local col6 ref" href="#6acc" title='acc' data-ref="6acc">acc</a>;</td></tr>
+<tr><th id="72">72</th><td>		} <b>while</b> (--<a class="local col8 ref" href="#8cnt" title='cnt' data-ref="8cnt">cnt</a>);</td></tr>
+<tr><th id="73">73</th><td>	}</td></tr>
+<tr><th id="74">74</th><td>	<a class="macro" href="#10" title="do { } while (0)" data-ref="_M/say">say</a>(<q>"\n"</q>);</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="77">77</th><td>}</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><em>void</em> <dfn class="decl def" id="encode_85" title='encode_85' data-ref="encode_85">encode_85</dfn>(<em>char</em> *<dfn class="local col0 decl" id="10buf" title='buf' data-type='char *' data-ref="10buf">buf</dfn>, <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col1 decl" id="11data" title='data' data-type='const unsigned char *' data-ref="11data">data</dfn>, <em>int</em> <dfn class="local col2 decl" id="12bytes" title='bytes' data-type='int' data-ref="12bytes">bytes</dfn>)</td></tr>
+<tr><th id="80">80</th><td>{</td></tr>
+<tr><th id="81">81</th><td>	<a class="macro" href="#10" title="do { } while (0)" data-ref="_M/say">say</a>(<q>"encode 85"</q>);</td></tr>
+<tr><th id="82">82</th><td>	<b>while</b> (<a class="local col2 ref" href="#12bytes" title='bytes' data-ref="12bytes">bytes</a>) {</td></tr>
+<tr><th id="83">83</th><td>		<em>unsigned</em> <dfn class="local col3 decl" id="13acc" title='acc' data-type='unsigned int' data-ref="13acc">acc</dfn> = <var>0</var>;</td></tr>
+<tr><th id="84">84</th><td>		<em>int</em> <dfn class="local col4 decl" id="14cnt" title='cnt' data-type='int' data-ref="14cnt">cnt</dfn>;</td></tr>
+<tr><th id="85">85</th><td>		<b>for</b> (<a class="local col4 ref" href="#14cnt" title='cnt' data-ref="14cnt">cnt</a> = <var>24</var>; <a class="local col4 ref" href="#14cnt" title='cnt' data-ref="14cnt">cnt</a> &gt;= <var>0</var>; <a class="local col4 ref" href="#14cnt" title='cnt' data-ref="14cnt">cnt</a> -= <var>8</var>) {</td></tr>
+<tr><th id="86">86</th><td>			<em>unsigned</em> <dfn class="local col5 decl" id="15ch" title='ch' data-type='unsigned int' data-ref="15ch">ch</dfn> = *<a class="local col1 ref" href="#11data" title='data' data-ref="11data">data</a>++;</td></tr>
+<tr><th id="87">87</th><td>			<a class="local col3 ref" href="#13acc" title='acc' data-ref="13acc">acc</a> |= <a class="local col5 ref" href="#15ch" title='ch' data-ref="15ch">ch</a> &lt;&lt; <a class="local col4 ref" href="#14cnt" title='cnt' data-ref="14cnt">cnt</a>;</td></tr>
+<tr><th id="88">88</th><td>			<b>if</b> (--<a class="local col2 ref" href="#12bytes" title='bytes' data-ref="12bytes">bytes</a> == <var>0</var>)</td></tr>
+<tr><th id="89">89</th><td>				<b>break</b>;</td></tr>
+<tr><th id="90">90</th><td>		}</td></tr>
+<tr><th id="91">91</th><td>		<a class="macro" href="#11" title="do { } while (0)" data-ref="_M/say1">say1</a>(<q>" %08x"</q>, acc);</td></tr>
+<tr><th id="92">92</th><td>		<b>for</b> (<a class="local col4 ref" href="#14cnt" title='cnt' data-ref="14cnt">cnt</a> = <var>4</var>; <a class="local col4 ref" href="#14cnt" title='cnt' data-ref="14cnt">cnt</a> &gt;= <var>0</var>; <a class="local col4 ref" href="#14cnt" title='cnt' data-ref="14cnt">cnt</a>--) {</td></tr>
+<tr><th id="93">93</th><td>			<em>int</em> <dfn class="local col6 decl" id="16val" title='val' data-type='int' data-ref="16val">val</dfn> = <a class="local col3 ref" href="#13acc" title='acc' data-ref="13acc">acc</a> % <var>85</var>;</td></tr>
+<tr><th id="94">94</th><td>			<a class="local col3 ref" href="#13acc" title='acc' data-ref="13acc">acc</a> /= <var>85</var>;</td></tr>
+<tr><th id="95">95</th><td>			<a class="local col0 ref" href="#10buf" title='buf' data-ref="10buf">buf</a>[<a class="local col4 ref" href="#14cnt" title='cnt' data-ref="14cnt">cnt</a>] = <a class="tu ref" href="#en85" title='en85' data-use='r' data-ref="en85">en85</a>[<a class="local col6 ref" href="#16val" title='val' data-ref="16val">val</a>];</td></tr>
+<tr><th id="96">96</th><td>		}</td></tr>
+<tr><th id="97">97</th><td>		<a class="local col0 ref" href="#10buf" title='buf' data-ref="10buf">buf</a> += <var>5</var>;</td></tr>
+<tr><th id="98">98</th><td>	}</td></tr>
+<tr><th id="99">99</th><td>	<a class="macro" href="#10" title="do { } while (0)" data-ref="_M/say">say</a>(<q>"\n"</q>);</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>	*<a class="local col0 ref" href="#10buf" title='buf' data-ref="10buf">buf</a> = <var>0</var>;</td></tr>
+<tr><th id="102">102</th><td>}</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="104">ifdef</span> <span class="macro" data-ref="_M/DEBUG_85">DEBUG_85</span></u></td></tr>
+<tr><th id="105">105</th><td><em>int</em> main(<em>int</em> ac, <em>char</em> **av)</td></tr>
+<tr><th id="106">106</th><td>{</td></tr>
+<tr><th id="107">107</th><td>	<em>char</em> buf[<var>1024</var>];</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td>	<b>if</b> (!strcmp(av[<var>1</var>], <q>"-e"</q>)) {</td></tr>
+<tr><th id="110">110</th><td>		<em>int</em> len = strlen(av[<var>2</var>]);</td></tr>
+<tr><th id="111">111</th><td>		encode_85(buf, av[<var>2</var>], len);</td></tr>
+<tr><th id="112">112</th><td>		<b>if</b> (len &lt;= <var>26</var>) len = len + <kbd>'A'</kbd> - <var>1</var>;</td></tr>
+<tr><th id="113">113</th><td>		<b>else</b> len = len + <kbd>'a'</kbd> - <var>26</var> - <var>1</var>;</td></tr>
+<tr><th id="114">114</th><td>		printf(<q>"encoded: %c%s\n"</q>, len, buf);</td></tr>
+<tr><th id="115">115</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="116">116</th><td>	}</td></tr>
+<tr><th id="117">117</th><td>	<b>if</b> (!strcmp(av[<var>1</var>], <q>"-d"</q>)) {</td></tr>
+<tr><th id="118">118</th><td>		<em>int</em> len = *av[<var>2</var>];</td></tr>
+<tr><th id="119">119</th><td>		<b>if</b> (<kbd>'A'</kbd> &lt;= len &amp;&amp; len &lt;= <kbd>'Z'</kbd>) len = len - <kbd>'A'</kbd> + <var>1</var>;</td></tr>
+<tr><th id="120">120</th><td>		<b>else</b> len = len - <kbd>'a'</kbd> + <var>26</var> + <var>1</var>;</td></tr>
+<tr><th id="121">121</th><td>		decode_85(buf, av[<var>2</var>]+<var>1</var>, len);</td></tr>
+<tr><th id="122">122</th><td>		printf(<q>"decoded: %.*s\n"</q>, len, buf);</td></tr>
+<tr><th id="123">123</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="124">124</th><td>	}</td></tr>
+<tr><th id="125">125</th><td>	<b>if</b> (!strcmp(av[<var>1</var>], <q>"-t"</q>)) {</td></tr>
+<tr><th id="126">126</th><td>		<em>char</em> t[<var>4</var>] = { -<var>1</var>,-<var>1</var>,-<var>1</var>,-<var>1</var> };</td></tr>
+<tr><th id="127">127</th><td>		encode_85(buf, t, <var>4</var>);</td></tr>
+<tr><th id="128">128</th><td>		printf(<q>"encoded: D%s\n"</q>, buf);</td></tr>
+<tr><th id="129">129</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="130">130</th><td>	}</td></tr>
+<tr><th id="131">131</th><td>}</td></tr>
+<tr><th id="132">132</th><td><u>#<span data-ppcond="104">endif</span></u></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

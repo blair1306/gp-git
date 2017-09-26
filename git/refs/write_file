@@ -1,0 +1,27 @@
+<dec f='codebrowser/cache.h' l='1899' type='void write_file(const char * path, const char * fmt)'/>
+<doc f='codebrowser/cache.h' l='1891'>/**
+ * Like write_file_buf(), but format the contents into a buffer first.
+ * Additionally, write_file() will append a newline if one is not already
+ * present, making it convenient to write text files:
+ *
+ *   write_file(path, &quot;counter: %d&quot;, ctr);
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='191' u='c' c='write_state_text'/>
+<use f='codebrowser/builtin/am.c' l='197' u='c' c='write_state_count'/>
+<use f='codebrowser/builtin/difftool.c' l='544' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='549' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='563' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='568' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/init-db.c' l='334' u='c' c='separate_git_dir'/>
+<use f='codebrowser/builtin/worktree.c' l='246' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='248' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='258' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='259' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='270' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='273' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='503' u='c' c='lock_worktree'/>
+<use f='codebrowser/daemon.c' l='1394' u='c' c='cmd_main'/>
+<use f='codebrowser/dir.c' l='2861' u='c' c='connect_work_tree_and_git_dir'/>
+<use f='codebrowser/sequencer.c' l='374' u='c' c='update_abort_safety_file'/>
+<use f='codebrowser/sequencer.c' l='376' u='c' c='update_abort_safety_file'/>
+<def f='codebrowser/wrapper.c' l='661' ll='674' type='void write_file(const char * path, const char * fmt)'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/object.h' l='110' type='struct object_list * object_list_insert(struct object * item, struct object_list ** list_p)'/>
+<use f='codebrowser/http-push.c' l='731' u='c' c='one_remote_object'/>
+<def f='codebrowser/object.c' l='282' ll='290' type='struct object_list * object_list_insert(struct object * item, struct object_list ** list_p)'/>
+<use f='codebrowser/pack-bitmap.c' l='518' u='c' c='find_objects'/>
+<use f='codebrowser/pack-bitmap.c' l='682' u='c' c='prepare_bitmap_walk'/>
+<use f='codebrowser/pack-bitmap.c' l='684' u='c' c='prepare_bitmap_walk'/>
+<use f='codebrowser/pack-bitmap.c' l='692' u='c' c='prepare_bitmap_walk'/>
+<use f='codebrowser/pack-bitmap.c' l='694' u='c' c='prepare_bitmap_walk'/>
+<use f='codebrowser/walker.c' l='156' u='c' c='process'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/vcs-svn/line_buffer.h' l='23' type='char * buffer_read_line(struct line_buffer * buf)'/>
+<use f='codebrowser/t/helper/test-line-buffer.c' l='81' u='c' c='cmd_main'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='150' u='c' c='get_response_line'/>
+<def f='codebrowser/vcs-svn/line_buffer.c' l='73' ll='92' type='char * buffer_read_line(struct line_buffer * buf)'/>
+<doc f='codebrowser/vcs-svn/line_buffer.c' l='72'>/* Read a line without trailing newline. */</doc>
+<use f='codebrowser/vcs-svn/svndump.c' l='172' u='c' c='read_props'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='333' u='c' c='svndump_read'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='458' u='c' c='svndump_read'/>

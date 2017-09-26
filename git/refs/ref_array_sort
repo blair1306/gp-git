@@ -1,0 +1,6 @@
+<dec f='codebrowser/ref-filter.h' l='111' type='void ref_array_sort(struct ref_sorting * sort, struct ref_array * array)'/>
+<use f='codebrowser/builtin/branch.c' l='417' u='c' c='print_ref_list'/>
+<doc f='codebrowser/ref-filter.h' l='110'>/*  Sort the given ref_array as per the ref_sorting provided */</doc>
+<use f='codebrowser/builtin/for-each-ref.c' l='79' u='c' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='61' u='c' c='list_tags'/>
+<def f='codebrowser/ref-filter.c' l='2044' ll='2047' type='void ref_array_sort(struct ref_sorting * sorting, struct ref_array * array)'/>

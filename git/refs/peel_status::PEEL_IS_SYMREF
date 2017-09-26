@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs/refs-internal.h' l='104' type='-3'/>
+<doc f='codebrowser/refs/refs-internal.h' l='103'>/* ref_entry contains no peeled value because it is a symref: */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='510' u='r' c='peel_entry'/>

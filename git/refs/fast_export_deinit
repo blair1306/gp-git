@@ -1,0 +1,3 @@
+<dec f='codebrowser/vcs-svn/fast_export.h' l='8' type='void fast_export_deinit()'/>
+<def f='codebrowser/vcs-svn/fast_export.c' l='38' ll='42' type='void fast_export_deinit()'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='519' u='c' c='svndump_deinit'/>

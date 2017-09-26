@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>mru.c source code [codebrowser/mru.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/mru.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='mru.c.html'>mru.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="mru.h.html">"mru.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><em>void</em> <dfn class="decl def" id="mru_append" title='mru_append' data-ref="mru_append">mru_append</dfn>(<b>struct</b> <a class="type" href="mru.h.html#mru" title='mru' data-ref="mru">mru</a> *<dfn class="local col1 decl" id="1mru" title='mru' data-type='struct mru *' data-ref="1mru">mru</dfn>, <em>void</em> *<dfn class="local col2 decl" id="2item" title='item' data-type='void *' data-ref="2item">item</dfn>)</td></tr>
+<tr><th id="5">5</th><td>{</td></tr>
+<tr><th id="6">6</th><td>	<b>struct</b> <a class="type" href="mru.h.html#mru_entry" title='mru_entry' data-ref="mru_entry">mru_entry</a> *<dfn class="local col3 decl" id="3cur" title='cur' data-type='struct mru_entry *' data-ref="3cur">cur</dfn> = <a class="ref" href="git-compat-util.h.html#xmalloc" title='xmalloc' data-ref="xmalloc">xmalloc</a>(<b>sizeof</b>(*<a class="local col3 ref" href="#3cur" title='cur' data-ref="3cur">cur</a>));</td></tr>
+<tr><th id="7">7</th><td>	<a class="local col3 ref" href="#3cur" title='cur' data-ref="3cur">cur</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::item" title='mru_entry::item' data-ref="mru_entry::item">item</a> = <a class="local col2 ref" href="#2item" title='item' data-ref="2item">item</a>;</td></tr>
+<tr><th id="8">8</th><td>	<a class="local col3 ref" href="#3cur" title='cur' data-ref="3cur">cur</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::prev" title='mru_entry::prev' data-ref="mru_entry::prev">prev</a> = <a class="local col1 ref" href="#1mru" title='mru' data-ref="1mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::tail" title='mru::tail' data-ref="mru::tail">tail</a>;</td></tr>
+<tr><th id="9">9</th><td>	<a class="local col3 ref" href="#3cur" title='cur' data-ref="3cur">cur</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::next" title='mru_entry::next' data-ref="mru_entry::next">next</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td>	<b>if</b> (<a class="local col1 ref" href="#1mru" title='mru' data-ref="1mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::tail" title='mru::tail' data-ref="mru::tail">tail</a>)</td></tr>
+<tr><th id="12">12</th><td>		<a class="local col1 ref" href="#1mru" title='mru' data-ref="1mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::tail" title='mru::tail' data-ref="mru::tail">tail</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::next" title='mru_entry::next' data-ref="mru_entry::next">next</a> = <a class="local col3 ref" href="#3cur" title='cur' data-ref="3cur">cur</a>;</td></tr>
+<tr><th id="13">13</th><td>	<b>else</b></td></tr>
+<tr><th id="14">14</th><td>		<a class="local col1 ref" href="#1mru" title='mru' data-ref="1mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::head" title='mru::head' data-ref="mru::head">head</a> = <a class="local col3 ref" href="#3cur" title='cur' data-ref="3cur">cur</a>;</td></tr>
+<tr><th id="15">15</th><td>	<a class="local col1 ref" href="#1mru" title='mru' data-ref="1mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::tail" title='mru::tail' data-ref="mru::tail">tail</a> = <a class="local col3 ref" href="#3cur" title='cur' data-ref="3cur">cur</a>;</td></tr>
+<tr><th id="16">16</th><td>}</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><em>void</em> <dfn class="decl def" id="mru_mark" title='mru_mark' data-ref="mru_mark">mru_mark</dfn>(<b>struct</b> <a class="type" href="mru.h.html#mru" title='mru' data-ref="mru">mru</a> *<dfn class="local col4 decl" id="4mru" title='mru' data-type='struct mru *' data-ref="4mru">mru</dfn>, <b>struct</b> <a class="type" href="mru.h.html#mru_entry" title='mru_entry' data-ref="mru_entry">mru_entry</a> *<dfn class="local col5 decl" id="5entry" title='entry' data-type='struct mru_entry *' data-ref="5entry">entry</dfn>)</td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td>	<i>/* If we're already at the front of the list, nothing to do */</i></td></tr>
+<tr><th id="21">21</th><td>	<b>if</b> (<a class="local col4 ref" href="#4mru" title='mru' data-ref="4mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::head" title='mru::head' data-ref="mru::head">head</a> == <a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>)</td></tr>
+<tr><th id="22">22</th><td>		<b>return</b>;</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td>	<i>/* Otherwise, remove us from our current slot... */</i></td></tr>
+<tr><th id="25">25</th><td>	<b>if</b> (<a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::prev" title='mru_entry::prev' data-ref="mru_entry::prev">prev</a>)</td></tr>
+<tr><th id="26">26</th><td>		<a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::prev" title='mru_entry::prev' data-ref="mru_entry::prev">prev</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::next" title='mru_entry::next' data-ref="mru_entry::next">next</a> = <a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::next" title='mru_entry::next' data-ref="mru_entry::next">next</a>;</td></tr>
+<tr><th id="27">27</th><td>	<b>if</b> (<a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::next" title='mru_entry::next' data-ref="mru_entry::next">next</a>)</td></tr>
+<tr><th id="28">28</th><td>		<a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::next" title='mru_entry::next' data-ref="mru_entry::next">next</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::prev" title='mru_entry::prev' data-ref="mru_entry::prev">prev</a> = <a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::prev" title='mru_entry::prev' data-ref="mru_entry::prev">prev</a>;</td></tr>
+<tr><th id="29">29</th><td>	<b>else</b></td></tr>
+<tr><th id="30">30</th><td>		<a class="local col4 ref" href="#4mru" title='mru' data-ref="4mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::tail" title='mru::tail' data-ref="mru::tail">tail</a> = <a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::prev" title='mru_entry::prev' data-ref="mru_entry::prev">prev</a>;</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td>	<i>/* And insert us at the beginning. */</i></td></tr>
+<tr><th id="33">33</th><td>	<a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::prev" title='mru_entry::prev' data-ref="mru_entry::prev">prev</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="34">34</th><td>	<a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::next" title='mru_entry::next' data-ref="mru_entry::next">next</a> = <a class="local col4 ref" href="#4mru" title='mru' data-ref="4mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::head" title='mru::head' data-ref="mru::head">head</a>;</td></tr>
+<tr><th id="35">35</th><td>	<b>if</b> (<a class="local col4 ref" href="#4mru" title='mru' data-ref="4mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::head" title='mru::head' data-ref="mru::head">head</a>)</td></tr>
+<tr><th id="36">36</th><td>		<a class="local col4 ref" href="#4mru" title='mru' data-ref="4mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::head" title='mru::head' data-ref="mru::head">head</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::prev" title='mru_entry::prev' data-ref="mru_entry::prev">prev</a> = <a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>;</td></tr>
+<tr><th id="37">37</th><td>	<a class="local col4 ref" href="#4mru" title='mru' data-ref="4mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::head" title='mru::head' data-ref="mru::head">head</a> = <a class="local col5 ref" href="#5entry" title='entry' data-ref="5entry">entry</a>;</td></tr>
+<tr><th id="38">38</th><td>}</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><em>void</em> <dfn class="decl def" id="mru_clear" title='mru_clear' data-ref="mru_clear">mru_clear</dfn>(<b>struct</b> <a class="type" href="mru.h.html#mru" title='mru' data-ref="mru">mru</a> *<dfn class="local col6 decl" id="6mru" title='mru' data-type='struct mru *' data-ref="6mru">mru</dfn>)</td></tr>
+<tr><th id="41">41</th><td>{</td></tr>
+<tr><th id="42">42</th><td>	<b>struct</b> <a class="type" href="mru.h.html#mru_entry" title='mru_entry' data-ref="mru_entry">mru_entry</a> *<dfn class="local col7 decl" id="7p" title='p' data-type='struct mru_entry *' data-ref="7p">p</dfn> = <a class="local col6 ref" href="#6mru" title='mru' data-ref="6mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::head" title='mru::head' data-ref="mru::head">head</a>;</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>	<b>while</b> (<a class="local col7 ref" href="#7p" title='p' data-ref="7p">p</a>) {</td></tr>
+<tr><th id="45">45</th><td>		<b>struct</b> <a class="type" href="mru.h.html#mru_entry" title='mru_entry' data-ref="mru_entry">mru_entry</a> *<dfn class="local col8 decl" id="8to_free" title='to_free' data-type='struct mru_entry *' data-ref="8to_free">to_free</dfn> = <a class="local col7 ref" href="#7p" title='p' data-ref="7p">p</a>;</td></tr>
+<tr><th id="46">46</th><td>		<a class="local col7 ref" href="#7p" title='p' data-ref="7p">p</a> = <a class="local col7 ref" href="#7p" title='p' data-ref="7p">p</a>-&gt;<a class="ref" href="mru.h.html#mru_entry::next" title='mru_entry::next' data-ref="mru_entry::next">next</a>;</td></tr>
+<tr><th id="47">47</th><td>		<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col8 ref" href="#8to_free" title='to_free' data-ref="8to_free">to_free</a>);</td></tr>
+<tr><th id="48">48</th><td>	}</td></tr>
+<tr><th id="49">49</th><td>	<a class="local col6 ref" href="#6mru" title='mru' data-ref="6mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::head" title='mru::head' data-ref="mru::head">head</a> = <a class="local col6 ref" href="#6mru" title='mru' data-ref="6mru">mru</a>-&gt;<a class="ref" href="mru.h.html#mru::tail" title='mru::tail' data-ref="mru::tail">tail</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="50">50</th><td>}</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

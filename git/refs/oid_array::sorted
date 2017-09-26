@@ -1,0 +1,9 @@
+<dec f='codebrowser/sha1-array.h' l='8' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/fsck.c' l='141' u='r' c='init_skiplist'/>
+<use f='codebrowser/fsck.c' l='168' u='w' c='init_skiplist'/>
+<use f='codebrowser/sha1-array.c' l='9' u='w' c='oid_array_append'/>
+<use f='codebrowser/sha1-array.c' l='20' u='w' c='oid_array_sort'/>
+<use f='codebrowser/sha1-array.c' l='31' u='r' c='oid_array_lookup'/>
+<use f='codebrowser/sha1-array.c' l='41' u='w' c='oid_array_clear'/>
+<use f='codebrowser/sha1-array.c' l='50' u='r' c='oid_array_for_each_unique'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/builtin/pull.c' l='29' type='2'/>
+<use f='codebrowser/builtin/pull.c' l='49' u='r' c='parse_config_rebase'/>
+<use f='codebrowser/builtin/pull.c' l='776' u='r' c='run_rebase'/>

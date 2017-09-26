@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='152' type='int cmd_commit_tree(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/commit-tree.c' l='40' ll='130' type='int cmd_commit_tree(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='387'/>
+<use f='codebrowser/git.c' l='387'/>
+<use f='codebrowser/git.c' l='387'/>
+<use f='codebrowser/git.c' l='387'/>

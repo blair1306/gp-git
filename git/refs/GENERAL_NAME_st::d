@@ -1,0 +1,5 @@
+<dec f='include/openssl/x509v3.h' l='206' type='union (anonymous union at /usr/include/openssl/x509v3.h:188:5)'/>
+<offset>64</offset>
+<use f='codebrowser/imap-send.c' l='257' u='m' c='verify_hostname'/>
+<use f='codebrowser/imap-send.c' l='257' u='m' c='verify_hostname'/>
+<use f='codebrowser/imap-send.c' l='258' u='m' c='verify_hostname'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/config.h' l='130' ll='133'/>
+<size>16</size>
+<mbr r='configset_list_item::e' o='0' t='struct config_set_element *'/>
+<mbr r='configset_list_item::value_index' o='64' t='int'/>

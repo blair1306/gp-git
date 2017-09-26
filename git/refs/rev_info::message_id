@@ -1,0 +1,8 @@
+<dec f='codebrowser/revision.h' l='170' type='char *'/>
+<offset>1664</offset>
+<use f='codebrowser/builtin/log.c' l='930' u='w' c='gen_message_id'/>
+<use f='codebrowser/builtin/log.c' l='1771' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1796' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1799' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='364' u='r' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='365' u='r' c='log_write_email_headers'/>

@@ -1,0 +1,24 @@
+<def f='codebrowser/hashmap.h' l='123' ll='132' type='unsigned int sha1hash(const unsigned char * sha1)'/>
+<doc f='codebrowser/hashmap.h' l='115'>/*
+ * Converts a cryptographic hash (e.g. SHA-1) into an int-sized hash code
+ * for use in hash tables. Cryptographic hashes are supposed to have
+ * uniform distribution, so in contrast to `memhash()`, this just copies
+ * the first `sizeof(int)` bytes without shuffling any bits. Note that
+ * the results will be different on big-endian and little-endian
+ * platforms, so they should not be stored or transferred over the net.
+ */</doc>
+<use f='codebrowser/builtin/describe.c' l='70' u='c' c='find_commit_name'/>
+<use f='codebrowser/builtin/describe.c' l='117' u='c' c='add_to_known_names'/>
+<use f='codebrowser/khash.h' l='321' u='c' c='kh_get_sha1'/>
+<use f='codebrowser/khash.h' l='321' u='c' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='321' u='c' c='kh_put_sha1'/>
+<use f='codebrowser/khash.h' l='324' u='c' c='kh_get_sha1_pos'/>
+<use f='codebrowser/khash.h' l='324' u='c' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='324' u='c' c='kh_put_sha1_pos'/>
+<use f='codebrowser/decorate.c' l='11' u='c' c='hash_obj'/>
+<use f='codebrowser/diffcore-rename.c' l='266' u='c' c='hash_filespec'/>
+<use f='codebrowser/object.c' l='61' u='c' c='hash_obj'/>
+<use f='codebrowser/oidset.c' l='25' u='c' c='oidset_contains'/>
+<use f='codebrowser/oidset.c' l='40' u='c' c='oidset_insert'/>
+<use f='codebrowser/pack-objects.c' l='12' u='c' c='locate_object_entry_hash'/>
+<use f='codebrowser/patch-ids.c' l='86' u='c' c='init_patch_id_entry'/>

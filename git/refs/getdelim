@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='668' type='__ssize_t getdelim(char **restrict __lineptr, size_t *restrict __n, int __delimiter, FILE *restrict __stream)'/>
+<use f='codebrowser/strbuf.c' l='480' u='c' c='strbuf_getwholeline'/>

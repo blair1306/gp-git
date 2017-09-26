@@ -1,0 +1,12 @@
+<dec f='codebrowser/attr.h' l='22'/>
+<use f='codebrowser/archive.c' l='131' u='c'/>
+<use f='codebrowser/archive.c' l='133' u='c'/>
+<doc f='codebrowser/attr.h' l='21'>/* For public to check git_attr_check results */</doc>
+<use f='codebrowser/builtin/check-attr.c' l='36' u='c'/>
+<use f='codebrowser/convert.c' l='974' u='c'/>
+<use f='codebrowser/convert.c' l='1005' u='c'/>
+<use f='codebrowser/convert.c' l='1017' u='c'/>
+<use f='codebrowser/dir.c' l='241' u='c'/>
+<use f='codebrowser/ll-merge.c' l='314' u='c'/>
+<use f='codebrowser/userdiff.c' l='275' u='c'/>
+<use f='codebrowser/ws.c' l='85' u='c'/>

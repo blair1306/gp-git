@@ -1,0 +1,10 @@
+<dec f='codebrowser/dir.h' l='78' type='struct stat_data'/>
+<offset>0</offset>
+<use f='codebrowser/dir.c' l='625' u='a' c='read_skip_worktree_file_from_index'/>
+<use f='codebrowser/dir.c' l='625' u='r' c='read_skip_worktree_file_from_index'/>
+<use f='codebrowser/dir.c' l='782' u='a' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='800' u='a' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='811' u='a' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='2487' u='a' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2488' u='a' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2671' u='a' c='load_sha1_stat'/>

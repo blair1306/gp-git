@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1761' type='int for_each_file_in_obj_subdir(unsigned int subdir_nr, struct strbuf * path, each_loose_object_fn * obj_cb, each_loose_cruft_fn * cruft_cb, each_loose_subdir_fn * subdir_cb, void * data)'/>
+<def f='codebrowser/sha1_file.c' l='3712' ll='3778' type='int for_each_file_in_obj_subdir(unsigned int subdir_nr, struct strbuf * path, each_loose_object_fn * obj_cb, each_loose_cruft_fn * cruft_cb, each_loose_subdir_fn * subdir_cb, void * data)'/>
+<use f='codebrowser/sha1_file.c' l='3790' u='c' c='for_each_loose_file_in_objdir_buf'/>
+<use f='codebrowser/sha1_name.c' l='113' u='c' c='find_short_object_filename'/>

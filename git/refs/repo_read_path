@@ -1,0 +1,3 @@
+<dec f='codebrowser/vcs-svn/repo_tree.h' l='14' type='const char * repo_read_path(const char * path, uint32_t * mode_out)'/>
+<def f='codebrowser/vcs-svn/repo_tree.c' l='11' ll='26' type='const char * repo_read_path(const char * path, uint32_t * mode_out)'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='252' u='c' c='handle_node'/>

@@ -1,0 +1,5 @@
+<dec f='include/expat.h' l='690' type='void XML_UseParserAsHandlerArg(XML_Parser parser)'/>
+<doc f='include/expat.h' l='685'>/* If this function is called, then the parser will be passed as the
+   first argument to callbacks instead of userData.  The userData will
+   still be accessible using XML_GetUserData.
+*/</doc>

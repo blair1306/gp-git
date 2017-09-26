@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/ioctl-types.h' l='30' type='unsigned short'/>
+<offset>16</offset>
+<use f='codebrowser/pager.c' l='165' u='r' c='term_columns'/>
+<use f='codebrowser/pager.c' l='166' u='r' c='term_columns'/>

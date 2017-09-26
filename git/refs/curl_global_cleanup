@@ -1,0 +1,11 @@
+<dec f='include/curl/curl.h' l='2046' type='void curl_global_cleanup()'/>
+<doc f='include/curl/curl.h' l='2038'>/*
+ * NAME curl_global_cleanup()
+ *
+ * DESCRIPTION
+ *
+ * curl_global_cleanup() should be invoked exactly once for each application
+ * that uses libcurl
+ */</doc>
+<use f='codebrowser/http.c' l='1014' u='c' c='http_cleanup'/>
+<use f='codebrowser/imap-send.c' l='1491' u='c' c='curl_append_msgs_to_imap'/>

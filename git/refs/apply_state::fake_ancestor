@@ -1,0 +1,10 @@
+<dec f='codebrowser/apply.h' l='67' type='const char *'/>
+<use f='codebrowser/apply.c' l='138' u='r' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='4095' u='r' c='build_fake_ancestor'/>
+<use f='codebrowser/apply.c' l='4101' u='r' c='build_fake_ancestor'/>
+<use f='codebrowser/apply.c' l='4721' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4947' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4947' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4947' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4947' u='a' c='apply_parse_options'/>
+<offset>768</offset>

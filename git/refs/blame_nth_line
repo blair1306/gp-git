@@ -1,0 +1,9 @@
+<dec f='codebrowser/blame.h' l='168' type='const char * blame_nth_line(struct blame_scoreboard * sb, long lno)'/>
+<def f='codebrowser/blame.c' l='678' ll='681' type='const char * blame_nth_line(struct blame_scoreboard * sb, long lno)'/>
+<use f='codebrowser/blame.c' l='988' u='c' c='blame_entry_score'/>
+<use f='codebrowser/blame.c' l='989' u='c' c='blame_entry_score'/>
+<use f='codebrowser/blame.c' l='1098' u='c' c='find_copy_in_blob'/>
+<use f='codebrowser/blame.c' l='1100' u='c' c='find_copy_in_blob'/>
+<use f='codebrowser/builtin/blame.c' l='73' u='c' c='nth_line_cb'/>
+<use f='codebrowser/builtin/blame.c' l='348' u='c' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='382' u='c' c='emit_other'/>

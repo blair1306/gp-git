@@ -1,0 +1,11 @@
+<dec f='codebrowser/config.h' l='20' type='const char *'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/config.c' l='62' u='a'/>
+<use f='codebrowser/builtin/config.c' l='62' u='a'/>
+<use f='codebrowser/builtin/config.c' l='62' u='a'/>
+<use f='codebrowser/builtin/config.c' l='62' u='a'/>
+<use f='codebrowser/builtin/config.c' l='385' u='r' c='check_write'/>
+<use f='codebrowser/builtin/config.c' l='493' u='r' c='cmd_config'/>
+<use f='codebrowser/builtin/config.c' l='606' u='r' c='cmd_config'/>
+<use f='codebrowser/config.c' l='1604' u='r' c='config_with_options'/>
+<use f='codebrowser/config.c' l='1605' u='r' c='config_with_options'/>

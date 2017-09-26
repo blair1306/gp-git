@@ -1,0 +1,10 @@
+<def f='codebrowser/run-command.h' l='108' ll='113' type='int capture_command(struct child_process * cmd, struct strbuf * out, size_t hint)'/>
+<doc f='codebrowser/run-command.h' l='104'>/**
+ * Convenience wrapper around pipe_command for the common case
+ * of capturing only stdout.
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='723' u='c' c='split_mail_mbox'/>
+<use f='codebrowser/builtin/pull.c' l='715' u='c' c='get_rebase_fork_point'/>
+<use f='codebrowser/submodule.c' l='874' u='c' c='submodule_has_commits'/>
+<use f='codebrowser/trailer.c' l='240' u='c' c='apply_command'/>
+<use f='codebrowser/wt-status.c' l='848' u='c' c='wt_longstatus_print_submodule_summary'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/pack-objects.h' l='14' type='void *'/>
+<use f='codebrowser/builtin/pack-objects.c' l='268' u='r' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='268' u='w' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='270' u='r' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='272' u='r' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='273' u='w' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1928' u='r' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1930' u='r' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1932' u='w' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1937' u='w' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2064' u='r' c='find_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2065' u='a' c='find_deltas'/>
+<offset>640</offset>
+<doc f='codebrowser/pack-objects.h' l='14'>/* cached delta (uncompressed) */</doc>

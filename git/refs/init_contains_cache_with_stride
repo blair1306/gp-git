@@ -1,0 +1,2 @@
+<def f='codebrowser/ref-filter.c' l='1498' macro='1' type='void init_contains_cache_with_stride(struct contains_cache * s, unsigned int stride)'/>
+<use f='codebrowser/ref-filter.c' l='1498' macro='1' u='c'/>

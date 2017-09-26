@@ -1,0 +1,18 @@
+<def f='codebrowser/git-compat-util.h' l='531' ll='535' type='int ends_with(const char * str, const char * suffix)'/>
+<use f='codebrowser/builtin/add.c' l='324' u='c' c='check_embedded_repo'/>
+<use f='codebrowser/builtin/clone.c' l='608' u='c' c='write_followtags'/>
+<use f='codebrowser/builtin/fetch.c' l='261' u='c' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/merge-recursive.c' l='32' u='c' c='cmd_merge_recursive'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='153' u='c' c='relative_url'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='544' u='c' c='add_possible_reference_from_superproject'/>
+<use f='codebrowser/builtin/verify-pack.c' l='32' u='c' c='verify_one_pack'/>
+<use f='codebrowser/refs/files-backend.c' l='186' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='2011' u='c' c='files_reflog_iterator_advance'/>
+<use f='codebrowser/sha1_file.c' l='1486' u='c' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1487' u='c' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1488' u='c' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1489' u='c' c='prepare_packed_git_one'/>
+<use f='codebrowser/tmp-objdir.c' l='183' u='c' c='pack_copy_priority'/>
+<use f='codebrowser/tmp-objdir.c' l='185' u='c' c='pack_copy_priority'/>
+<use f='codebrowser/tmp-objdir.c' l='187' u='c' c='pack_copy_priority'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='171' u='c' c='parse_cat_response_line'/>

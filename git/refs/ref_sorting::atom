@@ -1,0 +1,8 @@
+<dec f='codebrowser/ref-filter.h' l='30' type='int'/>
+<offset>64</offset>
+<doc f='codebrowser/ref-filter.h' l='30'>/* index into used_atom array (internal) */</doc>
+<use f='codebrowser/ref-filter.c' l='2008' u='r' c='cmp_ref_sorting'/>
+<use f='codebrowser/ref-filter.c' l='2011' u='r' c='cmp_ref_sorting'/>
+<use f='codebrowser/ref-filter.c' l='2012' u='r' c='cmp_ref_sorting'/>
+<use f='codebrowser/ref-filter.c' l='2147' u='w' c='ref_default_sorting'/>
+<use f='codebrowser/ref-filter.c' l='2166' u='w' c='parse_ref_sorting'/>

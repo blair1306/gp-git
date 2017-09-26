@@ -1,0 +1,4 @@
+<dec f='codebrowser/diffcore.h' l='71' type='unsigned int'/>
+<offset>153</offset>
+<use f='codebrowser/diff.c' l='4398' macro='1' u='r'/>
+<use f='codebrowser/diffcore-rename.c' l='224' u='w' c='record_rename_pair'/>

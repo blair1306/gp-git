@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin/clean.c' l='41' type='4'/>
+<use f='codebrowser/builtin/clean.c' l='49'/>
+<use f='codebrowser/builtin/clean.c' l='96' u='r' c='parse_clean_color_slot'/>
+<use f='codebrowser/builtin/clean.c' l='296' u='r' c='prompt_help_cmd'/>
+<use f='codebrowser/builtin/clean.c' l='790' u='r' c='help_cmd'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='937' type='const unsigned char [20]'/>
+<use f='codebrowser/cache.h' l='952' u='r' c='is_null_sha1'/>
+<use f='codebrowser/cache.h' l='957' u='r' c='is_null_oid'/>
+<use f='codebrowser/branch.c' l='309' u='r' c='create_branch'/>
+<use f='codebrowser/builtin/clone.c' l='755' u='r' c='checkout'/>
+<use f='codebrowser/builtin/commit.c' l='1787' u='r' c='cmd_commit'/>
+<use f='codebrowser/builtin/fast-export.c' l='968' u='r' c='handle_deletes'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='324' u='r' c='module_list'/>
+<use f='codebrowser/builtin/worktree.c' l='270' u='r' c='add_worktree'/>
+<use f='codebrowser/merge-recursive.c' l='230' u='r' c='add_cacheinfo'/>
+<use f='codebrowser/refs.c' l='958' u='r' c='ref_transaction_create'/>
+<use f='codebrowser/refs.c' l='970' u='r' c='ref_transaction_delete'/>
+<use f='codebrowser/sequencer.c' l='395' u='r' c='fast_forward_to'/>
+<def f='codebrowser/sha1_file.c' l='35' type='const unsigned char [20]'/>
+<use f='codebrowser/submodule-config.c' l='570' u='r' c='submodule_config_option'/>

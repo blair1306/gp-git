@@ -1,0 +1,16 @@
+<dec f='codebrowser/hashmap.h' l='338' type='void * hashmap_remove(struct hashmap * map, const void * key, const void * keydata)'/>
+<doc f='codebrowser/hashmap.h' l='331'>/*
+ * Removes a hashmap entry matching the specified key. If the hashmap contains
+ * duplicate entries equal to the specified key, only one of them will be
+ * removed. Returns the removed entry, or NULL if not found.
+ *
+ * Argument explanation is the same as in `hashmap_get`.
+ */</doc>
+<def f='codebrowser/hashmap.c' l='214' ll='231' type='void * hashmap_remove(struct hashmap * map, const void * key, const void * keydata)'/>
+<use f='codebrowser/hashmap.c' l='235' u='c' c='hashmap_put'/>
+<use f='codebrowser/name-hash.c' l='98' u='c' c='remove_dir_entry'/>
+<use f='codebrowser/name-hash.c' l='629' u='c' c='remove_name_hash'/>
+<use f='codebrowser/sha1_file.c' l='2303' u='c' c='detach_delta_base_cache_entry'/>
+<use f='codebrowser/sub-process.c' l='61' u='c' c='subprocess_stop'/>
+<use f='codebrowser/submodule-config.c' l='136' u='c' c='cache_remove_path'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='222' u='c' c='cmd_main'/>

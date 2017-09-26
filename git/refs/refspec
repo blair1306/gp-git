@@ -1,0 +1,8 @@
+<def f='codebrowser/remote.h' l='70' ll='78'/>
+<size>24</size>
+<mbr r='refspec::force' o='0' t='unsigned int'/>
+<mbr r='refspec::pattern' o='1' t='unsigned int'/>
+<mbr r='refspec::matching' o='2' t='unsigned int'/>
+<mbr r='refspec::exact_sha1' o='3' t='unsigned int'/>
+<mbr r='refspec::src' o='64' t='char *'/>
+<mbr r='refspec::dst' o='128' t='char *'/>

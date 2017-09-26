@@ -1,0 +1,5 @@
+<def f='codebrowser/tree-walk.h' l='10' ll='14'/>
+<size>40</size>
+<mbr r='tree_desc::buffer' o='0' t='const void *'/>
+<mbr r='tree_desc::entry' o='64' t='struct name_entry'/>
+<mbr r='tree_desc::size' o='256' t='unsigned int'/>

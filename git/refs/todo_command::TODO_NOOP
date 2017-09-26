@@ -1,0 +1,5 @@
+<dec f='codebrowser/sequencer.c' l='767' type='7'/>
+<use f='codebrowser/sequencer.c' l='798' u='r' c='is_noop'/>
+<use f='codebrowser/sequencer.c' l='1255' u='r' c='parse_insn_line'/>
+<use f='codebrowser/sequencer.c' l='1309' u='r' c='parse_insn_buffer'/>
+<doc f='codebrowser/sequencer.c' l='766'>/* commands that do nothing but are counted for reporting progress */</doc>

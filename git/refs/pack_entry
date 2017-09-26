@@ -1,0 +1,5 @@
+<def f='codebrowser/cache.h' l='1616' ll='1620'/>
+<size>40</size>
+<mbr r='pack_entry::offset' o='0' t='off_t'/>
+<mbr r='pack_entry::sha1' o='64' t='unsigned char [20]'/>
+<mbr r='pack_entry::p' o='256' t='struct packed_git *'/>

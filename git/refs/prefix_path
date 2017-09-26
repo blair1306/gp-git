@@ -1,0 +1,14 @@
+<dec f='codebrowser/cache.h' l='543' type='char * prefix_path(const char * prefix, int len, const char * path)'/>
+<use f='codebrowser/builtin/blame.c' l='583' u='c' c='add_prefix'/>
+<use f='codebrowser/builtin/check-attr.c' l='63' u='c' c='check_attr'/>
+<use f='codebrowser/builtin/checkout-index.c' l='221' u='c' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout-index.c' l='243' u='c' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/mv.c' l='54' u='c' c='internal_prefix_pathspec'/>
+<use f='codebrowser/builtin/mv.c' l='216' u='c' c='cmd_mv'/>
+<use f='codebrowser/builtin/update-index.c' l='701' u='c' c='do_unresolve'/>
+<use f='codebrowser/builtin/update-index.c' l='1051' u='c' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='1096' u='c' c='cmd_update_index'/>
+<use f='codebrowser/line-log.c' l='582' u='c' c='parse_lines'/>
+<def f='codebrowser/setup.c' l='118' ll='124' type='char * prefix_path(const char * prefix, int len, const char * path)'/>
+<use f='codebrowser/sha1_name.c' l='1494' u='c' c='resolve_relative_path'/>
+<use f='codebrowser/t/helper/test-path-utils.c' l='235' u='c' c='cmd_main'/>

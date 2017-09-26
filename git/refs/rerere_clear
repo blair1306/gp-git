@@ -1,0 +1,11 @@
+<dec f='codebrowser/rerere.h' l='36' type='void rerere_clear(struct string_list * )'/>
+<use f='codebrowser/builtin/am.c' l='2054' u='c' c='am_rerere_clear'/>
+<use f='codebrowser/builtin/rerere.c' l='85' u='c' c='cmd_rerere'/>
+<def f='codebrowser/rerere.c' l='1237' ll='1253' type='void rerere_clear(struct string_list * merge_rr)'/>
+<doc f='codebrowser/rerere.c' l='1230'>/*
+ * During a conflict resolution, after &quot;rerere&quot; recorded the
+ * preimages, abandon them if the user did not resolve them or
+ * record their resolutions.  And drop $GIT_DIR/MERGE_RR.
+ *
+ * NEEDSWORK: shouldn&apos;t we be calling this from &quot;reset --hard&quot;?
+ */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1725' type='void * unpack_entry(struct packed_git * , off_t , enum object_type * , unsigned long * )'/>
+<use f='codebrowser/fast-import.c' l='1372' u='c' c='gfi_unpack_entry'/>
+<use f='codebrowser/pack-check.c' l='135' u='c' c='verify_packfile'/>
+<use f='codebrowser/sha1_file.c' l='2316' u='c' c='cache_or_unpack_entry'/>
+<def f='codebrowser/sha1_file.c' l='2509' ll='2695' type='void * unpack_entry(struct packed_git * p, off_t obj_offset, enum object_type * final_type, unsigned long * final_size)'/>

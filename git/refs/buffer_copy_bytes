@@ -1,0 +1,6 @@
+<dec f='codebrowser/vcs-svn/line_buffer.h' l='27' type='off_t buffer_copy_bytes(struct line_buffer * buf, off_t len)'/>
+<use f='codebrowser/t/helper/test-line-buffer.c' l='32' u='c' c='handle_command'/>
+<doc f='codebrowser/vcs-svn/line_buffer.h' l='26'>/* Returns number of bytes read (not necessarily written). */</doc>
+<use f='codebrowser/vcs-svn/fast_export.c' l='256' u='c' c='fast_export_data'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='328' u='c' c='fast_export_blob_delta'/>
+<def f='codebrowser/vcs-svn/line_buffer.c' l='100' ll='114' type='off_t buffer_copy_bytes(struct line_buffer * buf, off_t nbytes)'/>

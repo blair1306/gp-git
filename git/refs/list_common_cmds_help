@@ -1,0 +1,4 @@
+<dec f='codebrowser/help.h' l='19' type='void list_common_cmds_help()'/>
+<use f='codebrowser/builtin/help.c' l='481' u='c' c='cmd_help'/>
+<use f='codebrowser/git.c' l='664' u='c' c='cmd_main'/>
+<def f='codebrowser/help.c' l='205' ll='229' type='void list_common_cmds_help()'/>

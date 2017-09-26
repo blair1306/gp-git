@@ -1,0 +1,15 @@
+<dec f='codebrowser/apply.h' l='37' type='const char *'/>
+<use f='codebrowser/apply.c' l='82' u='w' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='783' u='r' c='guess_p_value'/>
+<use f='codebrowser/apply.c' l='788' u='r' c='guess_p_value'/>
+<use f='codebrowser/apply.c' l='789' u='r' c='guess_p_value'/>
+<use f='codebrowser/apply.c' l='792' u='r' c='guess_p_value'/>
+<use f='codebrowser/apply.c' l='793' u='r' c='guess_p_value'/>
+<use f='codebrowser/apply.c' l='2059' u='r' c='prefix_one'/>
+<use f='codebrowser/apply.c' l='2065' u='r' c='prefix_patch'/>
+<use f='codebrowser/apply.c' l='2091' u='r' c='use_patch'/>
+<use f='codebrowser/apply.c' l='2091' u='r' c='use_patch'/>
+<use f='codebrowser/apply.c' l='2093' u='r' c='use_patch'/>
+<use f='codebrowser/apply.c' l='4824' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4984' u='r' c='apply_parse_options'/>
+<offset>0</offset>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/remote.h' l='98' type='enum (anonymous enum at /home/jon/workspace/git/remote.h:94:2)'/>
+<offset>672</offset>
+<use f='codebrowser/fetch-pack.c' l='646' u='w' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='672' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='683' u='w' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='687' u='w' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='1183' u='r' c='report_unmatched_refs'/>

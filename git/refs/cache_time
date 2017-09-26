@@ -1,0 +1,9 @@
+<def f='codebrowser/cache.h' l='160' ll='163'/>
+<size>8</size>
+<doc f='codebrowser/cache.h' l='155'>/*
+ * The &quot;cache_time&quot; is just the low 32 bits of the
+ * time. It doesn&apos;t matter if it overflows - we only
+ * check it for equality in the 32 bits we save.
+ */</doc>
+<mbr r='cache_time::sec' o='0' t='uint32_t'/>
+<mbr r='cache_time::nsec' o='32' t='uint32_t'/>

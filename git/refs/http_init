@@ -1,0 +1,5 @@
+<dec f='codebrowser/http.h' l='106' type='void http_init(struct remote * remote, const char * url, int proactive_auth)'/>
+<use f='codebrowser/http-fetch.c' l='69' u='c' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1773' u='c' c='cmd_main'/>
+<def f='codebrowser/http.c' l='899' ll='990' type='void http_init(struct remote * remote, const char * url, int proactive_auth)'/>
+<use f='codebrowser/remote-curl.c' l='1055' u='c' c='cmd_main'/>

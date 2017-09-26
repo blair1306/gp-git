@@ -1,0 +1,6 @@
+<dec f='codebrowser/remote.h' l='51' type='const char *'/>
+<offset>1088</offset>
+<use f='codebrowser/remote.c' l='418' u='r' c='handle_config'/>
+<use f='codebrowser/remote.c' l='419' u='w' c='handle_config'/>
+<use f='codebrowser/transport.c' l='833' u='r' c='transport_get'/>
+<use f='codebrowser/transport.c' l='834' u='r' c='transport_get'/>

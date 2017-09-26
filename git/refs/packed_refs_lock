@@ -1,0 +1,11 @@
+<dec f='codebrowser/refs/packed-backend.h' l='12' type='int packed_refs_lock(struct ref_store * ref_store, int flags, struct strbuf * err)'/>
+<use f='codebrowser/refs/files-backend.c' l='1100' u='c' c='files_pack_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='1153' u='c' c='files_delete_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='2579' u='c' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2698' u='c' c='files_initial_transaction_commit'/>
+<doc f='codebrowser/refs/packed-backend.h' l='7'>/*
+ * Lock the packed-refs file for writing. Flags is passed to
+ * hold_lock_file_for_update(). Return 0 on success. On errors, write
+ * an error message to `err` and return a nonzero value.
+ */</doc>
+<def f='codebrowser/refs/packed-backend.c' l='521' ll='567' type='int packed_refs_lock(struct ref_store * ref_store, int flags, struct strbuf * err)'/>

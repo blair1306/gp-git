@@ -1,0 +1,4 @@
+<dec f='codebrowser/color.h' l='30'/>
+<use f='codebrowser/builtin/branch.c' l='46' u='c'/>
+<use f='codebrowser/color.c' l='15' u='c'/>
+<use f='codebrowser/pretty.c' l='987' u='c'/>

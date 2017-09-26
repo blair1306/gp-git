@@ -1,0 +1,18 @@
+<dec f='codebrowser/xdiff/xprepare.h' l='30' type='void xdl_free_env(xdfenv_t * xe)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='349' u='c' c='xdl_do_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='376' u='c' c='xdl_do_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1032' u='c' c='xdl_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1042' u='c' c='xdl_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1047' u='c' c='xdl_diff'/>
+<use f='codebrowser/xdiff/xmerge.c' l='361' u='c' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='366' u='c' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='378' u='c' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='392' u='c' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='648' u='c' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='654' u='c' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='661' u='c' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='662' u='c' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='682' u='c' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='683' u='c' c='xdl_merge'/>
+<def f='codebrowser/xdiff/xprepare.c' l='315' ll='319' type='void xdl_free_env(xdfenv_t * xe)'/>
+<use f='codebrowser/xdiff/xutils.c' l='388' u='c' c='xdl_fall_back_diff'/>

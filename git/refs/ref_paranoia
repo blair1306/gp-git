@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='783' type='int'/>
+<doc f='codebrowser/cache.h' l='777'>/*
+ * Include broken refs in all ref iterations, which will
+ * generally choke dangerous operations rather than letting
+ * them silently proceed without taking the broken ref into
+ * account.
+ */</doc>
+<use f='codebrowser/builtin/prune.c' l='117' u='w' c='cmd_prune'/>
+<def f='codebrowser/environment.c' l='28' type='int'/>
+<use f='codebrowser/refs.c' l='1280' u='r' c='refs_ref_iterator_begin'/>
+<use f='codebrowser/refs.c' l='1281' u='w' c='refs_ref_iterator_begin'/>
+<use f='codebrowser/refs.c' l='1282' u='r' c='refs_ref_iterator_begin'/>

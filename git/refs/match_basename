@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='240' type='int match_basename(const char * , int , const char * , int , int , unsigned int )'/>
+<doc f='codebrowser/dir.h' l='236'>/*
+ * these implement the matching logic for dir.c:excluded_from_list and
+ * attr.c:path_matches()
+ */</doc>
+<use f='codebrowser/attr.c' l='1003' u='c' c='path_matches'/>
+<def f='codebrowser/dir.c' l='883' ll='905' type='int match_basename(const char * __xpg_basename, int basenamelen, const char * pattern, int prefix, int patternlen, unsigned int flags)'/>
+<use f='codebrowser/dir.c' l='998' u='c' c='last_exclude_matching_from_list'/>

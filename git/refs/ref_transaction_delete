@@ -1,0 +1,14 @@
+<dec f='codebrowser/refs.h' l='551' type='int ref_transaction_delete(struct ref_transaction * transaction, const char * refname, const unsigned char * old_sha1, unsigned int flags, const char * msg, struct strbuf * err)'/>
+<doc f='codebrowser/refs.h' l='543'>/*
+ * Add a reference deletion to transaction. If old_sha1 is non-NULL,
+ * then it holds the value that the reference should have had before
+ * the update (which must not be null_sha1).
+ *
+ * See the above comment &quot;Reference transaction updates&quot; for more
+ * information.
+ */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='1139' u='c' c='update'/>
+<use f='codebrowser/builtin/update-ref.c' l='271' u='c' c='parse_cmd_delete'/>
+<use f='codebrowser/refs.c' l='673' u='c' c='refs_delete_ref'/>
+<def f='codebrowser/refs.c' l='961' ll='972' type='int ref_transaction_delete(struct ref_transaction * transaction, const char * refname, const unsigned char * old_sha1, unsigned int flags, const char * msg, struct strbuf * err)'/>
+<use f='codebrowser/refs/files-backend.c' l='1044' u='c' c='prune_ref'/>

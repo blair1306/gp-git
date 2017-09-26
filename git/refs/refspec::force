@@ -1,0 +1,15 @@
+<dec f='codebrowser/remote.h' l='71' type='unsigned int'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/push.c' l='59' u='r' c='map_refspec'/>
+<use f='codebrowser/builtin/remote.c' l='453' u='r' c='get_push_ref_states_noquery'/>
+<use f='codebrowser/builtin/remote.c' l='466' u='w' c='get_head_names'/>
+<use f='codebrowser/remote.c' l='503' u='w' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='891' u='w' c='query_refspecs'/>
+<use f='codebrowser/remote.c' l='891' u='r' c='query_refspecs'/>
+<use f='codebrowser/remote.c' l='896' u='w' c='query_refspecs'/>
+<use f='codebrowser/remote.c' l='896' u='r' c='query_refspecs'/>
+<use f='codebrowser/remote.c' l='1217' u='r' c='match_explicit'/>
+<use f='codebrowser/remote.c' l='1241' u='r' c='get_ref_match'/>
+<use f='codebrowser/remote.c' l='1486' u='r' c='match_push_refs'/>
+<use f='codebrowser/remote.c' l='1828' u='r' c='get_expanded_map'/>
+<use f='codebrowser/remote.c' l='1897' u='r' c='get_fetch_map'/>

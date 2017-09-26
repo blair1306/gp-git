@@ -1,0 +1,14 @@
+<dec f='include/fcntl.h' l='146' type='int fcntl(int __fd, int __cmd)'/>
+<doc f='include/fcntl.h' l='141'>/* Do the file control operation described by CMD on FD.
+   The remaining arguments are interpreted depending on CMD.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='codebrowser/daemon.c' l='992' u='c' c='setup_named_sock'/>
+<use f='codebrowser/daemon.c' l='994' u='c' c='setup_named_sock'/>
+<use f='codebrowser/run-command.c' l='515' u='c' c='set_cloexec'/>
+<use f='codebrowser/run-command.c' l='517' u='c' c='set_cloexec'/>
+<use f='codebrowser/sha1_file.c' l='1175' u='c' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='1179' u='c' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='1694' u='c' c='git_open_cloexec'/>
+<use f='codebrowser/sha1_file.c' l='1695' u='c' c='git_open_cloexec'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/grep.h' l='102' type='3'/>
+<use f='codebrowser/builtin/grep.c' l='816' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='816' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='816' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='816' u='r' c='cmd_grep'/>
+<use f='codebrowser/grep.c' l='61' u='r' c='parse_pattern_type_arg'/>
+<use f='codebrowser/grep.c' l='199' c='grep_set_pattern_type_option'/>
+<use f='codebrowser/revision.c' l='2025' u='r' c='handle_revision_opt'/>

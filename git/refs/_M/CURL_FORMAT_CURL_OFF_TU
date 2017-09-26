@@ -1,0 +1,3 @@
+<dec f='include/curl/curlbuild.h' l='184'/>
+<use f='include/curl/curlrules.h' l='103' u='a'/>
+<doc f='include/curl/curlbuild.h' l='183'>/* unsigned curl_off_t formatting string without &quot;%&quot; conversion specifier. */</doc>

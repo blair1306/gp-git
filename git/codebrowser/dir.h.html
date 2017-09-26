@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>dir.h source code [codebrowser/dir.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="dir_entry,dir_struct,exclude,exclude_list,exclude_list_group,exclude_stack,sha1_stat,untracked_cache,untracked_cache_dir "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/dir.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='dir.h.html'>dir.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/DIR_H">DIR_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/DIR_H" data-ref="_M/DIR_H">DIR_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/* See Documentation/technical/api-directory-listing.txt */</i></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="strbuf.h.html">"strbuf.h"</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>struct</b> <dfn class="type def" id="dir_entry" title='dir_entry' data-ref="dir_entry">dir_entry</dfn> {</td></tr>
+<tr><th id="9">9</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="dir_entry::len" title='dir_entry::len' data-ref="dir_entry::len">len</dfn>;</td></tr>
+<tr><th id="10">10</th><td>	<em>char</em> <dfn class="decl" id="dir_entry::name" title='dir_entry::name' data-ref="dir_entry::name">name</dfn>[<a class="macro" href="git-compat-util.h.html#28" title="" data-ref="_M/FLEX_ARRAY">FLEX_ARRAY</a>]; <i>/* more */</i></td></tr>
+<tr><th id="11">11</th><td>};</td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/EXC_FLAG_NODIR" data-ref="_M/EXC_FLAG_NODIR">EXC_FLAG_NODIR</dfn> 1</u></td></tr>
+<tr><th id="14">14</th><td><u>#define <dfn class="macro" id="_M/EXC_FLAG_ENDSWITH" data-ref="_M/EXC_FLAG_ENDSWITH">EXC_FLAG_ENDSWITH</dfn> 4</u></td></tr>
+<tr><th id="15">15</th><td><u>#define <dfn class="macro" id="_M/EXC_FLAG_MUSTBEDIR" data-ref="_M/EXC_FLAG_MUSTBEDIR">EXC_FLAG_MUSTBEDIR</dfn> 8</u></td></tr>
+<tr><th id="16">16</th><td><u>#define <dfn class="macro" id="_M/EXC_FLAG_NEGATIVE" data-ref="_M/EXC_FLAG_NEGATIVE">EXC_FLAG_NEGATIVE</dfn> 16</u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>struct</b> <dfn class="type def" id="exclude" title='exclude' data-ref="exclude">exclude</dfn> {</td></tr>
+<tr><th id="19">19</th><td>	<i>/*</i></td></tr>
+<tr><th id="20">20</th><td><i>	 * This allows callers of last_exclude_matching() etc.</i></td></tr>
+<tr><th id="21">21</th><td><i>	 * to determine the origin of the matching pattern.</i></td></tr>
+<tr><th id="22">22</th><td><i>	 */</i></td></tr>
+<tr><th id="23">23</th><td>	<b>struct</b> <a class="type" href="#exclude_list" title='exclude_list' data-ref="exclude_list">exclude_list</a> *<dfn class="decl" id="exclude::el" title='exclude::el' data-ref="exclude::el">el</dfn>;</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="exclude::pattern" title='exclude::pattern' data-ref="exclude::pattern">pattern</dfn>;</td></tr>
+<tr><th id="26">26</th><td>	<em>int</em> <dfn class="decl" id="exclude::patternlen" title='exclude::patternlen' data-ref="exclude::patternlen">patternlen</dfn>;</td></tr>
+<tr><th id="27">27</th><td>	<em>int</em> <dfn class="decl" id="exclude::nowildcardlen" title='exclude::nowildcardlen' data-ref="exclude::nowildcardlen">nowildcardlen</dfn>;</td></tr>
+<tr><th id="28">28</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="exclude::base" title='exclude::base' data-ref="exclude::base">base</dfn>;</td></tr>
+<tr><th id="29">29</th><td>	<em>int</em> <dfn class="decl" id="exclude::baselen" title='exclude::baselen' data-ref="exclude::baselen">baselen</dfn>;</td></tr>
+<tr><th id="30">30</th><td>	<em>unsigned</em> <dfn class="decl" id="exclude::flags" title='exclude::flags' data-ref="exclude::flags">flags</dfn>;		<i>/* EXC_FLAG_* */</i></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td>	<i>/*</i></td></tr>
+<tr><th id="33">33</th><td><i>	 * Counting starts from 1 for line numbers in ignore files,</i></td></tr>
+<tr><th id="34">34</th><td><i>	 * and from -1 decrementing for patterns from CLI args.</i></td></tr>
+<tr><th id="35">35</th><td><i>	 */</i></td></tr>
+<tr><th id="36">36</th><td>	<em>int</em> <dfn class="decl" id="exclude::srcpos" title='exclude::srcpos' data-ref="exclude::srcpos">srcpos</dfn>;</td></tr>
+<tr><th id="37">37</th><td>};</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i>/*</i></td></tr>
+<tr><th id="40">40</th><td><i> * Each excludes file will be parsed into a fresh exclude_list which</i></td></tr>
+<tr><th id="41">41</th><td><i> * is appended to the relevant exclude_list_group (either EXC_DIRS or</i></td></tr>
+<tr><th id="42">42</th><td><i> * EXC_FILE).  An exclude_list within the EXC_CMDL exclude_list_group</i></td></tr>
+<tr><th id="43">43</th><td><i> * can also be used to represent the list of --exclude values passed</i></td></tr>
+<tr><th id="44">44</th><td><i> * via CLI args.</i></td></tr>
+<tr><th id="45">45</th><td><i> */</i></td></tr>
+<tr><th id="46">46</th><td><b>struct</b> <dfn class="type def" id="exclude_list" title='exclude_list' data-ref="exclude_list">exclude_list</dfn> {</td></tr>
+<tr><th id="47">47</th><td>	<em>int</em> <dfn class="decl" id="exclude_list::nr" title='exclude_list::nr' data-ref="exclude_list::nr">nr</dfn>;</td></tr>
+<tr><th id="48">48</th><td>	<em>int</em> <dfn class="decl" id="exclude_list::alloc" title='exclude_list::alloc' data-ref="exclude_list::alloc">alloc</dfn>;</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>	<i>/* remember pointer to exclude file contents so we can free() */</i></td></tr>
+<tr><th id="51">51</th><td>	<em>char</em> *<dfn class="decl" id="exclude_list::filebuf" title='exclude_list::filebuf' data-ref="exclude_list::filebuf">filebuf</dfn>;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>	<i>/* origin of list, e.g. path to filename, or descriptive string */</i></td></tr>
+<tr><th id="54">54</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="exclude_list::src" title='exclude_list::src' data-ref="exclude_list::src">src</dfn>;</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>	<b>struct</b> <a class="type" href="#exclude" title='exclude' data-ref="exclude">exclude</a> **<dfn class="decl" id="exclude_list::excludes" title='exclude_list::excludes' data-ref="exclude_list::excludes">excludes</dfn>;</td></tr>
+<tr><th id="57">57</th><td>};</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><i>/*</i></td></tr>
+<tr><th id="60">60</th><td><i> * The contents of the per-directory exclude files are lazily read on</i></td></tr>
+<tr><th id="61">61</th><td><i> * demand and then cached in memory, one per exclude_stack struct, in</i></td></tr>
+<tr><th id="62">62</th><td><i> * order to avoid opening and parsing each one every time that</i></td></tr>
+<tr><th id="63">63</th><td><i> * directory is traversed.</i></td></tr>
+<tr><th id="64">64</th><td><i> */</i></td></tr>
+<tr><th id="65">65</th><td><b>struct</b> <dfn class="type def" id="exclude_stack" title='exclude_stack' data-ref="exclude_stack">exclude_stack</dfn> {</td></tr>
+<tr><th id="66">66</th><td>	<b>struct</b> <a class="type" href="#exclude_stack" title='exclude_stack' data-ref="exclude_stack">exclude_stack</a> *<dfn class="decl" id="exclude_stack::prev" title='exclude_stack::prev' data-ref="exclude_stack::prev">prev</dfn>; <i>/* the struct exclude_stack for the parent directory */</i></td></tr>
+<tr><th id="67">67</th><td>	<em>int</em> <dfn class="decl" id="exclude_stack::baselen" title='exclude_stack::baselen' data-ref="exclude_stack::baselen">baselen</dfn>;</td></tr>
+<tr><th id="68">68</th><td>	<em>int</em> <dfn class="decl" id="exclude_stack::exclude_ix" title='exclude_stack::exclude_ix' data-ref="exclude_stack::exclude_ix">exclude_ix</dfn>; <i>/* index of exclude_list within EXC_DIRS exclude_list_group */</i></td></tr>
+<tr><th id="69">69</th><td>	<b>struct</b> <a class="type" href="#untracked_cache_dir" title='untracked_cache_dir' data-ref="untracked_cache_dir">untracked_cache_dir</a> *<dfn class="decl" id="exclude_stack::ucd" title='exclude_stack::ucd' data-ref="exclude_stack::ucd">ucd</dfn>;</td></tr>
+<tr><th id="70">70</th><td>};</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><b>struct</b> <dfn class="type def" id="exclude_list_group" title='exclude_list_group' data-ref="exclude_list_group">exclude_list_group</dfn> {</td></tr>
+<tr><th id="73">73</th><td>	<em>int</em> <dfn class="decl" id="exclude_list_group::nr" title='exclude_list_group::nr' data-ref="exclude_list_group::nr">nr</dfn>, <dfn class="decl" id="exclude_list_group::alloc" title='exclude_list_group::alloc' data-ref="exclude_list_group::alloc">alloc</dfn>;</td></tr>
+<tr><th id="74">74</th><td>	<b>struct</b> <a class="type" href="#exclude_list" title='exclude_list' data-ref="exclude_list">exclude_list</a> *<dfn class="decl" id="exclude_list_group::el" title='exclude_list_group::el' data-ref="exclude_list_group::el">el</dfn>;</td></tr>
+<tr><th id="75">75</th><td>};</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><b>struct</b> <dfn class="type def" id="sha1_stat" title='sha1_stat' data-ref="sha1_stat">sha1_stat</dfn> {</td></tr>
+<tr><th id="78">78</th><td>	<b>struct</b> <a class="type" href="cache.h.html#stat_data" title='stat_data' data-ref="stat_data">stat_data</a> <dfn class="decl" id="sha1_stat::stat" title='sha1_stat::stat' data-ref="sha1_stat::stat">stat</dfn>;</td></tr>
+<tr><th id="79">79</th><td>	<em>unsigned</em> <em>char</em> <dfn class="decl" id="sha1_stat::sha1" title='sha1_stat::sha1' data-ref="sha1_stat::sha1">sha1</dfn>[<var>20</var>];</td></tr>
+<tr><th id="80">80</th><td>	<em>int</em> <dfn class="decl" id="sha1_stat::valid" title='sha1_stat::valid' data-ref="sha1_stat::valid">valid</dfn>;</td></tr>
+<tr><th id="81">81</th><td>};</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><i>/*</i></td></tr>
+<tr><th id="84">84</th><td><i> *  Untracked cache</i></td></tr>
+<tr><th id="85">85</th><td><i> *</i></td></tr>
+<tr><th id="86">86</th><td><i> *  The following inputs are sufficient to determine what files in a</i></td></tr>
+<tr><th id="87">87</th><td><i> *  directory are excluded:</i></td></tr>
+<tr><th id="88">88</th><td><i> *</i></td></tr>
+<tr><th id="89">89</th><td><i> *   - The list of files and directories of the directory in question</i></td></tr>
+<tr><th id="90">90</th><td><i> *   - The $GIT_DIR/index</i></td></tr>
+<tr><th id="91">91</th><td><i> *   - dir_struct flags</i></td></tr>
+<tr><th id="92">92</th><td><i> *   - The content of $GIT_DIR/info/exclude</i></td></tr>
+<tr><th id="93">93</th><td><i> *   - The content of core.excludesfile</i></td></tr>
+<tr><th id="94">94</th><td><i> *   - The content (or the lack) of .gitignore of all parent directories</i></td></tr>
+<tr><th id="95">95</th><td><i> *     from $GIT_WORK_TREE</i></td></tr>
+<tr><th id="96">96</th><td><i> *   - The check_only flag in read_directory_recursive (for</i></td></tr>
+<tr><th id="97">97</th><td><i> *     DIR_HIDE_EMPTY_DIRECTORIES)</i></td></tr>
+<tr><th id="98">98</th><td><i> *</i></td></tr>
+<tr><th id="99">99</th><td><i> *  The first input can be checked using directory mtime. In many</i></td></tr>
+<tr><th id="100">100</th><td><i> *  filesystems, directory mtime (stat_data field) is updated when its</i></td></tr>
+<tr><th id="101">101</th><td><i> *  files or direct subdirs are added or removed.</i></td></tr>
+<tr><th id="102">102</th><td><i> *</i></td></tr>
+<tr><th id="103">103</th><td><i> *  The second one can be hooked from cache_tree_invalidate_path().</i></td></tr>
+<tr><th id="104">104</th><td><i> *  Whenever a file (or a submodule) is added or removed from a</i></td></tr>
+<tr><th id="105">105</th><td><i> *  directory, we invalidate that directory.</i></td></tr>
+<tr><th id="106">106</th><td><i> *</i></td></tr>
+<tr><th id="107">107</th><td><i> *  The remaining inputs are easy, their SHA-1 could be used to verify</i></td></tr>
+<tr><th id="108">108</th><td><i> *  their contents (exclude_sha1[], info_exclude_sha1[] and</i></td></tr>
+<tr><th id="109">109</th><td><i> *  excludes_file_sha1[])</i></td></tr>
+<tr><th id="110">110</th><td><i> */</i></td></tr>
+<tr><th id="111">111</th><td><b>struct</b> <dfn class="type def" id="untracked_cache_dir" title='untracked_cache_dir' data-ref="untracked_cache_dir">untracked_cache_dir</dfn> {</td></tr>
+<tr><th id="112">112</th><td>	<b>struct</b> <a class="type" href="#untracked_cache_dir" title='untracked_cache_dir' data-ref="untracked_cache_dir">untracked_cache_dir</a> **<dfn class="decl" id="untracked_cache_dir::dirs" title='untracked_cache_dir::dirs' data-ref="untracked_cache_dir::dirs">dirs</dfn>;</td></tr>
+<tr><th id="113">113</th><td>	<em>char</em> **<dfn class="decl" id="untracked_cache_dir::untracked" title='untracked_cache_dir::untracked' data-ref="untracked_cache_dir::untracked">untracked</dfn>;</td></tr>
+<tr><th id="114">114</th><td>	<b>struct</b> <a class="type" href="cache.h.html#stat_data" title='stat_data' data-ref="stat_data">stat_data</a> <dfn class="decl" id="untracked_cache_dir::stat_data" title='untracked_cache_dir::stat_data' data-ref="untracked_cache_dir::stat_data">stat_data</dfn>;</td></tr>
+<tr><th id="115">115</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="untracked_cache_dir::untracked_alloc" title='untracked_cache_dir::untracked_alloc' data-ref="untracked_cache_dir::untracked_alloc">untracked_alloc</dfn>, <dfn class="decl" id="untracked_cache_dir::dirs_nr" title='untracked_cache_dir::dirs_nr' data-ref="untracked_cache_dir::dirs_nr">dirs_nr</dfn>, <dfn class="decl" id="untracked_cache_dir::dirs_alloc" title='untracked_cache_dir::dirs_alloc' data-ref="untracked_cache_dir::dirs_alloc">dirs_alloc</dfn>;</td></tr>
+<tr><th id="116">116</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="untracked_cache_dir::untracked_nr" title='untracked_cache_dir::untracked_nr' data-ref="untracked_cache_dir::untracked_nr">untracked_nr</dfn>;</td></tr>
+<tr><th id="117">117</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="untracked_cache_dir::check_only" title='untracked_cache_dir::check_only' data-ref="untracked_cache_dir::check_only">check_only</dfn> : <var>1</var>;</td></tr>
+<tr><th id="118">118</th><td>	<i>/* all data except 'dirs' in this struct are good */</i></td></tr>
+<tr><th id="119">119</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="untracked_cache_dir::valid" title='untracked_cache_dir::valid' data-ref="untracked_cache_dir::valid">valid</dfn> : <var>1</var>;</td></tr>
+<tr><th id="120">120</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="untracked_cache_dir::recurse" title='untracked_cache_dir::recurse' data-ref="untracked_cache_dir::recurse">recurse</dfn> : <var>1</var>;</td></tr>
+<tr><th id="121">121</th><td>	<i>/* null SHA-1 means this directory does not have .gitignore */</i></td></tr>
+<tr><th id="122">122</th><td>	<em>unsigned</em> <em>char</em> <dfn class="decl" id="untracked_cache_dir::exclude_sha1" title='untracked_cache_dir::exclude_sha1' data-ref="untracked_cache_dir::exclude_sha1">exclude_sha1</dfn>[<var>20</var>];</td></tr>
+<tr><th id="123">123</th><td>	<em>char</em> <dfn class="decl" id="untracked_cache_dir::name" title='untracked_cache_dir::name' data-ref="untracked_cache_dir::name">name</dfn>[<a class="macro" href="git-compat-util.h.html#28" title="" data-ref="_M/FLEX_ARRAY">FLEX_ARRAY</a>];</td></tr>
+<tr><th id="124">124</th><td>};</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><b>struct</b> <dfn class="type def" id="untracked_cache" title='untracked_cache' data-ref="untracked_cache">untracked_cache</dfn> {</td></tr>
+<tr><th id="127">127</th><td>	<b>struct</b> <a class="type" href="#sha1_stat" title='sha1_stat' data-ref="sha1_stat">sha1_stat</a> <dfn class="decl" id="untracked_cache::ss_info_exclude" title='untracked_cache::ss_info_exclude' data-ref="untracked_cache::ss_info_exclude">ss_info_exclude</dfn>;</td></tr>
+<tr><th id="128">128</th><td>	<b>struct</b> <a class="type" href="#sha1_stat" title='sha1_stat' data-ref="sha1_stat">sha1_stat</a> <dfn class="decl" id="untracked_cache::ss_excludes_file" title='untracked_cache::ss_excludes_file' data-ref="untracked_cache::ss_excludes_file">ss_excludes_file</dfn>;</td></tr>
+<tr><th id="129">129</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="untracked_cache::exclude_per_dir" title='untracked_cache::exclude_per_dir' data-ref="untracked_cache::exclude_per_dir">exclude_per_dir</dfn>;</td></tr>
+<tr><th id="130">130</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="untracked_cache::ident" title='untracked_cache::ident' data-ref="untracked_cache::ident">ident</dfn>;</td></tr>
+<tr><th id="131">131</th><td>	<i>/*</i></td></tr>
+<tr><th id="132">132</th><td><i>	 * dir_struct#flags must match dir_flags or the untracked</i></td></tr>
+<tr><th id="133">133</th><td><i>	 * cache is ignored.</i></td></tr>
+<tr><th id="134">134</th><td><i>	 */</i></td></tr>
+<tr><th id="135">135</th><td>	<em>unsigned</em> <dfn class="decl" id="untracked_cache::dir_flags" title='untracked_cache::dir_flags' data-ref="untracked_cache::dir_flags">dir_flags</dfn>;</td></tr>
+<tr><th id="136">136</th><td>	<b>struct</b> <a class="type" href="#untracked_cache_dir" title='untracked_cache_dir' data-ref="untracked_cache_dir">untracked_cache_dir</a> *<dfn class="decl" id="untracked_cache::root" title='untracked_cache::root' data-ref="untracked_cache::root">root</dfn>;</td></tr>
+<tr><th id="137">137</th><td>	<i>/* Statistics */</i></td></tr>
+<tr><th id="138">138</th><td>	<em>int</em> <dfn class="decl" id="untracked_cache::dir_created" title='untracked_cache::dir_created' data-ref="untracked_cache::dir_created">dir_created</dfn>;</td></tr>
+<tr><th id="139">139</th><td>	<em>int</em> <dfn class="decl" id="untracked_cache::gitignore_invalidated" title='untracked_cache::gitignore_invalidated' data-ref="untracked_cache::gitignore_invalidated">gitignore_invalidated</dfn>;</td></tr>
+<tr><th id="140">140</th><td>	<em>int</em> <dfn class="decl" id="untracked_cache::dir_invalidated" title='untracked_cache::dir_invalidated' data-ref="untracked_cache::dir_invalidated">dir_invalidated</dfn>;</td></tr>
+<tr><th id="141">141</th><td>	<em>int</em> <dfn class="decl" id="untracked_cache::dir_opened" title='untracked_cache::dir_opened' data-ref="untracked_cache::dir_opened">dir_opened</dfn>;</td></tr>
+<tr><th id="142">142</th><td>};</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><b>struct</b> <dfn class="type def" id="dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</dfn> {</td></tr>
+<tr><th id="145">145</th><td>	<em>int</em> <dfn class="decl" id="dir_struct::nr" title='dir_struct::nr' data-ref="dir_struct::nr">nr</dfn>, <dfn class="decl" id="dir_struct::alloc" title='dir_struct::alloc' data-ref="dir_struct::alloc">alloc</dfn>;</td></tr>
+<tr><th id="146">146</th><td>	<em>int</em> <dfn class="decl" id="dir_struct::ignored_nr" title='dir_struct::ignored_nr' data-ref="dir_struct::ignored_nr">ignored_nr</dfn>, <dfn class="decl" id="dir_struct::ignored_alloc" title='dir_struct::ignored_alloc' data-ref="dir_struct::ignored_alloc">ignored_alloc</dfn>;</td></tr>
+<tr><th id="147">147</th><td>	<b>enum</b> {</td></tr>
+<tr><th id="148">148</th><td>		<dfn class="enum" id="dir_struct::DIR_SHOW_IGNORED" title='dir_struct::DIR_SHOW_IGNORED' data-ref="dir_struct::DIR_SHOW_IGNORED">DIR_SHOW_IGNORED</dfn> = <var>1</var>&lt;&lt;<var>0</var>,</td></tr>
+<tr><th id="149">149</th><td>		<dfn class="enum" id="dir_struct::DIR_SHOW_OTHER_DIRECTORIES" title='dir_struct::DIR_SHOW_OTHER_DIRECTORIES' data-ref="dir_struct::DIR_SHOW_OTHER_DIRECTORIES">DIR_SHOW_OTHER_DIRECTORIES</dfn> = <var>1</var>&lt;&lt;<var>1</var>,</td></tr>
+<tr><th id="150">150</th><td>		<dfn class="enum" id="dir_struct::DIR_HIDE_EMPTY_DIRECTORIES" title='dir_struct::DIR_HIDE_EMPTY_DIRECTORIES' data-ref="dir_struct::DIR_HIDE_EMPTY_DIRECTORIES">DIR_HIDE_EMPTY_DIRECTORIES</dfn> = <var>1</var>&lt;&lt;<var>2</var>,</td></tr>
+<tr><th id="151">151</th><td>		<dfn class="enum" id="dir_struct::DIR_NO_GITLINKS" title='dir_struct::DIR_NO_GITLINKS' data-ref="dir_struct::DIR_NO_GITLINKS">DIR_NO_GITLINKS</dfn> = <var>1</var>&lt;&lt;<var>3</var>,</td></tr>
+<tr><th id="152">152</th><td>		<dfn class="enum" id="dir_struct::DIR_COLLECT_IGNORED" title='dir_struct::DIR_COLLECT_IGNORED' data-ref="dir_struct::DIR_COLLECT_IGNORED">DIR_COLLECT_IGNORED</dfn> = <var>1</var>&lt;&lt;<var>4</var>,</td></tr>
+<tr><th id="153">153</th><td>		<dfn class="enum" id="dir_struct::DIR_SHOW_IGNORED_TOO" title='dir_struct::DIR_SHOW_IGNORED_TOO' data-ref="dir_struct::DIR_SHOW_IGNORED_TOO">DIR_SHOW_IGNORED_TOO</dfn> = <var>1</var>&lt;&lt;<var>5</var>,</td></tr>
+<tr><th id="154">154</th><td>		<dfn class="enum" id="dir_struct::DIR_COLLECT_KILLED_ONLY" title='dir_struct::DIR_COLLECT_KILLED_ONLY' data-ref="dir_struct::DIR_COLLECT_KILLED_ONLY">DIR_COLLECT_KILLED_ONLY</dfn> = <var>1</var>&lt;&lt;<var>6</var>,</td></tr>
+<tr><th id="155">155</th><td>		<dfn class="enum" id="dir_struct::DIR_KEEP_UNTRACKED_CONTENTS" title='dir_struct::DIR_KEEP_UNTRACKED_CONTENTS' data-ref="dir_struct::DIR_KEEP_UNTRACKED_CONTENTS">DIR_KEEP_UNTRACKED_CONTENTS</dfn> = <var>1</var>&lt;&lt;<var>7</var></td></tr>
+<tr><th id="156">156</th><td>	} <dfn class="decl" id="dir_struct::flags" title='dir_struct::flags' data-ref="dir_struct::flags">flags</dfn>;</td></tr>
+<tr><th id="157">157</th><td>	<b>struct</b> <a class="type" href="#dir_entry" title='dir_entry' data-ref="dir_entry">dir_entry</a> **<dfn class="decl" id="dir_struct::entries" title='dir_struct::entries' data-ref="dir_struct::entries">entries</dfn>;</td></tr>
+<tr><th id="158">158</th><td>	<b>struct</b> <a class="type" href="#dir_entry" title='dir_entry' data-ref="dir_entry">dir_entry</a> **<dfn class="decl" id="dir_struct::ignored" title='dir_struct::ignored' data-ref="dir_struct::ignored">ignored</dfn>;</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td>	<i>/* Exclude info */</i></td></tr>
+<tr><th id="161">161</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="dir_struct::exclude_per_dir" title='dir_struct::exclude_per_dir' data-ref="dir_struct::exclude_per_dir">exclude_per_dir</dfn>;</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td>	<i>/*</i></td></tr>
+<tr><th id="164">164</th><td><i>	 * We maintain three groups of exclude pattern lists:</i></td></tr>
+<tr><th id="165">165</th><td><i>	 *</i></td></tr>
+<tr><th id="166">166</th><td><i>	 * EXC_CMDL lists patterns explicitly given on the command line.</i></td></tr>
+<tr><th id="167">167</th><td><i>	 * EXC_DIRS lists patterns obtained from per-directory ignore files.</i></td></tr>
+<tr><th id="168">168</th><td><i>	 * EXC_FILE lists patterns from fallback ignore files, e.g.</i></td></tr>
+<tr><th id="169">169</th><td><i>	 *   - .git/info/exclude</i></td></tr>
+<tr><th id="170">170</th><td><i>	 *   - core.excludesfile</i></td></tr>
+<tr><th id="171">171</th><td><i>	 *</i></td></tr>
+<tr><th id="172">172</th><td><i>	 * Each group contains multiple exclude lists, a single list</i></td></tr>
+<tr><th id="173">173</th><td><i>	 * per source.</i></td></tr>
+<tr><th id="174">174</th><td><i>	 */</i></td></tr>
+<tr><th id="175">175</th><td><u>#define <dfn class="macro" id="_M/EXC_CMDL" data-ref="_M/EXC_CMDL">EXC_CMDL</dfn> 0</u></td></tr>
+<tr><th id="176">176</th><td><u>#define <dfn class="macro" id="_M/EXC_DIRS" data-ref="_M/EXC_DIRS">EXC_DIRS</dfn> 1</u></td></tr>
+<tr><th id="177">177</th><td><u>#define <dfn class="macro" id="_M/EXC_FILE" data-ref="_M/EXC_FILE">EXC_FILE</dfn> 2</u></td></tr>
+<tr><th id="178">178</th><td>	<b>struct</b> <a class="type" href="#exclude_list_group" title='exclude_list_group' data-ref="exclude_list_group">exclude_list_group</a> <dfn class="decl" id="dir_struct::exclude_list_group" title='dir_struct::exclude_list_group' data-ref="dir_struct::exclude_list_group">exclude_list_group</dfn>[<var>3</var>];</td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td>	<i>/*</i></td></tr>
+<tr><th id="181">181</th><td><i>	 * Temporary variables which are used during loading of the</i></td></tr>
+<tr><th id="182">182</th><td><i>	 * per-directory exclude lists.</i></td></tr>
+<tr><th id="183">183</th><td><i>	 *</i></td></tr>
+<tr><th id="184">184</th><td><i>	 * exclude_stack points to the top of the exclude_stack, and</i></td></tr>
+<tr><th id="185">185</th><td><i>	 * basebuf contains the full path to the current</i></td></tr>
+<tr><th id="186">186</th><td><i>	 * (sub)directory in the traversal. Exclude points to the</i></td></tr>
+<tr><th id="187">187</th><td><i>	 * matching exclude struct if the directory is excluded.</i></td></tr>
+<tr><th id="188">188</th><td><i>	 */</i></td></tr>
+<tr><th id="189">189</th><td>	<b>struct</b> <a class="type" href="#exclude_stack" title='exclude_stack' data-ref="exclude_stack">exclude_stack</a> *<dfn class="decl" id="dir_struct::exclude_stack" title='dir_struct::exclude_stack' data-ref="dir_struct::exclude_stack">exclude_stack</dfn>;</td></tr>
+<tr><th id="190">190</th><td>	<b>struct</b> <a class="type" href="#exclude" title='exclude' data-ref="exclude">exclude</a> *<dfn class="decl" id="dir_struct::exclude" title='dir_struct::exclude' data-ref="dir_struct::exclude">exclude</dfn>;</td></tr>
+<tr><th id="191">191</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="dir_struct::basebuf" title='dir_struct::basebuf' data-ref="dir_struct::basebuf">basebuf</dfn>;</td></tr>
+<tr><th id="192">192</th><td></td></tr>
+<tr><th id="193">193</th><td>	<i>/* Enable untracked file cache if set */</i></td></tr>
+<tr><th id="194">194</th><td>	<b>struct</b> <a class="type" href="#untracked_cache" title='untracked_cache' data-ref="untracked_cache">untracked_cache</a> *<dfn class="decl" id="dir_struct::untracked" title='dir_struct::untracked' data-ref="dir_struct::untracked">untracked</dfn>;</td></tr>
+<tr><th id="195">195</th><td>	<b>struct</b> <a class="type" href="#sha1_stat" title='sha1_stat' data-ref="sha1_stat">sha1_stat</a> <dfn class="decl" id="dir_struct::ss_info_exclude" title='dir_struct::ss_info_exclude' data-ref="dir_struct::ss_info_exclude">ss_info_exclude</dfn>;</td></tr>
+<tr><th id="196">196</th><td>	<b>struct</b> <a class="type" href="#sha1_stat" title='sha1_stat' data-ref="sha1_stat">sha1_stat</a> <dfn class="decl" id="dir_struct::ss_excludes_file" title='dir_struct::ss_excludes_file' data-ref="dir_struct::ss_excludes_file">ss_excludes_file</dfn>;</td></tr>
+<tr><th id="197">197</th><td>	<em>unsigned</em> <dfn class="decl" id="dir_struct::unmanaged_exclude_files" title='dir_struct::unmanaged_exclude_files' data-ref="dir_struct::unmanaged_exclude_files">unmanaged_exclude_files</dfn>;</td></tr>
+<tr><th id="198">198</th><td>};</td></tr>
+<tr><th id="199">199</th><td></td></tr>
+<tr><th id="200">200</th><td><i>/*Count the number of slashes for string s*/</i></td></tr>
+<tr><th id="201">201</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="count_slashes" title='count_slashes' data-ref="count_slashes">count_slashes</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="187s" title='s' data-type='const char *' data-ref="187s">s</dfn>);</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><i>/*</i></td></tr>
+<tr><th id="204">204</th><td><i> * The ordering of these constants is significant, with</i></td></tr>
+<tr><th id="205">205</th><td><i> * higher-numbered match types signifying "closer" (i.e. more</i></td></tr>
+<tr><th id="206">206</th><td><i> * specific) matches which will override lower-numbered match types</i></td></tr>
+<tr><th id="207">207</th><td><i> * when populating the seen[] array.</i></td></tr>
+<tr><th id="208">208</th><td><i> */</i></td></tr>
+<tr><th id="209">209</th><td><u>#define <dfn class="macro" id="_M/MATCHED_RECURSIVELY" data-ref="_M/MATCHED_RECURSIVELY">MATCHED_RECURSIVELY</dfn> 1</u></td></tr>
+<tr><th id="210">210</th><td><u>#define <dfn class="macro" id="_M/MATCHED_FNMATCH" data-ref="_M/MATCHED_FNMATCH">MATCHED_FNMATCH</dfn> 2</u></td></tr>
+<tr><th id="211">211</th><td><u>#define <dfn class="macro" id="_M/MATCHED_EXACTLY" data-ref="_M/MATCHED_EXACTLY">MATCHED_EXACTLY</dfn> 3</u></td></tr>
+<tr><th id="212">212</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="simple_length" title='simple_length' data-ref="simple_length">simple_length</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="188match" title='match' data-type='const char *' data-ref="188match">match</dfn>);</td></tr>
+<tr><th id="213">213</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="no_wildcard" title='no_wildcard' data-ref="no_wildcard">no_wildcard</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="189string" title='string' data-type='const char *' data-ref="189string">string</dfn>);</td></tr>
+<tr><th id="214">214</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="common_prefix" title='common_prefix' data-ref="common_prefix">common_prefix</dfn>(<em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col0 decl" id="190pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="190pathspec">pathspec</dfn>);</td></tr>
+<tr><th id="215">215</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="match_pathspec" title='match_pathspec' data-ref="match_pathspec">match_pathspec</dfn>(<em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col1 decl" id="191pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="191pathspec">pathspec</dfn>,</td></tr>
+<tr><th id="216">216</th><td>			  <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="192name" title='name' data-type='const char *' data-ref="192name">name</dfn>, <em>int</em> <dfn class="local col3 decl" id="193namelen" title='namelen' data-type='int' data-ref="193namelen">namelen</dfn>,</td></tr>
+<tr><th id="217">217</th><td>			  <em>int</em> <dfn class="local col4 decl" id="194prefix" title='prefix' data-type='int' data-ref="194prefix">prefix</dfn>, <em>char</em> *<dfn class="local col5 decl" id="195seen" title='seen' data-type='char *' data-ref="195seen">seen</dfn>, <em>int</em> <dfn class="local col6 decl" id="196is_dir" title='is_dir' data-type='int' data-ref="196is_dir">is_dir</dfn>);</td></tr>
+<tr><th id="218">218</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="report_path_error" title='report_path_error' data-ref="report_path_error">report_path_error</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="197ps_matched" title='ps_matched' data-type='const char *' data-ref="197ps_matched">ps_matched</dfn>, <em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col8 decl" id="198pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="198pathspec">pathspec</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="199prefix" title='prefix' data-type='const char *' data-ref="199prefix">prefix</dfn>);</td></tr>
+<tr><th id="219">219</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="within_depth" title='within_depth' data-ref="within_depth">within_depth</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="200name" title='name' data-type='const char *' data-ref="200name">name</dfn>, <em>int</em> <dfn class="local col1 decl" id="201namelen" title='namelen' data-type='int' data-ref="201namelen">namelen</dfn>, <em>int</em> <dfn class="local col2 decl" id="202depth" title='depth' data-type='int' data-ref="202depth">depth</dfn>, <em>int</em> <dfn class="local col3 decl" id="203max_depth" title='max_depth' data-type='int' data-ref="203max_depth">max_depth</dfn>);</td></tr>
+<tr><th id="220">220</th><td></td></tr>
+<tr><th id="221">221</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="fill_directory" title='fill_directory' data-ref="fill_directory">fill_directory</dfn>(<b>struct</b> <a class="type" href="#dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</a> *<dfn class="local col4 decl" id="204dir" title='dir' data-type='struct dir_struct *' data-ref="204dir">dir</dfn>,</td></tr>
+<tr><th id="222">222</th><td>			  <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col5 decl" id="205istate" title='istate' data-type='struct index_state *' data-ref="205istate">istate</dfn>,</td></tr>
+<tr><th id="223">223</th><td>			  <em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col6 decl" id="206pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="206pathspec">pathspec</dfn>);</td></tr>
+<tr><th id="224">224</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="read_directory" title='read_directory' data-ref="read_directory">read_directory</dfn>(<b>struct</b> <a class="type" href="#dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</a> *, <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col7 decl" id="207istate" title='istate' data-type='struct index_state *' data-ref="207istate">istate</dfn>,</td></tr>
+<tr><th id="225">225</th><td>			  <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="208path" title='path' data-type='const char *' data-ref="208path">path</dfn>, <em>int</em> <dfn class="local col9 decl" id="209len" title='len' data-type='int' data-ref="209len">len</dfn>,</td></tr>
+<tr><th id="226">226</th><td>			  <em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col0 decl" id="210pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="210pathspec">pathspec</dfn>);</td></tr>
+<tr><th id="227">227</th><td></td></tr>
+<tr><th id="228">228</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="is_excluded_from_list" title='is_excluded_from_list' data-ref="is_excluded_from_list">is_excluded_from_list</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="211pathname" title='pathname' data-type='const char *' data-ref="211pathname">pathname</dfn>, <em>int</em> <dfn class="local col2 decl" id="212pathlen" title='pathlen' data-type='int' data-ref="212pathlen">pathlen</dfn>,</td></tr>
+<tr><th id="229">229</th><td>				 <em>const</em> <em>char</em> *<a class="macro" href="../include/libgen.h.html#35" title="__xpg_basename" data-ref="_M/basename">basename</a>, <em>int</em> *<dfn class="local col3 decl" id="213dtype" title='dtype' data-type='int *' data-ref="213dtype">dtype</dfn>,</td></tr>
+<tr><th id="230">230</th><td>				 <b>struct</b> <a class="type" href="#exclude_list" title='exclude_list' data-ref="exclude_list">exclude_list</a> *<dfn class="local col4 decl" id="214el" title='el' data-type='struct exclude_list *' data-ref="214el">el</dfn>,</td></tr>
+<tr><th id="231">231</th><td>				 <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col5 decl" id="215istate" title='istate' data-type='struct index_state *' data-ref="215istate">istate</dfn>);</td></tr>
+<tr><th id="232">232</th><td><b>struct</b> <a class="type" href="#dir_entry" title='dir_entry' data-ref="dir_entry">dir_entry</a> *<dfn class="decl" id="dir_add_ignored" title='dir_add_ignored' data-ref="dir_add_ignored">dir_add_ignored</dfn>(<b>struct</b> <a class="type" href="#dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</a> *<dfn class="local col6 decl" id="216dir" title='dir' data-type='struct dir_struct *' data-ref="216dir">dir</dfn>,</td></tr>
+<tr><th id="233">233</th><td>				  <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col7 decl" id="217istate" title='istate' data-type='struct index_state *' data-ref="217istate">istate</dfn>,</td></tr>
+<tr><th id="234">234</th><td>				  <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="218pathname" title='pathname' data-type='const char *' data-ref="218pathname">pathname</dfn>, <em>int</em> <dfn class="local col9 decl" id="219len" title='len' data-type='int' data-ref="219len">len</dfn>);</td></tr>
+<tr><th id="235">235</th><td></td></tr>
+<tr><th id="236">236</th><td><i>/*</i></td></tr>
+<tr><th id="237">237</th><td><i> * these implement the matching logic for dir.c:excluded_from_list and</i></td></tr>
+<tr><th id="238">238</th><td><i> * attr.c:path_matches()</i></td></tr>
+<tr><th id="239">239</th><td><i> */</i></td></tr>
+<tr><th id="240">240</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="match_basename" title='match_basename' data-ref="match_basename">match_basename</dfn>(<em>const</em> <em>char</em> *, <em>int</em>,</td></tr>
+<tr><th id="241">241</th><td>			  <em>const</em> <em>char</em> *, <em>int</em>, <em>int</em>, <em>unsigned</em>);</td></tr>
+<tr><th id="242">242</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="match_pathname" title='match_pathname' data-ref="match_pathname">match_pathname</dfn>(<em>const</em> <em>char</em> *, <em>int</em>,</td></tr>
+<tr><th id="243">243</th><td>			  <em>const</em> <em>char</em> *, <em>int</em>,</td></tr>
+<tr><th id="244">244</th><td>			  <em>const</em> <em>char</em> *, <em>int</em>, <em>int</em>, <em>unsigned</em>);</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td><b>extern</b> <b>struct</b> <a class="type" href="#exclude" title='exclude' data-ref="exclude">exclude</a> *<dfn class="decl" id="last_exclude_matching" title='last_exclude_matching' data-ref="last_exclude_matching">last_exclude_matching</dfn>(<b>struct</b> <a class="type" href="#dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</a> *<dfn class="local col0 decl" id="220dir" title='dir' data-type='struct dir_struct *' data-ref="220dir">dir</dfn>,</td></tr>
+<tr><th id="247">247</th><td>					     <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col1 decl" id="221istate" title='istate' data-type='struct index_state *' data-ref="221istate">istate</dfn>,</td></tr>
+<tr><th id="248">248</th><td>					     <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="222name" title='name' data-type='const char *' data-ref="222name">name</dfn>, <em>int</em> *<dfn class="local col3 decl" id="223dtype" title='dtype' data-type='int *' data-ref="223dtype">dtype</dfn>);</td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="is_excluded" title='is_excluded' data-ref="is_excluded">is_excluded</dfn>(<b>struct</b> <a class="type" href="#dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</a> *<dfn class="local col4 decl" id="224dir" title='dir' data-type='struct dir_struct *' data-ref="224dir">dir</dfn>,</td></tr>
+<tr><th id="251">251</th><td>		       <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col5 decl" id="225istate" title='istate' data-type='struct index_state *' data-ref="225istate">istate</dfn>,</td></tr>
+<tr><th id="252">252</th><td>		       <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="226name" title='name' data-type='const char *' data-ref="226name">name</dfn>, <em>int</em> *<dfn class="local col7 decl" id="227dtype" title='dtype' data-type='int *' data-ref="227dtype">dtype</dfn>);</td></tr>
+<tr><th id="253">253</th><td></td></tr>
+<tr><th id="254">254</th><td><b>extern</b> <b>struct</b> <a class="type" href="#exclude_list" title='exclude_list' data-ref="exclude_list">exclude_list</a> *<dfn class="decl" id="add_exclude_list" title='add_exclude_list' data-ref="add_exclude_list">add_exclude_list</dfn>(<b>struct</b> <a class="type" href="#dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</a> *<dfn class="local col8 decl" id="228dir" title='dir' data-type='struct dir_struct *' data-ref="228dir">dir</dfn>,</td></tr>
+<tr><th id="255">255</th><td>					     <em>int</em> <dfn class="local col9 decl" id="229group_type" title='group_type' data-type='int' data-ref="229group_type">group_type</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="230src" title='src' data-type='const char *' data-ref="230src">src</dfn>);</td></tr>
+<tr><th id="256">256</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="add_excludes_from_file_to_list" title='add_excludes_from_file_to_list' data-ref="add_excludes_from_file_to_list">add_excludes_from_file_to_list</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="231fname" title='fname' data-type='const char *' data-ref="231fname">fname</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="232base" title='base' data-type='const char *' data-ref="232base">base</dfn>, <em>int</em> <dfn class="local col3 decl" id="233baselen" title='baselen' data-type='int' data-ref="233baselen">baselen</dfn>,</td></tr>
+<tr><th id="257">257</th><td>					  <b>struct</b> <a class="type" href="#exclude_list" title='exclude_list' data-ref="exclude_list">exclude_list</a> *<dfn class="local col4 decl" id="234el" title='el' data-type='struct exclude_list *' data-ref="234el">el</dfn>, <b>struct</b>  <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col5 decl" id="235istate" title='istate' data-type='struct index_state *' data-ref="235istate">istate</dfn>);</td></tr>
+<tr><th id="258">258</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="add_excludes_from_file" title='add_excludes_from_file' data-ref="add_excludes_from_file">add_excludes_from_file</dfn>(<b>struct</b> <a class="type" href="#dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</a> *, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="236fname" title='fname' data-type='const char *' data-ref="236fname">fname</dfn>);</td></tr>
+<tr><th id="259">259</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="parse_exclude_pattern" title='parse_exclude_pattern' data-ref="parse_exclude_pattern">parse_exclude_pattern</dfn>(<em>const</em> <em>char</em> **<dfn class="local col7 decl" id="237string" title='string' data-type='const char **' data-ref="237string">string</dfn>, <em>int</em> *<dfn class="local col8 decl" id="238patternlen" title='patternlen' data-type='int *' data-ref="238patternlen">patternlen</dfn>, <em>unsigned</em> *<dfn class="local col9 decl" id="239flags" title='flags' data-type='unsigned int *' data-ref="239flags">flags</dfn>, <em>int</em> *<dfn class="local col0 decl" id="240nowildcardlen" title='nowildcardlen' data-type='int *' data-ref="240nowildcardlen">nowildcardlen</dfn>);</td></tr>
+<tr><th id="260">260</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="add_exclude" title='add_exclude' data-ref="add_exclude">add_exclude</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="241string" title='string' data-type='const char *' data-ref="241string">string</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="242base" title='base' data-type='const char *' data-ref="242base">base</dfn>,</td></tr>
+<tr><th id="261">261</th><td>			<em>int</em> <dfn class="local col3 decl" id="243baselen" title='baselen' data-type='int' data-ref="243baselen">baselen</dfn>, <b>struct</b> <a class="type" href="#exclude_list" title='exclude_list' data-ref="exclude_list">exclude_list</a> *<dfn class="local col4 decl" id="244el" title='el' data-type='struct exclude_list *' data-ref="244el">el</dfn>, <em>int</em> <dfn class="local col5 decl" id="245srcpos" title='srcpos' data-type='int' data-ref="245srcpos">srcpos</dfn>);</td></tr>
+<tr><th id="262">262</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="clear_exclude_list" title='clear_exclude_list' data-ref="clear_exclude_list">clear_exclude_list</dfn>(<b>struct</b> <a class="type" href="#exclude_list" title='exclude_list' data-ref="exclude_list">exclude_list</a> *<dfn class="local col6 decl" id="246el" title='el' data-type='struct exclude_list *' data-ref="246el">el</dfn>);</td></tr>
+<tr><th id="263">263</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="clear_directory" title='clear_directory' data-ref="clear_directory">clear_directory</dfn>(<b>struct</b> <a class="type" href="#dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</a> *<dfn class="local col7 decl" id="247dir" title='dir' data-type='struct dir_struct *' data-ref="247dir">dir</dfn>);</td></tr>
+<tr><th id="264">264</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="file_exists" title='file_exists' data-ref="file_exists">file_exists</dfn>(<em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="is_inside_dir" title='is_inside_dir' data-ref="is_inside_dir">is_inside_dir</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="248dir" title='dir' data-type='const char *' data-ref="248dir">dir</dfn>);</td></tr>
+<tr><th id="267">267</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="dir_inside_of" title='dir_inside_of' data-ref="dir_inside_of">dir_inside_of</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="249subdir" title='subdir' data-type='const char *' data-ref="249subdir">subdir</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="250dir" title='dir' data-type='const char *' data-ref="250dir">dir</dfn>);</td></tr>
+<tr><th id="268">268</th><td></td></tr>
+<tr><th id="269">269</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="is_dot_or_dotdot" title='is_dot_or_dotdot' data-ref="is_dot_or_dotdot">is_dot_or_dotdot</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="251name" title='name' data-type='const char *' data-ref="251name">name</dfn>)</td></tr>
+<tr><th id="270">270</th><td>{</td></tr>
+<tr><th id="271">271</th><td>	<b>return</b> (<a class="local col1 ref" href="#251name" title='name' data-ref="251name">name</a>[<var>0</var>] == <kbd>'.'</kbd> &amp;&amp;</td></tr>
+<tr><th id="272">272</th><td>		(<a class="local col1 ref" href="#251name" title='name' data-ref="251name">name</a>[<var>1</var>] == <kbd>'\0'</kbd> ||</td></tr>
+<tr><th id="273">273</th><td>		 (<a class="local col1 ref" href="#251name" title='name' data-ref="251name">name</a>[<var>1</var>] == <kbd>'.'</kbd> &amp;&amp; <a class="local col1 ref" href="#251name" title='name' data-ref="251name">name</a>[<var>2</var>] == <kbd>'\0'</kbd>)));</td></tr>
+<tr><th id="274">274</th><td>}</td></tr>
+<tr><th id="275">275</th><td></td></tr>
+<tr><th id="276">276</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="is_empty_dir" title='is_empty_dir' data-ref="is_empty_dir">is_empty_dir</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="252dir" title='dir' data-type='const char *' data-ref="252dir">dir</dfn>);</td></tr>
+<tr><th id="277">277</th><td></td></tr>
+<tr><th id="278">278</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="setup_standard_excludes" title='setup_standard_excludes' data-ref="setup_standard_excludes">setup_standard_excludes</dfn>(<b>struct</b> <a class="type" href="#dir_struct" title='dir_struct' data-ref="dir_struct">dir_struct</a> *<dfn class="local col3 decl" id="253dir" title='dir' data-type='struct dir_struct *' data-ref="253dir">dir</dfn>);</td></tr>
+<tr><th id="279">279</th><td></td></tr>
+<tr><th id="280">280</th><td></td></tr>
+<tr><th id="281">281</th><td><i>/* Constants for remove_dir_recursively: */</i></td></tr>
+<tr><th id="282">282</th><td></td></tr>
+<tr><th id="283">283</th><td><i>/*</i></td></tr>
+<tr><th id="284">284</th><td><i> * If a non-directory is found within path, stop and return an error.</i></td></tr>
+<tr><th id="285">285</th><td><i> * (In this case some empty directories might already have been</i></td></tr>
+<tr><th id="286">286</th><td><i> * removed.)</i></td></tr>
+<tr><th id="287">287</th><td><i> */</i></td></tr>
+<tr><th id="288">288</th><td><u>#define <dfn class="macro" id="_M/REMOVE_DIR_EMPTY_ONLY" data-ref="_M/REMOVE_DIR_EMPTY_ONLY">REMOVE_DIR_EMPTY_ONLY</dfn> 01</u></td></tr>
+<tr><th id="289">289</th><td></td></tr>
+<tr><th id="290">290</th><td><i>/*</i></td></tr>
+<tr><th id="291">291</th><td><i> * If any Git work trees are found within path, skip them without</i></td></tr>
+<tr><th id="292">292</th><td><i> * considering it an error.</i></td></tr>
+<tr><th id="293">293</th><td><i> */</i></td></tr>
+<tr><th id="294">294</th><td><u>#define <dfn class="macro" id="_M/REMOVE_DIR_KEEP_NESTED_GIT" data-ref="_M/REMOVE_DIR_KEEP_NESTED_GIT">REMOVE_DIR_KEEP_NESTED_GIT</dfn> 02</u></td></tr>
+<tr><th id="295">295</th><td></td></tr>
+<tr><th id="296">296</th><td><i>/* Remove the contents of path, but leave path itself. */</i></td></tr>
+<tr><th id="297">297</th><td><u>#define <dfn class="macro" id="_M/REMOVE_DIR_KEEP_TOPLEVEL" data-ref="_M/REMOVE_DIR_KEEP_TOPLEVEL">REMOVE_DIR_KEEP_TOPLEVEL</dfn> 04</u></td></tr>
+<tr><th id="298">298</th><td></td></tr>
+<tr><th id="299">299</th><td><i>/*</i></td></tr>
+<tr><th id="300">300</th><td><i> * Remove path and its contents, recursively. flags is a combination</i></td></tr>
+<tr><th id="301">301</th><td><i> * of the above REMOVE_DIR_* constants. Return 0 on success.</i></td></tr>
+<tr><th id="302">302</th><td><i> *</i></td></tr>
+<tr><th id="303">303</th><td><i> * This function uses path as temporary scratch space, but restores it</i></td></tr>
+<tr><th id="304">304</th><td><i> * before returning.</i></td></tr>
+<tr><th id="305">305</th><td><i> */</i></td></tr>
+<tr><th id="306">306</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="remove_dir_recursively" title='remove_dir_recursively' data-ref="remove_dir_recursively">remove_dir_recursively</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col4 decl" id="254path" title='path' data-type='struct strbuf *' data-ref="254path">path</dfn>, <em>int</em> <dfn class="local col5 decl" id="255flag" title='flag' data-type='int' data-ref="255flag">flag</dfn>);</td></tr>
+<tr><th id="307">307</th><td></td></tr>
+<tr><th id="308">308</th><td><i>/* tries to remove the path with empty directories along it, ignores ENOENT */</i></td></tr>
+<tr><th id="309">309</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="remove_path" title='remove_path' data-ref="remove_path">remove_path</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="256path" title='path' data-type='const char *' data-ref="256path">path</dfn>);</td></tr>
+<tr><th id="310">310</th><td></td></tr>
+<tr><th id="311">311</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="fspathcmp" title='fspathcmp' data-ref="fspathcmp">fspathcmp</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="257a" title='a' data-type='const char *' data-ref="257a">a</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="258b" title='b' data-type='const char *' data-ref="258b">b</dfn>);</td></tr>
+<tr><th id="312">312</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="fspathncmp" title='fspathncmp' data-ref="fspathncmp">fspathncmp</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="259a" title='a' data-type='const char *' data-ref="259a">a</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="260b" title='b' data-type='const char *' data-ref="260b">b</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="261count" title='count' data-type='size_t' data-ref="261count">count</dfn>);</td></tr>
+<tr><th id="313">313</th><td></td></tr>
+<tr><th id="314">314</th><td><i>/*</i></td></tr>
+<tr><th id="315">315</th><td><i> * The prefix part of pattern must not contains wildcards.</i></td></tr>
+<tr><th id="316">316</th><td><i> */</i></td></tr>
+<tr><th id="317">317</th><td><b>struct</b> <a class="type" href="pathspec.h.html#pathspec_item" title='pathspec_item' data-ref="pathspec_item" id="pathspec_item">pathspec_item</a>;</td></tr>
+<tr><th id="318">318</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="git_fnmatch" title='git_fnmatch' data-ref="git_fnmatch">git_fnmatch</dfn>(<em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec_item" title='pathspec_item' data-ref="pathspec_item">pathspec_item</a> *<dfn class="local col2 decl" id="262item" title='item' data-type='const struct pathspec_item *' data-ref="262item">item</dfn>,</td></tr>
+<tr><th id="319">319</th><td>		       <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="263pattern" title='pattern' data-type='const char *' data-ref="263pattern">pattern</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="264string" title='string' data-type='const char *' data-ref="264string">string</dfn>,</td></tr>
+<tr><th id="320">320</th><td>		       <em>int</em> <dfn class="local col5 decl" id="265prefix" title='prefix' data-type='int' data-ref="265prefix">prefix</dfn>);</td></tr>
+<tr><th id="321">321</th><td></td></tr>
+<tr><th id="322">322</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="submodule_path_match" title='submodule_path_match' data-ref="submodule_path_match">submodule_path_match</dfn>(<em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col6 decl" id="266ps" title='ps' data-type='const struct pathspec *' data-ref="266ps">ps</dfn>,</td></tr>
+<tr><th id="323">323</th><td>				<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="267submodule_name" title='submodule_name' data-type='const char *' data-ref="267submodule_name">submodule_name</dfn>,</td></tr>
+<tr><th id="324">324</th><td>				<em>char</em> *<dfn class="local col8 decl" id="268seen" title='seen' data-type='char *' data-ref="268seen">seen</dfn>);</td></tr>
+<tr><th id="325">325</th><td></td></tr>
+<tr><th id="326">326</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="ce_path_match" title='ce_path_match' data-ref="ce_path_match">ce_path_match</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#cache_entry" title='cache_entry' data-ref="cache_entry">cache_entry</a> *<dfn class="local col9 decl" id="269ce" title='ce' data-type='const struct cache_entry *' data-ref="269ce">ce</dfn>,</td></tr>
+<tr><th id="327">327</th><td>				<em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col0 decl" id="270pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="270pathspec">pathspec</dfn>,</td></tr>
+<tr><th id="328">328</th><td>				<em>char</em> *<dfn class="local col1 decl" id="271seen" title='seen' data-type='char *' data-ref="271seen">seen</dfn>)</td></tr>
+<tr><th id="329">329</th><td>{</td></tr>
+<tr><th id="330">330</th><td>	<b>return</b> <a class="ref" href="#match_pathspec" title='match_pathspec' data-ref="match_pathspec">match_pathspec</a>(<a class="local col0 ref" href="#270pathspec" title='pathspec' data-ref="270pathspec">pathspec</a>, <a class="local col9 ref" href="#269ce" title='ce' data-ref="269ce">ce</a>-&gt;<a class="ref" href="cache.h.html#cache_entry::name" title='cache_entry::name' data-ref="cache_entry::name">name</a>, <a class="macro" href="cache.h.html#265" title="((ce)-&gt;ce_namelen)" data-ref="_M/ce_namelen">ce_namelen</a>(<a class="local col9 ref" href="#269ce" title='ce' data-ref="269ce">ce</a>), <var>0</var>, <a class="local col1 ref" href="#271seen" title='seen' data-ref="271seen">seen</a>,</td></tr>
+<tr><th id="331">331</th><td>			      <a class="macro" href="../include/x86_64-linux-gnu/sys/stat.h.html#128" title="((((ce-&gt;ce_mode)) &amp; 0170000) == (0040000))" data-ref="_M/S_ISDIR">S_ISDIR</a>(<a class="local col9 ref" href="#269ce" title='ce' data-ref="269ce">ce</a>-&gt;<a class="ref" href="cache.h.html#cache_entry::ce_mode" title='cache_entry::ce_mode' data-ref="cache_entry::ce_mode">ce_mode</a>) || <a class="macro" href="cache.h.html#103" title="(((ce-&gt;ce_mode) &amp; 0170000) == 0160000)" data-ref="_M/S_ISGITLINK">S_ISGITLINK</a>(<a class="local col9 ref" href="#269ce" title='ce' data-ref="269ce">ce</a>-&gt;<a class="ref" href="cache.h.html#cache_entry::ce_mode" title='cache_entry::ce_mode' data-ref="cache_entry::ce_mode">ce_mode</a>));</td></tr>
+<tr><th id="332">332</th><td>}</td></tr>
+<tr><th id="333">333</th><td></td></tr>
+<tr><th id="334">334</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="dir_path_match" title='dir_path_match' data-ref="dir_path_match">dir_path_match</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#dir_entry" title='dir_entry' data-ref="dir_entry">dir_entry</a> *<dfn class="local col2 decl" id="272ent" title='ent' data-type='const struct dir_entry *' data-ref="272ent">ent</dfn>,</td></tr>
+<tr><th id="335">335</th><td>				 <em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col3 decl" id="273pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="273pathspec">pathspec</dfn>,</td></tr>
+<tr><th id="336">336</th><td>				 <em>int</em> <dfn class="local col4 decl" id="274prefix" title='prefix' data-type='int' data-ref="274prefix">prefix</dfn>, <em>char</em> *<dfn class="local col5 decl" id="275seen" title='seen' data-type='char *' data-ref="275seen">seen</dfn>)</td></tr>
+<tr><th id="337">337</th><td>{</td></tr>
+<tr><th id="338">338</th><td>	<em>int</em> <dfn class="local col6 decl" id="276has_trailing_dir" title='has_trailing_dir' data-type='int' data-ref="276has_trailing_dir">has_trailing_dir</dfn> = <a class="local col2 ref" href="#272ent" title='ent' data-ref="272ent">ent</a>-&gt;<a class="ref" href="#dir_entry::len" title='dir_entry::len' data-ref="dir_entry::len">len</a> &amp;&amp; <a class="local col2 ref" href="#272ent" title='ent' data-ref="272ent">ent</a>-&gt;<a class="ref" href="#dir_entry::name" title='dir_entry::name' data-ref="dir_entry::name">name</a>[<a class="local col2 ref" href="#272ent" title='ent' data-ref="272ent">ent</a>-&gt;<a class="ref" href="#dir_entry::len" title='dir_entry::len' data-ref="dir_entry::len">len</a> - <var>1</var>] == <kbd>'/'</kbd>;</td></tr>
+<tr><th id="339">339</th><td>	<em>int</em> <dfn class="local col7 decl" id="277len" title='len' data-type='int' data-ref="277len">len</dfn> = <a class="local col6 ref" href="#276has_trailing_dir" title='has_trailing_dir' data-ref="276has_trailing_dir">has_trailing_dir</a> ? <a class="local col2 ref" href="#272ent" title='ent' data-ref="272ent">ent</a>-&gt;<a class="ref" href="#dir_entry::len" title='dir_entry::len' data-ref="dir_entry::len">len</a> - <var>1</var> : <a class="local col2 ref" href="#272ent" title='ent' data-ref="272ent">ent</a>-&gt;<a class="ref" href="#dir_entry::len" title='dir_entry::len' data-ref="dir_entry::len">len</a>;</td></tr>
+<tr><th id="340">340</th><td>	<b>return</b> <a class="ref" href="#match_pathspec" title='match_pathspec' data-ref="match_pathspec">match_pathspec</a>(<a class="local col3 ref" href="#273pathspec" title='pathspec' data-ref="273pathspec">pathspec</a>, <a class="local col2 ref" href="#272ent" title='ent' data-ref="272ent">ent</a>-&gt;<a class="ref" href="#dir_entry::name" title='dir_entry::name' data-ref="dir_entry::name">name</a>, <a class="local col7 ref" href="#277len" title='len' data-ref="277len">len</a>, <a class="local col4 ref" href="#274prefix" title='prefix' data-ref="274prefix">prefix</a>, <a class="local col5 ref" href="#275seen" title='seen' data-ref="275seen">seen</a>,</td></tr>
+<tr><th id="341">341</th><td>			      <a class="local col6 ref" href="#276has_trailing_dir" title='has_trailing_dir' data-ref="276has_trailing_dir">has_trailing_dir</a>);</td></tr>
+<tr><th id="342">342</th><td>}</td></tr>
+<tr><th id="343">343</th><td></td></tr>
+<tr><th id="344">344</th><td><em>int</em> <dfn class="decl" id="cmp_dir_entry" title='cmp_dir_entry' data-ref="cmp_dir_entry">cmp_dir_entry</dfn>(<em>const</em> <em>void</em> *<dfn class="local col8 decl" id="278p1" title='p1' data-type='const void *' data-ref="278p1">p1</dfn>, <em>const</em> <em>void</em> *<dfn class="local col9 decl" id="279p2" title='p2' data-type='const void *' data-ref="279p2">p2</dfn>);</td></tr>
+<tr><th id="345">345</th><td><em>int</em> <dfn class="decl" id="check_dir_entry_contains" title='check_dir_entry_contains' data-ref="check_dir_entry_contains">check_dir_entry_contains</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#dir_entry" title='dir_entry' data-ref="dir_entry">dir_entry</a> *<dfn class="local col0 decl" id="280out" title='out' data-type='const struct dir_entry *' data-ref="280out">out</dfn>, <em>const</em> <b>struct</b> <a class="type" href="#dir_entry" title='dir_entry' data-ref="dir_entry">dir_entry</a> *<dfn class="local col1 decl" id="281in" title='in' data-type='const struct dir_entry *' data-ref="281in">in</dfn>);</td></tr>
+<tr><th id="346">346</th><td></td></tr>
+<tr><th id="347">347</th><td><em>void</em> <dfn class="decl" id="untracked_cache_invalidate_path" title='untracked_cache_invalidate_path' data-ref="untracked_cache_invalidate_path">untracked_cache_invalidate_path</dfn>(<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="348">348</th><td><em>void</em> <dfn class="decl" id="untracked_cache_remove_from_index" title='untracked_cache_remove_from_index' data-ref="untracked_cache_remove_from_index">untracked_cache_remove_from_index</dfn>(<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="349">349</th><td><em>void</em> <dfn class="decl" id="untracked_cache_add_to_index" title='untracked_cache_add_to_index' data-ref="untracked_cache_add_to_index">untracked_cache_add_to_index</dfn>(<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="350">350</th><td></td></tr>
+<tr><th id="351">351</th><td><em>void</em> <dfn class="decl" id="free_untracked_cache" title='free_untracked_cache' data-ref="free_untracked_cache">free_untracked_cache</dfn>(<b>struct</b> <a class="type" href="#untracked_cache" title='untracked_cache' data-ref="untracked_cache">untracked_cache</a> *);</td></tr>
+<tr><th id="352">352</th><td><b>struct</b> <a class="type" href="#untracked_cache" title='untracked_cache' data-ref="untracked_cache">untracked_cache</a> *<dfn class="decl" id="read_untracked_extension" title='read_untracked_extension' data-ref="read_untracked_extension">read_untracked_extension</dfn>(<em>const</em> <em>void</em> *<dfn class="local col2 decl" id="282data" title='data' data-type='const void *' data-ref="282data">data</dfn>, <em>unsigned</em> <em>long</em> <dfn class="local col3 decl" id="283sz" title='sz' data-type='unsigned long' data-ref="283sz">sz</dfn>);</td></tr>
+<tr><th id="353">353</th><td><em>void</em> <dfn class="decl" id="write_untracked_extension" title='write_untracked_extension' data-ref="write_untracked_extension">write_untracked_extension</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col4 decl" id="284out" title='out' data-type='struct strbuf *' data-ref="284out">out</dfn>, <b>struct</b> <a class="type" href="#untracked_cache" title='untracked_cache' data-ref="untracked_cache">untracked_cache</a> *<dfn class="local col5 decl" id="285untracked" title='untracked' data-type='struct untracked_cache *' data-ref="285untracked">untracked</dfn>);</td></tr>
+<tr><th id="354">354</th><td><em>void</em> <dfn class="decl" id="add_untracked_cache" title='add_untracked_cache' data-ref="add_untracked_cache">add_untracked_cache</dfn>(<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col6 decl" id="286istate" title='istate' data-type='struct index_state *' data-ref="286istate">istate</dfn>);</td></tr>
+<tr><th id="355">355</th><td><em>void</em> <dfn class="decl" id="remove_untracked_cache" title='remove_untracked_cache' data-ref="remove_untracked_cache">remove_untracked_cache</dfn>(<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col7 decl" id="287istate" title='istate' data-type='struct index_state *' data-ref="287istate">istate</dfn>);</td></tr>
+<tr><th id="356">356</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="connect_work_tree_and_git_dir" title='connect_work_tree_and_git_dir' data-ref="connect_work_tree_and_git_dir">connect_work_tree_and_git_dir</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="288work_tree" title='work_tree' data-type='const char *' data-ref="288work_tree">work_tree</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="289git_dir" title='git_dir' data-type='const char *' data-ref="289git_dir">git_dir</dfn>);</td></tr>
+<tr><th id="357">357</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="relocate_gitdir" title='relocate_gitdir' data-ref="relocate_gitdir">relocate_gitdir</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="290path" title='path' data-type='const char *' data-ref="290path">path</dfn>,</td></tr>
+<tr><th id="358">358</th><td>			    <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="291old_git_dir" title='old_git_dir' data-type='const char *' data-ref="291old_git_dir">old_git_dir</dfn>,</td></tr>
+<tr><th id="359">359</th><td>			    <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="292new_git_dir" title='new_git_dir' data-type='const char *' data-ref="292new_git_dir">new_git_dir</dfn>);</td></tr>
+<tr><th id="360">360</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="361">361</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='apply.c.html'>codebrowser/apply.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

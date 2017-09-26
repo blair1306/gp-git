@@ -1,0 +1,10 @@
+<dec f='codebrowser/line-log.h' l='29' type='void range_set_release(struct range_set * )'/>
+<use f='codebrowser/builtin/blame.c' l='905' u='c' c='cmd_blame'/>
+<def f='codebrowser/line-log.c' l='35' ll='39' type='void range_set_release(struct range_set * rs)'/>
+<use f='codebrowser/line-log.c' l='51' u='c' c='range_set_move'/>
+<use f='codebrowser/line-log.c' l='236' u='c' c='diff_ranges_release'/>
+<use f='codebrowser/line-log.c' l='237' u='c' c='diff_ranges_release'/>
+<use f='codebrowser/line-log.c' l='248' u='c' c='line_log_data_clear'/>
+<use f='codebrowser/line-log.c' l='466' u='c' c='range_set_map_across_diff'/>
+<use f='codebrowser/line-log.c' l='467' u='c' c='range_set_map_across_diff'/>
+<use f='codebrowser/line-log.c' l='1035' u='c' c='process_diff_filepair'/>

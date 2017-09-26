@@ -1,0 +1,5 @@
+<def f='include/curl/curl.h' l='2049' ll='2052'/>
+<size>16</size>
+<doc f='include/curl/curl.h' l='2048'>/* linked-list structure for the CURLOPT_QUOTE option (and other) */</doc>
+<mbr r='curl_slist::data' o='0' t='char *'/>
+<mbr r='curl_slist::next' o='64' t='struct curl_slist *'/>

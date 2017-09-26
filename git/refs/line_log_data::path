@@ -1,0 +1,131 @@
+<dec f='codebrowser/line-log.h' l='48' type='char *'/>
+<offset>64</offset>
+<use f='codebrowser/line-log.c' l='271' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='271' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='299' u='w' c='line_log_data_insert'/>
+<use f='codebrowser/line-log.c' l='629' u='w' c='line_log_data_copy_one'/>
+<use f='codebrowser/line-log.c' l='629' u='r' c='line_log_data_copy_one'/>
+<use f='codebrowser/line-log.c' l='669' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='669' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='684' u='w' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='684' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='752' u='r' c='line_log_init'/>
+<use f='codebrowser/line-log.c' l='788' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='788' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='1000' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1001' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1030' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1031' u='w' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1090' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>
+<use f='codebrowser/line-log.c' l='1090' u='r' c='process_all_files'/>

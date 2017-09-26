@@ -1,0 +1,4 @@
+<dec f='codebrowser/http.h' l='150' type='unsigned int'/>
+<offset>2</offset>
+<use f='codebrowser/http.c' l='1695' u='r' c='http_request'/>
+<use f='codebrowser/remote-curl.c' l='304' u='w' c='discover_refs'/>

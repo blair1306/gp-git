@@ -1,0 +1,2 @@
+<def f='codebrowser/cache.h' l='1515' ll='1518' type='void cache_def_clear(struct cache_def * cache)'/>
+<use f='codebrowser/preload-index.c' l='68' u='c' c='preload_thread'/>

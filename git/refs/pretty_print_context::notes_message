@@ -1,0 +1,9 @@
+<dec f='codebrowser/commit.h' l='160' type='char *'/>
+<offset>512</offset>
+<use f='codebrowser/log-tree.c' l='661' u='w' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='694' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='694' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='699' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='724' u='r' c='show_log'/>
+<use f='codebrowser/pretty.c' l='1213' u='r' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1214' u='r' c='format_commit_one'/>

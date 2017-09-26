@@ -1,0 +1,4 @@
+<def f='codebrowser/submodule.h' l='30' ll='33'/>
+<size>16</size>
+<mbr r='submodule_update_strategy::type' o='0' t='enum submodule_update_type'/>
+<mbr r='submodule_update_strategy::command' o='64' t='const char *'/>

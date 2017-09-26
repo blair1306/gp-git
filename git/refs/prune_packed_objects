@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin.h' l='105' type='void prune_packed_objects(int )'/>
+<def f='codebrowser/builtin/prune-packed.c' l='37' ll='48' type='void prune_packed_objects(int opts)'/>
+<use f='codebrowser/builtin/prune-packed.c' l='64' u='c' c='cmd_prune_packed'/>
+<use f='codebrowser/builtin/prune.c' l='148' u='c' c='cmd_prune'/>
+<use f='codebrowser/builtin/repack.c' l='427' u='c' c='cmd_repack'/>

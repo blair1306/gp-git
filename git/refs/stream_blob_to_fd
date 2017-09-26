@@ -1,0 +1,12 @@
+<dec f='codebrowser/streaming.h' l='15' type='int stream_blob_to_fd(int fd, const struct object_id * , struct stream_filter * , int can_seek)'/>
+<use f='codebrowser/builtin/cat-file.c' l='130' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='152' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='314' u='c' c='print_object_or_die'/>
+<use f='codebrowser/builtin/fsck.c' l='277' u='c' c='check_unreachable_object'/>
+<use f='codebrowser/builtin/log.c' l='489' u='c' c='show_blob_object'/>
+<use f='codebrowser/builtin/log.c' l='497' u='c' c='show_blob_object'/>
+<use f='codebrowser/entry.c' l='131' u='c' c='streaming_write_entry'/>
+<def f='codebrowser/streaming.c' l='500' ll='553' type='int stream_blob_to_fd(int fd, const struct object_id * oid, struct stream_filter * filter, int can_seek)'/>
+<doc f='codebrowser/streaming.c' l='496'>/****************************************************************
+ * Users of streaming interface
+ ****************************************************************/</doc>

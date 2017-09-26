@@ -1,0 +1,11 @@
+<dec f='codebrowser/refs.h' l='565' type='int ref_transaction_verify(struct ref_transaction * transaction, const char * refname, const unsigned char * old_sha1, unsigned int flags, struct strbuf * err)'/>
+<doc f='codebrowser/refs.h' l='557'>/*
+ * Verify, within a transaction, that refname has the value old_sha1,
+ * or, if old_sha1 is null_sha1, then verify that the reference
+ * doesn&apos;t exist. old_sha1 must be non-NULL.
+ *
+ * See the above comment &quot;Reference transaction updates&quot; for more
+ * information.
+ */</doc>
+<use f='codebrowser/builtin/update-ref.c' l='301' u='c' c='parse_cmd_verify'/>
+<def f='codebrowser/refs.c' l='974' ll='985' type='int ref_transaction_verify(struct ref_transaction * transaction, const char * refname, const unsigned char * old_sha1, unsigned int flags, struct strbuf * err)'/>

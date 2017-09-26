@@ -1,0 +1,24 @@
+<dec f='codebrowser/refs.h' l='251'/>
+<doc f='codebrowser/refs.h' l='245'>/*
+ * Reference cannot be resolved to an object name: dangling symbolic
+ * reference (directly or indirectly), corrupt reference file,
+ * reference exists but name is bad, or symbolic reference refers to
+ * ill-formatted reference name.
+ */</doc>
+<use f='codebrowser/builtin/branch.c' l='252' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='273' u='c'/>
+<use f='codebrowser/reachable.c' l='31' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1839' u='c'/>
+<use f='codebrowser/refs.c' l='186' u='c'/>
+<use f='codebrowser/refs.c' l='511' u='c'/>
+<use f='codebrowser/refs.c' l='1454' u='c'/>
+<use f='codebrowser/refs.c' l='1463' u='c'/>
+<use f='codebrowser/refs.c' l='1480' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='203' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='213' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='221' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='404' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='623' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='253' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='507' u='c'/>
+<use f='codebrowser/revision.c' l='2185' u='c'/>

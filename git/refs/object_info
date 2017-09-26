@@ -1,0 +1,10 @@
+<def f='codebrowser/cache.h' l='1791' ll='1822'/>
+<size>80</size>
+<mbr r='object_info::typep' o='0' t='enum object_type *'/>
+<mbr r='object_info::sizep' o='64' t='unsigned long *'/>
+<mbr r='object_info::disk_sizep' o='128' t='off_t *'/>
+<mbr r='object_info::delta_base_sha1' o='192' t='unsigned char *'/>
+<mbr r='object_info::typename' o='256' t='struct strbuf *'/>
+<mbr r='object_info::contentp' o='320' t='void **'/>
+<mbr r='object_info::whence' o='384' t='enum (anonymous enum at /home/jon/workspace/git/cache.h:1801:2)'/>
+<mbr r='object_info::u' o='448' t='union (anonymous union at /home/jon/workspace/git/cache.h:1807:2)'/>

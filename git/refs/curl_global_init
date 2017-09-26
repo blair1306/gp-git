@@ -1,0 +1,13 @@
+<dec f='include/curl/curl.h' l='2016' type='CURLcode curl_global_init(long flags)'/>
+<doc f='include/curl/curl.h' l='2006'>/*
+ * NAME curl_global_init()
+ *
+ * DESCRIPTION
+ *
+ * curl_global_init() should be invoked exactly once for each application that
+ * uses libcurl and before any call of other libcurl functions.
+ *
+ * This function is not thread-safe!
+ */</doc>
+<use f='codebrowser/http.c' l='918' u='c' c='http_init'/>
+<use f='codebrowser/imap-send.c' l='1400' u='c' c='setup_curl'/>

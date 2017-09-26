@@ -1,0 +1,4 @@
+<dec f='codebrowser/archive.h' l='39' type='int write_archive(int argc, const char ** argv, const char * prefix, const char * name_hint, int remote)'/>
+<def f='codebrowser/archive.c' l='495' ll='521' type='int write_archive(int argc, const char ** argv, const char * prefix, const char * name_hint, int remote)'/>
+<use f='codebrowser/builtin/archive.c' l='108' u='c' c='cmd_archive'/>
+<use f='codebrowser/builtin/upload-archive.c' l='46' u='c' c='cmd_upload_archive_writer'/>

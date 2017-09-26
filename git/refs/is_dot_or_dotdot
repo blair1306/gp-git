@@ -1,0 +1,16 @@
+<def f='codebrowser/dir.h' l='269' ll='274' type='int is_dot_or_dotdot(const char * name)'/>
+<use f='codebrowser/builtin/clean.c' l='192' u='c' c='remove_dirs'/>
+<use f='codebrowser/builtin/worktree.c' l='102' u='c' c='prune_worktrees'/>
+<use f='codebrowser/diff-no-index.c' l='29' u='c' c='read_directory_contents'/>
+<use f='codebrowser/dir-iterator.c' l='137' u='c' c='dir_iterator_advance'/>
+<use f='codebrowser/dir.c' l='1660' u='c' c='treat_path'/>
+<use f='codebrowser/dir.c' l='2231' u='c' c='is_empty_dir'/>
+<use f='codebrowser/dir.c' l='2276' u='c' c='remove_dir_recurse'/>
+<use f='codebrowser/entry.c' l='59' u='c' c='remove_subtree'/>
+<use f='codebrowser/notes-merge.c' l='698' u='c' c='notes_merge_commit'/>
+<use f='codebrowser/remote.c' l='642' u='c' c='valid_remote_nick'/>
+<use f='codebrowser/rerere.c' l='1204' u='c' c='rerere_gc'/>
+<use f='codebrowser/sha1_file.c' l='1458' u='c' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='3741' u='c' c='for_each_file_in_obj_subdir'/>
+<use f='codebrowser/worktree.c' l='148' u='c' c='get_worktrees'/>
+<use f='codebrowser/worktree.c' l='380' u='c' c='submodule_uses_worktrees'/>

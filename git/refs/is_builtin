@@ -1,0 +1,4 @@
+<dec f='codebrowser/builtin.h' l='128' type='int is_builtin(const char * s)'/>
+<use f='codebrowser/builtin/help.c' l='283' u='c' c='is_git_command'/>
+<def f='codebrowser/git.c' l='498' ll='501' type='int is_builtin(const char * s)'/>
+<use f='codebrowser/git.c' l='562' u='c' c='execv_dashed_external'/>

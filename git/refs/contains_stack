@@ -1,0 +1,9 @@
+<def f='codebrowser/ref-filter.c' l='1514' ll='1520'/>
+<size>16</size>
+<doc f='codebrowser/ref-filter.c' l='1507'>/*
+ * Mimicking the real stack, this stack lives on the heap, avoiding stack
+ * overflows.
+ *
+ * At each recursion step, the stack items points to the commits whose
+ * ancestors are to be inspected.
+ */</doc>

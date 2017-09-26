@@ -1,0 +1,8 @@
+<dec f='codebrowser/pkt-line.h' l='91' type='char * packet_read_line_buf(char ** src_buf, size_t * src_len, int * size)'/>
+<doc f='codebrowser/pkt-line.h' l='87'>/*
+ * Same as packet_read_line, but read from a buf rather than a descriptor;
+ * see packet_read for details on how src_* is used.
+ */</doc>
+<def f='codebrowser/pkt-line.c' l='338' ll='341' type='char * packet_read_line_buf(char ** src, size_t * src_len, int * dst_len)'/>
+<use f='codebrowser/remote-curl.c' l='341' u='c' c='discover_refs'/>
+<use f='codebrowser/remote-curl.c' l='353' u='c' c='discover_refs'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/wt-status.h' l='80' type='int'/>
+<offset>6336</offset>
+<use f='codebrowser/builtin/commit.c' l='1132' u='r' c='finalize_deferred_config'/>
+<use f='codebrowser/builtin/commit.c' l='1133' u='w' c='finalize_deferred_config'/>
+<use f='codebrowser/builtin/commit.c' l='1134' u='r' c='finalize_deferred_config'/>
+<use f='codebrowser/builtin/commit.c' l='1135' u='w' c='finalize_deferred_config'/>
+<use f='codebrowser/builtin/commit.c' l='1346' u='a' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1346' u='a' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1346' u='a' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1346' u='a' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1622' u='a' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1622' u='a' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1622' u='a' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1622' u='a' c='cmd_commit'/>
+<use f='codebrowser/wt-status.c' l='139' u='w' c='wt_status_prepare'/>
+<use f='codebrowser/wt-status.c' l='1834' u='r' c='wt_shortstatus_print'/>
+<use f='codebrowser/wt-status.c' l='2206' u='r' c='wt_porcelain_v2_print'/>

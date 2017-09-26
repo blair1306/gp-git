@@ -1,0 +1,7 @@
+<def f='codebrowser/dir-iterator.c' l='33' ll='51'/>
+<size>208</size>
+<doc f='codebrowser/dir-iterator.c' l='28'>/*
+ * The full data structure used to manage the internal directory
+ * iteration state. It includes members that are not part of the
+ * public interface.
+ */</doc>

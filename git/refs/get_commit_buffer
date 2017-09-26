@@ -1,0 +1,23 @@
+<dec f='codebrowser/commit.h' l='86' type='const void * get_commit_buffer(const struct commit * , unsigned long * size)'/>
+<doc f='codebrowser/commit.h' l='81'>/*
+ * Get the commit&apos;s object contents, either from cache or by reading the object
+ * from disk. The resulting memory should not be modified, and must be given
+ * to unuse_commit_buffer when the caller is done.
+ */</doc>
+<use f='codebrowser/builtin/fast-export.c' l='545' u='c' c='handle_commit'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='262' u='c' c='record_person'/>
+<use f='codebrowser/builtin/log.c' l='1016' u='c' c='make_cover_letter'/>
+<use f='codebrowser/builtin/replace.c' l='400' u='c' c='create_graft'/>
+<def f='codebrowser/commit.c' l='259' ll='276' type='const void * get_commit_buffer(const struct commit * commit, unsigned long * sizep)'/>
+<use f='codebrowser/commit.c' l='595' u='c' c='record_author_date'/>
+<use f='codebrowser/commit.c' l='1132' u='c' c='parse_signed_commit'/>
+<use f='codebrowser/commit.c' l='1288' u='c' c='read_commit_extra_headers'/>
+<use f='codebrowser/fsck.c' l='791' u='c' c='fsck_commit'/>
+<use f='codebrowser/merge-recursive.c' l='213' u='c' c='output_commit_title'/>
+<use f='codebrowser/notes-merge.c' l='675' u='c' c='notes_merge_commit'/>
+<use f='codebrowser/pretty.c' l='605' u='c' c='logmsg_reencode'/>
+<use f='codebrowser/sequencer.c' l='849' u='c' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='872' u='c' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='1534' u='c' c='walk_revs_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='1798' u='c' c='make_patch'/>
+<use f='codebrowser/sha1_name.c' l='1041' u='c' c='get_oid_oneline'/>

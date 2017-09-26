@@ -1,0 +1,17 @@
+<dec f='codebrowser/diffcore.h' l='55' type='void fill_filespec(struct diff_filespec * , const struct object_id * , int , unsigned short )'/>
+<use f='codebrowser/builtin/diff.c' l='60' u='c' c='stuff_change'/>
+<use f='codebrowser/builtin/diff.c' l='61' u='c' c='stuff_change'/>
+<use f='codebrowser/combine-diff.c' l='305' u='c' c='grab_blob'/>
+<use f='codebrowser/combine-diff.c' l='1025' u='c' c='show_patch_diff'/>
+<use f='codebrowser/diff-lib.c' l='411' u='c' c='do_oneway_diff'/>
+<use f='codebrowser/diff-no-index.c' l='85' u='c' c='noindex_filespec'/>
+<def f='codebrowser/diff.c' l='2697' ll='2705' type='void fill_filespec(struct diff_filespec * spec, const struct object_id * oid, int oid_valid, unsigned short mode)'/>
+<use f='codebrowser/diff.c' l='5104' u='c' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5106' u='c' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5143' u='c' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5144' u='c' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5271' u='c' c='textconv_object'/>
+<use f='codebrowser/diffcore-rename.c' l='63' u='c' c='add_rename_dst'/>
+<use f='codebrowser/grep.c' l='1597' u='c' c='fill_textconv_grep'/>
+<use f='codebrowser/grep.c' l='1600' u='c' c='fill_textconv_grep'/>
+<use f='codebrowser/line-log.c' l='507' u='c' c='fill_blob_sha1'/>

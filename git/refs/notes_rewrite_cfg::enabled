@@ -1,0 +1,5 @@
+<dec f='codebrowser/notes-utils.h' l='33' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/notes-utils.c' l='94' u='w' c='notes_rewrite_config'/>
+<use f='codebrowser/notes-utils.c' l='126' u='w' c='init_copy_notes_for_rewrite'/>
+<use f='codebrowser/notes-utils.c' l='149' u='r' c='init_copy_notes_for_rewrite'/>

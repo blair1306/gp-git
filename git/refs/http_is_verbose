@@ -1,0 +1,8 @@
+<dec f='codebrowser/http.h' l='113' type='int'/>
+<use f='codebrowser/http-push.c' l='1728' u='w' c='cmd_main'/>
+<use f='codebrowser/http-walker.c' l='155' u='w' c='prefetch'/>
+<def f='codebrowser/http.c' l='22' type='int'/>
+<use f='codebrowser/http.c' l='912' u='w' c='http_init'/>
+<use f='codebrowser/http.c' l='1887' u='r' c='fetch_pack_index'/>
+<use f='codebrowser/http.c' l='2092' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2258' u='r' c='new_http_object_request'/>

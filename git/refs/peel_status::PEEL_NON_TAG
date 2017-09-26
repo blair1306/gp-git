@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs/refs-internal.h' l='101' type='-2'/>
+<use f='codebrowser/refs.c' l='267' u='r' c='peel_object'/>
+<doc f='codebrowser/refs/refs-internal.h' l='100'>/* object cannot be peeled because it is not a tag: */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='504' u='r' c='peel_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='513' u='r' c='peel_entry'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/delta.h' l='31' type='unsigned long sizeof_delta_index(struct delta_index * index)'/>
+<doc f='codebrowser/delta.h' l='26'>/*
+ * sizeof_delta_index: returns memory usage of delta index
+ *
+ * Given pointer must be what create_delta_index() returned, or NULL.
+ */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='1907' u='c' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1965' u='c' c='free_unpacked'/>
+<def f='codebrowser/diff-delta.c' l='303' ll='309' type='unsigned long sizeof_delta_index(struct delta_index * index)'/>

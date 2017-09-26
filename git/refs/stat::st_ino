@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/bits/stat.h' l='53' type='__ino_t'/>
+<offset>64</offset>
+<doc f='include/x86_64-linux-gnu/bits/stat.h' l='53'>/* File serial number.	*/</doc>
+<use f='codebrowser/builtin/merge.c' l='958' u='r' c='default_edit_option'/>
+<use f='codebrowser/builtin/merge.c' l='958' u='r' c='default_edit_option'/>
+<use f='codebrowser/read-cache.c' l='93' u='r' c='fill_stat_data'/>
+<use f='codebrowser/read-cache.c' l='121' u='r' c='match_stat_data'/>
+<use f='codebrowser/strbuf.c' l='701' u='r' c='strbuf_add_absolute_path'/>
+<use f='codebrowser/strbuf.c' l='704' u='r' c='strbuf_add_absolute_path'/>
+<use f='codebrowser/strbuf.c' l='704' u='r' c='strbuf_add_absolute_path'/>

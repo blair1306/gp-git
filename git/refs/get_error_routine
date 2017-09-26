@@ -1,0 +1,4 @@
+<dec f='codebrowser/git-compat-util.h' l='452' type='void (*)(const char *, struct __va_list_tag *) get_error_routine()'/>
+<use f='codebrowser/apply.c' l='153' u='c' c='check_apply_state'/>
+<use f='codebrowser/run-command.c' l='351' u='c' c='child_err_spew'/>
+<def f='codebrowser/usage.c' l='84' ll='87' type='void (*)(const char *, struct __va_list_tag *) get_error_routine()'/>

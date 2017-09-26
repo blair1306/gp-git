@@ -1,0 +1,11 @@
+<dec f='codebrowser/sha1-array.h' l='19' type='int oid_array_for_each_unique(struct oid_array * array, for_each_oid_fn fn, void * data)'/>
+<use f='codebrowser/builtin/cat-file.c' l='479' u='c' c='batch_objects'/>
+<def f='codebrowser/sha1-array.c' l='44' ll='62' type='int oid_array_for_each_unique(struct oid_array * array, for_each_oid_fn fn, void * data)'/>
+<use f='codebrowser/sha1_name.c' l='458' u='c' c='for_each_abbrev'/>
+<use f='codebrowser/submodule.c' l='854' u='c' c='submodule_has_commits'/>
+<use f='codebrowser/submodule.c' l='866' u='c' c='submodule_has_commits'/>
+<use f='codebrowser/submodule.c' l='905' u='c' c='submodule_needs_pushing'/>
+<use f='codebrowser/submodule.c' l='936' u='c' c='find_unpushed_submodules'/>
+<use f='codebrowser/submodule.c' l='1109' u='c' c='calculate_changed_submodule_paths'/>
+<use f='codebrowser/submodule.c' l='1112' u='c' c='calculate_changed_submodule_paths'/>
+<use f='codebrowser/t/helper/test-sha1-array.c' l='30' u='c' c='cmd_main'/>

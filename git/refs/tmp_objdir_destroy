@@ -1,0 +1,8 @@
+<dec f='codebrowser/tmp-objdir.h' l='46' type='int tmp_objdir_destroy(struct tmp_objdir * )'/>
+<doc f='codebrowser/tmp-objdir.h' l='43'>/*
+ * Destroy a temporary object directory, discarding any objects it contains.
+ */</doc>
+<def f='codebrowser/tmp-objdir.c' l='57' ll='60' type='int tmp_objdir_destroy(struct tmp_objdir * t)'/>
+<use f='codebrowser/tmp-objdir.c' l='64' u='c' c='remove_tmp_objdir'/>
+<use f='codebrowser/tmp-objdir.c' l='159' u='c' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='277' u='c' c='tmp_objdir_migrate'/>

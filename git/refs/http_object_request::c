@@ -1,0 +1,6 @@
+<dec f='codebrowser/http.h' l='222' type='SHA1_CTX'/>
+<offset>35328</offset>
+<use f='codebrowser/http.c' l='2141' u='a' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2198' u='a' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2232' u='a' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2301' u='a' c='finish_http_object_request'/>

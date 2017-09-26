@@ -1,0 +1,26 @@
+<dec f='codebrowser/commit.h' l='220' type='void clear_commit_marks(struct commit * commit, unsigned int mark)'/>
+<use f='codebrowser/builtin/describe.c' l='437' u='c' c='describe'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='399' u='c' c='shortlog'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='400' u='c' c='shortlog'/>
+<use f='codebrowser/builtin/log.c' l='918' u='c' c='get_patch_ids'/>
+<use f='codebrowser/builtin/log.c' l='919' u='c' c='get_patch_ids'/>
+<use f='codebrowser/builtin/reflog.c' l='374' u='c' c='reflog_expiry_cleanup'/>
+<use f='codebrowser/builtin/reflog.c' l='377' u='c' c='reflog_expiry_cleanup'/>
+<def f='codebrowser/commit.c' l='551' ll='554' type='void clear_commit_marks(struct commit * commit, unsigned int mark)'/>
+<use f='codebrowser/commit.c' l='566' u='c' c='clear_commit_marks_for_object_array'/>
+<use f='codebrowser/commit.c' l='925' u='c' c='remove_redundant'/>
+<use f='codebrowser/commit.c' l='927' u='c' c='remove_redundant'/>
+<use f='codebrowser/commit.c' l='962' u='c' c='get_merge_bases_many_0'/>
+<use f='codebrowser/commit.c' l='975' u='c' c='get_merge_bases_many_0'/>
+<use f='codebrowser/commit.c' l='1040' u='c' c='in_merge_bases_many'/>
+<use f='codebrowser/fetch-pack.c' l='145' u='c' c='clear_marks'/>
+<use f='codebrowser/ref-filter.c' l='1945' u='c' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='1946' u='c' c='do_merge_filter'/>
+<use f='codebrowser/remote.c' l='2054' u='c' c='stat_tracking_info'/>
+<use f='codebrowser/remote.c' l='2055' u='c' c='stat_tracking_info'/>
+<use f='codebrowser/sha1_name.c' l='1055' u='c' c='get_oid_oneline'/>
+<use f='codebrowser/submodule.c' l='636' u='c' c='show_submodule_summary'/>
+<use f='codebrowser/submodule.c' l='637' u='c' c='show_submodule_summary'/>
+<use f='codebrowser/submodule.c' l='706' u='c' c='show_submodule_inline_diff'/>
+<use f='codebrowser/submodule.c' l='708' u='c' c='show_submodule_inline_diff'/>
+<use f='codebrowser/upload-pack.c' l='351' u='c' c='reachable'/>

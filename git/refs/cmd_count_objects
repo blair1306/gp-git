@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='154' type='int cmd_count_objects(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/count-objects.c' l='91' ll='170' type='int cmd_count_objects(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='389'/>
+<use f='codebrowser/git.c' l='389'/>
+<use f='codebrowser/git.c' l='389'/>
+<use f='codebrowser/git.c' l='389'/>

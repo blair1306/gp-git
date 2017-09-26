@@ -1,0 +1,11 @@
+<dec f='codebrowser/utf8.h' l='8' type='int utf8_strnwidth(const char * string, int len, int skip_ansi)'/>
+<use f='codebrowser/pretty.c' l='1314' u='c' c='format_and_pad_commit'/>
+<use f='codebrowser/pretty.c' l='1332' u='c' c='format_and_pad_commit'/>
+<def f='codebrowser/utf8.c' l='206' ll='221' type='int utf8_strnwidth(const char * string, int len, int skip_ansi)'/>
+<use f='codebrowser/utf8.c' l='225' u='c' c='utf8_strwidth'/>
+<use f='codebrowser/utf8.c' l='666' u='c' c='strbuf_utf8_align'/>
+<doc f='codebrowser/utf8.c' l='201'>/*
+ * Returns the total number of columns required by a null-terminated
+ * string, assuming that the string is utf8.  Returns strlen() instead
+ * if the string does not look like a valid utf8 string.
+ */</doc>

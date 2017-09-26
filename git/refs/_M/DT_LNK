@@ -1,0 +1,4 @@
+<dec f='include/dirent.h' l='112'/>
+<use f='codebrowser/cache.h' l='304' u='c'/>
+<use f='codebrowser/dir.c' l='1545' u='c'/>
+<use f='codebrowser/dir.c' l='1608' u='c'/>

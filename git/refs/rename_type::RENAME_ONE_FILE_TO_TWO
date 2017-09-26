@@ -1,0 +1,3 @@
+<dec f='codebrowser/merge-recursive.c' l='99' type='3'/>
+<use f='codebrowser/merge-recursive.c' l='1416' u='r' c='process_renames'/>
+<use f='codebrowser/merge-recursive.c' l='1824' c='process_entry'/>

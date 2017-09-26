@@ -1,0 +1,12 @@
+<dec f='codebrowser/grep.h' l='156' type='int'/>
+<offset>1760</offset>
+<use f='codebrowser/grep.c' l='39' u='w' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='85' u='w' c='grep_config'/>
+<use f='codebrowser/grep.c' l='151' u='w' c='grep_init'/>
+<use f='codebrowser/grep.c' l='151' u='r' c='grep_init'/>
+<use f='codebrowser/grep.c' l='223' u='r' c='grep_commit_pattern_type'/>
+<use f='codebrowser/grep.c' l='224' u='r' c='grep_commit_pattern_type'/>
+<use f='codebrowser/revision.c' l='2018' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2020' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2025' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2027' u='w' c='handle_revision_opt'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/diff.h' l='46'/>
+<use f='codebrowser/builtin/commit.c' l='1478' u='c'/>
+<use f='codebrowser/builtin/log.c' l='1056' u='c'/>
+<use f='codebrowser/builtin/log.c' l='1609' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='418' u='c'/>
+<use f='codebrowser/diff.c' l='3454' u='c'/>
+<use f='codebrowser/diff.c' l='3466' u='c'/>
+<use f='codebrowser/diff.c' l='3823' u='c'/>
+<use f='codebrowser/diff.c' l='4782' u='c'/>

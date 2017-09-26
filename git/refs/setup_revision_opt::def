@@ -1,0 +1,11 @@
+<dec f='codebrowser/revision.h' l='241' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/log.c' l='459' u='w' c='cmd_whatchanged'/>
+<use f='codebrowser/builtin/log.c' l='579' u='w' c='cmd_show'/>
+<use f='codebrowser/builtin/log.c' l='656' u='w' c='cmd_log_reflog'/>
+<use f='codebrowser/builtin/log.c' l='694' u='w' c='cmd_log'/>
+<use f='codebrowser/builtin/log.c' l='1518' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/diff-lib.c' l='545' u='w' c='index_differs_from'/>
+<use f='codebrowser/revision.c' l='2312' u='r' c='setup_revisions'/>
+<use f='codebrowser/wt-status.c' l='585' u='w' c='wt_status_collect_changes_index'/>
+<use f='codebrowser/wt-status.c' l='958' u='w' c='wt_longstatus_print_verbose'/>

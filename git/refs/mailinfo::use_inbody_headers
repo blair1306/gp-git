@@ -1,0 +1,5 @@
+<dec f='codebrowser/mailinfo.h' l='17' type='int'/>
+<offset>704</offset>
+<use f='codebrowser/builtin/mailinfo.c' l='44' u='w' c='cmd_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='770' u='r' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='1149' u='w' c='setup_mailinfo'/>

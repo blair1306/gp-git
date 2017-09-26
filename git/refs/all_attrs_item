@@ -1,0 +1,5 @@
+<def f='codebrowser/attr.c' l='135' ll='144'/>
+<size>24</size>
+<mbr r='all_attrs_item::attr' o='0' t='const struct git_attr *'/>
+<mbr r='all_attrs_item::value' o='64' t='const char *'/>
+<mbr r='all_attrs_item::macro' o='128' t='const struct match_attr *'/>

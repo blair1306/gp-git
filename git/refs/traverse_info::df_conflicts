@@ -1,0 +1,4 @@
+<dec f='codebrowser/tree-walk.h' l='76' type='unsigned long'/>
+<offset>448</offset>
+<use f='codebrowser/unpack-trees.c' l='640' u='w' c='traverse_trees_recursive'/>
+<use f='codebrowser/unpack-trees.c' l='797' u='r' c='unpack_nondirectories'/>

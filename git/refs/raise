@@ -1,0 +1,20 @@
+<dec f='include/signal.h' l='139' type='int raise(int __sig)'/>
+<doc f='include/signal.h' l='138'>/* Raise signal SIG, i.e., send SIG to yourself.  */</doc>
+<use f='codebrowser/builtin/clone.c' l='517' u='c' c='remove_junk_on_signal'/>
+<use f='codebrowser/builtin/fetch.c' l='177' u='c' c='unlock_pack_on_signal'/>
+<use f='codebrowser/builtin/gc.c' l='105' u='c' c='process_log_file_on_signal'/>
+<use f='codebrowser/builtin/repack.c' l='81' u='c' c='remove_pack_on_signal'/>
+<use f='codebrowser/builtin/worktree.c' l='169' u='c' c='remove_junk_on_signal'/>
+<use f='codebrowser/compat/terminal.c' l='14' u='c' c='restore_term_on_signal'/>
+<use f='codebrowser/editor.c' l='57' u='c' c='launch_editor'/>
+<use f='codebrowser/http-push.c' l='1002' u='c' c='remove_locks_on_signal'/>
+<use f='codebrowser/pager.c' l='37' u='c' c='wait_for_pager_signal'/>
+<use f='codebrowser/run-command.c' l='76' u='c' c='cleanup_children_on_signal'/>
+<use f='codebrowser/run-command.c' l='1031' u='c' c='check_pipe'/>
+<use f='codebrowser/run-command.c' l='1435' u='c' c='handle_children_on_signal'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='9' u='c' c='one'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='9' u='c' c='two'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='9' u='c' c='three'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='20' u='c' c='cmd_main'/>
+<use f='codebrowser/tempfile.c' l='85' u='c' c='remove_tempfiles_on_signal'/>
+<use f='codebrowser/tmp-objdir.c' l='71' u='c' c='remove_tmp_objdir_on_signal'/>

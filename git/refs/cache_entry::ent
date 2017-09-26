@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='176' type='struct hashmap_entry'/>
+<offset>0</offset>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='51' u='m' c='dump_run'/>

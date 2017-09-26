@@ -1,0 +1,4 @@
+<dec f='codebrowser/send-pack.h' l='33' type='int send_pack(struct send_pack_args * args, int * fd, struct child_process * conn, struct ref * remote_refs, struct oid_array * extra_have)'/>
+<use f='codebrowser/builtin/send-pack.c' l='283' u='c' c='cmd_send_pack'/>
+<def f='codebrowser/send-pack.c' l='377' ll='629' type='int send_pack(struct send_pack_args * args, int * fd, struct child_process * conn, struct ref * remote_refs, struct oid_array * extra_have)'/>
+<use f='codebrowser/transport.c' l='574' u='c' c='git_transport_push'/>

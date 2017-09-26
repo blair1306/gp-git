@@ -1,0 +1,10 @@
+<dec f='codebrowser/git-compat-util.h' l='661' type='size_t gitstrlcpy(char * , const char * , size_t )'/>
+<use f='codebrowser/archive-tar.c' l='209' macro='1' u='c'/>
+<use f='codebrowser/archive-tar.c' l='210' macro='1' u='c'/>
+<use f='codebrowser/builtin/difftool.c' l='179' macro='1' u='c'/>
+<def f='codebrowser/compat/strlcpy.c' l='3' ll='13' type='size_t gitstrlcpy(char * dest, const char * src, size_t size)'/>
+<use f='codebrowser/daemon.c' l='213' macro='1' u='c'/>
+<use f='codebrowser/http.c' l='1411' macro='1' u='c'/>
+<use f='codebrowser/path.c' l='63' macro='1' u='c'/>
+<use f='codebrowser/wrapper.c' l='452' macro='1' u='c'/>
+<use f='codebrowser/wrapper.c' l='548' macro='1' u='c'/>

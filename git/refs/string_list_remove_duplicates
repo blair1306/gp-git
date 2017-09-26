@@ -1,0 +1,10 @@
+<dec f='codebrowser/string-list.h' l='83' type='void string_list_remove_duplicates(struct string_list * sorted_list, int free_util)'/>
+<doc f='codebrowser/string-list.h' l='78'>/*
+ * Remove all but the first of consecutive entries with the same
+ * string value.  If free_util is true, call free() on the util
+ * members of any items that have to be deleted.
+ */</doc>
+<use f='codebrowser/builtin/clone.c' l='993' u='c' c='cmd_clone'/>
+<use f='codebrowser/notes.c' l='919' u='c' c='combine_notes_cat_sort_uniq'/>
+<def f='codebrowser/string-list.c' l='108' ll='124' type='void string_list_remove_duplicates(struct string_list * list, int free_util)'/>
+<use f='codebrowser/t/helper/test-string-list.c' l='94' u='c' c='cmd_main'/>

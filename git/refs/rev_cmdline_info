@@ -1,0 +1,5 @@
+<def f='codebrowser/revision.h' l='33' ll='49'/>
+<size>16</size>
+<mbr r='rev_cmdline_info::nr' o='0' t='unsigned int'/>
+<mbr r='rev_cmdline_info::alloc' o='32' t='unsigned int'/>
+<mbr r='rev_cmdline_info::rev' o='64' t='struct rev_cmdline_entry *'/>

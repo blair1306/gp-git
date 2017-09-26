@@ -1,0 +1,2 @@
+<def f='codebrowser/sub-process.h' l='69' ll='73' type='struct child_process * subprocess_get_child_process(struct subprocess_entry * entry)'/>
+<doc f='codebrowser/sub-process.h' l='68'>/* Get the underlying `struct child_process` from a subprocess. */</doc>

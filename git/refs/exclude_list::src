@@ -1,0 +1,11 @@
+<dec f='codebrowser/dir.h' l='54' type='const char *'/>
+<offset>128</offset>
+<doc f='codebrowser/dir.h' l='53'>/* origin of list, e.g. path to filename, or descriptive string */</doc>
+<use f='codebrowser/builtin/check-ignore.c' l='43' u='r' c='output_exclude'/>
+<use f='codebrowser/builtin/check-ignore.c' l='60' u='r' c='output_exclude'/>
+<use f='codebrowser/dir.c' l='854' u='w' c='add_exclude_list'/>
+<use f='codebrowser/dir.c' l='1084' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1182' u='w' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1183' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1183' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2377' u='r' c='clear_directory'/>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>mailinfo.h source code [codebrowser/mailinfo.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="mailinfo "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/mailinfo.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='mailinfo.h.html'>mailinfo.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/MAILINFO_H">MAILINFO_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/MAILINFO_H" data-ref="_M/MAILINFO_H">MAILINFO_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#define <dfn class="macro" id="_M/MAX_BOUNDARIES" data-ref="_M/MAX_BOUNDARIES">MAX_BOUNDARIES</dfn> 5</u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <dfn class="type def" id="mailinfo" title='mailinfo' data-ref="mailinfo">mailinfo</dfn> {</td></tr>
+<tr><th id="7">7</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="mailinfo::input" title='mailinfo::input' data-ref="mailinfo::input">input</dfn>;</td></tr>
+<tr><th id="8">8</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="mailinfo::output" title='mailinfo::output' data-ref="mailinfo::output">output</dfn>;</td></tr>
+<tr><th id="9">9</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="mailinfo::patchfile" title='mailinfo::patchfile' data-ref="mailinfo::patchfile">patchfile</dfn>;</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="mailinfo::name" title='mailinfo::name' data-ref="mailinfo::name">name</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="mailinfo::email" title='mailinfo::email' data-ref="mailinfo::email">email</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<em>int</em> <dfn class="decl" id="mailinfo::keep_subject" title='mailinfo::keep_subject' data-ref="mailinfo::keep_subject">keep_subject</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>int</em> <dfn class="decl" id="mailinfo::keep_non_patch_brackets_in_subject" title='mailinfo::keep_non_patch_brackets_in_subject' data-ref="mailinfo::keep_non_patch_brackets_in_subject">keep_non_patch_brackets_in_subject</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<em>int</em> <dfn class="decl" id="mailinfo::add_message_id" title='mailinfo::add_message_id' data-ref="mailinfo::add_message_id">add_message_id</dfn>;</td></tr>
+<tr><th id="16">16</th><td>	<em>int</em> <dfn class="decl" id="mailinfo::use_scissors" title='mailinfo::use_scissors' data-ref="mailinfo::use_scissors">use_scissors</dfn>;</td></tr>
+<tr><th id="17">17</th><td>	<em>int</em> <dfn class="decl" id="mailinfo::use_inbody_headers" title='mailinfo::use_inbody_headers' data-ref="mailinfo::use_inbody_headers">use_inbody_headers</dfn>;</td></tr>
+<tr><th id="18">18</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="mailinfo::metainfo_charset" title='mailinfo::metainfo_charset' data-ref="mailinfo::metainfo_charset">metainfo_charset</dfn>;</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="decl" id="mailinfo::content" title='mailinfo::content' data-ref="mailinfo::content">content</dfn>[<a class="macro" href="#4" title="5" data-ref="_M/MAX_BOUNDARIES">MAX_BOUNDARIES</a>];</td></tr>
+<tr><th id="21">21</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> **<dfn class="decl" id="mailinfo::content_top" title='mailinfo::content_top' data-ref="mailinfo::content_top">content_top</dfn>;</td></tr>
+<tr><th id="22">22</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="mailinfo::charset" title='mailinfo::charset' data-ref="mailinfo::charset">charset</dfn>;</td></tr>
+<tr><th id="23">23</th><td>	<em>char</em> *<dfn class="decl" id="mailinfo::message_id" title='mailinfo::message_id' data-ref="mailinfo::message_id">message_id</dfn>;</td></tr>
+<tr><th id="24">24</th><td>	<b>enum</b>  {</td></tr>
+<tr><th id="25">25</th><td>		<dfn class="enum" id="mailinfo::TE_DONTCARE" title='mailinfo::TE_DONTCARE' data-ref="mailinfo::TE_DONTCARE">TE_DONTCARE</dfn>, <dfn class="enum" id="mailinfo::TE_QP" title='mailinfo::TE_QP' data-ref="mailinfo::TE_QP">TE_QP</dfn>, <dfn class="enum" id="mailinfo::TE_BASE64" title='mailinfo::TE_BASE64' data-ref="mailinfo::TE_BASE64">TE_BASE64</dfn></td></tr>
+<tr><th id="26">26</th><td>	} <dfn class="decl" id="mailinfo::transfer_encoding" title='mailinfo::transfer_encoding' data-ref="mailinfo::transfer_encoding">transfer_encoding</dfn>;</td></tr>
+<tr><th id="27">27</th><td>	<em>int</em> <dfn class="decl" id="mailinfo::patch_lines" title='mailinfo::patch_lines' data-ref="mailinfo::patch_lines">patch_lines</dfn>;</td></tr>
+<tr><th id="28">28</th><td>	<em>int</em> <dfn class="decl" id="mailinfo::filter_stage" title='mailinfo::filter_stage' data-ref="mailinfo::filter_stage">filter_stage</dfn>; <i>/* still reading log or are we copying patch? */</i></td></tr>
+<tr><th id="29">29</th><td>	<em>int</em> <dfn class="decl" id="mailinfo::header_stage" title='mailinfo::header_stage' data-ref="mailinfo::header_stage">header_stage</dfn>; <i>/* still checking in-body headers? */</i></td></tr>
+<tr><th id="30">30</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="mailinfo::inbody_header_accum" title='mailinfo::inbody_header_accum' data-ref="mailinfo::inbody_header_accum">inbody_header_accum</dfn>;</td></tr>
+<tr><th id="31">31</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> **<dfn class="decl" id="mailinfo::p_hdr_data" title='mailinfo::p_hdr_data' data-ref="mailinfo::p_hdr_data">p_hdr_data</dfn>;</td></tr>
+<tr><th id="32">32</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> **<dfn class="decl" id="mailinfo::s_hdr_data" title='mailinfo::s_hdr_data' data-ref="mailinfo::s_hdr_data">s_hdr_data</dfn>;</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="mailinfo::log_message" title='mailinfo::log_message' data-ref="mailinfo::log_message">log_message</dfn>;</td></tr>
+<tr><th id="35">35</th><td>	<em>int</em> <dfn class="decl" id="mailinfo::input_error" title='mailinfo::input_error' data-ref="mailinfo::input_error">input_error</dfn>;</td></tr>
+<tr><th id="36">36</th><td>};</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="setup_mailinfo" title='setup_mailinfo' data-ref="setup_mailinfo">setup_mailinfo</dfn>(<b>struct</b> <a class="type" href="#mailinfo" title='mailinfo' data-ref="mailinfo">mailinfo</a> *);</td></tr>
+<tr><th id="39">39</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="mailinfo" title='mailinfo' data-ref="mailinfo">mailinfo</dfn>(<b>struct</b> <a class="type" href="#mailinfo" title='mailinfo' data-ref="mailinfo">mailinfo</a> *, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="46msg" title='msg' data-type='const char *' data-ref="46msg">msg</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="47patch" title='patch' data-type='const char *' data-ref="47patch">patch</dfn>);</td></tr>
+<tr><th id="40">40</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="clear_mailinfo" title='clear_mailinfo' data-ref="clear_mailinfo">clear_mailinfo</dfn>(<b>struct</b> <a class="type" href="#mailinfo" title='mailinfo' data-ref="mailinfo">mailinfo</a> *);</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="1">endif</span> /* MAILINFO_H */</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/am.c.html'>codebrowser/builtin/am.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

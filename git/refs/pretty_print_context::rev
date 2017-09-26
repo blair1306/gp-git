@@ -1,0 +1,6 @@
+<dec f='codebrowser/commit.h' l='162' type='struct rev_info *'/>
+<offset>640</offset>
+<use f='codebrowser/builtin/log.c' l='1028' u='w' c='make_cover_letter'/>
+<use f='codebrowser/log-tree.c' l='603' u='w' c='show_log'/>
+<use f='codebrowser/pretty.c' l='1599' u='r' c='pp_title_line'/>
+<use f='codebrowser/pretty.c' l='1600' u='r' c='pp_title_line'/>

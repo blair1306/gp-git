@@ -1,0 +1,5 @@
+<dec f='codebrowser/xdiff/xutils.h' l='31' type='int xdl_cha_init(chastore_t * cha, long isize, long icount)'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='315' u='c' c='histogram_diff'/>
+<use f='codebrowser/xdiff/xprepare.c' l='77' u='c' c='xdl_init_classifier'/>
+<use f='codebrowser/xdiff/xprepare.c' l='179' u='c' c='xdl_prepare_ctx'/>
+<def f='codebrowser/xdiff/xutils.c' l='78' ll='87' type='int xdl_cha_init(chastore_t * cha, long isize, long icount)'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/config.h' l='203' type='int git_config_get_string_const(const char * key, const char ** dest)'/>
+<use f='codebrowser/apply.c' l='26' u='c' c='git_apply_config'/>
+<use f='codebrowser/apply.c' l='27' u='c' c='git_apply_config'/>
+<use f='codebrowser/builtin/fetch.c' l='527' u='c' c='prepare_format_display'/>
+<def f='codebrowser/config.c' l='2027' ll='2030' type='int git_config_get_string_const(const char * key, const char ** dest)'/>
+<use f='codebrowser/config.c' l='2086' u='c' c='git_config_get_expiry'/>
+<use f='codebrowser/connect.c' l='694' u='c' c='get_ssh_command'/>
+<use f='codebrowser/t/helper/test-config.c' l='142' u='c' c='cmd_main'/>

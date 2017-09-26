@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs/ref-cache.c' l='322' type='2'/>
+<use f='codebrowser/refs/ref-cache.c' l='341' u='r' c='overlaps_prefix'/>
+<use f='codebrowser/refs/ref-cache.c' l='378' c='prime_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='470' u='r' c='cache_ref_iterator_advance'/>
+<doc f='codebrowser/refs/ref-cache.c' l='321'>/* No refs within the directory could possibly match prefix: */</doc>

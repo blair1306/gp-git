@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>mru.h source code [codebrowser/mru.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="mru,mru_entry "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/mru.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='mru.h.html'>mru.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/MRU_H">MRU_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/MRU_H" data-ref="_M/MRU_H">MRU_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="5">5</th><td><i class="doc"> * A simple most-recently-used cache, backed by a doubly-linked list.</i></td></tr>
+<tr><th id="6">6</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="7">7</th><td><i class="doc"> * Usage is roughly:</i></td></tr>
+<tr><th id="8">8</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="9">9</th><td><i class="doc"> *   // Create a list.  Zero-initialization is required.</i></td></tr>
+<tr><th id="10">10</th><td><i class="doc"> *   static struct mru cache;</i></td></tr>
+<tr><th id="11">11</th><td><i class="doc"> *   mru_append(&amp;cache, item);</i></td></tr>
+<tr><th id="12">12</th><td><i class="doc"> *   ...</i></td></tr>
+<tr><th id="13">13</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="14">14</th><td><i class="doc"> *   // Iterate in MRU order.</i></td></tr>
+<tr><th id="15">15</th><td><i class="doc"> *   struct mru_entry *p;</i></td></tr>
+<tr><th id="16">16</th><td><i class="doc"> *   for (p = cache.head; p; p = p-&gt;next) {</i></td></tr>
+<tr><th id="17">17</th><td><i class="doc"> *	if (matches(p-&gt;item))</i></td></tr>
+<tr><th id="18">18</th><td><i class="doc"> *		break;</i></td></tr>
+<tr><th id="19">19</th><td><i class="doc"> *   }</i></td></tr>
+<tr><th id="20">20</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="21">21</th><td><i class="doc"> *   // Mark an item as used, moving it to the front of the list.</i></td></tr>
+<tr><th id="22">22</th><td><i class="doc"> *   mru_mark(&amp;cache, p);</i></td></tr>
+<tr><th id="23">23</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="24">24</th><td><i class="doc"> *   // Reset the list to empty, cleaning up all resources.</i></td></tr>
+<tr><th id="25">25</th><td><i class="doc"> *   mru_clear(&amp;cache);</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> * Note that you SHOULD NOT call mru_mark() and then continue traversing the</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> * list; it reorders the marked item to the front of the list, and therefore</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * you will begin traversing the whole list again.</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><b>struct</b> <dfn class="type def" id="mru_entry" title='mru_entry' data-ref="mru_entry">mru_entry</dfn> {</td></tr>
+<tr><th id="33">33</th><td>	<em>void</em> *<dfn class="decl" id="mru_entry::item" title='mru_entry::item' data-ref="mru_entry::item">item</dfn>;</td></tr>
+<tr><th id="34">34</th><td>	<b>struct</b> <a class="type" href="#mru_entry" title='mru_entry' data-ref="mru_entry">mru_entry</a> *<dfn class="decl" id="mru_entry::prev" title='mru_entry::prev' data-ref="mru_entry::prev">prev</dfn>, *<dfn class="decl" id="mru_entry::next" title='mru_entry::next' data-ref="mru_entry::next">next</dfn>;</td></tr>
+<tr><th id="35">35</th><td>};</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><b>struct</b> <dfn class="type def" id="mru" title='mru' data-ref="mru">mru</dfn> {</td></tr>
+<tr><th id="38">38</th><td>	<b>struct</b> <a class="type" href="#mru_entry" title='mru_entry' data-ref="mru_entry">mru_entry</a> *<dfn class="decl" id="mru::head" title='mru::head' data-ref="mru::head">head</dfn>, *<dfn class="decl" id="mru::tail" title='mru::tail' data-ref="mru::tail">tail</dfn>;</td></tr>
+<tr><th id="39">39</th><td>};</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><em>void</em> <dfn class="decl" id="mru_append" title='mru_append' data-ref="mru_append">mru_append</dfn>(<b>struct</b> <a class="type" href="#mru" title='mru' data-ref="mru">mru</a> *<dfn class="local col2 decl" id="192mru" title='mru' data-type='struct mru *' data-ref="192mru">mru</dfn>, <em>void</em> *<dfn class="local col3 decl" id="193item" title='item' data-type='void *' data-ref="193item">item</dfn>);</td></tr>
+<tr><th id="42">42</th><td><em>void</em> <dfn class="decl" id="mru_mark" title='mru_mark' data-ref="mru_mark">mru_mark</dfn>(<b>struct</b> <a class="type" href="#mru" title='mru' data-ref="mru">mru</a> *<dfn class="local col4 decl" id="194mru" title='mru' data-type='struct mru *' data-ref="194mru">mru</dfn>, <b>struct</b> <a class="type" href="#mru_entry" title='mru_entry' data-ref="mru_entry">mru_entry</a> *<dfn class="local col5 decl" id="195entry" title='entry' data-type='struct mru_entry *' data-ref="195entry">entry</dfn>);</td></tr>
+<tr><th id="43">43</th><td><em>void</em> <dfn class="decl" id="mru_clear" title='mru_clear' data-ref="mru_clear">mru_clear</dfn>(<b>struct</b> <a class="type" href="#mru" title='mru' data-ref="mru">mru</a> *<dfn class="local col6 decl" id="196mru" title='mru' data-type='struct mru *' data-ref="196mru">mru</dfn>);</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#<span data-ppcond="1">endif</span> /* MRU_H */</u></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/pack-objects.c.html'>codebrowser/builtin/pack-objects.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

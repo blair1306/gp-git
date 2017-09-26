@@ -1,0 +1,5 @@
+<dec f='include/stdio.h' l='286' type='FILE * freopen(const char *restrict __filename, const char *restrict __modes, FILE *restrict __stream)'/>
+<dec f='include/stdio.h' l='299' type='FILE * freopen64(const char *restrict __filename, const char *restrict __modes, FILE *restrict __stream)'/>
+<use f='codebrowser/builtin/merge-file.c' l='64' u='c' c='cmd_merge_file'/>
+<use f='codebrowser/credential-cache--daemon.c' l='213' u='c' c='serve_cache'/>
+<use f='codebrowser/daemon.c' l='1381' u='c' c='cmd_main'/>

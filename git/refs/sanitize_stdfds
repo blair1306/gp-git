@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='571' type='void sanitize_stdfds()'/>
+<use f='codebrowser/common-main.c' l='33' u='c' c='main'/>
+<def f='codebrowser/setup.c' l='1199' ll='1208' type='void sanitize_stdfds()'/>
+<use f='codebrowser/setup.c' l='1229' u='c' c='daemonize'/>
+<doc f='codebrowser/setup.c' l='1198'>/* if any standard file descriptor is missing open it to /dev/null */</doc>

@@ -1,0 +1,6 @@
+<def f='codebrowser/refs/ref-cache.c' l='390' ll='406'/>
+<size>16</size>
+<doc f='codebrowser/refs/ref-cache.c' l='386'>/*
+ * A level in the reference hierarchy that is currently being iterated
+ * through.
+ */</doc>

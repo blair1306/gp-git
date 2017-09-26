@@ -1,0 +1,15 @@
+<dec f='codebrowser/apply.h' l='44' type='int'/>
+<use f='codebrowser/apply.c' l='85' u='w' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='134' u='w' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='139' u='w' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='165' u='r' c='set_default_whitespace_mode'/>
+<use f='codebrowser/apply.c' l='2189' u='r' c='parse_chunk'/>
+<use f='codebrowser/apply.c' l='3039' u='w' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='4678' u='w' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4680' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4696' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4708' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4868' u='r' c='apply_all_patches'/>
+<offset>160</offset>
+<doc f='codebrowser/apply.h' l='43'>/* These control what gets looked at and modified */</doc>
+<doc f='codebrowser/apply.h' l='44'>/* this is not a dry-run */</doc>

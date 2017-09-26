@@ -1,0 +1,23 @@
+<dec f='codebrowser/blame.h' l='54' type='struct object_id'/>
+<use f='codebrowser/blame.c' l='235' u='m' c='fake_working_tree_commit'/>
+<use f='codebrowser/blame.c' l='257' u='a' c='fake_working_tree_commit'/>
+<use f='codebrowser/blame.c' l='297' u='a' c='fill_origin_blob'/>
+<use f='codebrowser/blame.c' l='300' u='m' c='fill_origin_blob'/>
+<use f='codebrowser/blame.c' l='306' u='a' c='fill_origin_blob'/>
+<use f='codebrowser/blame.c' l='503' u='a' c='fill_blob_sha1_and_mode'/>
+<use f='codebrowser/blame.c' l='507' u='m' c='fill_blob_sha1_and_mode'/>
+<use f='codebrowser/blame.c' l='509' u='m' c='fill_blob_sha1_and_mode'/>
+<use f='codebrowser/blame.c' l='513' u='a' c='fill_blob_sha1_and_mode'/>
+<use f='codebrowser/blame.c' l='566' u='a' c='find_origin'/>
+<use f='codebrowser/blame.c' l='566' u='a' c='find_origin'/>
+<use f='codebrowser/blame.c' l='592' u='a' c='find_origin'/>
+<use f='codebrowser/blame.c' l='637' u='a' c='find_rename'/>
+<use f='codebrowser/blame.c' l='1287' u='a' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1438' u='a' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1438' u='a' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1445' u='a' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1445' u='a' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1829' u='a' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1833' u='m' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1838' u='a' c='setup_scoreboard'/>
+<offset>448</offset>

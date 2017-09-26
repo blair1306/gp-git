@@ -1,0 +1,11 @@
+<dec f='codebrowser/wt-status.h' l='45' type='unsigned int'/>
+<offset>640</offset>
+<use f='codebrowser/wt-status.c' l='369' u='r' c='wt_longstatus_print_change_data'/>
+<use f='codebrowser/wt-status.c' l='373' u='r' c='wt_longstatus_print_change_data'/>
+<use f='codebrowser/wt-status.c' l='375' u='r' c='wt_longstatus_print_change_data'/>
+<use f='codebrowser/wt-status.c' l='414' u='r' c='short_submodule_status'/>
+<use f='codebrowser/wt-status.c' l='416' u='r' c='short_submodule_status'/>
+<use f='codebrowser/wt-status.c' l='446' u='w' c='wt_status_collect_changed_cb'/>
+<use f='codebrowser/wt-status.c' l='774' u='r' c='wt_status_check_worktree_changes'/>
+<use f='codebrowser/wt-status.c' l='1960' u='r' c='wt_porcelain_v2_submodule_state'/>
+<use f='codebrowser/wt-status.c' l='1961' u='r' c='wt_porcelain_v2_submodule_state'/>

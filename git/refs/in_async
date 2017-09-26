@@ -1,0 +1,5 @@
+<dec f='codebrowser/run-command.h' l='145' type='int in_async()'/>
+<use f='codebrowser/pkt-line.c' l='17' u='c' c='get_trace_prefix'/>
+<use f='codebrowser/run-command.c' l='941' u='c' c='die_async'/>
+<def f='codebrowser/run-command.c' l='960' ll='965' type='int in_async()'/>
+<use f='codebrowser/run-command.c' l='1027' u='c' c='check_pipe'/>

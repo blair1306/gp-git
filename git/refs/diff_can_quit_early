@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='246' type='int diff_can_quit_early(struct diff_options * )'/>
+<use f='codebrowser/diff-lib.c' l='106' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='470' u='c' c='oneway_diff'/>
+<def f='codebrowser/diff.c' l='5044' ll='5049' type='int diff_can_quit_early(struct diff_options * opt)'/>
+<use f='codebrowser/tree-diff.c' l='433' u='c' c='ll_diff_tree_paths'/>

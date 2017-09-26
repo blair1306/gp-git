@@ -1,0 +1,7 @@
+execl_git_cmd|execl_git_cmd
+execv_git_cmd|execv_git_cmd
+exclude_cmds|exclude_cmds
+expand_loose_notes_ref|expand_loose_notes_ref
+expand_notes_ref|expand_notes_ref
+expand_user_path|expand_user_path
+expand_ref|expand_ref

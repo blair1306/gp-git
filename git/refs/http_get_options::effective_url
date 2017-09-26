@@ -1,0 +1,12 @@
+<dec f='codebrowser/http.h' l='166' type='struct strbuf *'/>
+<offset>192</offset>
+<doc f='codebrowser/http.h' l='162'>/*
+	 * If non-NULL, returns the URL we ended up at, including any
+	 * redirects we followed.
+	 */</doc>
+<use f='codebrowser/http.c' l='1715' u='r' c='http_request'/>
+<use f='codebrowser/http.c' l='1717' u='r' c='http_request'/>
+<use f='codebrowser/http.c' l='1786' u='r' c='http_request_reauth'/>
+<use f='codebrowser/http.c' l='1788' u='r' c='http_request_reauth'/>
+<use f='codebrowser/http.c' l='1790' u='r' c='http_request_reauth'/>
+<use f='codebrowser/remote-curl.c' l='302' u='w' c='discover_refs'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='1568' type='void add_to_alternates_memory(const char * dir)'/>
+<doc f='codebrowser/cache.h' l='1563'>/*
+ * Add the directory to the in-memory list of alternates (along with any
+ * recursive alternates it points to), but do not modify the on-disk alternates
+ * file.
+ */</doc>
+<use f='codebrowser/builtin/grep.c' l='434' u='c' c='grep_submodule'/>
+<def f='codebrowser/sha1_file.c' l='535' ll='544' type='void add_to_alternates_memory(const char * reference)'/>
+<use f='codebrowser/submodule.c' l='157' u='c' c='add_submodule_odb'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='32' u='c' c='get_store'/>
+<use f='codebrowser/tmp-objdir.c' l='290' u='c' c='tmp_objdir_add_as_alternate'/>

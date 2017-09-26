@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='1392' type='int validate_headref(const char * ref)'/>
+<def f='codebrowser/path.c' l='636' ll='685' type='int validate_headref(const char * path)'/>
+<use f='codebrowser/setup.c' l='316' u='c' c='is_git_directory'/>

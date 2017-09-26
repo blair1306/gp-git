@@ -1,0 +1,18 @@
+<dec f='codebrowser/rerere.h' l='35' type='int rerere_remaining(struct string_list * )'/>
+<use f='codebrowser/builtin/rerere.c' l='94' u='c' c='cmd_rerere'/>
+<def f='codebrowser/rerere.c' l='598' ll='622' type='int rerere_remaining(struct string_list * merge_rr)'/>
+<doc f='codebrowser/rerere.c' l='583'>/*
+ * The merge_rr list is meant to hold outstanding conflicted paths
+ * that rerere could handle.  Abuse the list by adding other types of
+ * entries to allow the caller to show &quot;rerere remaining&quot;.
+ *
+ * - Conflicted paths that rerere does not handle are added
+ * - Conflicted paths that have been resolved are marked as such
+ *   by storing RERERE_RESOLVED to .util field (where conflict ID
+ *   is expected to be stored).
+ *
+ * Do *not* write MERGE_RR file out after calling this function.
+ *
+ * NEEDSWORK: we may want to fix the caller that implements &quot;rerere
+ * remaining&quot; to do this without abusing merge_rr.
+ */</doc>

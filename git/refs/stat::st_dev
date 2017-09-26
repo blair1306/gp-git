@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/bits/stat.h' l='48' type='__dev_t'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/bits/stat.h' l='48'>/* Device.  */</doc>
+<use f='codebrowser/builtin/merge.c' l='957' u='r' c='default_edit_option'/>
+<use f='codebrowser/builtin/merge.c' l='957' u='r' c='default_edit_option'/>
+<use f='codebrowser/read-cache.c' l='92' u='r' c='fill_stat_data'/>
+<use f='codebrowser/setup.c' l='826' u='r' c='get_device_or_die'/>
+<use f='codebrowser/strbuf.c' l='701' u='r' c='strbuf_add_absolute_path'/>
+<use f='codebrowser/strbuf.c' l='703' u='r' c='strbuf_add_absolute_path'/>
+<use f='codebrowser/strbuf.c' l='703' u='r' c='strbuf_add_absolute_path'/>

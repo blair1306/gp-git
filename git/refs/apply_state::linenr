@@ -1,0 +1,32 @@
+<dec f='codebrowser/apply.h' l='80' type='int'/>
+<use f='codebrowser/apply.c' l='92' u='w' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='928' u='r' c='parse_traditional_patch'/>
+<use f='codebrowser/apply.c' l='967' u='r' c='gitdiff_verify_name'/>
+<use f='codebrowser/apply.c' l='973' u='r' c='gitdiff_verify_name'/>
+<use f='codebrowser/apply.c' l='978' u='r' c='gitdiff_verify_name'/>
+<use f='codebrowser/apply.c' l='1015' u='r' c='gitdiff_oldmode'/>
+<use f='codebrowser/apply.c' l='1022' u='r' c='gitdiff_newmode'/>
+<use f='codebrowser/apply.c' l='1326' u='r' c='check_header_line'/>
+<use f='codebrowser/apply.c' l='1328' u='r' c='check_header_line'/>
+<use f='codebrowser/apply.c' l='1360' u='w' c='parse_git_header'/>
+<use f='codebrowser/apply.c' l='1361' u='w' c='parse_git_header'/>
+<use f='codebrowser/apply.c' l='1546' u='w' c='find_header'/>
+<use f='codebrowser/apply.c' l='1567' u='r' c='find_header'/>
+<use f='codebrowser/apply.c' l='1591' u='r' c='find_header'/>
+<use f='codebrowser/apply.c' l='1600' u='r' c='find_header'/>
+<use f='codebrowser/apply.c' l='1625' u='w' c='find_header'/>
+<use f='codebrowser/apply.c' l='1661' u='r' c='check_whitespace'/>
+<use f='codebrowser/apply.c' l='1694' u='w' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='1698' u='w' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='1801' u='r' c='parse_single_patch'/>
+<use f='codebrowser/apply.c' l='1805' u='r' c='parse_single_patch'/>
+<use f='codebrowser/apply.c' l='1935' u='w' c='parse_binary_hunk'/>
+<use f='codebrowser/apply.c' l='1941' u='w' c='parse_binary_hunk'/>
+<use f='codebrowser/apply.c' l='1995' u='r' c='parse_binary_hunk'/>
+<use f='codebrowser/apply.c' l='2031' u='r' c='parse_binary'/>
+<use f='codebrowser/apply.c' l='2156' u='w' c='parse_chunk'/>
+<use f='codebrowser/apply.c' l='2177' u='w' c='parse_chunk'/>
+<use f='codebrowser/apply.c' l='2191' u='r' c='parse_chunk'/>
+<offset>1568</offset>
+<doc f='codebrowser/apply.h' l='79'>/* Various &quot;current state&quot; */</doc>
+<doc f='codebrowser/apply.h' l='80'>/* current line number */</doc>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/graph.h' l='110' type='void graph_show_padding(struct git_graph * graph)'/>
+<use f='codebrowser/builtin/rev-list.c' l='150' u='c' c='show_commit'/>
+<doc f='codebrowser/graph.h' l='106'>/*
+ * If the graph is non-NULL, print one line of vertical graph padding to
+ * stdout.  Does not print a terminating newline on the last line.
+ */</doc>
+<use f='codebrowser/graph.c' l='1265' u='c' c='graph_show_commit'/>
+<def f='codebrowser/graph.c' l='1297' ll='1309' type='void graph_show_padding(struct git_graph * graph)'/>
+<use f='codebrowser/log-tree.c' l='585' u='c' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='719' u='c' c='show_log'/>

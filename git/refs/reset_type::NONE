@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin/reset.c' l='35' type='5'/>
+<use f='codebrowser/builtin/reset.c' l='279' u='r' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='336' u='r' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='347' u='r' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='351' u='r' c='cmd_reset'/>

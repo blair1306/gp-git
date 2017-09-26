@@ -1,0 +1,10 @@
+<def f='codebrowser/list.h' l='61' ll='67' type='void list_add_tail(struct list_head * newp, struct list_head * head)'/>
+<use f='codebrowser/list.h' l='162' u='c' c='list_replace_init'/>
+<use f='codebrowser/http-walker.c' l='156' u='c' c='prefetch'/>
+<doc f='codebrowser/list.h' l='60'>/* Add new element at the tail of the list. */</doc>
+<use f='codebrowser/sha1_file.c' l='2362' u='c' c='add_delta_base_cache'/>
+<use f='codebrowser/trailer.c' l='196' u='c' c='add_arg_to_input_list'/>
+<use f='codebrowser/trailer.c' l='321' u='c' c='apply_arg_if_missing'/>
+<use f='codebrowser/trailer.c' l='444' u='c' c='get_conf_item'/>
+<use f='codebrowser/trailer.c' l='656' u='c' c='add_trailer_item'/>
+<use f='codebrowser/trailer.c' l='667' u='c' c='add_arg_item'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/commit.h' l='73' type='void set_commit_buffer(struct commit * , void * buffer, unsigned long size)'/>
+<doc f='codebrowser/commit.h' l='69'>/*
+ * Associate an object buffer with the commit. The ownership of the
+ * memory is handed over to the commit, and must be free()-able.
+ */</doc>
+<use f='codebrowser/blame.c' l='139' u='c' c='set_commit_buffer_from_strbuf'/>
+<def f='codebrowser/commit.c' l='239' ll='244' type='void set_commit_buffer(struct commit * commit, void * buffer, unsigned long size)'/>
+<use f='codebrowser/commit.c' l='394' u='c' c='parse_commit_gently'/>
+<use f='codebrowser/object.c' l='213' u='c' c='parse_object_buffer'/>

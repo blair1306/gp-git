@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='203' type='int cmd_read_tree(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/read-tree.c' l='112' ll='266' type='int cmd_read_tree(int argc, const char ** argv, const char * unused_prefix)'/>
+<use f='codebrowser/git.c' l='444'/>
+<use f='codebrowser/git.c' l='444'/>
+<use f='codebrowser/git.c' l='444'/>
+<use f='codebrowser/git.c' l='444'/>

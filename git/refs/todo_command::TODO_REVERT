@@ -1,0 +1,8 @@
+<dec f='codebrowser/sequencer.c' l='759' type='1'/>
+<use f='codebrowser/sequencer.c' l='1024' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1086' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1120' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1126' u='r' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1371' u='r' c='read_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='1525' u='r' c='walk_revs_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='2303' u='r' c='single_pick'/>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>test-sigchain.c source code [codebrowser/t/helper/test-sigchain.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/t/helper/test-sigchain.c'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>t</a>/<a href='./'>helper</a>/<a href='test-sigchain.c.html'>test-sigchain.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../../sigchain.h.html">"sigchain.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#define <dfn class="macro" id="_M/X" data-ref="_M/X">X</dfn>(f) \</u></td></tr>
+<tr><th id="5">5</th><td><u>static void f(int <dfn class="local col1 decl" id="1sig" title='sig' data-type='int' data-ref="1sig"><dfn class="local col2 decl" id="2sig" title='sig' data-type='int' data-ref="2sig"><dfn class="local col3 decl" id="3sig" title='sig' data-type='int' data-ref="3sig">sig</dfn></dfn></dfn>) { \</u></td></tr>
+<tr><th id="6">6</th><td><u>	<a class="ref" href="../../../include/stdio.h.html#puts" title='puts' data-ref="puts">puts</a>(#f); \</u></td></tr>
+<tr><th id="7">7</th><td><u>	<a class="ref" href="../../../include/stdio.h.html#fflush" title='fflush' data-ref="fflush">fflush</a>(stdout); \</u></td></tr>
+<tr><th id="8">8</th><td><u>	<a class="ref" href="../../sigchain.h.html#sigchain_pop" title='sigchain_pop' data-ref="sigchain_pop">sigchain_pop</a>(<a class="local col1 ref" href="#11" title='sig' data-ref="1sig"><a class="local col2 ref" href="#12" title='sig' data-ref="2sig"><a class="local col3 ref" href="#13" title='sig' data-ref="3sig">sig</a></a></a>); \</u></td></tr>
+<tr><th id="9">9</th><td><u>	<a class="ref" href="../../../include/signal.h.html#raise" title='raise' data-ref="raise">raise</a>(<a class="local col1 ref" href="#11" title='sig' data-ref="1sig"><a class="local col2 ref" href="#12" title='sig' data-ref="2sig"><a class="local col3 ref" href="#13" title='sig' data-ref="3sig">sig</a></a></a>); \</u></td></tr>
+<tr><th id="10">10</th><td><u>}</u></td></tr>
+<tr><th id="11">11</th><td><a class="macro" href="#4" title="static void one(int sig) { puts(&quot;one&quot;); fflush(stdout); sigchain_pop(sig); raise(sig); }" data-ref="_M/X">X</a>(<dfn class="tu decl def" id="one" title='one' data-type='void one(int sig)' data-ref="one">one</dfn>)</td></tr>
+<tr><th id="12">12</th><td><a class="macro" href="#4" title="static void two(int sig) { puts(&quot;two&quot;); fflush(stdout); sigchain_pop(sig); raise(sig); }" data-ref="_M/X">X</a>(<dfn class="tu decl def" id="two" title='two' data-type='void two(int sig)' data-ref="two">two</dfn>)</td></tr>
+<tr><th id="13">13</th><td><a class="macro" href="#4" title="static void three(int sig) { puts(&quot;three&quot;); fflush(stdout); sigchain_pop(sig); raise(sig); }" data-ref="_M/X">X</a>(<dfn class="tu decl def" id="three" title='three' data-type='void three(int sig)' data-ref="three">three</dfn>)</td></tr>
+<tr><th id="14">14</th><td><u>#undef <a class="macro" href="#4" data-ref="_M/X">X</a></u></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><em>int</em> <dfn class="decl def" id="cmd_main" title='cmd_main' data-ref="cmd_main">cmd_main</dfn>(<em>int</em> <dfn class="local col4 decl" id="4argc" title='argc' data-type='int' data-ref="4argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col5 decl" id="5argv" title='argv' data-type='const char **' data-ref="5argv">argv</dfn>) {</td></tr>
+<tr><th id="17">17</th><td>	<a class="ref" href="../../sigchain.h.html#sigchain_push" title='sigchain_push' data-ref="sigchain_push">sigchain_push</a>(<a class="macro" href="../../../include/x86_64-linux-gnu/bits/signum.h.html#47" title="15" data-ref="_M/SIGTERM">SIGTERM</a>, <a class="tu ref" href="#11" title='one' data-use='r' data-ref="one">one</a>);</td></tr>
+<tr><th id="18">18</th><td>	<a class="ref" href="../../sigchain.h.html#sigchain_push" title='sigchain_push' data-ref="sigchain_push">sigchain_push</a>(<a class="macro" href="../../../include/x86_64-linux-gnu/bits/signum.h.html#47" title="15" data-ref="_M/SIGTERM">SIGTERM</a>, <a class="tu ref" href="#12" title='two' data-use='r' data-ref="two">two</a>);</td></tr>
+<tr><th id="19">19</th><td>	<a class="ref" href="../../sigchain.h.html#sigchain_push" title='sigchain_push' data-ref="sigchain_push">sigchain_push</a>(<a class="macro" href="../../../include/x86_64-linux-gnu/bits/signum.h.html#47" title="15" data-ref="_M/SIGTERM">SIGTERM</a>, <a class="tu ref" href="#13" title='three' data-use='r' data-ref="three">three</a>);</td></tr>
+<tr><th id="20">20</th><td>	<a class="ref" href="../../../include/signal.h.html#raise" title='raise' data-ref="raise">raise</a>(<a class="macro" href="../../../include/x86_64-linux-gnu/bits/signum.h.html#47" title="15" data-ref="_M/SIGTERM">SIGTERM</a>);</td></tr>
+<tr><th id="21">21</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="22">22</th><td>}</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

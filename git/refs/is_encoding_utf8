@@ -1,0 +1,11 @@
+<dec f='codebrowser/utf8.h' l='11' type='int is_encoding_utf8(const char * name)'/>
+<use f='codebrowser/builtin/fast-export.c' l='589' u='c' c='handle_commit'/>
+<use f='codebrowser/commit.c' l='1530' u='c' c='commit_tree_extended'/>
+<use f='codebrowser/gettext.c' l='198' u='c' c='is_utf8_locale'/>
+<use f='codebrowser/notes.c' l='1243' u='c' c='format_note'/>
+<use f='codebrowser/pretty.c' l='586' u='c' c='replace_encoding_header'/>
+<def f='codebrowser/utf8.c' l='403' ll='410' type='int is_encoding_utf8(const char * name)'/>
+<use f='codebrowser/utf8.c' l='414' u='c' c='same_encoding'/>
+<use f='codebrowser/utf8.c' l='414' u='c' c='same_encoding'/>
+<use f='codebrowser/utf8.c' l='501' u='c' c='fallback_encoding'/>
+<use f='codebrowser/utf8.c' l='558' u='c' c='mbs_chrlen'/>

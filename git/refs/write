@@ -1,0 +1,12 @@
+<dec f='include/unistd.h' l='369' type='ssize_t write(int __fd, const void * __buf, size_t __n)'/>
+<doc f='include/unistd.h' l='365'>/* Write N bytes of BUF to FD.  Return the number written, or -1.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='codebrowser/ewah/ewah_io.c' l='31' u='c' c='ewah_serialize_native'/>
+<use f='codebrowser/ewah/ewah_io.c' l='36' u='c' c='ewah_serialize_native'/>
+<use f='codebrowser/ewah/ewah_io.c' l='39' u='c' c='ewah_serialize_native'/>
+<use f='codebrowser/ewah/ewah_io.c' l='44' u='c' c='ewah_serialize_native'/>
+<use f='codebrowser/ewah/ewah_io.c' l='106' u='c' c='write_helper'/>
+<use f='codebrowser/sequencer.c' l='301' u='c' c='write_message'/>
+<use f='codebrowser/wrapper.c' l='282' u='c' c='xwrite'/>

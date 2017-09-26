@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='526' type='void set_git_work_tree(const char * tree)'/>
+<use f='codebrowser/builtin/clone.c' l='973' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/init-db.c' l='570' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='572' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='579' u='c' c='cmd_init_db'/>
+<def f='codebrowser/environment.c' l='221' ll='233' type='void set_git_work_tree(const char * new_work_tree)'/>
+<doc f='codebrowser/environment.c' l='216'>/*
+ * Note.  This works only before you used a work tree.  This was added
+ * primarily to support git-clone to work in a new repository it just
+ * created, and is not meant to flip between different work trees.
+ */</doc>
+<use f='codebrowser/setup.c' l='662' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='677' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='687' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='698' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='756' u='c' c='setup_discovered_git_dir'/>

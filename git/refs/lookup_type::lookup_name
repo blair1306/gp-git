@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule-config.c' l='33' type='0'/>
+<use f='codebrowser/submodule-config.c' l='511' c='config_from'/>
+<use f='codebrowser/submodule-config.c' l='536' c='config_from'/>
+<use f='codebrowser/submodule-config.c' l='585' u='r' c='submodule_from_name'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/remote.h' l='177' type='char * apply_refspecs(struct refspec * refspecs, int nr_refspec, const char * name)'/>
+<use f='codebrowser/builtin/fast-export.c' l='816' u='c' c='get_tags_and_duplicates'/>
+<def f='codebrowser/remote.c' l='903' ll='915' type='char * apply_refspecs(struct refspec * refspecs, int nr_refspec, const char * name)'/>
+<use f='codebrowser/remote.c' l='1714' u='c' c='tracking_for_push_dest'/>
+<use f='codebrowser/remote.c' l='1736' u='c' c='branch_get_push_1'/>
+<use f='codebrowser/remote.c' l='2331' u='c' c='remote_tracking'/>
+<use f='codebrowser/transport-helper.c' l='535' u='c' c='fetch_with_import'/>
+<use f='codebrowser/transport-helper.c' l='795' u='c' c='push_update_refs_status'/>
+<use f='codebrowser/transport-helper.c' l='929' u='c' c='push_refs_with_export'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1728' type='int unpack_object_header(struct packed_git * , struct pack_window ** , off_t * , unsigned long * )'/>
+<use f='codebrowser/pack-check.c' l='123' u='c' c='verify_packfile'/>
+<def f='codebrowser/sha1_file.c' l='2119' ll='2143' type='int unpack_object_header(struct packed_git * p, struct pack_window ** w_curs, off_t * curpos, unsigned long * sizep)'/>
+<use f='codebrowser/sha1_file.c' l='2190' u='c' c='packed_to_object_type'/>
+<use f='codebrowser/sha1_file.c' l='2388' u='c' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2554' u='c' c='unpack_entry'/>
+<use f='codebrowser/streaming.c' l='435' u='c' c='open_istream_pack_non_delta'/>

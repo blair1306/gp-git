@@ -1,0 +1,9 @@
+<dec f='codebrowser/transport.h' l='54' type='unsigned int'/>
+<offset>258</offset>
+<doc f='codebrowser/transport.h' l='50'>/*
+	 * A hint from caller that it will be performing a clone, not
+	 * normal fetch. IOW the repository is guaranteed empty.
+	 */</doc>
+<use f='codebrowser/builtin/clone.c' l='1083' u='w' c='cmd_clone'/>
+<use f='codebrowser/transport-helper.c' l='668' u='r' c='fetch'/>
+<use f='codebrowser/transport.c' l='230' u='r' c='fetch_refs_via_pack'/>

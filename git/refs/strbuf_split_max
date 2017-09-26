@@ -1,0 +1,7 @@
+<def f='codebrowser/strbuf.h' l='518' ll='522' type='struct strbuf ** strbuf_split_max(const struct strbuf * sb, int terminator, int max)'/>
+<use f='codebrowser/strbuf.h' l='527' u='c' c='strbuf_split'/>
+<use f='codebrowser/builtin/clean.c' l='452' u='c' c='parse_choice'/>
+<use f='codebrowser/builtin/clean.c' l='459' u='c' c='parse_choice'/>
+<use f='codebrowser/builtin/clean.c' l='673' u='c' c='filter_by_patterns_cmd'/>
+<use f='codebrowser/http.c' l='589' u='c' c='curl_dump_header'/>
+<use f='codebrowser/wt-status.c' l='1153' u='c' c='abbrev_sha1_in_line'/>

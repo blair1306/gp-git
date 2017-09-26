@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='163' type='void *'/>
+<offset>768</offset>
+<doc f='include/curl/curl.h' l='163'>/* custom pointer used for
+                                       HTTPPOST_CALLBACK posts */</doc>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/column.h' l='25' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/clean.c' l='275' u='w' c='pretty_print_dels'/>
+<use f='codebrowser/builtin/clean.c' l='289' u='w' c='pretty_print_menus'/>
+<use f='codebrowser/builtin/column.c' l='31' u='a' c='cmd_column'/>
+<use f='codebrowser/builtin/column.c' l='31' u='a' c='cmd_column'/>
+<use f='codebrowser/builtin/column.c' l='31' u='a' c='cmd_column'/>
+<use f='codebrowser/builtin/column.c' l='31' u='a' c='cmd_column'/>
+<use f='codebrowser/column.c' l='55' u='r' c='layout'/>
+<use f='codebrowser/column.c' l='97' u='r' c='shrink_columns'/>
+<use f='codebrowser/column.c' l='148' u='r' c='display_cell'/>
+<use f='codebrowser/column.c' l='200' u='w' c='print_columns'/>
+<use f='codebrowser/column.c' l='200' u='r' c='print_columns'/>
+<use f='codebrowser/column.c' l='200' u='r' c='print_columns'/>
+<use f='codebrowser/column.c' l='210' u='r' c='print_columns'/>
+<use f='codebrowser/column.c' l='384' u='r' c='run_column_filter'/>
+<use f='codebrowser/column.c' l='385' u='r' c='run_column_filter'/>
+<use f='codebrowser/help.c' l='96' u='w' c='pretty_print_cmdnames'/>
+<use f='codebrowser/wt-status.c' l='911' u='w' c='wt_longstatus_print_other'/>

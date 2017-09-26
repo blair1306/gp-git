@@ -1,0 +1,10 @@
+<dec f='codebrowser/commit.h' l='293' type='int *'/>
+<offset>576</offset>
+<use f='codebrowser/builtin/receive-pack.c' l='906' u='r' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1152' u='r' c='update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1294' u='r' c='set_connectivity_errors'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1319' u='r' c='iterate_receive_command_list'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1371' u='r' c='warn_if_skipped_connectivity_check'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1818' u='w' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1818' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1832' u='r' c='prepare_shallow_update'/>

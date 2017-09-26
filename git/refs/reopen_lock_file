@@ -1,0 +1,21 @@
+<def f='codebrowser/lockfile.h' l='271' ll='274' type='int reopen_lock_file(struct lock_file * lk)'/>
+<doc f='codebrowser/lockfile.h' l='252'>/*
+ * Re-open a lockfile that has been closed using `close_lock_file()`
+ * but not yet committed or rolled back. This can be used to implement
+ * a sequence of operations like the following:
+ *
+ * * Lock file.
+ *
+ * * Write new contents to lockfile, then `close_lock_file()` to
+ *   cause the contents to be written to disk.
+ *
+ * * Pass the name of the lockfile to another program to allow it (and
+ *   nobody else) to inspect the contents you wrote, while still
+ *   holding the lock yourself.
+ *
+ * * `reopen_lock_file()` to reopen the lockfile. Make further updates
+ *   to the contents.
+ *
+ * * `commit_lock_file()` to make the final version permanent.
+ */</doc>
+<use f='codebrowser/builtin/commit.c' l='376' u='c' c='prepare_index'/>

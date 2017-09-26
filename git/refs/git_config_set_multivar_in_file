@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='71' type='void git_config_set_multivar_in_file(const char * , const char * , const char * , const char * , int )'/>
+<use f='codebrowser/config.c' l='2386' u='c' c='git_config_set_in_file'/>
+<def f='codebrowser/config.c' l='2655' ll='2666' type='void git_config_set_multivar_in_file(const char * config_filename, const char * key, const char * value, const char * value_regex, int multi_replace)'/>
+<use f='codebrowser/config.c' l='2678' u='c' c='git_config_set_multivar'/>

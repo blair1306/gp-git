@@ -1,0 +1,10 @@
+<dec f='codebrowser/git-compat-util.h' l='823'/>
+<use f='codebrowser/apply.c' l='2813' u='c'/>
+<use f='codebrowser/attr.c' l='622' u='c'/>
+<use f='codebrowser/commit.c' l='932' u='c'/>
+<use f='codebrowser/line-log.c' l='45' u='c'/>
+<use f='codebrowser/pack-revindex.c' l='107' u='c'/>
+<use f='codebrowser/pathspec.c' l='630' u='c'/>
+<use f='codebrowser/pathspec.c' l='640' u='c'/>
+<use f='codebrowser/split-index.c' l='86' u='c'/>
+<use f='codebrowser/split-index.c' l='143' u='c'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/trailer.h' l='28' type='void trailer_info_get(struct trailer_info * info, const char * str)'/>
+<use f='codebrowser/pretty.c' l='878' u='c' c='format_trailers'/>
+<use f='codebrowser/ref-filter.c' l='1073' u='c' c='grab_sub_body_contents'/>
+<use f='codebrowser/sequencer.c' l='164' u='c' c='has_conforming_footer'/>
+<use f='codebrowser/trailer.c' l='897' u='c' c='process_input_file'/>
+<def f='codebrowser/trailer.c' l='1007' ll='1048' type='void trailer_info_get(struct trailer_info * info, const char * str)'/>

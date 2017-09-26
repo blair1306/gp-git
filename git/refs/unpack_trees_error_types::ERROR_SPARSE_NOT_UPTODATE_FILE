@@ -1,0 +1,3 @@
+<dec f='codebrowser/unpack-trees.h' l='21' type='6'/>
+<use f='codebrowser/unpack-trees.c' l='164' u='w' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='1509' u='r' c='verify_uptodate_sparse'/>

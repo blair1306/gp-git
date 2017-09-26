@@ -1,0 +1,32 @@
+<dec f='codebrowser/attr.c' l='454' type='char *'/>
+<use f='codebrowser/attr.c' l='464' u='r' c='attr_stack_free'/>
+<use f='codebrowser/attr.c' l='851' u='w' c='push_stack'/>
+<use f='codebrowser/attr.c' l='931' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='937' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='952' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='954' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='1043' u='r' c='fill'/>
+<use f='codebrowser/attr.c' l='1043' u='r' c='fill'/>
+<offset>64</offset>

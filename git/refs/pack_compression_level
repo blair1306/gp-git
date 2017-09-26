@@ -1,0 +1,19 @@
+<dec f='codebrowser/cache.h' l='742' type='int'/>
+<use f='codebrowser/builtin/pack-objects.c' l='133' u='r' c='do_compress'/>
+<use f='codebrowser/builtin/pack-objects.c' l='160' u='r' c='write_large_blob_data'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2940' u='a' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2940' u='a' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2940' u='a' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2940' u='a' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2995' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2996' u='w' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2997' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2997' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2998' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/bulk-checkin.c' l='106' u='r' c='stream_to_pack'/>
+<use f='codebrowser/config.c' l='1107' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1378' u='w' c='git_default_config'/>
+<def f='codebrowser/environment.c' l='38' type='int'/>
+<use f='codebrowser/fast-import.c' l='1128' u='r' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1154' u='r' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1253' u='r' c='stream_blob'/>

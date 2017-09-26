@@ -1,0 +1,4 @@
+<dec f='codebrowser/parse-options.h' l='262'/>
+<use f='codebrowser/builtin/branch.c' l='572' u='c'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='47' u='c'/>
+<use f='codebrowser/builtin/tag.c' l='400' u='c'/>

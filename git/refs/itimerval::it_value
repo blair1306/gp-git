@@ -1,0 +1,8 @@
+<dec f='include/x86_64-linux-gnu/sys/time.h' l='112' type='struct timeval'/>
+<offset>128</offset>
+<doc f='include/x86_64-linux-gnu/sys/time.h' l='111'>/* Time to the next timer expiration.  */</doc>
+<use f='codebrowser/builtin/log.c' l='301' u='m' c='log_show_early'/>
+<use f='codebrowser/builtin/log.c' l='302' u='m' c='log_show_early'/>
+<use f='codebrowser/builtin/log.c' l='335' u='m' c='setup_early_output'/>
+<use f='codebrowser/builtin/log.c' l='336' u='m' c='setup_early_output'/>
+<use f='codebrowser/progress.c' l='64' u='w' c='set_progress_signal'/>

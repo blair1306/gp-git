@@ -1,0 +1,11 @@
+<dec f='include/string.h' l='377' type='void * memmem(const void * __haystack, size_t __haystacklen, const void * __needle, size_t __needlelen)'/>
+<doc f='include/string.h' l='374'>/* Find the first occurrence of NEEDLE in HAYSTACK.
+   NEEDLE is NEEDLELEN bytes long;
+   HAYSTACK is HAYSTACKLEN bytes long.  */</doc>
+<use f='codebrowser/archive.c' l='46' u='c' c='format_subst'/>
+<use f='codebrowser/builtin/fast-export.c' l='413' u='c' c='find_encoding'/>
+<use f='codebrowser/builtin/fast-export.c' l='673' u='c' c='handle_tag'/>
+<use f='codebrowser/builtin/fast-export.c' l='678' u='c' c='handle_tag'/>
+<use f='codebrowser/bundle.c' l='224' u='c' c='is_tag_in_date_range'/>
+<use f='codebrowser/diff.c' l='640' u='c' c='emit_hunk_header'/>
+<use f='codebrowser/mailinfo.c' l='314' u='c' c='cleanup_subject'/>

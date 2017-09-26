@@ -1,0 +1,4 @@
+<dec f='codebrowser/mailinfo.h' l='25' type='2'/>
+<use f='codebrowser/mailinfo.c' l='269' u='r' c='handle_content_transfer_encoding'/>
+<use f='codebrowser/mailinfo.c' l='609' c='decode_transfer_encoding'/>
+<use f='codebrowser/mailinfo.c' l='987' c='handle_body'/>

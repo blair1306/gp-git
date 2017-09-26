@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/bits/signum.h' l='23'/>
+<use f='codebrowser/builtin/merge-index.c' l='75' u='c'/>
+<use f='codebrowser/common-main.c' l='23' u='c'/>
+<use f='codebrowser/connect.c' l='786' u='c'/>
+<use f='codebrowser/run-command.c' l='718' u='c'/>
+<use f='codebrowser/run-command.c' l='1030' u='c'/>

@@ -1,0 +1,5 @@
+branch_get|branch_get
+branch_get_push|branch_get_push
+branch_get_upstream|branch_get_upstream
+branch_has_merge_config|branch_has_merge_config
+branch_merge_matches|branch_merge_matches

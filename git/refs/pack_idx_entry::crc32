@@ -1,0 +1,9 @@
+<dec f='codebrowser/pack.h' l='71' type='uint32_t'/>
+<offset>160</offset>
+<use f='codebrowser/builtin/index-pack.c' l='549' u='w' c='unpack_raw_entry'/>
+<use f='codebrowser/builtin/index-pack.c' l='1336' u='w' c='append_obj_to_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='492' u='w' c='write_object'/>
+<use f='codebrowser/bulk-checkin.c' l='239' u='w' c='deflate_to_pack'/>
+<use f='codebrowser/fast-import.c' l='1201' u='w' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1319' u='w' c='stream_blob'/>
+<use f='codebrowser/pack-write.c' l='139' u='r' c='write_idx_file'/>

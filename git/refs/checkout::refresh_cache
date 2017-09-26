@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1499' type='unsigned int'/>
+<offset>259</offset>
+<use f='codebrowser/apply.c' l='3336' u='w' c='checkout_target'/>
+<use f='codebrowser/builtin/checkout-index.c' l='207' u='w' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout.c' l='359' u='w' c='checkout_paths'/>
+<use f='codebrowser/entry.c' l='112' u='r' c='fstat_output'/>
+<use f='codebrowser/entry.c' l='341' u='r' c='write_entry'/>
+<use f='codebrowser/unpack-trees.c' l='360' u='w' c='check_updates'/>

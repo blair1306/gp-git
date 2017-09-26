@@ -1,0 +1,18 @@
+<dec f='codebrowser/cache.h' l='1509' type='struct strbuf'/>
+<use f='codebrowser/cache.h' l='1517' u='a' c='cache_def_clear'/>
+<offset>0</offset>
+<use f='codebrowser/symlinks.c' l='42' u='a' c='reset_lstat_cache'/>
+<use f='codebrowser/symlinks.c' l='95' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='96' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='102' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='123' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='124' u='a' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='124' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='127' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='133' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='136' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='138' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='162' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='163' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='177' u='m' c='lstat_cache_matchlen'/>
+<use f='codebrowser/symlinks.c' l='178' u='m' c='lstat_cache_matchlen'/>

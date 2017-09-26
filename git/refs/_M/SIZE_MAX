@@ -1,0 +1,5 @@
+<dec f='include/stdint.h' l='261'/>
+<use f='codebrowser/sha1_file.c' l='921' u='c'/>
+<use f='codebrowser/utf8.c' l='553' u='c'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='162' u='c'/>
+<use f='codebrowser/wrapper.c' l='19' u='c'/>

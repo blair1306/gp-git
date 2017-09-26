@@ -1,0 +1,3 @@
+<dec f='codebrowser/builtin/remote.c' l='248' type='2'/>
+<use f='codebrowser/builtin/remote.c' l='310' u='r' c='config_read_branches'/>
+<use f='codebrowser/builtin/remote.c' l='965' u='r' c='show_local_info_item'/>

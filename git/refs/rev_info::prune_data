@@ -1,0 +1,23 @@
+<dec f='codebrowser/revision.h' l='72' type='struct pathspec'/>
+<offset>640</offset>
+<use f='codebrowser/builtin/add.c' l='115' u='a' c='add_files_to_cache'/>
+<use f='codebrowser/builtin/diff.c' l='77' u='a' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/diff.c' l='77' u='a' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/diff.c' l='78' u='m' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/diff.c' l='419' u='m' c='cmd_diff'/>
+<use f='codebrowser/builtin/diff.c' l='420' u='m' c='cmd_diff'/>
+<use f='codebrowser/builtin/fast-export.c' l='1044' u='m' c='cmd_fast_export'/>
+<use f='codebrowser/builtin/log.c' l='671' u='m' c='log_setup_revisions_tweak'/>
+<use f='codebrowser/diff-lib.c' l='109' u='a' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='468' u='a' c='oneway_diff'/>
+<use f='codebrowser/diff-lib.c' l='529' u='a' c='do_diff_cache'/>
+<use f='codebrowser/revision.c' l='450' u='m' c='rev_compare_tree'/>
+<use f='codebrowser/revision.c' l='1414' u='a' c='prepare_show_merge'/>
+<use f='codebrowser/revision.c' l='1424' u='a' c='prepare_show_merge'/>
+<use f='codebrowser/revision.c' l='1425' u='a' c='prepare_show_merge'/>
+<use f='codebrowser/revision.c' l='2307' u='a' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2340' u='m' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2341' u='a' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2347' u='a' c='setup_revisions'/>
+<use f='codebrowser/wt-status.c' l='574' u='a' c='wt_status_collect_changes_worktree'/>
+<use f='codebrowser/wt-status.c' l='610' u='a' c='wt_status_collect_changes_index'/>

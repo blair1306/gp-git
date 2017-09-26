@@ -1,0 +1,9 @@
+<dec f='codebrowser/http.h' l='219' type='long'/>
+<offset>34944</offset>
+<use f='codebrowser/http-walker.c' l='99' macro='1' u='r'/>
+<use f='codebrowser/http-walker.c' l='522' u='r' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='533' u='r' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='534' macro='1' u='r'/>
+<use f='codebrowser/http-walker.c' l='539' u='r' c='fetch_object'/>
+<use f='codebrowser/http.c' l='2278' u='w' c='process_http_object_request'/>
+<use f='codebrowser/http.c' l='2291' u='r' c='finish_http_object_request'/>

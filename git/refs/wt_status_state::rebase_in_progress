@@ -1,0 +1,10 @@
+<dec f='codebrowser/wt-status.h' l='103' type='int'/>
+<offset>96</offset>
+<use f='codebrowser/ref-filter.c' l='1260' u='r' c='get_head_description'/>
+<use f='codebrowser/worktree.c' l='265' u='r' c='is_worktree_being_rebased'/>
+<use f='codebrowser/wt-status.c' l='1284' u='r' c='show_rebase_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1484' u='w' c='wt_status_check_rebase'/>
+<use f='codebrowser/wt-status.c' l='1492' u='w' c='wt_status_check_rebase'/>
+<use f='codebrowser/wt-status.c' l='1547' u='r' c='wt_longstatus_print_state'/>
+<use f='codebrowser/wt-status.c' l='1572' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1915' u='r' c='wt_porcelain_v2_print_tracking'/>

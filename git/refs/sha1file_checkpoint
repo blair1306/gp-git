@@ -1,0 +1,9 @@
+<def f='codebrowser/csum-file.h' l='21' ll='24'/>
+<dec f='codebrowser/csum-file.h' l='26' type='void sha1file_checkpoint(struct sha1file * , struct sha1file_checkpoint * )'/>
+<size>2408</size>
+<doc f='codebrowser/csum-file.h' l='20'>/* Checkpoint */</doc>
+<mbr r='sha1file_checkpoint::offset' o='0' t='off_t'/>
+<mbr r='sha1file_checkpoint::ctx' o='64' t='SHA1_CTX'/>
+<use f='codebrowser/bulk-checkin.c' l='215' u='c' c='deflate_to_pack'/>
+<def f='codebrowser/csum-file.c' l='156' ll='161' type='void sha1file_checkpoint(struct sha1file * f, struct sha1file_checkpoint * checkpoint)'/>
+<use f='codebrowser/fast-import.c' l='1243' u='c' c='stream_blob'/>

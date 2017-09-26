@@ -1,0 +1,14 @@
+<dec f='codebrowser/cache.h' l='1176' type='const unsigned char * do_lookup_replace_object(const unsigned char * sha1)'/>
+<use f='codebrowser/cache.h' l='1188' u='c' c='lookup_replace_object'/>
+<doc f='codebrowser/cache.h' l='1172'>/*
+ * This internal function is only declared here for the benefit of
+ * lookup_replace_object().  Please do not call it directly.
+ */</doc>
+<def f='codebrowser/replace_object.c' l='103' ll='122' type='const unsigned char * do_lookup_replace_object(const unsigned char * sha1)'/>
+<doc f='codebrowser/replace_object.c' l='96'>/*
+ * If a replacement for object sha1 has been set up, return the
+ * replacement object&apos;s name (replaced recursively, if necessary).
+ * The return value is either sha1 or a pointer to a
+ * permanently-allocated value.  This function always respects replace
+ * references, regardless of the value of check_replace_refs.
+ */</doc>

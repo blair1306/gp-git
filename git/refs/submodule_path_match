@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='322' type='int submodule_path_match(const struct pathspec * ps, const char * submodule_name, char * seen)'/>
+<use f='codebrowser/builtin/grep.c' l='507' u='c' c='grep_cache'/>
+<def f='codebrowser/dir.c' l='466' ll='476' type='int submodule_path_match(const struct pathspec * ps, const char * submodule_name, char * seen)'/>
+<doc f='codebrowser/dir.c' l='463'>/**
+ * Check if a submodule is a superset of the pathspec
+ */</doc>

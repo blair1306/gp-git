@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit.h' l='105' type='const void * detach_commit_buffer(struct commit * , unsigned long * sizep)'/>
+<doc f='codebrowser/commit.h' l='101'>/*
+ * Disassociate any cached object buffer from the commit, but do not free it.
+ * The buffer (or NULL, if none) is returned.
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='865' u='c' c='sha1_object'/>
+<def f='codebrowser/commit.c' l='294' ll='311' type='const void * detach_commit_buffer(struct commit * commit, unsigned long * sizep)'/>

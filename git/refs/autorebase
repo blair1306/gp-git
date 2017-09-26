@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='834' type='enum rebase_setup_type'/>
+<use f='codebrowser/branch.c' l='39' u='r' c='should_setup_rebase'/>
+<use f='codebrowser/config.c' l='1280' u='w' c='git_default_branch_config'/>
+<use f='codebrowser/config.c' l='1282' u='w' c='git_default_branch_config'/>
+<use f='codebrowser/config.c' l='1284' u='w' c='git_default_branch_config'/>
+<use f='codebrowser/config.c' l='1286' u='w' c='git_default_branch_config'/>
+<def f='codebrowser/environment.c' l='55' type='enum rebase_setup_type'/>

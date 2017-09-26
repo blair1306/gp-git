@@ -1,0 +1,11 @@
+<dec f='codebrowser/worktree.h' l='63' type='void free_worktrees(struct worktree ** )'/>
+<use f='codebrowser/branch.c' l='370' u='c' c='replace_each_worktree_head_symref'/>
+<doc f='codebrowser/worktree.h' l='60'>/*
+ * Free up the memory for worktree(s)
+ */</doc>
+<use f='codebrowser/builtin/branch.c' l='456' u='c' c='reject_rebase_or_bisect_branch'/>
+<use f='codebrowser/builtin/worktree.c' l='469' u='c' c='list'/>
+<use f='codebrowser/builtin/worktree.c' l='505' u='c' c='lock_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='530' u='c' c='unlock_worktree'/>
+<def f='codebrowser/worktree.c' l='9' ll='21' type='void free_worktrees(struct worktree ** worktrees)'/>
+<use f='codebrowser/worktree.c' l='304' u='c' c='find_shared_symref'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1595' type='unsigned char *'/>
+<offset>384</offset>
+<use f='codebrowser/sha1_file.c' l='1607' u='r' c='mark_bad_packed_object'/>
+<use f='codebrowser/sha1_file.c' l='1609' u='w' c='mark_bad_packed_object'/>
+<use f='codebrowser/sha1_file.c' l='1609' u='r' c='mark_bad_packed_object'/>
+<use f='codebrowser/sha1_file.c' l='1612' u='r' c='mark_bad_packed_object'/>
+<use f='codebrowser/sha1_file.c' l='1623' u='r' c='has_packed_and_bad'/>
+<use f='codebrowser/sha1_file.c' l='2843' u='r' c='fill_pack_entry'/>

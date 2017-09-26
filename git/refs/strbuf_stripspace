@@ -1,0 +1,33 @@
+<dec f='codebrowser/strbuf.h' l='471' type='void strbuf_stripspace(struct strbuf * buf, int skip_comments)'/>
+<use f='codebrowser/strbuf.h' l='479' u='c' c='stripspace'/>
+<doc f='codebrowser/strbuf.h' l='467'>/**
+ * Strip whitespace from a buffer. The second parameter controls if
+ * comments are considered contents to be removed or not.
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='1298' u='c' c='parse_mail'/>
+<use f='codebrowser/builtin/branch.c' l='535' u='c' c='edit_branch_description'/>
+<use f='codebrowser/builtin/commit.c' l='791' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1034' u='c' c='template_untouched'/>
+<use f='codebrowser/builtin/commit.c' l='1746' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/merge.c' l='779' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/notes.c' l='197' u='c' c='prepare_note_data'/>
+<use f='codebrowser/builtin/notes.c' l='220' u='c' c='parse_msg_arg'/>
+<use f='codebrowser/builtin/notes.c' l='237' u='c' c='parse_file_arg'/>
+<use f='codebrowser/builtin/stripspace.c' l='57' u='c' c='cmd_stripspace'/>
+<use f='codebrowser/builtin/tag.c' l='258' u='c' c='create_tag'/>
+<def f='codebrowser/strbuf.c' l='888' ll='920' type='void strbuf_stripspace(struct strbuf * sb, int skip_comments)'/>
+<doc f='codebrowser/strbuf.c' l='873'>/*
+ * Remove empty lines from the beginning and end
+ * and also trailing spaces from every line.
+ *
+ * Turn multiple consecutive empty lines between paragraphs
+ * into just one empty line.
+ *
+ * If the input has only empty lines and spaces,
+ * no output will be produced.
+ *
+ * If last line does not have a newline at the end, one is added.
+ *
+ * Enable skip_comments to skip every line starting with comment
+ * character.
+ */</doc>

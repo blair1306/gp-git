@@ -1,0 +1,8 @@
+<dec f='codebrowser/commit.h' l='127' type='1'/>
+<use f='codebrowser/commit.h' l='128'/>
+<use f='codebrowser/builtin/merge.c' l='352' u='r' c='squash_message'/>
+<use f='codebrowser/pretty.c' l='94' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='94' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='94' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='94' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='495' c='pp_user_info'/>

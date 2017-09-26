@@ -1,0 +1,4 @@
+<dec f='codebrowser/gpg-interface.h' l='32' type='void set_signing_key(const char * )'/>
+<use f='codebrowser/builtin/tag.c' l='430' u='c' c='cmd_tag'/>
+<def f='codebrowser/gpg-interface.c' l='122' ll='126' type='void set_signing_key(const char * key)'/>
+<use f='codebrowser/gpg-interface.c' l='131' u='c' c='git_gpg_config'/>

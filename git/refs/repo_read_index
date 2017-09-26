@@ -1,0 +1,14 @@
+<dec f='codebrowser/repository.h' l='103' type='int repo_read_index(struct repository * repo)'/>
+<use f='codebrowser/builtin/grep.c' l='481' u='c' c='grep_cache'/>
+<doc f='codebrowser/repository.h' l='95'>/*
+ * Populates the repository&apos;s index from its index_file, an index struct will
+ * be allocated if needed.
+ *
+ * Return the number of index entries in the populated index or a value less
+ * than zero if an error occured.  If the repository&apos;s index has already been
+ * populated then the number of entries will simply be returned.
+ */</doc>
+<use f='codebrowser/builtin/ls-files.c' l='210' u='c' c='show_submodule'/>
+<use f='codebrowser/builtin/ls-files.c' l='579' u='c' c='cmd_ls_files'/>
+<def f='codebrowser/repository.c' l='236' ll='242' type='int repo_read_index(struct repository * repo)'/>
+<use f='codebrowser/submodule.c' l='244' u='c' c='repo_read_gitmodules'/>

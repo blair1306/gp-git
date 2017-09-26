@@ -1,0 +1,6 @@
+<def f='codebrowser/archive.h' l='22' ll='27'/>
+<size>32</size>
+<mbr r='archiver::name' o='0' t='const char *'/>
+<mbr r='archiver::write_archive' o='64' t='int (*)(const struct archiver *, struct archiver_args *)'/>
+<mbr r='archiver::flags' o='128' t='unsigned int'/>
+<mbr r='archiver::data' o='192' t='void *'/>

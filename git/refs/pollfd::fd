@@ -1,0 +1,18 @@
+<dec f='include/x86_64-linux-gnu/sys/poll.h' l='41' type='int'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/sys/poll.h' l='41'>/* File descriptor to poll.  */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='371' u='w' c='copy_to_sideband'/>
+<use f='codebrowser/builtin/upload-archive.c' l='104' u='w' c='cmd_upload_archive'/>
+<use f='codebrowser/builtin/upload-archive.c' l='106' u='w' c='cmd_upload_archive'/>
+<use f='codebrowser/builtin/upload-archive.c' l='117' u='r' c='cmd_upload_archive'/>
+<use f='codebrowser/builtin/upload-archive.c' l='121' u='r' c='cmd_upload_archive'/>
+<use f='codebrowser/credential-cache--daemon.c' l='169' u='w' c='serve_cache_loop'/>
+<use f='codebrowser/daemon.c' l='1090' u='w' c='service_loop'/>
+<use f='codebrowser/daemon.c' l='1120' u='r' c='service_loop'/>
+<use f='codebrowser/run-command.c' l='1244' u='w' c='pump_io_round'/>
+<use f='codebrowser/run-command.c' l='1473' u='w' c='pp_init'/>
+<use f='codebrowser/run-command.c' l='1546' u='w' c='pp_start_one'/>
+<use f='codebrowser/run-command.c' l='1613' u='w' c='pp_collect_finished'/>
+<use f='codebrowser/upload-pack.c' l='176' u='w' c='create_pack_file'/>
+<use f='codebrowser/upload-pack.c' l='182' u='w' c='create_pack_file'/>
+<use f='codebrowser/wrapper.c' l='238' u='w' c='handle_nonblock'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/attr.c' l='136' type='const struct git_attr *'/>
+<use f='codebrowser/attr.c' l='176' u='w' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='1161' u='r' c='git_all_attrs'/>
+<offset>0</offset>

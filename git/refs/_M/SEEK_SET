@@ -1,0 +1,17 @@
+<dec f='include/unistd.h' l='314'/>
+<dec f='include/stdio.h' l='140'/>
+<dec f='include/fcntl.h' l='136'/>
+<use f='include/zconf.h' l='474' u='a'/>
+<doc f='include/stdio.h' l='138'>/* The possibilities for the third argument to `fseek&apos;.
+   These values should not be changed.  */</doc>
+<use f='codebrowser/builtin/am.c' l='600' u='c'/>
+<use f='codebrowser/builtin/pack-objects.c' l='736' u='c'/>
+<use f='codebrowser/bulk-checkin.c' l='232' u='c'/>
+<use f='codebrowser/csum-file.c' l='168' u='c'/>
+<use f='codebrowser/fast-import.c' l='987' u='c'/>
+<use f='codebrowser/http.c' l='2235' u='c'/>
+<use f='codebrowser/pack-write.c' l='220' u='c'/>
+<use f='codebrowser/pack-write.c' l='224' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1883' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1198' u='c'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='57' u='c'/>

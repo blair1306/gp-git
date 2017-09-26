@@ -1,0 +1,8 @@
+<dec f='codebrowser/blame.h' l='164' type='void blame_coalesce(struct blame_scoreboard * sb)'/>
+<def f='codebrowser/blame.c' l='448' ll='466' type='void blame_coalesce(struct blame_scoreboard * sb)'/>
+<doc f='codebrowser/blame.c' l='443'>/*
+ * If two blame entries that are next to each other came from
+ * contiguous lines in the same origin (i.e. &lt;commit, path&gt; pair),
+ * merge them together.
+ */</doc>
+<use f='codebrowser/builtin/blame.c' l='941' u='c' c='cmd_blame'/>

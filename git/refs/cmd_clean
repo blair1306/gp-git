@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='149' type='int cmd_clean(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/clean.c' l='891' ll='1049' type='int cmd_clean(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='383'/>
+<use f='codebrowser/git.c' l='383'/>
+<use f='codebrowser/git.c' l='383'/>
+<use f='codebrowser/git.c' l='383'/>

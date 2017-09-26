@@ -1,0 +1,4 @@
+<def f='codebrowser/commit.h' l='11' ll='14'/>
+<size>16</size>
+<mbr r='commit_list::item' o='0' t='struct commit *'/>
+<mbr r='commit_list::next' o='64' t='struct commit_list *'/>

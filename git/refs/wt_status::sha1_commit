@@ -1,0 +1,6 @@
+<dec f='codebrowser/wt-status.h' l='85' type='unsigned char [20]'/>
+<offset>6464</offset>
+<doc f='codebrowser/wt-status.h' l='85'>/* when not Initial */</doc>
+<use f='codebrowser/builtin/commit.c' l='515' u='r' c='run_status'/>
+<use f='codebrowser/builtin/commit.c' l='1395' u='r' c='cmd_status'/>
+<use f='codebrowser/wt-status.c' l='1906' u='r' c='wt_porcelain_v2_print_tracking'/>

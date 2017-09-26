@@ -1,0 +1,4 @@
+<def f='codebrowser/hashmap.h' l='406' ll='409' type='const char * strintern(const char * string)'/>
+<use f='codebrowser/config.c' l='1711' u='c' c='configset_add_value'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='243' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='244' u='c' c='cmd_main'/>

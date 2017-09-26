@@ -1,0 +1,5 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='39'/>
+<use f='codebrowser/diff.c' l='3901' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='2209' u='c'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='255' u='c'/>
+<use f='codebrowser/xdiff/xpatience.c' l='291' u='c'/>

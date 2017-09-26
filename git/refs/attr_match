@@ -1,0 +1,4 @@
+<def f='codebrowser/pathspec.h' l='37' ll='45'/>
+<size>16</size>
+<mbr r='attr_match::value' o='0' t='char *'/>
+<mbr r='attr_match::match_mode' o='64' t='enum attr_match_mode'/>

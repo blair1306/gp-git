@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='128' type='1'/>
+<use f='codebrowser/bisect.c' l='890' u='r' c='show_diff_tree'/>
+<use f='codebrowser/pretty.c' l='160' u='r' c='get_commit_format'/>
+<use f='codebrowser/revision.c' l='1358' u='r' c='init_revisions'/>

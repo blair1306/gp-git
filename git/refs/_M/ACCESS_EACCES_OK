@@ -1,0 +1,8 @@
+<dec f='codebrowser/git-compat-util.h' l='1129'/>
+<doc f='codebrowser/git-compat-util.h' l='1125'>/*
+ * Call access(2), but warn for any error except &quot;missing file&quot;
+ * (ENOENT or ENOTDIR).
+ */</doc>
+<use f='codebrowser/config.c' l='1561' u='c'/>
+<use f='codebrowser/config.c' l='1564' u='c'/>
+<use f='codebrowser/wrapper.c' l='609' u='c'/>

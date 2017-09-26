@@ -1,0 +1,8 @@
+<dec f='codebrowser/vcs-svn/line_buffer.h' l='16' type='int buffer_deinit(struct line_buffer * buf)'/>
+<use f='codebrowser/t/helper/test-line-buffer.c' l='84' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-line-buffer.c' l='86' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-svn-fe.c' l='30' u='c' c='apply_delta'/>
+<use f='codebrowser/t/helper/test-svn-fe.c' l='32' u='c' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='40' u='c' c='fast_export_deinit'/>
+<def f='codebrowser/vcs-svn/line_buffer.c' l='36' ll='44' type='int buffer_deinit(struct line_buffer * buf)'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='528' u='c' c='svndump_deinit'/>

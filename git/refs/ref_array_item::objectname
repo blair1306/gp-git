@@ -1,0 +1,7 @@
+<dec f='codebrowser/ref-filter.h' l='37' type='struct object_id'/>
+<offset>0</offset>
+<use f='codebrowser/ref-filter.c' l='1388' u='m' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1432' u='a' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1435' u='a' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1438' u='a' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1783' u='m' c='new_ref_array_item'/>

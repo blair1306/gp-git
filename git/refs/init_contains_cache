@@ -1,0 +1,3 @@
+<def f='codebrowser/ref-filter.c' l='1498' macro='1' type='void init_contains_cache(struct contains_cache * s)'/>
+<use f='codebrowser/ref-filter.c' l='1969' u='c' c='filter_refs'/>
+<use f='codebrowser/ref-filter.c' l='1970' u='c' c='filter_refs'/>

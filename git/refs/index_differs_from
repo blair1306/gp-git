@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='364' type='int index_differs_from(const char * def, int diff_flags, int ita_invisible_in_index)'/>
+<use f='codebrowser/builtin/commit.c' l='915' u='c' c='prepare_to_commit'/>
+<def f='codebrowser/diff-lib.c' l='537' ll='555' type='int index_differs_from(const char * def, int diff_flags, int ita_invisible_in_index)'/>
+<use f='codebrowser/sequencer.c' l='961' u='c' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='2278' u='c' c='sequencer_continue'/>

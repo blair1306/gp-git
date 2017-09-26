@@ -1,0 +1,5 @@
+<dec f='codebrowser/csum-file.h' l='30'/>
+<doc f='codebrowser/csum-file.h' l='29'>/* sha1close flags */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='825' u='c'/>
+<use f='codebrowser/csum-file.c' l='64' u='c'/>
+<use f='codebrowser/pack-write.c' l='174' u='c'/>

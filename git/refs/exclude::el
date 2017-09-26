@@ -1,0 +1,9 @@
+<dec f='codebrowser/dir.h' l='23' type='struct exclude_list *'/>
+<offset>0</offset>
+<doc f='codebrowser/dir.h' l='19'>/*
+	 * This allows callers of last_exclude_matching() etc.
+	 * to determine the origin of the matching pattern.
+	 */</doc>
+<use f='codebrowser/builtin/check-ignore.c' l='43' u='r' c='output_exclude'/>
+<use f='codebrowser/builtin/check-ignore.c' l='60' u='r' c='output_exclude'/>
+<use f='codebrowser/dir.c' l='600' u='w' c='add_exclude'/>

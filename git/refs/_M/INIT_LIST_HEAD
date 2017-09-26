@@ -1,0 +1,4 @@
+<dec f='codebrowser/list.h' l='46'/>
+<use f='codebrowser/list.h' l='86' u='c'/>
+<use f='codebrowser/list.h' l='163' u='c'/>
+<doc f='codebrowser/list.h' l='45'>/* Initialize a new list head. */</doc>

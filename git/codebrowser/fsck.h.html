@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>fsck.h source code [codebrowser/fsck.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="fsck_options "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/fsck.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='fsck.h.html'>fsck.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/GIT_FSCK_H">GIT_FSCK_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/GIT_FSCK_H" data-ref="_M/GIT_FSCK_H">GIT_FSCK_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#define <dfn class="macro" id="_M/FSCK_ERROR" data-ref="_M/FSCK_ERROR">FSCK_ERROR</dfn> 1</u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/FSCK_WARN" data-ref="_M/FSCK_WARN">FSCK_WARN</dfn> 2</u></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/FSCK_IGNORE" data-ref="_M/FSCK_IGNORE">FSCK_IGNORE</dfn> 3</u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>struct</b> <a class="type" href="#fsck_options" title='fsck_options' data-ref="fsck_options">fsck_options</a>;</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><em>void</em> <dfn class="decl" id="fsck_set_msg_type" title='fsck_set_msg_type' data-ref="fsck_set_msg_type">fsck_set_msg_type</dfn>(<b>struct</b> <a class="type" href="#fsck_options" title='fsck_options' data-ref="fsck_options">fsck_options</a> *<dfn class="local col4 decl" id="34options" title='options' data-type='struct fsck_options *' data-ref="34options">options</dfn>,</td></tr>
+<tr><th id="11">11</th><td>		<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="35msg_id" title='msg_id' data-type='const char *' data-ref="35msg_id">msg_id</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="36msg_type" title='msg_type' data-type='const char *' data-ref="36msg_type">msg_type</dfn>);</td></tr>
+<tr><th id="12">12</th><td><em>void</em> <dfn class="decl" id="fsck_set_msg_types" title='fsck_set_msg_types' data-ref="fsck_set_msg_types">fsck_set_msg_types</dfn>(<b>struct</b> <a class="type" href="#fsck_options" title='fsck_options' data-ref="fsck_options">fsck_options</a> *<dfn class="local col7 decl" id="37options" title='options' data-type='struct fsck_options *' data-ref="37options">options</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="38values" title='values' data-type='const char *' data-ref="38values">values</dfn>);</td></tr>
+<tr><th id="13">13</th><td><em>int</em> <dfn class="decl" id="is_valid_msg_type" title='is_valid_msg_type' data-ref="is_valid_msg_type">is_valid_msg_type</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="39msg_id" title='msg_id' data-type='const char *' data-ref="39msg_id">msg_id</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="40msg_type" title='msg_type' data-type='const char *' data-ref="40msg_type">msg_type</dfn>);</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><i>/*</i></td></tr>
+<tr><th id="16">16</th><td><i> * callback function for fsck_walk</i></td></tr>
+<tr><th id="17">17</th><td><i> * type is the expected type of the object or OBJ_ANY</i></td></tr>
+<tr><th id="18">18</th><td><i> * the return value is:</i></td></tr>
+<tr><th id="19">19</th><td><i> *     0	everything OK</i></td></tr>
+<tr><th id="20">20</th><td><i> *     &lt;0	error signaled and abort</i></td></tr>
+<tr><th id="21">21</th><td><i> *     &gt;0	error signaled and do not abort</i></td></tr>
+<tr><th id="22">22</th><td><i> */</i></td></tr>
+<tr><th id="23">23</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="fsck_walk_func" title='fsck_walk_func' data-type='int (*)(struct object *, int, void *, struct fsck_options *)' data-ref="fsck_walk_func">fsck_walk_func</dfn>)(<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col1 decl" id="41obj" title='obj' data-type='struct object *' data-ref="41obj">obj</dfn>, <em>int</em> <dfn class="local col2 decl" id="42type" title='type' data-type='int' data-ref="42type">type</dfn>, <em>void</em> *<dfn class="local col3 decl" id="43data" title='data' data-type='void *' data-ref="43data">data</dfn>, <b>struct</b> <a class="type" href="#fsck_options" title='fsck_options' data-ref="fsck_options">fsck_options</a> *<dfn class="local col4 decl" id="44options" title='options' data-type='struct fsck_options *' data-ref="44options">options</dfn>);</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i>/* callback for fsck_object, type is FSCK_ERROR or FSCK_WARN */</i></td></tr>
+<tr><th id="26">26</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="fsck_error" title='fsck_error' data-type='int (*)(struct fsck_options *, struct object *, int, const char *)' data-ref="fsck_error">fsck_error</dfn>)(<b>struct</b> <a class="type" href="#fsck_options" title='fsck_options' data-ref="fsck_options">fsck_options</a> *<dfn class="local col5 decl" id="45o" title='o' data-type='struct fsck_options *' data-ref="45o">o</dfn>,</td></tr>
+<tr><th id="27">27</th><td>	<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col6 decl" id="46obj" title='obj' data-type='struct object *' data-ref="46obj">obj</dfn>, <em>int</em> <dfn class="local col7 decl" id="47type" title='type' data-type='int' data-ref="47type">type</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="48message" title='message' data-type='const char *' data-ref="48message">message</dfn>);</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><em>int</em> <dfn class="decl" id="fsck_error_function" title='fsck_error_function' data-ref="fsck_error_function">fsck_error_function</dfn>(<b>struct</b> <a class="type" href="#fsck_options" title='fsck_options' data-ref="fsck_options">fsck_options</a> *<dfn class="local col9 decl" id="49o" title='o' data-type='struct fsck_options *' data-ref="49o">o</dfn>,</td></tr>
+<tr><th id="30">30</th><td>	<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col0 decl" id="50obj" title='obj' data-type='struct object *' data-ref="50obj">obj</dfn>, <em>int</em> <dfn class="local col1 decl" id="51type" title='type' data-type='int' data-ref="51type">type</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="52message" title='message' data-type='const char *' data-ref="52message">message</dfn>);</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><b>struct</b> <dfn class="type def" id="fsck_options" title='fsck_options' data-ref="fsck_options">fsck_options</dfn> {</td></tr>
+<tr><th id="33">33</th><td>	<a class="typedef" href="#fsck_walk_func" title='fsck_walk_func' data-type='int (*)(struct object *, int, void *, struct fsck_options *)' data-ref="fsck_walk_func">fsck_walk_func</a> <dfn class="decl" id="fsck_options::walk" title='fsck_options::walk' data-ref="fsck_options::walk">walk</dfn>;</td></tr>
+<tr><th id="34">34</th><td>	<a class="typedef" href="#fsck_error" title='fsck_error' data-type='int (*)(struct fsck_options *, struct object *, int, const char *)' data-ref="fsck_error">fsck_error</a> <dfn class="decl" id="fsck_options::error_func" title='fsck_options::error_func' data-ref="fsck_options::error_func">error_func</dfn>;</td></tr>
+<tr><th id="35">35</th><td>	<em>unsigned</em> <dfn class="decl" id="fsck_options::strict" title='fsck_options::strict' data-ref="fsck_options::strict">strict</dfn>:<var>1</var>;</td></tr>
+<tr><th id="36">36</th><td>	<em>int</em> *<dfn class="decl" id="fsck_options::msg_type" title='fsck_options::msg_type' data-ref="fsck_options::msg_type">msg_type</dfn>;</td></tr>
+<tr><th id="37">37</th><td>	<b>struct</b> <a class="type" href="sha1-array.h.html#oid_array" title='oid_array' data-ref="oid_array">oid_array</a> *<dfn class="decl" id="fsck_options::skiplist" title='fsck_options::skiplist' data-ref="fsck_options::skiplist">skiplist</dfn>;</td></tr>
+<tr><th id="38">38</th><td>	<b>struct</b> <a class="type" href="decorate.h.html#decoration" title='decoration' data-ref="decoration">decoration</a> *<dfn class="decl" id="fsck_options::object_names" title='fsck_options::object_names' data-ref="fsck_options::object_names">object_names</dfn>;</td></tr>
+<tr><th id="39">39</th><td>};</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/FSCK_OPTIONS_DEFAULT" data-ref="_M/FSCK_OPTIONS_DEFAULT">FSCK_OPTIONS_DEFAULT</dfn> { NULL, fsck_error_function, 0, NULL }</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/FSCK_OPTIONS_STRICT" data-ref="_M/FSCK_OPTIONS_STRICT">FSCK_OPTIONS_STRICT</dfn> { NULL, fsck_error_function, 1, NULL }</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><i>/* descend in all linked child objects</i></td></tr>
+<tr><th id="45">45</th><td><i> * the return value is:</i></td></tr>
+<tr><th id="46">46</th><td><i> *    -1	error in processing the object</i></td></tr>
+<tr><th id="47">47</th><td><i> *    &lt;0	return value of the callback, which lead to an abort</i></td></tr>
+<tr><th id="48">48</th><td><i> *    &gt;0	return value of the first signaled error &gt;0 (in the case of no other errors)</i></td></tr>
+<tr><th id="49">49</th><td><i> *    0		everything OK</i></td></tr>
+<tr><th id="50">50</th><td><i> */</i></td></tr>
+<tr><th id="51">51</th><td><em>int</em> <dfn class="decl" id="fsck_walk" title='fsck_walk' data-ref="fsck_walk">fsck_walk</dfn>(<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col3 decl" id="53obj" title='obj' data-type='struct object *' data-ref="53obj">obj</dfn>, <em>void</em> *<dfn class="local col4 decl" id="54data" title='data' data-type='void *' data-ref="54data">data</dfn>, <b>struct</b> <a class="type" href="#fsck_options" title='fsck_options' data-ref="fsck_options">fsck_options</a> *<dfn class="local col5 decl" id="55options" title='options' data-type='struct fsck_options *' data-ref="55options">options</dfn>);</td></tr>
+<tr><th id="52">52</th><td><i>/* If NULL is passed for data, we assume the object is local and read it. */</i></td></tr>
+<tr><th id="53">53</th><td><em>int</em> <dfn class="decl" id="fsck_object" title='fsck_object' data-ref="fsck_object">fsck_object</dfn>(<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col6 decl" id="56obj" title='obj' data-type='struct object *' data-ref="56obj">obj</dfn>, <em>void</em> *<dfn class="local col7 decl" id="57data" title='data' data-type='void *' data-ref="57data">data</dfn>, <em>unsigned</em> <em>long</em> <dfn class="local col8 decl" id="58size" title='size' data-type='unsigned long' data-ref="58size">size</dfn>,</td></tr>
+<tr><th id="54">54</th><td>	<b>struct</b> <a class="type" href="#fsck_options" title='fsck_options' data-ref="fsck_options">fsck_options</a> *<dfn class="local col9 decl" id="59options" title='options' data-type='struct fsck_options *' data-ref="59options">options</dfn>);</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="57">57</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/fsck.c.html'>codebrowser/builtin/fsck.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,32 @@
+<dec f='include/expat.h' l='818' type='enum XML_Status XML_StopParser(XML_Parser parser, XML_Bool resumable)'/>
+<doc f='include/expat.h' l='786'>/* Stops parsing, causing XML_Parse() or XML_ParseBuffer() to return.
+   Must be called from within a call-back handler, except when aborting
+   (resumable = 0) an already suspended parser. Some call-backs may
+   still follow because they would otherwise get lost. Examples:
+   - endElementHandler() for empty elements when stopped in
+     startElementHandler(), 
+   - endNameSpaceDeclHandler() when stopped in endElementHandler(), 
+   and possibly others.
+
+   Can be called from most handlers, including DTD related call-backs,
+   except when parsing an external parameter entity and resumable != 0.
+   Returns XML_STATUS_OK when successful, XML_STATUS_ERROR otherwise.
+   Possible error codes: 
+   - XML_ERROR_SUSPENDED: when suspending an already suspended parser.
+   - XML_ERROR_FINISHED: when the parser has already finished.
+   - XML_ERROR_SUSPEND_PE: when suspending while parsing an external PE.
+
+   When resumable != 0 (true) then parsing is suspended, that is, 
+   XML_Parse() and XML_ParseBuffer() return XML_STATUS_SUSPENDED. 
+   Otherwise, parsing is aborted, that is, XML_Parse() and XML_ParseBuffer()
+   return XML_STATUS_ERROR with error code XML_ERROR_ABORTED.
+
+   *Note*:
+   This will be applied to the current parser instance only, that is, if
+   there is a parent parser then it will continue parsing when the
+   externalEntityRefHandler() returns. It is up to the implementation of
+   the externalEntityRefHandler() to call XML_StopParser() on the parent
+   parser (recursively), if one wants to stop parsing altogether.
+
+   When suspended, parsing can be resumed by calling XML_ResumeParser(). 
+*/</doc>

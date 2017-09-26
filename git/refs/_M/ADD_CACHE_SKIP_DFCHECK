@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='636'/>
+<use f='codebrowser/merge-recursive.c' l='584' u='c'/>
+<use f='codebrowser/read-cache.c' l='1125' u='c'/>
+<use f='codebrowser/split-index.c' l='164' u='c'/>
+<use f='codebrowser/tree.c' l='45' u='c'/>

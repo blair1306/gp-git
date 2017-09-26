@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='235' type='int cmd_verify_commit(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/verify-commit.c' l='68' ll='95' type='int cmd_verify_commit(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='478'/>
+<use f='codebrowser/git.c' l='478'/>
+<use f='codebrowser/git.c' l='478'/>
+<use f='codebrowser/git.c' l='478'/>

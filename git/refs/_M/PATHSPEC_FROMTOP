@@ -1,0 +1,14 @@
+<dec f='codebrowser/pathspec.h' l='5'/>
+<doc f='codebrowser/pathspec.h' l='4'>/* Pathspec magic */</doc>
+<use f='codebrowser/builtin/add.c' l='472' u='c'/>
+<use f='codebrowser/builtin/check-ignore.c' l='90' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='77' u='c'/>
+<use f='codebrowser/builtin/ls-tree.c' l='178' u='c'/>
+<use f='codebrowser/dir.c' l='144' u='c'/>
+<use f='codebrowser/dir.c' l='385' u='c'/>
+<use f='codebrowser/dir.c' l='1425' u='c'/>
+<use f='codebrowser/dir.c' l='1466' u='c'/>
+<use f='codebrowser/pathspec.c' l='75' u='c'/>
+<use f='codebrowser/pathspec.c' l='434' u='c'/>
+<use f='codebrowser/tree-diff.c' l='592' u='c'/>
+<use f='codebrowser/tree-walk.c' l='942' u='c'/>

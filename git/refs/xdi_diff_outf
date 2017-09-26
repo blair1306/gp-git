@@ -1,0 +1,9 @@
+<dec f='codebrowser/xdiff-interface.h' l='17' type='int xdi_diff_outf(mmfile_t * mf1, mmfile_t * mf2, xdiff_emit_consume_fn fn, void * consume_callback_data, const xpparam_t * xpp, const xdemitconf_t * xecfg)'/>
+<use f='codebrowser/combine-diff.c' l='421' u='c' c='combine_diff'/>
+<use f='codebrowser/diff.c' l='1114' u='c' c='diff_words_show'/>
+<use f='codebrowser/diff.c' l='2523' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2602' u='c' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='2650' u='c' c='builtin_checkdiff'/>
+<use f='codebrowser/diff.c' l='4657' u='c' c='diff_get_patch_id'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='65' u='c' c='diff_grep'/>
+<def f='codebrowser/xdiff-interface.c' l='141' ll='159' type='int xdi_diff_outf(mmfile_t * mf1, mmfile_t * mf2, xdiff_emit_consume_fn fn, void * consume_callback_data, const xpparam_t * xpp, const xdemitconf_t * xecfg)'/>

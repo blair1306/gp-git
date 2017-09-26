@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1453' type='const char * git_editor()'/>
+<use f='codebrowser/builtin/var.c' l='13' u='c' c='editor'/>
+<def f='codebrowser/editor.c' l='10' ll='30' type='const char * git_editor()'/>
+<use f='codebrowser/editor.c' l='34' u='c' c='launch_editor'/>

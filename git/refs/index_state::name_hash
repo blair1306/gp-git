@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='343' type='struct hashmap'/>
+<offset>512</offset>
+<use f='codebrowser/name-hash.c' l='110' u='a' c='hash_index_entry'/>
+<use f='codebrowser/name-hash.c' l='491' u='a' c='lazy_name_thread_proc'/>
+<use f='codebrowser/name-hash.c' l='583' u='a' c='lazy_init_name_hash'/>
+<use f='codebrowser/name-hash.c' l='629' u='a' c='remove_name_hash'/>
+<use f='codebrowser/name-hash.c' l='709' u='a' c='index_file_exists'/>
+<use f='codebrowser/name-hash.c' l='714' u='a' c='index_file_exists'/>
+<use f='codebrowser/name-hash.c' l='725' u='a' c='free_name_hash'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='49' u='a' c='dump_run'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/notes.h' l='158' type='int copy_note(struct notes_tree * t, const struct object_id * from_obj, const struct object_id * to_obj, int force, combine_notes_fn combine_notes)'/>
+<doc f='codebrowser/notes.h' l='146'>/*
+ * Copy a note from one object to another in the given notes_tree.
+ *
+ * Returns 1 if the to_obj already has a note and &apos;force&apos; is false. Otherwise,
+ * returns non-zero if &apos;force&apos; is true, but the given combine_notes function
+ * failed to combine from_obj&apos;s note with to_obj&apos;s existing note.
+ * Returns zero on success.
+ *
+ * IMPORTANT: The changes made by copy_note() to the given notes_tree structure
+ * are not persistent until a subsequent call to write_notes_tree() returns
+ * zero.
+ */</doc>
+<use f='codebrowser/builtin/notes.c' l='313' u='c' c='notes_copy_from_stdin'/>
+<use f='codebrowser/notes-utils.c' l='167' u='c' c='copy_note_for_rewrite'/>
+<def f='codebrowser/notes.c' l='1291' ll='1307' type='int copy_note(struct notes_tree * t, const struct object_id * from_obj, const struct object_id * to_obj, int force, combine_notes_fn combine_notes)'/>

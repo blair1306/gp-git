@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack.h' l='82' type='int verify_pack_index(struct packed_git * )'/>
+<use f='codebrowser/http.c' l='1932' u='c' c='fetch_and_setup_pack_index'/>
+<def f='codebrowser/pack-check.c' l='163' ll='184' type='int verify_pack_index(struct packed_git * p)'/>
+<use f='codebrowser/pack-check.c' l='192' u='c' c='verify_pack'/>

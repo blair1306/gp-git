@@ -1,0 +1,10 @@
+<dec f='codebrowser/builtin.h' l='168' type='int cmd_fsck(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/fsck.c' l='661' ll='792' type='int cmd_fsck(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='403'/>
+<use f='codebrowser/git.c' l='403'/>
+<use f='codebrowser/git.c' l='404'/>
+<use f='codebrowser/git.c' l='404'/>
+<use f='codebrowser/git.c' l='403'/>
+<use f='codebrowser/git.c' l='403'/>
+<use f='codebrowser/git.c' l='404'/>
+<use f='codebrowser/git.c' l='404'/>

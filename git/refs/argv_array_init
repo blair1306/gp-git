@@ -1,0 +1,11 @@
+<dec f='codebrowser/argv-array.h' l='14' type='void argv_array_init(struct argv_array * )'/>
+<def f='codebrowser/argv-array.c' l='7' ll='12' type='void argv_array_init(struct argv_array * array)'/>
+<use f='codebrowser/argv-array.c' l='75' u='c' c='argv_array_clear'/>
+<use f='codebrowser/argv-array.c' l='84' u='c' c='argv_array_detach'/>
+<use f='codebrowser/builtin/am.c' l='158' u='c' c='am_state_init'/>
+<use f='codebrowser/builtin/describe.c' l='489' u='c' c='cmd_describe'/>
+<use f='codebrowser/remote-curl.c' l='941' u='c' c='push_git'/>
+<use f='codebrowser/run-command.c' l='12' u='c' c='child_process_init'/>
+<use f='codebrowser/run-command.c' l='13' u='c' c='child_process_init'/>
+<use f='codebrowser/submodule.c' l='1238' u='c' c='get_next_submodule'/>
+<use f='codebrowser/tmp-objdir.c' l='133' u='c' c='tmp_objdir_create'/>

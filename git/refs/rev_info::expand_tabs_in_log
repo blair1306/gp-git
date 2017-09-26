@@ -1,0 +1,10 @@
+<dec f='codebrowser/revision.h' l='159' type='int'/>
+<offset>1216</offset>
+<doc f='codebrowser/revision.h' l='159'>/* unset if negative */</doc>
+<use f='codebrowser/log-tree.c' l='682' u='r' c='show_log'/>
+<use f='codebrowser/revision.c' l='1356' u='w' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1905' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1907' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1912' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2387' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2388' u='w' c='setup_revisions'/>

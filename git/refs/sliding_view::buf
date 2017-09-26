@@ -1,0 +1,14 @@
+<dec f='codebrowser/vcs-svn/sliding_window.h' l='11' type='struct strbuf'/>
+<use f='codebrowser/t/helper/test-svn-fe.c' l='34' u='a' c='apply_delta'/>
+<offset>256</offset>
+<use f='codebrowser/vcs-svn/fast_export.c' l='214' u='a' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='227' u='m' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='233' u='a' c='apply_delta'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='50' u='m' c='move_window'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='51' u='m' c='move_window'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='60' u='m' c='move_window'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='63' u='a' c='move_window'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='68' u='a' c='move_window'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='71' u='m' c='move_window'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='73' u='a' c='move_window'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='177' u='m' c='copyfrom_source'/>

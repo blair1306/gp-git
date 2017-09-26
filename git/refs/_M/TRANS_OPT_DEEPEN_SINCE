@@ -1,0 +1,5 @@
+<dec f='codebrowser/transport.h' l='196'/>
+<doc f='codebrowser/transport.h' l='195'>/* Limit the depth of the fetch based on time if not null */</doc>
+<use f='codebrowser/builtin/clone.c' l='1094' u='c'/>
+<use f='codebrowser/builtin/fetch.c' l='1038' u='c'/>
+<use f='codebrowser/transport.c' l='155' u='c'/>

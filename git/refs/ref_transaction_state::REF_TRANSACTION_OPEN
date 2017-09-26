@@ -1,0 +1,7 @@
+<dec f='codebrowser/refs/refs-internal.h' l='223' type='0'/>
+<use f='codebrowser/refs.c' l='876' c='ref_transaction_free'/>
+<use f='codebrowser/refs.c' l='905' u='r' c='ref_transaction_add_update'/>
+<use f='codebrowser/refs.c' l='1770' c='ref_transaction_prepare'/>
+<use f='codebrowser/refs.c' l='1800' c='ref_transaction_abort'/>
+<use f='codebrowser/refs.c' l='1825' c='ref_transaction_commit'/>
+<use f='codebrowser/refs/files-backend.c' l='2655' u='r' c='files_initial_transaction_commit'/>

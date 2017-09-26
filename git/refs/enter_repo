@@ -1,0 +1,27 @@
+<dec f='codebrowser/cache.h' l='1120' type='const char * enter_repo(const char * path, int strict)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1953' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/builtin/upload-archive.c' l='28' u='c' c='cmd_upload_archive_writer'/>
+<use f='codebrowser/daemon.c' l='240' u='c' c='path_ok'/>
+<use f='codebrowser/daemon.c' l='247' u='c' c='path_ok'/>
+<use f='codebrowser/http-backend.c' l='701' u='c' c='cmd_main'/>
+<def f='codebrowser/path.c' l='759' ll='834' type='const char * enter_repo(const char * path, int strict)'/>
+<doc f='codebrowser/path.c' l='740'>/*
+ * First, one directory to try is determined by the following algorithm.
+ *
+ * (0) If &quot;strict&quot; is given, the path is used as given and no DWIM is
+ *     done. Otherwise:
+ * (1) &quot;~/path&quot; to mean path under the running user&apos;s home directory;
+ * (2) &quot;~user/path&quot; to mean path under named user&apos;s home directory;
+ * (3) &quot;relative/path&quot; to mean cwd relative directory; or
+ * (4) &quot;/absolute/path&quot; to mean absolute directory.
+ *
+ * Unless &quot;strict&quot; is given, we check &quot;%s/.git&quot;, &quot;%s&quot;, &quot;%s.git/.git&quot;, &quot;%s.git&quot;
+ * in this order. We select the first one that is a valid git repository, and
+ * chdir() to it. If none match, or we fail to chdir, we return NULL.
+ *
+ * If all goes well, we return the directory we used to chdir() (but
+ * before ~user is expanded), avoiding getcwd() resolving symbolic
+ * links.  User relative paths are also returned as they are given,
+ * except DWIM suffixing.
+ */</doc>
+<use f='codebrowser/upload-pack.c' l='1066' u='c' c='cmd_main'/>

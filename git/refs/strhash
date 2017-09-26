@@ -1,0 +1,25 @@
+<dec f='codebrowser/hashmap.h' l='109' type='unsigned int strhash(const char * buf)'/>
+<doc f='codebrowser/hashmap.h' l='100'>/*
+ * Ready-to-use hash functions for strings, using the FNV-1 algorithm (see
+ * http://www.isthe.com/chongo/tech/comp/fnv).
+ * `strhash` and `strihash` take 0-terminated strings, while `memhash` and
+ * `memihash` operate on arbitrary-length memory.
+ * `strihash` and `memihash` are case insensitive versions.
+ * `memihash_cont` is a variant of `memihash` that allows a computation to be
+ * continued with another chunk of data.
+ */</doc>
+<use f='codebrowser/builtin/difftool.c' l='170' u='c' c='add_left_or_right'/>
+<use f='codebrowser/builtin/difftool.c' l='243' u='c' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='470' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='629' u='c' c='run_dir_diff'/>
+<use f='codebrowser/config.c' l='1675' u='c' c='configset_find_element'/>
+<use f='codebrowser/config.c' l='1696' u='c' c='configset_add_value'/>
+<def f='codebrowser/hashmap.c' l='10' ll='16' type='unsigned int strhash(const char * str)'/>
+<use f='codebrowser/refs.c' l='1561' u='c' c='alloc_ref_store_hash_entry'/>
+<use f='codebrowser/refs.c' l='1588' u='c' c='lookup_ref_store_map'/>
+<use f='codebrowser/sub-process.c' l='23' u='c' c='subprocess_find_entry'/>
+<use f='codebrowser/sub-process.c' l='99' u='c' c='subprocess_start'/>
+<use f='codebrowser/submodule-config.c' l='113' u='c' c='hash_sha1_string'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='58' u='c' c='hash'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='170' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='179' u='c' c='cmd_main'/>

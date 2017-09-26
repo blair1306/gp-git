@@ -1,0 +1,5 @@
+<dec f='codebrowser/grep.h' l='145' type='int'/>
+<offset>1408</offset>
+<use f='codebrowser/grep.c' l='292' u='w' c='append_header_grep_pattern'/>
+<use f='codebrowser/revision.c' l='2381' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2909' u='r' c='commit_match'/>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>list-objects.h source code [codebrowser/list-objects.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/list-objects.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='list-objects.h.html'>list-objects.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/LIST_OBJECTS_H">LIST_OBJECTS_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/LIST_OBJECTS_H" data-ref="_M/LIST_OBJECTS_H">LIST_OBJECTS_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="show_commit_fn" title='show_commit_fn' data-type='void (*)(struct commit *, void *)' data-ref="show_commit_fn">show_commit_fn</dfn>)(<b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *, <em>void</em> *);</td></tr>
+<tr><th id="5">5</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="show_object_fn" title='show_object_fn' data-type='void (*)(struct object *, const char *, void *)' data-ref="show_object_fn">show_object_fn</dfn>)(<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *, <em>const</em> <em>char</em> *, <em>void</em> *);</td></tr>
+<tr><th id="6">6</th><td><em>void</em> <dfn class="decl" id="traverse_commit_list" title='traverse_commit_list' data-ref="traverse_commit_list">traverse_commit_list</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *, <a class="typedef" href="#show_commit_fn" title='show_commit_fn' data-type='void (*)(struct commit *, void *)' data-ref="show_commit_fn">show_commit_fn</a>, <a class="typedef" href="#show_object_fn" title='show_object_fn' data-type='void (*)(struct object *, const char *, void *)' data-ref="show_object_fn">show_object_fn</a>, <em>void</em> *);</td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="show_edge_fn" title='show_edge_fn' data-type='void (*)(struct commit *)' data-ref="show_edge_fn">show_edge_fn</dfn>)(<b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *);</td></tr>
+<tr><th id="9">9</th><td><em>void</em> <dfn class="decl" id="mark_edges_uninteresting" title='mark_edges_uninteresting' data-ref="mark_edges_uninteresting">mark_edges_uninteresting</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *, <a class="typedef" href="#show_edge_fn" title='show_edge_fn' data-type='void (*)(struct commit *)' data-ref="show_edge_fn">show_edge_fn</a>);</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='bisect.c.html'>codebrowser/bisect.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/sequencer.h' l='9' type='0'/>
+<use f='codebrowser/builtin/revert.c' l='36' u='r' c='action_name'/>
+<use f='codebrowser/builtin/revert.c' l='41' u='r' c='revert_or_cherry_pick_usage'/>
+<use f='codebrowser/builtin/revert.c' l='210' u='r' c='cmd_revert'/>
+<use f='codebrowser/sequencer.c' l='216' c='action_name'/>
+<use f='codebrowser/sequencer.c' l='2363' u='r' c='sequencer_pick_revisions'/>

@@ -1,0 +1,1 @@
+<dec f='include/expat.h' l='641' type='void XML_SetUnknownEncodingHandler(XML_Parser parser, XML_UnknownEncodingHandler handler, void * encodingHandlerData)'/>

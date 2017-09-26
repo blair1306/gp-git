@@ -1,0 +1,5 @@
+<dec f='codebrowser/blame.h' l='146' type='void (*)(struct blame_scoreboard *, int)'/>
+<use f='codebrowser/blame.c' l='440' u='r' c='sanity_check_refcnt'/>
+<offset>1280</offset>
+<doc f='codebrowser/blame.h' l='145'>/* callbacks */</doc>
+<use f='codebrowser/builtin/blame.c' l='917' u='w' c='cmd_blame'/>

@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>lockfile.h source code [codebrowser/lockfile.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="lock_file "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/lockfile.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='lockfile.h.html'>lockfile.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/LOCKFILE_H">LOCKFILE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/LOCKFILE_H" data-ref="_M/LOCKFILE_H">LOCKFILE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/*</i></td></tr>
+<tr><th id="5">5</th><td><i> * File write-locks as used by Git.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * The lockfile API serves two purposes:</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * * Mutual exclusion and atomic file updates. When we want to change</i></td></tr>
+<tr><th id="10">10</th><td><i> *   a file, we create a lockfile `&lt;filename&gt;.lock`, write the new</i></td></tr>
+<tr><th id="11">11</th><td><i> *   file contents into it, and then rename the lockfile to its final</i></td></tr>
+<tr><th id="12">12</th><td><i> *   destination `&lt;filename&gt;`. We create the `&lt;filename&gt;.lock` file</i></td></tr>
+<tr><th id="13">13</th><td><i> *   with `O_CREAT|O_EXCL` so that we can notice and fail if somebody</i></td></tr>
+<tr><th id="14">14</th><td><i> *   else has already locked the file, then atomically rename the</i></td></tr>
+<tr><th id="15">15</th><td><i> *   lockfile to its final destination to commit the changes and</i></td></tr>
+<tr><th id="16">16</th><td><i> *   unlock the file.</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> * * Automatic cruft removal. If the program exits after we lock a</i></td></tr>
+<tr><th id="19">19</th><td><i> *   file but before the changes have been committed, we want to make</i></td></tr>
+<tr><th id="20">20</th><td><i> *   sure that we remove the lockfile. This is done by remembering the</i></td></tr>
+<tr><th id="21">21</th><td><i> *   lockfiles we have created in a linked list and setting up an</i></td></tr>
+<tr><th id="22">22</th><td><i> *   `atexit(3)` handler and a signal handler that clean up the</i></td></tr>
+<tr><th id="23">23</th><td><i> *   lockfiles. This mechanism ensures that outstanding lockfiles are</i></td></tr>
+<tr><th id="24">24</th><td><i> *   cleaned up if the program exits (including when `die()` is</i></td></tr>
+<tr><th id="25">25</th><td><i> *   called) or if the program is terminated by a signal.</i></td></tr>
+<tr><th id="26">26</th><td><i> *</i></td></tr>
+<tr><th id="27">27</th><td><i> * Please note that lockfiles only block other writers. Readers do not</i></td></tr>
+<tr><th id="28">28</th><td><i> * block, but they are guaranteed to see either the old contents of</i></td></tr>
+<tr><th id="29">29</th><td><i> * the file or the new contents of the file (assuming that the</i></td></tr>
+<tr><th id="30">30</th><td><i> * filesystem implements `rename(2)` atomically).</i></td></tr>
+<tr><th id="31">31</th><td><i> *</i></td></tr>
+<tr><th id="32">32</th><td><i> * Most of the heavy lifting is done by the tempfile module (see</i></td></tr>
+<tr><th id="33">33</th><td><i> * "tempfile.h").</i></td></tr>
+<tr><th id="34">34</th><td><i> *</i></td></tr>
+<tr><th id="35">35</th><td><i> * Calling sequence</i></td></tr>
+<tr><th id="36">36</th><td><i> * ----------------</i></td></tr>
+<tr><th id="37">37</th><td><i> *</i></td></tr>
+<tr><th id="38">38</th><td><i> * The caller:</i></td></tr>
+<tr><th id="39">39</th><td><i> *</i></td></tr>
+<tr><th id="40">40</th><td><i> * * Allocates a `struct lock_file` either as a static variable or on</i></td></tr>
+<tr><th id="41">41</th><td><i> *   the heap, initialized to zeros. Once you use the structure to</i></td></tr>
+<tr><th id="42">42</th><td><i> *   call the `hold_lock_file_for_*()` family of functions, it belongs</i></td></tr>
+<tr><th id="43">43</th><td><i> *   to the lockfile subsystem and its storage must remain valid</i></td></tr>
+<tr><th id="44">44</th><td><i> *   throughout the life of the program (i.e. you cannot use an</i></td></tr>
+<tr><th id="45">45</th><td><i> *   on-stack variable to hold this structure).</i></td></tr>
+<tr><th id="46">46</th><td><i> *</i></td></tr>
+<tr><th id="47">47</th><td><i> * * Attempts to create a lockfile by calling `hold_lock_file_for_update()`.</i></td></tr>
+<tr><th id="48">48</th><td><i> *</i></td></tr>
+<tr><th id="49">49</th><td><i> * * Writes new content for the destination file by either:</i></td></tr>
+<tr><th id="50">50</th><td><i> *</i></td></tr>
+<tr><th id="51">51</th><td><i> *   * writing to the file descriptor returned by the</i></td></tr>
+<tr><th id="52">52</th><td><i> *     `hold_lock_file_for_*()` functions (also available via</i></td></tr>
+<tr><th id="53">53</th><td><i> *     `lock-&gt;fd`).</i></td></tr>
+<tr><th id="54">54</th><td><i> *</i></td></tr>
+<tr><th id="55">55</th><td><i> *   * calling `fdopen_lock_file()` to get a `FILE` pointer for the</i></td></tr>
+<tr><th id="56">56</th><td><i> *     open file and writing to the file using stdio.</i></td></tr>
+<tr><th id="57">57</th><td><i> *</i></td></tr>
+<tr><th id="58">58</th><td><i> *   Note that the file descriptor returned by hold_lock_file_for_update()</i></td></tr>
+<tr><th id="59">59</th><td><i> *   is marked O_CLOEXEC, so the new contents must be written by the</i></td></tr>
+<tr><th id="60">60</th><td><i> *   current process, not a spawned one.</i></td></tr>
+<tr><th id="61">61</th><td><i> *</i></td></tr>
+<tr><th id="62">62</th><td><i> * When finished writing, the caller can:</i></td></tr>
+<tr><th id="63">63</th><td><i> *</i></td></tr>
+<tr><th id="64">64</th><td><i> * * Close the file descriptor and rename the lockfile to its final</i></td></tr>
+<tr><th id="65">65</th><td><i> *   destination by calling `commit_lock_file()` or</i></td></tr>
+<tr><th id="66">66</th><td><i> *   `commit_lock_file_to()`.</i></td></tr>
+<tr><th id="67">67</th><td><i> *</i></td></tr>
+<tr><th id="68">68</th><td><i> * * Close the file descriptor and remove the lockfile by calling</i></td></tr>
+<tr><th id="69">69</th><td><i> *   `rollback_lock_file()`.</i></td></tr>
+<tr><th id="70">70</th><td><i> *</i></td></tr>
+<tr><th id="71">71</th><td><i> * * Close the file descriptor without removing or renaming the</i></td></tr>
+<tr><th id="72">72</th><td><i> *   lockfile by calling `close_lock_file()`, and later call</i></td></tr>
+<tr><th id="73">73</th><td><i> *   `commit_lock_file()`, `commit_lock_file_to()`,</i></td></tr>
+<tr><th id="74">74</th><td><i> *   `rollback_lock_file()`, or `reopen_lock_file()`.</i></td></tr>
+<tr><th id="75">75</th><td><i> *</i></td></tr>
+<tr><th id="76">76</th><td><i> * Even after the lockfile is committed or rolled back, the</i></td></tr>
+<tr><th id="77">77</th><td><i> * `lock_file` object must not be freed or altered by the caller.</i></td></tr>
+<tr><th id="78">78</th><td><i> * However, it may be reused; just pass it to another call of</i></td></tr>
+<tr><th id="79">79</th><td><i> * `hold_lock_file_for_update()`.</i></td></tr>
+<tr><th id="80">80</th><td><i> *</i></td></tr>
+<tr><th id="81">81</th><td><i> * If the program exits before `commit_lock_file()`,</i></td></tr>
+<tr><th id="82">82</th><td><i> * `commit_lock_file_to()`, or `rollback_lock_file()` is called, the</i></td></tr>
+<tr><th id="83">83</th><td><i> * tempfile module will close and remove the lockfile, thereby rolling</i></td></tr>
+<tr><th id="84">84</th><td><i> * back any uncommitted changes.</i></td></tr>
+<tr><th id="85">85</th><td><i> *</i></td></tr>
+<tr><th id="86">86</th><td><i> * If you need to close the file descriptor you obtained from a</i></td></tr>
+<tr><th id="87">87</th><td><i> * `hold_lock_file_for_*()` function yourself, do so by calling</i></td></tr>
+<tr><th id="88">88</th><td><i> * `close_lock_file()`. See "tempfile.h" for more information.</i></td></tr>
+<tr><th id="89">89</th><td><i> *</i></td></tr>
+<tr><th id="90">90</th><td><i> *</i></td></tr>
+<tr><th id="91">91</th><td><i> * Under the covers, a lockfile is just a tempfile with a few helper</i></td></tr>
+<tr><th id="92">92</th><td><i> * functions. In particular, the state diagram and the cleanup</i></td></tr>
+<tr><th id="93">93</th><td><i> * machinery are all implemented in the tempfile module.</i></td></tr>
+<tr><th id="94">94</th><td><i> *</i></td></tr>
+<tr><th id="95">95</th><td><i> *</i></td></tr>
+<tr><th id="96">96</th><td><i> * Error handling</i></td></tr>
+<tr><th id="97">97</th><td><i> * --------------</i></td></tr>
+<tr><th id="98">98</th><td><i> *</i></td></tr>
+<tr><th id="99">99</th><td><i> * The `hold_lock_file_for_*()` functions return a file descriptor on</i></td></tr>
+<tr><th id="100">100</th><td><i> * success or -1 on failure (unless `LOCK_DIE_ON_ERROR` is used; see</i></td></tr>
+<tr><th id="101">101</th><td><i> * "flags" below). On errors, `errno` describes the reason for</i></td></tr>
+<tr><th id="102">102</th><td><i> * failure. Errors can be reported by passing `errno` to</i></td></tr>
+<tr><th id="103">103</th><td><i> * `unable_to_lock_message()` or `unable_to_lock_die()`.</i></td></tr>
+<tr><th id="104">104</th><td><i> *</i></td></tr>
+<tr><th id="105">105</th><td><i> * Similarly, `commit_lock_file`, `commit_lock_file_to`, and</i></td></tr>
+<tr><th id="106">106</th><td><i> * `close_lock_file` return 0 on success. On failure they set `errno`</i></td></tr>
+<tr><th id="107">107</th><td><i> * appropriately, do their best to roll back the lockfile, and return</i></td></tr>
+<tr><th id="108">108</th><td><i> * -1.</i></td></tr>
+<tr><th id="109">109</th><td><i> */</i></td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><u>#include <a href="tempfile.h.html">"tempfile.h"</a></u></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><b>struct</b> <dfn class="type def" id="lock_file" title='lock_file' data-ref="lock_file">lock_file</dfn> {</td></tr>
+<tr><th id="114">114</th><td>	<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> <dfn class="decl" id="lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</dfn>;</td></tr>
+<tr><th id="115">115</th><td>};</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i>/* String appended to a filename to derive the lockfile name: */</i></td></tr>
+<tr><th id="118">118</th><td><u>#define <dfn class="macro" id="_M/LOCK_SUFFIX" data-ref="_M/LOCK_SUFFIX">LOCK_SUFFIX</dfn> ".lock"</u></td></tr>
+<tr><th id="119">119</th><td><u>#define <dfn class="macro" id="_M/LOCK_SUFFIX_LEN" data-ref="_M/LOCK_SUFFIX_LEN">LOCK_SUFFIX_LEN</dfn> 5</u></td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><i>/*</i></td></tr>
+<tr><th id="123">123</th><td><i> * Flags</i></td></tr>
+<tr><th id="124">124</th><td><i> * -----</i></td></tr>
+<tr><th id="125">125</th><td><i> *</i></td></tr>
+<tr><th id="126">126</th><td><i> * The following flags can be passed to `hold_lock_file_for_update()`.</i></td></tr>
+<tr><th id="127">127</th><td><i> */</i></td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><i>/*</i></td></tr>
+<tr><th id="130">130</th><td><i> * If a lock is already taken for the file, `die()` with an error</i></td></tr>
+<tr><th id="131">131</th><td><i> * message. If this flag is not specified, trying to lock a file that</i></td></tr>
+<tr><th id="132">132</th><td><i> * is already locked silently returns -1 to the caller, or ...</i></td></tr>
+<tr><th id="133">133</th><td><i> */</i></td></tr>
+<tr><th id="134">134</th><td><u>#define <dfn class="macro" id="_M/LOCK_DIE_ON_ERROR" data-ref="_M/LOCK_DIE_ON_ERROR">LOCK_DIE_ON_ERROR</dfn> 1</u></td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><i>/*</i></td></tr>
+<tr><th id="137">137</th><td><i> * ... this flag can be passed instead to return -1 and give the usual</i></td></tr>
+<tr><th id="138">138</th><td><i> * error message upon an error.</i></td></tr>
+<tr><th id="139">139</th><td><i> */</i></td></tr>
+<tr><th id="140">140</th><td><u>#define <dfn class="macro" id="_M/LOCK_REPORT_ON_ERROR" data-ref="_M/LOCK_REPORT_ON_ERROR">LOCK_REPORT_ON_ERROR</dfn> 4</u></td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><i>/*</i></td></tr>
+<tr><th id="143">143</th><td><i> * Usually symbolic links in the destination path are resolved. This</i></td></tr>
+<tr><th id="144">144</th><td><i> * means that (1) the lockfile is created by adding ".lock" to the</i></td></tr>
+<tr><th id="145">145</th><td><i> * resolved path, and (2) upon commit, the resolved path is</i></td></tr>
+<tr><th id="146">146</th><td><i> * overwritten. However, if `LOCK_NO_DEREF` is set, then the lockfile</i></td></tr>
+<tr><th id="147">147</th><td><i> * is created by adding ".lock" to the path argument itself. This</i></td></tr>
+<tr><th id="148">148</th><td><i> * option is used, for example, when detaching a symbolic reference,</i></td></tr>
+<tr><th id="149">149</th><td><i> * which for backwards-compatibility reasons, can be a symbolic link</i></td></tr>
+<tr><th id="150">150</th><td><i> * containing the name of the referred-to-reference.</i></td></tr>
+<tr><th id="151">151</th><td><i> */</i></td></tr>
+<tr><th id="152">152</th><td><u>#define <dfn class="macro" id="_M/LOCK_NO_DEREF" data-ref="_M/LOCK_NO_DEREF">LOCK_NO_DEREF</dfn> 2</u></td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td><i>/*</i></td></tr>
+<tr><th id="155">155</th><td><i> * Attempt to create a lockfile for the file at `path` and return a</i></td></tr>
+<tr><th id="156">156</th><td><i> * file descriptor for writing to it, or -1 on error. If the file is</i></td></tr>
+<tr><th id="157">157</th><td><i> * currently locked, retry with quadratic backoff for at least</i></td></tr>
+<tr><th id="158">158</th><td><i> * timeout_ms milliseconds. If timeout_ms is 0, try exactly once; if</i></td></tr>
+<tr><th id="159">159</th><td><i> * timeout_ms is -1, retry indefinitely. The flags argument and error</i></td></tr>
+<tr><th id="160">160</th><td><i> * handling are described above.</i></td></tr>
+<tr><th id="161">161</th><td><i> */</i></td></tr>
+<tr><th id="162">162</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="hold_lock_file_for_update_timeout" title='hold_lock_file_for_update_timeout' data-ref="hold_lock_file_for_update_timeout">hold_lock_file_for_update_timeout</dfn>(</td></tr>
+<tr><th id="163">163</th><td>		<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col0 decl" id="400lk" title='lk' data-type='struct lock_file *' data-ref="400lk">lk</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="401path" title='path' data-type='const char *' data-ref="401path">path</dfn>,</td></tr>
+<tr><th id="164">164</th><td>		<em>int</em> <dfn class="local col2 decl" id="402flags" title='flags' data-type='int' data-ref="402flags">flags</dfn>, <em>long</em> <dfn class="local col3 decl" id="403timeout_ms" title='timeout_ms' data-type='long' data-ref="403timeout_ms">timeout_ms</dfn>);</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td><i>/*</i></td></tr>
+<tr><th id="167">167</th><td><i> * Attempt to create a lockfile for the file at `path` and return a</i></td></tr>
+<tr><th id="168">168</th><td><i> * file descriptor for writing to it, or -1 on error. The flags</i></td></tr>
+<tr><th id="169">169</th><td><i> * argument and error handling are described above.</i></td></tr>
+<tr><th id="170">170</th><td><i> */</i></td></tr>
+<tr><th id="171">171</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="hold_lock_file_for_update" title='hold_lock_file_for_update' data-ref="hold_lock_file_for_update">hold_lock_file_for_update</dfn>(</td></tr>
+<tr><th id="172">172</th><td>		<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col4 decl" id="404lk" title='lk' data-type='struct lock_file *' data-ref="404lk">lk</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="405path" title='path' data-type='const char *' data-ref="405path">path</dfn>,</td></tr>
+<tr><th id="173">173</th><td>		<em>int</em> <dfn class="local col6 decl" id="406flags" title='flags' data-type='int' data-ref="406flags">flags</dfn>)</td></tr>
+<tr><th id="174">174</th><td>{</td></tr>
+<tr><th id="175">175</th><td>	<b>return</b> <a class="ref" href="#hold_lock_file_for_update_timeout" title='hold_lock_file_for_update_timeout' data-ref="hold_lock_file_for_update_timeout">hold_lock_file_for_update_timeout</a>(<a class="local col4 ref" href="#404lk" title='lk' data-ref="404lk">lk</a>, <a class="local col5 ref" href="#405path" title='path' data-ref="405path">path</a>, <a class="local col6 ref" href="#406flags" title='flags' data-ref="406flags">flags</a>, <var>0</var>);</td></tr>
+<tr><th id="176">176</th><td>}</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td><i>/*</i></td></tr>
+<tr><th id="179">179</th><td><i> * Return a nonzero value iff `lk` is currently locked.</i></td></tr>
+<tr><th id="180">180</th><td><i> */</i></td></tr>
+<tr><th id="181">181</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="is_lock_file_locked" title='is_lock_file_locked' data-ref="is_lock_file_locked">is_lock_file_locked</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col7 decl" id="407lk" title='lk' data-type='struct lock_file *' data-ref="407lk">lk</dfn>)</td></tr>
+<tr><th id="182">182</th><td>{</td></tr>
+<tr><th id="183">183</th><td>	<b>return</b> <a class="ref" href="tempfile.h.html#is_tempfile_active" title='is_tempfile_active' data-ref="is_tempfile_active">is_tempfile_active</a>(&amp;<a class="local col7 ref" href="#407lk" title='lk' data-ref="407lk">lk</a>-&gt;<a class="ref" href="#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>);</td></tr>
+<tr><th id="184">184</th><td>}</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><i>/*</i></td></tr>
+<tr><th id="187">187</th><td><i> * Append an appropriate error message to `buf` following the failure</i></td></tr>
+<tr><th id="188">188</th><td><i> * of `hold_lock_file_for_update()` to lock `path`. `err` should be the</i></td></tr>
+<tr><th id="189">189</th><td><i> * `errno` set by the failing call.</i></td></tr>
+<tr><th id="190">190</th><td><i> */</i></td></tr>
+<tr><th id="191">191</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="unable_to_lock_message" title='unable_to_lock_message' data-ref="unable_to_lock_message">unable_to_lock_message</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="408path" title='path' data-type='const char *' data-ref="408path">path</dfn>, <em>int</em> <dfn class="local col9 decl" id="409err" title='err' data-type='int' data-ref="409err">err</dfn>,</td></tr>
+<tr><th id="192">192</th><td>				   <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col0 decl" id="410buf" title='buf' data-type='struct strbuf *' data-ref="410buf">buf</dfn>);</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><i>/*</i></td></tr>
+<tr><th id="195">195</th><td><i> * Emit an appropriate error message and `die()` following the failure</i></td></tr>
+<tr><th id="196">196</th><td><i> * of `hold_lock_file_for_update()` to lock `path`. `err` should be the</i></td></tr>
+<tr><th id="197">197</th><td><i> * `errno` set by the failing</i></td></tr>
+<tr><th id="198">198</th><td><i> * call.</i></td></tr>
+<tr><th id="199">199</th><td><i> */</i></td></tr>
+<tr><th id="200">200</th><td><b>extern</b> <a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <em>void</em> <dfn class="decl" id="unable_to_lock_die" title='unable_to_lock_die' data-ref="unable_to_lock_die">unable_to_lock_die</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="411path" title='path' data-type='const char *' data-ref="411path">path</dfn>, <em>int</em> <dfn class="local col2 decl" id="412err" title='err' data-type='int' data-ref="412err">err</dfn>);</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td><i>/*</i></td></tr>
+<tr><th id="203">203</th><td><i> * Associate a stdio stream with the lockfile (which must still be</i></td></tr>
+<tr><th id="204">204</th><td><i> * open). Return `NULL` (*without* rolling back the lockfile) on</i></td></tr>
+<tr><th id="205">205</th><td><i> * error. The stream is closed automatically when `close_lock_file()`</i></td></tr>
+<tr><th id="206">206</th><td><i> * is called or when the file is committed or rolled back.</i></td></tr>
+<tr><th id="207">207</th><td><i> */</i></td></tr>
+<tr><th id="208">208</th><td><em>static</em> <b>inline</b> <a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl def" id="fdopen_lock_file" title='fdopen_lock_file' data-ref="fdopen_lock_file">fdopen_lock_file</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col3 decl" id="413lk" title='lk' data-type='struct lock_file *' data-ref="413lk">lk</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="414mode" title='mode' data-type='const char *' data-ref="414mode">mode</dfn>)</td></tr>
+<tr><th id="209">209</th><td>{</td></tr>
+<tr><th id="210">210</th><td>	<b>return</b> <a class="ref" href="tempfile.h.html#fdopen_tempfile" title='fdopen_tempfile' data-ref="fdopen_tempfile">fdopen_tempfile</a>(&amp;<a class="local col3 ref" href="#413lk" title='lk' data-ref="413lk">lk</a>-&gt;<a class="ref" href="#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>, <a class="local col4 ref" href="#414mode" title='mode' data-ref="414mode">mode</a>);</td></tr>
+<tr><th id="211">211</th><td>}</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><i>/*</i></td></tr>
+<tr><th id="214">214</th><td><i> * Return the path of the lockfile. The return value is a pointer to a</i></td></tr>
+<tr><th id="215">215</th><td><i> * field within the lock_file object and should not be freed.</i></td></tr>
+<tr><th id="216">216</th><td><i> */</i></td></tr>
+<tr><th id="217">217</th><td><em>static</em> <b>inline</b> <em>const</em> <em>char</em> *<dfn class="decl def" id="get_lock_file_path" title='get_lock_file_path' data-ref="get_lock_file_path">get_lock_file_path</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col5 decl" id="415lk" title='lk' data-type='struct lock_file *' data-ref="415lk">lk</dfn>)</td></tr>
+<tr><th id="218">218</th><td>{</td></tr>
+<tr><th id="219">219</th><td>	<b>return</b> <a class="ref" href="tempfile.h.html#get_tempfile_path" title='get_tempfile_path' data-ref="get_tempfile_path">get_tempfile_path</a>(&amp;<a class="local col5 ref" href="#415lk" title='lk' data-ref="415lk">lk</a>-&gt;<a class="ref" href="#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>);</td></tr>
+<tr><th id="220">220</th><td>}</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="get_lock_file_fd" title='get_lock_file_fd' data-ref="get_lock_file_fd">get_lock_file_fd</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col6 decl" id="416lk" title='lk' data-type='struct lock_file *' data-ref="416lk">lk</dfn>)</td></tr>
+<tr><th id="223">223</th><td>{</td></tr>
+<tr><th id="224">224</th><td>	<b>return</b> <a class="ref" href="tempfile.h.html#get_tempfile_fd" title='get_tempfile_fd' data-ref="get_tempfile_fd">get_tempfile_fd</a>(&amp;<a class="local col6 ref" href="#416lk" title='lk' data-ref="416lk">lk</a>-&gt;<a class="ref" href="#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>);</td></tr>
+<tr><th id="225">225</th><td>}</td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td><em>static</em> <b>inline</b> <a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl def" id="get_lock_file_fp" title='get_lock_file_fp' data-ref="get_lock_file_fp">get_lock_file_fp</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col7 decl" id="417lk" title='lk' data-type='struct lock_file *' data-ref="417lk">lk</dfn>)</td></tr>
+<tr><th id="228">228</th><td>{</td></tr>
+<tr><th id="229">229</th><td>	<b>return</b> <a class="ref" href="tempfile.h.html#get_tempfile_fp" title='get_tempfile_fp' data-ref="get_tempfile_fp">get_tempfile_fp</a>(&amp;<a class="local col7 ref" href="#417lk" title='lk' data-ref="417lk">lk</a>-&gt;<a class="ref" href="#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>);</td></tr>
+<tr><th id="230">230</th><td>}</td></tr>
+<tr><th id="231">231</th><td></td></tr>
+<tr><th id="232">232</th><td><i>/*</i></td></tr>
+<tr><th id="233">233</th><td><i> * Return the path of the file that is locked by the specified</i></td></tr>
+<tr><th id="234">234</th><td><i> * lock_file object. The caller must free the memory.</i></td></tr>
+<tr><th id="235">235</th><td><i> */</i></td></tr>
+<tr><th id="236">236</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="get_locked_file_path" title='get_locked_file_path' data-ref="get_locked_file_path">get_locked_file_path</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col8 decl" id="418lk" title='lk' data-type='struct lock_file *' data-ref="418lk">lk</dfn>);</td></tr>
+<tr><th id="237">237</th><td></td></tr>
+<tr><th id="238">238</th><td><i>/*</i></td></tr>
+<tr><th id="239">239</th><td><i> * If the lockfile is still open, close it (and the file pointer if it</i></td></tr>
+<tr><th id="240">240</th><td><i> * has been opened using `fdopen_lock_file()`) without renaming the</i></td></tr>
+<tr><th id="241">241</th><td><i> * lockfile over the file being locked. Return 0 upon success. On</i></td></tr>
+<tr><th id="242">242</th><td><i> * failure to `close(2)`, return a negative value and roll back the</i></td></tr>
+<tr><th id="243">243</th><td><i> * lock file. Usually `commit_lock_file()`, `commit_lock_file_to()`,</i></td></tr>
+<tr><th id="244">244</th><td><i> * or `rollback_lock_file()` should eventually be called if</i></td></tr>
+<tr><th id="245">245</th><td><i> * `close_lock_file()` succeeds.</i></td></tr>
+<tr><th id="246">246</th><td><i> */</i></td></tr>
+<tr><th id="247">247</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="close_lock_file" title='close_lock_file' data-ref="close_lock_file">close_lock_file</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col9 decl" id="419lk" title='lk' data-type='struct lock_file *' data-ref="419lk">lk</dfn>)</td></tr>
+<tr><th id="248">248</th><td>{</td></tr>
+<tr><th id="249">249</th><td>	<b>return</b> <a class="ref" href="tempfile.h.html#close_tempfile" title='close_tempfile' data-ref="close_tempfile">close_tempfile</a>(&amp;<a class="local col9 ref" href="#419lk" title='lk' data-ref="419lk">lk</a>-&gt;<a class="ref" href="#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>);</td></tr>
+<tr><th id="250">250</th><td>}</td></tr>
+<tr><th id="251">251</th><td></td></tr>
+<tr><th id="252">252</th><td><i>/*</i></td></tr>
+<tr><th id="253">253</th><td><i> * Re-open a lockfile that has been closed using `close_lock_file()`</i></td></tr>
+<tr><th id="254">254</th><td><i> * but not yet committed or rolled back. This can be used to implement</i></td></tr>
+<tr><th id="255">255</th><td><i> * a sequence of operations like the following:</i></td></tr>
+<tr><th id="256">256</th><td><i> *</i></td></tr>
+<tr><th id="257">257</th><td><i> * * Lock file.</i></td></tr>
+<tr><th id="258">258</th><td><i> *</i></td></tr>
+<tr><th id="259">259</th><td><i> * * Write new contents to lockfile, then `close_lock_file()` to</i></td></tr>
+<tr><th id="260">260</th><td><i> *   cause the contents to be written to disk.</i></td></tr>
+<tr><th id="261">261</th><td><i> *</i></td></tr>
+<tr><th id="262">262</th><td><i> * * Pass the name of the lockfile to another program to allow it (and</i></td></tr>
+<tr><th id="263">263</th><td><i> *   nobody else) to inspect the contents you wrote, while still</i></td></tr>
+<tr><th id="264">264</th><td><i> *   holding the lock yourself.</i></td></tr>
+<tr><th id="265">265</th><td><i> *</i></td></tr>
+<tr><th id="266">266</th><td><i> * * `reopen_lock_file()` to reopen the lockfile. Make further updates</i></td></tr>
+<tr><th id="267">267</th><td><i> *   to the contents.</i></td></tr>
+<tr><th id="268">268</th><td><i> *</i></td></tr>
+<tr><th id="269">269</th><td><i> * * `commit_lock_file()` to make the final version permanent.</i></td></tr>
+<tr><th id="270">270</th><td><i> */</i></td></tr>
+<tr><th id="271">271</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="reopen_lock_file" title='reopen_lock_file' data-ref="reopen_lock_file">reopen_lock_file</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col0 decl" id="420lk" title='lk' data-type='struct lock_file *' data-ref="420lk">lk</dfn>)</td></tr>
+<tr><th id="272">272</th><td>{</td></tr>
+<tr><th id="273">273</th><td>	<b>return</b> <a class="ref" href="tempfile.h.html#reopen_tempfile" title='reopen_tempfile' data-ref="reopen_tempfile">reopen_tempfile</a>(&amp;<a class="local col0 ref" href="#420lk" title='lk' data-ref="420lk">lk</a>-&gt;<a class="ref" href="#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>);</td></tr>
+<tr><th id="274">274</th><td>}</td></tr>
+<tr><th id="275">275</th><td></td></tr>
+<tr><th id="276">276</th><td><i>/*</i></td></tr>
+<tr><th id="277">277</th><td><i> * Commit the change represented by `lk`: close the file descriptor</i></td></tr>
+<tr><th id="278">278</th><td><i> * and/or file pointer if they are still open and rename the lockfile</i></td></tr>
+<tr><th id="279">279</th><td><i> * to its final destination. Return 0 upon success. On failure, roll</i></td></tr>
+<tr><th id="280">280</th><td><i> * back the lock file and return -1, with `errno` set to the value</i></td></tr>
+<tr><th id="281">281</th><td><i> * from the failing call to `close(2)` or `rename(2)`. It is a bug to</i></td></tr>
+<tr><th id="282">282</th><td><i> * call `commit_lock_file()` for a `lock_file` object that is not</i></td></tr>
+<tr><th id="283">283</th><td><i> * currently locked.</i></td></tr>
+<tr><th id="284">284</th><td><i> */</i></td></tr>
+<tr><th id="285">285</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="commit_lock_file" title='commit_lock_file' data-ref="commit_lock_file">commit_lock_file</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col1 decl" id="421lk" title='lk' data-type='struct lock_file *' data-ref="421lk">lk</dfn>);</td></tr>
+<tr><th id="286">286</th><td></td></tr>
+<tr><th id="287">287</th><td><i>/*</i></td></tr>
+<tr><th id="288">288</th><td><i> * Like `commit_lock_file()`, but rename the lockfile to the provided</i></td></tr>
+<tr><th id="289">289</th><td><i> * `path`. `path` must be on the same filesystem as the lock file.</i></td></tr>
+<tr><th id="290">290</th><td><i> */</i></td></tr>
+<tr><th id="291">291</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="commit_lock_file_to" title='commit_lock_file_to' data-ref="commit_lock_file_to">commit_lock_file_to</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col2 decl" id="422lk" title='lk' data-type='struct lock_file *' data-ref="422lk">lk</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="423path" title='path' data-type='const char *' data-ref="423path">path</dfn>)</td></tr>
+<tr><th id="292">292</th><td>{</td></tr>
+<tr><th id="293">293</th><td>	<b>return</b> <a class="ref" href="tempfile.h.html#rename_tempfile" title='rename_tempfile' data-ref="rename_tempfile">rename_tempfile</a>(&amp;<a class="local col2 ref" href="#422lk" title='lk' data-ref="422lk">lk</a>-&gt;<a class="ref" href="#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>, <a class="local col3 ref" href="#423path" title='path' data-ref="423path">path</a>);</td></tr>
+<tr><th id="294">294</th><td>}</td></tr>
+<tr><th id="295">295</th><td></td></tr>
+<tr><th id="296">296</th><td><i>/*</i></td></tr>
+<tr><th id="297">297</th><td><i> * Roll back `lk`: close the file descriptor and/or file pointer and</i></td></tr>
+<tr><th id="298">298</th><td><i> * remove the lockfile. It is a NOOP to call `rollback_lock_file()`</i></td></tr>
+<tr><th id="299">299</th><td><i> * for a `lock_file` object that has already been committed or rolled</i></td></tr>
+<tr><th id="300">300</th><td><i> * back.</i></td></tr>
+<tr><th id="301">301</th><td><i> */</i></td></tr>
+<tr><th id="302">302</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="rollback_lock_file" title='rollback_lock_file' data-ref="rollback_lock_file">rollback_lock_file</dfn>(<b>struct</b> <a class="type" href="#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col4 decl" id="424lk" title='lk' data-type='struct lock_file *' data-ref="424lk">lk</dfn>)</td></tr>
+<tr><th id="303">303</th><td>{</td></tr>
+<tr><th id="304">304</th><td>	<a class="ref" href="tempfile.h.html#delete_tempfile" title='delete_tempfile' data-ref="delete_tempfile">delete_tempfile</a>(&amp;<a class="local col4 ref" href="#424lk" title='lk' data-ref="424lk">lk</a>-&gt;<a class="ref" href="#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>);</td></tr>
+<tr><th id="305">305</th><td>}</td></tr>
+<tr><th id="306">306</th><td></td></tr>
+<tr><th id="307">307</th><td><u>#<span data-ppcond="1">endif</span> /* LOCKFILE_H */</u></td></tr>
+<tr><th id="308">308</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='apply.c.html'>codebrowser/apply.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

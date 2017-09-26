@@ -1,0 +1,9 @@
+<dec f='codebrowser/remote.h' l='288' type='struct push_cas *'/>
+<offset>64</offset>
+<use f='codebrowser/remote.c' l='2264' u='r' c='clear_cas_option'/>
+<use f='codebrowser/remote.c' l='2265' u='r' c='clear_cas_option'/>
+<use f='codebrowser/remote.c' l='2274' u='w' c='add_cas_entry'/>
+<use f='codebrowser/remote.c' l='2274' u='r' c='add_cas_entry'/>
+<use f='codebrowser/remote.c' l='2274' u='r' c='add_cas_entry'/>
+<use f='codebrowser/remote.c' l='2275' u='r' c='add_cas_entry'/>
+<use f='codebrowser/remote.c' l='2347' u='r' c='apply_cas'/>

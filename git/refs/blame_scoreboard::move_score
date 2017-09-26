@@ -1,0 +1,13 @@
+<dec f='codebrowser/blame.h' l='132' type='unsigned int'/>
+<use f='codebrowser/blame.c' l='1176' u='r' c='find_move_in_parent'/>
+<use f='codebrowser/blame.c' l='1185' u='r' c='find_move_in_parent'/>
+<use f='codebrowser/blame.c' l='1476' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1495' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1497' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1745' u='w' c='init_scoreboard'/>
+<offset>928</offset>
+<doc f='codebrowser/blame.h' l='128'>/*
+	 * blame for a blame_entry with score lower than these thresholds
+	 * is not passed to the parent using move/copy logic.
+	 */</doc>
+<use f='codebrowser/builtin/blame.c' l='912' u='w' c='cmd_blame'/>

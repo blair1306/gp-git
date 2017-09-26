@@ -1,0 +1,10 @@
+<dec f='codebrowser/wt-status.h' l='53' type='3'/>
+<use f='codebrowser/builtin/commit.c' l='153' u='r' c='opt_parse_porcelain'/>
+<use f='codebrowser/builtin/commit.c' l='155' u='r' c='opt_parse_porcelain'/>
+<use f='codebrowser/builtin/commit.c' l='1115' u='r' c='finalize_deferred_config'/>
+<use f='codebrowser/builtin/commit.c' l='1122' u='r' c='finalize_deferred_config'/>
+<use f='codebrowser/builtin/commit.c' l='1624' u='r' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1624' u='r' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1624' u='r' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1624' u='r' c='cmd_commit'/>
+<use f='codebrowser/wt-status.c' l='2240' c='wt_status_print'/>

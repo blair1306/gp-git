@@ -1,0 +1,9 @@
+<dec f='include/utime.h' l='45' type='int utime(const char * __file, const struct utimbuf * __file_times)'/>
+<doc f='include/utime.h' l='43'>/* Set the access and modification times of FILE to those given in
+   *FILE_TIMES.  If FILE_TIMES is NULL, set them to the current time.  */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='858' u='c' c='write_pack_file'/>
+<use f='codebrowser/copy.c' l='26' u='c' c='copy_times'/>
+<use f='codebrowser/rerere.c' l='686' u='c' c='merge'/>
+<use f='codebrowser/sha1_file.c' l='656' u='c' c='freshen_file'/>
+<use f='codebrowser/sha1_file.c' l='3366' u='c' c='write_loose_object'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='107' u='c' c='cmd_main'/>

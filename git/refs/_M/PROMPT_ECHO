@@ -1,0 +1,4 @@
+<dec f='codebrowser/prompt.h' l='5'/>
+<use f='codebrowser/builtin/am.c' l='1738' u='c'/>
+<use f='codebrowser/credential.c' l='138' u='c'/>
+<use f='codebrowser/prompt.c' l='65' u='c'/>

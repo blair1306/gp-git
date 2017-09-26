@@ -1,0 +1,3 @@
+<dec f='codebrowser/config.h' l='187' type='int repo_config_get_pathname(struct repository * repo, const char * key, const char ** dest)'/>
+<def f='codebrowser/config.c' l='1995' ll='2004' type='int repo_config_get_pathname(struct repository * repo, const char * key, const char ** dest)'/>
+<use f='codebrowser/config.c' l='2064' u='c' c='git_config_get_pathname'/>

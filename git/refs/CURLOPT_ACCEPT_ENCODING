@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='1198' macro='1' type='10102'/>
+<use f='codebrowser/http.c' l='1703' macro='1' u='r'/>
+<use f='codebrowser/remote-curl.c' l='521' macro='1' u='r'/>
+<use f='codebrowser/remote-curl.c' l='598' macro='1' u='r'/>

@@ -1,0 +1,36 @@
+<dec f='codebrowser/commit.h' l='151' type='enum cmit_fmt'/>
+<offset>0</offset>
+<doc f='codebrowser/commit.h' l='148'>/*
+	 * Callers should tweak these to change the behavior of pp_* functions.
+	 */</doc>
+<use f='codebrowser/builtin/log.c' l='472' u='w' c='show_tagger'/>
+<use f='codebrowser/builtin/log.c' l='1026' u='w' c='make_cover_letter'/>
+<use f='codebrowser/builtin/merge.c' l='366' u='w' c='squash_message'/>
+<use f='codebrowser/builtin/rev-list.c' l='124' u='w' c='show_commit'/>
+<use f='codebrowser/builtin/shortlog.c' l='150' u='w' c='shortlog_add_commit'/>
+<use f='codebrowser/log-tree.c' l='679' u='w' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='693' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='695' u='r' c='show_log'/>
+<use f='codebrowser/pretty.c' l='435' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='450' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='490' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='494' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='542' u='r' c='add_merge_info'/>
+<use f='codebrowser/pretty.c' l='542' u='r' c='add_merge_info'/>
+<use f='codebrowser/pretty.c' l='1548' u='r' c='pp_header'/>
+<use f='codebrowser/pretty.c' l='1577' u='r' c='pp_header'/>
+<use f='codebrowser/pretty.c' l='1577' u='r' c='pp_header'/>
+<use f='codebrowser/pretty.c' l='1632' u='r' c='pp_title_line'/>
+<use f='codebrowser/pretty.c' l='1742' u='r' c='pp_remainder'/>
+<use f='codebrowser/pretty.c' l='1754' u='r' c='pp_remainder'/>
+<use f='codebrowser/pretty.c' l='1775' u='r' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1783' u='r' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1783' u='r' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1790' u='r' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1810' u='r' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1818' u='r' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1818' u='r' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1822' u='r' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1827' u='r' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1835' u='r' c='pretty_print_commit'/>
+<use f='codebrowser/pretty.c' l='1845' u='w' c='pp_commit_easy'/>

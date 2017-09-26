@@ -1,0 +1,13 @@
+<dec f='codebrowser/merge-recursive.h' l='18' type='long'/>
+<offset>384</offset>
+<use f='codebrowser/merge-recursive.c' l='889' u='r' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='2200' u='w' c='parse_merge_opt'/>
+<use f='codebrowser/merge-recursive.c' l='2200' macro='1' u='r'/>
+<use f='codebrowser/merge-recursive.c' l='2202' u='w' c='parse_merge_opt'/>
+<use f='codebrowser/merge-recursive.c' l='2202' macro='1' u='r'/>
+<use f='codebrowser/merge-recursive.c' l='2208' macro='1' u='w'/>
+<use f='codebrowser/merge-recursive.c' l='2209' u='w' c='parse_merge_opt'/>
+<use f='codebrowser/merge-recursive.c' l='2210' u='w' c='parse_merge_opt'/>
+<use f='codebrowser/merge-recursive.c' l='2213' macro='1' u='w'/>
+<use f='codebrowser/merge-recursive.c' l='2215' macro='1' u='w'/>
+<use f='codebrowser/merge-recursive.c' l='2217' macro='1' u='w'/>

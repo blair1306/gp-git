@@ -1,0 +1,13 @@
+<dec f='codebrowser/graph.h' l='18' type='void graph_setup_line_prefix(struct diff_options * diffopt)'/>
+<doc f='codebrowser/graph.h' l='8'>/*
+ * Called to setup global display of line_prefix diff option.
+ *
+ * Passed a diff_options structure which indicates the line_prefix and the
+ * file to output the prefix to. This is sort of a hack used so that the
+ * line_prefix will be honored by all flows which also honor &quot;--graph&quot;
+ * regardless of whether a graph has actually been setup. The normal graph
+ * flow will honor the exact diff_options passed, but a NULL graph will cause
+ * display of a line_prefix to stdout.
+ */</doc>
+<use f='codebrowser/diff.c' l='4045' u='c' c='diff_opt_parse'/>
+<def f='codebrowser/graph.c' l='249' ll='256' type='void graph_setup_line_prefix(struct diff_options * diffopt)'/>

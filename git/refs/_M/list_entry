@@ -1,0 +1,16 @@
+<dec f='codebrowser/list.h' l='118'/>
+<use f='codebrowser/http-walker.c' l='129' u='c'/>
+<use f='codebrowser/http-walker.c' l='482' u='c'/>
+<doc f='codebrowser/list.h' l='117'>/* Get typed element from list at a given position. */</doc>
+<use f='codebrowser/sha1_file.c' l='2336' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2351' u='c'/>
+<use f='codebrowser/trailer.c' l='172' u='c'/>
+<use f='codebrowser/trailer.c' l='217' u='c'/>
+<use f='codebrowser/trailer.c' l='342' u='c'/>
+<use f='codebrowser/trailer.c' l='347' u='c'/>
+<use f='codebrowser/trailer.c' l='365' u='c'/>
+<use f='codebrowser/trailer.c' l='434' u='c'/>
+<use f='codebrowser/trailer.c' l='638' u='c'/>
+<use f='codebrowser/trailer.c' l='688' u='c'/>
+<use f='codebrowser/trailer.c' l='853' u='c'/>
+<use f='codebrowser/trailer.c' l='936' u='c'/>

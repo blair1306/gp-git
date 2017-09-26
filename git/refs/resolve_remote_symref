@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='158' type='int resolve_remote_symref(struct ref * ref, struct ref * list)'/>
+<use f='codebrowser/remote-curl.c' l='223' u='c' c='parse_info_refs'/>
+<def f='codebrowser/remote.c' l='1924' ll='1934' type='int resolve_remote_symref(struct ref * ref, struct ref * list)'/>
+<use f='codebrowser/transport-helper.c' l='1082' u='c' c='get_refs_list'/>

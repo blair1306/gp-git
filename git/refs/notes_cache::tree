@@ -1,0 +1,11 @@
+<dec f='codebrowser/notes-cache.h' l='7' type='struct notes_tree'/>
+<offset>0</offset>
+<use f='codebrowser/notes-cache.c' l='43' u='a' c='notes_cache_init'/>
+<use f='codebrowser/notes-cache.c' l='51' u='m' c='notes_cache_write'/>
+<use f='codebrowser/notes-cache.c' l='51' u='m' c='notes_cache_write'/>
+<use f='codebrowser/notes-cache.c' l='52' u='m' c='notes_cache_write'/>
+<use f='codebrowser/notes-cache.c' l='54' u='m' c='notes_cache_write'/>
+<use f='codebrowser/notes-cache.c' l='57' u='a' c='notes_cache_write'/>
+<use f='codebrowser/notes-cache.c' l='62' u='m' c='notes_cache_write'/>
+<use f='codebrowser/notes-cache.c' l='77' u='a' c='notes_cache_get'/>
+<use f='codebrowser/notes-cache.c' l='93' u='a' c='notes_cache_put'/>

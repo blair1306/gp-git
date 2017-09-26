@@ -1,0 +1,12 @@
+<dec f='codebrowser/pkt-line.h' l='64' type='int packet_read(int fd, char ** src_buffer, size_t * src_len, char * buffer, unsigned int size, int options)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1619' u='c' c='read_head_info'/>
+<use f='codebrowser/connect.c' l='138' u='c' c='get_remote_heads'/>
+<use f='codebrowser/daemon.c' l='706' u='c' c='execute'/>
+<def f='codebrowser/pkt-line.c' l='277' ll='307' type='int packet_read(int fd, char ** src_buf, size_t * src_len, char * buffer, unsigned int size, int options)'/>
+<use f='codebrowser/pkt-line.c' l='313' u='c' c='packet_read_line_generic'/>
+<use f='codebrowser/pkt-line.c' l='328' u='c' c='packet_read_line_gently'/>
+<use f='codebrowser/pkt-line.c' l='352' u='c' c='read_packetized_to_strbuf'/>
+<use f='codebrowser/remote-curl.c' l='427' u='c' c='rpc_out'/>
+<use f='codebrowser/remote-curl.c' l='566' u='c' c='post_rpc'/>
+<use f='codebrowser/remote-curl.c' l='733' u='c' c='rpc_service'/>
+<use f='codebrowser/sideband.c' l='37' u='c' c='recv_sideband'/>

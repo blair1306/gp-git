@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs/ref-cache.h' l='235' type='int add_ref_entry(struct ref_dir * dir, struct ref_entry * ref)'/>
+<doc f='codebrowser/refs/ref-cache.h' l='230'>/*
+ * Add a ref_entry to the ref_dir (unsorted), recursing into
+ * subdirectories as necessary.  dir must represent the top-level
+ * directory.  Return 0 on success.
+ */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='259' u='c' c='read_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='354' u='c' c='add_packed_ref'/>
+<def f='codebrowser/refs/ref-cache.c' l='253' ll='260' type='int add_ref_entry(struct ref_dir * dir, struct ref_entry * ref)'/>

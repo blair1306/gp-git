@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1602' type='unsigned int'/>
+<offset>611</offset>
+<use f='codebrowser/fast-import.c' l='906' u='w' c='start_packfile'/>
+<use f='codebrowser/sha1_file.c' l='993' u='r' c='close_all_packs'/>
+<use f='codebrowser/sha1_file.c' l='1279' u='r' c='use_pack'/>

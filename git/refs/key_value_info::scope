@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='222' type='enum config_scope'/>
+<offset>128</offset>
+<use f='codebrowser/config.c' l='1720' u='w' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='2937' u='r' c='current_config_scope'/>

@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>tempfile.c source code [codebrowser/tempfile.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/tempfile.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='tempfile.c.html'>tempfile.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * State diagram and cleanup</i></td></tr>
+<tr><th id="3">3</th><td><i> * -------------------------</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * If the program exits while a temporary file is active, we want to</i></td></tr>
+<tr><th id="6">6</th><td><i> * make sure that we remove it. This is done by remembering the active</i></td></tr>
+<tr><th id="7">7</th><td><i> * temporary files in a linked list, `tempfile_list`. An `atexit(3)`</i></td></tr>
+<tr><th id="8">8</th><td><i> * handler and a signal handler are registered, to clean up any active</i></td></tr>
+<tr><th id="9">9</th><td><i> * temporary files.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Because the signal handler can run at any time, `tempfile_list` and</i></td></tr>
+<tr><th id="12">12</th><td><i> * the `tempfile` objects that comprise it must be kept in</i></td></tr>
+<tr><th id="13">13</th><td><i> * self-consistent states at all times.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * The possible states of a `tempfile` object are as follows:</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * - Uninitialized. In this state the object's `on_list` field must be</i></td></tr>
+<tr><th id="18">18</th><td><i> *   zero but the rest of its contents need not be initialized. As</i></td></tr>
+<tr><th id="19">19</th><td><i> *   soon as the object is used in any way, it is irrevocably</i></td></tr>
+<tr><th id="20">20</th><td><i> *   registered in `tempfile_list`, and `on_list` is set.</i></td></tr>
+<tr><th id="21">21</th><td><i> *</i></td></tr>
+<tr><th id="22">22</th><td><i> * - Active, file open (after `create_tempfile()` or</i></td></tr>
+<tr><th id="23">23</th><td><i> *   `reopen_tempfile()`). In this state:</i></td></tr>
+<tr><th id="24">24</th><td><i> *</i></td></tr>
+<tr><th id="25">25</th><td><i> *   - the temporary file exists</i></td></tr>
+<tr><th id="26">26</th><td><i> *   - `active` is set</i></td></tr>
+<tr><th id="27">27</th><td><i> *   - `filename` holds the filename of the temporary file</i></td></tr>
+<tr><th id="28">28</th><td><i> *   - `fd` holds a file descriptor open for writing to it</i></td></tr>
+<tr><th id="29">29</th><td><i> *   - `fp` holds a pointer to an open `FILE` object if and only if</i></td></tr>
+<tr><th id="30">30</th><td><i> *     `fdopen_tempfile()` has been called on the object</i></td></tr>
+<tr><th id="31">31</th><td><i> *   - `owner` holds the PID of the process that created the file</i></td></tr>
+<tr><th id="32">32</th><td><i> *</i></td></tr>
+<tr><th id="33">33</th><td><i> * - Active, file closed (after successful `close_tempfile()`). Same</i></td></tr>
+<tr><th id="34">34</th><td><i> *   as the previous state, except that the temporary file is closed,</i></td></tr>
+<tr><th id="35">35</th><td><i> *   `fd` is -1, and `fp` is `NULL`.</i></td></tr>
+<tr><th id="36">36</th><td><i> *</i></td></tr>
+<tr><th id="37">37</th><td><i> * - Inactive (after `delete_tempfile()`, `rename_tempfile()`, a</i></td></tr>
+<tr><th id="38">38</th><td><i> *   failed attempt to create a temporary file, or a failed</i></td></tr>
+<tr><th id="39">39</th><td><i> *   `close_tempfile()`). In this state:</i></td></tr>
+<tr><th id="40">40</th><td><i> *</i></td></tr>
+<tr><th id="41">41</th><td><i> *   - `active` is unset</i></td></tr>
+<tr><th id="42">42</th><td><i> *   - `filename` is empty (usually, though there are transitory</i></td></tr>
+<tr><th id="43">43</th><td><i> *     states in which this condition doesn't hold). Client code should</i></td></tr>
+<tr><th id="44">44</th><td><i> *     *not* rely on the filename being empty in this state.</i></td></tr>
+<tr><th id="45">45</th><td><i> *   - `fd` is -1 and `fp` is `NULL`</i></td></tr>
+<tr><th id="46">46</th><td><i> *   - the object is left registered in the `tempfile_list`, and</i></td></tr>
+<tr><th id="47">47</th><td><i> *     `on_list` is set.</i></td></tr>
+<tr><th id="48">48</th><td><i> *</i></td></tr>
+<tr><th id="49">49</th><td><i> * A temporary file is owned by the process that created it. The</i></td></tr>
+<tr><th id="50">50</th><td><i> * `tempfile` has an `owner` field that records the owner's PID. This</i></td></tr>
+<tr><th id="51">51</th><td><i> * field is used to prevent a forked process from deleting a temporary</i></td></tr>
+<tr><th id="52">52</th><td><i> * file created by its parent.</i></td></tr>
+<tr><th id="53">53</th><td><i> */</i></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="56">56</th><td><u>#include <a href="tempfile.h.html">"tempfile.h"</a></u></td></tr>
+<tr><th id="57">57</th><td><u>#include <a href="sigchain.h.html">"sigchain.h"</a></u></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><em>static</em> <b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<em>volatile</em> <dfn class="tu decl def" id="tempfile_list" title='tempfile_list' data-type='struct tempfile *volatile' data-ref="tempfile_list">tempfile_list</dfn>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="remove_tempfiles" title='remove_tempfiles' data-type='void remove_tempfiles(int skip_fclose)' data-ref="remove_tempfiles">remove_tempfiles</dfn>(<em>int</em> <dfn class="local col1 decl" id="1skip_fclose" title='skip_fclose' data-type='int' data-ref="1skip_fclose">skip_fclose</dfn>)</td></tr>
+<tr><th id="62">62</th><td>{</td></tr>
+<tr><th id="63">63</th><td>	<a class="typedef" href="../include/unistd.h.html#pid_t" title='pid_t' data-type='__pid_t' data-ref="pid_t">pid_t</a> <dfn class="local col2 decl" id="2me" title='me' data-type='pid_t' data-ref="2me">me</dfn> = <a class="ref" href="../include/unistd.h.html#getpid" title='getpid' data-ref="getpid">getpid</a>();</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td>	<b>while</b> (<a class="tu ref" href="#tempfile_list" title='tempfile_list' data-use='r' data-ref="tempfile_list">tempfile_list</a>) {</td></tr>
+<tr><th id="66">66</th><td>		<b>if</b> (<a class="tu ref" href="#tempfile_list" title='tempfile_list' data-use='r' data-ref="tempfile_list">tempfile_list</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::owner" title='tempfile::owner' data-ref="tempfile::owner">owner</a> == <a class="local col2 ref" href="#2me" title='me' data-ref="2me">me</a>) {</td></tr>
+<tr><th id="67">67</th><td>			<i>/* fclose() is not safe to call in a signal handler */</i></td></tr>
+<tr><th id="68">68</th><td>			<b>if</b> (<a class="local col1 ref" href="#1skip_fclose" title='skip_fclose' data-ref="1skip_fclose">skip_fclose</a>)</td></tr>
+<tr><th id="69">69</th><td>				<a class="tu ref" href="#tempfile_list" title='tempfile_list' data-use='r' data-ref="tempfile_list">tempfile_list</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fp" title='tempfile::fp' data-ref="tempfile::fp">fp</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="70">70</th><td>			<a class="ref" href="#delete_tempfile" title='delete_tempfile' data-ref="delete_tempfile">delete_tempfile</a>(<a class="tu ref" href="#tempfile_list" title='tempfile_list' data-use='r' data-ref="tempfile_list">tempfile_list</a>);</td></tr>
+<tr><th id="71">71</th><td>		}</td></tr>
+<tr><th id="72">72</th><td>		<a class="tu ref" href="#tempfile_list" title='tempfile_list' data-use='w' data-ref="tempfile_list">tempfile_list</a> = <a class="tu ref" href="#tempfile_list" title='tempfile_list' data-use='r' data-ref="tempfile_list">tempfile_list</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::next" title='tempfile::next' data-ref="tempfile::next">next</a>;</td></tr>
+<tr><th id="73">73</th><td>	}</td></tr>
+<tr><th id="74">74</th><td>}</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="remove_tempfiles_on_exit" title='remove_tempfiles_on_exit' data-type='void remove_tempfiles_on_exit()' data-ref="remove_tempfiles_on_exit">remove_tempfiles_on_exit</dfn>(<em>void</em>)</td></tr>
+<tr><th id="77">77</th><td>{</td></tr>
+<tr><th id="78">78</th><td>	<a class="tu ref" href="#remove_tempfiles" title='remove_tempfiles' data-use='c' data-ref="remove_tempfiles">remove_tempfiles</a>(<var>0</var>);</td></tr>
+<tr><th id="79">79</th><td>}</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="remove_tempfiles_on_signal" title='remove_tempfiles_on_signal' data-type='void remove_tempfiles_on_signal(int signo)' data-ref="remove_tempfiles_on_signal">remove_tempfiles_on_signal</dfn>(<em>int</em> <dfn class="local col3 decl" id="3signo" title='signo' data-type='int' data-ref="3signo">signo</dfn>)</td></tr>
+<tr><th id="82">82</th><td>{</td></tr>
+<tr><th id="83">83</th><td>	<a class="tu ref" href="#remove_tempfiles" title='remove_tempfiles' data-use='c' data-ref="remove_tempfiles">remove_tempfiles</a>(<var>1</var>);</td></tr>
+<tr><th id="84">84</th><td>	<a class="ref" href="sigchain.h.html#sigchain_pop" title='sigchain_pop' data-ref="sigchain_pop">sigchain_pop</a>(<a class="local col3 ref" href="#3signo" title='signo' data-ref="3signo">signo</a>);</td></tr>
+<tr><th id="85">85</th><td>	<a class="ref" href="../include/signal.h.html#raise" title='raise' data-ref="raise">raise</a>(<a class="local col3 ref" href="#3signo" title='signo' data-ref="3signo">signo</a>);</td></tr>
+<tr><th id="86">86</th><td>}</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><i  data-doc="prepare_tempfile_object">/*</i></td></tr>
+<tr><th id="89">89</th><td><i  data-doc="prepare_tempfile_object"> * Initialize *tempfile if necessary and add it to tempfile_list.</i></td></tr>
+<tr><th id="90">90</th><td><i  data-doc="prepare_tempfile_object"> */</i></td></tr>
+<tr><th id="91">91</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="prepare_tempfile_object" title='prepare_tempfile_object' data-type='void prepare_tempfile_object(struct tempfile * tempfile)' data-ref="prepare_tempfile_object">prepare_tempfile_object</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col4 decl" id="4tempfile" title='tempfile' data-type='struct tempfile *' data-ref="4tempfile">tempfile</dfn>)</td></tr>
+<tr><th id="92">92</th><td>{</td></tr>
+<tr><th id="93">93</th><td>	<b>if</b> (!<a class="tu ref" href="#tempfile_list" title='tempfile_list' data-use='r' data-ref="tempfile_list">tempfile_list</a>) {</td></tr>
+<tr><th id="94">94</th><td>		<i>/* One-time initialization */</i></td></tr>
+<tr><th id="95">95</th><td>		<a class="ref" href="sigchain.h.html#sigchain_push_common" title='sigchain_push_common' data-ref="sigchain_push_common">sigchain_push_common</a>(<a class="tu ref" href="#remove_tempfiles_on_signal" title='remove_tempfiles_on_signal' data-use='r' data-ref="remove_tempfiles_on_signal">remove_tempfiles_on_signal</a>);</td></tr>
+<tr><th id="96">96</th><td>		<a class="ref" href="../include/stdlib.h.html#atexit" title='atexit' data-ref="atexit">atexit</a>(<a class="tu ref" href="#remove_tempfiles_on_exit" title='remove_tempfiles_on_exit' data-use='r' data-ref="remove_tempfiles_on_exit">remove_tempfiles_on_exit</a>);</td></tr>
+<tr><th id="97">97</th><td>	}</td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td>	<b>if</b> (<a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a>)</td></tr>
+<tr><th id="100">100</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: prepare_tempfile_object called for active object"</q>);</td></tr>
+<tr><th id="101">101</th><td>	<b>if</b> (!<a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::on_list" title='tempfile::on_list' data-ref="tempfile::on_list">on_list</a>) {</td></tr>
+<tr><th id="102">102</th><td>		<i>/* Initialize *tempfile and add it to tempfile_list: */</i></td></tr>
+<tr><th id="103">103</th><td>		<a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> = -<var>1</var>;</td></tr>
+<tr><th id="104">104</th><td>		<a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fp" title='tempfile::fp' data-ref="tempfile::fp">fp</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="105">105</th><td>		<a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a> = <var>0</var>;</td></tr>
+<tr><th id="106">106</th><td>		<a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::owner" title='tempfile::owner' data-ref="tempfile::owner">owner</a> = <var>0</var>;</td></tr>
+<tr><th id="107">107</th><td>		<a class="ref" href="strbuf.h.html#strbuf_init" title='strbuf_init' data-ref="strbuf_init">strbuf_init</a>(&amp;<a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>, <var>0</var>);</td></tr>
+<tr><th id="108">108</th><td>		<a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::next" title='tempfile::next' data-ref="tempfile::next">next</a> = <a class="tu ref" href="#tempfile_list" title='tempfile_list' data-use='r' data-ref="tempfile_list">tempfile_list</a>;</td></tr>
+<tr><th id="109">109</th><td>		<a class="tu ref" href="#tempfile_list" title='tempfile_list' data-use='w' data-ref="tempfile_list">tempfile_list</a> = <a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>;</td></tr>
+<tr><th id="110">110</th><td>		<a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::on_list" title='tempfile::on_list' data-ref="tempfile::on_list">on_list</a> = <var>1</var>;</td></tr>
+<tr><th id="111">111</th><td>	} <b>else</b> <b>if</b> (<a class="local col4 ref" href="#4tempfile" title='tempfile' data-ref="4tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>) {</td></tr>
+<tr><th id="112">112</th><td>		<i>/* This shouldn't happen, but better safe than sorry. */</i></td></tr>
+<tr><th id="113">113</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: prepare_tempfile_object called for improperly-reset object"</q>);</td></tr>
+<tr><th id="114">114</th><td>	}</td></tr>
+<tr><th id="115">115</th><td>}</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i>/* Make sure errno contains a meaningful value on error */</i></td></tr>
+<tr><th id="118">118</th><td><em>int</em> <dfn class="decl def" id="create_tempfile" title='create_tempfile' data-ref="create_tempfile">create_tempfile</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col5 decl" id="5tempfile" title='tempfile' data-type='struct tempfile *' data-ref="5tempfile">tempfile</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="6path" title='path' data-type='const char *' data-ref="6path">path</dfn>)</td></tr>
+<tr><th id="119">119</th><td>{</td></tr>
+<tr><th id="120">120</th><td>	<a class="tu ref" href="#prepare_tempfile_object" title='prepare_tempfile_object' data-use='c' data-ref="prepare_tempfile_object">prepare_tempfile_object</a>(<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>);</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td>	<a class="ref" href="strbuf.h.html#strbuf_add_absolute_path" title='strbuf_add_absolute_path' data-ref="strbuf_add_absolute_path">strbuf_add_absolute_path</a>(&amp;<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>, <a class="local col6 ref" href="#6path" title='path' data-ref="6path">path</a>);</td></tr>
+<tr><th id="123">123</th><td>	<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> = <a class="ref" href="../include/fcntl.h.html#159" title='open' data-ref="open64">open</a>(<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>,</td></tr>
+<tr><th id="124">124</th><td>			    <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#45" title="02" data-ref="_M/O_RDWR">O_RDWR</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#47" title="0100" data-ref="_M/O_CREAT">O_CREAT</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#50" title="0200" data-ref="_M/O_EXCL">O_EXCL</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#144" title="02000000" data-ref="_M/O_CLOEXEC">O_CLOEXEC</a>, <var>0666</var>);</td></tr>
+<tr><th id="125">125</th><td>	<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#144" title="02000000" data-ref="_M/O_CLOEXEC">O_CLOEXEC</a> &amp;&amp; <a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> &lt; <var>0</var> &amp;&amp; <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#25" title="22" data-ref="_M/EINVAL">EINVAL</a>)</td></tr>
+<tr><th id="126">126</th><td>		<i>/* Try again w/o O_CLOEXEC: the kernel might not support it */</i></td></tr>
+<tr><th id="127">127</th><td>		<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> = <a class="ref" href="../include/fcntl.h.html#159" title='open' data-ref="open64">open</a>(<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>,</td></tr>
+<tr><th id="128">128</th><td>				    <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#45" title="02" data-ref="_M/O_RDWR">O_RDWR</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#47" title="0100" data-ref="_M/O_CREAT">O_CREAT</a> | <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#50" title="0200" data-ref="_M/O_EXCL">O_EXCL</a>, <var>0666</var>);</td></tr>
+<tr><th id="129">129</th><td>	<b>if</b> (<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> &lt; <var>0</var>) {</td></tr>
+<tr><th id="130">130</th><td>		<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(&amp;tempfile-&gt;filename, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>);</td></tr>
+<tr><th id="131">131</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="132">132</th><td>	}</td></tr>
+<tr><th id="133">133</th><td>	<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::owner" title='tempfile::owner' data-ref="tempfile::owner">owner</a> = <a class="ref" href="../include/unistd.h.html#getpid" title='getpid' data-ref="getpid">getpid</a>();</td></tr>
+<tr><th id="134">134</th><td>	<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a> = <var>1</var>;</td></tr>
+<tr><th id="135">135</th><td>	<b>if</b> (<a class="ref" href="cache.h.html#adjust_shared_perm" title='adjust_shared_perm' data-ref="adjust_shared_perm">adjust_shared_perm</a>(<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>)) {</td></tr>
+<tr><th id="136">136</th><td>		<em>int</em> <dfn class="local col7 decl" id="7save_errno" title='save_errno' data-type='int' data-ref="7save_errno">save_errno</dfn> = <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>;</td></tr>
+<tr><th id="137">137</th><td>		<a class="macro" href="git-compat-util.h.html#446" title="(error(&quot;cannot fix permission bits on %s&quot;, tempfile-&gt;filename.buf), const_error())" data-ref="_M/error">error</a>(<q>"cannot fix permission bits on %s"</q>, <a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="138">138</th><td>		<a class="ref" href="#delete_tempfile" title='delete_tempfile' data-ref="delete_tempfile">delete_tempfile</a>(<a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>);</td></tr>
+<tr><th id="139">139</th><td>		<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="local col7 ref" href="#7save_errno" title='save_errno' data-ref="7save_errno">save_errno</a>;</td></tr>
+<tr><th id="140">140</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="141">141</th><td>	}</td></tr>
+<tr><th id="142">142</th><td>	<b>return</b> <a class="local col5 ref" href="#5tempfile" title='tempfile' data-ref="5tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a>;</td></tr>
+<tr><th id="143">143</th><td>}</td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><em>void</em> <dfn class="decl def" id="register_tempfile" title='register_tempfile' data-ref="register_tempfile">register_tempfile</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col8 decl" id="8tempfile" title='tempfile' data-type='struct tempfile *' data-ref="8tempfile">tempfile</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="9path" title='path' data-type='const char *' data-ref="9path">path</dfn>)</td></tr>
+<tr><th id="146">146</th><td>{</td></tr>
+<tr><th id="147">147</th><td>	<a class="tu ref" href="#prepare_tempfile_object" title='prepare_tempfile_object' data-use='c' data-ref="prepare_tempfile_object">prepare_tempfile_object</a>(<a class="local col8 ref" href="#8tempfile" title='tempfile' data-ref="8tempfile">tempfile</a>);</td></tr>
+<tr><th id="148">148</th><td>	<a class="ref" href="strbuf.h.html#strbuf_add_absolute_path" title='strbuf_add_absolute_path' data-ref="strbuf_add_absolute_path">strbuf_add_absolute_path</a>(&amp;<a class="local col8 ref" href="#8tempfile" title='tempfile' data-ref="8tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>, <a class="local col9 ref" href="#9path" title='path' data-ref="9path">path</a>);</td></tr>
+<tr><th id="149">149</th><td>	<a class="local col8 ref" href="#8tempfile" title='tempfile' data-ref="8tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::owner" title='tempfile::owner' data-ref="tempfile::owner">owner</a> = <a class="ref" href="../include/unistd.h.html#getpid" title='getpid' data-ref="getpid">getpid</a>();</td></tr>
+<tr><th id="150">150</th><td>	<a class="local col8 ref" href="#8tempfile" title='tempfile' data-ref="8tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a> = <var>1</var>;</td></tr>
+<tr><th id="151">151</th><td>}</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td><em>int</em> <dfn class="decl def" id="mks_tempfile_sm" title='mks_tempfile_sm' data-ref="mks_tempfile_sm">mks_tempfile_sm</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col0 decl" id="10tempfile" title='tempfile' data-type='struct tempfile *' data-ref="10tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="154">154</th><td>		    <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="11template" title='template' data-type='const char *' data-ref="11template">template</dfn>, <em>int</em> <dfn class="local col2 decl" id="12suffixlen" title='suffixlen' data-type='int' data-ref="12suffixlen">suffixlen</dfn>, <em>int</em> <dfn class="local col3 decl" id="13mode" title='mode' data-type='int' data-ref="13mode">mode</dfn>)</td></tr>
+<tr><th id="155">155</th><td>{</td></tr>
+<tr><th id="156">156</th><td>	<a class="tu ref" href="#prepare_tempfile_object" title='prepare_tempfile_object' data-use='c' data-ref="prepare_tempfile_object">prepare_tempfile_object</a>(<a class="local col0 ref" href="#10tempfile" title='tempfile' data-ref="10tempfile">tempfile</a>);</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td>	<a class="ref" href="strbuf.h.html#strbuf_add_absolute_path" title='strbuf_add_absolute_path' data-ref="strbuf_add_absolute_path">strbuf_add_absolute_path</a>(&amp;<a class="local col0 ref" href="#10tempfile" title='tempfile' data-ref="10tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>, <a class="local col1 ref" href="#11template" title='template' data-ref="11template">template</a>);</td></tr>
+<tr><th id="159">159</th><td>	<a class="local col0 ref" href="#10tempfile" title='tempfile' data-ref="10tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> = <a class="ref" href="cache.h.html#git_mkstemps_mode" title='git_mkstemps_mode' data-ref="git_mkstemps_mode">git_mkstemps_mode</a>(<a class="local col0 ref" href="#10tempfile" title='tempfile' data-ref="10tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="local col2 ref" href="#12suffixlen" title='suffixlen' data-ref="12suffixlen">suffixlen</a>, <a class="local col3 ref" href="#13mode" title='mode' data-ref="13mode">mode</a>);</td></tr>
+<tr><th id="160">160</th><td>	<b>if</b> (<a class="local col0 ref" href="#10tempfile" title='tempfile' data-ref="10tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> &lt; <var>0</var>) {</td></tr>
+<tr><th id="161">161</th><td>		<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(&amp;tempfile-&gt;filename, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col0 ref" href="#10tempfile" title='tempfile' data-ref="10tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>);</td></tr>
+<tr><th id="162">162</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="163">163</th><td>	}</td></tr>
+<tr><th id="164">164</th><td>	<a class="local col0 ref" href="#10tempfile" title='tempfile' data-ref="10tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::owner" title='tempfile::owner' data-ref="tempfile::owner">owner</a> = <a class="ref" href="../include/unistd.h.html#getpid" title='getpid' data-ref="getpid">getpid</a>();</td></tr>
+<tr><th id="165">165</th><td>	<a class="local col0 ref" href="#10tempfile" title='tempfile' data-ref="10tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a> = <var>1</var>;</td></tr>
+<tr><th id="166">166</th><td>	<b>return</b> <a class="local col0 ref" href="#10tempfile" title='tempfile' data-ref="10tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a>;</td></tr>
+<tr><th id="167">167</th><td>}</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><em>int</em> <dfn class="decl def" id="mks_tempfile_tsm" title='mks_tempfile_tsm' data-ref="mks_tempfile_tsm">mks_tempfile_tsm</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col4 decl" id="14tempfile" title='tempfile' data-type='struct tempfile *' data-ref="14tempfile">tempfile</dfn>,</td></tr>
+<tr><th id="170">170</th><td>		     <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="15template" title='template' data-type='const char *' data-ref="15template">template</dfn>, <em>int</em> <dfn class="local col6 decl" id="16suffixlen" title='suffixlen' data-type='int' data-ref="16suffixlen">suffixlen</dfn>, <em>int</em> <dfn class="local col7 decl" id="17mode" title='mode' data-type='int' data-ref="17mode">mode</dfn>)</td></tr>
+<tr><th id="171">171</th><td>{</td></tr>
+<tr><th id="172">172</th><td>	<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="18tmpdir" title='tmpdir' data-type='const char *' data-ref="18tmpdir">tmpdir</dfn>;</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td>	<a class="tu ref" href="#prepare_tempfile_object" title='prepare_tempfile_object' data-use='c' data-ref="prepare_tempfile_object">prepare_tempfile_object</a>(<a class="local col4 ref" href="#14tempfile" title='tempfile' data-ref="14tempfile">tempfile</a>);</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td>	<a class="local col8 ref" href="#18tmpdir" title='tmpdir' data-ref="18tmpdir">tmpdir</a> = <a class="ref" href="../include/stdlib.h.html#getenv" title='getenv' data-ref="getenv">getenv</a>(<q>"TMPDIR"</q>);</td></tr>
+<tr><th id="177">177</th><td>	<b>if</b> (!<a class="local col8 ref" href="#18tmpdir" title='tmpdir' data-ref="18tmpdir">tmpdir</a>)</td></tr>
+<tr><th id="178">178</th><td>		<a class="local col8 ref" href="#18tmpdir" title='tmpdir' data-ref="18tmpdir">tmpdir</a> = <q>"/tmp"</q>;</td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(&amp;<a class="local col4 ref" href="#14tempfile" title='tempfile' data-ref="14tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>, <q>"%s/%s"</q>, <a class="local col8 ref" href="#18tmpdir" title='tmpdir' data-ref="18tmpdir">tmpdir</a>, <a class="local col5 ref" href="#15template" title='template' data-ref="15template">template</a>);</td></tr>
+<tr><th id="181">181</th><td>	<a class="local col4 ref" href="#14tempfile" title='tempfile' data-ref="14tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> = <a class="ref" href="cache.h.html#git_mkstemps_mode" title='git_mkstemps_mode' data-ref="git_mkstemps_mode">git_mkstemps_mode</a>(<a class="local col4 ref" href="#14tempfile" title='tempfile' data-ref="14tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="local col6 ref" href="#16suffixlen" title='suffixlen' data-ref="16suffixlen">suffixlen</a>, <a class="local col7 ref" href="#17mode" title='mode' data-ref="17mode">mode</a>);</td></tr>
+<tr><th id="182">182</th><td>	<b>if</b> (<a class="local col4 ref" href="#14tempfile" title='tempfile' data-ref="14tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> &lt; <var>0</var>) {</td></tr>
+<tr><th id="183">183</th><td>		<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(&amp;tempfile-&gt;filename, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col4 ref" href="#14tempfile" title='tempfile' data-ref="14tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>);</td></tr>
+<tr><th id="184">184</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="185">185</th><td>	}</td></tr>
+<tr><th id="186">186</th><td>	<a class="local col4 ref" href="#14tempfile" title='tempfile' data-ref="14tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::owner" title='tempfile::owner' data-ref="tempfile::owner">owner</a> = <a class="ref" href="../include/unistd.h.html#getpid" title='getpid' data-ref="getpid">getpid</a>();</td></tr>
+<tr><th id="187">187</th><td>	<a class="local col4 ref" href="#14tempfile" title='tempfile' data-ref="14tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a> = <var>1</var>;</td></tr>
+<tr><th id="188">188</th><td>	<b>return</b> <a class="local col4 ref" href="#14tempfile" title='tempfile' data-ref="14tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a>;</td></tr>
+<tr><th id="189">189</th><td>}</td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td><em>int</em> <dfn class="decl def" id="xmks_tempfile_m" title='xmks_tempfile_m' data-ref="xmks_tempfile_m">xmks_tempfile_m</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col9 decl" id="19tempfile" title='tempfile' data-type='struct tempfile *' data-ref="19tempfile">tempfile</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="20template" title='template' data-type='const char *' data-ref="20template">template</dfn>, <em>int</em> <dfn class="local col1 decl" id="21mode" title='mode' data-type='int' data-ref="21mode">mode</dfn>)</td></tr>
+<tr><th id="192">192</th><td>{</td></tr>
+<tr><th id="193">193</th><td>	<em>int</em> <dfn class="local col2 decl" id="22fd" title='fd' data-type='int' data-ref="22fd">fd</dfn>;</td></tr>
+<tr><th id="194">194</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col3 decl" id="23full_template" title='full_template' data-type='struct strbuf' data-ref="23full_template">full_template</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td>	<a class="ref" href="strbuf.h.html#strbuf_add_absolute_path" title='strbuf_add_absolute_path' data-ref="strbuf_add_absolute_path">strbuf_add_absolute_path</a>(&amp;<a class="local col3 ref" href="#23full_template" title='full_template' data-ref="23full_template">full_template</a>, <a class="local col0 ref" href="#20template" title='template' data-ref="20template">template</a>);</td></tr>
+<tr><th id="197">197</th><td>	<a class="local col2 ref" href="#22fd" title='fd' data-ref="22fd">fd</a> = <a class="ref" href="tempfile.h.html#mks_tempfile_m" title='mks_tempfile_m' data-ref="mks_tempfile_m">mks_tempfile_m</a>(<a class="local col9 ref" href="#19tempfile" title='tempfile' data-ref="19tempfile">tempfile</a>, <a class="local col3 ref" href="#23full_template" title='full_template' data-ref="23full_template">full_template</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="local col1 ref" href="#21mode" title='mode' data-ref="21mode">mode</a>);</td></tr>
+<tr><th id="198">198</th><td>	<b>if</b> (<a class="local col2 ref" href="#22fd" title='fd' data-ref="22fd">fd</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="199">199</th><td>		<a class="ref" href="git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"Unable to create temporary file '%s'"</q>,</td></tr>
+<tr><th id="200">200</th><td>			  <a class="local col3 ref" href="#23full_template" title='full_template' data-ref="23full_template">full_template</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td>	<a class="ref" href="strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(&amp;<a class="local col3 ref" href="#23full_template" title='full_template' data-ref="23full_template">full_template</a>);</td></tr>
+<tr><th id="203">203</th><td>	<b>return</b> <a class="local col2 ref" href="#22fd" title='fd' data-ref="22fd">fd</a>;</td></tr>
+<tr><th id="204">204</th><td>}</td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td><a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl def" id="fdopen_tempfile" title='fdopen_tempfile' data-ref="fdopen_tempfile">fdopen_tempfile</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col4 decl" id="24tempfile" title='tempfile' data-type='struct tempfile *' data-ref="24tempfile">tempfile</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="25mode" title='mode' data-type='const char *' data-ref="25mode">mode</dfn>)</td></tr>
+<tr><th id="207">207</th><td>{</td></tr>
+<tr><th id="208">208</th><td>	<b>if</b> (!<a class="local col4 ref" href="#24tempfile" title='tempfile' data-ref="24tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a>)</td></tr>
+<tr><th id="209">209</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: fdopen_tempfile() called for inactive object"</q>);</td></tr>
+<tr><th id="210">210</th><td>	<b>if</b> (<a class="local col4 ref" href="#24tempfile" title='tempfile' data-ref="24tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fp" title='tempfile::fp' data-ref="tempfile::fp">fp</a>)</td></tr>
+<tr><th id="211">211</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: fdopen_tempfile() called for open object"</q>);</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td>	<a class="local col4 ref" href="#24tempfile" title='tempfile' data-ref="24tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fp" title='tempfile::fp' data-ref="tempfile::fp">fp</a> = <a class="ref" href="../include/stdio.h.html#fdopen" title='fdopen' data-ref="fdopen">fdopen</a>(<a class="local col4 ref" href="#24tempfile" title='tempfile' data-ref="24tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a>, <a class="local col5 ref" href="#25mode" title='mode' data-ref="25mode">mode</a>);</td></tr>
+<tr><th id="214">214</th><td>	<b>return</b> <a class="local col4 ref" href="#24tempfile" title='tempfile' data-ref="24tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fp" title='tempfile::fp' data-ref="tempfile::fp">fp</a>;</td></tr>
+<tr><th id="215">215</th><td>}</td></tr>
+<tr><th id="216">216</th><td></td></tr>
+<tr><th id="217">217</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="get_tempfile_path" title='get_tempfile_path' data-ref="get_tempfile_path">get_tempfile_path</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col6 decl" id="26tempfile" title='tempfile' data-type='struct tempfile *' data-ref="26tempfile">tempfile</dfn>)</td></tr>
+<tr><th id="218">218</th><td>{</td></tr>
+<tr><th id="219">219</th><td>	<b>if</b> (!<a class="local col6 ref" href="#26tempfile" title='tempfile' data-ref="26tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a>)</td></tr>
+<tr><th id="220">220</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: get_tempfile_path() called for inactive object"</q>);</td></tr>
+<tr><th id="221">221</th><td>	<b>return</b> <a class="local col6 ref" href="#26tempfile" title='tempfile' data-ref="26tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>;</td></tr>
+<tr><th id="222">222</th><td>}</td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td><em>int</em> <dfn class="decl def" id="get_tempfile_fd" title='get_tempfile_fd' data-ref="get_tempfile_fd">get_tempfile_fd</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col7 decl" id="27tempfile" title='tempfile' data-type='struct tempfile *' data-ref="27tempfile">tempfile</dfn>)</td></tr>
+<tr><th id="225">225</th><td>{</td></tr>
+<tr><th id="226">226</th><td>	<b>if</b> (!<a class="local col7 ref" href="#27tempfile" title='tempfile' data-ref="27tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a>)</td></tr>
+<tr><th id="227">227</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: get_tempfile_fd() called for inactive object"</q>);</td></tr>
+<tr><th id="228">228</th><td>	<b>return</b> <a class="local col7 ref" href="#27tempfile" title='tempfile' data-ref="27tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a>;</td></tr>
+<tr><th id="229">229</th><td>}</td></tr>
+<tr><th id="230">230</th><td></td></tr>
+<tr><th id="231">231</th><td><a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl def" id="get_tempfile_fp" title='get_tempfile_fp' data-ref="get_tempfile_fp">get_tempfile_fp</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col8 decl" id="28tempfile" title='tempfile' data-type='struct tempfile *' data-ref="28tempfile">tempfile</dfn>)</td></tr>
+<tr><th id="232">232</th><td>{</td></tr>
+<tr><th id="233">233</th><td>	<b>if</b> (!<a class="local col8 ref" href="#28tempfile" title='tempfile' data-ref="28tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a>)</td></tr>
+<tr><th id="234">234</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: get_tempfile_fp() called for inactive object"</q>);</td></tr>
+<tr><th id="235">235</th><td>	<b>return</b> <a class="local col8 ref" href="#28tempfile" title='tempfile' data-ref="28tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fp" title='tempfile::fp' data-ref="tempfile::fp">fp</a>;</td></tr>
+<tr><th id="236">236</th><td>}</td></tr>
+<tr><th id="237">237</th><td></td></tr>
+<tr><th id="238">238</th><td><em>int</em> <dfn class="decl def" id="close_tempfile" title='close_tempfile' data-ref="close_tempfile">close_tempfile</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col9 decl" id="29tempfile" title='tempfile' data-type='struct tempfile *' data-ref="29tempfile">tempfile</dfn>)</td></tr>
+<tr><th id="239">239</th><td>{</td></tr>
+<tr><th id="240">240</th><td>	<em>int</em> <dfn class="local col0 decl" id="30fd" title='fd' data-type='int' data-ref="30fd">fd</dfn> = <a class="local col9 ref" href="#29tempfile" title='tempfile' data-ref="29tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a>;</td></tr>
+<tr><th id="241">241</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col1 decl" id="31fp" title='fp' data-type='FILE *' data-ref="31fp">fp</dfn> = <a class="local col9 ref" href="#29tempfile" title='tempfile' data-ref="29tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fp" title='tempfile::fp' data-ref="tempfile::fp">fp</a>;</td></tr>
+<tr><th id="242">242</th><td>	<em>int</em> <dfn class="local col2 decl" id="32err" title='err' data-type='int' data-ref="32err">err</dfn>;</td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td>	<b>if</b> (<a class="local col0 ref" href="#30fd" title='fd' data-ref="30fd">fd</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="245">245</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="246">246</th><td></td></tr>
+<tr><th id="247">247</th><td>	<a class="local col9 ref" href="#29tempfile" title='tempfile' data-ref="29tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> = -<var>1</var>;</td></tr>
+<tr><th id="248">248</th><td>	<b>if</b> (<a class="local col1 ref" href="#31fp" title='fp' data-ref="31fp">fp</a>) {</td></tr>
+<tr><th id="249">249</th><td>		<a class="local col9 ref" href="#29tempfile" title='tempfile' data-ref="29tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fp" title='tempfile::fp' data-ref="tempfile::fp">fp</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="250">250</th><td>		<b>if</b> (<a class="ref" href="../include/stdio.h.html#ferror" title='ferror' data-ref="ferror">ferror</a>(<a class="local col1 ref" href="#31fp" title='fp' data-ref="31fp">fp</a>)) {</td></tr>
+<tr><th id="251">251</th><td>			<a class="local col2 ref" href="#32err" title='err' data-ref="32err">err</a> = -<var>1</var>;</td></tr>
+<tr><th id="252">252</th><td>			<b>if</b> (!<a class="ref" href="../include/stdio.h.html#fclose" title='fclose' data-ref="fclose">fclose</a>(<a class="local col1 ref" href="#31fp" title='fp' data-ref="31fp">fp</a>))</td></tr>
+<tr><th id="253">253</th><td>				<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="macro" href="../include/asm-generic/errno-base.h.html#8" title="5" data-ref="_M/EIO">EIO</a>;</td></tr>
+<tr><th id="254">254</th><td>		} <b>else</b> {</td></tr>
+<tr><th id="255">255</th><td>			<a class="local col2 ref" href="#32err" title='err' data-ref="32err">err</a> = <a class="ref" href="../include/stdio.h.html#fclose" title='fclose' data-ref="fclose">fclose</a>(<a class="local col1 ref" href="#31fp" title='fp' data-ref="31fp">fp</a>);</td></tr>
+<tr><th id="256">256</th><td>		}</td></tr>
+<tr><th id="257">257</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="258">258</th><td>		<a class="local col2 ref" href="#32err" title='err' data-ref="32err">err</a> = <a class="ref" href="../include/unistd.h.html#close" title='close' data-ref="close">close</a>(<a class="local col0 ref" href="#30fd" title='fd' data-ref="30fd">fd</a>);</td></tr>
+<tr><th id="259">259</th><td>	}</td></tr>
+<tr><th id="260">260</th><td></td></tr>
+<tr><th id="261">261</th><td>	<b>if</b> (<a class="local col2 ref" href="#32err" title='err' data-ref="32err">err</a>) {</td></tr>
+<tr><th id="262">262</th><td>		<em>int</em> <dfn class="local col3 decl" id="33save_errno" title='save_errno' data-type='int' data-ref="33save_errno">save_errno</dfn> = <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>;</td></tr>
+<tr><th id="263">263</th><td>		<a class="ref" href="#delete_tempfile" title='delete_tempfile' data-ref="delete_tempfile">delete_tempfile</a>(<a class="local col9 ref" href="#29tempfile" title='tempfile' data-ref="29tempfile">tempfile</a>);</td></tr>
+<tr><th id="264">264</th><td>		<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="local col3 ref" href="#33save_errno" title='save_errno' data-ref="33save_errno">save_errno</a>;</td></tr>
+<tr><th id="265">265</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="266">266</th><td>	}</td></tr>
+<tr><th id="267">267</th><td></td></tr>
+<tr><th id="268">268</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="269">269</th><td>}</td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td><em>int</em> <dfn class="decl def" id="reopen_tempfile" title='reopen_tempfile' data-ref="reopen_tempfile">reopen_tempfile</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col4 decl" id="34tempfile" title='tempfile' data-type='struct tempfile *' data-ref="34tempfile">tempfile</dfn>)</td></tr>
+<tr><th id="272">272</th><td>{</td></tr>
+<tr><th id="273">273</th><td>	<b>if</b> (<var>0</var> &lt;= <a class="local col4 ref" href="#34tempfile" title='tempfile' data-ref="34tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a>)</td></tr>
+<tr><th id="274">274</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: reopen_tempfile called for an open object"</q>);</td></tr>
+<tr><th id="275">275</th><td>	<b>if</b> (!<a class="local col4 ref" href="#34tempfile" title='tempfile' data-ref="34tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a>)</td></tr>
+<tr><th id="276">276</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: reopen_tempfile called for an inactive object"</q>);</td></tr>
+<tr><th id="277">277</th><td>	<a class="local col4 ref" href="#34tempfile" title='tempfile' data-ref="34tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a> = <a class="ref" href="../include/fcntl.h.html#159" title='open' data-ref="open64">open</a>(<a class="local col4 ref" href="#34tempfile" title='tempfile' data-ref="34tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#44" title="01" data-ref="_M/O_WRONLY">O_WRONLY</a>);</td></tr>
+<tr><th id="278">278</th><td>	<b>return</b> <a class="local col4 ref" href="#34tempfile" title='tempfile' data-ref="34tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::fd" title='tempfile::fd' data-ref="tempfile::fd">fd</a>;</td></tr>
+<tr><th id="279">279</th><td>}</td></tr>
+<tr><th id="280">280</th><td></td></tr>
+<tr><th id="281">281</th><td><em>int</em> <dfn class="decl def" id="rename_tempfile" title='rename_tempfile' data-ref="rename_tempfile">rename_tempfile</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col5 decl" id="35tempfile" title='tempfile' data-type='struct tempfile *' data-ref="35tempfile">tempfile</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="36path" title='path' data-type='const char *' data-ref="36path">path</dfn>)</td></tr>
+<tr><th id="282">282</th><td>{</td></tr>
+<tr><th id="283">283</th><td>	<b>if</b> (!<a class="local col5 ref" href="#35tempfile" title='tempfile' data-ref="35tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a>)</td></tr>
+<tr><th id="284">284</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: rename_tempfile called for inactive object"</q>);</td></tr>
+<tr><th id="285">285</th><td></td></tr>
+<tr><th id="286">286</th><td>	<b>if</b> (<a class="ref" href="#close_tempfile" title='close_tempfile' data-ref="close_tempfile">close_tempfile</a>(<a class="local col5 ref" href="#35tempfile" title='tempfile' data-ref="35tempfile">tempfile</a>))</td></tr>
+<tr><th id="287">287</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="288">288</th><td></td></tr>
+<tr><th id="289">289</th><td>	<b>if</b> (<a class="ref" href="../include/stdio.h.html#rename" title='rename' data-ref="rename">rename</a>(<a class="local col5 ref" href="#35tempfile" title='tempfile' data-ref="35tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="local col6 ref" href="#36path" title='path' data-ref="36path">path</a>)) {</td></tr>
+<tr><th id="290">290</th><td>		<em>int</em> <dfn class="local col7 decl" id="37save_errno" title='save_errno' data-type='int' data-ref="37save_errno">save_errno</dfn> = <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>;</td></tr>
+<tr><th id="291">291</th><td>		<a class="ref" href="#delete_tempfile" title='delete_tempfile' data-ref="delete_tempfile">delete_tempfile</a>(<a class="local col5 ref" href="#35tempfile" title='tempfile' data-ref="35tempfile">tempfile</a>);</td></tr>
+<tr><th id="292">292</th><td>		<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="local col7 ref" href="#37save_errno" title='save_errno' data-ref="37save_errno">save_errno</a>;</td></tr>
+<tr><th id="293">293</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="294">294</th><td>	}</td></tr>
+<tr><th id="295">295</th><td></td></tr>
+<tr><th id="296">296</th><td>	<a class="local col5 ref" href="#35tempfile" title='tempfile' data-ref="35tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a> = <var>0</var>;</td></tr>
+<tr><th id="297">297</th><td>	<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(&amp;tempfile-&gt;filename, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col5 ref" href="#35tempfile" title='tempfile' data-ref="35tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>);</td></tr>
+<tr><th id="298">298</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="299">299</th><td>}</td></tr>
+<tr><th id="300">300</th><td></td></tr>
+<tr><th id="301">301</th><td><em>void</em> <dfn class="decl def" id="delete_tempfile" title='delete_tempfile' data-ref="delete_tempfile">delete_tempfile</dfn>(<b>struct</b> <a class="type" href="tempfile.h.html#tempfile" title='tempfile' data-ref="tempfile">tempfile</a> *<dfn class="local col8 decl" id="38tempfile" title='tempfile' data-type='struct tempfile *' data-ref="38tempfile">tempfile</dfn>)</td></tr>
+<tr><th id="302">302</th><td>{</td></tr>
+<tr><th id="303">303</th><td>	<b>if</b> (!<a class="local col8 ref" href="#38tempfile" title='tempfile' data-ref="38tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a>)</td></tr>
+<tr><th id="304">304</th><td>		<b>return</b>;</td></tr>
+<tr><th id="305">305</th><td></td></tr>
+<tr><th id="306">306</th><td>	<b>if</b> (!<a class="ref" href="#close_tempfile" title='close_tempfile' data-ref="close_tempfile">close_tempfile</a>(<a class="local col8 ref" href="#38tempfile" title='tempfile' data-ref="38tempfile">tempfile</a>)) {</td></tr>
+<tr><th id="307">307</th><td>		<a class="ref" href="git-compat-util.h.html#unlink_or_warn" title='unlink_or_warn' data-ref="unlink_or_warn">unlink_or_warn</a>(<a class="local col8 ref" href="#38tempfile" title='tempfile' data-ref="38tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="308">308</th><td>		<a class="local col8 ref" href="#38tempfile" title='tempfile' data-ref="38tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::active" title='tempfile::active' data-ref="tempfile::active">active</a> = <var>0</var>;</td></tr>
+<tr><th id="309">309</th><td>		<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(&amp;tempfile-&gt;filename, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col8 ref" href="#38tempfile" title='tempfile' data-ref="38tempfile">tempfile</a>-&gt;<a class="ref" href="tempfile.h.html#tempfile::filename" title='tempfile::filename' data-ref="tempfile::filename">filename</a>);</td></tr>
+<tr><th id="310">310</th><td>	}</td></tr>
+<tr><th id="311">311</th><td>}</td></tr>
+<tr><th id="312">312</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

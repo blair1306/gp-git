@@ -1,0 +1,5 @@
+<dec f='codebrowser/ll-merge.h' l='22' type='int ll_merge_marker_size(const char * path)'/>
+<use f='codebrowser/diff.c' l='2628' u='c' c='builtin_checkdiff'/>
+<def f='codebrowser/ll-merge.c' l='394' ll='407' type='int ll_merge_marker_size(const char * path)'/>
+<use f='codebrowser/rerere.c' l='480' u='c' c='handle_file'/>
+<use f='codebrowser/rerere.c' l='964' u='c' c='handle_cache'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1858' type='const char *'/>
+<use f='codebrowser/config.c' l='1260' u='a' c='git_default_i18n_config'/>
+<def f='codebrowser/environment.c' l='31' type='const char *'/>
+<use f='codebrowser/environment.c' l='305' u='r' c='get_log_output_encoding'/>
+<use f='codebrowser/environment.c' l='305' u='r' c='get_log_output_encoding'/>
+<use f='codebrowser/revision.c' l='2034' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2036' u='w' c='handle_revision_opt'/>

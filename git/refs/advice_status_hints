@@ -1,0 +1,11 @@
+<dec f='codebrowser/advice.h' l='12' type='int'/>
+<def f='codebrowser/advice.c' l='10' type='int'/>
+<use f='codebrowser/advice.c' l='31' u='a'/>
+<use f='codebrowser/advice.c' l='31' u='a'/>
+<use f='codebrowser/advice.c' l='31' u='a'/>
+<use f='codebrowser/advice.c' l='31' u='a'/>
+<use f='codebrowser/builtin/commit.c' l='202' u='r' c='status_init_config'/>
+<use f='codebrowser/remote.c' l='2082' u='r' c='format_tracking_info'/>
+<use f='codebrowser/remote.c' l='2095' u='r' c='format_tracking_info'/>
+<use f='codebrowser/remote.c' l='2106' u='r' c='format_tracking_info'/>
+<use f='codebrowser/remote.c' l='2119' u='r' c='format_tracking_info'/>

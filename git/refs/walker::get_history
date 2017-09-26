@@ -1,0 +1,5 @@
+<dec f='codebrowser/walker.h' l='13' type='int'/>
+<use f='codebrowser/http-fetch.c' l='72' u='w' c='cmd_main'/>
+<offset>352</offset>
+<use f='codebrowser/remote-curl.c' l='779' u='w' c='fetch_dumb'/>
+<use f='codebrowser/walker.c' l='95' u='r' c='process_commit'/>

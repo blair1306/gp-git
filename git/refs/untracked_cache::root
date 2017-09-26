@@ -1,0 +1,16 @@
+<dec f='codebrowser/dir.h' l='136' type='struct untracked_cache_dir *'/>
+<offset>1280</offset>
+<use f='codebrowser/dir.c' l='1106' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2071' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2072' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2073' u='w' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2074' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2078' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2500' u='r' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2513' u='r' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2550' u='r' c='free_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2727' u='a' c='read_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2821' u='r' c='untracked_cache_invalidate_path'/>
+<use f='codebrowser/dir.c' l='2823' u='r' c='untracked_cache_invalidate_path'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='61' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='62' u='r' c='cmd_main'/>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/unpack-trees.h' l='71' type='struct index_state *'/>
+<use f='codebrowser/archive.c' l='251' u='w' c='write_archive_entries'/>
+<offset>4288</offset>
+<use f='codebrowser/builtin/am.c' l='1954' u='w' c='fast_forward_to'/>
+<use f='codebrowser/builtin/am.c' l='1992' u='w' c='merge_tree'/>
+<use f='codebrowser/builtin/checkout.c' l='427' u='w' c='reset_tree'/>
+<use f='codebrowser/builtin/checkout.c' l='493' u='w' c='merge_working_tree'/>
+<use f='codebrowser/builtin/clone.c' l='744' u='w' c='checkout'/>
+<use f='codebrowser/builtin/commit.c' l='314' u='w' c='create_base_index'/>
+<use f='codebrowser/builtin/merge.c' l='606' u='w' c='read_tree_trivial'/>
+<use f='codebrowser/builtin/read-tree.c' l='160' u='w' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/reset.c' l='55' u='w' c='reset_index'/>
+<use f='codebrowser/diff-lib.c' l='501' u='w' c='diff_cache'/>
+<use f='codebrowser/merge-recursive.c' l='271' u='w' c='git_merge_trees'/>
+<use f='codebrowser/merge.c' l='75' u='w' c='checkout_fast_forward'/>
+<use f='codebrowser/unpack-trees.c' l='1392' u='r' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1401' u='r' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1402' u='r' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1403' u='r' c='unpack_trees'/>

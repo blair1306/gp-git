@@ -1,0 +1,12 @@
+<dec f='codebrowser/builtin.h' l='99' type='const char []'/>
+<use f='codebrowser/builtin/help.c' l='463' u='r' c='cmd_help'/>
+<use f='codebrowser/builtin/help.c' l='480' u='r' c='cmd_help'/>
+<def f='codebrowser/git.c' l='7' ll='12' type='const char [304]'/>
+<use f='codebrowser/git.c' l='96' u='r' c='handle_options'/>
+<use f='codebrowser/git.c' l='110' u='r' c='handle_options'/>
+<use f='codebrowser/git.c' l='124' u='r' c='handle_options'/>
+<use f='codebrowser/git.c' l='138' u='r' c='handle_options'/>
+<use f='codebrowser/git.c' l='160' u='r' c='handle_options'/>
+<use f='codebrowser/git.c' l='194' u='r' c='handle_options'/>
+<use f='codebrowser/git.c' l='209' u='r' c='handle_options'/>
+<use f='codebrowser/git.c' l='663' c='cmd_main'/>

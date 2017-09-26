@@ -1,0 +1,5 @@
+<def f='codebrowser/urlmatch.h' l='36' ll='40'/>
+<size>24</size>
+<mbr r='urlmatch_item::hostmatch_len' o='0' t='size_t'/>
+<mbr r='urlmatch_item::pathmatch_len' o='64' t='size_t'/>
+<mbr r='urlmatch_item::user_matched' o='128' t='char'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/commit.h' l='155' type='struct date_mode'/>
+<offset>192</offset>
+<use f='codebrowser/archive.c' l='38' u='m' c='format_subst'/>
+<use f='codebrowser/builtin/commit.c' l='1065' u='m' c='find_author_by_nickname'/>
+<use f='codebrowser/builtin/log.c' l='473' u='w' c='show_tagger'/>
+<use f='codebrowser/builtin/log.c' l='1027' u='m' c='make_cover_letter'/>
+<use f='codebrowser/builtin/merge.c' l='365' u='w' c='squash_message'/>
+<use f='codebrowser/builtin/rev-list.c' l='122' u='w' c='show_commit'/>
+<use f='codebrowser/builtin/shortlog.c' l='153' u='m' c='shortlog_add_commit'/>
+<use f='codebrowser/log-tree.c' l='673' u='w' c='show_log'/>
+<use f='codebrowser/pretty.c' l='497' u='a' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='506' u='a' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='1194' u='a' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1209' u='a' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1264' u='a' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1268' u='a' c='format_commit_one'/>
+<use f='codebrowser/sha1_name.c' l='370' u='m' c='show_ambiguous_object'/>
+<use f='codebrowser/submodule.c' l='491' u='w' c='print_submodule_summary'/>
+<use f='codebrowser/submodule.c' l='1721' u='m' c='print_commit'/>
+<use f='codebrowser/t/helper/test-revision-walking.c' l='20' u='m' c='print_commit'/>

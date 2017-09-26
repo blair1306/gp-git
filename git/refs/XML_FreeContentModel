@@ -1,0 +1,2 @@
+<dec f='include/expat.h' l='972' type='void XML_FreeContentModel(XML_Parser parser, XML_Content * model)'/>
+<doc f='include/expat.h' l='970'>/* Frees the content model passed to the element declaration handler */</doc>

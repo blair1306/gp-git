@@ -1,0 +1,7 @@
+<def f='codebrowser/git-compat-util.h' l='981' ll='995' type='int strtoul_ui(const char * s, int base, unsigned int * result)'/>
+<use f='codebrowser/builtin/update-index.c' l='841' u='c' c='cacheinfo_callback'/>
+<use f='codebrowser/ref-filter.c' l='204' u='c' c='contents_atom_parser'/>
+<use f='codebrowser/ref-filter.c' l='218' u='c' c='objectname_atom_parser'/>
+<use f='codebrowser/ref-filter.c' l='266' u='c' c='align_atom_parser'/>
+<use f='codebrowser/ref-filter.c' l='268' u='c' c='align_atom_parser'/>
+<use f='codebrowser/revision.c' l='1790' u='c' c='handle_revision_opt'/>

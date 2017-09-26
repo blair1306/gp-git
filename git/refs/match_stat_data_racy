@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='703' type='int match_stat_data_racy(const struct index_state * istate, const struct stat_data * sd, struct stat * st)'/>
+<use f='codebrowser/dir.c' l='800' u='c' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='1697' u='c' c='valid_cached_dir'/>
+<def f='codebrowser/read-cache.c' l='295' ll='301' type='int match_stat_data_racy(const struct index_state * istate, const struct stat_data * sd, struct stat * st)'/>

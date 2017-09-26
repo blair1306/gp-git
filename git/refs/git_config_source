@@ -1,0 +1,5 @@
+<def f='codebrowser/config.h' l='17' ll='21'/>
+<size>24</size>
+<mbr r='git_config_source::use_stdin' o='0' t='unsigned int'/>
+<mbr r='git_config_source::file' o='64' t='const char *'/>
+<mbr r='git_config_source::blob' o='128' t='const char *'/>

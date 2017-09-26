@@ -1,0 +1,9 @@
+<dec f='codebrowser/remote.h' l='66' type='int for_each_remote(each_remote_fn * fn, void * priv)'/>
+<use f='codebrowser/branch.c' l='142' u='c' c='setup_tracking'/>
+<use f='codebrowser/branch.c' l='214' u='c' c='validate_remote_tracking_branch'/>
+<use f='codebrowser/builtin/checkout.c' l='901' u='c' c='unique_tracking_name'/>
+<use f='codebrowser/builtin/fetch.c' l='1373' u='c' c='cmd_fetch'/>
+<use f='codebrowser/builtin/pull.c' l='422' u='c' c='die_no_merge_candidates'/>
+<use f='codebrowser/builtin/remote.c' l='761' u='c' c='rm'/>
+<use f='codebrowser/builtin/remote.c' l='1091' u='c' c='show_all'/>
+<def f='codebrowser/remote.c' l='727' ll='744' type='int for_each_remote(each_remote_fn * fn, void * priv)'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1842' type='int update_server_info(int )'/>
+<doc f='codebrowser/cache.h' l='1841'>/* Dumb servers support */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='2021' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/builtin/repack.c' l='431' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/update-server-info.c' l='25' u='c' c='cmd_update_server_info'/>
+<def f='codebrowser/server-info.c' l='272' ll='287' type='int update_server_info(int force)'/>
+<doc f='codebrowser/server-info.c' l='271'>/* public */</doc>

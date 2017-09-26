@@ -1,0 +1,5 @@
+<dec f='codebrowser/ref-filter.h' l='68' type='unsigned int'/>
+<use f='codebrowser/builtin/branch.c' l='620' u='w' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='660' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='683' u='r' c='cmd_branch'/>
+<offset>515</offset>

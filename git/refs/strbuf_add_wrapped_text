@@ -1,0 +1,11 @@
+<dec f='codebrowser/utf8.h' l='19' type='void strbuf_add_wrapped_text(struct strbuf * buf, const char * text, int indent, int indent2, int width)'/>
+<use f='codebrowser/builtin/shortlog.c' l='310' u='c' c='add_wrapped_shortlog_msg'/>
+<use f='codebrowser/pretty.c' l='906' u='c' c='strbuf_wrap'/>
+<def f='codebrowser/utf8.c' l='264' ll='344' type='void strbuf_add_wrapped_text(struct strbuf * buf, const char * text, int indent1, int indent2, int width)'/>
+<use f='codebrowser/utf8.c' l='350' u='c' c='strbuf_add_wrapped_bytes'/>
+<doc f='codebrowser/utf8.c' l='258'>/*
+ * Wrap the text, if necessary. The variable indent is the indent for the
+ * first line, indent2 is the indent for all other lines.
+ * If indent is negative, assume that already -indent columns have been
+ * consumed (and no extra indent is necessary for the first line).
+ */</doc>

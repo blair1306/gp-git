@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='66' type='struct exclude_stack *'/>
+<offset>0</offset>
+<doc f='codebrowser/dir.h' l='66'>/* the struct exclude_stack for the parent directory */</doc>
+<use f='codebrowser/dir.c' l='1082' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1128' u='w' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2385' u='r' c='clear_directory'/>

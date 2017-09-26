@@ -1,0 +1,6 @@
+<dec f='codebrowser/attr.h' l='45' type='struct attr_check * attr_check_alloc()'/>
+<def f='codebrowser/attr.c' l='566' ll='574' type='struct attr_check * attr_check_alloc()'/>
+<use f='codebrowser/attr.c' l='588' u='c' c='attr_check_initl'/>
+<use f='codebrowser/attr.c' l='617' u='c' c='attr_check_dup'/>
+<use f='codebrowser/builtin/check-attr.c' l='167' u='c' c='cmd_check_attr'/>
+<use f='codebrowser/pathspec.c' l='155' u='c' c='parse_pathspec_attr_match'/>

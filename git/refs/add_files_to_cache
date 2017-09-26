@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1935' type='int add_files_to_cache(const char * prefix, const struct pathspec * pathspec, int flags)'/>
+<doc f='codebrowser/cache.h' l='1931'>/*
+ * return 0 if success, 1 - if addition of a file failed and
+ * ADD_FILES_IGNORE_ERRORS was specified in flags
+ */</doc>
+<def f='codebrowser/builtin/add.c' l='103' ll='122' type='int add_files_to_cache(const char * prefix, const struct pathspec * pathspec, int flags)'/>
+<use f='codebrowser/builtin/add.c' l='501' u='c' c='cmd_add'/>
+<use f='codebrowser/builtin/checkout.c' l='556' u='c' c='merge_working_tree'/>
+<use f='codebrowser/builtin/commit.c' l='401' u='c' c='prepare_index'/>

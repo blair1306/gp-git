@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>notes-merge.h source code [codebrowser/notes-merge.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="notes_merge_options,notes_merge_verbosity "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/notes-merge.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='notes-merge.h.html'>notes-merge.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/NOTES_MERGE_H">NOTES_MERGE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/NOTES_MERGE_H" data-ref="_M/NOTES_MERGE_H">NOTES_MERGE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="notes-utils.h.html">"notes-utils.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/NOTES_MERGE_WORKTREE" data-ref="_M/NOTES_MERGE_WORKTREE">NOTES_MERGE_WORKTREE</dfn> "NOTES_MERGE_WORKTREE"</u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>enum</b> <dfn class="type def" id="notes_merge_verbosity" title='notes_merge_verbosity' data-ref="notes_merge_verbosity">notes_merge_verbosity</dfn> {</td></tr>
+<tr><th id="9">9</th><td>	<dfn class="enum" id="notes_merge_verbosity::NOTES_MERGE_VERBOSITY_DEFAULT" title='notes_merge_verbosity::NOTES_MERGE_VERBOSITY_DEFAULT' data-ref="notes_merge_verbosity::NOTES_MERGE_VERBOSITY_DEFAULT">NOTES_MERGE_VERBOSITY_DEFAULT</dfn> = <var>2</var>,</td></tr>
+<tr><th id="10">10</th><td>	<dfn class="enum" id="notes_merge_verbosity::NOTES_MERGE_VERBOSITY_MAX" title='notes_merge_verbosity::NOTES_MERGE_VERBOSITY_MAX' data-ref="notes_merge_verbosity::NOTES_MERGE_VERBOSITY_MAX">NOTES_MERGE_VERBOSITY_MAX</dfn> = <var>5</var></td></tr>
+<tr><th id="11">11</th><td>};</td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><b>struct</b> <dfn class="type def" id="notes_merge_options" title='notes_merge_options' data-ref="notes_merge_options">notes_merge_options</dfn> {</td></tr>
+<tr><th id="14">14</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="notes_merge_options::local_ref" title='notes_merge_options::local_ref' data-ref="notes_merge_options::local_ref">local_ref</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="notes_merge_options::remote_ref" title='notes_merge_options::remote_ref' data-ref="notes_merge_options::remote_ref">remote_ref</dfn>;</td></tr>
+<tr><th id="16">16</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="notes_merge_options::commit_msg" title='notes_merge_options::commit_msg' data-ref="notes_merge_options::commit_msg">commit_msg</dfn>;</td></tr>
+<tr><th id="17">17</th><td>	<em>int</em> <dfn class="decl" id="notes_merge_options::verbosity" title='notes_merge_options::verbosity' data-ref="notes_merge_options::verbosity">verbosity</dfn>;</td></tr>
+<tr><th id="18">18</th><td>	<b>enum</b> <a class="type" href="notes-utils.h.html#notes_merge_strategy" title='notes_merge_strategy' data-ref="notes_merge_strategy">notes_merge_strategy</a> <dfn class="decl" id="notes_merge_options::strategy" title='notes_merge_options::strategy' data-ref="notes_merge_options::strategy">strategy</dfn>;</td></tr>
+<tr><th id="19">19</th><td>	<em>unsigned</em> <dfn class="decl" id="notes_merge_options::has_worktree" title='notes_merge_options::has_worktree' data-ref="notes_merge_options::has_worktree">has_worktree</dfn>:<var>1</var>;</td></tr>
+<tr><th id="20">20</th><td>};</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><em>void</em> <dfn class="decl" id="init_notes_merge_options" title='init_notes_merge_options' data-ref="init_notes_merge_options">init_notes_merge_options</dfn>(<b>struct</b> <a class="type" href="#notes_merge_options" title='notes_merge_options' data-ref="notes_merge_options">notes_merge_options</a> *<dfn class="local col1 decl" id="1o" title='o' data-type='struct notes_merge_options *' data-ref="1o">o</dfn>);</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><i>/*</i></td></tr>
+<tr><th id="25">25</th><td><i> * Merge notes from o-&gt;remote_ref into o-&gt;local_ref</i></td></tr>
+<tr><th id="26">26</th><td><i> *</i></td></tr>
+<tr><th id="27">27</th><td><i> * The given notes_tree 'local_tree' must be the notes_tree referenced by the</i></td></tr>
+<tr><th id="28">28</th><td><i> * o-&gt;local_ref. This is the notes_tree in which the object-level merge is</i></td></tr>
+<tr><th id="29">29</th><td><i> * performed.</i></td></tr>
+<tr><th id="30">30</th><td><i> *</i></td></tr>
+<tr><th id="31">31</th><td><i> * The commits given by the two refs are merged, producing one of the following</i></td></tr>
+<tr><th id="32">32</th><td><i> * outcomes:</i></td></tr>
+<tr><th id="33">33</th><td><i> *</i></td></tr>
+<tr><th id="34">34</th><td><i> * 1. The merge trivially results in an existing commit (e.g. fast-forward or</i></td></tr>
+<tr><th id="35">35</th><td><i> *    already-up-to-date). 'local_tree' is untouched, the OID of the result</i></td></tr>
+<tr><th id="36">36</th><td><i> *    is written into 'result_oid' and 0 is returned.</i></td></tr>
+<tr><th id="37">37</th><td><i> * 2. The merge successfully completes, producing a merge commit. local_tree</i></td></tr>
+<tr><th id="38">38</th><td><i> *    contains the updated notes tree, the OID of the resulting commit is</i></td></tr>
+<tr><th id="39">39</th><td><i> *    written into 'result_oid', and 1 is returned.</i></td></tr>
+<tr><th id="40">40</th><td><i> * 3. The merge results in conflicts. This is similar to #2 in that the</i></td></tr>
+<tr><th id="41">41</th><td><i> *    partial merge result (i.e. merge result minus the unmerged entries)</i></td></tr>
+<tr><th id="42">42</th><td><i> *    are stored in 'local_tree', and the OID or the resulting commit</i></td></tr>
+<tr><th id="43">43</th><td><i> *    (to be amended when the conflicts have been resolved) is written into</i></td></tr>
+<tr><th id="44">44</th><td><i> *    'result_oid'. The unmerged entries are written into the</i></td></tr>
+<tr><th id="45">45</th><td><i> *    .git/NOTES_MERGE_WORKTREE directory with conflict markers.</i></td></tr>
+<tr><th id="46">46</th><td><i> *    -1 is returned.</i></td></tr>
+<tr><th id="47">47</th><td><i> *</i></td></tr>
+<tr><th id="48">48</th><td><i> * Both o-&gt;local_ref and o-&gt;remote_ref must be given (non-NULL), but either ref</i></td></tr>
+<tr><th id="49">49</th><td><i> * (although not both) may refer to a non-existing notes ref, in which case</i></td></tr>
+<tr><th id="50">50</th><td><i> * that notes ref is interpreted as an empty notes tree, and the merge</i></td></tr>
+<tr><th id="51">51</th><td><i> * trivially results in what the other ref points to.</i></td></tr>
+<tr><th id="52">52</th><td><i> */</i></td></tr>
+<tr><th id="53">53</th><td><em>int</em> <dfn class="decl" id="notes_merge" title='notes_merge' data-ref="notes_merge">notes_merge</dfn>(<b>struct</b> <a class="type" href="#notes_merge_options" title='notes_merge_options' data-ref="notes_merge_options">notes_merge_options</a> *<dfn class="local col2 decl" id="2o" title='o' data-type='struct notes_merge_options *' data-ref="2o">o</dfn>,</td></tr>
+<tr><th id="54">54</th><td>		<b>struct</b> <a class="type" href="notes.h.html#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col3 decl" id="3local_tree" title='local_tree' data-type='struct notes_tree *' data-ref="3local_tree">local_tree</dfn>,</td></tr>
+<tr><th id="55">55</th><td>		<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col4 decl" id="4result_oid" title='result_oid' data-type='struct object_id *' data-ref="4result_oid">result_oid</dfn>);</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><i>/*</i></td></tr>
+<tr><th id="58">58</th><td><i> * Finalize conflict resolution from an earlier notes_merge()</i></td></tr>
+<tr><th id="59">59</th><td><i> *</i></td></tr>
+<tr><th id="60">60</th><td><i> * The given notes tree 'partial_tree' must be the notes_tree corresponding to</i></td></tr>
+<tr><th id="61">61</th><td><i> * the given 'partial_commit', the partial result commit created by a previous</i></td></tr>
+<tr><th id="62">62</th><td><i> * call to notes_merge().</i></td></tr>
+<tr><th id="63">63</th><td><i> *</i></td></tr>
+<tr><th id="64">64</th><td><i> * This function will add the (now resolved) notes in .git/NOTES_MERGE_WORKTREE</i></td></tr>
+<tr><th id="65">65</th><td><i> * to 'partial_tree', and create a final notes merge commit, the OID of which</i></td></tr>
+<tr><th id="66">66</th><td><i> * will be stored in 'result_oid'.</i></td></tr>
+<tr><th id="67">67</th><td><i> */</i></td></tr>
+<tr><th id="68">68</th><td><em>int</em> <dfn class="decl" id="notes_merge_commit" title='notes_merge_commit' data-ref="notes_merge_commit">notes_merge_commit</dfn>(<b>struct</b> <a class="type" href="#notes_merge_options" title='notes_merge_options' data-ref="notes_merge_options">notes_merge_options</a> *<dfn class="local col5 decl" id="5o" title='o' data-type='struct notes_merge_options *' data-ref="5o">o</dfn>,</td></tr>
+<tr><th id="69">69</th><td>		       <b>struct</b> <a class="type" href="notes.h.html#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col6 decl" id="6partial_tree" title='partial_tree' data-type='struct notes_tree *' data-ref="6partial_tree">partial_tree</dfn>,</td></tr>
+<tr><th id="70">70</th><td>		       <b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col7 decl" id="7partial_commit" title='partial_commit' data-type='struct commit *' data-ref="7partial_commit">partial_commit</dfn>,</td></tr>
+<tr><th id="71">71</th><td>		       <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col8 decl" id="8result_oid" title='result_oid' data-type='struct object_id *' data-ref="8result_oid">result_oid</dfn>);</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><i>/*</i></td></tr>
+<tr><th id="74">74</th><td><i> * Abort conflict resolution from an earlier notes_merge()</i></td></tr>
+<tr><th id="75">75</th><td><i> *</i></td></tr>
+<tr><th id="76">76</th><td><i> * Removes the notes merge worktree in .git/NOTES_MERGE_WORKTREE.</i></td></tr>
+<tr><th id="77">77</th><td><i> */</i></td></tr>
+<tr><th id="78">78</th><td><em>int</em> <dfn class="decl" id="notes_merge_abort" title='notes_merge_abort' data-ref="notes_merge_abort">notes_merge_abort</dfn>(<b>struct</b> <a class="type" href="#notes_merge_options" title='notes_merge_options' data-ref="notes_merge_options">notes_merge_options</a> *<dfn class="local col9 decl" id="9o" title='o' data-type='struct notes_merge_options *' data-ref="9o">o</dfn>);</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="81">81</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/notes.c.html'>codebrowser/builtin/notes.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/exec_cmd.h' l='9' type='void setup_path()'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1951' u='c' c='cmd_receive_pack'/>
+<def f='codebrowser/exec_cmd.c' l='90' ll='105' type='void setup_path()'/>
+<use f='codebrowser/git.c' l='676' u='c' c='cmd_main'/>
+<use f='codebrowser/http-backend.c' l='700' u='c' c='cmd_main'/>
+<use f='codebrowser/shell.c' l='15' u='c' c='do_generic_cmd'/>
+<use f='codebrowser/shell.c' l='37' u='c' c='do_cvs_cmd'/>
+<use f='codebrowser/upload-pack.c' l='1062' u='c' c='cmd_main'/>

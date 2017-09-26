@@ -1,0 +1,22 @@
+<def f='codebrowser/run-command.h' l='10' ll='49'/>
+<size>96</size>
+<mbr r='child_process::argv' o='0' t='const char **'/>
+<mbr r='child_process::args' o='64' t='struct argv_array'/>
+<mbr r='child_process::env_array' o='192' t='struct argv_array'/>
+<mbr r='child_process::pid' o='320' t='pid_t'/>
+<mbr r='child_process::in' o='352' t='int'/>
+<mbr r='child_process::out' o='384' t='int'/>
+<mbr r='child_process::err' o='416' t='int'/>
+<mbr r='child_process::dir' o='448' t='const char *'/>
+<mbr r='child_process::env' o='512' t='const char *const *'/>
+<mbr r='child_process::no_stdin' o='576' t='unsigned int'/>
+<mbr r='child_process::no_stdout' o='577' t='unsigned int'/>
+<mbr r='child_process::no_stderr' o='578' t='unsigned int'/>
+<mbr r='child_process::git_cmd' o='579' t='unsigned int'/>
+<mbr r='child_process::silent_exec_failure' o='580' t='unsigned int'/>
+<mbr r='child_process::stdout_to_stderr' o='581' t='unsigned int'/>
+<mbr r='child_process::use_shell' o='582' t='unsigned int'/>
+<mbr r='child_process::clean_on_exit' o='583' t='unsigned int'/>
+<mbr r='child_process::wait_after_clean' o='584' t='unsigned int'/>
+<mbr r='child_process::clean_on_exit_handler' o='640' t='void (*)(struct child_process *)'/>
+<mbr r='child_process::clean_on_exit_handler_cbdata' o='704' t='void *'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1874' type='void fsync_or_die(int fd, const char * )'/>
+<use f='codebrowser/builtin/index-pack.c' l='1405' u='c' c='final'/>
+<use f='codebrowser/csum-file.c' l='68' u='c' c='sha1close'/>
+<use f='codebrowser/pack-write.c' l='276' u='c' c='fixup_pack_header_footer'/>
+<use f='codebrowser/sha1_file.c' l='3256' u='c' c='close_sha1_file'/>
+<def f='codebrowser/write_or_die.c' l='58' ll='63' type='void fsync_or_die(int fd, const char * msg)'/>

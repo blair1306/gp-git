@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1726' type='unsigned long unpack_object_header_buffer(const unsigned char * buf, unsigned long len, enum object_type * type, unsigned long * sizep)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1402' u='c' c='check_object'/>
+<def f='codebrowser/sha1_file.c' l='1798' ll='1821' type='unsigned long unpack_object_header_buffer(const unsigned char * buf, unsigned long len, enum object_type * type, unsigned long * sizep)'/>
+<use f='codebrowser/sha1_file.c' l='2136' u='c' c='unpack_object_header'/>

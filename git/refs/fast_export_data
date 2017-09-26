@@ -1,0 +1,3 @@
+<dec f='codebrowser/vcs-svn/fast_export.h' l='19' type='void fast_export_data(uint32_t mode, off_t len, struct line_buffer * input)'/>
+<def f='codebrowser/vcs-svn/fast_export.c' l='244' ll='259' type='void fast_export_data(uint32_t mode, off_t len, struct line_buffer * input)'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='295' u='c' c='handle_node'/>

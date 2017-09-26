@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='228' type='int is_excluded_from_list(const char * pathname, int pathlen, const char * __xpg_basename, int * dtype, struct exclude_list * el, struct index_state * istate)'/>
+<def f='codebrowser/dir.c' l='1023' ll='1033' type='int is_excluded_from_list(const char * pathname, int pathlen, const char * __xpg_basename, int * dtype, struct exclude_list * el, struct index_state * istate)'/>
+<doc f='codebrowser/dir.c' l='1019'>/*
+ * Scan the list and let the last match determine the fate.
+ * Return 1 for exclude, 0 for include and -1 for undecided.
+ */</doc>
+<use f='codebrowser/unpack-trees.c' l='1077' u='c' c='clear_ce_flags_dir'/>
+<use f='codebrowser/unpack-trees.c' l='1180' u='c' c='clear_ce_flags_1'/>

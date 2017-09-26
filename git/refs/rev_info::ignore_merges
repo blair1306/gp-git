@@ -1,0 +1,12 @@
+<dec f='codebrowser/revision.h' l='131' type='unsigned int'/>
+<offset>971</offset>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='641' u='w' c='fmt_merge_msg'/>
+<use f='codebrowser/builtin/log.c' l='547' u='r' c='show_setup_revisions_tweak'/>
+<use f='codebrowser/builtin/log.c' l='549' u='w' c='show_setup_revisions_tweak'/>
+<use f='codebrowser/builtin/log.c' l='680' u='w' c='log_setup_revisions_tweak'/>
+<use f='codebrowser/builtin/merge.c' l='351' u='w' c='squash_message'/>
+<use f='codebrowser/diff-lib.c' l='405' u='r' c='do_oneway_diff'/>
+<use f='codebrowser/log-tree.c' l='815' u='r' c='log_tree_diff'/>
+<use f='codebrowser/revision.c' l='1342' u='w' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1880' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2350' u='w' c='setup_revisions'/>

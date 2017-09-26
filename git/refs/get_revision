@@ -1,0 +1,24 @@
+<dec f='codebrowser/revision.h' l='261' type='struct commit * get_revision(struct rev_info * revs)'/>
+<use f='codebrowser/builtin/checkout.c' l='731' u='c' c='suggest_reattach'/>
+<use f='codebrowser/builtin/commit.c' l='1062' u='c' c='find_author_by_nickname'/>
+<use f='codebrowser/builtin/fast-export.c' l='1053' u='c' c='cmd_fast_export'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='355' u='c' c='shortlog'/>
+<use f='codebrowser/builtin/log.c' l='368' u='c' c='cmd_log_walk'/>
+<use f='codebrowser/builtin/log.c' l='913' u='c' c='get_patch_ids'/>
+<use f='codebrowser/builtin/log.c' l='1366' u='c' c='prepare_bases'/>
+<use f='codebrowser/builtin/log.c' l='1693' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1940' u='c' c='cmd_cherry'/>
+<use f='codebrowser/builtin/merge.c' l='369' u='c' c='squash_message'/>
+<use f='codebrowser/builtin/shortlog.c' l='178' u='c' c='get_from_rev'/>
+<use f='codebrowser/bundle.c' l='167' u='c' c='verify_bundle'/>
+<use f='codebrowser/http-push.c' l='1329' u='c' c='get_delta'/>
+<use f='codebrowser/list-objects.c' l='196' u='c' c='traverse_commit_list'/>
+<use f='codebrowser/remote.c' l='2044' u='c' c='stat_tracking_info'/>
+<def f='codebrowser/revision.c' l='3317' ll='3349' type='struct commit * get_revision(struct rev_info * revs)'/>
+<use f='codebrowser/sequencer.c' l='1532' u='c' c='walk_revs_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='2348' u='c' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2349' u='c' c='sequencer_pick_revisions'/>
+<use f='codebrowser/submodule.c' l='489' u='c' c='print_submodule_summary'/>
+<use f='codebrowser/submodule.c' l='794' u='c' c='collect_changed_submodules'/>
+<use f='codebrowser/submodule.c' l='1686' u='c' c='find_first_merges'/>
+<use f='codebrowser/t/helper/test-revision-walking.c' l='39' u='c' c='run_revision_walk'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/xdiff/xtypes.h' l='49' type='chastore_t'/>
+<offset>0</offset>
+<use f='codebrowser/xdiff/xprepare.c' l='179' u='a' c='xdl_prepare_ctx'/>
+<use f='codebrowser/xdiff/xprepare.c' l='205' u='a' c='xdl_prepare_ctx'/>
+<use f='codebrowser/xdiff/xprepare.c' l='246' u='a' c='xdl_prepare_ctx'/>
+<use f='codebrowser/xdiff/xprepare.c' l='258' u='a' c='xdl_free_ctx'/>

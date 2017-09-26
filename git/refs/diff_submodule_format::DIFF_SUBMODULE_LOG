@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='114' type='1'/>
+<use f='codebrowser/diff.c' l='143' u='r' c='parse_submodule_params'/>
+<use f='codebrowser/diff.c' l='2361' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='3986' u='r' c='diff_opt_parse'/>

@@ -1,0 +1,21 @@
+<dec f='include/curl/curl.h' l='2072' type='void curl_slist_free_all(struct curl_slist * )'/>
+<doc f='include/curl/curl.h' l='2065'>/*
+ * NAME curl_slist_free_all()
+ *
+ * DESCRIPTION
+ *
+ * free a previously built curl_slist.
+ */</doc>
+<use f='codebrowser/http-push.c' l='465' u='c' c='refresh_lock'/>
+<use f='codebrowser/http-push.c' l='522' u='c' c='finish_request'/>
+<use f='codebrowser/http-push.c' l='922' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='967' u='c' c='unlock_remote'/>
+<use f='codebrowser/http-push.c' l='1178' u='c' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1258' u='c' c='locking_available'/>
+<use f='codebrowser/http.c' l='376' u='c' c='http_options'/>
+<use f='codebrowser/http.c' l='1016' u='c' c='http_cleanup'/>
+<use f='codebrowser/http.c' l='1019' u='c' c='http_cleanup'/>
+<use f='codebrowser/http.c' l='1022' u='c' c='http_cleanup'/>
+<use f='codebrowser/http.c' l='1719' u='c' c='http_request'/>
+<use f='codebrowser/remote-curl.c' l='530' u='c' c='probe_rpc'/>
+<use f='codebrowser/remote-curl.c' l='693' u='c' c='post_rpc'/>

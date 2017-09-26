@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='183' type='int cmd_mailsplit(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/mailsplit.c' l='271' ll='369' type='int cmd_mailsplit(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='419'/>
+<use f='codebrowser/git.c' l='419'/>
+<use f='codebrowser/git.c' l='419'/>
+<use f='codebrowser/git.c' l='419'/>

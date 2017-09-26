@@ -1,0 +1,14 @@
+<dec f='codebrowser/trace.h' l='83'/>
+<use f='codebrowser/builtin/receive-pack.c' l='881' u='c'/>
+<use f='codebrowser/dir.c' l='2139' u='c'/>
+<use f='codebrowser/http.c' l='639' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2496' u='c'/>
+<use f='codebrowser/shallow.c' l='391' u='c'/>
+<use f='codebrowser/shallow.c' l='422' u='c'/>
+<use f='codebrowser/shallow.c' l='572' u='c'/>
+<use f='codebrowser/shallow.c' l='678' u='c'/>
+<use f='codebrowser/trace.c' l='333' u='c'/>
+<use f='codebrowser/trace.c' l='334' u='c'/>
+<use f='codebrowser/trace.c' l='335' u='c'/>
+<use f='codebrowser/trace.c' l='336' u='c'/>
+<use f='codebrowser/trace.c' l='337' u='c'/>

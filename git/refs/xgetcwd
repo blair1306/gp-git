@@ -1,0 +1,15 @@
+<dec f='codebrowser/git-compat-util.h' l='810' type='char * xgetcwd()'/>
+<use f='codebrowser/builtin/init-db.c' l='430' u='c' c='guess_repository_type'/>
+<use f='codebrowser/builtin/init-db.c' l='531' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='568' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/rev-parse.c' l='844' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='189' u='c' c='resolve_relative_url'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='396' u='c' c='init_submodule'/>
+<use f='codebrowser/builtin/update-index.c' l='135' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/dir.c' l='2215' u='c' c='is_inside_dir'/>
+<use f='codebrowser/git.c' l='150' u='c' c='handle_options'/>
+<use f='codebrowser/setup.c' l='684' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/strbuf.c' l='697' u='c' c='strbuf_add_absolute_path'/>
+<use f='codebrowser/submodule.c' l='1948' u='c' c='get_superproject_working_tree'/>
+<use f='codebrowser/trace.c' l='325' u='c' c='trace_repo_setup'/>
+<def f='codebrowser/wrapper.c' l='628' ll='634' type='char * xgetcwd()'/>

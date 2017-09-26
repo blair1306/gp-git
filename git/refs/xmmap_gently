@@ -1,0 +1,4 @@
+<dec f='codebrowser/git-compat-util.h' l='800' type='void * xmmap_gently(void * start, size_t length, int prot, int flags, int fd, off_t offset)'/>
+<use f='codebrowser/config.c' l='2551' u='c' c='git_config_set_multivar_in_file_gently'/>
+<def f='codebrowser/sha1_file.c' l='928' ll='942' type='void * xmmap_gently(void * start, size_t length, int prot, int flags, int fd, off_t offset)'/>
+<use f='codebrowser/sha1_file.c' l='947' u='c' c='xmmap'/>

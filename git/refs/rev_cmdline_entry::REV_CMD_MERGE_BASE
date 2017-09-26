@@ -1,0 +1,3 @@
+<dec f='codebrowser/revision.h' l='44' type='4'/>
+<use f='codebrowser/revision.c' l='1403' u='r' c='prepare_show_merge'/>
+<use f='codebrowser/revision.c' l='1498' u='r' c='handle_dotdot_1'/>

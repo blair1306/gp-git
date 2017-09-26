@@ -1,0 +1,6 @@
+<dec f='include/zlib.h' l='188'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2997' u='c'/>
+<use f='codebrowser/config.c' l='1089' u='c'/>
+<use f='codebrowser/config.c' l='1100' u='c'/>
+<use f='codebrowser/config.c' l='1376' u='c'/>
+<use f='codebrowser/remote-curl.c' l='634' u='c'/>

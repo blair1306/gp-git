@@ -1,0 +1,19 @@
+<dec f='codebrowser/commit.h' l='241' type='void sort_in_topological_order(struct commit_list ** , enum rev_sort_order )'/>
+<doc f='codebrowser/commit.h' l='231'>/*
+ * Performs an in-place topological sort of list supplied.
+ *
+ *   invariant of resulting list is:
+ *      a reachable from b =&gt; ord(b) &lt; ord(a)
+ *   sort_order further specifies:
+ *   REV_SORT_IN_GRAPH_ORDER: try to show a commit on a single-parent
+ *                            chain together.
+ *   REV_SORT_BY_COMMIT_DATE: show eligible commits in committer-date order.
+ */</doc>
+<use f='codebrowser/builtin/log.c' l='261' u='c' c='log_show_early'/>
+<use f='codebrowser/builtin/show-branch.c' l='883' u='c' c='cmd_show_branch'/>
+<def f='codebrowser/commit.c' l='648' ll='757' type='void sort_in_topological_order(struct commit_list ** list, enum rev_sort_order sort_order)'/>
+<doc f='codebrowser/commit.c' l='645'>/*
+ * Performs an in-place topological sort on the list supplied.
+ */</doc>
+<use f='codebrowser/revision.c' l='2801' u='c' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='3228' u='c' c='create_boundary_commit_list'/>

@@ -1,0 +1,25 @@
+<dec f='codebrowser/revision.h' l='162' type='unsigned int'/>
+<use f='codebrowser/bisect.c' l='616' u='w' c='bisect_rev_setup'/>
+<use f='codebrowser/bisect.c' l='884' u='w' c='show_diff_tree'/>
+<offset>1280</offset>
+<use f='codebrowser/builtin/am.c' l='1397' u='w' c='write_commit_patch'/>
+<use f='codebrowser/builtin/diff-files.c' l='30' u='w' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-index.c' l='27' u='w' c='cmd_diff_index'/>
+<use f='codebrowser/builtin/diff-tree.c' l='114' u='w' c='cmd_diff_tree'/>
+<use f='codebrowser/builtin/merge.c' l='364' u='r' c='squash_message'/>
+<use f='codebrowser/builtin/rev-list.c' l='91' u='r' c='show_commit'/>
+<use f='codebrowser/builtin/rev-list.c' l='92' u='r' c='show_commit'/>
+<use f='codebrowser/builtin/rev-list.c' l='121' u='r' c='show_commit'/>
+<use f='codebrowser/builtin/rev-list.c' l='288' u='w' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/shortlog.c' l='287' u='r' c='cmd_shortlog'/>
+<use f='codebrowser/log-tree.c' l='540' u='r' c='show_log'/>
+<use f='codebrowser/revision.c' l='1341' u='w' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1971' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1973' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1975' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1976' u='r' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1977' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1978' u='r' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1979' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2351' u='r' c='setup_revisions'/>
+<use f='codebrowser/sequencer.c' l='1781' u='w' c='make_patch'/>

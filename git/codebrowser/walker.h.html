@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>walker.h source code [codebrowser/walker.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="walker "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/walker.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='walker.h.html'>walker.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/WALKER_H">WALKER_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/WALKER_H" data-ref="_M/WALKER_H">WALKER_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="remote.h.html">"remote.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <dfn class="type def" id="walker" title='walker' data-ref="walker">walker</dfn> {</td></tr>
+<tr><th id="7">7</th><td>	<em>void</em> *<dfn class="decl" id="walker::data" title='walker::data' data-ref="walker::data">data</dfn>;</td></tr>
+<tr><th id="8">8</th><td>	<em>int</em> (*<dfn class="decl" id="walker::fetch_ref" title='walker::fetch_ref' data-ref="walker::fetch_ref">fetch_ref</dfn>)(<b>struct</b> <a class="type" href="#walker" title='walker' data-ref="walker">walker</a> *, <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col7 decl" id="227ref" title='ref' data-type='struct ref *' data-ref="227ref">ref</dfn>);</td></tr>
+<tr><th id="9">9</th><td>	<em>void</em> (*<dfn class="decl" id="walker::prefetch" title='walker::prefetch' data-ref="walker::prefetch">prefetch</dfn>)(<b>struct</b> <a class="type" href="#walker" title='walker' data-ref="walker">walker</a> *, <em>unsigned</em> <em>char</em> *<dfn class="local col8 decl" id="228sha1" title='sha1' data-type='unsigned char *' data-ref="228sha1">sha1</dfn>);</td></tr>
+<tr><th id="10">10</th><td>	<em>int</em> (*<dfn class="decl" id="walker::fetch" title='walker::fetch' data-ref="walker::fetch">fetch</dfn>)(<b>struct</b> <a class="type" href="#walker" title='walker' data-ref="walker">walker</a> *, <em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="229sha1" title='sha1' data-type='unsigned char *' data-ref="229sha1">sha1</dfn>);</td></tr>
+<tr><th id="11">11</th><td>	<em>void</em> (*<dfn class="decl" id="walker::cleanup" title='walker::cleanup' data-ref="walker::cleanup">cleanup</dfn>)(<b>struct</b> <a class="type" href="#walker" title='walker' data-ref="walker">walker</a> *);</td></tr>
+<tr><th id="12">12</th><td>	<em>int</em> <dfn class="decl" id="walker::get_tree" title='walker::get_tree' data-ref="walker::get_tree">get_tree</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<em>int</em> <dfn class="decl" id="walker::get_history" title='walker::get_history' data-ref="walker::get_history">get_history</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>int</em> <dfn class="decl" id="walker::get_all" title='walker::get_all' data-ref="walker::get_all">get_all</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<em>int</em> <dfn class="decl" id="walker::get_verbosely" title='walker::get_verbosely' data-ref="walker::get_verbosely">get_verbosely</dfn>;</td></tr>
+<tr><th id="16">16</th><td>	<em>int</em> <dfn class="decl" id="walker::get_recover" title='walker::get_recover' data-ref="walker::get_recover">get_recover</dfn>;</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td>	<em>int</em> <dfn class="decl" id="walker::corrupt_object_found" title='walker::corrupt_object_found' data-ref="walker::corrupt_object_found">corrupt_object_found</dfn>;</td></tr>
+<tr><th id="19">19</th><td>};</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><i>/* Report what we got under get_verbosely */</i></td></tr>
+<tr><th id="22">22</th><td><b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)))</td></tr>
+<tr><th id="23">23</th><td><em>void</em> <dfn class="decl" id="walker_say" title='walker_say' data-ref="walker_say">walker_say</dfn>(<b>struct</b> <a class="type" href="#walker" title='walker' data-ref="walker">walker</a> *<dfn class="local col0 decl" id="230walker" title='walker' data-type='struct walker *' data-ref="230walker">walker</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="231fmt" title='fmt' data-type='const char *' data-ref="231fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i>/* Load pull targets from stdin */</i></td></tr>
+<tr><th id="26">26</th><td><em>int</em> <dfn class="decl" id="walker_targets_stdin" title='walker_targets_stdin' data-ref="walker_targets_stdin">walker_targets_stdin</dfn>(<em>char</em> ***<dfn class="local col2 decl" id="232target" title='target' data-type='char ***' data-ref="232target">target</dfn>, <em>const</em> <em>char</em> ***<dfn class="local col3 decl" id="233write_ref" title='write_ref' data-type='const char ***' data-ref="233write_ref">write_ref</dfn>);</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i>/* Free up loaded targets */</i></td></tr>
+<tr><th id="29">29</th><td><em>void</em> <dfn class="decl" id="walker_targets_free" title='walker_targets_free' data-ref="walker_targets_free">walker_targets_free</dfn>(<em>int</em> <dfn class="local col4 decl" id="234targets" title='targets' data-type='int' data-ref="234targets">targets</dfn>, <em>char</em> **<dfn class="local col5 decl" id="235target" title='target' data-type='char **' data-ref="235target">target</dfn>, <em>const</em> <em>char</em> **<dfn class="local col6 decl" id="236write_ref" title='write_ref' data-type='const char **' data-ref="236write_ref">write_ref</dfn>);</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i>/* If write_ref is set, the ref filename to write the target value to. */</i></td></tr>
+<tr><th id="32">32</th><td><i>/* If write_ref_log_details is set, additional text will appear in the ref log. */</i></td></tr>
+<tr><th id="33">33</th><td><em>int</em> <dfn class="decl" id="walker_fetch" title='walker_fetch' data-ref="walker_fetch">walker_fetch</dfn>(<b>struct</b> <a class="type" href="#walker" title='walker' data-ref="walker">walker</a> *<dfn class="local col7 decl" id="237impl" title='impl' data-type='struct walker *' data-ref="237impl">impl</dfn>, <em>int</em> <dfn class="local col8 decl" id="238targets" title='targets' data-type='int' data-ref="238targets">targets</dfn>, <em>char</em> **<dfn class="local col9 decl" id="239target" title='target' data-type='char **' data-ref="239target">target</dfn>,</td></tr>
+<tr><th id="34">34</th><td>		 <em>const</em> <em>char</em> **<dfn class="local col0 decl" id="240write_ref" title='write_ref' data-type='const char **' data-ref="240write_ref">write_ref</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="241write_ref_log_details" title='write_ref_log_details' data-type='const char *' data-ref="241write_ref_log_details">write_ref_log_details</dfn>);</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><em>void</em> <dfn class="decl" id="walker_free" title='walker_free' data-ref="walker_free">walker_free</dfn>(<b>struct</b> <a class="type" href="#walker" title='walker' data-ref="walker">walker</a> *<dfn class="local col2 decl" id="242walker" title='walker' data-type='struct walker *' data-ref="242walker">walker</dfn>);</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><b>struct</b> <a class="type" href="#walker" title='walker' data-ref="walker">walker</a> *<dfn class="decl" id="get_http_walker" title='get_http_walker' data-ref="get_http_walker">get_http_walker</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="243url" title='url' data-type='const char *' data-ref="243url">url</dfn>);</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="1">endif</span> /* WALKER_H */</u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='http-fetch.c.html'>codebrowser/http-fetch.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

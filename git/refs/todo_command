@@ -1,0 +1,6 @@
+<def f='codebrowser/sequencer.c' l='756' ll='771'/>
+<doc f='codebrowser/sequencer.c' l='751'>/*
+ * Note that ordering matters in this enum. Not only must it match the mapping
+ * below, it is also divided into several sections that matter.  When adding
+ * new commands, make sure you add it in the right section.
+ */</doc>

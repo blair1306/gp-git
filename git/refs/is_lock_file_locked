@@ -1,0 +1,10 @@
+<def f='codebrowser/lockfile.h' l='181' ll='184' type='int is_lock_file_locked(struct lock_file * lk)'/>
+<doc f='codebrowser/lockfile.h' l='178'>/*
+ * Return a nonzero value iff `lk` is currently locked.
+ */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='305' u='c' c='get_packed_ref_cache'/>
+<use f='codebrowser/refs/packed-backend.c' l='339' u='c' c='add_packed_ref'/>
+<use f='codebrowser/refs/packed-backend.c' l='576' u='c' c='packed_refs_unlock'/>
+<use f='codebrowser/refs/packed-backend.c' l='589' u='c' c='packed_refs_is_locked'/>
+<use f='codebrowser/refs/packed-backend.c' l='620' u='c' c='commit_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='711' u='c' c='repack_without_refs'/>

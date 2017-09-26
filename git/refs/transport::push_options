@@ -1,0 +1,13 @@
+<dec f='codebrowser/transport.h' l='60' type='const struct string_list *'/>
+<offset>320</offset>
+<doc f='codebrowser/transport.h' l='56'>/*
+	 * These strings will be passed to the {pre, post}-receive hook,
+	 * on the remote side, if both sides support the push options capability.
+	 */</doc>
+<use f='codebrowser/builtin/push.c' l='418' u='w' c='do_push'/>
+<use f='codebrowser/builtin/push.c' l='426' u='w' c='do_push'/>
+<use f='codebrowser/transport-helper.c' l='821' u='r' c='set_common_push_options'/>
+<use f='codebrowser/transport-helper.c' l='821' u='r' c='set_common_push_options'/>
+<use f='codebrowser/transport-helper.c' l='821' u='r' c='set_common_push_options'/>
+<use f='codebrowser/transport.c' l='564' u='r' c='git_transport_push'/>
+<use f='codebrowser/transport.c' l='1037' u='r' c='transport_push'/>

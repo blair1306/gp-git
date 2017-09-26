@@ -1,0 +1,4 @@
+<dec f='include/stdio.h' l='433' type='int sscanf(const char *restrict __s, const char *restrict __format)'/>
+<doc f='include/stdio.h' l='432'>/* Read formatted input from S.  */</doc>
+<use f='codebrowser/refs.c' l='1095' u='c' c='shorten_unambiguous_ref'/>
+<use f='codebrowser/t/helper/test-date.c' l='56' u='c' c='parse_dates'/>

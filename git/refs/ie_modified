@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='683' type='int ie_modified(const struct index_state * , const struct cache_entry * , struct stat * , unsigned int )'/>
+<use f='codebrowser/builtin/ls-files.c' l='348' u='c' c='show_files'/>
+<def f='codebrowser/read-cache.c' l='359' ll='397' type='int ie_modified(const struct index_state * istate, const struct cache_entry * ce, struct stat * st, unsigned int options)'/>
+<use f='codebrowser/read-cache.c' l='1291' u='c' c='refresh_cache_ent'/>

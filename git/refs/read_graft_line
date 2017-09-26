@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='250' type='struct commit_graft * read_graft_line(char * buf, int len)'/>
+<use f='codebrowser/builtin/blame.c' l='491' u='c' c='read_ancestry'/>
+<def f='codebrowser/commit.c' l='137' ll='167' type='struct commit_graft * read_graft_line(char * buf, int len)'/>
+<use f='codebrowser/commit.c' l='177' u='c' c='read_graft_file'/>

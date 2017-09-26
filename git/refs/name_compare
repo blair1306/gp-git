@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1396' type='int name_compare(const char * name1, size_t len1, const char * name2, size_t len2)'/>
+<use f='codebrowser/dir.c' l='1887' u='c' c='cmp_dir_entry'/>
+<def f='codebrowser/read-cache.c' l='453' ll='464' type='int name_compare(const char * name1, size_t len1, const char * name2, size_t len2)'/>
+<use f='codebrowser/read-cache.c' l='470' u='c' c='cache_name_stage_compare'/>
+<use f='codebrowser/tree-walk.c' l='231' u='c' c='check_entry_match'/>
+<use f='codebrowser/tree-walk.c' l='431' u='c' c='traverse_trees'/>
+<use f='codebrowser/tree-walk.c' l='445' u='c' c='traverse_trees'/>
+<use f='codebrowser/unpack-trees.c' l='906' u='c' c='find_cache_pos'/>

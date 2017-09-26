@@ -1,0 +1,13 @@
+<dec f='codebrowser/unpack-trees.h' l='48' type='unsigned int'/>
+<offset>384</offset>
+<use f='codebrowser/builtin/read-tree.c' l='147' u='a' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='147' u='a' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='147' u='a' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='147' u='a' c='cmd_read_tree'/>
+<use f='codebrowser/unpack-trees.c' l='1258' u='w' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1259' u='r' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1262' u='w' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1283' u='r' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1338' u='r' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1501' u='r' c='verify_uptodate'/>
+<use f='codebrowser/unpack-trees.c' l='1733' u='r' c='verify_absent'/>

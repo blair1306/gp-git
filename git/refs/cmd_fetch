@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='163' type='int cmd_fetch(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/fetch.c' l='1320' ll='1424' type='int cmd_fetch(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='398'/>
+<use f='codebrowser/git.c' l='398'/>
+<use f='codebrowser/git.c' l='398'/>
+<use f='codebrowser/git.c' l='398'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/column.h' l='26' type='const char *'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/column.c' l='32' u='a' c='cmd_column'/>
+<use f='codebrowser/builtin/column.c' l='32' u='a' c='cmd_column'/>
+<use f='codebrowser/builtin/column.c' l='32' u='a' c='cmd_column'/>
+<use f='codebrowser/builtin/column.c' l='32' u='a' c='cmd_column'/>
+<use f='codebrowser/column.c' l='150' u='r' c='display_cell'/>
+<use f='codebrowser/column.c' l='201' u='w' c='print_columns'/>
+<use f='codebrowser/column.c' l='201' u='r' c='print_columns'/>
+<use f='codebrowser/column.c' l='201' u='r' c='print_columns'/>
+<use f='codebrowser/column.c' l='210' u='r' c='print_columns'/>
+<use f='codebrowser/wt-status.c' l='913' u='w' c='wt_longstatus_print_other'/>

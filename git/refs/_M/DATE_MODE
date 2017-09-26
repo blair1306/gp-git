@@ -1,0 +1,23 @@
+<dec f='codebrowser/cache.h' l='1428'/>
+<doc f='codebrowser/cache.h' l='1423'>/*
+ * Convenience helper for passing a constant type, like:
+ *
+ *   show_date(t, tz, DATE_MODE(NORMAL));
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='919' u='c'/>
+<use f='codebrowser/builtin/am.c' l='1375' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='868' u='c'/>
+<use f='codebrowser/builtin/show-branch.c' l='758' u='c'/>
+<use f='codebrowser/builtin/tag.c' l='311' u='c'/>
+<use f='codebrowser/fast-import.c' l='430' u='c'/>
+<use f='codebrowser/http-backend.c' l='96' u='c'/>
+<use f='codebrowser/pretty.c' l='502' u='c'/>
+<use f='codebrowser/pretty.c' l='719' u='c'/>
+<use f='codebrowser/pretty.c' l='722' u='c'/>
+<use f='codebrowser/pretty.c' l='725' u='c'/>
+<use f='codebrowser/pretty.c' l='728' u='c'/>
+<use f='codebrowser/refs.c' l='779' u='c'/>
+<use f='codebrowser/refs.c' l='786' u='c'/>
+<use f='codebrowser/sha1_name.c' l='715' u='c'/>
+<use f='codebrowser/t/helper/test-date.c' l='58' u='c'/>
+<use f='codebrowser/t/helper/test-date.c' l='70' u='c'/>

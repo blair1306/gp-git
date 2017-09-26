@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs/refs-internal.h' l='32'/>
+<use f='codebrowser/refs.c' l='919' u='c'/>
+<use f='codebrowser/refs.c' l='942' u='c'/>
+<doc f='codebrowser/refs/refs-internal.h' l='28'>/*
+ * Used as a flag in ref_update::flags when old_sha1 should be
+ * checked.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2182' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2209' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2253' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2296' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2687' u='c'/>

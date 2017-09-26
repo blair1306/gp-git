@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/socket_type.h' l='28'/>
+<use f='codebrowser/connect.c' l='385' u='c'/>
+<use f='codebrowser/daemon.c' l='938' u='c'/>
+<use f='codebrowser/imap-send.c' l='970' u='c'/>
+<use f='codebrowser/unix-socket.c' l='6' u='c'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/transport.h' l='21' type='const char *'/>
+<offset>192</offset>
+<use f='codebrowser/transport-helper.c' l='622' u='r' c='process_connect'/>
+<use f='codebrowser/transport.c' l='128' u='w' c='set_git_option'/>
+<use f='codebrowser/transport.c' l='184' u='r' c='connect_setup'/>
+<use f='codebrowser/transport.c' l='216' u='r' c='fetch_refs_via_pack'/>
+<use f='codebrowser/transport.c' l='829' u='w' c='transport_get'/>
+<use f='codebrowser/transport.c' l='831' u='w' c='transport_get'/>

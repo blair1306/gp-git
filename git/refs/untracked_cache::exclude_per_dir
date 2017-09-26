@@ -1,0 +1,28 @@
+<dec f='codebrowser/dir.h' l='129' type='const char *'/>
+<offset>960</offset>
+<use f='codebrowser/dir.c' l='1981' u='w' c='new_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2055' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2484' u='r' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2486' u='r' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2709' u='w' c='read_untracked_extension'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='59' u='r' c='cmd_main'/>

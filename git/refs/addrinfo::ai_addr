@@ -1,0 +1,11 @@
+<dec f='include/netdb.h' l='574' type='struct sockaddr *'/>
+<offset>192</offset>
+<doc f='include/netdb.h' l='574'>/* Socket address for socket.  */</doc>
+<use f='codebrowser/connect.c' l='357' u='r' c='ai_name'/>
+<use f='codebrowser/connect.c' l='402' u='r' c='git_tcp_connect_sock'/>
+<use f='codebrowser/daemon.c' l='624' u='r' c='lookup_hostname'/>
+<use f='codebrowser/daemon.c' l='977' u='r' c='setup_named_sock'/>
+<use f='codebrowser/daemon.c' l='979' u='r' c='setup_named_sock'/>
+<use f='codebrowser/daemon.c' l='986' u='r' c='setup_named_sock'/>
+<use f='codebrowser/imap-send.c' l='989' u='r' c='imap_open_store'/>
+<use f='codebrowser/imap-send.c' l='993' u='r' c='imap_open_store'/>

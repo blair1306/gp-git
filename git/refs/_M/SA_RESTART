@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/sigaction.h' l='61'/>
+<use f='codebrowser/builtin/log.c' l='325' u='c'/>
+<use f='codebrowser/fast-import.c' l='542' u='c'/>
+<use f='codebrowser/progress.c' l='59' u='c'/>

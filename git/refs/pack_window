@@ -1,0 +1,8 @@
+<def f='codebrowser/cache.h' l='1578' ll='1585'/>
+<size>40</size>
+<mbr r='pack_window::next' o='0' t='struct pack_window *'/>
+<mbr r='pack_window::base' o='64' t='unsigned char *'/>
+<mbr r='pack_window::offset' o='128' t='off_t'/>
+<mbr r='pack_window::len' o='192' t='size_t'/>
+<mbr r='pack_window::last_used' o='256' t='unsigned int'/>
+<mbr r='pack_window::inuse_cnt' o='288' t='unsigned int'/>

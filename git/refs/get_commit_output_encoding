@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1845' type='const char * get_commit_output_encoding()'/>
+<use f='codebrowser/builtin/am.c' l='1226' u='c' c='parse_mail'/>
+<use f='codebrowser/builtin/am.c' l='1353' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/commit.c' l='694' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='727' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1097' u='c' c='read_commit_message'/>
+<use f='codebrowser/builtin/mailinfo.c' l='23' u='c' c='cmd_mailinfo'/>
+<use f='codebrowser/environment.c' l='306' u='c' c='get_log_output_encoding'/>
+<def f='codebrowser/environment.c' l='309' ll='312' type='const char * get_commit_output_encoding()'/>
+<use f='codebrowser/sequencer.c' l='243' u='c' c='get_message'/>

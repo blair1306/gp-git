@@ -1,0 +1,7 @@
+<dec f='codebrowser/refs.h' l='123' type='int peel_ref(const char * refname, unsigned char * sha1)'/>
+<use f='codebrowser/builtin/describe.c' l='176' u='c' c='get_name'/>
+<use f='codebrowser/builtin/pack-objects.c' l='564' u='c' c='mark_tagged'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2367' u='c' c='add_ref_tag'/>
+<use f='codebrowser/builtin/show-ref.c' l='41' u='c' c='show_one'/>
+<def f='codebrowser/refs.c' l='1719' ll='1722' type='int peel_ref(const char * refname, unsigned char * sha1)'/>
+<use f='codebrowser/upload-pack.c' l='958' u='c' c='send_ref'/>

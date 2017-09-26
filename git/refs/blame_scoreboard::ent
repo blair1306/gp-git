@@ -1,0 +1,14 @@
+<dec f='codebrowser/blame.h' l='117' type='struct blame_entry *'/>
+<use f='codebrowser/blame.c' l='409' u='w' c='blame_sort_final'/>
+<use f='codebrowser/blame.c' l='409' u='r' c='blame_sort_final'/>
+<use f='codebrowser/blame.c' l='429' u='r' c='sanity_check_refcnt'/>
+<use f='codebrowser/blame.c' l='452' u='r' c='blame_coalesce'/>
+<use f='codebrowser/blame.c' l='1598' u='r' c='assign_blame'/>
+<use f='codebrowser/blame.c' l='1599' u='w' c='assign_blame'/>
+<offset>640</offset>
+<doc f='codebrowser/blame.h' l='116'>/* linked list of blames */</doc>
+<use f='codebrowser/builtin/blame.c' l='454' u='r' c='output'/>
+<use f='codebrowser/builtin/blame.c' l='469' u='r' c='output'/>
+<use f='codebrowser/builtin/blame.c' l='523' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='908' u='w' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='948' u='r' c='cmd_blame'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/vcs-svn/svndump.h' l='4' type='int svndump_init(const char * filename)'/>
+<use f='codebrowser/t/helper/test-svn-fe.c' l='41' u='c' c='cmd_main'/>
+<def f='codebrowser/vcs-svn/svndump.c' l='501' ll='507' type='int svndump_init(const char * filename)'/>

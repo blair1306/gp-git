@@ -1,0 +1,5 @@
+<def f='codebrowser/refs/refs-internal.h' l='464' ll='468'/>
+<size>24</size>
+<mbr r='ref_iterator_vtable::advance' o='0' t='ref_iterator_advance_fn *'/>
+<mbr r='ref_iterator_vtable::peel' o='64' t='ref_iterator_peel_fn *'/>
+<mbr r='ref_iterator_vtable::abort' o='128' t='ref_iterator_abort_fn *'/>

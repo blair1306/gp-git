@@ -1,0 +1,5 @@
+<dec f='codebrowser/sequencer.h' l='48' type='const char []'/>
+<use f='codebrowser/builtin/commit.c' l='995' u='r' c='rest_is_empty'/>
+<use f='codebrowser/builtin/commit.c' l='996' u='r' c='rest_is_empty'/>
+<def f='codebrowser/sequencer.c' l='26' type='const char [16]'/>
+<use f='codebrowser/sequencer.c' l='2381' u='r' c='append_signoff'/>

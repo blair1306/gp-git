@@ -1,0 +1,3 @@
+<dec f='codebrowser/column.h' l='19'/>
+<use f='codebrowser/builtin/branch.c' l='644' u='c'/>
+<use f='codebrowser/builtin/tag.c' l='451' u='c'/>

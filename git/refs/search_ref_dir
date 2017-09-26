@@ -1,0 +1,11 @@
+<dec f='codebrowser/refs/ref-cache.h' l='174' type='int search_ref_dir(struct ref_dir * dir, const char * refname, size_t len)'/>
+<use f='codebrowser/refs/files-backend.c' l='239' u='c' c='loose_fill_ref_dir'/>
+<doc f='codebrowser/refs/ref-cache.h' l='169'>/*
+ * Return the index of the entry with the given refname from the
+ * ref_dir (non-recursively), sorting dir if necessary.  Return -1 if
+ * no such entry is found.  dir must already be complete.
+ */</doc>
+<def f='codebrowser/refs/ref-cache.c' l='125' ll='143' type='int search_ref_dir(struct ref_dir * dir, const char * refname, size_t len)'/>
+<use f='codebrowser/refs/ref-cache.c' l='156' u='c' c='search_for_subdir'/>
+<use f='codebrowser/refs/ref-cache.c' l='209' u='c' c='find_ref_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='237' u='c' c='remove_entry_from_dir'/>

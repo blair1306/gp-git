@@ -1,0 +1,5 @@
+<dec f='codebrowser/grep.h' l='195' type='2'/>
+<use f='codebrowser/grep.c' l='1905' u='r' c='grep_buffer'/>
+<use f='codebrowser/grep.c' l='1933' c='grep_source_init'/>
+<use f='codebrowser/grep.c' l='1955' c='grep_source_clear_data'/>
+<use f='codebrowser/grep.c' l='2020' c='grep_source_load'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='335' type='unsigned int'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/update-index.c' l='1078' u='r' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='1080' u='w' c='cmd_update_index'/>
+<use f='codebrowser/read-cache.c' l='1766' u='w' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1772' u='r' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='2214' u='r' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2215' u='w' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2221' u='r' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2221' u='r' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2222' u='w' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2224' u='r' c='do_write_index'/>
+<use f='codebrowser/split-index.c' l='81' u='w' c='move_cache_to_base_index'/>
+<use f='codebrowser/split-index.c' l='81' u='r' c='move_cache_to_base_index'/>
+<use f='codebrowser/unpack-trees.c' l='1272' u='w' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1272' u='r' c='unpack_trees'/>

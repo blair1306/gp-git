@@ -1,0 +1,6 @@
+<dec f='codebrowser/apply.h' l='111' type='int'/>
+<use f='codebrowser/apply.c' l='2914' u='a' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='4868' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4873' u='r' c='apply_all_patches'/>
+<use f='codebrowser/apply.c' l='4874' u='r' c='apply_all_patches'/>
+<offset>2496</offset>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/refs/refs-internal.h' l='128' type='int copy_reflog_msg(char * buf, const char * msg)'/>
+<def f='codebrowser/refs.c' l='693' ll='712' type='int copy_reflog_msg(char * buf, const char * msg)'/>
+<doc f='codebrowser/refs/refs-internal.h' l='123'>/*
+ * Copy the reflog message msg to buf, which has been allocated sufficiently
+ * large, while cleaning up the whitespaces.  Especially, convert LF to space,
+ * because reflog file is one line per entry.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='1544' u='c' c='log_ref_write_fd'/>

@@ -1,0 +1,8 @@
+<dec f='include/unistd.h' l='587' type='int execlp(const char * __file, const char * __arg)'/>
+<doc f='include/unistd.h' l='584'>/* Execute FILE, searching in the `PATH&apos; environment variable if
+   it contains no slashes, with all arguments after FILE until a
+   NULL pointer and environment from `environ&apos;.  */</doc>
+<use f='codebrowser/builtin/help.c' l='132' u='c' c='exec_woman_emacs'/>
+<use f='codebrowser/builtin/help.c' l='153' u='c' c='exec_man_konqueror'/>
+<use f='codebrowser/builtin/help.c' l='162' u='c' c='exec_man_man'/>
+<use f='codebrowser/builtin/help.c' l='361' u='c' c='show_info_page'/>

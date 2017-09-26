@@ -1,0 +1,10 @@
+<dec f='codebrowser/color.h' l='27'/>
+<use f='codebrowser/builtin/branch.c' l='43' u='c'/>
+<use f='codebrowser/color.c' l='12' u='c'/>
+<use f='codebrowser/diff.c' l='54' u='c'/>
+<use f='codebrowser/pretty.c' l='983' u='c'/>
+<use f='codebrowser/wt-status.c' l='27' u='c'/>
+<use f='codebrowser/wt-status.c' l='28' u='c'/>
+<use f='codebrowser/wt-status.c' l='29' u='c'/>
+<use f='codebrowser/wt-status.c' l='30' u='c'/>
+<use f='codebrowser/wt-status.c' l='32' u='c'/>

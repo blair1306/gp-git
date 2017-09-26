@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='137' type='int cmd_branch(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/branch.c' l='545' ll='801' type='int cmd_branch(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='371'/>
+<use f='codebrowser/git.c' l='371'/>
+<use f='codebrowser/git.c' l='371'/>
+<use f='codebrowser/git.c' l='371'/>

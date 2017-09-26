@@ -1,0 +1,6 @@
+<def f='codebrowser/compat/bswap.h' l='12' ll='18' type='uint32_t default_swab32(uint32_t val)'/>
+<use f='codebrowser/compat/bswap.h' l='42' u='c' c='git_bswap32'/>
+<doc f='codebrowser/compat/bswap.h' l='8'>/*
+ * Default version that the compiler ought to optimize properly with
+ * constant values.
+ */</doc>

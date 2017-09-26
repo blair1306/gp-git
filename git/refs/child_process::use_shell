@@ -1,0 +1,22 @@
+<dec f='codebrowser/run-command.h' l='44' type='unsigned int'/>
+<use f='codebrowser/archive-tar.c' l='453' u='w' c='write_tar_filter_archive'/>
+<offset>582</offset>
+<use f='codebrowser/builtin/difftool.c' l='220' u='w' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='232' u='w' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='391' u='w' c='run_dir_diff'/>
+<use f='codebrowser/builtin/grep.c' l='395' u='w' c='run_pager'/>
+<use f='codebrowser/connect.c' l='841' u='w' c='git_connect'/>
+<use f='codebrowser/connect.c' l='881' u='w' c='git_connect'/>
+<use f='codebrowser/convert.c' l='422' u='w' c='filter_buffer_or_fd'/>
+<use f='codebrowser/credential.c' l='219' u='w' c='run_credential_helper'/>
+<use f='codebrowser/daemon.c' l='323' u='w' c='run_access_hook'/>
+<use f='codebrowser/diff.c' l='5190' u='w' c='run_textconv'/>
+<use f='codebrowser/editor.c' l='46' u='w' c='launch_editor'/>
+<use f='codebrowser/git.c' l='238' u='w' c='handle_alias'/>
+<use f='codebrowser/imap-send.c' l='951' u='w' c='imap_open_store'/>
+<use f='codebrowser/pager.c' l='100' u='w' c='prepare_pager_args'/>
+<use f='codebrowser/run-command.c' l='395' u='r' c='prepare_cmd'/>
+<use f='codebrowser/run-command.c' l='904' u='w' c='run_command_v_opt_cd_env'/>
+<use f='codebrowser/sub-process.c' l='87' u='w' c='subprocess_start'/>
+<use f='codebrowser/trailer.c' l='238' u='w' c='apply_command'/>
+<use f='codebrowser/upload-pack.c' l='113' u='w' c='create_pack_file'/>

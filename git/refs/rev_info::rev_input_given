@@ -1,0 +1,10 @@
+<dec f='codebrowser/revision.h' l='79' type='int'/>
+<offset>832</offset>
+<doc f='codebrowser/revision.h' l='74'>/*
+	 * Whether the arguments parsed by setup_revisions() included any
+	 * &quot;input&quot; revisions that might still have yielded an empty pending
+	 * list (e.g., patterns like &quot;--all&quot; or &quot;--glob&quot;).
+	 */</doc>
+<use f='codebrowser/builtin/rev-list.c' l='356' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/revision.c' l='1169' u='w' c='init_all_refs_cb'/>
+<use f='codebrowser/revision.c' l='2317' u='r' c='setup_revisions'/>

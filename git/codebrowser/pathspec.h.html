@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pathspec.h source code [codebrowser/pathspec.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="attr_match,attr_match_mode,pathspec,pathspec_item "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/pathspec.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='pathspec.h.html'>pathspec.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/PATHSPEC_H">PATHSPEC_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_H" data-ref="_M/PATHSPEC_H">PATHSPEC_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/* Pathspec magic */</i></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_FROMTOP" data-ref="_M/PATHSPEC_FROMTOP">PATHSPEC_FROMTOP</dfn>	(1&lt;&lt;0)</u></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_MAXDEPTH" data-ref="_M/PATHSPEC_MAXDEPTH">PATHSPEC_MAXDEPTH</dfn>	(1&lt;&lt;1)</u></td></tr>
+<tr><th id="7">7</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_LITERAL" data-ref="_M/PATHSPEC_LITERAL">PATHSPEC_LITERAL</dfn>	(1&lt;&lt;2)</u></td></tr>
+<tr><th id="8">8</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_GLOB" data-ref="_M/PATHSPEC_GLOB">PATHSPEC_GLOB</dfn>		(1&lt;&lt;3)</u></td></tr>
+<tr><th id="9">9</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_ICASE" data-ref="_M/PATHSPEC_ICASE">PATHSPEC_ICASE</dfn>		(1&lt;&lt;4)</u></td></tr>
+<tr><th id="10">10</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_EXCLUDE" data-ref="_M/PATHSPEC_EXCLUDE">PATHSPEC_EXCLUDE</dfn>	(1&lt;&lt;5)</u></td></tr>
+<tr><th id="11">11</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_ATTR" data-ref="_M/PATHSPEC_ATTR">PATHSPEC_ATTR</dfn>		(1&lt;&lt;6)</u></td></tr>
+<tr><th id="12">12</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_ALL_MAGIC" data-ref="_M/PATHSPEC_ALL_MAGIC">PATHSPEC_ALL_MAGIC</dfn>	  \</u></td></tr>
+<tr><th id="13">13</th><td><u>	(PATHSPEC_FROMTOP	| \</u></td></tr>
+<tr><th id="14">14</th><td><u>	 PATHSPEC_MAXDEPTH	| \</u></td></tr>
+<tr><th id="15">15</th><td><u>	 PATHSPEC_LITERAL	| \</u></td></tr>
+<tr><th id="16">16</th><td><u>	 PATHSPEC_GLOB		| \</u></td></tr>
+<tr><th id="17">17</th><td><u>	 PATHSPEC_ICASE		| \</u></td></tr>
+<tr><th id="18">18</th><td><u>	 PATHSPEC_EXCLUDE	| \</u></td></tr>
+<tr><th id="19">19</th><td><u>	 PATHSPEC_ATTR)</u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_ONESTAR" data-ref="_M/PATHSPEC_ONESTAR">PATHSPEC_ONESTAR</dfn> 1	/* the pathspec pattern satisfies GFNM_ONESTAR */</u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>struct</b> <dfn class="type def" id="pathspec" title='pathspec' data-ref="pathspec">pathspec</dfn> {</td></tr>
+<tr><th id="24">24</th><td>	<em>int</em> <dfn class="decl" id="pathspec::nr" title='pathspec::nr' data-ref="pathspec::nr">nr</dfn>;</td></tr>
+<tr><th id="25">25</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="pathspec::has_wildcard" title='pathspec::has_wildcard' data-ref="pathspec::has_wildcard">has_wildcard</dfn>:<var>1</var>;</td></tr>
+<tr><th id="26">26</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="pathspec::recursive" title='pathspec::recursive' data-ref="pathspec::recursive">recursive</dfn>:<var>1</var>;</td></tr>
+<tr><th id="27">27</th><td>	<em>unsigned</em> <dfn class="decl" id="pathspec::magic" title='pathspec::magic' data-ref="pathspec::magic">magic</dfn>;</td></tr>
+<tr><th id="28">28</th><td>	<em>int</em> <dfn class="decl" id="pathspec::max_depth" title='pathspec::max_depth' data-ref="pathspec::max_depth">max_depth</dfn>;</td></tr>
+<tr><th id="29">29</th><td>	<b>struct</b> <dfn class="type def" id="pathspec_item" title='pathspec_item' data-ref="pathspec_item"><a class="type" href="#pathspec_item" title='pathspec_item' data-ref="pathspec_item">pathspec_item</a></dfn> {</td></tr>
+<tr><th id="30">30</th><td>		<em>char</em> *<dfn class="decl" id="pathspec_item::match" title='pathspec_item::match' data-ref="pathspec_item::match">match</dfn>;</td></tr>
+<tr><th id="31">31</th><td>		<em>char</em> *<dfn class="decl" id="pathspec_item::original" title='pathspec_item::original' data-ref="pathspec_item::original">original</dfn>;</td></tr>
+<tr><th id="32">32</th><td>		<em>unsigned</em> <dfn class="decl" id="pathspec_item::magic" title='pathspec_item::magic' data-ref="pathspec_item::magic">magic</dfn>;</td></tr>
+<tr><th id="33">33</th><td>		<em>int</em> <dfn class="decl" id="pathspec_item::len" title='pathspec_item::len' data-ref="pathspec_item::len">len</dfn>, <dfn class="decl" id="pathspec_item::prefix" title='pathspec_item::prefix' data-ref="pathspec_item::prefix">prefix</dfn>;</td></tr>
+<tr><th id="34">34</th><td>		<em>int</em> <dfn class="decl" id="pathspec_item::nowildcard_len" title='pathspec_item::nowildcard_len' data-ref="pathspec_item::nowildcard_len">nowildcard_len</dfn>;</td></tr>
+<tr><th id="35">35</th><td>		<em>int</em> <dfn class="decl" id="pathspec_item::flags" title='pathspec_item::flags' data-ref="pathspec_item::flags">flags</dfn>;</td></tr>
+<tr><th id="36">36</th><td>		<em>int</em> <dfn class="decl" id="pathspec_item::attr_match_nr" title='pathspec_item::attr_match_nr' data-ref="pathspec_item::attr_match_nr">attr_match_nr</dfn>;</td></tr>
+<tr><th id="37">37</th><td>		<b>struct</b> <dfn class="type def" id="attr_match" title='attr_match' data-ref="attr_match"><a class="type" href="#attr_match" title='attr_match' data-ref="attr_match">attr_match</a></dfn> {</td></tr>
+<tr><th id="38">38</th><td>			<em>char</em> *<dfn class="decl" id="attr_match::value" title='attr_match::value' data-ref="attr_match::value">value</dfn>;</td></tr>
+<tr><th id="39">39</th><td>			<b>enum</b> <dfn class="type def" id="attr_match_mode" title='attr_match_mode' data-ref="attr_match_mode"><a class="type" href="#attr_match_mode" title='attr_match_mode' data-ref="attr_match_mode">attr_match_mode</a></dfn> {</td></tr>
+<tr><th id="40">40</th><td>				<dfn class="enum" id="attr_match_mode::MATCH_SET" title='attr_match_mode::MATCH_SET' data-ref="attr_match_mode::MATCH_SET">MATCH_SET</dfn>,</td></tr>
+<tr><th id="41">41</th><td>				<dfn class="enum" id="attr_match_mode::MATCH_UNSET" title='attr_match_mode::MATCH_UNSET' data-ref="attr_match_mode::MATCH_UNSET">MATCH_UNSET</dfn>,</td></tr>
+<tr><th id="42">42</th><td>				<dfn class="enum" id="attr_match_mode::MATCH_VALUE" title='attr_match_mode::MATCH_VALUE' data-ref="attr_match_mode::MATCH_VALUE">MATCH_VALUE</dfn>,</td></tr>
+<tr><th id="43">43</th><td>				<dfn class="enum" id="attr_match_mode::MATCH_UNSPECIFIED" title='attr_match_mode::MATCH_UNSPECIFIED' data-ref="attr_match_mode::MATCH_UNSPECIFIED">MATCH_UNSPECIFIED</dfn></td></tr>
+<tr><th id="44">44</th><td>			} <dfn class="decl" id="attr_match::match_mode" title='attr_match::match_mode' data-ref="attr_match::match_mode">match_mode</dfn>;</td></tr>
+<tr><th id="45">45</th><td>		} *<dfn class="decl" id="pathspec_item::attr_match" title='pathspec_item::attr_match' data-ref="pathspec_item::attr_match">attr_match</dfn>;</td></tr>
+<tr><th id="46">46</th><td>		<b>struct</b> <dfn class="type" id="attr_check" title='attr_check' data-ref="attr_check"><a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a></dfn> *<dfn class="decl" id="pathspec_item::attr_check" title='pathspec_item::attr_check' data-ref="pathspec_item::attr_check">attr_check</dfn>;</td></tr>
+<tr><th id="47">47</th><td>	} *<dfn class="decl" id="pathspec::items" title='pathspec::items' data-ref="pathspec::items">items</dfn>;</td></tr>
+<tr><th id="48">48</th><td>};</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/GUARD_PATHSPEC" data-ref="_M/GUARD_PATHSPEC">GUARD_PATHSPEC</dfn>(ps, mask) \</u></td></tr>
+<tr><th id="51">51</th><td><u>	do { \</u></td></tr>
+<tr><th id="52">52</th><td><u>		if ((ps)-&gt;magic &amp; ~(mask))	       \</u></td></tr>
+<tr><th id="53">53</th><td><u>			die("BUG:%s:%d: unsupported magic %x",	\</u></td></tr>
+<tr><th id="54">54</th><td><u>			    __FILE__, __LINE__, (ps)-&gt;magic &amp; ~(mask)); \</u></td></tr>
+<tr><th id="55">55</th><td><u>	} while (0)</u></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><i>/* parse_pathspec flags */</i></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_PREFER_CWD" data-ref="_M/PATHSPEC_PREFER_CWD">PATHSPEC_PREFER_CWD</dfn> (1&lt;&lt;0) /* No args means match cwd */</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_PREFER_FULL" data-ref="_M/PATHSPEC_PREFER_FULL">PATHSPEC_PREFER_FULL</dfn> (1&lt;&lt;1) /* No args means match everything */</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_MAXDEPTH_VALID" data-ref="_M/PATHSPEC_MAXDEPTH_VALID">PATHSPEC_MAXDEPTH_VALID</dfn> (1&lt;&lt;2) /* max_depth field is valid */</u></td></tr>
+<tr><th id="61">61</th><td><i>/* die if a symlink is part of the given path's directory */</i></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_SYMLINK_LEADING_PATH" data-ref="_M/PATHSPEC_SYMLINK_LEADING_PATH">PATHSPEC_SYMLINK_LEADING_PATH</dfn> (1&lt;&lt;3)</u></td></tr>
+<tr><th id="63">63</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_PREFIX_ORIGIN" data-ref="_M/PATHSPEC_PREFIX_ORIGIN">PATHSPEC_PREFIX_ORIGIN</dfn> (1&lt;&lt;4)</u></td></tr>
+<tr><th id="64">64</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_KEEP_ORDER" data-ref="_M/PATHSPEC_KEEP_ORDER">PATHSPEC_KEEP_ORDER</dfn> (1&lt;&lt;5)</u></td></tr>
+<tr><th id="65">65</th><td><i>/*</i></td></tr>
+<tr><th id="66">66</th><td><i> * For the callers that just need pure paths from somewhere else, not</i></td></tr>
+<tr><th id="67">67</th><td><i> * from command line. Global --*-pathspecs options are ignored. No</i></td></tr>
+<tr><th id="68">68</th><td><i> * magic is parsed in each pathspec either. If PATHSPEC_LITERAL is</i></td></tr>
+<tr><th id="69">69</th><td><i> * allowed, then it will automatically set for every pathspec.</i></td></tr>
+<tr><th id="70">70</th><td><i> */</i></td></tr>
+<tr><th id="71">71</th><td><u>#define <dfn class="macro" id="_M/PATHSPEC_LITERAL_PATH" data-ref="_M/PATHSPEC_LITERAL_PATH">PATHSPEC_LITERAL_PATH</dfn> (1&lt;&lt;6)</u></td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="parse_pathspec" title='parse_pathspec' data-ref="parse_pathspec">parse_pathspec</dfn>(<b>struct</b> <a class="type" href="#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col1 decl" id="61pathspec" title='pathspec' data-type='struct pathspec *' data-ref="61pathspec">pathspec</dfn>,</td></tr>
+<tr><th id="74">74</th><td>			   <em>unsigned</em> <dfn class="local col2 decl" id="62magic_mask" title='magic_mask' data-type='unsigned int' data-ref="62magic_mask">magic_mask</dfn>,</td></tr>
+<tr><th id="75">75</th><td>			   <em>unsigned</em> <dfn class="local col3 decl" id="63flags" title='flags' data-type='unsigned int' data-ref="63flags">flags</dfn>,</td></tr>
+<tr><th id="76">76</th><td>			   <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="64prefix" title='prefix' data-type='const char *' data-ref="64prefix">prefix</dfn>,</td></tr>
+<tr><th id="77">77</th><td>			   <em>const</em> <em>char</em> **<dfn class="local col5 decl" id="65args" title='args' data-type='const char **' data-ref="65args">args</dfn>);</td></tr>
+<tr><th id="78">78</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="copy_pathspec" title='copy_pathspec' data-ref="copy_pathspec">copy_pathspec</dfn>(<b>struct</b> <a class="type" href="#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col6 decl" id="66dst" title='dst' data-type='struct pathspec *' data-ref="66dst">dst</dfn>, <em>const</em> <b>struct</b> <a class="type" href="#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col7 decl" id="67src" title='src' data-type='const struct pathspec *' data-ref="67src">src</dfn>);</td></tr>
+<tr><th id="79">79</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="clear_pathspec" title='clear_pathspec' data-ref="clear_pathspec">clear_pathspec</dfn>(<b>struct</b> <a class="type" href="#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *);</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="ps_strncmp" title='ps_strncmp' data-ref="ps_strncmp">ps_strncmp</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#pathspec_item" title='pathspec_item' data-ref="pathspec_item">pathspec_item</a> *<dfn class="local col8 decl" id="68item" title='item' data-type='const struct pathspec_item *' data-ref="68item">item</dfn>,</td></tr>
+<tr><th id="82">82</th><td>			     <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="69s1" title='s1' data-type='const char *' data-ref="69s1">s1</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="70s2" title='s2' data-type='const char *' data-ref="70s2">s2</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="71n" title='n' data-type='size_t' data-ref="71n">n</dfn>)</td></tr>
+<tr><th id="83">83</th><td>{</td></tr>
+<tr><th id="84">84</th><td>	<b>if</b> (<a class="local col8 ref" href="#68item" title='item' data-ref="68item">item</a>-&gt;<a class="ref" href="#pathspec_item::magic" title='pathspec_item::magic' data-ref="pathspec_item::magic">magic</a> &amp; <a class="macro" href="#9" title="(1&lt;&lt;4)" data-ref="_M/PATHSPEC_ICASE">PATHSPEC_ICASE</a>)</td></tr>
+<tr><th id="85">85</th><td>		<b>return</b> <a class="ref" href="../include/string.h.html#strncasecmp" title='strncasecmp' data-ref="strncasecmp">strncasecmp</a>(<a class="local col9 ref" href="#69s1" title='s1' data-ref="69s1">s1</a>, <a class="local col0 ref" href="#70s2" title='s2' data-ref="70s2">s2</a>, <a class="local col1 ref" href="#71n" title='n' data-ref="71n">n</a>);</td></tr>
+<tr><th id="86">86</th><td>	<b>else</b></td></tr>
+<tr><th id="87">87</th><td>		<b>return</b> <a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#896" title="(__extension__ (__builtin_constant_p (n) &amp;&amp; ((__builtin_constant_p (s1) &amp;&amp; strlen (s1) &lt; ((size_t) (n))) || (__builtin_constant_p (s2) &amp;&amp; strlen (s2) &lt; ((size_t) (n)))) ? __extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (s1) &amp;&amp; __builtin_constant_p (s2) &amp;&amp; (__s1_len = __builtin_strlen (s1), __s2_len = __builtin_strlen (s2), (!((size_t)(const void *)((s1) + 1) - (size_t)(const void *)(s1) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((s2) + 1) - (size_t)(const void *)(s2) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (s1, s2) : (__builtin_constant_p (s1) &amp;&amp; ((size_t)(const void *)((s1) + 1) - (size_t)(const void *)(s1) == 1) &amp;&amp; (__s1_len = __builtin_strlen (s1), __s1_len &lt; 4) ? (__builtin_constant_p (s2) &amp;&amp; ((size_t)(const void *)((s2) + 1) - (size_t)(const void *)(s2) == 1) ? __builtin_strcmp (s1, s2) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (s2); int __result = (((const unsigned char *) (const char *) (s1))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (s1))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (s1))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (s1))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (s2) &amp;&amp; ((size_t)(const void *)((s2) + 1) - (size_t)(const void *)(s2) == 1) &amp;&amp; (__s2_len = __builtin_strlen (s2), __s2_len &lt; 4) ? (__builtin_constant_p (s1) &amp;&amp; ((size_t)(const void *)((s1) + 1) - (size_t)(const void *)(s1) == 1) ? __builtin_strcmp (s1, s2) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (s1); int __result = (((const unsigned char *) (const char *) (s2))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (s2))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (s2))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (s2))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (s1, s2)))); }) : strncmp (s1, s2, n)))" data-ref="_M/strncmp">strncmp</a>(<a class="local col9 ref" href="#69s1" title='s1' data-ref="69s1">s1</a>, <a class="local col0 ref" href="#70s2" title='s2' data-ref="70s2">s2</a>, <a class="local col1 ref" href="#71n" title='n' data-ref="71n">n</a>);</td></tr>
+<tr><th id="88">88</th><td>}</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="ps_strcmp" title='ps_strcmp' data-ref="ps_strcmp">ps_strcmp</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#pathspec_item" title='pathspec_item' data-ref="pathspec_item">pathspec_item</a> *<dfn class="local col2 decl" id="72item" title='item' data-type='const struct pathspec_item *' data-ref="72item">item</dfn>,</td></tr>
+<tr><th id="91">91</th><td>			    <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="73s1" title='s1' data-type='const char *' data-ref="73s1">s1</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="74s2" title='s2' data-type='const char *' data-ref="74s2">s2</dfn>)</td></tr>
+<tr><th id="92">92</th><td>{</td></tr>
+<tr><th id="93">93</th><td>	<b>if</b> (<a class="local col2 ref" href="#72item" title='item' data-ref="72item">item</a>-&gt;<a class="ref" href="#pathspec_item::magic" title='pathspec_item::magic' data-ref="pathspec_item::magic">magic</a> &amp; <a class="macro" href="#9" title="(1&lt;&lt;4)" data-ref="_M/PATHSPEC_ICASE">PATHSPEC_ICASE</a>)</td></tr>
+<tr><th id="94">94</th><td>		<b>return</b> <a class="ref" href="../include/string.h.html#strcasecmp" title='strcasecmp' data-ref="strcasecmp">strcasecmp</a>(<a class="local col3 ref" href="#73s1" title='s1' data-ref="73s1">s1</a>, <a class="local col4 ref" href="#74s2" title='s2' data-ref="74s2">s2</a>);</td></tr>
+<tr><th id="95">95</th><td>	<b>else</b></td></tr>
+<tr><th id="96">96</th><td>		<b>return</b> <a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (s1) &amp;&amp; __builtin_constant_p (s2) &amp;&amp; (__s1_len = __builtin_strlen (s1), __s2_len = __builtin_strlen (s2), (!((size_t)(const void *)((s1) + 1) - (size_t)(const void *)(s1) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((s2) + 1) - (size_t)(const void *)(s2) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (s1, s2) : (__builtin_constant_p (s1) &amp;&amp; ((size_t)(const void *)((s1) + 1) - (size_t)(const void *)(s1) == 1) &amp;&amp; (__s1_len = __builtin_strlen (s1), __s1_len &lt; 4) ? (__builtin_constant_p (s2) &amp;&amp; ((size_t)(const void *)((s2) + 1) - (size_t)(const void *)(s2) == 1) ? __builtin_strcmp (s1, s2) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (s2); int __result = (((const unsigned char *) (const char *) (s1))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (s1))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (s1))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (s1))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (s2) &amp;&amp; ((size_t)(const void *)((s2) + 1) - (size_t)(const void *)(s2) == 1) &amp;&amp; (__s2_len = __builtin_strlen (s2), __s2_len &lt; 4) ? (__builtin_constant_p (s1) &amp;&amp; ((size_t)(const void *)((s1) + 1) - (size_t)(const void *)(s1) == 1) ? __builtin_strcmp (s1, s2) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (s1); int __result = (((const unsigned char *) (const char *) (s2))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (s2))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (s2))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (s2))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (s1, s2)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col3 ref" href="#73s1" title='s1' data-ref="73s1">s1</a>, <a class="local col4 ref" href="#74s2" title='s2' data-ref="74s2">s2</a>);</td></tr>
+<tr><th id="97">97</th><td>}</td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="add_pathspec_matches_against_index" title='add_pathspec_matches_against_index' data-ref="add_pathspec_matches_against_index">add_pathspec_matches_against_index</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col5 decl" id="75pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="75pathspec">pathspec</dfn>,</td></tr>
+<tr><th id="100">100</th><td>					       <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col6 decl" id="76istate" title='istate' data-type='const struct index_state *' data-ref="76istate">istate</dfn>,</td></tr>
+<tr><th id="101">101</th><td>					       <em>char</em> *<dfn class="local col7 decl" id="77seen" title='seen' data-type='char *' data-ref="77seen">seen</dfn>);</td></tr>
+<tr><th id="102">102</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="find_pathspecs_matching_against_index" title='find_pathspecs_matching_against_index' data-ref="find_pathspecs_matching_against_index">find_pathspecs_matching_against_index</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col8 decl" id="78pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="78pathspec">pathspec</dfn>,</td></tr>
+<tr><th id="103">103</th><td>						   <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col9 decl" id="79istate" title='istate' data-type='const struct index_state *' data-ref="79istate">istate</dfn>);</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><u>#<span data-ppcond="1">endif</span> /* PATHSPEC_H */</u></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='apply.c.html'>codebrowser/apply.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

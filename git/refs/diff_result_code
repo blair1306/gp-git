@@ -1,0 +1,10 @@
+<dec f='codebrowser/diff.h' l='360' type='int diff_result_code(struct diff_options * , int )'/>
+<use f='codebrowser/builtin/diff-files.c' l='74' u='c' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-index.c' l='60' u='c' c='cmd_diff_index'/>
+<use f='codebrowser/builtin/diff-tree.c' l='186' u='c' c='cmd_diff_tree'/>
+<use f='codebrowser/builtin/diff.c' l='466' u='c' c='cmd_diff'/>
+<use f='codebrowser/builtin/log.c' l='398' u='c' c='cmd_log_walk'/>
+<use f='codebrowser/diff-no-index.c' l='302' u='c' c='diff_no_index'/>
+<def f='codebrowser/diff.c' l='5025' ll='5042' type='int diff_result_code(struct diff_options * opt, int status)'/>
+<use f='codebrowser/wt-status.c' l='2270' u='c' c='has_unstaged_changes'/>
+<use f='codebrowser/wt-status.c' l='2291' u='c' c='has_uncommitted_changes'/>

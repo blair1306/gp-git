@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='181' type='int repo_config_get_bool(struct repository * repo, const char * key, int * dest)'/>
+<def f='codebrowser/config.c' l='1974' ll='1979' type='int repo_config_get_bool(struct repository * repo, const char * key, int * dest)'/>
+<use f='codebrowser/config.c' l='2049' u='c' c='git_config_get_bool'/>
+<use f='codebrowser/submodule.c' l='292' u='c' c='is_submodule_active'/>

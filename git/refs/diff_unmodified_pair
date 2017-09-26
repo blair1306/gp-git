@@ -1,0 +1,12 @@
+<dec f='codebrowser/diffcore.h' l='91' type='int diff_unmodified_pair(struct diff_filepair * )'/>
+<use f='codebrowser/combine-diff.c' l='35' u='c' c='intersect_paths'/>
+<def f='codebrowser/diff.c' l='4258' ll='4288' type='int diff_unmodified_pair(struct diff_filepair * p)'/>
+<use f='codebrowser/diff.c' l='4292' u='c' c='diff_flush_patch'/>
+<use f='codebrowser/diff.c' l='4305' u='c' c='diff_flush_stat'/>
+<use f='codebrowser/diff.c' l='4318' u='c' c='diff_flush_checkdiff'/>
+<use f='codebrowser/diff.c' l='4333' u='c' c='diff_queue_is_empty'/>
+<use f='codebrowser/diff.c' l='4600' u='c' c='diff_get_patch_id'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='146' u='c' c='pickaxe_match'/>
+<use f='codebrowser/diffcore-rename.c' l='413' u='c' c='too_many_rename_candidates'/>
+<use f='codebrowser/diffcore-rename.c' l='557' u='c' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='651' u='c' c='diffcore_rename'/>

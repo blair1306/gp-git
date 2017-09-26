@@ -1,0 +1,23 @@
+<dec f='codebrowser/cache.h' l='1126' type='char * strbuf_realpath(struct strbuf * resolved, const char * path, int die_on_error)'/>
+<def f='codebrowser/abspath.c' l='81' ll='203' type='char * strbuf_realpath(struct strbuf * resolved, const char * path, int die_on_error)'/>
+<use f='codebrowser/abspath.c' l='208' u='c' c='real_path'/>
+<use f='codebrowser/abspath.c' l='214' u='c' c='real_path_if_valid'/>
+<use f='codebrowser/abspath.c' l='222' u='c' c='real_pathdup'/>
+<doc f='codebrowser/abspath.c' l='69'>/*
+ * Return the real path (i.e., absolute path, with symlinks resolved
+ * and extra slashes removed) equivalent to the specified path.  (If
+ * you want an absolute path but don&apos;t mind links, use
+ * absolute_path().)  Places the resolved realpath in the provided strbuf.
+ *
+ * The directory part of path (i.e., everything up to the last
+ * dir_sep) must denote a valid, existing directory, but the last
+ * component need not exist.  If die_on_error is set, then die with an
+ * informative error message if there is a problem.  Otherwise, return
+ * NULL on errors (without generating any output).
+ */</doc>
+<use f='codebrowser/config.c' l='190' u='c' c='prepare_include_condition_pattern'/>
+<use f='codebrowser/config.c' l='220' u='c' c='include_by_gitdir'/>
+<use f='codebrowser/sha1_file.c' l='358' u='c' c='link_alt_odb_entry'/>
+<use f='codebrowser/strbuf.c' l='719' u='c' c='strbuf_add_real_path'/>
+<use f='codebrowser/strbuf.c' l='723' u='c' c='strbuf_add_real_path'/>
+<use f='codebrowser/transport.c' l='1265' u='c' c='refs_from_alternate_cb'/>

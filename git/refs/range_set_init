@@ -1,0 +1,8 @@
+<dec f='codebrowser/line-log.h' l='28' type='void range_set_init(struct range_set * , size_t prealloc)'/>
+<use f='codebrowser/builtin/blame.c' l='874' u='c' c='cmd_blame'/>
+<def f='codebrowser/line-log.c' l='27' ll='33' type='void range_set_init(struct range_set * rs, size_t prealloc)'/>
+<use f='codebrowser/line-log.c' l='44' u='c' c='range_set_copy'/>
+<use f='codebrowser/line-log.c' l='230' u='c' c='diff_ranges_init'/>
+<use f='codebrowser/line-log.c' l='231' u='c' c='diff_ranges_init'/>
+<use f='codebrowser/line-log.c' l='243' u='c' c='line_log_data_init'/>
+<use f='codebrowser/line-log.c' l='1033' u='c' c='process_diff_filepair'/>

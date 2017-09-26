@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='395' type='int parse_rename_score(const char ** cp_p)'/>
+<def f='codebrowser/diff.c' l='4076' ll='4110' type='int parse_rename_score(const char ** cp_p)'/>
+<use f='codebrowser/diff.c' l='4135' u='c' c='diff_scoreopt_parse'/>
+<use f='codebrowser/diff.c' l='4145' u='c' c='diff_scoreopt_parse'/>
+<use f='codebrowser/merge-recursive.c' l='2230' u='c' c='parse_merge_opt'/>

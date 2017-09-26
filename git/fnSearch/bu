@@ -1,0 +1,14 @@
+BUG_fl|BUG_fl
+buffer_copy_bytes|buffer_copy_bytes
+buffer_deinit|buffer_deinit
+buffer_fdinit|buffer_fdinit
+buffer_ferror|buffer_ferror
+buffer_init|buffer_init
+buffer_read_binary|buffer_read_binary
+buffer_read_char|buffer_read_char
+buffer_read_line|buffer_read_line
+buffer_skip_bytes|buffer_skip_bytes
+buffer_tmpfile_init|buffer_tmpfile_init
+buffer_tmpfile_prepare_to_read|buffer_tmpfile_prepare_to_read
+buffer_tmpfile_rewind|buffer_tmpfile_rewind
+buffer_is_binary|buffer_is_binary

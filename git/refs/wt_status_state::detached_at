@@ -1,0 +1,5 @@
+<dec f='codebrowser/wt-status.h' l='108' type='int'/>
+<offset>256</offset>
+<use f='codebrowser/ref-filter.c' l='1268' u='r' c='get_head_description'/>
+<use f='codebrowser/wt-status.c' l='1466' u='w' c='wt_status_get_detached_from'/>
+<use f='codebrowser/wt-status.c' l='1580' u='r' c='wt_longstatus_print'/>

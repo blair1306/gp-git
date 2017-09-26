@@ -1,0 +1,57 @@
+<dec f='codebrowser/sha1dc_git.h' l='14' type='void git_SHA1DCUpdate(SHA1_CTX * ctx, const void * data, unsigned long len)'/>
+<doc f='codebrowser/sha1dc_git.h' l='11'>/*
+ * Same as SHA1DCUpdate, but adjust types to match git&apos;s usual interface.
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='255' macro='1' u='c'/>
+<use f='codebrowser/builtin/index-pack.c' l='452' macro='1' u='c'/>
+<use f='codebrowser/builtin/index-pack.c' l='472' macro='1' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='140' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='433' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='447' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='448' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='453' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='454' macro='1' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='65' macro='1' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='569' macro='1' u='c'/>
+<use f='codebrowser/bulk-checkin.c' l='126' macro='1' u='c'/>
+<use f='codebrowser/bulk-checkin.c' l='204' macro='1' u='c'/>
+<use f='codebrowser/csum-file.c' l='50' macro='1' u='c'/>
+<use f='codebrowser/csum-file.c' l='113' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4558' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4564' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4572' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4615' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4617' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4624' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4629' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4633' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4635' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4647' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='4649' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='1100' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='1101' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='1249' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='1267' macro='1' u='c'/>
+<use f='codebrowser/http-push.c' l='770' macro='1' u='c'/>
+<use f='codebrowser/http.c' l='2141' macro='1' u='c'/>
+<use f='codebrowser/pack-check.c' l='75' macro='1' u='c'/>
+<use f='codebrowser/pack-check.c' l='178' macro='1' u='c'/>
+<use f='codebrowser/pack-write.c' l='226' macro='1' u='c'/>
+<use f='codebrowser/pack-write.c' l='228' macro='1' u='c'/>
+<use f='codebrowser/pack-write.c' l='243' macro='1' u='c'/>
+<use f='codebrowser/pack-write.c' l='252' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='1528' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='1923' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='1968' macro='1' u='c'/>
+<use f='codebrowser/rerere.c' l='441' macro='1' u='c'/>
+<use f='codebrowser/rerere.c' l='443' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1658' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1669' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3188' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3189' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3336' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3344' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3907' macro='1' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3926' macro='1' u='c'/>
+<def f='codebrowser/sha1dc_git.c' l='14' ll='24' type='void git_SHA1DCUpdate(SHA1_CTX * ctx, const void * vdata, unsigned long len)'/>
+<use f='codebrowser/t/helper/test-sha1.c' l='47' macro='1' u='c'/>

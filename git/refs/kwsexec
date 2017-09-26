@@ -1,0 +1,17 @@
+<dec f='codebrowser/kwset.h' l='59' type='size_t kwsexec(kwset_t , const char * , size_t , struct kwsmatch * )'/>
+<doc f='codebrowser/kwset.h' l='53'>/* Search through the given buffer for a member of the keyword set.
+   Return a pointer to the leftmost longest match found, or NULL if
+   no match is found.  If foundlen is non-NULL, store the length of
+   the matching substring in the integer it points to.  Similarly,
+   if foundindex is non-NULL, store the index of the particular
+   keyword found therein. */</doc>
+<use f='codebrowser/diffcore-pickaxe.c' l='99' u='c' c='contains'/>
+<use f='codebrowser/grep.c' l='1085' u='c' c='fixmatch'/>
+<def f='codebrowser/kwset.c' l='742' ll='760' type='size_t kwsexec(kwset_t kws, const char * text, size_t size, struct kwsmatch * kwsmatch)'/>
+<doc f='codebrowser/kwset.c' l='735'>/* Search through the given text for a match of any member of the
+   given keyword set.  Return a pointer to the first character of
+   the matching substring, or NULL if no match is found.  If FOUNDLEN
+   is non-NULL store in the referenced location the length of the
+   matching substring.  Similarly, if FOUNDIDX is non-NULL, store
+   in the referenced location the index number of the particular
+   keyword matched. */</doc>

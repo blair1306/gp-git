@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1724' type='int is_pack_valid(struct packed_git * )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='728' u='c' c='write_reused_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1025' u='c' c='want_object_in_pack'/>
+<use f='codebrowser/pack-check.c' l='63' u='c' c='verify_packfile'/>
+<def f='codebrowser/sha1_file.c' l='2813' ll='2832' type='int is_pack_valid(struct packed_git * p)'/>
+<use f='codebrowser/sha1_file.c' l='2858' u='c' c='fill_pack_entry'/>

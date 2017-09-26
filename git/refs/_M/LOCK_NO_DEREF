@@ -1,0 +1,14 @@
+<dec f='codebrowser/lockfile.h' l='152'/>
+<doc f='codebrowser/lockfile.h' l='142'>/*
+ * Usually symbolic links in the destination path are resolved. This
+ * means that (1) the lockfile is created by adding &quot;.lock&quot; to the
+ * resolved path, and (2) upon commit, the resolved path is
+ * overwritten. However, if `LOCK_NO_DEREF` is set, then the lockfile
+ * is created by adding &quot;.lock&quot; to the path argument itself. This
+ * option is used, for example, when detaching a symbolic reference,
+ * which for backwards-compatibility reasons, can be a symbolic link
+ * containing the name of the referred-to-reference.
+ */</doc>
+<use f='codebrowser/lockfile.c' l='79' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='540' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='868' u='c'/>

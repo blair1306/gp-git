@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='149' type='uint32_t'/>
+<offset>64</offset>
+<use f='codebrowser/read-cache.c' l='1767' u='r' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='2228' u='w' c='do_write_index'/>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/line-log.h' l='47' type='struct line_log_data *'/>
+<offset>0</offset>
+<use f='codebrowser/line-log.c' l='256' u='r' c='free_line_log_data'/>
+<use f='codebrowser/line-log.c' l='276' u='r' c='search_line_log_data'/>
+<use f='codebrowser/line-log.c' l='302' u='w' c='line_log_data_insert'/>
+<use f='codebrowser/line-log.c' l='302' u='r' c='line_log_data_insert'/>
+<use f='codebrowser/line-log.c' l='303' u='w' c='line_log_data_insert'/>
+<use f='codebrowser/line-log.c' l='305' u='w' c='line_log_data_insert'/>
+<use f='codebrowser/line-log.c' l='615' u='r' c='parse_lines'/>
+<use f='codebrowser/line-log.c' l='642' u='r' c='line_log_data_copy'/>
+<use f='codebrowser/line-log.c' l='645' u='w' c='line_log_data_copy'/>
+<use f='codebrowser/line-log.c' l='647' u='r' c='line_log_data_copy'/>
+<use f='codebrowser/line-log.c' l='672' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='675' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='677' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='680' u='r' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='686' u='a' c='line_log_data_merge'/>
+<use f='codebrowser/line-log.c' l='731' u='r' c='lookup_line_range'/>
+<use f='codebrowser/line-log.c' l='751' u='r' c='line_log_init'/>
+<use f='codebrowser/line-log.c' l='787' u='r' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='980' u='r' c='dump_diff_hacky'/>
+<use f='codebrowser/line-log.c' l='1003' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1091' u='r' c='process_all_files'/>

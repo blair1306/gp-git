@@ -1,0 +1,6 @@
+<dec f='codebrowser/trace.h' l='86'/>
+<use f='codebrowser/exec_cmd.c' l='118' u='c'/>
+<use f='codebrowser/git.c' l='268' u='c'/>
+<use f='codebrowser/git.c' l='340' u='c'/>
+<use f='codebrowser/git.c' l='572' u='c'/>
+<use f='codebrowser/run-command.c' l='626' u='c'/>

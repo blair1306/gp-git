@@ -1,0 +1,7 @@
+<def f='codebrowser/apply.c' l='205' ll='231'/>
+<size>256</size>
+<doc f='codebrowser/apply.c' l='200'>/*
+ * This represents a &quot;patch&quot; to a file, both metainfo changes
+ * such as creation/deletion, filemode and content changes represented
+ * as a series of fragments.
+ */</doc>

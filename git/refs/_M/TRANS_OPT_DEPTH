@@ -1,0 +1,6 @@
+<dec f='codebrowser/transport.h' l='193'/>
+<doc f='codebrowser/transport.h' l='192'>/* Limit the depth of the fetch if not null */</doc>
+<use f='codebrowser/builtin/clone.c' l='1091' u='c'/>
+<use f='codebrowser/builtin/fetch.c' l='1036' u='c'/>
+<use f='codebrowser/builtin/fetch.c' l='1068' u='c'/>
+<use f='codebrowser/transport.c' l='145' u='c'/>

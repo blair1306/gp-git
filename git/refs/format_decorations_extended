@@ -1,0 +1,9 @@
+<dec f='codebrowser/log-tree.h' l='16' type='void format_decorations_extended(struct strbuf * sb, const struct commit * commit, int use_color, const char * prefix, const char * separator, const char * suffix)'/>
+<def f='codebrowser/log-tree.c' l='230' ll='281' type='void format_decorations_extended(struct strbuf * sb, const struct commit * commit, int use_color, const char * prefix, const char * separator, const char * suffix)'/>
+<use f='codebrowser/log-tree.c' l='291' macro='1' u='c'/>
+<doc f='codebrowser/log-tree.c' l='226'>/*
+ * The caller makes sure there is no funny color before calling.
+ * format_decorations_extended makes sure the same after return.
+ */</doc>
+<use f='codebrowser/pretty.c' l='1181' macro='1' u='c'/>
+<use f='codebrowser/pretty.c' l='1185' u='c' c='format_commit_one'/>

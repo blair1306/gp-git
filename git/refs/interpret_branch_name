@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1388' type='int interpret_branch_name(const char * str, int len, struct strbuf * , unsigned int allowed)'/>
+<use f='codebrowser/refs.c' l='467' u='c' c='substitute_branch_name'/>
+<use f='codebrowser/revision.c' l='150' u='c' c='add_pending_object_with_path'/>
+<use f='codebrowser/sha1_name.c' l='1199' u='c' c='reinterpret'/>
+<def f='codebrowser/sha1_name.c' l='1272' ll='1319' type='int interpret_branch_name(const char * name, int namelen, struct strbuf * buf, unsigned int allowed)'/>
+<use f='codebrowser/sha1_name.c' l='1324' u='c' c='strbuf_branchname'/>

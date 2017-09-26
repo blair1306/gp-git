@@ -1,0 +1,4 @@
+<dec f='codebrowser/tempfile.h' l='88' type='char'/>
+<offset>224</offset>
+<use f='codebrowser/tempfile.c' l='101' u='r' c='prepare_tempfile_object'/>
+<use f='codebrowser/tempfile.c' l='110' u='w' c='prepare_tempfile_object'/>

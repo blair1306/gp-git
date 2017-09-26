@@ -1,0 +1,37 @@
+<dec f='codebrowser/ref-filter.h' l='43' type='char []'/>
+<use f='codebrowser/builtin/branch.c' l='293' u='r' c='calc_maxwidth'/>
+<use f='codebrowser/builtin/branch.c' l='296' u='r' c='calc_maxwidth'/>
+<use f='codebrowser/builtin/branch.c' l='297' u='r' c='calc_maxwidth'/>
+<offset>448</offset>
+<use f='codebrowser/ref-filter.c' l='1303' u='r' c='get_refname'/>
+<use f='codebrowser/ref-filter.c' l='1321' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1351' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1362' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1391' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1435' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1438' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1466' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1469' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1782' u='r' c='new_ref_array_item'/>
+<use f='codebrowser/ref-filter.c' l='1918' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='2022' c='cmp_ref_sorting'/>
+<use f='codebrowser/ref-filter.c' l='2022' c='cmp_ref_sorting'/>

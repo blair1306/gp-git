@@ -1,0 +1,10 @@
+<dec f='codebrowser/graph.h' l='116' type='int graph_show_remainder(struct git_graph * graph)'/>
+<use f='codebrowser/builtin/rev-list.c' l='158' u='c' c='show_commit'/>
+<use f='codebrowser/builtin/rev-list.c' l='165' u='c' c='show_commit'/>
+<doc f='codebrowser/graph.h' l='112'>/*
+ * If the graph is non-NULL, print the rest of the history graph for this
+ * commit to stdout.  Does not print a terminating newline on the last line.
+ */</doc>
+<def f='codebrowser/graph.c' l='1311' ll='1341' type='int graph_show_remainder(struct git_graph * graph)'/>
+<use f='codebrowser/graph.c' l='1398' u='c' c='graph_show_commit_msg'/>
+<use f='codebrowser/log-tree.c' l='558' u='c' c='show_log'/>

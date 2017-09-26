@@ -1,0 +1,21 @@
+<dec f='codebrowser/path.h' l='75' type='const char * git_path_merge_msg()'/>
+<use f='codebrowser/branch.c' l='331' u='c' c='remove_branch_state'/>
+<use f='codebrowser/builtin/commit.c' l='731' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='742' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1798' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/merge.c' l='245' u='c' c='drop_save'/>
+<use f='codebrowser/builtin/merge.c' l='737' u='c' c='read_merge_msg'/>
+<use f='codebrowser/builtin/merge.c' l='770' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/merge.c' l='772' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/merge.c' l='775' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/merge.c' l='846' u='c' c='suggest_conflicts'/>
+<use f='codebrowser/builtin/merge.c' l='928' u='c' c='write_merge_state'/>
+<def f='codebrowser/path.c' l='1362' macro='1' type='const char * git_path_merge_msg()'/>
+<use f='codebrowser/sequencer.c' l='940' u='c' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1078' u='c' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1092' u='c' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1098' u='c' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1852' u='c' c='error_failed_squash'/>
+<use f='codebrowser/sequencer.c' l='1853' u='c' c='error_failed_squash'/>
+<use f='codebrowser/sequencer.c' l='1855' u='c' c='error_failed_squash'/>
+<use f='codebrowser/wt-status.c' l='1284' u='c' c='show_rebase_in_progress'/>

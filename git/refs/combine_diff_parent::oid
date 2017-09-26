@@ -1,0 +1,18 @@
+<dec f='codebrowser/diff.h' l='230' type='struct object_id'/>
+<offset>64</offset>
+<use f='codebrowser/combine-diff.c' l='49' u='a' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='80' u='a' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='918' u='m' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='1091' u='a' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1140' u='a' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1141' u='a' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1147' u='a' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1207' u='a' c='show_raw_diff'/>
+<use f='codebrowser/combine-diff.c' l='1272' u='a' c='combined_pair'/>
+<use f='codebrowser/combine-diff.c' l='1273' u='a' c='combined_pair'/>
+<use f='codebrowser/diff-lib.c' l='158' u='a' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='354' u='a' c='show_modified'/>
+<use f='codebrowser/diff-lib.c' l='357' u='a' c='show_modified'/>
+<use f='codebrowser/tree-diff.c' l='78' u='a' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='92' u='a' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='251' u='a' c='emit_path'/>

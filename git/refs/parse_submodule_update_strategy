@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule.h' l='65' type='int parse_submodule_update_strategy(const char * value, struct submodule_update_strategy * dst)'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1019' u='c' c='update_clone'/>
+<use f='codebrowser/submodule-config.c' l='432' u='c' c='parse_config'/>
+<def f='codebrowser/submodule.c' l='401' ll='420' type='int parse_submodule_update_strategy(const char * value, struct submodule_update_strategy * dst)'/>

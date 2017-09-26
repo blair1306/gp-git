@@ -1,0 +1,5 @@
+<def f='codebrowser/help.h' l='4' ll='11'/>
+<size>16</size>
+<mbr r='cmdnames::alloc' o='0' t='int'/>
+<mbr r='cmdnames::cnt' o='32' t='int'/>
+<mbr r='cmdnames::names' o='64' t='struct cmdname **'/>

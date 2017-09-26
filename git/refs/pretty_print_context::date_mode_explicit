@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='156' type='unsigned int'/>
+<offset>384</offset>
+<use f='codebrowser/builtin/rev-list.c' l='123' u='w' c='show_commit'/>
+<use f='codebrowser/log-tree.c' l='674' u='w' c='show_log'/>
+<use f='codebrowser/pretty.c' l='1195' u='r' c='format_commit_one'/>

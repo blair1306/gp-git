@@ -1,0 +1,11 @@
+<dec f='codebrowser/remote.h' l='270' type='struct ref * guess_remote_head(const struct ref * head, const struct ref * refs, int all)'/>
+<doc f='codebrowser/remote.h' l='264'>/*
+ * Find refs from a list which are likely to be pointed to by the given HEAD
+ * ref. If &apos;all&apos; is false, returns the most likely ref; otherwise, returns a
+ * list of all candidate refs. If no match is found (or &apos;head&apos; is NULL),
+ * returns NULL. All returns are newly allocated and should be freed.
+ */</doc>
+<use f='codebrowser/builtin/clone.c' l='551' u='c' c='wanted_peer_refs'/>
+<use f='codebrowser/builtin/clone.c' l='1134' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/remote.c' l='471' u='c' c='get_head_names'/>
+<def f='codebrowser/remote.c' l='2152' ll='2191' type='struct ref * guess_remote_head(const struct ref * head, const struct ref * refs, int all)'/>

@@ -1,0 +1,25 @@
+<def f='codebrowser/kwset.c' l='59' ll='69'/>
+<size>56</size>
+<doc f='codebrowser/kwset.c' l='58'>/* Node of a trie representing a set of reversed keywords. */</doc>
+<def f='codebrowser/path.c' l='151' ll='156'/>
+<size>2072</size>
+<doc f='codebrowser/path.c' l='131'>/*
+ * A compressed trie.  A trie node consists of zero or more characters that
+ * are common to all elements with this prefix, optionally followed by some
+ * children.  If value is not NULL, the trie node is a terminal node.
+ *
+ * For example, consider the following set of strings:
+ * abc
+ * def
+ * definite
+ * definition
+ *
+ * The trie would look like:
+ * root: len = 0, children a and d non-NULL, value = NULL.
+ *    a: len = 2, contents = bc, value = (data for &quot;abc&quot;)
+ *    d: len = 2, contents = ef, children i non-NULL, value = (data for &quot;def&quot;)
+ *       i: len = 3, contents = nit, children e and i non-NULL, value = NULL
+ *           e: len = 0, children all NULL, value = (data for &quot;definite&quot;)
+ *           i: len = 2, contents = on, children all NULL,
+ *              value = (data for &quot;definition&quot;)
+ */</doc>

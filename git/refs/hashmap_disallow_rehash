@@ -1,0 +1,16 @@
+<def f='codebrowser/hashmap.h' l='360' ll='363' type='void hashmap_disallow_rehash(struct hashmap * map, unsigned int value)'/>
+<doc f='codebrowser/hashmap.h' l='347'>/*
+ * Disallow/allow rehashing of the hashmap.
+ * This is useful if the caller knows that the hashmap needs multi-threaded
+ * access.  The caller is still required to guard/lock searches and inserts
+ * in a manner appropriate to their usage.  This simply prevents the table
+ * from being unexpectedly re-mapped.
+ *
+ * It is up to the caller to ensure that the hashmap is initialized to a
+ * reasonable size to prevent poor performance.
+ *
+ * A call to allow rehashing does not force a rehash; that might happen
+ * with the next insert or delete.
+ */</doc>
+<use f='codebrowser/name-hash.c' l='587' u='c' c='lazy_init_name_hash'/>
+<use f='codebrowser/name-hash.c' l='589' u='c' c='lazy_init_name_hash'/>

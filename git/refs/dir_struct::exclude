@@ -1,0 +1,11 @@
+<dec f='codebrowser/dir.h' l='190' type='struct exclude *'/>
+<offset>832</offset>
+<use f='codebrowser/dir.c' l='1083' u='w' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1091' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1140' u='w' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1145' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1146' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1147' u='w' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1148' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1228' u='r' c='last_exclude_matching'/>
+<use f='codebrowser/dir.c' l='1229' u='r' c='last_exclude_matching'/>

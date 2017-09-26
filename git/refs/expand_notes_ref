@@ -1,0 +1,6 @@
+<dec f='codebrowser/notes.h' l='303' type='void expand_notes_ref(struct strbuf * sb)'/>
+<doc f='codebrowser/notes.h' l='302'>/* Expand inplace a note ref like &quot;foo&quot; or &quot;notes/foo&quot; into &quot;refs/notes/foo&quot; */</doc>
+<use f='codebrowser/builtin/notes.c' l='997' u='c' c='cmd_notes'/>
+<def f='codebrowser/notes.c' l='1309' ll='1317' type='void expand_notes_ref(struct strbuf * sb)'/>
+<use f='codebrowser/notes.c' l='1325' u='c' c='expand_loose_notes_ref'/>
+<use f='codebrowser/revision.c' l='1938' u='c' c='handle_revision_opt'/>

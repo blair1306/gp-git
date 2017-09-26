@@ -1,0 +1,21 @@
+<dec f='codebrowser/decorate.h' l='16' type='void * lookup_decoration(struct decoration * n, const struct object * obj)'/>
+<use f='codebrowser/blame.c' l='1365' u='c' c='first_scapegoat'/>
+<use f='codebrowser/builtin/fast-export.c' l='182' u='c' c='get_object_mark'/>
+<use f='codebrowser/builtin/fsck.c' l='52' u='c' c='describe_object'/>
+<use f='codebrowser/builtin/rev-list.c' l='106' u='c' c='show_commit'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='41' u='c' c='lookup_object_buffer'/>
+<def f='codebrowser/decorate.c' l='68' ll='85' type='void * lookup_decoration(struct decoration * n, const struct object * obj)'/>
+<doc f='codebrowser/decorate.c' l='67'>/* Lookup a decoration pointer */</doc>
+<use f='codebrowser/fsck.c' l='306' u='c' c='get_object_name'/>
+<use f='codebrowser/fsck.c' l='318' u='c' c='put_object_name'/>
+<use f='codebrowser/fsck.c' l='334' u='c' c='describe_object'/>
+<use f='codebrowser/line-log.c' l='702' u='c' c='add_line_range'/>
+<use f='codebrowser/line-log.c' l='716' u='c' c='clear_commit_line_range'/>
+<use f='codebrowser/line-log.c' l='729' u='c' c='lookup_line_range'/>
+<use f='codebrowser/log-tree.c' l='89' u='c' c='get_name_decoration'/>
+<use f='codebrowser/log-tree.c' l='174' u='c' c='show_children'/>
+<use f='codebrowser/revision.c' l='518' u='c' c='compact_treesame'/>
+<use f='codebrowser/revision.c' l='554' u='c' c='update_treesame'/>
+<use f='codebrowser/revision.c' l='2403' u='c' c='remove_duplicate_parents'/>
+<use f='codebrowser/revision.c' l='2438' u='c' c='locate_simplify_state'/>
+<use f='codebrowser/revision.c' l='2505' u='c' c='leave_one_treesame_to_parent'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/strbuf.h' l='589' type='void strbuf_branchname(struct strbuf * sb, const char * name, unsigned int allowed)'/>
+<doc f='codebrowser/strbuf.h' l='578'>/*
+ * Copy &quot;name&quot; to &quot;sb&quot;, expanding any special @-marks as handled by
+ * interpret_branch_name(). The result is a non-qualified branch name
+ * (so &quot;foo&quot; or &quot;origin/master&quot; instead of &quot;refs/heads/foo&quot; or
+ * &quot;refs/remotes/origin/master&quot;).
+ *
+ * Note that the resulting name may not be a syntactically valid refname.
+ *
+ * If &quot;allowed&quot; is non-zero, restrict the set of allowed expansions. See
+ * interpret_branch_name() for details.
+ */</doc>
+<use f='codebrowser/builtin/branch.c' l='223' u='c' c='delete_branches'/>
+<use f='codebrowser/builtin/checkout.c' l='461' u='c' c='setup_branch_path'/>
+<use f='codebrowser/builtin/merge.c' l='443' u='c' c='merge_name'/>
+<def f='codebrowser/sha1_name.c' l='1321' ll='1329' type='void strbuf_branchname(struct strbuf * sb, const char * name, unsigned int allowed)'/>
+<use f='codebrowser/sha1_name.c' l='1333' u='c' c='strbuf_check_branch_ref'/>

@@ -1,0 +1,7 @@
+<def f='codebrowser/pack-bitmap.h' l='8' ll='14'/>
+<size>32</size>
+<mbr r='bitmap_disk_header::magic' o='0' t='char [4]'/>
+<mbr r='bitmap_disk_header::version' o='32' t='uint16_t'/>
+<mbr r='bitmap_disk_header::options' o='48' t='uint16_t'/>
+<mbr r='bitmap_disk_header::entry_count' o='64' t='uint32_t'/>
+<mbr r='bitmap_disk_header::checksum' o='96' t='unsigned char [20]'/>

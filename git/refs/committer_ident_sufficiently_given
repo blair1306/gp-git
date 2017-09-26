@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1854' type='int committer_ident_sufficiently_given()'/>
+<use f='codebrowser/builtin/commit.c' l='870' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1462' u='c' c='print_summary'/>
+<def f='codebrowser/ident.c' l='463' ll='466' type='int committer_ident_sufficiently_given()'/>

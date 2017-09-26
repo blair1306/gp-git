@@ -1,0 +1,18 @@
+<def f='codebrowser/ewah/ewok_rlw.h' l='104' ll='107' type='size_t rlwit_word_size(struct rlw_iterator * it)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='411' u='c' c='ewah_xor'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='411' u='c' c='ewah_xor'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='455' u='c' c='ewah_xor'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='475' u='c' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='475' u='c' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='523' u='c' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='543' u='c' c='ewah_and_not'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='543' u='c' c='ewah_and_not'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='596' u='c' c='ewah_and_not'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='616' u='c' c='ewah_or'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='616' u='c' c='ewah_or'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='664' u='c' c='ewah_or'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='71' u='c' c='rlwit_discard_first_words'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='86' u='c' c='rlwit_discharge'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='111' u='c' c='rlwit_discharge_empty'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='112' u='c' c='rlwit_discharge_empty'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='113' u='c' c='rlwit_discharge_empty'/>

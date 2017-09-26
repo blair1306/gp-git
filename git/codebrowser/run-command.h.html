@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>run-command.h source code [codebrowser/run-command.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="async,child_process "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/run-command.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='run-command.h.html'>run-command.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/RUN_COMMAND_H">RUN_COMMAND_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/RUN_COMMAND_H" data-ref="_M/RUN_COMMAND_H">RUN_COMMAND_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/NO_PTHREADS">NO_PTHREADS</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../include/pthread.h.html">&lt;pthread.h&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="argv-array.h.html">"argv-array.h"</a></u></td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>struct</b> <dfn class="type def" id="child_process" title='child_process' data-ref="child_process">child_process</dfn> {</td></tr>
+<tr><th id="11">11</th><td>	<em>const</em> <em>char</em> **<dfn class="decl" id="child_process::argv" title='child_process::argv' data-ref="child_process::argv">argv</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<b>struct</b> <a class="type" href="argv-array.h.html#argv_array" title='argv_array' data-ref="argv_array">argv_array</a> <dfn class="decl" id="child_process::args" title='child_process::args' data-ref="child_process::args">args</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<b>struct</b> <a class="type" href="argv-array.h.html#argv_array" title='argv_array' data-ref="argv_array">argv_array</a> <dfn class="decl" id="child_process::env_array" title='child_process::env_array' data-ref="child_process::env_array">env_array</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<a class="typedef" href="../include/unistd.h.html#pid_t" title='pid_t' data-type='__pid_t' data-ref="pid_t">pid_t</a> <dfn class="decl" id="child_process::pid" title='child_process::pid' data-ref="child_process::pid">pid</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<i>/*</i></td></tr>
+<tr><th id="16">16</th><td><i>	 * Using .in, .out, .err:</i></td></tr>
+<tr><th id="17">17</th><td><i>	 * - Specify 0 for no redirections (child inherits stdin, stdout,</i></td></tr>
+<tr><th id="18">18</th><td><i>	 *   stderr from parent).</i></td></tr>
+<tr><th id="19">19</th><td><i>	 * - Specify -1 to have a pipe allocated as follows:</i></td></tr>
+<tr><th id="20">20</th><td><i>	 *     .in: returns the writable pipe end; parent writes to it,</i></td></tr>
+<tr><th id="21">21</th><td><i>	 *          the readable pipe end becomes child's stdin</i></td></tr>
+<tr><th id="22">22</th><td><i>	 *     .out, .err: returns the readable pipe end; parent reads from</i></td></tr>
+<tr><th id="23">23</th><td><i>	 *          it, the writable pipe end becomes child's stdout/stderr</i></td></tr>
+<tr><th id="24">24</th><td><i>	 *   The caller of start_command() must close the returned FDs</i></td></tr>
+<tr><th id="25">25</th><td><i>	 *   after it has completed reading from/writing to it!</i></td></tr>
+<tr><th id="26">26</th><td><i>	 * - Specify &gt; 0 to set a channel to a particular FD as follows:</i></td></tr>
+<tr><th id="27">27</th><td><i>	 *     .in: a readable FD, becomes child's stdin</i></td></tr>
+<tr><th id="28">28</th><td><i>	 *     .out: a writable FD, becomes child's stdout/stderr</i></td></tr>
+<tr><th id="29">29</th><td><i>	 *     .err: a writable FD, becomes child's stderr</i></td></tr>
+<tr><th id="30">30</th><td><i>	 *   The specified FD is closed by start_command(), even in case</i></td></tr>
+<tr><th id="31">31</th><td><i>	 *   of errors!</i></td></tr>
+<tr><th id="32">32</th><td><i>	 */</i></td></tr>
+<tr><th id="33">33</th><td>	<em>int</em> <dfn class="decl" id="child_process::in" title='child_process::in' data-ref="child_process::in">in</dfn>;</td></tr>
+<tr><th id="34">34</th><td>	<em>int</em> <dfn class="decl" id="child_process::out" title='child_process::out' data-ref="child_process::out">out</dfn>;</td></tr>
+<tr><th id="35">35</th><td>	<em>int</em> <dfn class="decl" id="child_process::err" title='child_process::err' data-ref="child_process::err">err</dfn>;</td></tr>
+<tr><th id="36">36</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="child_process::dir" title='child_process::dir' data-ref="child_process::dir">dir</dfn>;</td></tr>
+<tr><th id="37">37</th><td>	<em>const</em> <em>char</em> *<em>const</em> *<dfn class="decl" id="child_process::env" title='child_process::env' data-ref="child_process::env">env</dfn>;</td></tr>
+<tr><th id="38">38</th><td>	<em>unsigned</em> <dfn class="decl" id="child_process::no_stdin" title='child_process::no_stdin' data-ref="child_process::no_stdin">no_stdin</dfn>:<var>1</var>;</td></tr>
+<tr><th id="39">39</th><td>	<em>unsigned</em> <dfn class="decl" id="child_process::no_stdout" title='child_process::no_stdout' data-ref="child_process::no_stdout">no_stdout</dfn>:<var>1</var>;</td></tr>
+<tr><th id="40">40</th><td>	<em>unsigned</em> <dfn class="decl" id="child_process::no_stderr" title='child_process::no_stderr' data-ref="child_process::no_stderr">no_stderr</dfn>:<var>1</var>;</td></tr>
+<tr><th id="41">41</th><td>	<em>unsigned</em> <dfn class="decl" id="child_process::git_cmd" title='child_process::git_cmd' data-ref="child_process::git_cmd">git_cmd</dfn>:<var>1</var>; <i>/* if this is to be git sub-command */</i></td></tr>
+<tr><th id="42">42</th><td>	<em>unsigned</em> <dfn class="decl" id="child_process::silent_exec_failure" title='child_process::silent_exec_failure' data-ref="child_process::silent_exec_failure">silent_exec_failure</dfn>:<var>1</var>;</td></tr>
+<tr><th id="43">43</th><td>	<em>unsigned</em> <dfn class="decl" id="child_process::stdout_to_stderr" title='child_process::stdout_to_stderr' data-ref="child_process::stdout_to_stderr">stdout_to_stderr</dfn>:<var>1</var>;</td></tr>
+<tr><th id="44">44</th><td>	<em>unsigned</em> <dfn class="decl" id="child_process::use_shell" title='child_process::use_shell' data-ref="child_process::use_shell">use_shell</dfn>:<var>1</var>;</td></tr>
+<tr><th id="45">45</th><td>	<em>unsigned</em> <dfn class="decl" id="child_process::clean_on_exit" title='child_process::clean_on_exit' data-ref="child_process::clean_on_exit">clean_on_exit</dfn>:<var>1</var>;</td></tr>
+<tr><th id="46">46</th><td>	<em>unsigned</em> <dfn class="decl" id="child_process::wait_after_clean" title='child_process::wait_after_clean' data-ref="child_process::wait_after_clean">wait_after_clean</dfn>:<var>1</var>;</td></tr>
+<tr><th id="47">47</th><td>	<em>void</em> (*<dfn class="decl" id="child_process::clean_on_exit_handler" title='child_process::clean_on_exit_handler' data-ref="child_process::clean_on_exit_handler">clean_on_exit_handler</dfn>)(<b>struct</b> <a class="type" href="#child_process" title='child_process' data-ref="child_process">child_process</a> *<dfn class="local col5 decl" id="265process" title='process' data-type='struct child_process *' data-ref="265process">process</dfn>);</td></tr>
+<tr><th id="48">48</th><td>	<em>void</em> *<dfn class="decl" id="child_process::clean_on_exit_handler_cbdata" title='child_process::clean_on_exit_handler_cbdata' data-ref="child_process::clean_on_exit_handler_cbdata">clean_on_exit_handler_cbdata</dfn>;</td></tr>
+<tr><th id="49">49</th><td>};</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/CHILD_PROCESS_INIT" data-ref="_M/CHILD_PROCESS_INIT">CHILD_PROCESS_INIT</dfn> { NULL, ARGV_ARRAY_INIT, ARGV_ARRAY_INIT }</u></td></tr>
+<tr><th id="52">52</th><td><em>void</em> <dfn class="decl" id="child_process_init" title='child_process_init' data-ref="child_process_init">child_process_init</dfn>(<b>struct</b> <a class="type" href="#child_process" title='child_process' data-ref="child_process">child_process</a> *);</td></tr>
+<tr><th id="53">53</th><td><em>void</em> <dfn class="decl" id="child_process_clear" title='child_process_clear' data-ref="child_process_clear">child_process_clear</dfn>(<b>struct</b> <a class="type" href="#child_process" title='child_process' data-ref="child_process">child_process</a> *);</td></tr>
+<tr><th id="54">54</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="is_executable" title='is_executable' data-ref="is_executable">is_executable</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="266name" title='name' data-type='const char *' data-ref="266name">name</dfn>);</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><em>int</em> <dfn class="decl" id="start_command" title='start_command' data-ref="start_command">start_command</dfn>(<b>struct</b> <a class="type" href="#child_process" title='child_process' data-ref="child_process">child_process</a> *);</td></tr>
+<tr><th id="57">57</th><td><em>int</em> <dfn class="decl" id="finish_command" title='finish_command' data-ref="finish_command">finish_command</dfn>(<b>struct</b> <a class="type" href="#child_process" title='child_process' data-ref="child_process">child_process</a> *);</td></tr>
+<tr><th id="58">58</th><td><em>int</em> <dfn class="decl" id="finish_command_in_signal" title='finish_command_in_signal' data-ref="finish_command_in_signal">finish_command_in_signal</dfn>(<b>struct</b> <a class="type" href="#child_process" title='child_process' data-ref="child_process">child_process</a> *);</td></tr>
+<tr><th id="59">59</th><td><em>int</em> <dfn class="decl" id="run_command" title='run_command' data-ref="run_command">run_command</dfn>(<b>struct</b> <a class="type" href="#child_process" title='child_process' data-ref="child_process">child_process</a> *);</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><i>/*</i></td></tr>
+<tr><th id="62">62</th><td><i> * Returns the path to the hook file, or NULL if the hook is missing</i></td></tr>
+<tr><th id="63">63</th><td><i> * or disabled. Note that this points to static storage that will be</i></td></tr>
+<tr><th id="64">64</th><td><i> * overwritten by further calls to find_hook and run_hook_*.</i></td></tr>
+<tr><th id="65">65</th><td><i> */</i></td></tr>
+<tr><th id="66">66</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="find_hook" title='find_hook' data-ref="find_hook">find_hook</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="267name" title='name' data-type='const char *' data-ref="267name">name</dfn>);</td></tr>
+<tr><th id="67">67</th><td><a class="macro" href="git-compat-util.h.html#402" title="__attribute__((sentinel))" data-ref="_M/LAST_ARG_MUST_BE_NULL">LAST_ARG_MUST_BE_NULL</a></td></tr>
+<tr><th id="68">68</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="run_hook_le" title='run_hook_le' data-ref="run_hook_le">run_hook_le</dfn>(<em>const</em> <em>char</em> *<em>const</em> *<dfn class="local col8 decl" id="268env" title='env' data-type='const char *const *' data-ref="268env">env</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="269name" title='name' data-type='const char *' data-ref="269name">name</dfn>, ...);</td></tr>
+<tr><th id="69">69</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="run_hook_ve" title='run_hook_ve' data-ref="run_hook_ve">run_hook_ve</dfn>(<em>const</em> <em>char</em> *<em>const</em> *<dfn class="local col0 decl" id="270env" title='env' data-type='const char *const *' data-ref="270env">env</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="271name" title='name' data-type='const char *' data-ref="271name">name</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col2 decl" id="272args" title='args' data-type='struct __va_list_tag *' data-ref="272args">args</dfn>);</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><u>#define <dfn class="macro" id="_M/RUN_COMMAND_NO_STDIN" data-ref="_M/RUN_COMMAND_NO_STDIN">RUN_COMMAND_NO_STDIN</dfn> 1</u></td></tr>
+<tr><th id="72">72</th><td><u>#define <dfn class="macro" id="_M/RUN_GIT_CMD" data-ref="_M/RUN_GIT_CMD">RUN_GIT_CMD</dfn>	     2	/*If this is to be git sub-command */</u></td></tr>
+<tr><th id="73">73</th><td><u>#define <dfn class="macro" id="_M/RUN_COMMAND_STDOUT_TO_STDERR" data-ref="_M/RUN_COMMAND_STDOUT_TO_STDERR">RUN_COMMAND_STDOUT_TO_STDERR</dfn> 4</u></td></tr>
+<tr><th id="74">74</th><td><u>#define <dfn class="macro" id="_M/RUN_SILENT_EXEC_FAILURE" data-ref="_M/RUN_SILENT_EXEC_FAILURE">RUN_SILENT_EXEC_FAILURE</dfn> 8</u></td></tr>
+<tr><th id="75">75</th><td><u>#define <dfn class="macro" id="_M/RUN_USING_SHELL" data-ref="_M/RUN_USING_SHELL">RUN_USING_SHELL</dfn> 16</u></td></tr>
+<tr><th id="76">76</th><td><u>#define <dfn class="macro" id="_M/RUN_CLEAN_ON_EXIT" data-ref="_M/RUN_CLEAN_ON_EXIT">RUN_CLEAN_ON_EXIT</dfn> 32</u></td></tr>
+<tr><th id="77">77</th><td><em>int</em> <dfn class="decl" id="run_command_v_opt" title='run_command_v_opt' data-ref="run_command_v_opt">run_command_v_opt</dfn>(<em>const</em> <em>char</em> **<dfn class="local col3 decl" id="273argv" title='argv' data-type='const char **' data-ref="273argv">argv</dfn>, <em>int</em> <dfn class="local col4 decl" id="274opt" title='opt' data-type='int' data-ref="274opt">opt</dfn>);</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><i>/*</i></td></tr>
+<tr><th id="80">80</th><td><i> * env (the environment) is to be formatted like environ: "VAR=VALUE".</i></td></tr>
+<tr><th id="81">81</th><td><i> * To unset an environment variable use just "VAR".</i></td></tr>
+<tr><th id="82">82</th><td><i> */</i></td></tr>
+<tr><th id="83">83</th><td><em>int</em> <dfn class="decl" id="run_command_v_opt_cd_env" title='run_command_v_opt_cd_env' data-ref="run_command_v_opt_cd_env">run_command_v_opt_cd_env</dfn>(<em>const</em> <em>char</em> **<dfn class="local col5 decl" id="275argv" title='argv' data-type='const char **' data-ref="275argv">argv</dfn>, <em>int</em> <dfn class="local col6 decl" id="276opt" title='opt' data-type='int' data-ref="276opt">opt</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="277dir" title='dir' data-type='const char *' data-ref="277dir">dir</dfn>, <em>const</em> <em>char</em> *<em>const</em> *<dfn class="local col8 decl" id="278env" title='env' data-type='const char *const *' data-ref="278env">env</dfn>);</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> * Execute the given command, sending "in" to its stdin, and capturing its</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> * stdout and stderr in the "out" and "err" strbufs. Any of the three may</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> * be NULL to skip processing.</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> * Returns -1 if starting the command fails or reading fails, and otherwise</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> * returns the exit code of the command. Any output collected in the</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * buffers is kept even if the command returns a non-zero exit. The hint fields</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * gives starting sizes for the strbuf allocations.</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> * The fields of "cmd" should be set up as they would for a normal run_command</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * invocation. But note that there is no need to set the in, out, or err</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * fields; pipe_command handles that automatically.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="99">99</th><td><em>int</em> <dfn class="decl" id="pipe_command" title='pipe_command' data-ref="pipe_command">pipe_command</dfn>(<b>struct</b> <a class="type" href="#child_process" title='child_process' data-ref="child_process">child_process</a> *<dfn class="local col9 decl" id="279cmd" title='cmd' data-type='struct child_process *' data-ref="279cmd">cmd</dfn>,</td></tr>
+<tr><th id="100">100</th><td>		 <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="280in" title='in' data-type='const char *' data-ref="280in">in</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="281in_len" title='in_len' data-type='size_t' data-ref="281in_len">in_len</dfn>,</td></tr>
+<tr><th id="101">101</th><td>		 <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col2 decl" id="282out" title='out' data-type='struct strbuf *' data-ref="282out">out</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="283out_hint" title='out_hint' data-type='size_t' data-ref="283out_hint">out_hint</dfn>,</td></tr>
+<tr><th id="102">102</th><td>		 <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col4 decl" id="284err" title='err' data-type='struct strbuf *' data-ref="284err">err</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="285err_hint" title='err_hint' data-type='size_t' data-ref="285err_hint">err_hint</dfn>);</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> * Convenience wrapper around pipe_command for the common case</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> * of capturing only stdout.</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="108">108</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="capture_command" title='capture_command' data-ref="capture_command">capture_command</dfn>(<b>struct</b> <a class="type" href="#child_process" title='child_process' data-ref="child_process">child_process</a> *<dfn class="local col6 decl" id="286cmd" title='cmd' data-type='struct child_process *' data-ref="286cmd">cmd</dfn>,</td></tr>
+<tr><th id="109">109</th><td>				  <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col7 decl" id="287out" title='out' data-type='struct strbuf *' data-ref="287out">out</dfn>,</td></tr>
+<tr><th id="110">110</th><td>				  <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="288hint" title='hint' data-type='size_t' data-ref="288hint">hint</dfn>)</td></tr>
+<tr><th id="111">111</th><td>{</td></tr>
+<tr><th id="112">112</th><td>	<b>return</b> <a class="ref" href="#pipe_command" title='pipe_command' data-ref="pipe_command">pipe_command</a>(<a class="local col6 ref" href="#286cmd" title='cmd' data-ref="286cmd">cmd</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <var>0</var>, <a class="local col7 ref" href="#287out" title='out' data-ref="287out">out</a>, <a class="local col8 ref" href="#288hint" title='hint' data-ref="288hint">hint</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <var>0</var>);</td></tr>
+<tr><th id="113">113</th><td>}</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><i>/*</i></td></tr>
+<tr><th id="116">116</th><td><i> * The purpose of the following functions is to feed a pipe by running</i></td></tr>
+<tr><th id="117">117</th><td><i> * a function asynchronously and providing output that the caller reads.</i></td></tr>
+<tr><th id="118">118</th><td><i> *</i></td></tr>
+<tr><th id="119">119</th><td><i> * It is expected that no synchronization and mutual exclusion between</i></td></tr>
+<tr><th id="120">120</th><td><i> * the caller and the feed function is necessary so that the function</i></td></tr>
+<tr><th id="121">121</th><td><i> * can run in a thread without interfering with the caller.</i></td></tr>
+<tr><th id="122">122</th><td><i> */</i></td></tr>
+<tr><th id="123">123</th><td><b>struct</b> <dfn class="type def" id="async" title='async' data-ref="async">async</dfn> {</td></tr>
+<tr><th id="124">124</th><td>	<i>/*</i></td></tr>
+<tr><th id="125">125</th><td><i>	 * proc reads from in; closes it before return</i></td></tr>
+<tr><th id="126">126</th><td><i>	 * proc writes to out; closes it before return</i></td></tr>
+<tr><th id="127">127</th><td><i>	 * returns 0 on success, non-zero on failure</i></td></tr>
+<tr><th id="128">128</th><td><i>	 */</i></td></tr>
+<tr><th id="129">129</th><td>	<em>int</em> (*<dfn class="decl" id="async::proc" title='async::proc' data-ref="async::proc">proc</dfn>)(<em>int</em> <dfn class="local col9 decl" id="289in" title='in' data-type='int' data-ref="289in">in</dfn>, <em>int</em> <dfn class="local col0 decl" id="290out" title='out' data-type='int' data-ref="290out">out</dfn>, <em>void</em> *<dfn class="local col1 decl" id="291data" title='data' data-type='void *' data-ref="291data">data</dfn>);</td></tr>
+<tr><th id="130">130</th><td>	<em>void</em> *<dfn class="decl" id="async::data" title='async::data' data-ref="async::data">data</dfn>;</td></tr>
+<tr><th id="131">131</th><td>	<em>int</em> <dfn class="decl" id="async::in" title='async::in' data-ref="async::in">in</dfn>;		<i>/* caller writes here and closes it */</i></td></tr>
+<tr><th id="132">132</th><td>	<em>int</em> <dfn class="decl" id="async::out" title='async::out' data-ref="async::out">out</dfn>;	<i>/* caller reads from here and closes it */</i></td></tr>
+<tr><th id="133">133</th><td><u>#<span data-ppcond="133">ifdef</span> <span class="macro" data-ref="_M/NO_PTHREADS">NO_PTHREADS</span></u></td></tr>
+<tr><th id="134">134</th><td>	pid_t pid;</td></tr>
+<tr><th id="135">135</th><td><u>#<span data-ppcond="133">else</span></u></td></tr>
+<tr><th id="136">136</th><td>	<a class="typedef" href="../include/x86_64-linux-gnu/bits/pthreadtypes.h.html#pthread_t" title='pthread_t' data-type='unsigned long' data-ref="pthread_t">pthread_t</a> <dfn class="decl" id="async::tid" title='async::tid' data-ref="async::tid">tid</dfn>;</td></tr>
+<tr><th id="137">137</th><td>	<em>int</em> <dfn class="decl" id="async::proc_in" title='async::proc_in' data-ref="async::proc_in">proc_in</dfn>;</td></tr>
+<tr><th id="138">138</th><td>	<em>int</em> <dfn class="decl" id="async::proc_out" title='async::proc_out' data-ref="async::proc_out">proc_out</dfn>;</td></tr>
+<tr><th id="139">139</th><td><u>#<span data-ppcond="133">endif</span></u></td></tr>
+<tr><th id="140">140</th><td>	<em>int</em> <dfn class="decl" id="async::isolate_sigpipe" title='async::isolate_sigpipe' data-ref="async::isolate_sigpipe">isolate_sigpipe</dfn>;</td></tr>
+<tr><th id="141">141</th><td>};</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><em>int</em> <dfn class="decl" id="start_async" title='start_async' data-ref="start_async">start_async</dfn>(<b>struct</b> <a class="type" href="#async" title='async' data-ref="async">async</a> *<dfn class="local col2 decl" id="292async" title='async' data-type='struct async *' data-ref="292async">async</dfn>);</td></tr>
+<tr><th id="144">144</th><td><em>int</em> <dfn class="decl" id="finish_async" title='finish_async' data-ref="finish_async">finish_async</dfn>(<b>struct</b> <a class="type" href="#async" title='async' data-ref="async">async</a> *<dfn class="local col3 decl" id="293async" title='async' data-type='struct async *' data-ref="293async">async</dfn>);</td></tr>
+<tr><th id="145">145</th><td><em>int</em> <dfn class="decl" id="in_async" title='in_async' data-ref="in_async">in_async</dfn>(<em>void</em>);</td></tr>
+<tr><th id="146">146</th><td><em>void</em> <dfn class="decl" id="check_pipe" title='check_pipe' data-ref="check_pipe">check_pipe</dfn>(<em>int</em> <dfn class="local col4 decl" id="294err" title='err' data-type='int' data-ref="294err">err</dfn>);</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> * This callback should initialize the child process and preload the</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> * error channel if desired. The preloading of is useful if you want to</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> * have a message printed directly before the output of the child process.</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> * pp_cb is the callback cookie as passed to run_processes_parallel.</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * You can store a child process specific callback cookie in pp_task_cb.</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> * Even after returning 0 to indicate that there are no more processes,</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> * this function will be called again until there are no more running</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> * child processes.</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> * Return 1 if the next child is ready to run.</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> * Return 0 if there are currently no more tasks to be processed.</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> * To send a signal to other child processes for abortion,</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> * return the negative signal number.</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="164">164</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="get_next_task_fn" title='get_next_task_fn' data-type='int (*)(struct child_process *, struct strbuf *, void *, void **)' data-ref="get_next_task_fn">get_next_task_fn</dfn>)(<b>struct</b> <a class="type" href="#child_process" title='child_process' data-ref="child_process">child_process</a> *<dfn class="local col5 decl" id="295cp" title='cp' data-type='struct child_process *' data-ref="295cp">cp</dfn>,</td></tr>
+<tr><th id="165">165</th><td>				<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col6 decl" id="296out" title='out' data-type='struct strbuf *' data-ref="296out">out</dfn>,</td></tr>
+<tr><th id="166">166</th><td>				<em>void</em> *<dfn class="local col7 decl" id="297pp_cb" title='pp_cb' data-type='void *' data-ref="297pp_cb">pp_cb</dfn>,</td></tr>
+<tr><th id="167">167</th><td>				<em>void</em> **<dfn class="local col8 decl" id="298pp_task_cb" title='pp_task_cb' data-type='void **' data-ref="298pp_task_cb">pp_task_cb</dfn>);</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> * This callback is called whenever there are problems starting</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc"> * a new process.</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> * You must not write to stdout or stderr in this function. Add your</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> * message to the strbuf out instead, which will be printed without</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> * messing up the output of the other parallel processes.</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> * pp_cb is the callback cookie as passed into run_processes_parallel,</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> * pp_task_cb is the callback cookie as passed into get_next_task_fn.</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> * Return 0 to continue the parallel processing. To abort return non zero.</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> * To send a signal to other child processes for abortion, return</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> * the negative signal number.</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="184">184</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="start_failure_fn" title='start_failure_fn' data-type='int (*)(struct strbuf *, void *, void *)' data-ref="start_failure_fn">start_failure_fn</dfn>)(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col9 decl" id="299out" title='out' data-type='struct strbuf *' data-ref="299out">out</dfn>,</td></tr>
+<tr><th id="185">185</th><td>				<em>void</em> *<dfn class="local col0 decl" id="300pp_cb" title='pp_cb' data-type='void *' data-ref="300pp_cb">pp_cb</dfn>,</td></tr>
+<tr><th id="186">186</th><td>				<em>void</em> *<dfn class="local col1 decl" id="301pp_task_cb" title='pp_task_cb' data-type='void *' data-ref="301pp_task_cb">pp_task_cb</dfn>);</td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> * This callback is called on every child process that finished processing.</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> * You must not write to stdout or stderr in this function. Add your</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc"> * message to the strbuf out instead, which will be printed without</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> * messing up the output of the other parallel processes.</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> * pp_cb is the callback cookie as passed into run_processes_parallel,</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> * pp_task_cb is the callback cookie as passed into get_next_task_fn.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> * Return 0 to continue the parallel processing.  To abort return non zero.</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> * To send a signal to other child processes for abortion, return</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> * the negative signal number.</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="202">202</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="task_finished_fn" title='task_finished_fn' data-type='int (*)(int, struct strbuf *, void *, void *)' data-ref="task_finished_fn">task_finished_fn</dfn>)(<em>int</em> <dfn class="local col2 decl" id="302result" title='result' data-type='int' data-ref="302result">result</dfn>,</td></tr>
+<tr><th id="203">203</th><td>				<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col3 decl" id="303out" title='out' data-type='struct strbuf *' data-ref="303out">out</dfn>,</td></tr>
+<tr><th id="204">204</th><td>				<em>void</em> *<dfn class="local col4 decl" id="304pp_cb" title='pp_cb' data-type='void *' data-ref="304pp_cb">pp_cb</dfn>,</td></tr>
+<tr><th id="205">205</th><td>				<em>void</em> *<dfn class="local col5 decl" id="305pp_task_cb" title='pp_task_cb' data-type='void *' data-ref="305pp_task_cb">pp_task_cb</dfn>);</td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc"> * Runs up to n processes at the same time. Whenever a process can be</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc"> * started, the callback get_next_task_fn is called to obtain the data</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc"> * required to start another child process.</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc"> * The children started via this function run in parallel. Their output</i></td></tr>
+<tr><th id="213">213</th><td><i class="doc"> * (both stdout and stderr) is routed to stderr in a manner that output</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc"> * from different tasks does not interleave.</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc"> * start_failure_fn and task_finished_fn can be NULL to omit any</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc"> * special handling.</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="219">219</th><td><em>int</em> <dfn class="decl" id="run_processes_parallel" title='run_processes_parallel' data-ref="run_processes_parallel">run_processes_parallel</dfn>(<em>int</em> <dfn class="local col6 decl" id="306n" title='n' data-type='int' data-ref="306n">n</dfn>,</td></tr>
+<tr><th id="220">220</th><td>			   <a class="typedef" href="#get_next_task_fn" title='get_next_task_fn' data-type='int (*)(struct child_process *, struct strbuf *, void *, void **)' data-ref="get_next_task_fn">get_next_task_fn</a>,</td></tr>
+<tr><th id="221">221</th><td>			   <a class="typedef" href="#start_failure_fn" title='start_failure_fn' data-type='int (*)(struct strbuf *, void *, void *)' data-ref="start_failure_fn">start_failure_fn</a>,</td></tr>
+<tr><th id="222">222</th><td>			   <a class="typedef" href="#task_finished_fn" title='task_finished_fn' data-type='int (*)(int, struct strbuf *, void *, void *)' data-ref="task_finished_fn">task_finished_fn</a>,</td></tr>
+<tr><th id="223">223</th><td>			   <em>void</em> *<dfn class="local col7 decl" id="307pp_cb" title='pp_cb' data-type='void *' data-ref="307pp_cb">pp_cb</dfn>);</td></tr>
+<tr><th id="224">224</th><td></td></tr>
+<tr><th id="225">225</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="226">226</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='archive-tar.c.html'>codebrowser/archive-tar.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

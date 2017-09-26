@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>argv-array.h source code [codebrowser/argv-array.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="argv_array "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/argv-array.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='argv-array.h.html'>argv-array.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/ARGV_ARRAY_H">ARGV_ARRAY_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/ARGV_ARRAY_H" data-ref="_M/ARGV_ARRAY_H">ARGV_ARRAY_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="empty_argv" title='empty_argv' data-ref="empty_argv">empty_argv</dfn>[];</td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <dfn class="type def" id="argv_array" title='argv_array' data-ref="argv_array">argv_array</dfn> {</td></tr>
+<tr><th id="7">7</th><td>	<em>const</em> <em>char</em> **<dfn class="decl" id="argv_array::argv" title='argv_array::argv' data-ref="argv_array::argv">argv</dfn>;</td></tr>
+<tr><th id="8">8</th><td>	<em>int</em> <dfn class="decl" id="argv_array::argc" title='argv_array::argc' data-ref="argv_array::argc">argc</dfn>;</td></tr>
+<tr><th id="9">9</th><td>	<em>int</em> <dfn class="decl" id="argv_array::alloc" title='argv_array::alloc' data-ref="argv_array::alloc">alloc</dfn>;</td></tr>
+<tr><th id="10">10</th><td>};</td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#define <dfn class="macro" id="_M/ARGV_ARRAY_INIT" data-ref="_M/ARGV_ARRAY_INIT">ARGV_ARRAY_INIT</dfn> { empty_argv, 0, 0 }</u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><em>void</em> <dfn class="decl" id="argv_array_init" title='argv_array_init' data-ref="argv_array_init">argv_array_init</dfn>(<b>struct</b> <a class="type" href="#argv_array" title='argv_array' data-ref="argv_array">argv_array</a> *);</td></tr>
+<tr><th id="15">15</th><td><em>void</em> <dfn class="decl" id="argv_array_push" title='argv_array_push' data-ref="argv_array_push">argv_array_push</dfn>(<b>struct</b> <a class="type" href="#argv_array" title='argv_array' data-ref="argv_array">argv_array</a> *, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="16">16</th><td><b>__attribute__</b>((format (printf,<var>2</var>,<var>3</var>)))</td></tr>
+<tr><th id="17">17</th><td><em>void</em> <dfn class="decl" id="argv_array_pushf" title='argv_array_pushf' data-ref="argv_array_pushf">argv_array_pushf</dfn>(<b>struct</b> <a class="type" href="#argv_array" title='argv_array' data-ref="argv_array">argv_array</a> *, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="264fmt" title='fmt' data-type='const char *' data-ref="264fmt">fmt</dfn>, ...);</td></tr>
+<tr><th id="18">18</th><td><a class="macro" href="git-compat-util.h.html#402" title="__attribute__((sentinel))" data-ref="_M/LAST_ARG_MUST_BE_NULL">LAST_ARG_MUST_BE_NULL</a></td></tr>
+<tr><th id="19">19</th><td><em>void</em> <dfn class="decl" id="argv_array_pushl" title='argv_array_pushl' data-ref="argv_array_pushl">argv_array_pushl</dfn>(<b>struct</b> <a class="type" href="#argv_array" title='argv_array' data-ref="argv_array">argv_array</a> *, ...);</td></tr>
+<tr><th id="20">20</th><td><em>void</em> <dfn class="decl" id="argv_array_pushv" title='argv_array_pushv' data-ref="argv_array_pushv">argv_array_pushv</dfn>(<b>struct</b> <a class="type" href="#argv_array" title='argv_array' data-ref="argv_array">argv_array</a> *, <em>const</em> <em>char</em> **);</td></tr>
+<tr><th id="21">21</th><td><em>void</em> <dfn class="decl" id="argv_array_pop" title='argv_array_pop' data-ref="argv_array_pop">argv_array_pop</dfn>(<b>struct</b> <a class="type" href="#argv_array" title='argv_array' data-ref="argv_array">argv_array</a> *);</td></tr>
+<tr><th id="22">22</th><td><em>void</em> <dfn class="decl" id="argv_array_clear" title='argv_array_clear' data-ref="argv_array_clear">argv_array_clear</dfn>(<b>struct</b> <a class="type" href="#argv_array" title='argv_array' data-ref="argv_array">argv_array</a> *);</td></tr>
+<tr><th id="23">23</th><td><em>const</em> <em>char</em> **<dfn class="decl" id="argv_array_detach" title='argv_array_detach' data-ref="argv_array_detach">argv_array_detach</dfn>(<b>struct</b> <a class="type" href="#argv_array" title='argv_array' data-ref="argv_array">argv_array</a> *);</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="1">endif</span> /* ARGV_ARRAY_H */</u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='archive-tar.c.html'>codebrowser/archive-tar.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

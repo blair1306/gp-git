@@ -1,0 +1,30 @@
+<dec f='codebrowser/notes.h' l='46' type='char *'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/notes.c' l='342' u='r' c='init_notes_check'/>
+<use f='codebrowser/notes-merge.c' l='545' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-merge.c' l='545' u='r' c='notes_merge'/>
+<use f='codebrowser/notes-utils.c' l='21' u='r' c='create_notes_commit'/>
+<use f='codebrowser/notes-utils.c' l='24' u='r' c='create_notes_commit'/>
+<use f='codebrowser/notes.c' l='466' u='r' c='load_subtree'/>
+<use f='codebrowser/notes.c' l='1022' u='w' c='init_notes'/>
+<use f='codebrowser/notes.c' l='1023' u='r' c='init_notes'/>
+<use f='codebrowser/notes.c' l='1204' u='r' c='free_notes'/>
+<use f='codebrowser/notes.c' l='1257' u='r' c='format_note'/>

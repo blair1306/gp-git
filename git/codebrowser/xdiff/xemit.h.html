@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>xemit.h source code [codebrowser/xdiff/xemit.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/xdiff/xemit.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>xdiff</a>/<a href='xemit.h.html'>xemit.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *  LibXDiff by Davide Libenzi ( File Differential Library )</i></td></tr>
+<tr><th id="3">3</th><td><i> *  Copyright (C) 2003  Davide Libenzi</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> *  This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> *  modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> *  License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> *  version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> *  This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="13">13</th><td><i> *  Lesser General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> *  You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> *  License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="17">17</th><td><i> *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> *  Davide Libenzi &lt;davidel@xmailserver.org&gt;</i></td></tr>
+<tr><th id="20">20</th><td><i> *</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined(<span class="macro" data-ref="_M/XEMIT_H">XEMIT_H</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/XEMIT_H" data-ref="_M/XEMIT_H">XEMIT_H</dfn></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="emit_func_t" title='emit_func_t' data-type='int (*)(xdfenv_t *, xdchange_t *, xdemitcb_t *, const xdemitconf_t *)' data-ref="emit_func_t">emit_func_t</dfn>)(<a class="typedef" href="xtypes.h.html#xdfenv_t" title='xdfenv_t' data-type='struct s_xdfenv' data-ref="xdfenv_t">xdfenv_t</a> *<dfn class="local col3 decl" id="33xe" title='xe' data-type='xdfenv_t *' data-ref="33xe">xe</dfn>, <a class="typedef" href="xdiffi.h.html#xdchange_t" title='xdchange_t' data-type='struct s_xdchange' data-ref="xdchange_t">xdchange_t</a> *<dfn class="local col4 decl" id="34xscr" title='xscr' data-type='xdchange_t *' data-ref="34xscr">xscr</dfn>, <a class="typedef" href="xdiff.h.html#xdemitcb_t" title='xdemitcb_t' data-type='struct s_xdemitcb' data-ref="xdemitcb_t">xdemitcb_t</a> *<dfn class="local col5 decl" id="35ecb" title='ecb' data-type='xdemitcb_t *' data-ref="35ecb">ecb</dfn>,</td></tr>
+<tr><th id="28">28</th><td>			   <a class="typedef" href="xdiff.h.html#xdemitconf_t" title='xdemitconf_t' data-type='struct s_xdemitconf' data-ref="xdemitconf_t">xdemitconf_t</a> <em>const</em> *<dfn class="local col6 decl" id="36xecfg" title='xecfg' data-type='const xdemitconf_t *' data-ref="36xecfg">xecfg</dfn>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><a class="typedef" href="xdiffi.h.html#xdchange_t" title='xdchange_t' data-type='struct s_xdchange' data-ref="xdchange_t">xdchange_t</a> *<dfn class="decl" id="xdl_get_hunk" title='xdl_get_hunk' data-ref="xdl_get_hunk">xdl_get_hunk</dfn>(<a class="typedef" href="xdiffi.h.html#xdchange_t" title='xdchange_t' data-type='struct s_xdchange' data-ref="xdchange_t">xdchange_t</a> **<dfn class="local col7 decl" id="37xscr" title='xscr' data-type='xdchange_t **' data-ref="37xscr">xscr</dfn>, <a class="typedef" href="xdiff.h.html#xdemitconf_t" title='xdemitconf_t' data-type='struct s_xdemitconf' data-ref="xdemitconf_t">xdemitconf_t</a> <em>const</em> *<dfn class="local col8 decl" id="38xecfg" title='xecfg' data-type='const xdemitconf_t *' data-ref="38xecfg">xecfg</dfn>);</td></tr>
+<tr><th id="31">31</th><td><em>int</em> <a class="decl" href="xdiffi.h.html#xdl_emit_diff" title='xdl_emit_diff' data-ref="xdl_emit_diff" id="xdl_emit_diff">xdl_emit_diff</a>(<a class="typedef" href="xtypes.h.html#xdfenv_t" title='xdfenv_t' data-type='struct s_xdfenv' data-ref="xdfenv_t">xdfenv_t</a> *<dfn class="local col9 decl" id="39xe" title='xe' data-type='xdfenv_t *' data-ref="39xe">xe</dfn>, <a class="typedef" href="xdiffi.h.html#xdchange_t" title='xdchange_t' data-type='struct s_xdchange' data-ref="xdchange_t">xdchange_t</a> *<dfn class="local col0 decl" id="40xscr" title='xscr' data-type='xdchange_t *' data-ref="40xscr">xscr</dfn>, <a class="typedef" href="xdiff.h.html#xdemitcb_t" title='xdemitcb_t' data-type='struct s_xdemitcb' data-ref="xdemitcb_t">xdemitcb_t</a> *<dfn class="local col1 decl" id="41ecb" title='ecb' data-type='xdemitcb_t *' data-ref="41ecb">ecb</dfn>,</td></tr>
+<tr><th id="32">32</th><td>		  <a class="typedef" href="xdiff.h.html#xdemitconf_t" title='xdemitconf_t' data-type='struct s_xdemitconf' data-ref="xdemitconf_t">xdemitconf_t</a> <em>const</em> *<dfn class="local col2 decl" id="42xecfg" title='xecfg' data-type='const xdemitconf_t *' data-ref="42xecfg">xecfg</dfn>);</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="23">endif</span> /* #if !defined(XEMIT_H) */</u></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../xdiff-interface.c.html'>codebrowser/xdiff-interface.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

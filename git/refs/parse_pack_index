@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1622' type='struct packed_git * parse_pack_index(unsigned char * sha1, const char * idx_path)'/>
+<use f='codebrowser/http.c' l='1914' u='c' c='fetch_and_setup_pack_index'/>
+<use f='codebrowser/http.c' l='1924' u='c' c='fetch_and_setup_pack_index'/>
+<def f='codebrowser/sha1_file.c' l='1363' ll='1377' type='struct packed_git * parse_pack_index(unsigned char * sha1, const char * idx_path)'/>

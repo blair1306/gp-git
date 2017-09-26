@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='1725' type='3'/>
+<doc f='include/curl/curl.h' l='1725'>/* please use HTTP 2 in the request */</doc>

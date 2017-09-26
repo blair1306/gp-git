@@ -1,0 +1,8 @@
+<dec f='codebrowser/tmp-objdir.c' l='12' type='struct argv_array'/>
+<use f='codebrowser/tmp-objdir.c' l='26' u='a' c='tmp_objdir_free'/>
+<use f='codebrowser/tmp-objdir.c' l='133' u='a' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='163' u='a' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='165' u='a' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='166' u='a' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='285' u='m' c='tmp_objdir_env'/>
+<offset>192</offset>

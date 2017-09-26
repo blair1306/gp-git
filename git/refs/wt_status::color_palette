@@ -1,0 +1,6 @@
+<dec f='codebrowser/wt-status.h' l='76' type='char [9][75]'/>
+<offset>832</offset>
+<use f='codebrowser/builtin/commit.c' l='1315' u='r' c='git_status_config'/>
+<use f='codebrowser/wt-status.c' l='40' u='r' c='color'/>
+<use f='codebrowser/wt-status.c' l='42' u='r' c='color'/>
+<use f='codebrowser/wt-status.c' l='127' u='r' c='wt_status_prepare'/>

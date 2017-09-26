@@ -1,0 +1,8 @@
+<dec f='codebrowser/commit.h' l='126' type='0'/>
+<use f='codebrowser/builtin/log.c' l='196' u='r' c='cmd_log_init_finish'/>
+<use f='codebrowser/builtin/rev-list.c' l='351' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/pretty.c' l='93' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='93' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='93' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='93' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='1548' u='r' c='pp_header'/>

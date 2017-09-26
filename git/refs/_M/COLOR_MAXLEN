@@ -1,0 +1,37 @@
+<dec f='codebrowser/color.h' l='22'/>
+<use f='codebrowser/grep.h' l='157' u='c'/>
+<use f='codebrowser/grep.h' l='158' u='c'/>
+<use f='codebrowser/grep.h' l='159' u='c'/>
+<use f='codebrowser/grep.h' l='160' u='c'/>
+<use f='codebrowser/grep.h' l='161' u='c'/>
+<use f='codebrowser/grep.h' l='162' u='c'/>
+<use f='codebrowser/grep.h' l='163' u='c'/>
+<use f='codebrowser/grep.h' l='164' u='c'/>
+<doc f='codebrowser/color.h' l='6'>/*
+ * The maximum length of ANSI color sequence we would generate:
+ * - leading ESC &apos;[&apos;            2
+ * - attr + &apos;;&apos;                 2 * num_attr (e.g. &quot;1;&quot;)
+ * - no-attr + &apos;;&apos;              3 * num_attr (e.g. &quot;22;&quot;)
+ * - fg color + &apos;;&apos;             17 (e.g. &quot;38;2;255;255;255;&quot;)
+ * - bg color + &apos;;&apos;             17 (e.g. &quot;48;2;255;255;255;&quot;)
+ * - terminating &apos;m&apos; NUL        2
+ *
+ * The above overcounts by one semicolon but it is close enough.
+ *
+ * The space for attributes is also slightly overallocated, as
+ * the negation for some attributes is the same (e.g., nobold and nodim).
+ *
+ * We allocate space for 7 attributes.
+ */</doc>
+<use f='codebrowser/wt-status.h' l='76' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='40' u='c'/>
+<use f='codebrowser/builtin/clean.c' l='46' u='c'/>
+<use f='codebrowser/builtin/config.c' l='303' u='c'/>
+<use f='codebrowser/color.c' l='166' u='c'/>
+<use f='codebrowser/color.c' l='206' u='c'/>
+<use f='codebrowser/diff.c' l='49' u='c'/>
+<use f='codebrowser/graph.c' l='92' u='c'/>
+<use f='codebrowser/log-tree.c' l='20' u='c'/>
+<use f='codebrowser/pretty.c' l='955' u='c'/>
+<use f='codebrowser/ref-filter.c' l='76' u='c'/>
+<use f='codebrowser/wt-status.c' l='24' u='c'/>

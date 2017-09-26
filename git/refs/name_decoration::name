@@ -1,0 +1,25 @@
+<dec f='codebrowser/commit.h' l='32' type='char []'/>
+<offset>96</offset>
+<use f='codebrowser/log-tree.c' l='82' u='r' c='add_name_decoration'/>
+<use f='codebrowser/log-tree.c' l='211' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='211' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='221' u='r' c='show_name'/>
+<use f='codebrowser/log-tree.c' l='223' u='r' c='show_name'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='146' type='int cmd_cherry(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/log.c' l='1876' ll='1956' type='int cmd_cherry(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='381'/>
+<use f='codebrowser/git.c' l='381'/>
+<use f='codebrowser/git.c' l='381'/>
+<use f='codebrowser/git.c' l='381'/>

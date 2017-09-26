@@ -1,0 +1,4 @@
+<dec f='codebrowser/reflog-walk.h' l='8' type='void init_reflog_walk(struct reflog_walk_info ** info)'/>
+<use f='codebrowser/builtin/log.c' l='653' u='c' c='cmd_log_reflog'/>
+<def f='codebrowser/reflog-walk.c' l='114' ll='118' type='void init_reflog_walk(struct reflog_walk_info ** info)'/>
+<use f='codebrowser/revision.c' l='1754' u='c' c='handle_revision_opt'/>

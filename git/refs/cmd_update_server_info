@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='231' type='int cmd_update_server_info(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/update-server-info.c' l='11' ll='26' type='int cmd_update_server_info(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='474'/>
+<use f='codebrowser/git.c' l='474'/>
+<use f='codebrowser/git.c' l='474'/>
+<use f='codebrowser/git.c' l='474'/>

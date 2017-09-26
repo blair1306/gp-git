@@ -1,0 +1,5 @@
+<dec f='codebrowser/quote.h' l='62' type='void write_name_quoted_relative(const char * name, const char * prefix, FILE * fp, int terminator)'/>
+<use f='codebrowser/builtin/checkout-index.c' l='39' u='c' c='write_tempfile_record'/>
+<use f='codebrowser/builtin/ls-files.c' l='80' u='c' c='write_name'/>
+<use f='codebrowser/builtin/ls-tree.c' l='114' u='c' c='show_tree'/>
+<def f='codebrowser/quote.c' l='291' ll='300' type='void write_name_quoted_relative(const char * name, const char * prefix, FILE * fp, int terminator)'/>

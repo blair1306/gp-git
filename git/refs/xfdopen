@@ -1,0 +1,18 @@
+<dec f='codebrowser/git-compat-util.h' l='807' type='FILE * xfdopen(int fd, const char * mode)'/>
+<use f='codebrowser/builtin/add.c' l='223' u='c' c='edit_patch'/>
+<use f='codebrowser/builtin/difftool.c' l='239' u='c' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='401' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/mailsplit.c' l='81' u='c' c='split_one'/>
+<use f='codebrowser/builtin/repack.c' l='293' u='c' c='cmd_repack'/>
+<use f='codebrowser/bundle.c' l='287' u='c' c='compute_and_write_prerequisites'/>
+<use f='codebrowser/credential-cache--daemon.c' l='193' u='c' c='serve_cache_loop'/>
+<use f='codebrowser/credential-cache--daemon.c' l='194' u='c' c='serve_cache_loop'/>
+<use f='codebrowser/credential.c' l='229' u='c' c='run_credential_helper'/>
+<use f='codebrowser/credential.c' l='235' u='c' c='run_credential_helper'/>
+<use f='codebrowser/send-pack.c' l='100' u='c' c='pack_objects'/>
+<use f='codebrowser/submodule.c' l='1350' u='c' c='is_submodule_modified'/>
+<use f='codebrowser/transport-helper.c' l='149' u='c' c='get_helper'/>
+<use f='codebrowser/transport-helper.c' l='568' u='c' c='process_connect_service'/>
+<use f='codebrowser/transport.c' l='1235' u='c' c='read_alternate_refs'/>
+<use f='codebrowser/upload-pack.c' l='142' u='c' c='create_pack_file'/>
+<def f='codebrowser/wrapper.c' l='401' ll='407' type='FILE * xfdopen(int fd, const char * mode)'/>

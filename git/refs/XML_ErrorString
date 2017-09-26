@@ -1,0 +1,5 @@
+<dec f='include/expat.h' l='990' type='const XML_LChar * XML_ErrorString(enum XML_Error code)'/>
+<use f='codebrowser/http-push.c' l='912' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='1165' u='c' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1238' u='c' c='locking_available'/>
+<doc f='include/expat.h' l='988'>/* Returns a string describing the error. */</doc>

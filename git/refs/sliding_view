@@ -1,0 +1,7 @@
+<def f='codebrowser/vcs-svn/sliding_window.h' l='6' ll='12'/>
+<size>56</size>
+<mbr r='sliding_view::file' o='0' t='struct line_buffer *'/>
+<mbr r='sliding_view::off' o='64' t='off_t'/>
+<mbr r='sliding_view::width' o='128' t='size_t'/>
+<mbr r='sliding_view::max_off' o='192' t='off_t'/>
+<mbr r='sliding_view::buf' o='256' t='struct strbuf'/>

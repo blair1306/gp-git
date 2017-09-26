@@ -1,0 +1,13 @@
+oidclr|oidclr
+oidcmp|oidcmp
+oidcpy|oidcpy
+oiddup|oiddup
+oid_to_hex|oid_to_hex
+oid_to_hex_r|oid_to_hex_r
+oidset_clear|oidset_clear
+oidset_contains|oidset_contains
+oidset_insert|oidset_insert
+oid_array_append|oid_array_append
+oid_array_clear|oid_array_clear
+oid_array_for_each_unique|oid_array_for_each_unique
+oid_array_lookup|oid_array_lookup

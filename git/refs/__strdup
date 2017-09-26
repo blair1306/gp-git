@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/bits/string2.h' l='1278' type='char * __strdup(const char * __string)'/>
+<use f='codebrowser/wrapper.c' l='44' macro='1' u='c'/>
+<use f='codebrowser/wrapper.c' l='47' macro='1' u='c'/>

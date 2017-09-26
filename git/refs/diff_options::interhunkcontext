@@ -1,0 +1,7 @@
+<dec f='codebrowser/diff.h' l='133' type='int'/>
+<offset>608</offset>
+<use f='codebrowser/diff.c' l='2509' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2601' u='r' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='3380' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='4055' u='a' c='diff_opt_parse'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='64' u='r' c='diff_grep'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/shortlog.h' l='15' type='int'/>
+<offset>480</offset>
+<use f='codebrowser/builtin/shortlog.c' l='151' u='r' c='shortlog_add_commit'/>
+<use f='codebrowser/builtin/shortlog.c' l='287' u='w' c='cmd_shortlog'/>

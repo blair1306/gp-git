@@ -1,0 +1,8 @@
+<dec f='codebrowser/builtin.h' l='109' type='unsigned int'/>
+<offset>1</offset>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='360' u='r' c='shortlog'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='364' u='r' c='shortlog'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='367' u='r' c='shortlog'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='383' u='r' c='shortlog'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='704' u='w' c='cmd_fmt_merge_msg'/>
+<use f='codebrowser/builtin/merge.c' l='999' u='w' c='prepare_merge_message'/>

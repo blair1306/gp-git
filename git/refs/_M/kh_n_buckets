@@ -1,0 +1,6 @@
+<dec f='codebrowser/khash.h' l='289'/>
+<doc f='codebrowser/khash.h' l='284'>/*! @function
+  @abstract     Get the number of buckets in the hash table
+  @param  h     Pointer to the hash table [khash_t(name)*]
+  @return       Number of buckets in the hash table [khint_t]
+ */</doc>

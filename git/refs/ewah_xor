@@ -1,0 +1,4 @@
+<dec f='codebrowser/ewah/ewok.h' l='178' type='void ewah_xor(struct ewah_bitmap * ewah_i, struct ewah_bitmap * ewah_j, struct ewah_bitmap * out)'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='399' ll='461' type='void ewah_xor(struct ewah_bitmap * ewah_i, struct ewah_bitmap * ewah_j, struct ewah_bitmap * out)'/>
+<use f='codebrowser/pack-bitmap-write.c' l='227' u='c' c='compute_xor_offsets'/>
+<use f='codebrowser/pack-bitmap.c' l='103' u='c' c='lookup_stored_bitmap'/>

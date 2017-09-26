@@ -1,0 +1,5 @@
+<dec f='codebrowser/ewah/ewok_rlw.h' l='102' type='void rlwit_discharge_empty(struct rlw_iterator * it, struct ewah_bitmap * out)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='524' u='c' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='526' u='c' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='599' u='c' c='ewah_and_not'/>
+<def f='codebrowser/ewah/ewah_rlw.c' l='109' ll='115' type='void rlwit_discharge_empty(struct rlw_iterator * it, struct ewah_bitmap * out)'/>

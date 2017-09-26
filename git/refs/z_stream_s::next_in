@@ -1,0 +1,6 @@
+<dec f='include/zlib.h' l='86' type='Bytef *'/>
+<offset>0</offset>
+<doc f='include/zlib.h' l='86'>/* next input byte */</doc>
+<use f='codebrowser/zlib.c' l='39' u='w' c='zlib_pre_call'/>
+<use f='codebrowser/zlib.c' l='52' u='r' c='zlib_post_call'/>
+<use f='codebrowser/zlib.c' l='61' u='r' c='zlib_post_call'/>

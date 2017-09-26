@@ -1,0 +1,8 @@
+<dec f='codebrowser/archive.h' l='7' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/archive.c' l='121' u='r' c='write_archive_entry'/>
+<use f='codebrowser/archive.c' l='226' u='r' c='write_archive_entries'/>
+<use f='codebrowser/archive.c' l='229' u='r' c='write_archive_entries'/>
+<use f='codebrowser/archive.c' l='232' u='r' c='write_archive_entries'/>
+<use f='codebrowser/archive.c' l='233' u='r' c='write_archive_entries'/>
+<use f='codebrowser/archive.c' l='488' u='w' c='parse_archive_args'/>

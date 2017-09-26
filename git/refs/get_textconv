@@ -1,0 +1,12 @@
+<dec f='codebrowser/diff.h' l='386' type='struct userdiff_driver * get_textconv(struct diff_filespec * one)'/>
+<doc f='codebrowser/diff.h' l='381'>/*
+ * Look up the userdiff driver for the given filespec, and return it if
+ * and only if it has textconv enabled (otherwise return NULL). The result
+ * can be passed to fill_textconv().
+ */</doc>
+<def f='codebrowser/diff.c' l='2323' ll='2330' type='struct userdiff_driver * get_textconv(struct diff_filespec * one)'/>
+<use f='codebrowser/diff.c' l='2386' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2387' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='5272' u='c' c='textconv_object'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='135' u='c' c='pickaxe_match'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='136' u='c' c='pickaxe_match'/>

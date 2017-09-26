@@ -1,0 +1,4 @@
+<dec f='codebrowser/shortlog.h' l='24' type='void shortlog_init(struct shortlog * log)'/>
+<use f='codebrowser/builtin/log.c' l='1038' u='c' c='make_cover_letter'/>
+<def f='codebrowser/builtin/shortlog.c' l='229' ll='239' type='void shortlog_init(struct shortlog * log)'/>
+<use f='codebrowser/builtin/shortlog.c' l='264' u='c' c='cmd_shortlog'/>

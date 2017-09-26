@@ -1,0 +1,8 @@
+<dec f='codebrowser/notes-merge.h' l='78' type='int notes_merge_abort(struct notes_merge_options * o)'/>
+<use f='codebrowser/builtin/notes.c' l='690' u='c' c='merge_abort'/>
+<doc f='codebrowser/notes-merge.h' l='73'>/*
+ * Abort conflict resolution from an earlier notes_merge()
+ *
+ * Removes the notes merge worktree in .git/NOTES_MERGE_WORKTREE.
+ */</doc>
+<def f='codebrowser/notes-merge.c' l='734' ll='750' type='int notes_merge_abort(struct notes_merge_options * o)'/>

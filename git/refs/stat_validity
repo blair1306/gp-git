@@ -1,0 +1,8 @@
+<def f='codebrowser/cache.h' l='2001' ll='2003'/>
+<size>8</size>
+<doc f='codebrowser/cache.h' l='1996'>/*
+ * A struct to encapsulate the concept of whether a file has changed
+ * since we last checked it. This uses criteria similar to those used
+ * for the index.
+ */</doc>
+<mbr r='stat_validity::sd' o='0' t='struct stat_data *'/>

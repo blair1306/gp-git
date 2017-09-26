@@ -1,0 +1,17 @@
+<dec f='codebrowser/help.h' l='8' type='size_t'/>
+<offset>0</offset>
+<doc f='codebrowser/help.h' l='8'>/* also used for similarity index in help.c */</doc>
+<use f='codebrowser/builtin/merge.c' l='133' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='134' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='137' u='r' c='get_strategy'/>
+<use f='codebrowser/help.c' l='19' u='w' c='add_cmdname'/>
+<use f='codebrowser/help.c' l='260' u='r' c='levenshtein_compare'/>
+<use f='codebrowser/help.c' l='261' u='r' c='levenshtein_compare'/>
+<use f='codebrowser/help.c' l='324' u='w' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='329' u='w' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='339' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='347' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='349' u='r' c='help_unknown_cmd'/>

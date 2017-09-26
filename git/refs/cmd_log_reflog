@@ -1,0 +1,8 @@
+<dec f='codebrowser/builtin.h' l='178' type='int cmd_log_reflog(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/log.c' l='644' ll='665' type='int cmd_log_reflog(int argc, const char ** argv, const char * prefix)'/>
+<doc f='codebrowser/builtin/log.c' l='641'>/*
+ * This is equivalent to &quot;git log -g --abbrev-commit --pretty=oneline&quot;
+ */</doc>
+<use f='codebrowser/builtin/reflog.c' l='736' u='c' c='cmd_reflog'/>
+<use f='codebrowser/builtin/reflog.c' l='739' u='c' c='cmd_reflog'/>
+<use f='codebrowser/builtin/reflog.c' l='750' u='c' c='cmd_reflog'/>

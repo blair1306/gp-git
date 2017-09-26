@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='1279' type='unsigned char [20]'/>
+<offset>0</offset>
+<use f='codebrowser/sha1_name.c' l='1617' u='r' c='get_oid_with_context_1'/>

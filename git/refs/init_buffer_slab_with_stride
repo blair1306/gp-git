@@ -1,0 +1,2 @@
+<def f='codebrowser/commit.c' l='236' macro='1' type='void init_buffer_slab_with_stride(struct buffer_slab * s, unsigned int stride)'/>
+<use f='codebrowser/commit.c' l='236' macro='1' u='c'/>

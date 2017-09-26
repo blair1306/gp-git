@@ -1,0 +1,4 @@
+<def f='codebrowser/rerere.h' l='20' ll='23'/>
+<size>16</size>
+<mbr r='rerere_id::collection' o='0' t='struct rerere_dir *'/>
+<mbr r='rerere_id::variant' o='64' t='int'/>

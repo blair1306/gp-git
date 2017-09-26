@@ -1,0 +1,6 @@
+<dec f='codebrowser/parse-options.h' l='216' type='int parse_options_end(struct parse_opt_ctx_t * ctx)'/>
+<use f='codebrowser/builtin/blame.c' l='740' u='c' c='cmd_blame'/>
+<use f='codebrowser/builtin/shortlog.c' l='279' u='c' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/update-index.c' l='1068' u='c' c='cmd_update_index'/>
+<def f='codebrowser/parse-options.c' l='526' ll='531' type='int parse_options_end(struct parse_opt_ctx_t * ctx)'/>
+<use f='codebrowser/parse-options.c' l='559' u='c' c='parse_options'/>

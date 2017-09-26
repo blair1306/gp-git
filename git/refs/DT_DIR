@@ -1,0 +1,13 @@
+<dec f='include/dirent.h' l='105' type='4'/>
+<use f='codebrowser/cache.h' l='302' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='993' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1138' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1499' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1522' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1543' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1564' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1586' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1603' macro='1' c='treat_one_path'/>
+<use f='codebrowser/dir.c' l='1827' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1928' macro='1' u='r'/>
+<use f='codebrowser/unpack-trees.c' l='1076' macro='1' u='r'/>

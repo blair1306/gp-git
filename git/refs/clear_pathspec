@@ -1,0 +1,16 @@
+<dec f='codebrowser/pathspec.h' l='79' type='void clear_pathspec(struct pathspec * )'/>
+<use f='codebrowser/archive.c' l='314' u='c' c='path_exists'/>
+<use f='codebrowser/blame.c' l='602' u='c' c='find_origin'/>
+<use f='codebrowser/blame.c' l='643' u='c' c='find_rename'/>
+<use f='codebrowser/blame.c' l='1321' u='c' c='find_copy_in_parent'/>
+<use f='codebrowser/builtin/grep.c' l='1108' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/reset.c' l='164' u='c' c='read_from_tree'/>
+<use f='codebrowser/builtin/update-index.c' l='756' u='c' c='do_reupdate'/>
+<use f='codebrowser/combine-diff.c' l='1529' u='c' c='diff_tree_combined'/>
+<use f='codebrowser/notes-merge.c' l='173' u='c' c='diff_tree_remote'/>
+<use f='codebrowser/notes-merge.c' l='259' u='c' c='diff_tree_local'/>
+<def f='codebrowser/pathspec.c' l='650' ll='668' type='void clear_pathspec(struct pathspec * pathspec)'/>
+<use f='codebrowser/revision.c' l='1424' u='c' c='prepare_show_merge'/>
+<use f='codebrowser/submodule.c' l='313' u='c' c='is_submodule_active'/>
+<use f='codebrowser/tree-diff.c' l='620' u='c' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='643' u='c' c='try_to_follow_renames'/>

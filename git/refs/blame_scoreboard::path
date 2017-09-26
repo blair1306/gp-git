@@ -1,0 +1,24 @@
+<dec f='codebrowser/blame.h' l='106' type='const char *'/>
+<offset>448</offset>
+<use f='codebrowser/builtin/blame.c' l='529' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='879' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='909' u='w' c='cmd_blame'/>

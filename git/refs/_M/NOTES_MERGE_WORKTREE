@@ -1,0 +1,11 @@
+<dec f='codebrowser/notes-merge.h' l='6'/>
+<use f='codebrowser/builtin/notes.c' l='870' u='c'/>
+<use f='codebrowser/notes-merge.c' l='269' u='c'/>
+<use f='codebrowser/notes-merge.c' l='270' u='c'/>
+<use f='codebrowser/notes-merge.c' l='284' u='c'/>
+<use f='codebrowser/notes-merge.c' l='286' u='c'/>
+<use f='codebrowser/notes-merge.c' l='288' u='c'/>
+<use f='codebrowser/notes-merge.c' l='291' u='c'/>
+<use f='codebrowser/notes-merge.c' l='298' u='c'/>
+<use f='codebrowser/notes-merge.c' l='679' u='c'/>
+<use f='codebrowser/notes-merge.c' l='744' u='c'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/path.h' l='26' type='char * git_path_buf(struct strbuf * buf, const char * fmt)'/>
+<use f='codebrowser/builtin/init-db.c' l='233' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='247' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='274' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='285' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/worktree.c' l='111' u='c' c='prune_worktrees'/>
+<use f='codebrowser/builtin/worktree.c' l='219' u='c' c='add_worktree'/>
+<use f='codebrowser/environment.c' l='255' u='c' c='odb_mkstemp'/>
+<use f='codebrowser/environment.c' l='262' u='c' c='odb_mkstemp'/>
+<use f='codebrowser/notes-merge.c' l='679' u='c' c='notes_merge_commit'/>
+<use f='codebrowser/notes-merge.c' l='744' u='c' c='notes_merge_abort'/>
+<def f='codebrowser/path.c' l='440' ll='448' type='char * git_path_buf(struct strbuf * buf, const char * fmt)'/>

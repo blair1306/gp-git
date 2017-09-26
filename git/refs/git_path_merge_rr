@@ -1,0 +1,6 @@
+<dec f='codebrowser/path.h' l='76' type='const char * git_path_merge_rr()'/>
+<use f='codebrowser/branch.c' l='330' u='c' c='remove_branch_state'/>
+<def f='codebrowser/path.c' l='1363' macro='1' type='const char * git_path_merge_rr()'/>
+<use f='codebrowser/rerere.c' l='203' u='c' c='read_rr'/>
+<use f='codebrowser/rerere.c' l='901' u='c' c='setup_rerere'/>
+<use f='codebrowser/rerere.c' l='1251' u='c' c='rerere_clear'/>

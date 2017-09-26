@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='262' type='char * get_revision_mark(const struct rev_info * revs, const struct commit * commit)'/>
+<use f='codebrowser/builtin/rev-list.c' l='90' u='c' c='show_commit'/>
+<use f='codebrowser/graph.c' l='845' u='c' c='graph_output_commit_char'/>
+<use f='codebrowser/pretty.c' l='1177' u='c' c='format_commit_one'/>
+<def f='codebrowser/revision.c' l='3351' ll='3369' type='char * get_revision_mark(const struct rev_info * revs, const struct commit * commit)'/>
+<use f='codebrowser/revision.c' l='3373' u='c' c='put_revision_mark'/>

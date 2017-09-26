@@ -1,0 +1,15 @@
+<dec f='codebrowser/refs/ref-cache.h' l='86' type='int'/>
+<offset>64</offset>
+<doc f='codebrowser/refs/ref-cache.h' l='80'>/*
+	 * Entries with index 0 &lt;= i &lt; sorted are sorted by name.  New
+	 * entries are appended to the list unsorted, and are sorted
+	 * only when required; thus we avoid the need to sort the list
+	 * after the addition of every reference.
+	 */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='13' u='r' c='add_entry_to_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='16' u='w' c='add_entry_to_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='86' u='w' c='clear_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='247' u='r' c='remove_entry_from_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='248' u='w' c='remove_entry_from_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='298' u='r' c='sort_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='311' u='w' c='sort_ref_dir'/>

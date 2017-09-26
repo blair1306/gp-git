@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs.h' l='329' type='void warn_dangling_symref(FILE * fp, const char * msg_fmt, const char * refname)'/>
+<use f='codebrowser/builtin/fetch.c' l='980' u='c' c='prune_refs'/>
+<def f='codebrowser/refs.c' l='307' ll='316' type='void warn_dangling_symref(FILE * fp, const char * msg_fmt, const char * refname)'/>

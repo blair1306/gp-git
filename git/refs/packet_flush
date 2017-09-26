@@ -1,0 +1,40 @@
+<dec f='codebrowser/pkt-line.h' l='22' type='void packet_flush(int fd)'/>
+<use f='codebrowser/builtin/archive.c' l='54' u='c' c='run_remote_archiver'/>
+<doc f='codebrowser/pkt-line.h' l='7'>/*
+ * Write a packetized stream, where each line is preceded by
+ * its length (including the header) as a 4-byte hex number.
+ * A length of &apos;zero&apos; means end of stream (and a length of 1-3
+ * would be an error).
+ *
+ * This is all pretty stupid, but we use this packetized line
+ * format to make a streaming format possible without ever
+ * over-running the read buffers. That way we&apos;ll never read
+ * into what might be the pack data (which should go to another
+ * process entirely).
+ *
+ * The writing side could use stdio, but since the reading
+ * side can&apos;t, we stay with pure read/write interfaces.
+ */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='304' u='c' c='write_head_info'/>
+<use f='codebrowser/builtin/receive-pack.c' l='2025' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/builtin/upload-archive.c' l='99' u='c' c='cmd_upload_archive'/>
+<use f='codebrowser/builtin/upload-archive.c' l='126' u='c' c='cmd_upload_archive'/>
+<use f='codebrowser/fetch-pack.c' l='291' u='c' c='send_request'/>
+<use f='codebrowser/fetch-pack.c' l='390' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='983' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='994' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='1164' u='c' c='fetch_pack'/>
+<use f='codebrowser/http-backend.c' l='469' u='c' c='get_info_refs'/>
+<def f='codebrowser/pkt-line.c' l='88' ll='92' type='void packet_flush(int fd)'/>
+<doc f='codebrowser/pkt-line.c' l='84'>/*
+ * If we buffered things up above (we don&apos;t, but we should),
+ * we&apos;d flush it here
+ */</doc>
+<use f='codebrowser/send-pack.c' l='551' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='595' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='602' u='c' c='send_pack'/>
+<use f='codebrowser/transport.c' l='602' u='c' c='disconnect_git'/>
+<use f='codebrowser/upload-pack.c' l='282' u='c' c='create_pack_file'/>
+<use f='codebrowser/upload-pack.c' l='718' u='c' c='deepen'/>
+<use f='codebrowser/upload-pack.c' l='730' u='c' c='deepen_by_rev_list'/>
+<use f='codebrowser/upload-pack.c' l='991' u='c' c='upload_pack'/>

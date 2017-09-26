@@ -1,0 +1,7 @@
+<dec f='codebrowser/object.h' l='83' type='void * create_object(const unsigned char * sha1, void * obj)'/>
+<use f='codebrowser/blob.c' l='10' u='c' c='lookup_blob'/>
+<use f='codebrowser/commit.c' l='53' u='c' c='lookup_commit'/>
+<def f='codebrowser/object.c' l='139' ll='153' type='void * create_object(const unsigned char * sha1, void * o)'/>
+<use f='codebrowser/object.c' l='178' u='c' c='lookup_unknown_object'/>
+<use f='codebrowser/tag.c' l='96' u='c' c='lookup_tag'/>
+<use f='codebrowser/tree.c' l='199' u='c' c='lookup_tree'/>

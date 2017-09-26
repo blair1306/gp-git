@@ -1,0 +1,20 @@
+<dec f='codebrowser/transport.h' l='217' type='int transport_set_option(struct transport * transport, const char * name, const char * value)'/>
+<doc f='codebrowser/transport.h' l='213'>/**
+ * Returns 0 if the option was used, non-zero otherwise. Prints a
+ * message to stderr if the option is not used.
+ **/</doc>
+<use f='codebrowser/builtin/clone.c' l='1088' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/clone.c' l='1091' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/clone.c' l='1094' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/clone.c' l='1097' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/clone.c' l='1100' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/clone.c' l='1103' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='1016' u='c' c='set_option'/>
+<use f='codebrowser/builtin/fetch.c' l='1067' u='c' c='backfill_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='1068' u='c' c='backfill_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='1069' u='c' c='backfill_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='1123' u='c' c='do_fetch'/>
+<use f='codebrowser/builtin/ls-remote.c' l='97' u='c' c='cmd_ls_remote'/>
+<use f='codebrowser/builtin/push.c' l='323' u='c' c='push_with_options'/>
+<use f='codebrowser/builtin/push.c' l='325' u='c' c='push_with_options'/>
+<def f='codebrowser/transport.c' l='840' ll='861' type='int transport_set_option(struct transport * transport, const char * name, const char * value)'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/userdiff.h' l='24' type='struct userdiff_driver * userdiff_find_by_path(const char * path)'/>
+<use f='codebrowser/archive-zip.c' l='268' u='c' c='entry_is_binary'/>
+<use f='codebrowser/combine-diff.c' l='987' u='c' c='show_patch_diff'/>
+<use f='codebrowser/diff.c' l='1147' u='c' c='diff_filespec_load_driver'/>
+<use f='codebrowser/diff.c' l='3204' u='c' c='run_diff_cmd'/>
+<use f='codebrowser/grep.c' l='2033' u='c' c='grep_source_load_driver'/>
+<use f='codebrowser/line-range.c' l='201' u='c' c='parse_range_funcname'/>
+<def f='codebrowser/userdiff.c' l='264' ll='282' type='struct userdiff_driver * userdiff_find_by_path(const char * path)'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/progress.h' l='11' type='void stop_progress_msg(struct progress ** progress, const char * msg)'/>
+<use f='codebrowser/builtin/index-pack.c' l='1270' u='c' c='conclude_pack'/>
+<use f='codebrowser/progress.c' l='242' u='c' c='stop_progress'/>
+<def f='codebrowser/progress.c' l='245' ll='273' type='void stop_progress_msg(struct progress ** p_progress, const char * msg)'/>

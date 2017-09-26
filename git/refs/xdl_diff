@@ -1,0 +1,3 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='117' type='int xdl_diff(mmfile_t * mf1, mmfile_t * mf2, const xpparam_t * xpp, const xdemitconf_t * xecfg, xdemitcb_t * ecb)'/>
+<use f='codebrowser/xdiff-interface.c' l='138' u='c' c='xdi_diff'/>
+<def f='codebrowser/xdiff/xdiffi.c' l='1018' ll='1050' type='int xdl_diff(mmfile_t * mf1, mmfile_t * mf2, const xpparam_t * xpp, const xdemitconf_t * xecfg, xdemitcb_t * ecb)'/>

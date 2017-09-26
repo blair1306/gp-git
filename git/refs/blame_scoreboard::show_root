@@ -1,0 +1,4 @@
+<dec f='codebrowser/blame.h' l='140' type='int'/>
+<use f='codebrowser/blame.c' l='1583' u='r' c='assign_blame'/>
+<offset>1120</offset>
+<use f='codebrowser/builtin/blame.c' l='919' u='w' c='cmd_blame'/>

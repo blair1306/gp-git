@@ -1,0 +1,13 @@
+<dec f='codebrowser/pathspec.h' l='46' type='struct attr_check *'/>
+<offset>384</offset>
+<use f='codebrowser/dir.c' l='232' u='r' c='match_attrs'/>
+<use f='codebrowser/dir.c' l='238' u='r' c='match_attrs'/>
+<use f='codebrowser/pathspec.c' l='146' u='r' c='parse_pathspec_attr_match'/>
+<use f='codebrowser/pathspec.c' l='155' u='w' c='parse_pathspec_attr_match'/>
+<use f='codebrowser/pathspec.c' l='195' u='r' c='parse_pathspec_attr_match'/>
+<use f='codebrowser/pathspec.c' l='200' u='r' c='parse_pathspec_attr_match'/>
+<use f='codebrowser/pathspec.c' l='405' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='646' u='w' c='copy_pathspec'/>
+<use f='codebrowser/pathspec.c' l='646' u='r' c='copy_pathspec'/>
+<use f='codebrowser/pathspec.c' l='662' u='r' c='clear_pathspec'/>
+<use f='codebrowser/pathspec.c' l='663' u='r' c='clear_pathspec'/>

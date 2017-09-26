@@ -1,0 +1,4 @@
+<dec f='codebrowser/http.h' l='232' type='int finish_http_object_request(struct http_object_request * freq)'/>
+<use f='codebrowser/http-push.c' l='568' u='c' c='finish_request'/>
+<use f='codebrowser/http-walker.c' l='80' u='c' c='finish_object_request'/>
+<def f='codebrowser/http.c' l='2282' ll='2314' type='int finish_http_object_request(struct http_object_request * freq)'/>

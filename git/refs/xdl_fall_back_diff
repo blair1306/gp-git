@@ -1,0 +1,4 @@
+<dec f='codebrowser/xdiff/xutils.h' l='42' type='int xdl_fall_back_diff(xdfenv_t * diff_env, const xpparam_t * xpp, int line1, int count1, int line2, int count2)'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='257' u='c' c='fall_back_to_classic_diff'/>
+<use f='codebrowser/xdiff/xpatience.c' l='293' u='c' c='fall_back_to_classic_diff'/>
+<def f='codebrowser/xdiff/xutils.c' l='362' ll='391' type='int xdl_fall_back_diff(xdfenv_t * diff_env, const xpparam_t * xpp, int line1, int count1, int line2, int count2)'/>

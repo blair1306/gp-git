@@ -1,0 +1,16 @@
+<dec f='codebrowser/refs.h' l='142' type='int dwim_ref(const char * str, int len, unsigned char * sha1, char ** ref)'/>
+<use f='codebrowser/archive.c' l='356' u='c' c='parse_treeish_arg'/>
+<use f='codebrowser/branch.c' l='268' u='c' c='create_branch'/>
+<use f='codebrowser/builtin/fast-export.c' l='811' u='c' c='get_tags_and_duplicates'/>
+<use f='codebrowser/builtin/log.c' l='978' u='c' c='find_branch_name'/>
+<use f='codebrowser/builtin/merge-base.c' l='159' u='c' c='handle_fork_point'/>
+<use f='codebrowser/builtin/merge.c' l='451' u='c' c='merge_name'/>
+<use f='codebrowser/builtin/rev-parse.c' l='136' u='c' c='show_rev'/>
+<use f='codebrowser/builtin/show-branch.c' l='723' u='c' c='cmd_show_branch'/>
+<use f='codebrowser/bundle.c' l='334' u='c' c='write_bundle_refs'/>
+<def f='codebrowser/refs.c' l='479' ll='485' type='int dwim_ref(const char * str, int len, unsigned char * sha1, char ** ref)'/>
+<use f='codebrowser/remote.c' l='1634' u='c' c='set_merge'/>
+<use f='codebrowser/sha1_name.c' l='605' u='c' c='get_oid_basic'/>
+<use f='codebrowser/sha1_name.c' l='656' u='c' c='get_oid_basic'/>
+<use f='codebrowser/sha1_name.c' l='660' u='c' c='get_oid_basic'/>
+<use f='codebrowser/wt-status.c' l='1452' u='c' c='wt_status_get_detached_from'/>

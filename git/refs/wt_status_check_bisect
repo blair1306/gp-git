@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='125' type='int wt_status_check_bisect(const struct worktree * wt, struct wt_status_state * state)'/>
+<use f='codebrowser/worktree.c' l='282' u='c' c='is_worktree_being_bisected'/>
+<def f='codebrowser/wt-status.c' l='1500' ll='1511' type='int wt_status_check_bisect(const struct worktree * wt, struct wt_status_state * state)'/>
+<use f='codebrowser/wt-status.c' l='1528' u='c' c='wt_status_get_state'/>

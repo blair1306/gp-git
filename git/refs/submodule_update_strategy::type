@@ -1,0 +1,17 @@
+<dec f='codebrowser/submodule.h' l='31' type='enum submodule_update_type'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/submodule--helper.c' l='418' u='r' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='419' u='r' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='811' u='r' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='812' u='r' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='813' u='r' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/submodule-config.c' l='224' u='w' c='lookup_or_create_by_name'/>
+<use f='codebrowser/submodule-config.c' l='429' u='r' c='parse_config'/>
+<use f='codebrowser/submodule.c' l='407' u='w' c='parse_submodule_update_strategy'/>
+<use f='codebrowser/submodule.c' l='409' u='w' c='parse_submodule_update_strategy'/>
+<use f='codebrowser/submodule.c' l='411' u='w' c='parse_submodule_update_strategy'/>
+<use f='codebrowser/submodule.c' l='413' u='w' c='parse_submodule_update_strategy'/>
+<use f='codebrowser/submodule.c' l='415' u='w' c='parse_submodule_update_strategy'/>
+<use f='codebrowser/submodule.c' l='425' u='r' c='submodule_strategy_to_string'/>
+<use f='codebrowser/unpack-trees.c' l='264' u='r' c='check_submodule_move_head'/>
+<use f='codebrowser/unpack-trees.c' l='311' u='r' c='unlink_entry'/>

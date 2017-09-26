@@ -1,0 +1,10 @@
+<dec f='codebrowser/refs/ref-cache.h' l='114'/>
+<use f='codebrowser/refs/files-backend.c' l='260' u='c'/>
+<doc f='codebrowser/refs/ref-cache.h' l='110'>/*
+ * Entry has not yet been read from disk (used only for REF_DIR
+ * entries representing loose references)
+ */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='209' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='24' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='29' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='97' u='c'/>

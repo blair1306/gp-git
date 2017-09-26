@@ -1,0 +1,1 @@
+<dec f='codebrowser/sha1-lookup.h' l='11' type='int sha1_entry_pos(const void * table, size_t elem_size, size_t key_offset, unsigned int lo, unsigned int hi, unsigned int nr, const unsigned char * key)'/>

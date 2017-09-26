@@ -1,0 +1,3 @@
+<dec f='codebrowser/common-cmds.h' l='4' type='char [80]'/>
+<use f='codebrowser/help.c' l='227' u='r' c='list_common_cmds_help'/>
+<offset>128</offset>

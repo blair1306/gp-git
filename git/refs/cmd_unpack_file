@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='227' type='int cmd_unpack_file(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/unpack-file.c' l='24' ll='37' type='int cmd_unpack_file(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='470'/>
+<use f='codebrowser/git.c' l='470'/>
+<use f='codebrowser/git.c' l='470'/>
+<use f='codebrowser/git.c' l='470'/>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/submodule.h' l='135' type='void prepare_submodule_repo_env(struct argv_array * out)'/>
+<doc f='codebrowser/submodule.h' l='130'>/*
+ * Prepare the &quot;env_array&quot; parameter of a &quot;struct child_process&quot; for executing
+ * a submodule by clearing any repo-specific envirionment variables, but
+ * retaining any config in the environment.
+ */</doc>
+<use f='codebrowser/builtin/submodule--helper.c' l='517' u='c' c='clone_submodule'/>
+<def f='codebrowser/submodule.c' l='520' ll='525' type='void prepare_submodule_repo_env(struct argv_array * out)'/>
+<use f='codebrowser/submodule.c' l='697' u='c' c='show_submodule_inline_diff'/>
+<use f='codebrowser/submodule.c' l='869' u='c' c='submodule_has_commits'/>
+<use f='codebrowser/submodule.c' l='908' u='c' c='submodule_needs_pushing'/>
+<use f='codebrowser/submodule.c' l='985' u='c' c='push_submodule'/>
+<use f='codebrowser/submodule.c' l='1016' u='c' c='submodule_push_check'/>
+<use f='codebrowser/submodule.c' l='1233' u='c' c='get_next_submodule'/>
+<use f='codebrowser/submodule.c' l='1342' u='c' c='is_submodule_modified'/>
+<use f='codebrowser/submodule.c' l='1419' u='c' c='submodule_uses_gitfile'/>
+<use f='codebrowser/submodule.c' l='1462' u='c' c='bad_to_remove_submodule'/>
+<use f='codebrowser/submodule.c' l='1503' u='c' c='submodule_has_dirty_index'/>
+<use f='codebrowser/submodule.c' l='1520' u='c' c='submodule_reset_index'/>
+<use f='codebrowser/submodule.c' l='1601' u='c' c='submodule_move_head'/>
+<use f='codebrowser/submodule.c' l='1637' u='c' c='submodule_move_head'/>
+<use f='codebrowser/submodule.c' l='1935' u='c' c='absorb_git_dir_into_superproject'/>
+<use f='codebrowser/submodule.c' l='1967' u='c' c='get_superproject_working_tree'/>

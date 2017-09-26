@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='242' type='int cmd_show_ref(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/show-ref.c' l='181' ll='221' type='int cmd_show_ref(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='463'/>
+<use f='codebrowser/git.c' l='463'/>
+<use f='codebrowser/git.c' l='463'/>
+<use f='codebrowser/git.c' l='463'/>

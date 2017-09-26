@@ -1,0 +1,4 @@
+<dec f='codebrowser/transport.h' l='251' type='void transport_update_tracking_ref(struct remote * remote, struct ref * ref, int verbose)'/>
+<use f='codebrowser/builtin/send-pack.c' l='299' u='c' c='cmd_send_pack'/>
+<def f='codebrowser/transport.c' l='293' ll='313' type='void transport_update_tracking_ref(struct remote * remote, struct ref * ref, int verbose)'/>
+<use f='codebrowser/transport.c' l='1086' u='c' c='transport_push'/>

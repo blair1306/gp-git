@@ -1,0 +1,6 @@
+<dec f='codebrowser/trace.h' l='8' type='const char *const'/>
+<offset>0</offset>
+<use f='codebrowser/trace.c' l='52' u='r' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='75' u='r' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='75' u='r' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='134' u='r' c='trace_write'/>

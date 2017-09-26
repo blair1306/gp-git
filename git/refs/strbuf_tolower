@@ -1,0 +1,6 @@
+<dec f='codebrowser/strbuf.h' l='181' type='void strbuf_tolower(struct strbuf * sb)'/>
+<doc f='codebrowser/strbuf.h' l='178'>/**
+ * Lowercase each character in the buffer using `tolower`.
+ */</doc>
+<use f='codebrowser/daemon.c' l='571' u='c' c='canonicalize_client'/>
+<def f='codebrowser/strbuf.c' l='110' ll='115' type='void strbuf_tolower(struct strbuf * sb)'/>

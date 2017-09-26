@@ -1,0 +1,10 @@
+<dec f='codebrowser/apply.h' l='51' type='int'/>
+<use f='codebrowser/apply.c' l='138' u='r' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='4727' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4927' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4927' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4927' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4927' u='a' c='apply_parse_options'/>
+<offset>320</offset>
+<doc f='codebrowser/apply.h' l='50'>/* These control cosmetic aspect of the output */</doc>
+<doc f='codebrowser/apply.h' l='51'>/* just show a diffstat, and don&apos;t actually apply */</doc>

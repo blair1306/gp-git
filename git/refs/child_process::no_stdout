@@ -1,0 +1,18 @@
+<dec f='codebrowser/run-command.h' l='39' type='unsigned int'/>
+<offset>577</offset>
+<use f='codebrowser/builtin/describe.c' l='520' u='w' c='cmd_describe'/>
+<use f='codebrowser/builtin/difftool.c' l='217' u='w' c='changed_files'/>
+<use f='codebrowser/builtin/receive-pack.c' l='973' u='w' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='985' u='w' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1738' u='w' c='unpack'/>
+<use f='codebrowser/bundle.c' l='491' u='w' c='unbundle'/>
+<use f='codebrowser/connected.c' l='68' u='w' c='check_connected'/>
+<use f='codebrowser/credential.c' l='224' u='w' c='run_credential_helper'/>
+<use f='codebrowser/http.c' l='2033' u='w' c='finish_http_pack_request'/>
+<use f='codebrowser/run-command.c' l='587' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='641' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='697' u='r' c='start_command'/>
+<use f='codebrowser/sequencer.c' l='1938' u='w' c='apply_autostash'/>
+<use f='codebrowser/submodule.c' l='1019' u='w' c='submodule_push_check'/>
+<use f='codebrowser/submodule.c' l='1423' u='w' c='submodule_uses_gitfile'/>
+<use f='codebrowser/submodule.c' l='1509' u='w' c='submodule_has_dirty_index'/>

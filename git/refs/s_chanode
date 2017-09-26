@@ -1,0 +1,4 @@
+<def f='codebrowser/xdiff/xtypes.h' l='28' ll='31'/>
+<size>16</size>
+<mbr r='s_chanode::next' o='0' t='struct s_chanode *'/>
+<mbr r='s_chanode::icurr' o='64' t='long'/>

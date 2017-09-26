@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='219' type='int diff_root_tree_oid(const struct object_id * new_oid, const char * base, struct diff_options * opt)'/>
+<use f='codebrowser/builtin/fast-export.c' l='571' u='c' c='handle_commit'/>
+<use f='codebrowser/log-tree.c' l='807' u='c' c='log_tree_diff'/>
+<use f='codebrowser/patch-ids.c' l='23' u='c' c='commit_patch_id'/>
+<def f='codebrowser/tree-diff.c' l='717' ll='720' type='int diff_root_tree_oid(const struct object_id * new_oid, const char * base, struct diff_options * opt)'/>

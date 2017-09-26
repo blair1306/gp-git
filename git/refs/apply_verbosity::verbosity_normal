@@ -1,0 +1,8 @@
+<dec f='codebrowser/apply.h' l='18' type='0'/>
+<use f='codebrowser/apply.c' l='135' u='r' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='2927' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='3042' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='3064' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='3978' u='r' c='check_patch_list'/>
+<use f='codebrowser/apply.c' l='4504' u='r' c='write_out_one_reject'/>
+<use f='codebrowser/apply.c' l='4663' u='r' c='apply_patch'/>

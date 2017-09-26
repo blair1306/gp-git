@@ -1,0 +1,8 @@
+<dec f='codebrowser/convert.h' l='69' type='int convert_to_working_tree(const char * path, const char * src, size_t len, struct strbuf * dst)'/>
+<use f='codebrowser/apply.c' l='4327' u='c' c='try_create_file'/>
+<use f='codebrowser/archive.c' l='81' u='c' c='sha1_file_to_archive'/>
+<use f='codebrowser/builtin/cat-file.c' l='40' u='c' c='filter_object'/>
+<def f='codebrowser/convert.c' l='1202' ll='1205' type='int convert_to_working_tree(const char * path, const char * src, size_t len, struct strbuf * dst)'/>
+<use f='codebrowser/diff.c' l='2968' u='c' c='prep_temp_blob'/>
+<use f='codebrowser/entry.c' l='296' u='c' c='write_entry'/>
+<use f='codebrowser/merge-recursive.c' l='811' u='c' c='update_file_flags'/>

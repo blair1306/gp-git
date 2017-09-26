@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='275' type='int write_shallow_commits(struct strbuf * out, int use_pack_protocol, const struct oid_array * extra)'/>
+<use f='codebrowser/fetch-pack.c' l='395' u='c' c='find_common'/>
+<def f='codebrowser/shallow.c' l='283' ll='287' type='int write_shallow_commits(struct strbuf * out, int use_pack_protocol, const struct oid_array * extra)'/>
+<use f='codebrowser/shallow.c' l='296' u='c' c='setup_temporary_shallow'/>
+<use f='codebrowser/shallow.c' l='323' u='c' c='setup_alternate_shallow'/>

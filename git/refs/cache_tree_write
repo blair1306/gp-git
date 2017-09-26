@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache-tree.h' l='30' type='void cache_tree_write(struct strbuf * , struct cache_tree * root)'/>
+<def f='codebrowser/cache-tree.c' l='483' ll='486' type='void cache_tree_write(struct strbuf * sb, struct cache_tree * root)'/>
+<use f='codebrowser/read-cache.c' l='2274' u='c' c='do_write_index'/>

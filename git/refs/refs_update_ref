@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs.h' l='639' type='int refs_update_ref(struct ref_store * refs, const char * msg, const char * refname, const unsigned char * new_sha1, const unsigned char * old_sha1, unsigned int flags, enum action_on_err onerr)'/>
+<doc f='codebrowser/refs.h' l='631'>/**
+ * Lock, update, and unlock a single reference. This function
+ * basically does a transaction containing a single call to
+ * ref_transaction_update(). The parameters to this function have the
+ * same meaning as the corresponding parameters to
+ * ref_transaction_update(). Handle errors as requested by the `onerr`
+ * argument.
+ */</doc>
+<def f='codebrowser/refs.c' l='995' ll='1037' type='int refs_update_ref(struct ref_store * refs, const char * msg, const char * refname, const unsigned char * new_sha1, const unsigned char * old_sha1, unsigned int flags, enum action_on_err onerr)'/>
+<use f='codebrowser/refs.c' l='1044' u='c' c='update_ref'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='243' u='c' c='cmd_update_ref'/>

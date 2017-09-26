@@ -1,0 +1,9 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='99' type='unsigned long'/>
+<offset>128</offset>
+<use f='codebrowser/diff.c' l='2510' u='w' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2512' u='w' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='4656' u='w' c='diff_get_patch_id'/>
+<use f='codebrowser/xdiff-interface.c' l='135' u='r' c='xdi_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='176' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='219' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='252' u='r' c='xdl_emit_diff'/>

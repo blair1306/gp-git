@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs/ref-cache.h' l='24' type='fill_ref_dir_fn *'/>
+<offset>128</offset>
+<doc f='codebrowser/refs/ref-cache.h' l='20'>/*
+	 * Function used (if necessary) to lazily-fill cache. May be
+	 * NULL.
+	 */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='25' u='r' c='get_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='28' u='r' c='get_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='52' u='w' c='create_ref_cache'/>

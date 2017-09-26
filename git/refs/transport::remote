@@ -1,0 +1,23 @@
+<dec f='codebrowser/transport.h' l='33' type='struct remote *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/fetch.c' l='376' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='377' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='386' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='928' u='r' c='fetch_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='1063' u='r' c='backfill_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='1084' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1090' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1092' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1133' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1134' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1284' u='r' c='fetch_one'/>
+<use f='codebrowser/builtin/fetch.c' l='1285' u='r' c='fetch_one'/>
+<use f='codebrowser/transport-helper.c' l='122' u='r' c='get_helper'/>
+<use f='codebrowser/transport.c' l='60' u='r' c='set_upstreams'/>
+<use f='codebrowser/transport.c' l='65' u='r' c='set_upstreams'/>
+<use f='codebrowser/transport.c' l='768' u='w' c='transport_get'/>
+<use f='codebrowser/transport.c' l='917' u='r' c='run_pre_push_hook'/>
+<use f='codebrowser/transport.c' l='1013' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1035' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1058' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1086' u='r' c='transport_push'/>

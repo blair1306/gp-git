@@ -1,0 +1,14 @@
+<dec f='codebrowser/sigchain.h' l='9' type='void sigchain_push_common(sigchain_fun f)'/>
+<use f='codebrowser/builtin/clone.c' l='963' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='1310' u='c' c='fetch_one'/>
+<use f='codebrowser/builtin/gc.c' l='445' u='c' c='cmd_gc'/>
+<use f='codebrowser/builtin/repack.c' l='225' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/worktree.c' l='233' u='c' c='add_worktree'/>
+<use f='codebrowser/compat/terminal.c' l='44' u='c' c='disable_echo'/>
+<use f='codebrowser/http-push.c' l='1785' u='c' c='cmd_main'/>
+<use f='codebrowser/pager.c' l='133' u='c' c='setup_pager'/>
+<use f='codebrowser/run-command.c' l='94' u='c' c='mark_child_for_cleanup'/>
+<use f='codebrowser/run-command.c' l='1477' u='c' c='pp_init'/>
+<def f='codebrowser/sigchain.c' l='45' ll='52' type='void sigchain_push_common(sigchain_fun f)'/>
+<use f='codebrowser/tempfile.c' l='95' u='c' c='prepare_tempfile_object'/>
+<use f='codebrowser/tmp-objdir.c' l='154' u='c' c='tmp_objdir_create'/>

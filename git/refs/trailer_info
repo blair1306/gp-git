@@ -1,0 +1,7 @@
+<def f='codebrowser/trailer.h' l='4' ll='23'/>
+<size>40</size>
+<mbr r='trailer_info::blank_line_before_trailer' o='0' t='int'/>
+<mbr r='trailer_info::trailer_start' o='64' t='const char *'/>
+<mbr r='trailer_info::trailer_end' o='128' t='const char *'/>
+<mbr r='trailer_info::trailers' o='192' t='char **'/>
+<mbr r='trailer_info::trailer_nr' o='256' t='size_t'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='206' type='void pp_remainder(struct pretty_print_context * pp, const char ** msg_p, struct strbuf * sb, int indent)'/>
+<use f='codebrowser/builtin/log.c' l='1032' u='c' c='make_cover_letter'/>
+<def f='codebrowser/pretty.c' l='1725' ll='1762' type='void pp_remainder(struct pretty_print_context * pp, const char ** msg_p, struct strbuf * sb, int indent)'/>
+<use f='codebrowser/pretty.c' l='1823' u='c' c='pretty_print_commit'/>

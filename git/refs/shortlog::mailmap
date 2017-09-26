@@ -1,0 +1,5 @@
+<dec f='codebrowser/shortlog.h' l='20' type='struct string_list'/>
+<offset>704</offset>
+<use f='codebrowser/builtin/shortlog.c' l='68' u='a' c='insert_one_record'/>
+<use f='codebrowser/builtin/shortlog.c' l='233' u='a' c='shortlog_init'/>
+<use f='codebrowser/builtin/shortlog.c' l='354' u='a' c='shortlog_output'/>

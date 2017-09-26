@@ -1,0 +1,3 @@
+<dec f='codebrowser/utf8.h' l='27' type='char * reencode_string_iconv(const char * in, size_t insz, iconv_t conv, int * outsz)'/>
+<def f='codebrowser/utf8.c' l='450' ll='490' type='char * reencode_string_iconv(const char * in, size_t insz, iconv_t conv, int * outsz_p)'/>
+<use f='codebrowser/utf8.c' l='534' u='c' c='reencode_string_len'/>

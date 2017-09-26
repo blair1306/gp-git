@@ -1,0 +1,8 @@
+<dec f='codebrowser/urlmatch.h' l='21' type='size_t'/>
+<offset>576</offset>
+<doc f='codebrowser/urlmatch.h' l='21'>/* length of host name;
+				 * file urls may have host_len == 0 */</doc>
+<use f='codebrowser/urlmatch.c' l='79' u='r' c='match_host'/>
+<use f='codebrowser/urlmatch.c' l='80' u='r' c='match_host'/>
+<use f='codebrowser/urlmatch.c' l='424' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='531' u='r' c='match_urls'/>

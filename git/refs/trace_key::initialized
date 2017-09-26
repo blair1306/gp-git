@@ -1,0 +1,5 @@
+<dec f='codebrowser/trace.h' l='10' type='unsigned int'/>
+<offset>96</offset>
+<use f='codebrowser/trace.c' l='49' u='r' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='79' u='w' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='90' u='w' c='trace_disable'/>

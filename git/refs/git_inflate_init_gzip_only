@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='54' type='void git_inflate_init_gzip_only(git_zstream * )'/>
+<use f='codebrowser/http-backend.c' l='329' u='c' c='inflate_request'/>
+<def f='codebrowser/zlib.c' l='80' ll='96' type='void git_inflate_init_gzip_only(git_zstream * strm)'/>

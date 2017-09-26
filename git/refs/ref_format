@@ -1,0 +1,6 @@
+<def f='codebrowser/ref-filter.h' l='75' ll='86'/>
+<size>24</size>
+<mbr r='ref_format::format' o='0' t='const char *'/>
+<mbr r='ref_format::quote_style' o='64' t='int'/>
+<mbr r='ref_format::use_color' o='96' t='int'/>
+<mbr r='ref_format::need_color_reset_at_eol' o='128' t='int'/>

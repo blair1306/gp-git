@@ -1,0 +1,24 @@
+<def f='codebrowser/fetch-pack.h' l='9' ll='32'/>
+<size>40</size>
+<mbr r='fetch_pack_args::uploadpack' o='0' t='const char *'/>
+<mbr r='fetch_pack_args::unpacklimit' o='64' t='int'/>
+<mbr r='fetch_pack_args::depth' o='96' t='int'/>
+<mbr r='fetch_pack_args::deepen_since' o='128' t='const char *'/>
+<mbr r='fetch_pack_args::deepen_not' o='192' t='const struct string_list *'/>
+<mbr r='fetch_pack_args::deepen_relative' o='256' t='unsigned int'/>
+<mbr r='fetch_pack_args::quiet' o='257' t='unsigned int'/>
+<mbr r='fetch_pack_args::keep_pack' o='258' t='unsigned int'/>
+<mbr r='fetch_pack_args::lock_pack' o='259' t='unsigned int'/>
+<mbr r='fetch_pack_args::use_thin_pack' o='260' t='unsigned int'/>
+<mbr r='fetch_pack_args::fetch_all' o='261' t='unsigned int'/>
+<mbr r='fetch_pack_args::stdin_refs' o='262' t='unsigned int'/>
+<mbr r='fetch_pack_args::diag_url' o='263' t='unsigned int'/>
+<mbr r='fetch_pack_args::verbose' o='264' t='unsigned int'/>
+<mbr r='fetch_pack_args::no_progress' o='265' t='unsigned int'/>
+<mbr r='fetch_pack_args::include_tag' o='266' t='unsigned int'/>
+<mbr r='fetch_pack_args::stateless_rpc' o='267' t='unsigned int'/>
+<mbr r='fetch_pack_args::check_self_contained_and_connected' o='268' t='unsigned int'/>
+<mbr r='fetch_pack_args::self_contained_and_connected' o='269' t='unsigned int'/>
+<mbr r='fetch_pack_args::cloning' o='270' t='unsigned int'/>
+<mbr r='fetch_pack_args::update_shallow' o='271' t='unsigned int'/>
+<mbr r='fetch_pack_args::deepen' o='272' t='unsigned int'/>

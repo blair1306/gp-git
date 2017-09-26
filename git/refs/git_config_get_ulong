@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='206' type='int git_config_get_ulong(const char * key, unsigned long * dest)'/>
+<def f='codebrowser/config.c' l='2042' ll='2045' type='int git_config_get_ulong(const char * key, unsigned long * dest)'/>
+<use f='codebrowser/fast-import.c' l='3387' u='c' c='git_pack_config'/>
+<use f='codebrowser/fast-import.c' l='3397' u='c' c='git_pack_config'/>
+<use f='codebrowser/http-backend.c' l='236' u='c' c='http_config'/>

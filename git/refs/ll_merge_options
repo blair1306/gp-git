@@ -1,0 +1,6 @@
+<def f='codebrowser/ll-merge.h' l='8' ll='13'/>
+<size>16</size>
+<mbr r='ll_merge_options::virtual_ancestor' o='0' t='unsigned int'/>
+<mbr r='ll_merge_options::variant' o='1' t='unsigned int'/>
+<mbr r='ll_merge_options::renormalize' o='3' t='unsigned int'/>
+<mbr r='ll_merge_options::xdl_opts' o='64' t='long'/>

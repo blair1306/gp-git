@@ -1,0 +1,5 @@
+<def f='codebrowser/config.c' l='866' ll='898' macro='1' type='void die_bad_number(const char * name, const char * value)'/>
+<use f='codebrowser/config.c' l='904' u='c' c='git_config_int'/>
+<use f='codebrowser/config.c' l='912' u='c' c='git_config_int64'/>
+<use f='codebrowser/config.c' l='920' u='c' c='git_config_ulong'/>
+<use f='codebrowser/config.c' l='928' u='c' c='git_config_ssize_t'/>

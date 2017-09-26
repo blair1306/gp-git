@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='327'/>
+<use f='codebrowser/builtin/update-index.c' l='1112' u='c'/>
+<use f='codebrowser/read-cache.c' l='2497' u='c'/>
+<use f='codebrowser/read-cache.c' l='2500' u='c'/>
+<use f='codebrowser/read-cache.c' l='2502' u='c'/>
+<use f='codebrowser/split-index.c' l='324' u='c'/>

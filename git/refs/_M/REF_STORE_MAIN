@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs/refs-internal.h' l='511'/>
+<use f='codebrowser/refs/files-backend.c' l='74' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='101' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='524' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='609' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='702' u='c'/>

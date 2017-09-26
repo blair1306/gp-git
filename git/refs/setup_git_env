@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='467' type='void setup_git_env()'/>
+<def f='codebrowser/environment.c' l='147' ll='161' type='void setup_git_env()'/>
+<use f='codebrowser/environment.c' l='299' u='c' c='set_git_dir'/>
+<use f='codebrowser/setup.c' l='1113' u='c' c='setup_git_directory_gently'/>

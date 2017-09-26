@@ -1,0 +1,6 @@
+<dec f='codebrowser/utf8.h' l='6' type='size_t display_mode_esc_sequence_len(const char * s)'/>
+<use f='codebrowser/pretty.c' l='1350' u='c' c='format_and_pad_commit'/>
+<def f='codebrowser/utf8.c' l='12' ll='24' type='size_t display_mode_esc_sequence_len(const char * s)'/>
+<use f='codebrowser/utf8.c' l='216' u='c' c='utf8_strnwidth'/>
+<use f='codebrowser/utf8.c' l='289' u='c' c='strbuf_add_wrapped_text'/>
+<use f='codebrowser/utf8.c' l='372' u='c' c='strbuf_utf8_replace'/>

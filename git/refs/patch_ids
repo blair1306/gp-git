@@ -1,0 +1,4 @@
+<def f='codebrowser/patch-ids.h' l='10' ll='13'/>
+<size>384</size>
+<mbr r='patch_ids::patches' o='0' t='struct hashmap'/>
+<mbr r='patch_ids::diffopts' o='384' t='struct diff_options'/>

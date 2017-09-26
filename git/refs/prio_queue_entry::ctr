@@ -1,0 +1,5 @@
+<dec f='codebrowser/prio-queue.h' l='25' type='unsigned int'/>
+<offset>0</offset>
+<use f='codebrowser/prio-queue.c' l='9' u='r' c='compare'/>
+<use f='codebrowser/prio-queue.c' l='9' u='r' c='compare'/>
+<use f='codebrowser/prio-queue.c' l='42' u='w' c='prio_queue_put'/>

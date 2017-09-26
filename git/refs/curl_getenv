@@ -1,0 +1,9 @@
+<dec f='include/curl/curl.h' l='1947' type='char * curl_getenv(const char * variable)'/>
+<doc f='include/curl/curl.h' l='1939'>/*
+ * NAME curl_getenv()
+ *
+ * DESCRIPTION
+ *
+ * Returns a malloc()&apos;ed string that MUST be curl_free()ed after usage is
+ * complete. DEPRECATED - see lib/README.curlx
+ */</doc>

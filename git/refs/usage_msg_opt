@@ -1,0 +1,16 @@
+<dec f='codebrowser/parse-options.h' l='175' type='void usage_msg_opt(const char * msg, const char *const * usagestr, const struct option * options)'/>
+<use f='codebrowser/builtin/clone.c' l='893' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/clone.c' l='897' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/merge.c' l='1149' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1165' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1945' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1947' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/builtin/replace.c' l='457' u='c' c='cmd_replace'/>
+<use f='codebrowser/builtin/replace.c' l='464' u='c' c='cmd_replace'/>
+<use f='codebrowser/builtin/replace.c' l='468' u='c' c='cmd_replace'/>
+<use f='codebrowser/builtin/replace.c' l='474' u='c' c='cmd_replace'/>
+<use f='codebrowser/builtin/replace.c' l='480' u='c' c='cmd_replace'/>
+<use f='codebrowser/builtin/replace.c' l='486' u='c' c='cmd_replace'/>
+<use f='codebrowser/builtin/replace.c' l='492' u='c' c='cmd_replace'/>
+<use f='codebrowser/builtin/replace.c' l='498' u='c' c='cmd_replace'/>
+<def f='codebrowser/parse-options.c' l='663' ll='669' type='void usage_msg_opt(const char * msg, const char *const * usagestr, const struct option * options)'/>

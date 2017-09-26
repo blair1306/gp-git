@@ -1,0 +1,10 @@
+<dec f='codebrowser/submodule-config.h' l='15' type='const char *'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/submodule--helper.c' l='379' u='r' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='383' u='r' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='854' u='r' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/submodule-config.c' l='223' u='w' c='lookup_or_create_by_name'/>
+<use f='codebrowser/submodule-config.c' l='418' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='422' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='423' u='w' c='parse_config'/>
+<use f='codebrowser/t/helper/test-submodule-config.c' l='66' u='r' c='cmd_main'/>

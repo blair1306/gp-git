@@ -1,0 +1,22 @@
+<dec f='codebrowser/config.h' l='204' type='int git_config_get_string(const char * key, char ** dest)'/>
+<use f='codebrowser/branch.c' l='171' u='c' c='read_branch_desc'/>
+<use f='codebrowser/builtin/notes.c' l='754' u='c' c='git_config_get_notes_strategy'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='35' u='c' c='get_default_remote'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='187' u='c' c='resolve_relative_url'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='378' u='c' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='394' u='c' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='417' u='c' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='586' u='c' c='prepare_possible_alternates'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='590' u='c' c='prepare_possible_alternates'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='702' u='c' c='module_clone'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='706' u='c' c='module_clone'/>
+<def f='codebrowser/config.c' l='2032' ll='2035' type='int git_config_get_string(const char * key, char ** dest)'/>
+<use f='codebrowser/connect.c' l='706' u='c' c='override_ssh_variant'/>
+<use f='codebrowser/graph.c' l='265' u='c' c='graph_init'/>
+<use f='codebrowser/imap-send.c' l='1331' u='c' c='git_imap_config'/>
+<use f='codebrowser/imap-send.c' l='1349' u='c' c='git_imap_config'/>
+<use f='codebrowser/imap-send.c' l='1350' u='c' c='git_imap_config'/>
+<use f='codebrowser/imap-send.c' l='1352' u='c' c='git_imap_config'/>
+<use f='codebrowser/imap-send.c' l='1353' u='c' c='git_imap_config'/>
+<use f='codebrowser/transport.c' l='697' u='c' c='get_protocol_config'/>
+<use f='codebrowser/transport.c' l='707' u='c' c='get_protocol_config'/>

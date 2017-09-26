@@ -1,0 +1,4 @@
+<dec f='include/unistd.h' l='793' type='int link(const char * __from, const char * __to)'/>
+<doc f='include/unistd.h' l='792'>/* Make a link to FROM named TO.  */</doc>
+<use f='codebrowser/builtin/clone.c' l='438' u='c' c='copy_or_link_directory'/>
+<use f='codebrowser/sha1_file.c' l='3202' u='c' c='finalize_object_file'/>

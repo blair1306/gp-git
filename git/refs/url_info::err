@@ -1,0 +1,15 @@
+<dec f='codebrowser/urlmatch.h' l='8' type='const char *'/>
+<use f='codebrowser/builtin/config.c' l='430' u='r' c='get_urlmatch'/>
+<offset>64</offset>
+<doc f='codebrowser/urlmatch.h' l='7'>/* if !url, a brief reason for the failure, otherwise NULL */</doc>
+<use f='codebrowser/urlmatch.c' l='163' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='187' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='215' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='232' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='247' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='292' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='303' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='346' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='371' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='405' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='416' u='w' c='url_normalize_1'/>

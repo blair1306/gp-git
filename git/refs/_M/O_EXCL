@@ -1,0 +1,16 @@
+<dec f='include/x86_64-linux-gnu/bits/fcntl-linux.h' l='50'/>
+<use f='codebrowser/apply.c' l='4323' u='c'/>
+<use f='codebrowser/builtin/config.c' l='613' u='c'/>
+<use f='codebrowser/builtin/index-pack.c' l='316' u='c'/>
+<use f='codebrowser/builtin/mailsplit.c' l='78' u='c'/>
+<use f='codebrowser/copy.c' l='38' u='c'/>
+<use f='codebrowser/entry.c' l='80' u='c'/>
+<use f='codebrowser/environment.c' l='271' u='c'/>
+<use f='codebrowser/environment.c' l='277' u='c'/>
+<use f='codebrowser/http.c' l='2175' u='c'/>
+<use f='codebrowser/http.c' l='2188' u='c'/>
+<use f='codebrowser/notes-merge.c' l='302' u='c'/>
+<use f='codebrowser/pack-write.c' l='79' u='c'/>
+<use f='codebrowser/tempfile.c' l='124' u='c'/>
+<use f='codebrowser/tempfile.c' l='128' u='c'/>
+<use f='codebrowser/wrapper.c' l='517' u='c'/>

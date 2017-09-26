@@ -1,0 +1,9 @@
+<dec f='codebrowser/strbuf.h' l='291' type='void strbuf_expand(struct strbuf * sb, const char * format, expand_fn_t fn, void * context)'/>
+<use f='codebrowser/builtin/cat-file.c' l='349' u='c' c='batch_object_write'/>
+<use f='codebrowser/builtin/cat-file.c' l='452' u='c' c='batch_objects'/>
+<use f='codebrowser/convert.c' l='416' u='c' c='filter_buffer_or_fd'/>
+<use f='codebrowser/daemon.c' l='210' u='c' c='path_ok'/>
+<use f='codebrowser/ll-merge.c' l='201' u='c' c='ll_ext_merge'/>
+<use f='codebrowser/pretty.c' l='1479' u='c' c='userformat_find_requirements'/>
+<use f='codebrowser/pretty.c' l='1503' u='c' c='format_commit_message'/>
+<def f='codebrowser/strbuf.c' l='292' ll='317' type='void strbuf_expand(struct strbuf * sb, const char * format, expand_fn_t fn, void * context)'/>

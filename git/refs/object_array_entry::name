@@ -1,0 +1,82 @@
+<dec f='codebrowser/object.h' l='20' type='char *'/>
+<offset>64</offset>
+<doc f='codebrowser/object.h' l='14'>/*
+		 * name or NULL.  If non-NULL, the memory pointed to
+		 * is owned by this object *except* if it points at
+		 * object_array_slopbuf, which is a static copy of the
+		 * empty string.
+		 */</doc>
+<use f='codebrowser/blame.c' l='1658' u='r' c='find_single_final'/>
+<use f='codebrowser/blame.c' l='1661' u='r' c='find_single_final'/>
+<use f='codebrowser/blame.c' l='1663' u='r' c='find_single_final'/>
+<use f='codebrowser/blame.c' l='1703' u='r' c='dwim_reverse_initial'/>
+<use f='codebrowser/blame.c' l='1724' u='r' c='find_single_initial'/>
+<use f='codebrowser/blame.c' l='1727' u='r' c='find_single_initial'/>
+<use f='codebrowser/blame.c' l='1729' u='r' c='find_single_initial'/>
+<use f='codebrowser/builtin/diff.c' l='29' u='r' c='blob_path'/>
+<use f='codebrowser/builtin/diff.c' l='396' u='r' c='cmd_diff'/>
+<use f='codebrowser/builtin/grep.c' l='648' u='r' c='grep_objects'/>
+<use f='codebrowser/builtin/log.c' l='590' u='r' c='cmd_show'/>
+<use f='codebrowser/builtin/log.c' l='1659' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1659' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/name-rev.c' l='493' u='r' c='cmd_name_rev'/>
+<use f='codebrowser/bundle.c' l='176' u='r' c='verify_bundle'/>
+<use f='codebrowser/bundle.c' l='334' u='r' c='write_bundle_refs'/>
+<use f='codebrowser/bundle.c' l='334' u='r' c='write_bundle_refs'/>
+<use f='codebrowser/bundle.c' l='336' u='r' c='write_bundle_refs'/>
+<use f='codebrowser/bundle.c' l='338' u='r' c='write_bundle_refs'/>
+<use f='codebrowser/bundle.c' l='357' u='r' c='write_bundle_refs'/>
+<use f='codebrowser/bundle.c' l='384' u='r' c='write_bundle_refs'/>
+<use f='codebrowser/bundle.c' l='386' u='r' c='write_bundle_refs'/>
+<use f='codebrowser/diff-lib.c' l='514' u='r' c='run_diff_index'/>
+<use f='codebrowser/http-push.c' l='1339' u='r' c='get_delta'/>
+<use f='codebrowser/line-log.c' l='484' u='r' c='check_single_commit'/>
+<use f='codebrowser/line-log.c' l='487' u='r' c='check_single_commit'/>
+<use f='codebrowser/line-log.c' l='488' u='r' c='check_single_commit'/>
+<use f='codebrowser/list-objects.c' l='208' u='r' c='traverse_commit_list'/>
+<use f='codebrowser/object.c' l='326' u='w' c='add_object_array_with_path'/>
+<use f='codebrowser/object.c' l='329' u='w' c='add_object_array_with_path'/>
+<use f='codebrowser/object.c' l='331' u='w' c='add_object_array_with_path'/>
+<use f='codebrowser/object.c' l='351' u='r' c='object_array_release_entry'/>
+<use f='codebrowser/object.c' l='352' u='r' c='object_array_release_entry'/>
+<use f='codebrowser/object.c' l='392' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='392' u='r' c='contains_name'/>
+<use f='codebrowser/object.c' l='404' u='r' c='object_array_remove_duplicates'/>
+<use f='codebrowser/revision.c' l='215' u='r' c='handle_commit'/>
+<use f='codebrowser/sequencer.c' l='2318' u='r' c='sequencer_pick_revisions'/>

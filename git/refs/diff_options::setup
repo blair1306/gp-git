@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='147' type='int'/>
+<offset>1056</offset>
+<use f='codebrowser/builtin/diff-tree.c' l='165' u='w' c='cmd_diff_tree'/>
+<use f='codebrowser/diff.c' l='3483' u='r' c='diff_setup_done'/>

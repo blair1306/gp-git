@@ -1,0 +1,5 @@
+<dec f='codebrowser/convert.h' l='75' type='int renormalize_buffer(const struct index_state * istate, const char * path, const char * src, size_t len, struct strbuf * dst)'/>
+<def f='codebrowser/convert.c' l='1207' ll='1216' type='int renormalize_buffer(const struct index_state * istate, const char * path, const char * src, size_t len, struct strbuf * dst)'/>
+<use f='codebrowser/ll-merge.c' l='342' u='c' c='normalize_file'/>
+<use f='codebrowser/merge-recursive.c' l='1643' u='c' c='blob_unchanged'/>
+<use f='codebrowser/merge-recursive.c' l='1644' u='c' c='blob_unchanged'/>

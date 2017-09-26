@@ -1,0 +1,8 @@
+<dec f='codebrowser/pack.h' l='45' type='uint32_t'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/index-pack.c' l='1725' u='w' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/index-pack.c' l='1726' u='r' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2844' u='w' c='option_parse_index_version'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2845' u='r' c='option_parse_index_version'/>
+<use f='codebrowser/pack-write.c' l='9' u='w' c='reset_pack_idx_option'/>
+<use f='codebrowser/pack-write.c' l='31' u='r' c='need_large_offset'/>

@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/bits/local_lim.h' l='93'/>
+<use f='codebrowser/git-compat-util.h' l='911' u='a'/>
+<doc f='include/x86_64-linux-gnu/bits/local_lim.h' l='92'>/* Maximum host name length.  */</doc>
+<use f='codebrowser/builtin/gc.c' l='236' u='c'/>
+<use f='codebrowser/builtin/gc.c' l='255' u='c'/>
+<use f='codebrowser/builtin/gc.c' l='260' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1745' u='c'/>
+<use f='codebrowser/daemon.c' l='617' u='c'/>
+<use f='codebrowser/fetch-pack.c' l='845' u='c'/>
+<use f='codebrowser/ident.c' l='122' u='c'/>

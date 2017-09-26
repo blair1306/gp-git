@@ -1,0 +1,8 @@
+<dec f='codebrowser/khash.h' l='256'/>
+<doc f='codebrowser/khash.h' l='249'>/*! @function
+  @abstract     Get value given an iterator
+  @param  h     Pointer to the hash table [khash_t(name)*]
+  @param  x     Iterator to the bucket [khint_t]
+  @return       Value [type of values]
+  @discussion   For hash sets, calling this results in segfault.
+ */</doc>

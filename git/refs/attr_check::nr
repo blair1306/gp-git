@@ -1,0 +1,21 @@
+<dec f='codebrowser/attr.h' l='37' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/attr.c' l='589' u='w' c='attr_check_initl'/>
+<use f='codebrowser/attr.c' l='595' u='r' c='attr_check_initl'/>
+<use f='codebrowser/attr.c' l='600' u='r' c='attr_check_initl'/>
+<use f='codebrowser/attr.c' l='619' u='w' c='attr_check_dup'/>
+<use f='codebrowser/attr.c' l='619' u='r' c='attr_check_dup'/>
+<use f='codebrowser/attr.c' l='621' u='r' c='attr_check_dup'/>
+<use f='codebrowser/attr.c' l='622' u='r' c='attr_check_dup'/>
+<use f='codebrowser/attr.c' l='632' u='r' c='attr_check_append'/>
+<use f='codebrowser/attr.c' l='632' u='r' c='attr_check_append'/>
+<use f='codebrowser/attr.c' l='632' u='r' c='attr_check_append'/>
+<use f='codebrowser/attr.c' l='633' u='w' c='attr_check_append'/>
+<use f='codebrowser/attr.c' l='640' u='w' c='attr_check_reset'/>
+<use f='codebrowser/attr.c' l='647' u='w' c='attr_check_clear'/>
+<use f='codebrowser/attr.c' l='1118' u='r' c='collect_some_attrs'/>
+<use f='codebrowser/attr.c' l='1120' u='r' c='collect_some_attrs'/>
+<use f='codebrowser/attr.c' l='1128' u='r' c='collect_some_attrs'/>
+<use f='codebrowser/attr.c' l='1142' u='r' c='git_check_attr'/>
+<use f='codebrowser/builtin/check-attr.c' l='31' u='r' c='output_attr'/>
+<use f='codebrowser/pathspec.c' l='200' u='r' c='parse_pathspec_attr_match'/>

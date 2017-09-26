@@ -1,0 +1,5 @@
+<dec f='codebrowser/setup.c' l='867' type='-1'/>
+<use f='codebrowser/setup.c' l='963' u='r' c='setup_git_directory_gently_1'/>
+<use f='codebrowser/setup.c' l='968' u='r' c='setup_git_directory_gently_1'/>
+<use f='codebrowser/setup.c' l='1071' c='setup_git_directory_gently'/>
+<doc f='codebrowser/setup.c' l='866'>/* these are errors */</doc>

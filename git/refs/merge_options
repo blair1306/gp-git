@@ -1,0 +1,22 @@
+<def f='codebrowser/merge-recursive.h' l='6' ll='31'/>
+<size>208</size>
+<mbr r='merge_options::ancestor' o='0' t='const char *'/>
+<mbr r='merge_options::branch1' o='64' t='const char *'/>
+<mbr r='merge_options::branch2' o='128' t='const char *'/>
+<mbr r='merge_options::recursive_variant' o='192' t='enum (anonymous enum at /home/jon/workspace/git/merge-recursive.h:10:2)'/>
+<mbr r='merge_options::subtree_shift' o='256' t='const char *'/>
+<mbr r='merge_options::buffer_output' o='320' t='unsigned int'/>
+<mbr r='merge_options::renormalize' o='352' t='unsigned int'/>
+<mbr r='merge_options::xdl_opts' o='384' t='long'/>
+<mbr r='merge_options::verbosity' o='448' t='int'/>
+<mbr r='merge_options::detect_rename' o='480' t='int'/>
+<mbr r='merge_options::diff_rename_limit' o='512' t='int'/>
+<mbr r='merge_options::merge_rename_limit' o='544' t='int'/>
+<mbr r='merge_options::rename_score' o='576' t='int'/>
+<mbr r='merge_options::needed_rename_limit' o='608' t='int'/>
+<mbr r='merge_options::show_rename_progress' o='640' t='int'/>
+<mbr r='merge_options::call_depth' o='672' t='int'/>
+<mbr r='merge_options::obuf' o='704' t='struct strbuf'/>
+<mbr r='merge_options::current_file_set' o='896' t='struct string_list'/>
+<mbr r='merge_options::current_directory_set' o='1152' t='struct string_list'/>
+<mbr r='merge_options::df_conflict_file_set' o='1408' t='struct string_list'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/mru.h' l='42' type='void mru_mark(struct mru * mru, struct mru_entry * entry)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1032' u='c' c='want_object_in_pack'/>
+<def f='codebrowser/mru.c' l='18' ll='38' type='void mru_mark(struct mru * mru, struct mru_entry * entry)'/>
+<use f='codebrowser/sha1_file.c' l='2880' u='c' c='find_pack_entry'/>

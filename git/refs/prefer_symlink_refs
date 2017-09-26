@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='733' type='int'/>
+<use f='codebrowser/config.c' l='1049' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='24' type='int'/>
+<use f='codebrowser/refs/files-backend.c' l='1739' u='r' c='create_symref_locked'/>

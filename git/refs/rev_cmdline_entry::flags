@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='47' type='unsigned int'/>
+<offset>160</offset>
+<use f='codebrowser/builtin/fast-export.c' l='808' u='r' c='get_tags_and_duplicates'/>
+<use f='codebrowser/builtin/log.c' l='967' u='r' c='find_branch_name'/>
+<use f='codebrowser/revision.c' l='1112' u='w' c='add_rev_cmdline'/>
+<use f='codebrowser/sequencer.c' l='2344' u='r' c='sequencer_pick_revisions'/>

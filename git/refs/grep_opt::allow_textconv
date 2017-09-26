@@ -1,0 +1,7 @@
+<dec f='codebrowser/grep.h' l='143' type='int'/>
+<offset>1344</offset>
+<use f='codebrowser/builtin/grep.c' l='802' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='802' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='802' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='802' u='a' c='cmd_grep'/>
+<use f='codebrowser/grep.c' l='1671' u='r' c='grep_source_1'/>

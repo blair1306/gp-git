@@ -1,0 +1,9 @@
+<dec f='codebrowser/userdiff.h' l='7' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/diff.c' l='2312' u='r' c='diff_funcname_pattern'/>
+<use f='codebrowser/diff.c' l='2514' u='r' c='builtin_diff'/>
+<use f='codebrowser/grep.c' l='1438' u='r' c='match_funcname'/>
+<use f='codebrowser/grep.c' l='1440' u='r' c='match_funcname'/>
+<use f='codebrowser/line-range.c' l='202' u='r' c='parse_range_funcname'/>
+<use f='codebrowser/line-range.c' l='205' u='r' c='parse_range_funcname'/>
+<use f='codebrowser/userdiff.c' l='202' u='a' c='parse_funcname'/>

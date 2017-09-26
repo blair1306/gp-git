@@ -1,0 +1,8 @@
+<dec f='codebrowser/column.h' l='39' type='void print_columns(const struct string_list * list, unsigned int colopts, const struct column_options * opts)'/>
+<use f='codebrowser/builtin/branch.c' l='674' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/clean.c' l='277' u='c' c='pretty_print_dels'/>
+<use f='codebrowser/builtin/clean.c' l='291' u='c' c='pretty_print_menus'/>
+<use f='codebrowser/builtin/column.c' l='58' u='c' c='cmd_column'/>
+<def f='codebrowser/column.c' l='190' ll='219' type='void print_columns(const struct string_list * list, unsigned int colopts, const struct column_options * opts)'/>
+<use f='codebrowser/help.c' l='98' u='c' c='pretty_print_cmdnames'/>
+<use f='codebrowser/wt-status.c' l='914' u='c' c='wt_longstatus_print_other'/>

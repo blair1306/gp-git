@@ -1,0 +1,11 @@
+<dec f='codebrowser/ewah/ewok_rlw.h' l='100' type='size_t rlwit_discharge(struct rlw_iterator * it, struct ewah_bitmap * out, size_t max, int negate)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='426' u='c' c='ewah_xor'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='456' u='c' c='ewah_xor'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='458' u='c' c='ewah_xor'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='495' u='c' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='568' u='c' c='ewah_and_not'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='597' u='c' c='ewah_and_not'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='636' u='c' c='ewah_or'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='665' u='c' c='ewah_or'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='667' u='c' c='ewah_or'/>
+<def f='codebrowser/ewah/ewah_rlw.c' l='81' ll='107' type='size_t rlwit_discharge(struct rlw_iterator * it, struct ewah_bitmap * out, size_t max, int negate)'/>

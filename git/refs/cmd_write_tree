@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='240' type='int cmd_write_tree(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/write-tree.c' l='18' ll='57' type='int cmd_write_tree(int argc, const char ** argv, const char * unused_prefix)'/>
+<use f='codebrowser/git.c' l='484'/>
+<use f='codebrowser/git.c' l='484'/>
+<use f='codebrowser/git.c' l='484'/>
+<use f='codebrowser/git.c' l='484'/>

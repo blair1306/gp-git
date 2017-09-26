@@ -1,0 +1,6 @@
+<dec f='codebrowser/connected.h' l='22' type='const char *'/>
+<offset>64</offset>
+<doc f='codebrowser/connected.h' l='21'>/* --shallow-file to pass to rev-list sub-process */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='890' u='a' c='update_shallow_ref'/>
+<use f='codebrowser/connected.c' l='51' u='r' c='check_connected'/>
+<use f='codebrowser/connected.c' l='53' u='r' c='check_connected'/>

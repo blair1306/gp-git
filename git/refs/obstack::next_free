@@ -1,0 +1,37 @@
+<dec f='codebrowser/compat/obstack.h' l='156' type='char *'/>
+<offset>192</offset>
+<doc f='codebrowser/compat/obstack.h' l='156'>/* where to add next char to current object */</doc>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='179' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='769' macro='1' u='w'/>

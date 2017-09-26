@@ -1,0 +1,17 @@
+<dec f='codebrowser/compat/obstack.h' l='157' type='char *'/>
+<offset>256</offset>
+<doc f='codebrowser/compat/obstack.h' l='157'>/* address of char after current chunk */</doc>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='179' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='r'/>
+<use f='codebrowser/kwset.c' l='769' macro='1' u='r'/>

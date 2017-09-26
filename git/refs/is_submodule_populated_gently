@@ -1,0 +1,10 @@
+<dec f='codebrowser/submodule.h' l='60' type='int is_submodule_populated_gently(const char * path, int * return_error_code)'/>
+<doc f='codebrowser/submodule.h' l='54'>/*
+ * Determine if a submodule has been populated at a given &apos;path&apos; by checking if
+ * the &lt;path&gt;/.git resolves to a valid git repository.
+ * If return_error_code is NULL, die on error.
+ * Otherwise the return error code is the same as of resolve_gitdir_gently.
+ */</doc>
+<use f='codebrowser/entry.c' l='400' u='c' c='checkout_entry'/>
+<def f='codebrowser/submodule.c' l='326' ll='336' type='int is_submodule_populated_gently(const char * path, int * return_error_code)'/>
+<use f='codebrowser/submodule.c' l='1564' u='c' c='submodule_move_head'/>

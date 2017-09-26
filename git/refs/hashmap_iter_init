@@ -1,0 +1,11 @@
+<dec f='codebrowser/hashmap.h' l='377' type='void hashmap_iter_init(struct hashmap * map, struct hashmap_iter * iter)'/>
+<use f='codebrowser/hashmap.h' l='386' u='c' c='hashmap_iter_first'/>
+<doc f='codebrowser/hashmap.h' l='376'>/* Initializes a `hashmap_iter` structure. */</doc>
+<use f='codebrowser/attr.c' l='169' u='c' c='all_attrs_init'/>
+<use f='codebrowser/builtin/difftool.c' l='539' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='558' u='c' c='run_dir_diff'/>
+<use f='codebrowser/config.c' l='1753' u='c' c='git_configset_clear'/>
+<use f='codebrowser/hashmap.c' l='178' u='c' c='hashmap_free'/>
+<def f='codebrowser/hashmap.c' l='240' ll='245' type='void hashmap_iter_init(struct hashmap * map, struct hashmap_iter * iter)'/>
+<use f='codebrowser/submodule-config.c' l='95' u='c' c='submodule_cache_clear'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='231' u='c' c='cmd_main'/>

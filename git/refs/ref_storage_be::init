@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs/refs-internal.h' l='640' type='ref_store_init_fn *'/>
+<use f='codebrowser/refs.c' l='1606' u='r' c='ref_store_init'/>
+<offset>128</offset>

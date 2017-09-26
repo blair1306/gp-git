@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin/commit.c' l='103' type='2'/>
+<use f='codebrowser/builtin/commit.c' l='210' c='rollback_index_files'/>
+<use f='codebrowser/builtin/commit.c' l='227' c='commit_index_files'/>
+<use f='codebrowser/builtin/commit.c' l='383' u='r' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='406' u='r' c='prepare_index'/>

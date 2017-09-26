@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='27' type='2'/>
+<use f='codebrowser/builtin/commit.c' l='1084' u='r' c='handle_untracked_files_arg'/>
+<use f='codebrowser/builtin/commit.c' l='1329' u='r' c='git_status_config'/>
+<use f='codebrowser/wt-status.c' l='660' u='r' c='wt_status_collect_untracked'/>

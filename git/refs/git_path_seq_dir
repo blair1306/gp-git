@@ -1,0 +1,8 @@
+<dec f='codebrowser/sequencer.h' l='4' type='const char * git_path_seq_dir()'/>
+<use f='codebrowser/builtin/commit.c' l='186' u='c' c='determine_whence'/>
+<def f='codebrowser/sequencer.c' l='29' macro='1' type='const char * git_path_seq_dir()'/>
+<use f='codebrowser/sequencer.c' l='141' u='c' c='get_dir'/>
+<use f='codebrowser/sequencer.c' l='370' u='c' c='update_abort_safety_file'/>
+<use f='codebrowser/sequencer.c' l='1553' u='c' c='create_seq_dir'/>
+<use f='codebrowser/sequencer.c' l='1557' u='c' c='create_seq_dir'/>
+<use f='codebrowser/sequencer.c' l='1559' u='c' c='create_seq_dir'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/refs/ref-cache.h' l='108'/>
+<doc f='codebrowser/refs/ref-cache.h' l='107'>/* ref_entry represents a directory of references */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='22' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='61' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='97' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='213' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='274' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='274' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='360' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='476' u='c'/>

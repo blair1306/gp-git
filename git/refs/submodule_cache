@@ -1,0 +1,13 @@
+<def f='codebrowser/submodule-config.c' l='17' ll='21'/>
+<size>104</size>
+<doc f='codebrowser/submodule-config.c' l='9'>/*
+ * submodule cache lookup structure
+ * There is one shared set of &apos;struct submodule&apos; entries which can be
+ * looked up by their sha1 blob id of the .gitmodule file and either
+ * using path or name as key.
+ * for_path stores submodule entries with path as key
+ * for_name stores submodule entries with name as key
+ */</doc>
+<mbr r='submodule_cache::for_path' o='0' t='struct hashmap'/>
+<mbr r='submodule_cache::for_name' o='384' t='struct hashmap'/>
+<mbr r='submodule_cache::initialized' o='768' t='unsigned int'/>

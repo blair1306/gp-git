@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='515' type='79'/>
+<doc f='include/curl/curl.h' l='515'>/* 79 - error from the SSH layer, somewhat
+                                    generic so the error message will be of
+                                    interest when this has happened */</doc>

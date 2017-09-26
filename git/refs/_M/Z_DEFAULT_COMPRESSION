@@ -1,0 +1,7 @@
+<dec f='include/zlib.h' l='189'/>
+<use f='codebrowser/archive.c' l='478' u='c'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2996' u='c'/>
+<use f='codebrowser/config.c' l='1088' u='c'/>
+<use f='codebrowser/config.c' l='1099' u='c'/>
+<use f='codebrowser/config.c' l='1375' u='c'/>
+<use f='codebrowser/environment.c' l='38' u='c'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/submodule.h' l='147' type='const char * get_superproject_working_tree()'/>
+<doc f='codebrowser/submodule.h' l='142'>/*
+ * Return the absolute path of the working tree of the superproject, which this
+ * project is a submodule of. If this repository is not a submodule of
+ * another repository, return NULL.
+ */</doc>
+<use f='codebrowser/builtin/rev-parse.c' l='791' u='c' c='cmd_rev_parse'/>
+<def f='codebrowser/submodule.c' l='1943' ll='2023' type='const char * get_superproject_working_tree()'/>

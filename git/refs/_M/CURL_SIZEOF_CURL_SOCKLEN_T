@@ -1,0 +1,4 @@
+<dec f='include/curl/curlbuild.h' l='169'/>
+<use f='include/curl/curlrules.h' l='88' u='a'/>
+<use f='include/curl/curlrules.h' l='173' u='c'/>
+<doc f='include/curl/curlbuild.h' l='168'>/* The size of `curl_socklen_t&apos;, as computed by sizeof. */</doc>

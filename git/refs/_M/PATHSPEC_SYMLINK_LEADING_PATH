@@ -1,0 +1,6 @@
+<dec f='codebrowser/pathspec.h' l='62'/>
+<doc f='codebrowser/pathspec.h' l='61'>/* die if a symlink is part of the given path&apos;s directory */</doc>
+<use f='codebrowser/builtin/add.c' l='187' u='c'/>
+<use f='codebrowser/builtin/add.c' l='436' u='c'/>
+<use f='codebrowser/builtin/check-ignore.c' l='91' u='c'/>
+<use f='codebrowser/pathspec.c' l='597' u='c'/>

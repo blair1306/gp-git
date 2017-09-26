@@ -1,0 +1,35 @@
+<dec f='codebrowser/cache.h' l='1588' type='struct packed_git *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/count-objects.c' l='124' u='r' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/fsck.c' l='712' u='r' c='cmd_fsck'/>
+<use f='codebrowser/builtin/fsck.c' l='720' u='r' c='cmd_fsck'/>
+<use f='codebrowser/builtin/gc.c' l='175' u='r' c='too_many_packs'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2596' u='r' c='add_objects_in_unpacked_packs'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2670' u='r' c='has_sha1_pack_kept_or_nonlocal'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2672' u='r' c='has_sha1_pack_kept_or_nonlocal'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2704' u='r' c='loosen_unused_packed_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3052' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3065' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='581' u='r' c='add_pack_file'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='592' u='r' c='load_all'/>
+<use f='codebrowser/http-backend.c' l='521' u='r' c='get_info_packs'/>
+<use f='codebrowser/http-backend.c' l='527' u='r' c='get_info_packs'/>
+<use f='codebrowser/http.c' l='1942' u='w' c='fetch_and_setup_pack_index'/>
+<use f='codebrowser/http.c' l='2017' u='a' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2018' u='r' c='finish_http_pack_request'/>
+<use f='codebrowser/pack-bitmap.c' l='337' u='r' c='open_pack_bitmap'/>
+<use f='codebrowser/server-info.c' l='202' u='r' c='init_pack_info'/>
+<use f='codebrowser/server-info.c' l='212' u='r' c='init_pack_info'/>
+<use f='codebrowser/sha1_file.c' l='892' u='r' c='unuse_one_window'/>
+<use f='codebrowser/sha1_file.c' l='992' u='r' c='close_all_packs'/>
+<use f='codebrowser/sha1_file.c' l='1061' u='r' c='close_one_pack'/>
+<use f='codebrowser/sha1_file.c' l='1384' u='w' c='install_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1467' u='r' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1517' u='r' c='approximate_object_count'/>
+<use f='codebrowser/sha1_file.c' l='1528' u='r' c='get_next_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1533' u='w' c='set_next_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1575' u='r' c='prepare_packed_git_mru'/>
+<use f='codebrowser/sha1_file.c' l='1621' u='r' c='has_packed_and_bad'/>
+<use f='codebrowser/sha1_file.c' l='2892' u='r' c='find_sha1_pack'/>
+<use f='codebrowser/sha1_file.c' l='3880' u='r' c='for_each_packed_object'/>
+<use f='codebrowser/sha1_name.c' l='195' u='r' c='find_short_packed_object'/>

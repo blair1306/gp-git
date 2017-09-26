@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='224' type='const char * remote_for_branch(struct branch * branch, int * explicit)'/>
+<use f='codebrowser/builtin/pull.c' l='637' u='c' c='get_upstream_branch'/>
+<def f='codebrowser/remote.c' l='652' ll='662' type='const char * remote_for_branch(struct branch * branch, int * explicit)'/>
+<use f='codebrowser/remote.c' l='676' u='c' c='pushremote_for_branch'/>
+<use f='codebrowser/remote.c' l='710' u='r' c='remote_get'/>

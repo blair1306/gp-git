@@ -1,0 +1,9 @@
+<dec f='include/expat.h' l='723' type='enum XML_Status XML_SetBase(XML_Parser parser, const XML_Char * base)'/>
+<doc f='include/expat.h' l='714'>/* Sets the base to be used for resolving relative URIs in system
+   identifiers in declarations.  Resolving relative identifiers is
+   left to the application: this value will be passed through as the
+   base argument to the XML_ExternalEntityRefHandler,
+   XML_NotationDeclHandler and XML_UnparsedEntityDeclHandler. The base
+   argument will be copied.  Returns XML_STATUS_ERROR if out of memory,
+   XML_STATUS_OK otherwise.
+*/</doc>

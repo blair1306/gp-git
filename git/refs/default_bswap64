@@ -1,0 +1,2 @@
+<def f='codebrowser/compat/bswap.h' l='20' ll='30' type='uint64_t default_bswap64(uint64_t val)'/>
+<use f='codebrowser/compat/bswap.h' l='54' u='c' c='git_bswap64'/>

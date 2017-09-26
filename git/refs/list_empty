@@ -1,0 +1,2 @@
+<def f='codebrowser/list.h' l='151' ll='154' type='int list_empty(struct list_head * head)'/>
+<use f='codebrowser/trailer.c' l='339' u='c' c='find_same_and_apply_arg'/>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>tar.h source code [codebrowser/tar.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ustar_header "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/tar.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='tar.h.html'>tar.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#define <dfn class="macro" id="_M/TYPEFLAG_AUTO" data-ref="_M/TYPEFLAG_AUTO">TYPEFLAG_AUTO</dfn>		'\0'</u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/TYPEFLAG_REG" data-ref="_M/TYPEFLAG_REG">TYPEFLAG_REG</dfn>		'0'</u></td></tr>
+<tr><th id="3">3</th><td><u>#define <dfn class="macro" id="_M/TYPEFLAG_LNK" data-ref="_M/TYPEFLAG_LNK">TYPEFLAG_LNK</dfn>		'2'</u></td></tr>
+<tr><th id="4">4</th><td><u>#define <dfn class="macro" id="_M/TYPEFLAG_DIR" data-ref="_M/TYPEFLAG_DIR">TYPEFLAG_DIR</dfn>		'5'</u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/TYPEFLAG_GLOBAL_HEADER" data-ref="_M/TYPEFLAG_GLOBAL_HEADER">TYPEFLAG_GLOBAL_HEADER</dfn>	'g'</u></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/TYPEFLAG_EXT_HEADER" data-ref="_M/TYPEFLAG_EXT_HEADER">TYPEFLAG_EXT_HEADER</dfn>	'x'</u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>struct</b> <dfn class="type def" id="ustar_header" title='ustar_header' data-ref="ustar_header">ustar_header</dfn> {</td></tr>
+<tr><th id="9">9</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::name" title='ustar_header::name' data-ref="ustar_header::name">name</dfn>[<var>100</var>];		<i>/*   0 */</i></td></tr>
+<tr><th id="10">10</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::mode" title='ustar_header::mode' data-ref="ustar_header::mode">mode</dfn>[<var>8</var>];		<i>/* 100 */</i></td></tr>
+<tr><th id="11">11</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::uid" title='ustar_header::uid' data-ref="ustar_header::uid">uid</dfn>[<var>8</var>];		<i>/* 108 */</i></td></tr>
+<tr><th id="12">12</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::gid" title='ustar_header::gid' data-ref="ustar_header::gid">gid</dfn>[<var>8</var>];		<i>/* 116 */</i></td></tr>
+<tr><th id="13">13</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::size" title='ustar_header::size' data-ref="ustar_header::size">size</dfn>[<var>12</var>];		<i>/* 124 */</i></td></tr>
+<tr><th id="14">14</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::mtime" title='ustar_header::mtime' data-ref="ustar_header::mtime">mtime</dfn>[<var>12</var>];		<i>/* 136 */</i></td></tr>
+<tr><th id="15">15</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::chksum" title='ustar_header::chksum' data-ref="ustar_header::chksum">chksum</dfn>[<var>8</var>];		<i>/* 148 */</i></td></tr>
+<tr><th id="16">16</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::typeflag" title='ustar_header::typeflag' data-ref="ustar_header::typeflag">typeflag</dfn>[<var>1</var>];	<i>/* 156 */</i></td></tr>
+<tr><th id="17">17</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::linkname" title='ustar_header::linkname' data-ref="ustar_header::linkname">linkname</dfn>[<var>100</var>];	<i>/* 157 */</i></td></tr>
+<tr><th id="18">18</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::magic" title='ustar_header::magic' data-ref="ustar_header::magic">magic</dfn>[<var>6</var>];		<i>/* 257 */</i></td></tr>
+<tr><th id="19">19</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::version" title='ustar_header::version' data-ref="ustar_header::version">version</dfn>[<var>2</var>];	<i>/* 263 */</i></td></tr>
+<tr><th id="20">20</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::uname" title='ustar_header::uname' data-ref="ustar_header::uname">uname</dfn>[<var>32</var>];		<i>/* 265 */</i></td></tr>
+<tr><th id="21">21</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::gname" title='ustar_header::gname' data-ref="ustar_header::gname">gname</dfn>[<var>32</var>];		<i>/* 297 */</i></td></tr>
+<tr><th id="22">22</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::devmajor" title='ustar_header::devmajor' data-ref="ustar_header::devmajor">devmajor</dfn>[<var>8</var>];	<i>/* 329 */</i></td></tr>
+<tr><th id="23">23</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::devminor" title='ustar_header::devminor' data-ref="ustar_header::devminor">devminor</dfn>[<var>8</var>];	<i>/* 337 */</i></td></tr>
+<tr><th id="24">24</th><td>	<em>char</em> <dfn class="decl" id="ustar_header::prefix" title='ustar_header::prefix' data-ref="ustar_header::prefix">prefix</dfn>[<var>155</var>];	<i>/* 345 */</i></td></tr>
+<tr><th id="25">25</th><td>};</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='archive-tar.c.html'>codebrowser/archive-tar.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

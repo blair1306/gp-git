@@ -1,0 +1,5 @@
+<dec f='codebrowser/url.h' l='5' type='int is_urlschemechar(int first_flag, int ch)'/>
+<use f='codebrowser/transport.c' l='779' u='c' c='transport_get'/>
+<def f='codebrowser/url.c' l='4' ll='17' type='int is_urlschemechar(int first_flag, int ch)'/>
+<use f='codebrowser/url.c' l='22' u='c' c='is_url'/>
+<use f='codebrowser/url.c' l='25' u='c' c='is_url'/>

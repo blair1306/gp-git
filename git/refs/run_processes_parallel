@@ -1,0 +1,19 @@
+<dec f='codebrowser/run-command.h' l='219' type='int run_processes_parallel(int n, get_next_task_fn , start_failure_fn , task_finished_fn , void * pp_cb)'/>
+<doc f='codebrowser/run-command.h' l='207'>/**
+ * Runs up to n processes at the same time. Whenever a process can be
+ * started, the callback get_next_task_fn is called to obtain the data
+ * required to start another child process.
+ *
+ * The children started via this function run in parallel. Their output
+ * (both stdout and stderr) is routed to stderr in a manner that output
+ * from different tasks does not interleave.
+ *
+ * start_failure_fn and task_finished_fn can be NULL to omit any
+ * special handling.
+ */</doc>
+<use f='codebrowser/builtin/submodule--helper.c' l='1032' u='c' c='update_clone'/>
+<def f='codebrowser/run-command.c' l='1644' ll='1684' type='int run_processes_parallel(int n, get_next_task_fn get_next_task, start_failure_fn start_failure, task_finished_fn task_finished, void * pp_cb)'/>
+<use f='codebrowser/submodule.c' l='1304' u='c' c='fetch_populated_submodules'/>
+<use f='codebrowser/t/helper/test-run-command.c' l='74' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-run-command.c' l='78' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-run-command.c' l='82' u='c' c='cmd_main'/>

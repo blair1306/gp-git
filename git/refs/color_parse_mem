@@ -1,0 +1,5 @@
+<dec f='codebrowser/color.h' l='86' type='int color_parse_mem(const char * value, int len, char * dst)'/>
+<use f='codebrowser/color.c' l='161' u='c' c='color_parse'/>
+<def f='codebrowser/color.c' l='202' ll='303' type='int color_parse_mem(const char * value, int value_len, char * dst)'/>
+<use f='codebrowser/graph.c' l='94' u='c' c='parse_graph_colors_config'/>
+<use f='codebrowser/pretty.c' l='971' u='c' c='parse_color'/>

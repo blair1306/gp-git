@@ -1,0 +1,10 @@
+<dec f='codebrowser/blame.h' l='133' type='unsigned int'/>
+<use f='codebrowser/blame.c' l='1306' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1317' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1495' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1496' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1497' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1500' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1746' u='w' c='init_scoreboard'/>
+<offset>960</offset>
+<use f='codebrowser/builtin/blame.c' l='914' u='w' c='cmd_blame'/>

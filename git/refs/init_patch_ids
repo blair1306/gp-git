@@ -1,0 +1,4 @@
+<dec f='codebrowser/patch-ids.h' l='17' type='int init_patch_ids(struct patch_ids * )'/>
+<use f='codebrowser/builtin/log.c' l='901' u='c' c='get_patch_ids'/>
+<def f='codebrowser/patch-ids.c' l='59' ll='68' type='int init_patch_ids(struct patch_ids * ids)'/>
+<use f='codebrowser/revision.c' l='830' u='c' c='cherry_pick_list'/>

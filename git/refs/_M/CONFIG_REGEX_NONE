@@ -1,0 +1,8 @@
+<dec f='codebrowser/config.h' l='15'/>
+<use f='codebrowser/builtin/clone.c' l='785' u='c'/>
+<use f='codebrowser/builtin/config.c' l='650' u='c'/>
+<use f='codebrowser/config.c' l='2195' u='c'/>
+<use f='codebrowser/config.c' l='2488' u='c'/>
+<use f='codebrowser/config.c' l='2489' u='c'/>
+<use f='codebrowser/config.c' l='2522' u='c'/>
+<use f='codebrowser/config.c' l='2532' u='c'/>

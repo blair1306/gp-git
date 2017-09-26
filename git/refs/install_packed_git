@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1632' type='void install_packed_git(struct packed_git * pack)'/>
+<use f='codebrowser/fast-import.c' l='1038' u='c' c='end_packfile'/>
+<use f='codebrowser/http.c' l='2050' u='c' c='finish_http_pack_request'/>
+<def f='codebrowser/sha1_file.c' l='1379' ll='1386' type='void install_packed_git(struct packed_git * pack)'/>
+<use f='codebrowser/sha1_file.c' l='1480' u='c' c='prepare_packed_git_one'/>

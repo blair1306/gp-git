@@ -1,0 +1,23 @@
+<dec f='codebrowser/object.h' l='116' type='void add_object_array(struct object * obj, const char * name, struct object_array * array)'/>
+<doc f='codebrowser/object.h' l='115'>/* Object array handling .. */</doc>
+<use f='codebrowser/builtin/diff.c' l='408' u='c' c='cmd_diff'/>
+<use f='codebrowser/builtin/fast-export.c' l='1055' u='c' c='cmd_fast_export'/>
+<use f='codebrowser/builtin/fsck.c' l='162' u='c' c='mark_object'/>
+<use f='codebrowser/builtin/log.c' l='630' u='c' c='cmd_show'/>
+<use f='codebrowser/builtin/name-rev.c' l='463' u='c' c='cmd_name_rev'/>
+<use f='codebrowser/builtin/reflog.c' l='122' u='c' c='commit_is_complete'/>
+<use f='codebrowser/builtin/reflog.c' l='123' u='c' c='commit_is_complete'/>
+<use f='codebrowser/builtin/reflog.c' l='144' u='c' c='commit_is_complete'/>
+<use f='codebrowser/builtin/reflog.c' l='145' u='c' c='commit_is_complete'/>
+<def f='codebrowser/object.c' l='340' ll='343' type='void add_object_array(struct object * obj, const char * name, struct object_array * array)'/>
+<use f='codebrowser/revision.c' l='3311' u='c' c='get_revision_internal'/>
+<use f='codebrowser/shallow.c' l='130' u='c' c='get_shallow_commits'/>
+<use f='codebrowser/submodule.c' l='1689' u='c' c='find_first_merges'/>
+<use f='codebrowser/submodule.c' l='1710' u='c' c='find_first_merges'/>
+<use f='codebrowser/upload-pack.c' l='318' u='c' c='got_oid'/>
+<use f='codebrowser/upload-pack.c' l='514' u='c' c='do_reachable_revlist'/>
+<use f='codebrowser/upload-pack.c' l='565' u='c' c='get_reachable_list'/>
+<use f='codebrowser/upload-pack.c' l='676' u='c' c='send_unshallow'/>
+<use f='codebrowser/upload-pack.c' l='680' u='c' c='send_unshallow'/>
+<use f='codebrowser/upload-pack.c' l='766' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='838' u='c' c='receive_needs'/>

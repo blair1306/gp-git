@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs/refs-internal.h' l='38'/>
+<doc f='codebrowser/refs/refs-internal.h' l='34'>/*
+ * Used as a flag in ref_update::flags when the lockfile needs to be
+ * committed.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2362' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2365' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2524' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2543' u='c'/>

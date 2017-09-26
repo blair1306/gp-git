@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='801' type='-1'/>
+<use f='codebrowser/builtin/init-db.c' l='266' u='r' c='create_default_files'/>
+<use f='codebrowser/environment.c' l='68'/>
+<use f='codebrowser/refs/files-backend.c' l='1561' u='r' c='files_log_ref_write'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/remote.h' l='168' type='struct ref * ref_remove_duplicates(struct ref * ref_map)'/>
+<doc f='codebrowser/remote.h' l='161'>/*
+ * Remove and free all but the first of any entries in the input list
+ * that map the same remote reference to the same local reference.  If
+ * there are two entries that map different remote references to the
+ * same local reference, emit an error message and die.  Return a
+ * pointer to the head of the resulting list.
+ */</doc>
+<use f='codebrowser/builtin/fetch.c' l='434' u='c' c='get_ref_map'/>
+<def f='codebrowser/remote.c' l='774' ll='806' type='struct ref * ref_remove_duplicates(struct ref * ref_map)'/>

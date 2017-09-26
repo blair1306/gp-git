@@ -1,0 +1,29 @@
+<dec f='codebrowser/wt-status.h' l='75' type='const char *'/>
+<offset>768</offset>
+<use f='codebrowser/builtin/commit.c' l='517' u='w' c='run_status'/>
+<use f='codebrowser/builtin/commit.c' l='1397' u='w' c='cmd_status'/>
+<use f='codebrowser/wt-status.c' l='568' u='r' c='wt_status_collect_changes_worktree'/>
+<use f='codebrowser/wt-status.c' l='570' u='r' c='wt_status_collect_changes_worktree'/>
+<use f='codebrowser/wt-status.c' l='590' u='r' c='wt_status_collect_changes_index'/>
+<use f='codebrowser/wt-status.c' l='591' u='r' c='wt_status_collect_changes_index'/>
+<use f='codebrowser/wt-status.c' l='1615' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1616' u='r' c='wt_longstatus_print'/>

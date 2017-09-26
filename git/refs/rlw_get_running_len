@@ -1,0 +1,12 @@
+<def f='codebrowser/ewah/ewok_rlw.h' l='62' ll='65' type='eword_t rlw_get_running_len(const eword_t * word)'/>
+<use f='codebrowser/ewah/ewok_rlw.h' l='80' u='c' c='rlw_size'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='74' u='c' c='add_empty_words'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='168' u='c' c='add_empty_word'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='178' u='c' c='add_empty_word'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='183' u='c' c='add_empty_word'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='191' u='c' c='add_empty_word'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='230' u='c' c='ewah_set'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='257' u='c' c='ewah_each_bit'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='261' u='c' c='ewah_each_bit'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='321' u='c' c='read_new_rlw'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='33' u='c' c='next_word'/>

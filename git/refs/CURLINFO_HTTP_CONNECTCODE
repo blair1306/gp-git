@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='2149' type='2097174'/>
+<use f='codebrowser/http.c' l='218' u='r' c='finish_active_slot'/>

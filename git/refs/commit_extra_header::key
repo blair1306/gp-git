@@ -1,0 +1,26 @@
+<dec f='codebrowser/commit.h' l='320' type='char *'/>
+<offset>64</offset>
+<use f='codebrowser/commit.c' l='1229' u='w' c='handle_signed_tag'/>
+<use f='codebrowser/commit.c' l='1276' u='r' c='add_extra_header'/>
+<use f='codebrowser/commit.c' l='1300' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1300' u='r' c='for_each_mergetag'/>
+<use f='codebrowser/commit.c' l='1362' u='w' c='read_commit_extra_header_lines'/>
+<use f='codebrowser/commit.c' l='1377' u='r' c='free_commit_extra_headers'/>

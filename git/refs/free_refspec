@@ -1,0 +1,10 @@
+<dec f='codebrowser/remote.h' l='174' type='void free_refspec(int nr_refspec, struct refspec * refspec)'/>
+<use f='codebrowser/builtin/fast-export.c' l='1072' u='c' c='cmd_fast_export'/>
+<use f='codebrowser/builtin/fetch.c' l='1314' u='c' c='fetch_one'/>
+<use f='codebrowser/builtin/pull.c' l='679' u='c' c='get_tracking_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1185' u='c' c='push_check'/>
+<use f='codebrowser/remote.c' l='601' u='c' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='612' u='c' c='valid_fetch_refspec'/>
+<def f='codebrowser/remote.c' l='626' ll='638' type='void free_refspec(int nr_refspec, struct refspec * refspec)'/>
+<use f='codebrowser/remote.c' l='1419' u='c' c='check_push_refs'/>
+<use f='codebrowser/transport-helper.c' l='376' u='c' c='release_helper'/>

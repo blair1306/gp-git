@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='195' type='int cmd_notes(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/notes.c' l='980' ll='1026' type='int cmd_notes(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='434'/>
+<use f='codebrowser/git.c' l='434'/>
+<use f='codebrowser/git.c' l='434'/>
+<use f='codebrowser/git.c' l='434'/>

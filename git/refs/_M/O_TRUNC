@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/bits/fcntl-linux.h' l='56'/>
+<use f='codebrowser/bisect.c' l='864' u='c'/>
+<use f='codebrowser/builtin/archive.c' l='15' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='173' u='c'/>
+<use f='codebrowser/builtin/replace.c' l='211' u='c'/>
+<use f='codebrowser/builtin/tag.c' l='232' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='828' u='c'/>
+<use f='codebrowser/t/helper/test-delta.c' l='71' u='c'/>
+<use f='codebrowser/wrapper.c' l='654' u='c'/>

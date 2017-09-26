@@ -1,0 +1,1 @@
+<def f='codebrowser/commit.c' l='587' macro='1' type='int * indegree_slab_peek(struct indegree_slab * s, const struct commit * c)'/>

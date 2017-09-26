@@ -1,0 +1,2 @@
+<def f='codebrowser/list.h' l='97' ll='103' type='void list_replace(struct list_head * old, struct list_head * newp)'/>
+<doc f='codebrowser/list.h' l='96'>/* Replace an old entry. */</doc>

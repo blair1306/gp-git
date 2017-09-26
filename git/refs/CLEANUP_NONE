@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin/commit.c' l='133' type='1'/>
+<use f='codebrowser/builtin/commit.c' l='672' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1014' u='r' c='message_is_empty'/>
+<use f='codebrowser/builtin/commit.c' l='1028' u='r' c='template_untouched'/>
+<use f='codebrowser/builtin/commit.c' l='1214' u='r' c='parse_and_validate_options'/>
+<use f='codebrowser/builtin/commit.c' l='1745' u='r' c='cmd_commit'/>

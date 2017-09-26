@@ -1,0 +1,31 @@
+<dec f='codebrowser/bundle.h' l='11' type='struct ref_list_entry *'/>
+<offset>64</offset>
+<use f='codebrowser/bundle.c' l='18' u='w' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='18' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='18' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='19' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='20' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='119' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='120' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='144' u='r' c='verify_bundle'/>
+<use f='codebrowser/transport.c' l='89' u='r' c='get_refs_from_bundle'/>

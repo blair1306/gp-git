@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>xdiff.h source code [codebrowser/xdiff/xdiff.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="s_bdiffparam,s_mmbuffer,s_mmfile,s_xdemitcb,s_xdemitconf,s_xmparam,s_xpparam "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/xdiff/xdiff.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>xdiff</a>/<a href='xdiff.h.html'>xdiff.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> *  LibXDiff by Davide Libenzi ( File Differential Library )</i></td></tr>
+<tr><th id="3">3</th><td><i> *  Copyright (C) 2003  Davide Libenzi</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> *  This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> *  modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> *  License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> *  version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> *  This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> *  but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="13">13</th><td><i> *  Lesser General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> *  You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> *  License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="17">17</th><td><i> *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> *  Davide Libenzi &lt;davidel@xmailserver.org&gt;</i></td></tr>
+<tr><th id="20">20</th><td><i> *</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined(<span class="macro" data-ref="_M/XDIFF_H">XDIFF_H</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/XDIFF_H" data-ref="_M/XDIFF_H">XDIFF_H</dfn></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="26">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="27">27</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="26">endif</span> /* #ifdef __cplusplus */</u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/XDF_NEED_MINIMAL" data-ref="_M/XDF_NEED_MINIMAL">XDF_NEED_MINIMAL</dfn> (1 &lt;&lt; 1)</u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/XDF_IGNORE_WHITESPACE" data-ref="_M/XDF_IGNORE_WHITESPACE">XDF_IGNORE_WHITESPACE</dfn> (1 &lt;&lt; 2)</u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/XDF_IGNORE_WHITESPACE_CHANGE" data-ref="_M/XDF_IGNORE_WHITESPACE_CHANGE">XDF_IGNORE_WHITESPACE_CHANGE</dfn> (1 &lt;&lt; 3)</u></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/XDF_IGNORE_WHITESPACE_AT_EOL" data-ref="_M/XDF_IGNORE_WHITESPACE_AT_EOL">XDF_IGNORE_WHITESPACE_AT_EOL</dfn> (1 &lt;&lt; 4)</u></td></tr>
+<tr><th id="35">35</th><td><u>#define <dfn class="macro" id="_M/XDF_WHITESPACE_FLAGS" data-ref="_M/XDF_WHITESPACE_FLAGS">XDF_WHITESPACE_FLAGS</dfn> (XDF_IGNORE_WHITESPACE | XDF_IGNORE_WHITESPACE_CHANGE | XDF_IGNORE_WHITESPACE_AT_EOL)</u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/XDF_PATIENCE_DIFF" data-ref="_M/XDF_PATIENCE_DIFF">XDF_PATIENCE_DIFF</dfn> (1 &lt;&lt; 5)</u></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/XDF_HISTOGRAM_DIFF" data-ref="_M/XDF_HISTOGRAM_DIFF">XDF_HISTOGRAM_DIFF</dfn> (1 &lt;&lt; 6)</u></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/XDF_DIFF_ALGORITHM_MASK" data-ref="_M/XDF_DIFF_ALGORITHM_MASK">XDF_DIFF_ALGORITHM_MASK</dfn> (XDF_PATIENCE_DIFF | XDF_HISTOGRAM_DIFF)</u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/XDF_DIFF_ALG" data-ref="_M/XDF_DIFF_ALG">XDF_DIFF_ALG</dfn>(x) ((x) &amp; XDF_DIFF_ALGORITHM_MASK)</u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/XDF_IGNORE_BLANK_LINES" data-ref="_M/XDF_IGNORE_BLANK_LINES">XDF_IGNORE_BLANK_LINES</dfn> (1 &lt;&lt; 7)</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/XDF_INDENT_HEURISTIC" data-ref="_M/XDF_INDENT_HEURISTIC">XDF_INDENT_HEURISTIC</dfn> (1 &lt;&lt; 8)</u></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/XDL_EMIT_FUNCNAMES" data-ref="_M/XDL_EMIT_FUNCNAMES">XDL_EMIT_FUNCNAMES</dfn> (1 &lt;&lt; 0)</u></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/XDL_EMIT_FUNCCONTEXT" data-ref="_M/XDL_EMIT_FUNCCONTEXT">XDL_EMIT_FUNCCONTEXT</dfn> (1 &lt;&lt; 2)</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/XDL_MMB_READONLY" data-ref="_M/XDL_MMB_READONLY">XDL_MMB_READONLY</dfn> (1 &lt;&lt; 0)</u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/XDL_MMF_ATOMIC" data-ref="_M/XDL_MMF_ATOMIC">XDL_MMF_ATOMIC</dfn> (1 &lt;&lt; 0)</u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><u>#define <dfn class="macro" id="_M/XDL_BDOP_INS" data-ref="_M/XDL_BDOP_INS">XDL_BDOP_INS</dfn> 1</u></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/XDL_BDOP_CPY" data-ref="_M/XDL_BDOP_CPY">XDL_BDOP_CPY</dfn> 2</u></td></tr>
+<tr><th id="55">55</th><td><u>#define <dfn class="macro" id="_M/XDL_BDOP_INSB" data-ref="_M/XDL_BDOP_INSB">XDL_BDOP_INSB</dfn> 3</u></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><i>/* merge simplification levels */</i></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/XDL_MERGE_MINIMAL" data-ref="_M/XDL_MERGE_MINIMAL">XDL_MERGE_MINIMAL</dfn> 0</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/XDL_MERGE_EAGER" data-ref="_M/XDL_MERGE_EAGER">XDL_MERGE_EAGER</dfn> 1</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/XDL_MERGE_ZEALOUS" data-ref="_M/XDL_MERGE_ZEALOUS">XDL_MERGE_ZEALOUS</dfn> 2</u></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/XDL_MERGE_ZEALOUS_ALNUM" data-ref="_M/XDL_MERGE_ZEALOUS_ALNUM">XDL_MERGE_ZEALOUS_ALNUM</dfn> 3</u></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><i>/* merge favor modes */</i></td></tr>
+<tr><th id="64">64</th><td><u>#define <dfn class="macro" id="_M/XDL_MERGE_FAVOR_OURS" data-ref="_M/XDL_MERGE_FAVOR_OURS">XDL_MERGE_FAVOR_OURS</dfn> 1</u></td></tr>
+<tr><th id="65">65</th><td><u>#define <dfn class="macro" id="_M/XDL_MERGE_FAVOR_THEIRS" data-ref="_M/XDL_MERGE_FAVOR_THEIRS">XDL_MERGE_FAVOR_THEIRS</dfn> 2</u></td></tr>
+<tr><th id="66">66</th><td><u>#define <dfn class="macro" id="_M/XDL_MERGE_FAVOR_UNION" data-ref="_M/XDL_MERGE_FAVOR_UNION">XDL_MERGE_FAVOR_UNION</dfn> 3</u></td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><i>/* merge output styles */</i></td></tr>
+<tr><th id="69">69</th><td><u>#define <dfn class="macro" id="_M/XDL_MERGE_DIFF3" data-ref="_M/XDL_MERGE_DIFF3">XDL_MERGE_DIFF3</dfn> 1</u></td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_mmfile" title='s_mmfile' data-ref="s_mmfile"><a class="type" href="#s_mmfile" title='s_mmfile' data-ref="s_mmfile">s_mmfile</a></dfn> {</td></tr>
+<tr><th id="72">72</th><td>	<em>char</em> *<dfn class="decl" id="s_mmfile::ptr" title='s_mmfile::ptr' data-ref="s_mmfile::ptr">ptr</dfn>;</td></tr>
+<tr><th id="73">73</th><td>	<em>long</em> <dfn class="decl" id="s_mmfile::size" title='s_mmfile::size' data-ref="s_mmfile::size">size</dfn>;</td></tr>
+<tr><th id="74">74</th><td>} <dfn class="typedef" id="mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</dfn>;</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_mmbuffer" title='s_mmbuffer' data-ref="s_mmbuffer"><a class="type" href="#s_mmbuffer" title='s_mmbuffer' data-ref="s_mmbuffer">s_mmbuffer</a></dfn> {</td></tr>
+<tr><th id="77">77</th><td>	<em>char</em> *<dfn class="decl" id="s_mmbuffer::ptr" title='s_mmbuffer::ptr' data-ref="s_mmbuffer::ptr">ptr</dfn>;</td></tr>
+<tr><th id="78">78</th><td>	<em>long</em> <dfn class="decl" id="s_mmbuffer::size" title='s_mmbuffer::size' data-ref="s_mmbuffer::size">size</dfn>;</td></tr>
+<tr><th id="79">79</th><td>} <dfn class="typedef" id="mmbuffer_t" title='mmbuffer_t' data-type='struct s_mmbuffer' data-ref="mmbuffer_t">mmbuffer_t</dfn>;</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_xpparam" title='s_xpparam' data-ref="s_xpparam"><a class="type" href="#s_xpparam" title='s_xpparam' data-ref="s_xpparam">s_xpparam</a></dfn> {</td></tr>
+<tr><th id="82">82</th><td>	<em>unsigned</em> <em>long</em> <dfn class="decl" id="s_xpparam::flags" title='s_xpparam::flags' data-ref="s_xpparam::flags">flags</dfn>;</td></tr>
+<tr><th id="83">83</th><td>} <dfn class="typedef" id="xpparam_t" title='xpparam_t' data-type='struct s_xpparam' data-ref="xpparam_t">xpparam_t</dfn>;</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_xdemitcb" title='s_xdemitcb' data-ref="s_xdemitcb"><a class="type" href="#s_xdemitcb" title='s_xdemitcb' data-ref="s_xdemitcb">s_xdemitcb</a></dfn> {</td></tr>
+<tr><th id="86">86</th><td>	<em>void</em> *<dfn class="decl" id="s_xdemitcb::priv" title='s_xdemitcb::priv' data-ref="s_xdemitcb::priv">priv</dfn>;</td></tr>
+<tr><th id="87">87</th><td>	<em>int</em> (*<dfn class="decl" id="s_xdemitcb::outf" title='s_xdemitcb::outf' data-ref="s_xdemitcb::outf">outf</dfn>)(<em>void</em> *, <a class="typedef" href="#mmbuffer_t" title='mmbuffer_t' data-type='struct s_mmbuffer' data-ref="mmbuffer_t">mmbuffer_t</a> *, <em>int</em>);</td></tr>
+<tr><th id="88">88</th><td>} <dfn class="typedef" id="xdemitcb_t" title='xdemitcb_t' data-type='struct s_xdemitcb' data-ref="xdemitcb_t">xdemitcb_t</dfn>;</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><b>typedef</b> <em>long</em> (*<dfn class="typedef" id="find_func_t" title='find_func_t' data-type='long (*)(const char *, long, char *, long, void *)' data-ref="find_func_t">find_func_t</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="293line" title='line' data-type='const char *' data-ref="293line">line</dfn>, <em>long</em> <dfn class="local col4 decl" id="294line_len" title='line_len' data-type='long' data-ref="294line_len">line_len</dfn>, <em>char</em> *<dfn class="local col5 decl" id="295buffer" title='buffer' data-type='char *' data-ref="295buffer">buffer</dfn>, <em>long</em> <dfn class="local col6 decl" id="296buffer_size" title='buffer_size' data-type='long' data-ref="296buffer_size">buffer_size</dfn>, <em>void</em> *<dfn class="local col7 decl" id="297priv" title='priv' data-type='void *' data-ref="297priv">priv</dfn>);</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="xdl_emit_hunk_consume_func_t" title='xdl_emit_hunk_consume_func_t' data-type='int (*)(long, long, long, long, void *)' data-ref="xdl_emit_hunk_consume_func_t">xdl_emit_hunk_consume_func_t</dfn>)(<em>long</em> <dfn class="local col8 decl" id="298start_a" title='start_a' data-type='long' data-ref="298start_a">start_a</dfn>, <em>long</em> <dfn class="local col9 decl" id="299count_a" title='count_a' data-type='long' data-ref="299count_a">count_a</dfn>,</td></tr>
+<tr><th id="93">93</th><td>					    <em>long</em> <dfn class="local col0 decl" id="300start_b" title='start_b' data-type='long' data-ref="300start_b">start_b</dfn>, <em>long</em> <dfn class="local col1 decl" id="301count_b" title='count_b' data-type='long' data-ref="301count_b">count_b</dfn>,</td></tr>
+<tr><th id="94">94</th><td>					    <em>void</em> *<dfn class="local col2 decl" id="302cb_data" title='cb_data' data-type='void *' data-ref="302cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_xdemitconf" title='s_xdemitconf' data-ref="s_xdemitconf"><a class="type" href="#s_xdemitconf" title='s_xdemitconf' data-ref="s_xdemitconf">s_xdemitconf</a></dfn> {</td></tr>
+<tr><th id="97">97</th><td>	<em>long</em> <dfn class="decl" id="s_xdemitconf::ctxlen" title='s_xdemitconf::ctxlen' data-ref="s_xdemitconf::ctxlen">ctxlen</dfn>;</td></tr>
+<tr><th id="98">98</th><td>	<em>long</em> <dfn class="decl" id="s_xdemitconf::interhunkctxlen" title='s_xdemitconf::interhunkctxlen' data-ref="s_xdemitconf::interhunkctxlen">interhunkctxlen</dfn>;</td></tr>
+<tr><th id="99">99</th><td>	<em>unsigned</em> <em>long</em> <dfn class="decl" id="s_xdemitconf::flags" title='s_xdemitconf::flags' data-ref="s_xdemitconf::flags">flags</dfn>;</td></tr>
+<tr><th id="100">100</th><td>	<a class="typedef" href="#find_func_t" title='find_func_t' data-type='long (*)(const char *, long, char *, long, void *)' data-ref="find_func_t">find_func_t</a> <dfn class="decl" id="s_xdemitconf::find_func" title='s_xdemitconf::find_func' data-ref="s_xdemitconf::find_func">find_func</dfn>;</td></tr>
+<tr><th id="101">101</th><td>	<em>void</em> *<dfn class="decl" id="s_xdemitconf::find_func_priv" title='s_xdemitconf::find_func_priv' data-ref="s_xdemitconf::find_func_priv">find_func_priv</dfn>;</td></tr>
+<tr><th id="102">102</th><td>	<a class="typedef" href="#xdl_emit_hunk_consume_func_t" title='xdl_emit_hunk_consume_func_t' data-type='int (*)(long, long, long, long, void *)' data-ref="xdl_emit_hunk_consume_func_t">xdl_emit_hunk_consume_func_t</a> <dfn class="decl" id="s_xdemitconf::hunk_func" title='s_xdemitconf::hunk_func' data-ref="s_xdemitconf::hunk_func">hunk_func</dfn>;</td></tr>
+<tr><th id="103">103</th><td>} <dfn class="typedef" id="xdemitconf_t" title='xdemitconf_t' data-type='struct s_xdemitconf' data-ref="xdemitconf_t">xdemitconf_t</dfn>;</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_bdiffparam" title='s_bdiffparam' data-ref="s_bdiffparam"><a class="type" href="#s_bdiffparam" title='s_bdiffparam' data-ref="s_bdiffparam">s_bdiffparam</a></dfn> {</td></tr>
+<tr><th id="106">106</th><td>	<em>long</em> <dfn class="decl" id="s_bdiffparam::bsize" title='s_bdiffparam::bsize' data-ref="s_bdiffparam::bsize">bsize</dfn>;</td></tr>
+<tr><th id="107">107</th><td>} <dfn class="typedef" id="bdiffparam_t" title='bdiffparam_t' data-type='struct s_bdiffparam' data-ref="bdiffparam_t">bdiffparam_t</dfn>;</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><u>#define <dfn class="macro" id="_M/xdl_malloc" data-ref="_M/xdl_malloc">xdl_malloc</dfn>(x) malloc(x)</u></td></tr>
+<tr><th id="111">111</th><td><u>#define <dfn class="macro" id="_M/xdl_free" data-ref="_M/xdl_free">xdl_free</dfn>(ptr) free(ptr)</u></td></tr>
+<tr><th id="112">112</th><td><u>#define <dfn class="macro" id="_M/xdl_realloc" data-ref="_M/xdl_realloc">xdl_realloc</dfn>(ptr,x) realloc(ptr,x)</u></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><em>void</em> *<dfn class="decl" id="xdl_mmfile_first" title='xdl_mmfile_first' data-ref="xdl_mmfile_first">xdl_mmfile_first</dfn>(<a class="typedef" href="#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col3 decl" id="303mmf" title='mmf' data-type='mmfile_t *' data-ref="303mmf">mmf</dfn>, <em>long</em> *<dfn class="local col4 decl" id="304size" title='size' data-type='long *' data-ref="304size">size</dfn>);</td></tr>
+<tr><th id="115">115</th><td><em>long</em> <dfn class="decl" id="xdl_mmfile_size" title='xdl_mmfile_size' data-ref="xdl_mmfile_size">xdl_mmfile_size</dfn>(<a class="typedef" href="#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col5 decl" id="305mmf" title='mmf' data-type='mmfile_t *' data-ref="305mmf">mmf</dfn>);</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><em>int</em> <dfn class="decl" id="xdl_diff" title='xdl_diff' data-ref="xdl_diff">xdl_diff</dfn>(<a class="typedef" href="#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col6 decl" id="306mf1" title='mf1' data-type='mmfile_t *' data-ref="306mf1">mf1</dfn>, <a class="typedef" href="#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col7 decl" id="307mf2" title='mf2' data-type='mmfile_t *' data-ref="307mf2">mf2</dfn>, <a class="typedef" href="#xpparam_t" title='xpparam_t' data-type='struct s_xpparam' data-ref="xpparam_t">xpparam_t</a> <em>const</em> *<dfn class="local col8 decl" id="308xpp" title='xpp' data-type='const xpparam_t *' data-ref="308xpp">xpp</dfn>,</td></tr>
+<tr><th id="118">118</th><td>	     <a class="typedef" href="#xdemitconf_t" title='xdemitconf_t' data-type='struct s_xdemitconf' data-ref="xdemitconf_t">xdemitconf_t</a> <em>const</em> *<dfn class="local col9 decl" id="309xecfg" title='xecfg' data-type='const xdemitconf_t *' data-ref="309xecfg">xecfg</dfn>, <a class="typedef" href="#xdemitcb_t" title='xdemitcb_t' data-type='struct s_xdemitcb' data-ref="xdemitcb_t">xdemitcb_t</a> *<dfn class="local col0 decl" id="310ecb" title='ecb' data-type='xdemitcb_t *' data-ref="310ecb">ecb</dfn>);</td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="s_xmparam" title='s_xmparam' data-ref="s_xmparam"><a class="type" href="#s_xmparam" title='s_xmparam' data-ref="s_xmparam">s_xmparam</a></dfn> {</td></tr>
+<tr><th id="121">121</th><td>	<a class="typedef" href="#xpparam_t" title='xpparam_t' data-type='struct s_xpparam' data-ref="xpparam_t">xpparam_t</a> <dfn class="decl" id="s_xmparam::xpp" title='s_xmparam::xpp' data-ref="s_xmparam::xpp">xpp</dfn>;</td></tr>
+<tr><th id="122">122</th><td>	<em>int</em> <dfn class="decl" id="s_xmparam::marker_size" title='s_xmparam::marker_size' data-ref="s_xmparam::marker_size">marker_size</dfn>;</td></tr>
+<tr><th id="123">123</th><td>	<em>int</em> <dfn class="decl" id="s_xmparam::level" title='s_xmparam::level' data-ref="s_xmparam::level">level</dfn>;</td></tr>
+<tr><th id="124">124</th><td>	<em>int</em> <dfn class="decl" id="s_xmparam::favor" title='s_xmparam::favor' data-ref="s_xmparam::favor">favor</dfn>;</td></tr>
+<tr><th id="125">125</th><td>	<em>int</em> <dfn class="decl" id="s_xmparam::style" title='s_xmparam::style' data-ref="s_xmparam::style">style</dfn>;</td></tr>
+<tr><th id="126">126</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="s_xmparam::ancestor" title='s_xmparam::ancestor' data-ref="s_xmparam::ancestor">ancestor</dfn>;	<i>/* label for orig */</i></td></tr>
+<tr><th id="127">127</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="s_xmparam::file1" title='s_xmparam::file1' data-ref="s_xmparam::file1">file1</dfn>;	<i>/* label for mf1 */</i></td></tr>
+<tr><th id="128">128</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="s_xmparam::file2" title='s_xmparam::file2' data-ref="s_xmparam::file2">file2</dfn>;	<i>/* label for mf2 */</i></td></tr>
+<tr><th id="129">129</th><td>} <dfn class="typedef" id="xmparam_t" title='xmparam_t' data-type='struct s_xmparam' data-ref="xmparam_t">xmparam_t</dfn>;</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><u>#define <dfn class="macro" id="_M/DEFAULT_CONFLICT_MARKER_SIZE" data-ref="_M/DEFAULT_CONFLICT_MARKER_SIZE">DEFAULT_CONFLICT_MARKER_SIZE</dfn> 7</u></td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><em>int</em> <dfn class="decl" id="xdl_merge" title='xdl_merge' data-ref="xdl_merge">xdl_merge</dfn>(<a class="typedef" href="#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col1 decl" id="311orig" title='orig' data-type='mmfile_t *' data-ref="311orig">orig</dfn>, <a class="typedef" href="#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col2 decl" id="312mf1" title='mf1' data-type='mmfile_t *' data-ref="312mf1">mf1</dfn>, <a class="typedef" href="#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col3 decl" id="313mf2" title='mf2' data-type='mmfile_t *' data-ref="313mf2">mf2</dfn>,</td></tr>
+<tr><th id="134">134</th><td>		<a class="typedef" href="#xmparam_t" title='xmparam_t' data-type='struct s_xmparam' data-ref="xmparam_t">xmparam_t</a> <em>const</em> *<dfn class="local col4 decl" id="314xmp" title='xmp' data-type='const xmparam_t *' data-ref="314xmp">xmp</dfn>, <a class="typedef" href="#mmbuffer_t" title='mmbuffer_t' data-type='struct s_mmbuffer' data-ref="mmbuffer_t">mmbuffer_t</a> *<dfn class="local col5 decl" id="315result" title='result' data-type='mmbuffer_t *' data-ref="315result">result</dfn>);</td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><u>#<span data-ppcond="136">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="137">137</th><td>}</td></tr>
+<tr><th id="138">138</th><td><u>#<span data-ppcond="136">endif</span> /* #ifdef __cplusplus */</u></td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><u>#<span data-ppcond="23">endif</span> /* #if !defined(XDIFF_H) */</u></td></tr>
+<tr><th id="141">141</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../apply.c.html'>codebrowser/apply.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/revision.h' l='21'/>
+<use f='codebrowser/revision.c' l='343' u='c'/>
+<use f='codebrowser/revision.c' l='994' u='c'/>
+<use f='codebrowser/revision.c' l='1302' u='c'/>
+<use f='codebrowser/revision.c' l='1403' u='c'/>
+<use f='codebrowser/revision.c' l='1404' u='c'/>
+<use f='codebrowser/revision.c' l='1453' u='c'/>
+<use f='codebrowser/revision.c' l='1552' u='c'/>
+<use f='codebrowser/revision.c' l='1552' u='c'/>
+<use f='codebrowser/revision.c' l='1575' u='c'/>
+<use f='codebrowser/revision.c' l='1590' u='c'/>
+<use f='codebrowser/revision.c' l='1596' u='c'/>
+<use f='codebrowser/revision.c' l='2118' u='c'/>
+<use f='codebrowser/revision.c' l='2155' u='c'/>
+<use f='codebrowser/shallow.c' l='511' u='c'/>
+<use f='codebrowser/shallow.c' l='589' u='c'/>
+<use f='codebrowser/shallow.c' l='607' u='c'/>

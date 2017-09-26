@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='988'/>
+<use f='codebrowser/builtin/merge.c' l='285' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='967' u='c'/>
+<use f='codebrowser/merge.c' l='15' u='c'/>
+<use f='codebrowser/sequencer.c' l='961' u='c'/>
+<use f='codebrowser/submodule.c' l='1530' u='c'/>
+<use f='codebrowser/submodule.c' l='1621' u='c'/>
+<use f='codebrowser/submodule.c' l='1622' u='c'/>
+<use f='codebrowser/wt-status.c' l='585' u='c'/>
+<use f='codebrowser/wt-status.c' l='958' u='c'/>

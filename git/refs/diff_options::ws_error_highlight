@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='154' type='unsigned int'/>
+<offset>1152</offset>
+<use f='codebrowser/diff.c' l='578' u='r' c='emit_line_checked'/>
+<use f='codebrowser/diff.c' l='3381' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='3779' u='w' c='parse_ws_error_highlight_opt'/>

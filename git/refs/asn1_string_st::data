@@ -1,0 +1,4 @@
+<dec f='include/openssl/asn1.h' l='250' type='unsigned char *'/>
+<offset>64</offset>
+<use f='codebrowser/imap-send.c' l='257' u='r' c='verify_hostname'/>
+<use f='codebrowser/imap-send.c' l='258' u='r' c='verify_hostname'/>

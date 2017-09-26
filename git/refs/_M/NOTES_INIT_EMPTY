@@ -1,0 +1,9 @@
+<dec f='codebrowser/notes.h' l='73'/>
+<doc f='codebrowser/notes.h' l='67'>/*
+ * Flags controlling behaviour of notes tree initialization
+ *
+ * Default behaviour is to initialize the notes tree from the tree object
+ * specified by the given (or default) notes ref.
+ */</doc>
+<use f='codebrowser/notes-cache.c' l='42' u='c'/>
+<use f='codebrowser/notes.c' l='1028' u='c'/>

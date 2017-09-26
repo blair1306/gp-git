@@ -1,0 +1,8 @@
+<dec f='codebrowser/notes.h' l='310' type='void expand_loose_notes_ref(struct strbuf * sb)'/>
+<doc f='codebrowser/notes.h' l='305'>/*
+ * Similar to expand_notes_ref, but will check whether the ref can be located
+ * via get_sha1 first, and only falls back to expand_notes_ref in the case
+ * where get_sha1 fails.
+ */</doc>
+<use f='codebrowser/builtin/notes.c' l='818' u='c' c='merge'/>
+<def f='codebrowser/notes.c' l='1319' ll='1327' type='void expand_loose_notes_ref(struct strbuf * sb)'/>

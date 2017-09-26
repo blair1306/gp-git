@@ -1,0 +1,4 @@
+<dec f='codebrowser/color.h' l='90' type='int color_fprintf_ln(FILE * fp, const char * color, const char * fmt)'/>
+<def f='codebrowser/color.c' l='400' ll='408' type='int color_fprintf_ln(FILE * fp, const char * color, const char * fmt)'/>
+<use f='codebrowser/wt-status.c' l='1021' u='c' c='wt_longstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1025' u='c' c='wt_longstatus_print_tracking'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/walker.h' l='9' type='void (*)(struct walker *, unsigned char *)'/>
+<offset>128</offset>
+<use f='codebrowser/http-walker.c' l='617' u='w' c='get_http_walker'/>
+<use f='codebrowser/walker.c' l='153' u='r' c='process'/>

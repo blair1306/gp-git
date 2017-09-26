@@ -1,0 +1,5 @@
+<dec f='codebrowser/unpack-trees.h' l='69' type='void *'/>
+<offset>4224</offset>
+<use f='codebrowser/diff-lib.c' l='384' u='r' c='do_oneway_diff'/>
+<use f='codebrowser/diff-lib.c' l='457' u='r' c='oneway_diff'/>
+<use f='codebrowser/diff-lib.c' l='499' u='w' c='diff_cache'/>

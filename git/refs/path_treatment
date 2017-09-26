@@ -1,0 +1,7 @@
+<def f='codebrowser/dir.c' l='28' ll='33'/>
+<doc f='codebrowser/dir.c' l='22'>/*
+ * Tells read_directory_recursive how a file or directory should be treated.
+ * Values are ordered by significance, e.g. if a directory contains both
+ * excluded and untracked files, it is listed as untracked because
+ * path_untracked &gt; path_excluded.
+ */</doc>

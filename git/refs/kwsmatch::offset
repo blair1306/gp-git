@@ -1,0 +1,5 @@
+<dec f='codebrowser/kwset.h' l='31' type='size_t [1]'/>
+<offset>64</offset>
+<doc f='codebrowser/kwset.h' l='31'>/* Offset of each submatch. */</doc>
+<use f='codebrowser/kwset.c' l='729' u='w' c='cwexec'/>
+<use f='codebrowser/kwset.c' l='753' u='w' c='kwsexec'/>

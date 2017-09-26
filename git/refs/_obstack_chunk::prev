@@ -1,0 +1,3 @@
+<dec f='codebrowser/compat/obstack.h' l='147' type='struct _obstack_chunk *'/>
+<offset>64</offset>
+<doc f='codebrowser/compat/obstack.h' l='147'>/* address of prior chunk or NULL */</doc>

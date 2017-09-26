@@ -1,0 +1,17 @@
+<dec f='codebrowser/cache.h' l='1280' type='unsigned int'/>
+<offset>160</offset>
+<use f='codebrowser/builtin/cat-file.c' l='72' u='r' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='73' u='w' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='103' u='r' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='113' u='r' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='394' u='r' c='batch_one_object'/>
+<use f='codebrowser/builtin/grep.c' l='996' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/log.c' l='495' u='r' c='show_blob_object'/>
+<use f='codebrowser/revision.c' l='1511' u='r' c='handle_dotdot_1'/>
+<use f='codebrowser/revision.c' l='1512' u='r' c='handle_dotdot_1'/>
+<use f='codebrowser/revision.c' l='1609' u='r' c='handle_revision_arg'/>
+<use f='codebrowser/revision.c' l='2324' u='r' c='setup_revisions'/>
+<use f='codebrowser/sha1_name.c' l='1514' u='w' c='get_oid_with_context_1'/>
+<use f='codebrowser/sha1_name.c' l='1569' u='w' c='get_oid_with_context_1'/>
+<use f='codebrowser/sha1_name.c' l='1606' u='a' c='get_oid_with_context_1'/>
+<use f='codebrowser/sha1_name.c' l='1609' u='a' c='get_oid_with_context_1'/>

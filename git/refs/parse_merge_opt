@@ -1,0 +1,5 @@
+<dec f='codebrowser/merge-recursive.h' l='61' type='int parse_merge_opt(struct merge_options * out, const char * s)'/>
+<use f='codebrowser/builtin/merge-recursive.c' l='44' u='c' c='cmd_merge_recursive'/>
+<use f='codebrowser/builtin/merge.c' l='672' u='c' c='try_merge_strategy'/>
+<def f='codebrowser/merge-recursive.c' l='2185' ll='2237' type='int parse_merge_opt(struct merge_options * o, const char * s)'/>
+<use f='codebrowser/sequencer.c' l='456' u='c' c='do_recursive_merge'/>

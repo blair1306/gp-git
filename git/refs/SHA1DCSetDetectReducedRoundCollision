@@ -1,0 +1,3 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='89' type='void SHA1DCSetDetectReducedRoundCollision(SHA1_CTX * , int )'/>
+<doc f='codebrowser/sha1dc/sha1.h' l='88'>/* disabled by default */</doc>
+<def f='codebrowser/sha1dc/sha1.c' l='1797' ll='1803' type='void SHA1DCSetDetectReducedRoundCollision(SHA1_CTX * ctx, int reduced_round_coll)'/>

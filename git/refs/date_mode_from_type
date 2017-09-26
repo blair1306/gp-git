@@ -1,0 +1,19 @@
+<dec f='codebrowser/cache.h' l='1429' type='struct date_mode * date_mode_from_type(enum date_mode_type type)'/>
+<use f='codebrowser/builtin/am.c' l='919' macro='1' u='c'/>
+<use f='codebrowser/builtin/am.c' l='1375' macro='1' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='868' macro='1' u='c'/>
+<use f='codebrowser/builtin/show-branch.c' l='758' macro='1' u='c'/>
+<use f='codebrowser/builtin/tag.c' l='311' macro='1' u='c'/>
+<def f='codebrowser/date.c' l='184' ll='192' type='struct date_mode * date_mode_from_type(enum date_mode_type type)'/>
+<use f='codebrowser/fast-import.c' l='430' macro='1' u='c'/>
+<use f='codebrowser/http-backend.c' l='96' macro='1' u='c'/>
+<use f='codebrowser/pretty.c' l='502' macro='1' u='c'/>
+<use f='codebrowser/pretty.c' l='719' macro='1' u='c'/>
+<use f='codebrowser/pretty.c' l='722' macro='1' u='c'/>
+<use f='codebrowser/pretty.c' l='725' macro='1' u='c'/>
+<use f='codebrowser/pretty.c' l='728' macro='1' u='c'/>
+<use f='codebrowser/refs.c' l='779' macro='1' u='c'/>
+<use f='codebrowser/refs.c' l='786' macro='1' u='c'/>
+<use f='codebrowser/sha1_name.c' l='715' macro='1' u='c'/>
+<use f='codebrowser/t/helper/test-date.c' l='58' macro='1' u='c'/>
+<use f='codebrowser/t/helper/test-date.c' l='70' macro='1' u='c'/>

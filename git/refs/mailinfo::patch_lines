@@ -1,0 +1,4 @@
+<dec f='codebrowser/mailinfo.h' l='27' type='int'/>
+<offset>1504</offset>
+<use f='codebrowser/mailinfo.c' l='816' u='w' c='handle_patch'/>
+<use f='codebrowser/mailinfo.c' l='1056' u='r' c='handle_info'/>

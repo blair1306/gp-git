@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='424' type='int for_each_reflog(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/builtin/fsck.c' l='466' u='c' c='get_default_heads'/>
+<use f='codebrowser/builtin/reflog.c' l='588' u='c' c='cmd_reflog_expire'/>
+<def f='codebrowser/refs.c' l='1943' ll='1946' type='int for_each_reflog(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/revision.c' l='1241' u='c' c='add_reflogs_to_pending'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/git-compat-util.h' l='801' type='int xopen(const char * path, int flags)'/>
+<use f='codebrowser/builtin/am.c' l='519' u='c' c='run_post_rewrite_hook'/>
+<use f='codebrowser/notes-merge.c' l='302' u='c' c='write_buf_to_worktree'/>
+<def f='codebrowser/wrapper.c' l='199' ll='229' type='int xopen(const char * path, int oflag)'/>
+<use f='codebrowser/wrapper.c' l='654' u='c' c='write_file_buf'/>
+<doc f='codebrowser/wrapper.c' l='196'>/**
+ * xopen() is the same as open(), but it die()s if the open() fails.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/tar.h' l='16' type='char [1]'/>
+<use f='codebrowser/archive-tar.c' l='227' u='r' c='write_extended_header'/>
+<use f='codebrowser/archive-tar.c' l='250' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='253' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='256' u='r' c='write_tar_entry'/>
+<use f='codebrowser/archive-tar.c' l='346' u='r' c='write_global_extended_header'/>
+<offset>1248</offset>
+<doc f='codebrowser/tar.h' l='16'>/* 156 */</doc>
+<use f='codebrowser/builtin/get-tar-commit-id.c' l='31' u='r' c='cmd_get_tar_commit_id'/>

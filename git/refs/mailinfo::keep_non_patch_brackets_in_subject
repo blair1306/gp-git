@@ -1,0 +1,5 @@
+<dec f='codebrowser/mailinfo.h' l='14' type='int'/>
+<use f='codebrowser/builtin/am.c' l='1237' u='w' c='parse_mail'/>
+<offset>608</offset>
+<use f='codebrowser/builtin/mailinfo.c' l='30' u='w' c='cmd_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='312' u='r' c='cleanup_subject'/>

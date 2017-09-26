@@ -1,0 +1,9 @@
+<dec f='codebrowser/builtin/am.c' l='82' type='1'/>
+<use f='codebrowser/builtin/am.c' l='444' u='r' c='am_load'/>
+<use f='codebrowser/builtin/am.c' l='1022' c='am_setup'/>
+<use f='codebrowser/builtin/am.c' l='1233' c='parse_mail'/>
+<use f='codebrowser/builtin/am.c' l='2220' u='r' c='cmd_am'/>
+<use f='codebrowser/builtin/am.c' l='2220' u='r' c='cmd_am'/>
+<use f='codebrowser/builtin/am.c' l='2220' u='r' c='cmd_am'/>
+<use f='codebrowser/builtin/am.c' l='2220' u='r' c='cmd_am'/>
+<doc f='codebrowser/builtin/am.c' l='82'>/* pass -k flag to git-mailinfo */</doc>

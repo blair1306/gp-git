@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='285' type='2'/>
+<use f='codebrowser/builtin/log.c' l='276' c='log_show_early'/>
+<use f='codebrowser/revision.c' l='3096' u='r' c='simplify_commit'/>
+<use f='codebrowser/revision.c' l='3160' c='get_revision_1'/>

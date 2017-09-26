@@ -1,0 +1,2 @@
+<def f='codebrowser/common-cmds.h' l='8' ll='14' type='const char *[5]'/>
+<use f='codebrowser/help.c' l='221' u='r' c='list_common_cmds_help'/>

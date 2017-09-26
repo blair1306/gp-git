@@ -1,0 +1,9 @@
+<dec f='codebrowser/attr.c' l='456' type='unsigned int'/>
+<use f='codebrowser/attr.c' l='465' u='r' c='attr_stack_free'/>
+<use f='codebrowser/attr.c' l='682' u='r' c='handle_attr_line'/>
+<use f='codebrowser/attr.c' l='682' u='r' c='handle_attr_line'/>
+<use f='codebrowser/attr.c' l='682' u='r' c='handle_attr_line'/>
+<use f='codebrowser/attr.c' l='683' u='w' c='handle_attr_line'/>
+<use f='codebrowser/attr.c' l='1045' u='r' c='fill'/>
+<use f='codebrowser/attr.c' l='1078' u='r' c='determine_macros'/>
+<offset>192</offset>

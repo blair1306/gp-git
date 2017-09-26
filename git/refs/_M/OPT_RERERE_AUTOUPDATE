@@ -1,0 +1,4 @@
+<dec f='codebrowser/rerere.h' l='39'/>
+<use f='codebrowser/builtin/am.c' l='2282' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='216' u='c'/>
+<use f='codebrowser/builtin/revert.c' l='108' u='c'/>

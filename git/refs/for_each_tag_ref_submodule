@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs.h' l='310' type='int for_each_tag_ref_submodule(const char * submodule, each_ref_fn * fn, void * cb_data)'/>
+<def f='codebrowser/refs.c' l='339' ll='343' type='int for_each_tag_ref_submodule(const char * submodule, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/revision.c' l='2121' u='r' c='handle_revision_pseudo_opt'/>

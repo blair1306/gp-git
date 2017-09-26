@@ -1,0 +1,2 @@
+<def f='codebrowser/commit.c' l='236' macro='1' type='struct commit_buffer * buffer_slab_at(struct buffer_slab * s, const struct commit * c)'/>
+<use f='codebrowser/commit.c' l='241' u='c' c='set_commit_buffer'/>

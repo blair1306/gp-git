@@ -1,0 +1,17 @@
+<dec f='codebrowser/utf8.h' l='9' type='int utf8_strwidth(const char * string)'/>
+<use f='codebrowser/builtin/blame.c' l='305' u='c' c='format_time'/>
+<use f='codebrowser/builtin/blame.c' l='426' u='c' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='539' u='c' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='541' u='c' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='795' u='c' c='cmd_blame'/>
+<use f='codebrowser/builtin/branch.c' l='300' u='c' c='calc_maxwidth'/>
+<use f='codebrowser/builtin/branch.c' l='303' u='c' c='calc_maxwidth'/>
+<use f='codebrowser/builtin/fetch.c' l='495' u='c' c='adjust_refcol_width'/>
+<use f='codebrowser/builtin/fetch.c' l='497' u='c' c='adjust_refcol_width'/>
+<use f='codebrowser/builtin/worktree.c' l='406' u='c' c='show_worktree'/>
+<use f='codebrowser/column.c' l='35' u='c' c='item_length'/>
+<def f='codebrowser/utf8.c' l='223' ll='226' type='int utf8_strwidth(const char * string)'/>
+<use f='codebrowser/utf8.c' l='435' u='c' c='utf8_fprintf'/>
+<use f='codebrowser/wt-status.c' l='302' u='c' c='maxwidth'/>
+<use f='codebrowser/wt-status.c' l='331' u='c' c='wt_longstatus_print_unmerged_data'/>
+<use f='codebrowser/wt-status.c' l='394' u='c' c='wt_longstatus_print_change_data'/>

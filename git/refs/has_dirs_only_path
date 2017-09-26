@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='1523' type='int has_dirs_only_path(const char * name, int len, int prefix_len)'/>
+<use f='codebrowser/entry.c' l='29' u='c' c='create_directories'/>
+<use f='codebrowser/entry.c' l='362' u='c' c='check_path'/>
+<def f='codebrowser/symlinks.c' l='256' ll='259' type='int has_dirs_only_path(const char * name, int len, int prefix_len)'/>
+<doc f='codebrowser/symlinks.c' l='249'>/*
+ * Return non-zero if all path components of &apos;name&apos; exists as a
+ * directory.  If prefix_len &gt; 0, we will test with the stat()
+ * function instead of the lstat() function for a prefix length of
+ * &apos;prefix_len&apos;, thus we then allow for symlinks in the prefix part as
+ * long as those points to real existing directories.
+ */</doc>

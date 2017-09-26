@@ -1,0 +1,10 @@
+<dec f='codebrowser/path.h' l='74' type='const char * git_path_squash_msg()'/>
+<use f='codebrowser/branch.c' l='333' u='c' c='remove_branch_state'/>
+<use f='codebrowser/builtin/commit.c' l='736' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='737' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='744' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='745' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1800' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/merge.c' l='375' u='c' c='squash_message'/>
+<def f='codebrowser/path.c' l='1361' macro='1' type='const char * git_path_squash_msg()'/>
+<use f='codebrowser/sequencer.c' l='1073' u='c' c='do_pick_commit'/>

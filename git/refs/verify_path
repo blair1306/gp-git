@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='609' type='int verify_path(const char * path)'/>
+<use f='codebrowser/apply.c' l='3854' u='c' c='check_unsafe_path'/>
+<use f='codebrowser/apply.c' l='3856' u='c' c='check_unsafe_path'/>
+<use f='codebrowser/builtin/update-index.c' l='404' u='c' c='add_cacheinfo'/>
+<use f='codebrowser/builtin/update-index.c' l='447' u='c' c='update_one'/>
+<use f='codebrowser/builtin/update-index.c' l='538' u='c' c='read_index_info'/>
+<use f='codebrowser/read-cache.c' l='735' u='c' c='make_cache_entry'/>
+<def f='codebrowser/read-cache.c' l='831' ll='855' type='int verify_path(const char * path)'/>
+<use f='codebrowser/read-cache.c' l='1166' u='c' c='add_index_entry_with_check'/>

@@ -1,0 +1,26 @@
+<dec f='codebrowser/cache.h' l='1357' type='int parse_oid_hex(const char * hex, struct object_id * oid, const char ** end)'/>
+<doc f='codebrowser/cache.h' l='1350'>/*
+ * Parse a 40-character hexadecimal object ID starting from hex, updating the
+ * pointer specified by end when parsing stops.  The resulting object ID is
+ * stored in oid.  Returns 0 on success.  Parsing will stop on the first NUL or
+ * other invalid character.  end is only updated on success; otherwise, it is
+ * unmodified.
+ */</doc>
+<use f='codebrowser/builtin/diff-tree.c' l='26' u='c' c='stdin_diff_commit'/>
+<use f='codebrowser/builtin/diff-tree.c' l='46' u='c' c='stdin_diff_trees'/>
+<use f='codebrowser/builtin/diff-tree.c' l='69' u='c' c='diff_tree_stdin'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1539' u='c' c='queue_command'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1541' u='c' c='queue_command'/>
+<use f='codebrowser/bundle.c' l='58' u='c' c='parse_bundle_header'/>
+<use f='codebrowser/fast-import.c' l='2396' u='c' c='file_change_m'/>
+<use f='codebrowser/fast-import.c' l='2562' u='c' c='note_change_n'/>
+<use f='codebrowser/fast-import.c' l='3032' u='c' c='parse_cat_blob'/>
+<use f='codebrowser/fast-import.c' l='3104' u='c' c='parse_treeish_dataref'/>
+<use f='codebrowser/fetch-pack.c' l='674' u='c' c='filter_refs'/>
+<use f='codebrowser/fsck.c' l='157' u='c' c='init_skiplist'/>
+<def f='codebrowser/hex.c' l='56' ll='62' type='int parse_oid_hex(const char * hex, struct object_id * oid, const char ** end)'/>
+<use f='codebrowser/refs/files-backend.c' l='1821' u='c' c='show_one_reflog_ent'/>
+<use f='codebrowser/refs/files-backend.c' l='1822' u='c' c='show_one_reflog_ent'/>
+<use f='codebrowser/refs/packed-backend.c' l='154' u='c' c='parse_ref_line'/>
+<use f='codebrowser/sequencer.c' l='1661' u='c' c='sequencer_rollback'/>
+<use f='codebrowser/tag.c' l='131' u='c' c='parse_tag_buffer'/>

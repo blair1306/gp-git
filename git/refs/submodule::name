@@ -1,0 +1,74 @@
+<dec f='codebrowser/submodule-config.h' l='14' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/submodule--helper.c' l='367' u='r' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='377' u='r' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='411' u='r' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='416' u='r' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='421' u='r' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='485' u='r' c='module_name'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='853' u='r' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1090' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/repository.c' l='182' u='r' c='repo_submodule_init'/>
+<use f='codebrowser/submodule-config.c' l='57' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='57' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='76' u='r' c='free_one_config'/>
+<use f='codebrowser/submodule-config.c' l='144' u='r' c='cache_add'/>
+<use f='codebrowser/submodule-config.c' l='180' u='w' c='cache_lookup_name'/>
+<use f='codebrowser/submodule-config.c' l='220' u='w' c='lookup_or_create_by_name'/>
+<use f='codebrowser/submodule-config.c' l='379' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='393' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='403' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='419' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='430' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='437' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='444' u='r' c='parse_config'/>
+<use f='codebrowser/submodule.c' l='89' u='r' c='update_path_in_gitmodules'/>
+<use f='codebrowser/submodule.c' l='94' u='r' c='update_path_in_gitmodules'/>
+<use f='codebrowser/submodule.c' l='123' u='r' c='remove_path_from_gitmodules'/>
+<use f='codebrowser/submodule.c' l='128' u='r' c='remove_path_from_gitmodules'/>
+<use f='codebrowser/submodule.c' l='291' u='r' c='is_submodule_active'/>
+<use f='codebrowser/submodule.c' l='318' u='r' c='is_submodule_active'/>
+<use f='codebrowser/submodule.c' l='1585' u='r' c='submodule_move_head'/>
+<use f='codebrowser/submodule.c' l='1595' u='r' c='submodule_move_head'/>
+<use f='codebrowser/submodule.c' l='1848' u='r' c='relocate_single_git_dir_into_superproject'/>
+<use f='codebrowser/submodule.c' l='1904' u='r' c='absorb_git_dir_into_superproject'/>
+<use f='codebrowser/submodule.c' l='2049' u='r' c='submodule_to_gitdir'/>
+<use f='codebrowser/t/helper/test-submodule-config.c' l='69' u='r' c='cmd_main'/>

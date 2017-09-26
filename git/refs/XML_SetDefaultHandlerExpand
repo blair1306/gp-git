@@ -1,0 +1,5 @@
+<dec f='include/expat.h' l='583' type='void XML_SetDefaultHandlerExpand(XML_Parser parser, XML_DefaultHandler handler)'/>
+<doc f='include/expat.h' l='578'>/* This sets the default handler but does not inhibit expansion of
+   internal entities.  The entity reference will not be passed to the
+   default handler.
+*/</doc>

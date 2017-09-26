@@ -1,0 +1,3 @@
+<dec f='codebrowser/log-tree.h' l='32' type='void fmt_output_email_subject(struct strbuf * , struct rev_info * )'/>
+<def f='codebrowser/log-tree.c' l='336' ll='350' type='void fmt_output_email_subject(struct strbuf * sb, struct rev_info * opt)'/>
+<use f='codebrowser/pretty.c' l='1600' u='c' c='pp_title_line'/>

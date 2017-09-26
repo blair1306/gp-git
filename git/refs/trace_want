@@ -1,0 +1,11 @@
+<dec f='codebrowser/trace.h' l='17' type='int trace_want(struct trace_key * key)'/>
+<use f='codebrowser/http.c' l='673' u='c' c='setup_curl_trace'/>
+<use f='codebrowser/pkt-line.c' l='40' u='c' c='packet_trace'/>
+<use f='codebrowser/pkt-line.c' l='40' u='c' c='packet_trace'/>
+<use f='codebrowser/pkt-line.c' l='59' u='c' c='packet_trace'/>
+<use f='codebrowser/trace.c' l='102' u='c' c='prepare_trace_line'/>
+<use f='codebrowser/trace.c' l='108' u='c' c='prepare_trace_line'/>
+<use f='codebrowser/trace.c' l='141' u='c' c='trace_verbatim'/>
+<use f='codebrowser/trace.c' l='322' u='c' c='trace_repo_setup'/>
+<def f='codebrowser/trace.c' l='342' ll='345' type='int trace_want(struct trace_key * key)'/>
+<use f='codebrowser/trace.c' l='440' u='c' c='trace_command_performance'/>

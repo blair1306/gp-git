@@ -1,0 +1,14 @@
+<dec f='codebrowser/color.h' l='83' type='int git_config_colorbool(const char * var, const char * value)'/>
+<use f='codebrowser/builtin/branch.c' l='84' u='c' c='git_branch_config'/>
+<use f='codebrowser/builtin/clean.c' l='112' u='c' c='git_clean_config'/>
+<use f='codebrowser/builtin/commit.c' l='1301' u='c' c='git_status_config'/>
+<use f='codebrowser/builtin/config.c' l='340' u='c' c='git_get_colorbool_config'/>
+<use f='codebrowser/builtin/config.c' l='342' u='c' c='git_get_colorbool_config'/>
+<use f='codebrowser/builtin/config.c' l='344' u='c' c='git_get_colorbool_config'/>
+<use f='codebrowser/builtin/show-branch.c' l='553' u='c' c='git_show_branch_config'/>
+<def f='codebrowser/color.c' l='305' ll='325' type='int git_config_colorbool(const char * var, const char * value)'/>
+<use f='codebrowser/color.c' l='357' u='c' c='git_color_config'/>
+<use f='codebrowser/diff.c' l='235' u='c' c='git_diff_ui_config'/>
+<use f='codebrowser/diff.c' l='3927' u='c' c='diff_opt_parse'/>
+<use f='codebrowser/grep.c' l='100' u='c' c='grep_config'/>
+<use f='codebrowser/parse-options-cb.c' l='51' u='c' c='parse_opt_color_flag_cb'/>

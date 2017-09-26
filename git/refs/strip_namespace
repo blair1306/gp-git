@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='489' type='const char * strip_namespace(const char * namespaced_ref)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='258' u='c' c='show_ref_cb'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1225' u='c' c='check_aliased_update'/>
+<def f='codebrowser/environment.c' l='196' ll='202' type='const char * strip_namespace(const char * namespaced_ref)'/>
+<use f='codebrowser/http-backend.c' l='433' u='c' c='show_text_ref'/>
+<use f='codebrowser/http-backend.c' l='494' u='c' c='show_head_ref'/>
+<use f='codebrowser/upload-pack.c' l='911' u='c' c='check_ref'/>
+<use f='codebrowser/upload-pack.c' l='933' u='c' c='send_ref'/>

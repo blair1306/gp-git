@@ -1,0 +1,6 @@
+<dec f='codebrowser/rerere.c' l='31' type='unsigned char [20]'/>
+<use f='codebrowser/rerere.c' l='54' u='r' c='rerere_id_hex'/>
+<use f='codebrowser/rerere.c' l='117' u='r' c='scan_rerere_dir'/>
+<use f='codebrowser/rerere.c' l='138' u='r' c='rerere_dir_sha1'/>
+<use f='codebrowser/rerere.c' l='152' u='r' c='find_rerere_dir'/>
+<offset>0</offset>

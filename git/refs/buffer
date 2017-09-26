@@ -1,0 +1,4 @@
+<def f='codebrowser/http.h' l='72' ll='75'/>
+<size>32</size>
+<mbr r='buffer::buf' o='0' t='struct strbuf'/>
+<mbr r='buffer::posn' o='192' t='size_t'/>

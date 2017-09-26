@@ -1,0 +1,20 @@
+<dec f='codebrowser/iterator.h' l='23'/>
+<use f='codebrowser/iterator.h' l='35' u='c'/>
+<doc f='codebrowser/iterator.h' l='19'>/*
+ * The iterator experienced an error. The iteration has been aborted
+ * and the iterator has been freed.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='725' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2028' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2029' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='109' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='114' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='124' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='139' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='153' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='168' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='191' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='195' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='319' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='397' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='438' u='c'/>

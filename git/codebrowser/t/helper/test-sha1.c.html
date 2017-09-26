@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>test-sha1.c source code [codebrowser/t/helper/test-sha1.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/t/helper/test-sha1.c'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>t</a>/<a href='./'>helper</a>/<a href='test-sha1.c.html'>test-sha1.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><em>int</em> <dfn class="decl def" id="cmd_main" title='cmd_main' data-ref="cmd_main">cmd_main</dfn>(<em>int</em> <dfn class="local col1 decl" id="1ac" title='ac' data-type='int' data-ref="1ac">ac</dfn>, <em>const</em> <em>char</em> **<dfn class="local col2 decl" id="2av" title='av' data-type='const char **' data-ref="2av">av</dfn>)</td></tr>
+<tr><th id="4">4</th><td>{</td></tr>
+<tr><th id="5">5</th><td>	<a class="macro" href="../../cache.h.html#31" title="SHA1_CTX" data-ref="_M/git_SHA_CTX">git_SHA_CTX</a> <dfn class="local col3 decl" id="3ctx" title='ctx' data-type='SHA1_CTX' data-ref="3ctx">ctx</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<em>unsigned</em> <em>char</em> <dfn class="local col4 decl" id="4sha1" title='sha1' data-type='unsigned char [20]' data-ref="4sha1">sha1</dfn>[<var>20</var>];</td></tr>
+<tr><th id="7">7</th><td>	<em>unsigned</em> <dfn class="local col5 decl" id="5bufsz" title='bufsz' data-type='unsigned int' data-ref="5bufsz">bufsz</dfn> = <var>8192</var>;</td></tr>
+<tr><th id="8">8</th><td>	<em>int</em> <dfn class="local col6 decl" id="6binary" title='binary' data-type='int' data-ref="6binary">binary</dfn> = <var>0</var>;</td></tr>
+<tr><th id="9">9</th><td>	<em>char</em> *<dfn class="local col7 decl" id="7buffer" title='buffer' data-type='char *' data-ref="7buffer">buffer</dfn>;</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td>	<b>if</b> (<a class="local col1 ref" href="#1ac" title='ac' data-ref="1ac">ac</a> == <var>2</var>) {</td></tr>
+<tr><th id="12">12</th><td>		<b>if</b> (!<a class="macro" href="../../../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (av[1]) &amp;&amp; __builtin_constant_p (&quot;-b&quot;) &amp;&amp; (__s1_len = __builtin_strlen (av[1]), __s2_len = __builtin_strlen (&quot;-b&quot;), (!((size_t)(const void *)((av[1]) + 1) - (size_t)(const void *)(av[1]) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;-b&quot;) + 1) - (size_t)(const void *)(&quot;-b&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (av[1], &quot;-b&quot;) : (__builtin_constant_p (av[1]) &amp;&amp; ((size_t)(const void *)((av[1]) + 1) - (size_t)(const void *)(av[1]) == 1) &amp;&amp; (__s1_len = __builtin_strlen (av[1]), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;-b&quot;) &amp;&amp; ((size_t)(const void *)((&quot;-b&quot;) + 1) - (size_t)(const void *)(&quot;-b&quot;) == 1) ? __builtin_strcmp (av[1], &quot;-b&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;-b&quot;); int __result = (((const unsigned char *) (const char *) (av[1]))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (av[1]))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (av[1]))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (av[1]))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;-b&quot;) &amp;&amp; ((size_t)(const void *)((&quot;-b&quot;) + 1) - (size_t)(const void *)(&quot;-b&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;-b&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (av[1]) &amp;&amp; ((size_t)(const void *)((av[1]) + 1) - (size_t)(const void *)(av[1]) == 1) ? __builtin_strcmp (av[1], &quot;-b&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (av[1]); int __result = (((const unsigned char *) (const char *) (&quot;-b&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;-b&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;-b&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;-b&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (av[1], &quot;-b&quot;)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col2 ref" href="#2av" title='av' data-ref="2av">av</a>[<var>1</var>], <q>"-b"</q>))</td></tr>
+<tr><th id="13">13</th><td>			<a class="local col6 ref" href="#6binary" title='binary' data-ref="6binary">binary</a> = <var>1</var>;</td></tr>
+<tr><th id="14">14</th><td>		<b>else</b></td></tr>
+<tr><th id="15">15</th><td>			<a class="local col5 ref" href="#5bufsz" title='bufsz' data-ref="5bufsz">bufsz</a> = <a class="ref" href="../../../include/stdlib.h.html#strtoul" title='strtoul' data-ref="strtoul">strtoul</a>(<a class="local col2 ref" href="#2av" title='av' data-ref="2av">av</a>[<var>1</var>], <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <var>10</var>) * <var>1024</var> * <var>1024</var>;</td></tr>
+<tr><th id="16">16</th><td>	}</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td>	<b>if</b> (!<a class="local col5 ref" href="#5bufsz" title='bufsz' data-ref="5bufsz">bufsz</a>)</td></tr>
+<tr><th id="19">19</th><td>		<a class="local col5 ref" href="#5bufsz" title='bufsz' data-ref="5bufsz">bufsz</a> = <var>8192</var>;</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>	<b>while</b> ((<a class="local col7 ref" href="#7buffer" title='buffer' data-ref="7buffer">buffer</a> = <a class="ref" href="../../../include/stdlib.h.html#malloc" title='malloc' data-ref="malloc">malloc</a>(<a class="local col5 ref" href="#5bufsz" title='bufsz' data-ref="5bufsz">bufsz</a>)) == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="22">22</th><td>		<a class="ref" href="../../../include/stdio.h.html#fprintf" title='fprintf' data-ref="fprintf">fprintf</a>(<a class="macro" href="../../../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>, <q>"bufsz %u is too big, halving...\n"</q>, <a class="local col5 ref" href="#5bufsz" title='bufsz' data-ref="5bufsz">bufsz</a>);</td></tr>
+<tr><th id="23">23</th><td>		<a class="local col5 ref" href="#5bufsz" title='bufsz' data-ref="5bufsz">bufsz</a> /= <var>2</var>;</td></tr>
+<tr><th id="24">24</th><td>		<b>if</b> (<a class="local col5 ref" href="#5bufsz" title='bufsz' data-ref="5bufsz">bufsz</a> &lt; <var>1024</var>)</td></tr>
+<tr><th id="25">25</th><td>			<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"OOPS"</q>);</td></tr>
+<tr><th id="26">26</th><td>	}</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td>	<a class="macro" href="../../cache.h.html#32" title="SHA1DCInit" data-ref="_M/git_SHA1_Init">git_SHA1_Init</a>(&amp;<a class="local col3 ref" href="#3ctx" title='ctx' data-ref="3ctx">ctx</a>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>	<b>while</b> (<var>1</var>) {</td></tr>
+<tr><th id="31">31</th><td>		<a class="typedef" href="../../../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="local col8 decl" id="8sz" title='sz' data-type='ssize_t' data-ref="8sz">sz</dfn>, <dfn class="local col9 decl" id="9this_sz" title='this_sz' data-type='ssize_t' data-ref="9this_sz">this_sz</dfn>;</td></tr>
+<tr><th id="32">32</th><td>		<em>char</em> *<dfn class="local col0 decl" id="10cp" title='cp' data-type='char *' data-ref="10cp">cp</dfn> = <a class="local col7 ref" href="#7buffer" title='buffer' data-ref="7buffer">buffer</a>;</td></tr>
+<tr><th id="33">33</th><td>		<em>unsigned</em> <dfn class="local col1 decl" id="11room" title='room' data-type='unsigned int' data-ref="11room">room</dfn> = <a class="local col5 ref" href="#5bufsz" title='bufsz' data-ref="5bufsz">bufsz</a>;</td></tr>
+<tr><th id="34">34</th><td>		<a class="local col9 ref" href="#9this_sz" title='this_sz' data-ref="9this_sz">this_sz</a> = <var>0</var>;</td></tr>
+<tr><th id="35">35</th><td>		<b>while</b> (<a class="local col1 ref" href="#11room" title='room' data-ref="11room">room</a>) {</td></tr>
+<tr><th id="36">36</th><td>			<a class="local col8 ref" href="#8sz" title='sz' data-ref="8sz">sz</a> = <a class="ref" href="../../git-compat-util.h.html#xread" title='xread' data-ref="xread">xread</a>(<var>0</var>, <a class="local col0 ref" href="#10cp" title='cp' data-ref="10cp">cp</a>, <a class="local col1 ref" href="#11room" title='room' data-ref="11room">room</a>);</td></tr>
+<tr><th id="37">37</th><td>			<b>if</b> (<a class="local col8 ref" href="#8sz" title='sz' data-ref="8sz">sz</a> == <var>0</var>)</td></tr>
+<tr><th id="38">38</th><td>				<b>break</b>;</td></tr>
+<tr><th id="39">39</th><td>			<b>if</b> (<a class="local col8 ref" href="#8sz" title='sz' data-ref="8sz">sz</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="40">40</th><td>				<a class="ref" href="../../git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"test-sha1"</q>);</td></tr>
+<tr><th id="41">41</th><td>			<a class="local col9 ref" href="#9this_sz" title='this_sz' data-ref="9this_sz">this_sz</a> += <a class="local col8 ref" href="#8sz" title='sz' data-ref="8sz">sz</a>;</td></tr>
+<tr><th id="42">42</th><td>			<a class="local col0 ref" href="#10cp" title='cp' data-ref="10cp">cp</a> += <a class="local col8 ref" href="#8sz" title='sz' data-ref="8sz">sz</a>;</td></tr>
+<tr><th id="43">43</th><td>			<a class="local col1 ref" href="#11room" title='room' data-ref="11room">room</a> -= <a class="local col8 ref" href="#8sz" title='sz' data-ref="8sz">sz</a>;</td></tr>
+<tr><th id="44">44</th><td>		}</td></tr>
+<tr><th id="45">45</th><td>		<b>if</b> (<a class="local col9 ref" href="#9this_sz" title='this_sz' data-ref="9this_sz">this_sz</a> == <var>0</var>)</td></tr>
+<tr><th id="46">46</th><td>			<b>break</b>;</td></tr>
+<tr><th id="47">47</th><td>		<a class="macro" href="../../cache.h.html#33" title="git_SHA1DCUpdate" data-ref="_M/git_SHA1_Update">git_SHA1_Update</a>(&amp;<a class="local col3 ref" href="#3ctx" title='ctx' data-ref="3ctx">ctx</a>, <a class="local col7 ref" href="#7buffer" title='buffer' data-ref="7buffer">buffer</a>, <a class="local col9 ref" href="#9this_sz" title='this_sz' data-ref="9this_sz">this_sz</a>);</td></tr>
+<tr><th id="48">48</th><td>	}</td></tr>
+<tr><th id="49">49</th><td>	<a class="macro" href="../../cache.h.html#34" title="git_SHA1DCFinal" data-ref="_M/git_SHA1_Final">git_SHA1_Final</a>(<a class="local col4 ref" href="#4sha1" title='sha1' data-ref="4sha1">sha1</a>, &amp;<a class="local col3 ref" href="#3ctx" title='ctx' data-ref="3ctx">ctx</a>);</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td>	<b>if</b> (<a class="local col6 ref" href="#6binary" title='binary' data-ref="6binary">binary</a>)</td></tr>
+<tr><th id="52">52</th><td>		<a class="ref" href="../../../include/stdio.h.html#fwrite" title='fwrite' data-ref="fwrite">fwrite</a>(<a class="local col4 ref" href="#4sha1" title='sha1' data-ref="4sha1">sha1</a>, <var>1</var>, <var>20</var>, <a class="macro" href="../../../include/stdio.h.html#173" title="stdout" data-ref="_M/stdout">stdout</a>);</td></tr>
+<tr><th id="53">53</th><td>	<b>else</b></td></tr>
+<tr><th id="54">54</th><td>		<a class="ref" href="../../../include/stdio.h.html#puts" title='puts' data-ref="puts">puts</a>(<a class="ref" href="../../cache.h.html#sha1_to_hex" title='sha1_to_hex' data-ref="sha1_to_hex">sha1_to_hex</a>(<a class="local col4 ref" href="#4sha1" title='sha1' data-ref="4sha1">sha1</a>));</td></tr>
+<tr><th id="55">55</th><td>	<a class="ref" href="../../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>0</var>);</td></tr>
+<tr><th id="56">56</th><td>}</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

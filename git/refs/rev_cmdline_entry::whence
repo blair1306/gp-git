@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='46' type='enum (anonymous enum at /home/jon/workspace/git/revision.h:39:3)'/>
+<offset>128</offset>
+<use f='codebrowser/revision.c' l='1111' u='w' c='add_rev_cmdline'/>
+<use f='codebrowser/sequencer.c' l='2342' u='r' c='sequencer_pick_revisions'/>

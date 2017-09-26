@@ -1,0 +1,36 @@
+<dec f='codebrowser/config.h' l='70' type='int git_config_set_multivar_in_file_gently(const char * , const char * , const char * , const char * , int )'/>
+<use f='codebrowser/builtin/config.c' l='641' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/config.c' l='648' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/config.c' l='656' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/config.c' l='683' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/config.c' l='692' u='c' c='cmd_config'/>
+<use f='codebrowser/config.c' l='2380' u='c' c='git_config_set_in_file_gently'/>
+<def f='codebrowser/config.c' l='2424' ll='2653' type='int git_config_set_multivar_in_file_gently(const char * config_filename, const char * key, const char * value, const char * value_regex, int multi_replace)'/>
+<use f='codebrowser/config.c' l='2659' u='c' c='git_config_set_multivar_in_file'/>
+<use f='codebrowser/config.c' l='2671' u='c' c='git_config_set_multivar_gently'/>
+<doc f='codebrowser/config.c' l='2399'>/*
+ * If value==NULL, unset in (remove from) config,
+ * if value_regex!=NULL, disregard key/value pairs where value does not match.
+ * if value_regex==CONFIG_REGEX_NONE, do not match any existing values
+ *     (only add a new one)
+ * if multi_replace==0, nothing, or only one matching key/value is replaced,
+ *     else all matching key/values (regardless how many) are removed,
+ *     before the new pair is written.
+ *
+ * Returns 0 on success.
+ *
+ * This function does this:
+ *
+ * - it locks the config file by creating &quot;.git/config.lock&quot;
+ *
+ * - it then parses the config using store_aux() as validator to find
+ *   the position on the key/value pair to replace. If it is to be unset,
+ *   it must be found exactly once.
+ *
+ * - the config file is mmap()ed and the part before the match (if any) is
+ *   written to the lock file, then the changed part and the rest.
+ *
+ * - the config file is removed and the lock file rename()d to it.
+ *
+ */</doc>
+<use f='codebrowser/sequencer.c' l='1756' u='c' c='save_opts'/>

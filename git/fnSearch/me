@@ -1,0 +1,11 @@
+memhash|memhash
+memihash|memihash
+memihash_cont|memihash_cont
+memintern|memintern
+merge_blobs|merge_blobs
+merge_recursive|merge_recursive
+merge_recursive_generic|merge_recursive_generic
+merge_trees|merge_trees
+merge_ref_iterator_begin|merge_ref_iterator_begin
+merge_base_index|merge_base_index
+merge_submodule|merge_submodule

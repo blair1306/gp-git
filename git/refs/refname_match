@@ -1,0 +1,11 @@
+<dec f='codebrowser/refs.h' l='139' type='int refname_match(const char * abbrev_name, const char * full_name)'/>
+<doc f='codebrowser/refs.h' l='134'>/*
+ * Return true iff abbrev_name is a possible abbreviation for
+ * full_name according to the rules defined by ref_rev_parse_rules in
+ * refs.c.
+ */</doc>
+<def f='codebrowser/refs.c' l='445' ll='457' type='int refname_match(const char * abbrev_name, const char * full_name)'/>
+<use f='codebrowser/remote.c' l='1020' u='c' c='count_refspec_match'/>
+<use f='codebrowser/remote.c' l='1666' u='c' c='branch_merge_matches'/>
+<use f='codebrowser/remote.c' l='1843' u='c' c='find_ref_by_name_abbrev'/>
+<use f='codebrowser/remote.c' l='2348' u='c' c='apply_cas'/>

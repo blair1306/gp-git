@@ -1,0 +1,2 @@
+<dec f='codebrowser/config.h' l='158' type='int git_configset_get_string(struct config_set * cs, const char * key, char ** dest)'/>
+<def f='codebrowser/config.c' l='1810' ll='1813' type='int git_configset_get_string(struct config_set * cs, const char * key, char ** dest)'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/transport.h' l='19' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/transport.c' l='156' u='w' c='set_git_option'/>
+<use f='codebrowser/transport.c' l='225' u='r' c='fetch_refs_via_pack'/>

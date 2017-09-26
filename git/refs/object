@@ -1,0 +1,9 @@
+<def f='codebrowser/object.h' l='48' ll='53'/>
+<size>24</size>
+<doc f='codebrowser/object.h' l='45'>/*
+ * The object type is stored in 3 bits.
+ */</doc>
+<mbr r='object::parsed' o='0' t='unsigned int'/>
+<mbr r='object::type' o='1' t='unsigned int'/>
+<mbr r='object::flags' o='4' t='unsigned int'/>
+<mbr r='object::oid' o='32' t='struct object_id'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/gpg-interface.h' l='34' type='int check_signature(const char * payload, size_t plen, const char * signature, size_t slen, struct signature_check * sigc)'/>
+<use f='codebrowser/commit.c' l='1251' u='c' c='check_commit_signature'/>
+<def f='codebrowser/gpg-interface.c' l='67' ll='90' type='int check_signature(const char * payload, size_t plen, const char * signature, size_t slen, struct signature_check * sigc)'/>
+<use f='codebrowser/tag.c' l='26' u='c' c='run_gpg_verify'/>

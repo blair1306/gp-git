@@ -1,0 +1,18 @@
+<dec f='codebrowser/refs.h' l='131' type='int resolve_gitlink_ref(const char * submodule, const char * refname, unsigned char * sha1)'/>
+<doc f='codebrowser/refs.h' l='125'>/**
+ * Resolve refname in the nested &quot;gitlink&quot; repository in the specified
+ * submodule (which must be non-NULL). If the resolution is
+ * successful, return 0 and set sha1 to the name of the object;
+ * otherwise, return a non-zero value.
+ */</doc>
+<use f='codebrowser/builtin/update-index.c' l='329' u='c' c='process_directory'/>
+<use f='codebrowser/builtin/update-index.c' l='355' u='c' c='process_directory'/>
+<use f='codebrowser/combine-diff.c' l='1017' u='c' c='show_patch_diff'/>
+<use f='codebrowser/diff-lib.c' l='53' u='c' c='check_removed'/>
+<use f='codebrowser/dir.c' l='1394' u='c' c='treat_directory'/>
+<use f='codebrowser/dir.c' l='2250' u='c' c='remove_dir_recurse'/>
+<use f='codebrowser/read-cache.c' l='204' u='c' c='ce_compare_gitlink'/>
+<use f='codebrowser/refs.c' l='1257' u='c' c='head_ref_submodule'/>
+<def f='codebrowser/refs.c' l='1503' ll='1533' type='int resolve_gitlink_ref(const char * submodule, const char * refname, unsigned char * sha1)'/>
+<use f='codebrowser/sha1_file.c' l='3680' u='c' c='index_path'/>
+<use f='codebrowser/unpack-trees.c' l='1556' u='c' c='verify_clean_subdirectory'/>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/graph.c' l='182' type='int'/>
+<use f='codebrowser/graph.c' l='302' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='303' u='r' c='graph_init'/>
+<use f='codebrowser/graph.c' l='304' u='r' c='graph_init'/>
+<use f='codebrowser/graph.c' l='305' u='r' c='graph_init'/>
+<use f='codebrowser/graph.c' l='306' u='r' c='graph_init'/>
+<use f='codebrowser/graph.c' l='326' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='330' u='w' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='331' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='333' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='334' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='335' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='336' u='r' c='graph_ensure_capacity'/>
+<offset>352</offset>
+<doc f='codebrowser/graph.c' l='177'>/*
+	 * The maximum number of columns that can be stored in the columns
+	 * and new_columns arrays.  This is also half the number of entries
+	 * that can be stored in the mapping and new_mapping arrays.
+	 */</doc>

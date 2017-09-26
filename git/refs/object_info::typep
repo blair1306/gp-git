@@ -1,0 +1,20 @@
+<dec f='codebrowser/cache.h' l='1793' type='enum object_type *'/>
+<offset>0</offset>
+<doc f='codebrowser/cache.h' l='1792'>/* Request */</doc>
+<use f='codebrowser/builtin/cat-file.c' l='228' u='w' c='expand_atom'/>
+<use f='codebrowser/builtin/cat-file.c' l='284' u='r' c='print_object_or_die'/>
+<use f='codebrowser/builtin/cat-file.c' l='468' u='w' c='batch_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1558' u='w' c='drop_reused_delta'/>
+<use f='codebrowser/sha1_file.c' l='1972' u='r' c='parse_sha1_header_extended'/>
+<use f='codebrowser/sha1_file.c' l='1973' u='r' c='parse_sha1_header_extended'/>
+<use f='codebrowser/sha1_file.c' l='2415' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2419' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2420' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2923' u='r' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2965' u='r' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2966' u='r' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2989' u='r' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_file.c' l='2990' u='r' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_file.c' l='3048' u='w' c='sha1_object_info'/>
+<use f='codebrowser/sha1_file.c' l='3079' u='w' c='read_object'/>
+<use f='codebrowser/streaming.c' l='114' u='w' c='istream_source'/>

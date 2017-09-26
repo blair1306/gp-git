@@ -1,0 +1,16 @@
+<dec f='codebrowser/hashmap.h' l='148' type='unsigned int'/>
+<use f='codebrowser/hashmap.h' l='251' u='w' c='hashmap_entry_init'/>
+<offset>64</offset>
+<doc f='codebrowser/hashmap.h' l='147'>/* entry&apos;s hash code */</doc>
+<use f='codebrowser/builtin/fast-export.c' l='126' u='r' c='anonymize_mem'/>
+<use f='codebrowser/hashmap.c' l='99' u='r' c='entry_equals'/>
+<use f='codebrowser/hashmap.c' l='99' u='r' c='entry_equals'/>
+<use f='codebrowser/hashmap.c' l='106' u='r' c='bucket'/>
+<use f='codebrowser/hashmap.c' l='294' u='r' c='memintern'/>
+<use f='codebrowser/name-hash.c' l='287' u='r' c='hash_dir_entry_with_parent_and_prefix'/>
+<use f='codebrowser/name-hash.c' l='308' u='r' c='hash_dir_entry_with_parent_and_prefix'/>
+<use f='codebrowser/name-hash.c' l='445' u='r' c='handle_range_1'/>
+<use f='codebrowser/name-hash.c' l='448' u='r' c='handle_range_1'/>
+<use f='codebrowser/remote.c' l='180' u='r' c='make_remote'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='45' u='r' c='dump_run'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='51' u='r' c='dump_run'/>

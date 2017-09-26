@@ -1,0 +1,15 @@
+<dec f='codebrowser/split-index.h' l='11' type='struct ewah_bitmap *'/>
+<offset>256</offset>
+<use f='codebrowser/split-index.c' l='29' u='w' c='read_link_extension'/>
+<use f='codebrowser/split-index.c' l='30' u='r' c='read_link_extension'/>
+<use f='codebrowser/split-index.c' l='49' u='r' c='write_link_extension'/>
+<use f='codebrowser/split-index.c' l='51' u='r' c='write_link_extension'/>
+<use f='codebrowser/split-index.c' l='148' u='r' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='168' u='r' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='171' u='w' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='182' u='w' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='234' u='r' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='268' u='r' c='finish_writing_split_index'/>
+<use f='codebrowser/split-index.c' l='270' u='w' c='finish_writing_split_index'/>
+<use f='codebrowser/t/helper/test-dump-split-index.c' l='32' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-dump-split-index.c' l='33' u='r' c='cmd_main'/>

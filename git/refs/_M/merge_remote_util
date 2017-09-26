@@ -1,0 +1,13 @@
+<dec f='codebrowser/commit.h' l='366'/>
+<use f='codebrowser/builtin/merge.c' l='513' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='676' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='919' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='920' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1091' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1290' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1298' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1301' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1302' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1303' u='c'/>
+<use f='codebrowser/commit.c' l='1209' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='204' u='c'/>

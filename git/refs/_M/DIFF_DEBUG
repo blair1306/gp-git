@@ -1,0 +1,3 @@
+<dec f='codebrowser/diffcore.h' l='130'/>
+<use f='codebrowser/diffcore.h' l='131' u='c'/>
+<use f='codebrowser/diff.c' l='4338' u='c'/>

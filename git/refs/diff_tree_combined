@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='240' type='void diff_tree_combined(const struct object_id * oid, const struct oid_array * parents, int dense, struct rev_info * rev)'/>
+<use f='codebrowser/builtin/diff.c' l='198' u='c' c='builtin_diff_combined'/>
+<def f='codebrowser/combine-diff.c' l='1387' ll='1530' type='void diff_tree_combined(const struct object_id * oid, const struct oid_array * parents, int dense, struct rev_info * rev)'/>
+<use f='codebrowser/combine-diff.c' l='1542' u='c' c='diff_tree_combined_merge'/>

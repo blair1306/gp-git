@@ -1,0 +1,12 @@
+<dec f='codebrowser/ref-filter.h' l='109' type='int verify_ref_format(struct ref_format * format)'/>
+<use f='codebrowser/builtin/branch.c' l='414' u='c' c='print_ref_list'/>
+<doc f='codebrowser/ref-filter.h' l='108'>/*  Used to verify if the given format is correct and to parse out the used atoms */</doc>
+<use f='codebrowser/builtin/for-each-ref.c' l='68' u='c' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='57' u='c' c='list_tags'/>
+<use f='codebrowser/builtin/tag.c' l='486' u='c' c='cmd_tag'/>
+<use f='codebrowser/builtin/verify-tag.c' l='54' u='c' c='cmd_verify_tag'/>
+<def f='codebrowser/ref-filter.c' l='666' ll='687' type='int verify_ref_format(struct ref_format * format)'/>
+<doc f='codebrowser/ref-filter.c' l='662'>/*
+ * Make sure the format string is well formed, and parse out
+ * the used atoms.
+ */</doc>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/git-compat-util.h' l='809' type='int xmkstemp_mode(char * template, int mode)'/>
+<use f='codebrowser/environment.c' l='264' u='c' c='odb_mkstemp'/>
+<def f='codebrowser/wrapper.c' l='544' ll='564' type='int xmkstemp_mode(char * template, int mode)'/>

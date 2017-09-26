@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache-tree.h' l='50' type='int write_index_as_tree(unsigned char * sha1, struct index_state * index_state, const char * index_path, int flags, const char * prefix)'/>
+<use f='codebrowser/builtin/am.c' l='1573' u='c' c='fall_back_threeway'/>
+<use f='codebrowser/builtin/am.c' l='1598' u='c' c='fall_back_threeway'/>
+<def f='codebrowser/cache-tree.c' l='603' ll='655' type='int write_index_as_tree(unsigned char * sha1, struct index_state * index_state, const char * index_path, int flags, const char * prefix)'/>
+<use f='codebrowser/cache-tree.c' l='659' u='c' c='write_cache_as_tree'/>

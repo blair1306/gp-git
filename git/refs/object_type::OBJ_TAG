@@ -1,0 +1,76 @@
+<dec f='codebrowser/cache.h' l='398' type='4'/>
+<use f='codebrowser/alloc.c' l='71' u='r' c='alloc_tag_node'/>
+<use f='codebrowser/builtin/cat-file.c' l='141' u='r' c='cat_one_file'/>
+<use f='codebrowser/builtin/fast-export.c' l='661' u='r' c='handle_tag'/>
+<use f='codebrowser/builtin/fast-export.c' l='779' c='get_commit'/>
+<use f='codebrowser/builtin/fast-export.c' l='783' u='r' c='get_commit'/>
+<use f='codebrowser/builtin/fast-export.c' l='863' c='handle_tags_and_duplicates'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='493' u='r' c='fmt_merge_msg_sigs'/>
+<use f='codebrowser/builtin/fsck.c' l='352' u='r' c='fsck_obj'/>
+<use f='codebrowser/builtin/index-pack.c' l='541' c='unpack_raw_entry'/>
+<use f='codebrowser/builtin/log.c' l='518' u='r' c='show_tag_object'/>
+<use f='codebrowser/builtin/log.c' l='595' c='cmd_show'/>
+<use f='codebrowser/builtin/merge.c' l='514' u='r' c='merge_name'/>
+<use f='codebrowser/builtin/merge.c' l='1303' u='r' c='cmd_merge'/>
+<use f='codebrowser/builtin/name-rev.c' l='244' u='r' c='name_ref'/>
+<use f='codebrowser/builtin/pack-objects.c' l='694' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2353' u='r' c='add_tag_chain'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2355' u='r' c='add_tag_chain'/>
+<use f='codebrowser/builtin/replace.c' l='358' u='r' c='check_one_mergetag'/>
+<use f='codebrowser/builtin/tag.c' l='176' u='r' c='write_tag_body'/>
+<use f='codebrowser/builtin/tag.c' l='319' c='create_reflog_msg'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='462' c='unpack_one'/>
+<use f='codebrowser/bundle.c' l='340' u='r' c='write_bundle_refs'/>
+<use f='codebrowser/commit.c' l='1213' u='r' c='handle_signed_tag'/>
+<use f='codebrowser/fast-import.c' l='2924' u='r' c='parse_new_tag'/>
+<use f='codebrowser/fast-import.c' l='3061' c='dereference'/>
+<use f='codebrowser/fast-import.c' l='3078' c='dereference'/>
+<use f='codebrowser/fast-import.c' l='3537' u='r' c='cmd_main'/>
+<use f='codebrowser/fast-import.c' l='3537' u='r' c='cmd_main'/>
+<use f='codebrowser/fast-import.c' l='3537' u='r' c='cmd_main'/>
+<use f='codebrowser/fast-import.c' l='3537' u='r' c='cmd_main'/>
+<use f='codebrowser/fetch-pack.c' l='564' u='r' c='mark_complete'/>
+<use f='codebrowser/fsck.c' l='473' c='fsck_walk'/>
+<use f='codebrowser/fsck.c' l='819' u='r' c='fsck_tag_buffer'/>
+<use f='codebrowser/fsck.c' l='916' u='r' c='fsck_object'/>
+<use f='codebrowser/http-backend.c' l='440' u='r' c='show_text_ref'/>
+<use f='codebrowser/http-push.c' l='1343' u='r' c='get_delta'/>
+<use f='codebrowser/http-push.c' l='1471' u='r' c='add_remote_info_ref'/>
+<use f='codebrowser/list-objects.c' l='212' u='r' c='traverse_commit_list'/>
+<use f='codebrowser/log-tree.c' l='131' u='r' c='add_ref_decoration'/>
+<use f='codebrowser/log-tree.c' l='491' u='r' c='show_one_mergetag'/>
+<use f='codebrowser/object.c' l='218' u='r' c='parse_object_buffer'/>
+<use f='codebrowser/pack-bitmap-write.c' l='71' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/pack-bitmap-write.c' l='94' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/pack-bitmap.c' l='678' u='r' c='prepare_bitmap_walk'/>
+<use f='codebrowser/pack-bitmap.c' l='817' u='r' c='traverse_bitmap_commit_list'/>
+<use f='codebrowser/pack-bitmap.c' l='847' c='count_object_type'/>
+<use f='codebrowser/pack-bitmap.c' l='884' u='r' c='count_bitmap_commit_list'/>
+<use f='codebrowser/reachable.c' l='83' c='add_recent_object'/>
+<use f='codebrowser/ref-filter.c' l='1107' c='grab_values'/>
+<use f='codebrowser/ref-filter.c' l='1448' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1769' u='r' c='match_points_at'/>
+<use f='codebrowser/refs.c' l='266' u='r' c='peel_object'/>
+<use f='codebrowser/remote.c' l='1337' u='r' c='add_missing_tags'/>
+<use f='codebrowser/revision.c' l='223' u='r' c='handle_commit'/>
+<use f='codebrowser/revision.c' l='1311' u='r' c='add_parents_only'/>
+<use f='codebrowser/server-info.c' l='63' u='r' c='add_info_ref'/>
+<use f='codebrowser/sha1_file.c' l='2206' c='packed_to_object_type'/>
+<use f='codebrowser/sha1_file.c' l='2596' c='unpack_entry'/>
+<use f='codebrowser/sha1_file.c' l='3157' u='r' c='read_object_with_reference'/>
+<use f='codebrowser/sha1_file.c' l='3534' u='r' c='index_mem'/>
+<use f='codebrowser/sha1_name.c' l='250' u='r' c='disambiguate_committish_only'/>
+<use f='codebrowser/sha1_name.c' l='274' u='r' c='disambiguate_treeish_only'/>
+<use f='codebrowser/sha1_name.c' l='373' u='r' c='show_ambiguous_object'/>
+<use f='codebrowser/sha1_name.c' l='792' u='r' c='peel_to_type'/>
+<use f='codebrowser/sha1_name.c' l='838' u='r' c='peel_onion'/>
+<use f='codebrowser/sha1_name.c' l='996' u='r' c='handle_one_ref'/>
+<use f='codebrowser/streaming.c' l='446' c='open_istream_pack_non_delta'/>
+<use f='codebrowser/tag.c' l='45' u='r' c='gpg_verify_tag'/>
+<use f='codebrowser/tag.c' l='67' u='r' c='deref_tag'/>
+<use f='codebrowser/tag.c' l='82' u='r' c='deref_tag_noverify'/>
+<use f='codebrowser/tag.c' l='84' u='r' c='deref_tag_noverify'/>
+<use f='codebrowser/tag.c' l='97' u='r' c='lookup_tag'/>
+<use f='codebrowser/tag.c' l='189' u='r' c='parse_tag'/>
+<use f='codebrowser/tree.c' l='252' u='r' c='parse_tree_indirect'/>
+<use f='codebrowser/walker.c' l='130' u='r' c='process_object'/>

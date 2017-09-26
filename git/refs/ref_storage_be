@@ -1,0 +1,24 @@
+<def f='codebrowser/refs/refs-internal.h' l='637' ll='664'/>
+<size>176</size>
+<mbr r='ref_storage_be::next' o='0' t='struct ref_storage_be *'/>
+<mbr r='ref_storage_be::name' o='64' t='const char *'/>
+<mbr r='ref_storage_be::init' o='128' t='ref_store_init_fn *'/>
+<mbr r='ref_storage_be::init_db' o='192' t='ref_init_db_fn *'/>
+<mbr r='ref_storage_be::transaction_prepare' o='256' t='ref_transaction_prepare_fn *'/>
+<mbr r='ref_storage_be::transaction_finish' o='320' t='ref_transaction_finish_fn *'/>
+<mbr r='ref_storage_be::transaction_abort' o='384' t='ref_transaction_abort_fn *'/>
+<mbr r='ref_storage_be::initial_transaction_commit' o='448' t='ref_transaction_commit_fn *'/>
+<mbr r='ref_storage_be::pack_refs' o='512' t='pack_refs_fn *'/>
+<mbr r='ref_storage_be::peel_ref' o='576' t='peel_ref_fn *'/>
+<mbr r='ref_storage_be::create_symref' o='640' t='create_symref_fn *'/>
+<mbr r='ref_storage_be::delete_refs' o='704' t='delete_refs_fn *'/>
+<mbr r='ref_storage_be::rename_ref' o='768' t='rename_ref_fn *'/>
+<mbr r='ref_storage_be::iterator_begin' o='832' t='ref_iterator_begin_fn *'/>
+<mbr r='ref_storage_be::read_raw_ref' o='896' t='read_raw_ref_fn *'/>
+<mbr r='ref_storage_be::reflog_iterator_begin' o='960' t='reflog_iterator_begin_fn *'/>
+<mbr r='ref_storage_be::for_each_reflog_ent' o='1024' t='for_each_reflog_ent_fn *'/>
+<mbr r='ref_storage_be::for_each_reflog_ent_reverse' o='1088' t='for_each_reflog_ent_reverse_fn *'/>
+<mbr r='ref_storage_be::reflog_exists' o='1152' t='reflog_exists_fn *'/>
+<mbr r='ref_storage_be::create_reflog' o='1216' t='create_reflog_fn *'/>
+<mbr r='ref_storage_be::delete_reflog' o='1280' t='delete_reflog_fn *'/>
+<mbr r='ref_storage_be::reflog_expire' o='1344' t='reflog_expire_fn *'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/apply.h' l='13' type='1'/>
+<use f='codebrowser/apply.c' l='71' u='r' c='parse_ignorewhitespace_option'/>
+<use f='codebrowser/apply.c' l='2539' u='r' c='match_fragment'/>
+<use f='codebrowser/apply.c' l='4777' u='r' c='apply_option_parse_space_change'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/url.h' l='4' type='int is_url(const char * url)'/>
+<use f='codebrowser/connect.c' l='629' u='c' c='parse_connect_url'/>
+<use f='codebrowser/transport.c' l='797' u='c' c='transport_get'/>
+<def f='codebrowser/url.c' l='19' ll='30' type='int is_url(const char * url)'/>

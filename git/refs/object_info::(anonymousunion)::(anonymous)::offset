@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1818' type='off_t'/>
+<offset>64</offset>
+<use f='codebrowser/sha1_file.c' l='3033' u='w' c='sha1_object_info_extended'/>
+<use f='codebrowser/streaming.c' l='432' u='r' c='open_istream_pack_non_delta'/>

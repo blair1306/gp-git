@@ -1,0 +1,11 @@
+<dec f='codebrowser/shortlog.h' l='21' type='FILE *'/>
+<use f='codebrowser/builtin/log.c' l='1043' u='w' c='make_cover_letter'/>
+<offset>960</offset>
+<use f='codebrowser/builtin/shortlog.c' l='288' u='w' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/shortlog.c' l='302' u='r' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/shortlog.c' l='303' u='r' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/shortlog.c' l='325' u='r' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='329' u='r' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='337' u='r' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='340' u='r' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='342' u='r' c='shortlog_output'/>

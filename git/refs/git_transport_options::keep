@@ -1,0 +1,4 @@
+<dec f='codebrowser/transport.h' l='12' type='unsigned int'/>
+<offset>1</offset>
+<use f='codebrowser/transport.c' l='140' u='w' c='set_git_option'/>
+<use f='codebrowser/transport.c' l='217' u='r' c='fetch_refs_via_pack'/>

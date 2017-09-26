@@ -1,0 +1,4 @@
+<dec f='codebrowser/fsck.c' l='70' macro='1' type='10'/>
+<use f='codebrowser/fsck.c' l='545' u='r' c='fsck_tree'/>
+<use f='codebrowser/fsck.c' l='569' u='r' c='fsck_tree'/>
+<use f='codebrowser/fsck.c' l='775' u='r' c='fsck_commit_buffer'/>

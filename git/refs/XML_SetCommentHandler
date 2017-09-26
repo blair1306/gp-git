@@ -1,0 +1,1 @@
+<dec f='include/expat.h' l='554' type='void XML_SetCommentHandler(XML_Parser parser, XML_CommentHandler handler)'/>

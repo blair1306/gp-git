@@ -1,0 +1,10 @@
+<dec f='codebrowser/branch.h' l='67' type='void die_if_checked_out(const char * branch, int ignore_current_worktree)'/>
+<def f='codebrowser/branch.c' l='336' ll='346' type='void die_if_checked_out(const char * branch, int ignore_current_worktree)'/>
+<doc f='codebrowser/branch.h' l='62'>/*
+ * Check if a branch is checked out in the main worktree or any linked
+ * worktree and die (with a message describing its checkout location) if
+ * it is.
+ */</doc>
+<use f='codebrowser/builtin/checkout.c' l='1124' u='c' c='checkout_branch'/>
+<use f='codebrowser/builtin/worktree.c' l='211' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='361' u='c' c='add'/>

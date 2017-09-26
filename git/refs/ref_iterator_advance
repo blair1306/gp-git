@@ -1,0 +1,21 @@
+<dec f='codebrowser/refs/refs-internal.h' l='338' type='int ref_iterator_advance(struct ref_iterator * ref_iterator)'/>
+<use f='codebrowser/refs.c' l='1907' u='c' c='refs_verify_refname_available'/>
+<doc f='codebrowser/refs/refs-internal.h' l='330'>/*
+ * Advance the iterator to the first or next item and return ITER_OK.
+ * If the iteration is exhausted, free the resources associated with
+ * the ref_iterator and return ITER_DONE. On errors, free the iterator
+ * resources and return ITER_ERROR. It is a bug to use ref_iterator or
+ * call this function again after it has returned ITER_DONE or
+ * ITER_ERROR.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='706' u='c' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='1103' u='c' c='files_pack_refs'/>
+<def f='codebrowser/refs/iterator.c' l='11' ll='14' type='int ref_iterator_advance(struct ref_iterator * ref_iterator)'/>
+<use f='codebrowser/refs/iterator.c' l='107' u='c' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='112' u='c' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='122' u='c' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='151' u='c' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='291' u='c' c='prefix_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='382' u='c' c='do_for_each_ref_iterator'/>
+<use f='codebrowser/refs/packed-backend.c' l='419' u='c' c='packed_ref_iterator_advance'/>
+<use f='codebrowser/refs/packed-backend.c' l='652' u='c' c='commit_packed_refs'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/object.h' l='99' type='struct object * parse_object_or_die(const struct object_id * oid, const char * name)'/>
+<doc f='codebrowser/object.h' l='94'>/*
+ * Like parse_object, but will die() instead of returning NULL. If the
+ * &quot;name&quot; parameter is not NULL, it is included in the error message
+ * (otherwise, the hex object ID is given).
+ */</doc>
+<use f='codebrowser/builtin/grep.c' l='443' u='c' c='grep_submodule'/>
+<use f='codebrowser/builtin/grep.c' l='993' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/prune.c' l='130' u='c' c='cmd_prune'/>
+<use f='codebrowser/bundle.c' l='293' u='c' c='compute_and_write_prerequisites'/>
+<use f='codebrowser/bundle.c' l='299' u='c' c='compute_and_write_prerequisites'/>
+<use f='codebrowser/bundle.c' l='384' u='c' c='write_bundle_refs'/>
+<def f='codebrowser/object.c' l='232' ll='240' type='struct object * parse_object_or_die(const struct object_id * oid, const char * name)'/>
+<use f='codebrowser/pack-bitmap.c' l='676' u='c' c='prepare_bitmap_walk'/>
+<use f='codebrowser/pack-bitmap.c' l='688' u='c' c='prepare_bitmap_walk'/>
+<use f='codebrowser/reachable.c' l='36' u='c' c='add_one_ref'/>
+<use f='codebrowser/reachable.c' l='85' u='c' c='add_recent_object'/>

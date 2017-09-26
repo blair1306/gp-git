@@ -1,0 +1,17 @@
+<dec f='codebrowser/parse-options.h' l='182'/>
+<use f='codebrowser/builtin/revert.c' l='71' u='c'/>
+<use f='codebrowser/parse-options-cb.c' l='21' u='c'/>
+<use f='codebrowser/parse-options-cb.c' l='53' u='c'/>
+<use f='codebrowser/parse-options.c' l='35' u='c'/>
+<use f='codebrowser/parse-options.c' l='72' u='c'/>
+<use f='codebrowser/parse-options.c' l='76' u='c'/>
+<use f='codebrowser/parse-options.c' l='89' u='c'/>
+<use f='codebrowser/parse-options.c' l='91' u='c'/>
+<use f='codebrowser/parse-options.c' l='93' u='c'/>
+<use f='codebrowser/parse-options.c' l='179' u='c'/>
+<use f='codebrowser/parse-options.c' l='194' u='c'/>
+<use f='codebrowser/parse-options.c' l='260' u='c'/>
+<use f='codebrowser/parse-options.c' l='671' u='w'/>
+<use f='codebrowser/ref-filter.c' l='2185' u='c'/>
+<use f='codebrowser/ref-filter.c' l='2187' u='c'/>
+<use f='codebrowser/ref-filter.c' l='2200' u='c'/>

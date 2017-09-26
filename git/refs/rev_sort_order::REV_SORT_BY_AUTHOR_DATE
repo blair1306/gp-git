@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='228' type='2'/>
+<use f='codebrowser/commit.c' l='671' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='683' u='r' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='755' u='r' c='sort_in_topological_order'/>
+<use f='codebrowser/revision.c' l='1784' u='r' c='handle_revision_opt'/>

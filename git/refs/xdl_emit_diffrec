@@ -1,0 +1,3 @@
+<dec f='codebrowser/xdiff/xutils.h' l='29' type='int xdl_emit_diffrec(const char * rec, long size, const char * pre, long psize, xdemitcb_t * ecb)'/>
+<use f='codebrowser/xdiff/xemit.c' l='38' u='c' c='xdl_emit_record'/>
+<def f='codebrowser/xdiff/xutils.c' l='43' ll='63' type='int xdl_emit_diffrec(const char * rec, long size, const char * pre, long psize, xdemitcb_t * ecb)'/>

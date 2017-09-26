@@ -1,0 +1,6 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='29' type='const unsigned long *'/>
+<offset>64</offset>
+<use f='codebrowser/xdiff/xdiffi.c' l='271' u='r' c='xdl_recs_cmp'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='271' u='r' c='xdl_recs_cmp'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='364' u='w' c='xdl_do_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='368' u='w' c='xdl_do_diff'/>

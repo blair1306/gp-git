@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='210' type='int cmd_repack(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/repack.c' l='133' ll='439' type='int cmd_repack(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='451'/>
+<use f='codebrowser/git.c' l='451'/>
+<use f='codebrowser/git.c' l='451'/>
+<use f='codebrowser/git.c' l='451'/>

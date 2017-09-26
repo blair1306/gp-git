@@ -1,0 +1,7 @@
+<dec f='codebrowser/pack.h' l='39' type='unsigned int'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/index-pack.c' l='1755' u='w' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/index-pack.c' l='1758' u='w' c='cmd_index_pack'/>
+<use f='codebrowser/pack-write.c' l='69' u='r' c='write_idx_file'/>
+<use f='codebrowser/pack-write.c' l='126' u='r' c='write_idx_file'/>
+<use f='codebrowser/pack-write.c' l='173' u='r' c='write_idx_file'/>

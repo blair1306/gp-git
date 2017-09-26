@@ -1,0 +1,72 @@
+<dec f='codebrowser/dir.h' l='123' type='char []'/>
+<offset>712</offset>
+<use f='codebrowser/dir.c' l='692' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='692' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='693' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='705' u='r' c='lookup_untracked'/>
+<use f='codebrowser/dir.c' l='1626' u='r' c='treat_path_fast'/>
+<use f='codebrowser/dir.c' l='2467' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2467' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2612' u='r' c='read_one_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='15' u='r' c='compare_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='24' c='dump'/>

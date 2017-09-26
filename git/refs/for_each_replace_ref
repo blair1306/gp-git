@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='297' type='int for_each_replace_ref(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/builtin/replace.c' l='86' u='c' c='list_replace_refs'/>
+<def f='codebrowser/refs.c' l='1374' ll='1380' type='int for_each_replace_ref(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/replace_object.c' l='87' u='c' c='prepare_replace_object'/>

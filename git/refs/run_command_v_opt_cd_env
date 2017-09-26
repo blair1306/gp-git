@@ -1,0 +1,9 @@
+<dec f='codebrowser/run-command.h' l='83' type='int run_command_v_opt_cd_env(const char ** argv, int opt, const char * dir, const char *const * env)'/>
+<doc f='codebrowser/run-command.h' l='79'>/*
+ * env (the environment) is to be formatted like environ: &quot;VAR=VALUE&quot;.
+ * To unset an environment variable use just &quot;VAR&quot;.
+ */</doc>
+<use f='codebrowser/builtin/difftool.c' l='685' u='c' c='run_file_diff'/>
+<use f='codebrowser/diff.c' l='3092' u='c' c='run_external_diff'/>
+<use f='codebrowser/run-command.c' l='893' u='c' c='run_command_v_opt'/>
+<def f='codebrowser/run-command.c' l='896' ll='909' type='int run_command_v_opt_cd_env(const char ** argv, int opt, const char * dir, const char *const * env)'/>

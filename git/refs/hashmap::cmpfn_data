@@ -1,0 +1,4 @@
+<dec f='codebrowser/hashmap.h' l='183' type='const void *'/>
+<offset>128</offset>
+<use f='codebrowser/hashmap.c' l='100' u='r' c='entry_equals'/>
+<use f='codebrowser/hashmap.c' l='161' u='w' c='hashmap_init'/>

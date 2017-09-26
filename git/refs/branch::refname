@@ -1,0 +1,55 @@
+<dec f='codebrowser/remote.h' l='210' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/branch.c' l='729' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='781' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='997' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='1000' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/push.c' l='194' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='194' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='198' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='208' u='r' c='setup_push_current'/>
+<use f='codebrowser/builtin/push.c' l='208' u='r' c='setup_push_current'/>
+<use f='codebrowser/remote.c' l='212' u='w' c='make_branch'/>
+<use f='codebrowser/remote.c' l='1692' u='r' c='branch_get_upstream'/>
+<use f='codebrowser/remote.c' l='1737' u='r' c='branch_get_push_1'/>
+<use f='codebrowser/remote.c' l='1749' u='r' c='branch_get_push_1'/>
+<use f='codebrowser/remote.c' l='1757' u='r' c='branch_get_push_1'/>
+<use f='codebrowser/remote.c' l='1770' u='r' c='branch_get_push_1'/>
+<use f='codebrowser/remote.c' l='2015' u='r' c='stat_tracking_info'/>

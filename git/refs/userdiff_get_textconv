@@ -1,0 +1,9 @@
+<dec f='codebrowser/userdiff.h' l='30' type='struct userdiff_driver * userdiff_get_textconv(struct userdiff_driver * driver)'/>
+<doc f='codebrowser/userdiff.h' l='26'>/*
+ * Initialize any textconv-related fields in the driver and return it, or NULL
+ * if it does not have textconv enabled at all.
+ */</doc>
+<use f='codebrowser/combine-diff.c' l='991' u='c' c='show_patch_diff'/>
+<use f='codebrowser/diff.c' l='2329' u='c' c='get_textconv'/>
+<use f='codebrowser/grep.c' l='1678' u='c' c='grep_source_1'/>
+<def f='codebrowser/userdiff.c' l='284' ll='299' type='struct userdiff_driver * userdiff_get_textconv(struct userdiff_driver * driver)'/>

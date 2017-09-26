@@ -1,0 +1,5 @@
+<dec f='codebrowser/revision.h' l='174' type='const char *'/>
+<offset>2368</offset>
+<use f='codebrowser/builtin/log.c' l='1571' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='356' u='r' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='541' u='r' c='show_log'/>

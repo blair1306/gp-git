@@ -1,0 +1,8 @@
+<dec f='codebrowser/merge-recursive.h' l='28' type='struct string_list'/>
+<offset>896</offset>
+<use f='codebrowser/merge-recursive.c' l='325' u='a' c='save_files_dirs'/>
+<use f='codebrowser/merge-recursive.c' l='338' u='m' c='get_files_dirs'/>
+<use f='codebrowser/merge-recursive.c' l='657' u='a' c='unique_path'/>
+<use f='codebrowser/merge-recursive.c' l='664' u='a' c='unique_path'/>
+<use f='codebrowser/merge-recursive.c' l='1948' u='a' c='merge_trees'/>
+<use f='codebrowser/merge-recursive.c' l='2180' u='a' c='init_merge_options'/>

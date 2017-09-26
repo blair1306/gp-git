@@ -1,0 +1,7 @@
+<dec f='codebrowser/diff.h' l='48'/>
+<use f='codebrowser/builtin/commit.c' l='1478' u='c'/>
+<use f='codebrowser/diff.c' l='3452' u='c'/>
+<use f='codebrowser/diff.c' l='3464' u='c'/>
+<use f='codebrowser/diff.c' l='3805' u='c'/>
+<use f='codebrowser/diff.c' l='4758' u='c'/>
+<use f='codebrowser/diff.c' l='4772' u='c'/>

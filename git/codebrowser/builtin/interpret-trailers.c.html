@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>interpret-trailers.c source code [codebrowser/builtin/interpret-trailers.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/builtin/interpret-trailers.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>builtin</a>/<a href='interpret-trailers.c.html'>interpret-trailers.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Builtin "git interpret-trailers"</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (c) 2013, 2014 Christian Couder &lt;chriscool@tuxfamily.org&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> */</i></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="../builtin.h.html">"builtin.h"</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="../parse-options.h.html">"parse-options.h"</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="../string-list.h.html">"string-list.h"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="../trailer.h.html">"trailer.h"</a></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><em>static</em> <em>const</em> <em>char</em> * <em>const</em> <dfn class="tu decl def" id="git_interpret_trailers_usage" title='git_interpret_trailers_usage' data-type='const char *const [2]' data-ref="git_interpret_trailers_usage">git_interpret_trailers_usage</dfn>[] = {</td></tr>
+<tr><th id="15">15</th><td>	<a class="macro" href="../gettext.h.html#89" title="(&quot;git interpret-trailers [--in-place] [--trim-empty] [(--trailer &lt;token&gt;[(=|:)&lt;value&gt;])...] [&lt;file&gt;...]&quot;)" data-ref="_M/N_">N_</a>(<q>"git interpret-trailers [--in-place] [--trim-empty] [(--trailer &lt;token&gt;[(=|:)&lt;value&gt;])...] [&lt;file&gt;...]"</q>),</td></tr>
+<tr><th id="16">16</th><td>	<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span></td></tr>
+<tr><th id="17">17</th><td>};</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><em>int</em> <dfn class="decl def" id="cmd_interpret_trailers" title='cmd_interpret_trailers' data-ref="cmd_interpret_trailers">cmd_interpret_trailers</dfn>(<em>int</em> <dfn class="local col8 decl" id="8argc" title='argc' data-type='int' data-ref="8argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col9 decl" id="9argv" title='argv' data-type='const char **' data-ref="9argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10prefix" title='prefix' data-type='const char *' data-ref="10prefix">prefix</dfn>)</td></tr>
+<tr><th id="20">20</th><td>{</td></tr>
+<tr><th id="21">21</th><td>	<em>int</em> <dfn class="local col1 decl" id="11in_place" title='in_place' data-type='int' data-ref="11in_place">in_place</dfn> = <var>0</var>;</td></tr>
+<tr><th id="22">22</th><td>	<em>int</em> <dfn class="local col2 decl" id="12trim_empty" title='trim_empty' data-type='int' data-ref="12trim_empty">trim_empty</dfn> = <var>0</var>;</td></tr>
+<tr><th id="23">23</th><td>	<b>struct</b> <a class="type" href="../string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> <dfn class="local col3 decl" id="13trailers" title='trailers' data-type='struct string_list' data-ref="13trailers">trailers</dfn> = <a class="macro" href="../string-list.h.html#18" title="{ ((void*)0), 0, 0, 0, ((void*)0) }" data-ref="_M/STRING_LIST_INIT_NODUP">STRING_LIST_INIT_NODUP</a>;</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td>	<b>struct</b> <a class="type" href="../parse-options.h.html#option" title='option' data-ref="option">option</a> <dfn class="local col4 decl" id="14options" title='options' data-type='struct option [4]' data-ref="14options">options</dfn>[] = {</td></tr>
+<tr><th id="26">26</th><td>		<a class="macro" href="../parse-options.h.html#127" title="{ OPTION_SET_INT, (0), (&quot;in-place&quot;), (&amp;in_place), ((void*)0), ((&quot;edit files in place&quot;)), PARSE_OPT_NOARG, ((void*)0), (1) }" data-ref="_M/OPT_BOOL">OPT_BOOL</a>(<var>0</var>, <q>"in-place"</q>, &amp;<a class="local col1 ref" href="#11in_place" title='in_place' data-ref="11in_place">in_place</a>, <a class="macro" href="../gettext.h.html#89" title="(&quot;edit files in place&quot;)" data-ref="_M/N_">N_</a>(<q>"edit files in place"</q>)),</td></tr>
+<tr><th id="27">27</th><td>		<a class="macro" href="../parse-options.h.html#127" title="{ OPTION_SET_INT, (0), (&quot;trim-empty&quot;), (&amp;trim_empty), ((void*)0), ((&quot;trim empty trailers&quot;)), PARSE_OPT_NOARG, ((void*)0), (1) }" data-ref="_M/OPT_BOOL">OPT_BOOL</a>(<var>0</var>, <q>"trim-empty"</q>, &amp;<a class="local col2 ref" href="#12trim_empty" title='trim_empty' data-ref="12trim_empty">trim_empty</a>, <a class="macro" href="../gettext.h.html#89" title="(&quot;trim empty trailers&quot;)" data-ref="_M/N_">N_</a>(<q>"trim empty trailers"</q>)),</td></tr>
+<tr><th id="28">28</th><td>		<a class="macro" href="../parse-options.h.html#136" title="{ OPTION_CALLBACK, (0), (&quot;trailer&quot;), (&amp;trailers), ((&quot;trailer&quot;)), ((&quot;trailer(s) to add&quot;)), 0, &amp;parse_opt_string_list }" data-ref="_M/OPT_STRING_LIST">OPT_STRING_LIST</a>(<var>0</var>, <q>"trailer"</q>, &amp;<a class="local col3 ref" href="#13trailers" title='trailers' data-ref="13trailers">trailers</a>, <a class="macro" href="../gettext.h.html#89" title="(&quot;trailer&quot;)" data-ref="_M/N_">N_</a>(<q>"trailer"</q>),</td></tr>
+<tr><th id="29">29</th><td>				<a class="macro" href="../gettext.h.html#89" title="(&quot;trailer(s) to add&quot;)" data-ref="_M/N_">N_</a>(<q>"trailer(s) to add"</q>)),</td></tr>
+<tr><th id="30">30</th><td>		<a class="macro" href="../parse-options.h.html#115" title="{ OPTION_END }" data-ref="_M/OPT_END">OPT_END</a>()</td></tr>
+<tr><th id="31">31</th><td>	};</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>	<a class="local col8 ref" href="#8argc" title='argc' data-ref="8argc">argc</a> = <a class="ref" href="../parse-options.h.html#parse_options" title='parse_options' data-ref="parse_options">parse_options</a>(<a class="local col8 ref" href="#8argc" title='argc' data-ref="8argc">argc</a>, <a class="local col9 ref" href="#9argv" title='argv' data-ref="9argv">argv</a>, <a class="local col0 ref" href="#10prefix" title='prefix' data-ref="10prefix">prefix</a>, <a class="local col4 ref" href="#14options" title='options' data-ref="14options">options</a>,</td></tr>
+<tr><th id="34">34</th><td>			     <a class="tu ref" href="#git_interpret_trailers_usage" title='git_interpret_trailers_usage' data-use='r' data-ref="git_interpret_trailers_usage">git_interpret_trailers_usage</a>, <var>0</var>);</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>	<b>if</b> (<a class="local col8 ref" href="#8argc" title='argc' data-ref="8argc">argc</a>) {</td></tr>
+<tr><th id="37">37</th><td>		<em>int</em> <dfn class="local col5 decl" id="15i" title='i' data-type='int' data-ref="15i">i</dfn>;</td></tr>
+<tr><th id="38">38</th><td>		<b>for</b> (<a class="local col5 ref" href="#15i" title='i' data-ref="15i">i</a> = <var>0</var>; <a class="local col5 ref" href="#15i" title='i' data-ref="15i">i</a> &lt; <a class="local col8 ref" href="#8argc" title='argc' data-ref="8argc">argc</a>; <a class="local col5 ref" href="#15i" title='i' data-ref="15i">i</a>++)</td></tr>
+<tr><th id="39">39</th><td>			<a class="ref" href="../trailer.h.html#process_trailers" title='process_trailers' data-ref="process_trailers">process_trailers</a>(<a class="local col9 ref" href="#9argv" title='argv' data-ref="9argv">argv</a>[<a class="local col5 ref" href="#15i" title='i' data-ref="15i">i</a>], <a class="local col1 ref" href="#11in_place" title='in_place' data-ref="11in_place">in_place</a>, <a class="local col2 ref" href="#12trim_empty" title='trim_empty' data-ref="12trim_empty">trim_empty</a>, &amp;<a class="local col3 ref" href="#13trailers" title='trailers' data-ref="13trailers">trailers</a>);</td></tr>
+<tr><th id="40">40</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="41">41</th><td>		<b>if</b> (<a class="local col1 ref" href="#11in_place" title='in_place' data-ref="11in_place">in_place</a>)</td></tr>
+<tr><th id="42">42</th><td>			<a class="ref" href="../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<a class="ref" href="../gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"no input file given for in-place editing"</q>));</td></tr>
+<tr><th id="43">43</th><td>		<a class="ref" href="../trailer.h.html#process_trailers" title='process_trailers' data-ref="process_trailers">process_trailers</a>(<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <a class="local col1 ref" href="#11in_place" title='in_place' data-ref="11in_place">in_place</a>, <a class="local col2 ref" href="#12trim_empty" title='trim_empty' data-ref="12trim_empty">trim_empty</a>, &amp;<a class="local col3 ref" href="#13trailers" title='trailers' data-ref="13trailers">trailers</a>);</td></tr>
+<tr><th id="44">44</th><td>	}</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td>	<a class="ref" href="../string-list.h.html#string_list_clear" title='string_list_clear' data-ref="string_list_clear">string_list_clear</a>(&amp;<a class="local col3 ref" href="#13trailers" title='trailers' data-ref="13trailers">trailers</a>, <var>0</var>);</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="49">49</th><td>}</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

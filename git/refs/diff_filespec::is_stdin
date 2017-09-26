@@ -1,0 +1,4 @@
+<dec f='codebrowser/diffcore.h' l='46' type='unsigned int'/>
+<offset>533</offset>
+<use f='codebrowser/diff-no-index.c' l='74' u='w' c='populate_from_stdin'/>
+<use f='codebrowser/diff.c' l='3238' u='r' c='diff_fill_oid_info'/>

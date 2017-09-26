@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='860' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/setup.c' l='431' u='w' c='check_repo_format'/>
+<use f='codebrowser/setup.c' l='473' u='r' c='check_repository_format_gently'/>
+<use f='codebrowser/setup.c' l='474' u='r' c='check_repository_format_gently'/>
+<use f='codebrowser/setup.c' l='494' u='w' c='read_repository_format'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/revision.h' l='116' type='unsigned int'/>
+<offset>958</offset>
+<use f='codebrowser/revision.c' l='2039' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2364' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2374' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='3114' u='r' c='track_linear'/>
+<use f='codebrowser/revision.c' l='3322' u='r' c='get_revision'/>
+<use f='codebrowser/revision.c' l='3327' u='w' c='get_revision'/>
+<use f='codebrowser/sequencer.c' l='1164' u='w' c='prepare_revs'/>

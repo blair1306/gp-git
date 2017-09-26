@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>cache-tree.h source code [codebrowser/cache-tree.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="cache_tree,cache_tree_sub "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/cache-tree.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='cache-tree.h.html'>cache-tree.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/CACHE_TREE_H">CACHE_TREE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/CACHE_TREE_H" data-ref="_M/CACHE_TREE_H">CACHE_TREE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="tree.h.html">"tree.h"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="tree-walk.h.html">"tree-walk.h"</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>struct</b> <a class="type" href="#cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</a>;</td></tr>
+<tr><th id="9">9</th><td><b>struct</b> <dfn class="type def" id="cache_tree_sub" title='cache_tree_sub' data-ref="cache_tree_sub">cache_tree_sub</dfn> {</td></tr>
+<tr><th id="10">10</th><td>	<b>struct</b> <a class="type" href="#cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</a> *<dfn class="decl" id="cache_tree_sub::cache_tree" title='cache_tree_sub::cache_tree' data-ref="cache_tree_sub::cache_tree">cache_tree</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	<em>int</em> <dfn class="decl" id="cache_tree_sub::count" title='cache_tree_sub::count' data-ref="cache_tree_sub::count">count</dfn>;		<i>/* internally used by update_one() */</i></td></tr>
+<tr><th id="12">12</th><td>	<em>int</em> <dfn class="decl" id="cache_tree_sub::namelen" title='cache_tree_sub::namelen' data-ref="cache_tree_sub::namelen">namelen</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<em>int</em> <dfn class="decl" id="cache_tree_sub::used" title='cache_tree_sub::used' data-ref="cache_tree_sub::used">used</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>char</em> <dfn class="decl" id="cache_tree_sub::name" title='cache_tree_sub::name' data-ref="cache_tree_sub::name">name</dfn>[<a class="macro" href="git-compat-util.h.html#28" title="" data-ref="_M/FLEX_ARRAY">FLEX_ARRAY</a>];</td></tr>
+<tr><th id="15">15</th><td>};</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><b>struct</b> <dfn class="type def" id="cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</dfn> {</td></tr>
+<tr><th id="18">18</th><td>	<em>int</em> <dfn class="decl" id="cache_tree::entry_count" title='cache_tree::entry_count' data-ref="cache_tree::entry_count">entry_count</dfn>; <i>/* negative means "invalid" */</i></td></tr>
+<tr><th id="19">19</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="cache_tree::oid" title='cache_tree::oid' data-ref="cache_tree::oid">oid</dfn>;</td></tr>
+<tr><th id="20">20</th><td>	<em>int</em> <dfn class="decl" id="cache_tree::subtree_nr" title='cache_tree::subtree_nr' data-ref="cache_tree::subtree_nr">subtree_nr</dfn>;</td></tr>
+<tr><th id="21">21</th><td>	<em>int</em> <dfn class="decl" id="cache_tree::subtree_alloc" title='cache_tree::subtree_alloc' data-ref="cache_tree::subtree_alloc">subtree_alloc</dfn>;</td></tr>
+<tr><th id="22">22</th><td>	<b>struct</b> <a class="type" href="#cache_tree_sub" title='cache_tree_sub' data-ref="cache_tree_sub">cache_tree_sub</a> **<dfn class="decl" id="cache_tree::down" title='cache_tree::down' data-ref="cache_tree::down">down</dfn>;</td></tr>
+<tr><th id="23">23</th><td>};</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><b>struct</b> <a class="type" href="#cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</a> *<dfn class="decl" id="cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</dfn>(<em>void</em>);</td></tr>
+<tr><th id="26">26</th><td><em>void</em> <dfn class="decl" id="cache_tree_free" title='cache_tree_free' data-ref="cache_tree_free">cache_tree_free</dfn>(<b>struct</b> <a class="type" href="#cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</a> **);</td></tr>
+<tr><th id="27">27</th><td><em>void</em> <dfn class="decl" id="cache_tree_invalidate_path" title='cache_tree_invalidate_path' data-ref="cache_tree_invalidate_path">cache_tree_invalidate_path</dfn>(<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="28">28</th><td><b>struct</b> <a class="type" href="#cache_tree_sub" title='cache_tree_sub' data-ref="cache_tree_sub">cache_tree_sub</a> *<dfn class="decl" id="cache_tree_sub" title='cache_tree_sub' data-ref="cache_tree_sub">cache_tree_sub</dfn>(<b>struct</b> <a class="type" href="#cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</a> *, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><em>void</em> <dfn class="decl" id="cache_tree_write" title='cache_tree_write' data-ref="cache_tree_write">cache_tree_write</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *, <b>struct</b> <a class="type" href="#cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</a> *<dfn class="local col1 decl" id="1root" title='root' data-type='struct cache_tree *' data-ref="1root">root</dfn>);</td></tr>
+<tr><th id="31">31</th><td><b>struct</b> <a class="type" href="#cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</a> *<dfn class="decl" id="cache_tree_read" title='cache_tree_read' data-ref="cache_tree_read">cache_tree_read</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2buffer" title='buffer' data-type='const char *' data-ref="2buffer">buffer</dfn>, <em>unsigned</em> <em>long</em> <dfn class="local col3 decl" id="3size" title='size' data-type='unsigned long' data-ref="3size">size</dfn>);</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><em>int</em> <dfn class="decl" id="cache_tree_fully_valid" title='cache_tree_fully_valid' data-ref="cache_tree_fully_valid">cache_tree_fully_valid</dfn>(<b>struct</b> <a class="type" href="#cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</a> *);</td></tr>
+<tr><th id="34">34</th><td><em>int</em> <dfn class="decl" id="cache_tree_update" title='cache_tree_update' data-ref="cache_tree_update">cache_tree_update</dfn>(<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *, <em>int</em>);</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><em>int</em> <dfn class="decl" id="update_main_cache_tree" title='update_main_cache_tree' data-ref="update_main_cache_tree">update_main_cache_tree</dfn>(<em>int</em>);</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><i>/* bitmasks to write_cache_as_tree flags */</i></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/WRITE_TREE_MISSING_OK" data-ref="_M/WRITE_TREE_MISSING_OK">WRITE_TREE_MISSING_OK</dfn> 1</u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/WRITE_TREE_IGNORE_CACHE_TREE" data-ref="_M/WRITE_TREE_IGNORE_CACHE_TREE">WRITE_TREE_IGNORE_CACHE_TREE</dfn> 2</u></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/WRITE_TREE_DRY_RUN" data-ref="_M/WRITE_TREE_DRY_RUN">WRITE_TREE_DRY_RUN</dfn> 4</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/WRITE_TREE_SILENT" data-ref="_M/WRITE_TREE_SILENT">WRITE_TREE_SILENT</dfn> 8</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/WRITE_TREE_REPAIR" data-ref="_M/WRITE_TREE_REPAIR">WRITE_TREE_REPAIR</dfn> 16</u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i>/* error return codes */</i></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/WRITE_TREE_UNREADABLE_INDEX" data-ref="_M/WRITE_TREE_UNREADABLE_INDEX">WRITE_TREE_UNREADABLE_INDEX</dfn> (-1)</u></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/WRITE_TREE_UNMERGED_INDEX" data-ref="_M/WRITE_TREE_UNMERGED_INDEX">WRITE_TREE_UNMERGED_INDEX</dfn> (-2)</u></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/WRITE_TREE_PREFIX_ERROR" data-ref="_M/WRITE_TREE_PREFIX_ERROR">WRITE_TREE_PREFIX_ERROR</dfn> (-3)</u></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><em>int</em> <dfn class="decl" id="write_index_as_tree" title='write_index_as_tree' data-ref="write_index_as_tree">write_index_as_tree</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="4sha1" title='sha1' data-type='unsigned char *' data-ref="4sha1">sha1</dfn>, <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col5 decl" id="5index_state" title='index_state' data-type='struct index_state *' data-ref="5index_state">index_state</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="6index_path" title='index_path' data-type='const char *' data-ref="6index_path">index_path</dfn>, <em>int</em> <dfn class="local col7 decl" id="7flags" title='flags' data-type='int' data-ref="7flags">flags</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8prefix" title='prefix' data-type='const char *' data-ref="8prefix">prefix</dfn>);</td></tr>
+<tr><th id="51">51</th><td><em>int</em> <dfn class="decl" id="write_cache_as_tree" title='write_cache_as_tree' data-ref="write_cache_as_tree">write_cache_as_tree</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="9sha1" title='sha1' data-type='unsigned char *' data-ref="9sha1">sha1</dfn>, <em>int</em> <dfn class="local col0 decl" id="10flags" title='flags' data-type='int' data-ref="10flags">flags</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="11prefix" title='prefix' data-type='const char *' data-ref="11prefix">prefix</dfn>);</td></tr>
+<tr><th id="52">52</th><td><em>void</em> <dfn class="decl" id="prime_cache_tree" title='prime_cache_tree' data-ref="prime_cache_tree">prime_cache_tree</dfn>(<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *, <b>struct</b> <a class="type" href="tree.h.html#tree" title='tree' data-ref="tree">tree</a> *);</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="cache_tree_matches_traversal" title='cache_tree_matches_traversal' data-ref="cache_tree_matches_traversal">cache_tree_matches_traversal</dfn>(<b>struct</b> <a class="type" href="#cache_tree" title='cache_tree' data-ref="cache_tree">cache_tree</a> *, <b>struct</b> <a class="type" href="tree-walk.h.html#name_entry" title='name_entry' data-ref="name_entry">name_entry</a> *<dfn class="local col2 decl" id="12ent" title='ent' data-type='struct name_entry *' data-ref="12ent">ent</dfn>, <b>struct</b> <a class="type" href="tree-walk.h.html#traverse_info" title='traverse_info' data-ref="traverse_info">traverse_info</a> *<dfn class="local col3 decl" id="13info" title='info' data-type='struct traverse_info *' data-ref="13info">info</dfn>);</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="57">57</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='blame.c.html'>codebrowser/blame.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

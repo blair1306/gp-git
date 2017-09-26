@@ -1,0 +1,4 @@
+<dec f='codebrowser/walker.h' l='26' type='int walker_targets_stdin(char *** target, const char *** write_ref)'/>
+<use f='codebrowser/http-fetch.c' l='52' u='c' c='cmd_main'/>
+<doc f='codebrowser/walker.h' l='25'>/* Load pull targets from stdin */</doc>
+<def f='codebrowser/walker.c' l='218' ll='245' type='int walker_targets_stdin(char *** target, const char *** write_ref)'/>

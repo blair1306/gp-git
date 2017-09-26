@@ -1,0 +1,14 @@
+<dec f='codebrowser/run-command.h' l='129' type='int (*)(int, int, void *)'/>
+<offset>0</offset>
+<doc f='codebrowser/run-command.h' l='124'>/*
+	 * proc reads from in; closes it before return
+	 * proc writes to out; closes it before return
+	 * returns 0 on success, non-zero on failure
+	 */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='721' u='w' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1474' u='w' c='execute_commands'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1795' u='w' c='unpack_with_sideband'/>
+<use f='codebrowser/convert.c' l='472' u='w' c='apply_single_file_filter'/>
+<use f='codebrowser/fetch-pack.c' l='808' u='w' c='get_pack'/>
+<use f='codebrowser/run-command.c' l='933' u='r' c='run_thread'/>
+<use f='codebrowser/send-pack.c' l='558' u='w' c='send_pack'/>

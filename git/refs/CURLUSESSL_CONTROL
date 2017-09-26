@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='725' type='2'/>
+<doc f='include/curl/curl.h' l='725'>/* SSL for the control connection or fail */</doc>

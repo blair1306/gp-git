@@ -1,0 +1,13 @@
+<def f='codebrowser/cache.h' l='977' ll='980' type='void hashclr(unsigned char * hash)'/>
+<use f='codebrowser/cache.h' l='984' u='c' c='oidclr'/>
+<use f='codebrowser/builtin/receive-pack.c' l='635' u='c' c='prepare_push_cert_sha1'/>
+<use f='codebrowser/dir.c' l='1155' u='c' c='prep_exclude'/>
+<use f='codebrowser/read-cache.c' l='2424' u='c' c='write_shared_index'/>
+<use f='codebrowser/read-cache.c' l='2490' u='c' c='write_locked_index'/>
+<use f='codebrowser/refs.c' l='1452' u='c' c='refs_resolve_ref_unsafe'/>
+<use f='codebrowser/refs.c' l='1462' u='c' c='refs_resolve_ref_unsafe'/>
+<use f='codebrowser/refs.c' l='1470' u='c' c='refs_resolve_ref_unsafe'/>
+<use f='codebrowser/sha1_file.c' l='1359' u='c' c='add_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='2445' u='c' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2913' u='c' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2996' u='c' c='sha1_object_info_extended'/>

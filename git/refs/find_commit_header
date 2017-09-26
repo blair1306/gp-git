@@ -1,0 +1,14 @@
+<dec f='codebrowser/commit.h' l='351' type='const char * find_commit_header(const char * msg, const char * key, size_t * out_len)'/>
+<doc f='codebrowser/commit.h' l='343'>/*
+ * Search the commit object contents given by &quot;msg&quot; for the header &quot;key&quot;.
+ * Returns a pointer to the start of the header contents, or NULL. The length
+ * of the header, up to the first newline, is returned via out_len.
+ *
+ * Note that some headers (like mergetag) may be multi-line. It is the caller&apos;s
+ * responsibility to parse further in this case!
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='1355' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/commit.c' l='581' u='c' c='determine_author_info'/>
+<use f='codebrowser/commit.c' l='602' u='c' c='record_author_date'/>
+<def f='codebrowser/commit.c' l='1625' ll='1645' type='const char * find_commit_header(const char * msg, const char * key, size_t * out_len)'/>
+<use f='codebrowser/pretty.c' l='563' u='c' c='get_header'/>

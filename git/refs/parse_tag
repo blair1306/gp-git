@@ -1,0 +1,9 @@
+<dec f='codebrowser/tag.h' l='17' type='int parse_tag(struct tag * item)'/>
+<use f='codebrowser/builtin/describe.c' l='89' u='c' c='replace_name'/>
+<use f='codebrowser/builtin/describe.c' l='95' u='c' c='replace_name'/>
+<use f='codebrowser/builtin/describe.c' l='255' u='c' c='display_name'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2349' u='c' c='add_tag_chain'/>
+<use f='codebrowser/fsck.c' l='451' u='c' c='fsck_walk_tag'/>
+<use f='codebrowser/sha1_name.c' l='375' u='c' c='show_ambiguous_object'/>
+<def f='codebrowser/tag.c' l='176' ll='197' type='int parse_tag(struct tag * item)'/>
+<use f='codebrowser/walker.c' l='107' u='c' c='process_tag'/>

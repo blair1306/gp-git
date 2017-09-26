@@ -1,0 +1,28 @@
+<dec f='codebrowser/refs.h' l='629' type='void ref_transaction_free(struct ref_transaction * transaction)'/>
+<doc f='codebrowser/refs.h' l='626'>/*
+ * Free `*transaction` and all associated data.
+ */</doc>
+<use f='codebrowser/branch.c' l='313' u='c' c='create_branch'/>
+<use f='codebrowser/builtin/clone.c' l='599' u='c' c='write_remote_refs'/>
+<use f='codebrowser/builtin/commit.c' l='1793' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/fetch.c' l='470' u='c' c='s_update_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='475' u='c' c='s_update_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1407' u='c' c='execute_commands_non_atomic'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1450' u='c' c='execute_commands_atomic'/>
+<use f='codebrowser/builtin/replace.c' l='183' u='c' c='replace_object_oid'/>
+<use f='codebrowser/builtin/tag.c' l='551' u='c' c='cmd_tag'/>
+<use f='codebrowser/builtin/update-ref.c' l='394' u='c' c='cmd_update_ref'/>
+<use f='codebrowser/fast-import.c' l='1783' u='c' c='update_branch'/>
+<use f='codebrowser/fast-import.c' l='1788' u='c' c='update_branch'/>
+<use f='codebrowser/fast-import.c' l='1831' u='c' c='dump_tags'/>
+<use f='codebrowser/refs.c' l='677' u='c' c='refs_delete_ref'/>
+<use f='codebrowser/refs.c' l='681' u='c' c='refs_delete_ref'/>
+<def f='codebrowser/refs.c' l='868' ll='894' type='void ref_transaction_free(struct ref_transaction * transaction)'/>
+<use f='codebrowser/refs.c' l='1014' u='c' c='refs_update_ref'/>
+<use f='codebrowser/refs.c' l='1035' u='c' c='refs_update_ref'/>
+<use f='codebrowser/refs.c' l='1814' u='c' c='ref_transaction_abort'/>
+<use f='codebrowser/refs/files-backend.c' l='1047' u='c' c='prune_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1052' u='c' c='prune_ref'/>
+<use f='codebrowser/sequencer.c' l='398' u='c' c='fast_forward_to'/>
+<use f='codebrowser/sequencer.c' l='407' u='c' c='fast_forward_to'/>
+<use f='codebrowser/walker.c' l='322' u='c' c='walker_fetch'/>

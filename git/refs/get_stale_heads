@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='275' type='struct ref * get_stale_heads(struct refspec * refs, int ref_count, struct ref * fetch_map)'/>
+<doc f='codebrowser/remote.h' l='274'>/* Return refs which no longer exist on remote */</doc>
+<use f='codebrowser/builtin/fetch.c' l='938' u='c' c='prune_refs'/>
+<use f='codebrowser/builtin/remote.c' l='349' u='c' c='get_ref_states'/>
+<def f='codebrowser/remote.c' l='2238' ll='2254' type='struct ref * get_stale_heads(struct refspec * refs, int ref_count, struct ref * fetch_map)'/>

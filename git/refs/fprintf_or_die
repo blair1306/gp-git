@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1865' type='void fprintf_or_die(FILE * , const char * fmt)'/>
+<use f='codebrowser/sha1_file.c' l='511' u='c' c='add_to_alternates_file'/>
+<use f='codebrowser/sha1_file.c' l='526' u='c' c='add_to_alternates_file'/>
+<def f='codebrowser/write_or_die.c' l='43' ll='56' type='void fprintf_or_die(FILE * f, const char * fmt)'/>

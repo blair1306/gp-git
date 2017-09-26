@@ -1,0 +1,6 @@
+<dec f='codebrowser/transport.h' l='23' type='struct push_cas_option *'/>
+<offset>320</offset>
+<use f='codebrowser/builtin/push.c' l='331' u='w' c='push_with_options'/>
+<use f='codebrowser/transport.c' l='1010' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1011' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1012' u='r' c='transport_push'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1640' type='struct packed_git * find_sha1_pack(const unsigned char * sha1, struct packed_git * packs)'/>
+<use f='codebrowser/fast-import.c' l='1112' u='c' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1307' u='c' c='stream_blob'/>
+<use f='codebrowser/http-push.c' l='306' u='c' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='674' u='c' c='add_send_request'/>
+<use f='codebrowser/http-walker.c' l='428' u='c' c='http_fetch_pack'/>
+<def f='codebrowser/sha1_file.c' l='2887' ll='2898' type='struct packed_git * find_sha1_pack(const unsigned char * sha1, struct packed_git * packs)'/>

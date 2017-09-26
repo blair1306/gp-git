@@ -1,0 +1,5 @@
+<dec f='codebrowser/argv-array.h' l='21' type='void argv_array_pop(struct argv_array * )'/>
+<def f='codebrowser/argv-array.c' l='58' ll='65' type='void argv_array_pop(struct argv_array * array)'/>
+<use f='codebrowser/builtin/fetch.c' l='1262' u='c' c='fetch_multiple'/>
+<use f='codebrowser/builtin/remote.c' l='1387' u='c' c='update'/>
+<use f='codebrowser/submodule.c' l='1968' u='c' c='get_superproject_working_tree'/>

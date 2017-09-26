@@ -1,0 +1,11 @@
+<dec f='codebrowser/commit.h' l='290' type='uint32_t **'/>
+<offset>384</offset>
+<doc f='codebrowser/commit.h' l='289'>/* for receive-pack */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='884' u='r' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='885' u='r' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1811' u='w' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1811' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1812' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1824' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1827' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1831' u='r' c='prepare_shallow_update'/>

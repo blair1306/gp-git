@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>urlmatch.h source code [codebrowser/urlmatch.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="url_info,urlmatch_config,urlmatch_item "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/urlmatch.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='urlmatch.h.html'>urlmatch.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/URL_MATCH_H">URL_MATCH_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="string-list.h.html">"string-list.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="url_info" title='url_info' data-ref="url_info">url_info</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<i>/* normalized url on success, must be freed, otherwise NULL */</i></td></tr>
+<tr><th id="6">6</th><td>	<em>char</em> *<dfn class="decl" id="url_info::url" title='url_info::url' data-ref="url_info::url">url</dfn>;</td></tr>
+<tr><th id="7">7</th><td>	<i>/* if !url, a brief reason for the failure, otherwise NULL */</i></td></tr>
+<tr><th id="8">8</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="url_info::err" title='url_info::err' data-ref="url_info::err">err</dfn>;</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td>	<i>/* the rest of the fields are only set if url != NULL */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::url_len" title='url_info::url_len' data-ref="url_info::url_len">url_len</dfn>;		<i>/* total length of url (which is now normalized) */</i></td></tr>
+<tr><th id="13">13</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::scheme_len" title='url_info::scheme_len' data-ref="url_info::scheme_len">scheme_len</dfn>;	<i>/* length of scheme name (excluding final :) */</i></td></tr>
+<tr><th id="14">14</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::user_off" title='url_info::user_off' data-ref="url_info::user_off">user_off</dfn>;	<i>/* offset into url to start of user name (0 =&gt; none) */</i></td></tr>
+<tr><th id="15">15</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::user_len" title='url_info::user_len' data-ref="url_info::user_len">user_len</dfn>;	<i>/* length of user name; if user_off != 0 but</i></td></tr>
+<tr><th id="16">16</th><td><i>				   user_len == 0, an empty user name was given */</i></td></tr>
+<tr><th id="17">17</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::passwd_off" title='url_info::passwd_off' data-ref="url_info::passwd_off">passwd_off</dfn>;	<i>/* offset into url to start of passwd (0 =&gt; none) */</i></td></tr>
+<tr><th id="18">18</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::passwd_len" title='url_info::passwd_len' data-ref="url_info::passwd_len">passwd_len</dfn>;	<i>/* length of passwd; if passwd_off != 0 but</i></td></tr>
+<tr><th id="19">19</th><td><i>				   passwd_len == 0, an empty passwd was given */</i></td></tr>
+<tr><th id="20">20</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::host_off" title='url_info::host_off' data-ref="url_info::host_off">host_off</dfn>;	<i>/* offset into url to start of host name (0 =&gt; none) */</i></td></tr>
+<tr><th id="21">21</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::host_len" title='url_info::host_len' data-ref="url_info::host_len">host_len</dfn>;	<i>/* length of host name;</i></td></tr>
+<tr><th id="22">22</th><td><i>				 * file urls may have host_len == 0 */</i></td></tr>
+<tr><th id="23">23</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::port_off" title='url_info::port_off' data-ref="url_info::port_off">port_off</dfn>;	<i>/* offset into url to start of port number (0 =&gt; none) */</i></td></tr>
+<tr><th id="24">24</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::port_len" title='url_info::port_len' data-ref="url_info::port_len">port_len</dfn>;	<i>/* if a portnum is present (port_off != 0), it has</i></td></tr>
+<tr><th id="25">25</th><td><i>				 * this length (excluding the leading ':') starting</i></td></tr>
+<tr><th id="26">26</th><td><i>				 * from port_off (always 0 for file urls) */</i></td></tr>
+<tr><th id="27">27</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::path_off" title='url_info::path_off' data-ref="url_info::path_off">path_off</dfn>;	<i>/* offset into url to the start of the url path;</i></td></tr>
+<tr><th id="28">28</th><td><i>				 * this will always point to a '/' character</i></td></tr>
+<tr><th id="29">29</th><td><i>				 * after the url has been normalized */</i></td></tr>
+<tr><th id="30">30</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="url_info::path_len" title='url_info::path_len' data-ref="url_info::path_len">path_len</dfn>;	<i>/* length of path portion excluding any trailing</i></td></tr>
+<tr><th id="31">31</th><td><i>				 * '?...' and '#...' portion; will always be &gt;= 1 */</i></td></tr>
+<tr><th id="32">32</th><td>};</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="url_normalize" title='url_normalize' data-ref="url_normalize">url_normalize</dfn>(<em>const</em> <em>char</em> *, <b>struct</b> <a class="type" href="#url_info" title='url_info' data-ref="url_info">url_info</a> *);</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><b>struct</b> <dfn class="type def" id="urlmatch_item" title='urlmatch_item' data-ref="urlmatch_item">urlmatch_item</dfn> {</td></tr>
+<tr><th id="37">37</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="urlmatch_item::hostmatch_len" title='urlmatch_item::hostmatch_len' data-ref="urlmatch_item::hostmatch_len">hostmatch_len</dfn>;</td></tr>
+<tr><th id="38">38</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="urlmatch_item::pathmatch_len" title='urlmatch_item::pathmatch_len' data-ref="urlmatch_item::pathmatch_len">pathmatch_len</dfn>;</td></tr>
+<tr><th id="39">39</th><td>	<em>char</em> <dfn class="decl" id="urlmatch_item::user_matched" title='urlmatch_item::user_matched' data-ref="urlmatch_item::user_matched">user_matched</dfn>;</td></tr>
+<tr><th id="40">40</th><td>};</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><b>struct</b> <dfn class="type def" id="urlmatch_config" title='urlmatch_config' data-ref="urlmatch_config">urlmatch_config</dfn> {</td></tr>
+<tr><th id="43">43</th><td>	<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> <dfn class="decl" id="urlmatch_config::vars" title='urlmatch_config::vars' data-ref="urlmatch_config::vars">vars</dfn>;</td></tr>
+<tr><th id="44">44</th><td>	<b>struct</b> <a class="type" href="#url_info" title='url_info' data-ref="url_info">url_info</a> <dfn class="decl" id="urlmatch_config::url" title='urlmatch_config::url' data-ref="urlmatch_config::url">url</dfn>;</td></tr>
+<tr><th id="45">45</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="urlmatch_config::section" title='urlmatch_config::section' data-ref="urlmatch_config::section">section</dfn>;</td></tr>
+<tr><th id="46">46</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="urlmatch_config::key" title='urlmatch_config::key' data-ref="urlmatch_config::key">key</dfn>;</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>	<em>void</em> *<dfn class="decl" id="urlmatch_config::cb" title='urlmatch_config::cb' data-ref="urlmatch_config::cb">cb</dfn>;</td></tr>
+<tr><th id="49">49</th><td>	<em>int</em> (*<dfn class="decl" id="urlmatch_config::collect_fn" title='urlmatch_config::collect_fn' data-ref="urlmatch_config::collect_fn">collect_fn</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1var" title='var' data-type='const char *' data-ref="1var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2value" title='value' data-type='const char *' data-ref="2value">value</dfn>, <em>void</em> *<dfn class="local col3 decl" id="3cb" title='cb' data-type='void *' data-ref="3cb">cb</dfn>);</td></tr>
+<tr><th id="50">50</th><td>	<em>int</em> (*<dfn class="decl" id="urlmatch_config::cascade_fn" title='urlmatch_config::cascade_fn' data-ref="urlmatch_config::cascade_fn">cascade_fn</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="4var" title='var' data-type='const char *' data-ref="4var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5value" title='value' data-type='const char *' data-ref="5value">value</dfn>, <em>void</em> *<dfn class="local col6 decl" id="6cb" title='cb' data-type='void *' data-ref="6cb">cb</dfn>);</td></tr>
+<tr><th id="51">51</th><td>};</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="urlmatch_config_entry" title='urlmatch_config_entry' data-ref="urlmatch_config_entry">urlmatch_config_entry</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7var" title='var' data-type='const char *' data-ref="7var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8value" title='value' data-type='const char *' data-ref="8value">value</dfn>, <em>void</em> *<dfn class="local col9 decl" id="9cb" title='cb' data-type='void *' data-ref="9cb">cb</dfn>);</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#<span data-ppcond="1">endif</span> /* URL_MATCH_H */</u></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/config.c.html'>codebrowser/builtin/config.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

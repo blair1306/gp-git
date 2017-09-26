@@ -1,0 +1,15 @@
+<dec f='codebrowser/mailinfo.h' l='32' type='struct strbuf **'/>
+<offset>1856</offset>
+<use f='codebrowser/mailinfo.c' l='596' u='r' c='is_inbody_header'/>
+<use f='codebrowser/mailinfo.c' l='714' u='r' c='flush_inbody_header_accum'/>
+<use f='codebrowser/mailinfo.c' l='744' u='r' c='check_inbody_header'/>
+<use f='codebrowser/mailinfo.c' l='795' u='r' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='796' u='r' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='797' u='r' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='1056' u='r' c='handle_info'/>
+<use f='codebrowser/mailinfo.c' l='1057' u='r' c='handle_info'/>
+<use f='codebrowser/mailinfo.c' l='1101' u='w' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1101' u='r' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1167' u='r' c='clear_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1168' u='r' c='clear_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1169' u='r' c='clear_mailinfo'/>

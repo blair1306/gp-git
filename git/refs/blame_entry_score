@@ -1,0 +1,18 @@
+<dec f='codebrowser/blame.h' l='166' type='unsigned int blame_entry_score(struct blame_scoreboard * sb, struct blame_entry * e)'/>
+<def f='codebrowser/blame.c' l='979' ll='998' type='unsigned int blame_entry_score(struct blame_scoreboard * sb, struct blame_entry * e)'/>
+<use f='codebrowser/blame.c' l='1015' u='c' c='copy_split_if_better'/>
+<use f='codebrowser/blame.c' l='1015' u='c' c='copy_split_if_better'/>
+<use f='codebrowser/blame.c' l='1127' u='c' c='filter_small'/>
+<use f='codebrowser/blame.c' l='1176' u='c' c='find_move_in_parent'/>
+<use f='codebrowser/blame.c' l='1306' u='c' c='find_copy_in_parent'/>
+<doc f='codebrowser/blame.c' l='970'>/*
+ * The lines in blame_entry after splitting blames many times can become
+ * very small and trivial, and at some point it becomes pointless to
+ * blame the parents.  E.g. &quot;\t\t}\n\t}\n\n&quot; appears everywhere in any
+ * ordinary C program, and it is not worth to say it was copied from
+ * totally unrelated file in the parent.
+ *
+ * Compute how trivial the lines in the blame_entry are.
+ */</doc>
+<use f='codebrowser/builtin/blame.c' l='552' u='c' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='553' u='c' c='find_alignment'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='1444'/>
+<use f='codebrowser/builtin/am.c' l='1662' u='c'/>
+<use f='codebrowser/builtin/am.c' l='2309' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='616' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='804' u='c'/>
+<use f='codebrowser/builtin/log.c' l='929' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1402' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1444' u='c'/>
+<use f='codebrowser/builtin/tag.c' l='225' u='c'/>
+<use f='codebrowser/builtin/var.c' l='15' u='c'/>
+<use f='codebrowser/builtin/var.c' l='59' u='c'/>
+<use f='codebrowser/commit.c' l='1548' u='c'/>
+<use f='codebrowser/commit.c' l='1550' u='c'/>
+<use f='codebrowser/gpg-interface.c' l='145' u='c'/>
+<use f='codebrowser/ident.c' l='358' u='c'/>
+<use f='codebrowser/ident.c' l='427' u='c'/>

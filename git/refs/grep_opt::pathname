@@ -1,0 +1,15 @@
+<dec f='codebrowser/grep.h' l='149' type='int'/>
+<offset>1536</offset>
+<use f='codebrowser/builtin/grep.c' l='822' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='822' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='823' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='823' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='822' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='822' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='823' u='a' c='cmd_grep'/>
+<use f='codebrowser/builtin/grep.c' l='823' u='a' c='cmd_grep'/>
+<use f='codebrowser/grep.c' l='37' u='w' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='154' u='w' c='grep_init'/>
+<use f='codebrowser/grep.c' l='154' u='r' c='grep_init'/>
+<use f='codebrowser/grep.c' l='1358' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1841' u='r' c='grep_source_1'/>

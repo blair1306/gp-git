@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='318' type='int for_each_namespaced_ref(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/http-backend.c' l='476' u='c' c='get_info_refs'/>
+<def f='codebrowser/refs.c' l='1382' ll='1391' type='int for_each_namespaced_ref(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/upload-pack.c' l='989' u='c' c='upload_pack'/>
+<use f='codebrowser/upload-pack.c' l='994' u='c' c='upload_pack'/>

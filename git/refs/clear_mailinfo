@@ -1,0 +1,4 @@
+<dec f='codebrowser/mailinfo.h' l='40' type='void clear_mailinfo(struct mailinfo * )'/>
+<use f='codebrowser/builtin/am.c' l='1318' u='c' c='parse_mail'/>
+<use f='codebrowser/builtin/mailinfo.c' l='60' u='c' c='cmd_mailinfo'/>
+<def f='codebrowser/mailinfo.c' l='1154' ll='1177' type='void clear_mailinfo(struct mailinfo * mi)'/>

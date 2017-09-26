@@ -1,0 +1,16 @@
+<dec f='codebrowser/ewah/ewok.h' l='113' type='void ewah_each_bit(struct ewah_bitmap * self, ewah_callback callback, void * payload)'/>
+<doc f='codebrowser/ewah/ewok.h' l='106'>/**
+ * Call the given callback with the position of every single bit
+ * that has been set on the bitmap.
+ *
+ * This is an efficient operation that does not fully decompress
+ * the bitmap.
+ */</doc>
+<use f='codebrowser/dir.c' l='2745' u='c' c='read_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2747' u='c' c='read_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2748' u='c' c='read_untracked_extension'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='247' ll='278' type='void ewah_each_bit(struct ewah_bitmap * self, void (*)(size_t, void *) callback, void * payload)'/>
+<use f='codebrowser/split-index.c' l='147' u='c' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='148' u='c' c='merge_base_index'/>
+<use f='codebrowser/t/helper/test-dump-split-index.c' l='30' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-dump-split-index.c' l='33' u='c' c='cmd_main'/>

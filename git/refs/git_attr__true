@@ -1,0 +1,16 @@
+<dec f='codebrowser/attr.h' l='18' type='const char []'/>
+<use f='codebrowser/archive.c' l='131' macro='1' u='r'/>
+<use f='codebrowser/archive.c' l='133' macro='1' u='r'/>
+<doc f='codebrowser/attr.h' l='17'>/* Internal use */</doc>
+<def f='codebrowser/attr.c' l='20' type='const char [14]'/>
+<use f='codebrowser/attr.c' l='23' u='r' c='parse_attr'/>
+<use f='codebrowser/attr.c' l='23' u='r' c='attr_stack_free'/>
+<use f='codebrowser/attr.c' l='23' u='r' c='macroexpand_one'/>
+<use f='codebrowser/builtin/check-attr.c' l='36' macro='1' u='r'/>
+<use f='codebrowser/convert.c' l='974' macro='1' u='r'/>
+<use f='codebrowser/convert.c' l='1005' macro='1' u='r'/>
+<use f='codebrowser/convert.c' l='1017' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='241' macro='1' u='r'/>
+<use f='codebrowser/ll-merge.c' l='314' macro='1' u='r'/>
+<use f='codebrowser/userdiff.c' l='275' macro='1' u='r'/>
+<use f='codebrowser/ws.c' l='85' macro='1' u='r'/>

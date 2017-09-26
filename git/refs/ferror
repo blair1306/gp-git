@@ -1,0 +1,25 @@
+<dec f='include/stdio.h' l='830' type='int ferror(FILE * __stream)'/>
+<doc f='include/stdio.h' l='829'>/* Return the error indicator for STREAM.  */</doc>
+<use f='codebrowser/builtin/fast-export.c' l='903' u='c' c='export_marks'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2508' u='c' c='read_object_list_from_stdin'/>
+<use f='codebrowser/builtin/remote-ext.c' l='173' u='c' c='command_loop'/>
+<use f='codebrowser/builtin/remote-fd.c' l='31' u='c' c='command_loop'/>
+<use f='codebrowser/git.c' l='356' u='c' c='run_builtin'/>
+<use f='codebrowser/ident.c' l='81' u='c' c='add_mailname_host'/>
+<use f='codebrowser/imap-send.c' l='1262' u='c' c='read_message'/>
+<use f='codebrowser/remote-curl.c' l='1061' u='c' c='cmd_main'/>
+<use f='codebrowser/remote-testsvn.c' l='320' u='c' c='cmd_main'/>
+<use f='codebrowser/send-pack.c' l='113' u='c' c='pack_objects'/>
+<use f='codebrowser/sequencer.c' l='1656' u='c' c='sequencer_rollback'/>
+<use f='codebrowser/sh-i18n--envsubst.c' l='103' u='c' c='cmd_main'/>
+<use f='codebrowser/sh-i18n--envsubst.c' l='299' u='c' c='do_getc'/>
+<use f='codebrowser/t/helper/test-line-buffer.c' l='88' u='c' c='cmd_main'/>
+<use f='codebrowser/tempfile.c' l='250' u='c' c='close_tempfile'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='40' u='c' c='buffer_deinit'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='41' u='c' c='buffer_deinit'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='64' u='c' c='buffer_ferror'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='104' u='c' c='buffer_copy_bytes'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='110' u='c' c='buffer_copy_bytes'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='120' u='c' c='buffer_skip_bytes'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='530' u='c' c='svndump_deinit'/>
+<use f='codebrowser/write_or_die.c' l='34' u='c' c='maybe_flush_or_die'/>

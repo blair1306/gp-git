@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='190' type='int cmd_merge_tree(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/merge-tree.c' l='361' ll='379' type='int cmd_merge_tree(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='429'/>
+<use f='codebrowser/git.c' l='429'/>
+<use f='codebrowser/git.c' l='429'/>
+<use f='codebrowser/git.c' l='429'/>

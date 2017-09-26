@@ -1,0 +1,12 @@
+<dec f='codebrowser/ref-filter.h' l='72' type='int'/>
+<use f='codebrowser/builtin/branch.c' l='344' u='r' c='build_format'/>
+<use f='codebrowser/builtin/branch.c' l='358' u='r' c='build_format'/>
+<use f='codebrowser/builtin/branch.c' l='407' u='r' c='print_ref_list'/>
+<use f='codebrowser/builtin/branch.c' l='422' u='r' c='print_ref_list'/>
+<use f='codebrowser/builtin/branch.c' l='559' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='559' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='559' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='559' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='643' u='r' c='cmd_branch'/>
+<offset>640</offset>
+<use f='codebrowser/ref-filter.c' l='1860' u='r' c='ref_filter_handler'/>

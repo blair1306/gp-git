@@ -1,0 +1,20 @@
+<dec f='codebrowser/cache.h' l='1504' type='int checkout_entry(struct cache_entry * ce, const struct checkout * state, char * topath)'/>
+<use f='codebrowser/apply.c' l='3338' u='c' c='checkout_target'/>
+<use f='codebrowser/builtin/checkout-index.c' l='69' u='c' c='checkout_file'/>
+<use f='codebrowser/builtin/checkout-index.c' l='113' u='c' c='checkout_all'/>
+<use f='codebrowser/builtin/checkout.c' l='164' u='c' c='checkout_stage'/>
+<use f='codebrowser/builtin/checkout.c' l='236' u='c' c='checkout_merged'/>
+<use f='codebrowser/builtin/checkout.c' l='367' u='c' c='checkout_paths'/>
+<use f='codebrowser/builtin/difftool.c' l='325' u='c' c='checkout_path'/>
+<use f='codebrowser/entry.c' l='219' u='c' c='finish_delayed_checkout'/>
+<def f='codebrowser/entry.c' l='377' ll='445' type='int checkout_entry(struct cache_entry * ce, const struct checkout * state, char * topath)'/>
+<doc f='codebrowser/entry.c' l='369'>/*
+ * Write the contents from ce out to the working tree.
+ *
+ * When topath[] is not NULL, instead of writing to the working tree
+ * file named by ce, a temporary file is created by this function and
+ * its name is returned in topath[], which must be able to hold at
+ * least TEMPORARY_FILENAME_LENGTH bytes long.
+ */</doc>
+<use f='codebrowser/unpack-trees.c' l='294' u='c' c='reload_gitmodules_file'/>
+<use f='codebrowser/unpack-trees.c' l='393' u='c' c='check_updates'/>

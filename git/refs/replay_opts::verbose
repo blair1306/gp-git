@@ -1,0 +1,5 @@
+<dec f='codebrowser/sequencer.h' l='27' type='int'/>
+<offset>320</offset>
+<use f='codebrowser/sequencer.c' l='1499' u='w' c='read_populate_opts'/>
+<use f='codebrowser/sequencer.c' l='2017' u='r' c='pick_commits'/>
+<use f='codebrowser/sequencer.c' l='2139' u='r' c='pick_commits'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/streaming.h' l='13' type='ssize_t read_istream(struct git_istream * , void * , size_t )'/>
+<use f='codebrowser/archive-tar.c' l='126' u='c' c='stream_blocked'/>
+<use f='codebrowser/archive-zip.c' l='424' u='c' c='write_zip_entry'/>
+<use f='codebrowser/archive-zip.c' l='456' u='c' c='write_zip_entry'/>
+<use f='codebrowser/builtin/index-pack.c' l='746' u='c' c='compare_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='165' u='c' c='write_large_blob_data'/>
+<use f='codebrowser/sha1_file.c' l='1661' u='c' c='check_sha1_signature'/>
+<def f='codebrowser/streaming.c' l='102' ll='105' type='ssize_t read_istream(struct git_istream * st, void * buf, size_t sz)'/>
+<use f='codebrowser/streaming.c' l='240' u='c' c='read_istream_filtered'/>
+<use f='codebrowser/streaming.c' l='520' u='c' c='stream_blob_to_fd'/>

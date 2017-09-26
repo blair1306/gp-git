@@ -1,0 +1,19 @@
+<def f='codebrowser/ref-filter.h' l='52' ll='73'/>
+<size>88</size>
+<mbr r='ref_filter::name_patterns' o='0' t='const char **'/>
+<mbr r='ref_filter::points_at' o='64' t='struct oid_array'/>
+<mbr r='ref_filter::with_commit' o='256' t='struct commit_list *'/>
+<mbr r='ref_filter::no_commit' o='320' t='struct commit_list *'/>
+<mbr r='ref_filter::merge' o='384' t='enum (anonymous enum at /home/jon/workspace/git/ref-filter.h:58:2)'/>
+<mbr r='ref_filter::merge_commit' o='448' t='struct commit *'/>
+<mbr r='ref_filter::with_commit_tag_algo' o='512' t='unsigned int'/>
+<mbr r='ref_filter::match_as_path' o='513' t='unsigned int'/>
+<mbr r='ref_filter::ignore_case' o='514' t='unsigned int'/>
+<mbr r='ref_filter::detached' o='515' t='unsigned int'/>
+<mbr r='ref_filter::kind' o='544' t='unsigned int'/>
+<mbr r='ref_filter::lines' o='576' t='unsigned int'/>
+<mbr r='ref_filter::abbrev' o='608' t='int'/>
+<mbr r='ref_filter::verbose' o='640' t='int'/>
+<def f='codebrowser/refs.c' l='215' ll='219'/>
+<size>24</size>
+<doc f='codebrowser/refs.c' l='214'>/* The argument to filter_refs */</doc>

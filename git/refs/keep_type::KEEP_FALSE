@@ -1,0 +1,4 @@
+<dec f='codebrowser/builtin/am.c' l='81' type='0'/>
+<use f='codebrowser/builtin/am.c' l='448' u='r' c='am_load'/>
+<use f='codebrowser/builtin/am.c' l='1019' c='am_setup'/>
+<use f='codebrowser/builtin/am.c' l='1231' c='parse_mail'/>

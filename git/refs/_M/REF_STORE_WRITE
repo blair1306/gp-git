@@ -1,0 +1,17 @@
+<dec f='codebrowser/refs/refs-internal.h' l='509'/>
+<use f='codebrowser/refs/files-backend.c' l='1093' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1146' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1262' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1516' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1763' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1801' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2406' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2647' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2770' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2879' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='334' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='524' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='573' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='586' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='609' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='702' u='c'/>

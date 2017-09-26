@@ -1,0 +1,7 @@
+<dec f='include/x86_64-linux-gnu/bits/signum.h' l='34'/>
+<use f='codebrowser/editor.c' l='51' u='c'/>
+<use f='codebrowser/editor.c' l='55' u='c'/>
+<use f='codebrowser/editor.c' l='56' u='c'/>
+<use f='codebrowser/run-command.c' l='538' u='c'/>
+<use f='codebrowser/sigchain.c' l='50' u='c'/>
+<use f='codebrowser/sigchain.c' l='57' u='c'/>

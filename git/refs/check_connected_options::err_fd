@@ -1,0 +1,12 @@
+<dec f='codebrowser/connected.h' l='32' type='int'/>
+<offset>192</offset>
+<doc f='codebrowser/connected.h' l='27'>/*
+	 * If non-zero, send error messages to this descriptor rather
+	 * than stderr. The descriptor is closed before check_connected
+	 * returns.
+	 */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='1483' u='w' c='execute_commands'/>
+<use f='codebrowser/connected.c' l='35' u='r' c='check_connected'/>
+<use f='codebrowser/connected.c' l='36' u='r' c='check_connected'/>
+<use f='codebrowser/connected.c' l='69' u='r' c='check_connected'/>
+<use f='codebrowser/connected.c' l='70' u='r' c='check_connected'/>

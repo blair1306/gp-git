@@ -1,0 +1,8 @@
+<dec f='codebrowser/ewah/ewok.h' l='194' type='size_t ewah_add(struct ewah_bitmap * self, eword_t word)'/>
+<use f='codebrowser/ewah/bitmap.c' l='77' u='c' c='bitmap_to_ewah'/>
+<use f='codebrowser/ewah/bitmap.c' l='87' u='c' c='bitmap_to_ewah'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='197' ll='208' type='size_t ewah_add(struct ewah_bitmap * self, eword_t word)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='444' u='c' c='ewah_xor'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='512' u='c' c='ewah_and'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='585' u='c' c='ewah_and_not'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='653' u='c' c='ewah_or'/>

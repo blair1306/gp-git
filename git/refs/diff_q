@@ -1,0 +1,16 @@
+<dec f='codebrowser/diffcore.h' l='108' type='void diff_q(struct diff_queue_struct * , struct diff_filepair * )'/>
+<def f='codebrowser/diff.c' l='4155' ll='4159' type='void diff_q(struct diff_queue_struct * queue, struct diff_filepair * dp)'/>
+<use f='codebrowser/diff.c' l='4169' u='c' c='diff_queue'/>
+<use f='codebrowser/diff.c' l='4896' u='c' c='diffcore_apply_filter'/>
+<use f='codebrowser/diff.c' l='4961' u='c' c='diffcore_skip_stat_unmatch'/>
+<use f='codebrowser/diffcore-break.c' l='218' u='c' c='diffcore_break'/>
+<use f='codebrowser/diffcore-break.c' l='294' u='c' c='diffcore_merge_broken'/>
+<use f='codebrowser/diffcore-break.c' l='297' u='c' c='diffcore_merge_broken'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='194' u='c' c='pickaxe'/>
+<use f='codebrowser/diffcore-rename.c' l='596' u='c' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='607' u='c' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='614' u='c' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='649' u='c' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='653' u='c' c='diffcore_rename'/>
+<use f='codebrowser/line-log.c' l='782' u='c' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='792' u='c' c='filter_diffs_for_paths'/>

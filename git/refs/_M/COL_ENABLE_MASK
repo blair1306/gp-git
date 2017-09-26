@@ -1,0 +1,13 @@
+<dec f='codebrowser/column.h' l='5'/>
+<use f='codebrowser/column.h' l='36' u='c'/>
+<use f='codebrowser/builtin/clean.c' l='273' u='c'/>
+<use f='codebrowser/column.c' l='197' u='c'/>
+<use f='codebrowser/column.c' l='223' u='c'/>
+<use f='codebrowser/column.c' l='226' u='c'/>
+<use f='codebrowser/column.c' l='246' u='c'/>
+<use f='codebrowser/column.c' l='247' u='c'/>
+<use f='codebrowser/column.c' l='248' u='c'/>
+<use f='codebrowser/column.c' l='274' u='c'/>
+<use f='codebrowser/column.c' l='320' u='c'/>
+<use f='codebrowser/column.c' l='356' u='c'/>
+<use f='codebrowser/help.c' l='94' u='c'/>

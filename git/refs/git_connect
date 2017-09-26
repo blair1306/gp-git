@@ -1,0 +1,17 @@
+<dec f='codebrowser/connect.h' l='8' type='struct child_process * git_connect(int * fd, const char * url, const char * prog, int flags)'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='191' u='c' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/send-pack.c' l='255' u='c' c='cmd_send_pack'/>
+<def f='codebrowser/connect.c' l='775' ll='920' type='struct child_process * git_connect(int * fd, const char * url, const char * prog, int flags)'/>
+<doc f='codebrowser/connect.c' l='764'>/*
+ * This returns a dummy child_process if the transport protocol does not
+ * need fork(2), or a struct child_process object if it does.  Once done,
+ * finish the connection with finish_connect() with the value returned from
+ * this function (it is safe to call finish_connect() with NULL to support
+ * the former case).
+ *
+ * If it returns, the connect is successful; it just dies on errors (this
+ * will hopefully be changed in a libification effort, to return NULL when
+ * the connection failed).
+ */</doc>
+<use f='codebrowser/transport.c' l='182' u='c' c='connect_setup'/>
+<use f='codebrowser/transport.c' l='590' u='c' c='connect_git'/>

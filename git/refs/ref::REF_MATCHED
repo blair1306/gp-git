@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='96' type='1'/>
+<use f='codebrowser/fetch-pack.c' l='646' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='683' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='1184' c='report_unmatched_refs'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/pack-objects.h' l='42' type='int'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1555' u='w' c='drop_reused_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1599' u='r' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1687' u='w' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1688' u='r' c='break_delta_chains'/>
+<offset>1024</offset>

@@ -1,0 +1,8 @@
+<def f='codebrowser/xdiff/xdiff.h' l='96' ll='103'/>
+<size>48</size>
+<mbr r='s_xdemitconf::ctxlen' o='0' t='long'/>
+<mbr r='s_xdemitconf::interhunkctxlen' o='64' t='long'/>
+<mbr r='s_xdemitconf::flags' o='128' t='unsigned long'/>
+<mbr r='s_xdemitconf::find_func' o='192' t='find_func_t'/>
+<mbr r='s_xdemitconf::find_func_priv' o='256' t='void *'/>
+<mbr r='s_xdemitconf::hunk_func' o='320' t='xdl_emit_hunk_consume_func_t'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1528' type='struct alternate_object_database *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/fsck.c' l='701' u='r' c='cmd_fsck'/>
+<use f='codebrowser/sha1_file.c' l='325' u='r' c='alt_odb_usable'/>
+<use f='codebrowser/sha1_file.c' l='386' u='a' c='link_alt_odb_entry'/>
+<use f='codebrowser/sha1_file.c' l='387' u='w' c='link_alt_odb_entry'/>
+<use f='codebrowser/sha1_file.c' l='627' u='r' c='foreach_alt_odb'/>
+<use f='codebrowser/sha1_file.c' l='684' u='r' c='check_and_freshen_nonlocal'/>
+<use f='codebrowser/sha1_file.c' l='1588' u='r' c='prepare_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1722' u='r' c='stat_sha1_file'/>
+<use f='codebrowser/sha1_file.c' l='1748' u='r' c='open_sha1_file'/>
+<use f='codebrowser/sha1_name.c' l='106' u='w' c='find_short_object_filename'/>
+<use f='codebrowser/sha1_name.c' l='108' u='r' c='find_short_object_filename'/>

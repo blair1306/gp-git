@@ -1,0 +1,9 @@
+<dec f='codebrowser/csum-file.h' l='9' type='int'/>
+<offset>32</offset>
+<use f='codebrowser/csum-file.c' l='16' u='r' c='flush'/>
+<use f='codebrowser/csum-file.c' l='18' u='r' c='flush'/>
+<use f='codebrowser/csum-file.c' l='74' u='r' c='sha1close'/>
+<use f='codebrowser/csum-file.c' l='76' u='r' c='sha1close'/>
+<use f='codebrowser/csum-file.c' l='82' u='r' c='sha1close'/>
+<use f='codebrowser/csum-file.c' l='138' u='w' c='sha1fd_check'/>
+<use f='codebrowser/csum-file.c' l='146' u='w' c='sha1fd_throughput'/>

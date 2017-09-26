@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir-iterator.h' l='56' type='struct stat'/>
+<use f='codebrowser/dir-iterator.c' l='80' u='m' c='dir_iterator_advance'/>
+<use f='codebrowser/dir-iterator.c' l='141' u='a' c='dir_iterator_advance'/>
+<offset>320</offset>
+<doc f='codebrowser/dir-iterator.h' l='55'>/* The result of calling lstat() on path: */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2007' u='m' c='files_reflog_iterator_advance'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/quote.h' l='59' type='void quote_two_c_style(struct strbuf * , const char * , const char * , int )'/>
+<use f='codebrowser/builtin/send-pack.c' l='92' u='c' c='print_helper_status'/>
+<use f='codebrowser/combine-diff.c' l='887' u='c' c='dump_quoted_path'/>
+<use f='codebrowser/diff.c' l='778' u='c' c='emit_rewrite_diff'/>
+<use f='codebrowser/diff.c' l='779' u='c' c='emit_rewrite_diff'/>
+<def f='codebrowser/quote.c' l='265' ll='279' type='void quote_two_c_style(struct strbuf * sb, const char * prefix, const char * path, int nodq)'/>

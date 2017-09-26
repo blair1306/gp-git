@@ -1,0 +1,25 @@
+<dec f='codebrowser/sha1-array.h' l='15' type='void oid_array_clear(struct oid_array * array)'/>
+<use f='codebrowser/builtin/cat-file.c' l='481' u='c' c='batch_objects'/>
+<use f='codebrowser/builtin/diff.c' l='200' u='c' c='builtin_diff_combined'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2832' u='c' c='get_object_list'/>
+<use f='codebrowser/builtin/receive-pack.c' l='893' u='c' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='907' u='c' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='2026' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/builtin/receive-pack.c' l='2027' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/combine-diff.c' l='1543' u='c' c='diff_tree_combined_merge'/>
+<use f='codebrowser/fetch-pack.c' l='1092' u='c' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1117' u='c' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1128' u='c' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1129' u='c' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1145' u='c' c='update_shallow'/>
+<use f='codebrowser/parse-options-cb.c' l='102' u='c' c='parse_opt_object_name'/>
+<def f='codebrowser/sha1-array.c' l='36' ll='42' type='void oid_array_clear(struct oid_array * array)'/>
+<use f='codebrowser/sha1_name.c' l='459' u='c' c='for_each_abbrev'/>
+<use f='codebrowser/submodule.c' l='811' u='c' c='free_submodules_oids'/>
+<use f='codebrowser/submodule.c' l='1131' u='c' c='calculate_changed_submodule_paths'/>
+<use f='codebrowser/submodule.c' l='1132' u='c' c='calculate_changed_submodule_paths'/>
+<use f='codebrowser/t/helper/test-sha1-array.c' l='28' u='c' c='cmd_main'/>
+<use f='codebrowser/transport.c' l='1039' u='c' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1042' u='c' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1060' u='c' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1064' u='c' c='transport_push'/>

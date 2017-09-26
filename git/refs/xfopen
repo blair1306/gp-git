@@ -1,0 +1,26 @@
+<dec f='codebrowser/git-compat-util.h' l='806' type='FILE * xfopen(const char * path, const char * mode)'/>
+<use f='codebrowser/bisect.c' l='442' u='c' c='read_bisect_paths'/>
+<use f='codebrowser/builtin/am.c' l='549' u='c' c='copy_notes_for_rebase'/>
+<use f='codebrowser/builtin/am.c' l='651' u='c' c='detect_patch_format'/>
+<use f='codebrowser/builtin/am.c' l='1259' u='c' c='parse_mail'/>
+<use f='codebrowser/builtin/am.c' l='1260' u='c' c='parse_mail'/>
+<use f='codebrowser/builtin/am.c' l='1268' u='c' c='parse_mail'/>
+<use f='codebrowser/builtin/am.c' l='1329' u='c' c='get_mail_commit_oid'/>
+<use f='codebrowser/builtin/am.c' l='1394' u='c' c='write_commit_patch'/>
+<use f='codebrowser/builtin/am.c' l='1428' u='c' c='write_index_patch'/>
+<use f='codebrowser/builtin/am.c' l='1683' u='c' c='do_commit'/>
+<use f='codebrowser/builtin/clone.c' l='364' u='c' c='copy_alternates'/>
+<use f='codebrowser/builtin/commit.c' l='1707' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/fast-export.c' l='912' u='c' c='import_marks'/>
+<use f='codebrowser/builtin/fsck.c' l='275' u='c' c='check_unreachable_object'/>
+<use f='codebrowser/builtin/merge.c' l='847' u='c' c='suggest_conflicts'/>
+<use f='codebrowser/builtin/pull.c' l='343' u='c' c='get_merge_heads'/>
+<use f='codebrowser/diff.c' l='4065' u='c' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='4799' u='c' c='diff_flush'/>
+<use f='codebrowser/fast-import.c' l='3287' u='c' c='option_export_pack_edges'/>
+<use f='codebrowser/remote-testsvn.c' l='126' u='c' c='regenerate_marks'/>
+<use f='codebrowser/remote-testsvn.c' l='148' u='c' c='check_or_regenerate_marks'/>
+<def f='codebrowser/wrapper.c' l='383' ll='399' type='FILE * xfopen(const char * path, const char * mode)'/>
+<doc f='codebrowser/wrapper.c' l='380'>/**
+ * xfopen() is the same as fopen(), but it die()s if the fopen() fails.
+ */</doc>

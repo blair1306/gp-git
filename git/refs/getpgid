@@ -1,0 +1,2 @@
+<dec f='include/unistd.h' l='642' type='__pid_t getpgid(__pid_t __pid)'/>
+<use f='codebrowser/progress.c' l='79' u='c' c='is_foreground_fd'/>

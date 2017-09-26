@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='95' type='const char * current_config_name()'/>
+<use f='codebrowser/builtin/config.c' l='105' u='c' c='show_config_origin'/>
+<use f='codebrowser/builtin/config.c' l='107' u='c' c='show_config_origin'/>
+<def f='codebrowser/config.c' l='2922' ll='2932' type='const char * current_config_name()'/>
+<use f='codebrowser/t/helper/test-config.c' l='64' u='c' c='iterate_cb'/>

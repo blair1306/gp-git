@@ -1,0 +1,32 @@
+<dec f='codebrowser/trailer.h' l='21' type='char **'/>
+<offset>192</offset>
+<doc f='codebrowser/trailer.h' l='18'>/*
+	 * Array of trailers found.
+	 */</doc>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/sequencer.c' l='170' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/trailer.c' l='907' u='r' c='process_input_file'/>
+<use f='codebrowser/trailer.c' l='1046' u='w' c='trailer_info_get'/>
+<use f='codebrowser/trailer.c' l='1054' u='r' c='trailer_info_release'/>
+<use f='codebrowser/trailer.c' l='1055' u='r' c='trailer_info_release'/>

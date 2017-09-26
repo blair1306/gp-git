@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack.h' l='86' type='char * index_pack_lockfile(int fd)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1775' u='c' c='unpack'/>
+<use f='codebrowser/fetch-pack.c' l='879' u='c' c='get_pack'/>
+<def f='codebrowser/pack-write.c' l='279' ll='298' type='char * index_pack_lockfile(int ip_out)'/>

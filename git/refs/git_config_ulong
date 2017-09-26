@@ -1,0 +1,10 @@
+<dec f='codebrowser/config.h' l='55' type='unsigned long git_config_ulong(const char * , const char * )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2451' u='c' c='git_pack_config'/>
+<use f='codebrowser/builtin/receive-pack.c' l='202' u='c' c='receive_pack_config'/>
+<def f='codebrowser/config.c' l='916' ll='922' type='unsigned long git_config_ulong(const char * name, const char * value)'/>
+<use f='codebrowser/config.c' l='1113' u='c' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1124' u='c' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1129' u='c' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1134' u='c' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1368' u='c' c='git_default_config'/>
+<use f='codebrowser/config.c' l='1829' u='c' c='git_configset_get_ulong'/>

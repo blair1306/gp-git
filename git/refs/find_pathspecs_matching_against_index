@@ -1,0 +1,12 @@
+<dec f='codebrowser/pathspec.h' l='102' type='char * find_pathspecs_matching_against_index(const struct pathspec * pathspec, const struct index_state * istate)'/>
+<use f='codebrowser/builtin/add.c' l='466' u='c' c='cmd_add'/>
+<use f='codebrowser/builtin/check-ignore.c' l='102' u='c' c='check_ignore'/>
+<def f='codebrowser/pathspec.c' l='52' ll='58' type='char * find_pathspecs_matching_against_index(const struct pathspec * pathspec, const struct index_state * istate)'/>
+<doc f='codebrowser/pathspec.c' l='44'>/*
+ * Finds which of the given pathspecs match items in the index.
+ *
+ * This is a one-shot wrapper around add_pathspec_matches_against_index()
+ * which allocates, populates, and returns a seen[] array indicating the
+ * nature of the &quot;closest&quot; (i.e. most specific) matches which each of the
+ * given pathspecs achieves against all items in the index.
+ */</doc>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/parse-options.h' l='28' type='4'/>
+<use f='codebrowser/builtin/add.c' l='377' u='r' c='cmd_add'/>
+<use f='codebrowser/builtin/archive.c' l='78' u='r' c='cmd_archive'/>
+<use f='codebrowser/builtin/blame.c' l='719' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/fast-export.c' l='1017' u='r' c='cmd_fast_export'/>
+<use f='codebrowser/builtin/log.c' l='165' u='r' c='cmd_log_init_finish'/>
+<use f='codebrowser/builtin/log.c' l='1533' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/notes.c' l='420' u='r' c='add'/>
+<use f='codebrowser/builtin/notes.c' l='584' u='r' c='append_edit'/>
+<use f='codebrowser/builtin/rebase--helper.c' l='34' u='r' c='cmd_rebase__helper'/>
+<use f='codebrowser/builtin/remote.c' l='1370' u='r' c='update'/>
+<use f='codebrowser/builtin/remote.c' l='1529' u='r' c='set_url'/>
+<use f='codebrowser/builtin/revert.c' l='131' u='r' c='run_sequencer'/>
+<use f='codebrowser/builtin/shortlog.c' l='267' u='r' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/verify-commit.c' l='81' u='r' c='cmd_verify_commit'/>
+<use f='codebrowser/builtin/verify-tag.c' l='46' u='r' c='cmd_verify_tag'/>
+<use f='codebrowser/parse-options.c' l='420' u='r' c='parse_options_start'/>

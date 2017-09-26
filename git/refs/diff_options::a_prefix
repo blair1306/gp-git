@@ -1,0 +1,18 @@
+<dec f='codebrowser/diff.h' l='122' type='const char *'/>
+<offset>192</offset>
+<use f='codebrowser/combine-diff.c' l='902' u='r' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='902' u='r' c='show_combined_header'/>
+<use f='codebrowser/diff.c' l='765' u='r' c='emit_rewrite_diff'/>
+<use f='codebrowser/diff.c' l='767' u='r' c='emit_rewrite_diff'/>
+<use f='codebrowser/diff.c' l='2317' u='r' c='diff_set_mnemonic_prefix'/>
+<use f='codebrowser/diff.c' l='2318' u='w' c='diff_set_mnemonic_prefix'/>
+<use f='codebrowser/diff.c' l='2355' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2357' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='3396' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='3398' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='4039' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='4053' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/submodule.c' l='680' u='r' c='show_submodule_inline_diff'/>
+<use f='codebrowser/submodule.c' l='683' u='r' c='show_submodule_inline_diff'/>
+<use f='codebrowser/wt-status.c' l='982' u='w' c='wt_longstatus_print_verbose'/>
+<use f='codebrowser/wt-status.c' l='992' u='w' c='wt_longstatus_print_verbose'/>

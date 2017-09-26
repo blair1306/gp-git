@@ -1,0 +1,6 @@
+<def f='codebrowser/cache.h' l='1880' ll='1883' type='ssize_t write_str_in_full(int fd, const char * str)'/>
+<use f='codebrowser/builtin/config.c' l='616' u='c' c='cmd_config'/>
+<use f='codebrowser/config.c' l='2593' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/refs/files-backend.c' l='2853' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/transport-helper.c' l='1042' u='c' c='get_refs_list'/>
+<use f='codebrowser/transport-helper.c' l='1044' u='c' c='get_refs_list'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/ref-filter.c' l='79' type='0'/>
+<use f='codebrowser/ref-filter.c' l='141' u='r' c='remote_ref_atom_parser'/>
+<use f='codebrowser/ref-filter.c' l='160' u='r' c='remote_ref_atom_parser'/>
+<use f='codebrowser/ref-filter.c' l='1217' u='r' c='fill_remote_ref_details'/>

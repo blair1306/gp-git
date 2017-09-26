@@ -1,0 +1,4 @@
+<dec f='codebrowser/worktree.h' l='13' type='int'/>
+<offset>512</offset>
+<use f='codebrowser/worktree.c' l='238' u='r' c='is_worktree_locked'/>
+<use f='codebrowser/worktree.c' l='250' u='w' c='is_worktree_locked'/>

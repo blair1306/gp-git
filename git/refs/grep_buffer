@@ -1,0 +1,4 @@
+<dec f='codebrowser/grep.h' l='187' type='int grep_buffer(struct grep_opt * opt, char * buf, unsigned long size)'/>
+<def f='codebrowser/grep.c' l='1900' ll='1913' type='int grep_buffer(struct grep_opt * opt, char * buf, unsigned long size)'/>
+<use f='codebrowser/revision.c' l='2953' u='c' c='commit_match'/>
+<use f='codebrowser/revision.c' l='2955' u='c' c='commit_match'/>

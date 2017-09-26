@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/repo_tree.h' l='15' type='void repo_delete(const char * path)'/>
+<def f='codebrowser/vcs-svn/repo_tree.c' l='45' ll='48' type='void repo_delete(const char * path)'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='228' u='c' c='handle_node'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='232' u='c' c='handle_node'/>

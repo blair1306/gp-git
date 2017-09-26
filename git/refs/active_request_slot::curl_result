@@ -1,0 +1,9 @@
+<dec f='codebrowser/http.h' l='63' type='CURLcode'/>
+<offset>96</offset>
+<use f='codebrowser/http-push.c' l='514' u='r' c='finish_request'/>
+<use f='codebrowser/http-walker.c' l='209' u='r' c='process_alternates_response'/>
+<use f='codebrowser/http-walker.c' l='231' u='r' c='process_alternates_response'/>
+<use f='codebrowser/http-walker.c' l='232' macro='1' u='r'/>
+<use f='codebrowser/http.c' l='209' u='r' c='finish_active_slot'/>
+<use f='codebrowser/http.c' l='250' u='w' c='process_curl_messages'/>
+<use f='codebrowser/http.c' l='2277' u='r' c='process_http_object_request'/>

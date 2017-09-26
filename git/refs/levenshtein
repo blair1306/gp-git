@@ -1,0 +1,40 @@
+<dec f='codebrowser/levenshtein.h' l='4' type='int levenshtein(const char * string1, const char * string2, int swap_penalty, int substitution_penalty, int insertion_penalty, int deletion_penalty)'/>
+<use f='codebrowser/help.c' l='330' u='c' c='help_unknown_cmd'/>
+<def f='codebrowser/levenshtein.c' l='41' ll='86' type='int levenshtein(const char * string1, const char * string2, int w, int s, int a, int d)'/>
+<doc f='codebrowser/levenshtein.c' l='4'>/*
+ * This function implements the Damerau-Levenshtein algorithm to
+ * calculate a distance between strings.
+ *
+ * Basically, it says how many letters need to be swapped, substituted,
+ * deleted from, or added to string1, at least, to get string2.
+ *
+ * The idea is to build a distance matrix for the substrings of both
+ * strings.  To avoid a large space complexity, only the last three rows
+ * are kept in memory (if swaps had the same or higher cost as one deletion
+ * plus one insertion, only two rows would be needed).
+ *
+ * At any stage, &quot;i + 1&quot; denotes the length of the current substring of
+ * string1 that the distance is calculated for.
+ *
+ * row2 holds the current row, row1 the previous row (i.e. for the substring
+ * of string1 of length &quot;i&quot;), and row0 the row before that.
+ *
+ * In other words, at the start of the big loop, row2[j + 1] contains the
+ * Damerau-Levenshtein distance between the substring of string1 of length
+ * &quot;i&quot; and the substring of string2 of length &quot;j + 1&quot;.
+ *
+ * All the big loop does is determine the partial minimum-cost paths.
+ *
+ * It does so by calculating the costs of the path ending in characters
+ * i (in string1) and j (in string2), respectively, given that the last
+ * operation is a substitution, a swap, a deletion, or an insertion.
+ *
+ * This implementation allows the costs to be weighted:
+ *
+ * - w (as in &quot;sWap&quot;)
+ * - s (as in &quot;Substitution&quot;)
+ * - a (for insertion, AKA &quot;Add&quot;)
+ * - d (as in &quot;Deletion&quot;)
+ *
+ * Note that this algorithm calculates a distance _iff_ d == a.
+ */</doc>

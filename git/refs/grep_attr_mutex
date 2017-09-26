@@ -1,0 +1,10 @@
+<dec f='codebrowser/grep.h' l='225' type='pthread_mutex_t'/>
+<use f='codebrowser/builtin/grep.c' l='205' u='a' c='start_threads'/>
+<use f='codebrowser/builtin/grep.c' l='259' u='a' c='wait_all'/>
+<def f='codebrowser/grep.c' l='1409' type='pthread_mutex_t'/>
+<use f='codebrowser/grep.c' l='1414' u='a' c='grep_attr_lock'/>
+<use f='codebrowser/grep.c' l='1420' u='a' c='grep_attr_unlock'/>
+<doc f='codebrowser/grep.c' l='1405'>/*
+ * This lock protects access to the gitattributes machinery, which is
+ * not thread-safe.
+ */</doc>

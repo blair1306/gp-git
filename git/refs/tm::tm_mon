@@ -1,0 +1,28 @@
+<dec f='include/time.h' l='139' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/archive-zip.c' l='609' u='r' c='dos_time'/>
+<use f='codebrowser/date.c' l='18' u='r' c='tm_to_time_t'/>
+<use f='codebrowser/date.c' l='235' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='239' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='248' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='255' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='263' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='366' u='w' c='match_alpha'/>
+<use f='codebrowser/date.c' l='416' u='w' c='is_date'/>
+<use f='codebrowser/date.c' l='442' u='w' c='is_date'/>
+<use f='codebrowser/date.c' l='442' u='r' c='is_date'/>
+<use f='codebrowser/date.c' l='520' u='r' c='nodate'/>
+<use f='codebrowser/date.c' l='618' u='r' c='match_digit'/>
+<use f='codebrowser/date.c' l='619' u='w' c='match_digit'/>
+<use f='codebrowser/date.c' l='715' u='w' c='parse_date_basic'/>
+<use f='codebrowser/date.c' l='877' u='r' c='update_tm'/>
+<use f='codebrowser/date.c' l='878' u='w' c='update_tm'/>
+<use f='codebrowser/date.c' l='878' u='r' c='update_tm'/>
+<use f='codebrowser/date.c' l='881' u='r' c='update_tm'/>
+<use f='codebrowser/date.c' l='881' u='r' c='update_tm'/>
+<use f='codebrowser/date.c' l='1003' u='w' c='approxidate_alpha'/>
+<use f='codebrowser/date.c' l='1066' u='r' c='approxidate_alpha'/>
+<use f='codebrowser/date.c' l='1072' u='w' c='approxidate_alpha'/>
+<use f='codebrowser/date.c' l='1126' u='r' c='pending_number'/>
+<use f='codebrowser/date.c' l='1127' u='w' c='pending_number'/>
+<use f='codebrowser/date.c' l='1154' u='w' c='approxidate_str'/>

@@ -1,0 +1,10 @@
+<dec f='include/curl/curl.h' l='1967' type='char * curl_easy_escape(CURL * handle, const char * string, int length)'/>
+<doc f='include/curl/curl.h' l='1958'>/*
+ * NAME curl_easy_escape()
+ *
+ * DESCRIPTION
+ *
+ * Escapes URL strings (converts all letters consider illegal in URLs to their
+ * %XX versions). This function returns a new allocated string or NULL if an
+ * error occurred.
+ */</doc>

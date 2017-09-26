@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='1395' type='int df_name_compare(const char * name1, int len1, int mode1, const char * name2, int len2, int mode2)'/>
+<use f='codebrowser/merge-recursive.c' l='410' u='c' c='string_list_df_name_compare'/>
+<def f='codebrowser/read-cache.c' l='428' ll='451' type='int df_name_compare(const char * name1, int len1, int mode1, const char * name2, int len2, int mode2)'/>
+<doc f='codebrowser/read-cache.c' l='418'>/*
+ * df_name_compare() is identical to base_name_compare(), except it
+ * compares conflicting directory/file entries as equal. Note that
+ * while a directory name compares as equal to a regular file, they
+ * then individually compare _differently_ to a filename that has
+ * a dot after the basename (because &apos;\0&apos; &lt; &apos;.&apos; &lt; &apos;/&apos;).
+ *
+ * This is used by routines that want to traverse the git namespace
+ * but then handle conflicting entries together when possible.
+ */</doc>
+<use f='codebrowser/unpack-trees.c' l='712' u='c' c='do_compare_entry_piecewise'/>
+<use f='codebrowser/unpack-trees.c' l='745' u='c' c='do_compare_entry'/>

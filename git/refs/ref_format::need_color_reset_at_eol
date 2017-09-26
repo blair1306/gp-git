@@ -1,0 +1,8 @@
+<dec f='codebrowser/ref-filter.h' l='85' type='int'/>
+<offset>128</offset>
+<doc f='codebrowser/ref-filter.h' l='84'>/* Internal state to ref-filter */</doc>
+<use f='codebrowser/ref-filter.c' l='670' u='w' c='verify_ref_format'/>
+<use f='codebrowser/ref-filter.c' l='682' u='w' c='verify_ref_format'/>
+<use f='codebrowser/ref-filter.c' l='684' u='r' c='verify_ref_format'/>
+<use f='codebrowser/ref-filter.c' l='685' u='w' c='verify_ref_format'/>
+<use f='codebrowser/ref-filter.c' l='2096' u='r' c='format_ref_array_item'/>

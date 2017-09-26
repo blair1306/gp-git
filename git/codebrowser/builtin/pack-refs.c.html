@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pack-refs.c source code [codebrowser/builtin/pack-refs.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/builtin/pack-refs.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>builtin</a>/<a href='pack-refs.c.html'>pack-refs.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../builtin.h.html">"builtin.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../parse-options.h.html">"parse-options.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../refs.h.html">"refs.h"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><em>static</em> <em>char</em> <em>const</em> * <em>const</em> <dfn class="tu decl def" id="pack_refs_usage" title='pack_refs_usage' data-type='const char *const [2]' data-ref="pack_refs_usage">pack_refs_usage</dfn>[] = {</td></tr>
+<tr><th id="6">6</th><td>	<a class="macro" href="../gettext.h.html#89" title="(&quot;git pack-refs [&lt;options&gt;]&quot;)" data-ref="_M/N_">N_</a>(<q>"git pack-refs [&lt;options&gt;]"</q>),</td></tr>
+<tr><th id="7">7</th><td>	<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span></td></tr>
+<tr><th id="8">8</th><td>};</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><em>int</em> <dfn class="decl def" id="cmd_pack_refs" title='cmd_pack_refs' data-ref="cmd_pack_refs">cmd_pack_refs</dfn>(<em>int</em> <dfn class="local col1 decl" id="1argc" title='argc' data-type='int' data-ref="1argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col2 decl" id="2argv" title='argv' data-type='const char **' data-ref="2argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3prefix" title='prefix' data-type='const char *' data-ref="3prefix">prefix</dfn>)</td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td>	<em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="4flags" title='flags' data-type='unsigned int' data-ref="4flags">flags</dfn> = <a class="macro" href="../refs.h.html#338" title="0x0001" data-ref="_M/PACK_REFS_PRUNE">PACK_REFS_PRUNE</a>;</td></tr>
+<tr><th id="13">13</th><td>	<b>struct</b> <a class="type" href="../parse-options.h.html#option" title='option' data-ref="option">option</a> <dfn class="local col5 decl" id="5opts" title='opts' data-type='struct option [3]' data-ref="5opts">opts</dfn>[] = {</td></tr>
+<tr><th id="14">14</th><td>		<a class="macro" href="../parse-options.h.html#119" title="{ OPTION_BIT, (0), (&quot;all&quot;), (&amp;flags), ((void*)0), ((&quot;pack everything&quot;)), PARSE_OPT_NOARG, ((void*)0), (0x0002) }" data-ref="_M/OPT_BIT">OPT_BIT</a>(<var>0</var>, <q>"all"</q>,   &amp;<a class="local col4 ref" href="#4flags" title='flags' data-ref="4flags">flags</a>, <a class="macro" href="../gettext.h.html#89" title="(&quot;pack everything&quot;)" data-ref="_M/N_">N_</a>(<q>"pack everything"</q>), <a class="macro" href="../refs.h.html#339" title="0x0002" data-ref="_M/PACK_REFS_ALL">PACK_REFS_ALL</a>),</td></tr>
+<tr><th id="15">15</th><td>		<a class="macro" href="../parse-options.h.html#119" title="{ OPTION_BIT, (0), (&quot;prune&quot;), (&amp;flags), ((void*)0), ((&quot;prune loose refs (default)&quot;)), PARSE_OPT_NOARG, ((void*)0), (0x0001) }" data-ref="_M/OPT_BIT">OPT_BIT</a>(<var>0</var>, <q>"prune"</q>, &amp;<a class="local col4 ref" href="#4flags" title='flags' data-ref="4flags">flags</a>, <a class="macro" href="../gettext.h.html#89" title="(&quot;prune loose refs (default)&quot;)" data-ref="_M/N_">N_</a>(<q>"prune loose refs (default)"</q>), <a class="macro" href="../refs.h.html#338" title="0x0001" data-ref="_M/PACK_REFS_PRUNE">PACK_REFS_PRUNE</a>),</td></tr>
+<tr><th id="16">16</th><td>		<a class="macro" href="../parse-options.h.html#115" title="{ OPTION_END }" data-ref="_M/OPT_END">OPT_END</a>(),</td></tr>
+<tr><th id="17">17</th><td>	};</td></tr>
+<tr><th id="18">18</th><td>	<b>if</b> (<a class="ref" href="../parse-options.h.html#parse_options" title='parse_options' data-ref="parse_options">parse_options</a>(<a class="local col1 ref" href="#1argc" title='argc' data-ref="1argc">argc</a>, <a class="local col2 ref" href="#2argv" title='argv' data-ref="2argv">argv</a>, <a class="local col3 ref" href="#3prefix" title='prefix' data-ref="3prefix">prefix</a>, <a class="local col5 ref" href="#5opts" title='opts' data-ref="5opts">opts</a>, <a class="tu ref" href="#pack_refs_usage" title='pack_refs_usage' data-use='r' data-ref="pack_refs_usage">pack_refs_usage</a>, <var>0</var>))</td></tr>
+<tr><th id="19">19</th><td>		<a class="ref" href="../parse-options.h.html#usage_with_options" title='usage_with_options' data-ref="usage_with_options">usage_with_options</a>(<a class="tu ref" href="#pack_refs_usage" title='pack_refs_usage' data-use='r' data-ref="pack_refs_usage">pack_refs_usage</a>, <a class="local col5 ref" href="#5opts" title='opts' data-ref="5opts">opts</a>);</td></tr>
+<tr><th id="20">20</th><td>	<b>return</b> <a class="ref" href="../refs.h.html#refs_pack_refs" title='refs_pack_refs' data-ref="refs_pack_refs">refs_pack_refs</a>(<a class="ref" href="../refs.h.html#get_main_ref_store" title='get_main_ref_store' data-ref="get_main_ref_store">get_main_ref_store</a>(), <a class="local col4 ref" href="#4flags" title='flags' data-ref="4flags">flags</a>);</td></tr>
+<tr><th id="21">21</th><td>}</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

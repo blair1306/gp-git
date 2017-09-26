@@ -1,0 +1,3 @@
+<dec f='codebrowser/grep.h' l='56' type='0'/>
+<use f='codebrowser/grep.c' l='1161' c='match_one_pattern'/>
+<use f='codebrowser/revision.c' l='2004' u='r' c='handle_revision_opt'/>

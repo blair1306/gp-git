@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1496' type='unsigned int'/>
+<offset>256</offset>
+<use f='codebrowser/builtin/checkout-index.c' l='195' u='w' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout.c' l='358' u='w' c='checkout_paths'/>
+<use f='codebrowser/builtin/difftool.c' l='375' u='w' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='379' u='w' c='run_dir_diff'/>
+<use f='codebrowser/entry.c' l='39' u='r' c='create_directories'/>
+<use f='codebrowser/entry.c' l='334' u='r' c='write_entry'/>
+<use f='codebrowser/entry.c' l='412' u='r' c='checkout_entry'/>
+<use f='codebrowser/entry.c' l='417' u='r' c='checkout_entry'/>
+<use f='codebrowser/entry.c' l='435' u='r' c='checkout_entry'/>
+<use f='codebrowser/unpack-trees.c' l='358' u='w' c='check_updates'/>

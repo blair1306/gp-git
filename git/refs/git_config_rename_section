@@ -1,0 +1,6 @@
+<dec f='codebrowser/config.h' l='72' type='int git_config_rename_section(const char * , const char * )'/>
+<use f='codebrowser/builtin/branch.c' l='179' u='c' c='delete_branch_config'/>
+<use f='codebrowser/builtin/branch.c' l='508' u='c' c='rename_branch'/>
+<use f='codebrowser/builtin/remote.c' l='639' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='808' u='c' c='rm'/>
+<def f='codebrowser/config.c' l='2845' ll='2848' type='int git_config_rename_section(const char * old_name, const char * new_name)'/>

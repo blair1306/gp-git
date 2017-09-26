@@ -1,0 +1,9 @@
+<dec f='codebrowser/remote.h' l='107' type='-1'/>
+<use f='codebrowser/builtin/fetch.c' l='193' u='r' c='add_merge_config'/>
+<use f='codebrowser/builtin/fetch.c' l='214' u='r' c='add_merge_config'/>
+<use f='codebrowser/builtin/fetch.c' l='350' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='400' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='416' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='779' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='787' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='847' c='store_updated_refs'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/commit.h' l='120' type='struct commit_list * copy_commit_list(struct commit_list * list)'/>
+<doc f='codebrowser/commit.h' l='119'>/* Shallow copy of the input list */</doc>
+<use f='codebrowser/builtin/commit.c' l='1697' u='c' c='cmd_commit'/>
+<def f='codebrowser/commit.c' l='443' ll='452' type='struct commit_list * copy_commit_list(struct commit_list * list)'/>
+<use f='codebrowser/revision.c' l='3056' u='c' c='save_parents'/>
+<use f='codebrowser/revision.c' l='3119' u='c' c='track_linear'/>

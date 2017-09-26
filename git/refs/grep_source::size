@@ -1,0 +1,10 @@
+<dec f='codebrowser/grep.h' l='200' type='unsigned long'/>
+<offset>256</offset>
+<use f='codebrowser/grep.c' l='1626' u='w' c='fill_textconv_grep'/>
+<use f='codebrowser/grep.c' l='1712' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1907' u='w' c='grep_buffer'/>
+<use f='codebrowser/grep.c' l='1923' u='w' c='grep_source_init'/>
+<use f='codebrowser/grep.c' l='1953' u='w' c='grep_source_clear_data'/>
+<use f='codebrowser/grep.c' l='1966' u='a' c='grep_source_load_oid'/>
+<use f='codebrowser/grep.c' l='2006' u='w' c='grep_source_load_file'/>
+<use f='codebrowser/grep.c' l='2046' u='r' c='grep_source_is_binary'/>

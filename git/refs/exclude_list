@@ -1,0 +1,14 @@
+<def f='codebrowser/dir.h' l='46' ll='57'/>
+<size>32</size>
+<doc f='codebrowser/dir.h' l='39'>/*
+ * Each excludes file will be parsed into a fresh exclude_list which
+ * is appended to the relevant exclude_list_group (either EXC_DIRS or
+ * EXC_FILE).  An exclude_list within the EXC_CMDL exclude_list_group
+ * can also be used to represent the list of --exclude values passed
+ * via CLI args.
+ */</doc>
+<mbr r='exclude_list::nr' o='0' t='int'/>
+<mbr r='exclude_list::alloc' o='32' t='int'/>
+<mbr r='exclude_list::filebuf' o='64' t='char *'/>
+<mbr r='exclude_list::src' o='128' t='const char *'/>
+<mbr r='exclude_list::excludes' o='192' t='struct exclude **'/>

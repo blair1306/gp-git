@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1592' type='size_t'/>
+<offset>256</offset>
+<use f='codebrowser/builtin/count-objects.c' l='130' u='r' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='411' u='r' c='pack_set_bytecount'/>
+<use f='codebrowser/pack-check.c' l='54' u='r' c='verify_packfile'/>
+<use f='codebrowser/pack-check.c' l='173' u='r' c='verify_pack_index'/>
+<use f='codebrowser/sha1_file.c' l='844' u='w' c='check_packed_git_idx'/>
+<use f='codebrowser/sha1_file.c' l='1085' u='r' c='close_pack_index'/>
+<use f='codebrowser/sha1_file.c' l='1202' u='r' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='2732' u='r' c='check_pack_index_ptr'/>

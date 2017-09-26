@@ -1,0 +1,7 @@
+<dec f='codebrowser/config.h' l='73' type='int git_config_rename_section_in_file(const char * , const char * , const char * )'/>
+<use f='codebrowser/builtin/config.c' l='699' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/config.c' l='710' u='c' c='cmd_config'/>
+<def f='codebrowser/config.c' l='2738' ll='2843' type='int git_config_rename_section_in_file(const char * config_filename, const char * old_name, const char * new_name)'/>
+<use f='codebrowser/config.c' l='2847' u='c' c='git_config_rename_section'/>
+<doc f='codebrowser/config.c' l='2737'>/* if new_name == NULL, the section is removed instead */</doc>
+<use f='codebrowser/submodule.c' l='129' u='c' c='remove_path_from_gitmodules'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/reachable.h' l='5' type='int add_unseen_recent_objects_to_traversal(struct rev_info * revs, timestamp_t timestamp)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2816' u='c' c='get_object_list'/>
+<def f='codebrowser/reachable.c' l='141' ll='156' type='int add_unseen_recent_objects_to_traversal(struct rev_info * revs, timestamp_t timestamp)'/>
+<use f='codebrowser/reachable.c' l='197' u='c' c='mark_reachable_objects'/>

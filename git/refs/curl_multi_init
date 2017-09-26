@@ -1,0 +1,9 @@
+<dec f='include/curl/multi.h' l='119' type='CURLM * curl_multi_init()'/>
+<doc f='include/curl/multi.h' l='112'>/*
+ * Name:    curl_multi_init()
+ *
+ * Desc:    inititalize multi-style curl usage
+ *
+ * Returns: a new CURLM handle to use in all &apos;curl_multi&apos; functions.
+ */</doc>
+<use f='codebrowser/http.c' l='941' u='c' c='http_init'/>

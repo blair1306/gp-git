@@ -1,0 +1,24 @@
+<dec f='codebrowser/remote.h' l='61' type='struct remote * remote_get(const char * name)'/>
+<use f='codebrowser/builtin/archive.c' l='35' u='c' c='run_remote_archiver'/>
+<use f='codebrowser/builtin/clone.c' l='1061' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='1202' u='c' c='add_remote_or_group'/>
+<use f='codebrowser/builtin/fetch.c' l='1377' u='c' c='cmd_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1395' u='c' c='cmd_fetch'/>
+<use f='codebrowser/builtin/ls-remote.c' l='81' u='c' c='cmd_ls_remote'/>
+<use f='codebrowser/builtin/pull.c' l='629' u='c' c='get_upstream_branch'/>
+<use f='codebrowser/builtin/push.c' l='106' u='c' c='set_refspecs'/>
+<use f='codebrowser/builtin/push.c' l='214' u='c' c='is_workflow_triangular'/>
+<use f='codebrowser/builtin/remote.c' l='189' u='c' c='add'/>
+<use f='codebrowser/builtin/remote.c' l='621' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='628' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='756' u='c' c='rm'/>
+<use f='codebrowser/builtin/remote.c' l='855' u='c' c='get_remote_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='1423' u='c' c='set_remote_branches'/>
+<use f='codebrowser/builtin/remote.c' l='1477' u='c' c='get_url'/>
+<use f='codebrowser/builtin/remote.c' l='1545' u='c' c='set_url'/>
+<use f='codebrowser/builtin/send-pack.c' l='239' u='c' c='cmd_send_pack'/>
+<use f='codebrowser/remote-curl.c' l='1047' u='c' c='cmd_main'/>
+<use f='codebrowser/remote-testsvn.c' l='296' u='c' c='cmd_main'/>
+<def f='codebrowser/remote.c' l='708' ll='711' type='struct remote * remote_get(const char * name)'/>
+<use f='codebrowser/remote.c' l='1625' u='c' c='set_merge'/>
+<use f='codebrowser/remote.c' l='1726' u='c' c='branch_get_push_1'/>

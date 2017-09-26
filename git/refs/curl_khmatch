@@ -1,0 +1,2 @@
+<def f='include/curl/curl.h' l='707' ll='712'/>
+<doc f='include/curl/curl.h' l='706'>/* this is the set of status codes pass in to the callback */</doc>

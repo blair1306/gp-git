@@ -1,0 +1,6 @@
+<dec f='codebrowser/patch-ids.h' l='15' type='int commit_patch_id(struct commit * commit, struct diff_options * options, struct object_id * oid, int )'/>
+<use f='codebrowser/builtin/log.c' l='1371' u='c' c='prepare_bases'/>
+<def f='codebrowser/patch-ids.c' l='13' ll='26' type='int commit_patch_id(struct commit * commit, struct diff_options * options, struct object_id * oid, int diff_header_only)'/>
+<use f='codebrowser/patch-ids.c' l='49' u='c' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='53' u='c' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='83' u='c' c='init_patch_id_entry'/>

@@ -1,0 +1,24 @@
+<dec f='codebrowser/notes.h' l='65' type='const char * default_notes_ref()'/>
+<doc f='codebrowser/notes.h' l='53'>/*
+ * Return the default notes ref.
+ *
+ * The default notes ref is the notes ref that is used when notes_ref == NULL
+ * is passed to init_notes().
+ *
+ * This the first of the following to be defined:
+ * 1. The &apos;--ref&apos; option to &apos;git notes&apos;, if given
+ * 2. The $GIT_NOTES_REF environment variable, if set
+ * 3. The value of the core.notesRef config variable, if set
+ * 4. GIT_NOTES_DEFAULT_REF (i.e. &quot;refs/notes/commits&quot;)
+ */</doc>
+<use f='codebrowser/builtin/notes.c' l='816' u='c' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='845' u='c' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='852' u='c' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='860' u='c' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='863' u='c' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='864' u='c' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='866' u='c' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='976' u='c' c='get_ref'/>
+<def f='codebrowser/notes.c' l='990' ll='1000' type='const char * default_notes_ref()'/>
+<use f='codebrowser/notes.c' l='1014' u='c' c='init_notes'/>
+<use f='codebrowser/notes.c' l='1067' u='c' c='init_display_notes'/>

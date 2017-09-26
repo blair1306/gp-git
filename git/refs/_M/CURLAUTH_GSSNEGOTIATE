@@ -1,0 +1,5 @@
+<dec f='include/curl/curl.h' l='657'/>
+<doc f='include/curl/curl.h' l='656'>/* Deprecated since the advent of CURLAUTH_NEGOTIATE */</doc>
+<use f='codebrowser/http.c' l='83' u='c'/>
+<use f='codebrowser/http.c' l='1398' u='c'/>
+<use f='codebrowser/remote-curl.c' l='583' u='c'/>

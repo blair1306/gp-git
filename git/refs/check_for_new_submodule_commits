@@ -1,0 +1,5 @@
+<dec f='codebrowser/submodule.h' l='87' type='void check_for_new_submodule_commits(struct object_id * oid)'/>
+<use f='codebrowser/builtin/fetch.c' l='684' u='c' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='700' u='c' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='715' u='c' c='update_local_ref'/>
+<def f='codebrowser/submodule.c' l='1088' ll='1096' type='void check_for_new_submodule_commits(struct object_id * oid)'/>

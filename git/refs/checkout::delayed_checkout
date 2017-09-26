@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1495' type='struct delayed_checkout *'/>
+<offset>192</offset>
+<use f='codebrowser/entry.c' l='142' u='r' c='enable_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='143' u='w' c='enable_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='143' u='r' c='enable_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='144' u='r' c='enable_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='145' u='r' c='enable_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='146' u='r' c='enable_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='165' u='r' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='167' u='r' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='234' u='w' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='282' u='r' c='write_entry'/>

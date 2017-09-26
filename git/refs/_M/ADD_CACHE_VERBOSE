@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='648'/>
+<use f='codebrowser/builtin/add.c' l='96' u='c'/>
+<use f='codebrowser/builtin/add.c' l='412' u='c'/>
+<use f='codebrowser/read-cache.c' l='635' u='c'/>

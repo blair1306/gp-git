@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>string-list.h source code [codebrowser/string-list.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="string_list,string_list_item "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/string-list.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='string-list.h.html'>string-list.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/STRING_LIST_H">STRING_LIST_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/STRING_LIST_H" data-ref="_M/STRING_LIST_H">STRING_LIST_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="string_list_item" title='string_list_item' data-ref="string_list_item">string_list_item</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<em>char</em> *<dfn class="decl" id="string_list_item::string" title='string_list_item::string' data-ref="string_list_item::string">string</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<em>void</em> *<dfn class="decl" id="string_list_item::util" title='string_list_item::util' data-ref="string_list_item::util">util</dfn>;</td></tr>
+<tr><th id="7">7</th><td>};</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="compare_strings_fn" title='compare_strings_fn' data-type='int (*)(const char *, const char *)' data-ref="compare_strings_fn">compare_strings_fn</dfn>)(<em>const</em> <em>char</em> *, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><b>struct</b> <dfn class="type def" id="string_list" title='string_list' data-ref="string_list">string_list</dfn> {</td></tr>
+<tr><th id="12">12</th><td>	<b>struct</b> <a class="type" href="#string_list_item" title='string_list_item' data-ref="string_list_item">string_list_item</a> *<dfn class="decl" id="string_list::items" title='string_list::items' data-ref="string_list::items">items</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="string_list::nr" title='string_list::nr' data-ref="string_list::nr">nr</dfn>, <dfn class="decl" id="string_list::alloc" title='string_list::alloc' data-ref="string_list::alloc">alloc</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="string_list::strdup_strings" title='string_list::strdup_strings' data-ref="string_list::strdup_strings">strdup_strings</dfn>:<var>1</var>;</td></tr>
+<tr><th id="15">15</th><td>	<a class="typedef" href="#compare_strings_fn" title='compare_strings_fn' data-type='int (*)(const char *, const char *)' data-ref="compare_strings_fn">compare_strings_fn</a> <dfn class="decl" id="string_list::cmp" title='string_list::cmp' data-ref="string_list::cmp">cmp</dfn>; <i>/* NULL uses strcmp() */</i></td></tr>
+<tr><th id="16">16</th><td>};</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/STRING_LIST_INIT_NODUP" data-ref="_M/STRING_LIST_INIT_NODUP">STRING_LIST_INIT_NODUP</dfn> { NULL, 0, 0, 0, NULL }</u></td></tr>
+<tr><th id="19">19</th><td><u>#define <dfn class="macro" id="_M/STRING_LIST_INIT_DUP" data-ref="_M/STRING_LIST_INIT_DUP">STRING_LIST_INIT_DUP</dfn>   { NULL, 0, 0, 1, NULL }</u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><em>void</em> <dfn class="decl" id="string_list_init" title='string_list_init' data-ref="string_list_init">string_list_init</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col4 decl" id="8784list" title='list' data-type='struct string_list *' data-ref="8784list">list</dfn>, <em>int</em> <dfn class="local col5 decl" id="8785strdup_strings" title='strdup_strings' data-type='int' data-ref="8785strdup_strings">strdup_strings</dfn>);</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><em>void</em> <dfn class="decl" id="print_string_list" title='print_string_list' data-ref="print_string_list">print_string_list</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col6 decl" id="8786p" title='p' data-type='const struct string_list *' data-ref="8786p">p</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="8787text" title='text' data-type='const char *' data-ref="8787text">text</dfn>);</td></tr>
+<tr><th id="24">24</th><td><em>void</em> <dfn class="decl" id="string_list_clear" title='string_list_clear' data-ref="string_list_clear">string_list_clear</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col8 decl" id="8788list" title='list' data-type='struct string_list *' data-ref="8788list">list</dfn>, <em>int</em> <dfn class="local col9 decl" id="8789free_util" title='free_util' data-type='int' data-ref="8789free_util">free_util</dfn>);</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><i>/* Use this function to call a custom clear function on each util pointer */</i></td></tr>
+<tr><th id="27">27</th><td><i>/* The string associated with the util pointer is passed as the second argument */</i></td></tr>
+<tr><th id="28">28</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="string_list_clear_func_t" title='string_list_clear_func_t' data-type='void (*)(void *, const char *)' data-ref="string_list_clear_func_t">string_list_clear_func_t</dfn>)(<em>void</em> *<dfn class="local col0 decl" id="8790p" title='p' data-type='void *' data-ref="8790p">p</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="8791str" title='str' data-type='const char *' data-ref="8791str">str</dfn>);</td></tr>
+<tr><th id="29">29</th><td><em>void</em> <dfn class="decl" id="string_list_clear_func" title='string_list_clear_func' data-ref="string_list_clear_func">string_list_clear_func</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col2 decl" id="8792list" title='list' data-type='struct string_list *' data-ref="8792list">list</dfn>, <a class="typedef" href="#string_list_clear_func_t" title='string_list_clear_func_t' data-type='void (*)(void *, const char *)' data-ref="string_list_clear_func_t">string_list_clear_func_t</a> <dfn class="local col3 decl" id="8793clearfunc" title='clearfunc' data-type='string_list_clear_func_t' data-ref="8793clearfunc">clearfunc</dfn>);</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i>/* Use this function or the macro below to iterate over each item */</i></td></tr>
+<tr><th id="32">32</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="string_list_each_func_t" title='string_list_each_func_t' data-type='int (*)(struct string_list_item *, void *)' data-ref="string_list_each_func_t">string_list_each_func_t</dfn>)(<b>struct</b> <a class="type" href="#string_list_item" title='string_list_item' data-ref="string_list_item">string_list_item</a> *, <em>void</em> *);</td></tr>
+<tr><th id="33">33</th><td><em>int</em> <dfn class="decl" id="for_each_string_list" title='for_each_string_list' data-ref="for_each_string_list">for_each_string_list</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col4 decl" id="8794list" title='list' data-type='struct string_list *' data-ref="8794list">list</dfn>,</td></tr>
+<tr><th id="34">34</th><td>			 <a class="typedef" href="#string_list_each_func_t" title='string_list_each_func_t' data-type='int (*)(struct string_list_item *, void *)' data-ref="string_list_each_func_t">string_list_each_func_t</a>, <em>void</em> *<dfn class="local col5 decl" id="8795cb_data" title='cb_data' data-type='void *' data-ref="8795cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="35">35</th><td><u>#define <dfn class="macro" id="_M/for_each_string_list_item" data-ref="_M/for_each_string_list_item">for_each_string_list_item</dfn>(item,list) \</u></td></tr>
+<tr><th id="36">36</th><td><u>	for (item = (list)-&gt;items; item &lt; (list)-&gt;items + (list)-&gt;nr; ++item)</u></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><i>/*</i></td></tr>
+<tr><th id="39">39</th><td><i> * Apply want to each item in list, retaining only the ones for which</i></td></tr>
+<tr><th id="40">40</th><td><i> * the function returns true.  If free_util is true, call free() on</i></td></tr>
+<tr><th id="41">41</th><td><i> * the util members of any items that have to be deleted.  Preserve</i></td></tr>
+<tr><th id="42">42</th><td><i> * the order of the items that are retained.</i></td></tr>
+<tr><th id="43">43</th><td><i> */</i></td></tr>
+<tr><th id="44">44</th><td><em>void</em> <dfn class="decl" id="filter_string_list" title='filter_string_list' data-ref="filter_string_list">filter_string_list</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col6 decl" id="8796list" title='list' data-type='struct string_list *' data-ref="8796list">list</dfn>, <em>int</em> <dfn class="local col7 decl" id="8797free_util" title='free_util' data-type='int' data-ref="8797free_util">free_util</dfn>,</td></tr>
+<tr><th id="45">45</th><td>			<a class="typedef" href="#string_list_each_func_t" title='string_list_each_func_t' data-type='int (*)(struct string_list_item *, void *)' data-ref="string_list_each_func_t">string_list_each_func_t</a> <dfn class="local col8 decl" id="8798want" title='want' data-type='string_list_each_func_t' data-ref="8798want">want</dfn>, <em>void</em> *<dfn class="local col9 decl" id="8799cb_data" title='cb_data' data-type='void *' data-ref="8799cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><i>/*</i></td></tr>
+<tr><th id="48">48</th><td><i> * Remove any empty strings from the list.  If free_util is true, call</i></td></tr>
+<tr><th id="49">49</th><td><i> * free() on the util members of any items that have to be deleted.</i></td></tr>
+<tr><th id="50">50</th><td><i> * Preserve the order of the items that are retained.</i></td></tr>
+<tr><th id="51">51</th><td><i> */</i></td></tr>
+<tr><th id="52">52</th><td><em>void</em> <dfn class="decl" id="string_list_remove_empty_items" title='string_list_remove_empty_items' data-ref="string_list_remove_empty_items">string_list_remove_empty_items</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col0 decl" id="8800list" title='list' data-type='struct string_list *' data-ref="8800list">list</dfn>, <em>int</em> <dfn class="local col1 decl" id="8801free_util" title='free_util' data-type='int' data-ref="8801free_util">free_util</dfn>);</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i>/* Use these functions only on sorted lists: */</i></td></tr>
+<tr><th id="55">55</th><td><em>int</em> <dfn class="decl" id="string_list_has_string" title='string_list_has_string' data-ref="string_list_has_string">string_list_has_string</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col2 decl" id="8802list" title='list' data-type='const struct string_list *' data-ref="8802list">list</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="8803string" title='string' data-type='const char *' data-ref="8803string">string</dfn>);</td></tr>
+<tr><th id="56">56</th><td><em>int</em> <dfn class="decl" id="string_list_find_insert_index" title='string_list_find_insert_index' data-ref="string_list_find_insert_index">string_list_find_insert_index</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col4 decl" id="8804list" title='list' data-type='const struct string_list *' data-ref="8804list">list</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="8805string" title='string' data-type='const char *' data-ref="8805string">string</dfn>,</td></tr>
+<tr><th id="57">57</th><td>				  <em>int</em> <dfn class="local col6 decl" id="8806negative_existing_index" title='negative_existing_index' data-type='int' data-ref="8806negative_existing_index">negative_existing_index</dfn>);</td></tr>
+<tr><th id="58">58</th><td><i>/*</i></td></tr>
+<tr><th id="59">59</th><td><i> * Inserts the given string into the sorted list.</i></td></tr>
+<tr><th id="60">60</th><td><i> * If the string already exists, the list is not altered.</i></td></tr>
+<tr><th id="61">61</th><td><i> * Returns the string_list_item, the string is part of.</i></td></tr>
+<tr><th id="62">62</th><td><i> */</i></td></tr>
+<tr><th id="63">63</th><td><b>struct</b> <a class="type" href="#string_list_item" title='string_list_item' data-ref="string_list_item">string_list_item</a> *<dfn class="decl" id="string_list_insert" title='string_list_insert' data-ref="string_list_insert">string_list_insert</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col7 decl" id="8807list" title='list' data-type='struct string_list *' data-ref="8807list">list</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8808string" title='string' data-type='const char *' data-ref="8808string">string</dfn>);</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><i>/*</i></td></tr>
+<tr><th id="66">66</th><td><i> * Removes the given string from the sorted list.</i></td></tr>
+<tr><th id="67">67</th><td><i> * If the string doesn't exist, the list is not altered.</i></td></tr>
+<tr><th id="68">68</th><td><i> */</i></td></tr>
+<tr><th id="69">69</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="string_list_remove" title='string_list_remove' data-ref="string_list_remove">string_list_remove</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col9 decl" id="8809list" title='list' data-type='struct string_list *' data-ref="8809list">list</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="8810string" title='string' data-type='const char *' data-ref="8810string">string</dfn>,</td></tr>
+<tr><th id="70">70</th><td>			       <em>int</em> <dfn class="local col1 decl" id="8811free_util" title='free_util' data-type='int' data-ref="8811free_util">free_util</dfn>);</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><i>/*</i></td></tr>
+<tr><th id="73">73</th><td><i> * Checks if the given string is part of a sorted list. If it is part of the list,</i></td></tr>
+<tr><th id="74">74</th><td><i> * return the coresponding string_list_item, NULL otherwise.</i></td></tr>
+<tr><th id="75">75</th><td><i> */</i></td></tr>
+<tr><th id="76">76</th><td><b>struct</b> <a class="type" href="#string_list_item" title='string_list_item' data-ref="string_list_item">string_list_item</a> *<dfn class="decl" id="string_list_lookup" title='string_list_lookup' data-ref="string_list_lookup">string_list_lookup</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col2 decl" id="8812list" title='list' data-type='struct string_list *' data-ref="8812list">list</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="8813string" title='string' data-type='const char *' data-ref="8813string">string</dfn>);</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><i>/*</i></td></tr>
+<tr><th id="79">79</th><td><i> * Remove all but the first of consecutive entries with the same</i></td></tr>
+<tr><th id="80">80</th><td><i> * string value.  If free_util is true, call free() on the util</i></td></tr>
+<tr><th id="81">81</th><td><i> * members of any items that have to be deleted.</i></td></tr>
+<tr><th id="82">82</th><td><i> */</i></td></tr>
+<tr><th id="83">83</th><td><em>void</em> <dfn class="decl" id="string_list_remove_duplicates" title='string_list_remove_duplicates' data-ref="string_list_remove_duplicates">string_list_remove_duplicates</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col4 decl" id="8814sorted_list" title='sorted_list' data-type='struct string_list *' data-ref="8814sorted_list">sorted_list</dfn>, <em>int</em> <dfn class="local col5 decl" id="8815free_util" title='free_util' data-type='int' data-ref="8815free_util">free_util</dfn>);</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><i>/* Use these functions only on unsorted lists: */</i></td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><i>/*</i></td></tr>
+<tr><th id="89">89</th><td><i> * Add string to the end of list.  If list-&gt;strdup_string is set, then</i></td></tr>
+<tr><th id="90">90</th><td><i> * string is copied; otherwise the new string_list_entry refers to the</i></td></tr>
+<tr><th id="91">91</th><td><i> * input string.</i></td></tr>
+<tr><th id="92">92</th><td><i> */</i></td></tr>
+<tr><th id="93">93</th><td><b>struct</b> <a class="type" href="#string_list_item" title='string_list_item' data-ref="string_list_item">string_list_item</a> *<dfn class="decl" id="string_list_append" title='string_list_append' data-ref="string_list_append">string_list_append</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col6 decl" id="8816list" title='list' data-type='struct string_list *' data-ref="8816list">list</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="8817string" title='string' data-type='const char *' data-ref="8817string">string</dfn>);</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><i>/*</i></td></tr>
+<tr><th id="96">96</th><td><i> * Like string_list_append(), except string is never copied.  When</i></td></tr>
+<tr><th id="97">97</th><td><i> * list-&gt;strdup_strings is set, this function can be used to hand</i></td></tr>
+<tr><th id="98">98</th><td><i> * ownership of a malloc()ed string to list without making an extra</i></td></tr>
+<tr><th id="99">99</th><td><i> * copy.</i></td></tr>
+<tr><th id="100">100</th><td><i> */</i></td></tr>
+<tr><th id="101">101</th><td><b>struct</b> <a class="type" href="#string_list_item" title='string_list_item' data-ref="string_list_item">string_list_item</a> *<dfn class="decl" id="string_list_append_nodup" title='string_list_append_nodup' data-ref="string_list_append_nodup">string_list_append_nodup</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col8 decl" id="8818list" title='list' data-type='struct string_list *' data-ref="8818list">list</dfn>, <em>char</em> *<dfn class="local col9 decl" id="8819string" title='string' data-type='char *' data-ref="8819string">string</dfn>);</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><em>void</em> <dfn class="decl" id="string_list_sort" title='string_list_sort' data-ref="string_list_sort">string_list_sort</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col0 decl" id="8820list" title='list' data-type='struct string_list *' data-ref="8820list">list</dfn>);</td></tr>
+<tr><th id="104">104</th><td><em>int</em> <dfn class="decl" id="unsorted_string_list_has_string" title='unsorted_string_list_has_string' data-ref="unsorted_string_list_has_string">unsorted_string_list_has_string</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col1 decl" id="8821list" title='list' data-type='struct string_list *' data-ref="8821list">list</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="8822string" title='string' data-type='const char *' data-ref="8822string">string</dfn>);</td></tr>
+<tr><th id="105">105</th><td><b>struct</b> <a class="type" href="#string_list_item" title='string_list_item' data-ref="string_list_item">string_list_item</a> *<dfn class="decl" id="unsorted_string_list_lookup" title='unsorted_string_list_lookup' data-ref="unsorted_string_list_lookup">unsorted_string_list_lookup</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col3 decl" id="8823list" title='list' data-type='struct string_list *' data-ref="8823list">list</dfn>,</td></tr>
+<tr><th id="106">106</th><td>						     <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="8824string" title='string' data-type='const char *' data-ref="8824string">string</dfn>);</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><em>void</em> <dfn class="decl" id="unsorted_string_list_delete_item" title='unsorted_string_list_delete_item' data-ref="unsorted_string_list_delete_item">unsorted_string_list_delete_item</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col5 decl" id="8825list" title='list' data-type='struct string_list *' data-ref="8825list">list</dfn>, <em>int</em> <dfn class="local col6 decl" id="8826i" title='i' data-type='int' data-ref="8826i">i</dfn>, <em>int</em> <dfn class="local col7 decl" id="8827free_util" title='free_util' data-type='int' data-ref="8827free_util">free_util</dfn>);</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><i>/*</i></td></tr>
+<tr><th id="111">111</th><td><i> * Split string into substrings on character delim and append the</i></td></tr>
+<tr><th id="112">112</th><td><i> * substrings to list.  The input string is not modified.</i></td></tr>
+<tr><th id="113">113</th><td><i> * list-&gt;strdup_strings must be set, as new memory needs to be</i></td></tr>
+<tr><th id="114">114</th><td><i> * allocated to hold the substrings.  If maxsplit is non-negative,</i></td></tr>
+<tr><th id="115">115</th><td><i> * then split at most maxsplit times.  Return the number of substrings</i></td></tr>
+<tr><th id="116">116</th><td><i> * appended to list.</i></td></tr>
+<tr><th id="117">117</th><td><i> *</i></td></tr>
+<tr><th id="118">118</th><td><i> * Examples:</i></td></tr>
+<tr><th id="119">119</th><td><i> *   string_list_split(l, "foo:bar:baz", ':', -1) -&gt; ["foo", "bar", "baz"]</i></td></tr>
+<tr><th id="120">120</th><td><i> *   string_list_split(l, "foo:bar:baz", ':', 0) -&gt; ["foo:bar:baz"]</i></td></tr>
+<tr><th id="121">121</th><td><i> *   string_list_split(l, "foo:bar:baz", ':', 1) -&gt; ["foo", "bar:baz"]</i></td></tr>
+<tr><th id="122">122</th><td><i> *   string_list_split(l, "foo:bar:", ':', -1) -&gt; ["foo", "bar", ""]</i></td></tr>
+<tr><th id="123">123</th><td><i> *   string_list_split(l, "", ':', -1) -&gt; [""]</i></td></tr>
+<tr><th id="124">124</th><td><i> *   string_list_split(l, ":", ':', -1) -&gt; ["", ""]</i></td></tr>
+<tr><th id="125">125</th><td><i> */</i></td></tr>
+<tr><th id="126">126</th><td><em>int</em> <dfn class="decl" id="string_list_split" title='string_list_split' data-ref="string_list_split">string_list_split</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col8 decl" id="8828list" title='list' data-type='struct string_list *' data-ref="8828list">list</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="8829string" title='string' data-type='const char *' data-ref="8829string">string</dfn>,</td></tr>
+<tr><th id="127">127</th><td>		      <em>int</em> <dfn class="local col0 decl" id="8830delim" title='delim' data-type='int' data-ref="8830delim">delim</dfn>, <em>int</em> <dfn class="local col1 decl" id="8831maxsplit" title='maxsplit' data-type='int' data-ref="8831maxsplit">maxsplit</dfn>);</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><i>/*</i></td></tr>
+<tr><th id="130">130</th><td><i> * Like string_list_split(), except that string is split in-place: the</i></td></tr>
+<tr><th id="131">131</th><td><i> * delimiter characters in string are overwritten with NULs, and the</i></td></tr>
+<tr><th id="132">132</th><td><i> * new string_list_items point into string (which therefore must not</i></td></tr>
+<tr><th id="133">133</th><td><i> * be modified or freed while the string_list is in use).</i></td></tr>
+<tr><th id="134">134</th><td><i> * list-&gt;strdup_strings must *not* be set.</i></td></tr>
+<tr><th id="135">135</th><td><i> */</i></td></tr>
+<tr><th id="136">136</th><td><em>int</em> <dfn class="decl" id="string_list_split_in_place" title='string_list_split_in_place' data-ref="string_list_split_in_place">string_list_split_in_place</dfn>(<b>struct</b> <a class="type" href="#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col2 decl" id="8832list" title='list' data-type='struct string_list *' data-ref="8832list">list</dfn>, <em>char</em> *<dfn class="local col3 decl" id="8833string" title='string' data-type='char *' data-ref="8833string">string</dfn>,</td></tr>
+<tr><th id="137">137</th><td>			       <em>int</em> <dfn class="local col4 decl" id="8834delim" title='delim' data-type='int' data-ref="8834delim">delim</dfn>, <em>int</em> <dfn class="local col5 decl" id="8835maxsplit" title='maxsplit' data-type='int' data-ref="8835maxsplit">maxsplit</dfn>);</td></tr>
+<tr><th id="138">138</th><td><u>#<span data-ppcond="1">endif</span> /* STRING_LIST_H */</u></td></tr>
+<tr><th id="139">139</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='abspath.c.html'>codebrowser/abspath.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

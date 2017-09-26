@@ -1,0 +1,16 @@
+<dec f='codebrowser/notes.h' l='223' type='int write_notes_tree(struct notes_tree * t, unsigned char * result)'/>
+<doc f='codebrowser/notes.h' l='211'>/*
+ * Write the given notes_tree structure to the object database
+ *
+ * Creates a new tree object encapsulating the current state of the given
+ * notes_tree, and stores its SHA1 into the &apos;result&apos; argument.
+ *
+ * Returns zero on success, non-zero on failure.
+ *
+ * IMPORTANT: Changes made to the given notes_tree are not persistent until
+ * this function has returned zero. Please also remember to create a
+ * corresponding commit object, and update the appropriate notes ref.
+ */</doc>
+<use f='codebrowser/notes-cache.c' l='57' u='c' c='notes_cache_write'/>
+<use f='codebrowser/notes-utils.c' l='15' u='c' c='create_notes_commit'/>
+<def f='codebrowser/notes.c' l='1144' ll='1170' type='int write_notes_tree(struct notes_tree * t, unsigned char * result)'/>

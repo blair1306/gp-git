@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='198' type='6'/>
+<use f='codebrowser/builtin/log.c' l='601' u='r' c='cmd_show'/>
+<use f='codebrowser/builtin/log.c' l='620' u='r' c='cmd_show'/>
+<use f='codebrowser/diff.c' l='79' u='r' c='parse_diff_color_slot'/>
+<use f='codebrowser/log-tree.c' l='240' u='r' c='format_decorations_extended'/>
+<use f='codebrowser/log-tree.c' l='606' u='r' c='show_log'/>
+<use f='codebrowser/pretty.c' l='1144' u='r' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1149' u='r' c='format_commit_one'/>

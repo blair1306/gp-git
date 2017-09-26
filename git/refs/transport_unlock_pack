@@ -1,0 +1,6 @@
+<dec f='codebrowser/transport.h' l='235' type='void transport_unlock_pack(struct transport * transport)'/>
+<use f='codebrowser/builtin/clone.c' l='1184' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='168' u='c' c='unlock_pack'/>
+<use f='codebrowser/builtin/fetch.c' l='170' u='c' c='unlock_pack'/>
+<use f='codebrowser/builtin/fetch.c' l='930' u='c' c='fetch_refs'/>
+<def f='codebrowser/transport.c' l='1145' ll='1151' type='void transport_unlock_pack(struct transport * transport)'/>

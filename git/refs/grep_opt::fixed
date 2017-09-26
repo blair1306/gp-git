@@ -1,0 +1,5 @@
+<dec f='codebrowser/grep.h' l='136' type='int'/>
+<offset>1216</offset>
+<use f='codebrowser/grep.c' l='200' u='w' c='grep_set_pattern_type_option'/>
+<use f='codebrowser/grep.c' l='635' u='r' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='645' u='r' c='compile_regexp'/>

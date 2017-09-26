@@ -1,0 +1,2 @@
+<def f='codebrowser/ewah/ewok_rlw.h' l='78' ll='81' type='eword_t rlw_size(const eword_t * self)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='65' u='c' c='add_empty_words'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/dir.h' l='215' type='int match_pathspec(const struct pathspec * pathspec, const char * name, int namelen, int prefix, char * seen, int is_dir)'/>
+<use f='codebrowser/dir.h' l='330' u='c' c='ce_path_match'/>
+<use f='codebrowser/dir.h' l='340' u='c' c='dir_path_match'/>
+<use f='codebrowser/archive.c' l='297' u='c' c='reject_entry'/>
+<use f='codebrowser/builtin/grep.c' l='489' u='c' c='grep_cache'/>
+<use f='codebrowser/builtin/ls-files.c' l='230' u='c' c='show_ce'/>
+<use f='codebrowser/builtin/ls-files.c' l='266' u='c' c='show_ru_info'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='249' u='c' c='module_list_compute'/>
+<def f='codebrowser/dir.c' l='447' ll='461' type='int match_pathspec(const struct pathspec * ps, const char * name, int namelen, int prefix, char * seen, int is_dir)'/>
+<use f='codebrowser/rerere.c' l='1124' u='c' c='rerere_forget'/>
+<use f='codebrowser/submodule.c' l='310' u='c' c='is_submodule_active'/>

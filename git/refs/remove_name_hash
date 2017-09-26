@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='354' type='void remove_name_hash(struct index_state * istate, struct cache_entry * ce)'/>
+<def f='codebrowser/name-hash.c' l='624' ll='633' type='void remove_name_hash(struct index_state * istate, struct cache_entry * ce)'/>
+<use f='codebrowser/read-cache.c' l='61' u='c' c='replace_index_entry'/>
+<use f='codebrowser/read-cache.c' l='512' u='c' c='remove_index_entry_at'/>
+<use f='codebrowser/read-cache.c' l='535' u='c' c='remove_marked_cache_entries'/>

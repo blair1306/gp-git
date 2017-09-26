@@ -1,0 +1,9 @@
+<dec f='codebrowser/trailer.h' l='16' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/pretty.c' l='879' u='r' c='format_trailers'/>
+<use f='codebrowser/pretty.c' l='880' u='r' c='format_trailers'/>
+<use f='codebrowser/ref-filter.c' l='1074' u='r' c='grab_sub_body_contents'/>
+<use f='codebrowser/ref-filter.c' l='1075' u='r' c='grab_sub_body_contents'/>
+<use f='codebrowser/sequencer.c' l='166' u='r' c='has_conforming_footer'/>
+<use f='codebrowser/trailer.c' l='900' u='r' c='process_input_file'/>
+<use f='codebrowser/trailer.c' l='1044' u='w' c='trailer_info_get'/>

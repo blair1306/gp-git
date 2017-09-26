@@ -1,0 +1,11 @@
+<dec f='codebrowser/attr.h' l='63' type='int git_check_attr(const char * path, struct attr_check * check)'/>
+<use f='codebrowser/archive.c' l='130' u='c' c='write_archive_entry'/>
+<def f='codebrowser/attr.c' l='1136' ll='1151' type='int git_check_attr(const char * path, struct attr_check * check)'/>
+<use f='codebrowser/builtin/check-attr.c' l='68' u='c' c='check_attr'/>
+<use f='codebrowser/builtin/pack-objects.c' l='913' u='c' c='no_try_delta'/>
+<use f='codebrowser/convert.c' l='1038' u='c' c='convert_attrs'/>
+<use f='codebrowser/dir.c' l='232' u='c' c='match_attrs'/>
+<use f='codebrowser/ll-merge.c' l='374' u='c' c='ll_merge'/>
+<use f='codebrowser/ll-merge.c' l='401' u='c' c='ll_merge_marker_size'/>
+<use f='codebrowser/userdiff.c' l='272' u='c' c='userdiff_find_by_path'/>
+<use f='codebrowser/ws.c' l='81' u='c' c='whitespace_rule'/>

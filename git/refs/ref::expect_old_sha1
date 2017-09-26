@@ -1,0 +1,6 @@
+<dec f='codebrowser/remote.h' l='91' type='unsigned int'/>
+<offset>642</offset>
+<use f='codebrowser/remote.c' l='1553' u='r' c='set_ref_status_for_push'/>
+<use f='codebrowser/remote.c' l='2350' u='w' c='apply_cas'/>
+<use f='codebrowser/remote.c' l='2362' u='w' c='apply_cas'/>
+<use f='codebrowser/transport-helper.c' l='880' u='r' c='push_refs_with_push'/>

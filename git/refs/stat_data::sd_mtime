@@ -1,0 +1,20 @@
+<dec f='codebrowser/cache.h' l='167' type='struct cache_time'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/ls-files.c' l='114' u='m' c='print_debug'/>
+<use f='codebrowser/builtin/ls-files.c' l='114' u='m' c='print_debug'/>
+<use f='codebrowser/dir.c' l='2418' u='m' c='stat_data_to_disk'/>
+<use f='codebrowser/dir.c' l='2418' u='m' c='stat_data_to_disk'/>
+<use f='codebrowser/dir.c' l='2419' u='m' c='stat_data_to_disk'/>
+<use f='codebrowser/dir.c' l='2419' u='m' c='stat_data_to_disk'/>
+<use f='codebrowser/dir.c' l='2569' u='m' c='stat_data_from_disk'/>
+<use f='codebrowser/dir.c' l='2569' u='m' c='stat_data_from_disk'/>
+<use f='codebrowser/dir.c' l='2570' u='m' c='stat_data_from_disk'/>
+<use f='codebrowser/dir.c' l='2570' u='m' c='stat_data_from_disk'/>
+<use f='codebrowser/read-cache.c' l='89' u='m' c='fill_stat_data'/>
+<use f='codebrowser/read-cache.c' l='91' u='m' c='fill_stat_data'/>
+<use f='codebrowser/read-cache.c' l='103' u='m' c='match_stat_data'/>
+<use f='codebrowser/read-cache.c' l='283' u='m' c='is_racy_stat'/>
+<use f='codebrowser/read-cache.c' l='1580' u='m' c='cache_entry_from_ondisk'/>
+<use f='codebrowser/read-cache.c' l='1582' u='m' c='cache_entry_from_ondisk'/>
+<use f='codebrowser/read-cache.c' l='2041' u='m' c='copy_cache_entry_to_ondisk'/>
+<use f='codebrowser/read-cache.c' l='2043' u='m' c='copy_cache_entry_to_ondisk'/>

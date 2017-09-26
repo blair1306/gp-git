@@ -1,0 +1,9 @@
+<dec f='include/unistd.h' l='806' type='int symlink(const char * __from, const char * __to)'/>
+<doc f='include/unistd.h' l='805'>/* Make a symbolic link to FROM named TO.  */</doc>
+<use f='codebrowser/apply.c' l='4321' u='c' c='try_create_file'/>
+<use f='codebrowser/builtin/difftool.c' l='506' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/init-db.c' l='78' u='c' c='copy_templates_1'/>
+<use f='codebrowser/builtin/init-db.c' l='277' u='c' c='create_default_files'/>
+<use f='codebrowser/entry.c' l='270' u='c' c='write_entry'/>
+<use f='codebrowser/merge-recursive.c' l='840' u='c' c='update_file_flags'/>
+<use f='codebrowser/refs/files-backend.c' l='1710' u='c' c='create_ref_symlink'/>

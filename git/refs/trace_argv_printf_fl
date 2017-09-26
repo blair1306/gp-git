@@ -1,0 +1,7 @@
+<dec f='codebrowser/trace.h' l='104' type='void trace_argv_printf_fl(const char * file, int line, const char ** argv, const char * format)'/>
+<use f='codebrowser/exec_cmd.c' l='118' macro='1' u='c'/>
+<use f='codebrowser/git.c' l='268' macro='1' u='c'/>
+<use f='codebrowser/git.c' l='340' macro='1' u='c'/>
+<use f='codebrowser/git.c' l='572' macro='1' u='c'/>
+<use f='codebrowser/run-command.c' l='626' macro='1' u='c'/>
+<def f='codebrowser/trace.c' l='272' ll='279' type='void trace_argv_printf_fl(const char * file, int line, const char ** argv, const char * format)'/>

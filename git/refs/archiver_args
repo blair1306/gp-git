@@ -1,0 +1,13 @@
+<def f='codebrowser/archive.h' l='6' ll='18'/>
+<size>80</size>
+<mbr r='archiver_args::base' o='0' t='const char *'/>
+<mbr r='archiver_args::baselen' o='64' t='size_t'/>
+<mbr r='archiver_args::tree' o='128' t='struct tree *'/>
+<mbr r='archiver_args::commit_sha1' o='192' t='const unsigned char *'/>
+<mbr r='archiver_args::commit' o='256' t='const struct commit *'/>
+<mbr r='archiver_args::time' o='320' t='timestamp_t'/>
+<mbr r='archiver_args::pathspec' o='384' t='struct pathspec'/>
+<mbr r='archiver_args::verbose' o='576' t='unsigned int'/>
+<mbr r='archiver_args::worktree_attributes' o='577' t='unsigned int'/>
+<mbr r='archiver_args::convert' o='578' t='unsigned int'/>
+<mbr r='archiver_args::compression_level' o='608' t='int'/>

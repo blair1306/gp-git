@@ -1,0 +1,6 @@
+<dec f='codebrowser/xdiff/xtypes.h' l='30' type='long'/>
+<offset>64</offset>
+<use f='codebrowser/xdiff/xutils.c' l='104' u='r' c='xdl_cha_alloc'/>
+<use f='codebrowser/xdiff/xutils.c' l='109' u='w' c='xdl_cha_alloc'/>
+<use f='codebrowser/xdiff/xutils.c' l='119' u='r' c='xdl_cha_alloc'/>
+<use f='codebrowser/xdiff/xutils.c' l='120' u='w' c='xdl_cha_alloc'/>

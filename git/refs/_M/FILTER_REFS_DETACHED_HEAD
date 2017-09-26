@@ -1,0 +1,6 @@
+<dec f='codebrowser/ref-filter.h' l='23'/>
+<use f='codebrowser/builtin/branch.c' l='298' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='661' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1301' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1803' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1990' u='c'/>

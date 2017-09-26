@@ -1,0 +1,14 @@
+<dec f='codebrowser/refs/refs-internal.h' l='413' type='struct ref_iterator * overlay_ref_iterator_begin(struct ref_iterator * front, struct ref_iterator * back)'/>
+<doc f='codebrowser/refs/refs-internal.h' l='402'>/*
+ * An iterator consisting of the union of the entries from front and
+ * back. If there are entries common to the two sub-iterators, use the
+ * one from front. Each iterator must iterate over its entries in
+ * strcmp() order by refname for this to work.
+ *
+ * The new iterator takes ownership of its arguments and frees them
+ * when the iteration is over. As a convenience to callers, if front
+ * or back is an empty_ref_iterator, then abort that one immediately
+ * and return the other iterator directly, without wrapping it.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='812' u='c' c='files_ref_iterator_begin'/>
+<def f='codebrowser/refs/iterator.c' l='257' ll='275' type='struct ref_iterator * overlay_ref_iterator_begin(struct ref_iterator * front, struct ref_iterator * back)'/>

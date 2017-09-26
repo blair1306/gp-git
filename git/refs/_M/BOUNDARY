@@ -1,0 +1,9 @@
+<dec f='codebrowser/revision.h' l='16'/>
+<use f='codebrowser/builtin/log.c' l='1694' u='c'/>
+<use f='codebrowser/graph.c' l='836' u='c'/>
+<use f='codebrowser/revision.c' l='818' u='c'/>
+<use f='codebrowser/revision.c' l='838' u='c'/>
+<use f='codebrowser/revision.c' l='859' u='c'/>
+<use f='codebrowser/revision.c' l='3218' u='c'/>
+<use f='codebrowser/revision.c' l='3220' u='c'/>
+<use f='codebrowser/revision.c' l='3353' u='c'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/strbuf.h' l='343' type='void strbuf_addftime(struct strbuf * sb, const char * fmt, const struct tm * tm, int tz_offset, int suppress_tz_name)'/>
+<doc f='codebrowser/strbuf.h' l='335'>/**
+ * Add the time specified by `tm`, as formatted by `strftime`.
+ * `tz_offset` is in decimal hhmm format, e.g. -600 means six hours west
+ * of Greenwich, and it&apos;s used to expand %z internally.  However, tokens
+ * with modifiers (e.g. %Ez) are passed to `strftime`.
+ * `suppress_tz_name`, when set, expands %Z internally to the empty
+ * string rather than passing it to `strftime`.
+ */</doc>
+<use f='codebrowser/date.c' l='258' u='c' c='show_date'/>
+<def f='codebrowser/strbuf.c' l='782' ll='845' type='void strbuf_addftime(struct strbuf * sb, const char * fmt, const struct tm * tm, int tz_offset, int suppress_tz_name)'/>

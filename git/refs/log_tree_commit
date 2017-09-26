@@ -1,0 +1,12 @@
+<dec f='codebrowser/log-tree.h' l='13' type='int log_tree_commit(struct rev_info * , struct commit * )'/>
+<use f='codebrowser/bisect.c' l='897' u='c' c='show_diff_tree'/>
+<use f='codebrowser/builtin/am.c' l='1409' u='c' c='write_commit_patch'/>
+<use f='codebrowser/builtin/commit.c' l='1495' u='c' c='print_summary'/>
+<use f='codebrowser/builtin/commit.c' l='1498' u='c' c='print_summary'/>
+<use f='codebrowser/builtin/diff-tree.c' l='16' u='c' c='diff_tree_commit_oid'/>
+<use f='codebrowser/builtin/diff-tree.c' l='38' u='c' c='stdin_diff_commit'/>
+<use f='codebrowser/builtin/log.c' l='271' u='c' c='log_show_early'/>
+<use f='codebrowser/builtin/log.c' l='369' u='c' c='cmd_log_walk'/>
+<use f='codebrowser/builtin/log.c' l='1807' u='c' c='cmd_format_patch'/>
+<def f='codebrowser/log-tree.c' l='857' ll='885' type='int log_tree_commit(struct rev_info * opt, struct commit * commit)'/>
+<use f='codebrowser/sequencer.c' l='1791' u='c' c='make_patch'/>

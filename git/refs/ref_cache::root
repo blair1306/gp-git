@@ -1,0 +1,10 @@
+<dec f='codebrowser/refs/ref-cache.h' l='15' type='struct ref_entry *'/>
+<use f='codebrowser/refs/files-backend.c' l='260' u='r' c='get_loose_ref_cache'/>
+<use f='codebrowser/refs/files-backend.c' l='266' u='r' c='get_loose_ref_cache'/>
+<offset>0</offset>
+<use f='codebrowser/refs/packed-backend.c' l='209' u='r' c='read_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='227' u='r' c='read_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='316' u='r' c='get_packed_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='53' u='w' c='create_ref_cache'/>
+<use f='codebrowser/refs/ref-cache.c' l='73' u='r' c='free_ref_cache'/>
+<use f='codebrowser/refs/ref-cache.c' l='565' u='r' c='cache_ref_iterator_begin'/>

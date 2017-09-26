@@ -1,0 +1,5 @@
+<def f='codebrowser/builtin.h' l='107' ll='111'/>
+<size>8</size>
+<mbr r='fmt_merge_msg_opts::add_title' o='0' t='unsigned int'/>
+<mbr r='fmt_merge_msg_opts::credit_people' o='1' t='unsigned int'/>
+<mbr r='fmt_merge_msg_opts::shortlog_len' o='32' t='int'/>

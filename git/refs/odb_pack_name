@@ -1,0 +1,18 @@
+<dec f='codebrowser/cache.h' l='1660' type='char * odb_pack_name(struct strbuf * buf, const unsigned char * sha1, const char * ext)'/>
+<doc f='codebrowser/cache.h' l='1653'>/*
+ * Generate the filename to be used for a pack file with checksum &quot;sha1&quot; and
+ * extension &quot;ext&quot;. The result is written into the strbuf &quot;buf&quot;, overwriting
+ * any existing contents. A pointer to buf-&gt;buf is returned as a convenience.
+ *
+ * Example: odb_pack_name(out, sha1, &quot;idx&quot;) =&gt; &quot;.git/objects/pack/pack-1234..idx&quot;
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='1415' u='c' c='final'/>
+<use f='codebrowser/builtin/index-pack.c' l='1436' u='c' c='final'/>
+<use f='codebrowser/builtin/index-pack.c' l='1444' u='c' c='final'/>
+<use f='codebrowser/fast-import.c' l='951' u='c' c='keep_pack'/>
+<use f='codebrowser/fast-import.c' l='959' u='c' c='keep_pack'/>
+<use f='codebrowser/fast-import.c' l='963' u='c' c='keep_pack'/>
+<use f='codebrowser/fast-import.c' l='977' u='c' c='unkeep_all_packs'/>
+<def f='codebrowser/sha1_file.c' l='281' ll='289' type='char * odb_pack_name(struct strbuf * buf, const unsigned char * sha1, const char * ext)'/>
+<use f='codebrowser/sha1_file.c' l='294' u='c' c='sha1_pack_name'/>
+<use f='codebrowser/sha1_file.c' l='300' u='c' c='sha1_pack_index_name'/>

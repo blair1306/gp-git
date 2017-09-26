@@ -1,0 +1,4 @@
+<dec f='codebrowser/merge-recursive.c' l='100' type='4'/>
+<use f='codebrowser/merge-recursive.c' l='156' u='r' c='setup_rename_conflict_info'/>
+<use f='codebrowser/merge-recursive.c' l='1457' u='r' c='process_renames'/>
+<use f='codebrowser/merge-recursive.c' l='1829' c='process_entry'/>

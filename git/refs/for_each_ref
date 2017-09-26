@@ -1,0 +1,34 @@
+<dec f='codebrowser/refs.h' l='290' type='int for_each_ref(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/builtin/checkout.c' l='796' u='c' c='orphaned_commit_warning'/>
+<use f='codebrowser/builtin/fetch.c' l='250' u='c' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='1087' u='c' c='do_fetch'/>
+<use f='codebrowser/builtin/name-rev.c' l='468' u='c' c='cmd_name_rev'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3083' u='c' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/receive-pack.c' l='295' u='c' c='write_head_info'/>
+<use f='codebrowser/builtin/reflog.c' l='355' u='c' c='reflog_expiry_prepare'/>
+<use f='codebrowser/builtin/remote.c' l='686' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='786' u='c' c='rm'/>
+<use f='codebrowser/builtin/remote.c' l='875' u='c' c='get_remote_ref_states'/>
+<use f='codebrowser/builtin/rev-parse.c' l='752' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/show-branch.c' l='455' u='c' c='snarf_refs'/>
+<use f='codebrowser/builtin/show-branch.c' l='461' u='c' c='snarf_refs'/>
+<use f='codebrowser/builtin/show-branch.c' l='527' u='c' c='append_one_rev'/>
+<use f='codebrowser/builtin/show-ref.c' l='109' u='c' c='exclude_existing'/>
+<use f='codebrowser/builtin/show-ref.c' l='214' u='c' c='cmd_show_ref'/>
+<use f='codebrowser/fetch-pack.c' l='337' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='340' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='737' u='c' c='everything_local'/>
+<use f='codebrowser/help.c' l='447' u='c' c='guess_refs'/>
+<use f='codebrowser/log-tree.c' l='157' u='c' c='load_ref_decorations'/>
+<use f='codebrowser/reachable.c' l='175' u='c' c='mark_reachable_objects'/>
+<use f='codebrowser/refs.c' l='415' u='c' c='for_each_glob_ref_in'/>
+<def f='codebrowser/refs.c' l='1324' ll='1327' type='int for_each_ref(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/remote.c' l='2148' u='c' c='get_local_heads'/>
+<use f='codebrowser/remote.c' l='2251' u='c' c='get_stale_heads'/>
+<use f='codebrowser/server-info.c' l='75' u='c' c='generate_info_refs'/>
+<use f='codebrowser/sha1_name.c' l='1534' u='c' c='get_oid_with_context_1'/>
+<use f='codebrowser/shallow.c' l='602' u='c' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='701' u='c' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='736' u='c' c='delayed_reachability_test'/>
+<use f='codebrowser/submodule.c' l='1091' u='c' c='check_for_new_submodule_commits'/>
+<use f='codebrowser/walker.c' l='277' u='c' c='walker_fetch'/>

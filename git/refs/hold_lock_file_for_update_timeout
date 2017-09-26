@@ -1,0 +1,13 @@
+<dec f='codebrowser/lockfile.h' l='162' type='int hold_lock_file_for_update_timeout(struct lock_file * lk, const char * path, int flags, long timeout_ms)'/>
+<use f='codebrowser/lockfile.h' l='175' u='c' c='hold_lock_file_for_update'/>
+<doc f='codebrowser/lockfile.h' l='154'>/*
+ * Attempt to create a lockfile for the file at `path` and return a
+ * file descriptor for writing to it, or -1 on error. If the file is
+ * currently locked, retry with quadratic backoff for at least
+ * timeout_ms milliseconds. If timeout_ms is 0, try exactly once; if
+ * timeout_ms is -1, retry indefinitely. The flags argument and error
+ * handling are described above.
+ */</doc>
+<def f='codebrowser/lockfile.c' l='173' ll='188' type='int hold_lock_file_for_update_timeout(struct lock_file * lk, const char * path, int flags, long timeout_ms)'/>
+<doc f='codebrowser/lockfile.c' l='172'>/* This should return a meaningful errno on failure */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='540' u='c' c='packed_refs_lock'/>

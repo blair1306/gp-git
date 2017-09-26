@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>graph.h source code [codebrowser/graph.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/graph.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='graph.h.html'>graph.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/GRAPH_H">GRAPH_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/GRAPH_H" data-ref="_M/GRAPH_H">GRAPH_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="diff.h.html">"diff.h"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><i>/* A graph is a pointer to this opaque structure */</i></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph" id="git_graph">git_graph</a>;</td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><i>/*</i></td></tr>
+<tr><th id="9">9</th><td><i> * Called to setup global display of line_prefix diff option.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Passed a diff_options structure which indicates the line_prefix and the</i></td></tr>
+<tr><th id="12">12</th><td><i> * file to output the prefix to. This is sort of a hack used so that the</i></td></tr>
+<tr><th id="13">13</th><td><i> * line_prefix will be honored by all flows which also honor "--graph"</i></td></tr>
+<tr><th id="14">14</th><td><i> * regardless of whether a graph has actually been setup. The normal graph</i></td></tr>
+<tr><th id="15">15</th><td><i> * flow will honor the exact diff_options passed, but a NULL graph will cause</i></td></tr>
+<tr><th id="16">16</th><td><i> * display of a line_prefix to stdout.</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td><em>void</em> <dfn class="decl" id="graph_setup_line_prefix" title='graph_setup_line_prefix' data-ref="graph_setup_line_prefix">graph_setup_line_prefix</dfn>(<b>struct</b> <a class="type" href="diff.h.html#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col1 decl" id="1diffopt" title='diffopt' data-type='struct diff_options *' data-ref="1diffopt">diffopt</dfn>);</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Set up a custom scheme for column colors.</i></td></tr>
+<tr><th id="22">22</th><td><i> *</i></td></tr>
+<tr><th id="23">23</th><td><i> * The default column color scheme inserts ANSI color escapes to colorize</i></td></tr>
+<tr><th id="24">24</th><td><i> * the graph. The various color escapes are stored in an array of strings</i></td></tr>
+<tr><th id="25">25</th><td><i> * where each entry corresponds to a color, except for the last entry,</i></td></tr>
+<tr><th id="26">26</th><td><i> * which denotes the escape for resetting the color back to the default.</i></td></tr>
+<tr><th id="27">27</th><td><i> * When generating the graph, strings from this array are inserted before</i></td></tr>
+<tr><th id="28">28</th><td><i> * and after the various column characters.</i></td></tr>
+<tr><th id="29">29</th><td><i> *</i></td></tr>
+<tr><th id="30">30</th><td><i> * This function allows you to enable a custom array of color escapes.</i></td></tr>
+<tr><th id="31">31</th><td><i> * The 'colors_max' argument is the index of the last "reset" entry.</i></td></tr>
+<tr><th id="32">32</th><td><i> *</i></td></tr>
+<tr><th id="33">33</th><td><i> * This functions must be called BEFORE graph_init() is called.</i></td></tr>
+<tr><th id="34">34</th><td><i> *</i></td></tr>
+<tr><th id="35">35</th><td><i> * NOTE: This function isn't used in Git outside graph.c but it is used</i></td></tr>
+<tr><th id="36">36</th><td><i> * by CGit (<a href="http://git.zx2c4.com/cgit/">http://git.zx2c4.com/cgit/</a>) to use HTML for colors.</i></td></tr>
+<tr><th id="37">37</th><td><i> */</i></td></tr>
+<tr><th id="38">38</th><td><em>void</em> <dfn class="decl" id="graph_set_column_colors" title='graph_set_column_colors' data-ref="graph_set_column_colors">graph_set_column_colors</dfn>(<em>const</em> <em>char</em> **<dfn class="local col2 decl" id="2colors" title='colors' data-type='const char **' data-ref="2colors">colors</dfn>, <em>unsigned</em> <em>short</em> <dfn class="local col3 decl" id="3colors_max" title='colors_max' data-type='unsigned short' data-ref="3colors_max">colors_max</dfn>);</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i>/*</i></td></tr>
+<tr><th id="41">41</th><td><i> * Create a new struct git_graph.</i></td></tr>
+<tr><th id="42">42</th><td><i> */</i></td></tr>
+<tr><th id="43">43</th><td><b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph">git_graph</a> *<dfn class="decl" id="graph_init" title='graph_init' data-ref="graph_init">graph_init</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col4 decl" id="4opt" title='opt' data-type='struct rev_info *' data-ref="4opt">opt</dfn>);</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i>/*</i></td></tr>
+<tr><th id="46">46</th><td><i> * Update a git_graph with a new commit.</i></td></tr>
+<tr><th id="47">47</th><td><i> * This will cause the graph to begin outputting lines for the new commit</i></td></tr>
+<tr><th id="48">48</th><td><i> * the next time graph_next_line() is called.</i></td></tr>
+<tr><th id="49">49</th><td><i> *</i></td></tr>
+<tr><th id="50">50</th><td><i> * If graph_update() is called before graph_is_commit_finished() returns 1,</i></td></tr>
+<tr><th id="51">51</th><td><i> * the next call to graph_next_line() will output an ellipsis ("...")</i></td></tr>
+<tr><th id="52">52</th><td><i> * to indicate that a portion of the graph is missing.</i></td></tr>
+<tr><th id="53">53</th><td><i> */</i></td></tr>
+<tr><th id="54">54</th><td><em>void</em> <dfn class="decl" id="graph_update" title='graph_update' data-ref="graph_update">graph_update</dfn>(<b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph">git_graph</a> *<dfn class="local col5 decl" id="5graph" title='graph' data-type='struct git_graph *' data-ref="5graph">graph</dfn>, <b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col6 decl" id="6commit" title='commit' data-type='struct commit *' data-ref="6commit">commit</dfn>);</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><i>/*</i></td></tr>
+<tr><th id="57">57</th><td><i> * Determine if a graph has finished outputting lines for the current</i></td></tr>
+<tr><th id="58">58</th><td><i> * commit.</i></td></tr>
+<tr><th id="59">59</th><td><i> *</i></td></tr>
+<tr><th id="60">60</th><td><i> * Returns 1 if graph_next_line() needs to be called again before</i></td></tr>
+<tr><th id="61">61</th><td><i> * graph_update() should be called.  Returns 0 if no more lines are needed</i></td></tr>
+<tr><th id="62">62</th><td><i> * for this commit.  If 0 is returned, graph_next_line() may still be</i></td></tr>
+<tr><th id="63">63</th><td><i> * called without calling graph_update(), and it will merely output</i></td></tr>
+<tr><th id="64">64</th><td><i> * appropriate "vertical padding" in the graph.</i></td></tr>
+<tr><th id="65">65</th><td><i> */</i></td></tr>
+<tr><th id="66">66</th><td><em>int</em> <dfn class="decl" id="graph_is_commit_finished" title='graph_is_commit_finished' data-ref="graph_is_commit_finished">graph_is_commit_finished</dfn>(<b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph">git_graph</a> <em>const</em> *<dfn class="local col7 decl" id="7graph" title='graph' data-type='const struct git_graph *' data-ref="7graph">graph</dfn>);</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><i>/*</i></td></tr>
+<tr><th id="69">69</th><td><i> * Output the next line for a graph.</i></td></tr>
+<tr><th id="70">70</th><td><i> * This formats the next graph line into the specified strbuf.  It is not</i></td></tr>
+<tr><th id="71">71</th><td><i> * terminated with a newline.</i></td></tr>
+<tr><th id="72">72</th><td><i> *</i></td></tr>
+<tr><th id="73">73</th><td><i> * Returns 1 if the line includes the current commit, and 0 otherwise.</i></td></tr>
+<tr><th id="74">74</th><td><i> * graph_next_line() will return 1 exactly once for each time</i></td></tr>
+<tr><th id="75">75</th><td><i> * graph_update() is called.</i></td></tr>
+<tr><th id="76">76</th><td><i> *</i></td></tr>
+<tr><th id="77">77</th><td><i> * NOTE: This function isn't used in Git outside graph.c but it is used</i></td></tr>
+<tr><th id="78">78</th><td><i> * by CGit (<a href="http://git.zx2c4.com/cgit/">http://git.zx2c4.com/cgit/</a>) to wrap HTML around graph lines.</i></td></tr>
+<tr><th id="79">79</th><td><i> */</i></td></tr>
+<tr><th id="80">80</th><td><em>int</em> <dfn class="decl" id="graph_next_line" title='graph_next_line' data-ref="graph_next_line">graph_next_line</dfn>(<b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph">git_graph</a> *<dfn class="local col8 decl" id="8graph" title='graph' data-type='struct git_graph *' data-ref="8graph">graph</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col9 decl" id="9sb" title='sb' data-type='struct strbuf *' data-ref="9sb">sb</dfn>);</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><i>/*</i></td></tr>
+<tr><th id="84">84</th><td><i> * Return current width of the graph in on-screen characters.</i></td></tr>
+<tr><th id="85">85</th><td><i> */</i></td></tr>
+<tr><th id="86">86</th><td><em>int</em> <dfn class="decl" id="graph_width" title='graph_width' data-ref="graph_width">graph_width</dfn>(<b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph">git_graph</a> *<dfn class="local col0 decl" id="10graph" title='graph' data-type='struct git_graph *' data-ref="10graph">graph</dfn>);</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><i>/*</i></td></tr>
+<tr><th id="89">89</th><td><i> * graph_show_*: helper functions for printing to stdout</i></td></tr>
+<tr><th id="90">90</th><td><i> */</i></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><i>/*</i></td></tr>
+<tr><th id="94">94</th><td><i> * If the graph is non-NULL, print the history graph to stdout,</i></td></tr>
+<tr><th id="95">95</th><td><i> * up to and including the line containing this commit.</i></td></tr>
+<tr><th id="96">96</th><td><i> * Does not print a terminating newline on the last line.</i></td></tr>
+<tr><th id="97">97</th><td><i> */</i></td></tr>
+<tr><th id="98">98</th><td><em>void</em> <dfn class="decl" id="graph_show_commit" title='graph_show_commit' data-ref="graph_show_commit">graph_show_commit</dfn>(<b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph">git_graph</a> *<dfn class="local col1 decl" id="11graph" title='graph' data-type='struct git_graph *' data-ref="11graph">graph</dfn>);</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><i>/*</i></td></tr>
+<tr><th id="101">101</th><td><i> * If the graph is non-NULL, print one line of the history graph to stdout.</i></td></tr>
+<tr><th id="102">102</th><td><i> * Does not print a terminating newline on the last line.</i></td></tr>
+<tr><th id="103">103</th><td><i> */</i></td></tr>
+<tr><th id="104">104</th><td><em>void</em> <dfn class="decl" id="graph_show_oneline" title='graph_show_oneline' data-ref="graph_show_oneline">graph_show_oneline</dfn>(<b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph">git_graph</a> *<dfn class="local col2 decl" id="12graph" title='graph' data-type='struct git_graph *' data-ref="12graph">graph</dfn>);</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><i>/*</i></td></tr>
+<tr><th id="107">107</th><td><i> * If the graph is non-NULL, print one line of vertical graph padding to</i></td></tr>
+<tr><th id="108">108</th><td><i> * stdout.  Does not print a terminating newline on the last line.</i></td></tr>
+<tr><th id="109">109</th><td><i> */</i></td></tr>
+<tr><th id="110">110</th><td><em>void</em> <dfn class="decl" id="graph_show_padding" title='graph_show_padding' data-ref="graph_show_padding">graph_show_padding</dfn>(<b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph">git_graph</a> *<dfn class="local col3 decl" id="13graph" title='graph' data-type='struct git_graph *' data-ref="13graph">graph</dfn>);</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><i>/*</i></td></tr>
+<tr><th id="113">113</th><td><i> * If the graph is non-NULL, print the rest of the history graph for this</i></td></tr>
+<tr><th id="114">114</th><td><i> * commit to stdout.  Does not print a terminating newline on the last line.</i></td></tr>
+<tr><th id="115">115</th><td><i> */</i></td></tr>
+<tr><th id="116">116</th><td><em>int</em> <dfn class="decl" id="graph_show_remainder" title='graph_show_remainder' data-ref="graph_show_remainder">graph_show_remainder</dfn>(<b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph">git_graph</a> *<dfn class="local col4 decl" id="14graph" title='graph' data-type='struct git_graph *' data-ref="14graph">graph</dfn>);</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><i>/*</i></td></tr>
+<tr><th id="119">119</th><td><i> * Print a commit message strbuf and the remainder of the graph to stdout.</i></td></tr>
+<tr><th id="120">120</th><td><i> *</i></td></tr>
+<tr><th id="121">121</th><td><i> * This is similar to graph_show_strbuf(), but it always prints the</i></td></tr>
+<tr><th id="122">122</th><td><i> * remainder of the graph.</i></td></tr>
+<tr><th id="123">123</th><td><i> *</i></td></tr>
+<tr><th id="124">124</th><td><i> * If the strbuf ends with a newline, the output printed by</i></td></tr>
+<tr><th id="125">125</th><td><i> * graph_show_commit_msg() will end with a newline.  If the strbuf is</i></td></tr>
+<tr><th id="126">126</th><td><i> * missing a terminating newline (including if it is empty), the output</i></td></tr>
+<tr><th id="127">127</th><td><i> * printed by graph_show_commit_msg() will also be missing a terminating</i></td></tr>
+<tr><th id="128">128</th><td><i> * newline.</i></td></tr>
+<tr><th id="129">129</th><td><i> *</i></td></tr>
+<tr><th id="130">130</th><td><i> * Note that unlike some other graph display functions, you must pass the file</i></td></tr>
+<tr><th id="131">131</th><td><i> * handle directly. It is assumed that this is the same file handle as the</i></td></tr>
+<tr><th id="132">132</th><td><i> * file specified by the graph diff options. This is necessary so that</i></td></tr>
+<tr><th id="133">133</th><td><i> * graph_show_commit_msg can be called even with a NULL graph.</i></td></tr>
+<tr><th id="134">134</th><td><i> */</i></td></tr>
+<tr><th id="135">135</th><td><em>void</em> <dfn class="decl" id="graph_show_commit_msg" title='graph_show_commit_msg' data-ref="graph_show_commit_msg">graph_show_commit_msg</dfn>(<b>struct</b> <a class="type" href="revision.h.html#git_graph" title='git_graph' data-ref="git_graph">git_graph</a> *<dfn class="local col5 decl" id="15graph" title='graph' data-type='struct git_graph *' data-ref="15graph">graph</dfn>,</td></tr>
+<tr><th id="136">136</th><td>			   <a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col6 decl" id="16file" title='file' data-type='FILE *' data-ref="16file">file</dfn>,</td></tr>
+<tr><th id="137">137</th><td>			   <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <em>const</em> *<dfn class="local col7 decl" id="17sb" title='sb' data-type='const struct strbuf *' data-ref="17sb">sb</dfn>);</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><u>#<span data-ppcond="1">endif</span> /* GRAPH_H */</u></td></tr>
+<tr><th id="140">140</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/rev-list.c.html'>codebrowser/builtin/rev-list.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

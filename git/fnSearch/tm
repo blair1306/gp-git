@@ -1,0 +1,5 @@
+tmp_objdir_add_as_alternate|tmp_objdir_add_as_alternate
+tmp_objdir_create|tmp_objdir_create
+tmp_objdir_destroy|tmp_objdir_destroy
+tmp_objdir_env|tmp_objdir_env
+tmp_objdir_migrate|tmp_objdir_migrate

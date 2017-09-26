@@ -1,0 +1,3 @@
+<dec f='codebrowser/bulk-checkin.h' l='11' type='void plug_bulk_checkin()'/>
+<use f='codebrowser/builtin/add.c' l='499' u='c' c='cmd_add'/>
+<def f='codebrowser/bulk-checkin.c' l='265' ll='268' type='void plug_bulk_checkin()'/>

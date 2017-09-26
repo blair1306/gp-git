@@ -1,0 +1,5 @@
+<dec f='codebrowser/gpg-interface.h' l='33' type='const char * get_signing_key()'/>
+<use f='codebrowser/builtin/tag.c' l='127' u='c' c='do_sign'/>
+<use f='codebrowser/commit.c' l='1103' u='c' c='do_sign_commit'/>
+<def f='codebrowser/gpg-interface.c' l='141' ll='146' type='const char * get_signing_key()'/>
+<use f='codebrowser/send-pack.c' l='282' u='c' c='generate_push_cert'/>

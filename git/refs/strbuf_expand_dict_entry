@@ -1,0 +1,10 @@
+<def f='codebrowser/strbuf.h' l='299' ll='302'/>
+<size>16</size>
+<doc f='codebrowser/strbuf.h' l='293'>/**
+ * Used as callback for `strbuf_expand()`, expects an array of
+ * struct strbuf_expand_dict_entry as context, i.e. pairs of
+ * placeholder and replacement string.  The array needs to be
+ * terminated by an entry with placeholder set to NULL.
+ */</doc>
+<mbr r='strbuf_expand_dict_entry::placeholder' o='0' t='const char *'/>
+<mbr r='strbuf_expand_dict_entry::value' o='64' t='const char *'/>

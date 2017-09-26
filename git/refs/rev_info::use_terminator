@@ -1,0 +1,10 @@
+<dec f='codebrowser/revision.h' l='147' type='unsigned int'/>
+<use f='codebrowser/bisect.c' l='889' u='w' c='show_diff_tree'/>
+<offset>985</offset>
+<use f='codebrowser/builtin/commit.c' l='1497' u='w' c='print_summary'/>
+<use f='codebrowser/builtin/log.c' l='660' u='w' c='cmd_log_reflog'/>
+<use f='codebrowser/log-tree.c' l='570' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='717' u='r' c='show_log'/>
+<use f='codebrowser/pretty.c' l='40' u='w' c='save_user_format'/>
+<use f='codebrowser/pretty.c' l='158' u='w' c='get_commit_format'/>
+<use f='codebrowser/pretty.c' l='178' u='w' c='get_commit_format'/>

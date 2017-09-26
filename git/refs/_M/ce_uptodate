@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='268'/>
+<use f='codebrowser/diff-lib.c' l='195' u='c'/>
+<use f='codebrowser/diff-lib.c' l='274' u='c'/>
+<use f='codebrowser/diff.c' l='2776' u='c'/>
+<use f='codebrowser/dir.c' l='805' u='c'/>
+<use f='codebrowser/dir.c' l='1496' u='c'/>
+<use f='codebrowser/dir.c' l='1520' u='c'/>
+<use f='codebrowser/preload-index.c' l='54' u='c'/>
+<use f='codebrowser/read-cache.c' l='1232' u='c'/>
+<use f='codebrowser/read-cache.c' l='2239' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1464' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='2145' u='c'/>

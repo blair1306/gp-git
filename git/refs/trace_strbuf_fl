@@ -1,0 +1,7 @@
+<dec f='codebrowser/trace.h' l='106' type='void trace_strbuf_fl(const char * file, int line, struct trace_key * key, const struct strbuf * data)'/>
+<use f='codebrowser/http.c' l='586' macro='1' u='c'/>
+<use f='codebrowser/http.c' l='598' macro='1' u='c'/>
+<use f='codebrowser/http.c' l='612' macro='1' u='c'/>
+<use f='codebrowser/http.c' l='627' macro='1' u='c'/>
+<use f='codebrowser/pkt-line.c' l='80' macro='1' u='c'/>
+<def f='codebrowser/trace.c' l='180' ll='190' type='void trace_strbuf_fl(const char * file, int line, struct trace_key * key, const struct strbuf * data)'/>

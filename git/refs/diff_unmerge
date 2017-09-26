@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='263' type='struct diff_filepair * diff_unmerge(struct diff_options * , const char * path)'/>
+<use f='codebrowser/diff-lib.c' l='188' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='409' u='c' c='do_oneway_diff'/>
+<def f='codebrowser/diff.c' l='5159' ll='5173' type='struct diff_filepair * diff_unmerge(struct diff_options * options, const char * path)'/>

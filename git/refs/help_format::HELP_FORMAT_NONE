@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin/help.c' l='29' type='0'/>
+<use f='codebrowser/builtin/help.c' l='40'/>
+<use f='codebrowser/builtin/help.c' l='489' u='r' c='cmd_help'/>
+<use f='codebrowser/builtin/help.c' l='491' u='r' c='cmd_help'/>
+<use f='codebrowser/builtin/help.c' l='497' c='cmd_help'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/archive.h' l='13' type='struct pathspec'/>
+<offset>384</offset>
+<use f='codebrowser/archive.c' l='259' u='a' c='write_archive_entries'/>
+<use f='codebrowser/archive.c' l='260' u='m' c='write_archive_entries'/>
+<use f='codebrowser/archive.c' l='326' u='a' c='parse_pathspec_arg'/>
+<use f='codebrowser/archive.c' l='329' u='m' c='parse_pathspec_arg'/>

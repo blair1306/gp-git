@@ -1,0 +1,13 @@
+<dec f='codebrowser/unpack-trees.h' l='42' type='unsigned int'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/checkout.c' l='425' u='w' c='reset_tree'/>
+<use f='codebrowser/builtin/checkout.c' l='509' u='w' c='merge_working_tree'/>
+<use f='codebrowser/builtin/clone.c' l='742' u='w' c='checkout'/>
+<use f='codebrowser/builtin/merge.c' l='608' u='w' c='read_tree_trivial'/>
+<use f='codebrowser/builtin/read-tree.c' l='125' u='a' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='125' u='a' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='125' u='a' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='125' u='a' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/reset.c' l='59' u='w' c='reset_index'/>
+<use f='codebrowser/merge.c' l='77' u='w' c='checkout_fast_forward'/>
+<use f='codebrowser/unpack-trees.c' l='337' u='r' c='get_progress'/>

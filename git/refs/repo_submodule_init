@@ -1,0 +1,9 @@
+<dec f='codebrowser/repository.h' l='90' type='int repo_submodule_init(struct repository * submodule, struct repository * superproject, const char * path)'/>
+<use f='codebrowser/builtin/grep.c' l='419' u='c' c='grep_submodule'/>
+<use f='codebrowser/builtin/ls-files.c' l='207' u='c' c='show_submodule'/>
+<def f='codebrowser/repository.c' l='154' ll='199' type='int repo_submodule_init(struct repository * submodule, struct repository * superproject, const char * path)'/>
+<doc f='codebrowser/repository.c' l='149'>/*
+ * Initialize &apos;submodule&apos; as the submodule given by &apos;path&apos; in parent repository
+ * &apos;superproject&apos;.
+ * Return 0 upon success and a non-zero value upon failure.
+ */</doc>

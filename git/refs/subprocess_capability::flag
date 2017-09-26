@@ -1,0 +1,7 @@
+<dec f='codebrowser/sub-process.h' l='39' type='unsigned int'/>
+<offset>64</offset>
+<doc f='codebrowser/sub-process.h' l='35'>/*
+	 * subprocess_handshake will &quot;|=&quot; this value to supported_capabilities
+	 * if the server reports that it supports this capability.
+	 */</doc>
+<use f='codebrowser/sub-process.c' l='185' u='r' c='handshake_capabilities'/>

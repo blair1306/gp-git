@@ -1,0 +1,6 @@
+<def f='codebrowser/refs/packed-backend.c' l='53' ll='79'/>
+<size>144</size>
+<doc f='codebrowser/refs/packed-backend.c' l='49'>/*
+ * A container for `packed-refs`-related data. It is not (yet) a
+ * `ref_store`.
+ */</doc>

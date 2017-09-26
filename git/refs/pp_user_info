@@ -1,0 +1,6 @@
+<dec f='codebrowser/commit.h' l='198' type='void pp_user_info(struct pretty_print_context * pp, const char * what, struct strbuf * sb, const char * line, const char * encoding)'/>
+<use f='codebrowser/builtin/log.c' l='474' u='c' c='show_tagger'/>
+<use f='codebrowser/builtin/log.c' l='1030' u='c' c='make_cover_letter'/>
+<def f='codebrowser/pretty.c' l='425' ll='512' type='void pp_user_info(struct pretty_print_context * pp, const char * what, struct strbuf * sb, const char * line, const char * encoding)'/>
+<use f='codebrowser/pretty.c' l='1574' u='c' c='pp_header'/>
+<use f='codebrowser/pretty.c' l='1579' u='c' c='pp_header'/>

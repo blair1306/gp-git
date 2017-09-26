@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='477' type='int is_inside_git_dir()'/>
+<use f='codebrowser/builtin/rev-parse.c' l='857' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/setup.c' l='246' u='c' c='verify_non_filename'/>
+<def f='codebrowser/setup.c' l='363' ll='368' type='int is_inside_git_dir()'/>

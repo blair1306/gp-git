@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='46' type='const struct name_decoration * get_name_decoration(const struct object * obj)'/>
+<def f='codebrowser/log-tree.c' l='87' ll='90' type='const struct name_decoration * get_name_decoration(const struct object * obj)'/>
+<use f='codebrowser/log-tree.c' l='244' u='c' c='format_decorations_extended'/>
+<use f='codebrowser/revision.c' l='441' u='c' c='rev_compare_tree'/>

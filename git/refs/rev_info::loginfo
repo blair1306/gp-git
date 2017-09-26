@@ -1,0 +1,16 @@
+<dec f='codebrowser/revision.h' l='164' type='struct log_info *'/>
+<offset>1344</offset>
+<use f='codebrowser/combine-diff.c' l='911' u='r' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='1189' u='r' c='show_raw_diff'/>
+<use f='codebrowser/combine-diff.c' l='1402' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/log-tree.c' l='538' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='544' u='w' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='740' u='r' c='log_tree_diff_flush'/>
+<use f='codebrowser/log-tree.c' l='783' u='r' c='do_diff_combined'/>
+<use f='codebrowser/log-tree.c' l='810' u='r' c='log_tree_diff'/>
+<use f='codebrowser/log-tree.c' l='829' u='r' c='log_tree_diff'/>
+<use f='codebrowser/log-tree.c' l='845' u='r' c='log_tree_diff'/>
+<use f='codebrowser/log-tree.c' l='852' u='w' c='log_tree_diff'/>
+<use f='codebrowser/log-tree.c' l='864' u='w' c='log_tree_commit'/>
+<use f='codebrowser/log-tree.c' l='873' u='r' c='log_tree_commit'/>
+<use f='codebrowser/log-tree.c' l='880' u='w' c='log_tree_commit'/>

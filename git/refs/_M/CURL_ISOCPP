@@ -1,0 +1,6 @@
+<dec f='include/curl/curlrules.h' l='209'/>
+<use f='include/curl/curlrules.h' l='227' u='a'/>
+<use f='include/curl/curl.h' l='846' u='a'/>
+<use f='include/curl/curl.h' l='1818' u='a'/>
+<use f='include/curl/multi.h' l='318' u='a'/>
+<doc f='include/curl/curlrules.h' l='208'>/* This compiler is believed to have an ISO compatible preprocessor */</doc>

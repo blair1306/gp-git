@@ -1,0 +1,16 @@
+<dec f='codebrowser/gpg-interface.h' l='27' type='size_t parse_signature(const char * buf, unsigned long size)'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='495' u='c' c='fmt_merge_msg_sigs'/>
+<use f='codebrowser/builtin/receive-pack.c' l='640' u='c' c='prepare_push_cert_sha1'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1567' u='c' c='queue_commands_from_cert'/>
+<use f='codebrowser/builtin/tag.c' l='181' u='c' c='write_tag_body'/>
+<use f='codebrowser/commit.c' l='1215' u='c' c='handle_signed_tag'/>
+<def f='codebrowser/gpg-interface.c' l='110' ll='120' type='size_t parse_signature(const char * buf, unsigned long size)'/>
+<doc f='codebrowser/gpg-interface.c' l='104'>/*
+ * Look at GPG signed content (e.g. a signed tag object), whose
+ * payload is followed by a detached signature on it.  Return the
+ * offset where the embedded detached signature begins, or the end of
+ * the data when there is no such signature.
+ */</doc>
+<use f='codebrowser/log-tree.c' l='512' u='c' c='show_one_mergetag'/>
+<use f='codebrowser/ref-filter.c' l='979' u='c' c='find_subpos'/>
+<use f='codebrowser/tag.c' l='18' u='c' c='run_gpg_verify'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/builtin.h' l='175' type='int cmd_init_db(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/init-db.c' l='468' ll='584' type='int cmd_init_db(int argc, const char ** argv, const char * prefix)'/>
+<doc f='codebrowser/builtin/init-db.c' l='462'>/*
+ * If you want to, you can share the DB area with any number of branches.
+ * That has advantages: you can save space by sharing all the SHA1 objects.
+ * On the other hand, it might just make lookup slower and messier. You
+ * be the judge.  The default case is to have one DB per managed directory.
+ */</doc>
+<use f='codebrowser/git.c' l='411'/>
+<use f='codebrowser/git.c' l='411'/>
+<use f='codebrowser/git.c' l='412'/>
+<use f='codebrowser/git.c' l='412'/>
+<use f='codebrowser/git.c' l='411'/>
+<use f='codebrowser/git.c' l='411'/>
+<use f='codebrowser/git.c' l='412'/>
+<use f='codebrowser/git.c' l='412'/>

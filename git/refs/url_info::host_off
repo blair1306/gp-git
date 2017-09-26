@@ -1,0 +1,6 @@
+<dec f='codebrowser/urlmatch.h' l='20' type='size_t'/>
+<offset>512</offset>
+<doc f='codebrowser/urlmatch.h' l='20'>/* offset into url to start of host name (0 =&gt; none) */</doc>
+<use f='codebrowser/urlmatch.c' l='77' u='r' c='match_host'/>
+<use f='codebrowser/urlmatch.c' l='78' u='r' c='match_host'/>
+<use f='codebrowser/urlmatch.c' l='423' u='w' c='url_normalize_1'/>

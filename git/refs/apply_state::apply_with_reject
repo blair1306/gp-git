@@ -1,0 +1,11 @@
+<dec f='codebrowser/apply.h' l='58' type='int'/>
+<use f='codebrowser/apply.c' l='124' u='r' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='133' u='r' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='3218' u='r' c='apply_fragments'/>
+<use f='codebrowser/apply.c' l='4702' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4716' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4967' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4967' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4967' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4967' u='a' c='apply_parse_options'/>
+<offset>480</offset>

@@ -1,0 +1,15 @@
+<def f='codebrowser/grep.h' l='189' ll='204'/>
+<dec f='codebrowser/grep.h' l='214' type='int grep_source(struct grep_opt * opt, struct grep_source * gs)'/>
+<size>56</size>
+<mbr r='grep_source::name' o='0' t='char *'/>
+<mbr r='grep_source::type' o='64' t='enum grep_source_type'/>
+<mbr r='grep_source::identifier' o='128' t='void *'/>
+<mbr r='grep_source::buf' o='192' t='char *'/>
+<mbr r='grep_source::size' o='256' t='unsigned long'/>
+<mbr r='grep_source::path' o='320' t='char *'/>
+<mbr r='grep_source::driver' o='384' t='struct userdiff_driver *'/>
+<use f='codebrowser/builtin/grep.c' l='183' u='c' c='run'/>
+<use f='codebrowser/builtin/grep.c' l='341' u='c' c='grep_oid'/>
+<use f='codebrowser/builtin/grep.c' l='370' u='c' c='grep_file'/>
+<def f='codebrowser/grep.c' l='1879' ll='1898' type='int grep_source(struct grep_opt * opt, struct grep_source * gs)'/>
+<use f='codebrowser/grep.c' l='1909' u='c' c='grep_buffer'/>

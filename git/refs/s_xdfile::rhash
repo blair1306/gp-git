@@ -1,0 +1,4 @@
+<dec f='codebrowser/xdiff/xtypes.h' l='52' type='xrecord_t **'/>
+<offset>576</offset>
+<use f='codebrowser/xdiff/xprepare.c' l='230' u='w' c='xdl_prepare_ctx'/>
+<use f='codebrowser/xdiff/xprepare.c' l='253' u='r' c='xdl_free_ctx'/>

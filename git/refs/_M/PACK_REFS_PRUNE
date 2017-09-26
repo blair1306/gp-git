@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs.h' l='338'/>
+<doc f='codebrowser/refs.h' l='333'>/*
+ * Flags for controlling behaviour of pack_refs()
+ * PACK_REFS_PRUNE: Prune loose refs after packing
+ * PACK_REFS_ALL:   Pack _all_ refs, not just tags and already packed refs
+ */</doc>
+<use f='codebrowser/builtin/pack-refs.c' l='12' u='c'/>
+<use f='codebrowser/builtin/pack-refs.c' l='15' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1122' u='c'/>

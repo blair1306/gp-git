@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>test-line-buffer.c source code [codebrowser/t/helper/test-line-buffer.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/t/helper/test-line-buffer.c'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>t</a>/<a href='./'>helper</a>/<a href='test-line-buffer.c.html'>test-line-buffer.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * test-line-buffer.c: code to exercise the svn importer's input helper</i></td></tr>
+<tr><th id="3">3</th><td><i> */</i></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../git-compat-util.h.html">"git-compat-util.h"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../strbuf.h.html">"strbuf.h"</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../vcs-svn/line_buffer.h.html">"vcs-svn/line_buffer.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><em>static</em> <a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="tu decl def" id="strtouint32" title='strtouint32' data-type='uint32_t strtouint32(const char * s)' data-ref="strtouint32">strtouint32</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="19s" title='s' data-type='const char *' data-ref="19s">s</dfn>)</td></tr>
+<tr><th id="10">10</th><td>{</td></tr>
+<tr><th id="11">11</th><td>	<em>char</em> *<dfn class="local col0 decl" id="20end" title='end' data-type='char *' data-ref="20end">end</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<a class="typedef" href="../../../include/stdint.h.html#uintmax_t" title='uintmax_t' data-type='unsigned long' data-ref="uintmax_t">uintmax_t</a> <dfn class="local col1 decl" id="21n" title='n' data-type='uintmax_t' data-ref="21n">n</dfn> = <a class="ref" href="../../../include/inttypes.h.html#strtoumax" title='strtoumax' data-ref="strtoumax">strtoumax</a>(<a class="local col9 ref" href="#19s" title='s' data-ref="19s">s</a>, &amp;<a class="local col0 ref" href="#20end" title='end' data-ref="20end">end</a>, <var>10</var>);</td></tr>
+<tr><th id="13">13</th><td>	<b>if</b> (*<a class="local col9 ref" href="#19s" title='s' data-ref="19s">s</a> == <kbd>'\0'</kbd> || *<a class="local col0 ref" href="#20end" title='end' data-ref="20end">end</a> != <kbd>'\0'</kbd>)</td></tr>
+<tr><th id="14">14</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"invalid count: %s"</q>, <a class="local col9 ref" href="#19s" title='s' data-ref="19s">s</a>);</td></tr>
+<tr><th id="15">15</th><td>	<b>return</b> (<a class="typedef" href="../../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>) <a class="local col1 ref" href="#21n" title='n' data-ref="21n">n</a>;</td></tr>
+<tr><th id="16">16</th><td>}</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="handle_command" title='handle_command' data-type='void handle_command(const char * command, const char * arg, struct line_buffer * buf)' data-ref="handle_command">handle_command</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="22command" title='command' data-type='const char *' data-ref="22command">command</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="23arg" title='arg' data-type='const char *' data-ref="23arg">arg</dfn>, <b>struct</b> <a class="type" href="../../vcs-svn/line_buffer.h.html#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col4 decl" id="24buf" title='buf' data-type='struct line_buffer *' data-ref="24buf">buf</dfn>)</td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td>	<b>switch</b> (*<a class="local col2 ref" href="#22command" title='command' data-ref="22command">command</a>) {</td></tr>
+<tr><th id="21">21</th><td>	<b>case</b> <kbd>'b'</kbd>:</td></tr>
+<tr><th id="22">22</th><td>		<b>if</b> (<a class="ref" href="../../git-compat-util.h.html#starts_with" title='starts_with' data-ref="starts_with">starts_with</a>(<a class="local col2 ref" href="#22command" title='command' data-ref="22command">command</a>, <q>"binary "</q>)) {</td></tr>
+<tr><th id="23">23</th><td>			<b>struct</b> <a class="type" href="../../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col5 decl" id="25sb" title='sb' data-type='struct strbuf' data-ref="25sb">sb</dfn> = <a class="macro" href="../../strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="24">24</th><td>			<a class="ref" href="../../strbuf.h.html#strbuf_addch" title='strbuf_addch' data-ref="strbuf_addch">strbuf_addch</a>(&amp;<a class="local col5 ref" href="#25sb" title='sb' data-ref="25sb">sb</a>, <kbd>'&gt;'</kbd>);</td></tr>
+<tr><th id="25">25</th><td>			<a class="ref" href="../../vcs-svn/line_buffer.h.html#buffer_read_binary" title='buffer_read_binary' data-ref="buffer_read_binary">buffer_read_binary</a>(<a class="local col4 ref" href="#24buf" title='buf' data-ref="24buf">buf</a>, &amp;<a class="local col5 ref" href="#25sb" title='sb' data-ref="25sb">sb</a>, <a class="tu ref" href="#strtouint32" title='strtouint32' data-use='c' data-ref="strtouint32">strtouint32</a>(<a class="local col3 ref" href="#23arg" title='arg' data-ref="23arg">arg</a>));</td></tr>
+<tr><th id="26">26</th><td>			<a class="ref" href="../../../include/stdio.h.html#fwrite" title='fwrite' data-ref="fwrite">fwrite</a>(<a class="local col5 ref" href="#25sb" title='sb' data-ref="25sb">sb</a>.<a class="ref" href="../../strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <var>1</var>, <a class="local col5 ref" href="#25sb" title='sb' data-ref="25sb">sb</a>.<a class="ref" href="../../strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>, <a class="macro" href="../../../include/stdio.h.html#173" title="stdout" data-ref="_M/stdout">stdout</a>);</td></tr>
+<tr><th id="27">27</th><td>			<a class="ref" href="../../strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(&amp;<a class="local col5 ref" href="#25sb" title='sb' data-ref="25sb">sb</a>);</td></tr>
+<tr><th id="28">28</th><td>			<b>return</b>;</td></tr>
+<tr><th id="29">29</th><td>		}</td></tr>
+<tr><th id="30">30</th><td>	<b>case</b> <kbd>'c'</kbd>:</td></tr>
+<tr><th id="31">31</th><td>		<b>if</b> (<a class="ref" href="../../git-compat-util.h.html#starts_with" title='starts_with' data-ref="starts_with">starts_with</a>(<a class="local col2 ref" href="#22command" title='command' data-ref="22command">command</a>, <q>"copy "</q>)) {</td></tr>
+<tr><th id="32">32</th><td>			<a class="ref" href="../../vcs-svn/line_buffer.h.html#buffer_copy_bytes" title='buffer_copy_bytes' data-ref="buffer_copy_bytes">buffer_copy_bytes</a>(<a class="local col4 ref" href="#24buf" title='buf' data-ref="24buf">buf</a>, <a class="tu ref" href="#strtouint32" title='strtouint32' data-use='c' data-ref="strtouint32">strtouint32</a>(<a class="local col3 ref" href="#23arg" title='arg' data-ref="23arg">arg</a>));</td></tr>
+<tr><th id="33">33</th><td>			<b>return</b>;</td></tr>
+<tr><th id="34">34</th><td>		}</td></tr>
+<tr><th id="35">35</th><td>	<b>case</b> <kbd>'s'</kbd>:</td></tr>
+<tr><th id="36">36</th><td>		<b>if</b> (<a class="ref" href="../../git-compat-util.h.html#starts_with" title='starts_with' data-ref="starts_with">starts_with</a>(<a class="local col2 ref" href="#22command" title='command' data-ref="22command">command</a>, <q>"skip "</q>)) {</td></tr>
+<tr><th id="37">37</th><td>			<a class="ref" href="../../vcs-svn/line_buffer.h.html#buffer_skip_bytes" title='buffer_skip_bytes' data-ref="buffer_skip_bytes">buffer_skip_bytes</a>(<a class="local col4 ref" href="#24buf" title='buf' data-ref="24buf">buf</a>, <a class="tu ref" href="#strtouint32" title='strtouint32' data-use='c' data-ref="strtouint32">strtouint32</a>(<a class="local col3 ref" href="#23arg" title='arg' data-ref="23arg">arg</a>));</td></tr>
+<tr><th id="38">38</th><td>			<b>return</b>;</td></tr>
+<tr><th id="39">39</th><td>		}</td></tr>
+<tr><th id="40">40</th><td>	<b>default</b>:</td></tr>
+<tr><th id="41">41</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"unrecognized command: %s"</q>, <a class="local col2 ref" href="#22command" title='command' data-ref="22command">command</a>);</td></tr>
+<tr><th id="42">42</th><td>	}</td></tr>
+<tr><th id="43">43</th><td>}</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="handle_line" title='handle_line' data-type='void handle_line(const char * line, struct line_buffer * stdin_buf)' data-ref="handle_line">handle_line</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="26line" title='line' data-type='const char *' data-ref="26line">line</dfn>, <b>struct</b> <a class="type" href="../../vcs-svn/line_buffer.h.html#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col7 decl" id="27stdin_buf" title='stdin_buf' data-type='struct line_buffer *' data-ref="27stdin_buf">stdin_buf</dfn>)</td></tr>
+<tr><th id="46">46</th><td>{</td></tr>
+<tr><th id="47">47</th><td>	<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="28arg" title='arg' data-type='const char *' data-ref="28arg">arg</dfn> = <a class="macro" href="../../../include/x86_64-linux-gnu/bits/string2.h.html#395" title="(__extension__ (__builtin_constant_p (&apos; &apos;) &amp;&amp; !__builtin_constant_p (line) &amp;&amp; (&apos; &apos;) == &apos;\0&apos; ? (char *) __rawmemchr (line, &apos; &apos;) : __builtin_strchr (line, &apos; &apos;)))" data-ref="_M/strchr">strchr</a>(<a class="local col6 ref" href="#26line" title='line' data-ref="26line">line</a>, <kbd>' '</kbd>);</td></tr>
+<tr><th id="48">48</th><td>	<b>if</b> (!<a class="local col8 ref" href="#28arg" title='arg' data-ref="28arg">arg</a>)</td></tr>
+<tr><th id="49">49</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"no argument in line: %s"</q>, <a class="local col6 ref" href="#26line" title='line' data-ref="26line">line</a>);</td></tr>
+<tr><th id="50">50</th><td>	<a class="tu ref" href="#handle_command" title='handle_command' data-use='c' data-ref="handle_command">handle_command</a>(<a class="local col6 ref" href="#26line" title='line' data-ref="26line">line</a>, <a class="local col8 ref" href="#28arg" title='arg' data-ref="28arg">arg</a> + <var>1</var>, <a class="local col7 ref" href="#27stdin_buf" title='stdin_buf' data-ref="27stdin_buf">stdin_buf</a>);</td></tr>
+<tr><th id="51">51</th><td>}</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><em>int</em> <dfn class="decl def" id="cmd_main" title='cmd_main' data-ref="cmd_main">cmd_main</dfn>(<em>int</em> <dfn class="local col9 decl" id="29argc" title='argc' data-type='int' data-ref="29argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col0 decl" id="30argv" title='argv' data-type='const char **' data-ref="30argv">argv</dfn>)</td></tr>
+<tr><th id="54">54</th><td>{</td></tr>
+<tr><th id="55">55</th><td>	<b>struct</b> <a class="type" href="../../vcs-svn/line_buffer.h.html#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> <dfn class="local col1 decl" id="31stdin_buf" title='stdin_buf' data-type='struct line_buffer' data-ref="31stdin_buf">stdin_buf</dfn> = <a class="macro" href="../../vcs-svn/line_buffer.h.html#12" title="{ &quot;&quot;, ((void*)0) }" data-ref="_M/LINE_BUFFER_INIT">LINE_BUFFER_INIT</a>;</td></tr>
+<tr><th id="56">56</th><td>	<b>struct</b> <a class="type" href="../../vcs-svn/line_buffer.h.html#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> <dfn class="local col2 decl" id="32file_buf" title='file_buf' data-type='struct line_buffer' data-ref="32file_buf">file_buf</dfn> = <a class="macro" href="../../vcs-svn/line_buffer.h.html#12" title="{ &quot;&quot;, ((void*)0) }" data-ref="_M/LINE_BUFFER_INIT">LINE_BUFFER_INIT</a>;</td></tr>
+<tr><th id="57">57</th><td>	<b>struct</b> <a class="type" href="../../vcs-svn/line_buffer.h.html#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col3 decl" id="33input" title='input' data-type='struct line_buffer *' data-ref="33input">input</dfn> = &amp;<a class="local col1 ref" href="#31stdin_buf" title='stdin_buf' data-ref="31stdin_buf">stdin_buf</a>;</td></tr>
+<tr><th id="58">58</th><td>	<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="34filename" title='filename' data-type='const char *' data-ref="34filename">filename</dfn>;</td></tr>
+<tr><th id="59">59</th><td>	<em>char</em> *<dfn class="local col5 decl" id="35s" title='s' data-type='char *' data-ref="35s">s</dfn>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>	<b>if</b> (<a class="local col9 ref" href="#29argc" title='argc' data-ref="29argc">argc</a> == <var>1</var>)</td></tr>
+<tr><th id="62">62</th><td>		<a class="local col4 ref" href="#34filename" title='filename' data-ref="34filename">filename</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="63">63</th><td>	<b>else</b> <b>if</b> (<a class="local col9 ref" href="#29argc" title='argc' data-ref="29argc">argc</a> == <var>2</var>)</td></tr>
+<tr><th id="64">64</th><td>		<a class="local col4 ref" href="#34filename" title='filename' data-ref="34filename">filename</a> = <a class="local col0 ref" href="#30argv" title='argv' data-ref="30argv">argv</a>[<var>1</var>];</td></tr>
+<tr><th id="65">65</th><td>	<b>else</b></td></tr>
+<tr><th id="66">66</th><td>		<a class="ref" href="../../git-compat-util.h.html#usage" title='usage' data-ref="usage">usage</a>(<q>"test-line-buffer [file | &amp;fd] &lt; script"</q>);</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>	<b>if</b> (<a class="ref" href="../../vcs-svn/line_buffer.h.html#buffer_init" title='buffer_init' data-ref="buffer_init">buffer_init</a>(&amp;<a class="local col1 ref" href="#31stdin_buf" title='stdin_buf' data-ref="31stdin_buf">stdin_buf</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>))</td></tr>
+<tr><th id="69">69</th><td>		<a class="ref" href="../../git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"open error"</q>);</td></tr>
+<tr><th id="70">70</th><td>	<b>if</b> (<a class="local col4 ref" href="#34filename" title='filename' data-ref="34filename">filename</a>) {</td></tr>
+<tr><th id="71">71</th><td>		<b>if</b> (*<a class="local col4 ref" href="#34filename" title='filename' data-ref="34filename">filename</a> == <kbd>'&amp;'</kbd>) {</td></tr>
+<tr><th id="72">72</th><td>			<b>if</b> (<a class="ref" href="../../vcs-svn/line_buffer.h.html#buffer_fdinit" title='buffer_fdinit' data-ref="buffer_fdinit">buffer_fdinit</a>(&amp;<a class="local col2 ref" href="#32file_buf" title='file_buf' data-ref="32file_buf">file_buf</a>, <a class="tu ref" href="#strtouint32" title='strtouint32' data-use='c' data-ref="strtouint32">strtouint32</a>(<a class="local col4 ref" href="#34filename" title='filename' data-ref="34filename">filename</a> + <var>1</var>)))</td></tr>
+<tr><th id="73">73</th><td>				<a class="ref" href="../../git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"error opening fd %s"</q>, <a class="local col4 ref" href="#34filename" title='filename' data-ref="34filename">filename</a> + <var>1</var>);</td></tr>
+<tr><th id="74">74</th><td>		} <b>else</b> {</td></tr>
+<tr><th id="75">75</th><td>			<b>if</b> (<a class="ref" href="../../vcs-svn/line_buffer.h.html#buffer_init" title='buffer_init' data-ref="buffer_init">buffer_init</a>(&amp;<a class="local col2 ref" href="#32file_buf" title='file_buf' data-ref="32file_buf">file_buf</a>, <a class="local col4 ref" href="#34filename" title='filename' data-ref="34filename">filename</a>))</td></tr>
+<tr><th id="76">76</th><td>				<a class="ref" href="../../git-compat-util.h.html#die_errno" title='die_errno' data-ref="die_errno">die_errno</a>(<q>"error opening %s"</q>, <a class="local col4 ref" href="#34filename" title='filename' data-ref="34filename">filename</a>);</td></tr>
+<tr><th id="77">77</th><td>		}</td></tr>
+<tr><th id="78">78</th><td>		<a class="local col3 ref" href="#33input" title='input' data-ref="33input">input</a> = &amp;<a class="local col2 ref" href="#32file_buf" title='file_buf' data-ref="32file_buf">file_buf</a>;</td></tr>
+<tr><th id="79">79</th><td>	}</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>	<b>while</b> ((<a class="local col5 ref" href="#35s" title='s' data-ref="35s">s</a> = <a class="ref" href="../../vcs-svn/line_buffer.h.html#buffer_read_line" title='buffer_read_line' data-ref="buffer_read_line">buffer_read_line</a>(&amp;<a class="local col1 ref" href="#31stdin_buf" title='stdin_buf' data-ref="31stdin_buf">stdin_buf</a>)))</td></tr>
+<tr><th id="82">82</th><td>		<a class="tu ref" href="#handle_line" title='handle_line' data-use='c' data-ref="handle_line">handle_line</a>(<a class="local col5 ref" href="#35s" title='s' data-ref="35s">s</a>, <a class="local col3 ref" href="#33input" title='input' data-ref="33input">input</a>);</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>	<b>if</b> (<a class="local col4 ref" href="#34filename" title='filename' data-ref="34filename">filename</a> &amp;&amp; <a class="ref" href="../../vcs-svn/line_buffer.h.html#buffer_deinit" title='buffer_deinit' data-ref="buffer_deinit">buffer_deinit</a>(&amp;<a class="local col2 ref" href="#32file_buf" title='file_buf' data-ref="32file_buf">file_buf</a>))</td></tr>
+<tr><th id="85">85</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"error reading from %s"</q>, <a class="local col4 ref" href="#34filename" title='filename' data-ref="34filename">filename</a>);</td></tr>
+<tr><th id="86">86</th><td>	<b>if</b> (<a class="ref" href="../../vcs-svn/line_buffer.h.html#buffer_deinit" title='buffer_deinit' data-ref="buffer_deinit">buffer_deinit</a>(&amp;<a class="local col1 ref" href="#31stdin_buf" title='stdin_buf' data-ref="31stdin_buf">stdin_buf</a>))</td></tr>
+<tr><th id="87">87</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"input error"</q>);</td></tr>
+<tr><th id="88">88</th><td>	<b>if</b> (<a class="ref" href="../../../include/stdio.h.html#ferror" title='ferror' data-ref="ferror">ferror</a>(<a class="macro" href="../../../include/stdio.h.html#173" title="stdout" data-ref="_M/stdout">stdout</a>))</td></tr>
+<tr><th id="89">89</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"output error"</q>);</td></tr>
+<tr><th id="90">90</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="91">91</th><td>}</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

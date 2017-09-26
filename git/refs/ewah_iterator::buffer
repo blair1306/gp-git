@@ -1,0 +1,5 @@
+<dec f='codebrowser/ewah/ewok.h' l='135' type='const eword_t *'/>
+<offset>0</offset>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='319' u='r' c='read_new_rlw'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='353' u='r' c='ewah_iterator_next'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='366' u='w' c='ewah_iterator_init'/>

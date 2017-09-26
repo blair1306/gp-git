@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='145' type='int cmd_check_ref_format(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/check-ref-format.c' l='51' ll='88' type='int cmd_check_ref_format(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='377'/>
+<use f='codebrowser/git.c' l='377'/>
+<use f='codebrowser/git.c' l='377'/>
+<use f='codebrowser/git.c' l='377'/>

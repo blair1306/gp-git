@@ -1,0 +1,23 @@
+<dec f='codebrowser/http.h' l='226' type='struct active_request_slot *'/>
+<offset>55872</offset>
+<use f='codebrowser/http-push.c' l='260' u='r' c='start_fetch_loose'/>
+<use f='codebrowser/http-walker.c' l='65' u='r' c='start_object_request'/>
+<use f='codebrowser/http-walker.c' l='509' u='r' c='fetch_object'/>
+<use f='codebrowser/http.c' l='2115' u='r' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2244' u='w' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2246' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2247' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2248' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2249' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2250' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2251' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2262' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2275' u='r' c='process_http_object_request'/>
+<use f='codebrowser/http.c' l='2277' u='r' c='process_http_object_request'/>
+<use f='codebrowser/http.c' l='2278' u='r' c='process_http_object_request'/>
+<use f='codebrowser/http.c' l='2279' u='w' c='process_http_object_request'/>
+<use f='codebrowser/http.c' l='2332' u='r' c='release_http_object_request'/>
+<use f='codebrowser/http.c' l='2333' u='r' c='release_http_object_request'/>
+<use f='codebrowser/http.c' l='2334' u='r' c='release_http_object_request'/>
+<use f='codebrowser/http.c' l='2335' u='r' c='release_http_object_request'/>
+<use f='codebrowser/http.c' l='2336' u='w' c='release_http_object_request'/>

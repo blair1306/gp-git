@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>symlinks.c source code [codebrowser/symlinks.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/symlinks.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='symlinks.c.html'>symlinks.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><em>static</em> <em>int</em> <a class="tu decl" href="#threaded_check_leading_path" title='threaded_check_leading_path' data-type='int threaded_check_leading_path(struct cache_def * cache, const char * name, int len)' data-ref="threaded_check_leading_path">threaded_check_leading_path</a>(<b>struct</b> <a class="type" href="cache.h.html#cache_def" title='cache_def' data-ref="cache_def">cache_def</a> *<dfn class="local col1 decl" id="1cache" title='cache' data-type='struct cache_def *' data-ref="1cache">cache</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2name" title='name' data-type='const char *' data-ref="2name">name</dfn>, <em>int</em> <dfn class="local col3 decl" id="3len" title='len' data-type='int' data-ref="3len">len</dfn>);</td></tr>
+<tr><th id="4">4</th><td><em>static</em> <em>int</em> <a class="tu decl" href="#threaded_has_dirs_only_path" title='threaded_has_dirs_only_path' data-type='int threaded_has_dirs_only_path(struct cache_def * cache, const char * name, int len, int prefix_len)' data-ref="threaded_has_dirs_only_path">threaded_has_dirs_only_path</a>(<b>struct</b> <a class="type" href="cache.h.html#cache_def" title='cache_def' data-ref="cache_def">cache_def</a> *<dfn class="local col4 decl" id="4cache" title='cache' data-type='struct cache_def *' data-ref="4cache">cache</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5name" title='name' data-type='const char *' data-ref="5name">name</dfn>, <em>int</em> <dfn class="local col6 decl" id="6len" title='len' data-type='int' data-ref="6len">len</dfn>, <em>int</em> <dfn class="local col7 decl" id="7prefix_len" title='prefix_len' data-type='int' data-ref="7prefix_len">prefix_len</dfn>);</td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i  data-doc="longest_path_match">/*</i></td></tr>
+<tr><th id="7">7</th><td><i  data-doc="longest_path_match"> * Returns the length (on a path component basis) of the longest</i></td></tr>
+<tr><th id="8">8</th><td><i  data-doc="longest_path_match"> * common prefix match of 'name_a' and 'name_b'.</i></td></tr>
+<tr><th id="9">9</th><td><i  data-doc="longest_path_match"> */</i></td></tr>
+<tr><th id="10">10</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="longest_path_match" title='longest_path_match' data-type='int longest_path_match(const char * name_a, int len_a, const char * name_b, int len_b, int * previous_slash)' data-ref="longest_path_match">longest_path_match</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8name_a" title='name_a' data-type='const char *' data-ref="8name_a">name_a</dfn>, <em>int</em> <dfn class="local col9 decl" id="9len_a" title='len_a' data-type='int' data-ref="9len_a">len_a</dfn>,</td></tr>
+<tr><th id="11">11</th><td>			      <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10name_b" title='name_b' data-type='const char *' data-ref="10name_b">name_b</dfn>, <em>int</em> <dfn class="local col1 decl" id="11len_b" title='len_b' data-type='int' data-ref="11len_b">len_b</dfn>,</td></tr>
+<tr><th id="12">12</th><td>			      <em>int</em> *<dfn class="local col2 decl" id="12previous_slash" title='previous_slash' data-type='int *' data-ref="12previous_slash">previous_slash</dfn>)</td></tr>
+<tr><th id="13">13</th><td>{</td></tr>
+<tr><th id="14">14</th><td>	<em>int</em> <dfn class="local col3 decl" id="13max_len" title='max_len' data-type='int' data-ref="13max_len">max_len</dfn>, <dfn class="local col4 decl" id="14match_len" title='match_len' data-type='int' data-ref="14match_len">match_len</dfn> = <var>0</var>, <dfn class="local col5 decl" id="15match_len_prev" title='match_len_prev' data-type='int' data-ref="15match_len_prev">match_len_prev</dfn> = <var>0</var>, <dfn class="local col6 decl" id="16i" title='i' data-type='int' data-ref="16i">i</dfn> = <var>0</var>;</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td>	<a class="local col3 ref" href="#13max_len" title='max_len' data-ref="13max_len">max_len</a> = <a class="local col9 ref" href="#9len_a" title='len_a' data-ref="9len_a">len_a</a> &lt; <a class="local col1 ref" href="#11len_b" title='len_b' data-ref="11len_b">len_b</a> ? <a class="local col9 ref" href="#9len_a" title='len_a' data-ref="9len_a">len_a</a> : <a class="local col1 ref" href="#11len_b" title='len_b' data-ref="11len_b">len_b</a>;</td></tr>
+<tr><th id="17">17</th><td>	<b>while</b> (<a class="local col6 ref" href="#16i" title='i' data-ref="16i">i</a> &lt; <a class="local col3 ref" href="#13max_len" title='max_len' data-ref="13max_len">max_len</a> &amp;&amp; <a class="local col8 ref" href="#8name_a" title='name_a' data-ref="8name_a">name_a</a>[<a class="local col6 ref" href="#16i" title='i' data-ref="16i">i</a>] == <a class="local col0 ref" href="#10name_b" title='name_b' data-ref="10name_b">name_b</a>[<a class="local col6 ref" href="#16i" title='i' data-ref="16i">i</a>]) {</td></tr>
+<tr><th id="18">18</th><td>		<b>if</b> (<a class="local col8 ref" href="#8name_a" title='name_a' data-ref="8name_a">name_a</a>[<a class="local col6 ref" href="#16i" title='i' data-ref="16i">i</a>] == <kbd>'/'</kbd>) {</td></tr>
+<tr><th id="19">19</th><td>			<a class="local col5 ref" href="#15match_len_prev" title='match_len_prev' data-ref="15match_len_prev">match_len_prev</a> = <a class="local col4 ref" href="#14match_len" title='match_len' data-ref="14match_len">match_len</a>;</td></tr>
+<tr><th id="20">20</th><td>			<a class="local col4 ref" href="#14match_len" title='match_len' data-ref="14match_len">match_len</a> = <a class="local col6 ref" href="#16i" title='i' data-ref="16i">i</a>;</td></tr>
+<tr><th id="21">21</th><td>		}</td></tr>
+<tr><th id="22">22</th><td>		<a class="local col6 ref" href="#16i" title='i' data-ref="16i">i</a>++;</td></tr>
+<tr><th id="23">23</th><td>	}</td></tr>
+<tr><th id="24">24</th><td>	<i>/*</i></td></tr>
+<tr><th id="25">25</th><td><i>	 * Is 'name_b' a substring of 'name_a', the other way around,</i></td></tr>
+<tr><th id="26">26</th><td><i>	 * or is 'name_a' and 'name_b' the exact same string?</i></td></tr>
+<tr><th id="27">27</th><td><i>	 */</i></td></tr>
+<tr><th id="28">28</th><td>	<b>if</b> (<a class="local col6 ref" href="#16i" title='i' data-ref="16i">i</a> &gt;= <a class="local col3 ref" href="#13max_len" title='max_len' data-ref="13max_len">max_len</a> &amp;&amp; ((<a class="local col9 ref" href="#9len_a" title='len_a' data-ref="9len_a">len_a</a> &gt; <a class="local col1 ref" href="#11len_b" title='len_b' data-ref="11len_b">len_b</a> &amp;&amp; <a class="local col8 ref" href="#8name_a" title='name_a' data-ref="8name_a">name_a</a>[<a class="local col1 ref" href="#11len_b" title='len_b' data-ref="11len_b">len_b</a>] == <kbd>'/'</kbd>) ||</td></tr>
+<tr><th id="29">29</th><td>			     (<a class="local col9 ref" href="#9len_a" title='len_a' data-ref="9len_a">len_a</a> &lt; <a class="local col1 ref" href="#11len_b" title='len_b' data-ref="11len_b">len_b</a> &amp;&amp; <a class="local col0 ref" href="#10name_b" title='name_b' data-ref="10name_b">name_b</a>[<a class="local col9 ref" href="#9len_a" title='len_a' data-ref="9len_a">len_a</a>] == <kbd>'/'</kbd>) ||</td></tr>
+<tr><th id="30">30</th><td>			     (<a class="local col9 ref" href="#9len_a" title='len_a' data-ref="9len_a">len_a</a> == <a class="local col1 ref" href="#11len_b" title='len_b' data-ref="11len_b">len_b</a>))) {</td></tr>
+<tr><th id="31">31</th><td>		<a class="local col5 ref" href="#15match_len_prev" title='match_len_prev' data-ref="15match_len_prev">match_len_prev</a> = <a class="local col4 ref" href="#14match_len" title='match_len' data-ref="14match_len">match_len</a>;</td></tr>
+<tr><th id="32">32</th><td>		<a class="local col4 ref" href="#14match_len" title='match_len' data-ref="14match_len">match_len</a> = <a class="local col6 ref" href="#16i" title='i' data-ref="16i">i</a>;</td></tr>
+<tr><th id="33">33</th><td>	}</td></tr>
+<tr><th id="34">34</th><td>	*<a class="local col2 ref" href="#12previous_slash" title='previous_slash' data-ref="12previous_slash">previous_slash</a> = <a class="local col5 ref" href="#15match_len_prev" title='match_len_prev' data-ref="15match_len_prev">match_len_prev</a>;</td></tr>
+<tr><th id="35">35</th><td>	<b>return</b> <a class="local col4 ref" href="#14match_len" title='match_len' data-ref="14match_len">match_len</a>;</td></tr>
+<tr><th id="36">36</th><td>}</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><em>static</em> <b>struct</b> <a class="type" href="cache.h.html#cache_def" title='cache_def' data-ref="cache_def">cache_def</a> <dfn class="tu decl def" id="default_cache" title='default_cache' data-type='struct cache_def' data-ref="default_cache">default_cache</dfn> = <a class="macro" href="cache.h.html#1514" title="{ { .alloc = 0, .len = 0, .buf = strbuf_slopbuf }, 0, 0, 0 }" data-ref="_M/CACHE_DEF_INIT">CACHE_DEF_INIT</a>;</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="tu decl def" id="reset_lstat_cache" title='reset_lstat_cache' data-type='void reset_lstat_cache(struct cache_def * cache)' data-ref="reset_lstat_cache">reset_lstat_cache</dfn>(<b>struct</b> <a class="type" href="cache.h.html#cache_def" title='cache_def' data-ref="cache_def">cache_def</a> *<dfn class="local col7 decl" id="17cache" title='cache' data-type='struct cache_def *' data-ref="17cache">cache</dfn>)</td></tr>
+<tr><th id="41">41</th><td>{</td></tr>
+<tr><th id="42">42</th><td>	<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(&amp;cache-&gt;path, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col7 ref" href="#17cache" title='cache' data-ref="17cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>);</td></tr>
+<tr><th id="43">43</th><td>	<a class="local col7 ref" href="#17cache" title='cache' data-ref="17cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::flags" title='cache_def::flags' data-ref="cache_def::flags">flags</a> = <var>0</var>;</td></tr>
+<tr><th id="44">44</th><td>	<i>/*</i></td></tr>
+<tr><th id="45">45</th><td><i>	 * The track_flags and prefix_len_stat_func members is only</i></td></tr>
+<tr><th id="46">46</th><td><i>	 * set by the safeguard rule inside lstat_cache()</i></td></tr>
+<tr><th id="47">47</th><td><i>	 */</i></td></tr>
+<tr><th id="48">48</th><td>}</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/FL_DIR" data-ref="_M/FL_DIR">FL_DIR</dfn>      (1 &lt;&lt; 0)</u></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/FL_NOENT" data-ref="_M/FL_NOENT">FL_NOENT</dfn>    (1 &lt;&lt; 1)</u></td></tr>
+<tr><th id="52">52</th><td><u>#define <dfn class="macro" id="_M/FL_SYMLINK" data-ref="_M/FL_SYMLINK">FL_SYMLINK</dfn>  (1 &lt;&lt; 2)</u></td></tr>
+<tr><th id="53">53</th><td><u>#define <dfn class="macro" id="_M/FL_LSTATERR" data-ref="_M/FL_LSTATERR">FL_LSTATERR</dfn> (1 &lt;&lt; 3)</u></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/FL_ERR" data-ref="_M/FL_ERR">FL_ERR</dfn>      (1 &lt;&lt; 4)</u></td></tr>
+<tr><th id="55">55</th><td><u>#define <dfn class="macro" id="_M/FL_FULLPATH" data-ref="_M/FL_FULLPATH">FL_FULLPATH</dfn> (1 &lt;&lt; 5)</u></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><i  data-doc="lstat_cache_matchlen">/*</i></td></tr>
+<tr><th id="58">58</th><td><i  data-doc="lstat_cache_matchlen"> * Check if name 'name' of length 'len' has a symlink leading</i></td></tr>
+<tr><th id="59">59</th><td><i  data-doc="lstat_cache_matchlen"> * component, or if the directory exists and is real, or not.</i></td></tr>
+<tr><th id="60">60</th><td><i  data-doc="lstat_cache_matchlen"> *</i></td></tr>
+<tr><th id="61">61</th><td><i  data-doc="lstat_cache_matchlen"> * To speed up the check, some information is allowed to be cached.</i></td></tr>
+<tr><th id="62">62</th><td><i  data-doc="lstat_cache_matchlen"> * This can be indicated by the 'track_flags' argument, which also can</i></td></tr>
+<tr><th id="63">63</th><td><i  data-doc="lstat_cache_matchlen"> * be used to indicate that we should check the full path.</i></td></tr>
+<tr><th id="64">64</th><td><i  data-doc="lstat_cache_matchlen"> *</i></td></tr>
+<tr><th id="65">65</th><td><i  data-doc="lstat_cache_matchlen"> * The 'prefix_len_stat_func' parameter can be used to set the length</i></td></tr>
+<tr><th id="66">66</th><td><i  data-doc="lstat_cache_matchlen"> * of the prefix, where the cache should use the stat() function</i></td></tr>
+<tr><th id="67">67</th><td><i  data-doc="lstat_cache_matchlen"> * instead of the lstat() function to test each path component.</i></td></tr>
+<tr><th id="68">68</th><td><i  data-doc="lstat_cache_matchlen"> */</i></td></tr>
+<tr><th id="69">69</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="lstat_cache_matchlen" title='lstat_cache_matchlen' data-type='int lstat_cache_matchlen(struct cache_def * cache, const char * name, int len, int * ret_flags, int track_flags, int prefix_len_stat_func)' data-ref="lstat_cache_matchlen">lstat_cache_matchlen</dfn>(<b>struct</b> <a class="type" href="cache.h.html#cache_def" title='cache_def' data-ref="cache_def">cache_def</a> *<dfn class="local col8 decl" id="18cache" title='cache' data-type='struct cache_def *' data-ref="18cache">cache</dfn>,</td></tr>
+<tr><th id="70">70</th><td>				<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="19name" title='name' data-type='const char *' data-ref="19name">name</dfn>, <em>int</em> <dfn class="local col0 decl" id="20len" title='len' data-type='int' data-ref="20len">len</dfn>,</td></tr>
+<tr><th id="71">71</th><td>				<em>int</em> *<dfn class="local col1 decl" id="21ret_flags" title='ret_flags' data-type='int *' data-ref="21ret_flags">ret_flags</dfn>, <em>int</em> <dfn class="local col2 decl" id="22track_flags" title='track_flags' data-type='int' data-ref="22track_flags">track_flags</dfn>,</td></tr>
+<tr><th id="72">72</th><td>				<em>int</em> <dfn class="local col3 decl" id="23prefix_len_stat_func" title='prefix_len_stat_func' data-type='int' data-ref="23prefix_len_stat_func">prefix_len_stat_func</dfn>)</td></tr>
+<tr><th id="73">73</th><td>{</td></tr>
+<tr><th id="74">74</th><td>	<em>int</em> <dfn class="local col4 decl" id="24match_len" title='match_len' data-type='int' data-ref="24match_len">match_len</dfn>, <dfn class="local col5 decl" id="25last_slash" title='last_slash' data-type='int' data-ref="25last_slash">last_slash</dfn>, <dfn class="local col6 decl" id="26last_slash_dir" title='last_slash_dir' data-type='int' data-ref="26last_slash_dir">last_slash_dir</dfn>, <dfn class="local col7 decl" id="27previous_slash" title='previous_slash' data-type='int' data-ref="27previous_slash">previous_slash</dfn>;</td></tr>
+<tr><th id="75">75</th><td>	<em>int</em> <dfn class="local col8 decl" id="28save_flags" title='save_flags' data-type='int' data-ref="28save_flags">save_flags</dfn>, <dfn class="local col9 decl" id="29ret" title='ret' data-type='int' data-ref="29ret">ret</dfn>;</td></tr>
+<tr><th id="76">76</th><td>	<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/bits/stat.h.html#stat" title='stat' data-ref="stat">stat</a> <dfn class="local col0 decl" id="30st" title='st' data-type='struct stat' data-ref="30st">st</dfn>;</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>	<b>if</b> (<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::track_flags" title='cache_def::track_flags' data-ref="cache_def::track_flags">track_flags</a> != <a class="local col2 ref" href="#22track_flags" title='track_flags' data-ref="22track_flags">track_flags</a> ||</td></tr>
+<tr><th id="79">79</th><td>	    <a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::prefix_len_stat_func" title='cache_def::prefix_len_stat_func' data-ref="cache_def::prefix_len_stat_func">prefix_len_stat_func</a> != <a class="local col3 ref" href="#23prefix_len_stat_func" title='prefix_len_stat_func' data-ref="23prefix_len_stat_func">prefix_len_stat_func</a>) {</td></tr>
+<tr><th id="80">80</th><td>		<i>/*</i></td></tr>
+<tr><th id="81">81</th><td><i>		 * As a safeguard rule we clear the cache if the</i></td></tr>
+<tr><th id="82">82</th><td><i>		 * values of track_flags and/or prefix_len_stat_func</i></td></tr>
+<tr><th id="83">83</th><td><i>		 * does not match with the last supplied values.</i></td></tr>
+<tr><th id="84">84</th><td><i>		 */</i></td></tr>
+<tr><th id="85">85</th><td>		<a class="tu ref" href="#reset_lstat_cache" title='reset_lstat_cache' data-use='c' data-ref="reset_lstat_cache">reset_lstat_cache</a>(<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>);</td></tr>
+<tr><th id="86">86</th><td>		<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::track_flags" title='cache_def::track_flags' data-ref="cache_def::track_flags">track_flags</a> = <a class="local col2 ref" href="#22track_flags" title='track_flags' data-ref="22track_flags">track_flags</a>;</td></tr>
+<tr><th id="87">87</th><td>		<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::prefix_len_stat_func" title='cache_def::prefix_len_stat_func' data-ref="cache_def::prefix_len_stat_func">prefix_len_stat_func</a> = <a class="local col3 ref" href="#23prefix_len_stat_func" title='prefix_len_stat_func' data-ref="23prefix_len_stat_func">prefix_len_stat_func</a>;</td></tr>
+<tr><th id="88">88</th><td>		<a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a> = <a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a> = <var>0</var>;</td></tr>
+<tr><th id="89">89</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="90">90</th><td>		<i>/*</i></td></tr>
+<tr><th id="91">91</th><td><i>		 * Check to see if we have a match from the cache for</i></td></tr>
+<tr><th id="92">92</th><td><i>		 * the 2 "excluding" path types.</i></td></tr>
+<tr><th id="93">93</th><td><i>		 */</i></td></tr>
+<tr><th id="94">94</th><td>		<a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a> = <a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a> =</td></tr>
+<tr><th id="95">95</th><td>			<a class="tu ref" href="#longest_path_match" title='longest_path_match' data-use='c' data-ref="longest_path_match">longest_path_match</a>(<a class="local col9 ref" href="#19name" title='name' data-ref="19name">name</a>, <a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a>, <a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>,</td></tr>
+<tr><th id="96">96</th><td>					   <a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>, &amp;<a class="local col7 ref" href="#27previous_slash" title='previous_slash' data-ref="27previous_slash">previous_slash</a>);</td></tr>
+<tr><th id="97">97</th><td>		*<a class="local col1 ref" href="#21ret_flags" title='ret_flags' data-ref="21ret_flags">ret_flags</a> = <a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::flags" title='cache_def::flags' data-ref="cache_def::flags">flags</a> &amp; <a class="local col2 ref" href="#22track_flags" title='track_flags' data-ref="22track_flags">track_flags</a> &amp; (<a class="macro" href="#51" title="(1 &lt;&lt; 1)" data-ref="_M/FL_NOENT">FL_NOENT</a>|<a class="macro" href="#52" title="(1 &lt;&lt; 2)" data-ref="_M/FL_SYMLINK">FL_SYMLINK</a>);</td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td>		<b>if</b> (!(<a class="local col2 ref" href="#22track_flags" title='track_flags' data-ref="22track_flags">track_flags</a> &amp; <a class="macro" href="#55" title="(1 &lt;&lt; 5)" data-ref="_M/FL_FULLPATH">FL_FULLPATH</a>) &amp;&amp; <a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a> == <a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a>)</td></tr>
+<tr><th id="100">100</th><td>			<a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a> = <a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a> = <a class="local col7 ref" href="#27previous_slash" title='previous_slash' data-ref="27previous_slash">previous_slash</a>;</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>		<b>if</b> (*<a class="local col1 ref" href="#21ret_flags" title='ret_flags' data-ref="21ret_flags">ret_flags</a> &amp;&amp; <a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a> == <a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>)</td></tr>
+<tr><th id="103">103</th><td>			<b>return</b> <a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a>;</td></tr>
+<tr><th id="104">104</th><td>		<i>/*</i></td></tr>
+<tr><th id="105">105</th><td><i>		 * If we now have match_len &gt; 0, we would know that</i></td></tr>
+<tr><th id="106">106</th><td><i>		 * the matched part will always be a directory.</i></td></tr>
+<tr><th id="107">107</th><td><i>		 *</i></td></tr>
+<tr><th id="108">108</th><td><i>		 * Also, if we are tracking directories and 'name' is</i></td></tr>
+<tr><th id="109">109</th><td><i>		 * a substring of the cache on a path component basis,</i></td></tr>
+<tr><th id="110">110</th><td><i>		 * we can return immediately.</i></td></tr>
+<tr><th id="111">111</th><td><i>		 */</i></td></tr>
+<tr><th id="112">112</th><td>		*<a class="local col1 ref" href="#21ret_flags" title='ret_flags' data-ref="21ret_flags">ret_flags</a> = <a class="local col2 ref" href="#22track_flags" title='track_flags' data-ref="22track_flags">track_flags</a> &amp; <a class="macro" href="#50" title="(1 &lt;&lt; 0)" data-ref="_M/FL_DIR">FL_DIR</a>;</td></tr>
+<tr><th id="113">113</th><td>		<b>if</b> (*<a class="local col1 ref" href="#21ret_flags" title='ret_flags' data-ref="21ret_flags">ret_flags</a> &amp;&amp; <a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a> == <a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a>)</td></tr>
+<tr><th id="114">114</th><td>			<b>return</b> <a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a>;</td></tr>
+<tr><th id="115">115</th><td>	}</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td>	<i>/*</i></td></tr>
+<tr><th id="118">118</th><td><i>	 * Okay, no match from the cache so far, so now we have to</i></td></tr>
+<tr><th id="119">119</th><td><i>	 * check the rest of the path components.</i></td></tr>
+<tr><th id="120">120</th><td><i>	 */</i></td></tr>
+<tr><th id="121">121</th><td>	*<a class="local col1 ref" href="#21ret_flags" title='ret_flags' data-ref="21ret_flags">ret_flags</a> = <a class="macro" href="#50" title="(1 &lt;&lt; 0)" data-ref="_M/FL_DIR">FL_DIR</a>;</td></tr>
+<tr><th id="122">122</th><td>	<a class="local col6 ref" href="#26last_slash_dir" title='last_slash_dir' data-ref="26last_slash_dir">last_slash_dir</a> = <a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a>;</td></tr>
+<tr><th id="123">123</th><td>	<b>if</b> (<a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a> &gt; <a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>)</td></tr>
+<tr><th id="124">124</th><td>		<a class="ref" href="strbuf.h.html#strbuf_grow" title='strbuf_grow' data-ref="strbuf_grow">strbuf_grow</a>(&amp;<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>, <a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a> - <a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>);</td></tr>
+<tr><th id="125">125</th><td>	<b>while</b> (<a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a> &lt; <a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a>) {</td></tr>
+<tr><th id="126">126</th><td>		<b>do</b> {</td></tr>
+<tr><th id="127">127</th><td>			<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a>] = <a class="local col9 ref" href="#19name" title='name' data-ref="19name">name</a>[<a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a>];</td></tr>
+<tr><th id="128">128</th><td>			<a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a>++;</td></tr>
+<tr><th id="129">129</th><td>		} <b>while</b> (<a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a> &lt; <a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a> &amp;&amp; <a class="local col9 ref" href="#19name" title='name' data-ref="19name">name</a>[<a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a>] != <kbd>'/'</kbd>);</td></tr>
+<tr><th id="130">130</th><td>		<b>if</b> (<a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a> &gt;= <a class="local col0 ref" href="#20len" title='len' data-ref="20len">len</a> &amp;&amp; !(<a class="local col2 ref" href="#22track_flags" title='track_flags' data-ref="22track_flags">track_flags</a> &amp; <a class="macro" href="#55" title="(1 &lt;&lt; 5)" data-ref="_M/FL_FULLPATH">FL_FULLPATH</a>))</td></tr>
+<tr><th id="131">131</th><td>			<b>break</b>;</td></tr>
+<tr><th id="132">132</th><td>		<a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a> = <a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a>;</td></tr>
+<tr><th id="133">133</th><td>		<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a>] = <kbd>'\0'</kbd>;</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>		<b>if</b> (<a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a> &lt;= <a class="local col3 ref" href="#23prefix_len_stat_func" title='prefix_len_stat_func' data-ref="23prefix_len_stat_func">prefix_len_stat_func</a>)</td></tr>
+<tr><th id="136">136</th><td>			<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a> = <a class="ref" href="../include/x86_64-linux-gnu/sys/stat.h.html#216" title='stat' data-ref="stat64">stat</a>(<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, &amp;<a class="local col0 ref" href="#30st" title='st' data-ref="30st">st</a>);</td></tr>
+<tr><th id="137">137</th><td>		<b>else</b></td></tr>
+<tr><th id="138">138</th><td>			<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a> = <a class="ref" href="../include/x86_64-linux-gnu/sys/stat.h.html#266" title='lstat' data-ref="lstat64">lstat</a>(<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, &amp;<a class="local col0 ref" href="#30st" title='st' data-ref="30st">st</a>);</td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td>		<b>if</b> (<a class="local col9 ref" href="#29ret" title='ret' data-ref="29ret">ret</a>) {</td></tr>
+<tr><th id="141">141</th><td>			*<a class="local col1 ref" href="#21ret_flags" title='ret_flags' data-ref="21ret_flags">ret_flags</a> = <a class="macro" href="#53" title="(1 &lt;&lt; 3)" data-ref="_M/FL_LSTATERR">FL_LSTATERR</a>;</td></tr>
+<tr><th id="142">142</th><td>			<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#5" title="2" data-ref="_M/ENOENT">ENOENT</a>)</td></tr>
+<tr><th id="143">143</th><td>				*<a class="local col1 ref" href="#21ret_flags" title='ret_flags' data-ref="21ret_flags">ret_flags</a> |= <a class="macro" href="#51" title="(1 &lt;&lt; 1)" data-ref="_M/FL_NOENT">FL_NOENT</a>;</td></tr>
+<tr><th id="144">144</th><td>		} <b>else</b> <b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/sys/stat.h.html#128" title="((((st.st_mode)) &amp; 0170000) == (0040000))" data-ref="_M/S_ISDIR">S_ISDIR</a>(<a class="local col0 ref" href="#30st" title='st' data-ref="30st">st</a>.<a class="ref" href="../include/x86_64-linux-gnu/bits/stat.h.html#stat::st_mode" title='stat::st_mode' data-ref="stat::st_mode">st_mode</a>)) {</td></tr>
+<tr><th id="145">145</th><td>			<a class="local col6 ref" href="#26last_slash_dir" title='last_slash_dir' data-ref="26last_slash_dir">last_slash_dir</a> = <a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a>;</td></tr>
+<tr><th id="146">146</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="147">147</th><td>		} <b>else</b> <b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/sys/stat.h.html#136" title="((((st.st_mode)) &amp; 0170000) == (0120000))" data-ref="_M/S_ISLNK">S_ISLNK</a>(<a class="local col0 ref" href="#30st" title='st' data-ref="30st">st</a>.<a class="ref" href="../include/x86_64-linux-gnu/bits/stat.h.html#stat::st_mode" title='stat::st_mode' data-ref="stat::st_mode">st_mode</a>)) {</td></tr>
+<tr><th id="148">148</th><td>			*<a class="local col1 ref" href="#21ret_flags" title='ret_flags' data-ref="21ret_flags">ret_flags</a> = <a class="macro" href="#52" title="(1 &lt;&lt; 2)" data-ref="_M/FL_SYMLINK">FL_SYMLINK</a>;</td></tr>
+<tr><th id="149">149</th><td>		} <b>else</b> {</td></tr>
+<tr><th id="150">150</th><td>			*<a class="local col1 ref" href="#21ret_flags" title='ret_flags' data-ref="21ret_flags">ret_flags</a> = <a class="macro" href="#54" title="(1 &lt;&lt; 4)" data-ref="_M/FL_ERR">FL_ERR</a>;</td></tr>
+<tr><th id="151">151</th><td>		}</td></tr>
+<tr><th id="152">152</th><td>		<b>break</b>;</td></tr>
+<tr><th id="153">153</th><td>	}</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td>	<i>/*</i></td></tr>
+<tr><th id="156">156</th><td><i>	 * At the end update the cache.  Note that max 3 different</i></td></tr>
+<tr><th id="157">157</th><td><i>	 * path types, FL_NOENT, FL_SYMLINK and FL_DIR, can be cached</i></td></tr>
+<tr><th id="158">158</th><td><i>	 * for the moment!</i></td></tr>
+<tr><th id="159">159</th><td><i>	 */</i></td></tr>
+<tr><th id="160">160</th><td>	<a class="local col8 ref" href="#28save_flags" title='save_flags' data-ref="28save_flags">save_flags</a> = *<a class="local col1 ref" href="#21ret_flags" title='ret_flags' data-ref="21ret_flags">ret_flags</a> &amp; <a class="local col2 ref" href="#22track_flags" title='track_flags' data-ref="22track_flags">track_flags</a> &amp; (<a class="macro" href="#51" title="(1 &lt;&lt; 1)" data-ref="_M/FL_NOENT">FL_NOENT</a>|<a class="macro" href="#52" title="(1 &lt;&lt; 2)" data-ref="_M/FL_SYMLINK">FL_SYMLINK</a>);</td></tr>
+<tr><th id="161">161</th><td>	<b>if</b> (<a class="local col8 ref" href="#28save_flags" title='save_flags' data-ref="28save_flags">save_flags</a> &amp;&amp; <a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a> &gt; <var>0</var>) {</td></tr>
+<tr><th id="162">162</th><td>		<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a>] = <kbd>'\0'</kbd>;</td></tr>
+<tr><th id="163">163</th><td>		<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a> = <a class="local col5 ref" href="#25last_slash" title='last_slash' data-ref="25last_slash">last_slash</a>;</td></tr>
+<tr><th id="164">164</th><td>		<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::flags" title='cache_def::flags' data-ref="cache_def::flags">flags</a> = <a class="local col8 ref" href="#28save_flags" title='save_flags' data-ref="28save_flags">save_flags</a>;</td></tr>
+<tr><th id="165">165</th><td>	} <b>else</b> <b>if</b> ((<a class="local col2 ref" href="#22track_flags" title='track_flags' data-ref="22track_flags">track_flags</a> &amp; <a class="macro" href="#50" title="(1 &lt;&lt; 0)" data-ref="_M/FL_DIR">FL_DIR</a>) &amp;&amp; <a class="local col6 ref" href="#26last_slash_dir" title='last_slash_dir' data-ref="26last_slash_dir">last_slash_dir</a> &gt; <var>0</var>) {</td></tr>
+<tr><th id="166">166</th><td>		<i>/*</i></td></tr>
+<tr><th id="167">167</th><td><i>		 * We have a separate test for the directory case,</i></td></tr>
+<tr><th id="168">168</th><td><i>		 * since it could be that we have found a symlink or a</i></td></tr>
+<tr><th id="169">169</th><td><i>		 * non-existing directory and the track_flags says</i></td></tr>
+<tr><th id="170">170</th><td><i>		 * that we cannot cache this fact, so the cache would</i></td></tr>
+<tr><th id="171">171</th><td><i>		 * then have been left empty in this case.</i></td></tr>
+<tr><th id="172">172</th><td><i>		 *</i></td></tr>
+<tr><th id="173">173</th><td><i>		 * But if we are allowed to track real directories, we</i></td></tr>
+<tr><th id="174">174</th><td><i>		 * can still cache the path components before the last</i></td></tr>
+<tr><th id="175">175</th><td><i>		 * one (the found symlink or non-existing component).</i></td></tr>
+<tr><th id="176">176</th><td><i>		 */</i></td></tr>
+<tr><th id="177">177</th><td>		<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="local col6 ref" href="#26last_slash_dir" title='last_slash_dir' data-ref="26last_slash_dir">last_slash_dir</a>] = <kbd>'\0'</kbd>;</td></tr>
+<tr><th id="178">178</th><td>		<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::path" title='cache_def::path' data-ref="cache_def::path">path</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a> = <a class="local col6 ref" href="#26last_slash_dir" title='last_slash_dir' data-ref="26last_slash_dir">last_slash_dir</a>;</td></tr>
+<tr><th id="179">179</th><td>		<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>-&gt;<a class="ref" href="cache.h.html#cache_def::flags" title='cache_def::flags' data-ref="cache_def::flags">flags</a> = <a class="macro" href="#50" title="(1 &lt;&lt; 0)" data-ref="_M/FL_DIR">FL_DIR</a>;</td></tr>
+<tr><th id="180">180</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="181">181</th><td>		<a class="tu ref" href="#reset_lstat_cache" title='reset_lstat_cache' data-use='c' data-ref="reset_lstat_cache">reset_lstat_cache</a>(<a class="local col8 ref" href="#18cache" title='cache' data-ref="18cache">cache</a>);</td></tr>
+<tr><th id="182">182</th><td>	}</td></tr>
+<tr><th id="183">183</th><td>	<b>return</b> <a class="local col4 ref" href="#24match_len" title='match_len' data-ref="24match_len">match_len</a>;</td></tr>
+<tr><th id="184">184</th><td>}</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="lstat_cache" title='lstat_cache' data-type='int lstat_cache(struct cache_def * cache, const char * name, int len, int track_flags, int prefix_len_stat_func)' data-ref="lstat_cache">lstat_cache</dfn>(<b>struct</b> <a class="type" href="cache.h.html#cache_def" title='cache_def' data-ref="cache_def">cache_def</a> *<dfn class="local col1 decl" id="31cache" title='cache' data-type='struct cache_def *' data-ref="31cache">cache</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="32name" title='name' data-type='const char *' data-ref="32name">name</dfn>, <em>int</em> <dfn class="local col3 decl" id="33len" title='len' data-type='int' data-ref="33len">len</dfn>,</td></tr>
+<tr><th id="187">187</th><td>		       <em>int</em> <dfn class="local col4 decl" id="34track_flags" title='track_flags' data-type='int' data-ref="34track_flags">track_flags</dfn>, <em>int</em> <dfn class="local col5 decl" id="35prefix_len_stat_func" title='prefix_len_stat_func' data-type='int' data-ref="35prefix_len_stat_func">prefix_len_stat_func</dfn>)</td></tr>
+<tr><th id="188">188</th><td>{</td></tr>
+<tr><th id="189">189</th><td>	<em>int</em> <dfn class="local col6 decl" id="36flags" title='flags' data-type='int' data-ref="36flags">flags</dfn>;</td></tr>
+<tr><th id="190">190</th><td>	(<em>void</em>)<a class="tu ref" href="#lstat_cache_matchlen" title='lstat_cache_matchlen' data-use='c' data-ref="lstat_cache_matchlen">lstat_cache_matchlen</a>(<a class="local col1 ref" href="#31cache" title='cache' data-ref="31cache">cache</a>, <a class="local col2 ref" href="#32name" title='name' data-ref="32name">name</a>, <a class="local col3 ref" href="#33len" title='len' data-ref="33len">len</a>, &amp;<a class="local col6 ref" href="#36flags" title='flags' data-ref="36flags">flags</a>, <a class="local col4 ref" href="#34track_flags" title='track_flags' data-ref="34track_flags">track_flags</a>,</td></tr>
+<tr><th id="191">191</th><td>			<a class="local col5 ref" href="#35prefix_len_stat_func" title='prefix_len_stat_func' data-ref="35prefix_len_stat_func">prefix_len_stat_func</a>);</td></tr>
+<tr><th id="192">192</th><td>	<b>return</b> <a class="local col6 ref" href="#36flags" title='flags' data-ref="36flags">flags</a>;</td></tr>
+<tr><th id="193">193</th><td>}</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td><u>#define <dfn class="macro" id="_M/USE_ONLY_LSTAT" data-ref="_M/USE_ONLY_LSTAT">USE_ONLY_LSTAT</dfn>  0</u></td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td><i>/*</i></td></tr>
+<tr><th id="198">198</th><td><i> * Return non-zero if path 'name' has a leading symlink component</i></td></tr>
+<tr><th id="199">199</th><td><i> */</i></td></tr>
+<tr><th id="200">200</th><td><em>int</em> <dfn class="decl def" id="threaded_has_symlink_leading_path" title='threaded_has_symlink_leading_path' data-ref="threaded_has_symlink_leading_path">threaded_has_symlink_leading_path</dfn>(<b>struct</b> <a class="type" href="cache.h.html#cache_def" title='cache_def' data-ref="cache_def">cache_def</a> *<dfn class="local col7 decl" id="37cache" title='cache' data-type='struct cache_def *' data-ref="37cache">cache</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="38name" title='name' data-type='const char *' data-ref="38name">name</dfn>, <em>int</em> <dfn class="local col9 decl" id="39len" title='len' data-type='int' data-ref="39len">len</dfn>)</td></tr>
+<tr><th id="201">201</th><td>{</td></tr>
+<tr><th id="202">202</th><td>	<b>return</b> <a class="tu ref" href="#lstat_cache" title='lstat_cache' data-use='c' data-ref="lstat_cache">lstat_cache</a>(<a class="local col7 ref" href="#37cache" title='cache' data-ref="37cache">cache</a>, <a class="local col8 ref" href="#38name" title='name' data-ref="38name">name</a>, <a class="local col9 ref" href="#39len" title='len' data-ref="39len">len</a>, <a class="macro" href="#52" title="(1 &lt;&lt; 2)" data-ref="_M/FL_SYMLINK">FL_SYMLINK</a>|<a class="macro" href="#50" title="(1 &lt;&lt; 0)" data-ref="_M/FL_DIR">FL_DIR</a>, <a class="macro" href="#195" title="0" data-ref="_M/USE_ONLY_LSTAT">USE_ONLY_LSTAT</a>) &amp; <a class="macro" href="#52" title="(1 &lt;&lt; 2)" data-ref="_M/FL_SYMLINK">FL_SYMLINK</a>;</td></tr>
+<tr><th id="203">203</th><td>}</td></tr>
+<tr><th id="204">204</th><td></td></tr>
+<tr><th id="205">205</th><td><i>/*</i></td></tr>
+<tr><th id="206">206</th><td><i> * Return non-zero if path 'name' has a leading symlink component</i></td></tr>
+<tr><th id="207">207</th><td><i> */</i></td></tr>
+<tr><th id="208">208</th><td><em>int</em> <dfn class="decl def" id="has_symlink_leading_path" title='has_symlink_leading_path' data-ref="has_symlink_leading_path">has_symlink_leading_path</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="40name" title='name' data-type='const char *' data-ref="40name">name</dfn>, <em>int</em> <dfn class="local col1 decl" id="41len" title='len' data-type='int' data-ref="41len">len</dfn>)</td></tr>
+<tr><th id="209">209</th><td>{</td></tr>
+<tr><th id="210">210</th><td>	<b>return</b> <a class="ref" href="#threaded_has_symlink_leading_path" title='threaded_has_symlink_leading_path' data-ref="threaded_has_symlink_leading_path">threaded_has_symlink_leading_path</a>(&amp;<a class="tu ref" href="#default_cache" title='default_cache' data-use='a' data-ref="default_cache">default_cache</a>, <a class="local col0 ref" href="#40name" title='name' data-ref="40name">name</a>, <a class="local col1 ref" href="#41len" title='len' data-ref="41len">len</a>);</td></tr>
+<tr><th id="211">211</th><td>}</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><i>/*</i></td></tr>
+<tr><th id="214">214</th><td><i> * Return zero if path 'name' has a leading symlink component or</i></td></tr>
+<tr><th id="215">215</th><td><i> * if some leading path component does not exists.</i></td></tr>
+<tr><th id="216">216</th><td><i> *</i></td></tr>
+<tr><th id="217">217</th><td><i> * Return -1 if leading path exists and is a directory.</i></td></tr>
+<tr><th id="218">218</th><td><i> *</i></td></tr>
+<tr><th id="219">219</th><td><i> * Return path length if leading path exists and is neither a</i></td></tr>
+<tr><th id="220">220</th><td><i> * directory nor a symlink.</i></td></tr>
+<tr><th id="221">221</th><td><i> */</i></td></tr>
+<tr><th id="222">222</th><td><em>int</em> <dfn class="decl def" id="check_leading_path" title='check_leading_path' data-ref="check_leading_path">check_leading_path</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="42name" title='name' data-type='const char *' data-ref="42name">name</dfn>, <em>int</em> <dfn class="local col3 decl" id="43len" title='len' data-type='int' data-ref="43len">len</dfn>)</td></tr>
+<tr><th id="223">223</th><td>{</td></tr>
+<tr><th id="224">224</th><td>    <b>return</b> <a class="tu ref" href="#threaded_check_leading_path" title='threaded_check_leading_path' data-use='c' data-ref="threaded_check_leading_path">threaded_check_leading_path</a>(&amp;<a class="tu ref" href="#default_cache" title='default_cache' data-use='a' data-ref="default_cache">default_cache</a>, <a class="local col2 ref" href="#42name" title='name' data-ref="42name">name</a>, <a class="local col3 ref" href="#43len" title='len' data-ref="43len">len</a>);</td></tr>
+<tr><th id="225">225</th><td>}</td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td><i  data-doc="threaded_check_leading_path">/*</i></td></tr>
+<tr><th id="228">228</th><td><i  data-doc="threaded_check_leading_path"> * Return zero if path 'name' has a leading symlink component or</i></td></tr>
+<tr><th id="229">229</th><td><i  data-doc="threaded_check_leading_path"> * if some leading path component does not exists.</i></td></tr>
+<tr><th id="230">230</th><td><i  data-doc="threaded_check_leading_path"> *</i></td></tr>
+<tr><th id="231">231</th><td><i  data-doc="threaded_check_leading_path"> * Return -1 if leading path exists and is a directory.</i></td></tr>
+<tr><th id="232">232</th><td><i  data-doc="threaded_check_leading_path"> *</i></td></tr>
+<tr><th id="233">233</th><td><i  data-doc="threaded_check_leading_path"> * Return path length if leading path exists and is neither a</i></td></tr>
+<tr><th id="234">234</th><td><i  data-doc="threaded_check_leading_path"> * directory nor a symlink.</i></td></tr>
+<tr><th id="235">235</th><td><i  data-doc="threaded_check_leading_path"> */</i></td></tr>
+<tr><th id="236">236</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="threaded_check_leading_path" title='threaded_check_leading_path' data-type='int threaded_check_leading_path(struct cache_def * cache, const char * name, int len)' data-ref="threaded_check_leading_path">threaded_check_leading_path</dfn>(<b>struct</b> <a class="type" href="cache.h.html#cache_def" title='cache_def' data-ref="cache_def">cache_def</a> *<dfn class="local col4 decl" id="44cache" title='cache' data-type='struct cache_def *' data-ref="44cache">cache</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="45name" title='name' data-type='const char *' data-ref="45name">name</dfn>, <em>int</em> <dfn class="local col6 decl" id="46len" title='len' data-type='int' data-ref="46len">len</dfn>)</td></tr>
+<tr><th id="237">237</th><td>{</td></tr>
+<tr><th id="238">238</th><td>	<em>int</em> <dfn class="local col7 decl" id="47flags" title='flags' data-type='int' data-ref="47flags">flags</dfn>;</td></tr>
+<tr><th id="239">239</th><td>	<em>int</em> <dfn class="local col8 decl" id="48match_len" title='match_len' data-type='int' data-ref="48match_len">match_len</dfn> = <a class="tu ref" href="#lstat_cache_matchlen" title='lstat_cache_matchlen' data-use='c' data-ref="lstat_cache_matchlen">lstat_cache_matchlen</a>(<a class="local col4 ref" href="#44cache" title='cache' data-ref="44cache">cache</a>, <a class="local col5 ref" href="#45name" title='name' data-ref="45name">name</a>, <a class="local col6 ref" href="#46len" title='len' data-ref="46len">len</a>, &amp;<a class="local col7 ref" href="#47flags" title='flags' data-ref="47flags">flags</a>,</td></tr>
+<tr><th id="240">240</th><td>			   <a class="macro" href="#52" title="(1 &lt;&lt; 2)" data-ref="_M/FL_SYMLINK">FL_SYMLINK</a>|<a class="macro" href="#51" title="(1 &lt;&lt; 1)" data-ref="_M/FL_NOENT">FL_NOENT</a>|<a class="macro" href="#50" title="(1 &lt;&lt; 0)" data-ref="_M/FL_DIR">FL_DIR</a>, <a class="macro" href="#195" title="0" data-ref="_M/USE_ONLY_LSTAT">USE_ONLY_LSTAT</a>);</td></tr>
+<tr><th id="241">241</th><td>	<b>if</b> (<a class="local col7 ref" href="#47flags" title='flags' data-ref="47flags">flags</a> &amp; <a class="macro" href="#51" title="(1 &lt;&lt; 1)" data-ref="_M/FL_NOENT">FL_NOENT</a>)</td></tr>
+<tr><th id="242">242</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="243">243</th><td>	<b>else</b> <b>if</b> (<a class="local col7 ref" href="#47flags" title='flags' data-ref="47flags">flags</a> &amp; <a class="macro" href="#50" title="(1 &lt;&lt; 0)" data-ref="_M/FL_DIR">FL_DIR</a>)</td></tr>
+<tr><th id="244">244</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="245">245</th><td>	<b>else</b></td></tr>
+<tr><th id="246">246</th><td>		<b>return</b> <a class="local col8 ref" href="#48match_len" title='match_len' data-ref="48match_len">match_len</a>;</td></tr>
+<tr><th id="247">247</th><td>}</td></tr>
+<tr><th id="248">248</th><td></td></tr>
+<tr><th id="249">249</th><td><i>/*</i></td></tr>
+<tr><th id="250">250</th><td><i> * Return non-zero if all path components of 'name' exists as a</i></td></tr>
+<tr><th id="251">251</th><td><i> * directory.  If prefix_len &gt; 0, we will test with the stat()</i></td></tr>
+<tr><th id="252">252</th><td><i> * function instead of the lstat() function for a prefix length of</i></td></tr>
+<tr><th id="253">253</th><td><i> * 'prefix_len', thus we then allow for symlinks in the prefix part as</i></td></tr>
+<tr><th id="254">254</th><td><i> * long as those points to real existing directories.</i></td></tr>
+<tr><th id="255">255</th><td><i> */</i></td></tr>
+<tr><th id="256">256</th><td><em>int</em> <dfn class="decl def" id="has_dirs_only_path" title='has_dirs_only_path' data-ref="has_dirs_only_path">has_dirs_only_path</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="49name" title='name' data-type='const char *' data-ref="49name">name</dfn>, <em>int</em> <dfn class="local col0 decl" id="50len" title='len' data-type='int' data-ref="50len">len</dfn>, <em>int</em> <dfn class="local col1 decl" id="51prefix_len" title='prefix_len' data-type='int' data-ref="51prefix_len">prefix_len</dfn>)</td></tr>
+<tr><th id="257">257</th><td>{</td></tr>
+<tr><th id="258">258</th><td>	<b>return</b> <a class="tu ref" href="#threaded_has_dirs_only_path" title='threaded_has_dirs_only_path' data-use='c' data-ref="threaded_has_dirs_only_path">threaded_has_dirs_only_path</a>(&amp;<a class="tu ref" href="#default_cache" title='default_cache' data-use='a' data-ref="default_cache">default_cache</a>, <a class="local col9 ref" href="#49name" title='name' data-ref="49name">name</a>, <a class="local col0 ref" href="#50len" title='len' data-ref="50len">len</a>, <a class="local col1 ref" href="#51prefix_len" title='prefix_len' data-ref="51prefix_len">prefix_len</a>);</td></tr>
+<tr><th id="259">259</th><td>}</td></tr>
+<tr><th id="260">260</th><td></td></tr>
+<tr><th id="261">261</th><td><i  data-doc="threaded_has_dirs_only_path">/*</i></td></tr>
+<tr><th id="262">262</th><td><i  data-doc="threaded_has_dirs_only_path"> * Return non-zero if all path components of 'name' exists as a</i></td></tr>
+<tr><th id="263">263</th><td><i  data-doc="threaded_has_dirs_only_path"> * directory.  If prefix_len &gt; 0, we will test with the stat()</i></td></tr>
+<tr><th id="264">264</th><td><i  data-doc="threaded_has_dirs_only_path"> * function instead of the lstat() function for a prefix length of</i></td></tr>
+<tr><th id="265">265</th><td><i  data-doc="threaded_has_dirs_only_path"> * 'prefix_len', thus we then allow for symlinks in the prefix part as</i></td></tr>
+<tr><th id="266">266</th><td><i  data-doc="threaded_has_dirs_only_path"> * long as those points to real existing directories.</i></td></tr>
+<tr><th id="267">267</th><td><i  data-doc="threaded_has_dirs_only_path"> */</i></td></tr>
+<tr><th id="268">268</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="threaded_has_dirs_only_path" title='threaded_has_dirs_only_path' data-type='int threaded_has_dirs_only_path(struct cache_def * cache, const char * name, int len, int prefix_len)' data-ref="threaded_has_dirs_only_path">threaded_has_dirs_only_path</dfn>(<b>struct</b> <a class="type" href="cache.h.html#cache_def" title='cache_def' data-ref="cache_def">cache_def</a> *<dfn class="local col2 decl" id="52cache" title='cache' data-type='struct cache_def *' data-ref="52cache">cache</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="53name" title='name' data-type='const char *' data-ref="53name">name</dfn>, <em>int</em> <dfn class="local col4 decl" id="54len" title='len' data-type='int' data-ref="54len">len</dfn>, <em>int</em> <dfn class="local col5 decl" id="55prefix_len" title='prefix_len' data-type='int' data-ref="55prefix_len">prefix_len</dfn>)</td></tr>
+<tr><th id="269">269</th><td>{</td></tr>
+<tr><th id="270">270</th><td>	<b>return</b> <a class="tu ref" href="#lstat_cache" title='lstat_cache' data-use='c' data-ref="lstat_cache">lstat_cache</a>(<a class="local col2 ref" href="#52cache" title='cache' data-ref="52cache">cache</a>, <a class="local col3 ref" href="#53name" title='name' data-ref="53name">name</a>, <a class="local col4 ref" href="#54len" title='len' data-ref="54len">len</a>,</td></tr>
+<tr><th id="271">271</th><td>			   <a class="macro" href="#50" title="(1 &lt;&lt; 0)" data-ref="_M/FL_DIR">FL_DIR</a>|<a class="macro" href="#55" title="(1 &lt;&lt; 5)" data-ref="_M/FL_FULLPATH">FL_FULLPATH</a>, <a class="local col5 ref" href="#55prefix_len" title='prefix_len' data-ref="55prefix_len">prefix_len</a>) &amp;</td></tr>
+<tr><th id="272">272</th><td>		<a class="macro" href="#50" title="(1 &lt;&lt; 0)" data-ref="_M/FL_DIR">FL_DIR</a>;</td></tr>
+<tr><th id="273">273</th><td>}</td></tr>
+<tr><th id="274">274</th><td></td></tr>
+<tr><th id="275">275</th><td><em>static</em> <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="tu decl def" id="removal" title='removal' data-type='struct strbuf' data-ref="removal">removal</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="276">276</th><td></td></tr>
+<tr><th id="277">277</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="do_remove_scheduled_dirs" title='do_remove_scheduled_dirs' data-type='void do_remove_scheduled_dirs(int new_len)' data-ref="do_remove_scheduled_dirs">do_remove_scheduled_dirs</dfn>(<em>int</em> <dfn class="local col6 decl" id="56new_len" title='new_len' data-type='int' data-ref="56new_len">new_len</dfn>)</td></tr>
+<tr><th id="278">278</th><td>{</td></tr>
+<tr><th id="279">279</th><td>	<b>while</b> (<a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a> &gt; <a class="local col6 ref" href="#56new_len" title='new_len' data-ref="56new_len">new_len</a>) {</td></tr>
+<tr><th id="280">280</th><td>		<a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>] = <kbd>'\0'</kbd>;</td></tr>
+<tr><th id="281">281</th><td>		<b>if</b> (<a class="ref" href="../include/unistd.h.html#rmdir" title='rmdir' data-ref="rmdir">rmdir</a>(<a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>))</td></tr>
+<tr><th id="282">282</th><td>			<b>break</b>;</td></tr>
+<tr><th id="283">283</th><td>		<b>do</b> {</td></tr>
+<tr><th id="284">284</th><td>			<a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>--;</td></tr>
+<tr><th id="285">285</th><td>		} <b>while</b> (<a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a> &gt; <a class="local col6 ref" href="#56new_len" title='new_len' data-ref="56new_len">new_len</a> &amp;&amp;</td></tr>
+<tr><th id="286">286</th><td>			 <a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>] != <kbd>'/'</kbd>);</td></tr>
+<tr><th id="287">287</th><td>	}</td></tr>
+<tr><th id="288">288</th><td>	<a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a> = <a class="local col6 ref" href="#56new_len" title='new_len' data-ref="56new_len">new_len</a>;</td></tr>
+<tr><th id="289">289</th><td>}</td></tr>
+<tr><th id="290">290</th><td></td></tr>
+<tr><th id="291">291</th><td><em>void</em> <dfn class="decl def" id="schedule_dir_for_removal" title='schedule_dir_for_removal' data-ref="schedule_dir_for_removal">schedule_dir_for_removal</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="57name" title='name' data-type='const char *' data-ref="57name">name</dfn>, <em>int</em> <dfn class="local col8 decl" id="58len" title='len' data-type='int' data-ref="58len">len</dfn>)</td></tr>
+<tr><th id="292">292</th><td>{</td></tr>
+<tr><th id="293">293</th><td>	<em>int</em> <dfn class="local col9 decl" id="59match_len" title='match_len' data-type='int' data-ref="59match_len">match_len</dfn>, <dfn class="local col0 decl" id="60last_slash" title='last_slash' data-type='int' data-ref="60last_slash">last_slash</dfn>, <dfn class="local col1 decl" id="61i" title='i' data-type='int' data-ref="61i">i</dfn>, <dfn class="local col2 decl" id="62previous_slash" title='previous_slash' data-type='int' data-ref="62previous_slash">previous_slash</dfn>;</td></tr>
+<tr><th id="294">294</th><td></td></tr>
+<tr><th id="295">295</th><td>	<a class="local col9 ref" href="#59match_len" title='match_len' data-ref="59match_len">match_len</a> = <a class="local col0 ref" href="#60last_slash" title='last_slash' data-ref="60last_slash">last_slash</a> = <a class="local col1 ref" href="#61i" title='i' data-ref="61i">i</a> =</td></tr>
+<tr><th id="296">296</th><td>		<a class="tu ref" href="#longest_path_match" title='longest_path_match' data-use='c' data-ref="longest_path_match">longest_path_match</a>(<a class="local col7 ref" href="#57name" title='name' data-ref="57name">name</a>, <a class="local col8 ref" href="#58len" title='len' data-ref="58len">len</a>, <a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>,</td></tr>
+<tr><th id="297">297</th><td>				   &amp;<a class="local col2 ref" href="#62previous_slash" title='previous_slash' data-ref="62previous_slash">previous_slash</a>);</td></tr>
+<tr><th id="298">298</th><td>	<i>/* Find last slash inside 'name' */</i></td></tr>
+<tr><th id="299">299</th><td>	<b>while</b> (<a class="local col1 ref" href="#61i" title='i' data-ref="61i">i</a> &lt; <a class="local col8 ref" href="#58len" title='len' data-ref="58len">len</a>) {</td></tr>
+<tr><th id="300">300</th><td>		<b>if</b> (<a class="local col7 ref" href="#57name" title='name' data-ref="57name">name</a>[<a class="local col1 ref" href="#61i" title='i' data-ref="61i">i</a>] == <kbd>'/'</kbd>)</td></tr>
+<tr><th id="301">301</th><td>			<a class="local col0 ref" href="#60last_slash" title='last_slash' data-ref="60last_slash">last_slash</a> = <a class="local col1 ref" href="#61i" title='i' data-ref="61i">i</a>;</td></tr>
+<tr><th id="302">302</th><td>		<a class="local col1 ref" href="#61i" title='i' data-ref="61i">i</a>++;</td></tr>
+<tr><th id="303">303</th><td>	}</td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td>	<i>/*</i></td></tr>
+<tr><th id="306">306</th><td><i>	 * If we are about to go down the directory tree, we check if</i></td></tr>
+<tr><th id="307">307</th><td><i>	 * we must first go upwards the tree, such that we then can</i></td></tr>
+<tr><th id="308">308</th><td><i>	 * remove possible empty directories as we go upwards.</i></td></tr>
+<tr><th id="309">309</th><td><i>	 */</i></td></tr>
+<tr><th id="310">310</th><td>	<b>if</b> (<a class="local col9 ref" href="#59match_len" title='match_len' data-ref="59match_len">match_len</a> &lt; <a class="local col0 ref" href="#60last_slash" title='last_slash' data-ref="60last_slash">last_slash</a> &amp;&amp; <a class="local col9 ref" href="#59match_len" title='match_len' data-ref="59match_len">match_len</a> &lt; <a class="tu ref" href="#removal" title='removal' data-use='m' data-ref="removal">removal</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>)</td></tr>
+<tr><th id="311">311</th><td>		<a class="tu ref" href="#do_remove_scheduled_dirs" title='do_remove_scheduled_dirs' data-use='c' data-ref="do_remove_scheduled_dirs">do_remove_scheduled_dirs</a>(<a class="local col9 ref" href="#59match_len" title='match_len' data-ref="59match_len">match_len</a>);</td></tr>
+<tr><th id="312">312</th><td>	<i>/*</i></td></tr>
+<tr><th id="313">313</th><td><i>	 * If we go deeper down the directory tree, we only need to</i></td></tr>
+<tr><th id="314">314</th><td><i>	 * save the new path components as we go down.</i></td></tr>
+<tr><th id="315">315</th><td><i>	 */</i></td></tr>
+<tr><th id="316">316</th><td>	<b>if</b> (<a class="local col9 ref" href="#59match_len" title='match_len' data-ref="59match_len">match_len</a> &lt; <a class="local col0 ref" href="#60last_slash" title='last_slash' data-ref="60last_slash">last_slash</a>)</td></tr>
+<tr><th id="317">317</th><td>		<a class="ref" href="strbuf.h.html#strbuf_add" title='strbuf_add' data-ref="strbuf_add">strbuf_add</a>(&amp;<a class="tu ref" href="#removal" title='removal' data-use='a' data-ref="removal">removal</a>, &amp;<a class="local col7 ref" href="#57name" title='name' data-ref="57name">name</a>[<a class="local col9 ref" href="#59match_len" title='match_len' data-ref="59match_len">match_len</a>], <a class="local col0 ref" href="#60last_slash" title='last_slash' data-ref="60last_slash">last_slash</a> - <a class="local col9 ref" href="#59match_len" title='match_len' data-ref="59match_len">match_len</a>);</td></tr>
+<tr><th id="318">318</th><td>}</td></tr>
+<tr><th id="319">319</th><td></td></tr>
+<tr><th id="320">320</th><td><em>void</em> <dfn class="decl def" id="remove_scheduled_dirs" title='remove_scheduled_dirs' data-ref="remove_scheduled_dirs">remove_scheduled_dirs</dfn>(<em>void</em>)</td></tr>
+<tr><th id="321">321</th><td>{</td></tr>
+<tr><th id="322">322</th><td>	<a class="tu ref" href="#do_remove_scheduled_dirs" title='do_remove_scheduled_dirs' data-use='c' data-ref="do_remove_scheduled_dirs">do_remove_scheduled_dirs</a>(<var>0</var>);</td></tr>
+<tr><th id="323">323</th><td>}</td></tr>
+<tr><th id="324">324</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

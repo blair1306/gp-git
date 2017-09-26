@@ -1,0 +1,3 @@
+<dec f='codebrowser/notes-utils.h' l='25' type='2'/>
+<use f='codebrowser/notes-merge.c' l='442' c='merge_one_change'/>
+<use f='codebrowser/notes-utils.c' l='65' u='r' c='parse_notes_merge_strategy'/>

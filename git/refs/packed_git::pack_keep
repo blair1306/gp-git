@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1600' type='unsigned int'/>
+<offset>609</offset>
+<use f='codebrowser/builtin/gc.c' l='178' u='r' c='too_many_packs'/>
+<use f='codebrowser/builtin/pack-objects.c' l='976' u='r' c='want_found_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2600' u='r' c='add_objects_in_unpacked_packs'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2662' u='r' c='has_sha1_pack_kept_or_nonlocal'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2705' u='r' c='loosen_unused_packed_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3053' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/sha1_file.c' l='1344' u='w' c='add_packed_git'/>

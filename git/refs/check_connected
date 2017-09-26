@@ -1,0 +1,28 @@
+<dec f='codebrowser/connected.h' l='54' type='int check_connected(sha1_iterate_fn fn, void * cb_data, struct check_connected_options * opt)'/>
+<use f='codebrowser/builtin/clone.c' l='653' u='c' c='update_remote_refs'/>
+<doc f='codebrowser/connected.h' l='45'>/*
+ * Make sure that our object store has all the commits necessary to
+ * connect the ancestry chain to some of our existing refs, and all
+ * the trees and blobs that these commits use.
+ *
+ * Return 0 if Ok, non zero otherwise (i.e. some missing objects)
+ *
+ * If &quot;opt&quot; is NULL, behaves as if CHECK_CONNECTED_INIT was passed.
+ */</doc>
+<use f='codebrowser/builtin/fetch.c' l='767' u='c' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='918' u='c' c='quickfetch'/>
+<use f='codebrowser/builtin/receive-pack.c' l='891' u='c' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1299' u='c' c='set_connectivity_errors'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1486' u='c' c='execute_commands'/>
+<def f='codebrowser/connected.c' l='18' ll='106' type='int check_connected(sha1_iterate_fn fn, void * cb_data, struct check_connected_options * opt)'/>
+<doc f='codebrowser/connected.c' l='7'>/*
+ * If we feed all the commits we want to verify to this command
+ *
+ *  $ git rev-list --objects --stdin --not --all
+ *
+ * and if it does not error out, that means everything reachable from
+ * these commits locally exists and is connected to our existing refs.
+ * Note that this does _not_ validate the individual objects.
+ *
+ * Returns 0 if everything is connected, non-zero otherwise.
+ */</doc>

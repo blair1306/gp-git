@@ -1,0 +1,16 @@
+<dec f='codebrowser/blame.h' l='113' type='const char *'/>
+<use f='codebrowser/blame.c' l='680' u='r' c='blame_nth_line'/>
+<use f='codebrowser/blame.c' l='1623' u='r' c='prepare_lines'/>
+<use f='codebrowser/blame.c' l='1820' u='w' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1829' u='a' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1833' u='w' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1836' u='r' c='setup_scoreboard'/>
+<offset>512</offset>
+<doc f='codebrowser/blame.h' l='108'>/*
+	 * The contents in the final image.
+	 * Used by many functions to obtain contents of the nth line,
+	 * indexed with scoreboard.lineno[blame_entry.lno].
+	 */</doc>
+<use f='codebrowser/builtin/blame.c' l='363' u='r' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='440' u='r' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='947' u='r' c='cmd_blame'/>

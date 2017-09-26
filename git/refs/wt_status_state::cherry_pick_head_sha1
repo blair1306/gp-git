@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='114' type='unsigned char [20]'/>
+<offset>832</offset>
+<use f='codebrowser/wt-status.c' l='1325' u='r' c='show_cherry_pick_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1526' u='r' c='wt_status_get_state'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/commit.h' l='152' type='int'/>
+<offset>32</offset>
+<use f='codebrowser/archive.c' l='39' u='w' c='format_subst'/>
+<use f='codebrowser/builtin/merge.c' l='364' u='w' c='squash_message'/>
+<use f='codebrowser/builtin/rev-list.c' l='121' u='w' c='show_commit'/>
+<use f='codebrowser/builtin/shortlog.c' l='151' u='w' c='shortlog_add_commit'/>
+<use f='codebrowser/log-tree.c' l='675' u='w' c='show_log'/>
+<use f='codebrowser/pretty.c' l='551' u='r' c='add_merge_info'/>
+<use f='codebrowser/pretty.c' l='552' u='r' c='add_merge_info'/>
+<use f='codebrowser/pretty.c' l='1151' u='r' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1159' u='r' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1173' u='r' c='format_commit_one'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/fsck.h' l='4'/>
+<use f='codebrowser/fsck.c' l='127' u='c'/>
+<use f='codebrowser/fsck.c' l='174' u='c'/>
+<use f='codebrowser/fsck.c' l='200' u='c'/>
+<use f='codebrowser/fsck.c' l='287' u='c'/>

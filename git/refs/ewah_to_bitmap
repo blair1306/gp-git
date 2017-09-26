@@ -1,0 +1,4 @@
+<dec f='codebrowser/ewah/ewok.h' l='216' type='struct bitmap * ewah_to_bitmap(struct ewah_bitmap * ewah)'/>
+<def f='codebrowser/ewah/bitmap.c' l='91' ll='107' type='struct bitmap * ewah_to_bitmap(struct ewah_bitmap * ewah)'/>
+<use f='codebrowser/pack-bitmap.c' l='509' u='c' c='find_objects'/>
+<use f='codebrowser/pack-bitmap.c' l='947' u='c' c='test_bitmap_walk'/>

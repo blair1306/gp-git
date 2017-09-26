@@ -1,0 +1,25 @@
+<def f='codebrowser/grep.h' l='64' ll='88'/>
+<size>216</size>
+<mbr r='grep_pat::next' o='0' t='struct grep_pat *'/>
+<mbr r='grep_pat::origin' o='64' t='const char *'/>
+<mbr r='grep_pat::no' o='128' t='int'/>
+<mbr r='grep_pat::token' o='160' t='enum grep_pat_token'/>
+<mbr r='grep_pat::pattern' o='192' t='char *'/>
+<mbr r='grep_pat::patternlen' o='256' t='size_t'/>
+<mbr r='grep_pat::field' o='320' t='enum grep_header_field'/>
+<mbr r='grep_pat::regexp' o='384' t='regex_t'/>
+<mbr r='grep_pat::pcre1_regexp' o='896' t='pcre *'/>
+<mbr r='grep_pat::pcre1_extra_info' o='960' t='pcre_extra *'/>
+<mbr r='grep_pat::pcre1_jit_stack' o='1024' t='pcre_jit_stack *'/>
+<mbr r='grep_pat::pcre1_tables' o='1088' t='const unsigned char *'/>
+<mbr r='grep_pat::pcre1_jit_on' o='1152' t='int'/>
+<mbr r='grep_pat::pcre2_pattern' o='1216' t='pcre2_code *'/>
+<mbr r='grep_pat::pcre2_match_data' o='1280' t='pcre2_match_data *'/>
+<mbr r='grep_pat::pcre2_compile_context' o='1344' t='pcre2_compile_context *'/>
+<mbr r='grep_pat::pcre2_match_context' o='1408' t='pcre2_match_context *'/>
+<mbr r='grep_pat::pcre2_jit_stack' o='1472' t='pcre2_jit_stack *'/>
+<mbr r='grep_pat::pcre2_jit_on' o='1536' t='uint32_t'/>
+<mbr r='grep_pat::kws' o='1600' t='kwset_t'/>
+<mbr r='grep_pat::fixed' o='1664' t='unsigned int'/>
+<mbr r='grep_pat::ignore_case' o='1665' t='unsigned int'/>
+<mbr r='grep_pat::word_regexp' o='1666' t='unsigned int'/>

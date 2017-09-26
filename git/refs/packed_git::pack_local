@@ -1,0 +1,21 @@
+<dec f='codebrowser/cache.h' l='1599' type='unsigned int'/>
+<offset>608</offset>
+<use f='codebrowser/builtin/count-objects.c' l='125' u='r' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/gc.c' l='176' u='r' c='too_many_packs'/>
+<use f='codebrowser/builtin/pack-objects.c' l='974' u='r' c='want_found_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='976' u='r' c='want_found_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2600' u='r' c='add_objects_in_unpacked_packs'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2662' u='r' c='has_sha1_pack_kept_or_nonlocal'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2705' u='r' c='loosen_unused_packed_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3053' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3066' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='547' u='r' c='add_pack'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='565' u='r' c='add_pack'/>
+<use f='codebrowser/http-backend.c' l='522' u='r' c='get_info_packs'/>
+<use f='codebrowser/http-backend.c' l='528' u='r' c='get_info_packs'/>
+<use f='codebrowser/server-info.c' l='206' u='r' c='init_pack_info'/>
+<use f='codebrowser/server-info.c' l='213' u='r' c='init_pack_info'/>
+<use f='codebrowser/sha1_file.c' l='1356' u='w' c='add_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1548' u='r' c='sort_pack'/>
+<use f='codebrowser/sha1_file.c' l='1548' u='r' c='sort_pack'/>
+<use f='codebrowser/sha1_file.c' l='3881' u='r' c='for_each_packed_object'/>

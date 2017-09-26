@@ -1,0 +1,19 @@
+<dec f='codebrowser/cache.h' l='340' type='struct cache_time'/>
+<offset>384</offset>
+<use f='codebrowser/read-cache.c' l='276' u='m' c='is_racy_stat'/>
+<use f='codebrowser/read-cache.c' l='283' u='m' c='is_racy_stat'/>
+<use f='codebrowser/read-cache.c' l='1740' u='m' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1741' u='m' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1790' u='m' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1791' u='m' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1873' u='m' c='is_index_unborn'/>
+<use f='codebrowser/read-cache.c' l='1892' u='m' c='discard_index'/>
+<use f='codebrowser/read-cache.c' l='1893' u='m' c='discard_index'/>
+<use f='codebrowser/read-cache.c' l='2310' u='m' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2311' u='m' c='do_write_index'/>
+<use f='codebrowser/split-index.c' l='83' u='w' c='move_cache_to_base_index'/>
+<use f='codebrowser/split-index.c' l='83' u='r' c='move_cache_to_base_index'/>
+<use f='codebrowser/unpack-trees.c' l='1270' u='m' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1270' u='m' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1271' u='m' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1271' u='m' c='unpack_trees'/>

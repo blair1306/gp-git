@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>bisect--helper.c source code [codebrowser/builtin/bisect--helper.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/builtin/bisect--helper.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>builtin</a>/<a href='bisect--helper.c.html'>bisect--helper.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../builtin.h.html">"builtin.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../parse-options.h.html">"parse-options.h"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../bisect.h.html">"bisect.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><em>static</em> <em>const</em> <em>char</em> * <em>const</em> <dfn class="tu decl def" id="git_bisect_helper_usage" title='git_bisect_helper_usage' data-type='const char *const [2]' data-ref="git_bisect_helper_usage">git_bisect_helper_usage</dfn>[] = {</td></tr>
+<tr><th id="7">7</th><td>	<a class="macro" href="../gettext.h.html#89" title="(&quot;git bisect--helper --next-all [--no-checkout]&quot;)" data-ref="_M/N_">N_</a>(<q>"git bisect--helper --next-all [--no-checkout]"</q>),</td></tr>
+<tr><th id="8">8</th><td>	<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span></td></tr>
+<tr><th id="9">9</th><td>};</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><em>int</em> <dfn class="decl def" id="cmd_bisect__helper" title='cmd_bisect__helper' data-ref="cmd_bisect__helper">cmd_bisect__helper</dfn>(<em>int</em> <dfn class="local col1 decl" id="1argc" title='argc' data-type='int' data-ref="1argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col2 decl" id="2argv" title='argv' data-type='const char **' data-ref="2argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3prefix" title='prefix' data-type='const char *' data-ref="3prefix">prefix</dfn>)</td></tr>
+<tr><th id="12">12</th><td>{</td></tr>
+<tr><th id="13">13</th><td>	<em>int</em> <dfn class="local col4 decl" id="4next_all" title='next_all' data-type='int' data-ref="4next_all">next_all</dfn> = <var>0</var>;</td></tr>
+<tr><th id="14">14</th><td>	<em>int</em> <dfn class="local col5 decl" id="5no_checkout" title='no_checkout' data-type='int' data-ref="5no_checkout">no_checkout</dfn> = <var>0</var>;</td></tr>
+<tr><th id="15">15</th><td>	<b>struct</b> <a class="type" href="../parse-options.h.html#option" title='option' data-ref="option">option</a> <dfn class="local col6 decl" id="6options" title='options' data-type='struct option [3]' data-ref="6options">options</dfn>[] = {</td></tr>
+<tr><th id="16">16</th><td>		<a class="macro" href="../parse-options.h.html#127" title="{ OPTION_SET_INT, (0), (&quot;next-all&quot;), (&amp;next_all), ((void*)0), ((&quot;perform &apos;git bisect next&apos;&quot;)), PARSE_OPT_NOARG, ((void*)0), (1) }" data-ref="_M/OPT_BOOL">OPT_BOOL</a>(<var>0</var>, <q>"next-all"</q>, &amp;<a class="local col4 ref" href="#4next_all" title='next_all' data-ref="4next_all">next_all</a>,</td></tr>
+<tr><th id="17">17</th><td>			 <a class="macro" href="../gettext.h.html#89" title="(&quot;perform &apos;git bisect next&apos;&quot;)" data-ref="_M/N_">N_</a>(<q>"perform 'git bisect next'"</q>)),</td></tr>
+<tr><th id="18">18</th><td>		<a class="macro" href="../parse-options.h.html#127" title="{ OPTION_SET_INT, (0), (&quot;no-checkout&quot;), (&amp;no_checkout), ((void*)0), ((&quot;update BISECT_HEAD instead of checking out the current commit&quot;)), PARSE_OPT_NOARG, ((void*)0), (1) }" data-ref="_M/OPT_BOOL">OPT_BOOL</a>(<var>0</var>, <q>"no-checkout"</q>, &amp;<a class="local col5 ref" href="#5no_checkout" title='no_checkout' data-ref="5no_checkout">no_checkout</a>,</td></tr>
+<tr><th id="19">19</th><td>			 <a class="macro" href="../gettext.h.html#89" title="(&quot;update BISECT_HEAD instead of checking out the current commit&quot;)" data-ref="_M/N_">N_</a>(<q>"update BISECT_HEAD instead of checking out the current commit"</q>)),</td></tr>
+<tr><th id="20">20</th><td>		<a class="macro" href="../parse-options.h.html#115" title="{ OPTION_END }" data-ref="_M/OPT_END">OPT_END</a>()</td></tr>
+<tr><th id="21">21</th><td>	};</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td>	<a class="local col1 ref" href="#1argc" title='argc' data-ref="1argc">argc</a> = <a class="ref" href="../parse-options.h.html#parse_options" title='parse_options' data-ref="parse_options">parse_options</a>(<a class="local col1 ref" href="#1argc" title='argc' data-ref="1argc">argc</a>, <a class="local col2 ref" href="#2argv" title='argv' data-ref="2argv">argv</a>, <a class="local col3 ref" href="#3prefix" title='prefix' data-ref="3prefix">prefix</a>, <a class="local col6 ref" href="#6options" title='options' data-ref="6options">options</a>,</td></tr>
+<tr><th id="24">24</th><td>			     <a class="tu ref" href="#git_bisect_helper_usage" title='git_bisect_helper_usage' data-use='r' data-ref="git_bisect_helper_usage">git_bisect_helper_usage</a>, <var>0</var>);</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>	<b>if</b> (!<a class="local col4 ref" href="#4next_all" title='next_all' data-ref="4next_all">next_all</a>)</td></tr>
+<tr><th id="27">27</th><td>		<a class="ref" href="../parse-options.h.html#usage_with_options" title='usage_with_options' data-ref="usage_with_options">usage_with_options</a>(<a class="tu ref" href="#git_bisect_helper_usage" title='git_bisect_helper_usage' data-use='r' data-ref="git_bisect_helper_usage">git_bisect_helper_usage</a>, <a class="local col6 ref" href="#6options" title='options' data-ref="6options">options</a>);</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td>	<i>/* next-all */</i></td></tr>
+<tr><th id="30">30</th><td>	<b>return</b> <a class="ref" href="../bisect.h.html#bisect_next_all" title='bisect_next_all' data-ref="bisect_next_all">bisect_next_all</a>(<a class="local col3 ref" href="#3prefix" title='prefix' data-ref="3prefix">prefix</a>, <a class="local col5 ref" href="#5no_checkout" title='no_checkout' data-ref="5no_checkout">no_checkout</a>);</td></tr>
+<tr><th id="31">31</th><td>}</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

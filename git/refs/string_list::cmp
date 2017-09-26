@@ -1,0 +1,16 @@
+<dec f='codebrowser/string-list.h' l='15' type='compare_strings_fn'/>
+<offset>192</offset>
+<doc f='codebrowser/string-list.h' l='15'>/* NULL uses strcmp() */</doc>
+<use f='codebrowser/builtin/mailsplit.c' l='180' u='w' c='split_maildir'/>
+<use f='codebrowser/mailmap.c' l='87' u='w' c='add_mapping'/>
+<use f='codebrowser/mailmap.c' l='244' u='w' c='read_mailmap'/>
+<use f='codebrowser/merge-recursive.c' l='455' u='w' c='record_df_conflict_files'/>
+<use f='codebrowser/string-list.c' l='16' u='r' c='get_entry_index'/>
+<use f='codebrowser/string-list.c' l='16' u='r' c='get_entry_index'/>
+<use f='codebrowser/string-list.c' l='112' u='r' c='string_list_remove_duplicates'/>
+<use f='codebrowser/string-list.c' l='112' u='r' c='string_list_remove_duplicates'/>
+<use f='codebrowser/string-list.c' l='238' u='r' c='string_list_sort'/>
+<use f='codebrowser/string-list.c' l='238' u='r' c='string_list_sort'/>
+<use f='codebrowser/string-list.c' l='245' u='r' c='unsorted_string_list_lookup'/>
+<use f='codebrowser/string-list.c' l='245' u='r' c='unsorted_string_list_lookup'/>
+<use f='codebrowser/tmp-objdir.c' l='242' u='w' c='migrate_paths'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='241' type='int cmd_verify_pack(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/verify-pack.c' l='59' ll='83' type='int cmd_verify_pack(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='479'/>
+<use f='codebrowser/git.c' l='479'/>
+<use f='codebrowser/git.c' l='479'/>
+<use f='codebrowser/git.c' l='479'/>

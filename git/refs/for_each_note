@@ -1,0 +1,6 @@
+<dec f='codebrowser/notes.h' l='208' type='int for_each_note(struct notes_tree * t, int flags, each_note_fn * fn, void * cb_data)'/>
+<use f='codebrowser/builtin/notes.c' l='384' u='c' c='list'/>
+<def f='codebrowser/notes.c' l='1135' ll='1142' type='int for_each_note(struct notes_tree * t, int flags, each_note_fn * fn, void * cb_data)'/>
+<use f='codebrowser/notes.c' l='1162' u='c' c='write_notes_tree'/>
+<use f='codebrowser/notes.c' l='1180' u='c' c='prune_notes'/>
+<use f='codebrowser/remote-testsvn.c' l='128' u='c' c='regenerate_marks'/>

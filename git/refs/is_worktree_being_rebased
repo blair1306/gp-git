@@ -1,0 +1,4 @@
+<dec f='codebrowser/worktree.h' l='73' type='int is_worktree_being_rebased(const struct worktree * wt, const char * target)'/>
+<use f='codebrowser/builtin/branch.c' l='447' u='c' c='reject_rebase_or_bisect_branch'/>
+<def f='codebrowser/worktree.c' l='257' ll='273' type='int is_worktree_being_rebased(const struct worktree * wt, const char * target)'/>
+<use f='codebrowser/worktree.c' l='318' u='c' c='find_shared_symref'/>

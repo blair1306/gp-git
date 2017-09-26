@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='223' type='int cmd_submodule__helper(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/submodule--helper.c' l='1262' ll='1280' type='int cmd_submodule__helper(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='467'/>
+<use f='codebrowser/git.c' l='467'/>
+<use f='codebrowser/git.c' l='467'/>
+<use f='codebrowser/git.c' l='467'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='204' type='int cmd_rebase__helper(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/rebase--helper.c' l='12' ll='41' type='int cmd_rebase__helper(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='445'/>
+<use f='codebrowser/git.c' l='445'/>
+<use f='codebrowser/git.c' l='445'/>
+<use f='codebrowser/git.c' l='445'/>

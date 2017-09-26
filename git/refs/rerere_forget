@@ -1,0 +1,3 @@
+<dec f='codebrowser/rerere.h' l='34' type='int rerere_forget(struct pathspec * )'/>
+<use f='codebrowser/builtin/rerere.c' l='81' u='c' c='cmd_rerere'/>
+<def f='codebrowser/rerere.c' l='1102' ll='1130' type='int rerere_forget(struct pathspec * pathspec)'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='457'/>
+<doc f='codebrowser/cache.h' l='447'>/*
+ * This environment variable is expected to contain a boolean indicating
+ * whether we should or should not treat:
+ *
+ *   GIT_DIR=foo.git git ...
+ *
+ * as if GIT_WORK_TREE=. was given. It&apos;s not expected that users will make use
+ * of this, but we use it internally to communicate to sub-processes that we
+ * are in a bare repo. If not set, defaults to true.
+ */</doc>
+<use f='codebrowser/environment.c' l='114' u='c'/>
+<use f='codebrowser/git.c' l='154' u='c'/>
+<use f='codebrowser/setup.c' l='691' u='c'/>
+<use f='codebrowser/setup.c' l='781' u='c'/>

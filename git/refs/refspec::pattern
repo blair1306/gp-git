@@ -1,0 +1,12 @@
+<dec f='codebrowser/remote.h' l='72' type='unsigned int'/>
+<offset>1</offset>
+<use f='codebrowser/builtin/fetch.c' l='399' u='r' c='get_ref_map'/>
+<use f='codebrowser/builtin/remote.c' l='467' u='w' c='get_head_names'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1161' u='r' c='push_check'/>
+<use f='codebrowser/remote.c' l='533' u='w' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='863' u='r' c='query_refspecs_multiple'/>
+<use f='codebrowser/remote.c' l='889' u='r' c='query_refspecs'/>
+<use f='codebrowser/remote.c' l='1161' u='r' c='match_explicit'/>
+<use f='codebrowser/remote.c' l='1246' u='r' c='get_ref_match'/>
+<use f='codebrowser/remote.c' l='1413' u='r' c='check_push_refs'/>
+<use f='codebrowser/remote.c' l='1882' u='r' c='get_fetch_map'/>

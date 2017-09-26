@@ -1,0 +1,13 @@
+<dec f='codebrowser/diff.h' l='164' type='const char *'/>
+<offset>1600</offset>
+<use f='codebrowser/diff.c' l='1173' u='r' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1174' u='w' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1175' u='r' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1176' u='w' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1177' u='r' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1178' u='w' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1179' u='r' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1183' u='r' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1186' u='r' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='3941' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3964' u='w' c='diff_opt_parse'/>

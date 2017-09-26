@@ -1,0 +1,52 @@
+<dec f='codebrowser/tree-walk.h' l='70' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/tree-walk.c' l='401' u='w' c='traverse_trees'/>
+<use f='codebrowser/tree-walk.c' l='484' u='w' c='traverse_trees'/>
+<use f='codebrowser/unpack-trees.c' l='728' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='731' u='r' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='893' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='894' u='r' c='find_cache_pos'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/tree-walk.h' l='95' type='1'/>
+<use f='codebrowser/tree-walk.c' l='922' u='r' c='match_wildcard_base'/>
+<use f='codebrowser/tree-walk.c' l='957' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='986' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='994' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='999' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1006' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1019' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1054' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1068' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1081' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1142' u='r' c='tree_entry_interesting'/>
+<use f='codebrowser/tree-walk.c' l='1143' u='r' c='tree_entry_interesting'/>
+<use f='codebrowser/tree-walk.c' l='1144' u='r' c='tree_entry_interesting'/>
+<use f='codebrowser/tree-walk.c' l='1146' u='r' c='tree_entry_interesting'/>
+<use f='codebrowser/tree-walk.c' l='1147' u='r' c='tree_entry_interesting'/>
+<use f='codebrowser/tree-walk.c' l='1149' u='r' c='tree_entry_interesting'/>

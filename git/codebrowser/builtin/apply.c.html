@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>apply.c source code [codebrowser/builtin/apply.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/builtin/apply.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>builtin</a>/<a href='apply.c.html'>apply.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../builtin.h.html">"builtin.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../parse-options.h.html">"parse-options.h"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../lockfile.h.html">"lockfile.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../apply.h.html">"apply.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><em>static</em> <em>const</em> <em>char</em> * <em>const</em> <dfn class="tu decl def" id="apply_usage" title='apply_usage' data-type='const char *const [2]' data-ref="apply_usage">apply_usage</dfn>[] = {</td></tr>
+<tr><th id="8">8</th><td>	<a class="macro" href="../gettext.h.html#89" title="(&quot;git apply [&lt;options&gt;] [&lt;patch&gt;...]&quot;)" data-ref="_M/N_">N_</a>(<q>"git apply [&lt;options&gt;] [&lt;patch&gt;...]"</q>),</td></tr>
+<tr><th id="9">9</th><td>	<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span></td></tr>
+<tr><th id="10">10</th><td>};</td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><em>static</em> <b>struct</b> <a class="type" href="../lockfile.h.html#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> <dfn class="tu decl def" id="lock_file" title='lock_file' data-type='struct lock_file' data-ref="lock_file">lock_file</dfn>;</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><em>int</em> <dfn class="decl def" id="cmd_apply" title='cmd_apply' data-ref="cmd_apply">cmd_apply</dfn>(<em>int</em> <dfn class="local col1 decl" id="1argc" title='argc' data-type='int' data-ref="1argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col2 decl" id="2argv" title='argv' data-type='const char **' data-ref="2argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3prefix" title='prefix' data-type='const char *' data-ref="3prefix">prefix</dfn>)</td></tr>
+<tr><th id="15">15</th><td>{</td></tr>
+<tr><th id="16">16</th><td>	<em>int</em> <dfn class="local col4 decl" id="4force_apply" title='force_apply' data-type='int' data-ref="4force_apply">force_apply</dfn> = <var>0</var>;</td></tr>
+<tr><th id="17">17</th><td>	<em>int</em> <dfn class="local col5 decl" id="5options" title='options' data-type='int' data-ref="5options">options</dfn> = <var>0</var>;</td></tr>
+<tr><th id="18">18</th><td>	<em>int</em> <dfn class="local col6 decl" id="6ret" title='ret' data-type='int' data-ref="6ret">ret</dfn>;</td></tr>
+<tr><th id="19">19</th><td>	<b>struct</b> <a class="type" href="../apply.h.html#apply_state" title='apply_state' data-ref="apply_state">apply_state</a> <dfn class="local col7 decl" id="7state" title='state' data-type='struct apply_state' data-ref="7state">state</dfn>;</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>	<b>if</b> (<a class="ref" href="../apply.h.html#init_apply_state" title='init_apply_state' data-ref="init_apply_state">init_apply_state</a>(&amp;<a class="local col7 ref" href="#7state" title='state' data-ref="7state">state</a>, <a class="local col3 ref" href="#3prefix" title='prefix' data-ref="3prefix">prefix</a>, &amp;<a class="tu ref" href="#lock_file" title='lock_file' data-use='a' data-ref="lock_file">lock_file</a>))</td></tr>
+<tr><th id="22">22</th><td>		<a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>128</var>);</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td>	<a class="local col1 ref" href="#1argc" title='argc' data-ref="1argc">argc</a> = <a class="ref" href="../apply.h.html#apply_parse_options" title='apply_parse_options' data-ref="apply_parse_options">apply_parse_options</a>(<a class="local col1 ref" href="#1argc" title='argc' data-ref="1argc">argc</a>, <a class="local col2 ref" href="#2argv" title='argv' data-ref="2argv">argv</a>,</td></tr>
+<tr><th id="25">25</th><td>				   &amp;<a class="local col7 ref" href="#7state" title='state' data-ref="7state">state</a>, &amp;<a class="local col4 ref" href="#4force_apply" title='force_apply' data-ref="4force_apply">force_apply</a>, &amp;<a class="local col5 ref" href="#5options" title='options' data-ref="5options">options</a>,</td></tr>
+<tr><th id="26">26</th><td>				   <a class="tu ref" href="#apply_usage" title='apply_usage' data-use='r' data-ref="apply_usage">apply_usage</a>);</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td>	<b>if</b> (<a class="ref" href="../apply.h.html#check_apply_state" title='check_apply_state' data-ref="check_apply_state">check_apply_state</a>(&amp;<a class="local col7 ref" href="#7state" title='state' data-ref="7state">state</a>, <a class="local col4 ref" href="#4force_apply" title='force_apply' data-ref="4force_apply">force_apply</a>))</td></tr>
+<tr><th id="29">29</th><td>		<a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>128</var>);</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>	<a class="local col6 ref" href="#6ret" title='ret' data-ref="6ret">ret</a> = <a class="ref" href="../apply.h.html#apply_all_patches" title='apply_all_patches' data-ref="apply_all_patches">apply_all_patches</a>(&amp;<a class="local col7 ref" href="#7state" title='state' data-ref="7state">state</a>, <a class="local col1 ref" href="#1argc" title='argc' data-ref="1argc">argc</a>, <a class="local col2 ref" href="#2argv" title='argv' data-ref="2argv">argv</a>, <a class="local col5 ref" href="#5options" title='options' data-ref="5options">options</a>);</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>	<a class="ref" href="../apply.h.html#clear_apply_state" title='clear_apply_state' data-ref="clear_apply_state">clear_apply_state</a>(&amp;<a class="local col7 ref" href="#7state" title='state' data-ref="7state">state</a>);</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>	<b>return</b> <a class="local col6 ref" href="#6ret" title='ret' data-ref="6ret">ret</a>;</td></tr>
+<tr><th id="36">36</th><td>}</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

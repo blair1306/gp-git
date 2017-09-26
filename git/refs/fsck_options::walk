@@ -1,0 +1,11 @@
+<dec f='codebrowser/fsck.h' l='33' type='fsck_walk_func'/>
+<use f='codebrowser/builtin/fsck.c' l='671' u='w' c='cmd_fsck'/>
+<use f='codebrowser/builtin/fsck.c' l='672' u='w' c='cmd_fsck'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/index-pack.c' l='1647' u='w' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='212' u='w' c='check_object'/>
+<use f='codebrowser/fsck.c' l='365' u='r' c='fsck_walk_tree'/>
+<use f='codebrowser/fsck.c' l='372' u='r' c='fsck_walk_tree'/>
+<use f='codebrowser/fsck.c' l='401' u='r' c='fsck_walk_commit'/>
+<use f='codebrowser/fsck.c' l='437' u='r' c='fsck_walk_commit'/>
+<use f='codebrowser/fsck.c' l='455' u='r' c='fsck_walk_tag'/>

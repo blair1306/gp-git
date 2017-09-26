@@ -1,0 +1,6 @@
+<dec f='codebrowser/strbuf.h' l='600' type='void strbuf_addstr_urlencode(struct strbuf * , const char * , int reserved)'/>
+<use f='codebrowser/credential-store.c' l='75' u='c' c='store_credential_file'/>
+<use f='codebrowser/credential-store.c' l='77' u='c' c='store_credential_file'/>
+<use f='codebrowser/credential-store.c' l='80' u='c' c='store_credential_file'/>
+<use f='codebrowser/credential-store.c' l='83' u='c' c='store_credential_file'/>
+<def f='codebrowser/strbuf.c' l='665' ll='669' type='void strbuf_addstr_urlencode(struct strbuf * sb, const char * s, int reserved)'/>

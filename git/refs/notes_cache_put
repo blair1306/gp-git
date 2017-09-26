@@ -1,0 +1,3 @@
+<dec f='codebrowser/notes-cache.h' l='17' type='int notes_cache_put(struct notes_cache * c, struct object_id * oid, const char * data, size_t size)'/>
+<use f='codebrowser/diff.c' l='5246' u='c' c='fill_textconv'/>
+<def f='codebrowser/notes-cache.c' l='86' ll='94' type='int notes_cache_put(struct notes_cache * c, struct object_id * key_oid, const char * data, size_t size)'/>

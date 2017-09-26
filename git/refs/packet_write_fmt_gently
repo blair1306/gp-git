@@ -1,0 +1,9 @@
+<dec f='codebrowser/pkt-line.h' l='27' type='int packet_write_fmt_gently(int fd, const char * fmt)'/>
+<use f='codebrowser/convert.c' l='599' u='c' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='609' u='c' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='616' u='c' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='686' u='c' c='async_query_available_blobs'/>
+<def f='codebrowser/pkt-line.c' l='163' ll='172' type='int packet_write_fmt_gently(int fd, const char * fmt)'/>
+<use f='codebrowser/sub-process.c' l='124' u='c' c='handshake_version'/>
+<use f='codebrowser/sub-process.c' l='128' u='c' c='handshake_version'/>
+<use f='codebrowser/sub-process.c' l='167' u='c' c='handshake_capabilities'/>

@@ -1,0 +1,12 @@
+<dec f='include/stdlib.h' l='519' type='int atexit(void (*)(void) __func)'/>
+<doc f='include/stdlib.h' l='518'>/* Register a function to be called when `exit&apos; is called.  */</doc>
+<use f='codebrowser/builtin/clone.c' l='962' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='1311' u='c' c='fetch_one'/>
+<use f='codebrowser/builtin/gc.c' l='446' u='c' c='cmd_gc'/>
+<use f='codebrowser/builtin/update-index.c' l='139' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/worktree.c' l='232' u='c' c='add_worktree'/>
+<use f='codebrowser/pager.c' l='134' u='c' c='setup_pager'/>
+<use f='codebrowser/run-command.c' l='93' u='c' c='mark_child_for_cleanup'/>
+<use f='codebrowser/tempfile.c' l='96' u='c' c='prepare_tempfile_object'/>
+<use f='codebrowser/tmp-objdir.c' l='153' u='c' c='tmp_objdir_create'/>
+<use f='codebrowser/trace.c' l='444' u='c' c='trace_command_performance'/>

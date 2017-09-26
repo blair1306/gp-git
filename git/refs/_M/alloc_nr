@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='574'/>
+<use f='codebrowser/http-backend.c' l='313' u='c'/>
+<use f='codebrowser/read-cache.c' l='1768' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2178' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2571' u='c'/>

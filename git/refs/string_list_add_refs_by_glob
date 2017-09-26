@@ -1,0 +1,12 @@
+<dec f='codebrowser/notes.h' l='292' type='void string_list_add_refs_by_glob(struct string_list * list, const char * glob)'/>
+<doc f='codebrowser/notes.h' l='289'>/*
+ * Add all refs that match &apos;glob&apos; to the &apos;list&apos;.
+ */</doc>
+<use f='codebrowser/notes-utils.c' l='109' u='c' c='notes_rewrite_config'/>
+<def f='codebrowser/notes.c' l='946' ll='958' type='void string_list_add_refs_by_glob(struct string_list * list, const char * glob)'/>
+<use f='codebrowser/notes.c' l='971' u='c' c='string_list_add_refs_from_colon_sep'/>
+<use f='codebrowser/notes.c' l='984' u='c' c='notes_display_config'/>
+<use f='codebrowser/notes.c' l='1082' u='c' c='init_display_notes'/>
+<doc f='codebrowser/notes.c' l='943'>/*
+ * The list argument must have strdup_strings set on it.
+ */</doc>

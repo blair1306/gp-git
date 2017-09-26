@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit.h' l='393' type='int run_commit_hook(int editor_is_used, const char * index_file, const char * name)'/>
+<use f='codebrowser/builtin/commit.c' l='678' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='958' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='975' u='c' c='prepare_to_commit'/>
+<def f='codebrowser/builtin/commit.c' l='1564' ll='1584' type='int run_commit_hook(int editor_is_used, const char * index_file, const char * name)'/>
+<use f='codebrowser/builtin/commit.c' l='1808' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/merge.c' l='771' u='c' c='prepare_to_commit'/>

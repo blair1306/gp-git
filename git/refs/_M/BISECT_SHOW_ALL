@@ -1,0 +1,4 @@
+<dec f='codebrowser/bisect.h' l='14'/>
+<use f='codebrowser/builtin/rev-list.c' l='226' u='c'/>
+<use f='codebrowser/builtin/rev-list.c' l='245' u='c'/>
+<use f='codebrowser/builtin/rev-list.c' l='317' u='c'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='26' type='2'/>
+<use f='codebrowser/config.c' l='728' c='git_parse_source'/>
+<use f='codebrowser/config.c' l='885' c='die_bad_number'/>
+<use f='codebrowser/config.c' l='1435' u='r' c='git_config_from_stdin'/>
+<use f='codebrowser/config.c' l='2911' c='current_config_origin_type'/>

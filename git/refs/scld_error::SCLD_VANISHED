@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1070' type='-4'/>
+<use f='codebrowser/refs/files-backend.c' l='526' c='lock_raw_ref'/>
+<use f='codebrowser/sha1_file.c' l='151' u='r' c='safe_create_leading_directories'/>
+<use f='codebrowser/sha1_file.c' l='234' u='r' c='raceproof_create_file'/>

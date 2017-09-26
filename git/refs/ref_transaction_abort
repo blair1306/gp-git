@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs.h' l='609' type='int ref_transaction_abort(struct ref_transaction * transaction, struct strbuf * err)'/>
+<doc f='codebrowser/refs.h' l='605'>/*
+ * Abort `transaction`, which has been begun and possibly prepared,
+ * but not yet committed.
+ */</doc>
+<def f='codebrowser/refs.c' l='1793' ll='1816' type='int ref_transaction_abort(struct ref_transaction * transaction, struct strbuf * err)'/>

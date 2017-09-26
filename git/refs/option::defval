@@ -1,0 +1,17 @@
+<dec f='codebrowser/parse-options.h' l='112' type='intptr_t'/>
+<offset>448</offset>
+<use f='codebrowser/builtin/clone.c' l='72' u='r' c='recurse_submodules_cb'/>
+<use f='codebrowser/parse-options-cb.c' l='50' u='r' c='parse_opt_color_flag_cb'/>
+<use f='codebrowser/parse-options.c' l='30' u='r' c='get_arg'/>
+<use f='codebrowser/parse-options.c' l='63' u='r' c='opt_command_mode_error'/>
+<use f='codebrowser/parse-options.c' l='101' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='103' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='108' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='110' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='120' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='128' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='130' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='137' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='147' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='172' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='188' u='r' c='get_value'/>

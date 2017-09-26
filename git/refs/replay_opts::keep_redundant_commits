@@ -1,0 +1,8 @@
+<dec f='codebrowser/sequencer.h' l='26' type='int'/>
+<offset>288</offset>
+<use f='codebrowser/builtin/revert.c' l='124' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='124' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='124' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='124' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='135' u='r' c='run_sequencer'/>
+<use f='codebrowser/sequencer.c' l='739' u='r' c='allow_empty'/>

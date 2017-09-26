@@ -1,0 +1,4 @@
+<def f='codebrowser/mru.h' l='37' ll='39'/>
+<size>16</size>
+<mbr r='mru::head' o='0' t='struct mru_entry *'/>
+<mbr r='mru::tail' o='64' t='struct mru_entry *'/>

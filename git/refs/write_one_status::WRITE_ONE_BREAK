@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin/pack-objects.c' l='498' type='0'/>
+<use f='codebrowser/builtin/pack-objects.c' l='535' c='write_one'/>
+<use f='codebrowser/builtin/pack-objects.c' l='537' u='r' c='write_one'/>
+<use f='codebrowser/builtin/pack-objects.c' l='545' u='r' c='write_one'/>
+<use f='codebrowser/builtin/pack-objects.c' l='815' u='r' c='write_pack_file'/>
+<doc f='codebrowser/builtin/pack-objects.c' l='498'>/* writing this will bust the limit; not written */</doc>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/refs.h' l='79' type='int read_ref(const char * refname, unsigned char * sha1)'/>
+<use f='codebrowser/builtin/checkout.c' l='1033' u='c' c='parse_branchname_arg'/>
+<use f='codebrowser/builtin/replace.c' l='116' u='c' c='for_each_replace_name'/>
+<use f='codebrowser/builtin/replace.c' l='147' u='c' c='check_ref_valid'/>
+<use f='codebrowser/builtin/show-ref.c' l='200' u='c' c='cmd_show_ref'/>
+<use f='codebrowser/builtin/tag.c' l='85' u='c' c='for_each_tag_name'/>
+<use f='codebrowser/builtin/tag.c' l='520' u='c' c='cmd_tag'/>
+<use f='codebrowser/builtin/update-index.c' l='680' u='c' c='read_head_pointers'/>
+<use f='codebrowser/builtin/update-index.c' l='682' u='c' c='read_head_pointers'/>
+<use f='codebrowser/builtin/update-index.c' l='722' u='c' c='do_reupdate'/>
+<use f='codebrowser/fast-import.c' l='1760' u='c' c='update_branch'/>
+<use f='codebrowser/notes-cache.c' l='14' u='c' c='notes_cache_match_validity'/>
+<use f='codebrowser/notes-utils.c' l='21' u='c' c='create_notes_commit'/>
+<use f='codebrowser/notes.c' l='1031' u='c' c='init_notes'/>
+<def f='codebrowser/refs.c' l='235' ll='238' type='int read_ref(const char * refname, unsigned char * sha1)'/>
+<use f='codebrowser/refs.c' l='604' u='c' c='write_pseudoref'/>
+<use f='codebrowser/refs.c' l='641' u='c' c='delete_pseudoref'/>
+<use f='codebrowser/remote-testsvn.c' l='177' u='c' c='cmd_import'/>
+<use f='codebrowser/remote.c' l='2009' u='c' c='stat_tracking_info'/>
+<use f='codebrowser/remote.c' l='2015' u='c' c='stat_tracking_info'/>
+<use f='codebrowser/remote.c' l='2334' u='c' c='remote_tracking'/>
+<use f='codebrowser/transport-helper.c' l='539' u='c' c='fetch_with_import'/>
+<use f='codebrowser/transport-helper.c' l='1069' u='c' c='get_refs_list'/>

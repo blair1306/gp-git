@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs/refs-internal.h' l='501'/>
+<doc f='codebrowser/refs/refs-internal.h' l='495'>/*
+ * Only include per-worktree refs in a do_for_each_ref*() iteration.
+ * Normally this will be used with a files ref_store, since that&apos;s
+ * where all reference backends will presumably store their
+ * per-worktree refs.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='707' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='420' u='c'/>

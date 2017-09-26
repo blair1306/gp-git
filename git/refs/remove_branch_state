@@ -1,0 +1,9 @@
+<dec f='codebrowser/branch.h' l='47' type='void remove_branch_state()'/>
+<def f='codebrowser/branch.c' l='325' ll='334' type='void remove_branch_state()'/>
+<doc f='codebrowser/branch.h' l='43'>/*
+ * Remove information about the state of working on the current
+ * branch. (E.g., MERGE_HEAD)
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='2043' u='c' c='clean_index'/>
+<use f='codebrowser/builtin/checkout.c' l='700' u='c' c='update_refs_for_switch'/>
+<use f='codebrowser/builtin/reset.c' l='401' u='c' c='cmd_reset'/>

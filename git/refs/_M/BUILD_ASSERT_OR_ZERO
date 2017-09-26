@@ -1,0 +1,13 @@
+<dec f='codebrowser/git-compat-util.h' l='58'/>
+<doc f='codebrowser/git-compat-util.h' l='46'>/*
+ * BUILD_ASSERT_OR_ZERO - assert a build-time dependency, as an expression.
+ * @cond: the compile-time condition which must be true.
+ *
+ * Your compile will fail if the condition isn&apos;t true, or can&apos;t be evaluated
+ * by the compiler.  This can be used in an expression: its value is &quot;0&quot;.
+ *
+ * Example:
+ *	#define foo_to_char(foo)					\
+ *		 ((char *)(foo)						\
+ *		  + BUILD_ASSERT_OR_ZERO(offsetof(struct foo, string) == 0))
+ */</doc>

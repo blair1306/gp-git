@@ -1,0 +1,11 @@
+<dec f='codebrowser/transport.h' l='173' type='void transport_check_allowed(const char * type)'/>
+<doc f='codebrowser/transport.h' l='169'>/*
+ * Check whether a transport is allowed by the environment,
+ * and die otherwise.
+ */</doc>
+<use f='codebrowser/connect.c' l='807' u='c' c='git_connect'/>
+<use f='codebrowser/connect.c' l='849' u='c' c='git_connect'/>
+<use f='codebrowser/connect.c' l='906' u='c' c='git_connect'/>
+<use f='codebrowser/transport-helper.c' l='1092' u='c' c='transport_helper_init'/>
+<def f='codebrowser/transport.c' l='751' ll='755' type='void transport_check_allowed(const char * type)'/>
+<use f='codebrowser/transport.c' l='791' u='c' c='transport_get'/>

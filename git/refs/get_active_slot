@@ -1,0 +1,21 @@
+<dec f='codebrowser/http.h' l='86' type='struct active_request_slot * get_active_slot()'/>
+<doc f='codebrowser/http.h' l='85'>/* Slot lifecycle functions */</doc>
+<use f='codebrowser/http-push.c' l='283' u='c' c='start_mkcol'/>
+<use f='codebrowser/http-push.c' l='400' u='c' c='start_put'/>
+<use f='codebrowser/http-push.c' l='420' u='c' c='start_move'/>
+<use f='codebrowser/http-push.c' l='448' u='c' c='refresh_lock'/>
+<use f='codebrowser/http-push.c' l='854' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='884' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='951' u='c' c='unlock_remote'/>
+<use f='codebrowser/http-push.c' l='1138' u='c' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1212' u='c' c='locking_available'/>
+<use f='codebrowser/http-push.c' l='1379' u='c' c='update_remote'/>
+<use f='codebrowser/http-push.c' l='1492' u='c' c='update_remote_info_refs'/>
+<use f='codebrowser/http-push.c' l='1650' u='c' c='delete_remote_branch'/>
+<use f='codebrowser/http-walker.c' l='371' u='c' c='fetch_alternates'/>
+<def f='codebrowser/http.c' l='1050' ll='1135' type='struct active_request_slot * get_active_slot()'/>
+<use f='codebrowser/http.c' l='1665' u='c' c='http_request'/>
+<use f='codebrowser/http.c' l='2079' u='c' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2244' u='c' c='new_http_object_request'/>
+<use f='codebrowser/remote-curl.c' l='513' u='c' c='probe_rpc'/>
+<use f='codebrowser/remote-curl.c' l='593' u='c' c='post_rpc'/>

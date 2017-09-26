@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='773' type='int'/>
+<use f='codebrowser/config.c' l='1228' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='65' type='int'/>
+<doc f='codebrowser/environment.c' l='65'>/* see probe_utf8_pathname_composition() */</doc>

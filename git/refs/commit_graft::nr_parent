@@ -1,0 +1,15 @@
+<dec f='codebrowser/commit.h' l='245' type='int'/>
+<offset>160</offset>
+<doc f='codebrowser/commit.h' l='245'>/* &lt; 0 if shallow commit */</doc>
+<use f='codebrowser/commit.c' l='152' u='w' c='read_graft_line'/>
+<use f='codebrowser/commit.c' l='350' u='r' c='parse_commit_buffer'/>
+<use f='codebrowser/commit.c' l='359' u='r' c='parse_commit_buffer'/>
+<use f='codebrowser/fsck.c' l='742' u='r' c='fsck_commit_buffer'/>
+<use f='codebrowser/fsck.c' l='744' u='r' c='fsck_commit_buffer'/>
+<use f='codebrowser/send-pack.c' l='224' u='r' c='advertise_shallow_grafts_cb'/>
+<use f='codebrowser/shallow.c' l='37' u='w' c='register_shallow'/>
+<use f='codebrowser/shallow.c' l='111' u='r' c='get_shallow_commits'/>
+<use f='codebrowser/shallow.c' l='241' u='r' c='write_one_shallow'/>
+<use f='codebrowser/shallow.c' l='340' u='r' c='advertise_shallow_grafts_cb'/>
+<use f='codebrowser/shallow.c' l='402' u='r' c='prepare_shallow_info'/>
+<use f='codebrowser/upload-pack.c' l='92' u='r' c='write_one_shallow'/>

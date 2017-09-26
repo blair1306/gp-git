@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='675'/>
+<doc f='codebrowser/cache.h' l='674'>/* do not check the contents but report dirty on racily-clean entries */</doc>
+<use f='codebrowser/diff-lib.c' l='92' u='c'/>
+<use f='codebrowser/preload-index.c' l='64' u='c'/>
+<use f='codebrowser/read-cache.c' l='310' u='c'/>
+<use f='codebrowser/read-cache.c' l='634' u='c'/>

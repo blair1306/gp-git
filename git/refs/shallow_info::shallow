@@ -1,0 +1,21 @@
+<dec f='codebrowser/commit.h' l='284' type='struct oid_array *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/receive-pack.c' l='883' u='r' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='887' u='r' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1707' u='r' c='unpack'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1811' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1815' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1817' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1823' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/fetch-pack.c' l='999' u='r' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='1071' u='r' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1071' u='r' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1082' u='r' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1083' u='r' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1114' u='r' c='update_shallow'/>
+<use f='codebrowser/shallow.c' l='393' u='w' c='prepare_shallow_info'/>
+<use f='codebrowser/shallow.c' l='420' u='r' c='remove_nonexistent_theirs_shallow'/>
+<use f='codebrowser/shallow.c' l='566' u='r' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='615' u='r' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='671' u='r' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='729' u='r' c='delayed_reachability_test'/>

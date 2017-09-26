@@ -1,0 +1,5 @@
+<dec f='include/curl/curl.h' l='2179'/>
+<doc f='include/curl/curl.h' l='2177'>/* CURLINFO_RESPONSE_CODE is the new name for the option previously known as
+   CURLINFO_HTTP_CODE */</doc>
+<use f='codebrowser/http.c' l='202' u='c'/>
+<use f='codebrowser/http.c' l='2118' u='c'/>

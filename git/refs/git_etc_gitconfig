@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='74' type='const char * git_etc_gitconfig()'/>
+<use f='codebrowser/builtin/config.c' l='527' u='c' c='cmd_config'/>
+<def f='codebrowser/config.c' l='1507' ll='1513' type='const char * git_etc_gitconfig()'/>
+<use f='codebrowser/config.c' l='1556' u='c' c='do_git_config_sequence'/>
+<use f='codebrowser/config.c' l='1557' u='c' c='do_git_config_sequence'/>

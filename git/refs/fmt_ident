@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1449' type='const char * fmt_ident(const char * name, const char * email, const char * date_str, int )'/>
+<use f='codebrowser/blame.c' l='178' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/am.c' l='1660' u='c' c='do_commit'/>
+<use f='codebrowser/builtin/commit.c' l='616' u='c' c='determine_author_info'/>
+<def f='codebrowser/ident.c' l='354' ll='423' type='const char * fmt_ident(const char * name, const char * email, const char * date_str, int flag)'/>
+<use f='codebrowser/ident.c' l='427' u='c' c='fmt_name'/>
+<use f='codebrowser/ident.c' l='436' u='c' c='git_author_info'/>
+<use f='codebrowser/ident.c' l='448' u='c' c='git_committer_info'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs.h' l='75' type='int refs_read_ref_full(struct ref_store * refs, const char * refname, int resolve_flags, unsigned char * sha1, int * flags)'/>
+<def f='codebrowser/refs.c' l='221' ll='227' type='int refs_read_ref_full(struct ref_store * refs, const char * refname, int resolve_flags, unsigned char * sha1, int * flags)'/>
+<use f='codebrowser/refs.c' l='231' u='c' c='read_ref_full'/>
+<use f='codebrowser/refs/files-backend.c' l='674' u='c' c='files_peel_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='830' u='c' c='verify_lock'/>
+<use f='codebrowser/refs/files-backend.c' l='1319' u='c' c='files_rename_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1726' u='c' c='update_symref_reflog'/>
+<use f='codebrowser/refs/files-backend.c' l='2014' u='c' c='files_reflog_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='2293' u='c' c='lock_ref_for_update'/>

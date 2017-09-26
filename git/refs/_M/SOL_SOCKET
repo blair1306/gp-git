@@ -1,0 +1,5 @@
+<dec f='include/asm-generic/socket.h' l='7'/>
+<doc f='include/asm-generic/socket.h' l='6'>/* For setsockopt(2) */</doc>
+<use f='codebrowser/connect.c' l='347' u='c'/>
+<use f='codebrowser/daemon.c' l='685' u='c'/>
+<use f='codebrowser/daemon.c' l='892' u='c'/>

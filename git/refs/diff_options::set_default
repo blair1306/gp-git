@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='174' type='void (*)(struct diff_options *)'/>
+<offset>1792</offset>
+<use f='codebrowser/diff.c' l='3407' u='r' c='diff_setup_done'/>
+<use f='codebrowser/diff.c' l='3408' u='r' c='diff_setup_done'/>

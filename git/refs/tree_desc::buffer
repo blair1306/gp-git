@@ -1,0 +1,8 @@
+<dec f='codebrowser/tree-walk.h' l='11' type='const void *'/>
+<offset>0</offset>
+<use f='codebrowser/fsck.c' l='567' u='r' c='fsck_tree'/>
+<use f='codebrowser/tree-walk.c' l='56' u='w' c='init_tree_desc_internal'/>
+<use f='codebrowser/tree-walk.c' l='108' u='r' c='update_tree_entry_internal'/>
+<use f='codebrowser/tree-walk.c' l='117' u='w' c='update_tree_entry_internal'/>
+<use f='codebrowser/tree-walk.c' l='601' u='r' c='get_tree_entry_follow_symlinks'/>
+<use f='codebrowser/tree-walk.c' l='687' u='w' c='get_tree_entry_follow_symlinks'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='213'/>
+<doc f='codebrowser/cache.h' l='212'>/* used to temporarily mark paths matched by pathspecs */</doc>
+<use f='codebrowser/builtin/checkout.c' l='295' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='322' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='338' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='365' u='c'/>
+<use f='codebrowser/resolve-undo.c' l='141' u='c'/>
+<use f='codebrowser/resolve-undo.c' l='151' u='c'/>
+<use f='codebrowser/resolve-undo.c' l='174' u='c'/>
+<use f='codebrowser/split-index.c' l='206' u='c'/>
+<use f='codebrowser/split-index.c' l='233' u='c'/>
+<use f='codebrowser/split-index.c' l='251' u='c'/>

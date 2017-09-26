@@ -1,0 +1,9 @@
+<dec f='codebrowser/remote.h' l='180' type='int check_push_refs(struct ref * src, int nr_refspec, const char ** refspec)'/>
+<def f='codebrowser/remote.c' l='1404' ll='1421' type='int check_push_refs(struct ref * src, int nr_refspec, const char ** refspec_names)'/>
+<doc f='codebrowser/remote.c' l='1398'>/*
+ * Given only the set of local refs, sanity-check the set of push
+ * refspecs. We can&apos;t catch all errors that match_push_refs would,
+ * but we can catch some errors early before even talking to the
+ * remote side.
+ */</doc>
+<use f='codebrowser/transport.c' l='990' u='c' c='transport_push'/>

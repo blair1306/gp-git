@@ -1,0 +1,11 @@
+<dec f='codebrowser/mailinfo.h' l='11' type='struct strbuf'/>
+<offset>192</offset>
+<use f='codebrowser/mailinfo.c' l='52' u='a' c='parse_bogus_from'/>
+<use f='codebrowser/mailinfo.c' l='53' u='a' c='parse_bogus_from'/>
+<use f='codebrowser/mailinfo.c' l='54' u='a' c='parse_bogus_from'/>
+<use f='codebrowser/mailinfo.c' l='55' u='a' c='parse_bogus_from'/>
+<use f='codebrowser/mailinfo.c' l='55' u='a' c='parse_bogus_from'/>
+<use f='codebrowser/mailinfo.c' l='200' u='a' c='handle_from'/>
+<use f='codebrowser/mailinfo.c' l='1072' u='m' c='handle_info'/>
+<use f='codebrowser/mailinfo.c' l='1143' u='a' c='setup_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1158' u='a' c='clear_mailinfo'/>

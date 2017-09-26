@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='132' type='int cmd_annotate(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/annotate.c' l='10' ll='22' type='int cmd_annotate(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='366'/>
+<use f='codebrowser/git.c' l='366'/>
+<use f='codebrowser/git.c' l='366'/>
+<use f='codebrowser/git.c' l='366'/>

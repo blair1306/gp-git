@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='89' type='3'/>
+<use f='codebrowser/config.c' l='1567' u='r' c='do_git_config_sequence'/>
+<use f='codebrowser/remote.c' l='384' u='r' c='handle_config'/>
+<use f='codebrowser/t/helper/test-config.c' l='46' c='scope_name'/>
+<use f='codebrowser/upload-pack.c' l='1028' u='r' c='upload_pack_config'/>

@@ -1,0 +1,24 @@
+<dec f='include/stdio.h' l='180' type='int rename(const char * __old, const char * __new)'/>
+<doc f='include/stdio.h' l='179'>/* Rename file OLD to NEW.  */</doc>
+<use f='codebrowser/apply.c' l='4398' u='c' c='create_one_file'/>
+<use f='codebrowser/builtin/init-db.c' l='330' u='c' c='separate_git_dir'/>
+<use f='codebrowser/builtin/mv.c' l='273' u='c' c='cmd_mv'/>
+<use f='codebrowser/builtin/repack.c' l='330' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/repack.c' l='349' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/repack.c' l='389' u='c' c='cmd_repack'/>
+<use f='codebrowser/dir.c' l='2879' u='c' c='relocate_gitdir'/>
+<use f='codebrowser/http.c' l='2169' u='c' c='new_http_object_request'/>
+<def f='codebrowser/merge-recursive.c' l='493' ll='498'/>
+<size>32</size>
+<use f='codebrowser/pack-bitmap-write.c' l='545' u='c' c='bitmap_writer_finish'/>
+<use f='codebrowser/pack-write.c' l='360' u='c' c='finish_tmp_packfile'/>
+<use f='codebrowser/pack-write.c' l='366' u='c' c='finish_tmp_packfile'/>
+<use f='codebrowser/refs/files-backend.c' l='1208' u='c' c='rename_tmp_log_callback'/>
+<use f='codebrowser/refs/files-backend.c' l='1300' u='c' c='files_rename_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1385' u='c' c='files_rename_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1389' u='c' c='files_rename_ref'/>
+<use f='codebrowser/sequencer.c' l='1848' u='c' c='error_failed_squash'/>
+<use f='codebrowser/server-info.c' l='35' u='c' c='update_info_file'/>
+<use f='codebrowser/sha1_file.c' l='3218' u='c' c='finalize_object_file'/>
+<use f='codebrowser/tempfile.c' l='289' u='c' c='rename_tempfile'/>
+<use f='codebrowser/transport-helper.c' l='976' u='c' c='push_refs_with_export'/>

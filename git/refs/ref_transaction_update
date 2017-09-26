@@ -1,0 +1,31 @@
+<dec f='codebrowser/refs.h' l='521' type='int ref_transaction_update(struct ref_transaction * transaction, const char * refname, const unsigned char * new_sha1, const unsigned char * old_sha1, unsigned int flags, const char * msg, struct strbuf * err)'/>
+<doc f='codebrowser/refs.h' l='507'>/*
+ * Add a reference update to transaction. new_sha1 is the value that
+ * the reference should have after the update, or null_sha1 if it
+ * should be deleted. If new_sha1 is NULL, then the reference is not
+ * changed at all. old_sha1 is the value that the reference must have
+ * before the update, or null_sha1 if it must not have existed
+ * beforehand. The old value is checked after the lock is taken to
+ * prevent races. If the old value doesn&apos;t agree with old_sha1, the
+ * whole transaction fails. If old_sha1 is NULL, then the previous
+ * value is not checked.
+ *
+ * See the above comment &quot;Reference transaction updates&quot; for more
+ * information.
+ */</doc>
+<use f='codebrowser/branch.c' l='308' u='c' c='create_branch'/>
+<use f='codebrowser/builtin/commit.c' l='1785' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/fetch.c' l='458' u='c' c='s_update_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1156' u='c' c='update'/>
+<use f='codebrowser/builtin/replace.c' l='178' u='c' c='replace_object_oid'/>
+<use f='codebrowser/builtin/tag.c' l='546' u='c' c='cmd_tag'/>
+<use f='codebrowser/builtin/update-ref.c' l='202' u='c' c='parse_cmd_update'/>
+<use f='codebrowser/fast-import.c' l='1780' u='c' c='update_branch'/>
+<use f='codebrowser/fast-import.c' l='1821' u='c' c='dump_tags'/>
+<def f='codebrowser/refs.c' l='925' ll='947' type='int ref_transaction_update(struct ref_transaction * transaction, const char * refname, const unsigned char * new_sha1, const unsigned char * old_sha1, unsigned int flags, const char * msg, struct strbuf * err)'/>
+<use f='codebrowser/refs.c' l='957' u='c' c='ref_transaction_create'/>
+<use f='codebrowser/refs.c' l='969' u='c' c='ref_transaction_delete'/>
+<use f='codebrowser/refs.c' l='982' u='c' c='ref_transaction_verify'/>
+<use f='codebrowser/refs.c' l='1010' u='c' c='refs_update_ref'/>
+<use f='codebrowser/sequencer.c' l='394' u='c' c='fast_forward_to'/>
+<use f='codebrowser/walker.c' l='306' u='c' c='walker_fetch'/>

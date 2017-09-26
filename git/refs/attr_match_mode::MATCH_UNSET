@@ -1,0 +1,3 @@
+<dec f='codebrowser/pathspec.h' l='41' type='1'/>
+<use f='codebrowser/dir.c' l='244' u='r' c='match_attrs'/>
+<use f='codebrowser/pathspec.c' l='174' u='r' c='parse_pathspec_attr_match'/>

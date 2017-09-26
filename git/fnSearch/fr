@@ -1,0 +1,17 @@
+free_commit_buffer|free_commit_buffer
+free_commit_extra_headers|free_commit_extra_headers
+free_commit_list|free_commit_list
+free_stream_filter|free_stream_filter
+free_delta_index|free_delta_index
+free_filespec|free_filespec
+free_untracked_cache|free_untracked_cache
+free_grep_patterns|free_grep_patterns
+fread_buffer|fread_buffer
+free_name_hash|free_name_hash
+free_notes|free_notes
+free_patch_ids|free_patch_ids
+free_ref_cache|free_ref_cache
+free_refs|free_refs
+free_refspec|free_refspec
+free_tree_buffer|free_tree_buffer
+free_worktrees|free_worktrees

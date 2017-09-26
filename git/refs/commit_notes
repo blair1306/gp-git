@@ -1,0 +1,10 @@
+<dec f='codebrowser/notes-utils.h' l='20' type='void commit_notes(struct notes_tree * t, const char * msg)'/>
+<use f='codebrowser/builtin/notes.c' l='326' u='c' c='notes_copy_from_stdin'/>
+<use f='codebrowser/builtin/notes.c' l='464' u='c' c='add'/>
+<use f='codebrowser/builtin/notes.c' l='469' u='c' c='add'/>
+<use f='codebrowser/builtin/notes.c' l='547' u='c' c='copy'/>
+<use f='codebrowser/builtin/notes.c' l='631' u='c' c='append_edit'/>
+<use f='codebrowser/builtin/notes.c' l='932' u='c' c='remove_cmd'/>
+<use f='codebrowser/builtin/notes.c' l='960' u='c' c='prune'/>
+<def f='codebrowser/notes-utils.c' l='34' ll='56' type='void commit_notes(struct notes_tree * t, const char * msg)'/>
+<use f='codebrowser/notes-utils.c' l='175' u='c' c='finish_copy_notes_for_rewrite'/>

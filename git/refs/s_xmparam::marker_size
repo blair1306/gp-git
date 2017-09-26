@@ -1,0 +1,8 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='122' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/merge-file.c' l='41' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='41' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='41' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='41' u='a' c='cmd_merge_file'/>
+<use f='codebrowser/ll-merge.c' l='116' u='w' c='ll_xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='615' u='r' c='xdl_do_merge'/>

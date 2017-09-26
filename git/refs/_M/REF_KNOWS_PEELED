@@ -1,0 +1,11 @@
+<dec f='codebrowser/refs/ref-cache.h' l='105'/>
+<doc f='codebrowser/refs/ref-cache.h' l='100'>/*
+ * The field ref_entry-&gt;u.value.peeled of this value entry contains
+ * the correct peeled value for the reference, which might be
+ * null_sha1 if the reference is not a tag or if it is broken.
+ */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='258' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='271' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='498' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='500' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='514' u='c'/>

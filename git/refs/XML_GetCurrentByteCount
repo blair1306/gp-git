@@ -1,0 +1,4 @@
+<dec f='include/expat.h' l='948' type='int XML_GetCurrentByteCount(XML_Parser parser)'/>
+<doc f='include/expat.h' l='944'>/* Return the number of bytes in the current event.
+   Returns 0 if the event is in an internal entity.
+*/</doc>

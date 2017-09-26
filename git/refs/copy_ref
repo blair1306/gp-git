@@ -1,0 +1,15 @@
+<dec f='codebrowser/remote.h' l='139' type='struct ref * copy_ref(const struct ref * ref)'/>
+<use f='codebrowser/builtin/clone.c' l='543' u='c' c='wanted_peer_refs'/>
+<use f='codebrowser/builtin/clone.c' l='555' u='c' c='wanted_peer_refs'/>
+<use f='codebrowser/fetch-pack.c' l='684' u='c' c='filter_refs'/>
+<def f='codebrowser/remote.c' l='937' ll='951' type='struct ref * copy_ref(const struct ref * ref)'/>
+<use f='codebrowser/remote.c' l='949' u='c' c='copy_ref'/>
+<use f='codebrowser/remote.c' l='958' u='c' c='copy_ref_list'/>
+<use f='codebrowser/remote.c' l='1216' u='c' c='match_explicit'/>
+<use f='codebrowser/remote.c' l='1375' u='c' c='add_missing_tags'/>
+<use f='codebrowser/remote.c' l='1485' u='c' c='match_push_refs'/>
+<use f='codebrowser/remote.c' l='1825' u='c' c='get_expanded_map'/>
+<use f='codebrowser/remote.c' l='1856' u='c' c='get_remote_ref'/>
+<use f='codebrowser/remote.c' l='2169' u='c' c='guess_remote_head'/>
+<use f='codebrowser/remote.c' l='2175' u='c' c='guess_remote_head'/>
+<use f='codebrowser/remote.c' l='2183' u='c' c='guess_remote_head'/>

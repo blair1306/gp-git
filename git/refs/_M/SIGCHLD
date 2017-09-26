@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/signum.h' l='50'/>
+<use f='codebrowser/builtin/merge-index.c' l='75' u='c'/>
+<use f='codebrowser/connect.c' l='786' u='c'/>
+<use f='codebrowser/daemon.c' l='883' u='c'/>
+<use f='codebrowser/daemon.c' l='1094' u='c'/>

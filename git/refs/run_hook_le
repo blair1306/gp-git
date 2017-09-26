@@ -1,0 +1,10 @@
+<dec f='codebrowser/run-command.h' l='68' type='int run_hook_le(const char *const * env, const char * name)'/>
+<use f='codebrowser/builtin/am.c' l='492' u='c' c='run_applypatch_msg_hook'/>
+<use f='codebrowser/builtin/am.c' l='1646' u='c' c='do_commit'/>
+<use f='codebrowser/builtin/am.c' l='1691' u='c' c='do_commit'/>
+<use f='codebrowser/builtin/checkout.c' l='59' u='c' c='post_checkout_hook'/>
+<use f='codebrowser/builtin/clone.c' l='755' u='c' c='checkout'/>
+<use f='codebrowser/builtin/gc.c' l='227' u='c' c='need_to_gc'/>
+<use f='codebrowser/builtin/merge.c' l='427' u='c' c='finish'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1001' u='c' c='push_to_checkout'/>
+<def f='codebrowser/run-command.c' l='1201' ll='1211' type='int run_hook_le(const char *const * env, const char * name)'/>

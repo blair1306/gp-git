@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule-config.h' l='38' type='int submodule_config_option(struct repository * repo, const char * var, const char * value)'/>
+<def f='codebrowser/submodule-config.c' l='561' ll='574' type='int submodule_config_option(struct repository * repo, const char * var, const char * value)'/>
+<use f='codebrowser/submodule-config.c' l='578' u='c' c='parse_submodule_config_option'/>
+<use f='codebrowser/submodule.c' l='236' u='c' c='gitmodules_cb'/>

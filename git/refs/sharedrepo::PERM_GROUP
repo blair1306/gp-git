@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1041' type='432'/>
+<use f='codebrowser/builtin/init-db.c' l='389' u='r' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='453' u='r' c='shared_callback'/>
+<use f='codebrowser/setup.c' l='1129' u='r' c='git_config_perm'/>
+<use f='codebrowser/setup.c' l='1134' u='r' c='git_config_perm'/>
+<use f='codebrowser/setup.c' l='1145' u='r' c='git_config_perm'/>
+<use f='codebrowser/setup.c' l='1155' u='r' c='git_config_perm'/>

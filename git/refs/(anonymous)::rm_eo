@@ -1,0 +1,32 @@
+<dec f='include/regex.h' l='455' type='regoff_t'/>
+<use f='codebrowser/git-compat-util.h' l='1044' u='w' c='regexec_buf'/>
+<offset>32</offset>
+<doc f='include/regex.h' l='455'>/* Byte offset from string&apos;s start to substring&apos;s end.  */</doc>
+<use f='codebrowser/diff.c' l='1017' u='r' c='find_word_boundaries'/>
+<use f='codebrowser/diff.c' l='1018' u='r' c='find_word_boundaries'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='87' u='r' c='contains'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='88' u='r' c='contains'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='89' u='r' c='contains'/>
+<use f='codebrowser/grep.c' l='1087' u='w' c='fixmatch'/>
+<use f='codebrowser/grep.c' l='1091' u='w' c='fixmatch'/>
+<use f='codebrowser/grep.c' l='1176' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1177' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1188' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1189' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1195' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1217' u='w' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1295' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1297' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1300' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1300' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1304' u='w' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1304' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1314' u='w' c='next_match'/>
+<use f='codebrowser/grep.c' l='1386' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1391' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1392' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1393' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1554' u='r' c='look_ahead'/>
+<use f='codebrowser/http-backend.c' l='689' u='r' c='cmd_main'/>
+<use f='codebrowser/line-range.c' l='150' u='r' c='find_funcname_matching_regexp'/>
+<use f='codebrowser/xdiff-interface.c' l='243' u='r' c='ff_regexp'/>

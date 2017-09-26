@@ -1,0 +1,4 @@
+<dec f='include/netinet/in.h' l='257' type='in_port_t'/>
+<offset>16</offset>
+<doc f='include/netinet/in.h' l='257'>/* Transport layer port # */</doc>
+<use f='codebrowser/daemon.c' l='862' u='r' c='handle'/>

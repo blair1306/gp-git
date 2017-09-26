@@ -1,0 +1,8 @@
+<dec f='codebrowser/refs.h' l='423' type='int refs_for_each_reflog(struct ref_store * refs, each_ref_fn * fn, void * cb_data)'/>
+<doc f='codebrowser/refs.h' l='419'>/*
+ * Calls the specified function for each reflog file until it returns nonzero,
+ * and returns the value. Reflog file order is unspecified.
+ */</doc>
+<def f='codebrowser/refs.c' l='1934' ll='1941' type='int refs_for_each_reflog(struct ref_store * refs, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='1945' u='c' c='for_each_reflog'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='156' u='c' c='cmd_for_each_reflog'/>

@@ -1,0 +1,6 @@
+<def f='codebrowser/compat/obstack.h' l='144' ll='149'/>
+<size>24</size>
+<doc f='codebrowser/compat/obstack.h' l='144'>/* Lives at front of each chunk. */</doc>
+<mbr r='_obstack_chunk::limit' o='0' t='char *'/>
+<mbr r='_obstack_chunk::prev' o='64' t='struct _obstack_chunk *'/>
+<mbr r='_obstack_chunk::contents' o='128' t='char [4]'/>

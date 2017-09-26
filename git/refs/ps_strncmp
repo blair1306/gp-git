@@ -1,0 +1,13 @@
+<def f='codebrowser/pathspec.h' l='81' ll='88' type='int ps_strncmp(const struct pathspec_item * item, const char * s1, const char * s2, size_t n)'/>
+<use f='codebrowser/dir.c' l='80' u='c' c='git_fnmatch'/>
+<use f='codebrowser/dir.c' l='316' u='c' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='325' u='c' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='338' u='c' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='343' u='c' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='1439' u='c' c='simplify_away'/>
+<use f='codebrowser/dir.c' l='1478' u='c' c='exclude_matches_pathspec'/>
+<use f='codebrowser/dir.c' l='1482' u='c' c='exclude_matches_pathspec'/>
+<use f='codebrowser/tree-walk.c' l='821' u='c' c='match_entry'/>
+<use f='codebrowser/tree-walk.c' l='854' u='c' c='basecmp'/>
+<use f='codebrowser/tree-walk.c' l='1016' u='c' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1065' u='c' c='do_match'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/column.h' l='42' type='int run_column_filter(int colopts, const struct column_options * )'/>
+<use f='codebrowser/builtin/tag.c' l='465' u='c' c='cmd_tag'/>
+<def f='codebrowser/column.c' l='370' ll='402' type='int run_column_filter(int colopts, const struct column_options * opts)'/>

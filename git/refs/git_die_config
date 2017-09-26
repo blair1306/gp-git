@@ -1,0 +1,8 @@
+<dec f='codebrowser/config.h' l='225' type='void git_die_config(const char * key, const char * err)'/>
+<use f='codebrowser/builtin/notes.c' l='757' u='c' c='git_config_get_notes_strategy'/>
+<use f='codebrowser/config.c' l='1949' u='c' c='repo_config_get_string_const'/>
+<use f='codebrowser/config.c' l='2002' u='c' c='repo_config_get_pathname'/>
+<use f='codebrowser/config.c' l='2092' u='c' c='git_config_get_expiry'/>
+<def f='codebrowser/config.c' l='2156' ll='2171' macro='1' type='void git_die_config(const char * key, const char * err)'/>
+<use f='codebrowser/fast-import.c' l='3394' u='c' c='git_pack_config'/>
+<use f='codebrowser/imap-send.c' l='1335' u='c' c='git_imap_config'/>

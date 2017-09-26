@@ -1,0 +1,14 @@
+<dec f='codebrowser/xdiff-interface.h' l='24' type='void read_mmblob(mmfile_t * ptr, const struct object_id * oid)'/>
+<use f='codebrowser/apply.c' l='3463' u='c' c='three_way_merge'/>
+<use f='codebrowser/apply.c' l='3464' u='c' c='three_way_merge'/>
+<use f='codebrowser/apply.c' l='3465' u='c' c='three_way_merge'/>
+<use f='codebrowser/builtin/checkout.c' l='199' u='c' c='checkout_merged'/>
+<use f='codebrowser/builtin/checkout.c' l='200' u='c' c='checkout_merged'/>
+<use f='codebrowser/builtin/checkout.c' l='201' u='c' c='checkout_merged'/>
+<use f='codebrowser/merge-recursive.c' l='921' u='c' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='922' u='c' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='923' u='c' c='merge_3way'/>
+<use f='codebrowser/notes-merge.c' l='346' u='c' c='ll_merge_in_worktree'/>
+<use f='codebrowser/notes-merge.c' l='347' u='c' c='ll_merge_in_worktree'/>
+<use f='codebrowser/notes-merge.c' l='348' u='c' c='ll_merge_in_worktree'/>
+<def f='codebrowser/xdiff-interface.c' l='182' ll='197' type='void read_mmblob(mmfile_t * ptr, const struct object_id * oid)'/>

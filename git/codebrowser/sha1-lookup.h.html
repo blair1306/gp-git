@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sha1-lookup.h source code [codebrowser/sha1-lookup.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/sha1-lookup.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='sha1-lookup.h.html'>sha1-lookup.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/SHA1_LOOKUP_H">SHA1_LOOKUP_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/SHA1_LOOKUP_H" data-ref="_M/SHA1_LOOKUP_H">SHA1_LOOKUP_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>typedef</b> <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="typedef" id="sha1_access_fn" title='sha1_access_fn' data-type='const unsigned char *(size_t, void *)' data-ref="sha1_access_fn">sha1_access_fn</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="105index" title='index' data-type='size_t' data-ref="105index">index</dfn>, <em>void</em> *<dfn class="local col6 decl" id="106table" title='table' data-type='void *' data-ref="106table">table</dfn>);</td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="sha1_pos" title='sha1_pos' data-ref="sha1_pos">sha1_pos</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col7 decl" id="107sha1" title='sha1' data-type='const unsigned char *' data-ref="107sha1">sha1</dfn>,</td></tr>
+<tr><th id="7">7</th><td>		    <em>void</em> *<dfn class="local col8 decl" id="108table" title='table' data-type='void *' data-ref="108table">table</dfn>,</td></tr>
+<tr><th id="8">8</th><td>		    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="109nr" title='nr' data-type='size_t' data-ref="109nr">nr</dfn>,</td></tr>
+<tr><th id="9">9</th><td>		    <a class="typedef" href="#sha1_access_fn" title='sha1_access_fn' data-type='const unsigned char *(size_t, void *)' data-ref="sha1_access_fn">sha1_access_fn</a> <dfn class="local col0 decl" id="110fn" title='fn' data-type='sha1_access_fn *' data-ref="110fn">fn</dfn>);</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="sha1_entry_pos" title='sha1_entry_pos' data-ref="sha1_entry_pos">sha1_entry_pos</dfn>(<em>const</em> <em>void</em> *<dfn class="local col1 decl" id="111table" title='table' data-type='const void *' data-ref="111table">table</dfn>,</td></tr>
+<tr><th id="12">12</th><td>			  <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="112elem_size" title='elem_size' data-type='size_t' data-ref="112elem_size">elem_size</dfn>,</td></tr>
+<tr><th id="13">13</th><td>			  <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="113key_offset" title='key_offset' data-type='size_t' data-ref="113key_offset">key_offset</dfn>,</td></tr>
+<tr><th id="14">14</th><td>			  <em>unsigned</em> <dfn class="local col4 decl" id="114lo" title='lo' data-type='unsigned int' data-ref="114lo">lo</dfn>, <em>unsigned</em> <dfn class="local col5 decl" id="115hi" title='hi' data-type='unsigned int' data-ref="115hi">hi</dfn>, <em>unsigned</em> <dfn class="local col6 decl" id="116nr" title='nr' data-type='unsigned int' data-ref="116nr">nr</dfn>,</td></tr>
+<tr><th id="15">15</th><td>			  <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col7 decl" id="117key" title='key' data-type='const unsigned char *' data-ref="117key">key</dfn>);</td></tr>
+<tr><th id="16">16</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='bisect.c.html'>codebrowser/bisect.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

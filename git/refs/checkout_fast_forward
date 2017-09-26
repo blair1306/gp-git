@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1989' type='int checkout_fast_forward(const struct object_id * from, const struct object_id * to, int overwrite_ignore)'/>
+<use f='codebrowser/builtin/merge.c' l='1378' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/pull.c' l='540' u='c' c='pull_into_void'/>
+<use f='codebrowser/builtin/pull.c' l='881' u='c' c='cmd_pull'/>
+<def f='codebrowser/merge.c' l='47' ll='99' type='int checkout_fast_forward(const struct object_id * head, const struct object_id * remote, int overwrite_ignore)'/>
+<use f='codebrowser/sequencer.c' l='387' u='c' c='fast_forward_to'/>

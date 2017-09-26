@@ -1,0 +1,7 @@
+<dec f='codebrowser/quote.h' l='33' type='void sq_quote_argv(struct strbuf * , const char ** argv, size_t maxlen)'/>
+<use f='codebrowser/builtin/am.c' l='1050' u='c' c='am_setup'/>
+<use f='codebrowser/builtin/rev-parse.c' l='509' u='c' c='cmd_parseopt'/>
+<use f='codebrowser/builtin/rev-parse.c' l='519' u='c' c='cmd_sq_quote'/>
+<def f='codebrowser/quote.c' l='59' ll='71' type='void sq_quote_argv(struct strbuf * dst, const char ** argv, size_t maxlen)'/>
+<use f='codebrowser/trace.c' l='176' u='c' c='trace_argv_vprintf_fl'/>
+<use f='codebrowser/trace.c' l='447' u='c' c='trace_command_performance'/>

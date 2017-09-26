@@ -1,0 +1,8 @@
+<dec f='codebrowser/quote.h' l='47' type='int sq_dequote_to_argv(char * arg, const char *** argv, int * nr, int * alloc)'/>
+<doc f='codebrowser/quote.h' l='42'>/*
+ * Same as the above, but can be used to unwrap many arguments in the
+ * same string separated by space. Like sq_quote, it works in place,
+ * modifying arg and appending pointers into it to argv.
+ */</doc>
+<use f='codebrowser/config.c' l='463' u='c' c='git_config_from_parameters'/>
+<def f='codebrowser/quote.c' l='144' ll='147' type='int sq_dequote_to_argv(char * arg, const char *** argv, int * nr, int * alloc)'/>

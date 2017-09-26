@@ -1,0 +1,9 @@
+<dec f='codebrowser/dir.h' l='267' type='int dir_inside_of(const char * subdir, const char * dir)'/>
+<def f='codebrowser/dir.c' l='2180' ll='2205' type='int dir_inside_of(const char * subdir, const char * dir)'/>
+<use f='codebrowser/dir.c' l='2216' u='c' c='is_inside_dir'/>
+<doc f='codebrowser/dir.c' l='2175'>/*
+ * Given two normalized paths (a trailing slash is ok), if subdir is
+ * outside dir, return -1.  Otherwise return the offset in subdir that
+ * can be used as relative path to dir.
+ */</doc>
+<use f='codebrowser/setup.c' l='710' u='c' c='setup_explicit_git_dir'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/submodule.h' l='24' type='2'/>
+<use f='codebrowser/submodule.c' l='411' u='r' c='parse_submodule_update_strategy'/>
+<use f='codebrowser/submodule.c' l='430' c='submodule_strategy_to_string'/>
+<use f='codebrowser/unpack-trees.c' l='273' c='check_submodule_move_head'/>
+<use f='codebrowser/unpack-trees.c' l='314' c='unlink_entry'/>

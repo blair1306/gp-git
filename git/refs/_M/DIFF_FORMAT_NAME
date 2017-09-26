@@ -1,0 +1,10 @@
+<dec f='codebrowser/diff.h' l='52'/>
+<doc f='codebrowser/diff.h' l='51'>/* These override all above */</doc>
+<use f='codebrowser/builtin/log.c' l='1599' u='c'/>
+<use f='codebrowser/combine-diff.c' l='1235' u='c'/>
+<use f='codebrowser/combine-diff.c' l='1500' u='c'/>
+<use f='codebrowser/diff.c' l='3410' u='c'/>
+<use f='codebrowser/diff.c' l='3445' u='c'/>
+<use f='codebrowser/diff.c' l='3828' u='c'/>
+<use f='codebrowser/diff.c' l='4454' u='c'/>
+<use f='codebrowser/diff.c' l='4744' u='c'/>

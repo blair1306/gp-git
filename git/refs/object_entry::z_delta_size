@@ -1,0 +1,8 @@
+<dec f='codebrowser/pack-objects.h' l='16' type='unsigned long'/>
+<use f='codebrowser/builtin/pack-objects.c' l='269' u='w' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='285' u='r' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='286' u='r' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2065' u='w' c='find_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2069' u='r' c='find_deltas'/>
+<offset>768</offset>
+<doc f='codebrowser/pack-objects.h' l='16'>/* delta data size (compressed) */</doc>

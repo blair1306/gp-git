@@ -1,0 +1,4 @@
+<dec f='codebrowser/transport.h' l='208'/>
+<doc f='codebrowser/transport.h' l='207'>/* Accept refs that may update .git/shallow without --depth */</doc>
+<use f='codebrowser/builtin/fetch.c' l='1045' u='c'/>
+<use f='codebrowser/transport.c' l='142' u='c'/>

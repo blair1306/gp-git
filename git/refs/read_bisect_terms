@@ -1,0 +1,9 @@
+<dec f='codebrowser/bisect.h' l='29' type='void read_bisect_terms(const char ** bad, const char ** good)'/>
+<def f='codebrowser/bisect.c' l='905' ll='927' type='void read_bisect_terms(const char ** read_bad, const char ** read_good)'/>
+<use f='codebrowser/bisect.c' l='945' u='c' c='bisect_next_all'/>
+<doc f='codebrowser/bisect.c' l='900'>/*
+ * The terms used for this bisect session are stored in BISECT_TERMS.
+ * We read them and store them to adapt the messages accordingly.
+ * Default is bad/good.
+ */</doc>
+<use f='codebrowser/revision.c' l='2116' u='c' c='handle_revision_pseudo_opt'/>

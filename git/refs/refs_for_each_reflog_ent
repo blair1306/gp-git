@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='410' type='int refs_for_each_reflog_ent(struct ref_store * refs, const char * refname, each_reflog_ent_fn * fn, void * cb_data)'/>
+<def f='codebrowser/refs.c' l='1964' ll='1968' type='int refs_for_each_reflog_ent(struct ref_store * refs, const char * refname, each_reflog_ent_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='1973' u='c' c='for_each_reflog_ent'/>
+<use f='codebrowser/refs/files-backend.c' l='2832' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='173' u='c' c='cmd_for_each_reflog_ent'/>

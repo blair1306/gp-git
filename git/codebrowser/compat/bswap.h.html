@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>bswap.h source code [codebrowser/compat/bswap.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/compat/bswap.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>compat</a>/<a href='bswap.h.html'>bswap.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Let's make sure we always have a sane definition for ntohl()/htonl().</i></td></tr>
+<tr><th id="3">3</th><td><i> * Some libraries define those as a function call, just to perform byte</i></td></tr>
+<tr><th id="4">4</th><td><i> * shifting, bringing significant overhead to what should be a simple</i></td></tr>
+<tr><th id="5">5</th><td><i> * operation.</i></td></tr>
+<tr><th id="6">6</th><td><i> */</i></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><i>/*</i></td></tr>
+<tr><th id="9">9</th><td><i> * Default version that the compiler ought to optimize properly with</i></td></tr>
+<tr><th id="10">10</th><td><i> * constant values.</i></td></tr>
+<tr><th id="11">11</th><td><i> */</i></td></tr>
+<tr><th id="12">12</th><td><em>static</em> <b>inline</b> <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl def" id="default_swab32" title='default_swab32' data-ref="default_swab32">default_swab32</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col2 decl" id="7992val" title='val' data-type='uint32_t' data-ref="7992val">val</dfn>)</td></tr>
+<tr><th id="13">13</th><td>{</td></tr>
+<tr><th id="14">14</th><td>	<b>return</b> (((<a class="local col2 ref" href="#7992val" title='val' data-ref="7992val">val</a> &amp; <var>0xff000000</var>) &gt;&gt; <var>24</var>) |</td></tr>
+<tr><th id="15">15</th><td>		((<a class="local col2 ref" href="#7992val" title='val' data-ref="7992val">val</a> &amp; <var>0x00ff0000</var>) &gt;&gt;  <var>8</var>) |</td></tr>
+<tr><th id="16">16</th><td>		((<a class="local col2 ref" href="#7992val" title='val' data-ref="7992val">val</a> &amp; <var>0x0000ff00</var>) &lt;&lt;  <var>8</var>) |</td></tr>
+<tr><th id="17">17</th><td>		((<a class="local col2 ref" href="#7992val" title='val' data-ref="7992val">val</a> &amp; <var>0x000000ff</var>) &lt;&lt; <var>24</var>));</td></tr>
+<tr><th id="18">18</th><td>}</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><em>static</em> <b>inline</b> <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="decl def" id="default_bswap64" title='default_bswap64' data-ref="default_bswap64">default_bswap64</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col3 decl" id="7993val" title='val' data-type='uint64_t' data-ref="7993val">val</dfn>)</td></tr>
+<tr><th id="21">21</th><td>{</td></tr>
+<tr><th id="22">22</th><td>	<b>return</b> (((<a class="local col3 ref" href="#7993val" title='val' data-ref="7993val">val</a> &amp; (<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<var>0x00000000000000ffULL</var>) &lt;&lt; <var>56</var>) |</td></tr>
+<tr><th id="23">23</th><td>		((<a class="local col3 ref" href="#7993val" title='val' data-ref="7993val">val</a> &amp; (<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<var>0x000000000000ff00ULL</var>) &lt;&lt; <var>40</var>) |</td></tr>
+<tr><th id="24">24</th><td>		((<a class="local col3 ref" href="#7993val" title='val' data-ref="7993val">val</a> &amp; (<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<var>0x0000000000ff0000ULL</var>) &lt;&lt; <var>24</var>) |</td></tr>
+<tr><th id="25">25</th><td>		((<a class="local col3 ref" href="#7993val" title='val' data-ref="7993val">val</a> &amp; (<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<var>0x00000000ff000000ULL</var>) &lt;&lt;  <var>8</var>) |</td></tr>
+<tr><th id="26">26</th><td>		((<a class="local col3 ref" href="#7993val" title='val' data-ref="7993val">val</a> &amp; (<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<var>0x000000ff00000000ULL</var>) &gt;&gt;  <var>8</var>) |</td></tr>
+<tr><th id="27">27</th><td>		((<a class="local col3 ref" href="#7993val" title='val' data-ref="7993val">val</a> &amp; (<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<var>0x0000ff0000000000ULL</var>) &gt;&gt; <var>24</var>) |</td></tr>
+<tr><th id="28">28</th><td>		((<a class="local col3 ref" href="#7993val" title='val' data-ref="7993val">val</a> &amp; (<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<var>0x00ff000000000000ULL</var>) &gt;&gt; <var>40</var>) |</td></tr>
+<tr><th id="29">29</th><td>		((<a class="local col3 ref" href="#7993val" title='val' data-ref="7993val">val</a> &amp; (<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<var>0xff00000000000000ULL</var>) &gt;&gt; <var>56</var>));</td></tr>
+<tr><th id="30">30</th><td>}</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#undef <span class="macro" data-ref="_M/bswap32">bswap32</span></u></td></tr>
+<tr><th id="33">33</th><td><u>#undef <span class="macro" data-ref="_M/bswap64">bswap64</span></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="35">if</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; (defined(<span class="macro" data-ref="_M/__i386__">__i386__</span>) || defined(<span class="macro" data-ref="_M/__x86_64__">__x86_64__</span>))</u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/bswap32" data-ref="_M/bswap32">bswap32</dfn> git_bswap32</u></td></tr>
+<tr><th id="38">38</th><td><em>static</em> <b>inline</b> <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl def" id="git_bswap32" title='git_bswap32' data-ref="git_bswap32">git_bswap32</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col4 decl" id="7994x" title='x' data-type='uint32_t' data-ref="7994x">x</dfn>)</td></tr>
+<tr><th id="39">39</th><td>{</td></tr>
+<tr><th id="40">40</th><td>	<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col5 decl" id="7995result" title='result' data-type='uint32_t' data-ref="7995result">result</dfn>;</td></tr>
+<tr><th id="41">41</th><td>	<b>if</b> (<a class="ref" href="../../include/x86_64-linux-gnu/bits/string2.h.html#1202" title='__builtin_constant_p' data-ref="__builtin_constant_p">__builtin_constant_p</a>(<a class="local col4 ref" href="#7994x" title='x' data-ref="7994x">x</a>))</td></tr>
+<tr><th id="42">42</th><td>		<a class="local col5 ref" href="#7995result" title='result' data-ref="7995result">result</a> = <a class="ref" href="#default_swab32" title='default_swab32' data-ref="default_swab32">default_swab32</a>(<a class="local col4 ref" href="#7994x" title='x' data-ref="7994x">x</a>);</td></tr>
+<tr><th id="43">43</th><td>	<b>else</b></td></tr>
+<tr><th id="44">44</th><td>		<b>__asm__</b>(<q>"bswap %0"</q> : <q>"=r"</q> (<a class="local col5 ref" href="#7995result" title='result' data-ref="7995result">result</a>) : <q>"0"</q> (<a class="local col4 ref" href="#7994x" title='x' data-ref="7994x">x</a>));</td></tr>
+<tr><th id="45">45</th><td>	<b>return</b> <a class="local col5 ref" href="#7995result" title='result' data-ref="7995result">result</a>;</td></tr>
+<tr><th id="46">46</th><td>}</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/bswap64" data-ref="_M/bswap64">bswap64</dfn> git_bswap64</u></td></tr>
+<tr><th id="49">49</th><td><u>#<span data-ppcond="49">if</span> defined(<span class="macro" data-ref="_M/__x86_64__">__x86_64__</span>)</u></td></tr>
+<tr><th id="50">50</th><td><em>static</em> <b>inline</b> <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="decl def" id="git_bswap64" title='git_bswap64' data-ref="git_bswap64">git_bswap64</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col6 decl" id="7996x" title='x' data-type='uint64_t' data-ref="7996x">x</dfn>)</td></tr>
+<tr><th id="51">51</th><td>{</td></tr>
+<tr><th id="52">52</th><td>	<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col7 decl" id="7997result" title='result' data-type='uint64_t' data-ref="7997result">result</dfn>;</td></tr>
+<tr><th id="53">53</th><td>	<b>if</b> (<a class="ref" href="../../include/x86_64-linux-gnu/bits/string2.h.html#1202" title='__builtin_constant_p' data-ref="__builtin_constant_p">__builtin_constant_p</a>(<a class="local col6 ref" href="#7996x" title='x' data-ref="7996x">x</a>))</td></tr>
+<tr><th id="54">54</th><td>		<a class="local col7 ref" href="#7997result" title='result' data-ref="7997result">result</a> = <a class="ref" href="#default_bswap64" title='default_bswap64' data-ref="default_bswap64">default_bswap64</a>(<a class="local col6 ref" href="#7996x" title='x' data-ref="7996x">x</a>);</td></tr>
+<tr><th id="55">55</th><td>	<b>else</b></td></tr>
+<tr><th id="56">56</th><td>		<b>__asm__</b>(<q>"bswap %q0"</q> : <q>"=r"</q> (<a class="local col7 ref" href="#7997result" title='result' data-ref="7997result">result</a>) : <q>"0"</q> (<a class="local col6 ref" href="#7996x" title='x' data-ref="7996x">x</a>));</td></tr>
+<tr><th id="57">57</th><td>	<b>return</b> <a class="local col7 ref" href="#7997result" title='result' data-ref="7997result">result</a>;</td></tr>
+<tr><th id="58">58</th><td>}</td></tr>
+<tr><th id="59">59</th><td><u>#<span data-ppcond="49">else</span></u></td></tr>
+<tr><th id="60">60</th><td><em>static</em> <b>inline</b> uint64_t git_bswap64(uint64_t x)</td></tr>
+<tr><th id="61">61</th><td>{</td></tr>
+<tr><th id="62">62</th><td>	<b>union</b> { uint64_t i64; uint32_t i32[<var>2</var>]; } tmp, result;</td></tr>
+<tr><th id="63">63</th><td>	<b>if</b> (__builtin_constant_p(x))</td></tr>
+<tr><th id="64">64</th><td>		result.i64 = default_bswap64(x);</td></tr>
+<tr><th id="65">65</th><td>	<b>else</b> {</td></tr>
+<tr><th id="66">66</th><td>		tmp.i64 = x;</td></tr>
+<tr><th id="67">67</th><td>		result.i32[<var>0</var>] = git_bswap32(tmp.i32[<var>1</var>]);</td></tr>
+<tr><th id="68">68</th><td>		result.i32[<var>1</var>] = git_bswap32(tmp.i32[<var>0</var>]);</td></tr>
+<tr><th id="69">69</th><td>	}</td></tr>
+<tr><th id="70">70</th><td>	<b>return</b> result.i64;</td></tr>
+<tr><th id="71">71</th><td>}</td></tr>
+<tr><th id="72">72</th><td><u>#<span data-ppcond="49">endif</span></u></td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><u>#<span data-ppcond="35">elif</span> defined(_MSC_VER) &amp;&amp; (defined(_M_IX86) || defined(_M_X64))</u></td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><u>#include &lt;stdlib.h&gt;</u></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><u>#define bswap32(x) _byteswap_ulong(x)</u></td></tr>
+<tr><th id="79">79</th><td><u>#define bswap64(x) _byteswap_uint64(x)</u></td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><u>#<span data-ppcond="35">endif</span></u></td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><u>#<span data-ppcond="83">if</span> defined(<a class="macro" href="#37" data-ref="_M/bswap32">bswap32</a>)</u></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><u>#undef <a class="macro" href="../../include/netinet/in.h.html#402" data-ref="_M/ntohl">ntohl</a></u></td></tr>
+<tr><th id="86">86</th><td><u>#undef <a class="macro" href="../../include/netinet/in.h.html#404" data-ref="_M/htonl">htonl</a></u></td></tr>
+<tr><th id="87">87</th><td><u>#define <dfn class="macro" id="_M/ntohl" data-ref="_M/ntohl">ntohl</dfn>(x) bswap32(x)</u></td></tr>
+<tr><th id="88">88</th><td><u>#define <dfn class="macro" id="_M/htonl" data-ref="_M/htonl">htonl</dfn>(x) bswap32(x)</u></td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><u>#<span data-ppcond="83">endif</span></u></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><u>#<span data-ppcond="92">if</span> defined(<a class="macro" href="#48" data-ref="_M/bswap64">bswap64</a>)</u></td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><u>#undef <span class="macro" data-ref="_M/ntohll">ntohll</span></u></td></tr>
+<tr><th id="95">95</th><td><u>#undef <span class="macro" data-ref="_M/htonll">htonll</span></u></td></tr>
+<tr><th id="96">96</th><td><u>#define <dfn class="macro" id="_M/ntohll" data-ref="_M/ntohll">ntohll</dfn>(x) bswap64(x)</u></td></tr>
+<tr><th id="97">97</th><td><u>#define <dfn class="macro" id="_M/htonll" data-ref="_M/htonll">htonll</dfn>(x) bswap64(x)</u></td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><u>#<span data-ppcond="92">else</span></u></td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><u>#undef ntohll</u></td></tr>
+<tr><th id="102">102</th><td><u>#undef htonll</u></td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><u>#if defined(__BYTE_ORDER) &amp;&amp; defined(__LITTLE_ENDIAN) &amp;&amp; defined(__BIG_ENDIAN)</u></td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><u># define GIT_BYTE_ORDER __BYTE_ORDER</u></td></tr>
+<tr><th id="107">107</th><td><u># define GIT_LITTLE_ENDIAN __LITTLE_ENDIAN</u></td></tr>
+<tr><th id="108">108</th><td><u># define GIT_BIG_ENDIAN __BIG_ENDIAN</u></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><u>#elif defined(BYTE_ORDER) &amp;&amp; defined(LITTLE_ENDIAN) &amp;&amp; defined(BIG_ENDIAN)</u></td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><u># define GIT_BYTE_ORDER BYTE_ORDER</u></td></tr>
+<tr><th id="113">113</th><td><u># define GIT_LITTLE_ENDIAN LITTLE_ENDIAN</u></td></tr>
+<tr><th id="114">114</th><td><u># define GIT_BIG_ENDIAN BIG_ENDIAN</u></td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><u>#else</u></td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><u># define GIT_BIG_ENDIAN 4321</u></td></tr>
+<tr><th id="119">119</th><td><u># define GIT_LITTLE_ENDIAN 1234</u></td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td><u># if defined(_BIG_ENDIAN) &amp;&amp; !defined(_LITTLE_ENDIAN)</u></td></tr>
+<tr><th id="122">122</th><td><u>#  define GIT_BYTE_ORDER GIT_BIG_ENDIAN</u></td></tr>
+<tr><th id="123">123</th><td><u># elif defined(_LITTLE_ENDIAN) &amp;&amp; !defined(_BIG_ENDIAN)</u></td></tr>
+<tr><th id="124">124</th><td><u>#  define GIT_BYTE_ORDER GIT_LITTLE_ENDIAN</u></td></tr>
+<tr><th id="125">125</th><td><u># elif defined(__THW_BIG_ENDIAN__) &amp;&amp; !defined(__THW_LITTLE_ENDIAN__)</u></td></tr>
+<tr><th id="126">126</th><td><u>#  define GIT_BYTE_ORDER GIT_BIG_ENDIAN</u></td></tr>
+<tr><th id="127">127</th><td><u># elif defined(__THW_LITTLE_ENDIAN__) &amp;&amp; !defined(__THW_BIG_ENDIAN__)</u></td></tr>
+<tr><th id="128">128</th><td><u>#  define GIT_BYTE_ORDER GIT_LITTLE_ENDIAN</u></td></tr>
+<tr><th id="129">129</th><td><u># else</u></td></tr>
+<tr><th id="130">130</th><td><u>#  error "Cannot determine endianness"</u></td></tr>
+<tr><th id="131">131</th><td><u># endif</u></td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><u>#endif</u></td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td><u>#if GIT_BYTE_ORDER == GIT_BIG_ENDIAN</u></td></tr>
+<tr><th id="136">136</th><td><u># define ntohll(n) (n)</u></td></tr>
+<tr><th id="137">137</th><td><u># define htonll(n) (n)</u></td></tr>
+<tr><th id="138">138</th><td><u>#else</u></td></tr>
+<tr><th id="139">139</th><td><u># define ntohll(n) default_bswap64(n)</u></td></tr>
+<tr><th id="140">140</th><td><u># define htonll(n) default_bswap64(n)</u></td></tr>
+<tr><th id="141">141</th><td><u>#endif</u></td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><u>#<span data-ppcond="92">endif</span></u></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><i>/*</i></td></tr>
+<tr><th id="146">146</th><td><i> * Performance might be improved if the CPU architecture is OK with</i></td></tr>
+<tr><th id="147">147</th><td><i> * unaligned 32-bit loads and a fast ntohl() is available.</i></td></tr>
+<tr><th id="148">148</th><td><i> * Otherwise fall back to byte loads and shifts which is portable,</i></td></tr>
+<tr><th id="149">149</th><td><i> * and is faster on architectures with memory alignment issues.</i></td></tr>
+<tr><th id="150">150</th><td><i> */</i></td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><u>#<span data-ppcond="152">if</span> !defined(<span class="macro" data-ref="_M/NO_UNALIGNED_LOADS">NO_UNALIGNED_LOADS</span>) &amp;&amp; ( \</u></td></tr>
+<tr><th id="153">153</th><td><u>    defined(<span class="macro" data-ref="_M/__i386__">__i386__</span>) || defined(<span class="macro" data-ref="_M/__x86_64__">__x86_64__</span>) || \</u></td></tr>
+<tr><th id="154">154</th><td><u>    defined(<span class="macro" data-ref="_M/_M_IX86">_M_IX86</span>) || defined(<span class="macro" data-ref="_M/_M_X64">_M_X64</span>) || \</u></td></tr>
+<tr><th id="155">155</th><td><u>    defined(<span class="macro" data-ref="_M/__ppc__">__ppc__</span>) || defined(<span class="macro" data-ref="_M/__ppc64__">__ppc64__</span>) || \</u></td></tr>
+<tr><th id="156">156</th><td><u>    defined(<span class="macro" data-ref="_M/__powerpc__">__powerpc__</span>) || defined(<span class="macro" data-ref="_M/__powerpc64__">__powerpc64__</span>) || \</u></td></tr>
+<tr><th id="157">157</th><td><u>    defined(<span class="macro" data-ref="_M/__s390__">__s390__</span>) || defined(<span class="macro" data-ref="_M/__s390x__">__s390x__</span>))</u></td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><u>#define <dfn class="macro" id="_M/get_be16" data-ref="_M/get_be16">get_be16</dfn>(p)	ntohs(*(unsigned short *)(p))</u></td></tr>
+<tr><th id="160">160</th><td><u>#define <dfn class="macro" id="_M/get_be32" data-ref="_M/get_be32">get_be32</dfn>(p)	ntohl(*(unsigned int *)(p))</u></td></tr>
+<tr><th id="161">161</th><td><u>#define <dfn class="macro" id="_M/put_be32" data-ref="_M/put_be32">put_be32</dfn>(p, v)	do { *(unsigned int *)(p) = htonl(v); } while (0)</u></td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><u>#<span data-ppcond="152">else</span></u></td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><em>static</em> <b>inline</b> uint16_t get_be16(<em>const</em> <em>void</em> *ptr)</td></tr>
+<tr><th id="166">166</th><td>{</td></tr>
+<tr><th id="167">167</th><td>	<em>const</em> <em>unsigned</em> <em>char</em> *p = ptr;</td></tr>
+<tr><th id="168">168</th><td>	<b>return</b>	(uint16_t)p[<var>0</var>] &lt;&lt; <var>8</var> |</td></tr>
+<tr><th id="169">169</th><td>		(uint16_t)p[<var>1</var>] &lt;&lt; <var>0</var>;</td></tr>
+<tr><th id="170">170</th><td>}</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><em>static</em> <b>inline</b> uint32_t get_be32(<em>const</em> <em>void</em> *ptr)</td></tr>
+<tr><th id="173">173</th><td>{</td></tr>
+<tr><th id="174">174</th><td>	<em>const</em> <em>unsigned</em> <em>char</em> *p = ptr;</td></tr>
+<tr><th id="175">175</th><td>	<b>return</b>	(uint32_t)p[<var>0</var>] &lt;&lt; <var>24</var> |</td></tr>
+<tr><th id="176">176</th><td>		(uint32_t)p[<var>1</var>] &lt;&lt; <var>16</var> |</td></tr>
+<tr><th id="177">177</th><td>		(uint32_t)p[<var>2</var>] &lt;&lt;  <var>8</var> |</td></tr>
+<tr><th id="178">178</th><td>		(uint32_t)p[<var>3</var>] &lt;&lt;  <var>0</var>;</td></tr>
+<tr><th id="179">179</th><td>}</td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td><em>static</em> <b>inline</b> <em>void</em> put_be32(<em>void</em> *ptr, uint32_t value)</td></tr>
+<tr><th id="182">182</th><td>{</td></tr>
+<tr><th id="183">183</th><td>	<em>unsigned</em> <em>char</em> *p = ptr;</td></tr>
+<tr><th id="184">184</th><td>	p[<var>0</var>] = value &gt;&gt; <var>24</var>;</td></tr>
+<tr><th id="185">185</th><td>	p[<var>1</var>] = value &gt;&gt; <var>16</var>;</td></tr>
+<tr><th id="186">186</th><td>	p[<var>2</var>] = value &gt;&gt;  <var>8</var>;</td></tr>
+<tr><th id="187">187</th><td>	p[<var>3</var>] = value &gt;&gt;  <var>0</var>;</td></tr>
+<tr><th id="188">188</th><td>}</td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td><u>#<span data-ppcond="152">endif</span></u></td></tr>
+<tr><th id="191">191</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../abspath.c.html'>codebrowser/abspath.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

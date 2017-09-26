@@ -1,0 +1,77 @@
+<dec f='include/stdio.h' l='573' type='int fputc(int __c, FILE * __stream)'/>
+<doc f='include/stdio.h' l='566'>/* Write a character to STREAM.
+
+   These functions are possible cancellation points and therefore not
+   marked with __THROW.
+
+   These functions is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/apply.c' l='419' u='c' c='say_patch_name'/>
+<use f='codebrowser/apply.c' l='4557' u='c' c='write_out_one_reject'/>
+<use f='codebrowser/builtin/check-ignore.c' l='52' u='c' c='output_exclude'/>
+<use f='codebrowser/builtin/checkout-index.c' l='89' u='c' c='checkout_file'/>
+<use f='codebrowser/builtin/fetch.c' l='856' u='c' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='857' u='c' c='store_updated_refs'/>
+<use f='codebrowser/builtin/update-index.c' l='142' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='149' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='155' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='162' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='168' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='175' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='180' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='186' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='191' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='197' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='203' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='210' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/daemon.c' l='89' u='c' c='logreport'/>
+<use f='codebrowser/diff.c' l='541' u='c' c='emit_line_0'/>
+<use f='codebrowser/diff.c' l='546' u='c' c='emit_line_0'/>
+<use f='codebrowser/diff.c' l='548' u='c' c='emit_line_0'/>
+<use f='codebrowser/diff.c' l='2276' u='c' c='emit_binary_diff_body'/>
+<use f='codebrowser/fast-import.c' l='392' u='c' c='write_branch_report'/>
+<use f='codebrowser/fast-import.c' l='404' u='c' c='write_branch_report'/>
+<use f='codebrowser/fast-import.c' l='406' u='c' c='write_branch_report'/>
+<use f='codebrowser/fast-import.c' l='431' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='435' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='437' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='446' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='449' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='455' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='462' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='472' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='477' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='479' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='483' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='491' u='c' c='write_crash_report'/>
+<use f='codebrowser/fast-import.c' l='510' u='c' c='die_nicely'/>
+<use f='codebrowser/fast-import.c' l='1056' u='c' c='end_packfile'/>
+<use f='codebrowser/fast-import.c' l='3206' u='c' c='parse_progress'/>
+<use f='codebrowser/fetch-pack.c' l='70' u='c' c='print_verbose'/>
+<use f='codebrowser/grep.c' l='783' u='c' c='indent'/>
+<use f='codebrowser/grep.c' l='815' u='c' c='dump_grep_pat'/>
+<use f='codebrowser/parse-options.c' l='607' u='c' c='usage_with_options_internal'/>
+<use f='codebrowser/parse-options.c' l='614' u='c' c='usage_with_options_internal'/>
+<use f='codebrowser/parse-options.c' l='643' u='c' c='usage_with_options_internal'/>
+<use f='codebrowser/parse-options.c' l='648' u='c' c='usage_with_options_internal'/>
+<use f='codebrowser/quote.c' l='213' u='c' c='quote_c_style_counted'/>
+<use f='codebrowser/quote.c' l='213' u='c' c='quote_c_style_counted'/>
+<use f='codebrowser/quote.c' l='213' u='c' c='quote_c_style_counted'/>
+<use f='codebrowser/quote.c' l='213' u='c' c='quote_c_style_counted'/>
+<use f='codebrowser/quote.c' l='213' u='c' c='quote_c_style_counted'/>
+<use f='codebrowser/quote.c' l='213' u='c' c='quote_c_style_counted'/>
+<use f='codebrowser/quote.c' l='213' u='c' c='quote_c_style_counted'/>
+<use f='codebrowser/quote.c' l='288' u='c' c='write_name_quoted'/>
+<use f='codebrowser/refs.c' l='303' u='c' c='warn_if_dangling_symref'/>
+<use f='codebrowser/revision.c' l='34' u='c' c='show_object_with_name'/>
+<use f='codebrowser/revision.c' l='35' u='c' c='show_object_with_name'/>
+<use f='codebrowser/server-info.c' l='254' u='c' c='write_pack_info_file'/>
+<use f='codebrowser/transport.c' l='337' u='c' c='print_ref_status'/>
+<use f='codebrowser/transport.c' l='339' u='c' c='print_ref_status'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='84' u='c' c='fast_export_begin_note'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='241' u='c' c='fast_export_buf_to_data'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='258' u='c' c='fast_export_data'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='329' u='c' c='fast_export_blob_delta'/>
+<use f='codebrowser/ws.c' l='241' u='c' c='ws_check_emit_1'/>
+<use f='codebrowser/ws.c' l='243' u='c' c='ws_check_emit_1'/>
+<use f='codebrowser/wt-status.c' l='1827' u='c' c='wt_shortstatus_print_tracking'/>

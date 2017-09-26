@@ -1,0 +1,2 @@
+<dec f='codebrowser/imap-send.c' l='170' type='5'/>
+<use f='codebrowser/imap-send.c' l='1100' u='r' c='imap_open_store'/>

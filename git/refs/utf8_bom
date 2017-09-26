@@ -1,0 +1,8 @@
+<dec f='codebrowser/utf8.h' l='16' type='const char []'/>
+<use f='codebrowser/config.c' l='666' u='r' c='git_parse_source'/>
+<use f='codebrowser/config.c' l='679' u='r' c='git_parse_source'/>
+<def f='codebrowser/utf8.c' l='651' type='const char [4]'/>
+<use f='codebrowser/utf8.c' l='655' u='r' c='skip_utf8_bom'/>
+<use f='codebrowser/utf8.c' l='656' u='r' c='skip_utf8_bom'/>
+<use f='codebrowser/utf8.c' l='656' u='r' c='skip_utf8_bom'/>
+<use f='codebrowser/utf8.c' l='658' u='r' c='skip_utf8_bom'/>

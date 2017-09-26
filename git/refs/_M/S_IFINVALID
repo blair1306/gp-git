@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='94'/>
+<doc f='codebrowser/cache.h' l='93'>/* unknown mode (impossible combination S_IFIFO|S_IFCHR) */</doc>
+<use f='codebrowser/blame.c' l='514' u='c'/>
+<use f='codebrowser/builtin/cat-file.c' l='72' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='87' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='110' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='113' u='c'/>
+<use f='codebrowser/object.c' l='342' u='c'/>
+<use f='codebrowser/revision.c' l='173' u='c'/>
+<use f='codebrowser/sha1_name.c' l='1514' u='c'/>

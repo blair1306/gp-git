@@ -1,0 +1,8 @@
+<dec f='codebrowser/apply.h' l='76' type='struct string_list'/>
+<use f='codebrowser/apply.c' l='94' u='a' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='108' u='a' c='clear_apply_state'/>
+<use f='codebrowser/apply.c' l='2081' u='a' c='add_name_limit'/>
+<use f='codebrowser/apply.c' l='2098' u='m' c='use_patch'/>
+<use f='codebrowser/apply.c' l='2099' u='m' c='use_patch'/>
+<offset>1280</offset>
+<doc f='codebrowser/apply.h' l='75'>/* Exclude and include path parameters */</doc>

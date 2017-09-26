@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='207' type='int cmd_remote(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/remote.c' l='1594' ll='1633' type='int cmd_remote(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='448'/>
+<use f='codebrowser/git.c' l='448'/>
+<use f='codebrowser/git.c' l='448'/>
+<use f='codebrowser/git.c' l='448'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/gettext.h' l='93' type='int is_utf8_locale()'/>
+<def f='codebrowser/gettext.c' l='182' ll='199' type='int is_utf8_locale()'/>

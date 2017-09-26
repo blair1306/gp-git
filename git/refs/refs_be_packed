@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs/refs-internal.h' l='667' type='struct ref_storage_be'/>
+<use f='codebrowser/refs/packed-backend.c' l='87' u='a' c='packed_ref_store_create'/>
+<use f='codebrowser/refs/packed-backend.c' l='119' u='a' c='packed_downcast'/>
+<def f='codebrowser/refs/packed-backend.c' l='859' ll='885' type='struct ref_storage_be'/>

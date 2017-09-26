@@ -1,0 +1,24 @@
+<dec f='codebrowser/tag.h' l='6' type='const char *'/>
+<use f='codebrowser/builtin/mktag.c' l='168' u='r' c='cmd_mktag'/>
+<use f='codebrowser/builtin/tag.c' l='190' u='r' c='build_tag_object'/>
+<def f='codebrowser/tag.c' l='8' type='const char *'/>
+<use f='codebrowser/tag.c' l='150' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='150' u='r' c='parse_tag_buffer'/>

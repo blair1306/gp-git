@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='978' macro='1' type='10031'/>
+<use f='codebrowser/http.c' l='1101' u='r' c='get_active_slot'/>

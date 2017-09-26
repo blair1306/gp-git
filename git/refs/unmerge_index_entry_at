@@ -1,0 +1,6 @@
+<dec f='codebrowser/resolve-undo.h' l='13' type='int unmerge_index_entry_at(struct index_state * , int )'/>
+<use f='codebrowser/builtin/update-index.c' l='617' macro='1' u='c'/>
+<def f='codebrowser/resolve-undo.c' l='116' ll='163' type='int unmerge_index_entry_at(struct index_state * istate, int pos)'/>
+<use f='codebrowser/resolve-undo.c' l='162' u='c' c='unmerge_index_entry_at'/>
+<use f='codebrowser/resolve-undo.c' l='175' u='c' c='unmerge_marked_index'/>
+<use f='codebrowser/resolve-undo.c' l='190' u='c' c='unmerge_index'/>

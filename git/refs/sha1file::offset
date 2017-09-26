@@ -1,0 +1,8 @@
+<dec f='codebrowser/csum-file.h' l='10' type='unsigned int'/>
+<offset>64</offset>
+<use f='codebrowser/csum-file.c' l='47' u='r' c='sha1flush'/>
+<use f='codebrowser/csum-file.c' l='52' u='w' c='sha1flush'/>
+<use f='codebrowser/csum-file.c' l='92' u='r' c='sha1write'/>
+<use f='codebrowser/csum-file.c' l='117' u='w' c='sha1write'/>
+<use f='codebrowser/csum-file.c' l='147' u='w' c='sha1fd_throughput'/>
+<use f='codebrowser/csum-file.c' l='172' u='w' c='sha1file_truncate'/>

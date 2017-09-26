@@ -1,0 +1,4 @@
+<dec f='codebrowser/attr.h' l='54' type='void attr_check_free(struct attr_check * check)'/>
+<def f='codebrowser/attr.c' l='655' ll='664' type='void attr_check_free(struct attr_check * check)'/>
+<use f='codebrowser/builtin/check-attr.c' l='187' u='c' c='cmd_check_attr'/>
+<use f='codebrowser/pathspec.c' l='663' u='c' c='clear_pathspec'/>

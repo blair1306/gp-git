@@ -1,0 +1,4 @@
+<dec f='codebrowser/ref-filter.h' l='31' type='unsigned int'/>
+<offset>96</offset>
+<use f='codebrowser/ref-filter.c' l='2027' u='r' c='cmp_ref_sorting'/>
+<use f='codebrowser/ref-filter.c' l='2160' u='w' c='parse_ref_sorting'/>

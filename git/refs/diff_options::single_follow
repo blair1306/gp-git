@@ -1,0 +1,25 @@
+<dec f='codebrowser/diff.h' l='121' type='const char *'/>
+<offset>128</offset>
+<use f='codebrowser/blame.c' l='621' u='w' c='find_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='463' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='464' u='r' c='diffcore_rename'/>
+<use f='codebrowser/tree-diff.c' l='614' u='w' c='try_to_follow_renames'/>

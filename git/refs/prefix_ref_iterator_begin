@@ -1,0 +1,15 @@
+<dec f='codebrowser/refs/refs-internal.h' l='428' type='struct ref_iterator * prefix_ref_iterator_begin(struct ref_iterator * iter0, const char * prefix, int trim)'/>
+<use f='codebrowser/refs.c' l='1292' u='c' c='refs_ref_iterator_begin'/>
+<doc f='codebrowser/refs/refs-internal.h' l='416'>/*
+ * Wrap iter0, only letting through the references whose names start
+ * with prefix. If trim is set, set iter-&gt;refname to the name of the
+ * reference with that many characters trimmed off the front;
+ * otherwise set it to the full refname. The new iterator takes over
+ * ownership of iter0 and frees it when iteration is over. It makes
+ * its own copy of prefix.
+ *
+ * As an convenience to callers, if prefix is the empty string and
+ * trim is zero, this function returns iter0 directly, without
+ * wrapping it.
+ */</doc>
+<def f='codebrowser/refs/iterator.c' l='351' ll='371' type='struct ref_iterator * prefix_ref_iterator_begin(struct ref_iterator * iter0, const char * prefix, int trim)'/>

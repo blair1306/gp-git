@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='351'/>
+<doc f='codebrowser/diff.h' l='350'>/* do not report anything on removed paths */</doc>
+<use f='codebrowser/builtin/diff-files.c' l='42' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='231' u='c'/>

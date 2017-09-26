@@ -1,0 +1,5 @@
+perl_quote_buf|perl_quote_buf
+peel_object|peel_object
+peel_ref|peel_ref
+peel_entry|peel_entry
+peel_to_type|peel_to_type

@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack-revindex.h' l='12' type='int find_revindex_position(struct packed_git * p, off_t ofs)'/>
+<use f='codebrowser/pack-bitmap.c' l='380' u='c' c='bitmap_position_packfile'/>
+<def f='codebrowser/pack-revindex.c' l='166' ll='184' type='int find_revindex_position(struct packed_git * p, off_t ofs)'/>
+<use f='codebrowser/pack-revindex.c' l='191' u='c' c='find_pack_revindex'/>

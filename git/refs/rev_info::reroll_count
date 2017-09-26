@@ -1,0 +1,5 @@
+<dec f='codebrowser/revision.h' l='169' type='int'/>
+<offset>1632</offset>
+<use f='codebrowser/builtin/log.c' l='1540' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='315' u='r' c='fmt_output_subject'/>
+<use f='codebrowser/log-tree.c' l='316' u='r' c='fmt_output_subject'/>

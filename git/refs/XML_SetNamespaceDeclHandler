@@ -1,0 +1,1 @@
+<dec f='include/expat.h' l='608' type='void XML_SetNamespaceDeclHandler(XML_Parser parser, XML_StartNamespaceDeclHandler start, XML_EndNamespaceDeclHandler end)'/>

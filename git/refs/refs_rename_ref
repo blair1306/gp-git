@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='444' type='int refs_rename_ref(struct ref_store * refs, const char * oldref, const char * newref, const char * logmsg)'/>
+<doc f='codebrowser/refs.h' l='443'>/** rename ref, return 0 on success **/</doc>
+<def f='codebrowser/refs.c' l='2056' ll='2060' type='int refs_rename_ref(struct ref_store * refs, const char * oldref, const char * newref, const char * logmsg)'/>
+<use f='codebrowser/refs.c' l='2064' u='c' c='rename_ref'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='111' u='c' c='cmd_rename_ref'/>

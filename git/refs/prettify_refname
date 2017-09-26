@@ -1,0 +1,10 @@
+<dec f='codebrowser/refs.h' l='439' type='const char * prettify_refname(const char * refname)'/>
+<use f='codebrowser/builtin/fetch.c' l='495' u='c' c='adjust_refcol_width'/>
+<use f='codebrowser/builtin/fetch.c' l='497' u='c' c='adjust_refcol_width'/>
+<use f='codebrowser/builtin/fetch.c' l='622' u='c' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='976' u='c' c='prune_refs'/>
+<use f='codebrowser/log-tree.c' l='221' u='c' c='show_name'/>
+<def f='codebrowser/refs.c' l='426' ll='433' type='const char * prettify_refname(const char * name)'/>
+<use f='codebrowser/transport.c' l='331' u='c' c='print_ref_status'/>
+<use f='codebrowser/transport.c' l='331' u='c' c='print_ref_status'/>
+<use f='codebrowser/transport.c' l='333' u='c' c='print_ref_status'/>

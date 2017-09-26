@@ -1,0 +1,6 @@
+<dec f='codebrowser/help.h' l='27' type='int is_in_cmdlist(struct cmdnames * cmds, const char * name)'/>
+<use f='codebrowser/builtin/help.c' l='287' u='c' c='is_git_command'/>
+<use f='codebrowser/builtin/help.c' l='288' u='c' c='is_git_command'/>
+<use f='codebrowser/builtin/merge.c' l='141' u='c' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='141' u='c' c='get_strategy'/>
+<def f='codebrowser/help.c' l='231' ll='238' type='int is_in_cmdlist(struct cmdnames * c, const char * s)'/>

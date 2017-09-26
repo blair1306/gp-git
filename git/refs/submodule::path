@@ -1,0 +1,56 @@
+<dec f='codebrowser/submodule-config.h' l='13' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/submodule--helper.c' l='852' u='r' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/submodule-config.c' l='45' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='45' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='75' u='r' c='free_one_config'/>
+<use f='codebrowser/submodule-config.c' l='120' u='r' c='cache_put_path'/>
+<use f='codebrowser/submodule-config.c' l='131' u='r' c='cache_remove_path'/>
+<use f='codebrowser/submodule-config.c' l='160' u='w' c='cache_lookup_path'/>
+<use f='codebrowser/submodule-config.c' l='222' u='w' c='lookup_or_create_by_name'/>
+<use f='codebrowser/submodule-config.c' l='378' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='382' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='384' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='385' u='w' c='parse_config'/>
+<use f='codebrowser/submodule.c' l='1510' u='r' c='submodule_has_dirty_index'/>
+<use f='codebrowser/submodule.c' l='1512' u='r' c='submodule_has_dirty_index'/>
+<use f='codebrowser/t/helper/test-submodule-config.c' l='66' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-submodule-config.c' l='69' u='r' c='cmd_main'/>

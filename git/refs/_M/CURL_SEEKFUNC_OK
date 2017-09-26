@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='304'/>
+<doc f='include/curl/curl.h' l='303'>/* These are the return codes for the seek callbacks */</doc>

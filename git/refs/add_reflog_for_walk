@@ -1,0 +1,3 @@
+<dec f='codebrowser/reflog-walk.h' l='9' type='int add_reflog_for_walk(struct reflog_walk_info * info, struct commit * commit, const char * name)'/>
+<def f='codebrowser/reflog-walk.c' l='120' ll='202' type='int add_reflog_for_walk(struct reflog_walk_info * info, struct commit * commit, const char * name)'/>
+<use f='codebrowser/revision.c' l='154' u='c' c='add_pending_object_with_path'/>

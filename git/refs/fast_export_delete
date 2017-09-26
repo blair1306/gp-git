@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/fast_export.h' l='10' type='void fast_export_delete(const char * path)'/>
+<def f='codebrowser/vcs-svn/fast_export.c' l='44' ll='50' type='void fast_export_delete(const char * path)'/>
+<use f='codebrowser/vcs-svn/repo_tree.c' l='39' u='c' c='repo_copy'/>
+<use f='codebrowser/vcs-svn/repo_tree.c' l='47' u='c' c='repo_delete'/>

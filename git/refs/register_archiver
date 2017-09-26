@@ -1,0 +1,5 @@
+<dec f='codebrowser/archive.h' l='28' type='void register_archiver(struct archiver * )'/>
+<use f='codebrowser/archive-tar.c' l='482' u='c' c='init_tar_archiver'/>
+<use f='codebrowser/archive-tar.c' l='492' u='c' c='init_tar_archiver'/>
+<use f='codebrowser/archive-zip.c' l='647' u='c' c='init_zip_archiver'/>
+<def f='codebrowser/archive.c' l='25' ll='29' type='void register_archiver(struct archiver * ar)'/>

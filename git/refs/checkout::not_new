@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1498' type='unsigned int'/>
+<offset>258</offset>
+<use f='codebrowser/builtin/checkout-index.c' l='197' u='w' c='cmd_checkout_index'/>
+<use f='codebrowser/entry.c' l='440' u='r' c='checkout_entry'/>

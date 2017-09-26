@@ -1,0 +1,5 @@
+<dec f='codebrowser/revision.h' l='17'/>
+<use f='codebrowser/graph.c' l='351' u='c'/>
+<use f='codebrowser/revision.c' l='3216' u='c'/>
+<use f='codebrowser/revision.c' l='3307' u='c'/>
+<use f='codebrowser/revision.c' l='3309' u='c'/>

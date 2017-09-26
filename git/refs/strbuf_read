@@ -1,0 +1,41 @@
+<dec f='codebrowser/strbuf.h' l='362' type='ssize_t strbuf_read(struct strbuf * , int fd, size_t hint)'/>
+<doc f='codebrowser/strbuf.h' l='357'>/**
+ * Read the contents of a given file descriptor. The third argument can be
+ * used to give a hint about the file size, to avoid reallocs.  If read fails,
+ * any partial read is undone.
+ */</doc>
+<use f='codebrowser/apply.c' l='427' u='c' c='read_patch_file'/>
+<use f='codebrowser/blame.c' l='229' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/am.c' l='321' u='c' c='read_author_script'/>
+<use f='codebrowser/builtin/commit-tree.c' l='99' u='c' c='cmd_commit_tree'/>
+<use f='codebrowser/builtin/commit-tree.c' l='117' u='c' c='cmd_commit_tree'/>
+<use f='codebrowser/builtin/commit.c' l='706' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='696' u='c' c='cmd_fmt_merge_msg'/>
+<use f='codebrowser/builtin/hash-object.c' l='24' u='c' c='hash_literally'/>
+<use f='codebrowser/builtin/help.c' l='96' u='c' c='check_emacsclient_version'/>
+<use f='codebrowser/builtin/merge.c' l='262' u='c' c='save_state'/>
+<use f='codebrowser/builtin/merge.c' l='1020' u='c' c='handle_fetch_head'/>
+<use f='codebrowser/builtin/mktag.c' l='159' u='c' c='cmd_mktag'/>
+<use f='codebrowser/builtin/notes.c' l='151' u='c' c='write_commented_object'/>
+<use f='codebrowser/builtin/notes.c' l='233' u='c' c='parse_file_arg'/>
+<use f='codebrowser/builtin/replace.c' l='256' u='c' c='import_object'/>
+<use f='codebrowser/builtin/stripspace.c' l='53' u='c' c='cmd_stripspace'/>
+<use f='codebrowser/builtin/tag.c' l='498' u='c' c='cmd_tag'/>
+<use f='codebrowser/builtin/update-ref.c' l='326' u='c' c='update_refs_stdin'/>
+<use f='codebrowser/convert.c' l='485' u='c' c='apply_single_file_filter'/>
+<use f='codebrowser/credential-cache.c' l='70' u='c' c='do_cache'/>
+<use f='codebrowser/daemon.c' l='333' u='c' c='run_access_hook'/>
+<use f='codebrowser/diff-no-index.c' l='67' u='c' c='populate_from_stdin'/>
+<use f='codebrowser/diff.c' l='5198' u='c' c='run_textconv'/>
+<use f='codebrowser/prompt.c' l='26' u='c' c='do_askpass'/>
+<use f='codebrowser/refs/files-backend.c' l='377' u='c' c='files_read_raw_ref'/>
+<use f='codebrowser/remote-curl.c' l='744' u='c' c='rpc_service'/>
+<use f='codebrowser/sequencer.c' l='1346' u='c' c='read_populate_todo'/>
+<use f='codebrowser/sha1_file.c' l='3576' u='c' c='index_pipe'/>
+<def f='codebrowser/strbuf.c' l='360' ll='385' type='ssize_t strbuf_read(struct strbuf * sb, int fd, size_t hint)'/>
+<use f='codebrowser/strbuf.c' l='594' u='c' c='strbuf_read_file'/>
+<use f='codebrowser/submodule.c' l='916' u='c' c='submodule_needs_pushing'/>
+<use f='codebrowser/submodule.c' l='1475' u='c' c='bad_to_remove_submodule'/>
+<use f='codebrowser/submodule.c' l='1983' u='c' c='get_superproject_working_tree'/>
+<use f='codebrowser/t/helper/test-string-list.c' l='105' u='c' c='cmd_main'/>
+<use f='codebrowser/trailer.c' l='725' u='c' c='read_input_file'/>

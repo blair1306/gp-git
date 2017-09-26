@@ -1,0 +1,31 @@
+<def f='codebrowser/lockfile.h' l='171' ll='176' type='int hold_lock_file_for_update(struct lock_file * lk, const char * path, int flags)'/>
+<use f='codebrowser/apply.c' l='4095' u='c' c='build_fake_ancestor'/>
+<use f='codebrowser/apply.c' l='4683' u='c' c='apply_patch'/>
+<doc f='codebrowser/lockfile.h' l='166'>/*
+ * Attempt to create a lockfile for the file at `path` and return a
+ * file descriptor for writing to it, or -1 on error. The flags
+ * argument and error handling are described above.
+ */</doc>
+<use f='codebrowser/builtin/commit.c' l='479' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/difftool.c' l='616' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/gc.c' l='252' u='c' c='lock_repo_for_gc'/>
+<use f='codebrowser/builtin/gc.c' l='441' u='c' c='cmd_gc'/>
+<use f='codebrowser/bundle.c' l='418' u='c' c='create_bundle'/>
+<use f='codebrowser/cache-tree.c' l='614' u='c' c='write_index_as_tree'/>
+<use f='codebrowser/config.c' l='2451' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/config.c' l='2758' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/credential-store.c' l='61' u='c' c='rewrite_credential_file'/>
+<use f='codebrowser/fast-import.c' l='1864' u='c' c='dump_marks'/>
+<use f='codebrowser/read-cache.c' l='1564' u='c' c='hold_locked_index'/>
+<use f='codebrowser/refs.c' l='594' u='c' c='write_pseudoref'/>
+<use f='codebrowser/refs.c' l='637' u='c' c='delete_pseudoref'/>
+<use f='codebrowser/refs/files-backend.c' l='540' u='c' c='lock_raw_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='868' u='c' c='create_reflock'/>
+<use f='codebrowser/refs/files-backend.c' l='2814' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/rerere.c' l='901' u='c' c='setup_rerere'/>
+<use f='codebrowser/sequencer.c' l='294' u='c' c='write_message'/>
+<use f='codebrowser/sequencer.c' l='1569' u='c' c='save_head'/>
+<use f='codebrowser/sequencer.c' l='1698' u='c' c='save_todo'/>
+<use f='codebrowser/sha1_file.c' l='496' u='c' c='add_to_alternates_file'/>
+<use f='codebrowser/shallow.c' l='320' u='c' c='setup_alternate_shallow'/>
+<use f='codebrowser/shallow.c' l='367' u='c' c='prune_shallow'/>

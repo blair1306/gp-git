@@ -1,0 +1,5 @@
+<dec f='codebrowser/grep.h' l='92' type='1'/>
+<use f='codebrowser/grep.c' l='722' u='r' c='compile_pattern_not'/>
+<use f='codebrowser/grep.c' l='828' c='dump_grep_expression_1'/>
+<use f='codebrowser/grep.c' l='997' c='free_pattern_expr'/>
+<use f='codebrowser/grep.c' l='1237' c='match_expr_eval'/>

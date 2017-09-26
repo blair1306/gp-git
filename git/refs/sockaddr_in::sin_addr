@@ -1,0 +1,8 @@
+<dec f='include/netinet/in.h' l='243' type='struct in_addr'/>
+<offset>32</offset>
+<doc f='include/netinet/in.h' l='243'>/* Internet address.  */</doc>
+<use f='codebrowser/daemon.c' l='626' u='a' c='lookup_hostname'/>
+<use f='codebrowser/daemon.c' l='753' u='a' c='addrcmp'/>
+<use f='codebrowser/daemon.c' l='754' u='a' c='addrcmp'/>
+<use f='codebrowser/daemon.c' l='851' u='a' c='handle'/>
+<use f='codebrowser/daemon.c' l='917' u='a' c='ip2str'/>

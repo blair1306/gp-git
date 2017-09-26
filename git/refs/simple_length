@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='212' type='int simple_length(const char * match)'/>
+<def f='codebrowser/dir.c' l='522' ll='532' type='int simple_length(const char * match)'/>
+<use f='codebrowser/dir.c' l='536' u='c' c='no_wildcard'/>
+<use f='codebrowser/dir.c' l='563' u='c' c='parse_exclude_pattern'/>
+<doc f='codebrowser/dir.c' l='519'>/*
+ * Return the length of the &quot;simple&quot; part of a path match limiter.
+ */</doc>
+<use f='codebrowser/pathspec.c' l='468' u='c' c='init_pathspec_item'/>

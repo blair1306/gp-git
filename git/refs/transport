@@ -1,0 +1,22 @@
+<def f='codebrowser/transport.h' l='32' ll='132'/>
+<size>136</size>
+<mbr r='transport::remote' o='0' t='struct remote *'/>
+<mbr r='transport::url' o='64' t='const char *'/>
+<mbr r='transport::data' o='128' t='void *'/>
+<mbr r='transport::remote_refs' o='192' t='const struct ref *'/>
+<mbr r='transport::got_remote_refs' o='256' t='unsigned int'/>
+<mbr r='transport::cannot_reuse' o='257' t='unsigned int'/>
+<mbr r='transport::cloning' o='258' t='unsigned int'/>
+<mbr r='transport::push_options' o='320' t='const struct string_list *'/>
+<mbr r='transport::set_option' o='384' t='int (*)(struct transport *, const char *, const char *)'/>
+<mbr r='transport::get_refs_list' o='448' t='struct ref *(*)(struct transport *, int)'/>
+<mbr r='transport::fetch' o='512' t='int (*)(struct transport *, int, struct ref **)'/>
+<mbr r='transport::push_refs' o='576' t='int (*)(struct transport *, struct ref *, int)'/>
+<mbr r='transport::push' o='640' t='int (*)(struct transport *, int, const char **, int)'/>
+<mbr r='transport::connect' o='704' t='int (*)(struct transport *, const char *, const char *, int *)'/>
+<mbr r='transport::disconnect' o='768' t='int (*)(struct transport *)'/>
+<mbr r='transport::pack_lockfile' o='832' t='char *'/>
+<mbr r='transport::verbose' o='896' t='int'/>
+<mbr r='transport::progress' o='899' t='unsigned int'/>
+<mbr r='transport::smart_options' o='960' t='struct git_transport_options *'/>
+<mbr r='transport::family' o='1024' t='enum transport_family'/>

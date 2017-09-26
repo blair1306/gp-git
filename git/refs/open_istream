@@ -1,0 +1,8 @@
+<dec f='codebrowser/streaming.h' l='11' type='struct git_istream * open_istream(const unsigned char * , enum object_type * , unsigned long * , struct stream_filter * )'/>
+<use f='codebrowser/archive-tar.c' l='122' u='c' c='stream_blocked'/>
+<use f='codebrowser/archive-zip.c' l='340' u='c' c='write_zip_entry'/>
+<use f='codebrowser/builtin/index-pack.c' l='773' u='c' c='check_collison'/>
+<use f='codebrowser/builtin/pack-objects.c' l='255' u='c' c='write_no_reuse_object'/>
+<use f='codebrowser/sha1_file.c' l='1649' u='c' c='check_sha1_signature'/>
+<def f='codebrowser/streaming.c' l='132' ll='164' type='struct git_istream * open_istream(const unsigned char * sha1, enum object_type * type, unsigned long * size, struct stream_filter * filter)'/>
+<use f='codebrowser/streaming.c' l='509' u='c' c='stream_blob_to_fd'/>

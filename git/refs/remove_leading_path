@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1133' type='const char * remove_leading_path(const char * in, const char * prefix)'/>
+<def f='codebrowser/path.c' l='1013' ll='1051' type='const char * remove_leading_path(const char * in, const char * prefix)'/>
+<doc f='codebrowser/path.c' l='1006'>/*
+ * A simpler implementation of relative_path
+ *
+ * Get relative path by removing &quot;prefix&quot; from &quot;in&quot;. This function
+ * first appears in v1.5.6-1-g044bbbc, and makes git_dir shorter
+ * to increase performance when traversing the path to work_tree.
+ */</doc>
+<use f='codebrowser/setup.c' l='407' u='c' c='setup_work_tree'/>

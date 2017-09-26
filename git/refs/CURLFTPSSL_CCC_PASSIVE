@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='760' type='1'/>
+<doc f='include/curl/curl.h' l='760'>/* Let the server initiate the shutdown */</doc>

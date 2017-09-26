@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>diffcore.h source code [codebrowser/diffcore.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="diff_filepair,diff_filespec,diff_queue_struct,obj_order "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/diffcore.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='diffcore.h.html'>diffcore.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2005 Junio C Hamano</i></td></tr>
+<tr><th id="3">3</th><td><i> */</i></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/DIFFCORE_H">DIFFCORE_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/DIFFCORE_H" data-ref="_M/DIFFCORE_H">DIFFCORE_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><i>/* This header file is internal between diff.c and its diff transformers</i></td></tr>
+<tr><th id="8">8</th><td><i> * (e.g. diffcore-rename, diffcore-pickaxe).  Never include this header</i></td></tr>
+<tr><th id="9">9</th><td><i> * in anything else.</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><i>/* We internally use unsigned short as the score value,</i></td></tr>
+<tr><th id="13">13</th><td><i> * and rely on an int capable to hold 32-bits.  -B can take</i></td></tr>
+<tr><th id="14">14</th><td><i> * -Bmerge_score/break_score format and the two scores are</i></td></tr>
+<tr><th id="15">15</th><td><i> * passed around in one int (high 16-bit for merge and low 16-bit</i></td></tr>
+<tr><th id="16">16</th><td><i> * for break).</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/MAX_SCORE" data-ref="_M/MAX_SCORE">MAX_SCORE</dfn> 60000.0</u></td></tr>
+<tr><th id="19">19</th><td><u>#define <dfn class="macro" id="_M/DEFAULT_RENAME_SCORE" data-ref="_M/DEFAULT_RENAME_SCORE">DEFAULT_RENAME_SCORE</dfn> 30000 /* rename/copy similarity minimum (50%) */</u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/DEFAULT_BREAK_SCORE" data-ref="_M/DEFAULT_BREAK_SCORE">DEFAULT_BREAK_SCORE</dfn>  30000 /* minimum for break to happen (50%) */</u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/DEFAULT_MERGE_SCORE" data-ref="_M/DEFAULT_MERGE_SCORE">DEFAULT_MERGE_SCORE</dfn>  36000 /* maximum for break-merge to happen (60%) */</u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/MINIMUM_BREAK_SIZE" data-ref="_M/MINIMUM_BREAK_SIZE">MINIMUM_BREAK_SIZE</dfn>     400 /* do not break a file smaller than this */</u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><b>struct</b> <a class="type" href="userdiff.h.html#userdiff_driver" title='userdiff_driver' data-ref="userdiff_driver" id="userdiff_driver">userdiff_driver</a>;</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><b>struct</b> <dfn class="type def" id="diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</dfn> {</td></tr>
+<tr><th id="28">28</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="diff_filespec::oid" title='diff_filespec::oid' data-ref="diff_filespec::oid">oid</dfn>;</td></tr>
+<tr><th id="29">29</th><td>	<em>char</em> *<dfn class="decl" id="diff_filespec::path" title='diff_filespec::path' data-ref="diff_filespec::path">path</dfn>;</td></tr>
+<tr><th id="30">30</th><td>	<em>void</em> *<dfn class="decl" id="diff_filespec::data" title='diff_filespec::data' data-ref="diff_filespec::data">data</dfn>;</td></tr>
+<tr><th id="31">31</th><td>	<em>void</em> *<dfn class="decl" id="diff_filespec::cnt_data" title='diff_filespec::cnt_data' data-ref="diff_filespec::cnt_data">cnt_data</dfn>;</td></tr>
+<tr><th id="32">32</th><td>	<em>unsigned</em> <em>long</em> <dfn class="decl" id="diff_filespec::size" title='diff_filespec::size' data-ref="diff_filespec::size">size</dfn>;</td></tr>
+<tr><th id="33">33</th><td>	<em>int</em> <dfn class="decl" id="diff_filespec::count" title='diff_filespec::count' data-ref="diff_filespec::count">count</dfn>;               <i>/* Reference count */</i></td></tr>
+<tr><th id="34">34</th><td>	<em>int</em> <dfn class="decl" id="diff_filespec::rename_used" title='diff_filespec::rename_used' data-ref="diff_filespec::rename_used">rename_used</dfn>;         <i>/* Count of rename users */</i></td></tr>
+<tr><th id="35">35</th><td>	<em>unsigned</em> <em>short</em> <dfn class="decl" id="diff_filespec::mode" title='diff_filespec::mode' data-ref="diff_filespec::mode">mode</dfn>;	 <i>/* file mode */</i></td></tr>
+<tr><th id="36">36</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filespec::oid_valid" title='diff_filespec::oid_valid' data-ref="diff_filespec::oid_valid">oid_valid</dfn> : <var>1</var>;  <i>/* if true, use oid and trust mode;</i></td></tr>
+<tr><th id="37">37</th><td><i>				  * if false, use the name and read from</i></td></tr>
+<tr><th id="38">38</th><td><i>				  * the filesystem.</i></td></tr>
+<tr><th id="39">39</th><td><i>				  */</i></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/DIFF_FILE_VALID" data-ref="_M/DIFF_FILE_VALID">DIFF_FILE_VALID</dfn>(spec) (((spec)-&gt;mode) != 0)</u></td></tr>
+<tr><th id="41">41</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filespec::should_free" title='diff_filespec::should_free' data-ref="diff_filespec::should_free">should_free</dfn> : <var>1</var>; <i>/* data should be free()'ed */</i></td></tr>
+<tr><th id="42">42</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filespec::should_munmap" title='diff_filespec::should_munmap' data-ref="diff_filespec::should_munmap">should_munmap</dfn> : <var>1</var>; <i>/* data should be munmap()'ed */</i></td></tr>
+<tr><th id="43">43</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filespec::dirty_submodule" title='diff_filespec::dirty_submodule' data-ref="diff_filespec::dirty_submodule">dirty_submodule</dfn> : <var>2</var>;  <i>/* For submodules: its work tree is dirty */</i></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/DIRTY_SUBMODULE_UNTRACKED" data-ref="_M/DIRTY_SUBMODULE_UNTRACKED">DIRTY_SUBMODULE_UNTRACKED</dfn> 1</u></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/DIRTY_SUBMODULE_MODIFIED" data-ref="_M/DIRTY_SUBMODULE_MODIFIED">DIRTY_SUBMODULE_MODIFIED</dfn>  2</u></td></tr>
+<tr><th id="46">46</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filespec::is_stdin" title='diff_filespec::is_stdin' data-ref="diff_filespec::is_stdin">is_stdin</dfn> : <var>1</var>;</td></tr>
+<tr><th id="47">47</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filespec::has_more_entries" title='diff_filespec::has_more_entries' data-ref="diff_filespec::has_more_entries">has_more_entries</dfn> : <var>1</var>; <i>/* only appear in combined diff */</i></td></tr>
+<tr><th id="48">48</th><td>	<i>/* data should be considered "binary"; -1 means "don't know yet" */</i></td></tr>
+<tr><th id="49">49</th><td>	<em>signed</em> <em>int</em> <dfn class="decl" id="diff_filespec::is_binary" title='diff_filespec::is_binary' data-ref="diff_filespec::is_binary">is_binary</dfn> : <var>2</var>;</td></tr>
+<tr><th id="50">50</th><td>	<b>struct</b> <a class="type" href="userdiff.h.html#userdiff_driver" title='userdiff_driver' data-ref="userdiff_driver">userdiff_driver</a> *<dfn class="decl" id="diff_filespec::driver" title='diff_filespec::driver' data-ref="diff_filespec::driver">driver</dfn>;</td></tr>
+<tr><th id="51">51</th><td>};</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><b>extern</b> <b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *<dfn class="decl" id="alloc_filespec" title='alloc_filespec' data-ref="alloc_filespec">alloc_filespec</dfn>(<em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="54">54</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="free_filespec" title='free_filespec' data-ref="free_filespec">free_filespec</dfn>(<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *);</td></tr>
+<tr><th id="55">55</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="fill_filespec" title='fill_filespec' data-ref="fill_filespec">fill_filespec</dfn>(<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *,</td></tr>
+<tr><th id="56">56</th><td>			  <em>int</em>, <em>unsigned</em> <em>short</em>);</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/CHECK_SIZE_ONLY" data-ref="_M/CHECK_SIZE_ONLY">CHECK_SIZE_ONLY</dfn> 1</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/CHECK_BINARY" data-ref="_M/CHECK_BINARY">CHECK_BINARY</dfn>    2</u></td></tr>
+<tr><th id="60">60</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diff_populate_filespec" title='diff_populate_filespec' data-ref="diff_populate_filespec">diff_populate_filespec</dfn>(<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="61">61</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_free_filespec_data" title='diff_free_filespec_data' data-ref="diff_free_filespec_data">diff_free_filespec_data</dfn>(<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *);</td></tr>
+<tr><th id="62">62</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_free_filespec_blob" title='diff_free_filespec_blob' data-ref="diff_free_filespec_blob">diff_free_filespec_blob</dfn>(<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *);</td></tr>
+<tr><th id="63">63</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diff_filespec_is_binary" title='diff_filespec_is_binary' data-ref="diff_filespec_is_binary">diff_filespec_is_binary</dfn>(<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *);</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><b>struct</b> <dfn class="type def" id="diff_filepair" title='diff_filepair' data-ref="diff_filepair">diff_filepair</dfn> {</td></tr>
+<tr><th id="66">66</th><td>	<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *<dfn class="decl" id="diff_filepair::one" title='diff_filepair::one' data-ref="diff_filepair::one">one</dfn>;</td></tr>
+<tr><th id="67">67</th><td>	<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *<dfn class="decl" id="diff_filepair::two" title='diff_filepair::two' data-ref="diff_filepair::two">two</dfn>;</td></tr>
+<tr><th id="68">68</th><td>	<em>unsigned</em> <em>short</em> <em>int</em> <dfn class="decl" id="diff_filepair::score" title='diff_filepair::score' data-ref="diff_filepair::score">score</dfn>;</td></tr>
+<tr><th id="69">69</th><td>	<em>char</em> <dfn class="decl" id="diff_filepair::status" title='diff_filepair::status' data-ref="diff_filepair::status">status</dfn>; <i>/* M C R A D U etc. (see Documentation/diff-format.txt or DIFF_STATUS_* in diff.h) */</i></td></tr>
+<tr><th id="70">70</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filepair::broken_pair" title='diff_filepair::broken_pair' data-ref="diff_filepair::broken_pair">broken_pair</dfn> : <var>1</var>;</td></tr>
+<tr><th id="71">71</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filepair::renamed_pair" title='diff_filepair::renamed_pair' data-ref="diff_filepair::renamed_pair">renamed_pair</dfn> : <var>1</var>;</td></tr>
+<tr><th id="72">72</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filepair::is_unmerged" title='diff_filepair::is_unmerged' data-ref="diff_filepair::is_unmerged">is_unmerged</dfn> : <var>1</var>;</td></tr>
+<tr><th id="73">73</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filepair::done_skip_stat_unmatch" title='diff_filepair::done_skip_stat_unmatch' data-ref="diff_filepair::done_skip_stat_unmatch">done_skip_stat_unmatch</dfn> : <var>1</var>;</td></tr>
+<tr><th id="74">74</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_filepair::skip_stat_unmatch_result" title='diff_filepair::skip_stat_unmatch_result' data-ref="diff_filepair::skip_stat_unmatch_result">skip_stat_unmatch_result</dfn> : <var>1</var>;</td></tr>
+<tr><th id="75">75</th><td>};</td></tr>
+<tr><th id="76">76</th><td><u>#define <dfn class="macro" id="_M/DIFF_PAIR_UNMERGED" data-ref="_M/DIFF_PAIR_UNMERGED">DIFF_PAIR_UNMERGED</dfn>(p) ((p)-&gt;is_unmerged)</u></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><u>#define <dfn class="macro" id="_M/DIFF_PAIR_RENAME" data-ref="_M/DIFF_PAIR_RENAME">DIFF_PAIR_RENAME</dfn>(p) ((p)-&gt;renamed_pair)</u></td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><u>#define <dfn class="macro" id="_M/DIFF_PAIR_BROKEN" data-ref="_M/DIFF_PAIR_BROKEN">DIFF_PAIR_BROKEN</dfn>(p) \</u></td></tr>
+<tr><th id="81">81</th><td><u>	( (!DIFF_FILE_VALID((p)-&gt;one) != !DIFF_FILE_VALID((p)-&gt;two)) &amp;&amp; \</u></td></tr>
+<tr><th id="82">82</th><td><u>	  ((p)-&gt;broken_pair != 0) )</u></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><u>#define <dfn class="macro" id="_M/DIFF_PAIR_TYPE_CHANGED" data-ref="_M/DIFF_PAIR_TYPE_CHANGED">DIFF_PAIR_TYPE_CHANGED</dfn>(p) \</u></td></tr>
+<tr><th id="85">85</th><td><u>	((S_IFMT &amp; (p)-&gt;one-&gt;mode) != (S_IFMT &amp; (p)-&gt;two-&gt;mode))</u></td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><u>#define <dfn class="macro" id="_M/DIFF_PAIR_MODE_CHANGED" data-ref="_M/DIFF_PAIR_MODE_CHANGED">DIFF_PAIR_MODE_CHANGED</dfn>(p) ((p)-&gt;one-&gt;mode != (p)-&gt;two-&gt;mode)</u></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_free_filepair" title='diff_free_filepair' data-ref="diff_free_filepair">diff_free_filepair</dfn>(<b>struct</b> <a class="type" href="#diff_filepair" title='diff_filepair' data-ref="diff_filepair">diff_filepair</a> *);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diff_unmodified_pair" title='diff_unmodified_pair' data-ref="diff_unmodified_pair">diff_unmodified_pair</dfn>(<b>struct</b> <a class="type" href="#diff_filepair" title='diff_filepair' data-ref="diff_filepair">diff_filepair</a> *);</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><b>struct</b> <dfn class="type def" id="diff_queue_struct" title='diff_queue_struct' data-ref="diff_queue_struct">diff_queue_struct</dfn> {</td></tr>
+<tr><th id="94">94</th><td>	<b>struct</b> <a class="type" href="#diff_filepair" title='diff_filepair' data-ref="diff_filepair">diff_filepair</a> **<dfn class="decl" id="diff_queue_struct::queue" title='diff_queue_struct::queue' data-ref="diff_queue_struct::queue">queue</dfn>;</td></tr>
+<tr><th id="95">95</th><td>	<em>int</em> <dfn class="decl" id="diff_queue_struct::alloc" title='diff_queue_struct::alloc' data-ref="diff_queue_struct::alloc">alloc</dfn>;</td></tr>
+<tr><th id="96">96</th><td>	<em>int</em> <dfn class="decl" id="diff_queue_struct::nr" title='diff_queue_struct::nr' data-ref="diff_queue_struct::nr">nr</dfn>;</td></tr>
+<tr><th id="97">97</th><td>};</td></tr>
+<tr><th id="98">98</th><td><u>#define <dfn class="macro" id="_M/DIFF_QUEUE_CLEAR" data-ref="_M/DIFF_QUEUE_CLEAR">DIFF_QUEUE_CLEAR</dfn>(q) \</u></td></tr>
+<tr><th id="99">99</th><td><u>	do { \</u></td></tr>
+<tr><th id="100">100</th><td><u>		(q)-&gt;queue = NULL; \</u></td></tr>
+<tr><th id="101">101</th><td><u>		(q)-&gt;nr = (q)-&gt;alloc = 0; \</u></td></tr>
+<tr><th id="102">102</th><td><u>	} while (0)</u></td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><b>extern</b> <b>struct</b> <a class="type" href="#diff_queue_struct" title='diff_queue_struct' data-ref="diff_queue_struct">diff_queue_struct</a> <dfn class="decl" id="diff_queued_diff" title='diff_queued_diff' data-ref="diff_queued_diff">diff_queued_diff</dfn>;</td></tr>
+<tr><th id="105">105</th><td><b>extern</b> <b>struct</b> <a class="type" href="#diff_filepair" title='diff_filepair' data-ref="diff_filepair">diff_filepair</a> *<dfn class="decl" id="diff_queue" title='diff_queue' data-ref="diff_queue">diff_queue</dfn>(<b>struct</b> <a class="type" href="#diff_queue_struct" title='diff_queue_struct' data-ref="diff_queue_struct">diff_queue_struct</a> *,</td></tr>
+<tr><th id="106">106</th><td>					<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *,</td></tr>
+<tr><th id="107">107</th><td>					<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *);</td></tr>
+<tr><th id="108">108</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_q" title='diff_q' data-ref="diff_q">diff_q</dfn>(<b>struct</b> <a class="type" href="#diff_queue_struct" title='diff_queue_struct' data-ref="diff_queue_struct">diff_queue_struct</a> *, <b>struct</b> <a class="type" href="#diff_filepair" title='diff_filepair' data-ref="diff_filepair">diff_filepair</a> *);</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diffcore_break" title='diffcore_break' data-ref="diffcore_break">diffcore_break</dfn>(<em>int</em>);</td></tr>
+<tr><th id="111">111</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diffcore_rename" title='diffcore_rename' data-ref="diffcore_rename">diffcore_rename</dfn>(<b>struct</b> <a class="type" href="diff.h.html#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="112">112</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diffcore_merge_broken" title='diffcore_merge_broken' data-ref="diffcore_merge_broken">diffcore_merge_broken</dfn>(<em>void</em>);</td></tr>
+<tr><th id="113">113</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diffcore_pickaxe" title='diffcore_pickaxe' data-ref="diffcore_pickaxe">diffcore_pickaxe</dfn>(<b>struct</b> <a class="type" href="diff.h.html#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="114">114</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diffcore_order" title='diffcore_order' data-ref="diffcore_order">diffcore_order</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="18orderfile" title='orderfile' data-type='const char *' data-ref="18orderfile">orderfile</dfn>);</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><i>/* low-level interface to diffcore_order */</i></td></tr>
+<tr><th id="117">117</th><td><b>struct</b> <dfn class="type def" id="obj_order" title='obj_order' data-ref="obj_order">obj_order</dfn> {</td></tr>
+<tr><th id="118">118</th><td>	<em>void</em> *<dfn class="decl" id="obj_order::obj" title='obj_order::obj' data-ref="obj_order::obj">obj</dfn>;	<i>/* setup by caller */</i></td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td>	<i>/* setup/used by order_objects() */</i></td></tr>
+<tr><th id="121">121</th><td>	<em>int</em> <dfn class="decl" id="obj_order::orig_order" title='obj_order::orig_order' data-ref="obj_order::orig_order">orig_order</dfn>;</td></tr>
+<tr><th id="122">122</th><td>	<em>int</em> <dfn class="decl" id="obj_order::order" title='obj_order::order' data-ref="obj_order::order">order</dfn>;</td></tr>
+<tr><th id="123">123</th><td>};</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><b>typedef</b> <em>const</em> <em>char</em> *(*<dfn class="typedef" id="obj_path_fn_t" title='obj_path_fn_t' data-type='const char *(*)(void *)' data-ref="obj_path_fn_t">obj_path_fn_t</dfn>)(<em>void</em> *<dfn class="local col9 decl" id="19obj" title='obj' data-type='void *' data-ref="19obj">obj</dfn>);</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><em>void</em> <dfn class="decl" id="order_objects" title='order_objects' data-ref="order_objects">order_objects</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="20orderfile" title='orderfile' data-type='const char *' data-ref="20orderfile">orderfile</dfn>, <a class="typedef" href="#obj_path_fn_t" title='obj_path_fn_t' data-type='const char *(*)(void *)' data-ref="obj_path_fn_t">obj_path_fn_t</a> <dfn class="local col1 decl" id="21obj_path" title='obj_path' data-type='obj_path_fn_t' data-ref="21obj_path">obj_path</dfn>,</td></tr>
+<tr><th id="128">128</th><td>		   <b>struct</b> <a class="type" href="#obj_order" title='obj_order' data-ref="obj_order">obj_order</a> *<dfn class="local col2 decl" id="22objs" title='objs' data-type='struct obj_order *' data-ref="22objs">objs</dfn>, <em>int</em> <dfn class="local col3 decl" id="23nr" title='nr' data-type='int' data-ref="23nr">nr</dfn>);</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><u>#define <dfn class="macro" id="_M/DIFF_DEBUG" data-ref="_M/DIFF_DEBUG">DIFF_DEBUG</dfn> 0</u></td></tr>
+<tr><th id="131">131</th><td><u>#<span data-ppcond="131">if</span> <a class="macro" href="#130" title="0" data-ref="_M/DIFF_DEBUG">DIFF_DEBUG</a></u></td></tr>
+<tr><th id="132">132</th><td><em>void</em> diff_debug_filespec(<b>struct</b> diff_filespec *, <em>int</em>, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="133">133</th><td><em>void</em> diff_debug_filepair(<em>const</em> <b>struct</b> diff_filepair *, <em>int</em>);</td></tr>
+<tr><th id="134">134</th><td><em>void</em> diff_debug_queue(<em>const</em> <em>char</em> *, <b>struct</b> diff_queue_struct *);</td></tr>
+<tr><th id="135">135</th><td><u>#<span data-ppcond="131">else</span></u></td></tr>
+<tr><th id="136">136</th><td><u>#define <dfn class="macro" id="_M/diff_debug_filespec" data-ref="_M/diff_debug_filespec">diff_debug_filespec</dfn>(a,b,c) do { /* nothing */ } while (0)</u></td></tr>
+<tr><th id="137">137</th><td><u>#define <dfn class="macro" id="_M/diff_debug_filepair" data-ref="_M/diff_debug_filepair">diff_debug_filepair</dfn>(a,b) do { /* nothing */ } while (0)</u></td></tr>
+<tr><th id="138">138</th><td><u>#define <dfn class="macro" id="_M/diff_debug_queue" data-ref="_M/diff_debug_queue">diff_debug_queue</dfn>(a,b) do { /* nothing */ } while (0)</u></td></tr>
+<tr><th id="139">139</th><td><u>#<span data-ppcond="131">endif</span></u></td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diffcore_count_changes" title='diffcore_count_changes' data-ref="diffcore_count_changes">diffcore_count_changes</dfn>(<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *<dfn class="local col4 decl" id="24src" title='src' data-type='struct diff_filespec *' data-ref="24src">src</dfn>,</td></tr>
+<tr><th id="142">142</th><td>				  <b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *<dfn class="local col5 decl" id="25dst" title='dst' data-type='struct diff_filespec *' data-ref="25dst">dst</dfn>,</td></tr>
+<tr><th id="143">143</th><td>				  <em>void</em> **<dfn class="local col6 decl" id="26src_count_p" title='src_count_p' data-type='void **' data-ref="26src_count_p">src_count_p</dfn>,</td></tr>
+<tr><th id="144">144</th><td>				  <em>void</em> **<dfn class="local col7 decl" id="27dst_count_p" title='dst_count_p' data-type='void **' data-ref="27dst_count_p">dst_count_p</dfn>,</td></tr>
+<tr><th id="145">145</th><td>				  <em>unsigned</em> <em>long</em> *<dfn class="local col8 decl" id="28src_copied" title='src_copied' data-type='unsigned long *' data-ref="28src_copied">src_copied</dfn>,</td></tr>
+<tr><th id="146">146</th><td>				  <em>unsigned</em> <em>long</em> *<dfn class="local col9 decl" id="29literal_added" title='literal_added' data-type='unsigned long *' data-ref="29literal_added">literal_added</dfn>);</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="149">149</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='blame.c.html'>codebrowser/blame.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

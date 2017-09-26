@@ -1,0 +1,4 @@
+<dec f='codebrowser/dir.c' l='1283' type='1'/>
+<use f='codebrowser/dir.c' l='1298' u='r' c='directory_exists_in_index_icase'/>
+<use f='codebrowser/dir.c' l='1335' u='r' c='directory_exists_in_index'/>
+<use f='codebrowser/dir.c' l='1383' c='treat_directory'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/archive.h' l='10' type='const unsigned char *'/>
+<use f='codebrowser/archive-tar.c' l='328' u='r' c='write_global_extended_header'/>
+<offset>192</offset>
+<use f='codebrowser/archive-zip.c' l='632' u='r' c='write_zip_archive'/>
+<use f='codebrowser/archive.c' l='390' u='w' c='parse_treeish_arg'/>

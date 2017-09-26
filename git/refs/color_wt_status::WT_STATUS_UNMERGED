@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='17' type='5'/>
+<use f='codebrowser/builtin/commit.c' l='1263' u='r' c='parse_status_slot'/>
+<use f='codebrowser/wt-status.c' l='312' u='r' c='wt_longstatus_print_unmerged_data'/>
+<use f='codebrowser/wt-status.c' l='1689' u='r' c='wt_shortstatus_unmerged'/>

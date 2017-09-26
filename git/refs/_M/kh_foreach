@@ -1,0 +1,8 @@
+<dec f='codebrowser/khash.h' l='298'/>
+<doc f='codebrowser/khash.h' l='291'>/*! @function
+  @abstract     Iterate over the entries in the hash table
+  @param  h     Pointer to the hash table [khash_t(name)*]
+  @param  kvar  Variable to which key will be assigned
+  @param  vvar  Variable to which value will be assigned
+  @param  code  Block of code to execute
+ */</doc>

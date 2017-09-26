@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='829' type='4'/>
+<use f='codebrowser/builtin/push.c' l='241' c='setup_default_push_refspecs'/>
+<use f='codebrowser/config.c' l='1312' u='r' c='git_default_push_config'/>
+<use f='codebrowser/remote.c' l='1756' c='branch_get_push_1'/>

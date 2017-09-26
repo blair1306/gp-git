@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='221'/>
+<doc f='codebrowser/cache.h' l='218'>/*
+ * Extended on-disk flags
+ */</doc>
+<use f='codebrowser/builtin/reset.c' l='141' u='c'/>
+<use f='codebrowser/read-cache.c' l='656' u='c'/>

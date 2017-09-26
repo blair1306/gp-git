@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/stat.h' l='94'/>
+<use f='codebrowser/builtin/pack-objects.c' l='856' u='c'/>
+<use f='codebrowser/copy.c' l='24' u='c'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='99' u='c'/>

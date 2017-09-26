@@ -1,0 +1,6 @@
+<dec f='codebrowser/notes.c' l='55' type='struct object_id'/>
+<use f='codebrowser/notes.c' l='379' u='m' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='405' u='a' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='405' u='a' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='752' u='a' c='write_each_non_note_until'/>
+<offset>160</offset>

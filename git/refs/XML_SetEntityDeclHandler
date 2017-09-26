@@ -1,0 +1,1 @@
+<dec f='include/expat.h' l='341' type='void XML_SetEntityDeclHandler(XML_Parser parser, XML_EntityDeclHandler handler)'/>

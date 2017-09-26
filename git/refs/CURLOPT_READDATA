@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='889' macro='1' type='10009'/>
+<use f='codebrowser/http-push.c' l='198' macro='1' u='r'/>
+<use f='codebrowser/imap-send.c' l='1459' u='r' c='curl_append_msgs_to_imap'/>
+<use f='codebrowser/remote-curl.c' l='607' macro='1' u='r'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/refs/packed-backend.h' l='15' type='int packed_refs_is_locked(struct ref_store * ref_store)'/>
+<def f='codebrowser/refs/packed-backend.c' l='582' ll='590' type='int packed_refs_is_locked(struct ref_store * ref_store)'/>

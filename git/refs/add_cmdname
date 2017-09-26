@@ -1,0 +1,5 @@
+<dec f='codebrowser/help.h' l='24' type='void add_cmdname(struct cmdnames * cmds, const char * name, int len)'/>
+<use f='codebrowser/builtin/merge.c' l='137' u='c' c='get_strategy'/>
+<def f='codebrowser/help.c' l='15' ll='23' type='void add_cmdname(struct cmdnames * cmds, const char * name, int len)'/>
+<use f='codebrowser/help.c' l='134' u='c' c='list_commands_in_dir'/>
+<use f='codebrowser/help.c' l='251' u='c' c='git_unknown_cmd_config'/>

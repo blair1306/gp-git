@@ -1,0 +1,10 @@
+<dec f='codebrowser/git-compat-util.h' l='96'/>
+<use f='codebrowser/git-compat-util.h' l='759' u='c'/>
+<use f='codebrowser/date.c' l='51' u='c'/>
+<use f='codebrowser/patch-delta.c' l='51' u='c'/>
+<use f='codebrowser/strbuf.c' l='61' u='c'/>
+<use f='codebrowser/strbuf.c' l='62' u='c'/>
+<use f='codebrowser/strbuf.c' l='167' u='c'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='174' u='c'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='197' u='c'/>
+<use f='codebrowser/wrapper.c' l='93' u='c'/>

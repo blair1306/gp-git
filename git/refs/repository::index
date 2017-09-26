@@ -1,0 +1,52 @@
+<dec f='codebrowser/repository.h' l='68' type='struct index_state *'/>
+<use f='codebrowser/builtin/grep.c' l='483' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='484' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='516' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<use f='codebrowser/builtin/grep.c' l='517' u='r' c='grep_cache'/>
+<offset>576</offset>
+<doc f='codebrowser/repository.h' l='64'>/*
+	 * Repository&apos;s in-memory index.
+	 * &apos;repo_read_index()&apos; can be used to populate &apos;index&apos;.
+	 */</doc>
+<use f='codebrowser/builtin/ls-files.c' l='245' u='r' c='show_ce'/>
+<use f='codebrowser/builtin/ls-files.c' l='305' u='r' c='show_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='307' u='r' c='show_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='309' u='r' c='show_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='312' u='r' c='show_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='313' u='r' c='show_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='318' u='r' c='show_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='331' u='r' c='show_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='332' u='r' c='show_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='339' u='r' c='show_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='348' u='r' c='show_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='642' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='663' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='669' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/repository.c' l='229' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='230' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='231' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='232' u='w' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='238' u='r' c='repo_read_index'/>
+<use f='codebrowser/repository.c' l='239' u='w' c='repo_read_index'/>
+<use f='codebrowser/repository.c' l='239' u='r' c='repo_read_index'/>
+<use f='codebrowser/repository.c' l='241' u='r' c='repo_read_index'/>
+<use f='codebrowser/submodule.c' l='249' u='r' c='repo_read_gitmodules'/>

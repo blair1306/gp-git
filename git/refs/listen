@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='233' type='int listen(int __fd, int __n)'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='230'>/* Prepare to accept connections on socket FD.
+   N connection requests will be queued before further requests are refused.
+   Returns 0 on success, -1 for errors.  */</doc>
+<use f='codebrowser/daemon.c' l='984' u='c' c='setup_named_sock'/>
+<use f='codebrowser/unix-socket.c' l='111' u='c' c='unix_stream_listen'/>

@@ -1,0 +1,46 @@
+<dec f='include/regex.h' l='454' type='regoff_t'/>
+<use f='codebrowser/git-compat-util.h' l='1043' u='w' c='regexec_buf'/>
+<offset>0</offset>
+<doc f='include/regex.h' l='454'>/* Byte offset from string&apos;s start to substring&apos;s start.  */</doc>
+<use f='codebrowser/apply.c' l='849' u='r' c='has_epoch_timestamp'/>
+<use f='codebrowser/apply.c' l='854' u='r' c='has_epoch_timestamp'/>
+<use f='codebrowser/diff.c' l='1016' u='r' c='find_word_boundaries'/>
+<use f='codebrowser/diff.c' l='1017' u='r' c='find_word_boundaries'/>
+<use f='codebrowser/diff.c' l='1019' u='r' c='find_word_boundaries'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='89' u='r' c='contains'/>
+<use f='codebrowser/grep.c' l='1087' u='w' c='fixmatch'/>
+<use f='codebrowser/grep.c' l='1090' u='w' c='fixmatch'/>
+<use f='codebrowser/grep.c' l='1091' u='r' c='fixmatch'/>
+<use f='codebrowser/grep.c' l='1174' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1175' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1186' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1187' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1195' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1198' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1205' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1216' u='w' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1295' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1297' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1298' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1298' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1300' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1300' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1303' u='w' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1303' u='r' c='match_next_pattern'/>
+<use f='codebrowser/grep.c' l='1314' u='w' c='next_match'/>
+<use f='codebrowser/grep.c' l='1386' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1389' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1390' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1391' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1554' u='r' c='look_ahead'/>
+<use f='codebrowser/grep.c' l='1556' u='r' c='look_ahead'/>
+<use f='codebrowser/grep.c' l='1557' u='r' c='look_ahead'/>
+<use f='codebrowser/http-backend.c' l='689' u='r' c='cmd_main'/>
+<use f='codebrowser/http-backend.c' l='690' u='r' c='cmd_main'/>
+<use f='codebrowser/http-backend.c' l='691' u='r' c='cmd_main'/>
+<use f='codebrowser/line-range.c' l='96' u='r' c='parse_loc'/>
+<use f='codebrowser/line-range.c' l='149' u='r' c='find_funcname_matching_regexp'/>
+<use f='codebrowser/t/helper/test-regex.c' l='33' u='r' c='test_regex_bug'/>
+<use f='codebrowser/xdiff-interface.c' l='241' u='r' c='ff_regexp'/>
+<use f='codebrowser/xdiff-interface.c' l='242' u='r' c='ff_regexp'/>
+<use f='codebrowser/xdiff-interface.c' l='243' u='r' c='ff_regexp'/>

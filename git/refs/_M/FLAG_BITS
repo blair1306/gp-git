@@ -1,0 +1,16 @@
+<dec f='codebrowser/object.h' l='43'/>
+<use f='codebrowser/object.h' l='51' u='c'/>
+<doc f='codebrowser/object.h' l='29'>/*
+ * object flag allocation:
+ * revision.h:      0---------10                                26
+ * fetch-pack.c:    0---5
+ * walker.c:        0-2
+ * upload-pack.c:       4       11----------------19
+ * builtin/blame.c:               12-13
+ * bisect.c:                               16
+ * bundle.c:                               16
+ * http-push.c:                            16-----19
+ * commit.c:                               16-----19
+ * sha1_name.c:                                     20
+ * builtin/fsck.c:  0--3
+ */</doc>

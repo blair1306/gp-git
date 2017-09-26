@@ -1,0 +1,18 @@
+<dec f='codebrowser/cache.h' l='1137' type='int longest_ancestor_length(const char * path, struct string_list * prefixes)'/>
+<def f='codebrowser/path.c' l='1183' ll='1206' type='int longest_ancestor_length(const char * path, struct string_list * prefixes)'/>
+<doc f='codebrowser/path.c' l='1169'>/*
+ * path = Canonical absolute path
+ * prefixes = string_list containing normalized, absolute paths without
+ * trailing slashes (except for the root directory, which is denoted by &quot;/&quot;).
+ *
+ * Determines, for each path in prefixes, whether the &quot;prefix&quot;
+ * is an ancestor directory of path.  Returns the length of the longest
+ * ancestor directory, excluding any trailing slashes, or -1 if no prefix
+ * is an ancestor.  (Note that this means 0 is returned if prefixes is
+ * [&quot;/&quot;].) &quot;/foo&quot; is not considered an ancestor of &quot;/foobar&quot;.  Directories
+ * are not considered to be their own ancestors.  path must be in a
+ * canonical form: empty components, or &quot;.&quot; or &quot;..&quot; components are not
+ * allowed.
+ */</doc>
+<use f='codebrowser/setup.c' l='913' u='c' c='setup_git_directory_gently_1'/>
+<use f='codebrowser/t/helper/test-path-utils.c' l='222' u='c' c='cmd_main'/>

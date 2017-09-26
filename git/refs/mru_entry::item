@@ -1,0 +1,5 @@
+<dec f='codebrowser/mru.h' l='33' type='void *'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1015' u='r' c='want_object_in_pack'/>
+<offset>0</offset>
+<use f='codebrowser/mru.c' l='7' u='w' c='mru_append'/>
+<use f='codebrowser/sha1_file.c' l='2879' u='r' c='find_pack_entry'/>

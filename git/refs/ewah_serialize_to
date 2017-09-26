@@ -1,0 +1,5 @@
+<dec f='codebrowser/ewah/ewok.h' l='87' type='int ewah_serialize_to(struct ewah_bitmap * self, int (*)(void *, const void *, size_t) write_fun, void * out)'/>
+<def f='codebrowser/ewah/ewah_io.c' l='50' ll='102' type='int ewah_serialize_to(struct ewah_bitmap * self, int (*)(void *, const void *, size_t) write_fun, void * data)'/>
+<use f='codebrowser/ewah/ewah_io.c' l='111' u='c' c='ewah_serialize'/>
+<use f='codebrowser/ewah/ewah_io.c' l='123' u='c' c='ewah_serialize_strbuf'/>
+<use f='codebrowser/pack-bitmap-write.c' l='457' u='c' c='dump_bitmap'/>

@@ -1,0 +1,20 @@
+<def f='codebrowser/graph.c' l='125' ll='229'/>
+<size>104</size>
+<mbr r='git_graph::commit' o='0' t='struct commit *'/>
+<mbr r='git_graph::revs' o='64' t='struct rev_info *'/>
+<mbr r='git_graph::num_parents' o='128' t='int'/>
+<mbr r='git_graph::width' o='160' t='int'/>
+<mbr r='git_graph::expansion_row' o='192' t='int'/>
+<mbr r='git_graph::state' o='224' t='enum graph_state'/>
+<mbr r='git_graph::prev_state' o='256' t='enum graph_state'/>
+<mbr r='git_graph::commit_index' o='288' t='int'/>
+<mbr r='git_graph::prev_commit_index' o='320' t='int'/>
+<mbr r='git_graph::column_capacity' o='352' t='int'/>
+<mbr r='git_graph::num_columns' o='384' t='int'/>
+<mbr r='git_graph::num_new_columns' o='416' t='int'/>
+<mbr r='git_graph::mapping_size' o='448' t='int'/>
+<mbr r='git_graph::columns' o='512' t='struct column *'/>
+<mbr r='git_graph::new_columns' o='576' t='struct column *'/>
+<mbr r='git_graph::mapping' o='640' t='int *'/>
+<mbr r='git_graph::new_mapping' o='704' t='int *'/>
+<mbr r='git_graph::default_column_color' o='768' t='unsigned short'/>

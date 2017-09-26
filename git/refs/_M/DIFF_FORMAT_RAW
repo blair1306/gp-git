@@ -1,0 +1,15 @@
+<dec f='codebrowser/diff.h' l='43'/>
+<use f='codebrowser/bisect.c' l='894' u='c'/>
+<use f='codebrowser/builtin/diff-files.c' l='48' u='c'/>
+<use f='codebrowser/builtin/diff-index.c' l='40' u='c'/>
+<use f='codebrowser/builtin/diff-tree.c' l='96' u='c'/>
+<use f='codebrowser/builtin/log.c' l='463' u='c'/>
+<use f='codebrowser/combine-diff.c' l='1193' u='c'/>
+<use f='codebrowser/combine-diff.c' l='1212' u='c'/>
+<use f='codebrowser/combine-diff.c' l='1234' u='c'/>
+<use f='codebrowser/combine-diff.c' l='1499' u='c'/>
+<use f='codebrowser/diff.c' l='3449' u='c'/>
+<use f='codebrowser/diff.c' l='3798' u='c'/>
+<use f='codebrowser/diff.c' l='3801' u='c'/>
+<use f='codebrowser/diff.c' l='4452' u='c'/>
+<use f='codebrowser/diff.c' l='4743' u='c'/>

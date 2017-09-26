@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='201' type='int cmd_pull(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/pull.c' l='807' ll='936' type='int cmd_pull(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='442'/>
+<use f='codebrowser/git.c' l='442'/>
+<use f='codebrowser/git.c' l='442'/>
+<use f='codebrowser/git.c' l='442'/>

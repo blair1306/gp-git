@@ -1,0 +1,5 @@
+<dec f='codebrowser/fsck.h' l='35' type='unsigned int'/>
+<use f='codebrowser/builtin/fsck.c' l='675' u='w' c='cmd_fsck'/>
+<offset>128</offset>
+<use f='codebrowser/fsck.c' l='126' u='r' c='fsck_msg_type'/>
+<use f='codebrowser/fsck.c' l='589' u='r' c='fsck_tree'/>

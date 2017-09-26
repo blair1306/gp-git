@@ -1,0 +1,20 @@
+<def f='codebrowser/hashmap.h' l='178' ll='201'/>
+<size>48</size>
+<doc f='codebrowser/hashmap.h' l='174'>/*
+ * struct hashmap is the hash table structure. Members can be used as follows,
+ * but should not be modified directly.
+ */</doc>
+<mbr r='hashmap::table' o='0' t='struct hashmap_entry **'/>
+<mbr r='hashmap::cmpfn' o='64' t='hashmap_cmp_fn'/>
+<mbr r='hashmap::cmpfn_data' o='128' t='const void *'/>
+<mbr r='hashmap::size' o='192' t='unsigned int'/>
+<mbr r='hashmap::tablesize' o='224' t='unsigned int'/>
+<mbr r='hashmap::grow_at' o='256' t='unsigned int'/>
+<mbr r='hashmap::shrink_at' o='288' t='unsigned int'/>
+<mbr r='hashmap::disallow_rehash' o='320' t='unsigned int'/>
+<def f='codebrowser/xdiff/xpatience.c' l='49' ll='71'/>
+<size>72</size>
+<doc f='codebrowser/xdiff/xpatience.c' l='45'>/*
+ * This is a hash mapping from line hash to line numbers in the first and
+ * second file.
+ */</doc>

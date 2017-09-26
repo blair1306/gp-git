@@ -1,0 +1,2 @@
+<dec f='codebrowser/ewah/ewok.h' l='222' type='void bitmap_each_bit(struct bitmap * self, ewah_callback callback, void * data)'/>
+<def f='codebrowser/ewah/bitmap.c' l='141' ll='163' type='void bitmap_each_bit(struct bitmap * self, ewah_callback callback, void * data)'/>

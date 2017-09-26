@@ -1,0 +1,5 @@
+<def f='codebrowser/cache.h' l='1407' ll='1421'/>
+<size>24</size>
+<mbr r='date_mode::type' o='0' t='enum date_mode_type'/>
+<mbr r='date_mode::strftime_fmt' o='64' t='const char *'/>
+<mbr r='date_mode::local' o='128' t='int'/>

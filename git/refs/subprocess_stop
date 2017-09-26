@@ -1,0 +1,5 @@
+<dec f='codebrowser/sub-process.h' l='61' type='void subprocess_stop(struct hashmap * hashmap, struct subprocess_entry * entry)'/>
+<use f='codebrowser/convert.c' l='547' u='c' c='handle_filter_error'/>
+<doc f='codebrowser/sub-process.h' l='60'>/* Kill a subprocess and remove it from the subprocess hashmap. */</doc>
+<def f='codebrowser/sub-process.c' l='52' ll='62' type='void subprocess_stop(struct hashmap * hashmap, struct subprocess_entry * entry)'/>
+<use f='codebrowser/sub-process.c' l='104' u='c' c='subprocess_start'/>

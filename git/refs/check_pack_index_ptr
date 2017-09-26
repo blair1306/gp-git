@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1696' type='void check_pack_index_ptr(const struct packed_git * p, const void * ptr)'/>
+<doc f='codebrowser/cache.h' l='1688'>/*
+ * Make sure that a pointer access into an mmap&apos;d index file is within bounds,
+ * and can provide at least 8 bytes of data.
+ *
+ * Note that this is only necessary for variable-length segments of the file
+ * (like the 64-bit extended offset table), as we compare the size to the
+ * fixed-length parts when we open the file.
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='1532' u='c' c='read_v2_anomalous_offsets'/>
+<def f='codebrowser/sha1_file.c' l='2728' ll='2740' type='void check_pack_index_ptr(const struct packed_git * p, const void * vptr)'/>
+<use f='codebrowser/sha1_file.c' l='2755' u='c' c='nth_packed_object_offset'/>

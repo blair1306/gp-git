@@ -1,0 +1,3 @@
+<dec f='include/expat.h' l='547' type='void XML_SetCharacterDataHandler(XML_Parser parser, XML_CharacterDataHandler handler)'/>
+<use f='codebrowser/http-push.c' l='906' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='1158' u='c' c='remote_ls'/>

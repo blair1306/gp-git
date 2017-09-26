@@ -1,0 +1,4 @@
+<dec f='codebrowser/connect.c' l='257' type='2'/>
+<use f='codebrowser/connect.c' l='274' c='prot_name'/>
+<use f='codebrowser/connect.c' l='296' u='r' c='get_protocol'/>
+<use f='codebrowser/connect.c' l='655' u='r' c='parse_connect_url'/>

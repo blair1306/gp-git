@@ -1,0 +1,10 @@
+<dec f='codebrowser/diff.h' l='237' type='void show_combined_diff(struct combine_diff_path * elem, int num_parent, int dense, struct rev_info * )'/>
+<def f='codebrowser/combine-diff.c' l='1227' ll='1240' type='void show_combined_diff(struct combine_diff_path * p, int num_parent, int dense, struct rev_info * rev)'/>
+<doc f='codebrowser/combine-diff.c' l='1221'>/*
+ * The result (p-&gt;elem) is from the working tree and their
+ * parents are typically from multiple stages during a merge
+ * (i.e. diff-files) or the state in HEAD and in the index
+ * (i.e. diff-index).
+ */</doc>
+<use f='codebrowser/diff-lib.c' l='176' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='358' u='c' c='show_modified'/>

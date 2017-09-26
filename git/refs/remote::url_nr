@@ -1,0 +1,19 @@
+<dec f='codebrowser/remote.h' l='23' type='int'/>
+<offset>384</offset>
+<use f='codebrowser/builtin/ls-remote.c' l='87' u='r' c='cmd_ls_remote'/>
+<use f='codebrowser/builtin/push.c' l='122' u='r' c='push_url_of_remote'/>
+<use f='codebrowser/builtin/remote.c' l='584' u='r' c='migrate_file'/>
+<use f='codebrowser/builtin/remote.c' l='862' u='r' c='get_remote_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='1062' u='r' c='get_one_entry'/>
+<use f='codebrowser/builtin/remote.c' l='1073' u='r' c='get_one_entry'/>
+<use f='codebrowser/builtin/remote.c' l='1145' u='r' c='show'/>
+<use f='codebrowser/builtin/remote.c' l='1152' u='r' c='show'/>
+<use f='codebrowser/builtin/remote.c' l='1299' u='r' c='prune_remote'/>
+<use f='codebrowser/builtin/remote.c' l='1491' u='r' c='get_url'/>
+<use f='codebrowser/builtin/remote.c' l='1556' u='r' c='set_url'/>
+<use f='codebrowser/remote.c' l='108' u='r' c='add_url'/>
+<use f='codebrowser/remote.c' l='108' u='r' c='add_url'/>
+<use f='codebrowser/remote.c' l='108' u='r' c='add_url'/>
+<use f='codebrowser/remote.c' l='109' u='w' c='add_url'/>
+<use f='codebrowser/remote.c' l='458' u='r' c='alias_all_urls'/>
+<use f='codebrowser/remote.c' l='811' u='r' c='remote_has_url'/>

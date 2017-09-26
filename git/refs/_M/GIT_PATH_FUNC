@@ -1,0 +1,52 @@
+<dec f='codebrowser/path.h' l='63'/>
+<doc f='codebrowser/path.h' l='56'>/*
+ * You can define a static memoized git path like:
+ *
+ *    static GIT_PATH_FUNC(git_path_foo, &quot;FOO&quot;);
+ *
+ * or use one of the global ones below.
+ */</doc>
+<use f='codebrowser/attr.c' l='845' u='c'/>
+<use f='codebrowser/bisect.c' l='434' u='c'/>
+<use f='codebrowser/bisect.c' l='435' u='c'/>
+<use f='codebrowser/bisect.c' l='436' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='514' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='96' u='c'/>
+<use f='codebrowser/dir.c' l='2320' u='c'/>
+<use f='codebrowser/path.c' l='1359' u='c'/>
+<use f='codebrowser/path.c' l='1360' u='c'/>
+<use f='codebrowser/path.c' l='1361' u='c'/>
+<use f='codebrowser/path.c' l='1362' u='c'/>
+<use f='codebrowser/path.c' l='1363' u='c'/>
+<use f='codebrowser/path.c' l='1364' u='c'/>
+<use f='codebrowser/path.c' l='1365' u='c'/>
+<use f='codebrowser/path.c' l='1366' u='c'/>
+<use f='codebrowser/path.c' l='1367' u='c'/>
+<use f='codebrowser/rerere.c' l='870' u='c'/>
+<use f='codebrowser/sequencer.c' l='29' u='c'/>
+<use f='codebrowser/sequencer.c' l='31' u='c'/>
+<use f='codebrowser/sequencer.c' l='32' u='c'/>
+<use f='codebrowser/sequencer.c' l='33' u='c'/>
+<use f='codebrowser/sequencer.c' l='34' u='c'/>
+<use f='codebrowser/sequencer.c' l='36' u='c'/>
+<use f='codebrowser/sequencer.c' l='43' u='c'/>
+<use f='codebrowser/sequencer.c' l='49' u='c'/>
+<use f='codebrowser/sequencer.c' l='54' u='c'/>
+<use f='codebrowser/sequencer.c' l='59' u='c'/>
+<use f='codebrowser/sequencer.c' l='64' u='c'/>
+<use f='codebrowser/sequencer.c' l='80' u='c'/>
+<use f='codebrowser/sequencer.c' l='88' u='c'/>
+<use f='codebrowser/sequencer.c' l='94' u='c'/>
+<use f='codebrowser/sequencer.c' l='103' u='c'/>
+<use f='codebrowser/sequencer.c' l='108' u='c'/>
+<use f='codebrowser/sequencer.c' l='115' u='c'/>
+<use f='codebrowser/sequencer.c' l='116' u='c'/>
+<use f='codebrowser/sequencer.c' l='122' u='c'/>
+<use f='codebrowser/sequencer.c' l='123' u='c'/>
+<use f='codebrowser/sequencer.c' l='124' u='c'/>
+<use f='codebrowser/sequencer.c' l='125' u='c'/>
+<use f='codebrowser/sequencer.c' l='126' u='c'/>
+<use f='codebrowser/sequencer.c' l='127' u='c'/>
+<use f='codebrowser/sequencer.c' l='128' u='c'/>
+<use f='codebrowser/sequencer.c' l='129' u='c'/>
+<use f='codebrowser/sequencer.c' l='130' u='c'/>

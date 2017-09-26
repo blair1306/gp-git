@@ -1,0 +1,11 @@
+<dec f='codebrowser/convert.h' l='54' type='struct string_list'/>
+<offset>64</offset>
+<doc f='codebrowser/convert.h' l='53'>/* List of filter drivers that signaled delayed blobs. */</doc>
+<use f='codebrowser/convert.c' l='637' u='a' c='apply_multi_file_filter'/>
+<use f='codebrowser/entry.c' l='145' u='a' c='enable_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='171' u='m' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='172' u='a' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='172' u='a' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='172' u='a' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='222' u='a' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='224' u='a' c='finish_delayed_checkout'/>

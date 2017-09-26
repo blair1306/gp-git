@@ -1,0 +1,12 @@
+<dec f='codebrowser/object.h' l='67' type='struct object * get_indexed_object(unsigned int )'/>
+<doc f='codebrowser/object.h' l='64'>/*
+ * Return the object from the specified bucket in the object hashmap.
+ */</doc>
+<use f='codebrowser/builtin/fsck.c' l='320' u='c' c='check_connectivity'/>
+<use f='codebrowser/builtin/index-pack.c' l='244' u='c' c='check_objects'/>
+<use f='codebrowser/builtin/name-rev.c' l='484' u='c' c='cmd_name_rev'/>
+<def f='codebrowser/object.c' l='16' ll='19' type='struct object * get_indexed_object(unsigned int idx)'/>
+<use f='codebrowser/shallow.c' l='527' u='c' c='paint_down'/>
+<use f='codebrowser/shallow.c' l='585' u='c' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/upload-pack.c' l='498' u='c' c='do_reachable_revlist'/>
+<use f='codebrowser/upload-pack.c' l='562' u='c' c='get_reachable_list'/>

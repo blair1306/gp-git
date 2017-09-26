@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1155' type='char * xdg_config_home(const char * filename)'/>
+<doc f='codebrowser/cache.h' l='1150'>/**
+ * Return a newly allocated string with the evaluation of
+ * &quot;$XDG_CONFIG_HOME/git/$filename&quot; if $XDG_CONFIG_HOME is non-empty, otherwise
+ * &quot;$HOME/.config/git/$filename&quot;. Return NULL upon error.
+ */</doc>
+<use f='codebrowser/attr.c' l='835' u='c' c='get_home_gitattributes'/>
+<use f='codebrowser/builtin/commit.c' l='1416' u='c' c='implicit_ident_advice'/>
+<use f='codebrowser/builtin/config.c' l='509' u='c' c='cmd_config'/>
+<use f='codebrowser/config.c' l='1546' u='c' c='do_git_config_sequence'/>
+<use f='codebrowser/credential-store.c' l='173' u='c' c='cmd_main'/>
+<use f='codebrowser/dir.c' l='2328' u='c' c='setup_standard_excludes'/>
+<def f='codebrowser/path.c' l='1329' ll='1342' type='char * xdg_config_home(const char * filename)'/>

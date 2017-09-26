@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>csum-file.h source code [codebrowser/csum-file.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="sha1file,sha1file_checkpoint "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/csum-file.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='csum-file.h.html'>csum-file.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/CSUM_FILE_H">CSUM_FILE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/CSUM_FILE_H" data-ref="_M/CSUM_FILE_H">CSUM_FILE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type" id="progress" title='progress' data-ref="progress">progress</dfn>;</td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/* A SHA1-protected file */</i></td></tr>
+<tr><th id="7">7</th><td><b>struct</b> <dfn class="type def" id="sha1file" title='sha1file' data-ref="sha1file">sha1file</dfn> {</td></tr>
+<tr><th id="8">8</th><td>	<em>int</em> <dfn class="decl" id="sha1file::fd" title='sha1file::fd' data-ref="sha1file::fd">fd</dfn>;</td></tr>
+<tr><th id="9">9</th><td>	<em>int</em> <dfn class="decl" id="sha1file::check_fd" title='sha1file::check_fd' data-ref="sha1file::check_fd">check_fd</dfn>;</td></tr>
+<tr><th id="10">10</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="sha1file::offset" title='sha1file::offset' data-ref="sha1file::offset">offset</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	<a class="macro" href="cache.h.html#31" title="SHA1_CTX" data-ref="_M/git_SHA_CTX">git_SHA_CTX</a> <dfn class="decl" id="sha1file::ctx" title='sha1file::ctx' data-ref="sha1file::ctx">ctx</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="decl" id="sha1file::total" title='sha1file::total' data-ref="sha1file::total">total</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<b>struct</b> <a class="type" href="#progress" title='progress' data-ref="progress">progress</a> *<dfn class="decl" id="sha1file::tp" title='sha1file::tp' data-ref="sha1file::tp">tp</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="sha1file::name" title='sha1file::name' data-ref="sha1file::name">name</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<em>int</em> <dfn class="decl" id="sha1file::do_crc" title='sha1file::do_crc' data-ref="sha1file::do_crc">do_crc</dfn>;</td></tr>
+<tr><th id="16">16</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="sha1file::crc32" title='sha1file::crc32' data-ref="sha1file::crc32">crc32</dfn>;</td></tr>
+<tr><th id="17">17</th><td>	<em>unsigned</em> <em>char</em> <dfn class="decl" id="sha1file::buffer" title='sha1file::buffer' data-ref="sha1file::buffer">buffer</dfn>[<var>8192</var>];</td></tr>
+<tr><th id="18">18</th><td>};</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/* Checkpoint */</i></td></tr>
+<tr><th id="21">21</th><td><b>struct</b> <dfn class="type def" id="sha1file_checkpoint" title='sha1file_checkpoint' data-ref="sha1file_checkpoint">sha1file_checkpoint</dfn> {</td></tr>
+<tr><th id="22">22</th><td>	<a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="decl" id="sha1file_checkpoint::offset" title='sha1file_checkpoint::offset' data-ref="sha1file_checkpoint::offset">offset</dfn>;</td></tr>
+<tr><th id="23">23</th><td>	<a class="macro" href="cache.h.html#31" title="SHA1_CTX" data-ref="_M/git_SHA_CTX">git_SHA_CTX</a> <dfn class="decl" id="sha1file_checkpoint::ctx" title='sha1file_checkpoint::ctx' data-ref="sha1file_checkpoint::ctx">ctx</dfn>;</td></tr>
+<tr><th id="24">24</th><td>};</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="sha1file_checkpoint" title='sha1file_checkpoint' data-ref="sha1file_checkpoint">sha1file_checkpoint</dfn>(<b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *, <b>struct</b> <a class="type" href="#sha1file_checkpoint" title='sha1file_checkpoint' data-ref="sha1file_checkpoint">sha1file_checkpoint</a> *);</td></tr>
+<tr><th id="27">27</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="sha1file_truncate" title='sha1file_truncate' data-ref="sha1file_truncate">sha1file_truncate</dfn>(<b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *, <b>struct</b> <a class="type" href="#sha1file_checkpoint" title='sha1file_checkpoint' data-ref="sha1file_checkpoint">sha1file_checkpoint</a> *);</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><i>/* sha1close flags */</i></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/CSUM_CLOSE" data-ref="_M/CSUM_CLOSE">CSUM_CLOSE</dfn>	1</u></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/CSUM_FSYNC" data-ref="_M/CSUM_FSYNC">CSUM_FSYNC</dfn>	2</u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>extern</b> <b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *<dfn class="decl" id="sha1fd" title='sha1fd' data-ref="sha1fd">sha1fd</dfn>(<em>int</em> <dfn class="local col1 decl" id="1fd" title='fd' data-type='int' data-ref="1fd">fd</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2name" title='name' data-type='const char *' data-ref="2name">name</dfn>);</td></tr>
+<tr><th id="34">34</th><td><b>extern</b> <b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *<dfn class="decl" id="sha1fd_check" title='sha1fd_check' data-ref="sha1fd_check">sha1fd_check</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3name" title='name' data-type='const char *' data-ref="3name">name</dfn>);</td></tr>
+<tr><th id="35">35</th><td><b>extern</b> <b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *<dfn class="decl" id="sha1fd_throughput" title='sha1fd_throughput' data-ref="sha1fd_throughput">sha1fd_throughput</dfn>(<em>int</em> <dfn class="local col4 decl" id="4fd" title='fd' data-type='int' data-ref="4fd">fd</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5name" title='name' data-type='const char *' data-ref="5name">name</dfn>, <b>struct</b> <a class="type" href="#progress" title='progress' data-ref="progress">progress</a> *<dfn class="local col6 decl" id="6tp" title='tp' data-type='struct progress *' data-ref="6tp">tp</dfn>);</td></tr>
+<tr><th id="36">36</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="sha1close" title='sha1close' data-ref="sha1close">sha1close</dfn>(<b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *, <em>unsigned</em> <em>char</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="37">37</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="sha1write" title='sha1write' data-ref="sha1write">sha1write</dfn>(<b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *, <em>const</em> <em>void</em> *, <em>unsigned</em> <em>int</em>);</td></tr>
+<tr><th id="38">38</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="sha1flush" title='sha1flush' data-ref="sha1flush">sha1flush</dfn>(<b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *<dfn class="local col7 decl" id="7f" title='f' data-type='struct sha1file *' data-ref="7f">f</dfn>);</td></tr>
+<tr><th id="39">39</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="crc32_begin" title='crc32_begin' data-ref="crc32_begin">crc32_begin</dfn>(<b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *);</td></tr>
+<tr><th id="40">40</th><td><b>extern</b> <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="crc32_end" title='crc32_end' data-ref="crc32_end">crc32_end</dfn>(<b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *);</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="sha1write_u8" title='sha1write_u8' data-ref="sha1write_u8">sha1write_u8</dfn>(<b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *<dfn class="local col8 decl" id="8f" title='f' data-type='struct sha1file *' data-ref="8f">f</dfn>, <a class="typedef" href="../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> <dfn class="local col9 decl" id="9data" title='data' data-type='uint8_t' data-ref="9data">data</dfn>)</td></tr>
+<tr><th id="43">43</th><td>{</td></tr>
+<tr><th id="44">44</th><td>	<a class="ref" href="#sha1write" title='sha1write' data-ref="sha1write">sha1write</a>(<a class="local col8 ref" href="#8f" title='f' data-ref="8f">f</a>, &amp;<a class="local col9 ref" href="#9data" title='data' data-ref="9data">data</a>, <b>sizeof</b>(<a class="local col9 ref" href="#9data" title='data' data-ref="9data">data</a>));</td></tr>
+<tr><th id="45">45</th><td>}</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="sha1write_be32" title='sha1write_be32' data-ref="sha1write_be32">sha1write_be32</dfn>(<b>struct</b> <a class="type" href="#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *<dfn class="local col0 decl" id="10f" title='f' data-type='struct sha1file *' data-ref="10f">f</dfn>, <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col1 decl" id="11data" title='data' data-type='uint32_t' data-ref="11data">data</dfn>)</td></tr>
+<tr><th id="48">48</th><td>{</td></tr>
+<tr><th id="49">49</th><td>	<a class="local col1 ref" href="#11data" title='data' data-ref="11data">data</a> = <a class="macro" href="compat/bswap.h.html#88" title="git_bswap32(data)" data-ref="_M/htonl">htonl</a>(<a class="local col1 ref" href="#11data" title='data' data-ref="11data">data</a>);</td></tr>
+<tr><th id="50">50</th><td>	<a class="ref" href="#sha1write" title='sha1write' data-ref="sha1write">sha1write</a>(<a class="local col0 ref" href="#10f" title='f' data-ref="10f">f</a>, &amp;<a class="local col1 ref" href="#11data" title='data' data-ref="11data">data</a>, <b>sizeof</b>(<a class="local col1 ref" href="#11data" title='data' data-ref="11data">data</a>));</td></tr>
+<tr><th id="51">51</th><td>}</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/fsck.c.html'>codebrowser/builtin/fsck.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

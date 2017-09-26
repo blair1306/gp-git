@@ -1,0 +1,23 @@
+<dec f='codebrowser/diff.h' l='282' type='void diff_setup_done(struct diff_options * )'/>
+<use f='codebrowser/blame.c' l='553' u='c' c='find_origin'/>
+<use f='codebrowser/blame.c' l='622' u='c' c='find_rename'/>
+<use f='codebrowser/blame.c' l='1244' u='c' c='find_copy_in_parent'/>
+<use f='codebrowser/builtin/am.c' l='1408' u='c' c='write_commit_patch'/>
+<use f='codebrowser/builtin/am.c' l='1438' u='c' c='write_index_patch'/>
+<use f='codebrowser/builtin/am.c' l='1590' u='c' c='fall_back_threeway'/>
+<use f='codebrowser/builtin/checkout.c' l='397' u='c' c='show_local_changes'/>
+<use f='codebrowser/builtin/commit.c' l='1486' u='c' c='print_summary'/>
+<use f='codebrowser/builtin/diff.c' l='363' u='c' c='cmd_diff'/>
+<use f='codebrowser/builtin/log.c' l='1058' u='c' c='make_cover_letter'/>
+<use f='codebrowser/builtin/log.c' l='1345' u='c' c='prepare_bases'/>
+<use f='codebrowser/builtin/merge.c' l='420' u='c' c='finish'/>
+<use f='codebrowser/diff-no-index.c' l='285' u='c' c='diff_no_index'/>
+<def f='codebrowser/diff.c' l='3403' ll='3510' type='void diff_setup_done(struct diff_options * options)'/>
+<use f='codebrowser/merge-recursive.c' l='531' u='c' c='get_renames'/>
+<use f='codebrowser/notes-merge.c' l='130' u='c' c='diff_tree_remote'/>
+<use f='codebrowser/notes-merge.c' l='193' u='c' c='diff_tree_local'/>
+<use f='codebrowser/patch-ids.c' l='65' u='c' c='init_patch_ids'/>
+<use f='codebrowser/revision.c' l='2358' u='c' c='setup_revisions'/>
+<use f='codebrowser/tree-diff.c' l='617' u='c' c='try_to_follow_renames'/>
+<use f='codebrowser/wt-status.c' l='2268' u='c' c='has_unstaged_changes'/>
+<use f='codebrowser/wt-status.c' l='2289' u='c' c='has_uncommitted_changes'/>

@@ -1,0 +1,14 @@
+mknod|mknod
+mknodat|mknodat
+mks_tempfile|mks_tempfile
+mks_tempfile_m|mks_tempfile_m
+mks_tempfile_s|mks_tempfile_s
+mks_tempfile_t|mks_tempfile_t
+mks_tempfile_tm|mks_tempfile_tm
+mks_tempfile_ts|mks_tempfile_ts
+mkpath|mkpath
+mkpathdup|mkpathdup
+mksnpath|mksnpath
+mkdir_in_gitdir|mkdir_in_gitdir
+mks_tempfile_sm|mks_tempfile_sm
+mks_tempfile_tsm|mks_tempfile_tsm

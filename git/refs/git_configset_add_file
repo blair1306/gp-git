@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='153' type='int git_configset_add_file(struct config_set * cs, const char * filename)'/>
+<def f='codebrowser/config.c' l='1773' ll='1776' type='int git_configset_add_file(struct config_set * cs, const char * filename)'/>
+<use f='codebrowser/t/helper/test-config.c' l='152' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-config.c' l='170' u='c' c='cmd_main'/>

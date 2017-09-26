@@ -1,0 +1,2 @@
+<dec f='codebrowser/ewah/ewok.h' l='90' type='int ewah_serialize(struct ewah_bitmap * self, int fd)'/>
+<def f='codebrowser/ewah/ewah_io.c' l='109' ll='112' type='int ewah_serialize(struct ewah_bitmap * self, int fd)'/>

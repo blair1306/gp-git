@@ -1,0 +1,10 @@
+<dec f='codebrowser/graph.h' l='98' type='void graph_show_commit(struct git_graph * graph)'/>
+<use f='codebrowser/builtin/rev-list.c' l='71' u='c' c='show_commit'/>
+<doc f='codebrowser/graph.h' l='93'>/*
+ * If the graph is non-NULL, print the history graph to stdout,
+ * up to and including the line containing this commit.
+ * Does not print a terminating newline on the last line.
+ */</doc>
+<def f='codebrowser/graph.c' l='1249' ll='1281' type='void graph_show_commit(struct git_graph * graph)'/>
+<use f='codebrowser/log-tree.c' l='546' u='c' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='594' u='c' c='show_log'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/grep.h' l='71' type='enum grep_header_field'/>
+<offset>320</offset>
+<use f='codebrowser/grep.c' l='245' u='w' c='create_grep_pat'/>
+<use f='codebrowser/grep.c' l='272' u='r' c='do_append_grep_pat'/>
+<use f='codebrowser/grep.c' l='321' u='r' c='grep_opt_dup'/>
+<use f='codebrowser/grep.c' l='803' u='r' c='dump_grep_pat'/>
+<use f='codebrowser/grep.c' l='890' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='891' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='892' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='906' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='907' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='910' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='910' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='1154' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1155' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1156' u='r' c='match_one_pattern'/>
+<use f='codebrowser/grep.c' l='1160' u='r' c='match_one_pattern'/>

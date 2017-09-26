@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1531' type='struct strbuf'/>
+<offset>64</offset>
+<doc f='codebrowser/cache.h' l='1530'>/* see alt_scratch_buf() */</doc>
+<use f='codebrowser/sha1_file.c' l='269' u='a' c='alt_scratch_buf'/>
+<use f='codebrowser/sha1_file.c' l='270' u='a' c='alt_scratch_buf'/>
+<use f='codebrowser/sha1_file.c' l='483' u='a' c='alloc_alt_odb'/>
+<use f='codebrowser/sha1_file.c' l='484' u='a' c='alloc_alt_odb'/>
+<use f='codebrowser/sha1_file.c' l='485' u='m' c='alloc_alt_odb'/>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/ewah/ewok.h' l='157' type='void ewah_iterator_init(struct ewah_iterator * it, struct ewah_bitmap * parent)'/>
+<doc f='codebrowser/ewah/ewok.h' l='144'>/**
+ * Initialize a new iterator to run through the bitmap in uncompressed form.
+ *
+ * The iterator can be stack allocated. The underlying bitmap must not be freed
+ * before the iteration is over.
+ *
+ * E.g.
+ *
+ *		struct ewah_bitmap *bitmap = ewah_new();
+ *		struct ewah_iterator it;
+ *
+ *		ewah_iterator_init(&amp;it, bitmap);
+ */</doc>
+<use f='codebrowser/ewah/bitmap.c' l='98' u='c' c='ewah_to_bitmap'/>
+<use f='codebrowser/ewah/bitmap.c' l='135' u='c' c='bitmap_or_ewah'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='364' ll='378' type='void ewah_iterator_init(struct ewah_iterator * it, struct ewah_bitmap * parent)'/>
+<use f='codebrowser/pack-bitmap.c' l='608' u='c' c='show_objects_for_type'/>
+<use f='codebrowser/pack-bitmap.c' l='836' u='c' c='count_object_type'/>
+<use f='codebrowser/pack-bitmap.c' l='840' u='c' c='count_object_type'/>
+<use f='codebrowser/pack-bitmap.c' l='844' u='c' c='count_object_type'/>
+<use f='codebrowser/pack-bitmap.c' l='848' u='c' c='count_object_type'/>
+<use f='codebrowser/pack-bitmap.c' l='986' u='c' c='rebuild_bitmap'/>

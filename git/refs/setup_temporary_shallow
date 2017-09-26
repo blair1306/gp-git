@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='280' type='const char * setup_temporary_shallow(const struct oid_array * extra)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1707' u='c' c='unpack'/>
+<use f='codebrowser/fetch-pack.c' l='999' u='c' c='do_fetch_pack'/>
+<def f='codebrowser/shallow.c' l='291' ll='311' type='const char * setup_temporary_shallow(const struct oid_array * extra)'/>

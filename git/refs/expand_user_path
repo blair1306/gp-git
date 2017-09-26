@@ -1,0 +1,18 @@
+<dec f='codebrowser/cache.h' l='1119' type='char * expand_user_path(const char * path, int real_home)'/>
+<use f='codebrowser/builtin/commit.c' l='1415' u='c' c='implicit_ident_advice'/>
+<use f='codebrowser/builtin/config.c' l='508' u='c' c='cmd_config'/>
+<use f='codebrowser/config.c' l='134' u='c' c='handle_path_include'/>
+<use f='codebrowser/config.c' l='176' u='c' c='prepare_include_condition_pattern'/>
+<use f='codebrowser/config.c' l='993' u='c' c='git_config_pathname'/>
+<use f='codebrowser/config.c' l='1547' u='c' c='do_git_config_sequence'/>
+<use f='codebrowser/credential-cache.c' l='90' u='c' c='get_socket_path'/>
+<use f='codebrowser/credential-store.c' l='171' u='c' c='cmd_main'/>
+<def f='codebrowser/path.c' l='703' ll='738' type='char * expand_user_path(const char * path, int real_home)'/>
+<use f='codebrowser/path.c' l='790' u='c' c='enter_repo'/>
+<doc f='codebrowser/path.c' l='696'>/*
+ * Return a string with ~ and ~user expanded via getpw*.  If buf != NULL,
+ * then it is a newly allocated string. Returns NULL on getpw failure or
+ * if path is NULL.
+ *
+ * If real_home is true, real_path($HOME) is used in the expansion.
+ */</doc>

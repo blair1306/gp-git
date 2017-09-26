@@ -1,0 +1,10 @@
+<def f='codebrowser/hashmap.h' l='140' ll='149'/>
+<size>16</size>
+<doc f='codebrowser/hashmap.h' l='134'>/*
+ * struct hashmap_entry is an opaque structure representing an entry in the
+ * hash table, which must be used as first member of user data structures.
+ * Ideally it should be followed by an int-sized member to prevent unused
+ * memory on 64-bit systems due to alignment.
+ */</doc>
+<mbr r='hashmap_entry::next' o='0' t='struct hashmap_entry *'/>
+<mbr r='hashmap_entry::hash' o='64' t='unsigned int'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='427'/>
+<use f='codebrowser/config.c' l='306' u='c'/>
+<use f='codebrowser/config.c' l='312' u='c'/>
+<use f='codebrowser/config.c' l='444' u='c'/>
+<use f='codebrowser/config.c' l='464' u='c'/>
+<use f='codebrowser/environment.c' l='110' u='c'/>
+<use f='codebrowser/submodule.c' l='515' u='c'/>

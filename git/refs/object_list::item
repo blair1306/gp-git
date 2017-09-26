@@ -1,0 +1,11 @@
+<dec f='codebrowser/object.h' l='5' type='struct object *'/>
+<offset>0</offset>
+<use f='codebrowser/http-push.c' l='1266' u='w' c='add_one_object'/>
+<use f='codebrowser/http-push.c' l='1360' u='r' c='get_delta'/>
+<use f='codebrowser/http-push.c' l='1361' u='r' c='get_delta'/>
+<use f='codebrowser/object.c' l='286' u='w' c='object_list_insert'/>
+<use f='codebrowser/object.c' l='295' u='r' c='object_list_contains'/>
+<use f='codebrowser/pack-bitmap.c' l='498' u='r' c='find_objects'/>
+<use f='codebrowser/pack-bitmap.c' l='540' u='r' c='find_objects'/>
+<use f='codebrowser/pack-bitmap.c' l='643' u='r' c='in_bitmapped_pack'/>
+<use f='codebrowser/walker.c' l='166' u='r' c='loop'/>

@@ -1,0 +1,6 @@
+<def f='codebrowser/pack-bitmap.c' l='17' ll='22'/>
+<size>48</size>
+<doc f='codebrowser/pack-bitmap.c' l='13'>/*
+ * An entry on the bitmap index, representing the bitmap for a given
+ * commit.
+ */</doc>

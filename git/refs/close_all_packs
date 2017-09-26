@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1683' type='void close_all_packs()'/>
+<use f='codebrowser/builtin/am.c' l='1886' u='c' c='am_run'/>
+<use f='codebrowser/builtin/clone.c' l='1188' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='1415' u='c' c='cmd_fetch'/>
+<use f='codebrowser/builtin/merge.c' l='408' u='c' c='finish'/>
+<use f='codebrowser/builtin/receive-pack.c' l='2013' u='c' c='cmd_receive_pack'/>
+<def f='codebrowser/sha1_file.c' l='988' ll='997' type='void close_all_packs()'/>

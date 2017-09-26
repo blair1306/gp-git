@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1300'/>
+<use f='codebrowser/builtin/cat-file.c' l='364' u='c'/>
+<use f='codebrowser/sha1_name.c' l='1603' u='c'/>
+<use f='codebrowser/sha1_name.c' l='1647' u='c'/>

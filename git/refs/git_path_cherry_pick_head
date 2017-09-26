@@ -1,0 +1,13 @@
+<dec f='codebrowser/path.h' l='72' type='const char * git_path_cherry_pick_head()'/>
+<use f='codebrowser/branch.c' l='327' u='c' c='remove_branch_state'/>
+<use f='codebrowser/builtin/commit.c' l='184' u='c' c='determine_whence'/>
+<use f='codebrowser/builtin/commit.c' l='827' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1795' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/merge.c' l='1190' u='c' c='cmd_merge'/>
+<def f='codebrowser/path.c' l='1359' macro='1' type='const char * git_path_cherry_pick_head()'/>
+<use f='codebrowser/sequencer.c' l='274' u='c' c='print_advice'/>
+<use f='codebrowser/sequencer.c' l='1626' u='c' c='rollback_single_pick'/>
+<use f='codebrowser/sequencer.c' l='2205' u='c' c='continue_single_pick'/>
+<use f='codebrowser/sequencer.c' l='2218' u='c' c='commit_staged_changes'/>
+<use f='codebrowser/sequencer.c' l='2272' u='c' c='sequencer_continue'/>
+<use f='codebrowser/wt-status.c' l='1523' u='c' c='wt_status_get_state'/>

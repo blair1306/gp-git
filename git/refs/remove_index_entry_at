@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='644' type='int remove_index_entry_at(struct index_state * , int pos)'/>
+<doc f='codebrowser/cache.h' l='643'>/* Remove entry, return true if there are more entries to go. */</doc>
+<use f='codebrowser/read-cache.c' l='82' u='c' c='rename_index_entry_at'/>
+<def f='codebrowser/read-cache.c' l='507' ll='521' type='int remove_index_entry_at(struct index_state * istate, int pos)'/>
+<use f='codebrowser/read-cache.c' l='555' u='c' c='remove_file_from_index'/>
+<use f='codebrowser/read-cache.c' l='885' u='c' c='has_file_name'/>
+<use f='codebrowser/read-cache.c' l='1053' u='c' c='has_dir_name'/>
+<use f='codebrowser/read-cache.c' l='1159' u='c' c='add_index_entry_with_check'/>
+<use f='codebrowser/resolve-undo.c' l='143' u='c' c='unmerge_index_entry_at'/>

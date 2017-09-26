@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='420'/>
+<use f='codebrowser/builtin/init-db.c' l='555' u='c'/>
+<use f='codebrowser/setup.c' l='757' u='c'/>
+<use f='codebrowser/setup.c' l='810' u='c'/>
+<use f='codebrowser/setup.c' l='939' u='c'/>
+<use f='codebrowser/setup.c' l='947' u='c'/>
+<use f='codebrowser/setup.c' l='1111' u='c'/>
+<use f='codebrowser/submodule.c' l='524' u='c'/>

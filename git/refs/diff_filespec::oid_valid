@@ -1,0 +1,34 @@
+<dec f='codebrowser/diffcore.h' l='36' type='unsigned int'/>
+<offset>528</offset>
+<doc f='codebrowser/diffcore.h' l='36'>/* if true, use oid and trust mode;
+				  * if false, use the name and read from
+				  * the filesystem.
+				  */</doc>
+<use f='codebrowser/combine-diff.c' l='1273' u='w' c='combined_pair'/>
+<use f='codebrowser/combine-diff.c' l='1281' u='w' c='combined_pair'/>
+<use f='codebrowser/diff.c' l='1986' u='r' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='1986' u='r' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='2703' u='w' c='fill_filespec'/>
+<use f='codebrowser/diff.c' l='2836' u='r' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='3001' u='r' c='prepare_temp_file'/>
+<use f='codebrowser/diff.c' l='3014' u='r' c='prepare_temp_file'/>
+<use f='codebrowser/diff.c' l='3016' u='r' c='prepare_temp_file'/>
+<use f='codebrowser/diff.c' l='3023' u='r' c='prepare_temp_file'/>
+<use f='codebrowser/diff.c' l='3236' u='r' c='diff_fill_oid_info'/>
+<use f='codebrowser/diff.c' l='4281' u='r' c='diff_unmodified_pair'/>
+<use f='codebrowser/diff.c' l='4281' u='r' c='diff_unmodified_pair'/>
+<use f='codebrowser/diff.c' l='4285' u='r' c='diff_unmodified_pair'/>
+<use f='codebrowser/diff.c' l='4285' u='r' c='diff_unmodified_pair'/>
+<use f='codebrowser/diff.c' l='4940' u='r' c='diff_filespec_check_stat_unmatch'/>
+<use f='codebrowser/diff.c' l='4940' u='r' c='diff_filespec_check_stat_unmatch'/>
+<use f='codebrowser/diff.c' l='5232' u='r' c='fill_textconv'/>
+<use f='codebrowser/diff.c' l='5244' u='r' c='fill_textconv'/>
+<use f='codebrowser/diffcore-break.c' l='60' u='r' c='should_break'/>
+<use f='codebrowser/diffcore-break.c' l='60' u='r' c='should_break'/>
+<use f='codebrowser/diffcore-rename.c' l='63' u='r' c='add_rename_dst'/>
+<use f='codebrowser/diffcore-rename.c' l='260' u='r' c='hash_filespec'/>
+<use f='codebrowser/line-log.c' l='894' u='r' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='900' u='r' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='901' u='r' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='1011' u='r' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1016' u='r' c='process_diff_filepair'/>

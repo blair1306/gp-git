@@ -1,0 +1,7 @@
+<dec f='codebrowser/unpack-trees.h' l='46' type='unsigned int'/>
+<offset>320</offset>
+<use f='codebrowser/diff-lib.c' l='495' u='w' c='diff_cache'/>
+<use f='codebrowser/unpack-trees.c' l='592' u='r' c='restore_cache_bottom'/>
+<use f='codebrowser/unpack-trees.c' l='602' u='r' c='switch_cache_bottom'/>
+<use f='codebrowser/unpack-trees.c' l='992' u='r' c='unpack_callback'/>
+<use f='codebrowser/unpack-trees.c' l='1037' u='r' c='unpack_callback'/>

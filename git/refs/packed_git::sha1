@@ -1,0 +1,20 @@
+<dec f='codebrowser/cache.h' l='1603' type='unsigned char [20]'/>
+<offset>616</offset>
+<use f='codebrowser/builtin/pack-redundant.c' l='687' u='r' c='cmd_pack_redundant'/>
+<use f='codebrowser/fast-import.c' l='940' u='r' c='create_index'/>
+<use f='codebrowser/fast-import.c' l='951' u='r' c='keep_pack'/>
+<use f='codebrowser/fast-import.c' l='959' u='r' c='keep_pack'/>
+<use f='codebrowser/fast-import.c' l='963' u='r' c='keep_pack'/>
+<use f='codebrowser/fast-import.c' l='977' u='r' c='unkeep_all_packs'/>
+<use f='codebrowser/fast-import.c' l='1019' u='r' c='end_packfile'/>
+<use f='codebrowser/http-push.c' l='314' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-walker.c' l='434' u='r' c='http_fetch_pack'/>
+<use f='codebrowser/http.c' l='2042' u='r' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2044' u='r' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2045' u='r' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2067' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2071' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2095' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/sha1_file.c' l='1358' u='r' c='add_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1359' u='r' c='add_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1370' u='r' c='parse_pack_index'/>

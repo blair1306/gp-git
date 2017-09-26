@@ -1,0 +1,11 @@
+<dec f='codebrowser/resolve-undo.h' l='5' type='unsigned int [3]'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/ls-files.c' l='270' u='r' c='show_ru_info'/>
+<use f='codebrowser/builtin/ls-files.c' l='272' u='r' c='show_ru_info'/>
+<use f='codebrowser/resolve-undo.c' l='28' u='w' c='record_resolve_undo'/>
+<use f='codebrowser/resolve-undo.c' l='43' u='r' c='resolve_undo_write'/>
+<use f='codebrowser/resolve-undo.c' l='45' u='r' c='resolve_undo_write'/>
+<use f='codebrowser/resolve-undo.c' l='77' u='w' c='resolve_undo_read'/>
+<use f='codebrowser/resolve-undo.c' l='88' u='r' c='resolve_undo_read'/>
+<use f='codebrowser/resolve-undo.c' l='146' u='r' c='unmerge_index_entry_at'/>
+<use f='codebrowser/resolve-undo.c' l='148' u='r' c='unmerge_index_entry_at'/>

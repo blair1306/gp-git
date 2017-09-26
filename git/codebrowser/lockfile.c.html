@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>lockfile.c source code [codebrowser/lockfile.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/lockfile.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='lockfile.c.html'>lockfile.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (c) 2005, Junio C Hamano</i></td></tr>
+<tr><th id="3">3</th><td><i> */</i></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="lockfile.h.html">"lockfile.h"</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><i  data-doc="trim_last_path_component">/*</i></td></tr>
+<tr><th id="9">9</th><td><i  data-doc="trim_last_path_component"> * path = absolute or relative path name</i></td></tr>
+<tr><th id="10">10</th><td><i  data-doc="trim_last_path_component"> *</i></td></tr>
+<tr><th id="11">11</th><td><i  data-doc="trim_last_path_component"> * Remove the last path name element from path (leaving the preceding</i></td></tr>
+<tr><th id="12">12</th><td><i  data-doc="trim_last_path_component"> * "/", if any).  If path is empty or the root directory ("/"), set</i></td></tr>
+<tr><th id="13">13</th><td><i  data-doc="trim_last_path_component"> * path to the empty string.</i></td></tr>
+<tr><th id="14">14</th><td><i  data-doc="trim_last_path_component"> */</i></td></tr>
+<tr><th id="15">15</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="trim_last_path_component" title='trim_last_path_component' data-type='void trim_last_path_component(struct strbuf * path)' data-ref="trim_last_path_component">trim_last_path_component</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col1 decl" id="1path" title='path' data-type='struct strbuf *' data-ref="1path">path</dfn>)</td></tr>
+<tr><th id="16">16</th><td>{</td></tr>
+<tr><th id="17">17</th><td>	<em>int</em> <dfn class="local col2 decl" id="2i" title='i' data-type='int' data-ref="2i">i</dfn> = <a class="local col1 ref" href="#1path" title='path' data-ref="1path">path</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>;</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td>	<i>/* back up past trailing slashes, if any */</i></td></tr>
+<tr><th id="20">20</th><td>	<b>while</b> (<a class="local col2 ref" href="#2i" title='i' data-ref="2i">i</a> &amp;&amp; <a class="local col1 ref" href="#1path" title='path' data-ref="1path">path</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="local col2 ref" href="#2i" title='i' data-ref="2i">i</a> - <var>1</var>] == <kbd>'/'</kbd>)</td></tr>
+<tr><th id="21">21</th><td>		<a class="local col2 ref" href="#2i" title='i' data-ref="2i">i</a>--;</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td>	<i>/*</i></td></tr>
+<tr><th id="24">24</th><td><i>	 * then go backwards until a slash, or the beginning of the</i></td></tr>
+<tr><th id="25">25</th><td><i>	 * string</i></td></tr>
+<tr><th id="26">26</th><td><i>	 */</i></td></tr>
+<tr><th id="27">27</th><td>	<b>while</b> (<a class="local col2 ref" href="#2i" title='i' data-ref="2i">i</a> &amp;&amp; <a class="local col1 ref" href="#1path" title='path' data-ref="1path">path</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>[<a class="local col2 ref" href="#2i" title='i' data-ref="2i">i</a> - <var>1</var>] != <kbd>'/'</kbd>)</td></tr>
+<tr><th id="28">28</th><td>		<a class="local col2 ref" href="#2i" title='i' data-ref="2i">i</a>--;</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>	<a class="ref" href="strbuf.h.html#strbuf_setlen" title='strbuf_setlen' data-ref="strbuf_setlen">strbuf_setlen</a>(<a class="local col1 ref" href="#1path" title='path' data-ref="1path">path</a>, <a class="local col2 ref" href="#2i" title='i' data-ref="2i">i</a>);</td></tr>
+<tr><th id="31">31</th><td>}</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i>/* We allow "recursive" symbolic links. Only within reason, though */</i></td></tr>
+<tr><th id="35">35</th><td><u>#define <dfn class="macro" id="_M/MAXDEPTH" data-ref="_M/MAXDEPTH">MAXDEPTH</dfn> 5</u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i  data-doc="resolve_symlink">/*</i></td></tr>
+<tr><th id="38">38</th><td><i  data-doc="resolve_symlink"> * path contains a path that might be a symlink.</i></td></tr>
+<tr><th id="39">39</th><td><i  data-doc="resolve_symlink"> *</i></td></tr>
+<tr><th id="40">40</th><td><i  data-doc="resolve_symlink"> * If path is a symlink, attempt to overwrite it with a path to the</i></td></tr>
+<tr><th id="41">41</th><td><i  data-doc="resolve_symlink"> * real file or directory (which may or may not exist), following a</i></td></tr>
+<tr><th id="42">42</th><td><i  data-doc="resolve_symlink"> * chain of symlinks if necessary.  Otherwise, leave path unmodified.</i></td></tr>
+<tr><th id="43">43</th><td><i  data-doc="resolve_symlink"> *</i></td></tr>
+<tr><th id="44">44</th><td><i  data-doc="resolve_symlink"> * This is a best-effort routine.  If an error occurs, path will</i></td></tr>
+<tr><th id="45">45</th><td><i  data-doc="resolve_symlink"> * either be left unmodified or will name a different symlink in a</i></td></tr>
+<tr><th id="46">46</th><td><i  data-doc="resolve_symlink"> * symlink chain that started with the original path.</i></td></tr>
+<tr><th id="47">47</th><td><i  data-doc="resolve_symlink"> */</i></td></tr>
+<tr><th id="48">48</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="resolve_symlink" title='resolve_symlink' data-type='void resolve_symlink(struct strbuf * path)' data-ref="resolve_symlink">resolve_symlink</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col3 decl" id="3path" title='path' data-type='struct strbuf *' data-ref="3path">path</dfn>)</td></tr>
+<tr><th id="49">49</th><td>{</td></tr>
+<tr><th id="50">50</th><td>	<em>int</em> <dfn class="local col4 decl" id="4depth" title='depth' data-type='int' data-ref="4depth">depth</dfn> = <a class="macro" href="#35" title="5" data-ref="_M/MAXDEPTH">MAXDEPTH</a>;</td></tr>
+<tr><th id="51">51</th><td>	<em>static</em> <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col5 decl" id="5link" title='link' data-type='struct strbuf' data-ref="5link">link</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>	<b>while</b> (<a class="local col4 ref" href="#4depth" title='depth' data-ref="4depth">depth</a>--) {</td></tr>
+<tr><th id="54">54</th><td>		<b>if</b> (<a class="ref" href="strbuf.h.html#strbuf_readlink" title='strbuf_readlink' data-ref="strbuf_readlink">strbuf_readlink</a>(&amp;<a class="local col5 ref" href="#5link" title='link' data-ref="5link">link</a>, <a class="local col3 ref" href="#3path" title='path' data-ref="3path">path</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>, <a class="local col3 ref" href="#3path" title='path' data-ref="3path">path</a>-&gt;<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a>) &lt; <var>0</var>)</td></tr>
+<tr><th id="55">55</th><td>			<b>break</b>;</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td>		<b>if</b> (<a class="ref" href="cache.h.html#is_absolute_path" title='is_absolute_path' data-ref="is_absolute_path">is_absolute_path</a>(<a class="local col5 ref" href="#5link" title='link' data-ref="5link">link</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>))</td></tr>
+<tr><th id="58">58</th><td>			<i>/* absolute path simply replaces p */</i></td></tr>
+<tr><th id="59">59</th><td>			<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(path, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(<a class="local col3 ref" href="#3path" title='path' data-ref="3path">path</a>);</td></tr>
+<tr><th id="60">60</th><td>		<b>else</b></td></tr>
+<tr><th id="61">61</th><td>			<i>/*</i></td></tr>
+<tr><th id="62">62</th><td><i>			 * link is a relative path, so replace the</i></td></tr>
+<tr><th id="63">63</th><td><i>			 * last element of p with it.</i></td></tr>
+<tr><th id="64">64</th><td><i>			 */</i></td></tr>
+<tr><th id="65">65</th><td>			<a class="tu ref" href="#trim_last_path_component" title='trim_last_path_component' data-use='c' data-ref="trim_last_path_component">trim_last_path_component</a>(<a class="local col3 ref" href="#3path" title='path' data-ref="3path">path</a>);</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>		<a class="ref" href="strbuf.h.html#strbuf_addbuf" title='strbuf_addbuf' data-ref="strbuf_addbuf">strbuf_addbuf</a>(<a class="local col3 ref" href="#3path" title='path' data-ref="3path">path</a>, &amp;<a class="local col5 ref" href="#5link" title='link' data-ref="5link">link</a>);</td></tr>
+<tr><th id="68">68</th><td>	}</td></tr>
+<tr><th id="69">69</th><td>	<a class="macro" href="strbuf.h.html#156" title="strbuf_setlen(&amp;link, 0)" data-ref="_M/strbuf_reset">strbuf_reset</a>(&amp;<a class="local col5 ref" href="#5link" title='link' data-ref="5link">link</a>);</td></tr>
+<tr><th id="70">70</th><td>}</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><i  data-doc="lock_file">/* Make sure errno contains a meaningful value on error */</i></td></tr>
+<tr><th id="73">73</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="lock_file" title='lock_file' data-type='int lock_file(struct lock_file * lk, const char * path, int flags)' data-ref="lock_file">lock_file</dfn>(<b>struct</b> <a class="type" href="lockfile.h.html#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col6 decl" id="6lk" title='lk' data-type='struct lock_file *' data-ref="6lk">lk</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7path" title='path' data-type='const char *' data-ref="7path">path</dfn>, <em>int</em> <dfn class="local col8 decl" id="8flags" title='flags' data-type='int' data-ref="8flags">flags</dfn>)</td></tr>
+<tr><th id="74">74</th><td>{</td></tr>
+<tr><th id="75">75</th><td>	<em>int</em> <dfn class="local col9 decl" id="9fd" title='fd' data-type='int' data-ref="9fd">fd</dfn>;</td></tr>
+<tr><th id="76">76</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col0 decl" id="10filename" title='filename' data-type='struct strbuf' data-ref="10filename">filename</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addstr" title='strbuf_addstr' data-ref="strbuf_addstr">strbuf_addstr</a>(&amp;<a class="local col0 ref" href="#10filename" title='filename' data-ref="10filename">filename</a>, <a class="local col7 ref" href="#7path" title='path' data-ref="7path">path</a>);</td></tr>
+<tr><th id="79">79</th><td>	<b>if</b> (!(<a class="local col8 ref" href="#8flags" title='flags' data-ref="8flags">flags</a> &amp; <a class="macro" href="lockfile.h.html#152" title="2" data-ref="_M/LOCK_NO_DEREF">LOCK_NO_DEREF</a>))</td></tr>
+<tr><th id="80">80</th><td>		<a class="tu ref" href="#resolve_symlink" title='resolve_symlink' data-use='c' data-ref="resolve_symlink">resolve_symlink</a>(&amp;<a class="local col0 ref" href="#10filename" title='filename' data-ref="10filename">filename</a>);</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addstr" title='strbuf_addstr' data-ref="strbuf_addstr">strbuf_addstr</a>(&amp;<a class="local col0 ref" href="#10filename" title='filename' data-ref="10filename">filename</a>, <a class="macro" href="lockfile.h.html#118" title="&quot;.lock&quot;" data-ref="_M/LOCK_SUFFIX">LOCK_SUFFIX</a>);</td></tr>
+<tr><th id="83">83</th><td>	<a class="local col9 ref" href="#9fd" title='fd' data-ref="9fd">fd</a> = <a class="ref" href="tempfile.h.html#create_tempfile" title='create_tempfile' data-ref="create_tempfile">create_tempfile</a>(&amp;<a class="local col6 ref" href="#6lk" title='lk' data-ref="6lk">lk</a>-&gt;<a class="ref" href="lockfile.h.html#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>, <a class="local col0 ref" href="#10filename" title='filename' data-ref="10filename">filename</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="84">84</th><td>	<a class="ref" href="strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(&amp;<a class="local col0 ref" href="#10filename" title='filename' data-ref="10filename">filename</a>);</td></tr>
+<tr><th id="85">85</th><td>	<b>return</b> <a class="local col9 ref" href="#9fd" title='fd' data-ref="9fd">fd</a>;</td></tr>
+<tr><th id="86">86</th><td>}</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><i>/*</i></td></tr>
+<tr><th id="89">89</th><td><i> * Constants defining the gaps between attempts to lock a file. The</i></td></tr>
+<tr><th id="90">90</th><td><i> * first backoff period is approximately INITIAL_BACKOFF_MS</i></td></tr>
+<tr><th id="91">91</th><td><i> * milliseconds. The longest backoff period is approximately</i></td></tr>
+<tr><th id="92">92</th><td><i> * (BACKOFF_MAX_MULTIPLIER * INITIAL_BACKOFF_MS) milliseconds.</i></td></tr>
+<tr><th id="93">93</th><td><i> */</i></td></tr>
+<tr><th id="94">94</th><td><u>#define <dfn class="macro" id="_M/INITIAL_BACKOFF_MS" data-ref="_M/INITIAL_BACKOFF_MS">INITIAL_BACKOFF_MS</dfn> 1L</u></td></tr>
+<tr><th id="95">95</th><td><u>#define <dfn class="macro" id="_M/BACKOFF_MAX_MULTIPLIER" data-ref="_M/BACKOFF_MAX_MULTIPLIER">BACKOFF_MAX_MULTIPLIER</dfn> 1000</u></td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><i  data-doc="lock_file_timeout">/*</i></td></tr>
+<tr><th id="98">98</th><td><i  data-doc="lock_file_timeout"> * Try locking path, retrying with quadratic backoff for at least</i></td></tr>
+<tr><th id="99">99</th><td><i  data-doc="lock_file_timeout"> * timeout_ms milliseconds. If timeout_ms is 0, try locking the file</i></td></tr>
+<tr><th id="100">100</th><td><i  data-doc="lock_file_timeout"> * exactly once. If timeout_ms is -1, try indefinitely.</i></td></tr>
+<tr><th id="101">101</th><td><i  data-doc="lock_file_timeout"> */</i></td></tr>
+<tr><th id="102">102</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="lock_file_timeout" title='lock_file_timeout' data-type='int lock_file_timeout(struct lock_file * lk, const char * path, int flags, long timeout_ms)' data-ref="lock_file_timeout">lock_file_timeout</dfn>(<b>struct</b> <a class="type" href="lockfile.h.html#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col1 decl" id="11lk" title='lk' data-type='struct lock_file *' data-ref="11lk">lk</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12path" title='path' data-type='const char *' data-ref="12path">path</dfn>,</td></tr>
+<tr><th id="103">103</th><td>			     <em>int</em> <dfn class="local col3 decl" id="13flags" title='flags' data-type='int' data-ref="13flags">flags</dfn>, <em>long</em> <dfn class="local col4 decl" id="14timeout_ms" title='timeout_ms' data-type='long' data-ref="14timeout_ms">timeout_ms</dfn>)</td></tr>
+<tr><th id="104">104</th><td>{</td></tr>
+<tr><th id="105">105</th><td>	<em>int</em> <dfn class="local col5 decl" id="15n" title='n' data-type='int' data-ref="15n">n</dfn> = <var>1</var>;</td></tr>
+<tr><th id="106">106</th><td>	<em>int</em> <dfn class="local col6 decl" id="16multiplier" title='multiplier' data-type='int' data-ref="16multiplier">multiplier</dfn> = <var>1</var>;</td></tr>
+<tr><th id="107">107</th><td>	<em>long</em> <dfn class="local col7 decl" id="17remaining_ms" title='remaining_ms' data-type='long' data-ref="17remaining_ms">remaining_ms</dfn> = <var>0</var>;</td></tr>
+<tr><th id="108">108</th><td>	<em>static</em> <em>int</em> <dfn class="local col8 decl" id="18random_initialized" title='random_initialized' data-type='int' data-ref="18random_initialized">random_initialized</dfn> = <var>0</var>;</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>	<b>if</b> (<a class="local col4 ref" href="#14timeout_ms" title='timeout_ms' data-ref="14timeout_ms">timeout_ms</a> == <var>0</var>)</td></tr>
+<tr><th id="111">111</th><td>		<b>return</b> <a class="tu ref" href="#lock_file" title='lock_file' data-use='c' data-ref="lock_file">lock_file</a>(<a class="local col1 ref" href="#11lk" title='lk' data-ref="11lk">lk</a>, <a class="local col2 ref" href="#12path" title='path' data-ref="12path">path</a>, <a class="local col3 ref" href="#13flags" title='flags' data-ref="13flags">flags</a>);</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>	<b>if</b> (!<a class="local col8 ref" href="#18random_initialized" title='random_initialized' data-ref="18random_initialized">random_initialized</a>) {</td></tr>
+<tr><th id="114">114</th><td>		<a class="ref" href="../include/stdlib.h.html#srand" title='srand' data-ref="srand">srand</a>((<em>unsigned</em> <em>int</em>)<a class="ref" href="../include/unistd.h.html#getpid" title='getpid' data-ref="getpid">getpid</a>());</td></tr>
+<tr><th id="115">115</th><td>		<a class="local col8 ref" href="#18random_initialized" title='random_initialized' data-ref="18random_initialized">random_initialized</a> = <var>1</var>;</td></tr>
+<tr><th id="116">116</th><td>	}</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td>	<b>if</b> (<a class="local col4 ref" href="#14timeout_ms" title='timeout_ms' data-ref="14timeout_ms">timeout_ms</a> &gt; <var>0</var>)</td></tr>
+<tr><th id="119">119</th><td>		<a class="local col7 ref" href="#17remaining_ms" title='remaining_ms' data-ref="17remaining_ms">remaining_ms</a> = <a class="local col4 ref" href="#14timeout_ms" title='timeout_ms' data-ref="14timeout_ms">timeout_ms</a>;</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>	<b>while</b> (<var>1</var>) {</td></tr>
+<tr><th id="122">122</th><td>		<em>long</em> <dfn class="local col9 decl" id="19backoff_ms" title='backoff_ms' data-type='long' data-ref="19backoff_ms">backoff_ms</dfn>, <dfn class="local col0 decl" id="20wait_ms" title='wait_ms' data-type='long' data-ref="20wait_ms">wait_ms</dfn>;</td></tr>
+<tr><th id="123">123</th><td>		<em>int</em> <dfn class="local col1 decl" id="21fd" title='fd' data-type='int' data-ref="21fd">fd</dfn>;</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td>		<a class="local col1 ref" href="#21fd" title='fd' data-ref="21fd">fd</a> = <a class="tu ref" href="#lock_file" title='lock_file' data-use='c' data-ref="lock_file">lock_file</a>(<a class="local col1 ref" href="#11lk" title='lk' data-ref="11lk">lk</a>, <a class="local col2 ref" href="#12path" title='path' data-ref="12path">path</a>, <a class="local col3 ref" href="#13flags" title='flags' data-ref="13flags">flags</a>);</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td>		<b>if</b> (<a class="local col1 ref" href="#21fd" title='fd' data-ref="21fd">fd</a> &gt;= <var>0</var>)</td></tr>
+<tr><th id="128">128</th><td>			<b>return</b> <a class="local col1 ref" href="#21fd" title='fd' data-ref="21fd">fd</a>; <i>/* success */</i></td></tr>
+<tr><th id="129">129</th><td>		<b>else</b> <b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> != <a class="macro" href="../include/asm-generic/errno-base.h.html#20" title="17" data-ref="_M/EEXIST">EEXIST</a>)</td></tr>
+<tr><th id="130">130</th><td>			<b>return</b> -<var>1</var>; <i>/* failure other than lock held */</i></td></tr>
+<tr><th id="131">131</th><td>		<b>else</b> <b>if</b> (<a class="local col4 ref" href="#14timeout_ms" title='timeout_ms' data-ref="14timeout_ms">timeout_ms</a> &gt; <var>0</var> &amp;&amp; <a class="local col7 ref" href="#17remaining_ms" title='remaining_ms' data-ref="17remaining_ms">remaining_ms</a> &lt;= <var>0</var>)</td></tr>
+<tr><th id="132">132</th><td>			<b>return</b> -<var>1</var>; <i>/* failure due to timeout */</i></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>		<a class="local col9 ref" href="#19backoff_ms" title='backoff_ms' data-ref="19backoff_ms">backoff_ms</a> = <a class="local col6 ref" href="#16multiplier" title='multiplier' data-ref="16multiplier">multiplier</a> * <a class="macro" href="#94" title="1L" data-ref="_M/INITIAL_BACKOFF_MS">INITIAL_BACKOFF_MS</a>;</td></tr>
+<tr><th id="135">135</th><td>		<i>/* back off for between 0.75*backoff_ms and 1.25*backoff_ms */</i></td></tr>
+<tr><th id="136">136</th><td>		<a class="local col0 ref" href="#20wait_ms" title='wait_ms' data-ref="20wait_ms">wait_ms</a> = (<var>750</var> + <a class="ref" href="../include/stdlib.h.html#rand" title='rand' data-ref="rand">rand</a>() % <var>500</var>) * <a class="local col9 ref" href="#19backoff_ms" title='backoff_ms' data-ref="19backoff_ms">backoff_ms</a> / <var>1000</var>;</td></tr>
+<tr><th id="137">137</th><td>		<a class="ref" href="cache.h.html#sleep_millisec" title='sleep_millisec' data-ref="sleep_millisec">sleep_millisec</a>(<a class="local col0 ref" href="#20wait_ms" title='wait_ms' data-ref="20wait_ms">wait_ms</a>);</td></tr>
+<tr><th id="138">138</th><td>		<a class="local col7 ref" href="#17remaining_ms" title='remaining_ms' data-ref="17remaining_ms">remaining_ms</a> -= <a class="local col0 ref" href="#20wait_ms" title='wait_ms' data-ref="20wait_ms">wait_ms</a>;</td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td>		<i>/* Recursion: (n+1)^2 = n^2 + 2n + 1 */</i></td></tr>
+<tr><th id="141">141</th><td>		<a class="local col6 ref" href="#16multiplier" title='multiplier' data-ref="16multiplier">multiplier</a> += <var>2</var>*<a class="local col5 ref" href="#15n" title='n' data-ref="15n">n</a> + <var>1</var>;</td></tr>
+<tr><th id="142">142</th><td>		<b>if</b> (<a class="local col6 ref" href="#16multiplier" title='multiplier' data-ref="16multiplier">multiplier</a> &gt; <a class="macro" href="#95" title="1000" data-ref="_M/BACKOFF_MAX_MULTIPLIER">BACKOFF_MAX_MULTIPLIER</a>)</td></tr>
+<tr><th id="143">143</th><td>			<a class="local col6 ref" href="#16multiplier" title='multiplier' data-ref="16multiplier">multiplier</a> = <a class="macro" href="#95" title="1000" data-ref="_M/BACKOFF_MAX_MULTIPLIER">BACKOFF_MAX_MULTIPLIER</a>;</td></tr>
+<tr><th id="144">144</th><td>		<b>else</b></td></tr>
+<tr><th id="145">145</th><td>			<a class="local col5 ref" href="#15n" title='n' data-ref="15n">n</a>++;</td></tr>
+<tr><th id="146">146</th><td>	}</td></tr>
+<tr><th id="147">147</th><td>}</td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><em>void</em> <dfn class="decl def" id="unable_to_lock_message" title='unable_to_lock_message' data-ref="unable_to_lock_message">unable_to_lock_message</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="22path" title='path' data-type='const char *' data-ref="22path">path</dfn>, <em>int</em> <dfn class="local col3 decl" id="23err" title='err' data-type='int' data-ref="23err">err</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col4 decl" id="24buf" title='buf' data-type='struct strbuf *' data-ref="24buf">buf</dfn>)</td></tr>
+<tr><th id="150">150</th><td>{</td></tr>
+<tr><th id="151">151</th><td>	<b>if</b> (<a class="local col3 ref" href="#23err" title='err' data-ref="23err">err</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#20" title="17" data-ref="_M/EEXIST">EEXIST</a>) {</td></tr>
+<tr><th id="152">152</th><td>		<a class="ref" href="strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(<a class="local col4 ref" href="#24buf" title='buf' data-ref="24buf">buf</a>, <a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"Unable to create '%s.lock': %s.\n\n"</q></td></tr>
+<tr><th id="153">153</th><td>		    <q>"Another git process seems to be running in this repository, e.g.\n"</q></td></tr>
+<tr><th id="154">154</th><td>		    <q>"an editor opened by 'git commit'. Please make sure all processes\n"</q></td></tr>
+<tr><th id="155">155</th><td>		    <q>"are terminated then try again. If it still fails, a git process\n"</q></td></tr>
+<tr><th id="156">156</th><td>		    <q>"may have crashed in this repository earlier:\n"</q></td></tr>
+<tr><th id="157">157</th><td>		    <q>"remove the file manually to continue."</q>),</td></tr>
+<tr><th id="158">158</th><td>			    <a class="ref" href="cache.h.html#absolute_path" title='absolute_path' data-ref="absolute_path">absolute_path</a>(<a class="local col2 ref" href="#22path" title='path' data-ref="22path">path</a>), <a class="ref" href="../include/string.h.html#strerror" title='strerror' data-ref="strerror">strerror</a>(<a class="local col3 ref" href="#23err" title='err' data-ref="23err">err</a>));</td></tr>
+<tr><th id="159">159</th><td>	} <b>else</b></td></tr>
+<tr><th id="160">160</th><td>		<a class="ref" href="strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(<a class="local col4 ref" href="#24buf" title='buf' data-ref="24buf">buf</a>, <a class="ref" href="gettext.h.html#_" title='_' data-ref="_">_</a>(<q>"Unable to create '%s.lock': %s"</q>),</td></tr>
+<tr><th id="161">161</th><td>			    <a class="ref" href="cache.h.html#absolute_path" title='absolute_path' data-ref="absolute_path">absolute_path</a>(<a class="local col2 ref" href="#22path" title='path' data-ref="22path">path</a>), <a class="ref" href="../include/string.h.html#strerror" title='strerror' data-ref="strerror">strerror</a>(<a class="local col3 ref" href="#23err" title='err' data-ref="23err">err</a>));</td></tr>
+<tr><th id="162">162</th><td>}</td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td><a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <em>void</em> <dfn class="decl def" id="unable_to_lock_die" title='unable_to_lock_die' data-ref="unable_to_lock_die">unable_to_lock_die</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="25path" title='path' data-type='const char *' data-ref="25path">path</dfn>, <em>int</em> <dfn class="local col6 decl" id="26err" title='err' data-type='int' data-ref="26err">err</dfn>)</td></tr>
+<tr><th id="165">165</th><td>{</td></tr>
+<tr><th id="166">166</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col7 decl" id="27buf" title='buf' data-type='struct strbuf' data-ref="27buf">buf</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td>	<a class="ref" href="#unable_to_lock_message" title='unable_to_lock_message' data-ref="unable_to_lock_message">unable_to_lock_message</a>(<a class="local col5 ref" href="#25path" title='path' data-ref="25path">path</a>, <a class="local col6 ref" href="#26err" title='err' data-ref="26err">err</a>, &amp;<a class="local col7 ref" href="#27buf" title='buf' data-ref="27buf">buf</a>);</td></tr>
+<tr><th id="169">169</th><td>	<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"%s"</q>, <a class="local col7 ref" href="#27buf" title='buf' data-ref="27buf">buf</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="170">170</th><td>}</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><i>/* This should return a meaningful errno on failure */</i></td></tr>
+<tr><th id="173">173</th><td><em>int</em> <dfn class="decl def" id="hold_lock_file_for_update_timeout" title='hold_lock_file_for_update_timeout' data-ref="hold_lock_file_for_update_timeout">hold_lock_file_for_update_timeout</dfn>(<b>struct</b> <a class="type" href="lockfile.h.html#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col8 decl" id="28lk" title='lk' data-type='struct lock_file *' data-ref="28lk">lk</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="29path" title='path' data-type='const char *' data-ref="29path">path</dfn>,</td></tr>
+<tr><th id="174">174</th><td>				      <em>int</em> <dfn class="local col0 decl" id="30flags" title='flags' data-type='int' data-ref="30flags">flags</dfn>, <em>long</em> <dfn class="local col1 decl" id="31timeout_ms" title='timeout_ms' data-type='long' data-ref="31timeout_ms">timeout_ms</dfn>)</td></tr>
+<tr><th id="175">175</th><td>{</td></tr>
+<tr><th id="176">176</th><td>	<em>int</em> <dfn class="local col2 decl" id="32fd" title='fd' data-type='int' data-ref="32fd">fd</dfn> = <a class="tu ref" href="#lock_file_timeout" title='lock_file_timeout' data-use='c' data-ref="lock_file_timeout">lock_file_timeout</a>(<a class="local col8 ref" href="#28lk" title='lk' data-ref="28lk">lk</a>, <a class="local col9 ref" href="#29path" title='path' data-ref="29path">path</a>, <a class="local col0 ref" href="#30flags" title='flags' data-ref="30flags">flags</a>, <a class="local col1 ref" href="#31timeout_ms" title='timeout_ms' data-ref="31timeout_ms">timeout_ms</a>);</td></tr>
+<tr><th id="177">177</th><td>	<b>if</b> (<a class="local col2 ref" href="#32fd" title='fd' data-ref="32fd">fd</a> &lt; <var>0</var>) {</td></tr>
+<tr><th id="178">178</th><td>		<b>if</b> (<a class="local col0 ref" href="#30flags" title='flags' data-ref="30flags">flags</a> &amp; <a class="macro" href="lockfile.h.html#134" title="1" data-ref="_M/LOCK_DIE_ON_ERROR">LOCK_DIE_ON_ERROR</a>)</td></tr>
+<tr><th id="179">179</th><td>			<a class="ref" href="#unable_to_lock_die" title='unable_to_lock_die' data-ref="unable_to_lock_die">unable_to_lock_die</a>(<a class="local col9 ref" href="#29path" title='path' data-ref="29path">path</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>);</td></tr>
+<tr><th id="180">180</th><td>		<b>if</b> (<a class="local col0 ref" href="#30flags" title='flags' data-ref="30flags">flags</a> &amp; <a class="macro" href="lockfile.h.html#140" title="4" data-ref="_M/LOCK_REPORT_ON_ERROR">LOCK_REPORT_ON_ERROR</a>) {</td></tr>
+<tr><th id="181">181</th><td>			<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col3 decl" id="33buf" title='buf' data-type='struct strbuf' data-ref="33buf">buf</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="182">182</th><td>			<a class="ref" href="#unable_to_lock_message" title='unable_to_lock_message' data-ref="unable_to_lock_message">unable_to_lock_message</a>(<a class="local col9 ref" href="#29path" title='path' data-ref="29path">path</a>, <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>, &amp;<a class="local col3 ref" href="#33buf" title='buf' data-ref="33buf">buf</a>);</td></tr>
+<tr><th id="183">183</th><td>			<a class="macro" href="git-compat-util.h.html#446" title="(error(&quot;%s&quot;, buf.buf), const_error())" data-ref="_M/error">error</a>(<q>"%s"</q>, <a class="local col3 ref" href="#33buf" title='buf' data-ref="33buf">buf</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="184">184</th><td>			<a class="ref" href="strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(&amp;<a class="local col3 ref" href="#33buf" title='buf' data-ref="33buf">buf</a>);</td></tr>
+<tr><th id="185">185</th><td>		}</td></tr>
+<tr><th id="186">186</th><td>	}</td></tr>
+<tr><th id="187">187</th><td>	<b>return</b> <a class="local col2 ref" href="#32fd" title='fd' data-ref="32fd">fd</a>;</td></tr>
+<tr><th id="188">188</th><td>}</td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td><em>char</em> *<dfn class="decl def" id="get_locked_file_path" title='get_locked_file_path' data-ref="get_locked_file_path">get_locked_file_path</dfn>(<b>struct</b> <a class="type" href="lockfile.h.html#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col4 decl" id="34lk" title='lk' data-type='struct lock_file *' data-ref="34lk">lk</dfn>)</td></tr>
+<tr><th id="191">191</th><td>{</td></tr>
+<tr><th id="192">192</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col5 decl" id="35ret" title='ret' data-type='struct strbuf' data-ref="35ret">ret</dfn> = <a class="macro" href="strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td>	<a class="ref" href="strbuf.h.html#strbuf_addstr" title='strbuf_addstr' data-ref="strbuf_addstr">strbuf_addstr</a>(&amp;<a class="local col5 ref" href="#35ret" title='ret' data-ref="35ret">ret</a>, <a class="ref" href="tempfile.h.html#get_tempfile_path" title='get_tempfile_path' data-ref="get_tempfile_path">get_tempfile_path</a>(&amp;<a class="local col4 ref" href="#34lk" title='lk' data-ref="34lk">lk</a>-&gt;<a class="ref" href="lockfile.h.html#lock_file::tempfile" title='lock_file::tempfile' data-ref="lock_file::tempfile">tempfile</a>));</td></tr>
+<tr><th id="195">195</th><td>	<b>if</b> (<a class="local col5 ref" href="#35ret" title='ret' data-ref="35ret">ret</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a> &lt;= <a class="macro" href="lockfile.h.html#119" title="5" data-ref="_M/LOCK_SUFFIX_LEN">LOCK_SUFFIX_LEN</a> ||</td></tr>
+<tr><th id="196">196</th><td>	    <a class="macro" href="../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (ret.buf + ret.len - 5) &amp;&amp; __builtin_constant_p (&quot;.lock&quot;) &amp;&amp; (__s1_len = __builtin_strlen (ret.buf + ret.len - 5), __s2_len = __builtin_strlen (&quot;.lock&quot;), (!((size_t)(const void *)((ret.buf + ret.len - 5) + 1) - (size_t)(const void *)(ret.buf + ret.len - 5) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;.lock&quot;) + 1) - (size_t)(const void *)(&quot;.lock&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (ret.buf + ret.len - 5, &quot;.lock&quot;) : (__builtin_constant_p (ret.buf + ret.len - 5) &amp;&amp; ((size_t)(const void *)((ret.buf + ret.len - 5) + 1) - (size_t)(const void *)(ret.buf + ret.len - 5) == 1) &amp;&amp; (__s1_len = __builtin_strlen (ret.buf + ret.len - 5), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;.lock&quot;) &amp;&amp; ((size_t)(const void *)((&quot;.lock&quot;) + 1) - (size_t)(const void *)(&quot;.lock&quot;) == 1) ? __builtin_strcmp (ret.buf + ret.len - 5, &quot;.lock&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;.lock&quot;); int __result = (((const unsigned char *) (const char *) (ret.buf + ret.len - 5))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (ret.buf + ret.len - 5))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (ret.buf + ret.len - 5))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (ret.buf + ret.len - 5))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;.lock&quot;) &amp;&amp; ((size_t)(const void *)((&quot;.lock&quot;) + 1) - (size_t)(const void *)(&quot;.lock&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;.lock&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (ret.buf + ret.len - 5) &amp;&amp; ((size_t)(const void *)((ret.buf + ret.len - 5) + 1) - (size_t)(const void *)(ret.buf + ret.len - 5) == 1) ? __builtin_strcmp (ret.buf + ret.len - 5, &quot;.lock&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (ret.buf + ret.len - 5); int __result = (((const unsigned char *) (const char *) (&quot;.lock&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;.lock&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;.lock&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;.lock&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (ret.buf + ret.len - 5, &quot;.lock&quot;)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col5 ref" href="#35ret" title='ret' data-ref="35ret">ret</a>.<a class="ref" href="strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a> + <a class="local col5 ref" href="#35ret" title='ret' data-ref="35ret">ret</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a> - <a class="macro" href="lockfile.h.html#119" title="5" data-ref="_M/LOCK_SUFFIX_LEN">LOCK_SUFFIX_LEN</a>, <a class="macro" href="lockfile.h.html#118" title="&quot;.lock&quot;" data-ref="_M/LOCK_SUFFIX">LOCK_SUFFIX</a>))</td></tr>
+<tr><th id="197">197</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"BUG: get_locked_file_path() called for malformed lock object"</q>);</td></tr>
+<tr><th id="198">198</th><td>	<i>/* remove ".lock": */</i></td></tr>
+<tr><th id="199">199</th><td>	<a class="ref" href="strbuf.h.html#strbuf_setlen" title='strbuf_setlen' data-ref="strbuf_setlen">strbuf_setlen</a>(&amp;<a class="local col5 ref" href="#35ret" title='ret' data-ref="35ret">ret</a>, <a class="local col5 ref" href="#35ret" title='ret' data-ref="35ret">ret</a>.<a class="ref" href="strbuf.h.html#strbuf::len" title='strbuf::len' data-ref="strbuf::len">len</a> - <a class="macro" href="lockfile.h.html#119" title="5" data-ref="_M/LOCK_SUFFIX_LEN">LOCK_SUFFIX_LEN</a>);</td></tr>
+<tr><th id="200">200</th><td>	<b>return</b> <a class="ref" href="strbuf.h.html#strbuf_detach" title='strbuf_detach' data-ref="strbuf_detach">strbuf_detach</a>(&amp;<a class="local col5 ref" href="#35ret" title='ret' data-ref="35ret">ret</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="201">201</th><td>}</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><em>int</em> <dfn class="decl def" id="commit_lock_file" title='commit_lock_file' data-ref="commit_lock_file">commit_lock_file</dfn>(<b>struct</b> <a class="type" href="lockfile.h.html#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col6 decl" id="36lk" title='lk' data-type='struct lock_file *' data-ref="36lk">lk</dfn>)</td></tr>
+<tr><th id="204">204</th><td>{</td></tr>
+<tr><th id="205">205</th><td>	<em>char</em> *<dfn class="local col7 decl" id="37result_path" title='result_path' data-type='char *' data-ref="37result_path">result_path</dfn> = <a class="ref" href="#get_locked_file_path" title='get_locked_file_path' data-ref="get_locked_file_path">get_locked_file_path</a>(<a class="local col6 ref" href="#36lk" title='lk' data-ref="36lk">lk</a>);</td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td>	<b>if</b> (<a class="ref" href="lockfile.h.html#commit_lock_file_to" title='commit_lock_file_to' data-ref="commit_lock_file_to">commit_lock_file_to</a>(<a class="local col6 ref" href="#36lk" title='lk' data-ref="36lk">lk</a>, <a class="local col7 ref" href="#37result_path" title='result_path' data-ref="37result_path">result_path</a>)) {</td></tr>
+<tr><th id="208">208</th><td>		<em>int</em> <dfn class="local col8 decl" id="38save_errno" title='save_errno' data-type='int' data-ref="38save_errno">save_errno</dfn> = <a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>;</td></tr>
+<tr><th id="209">209</th><td>		<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col7 ref" href="#37result_path" title='result_path' data-ref="37result_path">result_path</a>);</td></tr>
+<tr><th id="210">210</th><td>		<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> = <a class="local col8 ref" href="#38save_errno" title='save_errno' data-ref="38save_errno">save_errno</a>;</td></tr>
+<tr><th id="211">211</th><td>		<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="212">212</th><td>	}</td></tr>
+<tr><th id="213">213</th><td>	<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col7 ref" href="#37result_path" title='result_path' data-ref="37result_path">result_path</a>);</td></tr>
+<tr><th id="214">214</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="215">215</th><td>}</td></tr>
+<tr><th id="216">216</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

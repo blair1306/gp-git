@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>patch-ids.h source code [codebrowser/patch-ids.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="patch_id,patch_ids "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/patch-ids.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='patch-ids.h.html'>patch-ids.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/PATCH_IDS_H">PATCH_IDS_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/PATCH_IDS_H" data-ref="_M/PATCH_IDS_H">PATCH_IDS_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="patch_id" title='patch_id' data-ref="patch_id">patch_id</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<b>struct</b> <a class="type" href="hashmap.h.html#hashmap_entry" title='hashmap_entry' data-ref="hashmap_entry">hashmap_entry</a> <dfn class="decl" id="patch_id::ent" title='patch_id::ent' data-ref="patch_id::ent">ent</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="patch_id::patch_id" title='patch_id::patch_id' data-ref="patch_id::patch_id">patch_id</dfn>;</td></tr>
+<tr><th id="7">7</th><td>	<b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="decl" id="patch_id::commit" title='patch_id::commit' data-ref="patch_id::commit">commit</dfn>;</td></tr>
+<tr><th id="8">8</th><td>};</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>struct</b> <dfn class="type def" id="patch_ids" title='patch_ids' data-ref="patch_ids">patch_ids</dfn> {</td></tr>
+<tr><th id="11">11</th><td>	<b>struct</b> <a class="type" href="hashmap.h.html#hashmap" title='hashmap' data-ref="hashmap">hashmap</a> <dfn class="decl" id="patch_ids::patches" title='patch_ids::patches' data-ref="patch_ids::patches">patches</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<b>struct</b> <a class="type" href="diff.h.html#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> <dfn class="decl" id="patch_ids::diffopts" title='patch_ids::diffopts' data-ref="patch_ids::diffopts">diffopts</dfn>;</td></tr>
+<tr><th id="13">13</th><td>};</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><em>int</em> <dfn class="decl" id="commit_patch_id" title='commit_patch_id' data-ref="commit_patch_id">commit_patch_id</dfn>(<b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col8 decl" id="18commit" title='commit' data-type='struct commit *' data-ref="18commit">commit</dfn>, <b>struct</b> <a class="type" href="diff.h.html#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col9 decl" id="19options" title='options' data-type='struct diff_options *' data-ref="19options">options</dfn>,</td></tr>
+<tr><th id="16">16</th><td>		    <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col0 decl" id="20oid" title='oid' data-type='struct object_id *' data-ref="20oid">oid</dfn>, <em>int</em>);</td></tr>
+<tr><th id="17">17</th><td><em>int</em> <dfn class="decl" id="init_patch_ids" title='init_patch_ids' data-ref="init_patch_ids">init_patch_ids</dfn>(<b>struct</b> <a class="type" href="#patch_ids" title='patch_ids' data-ref="patch_ids">patch_ids</a> *);</td></tr>
+<tr><th id="18">18</th><td><em>int</em> <dfn class="decl" id="free_patch_ids" title='free_patch_ids' data-ref="free_patch_ids">free_patch_ids</dfn>(<b>struct</b> <a class="type" href="#patch_ids" title='patch_ids' data-ref="patch_ids">patch_ids</a> *);</td></tr>
+<tr><th id="19">19</th><td><b>struct</b> <a class="type" href="#patch_id" title='patch_id' data-ref="patch_id">patch_id</a> *<dfn class="decl" id="add_commit_patch_id" title='add_commit_patch_id' data-ref="add_commit_patch_id">add_commit_patch_id</dfn>(<b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *, <b>struct</b> <a class="type" href="#patch_ids" title='patch_ids' data-ref="patch_ids">patch_ids</a> *);</td></tr>
+<tr><th id="20">20</th><td><b>struct</b> <a class="type" href="#patch_id" title='patch_id' data-ref="patch_id">patch_id</a> *<dfn class="decl" id="has_commit_patch_id" title='has_commit_patch_id' data-ref="has_commit_patch_id">has_commit_patch_id</dfn>(<b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *, <b>struct</b> <a class="type" href="#patch_ids" title='patch_ids' data-ref="patch_ids">patch_ids</a> *);</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="1">endif</span> /* PATCH_IDS_H */</u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/log.c.html'>codebrowser/builtin/log.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

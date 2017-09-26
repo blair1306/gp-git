@@ -1,0 +1,43 @@
+<dec f='codebrowser/hashmap.h' l='222' type='void hashmap_init(struct hashmap * map, hashmap_cmp_fn equals_function, const void * equals_function_data, size_t initial_size)'/>
+<doc f='codebrowser/hashmap.h' l='205'>/*
+ * Initializes a hashmap structure.
+ *
+ * `map` is the hashmap to initialize.
+ *
+ * The `equals_function` can be specified to compare two entries for equality.
+ * If NULL, entries are considered equal if their hash codes are equal.
+ *
+ * The `equals_function_data` parameter can be used to provide additional data
+ * (a callback cookie) that will be passed to `equals_function` each time it
+ * is called. This allows a single `equals_function` to implement multiple
+ * comparison functions.
+ *
+ * If the total number of entries is known in advance, the `initial_size`
+ * parameter may be used to preallocate a sufficiently large table and thus
+ * prevent expensive resizing. If 0, the table is dynamically resized.
+ */</doc>
+<use f='codebrowser/attr.c' l='92' u='c' c='attr_hashmap_init'/>
+<use f='codebrowser/builtin/describe.c' l='509' u='c' c='cmd_describe'/>
+<use f='codebrowser/builtin/difftool.c' l='385' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='386' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='387' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='597' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='598' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/fast-export.c' l='117' u='c' c='anonymize_mem'/>
+<use f='codebrowser/config.c' l='1739' u='c' c='git_configset_init'/>
+<use f='codebrowser/convert.c' l='567' u='c' c='apply_multi_file_filter'/>
+<use f='codebrowser/diffcore-rename.c' l='344' u='c' c='find_exact_renames'/>
+<def f='codebrowser/hashmap.c' l='153' ll='169' type='void hashmap_init(struct hashmap * map, hashmap_cmp_fn equals_function, const void * cmpfn_data, size_t initial_size)'/>
+<use f='codebrowser/hashmap.c' l='285' u='c' c='memintern'/>
+<use f='codebrowser/name-hash.c' l='583' u='c' c='lazy_init_name_hash'/>
+<use f='codebrowser/name-hash.c' l='584' u='c' c='lazy_init_name_hash'/>
+<use f='codebrowser/oidset.c' l='34' u='c' c='oidset_insert'/>
+<use f='codebrowser/patch-ids.c' l='66' u='c' c='init_patch_ids'/>
+<use f='codebrowser/refs.c' l='1629' u='c' c='register_ref_store_map'/>
+<use f='codebrowser/remote.c' l='154' u='c' c='init_remotes_hash'/>
+<use f='codebrowser/sha1_file.c' l='2365' u='c' c='add_delta_base_cache'/>
+<use f='codebrowser/submodule-config.c' l='68' u='c' c='submodule_cache_init'/>
+<use f='codebrowser/submodule-config.c' l='69' u='c' c='submodule_cache_init'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='99' u='c' c='perf_hashmap'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='111' u='c' c='perf_hashmap'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='153' u='c' c='cmd_main'/>

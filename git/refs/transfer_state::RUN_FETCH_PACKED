@@ -1,0 +1,4 @@
+<dec f='codebrowser/http-push.c' l='105' type='2'/>
+<use f='codebrowser/http-push.c' l='326' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='341' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='579' u='r' c='finish_request'/>

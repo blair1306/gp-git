@@ -1,0 +1,25 @@
+<dec f='codebrowser/cache.h' l='400' type='6'/>
+<doc f='codebrowser/cache.h' l='399'>/* 5 for future expansion */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='435' u='r' c='is_delta_type'/>
+<use f='codebrowser/builtin/index-pack.c' l='520' c='unpack_raw_entry'/>
+<use f='codebrowser/builtin/index-pack.c' l='1000' u='r' c='find_unresolved_deltas_1'/>
+<use f='codebrowser/builtin/index-pack.c' l='1030' u='r' c='find_unresolved_deltas_1'/>
+<use f='codebrowser/builtin/index-pack.c' l='1138' u='r' c='parse_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='275' u='r' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='280' u='r' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='297' u='r' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='367' u='r' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='393' u='r' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='468' u='r' c='write_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1428' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1829' u='r' c='try_delta'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='466' c='unpack_one'/>
+<use f='codebrowser/fast-import.c' l='1181' u='r' c='store_object'/>
+<use f='codebrowser/sha1_file.c' l='2063' u='r' c='get_delta_base'/>
+<use f='codebrowser/sha1_file.c' l='2102' u='r' c='get_delta_base_sha1'/>
+<use f='codebrowser/sha1_file.c' l='2173' u='r' c='packed_to_object_type'/>
+<use f='codebrowser/sha1_file.c' l='2392' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2433' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2555' u='r' c='unpack_entry'/>
+<use f='codebrowser/sha1_file.c' l='2588' c='unpack_entry'/>
+<use f='codebrowser/sha1_file.c' l='3036' u='r' c='sha1_object_info_extended'/>

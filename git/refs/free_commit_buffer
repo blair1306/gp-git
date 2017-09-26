@@ -1,0 +1,9 @@
+<dec f='codebrowser/commit.h' l='99' type='void free_commit_buffer(struct commit * )'/>
+<doc f='codebrowser/commit.h' l='96'>/*
+ * Free any cached object buffer associated with the commit.
+ */</doc>
+<use f='codebrowser/builtin/fsck.c' l='367' u='c' c='fsck_obj'/>
+<use f='codebrowser/builtin/log.c' l='380' u='c' c='cmd_log_walk'/>
+<use f='codebrowser/builtin/log.c' l='1808' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/rev-list.c' l='178' u='c' c='finish_commit'/>
+<def f='codebrowser/commit.c' l='285' ll='292' type='void free_commit_buffer(struct commit * commit)'/>

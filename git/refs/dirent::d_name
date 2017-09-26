@@ -1,0 +1,119 @@
+<dec f='include/x86_64-linux-gnu/bits/dirent.h' l='33' type='char [256]'/>
+<offset>152</offset>
+<doc f='include/x86_64-linux-gnu/bits/dirent.h' l='33'>/* We must not include limits.h! */</doc>
+<use f='codebrowser/builtin/clean.c' l='192' u='r' c='remove_dirs'/>
+<use f='codebrowser/builtin/clean.c' l='196' u='r' c='remove_dirs'/>
+<use f='codebrowser/builtin/clone.c' l='415' u='r' c='copy_or_link_directory'/>
+<use f='codebrowser/builtin/clone.c' l='417' u='r' c='copy_or_link_directory'/>
+<use f='codebrowser/builtin/clone.c' l='423' u='r' c='copy_or_link_directory'/>
+<use f='codebrowser/builtin/gc.c' l='154' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/gc.c' l='154' u='r' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/gc.c' l='154' u='r' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/gc.c' l='154' u='r' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/gc.c' l='154' u='r' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/gc.c' l='154' u='r' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/gc.c' l='154' u='r' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/gc.c' l='154' u='r' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/gc.c' l='154' u='r' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/gc.c' l='154' u='r' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/gc.c' l='155' u='r' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/init-db.c' l='49' u='r' c='copy_templates_1'/>
+<use f='codebrowser/builtin/init-db.c' l='51' u='r' c='copy_templates_1'/>
+<use f='codebrowser/builtin/init-db.c' l='52' u='r' c='copy_templates_1'/>
+<use f='codebrowser/builtin/mailsplit.c' l='133' u='r' c='populate_maildir_list'/>
+<use f='codebrowser/builtin/mailsplit.c' l='136' c='populate_maildir_list'/>
+<use f='codebrowser/builtin/prune.c' l='95' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/prune.c' l='96' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='67' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='70' u='r' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='99' u='r' c='get_non_kept_pack_filenames'/>
+<use f='codebrowser/builtin/repack.c' l='102' u='r' c='get_non_kept_pack_filenames'/>
+<use f='codebrowser/builtin/worktree.c' l='102' u='r' c='prune_worktrees'/>
+<use f='codebrowser/builtin/worktree.c' l='105' u='r' c='prune_worktrees'/>
+<use f='codebrowser/builtin/worktree.c' l='111' c='prune_worktrees'/>
+<use f='codebrowser/diff-no-index.c' l='29' u='r' c='read_directory_contents'/>
+<use f='codebrowser/diff-no-index.c' l='30' u='r' c='read_directory_contents'/>
+<use f='codebrowser/dir-iterator.c' l='137' u='r' c='dir_iterator_advance'/>
+<use f='codebrowser/dir-iterator.c' l='140' u='r' c='dir_iterator_advance'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1660' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='1663' u='r' c='treat_path'/>
+<use f='codebrowser/dir.c' l='2231' u='r' c='is_empty_dir'/>
+<use f='codebrowser/dir.c' l='2276' u='r' c='remove_dir_recurse'/>
+<use f='codebrowser/dir.c' l='2280' u='r' c='remove_dir_recurse'/>
+<use f='codebrowser/entry.c' l='59' u='r' c='remove_subtree'/>
+<use f='codebrowser/entry.c' l='63' u='r' c='remove_subtree'/>
+<use f='codebrowser/help.c' l='123' u='r' c='list_commands_in_dir'/>
+<use f='codebrowser/help.c' l='127' u='r' c='list_commands_in_dir'/>
+<use f='codebrowser/notes-merge.c' l='698' u='r' c='notes_merge_commit'/>
+<use f='codebrowser/notes-merge.c' l='701' u='r' c='notes_merge_commit'/>
+<use f='codebrowser/notes-merge.c' l='704' c='notes_merge_commit'/>
+<use f='codebrowser/notes-merge.c' l='708' u='r' c='notes_merge_commit'/>
+<use f='codebrowser/read-cache.c' l='2400' u='r' c='clean_shared_index_files'/>
+<use f='codebrowser/read-cache.c' l='2404' c='clean_shared_index_files'/>
+<use f='codebrowser/refs/files-backend.c' l='184' u='r' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='186' u='r' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='188' u='r' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='189' u='r' c='loose_fill_ref_dir'/>
+<use f='codebrowser/rerere.c' l='124' u='r' c='scan_rerere_dir'/>
+<use f='codebrowser/rerere.c' l='127' u='r' c='scan_rerere_dir'/>
+<use f='codebrowser/rerere.c' l='1204' u='r' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1206' u='r' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1219' u='r' c='rerere_gc'/>
+<use f='codebrowser/sha1_file.c' l='1458' u='r' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1462' u='r' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1486' u='r' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1487' u='r' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1488' u='r' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='1489' u='r' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='3741' u='r' c='for_each_file_in_obj_subdir'/>
+<use f='codebrowser/sha1_file.c' l='3745' c='for_each_file_in_obj_subdir'/>
+<use f='codebrowser/sha1_file.c' l='3747' u='r' c='for_each_file_in_obj_subdir'/>
+<use f='codebrowser/sha1_file.c' l='3752' c='for_each_file_in_obj_subdir'/>
+<use f='codebrowser/sha1_file.c' l='3764' c='for_each_file_in_obj_subdir'/>
+<use f='codebrowser/tmp-objdir.c' l='207' u='r' c='read_dir_paths'/>
+<use f='codebrowser/tmp-objdir.c' l='208' u='r' c='read_dir_paths'/>
+<use f='codebrowser/worktree.c' l='148' u='r' c='get_worktrees'/>
+<use f='codebrowser/worktree.c' l='151' u='r' c='get_worktrees'/>
+<use f='codebrowser/worktree.c' l='380' u='r' c='submodule_uses_worktrees'/>

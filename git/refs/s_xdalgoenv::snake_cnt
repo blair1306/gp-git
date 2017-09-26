@@ -1,0 +1,11 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='36' type='long'/>
+<offset>64</offset>
+<use f='codebrowser/xdiff/xdiffi.c' l='106' u='r' c='xdl_split'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='141' u='r' c='xdl_split'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='173' u='r' c='xdl_split'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='174' u='r' c='xdl_split'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='176' u='r' c='xdl_split'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='197' u='r' c='xdl_split'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='198' u='r' c='xdl_split'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='200' u='r' c='xdl_split'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='360' u='w' c='xdl_do_diff'/>

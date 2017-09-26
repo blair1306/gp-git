@@ -1,0 +1,9 @@
+<dec f='codebrowser/convert.h' l='31' type='2'/>
+<use f='codebrowser/convert.h' l='35'/>
+<use f='codebrowser/config.c' l='1158' u='r' c='git_default_core_config'/>
+<use f='codebrowser/convert.c' l='181' u='r' c='output_eol'/>
+<use f='codebrowser/convert.c' l='186' u='r' c='output_eol'/>
+<use f='codebrowser/convert.c' l='190' u='r' c='output_eol'/>
+<use f='codebrowser/convert.c' l='994' u='r' c='git_path_check_eol'/>
+<use f='codebrowser/convert.c' l='1048' u='r' c='convert_attrs'/>
+<use f='codebrowser/convert.c' l='1052' u='r' c='convert_attrs'/>

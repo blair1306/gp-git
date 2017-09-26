@@ -1,0 +1,4 @@
+<dec f='codebrowser/dir.h' l='242' type='int match_pathname(const char * , int , const char * , int , const char * , int , int , unsigned int )'/>
+<use f='codebrowser/attr.c' l='1008' u='c' c='path_matches'/>
+<def f='codebrowser/dir.c' l='907' ll='964' type='int match_pathname(const char * pathname, int pathlen, const char * base, int baselen, const char * pattern, int prefix, int patternlen, unsigned int flags)'/>
+<use f='codebrowser/dir.c' l='1009' u='c' c='last_exclude_matching_from_list'/>

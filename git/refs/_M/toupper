@@ -1,0 +1,11 @@
+<dec f='codebrowser/git-compat-util.h' l='960'/>
+<use f='codebrowser/date.c' l='338' u='c'/>
+<use f='codebrowser/date.c' l='338' u='c'/>
+<use f='codebrowser/diff.c' l='3749' u='c'/>
+<use f='codebrowser/dir.c' l='2171' u='c'/>
+<use f='codebrowser/dir.c' l='2171' u='c'/>
+<use f='codebrowser/ident.c' l='65' u='c'/>
+<use f='codebrowser/name-hash.c' l='645' u='c'/>
+<use f='codebrowser/name-hash.c' l='646' u='c'/>
+<use f='codebrowser/wildmatch.c' l='200' u='c'/>
+<dec f='include/ctype.h' l='229'/>

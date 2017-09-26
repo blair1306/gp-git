@@ -1,0 +1,9 @@
+<dec f='codebrowser/diffcore.h' l='42' type='unsigned int'/>
+<offset>530</offset>
+<doc f='codebrowser/diffcore.h' l='42'>/* data should be munmap()&apos;ed */</doc>
+<use f='codebrowser/diff-no-index.c' l='70' u='w' c='populate_from_stdin'/>
+<use f='codebrowser/diff.c' l='2894' u='w' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2902' u='w' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2934' u='r' c='diff_free_filespec_blob'/>
+<use f='codebrowser/diff.c' l='2937' u='r' c='diff_free_filespec_blob'/>
+<use f='codebrowser/diff.c' l='2938' u='w' c='diff_free_filespec_blob'/>

@@ -1,0 +1,35 @@
+<dec f='codebrowser/lockfile.h' l='285' type='int commit_lock_file(struct lock_file * lk)'/>
+<doc f='codebrowser/lockfile.h' l='276'>/*
+ * Commit the change represented by `lk`: close the file descriptor
+ * and/or file pointer if they are still open and rename the lockfile
+ * to its final destination. Return 0 upon success. On failure, roll
+ * back the lock file and return -1, with `errno` set to the value
+ * from the failing call to `close(2)` or `rename(2)`. It is a bug to
+ * call `commit_lock_file()` for a `lock_file` object that is not
+ * currently locked.
+ */</doc>
+<use f='codebrowser/builtin/commit.c' l='228' u='c' c='commit_index_files'/>
+<use f='codebrowser/builtin/commit.c' l='231' u='c' c='commit_index_files'/>
+<use f='codebrowser/builtin/gc.c' l='83' u='c' c='process_log_file'/>
+<use f='codebrowser/builtin/gc.c' l='87' u='c' c='process_log_file'/>
+<use f='codebrowser/builtin/gc.c' l='294' u='c' c='lock_repo_for_gc'/>
+<use f='codebrowser/builtin/receive-pack.c' l='897' u='c' c='update_shallow_ref'/>
+<use f='codebrowser/bundle.c' l='465' u='c' c='create_bundle'/>
+<use f='codebrowser/config.c' l='2620' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/config.c' l='2833' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/credential-store.c' l='66' u='c' c='rewrite_credential_file'/>
+<use f='codebrowser/fast-import.c' l='1880' u='c' c='dump_marks'/>
+<use f='codebrowser/fetch-pack.c' l='1067' u='c' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1090' u='c' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1127' u='c' c='update_shallow'/>
+<def f='codebrowser/lockfile.c' l='203' ll='215' type='int commit_lock_file(struct lock_file * lk)'/>
+<use f='codebrowser/read-cache.c' l='2325' u='c' c='commit_locked_index'/>
+<use f='codebrowser/refs.c' l='619' u='c' c='write_pseudoref'/>
+<use f='codebrowser/refs/files-backend.c' l='1434' u='c' c='commit_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='2858' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/rerere.c' l='266' u='c' c='write_rr'/>
+<use f='codebrowser/sequencer.c' l='305' u='c' c='write_message'/>
+<use f='codebrowser/sequencer.c' l='1580' u='c' c='save_head'/>
+<use f='codebrowser/sequencer.c' l='1706' u='c' c='save_todo'/>
+<use f='codebrowser/sha1_file.c' l='527' u='c' c='add_to_alternates_file'/>
+<use f='codebrowser/shallow.c' l='374' u='c' c='prune_shallow'/>

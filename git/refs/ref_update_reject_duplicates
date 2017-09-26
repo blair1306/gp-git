@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs/refs-internal.h' l='186' type='int ref_update_reject_duplicates(struct string_list * refnames, struct strbuf * err)'/>
+<def f='codebrowser/refs.c' l='1741' ll='1762' type='int ref_update_reject_duplicates(struct string_list * refnames, struct strbuf * err)'/>
+<doc f='codebrowser/refs/refs-internal.h' l='181'>/*
+ * Write an error to `err` and return a nonzero value iff the same
+ * refname appears multiple times in `refnames`. `refnames` must be
+ * sorted on entry to this function.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2440' u='c' c='files_transaction_prepare'/>
+<use f='codebrowser/refs/files-backend.c' l='2663' u='c' c='files_initial_transaction_commit'/>

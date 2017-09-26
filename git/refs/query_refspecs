@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='176' type='int query_refspecs(struct refspec * specs, int nr, struct refspec * query)'/>
+<use f='codebrowser/builtin/push.c' l='55' u='c' c='map_refspec'/>
+<def f='codebrowser/remote.c' l='872' ll='901' type='int query_refspecs(struct refspec * refs, int ref_count, struct refspec * query)'/>
+<use f='codebrowser/remote.c' l='911' u='c' c='apply_refspecs'/>
+<use f='codebrowser/remote.c' l='919' u='c' c='remote_find_tracking'/>

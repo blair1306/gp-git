@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='685'/>
+<use f='codebrowser/builtin/hash-object.c' l='42' u='c'/>
+<use f='codebrowser/builtin/hash-object.c' l='97' u='c'/>
+<use f='codebrowser/builtin/hash-object.c' l='111' u='c'/>
+<use f='codebrowser/builtin/replace.c' l='268' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='284' u='c'/>
+<use f='codebrowser/bulk-checkin.c' l='103' u='c'/>
+<use f='codebrowser/bulk-checkin.c' l='172' u='c'/>
+<use f='codebrowser/bulk-checkin.c' l='207' u='c'/>
+<use f='codebrowser/notes-merge.c' l='712' u='c'/>
+<use f='codebrowser/read-cache.c' l='692' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3416' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3513' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3551' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3672' u='c'/>

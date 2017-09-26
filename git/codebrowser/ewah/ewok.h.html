@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ewok.h source code [codebrowser/ewah/ewok.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="bitmap,ewah_bitmap,ewah_iterator "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/ewah/ewok.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>ewah</a>/<a href='ewok.h.html'>ewok.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="2">2</th><td><i class="doc"> * Copyright 2013, GitHub, Inc</i></td></tr>
+<tr><th id="3">3</th><td><i class="doc"> * Copyright 2009-2013, Daniel Lemire, Cliff Moon,</i></td></tr>
+<tr><th id="4">4</th><td><i class="doc"> *	David McIntosh, Robert Becho, Google Inc. and Veronika Zenz</i></td></tr>
+<tr><th id="5">5</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="6">6</th><td><i class="doc"> * This program is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i class="doc"> * modify it under the terms of the GNU General Public License</i></td></tr>
+<tr><th id="8">8</th><td><i class="doc"> * as published by the Free Software Foundation; either version 2</i></td></tr>
+<tr><th id="9">9</th><td><i class="doc"> * of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="11">11</th><td><i class="doc"> * This program is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i class="doc"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i class="doc"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</i></td></tr>
+<tr><th id="14">14</th><td><i class="doc"> * GNU General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="16">16</th><td><i class="doc"> * You should have received a copy of the GNU General Public License</i></td></tr>
+<tr><th id="17">17</th><td><i class="doc"> * along with this program; if not, write to the Free Software</i></td></tr>
+<tr><th id="18">18</th><td><i class="doc"> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.</i></td></tr>
+<tr><th id="19">19</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifndef</span> <span class="macro" data-ref="_M/__EWOK_BITMAP_H__">__EWOK_BITMAP_H__</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/__EWOK_BITMAP_H__" data-ref="_M/__EWOK_BITMAP_H__">__EWOK_BITMAP_H__</dfn></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf" id="strbuf">strbuf</a>;</td></tr>
+<tr><th id="24">24</th><td><b>typedef</b> <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="typedef" id="eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</dfn>;</td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/BITS_IN_EWORD" data-ref="_M/BITS_IN_EWORD">BITS_IN_EWORD</dfn> (sizeof(eword_t) * 8)</u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="28">28</th><td><i class="doc"> * Do not use __builtin_popcountll. The GCC implementation</i></td></tr>
+<tr><th id="29">29</th><td><i class="doc"> * is notoriously slow on all platforms.</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * See: <a href="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=36041">http://gcc.gnu.org/bugzilla/show_bug.cgi?id=36041</a></i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="33">33</th><td><em>static</em> <b>inline</b> <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl def" id="ewah_bit_popcount64" title='ewah_bit_popcount64' data-ref="ewah_bit_popcount64">ewah_bit_popcount64</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col0 decl" id="10x" title='x' data-type='uint64_t' data-ref="10x">x</dfn>)</td></tr>
+<tr><th id="34">34</th><td>{</td></tr>
+<tr><th id="35">35</th><td>	<a class="local col0 ref" href="#10x" title='x' data-ref="10x">x</a> = (<a class="local col0 ref" href="#10x" title='x' data-ref="10x">x</a> &amp; <var>0x5555555555555555ULL</var>) + ((<a class="local col0 ref" href="#10x" title='x' data-ref="10x">x</a> &gt;&gt;  <var>1</var>) &amp; <var>0x5555555555555555ULL</var>);</td></tr>
+<tr><th id="36">36</th><td>	<a class="local col0 ref" href="#10x" title='x' data-ref="10x">x</a> = (<a class="local col0 ref" href="#10x" title='x' data-ref="10x">x</a> &amp; <var>0x3333333333333333ULL</var>) + ((<a class="local col0 ref" href="#10x" title='x' data-ref="10x">x</a> &gt;&gt;  <var>2</var>) &amp; <var>0x3333333333333333ULL</var>);</td></tr>
+<tr><th id="37">37</th><td>	<a class="local col0 ref" href="#10x" title='x' data-ref="10x">x</a> = (<a class="local col0 ref" href="#10x" title='x' data-ref="10x">x</a> &amp; <var>0x0F0F0F0F0F0F0F0FULL</var>) + ((<a class="local col0 ref" href="#10x" title='x' data-ref="10x">x</a> &gt;&gt;  <var>4</var>) &amp; <var>0x0F0F0F0F0F0F0F0FULL</var>);</td></tr>
+<tr><th id="38">38</th><td>	<b>return</b> (<a class="local col0 ref" href="#10x" title='x' data-ref="10x">x</a> * <var>0x0101010101010101ULL</var>) &gt;&gt; <var>56</var>;</td></tr>
+<tr><th id="39">39</th><td>}</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><i>/* __builtin_ctzll was not available until 3.4.0 */</i></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="42">if</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; (<span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> &gt; 3 || (<span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span> == 3  &amp;&amp; __GNUC_MINOR &gt; 3))</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/ewah_bit_ctz64" data-ref="_M/ewah_bit_ctz64">ewah_bit_ctz64</dfn>(x) __builtin_ctzll(x)</u></td></tr>
+<tr><th id="44">44</th><td><u>#<span data-ppcond="42">else</span></u></td></tr>
+<tr><th id="45">45</th><td><em>static</em> <b>inline</b> <em>int</em> ewah_bit_ctz64(uint64_t x)</td></tr>
+<tr><th id="46">46</th><td>{</td></tr>
+<tr><th id="47">47</th><td>	<em>int</em> n = <var>0</var>;</td></tr>
+<tr><th id="48">48</th><td>	<b>if</b> ((x &amp; <var>0xffffffff</var>) == <var>0</var>) { x &gt;&gt;= <var>32</var>; n += <var>32</var>; }</td></tr>
+<tr><th id="49">49</th><td>	<b>if</b> ((x &amp;     <var>0xffff</var>) == <var>0</var>) { x &gt;&gt;= <var>16</var>; n += <var>16</var>; }</td></tr>
+<tr><th id="50">50</th><td>	<b>if</b> ((x &amp;       <var>0xff</var>) == <var>0</var>) { x &gt;&gt;=  <var>8</var>; n +=  <var>8</var>; }</td></tr>
+<tr><th id="51">51</th><td>	<b>if</b> ((x &amp;        <var>0xf</var>) == <var>0</var>) { x &gt;&gt;=  <var>4</var>; n +=  <var>4</var>; }</td></tr>
+<tr><th id="52">52</th><td>	<b>if</b> ((x &amp;        <var>0x3</var>) == <var>0</var>) { x &gt;&gt;=  <var>2</var>; n +=  <var>2</var>; }</td></tr>
+<tr><th id="53">53</th><td>	<b>if</b> ((x &amp;        <var>0x1</var>) == <var>0</var>) { x &gt;&gt;=  <var>1</var>; n +=  <var>1</var>; }</td></tr>
+<tr><th id="54">54</th><td>	<b>return</b> n + !x;</td></tr>
+<tr><th id="55">55</th><td>}</td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="42">endif</span></u></td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><b>struct</b> <dfn class="type def" id="ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</dfn> {</td></tr>
+<tr><th id="59">59</th><td>	<a class="typedef" href="#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="decl" id="ewah_bitmap::buffer" title='ewah_bitmap::buffer' data-ref="ewah_bitmap::buffer">buffer</dfn>;</td></tr>
+<tr><th id="60">60</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="ewah_bitmap::buffer_size" title='ewah_bitmap::buffer_size' data-ref="ewah_bitmap::buffer_size">buffer_size</dfn>;</td></tr>
+<tr><th id="61">61</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="ewah_bitmap::alloc_size" title='ewah_bitmap::alloc_size' data-ref="ewah_bitmap::alloc_size">alloc_size</dfn>;</td></tr>
+<tr><th id="62">62</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="ewah_bitmap::bit_size" title='ewah_bitmap::bit_size' data-ref="ewah_bitmap::bit_size">bit_size</dfn>;</td></tr>
+<tr><th id="63">63</th><td>	<a class="typedef" href="#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="decl" id="ewah_bitmap::rlw" title='ewah_bitmap::rlw' data-ref="ewah_bitmap::rlw">rlw</dfn>;</td></tr>
+<tr><th id="64">64</th><td>};</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="ewah_callback" title='ewah_callback' data-type='void (*)(size_t, void *)' data-ref="ewah_callback">ewah_callback</dfn>)(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="11pos" title='pos' data-type='size_t' data-ref="11pos">pos</dfn>, <em>void</em> *);</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="decl" id="ewah_pool_new" title='ewah_pool_new' data-ref="ewah_pool_new">ewah_pool_new</dfn>(<em>void</em>);</td></tr>
+<tr><th id="69">69</th><td><em>void</em> <dfn class="decl" id="ewah_pool_free" title='ewah_pool_free' data-ref="ewah_pool_free">ewah_pool_free</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col2 decl" id="12self" title='self' data-type='struct ewah_bitmap *' data-ref="12self">self</dfn>);</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> * Allocate a new EWAH Compressed bitmap</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="74">74</th><td><b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="decl" id="ewah_new" title='ewah_new' data-ref="ewah_new">ewah_new</dfn>(<em>void</em>);</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * Clear all the bits in the bitmap. Does not free or resize</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * memory.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="80">80</th><td><em>void</em> <dfn class="decl" id="ewah_clear" title='ewah_clear' data-ref="ewah_clear">ewah_clear</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col3 decl" id="13self" title='self' data-type='struct ewah_bitmap *' data-ref="13self">self</dfn>);</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> * Free all the memory of the bitmap</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="85">85</th><td><em>void</em> <dfn class="decl" id="ewah_free" title='ewah_free' data-ref="ewah_free">ewah_free</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col4 decl" id="14self" title='self' data-type='struct ewah_bitmap *' data-ref="14self">self</dfn>);</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><em>int</em> <dfn class="decl" id="ewah_serialize_to" title='ewah_serialize_to' data-ref="ewah_serialize_to">ewah_serialize_to</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col5 decl" id="15self" title='self' data-type='struct ewah_bitmap *' data-ref="15self">self</dfn>,</td></tr>
+<tr><th id="88">88</th><td>		      <em>int</em> (*<dfn class="local col6 decl" id="16write_fun" title='write_fun' data-type='int (*)(void *, const void *, size_t)' data-ref="16write_fun">write_fun</dfn>)(<em>void</em> *<dfn class="local col7 decl" id="17out" title='out' data-type='void *' data-ref="17out">out</dfn>, <em>const</em> <em>void</em> *<dfn class="local col8 decl" id="18buf" title='buf' data-type='const void *' data-ref="18buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="19len" title='len' data-type='size_t' data-ref="19len">len</dfn>),</td></tr>
+<tr><th id="89">89</th><td>		      <em>void</em> *<dfn class="local col0 decl" id="20out" title='out' data-type='void *' data-ref="20out">out</dfn>);</td></tr>
+<tr><th id="90">90</th><td><em>int</em> <dfn class="decl" id="ewah_serialize" title='ewah_serialize' data-ref="ewah_serialize">ewah_serialize</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col1 decl" id="21self" title='self' data-type='struct ewah_bitmap *' data-ref="21self">self</dfn>, <em>int</em> <dfn class="local col2 decl" id="22fd" title='fd' data-type='int' data-ref="22fd">fd</dfn>);</td></tr>
+<tr><th id="91">91</th><td><em>int</em> <dfn class="decl" id="ewah_serialize_native" title='ewah_serialize_native' data-ref="ewah_serialize_native">ewah_serialize_native</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col3 decl" id="23self" title='self' data-type='struct ewah_bitmap *' data-ref="23self">self</dfn>, <em>int</em> <dfn class="local col4 decl" id="24fd" title='fd' data-type='int' data-ref="24fd">fd</dfn>);</td></tr>
+<tr><th id="92">92</th><td><em>int</em> <dfn class="decl" id="ewah_serialize_strbuf" title='ewah_serialize_strbuf' data-ref="ewah_serialize_strbuf">ewah_serialize_strbuf</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col5 decl" id="25self" title='self' data-type='struct ewah_bitmap *' data-ref="25self">self</dfn>, <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *);</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><em>int</em> <dfn class="decl" id="ewah_deserialize" title='ewah_deserialize' data-ref="ewah_deserialize">ewah_deserialize</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col6 decl" id="26self" title='self' data-type='struct ewah_bitmap *' data-ref="26self">self</dfn>, <em>int</em> <dfn class="local col7 decl" id="27fd" title='fd' data-type='int' data-ref="27fd">fd</dfn>);</td></tr>
+<tr><th id="95">95</th><td><em>int</em> <dfn class="decl" id="ewah_read_mmap" title='ewah_read_mmap' data-ref="ewah_read_mmap">ewah_read_mmap</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col8 decl" id="28self" title='self' data-type='struct ewah_bitmap *' data-ref="28self">self</dfn>, <em>const</em> <em>void</em> *<dfn class="local col9 decl" id="29map" title='map' data-type='const void *' data-ref="29map">map</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="30len" title='len' data-type='size_t' data-ref="30len">len</dfn>);</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="ewah_checksum" title='ewah_checksum' data-ref="ewah_checksum">ewah_checksum</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col1 decl" id="31self" title='self' data-type='struct ewah_bitmap *' data-ref="31self">self</dfn>);</td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> * Logical not (bitwise negation) in-place on the bitmap</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * This operation is linear time based on the size of the bitmap.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="104">104</th><td><em>void</em> <dfn class="decl" id="ewah_not" title='ewah_not' data-ref="ewah_not">ewah_not</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col2 decl" id="32self" title='self' data-type='struct ewah_bitmap *' data-ref="32self">self</dfn>);</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> * Call the given callback with the position of every single bit</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> * that has been set on the bitmap.</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * This is an efficient operation that does not fully decompress</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * the bitmap.</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="113">113</th><td><em>void</em> <dfn class="decl" id="ewah_each_bit" title='ewah_each_bit' data-ref="ewah_each_bit">ewah_each_bit</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col3 decl" id="33self" title='self' data-type='struct ewah_bitmap *' data-ref="33self">self</dfn>, <a class="typedef" href="#ewah_callback" title='ewah_callback' data-type='void (*)(size_t, void *)' data-ref="ewah_callback">ewah_callback</a> <dfn class="local col4 decl" id="34callback" title='callback' data-type='ewah_callback' data-ref="34callback">callback</dfn>, <em>void</em> *<dfn class="local col5 decl" id="35payload" title='payload' data-type='void *' data-ref="35payload">payload</dfn>);</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> * Set a given bit on the bitmap.</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> * The bit at position `pos` will be set to true. Because of the</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * way that the bitmap is compressed, a set bit cannot be unset</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * later on.</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> * Furthermore, since the bitmap uses streaming compression, bits</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> * can only set incrementally.</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> * E.g.</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *		ewah_set(bitmap, 1); // ok</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> *		ewah_set(bitmap, 76); // ok</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> *		ewah_set(bitmap, 77); // ok</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> *		ewah_set(bitmap, 8712800127); // ok</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> *		ewah_set(bitmap, 25); // failed, assert raised</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="132">132</th><td><em>void</em> <dfn class="decl" id="ewah_set" title='ewah_set' data-ref="ewah_set">ewah_set</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col6 decl" id="36self" title='self' data-type='struct ewah_bitmap *' data-ref="36self">self</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="37i" title='i' data-type='size_t' data-ref="37i">i</dfn>);</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><b>struct</b> <dfn class="type def" id="ewah_iterator" title='ewah_iterator' data-ref="ewah_iterator">ewah_iterator</dfn> {</td></tr>
+<tr><th id="135">135</th><td>	<em>const</em> <a class="typedef" href="#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="decl" id="ewah_iterator::buffer" title='ewah_iterator::buffer' data-ref="ewah_iterator::buffer">buffer</dfn>;</td></tr>
+<tr><th id="136">136</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="ewah_iterator::buffer_size" title='ewah_iterator::buffer_size' data-ref="ewah_iterator::buffer_size">buffer_size</dfn>;</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="ewah_iterator::pointer" title='ewah_iterator::pointer' data-ref="ewah_iterator::pointer">pointer</dfn>;</td></tr>
+<tr><th id="139">139</th><td>	<a class="typedef" href="#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> <dfn class="decl" id="ewah_iterator::compressed" title='ewah_iterator::compressed' data-ref="ewah_iterator::compressed">compressed</dfn>, <dfn class="decl" id="ewah_iterator::literals" title='ewah_iterator::literals' data-ref="ewah_iterator::literals">literals</dfn>;</td></tr>
+<tr><th id="140">140</th><td>	<a class="typedef" href="#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> <dfn class="decl" id="ewah_iterator::rl" title='ewah_iterator::rl' data-ref="ewah_iterator::rl">rl</dfn>, <dfn class="decl" id="ewah_iterator::lw" title='ewah_iterator::lw' data-ref="ewah_iterator::lw">lw</dfn>;</td></tr>
+<tr><th id="141">141</th><td>	<em>int</em> <dfn class="decl" id="ewah_iterator::b" title='ewah_iterator::b' data-ref="ewah_iterator::b">b</dfn>;</td></tr>
+<tr><th id="142">142</th><td>};</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> * Initialize a new iterator to run through the bitmap in uncompressed form.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> * The iterator can be stack allocated. The underlying bitmap must not be freed</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> * before the iteration is over.</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> * E.g.</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> *		struct ewah_bitmap *bitmap = ewah_new();</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> *		struct ewah_iterator it;</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> *		ewah_iterator_init(&amp;it, bitmap);</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="157">157</th><td><em>void</em> <dfn class="decl" id="ewah_iterator_init" title='ewah_iterator_init' data-ref="ewah_iterator_init">ewah_iterator_init</dfn>(<b>struct</b> <a class="type" href="#ewah_iterator" title='ewah_iterator' data-ref="ewah_iterator">ewah_iterator</a> *<dfn class="local col8 decl" id="38it" title='it' data-type='struct ewah_iterator *' data-ref="38it">it</dfn>, <b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col9 decl" id="39parent" title='parent' data-type='struct ewah_bitmap *' data-ref="39parent">parent</dfn>);</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> * Yield every single word in the bitmap in uncompressed form. This is:</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> * yield single words (32-64 bits) where each bit represents an actual</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> * bit from the bitmap.</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> * Return: true if a word was yield, false if there are no words left</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="166">166</th><td><em>int</em> <dfn class="decl" id="ewah_iterator_next" title='ewah_iterator_next' data-ref="ewah_iterator_next">ewah_iterator_next</dfn>(<a class="typedef" href="#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="local col0 decl" id="40next" title='next' data-type='eword_t *' data-ref="40next">next</dfn>, <b>struct</b> <a class="type" href="#ewah_iterator" title='ewah_iterator' data-ref="ewah_iterator">ewah_iterator</a> *<dfn class="local col1 decl" id="41it" title='it' data-type='struct ewah_iterator *' data-ref="41it">it</dfn>);</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><em>void</em> <dfn class="decl" id="ewah_or" title='ewah_or' data-ref="ewah_or">ewah_or</dfn>(</td></tr>
+<tr><th id="169">169</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col2 decl" id="42ewah_i" title='ewah_i' data-type='struct ewah_bitmap *' data-ref="42ewah_i">ewah_i</dfn>,</td></tr>
+<tr><th id="170">170</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col3 decl" id="43ewah_j" title='ewah_j' data-type='struct ewah_bitmap *' data-ref="43ewah_j">ewah_j</dfn>,</td></tr>
+<tr><th id="171">171</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col4 decl" id="44out" title='out' data-type='struct ewah_bitmap *' data-ref="44out">out</dfn>);</td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td><em>void</em> <dfn class="decl" id="ewah_and_not" title='ewah_and_not' data-ref="ewah_and_not">ewah_and_not</dfn>(</td></tr>
+<tr><th id="174">174</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col5 decl" id="45ewah_i" title='ewah_i' data-type='struct ewah_bitmap *' data-ref="45ewah_i">ewah_i</dfn>,</td></tr>
+<tr><th id="175">175</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col6 decl" id="46ewah_j" title='ewah_j' data-type='struct ewah_bitmap *' data-ref="46ewah_j">ewah_j</dfn>,</td></tr>
+<tr><th id="176">176</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col7 decl" id="47out" title='out' data-type='struct ewah_bitmap *' data-ref="47out">out</dfn>);</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td><em>void</em> <dfn class="decl" id="ewah_xor" title='ewah_xor' data-ref="ewah_xor">ewah_xor</dfn>(</td></tr>
+<tr><th id="179">179</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col8 decl" id="48ewah_i" title='ewah_i' data-type='struct ewah_bitmap *' data-ref="48ewah_i">ewah_i</dfn>,</td></tr>
+<tr><th id="180">180</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col9 decl" id="49ewah_j" title='ewah_j' data-type='struct ewah_bitmap *' data-ref="49ewah_j">ewah_j</dfn>,</td></tr>
+<tr><th id="181">181</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col0 decl" id="50out" title='out' data-type='struct ewah_bitmap *' data-ref="50out">out</dfn>);</td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td><em>void</em> <dfn class="decl" id="ewah_and" title='ewah_and' data-ref="ewah_and">ewah_and</dfn>(</td></tr>
+<tr><th id="184">184</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col1 decl" id="51ewah_i" title='ewah_i' data-type='struct ewah_bitmap *' data-ref="51ewah_i">ewah_i</dfn>,</td></tr>
+<tr><th id="185">185</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col2 decl" id="52ewah_j" title='ewah_j' data-type='struct ewah_bitmap *' data-ref="52ewah_j">ewah_j</dfn>,</td></tr>
+<tr><th id="186">186</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col3 decl" id="53out" title='out' data-type='struct ewah_bitmap *' data-ref="53out">out</dfn>);</td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> * Direct word access</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="191">191</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="ewah_add_empty_words" title='ewah_add_empty_words' data-ref="ewah_add_empty_words">ewah_add_empty_words</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col4 decl" id="54self" title='self' data-type='struct ewah_bitmap *' data-ref="54self">self</dfn>, <em>int</em> <dfn class="local col5 decl" id="55v" title='v' data-type='int' data-ref="55v">v</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="56number" title='number' data-type='size_t' data-ref="56number">number</dfn>);</td></tr>
+<tr><th id="192">192</th><td><em>void</em> <dfn class="decl" id="ewah_add_dirty_words" title='ewah_add_dirty_words' data-ref="ewah_add_dirty_words">ewah_add_dirty_words</dfn>(</td></tr>
+<tr><th id="193">193</th><td>	<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col7 decl" id="57self" title='self' data-type='struct ewah_bitmap *' data-ref="57self">self</dfn>, <em>const</em> <a class="typedef" href="#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="local col8 decl" id="58buffer" title='buffer' data-type='const eword_t *' data-ref="58buffer">buffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="59number" title='number' data-type='size_t' data-ref="59number">number</dfn>, <em>int</em> <dfn class="local col0 decl" id="60negate" title='negate' data-type='int' data-ref="60negate">negate</dfn>);</td></tr>
+<tr><th id="194">194</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="ewah_add" title='ewah_add' data-ref="ewah_add">ewah_add</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col1 decl" id="61self" title='self' data-type='struct ewah_bitmap *' data-ref="61self">self</dfn>, <a class="typedef" href="#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> <dfn class="local col2 decl" id="62word" title='word' data-type='eword_t' data-ref="62word">word</dfn>);</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> * Uncompressed, old-school bitmap that can be efficiently compressed</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> * into an `ewah_bitmap`.</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="201">201</th><td><b>struct</b> <dfn class="type def" id="bitmap" title='bitmap' data-ref="bitmap">bitmap</dfn> {</td></tr>
+<tr><th id="202">202</th><td>	<a class="typedef" href="#eword_t" title='eword_t' data-type='uint64_t' data-ref="eword_t">eword_t</a> *<dfn class="decl" id="bitmap::words" title='bitmap::words' data-ref="bitmap::words">words</dfn>;</td></tr>
+<tr><th id="203">203</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="bitmap::word_alloc" title='bitmap::word_alloc' data-ref="bitmap::word_alloc">word_alloc</dfn>;</td></tr>
+<tr><th id="204">204</th><td>};</td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td><b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="decl" id="bitmap_new" title='bitmap_new' data-ref="bitmap_new">bitmap_new</dfn>(<em>void</em>);</td></tr>
+<tr><th id="207">207</th><td><em>void</em> <dfn class="decl" id="bitmap_set" title='bitmap_set' data-ref="bitmap_set">bitmap_set</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col3 decl" id="63self" title='self' data-type='struct bitmap *' data-ref="63self">self</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="64pos" title='pos' data-type='size_t' data-ref="64pos">pos</dfn>);</td></tr>
+<tr><th id="208">208</th><td><em>void</em> <dfn class="decl" id="bitmap_clear" title='bitmap_clear' data-ref="bitmap_clear">bitmap_clear</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col5 decl" id="65self" title='self' data-type='struct bitmap *' data-ref="65self">self</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="66pos" title='pos' data-type='size_t' data-ref="66pos">pos</dfn>);</td></tr>
+<tr><th id="209">209</th><td><em>int</em> <dfn class="decl" id="bitmap_get" title='bitmap_get' data-ref="bitmap_get">bitmap_get</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col7 decl" id="67self" title='self' data-type='struct bitmap *' data-ref="67self">self</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="68pos" title='pos' data-type='size_t' data-ref="68pos">pos</dfn>);</td></tr>
+<tr><th id="210">210</th><td><em>void</em> <dfn class="decl" id="bitmap_reset" title='bitmap_reset' data-ref="bitmap_reset">bitmap_reset</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col9 decl" id="69self" title='self' data-type='struct bitmap *' data-ref="69self">self</dfn>);</td></tr>
+<tr><th id="211">211</th><td><em>void</em> <dfn class="decl" id="bitmap_free" title='bitmap_free' data-ref="bitmap_free">bitmap_free</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col0 decl" id="70self" title='self' data-type='struct bitmap *' data-ref="70self">self</dfn>);</td></tr>
+<tr><th id="212">212</th><td><em>int</em> <dfn class="decl" id="bitmap_equals" title='bitmap_equals' data-ref="bitmap_equals">bitmap_equals</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col1 decl" id="71self" title='self' data-type='struct bitmap *' data-ref="71self">self</dfn>, <b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col2 decl" id="72other" title='other' data-type='struct bitmap *' data-ref="72other">other</dfn>);</td></tr>
+<tr><th id="213">213</th><td><em>int</em> <dfn class="decl" id="bitmap_is_subset" title='bitmap_is_subset' data-ref="bitmap_is_subset">bitmap_is_subset</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col3 decl" id="73self" title='self' data-type='struct bitmap *' data-ref="73self">self</dfn>, <b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col4 decl" id="74super" title='super' data-type='struct bitmap *' data-ref="74super">super</dfn>);</td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td><b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> * <dfn class="decl" id="bitmap_to_ewah" title='bitmap_to_ewah' data-ref="bitmap_to_ewah">bitmap_to_ewah</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col5 decl" id="75bitmap" title='bitmap' data-type='struct bitmap *' data-ref="75bitmap">bitmap</dfn>);</td></tr>
+<tr><th id="216">216</th><td><b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="decl" id="ewah_to_bitmap" title='ewah_to_bitmap' data-ref="ewah_to_bitmap">ewah_to_bitmap</dfn>(<b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col6 decl" id="76ewah" title='ewah' data-type='struct ewah_bitmap *' data-ref="76ewah">ewah</dfn>);</td></tr>
+<tr><th id="217">217</th><td></td></tr>
+<tr><th id="218">218</th><td><em>void</em> <dfn class="decl" id="bitmap_and_not" title='bitmap_and_not' data-ref="bitmap_and_not">bitmap_and_not</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col7 decl" id="77self" title='self' data-type='struct bitmap *' data-ref="77self">self</dfn>, <b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col8 decl" id="78other" title='other' data-type='struct bitmap *' data-ref="78other">other</dfn>);</td></tr>
+<tr><th id="219">219</th><td><em>void</em> <dfn class="decl" id="bitmap_or_ewah" title='bitmap_or_ewah' data-ref="bitmap_or_ewah">bitmap_or_ewah</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col9 decl" id="79self" title='self' data-type='struct bitmap *' data-ref="79self">self</dfn>, <b>struct</b> <a class="type" href="#ewah_bitmap" title='ewah_bitmap' data-ref="ewah_bitmap">ewah_bitmap</a> *<dfn class="local col0 decl" id="80other" title='other' data-type='struct ewah_bitmap *' data-ref="80other">other</dfn>);</td></tr>
+<tr><th id="220">220</th><td><em>void</em> <dfn class="decl" id="bitmap_or" title='bitmap_or' data-ref="bitmap_or">bitmap_or</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col1 decl" id="81self" title='self' data-type='struct bitmap *' data-ref="81self">self</dfn>, <em>const</em> <b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col2 decl" id="82other" title='other' data-type='const struct bitmap *' data-ref="82other">other</dfn>);</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td><em>void</em> <dfn class="decl" id="bitmap_each_bit" title='bitmap_each_bit' data-ref="bitmap_each_bit">bitmap_each_bit</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col3 decl" id="83self" title='self' data-type='struct bitmap *' data-ref="83self">self</dfn>, <a class="typedef" href="#ewah_callback" title='ewah_callback' data-type='void (*)(size_t, void *)' data-ref="ewah_callback">ewah_callback</a> <dfn class="local col4 decl" id="84callback" title='callback' data-type='ewah_callback' data-ref="84callback">callback</dfn>, <em>void</em> *<dfn class="local col5 decl" id="85data" title='data' data-type='void *' data-ref="85data">data</dfn>);</td></tr>
+<tr><th id="223">223</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="bitmap_popcount" title='bitmap_popcount' data-ref="bitmap_popcount">bitmap_popcount</dfn>(<b>struct</b> <a class="type" href="#bitmap" title='bitmap' data-ref="bitmap">bitmap</a> *<dfn class="local col6 decl" id="86self" title='self' data-type='struct bitmap *' data-ref="86self">self</dfn>);</td></tr>
+<tr><th id="224">224</th><td></td></tr>
+<tr><th id="225">225</th><td><u>#<span data-ppcond="20">endif</span></u></td></tr>
+<tr><th id="226">226</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../builtin/pack-objects.c.html'>codebrowser/builtin/pack-objects.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

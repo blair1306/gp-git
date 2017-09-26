@@ -1,0 +1,54 @@
+<dec f='codebrowser/refs/refs-internal.h' l='174' type='const char []'/>
+<use f='codebrowser/refs.c' l='911' u='r' c='ref_transaction_add_update'/>
+<offset>640</offset>
+<use f='codebrowser/refs/files-backend.c' l='2093' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2093' u='r' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2107' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2153' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2158' u='r' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2197' u='r' c='original_update_refname'/>
+<use f='codebrowser/refs/files-backend.c' l='2270' u='r' c='lock_ref_for_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2358' c='lock_ref_for_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2373' c='lock_ref_for_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2430' u='r' c='files_transaction_prepare'/>
+<use f='codebrowser/refs/files-backend.c' l='2616' u='r' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2661' u='r' c='files_initial_transaction_commit'/>
+<use f='codebrowser/refs/files-backend.c' l='2690' u='r' c='files_initial_transaction_commit'/>
+<use f='codebrowser/refs/files-backend.c' l='2708' u='r' c='files_initial_transaction_commit'/>

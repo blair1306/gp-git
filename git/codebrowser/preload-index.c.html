@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>preload-index.c source code [codebrowser/preload-index.c] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="thread_data "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/preload-index.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='preload-index.c.html'>preload-index.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2008 Linus Torvalds</i></td></tr>
+<tr><th id="3">3</th><td><i> */</i></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="pathspec.h.html">"pathspec.h"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="dir.h.html">"dir.h"</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><u>#<span data-ppcond="8">ifdef</span> <span class="macro" data-ref="_M/NO_PTHREADS">NO_PTHREADS</span></u></td></tr>
+<tr><th id="9">9</th><td><em>static</em> <em>void</em> preload_index(<b>struct</b> index_state *index,</td></tr>
+<tr><th id="10">10</th><td>			  <em>const</em> <b>struct</b> pathspec *pathspec)</td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td>	; <i>/* nothing */</i></td></tr>
+<tr><th id="13">13</th><td>}</td></tr>
+<tr><th id="14">14</th><td><u>#<span data-ppcond="8">else</span></u></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="../include/pthread.h.html">&lt;pthread.h&gt;</a></u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><i>/*</i></td></tr>
+<tr><th id="19">19</th><td><i> * Mostly randomly chosen maximum thread counts: we</i></td></tr>
+<tr><th id="20">20</th><td><i> * cap the parallelism to 20 threads, and we want</i></td></tr>
+<tr><th id="21">21</th><td><i> * to have at least 500 lstat's per thread for it to</i></td></tr>
+<tr><th id="22">22</th><td><i> * be worth starting a thread.</i></td></tr>
+<tr><th id="23">23</th><td><i> */</i></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/MAX_PARALLEL" data-ref="_M/MAX_PARALLEL">MAX_PARALLEL</dfn> (20)</u></td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/THREAD_COST" data-ref="_M/THREAD_COST">THREAD_COST</dfn> (500)</u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><b>struct</b> <dfn class="type def" id="thread_data" title='thread_data' data-ref="thread_data">thread_data</dfn> {</td></tr>
+<tr><th id="28">28</th><td>	<a class="typedef" href="../include/x86_64-linux-gnu/bits/pthreadtypes.h.html#pthread_t" title='pthread_t' data-type='unsigned long' data-ref="pthread_t">pthread_t</a> <dfn class="tu decl" id="thread_data::pthread" title='thread_data::pthread' data-type='pthread_t' data-ref="thread_data::pthread">pthread</dfn>;</td></tr>
+<tr><th id="29">29</th><td>	<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="tu decl" id="thread_data::index" title='thread_data::index' data-type='struct index_state *' data-ref="thread_data::index">index</dfn>;</td></tr>
+<tr><th id="30">30</th><td>	<b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> <dfn class="tu decl" id="thread_data::pathspec" title='thread_data::pathspec' data-type='struct pathspec' data-ref="thread_data::pathspec">pathspec</dfn>;</td></tr>
+<tr><th id="31">31</th><td>	<em>int</em> <dfn class="tu decl" id="thread_data::offset" title='thread_data::offset' data-type='int' data-ref="thread_data::offset">offset</dfn>, <dfn class="tu decl" id="thread_data::nr" title='thread_data::nr' data-type='int' data-ref="thread_data::nr">nr</dfn>;</td></tr>
+<tr><th id="32">32</th><td>};</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><em>static</em> <em>void</em> *<dfn class="tu decl def" id="preload_thread" title='preload_thread' data-type='void * preload_thread(void * _data)' data-ref="preload_thread">preload_thread</dfn>(<em>void</em> *<dfn class="local col1 decl" id="1_data" title='_data' data-type='void *' data-ref="1_data">_data</dfn>)</td></tr>
+<tr><th id="35">35</th><td>{</td></tr>
+<tr><th id="36">36</th><td>	<em>int</em> <dfn class="local col2 decl" id="2nr" title='nr' data-type='int' data-ref="2nr">nr</dfn>;</td></tr>
+<tr><th id="37">37</th><td>	<b>struct</b> <a class="type" href="#thread_data" title='thread_data' data-ref="thread_data">thread_data</a> *<dfn class="local col3 decl" id="3p" title='p' data-type='struct thread_data *' data-ref="3p">p</dfn> = <a class="local col1 ref" href="#1_data" title='_data' data-ref="1_data">_data</a>;</td></tr>
+<tr><th id="38">38</th><td>	<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col4 decl" id="4index" title='index' data-type='struct index_state *' data-ref="4index">index</dfn> = <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="tu ref" href="#thread_data::index" title='thread_data::index' data-use='r' data-ref="thread_data::index">index</a>;</td></tr>
+<tr><th id="39">39</th><td>	<b>struct</b> <a class="type" href="cache.h.html#cache_entry" title='cache_entry' data-ref="cache_entry">cache_entry</a> **<dfn class="local col5 decl" id="5cep" title='cep' data-type='struct cache_entry **' data-ref="5cep">cep</dfn> = <a class="local col4 ref" href="#4index" title='index' data-ref="4index">index</a>-&gt;<a class="ref" href="cache.h.html#index_state::cache" title='index_state::cache' data-ref="index_state::cache">cache</a> + <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="tu ref" href="#thread_data::offset" title='thread_data::offset' data-use='r' data-ref="thread_data::offset">offset</a>;</td></tr>
+<tr><th id="40">40</th><td>	<b>struct</b> <a class="type" href="cache.h.html#cache_def" title='cache_def' data-ref="cache_def">cache_def</a> <dfn class="local col6 decl" id="6cache" title='cache' data-type='struct cache_def' data-ref="6cache">cache</dfn> = <a class="macro" href="cache.h.html#1514" title="{ { .alloc = 0, .len = 0, .buf = strbuf_slopbuf }, 0, 0, 0 }" data-ref="_M/CACHE_DEF_INIT">CACHE_DEF_INIT</a>;</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>	<a class="local col2 ref" href="#2nr" title='nr' data-ref="2nr">nr</a> = <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="tu ref" href="#thread_data::nr" title='thread_data::nr' data-use='r' data-ref="thread_data::nr">nr</a>;</td></tr>
+<tr><th id="43">43</th><td>	<b>if</b> (<a class="local col2 ref" href="#2nr" title='nr' data-ref="2nr">nr</a> + <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="tu ref" href="#thread_data::offset" title='thread_data::offset' data-use='r' data-ref="thread_data::offset">offset</a> &gt; <a class="local col4 ref" href="#4index" title='index' data-ref="4index">index</a>-&gt;<a class="ref" href="cache.h.html#index_state::cache_nr" title='index_state::cache_nr' data-ref="index_state::cache_nr">cache_nr</a>)</td></tr>
+<tr><th id="44">44</th><td>		<a class="local col2 ref" href="#2nr" title='nr' data-ref="2nr">nr</a> = <a class="local col4 ref" href="#4index" title='index' data-ref="4index">index</a>-&gt;<a class="ref" href="cache.h.html#index_state::cache_nr" title='index_state::cache_nr' data-ref="index_state::cache_nr">cache_nr</a> - <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="tu ref" href="#thread_data::offset" title='thread_data::offset' data-use='r' data-ref="thread_data::offset">offset</a>;</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td>	<b>do</b> {</td></tr>
+<tr><th id="47">47</th><td>		<b>struct</b> <a class="type" href="cache.h.html#cache_entry" title='cache_entry' data-ref="cache_entry">cache_entry</a> *<dfn class="local col7 decl" id="7ce" title='ce' data-type='struct cache_entry *' data-ref="7ce">ce</dfn> = *<a class="local col5 ref" href="#5cep" title='cep' data-ref="5cep">cep</a>++;</td></tr>
+<tr><th id="48">48</th><td>		<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/bits/stat.h.html#stat" title='stat' data-ref="stat">stat</a> <dfn class="local col8 decl" id="8st" title='st' data-type='struct stat' data-ref="8st">st</dfn>;</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>		<b>if</b> (<a class="macro" href="cache.h.html#267" title="(((0x3000) &amp; (ce)-&gt;ce_flags) &gt;&gt; 12)" data-ref="_M/ce_stage">ce_stage</a>(<a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>))</td></tr>
+<tr><th id="51">51</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="52">52</th><td>		<b>if</b> (<a class="macro" href="cache.h.html#103" title="(((ce-&gt;ce_mode) &amp; 0170000) == 0160000)" data-ref="_M/S_ISGITLINK">S_ISGITLINK</a>(<a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>-&gt;<a class="ref" href="cache.h.html#cache_entry::ce_mode" title='cache_entry::ce_mode' data-ref="cache_entry::ce_mode">ce_mode</a>))</td></tr>
+<tr><th id="53">53</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="54">54</th><td>		<b>if</b> (<a class="macro" href="cache.h.html#268" title="((ce)-&gt;ce_flags &amp; (1 &lt;&lt; 18))" data-ref="_M/ce_uptodate">ce_uptodate</a>(<a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>))</td></tr>
+<tr><th id="55">55</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="56">56</th><td>		<b>if</b> (<a class="macro" href="cache.h.html#269" title="((ce)-&gt;ce_flags &amp; (1 &lt;&lt; 30))" data-ref="_M/ce_skip_worktree">ce_skip_worktree</a>(<a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>))</td></tr>
+<tr><th id="57">57</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="58">58</th><td>		<b>if</b> (!<a class="ref" href="dir.h.html#ce_path_match" title='ce_path_match' data-ref="ce_path_match">ce_path_match</a>(<a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>, &amp;<a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="tu ref" href="#thread_data::pathspec" title='thread_data::pathspec' data-use='a' data-ref="thread_data::pathspec">pathspec</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>))</td></tr>
+<tr><th id="59">59</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="60">60</th><td>		<b>if</b> (<a class="ref" href="cache.h.html#threaded_has_symlink_leading_path" title='threaded_has_symlink_leading_path' data-ref="threaded_has_symlink_leading_path">threaded_has_symlink_leading_path</a>(&amp;<a class="local col6 ref" href="#6cache" title='cache' data-ref="6cache">cache</a>, <a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>-&gt;<a class="ref" href="cache.h.html#cache_entry::name" title='cache_entry::name' data-ref="cache_entry::name">name</a>, <a class="macro" href="cache.h.html#265" title="((ce)-&gt;ce_namelen)" data-ref="_M/ce_namelen">ce_namelen</a>(<a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>)))</td></tr>
+<tr><th id="61">61</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="62">62</th><td>		<b>if</b> (<a class="ref" href="../include/x86_64-linux-gnu/sys/stat.h.html#266" title='lstat' data-ref="lstat64">lstat</a>(<a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>-&gt;<a class="ref" href="cache.h.html#cache_entry::name" title='cache_entry::name' data-ref="cache_entry::name">name</a>, &amp;<a class="local col8 ref" href="#8st" title='st' data-ref="8st">st</a>))</td></tr>
+<tr><th id="63">63</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="64">64</th><td>		<b>if</b> (<a class="ref" href="cache.h.html#ie_match_stat" title='ie_match_stat' data-ref="ie_match_stat">ie_match_stat</a>(<a class="local col4 ref" href="#4index" title='index' data-ref="4index">index</a>, <a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>, &amp;<a class="local col8 ref" href="#8st" title='st' data-ref="8st">st</a>, <a class="macro" href="cache.h.html#675" title="02" data-ref="_M/CE_MATCH_RACY_IS_DIRTY">CE_MATCH_RACY_IS_DIRTY</a>))</td></tr>
+<tr><th id="65">65</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="66">66</th><td>		<a class="macro" href="cache.h.html#270" title="((ce)-&gt;ce_flags |= (1 &lt;&lt; 18))" data-ref="_M/ce_mark_uptodate">ce_mark_uptodate</a>(<a class="local col7 ref" href="#7ce" title='ce' data-ref="7ce">ce</a>);</td></tr>
+<tr><th id="67">67</th><td>	} <b>while</b> (--<a class="local col2 ref" href="#2nr" title='nr' data-ref="2nr">nr</a> &gt; <var>0</var>);</td></tr>
+<tr><th id="68">68</th><td>	<a class="ref" href="cache.h.html#cache_def_clear" title='cache_def_clear' data-ref="cache_def_clear">cache_def_clear</a>(&amp;<a class="local col6 ref" href="#6cache" title='cache' data-ref="6cache">cache</a>);</td></tr>
+<tr><th id="69">69</th><td>	<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="70">70</th><td>}</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="preload_index" title='preload_index' data-type='void preload_index(struct index_state * index, const struct pathspec * pathspec)' data-ref="preload_index">preload_index</dfn>(<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col9 decl" id="9index" title='index' data-type='struct index_state *' data-ref="9index">index</dfn>,</td></tr>
+<tr><th id="73">73</th><td>			  <em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col0 decl" id="10pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="10pathspec">pathspec</dfn>)</td></tr>
+<tr><th id="74">74</th><td>{</td></tr>
+<tr><th id="75">75</th><td>	<em>int</em> <dfn class="local col1 decl" id="11threads" title='threads' data-type='int' data-ref="11threads">threads</dfn>, <dfn class="local col2 decl" id="12i" title='i' data-type='int' data-ref="12i">i</dfn>, <dfn class="local col3 decl" id="13work" title='work' data-type='int' data-ref="13work">work</dfn>, <dfn class="local col4 decl" id="14offset" title='offset' data-type='int' data-ref="14offset">offset</dfn>;</td></tr>
+<tr><th id="76">76</th><td>	<b>struct</b> <a class="type" href="#thread_data" title='thread_data' data-ref="thread_data">thread_data</a> <dfn class="local col5 decl" id="15data" title='data' data-type='struct thread_data [20]' data-ref="15data">data</dfn>[<a class="macro" href="#24" title="(20)" data-ref="_M/MAX_PARALLEL">MAX_PARALLEL</a>];</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>	<b>if</b> (!<a class="ref" href="cache.h.html#core_preload_index" title='core_preload_index' data-ref="core_preload_index">core_preload_index</a>)</td></tr>
+<tr><th id="79">79</th><td>		<b>return</b>;</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>	<a class="local col1 ref" href="#11threads" title='threads' data-ref="11threads">threads</a> = <a class="local col9 ref" href="#9index" title='index' data-ref="9index">index</a>-&gt;<a class="ref" href="cache.h.html#index_state::cache_nr" title='index_state::cache_nr' data-ref="index_state::cache_nr">cache_nr</a> / <a class="macro" href="#25" title="(500)" data-ref="_M/THREAD_COST">THREAD_COST</a>;</td></tr>
+<tr><th id="82">82</th><td>	<b>if</b> (<a class="local col1 ref" href="#11threads" title='threads' data-ref="11threads">threads</a> &lt; <var>2</var>)</td></tr>
+<tr><th id="83">83</th><td>		<b>return</b>;</td></tr>
+<tr><th id="84">84</th><td>	<b>if</b> (<a class="local col1 ref" href="#11threads" title='threads' data-ref="11threads">threads</a> &gt; <a class="macro" href="#24" title="(20)" data-ref="_M/MAX_PARALLEL">MAX_PARALLEL</a>)</td></tr>
+<tr><th id="85">85</th><td>		<a class="local col1 ref" href="#11threads" title='threads' data-ref="11threads">threads</a> = <a class="macro" href="#24" title="(20)" data-ref="_M/MAX_PARALLEL">MAX_PARALLEL</a>;</td></tr>
+<tr><th id="86">86</th><td>	<a class="local col4 ref" href="#14offset" title='offset' data-ref="14offset">offset</a> = <var>0</var>;</td></tr>
+<tr><th id="87">87</th><td>	<a class="local col3 ref" href="#13work" title='work' data-ref="13work">work</a> = <a class="macro" href="git-compat-util.h.html#116" title="(((index-&gt;cache_nr) + (threads) - 1) / (threads))" data-ref="_M/DIV_ROUND_UP">DIV_ROUND_UP</a>(<a class="local col9 ref" href="#9index" title='index' data-ref="9index">index</a>-&gt;<a class="ref" href="cache.h.html#index_state::cache_nr" title='index_state::cache_nr' data-ref="index_state::cache_nr">cache_nr</a>, <a class="local col1 ref" href="#11threads" title='threads' data-ref="11threads">threads</a>);</td></tr>
+<tr><th id="88">88</th><td>	<a class="ref" href="../include/string.h.html#memset" title='memset' data-ref="memset">memset</a>(&amp;<a class="local col5 ref" href="#15data" title='data' data-ref="15data">data</a>, <var>0</var>, <b>sizeof</b>(<a class="local col5 ref" href="#15data" title='data' data-ref="15data">data</a>));</td></tr>
+<tr><th id="89">89</th><td>	<b>for</b> (<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a> = <var>0</var>; <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a> &lt; <a class="local col1 ref" href="#11threads" title='threads' data-ref="11threads">threads</a>; <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>++) {</td></tr>
+<tr><th id="90">90</th><td>		<b>struct</b> <a class="type" href="#thread_data" title='thread_data' data-ref="thread_data">thread_data</a> *<dfn class="local col6 decl" id="16p" title='p' data-type='struct thread_data *' data-ref="16p">p</dfn> = <a class="local col5 ref" href="#15data" title='data' data-ref="15data">data</a>+<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>;</td></tr>
+<tr><th id="91">91</th><td>		<a class="local col6 ref" href="#16p" title='p' data-ref="16p">p</a>-&gt;<a class="tu ref" href="#thread_data::index" title='thread_data::index' data-use='w' data-ref="thread_data::index">index</a> = <a class="local col9 ref" href="#9index" title='index' data-ref="9index">index</a>;</td></tr>
+<tr><th id="92">92</th><td>		<b>if</b> (<a class="local col0 ref" href="#10pathspec" title='pathspec' data-ref="10pathspec">pathspec</a>)</td></tr>
+<tr><th id="93">93</th><td>			<a class="ref" href="pathspec.h.html#copy_pathspec" title='copy_pathspec' data-ref="copy_pathspec">copy_pathspec</a>(&amp;<a class="local col6 ref" href="#16p" title='p' data-ref="16p">p</a>-&gt;<a class="tu ref" href="#thread_data::pathspec" title='thread_data::pathspec' data-use='a' data-ref="thread_data::pathspec">pathspec</a>, <a class="local col0 ref" href="#10pathspec" title='pathspec' data-ref="10pathspec">pathspec</a>);</td></tr>
+<tr><th id="94">94</th><td>		<a class="local col6 ref" href="#16p" title='p' data-ref="16p">p</a>-&gt;<a class="tu ref" href="#thread_data::offset" title='thread_data::offset' data-use='w' data-ref="thread_data::offset">offset</a> = <a class="local col4 ref" href="#14offset" title='offset' data-ref="14offset">offset</a>;</td></tr>
+<tr><th id="95">95</th><td>		<a class="local col6 ref" href="#16p" title='p' data-ref="16p">p</a>-&gt;<a class="tu ref" href="#thread_data::nr" title='thread_data::nr' data-use='w' data-ref="thread_data::nr">nr</a> = <a class="local col3 ref" href="#13work" title='work' data-ref="13work">work</a>;</td></tr>
+<tr><th id="96">96</th><td>		<a class="local col4 ref" href="#14offset" title='offset' data-ref="14offset">offset</a> += <a class="local col3 ref" href="#13work" title='work' data-ref="13work">work</a>;</td></tr>
+<tr><th id="97">97</th><td>		<b>if</b> (<a class="ref" href="../include/pthread.h.html#pthread_create" title='pthread_create' data-ref="pthread_create">pthread_create</a>(&amp;<a class="local col6 ref" href="#16p" title='p' data-ref="16p">p</a>-&gt;<a class="tu ref" href="#thread_data::pthread" title='thread_data::pthread' data-use='a' data-ref="thread_data::pthread">pthread</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <a class="tu ref" href="#preload_thread" title='preload_thread' data-use='r' data-ref="preload_thread">preload_thread</a>, <a class="local col6 ref" href="#16p" title='p' data-ref="16p">p</a>))</td></tr>
+<tr><th id="98">98</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"unable to create threaded lstat"</q>);</td></tr>
+<tr><th id="99">99</th><td>	}</td></tr>
+<tr><th id="100">100</th><td>	<b>for</b> (<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a> = <var>0</var>; <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a> &lt; <a class="local col1 ref" href="#11threads" title='threads' data-ref="11threads">threads</a>; <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>++) {</td></tr>
+<tr><th id="101">101</th><td>		<b>struct</b> <a class="type" href="#thread_data" title='thread_data' data-ref="thread_data">thread_data</a> *<dfn class="local col7 decl" id="17p" title='p' data-type='struct thread_data *' data-ref="17p">p</dfn> = <a class="local col5 ref" href="#15data" title='data' data-ref="15data">data</a>+<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>;</td></tr>
+<tr><th id="102">102</th><td>		<b>if</b> (<a class="ref" href="../include/pthread.h.html#pthread_join" title='pthread_join' data-ref="pthread_join">pthread_join</a>(<a class="local col7 ref" href="#17p" title='p' data-ref="17p">p</a>-&gt;<a class="tu ref" href="#thread_data::pthread" title='thread_data::pthread' data-use='r' data-ref="thread_data::pthread">pthread</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>))</td></tr>
+<tr><th id="103">103</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"unable to join threaded lstat"</q>);</td></tr>
+<tr><th id="104">104</th><td>	}</td></tr>
+<tr><th id="105">105</th><td>}</td></tr>
+<tr><th id="106">106</th><td><u>#<span data-ppcond="8">endif</span></u></td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><em>int</em> <dfn class="decl def" id="read_index_preload" title='read_index_preload' data-ref="read_index_preload">read_index_preload</dfn>(<b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col8 decl" id="18index" title='index' data-type='struct index_state *' data-ref="18index">index</dfn>,</td></tr>
+<tr><th id="109">109</th><td>		       <em>const</em> <b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col9 decl" id="19pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="19pathspec">pathspec</dfn>)</td></tr>
+<tr><th id="110">110</th><td>{</td></tr>
+<tr><th id="111">111</th><td>	<em>int</em> <dfn class="local col0 decl" id="20retval" title='retval' data-type='int' data-ref="20retval">retval</dfn> = <a class="ref" href="cache.h.html#read_index" title='read_index' data-ref="read_index">read_index</a>(<a class="local col8 ref" href="#18index" title='index' data-ref="18index">index</a>);</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>	<a class="tu ref" href="#preload_index" title='preload_index' data-use='c' data-ref="preload_index">preload_index</a>(<a class="local col8 ref" href="#18index" title='index' data-ref="18index">index</a>, <a class="local col9 ref" href="#19pathspec" title='pathspec' data-ref="19pathspec">pathspec</a>);</td></tr>
+<tr><th id="114">114</th><td>	<b>return</b> <a class="local col0 ref" href="#20retval" title='retval' data-ref="20retval">retval</a>;</td></tr>
+<tr><th id="115">115</th><td>}</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

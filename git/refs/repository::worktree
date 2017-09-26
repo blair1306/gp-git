@@ -1,0 +1,36 @@
+<dec f='codebrowser/repository.h' l='44' type='char *'/>
+<offset>320</offset>
+<doc f='codebrowser/repository.h' l='40'>/*
+	 * Path to the working directory.
+	 * A NULL value indicates that there is no working directory.
+	 */</doc>
+<use f='codebrowser/config.c' l='2077' u='r' c='config_from_gitmodules'/>
+<use f='codebrowser/environment.c' l='225' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='225' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='228' u='r' c='set_git_work_tree'/>
+<use f='codebrowser/environment.c' l='237' u='r' c='get_git_work_tree'/>
+<use f='codebrowser/path.c' l='513' u='r' c='do_worktree_path'/>
+<use f='codebrowser/path.c' l='526' u='r' c='repo_worktree_path'/>
+<use f='codebrowser/path.c' l='542' u='r' c='strbuf_repo_worktree_path'/>
+<use f='codebrowser/repository.c' l='100' u='w' c='repo_set_worktree'/>
+<use f='codebrowser/repository.c' l='213' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='214' u='w' c='repo_clear'/>
+<use f='codebrowser/submodule.c' l='241' u='r' c='repo_read_gitmodules'/>

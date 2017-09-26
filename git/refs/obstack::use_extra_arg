@@ -1,0 +1,3 @@
+<dec f='codebrowser/compat/obstack.h' l='170' type='unsigned int'/>
+<offset>640</offset>
+<doc f='codebrowser/compat/obstack.h' l='170'>/* chunk alloc/dealloc funcs take extra arg */</doc>

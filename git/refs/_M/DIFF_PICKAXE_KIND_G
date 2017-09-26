@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='291'/>
+<use f='codebrowser/diff.c' l='4009' u='c'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='223' u='c'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='247' u='c'/>

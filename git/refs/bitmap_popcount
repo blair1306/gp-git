@@ -1,0 +1,4 @@
+<dec f='codebrowser/ewah/ewok.h' l='223' type='size_t bitmap_popcount(struct bitmap * self)'/>
+<def f='codebrowser/ewah/bitmap.c' l='165' ll='173' type='size_t bitmap_popcount(struct bitmap * self)'/>
+<use f='codebrowser/pack-bitmap.c' l='794' u='c' c='reuse_partial_packfile_from_bitmap'/>
+<use f='codebrowser/pack-bitmap.c' l='957' u='c' c='test_bitmap_walk'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/builtin/am.c' l='75' type='3'/>
+<use f='codebrowser/builtin/am.c' l='664' u='r' c='detect_patch_format'/>
+<use f='codebrowser/builtin/am.c' l='968' c='split_mail'/>
+<use f='codebrowser/builtin/am.c' l='2162' u='r' c='parse_opt_patchformat'/>

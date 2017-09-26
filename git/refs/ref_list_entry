@@ -1,0 +1,4 @@
+<def f='codebrowser/bundle.h' l='8' ll='11'/>
+<size>32</size>
+<mbr r='ref_list_entry::oid' o='0' t='struct object_id'/>
+<mbr r='ref_list_entry::name' o='192' t='char *'/>

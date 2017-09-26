@@ -1,0 +1,4 @@
+<dec f='include/string.h' l='368' type='char * strcasestr(const char * __haystack, const char * __needle)'/>
+<use f='codebrowser/mailinfo.c' l='223' u='c' c='slurp_attr'/>
+<use f='codebrowser/mailinfo.c' l='268' u='c' c='handle_content_transfer_encoding'/>
+<use f='codebrowser/mailinfo.c' l='270' u='c' c='handle_content_transfer_encoding'/>

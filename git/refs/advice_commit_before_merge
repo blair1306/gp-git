@@ -1,0 +1,16 @@
+<dec f='codebrowser/advice.h' l='14' type='int'/>
+<def f='codebrowser/advice.c' l='12' type='int'/>
+<use f='codebrowser/advice.c' l='33' u='a'/>
+<use f='codebrowser/advice.c' l='33' u='a'/>
+<use f='codebrowser/advice.c' l='33' u='a'/>
+<use f='codebrowser/advice.c' l='33' u='a'/>
+<use f='codebrowser/sequencer.c' l='360' u='r' c='error_dirty_index'/>
+<use f='codebrowser/unpack-trees.c' l='104' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='109' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='114' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='125' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='130' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='135' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='142' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='147' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='152' u='r' c='setup_unpack_trees_porcelain'/>

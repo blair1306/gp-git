@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='207'/>
+<use f='codebrowser/read-cache.c' l='2544' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1437' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1787' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1837' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='2057' u='c'/>

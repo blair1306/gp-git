@@ -1,0 +1,5 @@
+<def f='codebrowser/pack-bitmap.h' l='16' type='const char [4]'/>
+<use f='codebrowser/pack-bitmap-write.c' l='524' u='r' c='bitmap_writer_finish'/>
+<use f='codebrowser/pack-bitmap-write.c' l='524' u='r' c='bitmap_writer_finish'/>
+<use f='codebrowser/pack-bitmap.c' l='141' u='r' c='load_bitmap_header'/>
+<use f='codebrowser/pack-bitmap.c' l='141' u='r' c='load_bitmap_header'/>

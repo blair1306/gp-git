@@ -1,0 +1,4 @@
+<dec f='codebrowser/sequencer.h' l='44' type='int sequencer_continue(struct replay_opts * opts)'/>
+<use f='codebrowser/builtin/rebase--helper.c' l='37' u='c' c='cmd_rebase__helper'/>
+<use f='codebrowser/builtin/revert.c' l='197' u='c' c='run_sequencer'/>
+<def f='codebrowser/sequencer.c' l='2252' ll='2297' type='int sequencer_continue(struct replay_opts * opts)'/>

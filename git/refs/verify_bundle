@@ -1,0 +1,4 @@
+<dec f='codebrowser/bundle.h' l='23' type='int verify_bundle(struct bundle_header * header, int verbose)'/>
+<use f='codebrowser/builtin/bundle.c' l='43' u='c' c='cmd_bundle'/>
+<def f='codebrowser/bundle.c' l='128' ll='203' type='int verify_bundle(struct bundle_header * header, int verbose)'/>
+<use f='codebrowser/bundle.c' l='487' u='c' c='unbundle'/>

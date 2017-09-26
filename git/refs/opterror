@@ -1,0 +1,17 @@
+<dec f='codebrowser/parse-options.h' l='180' type='int opterror(const struct option * opt, const char * reason, int flags)'/>
+<use f='codebrowser/builtin/revert.c' l='71' macro='1' u='c'/>
+<use f='codebrowser/parse-options-cb.c' l='21' macro='1' u='c'/>
+<use f='codebrowser/parse-options-cb.c' l='53' macro='1' u='c'/>
+<use f='codebrowser/parse-options.c' l='35' macro='1' u='c'/>
+<use f='codebrowser/parse-options.c' l='72' macro='1' u='c'/>
+<use f='codebrowser/parse-options.c' l='76' macro='1' u='c'/>
+<use f='codebrowser/parse-options.c' l='89' macro='1' u='c'/>
+<use f='codebrowser/parse-options.c' l='91' macro='1' u='c'/>
+<use f='codebrowser/parse-options.c' l='93' macro='1' u='c'/>
+<use f='codebrowser/parse-options.c' l='179' macro='1' u='c'/>
+<use f='codebrowser/parse-options.c' l='194' macro='1' u='c'/>
+<use f='codebrowser/parse-options.c' l='260' macro='1' u='c'/>
+<def f='codebrowser/parse-options.c' l='672' ll='679' type='int opterror(const struct option * opt, const char * reason, int flags)'/>
+<use f='codebrowser/ref-filter.c' l='2185' macro='1' u='c'/>
+<use f='codebrowser/ref-filter.c' l='2187' macro='1' u='c'/>
+<use f='codebrowser/ref-filter.c' l='2200' macro='1' u='c'/>

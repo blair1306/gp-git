@@ -1,0 +1,4 @@
+<dec f='codebrowser/worktree.h' l='74' type='int is_worktree_being_bisected(const struct worktree * wt, const char * target)'/>
+<use f='codebrowser/builtin/branch.c' l='451' u='c' c='reject_rebase_or_bisect_branch'/>
+<def f='codebrowser/worktree.c' l='275' ll='288' type='int is_worktree_being_bisected(const struct worktree * wt, const char * target)'/>
+<use f='codebrowser/worktree.c' l='322' u='c' c='find_shared_symref'/>

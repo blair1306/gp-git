@@ -1,0 +1,8 @@
+<dec f='codebrowser/refs/refs-internal.h' l='683' type='void base_ref_store_init(struct ref_store * refs, const struct ref_storage_be * be)'/>
+<def f='codebrowser/refs.c' l='1701' ll='1705' type='void base_ref_store_init(struct ref_store * refs, const struct ref_storage_be * be)'/>
+<doc f='codebrowser/refs/refs-internal.h' l='679'>/*
+ * Fill in the generic part of refs and add it to our collection of
+ * reference stores.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='54' u='c' c='files_ref_store_create'/>
+<use f='codebrowser/refs/packed-backend.c' l='87' u='c' c='packed_ref_store_create'/>

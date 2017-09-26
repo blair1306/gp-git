@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>worktree.h source code [codebrowser/worktree.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="worktree "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/worktree.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='worktree.h.html'>worktree.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/WORKTREE_H">WORKTREE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/WORKTREE_H" data-ref="_M/WORKTREE_H">WORKTREE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="worktree" title='worktree' data-ref="worktree">worktree</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<em>char</em> *<dfn class="decl" id="worktree::path" title='worktree::path' data-ref="worktree::path">path</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<em>char</em> *<dfn class="decl" id="worktree::id" title='worktree::id' data-ref="worktree::id">id</dfn>;</td></tr>
+<tr><th id="7">7</th><td>	<em>char</em> *<dfn class="decl" id="worktree::head_ref" title='worktree::head_ref' data-ref="worktree::head_ref">head_ref</dfn>;		<i>/* NULL if HEAD is broken or detached */</i></td></tr>
+<tr><th id="8">8</th><td>	<em>char</em> *<dfn class="decl" id="worktree::lock_reason" title='worktree::lock_reason' data-ref="worktree::lock_reason">lock_reason</dfn>;	<i>/* internal use */</i></td></tr>
+<tr><th id="9">9</th><td>	<em>unsigned</em> <em>char</em> <dfn class="decl" id="worktree::head_sha1" title='worktree::head_sha1' data-ref="worktree::head_sha1">head_sha1</dfn>[<var>20</var>];</td></tr>
+<tr><th id="10">10</th><td>	<em>int</em> <dfn class="decl" id="worktree::is_detached" title='worktree::is_detached' data-ref="worktree::is_detached">is_detached</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	<em>int</em> <dfn class="decl" id="worktree::is_bare" title='worktree::is_bare' data-ref="worktree::is_bare">is_bare</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<em>int</em> <dfn class="decl" id="worktree::is_current" title='worktree::is_current' data-ref="worktree::is_current">is_current</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<em>int</em> <dfn class="decl" id="worktree::lock_reason_valid" title='worktree::lock_reason_valid' data-ref="worktree::lock_reason_valid">lock_reason_valid</dfn>;</td></tr>
+<tr><th id="14">14</th><td>};</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><i>/* Functions for acting on the information about worktrees. */</i></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/GWT_SORT_LINKED" data-ref="_M/GWT_SORT_LINKED">GWT_SORT_LINKED</dfn> (1 &lt;&lt; 0) /* keeps linked worktrees sorted */</u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Get the worktrees.  The primary worktree will always be the first returned,</i></td></tr>
+<tr><th id="22">22</th><td><i> * and linked worktrees will be pointed to by 'next' in each subsequent</i></td></tr>
+<tr><th id="23">23</th><td><i> * worktree.  No specific ordering is done on the linked worktrees.</i></td></tr>
+<tr><th id="24">24</th><td><i> *</i></td></tr>
+<tr><th id="25">25</th><td><i> * The caller is responsible for freeing the memory from the returned</i></td></tr>
+<tr><th id="26">26</th><td><i> * worktree(s).</i></td></tr>
+<tr><th id="27">27</th><td><i> */</i></td></tr>
+<tr><th id="28">28</th><td><b>extern</b> <b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> **<dfn class="decl" id="get_worktrees" title='get_worktrees' data-ref="get_worktrees">get_worktrees</dfn>(<em>unsigned</em> <dfn class="local col2 decl" id="112flags" title='flags' data-type='unsigned int' data-ref="112flags">flags</dfn>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i>/*</i></td></tr>
+<tr><th id="31">31</th><td><i> * Returns 1 if linked worktrees exist, 0 otherwise.</i></td></tr>
+<tr><th id="32">32</th><td><i> */</i></td></tr>
+<tr><th id="33">33</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="submodule_uses_worktrees" title='submodule_uses_worktrees' data-ref="submodule_uses_worktrees">submodule_uses_worktrees</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="113path" title='path' data-type='const char *' data-ref="113path">path</dfn>);</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><i>/*</i></td></tr>
+<tr><th id="36">36</th><td><i> * Return git dir of the worktree. Note that the path may be relative.</i></td></tr>
+<tr><th id="37">37</th><td><i> * If wt is NULL, git dir of current worktree is returned.</i></td></tr>
+<tr><th id="38">38</th><td><i> */</i></td></tr>
+<tr><th id="39">39</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="get_worktree_git_dir" title='get_worktree_git_dir' data-ref="get_worktree_git_dir">get_worktree_git_dir</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> *<dfn class="local col4 decl" id="114wt" title='wt' data-type='const struct worktree *' data-ref="114wt">wt</dfn>);</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><i>/*</i></td></tr>
+<tr><th id="42">42</th><td><i> * Search a worktree that can be unambiguously identified by</i></td></tr>
+<tr><th id="43">43</th><td><i> * "arg". "prefix" must not be NULL.</i></td></tr>
+<tr><th id="44">44</th><td><i> */</i></td></tr>
+<tr><th id="45">45</th><td><b>extern</b> <b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> *<dfn class="decl" id="find_worktree" title='find_worktree' data-ref="find_worktree">find_worktree</dfn>(<b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> **<dfn class="local col5 decl" id="115list" title='list' data-type='struct worktree **' data-ref="115list">list</dfn>,</td></tr>
+<tr><th id="46">46</th><td>				      <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="116prefix" title='prefix' data-type='const char *' data-ref="116prefix">prefix</dfn>,</td></tr>
+<tr><th id="47">47</th><td>				      <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="117arg" title='arg' data-type='const char *' data-ref="117arg">arg</dfn>);</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><i>/*</i></td></tr>
+<tr><th id="50">50</th><td><i> * Return true if the given worktree is the main one.</i></td></tr>
+<tr><th id="51">51</th><td><i> */</i></td></tr>
+<tr><th id="52">52</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="is_main_worktree" title='is_main_worktree' data-ref="is_main_worktree">is_main_worktree</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> *<dfn class="local col8 decl" id="118wt" title='wt' data-type='const struct worktree *' data-ref="118wt">wt</dfn>);</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i>/*</i></td></tr>
+<tr><th id="55">55</th><td><i> * Return the reason string if the given worktree is locked or NULL</i></td></tr>
+<tr><th id="56">56</th><td><i> * otherwise.</i></td></tr>
+<tr><th id="57">57</th><td><i> */</i></td></tr>
+<tr><th id="58">58</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="is_worktree_locked" title='is_worktree_locked' data-ref="is_worktree_locked">is_worktree_locked</dfn>(<b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> *<dfn class="local col9 decl" id="119wt" title='wt' data-type='struct worktree *' data-ref="119wt">wt</dfn>);</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><i>/*</i></td></tr>
+<tr><th id="61">61</th><td><i> * Free up the memory for worktree(s)</i></td></tr>
+<tr><th id="62">62</th><td><i> */</i></td></tr>
+<tr><th id="63">63</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="free_worktrees" title='free_worktrees' data-ref="free_worktrees">free_worktrees</dfn>(<b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> **);</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><i>/*</i></td></tr>
+<tr><th id="66">66</th><td><i> * Check if a per-worktree symref points to a ref in the main worktree</i></td></tr>
+<tr><th id="67">67</th><td><i> * or any linked worktree, and return the worktree that holds the ref,</i></td></tr>
+<tr><th id="68">68</th><td><i> * or NULL otherwise. The result may be destroyed by the next call.</i></td></tr>
+<tr><th id="69">69</th><td><i> */</i></td></tr>
+<tr><th id="70">70</th><td><b>extern</b> <em>const</em> <b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> *<dfn class="decl" id="find_shared_symref" title='find_shared_symref' data-ref="find_shared_symref">find_shared_symref</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="120symref" title='symref' data-type='const char *' data-ref="120symref">symref</dfn>,</td></tr>
+<tr><th id="71">71</th><td>						 <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="121target" title='target' data-type='const char *' data-ref="121target">target</dfn>);</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><em>int</em> <dfn class="decl" id="is_worktree_being_rebased" title='is_worktree_being_rebased' data-ref="is_worktree_being_rebased">is_worktree_being_rebased</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> *<dfn class="local col2 decl" id="122wt" title='wt' data-type='const struct worktree *' data-ref="122wt">wt</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="123target" title='target' data-type='const char *' data-ref="123target">target</dfn>);</td></tr>
+<tr><th id="74">74</th><td><em>int</em> <dfn class="decl" id="is_worktree_being_bisected" title='is_worktree_being_bisected' data-ref="is_worktree_being_bisected">is_worktree_being_bisected</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> *<dfn class="local col4 decl" id="124wt" title='wt' data-type='const struct worktree *' data-ref="124wt">wt</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="125target" title='target' data-type='const char *' data-ref="125target">target</dfn>);</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><i>/*</i></td></tr>
+<tr><th id="77">77</th><td><i> * Similar to git_path() but can produce paths for a specified</i></td></tr>
+<tr><th id="78">78</th><td><i> * worktree instead of current one</i></td></tr>
+<tr><th id="79">79</th><td><i> */</i></td></tr>
+<tr><th id="80">80</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="worktree_git_path" title='worktree_git_path' data-ref="worktree_git_path">worktree_git_path</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#worktree" title='worktree' data-ref="worktree">worktree</a> *<dfn class="local col6 decl" id="126wt" title='wt' data-type='const struct worktree *' data-ref="126wt">wt</dfn>,</td></tr>
+<tr><th id="81">81</th><td>				     <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="127fmt" title='fmt' data-type='const char *' data-ref="127fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="82">82</th><td>	<b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)));</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='branch.c.html'>codebrowser/branch.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

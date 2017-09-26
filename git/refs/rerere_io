@@ -1,0 +1,10 @@
+<def f='codebrowser/rerere.c' l='279' ll='284'/>
+<size>24</size>
+<doc f='codebrowser/rerere.c' l='271'>/*
+ * &quot;rerere&quot; interacts with conflicted file contents using this I/O
+ * abstraction.  It reads a conflicted contents from one place via
+ * &quot;getline()&quot; method, and optionally can write it out after
+ * normalizing the conflicted hunks to the &quot;output&quot;.  Subclasses of
+ * rerere_io embed this structure at the beginning of their own
+ * rerere_io object.
+ */</doc>

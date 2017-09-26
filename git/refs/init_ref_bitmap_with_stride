@@ -1,0 +1,2 @@
+<def f='codebrowser/shallow.c' l='432' macro='1' type='void init_ref_bitmap_with_stride(struct ref_bitmap * s, unsigned int stride)'/>
+<use f='codebrowser/shallow.c' l='432' macro='1' u='c'/>

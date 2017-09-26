@@ -1,0 +1,15 @@
+<dec f='codebrowser/advice.h' l='6' type='int'/>
+<def f='codebrowser/advice.c' l='4' type='int'/>
+<use f='codebrowser/advice.c' l='25' u='a'/>
+<use f='codebrowser/advice.c' l='25' u='a'/>
+<use f='codebrowser/advice.c' l='43' u='a'/>
+<use f='codebrowser/advice.c' l='43' u='a'/>
+<use f='codebrowser/advice.c' l='25' u='a'/>
+<use f='codebrowser/advice.c' l='25' u='a'/>
+<use f='codebrowser/advice.c' l='43' u='a'/>
+<use f='codebrowser/advice.c' l='43' u='a'/>
+<use f='codebrowser/builtin/push.c' l='281' u='r' c='advise_pull_before_push'/>
+<use f='codebrowser/builtin/push.c' l='288' u='r' c='advise_checkout_pull_push'/>
+<use f='codebrowser/builtin/push.c' l='295' u='r' c='advise_ref_already_exists'/>
+<use f='codebrowser/builtin/push.c' l='302' u='r' c='advise_ref_fetch_first'/>
+<use f='codebrowser/builtin/push.c' l='309' u='r' c='advise_ref_needs_force'/>

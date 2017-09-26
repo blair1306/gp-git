@@ -1,0 +1,2 @@
+<dec f='include/zlib.h' l='698' type='uLong deflateBound(z_streamp strm, uLong sourceLen)'/>
+<use f='codebrowser/zlib.c' l='155' u='c' c='git_deflate_bound'/>

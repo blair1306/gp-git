@@ -1,0 +1,18 @@
+<dec f='codebrowser/tree-walk.h' l='82' type='int get_tree_entry(const unsigned char * , const char * , unsigned char * , unsigned int * )'/>
+<use f='codebrowser/archive.c' l='382' u='c' c='parse_treeish_arg'/>
+<use f='codebrowser/blame.c' l='83' u='c' c='verify_working_tree_path'/>
+<use f='codebrowser/blame.c' l='505' u='c' c='fill_blob_sha1_and_mode'/>
+<use f='codebrowser/builtin/rm.c' l='181' u='c' c='check_local_mod'/>
+<use f='codebrowser/builtin/update-index.c' l='585' u='c' c='read_one_ent'/>
+<use f='codebrowser/line-log.c' l='504' u='c' c='fill_blob_sha1'/>
+<use f='codebrowser/match-trees.c' l='274' u='c' c='shift_tree'/>
+<use f='codebrowser/match-trees.c' l='301' u='c' c='shift_tree_by'/>
+<use f='codebrowser/match-trees.c' l='306' u='c' c='shift_tree_by'/>
+<use f='codebrowser/merge-recursive.c' l='352' u='c' c='insert_stage_data'/>
+<use f='codebrowser/merge-recursive.c' l='354' u='c' c='insert_stage_data'/>
+<use f='codebrowser/merge-recursive.c' l='356' u='c' c='insert_stage_data'/>
+<use f='codebrowser/notes.c' l='1033' u='c' c='init_notes'/>
+<use f='codebrowser/sha1_name.c' l='1415' u='c' c='diagnose_invalid_oid_path'/>
+<use f='codebrowser/sha1_name.c' l='1608' u='c' c='get_oid_with_context_1'/>
+<use f='codebrowser/tree-walk.c' l='525' u='c' c='find_tree_entry'/>
+<def f='codebrowser/tree-walk.c' l='530' ll='556' type='int get_tree_entry(const unsigned char * tree_sha1, const char * name, unsigned char * sha1, unsigned int * mode)'/>

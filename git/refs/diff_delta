@@ -1,0 +1,13 @@
+<def f='codebrowser/delta.h' l='56' ll='69' type='void * diff_delta(const void * src_buf, unsigned long src_bufsize, const void * trg_buf, unsigned long trg_bufsize, unsigned long * delta_size, unsigned long max_delta_size)'/>
+<doc f='codebrowser/delta.h' l='48'>/*
+ * diff_delta: create a delta from source buffer to target buffer
+ *
+ * If max_delta_size is non-zero and the resulting delta is to be larger
+ * than max_delta_size then NULL is returned.  On success, a non-NULL
+ * pointer to the buffer with the delta data is returned and *delta_size is
+ * updated with its size.  The returned buffer must be freed by the caller.
+ */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='118' u='c' c='get_delta'/>
+<use f='codebrowser/diff.c' l='2238' u='c' c='emit_binary_diff_body'/>
+<use f='codebrowser/fast-import.c' l='1122' u='c' c='store_object'/>
+<use f='codebrowser/t/helper/test-delta.c' l='59' u='c' c='cmd_main'/>

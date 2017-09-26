@@ -1,0 +1,13 @@
+<dec f='codebrowser/strbuf.h' l='407' type='int strbuf_getline_nul(struct strbuf * sb, FILE * fp)'/>
+<doc f='codebrowser/strbuf.h' l='406'>/* Uses NUL as the line terminator */</doc>
+<use f='codebrowser/builtin/check-attr.c' l='84' u='r' c='check_attr_stdin_paths'/>
+<use f='codebrowser/builtin/check-ignore.c' l='128' u='r' c='check_ignore_stdin_paths'/>
+<use f='codebrowser/builtin/checkout-index.c' l='234' u='r' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/difftool.c' l='240' u='c' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='405' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='419' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='427' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/mktree.c' l='160' u='r' c='cmd_mktree'/>
+<use f='codebrowser/builtin/update-index.c' l='479' u='r' c='read_index_info'/>
+<use f='codebrowser/builtin/update-index.c' l='1070' u='r' c='cmd_update_index'/>
+<def f='codebrowser/strbuf.c' l='565' ll='568' type='int strbuf_getline_nul(struct strbuf * sb, FILE * fp)'/>

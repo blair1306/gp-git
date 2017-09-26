@@ -1,0 +1,4 @@
+<dec f='codebrowser/http.h' l='143' type='char * get_remote_object_url(const char * url, const char * hex, int only_two_digit_prefix)'/>
+<use f='codebrowser/http-push.c' l='281' u='c' c='start_mkcol'/>
+<def f='codebrowser/http.c' l='1353' ll='1359' type='char * get_remote_object_url(const char * url, const char * hex, int only_two_digit_prefix)'/>
+<use f='codebrowser/http.c' l='2200' u='c' c='new_http_object_request'/>

@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='92'/>
+<use f='codebrowser/connect.c' l='382' u='c'/>
+<use f='codebrowser/daemon.c' l='626' u='c'/>
+<use f='codebrowser/daemon.c' l='752' u='c'/>
+<use f='codebrowser/daemon.c' l='848' u='c'/>
+<use f='codebrowser/daemon.c' l='916' u='c'/>

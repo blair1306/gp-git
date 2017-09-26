@@ -1,0 +1,4 @@
+<dec f='codebrowser/git-compat-util.h' l='1064'/>
+<use f='codebrowser/read-cache.c' l='91' u='c'/>
+<use f='codebrowser/read-cache.c' l='1791' u='c'/>
+<use f='codebrowser/read-cache.c' l='2311' u='c'/>

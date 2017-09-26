@@ -1,0 +1,11 @@
+<dec f='codebrowser/mailinfo.h' l='31' type='struct strbuf **'/>
+<offset>1792</offset>
+<use f='codebrowser/mailinfo.c' l='951' u='r' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='1058' u='r' c='handle_info'/>
+<use f='codebrowser/mailinfo.c' l='1059' u='r' c='handle_info'/>
+<use f='codebrowser/mailinfo.c' l='1100' u='w' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1100' u='r' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1114' u='r' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1164' u='r' c='clear_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1165' u='r' c='clear_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1166' u='r' c='clear_mailinfo'/>

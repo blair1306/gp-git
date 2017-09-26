@@ -1,0 +1,4 @@
+<dec f='codebrowser/run-command.h' l='136' type='pthread_t'/>
+<offset>192</offset>
+<use f='codebrowser/run-command.c' l='1130' u='a' c='start_async'/>
+<use f='codebrowser/run-command.c' l='1159' u='r' c='finish_async'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/git-compat-util.h' l='811' type='FILE * fopen_for_writing(const char * path)'/>
+<use f='codebrowser/builtin/commit.c' l='776' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/fast-export.c' l='887' u='c' c='export_marks'/>
+<use f='codebrowser/builtin/fetch.c' l='1006' u='c' c='truncate_fetch_head'/>
+<def f='codebrowser/wrapper.c' l='409' ll='420' type='FILE * fopen_for_writing(const char * path)'/>

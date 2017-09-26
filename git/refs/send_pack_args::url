@@ -1,0 +1,6 @@
+<dec f='codebrowser/send-pack.h' l='12' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/send-pack.c' l='291' u='r' c='generate_push_cert'/>
+<use f='codebrowser/send-pack.c' l='291' u='r' c='generate_push_cert'/>
+<use f='codebrowser/send-pack.c' l='292' u='r' c='generate_push_cert'/>
+<use f='codebrowser/transport.c' l='565' u='w' c='git_transport_push'/>

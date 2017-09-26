@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='425' type='9'/>
+<doc f='include/curl/curl.h' l='425'>/* 9 a service was denied by the server
+                                    due to lack of access - when login fails
+                                    this is not returned. */</doc>

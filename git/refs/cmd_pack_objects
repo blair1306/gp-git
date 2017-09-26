@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='196' type='int cmd_pack_objects(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/pack-objects.c' l='2865' ll='3096' type='int cmd_pack_objects(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='435'/>
+<use f='codebrowser/git.c' l='435'/>
+<use f='codebrowser/git.c' l='435'/>
+<use f='codebrowser/git.c' l='435'/>

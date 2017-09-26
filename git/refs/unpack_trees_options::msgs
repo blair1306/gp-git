@@ -1,0 +1,9 @@
+<dec f='codebrowser/unpack-trees.h' l='58' type='const char *[10]'/>
+<offset>896</offset>
+<use f='codebrowser/unpack-trees.c' l='100' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='57' u='r' c='add_rejected_path'/>
+<use f='codebrowser/unpack-trees.c' l='58' u='r' c='add_rejected_path'/>
+<use f='codebrowser/unpack-trees.c' l='57' u='r' c='display_error_msgs'/>
+<use f='codebrowser/unpack-trees.c' l='58' u='r' c='display_error_msgs'/>
+<use f='codebrowser/unpack-trees.c' l='57' u='r' c='bind_merge'/>
+<use f='codebrowser/unpack-trees.c' l='58' u='r' c='bind_merge'/>

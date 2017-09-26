@@ -1,0 +1,21 @@
+<dec f='codebrowser/argv-array.h' l='20' type='void argv_array_pushv(struct argv_array * , const char ** )'/>
+<def f='codebrowser/argv-array.c' l='52' ll='56' type='void argv_array_pushv(struct argv_array * array, const char ** argv)'/>
+<use f='codebrowser/builtin/am.c' l='721' u='c' c='split_mail_mbox'/>
+<use f='codebrowser/builtin/am.c' l='1489' u='c' c='run_apply'/>
+<use f='codebrowser/builtin/am.c' l='1543' u='c' c='build_fake_ancestor'/>
+<use f='codebrowser/builtin/describe.c' l='503' u='c' c='cmd_describe'/>
+<use f='codebrowser/builtin/describe.c' l='517' u='c' c='cmd_describe'/>
+<use f='codebrowser/builtin/pull.c' l='520' u='c' c='run_fetch'/>
+<use f='codebrowser/builtin/pull.c' l='603' u='c' c='run_merge'/>
+<use f='codebrowser/builtin/pull.c' l='604' u='c' c='run_merge'/>
+<use f='codebrowser/builtin/pull.c' l='782' u='c' c='run_rebase'/>
+<use f='codebrowser/builtin/pull.c' l='783' u='c' c='run_rebase'/>
+<use f='codebrowser/builtin/receive-pack.c' l='717' u='c' c='run_and_feed_hook'/>
+<use f='codebrowser/exec_cmd.c' l='110' u='c' c='prepare_git_cmd'/>
+<use f='codebrowser/git.c' l='240' u='c' c='handle_alias'/>
+<use f='codebrowser/git.c' l='567' u='c' c='execv_dashed_external'/>
+<use f='codebrowser/run-command.c' l='266' u='c' c='prepare_shell_cmd'/>
+<use f='codebrowser/run-command.c' l='394' u='c' c='prepare_cmd'/>
+<use f='codebrowser/run-command.c' l='398' u='c' c='prepare_cmd'/>
+<use f='codebrowser/submodule.c' l='1239' u='c' c='get_next_submodule'/>
+<use f='codebrowser/t/helper/test-run-command.c' l='28' u='c' c='parallel_next'/>

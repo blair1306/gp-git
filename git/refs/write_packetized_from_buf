@@ -1,0 +1,3 @@
+<dec f='codebrowser/pkt-line.h' l='29' type='int write_packetized_from_buf(const char * src_in, size_t len, int fd_out)'/>
+<use f='codebrowser/convert.c' l='628' u='c' c='apply_multi_file_filter'/>
+<def f='codebrowser/pkt-line.c' l='219' ll='238' type='int write_packetized_from_buf(const char * src_in, size_t len, int fd_out)'/>

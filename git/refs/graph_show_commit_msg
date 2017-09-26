@@ -1,0 +1,21 @@
+<dec f='codebrowser/graph.h' l='135' type='void graph_show_commit_msg(struct git_graph * graph, FILE * file, const struct strbuf * sb)'/>
+<use f='codebrowser/builtin/rev-list.c' l='132' u='c' c='show_commit'/>
+<doc f='codebrowser/graph.h' l='118'>/*
+ * Print a commit message strbuf and the remainder of the graph to stdout.
+ *
+ * This is similar to graph_show_strbuf(), but it always prints the
+ * remainder of the graph.
+ *
+ * If the strbuf ends with a newline, the output printed by
+ * graph_show_commit_msg() will end with a newline.  If the strbuf is
+ * missing a terminating newline (including if it is empty), the output
+ * printed by graph_show_commit_msg() will also be missing a terminating
+ * newline.
+ *
+ * Note that unlike some other graph display functions, you must pass the file
+ * handle directly. It is assumed that this is the same file handle as the
+ * file specified by the graph diff options. This is necessary so that
+ * graph_show_commit_msg can be called even with a NULL graph.
+ */</doc>
+<def f='codebrowser/graph.c' l='1370' ll='1406' type='void graph_show_commit_msg(struct git_graph * graph, FILE * file, const struct strbuf * sb)'/>
+<use f='codebrowser/log-tree.c' l='716' u='c' c='show_log'/>

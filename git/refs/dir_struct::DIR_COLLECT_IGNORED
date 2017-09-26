@@ -1,0 +1,4 @@
+<dec f='codebrowser/dir.h' l='152' type='16'/>
+<use f='codebrowser/builtin/add.c' l='447' u='r' c='cmd_add'/>
+<use f='codebrowser/dir.c' l='1857' u='r' c='read_directory_recursive'/>
+<use f='codebrowser/dir.c' l='2048' u='r' c='validate_untracked_cache'/>

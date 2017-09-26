@@ -1,0 +1,70 @@
+<dec f='codebrowser/refs/refs-internal.h' l='325' type='const char *'/>
+<use f='codebrowser/refs.c' l='1909' u='r' c='refs_verify_refname_available'/>
+<use f='codebrowser/refs.c' l='1913' u='r' c='refs_verify_refname_available'/>
+<offset>64</offset>
+<use f='codebrowser/refs/files-backend.c' l='665' u='r' c='files_peel_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='708' u='r' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='712' u='r' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='717' u='w' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='717' u='r' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='1109' u='r' c='files_pack_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='1119' u='r' c='files_pack_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='1124' u='r' c='files_pack_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='1124' u='r' c='files_pack_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='2021' u='w' c='files_reflog_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='31' u='w' c='base_ref_iterator_init'/>
+<use f='codebrowser/refs/iterator.c' l='159' u='w' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='159' u='r' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='247' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='247' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='292' u='r' c='prefix_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='305' u='r' c='prefix_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='307' u='w' c='prefix_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='307' u='r' c='prefix_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='309' u='w' c='prefix_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='309' u='r' c='prefix_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='383' u='r' c='do_for_each_ref_iterator'/>
+<use f='codebrowser/refs/packed-backend.c' l='421' u='r' c='packed_ref_iterator_advance'/>
+<use f='codebrowser/refs/packed-backend.c' l='425' u='r' c='packed_ref_iterator_advance'/>
+<use f='codebrowser/refs/packed-backend.c' l='430' u='w' c='packed_ref_iterator_advance'/>
+<use f='codebrowser/refs/packed-backend.c' l='430' u='r' c='packed_ref_iterator_advance'/>
+<use f='codebrowser/refs/packed-backend.c' l='656' u='r' c='commit_packed_refs'/>
+<use f='codebrowser/refs/ref-cache.c' l='486' u='w' c='cache_ref_iterator_advance'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/xdiff/xutils.h' l='36' type='int xdl_recmatch(const char * l1, long s1, const char * l2, long s2, long flags)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='406' u='c' c='recs_match'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='97' u='c' c='cmp_recs'/>
+<use f='codebrowser/xdiff/xmerge.c' l='104' u='c' c='xdl_merge_cmp_lines'/>
+<use f='codebrowser/xdiff/xpatience.c' l='94' u='c' c='insert_record'/>
+<use f='codebrowser/xdiff/xpatience.c' l='226' u='c' c='match'/>
+<use f='codebrowser/xdiff/xprepare.c' l='121' u='c' c='xdl_classify_record'/>
+<def f='codebrowser/xdiff/xutils.c' l='159' ll='227' type='int xdl_recmatch(const char * l1, long s1, const char * l2, long s2, long flags)'/>

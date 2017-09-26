@@ -1,0 +1,7 @@
+<dec f='codebrowser/run-command.h' l='53' type='void child_process_clear(struct child_process * )'/>
+<use f='codebrowser/daemon.c' l='826' u='c' c='check_dead_children'/>
+<def f='codebrowser/run-command.c' l='16' ll='20' type='void child_process_clear(struct child_process * child)'/>
+<use f='codebrowser/run-command.c' l='619' u='c' c='start_command'/>
+<use f='codebrowser/run-command.c' l='842' u='c' c='start_command'/>
+<use f='codebrowser/run-command.c' l='868' u='c' c='finish_command'/>
+<use f='codebrowser/run-command.c' l='1487' u='c' c='pp_cleanup'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/commit.h' l='379' type='int remove_signature(struct strbuf * buf)'/>
+<use f='codebrowser/builtin/replace.c' l='406' u='c' c='create_graft'/>
+<def f='codebrowser/commit.c' l='1167' ll='1199' type='int remove_signature(struct strbuf * buf)'/>

@@ -1,0 +1,5 @@
+<def f='codebrowser/grep.h' l='106' ll='117'/>
+<size>24</size>
+<mbr r='grep_expr::node' o='0' t='enum grep_expr_node'/>
+<mbr r='grep_expr::hit' o='32' t='unsigned int'/>
+<mbr r='grep_expr::u' o='64' t='union (anonymous union at /home/jon/workspace/git/grep.h:109:2)'/>

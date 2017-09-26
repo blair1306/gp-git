@@ -1,0 +1,5 @@
+<dec f='include/curl/curl.h' l='2212' type='1'/>
+<doc f='include/curl/curl.h' l='2208'>/*  CURL_LOCK_DATA_SHARE is used internally to say that
+   *  the locking is just made to change the internal state of the share
+   *  itself.
+   */</doc>

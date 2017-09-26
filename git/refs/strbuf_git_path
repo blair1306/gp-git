@@ -1,0 +1,4 @@
+<dec f='codebrowser/path.h' l='20' type='void strbuf_git_path(struct strbuf * sb, const char * fmt)'/>
+<def f='codebrowser/path.c' l='450' ll='456' type='void strbuf_git_path(struct strbuf * sb, const char * fmt)'/>
+<use f='codebrowser/run-command.c' l='1170' u='c' c='find_hook'/>
+<use f='codebrowser/submodule.c' l='2049' u='c' c='submodule_to_gitdir'/>

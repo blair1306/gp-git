@@ -1,0 +1,6 @@
+<dec f='codebrowser/grep.h' l='86' type='unsigned int'/>
+<offset>1665</offset>
+<use f='codebrowser/grep.c' l='620' u='w' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='638' u='r' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='641' u='r' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='665' u='r' c='compile_regexp'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/help.h' l='28' type='void list_commands(unsigned int colopts, struct cmdnames * main_cmds, struct cmdnames * other_cmds)'/>
+<use f='codebrowser/builtin/help.c' l='465' u='c' c='cmd_help'/>
+<def f='codebrowser/help.c' l='174' ll='191' type='void list_commands(unsigned int colopts, struct cmdnames * main_cmds, struct cmdnames * other_cmds)'/>

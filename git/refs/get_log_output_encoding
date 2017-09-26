@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1844' type='const char * get_log_output_encoding()'/>
+<use f='codebrowser/builtin/blame.c' l='187' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/log.c' l='474' u='c' c='show_tagger'/>
+<use f='codebrowser/builtin/reset.c' l='104' u='c' c='print_new_head_line'/>
+<use f='codebrowser/builtin/rev-list.c' l='125' u='c' c='show_commit'/>
+<use f='codebrowser/builtin/shortlog.c' l='154' u='c' c='shortlog_add_commit'/>
+<def f='codebrowser/environment.c' l='303' ll='307' type='const char * get_log_output_encoding()'/>
+<use f='codebrowser/log-tree.c' l='660' u='c' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='683' u='c' c='show_log'/>
+<use f='codebrowser/pretty.c' l='1780' u='c' c='pretty_print_commit'/>
+<use f='codebrowser/remote-curl.c' l='257' u='c' c='show_http_message'/>
+<use f='codebrowser/revision.c' l='2922' u='c' c='commit_match'/>
+<use f='codebrowser/submodule.c' l='492' u='c' c='print_submodule_summary'/>

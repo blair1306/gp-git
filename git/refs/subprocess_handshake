@@ -1,0 +1,12 @@
+<dec f='codebrowser/sub-process.h' l='84' type='int subprocess_handshake(struct subprocess_entry * entry, const char * welcome_prefix, int * versions, int * chosen_version, struct subprocess_capability * capabilities, unsigned int * supported_capabilities)'/>
+<use f='codebrowser/convert.c' l='524' u='c' c='start_multi_file_filter_fn'/>
+<doc f='codebrowser/sub-process.h' l='75'>/*
+ * Perform the version and capability negotiation as described in the &quot;Long
+ * Running Filter Process&quot; section of the gitattributes documentation using the
+ * given requested versions and capabilities. The &quot;versions&quot; and &quot;capabilities&quot;
+ * parameters are arrays terminated by a 0 or blank struct.
+ *
+ * This function is typically called when a subprocess is started (as part of
+ * the &quot;startfn&quot; passed to subprocess_start).
+ */</doc>
+<def f='codebrowser/sub-process.c' l='195' ll='214' type='int subprocess_handshake(struct subprocess_entry * entry, const char * welcome_prefix, int * versions, int * chosen_version, struct subprocess_capability * capabilities, unsigned int * supported_capabilities)'/>

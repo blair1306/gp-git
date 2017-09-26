@@ -1,0 +1,20 @@
+<dec f='codebrowser/trace.h' l='19' type='uint64_t getnanotime()'/>
+<use f='codebrowser/progress.c' l='151' u='c' c='display_throughput'/>
+<use f='codebrowser/progress.c' l='225' u='c' c='start_progress_delay'/>
+<use f='codebrowser/progress.c' l='257' u='c' c='stop_progress_msg'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='71' u='c' c='time_runs'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='73' u='c' c='time_runs'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='75' u='c' c='time_runs'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='136' u='c' c='analyze_run'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='138' u='c' c='analyze_run'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='145' u='c' c='analyze_run'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='147' u='c' c='analyze_run'/>
+<def f='codebrowser/trace.c' l='408' ll='427' type='uint64_t getnanotime()'/>
+<use f='codebrowser/trace.c' l='434' macro='1' u='c'/>
+<use f='codebrowser/trace.c' l='448' u='c' c='trace_command_performance'/>
+<doc f='codebrowser/trace.c' l='404'>/*
+ * Returns nanoseconds since the epoch (01/01/1970), for performance tracing
+ * (i.e. favoring high precision over wall clock time accuracy).
+ */</doc>
+<use f='codebrowser/wt-status.c' l='654' u='c' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='692' u='c' c='wt_status_collect_untracked'/>

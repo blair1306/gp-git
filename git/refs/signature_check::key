@@ -1,0 +1,9 @@
+<dec f='codebrowser/gpg-interface.h' l='23' type='char *'/>
+<offset>320</offset>
+<use f='codebrowser/builtin/receive-pack.c' l='662' u='r' c='prepare_push_cert_sha1'/>
+<use f='codebrowser/builtin/receive-pack.c' l='662' u='r' c='prepare_push_cert_sha1'/>
+<use f='codebrowser/gpg-interface.c' l='21' u='r' c='signature_check_clear'/>
+<use f='codebrowser/gpg-interface.c' l='21' u='w' c='signature_check_clear'/>
+<use f='codebrowser/gpg-interface.c' l='56' u='w' c='parse_gpg_output'/>
+<use f='codebrowser/pretty.c' l='1246' u='r' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1247' u='r' c='format_commit_one'/>

@@ -1,0 +1,21 @@
+<dec f='codebrowser/ewah/ewok.h' l='74' type='struct ewah_bitmap * ewah_new()'/>
+<doc f='codebrowser/ewah/ewok.h' l='71'>/**
+ * Allocate a new EWAH Compressed bitmap
+ */</doc>
+<use f='codebrowser/dir.c' l='2507' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2508' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2509' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2719' u='c' c='read_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2720' u='c' c='read_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2721' u='c' c='read_untracked_extension'/>
+<use f='codebrowser/ewah/bitmap.c' l='66' u='c' c='bitmap_to_ewah'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='280' ll='290' type='struct ewah_bitmap * ewah_new()'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='682' u='c' c='ewah_pool_new'/>
+<use f='codebrowser/pack-bitmap-write.c' l='56' u='c' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/pack-bitmap-write.c' l='57' u='c' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/pack-bitmap-write.c' l='58' u='c' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/pack-bitmap-write.c' l='59' u='c' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/split-index.c' l='29' u='c' c='read_link_extension'/>
+<use f='codebrowser/split-index.c' l='35' u='c' c='read_link_extension'/>
+<use f='codebrowser/split-index.c' l='182' u='c' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='183' u='c' c='prepare_to_write_split_index'/>

@@ -1,0 +1,3 @@
+<dec f='include/curl/curl.h' l='2088' type='int'/>
+<offset>0</offset>
+<doc f='include/curl/curl.h' l='2088'>/* number of certificates with information */</doc>

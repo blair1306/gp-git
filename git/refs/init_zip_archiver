@@ -1,0 +1,3 @@
+<dec f='codebrowser/archive.h' l='31' type='void init_zip_archiver()'/>
+<def f='codebrowser/archive-zip.c' l='645' ll='648' type='void init_zip_archiver()'/>
+<use f='codebrowser/archive.c' l='505' u='c' c='write_archive'/>

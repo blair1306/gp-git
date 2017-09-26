@@ -1,0 +1,3 @@
+<dec f='codebrowser/url.h' l='9' type='char * url_decode_parameter_value(const char ** query)'/>
+<use f='codebrowser/http-backend.c' l='41' u='c' c='get_parameters'/>
+<def f='codebrowser/url.c' l='95' ll='99' type='char * url_decode_parameter_value(const char ** query)'/>

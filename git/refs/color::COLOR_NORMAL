@@ -1,0 +1,5 @@
+<dec f='codebrowser/color.c' l='34' type='1'/>
+<use f='codebrowser/color.c' l='77' u='r' c='parse_color'/>
+<use f='codebrowser/color.c' l='110' u='r' c='parse_color'/>
+<use f='codebrowser/color.c' l='178' c='color_output'/>
+<use f='codebrowser/color.c' l='199' u='r' c='color_empty'/>

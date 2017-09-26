@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/sigaction.h' l='78'/>
+<use f='codebrowser/run-command.c' l='492' u='c'/>
+<use f='codebrowser/run-command.c' l='507' u='c'/>
+<use f='codebrowser/run-command.c' l='722' u='c'/>

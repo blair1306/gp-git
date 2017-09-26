@@ -1,0 +1,10 @@
+<dec f='codebrowser/pack-objects.h' l='49' type='int32_t *'/>
+<offset>128</offset>
+<use f='codebrowser/pack-objects.c' l='14' u='r' c='locate_object_entry_hash'/>
+<use f='codebrowser/pack-objects.c' l='15' u='r' c='locate_object_entry_hash'/>
+<use f='codebrowser/pack-objects.c' l='49' u='r' c='rehash_objects'/>
+<use f='codebrowser/pack-objects.c' l='50' u='w' c='rehash_objects'/>
+<use f='codebrowser/pack-objects.c' l='50' u='r' c='rehash_objects'/>
+<use f='codebrowser/pack-objects.c' l='63' u='r' c='rehash_objects'/>
+<use f='codebrowser/pack-objects.c' l='86' u='r' c='packlist_find'/>
+<use f='codebrowser/pack-objects.c' l='108' u='r' c='packlist_alloc'/>

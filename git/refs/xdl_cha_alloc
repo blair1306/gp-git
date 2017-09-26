@@ -1,0 +1,5 @@
+<dec f='codebrowser/xdiff/xutils.h' l='33' type='void * xdl_cha_alloc(chastore_t * cha)'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='148' u='c' c='scanA'/>
+<use f='codebrowser/xdiff/xprepare.c' l='126' u='c' c='xdl_classify_record'/>
+<use f='codebrowser/xdiff/xprepare.c' l='205' u='c' c='xdl_prepare_ctx'/>
+<def f='codebrowser/xdiff/xutils.c' l='100' ll='123' type='void * xdl_cha_alloc(chastore_t * cha)'/>

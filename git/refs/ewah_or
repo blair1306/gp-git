@@ -1,0 +1,2 @@
+<dec f='codebrowser/ewah/ewok.h' l='168' type='void ewah_or(struct ewah_bitmap * ewah_i, struct ewah_bitmap * ewah_j, struct ewah_bitmap * out)'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='604' ll='670' type='void ewah_or(struct ewah_bitmap * ewah_i, struct ewah_bitmap * ewah_j, struct ewah_bitmap * out)'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache-tree.h' l='34' type='int cache_tree_update(struct index_state * , int )'/>
+<use f='codebrowser/builtin/checkout.c' l='591' u='c' c='merge_working_tree'/>
+<def f='codebrowser/cache-tree.c' l='427' ll='441' type='int cache_tree_update(struct index_state * istate, int flags)'/>
+<use f='codebrowser/cache-tree.c' l='627' u='c' c='write_index_as_tree'/>
+<use f='codebrowser/cache-tree.c' l='732' u='c' c='update_main_cache_tree'/>
+<use f='codebrowser/merge-recursive.c' l='303' u='c' c='write_tree_from_memory'/>
+<use f='codebrowser/sequencer.c' l='511' u='c' c='is_index_unchanged'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='66' u='c' c='cmd_main'/>
+<use f='codebrowser/unpack-trees.c' l='1397' u='c' c='unpack_trees'/>

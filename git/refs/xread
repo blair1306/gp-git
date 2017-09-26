@@ -1,0 +1,27 @@
+<dec f='codebrowser/git-compat-util.h' l='802' type='ssize_t xread(int fd, void * buf, size_t len)'/>
+<use f='codebrowser/builtin/index-pack.c' l='276' u='c' c='fill'/>
+<use f='codebrowser/builtin/pack-objects.c' l='745' u='c' c='write_reused_pack'/>
+<use f='codebrowser/builtin/receive-pack.c' l='388' u='c' c='copy_to_sideband'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='70' u='c' c='fill'/>
+<use f='codebrowser/copy.c' l='7' u='c' c='copy_fd'/>
+<use f='codebrowser/http-backend.c' l='190' u='c' c='send_local_file'/>
+<use f='codebrowser/http-backend.c' l='341' u='c' c='inflate_request'/>
+<use f='codebrowser/http.c' l='2209' u='c' c='new_http_object_request'/>
+<use f='codebrowser/imap-send.c' l='365' u='c' c='socket_read'/>
+<use f='codebrowser/pack-write.c' l='238' u='c' c='fixup_pack_header_footer'/>
+<use f='codebrowser/pkt-line.c' l='207' u='c' c='write_packetized_from_fd'/>
+<use f='codebrowser/remote-curl.c' l='748' u='c' c='rpc_service'/>
+<use f='codebrowser/run-command.c' l='759' u='c' c='start_command'/>
+<use f='codebrowser/send-pack.c' l='120' u='c' c='pack_objects'/>
+<use f='codebrowser/strbuf.c' l='392' u='c' c='strbuf_read_once'/>
+<use f='codebrowser/strbuf.c' l='576' u='c' c='strbuf_getwholeline_fd'/>
+<use f='codebrowser/t/helper/test-sha1.c' l='36' u='c' c='cmd_main'/>
+<use f='codebrowser/upload-pack.c' l='205' u='c' c='create_pack_file'/>
+<use f='codebrowser/upload-pack.c' l='234' u='c' c='create_pack_file'/>
+<def f='codebrowser/wrapper.c' l='254' ll='269' type='ssize_t xread(int fd, void * buf, size_t len)'/>
+<use f='codebrowser/wrapper.c' l='318' u='c' c='read_in_full'/>
+<doc f='codebrowser/wrapper.c' l='249'>/*
+ * xread() is the same a read(), but it automatically restarts read()
+ * operations with a recoverable error (EAGAIN and EINTR). xread()
+ * DOES NOT GUARANTEE that &quot;len&quot; bytes is read even if the data is available.
+ */</doc>

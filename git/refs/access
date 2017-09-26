@@ -1,0 +1,24 @@
+<dec f='include/unistd.h' l='290' type='int access(const char * __name, int __type)'/>
+<doc f='include/unistd.h' l='289'>/* Test for access to NAME using the real UID and real GID.  */</doc>
+<use f='codebrowser/builtin/clone.c' l='856' u='c' c='dissociate_from_references'/>
+<use f='codebrowser/builtin/clone.c' l='1075' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/init-db.c' l='234' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='286' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='573' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/reset.c' l='42' u='c' c='is_merge'/>
+<use f='codebrowser/credential-store.c' l='105' u='c' c='store_credential'/>
+<use f='codebrowser/credential-store.c' l='132' u='c' c='remove_credential'/>
+<use f='codebrowser/daemon.c' l='394' u='c' c='run_service'/>
+<use f='codebrowser/http-backend.c' l='704' u='c' c='cmd_main'/>
+<use f='codebrowser/run-command.c' l='1171' u='c' c='find_hook'/>
+<use f='codebrowser/setup.c' l='325' u='c' c='is_git_directory'/>
+<use f='codebrowser/setup.c' l='331' u='c' c='is_git_directory'/>
+<use f='codebrowser/setup.c' l='337' u='c' c='is_git_directory'/>
+<use f='codebrowser/sha1_file.c' l='598' u='c' c='compute_alternate_path'/>
+<use f='codebrowser/sha1_file.c' l='605' u='c' c='compute_alternate_path'/>
+<use f='codebrowser/sha1_file.c' l='668' u='c' c='check_and_freshen_file'/>
+<use f='codebrowser/sha1_file.c' l='1343' u='c' c='add_packed_git'/>
+<use f='codebrowser/shell.c' l='66' u='c' c='run_shell'/>
+<use f='codebrowser/shell.c' l='156' u='c' c='cmd_main'/>
+<use f='codebrowser/wrapper.c' l='614' u='c' c='access_or_warn'/>
+<use f='codebrowser/wrapper.c' l='622' u='c' c='access_or_die'/>

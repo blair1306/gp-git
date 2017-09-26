@@ -1,0 +1,5 @@
+<dec f='codebrowser/notes-utils.h' l='42' type='int copy_note_for_rewrite(struct notes_rewrite_cfg * c, const struct object_id * from_obj, const struct object_id * to_obj)'/>
+<use f='codebrowser/builtin/am.c' l='574' u='c' c='copy_notes_for_rebase'/>
+<use f='codebrowser/builtin/commit.c' l='1814' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/notes.c' l='311' u='c' c='notes_copy_from_stdin'/>
+<def f='codebrowser/notes-utils.c' l='161' ll='169' type='int copy_note_for_rewrite(struct notes_rewrite_cfg * c, const struct object_id * from_obj, const struct object_id * to_obj)'/>

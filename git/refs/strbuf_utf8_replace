@@ -1,0 +1,5 @@
+<dec f='codebrowser/utf8.h' l='23' type='void strbuf_utf8_replace(struct strbuf * sb, int pos, int width, const char * subst)'/>
+<use f='codebrowser/pretty.c' l='1366' u='c' c='format_and_pad_commit'/>
+<use f='codebrowser/pretty.c' l='1371' u='c' c='format_and_pad_commit'/>
+<use f='codebrowser/pretty.c' l='1377' u='c' c='format_and_pad_commit'/>
+<def f='codebrowser/utf8.c' l='354' ll='401' type='void strbuf_utf8_replace(struct strbuf * sb_src, int pos, int width, const char * subst)'/>

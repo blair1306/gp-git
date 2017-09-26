@@ -1,0 +1,6 @@
+<dec f='codebrowser/run-command.h' l='130' type='void *'/>
+<offset>64</offset>
+<use f='codebrowser/convert.c' l='473' u='w' c='apply_single_file_filter'/>
+<use f='codebrowser/fetch-pack.c' l='809' u='w' c='get_pack'/>
+<use f='codebrowser/run-command.c' l='933' u='r' c='run_thread'/>
+<use f='codebrowser/send-pack.c' l='559' u='w' c='send_pack'/>

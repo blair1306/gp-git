@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='157' type='int git_configset_get_string_const(struct config_set * cs, const char * key, const char ** dest)'/>
+<def f='codebrowser/config.c' l='1801' ll='1808' type='int git_configset_get_string_const(struct config_set * cs, const char * key, const char ** dest)'/>
+<use f='codebrowser/config.c' l='1812' u='c' c='git_configset_get_string'/>
+<use f='codebrowser/config.c' l='1947' u='c' c='repo_config_get_string_const'/>

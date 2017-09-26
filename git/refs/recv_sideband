@@ -1,0 +1,5 @@
+<dec f='codebrowser/sideband.h' l='7' type='int recv_sideband(const char * me, int in_stream, int out)'/>
+<use f='codebrowser/builtin/archive.c' l='71' u='c' c='run_remote_archiver'/>
+<use f='codebrowser/fetch-pack.c' l='786' u='c' c='sideband_demux'/>
+<use f='codebrowser/send-pack.c' l='216' u='c' c='sideband_demux'/>
+<def f='codebrowser/sideband.c' l='21' ll='105' type='int recv_sideband(const char * me, int in_stream, int out)'/>

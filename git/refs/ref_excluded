@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='226' type='int ref_excluded(struct string_list * , const char * path)'/>
+<use f='codebrowser/builtin/rev-parse.c' l='197' u='c' c='show_reference'/>
+<def f='codebrowser/revision.c' l='1136' ll='1147' type='int ref_excluded(struct string_list * ref_excludes, const char * path)'/>
+<use f='codebrowser/revision.c' l='1155' u='c' c='handle_one_ref'/>

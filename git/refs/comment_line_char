@@ -1,0 +1,43 @@
+<dec f='codebrowser/cache.h' l='789' type='char'/>
+<doc f='codebrowser/cache.h' l='785'>/*
+ * The character that begins a commented line in user-editable file
+ * that is subject to stripspace.
+ */</doc>
+<use f='codebrowser/builtin/branch.c' l='528' u='r' c='edit_branch_description'/>
+<use f='codebrowser/builtin/commit.c' l='637' u='w' c='adjust_comment_line_char'/>
+<use f='codebrowser/builtin/commit.c' l='638' u='r' c='adjust_comment_line_char'/>
+<use f='codebrowser/builtin/commit.c' l='658' u='w' c='adjust_comment_line_char'/>
+<use f='codebrowser/builtin/commit.c' l='835' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='844' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='310' u='r' c='credit_people'/>
+<use f='codebrowser/builtin/merge.c' l='767' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/tag.c' l='242' u='r' c='create_tag'/>
+<use f='codebrowser/builtin/tag.c' l='244' u='r' c='create_tag'/>
+<use f='codebrowser/commit.c' l='1672' u='r' c='ignore_non_trailer'/>
+<use f='codebrowser/config.c' l='1182' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='84' type='char'/>
+<doc f='codebrowser/environment.c' l='80'>/*
+ * The character that begins a commented line in user-editable file
+ * that is subject to stripspace.
+ */</doc>
+<use f='codebrowser/sequencer.c' l='823' u='r' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='835' u='r' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='861' u='r' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='864' u='r' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='879' u='r' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='884' u='r' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='1235' u='r' c='parse_insn_line'/>
+<use f='codebrowser/strbuf.c' l='247' u='r' c='strbuf_add_commented_lines'/>
+<use f='codebrowser/strbuf.c' l='248' u='r' c='strbuf_add_commented_lines'/>
+<use f='codebrowser/strbuf.c' l='249' u='r' c='strbuf_add_commented_lines'/>
+<use f='codebrowser/strbuf.c' l='901' u='r' c='strbuf_stripspace'/>
+<use f='codebrowser/trailer.c' l='796' u='r' c='find_trailer_start'/>
+<use f='codebrowser/trailer.c' l='816' u='r' c='find_trailer_start'/>
+<use f='codebrowser/trailer.c' l='908' u='r' c='process_input_file'/>
+<use f='codebrowser/wt-status.c' l='56' u='r' c='status_vprintf'/>
+<use f='codebrowser/wt-status.c' l='71' u='r' c='status_vprintf'/>
+<use f='codebrowser/wt-status.c' l='926' u='r' c='wt_status_locate_end'/>
+<use f='codebrowser/wt-status.c' l='940' u='r' c='wt_status_add_cut_line'/>
+<use f='codebrowser/wt-status.c' l='1015' u='r' c='wt_longstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1026' u='r' c='wt_longstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1187' u='r' c='read_rebase_todolist'/>

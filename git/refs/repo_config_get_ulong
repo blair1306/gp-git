@@ -1,0 +1,3 @@
+<dec f='codebrowser/config.h' l='179' type='int repo_config_get_ulong(struct repository * repo, const char * key, unsigned long * dest)'/>
+<def f='codebrowser/config.c' l='1967' ll='1972' type='int repo_config_get_ulong(struct repository * repo, const char * key, unsigned long * dest)'/>
+<use f='codebrowser/config.c' l='2044' u='c' c='git_config_get_ulong'/>

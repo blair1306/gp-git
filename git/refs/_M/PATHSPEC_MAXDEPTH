@@ -1,0 +1,12 @@
+<dec f='codebrowser/pathspec.h' l='6'/>
+<use f='codebrowser/dir.c' l='145' u='c'/>
+<use f='codebrowser/dir.c' l='386' u='c'/>
+<use f='codebrowser/dir.c' l='395' u='c'/>
+<use f='codebrowser/dir.c' l='426' u='c'/>
+<use f='codebrowser/dir.c' l='1426' u='c'/>
+<use f='codebrowser/dir.c' l='1467' u='c'/>
+<use f='codebrowser/pathspec.c' l='544' u='c'/>
+<use f='codebrowser/pathspec.c' l='617' u='c'/>
+<use f='codebrowser/tree-walk.c' l='943' u='c'/>
+<use f='codebrowser/tree-walk.c' l='951' u='c'/>
+<use f='codebrowser/tree-walk.c' l='978' u='c'/>

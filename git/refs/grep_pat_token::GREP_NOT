@@ -1,0 +1,4 @@
+<dec f='codebrowser/grep.h' l='45' type='6'/>
+<use f='codebrowser/builtin/grep.c' l='729' u='r' c='not_callback'/>
+<use f='codebrowser/grep.c' l='717' c='compile_pattern_not'/>
+<use f='codebrowser/grep.c' l='792' c='dump_grep_pat'/>

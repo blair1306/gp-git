@@ -1,0 +1,14 @@
+<def f='codebrowser/wt-status.h' l='37' ll='47'/>
+<size>88</size>
+<mbr r='wt_status_change_data::worktree_status' o='0' t='int'/>
+<mbr r='wt_status_change_data::index_status' o='32' t='int'/>
+<mbr r='wt_status_change_data::stagemask' o='64' t='int'/>
+<mbr r='wt_status_change_data::score' o='96' t='int'/>
+<mbr r='wt_status_change_data::mode_head' o='128' t='int'/>
+<mbr r='wt_status_change_data::mode_index' o='160' t='int'/>
+<mbr r='wt_status_change_data::mode_worktree' o='192' t='int'/>
+<mbr r='wt_status_change_data::oid_head' o='224' t='struct object_id'/>
+<mbr r='wt_status_change_data::oid_index' o='384' t='struct object_id'/>
+<mbr r='wt_status_change_data::head_path' o='576' t='char *'/>
+<mbr r='wt_status_change_data::dirty_submodule' o='640' t='unsigned int'/>
+<mbr r='wt_status_change_data::new_submodule_commits' o='642' t='unsigned int'/>

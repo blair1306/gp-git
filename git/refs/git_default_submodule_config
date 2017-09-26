@@ -1,0 +1,5 @@
+<dec f='codebrowser/submodule.h' l='44' type='int git_default_submodule_config(const char * var, const char * value, void * cb)'/>
+<use f='codebrowser/builtin/read-tree.c' l='105' u='c' c='git_read_tree_config'/>
+<use f='codebrowser/builtin/reset.c' l='272' u='c' c='git_reset_config'/>
+<def f='codebrowser/submodule.c' l='197' ll='205' type='int git_default_submodule_config(const char * var, const char * value, void * cb)'/>
+<doc f='codebrowser/submodule.c' l='196'>/* Cheap function that only determines if we&apos;re interested in submodules at all */</doc>

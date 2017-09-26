@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='1412' type='3'/>
+<use f='codebrowser/builtin/blame.c' l='50'/>
+<use f='codebrowser/builtin/blame.c' l='50'/>
+<use f='codebrowser/builtin/blame.c' l='760' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='773' c='cmd_blame'/>
+<use f='codebrowser/date.c' l='236' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='814' u='r' c='parse_date_type'/>
+<use f='codebrowser/fast-import.c' l='430' macro='1' u='r'/>
+<use f='codebrowser/pretty.c' l='725' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-date.c' l='58' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-date.c' l='70' macro='1' u='r'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/run-command.h' l='140' type='int'/>
+<offset>320</offset>
+<use f='codebrowser/fetch-pack.c' l='811' u='w' c='get_pack'/>
+<use f='codebrowser/run-command.c' l='922' u='r' c='run_thread'/>
+<use f='codebrowser/send-pack.c' l='561' u='w' c='send_pack'/>

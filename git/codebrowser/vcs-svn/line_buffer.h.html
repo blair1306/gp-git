@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>line_buffer.h source code [codebrowser/vcs-svn/line_buffer.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="line_buffer "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/vcs-svn/line_buffer.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>vcs-svn</a>/<a href='line_buffer.h.html'>line_buffer.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/LINE_BUFFER_H_">LINE_BUFFER_H_</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/LINE_BUFFER_H_" data-ref="_M/LINE_BUFFER_H_">LINE_BUFFER_H_</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../strbuf.h.html">"strbuf.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/LINE_BUFFER_LEN" data-ref="_M/LINE_BUFFER_LEN">LINE_BUFFER_LEN</dfn> 10000</u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>struct</b> <dfn class="type def" id="line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</dfn> {</td></tr>
+<tr><th id="9">9</th><td>	<em>char</em> <dfn class="decl" id="line_buffer::line_buffer" title='line_buffer::line_buffer' data-ref="line_buffer::line_buffer">line_buffer</dfn>[<a class="macro" href="#6" title="10000" data-ref="_M/LINE_BUFFER_LEN">LINE_BUFFER_LEN</a>];</td></tr>
+<tr><th id="10">10</th><td>	<a class="typedef" href="../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="line_buffer::infile" title='line_buffer::infile' data-ref="line_buffer::infile">infile</dfn>;</td></tr>
+<tr><th id="11">11</th><td>};</td></tr>
+<tr><th id="12">12</th><td><u>#define <dfn class="macro" id="_M/LINE_BUFFER_INIT" data-ref="_M/LINE_BUFFER_INIT">LINE_BUFFER_INIT</dfn> { "", NULL }</u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><em>int</em> <dfn class="decl" id="buffer_init" title='buffer_init' data-ref="buffer_init">buffer_init</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col1 decl" id="1buf" title='buf' data-type='struct line_buffer *' data-ref="1buf">buf</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2filename" title='filename' data-type='const char *' data-ref="2filename">filename</dfn>);</td></tr>
+<tr><th id="15">15</th><td><em>int</em> <dfn class="decl" id="buffer_fdinit" title='buffer_fdinit' data-ref="buffer_fdinit">buffer_fdinit</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col3 decl" id="3buf" title='buf' data-type='struct line_buffer *' data-ref="3buf">buf</dfn>, <em>int</em> <dfn class="local col4 decl" id="4fd" title='fd' data-type='int' data-ref="4fd">fd</dfn>);</td></tr>
+<tr><th id="16">16</th><td><em>int</em> <dfn class="decl" id="buffer_deinit" title='buffer_deinit' data-ref="buffer_deinit">buffer_deinit</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col5 decl" id="5buf" title='buf' data-type='struct line_buffer *' data-ref="5buf">buf</dfn>);</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><em>int</em> <dfn class="decl" id="buffer_tmpfile_init" title='buffer_tmpfile_init' data-ref="buffer_tmpfile_init">buffer_tmpfile_init</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col6 decl" id="6buf" title='buf' data-type='struct line_buffer *' data-ref="6buf">buf</dfn>);</td></tr>
+<tr><th id="19">19</th><td><a class="typedef" href="../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="buffer_tmpfile_rewind" title='buffer_tmpfile_rewind' data-ref="buffer_tmpfile_rewind">buffer_tmpfile_rewind</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col7 decl" id="7buf" title='buf' data-type='struct line_buffer *' data-ref="7buf">buf</dfn>);	<i>/* prepare to write. */</i></td></tr>
+<tr><th id="20">20</th><td><em>long</em> <dfn class="decl" id="buffer_tmpfile_prepare_to_read" title='buffer_tmpfile_prepare_to_read' data-ref="buffer_tmpfile_prepare_to_read">buffer_tmpfile_prepare_to_read</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col8 decl" id="8buf" title='buf' data-type='struct line_buffer *' data-ref="8buf">buf</dfn>);</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><em>int</em> <dfn class="decl" id="buffer_ferror" title='buffer_ferror' data-ref="buffer_ferror">buffer_ferror</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col9 decl" id="9buf" title='buf' data-type='struct line_buffer *' data-ref="9buf">buf</dfn>);</td></tr>
+<tr><th id="23">23</th><td><em>char</em> *<dfn class="decl" id="buffer_read_line" title='buffer_read_line' data-ref="buffer_read_line">buffer_read_line</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col0 decl" id="10buf" title='buf' data-type='struct line_buffer *' data-ref="10buf">buf</dfn>);</td></tr>
+<tr><th id="24">24</th><td><em>int</em> <dfn class="decl" id="buffer_read_char" title='buffer_read_char' data-ref="buffer_read_char">buffer_read_char</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col1 decl" id="11buf" title='buf' data-type='struct line_buffer *' data-ref="11buf">buf</dfn>);</td></tr>
+<tr><th id="25">25</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="buffer_read_binary" title='buffer_read_binary' data-ref="buffer_read_binary">buffer_read_binary</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col2 decl" id="12buf" title='buf' data-type='struct line_buffer *' data-ref="12buf">buf</dfn>, <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col3 decl" id="13sb" title='sb' data-type='struct strbuf *' data-ref="13sb">sb</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="14len" title='len' data-type='size_t' data-ref="14len">len</dfn>);</td></tr>
+<tr><th id="26">26</th><td><i>/* Returns number of bytes read (not necessarily written). */</i></td></tr>
+<tr><th id="27">27</th><td><a class="typedef" href="../../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="decl" id="buffer_copy_bytes" title='buffer_copy_bytes' data-ref="buffer_copy_bytes">buffer_copy_bytes</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col5 decl" id="15buf" title='buf' data-type='struct line_buffer *' data-ref="15buf">buf</dfn>, <a class="typedef" href="../../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col6 decl" id="16len" title='len' data-type='off_t' data-ref="16len">len</dfn>);</td></tr>
+<tr><th id="28">28</th><td><a class="typedef" href="../../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="decl" id="buffer_skip_bytes" title='buffer_skip_bytes' data-ref="buffer_skip_bytes">buffer_skip_bytes</dfn>(<b>struct</b> <a class="type" href="#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="local col7 decl" id="17buf" title='buf' data-type='struct line_buffer *' data-ref="17buf">buf</dfn>, <a class="typedef" href="../../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col8 decl" id="18len" title='len' data-type='off_t' data-ref="18len">len</dfn>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../t/helper/test-line-buffer.c.html'>codebrowser/t/helper/test-line-buffer.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

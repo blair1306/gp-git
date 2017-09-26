@@ -1,0 +1,3 @@
+<def f='codebrowser/csum-file.h' l='42' ll='45' type='void sha1write_u8(struct sha1file * f, uint8_t data)'/>
+<use f='codebrowser/pack-bitmap-write.c' l='483' u='c' c='write_selected_commits_v1'/>
+<use f='codebrowser/pack-bitmap-write.c' l='484' u='c' c='write_selected_commits_v1'/>

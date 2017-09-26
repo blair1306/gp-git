@@ -1,0 +1,2 @@
+<def f='codebrowser/list.h' l='90' ll='94' type='void list_move(struct list_head * elem, struct list_head * head)'/>
+<doc f='codebrowser/list.h' l='89'>/* Delete from list, add to another list as head. */</doc>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='61' type='int xdl_do_histogram_diff(mmfile_t * mf1, mmfile_t * mf2, const xpparam_t * xpp, xdfenv_t * env)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='335' u='c' c='xdl_do_diff'/>
+<def f='codebrowser/xdiff/xhistogram.c' l='354' ll='363' type='int xdl_do_histogram_diff(mmfile_t * file1, mmfile_t * file2, const xpparam_t * xpp, xdfenv_t * env)'/>

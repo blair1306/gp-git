@@ -1,0 +1,10 @@
+<dec f='codebrowser/revision.h' l='179' type='struct string_list *'/>
+<offset>2624</offset>
+<use f='codebrowser/builtin/commit.c' l='1057' u='w' c='find_author_by_nickname'/>
+<use f='codebrowser/builtin/commit.c' l='1058' u='r' c='find_author_by_nickname'/>
+<use f='codebrowser/builtin/log.c' l='192' u='w' c='cmd_log_init_finish'/>
+<use f='codebrowser/builtin/log.c' l='193' u='r' c='cmd_log_init_finish'/>
+<use f='codebrowser/log-tree.c' l='680' u='r' c='show_log'/>
+<use f='codebrowser/revision.c' l='2929' u='r' c='commit_match'/>
+<use f='codebrowser/revision.c' l='2933' u='r' c='commit_match'/>
+<use f='codebrowser/revision.c' l='2934' u='r' c='commit_match'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/merge-recursive.h' l='12' type='1'/>
+<use f='codebrowser/merge-recursive.c' l='896' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='2192' u='r' c='parse_merge_opt'/>

@@ -1,0 +1,5 @@
+<def f='codebrowser/diffcore.h' l='93' ll='97'/>
+<size>16</size>
+<mbr r='diff_queue_struct::queue' o='0' t='struct diff_filepair **'/>
+<mbr r='diff_queue_struct::alloc' o='64' t='int'/>
+<mbr r='diff_queue_struct::nr' o='96' t='int'/>

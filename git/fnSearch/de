@@ -1,0 +1,15 @@
+default_bswap64|default_bswap64
+default_swab32|default_swab32
+detach_advice|detach_advice
+decode_85|decode_85
+detach_commit_buffer|detach_commit_buffer
+default_notes_ref|default_notes_ref
+decimal_width|decimal_width
+delete_ref|delete_ref
+delete_reflog|delete_reflog
+delete_refs|delete_refs
+delayed_reachability_test|delayed_reachability_test
+deref_tag|deref_tag
+deref_tag_noverify|deref_tag_noverify
+delete_tempfile|delete_tempfile
+decode_varint|decode_varint

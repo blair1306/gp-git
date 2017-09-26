@@ -1,0 +1,7 @@
+<dec f='codebrowser/urlmatch.h' l='12' type='size_t'/>
+<offset>128</offset>
+<doc f='codebrowser/urlmatch.h' l='10'>/* the rest of the fields are only set if url != NULL */</doc>
+<doc f='codebrowser/urlmatch.h' l='12'>/* total length of url (which is now normalized) */</doc>
+<use f='codebrowser/t/helper/test-urlmatch-normalization.c' l='40' u='r' c='cmd_main'/>
+<use f='codebrowser/urlmatch.c' l='417' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='526' u='r' c='match_urls'/>

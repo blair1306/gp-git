@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='107' type='int should_autocreate_reflog(const char * refname)'/>
+<use f='codebrowser/builtin/checkout.c' l='625' u='c' c='update_refs_for_switch'/>
+<def f='codebrowser/refs.c' l='714' ll='727' type='int should_autocreate_reflog(const char * refname)'/>
+<use f='codebrowser/refs/files-backend.c' l='1467' u='c' c='log_ref_setup'/>

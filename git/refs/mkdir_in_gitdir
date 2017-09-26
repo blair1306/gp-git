@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1118' type='int mkdir_in_gitdir(const char * path)'/>
+<use f='codebrowser/rerere.c' l='851' u='c' c='do_plain_rerere'/>
+<use f='codebrowser/rerere.c' l='883' u='c' c='is_rerere_enabled'/>
+<def f='codebrowser/sha1_file.c' l='79' ll='106' type='int mkdir_in_gitdir(const char * path)'/>

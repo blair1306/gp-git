@@ -1,0 +1,24 @@
+<dec f='codebrowser/sequencer.h' l='39' type='struct rev_info *'/>
+<offset>704</offset>
+<doc f='codebrowser/sequencer.h' l='38'>/* Only used by REPLAY_NONE */</doc>
+<use f='codebrowser/builtin/revert.c' l='172' u='w' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='175' u='w' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='175' u='r' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='176' u='r' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='177' u='r' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='184' u='r' c='run_sequencer'/>
+<use f='codebrowser/sequencer.c' l='1163' u='r' c='prepare_revs'/>
+<use f='codebrowser/sequencer.c' l='1164' u='r' c='prepare_revs'/>
+<use f='codebrowser/sequencer.c' l='1166' u='r' c='prepare_revs'/>
+<use f='codebrowser/sequencer.c' l='1169' u='r' c='prepare_revs'/>
+<use f='codebrowser/sequencer.c' l='1532' u='r' c='walk_revs_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='2312' u='r' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2316' u='r' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2318' u='r' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2341' u='r' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2342' u='r' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2343' u='r' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2344' u='r' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2346' u='r' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2348' u='r' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2349' u='r' c='sequencer_pick_revisions'/>

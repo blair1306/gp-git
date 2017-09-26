@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1908' type='void prepare_pager_args(struct child_process * , const char * pager)'/>
+<use f='codebrowser/builtin/am.c' l='1763' u='c' c='do_interactive'/>
+<def f='codebrowser/pager.c' l='97' ll='102' type='void prepare_pager_args(struct child_process * pager_process, const char * pager)'/>
+<use f='codebrowser/pager.c' l='120' u='c' c='setup_pager'/>

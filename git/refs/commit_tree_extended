@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='333' type='int commit_tree_extended(const char * msg, size_t msg_len, const unsigned char * tree, struct commit_list * parents, unsigned char * ret, const char * author, const char * sign_commit, struct commit_extra_header * )'/>
+<use f='codebrowser/builtin/commit.c' l='1767' u='c' c='cmd_commit'/>
+<use f='codebrowser/commit.c' l='1393' u='c' c='commit_tree'/>
+<def f='codebrowser/commit.c' l='1514' ll='1573' type='int commit_tree_extended(const char * msg, size_t msg_len, const unsigned char * tree, struct commit_list * parents, unsigned char * ret, const char * author, const char * sign_commit, struct commit_extra_header * extra)'/>

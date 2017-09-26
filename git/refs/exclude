@@ -1,0 +1,10 @@
+<def f='codebrowser/dir.h' l='18' ll='37'/>
+<size>48</size>
+<mbr r='exclude::el' o='0' t='struct exclude_list *'/>
+<mbr r='exclude::pattern' o='64' t='const char *'/>
+<mbr r='exclude::patternlen' o='128' t='int'/>
+<mbr r='exclude::nowildcardlen' o='160' t='int'/>
+<mbr r='exclude::base' o='192' t='const char *'/>
+<mbr r='exclude::baselen' o='256' t='int'/>
+<mbr r='exclude::flags' o='288' t='unsigned int'/>
+<mbr r='exclude::srcpos' o='320' t='int'/>

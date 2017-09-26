@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1796' type='unsigned char *'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/cat-file.c' l='248' u='w' c='expand_atom'/>
+<use f='codebrowser/sha1_file.c' l='2432' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2443' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2445' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2912' u='r' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2913' u='r' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2995' u='r' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_file.c' l='2996' u='r' c='sha1_object_info_extended'/>

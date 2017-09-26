@@ -1,0 +1,5 @@
+<dec f='codebrowser/utf8.h' l='29' type='char * reencode_string_len(const char * in, int insz, const char * out_encoding, const char * in_encoding, int * outsz)'/>
+<use f='codebrowser/utf8.h' l='43' u='c' c='reencode_string'/>
+<use f='codebrowser/pretty.c' l='1518' u='c' c='format_commit_message'/>
+<use f='codebrowser/strbuf.c' l='102' u='c' c='strbuf_reencode'/>
+<def f='codebrowser/utf8.c' l='514' ll='537' type='char * reencode_string_len(const char * in, int insz, const char * out_encoding, const char * in_encoding, int * outsz)'/>

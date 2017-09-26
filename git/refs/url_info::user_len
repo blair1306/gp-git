@@ -1,0 +1,11 @@
+<dec f='codebrowser/urlmatch.h' l='15' type='size_t'/>
+<offset>320</offset>
+<doc f='codebrowser/urlmatch.h' l='15'>/* length of user name; if user_off != 0 but
+				   user_len == 0, an empty user name was given */</doc>
+<use f='codebrowser/urlmatch.c' l='420' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='504' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='504' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='507' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='507' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='507' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='507' u='r' c='match_urls'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1493' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/checkout-index.c' l='175' u='a' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout-index.c' l='175' u='a' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout-index.c' l='175' u='a' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout-index.c' l='175' u='a' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout-index.c' l='199' u='r' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout-index.c' l='200' u='w' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout-index.c' l='201' u='r' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/difftool.c' l='373' u='w' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='377' u='w' c='run_dir_diff'/>
+<use f='codebrowser/entry.c' l='387' u='r' c='checkout_entry'/>

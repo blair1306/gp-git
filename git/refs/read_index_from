@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='600' type='int read_index_from(struct index_state * , const char * path)'/>
+<use f='codebrowser/apply.c' l='3993' macro='1' u='c'/>
+<use f='codebrowser/builtin/am.c' l='1528' macro='1' u='c'/>
+<use f='codebrowser/builtin/am.c' l='1571' macro='1' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='374' macro='1' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='493' macro='1' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='951' macro='1' u='c'/>
+<use f='codebrowser/cache-tree.c' l='616' u='c' c='write_index_as_tree'/>
+<use f='codebrowser/read-cache.c' l='1569' u='c' c='read_index'/>
+<def f='codebrowser/read-cache.c' l='1833' ll='1869' type='int read_index_from(struct index_state * istate, const char * path)'/>
+<use f='codebrowser/repository.c' l='241' u='c' c='repo_read_index'/>

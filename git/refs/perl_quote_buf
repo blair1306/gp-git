@@ -1,0 +1,5 @@
+<dec f='codebrowser/quote.h' l='70' type='void perl_quote_buf(struct strbuf * sb, const char * src)'/>
+<doc f='codebrowser/quote.h' l='69'>/* quoting as a string literal for other languages */</doc>
+<def f='codebrowser/quote.c' l='387' ll='400' type='void perl_quote_buf(struct strbuf * sb, const char * src)'/>
+<doc f='codebrowser/quote.c' l='385'>/* quoting as a string literal for other languages */</doc>
+<use f='codebrowser/ref-filter.c' l='440' u='c' c='quote_formatting'/>

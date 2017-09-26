@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='243' type='int cmd_pack_refs(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/pack-refs.c' l='10' ll='21' type='int cmd_pack_refs(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='437'/>
+<use f='codebrowser/git.c' l='437'/>
+<use f='codebrowser/git.c' l='437'/>
+<use f='codebrowser/git.c' l='437'/>

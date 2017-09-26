@@ -1,0 +1,3 @@
+<dec f='codebrowser/builtin/am.c' l='77' type='5'/>
+<use f='codebrowser/builtin/am.c' l='972' c='split_mail'/>
+<use f='codebrowser/builtin/am.c' l='2166' u='r' c='parse_opt_patchformat'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/diffcore.h' l='89' type='void diff_free_filepair(struct diff_filepair * )'/>
+<def f='codebrowser/diff.c' l='4173' ll='4178' type='void diff_free_filepair(struct diff_filepair * p)'/>
+<use f='codebrowser/diff.c' l='4674' u='c' c='diff_flush_patch_id'/>
+<use f='codebrowser/diff.c' l='4832' u='c' c='diff_flush'/>
+<use f='codebrowser/diff.c' l='4889' u='c' c='diffcore_apply_filter'/>
+<use f='codebrowser/diff.c' l='4898' u='c' c='diffcore_apply_filter'/>
+<use f='codebrowser/diff.c' l='4970' u='c' c='diffcore_skip_stat_unmatch'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='188' u='c' c='pickaxe'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='196' u='c' c='pickaxe'/>
+<use f='codebrowser/diffcore-rename.c' l='659' u='c' c='diffcore_rename'/>
+<use f='codebrowser/line-log.c' l='250' u='c' c='line_log_data_clear'/>
+<use f='codebrowser/line-log.c' l='784' u='c' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='794' u='c' c='filter_diffs_for_paths'/>
+<use f='codebrowser/line-log.c' l='1058' u='c' c='free_diffqueues'/>
+<use f='codebrowser/merge-recursive.c' l='541' u='c' c='get_renames'/>
+<use f='codebrowser/tree-diff.c' l='666' u='c' c='try_to_follow_renames'/>

@@ -1,0 +1,5 @@
+<dec f='include/curl/curl.h' l='445' type='22'/>
+<use f='codebrowser/http.h' l='131' u='r' c='missing__target'/>
+<doc f='include/curl/curl.h' l='445'>/* 22 */</doc>
+<use f='codebrowser/http-walker.c' l='525' u='r' c='fetch_object'/>
+<use f='codebrowser/http.c' l='1373' u='r' c='handle_curl_result'/>

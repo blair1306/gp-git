@@ -1,0 +1,8 @@
+<dec f='codebrowser/merge-recursive.h' l='30' type='struct string_list'/>
+<offset>1408</offset>
+<use f='codebrowser/merge-recursive.c' l='458' u='a' c='record_df_conflict_files'/>
+<use f='codebrowser/merge-recursive.c' l='474' u='a' c='record_df_conflict_files'/>
+<use f='codebrowser/merge-recursive.c' l='731' u='m' c='make_room_for_path'/>
+<use f='codebrowser/merge-recursive.c' l='732' u='m' c='make_room_for_path'/>
+<use f='codebrowser/merge-recursive.c' l='742' u='a' c='make_room_for_path'/>
+<use f='codebrowser/merge-recursive.c' l='2182' u='a' c='init_merge_options'/>

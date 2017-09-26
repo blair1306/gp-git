@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='237' type='int cmd_version(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='481'/>
+<use f='codebrowser/git.c' l='481'/>
+<use f='codebrowser/git.c' l='481'/>
+<use f='codebrowser/git.c' l='481'/>
+<def f='codebrowser/help.c' l='391' ll='419' type='int cmd_version(int argc, const char ** argv, const char * prefix)'/>

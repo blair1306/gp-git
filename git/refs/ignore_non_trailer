@@ -1,0 +1,16 @@
+<dec f='codebrowser/commit.h' l='355' type='int ignore_non_trailer(const char * buf, size_t len)'/>
+<doc f='codebrowser/commit.h' l='354'>/* Find the end of the log message, the right place for a new trailer. */</doc>
+<use f='codebrowser/builtin/commit.c' l='794' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/merge.c' l='769' u='c' c='prepare_to_commit'/>
+<def f='codebrowser/commit.c' l='1657' ll='1691' type='int ignore_non_trailer(const char * buf, size_t len)'/>
+<doc f='codebrowser/commit.c' l='1647'>/*
+ * Inspect the given string and determine the true &quot;end&quot; of the log message, in
+ * order to find where to put a new Signed-off-by: line.  Ignored are
+ * trailing comment lines and blank lines.  To support &quot;git commit -s
+ * --amend&quot; on an existing commit, we also ignore &quot;Conflicts:&quot;.  To
+ * support &quot;git commit -v&quot;, we truncate at cut lines.
+ *
+ * Returns the number of bytes from the tail to ignore, to be fed as
+ * the second parameter to append_signoff().
+ */</doc>
+<use f='codebrowser/trailer.c' l='877' u='c' c='find_trailer_end'/>

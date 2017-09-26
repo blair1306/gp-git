@@ -1,0 +1,19 @@
+<dec f='include/regex.h' l='562' type='int regcomp(regex_t *restrict __preg, const char *restrict __pattern, int __cflags)'/>
+<doc f='include/regex.h' l='561'>/* POSIX compatibility.  */</doc>
+<use f='codebrowser/apply.c' l='834' u='c' c='has_epoch_timestamp'/>
+<use f='codebrowser/builtin/am.c' l='603' u='c' c='is_mail'/>
+<use f='codebrowser/builtin/config.c' l='216' u='c' c='get_value'/>
+<use f='codebrowser/builtin/config.c' l='236' u='c' c='get_value'/>
+<use f='codebrowser/builtin/remote.c' l='1572' u='c' c='set_url'/>
+<use f='codebrowser/config.c' l='2498' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/diff.c' l='1182' u='c' c='init_diff_words_data'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='206' u='c' c='regcomp_or_die'/>
+<use f='codebrowser/grep.c' l='601' u='c' c='compile_fixed_regexp'/>
+<use f='codebrowser/grep.c' l='669' u='c' c='compile_regexp'/>
+<use f='codebrowser/http-backend.c' l='680' u='c' c='cmd_main'/>
+<use f='codebrowser/line-range.c' l='94' u='c' c='parse_loc'/>
+<use f='codebrowser/line-range.c' l='208' u='c' c='parse_range_funcname'/>
+<use f='codebrowser/sha1_name.c' l='1026' u='c' c='get_oid_oneline'/>
+<use f='codebrowser/t/helper/test-regex.c' l='27' u='c' c='test_regex_bug'/>
+<use f='codebrowser/t/helper/test-regex.c' l='69' u='c' c='cmd_main'/>
+<use f='codebrowser/xdiff-interface.c' l='277' u='c' c='xdiff_set_find_func'/>

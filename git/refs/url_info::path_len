@@ -1,0 +1,5 @@
+<dec f='codebrowser/urlmatch.h' l='30' type='size_t'/>
+<offset>832</offset>
+<doc f='codebrowser/urlmatch.h' l='30'>/* length of path portion excluding any trailing
+				 * &apos;?...&apos; and &apos;#...&apos; portion; will always be &gt;= 1 */</doc>
+<use f='codebrowser/urlmatch.c' l='428' u='w' c='url_normalize_1'/>

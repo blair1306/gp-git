@@ -1,0 +1,9 @@
+<def f='codebrowser/http.h' l='119' ll='123'/>
+<dec f='codebrowser/http.h' l='124' type='enum http_follow_config'/>
+<use f='codebrowser/http-walker.c' l='171' u='r' c='is_alternate_allowed'/>
+<def f='codebrowser/http.c' l='115' type='enum http_follow_config'/>
+<use f='codebrowser/http.c' l='387' u='w' c='http_options'/>
+<use f='codebrowser/http.c' l='389' u='w' c='http_options'/>
+<use f='codebrowser/http.c' l='391' u='w' c='http_options'/>
+<use f='codebrowser/http.c' l='1120' u='r' c='get_active_slot'/>
+<use f='codebrowser/http.c' l='1696' u='r' c='http_request'/>

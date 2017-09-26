@@ -1,0 +1,9 @@
+<dec f='codebrowser/commit.h' l='133' type='6'/>
+<use f='codebrowser/commit.h' l='142' u='r' c='cmit_fmt_is_mail'/>
+<use f='codebrowser/builtin/log.c' l='1026' u='r' c='make_cover_letter'/>
+<use f='codebrowser/builtin/log.c' l='1510' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/pretty.c' l='96' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='96' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='96' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='96' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='499' c='pp_user_info'/>

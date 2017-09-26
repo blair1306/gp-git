@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='137' type='9'/>
+<use f='codebrowser/bisect.c' l='617' u='r' c='bisect_rev_setup'/>
+<use f='codebrowser/builtin/rev-list.c' l='289' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='341' u='r' c='cmd_rev_list'/>

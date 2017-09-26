@@ -1,0 +1,5 @@
+<dec f='codebrowser/dir.h' l='197' type='unsigned int'/>
+<offset>2112</offset>
+<use f='codebrowser/dir.c' l='871' u='w' c='add_excludes_from_file_1'/>
+<use f='codebrowser/dir.c' l='879' u='w' c='add_excludes_from_file'/>
+<use f='codebrowser/dir.c' l='2026' u='r' c='validate_untracked_cache'/>

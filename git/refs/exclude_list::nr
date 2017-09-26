@@ -1,0 +1,9 @@
+<dec f='codebrowser/dir.h' l='47' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/dir.c' l='598' u='r' c='add_exclude'/>
+<use f='codebrowser/dir.c' l='598' u='r' c='add_exclude'/>
+<use f='codebrowser/dir.c' l='598' u='r' c='add_exclude'/>
+<use f='codebrowser/dir.c' l='599' u='w' c='add_exclude'/>
+<use f='codebrowser/dir.c' l='639' u='r' c='clear_exclude_list'/>
+<use f='codebrowser/dir.c' l='982' u='r' c='last_exclude_matching_from_list'/>
+<use f='codebrowser/dir.c' l='985' u='r' c='last_exclude_matching_from_list'/>

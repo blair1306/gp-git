@@ -1,0 +1,10 @@
+<dec f='codebrowser/sub-process.h' l='29' type='struct child_process'/>
+<use f='codebrowser/sub-process.h' l='72' u='a' c='subprocess_get_child_process'/>
+<use f='codebrowser/convert.c' l='584' u='a' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='683' u='a' c='async_query_available_blobs'/>
+<offset>192</offset>
+<use f='codebrowser/sub-process.c' l='57' u='m' c='subprocess_stop'/>
+<use f='codebrowser/sub-process.c' l='58' u='m' c='subprocess_stop'/>
+<use f='codebrowser/sub-process.c' l='59' u='a' c='subprocess_stop'/>
+<use f='codebrowser/sub-process.c' l='83' u='a' c='subprocess_start'/>
+<use f='codebrowser/sub-process.c' l='203' u='a' c='subprocess_handshake'/>

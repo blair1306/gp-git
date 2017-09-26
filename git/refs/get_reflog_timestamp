@@ -1,0 +1,3 @@
+<dec f='codebrowser/reflog-walk.h' l='16' type='timestamp_t get_reflog_timestamp(struct reflog_walk_info * reflog_info)'/>
+<def f='codebrowser/reflog-walk.c' l='267' ll='277' type='timestamp_t get_reflog_timestamp(struct reflog_walk_info * reflog_info)'/>
+<use f='codebrowser/revision.c' l='2975' u='c' c='comparison_date'/>

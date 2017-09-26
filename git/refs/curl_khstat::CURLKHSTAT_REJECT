@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='699' type='2'/>
+<doc f='include/curl/curl.h' l='699'>/* reject the connection, return an error */</doc>

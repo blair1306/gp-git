@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs.h' l='537' type='int ref_transaction_create(struct ref_transaction * transaction, const char * refname, const unsigned char * new_sha1, unsigned int flags, const char * msg, struct strbuf * err)'/>
+<doc f='codebrowser/refs.h' l='528'>/*
+ * Add a reference creation to transaction. new_sha1 is the value that
+ * the reference should have after the update; it must not be
+ * null_sha1. It is verified that the reference does not exist
+ * already.
+ *
+ * See the above comment &quot;Reference transaction updates&quot; for more
+ * information.
+ */</doc>
+<use f='codebrowser/builtin/clone.c' l='590' u='c' c='write_remote_refs'/>
+<use f='codebrowser/builtin/update-ref.c' l='235' u='c' c='parse_cmd_create'/>
+<def f='codebrowser/refs.c' l='949' ll='959' type='int ref_transaction_create(struct ref_transaction * transaction, const char * refname, const unsigned char * new_sha1, unsigned int flags, const char * msg, struct strbuf * err)'/>

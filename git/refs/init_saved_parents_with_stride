@@ -1,0 +1,2 @@
+<def f='codebrowser/revision.c' l='3025' macro='1' type='void init_saved_parents_with_stride(struct saved_parents * s, unsigned int stride)'/>
+<use f='codebrowser/revision.c' l='3025' macro='1' u='c'/>

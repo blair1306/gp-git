@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='928' macro='1' type='10018'/>
+<use f='codebrowser/http.c' l='808' u='r' c='get_curl_handle'/>

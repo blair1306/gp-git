@@ -1,0 +1,14 @@
+<dec f='codebrowser/refs/refs-internal.h' l='142' type='struct object_id'/>
+<use f='codebrowser/refs.c' l='918' u='m' c='ref_transaction_add_update'/>
+<offset>0</offset>
+<doc f='codebrowser/refs/refs-internal.h' l='139'>/*
+	 * If (flags &amp; REF_HAVE_NEW), set the reference to this value:
+	 */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2114' u='m' c='split_head_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2171' u='m' c='split_symref_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2260' u='a' c='lock_ref_for_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2342' u='a' c='lock_ref_for_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2347' u='a' c='lock_ref_for_update'/>
+<use f='codebrowser/refs/files-backend.c' l='2529' u='a' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2707' u='a' c='files_initial_transaction_commit'/>
+<use f='codebrowser/refs/files-backend.c' l='2709' u='a' c='files_initial_transaction_commit'/>

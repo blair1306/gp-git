@@ -1,0 +1,6 @@
+<dec f='codebrowser/run-command.c' l='1373' type='1'/>
+<use f='codebrowser/run-command.c' l='1425' u='r' c='kill_children'/>
+<use f='codebrowser/run-command.c' l='1545' u='r' c='pp_start_one'/>
+<use f='codebrowser/run-command.c' l='1563' u='r' c='pp_buffer_stderr'/>
+<use f='codebrowser/run-command.c' l='1580' u='r' c='pp_output'/>
+<use f='codebrowser/run-command.c' l='1636' u='r' c='pp_collect_finished'/>

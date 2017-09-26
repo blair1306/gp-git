@@ -1,0 +1,23 @@
+<def f='codebrowser/lockfile.h' l='217' ll='220' type='const char * get_lock_file_path(struct lock_file * lk)'/>
+<doc f='codebrowser/lockfile.h' l='213'>/*
+ * Return the path of the lockfile. The return value is a pointer to a
+ * field within the lock_file object and should not be freed.
+ */</doc>
+<use f='codebrowser/builtin/commit.c' l='363' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='374' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='384' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='407' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='492' u='c' c='prepare_index'/>
+<use f='codebrowser/config.c' l='2564' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/config.c' l='2565' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/config.c' l='2650' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/config.c' l='2777' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/config.c' l='2779' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/config.c' l='2800' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/config.c' l='2826' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/refs/files-backend.c' l='1631' u='c' c='write_ref_to_lockfile'/>
+<use f='codebrowser/refs/files-backend.c' l='2824' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/refs/files-backend.c' l='2856' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/shallow.c' l='326' u='c' c='setup_alternate_shallow'/>
+<use f='codebrowser/shallow.c' l='327' u='c' c='setup_alternate_shallow'/>
+<use f='codebrowser/shallow.c' l='373' u='c' c='prune_shallow'/>

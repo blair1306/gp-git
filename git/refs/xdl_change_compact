@@ -1,0 +1,15 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='54' type='int xdl_change_compact(xdfile_t * xdf, xdfile_t * xdfo, long flags)'/>
+<def f='codebrowser/xdiff/xdiffi.c' l='815' ll='942' type='int xdl_change_compact(xdfile_t * xdf, xdfile_t * xdfo, long flags)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1028' u='c' c='xdl_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1029' u='c' c='xdl_diff'/>
+<doc f='codebrowser/xdiff/xdiffi.c' l='810'>/*
+ * Move back and forward change groups for a consistent and pretty diff output.
+ * This also helps in finding joinable change groups and reducing the diff
+ * size.
+ */</doc>
+<use f='codebrowser/xdiff/xmerge.c' l='358' u='c' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='359' u='c' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='651' u='c' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='652' u='c' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='657' u='c' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='658' u='c' c='xdl_merge'/>

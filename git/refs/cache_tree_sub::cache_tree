@@ -1,0 +1,23 @@
+<dec f='codebrowser/cache-tree.h' l='10' type='struct cache_tree *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/fsck.c' l='611' u='r' c='fsck_cache_tree'/>
+<use f='codebrowser/cache-tree.c' l='27' u='a' c='cache_tree_free'/>
+<use f='codebrowser/cache-tree.c' l='83' u='w' c='find_subtree'/>
+<use f='codebrowser/cache-tree.c' l='126' u='a' c='do_invalidate_path'/>
+<use f='codebrowser/cache-tree.c' l='142' u='r' c='do_invalidate_path'/>
+<use f='codebrowser/cache-tree.c' l='215' u='a' c='discard_unused_subtrees'/>
+<use f='codebrowser/cache-tree.c' l='230' u='r' c='cache_tree_fully_valid'/>
+<use f='codebrowser/cache-tree.c' l='293' u='r' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='294' u='w' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='295' u='r' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='342' u='r' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='344' u='r' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='479' u='r' c='write_one'/>
+<use f='codebrowser/cache-tree.c' l='558' u='w' c='read_one'/>
+<use f='codebrowser/cache-tree.c' l='594' u='r' c='cache_tree_find'/>
+<use f='codebrowser/cache-tree.c' l='680' u='w' c='prime_cache_tree_rec'/>
+<use f='codebrowser/cache-tree.c' l='681' u='r' c='prime_cache_tree_rec'/>
+<use f='codebrowser/cache-tree.c' l='682' u='r' c='prime_cache_tree_rec'/>
+<use f='codebrowser/revision.c' l='1259' u='r' c='add_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='51' u='r' c='dump_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='51' u='r' c='dump_cache_tree'/>

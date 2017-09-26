@@ -1,0 +1,5 @@
+<dec f='codebrowser/decorate.h' l='11' type='unsigned int'/>
+<offset>96</offset>
+<use f='codebrowser/decorate.c' l='31' u='w' c='insert_decoration'/>
+<use f='codebrowser/decorate.c' l='43' u='w' c='grow_decoration'/>
+<use f='codebrowser/decorate.c' l='60' u='r' c='add_decoration'/>

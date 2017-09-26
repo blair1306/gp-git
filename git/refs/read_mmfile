@@ -1,0 +1,9 @@
+<dec f='codebrowser/xdiff-interface.h' l='23' type='int read_mmfile(mmfile_t * ptr, const char * filename)'/>
+<use f='codebrowser/builtin/merge-file.c' l='76' u='c' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/rerere.c' l='35' u='c' c='diff_two'/>
+<use f='codebrowser/builtin/rerere.c' l='35' u='c' c='diff_two'/>
+<use f='codebrowser/rerere.c' l='635' u='c' c='try_merge'/>
+<use f='codebrowser/rerere.c' l='636' u='c' c='try_merge'/>
+<use f='codebrowser/rerere.c' l='673' u='c' c='merge'/>
+<use f='codebrowser/rerere.c' l='1053' u='c' c='rerere_forget_one_path'/>
+<def f='codebrowser/xdiff-interface.c' l='161' ll='180' type='int read_mmfile(mmfile_t * ptr, const char * filename)'/>

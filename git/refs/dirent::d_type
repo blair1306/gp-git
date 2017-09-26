@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/dirent.h' l='32' type='unsigned char'/>
+<offset>144</offset>
+<use f='codebrowser/dir.c' l='1530' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1667' macro='1' u='r'/>

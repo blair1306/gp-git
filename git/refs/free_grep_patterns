@@ -1,0 +1,4 @@
+<dec f='codebrowser/grep.h' l='186' type='void free_grep_patterns(struct grep_opt * opt)'/>
+<use f='codebrowser/builtin/grep.c' l='187' u='c' c='run'/>
+<use f='codebrowser/builtin/grep.c' l='1109' u='c' c='cmd_grep'/>
+<def f='codebrowser/grep.c' l='1009' ll='1038' type='void free_grep_patterns(struct grep_opt * opt)'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1138' type='char * strip_path_suffix(const char * path, const char * suffix)'/>
+<def f='codebrowser/path.c' l='1221' ll='1242' type='char * strip_path_suffix(const char * path, const char * suffix)'/>
+<doc f='codebrowser/path.c' l='1216'>/*
+ * If path ends with suffix (complete path components), returns the
+ * part before suffix (sans trailing directory separators).
+ * Otherwise returns NULL.
+ */</doc>
+<use f='codebrowser/t/helper/test-path-utils.c' l='243' u='c' c='cmd_main'/>

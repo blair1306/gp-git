@@ -1,0 +1,2 @@
+<def f='codebrowser/tempfile.h' l='147' ll='151' type='int mks_tempfile_s(struct tempfile * tempfile, const char * template, int suffixlen)'/>
+<doc f='codebrowser/tempfile.h' l='146'>/* See &quot;mks_tempfile functions&quot; above. */</doc>

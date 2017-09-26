@@ -1,0 +1,22 @@
+<dec f='codebrowser/cache.h' l='640' type='int add_index_entry(struct index_state * , struct cache_entry * ce, int option)'/>
+<use f='codebrowser/apply.c' l='4088' u='c' c='build_fake_ancestor'/>
+<use f='codebrowser/apply.c' l='4291' macro='1' u='c'/>
+<use f='codebrowser/apply.c' l='4435' macro='1' u='c'/>
+<use f='codebrowser/blame.c' l='262' macro='1' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='103' macro='1' u='c'/>
+<use f='codebrowser/builtin/difftool.c' l='494' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/reset.c' l='144' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='290' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='420' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='663' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='668' macro='1' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='234' macro='1' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='242' macro='1' u='c'/>
+<use f='codebrowser/read-cache.c' l='83' u='c' c='rename_index_entry_at'/>
+<use f='codebrowser/read-cache.c' l='711' u='c' c='add_to_index'/>
+<def f='codebrowser/read-cache.c' l='1180' ll='1206' type='int add_index_entry(struct index_state * istate, struct cache_entry * ce, int option)'/>
+<use f='codebrowser/read-cache.c' l='2547' u='c' c='read_index_unmerged'/>
+<use f='codebrowser/resolve-undo.c' l='152' u='c' c='unmerge_index_entry_at'/>
+<use f='codebrowser/split-index.c' l='156' u='c' c='merge_base_index'/>
+<use f='codebrowser/tree.c' l='35' u='c' c='read_one_entry_opt'/>
+<use f='codebrowser/unpack-trees.c' l='188' u='c' c='do_add_entry'/>

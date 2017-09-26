@@ -1,0 +1,17 @@
+<dec f='include/expat.h' l='872' type='XML_Parser XML_ExternalEntityParserCreate(XML_Parser parser, const XML_Char * context, const XML_Char * encoding)'/>
+<doc f='include/expat.h' l='855'>/* Creates an XML_Parser object that can parse an external general
+   entity; context is a &apos;\0&apos;-terminated string specifying the parse
+   context; encoding is a &apos;\0&apos;-terminated string giving the name of
+   the externally specified encoding, or NULL if there is no
+   externally specified encoding.  The context string consists of a
+   sequence of tokens separated by formfeeds (\f); a token consisting
+   of a name specifies that the general entity of the name is open; a
+   token of the form prefix=uri specifies the namespace for a
+   particular prefix; a token of the form =uri specifies the default
+   namespace.  This can be called at any point after the first call to
+   an ExternalEntityRefHandler so longer as the parser has not yet
+   been freed.  The new parser is completely independent and may
+   safely be used in a separate thread.  The handlers and userData are
+   initialized from the parser argument.  Returns NULL if out of memory.
+   Otherwise returns a new XML_Parser object.
+*/</doc>

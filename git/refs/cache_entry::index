@@ -1,0 +1,28 @@
+<dec f='codebrowser/cache.h' l='181' type='unsigned int'/>
+<offset>512</offset>
+<doc f='codebrowser/cache.h' l='181'>/* for link extension */</doc>
+<use f='codebrowser/read-cache.c' l='77' u='w' c='rename_index_entry_at'/>
+<use f='codebrowser/read-cache.c' l='1591' u='w' c='cache_entry_from_ondisk'/>
+<use f='codebrowser/read-cache.c' l='1881' u='r' c='discard_index'/>
+<use f='codebrowser/read-cache.c' l='1884' u='r' c='discard_index'/>
+<use f='codebrowser/read-cache.c' l='1885' u='r' c='discard_index'/>
+<use f='codebrowser/read-cache.c' l='2474' u='r' c='too_many_not_shared_entries'/>
+<use f='codebrowser/split-index.c' l='67' u='w' c='mark_base_index_entries'/>
+<use f='codebrowser/split-index.c' l='122' u='w' c='replace_entry'/>
+<use f='codebrowser/split-index.c' l='200' u='r' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='202' u='r' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='203' u='w' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='207' u='r' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='212' u='w' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='228' u='r' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='246' u='r' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='295' u='r' c='save_or_free_index_entry'/>
+<use f='codebrowser/split-index.c' l='298' u='r' c='save_or_free_index_entry'/>
+<use f='codebrowser/split-index.c' l='299' u='r' c='save_or_free_index_entry'/>
+<use f='codebrowser/split-index.c' l='309' u='r' c='replace_index_entry_in_base'/>
+<use f='codebrowser/split-index.c' l='312' u='r' c='replace_index_entry_in_base'/>
+<use f='codebrowser/split-index.c' l='313' u='w' c='replace_index_entry_in_base'/>
+<use f='codebrowser/split-index.c' l='313' u='r' c='replace_index_entry_in_base'/>
+<use f='codebrowser/split-index.c' l='314' u='r' c='replace_index_entry_in_base'/>
+<use f='codebrowser/split-index.c' l='315' u='r' c='replace_index_entry_in_base'/>
+<use f='codebrowser/split-index.c' l='316' u='r' c='replace_index_entry_in_base'/>

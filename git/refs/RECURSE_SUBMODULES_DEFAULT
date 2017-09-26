@@ -1,0 +1,6 @@
+<dec f='codebrowser/submodule.h' l='17' type='1'/>
+<use f='codebrowser/builtin/fetch.c' l='52'/>
+<use f='codebrowser/builtin/pull.c' l='83'/>
+<use f='codebrowser/builtin/pull.c' l='489' u='r' c='run_fetch'/>
+<use f='codebrowser/builtin/push.c' l='26'/>
+<use f='codebrowser/submodule.c' l='1196' u='r' c='get_next_submodule'/>

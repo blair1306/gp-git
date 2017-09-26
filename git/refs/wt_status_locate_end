@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='117' type='size_t wt_status_locate_end(const char * s, size_t len)'/>
+<use f='codebrowser/builtin/commit.c' l='1744' u='c' c='cmd_commit'/>
+<use f='codebrowser/commit.c' l='1662' u='c' c='ignore_non_trailer'/>
+<def f='codebrowser/wt-status.c' l='921' ll='933' type='size_t wt_status_locate_end(const char * s, size_t len)'/>

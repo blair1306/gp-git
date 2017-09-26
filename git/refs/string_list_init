@@ -1,0 +1,15 @@
+<dec f='codebrowser/string-list.h' l='21' type='void string_list_init(struct string_list * list, int strdup_strings)'/>
+<use f='codebrowser/apply.c' l='93' u='c' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='94' u='c' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='95' u='c' c='init_apply_state'/>
+<use f='codebrowser/builtin/commit.c' l='464' u='c' c='prepare_index'/>
+<use f='codebrowser/config.c' l='1698' u='c' c='configset_add_value'/>
+<use f='codebrowser/entry.c' l='145' u='c' c='enable_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='146' u='c' c='enable_delayed_checkout'/>
+<use f='codebrowser/merge-recursive.c' l='2180' u='c' c='init_merge_options'/>
+<use f='codebrowser/merge-recursive.c' l='2181' u='c' c='init_merge_options'/>
+<use f='codebrowser/merge-recursive.c' l='2182' u='c' c='init_merge_options'/>
+<use f='codebrowser/remote-curl.c' l='1044' u='c' c='cmd_main'/>
+<use f='codebrowser/remote-curl.c' l='1045' u='c' c='cmd_main'/>
+<use f='codebrowser/setup.c' l='495' u='c' c='read_repository_format'/>
+<def f='codebrowser/string-list.c' l='4' ll='8' type='void string_list_init(struct string_list * list, int strdup_strings)'/>

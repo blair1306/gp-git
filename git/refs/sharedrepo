@@ -1,0 +1,9 @@
+<def f='codebrowser/cache.h' l='1037' ll='1043'/>
+<doc f='codebrowser/cache.h' l='1029'>/*
+ * NOTE NOTE NOTE!!
+ *
+ * PERM_UMASK, OLD_PERM_GROUP and OLD_PERM_EVERYBODY enumerations must
+ * not be changed. Old repositories have core.sharedrepository written in
+ * numeric format, and therefore these values are preserved for compatibility
+ * reasons.
+ */</doc>

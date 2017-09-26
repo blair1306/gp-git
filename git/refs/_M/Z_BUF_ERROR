@@ -1,0 +1,14 @@
+<dec f='include/zlib.h' l='180'/>
+<use f='codebrowser/builtin/pack-objects.c' l='172' u='c'/>
+<use f='codebrowser/builtin/pack-objects.c' l='214' u='c'/>
+<use f='codebrowser/bulk-checkin.c' l='157' u='c'/>
+<use f='codebrowser/fast-import.c' l='1285' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2028' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2480' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3920' u='c'/>
+<use f='codebrowser/streaming.c' l='314' u='c'/>
+<use f='codebrowser/streaming.c' l='406' u='c'/>
+<use f='codebrowser/zlib.c' l='130' u='c'/>
+<use f='codebrowser/zlib.c' l='137' u='c'/>
+<use f='codebrowser/zlib.c' l='256' u='c'/>
+<use f='codebrowser/zlib.c' l='263' u='c'/>

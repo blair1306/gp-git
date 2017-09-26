@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='268' type='void mark_tree_uninteresting(struct tree * tree)'/>
+<use f='codebrowser/list-objects.c' l='140' u='c' c='mark_edge_parents_uninteresting'/>
+<use f='codebrowser/list-objects.c' l='157' u='c' c='mark_edges_uninteresting'/>
+<use f='codebrowser/list-objects.c' l='172' u='c' c='mark_edges_uninteresting'/>
+<use f='codebrowser/revision.c' l='62' u='c' c='mark_tree_contents_uninteresting'/>
+<def f='codebrowser/revision.c' l='80' ll='92' type='void mark_tree_uninteresting(struct tree * tree)'/>

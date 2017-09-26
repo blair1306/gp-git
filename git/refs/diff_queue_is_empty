@@ -1,0 +1,3 @@
+<dec f='codebrowser/diff.h' l='324' type='int diff_queue_is_empty()'/>
+<def f='codebrowser/diff.c' l='4328' ll='4336' type='int diff_queue_is_empty()'/>
+<use f='codebrowser/log-tree.c' l='732' u='c' c='log_tree_diff_flush'/>

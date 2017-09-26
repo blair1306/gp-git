@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='1541' type='char [256]'/>
+<offset>320</offset>
+<doc f='codebrowser/cache.h' l='1534'>/*
+	 * Used to store the results of readdir(3) calls when searching
+	 * for unique abbreviated hashes.  This cache is never
+	 * invalidated, thus it&apos;s racy and not necessarily accurate.
+	 * That&apos;s fine for its purpose; don&apos;t use it for tasks requiring
+	 * greater accuracy!
+	 */</doc>
+<use f='codebrowser/sha1_name.c' l='111' u='r' c='find_short_object_filename'/>
+<use f='codebrowser/sha1_name.c' l='117' u='w' c='find_short_object_filename'/>

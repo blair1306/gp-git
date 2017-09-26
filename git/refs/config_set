@@ -1,0 +1,5 @@
+<def f='codebrowser/config.h' l='146' ll='150'/>
+<size>72</size>
+<mbr r='config_set::config_hash' o='0' t='struct hashmap'/>
+<mbr r='config_set::hash_initialized' o='384' t='int'/>
+<mbr r='config_set::list' o='448' t='struct configset_list'/>

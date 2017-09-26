@@ -1,0 +1,4 @@
+<dec f='codebrowser/prompt.h' l='7' type='char * git_prompt(const char * prompt, int flags)'/>
+<use f='codebrowser/builtin/am.c' l='1738' u='c' c='do_interactive'/>
+<use f='codebrowser/credential.c' l='127' u='c' c='credential_ask_one'/>
+<def f='codebrowser/prompt.c' l='45' ll='76' type='char * git_prompt(const char * prompt, int flags)'/>

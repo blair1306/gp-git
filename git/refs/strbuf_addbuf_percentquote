@@ -1,0 +1,11 @@
+<dec f='codebrowser/strbuf.h' l='311' type='void strbuf_addbuf_percentquote(struct strbuf * dst, const struct strbuf * src)'/>
+<doc f='codebrowser/strbuf.h' l='305'>/**
+ * Append the contents of one strbuf to another, quoting any
+ * percent signs (&quot;%&quot;) into double-percents (&quot;%%&quot;) in the
+ * destination. This is useful for literal data to be fed to either
+ * strbuf_expand or to the *printf family of functions.
+ */</doc>
+<use f='codebrowser/builtin/commit.c' l='1453' u='c' c='print_summary'/>
+<use f='codebrowser/builtin/commit.c' l='1459' u='c' c='print_summary'/>
+<use f='codebrowser/builtin/commit.c' l='1464' u='c' c='print_summary'/>
+<def f='codebrowser/strbuf.c' l='335' ll='344' type='void strbuf_addbuf_percentquote(struct strbuf * dst, const struct strbuf * src)'/>

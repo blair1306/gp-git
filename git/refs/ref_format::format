@@ -1,0 +1,35 @@
+<dec f='codebrowser/ref-filter.h' l='80' type='const char *'/>
+<use f='codebrowser/builtin/branch.c' l='410' u='r' c='print_ref_list'/>
+<use f='codebrowser/builtin/branch.c' l='411' u='w' c='print_ref_list'/>
+<use f='codebrowser/builtin/branch.c' l='599' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='599' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='599' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='599' u='a' c='cmd_branch'/>
+<offset>0</offset>
+<doc f='codebrowser/ref-filter.h' l='76'>/*
+	 * Set these to define the format; make sure you call
+	 * verify_ref_format() afterwards to finalize.
+	 */</doc>
+<use f='codebrowser/builtin/for-each-ref.c' l='38' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='38' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='38' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='38' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='55' u='w' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='47' u='r' c='list_tags'/>
+<use f='codebrowser/builtin/tag.c' l='52' u='w' c='list_tags'/>
+<use f='codebrowser/builtin/tag.c' l='54' u='w' c='list_tags'/>
+<use f='codebrowser/builtin/tag.c' l='113' u='r' c='verify_tag'/>
+<use f='codebrowser/builtin/tag.c' l='119' u='r' c='verify_tag'/>
+<use f='codebrowser/builtin/tag.c' l='412' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='412' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='412' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='412' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='486' u='r' c='cmd_tag'/>
+<use f='codebrowser/builtin/verify-tag.c' l='39' u='a' c='cmd_verify_tag'/>
+<use f='codebrowser/builtin/verify-tag.c' l='39' u='a' c='cmd_verify_tag'/>
+<use f='codebrowser/builtin/verify-tag.c' l='39' u='a' c='cmd_verify_tag'/>
+<use f='codebrowser/builtin/verify-tag.c' l='39' u='a' c='cmd_verify_tag'/>
+<use f='codebrowser/builtin/verify-tag.c' l='53' u='r' c='cmd_verify_tag'/>
+<use f='codebrowser/builtin/verify-tag.c' l='74' u='r' c='cmd_verify_tag'/>
+<use f='codebrowser/ref-filter.c' l='671' u='r' c='verify_ref_format'/>
+<use f='codebrowser/ref-filter.c' l='2081' u='r' c='format_ref_array_item'/>

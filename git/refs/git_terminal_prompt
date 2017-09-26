@@ -1,0 +1,3 @@
+<dec f='codebrowser/compat/terminal.h' l='4' type='char * git_terminal_prompt(const char * prompt, int echo)'/>
+<def f='codebrowser/compat/terminal.c' l='100' ll='138' type='char * git_terminal_prompt(const char * prompt, int echo)'/>
+<use f='codebrowser/prompt.c' l='65' u='c' c='git_prompt'/>

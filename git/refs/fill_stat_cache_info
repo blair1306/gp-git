@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='706' type='void fill_stat_cache_info(struct cache_entry * ce, struct stat * st)'/>
+<use f='codebrowser/apply.c' l='4283' u='c' c='add_index_file'/>
+<use f='codebrowser/builtin/update-index.c' l='280' u='c' c='add_one_path'/>
+<use f='codebrowser/entry.c' l='345' u='c' c='write_entry'/>
+<def f='codebrowser/read-cache.c' l='146' ll='155' type='void fill_stat_cache_info(struct cache_entry * ce, struct stat * st)'/>
+<use f='codebrowser/read-cache.c' l='654' u='c' c='add_to_index'/>
+<use f='codebrowser/read-cache.c' l='1300' u='c' c='refresh_cache_ent'/>
+<doc f='codebrowser/read-cache.c' l='141'>/*
+ * This only updates the &quot;non-critical&quot; parts of the directory
+ * cache, ie the parts that aren&apos;t tracked by GIT, and only used
+ * to validate the cache.
+ */</doc>

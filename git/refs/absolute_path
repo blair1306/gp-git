@@ -1,0 +1,20 @@
+<dec f='codebrowser/cache.h' l='1131' type='const char * absolute_path(const char * path)'/>
+<def f='codebrowser/abspath.c' l='234' ll='240' type='const char * absolute_path(const char * path)'/>
+<doc f='codebrowser/abspath.c' l='230'>/*
+ * Use this to get an absolute path from a relative one. If you want
+ * to resolve links, you should use real_path.
+ */</doc>
+<use f='codebrowser/builtin/difftool.c' l='204' u='c' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='731' u='c' c='cmd_difftool'/>
+<use f='codebrowser/builtin/difftool.c' l='732' u='c' c='cmd_difftool'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1000' u='c' c='push_to_checkout'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1017' u='c' c='update_worktree'/>
+<use f='codebrowser/lockfile.c' l='158' u='c' c='unable_to_lock_message'/>
+<use f='codebrowser/lockfile.c' l='161' u='c' c='unable_to_lock_message'/>
+<use f='codebrowser/t/helper/test-path-utils.c' l='195' u='c' c='cmd_main'/>
+<use f='codebrowser/tmp-objdir.c' l='164' u='c' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='165' u='c' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='167' u='c' c='tmp_objdir_create'/>
+<use f='codebrowser/worktree.c' l='115' u='c' c='mark_current_worktree'/>
+<use f='codebrowser/wrapper.c' l='462' u='c' c='xmkstemp'/>
+<use f='codebrowser/wrapper.c' l='558' u='c' c='xmkstemp_mode'/>

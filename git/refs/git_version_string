@@ -1,0 +1,8 @@
+<dec f='codebrowser/version.h' l='4' type='const char []'/>
+<use f='codebrowser/builtin/log.c' l='739'/>
+<use f='codebrowser/builtin/log.c' l='790' u='r' c='git_format_config'/>
+<use f='codebrowser/builtin/log.c' l='1189' u='r' c='attach_callback'/>
+<use f='codebrowser/builtin/log.c' l='1202' u='r' c='inline_callback'/>
+<use f='codebrowser/builtin/log.c' l='1724' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/help.c' l='412' c='cmd_version'/>
+<def f='codebrowser/version.c' l='5' type='const char [20]'/>

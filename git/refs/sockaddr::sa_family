@@ -1,0 +1,11 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='155' macro='1' type='sa_family_t'/>
+<offset>0</offset>
+<use f='codebrowser/daemon.c' l='750' u='r' c='addrcmp'/>
+<use f='codebrowser/daemon.c' l='750' u='r' c='addrcmp'/>
+<use f='codebrowser/daemon.c' l='751' u='r' c='addrcmp'/>
+<use f='codebrowser/daemon.c' l='751' u='r' c='addrcmp'/>
+<use f='codebrowser/daemon.c' l='752' u='r' c='addrcmp'/>
+<use f='codebrowser/daemon.c' l='757' u='r' c='addrcmp'/>
+<use f='codebrowser/daemon.c' l='848' u='r' c='handle'/>
+<use f='codebrowser/daemon.c' l='851' u='r' c='handle'/>
+<use f='codebrowser/daemon.c' l='856' u='r' c='handle'/>

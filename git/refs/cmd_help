@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='173' type='int cmd_help(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/help.c' l='452' ll='510' type='int cmd_help(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='409'/>
+<use f='codebrowser/git.c' l='409'/>
+<use f='codebrowser/git.c' l='409'/>
+<use f='codebrowser/git.c' l='409'/>

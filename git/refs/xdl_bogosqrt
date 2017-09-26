@@ -1,0 +1,5 @@
+<dec f='codebrowser/xdiff/xutils.h' l='28' type='long xdl_bogosqrt(long n)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='357' u='c' c='xdl_do_diff'/>
+<use f='codebrowser/xdiff/xprepare.c' l='399' u='c' c='xdl_cleanup_records'/>
+<use f='codebrowser/xdiff/xprepare.c' l='407' u='c' c='xdl_cleanup_records'/>
+<def f='codebrowser/xdiff/xutils.c' l='30' ll='40' type='long xdl_bogosqrt(long n)'/>

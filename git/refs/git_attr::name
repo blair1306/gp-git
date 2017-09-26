@@ -1,0 +1,7 @@
+<dec f='codebrowser/attr.c' l='34' type='char []'/>
+<use f='codebrowser/attr.c' l='39' u='r' c='git_attr_name'/>
+<use f='codebrowser/attr.c' l='239' u='r' c='git_attr_internal'/>
+<use f='codebrowser/attr.c' l='242' u='r' c='git_attr_internal'/>
+<use f='codebrowser/attr.c' l='1161' u='r' c='git_all_attrs'/>
+<offset>32</offset>
+<doc f='codebrowser/attr.c' l='34'>/* attribute name */</doc>

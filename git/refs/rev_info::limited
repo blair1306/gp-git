@@ -1,0 +1,22 @@
+<dec f='codebrowser/revision.h' l='105' type='unsigned int'/>
+<use f='codebrowser/bisect.c' l='952' u='w' c='bisect_next_all'/>
+<offset>946</offset>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='642' u='w' c='fmt_merge_msg'/>
+<use f='codebrowser/builtin/rev-list.c' l='367' u='w' c='cmd_rev_list'/>
+<use f='codebrowser/ref-filter.c' l='1925' u='w' c='do_merge_filter'/>
+<use f='codebrowser/revision.c' l='255' u='w' c='handle_commit'/>
+<use f='codebrowser/revision.c' l='1427' u='w' c='prepare_show_merge'/>
+<use f='codebrowser/revision.c' l='1752' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1770' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1777' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1835' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1842' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1847' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2042' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2338' u='w' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2354' u='w' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2366' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2790' u='r' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='2797' u='r' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='2817' u='r' c='rewrite_one'/>
+<use f='codebrowser/revision.c' l='3143' u='r' c='get_revision_1'/>

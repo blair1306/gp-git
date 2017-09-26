@@ -1,0 +1,13 @@
+<dec f='codebrowser/diff.h' l='143' type='int'/>
+<offset>928</offset>
+<use f='codebrowser/builtin/diff-tree.c' l='176' u='r' c='cmd_diff_tree'/>
+<use f='codebrowser/builtin/diff-tree.c' l='177' u='r' c='cmd_diff_tree'/>
+<use f='codebrowser/builtin/diff-tree.c' l='183' u='w' c='cmd_diff_tree'/>
+<use f='codebrowser/builtin/log.c' l='384' u='r' c='cmd_log_walk'/>
+<use f='codebrowser/builtin/log.c' l='385' u='r' c='cmd_log_walk'/>
+<use f='codebrowser/builtin/log.c' l='390' u='w' c='cmd_log_walk'/>
+<use f='codebrowser/diff.c' l='5030' u='r' c='diff_result_code'/>
+<use f='codebrowser/diffcore-rename.c' l='387' u='w' c='too_many_rename_candidates'/>
+<use f='codebrowser/diffcore-rename.c' l='404' u='w' c='too_many_rename_candidates'/>
+<use f='codebrowser/merge-recursive.c' l='534' u='r' c='get_renames'/>
+<use f='codebrowser/merge-recursive.c' l='535' u='r' c='get_renames'/>

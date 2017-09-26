@@ -1,0 +1,5 @@
+<dec f='include/pwd.h' l='55' type='char *'/>
+<offset>192</offset>
+<doc f='include/pwd.h' l='55'>/* Real name.  */</doc>
+<use f='codebrowser/ident.c' l='42' u='w' c='xgetpwuid_self'/>
+<use f='codebrowser/ident.c' l='29' u='r' c='copy_gecos'/>

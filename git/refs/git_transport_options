@@ -1,0 +1,15 @@
+<def f='codebrowser/transport.h' l='10' ll='24'/>
+<size>48</size>
+<mbr r='git_transport_options::thin' o='0' t='unsigned int'/>
+<mbr r='git_transport_options::keep' o='1' t='unsigned int'/>
+<mbr r='git_transport_options::followtags' o='2' t='unsigned int'/>
+<mbr r='git_transport_options::check_self_contained_and_connected' o='3' t='unsigned int'/>
+<mbr r='git_transport_options::self_contained_and_connected' o='4' t='unsigned int'/>
+<mbr r='git_transport_options::update_shallow' o='5' t='unsigned int'/>
+<mbr r='git_transport_options::deepen_relative' o='6' t='unsigned int'/>
+<mbr r='git_transport_options::depth' o='32' t='int'/>
+<mbr r='git_transport_options::deepen_since' o='64' t='const char *'/>
+<mbr r='git_transport_options::deepen_not' o='128' t='const struct string_list *'/>
+<mbr r='git_transport_options::uploadpack' o='192' t='const char *'/>
+<mbr r='git_transport_options::receivepack' o='256' t='const char *'/>
+<mbr r='git_transport_options::cas' o='320' t='struct push_cas_option *'/>

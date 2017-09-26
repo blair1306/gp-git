@@ -1,0 +1,16 @@
+<dec f='codebrowser/run-command.h' l='52' type='void child_process_init(struct child_process * )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='956' u='c' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='969' u='c' c='push_to_deploy'/>
+<use f='codebrowser/builtin/receive-pack.c' l='980' u='c' c='push_to_deploy'/>
+<use f='codebrowser/column.c' l='377' u='c' c='run_column_filter'/>
+<use f='codebrowser/connect.c' l='587' u='c' c='git_proxy_connect'/>
+<use f='codebrowser/connect.c' l='830' u='c' c='git_connect'/>
+<def f='codebrowser/run-command.c' l='9' ll='14' type='void child_process_init(struct child_process * child)'/>
+<use f='codebrowser/run-command.c' l='1471' u='c' c='pp_init'/>
+<use f='codebrowser/run-command.c' l='1614' u='c' c='pp_collect_finished'/>
+<use f='codebrowser/sub-process.c' l='85' u='c' c='subprocess_start'/>
+<use f='codebrowser/submodule.c' l='1231' u='c' c='get_next_submodule'/>
+<use f='codebrowser/submodule.c' l='1631' u='c' c='submodule_move_head'/>
+<use f='codebrowser/transport-helper.c' l='117' u='c' c='get_helper'/>
+<use f='codebrowser/transport-helper.c' l='432' u='c' c='get_importer'/>
+<use f='codebrowser/transport-helper.c' l='455' u='c' c='get_exporter'/>

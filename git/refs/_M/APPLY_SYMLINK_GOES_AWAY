@@ -1,0 +1,14 @@
+<dec f='codebrowser/apply.h' l='33'/>
+<use f='codebrowser/apply.c' l='3786' u='c'/>
+<use f='codebrowser/apply.c' l='3807' u='c'/>
+<doc f='codebrowser/apply.h' l='22'>/*
+ * We need to keep track of how symlinks in the preimage are
+ * manipulated by the patches.  A patch to add a/b/c where a/b
+ * is a symlink should not be allowed to affect the directory
+ * the symlink points at, but if the same patch removes a/b,
+ * it is perfectly fine, as the patch removes a/b to make room
+ * to create a directory a/b so that a/b/c can be created.
+ *
+ * See also &quot;struct string_list symlink_changes&quot; in &quot;struct
+ * apply_state&quot;.
+ */</doc>

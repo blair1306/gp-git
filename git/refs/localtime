@@ -1,0 +1,4 @@
+<dec f='include/time.h' l='243' type='struct tm * localtime(const time_t * __timer)'/>
+<use f='codebrowser/archive-zip.c' l='606' u='c' c='dos_time'/>
+<use f='codebrowser/date.c' l='76' u='c' c='time_to_tm_local'/>
+<use f='codebrowser/date.c' l='861' u='c' c='datestamp'/>

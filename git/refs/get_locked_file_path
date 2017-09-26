@@ -1,0 +1,10 @@
+<dec f='codebrowser/lockfile.h' l='236' type='char * get_locked_file_path(struct lock_file * lk)'/>
+<doc f='codebrowser/lockfile.h' l='232'>/*
+ * Return the path of the file that is locked by the specified
+ * lock_file object. The caller must free the memory.
+ */</doc>
+<def f='codebrowser/lockfile.c' l='190' ll='201' type='char * get_locked_file_path(struct lock_file * lk)'/>
+<use f='codebrowser/lockfile.c' l='205' u='c' c='commit_lock_file'/>
+<use f='codebrowser/refs/files-backend.c' l='1410' u='c' c='commit_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1708' u='c' c='create_ref_symlink'/>
+<use f='codebrowser/refs/packed-backend.c' l='628' u='c' c='commit_packed_refs'/>

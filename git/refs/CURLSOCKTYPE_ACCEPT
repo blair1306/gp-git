@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='326' type='1'/>
+<doc f='include/curl/curl.h' l='326'>/* socket created by accept() call */</doc>

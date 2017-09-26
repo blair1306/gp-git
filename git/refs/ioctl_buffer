@@ -1,0 +1,3 @@
+<dec f='codebrowser/http.h' l='82' type='curlioerr ioctl_buffer(CURL * handle, int cmd, void * clientp)'/>
+<use f='codebrowser/http-push.c' l='202' c='curl_setup_http'/>
+<def f='codebrowser/http.c' l='161' ll='176' type='curlioerr ioctl_buffer(CURL * handle, int cmd, void * clientp)'/>

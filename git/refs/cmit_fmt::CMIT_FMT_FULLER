@@ -1,0 +1,8 @@
+<dec f='codebrowser/commit.h' l='131' type='4'/>
+<use f='codebrowser/pretty.c' l='98' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='98' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='98' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='98' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='490' u='r' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='504' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='1577' u='r' c='pp_header'/>

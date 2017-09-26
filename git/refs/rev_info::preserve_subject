@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='150' type='unsigned int'/>
+<offset>988</offset>
+<use f='codebrowser/builtin/log.c' l='1593' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='677' u='r' c='show_log'/>

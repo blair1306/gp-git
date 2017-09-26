@@ -1,0 +1,4 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='57' type='int xdl_emit_diff(xdfenv_t * xe, xdchange_t * xscr, xdemitcb_t * ecb, const xdemitconf_t * xecfg)'/>
+<dec f='codebrowser/xdiff/xemit.h' l='31' type='int xdl_emit_diff(xdfenv_t * xe, xdchange_t * xscr, xdemitcb_t * ecb, const xdemitconf_t * xecfg)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1022' u='r' c='xdl_diff'/>
+<def f='codebrowser/xdiff/xemit.c' l='161' ll='305' type='int xdl_emit_diff(xdfenv_t * xe, xdchange_t * xscr, xdemitcb_t * ecb, const xdemitconf_t * xecfg)'/>

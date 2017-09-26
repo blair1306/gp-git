@@ -1,0 +1,8 @@
+<dec f='codebrowser/patch-ids.h' l='6' type='struct object_id'/>
+<offset>128</offset>
+<use f='codebrowser/patch-ids.c' l='48' u='a' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='49' u='a' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='52' u='a' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='53' u='a' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='56' u='a' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='56' u='a' c='patch_id_cmp'/>

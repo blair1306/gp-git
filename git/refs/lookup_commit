@@ -1,0 +1,27 @@
+<dec f='codebrowser/commit.h' l='48' type='struct commit * lookup_commit(const struct object_id * oid)'/>
+<use f='codebrowser/builtin/am.c' l='1654' u='c' c='do_commit'/>
+<use f='codebrowser/builtin/commit-tree.c' l='62' u='c' c='cmd_commit_tree'/>
+<use f='codebrowser/builtin/commit.c' l='1441' u='c' c='print_summary'/>
+<use f='codebrowser/builtin/diff-tree.c' l='27' u='c' c='stdin_diff_commit'/>
+<use f='codebrowser/builtin/fast-export.c' l='943' u='c' c='import_marks'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='571' u='c' c='find_merge_parents'/>
+<use f='codebrowser/builtin/merge-base.c' l='124' u='c' c='add_one_commit'/>
+<use f='codebrowser/builtin/verify-commit.c' l='29' u='c' c='run_gpg_verify'/>
+<def f='codebrowser/commit.c' l='49' ll='55' type='struct commit * lookup_commit(const struct object_id * oid)'/>
+<use f='codebrowser/commit.c' l='352' u='c' c='parse_commit_buffer'/>
+<use f='codebrowser/commit.c' l='360' u='c' c='parse_commit_buffer'/>
+<use f='codebrowser/fetch-pack.c' l='488' u='c' c='find_common'/>
+<use f='codebrowser/log-tree.c' l='144' u='c' c='add_graft_decoration'/>
+<use f='codebrowser/notes-utils.c' l='22' u='c' c='create_notes_commit'/>
+<use f='codebrowser/object.c' l='208' u='c' c='parse_object_buffer'/>
+<use f='codebrowser/sequencer.c' l='494' u='c' c='is_index_unchanged'/>
+<use f='codebrowser/sha1_name.c' l='367' u='c' c='show_ambiguous_object'/>
+<use f='codebrowser/shallow.c' l='34' u='c' c='register_shallow'/>
+<use f='codebrowser/shallow.c' l='244' u='c' c='write_one_shallow'/>
+<use f='codebrowser/shallow.c' l='606' u='c' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='617' u='c' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='686' u='c' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='707' u='c' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='729' u='c' c='delayed_reachability_test'/>
+<use f='codebrowser/tag.c' l='149' u='c' c='parse_tag_buffer'/>
+<use f='codebrowser/tree.c' l='101' u='c' c='read_tree_1'/>

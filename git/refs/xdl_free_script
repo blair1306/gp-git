@@ -1,0 +1,10 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='56' type='void xdl_free_script(xdchange_t * xscr)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='959' u='c' c='xdl_build_script'/>
+<def f='codebrowser/xdiff/xdiffi.c' l='971' ll='978' type='void xdl_free_script(xdchange_t * xscr)'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1041' u='c' c='xdl_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1045' u='c' c='xdl_diff'/>
+<use f='codebrowser/xdiff/xmerge.c' l='379' u='c' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='393' u='c' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='660' u='c' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='679' u='c' c='xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='680' u='c' c='xdl_merge'/>

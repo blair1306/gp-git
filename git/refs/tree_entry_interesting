@@ -1,0 +1,13 @@
+<dec f='codebrowser/tree-walk.h' l='99' type='enum interesting tree_entry_interesting(const struct name_entry * , struct strbuf * , int , const struct pathspec * ps)'/>
+<use f='codebrowser/builtin/grep.c' l='548' u='c' c='grep_tree'/>
+<use f='codebrowser/list-objects.c' l='103' u='c' c='process_tree'/>
+<use f='codebrowser/tree-diff.c' l='302' u='c' c='skip_uninteresting'/>
+<use f='codebrowser/tree-walk.c' l='376' u='c' c='prune_traversal'/>
+<def f='codebrowser/tree-walk.c' l='1092' ll='1153' type='enum interesting tree_entry_interesting(const struct name_entry * entry, struct strbuf * base, int base_offset, const struct pathspec * ps)'/>
+<doc f='codebrowser/tree-walk.c' l='1086'>/*
+ * Is a tree entry interesting given the pathspec we have?
+ *
+ * Pre-condition: either baselen == base_offset (i.e. empty path)
+ * or base[baselen-1] == &apos;/&apos; (i.e. with trailing slash).
+ */</doc>
+<use f='codebrowser/tree.c' l='79' u='c' c='read_tree_1'/>

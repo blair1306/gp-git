@@ -1,0 +1,6 @@
+<dec f='codebrowser/git-compat-util.h' l='1134' type='int warn_on_fopen_errors(const char * path)'/>
+<doc f='codebrowser/git-compat-util.h' l='1133'>/* Warn on an inaccessible file if errno indicates this is an error */</doc>
+<use f='codebrowser/config.c' l='2765' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/dir.c' l='764' u='c' c='add_excludes'/>
+<def f='codebrowser/wrapper.c' l='427' ll='435' type='int warn_on_fopen_errors(const char * path)'/>
+<use f='codebrowser/wrapper.c' l='444' u='c' c='fopen_or_warn'/>

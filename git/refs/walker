@@ -1,0 +1,13 @@
+<def f='codebrowser/walker.h' l='6' ll='19'/>
+<size>64</size>
+<mbr r='walker::data' o='0' t='void *'/>
+<mbr r='walker::fetch_ref' o='64' t='int (*)(struct walker *, struct ref *)'/>
+<mbr r='walker::prefetch' o='128' t='void (*)(struct walker *, unsigned char *)'/>
+<mbr r='walker::fetch' o='192' t='int (*)(struct walker *, unsigned char *)'/>
+<mbr r='walker::cleanup' o='256' t='void (*)(struct walker *)'/>
+<mbr r='walker::get_tree' o='320' t='int'/>
+<mbr r='walker::get_history' o='352' t='int'/>
+<mbr r='walker::get_all' o='384' t='int'/>
+<mbr r='walker::get_verbosely' o='416' t='int'/>
+<mbr r='walker::get_recover' o='448' t='int'/>
+<mbr r='walker::corrupt_object_found' o='480' t='int'/>

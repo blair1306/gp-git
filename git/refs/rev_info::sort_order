@@ -1,0 +1,10 @@
+<dec f='codebrowser/revision.h' l='82' type='enum rev_sort_order'/>
+<offset>864</offset>
+<doc f='codebrowser/revision.h' l='81'>/* topo-sort */</doc>
+<use f='codebrowser/builtin/log.c' l='261' u='r' c='log_show_early'/>
+<use f='codebrowser/revision.c' l='1348' u='w' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1763' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1781' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1784' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2801' u='r' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='3228' u='r' c='create_boundary_commit_list'/>

@@ -1,0 +1,14 @@
+rlw_get_literal_words|rlw_get_literal_words
+rlw_get_run_bit|rlw_get_run_bit
+rlw_get_running_len|rlw_get_running_len
+rlw_set_literal_words|rlw_set_literal_words
+rlw_set_run_bit|rlw_set_run_bit
+rlw_set_running_len|rlw_set_running_len
+rlw_size|rlw_size
+rlw_xor_run_bit|rlw_xor_run_bit
+rlwit_literal_words|rlwit_literal_words
+rlwit_word_size|rlwit_word_size
+rlwit_discard_first_words|rlwit_discard_first_words
+rlwit_discharge|rlwit_discharge
+rlwit_discharge_empty|rlwit_discharge_empty
+rlwit_init|rlwit_init

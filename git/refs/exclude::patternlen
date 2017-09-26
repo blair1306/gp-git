@@ -1,0 +1,5 @@
+<dec f='codebrowser/dir.h' l='26' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/dir.c' l='592' u='w' c='add_exclude'/>
+<use f='codebrowser/dir.c' l='1000' u='r' c='last_exclude_matching_from_list'/>
+<use f='codebrowser/dir.c' l='1011' u='r' c='last_exclude_matching_from_list'/>

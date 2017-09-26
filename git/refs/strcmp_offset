@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='610' type='int strcmp_offset(const char * s1, const char * s2, size_t * first_change)'/>
+<def f='codebrowser/read-cache.c' l='895' ll='908' type='int strcmp_offset(const char * s1, const char * s2, size_t * first_change)'/>
+<use f='codebrowser/read-cache.c' l='938' u='c' c='has_dir_name'/>
+<doc f='codebrowser/read-cache.c' l='891'>/*
+ * Like strcmp(), but also return the offset of the first change.
+ * If strings are equal, return the length.
+ */</doc>
+<use f='codebrowser/t/helper/test-strcmp-offset.c' l='11' u='c' c='cmd_main'/>

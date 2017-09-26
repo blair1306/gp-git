@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1973' type='int split_cmdline(char * cmdline, const char *** argv)'/>
+<def f='codebrowser/alias.c' l='36' ll='85' type='int split_cmdline(char * cmdline, const char *** argv)'/>
+<use f='codebrowser/builtin/merge.c' l='537' u='c' c='parse_branch_merge_options'/>
+<use f='codebrowser/connect.c' l='739' u='c' c='handle_ssh_variant'/>
+<use f='codebrowser/git.c' l='249' u='c' c='handle_alias'/>
+<use f='codebrowser/pager.c' l='75' u='c' c='setup_pager_env'/>
+<use f='codebrowser/sequencer.c' l='1466' u='c' c='read_strategy_opts'/>
+<use f='codebrowser/shell.c' l='99' u='c' c='run_shell'/>
+<use f='codebrowser/shell.c' l='197' u='c' c='cmd_main'/>

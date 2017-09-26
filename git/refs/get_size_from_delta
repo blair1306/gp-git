@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1727' type='unsigned long get_size_from_delta(struct packed_git * , struct pack_window ** , off_t )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1487' u='c' c='check_object'/>
+<def f='codebrowser/sha1_file.c' l='2009' ll='2046' type='unsigned long get_size_from_delta(struct packed_git * p, struct pack_window ** w_curs, off_t curpos)'/>
+<use f='codebrowser/sha1_file.c' l='2400' u='c' c='packed_object_info'/>

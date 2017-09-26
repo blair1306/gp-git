@@ -1,0 +1,11 @@
+<dec f='codebrowser/xdiff-interface.h' l='25' type='int buffer_is_binary(const char * ptr, unsigned long size)'/>
+<use f='codebrowser/archive-zip.c' l='273' u='c' c='entry_is_binary'/>
+<use f='codebrowser/builtin/merge-file.c' l='82' u='c' c='cmd_merge_file'/>
+<use f='codebrowser/combine-diff.c' l='1087' u='c' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1094' u='c' c='show_patch_diff'/>
+<use f='codebrowser/diff.c' l='2300' u='c' c='diff_filespec_is_binary'/>
+<use f='codebrowser/grep.c' l='2046' u='c' c='grep_source_is_binary'/>
+<use f='codebrowser/ll-merge.c' l='98' u='c' c='ll_xdl_merge'/>
+<use f='codebrowser/ll-merge.c' l='99' u='c' c='ll_xdl_merge'/>
+<use f='codebrowser/ll-merge.c' l='100' u='c' c='ll_xdl_merge'/>
+<def f='codebrowser/xdiff-interface.c' l='200' ll='205' type='int buffer_is_binary(const char * ptr, unsigned long size)'/>

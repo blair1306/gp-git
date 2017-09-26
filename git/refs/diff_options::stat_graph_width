@@ -1,0 +1,15 @@
+<dec f='codebrowser/diff.h' l='162' type='int'/>
+<offset>1536</offset>
+<use f='codebrowser/builtin/diff.c' l='352' u='w' c='cmd_diff'/>
+<use f='codebrowser/builtin/log.c' l='128' u='w' c='cmd_log_init_defaults'/>
+<use f='codebrowser/builtin/merge.c' l='416' u='w' c='finish'/>
+<use f='codebrowser/diff.c' l='1684' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1685' u='w' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1700' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1701' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1702' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1718' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1719' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1720' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='3601' u='r' c='stat_opt'/>
+<use f='codebrowser/diff.c' l='3662' u='w' c='stat_opt'/>

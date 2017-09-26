@@ -1,0 +1,6 @@
+<dec f='codebrowser/csum-file.h' l='16' type='uint32_t'/>
+<offset>19552</offset>
+<use f='codebrowser/csum-file.c' l='98' u='w' c='sha1write'/>
+<use f='codebrowser/csum-file.c' l='98' u='r' c='sha1write'/>
+<use f='codebrowser/csum-file.c' l='178' u='w' c='crc32_begin'/>
+<use f='codebrowser/csum-file.c' l='185' u='r' c='crc32_end'/>

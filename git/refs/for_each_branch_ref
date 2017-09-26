@@ -1,0 +1,2 @@
+<dec f='codebrowser/refs.h' l='295' type='int for_each_branch_ref(each_ref_fn * fn, void * cb_data)'/>
+<def f='codebrowser/refs.c' l='350' ll='353' type='int for_each_branch_ref(each_ref_fn * fn, void * cb_data)'/>

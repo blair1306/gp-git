@@ -1,0 +1,11 @@
+<dec f='codebrowser/unpack-trees.h' l='66' type='int'/>
+<offset>4128</offset>
+<use f='codebrowser/builtin/read-tree.c' l='92' u='r' c='debug_merge'/>
+<use f='codebrowser/builtin/read-tree.c' l='94' u='r' c='debug_merge'/>
+<use f='codebrowser/unpack-trees.c' l='1277' u='w' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='2047' u='r' c='twoway_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2049' u='r' c='twoway_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2110' u='r' c='bind_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2112' u='r' c='bind_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2136' u='r' c='oneway_merge'/>
+<use f='codebrowser/unpack-trees.c' l='2138' u='r' c='oneway_merge'/>

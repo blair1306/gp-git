@@ -1,0 +1,8 @@
+<dec f='codebrowser/patch-ids.h' l='7' type='struct commit *'/>
+<offset>320</offset>
+<use f='codebrowser/patch-ids.c' l='49' u='r' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='51' u='r' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='53' u='r' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='55' u='r' c='patch_id_cmp'/>
+<use f='codebrowser/patch-ids.c' l='82' u='w' c='init_patch_id_entry'/>
+<use f='codebrowser/revision.c' l='876' u='r' c='cherry_pick_list'/>

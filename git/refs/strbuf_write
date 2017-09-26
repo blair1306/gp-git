@@ -1,0 +1,10 @@
+<dec f='codebrowser/strbuf.h' l='390' type='ssize_t strbuf_write(struct strbuf * sb, FILE * stream)'/>
+<doc f='codebrowser/strbuf.h' l='386'>/**
+ * Write the whole content of the strbuf to the stream not stopping at
+ * NUL bytes.
+ */</doc>
+<use f='codebrowser/run-command.c' l='1497' u='c' c='pp_cleanup'/>
+<use f='codebrowser/run-command.c' l='1582' u='c' c='pp_output'/>
+<use f='codebrowser/run-command.c' l='1620' u='c' c='pp_collect_finished'/>
+<use f='codebrowser/run-command.c' l='1624' u='c' c='pp_collect_finished'/>
+<def f='codebrowser/strbuf.c' l='398' ll='401' type='ssize_t strbuf_write(struct strbuf * sb, FILE * f)'/>

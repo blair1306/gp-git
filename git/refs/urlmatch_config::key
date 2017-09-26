@@ -1,0 +1,26 @@
+<dec f='codebrowser/urlmatch.h' l='46' type='const char *'/>
+<use f='codebrowser/builtin/config.c' l='436' u='w' c='get_urlmatch'/>
+<use f='codebrowser/builtin/config.c' l='439' u='w' c='get_urlmatch'/>
+<offset>1216</offset>
+<use f='codebrowser/http.c' l='907' u='w' c='http_init'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='583' u='r' c='urlmatch_config_entry'/>

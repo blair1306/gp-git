@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1817' type='struct packed_git *'/>
+<offset>0</offset>
+<use f='codebrowser/sha1_file.c' l='3034' u='w' c='sha1_object_info_extended'/>
+<use f='codebrowser/streaming.c' l='431' u='r' c='open_istream_pack_non_delta'/>

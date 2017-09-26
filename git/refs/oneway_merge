@@ -1,0 +1,15 @@
+<dec f='codebrowser/unpack-trees.h' l='87' type='int oneway_merge(const struct cache_entry *const * src, struct unpack_trees_options * o)'/>
+<use f='codebrowser/archive.c' l='252' u='r' c='write_archive_entries'/>
+<use f='codebrowser/builtin/am.c' l='1994' u='r' c='merge_tree'/>
+<use f='codebrowser/builtin/checkout.c' l='424' u='r' c='reset_tree'/>
+<use f='codebrowser/builtin/clone.c' l='741' u='r' c='checkout'/>
+<use f='codebrowser/builtin/commit.c' l='316' u='r' c='create_base_index'/>
+<use f='codebrowser/builtin/read-tree.c' l='221' u='r' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/reset.c' l='56' u='r' c='reset_index'/>
+<def f='codebrowser/unpack-trees.c' l='2130' ll='2155' type='int oneway_merge(const struct cache_entry *const * src, struct unpack_trees_options * o)'/>
+<doc f='codebrowser/unpack-trees.c' l='2124'>/*
+ * One-way merge.
+ *
+ * The rule is:
+ * - take the stat information from stage0, take the data from stage1
+ */</doc>

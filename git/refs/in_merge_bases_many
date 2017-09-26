@@ -1,0 +1,9 @@
+<dec f='codebrowser/commit.h' l='310' type='int in_merge_bases_many(struct commit * , int , struct commit ** )'/>
+<def f='codebrowser/commit.c' l='1026' ll='1044' type='int in_merge_bases_many(struct commit * commit, int nr_reference, struct commit ** reference)'/>
+<use f='codebrowser/commit.c' l='1051' u='c' c='in_merge_bases'/>
+<doc f='codebrowser/commit.c' l='1023'>/*
+ * Is &quot;commit&quot; an ancestor of one of the &quot;references&quot;?
+ */</doc>
+<use f='codebrowser/remote.c' l='1369' u='c' c='add_missing_tags'/>
+<use f='codebrowser/shallow.c' l='714' u='c' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='741' u='c' c='delayed_reachability_test'/>

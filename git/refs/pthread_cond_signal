@@ -1,0 +1,7 @@
+<dec f='include/pthread.h' l='977' type='int pthread_cond_signal(pthread_cond_t * __cond)'/>
+<doc f='include/pthread.h' l='976'>/* Wake up one thread waiting for condition variable COND.  */</doc>
+<use f='codebrowser/builtin/grep.c' l='111' u='c' c='add_work'/>
+<use f='codebrowser/builtin/grep.c' l='164' u='c' c='work_done'/>
+<use f='codebrowser/builtin/grep.c' l='167' u='c' c='work_done'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2179' u='c' c='threaded_find_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2315' u='c' c='ll_find_deltas'/>

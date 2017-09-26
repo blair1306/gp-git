@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1972' type='char * alias_lookup(const char * alias)'/>
+<def f='codebrowser/alias.c' l='20' ll='27' type='char * alias_lookup(const char * alias)'/>
+<use f='codebrowser/builtin/help.c' l='439' u='c' c='check_git_cmd'/>
+<use f='codebrowser/git.c' l='227' u='c' c='handle_alias'/>

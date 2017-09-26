@@ -1,0 +1,23 @@
+<dec f='codebrowser/color.h' l='81' type='void color_set(char * dst, const char * color_bytes)'/>
+<doc f='codebrowser/color.h' l='76'>/*
+ * Set the color buffer (which must be COLOR_MAXLEN bytes)
+ * to the raw color bytes; this is useful for initializing
+ * default color variables.
+ */</doc>
+<def f='codebrowser/color.c' l='164' ll='167' type='void color_set(char * dst, const char * color_bytes)'/>
+<use f='codebrowser/grep.c' l='40' u='c' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='41' u='c' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='42' u='c' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='43' u='c' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='44' u='c' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='45' u='c' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='46' u='c' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='47' u='c' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='158' u='c' c='grep_init'/>
+<use f='codebrowser/grep.c' l='159' u='c' c='grep_init'/>
+<use f='codebrowser/grep.c' l='160' u='c' c='grep_init'/>
+<use f='codebrowser/grep.c' l='161' u='c' c='grep_init'/>
+<use f='codebrowser/grep.c' l='162' u='c' c='grep_init'/>
+<use f='codebrowser/grep.c' l='163' u='c' c='grep_init'/>
+<use f='codebrowser/grep.c' l='164' u='c' c='grep_init'/>
+<use f='codebrowser/grep.c' l='165' u='c' c='grep_init'/>

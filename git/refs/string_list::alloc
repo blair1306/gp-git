@@ -1,0 +1,16 @@
+<dec f='codebrowser/string-list.h' l='13' type='unsigned int'/>
+<offset>96</offset>
+<use f='codebrowser/string-list.c' l='44' u='r' c='add_entry'/>
+<use f='codebrowser/string-list.c' l='44' u='r' c='add_entry'/>
+<use f='codebrowser/string-list.c' l='44' u='w' c='add_entry'/>
+<use f='codebrowser/string-list.c' l='44' u='w' c='add_entry'/>
+<use f='codebrowser/string-list.c' l='44' u='r' c='add_entry'/>
+<use f='codebrowser/string-list.c' l='44' u='r' c='add_entry'/>
+<use f='codebrowser/string-list.c' l='177' u='w' c='string_list_clear'/>
+<use f='codebrowser/string-list.c' l='195' u='w' c='string_list_clear_func'/>
+<use f='codebrowser/string-list.c' l='212' u='r' c='string_list_append_nodup'/>
+<use f='codebrowser/string-list.c' l='212' u='r' c='string_list_append_nodup'/>
+<use f='codebrowser/string-list.c' l='212' u='w' c='string_list_append_nodup'/>
+<use f='codebrowser/string-list.c' l='212' u='w' c='string_list_append_nodup'/>
+<use f='codebrowser/string-list.c' l='212' u='r' c='string_list_append_nodup'/>
+<use f='codebrowser/string-list.c' l='212' u='r' c='string_list_append_nodup'/>

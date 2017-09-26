@@ -1,0 +1,9 @@
+<dec f='codebrowser/diff.h' l='132' type='int'/>
+<offset>576</offset>
+<use f='codebrowser/builtin/add.c' l='214' u='w' c='edit_patch'/>
+<use f='codebrowser/combine-diff.c' l='986' u='r' c='show_patch_diff'/>
+<use f='codebrowser/diff.c' l='2508' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2600' u='r' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='3379' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='3795' u='a' c='diff_opt_parse'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='63' u='r' c='diff_grep'/>

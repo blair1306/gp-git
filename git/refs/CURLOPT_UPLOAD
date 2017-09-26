@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='1014' macro='1' type='46'/>
+<use f='codebrowser/http-push.c' l='208' u='r' c='curl_setup_http'/>
+<use f='codebrowser/http.c' l='1110' u='r' c='get_active_slot'/>
+<use f='codebrowser/imap-send.c' l='1441' u='r' c='setup_curl'/>

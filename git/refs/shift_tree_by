@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1942' type='void shift_tree_by(const struct object_id * , const struct object_id * , struct object_id * , const char * )'/>
+<def f='codebrowser/match-trees.c' l='291' ll='344' type='void shift_tree_by(const struct object_id * hash1, const struct object_id * hash2, struct object_id * shifted, const char * shift_prefix)'/>
+<doc f='codebrowser/match-trees.c' l='286'>/*
+ * The user says the trees will be shifted by this much.
+ * Unfortunately we cannot fundamentally tell which one to
+ * be prefixed, as recursive merge can work in either direction.
+ */</doc>
+<use f='codebrowser/merge-recursive.c' l='66' u='c' c='shift_tree_object'/>

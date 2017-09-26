@@ -1,0 +1,3 @@
+<dec f='codebrowser/sub-process.h' l='27' type='struct hashmap_entry'/>
+<offset>0</offset>
+<doc f='codebrowser/sub-process.h' l='27'>/* must be the first member! */</doc>

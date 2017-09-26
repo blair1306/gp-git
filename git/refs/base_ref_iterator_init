@@ -1,0 +1,15 @@
+<dec f='codebrowser/refs/refs-internal.h' l='440' type='void base_ref_iterator_init(struct ref_iterator * iter, struct ref_iterator_vtable * vtable)'/>
+<doc f='codebrowser/refs/refs-internal.h' l='434'>/*
+ * Base class constructor for ref_iterators. Initialize the
+ * ref_iterator part of iter, setting its vtable pointer as specified.
+ * This is meant to be called only by the initializers of derived
+ * classes.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='775' u='c' c='files_ref_iterator_begin'/>
+<use f='codebrowser/refs/files-backend.c' l='2067' u='c' c='files_reflog_iterator_begin'/>
+<def f='codebrowser/refs/iterator.c' l='27' ll='34' type='void base_ref_iterator_init(struct ref_iterator * iter, struct ref_iterator_vtable * vtable)'/>
+<use f='codebrowser/refs/iterator.c' l='75' u='c' c='empty_ref_iterator_begin'/>
+<use f='codebrowser/refs/iterator.c' l='222' u='c' c='merge_ref_iterator_begin'/>
+<use f='codebrowser/refs/iterator.c' l='364' u='c' c='prefix_ref_iterator_begin'/>
+<use f='codebrowser/refs/packed-backend.c' l='487' u='c' c='packed_ref_iterator_begin'/>
+<use f='codebrowser/refs/ref-cache.c' l='577' u='c' c='cache_ref_iterator_begin'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/repository.h' l='82' type='unsigned int'/>
+<offset>641</offset>
+<doc f='codebrowser/repository.h' l='81'>/* Indicate if a repository has a different &apos;commondir&apos; from &apos;gitdir&apos; */</doc>
+<use f='codebrowser/path.c' l='358' u='r' c='report_linked_checkout_garbage'/>
+<use f='codebrowser/path.c' l='388' u='r' c='adjust_git_path'/>
+<use f='codebrowser/repository.c' l='41' u='w' c='repo_setup_env'/>

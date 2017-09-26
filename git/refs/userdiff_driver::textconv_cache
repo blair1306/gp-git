@@ -1,0 +1,9 @@
+<dec f='codebrowser/userdiff.h' l='18' type='struct notes_cache *'/>
+<offset>448</offset>
+<use f='codebrowser/diff.c' l='5232' u='r' c='fill_textconv'/>
+<use f='codebrowser/diff.c' l='5233' u='r' c='fill_textconv'/>
+<use f='codebrowser/diff.c' l='5244' u='r' c='fill_textconv'/>
+<use f='codebrowser/diff.c' l='5246' u='r' c='fill_textconv'/>
+<use f='codebrowser/diff.c' l='5254' u='r' c='fill_textconv'/>
+<use f='codebrowser/userdiff.c' l='289' u='r' c='userdiff_get_textconv'/>
+<use f='codebrowser/userdiff.c' l='295' u='w' c='userdiff_get_textconv'/>

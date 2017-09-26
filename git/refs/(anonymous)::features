@@ -1,0 +1,3 @@
+<dec f='include/curl/curl.h' l='2287' type='int'/>
+<offset>256</offset>
+<doc f='include/curl/curl.h' l='2287'>/* bitmask, see defines below */</doc>

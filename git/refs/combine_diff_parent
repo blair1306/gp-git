@@ -1,0 +1,5 @@
+<def f='codebrowser/diff.h' l='227' ll='231'/>
+<size>28</size>
+<mbr r='combine_diff_parent::status' o='0' t='char'/>
+<mbr r='combine_diff_parent::mode' o='32' t='unsigned int'/>
+<mbr r='combine_diff_parent::oid' o='64' t='struct object_id'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='562' type='void verify_non_filename(const char * prefix, const char * name)'/>
+<use f='codebrowser/builtin/checkout.c' l='1057' u='c' c='parse_branchname_arg'/>
+<use f='codebrowser/builtin/grep.c' l='995' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/reset.c' l='228' u='c' c='parse_args'/>
+<use f='codebrowser/revision.c' l='1474' u='c' c='handle_dotdot_1'/>
+<use f='codebrowser/revision.c' l='1606' u='c' c='handle_revision_arg'/>
+<def f='codebrowser/setup.c' l='244' ll='255' type='void verify_non_filename(const char * prefix, const char * arg)'/>
+<doc f='codebrowser/setup.c' l='239'>/*
+ * Opposite of the above: the command line did not have -- marker
+ * and we parsed the arg as a refname.  It should not be interpretable
+ * as a filename.
+ */</doc>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/diffcore.h' l='73' type='unsigned int'/>
+<offset>155</offset>
+<use f='codebrowser/diff.c' l='4920' u='r' c='diff_filespec_check_stat_unmatch'/>
+<use f='codebrowser/diff.c' l='4923' u='w' c='diff_filespec_check_stat_unmatch'/>

@@ -1,0 +1,29 @@
+<def f='codebrowser/remote.h' l='14' ll='59'/>
+<size>168</size>
+<mbr r='remote::ent' o='0' t='struct hashmap_entry'/>
+<mbr r='remote::name' o='128' t='const char *'/>
+<mbr r='remote::origin' o='192' t='int'/>
+<mbr r='remote::configured_in_repo' o='224' t='int'/>
+<mbr r='remote::foreign_vcs' o='256' t='const char *'/>
+<mbr r='remote::url' o='320' t='const char **'/>
+<mbr r='remote::url_nr' o='384' t='int'/>
+<mbr r='remote::url_alloc' o='416' t='int'/>
+<mbr r='remote::pushurl' o='448' t='const char **'/>
+<mbr r='remote::pushurl_nr' o='512' t='int'/>
+<mbr r='remote::pushurl_alloc' o='544' t='int'/>
+<mbr r='remote::push_refspec' o='576' t='const char **'/>
+<mbr r='remote::push' o='640' t='struct refspec *'/>
+<mbr r='remote::push_refspec_nr' o='704' t='int'/>
+<mbr r='remote::push_refspec_alloc' o='736' t='int'/>
+<mbr r='remote::fetch_refspec' o='768' t='const char **'/>
+<mbr r='remote::fetch' o='832' t='struct refspec *'/>
+<mbr r='remote::fetch_refspec_nr' o='896' t='int'/>
+<mbr r='remote::fetch_refspec_alloc' o='928' t='int'/>
+<mbr r='remote::fetch_tags' o='960' t='int'/>
+<mbr r='remote::skip_default_update' o='992' t='int'/>
+<mbr r='remote::mirror' o='1024' t='int'/>
+<mbr r='remote::prune' o='1056' t='int'/>
+<mbr r='remote::receivepack' o='1088' t='const char *'/>
+<mbr r='remote::uploadpack' o='1152' t='const char *'/>
+<mbr r='remote::http_proxy' o='1216' t='char *'/>
+<mbr r='remote::http_proxy_authmethod' o='1280' t='char *'/>

@@ -1,0 +1,7 @@
+<def f='codebrowser/cache.h' l='857' ll='863'/>
+<size>56</size>
+<mbr r='repository_format::version' o='0' t='int'/>
+<mbr r='repository_format::precious_objects' o='32' t='int'/>
+<mbr r='repository_format::is_bare' o='64' t='int'/>
+<mbr r='repository_format::work_tree' o='128' t='char *'/>
+<mbr r='repository_format::unknown_extensions' o='192' t='struct string_list'/>

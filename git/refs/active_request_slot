@@ -1,0 +1,11 @@
+<def f='codebrowser/http.h' l='60' ll='70'/>
+<size>64</size>
+<mbr r='active_request_slot::curl' o='0' t='CURL *'/>
+<mbr r='active_request_slot::in_use' o='64' t='int'/>
+<mbr r='active_request_slot::curl_result' o='96' t='CURLcode'/>
+<mbr r='active_request_slot::http_code' o='128' t='long'/>
+<mbr r='active_request_slot::finished' o='192' t='int *'/>
+<mbr r='active_request_slot::results' o='256' t='struct slot_results *'/>
+<mbr r='active_request_slot::callback_data' o='320' t='void *'/>
+<mbr r='active_request_slot::callback_func' o='384' t='void (*)(void *)'/>
+<mbr r='active_request_slot::next' o='448' t='struct active_request_slot *'/>

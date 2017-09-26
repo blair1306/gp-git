@@ -1,0 +1,21 @@
+<dec f='codebrowser/unpack-trees.h' l='78' type='int unpack_trees(unsigned int n, struct tree_desc * t, struct unpack_trees_options * options)'/>
+<use f='codebrowser/archive.c' l='254' u='c' c='write_archive_entries'/>
+<use f='codebrowser/builtin/am.c' l='1962' u='c' c='fast_forward_to'/>
+<use f='codebrowser/builtin/am.c' l='1997' u='c' c='merge_tree'/>
+<use f='codebrowser/builtin/checkout.c' l='430' u='c' c='reset_tree'/>
+<use f='codebrowser/builtin/checkout.c' l='523' u='c' c='merge_working_tree'/>
+<use f='codebrowser/builtin/clone.c' l='749' u='c' c='checkout'/>
+<use f='codebrowser/builtin/commit.c' l='322' u='c' c='create_base_index'/>
+<use f='codebrowser/builtin/merge.c' l='626' u='c' c='read_tree_trivial'/>
+<use f='codebrowser/builtin/read-tree.c' l='248' u='c' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/reset.c' l='86' u='c' c='reset_index'/>
+<use f='codebrowser/diff-lib.c' l='506' u='c' c='diff_cache'/>
+<use f='codebrowser/merge-recursive.c' l='278' u='c' c='git_merge_trees'/>
+<use f='codebrowser/merge.c' l='92' u='c' c='checkout_fast_forward'/>
+<def f='codebrowser/unpack-trees.c' l='1247' ll='1420' type='int unpack_trees(unsigned int len, struct tree_desc * t, struct unpack_trees_options * o)'/>
+<doc f='codebrowser/unpack-trees.c' l='1241'>/*
+ * N-way merge &quot;len&quot; trees.  Returns 0 on success, -1 on failure to manipulate the
+ * resulting index, -2 on failure to reflect the changes to the work tree.
+ *
+ * CE_ADDED, CE_UNPACKED and CE_NEW_SKIP_WORKTREE are used internally
+ */</doc>

@@ -1,0 +1,9 @@
+<def f='codebrowser/xdiff/xtypes.h' l='33' ll='39'/>
+<size>56</size>
+<mbr r='s_chastore::head' o='0' t='chanode_t *'/>
+<mbr r='s_chastore::tail' o='64' t='chanode_t *'/>
+<mbr r='s_chastore::isize' o='128' t='long'/>
+<mbr r='s_chastore::nsize' o='192' t='long'/>
+<mbr r='s_chastore::ancur' o='256' t='chanode_t *'/>
+<mbr r='s_chastore::sncur' o='320' t='chanode_t *'/>
+<mbr r='s_chastore::scurr' o='384' t='long'/>

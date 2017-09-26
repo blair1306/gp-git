@@ -1,0 +1,4 @@
+<dec f='codebrowser/version.h' l='6' type='const char * git_user_agent()'/>
+<use f='codebrowser/http.c' l='809' u='c' c='get_curl_handle'/>
+<def f='codebrowser/version.c' l='7' ll='18' type='const char * git_user_agent()'/>
+<use f='codebrowser/version.c' l='28' u='c' c='git_user_agent_sanitized'/>

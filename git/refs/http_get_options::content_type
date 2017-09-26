@@ -1,0 +1,6 @@
+<dec f='codebrowser/http.h' l='153' type='struct strbuf *'/>
+<offset>64</offset>
+<doc f='codebrowser/http.h' l='152'>/* If non-NULL, returns the content-type of the response. */</doc>
+<use f='codebrowser/http.c' l='1707' u='r' c='http_request'/>
+<use f='codebrowser/http.c' l='1710' u='r' c='http_request'/>
+<use f='codebrowser/remote-curl.c' l='300' u='w' c='discover_refs'/>

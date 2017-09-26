@@ -1,0 +1,6 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='35' type='long'/>
+<offset>0</offset>
+<use f='codebrowser/xdiff/xdiffi.c' l='219' u='r' c='xdl_split'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='357' u='w' c='xdl_do_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='358' u='r' c='xdl_do_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='359' u='w' c='xdl_do_diff'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='344' type='struct hashmap'/>
+<offset>896</offset>
+<use f='codebrowser/name-hash.c' l='38' u='a' c='find_dir_entry__hash'/>
+<use f='codebrowser/name-hash.c' l='73' u='a' c='hash_dir_entry'/>
+<use f='codebrowser/name-hash.c' l='98' u='a' c='remove_dir_entry'/>
+<use f='codebrowser/name-hash.c' l='293' u='a' c='hash_dir_entry_with_parent_and_prefix'/>
+<use f='codebrowser/name-hash.c' l='302' u='a' c='hash_dir_entry_with_parent_and_prefix'/>
+<use f='codebrowser/name-hash.c' l='308' u='a' c='hash_dir_entry_with_parent_and_prefix'/>
+<use f='codebrowser/name-hash.c' l='584' u='a' c='lazy_init_name_hash'/>
+<use f='codebrowser/name-hash.c' l='587' u='a' c='lazy_init_name_hash'/>
+<use f='codebrowser/name-hash.c' l='589' u='a' c='lazy_init_name_hash'/>
+<use f='codebrowser/name-hash.c' l='726' u='a' c='free_name_hash'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='43' u='a' c='dump_run'/>

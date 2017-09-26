@@ -1,0 +1,5 @@
+<def f='codebrowser/refs/ref-cache.h' l='14' ll='25'/>
+<size>24</size>
+<mbr r='ref_cache::root' o='0' t='struct ref_entry *'/>
+<mbr r='ref_cache::ref_store' o='64' t='struct ref_store *'/>
+<mbr r='ref_cache::fill_ref_dir' o='128' t='fill_ref_dir_fn *'/>

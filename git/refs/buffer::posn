@@ -1,0 +1,8 @@
+<dec f='codebrowser/http.h' l='74' type='size_t'/>
+<offset>192</offset>
+<use f='codebrowser/http-push.c' l='370' u='w' c='start_put'/>
+<use f='codebrowser/http.c' l='152' u='r' c='fread_buffer'/>
+<use f='codebrowser/http.c' l='153' u='r' c='fread_buffer'/>
+<use f='codebrowser/http.c' l='154' u='r' c='fread_buffer'/>
+<use f='codebrowser/http.c' l='155' u='w' c='fread_buffer'/>
+<use f='codebrowser/http.c' l='170' u='w' c='ioctl_buffer'/>

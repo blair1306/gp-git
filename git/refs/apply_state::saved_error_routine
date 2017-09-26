@@ -1,0 +1,9 @@
+<dec f='codebrowser/apply.h' l='102' type='void (*)(const char *, struct __va_list_tag *)'/>
+<use f='codebrowser/apply.c' l='153' u='w' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='4901' u='r' c='apply_all_patches'/>
+<offset>2176</offset>
+<doc f='codebrowser/apply.h' l='97'>/*
+	 * This is to save reporting routines before using
+	 * set_error_routine() or set_warn_routine() to install muting
+	 * routines when in verbosity_silent mode.
+	 */</doc>

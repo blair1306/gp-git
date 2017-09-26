@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='230' type='int cmd_update_ref(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/update-ref.c' l='354' ll='443' type='int cmd_update_ref(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='473'/>
+<use f='codebrowser/git.c' l='473'/>
+<use f='codebrowser/git.c' l='473'/>
+<use f='codebrowser/git.c' l='473'/>

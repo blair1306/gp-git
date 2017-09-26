@@ -1,0 +1,13 @@
+<dec f='codebrowser/send-pack.h' l='26' type='const struct string_list *'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/send-pack.c' l='207' u='w' c='cmd_send_pack'/>
+<use f='codebrowser/send-pack.c' l='298' u='r' c='generate_push_cert'/>
+<use f='codebrowser/send-pack.c' l='299' u='r' c='generate_push_cert'/>
+<use f='codebrowser/send-pack.c' l='299' u='r' c='generate_push_cert'/>
+<use f='codebrowser/send-pack.c' l='299' u='r' c='generate_push_cert'/>
+<use f='codebrowser/send-pack.c' l='447' u='r' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='450' u='r' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='540' u='r' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='540' u='r' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='540' u='r' c='send_pack'/>
+<use f='codebrowser/transport.c' l='564' u='w' c='git_transport_push'/>

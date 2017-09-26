@@ -1,0 +1,2 @@
+<dec f='codebrowser/git-compat-util.h' l='63'/>
+<doc f='codebrowser/git-compat-util.h' l='62'>/* &amp;arr[0] degrades to a pointer: a different type from an array */</doc>

@@ -1,0 +1,17 @@
+<def f='codebrowser/git-compat-util.h' l='901' ll='906' type='size_t xsize_t(off_t len)'/>
+<use f='codebrowser/combine-diff.c' l='1029' u='c' c='show_patch_diff'/>
+<use f='codebrowser/config.c' l='2550' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/diff.c' l='2852' u='c' c='diff_populate_filespec'/>
+<use f='codebrowser/dir.c' l='623' u='c' c='read_skip_worktree_file_from_index'/>
+<use f='codebrowser/dir.c' l='779' u='c' c='add_excludes'/>
+<use f='codebrowser/grep.c' l='1992' u='c' c='grep_source_load_file'/>
+<use f='codebrowser/pack-bitmap.c' l='287' u='c' c='open_pack_bitmap_1'/>
+<use f='codebrowser/read-cache.c' l='217' u='c' c='ce_modified_check_fs'/>
+<use f='codebrowser/read-cache.c' l='1752' u='c' c='do_read_index'/>
+<use f='codebrowser/sha1_file.c' l='469' u='c' c='read_info_alternates'/>
+<use f='codebrowser/sha1_file.c' l='762' u='c' c='check_packed_git_idx'/>
+<use f='codebrowser/sha1_file.c' l='1298' u='c' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1780' u='c' c='map_sha1_file_1'/>
+<use f='codebrowser/sha1_file.c' l='3646' u='c' c='index_fd'/>
+<use f='codebrowser/sha1_file.c' l='3649' u='c' c='index_fd'/>
+<use f='codebrowser/xdiff-interface.c' l='171' u='c' c='read_mmfile'/>

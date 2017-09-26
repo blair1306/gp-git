@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='412' type='int refs_for_each_reflog_ent_reverse(struct ref_store * refs, const char * refname, each_reflog_ent_fn * fn, void * cb_data)'/>
+<def f='codebrowser/refs.c' l='1948' ll='1955' type='int refs_for_each_reflog_ent_reverse(struct ref_store * refs, const char * refname, each_reflog_ent_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='1960' u='c' c='for_each_reflog_ent_reverse'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='180' u='c' c='cmd_for_each_reflog_ent_reverse'/>

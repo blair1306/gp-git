@@ -1,0 +1,5 @@
+<dec f='codebrowser/connected.h' l='25' type='struct transport *'/>
+<use f='codebrowser/builtin/clone.c' l='650' u='w' c='update_remote_refs'/>
+<offset>128</offset>
+<doc f='codebrowser/connected.h' l='24'>/* Transport whose objects we are checking, if available. */</doc>
+<use f='codebrowser/connected.c' l='32' u='r' c='check_connected'/>

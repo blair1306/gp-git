@@ -1,0 +1,4 @@
+<dec f='codebrowser/convert.h' l='88' type='int would_convert_to_git_filter_fd(const char * path)'/>
+<def f='codebrowser/convert.c' l='1073' ll='1090' type='int would_convert_to_git_filter_fd(const char * path)'/>
+<use f='codebrowser/sha1_file.c' l='3555' u='c' c='index_stream_convert_blob'/>
+<use f='codebrowser/sha1_file.c' l='3640' u='c' c='index_fd'/>

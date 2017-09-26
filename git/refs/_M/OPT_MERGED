@@ -1,0 +1,4 @@
+<dec f='codebrowser/ref-filter.h' l='96'/>
+<use f='codebrowser/builtin/branch.c' l='589' u='c'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='44' u='c'/>
+<use f='codebrowser/builtin/tag.c' l='403' u='c'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs/packed-backend.h' l='4' type='struct ref_store * packed_ref_store_create(const char * path, unsigned int store_flags)'/>
+<use f='codebrowser/refs/files-backend.c' l='61' u='c' c='files_ref_store_create'/>
+<def f='codebrowser/refs/packed-backend.c' l='81' ll='92' type='struct ref_store * packed_ref_store_create(const char * path, unsigned int store_flags)'/>
+<use f='codebrowser/refs/packed-backend.c' l='862'/>
+<use f='codebrowser/refs/packed-backend.c' l='862'/>

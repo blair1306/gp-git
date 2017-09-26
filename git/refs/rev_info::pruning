@@ -1,0 +1,15 @@
+<dec f='codebrowser/revision.h' l='201' type='struct diff_options'/>
+<offset>12864</offset>
+<use f='codebrowser/revision.c' l='455' u='a' c='rev_compare_tree'/>
+<use f='codebrowser/revision.c' l='455' u='a' c='rev_compare_tree'/>
+<use f='codebrowser/revision.c' l='457' u='a' c='rev_compare_tree'/>
+<use f='codebrowser/revision.c' l='471' u='a' c='rev_same_tree_as_empty'/>
+<use f='codebrowser/revision.c' l='471' u='a' c='rev_same_tree_as_empty'/>
+<use f='codebrowser/revision.c' l='472' u='a' c='rev_same_tree_as_empty'/>
+<use f='codebrowser/revision.c' l='1344' u='a' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1344' u='a' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1345' u='a' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1345' u='a' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1346' u='m' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1347' u='m' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='2341' u='m' c='setup_revisions'/>

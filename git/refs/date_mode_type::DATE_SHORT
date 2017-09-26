@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1411' type='2'/>
+<use f='codebrowser/builtin/blame.c' l='782' c='cmd_blame'/>
+<use f='codebrowser/builtin/tag.c' l='311' macro='1' u='r'/>
+<use f='codebrowser/date.c' l='233' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='819' u='r' c='parse_date_type'/>
+<use f='codebrowser/sha1_name.c' l='370' u='r' c='show_ambiguous_object'/>

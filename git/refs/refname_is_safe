@@ -1,0 +1,21 @@
+<dec f='codebrowser/refs/refs-internal.h' l='78' type='int refname_is_safe(const char * refname)'/>
+<def f='codebrowser/refs.c' l='145' ll='175' type='int refname_is_safe(const char * refname)'/>
+<use f='codebrowser/refs.c' l='936' u='c' c='ref_transaction_update'/>
+<use f='codebrowser/refs.c' l='1428' u='c' c='refs_resolve_ref_unsafe'/>
+<use f='codebrowser/refs.c' l='1475' u='c' c='refs_resolve_ref_unsafe'/>
+<doc f='codebrowser/refs/refs-internal.h' l='64'>/*
+ * Return true iff refname is minimally safe. &quot;Safe&quot; here means that
+ * deleting a loose reference by this name will not do any damage, for
+ * example by causing a file that is not a reference to be deleted.
+ * This function does not check that the reference name is legal; for
+ * that, use check_refname_format().
+ *
+ * A refname that starts with &quot;refs/&quot; is considered safe iff it
+ * doesn&apos;t contain any &quot;.&quot; or &quot;..&quot; components or consecutive &apos;/&apos;
+ * characters, end with &apos;/&apos;, or (on Windows) contain any &apos;\&apos;
+ * characters. Names that do not start with &quot;refs/&quot; are considered
+ * safe iff they consist entirely of upper case characters and &apos;_&apos;
+ * (like &quot;HEAD&quot; and &quot;MERGE_HEAD&quot; but not &quot;config&quot; or &quot;FOO/BAR&quot;).
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='218' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/packed-backend.c' l='250' u='c' c='read_packed_refs'/>

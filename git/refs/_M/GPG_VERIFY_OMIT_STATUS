@@ -1,0 +1,4 @@
+<dec f='codebrowser/gpg-interface.h' l='6'/>
+<use f='codebrowser/builtin/tag.c' l='114' u='c'/>
+<use f='codebrowser/builtin/verify-tag.c' l='57' u='c'/>
+<use f='codebrowser/tag.c' l='29' u='c'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='101'/>
+<use f='codebrowser/diff.c' l='3877' u='c'/>
+<use f='codebrowser/diff.c' l='3889' u='c'/>
+<use f='codebrowser/diff.c' l='3900' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='2208' u='c'/>

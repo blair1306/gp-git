@@ -1,0 +1,24 @@
+<dec f='codebrowser/gpg-interface.h' l='21' type='char'/>
+<offset>192</offset>
+<doc f='codebrowser/gpg-interface.h' l='13'>/*
+	 * possible &quot;result&quot;:
+	 * 0 (not checked)
+	 * N (checked but no further result)
+	 * U (untrusted good)
+	 * G (good)
+	 * B (bad)
+	 */</doc>
+<use f='codebrowser/builtin/merge.c' l='1268' u='r' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1280' u='r' c='cmd_merge'/>
+<use f='codebrowser/builtin/receive-pack.c' l='638' u='w' c='prepare_push_cert_sha1'/>
+<use f='codebrowser/builtin/receive-pack.c' l='664' u='r' c='prepare_push_cert_sha1'/>
+<use f='codebrowser/commit.c' l='1247' u='w' c='check_commit_signature'/>
+<use f='codebrowser/gpg-interface.c' l='53' u='w' c='parse_gpg_output'/>
+<use f='codebrowser/gpg-interface.c' l='55' u='r' c='parse_gpg_output'/>
+<use f='codebrowser/gpg-interface.c' l='58' u='r' c='parse_gpg_output'/>
+<use f='codebrowser/gpg-interface.c' l='74' u='w' c='check_signature'/>
+<use f='codebrowser/gpg-interface.c' l='89' u='r' c='check_signature'/>
+<use f='codebrowser/gpg-interface.c' l='89' u='r' c='check_signature'/>
+<use f='codebrowser/pretty.c' l='1221' u='r' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1229' u='r' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1238' u='r' c='format_commit_one'/>

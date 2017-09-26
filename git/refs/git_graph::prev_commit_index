@@ -1,0 +1,13 @@
+<dec f='codebrowser/graph.c' l='176' type='int'/>
+<use f='codebrowser/graph.c' l='287' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='630' u='w' c='graph_update'/>
+<use f='codebrowser/graph.c' l='803' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='923' u='r' c='graph_output_commit_line'/>
+<offset>320</offset>
+<doc f='codebrowser/graph.c' l='169'>/*
+	 * The commit_index for the previously displayed commit.
+	 *
+	 * This is used to determine how the first line of a merge
+	 * graph output should appear, based on the last line of the
+	 * previous commit.
+	 */</doc>

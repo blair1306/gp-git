@@ -1,0 +1,4 @@
+<dec f='codebrowser/bisect.h' l='20' type='int'/>
+<offset>96</offset>
+<use f='codebrowser/builtin/rev-list.c' l='84' u='r' c='show_commit'/>
+<use f='codebrowser/builtin/rev-list.c' l='307' u='w' c='cmd_rev_list'/>

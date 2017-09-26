@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='835' type='enum push_default_type'/>
+<use f='codebrowser/builtin/push.c' l='65' u='r' c='map_refspec'/>
+<use f='codebrowser/builtin/push.c' l='143' u='r' c='die_push_simple'/>
+<use f='codebrowser/builtin/push.c' l='223' u='r' c='setup_default_push_refspecs'/>
+<use f='codebrowser/config.c' l='1302' u='w' c='git_default_push_config'/>
+<use f='codebrowser/config.c' l='1304' u='w' c='git_default_push_config'/>
+<use f='codebrowser/config.c' l='1306' u='w' c='git_default_push_config'/>
+<use f='codebrowser/config.c' l='1308' u='w' c='git_default_push_config'/>
+<use f='codebrowser/config.c' l='1310' u='w' c='git_default_push_config'/>
+<use f='codebrowser/config.c' l='1312' u='w' c='git_default_push_config'/>
+<def f='codebrowser/environment.c' l='56' type='enum push_default_type'/>
+<use f='codebrowser/remote.c' l='1751' u='r' c='branch_get_push_1'/>

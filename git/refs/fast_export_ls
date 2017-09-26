@@ -1,0 +1,3 @@
+<dec f='codebrowser/vcs-svn/fast_export.h' l='28' type='int fast_export_ls(const char * path, uint32_t * mode_out, struct strbuf * dataref_out)'/>
+<def f='codebrowser/vcs-svn/fast_export.c' l='309' ll='313' type='int fast_export_ls(const char * path, uint32_t * mode, struct strbuf * dataref)'/>
+<use f='codebrowser/vcs-svn/repo_tree.c' l='17' u='c' c='repo_read_path'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/dir.h' l='278' type='void setup_standard_excludes(struct dir_struct * dir)'/>
+<use f='codebrowser/builtin/add.c' l='448' u='c' c='cmd_add'/>
+<use f='codebrowser/builtin/check-ignore.c' l='179' u='c' c='cmd_check_ignore'/>
+<use f='codebrowser/builtin/checkout.c' l='514' u='c' c='merge_working_tree'/>
+<use f='codebrowser/builtin/clean.c' l='957' u='c' c='cmd_clean'/>
+<use f='codebrowser/builtin/grep.c' l='668' u='c' c='grep_directory'/>
+<use f='codebrowser/builtin/ls-files.c' l='499' u='c' c='option_parse_exclude_standard'/>
+<def f='codebrowser/dir.c' l='2322' ll='2340' type='void setup_standard_excludes(struct dir_struct * dir)'/>
+<use f='codebrowser/merge.c' l='69' u='c' c='checkout_fast_forward'/>
+<use f='codebrowser/wt-status.c' l='667' u='c' c='wt_status_collect_untracked'/>

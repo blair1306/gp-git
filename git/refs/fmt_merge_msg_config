@@ -1,0 +1,4 @@
+<dec f='codebrowser/fmt-merge-msg.h' l='5' type='int fmt_merge_msg_config(const char * key, const char * value, void * cb)'/>
+<def f='codebrowser/builtin/fmt-merge-msg.c' l='21' ll='36' type='int fmt_merge_msg_config(const char * key, const char * value, void * cb)'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='682' u='r' c='cmd_fmt_merge_msg'/>
+<use f='codebrowser/builtin/merge.c' l='586' u='c' c='git_merge_config'/>

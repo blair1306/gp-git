@@ -1,0 +1,1 @@
+<dec f='include/curl/multi.h' l='289' type='CURLMcode curl_multi_socket_action(CURLM * multi_handle, curl_socket_t s, int ev_bitmask, int * running_handles)'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/pack-objects.h' l='10' type='struct object_entry *'/>
+<use f='codebrowser/builtin/pack-objects.c' l='598' u='r' c='add_descendants_to_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='600' u='r' c='add_descendants_to_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='646' u='w' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='660' u='r' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='661' u='w' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1475' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1476' u='w' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1545' u='a' c='drop_reused_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1952' u='r' c='check_delta_limit'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2027' u='r' c='find_deltas'/>
+<offset>512</offset>
+<doc f='codebrowser/pack-objects.h' l='10'>/* deltified objects who bases me */</doc>

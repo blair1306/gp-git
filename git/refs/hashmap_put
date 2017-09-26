@@ -1,0 +1,15 @@
+<dec f='codebrowser/hashmap.h' l='329' type='void * hashmap_put(struct hashmap * map, void * entry)'/>
+<doc f='codebrowser/hashmap.h' l='321'>/*
+ * Adds or replaces a hashmap entry. If the hashmap contains duplicate
+ * entries equal to the specified entry, only one of them will be replaced.
+ *
+ * `map` is the hashmap structure.
+ * `entry` is the entry to add or replace.
+ * Returns the replaced entry, or NULL if not found (i.e. the entry was added).
+ */</doc>
+<use f='codebrowser/builtin/fast-export.c' l='131' u='c' c='anonymize_mem'/>
+<def f='codebrowser/hashmap.c' l='233' ll='238' type='void * hashmap_put(struct hashmap * map, void * entry)'/>
+<use f='codebrowser/refs.c' l='1631' u='c' c='register_ref_store_map'/>
+<use f='codebrowser/remote.c' l='181' u='c' c='make_remote'/>
+<use f='codebrowser/submodule-config.c' l='124' u='c' c='cache_put_path'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='196' u='c' c='cmd_main'/>

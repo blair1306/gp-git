@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='399' type='int print_stat_summary(FILE * fp, int files, int insertions, int deletions)'/>
+<use f='codebrowser/apply.c' l='4117' u='c' c='stat_patch_list'/>
+<def f='codebrowser/diff.c' l='1553' ll='1590' type='int print_stat_summary(FILE * fp, int files, int insertions, int deletions)'/>
+<use f='codebrowser/diff.c' l='1833' u='c' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1856' u='c' c='show_shortstats'/>

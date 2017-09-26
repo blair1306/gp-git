@@ -1,0 +1,17 @@
+<dec f='codebrowser/strbuf.h' l='239' type='void strbuf_add_commented_lines(struct strbuf * out, const char * buf, size_t size)'/>
+<doc f='codebrowser/strbuf.h' l='235'>/**
+ * Add a NUL-terminated string to the buffer. Each line will be prepended
+ * by a comment character and a blank.
+ */</doc>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='477' u='c' c='fmt_tag_signature'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='511' u='c' c='fmt_merge_msg_sigs'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='519' u='c' c='fmt_merge_msg_sigs'/>
+<use f='codebrowser/builtin/notes.c' l='153' u='c' c='write_commented_object'/>
+<use f='codebrowser/builtin/notes.c' l='183' u='c' c='prepare_note_data'/>
+<use f='codebrowser/builtin/notes.c' l='184' u='c' c='prepare_note_data'/>
+<use f='codebrowser/builtin/stripspace.c' l='13' u='c' c='comment_lines'/>
+<use f='codebrowser/sequencer.c' l='888' u='c' c='update_squash_messages'/>
+<def f='codebrowser/strbuf.c' l='242' ll='252' type='void strbuf_add_commented_lines(struct strbuf * out, const char * buf, size_t size)'/>
+<use f='codebrowser/strbuf.c' l='264' u='c' c='strbuf_commented_addf'/>
+<use f='codebrowser/wt-status.c' l='864' u='c' c='wt_longstatus_print_submodule_summary'/>
+<use f='codebrowser/wt-status.c' l='941' u='c' c='wt_status_add_cut_line'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/builtin/stripspace.c' l='24' type='0'/>
+<use f='codebrowser/builtin/stripspace.c' l='32' u='r' c='cmd_stripspace'/>
+<use f='codebrowser/builtin/stripspace.c' l='56' u='r' c='cmd_stripspace'/>

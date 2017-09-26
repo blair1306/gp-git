@@ -1,0 +1,6 @@
+<dec f='codebrowser/apply.h' l='5' type='0'/>
+<use f='codebrowser/apply.c' l='42' u='r' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='165' u='r' c='set_default_whitespace_mode'/>
+<use f='codebrowser/apply.c' l='1720' u='r' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='1728' u='r' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='3024' u='r' c='apply_one_fragment'/>

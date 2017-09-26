@@ -1,0 +1,35 @@
+<dec f='include/expat_external.h' l='52'/>
+<use f='include/expat.h' l='150' u='c'/>
+<use f='include/expat.h' l='166' u='c'/>
+<use f='include/expat.h' l='186' u='c'/>
+<use f='include/expat.h' l='252' u='c'/>
+<use f='include/expat.h' l='256' u='c'/>
+<use f='include/expat.h' l='261' u='c'/>
+<use f='include/expat.h' l='266' u='c'/>
+<use f='include/expat.h' l='272' u='c'/>
+<use f='include/expat.h' l='275' u='c'/>
+<use f='include/expat.h' l='276' u='c'/>
+<use f='include/expat.h' l='291' u='c'/>
+<use f='include/expat.h' l='298' u='c'/>
+<use f='include/expat.h' l='309' u='c'/>
+<use f='include/expat.h' l='329' u='c'/>
+<use f='include/expat.h' l='353' u='c'/>
+<use f='include/expat.h' l='365' u='c'/>
+<use f='include/expat.h' l='378' u='c'/>
+<use f='include/expat.h' l='383' u='c'/>
+<use f='include/expat.h' l='396' u='c'/>
+<use f='include/expat.h' l='432' u='c'/>
+<use f='include/expat.h' l='449' u='c'/>
+<use f='include/expat.h' l='509' u='c'/>
+<use f='include/expat.h' l='510' u='c'/>
+<use f='include/expat.h' l='528' u='c'/>
+<doc f='include/expat_external.h' l='42'>/* For any platform which uses this definition and supports more than
+   one calling convention, we need to extend this definition to
+   declare the convention used on that platform, if it&apos;s possible to
+   do so.
+
+   If this is the case for your platform, please file a bug report
+   with information on how to identify your platform via the C
+   pre-processor and how to specify the same calling convention as the
+   platform&apos;s malloc() implementation.
+*/</doc>

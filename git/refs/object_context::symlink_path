@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1285' type='struct strbuf'/>
+<offset>192</offset>
+<doc f='codebrowser/cache.h' l='1281'>/*
+	 * symlink_path is only used by get_tree_entry_follow_symlinks,
+	 * and only for symlinks that point outside the repository.
+	 */</doc>
+<use f='codebrowser/builtin/cat-file.c' l='396' u='m' c='batch_one_object'/>
+<use f='codebrowser/builtin/cat-file.c' l='397' u='m' c='batch_one_object'/>
+<use f='codebrowser/sha1_name.c' l='1515' u='a' c='get_oid_with_context_1'/>
+<use f='codebrowser/sha1_name.c' l='1605' u='a' c='get_oid_with_context_1'/>

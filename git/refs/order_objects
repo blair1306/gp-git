@@ -1,0 +1,4 @@
+<dec f='codebrowser/diffcore.h' l='127' type='void order_objects(const char * orderfile, obj_path_fn_t obj_path, struct obj_order * objs, int nr)'/>
+<use f='codebrowser/combine-diff.c' l='1485' u='c' c='diff_tree_combined'/>
+<def f='codebrowser/diffcore-order.c' l='91' ll='105' type='void order_objects(const char * orderfile, obj_path_fn_t obj_path, struct obj_order * objs, int nr)'/>
+<use f='codebrowser/diffcore-order.c' l='126' u='c' c='diffcore_order'/>

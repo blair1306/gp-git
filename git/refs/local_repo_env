@@ -1,0 +1,17 @@
+<dec f='codebrowser/cache.h' l='465' type='const char *const []'/>
+<doc f='codebrowser/cache.h' l='459'>/*
+ * Repository-local GIT_* environment variables; these will be cleared
+ * when git spawns a sub-process that runs inside another repository.
+ * The array is NULL-terminated, which makes it easy to pass in the &quot;env&quot;
+ * parameter of a run-command invocation, or to do a simple walk.
+ */</doc>
+<use f='codebrowser/builtin/rev-parse.c' l='609' u='r' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/rev-parse.c' l='610' u='r' c='cmd_rev_parse'/>
+<use f='codebrowser/connect.c' l='840' u='r' c='git_connect'/>
+<def f='codebrowser/environment.c' l='107' ll='124' type='const char *const [16]'/>
+<doc f='codebrowser/environment.c' l='104'>/*
+ * Repository-local GIT_* environment variables; see cache.h for details.
+ */</doc>
+<use f='codebrowser/submodule.c' l='514' u='r' c='prepare_submodule_repo_env_no_git_dir'/>
+<use f='codebrowser/trailer.c' l='236' u='r' c='apply_command'/>
+<use f='codebrowser/transport.c' l='1229' u='r' c='read_alternate_refs'/>

@@ -1,0 +1,9 @@
+<def f='codebrowser/apply.c' l='268' ll='274'/>
+<size>16</size>
+<doc f='codebrowser/apply.c' l='263'>/*
+ * A line in a file, len-bytes long (includes the terminating LF,
+ * except for an incomplete line at the end if the file ends with
+ * one), and its contents hashes to &apos;hash&apos;.
+ */</doc>
+<def f='codebrowser/t/helper/test-mergesort.c' l='4' ll='7'/>
+<size>16</size>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>oidset.h source code [codebrowser/oidset.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="oidset "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/oidset.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='oidset.h.html'>oidset.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/OIDSET_H">OIDSET_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/OIDSET_H" data-ref="_M/OIDSET_H">OIDSET_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="5">5</th><td><i class="doc"> * This API is similar to sha1-array, in that it maintains a set of object ids</i></td></tr>
+<tr><th id="6">6</th><td><i class="doc"> * in a memory-efficient way. The major differences are:</i></td></tr>
+<tr><th id="7">7</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="8">8</th><td><i class="doc"> *   1. It uses a hash, so we can do online duplicate removal, rather than</i></td></tr>
+<tr><th id="9">9</th><td><i class="doc"> *      sort-and-uniq at the end. This can reduce memory footprint if you have</i></td></tr>
+<tr><th id="10">10</th><td><i class="doc"> *      a large list of oids with many duplicates.</i></td></tr>
+<tr><th id="11">11</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="12">12</th><td><i class="doc"> *   2. The per-unique-oid memory footprint is slightly higher due to hash</i></td></tr>
+<tr><th id="13">13</th><td><i class="doc"> *      table overhead.</i></td></tr>
+<tr><th id="14">14</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="17">17</th><td><i class="doc"> * A single oidset; should be zero-initialized (or use OIDSET_INIT).</i></td></tr>
+<tr><th id="18">18</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="19">19</th><td><b>struct</b> <dfn class="type def" id="oidset" title='oidset' data-ref="oidset">oidset</dfn> {</td></tr>
+<tr><th id="20">20</th><td>	<b>struct</b> <a class="type" href="hashmap.h.html#hashmap" title='hashmap' data-ref="hashmap">hashmap</a> <dfn class="decl" id="oidset::map" title='oidset::map' data-ref="oidset::map">map</dfn>;</td></tr>
+<tr><th id="21">21</th><td>};</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/OIDSET_INIT" data-ref="_M/OIDSET_INIT">OIDSET_INIT</dfn> { { NULL } }</u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="26">26</th><td><i class="doc"> * Returns true iff `set` contains `oid`.</i></td></tr>
+<tr><th id="27">27</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="28">28</th><td><em>int</em> <dfn class="decl" id="oidset_contains" title='oidset_contains' data-ref="oidset_contains">oidset_contains</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#oidset" title='oidset' data-ref="oidset">oidset</a> *<dfn class="local col1 decl" id="1set" title='set' data-type='const struct oidset *' data-ref="1set">set</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col2 decl" id="2oid" title='oid' data-type='const struct object_id *' data-ref="2oid">oid</dfn>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * Insert the oid into the set; a copy is made, so "oid" does not need</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * to persist after this function is called.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> * Returns 1 if the oid was already in the set, 0 otherwise. This can be used</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * to perform an efficient check-and-add.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="37">37</th><td><em>int</em> <dfn class="decl" id="oidset_insert" title='oidset_insert' data-ref="oidset_insert">oidset_insert</dfn>(<b>struct</b> <a class="type" href="#oidset" title='oidset' data-ref="oidset">oidset</a> *<dfn class="local col3 decl" id="3set" title='set' data-type='struct oidset *' data-ref="3set">set</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col4 decl" id="4oid" title='oid' data-type='const struct object_id *' data-ref="4oid">oid</dfn>);</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * Remove all entries from the oidset, freeing any resources associated with</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * it.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="43">43</th><td><em>void</em> <dfn class="decl" id="oidset_clear" title='oidset_clear' data-ref="oidset_clear">oidset_clear</dfn>(<b>struct</b> <a class="type" href="#oidset" title='oidset' data-ref="oidset">oidset</a> *<dfn class="local col5 decl" id="5set" title='set' data-type='struct oidset *' data-ref="5set">set</dfn>);</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#<span data-ppcond="1">endif</span> /* OIDSET_H */</u></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/receive-pack.c.html'>codebrowser/builtin/receive-pack.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

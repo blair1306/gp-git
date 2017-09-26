@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1941' type='void shift_tree(const struct object_id * , const struct object_id * , struct object_id * , int )'/>
+<doc f='codebrowser/cache.h' l='1940'>/* match-trees.c */</doc>
+<def f='codebrowser/match-trees.c' l='232' ll='284' type='void shift_tree(const struct object_id * hash1, const struct object_id * hash2, struct object_id * shifted, int depth_limit)'/>
+<doc f='codebrowser/match-trees.c' l='224'>/*
+ * We are trying to come up with a merge between one and two that
+ * results in a tree shape similar to one.  The tree two might
+ * correspond to a subtree of one, in which case it needs to be
+ * shifted down by prefixing otherwise empty directories.  On the
+ * other hand, it could cover tree one and we might need to pick a
+ * subtree of it.
+ */</doc>
+<use f='codebrowser/merge-recursive.c' l='64' u='c' c='shift_tree_object'/>
+<use f='codebrowser/t/helper/test-match-trees.c' l='22' u='c' c='cmd_main'/>

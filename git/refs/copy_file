@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1870' type='int copy_file(const char * dst, const char * src, int mode)'/>
+<use f='codebrowser/builtin/difftool.c' l='514' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='639' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/init-db.c' l='84' u='c' c='copy_templates_1'/>
+<def f='codebrowser/copy.c' l='31' ll='59' type='int copy_file(const char * dst, const char * src, int mode)'/>
+<use f='codebrowser/copy.c' l='63' u='c' c='copy_file_with_time'/>
+<use f='codebrowser/rerere.c' l='756' u='c' c='do_rerere_one_path'/>
+<use f='codebrowser/sequencer.c' l='1075' u='c' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1853' u='c' c='error_failed_squash'/>

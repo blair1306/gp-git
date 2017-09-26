@@ -1,0 +1,135 @@
+<dec f='codebrowser/run-command.h' l='33' type='int'/>
+<use f='codebrowser/archive-tar.c' l='454' u='w' c='write_tar_filter_archive'/>
+<use f='codebrowser/archive-tar.c' l='459' u='r' c='write_tar_filter_archive'/>
+<use f='codebrowser/archive-tar.c' l='461' u='r' c='write_tar_filter_archive'/>
+<offset>352</offset>
+<doc f='codebrowser/run-command.h' l='15'>/*
+	 * Using .in, .out, .err:
+	 * - Specify 0 for no redirections (child inherits stdin, stdout,
+	 *   stderr from parent).
+	 * - Specify -1 to have a pipe allocated as follows:
+	 *     .in: returns the writable pipe end; parent writes to it,
+	 *          the readable pipe end becomes child&apos;s stdin
+	 *     .out, .err: returns the readable pipe end; parent reads from
+	 *          it, the writable pipe end becomes child&apos;s stdout/stderr
+	 *   The caller of start_command() must close the returned FDs
+	 *   after it has completed reading from/writing to it!
+	 * - Specify &gt; 0 to set a channel to a particular FD as follows:
+	 *     .in: a readable FD, becomes child&apos;s stdin
+	 *     .out: a writable FD, becomes child&apos;s stdout/stderr
+	 *     .err: a writable FD, becomes child&apos;s stderr
+	 *   The specified FD is closed by start_command(), even in case
+	 *   of errors!
+	 */</doc>
+<use f='codebrowser/builtin/am.c' l='519' u='w' c='run_post_rewrite_hook'/>
+<use f='codebrowser/builtin/am.c' l='524' u='r' c='run_post_rewrite_hook'/>
+<use f='codebrowser/builtin/commit.c' l='1549' u='w' c='run_rewrite_hook'/>
+<use f='codebrowser/builtin/commit.c' l='1557' u='r' c='run_rewrite_hook'/>
+<use f='codebrowser/builtin/commit.c' l='1558' u='r' c='run_rewrite_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='703' u='w' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='745' u='r' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='748' u='r' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/remote-ext.c' l='145' u='w' c='run_child'/>
+<use f='codebrowser/builtin/remote-ext.c' l='154' u='r' c='run_child'/>
+<use f='codebrowser/builtin/remote-ext.c' l='156' u='r' c='run_child'/>
+<use f='codebrowser/builtin/replace.c' l='250' u='w' c='import_object'/>
+<use f='codebrowser/bundle.c' l='250' u='w' c='write_pack_data'/>
+<use f='codebrowser/bundle.c' l='259' u='r' c='write_pack_data'/>
+<use f='codebrowser/bundle.c' l='260' u='r' c='write_pack_data'/>
+<use f='codebrowser/bundle.c' l='261' u='r' c='write_pack_data'/>
+<use f='codebrowser/bundle.c' l='263' u='r' c='write_pack_data'/>
+<use f='codebrowser/bundle.c' l='490' u='w' c='unbundle'/>
+<use f='codebrowser/column.c' l='390' u='w' c='run_column_filter'/>
+<use f='codebrowser/column.c' l='399' u='r' c='run_column_filter'/>
+<use f='codebrowser/column.c' l='400' u='r' c='run_column_filter'/>
+<use f='codebrowser/connect.c' l='591' u='w' c='git_proxy_connect'/>
+<use f='codebrowser/connect.c' l='596' u='r' c='git_proxy_connect'/>
+<use f='codebrowser/connect.c' l='842' u='w' c='git_connect'/>
+<use f='codebrowser/connect.c' l='914' u='r' c='git_connect'/>
+<use f='codebrowser/connected.c' l='67' u='w' c='check_connected'/>
+<use f='codebrowser/connected.c' l='93' u='r' c='check_connected'/>
+<use f='codebrowser/connected.c' l='101' u='r' c='check_connected'/>
+<use f='codebrowser/convert.c' l='423' u='w' c='filter_buffer_or_fd'/>
+<use f='codebrowser/convert.c' l='432' u='r' c='filter_buffer_or_fd'/>
+<use f='codebrowser/convert.c' l='437' u='r' c='filter_buffer_or_fd'/>
+<use f='codebrowser/convert.c' l='442' u='r' c='filter_buffer_or_fd'/>
+<use f='codebrowser/convert.c' l='599' u='r' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='609' u='r' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='616' u='r' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='621' u='r' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='626' u='r' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='628' u='r' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='687' u='r' c='async_query_available_blobs'/>
+<use f='codebrowser/convert.c' l='691' u='r' c='async_query_available_blobs'/>
+<use f='codebrowser/credential.c' l='220' u='w' c='run_credential_helper'/>
+<use f='codebrowser/credential.c' l='229' u='r' c='run_credential_helper'/>
+<use f='codebrowser/daemon.c' l='867' u='w' c='handle'/>
+<use f='codebrowser/fast-import.c' l='990' u='w' c='loosen_small_pack'/>
+<use f='codebrowser/fetch-pack.c' l='874' u='w' c='get_pack'/>
+<use f='codebrowser/http-backend.c' l='413' u='w' c='run_service'/>
+<use f='codebrowser/http-backend.c' l='420' u='r' c='run_service'/>
+<use f='codebrowser/http-backend.c' l='422' u='r' c='run_service'/>
+<use f='codebrowser/imap-send.c' l='952' u='w' c='imap_open_store'/>
+<use f='codebrowser/imap-send.c' l='958' u='r' c='imap_open_store'/>
+<use f='codebrowser/pager.c' l='121' u='w' c='setup_pager'/>
+<use f='codebrowser/pager.c' l='127' u='r' c='setup_pager'/>
+<use f='codebrowser/pager.c' l='129' u='r' c='setup_pager'/>
+<use f='codebrowser/pager.c' l='130' u='r' c='setup_pager'/>
+<use f='codebrowser/remote-curl.c' l='706' u='w' c='rpc_service'/>
+<use f='codebrowser/remote-curl.c' l='713' u='r' c='rpc_service'/>
+<use f='codebrowser/remote-curl.c' l='715' u='r' c='rpc_service'/>
+<use f='codebrowser/remote-curl.c' l='719' u='r' c='rpc_service'/>
+<use f='codebrowser/remote-curl.c' l='741' u='r' c='rpc_service'/>
+<use f='codebrowser/remote-curl.c' l='742' u='w' c='rpc_service'/>
+<use f='codebrowser/run-command.c' l='575' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='584' u='w' c='start_command'/>
+<use f='codebrowser/run-command.c' l='595' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='596' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='609' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='610' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='682' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='683' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='684' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='832' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='833' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='849' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='850' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='1332' u='w' c='pipe_command'/>
+<use f='codebrowser/run-command.c' l='1342' u='r' c='pipe_command'/>
+<use f='codebrowser/send-pack.c' l='90' u='w' c='pack_objects'/>
+<use f='codebrowser/send-pack.c' l='100' u='r' c='pack_objects'/>
+<use f='codebrowser/sequencer.c' l='2165' u='w' c='pick_commits'/>
+<use f='codebrowser/sequencer.c' l='2176' u='w' c='pick_commits'/>
+<use f='codebrowser/sub-process.c' l='68' u='r' c='subprocess_exit_handler'/>
+<use f='codebrowser/sub-process.c' l='88' u='w' c='subprocess_start'/>
+<use f='codebrowser/sub-process.c' l='124' u='r' c='handshake_version'/>
+<use f='codebrowser/sub-process.c' l='128' u='r' c='handshake_version'/>
+<use f='codebrowser/sub-process.c' l='132' u='r' c='handshake_version'/>
+<use f='codebrowser/sub-process.c' l='167' u='r' c='handshake_capabilities'/>
+<use f='codebrowser/sub-process.c' l='171' u='r' c='handshake_capabilities'/>
+<use f='codebrowser/transport-helper.c' l='47' u='r' c='sendline'/>
+<use f='codebrowser/transport-helper.c' l='118' u='w' c='get_helper'/>
+<use f='codebrowser/transport-helper.c' l='151' u='r' c='get_helper'/>
+<use f='codebrowser/transport-helper.c' l='238' u='r' c='disconnect_helper'/>
+<use f='codebrowser/transport-helper.c' l='241' u='r' c='disconnect_helper'/>
+<use f='codebrowser/transport-helper.c' l='433' u='w' c='get_importer'/>
+<use f='codebrowser/transport-helper.c' l='438' u='r' c='get_importer'/>
+<use f='codebrowser/transport-helper.c' l='459' u='r' c='get_exporter'/>
+<use f='codebrowser/transport-helper.c' l='501' u='r' c='fetch_with_import'/>
+<use f='codebrowser/transport-helper.c' l='641' u='r' c='connect_helper'/>
+<use f='codebrowser/transport-helper.c' l='923' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='1042' u='r' c='get_refs_list'/>
+<use f='codebrowser/transport-helper.c' l='1044' u='r' c='get_refs_list'/>
+<use f='codebrowser/transport.c' l='625' u='r' c='transport_take_over'/>
+<use f='codebrowser/transport.c' l='922' u='w' c='run_pre_push_hook'/>
+<use f='codebrowser/transport.c' l='944' u='r' c='run_pre_push_hook'/>
+<use f='codebrowser/transport.c' l='954' u='r' c='run_pre_push_hook'/>
+<use f='codebrowser/upload-pack.c' l='135' u='w' c='create_pack_file'/>
+<use f='codebrowser/upload-pack.c' l='142' u='r' c='create_pack_file'/>
+<use f='codebrowser/upload-pack.c' l='482' u='w' c='do_reachable_revlist'/>
+<use f='codebrowser/upload-pack.c' l='506' u='r' c='do_reachable_revlist'/>
+<use f='codebrowser/upload-pack.c' l='520' u='r' c='do_reachable_revlist'/>
+<use f='codebrowser/upload-pack.c' l='523' u='r' c='do_reachable_revlist'/>
+<use f='codebrowser/upload-pack.c' l='524' u='w' c='do_reachable_revlist'/>
+<use f='codebrowser/upload-pack.c' l='532' u='r' c='do_reachable_revlist'/>
+<use f='codebrowser/upload-pack.c' l='533' u='r' c='do_reachable_revlist'/>

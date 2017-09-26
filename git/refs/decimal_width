@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1906' type='int decimal_width(uintmax_t )'/>
+<use f='codebrowser/builtin/blame.c' l='555' u='c' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='556' u='c' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='557' u='c' c='find_alignment'/>
+<use f='codebrowser/diff.c' l='1635' u='c' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1636' u='c' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1681' u='c' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1682' u='c' c='show_stats'/>
+<def f='codebrowser/pager.c' l='176' ll='183' type='int decimal_width(uintmax_t number)'/>
+<doc f='codebrowser/pager.c' l='173'>/*
+ * How many columns do we need to show this number in decimal?
+ */</doc>

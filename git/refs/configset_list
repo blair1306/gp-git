@@ -1,0 +1,11 @@
+<def f='codebrowser/config.h' l='141' ll='144'/>
+<size>16</size>
+<doc f='codebrowser/config.h' l='135'>/*
+ * the contents of the list are ordered according to their
+ * position in the config files and order of parsing the files.
+ * (i.e. key-value pair at the last position of .git/config will
+ * be at the last item of the list)
+ */</doc>
+<mbr r='configset_list::items' o='0' t='struct configset_list_item *'/>
+<mbr r='configset_list::nr' o='64' t='unsigned int'/>
+<mbr r='configset_list::alloc' o='96' t='unsigned int'/>

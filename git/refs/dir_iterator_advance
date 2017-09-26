@@ -1,0 +1,11 @@
+<dec f='codebrowser/dir-iterator.h' l='78' type='int dir_iterator_advance(struct dir_iterator * iterator)'/>
+<def f='codebrowser/dir-iterator.c' l='53' ll='162' type='int dir_iterator_advance(struct dir_iterator * dir_iterator)'/>
+<doc f='codebrowser/dir-iterator.h' l='70'>/*
+ * Advance the iterator to the first or next item and return ITER_OK.
+ * If the iteration is exhausted, free the dir_iterator and any
+ * resources associated with it and return ITER_DONE. On error, free
+ * dir_iterator and associated resources and return ITER_ERROR. It is
+ * a bug to use iterator or call this function again after it has
+ * returned ITER_DONE or ITER_ERROR.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2004' u='c' c='files_reflog_iterator_advance'/>

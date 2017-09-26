@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1969' type='void overlay_tree_on_index(struct index_state * istate, const char * tree_name, const char * prefix)'/>
+<doc f='codebrowser/cache.h' l='1968'>/* ls-files */</doc>
+<use f='codebrowser/builtin/commit.c' l='256' u='c' c='list_paths'/>
+<def f='codebrowser/builtin/ls-files.c' l='412' ll='464' type='void overlay_tree_on_index(struct index_state * istate, const char * tree_name, const char * prefix)'/>
+<use f='codebrowser/builtin/ls-files.c' l='663' u='c' c='cmd_ls_files'/>
+<doc f='codebrowser/builtin/ls-files.c' l='404'>/*
+ * Read the tree specified with --with-tree option
+ * (typically, HEAD) into stage #1 and then
+ * squash them down to stage #0.  This is used for
+ * --error-unmatch to list and check the path patterns
+ * that were given from the command line.  We are not
+ * going to write this index out.
+ */</doc>

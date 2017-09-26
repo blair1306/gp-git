@@ -1,0 +1,13 @@
+<dec f='codebrowser/remote.h' l='136' type='struct ref * find_ref_by_name(const struct ref * list, const char * name)'/>
+<use f='codebrowser/builtin/clone.c' l='526' u='c' c='find_remote_branch'/>
+<use f='codebrowser/builtin/clone.c' l='534' u='c' c='find_remote_branch'/>
+<use f='codebrowser/builtin/clone.c' l='543' u='c' c='wanted_peer_refs'/>
+<use f='codebrowser/builtin/clone.c' l='1132' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/remote.c' l='471' u='c' c='get_head_names'/>
+<def f='codebrowser/remote.c' l='1382' ll='1388' type='struct ref * find_ref_by_name(const struct ref * list, const char * name)'/>
+<use f='codebrowser/remote.c' l='2169' u='c' c='guess_remote_head'/>
+<use f='codebrowser/remote.c' l='2173' u='c' c='guess_remote_head'/>
+<use f='codebrowser/send-pack.c' l='183' u='c' c='receive_status'/>
+<use f='codebrowser/send-pack.c' l='185' u='c' c='receive_status'/>
+<use f='codebrowser/transport-helper.c' l='746' u='c' c='push_update_ref_status'/>
+<use f='codebrowser/transport-helper.c' l='748' u='c' c='push_update_ref_status'/>

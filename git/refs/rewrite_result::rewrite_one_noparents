@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='295' type='1'/>
+<use f='codebrowser/line-log.c' l='1221' u='r' c='line_log_rewrite_one'/>
+<use f='codebrowser/revision.c' l='2825' u='r' c='rewrite_one'/>
+<use f='codebrowser/revision.c' l='2841' c='rewrite_parents'/>

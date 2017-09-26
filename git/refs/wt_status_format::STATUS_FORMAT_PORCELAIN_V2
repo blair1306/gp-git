@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='54' type='4'/>
+<use f='codebrowser/builtin/commit.c' l='157' u='r' c='opt_parse_porcelain'/>
+<use f='codebrowser/builtin/commit.c' l='1116' u='r' c='finalize_deferred_config'/>
+<use f='codebrowser/wt-status.c' l='2243' c='wt_status_print'/>

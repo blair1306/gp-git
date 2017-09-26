@@ -1,0 +1,12 @@
+<def f='codebrowser/dir.h' l='126' ll='142'/>
+<size>184</size>
+<mbr r='untracked_cache::ss_info_exclude' o='0' t='struct sha1_stat'/>
+<mbr r='untracked_cache::ss_excludes_file' o='480' t='struct sha1_stat'/>
+<mbr r='untracked_cache::exclude_per_dir' o='960' t='const char *'/>
+<mbr r='untracked_cache::ident' o='1024' t='struct strbuf'/>
+<mbr r='untracked_cache::dir_flags' o='1216' t='unsigned int'/>
+<mbr r='untracked_cache::root' o='1280' t='struct untracked_cache_dir *'/>
+<mbr r='untracked_cache::dir_created' o='1344' t='int'/>
+<mbr r='untracked_cache::gitignore_invalidated' o='1376' t='int'/>
+<mbr r='untracked_cache::dir_invalidated' o='1408' t='int'/>
+<mbr r='untracked_cache::dir_opened' o='1440' t='int'/>

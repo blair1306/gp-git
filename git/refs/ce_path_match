@@ -1,0 +1,14 @@
+<def f='codebrowser/dir.h' l='326' ll='332' type='int ce_path_match(const struct cache_entry * ce, const struct pathspec * pathspec, char * seen)'/>
+<use f='codebrowser/builtin/add.c' l='42' u='c' c='chmod_pathspec'/>
+<use f='codebrowser/builtin/checkout.c' l='321' u='c' c='checkout_paths'/>
+<use f='codebrowser/builtin/commit.c' l='267' u='c' c='list_paths'/>
+<use f='codebrowser/builtin/rm.c' l='283' u='c' c='cmd_rm'/>
+<use f='codebrowser/builtin/update-index.c' l='734' u='c' c='do_reupdate'/>
+<use f='codebrowser/diff-lib.c' l='109' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='468' u='c' c='oneway_diff'/>
+<use f='codebrowser/pathspec.c' l='40' u='c' c='add_pathspec_matches_against_index'/>
+<use f='codebrowser/preload-index.c' l='58' u='c' c='preload_thread'/>
+<use f='codebrowser/read-cache.c' l='1362' u='c' c='refresh_index'/>
+<use f='codebrowser/resolve-undo.c' l='188' u='c' c='unmerge_index'/>
+<use f='codebrowser/revision.c' l='1414' u='c' c='prepare_show_merge'/>
+<use f='codebrowser/wt-status.c' l='623' u='c' c='wt_status_collect_changes_initial'/>

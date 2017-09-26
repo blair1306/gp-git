@@ -1,0 +1,10 @@
+<dec f='codebrowser/diff.h' l='149' type='int'/>
+<offset>1120</offset>
+<use f='codebrowser/diff-lib.c' l='216' u='r' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='388' u='r' c='do_oneway_diff'/>
+<use f='codebrowser/diff-lib.c' l='550' u='w' c='index_differs_from'/>
+<use f='codebrowser/diff.c' l='3992' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3994' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/wt-status.c' l='565' u='w' c='wt_status_collect_changes_worktree'/>
+<use f='codebrowser/wt-status.c' l='589' u='w' c='wt_status_collect_changes_index'/>
+<use f='codebrowser/wt-status.c' l='955' u='w' c='wt_longstatus_print_verbose'/>

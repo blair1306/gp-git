@@ -1,0 +1,2 @@
+<dec f='include/openssl/ssl.h' l='2339' type='long SSL_CTX_ctrl(SSL_CTX * ctx, int cmd, long larg, void * parg)'/>
+<use f='codebrowser/imap-send.c' l='304' macro='1' u='c'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/streaming.c' l='70' type='0'/>
+<use f='codebrowser/streaming.c' l='371' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='449' u='r' c='open_istream_pack_non_delta'/>

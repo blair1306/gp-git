@@ -1,0 +1,4 @@
+<dec f='codebrowser/hashmap.h' l='110' type='unsigned int strihash(const char * buf)'/>
+<def f='codebrowser/hashmap.c' l='18' ll='27' type='unsigned int strihash(const char * str)'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='170' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='180' u='c' c='cmd_main'/>

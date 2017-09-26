@@ -1,0 +1,19 @@
+<dec f='codebrowser/cache.h' l='478' type='char *'/>
+<use f='codebrowser/builtin/init-db.c' l='564' u='w' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='567' u='r' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='568' u='w' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='572' u='r' c='cmd_init_db'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1011' u='r' c='update_worktree'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1011' u='r' c='update_worktree'/>
+<def f='codebrowser/environment.c' l='98' type='char *'/>
+<doc f='codebrowser/environment.c' l='97'>/* This is set by setup_git_dir_gently() and/or git_default_config() */</doc>
+<use f='codebrowser/setup.c' l='479' u='r' c='check_repository_format_gently'/>
+<use f='codebrowser/setup.c' l='480' u='w' c='check_repository_format_gently'/>
+<use f='codebrowser/setup.c' l='664' u='r' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='675' u='r' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='676' u='r' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='677' u='r' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='682' u='r' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='683' u='r' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='734' u='r' c='setup_discovered_git_dir'/>
+<use f='codebrowser/setup.c' l='784' u='r' c='setup_bare_git_dir'/>

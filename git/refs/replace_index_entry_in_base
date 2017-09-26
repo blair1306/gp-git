@@ -1,0 +1,3 @@
+<dec f='codebrowser/split-index.h' l='22' type='void replace_index_entry_in_base(struct index_state * istate, struct cache_entry * old, struct cache_entry * new)'/>
+<use f='codebrowser/read-cache.c' l='60' u='c' c='replace_index_entry'/>
+<def f='codebrowser/split-index.c' l='305' ll='318' type='void replace_index_entry_in_base(struct index_state * istate, struct cache_entry * old, struct cache_entry * new)'/>

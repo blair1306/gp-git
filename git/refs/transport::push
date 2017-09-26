@@ -1,0 +1,5 @@
+<dec f='codebrowser/transport.h' l='106' type='int (*)(struct transport *, int, const char **, int)'/>
+<offset>640</offset>
+<use f='codebrowser/transport.c' l='632' u='w' c='transport_take_over'/>
+<use f='codebrowser/transport.c' l='974' u='r' c='transport_push'/>
+<use f='codebrowser/transport.c' l='979' u='r' c='transport_push'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='255' type='void diff_change(struct diff_options * , unsigned int mode1, unsigned int mode2, const struct object_id * old_oid, const struct object_id * new_oid, int old_oid_valid, int new_oid_valid, const char * fullpath, unsigned int dirty_submodule1, unsigned int dirty_submodule2)'/>
+<use f='codebrowser/diff-lib.c' l='237' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='368' u='c' c='show_modified'/>
+<use f='codebrowser/diff.c' l='3385' u='r' c='diff_setup'/>
+<def f='codebrowser/diff.c' l='5115' ll='5157' type='void diff_change(struct diff_options * options, unsigned int old_mode, unsigned int new_mode, const struct object_id * old_oid, const struct object_id * new_oid, int old_oid_valid, int new_oid_valid, const char * concatpath, unsigned int old_dirty_submodule, unsigned int new_dirty_submodule)'/>

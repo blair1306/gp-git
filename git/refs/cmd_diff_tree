@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='160' type='int cmd_diff_tree(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/diff-tree.c' l='100' ll='187' type='int cmd_diff_tree(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='395'/>
+<use f='codebrowser/git.c' l='395'/>
+<use f='codebrowser/git.c' l='395'/>
+<use f='codebrowser/git.c' l='395'/>

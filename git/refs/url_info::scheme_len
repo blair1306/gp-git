@@ -1,0 +1,10 @@
+<dec f='codebrowser/urlmatch.h' l='13' type='size_t'/>
+<offset>192</offset>
+<doc f='codebrowser/urlmatch.h' l='13'>/* length of scheme name (excluding final :) */</doc>
+<use f='codebrowser/urlmatch.c' l='418' u='w' c='url_normalize_1'/>
+<use f='codebrowser/urlmatch.c' l='498' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='498' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='499' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='499' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='499' u='r' c='match_urls'/>
+<use f='codebrowser/urlmatch.c' l='499' u='r' c='match_urls'/>

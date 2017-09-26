@@ -1,0 +1,30 @@
+<dec f='codebrowser/pkt-line.h' l='23' type='void packet_write_fmt(int fd, const char * fmt)'/>
+<use f='codebrowser/builtin/archive.c' l='50' u='c' c='run_remote_archiver'/>
+<use f='codebrowser/builtin/archive.c' l='53' u='c' c='run_remote_archiver'/>
+<use f='codebrowser/builtin/receive-pack.c' l='232' u='c' c='show_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='247' u='c' c='show_ref'/>
+<use f='codebrowser/builtin/remote-ext.c' l='134' u='c' c='send_git_request'/>
+<use f='codebrowser/builtin/remote-ext.c' l='136' u='c' c='send_git_request'/>
+<use f='codebrowser/builtin/upload-archive.c' l='94' u='c' c='cmd_upload_archive'/>
+<use f='codebrowser/builtin/upload-archive.c' l='98' u='c' c='cmd_upload_archive'/>
+<use f='codebrowser/connect.c' l='823' u='c' c='git_connect'/>
+<use f='codebrowser/daemon.c' l='298' u='c' c='daemon_error'/>
+<use f='codebrowser/http-backend.c' l='468' u='c' c='get_info_refs'/>
+<def f='codebrowser/pkt-line.c' l='154' ll='161' type='void packet_write_fmt(int fd, const char * fmt)'/>
+<use f='codebrowser/shallow.c' l='341' u='c' c='advertise_shallow_grafts_cb'/>
+<use f='codebrowser/upload-pack.c' l='404' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='407' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='410' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='427' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='429' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='436' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='438' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='440' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='448' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='451' u='c' c='get_common_commits'/>
+<use f='codebrowser/upload-pack.c' l='644' u='c' c='send_shallow'/>
+<use f='codebrowser/upload-pack.c' l='661' u='c' c='send_unshallow'/>
+<use f='codebrowser/upload-pack.c' l='827' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='943' u='c' c='send_ref'/>
+<use f='codebrowser/upload-pack.c' l='955' u='c' c='send_ref'/>
+<use f='codebrowser/upload-pack.c' l='959' u='c' c='send_ref'/>

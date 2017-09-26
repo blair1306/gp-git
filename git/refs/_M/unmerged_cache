@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='371'/>
+<use f='codebrowser/builtin/am.c' l='1909' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='499' u='c'/>
+<use f='codebrowser/builtin/reset.c' l='185' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='287' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='1945' u='c'/>

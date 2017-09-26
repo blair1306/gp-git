@@ -1,0 +1,9 @@
+<dec f='codebrowser/common-cmds.h' l='5' type='unsigned char'/>
+<use f='codebrowser/help.c' l='198' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='198' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='200' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='200' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='220' u='r' c='list_common_cmds_help'/>
+<use f='codebrowser/help.c' l='221' u='r' c='list_common_cmds_help'/>
+<use f='codebrowser/help.c' l='222' u='r' c='list_common_cmds_help'/>
+<offset>768</offset>

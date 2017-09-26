@@ -1,0 +1,13 @@
+<dec f='include/curl/curl.h' l='2356' type='const char * curl_easy_strerror(CURLcode )'/>
+<doc f='include/curl/curl.h' l='2347'>/*
+ * NAME curl_easy_strerror()
+ *
+ * DESCRIPTION
+ *
+ * The curl_easy_strerror function may be used to turn a CURLcode value
+ * into the equivalent human readable error string.  This is useful
+ * for printing meaningful error messages.
+ */</doc>
+<use f='codebrowser/http.c' l='1412' u='c' c='handle_curl_result'/>
+<use f='codebrowser/http.c' l='2122' u='c' c='fwrite_sha1_file'/>
+<use f='codebrowser/imap-send.c' l='1482' u='c' c='curl_append_msgs_to_imap'/>

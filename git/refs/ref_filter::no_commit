@@ -1,0 +1,28 @@
+<dec f='codebrowser/ref-filter.h' l='56' type='struct commit_list *'/>
+<use f='codebrowser/builtin/branch.c' l='572' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='572' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='574' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='574' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='572' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='572' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='574' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='574' u='a' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='631' u='r' c='cmd_branch'/>
+<offset>320</offset>
+<use f='codebrowser/builtin/for-each-ref.c' l='47' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='47' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='47' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='47' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='400' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='400' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='402' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='402' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='400' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='400' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='402' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='402' u='a' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='437' u='r' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='477' u='r' c='cmd_tag'/>
+<use f='codebrowser/ref-filter.c' l='1860' u='r' c='ref_filter_handler'/>
+<use f='codebrowser/ref-filter.c' l='1869' u='r' c='ref_filter_handler'/>
+<use f='codebrowser/ref-filter.c' l='1870' u='r' c='ref_filter_handler'/>

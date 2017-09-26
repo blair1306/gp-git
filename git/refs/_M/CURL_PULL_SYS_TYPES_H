@@ -1,0 +1,4 @@
+<dec f='include/curl/curlbuild.h' l='129'/>
+<use f='include/curl/curlbuild.h' l='130' u='a'/>
+<use f='include/curl/curlrules.h' l='249' u='w'/>
+<doc f='include/curl/curlbuild.h' l='128'>/* header file sys/types.h must be included by the external interface. */</doc>

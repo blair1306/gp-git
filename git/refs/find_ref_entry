@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs/ref-cache.h' l='242' type='struct ref_entry * find_ref_entry(struct ref_dir * dir, const char * refname)'/>
+<doc f='codebrowser/refs/ref-cache.h' l='237'>/*
+ * Find the value entry with the given name in dir, sorting ref_dirs
+ * and recursing into subdirectories as necessary.  If the name is not
+ * found or it corresponds to a directory entry, return NULL.
+ */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='346' u='c' c='add_packed_ref'/>
+<use f='codebrowser/refs/packed-backend.c' l='365' u='c' c='get_packed_ref'/>
+<def f='codebrowser/refs/ref-cache.c' l='202' ll='214' type='struct ref_entry * find_ref_entry(struct ref_dir * dir, const char * refname)'/>

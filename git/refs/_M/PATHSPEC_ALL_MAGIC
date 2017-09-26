@@ -1,0 +1,7 @@
+<dec f='codebrowser/pathspec.h' l='12'/>
+<use f='codebrowser/blame.c' l='551' u='c'/>
+<use f='codebrowser/builtin/check-ignore.c' l='90' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='438' u='c'/>
+<use f='codebrowser/builtin/ls-tree.c' l='177' u='c'/>
+<use f='codebrowser/revision.c' l='1425' u='c'/>
+<use f='codebrowser/tree-diff.c' l='645' u='c'/>

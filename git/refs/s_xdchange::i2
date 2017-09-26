@@ -1,0 +1,34 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='42' type='long'/>
+<offset>128</offset>
+<use f='codebrowser/xdiff/xdiffi.c' l='394' u='w' c='xdl_add_change'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='990' u='r' c='xdl_call_hunk_func'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='990' u='r' c='xdl_call_hunk_func'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='990' u='r' c='xdl_call_hunk_func'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1010' u='r' c='xdl_mark_ignorable'/>
+<use f='codebrowser/xdiff/xemit.c' l='174' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='174' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='182' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='214' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='214' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='217' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='264' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='268' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='272' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='286' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='286' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='293' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='299' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xmerge.c' l='373' u='r' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='389' u='r' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='501' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='502' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='516' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='517' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='532' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='533' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='540' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='541' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='549' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='550' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='575' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='592' u='r' c='xdl_do_merge'/>

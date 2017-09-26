@@ -1,0 +1,6 @@
+<def f='codebrowser/remote.h' l='282' ll='291'/>
+<size>24</size>
+<mbr r='push_cas_option::use_tracking_for_rest' o='0' t='unsigned int'/>
+<mbr r='push_cas_option::entry' o='64' t='struct push_cas *'/>
+<mbr r='push_cas_option::nr' o='128' t='int'/>
+<mbr r='push_cas_option::alloc' o='160' t='int'/>

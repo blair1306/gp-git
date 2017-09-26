@@ -1,0 +1,30 @@
+<dec f='codebrowser/rerere.h' l='33' type='const char * rerere_path(const struct rerere_id * , const char * file)'/>
+<doc f='codebrowser/rerere.h' l='27'>/*
+ * Given the conflict ID and the name of a &quot;file&quot; used for replaying
+ * the recorded resolution (e.g. &quot;preimage&quot;, &quot;postimage&quot;), return the
+ * path to that filesystem entity.  With &quot;file&quot; specified with NULL,
+ * return the path to the directory that houses these files.
+ */</doc>
+<use f='codebrowser/builtin/rerere.c' l='109' u='c' c='cmd_rerere'/>
+<use f='codebrowser/builtin/rerere.c' l='110' u='c' c='cmd_rerere'/>
+<def f='codebrowser/rerere.c' l='83' ll='93' type='const char * rerere_path(const struct rerere_id * id, const char * file)'/>
+<use f='codebrowser/rerere.c' l='635' u='c' c='try_merge'/>
+<use f='codebrowser/rerere.c' l='636' u='c' c='try_merge'/>
+<use f='codebrowser/rerere.c' l='672' u='c' c='merge'/>
+<use f='codebrowser/rerere.c' l='673' u='c' c='merge'/>
+<use f='codebrowser/rerere.c' l='686' u='c' c='merge'/>
+<use f='codebrowser/rerere.c' l='688' u='c' c='merge'/>
+<use f='codebrowser/rerere.c' l='731' u='c' c='remove_variant'/>
+<use f='codebrowser/rerere.c' l='732' u='c' c='remove_variant'/>
+<use f='codebrowser/rerere.c' l='756' u='c' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='804' u='c' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='806' u='c' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='851' u='c' c='do_plain_rerere'/>
+<use f='codebrowser/rerere.c' l='1052' u='c' c='rerere_forget_one_path'/>
+<use f='codebrowser/rerere.c' l='1053' u='c' c='rerere_forget_one_path'/>
+<use f='codebrowser/rerere.c' l='1070' u='c' c='rerere_forget_one_path'/>
+<use f='codebrowser/rerere.c' l='1084' u='c' c='rerere_forget_one_path'/>
+<use f='codebrowser/rerere.c' l='1140' u='c' c='rerere_created_at'/>
+<use f='codebrowser/rerere.c' l='1147' u='c' c='rerere_last_used_at'/>
+<use f='codebrowser/rerere.c' l='1155' u='c' c='unlink_rr_item'/>
+<use f='codebrowser/rerere.c' l='1248' u='c' c='rerere_clear'/>

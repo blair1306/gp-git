@@ -1,0 +1,7 @@
+<def f='codebrowser/ewah/ewok_rlw.h' l='56' ll='60' type='void rlw_set_running_len(eword_t * word, eword_t l)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='77' u='c' c='add_empty_words'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='84' u='c' c='add_empty_words'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='93' u='c' c='add_empty_words'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='177' u='c' c='add_empty_word'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='190' u='c' c='add_empty_word'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='229' u='c' c='ewah_set'/>

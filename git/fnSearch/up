@@ -1,0 +1,8 @@
+update_main_cache_tree|update_main_cache_tree
+update_index_if_able|update_index_if_able
+update_ref|update_ref
+update_ref_oid|update_ref_oid
+update_server_info|update_server_info
+update_path_in_gitmodules|update_path_in_gitmodules
+update_tree_entry|update_tree_entry
+update_tree_entry_gently|update_tree_entry_gently

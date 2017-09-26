@@ -1,0 +1,9 @@
+<dec f='codebrowser/diff.h' l='142' type='int'/>
+<offset>896</offset>
+<use f='codebrowser/diff.c' l='3377' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='3481' u='r' c='diff_setup_done'/>
+<use f='codebrowser/diff.c' l='3482' u='w' c='diff_setup_done'/>
+<use f='codebrowser/diff.c' l='4000' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diffcore-rename.c' l='383' u='r' c='too_many_rename_candidates'/>
+<use f='codebrowser/merge-recursive.c' l='525' u='w' c='get_renames'/>
+<use f='codebrowser/wt-status.c' l='608' u='w' c='wt_status_collect_changes_index'/>

@@ -1,0 +1,13 @@
+<def f='codebrowser/xdiff/xtypes.h' l='48' ll='59'/>
+<size>136</size>
+<mbr r='s_xdfile::rcha' o='0' t='chastore_t'/>
+<mbr r='s_xdfile::nrec' o='448' t='long'/>
+<mbr r='s_xdfile::hbits' o='512' t='unsigned int'/>
+<mbr r='s_xdfile::rhash' o='576' t='xrecord_t **'/>
+<mbr r='s_xdfile::dstart' o='640' t='long'/>
+<mbr r='s_xdfile::dend' o='704' t='long'/>
+<mbr r='s_xdfile::recs' o='768' t='xrecord_t **'/>
+<mbr r='s_xdfile::rchg' o='832' t='char *'/>
+<mbr r='s_xdfile::rindex' o='896' t='long *'/>
+<mbr r='s_xdfile::nreff' o='960' t='long'/>
+<mbr r='s_xdfile::ha' o='1024' t='unsigned long *'/>

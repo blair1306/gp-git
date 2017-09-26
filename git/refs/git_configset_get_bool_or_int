@@ -1,0 +1,3 @@
+<dec f='codebrowser/config.h' l='162' type='int git_configset_get_bool_or_int(struct config_set * cs, const char * key, int * is_bool, int * dest)'/>
+<def f='codebrowser/config.c' l='1845' ll='1854' type='int git_configset_get_bool_or_int(struct config_set * cs, const char * key, int * is_bool, int * dest)'/>
+<use f='codebrowser/config.c' l='1985' u='c' c='repo_config_get_bool_or_int'/>

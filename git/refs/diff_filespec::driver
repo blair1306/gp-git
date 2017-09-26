@@ -1,0 +1,12 @@
+<dec f='codebrowser/diffcore.h' l='50' type='struct userdiff_driver *'/>
+<offset>576</offset>
+<use f='codebrowser/diff.c' l='1143' u='r' c='diff_filespec_load_driver'/>
+<use f='codebrowser/diff.c' l='1147' u='w' c='diff_filespec_load_driver'/>
+<use f='codebrowser/diff.c' l='1150' u='r' c='diff_filespec_load_driver'/>
+<use f='codebrowser/diff.c' l='1151' u='w' c='diff_filespec_load_driver'/>
+<use f='codebrowser/diff.c' l='1157' u='r' c='userdiff_word_regex'/>
+<use f='codebrowser/diff.c' l='2294' u='r' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2295' u='r' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2312' u='r' c='diff_funcname_pattern'/>
+<use f='codebrowser/diff.c' l='2312' u='r' c='diff_funcname_pattern'/>
+<use f='codebrowser/diff.c' l='2329' u='r' c='get_textconv'/>

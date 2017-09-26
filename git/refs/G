@@ -1,0 +1,10 @@
+<dec f='codebrowser/ctype.c' l='12' type='8'/>
+<use f='codebrowser/ctype.c' l='23' u='r'/>
+<use f='codebrowser/ctype.c' l='24' u='r'/>
+<use f='codebrowser/ctype.c' l='26' u='r'/>
+<use f='codebrowser/ctype.c' l='26' u='r'/>
+<use f='codebrowser/ctype.c' l='23' u='r'/>
+<use f='codebrowser/ctype.c' l='24' u='r'/>
+<use f='codebrowser/ctype.c' l='26' u='r'/>
+<use f='codebrowser/ctype.c' l='26' u='r'/>
+<doc f='codebrowser/ctype.c' l='12'>/* *, ?, [, \\ */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/sys/mman.h' l='44'/>
+<use f='codebrowser/git-compat-util.h' l='581' u='a'/>
+<doc f='include/x86_64-linux-gnu/sys/mman.h' l='43'>/* Return value of `mmap&apos; in case of an error.  */</doc>
+<use f='codebrowser/config.c' l='2553' u='c'/>
+<use f='codebrowser/read-cache.c' l='1757' u='c'/>
+<use f='codebrowser/sha1_file.c' l='935' u='c'/>
+<use f='codebrowser/sha1_file.c' l='948' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1275' u='c'/>
+<use f='codebrowser/t/helper/test-delta.c' l='37' u='c'/>
+<use f='codebrowser/t/helper/test-delta.c' l='51' u='c'/>

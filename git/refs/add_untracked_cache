@@ -1,0 +1,4 @@
+<dec f='codebrowser/dir.h' l='354' type='void add_untracked_cache(struct index_state * istate)'/>
+<use f='codebrowser/builtin/update-index.c' l='1143' u='c' c='cmd_update_index'/>
+<def f='codebrowser/dir.c' l='1989' ll='1999' type='void add_untracked_cache(struct index_state * istate)'/>
+<use f='codebrowser/read-cache.c' l='1696' u='c' c='tweak_untracked_cache'/>

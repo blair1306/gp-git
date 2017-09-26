@@ -1,0 +1,5 @@
+<dec f='codebrowser/dir.h' l='139' type='int'/>
+<offset>1376</offset>
+<use f='codebrowser/dir.c' l='727' u='w' c='invalidate_gitignore'/>
+<use f='codebrowser/dir.c' l='2145' u='r' c='read_directory'/>
+<use f='codebrowser/dir.c' l='2150' u='r' c='read_directory'/>

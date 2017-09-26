@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='662' type='int add_to_index(struct index_state * , const char * path, struct stat * , int flags)'/>
+<doc f='codebrowser/cache.h' l='653'>/*
+ * These two are used to add the contents of the file at path
+ * to the index, marking the working tree up-to-date by storing
+ * the cached stat info in the resulting cache entry.  A caller
+ * that has already run lstat(2) on the path can call
+ * add_to_index(), and all others can call add_file_to_index();
+ * the latter will do necessary lstat(2) internally before
+ * calling the former.
+ */</doc>
+<use f='codebrowser/builtin/commit.c' l='291' macro='1' u='c'/>
+<def f='codebrowser/read-cache.c' l='629' ll='718' type='int add_to_index(struct index_state * istate, const char * path, struct stat * st, int flags)'/>
+<use f='codebrowser/read-cache.c' l='725' u='c' c='add_file_to_index'/>

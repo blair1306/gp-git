@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>shortlog.h source code [codebrowser/shortlog.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="shortlog "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/shortlog.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='shortlog.h.html'>shortlog.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/SHORTLOG_H">SHORTLOG_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/SHORTLOG_H" data-ref="_M/SHORTLOG_H">SHORTLOG_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="string-list.h.html">"string-list.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <dfn class="type def" id="shortlog" title='shortlog' data-ref="shortlog">shortlog</dfn> {</td></tr>
+<tr><th id="7">7</th><td>	<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> <dfn class="decl" id="shortlog::list" title='shortlog::list' data-ref="shortlog::list">list</dfn>;</td></tr>
+<tr><th id="8">8</th><td>	<em>int</em> <dfn class="decl" id="shortlog::summary" title='shortlog::summary' data-ref="shortlog::summary">summary</dfn>;</td></tr>
+<tr><th id="9">9</th><td>	<em>int</em> <dfn class="decl" id="shortlog::wrap_lines" title='shortlog::wrap_lines' data-ref="shortlog::wrap_lines">wrap_lines</dfn>;</td></tr>
+<tr><th id="10">10</th><td>	<em>int</em> <dfn class="decl" id="shortlog::sort_by_number" title='shortlog::sort_by_number' data-ref="shortlog::sort_by_number">sort_by_number</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	<em>int</em> <dfn class="decl" id="shortlog::wrap" title='shortlog::wrap' data-ref="shortlog::wrap">wrap</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<em>int</em> <dfn class="decl" id="shortlog::in1" title='shortlog::in1' data-ref="shortlog::in1">in1</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<em>int</em> <dfn class="decl" id="shortlog::in2" title='shortlog::in2' data-ref="shortlog::in2">in2</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>int</em> <dfn class="decl" id="shortlog::user_format" title='shortlog::user_format' data-ref="shortlog::user_format">user_format</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<em>int</em> <dfn class="decl" id="shortlog::abbrev" title='shortlog::abbrev' data-ref="shortlog::abbrev">abbrev</dfn>;</td></tr>
+<tr><th id="16">16</th><td>	<em>int</em> <dfn class="decl" id="shortlog::committer" title='shortlog::committer' data-ref="shortlog::committer">committer</dfn>;</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td>	<em>char</em> *<dfn class="decl" id="shortlog::common_repo_prefix" title='shortlog::common_repo_prefix' data-ref="shortlog::common_repo_prefix">common_repo_prefix</dfn>;</td></tr>
+<tr><th id="19">19</th><td>	<em>int</em> <dfn class="decl" id="shortlog::email" title='shortlog::email' data-ref="shortlog::email">email</dfn>;</td></tr>
+<tr><th id="20">20</th><td>	<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> <dfn class="decl" id="shortlog::mailmap" title='shortlog::mailmap' data-ref="shortlog::mailmap">mailmap</dfn>;</td></tr>
+<tr><th id="21">21</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="shortlog::file" title='shortlog::file' data-ref="shortlog::file">file</dfn>;</td></tr>
+<tr><th id="22">22</th><td>};</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><em>void</em> <dfn class="decl" id="shortlog_init" title='shortlog_init' data-ref="shortlog_init">shortlog_init</dfn>(<b>struct</b> <a class="type" href="#shortlog" title='shortlog' data-ref="shortlog">shortlog</a> *<dfn class="local col1 decl" id="21log" title='log' data-type='struct shortlog *' data-ref="21log">log</dfn>);</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><em>void</em> <dfn class="decl" id="shortlog_add_commit" title='shortlog_add_commit' data-ref="shortlog_add_commit">shortlog_add_commit</dfn>(<b>struct</b> <a class="type" href="#shortlog" title='shortlog' data-ref="shortlog">shortlog</a> *<dfn class="local col2 decl" id="22log" title='log' data-type='struct shortlog *' data-ref="22log">log</dfn>, <b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col3 decl" id="23commit" title='commit' data-type='struct commit *' data-ref="23commit">commit</dfn>);</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><em>void</em> <dfn class="decl" id="shortlog_output" title='shortlog_output' data-ref="shortlog_output">shortlog_output</dfn>(<b>struct</b> <a class="type" href="#shortlog" title='shortlog' data-ref="shortlog">shortlog</a> *<dfn class="local col4 decl" id="24log" title='log' data-type='struct shortlog *' data-ref="24log">log</dfn>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/log.c.html'>codebrowser/builtin/log.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

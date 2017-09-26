@@ -1,0 +1,6 @@
+<dec f='codebrowser/git-compat-util.h' l='918' type='const unsigned char [256]'/>
+<doc f='codebrowser/git-compat-util.h' l='917'>/* in ctype.c, for kwset users */</doc>
+<def f='codebrowser/ctype.c' l='33' ll='66' type='const unsigned char [256]'/>
+<doc f='codebrowser/ctype.c' l='32'>/* For case-insensitive kwset */</doc>
+<use f='codebrowser/diffcore-pickaxe.c' l='240' u='r' c='diffcore_pickaxe'/>
+<use f='codebrowser/grep.c' l='641' u='r' c='compile_regexp'/>

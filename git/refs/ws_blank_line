@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1965' type='int ws_blank_line(const char * line, int len, unsigned int ws_rule)'/>
+<use f='codebrowser/apply.c' l='2892' u='c' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='2920' u='c' c='apply_one_fragment'/>
+<use f='codebrowser/diff.c' l='487' u='c' c='count_trailing_blank'/>
+<use f='codebrowser/diff.c' l='565' u='c' c='new_blank_line_at_eof'/>
+<def f='codebrowser/ws.c' l='260' ll='273' type='int ws_blank_line(const char * line, int len, unsigned int ws_rule)'/>

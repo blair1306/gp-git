@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>line-range.h source code [codebrowser/line-range.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/line-range.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='line-range.h.html'>line-range.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/LINE_RANGE_H">LINE_RANGE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/LINE_RANGE_H" data-ref="_M/LINE_RANGE_H">LINE_RANGE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/*</i></td></tr>
+<tr><th id="5">5</th><td><i> * Parse one item in an -L begin,end option w.r.t. the notional file</i></td></tr>
+<tr><th id="6">6</th><td><i> * object 'cb_data' consisting of 'lines' lines.</i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> * The 'nth_line_cb' callback is used to determine the start of the</i></td></tr>
+<tr><th id="9">9</th><td><i> * line 'lno' inside the 'cb_data'.  The caller is expected to already</i></td></tr>
+<tr><th id="10">10</th><td><i> * have a suitable map at hand to make this a constant-time lookup.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * 'anchor' is the 1-based line at which relative range specifications</i></td></tr>
+<tr><th id="13">13</th><td><i> * should be anchored. Absolute ranges are unaffected by this value.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * Returns 0 in case of success and -1 if there was an error.  The</i></td></tr>
+<tr><th id="16">16</th><td><i> * actual range is stored in *begin and *end.  The counting starts</i></td></tr>
+<tr><th id="17">17</th><td><i> * at 1!  In case of error, the caller should show usage message.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><b>typedef</b> <em>const</em> <em>char</em> *(*<dfn class="typedef" id="nth_line_fn_t" title='nth_line_fn_t' data-type='const char *(*)(void *, long)' data-ref="nth_line_fn_t">nth_line_fn_t</dfn>)(<em>void</em> *<dfn class="local col9 decl" id="9data" title='data' data-type='void *' data-ref="9data">data</dfn>, <em>long</em> <dfn class="local col0 decl" id="10lno" title='lno' data-type='long' data-ref="10lno">lno</dfn>);</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_range_arg" title='parse_range_arg' data-ref="parse_range_arg">parse_range_arg</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="11arg" title='arg' data-type='const char *' data-ref="11arg">arg</dfn>,</td></tr>
+<tr><th id="23">23</th><td>			   <a class="typedef" href="#nth_line_fn_t" title='nth_line_fn_t' data-type='const char *(*)(void *, long)' data-ref="nth_line_fn_t">nth_line_fn_t</a> <dfn class="local col2 decl" id="12nth_line_cb" title='nth_line_cb' data-type='nth_line_fn_t' data-ref="12nth_line_cb">nth_line_cb</dfn>,</td></tr>
+<tr><th id="24">24</th><td>			   <em>void</em> *<dfn class="local col3 decl" id="13cb_data" title='cb_data' data-type='void *' data-ref="13cb_data">cb_data</dfn>, <em>long</em> <dfn class="local col4 decl" id="14lines" title='lines' data-type='long' data-ref="14lines">lines</dfn>, <em>long</em> <dfn class="local col5 decl" id="15anchor" title='anchor' data-type='long' data-ref="15anchor">anchor</dfn>,</td></tr>
+<tr><th id="25">25</th><td>			   <em>long</em> *<dfn class="local col6 decl" id="16begin" title='begin' data-type='long *' data-ref="16begin">begin</dfn>, <em>long</em> *<dfn class="local col7 decl" id="17end" title='end' data-type='long *' data-ref="17end">end</dfn>,</td></tr>
+<tr><th id="26">26</th><td>			   <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="18path" title='path' data-type='const char *' data-ref="18path">path</dfn>);</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i>/*</i></td></tr>
+<tr><th id="29">29</th><td><i> * Scan past a range argument that could be parsed by</i></td></tr>
+<tr><th id="30">30</th><td><i> * 'parse_range_arg', to help the caller determine the start of the</i></td></tr>
+<tr><th id="31">31</th><td><i> * filename in '-L n,m:file' syntax.</i></td></tr>
+<tr><th id="32">32</th><td><i> *</i></td></tr>
+<tr><th id="33">33</th><td><i> * Returns a pointer to the first character after the 'n,m' part, or</i></td></tr>
+<tr><th id="34">34</th><td><i> * NULL in case the argument is obviously malformed.</i></td></tr>
+<tr><th id="35">35</th><td><i> */</i></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="skip_range_arg" title='skip_range_arg' data-ref="skip_range_arg">skip_range_arg</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="19arg" title='arg' data-type='const char *' data-ref="19arg">arg</dfn>);</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="1">endif</span> /* LINE_RANGE_H */</u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/blame.c.html'>codebrowser/builtin/blame.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

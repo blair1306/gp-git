@@ -1,0 +1,17 @@
+<def f='codebrowser/cache.h' l='333' ll='347'/>
+<size>192</size>
+<mbr r='index_state::cache' o='0' t='struct cache_entry **'/>
+<mbr r='index_state::version' o='64' t='unsigned int'/>
+<mbr r='index_state::cache_nr' o='96' t='unsigned int'/>
+<mbr r='index_state::cache_alloc' o='128' t='unsigned int'/>
+<mbr r='index_state::cache_changed' o='160' t='unsigned int'/>
+<mbr r='index_state::resolve_undo' o='192' t='struct string_list *'/>
+<mbr r='index_state::cache_tree' o='256' t='struct cache_tree *'/>
+<mbr r='index_state::split_index' o='320' t='struct split_index *'/>
+<mbr r='index_state::timestamp' o='384' t='struct cache_time'/>
+<mbr r='index_state::name_hash_initialized' o='448' t='unsigned int'/>
+<mbr r='index_state::initialized' o='449' t='unsigned int'/>
+<mbr r='index_state::name_hash' o='512' t='struct hashmap'/>
+<mbr r='index_state::dir_hash' o='896' t='struct hashmap'/>
+<mbr r='index_state::sha1' o='1280' t='unsigned char [20]'/>
+<mbr r='index_state::untracked' o='1472' t='struct untracked_cache *'/>

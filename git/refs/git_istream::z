@@ -1,0 +1,24 @@
+<dec f='codebrowser/streaming.c' l='69' type='git_zstream'/>
+<use f='codebrowser/streaming.c' l='176' u='a' c='close_deflated_stream'/>
+<use f='codebrowser/streaming.c' l='303' u='m' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='304' u='m' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='305' u='a' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='307' u='m' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='310' u='a' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='315' u='a' c='read_istream_loose'/>
+<use f='codebrowser/streaming.c' l='340' u='a' c='open_istream_loose'/>
+<use f='codebrowser/streaming.c' l='346' u='a' c='open_istream_loose'/>
+<use f='codebrowser/streaming.c' l='352' u='m' c='open_istream_loose'/>
+<use f='codebrowser/streaming.c' l='372' u='a' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='372' u='r' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='373' u='a' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='390' u='m' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='392' u='m' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='393' u='m' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='394' u='m' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='395' u='a' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='397' u='m' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='398' u='m' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='402' u='a' c='read_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='407' u='a' c='read_istream_pack_non_delta'/>
+<offset>128</offset>

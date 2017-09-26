@@ -1,0 +1,175 @@
+<dec f='codebrowser/help.h' l='9' type='char []'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/merge.c' l='133' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='133' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='137' u='r' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='145' c='get_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='150' c='get_strategy'/>
+<use f='codebrowser/help.c' l='18' u='r' c='add_cmdname'/>
+<use f='codebrowser/help.c' l='39' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='39' u='r' c='cmdname_compare'/>
+<use f='codebrowser/help.c' l='50' c='uniq'/>
+<use f='codebrowser/help.c' l='50' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='50' u='r' c='uniq'/>
+<use f='codebrowser/help.c' l='66' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='66' u='r' c='exclude_cmds'/>
+<use f='codebrowser/help.c' l='89' u='r' c='pretty_print_cmdnames'/>
+<use f='codebrowser/help.c' l='235' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='235' u='r' c='is_in_cmdlist'/>
+<use f='codebrowser/help.c' l='259' u='r' c='levenshtein_compare'/>
+<use f='codebrowser/help.c' l='259' c='levenshtein_compare'/>
+<use f='codebrowser/help.c' l='305' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='354' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='385' c='help_unknown_cmd'/>

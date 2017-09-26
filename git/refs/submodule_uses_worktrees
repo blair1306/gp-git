@@ -1,0 +1,6 @@
+<dec f='codebrowser/worktree.h' l='33' type='int submodule_uses_worktrees(const char * path)'/>
+<doc f='codebrowser/worktree.h' l='30'>/*
+ * Returns 1 if linked worktrees exist, 0 otherwise.
+ */</doc>
+<use f='codebrowser/submodule.c' l='1833' u='c' c='relocate_single_git_dir_into_superproject'/>
+<def f='codebrowser/worktree.c' l='340' ll='388' type='int submodule_uses_worktrees(const char * path)'/>

@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>notes.h source code [codebrowser/notes.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="display_notes_opt,notes_tree "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/notes.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='notes.h.html'>notes.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/NOTES_H">NOTES_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/NOTES_H" data-ref="_M/NOTES_H">NOTES_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="string-list.h.html">"string-list.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/*</i></td></tr>
+<tr><th id="7">7</th><td><i> * Function type for combining two notes annotating the same object.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * When adding a new note annotating the same object as an existing note, it is</i></td></tr>
+<tr><th id="10">10</th><td><i> * up to the caller to decide how to combine the two notes. The decision is</i></td></tr>
+<tr><th id="11">11</th><td><i> * made by passing in a function of the following form. The function accepts</i></td></tr>
+<tr><th id="12">12</th><td><i> * two SHA1s -- of the existing note and the new note, respectively. The</i></td></tr>
+<tr><th id="13">13</th><td><i> * function then combines the notes in whatever way it sees fit, and writes the</i></td></tr>
+<tr><th id="14">14</th><td><i> * resulting SHA1 into the first SHA1 argument (cur_sha1). A non-zero return</i></td></tr>
+<tr><th id="15">15</th><td><i> * value indicates failure.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * The two given SHA1s shall both be non-NULL and different from each other.</i></td></tr>
+<tr><th id="18">18</th><td><i> * Either of them (but not both) may be == null_sha1, which indicates an</i></td></tr>
+<tr><th id="19">19</th><td><i> * empty/non-existent note. If the resulting SHA1 (cur_sha1) is == null_sha1,</i></td></tr>
+<tr><th id="20">20</th><td><i> * the note will be removed from the notes tree.</i></td></tr>
+<tr><th id="21">21</th><td><i> *</i></td></tr>
+<tr><th id="22">22</th><td><i> * The default combine_notes function (you get this when passing NULL) is</i></td></tr>
+<tr><th id="23">23</th><td><i> * combine_notes_concatenate(), which appends the contents of the new note to</i></td></tr>
+<tr><th id="24">24</th><td><i> * the contents of the existing note.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="combine_notes_fn" title='combine_notes_fn' data-type='int (*)(unsigned char *, const unsigned char *)' data-ref="combine_notes_fn">combine_notes_fn</dfn>)(<em>unsigned</em> <em>char</em> *<dfn class="local col5 decl" id="45cur_sha1" title='cur_sha1' data-type='unsigned char *' data-ref="45cur_sha1">cur_sha1</dfn>, <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col6 decl" id="46new_sha1" title='new_sha1' data-type='const unsigned char *' data-ref="46new_sha1">new_sha1</dfn>);</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i>/* Common notes combinators */</i></td></tr>
+<tr><th id="29">29</th><td><em>int</em> <dfn class="decl" id="combine_notes_concatenate" title='combine_notes_concatenate' data-ref="combine_notes_concatenate">combine_notes_concatenate</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col7 decl" id="47cur_sha1" title='cur_sha1' data-type='unsigned char *' data-ref="47cur_sha1">cur_sha1</dfn>, <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col8 decl" id="48new_sha1" title='new_sha1' data-type='const unsigned char *' data-ref="48new_sha1">new_sha1</dfn>);</td></tr>
+<tr><th id="30">30</th><td><em>int</em> <dfn class="decl" id="combine_notes_overwrite" title='combine_notes_overwrite' data-ref="combine_notes_overwrite">combine_notes_overwrite</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="49cur_sha1" title='cur_sha1' data-type='unsigned char *' data-ref="49cur_sha1">cur_sha1</dfn>, <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col0 decl" id="50new_sha1" title='new_sha1' data-type='const unsigned char *' data-ref="50new_sha1">new_sha1</dfn>);</td></tr>
+<tr><th id="31">31</th><td><em>int</em> <dfn class="decl" id="combine_notes_ignore" title='combine_notes_ignore' data-ref="combine_notes_ignore">combine_notes_ignore</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col1 decl" id="51cur_sha1" title='cur_sha1' data-type='unsigned char *' data-ref="51cur_sha1">cur_sha1</dfn>, <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col2 decl" id="52new_sha1" title='new_sha1' data-type='const unsigned char *' data-ref="52new_sha1">new_sha1</dfn>);</td></tr>
+<tr><th id="32">32</th><td><em>int</em> <dfn class="decl" id="combine_notes_cat_sort_uniq" title='combine_notes_cat_sort_uniq' data-ref="combine_notes_cat_sort_uniq">combine_notes_cat_sort_uniq</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col3 decl" id="53cur_sha1" title='cur_sha1' data-type='unsigned char *' data-ref="53cur_sha1">cur_sha1</dfn>, <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="54new_sha1" title='new_sha1' data-type='const unsigned char *' data-ref="54new_sha1">new_sha1</dfn>);</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i>/*</i></td></tr>
+<tr><th id="35">35</th><td><i> * Notes tree object</i></td></tr>
+<tr><th id="36">36</th><td><i> *</i></td></tr>
+<tr><th id="37">37</th><td><i> * Encapsulates the internal notes tree structure associated with a notes ref.</i></td></tr>
+<tr><th id="38">38</th><td><i> * Whenever a struct notes_tree pointer is required below, you may pass NULL in</i></td></tr>
+<tr><th id="39">39</th><td><i> * order to use the default/internal notes tree. E.g. you only need to pass a</i></td></tr>
+<tr><th id="40">40</th><td><i> * non-NULL value if you need to refer to several different notes trees</i></td></tr>
+<tr><th id="41">41</th><td><i> * simultaneously.</i></td></tr>
+<tr><th id="42">42</th><td><i> */</i></td></tr>
+<tr><th id="43">43</th><td><b>extern</b> <b>struct</b> <dfn class="type def" id="notes_tree" title='notes_tree' data-ref="notes_tree"><a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a></dfn> {</td></tr>
+<tr><th id="44">44</th><td>	<b>struct</b> <dfn class="type" id="int_node" title='int_node' data-ref="int_node"><a class="type" href="#int_node" title='int_node' data-ref="int_node">int_node</a></dfn> *<dfn class="decl" id="notes_tree::root" title='notes_tree::root' data-ref="notes_tree::root">root</dfn>;</td></tr>
+<tr><th id="45">45</th><td>	<b>struct</b> <dfn class="type" id="non_note" title='non_note' data-ref="non_note"><a class="type" href="#non_note" title='non_note' data-ref="non_note"><a class="type" href="#non_note" title='non_note' data-ref="non_note">non_note</a></a></dfn> *<dfn class="decl" id="notes_tree::first_non_note" title='notes_tree::first_non_note' data-ref="notes_tree::first_non_note">first_non_note</dfn>, *<dfn class="decl" id="notes_tree::prev_non_note" title='notes_tree::prev_non_note' data-ref="notes_tree::prev_non_note">prev_non_note</dfn>;</td></tr>
+<tr><th id="46">46</th><td>	<em>char</em> *<dfn class="decl" id="notes_tree::ref" title='notes_tree::ref' data-ref="notes_tree::ref">ref</dfn>;</td></tr>
+<tr><th id="47">47</th><td>	<em>char</em> *<dfn class="decl" id="notes_tree::update_ref" title='notes_tree::update_ref' data-ref="notes_tree::update_ref">update_ref</dfn>;</td></tr>
+<tr><th id="48">48</th><td>	<a class="typedef" href="#combine_notes_fn" title='combine_notes_fn' data-type='int (*)(unsigned char *, const unsigned char *)' data-ref="combine_notes_fn">combine_notes_fn</a> <dfn class="decl" id="notes_tree::combine_notes" title='notes_tree::combine_notes' data-ref="notes_tree::combine_notes">combine_notes</dfn>;</td></tr>
+<tr><th id="49">49</th><td>	<em>int</em> <dfn class="decl" id="notes_tree::initialized" title='notes_tree::initialized' data-ref="notes_tree::initialized">initialized</dfn>;</td></tr>
+<tr><th id="50">50</th><td>	<em>int</em> <dfn class="decl" id="notes_tree::dirty" title='notes_tree::dirty' data-ref="notes_tree::dirty">dirty</dfn>;</td></tr>
+<tr><th id="51">51</th><td>} <dfn class="decl" id="default_notes_tree" title='default_notes_tree' data-ref="default_notes_tree">default_notes_tree</dfn>;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><i>/*</i></td></tr>
+<tr><th id="54">54</th><td><i> * Return the default notes ref.</i></td></tr>
+<tr><th id="55">55</th><td><i> *</i></td></tr>
+<tr><th id="56">56</th><td><i> * The default notes ref is the notes ref that is used when notes_ref == NULL</i></td></tr>
+<tr><th id="57">57</th><td><i> * is passed to init_notes().</i></td></tr>
+<tr><th id="58">58</th><td><i> *</i></td></tr>
+<tr><th id="59">59</th><td><i> * This the first of the following to be defined:</i></td></tr>
+<tr><th id="60">60</th><td><i> * 1. The '--ref' option to 'git notes', if given</i></td></tr>
+<tr><th id="61">61</th><td><i> * 2. The $GIT_NOTES_REF environment variable, if set</i></td></tr>
+<tr><th id="62">62</th><td><i> * 3. The value of the core.notesRef config variable, if set</i></td></tr>
+<tr><th id="63">63</th><td><i> * 4. GIT_NOTES_DEFAULT_REF (i.e. "refs/notes/commits")</i></td></tr>
+<tr><th id="64">64</th><td><i> */</i></td></tr>
+<tr><th id="65">65</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="default_notes_ref" title='default_notes_ref' data-ref="default_notes_ref">default_notes_ref</dfn>(<em>void</em>);</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><i>/*</i></td></tr>
+<tr><th id="68">68</th><td><i> * Flags controlling behaviour of notes tree initialization</i></td></tr>
+<tr><th id="69">69</th><td><i> *</i></td></tr>
+<tr><th id="70">70</th><td><i> * Default behaviour is to initialize the notes tree from the tree object</i></td></tr>
+<tr><th id="71">71</th><td><i> * specified by the given (or default) notes ref.</i></td></tr>
+<tr><th id="72">72</th><td><i> */</i></td></tr>
+<tr><th id="73">73</th><td><u>#define <dfn class="macro" id="_M/NOTES_INIT_EMPTY" data-ref="_M/NOTES_INIT_EMPTY">NOTES_INIT_EMPTY</dfn> 1</u></td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><i>/*</i></td></tr>
+<tr><th id="76">76</th><td><i> * By default, the notes tree is only readable, and the notes ref can be</i></td></tr>
+<tr><th id="77">77</th><td><i> * any treeish. The notes tree can however be made writable with this flag,</i></td></tr>
+<tr><th id="78">78</th><td><i> * in which case only strict ref names can be used.</i></td></tr>
+<tr><th id="79">79</th><td><i> */</i></td></tr>
+<tr><th id="80">80</th><td><u>#define <dfn class="macro" id="_M/NOTES_INIT_WRITABLE" data-ref="_M/NOTES_INIT_WRITABLE">NOTES_INIT_WRITABLE</dfn> 2</u></td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><i>/*</i></td></tr>
+<tr><th id="83">83</th><td><i> * Initialize the given notes_tree with the notes tree structure at the given</i></td></tr>
+<tr><th id="84">84</th><td><i> * ref. If given ref is NULL, the value of the $GIT_NOTES_REF environment</i></td></tr>
+<tr><th id="85">85</th><td><i> * variable is used, and if that is missing, the default notes ref is used</i></td></tr>
+<tr><th id="86">86</th><td><i> * ("refs/notes/commits").</i></td></tr>
+<tr><th id="87">87</th><td><i> *</i></td></tr>
+<tr><th id="88">88</th><td><i> * If you need to re-initialize a notes_tree structure (e.g. when switching from</i></td></tr>
+<tr><th id="89">89</th><td><i> * one notes ref to another), you must first de-initialize the notes_tree</i></td></tr>
+<tr><th id="90">90</th><td><i> * structure by calling free_notes(struct notes_tree *).</i></td></tr>
+<tr><th id="91">91</th><td><i> *</i></td></tr>
+<tr><th id="92">92</th><td><i> * If you pass t == NULL, the default internal notes_tree will be initialized.</i></td></tr>
+<tr><th id="93">93</th><td><i> *</i></td></tr>
+<tr><th id="94">94</th><td><i> * The combine_notes function that is passed becomes the default combine_notes</i></td></tr>
+<tr><th id="95">95</th><td><i> * function for the given notes_tree. If NULL is passed, the default</i></td></tr>
+<tr><th id="96">96</th><td><i> * combine_notes function is combine_notes_concatenate().</i></td></tr>
+<tr><th id="97">97</th><td><i> *</i></td></tr>
+<tr><th id="98">98</th><td><i> * Precondition: The notes_tree structure is zeroed (this can be achieved with</i></td></tr>
+<tr><th id="99">99</th><td><i> * memset(t, 0, sizeof(struct notes_tree)))</i></td></tr>
+<tr><th id="100">100</th><td><i> */</i></td></tr>
+<tr><th id="101">101</th><td><em>void</em> <dfn class="decl" id="init_notes" title='init_notes' data-ref="init_notes">init_notes</dfn>(<b>struct</b> <a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col5 decl" id="55t" title='t' data-type='struct notes_tree *' data-ref="55t">t</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="56notes_ref" title='notes_ref' data-type='const char *' data-ref="56notes_ref">notes_ref</dfn>,</td></tr>
+<tr><th id="102">102</th><td>		<a class="typedef" href="#combine_notes_fn" title='combine_notes_fn' data-type='int (*)(unsigned char *, const unsigned char *)' data-ref="combine_notes_fn">combine_notes_fn</a> <dfn class="local col7 decl" id="57combine_notes" title='combine_notes' data-type='combine_notes_fn' data-ref="57combine_notes">combine_notes</dfn>, <em>int</em> <dfn class="local col8 decl" id="58flags" title='flags' data-type='int' data-ref="58flags">flags</dfn>);</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><i>/*</i></td></tr>
+<tr><th id="105">105</th><td><i> * Add the given note object to the given notes_tree structure</i></td></tr>
+<tr><th id="106">106</th><td><i> *</i></td></tr>
+<tr><th id="107">107</th><td><i> * If there already exists a note for the given object_sha1, the given</i></td></tr>
+<tr><th id="108">108</th><td><i> * combine_notes function is invoked to break the tie. If not given (i.e.</i></td></tr>
+<tr><th id="109">109</th><td><i> * combine_notes == NULL), the default combine_notes function for the given</i></td></tr>
+<tr><th id="110">110</th><td><i> * notes_tree is used.</i></td></tr>
+<tr><th id="111">111</th><td><i> *</i></td></tr>
+<tr><th id="112">112</th><td><i> * Passing note_sha1 == null_sha1 indicates the addition of an</i></td></tr>
+<tr><th id="113">113</th><td><i> * empty/non-existent note. This is a (potentially expensive) no-op unless</i></td></tr>
+<tr><th id="114">114</th><td><i> * there already exists a note for the given object_sha1, AND combining that</i></td></tr>
+<tr><th id="115">115</th><td><i> * note with the empty note (using the given combine_notes function) results</i></td></tr>
+<tr><th id="116">116</th><td><i> * in a new/changed note.</i></td></tr>
+<tr><th id="117">117</th><td><i> *</i></td></tr>
+<tr><th id="118">118</th><td><i> * Returns zero on success; non-zero means combine_notes failed.</i></td></tr>
+<tr><th id="119">119</th><td><i> *</i></td></tr>
+<tr><th id="120">120</th><td><i> * IMPORTANT: The changes made by add_note() to the given notes_tree structure</i></td></tr>
+<tr><th id="121">121</th><td><i> * are not persistent until a subsequent call to write_notes_tree() returns</i></td></tr>
+<tr><th id="122">122</th><td><i> * zero.</i></td></tr>
+<tr><th id="123">123</th><td><i> */</i></td></tr>
+<tr><th id="124">124</th><td><em>int</em> <dfn class="decl" id="add_note" title='add_note' data-ref="add_note">add_note</dfn>(<b>struct</b> <a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col9 decl" id="59t" title='t' data-type='struct notes_tree *' data-ref="59t">t</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col0 decl" id="60object_oid" title='object_oid' data-type='const struct object_id *' data-ref="60object_oid">object_oid</dfn>,</td></tr>
+<tr><th id="125">125</th><td>		<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col1 decl" id="61note_oid" title='note_oid' data-type='const struct object_id *' data-ref="61note_oid">note_oid</dfn>, <a class="typedef" href="#combine_notes_fn" title='combine_notes_fn' data-type='int (*)(unsigned char *, const unsigned char *)' data-ref="combine_notes_fn">combine_notes_fn</a> <dfn class="local col2 decl" id="62combine_notes" title='combine_notes' data-type='combine_notes_fn' data-ref="62combine_notes">combine_notes</dfn>);</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><i>/*</i></td></tr>
+<tr><th id="128">128</th><td><i> * Remove the given note object from the given notes_tree structure</i></td></tr>
+<tr><th id="129">129</th><td><i> *</i></td></tr>
+<tr><th id="130">130</th><td><i> * IMPORTANT: The changes made by remove_note() to the given notes_tree</i></td></tr>
+<tr><th id="131">131</th><td><i> * structure are not persistent until a subsequent call to write_notes_tree()</i></td></tr>
+<tr><th id="132">132</th><td><i> * returns zero.</i></td></tr>
+<tr><th id="133">133</th><td><i> *</i></td></tr>
+<tr><th id="134">134</th><td><i> * Return 0 if a note was removed; 1 if there was no note to remove.</i></td></tr>
+<tr><th id="135">135</th><td><i> */</i></td></tr>
+<tr><th id="136">136</th><td><em>int</em> <dfn class="decl" id="remove_note" title='remove_note' data-ref="remove_note">remove_note</dfn>(<b>struct</b> <a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col3 decl" id="63t" title='t' data-type='struct notes_tree *' data-ref="63t">t</dfn>, <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="64object_sha1" title='object_sha1' data-type='const unsigned char *' data-ref="64object_sha1">object_sha1</dfn>);</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><i>/*</i></td></tr>
+<tr><th id="139">139</th><td><i> * Get the note object SHA1 containing the note data for the given object</i></td></tr>
+<tr><th id="140">140</th><td><i> *</i></td></tr>
+<tr><th id="141">141</th><td><i> * Return NULL if the given object has no notes.</i></td></tr>
+<tr><th id="142">142</th><td><i> */</i></td></tr>
+<tr><th id="143">143</th><td><em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="decl" id="get_note" title='get_note' data-ref="get_note">get_note</dfn>(<b>struct</b> <a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col5 decl" id="65t" title='t' data-type='struct notes_tree *' data-ref="65t">t</dfn>,</td></tr>
+<tr><th id="144">144</th><td>		<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col6 decl" id="66object_oid" title='object_oid' data-type='const struct object_id *' data-ref="66object_oid">object_oid</dfn>);</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><i>/*</i></td></tr>
+<tr><th id="147">147</th><td><i> * Copy a note from one object to another in the given notes_tree.</i></td></tr>
+<tr><th id="148">148</th><td><i> *</i></td></tr>
+<tr><th id="149">149</th><td><i> * Returns 1 if the to_obj already has a note and 'force' is false. Otherwise,</i></td></tr>
+<tr><th id="150">150</th><td><i> * returns non-zero if 'force' is true, but the given combine_notes function</i></td></tr>
+<tr><th id="151">151</th><td><i> * failed to combine from_obj's note with to_obj's existing note.</i></td></tr>
+<tr><th id="152">152</th><td><i> * Returns zero on success.</i></td></tr>
+<tr><th id="153">153</th><td><i> *</i></td></tr>
+<tr><th id="154">154</th><td><i> * IMPORTANT: The changes made by copy_note() to the given notes_tree structure</i></td></tr>
+<tr><th id="155">155</th><td><i> * are not persistent until a subsequent call to write_notes_tree() returns</i></td></tr>
+<tr><th id="156">156</th><td><i> * zero.</i></td></tr>
+<tr><th id="157">157</th><td><i> */</i></td></tr>
+<tr><th id="158">158</th><td><em>int</em> <dfn class="decl" id="copy_note" title='copy_note' data-ref="copy_note">copy_note</dfn>(<b>struct</b> <a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col7 decl" id="67t" title='t' data-type='struct notes_tree *' data-ref="67t">t</dfn>,</td></tr>
+<tr><th id="159">159</th><td>	      <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col8 decl" id="68from_obj" title='from_obj' data-type='const struct object_id *' data-ref="68from_obj">from_obj</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col9 decl" id="69to_obj" title='to_obj' data-type='const struct object_id *' data-ref="69to_obj">to_obj</dfn>,</td></tr>
+<tr><th id="160">160</th><td>	      <em>int</em> <dfn class="local col0 decl" id="70force" title='force' data-type='int' data-ref="70force">force</dfn>, <a class="typedef" href="#combine_notes_fn" title='combine_notes_fn' data-type='int (*)(unsigned char *, const unsigned char *)' data-ref="combine_notes_fn">combine_notes_fn</a> <dfn class="local col1 decl" id="71combine_notes" title='combine_notes' data-type='combine_notes_fn' data-ref="71combine_notes">combine_notes</dfn>);</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td><i>/*</i></td></tr>
+<tr><th id="163">163</th><td><i> * Flags controlling behaviour of for_each_note()</i></td></tr>
+<tr><th id="164">164</th><td><i> *</i></td></tr>
+<tr><th id="165">165</th><td><i> * Default behaviour of for_each_note() is to traverse every single note object</i></td></tr>
+<tr><th id="166">166</th><td><i> * in the given notes tree, unpacking subtree entries along the way.</i></td></tr>
+<tr><th id="167">167</th><td><i> * The following flags can be used to alter the default behaviour:</i></td></tr>
+<tr><th id="168">168</th><td><i> *</i></td></tr>
+<tr><th id="169">169</th><td><i> * - DONT_UNPACK_SUBTREES causes for_each_note() NOT to unpack and recurse into</i></td></tr>
+<tr><th id="170">170</th><td><i> *   subtree entries while traversing the notes tree. This causes notes within</i></td></tr>
+<tr><th id="171">171</th><td><i> *   those subtrees NOT to be passed to the callback. Use this flag if you</i></td></tr>
+<tr><th id="172">172</th><td><i> *   don't want to traverse _all_ notes, but only want to traverse the parts</i></td></tr>
+<tr><th id="173">173</th><td><i> *   of the notes tree that have already been unpacked (this includes at least</i></td></tr>
+<tr><th id="174">174</th><td><i> *   all notes that have been added/changed).</i></td></tr>
+<tr><th id="175">175</th><td><i> *</i></td></tr>
+<tr><th id="176">176</th><td><i> * - YIELD_SUBTREES causes any subtree entries that are encountered to be</i></td></tr>
+<tr><th id="177">177</th><td><i> *   passed to the callback, before recursing into them. Subtree entries are</i></td></tr>
+<tr><th id="178">178</th><td><i> *   not note objects, but represent intermediate directories in the notes</i></td></tr>
+<tr><th id="179">179</th><td><i> *   tree. When passed to the callback, subtree entries will have a trailing</i></td></tr>
+<tr><th id="180">180</th><td><i> *   slash in their path, which the callback may use to differentiate between</i></td></tr>
+<tr><th id="181">181</th><td><i> *   note entries and subtree entries. Note that already-unpacked subtree</i></td></tr>
+<tr><th id="182">182</th><td><i> *   entries are not part of the notes tree, and will therefore not be yielded.</i></td></tr>
+<tr><th id="183">183</th><td><i> *   If this flag is used together with DONT_UNPACK_SUBTREES, for_each_note()</i></td></tr>
+<tr><th id="184">184</th><td><i> *   will yield the subtree entry, but not recurse into it.</i></td></tr>
+<tr><th id="185">185</th><td><i> */</i></td></tr>
+<tr><th id="186">186</th><td><u>#define <dfn class="macro" id="_M/FOR_EACH_NOTE_DONT_UNPACK_SUBTREES" data-ref="_M/FOR_EACH_NOTE_DONT_UNPACK_SUBTREES">FOR_EACH_NOTE_DONT_UNPACK_SUBTREES</dfn> 1</u></td></tr>
+<tr><th id="187">187</th><td><u>#define <dfn class="macro" id="_M/FOR_EACH_NOTE_YIELD_SUBTREES" data-ref="_M/FOR_EACH_NOTE_YIELD_SUBTREES">FOR_EACH_NOTE_YIELD_SUBTREES</dfn> 2</u></td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><i>/*</i></td></tr>
+<tr><th id="190">190</th><td><i> * Invoke the specified callback function for each note in the given notes_tree</i></td></tr>
+<tr><th id="191">191</th><td><i> *</i></td></tr>
+<tr><th id="192">192</th><td><i> * If the callback returns nonzero, the note walk is aborted, and the return</i></td></tr>
+<tr><th id="193">193</th><td><i> * value from the callback is returned from for_each_note(). Hence, a zero</i></td></tr>
+<tr><th id="194">194</th><td><i> * return value from for_each_note() indicates that all notes were walked</i></td></tr>
+<tr><th id="195">195</th><td><i> * successfully.</i></td></tr>
+<tr><th id="196">196</th><td><i> *</i></td></tr>
+<tr><th id="197">197</th><td><i> * IMPORTANT: The callback function is NOT allowed to change the notes tree.</i></td></tr>
+<tr><th id="198">198</th><td><i> * In other words, the following functions can NOT be invoked (on the current</i></td></tr>
+<tr><th id="199">199</th><td><i> * notes tree) from within the callback:</i></td></tr>
+<tr><th id="200">200</th><td><i> * - add_note()</i></td></tr>
+<tr><th id="201">201</th><td><i> * - remove_note()</i></td></tr>
+<tr><th id="202">202</th><td><i> * - copy_note()</i></td></tr>
+<tr><th id="203">203</th><td><i> * - free_notes()</i></td></tr>
+<tr><th id="204">204</th><td><i> */</i></td></tr>
+<tr><th id="205">205</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="each_note_fn" title='each_note_fn' data-type='int (const struct object_id *, const struct object_id *, char *, void *)' data-ref="each_note_fn">each_note_fn</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col2 decl" id="72object_oid" title='object_oid' data-type='const struct object_id *' data-ref="72object_oid">object_oid</dfn>,</td></tr>
+<tr><th id="206">206</th><td>		<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="73note_oid" title='note_oid' data-type='const struct object_id *' data-ref="73note_oid">note_oid</dfn>, <em>char</em> *<dfn class="local col4 decl" id="74note_path" title='note_path' data-type='char *' data-ref="74note_path">note_path</dfn>,</td></tr>
+<tr><th id="207">207</th><td>		<em>void</em> *<dfn class="local col5 decl" id="75cb_data" title='cb_data' data-type='void *' data-ref="75cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="208">208</th><td><em>int</em> <dfn class="decl" id="for_each_note" title='for_each_note' data-ref="for_each_note">for_each_note</dfn>(<b>struct</b> <a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col6 decl" id="76t" title='t' data-type='struct notes_tree *' data-ref="76t">t</dfn>, <em>int</em> <dfn class="local col7 decl" id="77flags" title='flags' data-type='int' data-ref="77flags">flags</dfn>, <a class="typedef" href="#each_note_fn" title='each_note_fn' data-type='int (const struct object_id *, const struct object_id *, char *, void *)' data-ref="each_note_fn">each_note_fn</a> <dfn class="local col8 decl" id="78fn" title='fn' data-type='each_note_fn *' data-ref="78fn">fn</dfn>,</td></tr>
+<tr><th id="209">209</th><td>		<em>void</em> *<dfn class="local col9 decl" id="79cb_data" title='cb_data' data-type='void *' data-ref="79cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="210">210</th><td></td></tr>
+<tr><th id="211">211</th><td><i>/*</i></td></tr>
+<tr><th id="212">212</th><td><i> * Write the given notes_tree structure to the object database</i></td></tr>
+<tr><th id="213">213</th><td><i> *</i></td></tr>
+<tr><th id="214">214</th><td><i> * Creates a new tree object encapsulating the current state of the given</i></td></tr>
+<tr><th id="215">215</th><td><i> * notes_tree, and stores its SHA1 into the 'result' argument.</i></td></tr>
+<tr><th id="216">216</th><td><i> *</i></td></tr>
+<tr><th id="217">217</th><td><i> * Returns zero on success, non-zero on failure.</i></td></tr>
+<tr><th id="218">218</th><td><i> *</i></td></tr>
+<tr><th id="219">219</th><td><i> * IMPORTANT: Changes made to the given notes_tree are not persistent until</i></td></tr>
+<tr><th id="220">220</th><td><i> * this function has returned zero. Please also remember to create a</i></td></tr>
+<tr><th id="221">221</th><td><i> * corresponding commit object, and update the appropriate notes ref.</i></td></tr>
+<tr><th id="222">222</th><td><i> */</i></td></tr>
+<tr><th id="223">223</th><td><em>int</em> <dfn class="decl" id="write_notes_tree" title='write_notes_tree' data-ref="write_notes_tree">write_notes_tree</dfn>(<b>struct</b> <a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col0 decl" id="80t" title='t' data-type='struct notes_tree *' data-ref="80t">t</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col1 decl" id="81result" title='result' data-type='unsigned char *' data-ref="81result">result</dfn>);</td></tr>
+<tr><th id="224">224</th><td></td></tr>
+<tr><th id="225">225</th><td><i>/* Flags controlling the operation of prune */</i></td></tr>
+<tr><th id="226">226</th><td><u>#define <dfn class="macro" id="_M/NOTES_PRUNE_VERBOSE" data-ref="_M/NOTES_PRUNE_VERBOSE">NOTES_PRUNE_VERBOSE</dfn> 1</u></td></tr>
+<tr><th id="227">227</th><td><u>#define <dfn class="macro" id="_M/NOTES_PRUNE_DRYRUN" data-ref="_M/NOTES_PRUNE_DRYRUN">NOTES_PRUNE_DRYRUN</dfn> 2</u></td></tr>
+<tr><th id="228">228</th><td><i>/*</i></td></tr>
+<tr><th id="229">229</th><td><i> * Remove all notes annotating non-existing objects from the given notes tree</i></td></tr>
+<tr><th id="230">230</th><td><i> *</i></td></tr>
+<tr><th id="231">231</th><td><i> * All notes in the given notes_tree that are associated with objects that no</i></td></tr>
+<tr><th id="232">232</th><td><i> * longer exist in the database, are removed from the notes tree.</i></td></tr>
+<tr><th id="233">233</th><td><i> *</i></td></tr>
+<tr><th id="234">234</th><td><i> * IMPORTANT: The changes made by prune_notes() to the given notes_tree</i></td></tr>
+<tr><th id="235">235</th><td><i> * structure are not persistent until a subsequent call to write_notes_tree()</i></td></tr>
+<tr><th id="236">236</th><td><i> * returns zero.</i></td></tr>
+<tr><th id="237">237</th><td><i> */</i></td></tr>
+<tr><th id="238">238</th><td><em>void</em> <dfn class="decl" id="prune_notes" title='prune_notes' data-ref="prune_notes">prune_notes</dfn>(<b>struct</b> <a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col2 decl" id="82t" title='t' data-type='struct notes_tree *' data-ref="82t">t</dfn>, <em>int</em> <dfn class="local col3 decl" id="83flags" title='flags' data-type='int' data-ref="83flags">flags</dfn>);</td></tr>
+<tr><th id="239">239</th><td></td></tr>
+<tr><th id="240">240</th><td><i>/*</i></td></tr>
+<tr><th id="241">241</th><td><i> * Free (and de-initialize) the given notes_tree structure</i></td></tr>
+<tr><th id="242">242</th><td><i> *</i></td></tr>
+<tr><th id="243">243</th><td><i> * IMPORTANT: Changes made to the given notes_tree since the last, successful</i></td></tr>
+<tr><th id="244">244</th><td><i> * call to write_notes_tree() will be lost.</i></td></tr>
+<tr><th id="245">245</th><td><i> */</i></td></tr>
+<tr><th id="246">246</th><td><em>void</em> <dfn class="decl" id="free_notes" title='free_notes' data-ref="free_notes">free_notes</dfn>(<b>struct</b> <a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> *<dfn class="local col4 decl" id="84t" title='t' data-type='struct notes_tree *' data-ref="84t">t</dfn>);</td></tr>
+<tr><th id="247">247</th><td></td></tr>
+<tr><th id="248">248</th><td><b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list" id="string_list">string_list</a>;</td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td><b>struct</b> <dfn class="type def" id="display_notes_opt" title='display_notes_opt' data-ref="display_notes_opt">display_notes_opt</dfn> {</td></tr>
+<tr><th id="251">251</th><td>	<em>int</em> <dfn class="decl" id="display_notes_opt::use_default_notes" title='display_notes_opt::use_default_notes' data-ref="display_notes_opt::use_default_notes">use_default_notes</dfn>;</td></tr>
+<tr><th id="252">252</th><td>	<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> <dfn class="decl" id="display_notes_opt::extra_notes_refs" title='display_notes_opt::extra_notes_refs' data-ref="display_notes_opt::extra_notes_refs">extra_notes_refs</dfn>;</td></tr>
+<tr><th id="253">253</th><td>};</td></tr>
+<tr><th id="254">254</th><td></td></tr>
+<tr><th id="255">255</th><td><i>/*</i></td></tr>
+<tr><th id="256">256</th><td><i> * Load the notes machinery for displaying several notes trees.</i></td></tr>
+<tr><th id="257">257</th><td><i> *</i></td></tr>
+<tr><th id="258">258</th><td><i> * If 'opt' is not NULL, then it specifies additional settings for the</i></td></tr>
+<tr><th id="259">259</th><td><i> * displaying:</i></td></tr>
+<tr><th id="260">260</th><td><i> *</i></td></tr>
+<tr><th id="261">261</th><td><i> * - suppress_default_notes indicates that the notes from</i></td></tr>
+<tr><th id="262">262</th><td><i> *   core.notesRef and notes.displayRef should not be loaded.</i></td></tr>
+<tr><th id="263">263</th><td><i> *</i></td></tr>
+<tr><th id="264">264</th><td><i> * - extra_notes_refs may contain a list of globs (in the same style</i></td></tr>
+<tr><th id="265">265</th><td><i> *   as notes.displayRef) where notes should be loaded from.</i></td></tr>
+<tr><th id="266">266</th><td><i> */</i></td></tr>
+<tr><th id="267">267</th><td><em>void</em> <dfn class="decl" id="init_display_notes" title='init_display_notes' data-ref="init_display_notes">init_display_notes</dfn>(<b>struct</b> <a class="type" href="#display_notes_opt" title='display_notes_opt' data-ref="display_notes_opt">display_notes_opt</a> *<dfn class="local col5 decl" id="85opt" title='opt' data-type='struct display_notes_opt *' data-ref="85opt">opt</dfn>);</td></tr>
+<tr><th id="268">268</th><td></td></tr>
+<tr><th id="269">269</th><td><i>/*</i></td></tr>
+<tr><th id="270">270</th><td><i> * Append notes for the given 'object_sha1' from all trees set up by</i></td></tr>
+<tr><th id="271">271</th><td><i> * init_display_notes() to 'sb'.  The 'flags' are a bitwise</i></td></tr>
+<tr><th id="272">272</th><td><i> * combination of</i></td></tr>
+<tr><th id="273">273</th><td><i> *</i></td></tr>
+<tr><th id="274">274</th><td><i> * - NOTES_SHOW_HEADER: add a 'Notes (refname):' header</i></td></tr>
+<tr><th id="275">275</th><td><i> *</i></td></tr>
+<tr><th id="276">276</th><td><i> * - NOTES_INDENT: indent the notes by 4 places</i></td></tr>
+<tr><th id="277">277</th><td><i> *</i></td></tr>
+<tr><th id="278">278</th><td><i> * You *must* call init_display_notes() before using this function.</i></td></tr>
+<tr><th id="279">279</th><td><i> */</i></td></tr>
+<tr><th id="280">280</th><td><em>void</em> <dfn class="decl" id="format_display_notes" title='format_display_notes' data-ref="format_display_notes">format_display_notes</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col6 decl" id="86object_oid" title='object_oid' data-type='const struct object_id *' data-ref="86object_oid">object_oid</dfn>,</td></tr>
+<tr><th id="281">281</th><td>			  <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col7 decl" id="87sb" title='sb' data-type='struct strbuf *' data-ref="87sb">sb</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="88output_encoding" title='output_encoding' data-type='const char *' data-ref="88output_encoding">output_encoding</dfn>, <em>int</em> <dfn class="local col9 decl" id="89raw" title='raw' data-type='int' data-ref="89raw">raw</dfn>);</td></tr>
+<tr><th id="282">282</th><td></td></tr>
+<tr><th id="283">283</th><td><i>/*</i></td></tr>
+<tr><th id="284">284</th><td><i> * Load the notes tree from each ref listed in 'refs'.  The output is</i></td></tr>
+<tr><th id="285">285</th><td><i> * an array of notes_tree*, terminated by a NULL.</i></td></tr>
+<tr><th id="286">286</th><td><i> */</i></td></tr>
+<tr><th id="287">287</th><td><b>struct</b> <a class="type" href="#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> **<dfn class="decl" id="load_notes_trees" title='load_notes_trees' data-ref="load_notes_trees">load_notes_trees</dfn>(<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col0 decl" id="90refs" title='refs' data-type='struct string_list *' data-ref="90refs">refs</dfn>, <em>int</em> <dfn class="local col1 decl" id="91flags" title='flags' data-type='int' data-ref="91flags">flags</dfn>);</td></tr>
+<tr><th id="288">288</th><td></td></tr>
+<tr><th id="289">289</th><td><i>/*</i></td></tr>
+<tr><th id="290">290</th><td><i> * Add all refs that match 'glob' to the 'list'.</i></td></tr>
+<tr><th id="291">291</th><td><i> */</i></td></tr>
+<tr><th id="292">292</th><td><em>void</em> <dfn class="decl" id="string_list_add_refs_by_glob" title='string_list_add_refs_by_glob' data-ref="string_list_add_refs_by_glob">string_list_add_refs_by_glob</dfn>(<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col2 decl" id="92list" title='list' data-type='struct string_list *' data-ref="92list">list</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="93glob" title='glob' data-type='const char *' data-ref="93glob">glob</dfn>);</td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><i>/*</i></td></tr>
+<tr><th id="295">295</th><td><i> * Add all refs from a colon-separated glob list 'globs' to the end of</i></td></tr>
+<tr><th id="296">296</th><td><i> * 'list'.  Empty components are ignored.  This helper is used to</i></td></tr>
+<tr><th id="297">297</th><td><i> * parse GIT_NOTES_DISPLAY_REF style environment variables.</i></td></tr>
+<tr><th id="298">298</th><td><i> */</i></td></tr>
+<tr><th id="299">299</th><td><em>void</em> <dfn class="decl" id="string_list_add_refs_from_colon_sep" title='string_list_add_refs_from_colon_sep' data-ref="string_list_add_refs_from_colon_sep">string_list_add_refs_from_colon_sep</dfn>(<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col4 decl" id="94list" title='list' data-type='struct string_list *' data-ref="94list">list</dfn>,</td></tr>
+<tr><th id="300">300</th><td>					 <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="95globs" title='globs' data-type='const char *' data-ref="95globs">globs</dfn>);</td></tr>
+<tr><th id="301">301</th><td></td></tr>
+<tr><th id="302">302</th><td><i>/* Expand inplace a note ref like "foo" or "notes/foo" into "refs/notes/foo" */</i></td></tr>
+<tr><th id="303">303</th><td><em>void</em> <dfn class="decl" id="expand_notes_ref" title='expand_notes_ref' data-ref="expand_notes_ref">expand_notes_ref</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col6 decl" id="96sb" title='sb' data-type='struct strbuf *' data-ref="96sb">sb</dfn>);</td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td><i>/*</i></td></tr>
+<tr><th id="306">306</th><td><i> * Similar to expand_notes_ref, but will check whether the ref can be located</i></td></tr>
+<tr><th id="307">307</th><td><i> * via get_sha1 first, and only falls back to expand_notes_ref in the case</i></td></tr>
+<tr><th id="308">308</th><td><i> * where get_sha1 fails.</i></td></tr>
+<tr><th id="309">309</th><td><i> */</i></td></tr>
+<tr><th id="310">310</th><td><em>void</em> <dfn class="decl" id="expand_loose_notes_ref" title='expand_loose_notes_ref' data-ref="expand_loose_notes_ref">expand_loose_notes_ref</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col7 decl" id="97sb" title='sb' data-type='struct strbuf *' data-ref="97sb">sb</dfn>);</td></tr>
+<tr><th id="311">311</th><td></td></tr>
+<tr><th id="312">312</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="313">313</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='archive-zip.c.html'>codebrowser/archive-zip.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

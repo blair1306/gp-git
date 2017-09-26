@@ -1,0 +1,10 @@
+<dec f='codebrowser/parse-options.h' l='223' type='int parse_opt_expiry_date_cb(const struct option * , const char * , int )'/>
+<use f='codebrowser/builtin/prune.c' l='108' macro='1' u='r'/>
+<use f='codebrowser/builtin/prune.c' l='108' macro='1' u='r'/>
+<use f='codebrowser/builtin/prune.c' l='108' macro='1' u='r'/>
+<use f='codebrowser/builtin/prune.c' l='108' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='130' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='130' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='130' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='130' macro='1' u='r'/>
+<def f='codebrowser/parse-options-cb.c' l='38' ll='42' type='int parse_opt_expiry_date_cb(const struct option * opt, const char * arg, int unset)'/>

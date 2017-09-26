@@ -1,0 +1,9 @@
+<dec f='codebrowser/grep.h' l='183' type='void append_grep_pattern(struct grep_opt * opt, const char * pat, const char * origin, int no, enum grep_pat_token t)'/>
+<use f='codebrowser/builtin/grep.c' l='729' u='c' c='not_callback'/>
+<use f='codebrowser/builtin/grep.c' l='736' u='c' c='and_callback'/>
+<use f='codebrowser/builtin/grep.c' l='743' u='c' c='open_callback'/>
+<use f='codebrowser/builtin/grep.c' l='750' u='c' c='close_callback'/>
+<use f='codebrowser/builtin/grep.c' l='758' u='c' c='pattern_callback'/>
+<use f='codebrowser/builtin/grep.c' l='932' u='c' c='cmd_grep'/>
+<def f='codebrowser/grep.c' l='296' ll='300' type='void append_grep_pattern(struct grep_opt * opt, const char * pat, const char * origin, int no, enum grep_pat_token t)'/>
+<use f='codebrowser/revision.c' l='1672' u='c' c='add_grep'/>

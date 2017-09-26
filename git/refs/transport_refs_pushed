@@ -1,0 +1,4 @@
+<dec f='codebrowser/transport.h' l='253' type='int transport_refs_pushed(struct ref * ref)'/>
+<use f='codebrowser/builtin/send-pack.c' l='302' u='c' c='cmd_send_pack'/>
+<def f='codebrowser/transport.c' l='279' ll='291' type='int transport_refs_pushed(struct ref * ref)'/>
+<use f='codebrowser/transport.c' l='1091' u='c' c='transport_push'/>

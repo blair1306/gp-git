@@ -1,0 +1,7 @@
+<dec f='codebrowser/oidset.h' l='28' type='int oidset_contains(const struct oidset * set, const struct object_id * oid)'/>
+<doc f='codebrowser/oidset.h' l='25'>/**
+ * Returns true iff `set` contains `oid`.
+ */</doc>
+<use f='codebrowser/fetch-pack.c' l='617' u='c' c='tip_oids_contain'/>
+<def f='codebrowser/oidset.c' l='18' ll='27' type='int oidset_contains(const struct oidset * set, const struct object_id * oid)'/>
+<use f='codebrowser/oidset.c' l='36' u='c' c='oidset_insert'/>

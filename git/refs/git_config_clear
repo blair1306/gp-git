@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='202' type='void git_config_clear()'/>
+<use f='codebrowser/builtin/init-db.c' l='199' u='c' c='create_default_files'/>
+<def f='codebrowser/config.c' l='2012' ll='2015' type='void git_config_clear()'/>
+<use f='codebrowser/config.c' l='2637' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/setup.c' l='1039' u='c' c='setup_git_directory_gently'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='225' type='int cmd_tag(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/tag.c' l='355' ll='560' type='int cmd_tag(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='469'/>
+<use f='codebrowser/git.c' l='469'/>
+<use f='codebrowser/git.c' l='469'/>
+<use f='codebrowser/git.c' l='469'/>

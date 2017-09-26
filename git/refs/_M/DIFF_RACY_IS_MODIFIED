@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='353'/>
+<doc f='codebrowser/diff.h' l='352'>/* report racily-clean paths as modified */</doc>
+<use f='codebrowser/builtin/add.c' l='120' u='c'/>
+<use f='codebrowser/diff-lib.c' l='91' u='c'/>

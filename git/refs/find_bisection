@@ -1,0 +1,4 @@
+<dec f='codebrowser/bisect.h' l='4' type='struct commit_list * find_bisection(struct commit_list * list, int * reaches, int * all, int find_all)'/>
+<def f='codebrowser/bisect.c' l='363' ll='406' type='struct commit_list * find_bisection(struct commit_list * list, int * reaches, int * all, int find_all)'/>
+<use f='codebrowser/bisect.c' l='956' u='c' c='bisect_next_all'/>
+<use f='codebrowser/builtin/rev-list.c' l='400' u='c' c='cmd_rev_list'/>

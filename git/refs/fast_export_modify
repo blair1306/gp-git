@@ -1,0 +1,7 @@
+<dec f='codebrowser/vcs-svn/fast_export.h' l='11' type='void fast_export_modify(const char * path, uint32_t mode, const char * dataref)'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='54' u='c' c='fast_export_truncate'/>
+<def f='codebrowser/vcs-svn/fast_export.c' l='58' ll='68' type='void fast_export_modify(const char * path, uint32_t mode, const char * dataref)'/>
+<use f='codebrowser/vcs-svn/repo_tree.c' l='42' u='c' c='repo_copy'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='290' u='c' c='handle_node'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='294' u='c' c='handle_node'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='298' u='c' c='handle_node'/>

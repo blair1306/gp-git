@@ -1,0 +1,3 @@
+<dec f='codebrowser/notes-merge.h' l='22' type='void init_notes_merge_options(struct notes_merge_options * o)'/>
+<use f='codebrowser/builtin/notes.c' l='808' u='c' c='merge'/>
+<def f='codebrowser/notes-merge.c' l='18' ll='23' type='void init_notes_merge_options(struct notes_merge_options * o)'/>

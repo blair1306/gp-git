@@ -1,0 +1,9 @@
+<dec f='codebrowser/git-compat-util.h' l='1112' type='int unlink_or_msg(const char * file, struct strbuf * err)'/>
+<doc f='codebrowser/git-compat-util.h' l='1106'>/*
+  * Tries to unlink file.  Returns 0 if unlink succeeded
+  * or the file already didn&apos;t exist.  Returns -1 and
+  * appends a message to err suitable for
+  * &apos;error(&quot;%s&quot;, err-&gt;buf)&apos; on error.
+  */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2566' u='c' c='files_transaction_finish'/>
+<def f='codebrowser/wrapper.c' l='577' ll='589' type='int unlink_or_msg(const char * file, struct strbuf * err)'/>

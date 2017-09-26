@@ -1,0 +1,14 @@
+<dec f='codebrowser/config.h' l='62' type='int git_config_set_in_file_gently(const char * , const char * , const char * )'/>
+<use f='codebrowser/builtin/config.c' l='631' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/config.c' l='686' u='c' c='cmd_config'/>
+<def f='codebrowser/config.c' l='2377' ll='2381' type='int git_config_set_in_file_gently(const char * config_filename, const char * key, const char * value)'/>
+<use f='codebrowser/sequencer.c' l='1734' u='c' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1736' u='c' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1738' u='c' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1740' u='c' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1742' u='c' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1746' u='c' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1750' u='c' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1752' u='c' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1761' u='c' c='save_opts'/>
+<use f='codebrowser/submodule.c' l='96' u='c' c='update_path_in_gitmodules'/>

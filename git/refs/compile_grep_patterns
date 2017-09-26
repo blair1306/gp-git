@@ -1,0 +1,5 @@
+<dec f='codebrowser/grep.h' l='185' type='void compile_grep_patterns(struct grep_opt * opt)'/>
+<use f='codebrowser/builtin/grep.c' l='222' u='c' c='start_threads'/>
+<use f='codebrowser/builtin/grep.c' l='1039' u='c' c='cmd_grep'/>
+<def f='codebrowser/grep.c' l='984' ll='989' type='void compile_grep_patterns(struct grep_opt * opt)'/>
+<use f='codebrowser/revision.c' l='2362' u='c' c='setup_revisions'/>

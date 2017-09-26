@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='2253' type='4'/>
+<doc f='include/curl/curl.h' l='2253'>/* pass in a &apos;curl_unlock_function&apos; pointer */</doc>

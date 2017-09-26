@@ -1,0 +1,5 @@
+<def f='codebrowser/argv-array.h' l='6' ll='10'/>
+<size>16</size>
+<mbr r='argv_array::argv' o='0' t='const char **'/>
+<mbr r='argv_array::argc' o='64' t='int'/>
+<mbr r='argv_array::alloc' o='96' t='int'/>

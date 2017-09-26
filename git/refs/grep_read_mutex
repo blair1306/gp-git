@@ -1,0 +1,9 @@
+<dec f='codebrowser/grep.h' l='226' type='pthread_mutex_t'/>
+<use f='codebrowser/grep.h' l='231' u='a' c='grep_read_lock'/>
+<use f='codebrowser/grep.h' l='237' u='a' c='grep_read_unlock'/>
+<use f='codebrowser/builtin/grep.c' l='204' u='a' c='start_threads'/>
+<use f='codebrowser/builtin/grep.c' l='258' u='a' c='wait_all'/>
+<def f='codebrowser/grep.c' l='1426' type='pthread_mutex_t'/>
+<doc f='codebrowser/grep.c' l='1423'>/*
+ * Same as git_attr_mutex, but protecting the thread-unsafe object db access.
+ */</doc>

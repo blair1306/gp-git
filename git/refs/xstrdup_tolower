@@ -1,0 +1,4 @@
+<dec f='codebrowser/strbuf.h' l='608' type='char * xstrdup_tolower(const char * )'/>
+<use f='codebrowser/builtin/config.c' l='432' u='c' c='get_urlmatch'/>
+<use f='codebrowser/daemon.c' l='1221' u='c' c='cmd_main'/>
+<def f='codebrowser/strbuf.c' l='750' ll='761' type='char * xstrdup_tolower(const char * string)'/>

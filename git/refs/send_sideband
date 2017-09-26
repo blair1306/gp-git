@@ -1,0 +1,17 @@
+<dec f='codebrowser/sideband.h' l='8' type='void send_sideband(int fd, int band, const char * data, ssize_t sz, int packet_max)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='333' u='c' c='report_message'/>
+<use f='codebrowser/builtin/receive-pack.c' l='401' u='c' c='copy_to_sideband'/>
+<use f='codebrowser/builtin/receive-pack.c' l='402' u='c' c='copy_to_sideband'/>
+<use f='codebrowser/builtin/receive-pack.c' l='411' u='c' c='copy_to_sideband'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1908' u='c' c='report'/>
+<use f='codebrowser/builtin/upload-archive.c' l='58' u='c' c='error_clnt'/>
+<use f='codebrowser/builtin/upload-archive.c' l='71' u='c' c='process_input'/>
+<use f='codebrowser/fetch-pack.c' l='290' u='c' c='send_request'/>
+<use f='codebrowser/send-pack.c' l='123' u='c' c='pack_objects'/>
+<use f='codebrowser/send-pack.c' l='547' u='c' c='send_pack'/>
+<def f='codebrowser/sideband.c' l='111' ll='134' type='void send_sideband(int fd, int band, const char * data, ssize_t sz, int packet_max)'/>
+<doc f='codebrowser/sideband.c' l='107'>/*
+ * fd is connected to the remote side; send the sideband data
+ * over multiplexed packet stream.
+ */</doc>
+<use f='codebrowser/upload-pack.c' l='75' u='c' c='send_client_data'/>

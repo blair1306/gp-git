@@ -1,0 +1,42 @@
+<def f='codebrowser/dir.h' l='111' ll='124'/>
+<size>96</size>
+<doc f='codebrowser/dir.h' l='83'>/*
+ *  Untracked cache
+ *
+ *  The following inputs are sufficient to determine what files in a
+ *  directory are excluded:
+ *
+ *   - The list of files and directories of the directory in question
+ *   - The $GIT_DIR/index
+ *   - dir_struct flags
+ *   - The content of $GIT_DIR/info/exclude
+ *   - The content of core.excludesfile
+ *   - The content (or the lack) of .gitignore of all parent directories
+ *     from $GIT_WORK_TREE
+ *   - The check_only flag in read_directory_recursive (for
+ *     DIR_HIDE_EMPTY_DIRECTORIES)
+ *
+ *  The first input can be checked using directory mtime. In many
+ *  filesystems, directory mtime (stat_data field) is updated when its
+ *  files or direct subdirs are added or removed.
+ *
+ *  The second one can be hooked from cache_tree_invalidate_path().
+ *  Whenever a file (or a submodule) is added or removed from a
+ *  directory, we invalidate that directory.
+ *
+ *  The remaining inputs are easy, their SHA-1 could be used to verify
+ *  their contents (exclude_sha1[], info_exclude_sha1[] and
+ *  excludes_file_sha1[])
+ */</doc>
+<mbr r='untracked_cache_dir::dirs' o='0' t='struct untracked_cache_dir **'/>
+<mbr r='untracked_cache_dir::untracked' o='64' t='char **'/>
+<mbr r='untracked_cache_dir::stat_data' o='128' t='struct stat_data'/>
+<mbr r='untracked_cache_dir::untracked_alloc' o='416' t='unsigned int'/>
+<mbr r='untracked_cache_dir::dirs_nr' o='448' t='unsigned int'/>
+<mbr r='untracked_cache_dir::dirs_alloc' o='480' t='unsigned int'/>
+<mbr r='untracked_cache_dir::untracked_nr' o='512' t='unsigned int'/>
+<mbr r='untracked_cache_dir::check_only' o='544' t='unsigned int'/>
+<mbr r='untracked_cache_dir::valid' o='545' t='unsigned int'/>
+<mbr r='untracked_cache_dir::recurse' o='546' t='unsigned int'/>
+<mbr r='untracked_cache_dir::exclude_sha1' o='552' t='unsigned char [20]'/>
+<mbr r='untracked_cache_dir::name' o='712' t='char []'/>

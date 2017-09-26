@@ -1,0 +1,25 @@
+<dec f='codebrowser/merge-recursive.h' l='27' type='struct strbuf'/>
+<offset>704</offset>
+<use f='codebrowser/builtin/checkout.c' l='581' u='a' c='merge_working_tree'/>
+<use f='codebrowser/merge-recursive.c' l='29' u='m' c='flush_output'/>
+<use f='codebrowser/merge-recursive.c' l='30' u='m' c='flush_output'/>
+<use f='codebrowser/merge-recursive.c' l='31' u='a' c='flush_output'/>
+<use f='codebrowser/merge-recursive.c' l='42' u='a' c='err'/>
+<use f='codebrowser/merge-recursive.c' l='43' u='a' c='err'/>
+<use f='codebrowser/merge-recursive.c' l='46' u='a' c='err'/>
+<use f='codebrowser/merge-recursive.c' l='49' u='a' c='err'/>
+<use f='codebrowser/merge-recursive.c' l='51' u='m' c='err'/>
+<use f='codebrowser/merge-recursive.c' l='52' u='a' c='err'/>
+<use f='codebrowser/merge-recursive.c' l='188' u='a' c='output'/>
+<use f='codebrowser/merge-recursive.c' l='191' u='a' c='output'/>
+<use f='codebrowser/merge-recursive.c' l='194' u='a' c='output'/>
+<use f='codebrowser/merge-recursive.c' l='201' u='a' c='output_commit_title'/>
+<use f='codebrowser/merge-recursive.c' l='203' u='a' c='output_commit_title'/>
+<use f='codebrowser/merge-recursive.c' l='206' u='a' c='output_commit_title'/>
+<use f='codebrowser/merge-recursive.c' l='208' u='a' c='output_commit_title'/>
+<use f='codebrowser/merge-recursive.c' l='210' u='a' c='output_commit_title'/>
+<use f='codebrowser/merge-recursive.c' l='216' u='a' c='output_commit_title'/>
+<use f='codebrowser/merge-recursive.c' l='2096' u='a' c='merge_recursive'/>
+<use f='codebrowser/merge-recursive.c' l='2179' u='a' c='init_merge_options'/>
+<use f='codebrowser/sequencer.c' l='462' u='m' c='do_recursive_merge'/>
+<use f='codebrowser/sequencer.c' l='463' u='a' c='do_recursive_merge'/>

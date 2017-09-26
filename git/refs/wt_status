@@ -1,0 +1,36 @@
+<def f='codebrowser/wt-status.h' l='59' ll='97'/>
+<size>968</size>
+<mbr r='wt_status::is_initial' o='0' t='int'/>
+<mbr r='wt_status::branch' o='64' t='char *'/>
+<mbr r='wt_status::reference' o='128' t='const char *'/>
+<mbr r='wt_status::pathspec' o='192' t='struct pathspec'/>
+<mbr r='wt_status::verbose' o='384' t='int'/>
+<mbr r='wt_status::amend' o='416' t='int'/>
+<mbr r='wt_status::whence' o='448' t='enum commit_whence'/>
+<mbr r='wt_status::nowarn' o='480' t='int'/>
+<mbr r='wt_status::use_color' o='512' t='int'/>
+<mbr r='wt_status::no_gettext' o='544' t='int'/>
+<mbr r='wt_status::display_comment_prefix' o='576' t='int'/>
+<mbr r='wt_status::relative_paths' o='608' t='int'/>
+<mbr r='wt_status::submodule_summary' o='640' t='int'/>
+<mbr r='wt_status::show_ignored_files' o='672' t='int'/>
+<mbr r='wt_status::show_untracked_files' o='704' t='enum untracked_status_type'/>
+<mbr r='wt_status::ignore_submodule_arg' o='768' t='const char *'/>
+<mbr r='wt_status::color_palette' o='832' t='char [9][75]'/>
+<mbr r='wt_status::colopts' o='6240' t='unsigned int'/>
+<mbr r='wt_status::null_termination' o='6272' t='int'/>
+<mbr r='wt_status::commit_template' o='6304' t='int'/>
+<mbr r='wt_status::show_branch' o='6336' t='int'/>
+<mbr r='wt_status::show_stash' o='6368' t='int'/>
+<mbr r='wt_status::hints' o='6400' t='int'/>
+<mbr r='wt_status::status_format' o='6432' t='enum wt_status_format'/>
+<mbr r='wt_status::sha1_commit' o='6464' t='unsigned char [20]'/>
+<mbr r='wt_status::commitable' o='6624' t='int'/>
+<mbr r='wt_status::workdir_dirty' o='6656' t='int'/>
+<mbr r='wt_status::index_file' o='6720' t='const char *'/>
+<mbr r='wt_status::fp' o='6784' t='FILE *'/>
+<mbr r='wt_status::prefix' o='6848' t='const char *'/>
+<mbr r='wt_status::change' o='6912' t='struct string_list'/>
+<mbr r='wt_status::untracked' o='7168' t='struct string_list'/>
+<mbr r='wt_status::ignored' o='7424' t='struct string_list'/>
+<mbr r='wt_status::untracked_in_ms' o='7680' t='uint32_t'/>

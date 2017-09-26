@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='626' type='4'/>
+<doc f='include/curl/curl.h' l='626'>/* support added in 7.15.2, enum existed already
+                           in 7.10 */</doc>
+<use f='codebrowser/http.c' l='864' c='get_curl_handle'/>

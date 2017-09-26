@@ -1,0 +1,5 @@
+<def f='include/curl/multi.h' l='89' ll='96'/>
+<size>24</size>
+<mbr r='CURLMsg::msg' o='0' t='CURLMSG'/>
+<mbr r='CURLMsg::easy_handle' o='64' t='CURL *'/>
+<mbr r='CURLMsg::data' o='128' t='union (anonymous union at /usr/include/curl/multi.h:92:3)'/>

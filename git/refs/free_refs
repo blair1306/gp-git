@@ -1,0 +1,19 @@
+<dec f='codebrowser/remote.h' l='150' type='void free_refs(struct ref * ref)'/>
+<doc f='codebrowser/remote.h' l='147'>/*
+ * Frees the entire list and peers of elements.
+ */</doc>
+<use f='codebrowser/builtin/fetch.c' l='985' u='c' c='prune_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='1140' u='c' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1144' u='c' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1154' u='c' c='do_fetch'/>
+<use f='codebrowser/builtin/remote.c' l='356' u='c' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='357' u='c' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='421' u='c' c='get_push_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='422' u='c' c='get_push_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='476' u='c' c='get_head_names'/>
+<use f='codebrowser/builtin/remote.c' l='477' u='c' c='get_head_names'/>
+<use f='codebrowser/remote-curl.c' l='240' u='c' c='free_discovery'/>
+<use f='codebrowser/remote-curl.c' l='904' u='c' c='parse_fetch'/>
+<def f='codebrowser/remote.c' l='975' ll='983' type='void free_refs(struct ref * ref)'/>
+<use f='codebrowser/transport.c' l='258' u='c' c='fetch_refs_via_pack'/>
+<use f='codebrowser/transport.c' l='259' u='c' c='fetch_refs_via_pack'/>

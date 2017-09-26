@@ -1,0 +1,5 @@
+<dec f='codebrowser/tree-walk.h' l='83' type='char * make_traverse_path(char * path, const struct traverse_info * info, const struct name_entry * n)'/>
+<use f='codebrowser/builtin/merge-tree.c' l='178' u='c' c='traverse_path'/>
+<def f='codebrowser/tree-walk.c' l='182' ll='199' type='char * make_traverse_path(char * path, const struct traverse_info * info, const struct name_entry * n)'/>
+<use f='codebrowser/tree-walk.c' l='394' u='c' c='traverse_trees'/>
+<use f='codebrowser/unpack-trees.c' l='784' u='c' c='create_ce_entry'/>

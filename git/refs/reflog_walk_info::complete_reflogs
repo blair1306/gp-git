@@ -1,0 +1,5 @@
+<dec f='codebrowser/reflog-walk.c' l='110' type='struct string_list'/>
+<use f='codebrowser/reflog-walk.c' l='117' u='m' c='init_reflog_walk'/>
+<use f='codebrowser/reflog-walk.c' l='149' u='a' c='add_reflog_for_walk'/>
+<use f='codebrowser/reflog-walk.c' l='181' u='a' c='add_reflog_for_walk'/>
+<offset>192</offset>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/dir.h' l='189' type='struct exclude_stack *'/>
+<offset>768</offset>
+<doc f='codebrowser/dir.h' l='180'>/*
+	 * Temporary variables which are used during loading of the
+	 * per-directory exclude lists.
+	 *
+	 * exclude_stack points to the top of the exclude_stack, and
+	 * basebuf contains the full path to the current
+	 * (sub)directory in the traversal. Exclude points to the
+	 * matching exclude struct if the directory is excluded.
+	 */</doc>
+<use f='codebrowser/dir.c' l='1077' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1081' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1082' u='w' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1128' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1149' u='w' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1205' u='w' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2383' u='r' c='clear_directory'/>

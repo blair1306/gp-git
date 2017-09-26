@@ -1,0 +1,8 @@
+<dec f='codebrowser/git-compat-util.h' l='104'/>
+<use f='codebrowser/git-compat-util.h' l='769' u='c'/>
+<doc f='codebrowser/git-compat-util.h' l='99'>/*
+ * Returns true if the multiplication of &quot;a&quot; and &quot;b&quot; will
+ * overflow. The types of &quot;a&quot; and &quot;b&quot; must match and must be unsigned.
+ * Note that this macro evaluates &quot;a&quot; twice!
+ */</doc>
+<use f='codebrowser/wrapper.c' l='156' u='c'/>

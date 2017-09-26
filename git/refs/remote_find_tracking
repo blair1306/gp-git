@@ -1,0 +1,13 @@
+<dec f='codebrowser/remote.h' l='206' type='int remote_find_tracking(struct remote * remote, struct refspec * refspec)'/>
+<use f='codebrowser/branch.c' l='21' u='c' c='find_tracked_branch'/>
+<use f='codebrowser/branch.c' l='209' u='c' c='check_tracking_branch'/>
+<doc f='codebrowser/remote.h' l='203'>/*
+ * For the given remote, reads the refspec&apos;s src and sets the other fields.
+ */</doc>
+<use f='codebrowser/builtin/checkout.c' l='882' u='c' c='check_tracking_name'/>
+<use f='codebrowser/builtin/remote.c' l='522' u='c' c='add_branch_for_removal'/>
+<use f='codebrowser/builtin/remote.c' l='529' u='c' c='add_branch_for_removal'/>
+<use f='codebrowser/builtin/remote.c' l='842' u='c' c='append_ref_to_tracked_list'/>
+<def f='codebrowser/remote.c' l='917' ll='920' type='int remote_find_tracking(struct remote * remote, struct refspec * refspec)'/>
+<use f='codebrowser/remote.c' l='1631' u='c' c='set_merge'/>
+<use f='codebrowser/transport.c' l='303' u='c' c='transport_update_tracking_ref'/>

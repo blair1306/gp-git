@@ -1,0 +1,12 @@
+<dec f='codebrowser/exec_cmd.h' l='14' type='char * system_path(const char * path)'/>
+<use f='codebrowser/attr.c' l='828' u='c' c='git_etc_gitattributes'/>
+<use f='codebrowser/builtin/help.c' l='307' u='c' c='setup_man_path'/>
+<use f='codebrowser/builtin/help.c' l='360' u='c' c='show_info_page'/>
+<use f='codebrowser/builtin/help.c' l='371' u='c' c='get_html_page_path'/>
+<use f='codebrowser/builtin/init-db.c' l='108' u='c' c='copy_templates'/>
+<use f='codebrowser/config.c' l='1511' u='c' c='git_etc_gitconfig'/>
+<def f='codebrowser/exec_cmd.c' l='10' ll='39' type='char * system_path(const char * path)'/>
+<use f='codebrowser/exec_cmd.c' l='77' u='c' c='git_exec_path'/>
+<use f='codebrowser/git.c' l='74' u='c' c='handle_options'/>
+<use f='codebrowser/git.c' l='77' u='c' c='handle_options'/>
+<use f='codebrowser/git.c' l='80' u='c' c='handle_options'/>

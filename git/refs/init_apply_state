@@ -1,0 +1,4 @@
+<dec f='codebrowser/apply.h' l='118' type='int init_apply_state(struct apply_state * state, const char * prefix, struct lock_file * lock_file)'/>
+<def f='codebrowser/apply.c' l='77' ll='104' type='int init_apply_state(struct apply_state * state, const char * prefix, struct lock_file * lock_file)'/>
+<use f='codebrowser/builtin/am.c' l='1485' u='c' c='run_apply'/>
+<use f='codebrowser/builtin/apply.c' l='21' u='c' c='cmd_apply'/>

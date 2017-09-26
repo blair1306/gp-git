@@ -1,0 +1,22 @@
+<dec f='codebrowser/pack-objects.h' l='22' type='unsigned int'/>
+<use f='codebrowser/builtin/pack-objects.c' l='520' u='r' c='write_one'/>
+<use f='codebrowser/builtin/pack-objects.c' l='941' u='r' c='have_duplicate_entry'/>
+<use f='codebrowser/builtin/pack-objects.c' l='943' u='w' c='have_duplicate_entry'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1057' u='w' c='create_object_entry'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1423' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1450' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1744' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1744' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1746' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1746' u='r' c='type_size_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1827' u='r' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1877' u='r' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1998' u='r' c='find_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2018' u='r' c='find_deltas'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2412' u='r' c='prepare_pack'/>
+<offset>968</offset>
+<doc f='codebrowser/pack-objects.h' l='22'>/*
+				    * we do not pack this, but is available
+				    * to be used as the base object to delta
+				    * objects against.
+				    */</doc>

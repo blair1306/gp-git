@@ -1,0 +1,4 @@
+<dec f='codebrowser/apply.h' l='103' type='void (*)(const char *, struct __va_list_tag *)'/>
+<use f='codebrowser/apply.c' l='154' u='w' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='4902' u='r' c='apply_all_patches'/>
+<offset>2240</offset>

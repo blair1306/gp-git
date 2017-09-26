@@ -1,0 +1,7 @@
+<dec f='codebrowser/pathspec.h' l='44' type='enum attr_match_mode'/>
+<offset>64</offset>
+<use f='codebrowser/dir.c' l='239' u='r' c='match_attrs'/>
+<use f='codebrowser/pathspec.c' l='169' u='w' c='parse_pathspec_attr_match'/>
+<use f='codebrowser/pathspec.c' l='174' u='w' c='parse_pathspec_attr_match'/>
+<use f='codebrowser/pathspec.c' l='181' u='w' c='parse_pathspec_attr_match'/>
+<use f='codebrowser/pathspec.c' l='184' u='w' c='parse_pathspec_attr_match'/>

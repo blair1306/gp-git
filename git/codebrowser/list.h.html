@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>list.h source code [codebrowser/list.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="list_head "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/list.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='list.h.html'>list.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2002 Free Software Foundation, Inc.</i></td></tr>
+<tr><th id="3">3</th><td><i> * (originally part of the GNU C Library and Userspace RCU)</i></td></tr>
+<tr><th id="4">4</th><td><i> * Contributed by Ulrich Drepper &lt;drepper@redhat.com&gt;, 2002.</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * Copyright (C) 2009 Pierre-Marc Fournier</i></td></tr>
+<tr><th id="7">7</th><td><i> * Conversion to RCU list.</i></td></tr>
+<tr><th id="8">8</th><td><i> * Copyright (C) 2010 Mathieu Desnoyers &lt;mathieu.desnoyers@efficios.com&gt;</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="11">11</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="12">12</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="13">13</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="16">16</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="17">17</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="18">18</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="19">19</th><td><i> *</i></td></tr>
+<tr><th id="20">20</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="21">21</th><td><i> * License along with this library; if not, see</i></td></tr>
+<tr><th id="22">22</th><td><i> * &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="23">23</th><td><i> */</i></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="25">ifndef</span> <span class="macro" data-ref="_M/LIST_H">LIST_H</span></u></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/LIST_H" data-ref="_M/LIST_H">LIST_H</dfn>	1</u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i>/*</i></td></tr>
+<tr><th id="29">29</th><td><i> * The definitions of this file are adopted from those which can be</i></td></tr>
+<tr><th id="30">30</th><td><i> * found in the Linux kernel headers to enable people familiar with the</i></td></tr>
+<tr><th id="31">31</th><td><i> * latter find their way in these sources as well.</i></td></tr>
+<tr><th id="32">32</th><td><i> */</i></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i>/* Basic type for the double-link list. */</i></td></tr>
+<tr><th id="35">35</th><td><b>struct</b> <dfn class="type def" id="list_head" title='list_head' data-ref="list_head">list_head</dfn> {</td></tr>
+<tr><th id="36">36</th><td>	<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="decl" id="list_head::next" title='list_head::next' data-ref="list_head::next">next</dfn>, *<dfn class="decl" id="list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</dfn>;</td></tr>
+<tr><th id="37">37</th><td>};</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i>/* avoid conflicts with BSD-only sys/queue.h */</i></td></tr>
+<tr><th id="40">40</th><td><u>#undef <span class="macro" data-ref="_M/LIST_HEAD">LIST_HEAD</span></u></td></tr>
+<tr><th id="41">41</th><td><i>/* Define a variable with the head and tail of the list. */</i></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/LIST_HEAD" data-ref="_M/LIST_HEAD">LIST_HEAD</dfn>(name) \</u></td></tr>
+<tr><th id="43">43</th><td><u>	struct list_head name = { &amp;(name), &amp;(name) }</u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i>/* Initialize a new list head. */</i></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/INIT_LIST_HEAD" data-ref="_M/INIT_LIST_HEAD">INIT_LIST_HEAD</dfn>(ptr) \</u></td></tr>
+<tr><th id="47">47</th><td><u>	(ptr)-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a> = (ptr)-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a> = (ptr)</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/LIST_HEAD_INIT" data-ref="_M/LIST_HEAD_INIT">LIST_HEAD_INIT</dfn>(name) { &amp;(name), &amp;(name) }</u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><i>/* Add new element at the head of the list. */</i></td></tr>
+<tr><th id="52">52</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="list_add" title='list_add' data-ref="list_add">list_add</dfn>(<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col1 decl" id="1newp" title='newp' data-type='struct list_head *' data-ref="1newp">newp</dfn>, <b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col2 decl" id="2head" title='head' data-type='struct list_head *' data-ref="2head">head</dfn>)</td></tr>
+<tr><th id="53">53</th><td>{</td></tr>
+<tr><th id="54">54</th><td>	<a class="local col2 ref" href="#2head" title='head' data-ref="2head">head</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a> = <a class="local col1 ref" href="#1newp" title='newp' data-ref="1newp">newp</a>;</td></tr>
+<tr><th id="55">55</th><td>	<a class="local col1 ref" href="#1newp" title='newp' data-ref="1newp">newp</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a> = <a class="local col2 ref" href="#2head" title='head' data-ref="2head">head</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>;</td></tr>
+<tr><th id="56">56</th><td>	<a class="local col1 ref" href="#1newp" title='newp' data-ref="1newp">newp</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a> = <a class="local col2 ref" href="#2head" title='head' data-ref="2head">head</a>;</td></tr>
+<tr><th id="57">57</th><td>	<a class="local col2 ref" href="#2head" title='head' data-ref="2head">head</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a> = <a class="local col1 ref" href="#1newp" title='newp' data-ref="1newp">newp</a>;</td></tr>
+<tr><th id="58">58</th><td>}</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><i>/* Add new element at the tail of the list. */</i></td></tr>
+<tr><th id="61">61</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="list_add_tail" title='list_add_tail' data-ref="list_add_tail">list_add_tail</dfn>(<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col3 decl" id="3newp" title='newp' data-type='struct list_head *' data-ref="3newp">newp</dfn>, <b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col4 decl" id="4head" title='head' data-type='struct list_head *' data-ref="4head">head</dfn>)</td></tr>
+<tr><th id="62">62</th><td>{</td></tr>
+<tr><th id="63">63</th><td>	<a class="local col4 ref" href="#4head" title='head' data-ref="4head">head</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a> = <a class="local col3 ref" href="#3newp" title='newp' data-ref="3newp">newp</a>;</td></tr>
+<tr><th id="64">64</th><td>	<a class="local col3 ref" href="#3newp" title='newp' data-ref="3newp">newp</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a> = <a class="local col4 ref" href="#4head" title='head' data-ref="4head">head</a>;</td></tr>
+<tr><th id="65">65</th><td>	<a class="local col3 ref" href="#3newp" title='newp' data-ref="3newp">newp</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a> = <a class="local col4 ref" href="#4head" title='head' data-ref="4head">head</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a>;</td></tr>
+<tr><th id="66">66</th><td>	<a class="local col4 ref" href="#4head" title='head' data-ref="4head">head</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a> = <a class="local col3 ref" href="#3newp" title='newp' data-ref="3newp">newp</a>;</td></tr>
+<tr><th id="67">67</th><td>}</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i>/* Remove element from list. */</i></td></tr>
+<tr><th id="70">70</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="__list_del" title='__list_del' data-ref="__list_del">__list_del</dfn>(<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col5 decl" id="5prev" title='prev' data-type='struct list_head *' data-ref="5prev">prev</dfn>, <b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col6 decl" id="6next" title='next' data-type='struct list_head *' data-ref="6next">next</dfn>)</td></tr>
+<tr><th id="71">71</th><td>{</td></tr>
+<tr><th id="72">72</th><td>	<a class="local col6 ref" href="#6next" title='next' data-ref="6next">next</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a> = <a class="local col5 ref" href="#5prev" title='prev' data-ref="5prev">prev</a>;</td></tr>
+<tr><th id="73">73</th><td>	<a class="local col5 ref" href="#5prev" title='prev' data-ref="5prev">prev</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a> = <a class="local col6 ref" href="#6next" title='next' data-ref="6next">next</a>;</td></tr>
+<tr><th id="74">74</th><td>}</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><i>/* Remove element from list. */</i></td></tr>
+<tr><th id="77">77</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="list_del" title='list_del' data-ref="list_del">list_del</dfn>(<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col7 decl" id="7elem" title='elem' data-type='struct list_head *' data-ref="7elem">elem</dfn>)</td></tr>
+<tr><th id="78">78</th><td>{</td></tr>
+<tr><th id="79">79</th><td>	<a class="ref" href="#__list_del" title='__list_del' data-ref="__list_del">__list_del</a>(<a class="local col7 ref" href="#7elem" title='elem' data-ref="7elem">elem</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a>, <a class="local col7 ref" href="#7elem" title='elem' data-ref="7elem">elem</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>);</td></tr>
+<tr><th id="80">80</th><td>}</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><i>/* Remove element from list, initializing the element's list pointers. */</i></td></tr>
+<tr><th id="83">83</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="list_del_init" title='list_del_init' data-ref="list_del_init">list_del_init</dfn>(<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col8 decl" id="8elem" title='elem' data-type='struct list_head *' data-ref="8elem">elem</dfn>)</td></tr>
+<tr><th id="84">84</th><td>{</td></tr>
+<tr><th id="85">85</th><td>	<a class="ref" href="#list_del" title='list_del' data-ref="list_del">list_del</a>(<a class="local col8 ref" href="#8elem" title='elem' data-ref="8elem">elem</a>);</td></tr>
+<tr><th id="86">86</th><td>	<a class="macro" href="#46" title="(elem)-&gt;next = (elem)-&gt;prev = (elem)" data-ref="_M/INIT_LIST_HEAD">INIT_LIST_HEAD</a>(<a class="local col8 ref" href="#8elem" title='elem' data-ref="8elem">elem</a>);</td></tr>
+<tr><th id="87">87</th><td>}</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><i>/* Delete from list, add to another list as head. */</i></td></tr>
+<tr><th id="90">90</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="list_move" title='list_move' data-ref="list_move">list_move</dfn>(<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col9 decl" id="9elem" title='elem' data-type='struct list_head *' data-ref="9elem">elem</dfn>, <b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col0 decl" id="10head" title='head' data-type='struct list_head *' data-ref="10head">head</dfn>)</td></tr>
+<tr><th id="91">91</th><td>{</td></tr>
+<tr><th id="92">92</th><td>	<a class="ref" href="#__list_del" title='__list_del' data-ref="__list_del">__list_del</a>(<a class="local col9 ref" href="#9elem" title='elem' data-ref="9elem">elem</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a>, <a class="local col9 ref" href="#9elem" title='elem' data-ref="9elem">elem</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>);</td></tr>
+<tr><th id="93">93</th><td>	<a class="ref" href="#list_add" title='list_add' data-ref="list_add">list_add</a>(<a class="local col9 ref" href="#9elem" title='elem' data-ref="9elem">elem</a>, <a class="local col0 ref" href="#10head" title='head' data-ref="10head">head</a>);</td></tr>
+<tr><th id="94">94</th><td>}</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><i>/* Replace an old entry. */</i></td></tr>
+<tr><th id="97">97</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="list_replace" title='list_replace' data-ref="list_replace">list_replace</dfn>(<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col1 decl" id="11old" title='old' data-type='struct list_head *' data-ref="11old">old</dfn>, <b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col2 decl" id="12newp" title='newp' data-type='struct list_head *' data-ref="12newp">newp</dfn>)</td></tr>
+<tr><th id="98">98</th><td>{</td></tr>
+<tr><th id="99">99</th><td>	<a class="local col2 ref" href="#12newp" title='newp' data-ref="12newp">newp</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a> = <a class="local col1 ref" href="#11old" title='old' data-ref="11old">old</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>;</td></tr>
+<tr><th id="100">100</th><td>	<a class="local col2 ref" href="#12newp" title='newp' data-ref="12newp">newp</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a> = <a class="local col1 ref" href="#11old" title='old' data-ref="11old">old</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a>;</td></tr>
+<tr><th id="101">101</th><td>	<a class="local col2 ref" href="#12newp" title='newp' data-ref="12newp">newp</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a> = <a class="local col2 ref" href="#12newp" title='newp' data-ref="12newp">newp</a>;</td></tr>
+<tr><th id="102">102</th><td>	<a class="local col2 ref" href="#12newp" title='newp' data-ref="12newp">newp</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a> = <a class="local col2 ref" href="#12newp" title='newp' data-ref="12newp">newp</a>;</td></tr>
+<tr><th id="103">103</th><td>}</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><i>/* Join two lists. */</i></td></tr>
+<tr><th id="106">106</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="list_splice" title='list_splice' data-ref="list_splice">list_splice</dfn>(<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col3 decl" id="13add" title='add' data-type='struct list_head *' data-ref="13add">add</dfn>, <b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col4 decl" id="14head" title='head' data-type='struct list_head *' data-ref="14head">head</dfn>)</td></tr>
+<tr><th id="107">107</th><td>{</td></tr>
+<tr><th id="108">108</th><td>	<i>/* Do nothing if the list which gets added is empty. */</i></td></tr>
+<tr><th id="109">109</th><td>	<b>if</b> (<a class="local col3 ref" href="#13add" title='add' data-ref="13add">add</a> != <a class="local col3 ref" href="#13add" title='add' data-ref="13add">add</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>) {</td></tr>
+<tr><th id="110">110</th><td>		<a class="local col3 ref" href="#13add" title='add' data-ref="13add">add</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a> = <a class="local col4 ref" href="#14head" title='head' data-ref="14head">head</a>;</td></tr>
+<tr><th id="111">111</th><td>		<a class="local col3 ref" href="#13add" title='add' data-ref="13add">add</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a> = <a class="local col4 ref" href="#14head" title='head' data-ref="14head">head</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>;</td></tr>
+<tr><th id="112">112</th><td>		<a class="local col4 ref" href="#14head" title='head' data-ref="14head">head</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a> = <a class="local col3 ref" href="#13add" title='add' data-ref="13add">add</a>-&gt;<a class="ref" href="#list_head::prev" title='list_head::prev' data-ref="list_head::prev">prev</a>;</td></tr>
+<tr><th id="113">113</th><td>		<a class="local col4 ref" href="#14head" title='head' data-ref="14head">head</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a> = <a class="local col3 ref" href="#13add" title='add' data-ref="13add">add</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>;</td></tr>
+<tr><th id="114">114</th><td>	}</td></tr>
+<tr><th id="115">115</th><td>}</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i>/* Get typed element from list at a given position. */</i></td></tr>
+<tr><th id="118">118</th><td><u>#define <dfn class="macro" id="_M/list_entry" data-ref="_M/list_entry">list_entry</dfn>(ptr, type, member) \</u></td></tr>
+<tr><th id="119">119</th><td><u>	((type *) ((char *) (ptr) - offsetof(type, member)))</u></td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td><i>/* Get first entry from a list. */</i></td></tr>
+<tr><th id="122">122</th><td><u>#define <dfn class="macro" id="_M/list_first_entry" data-ref="_M/list_first_entry">list_first_entry</dfn>(ptr, type, member) \</u></td></tr>
+<tr><th id="123">123</th><td><u>	list_entry((ptr)-&gt;next, type, member)</u></td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><i>/* Iterate forward over the elements of the list. */</i></td></tr>
+<tr><th id="126">126</th><td><u>#define <dfn class="macro" id="_M/list_for_each" data-ref="_M/list_for_each">list_for_each</dfn>(pos, head) \</u></td></tr>
+<tr><th id="127">127</th><td><u>	for (pos = (head)-&gt;next; pos != (head); pos = pos-&gt;next)</u></td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><i>/*</i></td></tr>
+<tr><th id="130">130</th><td><i> * Iterate forward over the elements list. The list elements can be</i></td></tr>
+<tr><th id="131">131</th><td><i> * removed from the list while doing this.</i></td></tr>
+<tr><th id="132">132</th><td><i> */</i></td></tr>
+<tr><th id="133">133</th><td><u>#define <dfn class="macro" id="_M/list_for_each_safe" data-ref="_M/list_for_each_safe">list_for_each_safe</dfn>(pos, p, head) \</u></td></tr>
+<tr><th id="134">134</th><td><u>	for (pos = (head)-&gt;next, p = pos-&gt;next; \</u></td></tr>
+<tr><th id="135">135</th><td><u>		pos != (head); \</u></td></tr>
+<tr><th id="136">136</th><td><u>		pos = p, p = pos-&gt;next)</u></td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><i>/* Iterate backward over the elements of the list. */</i></td></tr>
+<tr><th id="139">139</th><td><u>#define <dfn class="macro" id="_M/list_for_each_prev" data-ref="_M/list_for_each_prev">list_for_each_prev</dfn>(pos, head) \</u></td></tr>
+<tr><th id="140">140</th><td><u>	for (pos = (head)-&gt;prev; pos != (head); pos = pos-&gt;prev)</u></td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><i>/*</i></td></tr>
+<tr><th id="143">143</th><td><i> * Iterate backwards over the elements list. The list elements can be</i></td></tr>
+<tr><th id="144">144</th><td><i> * removed from the list while doing this.</i></td></tr>
+<tr><th id="145">145</th><td><i> */</i></td></tr>
+<tr><th id="146">146</th><td><u>#define <dfn class="macro" id="_M/list_for_each_prev_safe" data-ref="_M/list_for_each_prev_safe">list_for_each_prev_safe</dfn>(pos, p, head) \</u></td></tr>
+<tr><th id="147">147</th><td><u>	for (pos = (head)-&gt;prev, p = pos-&gt;prev; \</u></td></tr>
+<tr><th id="148">148</th><td><u>		pos != (head); \</u></td></tr>
+<tr><th id="149">149</th><td><u>		pos = p, p = pos-&gt;prev)</u></td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="list_empty" title='list_empty' data-ref="list_empty">list_empty</dfn>(<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col5 decl" id="15head" title='head' data-type='struct list_head *' data-ref="15head">head</dfn>)</td></tr>
+<tr><th id="152">152</th><td>{</td></tr>
+<tr><th id="153">153</th><td>	<b>return</b> <a class="local col5 ref" href="#15head" title='head' data-ref="15head">head</a> == <a class="local col5 ref" href="#15head" title='head' data-ref="15head">head</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>;</td></tr>
+<tr><th id="154">154</th><td>}</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="list_replace_init" title='list_replace_init' data-ref="list_replace_init">list_replace_init</dfn>(<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col6 decl" id="16old" title='old' data-type='struct list_head *' data-ref="16old">old</dfn>,</td></tr>
+<tr><th id="157">157</th><td>				     <b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col7 decl" id="17newp" title='newp' data-type='struct list_head *' data-ref="17newp">newp</dfn>)</td></tr>
+<tr><th id="158">158</th><td>{</td></tr>
+<tr><th id="159">159</th><td>	<b>struct</b> <a class="type" href="#list_head" title='list_head' data-ref="list_head">list_head</a> *<dfn class="local col8 decl" id="18head" title='head' data-type='struct list_head *' data-ref="18head">head</dfn> = <a class="local col6 ref" href="#16old" title='old' data-ref="16old">old</a>-&gt;<a class="ref" href="#list_head::next" title='list_head::next' data-ref="list_head::next">next</a>;</td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td>	<a class="ref" href="#list_del" title='list_del' data-ref="list_del">list_del</a>(<a class="local col6 ref" href="#16old" title='old' data-ref="16old">old</a>);</td></tr>
+<tr><th id="162">162</th><td>	<a class="ref" href="#list_add_tail" title='list_add_tail' data-ref="list_add_tail">list_add_tail</a>(<a class="local col7 ref" href="#17newp" title='newp' data-ref="17newp">newp</a>, <a class="local col8 ref" href="#18head" title='head' data-ref="18head">head</a>);</td></tr>
+<tr><th id="163">163</th><td>	<a class="macro" href="#46" title="(old)-&gt;next = (old)-&gt;prev = (old)" data-ref="_M/INIT_LIST_HEAD">INIT_LIST_HEAD</a>(<a class="local col6 ref" href="#16old" title='old' data-ref="16old">old</a>);</td></tr>
+<tr><th id="164">164</th><td>}</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td><u>#<span data-ppcond="25">endif</span> /* LIST_H */</u></td></tr>
+<tr><th id="167">167</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='http-walker.c.html'>codebrowser/http-walker.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/mailinfo.h' l='4'/>
+<use f='codebrowser/mailinfo.h' l='20' u='c'/>
+<use f='codebrowser/mailinfo.c' l='248' u='c'/>
+<use f='codebrowser/mailinfo.c' l='251' u='c'/>

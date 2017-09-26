@@ -1,0 +1,9 @@
+<dec f='codebrowser/hashmap.h' l='112' type='unsigned int memihash(const void * buf, size_t len)'/>
+<def f='codebrowser/hashmap.c' l='40' ll='51' type='unsigned int memihash(const void * buf, size_t len)'/>
+<use f='codebrowser/name-hash.c' l='44' u='c' c='find_dir_entry'/>
+<use f='codebrowser/name-hash.c' l='71' u='c' c='hash_dir_entry'/>
+<use f='codebrowser/name-hash.c' l='109' u='c' c='hash_index_entry'/>
+<use f='codebrowser/name-hash.c' l='291' u='c' c='hash_dir_entry_with_parent_and_prefix'/>
+<use f='codebrowser/name-hash.c' l='450' u='c' c='handle_range_1'/>
+<use f='codebrowser/name-hash.c' l='710' u='c' c='index_file_exists'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='180' u='c' c='cmd_main'/>

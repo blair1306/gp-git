@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='172' type='int'/>
+<offset>1760</offset>
+<doc f='codebrowser/diff.h' l='171'>/* to support internal diff recursion by --follow hack*/</doc>
+<use f='codebrowser/diff.c' l='4999' u='r' c='diffcore_std'/>
+<use f='codebrowser/diff.c' l='5012' u='r' c='diffcore_std'/>
+<use f='codebrowser/diff.c' l='5022' u='w' c='diffcore_std'/>
+<use f='codebrowser/tree-diff.c' l='623' u='w' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='656' u='w' c='try_to_follow_renames'/>

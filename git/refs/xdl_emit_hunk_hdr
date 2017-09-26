@@ -1,0 +1,3 @@
+<dec f='codebrowser/xdiff/xutils.h' l='40' type='int xdl_emit_hunk_hdr(long s1, long c1, long s2, long c2, const char * func, long funclen, xdemitcb_t * ecb)'/>
+<use f='codebrowser/xdiff/xemit.c' l='257' u='c' c='xdl_emit_diff'/>
+<def f='codebrowser/xdiff/xutils.c' l='313' ll='360' type='int xdl_emit_hunk_hdr(long s1, long c1, long s2, long c2, const char * func, long funclen, xdemitcb_t * ecb)'/>

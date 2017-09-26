@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit.h' l='180' type='int has_non_ascii(const char * text)'/>
+<use f='codebrowser/builtin/log.c' l='1017' u='c' c='make_cover_letter'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='230' u='c' c='diffcore_pickaxe'/>
+<use f='codebrowser/grep.c' l='621' u='c' c='compile_regexp'/>
+<use f='codebrowser/log-tree.c' l='671' u='c' c='show_log'/>
+<def f='codebrowser/pretty.c' l='210' ll='220' type='int has_non_ascii(const char * s)'/>
+<use f='codebrowser/pretty.c' l='1615' u='c' c='pp_title_line'/>

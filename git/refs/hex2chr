@@ -1,0 +1,12 @@
+<def f='codebrowser/cache.h' l='1265' ll='1269' type='int hex2chr(const char * s)'/>
+<doc f='codebrowser/cache.h' l='1261'>/*
+ * Convert two consecutive hexadecimal digits into a char.  Return a
+ * negative value on error.  Don&apos;t run over the end of short strings.
+ */</doc>
+<use f='codebrowser/hex.c' l='42' u='c' c='get_sha1_hex'/>
+<use f='codebrowser/pkt-line.c' l='273' u='c' c='packet_length'/>
+<use f='codebrowser/pkt-line.c' l='274' u='c' c='packet_length'/>
+<use f='codebrowser/pretty.c' l='1103' u='c' c='format_commit_one'/>
+<use f='codebrowser/ref-filter.c' l='2058' u='c' c='append_literal'/>
+<use f='codebrowser/url.c' l='50' u='c' c='url_decode_internal'/>
+<use f='codebrowser/urlmatch.c' l='47' u='c' c='append_normalized_escapes'/>

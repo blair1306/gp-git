@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='789' type='3'/>
+<doc f='include/curl/curl.h' l='789'>/* one CWD to full dir, then work on file */</doc>

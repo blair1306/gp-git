@@ -1,0 +1,3 @@
+<dec f='include/curl/curl.h' l='629' type='6'/>
+<doc f='include/curl/curl.h' l='629'>/* added in 7.18.0 */</doc>
+<use f='codebrowser/http.c' l='861' c='get_curl_handle'/>

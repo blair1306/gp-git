@@ -1,0 +1,37 @@
+<dec f='codebrowser/blame.h' l='44' type='struct commit *'/>
+<use f='codebrowser/blame.c' l='18' u='r' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='23' u='r' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='42' u='w' c='make_origin'/>
+<use f='codebrowser/blame.c' l='434' u='r' c='sanity_check_refcnt'/>
+<use f='codebrowser/blame.c' l='481' u='r' c='queue_blames'/>
+<use f='codebrowser/blame.c' l='488' u='r' c='queue_blames'/>
+<use f='codebrowser/blame.c' l='505' u='r' c='fill_blob_sha1_and_mode'/>
+<use f='codebrowser/blame.c' l='555' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='559' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='624' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='628' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='960' u='r' c='pass_blame_to_parent'/>
+<use f='codebrowser/blame.c' l='961' u='r' c='pass_blame_to_parent'/>
+<use f='codebrowser/blame.c' l='1109' u='r' c='find_copy_in_blob'/>
+<use f='codebrowser/blame.c' l='1258' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1262' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1402' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1565' u='r' c='assign_blame'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/blame.c' l='224' u='r' c='write_filename_info'/>
+<use f='codebrowser/builtin/blame.c' l='241' u='r' c='emit_one_suspect_detail'/>
+<use f='codebrowser/builtin/blame.c' l='244' u='r' c='emit_one_suspect_detail'/>
+<use f='codebrowser/builtin/blame.c' l='245' u='r' c='emit_one_suspect_detail'/>
+<use f='codebrowser/builtin/blame.c' l='255' u='r' c='emit_one_suspect_detail'/>
+<use f='codebrowser/builtin/blame.c' l='275' u='r' c='found_guilty_entry'/>
+<use f='codebrowser/builtin/blame.c' l='327' u='r' c='emit_porcelain_details'/>
+<use f='codebrowser/builtin/blame.c' l='340' u='r' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='379' u='r' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='380' u='r' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='387' u='r' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='457' u='r' c='output'/>
+<use f='codebrowser/builtin/blame.c' l='502' u='r' c='update_auto_abbrev'/>
+<use f='codebrowser/builtin/blame.c' l='534' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='536' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='537' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='901' u='r' c='cmd_blame'/>

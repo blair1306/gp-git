@@ -1,0 +1,19 @@
+<dec f='codebrowser/pack-objects.h' l='41' type='enum (anonymous enum at /home/jon/workspace/git/pack-objects.h:37:2)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1593' u='r' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1608' u='r' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1610' u='r' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1618' u='w' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1639' u='w' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1640' u='r' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1642' u='w' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1663' u='r' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1665' u='r' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1667' u='r' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1691' u='w' c='break_delta_chains'/>
+<offset>992</offset>
+<doc f='codebrowser/pack-objects.h' l='31'>/*
+	 * State flags for depth-first search used for analyzing delta cycles.
+	 *
+	 * The depth is measured in delta-links to the base (so if A is a delta
+	 * against B, then A has a depth of 1, and B a depth of 0).
+	 */</doc>

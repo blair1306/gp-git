@@ -1,0 +1,8 @@
+<dec f='codebrowser/commit.h' l='298' type='void prepare_shallow_info(struct shallow_info * , struct oid_array * )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1983' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/fetch-pack.c' l='1167' u='c' c='fetch_pack'/>
+<def f='codebrowser/shallow.c' l='388' ll='408' type='void prepare_shallow_info(struct shallow_info * info, struct oid_array * sa)'/>
+<doc f='codebrowser/shallow.c' l='384'>/*
+ * Step 1, split sender shallow commits into &quot;ours&quot; and &quot;theirs&quot;
+ * Step 2, clean &quot;ours&quot; based on .git/shallow
+ */</doc>

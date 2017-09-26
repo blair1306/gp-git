@@ -1,0 +1,5 @@
+<dec f='codebrowser/submodule.h' l='93' type='int submodule_uses_gitfile(const char * path)'/>
+<use f='codebrowser/builtin/rm.c' l='84' u='c' c='submodules_absorb_gitdir_if_needed'/>
+<def f='codebrowser/submodule.c' l='1395' ll='1429' type='int submodule_uses_gitfile(const char * path)'/>
+<use f='codebrowser/submodule.c' l='1448' u='c' c='bad_to_remove_submodule'/>
+<use f='codebrowser/submodule.c' l='1580' u='c' c='submodule_move_head'/>

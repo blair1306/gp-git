@@ -1,0 +1,15 @@
+<dec f='codebrowser/parse-options.h' l='243'/>
+<use f='codebrowser/builtin/add.c' l='275' u='c'/>
+<use f='codebrowser/builtin/branch.c' l='588' u='c'/>
+<use f='codebrowser/builtin/checkout-index.c' l='162' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='1160' u='c'/>
+<use f='codebrowser/builtin/clean.c' l='908' u='c'/>
+<use f='codebrowser/builtin/fetch.c' l='116' u='c'/>
+<use f='codebrowser/builtin/mv.c' l='125' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='415' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='486' u='c'/>
+<use f='codebrowser/builtin/pull.c' l='190' u='c'/>
+<use f='codebrowser/builtin/rm.c' l='245' u='c'/>
+<use f='codebrowser/builtin/tag.c' l='394' u='c'/>
+<use f='codebrowser/builtin/update-server-info.c' l='15' u='c'/>
+<use f='codebrowser/builtin/worktree.c' l='327' u='c'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs/refs-internal.h' l='662' type='delete_reflog_fn *'/>
+<use f='codebrowser/refs.c' l='2002' u='r' c='refs_delete_reflog'/>
+<offset>1280</offset>

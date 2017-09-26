@@ -1,0 +1,10 @@
+<dec f='codebrowser/run-command.h' l='45' type='unsigned int'/>
+<offset>583</offset>
+<use f='codebrowser/builtin/difftool.c' l='221' u='w' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='233' u='w' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='392' u='w' c='run_dir_diff'/>
+<use f='codebrowser/git.c' l='568' u='w' c='execv_dashed_external'/>
+<use f='codebrowser/run-command.c' l='748' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='905' u='w' c='run_command_v_opt_cd_env'/>
+<use f='codebrowser/sub-process.c' l='57' u='w' c='subprocess_stop'/>
+<use f='codebrowser/sub-process.c' l='90' u='w' c='subprocess_start'/>

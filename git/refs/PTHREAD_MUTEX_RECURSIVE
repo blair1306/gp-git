@@ -1,0 +1,2 @@
+<dec f='include/pthread.h' l='51' type='1'/>
+<use f='codebrowser/thread-utils.c' l='71' u='r' c='init_recursive_mutex'/>

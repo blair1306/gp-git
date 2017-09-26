@@ -1,0 +1,38 @@
+<def f='codebrowser/cache.h' l='1978' ll='1981'/>
+<dec f='codebrowser/cache.h' l='1982' type='struct startup_info *'/>
+<size>16</size>
+<doc f='codebrowser/cache.h' l='1977'>/* setup.c */</doc>
+<mbr r='startup_info::have_repository' o='0' t='int'/>
+<mbr r='startup_info::prefix' o='64' t='const char *'/>
+<use f='codebrowser/apply.c' l='122' u='r' c='check_apply_state'/>
+<use f='codebrowser/archive.c' l='508' u='r' c='write_archive'/>
+<use f='codebrowser/attr.c' l='887' u='r' c='bootstrap_attr_stack'/>
+<use f='codebrowser/builtin/bundle.c' l='57' u='r' c='cmd_bundle'/>
+<use f='codebrowser/builtin/bundle.c' l='61' u='r' c='cmd_bundle'/>
+<use f='codebrowser/builtin/config.c' l='379' u='r' c='check_write'/>
+<use f='codebrowser/builtin/config.c' l='483' u='r' c='cmd_config'/>
+<use f='codebrowser/builtin/grep.c' l='910' u='r' c='cmd_grep'/>
+<use f='codebrowser/builtin/index-pack.c' l='794' u='r' c='sha1_object'/>
+<use f='codebrowser/builtin/index-pack.c' l='1744' u='r' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/init-db.c' l='361' u='r' c='init_db'/>
+<use f='codebrowser/builtin/merge-file.c' l='53' u='r' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/rev-parse.c' l='232' u='r' c='show_file'/>
+<use f='codebrowser/builtin/rev-parse.c' l='678' u='r' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/shortlog.c' l='245' u='r' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/update-index.c' l='876' u='r' c='unresolve_callback'/>
+<use f='codebrowser/builtin/update-index.c' l='893' u='r' c='reupdate_callback'/>
+<use f='codebrowser/diff.c' l='3107' u='r' c='diff_abbrev_oid'/>
+<use f='codebrowser/dir.c' l='2334' u='r' c='setup_standard_excludes'/>
+<use f='codebrowser/environment.c' l='171' u='r' c='have_git_dir'/>
+<use f='codebrowser/git.c' l='327' u='r' c='run_builtin'/>
+<use f='codebrowser/mailmap.c' l='250' u='r' c='read_mailmap'/>
+<use f='codebrowser/remote.c' l='477' u='r' c='read_config'/>
+<def f='codebrowser/setup.c' l='12' type='struct startup_info *'/>
+<use f='codebrowser/setup.c' l='1093' u='r' c='setup_git_directory_gently'/>
+<use f='codebrowser/setup.c' l='1094' u='r' c='setup_git_directory_gently'/>
+<use f='codebrowser/setup.c' l='1107' u='r' c='setup_git_directory_gently'/>
+<use f='codebrowser/setup.c' l='1177' u='r' c='check_repository_format'/>
+<use f='codebrowser/sha1_file.c' l='3464' u='r' c='has_sha1_file_with_flags'/>
+<use f='codebrowser/sha1_name.c' l='1494' u='r' c='resolve_relative_path'/>
+<use f='codebrowser/sha1_name.c' l='1495' u='r' c='resolve_relative_path'/>
+<use f='codebrowser/sha1_name.c' l='1495' u='r' c='resolve_relative_path'/>

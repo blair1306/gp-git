@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='539' type='int discover_git_directory(struct strbuf * commondir, struct strbuf * gitdir)'/>
+<doc f='codebrowser/cache.h' l='531'>/*
+ * Find the commondir and gitdir of the repository that contains the current
+ * working directory, without changing the working directory or other global
+ * state. The result is appended to commondir and gitdir.  If the discovered
+ * gitdir does not correspond to a worktree, then &apos;commondir&apos; and &apos;gitdir&apos; will
+ * both have the same result appended to the buffer.  The return value is
+ * either 0 upon success and non-zero if no repository was found.
+ */</doc>
+<use f='codebrowser/config.c' l='1652' u='c' c='read_early_config'/>
+<def f='codebrowser/setup.c' l='977' ll='1024' type='int discover_git_directory(struct strbuf * commondir, struct strbuf * gitdir)'/>

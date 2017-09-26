@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1220' type='int read_loose_object(const char * path, const unsigned char * expected_sha1, enum object_type * type, unsigned long * size, void ** contents)'/>
+<doc f='codebrowser/cache.h' l='1213'>/*
+ * Open the loose object at path, check its sha1, and return the contents,
+ * type, and size. If the object is a blob, then &quot;contents&quot; may return NULL,
+ * to allow streaming of large blobs.
+ *
+ * Returns 0 on success, negative on error (details may be written to stderr).
+ */</doc>
+<use f='codebrowser/builtin/fsck.c' l='495' u='c' c='parse_loose_object'/>
+<def f='codebrowser/sha1_file.c' l='3951' ll='4008' type='int read_loose_object(const char * path, const unsigned char * expected_sha1, enum object_type * type, unsigned long * size, void ** contents)'/>

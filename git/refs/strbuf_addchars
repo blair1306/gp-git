@@ -1,0 +1,13 @@
+<dec f='codebrowser/strbuf.h' l='215' type='void strbuf_addchars(struct strbuf * sb, int c, size_t n)'/>
+<doc f='codebrowser/strbuf.h' l='212'>/**
+ * Add a character the specified number of times to the buffer.
+ */</doc>
+<use f='codebrowser/graph.c' l='1228' u='c' c='graph_padding_line'/>
+<use f='codebrowser/merge-recursive.c' l='188' u='c' c='output'/>
+<use f='codebrowser/merge-recursive.c' l='201' u='c' c='output_commit_title'/>
+<use f='codebrowser/pretty.c' l='1396' u='c' c='format_and_pad_commit'/>
+<use f='codebrowser/pretty.c' l='1684' u='c' c='strbuf_add_tabexpand'/>
+<use f='codebrowser/pretty.c' l='1708' u='c' c='pp_handle_indent'/>
+<def f='codebrowser/strbuf.c' l='207' ll='212' type='void strbuf_addchars(struct strbuf * sb, int c, size_t n)'/>
+<use f='codebrowser/utf8.c' l='251' u='c' c='strbuf_add_indented_text'/>
+<use f='codebrowser/utf8.c' l='301' u='c' c='strbuf_add_wrapped_text'/>

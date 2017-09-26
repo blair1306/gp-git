@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='1464' type='const char *'/>
+<offset>320</offset>
+<use f='codebrowser/builtin/blame.c' l='133' u='r' c='get_ac_line'/>
+<use f='codebrowser/builtin/commit.c' l='593' u='r' c='determine_author_info'/>
+<use f='codebrowser/commit.c' l='606' u='r' c='record_author_date'/>
+<use f='codebrowser/commit.c' l='610' u='r' c='record_author_date'/>
+<use f='codebrowser/ident.c' l='321' u='w' c='split_ident_line'/>
+<use f='codebrowser/ident.c' l='322' u='r' c='split_ident_line'/>
+<use f='codebrowser/ident.c' l='335' u='w' c='split_ident_line'/>
+<use f='codebrowser/pretty.c' l='412' u='r' c='show_ident_date'/>
+<use f='codebrowser/pretty.c' l='710' u='r' c='format_person_part'/>

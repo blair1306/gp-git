@@ -1,0 +1,25 @@
+<dec f='codebrowser/strbuf.h' l='105' type='void strbuf_attach(struct strbuf * , void * , size_t , size_t )'/>
+<doc f='codebrowser/strbuf.h' l='97'>/**
+ * Attach a string to a buffer. You should specify the string to attach,
+ * the current length of the string and the amount of allocated memory.
+ * The amount must be larger than the string length, because the string you
+ * pass is supposed to be a NUL-terminated string.  This string _must_ be
+ * malloc()ed, and after attaching, the pointer cannot be relied upon
+ * anymore, and neither be free()d directly.
+ */</doc>
+<use f='codebrowser/apply.c' l='3241' u='c' c='read_blob_object'/>
+<use f='codebrowser/archive.c' l='80' u='c' c='sha1_file_to_archive'/>
+<use f='codebrowser/blame.c' l='214' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/am.c' l='1198' u='c' c='am_append_signoff'/>
+<use f='codebrowser/fast-import.c' l='2997' u='c' c='cat_blob'/>
+<use f='codebrowser/imap-send.c' l='1199' u='c' c='lf_to_crlf'/>
+<use f='codebrowser/mailinfo.c' l='442' u='c' c='convert_to_utf8'/>
+<use f='codebrowser/merge-recursive.c' l='1613' u='c' c='read_oid_strbuf'/>
+<use f='codebrowser/path.c' l='793' u='c' c='enter_repo'/>
+<use f='codebrowser/pretty.c' l='585' u='c' c='replace_encoding_header'/>
+<use f='codebrowser/pretty.c' l='1521' u='c' c='format_commit_message'/>
+<use f='codebrowser/refs/files-backend.c' l='1422' u='c' c='commit_ref'/>
+<use f='codebrowser/rerere.c' l='1010' u='c' c='handle_cache'/>
+<def f='codebrowser/strbuf.c' l='48' ll='56' type='void strbuf_attach(struct strbuf * sb, void * buf, size_t len, size_t alloc)'/>
+<use f='codebrowser/strbuf.c' l='106' u='c' c='strbuf_reencode'/>
+<use f='codebrowser/trailer.c' l='1028' u='c' c='trailer_info_get'/>

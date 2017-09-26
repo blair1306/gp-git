@@ -1,0 +1,3 @@
+<dec f='codebrowser/wt-status.h' l='119' type='void wt_status_prepare(struct wt_status * s)'/>
+<use f='codebrowser/builtin/commit.c' l='197' u='c' c='status_init_config'/>
+<def f='codebrowser/wt-status.c' l='122' ll='142' type='void wt_status_prepare(struct wt_status * s)'/>

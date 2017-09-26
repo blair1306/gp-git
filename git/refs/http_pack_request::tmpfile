@@ -1,0 +1,11 @@
+<dec f='codebrowser/http.h' l='203' type='char [4096]'/>
+<offset>256</offset>
+<use f='codebrowser/http.c' l='2020' u='r' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2022' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2027' u='r' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2036' u='r' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2044' u='r' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2070' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2070' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2072' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2075' c='new_http_pack_request'/>

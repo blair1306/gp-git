@@ -1,0 +1,6 @@
+<def f='codebrowser/ref-filter.h' l='46' ll='50'/>
+<size>24</size>
+<mbr r='ref_array::nr' o='0' t='int'/>
+<mbr r='ref_array::alloc' o='32' t='int'/>
+<mbr r='ref_array::items' o='64' t='struct ref_array_item **'/>
+<mbr r='ref_array::revs' o='128' t='struct rev_info *'/>

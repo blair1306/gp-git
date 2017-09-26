@@ -1,0 +1,12 @@
+<dec f='codebrowser/diffcore.h' l='34' type='int'/>
+<offset>480</offset>
+<doc f='codebrowser/diffcore.h' l='34'>/* Count of rename users */</doc>
+<use f='codebrowser/diff.c' l='4411' u='w' c='diff_resolve_rename_copy'/>
+<use f='codebrowser/diffcore-break.c' l='254' u='w' c='merge_broken'/>
+<use f='codebrowser/diffcore-rename.c' l='217' u='w' c='record_rename_pair'/>
+<use f='codebrowser/diffcore-rename.c' l='296' u='r' c='find_identical_files'/>
+<use f='codebrowser/diffcore-rename.c' l='297' u='r' c='find_identical_files'/>
+<use f='codebrowser/diffcore-rename.c' l='436' u='r' c='find_renames'/>
+<use f='codebrowser/diffcore-rename.c' l='488' u='w' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='496' u='w' c='diffcore_rename'/>
+<use f='codebrowser/diffcore-rename.c' l='641' u='r' c='diffcore_rename'/>

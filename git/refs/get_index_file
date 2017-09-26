@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='483' type='char * get_index_file()'/>
+<use f='codebrowser/builtin/commit.c' l='433' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='1808' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/merge.c' l='688' u='c' c='try_merge_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='771' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/update-index.c' l='1154' u='c' c='cmd_update_index'/>
+<use f='codebrowser/cache-tree.c' l='659' u='c' c='write_cache_as_tree'/>
+<def f='codebrowser/environment.c' l='280' ll='285' type='char * get_index_file()'/>
+<use f='codebrowser/read-cache.c' l='1564' u='c' c='hold_locked_index'/>
+<use f='codebrowser/read-cache.c' l='1569' u='c' c='read_index'/>
+<use f='codebrowser/read-cache.c' l='2162' u='c' c='verify_index'/>
+<use f='codebrowser/wt-status.c' l='135' u='c' c='wt_status_prepare'/>

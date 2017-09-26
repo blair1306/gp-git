@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='251' type='0'/>
+<use f='codebrowser/builtin/remote.c' l='391' u='r' c='get_push_ref_states'/>
+<use f='codebrowser/builtin/send-pack.c' l='266' u='r' c='cmd_send_pack'/>
+<use f='codebrowser/http-push.c' l='82'/>
+<use f='codebrowser/transport.c' l='983' u='r' c='transport_push'/>

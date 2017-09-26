@@ -1,0 +1,6 @@
+<dec f='codebrowser/sequencer.h' l='46' type='int sequencer_remove_state(struct replay_opts * opts)'/>
+<use f='codebrowser/builtin/rebase--helper.c' l='39' u='c' c='cmd_rebase__helper'/>
+<use f='codebrowser/builtin/revert.c' l='195' u='c' c='run_sequencer'/>
+<def f='codebrowser/sequencer.c' l='195' ll='211' type='int sequencer_remove_state(struct replay_opts * opts)'/>
+<use f='codebrowser/sequencer.c' l='1679' u='c' c='sequencer_rollback'/>
+<use f='codebrowser/sequencer.c' l='2198' u='c' c='pick_commits'/>

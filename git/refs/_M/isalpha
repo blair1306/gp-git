@@ -1,0 +1,15 @@
+<dec f='codebrowser/git-compat-util.h' l='948'/>
+<use f='codebrowser/builtin/ls-files.c' l='91' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='109' u='c'/>
+<use f='codebrowser/combine-diff.c' l='707' u='c'/>
+<use f='codebrowser/config.c' l='373' u='c'/>
+<use f='codebrowser/config.c' l='706' u='c'/>
+<use f='codebrowser/date.c' l='352' u='c'/>
+<use f='codebrowser/date.c' l='735' u='c'/>
+<use f='codebrowser/date.c' l='997' u='c'/>
+<use f='codebrowser/date.c' l='1168' u='c'/>
+<use f='codebrowser/grep.c' l='1454' u='c'/>
+<use f='codebrowser/line-range.c' l='128' u='c'/>
+<use f='codebrowser/urlmatch.c' l='159' u='c'/>
+<dec f='include/ctype.h' l='198'/>
+<use f='codebrowser/xdiff/xemit.c' l='101' u='c'/>

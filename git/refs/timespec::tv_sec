@@ -1,0 +1,28 @@
+<dec f='include/time.h' l='122' type='__time_t'/>
+<offset>0</offset>
+<doc f='include/time.h' l='122'>/* Seconds.  */</doc>
+<use f='codebrowser/builtin/gc.c' l='275' macro='1' u='r'/>
+<use f='codebrowser/builtin/gc.c' l='315' macro='1' u='r'/>
+<use f='codebrowser/builtin/pack-objects.c' l='853' macro='1' u='r'/>
+<use f='codebrowser/builtin/pack-objects.c' l='856' macro='1' u='r'/>
+<use f='codebrowser/builtin/prune.c' l='24' macro='1' u='r'/>
+<use f='codebrowser/builtin/prune.c' l='50' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='81' macro='1' u='r'/>
+<use f='codebrowser/copy.c' l='24' macro='1' u='r'/>
+<use f='codebrowser/copy.c' l='25' macro='1' u='r'/>
+<use f='codebrowser/http-backend.c' l='186' macro='1' u='r'/>
+<use f='codebrowser/reachable.c' l='125' macro='1' u='r'/>
+<use f='codebrowser/read-cache.c' l='88' macro='1' u='r'/>
+<use f='codebrowser/read-cache.c' l='89' macro='1' u='r'/>
+<use f='codebrowser/read-cache.c' l='103' macro='1' u='r'/>
+<use f='codebrowser/read-cache.c' l='106' macro='1' u='r'/>
+<use f='codebrowser/read-cache.c' l='1790' macro='1' u='r'/>
+<use f='codebrowser/read-cache.c' l='2310' macro='1' u='r'/>
+<use f='codebrowser/read-cache.c' l='2383' macro='1' u='r'/>
+<use f='codebrowser/rerere.c' l='1140' macro='1' u='r'/>
+<use f='codebrowser/rerere.c' l='1147' macro='1' u='r'/>
+<use f='codebrowser/sha1_file.c' l='1357' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='99' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='100' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='107' macro='1' u='r'/>
+<use f='codebrowser/trace.c' l='354' u='r' c='highres_nanos'/>

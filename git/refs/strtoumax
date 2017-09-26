@@ -1,0 +1,31 @@
+<dec f='include/inttypes.h' l='301' type='uintmax_t strtoumax(const char *restrict __nptr, char **restrict __endptr, int __base)'/>
+<def f='include/inttypes.h' l='335' ll='340' macro='1' type='uintmax_t strtoumax(const char *restrict nptr, char **restrict endptr, int base)'/>
+<doc f='include/inttypes.h' l='300'>/* Like `strtoul&apos; but convert to `uintmax_t&apos;.  */</doc>
+<use f='codebrowser/builtin/am.c' l='895' macro='1' u='c'/>
+<use f='codebrowser/builtin/fast-export.c' l='927' u='c' c='import_marks'/>
+<use f='codebrowser/builtin/index-pack.c' l='1729' u='c' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/receive-pack.c' l='541' macro='1' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='559' macro='1' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='558' u='c' c='cmd_unpack_objects'/>
+<use f='codebrowser/bundle.c' l='231' macro='1' u='c'/>
+<use f='codebrowser/commit.c' l='94' macro='1' u='c'/>
+<use f='codebrowser/commit.c' l='609' macro='1' u='c'/>
+<use f='codebrowser/config.c' l='811' u='c' c='git_parse_unsigned'/>
+<use f='codebrowser/date.c' l='536' macro='1' u='c'/>
+<use f='codebrowser/date.c' l='684' macro='1' u='c'/>
+<use f='codebrowser/date.c' l='1092' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='1907' u='c' c='read_marks'/>
+<use f='codebrowser/fast-import.c' l='1998' u='c' c='parse_mark'/>
+<use f='codebrowser/fast-import.c' l='2030' u='c' c='parse_data'/>
+<use f='codebrowser/fast-import.c' l='2326' u='c' c='parse_mark_ref'/>
+<use f='codebrowser/fsck.c' l='694' macro='1' u='c'/>
+<use f='codebrowser/pretty.c' l='413' macro='1' u='c'/>
+<use f='codebrowser/ref-filter.c' l='886' macro='1' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1825' macro='1' u='c'/>
+<use f='codebrowser/t/helper/test-date.c' l='37' macro='1' u='c'/>
+<use f='codebrowser/t/helper/test-line-buffer.c' l='12' u='c' c='strtouint32'/>
+<use f='codebrowser/t/helper/test-svn-fe.c' l='27' u='c' c='apply_delta'/>
+<use f='codebrowser/tag.c' l='114' macro='1' u='c'/>
+<use f='codebrowser/upload-pack.c' l='779' macro='1' u='c'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='176' u='c' c='parse_cat_response_line'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='433' u='c' c='svndump_read'/>

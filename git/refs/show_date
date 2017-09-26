@@ -1,0 +1,18 @@
+<dec f='codebrowser/cache.h' l='1431' type='const char * show_date(timestamp_t time, int timezone, const struct date_mode * mode)'/>
+<use f='codebrowser/builtin/am.c' l='919' u='c' c='hg_patch_to_mail'/>
+<use f='codebrowser/builtin/blame.c' l='299' u='c' c='format_time'/>
+<use f='codebrowser/builtin/blame.c' l='801' u='c' c='cmd_blame'/>
+<use f='codebrowser/builtin/show-branch.c' l='757' u='c' c='cmd_show_branch'/>
+<use f='codebrowser/builtin/tag.c' l='311' u='c' c='create_reflog_msg'/>
+<def f='codebrowser/date.c' l='194' ll='270' type='const char * show_date(timestamp_t time, int tz, const struct date_mode * mode)'/>
+<use f='codebrowser/fast-import.c' l='430' u='c' c='write_crash_report'/>
+<use f='codebrowser/http-backend.c' l='96' u='c' c='hdr_date'/>
+<use f='codebrowser/pretty.c' l='422' u='c' c='show_ident_date'/>
+<use f='codebrowser/ref-filter.c' l='892' u='c' c='grab_date'/>
+<use f='codebrowser/reflog-walk.c' l='229' u='c' c='get_reflog_selector'/>
+<use f='codebrowser/refs.c' l='779' u='c' c='read_ref_at_ent'/>
+<use f='codebrowser/refs.c' l='785' u='c' c='read_ref_at_ent'/>
+<use f='codebrowser/sha1_name.c' l='715' u='c' c='get_oid_basic'/>
+<use f='codebrowser/t/helper/test-date.c' l='42' u='c' c='show_dates'/>
+<use f='codebrowser/t/helper/test-date.c' l='58' u='c' c='parse_dates'/>
+<use f='codebrowser/t/helper/test-date.c' l='70' u='c' c='parse_approxidate'/>

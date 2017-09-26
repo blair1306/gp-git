@@ -1,0 +1,12 @@
+alias_lookup|alias_lookup
+alloc_blob_node|alloc_blob_node
+alloc_commit_index|alloc_commit_index
+alloc_commit_node|alloc_commit_node
+alloc_object_node|alloc_object_node
+alloc_report|alloc_report
+alloc_tag_node|alloc_tag_node
+alloc_tree_node|alloc_tree_node
+alloc_filespec|alloc_filespec
+alloc_ref|alloc_ref
+alloc_alt_odb|alloc_alt_odb
+alt_scratch_buf|alt_scratch_buf

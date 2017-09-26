@@ -1,0 +1,28 @@
+<dec f='include/x86_64-linux-gnu/bits/string2.h' l='967' type='size_t __strcspn_c3(const char * __s, int __reject1, int __reject2, int __reject3)'/>
+<def f='include/x86_64-linux-gnu/bits/string2.h' l='969' ll='978' macro='1' type='size_t __strcspn_c3(const char * __s, int __reject1, int __reject2, int __reject3)'/>
+<use f='codebrowser/attr.c' l='307' macro='1' u='c'/>
+<use f='codebrowser/attr.c' l='365' macro='1' u='c'/>
+<use f='codebrowser/attr.c' l='379' macro='1' u='c'/>
+<use f='codebrowser/builtin/fetch.c' l='1182' macro='1' u='c'/>
+<use f='codebrowser/column.c' l='302' macro='1' u='c'/>
+<use f='codebrowser/connect.c' l='227' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='2088' macro='1' u='c'/>
+<use f='codebrowser/fast-import.c' l='2093' macro='1' u='c'/>
+<use f='codebrowser/fsck.c' l='221' macro='1' u='c'/>
+<use f='codebrowser/fsck.c' l='677' macro='1' u='c'/>
+<use f='codebrowser/fsck.c' l='685' macro='1' u='c'/>
+<use f='codebrowser/mailinfo.c' l='176' macro='1' u='c'/>
+<use f='codebrowser/mailinfo.c' l='236' macro='1' u='c'/>
+<use f='codebrowser/parse-options.c' l='404' macro='1' u='c'/>
+<use f='codebrowser/pathspec.c' l='179' macro='1' u='c'/>
+<use f='codebrowser/pretty.c' l='1031' macro='1' u='c'/>
+<use f='codebrowser/prompt.c' l='40' macro='1' u='c'/>
+<use f='codebrowser/quote.c' l='33' macro='1' u='c'/>
+<use f='codebrowser/quote.c' l='336' macro='1' u='c'/>
+<use f='codebrowser/run-command.c' l='248' macro='1' u='c'/>
+<use f='codebrowser/sequencer.c' l='824' macro='1' u='c'/>
+<use f='codebrowser/sequencer.c' l='1274' macro='1' u='c'/>
+<use f='codebrowser/shell.c' l='44' macro='1' u='c'/>
+<use f='codebrowser/strbuf.c' l='611' macro='1' u='c'/>
+<use f='codebrowser/urlmatch.c' l='179' macro='1' u='c'/>
+<use f='codebrowser/urlmatch.c' l='335' macro='1' u='c'/>

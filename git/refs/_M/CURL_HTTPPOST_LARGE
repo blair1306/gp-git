@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='158'/>
+<doc f='include/curl/curl.h' l='157'>/* use size in &apos;contentlen&apos;, added in 7.46.0 */</doc>

@@ -1,0 +1,66 @@
+<dec f='codebrowser/common-cmds.h' l='3' type='char [16]'/>
+<use f='codebrowser/help.c' l='202' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='202' u='r' c='cmd_group_cmp'/>
+<use f='codebrowser/help.c' l='211' u='r' c='list_common_cmds_help'/>
+<use f='codebrowser/help.c' l='212' u='r' c='list_common_cmds_help'/>
+<use f='codebrowser/help.c' l='225' c='list_common_cmds_help'/>
+<use f='codebrowser/help.c' l='226' u='r' c='list_common_cmds_help'/>
+<use f='codebrowser/help.c' l='317' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<use f='codebrowser/help.c' l='317' u='r' c='help_unknown_cmd'/>
+<offset>0</offset>

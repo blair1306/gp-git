@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1961' type='unsigned int ws_check(const char * line, int len, unsigned int ws_rule)'/>
+<use f='codebrowser/apply.c' l='1659' u='c' c='check_whitespace'/>
+<use f='codebrowser/diff.c' l='2175' u='c' c='checkdiff_consume'/>
+<def f='codebrowser/ws.c' l='255' ll='258' type='unsigned int ws_check(const char * line, int len, unsigned int ws_rule)'/>

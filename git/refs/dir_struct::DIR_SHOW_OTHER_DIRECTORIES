@@ -1,0 +1,12 @@
+<dec f='codebrowser/dir.h' l='149' type='2'/>
+<use f='codebrowser/builtin/clean.c' l='948' u='r' c='cmd_clean'/>
+<use f='codebrowser/builtin/ls-files.c' l='536' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='536' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='536' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='536' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/dir.c' l='1390' u='r' c='treat_directory'/>
+<use f='codebrowser/dir.c' l='1913' u='r' c='treat_leading_path'/>
+<use f='codebrowser/dir.c' l='1983' u='r' c='new_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2045' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2815' u='r' c='invalidate_one_component'/>
+<use f='codebrowser/wt-status.c' l='662' u='r' c='wt_status_collect_untracked'/>

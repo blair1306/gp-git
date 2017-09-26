@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='397' type='int delete_refs(const char * msg, struct string_list * refnames, unsigned int flags)'/>
+<use f='codebrowser/builtin/fetch.c' l='964' u='c' c='prune_refs'/>
+<use f='codebrowser/builtin/remote.c' l='790' u='c' c='rm'/>
+<use f='codebrowser/builtin/remote.c' l='1308' u='c' c='prune_remote'/>
+<def f='codebrowser/refs.c' l='2050' ll='2054' type='int delete_refs(const char * msg, struct string_list * refnames, unsigned int flags)'/>

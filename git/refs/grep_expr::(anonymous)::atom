@@ -1,0 +1,5 @@
+<dec f='codebrowser/grep.h' l='110' type='struct grep_pat *'/>
+<offset>0</offset>
+<use f='codebrowser/grep.c' l='693' u='w' c='compile_pattern_atom'/>
+<use f='codebrowser/grep.c' l='826' u='r' c='dump_grep_expression_1'/>
+<use f='codebrowser/grep.c' l='1235' u='r' c='match_expr_eval'/>

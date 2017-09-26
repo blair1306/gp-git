@@ -1,0 +1,15 @@
+<dec f='codebrowser/hashmap.h' l='186' type='unsigned int'/>
+<offset>192</offset>
+<doc f='codebrowser/hashmap.h' l='185'>/* total number of entries (0 means the hashmap is empty) */</doc>
+<use f='codebrowser/attr.c' l='157' u='r' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='166' u='r' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='171' u='r' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='172' u='r' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='240' u='r' c='git_attr_internal'/>
+<use f='codebrowser/attr.c' l='243' u='r' c='git_attr_internal'/>
+<use f='codebrowser/builtin/describe.c' l='511' u='r' c='cmd_describe'/>
+<use f='codebrowser/hashmap.c' l='209' u='w' c='hashmap_add'/>
+<use f='codebrowser/hashmap.c' l='210' u='r' c='hashmap_add'/>
+<use f='codebrowser/hashmap.c' l='227' u='w' c='hashmap_remove'/>
+<use f='codebrowser/hashmap.c' l='228' u='r' c='hashmap_remove'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='238' u='r' c='cmd_main'/>

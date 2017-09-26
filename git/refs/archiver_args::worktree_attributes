@@ -1,0 +1,4 @@
+<dec f='codebrowser/archive.h' l='15' type='unsigned int'/>
+<offset>577</offset>
+<use f='codebrowser/archive.c' l='246' u='r' c='write_archive_entries'/>
+<use f='codebrowser/archive.c' l='490' u='w' c='parse_archive_args'/>

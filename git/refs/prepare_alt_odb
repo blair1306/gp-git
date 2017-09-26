@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1546' type='void prepare_alt_odb()'/>
+<use f='codebrowser/builtin/fsck.c' l='700' u='c' c='cmd_fsck'/>
+<use f='codebrowser/sha1_file.c' l='541' u='c' c='add_to_alternates_memory'/>
+<use f='codebrowser/sha1_file.c' l='626' u='c' c='foreach_alt_odb'/>
+<def f='codebrowser/sha1_file.c' l='635' ll='649' type='void prepare_alt_odb()'/>
+<use f='codebrowser/sha1_file.c' l='683' u='c' c='check_and_freshen_nonlocal'/>
+<use f='codebrowser/sha1_file.c' l='1587' u='c' c='prepare_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1720' u='c' c='stat_sha1_file'/>
+<use f='codebrowser/sha1_file.c' l='1747' u='c' c='open_sha1_file'/>
+<use f='codebrowser/sha1_name.c' l='351' u='c' c='init_object_disambiguation'/>

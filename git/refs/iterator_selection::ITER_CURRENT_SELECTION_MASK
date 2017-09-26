@@ -1,0 +1,3 @@
+<dec f='codebrowser/iterator.h' l='43' type='1'/>
+<doc f='codebrowser/iterator.h' l='42'>/* The LSB selects whether iter0/iter1 is the &quot;current&quot; iterator: */</doc>
+<use f='codebrowser/refs/iterator.c' l='142' u='r' c='merge_ref_iterator_advance'/>

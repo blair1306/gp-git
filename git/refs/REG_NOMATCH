@@ -1,0 +1,5 @@
+<dec f='include/regex.h' l='315' type='1'/>
+<doc f='include/regex.h' l='315'>/* Didn&apos;t find a match (for regexec).  */</doc>
+<use f='codebrowser/apply.c' l='843' u='r' c='has_epoch_timestamp'/>
+<use f='codebrowser/grep.c' l='1088' u='r' c='fixmatch'/>
+<use f='codebrowser/line-range.c' l='141' u='r' c='find_funcname_matching_regexp'/>

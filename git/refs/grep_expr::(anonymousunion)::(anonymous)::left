@@ -1,0 +1,14 @@
+<dec f='codebrowser/grep.h' l='113' type='struct grep_expr *'/>
+<offset>0</offset>
+<use f='codebrowser/grep.c' l='748' u='w' c='compile_pattern_and'/>
+<use f='codebrowser/grep.c' l='768' u='w' c='compile_pattern_or'/>
+<use f='codebrowser/grep.c' l='836' u='r' c='dump_grep_expression_1'/>
+<use f='codebrowser/grep.c' l='843' u='r' c='dump_grep_expression_1'/>
+<use f='codebrowser/grep.c' l='872' u='w' c='grep_or_expr'/>
+<use f='codebrowser/grep.c' l='1002' u='r' c='free_pattern_expr'/>
+<use f='codebrowser/grep.c' l='1241' u='r' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1247' u='r' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1251' u='r' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1252' u='r' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1862' u='r' c='clr_hit_marker'/>
+<use f='codebrowser/grep.c' l='1873' u='r' c='chk_hit_marker'/>

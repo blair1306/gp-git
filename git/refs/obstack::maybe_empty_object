@@ -1,0 +1,10 @@
+<dec f='codebrowser/compat/obstack.h' l='171' type='unsigned int'/>
+<offset>641</offset>
+<doc f='codebrowser/compat/obstack.h' l='171'>/* There is a possibility that the current
+				   chunk contains a zero-length object.  This
+				   prevents freeing the chunk if we allocate
+				   a bigger chunk to replace it. */</doc>
+<use f='codebrowser/kwset.c' l='98' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='169' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='175' macro='1' u='w'/>
+<use f='codebrowser/kwset.c' l='401' macro='1' u='w'/>

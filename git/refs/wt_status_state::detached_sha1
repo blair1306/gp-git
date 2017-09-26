@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='112' type='unsigned char [20]'/>
+<offset>512</offset>
+<use f='codebrowser/wt-status.c' l='1465' u='r' c='wt_status_get_detached_from'/>
+<use f='codebrowser/wt-status.c' l='1467' u='r' c='wt_status_get_detached_from'/>

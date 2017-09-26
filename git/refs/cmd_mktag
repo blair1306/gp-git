@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='191' type='int cmd_mktag(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/mktag.c' l='151' ll='174' type='int cmd_mktag(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='430'/>
+<use f='codebrowser/git.c' l='430'/>
+<use f='codebrowser/git.c' l='430'/>
+<use f='codebrowser/git.c' l='430'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/convert.h' l='59' type='enum eol'/>
+<use f='codebrowser/config.c' l='1158' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1160' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1162' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1164' u='w' c='git_default_core_config'/>
+<use f='codebrowser/convert.c' l='166' u='r' c='text_eol_is_crlf'/>
+<use f='codebrowser/convert.c' l='168' u='r' c='text_eol_is_crlf'/>
+<use f='codebrowser/convert.c' l='193' u='r' c='output_eol'/>
+<def f='codebrowser/environment.c' l='51' type='enum eol'/>

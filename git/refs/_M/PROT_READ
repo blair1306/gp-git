@@ -1,0 +1,16 @@
+<dec f='include/x86_64-linux-gnu/bits/mman-linux.h' l='35'/>
+<doc f='include/x86_64-linux-gnu/bits/mman-linux.h' l='30'>/* Protections are chosen from these bits, OR&apos;d together.  The
+   implementation does not necessarily support PROT_EXEC or PROT_WRITE
+   without PROT_READ.  The only guarantees are that no writing will be
+   allowed without PROT_WRITE and no access will be allowed for PROT_NONE. */</doc>
+<use f='codebrowser/config.c' l='2551' u='c'/>
+<use f='codebrowser/diff.c' l='2892' u='c'/>
+<use f='codebrowser/pack-bitmap.c' l='288' u='c'/>
+<use f='codebrowser/read-cache.c' l='1756' u='c'/>
+<use f='codebrowser/sha1_file.c' l='470' u='c'/>
+<use f='codebrowser/sha1_file.c' l='767' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1273' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1786' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3602' u='c'/>
+<use f='codebrowser/t/helper/test-delta.c' l='36' u='c'/>
+<use f='codebrowser/t/helper/test-delta.c' l='50' u='c'/>

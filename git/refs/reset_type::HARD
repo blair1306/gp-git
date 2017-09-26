@@ -1,0 +1,8 @@
+<dec f='codebrowser/builtin/reset.c' l='35' type='2'/>
+<use f='codebrowser/builtin/reset.c' l='65' c='reset_index'/>
+<use f='codebrowser/builtin/reset.c' l='89' u='r' c='reset_index'/>
+<use f='codebrowser/builtin/reset.c' l='291' u='r' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='291' u='r' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='291' u='r' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='291' u='r' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='397' u='r' c='cmd_reset'/>

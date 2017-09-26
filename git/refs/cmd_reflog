@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='206' type='int cmd_reflog(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/reflog.c' l='729' ll='751' type='int cmd_reflog(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='447'/>
+<use f='codebrowser/git.c' l='447'/>
+<use f='codebrowser/git.c' l='447'/>
+<use f='codebrowser/git.c' l='447'/>

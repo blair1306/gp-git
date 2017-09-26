@@ -1,0 +1,16 @@
+<dec f='codebrowser/grep.h' l='190' type='char *'/>
+<offset>0</offset>
+<use f='codebrowser/grep.c' l='1473' u='r' c='show_funcname_line'/>
+<use f='codebrowser/grep.c' l='1517' u='r' c='show_pre_context'/>
+<use f='codebrowser/grep.c' l='1761' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1768' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1768' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1780' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1809' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1827' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1842' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1842' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1920' u='w' c='grep_source_init'/>
+<use f='codebrowser/grep.c' l='1941' u='r' c='grep_source_clear'/>
+<use f='codebrowser/grep.c' l='1941' u='w' c='grep_source_clear'/>
+<use f='codebrowser/grep.c' l='1971' u='r' c='grep_source_load_oid'/>

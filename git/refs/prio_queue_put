@@ -1,0 +1,16 @@
+<dec f='codebrowser/prio-queue.h' l='40' type='void prio_queue_put(struct prio_queue * , void * thing)'/>
+<use f='codebrowser/blame.c' l='488' u='c' c='queue_blames'/>
+<doc f='codebrowser/prio-queue.h' l='37'>/*
+ * Add the &quot;thing&quot; to the queue.
+ */</doc>
+<use f='codebrowser/builtin/blame.c' l='901' u='c' c='cmd_blame'/>
+<use f='codebrowser/commit.c' l='711' u='c' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='742' u='c' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='792' u='c' c='paint_down_to_common'/>
+<use f='codebrowser/commit.c' l='796' u='c' c='paint_down_to_common'/>
+<use f='codebrowser/commit.c' l='822' u='c' c='paint_down_to_common'/>
+<use f='codebrowser/fetch-pack.c' l='116' u='c' c='rev_list_push'/>
+<def f='codebrowser/prio-queue.c' l='36' ll='56' type='void prio_queue_put(struct prio_queue * queue, void * thing)'/>
+<use f='codebrowser/t/helper/test-prio-queue.c' l='34' u='c' c='cmd_main'/>
+<use f='codebrowser/upload-pack.c' l='328' u='c' c='reachable'/>
+<use f='codebrowser/upload-pack.c' l='347' u='c' c='reachable'/>

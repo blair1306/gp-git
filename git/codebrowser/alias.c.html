@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>alias.c source code [codebrowser/alias.c] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="config_alias_data "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/alias.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='alias.c.html'>alias.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="config.h.html">"config.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="config_alias_data" title='config_alias_data' data-ref="config_alias_data">config_alias_data</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<em>const</em> <em>char</em> *<dfn class="tu decl" id="config_alias_data::alias" title='config_alias_data::alias' data-type='const char *' data-ref="config_alias_data::alias">alias</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<em>char</em> *<dfn class="tu decl" id="config_alias_data::v" title='config_alias_data::v' data-type='char *' data-ref="config_alias_data::v">v</dfn>;</td></tr>
+<tr><th id="7">7</th><td>};</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="config_alias_cb" title='config_alias_cb' data-type='int config_alias_cb(const char * key, const char * value, void * d)' data-ref="config_alias_cb">config_alias_cb</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1key" title='key' data-type='const char *' data-ref="1key">key</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2value" title='value' data-type='const char *' data-ref="2value">value</dfn>, <em>void</em> *<dfn class="local col3 decl" id="3d" title='d' data-type='void *' data-ref="3d">d</dfn>)</td></tr>
+<tr><th id="10">10</th><td>{</td></tr>
+<tr><th id="11">11</th><td>	<b>struct</b> <a class="type" href="#config_alias_data" title='config_alias_data' data-ref="config_alias_data">config_alias_data</a> *<dfn class="local col4 decl" id="4data" title='data' data-type='struct config_alias_data *' data-ref="4data">data</dfn> = <a class="local col3 ref" href="#3d" title='d' data-ref="3d">d</a>;</td></tr>
+<tr><th id="12">12</th><td>	<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5p" title='p' data-type='const char *' data-ref="5p">p</dfn>;</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td>	<b>if</b> (<a class="ref" href="git-compat-util.h.html#skip_prefix" title='skip_prefix' data-ref="skip_prefix">skip_prefix</a>(<a class="local col1 ref" href="#1key" title='key' data-ref="1key">key</a>, <q>"alias."</q>, &amp;<a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a>) &amp;&amp; !<a class="ref" href="../include/string.h.html#strcasecmp" title='strcasecmp' data-ref="strcasecmp">strcasecmp</a>(<a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a>, <a class="local col4 ref" href="#4data" title='data' data-ref="4data">data</a>-&gt;<a class="tu ref" href="#config_alias_data::alias" title='config_alias_data::alias' data-use='r' data-ref="config_alias_data::alias">alias</a>))</td></tr>
+<tr><th id="15">15</th><td>		<b>return</b> <a class="ref" href="config.h.html#git_config_string" title='git_config_string' data-ref="git_config_string">git_config_string</a>((<em>const</em> <em>char</em> **)&amp;<a class="local col4 ref" href="#4data" title='data' data-ref="4data">data</a>-&gt;<a class="tu ref" href="#config_alias_data::v" title='config_alias_data::v' data-use='a' data-ref="config_alias_data::v">v</a>, <a class="local col1 ref" href="#1key" title='key' data-ref="1key">key</a>, <a class="local col2 ref" href="#2value" title='value' data-ref="2value">value</a>);</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="18">18</th><td>}</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><em>char</em> *<dfn class="decl def" id="alias_lookup" title='alias_lookup' data-ref="alias_lookup">alias_lookup</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="6alias" title='alias' data-type='const char *' data-ref="6alias">alias</dfn>)</td></tr>
+<tr><th id="21">21</th><td>{</td></tr>
+<tr><th id="22">22</th><td>	<b>struct</b> <a class="type" href="#config_alias_data" title='config_alias_data' data-ref="config_alias_data">config_alias_data</a> <dfn class="local col7 decl" id="7data" title='data' data-type='struct config_alias_data' data-ref="7data">data</dfn> = { <a class="local col6 ref" href="#6alias" title='alias' data-ref="6alias">alias</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span> };</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td>	<a class="ref" href="config.h.html#read_early_config" title='read_early_config' data-ref="read_early_config">read_early_config</a>(<a class="tu ref" href="#config_alias_cb" title='config_alias_cb' data-use='r' data-ref="config_alias_cb">config_alias_cb</a>, &amp;<a class="local col7 ref" href="#7data" title='data' data-ref="7data">data</a>);</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>	<b>return</b> <a class="local col7 ref" href="#7data" title='data' data-ref="7data">data</a>.<a class="tu ref" href="#config_alias_data::v" title='config_alias_data::v' data-use='r' data-ref="config_alias_data::v">v</a>;</td></tr>
+<tr><th id="27">27</th><td>}</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/SPLIT_CMDLINE_BAD_ENDING" data-ref="_M/SPLIT_CMDLINE_BAD_ENDING">SPLIT_CMDLINE_BAD_ENDING</dfn> 1</u></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/SPLIT_CMDLINE_UNCLOSED_QUOTE" data-ref="_M/SPLIT_CMDLINE_UNCLOSED_QUOTE">SPLIT_CMDLINE_UNCLOSED_QUOTE</dfn> 2</u></td></tr>
+<tr><th id="31">31</th><td><em>static</em> <em>const</em> <em>char</em> *<dfn class="tu decl def" id="split_cmdline_errors" title='split_cmdline_errors' data-type='const char *[2]' data-ref="split_cmdline_errors">split_cmdline_errors</dfn>[] = {</td></tr>
+<tr><th id="32">32</th><td>	<q>"cmdline ends with \\"</q>,</td></tr>
+<tr><th id="33">33</th><td>	<q>"unclosed quote"</q></td></tr>
+<tr><th id="34">34</th><td>};</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><em>int</em> <dfn class="decl def" id="split_cmdline" title='split_cmdline' data-ref="split_cmdline">split_cmdline</dfn>(<em>char</em> *<dfn class="local col8 decl" id="8cmdline" title='cmdline' data-type='char *' data-ref="8cmdline">cmdline</dfn>, <em>const</em> <em>char</em> ***<dfn class="local col9 decl" id="9argv" title='argv' data-type='const char ***' data-ref="9argv">argv</dfn>)</td></tr>
+<tr><th id="37">37</th><td>{</td></tr>
+<tr><th id="38">38</th><td>	<em>int</em> <dfn class="local col0 decl" id="10src" title='src' data-type='int' data-ref="10src">src</dfn>, <dfn class="local col1 decl" id="11dst" title='dst' data-type='int' data-ref="11dst">dst</dfn>, <dfn class="local col2 decl" id="12count" title='count' data-type='int' data-ref="12count">count</dfn> = <var>0</var>, <dfn class="local col3 decl" id="13size" title='size' data-type='int' data-ref="13size">size</dfn> = <var>16</var>;</td></tr>
+<tr><th id="39">39</th><td>	<em>char</em> <dfn class="local col4 decl" id="14quoted" title='quoted' data-type='char' data-ref="14quoted">quoted</dfn> = <var>0</var>;</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td>	<a class="macro" href="git-compat-util.h.html#820" title="(*argv) = xmalloc(st_mult(sizeof(*(*argv)), (size)))" data-ref="_M/ALLOC_ARRAY">ALLOC_ARRAY</a>(*<a class="local col9 ref" href="#9argv" title='argv' data-ref="9argv">argv</a>, <a class="local col3 ref" href="#13size" title='size' data-ref="13size">size</a>);</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>	<i>/* split alias_string */</i></td></tr>
+<tr><th id="44">44</th><td>	(*<a class="local col9 ref" href="#9argv" title='argv' data-ref="9argv">argv</a>)[<a class="local col2 ref" href="#12count" title='count' data-ref="12count">count</a>++] = <a class="local col8 ref" href="#8cmdline" title='cmdline' data-ref="8cmdline">cmdline</a>;</td></tr>
+<tr><th id="45">45</th><td>	<b>for</b> (<a class="local col0 ref" href="#10src" title='src' data-ref="10src">src</a> = <a class="local col1 ref" href="#11dst" title='dst' data-ref="11dst">dst</a> = <var>0</var>; <a class="local col8 ref" href="#8cmdline" title='cmdline' data-ref="8cmdline">cmdline</a>[<a class="local col0 ref" href="#10src" title='src' data-ref="10src">src</a>];) {</td></tr>
+<tr><th id="46">46</th><td>		<em>char</em> <dfn class="local col5 decl" id="15c" title='c' data-type='char' data-ref="15c">c</dfn> = <a class="local col8 ref" href="#8cmdline" title='cmdline' data-ref="8cmdline">cmdline</a>[<a class="local col0 ref" href="#10src" title='src' data-ref="10src">src</a>];</td></tr>
+<tr><th id="47">47</th><td>		<b>if</b> (!<a class="local col4 ref" href="#14quoted" title='quoted' data-ref="14quoted">quoted</a> &amp;&amp; <a class="macro" href="git-compat-util.h.html#946" title="((sane_ctype[(unsigned char)(c)] &amp; (0x01)) != 0)" data-ref="_M/isspace">isspace</a>(<a class="local col5 ref" href="#15c" title='c' data-ref="15c">c</a>)) {</td></tr>
+<tr><th id="48">48</th><td>			<a class="local col8 ref" href="#8cmdline" title='cmdline' data-ref="8cmdline">cmdline</a>[<a class="local col1 ref" href="#11dst" title='dst' data-ref="11dst">dst</a>++] = <var>0</var>;</td></tr>
+<tr><th id="49">49</th><td>			<b>while</b> (<a class="local col8 ref" href="#8cmdline" title='cmdline' data-ref="8cmdline">cmdline</a>[++<a class="local col0 ref" href="#10src" title='src' data-ref="10src">src</a>]</td></tr>
+<tr><th id="50">50</th><td>					&amp;&amp; <a class="macro" href="git-compat-util.h.html#946" title="((sane_ctype[(unsigned char)(cmdline[src])] &amp; (0x01)) != 0)" data-ref="_M/isspace">isspace</a>(<a class="local col8 ref" href="#8cmdline" title='cmdline' data-ref="8cmdline">cmdline</a>[<a class="local col0 ref" href="#10src" title='src' data-ref="10src">src</a>]))</td></tr>
+<tr><th id="51">51</th><td>				; <i>/* skip */</i></td></tr>
+<tr><th id="52">52</th><td>			<a class="macro" href="cache.h.html#583" title="do { if ((count + 1) &gt; size) { if ((((size)+16)*3/2) &lt; (count + 1)) size = (count + 1); else size = (((size)+16)*3/2); (*argv) = xrealloc((*argv), st_mult(sizeof(*(*argv)), (size))); } } while (0)" data-ref="_M/ALLOC_GROW">ALLOC_GROW</a>(*<a class="local col9 ref" href="#9argv" title='argv' data-ref="9argv">argv</a>, <a class="local col2 ref" href="#12count" title='count' data-ref="12count">count</a> + <var>1</var>, <a class="local col3 ref" href="#13size" title='size' data-ref="13size">size</a>);</td></tr>
+<tr><th id="53">53</th><td>			(*<a class="local col9 ref" href="#9argv" title='argv' data-ref="9argv">argv</a>)[<a class="local col2 ref" href="#12count" title='count' data-ref="12count">count</a>++] = <a class="local col8 ref" href="#8cmdline" title='cmdline' data-ref="8cmdline">cmdline</a> + <a class="local col1 ref" href="#11dst" title='dst' data-ref="11dst">dst</a>;</td></tr>
+<tr><th id="54">54</th><td>		} <b>else</b> <b>if</b> (!<a class="local col4 ref" href="#14quoted" title='quoted' data-ref="14quoted">quoted</a> &amp;&amp; (<a class="local col5 ref" href="#15c" title='c' data-ref="15c">c</a> == <kbd>'\''</kbd> || <a class="local col5 ref" href="#15c" title='c' data-ref="15c">c</a> == <kbd>'"'</kbd>)) {</td></tr>
+<tr><th id="55">55</th><td>			<a class="local col4 ref" href="#14quoted" title='quoted' data-ref="14quoted">quoted</a> = <a class="local col5 ref" href="#15c" title='c' data-ref="15c">c</a>;</td></tr>
+<tr><th id="56">56</th><td>			<a class="local col0 ref" href="#10src" title='src' data-ref="10src">src</a>++;</td></tr>
+<tr><th id="57">57</th><td>		} <b>else</b> <b>if</b> (<a class="local col5 ref" href="#15c" title='c' data-ref="15c">c</a> == <a class="local col4 ref" href="#14quoted" title='quoted' data-ref="14quoted">quoted</a>) {</td></tr>
+<tr><th id="58">58</th><td>			<a class="local col4 ref" href="#14quoted" title='quoted' data-ref="14quoted">quoted</a> = <var>0</var>;</td></tr>
+<tr><th id="59">59</th><td>			<a class="local col0 ref" href="#10src" title='src' data-ref="10src">src</a>++;</td></tr>
+<tr><th id="60">60</th><td>		} <b>else</b> {</td></tr>
+<tr><th id="61">61</th><td>			<b>if</b> (<a class="local col5 ref" href="#15c" title='c' data-ref="15c">c</a> == <kbd>'\\'</kbd> &amp;&amp; <a class="local col4 ref" href="#14quoted" title='quoted' data-ref="14quoted">quoted</a> != <kbd>'\''</kbd>) {</td></tr>
+<tr><th id="62">62</th><td>				<a class="local col0 ref" href="#10src" title='src' data-ref="10src">src</a>++;</td></tr>
+<tr><th id="63">63</th><td>				<a class="local col5 ref" href="#15c" title='c' data-ref="15c">c</a> = <a class="local col8 ref" href="#8cmdline" title='cmdline' data-ref="8cmdline">cmdline</a>[<a class="local col0 ref" href="#10src" title='src' data-ref="10src">src</a>];</td></tr>
+<tr><th id="64">64</th><td>				<b>if</b> (!<a class="local col5 ref" href="#15c" title='c' data-ref="15c">c</a>) {</td></tr>
+<tr><th id="65">65</th><td>					<a class="macro" href="git-compat-util.h.html#818" title="do { free(*argv); (*argv) = ((void*)0); } while (0)" data-ref="_M/FREE_AND_NULL">FREE_AND_NULL</a>(*<a class="local col9 ref" href="#9argv" title='argv' data-ref="9argv">argv</a>);</td></tr>
+<tr><th id="66">66</th><td>					<b>return</b> -<a class="macro" href="#29" title="1" data-ref="_M/SPLIT_CMDLINE_BAD_ENDING">SPLIT_CMDLINE_BAD_ENDING</a>;</td></tr>
+<tr><th id="67">67</th><td>				}</td></tr>
+<tr><th id="68">68</th><td>			}</td></tr>
+<tr><th id="69">69</th><td>			<a class="local col8 ref" href="#8cmdline" title='cmdline' data-ref="8cmdline">cmdline</a>[<a class="local col1 ref" href="#11dst" title='dst' data-ref="11dst">dst</a>++] = <a class="local col5 ref" href="#15c" title='c' data-ref="15c">c</a>;</td></tr>
+<tr><th id="70">70</th><td>			<a class="local col0 ref" href="#10src" title='src' data-ref="10src">src</a>++;</td></tr>
+<tr><th id="71">71</th><td>		}</td></tr>
+<tr><th id="72">72</th><td>	}</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>	<a class="local col8 ref" href="#8cmdline" title='cmdline' data-ref="8cmdline">cmdline</a>[<a class="local col1 ref" href="#11dst" title='dst' data-ref="11dst">dst</a>] = <var>0</var>;</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>	<b>if</b> (<a class="local col4 ref" href="#14quoted" title='quoted' data-ref="14quoted">quoted</a>) {</td></tr>
+<tr><th id="77">77</th><td>		<a class="macro" href="git-compat-util.h.html#818" title="do { free(*argv); (*argv) = ((void*)0); } while (0)" data-ref="_M/FREE_AND_NULL">FREE_AND_NULL</a>(*<a class="local col9 ref" href="#9argv" title='argv' data-ref="9argv">argv</a>);</td></tr>
+<tr><th id="78">78</th><td>		<b>return</b> -<a class="macro" href="#30" title="2" data-ref="_M/SPLIT_CMDLINE_UNCLOSED_QUOTE">SPLIT_CMDLINE_UNCLOSED_QUOTE</a>;</td></tr>
+<tr><th id="79">79</th><td>	}</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>	<a class="macro" href="cache.h.html#583" title="do { if ((count + 1) &gt; size) { if ((((size)+16)*3/2) &lt; (count + 1)) size = (count + 1); else size = (((size)+16)*3/2); (*argv) = xrealloc((*argv), st_mult(sizeof(*(*argv)), (size))); } } while (0)" data-ref="_M/ALLOC_GROW">ALLOC_GROW</a>(*<a class="local col9 ref" href="#9argv" title='argv' data-ref="9argv">argv</a>, <a class="local col2 ref" href="#12count" title='count' data-ref="12count">count</a> + <var>1</var>, <a class="local col3 ref" href="#13size" title='size' data-ref="13size">size</a>);</td></tr>
+<tr><th id="82">82</th><td>	(*<a class="local col9 ref" href="#9argv" title='argv' data-ref="9argv">argv</a>)[<a class="local col2 ref" href="#12count" title='count' data-ref="12count">count</a>] = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>	<b>return</b> <a class="local col2 ref" href="#12count" title='count' data-ref="12count">count</a>;</td></tr>
+<tr><th id="85">85</th><td>}</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="split_cmdline_strerror" title='split_cmdline_strerror' data-ref="split_cmdline_strerror">split_cmdline_strerror</dfn>(<em>int</em> <dfn class="local col6 decl" id="16split_cmdline_errno" title='split_cmdline_errno' data-type='int' data-ref="16split_cmdline_errno">split_cmdline_errno</dfn>)</td></tr>
+<tr><th id="88">88</th><td>{</td></tr>
+<tr><th id="89">89</th><td>	<b>return</b> <a class="tu ref" href="#split_cmdline_errors" title='split_cmdline_errors' data-use='r' data-ref="split_cmdline_errors">split_cmdline_errors</a>[-<a class="local col6 ref" href="#16split_cmdline_errno" title='split_cmdline_errno' data-ref="16split_cmdline_errno">split_cmdline_errno</a> - <var>1</var>];</td></tr>
+<tr><th id="90">90</th><td>}</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/streaming.h' l='12' type='int close_istream(struct git_istream * )'/>
+<use f='codebrowser/archive-tar.c' l='131' u='c' c='stream_blocked'/>
+<use f='codebrowser/archive-zip.c' l='433' u='c' c='write_zip_entry'/>
+<use f='codebrowser/archive-zip.c' l='479' u='c' c='write_zip_entry'/>
+<use f='codebrowser/builtin/index-pack.c' l='780' u='c' c='check_collison'/>
+<use f='codebrowser/builtin/pack-objects.c' l='310' u='c' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='324' u='c' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='334' u='c' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='342' u='c' c='write_no_reuse_object'/>
+<use f='codebrowser/sha1_file.c' l='1664' u='c' c='check_sha1_signature'/>
+<use f='codebrowser/sha1_file.c' l='1672' u='c' c='check_sha1_signature'/>
+<def f='codebrowser/streaming.c' l='95' ll='100' type='int close_istream(struct git_istream * st)'/>
+<use f='codebrowser/streaming.c' l='156' u='c' c='open_istream'/>
+<use f='codebrowser/streaming.c' l='189' u='c' c='close_istream_filtered'/>
+<use f='codebrowser/streaming.c' l='551' u='c' c='stream_blob_to_fd'/>

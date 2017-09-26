@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='98' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/config.c' l='157' u='w' c='handle_path_include'/>
+<use f='codebrowser/config.c' l='163' u='w' c='handle_path_include'/>

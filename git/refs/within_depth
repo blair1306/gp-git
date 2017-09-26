@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='219' type='int within_depth(const char * name, int namelen, int depth, int max_depth)'/>
+<def f='codebrowser/dir.c' l='208' ll='221' type='int within_depth(const char * name, int namelen, int depth, int max_depth)'/>
+<use f='codebrowser/dir.c' l='399' u='c' c='do_match_pathspec'/>
+<use f='codebrowser/dir.c' l='432' u='c' c='do_match_pathspec'/>
+<use f='codebrowser/tree-walk.c' l='954' u='c' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='982' u='c' c='do_match'/>

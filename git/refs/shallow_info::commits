@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='294' type='struct commit **'/>
+<offset>640</offset>
+<use f='codebrowser/shallow.c' l='731' u='r' c='delayed_reachability_test'/>
+<use f='codebrowser/shallow.c' l='737' u='w' c='delayed_reachability_test'/>
+<use f='codebrowser/shallow.c' l='743' u='r' c='delayed_reachability_test'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/submodule-config.c' l='20' type='unsigned int'/>
+<use f='codebrowser/submodule-config.c' l='70' u='w' c='submodule_cache_init'/>
+<use f='codebrowser/submodule-config.c' l='87' u='r' c='submodule_cache_clear'/>
+<use f='codebrowser/submodule-config.c' l='101' u='w' c='submodule_cache_clear'/>
+<use f='codebrowser/submodule-config.c' l='552' u='r' c='submodule_cache_check_init'/>
+<offset>768</offset>

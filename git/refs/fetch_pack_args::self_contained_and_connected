@@ -1,0 +1,5 @@
+<dec f='codebrowser/fetch-pack.h' l='28' type='unsigned int'/>
+<offset>269</offset>
+<use f='codebrowser/builtin/fetch-pack.c' l='205' u='r' c='cmd_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='889' u='w' c='get_pack'/>
+<use f='codebrowser/transport.c' l='251' u='r' c='fetch_refs_via_pack'/>

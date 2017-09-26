@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='903' type='const char * sha1_file_name(const unsigned char * sha1)'/>
+<doc f='codebrowser/cache.h' l='897'>/*
+ * Return the name of the file in the local object database that would
+ * be used to store a loose object with the specified sha1.  The
+ * return value is a pointer to a statically allocated buffer that is
+ * overwritten each time the function is called.
+ */</doc>
+<use f='codebrowser/http-walker.c' l='547' u='c' c='fetch_object'/>
+<use f='codebrowser/http.c' l='2163' u='c' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2311' u='c' c='finish_http_object_request'/>
+<def f='codebrowser/sha1_file.c' l='256' ll='265' type='const char * sha1_file_name(const unsigned char * sha1)'/>
+<use f='codebrowser/sha1_file.c' l='677' u='c' c='check_and_freshen_local'/>
+<use f='codebrowser/sha1_file.c' l='1716' u='c' c='stat_sha1_file'/>
+<use f='codebrowser/sha1_file.c' l='1741' u='c' c='open_sha1_file'/>
+<use f='codebrowser/sha1_file.c' l='3315' u='c' c='write_loose_object'/>

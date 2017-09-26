@@ -1,0 +1,5 @@
+<dec f='codebrowser/transport.h' l='36' type='const struct ref *'/>
+<offset>192</offset>
+<use f='codebrowser/transport.c' l='241' u='r' c='fetch_refs_via_pack'/>
+<use f='codebrowser/transport.c' l='1102' u='w' c='transport_get_remote_refs'/>
+<use f='codebrowser/transport.c' l='1106' u='r' c='transport_get_remote_refs'/>

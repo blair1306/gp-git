@@ -1,0 +1,35 @@
+<dec f='codebrowser/commit.h' l='50' type='struct commit * lookup_commit_reference_gently(const struct object_id * oid, int quiet)'/>
+<use f='codebrowser/archive.c' l='364' u='c' c='parse_treeish_arg'/>
+<use f='codebrowser/blame.c' l='1694' u='c' c='dwim_reverse_initial'/>
+<use f='codebrowser/builtin/checkout.c' l='383' u='c' c='checkout_paths'/>
+<use f='codebrowser/builtin/checkout.c' l='824' u='c' c='switch_branches'/>
+<use f='codebrowser/builtin/checkout.c' l='1038' u='c' c='parse_branchname_arg'/>
+<use f='codebrowser/builtin/describe.c' l='318' u='c' c='describe'/>
+<use f='codebrowser/builtin/fetch.c' l='659' u='c' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='660' u='c' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='793' u='c' c='store_updated_refs'/>
+<use f='codebrowser/builtin/reflog.c' l='196' u='c' c='keep_entry'/>
+<use f='codebrowser/builtin/reflog.c' l='265' u='c' c='unreachable'/>
+<use f='codebrowser/builtin/reflog.c' l='322' u='c' c='push_tip_to_list'/>
+<use f='codebrowser/builtin/reflog.c' l='339' u='c' c='reflog_expiry_prepare'/>
+<use f='codebrowser/builtin/show-branch.c' l='363' u='c' c='append_ref'/>
+<def f='codebrowser/commit.c' l='22' ll='30' type='struct commit * lookup_commit_reference_gently(const struct object_id * oid, int quiet)'/>
+<use f='codebrowser/commit.c' l='34' u='c' c='lookup_commit_reference'/>
+<use f='codebrowser/commit.c' l='564' u='c' c='clear_commit_marks_for_object_array'/>
+<use f='codebrowser/fast-import.c' l='1765' u='c' c='update_branch'/>
+<use f='codebrowser/fast-import.c' l='1766' u='c' c='update_branch'/>
+<use f='codebrowser/notes-cache.c' l='17' u='c' c='notes_cache_match_validity'/>
+<use f='codebrowser/ref-filter.c' l='1861' u='c' c='ref_filter_handler'/>
+<use f='codebrowser/ref-filter.c' l='2198' u='c' c='parse_opt_merge_filter'/>
+<use f='codebrowser/remote.c' l='1297' u='c' c='add_to_tips'/>
+<use f='codebrowser/remote.c' l='1359' u='c' c='add_missing_tags'/>
+<use f='codebrowser/remote.c' l='1587' u='c' c='set_ref_status_for_push'/>
+<use f='codebrowser/remote.c' l='1588' u='c' c='set_ref_status_for_push'/>
+<use f='codebrowser/sequencer.c' l='2325' u='c' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sha1_name.c' l='1148' u='c' c='get_oid_mb'/>
+<use f='codebrowser/sha1_name.c' l='1154' u='c' c='get_oid_mb'/>
+<use f='codebrowser/shallow.c' l='476' u='c' c='paint_down'/>
+<use f='codebrowser/shallow.c' l='538' u='c' c='mark_uninteresting'/>
+<use f='codebrowser/shallow.c' l='648' u='c' c='add_ref'/>
+<use f='codebrowser/walker.c' l='209' u='c' c='mark_complete'/>
+<use f='codebrowser/wt-status.c' l='1456' u='c' c='wt_status_get_detached_from'/>

@@ -1,0 +1,21 @@
+<dec f='codebrowser/cache.h' l='1073' type='enum scld_error safe_create_leading_directories_const(const char * path)'/>
+<use f='codebrowser/builtin/clone.c' l='966' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/clone.c' l='977' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fsck.c' l='270' u='c' c='check_unreachable_object'/>
+<use f='codebrowser/builtin/init-db.c' l='508' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='677' u='c' c='module_clone'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='687' u='c' c='module_clone'/>
+<use f='codebrowser/builtin/worktree.c' l='221' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='251' u='c' c='add_worktree'/>
+<use f='codebrowser/credential-cache--daemon.c' l='244' u='c' c='init_socket_directory'/>
+<use f='codebrowser/dir.c' l='2849' u='c' c='connect_work_tree_and_git_dir'/>
+<use f='codebrowser/dir.c' l='2854' u='c' c='connect_work_tree_and_git_dir'/>
+<use f='codebrowser/environment.c' l='276' u='c' c='odb_pack_keep'/>
+<use f='codebrowser/fast-import.c' l='3231' u='c' c='option_import_marks'/>
+<use f='codebrowser/fast-import.c' l='3272' u='c' c='option_export_marks'/>
+<use f='codebrowser/merge-recursive.c' l='749' u='c' c='make_room_for_path'/>
+<use f='codebrowser/merge-recursive.c' l='838' u='c' c='update_file_flags'/>
+<use f='codebrowser/notes-merge.c' l='283' u='c' c='check_notes_merge_worktree'/>
+<use f='codebrowser/notes-merge.c' l='299' u='c' c='write_buf_to_worktree'/>
+<def f='codebrowser/sha1_file.c' l='162' ll='173' type='enum scld_error safe_create_leading_directories_const(const char * path)'/>
+<use f='codebrowser/submodule.c' l='1849' u='c' c='relocate_single_git_dir_into_superproject'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/http.h' l='111' type='long'/>
+<def f='codebrowser/http.c' l='17' type='long'/>
+<use f='codebrowser/http.c' l='1126' u='r' c='get_active_slot'/>
+<use f='codebrowser/remote-curl.c' l='151' u='w' c='set_option'/>
+<use f='codebrowser/remote-curl.c' l='153' u='w' c='set_option'/>
+<use f='codebrowser/remote-curl.c' l='155' u='w' c='set_option'/>

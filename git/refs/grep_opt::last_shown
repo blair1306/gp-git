@@ -1,0 +1,13 @@
+<dec f='codebrowser/grep.h' l='167' type='unsigned int'/>
+<offset>6656</offset>
+<use f='codebrowser/grep.c' l='1338' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1342' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1347' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1352' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1356' u='w' c='show_line'/>
+<use f='codebrowser/grep.c' l='1469' u='r' c='show_funcname_line'/>
+<use f='codebrowser/grep.c' l='1490' u='r' c='show_pre_context'/>
+<use f='codebrowser/grep.c' l='1491' u='r' c='show_pre_context'/>
+<use f='codebrowser/grep.c' l='1495' u='r' c='show_pre_context'/>
+<use f='codebrowser/grep.c' l='1659' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1669' u='w' c='grep_source_1'/>

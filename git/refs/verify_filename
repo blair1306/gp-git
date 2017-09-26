@@ -1,0 +1,27 @@
+<dec f='codebrowser/cache.h' l='559' type='void verify_filename(const char * prefix, const char * name, int diagnose_misspelt_rev)'/>
+<use f='codebrowser/builtin/grep.c' l='1007' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/reset.c' l='232' u='c' c='parse_args'/>
+<use f='codebrowser/builtin/rev-parse.c' l='642' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/rev-parse.c' l='928' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/revision.c' l='2281' u='c' c='setup_revisions'/>
+<def f='codebrowser/setup.c' l='228' ll='237' type='void verify_filename(const char * prefix, const char * arg, int diagnose_misspelt_rev)'/>
+<doc f='codebrowser/setup.c' l='208'>/*
+ * Verify a filename that we got as an argument for a pathspec
+ * entry. Note that a filename that begins with &quot;-&quot; never verifies
+ * as true, because even if such a filename were to exist, we want
+ * it to be preceded by the &quot;--&quot; marker (or we want the user to
+ * use a format like &quot;./-filename&quot;)
+ *
+ * The &quot;diagnose_misspelt_rev&quot; is used to provide a user-friendly
+ * diagnosis when dying upon finding that &quot;name&quot; is not a pathname.
+ * If set to 1, the diagnosis will try to diagnose &quot;name&quot; as an
+ * invalid object name (e.g. HEAD:foo). If set to 0, the diagnosis
+ * will only complain about an inexisting file.
+ *
+ * This function is typically called to check that a &quot;file or rev&quot;
+ * argument is unambiguous. In this case, the caller will want
+ * diagnose_misspelt_rev == 1 when verifying the first non-rev
+ * argument (which could have been a revision), and
+ * diagnose_misspelt_rev == 0 for the next ones (because we already
+ * saw a filename, there&apos;s not ambiguity anymore).
+ */</doc>

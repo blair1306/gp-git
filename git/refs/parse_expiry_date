@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1436' type='int parse_expiry_date(const char * date, timestamp_t * timestamp)'/>
+<use f='codebrowser/builtin/gc.c' l='379' u='c' c='cmd_gc'/>
+<use f='codebrowser/builtin/reflog.c' l='423' u='c' c='parse_expire_cfg_value'/>
+<use f='codebrowser/builtin/reflog.c' l='540' u='c' c='cmd_reflog_expire'/>
+<use f='codebrowser/builtin/reflog.c' l='545' u='c' c='cmd_reflog_expire'/>
+<def f='codebrowser/date.c' l='773' ll='793' type='int parse_expiry_date(const char * date, timestamp_t * timestamp)'/>
+<use f='codebrowser/parse-options-cb.c' l='41' u='c' c='parse_opt_expiry_date_cb'/>

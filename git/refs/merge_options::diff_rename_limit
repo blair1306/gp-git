@@ -1,0 +1,6 @@
+<dec f='codebrowser/merge-recursive.h' l='21' type='int'/>
+<offset>512</offset>
+<use f='codebrowser/merge-recursive.c' l='526' u='r' c='get_renames'/>
+<use f='codebrowser/merge-recursive.c' l='526' u='r' c='get_renames'/>
+<use f='codebrowser/merge-recursive.c' l='2159' u='a' c='merge_recursive_config'/>
+<use f='codebrowser/merge-recursive.c' l='2169' u='w' c='init_merge_options'/>

@@ -1,0 +1,705 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>refs-internal.h source code [codebrowser/refs/refs-internal.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="peel_status,ref_iterator,ref_iterator_vtable,ref_storage_be,ref_store,ref_transaction,ref_transaction_state,ref_update "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/refs/refs-internal.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>refs</a>/<a href='refs-internal.h.html'>refs-internal.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/REFS_REFS_INTERNAL_H">REFS_REFS_INTERNAL_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/REFS_REFS_INTERNAL_H" data-ref="_M/REFS_REFS_INTERNAL_H">REFS_REFS_INTERNAL_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/*</i></td></tr>
+<tr><th id="5">5</th><td><i> * Data structures and functions for the internal use of the refs</i></td></tr>
+<tr><th id="6">6</th><td><i> * module. Code outside of the refs module should use only the public</i></td></tr>
+<tr><th id="7">7</th><td><i> * functions defined in "refs.h", and should *not* include this file.</i></td></tr>
+<tr><th id="8">8</th><td><i> */</i></td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><i>/*</i></td></tr>
+<tr><th id="11">11</th><td><i> * Flag passed to lock_ref_sha1_basic() telling it to tolerate broken</i></td></tr>
+<tr><th id="12">12</th><td><i> * refs (i.e., because the reference is about to be deleted anyway).</i></td></tr>
+<tr><th id="13">13</th><td><i> */</i></td></tr>
+<tr><th id="14">14</th><td><u>#define <dfn class="macro" id="_M/REF_DELETING" data-ref="_M/REF_DELETING">REF_DELETING</dfn>	0x02</u></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><i>/*</i></td></tr>
+<tr><th id="17">17</th><td><i> * Used as a flag in ref_update::flags when a loose ref is being</i></td></tr>
+<tr><th id="18">18</th><td><i> * pruned. This flag must only be used when REF_NODEREF is set.</i></td></tr>
+<tr><th id="19">19</th><td><i> */</i></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/REF_ISPRUNING" data-ref="_M/REF_ISPRUNING">REF_ISPRUNING</dfn>	0x04</u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i>/*</i></td></tr>
+<tr><th id="23">23</th><td><i> * Used as a flag in ref_update::flags when the reference should be</i></td></tr>
+<tr><th id="24">24</th><td><i> * updated to new_sha1.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/REF_HAVE_NEW" data-ref="_M/REF_HAVE_NEW">REF_HAVE_NEW</dfn>	0x08</u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i>/*</i></td></tr>
+<tr><th id="29">29</th><td><i> * Used as a flag in ref_update::flags when old_sha1 should be</i></td></tr>
+<tr><th id="30">30</th><td><i> * checked.</i></td></tr>
+<tr><th id="31">31</th><td><i> */</i></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/REF_HAVE_OLD" data-ref="_M/REF_HAVE_OLD">REF_HAVE_OLD</dfn>	0x10</u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i>/*</i></td></tr>
+<tr><th id="35">35</th><td><i> * Used as a flag in ref_update::flags when the lockfile needs to be</i></td></tr>
+<tr><th id="36">36</th><td><i> * committed.</i></td></tr>
+<tr><th id="37">37</th><td><i> */</i></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/REF_NEEDS_COMMIT" data-ref="_M/REF_NEEDS_COMMIT">REF_NEEDS_COMMIT</dfn> 0x20</u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i>/*</i></td></tr>
+<tr><th id="41">41</th><td><i> * 0x40 is REF_FORCE_CREATE_REFLOG, so skip it if you're adding a</i></td></tr>
+<tr><th id="42">42</th><td><i> * value to ref_update::flags</i></td></tr>
+<tr><th id="43">43</th><td><i> */</i></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i>/*</i></td></tr>
+<tr><th id="46">46</th><td><i> * Used as a flag in ref_update::flags when we want to log a ref</i></td></tr>
+<tr><th id="47">47</th><td><i> * update but not actually perform it.  This is used when a symbolic</i></td></tr>
+<tr><th id="48">48</th><td><i> * ref update is split up.</i></td></tr>
+<tr><th id="49">49</th><td><i> */</i></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/REF_LOG_ONLY" data-ref="_M/REF_LOG_ONLY">REF_LOG_ONLY</dfn> 0x80</u></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><i>/*</i></td></tr>
+<tr><th id="53">53</th><td><i> * Internal flag, meaning that the containing ref_update was via an</i></td></tr>
+<tr><th id="54">54</th><td><i> * update to HEAD.</i></td></tr>
+<tr><th id="55">55</th><td><i> */</i></td></tr>
+<tr><th id="56">56</th><td><u>#define <dfn class="macro" id="_M/REF_UPDATE_VIA_HEAD" data-ref="_M/REF_UPDATE_VIA_HEAD">REF_UPDATE_VIA_HEAD</dfn> 0x100</u></td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><i>/*</i></td></tr>
+<tr><th id="59">59</th><td><i> * Used as a flag in ref_update::flags when the loose reference has</i></td></tr>
+<tr><th id="60">60</th><td><i> * been deleted.</i></td></tr>
+<tr><th id="61">61</th><td><i> */</i></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/REF_DELETED_LOOSE" data-ref="_M/REF_DELETED_LOOSE">REF_DELETED_LOOSE</dfn> 0x200</u></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i>/*</i></td></tr>
+<tr><th id="65">65</th><td><i> * Return true iff refname is minimally safe. "Safe" here means that</i></td></tr>
+<tr><th id="66">66</th><td><i> * deleting a loose reference by this name will not do any damage, for</i></td></tr>
+<tr><th id="67">67</th><td><i> * example by causing a file that is not a reference to be deleted.</i></td></tr>
+<tr><th id="68">68</th><td><i> * This function does not check that the reference name is legal; for</i></td></tr>
+<tr><th id="69">69</th><td><i> * that, use check_refname_format().</i></td></tr>
+<tr><th id="70">70</th><td><i> *</i></td></tr>
+<tr><th id="71">71</th><td><i> * A refname that starts with "refs/" is considered safe iff it</i></td></tr>
+<tr><th id="72">72</th><td><i> * doesn't contain any "." or ".." components or consecutive '/'</i></td></tr>
+<tr><th id="73">73</th><td><i> * characters, end with '/', or (on Windows) contain any '\'</i></td></tr>
+<tr><th id="74">74</th><td><i> * characters. Names that do not start with "refs/" are considered</i></td></tr>
+<tr><th id="75">75</th><td><i> * safe iff they consist entirely of upper case characters and '_'</i></td></tr>
+<tr><th id="76">76</th><td><i> * (like "HEAD" and "MERGE_HEAD" but not "config" or "FOO/BAR").</i></td></tr>
+<tr><th id="77">77</th><td><i> */</i></td></tr>
+<tr><th id="78">78</th><td><em>int</em> <a class="decl" href="../refs.c.html#refname_is_safe" title='refname_is_safe' data-ref="refname_is_safe" id="refname_is_safe">refname_is_safe</a>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1refname" title='refname' data-type='const char *' data-ref="1refname">refname</dfn>);</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><i>/*</i></td></tr>
+<tr><th id="81">81</th><td><i> * Helper function: return true if refname, which has the specified</i></td></tr>
+<tr><th id="82">82</th><td><i> * oid and flags, can be resolved to an object in the database. If the</i></td></tr>
+<tr><th id="83">83</th><td><i> * referred-to object does not exist, emit a warning and return false.</i></td></tr>
+<tr><th id="84">84</th><td><i> */</i></td></tr>
+<tr><th id="85">85</th><td><em>int</em> <a class="decl" href="../refs.c.html#ref_resolves_to_object" title='ref_resolves_to_object' data-ref="ref_resolves_to_object" id="ref_resolves_to_object">ref_resolves_to_object</a>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2refname" title='refname' data-type='const char *' data-ref="2refname">refname</dfn>,</td></tr>
+<tr><th id="86">86</th><td>			   <em>const</em> <b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="3oid" title='oid' data-type='const struct object_id *' data-ref="3oid">oid</dfn>,</td></tr>
+<tr><th id="87">87</th><td>			   <em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="4flags" title='flags' data-type='unsigned int' data-ref="4flags">flags</dfn>);</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><b>enum</b> <dfn class="type def" id="peel_status" title='peel_status' data-ref="peel_status">peel_status</dfn> {</td></tr>
+<tr><th id="90">90</th><td>	<i>/* object was peeled successfully: */</i></td></tr>
+<tr><th id="91">91</th><td>	<dfn class="enum" id="peel_status::PEEL_PEELED" title='peel_status::PEEL_PEELED' data-ref="peel_status::PEEL_PEELED">PEEL_PEELED</dfn> = <var>0</var>,</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td>	<i>/*</i></td></tr>
+<tr><th id="94">94</th><td><i>	 * object cannot be peeled because the named object (or an</i></td></tr>
+<tr><th id="95">95</th><td><i>	 * object referred to by a tag in the peel chain), does not</i></td></tr>
+<tr><th id="96">96</th><td><i>	 * exist.</i></td></tr>
+<tr><th id="97">97</th><td><i>	 */</i></td></tr>
+<tr><th id="98">98</th><td>	<dfn class="enum" id="peel_status::PEEL_INVALID" title='peel_status::PEEL_INVALID' data-ref="peel_status::PEEL_INVALID">PEEL_INVALID</dfn> = -<var>1</var>,</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td>	<i>/* object cannot be peeled because it is not a tag: */</i></td></tr>
+<tr><th id="101">101</th><td>	<dfn class="enum" id="peel_status::PEEL_NON_TAG" title='peel_status::PEEL_NON_TAG' data-ref="peel_status::PEEL_NON_TAG">PEEL_NON_TAG</dfn> = -<var>2</var>,</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>	<i>/* ref_entry contains no peeled value because it is a symref: */</i></td></tr>
+<tr><th id="104">104</th><td>	<dfn class="enum" id="peel_status::PEEL_IS_SYMREF" title='peel_status::PEEL_IS_SYMREF' data-ref="peel_status::PEEL_IS_SYMREF">PEEL_IS_SYMREF</dfn> = -<var>3</var>,</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>	<i>/*</i></td></tr>
+<tr><th id="107">107</th><td><i>	 * ref_entry cannot be peeled because it is broken (i.e., the</i></td></tr>
+<tr><th id="108">108</th><td><i>	 * symbolic reference cannot even be resolved to an object</i></td></tr>
+<tr><th id="109">109</th><td><i>	 * name):</i></td></tr>
+<tr><th id="110">110</th><td><i>	 */</i></td></tr>
+<tr><th id="111">111</th><td>	<dfn class="enum" id="peel_status::PEEL_BROKEN" title='peel_status::PEEL_BROKEN' data-ref="peel_status::PEEL_BROKEN">PEEL_BROKEN</dfn> = -<var>4</var></td></tr>
+<tr><th id="112">112</th><td>};</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><i>/*</i></td></tr>
+<tr><th id="115">115</th><td><i> * Peel the named object; i.e., if the object is a tag, resolve the</i></td></tr>
+<tr><th id="116">116</th><td><i> * tag recursively until a non-tag is found.  If successful, store the</i></td></tr>
+<tr><th id="117">117</th><td><i> * result to sha1 and return PEEL_PEELED.  If the object is not a tag</i></td></tr>
+<tr><th id="118">118</th><td><i> * or is not valid, return PEEL_NON_TAG or PEEL_INVALID, respectively,</i></td></tr>
+<tr><th id="119">119</th><td><i> * and leave sha1 unchanged.</i></td></tr>
+<tr><th id="120">120</th><td><i> */</i></td></tr>
+<tr><th id="121">121</th><td><b>enum</b> <a class="type" href="#peel_status" title='peel_status' data-ref="peel_status">peel_status</a> <a class="decl" href="../refs.c.html#peel_object" title='peel_object' data-ref="peel_object" id="peel_object">peel_object</a>(<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col5 decl" id="5name" title='name' data-type='const unsigned char *' data-ref="5name">name</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col6 decl" id="6sha1" title='sha1' data-type='unsigned char *' data-ref="6sha1">sha1</dfn>);</td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td><i>/*</i></td></tr>
+<tr><th id="124">124</th><td><i> * Copy the reflog message msg to buf, which has been allocated sufficiently</i></td></tr>
+<tr><th id="125">125</th><td><i> * large, while cleaning up the whitespaces.  Especially, convert LF to space,</i></td></tr>
+<tr><th id="126">126</th><td><i> * because reflog file is one line per entry.</i></td></tr>
+<tr><th id="127">127</th><td><i> */</i></td></tr>
+<tr><th id="128">128</th><td><em>int</em> <a class="decl" href="../refs.c.html#copy_reflog_msg" title='copy_reflog_msg' data-ref="copy_reflog_msg" id="copy_reflog_msg">copy_reflog_msg</a>(<em>char</em> *<dfn class="local col7 decl" id="7buf" title='buf' data-type='char *' data-ref="7buf">buf</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8msg" title='msg' data-type='const char *' data-ref="8msg">msg</dfn>);</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> * Information needed for a single ref update. Set new_sha1 to the new</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> * value or to null_sha1 to delete the ref. To check the old value</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * while the ref is locked, set (flags &amp; REF_HAVE_OLD) and set</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * old_sha1 to the old value, or to null_sha1 to ensure the ref does</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * not exist before update.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="137">137</th><td><b>struct</b> <dfn class="type def" id="ref_update" title='ref_update' data-ref="ref_update">ref_update</dfn> {</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td>	<i>/*</i></td></tr>
+<tr><th id="140">140</th><td><i>	 * If (flags &amp; REF_HAVE_NEW), set the reference to this value:</i></td></tr>
+<tr><th id="141">141</th><td><i>	 */</i></td></tr>
+<tr><th id="142">142</th><td>	<b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="ref_update::new_oid" title='ref_update::new_oid' data-ref="ref_update::new_oid">new_oid</dfn>;</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td>	<i>/*</i></td></tr>
+<tr><th id="145">145</th><td><i>	 * If (flags &amp; REF_HAVE_OLD), check that the reference</i></td></tr>
+<tr><th id="146">146</th><td><i>	 * previously had this value:</i></td></tr>
+<tr><th id="147">147</th><td><i>	 */</i></td></tr>
+<tr><th id="148">148</th><td>	<b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="ref_update::old_oid" title='ref_update::old_oid' data-ref="ref_update::old_oid">old_oid</dfn>;</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td>	<i>/*</i></td></tr>
+<tr><th id="151">151</th><td><i>	 * One or more of REF_HAVE_NEW, REF_HAVE_OLD, REF_NODEREF,</i></td></tr>
+<tr><th id="152">152</th><td><i>	 * REF_DELETING, REF_ISPRUNING, REF_LOG_ONLY,</i></td></tr>
+<tr><th id="153">153</th><td><i>	 * REF_UPDATE_VIA_HEAD, REF_NEEDS_COMMIT, and</i></td></tr>
+<tr><th id="154">154</th><td><i>	 * REF_DELETED_LOOSE:</i></td></tr>
+<tr><th id="155">155</th><td><i>	 */</i></td></tr>
+<tr><th id="156">156</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="ref_update::flags" title='ref_update::flags' data-ref="ref_update::flags">flags</dfn>;</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td>	<em>void</em> *<dfn class="decl" id="ref_update::backend_data" title='ref_update::backend_data' data-ref="ref_update::backend_data">backend_data</dfn>;</td></tr>
+<tr><th id="159">159</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="ref_update::type" title='ref_update::type' data-ref="ref_update::type">type</dfn>;</td></tr>
+<tr><th id="160">160</th><td>	<em>char</em> *<dfn class="decl" id="ref_update::msg" title='ref_update::msg' data-ref="ref_update::msg">msg</dfn>;</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td>	<i>/*</i></td></tr>
+<tr><th id="163">163</th><td><i>	 * If this ref_update was split off of a symref update via</i></td></tr>
+<tr><th id="164">164</th><td><i>	 * split_symref_update(), then this member points at that</i></td></tr>
+<tr><th id="165">165</th><td><i>	 * update. This is used for two purposes:</i></td></tr>
+<tr><th id="166">166</th><td><i>	 * 1. When reporting errors, we report the refname under which</i></td></tr>
+<tr><th id="167">167</th><td><i>	 *    the update was originally requested.</i></td></tr>
+<tr><th id="168">168</th><td><i>	 * 2. When we read the old value of this reference, we</i></td></tr>
+<tr><th id="169">169</th><td><i>	 *    propagate it back to its parent update for recording in</i></td></tr>
+<tr><th id="170">170</th><td><i>	 *    the latter's reflog.</i></td></tr>
+<tr><th id="171">171</th><td><i>	 */</i></td></tr>
+<tr><th id="172">172</th><td>	<b>struct</b> <a class="type" href="#ref_update" title='ref_update' data-ref="ref_update">ref_update</a> *<dfn class="decl" id="ref_update::parent_update" title='ref_update::parent_update' data-ref="ref_update::parent_update">parent_update</dfn>;</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td>	<em>const</em> <em>char</em> <dfn class="decl" id="ref_update::refname" title='ref_update::refname' data-ref="ref_update::refname">refname</dfn>[<a class="macro" href="../git-compat-util.h.html#28" title="" data-ref="_M/FLEX_ARRAY">FLEX_ARRAY</a>];</td></tr>
+<tr><th id="175">175</th><td>};</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td><em>int</em> <a class="decl" href="../refs.c.html#refs_read_raw_ref" title='refs_read_raw_ref' data-ref="refs_read_raw_ref" id="refs_read_raw_ref">refs_read_raw_ref</a>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col9 decl" id="9ref_store" title='ref_store' data-type='struct ref_store *' data-ref="9ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="178">178</th><td>		      <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10refname" title='refname' data-type='const char *' data-ref="10refname">refname</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col1 decl" id="11sha1" title='sha1' data-type='unsigned char *' data-ref="11sha1">sha1</dfn>,</td></tr>
+<tr><th id="179">179</th><td>		      <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col2 decl" id="12referent" title='referent' data-type='struct strbuf *' data-ref="12referent">referent</dfn>, <em>unsigned</em> <em>int</em> *<dfn class="local col3 decl" id="13type" title='type' data-type='unsigned int *' data-ref="13type">type</dfn>);</td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td><i>/*</i></td></tr>
+<tr><th id="182">182</th><td><i> * Write an error to `err` and return a nonzero value iff the same</i></td></tr>
+<tr><th id="183">183</th><td><i> * refname appears multiple times in `refnames`. `refnames` must be</i></td></tr>
+<tr><th id="184">184</th><td><i> * sorted on entry to this function.</i></td></tr>
+<tr><th id="185">185</th><td><i> */</i></td></tr>
+<tr><th id="186">186</th><td><em>int</em> <a class="decl" href="../refs.c.html#ref_update_reject_duplicates" title='ref_update_reject_duplicates' data-ref="ref_update_reject_duplicates" id="ref_update_reject_duplicates">ref_update_reject_duplicates</a>(<b>struct</b> <a class="type" href="../string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col4 decl" id="14refnames" title='refnames' data-type='struct string_list *' data-ref="14refnames">refnames</dfn>,</td></tr>
+<tr><th id="187">187</th><td>				 <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col5 decl" id="15err" title='err' data-type='struct strbuf *' data-ref="15err">err</dfn>);</td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><i>/*</i></td></tr>
+<tr><th id="190">190</th><td><i> * Add a ref_update with the specified properties to transaction, and</i></td></tr>
+<tr><th id="191">191</th><td><i> * return a pointer to the new object. This function does not verify</i></td></tr>
+<tr><th id="192">192</th><td><i> * that refname is well-formed. new_sha1 and old_sha1 are only</i></td></tr>
+<tr><th id="193">193</th><td><i> * dereferenced if the REF_HAVE_NEW and REF_HAVE_OLD bits,</i></td></tr>
+<tr><th id="194">194</th><td><i> * respectively, are set in flags.</i></td></tr>
+<tr><th id="195">195</th><td><i> */</i></td></tr>
+<tr><th id="196">196</th><td><b>struct</b> <a class="type" href="#ref_update" title='ref_update' data-ref="ref_update">ref_update</a> *<a class="decl" href="../refs.c.html#ref_transaction_add_update" title='ref_transaction_add_update' data-ref="ref_transaction_add_update" id="ref_transaction_add_update">ref_transaction_add_update</a>(</td></tr>
+<tr><th id="197">197</th><td>		<b>struct</b> <a class="type" href="#ref_transaction" title='ref_transaction' data-ref="ref_transaction">ref_transaction</a> *<dfn class="local col6 decl" id="16transaction" title='transaction' data-type='struct ref_transaction *' data-ref="16transaction">transaction</dfn>,</td></tr>
+<tr><th id="198">198</th><td>		<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="17refname" title='refname' data-type='const char *' data-ref="17refname">refname</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="18flags" title='flags' data-type='unsigned int' data-ref="18flags">flags</dfn>,</td></tr>
+<tr><th id="199">199</th><td>		<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="19new_sha1" title='new_sha1' data-type='const unsigned char *' data-ref="19new_sha1">new_sha1</dfn>,</td></tr>
+<tr><th id="200">200</th><td>		<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col0 decl" id="20old_sha1" title='old_sha1' data-type='const unsigned char *' data-ref="20old_sha1">old_sha1</dfn>,</td></tr>
+<tr><th id="201">201</th><td>		<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="21msg" title='msg' data-type='const char *' data-ref="21msg">msg</dfn>);</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><i>/*</i></td></tr>
+<tr><th id="204">204</th><td><i> * Transaction states.</i></td></tr>
+<tr><th id="205">205</th><td><i> *</i></td></tr>
+<tr><th id="206">206</th><td><i> * OPEN:   The transaction is initialized and new updates can still be</i></td></tr>
+<tr><th id="207">207</th><td><i> *         added to it. An OPEN transaction can be prepared,</i></td></tr>
+<tr><th id="208">208</th><td><i> *         committed, freed, or aborted (freeing and aborting an open</i></td></tr>
+<tr><th id="209">209</th><td><i> *         transaction are equivalent).</i></td></tr>
+<tr><th id="210">210</th><td><i> *</i></td></tr>
+<tr><th id="211">211</th><td><i> * PREPARED: ref_transaction_prepare(), which locks all of the</i></td></tr>
+<tr><th id="212">212</th><td><i> *         references involved in the update and checks that the</i></td></tr>
+<tr><th id="213">213</th><td><i> *         update has no errors, has been called successfully for the</i></td></tr>
+<tr><th id="214">214</th><td><i> *         transaction. A PREPARED transaction can be committed or</i></td></tr>
+<tr><th id="215">215</th><td><i> *         aborted.</i></td></tr>
+<tr><th id="216">216</th><td><i> *</i></td></tr>
+<tr><th id="217">217</th><td><i> * CLOSED: The transaction is no longer active. A transaction becomes</i></td></tr>
+<tr><th id="218">218</th><td><i> *         CLOSED if there is a failure while building the transaction</i></td></tr>
+<tr><th id="219">219</th><td><i> *         or if a transaction is committed or aborted. A CLOSED</i></td></tr>
+<tr><th id="220">220</th><td><i> *         transaction can only be freed.</i></td></tr>
+<tr><th id="221">221</th><td><i> */</i></td></tr>
+<tr><th id="222">222</th><td><b>enum</b> <dfn class="type def" id="ref_transaction_state" title='ref_transaction_state' data-ref="ref_transaction_state">ref_transaction_state</dfn> {</td></tr>
+<tr><th id="223">223</th><td>	<dfn class="enum" id="ref_transaction_state::REF_TRANSACTION_OPEN" title='ref_transaction_state::REF_TRANSACTION_OPEN' data-ref="ref_transaction_state::REF_TRANSACTION_OPEN">REF_TRANSACTION_OPEN</dfn>     = <var>0</var>,</td></tr>
+<tr><th id="224">224</th><td>	<dfn class="enum" id="ref_transaction_state::REF_TRANSACTION_PREPARED" title='ref_transaction_state::REF_TRANSACTION_PREPARED' data-ref="ref_transaction_state::REF_TRANSACTION_PREPARED">REF_TRANSACTION_PREPARED</dfn> = <var>1</var>,</td></tr>
+<tr><th id="225">225</th><td>	<dfn class="enum" id="ref_transaction_state::REF_TRANSACTION_CLOSED" title='ref_transaction_state::REF_TRANSACTION_CLOSED' data-ref="ref_transaction_state::REF_TRANSACTION_CLOSED">REF_TRANSACTION_CLOSED</dfn>   = <var>2</var></td></tr>
+<tr><th id="226">226</th><td>};</td></tr>
+<tr><th id="227">227</th><td></td></tr>
+<tr><th id="228">228</th><td><i>/*</i></td></tr>
+<tr><th id="229">229</th><td><i> * Data structure for holding a reference transaction, which can</i></td></tr>
+<tr><th id="230">230</th><td><i> * consist of checks and updates to multiple references, carried out</i></td></tr>
+<tr><th id="231">231</th><td><i> * as atomically as possible.  This structure is opaque to callers.</i></td></tr>
+<tr><th id="232">232</th><td><i> */</i></td></tr>
+<tr><th id="233">233</th><td><b>struct</b> <dfn class="type def" id="ref_transaction" title='ref_transaction' data-ref="ref_transaction">ref_transaction</dfn> {</td></tr>
+<tr><th id="234">234</th><td>	<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="decl" id="ref_transaction::ref_store" title='ref_transaction::ref_store' data-ref="ref_transaction::ref_store">ref_store</dfn>;</td></tr>
+<tr><th id="235">235</th><td>	<b>struct</b> <a class="type" href="#ref_update" title='ref_update' data-ref="ref_update">ref_update</a> **<dfn class="decl" id="ref_transaction::updates" title='ref_transaction::updates' data-ref="ref_transaction::updates">updates</dfn>;</td></tr>
+<tr><th id="236">236</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="ref_transaction::alloc" title='ref_transaction::alloc' data-ref="ref_transaction::alloc">alloc</dfn>;</td></tr>
+<tr><th id="237">237</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="ref_transaction::nr" title='ref_transaction::nr' data-ref="ref_transaction::nr">nr</dfn>;</td></tr>
+<tr><th id="238">238</th><td>	<b>enum</b> <a class="type" href="#ref_transaction_state" title='ref_transaction_state' data-ref="ref_transaction_state">ref_transaction_state</a> <dfn class="decl" id="ref_transaction::state" title='ref_transaction::state' data-ref="ref_transaction::state">state</dfn>;</td></tr>
+<tr><th id="239">239</th><td>};</td></tr>
+<tr><th id="240">240</th><td></td></tr>
+<tr><th id="241">241</th><td><i>/*</i></td></tr>
+<tr><th id="242">242</th><td><i> * Check for entries in extras that are within the specified</i></td></tr>
+<tr><th id="243">243</th><td><i> * directory, where dirname is a reference directory name including</i></td></tr>
+<tr><th id="244">244</th><td><i> * the trailing slash (e.g., "refs/heads/foo/"). Ignore any</i></td></tr>
+<tr><th id="245">245</th><td><i> * conflicting references that are found in skip. If there is a</i></td></tr>
+<tr><th id="246">246</th><td><i> * conflicting reference, return its name.</i></td></tr>
+<tr><th id="247">247</th><td><i> *</i></td></tr>
+<tr><th id="248">248</th><td><i> * extras and skip must be sorted lists of reference names. Either one</i></td></tr>
+<tr><th id="249">249</th><td><i> * can be NULL, signifying the empty list.</i></td></tr>
+<tr><th id="250">250</th><td><i> */</i></td></tr>
+<tr><th id="251">251</th><td><em>const</em> <em>char</em> *<a class="decl" href="../refs.c.html#find_descendant_ref" title='find_descendant_ref' data-ref="find_descendant_ref" id="find_descendant_ref">find_descendant_ref</a>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="22dirname" title='dirname' data-type='const char *' data-ref="22dirname">dirname</dfn>,</td></tr>
+<tr><th id="252">252</th><td>				<em>const</em> <b>struct</b> <a class="type" href="../string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col3 decl" id="23extras" title='extras' data-type='const struct string_list *' data-ref="23extras">extras</dfn>,</td></tr>
+<tr><th id="253">253</th><td>				<em>const</em> <b>struct</b> <a class="type" href="../string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col4 decl" id="24skip" title='skip' data-type='const struct string_list *' data-ref="24skip">skip</dfn>);</td></tr>
+<tr><th id="254">254</th><td></td></tr>
+<tr><th id="255">255</th><td><i>/*</i></td></tr>
+<tr><th id="256">256</th><td><i> * Check whether an attempt to rename old_refname to new_refname would</i></td></tr>
+<tr><th id="257">257</th><td><i> * cause a D/F conflict with any existing reference (other than</i></td></tr>
+<tr><th id="258">258</th><td><i> * possibly old_refname). If there would be a conflict, emit an error</i></td></tr>
+<tr><th id="259">259</th><td><i> * message and return false; otherwise, return true.</i></td></tr>
+<tr><th id="260">260</th><td><i> *</i></td></tr>
+<tr><th id="261">261</th><td><i> * Note that this function is not safe against all races with other</i></td></tr>
+<tr><th id="262">262</th><td><i> * processes (though rename_ref() catches some races that might get by</i></td></tr>
+<tr><th id="263">263</th><td><i> * this check).</i></td></tr>
+<tr><th id="264">264</th><td><i> */</i></td></tr>
+<tr><th id="265">265</th><td><em>int</em> <a class="decl" href="../refs.c.html#refs_rename_ref_available" title='refs_rename_ref_available' data-ref="refs_rename_ref_available" id="refs_rename_ref_available">refs_rename_ref_available</a>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col5 decl" id="25refs" title='refs' data-type='struct ref_store *' data-ref="25refs">refs</dfn>,</td></tr>
+<tr><th id="266">266</th><td>			      <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="26old_refname" title='old_refname' data-type='const char *' data-ref="26old_refname">old_refname</dfn>,</td></tr>
+<tr><th id="267">267</th><td>			      <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="27new_refname" title='new_refname' data-type='const char *' data-ref="27new_refname">new_refname</dfn>);</td></tr>
+<tr><th id="268">268</th><td></td></tr>
+<tr><th id="269">269</th><td><i>/* We allow "recursive" symbolic refs. Only within reason, though */</i></td></tr>
+<tr><th id="270">270</th><td><u>#define <dfn class="macro" id="_M/SYMREF_MAXDEPTH" data-ref="_M/SYMREF_MAXDEPTH">SYMREF_MAXDEPTH</dfn> 5</u></td></tr>
+<tr><th id="271">271</th><td></td></tr>
+<tr><th id="272">272</th><td><i>/* Include broken references in a do_for_each_ref*() iteration: */</i></td></tr>
+<tr><th id="273">273</th><td><u>#define <dfn class="macro" id="_M/DO_FOR_EACH_INCLUDE_BROKEN" data-ref="_M/DO_FOR_EACH_INCLUDE_BROKEN">DO_FOR_EACH_INCLUDE_BROKEN</dfn> 0x01</u></td></tr>
+<tr><th id="274">274</th><td></td></tr>
+<tr><th id="275">275</th><td><i>/*</i></td></tr>
+<tr><th id="276">276</th><td><i> * Reference iterators</i></td></tr>
+<tr><th id="277">277</th><td><i> *</i></td></tr>
+<tr><th id="278">278</th><td><i> * A reference iterator encapsulates the state of an in-progress</i></td></tr>
+<tr><th id="279">279</th><td><i> * iteration over references. Create an instance of `struct</i></td></tr>
+<tr><th id="280">280</th><td><i> * ref_iterator` via one of the functions in this module.</i></td></tr>
+<tr><th id="281">281</th><td><i> *</i></td></tr>
+<tr><th id="282">282</th><td><i> * A freshly-created ref_iterator doesn't yet point at a reference. To</i></td></tr>
+<tr><th id="283">283</th><td><i> * advance the iterator, call ref_iterator_advance(). If successful,</i></td></tr>
+<tr><th id="284">284</th><td><i> * this sets the iterator's refname, oid, and flags fields to describe</i></td></tr>
+<tr><th id="285">285</th><td><i> * the next reference and returns ITER_OK. The data pointed at by</i></td></tr>
+<tr><th id="286">286</th><td><i> * refname and oid belong to the iterator; if you want to retain them</i></td></tr>
+<tr><th id="287">287</th><td><i> * after calling ref_iterator_advance() again or calling</i></td></tr>
+<tr><th id="288">288</th><td><i> * ref_iterator_abort(), you must make a copy. When the iteration has</i></td></tr>
+<tr><th id="289">289</th><td><i> * been exhausted, ref_iterator_advance() releases any resources</i></td></tr>
+<tr><th id="290">290</th><td><i> * assocated with the iteration, frees the ref_iterator object, and</i></td></tr>
+<tr><th id="291">291</th><td><i> * returns ITER_DONE. If you want to abort the iteration early, call</i></td></tr>
+<tr><th id="292">292</th><td><i> * ref_iterator_abort(), which also frees the ref_iterator object and</i></td></tr>
+<tr><th id="293">293</th><td><i> * any associated resources. If there was an internal error advancing</i></td></tr>
+<tr><th id="294">294</th><td><i> * to the next entry, ref_iterator_advance() aborts the iteration,</i></td></tr>
+<tr><th id="295">295</th><td><i> * frees the ref_iterator, and returns ITER_ERROR.</i></td></tr>
+<tr><th id="296">296</th><td><i> *</i></td></tr>
+<tr><th id="297">297</th><td><i> * The reference currently being looked at can be peeled by calling</i></td></tr>
+<tr><th id="298">298</th><td><i> * ref_iterator_peel(). This function is often faster than peel_ref(),</i></td></tr>
+<tr><th id="299">299</th><td><i> * so it should be preferred when iterating over references.</i></td></tr>
+<tr><th id="300">300</th><td><i> *</i></td></tr>
+<tr><th id="301">301</th><td><i> * Putting it all together, a typical iteration looks like this:</i></td></tr>
+<tr><th id="302">302</th><td><i> *</i></td></tr>
+<tr><th id="303">303</th><td><i> *     int ok;</i></td></tr>
+<tr><th id="304">304</th><td><i> *     struct ref_iterator *iter = ...;</i></td></tr>
+<tr><th id="305">305</th><td><i> *</i></td></tr>
+<tr><th id="306">306</th><td><i> *     while ((ok = ref_iterator_advance(iter)) == ITER_OK) {</i></td></tr>
+<tr><th id="307">307</th><td><i> *             if (want_to_stop_iteration()) {</i></td></tr>
+<tr><th id="308">308</th><td><i> *                     ok = ref_iterator_abort(iter);</i></td></tr>
+<tr><th id="309">309</th><td><i> *                     break;</i></td></tr>
+<tr><th id="310">310</th><td><i> *             }</i></td></tr>
+<tr><th id="311">311</th><td><i> *</i></td></tr>
+<tr><th id="312">312</th><td><i> *             // Access information about the current reference:</i></td></tr>
+<tr><th id="313">313</th><td><i> *             if (!(iter-&gt;flags &amp; REF_ISSYMREF))</i></td></tr>
+<tr><th id="314">314</th><td><i> *                     printf("%s is %s\n", iter-&gt;refname, oid_to_hex(&amp;iter-&gt;oid));</i></td></tr>
+<tr><th id="315">315</th><td><i> *</i></td></tr>
+<tr><th id="316">316</th><td><i> *             // If you need to peel the reference:</i></td></tr>
+<tr><th id="317">317</th><td><i> *             ref_iterator_peel(iter, &amp;oid);</i></td></tr>
+<tr><th id="318">318</th><td><i> *     }</i></td></tr>
+<tr><th id="319">319</th><td><i> *</i></td></tr>
+<tr><th id="320">320</th><td><i> *     if (ok != ITER_DONE)</i></td></tr>
+<tr><th id="321">321</th><td><i> *             handle_error();</i></td></tr>
+<tr><th id="322">322</th><td><i> */</i></td></tr>
+<tr><th id="323">323</th><td><b>struct</b> <dfn class="type def" id="ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</dfn> {</td></tr>
+<tr><th id="324">324</th><td>	<b>struct</b> <a class="type" href="#ref_iterator_vtable" title='ref_iterator_vtable' data-ref="ref_iterator_vtable">ref_iterator_vtable</a> *<dfn class="decl" id="ref_iterator::vtable" title='ref_iterator::vtable' data-ref="ref_iterator::vtable">vtable</dfn>;</td></tr>
+<tr><th id="325">325</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="ref_iterator::refname" title='ref_iterator::refname' data-ref="ref_iterator::refname">refname</dfn>;</td></tr>
+<tr><th id="326">326</th><td>	<em>const</em> <b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="decl" id="ref_iterator::oid" title='ref_iterator::oid' data-ref="ref_iterator::oid">oid</dfn>;</td></tr>
+<tr><th id="327">327</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="ref_iterator::flags" title='ref_iterator::flags' data-ref="ref_iterator::flags">flags</dfn>;</td></tr>
+<tr><th id="328">328</th><td>};</td></tr>
+<tr><th id="329">329</th><td></td></tr>
+<tr><th id="330">330</th><td><i>/*</i></td></tr>
+<tr><th id="331">331</th><td><i> * Advance the iterator to the first or next item and return ITER_OK.</i></td></tr>
+<tr><th id="332">332</th><td><i> * If the iteration is exhausted, free the resources associated with</i></td></tr>
+<tr><th id="333">333</th><td><i> * the ref_iterator and return ITER_DONE. On errors, free the iterator</i></td></tr>
+<tr><th id="334">334</th><td><i> * resources and return ITER_ERROR. It is a bug to use ref_iterator or</i></td></tr>
+<tr><th id="335">335</th><td><i> * call this function again after it has returned ITER_DONE or</i></td></tr>
+<tr><th id="336">336</th><td><i> * ITER_ERROR.</i></td></tr>
+<tr><th id="337">337</th><td><i> */</i></td></tr>
+<tr><th id="338">338</th><td><em>int</em> <dfn class="decl" id="ref_iterator_advance" title='ref_iterator_advance' data-ref="ref_iterator_advance">ref_iterator_advance</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col8 decl" id="28ref_iterator" title='ref_iterator' data-type='struct ref_iterator *' data-ref="28ref_iterator">ref_iterator</dfn>);</td></tr>
+<tr><th id="339">339</th><td></td></tr>
+<tr><th id="340">340</th><td><i>/*</i></td></tr>
+<tr><th id="341">341</th><td><i> * If possible, peel the reference currently being viewed by the</i></td></tr>
+<tr><th id="342">342</th><td><i> * iterator. Return 0 on success.</i></td></tr>
+<tr><th id="343">343</th><td><i> */</i></td></tr>
+<tr><th id="344">344</th><td><em>int</em> <dfn class="decl" id="ref_iterator_peel" title='ref_iterator_peel' data-ref="ref_iterator_peel">ref_iterator_peel</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col9 decl" id="29ref_iterator" title='ref_iterator' data-type='struct ref_iterator *' data-ref="29ref_iterator">ref_iterator</dfn>,</td></tr>
+<tr><th id="345">345</th><td>		      <b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col0 decl" id="30peeled" title='peeled' data-type='struct object_id *' data-ref="30peeled">peeled</dfn>);</td></tr>
+<tr><th id="346">346</th><td></td></tr>
+<tr><th id="347">347</th><td><i>/*</i></td></tr>
+<tr><th id="348">348</th><td><i> * End the iteration before it has been exhausted, freeing the</i></td></tr>
+<tr><th id="349">349</th><td><i> * reference iterator and any associated resources and returning</i></td></tr>
+<tr><th id="350">350</th><td><i> * ITER_DONE. If the abort itself failed, return ITER_ERROR.</i></td></tr>
+<tr><th id="351">351</th><td><i> */</i></td></tr>
+<tr><th id="352">352</th><td><em>int</em> <dfn class="decl" id="ref_iterator_abort" title='ref_iterator_abort' data-ref="ref_iterator_abort">ref_iterator_abort</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col1 decl" id="31ref_iterator" title='ref_iterator' data-type='struct ref_iterator *' data-ref="31ref_iterator">ref_iterator</dfn>);</td></tr>
+<tr><th id="353">353</th><td></td></tr>
+<tr><th id="354">354</th><td><i>/*</i></td></tr>
+<tr><th id="355">355</th><td><i> * An iterator over nothing (its first ref_iterator_advance() call</i></td></tr>
+<tr><th id="356">356</th><td><i> * returns ITER_DONE).</i></td></tr>
+<tr><th id="357">357</th><td><i> */</i></td></tr>
+<tr><th id="358">358</th><td><b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="decl" id="empty_ref_iterator_begin" title='empty_ref_iterator_begin' data-ref="empty_ref_iterator_begin">empty_ref_iterator_begin</dfn>(<em>void</em>);</td></tr>
+<tr><th id="359">359</th><td></td></tr>
+<tr><th id="360">360</th><td><i>/*</i></td></tr>
+<tr><th id="361">361</th><td><i> * Return true iff ref_iterator is an empty_ref_iterator.</i></td></tr>
+<tr><th id="362">362</th><td><i> */</i></td></tr>
+<tr><th id="363">363</th><td><em>int</em> <dfn class="decl" id="is_empty_ref_iterator" title='is_empty_ref_iterator' data-ref="is_empty_ref_iterator">is_empty_ref_iterator</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col2 decl" id="32ref_iterator" title='ref_iterator' data-type='struct ref_iterator *' data-ref="32ref_iterator">ref_iterator</dfn>);</td></tr>
+<tr><th id="364">364</th><td></td></tr>
+<tr><th id="365">365</th><td><i>/*</i></td></tr>
+<tr><th id="366">366</th><td><i> * Return an iterator that goes over each reference in `refs` for</i></td></tr>
+<tr><th id="367">367</th><td><i> * which the refname begins with prefix. If trim is non-zero, then</i></td></tr>
+<tr><th id="368">368</th><td><i> * trim that many characters off the beginning of each refname. flags</i></td></tr>
+<tr><th id="369">369</th><td><i> * can be DO_FOR_EACH_INCLUDE_BROKEN to include broken references in</i></td></tr>
+<tr><th id="370">370</th><td><i> * the iteration.</i></td></tr>
+<tr><th id="371">371</th><td><i> */</i></td></tr>
+<tr><th id="372">372</th><td><b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<a class="decl" href="../refs.c.html#refs_ref_iterator_begin" title='refs_ref_iterator_begin' data-ref="refs_ref_iterator_begin" id="refs_ref_iterator_begin">refs_ref_iterator_begin</a>(</td></tr>
+<tr><th id="373">373</th><td>		<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col3 decl" id="33refs" title='refs' data-type='struct ref_store *' data-ref="33refs">refs</dfn>,</td></tr>
+<tr><th id="374">374</th><td>		<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="34prefix" title='prefix' data-type='const char *' data-ref="34prefix">prefix</dfn>, <em>int</em> <dfn class="local col5 decl" id="35trim" title='trim' data-type='int' data-ref="35trim">trim</dfn>, <em>int</em> <dfn class="local col6 decl" id="36flags" title='flags' data-type='int' data-ref="36flags">flags</dfn>);</td></tr>
+<tr><th id="375">375</th><td></td></tr>
+<tr><th id="376">376</th><td><i>/*</i></td></tr>
+<tr><th id="377">377</th><td><i> * A callback function used to instruct merge_ref_iterator how to</i></td></tr>
+<tr><th id="378">378</th><td><i> * interleave the entries from iter0 and iter1. The function should</i></td></tr>
+<tr><th id="379">379</th><td><i> * return one of the constants defined in enum iterator_selection. It</i></td></tr>
+<tr><th id="380">380</th><td><i> * must not advance either of the iterators itself.</i></td></tr>
+<tr><th id="381">381</th><td><i> *</i></td></tr>
+<tr><th id="382">382</th><td><i> * The function must be prepared to handle the case that iter0 and/or</i></td></tr>
+<tr><th id="383">383</th><td><i> * iter1 is NULL, which indicates that the corresponding sub-iterator</i></td></tr>
+<tr><th id="384">384</th><td><i> * has been exhausted. Its return value must be consistent with the</i></td></tr>
+<tr><th id="385">385</th><td><i> * current states of the iterators; e.g., it must not return</i></td></tr>
+<tr><th id="386">386</th><td><i> * ITER_SKIP_1 if iter1 has already been exhausted.</i></td></tr>
+<tr><th id="387">387</th><td><i> */</i></td></tr>
+<tr><th id="388">388</th><td><b>typedef</b> <b>enum</b> <a class="type" href="../iterator.h.html#iterator_selection" title='iterator_selection' data-ref="iterator_selection">iterator_selection</a> <dfn class="typedef" id="ref_iterator_select_fn" title='ref_iterator_select_fn' data-type='enum iterator_selection (struct ref_iterator *, struct ref_iterator *, void *)' data-ref="ref_iterator_select_fn">ref_iterator_select_fn</dfn>(</td></tr>
+<tr><th id="389">389</th><td>		<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col7 decl" id="37iter0" title='iter0' data-type='struct ref_iterator *' data-ref="37iter0">iter0</dfn>, <b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col8 decl" id="38iter1" title='iter1' data-type='struct ref_iterator *' data-ref="38iter1">iter1</dfn>,</td></tr>
+<tr><th id="390">390</th><td>		<em>void</em> *<dfn class="local col9 decl" id="39cb_data" title='cb_data' data-type='void *' data-ref="39cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="391">391</th><td></td></tr>
+<tr><th id="392">392</th><td><i>/*</i></td></tr>
+<tr><th id="393">393</th><td><i> * Iterate over the entries from iter0 and iter1, with the values</i></td></tr>
+<tr><th id="394">394</th><td><i> * interleaved as directed by the select function. The iterator takes</i></td></tr>
+<tr><th id="395">395</th><td><i> * ownership of iter0 and iter1 and frees them when the iteration is</i></td></tr>
+<tr><th id="396">396</th><td><i> * over.</i></td></tr>
+<tr><th id="397">397</th><td><i> */</i></td></tr>
+<tr><th id="398">398</th><td><b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="decl" id="merge_ref_iterator_begin" title='merge_ref_iterator_begin' data-ref="merge_ref_iterator_begin">merge_ref_iterator_begin</dfn>(</td></tr>
+<tr><th id="399">399</th><td>		<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col0 decl" id="40iter0" title='iter0' data-type='struct ref_iterator *' data-ref="40iter0">iter0</dfn>, <b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col1 decl" id="41iter1" title='iter1' data-type='struct ref_iterator *' data-ref="41iter1">iter1</dfn>,</td></tr>
+<tr><th id="400">400</th><td>		<a class="typedef" href="#ref_iterator_select_fn" title='ref_iterator_select_fn' data-type='enum iterator_selection (struct ref_iterator *, struct ref_iterator *, void *)' data-ref="ref_iterator_select_fn">ref_iterator_select_fn</a> *<dfn class="local col2 decl" id="42select" title='select' data-type='ref_iterator_select_fn *' data-ref="42select">select</dfn>, <em>void</em> *<dfn class="local col3 decl" id="43cb_data" title='cb_data' data-type='void *' data-ref="43cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="401">401</th><td></td></tr>
+<tr><th id="402">402</th><td><i>/*</i></td></tr>
+<tr><th id="403">403</th><td><i> * An iterator consisting of the union of the entries from front and</i></td></tr>
+<tr><th id="404">404</th><td><i> * back. If there are entries common to the two sub-iterators, use the</i></td></tr>
+<tr><th id="405">405</th><td><i> * one from front. Each iterator must iterate over its entries in</i></td></tr>
+<tr><th id="406">406</th><td><i> * strcmp() order by refname for this to work.</i></td></tr>
+<tr><th id="407">407</th><td><i> *</i></td></tr>
+<tr><th id="408">408</th><td><i> * The new iterator takes ownership of its arguments and frees them</i></td></tr>
+<tr><th id="409">409</th><td><i> * when the iteration is over. As a convenience to callers, if front</i></td></tr>
+<tr><th id="410">410</th><td><i> * or back is an empty_ref_iterator, then abort that one immediately</i></td></tr>
+<tr><th id="411">411</th><td><i> * and return the other iterator directly, without wrapping it.</i></td></tr>
+<tr><th id="412">412</th><td><i> */</i></td></tr>
+<tr><th id="413">413</th><td><b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="decl" id="overlay_ref_iterator_begin" title='overlay_ref_iterator_begin' data-ref="overlay_ref_iterator_begin">overlay_ref_iterator_begin</dfn>(</td></tr>
+<tr><th id="414">414</th><td>		<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col4 decl" id="44front" title='front' data-type='struct ref_iterator *' data-ref="44front">front</dfn>, <b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col5 decl" id="45back" title='back' data-type='struct ref_iterator *' data-ref="45back">back</dfn>);</td></tr>
+<tr><th id="415">415</th><td></td></tr>
+<tr><th id="416">416</th><td><i>/*</i></td></tr>
+<tr><th id="417">417</th><td><i> * Wrap iter0, only letting through the references whose names start</i></td></tr>
+<tr><th id="418">418</th><td><i> * with prefix. If trim is set, set iter-&gt;refname to the name of the</i></td></tr>
+<tr><th id="419">419</th><td><i> * reference with that many characters trimmed off the front;</i></td></tr>
+<tr><th id="420">420</th><td><i> * otherwise set it to the full refname. The new iterator takes over</i></td></tr>
+<tr><th id="421">421</th><td><i> * ownership of iter0 and frees it when iteration is over. It makes</i></td></tr>
+<tr><th id="422">422</th><td><i> * its own copy of prefix.</i></td></tr>
+<tr><th id="423">423</th><td><i> *</i></td></tr>
+<tr><th id="424">424</th><td><i> * As an convenience to callers, if prefix is the empty string and</i></td></tr>
+<tr><th id="425">425</th><td><i> * trim is zero, this function returns iter0 directly, without</i></td></tr>
+<tr><th id="426">426</th><td><i> * wrapping it.</i></td></tr>
+<tr><th id="427">427</th><td><i> */</i></td></tr>
+<tr><th id="428">428</th><td><b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="decl" id="prefix_ref_iterator_begin" title='prefix_ref_iterator_begin' data-ref="prefix_ref_iterator_begin">prefix_ref_iterator_begin</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col6 decl" id="46iter0" title='iter0' data-type='struct ref_iterator *' data-ref="46iter0">iter0</dfn>,</td></tr>
+<tr><th id="429">429</th><td>					       <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="47prefix" title='prefix' data-type='const char *' data-ref="47prefix">prefix</dfn>,</td></tr>
+<tr><th id="430">430</th><td>					       <em>int</em> <dfn class="local col8 decl" id="48trim" title='trim' data-type='int' data-ref="48trim">trim</dfn>);</td></tr>
+<tr><th id="431">431</th><td></td></tr>
+<tr><th id="432">432</th><td><i>/* Internal implementation of reference iteration: */</i></td></tr>
+<tr><th id="433">433</th><td></td></tr>
+<tr><th id="434">434</th><td><i>/*</i></td></tr>
+<tr><th id="435">435</th><td><i> * Base class constructor for ref_iterators. Initialize the</i></td></tr>
+<tr><th id="436">436</th><td><i> * ref_iterator part of iter, setting its vtable pointer as specified.</i></td></tr>
+<tr><th id="437">437</th><td><i> * This is meant to be called only by the initializers of derived</i></td></tr>
+<tr><th id="438">438</th><td><i> * classes.</i></td></tr>
+<tr><th id="439">439</th><td><i> */</i></td></tr>
+<tr><th id="440">440</th><td><em>void</em> <dfn class="decl" id="base_ref_iterator_init" title='base_ref_iterator_init' data-ref="base_ref_iterator_init">base_ref_iterator_init</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col9 decl" id="49iter" title='iter' data-type='struct ref_iterator *' data-ref="49iter">iter</dfn>,</td></tr>
+<tr><th id="441">441</th><td>			    <b>struct</b> <a class="type" href="#ref_iterator_vtable" title='ref_iterator_vtable' data-ref="ref_iterator_vtable">ref_iterator_vtable</a> *<dfn class="local col0 decl" id="50vtable" title='vtable' data-type='struct ref_iterator_vtable *' data-ref="50vtable">vtable</dfn>);</td></tr>
+<tr><th id="442">442</th><td></td></tr>
+<tr><th id="443">443</th><td><i>/*</i></td></tr>
+<tr><th id="444">444</th><td><i> * Base class destructor for ref_iterators. Destroy the ref_iterator</i></td></tr>
+<tr><th id="445">445</th><td><i> * part of iter and shallow-free the object. This is meant to be</i></td></tr>
+<tr><th id="446">446</th><td><i> * called only by the destructors of derived classes.</i></td></tr>
+<tr><th id="447">447</th><td><i> */</i></td></tr>
+<tr><th id="448">448</th><td><em>void</em> <dfn class="decl" id="base_ref_iterator_free" title='base_ref_iterator_free' data-ref="base_ref_iterator_free">base_ref_iterator_free</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col1 decl" id="51iter" title='iter' data-type='struct ref_iterator *' data-ref="51iter">iter</dfn>);</td></tr>
+<tr><th id="449">449</th><td></td></tr>
+<tr><th id="450">450</th><td><i>/* Virtual function declarations for ref_iterators: */</i></td></tr>
+<tr><th id="451">451</th><td></td></tr>
+<tr><th id="452">452</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="ref_iterator_advance_fn" title='ref_iterator_advance_fn' data-type='int (struct ref_iterator *)' data-ref="ref_iterator_advance_fn">ref_iterator_advance_fn</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col2 decl" id="52ref_iterator" title='ref_iterator' data-type='struct ref_iterator *' data-ref="52ref_iterator">ref_iterator</dfn>);</td></tr>
+<tr><th id="453">453</th><td></td></tr>
+<tr><th id="454">454</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="ref_iterator_peel_fn" title='ref_iterator_peel_fn' data-type='int (struct ref_iterator *, struct object_id *)' data-ref="ref_iterator_peel_fn">ref_iterator_peel_fn</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col3 decl" id="53ref_iterator" title='ref_iterator' data-type='struct ref_iterator *' data-ref="53ref_iterator">ref_iterator</dfn>,</td></tr>
+<tr><th id="455">455</th><td>				 <b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col4 decl" id="54peeled" title='peeled' data-type='struct object_id *' data-ref="54peeled">peeled</dfn>);</td></tr>
+<tr><th id="456">456</th><td></td></tr>
+<tr><th id="457">457</th><td><i>/*</i></td></tr>
+<tr><th id="458">458</th><td><i> * Implementations of this function should free any resources specific</i></td></tr>
+<tr><th id="459">459</th><td><i> * to the derived class, then call base_ref_iterator_free() to clean</i></td></tr>
+<tr><th id="460">460</th><td><i> * up and free the ref_iterator object.</i></td></tr>
+<tr><th id="461">461</th><td><i> */</i></td></tr>
+<tr><th id="462">462</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="ref_iterator_abort_fn" title='ref_iterator_abort_fn' data-type='int (struct ref_iterator *)' data-ref="ref_iterator_abort_fn">ref_iterator_abort_fn</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col5 decl" id="55ref_iterator" title='ref_iterator' data-type='struct ref_iterator *' data-ref="55ref_iterator">ref_iterator</dfn>);</td></tr>
+<tr><th id="463">463</th><td></td></tr>
+<tr><th id="464">464</th><td><b>struct</b> <dfn class="type def" id="ref_iterator_vtable" title='ref_iterator_vtable' data-ref="ref_iterator_vtable">ref_iterator_vtable</dfn> {</td></tr>
+<tr><th id="465">465</th><td>	<a class="typedef" href="#ref_iterator_advance_fn" title='ref_iterator_advance_fn' data-type='int (struct ref_iterator *)' data-ref="ref_iterator_advance_fn">ref_iterator_advance_fn</a> *<dfn class="decl" id="ref_iterator_vtable::advance" title='ref_iterator_vtable::advance' data-ref="ref_iterator_vtable::advance">advance</dfn>;</td></tr>
+<tr><th id="466">466</th><td>	<a class="typedef" href="#ref_iterator_peel_fn" title='ref_iterator_peel_fn' data-type='int (struct ref_iterator *, struct object_id *)' data-ref="ref_iterator_peel_fn">ref_iterator_peel_fn</a> *<dfn class="decl" id="ref_iterator_vtable::peel" title='ref_iterator_vtable::peel' data-ref="ref_iterator_vtable::peel">peel</dfn>;</td></tr>
+<tr><th id="467">467</th><td>	<a class="typedef" href="#ref_iterator_abort_fn" title='ref_iterator_abort_fn' data-type='int (struct ref_iterator *)' data-ref="ref_iterator_abort_fn">ref_iterator_abort_fn</a> *<dfn class="decl" id="ref_iterator_vtable::abort" title='ref_iterator_vtable::abort' data-ref="ref_iterator_vtable::abort">abort</dfn>;</td></tr>
+<tr><th id="468">468</th><td>};</td></tr>
+<tr><th id="469">469</th><td></td></tr>
+<tr><th id="470">470</th><td><i>/*</i></td></tr>
+<tr><th id="471">471</th><td><i> * current_ref_iter is a performance hack: when iterating over</i></td></tr>
+<tr><th id="472">472</th><td><i> * references using the for_each_ref*() functions, current_ref_iter is</i></td></tr>
+<tr><th id="473">473</th><td><i> * set to the reference iterator before calling the callback function.</i></td></tr>
+<tr><th id="474">474</th><td><i> * If the callback function calls peel_ref(), then peel_ref() first</i></td></tr>
+<tr><th id="475">475</th><td><i> * checks whether the reference to be peeled is the one referred to by</i></td></tr>
+<tr><th id="476">476</th><td><i> * the iterator (it usually is) and if so, asks the iterator for the</i></td></tr>
+<tr><th id="477">477</th><td><i> * peeled version of the reference if it is available. This avoids a</i></td></tr>
+<tr><th id="478">478</th><td><i> * refname lookup in a common case. current_ref_iter is set to NULL</i></td></tr>
+<tr><th id="479">479</th><td><i> * when the iteration is over.</i></td></tr>
+<tr><th id="480">480</th><td><i> */</i></td></tr>
+<tr><th id="481">481</th><td><b>extern</b> <b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="decl" id="current_ref_iter" title='current_ref_iter' data-ref="current_ref_iter">current_ref_iter</dfn>;</td></tr>
+<tr><th id="482">482</th><td></td></tr>
+<tr><th id="483">483</th><td><i>/*</i></td></tr>
+<tr><th id="484">484</th><td><i> * The common backend for the for_each_*ref* functions. Call fn for</i></td></tr>
+<tr><th id="485">485</th><td><i> * each reference in iter. If the iterator itself ever returns</i></td></tr>
+<tr><th id="486">486</th><td><i> * ITER_ERROR, return -1. If fn ever returns a non-zero value, stop</i></td></tr>
+<tr><th id="487">487</th><td><i> * the iteration and return that value. Otherwise, return 0. In any</i></td></tr>
+<tr><th id="488">488</th><td><i> * case, free the iterator when done. This function is basically an</i></td></tr>
+<tr><th id="489">489</th><td><i> * adapter between the callback style of reference iteration and the</i></td></tr>
+<tr><th id="490">490</th><td><i> * iterator style.</i></td></tr>
+<tr><th id="491">491</th><td><i> */</i></td></tr>
+<tr><th id="492">492</th><td><em>int</em> <dfn class="decl" id="do_for_each_ref_iterator" title='do_for_each_ref_iterator' data-ref="do_for_each_ref_iterator">do_for_each_ref_iterator</dfn>(<b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="local col6 decl" id="56iter" title='iter' data-type='struct ref_iterator *' data-ref="56iter">iter</dfn>,</td></tr>
+<tr><th id="493">493</th><td>			     <a class="typedef" href="../refs.h.html#each_ref_fn" title='each_ref_fn' data-type='int (const char *, const struct object_id *, int, void *)' data-ref="each_ref_fn">each_ref_fn</a> <dfn class="local col7 decl" id="57fn" title='fn' data-type='each_ref_fn *' data-ref="57fn">fn</dfn>, <em>void</em> *<dfn class="local col8 decl" id="58cb_data" title='cb_data' data-type='void *' data-ref="58cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="494">494</th><td></td></tr>
+<tr><th id="495">495</th><td><i>/*</i></td></tr>
+<tr><th id="496">496</th><td><i> * Only include per-worktree refs in a do_for_each_ref*() iteration.</i></td></tr>
+<tr><th id="497">497</th><td><i> * Normally this will be used with a files ref_store, since that's</i></td></tr>
+<tr><th id="498">498</th><td><i> * where all reference backends will presumably store their</i></td></tr>
+<tr><th id="499">499</th><td><i> * per-worktree refs.</i></td></tr>
+<tr><th id="500">500</th><td><i> */</i></td></tr>
+<tr><th id="501">501</th><td><u>#define <dfn class="macro" id="_M/DO_FOR_EACH_PER_WORKTREE_ONLY" data-ref="_M/DO_FOR_EACH_PER_WORKTREE_ONLY">DO_FOR_EACH_PER_WORKTREE_ONLY</dfn> 0x02</u></td></tr>
+<tr><th id="502">502</th><td></td></tr>
+<tr><th id="503">503</th><td><b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a>;</td></tr>
+<tr><th id="504">504</th><td></td></tr>
+<tr><th id="505">505</th><td><i>/* refs backends */</i></td></tr>
+<tr><th id="506">506</th><td></td></tr>
+<tr><th id="507">507</th><td><i>/* ref_store_init flags */</i></td></tr>
+<tr><th id="508">508</th><td><u>#define <dfn class="macro" id="_M/REF_STORE_READ" data-ref="_M/REF_STORE_READ">REF_STORE_READ</dfn>		(1 &lt;&lt; 0)</u></td></tr>
+<tr><th id="509">509</th><td><u>#define <dfn class="macro" id="_M/REF_STORE_WRITE" data-ref="_M/REF_STORE_WRITE">REF_STORE_WRITE</dfn>		(1 &lt;&lt; 1) /* can perform update operations */</u></td></tr>
+<tr><th id="510">510</th><td><u>#define <dfn class="macro" id="_M/REF_STORE_ODB" data-ref="_M/REF_STORE_ODB">REF_STORE_ODB</dfn>		(1 &lt;&lt; 2) /* has access to object database */</u></td></tr>
+<tr><th id="511">511</th><td><u>#define <dfn class="macro" id="_M/REF_STORE_MAIN" data-ref="_M/REF_STORE_MAIN">REF_STORE_MAIN</dfn>		(1 &lt;&lt; 3)</u></td></tr>
+<tr><th id="512">512</th><td><u>#define <dfn class="macro" id="_M/REF_STORE_ALL_CAPS" data-ref="_M/REF_STORE_ALL_CAPS">REF_STORE_ALL_CAPS</dfn>	(REF_STORE_READ | \</u></td></tr>
+<tr><th id="513">513</th><td><u>				 REF_STORE_WRITE | \</u></td></tr>
+<tr><th id="514">514</th><td><u>				 REF_STORE_ODB | \</u></td></tr>
+<tr><th id="515">515</th><td><u>				 REF_STORE_MAIN)</u></td></tr>
+<tr><th id="516">516</th><td></td></tr>
+<tr><th id="517">517</th><td><i>/*</i></td></tr>
+<tr><th id="518">518</th><td><i> * Initialize the ref_store for the specified gitdir. These functions</i></td></tr>
+<tr><th id="519">519</th><td><i> * should call base_ref_store_init() to initialize the shared part of</i></td></tr>
+<tr><th id="520">520</th><td><i> * the ref_store and to record the ref_store for later lookup.</i></td></tr>
+<tr><th id="521">521</th><td><i> */</i></td></tr>
+<tr><th id="522">522</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="typedef" id="ref_store_init_fn" title='ref_store_init_fn' data-type='struct ref_store *(const char *, unsigned int)' data-ref="ref_store_init_fn">ref_store_init_fn</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="59gitdir" title='gitdir' data-type='const char *' data-ref="59gitdir">gitdir</dfn>,</td></tr>
+<tr><th id="523">523</th><td>					    <em>unsigned</em> <em>int</em> <dfn class="local col0 decl" id="60flags" title='flags' data-type='unsigned int' data-ref="60flags">flags</dfn>);</td></tr>
+<tr><th id="524">524</th><td></td></tr>
+<tr><th id="525">525</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="ref_init_db_fn" title='ref_init_db_fn' data-type='int (struct ref_store *, struct strbuf *)' data-ref="ref_init_db_fn">ref_init_db_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col1 decl" id="61refs" title='refs' data-type='struct ref_store *' data-ref="61refs">refs</dfn>, <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col2 decl" id="62err" title='err' data-type='struct strbuf *' data-ref="62err">err</dfn>);</td></tr>
+<tr><th id="526">526</th><td></td></tr>
+<tr><th id="527">527</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="ref_transaction_prepare_fn" title='ref_transaction_prepare_fn' data-type='int (struct ref_store *, struct ref_transaction *, struct strbuf *)' data-ref="ref_transaction_prepare_fn">ref_transaction_prepare_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col3 decl" id="63refs" title='refs' data-type='struct ref_store *' data-ref="63refs">refs</dfn>,</td></tr>
+<tr><th id="528">528</th><td>				       <b>struct</b> <a class="type" href="#ref_transaction" title='ref_transaction' data-ref="ref_transaction">ref_transaction</a> *<dfn class="local col4 decl" id="64transaction" title='transaction' data-type='struct ref_transaction *' data-ref="64transaction">transaction</dfn>,</td></tr>
+<tr><th id="529">529</th><td>				       <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col5 decl" id="65err" title='err' data-type='struct strbuf *' data-ref="65err">err</dfn>);</td></tr>
+<tr><th id="530">530</th><td></td></tr>
+<tr><th id="531">531</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="ref_transaction_finish_fn" title='ref_transaction_finish_fn' data-type='int (struct ref_store *, struct ref_transaction *, struct strbuf *)' data-ref="ref_transaction_finish_fn">ref_transaction_finish_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col6 decl" id="66refs" title='refs' data-type='struct ref_store *' data-ref="66refs">refs</dfn>,</td></tr>
+<tr><th id="532">532</th><td>				      <b>struct</b> <a class="type" href="#ref_transaction" title='ref_transaction' data-ref="ref_transaction">ref_transaction</a> *<dfn class="local col7 decl" id="67transaction" title='transaction' data-type='struct ref_transaction *' data-ref="67transaction">transaction</dfn>,</td></tr>
+<tr><th id="533">533</th><td>				      <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col8 decl" id="68err" title='err' data-type='struct strbuf *' data-ref="68err">err</dfn>);</td></tr>
+<tr><th id="534">534</th><td></td></tr>
+<tr><th id="535">535</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="ref_transaction_abort_fn" title='ref_transaction_abort_fn' data-type='int (struct ref_store *, struct ref_transaction *, struct strbuf *)' data-ref="ref_transaction_abort_fn">ref_transaction_abort_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col9 decl" id="69refs" title='refs' data-type='struct ref_store *' data-ref="69refs">refs</dfn>,</td></tr>
+<tr><th id="536">536</th><td>				     <b>struct</b> <a class="type" href="#ref_transaction" title='ref_transaction' data-ref="ref_transaction">ref_transaction</a> *<dfn class="local col0 decl" id="70transaction" title='transaction' data-type='struct ref_transaction *' data-ref="70transaction">transaction</dfn>,</td></tr>
+<tr><th id="537">537</th><td>				     <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col1 decl" id="71err" title='err' data-type='struct strbuf *' data-ref="71err">err</dfn>);</td></tr>
+<tr><th id="538">538</th><td></td></tr>
+<tr><th id="539">539</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="ref_transaction_commit_fn" title='ref_transaction_commit_fn' data-type='int (struct ref_store *, struct ref_transaction *, struct strbuf *)' data-ref="ref_transaction_commit_fn">ref_transaction_commit_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col2 decl" id="72refs" title='refs' data-type='struct ref_store *' data-ref="72refs">refs</dfn>,</td></tr>
+<tr><th id="540">540</th><td>				      <b>struct</b> <a class="type" href="#ref_transaction" title='ref_transaction' data-ref="ref_transaction">ref_transaction</a> *<dfn class="local col3 decl" id="73transaction" title='transaction' data-type='struct ref_transaction *' data-ref="73transaction">transaction</dfn>,</td></tr>
+<tr><th id="541">541</th><td>				      <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col4 decl" id="74err" title='err' data-type='struct strbuf *' data-ref="74err">err</dfn>);</td></tr>
+<tr><th id="542">542</th><td></td></tr>
+<tr><th id="543">543</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="pack_refs_fn" title='pack_refs_fn' data-type='int (struct ref_store *, unsigned int)' data-ref="pack_refs_fn">pack_refs_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col5 decl" id="75ref_store" title='ref_store' data-type='struct ref_store *' data-ref="75ref_store">ref_store</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="76flags" title='flags' data-type='unsigned int' data-ref="76flags">flags</dfn>);</td></tr>
+<tr><th id="544">544</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="peel_ref_fn" title='peel_ref_fn' data-type='int (struct ref_store *, const char *, unsigned char *)' data-ref="peel_ref_fn">peel_ref_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col7 decl" id="77ref_store" title='ref_store' data-type='struct ref_store *' data-ref="77ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="545">545</th><td>			<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="78refname" title='refname' data-type='const char *' data-ref="78refname">refname</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="79sha1" title='sha1' data-type='unsigned char *' data-ref="79sha1">sha1</dfn>);</td></tr>
+<tr><th id="546">546</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="create_symref_fn" title='create_symref_fn' data-type='int (struct ref_store *, const char *, const char *, const char *)' data-ref="create_symref_fn">create_symref_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col0 decl" id="80ref_store" title='ref_store' data-type='struct ref_store *' data-ref="80ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="547">547</th><td>			     <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="81ref_target" title='ref_target' data-type='const char *' data-ref="81ref_target">ref_target</dfn>,</td></tr>
+<tr><th id="548">548</th><td>			     <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="82refs_heads_master" title='refs_heads_master' data-type='const char *' data-ref="82refs_heads_master">refs_heads_master</dfn>,</td></tr>
+<tr><th id="549">549</th><td>			     <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="83logmsg" title='logmsg' data-type='const char *' data-ref="83logmsg">logmsg</dfn>);</td></tr>
+<tr><th id="550">550</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="delete_refs_fn" title='delete_refs_fn' data-type='int (struct ref_store *, const char *, struct string_list *, unsigned int)' data-ref="delete_refs_fn">delete_refs_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col4 decl" id="84ref_store" title='ref_store' data-type='struct ref_store *' data-ref="84ref_store">ref_store</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="85msg" title='msg' data-type='const char *' data-ref="85msg">msg</dfn>,</td></tr>
+<tr><th id="551">551</th><td>			   <b>struct</b> <a class="type" href="../string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col6 decl" id="86refnames" title='refnames' data-type='struct string_list *' data-ref="86refnames">refnames</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col7 decl" id="87flags" title='flags' data-type='unsigned int' data-ref="87flags">flags</dfn>);</td></tr>
+<tr><th id="552">552</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="rename_ref_fn" title='rename_ref_fn' data-type='int (struct ref_store *, const char *, const char *, const char *)' data-ref="rename_ref_fn">rename_ref_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col8 decl" id="88ref_store" title='ref_store' data-type='struct ref_store *' data-ref="88ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="553">553</th><td>			  <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="89oldref" title='oldref' data-type='const char *' data-ref="89oldref">oldref</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="90newref" title='newref' data-type='const char *' data-ref="90newref">newref</dfn>,</td></tr>
+<tr><th id="554">554</th><td>			  <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="91logmsg" title='logmsg' data-type='const char *' data-ref="91logmsg">logmsg</dfn>);</td></tr>
+<tr><th id="555">555</th><td></td></tr>
+<tr><th id="556">556</th><td><i>/*</i></td></tr>
+<tr><th id="557">557</th><td><i> * Iterate over the references in `ref_store` whose names start with</i></td></tr>
+<tr><th id="558">558</th><td><i> * `prefix`. `prefix` is matched as a literal string, without regard</i></td></tr>
+<tr><th id="559">559</th><td><i> * for path separators. If prefix is NULL or the empty string, iterate</i></td></tr>
+<tr><th id="560">560</th><td><i> * over all references in `ref_store`.</i></td></tr>
+<tr><th id="561">561</th><td><i> */</i></td></tr>
+<tr><th id="562">562</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="typedef" id="ref_iterator_begin_fn" title='ref_iterator_begin_fn' data-type='struct ref_iterator *(struct ref_store *, const char *, unsigned int)' data-ref="ref_iterator_begin_fn">ref_iterator_begin_fn</dfn>(</td></tr>
+<tr><th id="563">563</th><td>		<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col2 decl" id="92ref_store" title='ref_store' data-type='struct ref_store *' data-ref="92ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="564">564</th><td>		<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="93prefix" title='prefix' data-type='const char *' data-ref="93prefix">prefix</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="94flags" title='flags' data-type='unsigned int' data-ref="94flags">flags</dfn>);</td></tr>
+<tr><th id="565">565</th><td></td></tr>
+<tr><th id="566">566</th><td><i>/* reflog functions */</i></td></tr>
+<tr><th id="567">567</th><td></td></tr>
+<tr><th id="568">568</th><td><i>/*</i></td></tr>
+<tr><th id="569">569</th><td><i> * Iterate over the references in the specified ref_store that have a</i></td></tr>
+<tr><th id="570">570</th><td><i> * reflog. The refs are iterated over in arbitrary order.</i></td></tr>
+<tr><th id="571">571</th><td><i> */</i></td></tr>
+<tr><th id="572">572</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#ref_iterator" title='ref_iterator' data-ref="ref_iterator">ref_iterator</a> *<dfn class="typedef" id="reflog_iterator_begin_fn" title='reflog_iterator_begin_fn' data-type='struct ref_iterator *(struct ref_store *)' data-ref="reflog_iterator_begin_fn">reflog_iterator_begin_fn</dfn>(</td></tr>
+<tr><th id="573">573</th><td>		<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col5 decl" id="95ref_store" title='ref_store' data-type='struct ref_store *' data-ref="95ref_store">ref_store</dfn>);</td></tr>
+<tr><th id="574">574</th><td></td></tr>
+<tr><th id="575">575</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="for_each_reflog_ent_fn" title='for_each_reflog_ent_fn' data-type='int (struct ref_store *, const char *, each_reflog_ent_fn *, void *)' data-ref="for_each_reflog_ent_fn">for_each_reflog_ent_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col6 decl" id="96ref_store" title='ref_store' data-type='struct ref_store *' data-ref="96ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="576">576</th><td>				   <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="97refname" title='refname' data-type='const char *' data-ref="97refname">refname</dfn>,</td></tr>
+<tr><th id="577">577</th><td>				   <a class="typedef" href="../refs.h.html#each_reflog_ent_fn" title='each_reflog_ent_fn' data-type='int (struct object_id *, struct object_id *, const char *, timestamp_t, int, const char *, void *)' data-ref="each_reflog_ent_fn">each_reflog_ent_fn</a> <dfn class="local col8 decl" id="98fn" title='fn' data-type='each_reflog_ent_fn *' data-ref="98fn">fn</dfn>,</td></tr>
+<tr><th id="578">578</th><td>				   <em>void</em> *<dfn class="local col9 decl" id="99cb_data" title='cb_data' data-type='void *' data-ref="99cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="579">579</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="for_each_reflog_ent_reverse_fn" title='for_each_reflog_ent_reverse_fn' data-type='int (struct ref_store *, const char *, each_reflog_ent_fn *, void *)' data-ref="for_each_reflog_ent_reverse_fn">for_each_reflog_ent_reverse_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col0 decl" id="100ref_store" title='ref_store' data-type='struct ref_store *' data-ref="100ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="580">580</th><td>					   <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="101refname" title='refname' data-type='const char *' data-ref="101refname">refname</dfn>,</td></tr>
+<tr><th id="581">581</th><td>					   <a class="typedef" href="../refs.h.html#each_reflog_ent_fn" title='each_reflog_ent_fn' data-type='int (struct object_id *, struct object_id *, const char *, timestamp_t, int, const char *, void *)' data-ref="each_reflog_ent_fn">each_reflog_ent_fn</a> <dfn class="local col2 decl" id="102fn" title='fn' data-type='each_reflog_ent_fn *' data-ref="102fn">fn</dfn>,</td></tr>
+<tr><th id="582">582</th><td>					   <em>void</em> *<dfn class="local col3 decl" id="103cb_data" title='cb_data' data-type='void *' data-ref="103cb_data">cb_data</dfn>);</td></tr>
+<tr><th id="583">583</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="reflog_exists_fn" title='reflog_exists_fn' data-type='int (struct ref_store *, const char *)' data-ref="reflog_exists_fn">reflog_exists_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col4 decl" id="104ref_store" title='ref_store' data-type='struct ref_store *' data-ref="104ref_store">ref_store</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="105refname" title='refname' data-type='const char *' data-ref="105refname">refname</dfn>);</td></tr>
+<tr><th id="584">584</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="create_reflog_fn" title='create_reflog_fn' data-type='int (struct ref_store *, const char *, int, struct strbuf *)' data-ref="create_reflog_fn">create_reflog_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col6 decl" id="106ref_store" title='ref_store' data-type='struct ref_store *' data-ref="106ref_store">ref_store</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="107refname" title='refname' data-type='const char *' data-ref="107refname">refname</dfn>,</td></tr>
+<tr><th id="585">585</th><td>			     <em>int</em> <dfn class="local col8 decl" id="108force_create" title='force_create' data-type='int' data-ref="108force_create">force_create</dfn>, <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col9 decl" id="109err" title='err' data-type='struct strbuf *' data-ref="109err">err</dfn>);</td></tr>
+<tr><th id="586">586</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="delete_reflog_fn" title='delete_reflog_fn' data-type='int (struct ref_store *, const char *)' data-ref="delete_reflog_fn">delete_reflog_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col0 decl" id="110ref_store" title='ref_store' data-type='struct ref_store *' data-ref="110ref_store">ref_store</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="111refname" title='refname' data-type='const char *' data-ref="111refname">refname</dfn>);</td></tr>
+<tr><th id="587">587</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="reflog_expire_fn" title='reflog_expire_fn' data-type='int (struct ref_store *, const char *, const unsigned char *, unsigned int, reflog_expiry_prepare_fn *, reflog_expiry_should_prune_fn *, reflog_expiry_cleanup_fn *, void *)' data-ref="reflog_expire_fn">reflog_expire_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col2 decl" id="112ref_store" title='ref_store' data-type='struct ref_store *' data-ref="112ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="588">588</th><td>			     <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="113refname" title='refname' data-type='const char *' data-ref="113refname">refname</dfn>, <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="114sha1" title='sha1' data-type='const unsigned char *' data-ref="114sha1">sha1</dfn>,</td></tr>
+<tr><th id="589">589</th><td>			     <em>unsigned</em> <em>int</em> <dfn class="local col5 decl" id="115flags" title='flags' data-type='unsigned int' data-ref="115flags">flags</dfn>,</td></tr>
+<tr><th id="590">590</th><td>			     <a class="typedef" href="../refs.h.html#reflog_expiry_prepare_fn" title='reflog_expiry_prepare_fn' data-type='void (const char *, const struct object_id *, void *)' data-ref="reflog_expiry_prepare_fn">reflog_expiry_prepare_fn</a> <dfn class="local col6 decl" id="116prepare_fn" title='prepare_fn' data-type='reflog_expiry_prepare_fn *' data-ref="116prepare_fn">prepare_fn</dfn>,</td></tr>
+<tr><th id="591">591</th><td>			     <a class="typedef" href="../refs.h.html#reflog_expiry_should_prune_fn" title='reflog_expiry_should_prune_fn' data-type='int (struct object_id *, struct object_id *, const char *, timestamp_t, int, const char *, void *)' data-ref="reflog_expiry_should_prune_fn">reflog_expiry_should_prune_fn</a> <dfn class="local col7 decl" id="117should_prune_fn" title='should_prune_fn' data-type='reflog_expiry_should_prune_fn *' data-ref="117should_prune_fn">should_prune_fn</dfn>,</td></tr>
+<tr><th id="592">592</th><td>			     <a class="typedef" href="../refs.h.html#reflog_expiry_cleanup_fn" title='reflog_expiry_cleanup_fn' data-type='void (void *)' data-ref="reflog_expiry_cleanup_fn">reflog_expiry_cleanup_fn</a> <dfn class="local col8 decl" id="118cleanup_fn" title='cleanup_fn' data-type='reflog_expiry_cleanup_fn *' data-ref="118cleanup_fn">cleanup_fn</dfn>,</td></tr>
+<tr><th id="593">593</th><td>			     <em>void</em> *<dfn class="local col9 decl" id="119policy_cb_data" title='policy_cb_data' data-type='void *' data-ref="119policy_cb_data">policy_cb_data</dfn>);</td></tr>
+<tr><th id="594">594</th><td></td></tr>
+<tr><th id="595">595</th><td><i>/*</i></td></tr>
+<tr><th id="596">596</th><td><i> * Read a reference from the specified reference store, non-recursively.</i></td></tr>
+<tr><th id="597">597</th><td><i> * Set type to describe the reference, and:</i></td></tr>
+<tr><th id="598">598</th><td><i> *</i></td></tr>
+<tr><th id="599">599</th><td><i> * - If refname is the name of a normal reference, fill in sha1</i></td></tr>
+<tr><th id="600">600</th><td><i> *   (leaving referent unchanged).</i></td></tr>
+<tr><th id="601">601</th><td><i> *</i></td></tr>
+<tr><th id="602">602</th><td><i> * - If refname is the name of a symbolic reference, write the full</i></td></tr>
+<tr><th id="603">603</th><td><i> *   name of the reference to which it refers (e.g.</i></td></tr>
+<tr><th id="604">604</th><td><i> *   "refs/heads/master") to referent and set the REF_ISSYMREF bit in</i></td></tr>
+<tr><th id="605">605</th><td><i> *   type (leaving sha1 unchanged). The caller is responsible for</i></td></tr>
+<tr><th id="606">606</th><td><i> *   validating that referent is a valid reference name.</i></td></tr>
+<tr><th id="607">607</th><td><i> *</i></td></tr>
+<tr><th id="608">608</th><td><i> * WARNING: refname might be used as part of a filename, so it is</i></td></tr>
+<tr><th id="609">609</th><td><i> * important from a security standpoint that it be safe in the sense</i></td></tr>
+<tr><th id="610">610</th><td><i> * of refname_is_safe(). Moreover, for symrefs this function sets</i></td></tr>
+<tr><th id="611">611</th><td><i> * referent to whatever the repository says, which might not be a</i></td></tr>
+<tr><th id="612">612</th><td><i> * properly-formatted or even safe reference name. NEITHER INPUT NOR</i></td></tr>
+<tr><th id="613">613</th><td><i> * OUTPUT REFERENCE NAMES ARE VALIDATED WITHIN THIS FUNCTION.</i></td></tr>
+<tr><th id="614">614</th><td><i> *</i></td></tr>
+<tr><th id="615">615</th><td><i> * Return 0 on success. If the ref doesn't exist, set errno to ENOENT</i></td></tr>
+<tr><th id="616">616</th><td><i> * and return -1. If the ref exists but is neither a symbolic ref nor</i></td></tr>
+<tr><th id="617">617</th><td><i> * a sha1, it is broken; set REF_ISBROKEN in type, set errno to</i></td></tr>
+<tr><th id="618">618</th><td><i> * EINVAL, and return -1. If there is another error reading the ref,</i></td></tr>
+<tr><th id="619">619</th><td><i> * set errno appropriately and return -1.</i></td></tr>
+<tr><th id="620">620</th><td><i> *</i></td></tr>
+<tr><th id="621">621</th><td><i> * Backend-specific flags might be set in type as well, regardless of</i></td></tr>
+<tr><th id="622">622</th><td><i> * outcome.</i></td></tr>
+<tr><th id="623">623</th><td><i> *</i></td></tr>
+<tr><th id="624">624</th><td><i> * It is OK for refname to point into referent. If so:</i></td></tr>
+<tr><th id="625">625</th><td><i> *</i></td></tr>
+<tr><th id="626">626</th><td><i> * - if the function succeeds with REF_ISSYMREF, referent will be</i></td></tr>
+<tr><th id="627">627</th><td><i> *   overwritten and the memory formerly pointed to by it might be</i></td></tr>
+<tr><th id="628">628</th><td><i> *   changed or even freed.</i></td></tr>
+<tr><th id="629">629</th><td><i> *</i></td></tr>
+<tr><th id="630">630</th><td><i> * - in all other cases, referent will be untouched, and therefore</i></td></tr>
+<tr><th id="631">631</th><td><i> *   refname will still be valid and unchanged.</i></td></tr>
+<tr><th id="632">632</th><td><i> */</i></td></tr>
+<tr><th id="633">633</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="read_raw_ref_fn" title='read_raw_ref_fn' data-type='int (struct ref_store *, const char *, unsigned char *, struct strbuf *, unsigned int *)' data-ref="read_raw_ref_fn">read_raw_ref_fn</dfn>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col0 decl" id="120ref_store" title='ref_store' data-type='struct ref_store *' data-ref="120ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="634">634</th><td>			    <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="121refname" title='refname' data-type='const char *' data-ref="121refname">refname</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col2 decl" id="122sha1" title='sha1' data-type='unsigned char *' data-ref="122sha1">sha1</dfn>,</td></tr>
+<tr><th id="635">635</th><td>			    <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col3 decl" id="123referent" title='referent' data-type='struct strbuf *' data-ref="123referent">referent</dfn>, <em>unsigned</em> <em>int</em> *<dfn class="local col4 decl" id="124type" title='type' data-type='unsigned int *' data-ref="124type">type</dfn>);</td></tr>
+<tr><th id="636">636</th><td></td></tr>
+<tr><th id="637">637</th><td><b>struct</b> <dfn class="type def" id="ref_storage_be" title='ref_storage_be' data-ref="ref_storage_be">ref_storage_be</dfn> {</td></tr>
+<tr><th id="638">638</th><td>	<b>struct</b> <a class="type" href="#ref_storage_be" title='ref_storage_be' data-ref="ref_storage_be">ref_storage_be</a> *<dfn class="decl" id="ref_storage_be::next" title='ref_storage_be::next' data-ref="ref_storage_be::next">next</dfn>;</td></tr>
+<tr><th id="639">639</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="ref_storage_be::name" title='ref_storage_be::name' data-ref="ref_storage_be::name">name</dfn>;</td></tr>
+<tr><th id="640">640</th><td>	<a class="typedef" href="#ref_store_init_fn" title='ref_store_init_fn' data-type='struct ref_store *(const char *, unsigned int)' data-ref="ref_store_init_fn">ref_store_init_fn</a> *<dfn class="decl" id="ref_storage_be::init" title='ref_storage_be::init' data-ref="ref_storage_be::init">init</dfn>;</td></tr>
+<tr><th id="641">641</th><td>	<a class="typedef" href="#ref_init_db_fn" title='ref_init_db_fn' data-type='int (struct ref_store *, struct strbuf *)' data-ref="ref_init_db_fn">ref_init_db_fn</a> *<dfn class="decl" id="ref_storage_be::init_db" title='ref_storage_be::init_db' data-ref="ref_storage_be::init_db">init_db</dfn>;</td></tr>
+<tr><th id="642">642</th><td></td></tr>
+<tr><th id="643">643</th><td>	<a class="typedef" href="#ref_transaction_prepare_fn" title='ref_transaction_prepare_fn' data-type='int (struct ref_store *, struct ref_transaction *, struct strbuf *)' data-ref="ref_transaction_prepare_fn">ref_transaction_prepare_fn</a> *<dfn class="decl" id="ref_storage_be::transaction_prepare" title='ref_storage_be::transaction_prepare' data-ref="ref_storage_be::transaction_prepare">transaction_prepare</dfn>;</td></tr>
+<tr><th id="644">644</th><td>	<a class="typedef" href="#ref_transaction_finish_fn" title='ref_transaction_finish_fn' data-type='int (struct ref_store *, struct ref_transaction *, struct strbuf *)' data-ref="ref_transaction_finish_fn">ref_transaction_finish_fn</a> *<dfn class="decl" id="ref_storage_be::transaction_finish" title='ref_storage_be::transaction_finish' data-ref="ref_storage_be::transaction_finish">transaction_finish</dfn>;</td></tr>
+<tr><th id="645">645</th><td>	<a class="typedef" href="#ref_transaction_abort_fn" title='ref_transaction_abort_fn' data-type='int (struct ref_store *, struct ref_transaction *, struct strbuf *)' data-ref="ref_transaction_abort_fn">ref_transaction_abort_fn</a> *<dfn class="decl" id="ref_storage_be::transaction_abort" title='ref_storage_be::transaction_abort' data-ref="ref_storage_be::transaction_abort">transaction_abort</dfn>;</td></tr>
+<tr><th id="646">646</th><td>	<a class="typedef" href="#ref_transaction_commit_fn" title='ref_transaction_commit_fn' data-type='int (struct ref_store *, struct ref_transaction *, struct strbuf *)' data-ref="ref_transaction_commit_fn">ref_transaction_commit_fn</a> *<dfn class="decl" id="ref_storage_be::initial_transaction_commit" title='ref_storage_be::initial_transaction_commit' data-ref="ref_storage_be::initial_transaction_commit">initial_transaction_commit</dfn>;</td></tr>
+<tr><th id="647">647</th><td></td></tr>
+<tr><th id="648">648</th><td>	<a class="typedef" href="#pack_refs_fn" title='pack_refs_fn' data-type='int (struct ref_store *, unsigned int)' data-ref="pack_refs_fn">pack_refs_fn</a> *<dfn class="decl" id="ref_storage_be::pack_refs" title='ref_storage_be::pack_refs' data-ref="ref_storage_be::pack_refs">pack_refs</dfn>;</td></tr>
+<tr><th id="649">649</th><td>	<a class="typedef" href="#peel_ref_fn" title='peel_ref_fn' data-type='int (struct ref_store *, const char *, unsigned char *)' data-ref="peel_ref_fn">peel_ref_fn</a> *<dfn class="decl" id="ref_storage_be::peel_ref" title='ref_storage_be::peel_ref' data-ref="ref_storage_be::peel_ref">peel_ref</dfn>;</td></tr>
+<tr><th id="650">650</th><td>	<a class="typedef" href="#create_symref_fn" title='create_symref_fn' data-type='int (struct ref_store *, const char *, const char *, const char *)' data-ref="create_symref_fn">create_symref_fn</a> *<dfn class="decl" id="ref_storage_be::create_symref" title='ref_storage_be::create_symref' data-ref="ref_storage_be::create_symref">create_symref</dfn>;</td></tr>
+<tr><th id="651">651</th><td>	<a class="typedef" href="#delete_refs_fn" title='delete_refs_fn' data-type='int (struct ref_store *, const char *, struct string_list *, unsigned int)' data-ref="delete_refs_fn">delete_refs_fn</a> *<dfn class="decl" id="ref_storage_be::delete_refs" title='ref_storage_be::delete_refs' data-ref="ref_storage_be::delete_refs">delete_refs</dfn>;</td></tr>
+<tr><th id="652">652</th><td>	<a class="typedef" href="#rename_ref_fn" title='rename_ref_fn' data-type='int (struct ref_store *, const char *, const char *, const char *)' data-ref="rename_ref_fn">rename_ref_fn</a> *<dfn class="decl" id="ref_storage_be::rename_ref" title='ref_storage_be::rename_ref' data-ref="ref_storage_be::rename_ref">rename_ref</dfn>;</td></tr>
+<tr><th id="653">653</th><td></td></tr>
+<tr><th id="654">654</th><td>	<a class="typedef" href="#ref_iterator_begin_fn" title='ref_iterator_begin_fn' data-type='struct ref_iterator *(struct ref_store *, const char *, unsigned int)' data-ref="ref_iterator_begin_fn">ref_iterator_begin_fn</a> *<dfn class="decl" id="ref_storage_be::iterator_begin" title='ref_storage_be::iterator_begin' data-ref="ref_storage_be::iterator_begin">iterator_begin</dfn>;</td></tr>
+<tr><th id="655">655</th><td>	<a class="typedef" href="#read_raw_ref_fn" title='read_raw_ref_fn' data-type='int (struct ref_store *, const char *, unsigned char *, struct strbuf *, unsigned int *)' data-ref="read_raw_ref_fn">read_raw_ref_fn</a> *<dfn class="decl" id="ref_storage_be::read_raw_ref" title='ref_storage_be::read_raw_ref' data-ref="ref_storage_be::read_raw_ref">read_raw_ref</dfn>;</td></tr>
+<tr><th id="656">656</th><td></td></tr>
+<tr><th id="657">657</th><td>	<a class="typedef" href="#reflog_iterator_begin_fn" title='reflog_iterator_begin_fn' data-type='struct ref_iterator *(struct ref_store *)' data-ref="reflog_iterator_begin_fn">reflog_iterator_begin_fn</a> *<dfn class="decl" id="ref_storage_be::reflog_iterator_begin" title='ref_storage_be::reflog_iterator_begin' data-ref="ref_storage_be::reflog_iterator_begin">reflog_iterator_begin</dfn>;</td></tr>
+<tr><th id="658">658</th><td>	<a class="typedef" href="#for_each_reflog_ent_fn" title='for_each_reflog_ent_fn' data-type='int (struct ref_store *, const char *, each_reflog_ent_fn *, void *)' data-ref="for_each_reflog_ent_fn">for_each_reflog_ent_fn</a> *<dfn class="decl" id="ref_storage_be::for_each_reflog_ent" title='ref_storage_be::for_each_reflog_ent' data-ref="ref_storage_be::for_each_reflog_ent">for_each_reflog_ent</dfn>;</td></tr>
+<tr><th id="659">659</th><td>	<a class="typedef" href="#for_each_reflog_ent_reverse_fn" title='for_each_reflog_ent_reverse_fn' data-type='int (struct ref_store *, const char *, each_reflog_ent_fn *, void *)' data-ref="for_each_reflog_ent_reverse_fn">for_each_reflog_ent_reverse_fn</a> *<dfn class="decl" id="ref_storage_be::for_each_reflog_ent_reverse" title='ref_storage_be::for_each_reflog_ent_reverse' data-ref="ref_storage_be::for_each_reflog_ent_reverse">for_each_reflog_ent_reverse</dfn>;</td></tr>
+<tr><th id="660">660</th><td>	<a class="typedef" href="#reflog_exists_fn" title='reflog_exists_fn' data-type='int (struct ref_store *, const char *)' data-ref="reflog_exists_fn">reflog_exists_fn</a> *<dfn class="decl" id="ref_storage_be::reflog_exists" title='ref_storage_be::reflog_exists' data-ref="ref_storage_be::reflog_exists">reflog_exists</dfn>;</td></tr>
+<tr><th id="661">661</th><td>	<a class="typedef" href="#create_reflog_fn" title='create_reflog_fn' data-type='int (struct ref_store *, const char *, int, struct strbuf *)' data-ref="create_reflog_fn">create_reflog_fn</a> *<dfn class="decl" id="ref_storage_be::create_reflog" title='ref_storage_be::create_reflog' data-ref="ref_storage_be::create_reflog">create_reflog</dfn>;</td></tr>
+<tr><th id="662">662</th><td>	<a class="typedef" href="#delete_reflog_fn" title='delete_reflog_fn' data-type='int (struct ref_store *, const char *)' data-ref="delete_reflog_fn">delete_reflog_fn</a> *<dfn class="decl" id="ref_storage_be::delete_reflog" title='ref_storage_be::delete_reflog' data-ref="ref_storage_be::delete_reflog">delete_reflog</dfn>;</td></tr>
+<tr><th id="663">663</th><td>	<a class="typedef" href="#reflog_expire_fn" title='reflog_expire_fn' data-type='int (struct ref_store *, const char *, const unsigned char *, unsigned int, reflog_expiry_prepare_fn *, reflog_expiry_should_prune_fn *, reflog_expiry_cleanup_fn *, void *)' data-ref="reflog_expire_fn">reflog_expire_fn</a> *<dfn class="decl" id="ref_storage_be::reflog_expire" title='ref_storage_be::reflog_expire' data-ref="ref_storage_be::reflog_expire">reflog_expire</dfn>;</td></tr>
+<tr><th id="664">664</th><td>};</td></tr>
+<tr><th id="665">665</th><td></td></tr>
+<tr><th id="666">666</th><td><b>extern</b> <b>struct</b> <a class="type" href="#ref_storage_be" title='ref_storage_be' data-ref="ref_storage_be">ref_storage_be</a> <dfn class="decl" id="refs_be_files" title='refs_be_files' data-ref="refs_be_files">refs_be_files</dfn>;</td></tr>
+<tr><th id="667">667</th><td><b>extern</b> <b>struct</b> <a class="type" href="#ref_storage_be" title='ref_storage_be' data-ref="ref_storage_be">ref_storage_be</a> <dfn class="decl" id="refs_be_packed" title='refs_be_packed' data-ref="refs_be_packed">refs_be_packed</dfn>;</td></tr>
+<tr><th id="668">668</th><td></td></tr>
+<tr><th id="669">669</th><td><i>/*</i></td></tr>
+<tr><th id="670">670</th><td><i> * A representation of the reference store for the main repository or</i></td></tr>
+<tr><th id="671">671</th><td><i> * a submodule. The ref_store instances for submodules are kept in a</i></td></tr>
+<tr><th id="672">672</th><td><i> * linked list.</i></td></tr>
+<tr><th id="673">673</th><td><i> */</i></td></tr>
+<tr><th id="674">674</th><td><b>struct</b> <dfn class="type def" id="ref_store" title='ref_store' data-ref="ref_store">ref_store</dfn> {</td></tr>
+<tr><th id="675">675</th><td>	<i>/* The backend describing this ref_store's storage scheme: */</i></td></tr>
+<tr><th id="676">676</th><td>	<em>const</em> <b>struct</b> <a class="type" href="#ref_storage_be" title='ref_storage_be' data-ref="ref_storage_be">ref_storage_be</a> *<dfn class="decl" id="ref_store::be" title='ref_store::be' data-ref="ref_store::be">be</dfn>;</td></tr>
+<tr><th id="677">677</th><td>};</td></tr>
+<tr><th id="678">678</th><td></td></tr>
+<tr><th id="679">679</th><td><i>/*</i></td></tr>
+<tr><th id="680">680</th><td><i> * Fill in the generic part of refs and add it to our collection of</i></td></tr>
+<tr><th id="681">681</th><td><i> * reference stores.</i></td></tr>
+<tr><th id="682">682</th><td><i> */</i></td></tr>
+<tr><th id="683">683</th><td><em>void</em> <a class="decl" href="../refs.c.html#base_ref_store_init" title='base_ref_store_init' data-ref="base_ref_store_init" id="base_ref_store_init">base_ref_store_init</a>(<b>struct</b> <a class="type" href="#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col5 decl" id="125refs" title='refs' data-type='struct ref_store *' data-ref="125refs">refs</dfn>,</td></tr>
+<tr><th id="684">684</th><td>			 <em>const</em> <b>struct</b> <a class="type" href="#ref_storage_be" title='ref_storage_be' data-ref="ref_storage_be">ref_storage_be</a> *<dfn class="local col6 decl" id="126be" title='be' data-type='const struct ref_storage_be *' data-ref="126be">be</dfn>);</td></tr>
+<tr><th id="685">685</th><td></td></tr>
+<tr><th id="686">686</th><td><u>#<span data-ppcond="1">endif</span> /* REFS_REFS_INTERNAL_H */</u></td></tr>
+<tr><th id="687">687</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../refs.c.html'>codebrowser/refs.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

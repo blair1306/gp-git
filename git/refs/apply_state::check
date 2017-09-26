@@ -1,0 +1,10 @@
+<dec f='codebrowser/apply.h' l='46' type='int'/>
+<use f='codebrowser/apply.c' l='138' u='r' c='check_apply_state'/>
+<use f='codebrowser/apply.c' l='2189' u='r' c='parse_chunk'/>
+<use f='codebrowser/apply.c' l='4696' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4935' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4935' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4935' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4935' u='a' c='apply_parse_options'/>
+<offset>224</offset>
+<doc f='codebrowser/apply.h' l='46'>/* preimage must match working tree, don&apos;t actually apply */</doc>

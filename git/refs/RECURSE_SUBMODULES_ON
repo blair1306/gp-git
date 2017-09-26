@@ -1,0 +1,17 @@
+<dec f='codebrowser/submodule.h' l='18' type='2'/>
+<use f='codebrowser/builtin/fetch.c' l='67' u='r' c='git_fetch_config'/>
+<use f='codebrowser/builtin/fetch.c' l='683' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='699' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='714' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='1222' u='r' c='add_options_to_argv'/>
+<use f='codebrowser/builtin/pull.c' l='491' c='run_fetch'/>
+<use f='codebrowser/builtin/pull.c' l='905' u='r' c='cmd_pull'/>
+<use f='codebrowser/builtin/pull.c' l='924' u='r' c='cmd_pull'/>
+<use f='codebrowser/builtin/pull.c' l='931' u='r' c='cmd_pull'/>
+<use f='codebrowser/submodule-config.c' l='243' u='r' c='parse_fetch_recurse'/>
+<use f='codebrowser/submodule-config.c' l='286' u='r' c='option_fetch_parse_recurse_submodules'/>
+<use f='codebrowser/submodule-config.c' l='296' u='r' c='parse_update_recurse'/>
+<use f='codebrowser/submodule.c' l='188' u='r' c='submodule_config'/>
+<use f='codebrowser/submodule.c' l='201' u='r' c='git_default_submodule_config'/>
+<use f='codebrowser/submodule.c' l='219' u='r' c='option_parse_recurse_submodules_worktree_updater'/>
+<use f='codebrowser/submodule.c' l='713' u='r' c='should_update_submodules'/>

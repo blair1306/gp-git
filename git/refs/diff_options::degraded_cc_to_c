@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='144' type='int'/>
+<offset>960</offset>
+<use f='codebrowser/builtin/diff-tree.c' l='178' u='r' c='cmd_diff_tree'/>
+<use f='codebrowser/builtin/diff-tree.c' l='182' u='w' c='cmd_diff_tree'/>
+<use f='codebrowser/builtin/log.c' l='386' u='r' c='cmd_log_walk'/>
+<use f='codebrowser/builtin/log.c' l='389' u='w' c='cmd_log_walk'/>
+<use f='codebrowser/diff.c' l='5031' u='r' c='diff_result_code'/>
+<use f='codebrowser/diffcore-rename.c' l='527' u='w' c='diffcore_rename'/>

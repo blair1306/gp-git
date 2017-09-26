@@ -1,0 +1,9 @@
+<dec f='codebrowser/builtin/merge.c' l='89' type='2'/>
+<use f='codebrowser/builtin/merge.c' l='215'/>
+<use f='codebrowser/builtin/merge.c' l='215'/>
+<use f='codebrowser/builtin/merge.c' l='215'/>
+<use f='codebrowser/builtin/merge.c' l='215'/>
+<use f='codebrowser/builtin/merge.c' l='575' u='r' c='git_merge_config'/>
+<use f='codebrowser/builtin/merge.c' l='1300' u='r' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1400' u='r' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1440' u='r' c='cmd_merge'/>

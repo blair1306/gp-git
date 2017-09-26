@@ -1,0 +1,15 @@
+<dec f='codebrowser/ewah/ewok.h' l='61' type='size_t'/>
+<offset>128</offset>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='38' u='r' c='buffer_grow'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='41' u='w' c='buffer_grow'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='42' u='r' c='buffer_grow'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='48' u='r' c='buffer_push'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='141' u='r' c='ewah_add_dirty_words'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='285' u='w' c='ewah_new'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='286' u='r' c='ewah_new'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='305' u='r' c='ewah_free'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='691' u='r' c='ewah_pool_free'/>
+<use f='codebrowser/ewah/ewah_io.c' l='134' u='w' c='ewah_read_mmap'/>
+<use f='codebrowser/ewah/ewah_io.c' l='137' u='r' c='ewah_read_mmap'/>
+<use f='codebrowser/ewah/ewah_io.c' l='178' u='w' c='ewah_deserialize'/>
+<use f='codebrowser/ewah/ewah_io.c' l='179' u='r' c='ewah_deserialize'/>

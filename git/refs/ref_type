@@ -1,0 +1,12 @@
+<def f='codebrowser/refs.h' l='661' ll='665'/>
+<dec f='codebrowser/refs.h' l='667' type='enum ref_type ref_type(const char * refname)'/>
+<def f='codebrowser/refs.c' l='573' ll='580' type='enum ref_type ref_type(const char * refname)'/>
+<use f='codebrowser/refs.c' l='666' u='c' c='refs_delete_ref'/>
+<use f='codebrowser/refs.c' l='1004' u='c' c='refs_update_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='118' u='c' c='files_reflog_path'/>
+<use f='codebrowser/refs/files-backend.c' l='128' u='c' c='files_reflog_path'/>
+<use f='codebrowser/refs/files-backend.c' l='136' u='c' c='files_ref_path'/>
+<use f='codebrowser/refs/files-backend.c' l='146' u='c' c='files_ref_path'/>
+<use f='codebrowser/refs/files-backend.c' l='708' u='c' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='1072' u='c' c='should_pack_ref'/>
+<use f='codebrowser/refs/packed-backend.c' l='421' u='c' c='packed_ref_iterator_advance'/>

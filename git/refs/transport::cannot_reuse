@@ -1,0 +1,8 @@
+<dec f='codebrowser/transport.h' l='48' type='unsigned int'/>
+<offset>257</offset>
+<doc f='codebrowser/transport.h' l='44'>/*
+	 * Transports that call take-over destroys the data specific to
+	 * the transport type while doing so, and cannot be reused.
+	 */</doc>
+<use f='codebrowser/builtin/fetch.c' l='1060' u='r' c='backfill_tags'/>
+<use f='codebrowser/transport.c' l='637' u='w' c='transport_take_over'/>

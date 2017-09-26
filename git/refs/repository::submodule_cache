@@ -1,0 +1,17 @@
+<dec f='codebrowser/repository.h' l='62' type='struct submodule_cache *'/>
+<offset>512</offset>
+<doc f='codebrowser/repository.h' l='61'>/* Repository&apos;s submodule config as defined by &apos;.gitmodules&apos; */</doc>
+<use f='codebrowser/repository.c' l='224' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='225' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='226' u='w' c='repo_clear'/>
+<use f='codebrowser/submodule-config.c' l='552' u='r' c='submodule_cache_check_init'/>
+<use f='codebrowser/submodule-config.c' l='552' u='r' c='submodule_cache_check_init'/>
+<use f='codebrowser/submodule-config.c' l='555' u='r' c='submodule_cache_check_init'/>
+<use f='codebrowser/submodule-config.c' l='556' u='w' c='submodule_cache_check_init'/>
+<use f='codebrowser/submodule-config.c' l='558' u='r' c='submodule_cache_check_init'/>
+<use f='codebrowser/submodule-config.c' l='568' u='r' c='submodule_config_option'/>
+<use f='codebrowser/submodule-config.c' l='585' u='r' c='submodule_from_name'/>
+<use f='codebrowser/submodule-config.c' l='592' u='r' c='submodule_from_path'/>
+<use f='codebrowser/submodule-config.c' l='600' u='r' c='submodule_from_cache'/>
+<use f='codebrowser/submodule-config.c' l='606' u='r' c='submodule_free'/>
+<use f='codebrowser/submodule-config.c' l='607' u='r' c='submodule_free'/>

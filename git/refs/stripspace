@@ -1,0 +1,5 @@
+<def f='codebrowser/strbuf.h' l='477' ll='480' type='void stripspace(struct strbuf * buf, int skip_comments)'/>
+<doc f='codebrowser/strbuf.h' l='473'>/**
+ * Temporary alias until all topic branches have switched to use
+ * strbuf_stripspace directly.
+ */</doc>

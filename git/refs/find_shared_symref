@@ -1,0 +1,16 @@
+<dec f='codebrowser/worktree.h' l='70' type='const struct worktree * find_shared_symref(const char * symref, const char * target)'/>
+<use f='codebrowser/branch.c' l='340' u='c' c='die_if_checked_out'/>
+<doc f='codebrowser/worktree.h' l='65'>/*
+ * Check if a per-worktree symref points to a ref in the main worktree
+ * or any linked worktree, and return the worktree that holds the ref,
+ * or NULL otherwise. The result may be destroyed by the next call.
+ */</doc>
+<use f='codebrowser/builtin/branch.c' l='229' u='c' c='delete_branches'/>
+<use f='codebrowser/builtin/notes.c' l='860' u='c' c='merge'/>
+<def f='codebrowser/worktree.c' l='296' ll='338' type='const struct worktree * find_shared_symref(const char * symref, const char * target)'/>
+<doc f='codebrowser/worktree.c' l='290'>/*
+ * note: this function should be able to detect shared symref even if
+ * HEAD is temporarily detached (e.g. in the middle of rebase or
+ * bisect). New commands that do similar things should update this
+ * function as well.
+ */</doc>

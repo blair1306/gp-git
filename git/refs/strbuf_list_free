@@ -1,0 +1,17 @@
+<dec f='codebrowser/strbuf.h' l='534' type='void strbuf_list_free(struct strbuf ** )'/>
+<doc f='codebrowser/strbuf.h' l='530'>/**
+ * Free a NULL-terminated list of strbufs (for example, the return
+ * values of the strbuf_split*() functions).
+ */</doc>
+<use f='codebrowser/builtin/clean.c' l='527' u='c' c='parse_choice'/>
+<use f='codebrowser/builtin/clean.c' l='701' u='c' c='filter_by_patterns_cmd'/>
+<use f='codebrowser/builtin/notes.c' l='322' u='c' c='notes_copy_from_stdin'/>
+<use f='codebrowser/config.c' l='428' u='c' c='git_config_parse_parameter'/>
+<use f='codebrowser/config.c' l='438' u='c' c='git_config_parse_parameter'/>
+<use f='codebrowser/environment.c' l='140' u='c' c='expand_namespace'/>
+<use f='codebrowser/http.c' l='600' u='c' c='curl_dump_header'/>
+<use f='codebrowser/mailinfo.c' l='1015' u='c' c='handle_body'/>
+<def f='codebrowser/strbuf.c' l='144' ll='153' type='void strbuf_list_free(struct strbuf ** sbs)'/>
+<use f='codebrowser/sub-process.c' l='46' u='c' c='subprocess_read_status'/>
+<use f='codebrowser/trailer.c' l='1040' u='c' c='trailer_info_get'/>
+<use f='codebrowser/wt-status.c' l='1172' u='c' c='abbrev_sha1_in_line'/>

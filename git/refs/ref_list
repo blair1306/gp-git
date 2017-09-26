@@ -1,0 +1,5 @@
+<def f='codebrowser/bundle.h' l='6' ll='12'/>
+<size>16</size>
+<mbr r='ref_list::nr' o='0' t='unsigned int'/>
+<mbr r='ref_list::alloc' o='32' t='unsigned int'/>
+<mbr r='ref_list::list' o='64' t='struct ref_list_entry *'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/ll-merge.h' l='12' type='long'/>
+<offset>64</offset>
+<use f='codebrowser/ll-merge.c' l='112' u='r' c='ll_xdl_merge'/>
+<use f='codebrowser/merge-recursive.c' l='889' u='w' c='merge_3way'/>

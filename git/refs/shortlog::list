@@ -1,0 +1,12 @@
+<dec f='codebrowser/shortlog.h' l='7' type='struct string_list'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/shortlog.c' l='74' u='a' c='insert_one_record'/>
+<use f='codebrowser/builtin/shortlog.c' l='235' u='m' c='shortlog_init'/>
+<use f='codebrowser/builtin/shortlog.c' l='320' u='m' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='320' u='m' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='320' u='m' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='322' u='m' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='323' u='m' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='348' u='m' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='352' u='m' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='353' u='a' c='shortlog_output'/>

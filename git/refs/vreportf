@@ -1,0 +1,12 @@
+<dec f='codebrowser/git-compat-util.h' l='414' type='void vreportf(const char * prefix, const char * err, struct __va_list_tag * params)'/>
+<doc f='codebrowser/git-compat-util.h' l='413'>/* General helper functions */</doc>
+<use f='codebrowser/config.c' l='2165' u='c' c='git_die_config'/>
+<use f='codebrowser/http-backend.c' l='586' u='c' c='die_webcgi'/>
+<use f='codebrowser/run-command.c' l='324' u='c' c='fake_fatal'/>
+<use f='codebrowser/run-command.c' l='939' u='c' c='die_async'/>
+<def f='codebrowser/usage.c' l='9' ll='20' type='void vreportf(const char * prefix, const char * err, struct __va_list_tag * params)'/>
+<use f='codebrowser/usage.c' l='24' u='c' c='usage_builtin'/>
+<use f='codebrowser/usage.c' l='30' u='c' c='die_builtin'/>
+<use f='codebrowser/usage.c' l='36' u='c' c='error_builtin'/>
+<use f='codebrowser/usage.c' l='41' u='c' c='warn_builtin'/>
+<use f='codebrowser/usage.c' l='223' u='c' c='BUG_vfl'/>

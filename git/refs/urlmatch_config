@@ -1,0 +1,9 @@
+<def f='codebrowser/urlmatch.h' l='42' ll='51'/>
+<size>184</size>
+<mbr r='urlmatch_config::vars' o='0' t='struct string_list'/>
+<mbr r='urlmatch_config::url' o='256' t='struct url_info'/>
+<mbr r='urlmatch_config::section' o='1152' t='const char *'/>
+<mbr r='urlmatch_config::key' o='1216' t='const char *'/>
+<mbr r='urlmatch_config::cb' o='1280' t='void *'/>
+<mbr r='urlmatch_config::collect_fn' o='1344' t='int (*)(const char *, const char *, void *)'/>
+<mbr r='urlmatch_config::cascade_fn' o='1408' t='int (*)(const char *, const char *, void *)'/>

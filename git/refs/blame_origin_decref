@@ -1,0 +1,14 @@
+<dec f='codebrowser/blame.h' l='162' type='void blame_origin_decref(struct blame_origin * o)'/>
+<def f='codebrowser/blame.c' l='10' ll='30' type='void blame_origin_decref(struct blame_origin * o)'/>
+<use f='codebrowser/blame.c' l='15' u='c' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='457' u='c' c='blame_coalesce'/>
+<use f='codebrowser/blame.c' l='671' u='c' c='dup_entry'/>
+<use f='codebrowser/blame.c' l='787' u='c' c='decref_split'/>
+<use f='codebrowser/blame.c' l='850' u='c' c='blame_chunk'/>
+<use f='codebrowser/blame.c' l='1300' u='c' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1342' u='c' c='pass_whole_blame'/>
+<use f='codebrowser/blame.c' l='1440' u='c' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1452' u='c' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1535' u='c' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1604' u='c' c='assign_blame'/>
+<use f='codebrowser/builtin/blame.c' l='903' u='c' c='cmd_blame'/>

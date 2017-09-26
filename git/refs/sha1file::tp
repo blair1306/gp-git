@@ -1,0 +1,4 @@
+<dec f='codebrowser/csum-file.h' l='13' type='struct progress *'/>
+<offset>19392</offset>
+<use f='codebrowser/csum-file.c' l='32' u='r' c='flush'/>
+<use f='codebrowser/csum-file.c' l='149' u='w' c='sha1fd_throughput'/>

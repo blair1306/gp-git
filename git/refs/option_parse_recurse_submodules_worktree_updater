@@ -1,0 +1,14 @@
+<dec f='codebrowser/submodule.h' l='47' type='int option_parse_recurse_submodules_worktree_updater(const struct option * opt, const char * arg, int unset)'/>
+<use f='codebrowser/builtin/checkout.c' l='1174' u='r' c='cmd_checkout'/>
+<use f='codebrowser/builtin/checkout.c' l='1174' u='r' c='cmd_checkout'/>
+<use f='codebrowser/builtin/checkout.c' l='1174' u='r' c='cmd_checkout'/>
+<use f='codebrowser/builtin/checkout.c' l='1174' u='r' c='cmd_checkout'/>
+<use f='codebrowser/builtin/read-tree.c' l='153' u='r' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='153' u='r' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='153' u='r' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='153' u='r' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/reset.c' l='298' u='r' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='298' u='r' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='298' u='r' c='cmd_reset'/>
+<use f='codebrowser/builtin/reset.c' l='298' u='r' c='cmd_reset'/>
+<def f='codebrowser/submodule.c' l='207' ll='222' type='int option_parse_recurse_submodules_worktree_updater(const struct option * opt, const char * arg, int unset)'/>

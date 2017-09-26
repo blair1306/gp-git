@@ -1,0 +1,574 @@
+<dec f='codebrowser/remote.h' l='129' type='char []'/>
+<offset>896</offset>
+<doc f='codebrowser/remote.h' l='129'>/* more */</doc>
+<use f='codebrowser/builtin/clone.c' l='590' u='r' c='write_remote_refs'/>
+<use f='codebrowser/builtin/clone.c' l='606' u='r' c='write_followtags'/>
+<use f='codebrowser/builtin/clone.c' l='608' u='r' c='write_followtags'/>
+<use f='codebrowser/builtin/clone.c' l='612' u='r' c='write_followtags'/>
+<use f='codebrowser/builtin/clone.c' l='668' u='r' c='update_remote_refs'/>
+<use f='codebrowser/builtin/clone.c' l='679' u='r' c='update_head'/>
+<use f='codebrowser/builtin/clone.c' l='681' u='r' c='update_head'/>
+<use f='codebrowser/builtin/clone.c' l='686' u='r' c='update_head'/>
+<use f='codebrowser/builtin/clone.c' l='810' u='r' c='write_refspec_config'/>
+<use f='codebrowser/builtin/clone.c' l='811' c='write_refspec_config'/>
+<use f='codebrowser/builtin/clone.c' l='812' c='write_refspec_config'/>
+<use f='codebrowser/builtin/clone.c' l='814' c='write_refspec_config'/>
+<use f='codebrowser/builtin/clone.c' l='817' u='r' c='write_refspec_config'/>
+<use f='codebrowser/builtin/clone.c' l='821' c='write_refspec_config'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='226' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/fetch.c' l='192' u='r' c='add_merge_config'/>
+<use f='codebrowser/builtin/fetch.c' l='252' u='r' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='261' u='r' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='288' u='r' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='289' u='r' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='292' u='r' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='458' u='r' c='s_update_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='495' u='r' c='adjust_refcol_width'/>
+<use f='codebrowser/builtin/fetch.c' l='497' u='r' c='adjust_refcol_width'/>
+<use f='codebrowser/builtin/fetch.c' l='539' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='539' u='r' c='prepare_format_display'/>
+<use f='codebrowser/builtin/fetch.c' l='622' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='650' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='670' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='789' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='789' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='802' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='809' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='813' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='815' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='817' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='819' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='821' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='823' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='827' u='r' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='962' u='r' c='prune_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='976' u='r' c='prune_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='980' u='r' c='prune_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='998' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='998' u='r' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='1114' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/ls-remote.c' l='108' u='r' c='cmd_ls_remote'/>
+<use f='codebrowser/builtin/ls-remote.c' l='111' c='cmd_ls_remote'/>
+<use f='codebrowser/builtin/ls-remote.c' l='112' c='cmd_ls_remote'/>
+<use f='codebrowser/builtin/push.c' l='54' u='r' c='map_refspec'/>
+<use f='codebrowser/builtin/push.c' l='66' u='r' c='map_refspec'/>
+<use f='codebrowser/builtin/push.c' l='67' u='r' c='map_refspec'/>
+<use f='codebrowser/builtin/remote.c' l='344' u='r' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='345' u='r' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='347' u='r' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='353' u='r' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='354' u='r' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='403' u='r' c='get_push_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='407' u='r' c='get_push_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='474' u='r' c='get_head_names'/>
+<use f='codebrowser/builtin/send-pack.c' l='87' c='print_helper_status'/>
+<use f='codebrowser/connect.c' l='44' u='r' c='check_ref_type'/>
+<use f='codebrowser/connect.c' l='102' u='r' c='annotate_refs_with_symref_info'/>
+<use f='codebrowser/fetch-pack.c' l='636' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='637' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='641' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='653' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='674' u='r' c='filter_refs'/>
+<use f='codebrowser/fetch-pack.c' l='772' c='everything_local'/>
+<use f='codebrowser/fetch-pack.c' l='776' c='everything_local'/>
+<use f='codebrowser/fetch-pack.c' l='903' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='903' u='r' c='cmp_ref_by_name'/>
+<use f='codebrowser/fetch-pack.c' l='1040' u='r' c='remove_duplicates_in_refs'/>
+<use f='codebrowser/fetch-pack.c' l='1187' c='report_unmatched_refs'/>
+<use f='codebrowser/fetch-pack.c' l='1191' c='report_unmatched_refs'/>
+<use f='codebrowser/http-push.c' l='1566' u='r' c='verify_merge_base'/>
+<use f='codebrowser/http-push.c' l='1586' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1612' u='r' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1614' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1631' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1633' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1641' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1646' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1649' c='delete_remote_branch'/>
+<use f='codebrowser/http-push.c' l='1843' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1844' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1846' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1850' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1857' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1859' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1881' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1882' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1884' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1892' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1893' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1894' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1899' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1904' u='r' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1907' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1909' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1949' c='cmd_main'/>
+<use f='codebrowser/http.c' l='1865' u='r' c='http_fetch_ref'/>
+<use f='codebrowser/remote-curl.c' l='391' c='output_refs'/>
+<use f='codebrowser/remote-curl.c' l='393' c='output_refs'/>
+<use f='codebrowser/remote-curl.c' l='829' u='r' c='fetch_git'/>
+<use f='codebrowser/remote-curl.c' l='832' c='fetch_git'/>
+<use f='codebrowser/remote.c' l='748' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='748' u='r' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='752' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='752' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='752' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='756' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='756' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='756' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='760' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='760' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='760' c='handle_duplicate'/>
+<use f='codebrowser/remote.c' l='791' u='r' c='ref_remove_duplicates'/>
+<use f='codebrowser/remote.c' l='927' u='r' c='alloc_ref_with_prefix'/>
+<use f='codebrowser/remote.c' l='928' u='r' c='alloc_ref_with_prefix'/>
+<use f='codebrowser/remote.c' l='943' u='r' c='copy_ref'/>
+<use f='codebrowser/remote.c' l='988' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='988' u='r' c='ref_compare_name'/>
+<use f='codebrowser/remote.c' l='1017' u='r' c='count_refspec_match'/>
+<use f='codebrowser/remote.c' l='1110' u='r' c='guess_ref'/>
+<use f='codebrowser/remote.c' l='1172' u='r' c='match_explicit'/>
+<use f='codebrowser/remote.c' l='1179' c='match_explicit'/>
+<use f='codebrowser/remote.c' l='1212' c='match_explicit'/>
+<use f='codebrowser/remote.c' l='1250' u='r' c='get_ref_match'/>
+<use f='codebrowser/remote.c' l='1252' u='r' c='get_ref_match'/>
+<use f='codebrowser/remote.c' l='1269' u='r' c='get_ref_match'/>
+<use f='codebrowser/remote.c' l='1271' u='r' c='get_ref_match'/>
+<use f='codebrowser/remote.c' l='1324' u='r' c='add_missing_tags'/>
+<use f='codebrowser/remote.c' l='1325' u='r' c='add_missing_tags'/>
+<use f='codebrowser/remote.c' l='1333' u='r' c='add_missing_tags'/>
+<use f='codebrowser/remote.c' l='1335' u='r' c='add_missing_tags'/>
+<use f='codebrowser/remote.c' l='1339' u='r' c='add_missing_tags'/>
+<use f='codebrowser/remote.c' l='1373' u='r' c='add_missing_tags'/>
+<use f='codebrowser/remote.c' l='1385' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1385' u='r' c='find_ref_by_name'/>
+<use f='codebrowser/remote.c' l='1393' u='r' c='prepare_ref_index'/>
+<use f='codebrowser/remote.c' l='1483' u='r' c='match_push_refs'/>
+<use f='codebrowser/remote.c' l='1583' u='r' c='set_ref_status_for_push'/>
+<use f='codebrowser/remote.c' l='1820' c='get_expanded_map'/>
+<use f='codebrowser/remote.c' l='1820' u='r' c='get_expanded_map'/>
+<use f='codebrowser/remote.c' l='1820' u='r' c='get_expanded_map'/>
+<use f='codebrowser/remote.c' l='1822' u='r' c='get_expanded_map'/>
+<use f='codebrowser/remote.c' l='1843' u='r' c='find_ref_by_name_abbrev'/>
+<use f='codebrowser/remote.c' l='1904' u='r' c='get_fetch_map'/>
+<use f='codebrowser/remote.c' l='1905' u='r' c='get_fetch_map'/>
+<use f='codebrowser/remote.c' l='1908' c='get_fetch_map'/>
+<use f='codebrowser/remote.c' l='1929' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='2181' u='r' c='guess_remote_head'/>
+<use f='codebrowser/remote.c' l='2249' u='r' c='get_stale_heads'/>
+<use f='codebrowser/remote.c' l='2348' u='r' c='apply_cas'/>
+<use f='codebrowser/remote.c' l='2353' u='r' c='apply_cas'/>
+<use f='codebrowser/remote.c' l='2363' u='r' c='apply_cas'/>
+<use f='codebrowser/send-pack.c' l='310' c='generate_push_cert'/>
+<use f='codebrowser/send-pack.c' l='352' c='atomic_push_failure'/>
+<use f='codebrowser/send-pack.c' l='527' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='532' c='send_pack'/>
+<use f='codebrowser/transport-helper.c' l='397' c='fetch_with_fetch'/>
+<use f='codebrowser/transport-helper.c' l='496' c='fetch_with_import'/>
+<use f='codebrowser/transport-helper.c' l='533' u='r' c='fetch_with_import'/>
+<use f='codebrowser/transport-helper.c' l='795' u='r' c='push_update_refs_status'/>
+<use f='codebrowser/transport-helper.c' l='865' u='r' c='push_refs_with_push'/>
+<use f='codebrowser/transport-helper.c' l='870' u='r' c='push_refs_with_push'/>
+<use f='codebrowser/transport-helper.c' l='883' c='push_refs_with_push'/>
+<use f='codebrowser/transport-helper.c' l='929' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='938' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='945' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='949' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='951' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='953' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='960' u='r' c='push_refs_with_export'/>
+<use f='codebrowser/transport-helper.c' l='1069' u='r' c='get_refs_list'/>
+<use f='codebrowser/transport-helper.c' l='1072' c='get_refs_list'/>
+<use f='codebrowser/transport.c' l='44' u='r' c='set_upstreams'/>
+<use f='codebrowser/transport.c' l='45' u='r' c='set_upstreams'/>
+<use f='codebrowser/transport.c' l='300' u='r' c='transport_update_tracking_ref'/>
+<use f='codebrowser/transport.c' l='321' c='print_ref_status'/>
+<use f='codebrowser/transport.c' l='321' c='print_ref_status'/>
+<use f='codebrowser/transport.c' l='323' c='print_ref_status'/>
+<use f='codebrowser/transport.c' l='331' u='r' c='print_ref_status'/>
+<use f='codebrowser/transport.c' l='331' u='r' c='print_ref_status'/>
+<use f='codebrowser/transport.c' l='333' u='r' c='print_ref_status'/>
+<use f='codebrowser/transport.c' l='350' u='r' c='print_ok_ref_status'/>
+<use f='codebrowser/transport.c' l='501' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='501' u='r' c='transport_print_push_status'/>
+<use f='codebrowser/transport.c' l='941' c='run_pre_push_hook'/>
+<use f='codebrowser/transport.c' l='942' c='run_pre_push_hook'/>

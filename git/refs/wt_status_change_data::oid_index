@@ -1,0 +1,10 @@
+<dec f='codebrowser/wt-status.h' l='43' type='struct object_id'/>
+<offset>384</offset>
+<use f='codebrowser/wt-status.c' l='460' u='a' c='wt_status_collect_changed_cb'/>
+<use f='codebrowser/wt-status.c' l='469' u='a' c='wt_status_collect_changed_cb'/>
+<use f='codebrowser/wt-status.c' l='525' u='a' c='wt_status_collect_updated_cb'/>
+<use f='codebrowser/wt-status.c' l='543' u='a' c='wt_status_collect_updated_cb'/>
+<use f='codebrowser/wt-status.c' l='645' u='a' c='wt_status_collect_changes_initial'/>
+<use f='codebrowser/wt-status.c' l='1996' u='a' c='wt_porcelain_v2_fix_up_changed'/>
+<use f='codebrowser/wt-status.c' l='2070' u='a' c='wt_porcelain_v2_print_changed_entry'/>
+<use f='codebrowser/wt-status.c' l='2077' u='a' c='wt_porcelain_v2_print_changed_entry'/>

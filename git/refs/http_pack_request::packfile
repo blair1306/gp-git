@@ -1,0 +1,11 @@
+<dec f='codebrowser/http.h' l='202' type='FILE *'/>
+<offset>192</offset>
+<use f='codebrowser/http.c' l='1992' u='r' c='release_http_pack_request'/>
+<use f='codebrowser/http.c' l='1993' u='r' c='release_http_pack_request'/>
+<use f='codebrowser/http.c' l='1994' u='w' c='release_http_pack_request'/>
+<use f='codebrowser/http.c' l='2012' u='r' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2013' u='w' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2072' u='w' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2073' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2080' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2090' u='r' c='new_http_pack_request'/>

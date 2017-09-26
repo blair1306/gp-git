@@ -1,0 +1,27 @@
+<dec f='codebrowser/notes.h' l='186'/>
+<doc f='codebrowser/notes.h' l='162'>/*
+ * Flags controlling behaviour of for_each_note()
+ *
+ * Default behaviour of for_each_note() is to traverse every single note object
+ * in the given notes tree, unpacking subtree entries along the way.
+ * The following flags can be used to alter the default behaviour:
+ *
+ * - DONT_UNPACK_SUBTREES causes for_each_note() NOT to unpack and recurse into
+ *   subtree entries while traversing the notes tree. This causes notes within
+ *   those subtrees NOT to be passed to the callback. Use this flag if you
+ *   don&apos;t want to traverse _all_ notes, but only want to traverse the parts
+ *   of the notes tree that have already been unpacked (this includes at least
+ *   all notes that have been added/changed).
+ *
+ * - YIELD_SUBTREES causes any subtree entries that are encountered to be
+ *   passed to the callback, before recursing into them. Subtree entries are
+ *   not note objects, but represent intermediate directories in the notes
+ *   tree. When passed to the callback, subtree entries will have a trailing
+ *   slash in their path, which the callback may use to differentiate between
+ *   note entries and subtree entries. Note that already-unpacked subtree
+ *   entries are not part of the notes tree, and will therefore not be yielded.
+ *   If this flag is used together with DONT_UNPACK_SUBTREES, for_each_note()
+ *   will yield the subtree entry, but not recurse into it.
+ */</doc>
+<use f='codebrowser/notes.c' l='619' u='c'/>
+<use f='codebrowser/notes.c' l='1162' u='c'/>

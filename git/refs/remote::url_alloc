@@ -1,0 +1,8 @@
+<dec f='codebrowser/remote.h' l='24' type='int'/>
+<offset>416</offset>
+<use f='codebrowser/remote.c' l='108' u='r' c='add_url'/>
+<use f='codebrowser/remote.c' l='108' u='r' c='add_url'/>
+<use f='codebrowser/remote.c' l='108' u='w' c='add_url'/>
+<use f='codebrowser/remote.c' l='108' u='w' c='add_url'/>
+<use f='codebrowser/remote.c' l='108' u='r' c='add_url'/>
+<use f='codebrowser/remote.c' l='108' u='r' c='add_url'/>

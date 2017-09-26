@@ -1,0 +1,9 @@
+<dec f='codebrowser/dir.h' l='262' type='void clear_exclude_list(struct exclude_list * el)'/>
+<def f='codebrowser/dir.c' l='635' ll='645' type='void clear_exclude_list(struct exclude_list * el)'/>
+<use f='codebrowser/dir.c' l='1085' u='c' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2378' u='c' c='clear_directory'/>
+<doc f='codebrowser/dir.c' l='631'>/*
+ * Frees memory within el which was allocated for exclude patterns and
+ * the file buffer.  Does not free el itself.
+ */</doc>
+<use f='codebrowser/unpack-trees.c' l='1409' u='c' c='unpack_trees'/>

@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='367' type='0'/>
+<doc f='include/curl/curl.h' l='367'>/* no operation */</doc>
+<use f='codebrowser/http.c' l='166' c='ioctl_buffer'/>
+<use f='codebrowser/remote-curl.c' l='447' c='rpc_ioctl'/>

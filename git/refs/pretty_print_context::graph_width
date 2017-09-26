@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='173' type='int'/>
+<offset>1216</offset>
+<use f='codebrowser/log-tree.c' l='687' u='w' c='show_log'/>
+<use f='codebrowser/pretty.c' l='1315' u='r' c='format_and_pad_commit'/>

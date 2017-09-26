@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='565'/>
+<use f='codebrowser/builtin/clone.c' l='1023' u='c'/>
+<use f='codebrowser/builtin/init-db.c' l='399' u='c'/>
+<use f='codebrowser/builtin/init-db.c' l='484' u='c'/>

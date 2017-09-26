@@ -1,0 +1,10 @@
+<dec f='codebrowser/http.h' l='217' type='CURLcode'/>
+<offset>32864</offset>
+<use f='codebrowser/http-walker.c' l='99' macro='1' u='r'/>
+<use f='codebrowser/http-walker.c' l='522' u='r' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='525' u='w' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='532' u='r' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='534' macro='1' u='r'/>
+<use f='codebrowser/http-walker.c' l='538' u='r' c='fetch_object'/>
+<use f='codebrowser/http.c' l='2277' u='w' c='process_http_object_request'/>
+<use f='codebrowser/http.c' l='2293' u='r' c='finish_http_object_request'/>

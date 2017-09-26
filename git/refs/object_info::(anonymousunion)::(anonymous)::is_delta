@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1819' type='unsigned int'/>
+<offset>128</offset>
+<use f='codebrowser/sha1_file.c' l='3035' u='w' c='sha1_object_info_extended'/>
+<use f='codebrowser/streaming.c' l='124' u='r' c='istream_source'/>

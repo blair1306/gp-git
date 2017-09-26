@@ -1,0 +1,10 @@
+<dec f='codebrowser/wt-status.h' l='62' type='const char *'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/commit.c' l='507' u='w' c='run_status'/>
+<use f='codebrowser/builtin/commit.c' l='513' u='r' c='run_status'/>
+<use f='codebrowser/builtin/commit.c' l='1393' u='r' c='cmd_status'/>
+<use f='codebrowser/wt-status.c' l='133' u='w' c='wt_status_prepare'/>
+<use f='codebrowser/wt-status.c' l='179' u='r' c='wt_longstatus_print_unmerged_header'/>
+<use f='codebrowser/wt-status.c' l='206' u='r' c='wt_longstatus_print_cached_header'/>
+<use f='codebrowser/wt-status.c' l='585' u='r' c='wt_status_collect_changes_index'/>
+<use f='codebrowser/wt-status.c' l='958' u='r' c='wt_longstatus_print_verbose'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/graph.h' l='104' type='void graph_show_oneline(struct git_graph * graph)'/>
+<use f='codebrowser/builtin/rev-list.c' l='130' u='c' c='show_commit'/>
+<doc f='codebrowser/graph.h' l='100'>/*
+ * If the graph is non-NULL, print one line of the history graph to stdout.
+ * Does not print a terminating newline on the last line.
+ */</doc>
+<def f='codebrowser/graph.c' l='1283' ll='1295' type='void graph_show_oneline(struct git_graph * graph)'/>
+<use f='codebrowser/graph.c' l='1365' u='c' c='graph_show_strbuf'/>
+<use f='codebrowser/log-tree.c' l='363' u='c' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='366' u='c' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='375' u='c' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='431' u='c' c='show_sig_lines'/>
+<use f='codebrowser/log-tree.c' l='628' u='c' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='704' u='c' c='show_log'/>

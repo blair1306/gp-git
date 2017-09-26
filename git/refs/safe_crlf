@@ -1,0 +1,10 @@
+<def f='codebrowser/convert.h' l='11' ll='16'/>
+<dec f='codebrowser/convert.h' l='18' type='enum safe_crlf'/>
+<use f='codebrowser/combine-diff.c' l='1056' u='r' c='show_patch_diff'/>
+<use f='codebrowser/config.c' l='1149' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1152' u='w' c='git_default_core_config'/>
+<use f='codebrowser/diff.c' l='2818' u='r' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2820' u='r' c='diff_populate_filespec'/>
+<def f='codebrowser/environment.c' l='52' type='enum safe_crlf'/>
+<use f='codebrowser/sha1_file.c' l='3524' u='r' c='index_mem'/>
+<use f='codebrowser/sha1_file.c' l='3558' u='r' c='index_stream_convert_blob'/>

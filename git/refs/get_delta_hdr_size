@@ -1,0 +1,9 @@
+<def f='codebrowser/delta.h' l='89' ll='102' type='unsigned long get_delta_hdr_size(const unsigned char ** datap, const unsigned char * top)'/>
+<doc f='codebrowser/delta.h' l='85'>/*
+ * This must be called twice on the delta data buffer, first to get the
+ * expected source buffer size, and again to get the target buffer size.
+ */</doc>
+<use f='codebrowser/patch-delta.c' l='30' u='c' c='patch_delta'/>
+<use f='codebrowser/patch-delta.c' l='35' u='c' c='patch_delta'/>
+<use f='codebrowser/sha1_file.c' l='2042' u='c' c='get_size_from_delta'/>
+<use f='codebrowser/sha1_file.c' l='2045' u='c' c='get_size_from_delta'/>

@@ -1,0 +1,22 @@
+<dec f='codebrowser/cache.h' l='993' type='const struct object_id'/>
+<use f='codebrowser/cache.h' l='994' u='m' c='is_empty_tree_sha1'/>
+<use f='codebrowser/cache.h' l='994' u='m' c='is_empty_tree_oid'/>
+<use f='codebrowser/builtin/am.c' l='1426' u='a' c='write_index_patch'/>
+<use f='codebrowser/builtin/am.c' l='1565' macro='1' u='m'/>
+<use f='codebrowser/builtin/am.c' l='2068' macro='1' u='m'/>
+<use f='codebrowser/builtin/am.c' l='2130' macro='1' u='m'/>
+<use f='codebrowser/builtin/am.c' l='2134' macro='1' u='m'/>
+<use f='codebrowser/builtin/checkout.c' l='518' u='a' c='merge_working_tree'/>
+<use f='codebrowser/builtin/diff.c' l='385' u='a' c='cmd_diff'/>
+<use f='codebrowser/builtin/pull.c' l='540' u='a' c='pull_into_void'/>
+<use f='codebrowser/builtin/reset.c' l='316' macro='1' u='m'/>
+<use f='codebrowser/cache-tree.c' l='389' macro='1' u='m'/>
+<use f='codebrowser/diff-lib.c' l='219' u='a' c='run_diff_files'/>
+<use f='codebrowser/merge-recursive.c' l='2046' u='a' c='merge_recursive'/>
+<use f='codebrowser/notes-merge.c' l='600' u='a' c='notes_merge'/>
+<use f='codebrowser/sequencer.c' l='349' u='a' c='empty_tree'/>
+<use f='codebrowser/sequencer.c' l='707' u='a' c='is_original_commit_empty'/>
+<use f='codebrowser/sequencer.c' l='960' u='a' c='do_pick_commit'/>
+<def f='codebrowser/sha1_file.c' l='37' ll='39' type='const struct object_id'/>
+<use f='codebrowser/submodule.c' l='647' u='a' c='show_submodule_inline_diff'/>
+<use f='codebrowser/submodule.c' l='647' u='a' c='show_submodule_inline_diff'/>

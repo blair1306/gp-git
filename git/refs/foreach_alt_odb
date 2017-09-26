@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1549' type='int foreach_alt_odb(alt_odb_fn * , void * )'/>
+<use f='codebrowser/builtin/count-objects.c' l='155' u='c' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='607' u='c' c='prepare_possible_alternates'/>
+<def f='codebrowser/sha1_file.c' l='621' ll='633' type='int foreach_alt_odb(alt_odb_fn * fn, void * cb)'/>
+<use f='codebrowser/sha1_file.c' l='3851' u='c' c='for_each_loose_object'/>
+<use f='codebrowser/transport.c' l='1289' u='c' c='for_each_alternate_ref'/>

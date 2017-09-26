@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>notes-cache.h source code [codebrowser/notes-cache.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="notes_cache "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/notes-cache.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='notes-cache.h.html'>notes-cache.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/NOTES_CACHE_H">NOTES_CACHE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/NOTES_CACHE_H" data-ref="_M/NOTES_CACHE_H">NOTES_CACHE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="notes.h.html">"notes.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <dfn class="type def" id="notes_cache" title='notes_cache' data-ref="notes_cache">notes_cache</dfn> {</td></tr>
+<tr><th id="7">7</th><td>	<b>struct</b> <a class="type" href="notes.h.html#notes_tree" title='notes_tree' data-ref="notes_tree">notes_tree</a> <dfn class="decl" id="notes_cache::tree" title='notes_cache::tree' data-ref="notes_cache::tree">tree</dfn>;</td></tr>
+<tr><th id="8">8</th><td>	<em>char</em> *<dfn class="decl" id="notes_cache::validity" title='notes_cache::validity' data-ref="notes_cache::validity">validity</dfn>;</td></tr>
+<tr><th id="9">9</th><td>};</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><em>void</em> <dfn class="decl" id="notes_cache_init" title='notes_cache_init' data-ref="notes_cache_init">notes_cache_init</dfn>(<b>struct</b> <a class="type" href="#notes_cache" title='notes_cache' data-ref="notes_cache">notes_cache</a> *<dfn class="local col8 decl" id="98c" title='c' data-type='struct notes_cache *' data-ref="98c">c</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="99name" title='name' data-type='const char *' data-ref="99name">name</dfn>,</td></tr>
+<tr><th id="12">12</th><td>		     <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="100validity" title='validity' data-type='const char *' data-ref="100validity">validity</dfn>);</td></tr>
+<tr><th id="13">13</th><td><em>int</em> <dfn class="decl" id="notes_cache_write" title='notes_cache_write' data-ref="notes_cache_write">notes_cache_write</dfn>(<b>struct</b> <a class="type" href="#notes_cache" title='notes_cache' data-ref="notes_cache">notes_cache</a> *<dfn class="local col1 decl" id="101c" title='c' data-type='struct notes_cache *' data-ref="101c">c</dfn>);</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><em>char</em> *<dfn class="decl" id="notes_cache_get" title='notes_cache_get' data-ref="notes_cache_get">notes_cache_get</dfn>(<b>struct</b> <a class="type" href="#notes_cache" title='notes_cache' data-ref="notes_cache">notes_cache</a> *<dfn class="local col2 decl" id="102c" title='c' data-type='struct notes_cache *' data-ref="102c">c</dfn>, <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="103oid" title='oid' data-type='struct object_id *' data-ref="103oid">oid</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span></td></tr>
+<tr><th id="16">16</th><td>		      *<dfn class="local col4 decl" id="104outsize" title='outsize' data-type='size_t *' data-ref="104outsize">outsize</dfn>);</td></tr>
+<tr><th id="17">17</th><td><em>int</em> <dfn class="decl" id="notes_cache_put" title='notes_cache_put' data-ref="notes_cache_put">notes_cache_put</dfn>(<b>struct</b> <a class="type" href="#notes_cache" title='notes_cache' data-ref="notes_cache">notes_cache</a> *<dfn class="local col5 decl" id="105c" title='c' data-type='struct notes_cache *' data-ref="105c">c</dfn>, <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col6 decl" id="106oid" title='oid' data-type='struct object_id *' data-ref="106oid">oid</dfn>,</td></tr>
+<tr><th id="18">18</th><td>		    <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="107data" title='data' data-type='const char *' data-ref="107data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="108size" title='size' data-type='size_t' data-ref="108size">size</dfn>);</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="1">endif</span> /* NOTES_CACHE_H */</u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='archive-zip.c.html'>codebrowser/archive-zip.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

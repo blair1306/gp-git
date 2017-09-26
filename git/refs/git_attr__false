@@ -1,0 +1,12 @@
+<dec f='codebrowser/attr.h' l='19' type='const char []'/>
+<def f='codebrowser/attr.c' l='21' type='const char [16]'/>
+<use f='codebrowser/attr.c' l='24' u='r' c='parse_attr'/>
+<use f='codebrowser/attr.c' l='24' u='r' c='attr_stack_free'/>
+<use f='codebrowser/builtin/check-attr.c' l='38' macro='1' u='r'/>
+<use f='codebrowser/builtin/pack-objects.c' l='915' macro='1' u='r'/>
+<use f='codebrowser/convert.c' l='976' macro='1' u='r'/>
+<use f='codebrowser/convert.c' l='1005' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='243' macro='1' u='r'/>
+<use f='codebrowser/ll-merge.c' l='316' macro='1' u='r'/>
+<use f='codebrowser/userdiff.c' l='277' macro='1' u='r'/>
+<use f='codebrowser/ws.c' l='94' macro='1' u='r'/>

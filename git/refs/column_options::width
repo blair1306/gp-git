@@ -1,0 +1,14 @@
+<dec f='codebrowser/column.h' l='23' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/column.c' l='30' u='a' c='cmd_column'/>
+<use f='codebrowser/builtin/column.c' l='30' u='a' c='cmd_column'/>
+<use f='codebrowser/builtin/column.c' l='30' u='a' c='cmd_column'/>
+<use f='codebrowser/builtin/column.c' l='30' u='a' c='cmd_column'/>
+<use f='codebrowser/builtin/column.c' l='45' u='w' c='cmd_column'/>
+<use f='codebrowser/column.c' l='55' u='r' c='layout'/>
+<use f='codebrowser/column.c' l='102' u='r' c='shrink_columns'/>
+<use f='codebrowser/column.c' l='203' u='w' c='print_columns'/>
+<use f='codebrowser/column.c' l='203' u='r' c='print_columns'/>
+<use f='codebrowser/column.c' l='203' u='r' c='print_columns'/>
+<use f='codebrowser/column.c' l='382' u='r' c='run_column_filter'/>
+<use f='codebrowser/column.c' l='383' u='r' c='run_column_filter'/>

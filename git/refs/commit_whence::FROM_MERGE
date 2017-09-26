@@ -1,0 +1,10 @@
+<dec f='codebrowser/wt-status.h' l='33' type='1'/>
+<doc f='codebrowser/wt-status.h' l='33'>/* commit came from merge */</doc>
+<use f='codebrowser/builtin/commit.c' l='183' u='r' c='determine_whence'/>
+<use f='codebrowser/builtin/commit.c' l='458' u='r' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='759' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='814' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='825' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='927' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1165' u='r' c='parse_and_validate_options'/>
+<use f='codebrowser/builtin/commit.c' l='1698' u='r' c='cmd_commit'/>

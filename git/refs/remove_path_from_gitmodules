@@ -1,0 +1,8 @@
+<dec f='codebrowser/submodule.h' l='39' type='int remove_path_from_gitmodules(const char * path)'/>
+<use f='codebrowser/builtin/rm.c' l='373' u='c' c='cmd_rm'/>
+<def f='codebrowser/submodule.c' l='111' ll='137' type='int remove_path_from_gitmodules(const char * path)'/>
+<doc f='codebrowser/submodule.c' l='106'>/*
+ * Try to remove the &quot;submodule.&lt;name&gt;&quot; section from .gitmodules where the given
+ * path is configured. Return 0 only if a .gitmodules file was found, a section
+ * with the correct path=&lt;path&gt; setting was found and we could remove it.
+ */</doc>

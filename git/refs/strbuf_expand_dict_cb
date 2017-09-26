@@ -1,0 +1,4 @@
+<dec f='codebrowser/strbuf.h' l='303' type='size_t strbuf_expand_dict_cb(struct strbuf * sb, const char * placeholder, void * context)'/>
+<use f='codebrowser/convert.c' l='416' u='r' c='filter_buffer_or_fd'/>
+<use f='codebrowser/ll-merge.c' l='201' u='r' c='ll_ext_merge'/>
+<def f='codebrowser/strbuf.c' l='319' ll='333' type='size_t strbuf_expand_dict_cb(struct strbuf * sb, const char * placeholder, void * context)'/>

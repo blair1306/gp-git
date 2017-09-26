@@ -1,0 +1,3 @@
+<dec f='codebrowser/dir.h' l='353' type='void write_untracked_extension(struct strbuf * out, struct untracked_cache * untracked)'/>
+<def f='codebrowser/dir.c' l='2478' ll='2531' type='void write_untracked_extension(struct strbuf * out, struct untracked_cache * untracked)'/>
+<use f='codebrowser/read-cache.c' l='2295' u='c' c='do_write_index'/>

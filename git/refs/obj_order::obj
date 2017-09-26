@@ -1,0 +1,11 @@
+<dec f='codebrowser/diffcore.h' l='118' type='void *'/>
+<offset>0</offset>
+<doc f='codebrowser/diffcore.h' l='118'>/* setup by caller */</doc>
+<use f='codebrowser/combine-diff.c' l='1484' u='w' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1487' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1488' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1491' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1493' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/diffcore-order.c' l='102' u='r' c='order_objects'/>
+<use f='codebrowser/diffcore-order.c' l='125' u='w' c='diffcore_order'/>
+<use f='codebrowser/diffcore-order.c' l='128' u='r' c='diffcore_order'/>

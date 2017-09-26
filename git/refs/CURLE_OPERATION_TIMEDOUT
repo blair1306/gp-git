@@ -1,0 +1,6 @@
+<dec f='include/curl/curl.h' l='455' type='28'/>
+<doc f='include/curl/curl.h' l='451'>/* Note: CURLE_OUT_OF_MEMORY may sometimes indicate a conversion error
+           instead of a memory allocation error if CURL_DOES_CONVERSIONS
+           is defined
+  */</doc>
+<doc f='include/curl/curl.h' l='455'>/* 28 - the timeout time was reached */</doc>

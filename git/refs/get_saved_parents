@@ -1,0 +1,13 @@
+<dec f='codebrowser/revision.h' l='313' type='struct commit_list * get_saved_parents(struct rev_info * revs, const struct commit * commit)'/>
+<doc f='codebrowser/revision.h' l='304'>/*
+ * The log machinery saves the original parent list so that
+ * get_saved_parents() can later tell what the real parents of the
+ * commits are, when commit-&gt;parents has been modified by history
+ * simpification.
+ *
+ * get_saved_parents() will transparently return commit-&gt;parents if
+ * history simplification is off.
+ */</doc>
+<use f='codebrowser/combine-diff.c' l='1535' u='c' c='diff_tree_combined_merge'/>
+<use f='codebrowser/log-tree.c' l='804' u='c' c='log_tree_diff'/>
+<def f='codebrowser/revision.c' l='3067' ll='3078' type='struct commit_list * get_saved_parents(struct rev_info * revs, const struct commit * commit)'/>

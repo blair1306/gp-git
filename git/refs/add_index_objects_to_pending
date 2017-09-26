@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='280' type='void add_index_objects_to_pending(struct rev_info * , unsigned int flags)'/>
+<use f='codebrowser/reachable.c' l='172' u='c' c='mark_reachable_objects'/>
+<def f='codebrowser/revision.c' l='1265' ll='1289' type='void add_index_objects_to_pending(struct rev_info * revs, unsigned int flags)'/>
+<use f='codebrowser/revision.c' l='2153' u='c' c='handle_revision_pseudo_opt'/>

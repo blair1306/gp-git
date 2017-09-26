@@ -1,0 +1,15 @@
+<dec f='codebrowser/revision.h' l='100' type='unsigned int'/>
+<use f='codebrowser/bisect.c' l='637' u='r' c='bisect_common'/>
+<offset>941</offset>
+<use f='codebrowser/builtin/rev-list.c' l='354' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='384' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='394' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/list-objects.c' l='81' u='r' c='process_tree'/>
+<use f='codebrowser/pack-bitmap-write.c' l='263' u='w' c='bitmap_writer_build'/>
+<use f='codebrowser/pack-bitmap.c' l='954' u='w' c='test_bitmap_walk'/>
+<use f='codebrowser/reachable.c' l='169' u='w' c='mark_reachable_objects'/>
+<use f='codebrowser/revision.c' l='268' u='r' c='handle_commit'/>
+<use f='codebrowser/revision.c' l='1850' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1854' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1859' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1865' u='w' c='handle_revision_opt'/>

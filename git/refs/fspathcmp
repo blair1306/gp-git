@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='311' type='int fspathcmp(const char * a, const char * b)'/>
+<def f='codebrowser/dir.c' l='65' ll='68' type='int fspathcmp(const char * a, const char * b)'/>
+<use f='codebrowser/sha1_file.c' l='326' u='c' c='alt_odb_usable'/>
+<use f='codebrowser/sha1_file.c' l='329' u='c' c='alt_odb_usable'/>
+<use f='codebrowser/worktree.c' l='115' u='c' c='mark_current_worktree'/>
+<use f='codebrowser/worktree.c' l='127' u='c' c='compare_worktree'/>
+<use f='codebrowser/worktree.c' l='199' u='c' c='find_worktree_by_suffix'/>
+<use f='codebrowser/worktree.c' l='222' u='c' c='find_worktree'/>

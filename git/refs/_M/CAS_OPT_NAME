@@ -1,0 +1,8 @@
+<dec f='codebrowser/remote.h' l='280'/>
+<doc f='codebrowser/remote.h' l='277'>/*
+ * Compare-and-swap
+ */</doc>
+<use f='codebrowser/builtin/push.c' l='330' u='c'/>
+<use f='codebrowser/builtin/push.c' l='533' u='c'/>
+<use f='codebrowser/builtin/send-pack.c' l='180' u='c'/>
+<use f='codebrowser/remote-curl.c' l='114' u='c'/>

@@ -1,0 +1,4 @@
+<dec f='include/paths.h' l='36'/>
+<use f='codebrowser/git-compat-util.h' l='337' u='a'/>
+<doc f='include/paths.h' l='35'>/* Default search path. */</doc>
+<use f='codebrowser/exec_cmd.c' l='100' u='c'/>

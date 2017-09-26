@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs/refs-internal.h' l='50'/>
+<doc f='codebrowser/refs/refs-internal.h' l='45'>/*
+ * Used as a flag in ref_update::flags when we want to log a ref
+ * update but not actually perform it.  This is used when a symbolic
+ * ref update is split up.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2088' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2113' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2181' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2340' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2525' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2560' u='c'/>

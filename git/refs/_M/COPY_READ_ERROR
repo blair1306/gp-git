@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1867'/>
+<use f='codebrowser/copy.c' l='11' u='c'/>
+<use f='codebrowser/copy.c' l='44' u='c'/>
+<use f='codebrowser/pkt-line.c' l='209' u='c'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/transport.h' l='232' type='const struct ref * transport_get_remote_refs(struct transport * transport)'/>
+<use f='codebrowser/builtin/clone.c' l='1109' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='251' u='c' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='337' u='c' c='get_ref_map'/>
+<use f='codebrowser/builtin/ls-remote.c' l='99' u='c' c='cmd_ls_remote'/>
+<use f='codebrowser/builtin/remote.c' l='864' u='c' c='get_remote_ref_states'/>
+<def f='codebrowser/transport.c' l='1099' ll='1107' type='const struct ref * transport_get_remote_refs(struct transport * transport)'/>

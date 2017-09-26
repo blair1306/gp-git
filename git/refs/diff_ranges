@@ -1,0 +1,6 @@
+<def f='codebrowser/line-log.h' l='23' ll='26'/>
+<size>32</size>
+<doc f='codebrowser/line-log.h' l='21'>/* A diff, encoded as the set of pre- and post-image ranges where the
+ * files differ. A pair of ranges corresponds to a hunk. */</doc>
+<mbr r='diff_ranges::parent' o='0' t='struct range_set'/>
+<mbr r='diff_ranges::target' o='128' t='struct range_set'/>

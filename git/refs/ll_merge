@@ -1,0 +1,9 @@
+<dec f='codebrowser/ll-merge.h' l='15' type='int ll_merge(mmbuffer_t * result_buf, const char * path, mmfile_t * ancestor, const char * ancestor_label, mmfile_t * ours, const char * our_label, mmfile_t * theirs, const char * their_label, const struct ll_merge_options * opts)'/>
+<use f='codebrowser/apply.c' l='3466' u='c' c='three_way_merge'/>
+<use f='codebrowser/builtin/checkout.c' l='207' u='c' c='checkout_merged'/>
+<def f='codebrowser/ll-merge.c' l='349' ll='392' type='int ll_merge(mmbuffer_t * result_buf, const char * path, mmfile_t * ancestor, const char * ancestor_label, mmfile_t * ours, const char * our_label, mmfile_t * theirs, const char * their_label, const struct ll_merge_options * opts)'/>
+<use f='codebrowser/merge-blobs.c' l='42' u='c' c='three_way_filemerge'/>
+<use f='codebrowser/merge-recursive.c' l='925' u='c' c='merge_3way'/>
+<use f='codebrowser/notes-merge.c' l='350' u='c' c='ll_merge_in_worktree'/>
+<use f='codebrowser/rerere.c' l='643' u='c' c='try_merge'/>
+<use f='codebrowser/rerere.c' l='997' u='c' c='handle_cache'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/revision.h' l='114' type='unsigned int'/>
+<offset>956</offset>
+<use f='codebrowser/builtin/fast-export.c' l='1014' u='w' c='cmd_fast_export'/>
+<use f='codebrowser/builtin/log.c' l='189' u='w' c='cmd_log_init_finish'/>
+<use f='codebrowser/log-tree.c' l='287' u='r' c='show_decorations'/>
+<use f='codebrowser/revision.c' l='257' u='r' c='handle_commit'/>
+<use f='codebrowser/revision.c' l='793' u='r' c='add_parents_to_list'/>

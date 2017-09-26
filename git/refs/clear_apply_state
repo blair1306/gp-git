@@ -1,0 +1,4 @@
+<dec f='codebrowser/apply.h' l='121' type='void clear_apply_state(struct apply_state * state)'/>
+<def f='codebrowser/apply.c' l='106' ll='113' type='void clear_apply_state(struct apply_state * state)'/>
+<use f='codebrowser/builtin/am.c' l='1520' u='c' c='run_apply'/>
+<use f='codebrowser/builtin/apply.c' l='33' u='c' c='cmd_apply'/>

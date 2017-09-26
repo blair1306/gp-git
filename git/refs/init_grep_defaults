@@ -1,0 +1,10 @@
+<dec f='codebrowser/grep.h' l='177' type='void init_grep_defaults()'/>
+<use f='codebrowser/builtin/grep.c' l='891' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/log.c' l='113' u='c' c='init_log_defaults'/>
+<def f='codebrowser/grep.c' l='26' ll='50' type='void init_grep_defaults()'/>
+<doc f='codebrowser/grep.c' l='21'>/*
+ * Initialize the grep_defaults template with hardcoded defaults.
+ * We could let the compiler do this, but without C99 initializers
+ * the code gets unwieldy and unreadable, so...
+ */</doc>
+<use f='codebrowser/revision.c' l='1361' u='c' c='init_revisions'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1904' type='int'/>
+<use f='codebrowser/color.c' l='331' u='r' c='check_auto_color'/>
+<use f='codebrowser/config.c' l='1363' u='w' c='git_default_config'/>
+<def f='codebrowser/environment.c' l='44' type='int'/>

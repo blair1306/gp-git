@@ -1,0 +1,14 @@
+<dec f='codebrowser/commit.h' l='363' type='struct object *'/>
+<offset>0</offset>
+<doc f='codebrowser/commit.h' l='363'>/* the named object, could be a tag */</doc>
+<use f='codebrowser/builtin/merge.c' l='514' u='r' c='merge_name'/>
+<use f='codebrowser/builtin/merge.c' l='514' u='r' c='merge_name'/>
+<use f='codebrowser/builtin/merge.c' l='516' u='r' c='merge_name'/>
+<use f='codebrowser/builtin/merge.c' l='517' u='r' c='merge_name'/>
+<use f='codebrowser/builtin/merge.c' l='919' u='r' c='write_merge_state'/>
+<use f='codebrowser/builtin/merge.c' l='920' u='r' c='write_merge_state'/>
+<use f='codebrowser/builtin/merge.c' l='1302' u='r' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1303' u='r' c='cmd_merge'/>
+<use f='codebrowser/commit.c' l='1210' u='r' c='handle_signed_tag'/>
+<use f='codebrowser/commit.c' l='1212' u='r' c='handle_signed_tag'/>
+<use f='codebrowser/commit.c' l='1580' u='w' c='set_merge_remote_desc'/>

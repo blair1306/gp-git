@@ -1,0 +1,4 @@
+<dec f='codebrowser/graph.c' l='67' type='5'/>
+<use f='codebrowser/graph.c' l='946' u='r' c='graph_output_commit_line'/>
+<use f='codebrowser/graph.c' l='1025' u='r' c='graph_output_post_merge_line'/>
+<use f='codebrowser/graph.c' l='1194' c='graph_next_line'/>

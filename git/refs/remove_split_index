@@ -1,0 +1,4 @@
+<dec f='codebrowser/split-index.h' l='35' type='void remove_split_index(struct index_state * istate)'/>
+<use f='codebrowser/builtin/update-index.c' l='1120' u='c' c='cmd_update_index'/>
+<use f='codebrowser/read-cache.c' l='1709' u='c' c='tweak_split_index'/>
+<def f='codebrowser/split-index.c' l='328' ll='340' type='void remove_split_index(struct index_state * istate)'/>

@@ -1,0 +1,25 @@
+<dec f='include/x86_64-linux-gnu/sys/mman.h' l='76' type='int munmap(void * __addr, size_t __len)'/>
+<doc f='include/x86_64-linux-gnu/sys/mman.h' l='74'>/* Deallocate any mapping for the region starting at ADDR and extending LEN
+   bytes.  Returns 0 if successful, -1 for errors (and sets errno).  */</doc>
+<use f='codebrowser/config.c' l='2616' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/config.c' l='2644' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/diff.c' l='2901' u='c' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2935' u='c' c='diff_free_filespec_blob'/>
+<use f='codebrowser/pack-bitmap.c' l='293' u='c' c='open_pack_bitmap_1'/>
+<use f='codebrowser/pack-bitmap.c' l='323' u='c' c='load_pack_bitmap'/>
+<use f='codebrowser/read-cache.c' l='1811' u='c' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='1815' u='c' c='do_read_index'/>
+<use f='codebrowser/sha1_file.c' l='475' u='c' c='read_info_alternates'/>
+<use f='codebrowser/sha1_file.c' l='774' u='c' c='check_packed_git_idx'/>
+<use f='codebrowser/sha1_file.c' l='790' u='c' c='check_packed_git_idx'/>
+<use f='codebrowser/sha1_file.c' l='805' u='c' c='check_packed_git_idx'/>
+<use f='codebrowser/sha1_file.c' l='827' u='c' c='check_packed_git_idx'/>
+<use f='codebrowser/sha1_file.c' l='837' u='c' c='check_packed_git_idx'/>
+<use f='codebrowser/sha1_file.c' l='895' u='c' c='unuse_one_window'/>
+<use f='codebrowser/sha1_file.c' l='961' u='c' c='close_pack_windows'/>
+<use f='codebrowser/sha1_file.c' l='1085' u='c' c='close_pack_index'/>
+<use f='codebrowser/sha1_file.c' l='2964' u='c' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='3604' u='c' c='index_core'/>
+<use f='codebrowser/sha1_file.c' l='4006' u='c' c='read_loose_object'/>
+<use f='codebrowser/streaming.c' l='326' u='c' c='close_istream_loose'/>
+<use f='codebrowser/streaming.c' l='347' u='c' c='open_istream_loose'/>

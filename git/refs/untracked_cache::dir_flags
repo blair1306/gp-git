@@ -1,0 +1,12 @@
+<dec f='codebrowser/dir.h' l='135' type='unsigned int'/>
+<offset>1216</offset>
+<doc f='codebrowser/dir.h' l='131'>/*
+	 * dir_struct#flags must match dir_flags or the untracked
+	 * cache is ignored.
+	 */</doc>
+<use f='codebrowser/dir.c' l='1983' u='w' c='new_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2039' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2491' u='r' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2707' u='w' c='read_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2815' u='r' c='invalidate_one_component'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='60' u='r' c='cmd_main'/>

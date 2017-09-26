@@ -1,0 +1,24 @@
+<dec f='codebrowser/grep.h' l='173' type='void (*)(struct grep_opt *, const void *, size_t)'/>
+<offset>6848</offset>
+<use f='codebrowser/builtin/grep.c' l='219' u='w' c='start_threads'/>
+<use f='codebrowser/builtin/grep.c' l='945' u='w' c='cmd_grep'/>
+<use f='codebrowser/grep.c' l='49' u='w' c='init_grep_defaults'/>
+<use f='codebrowser/grep.c' l='156' u='w' c='grep_init'/>
+<use f='codebrowser/grep.c' l='156' u='r' c='grep_init'/>
+<use f='codebrowser/grep.c' l='1060' u='r' c='output_color'/>
+<use f='codebrowser/grep.c' l='1061' u='r' c='output_color'/>
+<use f='codebrowser/grep.c' l='1062' u='r' c='output_color'/>
+<use f='codebrowser/grep.c' l='1064' u='r' c='output_color'/>
+<use f='codebrowser/grep.c' l='1070' u='r' c='output_sep'/>
+<use f='codebrowser/grep.c' l='1078' u='r' c='show_name'/>
+<use f='codebrowser/grep.c' l='1340' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1345' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1349' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1354' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1399' u='r' c='show_line'/>
+<use f='codebrowser/grep.c' l='1653' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1654' u='w' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1666' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1767' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1770' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1847' u='r' c='grep_source_1'/>

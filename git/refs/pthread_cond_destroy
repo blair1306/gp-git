@@ -1,0 +1,7 @@
+<dec f='include/pthread.h' l='973' type='int pthread_cond_destroy(pthread_cond_t * __cond)'/>
+<doc f='include/pthread.h' l='972'>/* Destroy condition variable COND.  */</doc>
+<use f='codebrowser/builtin/grep.c' l='260' u='c' c='wait_all'/>
+<use f='codebrowser/builtin/grep.c' l='261' u='c' c='wait_all'/>
+<use f='codebrowser/builtin/grep.c' l='262' u='c' c='wait_all'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2163' u='c' c='cleanup_threaded_search'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2320' u='c' c='ll_find_deltas'/>

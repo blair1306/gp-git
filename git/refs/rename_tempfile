@@ -1,0 +1,15 @@
+<dec f='codebrowser/tempfile.h' l='273' type='int rename_tempfile(struct tempfile * tempfile, const char * path)'/>
+<use f='codebrowser/lockfile.h' l='293' u='c' c='commit_lock_file_to'/>
+<doc f='codebrowser/tempfile.h' l='264'>/*
+ * Close the file descriptor and/or file pointer if they are still
+ * open, and atomically rename the temporary file to `path`. `path`
+ * must be on the same filesystem as the lock file. Return 0 on
+ * success. On failure, delete the temporary file and return -1, with
+ * `errno` set to the value from the failing call to `close(2)` or
+ * `rename(2)`. It is a bug to call `rename_tempfile()` for a
+ * `tempfile` object that is not currently active.
+ */</doc>
+<use f='codebrowser/read-cache.c' l='2441' u='c' c='write_shared_index'/>
+<use f='codebrowser/refs/packed-backend.c' l='672' u='c' c='commit_packed_refs'/>
+<def f='codebrowser/tempfile.c' l='281' ll='299' type='int rename_tempfile(struct tempfile * tempfile, const char * path)'/>
+<use f='codebrowser/trailer.c' l='1001' u='c' c='process_trailers'/>

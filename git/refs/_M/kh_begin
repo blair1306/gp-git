@@ -1,0 +1,6 @@
+<dec f='codebrowser/khash.h' l='268'/>
+<doc f='codebrowser/khash.h' l='263'>/*! @function
+  @abstract     Get the start iterator
+  @param  h     Pointer to the hash table [khash_t(name)*]
+  @return       The start iterator [khint_t]
+ */</doc>

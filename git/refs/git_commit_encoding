@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1857' type='const char *'/>
+<use f='codebrowser/builtin/fast-export.c' l='416' u='r' c='find_encoding'/>
+<use f='codebrowser/commit.c' l='1530' u='r' c='commit_tree_extended'/>
+<use f='codebrowser/commit.c' l='1552' u='r' c='commit_tree_extended'/>
+<use f='codebrowser/config.c' l='1257' u='a' c='git_default_i18n_config'/>
+<def f='codebrowser/environment.c' l='30' type='const char *'/>
+<use f='codebrowser/environment.c' l='311' u='r' c='get_commit_output_encoding'/>
+<use f='codebrowser/environment.c' l='311' u='r' c='get_commit_output_encoding'/>

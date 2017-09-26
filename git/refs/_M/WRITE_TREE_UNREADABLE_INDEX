@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache-tree.h' l='46'/>
+<doc f='codebrowser/cache-tree.h' l='45'>/* error return codes */</doc>
+<use f='codebrowser/builtin/write-tree.c' l='46' u='c'/>
+<use f='codebrowser/cache-tree.c' l='618' u='c'/>

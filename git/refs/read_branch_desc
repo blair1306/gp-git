@@ -1,0 +1,8 @@
+<dec f='codebrowser/branch.h' l='60' type='int read_branch_desc(struct strbuf * , const char * branch_name)'/>
+<def f='codebrowser/branch.c' l='166' ll='179' type='int read_branch_desc(struct strbuf * buf, const char * branch_name)'/>
+<doc f='codebrowser/branch.h' l='57'>/*
+ * Read branch description
+ */</doc>
+<use f='codebrowser/builtin/branch.c' l='521' u='c' c='edit_branch_description'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='212' u='c' c='add_branch_desc'/>
+<use f='codebrowser/builtin/log.c' l='949' u='c' c='add_branch_description'/>

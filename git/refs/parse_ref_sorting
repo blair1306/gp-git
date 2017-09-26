@@ -1,0 +1,5 @@
+<dec f='codebrowser/ref-filter.h' l='119' type='void parse_ref_sorting(struct ref_sorting ** sorting_tail, const char * atom)'/>
+<doc f='codebrowser/ref-filter.h' l='118'>/*  Parse a single sort specifier and add it to the list */</doc>
+<use f='codebrowser/builtin/tag.c' l='147' u='c' c='git_tag_config'/>
+<def f='codebrowser/ref-filter.c' l='2151' ll='2167' type='void parse_ref_sorting(struct ref_sorting ** sorting_tail, const char * arg)'/>
+<use f='codebrowser/ref-filter.c' l='2173' u='c' c='parse_opt_ref_sorting'/>

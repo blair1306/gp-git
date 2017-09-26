@@ -1,0 +1,6 @@
+<def f='codebrowser/rerere.c' l='929' ll='932'/>
+<size>48</size>
+<doc f='codebrowser/rerere.c' l='925'>/*
+ * Subclass of rerere_io that reads from an in-core buffer that is a
+ * strbuf
+ */</doc>

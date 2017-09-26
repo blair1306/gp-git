@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sha1dc_git.h source code [codebrowser/sha1dc_git.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/sha1dc_git.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='sha1dc_git.h.html'>sha1dc_git.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * This code is included at the end of sha1dc/sha1.h with the</i></td></tr>
+<tr><th id="3">3</th><td><i> * SHA1DC_CUSTOM_TRAILING_INCLUDE_SHA1_H macro.</i></td></tr>
+<tr><th id="4">4</th><td><i> */</i></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/*</i></td></tr>
+<tr><th id="7">7</th><td><i> * Same as SHA1DCFinal, but convert collision attack case into a verbose die().</i></td></tr>
+<tr><th id="8">8</th><td><i> */</i></td></tr>
+<tr><th id="9">9</th><td><em>void</em> <dfn class="decl" id="git_SHA1DCFinal" title='git_SHA1DCFinal' data-ref="git_SHA1DCFinal">git_SHA1DCFinal</dfn>(<em>unsigned</em> <em>char</em> [<var>20</var>], <a class="typedef" href="sha1dc/sha1.h.html#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a> *);</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><i>/*</i></td></tr>
+<tr><th id="12">12</th><td><i> * Same as SHA1DCUpdate, but adjust types to match git's usual interface.</i></td></tr>
+<tr><th id="13">13</th><td><i> */</i></td></tr>
+<tr><th id="14">14</th><td><em>void</em> <dfn class="decl" id="git_SHA1DCUpdate" title='git_SHA1DCUpdate' data-ref="git_SHA1DCUpdate">git_SHA1DCUpdate</dfn>(<a class="typedef" href="sha1dc/sha1.h.html#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a> *<dfn class="local col3 decl" id="8903ctx" title='ctx' data-type='SHA1_CTX *' data-ref="8903ctx">ctx</dfn>, <em>const</em> <em>void</em> *<dfn class="local col4 decl" id="8904data" title='data' data-type='const void *' data-ref="8904data">data</dfn>, <em>unsigned</em> <em>long</em> <dfn class="local col5 decl" id="8905len" title='len' data-type='unsigned long' data-ref="8905len">len</dfn>);</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#define <dfn class="macro" id="_M/platform_SHA_CTX" data-ref="_M/platform_SHA_CTX">platform_SHA_CTX</dfn> SHA1_CTX</u></td></tr>
+<tr><th id="17">17</th><td><u>#define <dfn class="macro" id="_M/platform_SHA1_Init" data-ref="_M/platform_SHA1_Init">platform_SHA1_Init</dfn> SHA1DCInit</u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/platform_SHA1_Update" data-ref="_M/platform_SHA1_Update">platform_SHA1_Update</dfn> git_SHA1DCUpdate</u></td></tr>
+<tr><th id="19">19</th><td><u>#define <dfn class="macro" id="_M/platform_SHA1_Final" data-ref="_M/platform_SHA1_Final">platform_SHA1_Final</dfn> git_SHA1DCFinal</u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='abspath.c.html'>codebrowser/abspath.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

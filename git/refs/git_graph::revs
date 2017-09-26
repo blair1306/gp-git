@@ -1,0 +1,19 @@
+<dec f='codebrowser/graph.c' l='131' type='struct rev_info *'/>
+<use f='codebrowser/graph.c' l='281' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='350' u='r' c='graph_is_interesting'/>
+<use f='codebrowser/graph.c' l='350' u='r' c='graph_is_interesting'/>
+<use f='codebrowser/graph.c' l='359' u='r' c='graph_is_interesting'/>
+<use f='codebrowser/graph.c' l='371' u='r' c='next_interesting_parent'/>
+<use f='codebrowser/graph.c' l='410' u='r' c='graph_get_current_column_color'/>
+<use f='codebrowser/graph.c' l='837' u='r' c='graph_output_commit_char'/>
+<use f='codebrowser/graph.c' l='845' u='r' c='graph_output_commit_char'/>
+<use f='codebrowser/graph.c' l='1272' u='r' c='graph_show_commit'/>
+<use f='codebrowser/graph.c' l='1274' u='r' c='graph_show_commit'/>
+<use f='codebrowser/graph.c' l='1275' u='r' c='graph_show_commit'/>
+<use f='codebrowser/graph.c' l='1293' u='r' c='graph_show_oneline'/>
+<use f='codebrowser/graph.c' l='1307' u='r' c='graph_show_padding'/>
+<use f='codebrowser/graph.c' l='1327' u='r' c='graph_show_remainder'/>
+<use f='codebrowser/graph.c' l='1332' u='r' c='graph_show_remainder'/>
+<use f='codebrowser/graph.c' l='1333' u='r' c='graph_show_remainder'/>
+<offset>64</offset>
+<doc f='codebrowser/graph.c' l='130'>/* The rev-info used for the current traversal */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='202' type='int cmd_push(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/push.c' l='511' ll='597' type='int cmd_push(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='443'/>
+<use f='codebrowser/git.c' l='443'/>
+<use f='codebrowser/git.c' l='443'/>
+<use f='codebrowser/git.c' l='443'/>

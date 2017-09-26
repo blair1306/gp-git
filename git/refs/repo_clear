@@ -1,0 +1,5 @@
+<dec f='codebrowser/repository.h' l='93' type='void repo_clear(struct repository * repo)'/>
+<use f='codebrowser/builtin/grep.c' l='465' u='c' c='grep_submodule'/>
+<use f='codebrowser/builtin/ls-files.c' l='217' u='c' c='show_submodule'/>
+<use f='codebrowser/repository.c' l='145' u='c' c='repo_init'/>
+<def f='codebrowser/repository.c' l='201' ll='234' type='void repo_clear(struct repository * repo)'/>

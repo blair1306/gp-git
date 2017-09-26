@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='12'/>
+<use f='codebrowser/builtin/config.c' l='219' u='c'/>
+<use f='codebrowser/builtin/config.c' l='239' u='c'/>
+<use f='codebrowser/config.c' l='2502' u='c'/>

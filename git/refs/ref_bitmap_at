@@ -1,0 +1,5 @@
+<def f='codebrowser/shallow.c' l='432' macro='1' type='uint32_t ** ref_bitmap_at(struct ref_bitmap * s, const struct commit * c)'/>
+<use f='codebrowser/shallow.c' l='491' u='c' c='paint_down'/>
+<use f='codebrowser/shallow.c' l='618' u='c' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='687' u='c' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='708' u='c' c='post_assign_shallow'/>

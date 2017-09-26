@@ -1,0 +1,15 @@
+<dec f='include/curl/curl.h' l='955' macro='1' type='10023'/>
+<use f='codebrowser/http-push.c' l='426' u='r' c='start_move'/>
+<use f='codebrowser/http-push.c' l='451' u='r' c='refresh_lock'/>
+<use f='codebrowser/http-push.c' l='887' u='r' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='954' u='r' c='unlock_remote'/>
+<use f='codebrowser/http-push.c' l='1142' u='r' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1216' u='r' c='locking_available'/>
+<use f='codebrowser/http-push.c' l='1383' u='r' c='update_remote'/>
+<use f='codebrowser/http-push.c' l='1496' u='r' c='update_remote_info_refs'/>
+<use f='codebrowser/http.c' l='1104' u='r' c='get_active_slot'/>
+<use f='codebrowser/http.c' l='1702' u='r' c='http_request'/>
+<use f='codebrowser/http.c' l='2083' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2251' u='r' c='new_http_object_request'/>
+<use f='codebrowser/remote-curl.c' l='524' u='r' c='probe_rpc'/>
+<use f='codebrowser/remote-curl.c' l='676' u='r' c='post_rpc'/>

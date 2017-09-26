@@ -1,0 +1,18 @@
+<dec f='codebrowser/refs/refs-internal.h' l='235' type='struct ref_update **'/>
+<use f='codebrowser/refs.c' l='889' u='r' c='ref_transaction_free'/>
+<use f='codebrowser/refs.c' l='890' u='r' c='ref_transaction_free'/>
+<use f='codebrowser/refs.c' l='892' u='r' c='ref_transaction_free'/>
+<use f='codebrowser/refs.c' l='912' u='w' c='ref_transaction_add_update'/>
+<use f='codebrowser/refs.c' l='912' u='r' c='ref_transaction_add_update'/>
+<use f='codebrowser/refs.c' l='912' u='r' c='ref_transaction_add_update'/>
+<use f='codebrowser/refs.c' l='913' u='r' c='ref_transaction_add_update'/>
+<offset>64</offset>
+<use f='codebrowser/refs/files-backend.c' l='2389' u='r' c='files_transaction_cleanup'/>
+<use f='codebrowser/refs/files-backend.c' l='2428' u='r' c='files_transaction_prepare'/>
+<use f='codebrowser/refs/files-backend.c' l='2480' u='r' c='files_transaction_prepare'/>
+<use f='codebrowser/refs/files-backend.c' l='2521' u='r' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2556' u='r' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2607' u='r' c='files_transaction_finish'/>
+<use f='codebrowser/refs/files-backend.c' l='2661' u='r' c='files_initial_transaction_commit'/>
+<use f='codebrowser/refs/files-backend.c' l='2685' u='r' c='files_initial_transaction_commit'/>
+<use f='codebrowser/refs/files-backend.c' l='2704' u='r' c='files_initial_transaction_commit'/>

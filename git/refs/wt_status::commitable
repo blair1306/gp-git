@@ -1,0 +1,9 @@
+<dec f='codebrowser/wt-status.h' l='88' type='int'/>
+<offset>6624</offset>
+<doc f='codebrowser/wt-status.h' l='87'>/* These are computed during processing of the individual sections */</doc>
+<use f='codebrowser/builtin/commit.c' l='522' u='r' c='run_status'/>
+<use f='codebrowser/wt-status.c' l='744' u='w' c='wt_longstatus_print_updated'/>
+<use f='codebrowser/wt-status.c' l='977' u='r' c='wt_longstatus_print_verbose'/>
+<use f='codebrowser/wt-status.c' l='1057' u='w' c='show_merge_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1632' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1639' u='r' c='wt_longstatus_print'/>

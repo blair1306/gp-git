@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='160' type='int'/>
+<offset>1248</offset>
+<use f='codebrowser/builtin/log.c' l='1511' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/pretty.c' l='179' u='w' c='get_commit_format'/>
+<use f='codebrowser/revision.c' l='1359' u='w' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='2388' u='r' c='setup_revisions'/>

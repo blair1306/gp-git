@@ -1,0 +1,11 @@
+<dec f='codebrowser/wt-status.h' l='94' type='struct string_list'/>
+<offset>7168</offset>
+<use f='codebrowser/wt-status.c' l='137' u='m' c='wt_status_prepare'/>
+<use f='codebrowser/wt-status.c' l='675' u='a' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='1621' u='a' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1650' u='m' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1845' u='a' c='wt_shortstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1845' u='a' c='wt_shortstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1845' u='a' c='wt_shortstatus_print'/>
+<use f='codebrowser/wt-status.c' l='2223' u='m' c='wt_porcelain_v2_print'/>
+<use f='codebrowser/wt-status.c' l='2224' u='m' c='wt_porcelain_v2_print'/>

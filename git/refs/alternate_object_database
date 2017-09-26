@@ -1,0 +1,8 @@
+<def f='codebrowser/cache.h' l='1527' ll='1545'/>
+<size>320</size>
+<mbr r='alternate_object_database::next' o='0' t='struct alternate_object_database *'/>
+<mbr r='alternate_object_database::scratch' o='64' t='struct strbuf'/>
+<mbr r='alternate_object_database::base_len' o='256' t='size_t'/>
+<mbr r='alternate_object_database::loose_objects_subdir_seen' o='320' t='char [256]'/>
+<mbr r='alternate_object_database::loose_objects_cache' o='2368' t='struct oid_array'/>
+<mbr r='alternate_object_database::path' o='2560' t='char []'/>

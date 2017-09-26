@@ -1,0 +1,4 @@
+<dec f='codebrowser/sequencer.h' l='41'/>
+<use f='codebrowser/builtin/rebase--helper.c' l='14' u='c'/>
+<use f='codebrowser/builtin/revert.c' l='205' u='c'/>
+<use f='codebrowser/builtin/revert.c' l='220' u='c'/>

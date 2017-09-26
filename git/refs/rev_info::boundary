@@ -1,0 +1,9 @@
+<dec f='codebrowser/revision.h' l='107' type='unsigned int'/>
+<offset>948</offset>
+<use f='codebrowser/builtin/log.c' l='1692' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/graph.c' l='350' u='r' c='graph_is_interesting'/>
+<use f='codebrowser/graph.c' l='837' u='r' c='graph_output_commit_char'/>
+<use f='codebrowser/revision.c' l='1817' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='3236' u='r' c='get_revision_internal'/>
+<use f='codebrowser/revision.c' l='3277' u='r' c='get_revision_internal'/>
+<use f='codebrowser/revision.c' l='3286' u='w' c='get_revision_internal'/>

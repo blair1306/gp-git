@@ -1,0 +1,26 @@
+<dec f='include/string.h' l='533' type='int strncasecmp(const char * __s1, const char * __s2, size_t __n)'/>
+<doc f='include/string.h' l='532'>/* Compare no more than N chars of S1 and S2, ignoring case.  */</doc>
+<use f='codebrowser/pathspec.h' l='85' u='c' c='ps_strncmp'/>
+<use f='codebrowser/builtin/clean.c' l='389' u='c' c='find_unique'/>
+<use f='codebrowser/builtin/clean.c' l='407' u='c' c='find_unique'/>
+<use f='codebrowser/builtin/clean.c' l='767' u='c' c='ask_each_cmd'/>
+<use f='codebrowser/builtin/help.c' l='185' u='c' c='supported_man_viewer'/>
+<use f='codebrowser/builtin/help.c' l='186' u='c' c='supported_man_viewer'/>
+<use f='codebrowser/builtin/help.c' l='187' u='c' c='supported_man_viewer'/>
+<use f='codebrowser/builtin/log.c' l='720' u='c' c='add_header'/>
+<use f='codebrowser/builtin/log.c' l='723' u='c' c='add_header'/>
+<use f='codebrowser/color.c' l='51' u='c' c='match_word'/>
+<use f='codebrowser/color.c' l='221' u='c' c='color_parse_mem'/>
+<use f='codebrowser/config.c' l='237' u='c' c='include_by_gitdir'/>
+<use f='codebrowser/daemon.c' l='585' u='c' c='parse_host_arg'/>
+<use f='codebrowser/dir.c' l='72' u='c' c='fspathncmp'/>
+<use f='codebrowser/http.c' l='1468' u='c' c='extract_param'/>
+<use f='codebrowser/mailinfo.c' l='342' u='c' c='cmp_header'/>
+<use f='codebrowser/mailmap.c' l='296' u='c' c='lookup_prefix'/>
+<use f='codebrowser/name-hash.c' l='28' u='c' c='dir_entry_cmp'/>
+<use f='codebrowser/path.c' l='1312' u='c' c='is_ntfs_dotgit'/>
+<use f='codebrowser/path.c' l='1315' u='c' c='is_ntfs_dotgit'/>
+<use f='codebrowser/sha1_name.c' l='563' u='c' c='at_mark'/>
+<use f='codebrowser/trailer.c' l='95' u='c' c='same_token'/>
+<use f='codebrowser/trailer.c' l='574' u='c' c='token_matches_item'/>
+<use f='codebrowser/trailer.c' l='576' u='c' c='token_matches_item'/>

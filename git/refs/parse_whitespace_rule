@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1960' type='unsigned int parse_whitespace_rule(const char * )'/>
+<use f='codebrowser/config.c' l='1198' u='c' c='git_default_core_config'/>
+<def f='codebrowser/ws.c' l='25' ll='72' type='unsigned int parse_whitespace_rule(const char * string)'/>
+<use f='codebrowser/ws.c' l='102' u='c' c='whitespace_rule'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/strbuf.h' l='431' type='int strbuf_getwholeline_fd(struct strbuf * , int , int )'/>
+<doc f='codebrowser/strbuf.h' l='425'>/**
+ * Like `strbuf_getwholeline`, but operates on a file descriptor.
+ * It reads one character at a time, so it is very slow.  Do not
+ * use it unless you need the correct position in the file
+ * descriptor.
+ */</doc>
+<use f='codebrowser/blame.c' l='120' u='c' c='append_merge_parents'/>
+<use f='codebrowser/bundle.c' l='31' u='c' c='parse_bundle_header'/>
+<use f='codebrowser/bundle.c' l='41' u='c' c='parse_bundle_header'/>
+<def f='codebrowser/strbuf.c' l='570' ll='584' type='int strbuf_getwholeline_fd(struct strbuf * sb, int fd, int term)'/>

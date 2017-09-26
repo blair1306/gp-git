@@ -1,0 +1,18 @@
+<dec f='include/x86_64-linux-gnu/sys/poll.h' l='57' type='int poll(struct pollfd * __fds, nfds_t __nfds, int __timeout)'/>
+<doc f='include/x86_64-linux-gnu/sys/poll.h' l='49'>/* Poll the file descriptors described by the NFDS structures starting at
+   FDS.  If TIMEOUT is nonzero and not -1, allow TIMEOUT milliseconds for
+   an event to occur; if TIMEOUT is -1, block until an event occurs.
+   Returns the number of file descriptors with events, zero if timed out,
+   or -1 for errors.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='373' u='c' c='copy_to_sideband'/>
+<use f='codebrowser/builtin/upload-archive.c' l='108' u='c' c='cmd_upload_archive'/>
+<use f='codebrowser/credential-cache--daemon.c' l='171' u='c' c='serve_cache_loop'/>
+<use f='codebrowser/daemon.c' l='1101' u='c' c='service_loop'/>
+<use f='codebrowser/run-command.c' l='1252' u='c' c='pump_io_round'/>
+<use f='codebrowser/run-command.c' l='1554' u='c' c='pp_buffer_stderr'/>
+<use f='codebrowser/upload-pack.c' l='191' u='c' c='create_pack_file'/>
+<use f='codebrowser/wrapper.c' l='245' u='c' c='handle_nonblock'/>
+<use f='codebrowser/wrapper.c' l='678' u='c' c='sleep_millisec'/>

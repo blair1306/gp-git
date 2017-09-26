@@ -1,0 +1,23 @@
+<def f='codebrowser/tree-walk.h' l='23' ll='26' type='int tree_entry_len(const struct name_entry * ne)'/>
+<use f='codebrowser/tree-walk.h' l='88' u='c' c='traverse_path_len'/>
+<use f='codebrowser/builtin/grep.c' l='544' u='c' c='grep_tree'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1242' u='c' c='add_pbase_object'/>
+<use f='codebrowser/match-trees.c' l='69' u='c' c='base_name_entries_compare'/>
+<use f='codebrowser/match-trees.c' l='70' u='c' c='base_name_entries_compare'/>
+<use f='codebrowser/tree-diff.c' l='62' u='c' c='tree_entry_pathcmp'/>
+<use f='codebrowser/tree-diff.c' l='63' u='c' c='tree_entry_pathcmp'/>
+<use f='codebrowser/tree-diff.c' l='197' u='c' c='emit_path'/>
+<use f='codebrowser/tree-diff.c' l='208' u='c' c='emit_path'/>
+<use f='codebrowser/tree-walk.c' l='184' u='c' c='make_traverse_path'/>
+<use f='codebrowser/tree-walk.c' l='194' u='c' c='make_traverse_path'/>
+<use f='codebrowser/tree-walk.c' l='311' u='c' c='extended_entry_extract'/>
+<use f='codebrowser/tree-walk.c' l='329' u='c' c='extended_entry_extract'/>
+<use f='codebrowser/tree-walk.c' l='425' u='c' c='traverse_trees'/>
+<use f='codebrowser/tree-walk.c' l='444' u='c' c='traverse_trees'/>
+<use f='codebrowser/tree-walk.c' l='504' u='c' c='find_tree_entry'/>
+<use f='codebrowser/tree-walk.c' l='960' u='c' c='do_match'/>
+<use f='codebrowser/tree.c' l='117' u='c' c='read_tree_1'/>
+<use f='codebrowser/unpack-trees.c' l='639' u='c' c='traverse_trees_recursive'/>
+<use f='codebrowser/unpack-trees.c' l='711' u='c' c='do_compare_entry_piecewise'/>
+<use f='codebrowser/unpack-trees.c' l='744' u='c' c='do_compare_entry'/>
+<use f='codebrowser/unpack-trees.c' l='870' u='c' c='find_cache_pos'/>

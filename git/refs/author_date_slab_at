@@ -1,0 +1,4 @@
+<def f='codebrowser/commit.c' l='590' macro='1' type='unsigned long * author_date_slab_at(struct author_date_slab * s, const struct commit * c)'/>
+<use f='codebrowser/commit.c' l='612' u='c' c='record_author_date'/>
+<use f='codebrowser/commit.c' l='623' u='c' c='compare_commits_by_author_date'/>
+<use f='codebrowser/commit.c' l='624' u='c' c='compare_commits_by_author_date'/>

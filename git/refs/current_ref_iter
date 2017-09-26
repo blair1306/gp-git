@@ -1,0 +1,19 @@
+<dec f='codebrowser/refs/refs-internal.h' l='481' type='struct ref_iterator *'/>
+<doc f='codebrowser/refs/refs-internal.h' l='470'>/*
+ * current_ref_iter is a performance hack: when iterating over
+ * references using the for_each_ref*() functions, current_ref_iter is
+ * set to the reference iterator before calling the callback function.
+ * If the callback function calls peel_ref(), then peel_ref() first
+ * checks whether the reference to be peeled is the one referred to by
+ * the iterator (it usually is) and if so, asks the iterator for the
+ * peeled version of the reference if it is available. This avoids a
+ * refname lookup in a common case. current_ref_iter is set to NULL
+ * when the iteration is over.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='665' u='r' c='files_peel_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='665' u='r' c='files_peel_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='668' u='r' c='files_peel_ref'/>
+<def f='codebrowser/refs/iterator.c' l='373' type='struct ref_iterator *'/>
+<use f='codebrowser/refs/iterator.c' l='379' u='r' c='do_for_each_ref_iterator'/>
+<use f='codebrowser/refs/iterator.c' l='381' u='w' c='do_for_each_ref_iterator'/>
+<use f='codebrowser/refs/iterator.c' l='396' u='w' c='do_for_each_ref_iterator'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/hashmap.h' l='111' type='unsigned int memhash(const void * buf, size_t len)'/>
+<use f='codebrowser/attr.c' l='108' u='c' c='attr_hashmap_get'/>
+<use f='codebrowser/attr.c' l='127' u='c' c='attr_hashmap_add'/>
+<use f='codebrowser/builtin/fast-export.c' l='119' u='c' c='anonymize_mem'/>
+<def f='codebrowser/hashmap.c' l='29' ll='38' type='unsigned int memhash(const void * buf, size_t len)'/>
+<use f='codebrowser/hashmap.c' l='288' u='c' c='memintern'/>
+<use f='codebrowser/remote.c' l='169' u='c' c='make_remote'/>
+<use f='codebrowser/submodule-config.c' l='113' u='c' c='hash_sha1_string'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='179' u='c' c='cmd_main'/>

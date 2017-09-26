@@ -1,0 +1,12 @@
+<dec f='codebrowser/commit.h' l='108' type='int find_commit_subject(const char * commit_buffer, const char ** subject)'/>
+<doc f='codebrowser/commit.h' l='107'>/* Find beginning and length of commit subject. */</doc>
+<use f='codebrowser/builtin/blame.c' l='202' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/tag.c' l='303' u='c' c='create_reflog_msg'/>
+<def f='codebrowser/commit.c' l='408' ll='424' type='int find_commit_subject(const char * commit_buffer, const char ** subject)'/>
+<use f='codebrowser/merge-recursive.c' l='214' u='c' c='output_commit_title'/>
+<use f='codebrowser/sequencer.c' l='246' u='c' c='get_message'/>
+<use f='codebrowser/sequencer.c' l='852' u='c' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='875' u='c' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='1048' u='c' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1543' u='c' c='walk_revs_populate_todo'/>
+<use f='codebrowser/sequencer.c' l='1799' u='c' c='make_patch'/>

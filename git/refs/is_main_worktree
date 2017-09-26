@@ -1,0 +1,8 @@
+<dec f='codebrowser/worktree.h' l='52' type='int is_main_worktree(const struct worktree * wt)'/>
+<doc f='codebrowser/worktree.h' l='49'>/*
+ * Return true if the given worktree is the main one.
+ */</doc>
+<use f='codebrowser/builtin/worktree.c' l='492' u='c' c='lock_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='525' u='c' c='unlock_worktree'/>
+<def f='codebrowser/worktree.c' l='229' ll='232' type='int is_main_worktree(const struct worktree * wt)'/>
+<use f='codebrowser/worktree.c' l='236' u='c' c='is_worktree_locked'/>

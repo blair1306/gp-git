@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack.h' l='102' type='void finish_tmp_packfile(struct strbuf * name_buffer, const char * pack_tmp_name, struct pack_idx_entry ** written_list, uint32_t nr_written, struct pack_idx_option * pack_idx_opts, unsigned char * sha1)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='869' u='c' c='write_pack_file'/>
+<use f='codebrowser/bulk-checkin.c' l='47' u='c' c='finish_bulk_checkin'/>
+<def f='codebrowser/pack-write.c' l='340' ll='372' type='void finish_tmp_packfile(struct strbuf * name_buffer, const char * pack_tmp_name, struct pack_idx_entry ** written_list, uint32_t nr_written, struct pack_idx_option * pack_idx_opts, unsigned char * sha1)'/>

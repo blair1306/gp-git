@@ -1,0 +1,5 @@
+<dec f='codebrowser/ewah/ewok_rlw.h' l='93' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/ewah/ewah_rlw.c' l='35' u='w' c='next_word'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='49' u='r' c='rlwit_init'/>
+<use f='codebrowser/ewah/ewah_rlw.c' l='76' u='r' c='rlwit_discard_first_words'/>

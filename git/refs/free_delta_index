@@ -1,0 +1,10 @@
+<dec f='codebrowser/delta.h' l='24' type='void free_delta_index(struct delta_index * index)'/>
+<use f='codebrowser/delta.h' l='65' u='c' c='diff_delta'/>
+<doc f='codebrowser/delta.h' l='19'>/*
+ * free_delta_index: free the index created by create_delta_index()
+ *
+ * Given pointer must be what create_delta_index() returned, or NULL.
+ */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='1966' u='c' c='free_unpacked'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2106' u='c' c='find_deltas'/>
+<def f='codebrowser/diff-delta.c' l='298' ll='301' type='void free_delta_index(struct delta_index * index)'/>

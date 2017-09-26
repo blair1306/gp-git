@@ -1,0 +1,8 @@
+<dec f='codebrowser/pack-objects.h' l='21' type='unsigned char'/>
+<use f='codebrowser/builtin/pack-objects.c' l='382' u='r' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='383' u='r' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1417' u='w' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1426' u='w' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1457' u='w' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1488' u='r' c='check_object'/>
+<offset>960</offset>

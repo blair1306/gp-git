@@ -1,0 +1,7 @@
+<dec f='codebrowser/remote.h' l='261' type='int format_tracking_info(struct branch * branch, struct strbuf * sb)'/>
+<use f='codebrowser/builtin/checkout.c' l='607' u='c' c='report_tracking'/>
+<def f='codebrowser/remote.c' l='2064' ll='2125' type='int format_tracking_info(struct branch * branch, struct strbuf * sb)'/>
+<doc f='codebrowser/remote.c' l='2061'>/*
+ * Return true when there is anything to report, otherwise false.
+ */</doc>
+<use f='codebrowser/wt-status.c' l='1010' u='c' c='wt_longstatus_print_tracking'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/refs/refs-internal.h' l='62'/>
+<doc f='codebrowser/refs/refs-internal.h' l='58'>/*
+ * Used as a flag in ref_update::flags when the loose reference has
+ * been deleted.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2570' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2609' u='c'/>

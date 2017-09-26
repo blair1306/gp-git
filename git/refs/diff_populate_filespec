@@ -1,0 +1,32 @@
+<dec f='codebrowser/diffcore.h' l='60' type='int diff_populate_filespec(struct diff_filespec * , unsigned int )'/>
+<use f='codebrowser/diff.c' l='452' u='c' c='fill_mmfile'/>
+<use f='codebrowser/diff.c' l='465' u='c' c='diff_filespec_size'/>
+<use f='codebrowser/diff.c' l='2014' u='c' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='2015' u='c' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='2021' u='c' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='2025' u='c' c='show_dirstat'/>
+<use f='codebrowser/diff.c' l='2298' u='c' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2583' u='c' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='2584' u='c' c='builtin_diffstat'/>
+<def f='codebrowser/diff.c' l='2810' ll='2928' type='int diff_populate_filespec(struct diff_filespec * s, unsigned int flags)'/>
+<use f='codebrowser/diff.c' l='3038' u='c' c='prepare_temp_file'/>
+<use f='codebrowser/diff.c' l='4911' u='c' c='diff_filespec_is_identical'/>
+<use f='codebrowser/diff.c' l='4913' u='c' c='diff_filespec_is_identical'/>
+<use f='codebrowser/diff.c' l='4942' u='c' c='diff_filespec_check_stat_unmatch'/>
+<use f='codebrowser/diff.c' l='4943' u='c' c='diff_filespec_check_stat_unmatch'/>
+<use f='codebrowser/diff.c' l='5223' u='c' c='fill_textconv'/>
+<doc f='codebrowser/diff.c' l='2805'>/*
+ * While doing rename detection and pickaxe operation, we may need to
+ * grab the data for the blob (or file) for our own in-core comparison.
+ * diff_filespec has data and size fields for this purpose.
+ */</doc>
+<use f='codebrowser/diffcore-break.c' l='64' u='c' c='should_break'/>
+<use f='codebrowser/diffcore-break.c' l='64' u='c' c='should_break'/>
+<use f='codebrowser/diffcore-rename.c' l='167' u='c' c='estimate_similarity'/>
+<use f='codebrowser/diffcore-rename.c' l='170' u='c' c='estimate_similarity'/>
+<use f='codebrowser/diffcore-rename.c' l='188' u='c' c='estimate_similarity'/>
+<use f='codebrowser/diffcore-rename.c' l='190' u='c' c='estimate_similarity'/>
+<use f='codebrowser/diffcore-rename.c' l='261' u='c' c='hash_filespec'/>
+<use f='codebrowser/line-log.c' l='520' u='c' c='fill_line_ends'/>
+<use f='codebrowser/line-log.c' l='1012' u='c' c='process_diff_filepair'/>
+<use f='codebrowser/line-log.c' l='1017' u='c' c='process_diff_filepair'/>

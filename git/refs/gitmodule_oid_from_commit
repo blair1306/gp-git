@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule-config.h' l='47' type='int gitmodule_oid_from_commit(const struct object_id * commit_oid, struct object_id * gitmodules_oid, struct strbuf * rev)'/>
+<def f='codebrowser/submodule-config.c' l='458' ll='474' type='int gitmodule_oid_from_commit(const struct object_id * treeish_name, struct object_id * gitmodules_oid, struct strbuf * rev)'/>
+<use f='codebrowser/submodule-config.c' l='507' u='c' c='config_from'/>
+<use f='codebrowser/submodule.c' l='266' u='c' c='gitmodules_config_oid'/>

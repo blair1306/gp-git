@@ -1,0 +1,4 @@
+<dec f='codebrowser/trace.h' l='21' type='void trace_verbatim(struct trace_key * key, const void * buf, unsigned int len)'/>
+<use f='codebrowser/pkt-line.c' l='23' u='c' c='packet_trace_pack'/>
+<use f='codebrowser/pkt-line.c' l='26' u='c' c='packet_trace_pack'/>
+<def f='codebrowser/trace.c' l='139' ll='144' type='void trace_verbatim(struct trace_key * key, const void * buf, unsigned int len)'/>

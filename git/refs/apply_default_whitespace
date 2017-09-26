@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='736' type='const char *'/>
+<use f='codebrowser/apply.c' l='26' u='a' c='git_apply_config'/>
+<use f='codebrowser/apply.c' l='99' u='r' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='99' u='r' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='164' u='r' c='set_default_whitespace_mode'/>
+<def f='codebrowser/environment.c' l='32' type='const char *'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='339' type='struct commit_extra_header * read_commit_extra_headers(struct commit * , const char ** )'/>
+<use f='codebrowser/builtin/commit.c' l='1761' u='c' c='cmd_commit'/>
+<def f='codebrowser/commit.c' l='1283' ll='1292' type='struct commit_extra_header * read_commit_extra_headers(struct commit * commit, const char ** exclude)'/>
+<use f='codebrowser/commit.c' l='1298' u='c' c='for_each_mergetag'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/quote.h' l='40' type='char * sq_dequote(char * )'/>
+<doc f='codebrowser/quote.h' l='36'>/* This unwraps what sq_quote() produces in place, but returns
+ * NULL if the input does not look like what sq_quote would have
+ * produced.
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='279' u='c' c='parse_key_value_squoted'/>
+<def f='codebrowser/quote.c' l='116' ll='119' type='char * sq_dequote(char * arg)'/>
+<use f='codebrowser/shell.c' l='16' u='c' c='do_generic_cmd'/>

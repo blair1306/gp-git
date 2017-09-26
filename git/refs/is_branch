@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='109' type='int is_branch(const char * refname)'/>
+<use f='codebrowser/builtin/fsck.c' l='446' u='c' c='fsck_handle_ref'/>
+<def f='codebrowser/refs.c' l='729' ll='732' type='int is_branch(const char * refname)'/>
+<use f='codebrowser/refs/files-backend.c' l='1619' u='c' c='write_ref_to_lockfile'/>

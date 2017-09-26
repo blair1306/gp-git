@@ -1,0 +1,6 @@
+<dec f='codebrowser/graph.h' l='43' type='struct git_graph * graph_init(struct rev_info * opt)'/>
+<doc f='codebrowser/graph.h' l='40'>/*
+ * Create a new struct git_graph.
+ */</doc>
+<def f='codebrowser/graph.c' l='259' ll='316' type='struct git_graph * graph_init(struct rev_info * opt)'/>
+<use f='codebrowser/revision.c' l='1963' u='c' c='handle_revision_opt'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/http.h' l='97' type='int run_one_slot(struct active_request_slot * slot, struct slot_results * results)'/>
+<doc f='codebrowser/http.h' l='91'>/*
+ * This will run one slot to completion in a blocking manner, similar to how
+ * curl_easy_perform would work (but we don&apos;t want to use that, because
+ * we do not want to intermingle calls to curl_multi and curl_easy).
+ *
+ */</doc>
+<def f='codebrowser/http.c' l='1419' ll='1431' type='int run_one_slot(struct active_request_slot * slot, struct slot_results * results)'/>
+<use f='codebrowser/http.c' l='1705' u='c' c='http_request'/>
+<use f='codebrowser/remote-curl.c' l='484' u='c' c='run_slot'/>

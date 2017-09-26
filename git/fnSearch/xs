@@ -1,0 +1,8 @@
+xsize_t|xsize_t
+xstrdup_or_null|xstrdup_or_null
+xstrdup_tolower|xstrdup_tolower
+xstrfmt|xstrfmt
+xstrvfmt|xstrvfmt
+xsnprintf|xsnprintf
+xstrdup|xstrdup
+xstrndup|xstrndup

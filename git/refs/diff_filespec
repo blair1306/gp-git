@@ -1,0 +1,18 @@
+<def f='codebrowser/diffcore.h' l='27' ll='51'/>
+<size>80</size>
+<mbr r='diff_filespec::oid' o='0' t='struct object_id'/>
+<mbr r='diff_filespec::path' o='192' t='char *'/>
+<mbr r='diff_filespec::data' o='256' t='void *'/>
+<mbr r='diff_filespec::cnt_data' o='320' t='void *'/>
+<mbr r='diff_filespec::size' o='384' t='unsigned long'/>
+<mbr r='diff_filespec::count' o='448' t='int'/>
+<mbr r='diff_filespec::rename_used' o='480' t='int'/>
+<mbr r='diff_filespec::mode' o='512' t='unsigned short'/>
+<mbr r='diff_filespec::oid_valid' o='528' t='unsigned int'/>
+<mbr r='diff_filespec::should_free' o='529' t='unsigned int'/>
+<mbr r='diff_filespec::should_munmap' o='530' t='unsigned int'/>
+<mbr r='diff_filespec::dirty_submodule' o='531' t='unsigned int'/>
+<mbr r='diff_filespec::is_stdin' o='533' t='unsigned int'/>
+<mbr r='diff_filespec::has_more_entries' o='534' t='unsigned int'/>
+<mbr r='diff_filespec::is_binary' o='535' t='int'/>
+<mbr r='diff_filespec::driver' o='576' t='struct userdiff_driver *'/>

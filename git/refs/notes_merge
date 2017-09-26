@@ -1,0 +1,32 @@
+<dec f='codebrowser/notes-merge.h' l='53' type='int notes_merge(struct notes_merge_options * o, struct notes_tree * local_tree, struct object_id * result_oid)'/>
+<use f='codebrowser/builtin/notes.c' l='848' u='c' c='merge'/>
+<doc f='codebrowser/notes-merge.h' l='24'>/*
+ * Merge notes from o-&gt;remote_ref into o-&gt;local_ref
+ *
+ * The given notes_tree &apos;local_tree&apos; must be the notes_tree referenced by the
+ * o-&gt;local_ref. This is the notes_tree in which the object-level merge is
+ * performed.
+ *
+ * The commits given by the two refs are merged, producing one of the following
+ * outcomes:
+ *
+ * 1. The merge trivially results in an existing commit (e.g. fast-forward or
+ *    already-up-to-date). &apos;local_tree&apos; is untouched, the OID of the result
+ *    is written into &apos;result_oid&apos; and 0 is returned.
+ * 2. The merge successfully completes, producing a merge commit. local_tree
+ *    contains the updated notes tree, the OID of the resulting commit is
+ *    written into &apos;result_oid&apos;, and 1 is returned.
+ * 3. The merge results in conflicts. This is similar to #2 in that the
+ *    partial merge result (i.e. merge result minus the unmerged entries)
+ *    are stored in &apos;local_tree&apos;, and the OID or the resulting commit
+ *    (to be amended when the conflicts have been resolved) is written into
+ *    &apos;result_oid&apos;. The unmerged entries are written into the
+ *    .git/NOTES_MERGE_WORKTREE directory with conflict markers.
+ *    -1 is returned.
+ *
+ * Both o-&gt;local_ref and o-&gt;remote_ref must be given (non-NULL), but either ref
+ * (although not both) may refer to a non-existing notes ref, in which case
+ * that notes ref is interpreted as an empty notes tree, and the merge
+ * trivially results in what the other ref points to.
+ */</doc>
+<def f='codebrowser/notes-merge.c' l='534' ll='658' type='int notes_merge(struct notes_merge_options * o, struct notes_tree * local_tree, struct object_id * result_oid)'/>

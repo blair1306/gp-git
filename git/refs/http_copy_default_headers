@@ -1,0 +1,12 @@
+<dec f='codebrowser/http.h' l='109' type='struct curl_slist * http_copy_default_headers()'/>
+<use f='codebrowser/http-push.c' l='214' u='c' c='get_dav_token_headers'/>
+<use f='codebrowser/http-push.c' l='418' u='c' c='start_move'/>
+<use f='codebrowser/http-push.c' l='843' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='1122' u='c' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1200' u='c' c='locking_available'/>
+<use f='codebrowser/http.c' l='929' u='c' c='http_init'/>
+<use f='codebrowser/http.c' l='931' u='c' c='http_init'/>
+<def f='codebrowser/http.c' l='1433' ll='1441' type='struct curl_slist * http_copy_default_headers()'/>
+<use f='codebrowser/http.c' l='1660' u='c' c='http_request'/>
+<use f='codebrowser/remote-curl.c' l='509' u='c' c='probe_rpc'/>
+<use f='codebrowser/remote-curl.c' l='544' u='c' c='post_rpc'/>

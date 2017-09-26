@@ -1,0 +1,8 @@
+<dec f='include/curl/multi.h' l='390' type='CURLMcode curl_multi_setopt(CURLM * multi_handle, CURLMoption option)'/>
+<doc f='include/curl/multi.h' l='383'>/*
+ * Name:    curl_multi_setopt()
+ *
+ * Desc:    Sets options for the multi handle.
+ *
+ * Returns: CURLM error code.
+ */</doc>

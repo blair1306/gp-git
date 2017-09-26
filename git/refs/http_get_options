@@ -1,0 +1,10 @@
+<def f='codebrowser/http.h' l='147' ll='175'/>
+<size>40</size>
+<doc f='codebrowser/http.h' l='146'>/* Options for http_get_*() */</doc>
+<mbr r='http_get_options::no_cache' o='0' t='unsigned int'/>
+<mbr r='http_get_options::keep_error' o='1' t='unsigned int'/>
+<mbr r='http_get_options::initial_request' o='2' t='unsigned int'/>
+<mbr r='http_get_options::content_type' o='64' t='struct strbuf *'/>
+<mbr r='http_get_options::charset' o='128' t='struct strbuf *'/>
+<mbr r='http_get_options::effective_url' o='192' t='struct strbuf *'/>
+<mbr r='http_get_options::base_url' o='256' t='struct strbuf *'/>

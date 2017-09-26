@@ -1,0 +1,3 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='115' type='long xdl_mmfile_size(mmfile_t * mmf)'/>
+<def f='codebrowser/xdiff/xutils.c' l='72' ll='75' type='long xdl_mmfile_size(mmfile_t * mmf)'/>
+<use f='codebrowser/xdiff/xutils.c' l='141' u='c' c='xdl_guess_lines'/>

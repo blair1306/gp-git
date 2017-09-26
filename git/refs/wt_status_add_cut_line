@@ -1,0 +1,5 @@
+<dec f='codebrowser/wt-status.h' l='118' type='void wt_status_add_cut_line(FILE * fp)'/>
+<use f='codebrowser/builtin/commit.c' l='812' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='837' u='c' c='prepare_to_commit'/>
+<def f='codebrowser/wt-status.c' l='935' ll='944' type='void wt_status_add_cut_line(FILE * fp)'/>
+<use f='codebrowser/wt-status.c' l='975' u='c' c='wt_longstatus_print_verbose'/>

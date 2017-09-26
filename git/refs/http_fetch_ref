@@ -1,0 +1,6 @@
+<dec f='codebrowser/http.h' l='192' type='int http_fetch_ref(const char * base, struct ref * ref)'/>
+<use f='codebrowser/http-push.c' l='1413' u='c' c='one_remote_ref'/>
+<use f='codebrowser/http-push.c' l='1449' u='c' c='add_remote_info_ref'/>
+<use f='codebrowser/http-walker.c' l='575' u='c' c='fetch_ref'/>
+<def f='codebrowser/http.c' l='1856' ll='1879' type='int http_fetch_ref(const char * base, struct ref * ref)'/>
+<use f='codebrowser/remote-curl.c' l='222' u='c' c='parse_info_refs'/>

@@ -1,0 +1,6 @@
+<def f='codebrowser/config.h' l='218' ll='223'/>
+<size>24</size>
+<mbr r='key_value_info::filename' o='0' t='const char *'/>
+<mbr r='key_value_info::linenr' o='64' t='int'/>
+<mbr r='key_value_info::origin_type' o='96' t='enum config_origin_type'/>
+<mbr r='key_value_info::scope' o='128' t='enum config_scope'/>

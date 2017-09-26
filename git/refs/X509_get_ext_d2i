@@ -1,0 +1,2 @@
+<dec f='include/openssl/x509.h' l='1071' type='void * X509_get_ext_d2i(X509 * x, int nid, int * crit, int * idx)'/>
+<use f='codebrowser/imap-send.c' l='252' u='c' c='verify_hostname'/>

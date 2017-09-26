@@ -1,0 +1,18 @@
+<dec f='codebrowser/cache.h' l='337' type='struct string_list *'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/ls-files.c' l='255' u='r' c='show_ru_info'/>
+<use f='codebrowser/builtin/ls-files.c' l='258' u='r' c='show_ru_info'/>
+<use f='codebrowser/builtin/ls-files.c' l='258' u='r' c='show_ru_info'/>
+<use f='codebrowser/builtin/ls-files.c' l='258' u='r' c='show_ru_info'/>
+<use f='codebrowser/read-cache.c' l='1543' u='w' c='read_index_extension'/>
+<use f='codebrowser/read-cache.c' l='2281' u='r' c='do_write_index'/>
+<use f='codebrowser/read-cache.c' l='2284' u='r' c='do_write_index'/>
+<use f='codebrowser/resolve-undo.c' l='17' u='r' c='record_resolve_undo'/>
+<use f='codebrowser/resolve-undo.c' l='20' u='w' c='record_resolve_undo'/>
+<use f='codebrowser/resolve-undo.c' l='22' u='r' c='record_resolve_undo'/>
+<use f='codebrowser/resolve-undo.c' l='107' u='r' c='resolve_undo_clear_index'/>
+<use f='codebrowser/resolve-undo.c' l='112' u='w' c='resolve_undo_clear_index'/>
+<use f='codebrowser/resolve-undo.c' l='124' u='r' c='unmerge_index_entry_at'/>
+<use f='codebrowser/resolve-undo.c' l='135' u='r' c='unmerge_index_entry_at'/>
+<use f='codebrowser/resolve-undo.c' l='169' u='r' c='unmerge_marked_index'/>
+<use f='codebrowser/resolve-undo.c' l='183' u='r' c='unmerge_index'/>

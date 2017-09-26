@@ -1,0 +1,4 @@
+<dec f='codebrowser/builtin.h' l='113' type='int fmt_merge_msg(struct strbuf * in, struct strbuf * out, struct fmt_merge_msg_opts * )'/>
+<def f='codebrowser/builtin/fmt-merge-msg.c' l='593' ll='656' type='int fmt_merge_msg(struct strbuf * in, struct strbuf * out, struct fmt_merge_msg_opts * opts)'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='707' u='c' c='cmd_fmt_merge_msg'/>
+<use f='codebrowser/builtin/merge.c' l='1001' u='c' c='prepare_merge_message'/>

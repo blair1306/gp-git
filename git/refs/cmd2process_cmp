@@ -1,0 +1,4 @@
+<dec f='codebrowser/sub-process.h' l='45' type='int cmd2process_cmp(const void * unused_cmp_data, const void * e1, const void * e2, const void * unused_keydata)'/>
+<use f='codebrowser/convert.c' l='567' u='r' c='apply_multi_file_filter'/>
+<doc f='codebrowser/sub-process.h' l='44'>/* Function to test two subprocess hashmap entries for equality. */</doc>
+<def f='codebrowser/sub-process.c' l='8' ll='17' type='int cmd2process_cmp(const void * unused_cmp_data, const void * entry, const void * entry_or_key, const void * unused_keydata)'/>

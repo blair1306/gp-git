@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='276' type='int git_diff_basic_config(const char * var, const char * value, void * cb)'/>
+<use f='codebrowser/bisect.c' l='883' u='r' c='show_diff_tree'/>
+<use f='codebrowser/builtin/add.c' l='208' u='r' c='edit_patch'/>
+<use f='codebrowser/builtin/diff-files.c' l='27' u='r' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-index.c' l='24' u='r' c='cmd_diff_index'/>
+<use f='codebrowser/builtin/diff-tree.c' l='111' u='r' c='cmd_diff_tree'/>
+<use f='codebrowser/diff.c' l='302' u='c' c='git_diff_ui_config'/>
+<def f='codebrowser/diff.c' l='305' ll='353' type='int git_diff_basic_config(const char * var, const char * value, void * cb)'/>

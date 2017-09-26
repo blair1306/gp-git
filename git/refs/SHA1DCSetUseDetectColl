@@ -1,0 +1,6 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='85' type='void SHA1DCSetUseDetectColl(SHA1_CTX * , int )'/>
+<doc f='codebrowser/sha1dc/sha1.h' l='81'>/*
+    Function to disable or enable the use of Collision Detection.
+    Enabled by default.
+ */</doc>
+<def f='codebrowser/sha1dc/sha1.c' l='1789' ll='1795' type='void SHA1DCSetUseDetectColl(SHA1_CTX * ctx, int detect_coll)'/>

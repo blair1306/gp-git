@@ -1,0 +1,8 @@
+<dec f='codebrowser/prio-queue.h' l='26' type='void *'/>
+<offset>64</offset>
+<use f='codebrowser/commit.c' l='773' u='r' c='queue_has_nonstale'/>
+<use f='codebrowser/prio-queue.c' l='6' u='r' c='compare'/>
+<use f='codebrowser/prio-queue.c' l='6' u='r' c='compare'/>
+<use f='codebrowser/prio-queue.c' l='43' u='w' c='prio_queue_put'/>
+<use f='codebrowser/prio-queue.c' l='66' u='r' c='prio_queue_get'/>
+<use f='codebrowser/prio-queue.c' l='68' u='r' c='prio_queue_get'/>

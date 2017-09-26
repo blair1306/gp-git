@@ -1,0 +1,6 @@
+<dec f='codebrowser/color.h' l='54'/>
+<doc f='codebrowser/color.h' l='49'>/*
+ * The first three are chosen to match common usage in the code, and what is
+ * returned from git_config_colorbool. The &quot;auto&quot; value can be returned from
+ * config_colorbool, and will be converted by want_color() into either 0 or 1.
+ */</doc>

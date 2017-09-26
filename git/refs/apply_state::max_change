@@ -1,0 +1,16 @@
+<dec f='codebrowser/apply.h' l='88' type='int'/>
+<use f='codebrowser/apply.c' l='2256' u='r' c='show_stats'/>
+<use f='codebrowser/apply.c' l='2256' u='r' c='show_stats'/>
+<use f='codebrowser/apply.c' l='2260' u='r' c='show_stats'/>
+<use f='codebrowser/apply.c' l='2261' u='r' c='show_stats'/>
+<use f='codebrowser/apply.c' l='2261' u='r' c='show_stats'/>
+<use f='codebrowser/apply.c' l='2262' u='r' c='show_stats'/>
+<use f='codebrowser/apply.c' l='2262' u='r' c='show_stats'/>
+<use f='codebrowser/apply.c' l='4216' u='r' c='patch_stats'/>
+<use f='codebrowser/apply.c' l='4217' u='w' c='patch_stats'/>
+<offset>1856</offset>
+<doc f='codebrowser/apply.h' l='83'>/*
+	 * For &quot;diff-stat&quot; like behaviour, we keep track of the biggest change
+	 * we&apos;ve seen, and the longest filename. That allows us to do simple
+	 * scaling.
+	 */</doc>

@@ -1,0 +1,36 @@
+<dec f='codebrowser/parse-options.h' l='203' type='const char *'/>
+<offset>256</offset>
+<use f='codebrowser/builtin/update-index.c' l='1064' u='r' c='cmd_update_index'/>
+<use f='codebrowser/parse-options.c' l='26' u='r' c='get_arg'/>
+<use f='codebrowser/parse-options.c' l='27' u='r' c='get_arg'/>
+<use f='codebrowser/parse-options.c' l='28' u='w' c='get_arg'/>
+<use f='codebrowser/parse-options.c' l='88' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='92' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='136' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='146' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='160' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='171' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='187' u='r' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='210' u='r' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='211' u='w' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='211' u='r' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='211' u='r' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='222' u='r' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='227' u='r' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='229' u='r' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='230' u='w' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='230' u='r' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='230' u='r' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='281' u='w' c='parse_long_opt'/>
+<use f='codebrowser/parse-options.c' l='315' u='w' c='parse_long_opt'/>
+<use f='codebrowser/parse-options.c' l='440' u='w' c='parse_options_step'/>
+<use f='codebrowser/parse-options.c' l='459' u='w' c='parse_options_step'/>
+<use f='codebrowser/parse-options.c' l='464' u='r' c='parse_options_step'/>
+<use f='codebrowser/parse-options.c' l='466' u='r' c='parse_options_step'/>
+<use f='codebrowser/parse-options.c' l='470' u='r' c='parse_options_step'/>
+<use f='codebrowser/parse-options.c' l='472' u='r' c='parse_options_step'/>
+<use f='codebrowser/parse-options.c' l='477' u='r' c='parse_options_step'/>
+<use f='codebrowser/parse-options.c' l='485' u='r' c='parse_options_step'/>
+<use f='codebrowser/parse-options.c' l='516' u='w' c='parse_options_step'/>
+<use f='codebrowser/parse-options.c' l='549' u='r' c='parse_options'/>
+<use f='codebrowser/parse-options.c' l='550' u='r' c='parse_options'/>

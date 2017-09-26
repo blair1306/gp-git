@@ -1,0 +1,4 @@
+<dec f='codebrowser/tree.h' l='17' type='int parse_tree_buffer(struct tree * item, void * buffer, unsigned long size)'/>
+<use f='codebrowser/object.c' l='202' u='c' c='parse_object_buffer'/>
+<def f='codebrowser/tree.c' l='203' ll='212' type='int parse_tree_buffer(struct tree * item, void * buffer, unsigned long size)'/>
+<use f='codebrowser/tree.c' l='232' u='c' c='parse_tree_gently'/>

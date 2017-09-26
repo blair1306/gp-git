@@ -1,0 +1,33 @@
+<dec f='codebrowser/notes.h' l='124' type='int add_note(struct notes_tree * t, const struct object_id * object_oid, const struct object_id * note_oid, combine_notes_fn combine_notes)'/>
+<doc f='codebrowser/notes.h' l='104'>/*
+ * Add the given note object to the given notes_tree structure
+ *
+ * If there already exists a note for the given object_sha1, the given
+ * combine_notes function is invoked to break the tie. If not given (i.e.
+ * combine_notes == NULL), the default combine_notes function for the given
+ * notes_tree is used.
+ *
+ * Passing note_sha1 == null_sha1 indicates the addition of an
+ * empty/non-existent note. This is a (potentially expensive) no-op unless
+ * there already exists a note for the given object_sha1, AND combining that
+ * note with the empty note (using the given combine_notes function) results
+ * in a new/changed note.
+ *
+ * Returns zero on success; non-zero means combine_notes failed.
+ *
+ * IMPORTANT: The changes made by add_note() to the given notes_tree structure
+ * are not persistent until a subsequent call to write_notes_tree() returns
+ * zero.
+ */</doc>
+<use f='codebrowser/builtin/notes.c' l='462' u='c' c='add'/>
+<use f='codebrowser/builtin/notes.c' l='545' u='c' c='copy'/>
+<use f='codebrowser/builtin/notes.c' l='622' u='c' c='append_edit'/>
+<use f='codebrowser/notes-cache.c' l='93' u='c' c='notes_cache_put'/>
+<use f='codebrowser/notes-merge.c' l='446' u='c' c='merge_one_change'/>
+<use f='codebrowser/notes-merge.c' l='453' u='c' c='merge_one_change'/>
+<use f='codebrowser/notes-merge.c' l='461' u='c' c='merge_one_change'/>
+<use f='codebrowser/notes-merge.c' l='493' u='c' c='merge_changes'/>
+<use f='codebrowser/notes-merge.c' l='714' u='c' c='notes_merge_commit'/>
+<def f='codebrowser/notes.c' l='1090' ll='1105' type='int add_note(struct notes_tree * t, const struct object_id * object_oid, const struct object_id * note_oid, combine_notes_fn combine_notes)'/>
+<use f='codebrowser/notes.c' l='1302' u='c' c='copy_note'/>
+<use f='codebrowser/notes.c' l='1304' u='c' c='copy_note'/>

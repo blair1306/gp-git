@@ -1,0 +1,15 @@
+<dec f='codebrowser/dir.h' l='119' type='unsigned int'/>
+<offset>545</offset>
+<doc f='codebrowser/dir.h' l='118'>/* all data except &apos;dirs&apos; in this struct are good */</doc>
+<use f='codebrowser/dir.c' l='718' u='w' c='do_invalidate_gitignore'/>
+<use f='codebrowser/dir.c' l='736' u='w' c='invalidate_directory'/>
+<use f='codebrowser/dir.c' l='1163' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1696' u='r' c='valid_cached_dir'/>
+<use f='codebrowser/dir.c' l='1698' u='r' c='valid_cached_dir'/>
+<use f='codebrowser/dir.c' l='1724' u='r' c='valid_cached_dir'/>
+<use f='codebrowser/dir.c' l='1782' u='w' c='close_cached_dir'/>
+<use f='codebrowser/dir.c' l='2440' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2447' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2652' u='w' c='read_stat'/>
+<use f='codebrowser/dir.c' l='2768' u='w' c='invalidate_one_directory'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='31' u='r' c='dump'/>

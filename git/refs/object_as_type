@@ -1,0 +1,9 @@
+<dec f='codebrowser/object.h' l='85' type='void * object_as_type(struct object * obj, enum object_type type, int quiet)'/>
+<use f='codebrowser/blob.c' l='11' u='c' c='lookup_blob'/>
+<use f='codebrowser/builtin/fsck.c' l='69' u='c' c='printable_type'/>
+<use f='codebrowser/commit.c' l='29' u='c' c='lookup_commit_reference_gently'/>
+<use f='codebrowser/commit.c' l='54' u='c' c='lookup_commit'/>
+<def f='codebrowser/object.c' l='155' ll='172' type='void * object_as_type(struct object * obj, enum object_type type, int quiet)'/>
+<use f='codebrowser/refs.c' l='262' u='c' c='peel_object'/>
+<use f='codebrowser/tag.c' l='97' u='c' c='lookup_tag'/>
+<use f='codebrowser/tree.c' l='200' u='c' c='lookup_tree'/>

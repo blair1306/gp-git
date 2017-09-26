@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>test-match-trees.c source code [codebrowser/t/helper/test-match-trees.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/t/helper/test-match-trees.c'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>t</a>/<a href='./'>helper</a>/<a href='test-match-trees.c.html'>test-match-trees.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../../tree.h.html">"tree.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><em>int</em> <dfn class="decl def" id="cmd_main" title='cmd_main' data-ref="cmd_main">cmd_main</dfn>(<em>int</em> <dfn class="local col1 decl" id="1ac" title='ac' data-type='int' data-ref="1ac">ac</dfn>, <em>const</em> <em>char</em> **<dfn class="local col2 decl" id="2av" title='av' data-type='const char **' data-ref="2av">av</dfn>)</td></tr>
+<tr><th id="5">5</th><td>{</td></tr>
+<tr><th id="6">6</th><td>	<b>struct</b> <a class="type" href="../../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="local col3 decl" id="3hash1" title='hash1' data-type='struct object_id' data-ref="3hash1">hash1</dfn>, <dfn class="local col4 decl" id="4hash2" title='hash2' data-type='struct object_id' data-ref="4hash2">hash2</dfn>, <dfn class="local col5 decl" id="5shifted" title='shifted' data-type='struct object_id' data-ref="5shifted">shifted</dfn>;</td></tr>
+<tr><th id="7">7</th><td>	<b>struct</b> <a class="type" href="../../tree.h.html#tree" title='tree' data-ref="tree">tree</a> *<dfn class="local col6 decl" id="6one" title='one' data-type='struct tree *' data-ref="6one">one</dfn>, *<dfn class="local col7 decl" id="7two" title='two' data-type='struct tree *' data-ref="7two">two</dfn>;</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td>	<a class="ref" href="../../cache.h.html#setup_git_directory" title='setup_git_directory' data-ref="setup_git_directory">setup_git_directory</a>();</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td>	<b>if</b> (<a class="ref" href="../../cache.h.html#get_oid" title='get_oid' data-ref="get_oid">get_oid</a>(<a class="local col2 ref" href="#2av" title='av' data-ref="2av">av</a>[<var>1</var>], &amp;<a class="local col3 ref" href="#3hash1" title='hash1' data-ref="3hash1">hash1</a>))</td></tr>
+<tr><th id="12">12</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"cannot parse %s as an object name"</q>, <a class="local col2 ref" href="#2av" title='av' data-ref="2av">av</a>[<var>1</var>]);</td></tr>
+<tr><th id="13">13</th><td>	<b>if</b> (<a class="ref" href="../../cache.h.html#get_oid" title='get_oid' data-ref="get_oid">get_oid</a>(<a class="local col2 ref" href="#2av" title='av' data-ref="2av">av</a>[<var>2</var>], &amp;<a class="local col4 ref" href="#4hash2" title='hash2' data-ref="4hash2">hash2</a>))</td></tr>
+<tr><th id="14">14</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"cannot parse %s as an object name"</q>, <a class="local col2 ref" href="#2av" title='av' data-ref="2av">av</a>[<var>2</var>]);</td></tr>
+<tr><th id="15">15</th><td>	<a class="local col6 ref" href="#6one" title='one' data-ref="6one">one</a> = <a class="ref" href="../../tree.h.html#parse_tree_indirect" title='parse_tree_indirect' data-ref="parse_tree_indirect">parse_tree_indirect</a>(&amp;<a class="local col3 ref" href="#3hash1" title='hash1' data-ref="3hash1">hash1</a>);</td></tr>
+<tr><th id="16">16</th><td>	<b>if</b> (!<a class="local col6 ref" href="#6one" title='one' data-ref="6one">one</a>)</td></tr>
+<tr><th id="17">17</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"not a tree-ish %s"</q>, <a class="local col2 ref" href="#2av" title='av' data-ref="2av">av</a>[<var>1</var>]);</td></tr>
+<tr><th id="18">18</th><td>	<a class="local col7 ref" href="#7two" title='two' data-ref="7two">two</a> = <a class="ref" href="../../tree.h.html#parse_tree_indirect" title='parse_tree_indirect' data-ref="parse_tree_indirect">parse_tree_indirect</a>(&amp;<a class="local col4 ref" href="#4hash2" title='hash2' data-ref="4hash2">hash2</a>);</td></tr>
+<tr><th id="19">19</th><td>	<b>if</b> (!<a class="local col7 ref" href="#7two" title='two' data-ref="7two">two</a>)</td></tr>
+<tr><th id="20">20</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"not a tree-ish %s"</q>, <a class="local col2 ref" href="#2av" title='av' data-ref="2av">av</a>[<var>2</var>]);</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td>	<a class="ref" href="../../cache.h.html#shift_tree" title='shift_tree' data-ref="shift_tree">shift_tree</a>(&amp;<a class="local col6 ref" href="#6one" title='one' data-ref="6one">one</a>-&gt;<a class="ref" href="../../tree.h.html#tree::object" title='tree::object' data-ref="tree::object">object</a>.<a class="ref" href="../../object.h.html#object::oid" title='object::oid' data-ref="object::oid">oid</a>, &amp;<a class="local col7 ref" href="#7two" title='two' data-ref="7two">two</a>-&gt;<a class="ref" href="../../tree.h.html#tree::object" title='tree::object' data-ref="tree::object">object</a>.<a class="ref" href="../../object.h.html#object::oid" title='object::oid' data-ref="object::oid">oid</a>, &amp;<a class="local col5 ref" href="#5shifted" title='shifted' data-ref="5shifted">shifted</a>, -<var>1</var>);</td></tr>
+<tr><th id="23">23</th><td>	<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"shifted: %s\n"</q>, <a class="ref" href="../../cache.h.html#oid_to_hex" title='oid_to_hex' data-ref="oid_to_hex">oid_to_hex</a>(&amp;<a class="local col5 ref" href="#5shifted" title='shifted' data-ref="5shifted">shifted</a>));</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td>	<a class="ref" href="../../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>0</var>);</td></tr>
+<tr><th id="26">26</th><td>}</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

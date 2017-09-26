@@ -1,0 +1,2 @@
+<dec f='include/openssl/ssl.h' l='2216' type='void SSL_load_error_strings()'/>
+<use f='codebrowser/imap-send.c' l='289' u='c' c='ssl_socket_connect'/>

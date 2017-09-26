@@ -1,0 +1,5 @@
+<dec f='codebrowser/connect.c' l='259' type='4'/>
+<use f='codebrowser/connect.c' l='278' c='prot_name'/>
+<use f='codebrowser/connect.c' l='290' u='r' c='get_protocol'/>
+<use f='codebrowser/connect.c' l='671' u='r' c='parse_connect_url'/>
+<use f='codebrowser/connect.c' l='795' u='r' c='git_connect'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/fetch-pack.h' l='39' type='struct ref * fetch_pack(struct fetch_pack_args * args, int * fd, struct child_process * conn, const struct ref * ref, const char * dest, struct ref ** sought, int nr_sought, struct oid_array * shallow, char ** pack_lockfile)'/>
+<doc f='codebrowser/fetch-pack.h' l='34'>/*
+ * sought represents remote references that should be updated from.
+ * On return, the names that were found on the remote will have been
+ * marked as such.
+ */</doc>
+<use f='codebrowser/builtin/fetch-pack.c' l='198' u='c' c='cmd_fetch_pack'/>
+<def f='codebrowser/fetch-pack.c' l='1148' ll='1174' type='struct ref * fetch_pack(struct fetch_pack_args * args, int * fd, struct child_process * conn, const struct ref * ref, const char * dest, struct ref ** sought, int nr_sought, struct oid_array * shallow, char ** pack_lockfile)'/>
+<use f='codebrowser/transport.c' l='240' u='c' c='fetch_refs_via_pack'/>

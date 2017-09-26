@@ -1,0 +1,29 @@
+<dec f='codebrowser/grep.h' l='115' type='struct (anonymous struct at /home/jon/workspace/git/grep.h:112:3)'/>
+<offset>0</offset>
+<use f='codebrowser/grep.c' l='748' u='m' c='compile_pattern_and'/>
+<use f='codebrowser/grep.c' l='749' u='m' c='compile_pattern_and'/>
+<use f='codebrowser/grep.c' l='768' u='m' c='compile_pattern_or'/>
+<use f='codebrowser/grep.c' l='769' u='m' c='compile_pattern_or'/>
+<use f='codebrowser/grep.c' l='836' u='m' c='dump_grep_expression_1'/>
+<use f='codebrowser/grep.c' l='837' u='m' c='dump_grep_expression_1'/>
+<use f='codebrowser/grep.c' l='843' u='m' c='dump_grep_expression_1'/>
+<use f='codebrowser/grep.c' l='844' u='m' c='dump_grep_expression_1'/>
+<use f='codebrowser/grep.c' l='872' u='m' c='grep_or_expr'/>
+<use f='codebrowser/grep.c' l='873' u='m' c='grep_or_expr'/>
+<use f='codebrowser/grep.c' l='931' u='m' c='grep_splice_or'/>
+<use f='codebrowser/grep.c' l='932' u='m' c='grep_splice_or'/>
+<use f='codebrowser/grep.c' l='933' u='m' c='grep_splice_or'/>
+<use f='codebrowser/grep.c' l='936' u='m' c='grep_splice_or'/>
+<use f='codebrowser/grep.c' l='1002' u='m' c='free_pattern_expr'/>
+<use f='codebrowser/grep.c' l='1003' u='m' c='free_pattern_expr'/>
+<use f='codebrowser/grep.c' l='1241' u='m' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1243' u='m' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1247' u='m' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1249' u='m' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1251' u='m' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1252' u='m' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1253' u='m' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1862' u='m' c='clr_hit_marker'/>
+<use f='codebrowser/grep.c' l='1863' u='m' c='clr_hit_marker'/>
+<use f='codebrowser/grep.c' l='1873' u='m' c='chk_hit_marker'/>
+<use f='codebrowser/grep.c' l='1875' u='m' c='chk_hit_marker'/>

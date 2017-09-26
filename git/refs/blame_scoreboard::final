@@ -1,0 +1,14 @@
+<dec f='codebrowser/blame.h' l='102' type='struct commit *'/>
+<use f='codebrowser/blame.c' l='1760' u='w' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1763' u='w' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1767' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1773' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1780' u='w' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1782' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1804' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1814' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1818' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1819' u='r' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1824' u='r' c='setup_scoreboard'/>
+<offset>0</offset>
+<doc f='codebrowser/blame.h' l='101'>/* the final commit (i.e. where we started digging from) */</doc>

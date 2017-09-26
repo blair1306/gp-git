@@ -1,0 +1,6 @@
+<def f='codebrowser/line-log.h' l='16' ll='19'/>
+<size>16</size>
+<doc f='codebrowser/line-log.h' l='15'>/* A set of ranges.  The ranges must always be disjoint and sorted. */</doc>
+<mbr r='range_set::alloc' o='0' t='int'/>
+<mbr r='range_set::nr' o='32' t='int'/>
+<mbr r='range_set::ranges' o='64' t='struct range *'/>

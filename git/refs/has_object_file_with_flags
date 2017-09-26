@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='1239' type='int has_object_file_with_flags(const struct object_id * oid, int flags)'/>
+<use f='codebrowser/builtin/fetch.c' l='263' u='c' c='find_non_local_tags'/>
+<def f='codebrowser/sha1_file.c' l='3475' ll='3478' type='int has_object_file_with_flags(const struct object_id * oid, int flags)'/>

@@ -1,0 +1,247 @@
+<dec f='codebrowser/parse-options.h' l='13' type='6'/>
+<use f='codebrowser/apply.c' l='4971' macro='1' u='r'/>
+<use f='codebrowser/apply.c' l='4971' macro='1' u='r'/>
+<use f='codebrowser/apply.c' l='4971' macro='1' u='r'/>
+<use f='codebrowser/apply.c' l='4971' macro='1' u='r'/>
+<use f='codebrowser/archive.c' l='425' macro='1' u='r'/>
+<use f='codebrowser/archive.c' l='425' macro='1' u='r'/>
+<use f='codebrowser/archive.c' l='425' macro='1' u='r'/>
+<use f='codebrowser/archive.c' l='425' macro='1' u='r'/>
+<use f='codebrowser/builtin/add.c' l='270' macro='1'/>
+<use f='codebrowser/builtin/add.c' l='270' macro='1'/>
+<use f='codebrowser/builtin/add.c' l='275' macro='1'/>
+<use f='codebrowser/builtin/add.c' l='275' macro='1'/>
+<use f='codebrowser/builtin/add.c' l='270' macro='1'/>
+<use f='codebrowser/builtin/add.c' l='270' macro='1'/>
+<use f='codebrowser/builtin/add.c' l='275' macro='1'/>
+<use f='codebrowser/builtin/add.c' l='275' macro='1'/>
+<use f='codebrowser/builtin/am.c' l='2213' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2213' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2213' macro='1' u='r'/>
+<use f='codebrowser/builtin/am.c' l='2213' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='559' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='559' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='561' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='561' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='588' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='588' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='559' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='559' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='561' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='561' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='588' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='588' macro='1' u='r'/>
+<use f='codebrowser/builtin/check-ignore.c' l='20' macro='1'/>
+<use f='codebrowser/builtin/check-ignore.c' l='20' macro='1'/>
+<use f='codebrowser/builtin/check-ignore.c' l='21' macro='1'/>
+<use f='codebrowser/builtin/check-ignore.c' l='21' macro='1'/>
+<use f='codebrowser/builtin/check-ignore.c' l='20' macro='1'/>
+<use f='codebrowser/builtin/check-ignore.c' l='20' macro='1'/>
+<use f='codebrowser/builtin/check-ignore.c' l='21' macro='1'/>
+<use f='codebrowser/builtin/check-ignore.c' l='21' macro='1'/>
+<use f='codebrowser/builtin/checkout-index.c' l='162' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout-index.c' l='162' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout-index.c' l='163' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout-index.c' l='163' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout-index.c' l='162' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout-index.c' l='162' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout-index.c' l='163' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout-index.c' l='163' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout.c' l='1146' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout.c' l='1146' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout.c' l='1160' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout.c' l='1160' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout.c' l='1146' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout.c' l='1146' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout.c' l='1160' macro='1' u='r'/>
+<use f='codebrowser/builtin/checkout.c' l='1160' macro='1' u='r'/>
+<use f='codebrowser/builtin/clean.c' l='906' macro='1' u='r'/>
+<use f='codebrowser/builtin/clean.c' l='906' macro='1' u='r'/>
+<use f='codebrowser/builtin/clean.c' l='908' macro='1' u='r'/>
+<use f='codebrowser/builtin/clean.c' l='908' macro='1' u='r'/>
+<use f='codebrowser/builtin/clean.c' l='906' macro='1' u='r'/>
+<use f='codebrowser/builtin/clean.c' l='906' macro='1' u='r'/>
+<use f='codebrowser/builtin/clean.c' l='908' macro='1' u='r'/>
+<use f='codebrowser/builtin/clean.c' l='908' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1343' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1343' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1343' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1343' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1590' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1590' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1591' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1591' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1590' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1590' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1591' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1591' macro='1' u='r'/>
+<use f='codebrowser/builtin/count-objects.c' l='95' macro='1' u='r'/>
+<use f='codebrowser/builtin/count-objects.c' l='95' macro='1' u='r'/>
+<use f='codebrowser/builtin/count-objects.c' l='95' macro='1' u='r'/>
+<use f='codebrowser/builtin/count-objects.c' l='95' macro='1' u='r'/>
+<use f='codebrowser/builtin/fetch.c' l='116' macro='1'/>
+<use f='codebrowser/builtin/fetch.c' l='116' macro='1'/>
+<use f='codebrowser/builtin/fetch.c' l='116' macro='1'/>
+<use f='codebrowser/builtin/fetch.c' l='116' macro='1'/>
+<use f='codebrowser/builtin/fsck.c' l='644' macro='1'/>
+<use f='codebrowser/builtin/fsck.c' l='644' macro='1'/>
+<use f='codebrowser/builtin/fsck.c' l='644' macro='1'/>
+<use f='codebrowser/builtin/fsck.c' l='644' macro='1'/>
+<use f='codebrowser/builtin/gc.c' l='357' macro='1' u='r'/>
+<use f='codebrowser/builtin/gc.c' l='357' macro='1' u='r'/>
+<use f='codebrowser/builtin/gc.c' l='357' macro='1' u='r'/>
+<use f='codebrowser/builtin/gc.c' l='357' macro='1' u='r'/>
+<use f='codebrowser/builtin/grep.c' l='875' macro='1' u='r'/>
+<use f='codebrowser/builtin/grep.c' l='875' macro='1' u='r'/>
+<use f='codebrowser/builtin/grep.c' l='875' macro='1' u='r'/>
+<use f='codebrowser/builtin/grep.c' l='875' macro='1' u='r'/>
+<use f='codebrowser/builtin/hash-object.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/builtin/hash-object.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/builtin/hash-object.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/builtin/hash-object.c' l='98' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='148' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='148' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='148' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='148' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='1498' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='1498' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='1498' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='1498' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='1890' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='1890' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='1890' macro='1' u='r'/>
+<use f='codebrowser/builtin/log.c' l='1890' macro='1' u='r'/>
+<use f='codebrowser/builtin/ls-remote.c' l='52' macro='1' u='r'/>
+<use f='codebrowser/builtin/ls-remote.c' l='52' macro='1' u='r'/>
+<use f='codebrowser/builtin/ls-remote.c' l='52' macro='1' u='r'/>
+<use f='codebrowser/builtin/ls-remote.c' l='52' macro='1' u='r'/>
+<use f='codebrowser/builtin/merge-file.c' l='43' macro='1' u='r'/>
+<use f='codebrowser/builtin/merge-file.c' l='43' macro='1' u='r'/>
+<use f='codebrowser/builtin/merge-file.c' l='43' macro='1' u='r'/>
+<use f='codebrowser/builtin/merge-file.c' l='43' macro='1' u='r'/>
+<use f='codebrowser/builtin/mv.c' l='123' macro='1' u='r'/>
+<use f='codebrowser/builtin/mv.c' l='123' macro='1' u='r'/>
+<use f='codebrowser/builtin/mv.c' l='125' macro='1' u='r'/>
+<use f='codebrowser/builtin/mv.c' l='125' macro='1' u='r'/>
+<use f='codebrowser/builtin/mv.c' l='123' macro='1' u='r'/>
+<use f='codebrowser/builtin/mv.c' l='123' macro='1' u='r'/>
+<use f='codebrowser/builtin/mv.c' l='125' macro='1' u='r'/>
+<use f='codebrowser/builtin/mv.c' l='125' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='415' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='415' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='415' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='415' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='486' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='486' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='486' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='486' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='943' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='943' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='943' macro='1' u='r'/>
+<use f='codebrowser/builtin/notes.c' l='943' macro='1' u='r'/>
+<use f='codebrowser/builtin/prune.c' l='106' macro='1' u='r'/>
+<use f='codebrowser/builtin/prune.c' l='106' macro='1' u='r'/>
+<use f='codebrowser/builtin/prune.c' l='106' macro='1' u='r'/>
+<use f='codebrowser/builtin/prune.c' l='106' macro='1' u='r'/>
+<use f='codebrowser/builtin/pull.c' l='190' macro='1'/>
+<use f='codebrowser/builtin/pull.c' l='190' macro='1'/>
+<use f='codebrowser/builtin/pull.c' l='190' macro='1'/>
+<use f='codebrowser/builtin/pull.c' l='190' macro='1'/>
+<use f='codebrowser/builtin/read-tree.c' l='125' macro='1' u='r'/>
+<use f='codebrowser/builtin/read-tree.c' l='125' macro='1' u='r'/>
+<use f='codebrowser/builtin/read-tree.c' l='125' macro='1' u='r'/>
+<use f='codebrowser/builtin/read-tree.c' l='125' macro='1' u='r'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1933' macro='1' u='r'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1933' macro='1' u='r'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1933' macro='1' u='r'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1933' macro='1' u='r'/>
+<use f='codebrowser/builtin/remote.c' l='1597' macro='1' u='r'/>
+<use f='codebrowser/builtin/remote.c' l='1597' macro='1' u='r'/>
+<use f='codebrowser/builtin/remote.c' l='1597' macro='1' u='r'/>
+<use f='codebrowser/builtin/remote.c' l='1597' macro='1' u='r'/>
+<use f='codebrowser/builtin/repack.c' l='180' macro='1' u='r'/>
+<use f='codebrowser/builtin/repack.c' l='180' macro='1' u='r'/>
+<use f='codebrowser/builtin/repack.c' l='180' macro='1' u='r'/>
+<use f='codebrowser/builtin/repack.c' l='180' macro='1' u='r'/>
+<use f='codebrowser/builtin/reset.c' l='286' macro='1' u='r'/>
+<use f='codebrowser/builtin/reset.c' l='286' macro='1' u='r'/>
+<use f='codebrowser/builtin/reset.c' l='286' macro='1' u='r'/>
+<use f='codebrowser/builtin/reset.c' l='286' macro='1' u='r'/>
+<use f='codebrowser/builtin/rm.c' l='243' macro='1'/>
+<use f='codebrowser/builtin/rm.c' l='243' macro='1'/>
+<use f='codebrowser/builtin/rm.c' l='245' macro='1'/>
+<use f='codebrowser/builtin/rm.c' l='245' macro='1'/>
+<use f='codebrowser/builtin/rm.c' l='243' macro='1'/>
+<use f='codebrowser/builtin/rm.c' l='243' macro='1'/>
+<use f='codebrowser/builtin/rm.c' l='245' macro='1'/>
+<use f='codebrowser/builtin/rm.c' l='245' macro='1'/>
+<use f='codebrowser/builtin/show-ref.c' l='173' macro='1'/>
+<use f='codebrowser/builtin/show-ref.c' l='173' macro='1'/>
+<use f='codebrowser/builtin/show-ref.c' l='173' macro='1'/>
+<use f='codebrowser/builtin/show-ref.c' l='173' macro='1'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='443' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='443' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='443' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='443' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='646' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='646' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='646' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='646' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1000' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1000' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1000' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1000' macro='1' u='r'/>
+<use f='codebrowser/builtin/symbolic-ref.c' l='40' macro='1' u='r'/>
+<use f='codebrowser/builtin/symbolic-ref.c' l='40' macro='1' u='r'/>
+<use f='codebrowser/builtin/symbolic-ref.c' l='40' macro='1' u='r'/>
+<use f='codebrowser/builtin/symbolic-ref.c' l='40' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='394' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='394' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='394' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='394' macro='1' u='r'/>
+<use f='codebrowser/builtin/update-server-info.c' l='15' macro='1' u='r'/>
+<use f='codebrowser/builtin/update-server-info.c' l='15' macro='1' u='r'/>
+<use f='codebrowser/builtin/update-server-info.c' l='15' macro='1' u='r'/>
+<use f='codebrowser/builtin/update-server-info.c' l='15' macro='1' u='r'/>
+<use f='codebrowser/builtin/verify-commit.c' l='73' macro='1' u='r'/>
+<use f='codebrowser/builtin/verify-commit.c' l='73' macro='1' u='r'/>
+<use f='codebrowser/builtin/verify-commit.c' l='73' macro='1' u='r'/>
+<use f='codebrowser/builtin/verify-commit.c' l='73' macro='1' u='r'/>
+<use f='codebrowser/builtin/verify-tag.c' l='37' macro='1' u='r'/>
+<use f='codebrowser/builtin/verify-tag.c' l='37' macro='1' u='r'/>
+<use f='codebrowser/builtin/verify-tag.c' l='37' macro='1' u='r'/>
+<use f='codebrowser/builtin/verify-tag.c' l='37' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='129' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='129' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='129' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='129' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='327' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='327' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='327' macro='1' u='r'/>
+<use f='codebrowser/builtin/worktree.c' l='327' macro='1' u='r'/>
+<use f='codebrowser/parse-options.c' l='113' c='get_value'/>
+<use f='codebrowser/parse-options.c' l='392' c='parse_options_check'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='110' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='110' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='134' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='134' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='136' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='136' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='138' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='138' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='142' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='142' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='144' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='144' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='110' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='110' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='134' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='134' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='136' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='136' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='138' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='138' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='142' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='142' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='144' macro='1' u='r'/>
+<use f='codebrowser/t/helper/test-parse-options.c' l='144' macro='1' u='r'/>

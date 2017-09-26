@@ -1,0 +1,4 @@
+<dec f='codebrowser/urlmatch.h' l='17' type='size_t'/>
+<offset>384</offset>
+<doc f='codebrowser/urlmatch.h' l='17'>/* offset into url to start of passwd (0 =&gt; none) */</doc>
+<use f='codebrowser/urlmatch.c' l='421' u='w' c='url_normalize_1'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/tree-walk.h' l='45' type='void * fill_tree_descriptor(struct tree_desc * desc, const struct object_id * oid)'/>
+<use f='codebrowser/builtin/merge-tree.c' l='217' u='c' c='unresolved_directory'/>
+<use f='codebrowser/builtin/merge-tree.c' l='218' u='c' c='unresolved_directory'/>
+<use f='codebrowser/builtin/merge-tree.c' l='219' u='c' c='unresolved_directory'/>
+<use f='codebrowser/builtin/merge-tree.c' l='355' u='c' c='get_tree_descriptor'/>
+<use f='codebrowser/builtin/reset.c' l='78' u='c' c='reset_index'/>
+<use f='codebrowser/builtin/reset.c' l='84' u='c' c='reset_index'/>
+<use f='codebrowser/notes.c' l='428' u='c' c='load_subtree'/>
+<use f='codebrowser/tree-diff.c' l='424' u='c' c='ll_diff_tree_paths'/>
+<use f='codebrowser/tree-diff.c' l='425' u='c' c='ll_diff_tree_paths'/>
+<def f='codebrowser/tree-walk.c' l='81' ll='94' type='void * fill_tree_descriptor(struct tree_desc * desc, const struct object_id * oid)'/>
+<use f='codebrowser/unpack-trees.c' l='667' u='c' c='traverse_trees_recursive'/>

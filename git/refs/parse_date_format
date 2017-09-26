@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1441' type='void parse_date_format(const char * format, struct date_mode * mode)'/>
+<use f='codebrowser/builtin/blame.c' l='607' u='c' c='git_blame_config'/>
+<use f='codebrowser/builtin/log.c' l='136' u='c' c='cmd_log_init_defaults'/>
+<def f='codebrowser/date.c' l='832' ll='852' type='void parse_date_format(const char * format, struct date_mode * mode)'/>
+<use f='codebrowser/ref-filter.c' l='881' u='c' c='grab_date'/>
+<use f='codebrowser/revision.c' l='1994' u='c' c='handle_revision_opt'/>
+<use f='codebrowser/t/helper/test-date.c' l='27' u='c' c='show_dates'/>

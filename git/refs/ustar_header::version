@@ -1,0 +1,4 @@
+<dec f='codebrowser/tar.h' l='19' type='char [2]'/>
+<use f='codebrowser/archive-tar.c' l='215' u='r' c='prepare_header'/>
+<offset>2104</offset>
+<doc f='codebrowser/tar.h' l='19'>/* 263 */</doc>

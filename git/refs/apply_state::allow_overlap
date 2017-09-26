@@ -1,0 +1,8 @@
+<dec f='codebrowser/apply.h' l='56' type='int'/>
+<use f='codebrowser/apply.c' l='2814' u='r' c='update_image'/>
+<use f='codebrowser/apply.c' l='4969' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4969' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4969' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4969' u='a' c='apply_parse_options'/>
+<offset>416</offset>
+<doc f='codebrowser/apply.h' l='55'>/* These boolean parameters control how the apply is done */</doc>

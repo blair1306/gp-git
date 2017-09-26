@@ -1,0 +1,4 @@
+<dec f='codebrowser/http.h' l='121' type='1'/>
+<use f='codebrowser/http-walker.c' l='171' u='r' c='is_alternate_allowed'/>
+<use f='codebrowser/http.c' l='389' u='r' c='http_options'/>
+<use f='codebrowser/http.c' l='1120' u='r' c='get_active_slot'/>

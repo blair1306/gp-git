@@ -1,0 +1,20 @@
+<dec f='include/unistd.h' l='838' type='int rmdir(const char * __path)'/>
+<doc f='include/unistd.h' l='837'>/* Remove the directory PATH.  */</doc>
+<use f='codebrowser/apply.c' l='4384' u='c' c='create_one_file'/>
+<use f='codebrowser/builtin/clean.c' l='176' u='c' c='remove_dirs'/>
+<use f='codebrowser/builtin/clean.c' l='234' u='c' c='remove_dirs'/>
+<use f='codebrowser/builtin/prune-packed.c' l='18' u='c' c='prune_subdir'/>
+<use f='codebrowser/builtin/prune.c' l='74' u='c' c='prune_subdir'/>
+<use f='codebrowser/builtin/update-index.c' l='110' u='c' c='xrmdir'/>
+<use f='codebrowser/builtin/update-index.c' l='216' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/worktree.c' l='120' u='c' c='prune_worktrees'/>
+<use f='codebrowser/dir.c' l='2267' u='c' c='remove_dir_recurse'/>
+<use f='codebrowser/dir.c' l='2305' u='c' c='remove_dir_recurse'/>
+<use f='codebrowser/dir.c' l='2355' u='c' c='remove_path'/>
+<use f='codebrowser/entry.c' l='73' u='c' c='remove_subtree'/>
+<use f='codebrowser/refs/files-backend.c' l='1021' u='c' c='try_remove_empty_parents'/>
+<use f='codebrowser/refs/files-backend.c' l='1026' u='c' c='try_remove_empty_parents'/>
+<use f='codebrowser/rerere.c' l='1225' u='c' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1248' u='c' c='rerere_clear'/>
+<use f='codebrowser/symlinks.c' l='281' u='c' c='do_remove_scheduled_dirs'/>
+<use f='codebrowser/wrapper.c' l='598' u='c' c='rmdir_or_warn'/>

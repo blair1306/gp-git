@@ -1,0 +1,5 @@
+<dec f='codebrowser/notes-cache.h' l='8' type='char *'/>
+<offset>448</offset>
+<use f='codebrowser/notes-cache.c' l='38' u='w' c='notes_cache_init'/>
+<use f='codebrowser/notes-cache.c' l='59' u='r' c='notes_cache_write'/>
+<use f='codebrowser/notes-cache.c' l='59' u='r' c='notes_cache_write'/>

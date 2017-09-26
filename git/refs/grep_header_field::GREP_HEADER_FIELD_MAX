@@ -1,0 +1,6 @@
+<dec f='codebrowser/grep.h' l='61' type='3'/>
+<doc f='codebrowser/grep.h' l='60'>/* Must be at the end of the enum */</doc>
+<use f='codebrowser/grep.c' l='881' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='891' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='896' u='r' c='prep_header_patterns'/>
+<use f='codebrowser/grep.c' l='915' u='r' c='prep_header_patterns'/>

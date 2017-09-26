@@ -1,0 +1,13 @@
+<dec f='codebrowser/builtin.h' l='126' type='void setup_auto_pager(const char * cmd, int def)'/>
+<doc f='codebrowser/builtin.h' l='116'>/**
+ * If a built-in has DELAY_PAGER_CONFIG set, the built-in should call this early
+ * when it wishes to respect the `pager.foo`-config. The `cmd` is the name of
+ * the built-in, e.g., &quot;foo&quot;. If a paging-choice has already been setup, this
+ * does nothing. The default in `def` should be 0 for &quot;pager off&quot;, 1 for &quot;pager
+ * on&quot; or -1 for &quot;punt&quot;.
+ *
+ * You should most likely use a default of 0 or 1. &quot;Punt&quot; (-1) could be useful
+ * to be able to fall back to some historical compatibility name.
+ */</doc>
+<use f='codebrowser/builtin/tag.c' l='444' u='c' c='cmd_tag'/>
+<def f='codebrowser/git.c' l='36' ll='44' type='void setup_auto_pager(const char * cmd, int def)'/>

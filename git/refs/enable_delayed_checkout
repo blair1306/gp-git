@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1505' type='void enable_delayed_checkout(struct checkout * state)'/>
+<use f='codebrowser/builtin/checkout.c' l='362' u='c' c='checkout_paths'/>
+<def f='codebrowser/entry.c' l='140' ll='148' type='void enable_delayed_checkout(struct checkout * state)'/>
+<use f='codebrowser/unpack-trees.c' l='382' u='c' c='check_updates'/>

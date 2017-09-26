@@ -1,0 +1,6 @@
+<def f='codebrowser/refs/ref-cache.c' l='412' ll='441'/>
+<size>64</size>
+<doc f='codebrowser/refs/ref-cache.c' l='408'>/*
+ * Represent an iteration through a ref_dir in the memory cache. The
+ * iteration recurses through subdirectories.
+ */</doc>

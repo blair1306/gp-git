@@ -1,0 +1,10 @@
+<dec f='codebrowser/submodule.h' l='138' type='void absorb_git_dir_into_superproject(const char * prefix, const char * path, unsigned int flags)'/>
+<use f='codebrowser/builtin/rm.c' l='85' u='c' c='submodules_absorb_gitdir_if_needed'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1223' u='c' c='absorb_git_dirs'/>
+<use f='codebrowser/submodule.c' l='1581' u='c' c='submodule_move_head'/>
+<def f='codebrowser/submodule.c' l='1869' ll='1941' type='void absorb_git_dir_into_superproject(const char * prefix, const char * path, unsigned int flags)'/>
+<doc f='codebrowser/submodule.c' l='1864'>/*
+ * Migrate the git directory of the submodule given by path from
+ * having its git directory within the working tree to the git dir nested
+ * in its superprojects git dir under modules/.
+ */</doc>

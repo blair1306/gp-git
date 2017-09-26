@@ -1,0 +1,6 @@
+<dec f='codebrowser/git-compat-util.h' l='1088'/>
+<use f='codebrowser/git-compat-util.h' l='1091' u='a'/>
+<use f='codebrowser/trace.h' l='23' u='a'/>
+<use f='codebrowser/trace.c' l='118' u='a'/>
+<use f='codebrowser/trace.c' l='213' u='a'/>
+<use f='codebrowser/usage.c' l='227' u='a'/>

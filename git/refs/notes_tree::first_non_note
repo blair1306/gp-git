@@ -1,0 +1,15 @@
+<dec f='codebrowser/notes.h' l='45' type='struct non_note *'/>
+<offset>64</offset>
+<use f='codebrowser/notes.c' l='382' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='383' u='w' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='389' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='390' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='393' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='394' u='w' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='1020' u='w' c='init_notes'/>
+<use f='codebrowser/notes.c' l='1159' u='r' c='write_notes_tree'/>
+<use f='codebrowser/notes.c' l='1198' u='r' c='free_notes'/>
+<use f='codebrowser/notes.c' l='1199' u='r' c='free_notes'/>
+<use f='codebrowser/notes.c' l='1200' u='r' c='free_notes'/>
+<use f='codebrowser/notes.c' l='1201' u='r' c='free_notes'/>
+<use f='codebrowser/notes.c' l='1202' u='w' c='free_notes'/>

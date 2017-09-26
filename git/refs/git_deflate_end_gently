@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='63' type='int git_deflate_end_gently(git_zstream * )'/>
+<use f='codebrowser/remote-curl.c' l='647' u='c' c='post_rpc'/>
+<use f='codebrowser/sha1_file.c' l='3353' u='c' c='write_loose_object'/>
+<def f='codebrowser/zlib.c' l='226' ll='234' type='int git_deflate_end_gently(git_zstream * strm)'/>

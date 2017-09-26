@@ -1,0 +1,22 @@
+<dec f='codebrowser/cache.h' l='1311' type='int get_oid_committish(const char * str, struct object_id * oid)'/>
+<use f='codebrowser/builtin/reset.c' l='222' u='c' c='parse_args'/>
+<use f='codebrowser/builtin/reset.c' l='319' u='c' c='cmd_reset'/>
+<use f='codebrowser/builtin/rev-parse.c' l='277' u='c' c='try_difference'/>
+<use f='codebrowser/builtin/rev-parse.c' l='277' u='c' c='try_difference'/>
+<use f='codebrowser/builtin/rev-parse.c' l='331' u='c' c='try_parent_shorthands'/>
+<use f='codebrowser/commit.c' l='62' u='c' c='lookup_commit_reference_by_name'/>
+<use f='codebrowser/revision.c' l='1305' u='c' c='add_parents_only'/>
+<use f='codebrowser/sequencer.c' l='2288' u='c' c='sequencer_continue'/>
+<use f='codebrowser/sha1_name.c' l='1143' u='c' c='get_oid_mb'/>
+<use f='codebrowser/sha1_name.c' l='1152' u='c' c='get_oid_mb'/>
+<def f='codebrowser/sha1_name.c' l='1361' ll='1366' type='int get_oid_committish(const char * name, struct object_id * oid)'/>
+<doc f='codebrowser/sha1_name.c' l='1351'>/*
+ * Many callers know that the user meant to name a commit-ish by
+ * syntactical positions where the object name appears.  Calling this
+ * function allows the machinery to disambiguate shorter-than-unique
+ * abbreviated object names between commit-ish and others.
+ *
+ * Note that this does NOT error out when the named object is not a
+ * commit-ish. It is merely to give a hint to the disambiguation
+ * machinery.
+ */</doc>

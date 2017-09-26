@@ -1,0 +1,105 @@
+<dec f='codebrowser/notes.c' l='53' type='char *'/>
+<use f='codebrowser/notes.c' l='367' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='367' u='r' c='non_note_cmp'/>
+<use f='codebrowser/notes.c' l='377' u='w' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='403' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='747' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='747' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='751' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='1200' u='r' c='free_notes'/>
+<offset>64</offset>

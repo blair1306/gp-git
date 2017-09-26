@@ -1,0 +1,14 @@
+<dec f='codebrowser/split-index.h' l='9' type='unsigned char [20]'/>
+<use f='codebrowser/builtin/rev-parse.c' l='875' u='r' c='cmd_rev_parse'/>
+<offset>0</offset>
+<use f='codebrowser/read-cache.c' l='1847' u='r' c='read_index_from'/>
+<use f='codebrowser/read-cache.c' l='1857' u='r' c='read_index_from'/>
+<use f='codebrowser/read-cache.c' l='1860' u='r' c='read_index_from'/>
+<use f='codebrowser/read-cache.c' l='2424' u='r' c='write_shared_index'/>
+<use f='codebrowser/read-cache.c' l='2444' u='r' c='write_shared_index'/>
+<use f='codebrowser/read-cache.c' l='2490' u='r' c='write_locked_index'/>
+<use f='codebrowser/read-cache.c' l='2495' u='r' c='write_locked_index'/>
+<use f='codebrowser/read-cache.c' l='2514' u='r' c='write_locked_index'/>
+<use f='codebrowser/split-index.c' l='24' u='r' c='read_link_extension'/>
+<use f='codebrowser/split-index.c' l='48' u='r' c='write_link_extension'/>
+<use f='codebrowser/t/helper/test-dump-split-index.c' l='22' u='r' c='cmd_main'/>

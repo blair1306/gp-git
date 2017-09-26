@@ -1,0 +1,5 @@
+<dec f='codebrowser/revision.h' l='104' type='unsigned int'/>
+<offset>945</offset>
+<use f='codebrowser/list-objects.c' l='158' u='r' c='mark_edges_uninteresting'/>
+<use f='codebrowser/list-objects.c' l='166' u='r' c='mark_edges_uninteresting'/>
+<use f='codebrowser/revision.c' l='1862' u='w' c='handle_revision_opt'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/dir.h' l='116' type='unsigned int'/>
+<offset>512</offset>
+<use f='codebrowser/dir.c' l='719' u='w' c='do_invalidate_gitignore'/>
+<use f='codebrowser/dir.c' l='737' u='w' c='invalidate_directory'/>
+<use f='codebrowser/dir.c' l='1675' u='r' c='add_untracked'/>
+<use f='codebrowser/dir.c' l='1675' u='r' c='add_untracked'/>
+<use f='codebrowser/dir.c' l='1675' u='r' c='add_untracked'/>
+<use f='codebrowser/dir.c' l='1677' u='w' c='add_untracked'/>
+<use f='codebrowser/dir.c' l='1765' u='r' c='read_cached_dir'/>
+<use f='codebrowser/dir.c' l='2441' u='w' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2457' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2469' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2540' u='r' c='free_untracked'/>
+<use f='codebrowser/dir.c' l='2594' u='w' c='read_one_dir'/>
+<use f='codebrowser/dir.c' l='2595' u='r' c='read_one_dir'/>
+<use f='codebrowser/dir.c' l='2596' u='r' c='read_one_dir'/>
+<use f='codebrowser/dir.c' l='2615' u='r' c='read_one_dir'/>
+<use f='codebrowser/dir.c' l='2769' u='w' c='invalidate_one_directory'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='21' u='r' c='dump'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='34' u='r' c='dump'/>

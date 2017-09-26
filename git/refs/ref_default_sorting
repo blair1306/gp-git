@@ -1,0 +1,7 @@
+<dec f='codebrowser/ref-filter.h' l='123' type='struct ref_sorting * ref_default_sorting()'/>
+<use f='codebrowser/builtin/branch.c' l='671' u='c' c='cmd_branch'/>
+<doc f='codebrowser/ref-filter.h' l='122'>/*  Default sort option based on refname */</doc>
+<use f='codebrowser/builtin/for-each-ref.c' l='72' u='c' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='456' u='c' c='cmd_tag'/>
+<def f='codebrowser/ref-filter.c' l='2140' ll='2149' type='struct ref_sorting * ref_default_sorting()'/>
+<doc f='codebrowser/ref-filter.c' l='2139'>/*  If no sorting option is given, use refname to sort as default */</doc>

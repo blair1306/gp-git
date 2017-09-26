@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='668' type='void set_object_name_for_intent_to_add_entry(struct cache_entry * ce)'/>
+<use f='codebrowser/builtin/reset.c' l='142' u='c' c='update_index_from_diff'/>
+<def f='codebrowser/read-cache.c' l='621' ll='627' type='void set_object_name_for_intent_to_add_entry(struct cache_entry * ce)'/>
+<use f='codebrowser/read-cache.c' l='697' u='c' c='add_to_index'/>

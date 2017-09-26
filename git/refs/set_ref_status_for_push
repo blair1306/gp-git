@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='183' type='void set_ref_status_for_push(struct ref * remote_refs, int send_mirror, int force_update)'/>
+<use f='codebrowser/builtin/send-pack.c' l='280' u='c' c='cmd_send_pack'/>
+<def f='codebrowser/remote.c' l='1523' ll='1603' type='void set_ref_status_for_push(struct ref * remote_refs, int send_mirror, int force_update)'/>
+<use f='codebrowser/transport.c' l='1015' u='c' c='transport_push'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/iterator.h' l='52' type='2'/>
+<use f='codebrowser/iterator.h' l='63' u='r'/>
+<use f='codebrowser/iterator.h' l='72' u='r'/>
+<doc f='codebrowser/iterator.h' l='51'>/* Yield the value from the current iterator? */</doc>
+<use f='codebrowser/refs/iterator.c' l='158' u='r' c='merge_ref_iterator_advance'/>

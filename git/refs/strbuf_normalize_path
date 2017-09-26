@@ -1,0 +1,9 @@
+<dec f='codebrowser/strbuf.h' l='465' type='int strbuf_normalize_path(struct strbuf * sb)'/>
+<doc f='codebrowser/strbuf.h' l='460'>/**
+ * Normalize in-place the path contained in the strbuf. See
+ * normalize_path_copy() for details. If an error occurs, the contents of &quot;sb&quot;
+ * are left untouched, and -1 is returned.
+ */</doc>
+<use f='codebrowser/sha1_file.c' l='363' u='c' c='link_alt_odb_entry'/>
+<use f='codebrowser/sha1_file.c' l='438' u='c' c='link_alt_odb_entries'/>
+<def f='codebrowser/strbuf.c' l='922' ll='940' type='int strbuf_normalize_path(struct strbuf * src)'/>

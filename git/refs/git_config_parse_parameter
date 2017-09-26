@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='83' type='int git_config_parse_parameter(const char * , config_fn_t fn, void * data)'/>
+<use f='codebrowser/builtin/clone.c' l='793' u='c' c='write_config'/>
+<def f='codebrowser/config.c' l='407' ll='440' type='int git_config_parse_parameter(const char * text, config_fn_t fn, void * data)'/>
+<use f='codebrowser/config.c' l='469' u='c' c='git_config_from_parameters'/>

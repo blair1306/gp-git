@@ -1,0 +1,11 @@
+<dec f='codebrowser/rerere.h' l='17' type='void *'/>
+<doc f='codebrowser/rerere.h' l='12'>/*
+ * Marks paths that have been hand-resolved and added to the
+ * index. Set in the util field of such paths after calling
+ * rerere_remaining.
+ */</doc>
+<use f='codebrowser/builtin/rerere.c' l='96' u='r' c='cmd_rerere'/>
+<def f='codebrowser/rerere.c' l='17' type='void *'/>
+<use f='codebrowser/rerere.c' l='17' u='a'/>
+<use f='codebrowser/rerere.c' l='246' u='r' c='write_rr'/>
+<use f='codebrowser/rerere.c' l='617' u='r' c='rerere_remaining'/>

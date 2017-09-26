@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='694' type='void fill_stat_data(struct stat_data * sd, struct stat * st)'/>
+<doc f='codebrowser/cache.h' l='690'>/*
+ * Record to sd the data from st that we use to check whether a file
+ * might have changed.
+ */</doc>
+<use f='codebrowser/builtin/update-index.c' l='141' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='154' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='167' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/builtin/update-index.c' l='202' u='c' c='test_if_untracked_cache_is_supported'/>
+<use f='codebrowser/dir.c' l='782' u='c' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='811' u='c' c='add_excludes'/>
+<use f='codebrowser/dir.c' l='1700' u='c' c='valid_cached_dir'/>
+<def f='codebrowser/read-cache.c' l='86' ll='97' type='void fill_stat_data(struct stat_data * sd, struct stat * st)'/>
+<use f='codebrowser/read-cache.c' l='148' u='c' c='fill_stat_cache_info'/>
+<use f='codebrowser/read-cache.c' l='2642' u='c' c='stat_validity_update'/>
+<use f='codebrowser/sequencer.c' l='1355' u='c' c='read_populate_todo'/>

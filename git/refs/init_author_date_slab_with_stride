@@ -1,0 +1,2 @@
+<def f='codebrowser/commit.c' l='590' macro='1' type='void init_author_date_slab_with_stride(struct author_date_slab * s, unsigned int stride)'/>
+<use f='codebrowser/commit.c' l='590' macro='1' u='c'/>

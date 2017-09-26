@@ -1,0 +1,26 @@
+<dec f='codebrowser/diff.h' l='225' type='unsigned int'/>
+<offset>128</offset>
+<use f='codebrowser/combine-diff.c' l='18' u='r' c='compare_paths'/>
+<use f='codebrowser/combine-diff.c' l='21' u='r' c='compare_paths'/>
+<use f='codebrowser/combine-diff.c' l='48' u='w' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='926' u='r' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='936' u='r' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='946' u='r' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='947' u='r' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='995' u='r' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1014' u='w' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1018' u='r' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1021' u='r' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1033' u='w' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1041' u='w' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1067' u='w' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1076' u='r' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1203' u='r' c='show_raw_diff'/>
+<use f='codebrowser/combine-diff.c' l='1279' u='r' c='combined_pair'/>
+<use f='codebrowser/diff-lib.c' l='142' u='w' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='349' u='w' c='show_modified'/>
+<use f='codebrowser/tree-diff.c' l='77' u='r' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='78' u='r' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='86' u='r' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='89' u='r' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='163' u='w' c='path_appendnew'/>

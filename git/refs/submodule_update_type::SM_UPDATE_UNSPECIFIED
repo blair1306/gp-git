@@ -1,0 +1,12 @@
+<dec f='codebrowser/submodule.h' l='22' type='0'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='418' u='r' c='init_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='812' u='r' c='prepare_to_clone_next_submodule'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='978' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='978' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='978' macro='1' u='r'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='978' macro='1' u='r'/>
+<use f='codebrowser/submodule-config.c' l='224' u='r' c='lookup_or_create_by_name'/>
+<use f='codebrowser/submodule-config.c' l='429' u='r' c='parse_config'/>
+<use f='codebrowser/submodule.c' l='434' c='submodule_strategy_to_string'/>
+<use f='codebrowser/unpack-trees.c' l='265' c='check_submodule_move_head'/>
+<use f='codebrowser/unpack-trees.c' l='312' c='unlink_entry'/>

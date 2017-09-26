@@ -1,0 +1,20 @@
+<dec f='codebrowser/worktree.h' l='5' type='char *'/>
+<use f='codebrowser/branch.c' l='345' u='r' c='die_if_checked_out'/>
+<use f='codebrowser/branch.c' l='367' u='r' c='replace_each_worktree_head_symref'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/branch.c' l='233' u='r' c='delete_branches'/>
+<use f='codebrowser/builtin/branch.c' l='449' u='r' c='reject_rebase_or_bisect_branch'/>
+<use f='codebrowser/builtin/branch.c' l='453' u='r' c='reject_rebase_or_bisect_branch'/>
+<use f='codebrowser/builtin/notes.c' l='863' u='r' c='merge'/>
+<use f='codebrowser/builtin/worktree.c' l='389' u='r' c='show_worktree_porcelain'/>
+<use f='codebrowser/builtin/worktree.c' l='405' u='r' c='show_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='406' u='r' c='show_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='408' u='r' c='show_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='434' u='r' c='measure_widths'/>
+<use f='codebrowser/worktree.c' l='14' u='r' c='free_worktrees'/>
+<use f='codebrowser/worktree.c' l='62' u='w' c='get_main_worktree'/>
+<use f='codebrowser/worktree.c' l='96' u='w' c='get_linked_worktree'/>
+<use f='codebrowser/worktree.c' l='127' u='r' c='compare_worktree'/>
+<use f='codebrowser/worktree.c' l='127' u='r' c='compare_worktree'/>
+<use f='codebrowser/worktree.c' l='193' u='r' c='find_worktree_by_suffix'/>
+<use f='codebrowser/worktree.c' l='222' u='r' c='find_worktree'/>

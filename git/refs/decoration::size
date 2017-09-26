@@ -1,0 +1,11 @@
+<dec f='codebrowser/decorate.h' l='11' type='unsigned int'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/fast-export.c' l='891' u='r' c='export_marks'/>
+<use f='codebrowser/decorate.c' l='16' u='r' c='insert_decoration'/>
+<use f='codebrowser/decorate.c' l='38' u='r' c='grow_decoration'/>
+<use f='codebrowser/decorate.c' l='41' u='w' c='grow_decoration'/>
+<use f='codebrowser/decorate.c' l='42' u='r' c='grow_decoration'/>
+<use f='codebrowser/decorate.c' l='62' u='r' c='add_decoration'/>
+<use f='codebrowser/decorate.c' l='73' u='r' c='lookup_decoration'/>
+<use f='codebrowser/decorate.c' l='75' u='r' c='lookup_decoration'/>
+<use f='codebrowser/decorate.c' l='82' u='r' c='lookup_decoration'/>

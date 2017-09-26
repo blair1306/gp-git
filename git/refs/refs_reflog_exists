@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs.h' l='371' type='int refs_reflog_exists(struct ref_store * refs, const char * refname)'/>
+<doc f='codebrowser/refs.h' l='370'>/** Check if a particular reflog exists */</doc>
+<def f='codebrowser/refs.c' l='1977' ll='1980' type='int refs_reflog_exists(struct ref_store * refs, const char * refname)'/>
+<use f='codebrowser/refs.c' l='1984' u='c' c='reflog_exists'/>
+<use f='codebrowser/refs/files-backend.c' l='2799' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='187' u='c' c='cmd_reflog_exists'/>

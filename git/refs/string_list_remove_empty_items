@@ -1,0 +1,14 @@
+<dec f='codebrowser/string-list.h' l='52' type='void string_list_remove_empty_items(struct string_list * list, int free_util)'/>
+<doc f='codebrowser/string-list.h' l='47'>/*
+ * Remove any empty strings from the list.  If free_util is true, call
+ * free() on the util members of any items that have to be deleted.
+ * Preserve the order of the items that are retained.
+ */</doc>
+<use f='codebrowser/builtin/clean.c' l='694' u='c' c='filter_by_patterns_cmd'/>
+<use f='codebrowser/builtin/clean.c' l='740' u='c' c='select_by_numbers_cmd'/>
+<use f='codebrowser/builtin/clean.c' l='774' u='c' c='ask_each_cmd'/>
+<use f='codebrowser/entry.c' l='222' u='c' c='finish_delayed_checkout'/>
+<use f='codebrowser/notes.c' l='917' u='c' c='combine_notes_cat_sort_uniq'/>
+<use f='codebrowser/notes.c' l='968' u='c' c='string_list_add_refs_from_colon_sep'/>
+<use f='codebrowser/pathspec.c' l='153' u='c' c='parse_pathspec_attr_match'/>
+<def f='codebrowser/string-list.c' l='158' ll='160' type='void string_list_remove_empty_items(struct string_list * list, int free_util)'/>

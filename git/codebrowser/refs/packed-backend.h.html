@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>packed-backend.h source code [codebrowser/refs/packed-backend.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/refs/packed-backend.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>refs</a>/<a href='packed-backend.h.html'>packed-backend.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/REFS_PACKED_BACKEND_H">REFS_PACKED_BACKEND_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/REFS_PACKED_BACKEND_H" data-ref="_M/REFS_PACKED_BACKEND_H">REFS_PACKED_BACKEND_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <a class="type" href="refs-internal.h.html#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="decl" id="packed_ref_store_create" title='packed_ref_store_create' data-ref="packed_ref_store_create">packed_ref_store_create</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="31path" title='path' data-type='const char *' data-ref="31path">path</dfn>,</td></tr>
+<tr><th id="5">5</th><td>					  <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="32store_flags" title='store_flags' data-type='unsigned int' data-ref="32store_flags">store_flags</dfn>);</td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><i>/*</i></td></tr>
+<tr><th id="8">8</th><td><i> * Lock the packed-refs file for writing. Flags is passed to</i></td></tr>
+<tr><th id="9">9</th><td><i> * hold_lock_file_for_update(). Return 0 on success. On errors, write</i></td></tr>
+<tr><th id="10">10</th><td><i> * an error message to `err` and return a nonzero value.</i></td></tr>
+<tr><th id="11">11</th><td><i> */</i></td></tr>
+<tr><th id="12">12</th><td><em>int</em> <dfn class="decl" id="packed_refs_lock" title='packed_refs_lock' data-ref="packed_refs_lock">packed_refs_lock</dfn>(<b>struct</b> <a class="type" href="refs-internal.h.html#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col3 decl" id="33ref_store" title='ref_store' data-type='struct ref_store *' data-ref="33ref_store">ref_store</dfn>, <em>int</em> <dfn class="local col4 decl" id="34flags" title='flags' data-type='int' data-ref="34flags">flags</dfn>, <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col5 decl" id="35err" title='err' data-type='struct strbuf *' data-ref="35err">err</dfn>);</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><em>void</em> <dfn class="decl" id="packed_refs_unlock" title='packed_refs_unlock' data-ref="packed_refs_unlock">packed_refs_unlock</dfn>(<b>struct</b> <a class="type" href="refs-internal.h.html#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col6 decl" id="36ref_store" title='ref_store' data-type='struct ref_store *' data-ref="36ref_store">ref_store</dfn>);</td></tr>
+<tr><th id="15">15</th><td><em>int</em> <dfn class="decl" id="packed_refs_is_locked" title='packed_refs_is_locked' data-ref="packed_refs_is_locked">packed_refs_is_locked</dfn>(<b>struct</b> <a class="type" href="refs-internal.h.html#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col7 decl" id="37ref_store" title='ref_store' data-type='struct ref_store *' data-ref="37ref_store">ref_store</dfn>);</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><em>void</em> <dfn class="decl" id="add_packed_ref" title='add_packed_ref' data-ref="add_packed_ref">add_packed_ref</dfn>(<b>struct</b> <a class="type" href="refs-internal.h.html#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col8 decl" id="38ref_store" title='ref_store' data-type='struct ref_store *' data-ref="38ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="18">18</th><td>		    <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="39refname" title='refname' data-type='const char *' data-ref="39refname">refname</dfn>, <em>const</em> <b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col0 decl" id="40oid" title='oid' data-type='const struct object_id *' data-ref="40oid">oid</dfn>);</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><em>int</em> <dfn class="decl" id="commit_packed_refs" title='commit_packed_refs' data-ref="commit_packed_refs">commit_packed_refs</dfn>(<b>struct</b> <a class="type" href="refs-internal.h.html#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col1 decl" id="41ref_store" title='ref_store' data-type='struct ref_store *' data-ref="41ref_store">ref_store</dfn>, <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col2 decl" id="42err" title='err' data-type='struct strbuf *' data-ref="42err">err</dfn>);</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><em>int</em> <dfn class="decl" id="repack_without_refs" title='repack_without_refs' data-ref="repack_without_refs">repack_without_refs</dfn>(<b>struct</b> <a class="type" href="refs-internal.h.html#ref_store" title='ref_store' data-ref="ref_store">ref_store</a> *<dfn class="local col3 decl" id="43ref_store" title='ref_store' data-type='struct ref_store *' data-ref="43ref_store">ref_store</dfn>,</td></tr>
+<tr><th id="23">23</th><td>			<b>struct</b> <a class="type" href="../string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col4 decl" id="44refnames" title='refnames' data-type='struct string_list *' data-ref="44refnames">refnames</dfn>, <b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col5 decl" id="45err" title='err' data-type='struct strbuf *' data-ref="45err">err</dfn>);</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="1">endif</span> /* REFS_PACKED_BACKEND_H */</u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='files-backend.c.html'>codebrowser/refs/files-backend.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

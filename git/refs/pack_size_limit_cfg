@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='747' type='unsigned long'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3008' u='r' c='cmd_pack_objects'/>
+<use f='codebrowser/bulk-checkin.c' l='142' u='r' c='stream_to_pack'/>
+<use f='codebrowser/bulk-checkin.c' l='143' u='r' c='stream_to_pack'/>
+<use f='codebrowser/config.c' l='1368' u='w' c='git_default_config'/>
+<def f='codebrowser/environment.c' l='66' type='unsigned long'/>

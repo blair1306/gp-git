@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='171' type='int cmd_grep(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/grep.c' l='762' ll='1111' type='int cmd_grep(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='407'/>
+<use f='codebrowser/git.c' l='407'/>
+<use f='codebrowser/git.c' l='407'/>
+<use f='codebrowser/git.c' l='407'/>

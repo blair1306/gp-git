@@ -1,0 +1,22 @@
+<dec f='codebrowser/cache.h' l='1463' type='const char *'/>
+<offset>256</offset>
+<use f='codebrowser/builtin/blame.c' l='133' u='r' c='get_ac_line'/>
+<use f='codebrowser/builtin/blame.c' l='134' u='r' c='get_ac_line'/>
+<use f='codebrowser/builtin/commit.c' l='532' u='r' c='assert_split_ident'/>
+<use f='codebrowser/builtin/commit.c' l='590' u='r' c='determine_author_info'/>
+<use f='codebrowser/builtin/commit.c' l='593' u='r' c='determine_author_info'/>
+<use f='codebrowser/builtin/commit.c' l='593' u='r' c='determine_author_info'/>
+<use f='codebrowser/builtin/commit.c' l='620' u='r' c='determine_author_info'/>
+<use f='codebrowser/builtin/fast-export.c' l='513' u='r' c='anonymize_ident_line'/>
+<use f='codebrowser/builtin/fast-export.c' l='522' u='r' c='anonymize_ident_line'/>
+<use f='codebrowser/builtin/fast-export.c' l='522' u='r' c='anonymize_ident_line'/>
+<use f='codebrowser/commit.c' l='606' u='r' c='record_author_date'/>
+<use f='codebrowser/commit.c' l='609' u='r' c='record_author_date'/>
+<use f='codebrowser/ident.c' l='317' u='w' c='split_ident_line'/>
+<use f='codebrowser/ident.c' l='321' u='r' c='split_ident_line'/>
+<use f='codebrowser/ident.c' l='334' u='w' c='split_ident_line'/>
+<use f='codebrowser/pretty.c' l='412' u='r' c='show_ident_date'/>
+<use f='codebrowser/pretty.c' l='413' u='r' c='show_ident_date'/>
+<use f='codebrowser/pretty.c' l='706' u='r' c='format_person_part'/>
+<use f='codebrowser/pretty.c' l='710' u='r' c='format_person_part'/>
+<use f='codebrowser/pretty.c' l='710' u='r' c='format_person_part'/>

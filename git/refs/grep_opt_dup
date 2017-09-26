@@ -1,0 +1,3 @@
+<dec f='codebrowser/grep.h' l='216' type='struct grep_opt * grep_opt_dup(const struct grep_opt * opt)'/>
+<use f='codebrowser/builtin/grep.c' l='218' u='c' c='start_threads'/>
+<def f='codebrowser/grep.c' l='309' ll='329' type='struct grep_opt * grep_opt_dup(const struct grep_opt * opt)'/>

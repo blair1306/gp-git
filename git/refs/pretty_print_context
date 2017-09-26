@@ -1,0 +1,20 @@
+<def f='codebrowser/commit.h' l='147' ll='174'/>
+<size>160</size>
+<mbr r='pretty_print_context::fmt' o='0' t='enum cmit_fmt'/>
+<mbr r='pretty_print_context::abbrev' o='32' t='int'/>
+<mbr r='pretty_print_context::after_subject' o='64' t='const char *'/>
+<mbr r='pretty_print_context::preserve_subject' o='128' t='int'/>
+<mbr r='pretty_print_context::date_mode' o='192' t='struct date_mode'/>
+<mbr r='pretty_print_context::date_mode_explicit' o='384' t='unsigned int'/>
+<mbr r='pretty_print_context::print_email_subject' o='416' t='int'/>
+<mbr r='pretty_print_context::expand_tabs_in_log' o='448' t='int'/>
+<mbr r='pretty_print_context::need_8bit_cte' o='480' t='int'/>
+<mbr r='pretty_print_context::notes_message' o='512' t='char *'/>
+<mbr r='pretty_print_context::reflog_info' o='576' t='struct reflog_walk_info *'/>
+<mbr r='pretty_print_context::rev' o='640' t='struct rev_info *'/>
+<mbr r='pretty_print_context::output_encoding' o='704' t='const char *'/>
+<mbr r='pretty_print_context::mailmap' o='768' t='struct string_list *'/>
+<mbr r='pretty_print_context::color' o='832' t='int'/>
+<mbr r='pretty_print_context::from_ident' o='896' t='struct ident_split *'/>
+<mbr r='pretty_print_context::in_body_headers' o='960' t='struct string_list'/>
+<mbr r='pretty_print_context::graph_width' o='1216' t='int'/>

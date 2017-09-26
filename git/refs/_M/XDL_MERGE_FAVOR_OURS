@@ -1,0 +1,5 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='64'/>
+<doc f='codebrowser/xdiff/xdiff.h' l='63'>/* merge favor modes */</doc>
+<use f='codebrowser/builtin/merge-file.c' l='36' u='c'/>
+<use f='codebrowser/ll-merge.c' l='63' u='c'/>
+<use f='codebrowser/merge-recursive.c' l='897' u='c'/>

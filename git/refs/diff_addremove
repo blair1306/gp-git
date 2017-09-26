@@ -1,0 +1,6 @@
+<dec f='codebrowser/diff.h' l='248' type='void diff_addremove(struct diff_options * , int addremove, unsigned int mode, const struct object_id * oid, int oid_valid, const char * fullpath, unsigned int dirty_submodule)'/>
+<use f='codebrowser/diff-lib.c' l='211' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='218' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='261' u='c' c='diff_index_show_file'/>
+<use f='codebrowser/diff.c' l='3386' u='r' c='diff_setup'/>
+<def f='codebrowser/diff.c' l='5069' ll='5113' type='void diff_addremove(struct diff_options * options, int addremove, unsigned int mode, const struct object_id * oid, int oid_valid, const char * concatpath, unsigned int dirty_submodule)'/>

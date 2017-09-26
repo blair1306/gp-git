@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>diff.h source code [codebrowser/diff.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="color_diff,combine_diff_parent,combine_diff_path,diff_options,diff_submodule_format,diff_words_type "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/diff.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='diff.h.html'>diff.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2005 Junio C Hamano</i></td></tr>
+<tr><th id="3">3</th><td><i> */</i></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/DIFF_H">DIFF_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/DIFF_H" data-ref="_M/DIFF_H">DIFF_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="tree-walk.h.html">"tree-walk.h"</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="pathspec.h.html">"pathspec.h"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="object.h.html">"object.h"</a></u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><b>struct</b> <dfn class="type" id="rev_info" title='rev_info' data-ref="rev_info">rev_info</dfn>;</td></tr>
+<tr><th id="12">12</th><td><b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a>;</td></tr>
+<tr><th id="13">13</th><td><b>struct</b> <dfn class="type" id="diff_queue_struct" title='diff_queue_struct' data-ref="diff_queue_struct">diff_queue_struct</dfn>;</td></tr>
+<tr><th id="14">14</th><td><b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf" id="strbuf">strbuf</a>;</td></tr>
+<tr><th id="15">15</th><td><b>struct</b> <dfn class="type" id="diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</dfn>;</td></tr>
+<tr><th id="16">16</th><td><b>struct</b> <dfn class="type" id="userdiff_driver" title='userdiff_driver' data-ref="userdiff_driver">userdiff_driver</dfn>;</td></tr>
+<tr><th id="17">17</th><td><b>struct</b> <a class="type" href="sha1-array.h.html#oid_array" title='oid_array' data-ref="oid_array" id="oid_array">oid_array</a>;</td></tr>
+<tr><th id="18">18</th><td><b>struct</b> <dfn class="type" id="commit" title='commit' data-ref="commit">commit</dfn>;</td></tr>
+<tr><th id="19">19</th><td><b>struct</b> <a class="type" href="#combine_diff_path" title='combine_diff_path' data-ref="combine_diff_path">combine_diff_path</a>;</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="pathchange_fn_t" title='pathchange_fn_t' data-type='int (*)(struct diff_options *, struct combine_diff_path *)' data-ref="pathchange_fn_t">pathchange_fn_t</dfn>)(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col0 decl" id="80options" title='options' data-type='struct diff_options *' data-ref="80options">options</dfn>,</td></tr>
+<tr><th id="22">22</th><td>		 <b>struct</b> <a class="type" href="#combine_diff_path" title='combine_diff_path' data-ref="combine_diff_path">combine_diff_path</a> *<dfn class="local col1 decl" id="81path" title='path' data-type='struct combine_diff_path *' data-ref="81path">path</dfn>);</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="change_fn_t" title='change_fn_t' data-type='void (*)(struct diff_options *, unsigned int, unsigned int, const struct object_id *, const struct object_id *, int, int, const char *, unsigned int, unsigned int)' data-ref="change_fn_t">change_fn_t</dfn>)(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col2 decl" id="82options" title='options' data-type='struct diff_options *' data-ref="82options">options</dfn>,</td></tr>
+<tr><th id="25">25</th><td>		 <em>unsigned</em> <dfn class="local col3 decl" id="83old_mode" title='old_mode' data-type='unsigned int' data-ref="83old_mode">old_mode</dfn>, <em>unsigned</em> <dfn class="local col4 decl" id="84new_mode" title='new_mode' data-type='unsigned int' data-ref="84new_mode">new_mode</dfn>,</td></tr>
+<tr><th id="26">26</th><td>		 <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col5 decl" id="85old_oid" title='old_oid' data-type='const struct object_id *' data-ref="85old_oid">old_oid</dfn>,</td></tr>
+<tr><th id="27">27</th><td>		 <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col6 decl" id="86new_oid" title='new_oid' data-type='const struct object_id *' data-ref="86new_oid">new_oid</dfn>,</td></tr>
+<tr><th id="28">28</th><td>		 <em>int</em> <dfn class="local col7 decl" id="87old_oid_valid" title='old_oid_valid' data-type='int' data-ref="87old_oid_valid">old_oid_valid</dfn>, <em>int</em> <dfn class="local col8 decl" id="88new_oid_valid" title='new_oid_valid' data-type='int' data-ref="88new_oid_valid">new_oid_valid</dfn>,</td></tr>
+<tr><th id="29">29</th><td>		 <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="89fullpath" title='fullpath' data-type='const char *' data-ref="89fullpath">fullpath</dfn>,</td></tr>
+<tr><th id="30">30</th><td>		 <em>unsigned</em> <dfn class="local col0 decl" id="90old_dirty_submodule" title='old_dirty_submodule' data-type='unsigned int' data-ref="90old_dirty_submodule">old_dirty_submodule</dfn>, <em>unsigned</em> <dfn class="local col1 decl" id="91new_dirty_submodule" title='new_dirty_submodule' data-type='unsigned int' data-ref="91new_dirty_submodule">new_dirty_submodule</dfn>);</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="add_remove_fn_t" title='add_remove_fn_t' data-type='void (*)(struct diff_options *, int, unsigned int, const struct object_id *, int, const char *, unsigned int)' data-ref="add_remove_fn_t">add_remove_fn_t</dfn>)(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col2 decl" id="92options" title='options' data-type='struct diff_options *' data-ref="92options">options</dfn>,</td></tr>
+<tr><th id="33">33</th><td>		    <em>int</em> <dfn class="local col3 decl" id="93addremove" title='addremove' data-type='int' data-ref="93addremove">addremove</dfn>, <em>unsigned</em> <dfn class="local col4 decl" id="94mode" title='mode' data-type='unsigned int' data-ref="94mode">mode</dfn>,</td></tr>
+<tr><th id="34">34</th><td>		    <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col5 decl" id="95oid" title='oid' data-type='const struct object_id *' data-ref="95oid">oid</dfn>,</td></tr>
+<tr><th id="35">35</th><td>		    <em>int</em> <dfn class="local col6 decl" id="96oid_valid" title='oid_valid' data-type='int' data-ref="96oid_valid">oid_valid</dfn>,</td></tr>
+<tr><th id="36">36</th><td>		    <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="97fullpath" title='fullpath' data-type='const char *' data-ref="97fullpath">fullpath</dfn>, <em>unsigned</em> <dfn class="local col8 decl" id="98dirty_submodule" title='dirty_submodule' data-type='unsigned int' data-ref="98dirty_submodule">dirty_submodule</dfn>);</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="diff_format_fn_t" title='diff_format_fn_t' data-type='void (*)(struct diff_queue_struct *, struct diff_options *, void *)' data-ref="diff_format_fn_t">diff_format_fn_t</dfn>)(<b>struct</b> <a class="type" href="#diff_queue_struct" title='diff_queue_struct' data-ref="diff_queue_struct">diff_queue_struct</a> *<dfn class="local col9 decl" id="99q" title='q' data-type='struct diff_queue_struct *' data-ref="99q">q</dfn>,</td></tr>
+<tr><th id="39">39</th><td>		<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col0 decl" id="100options" title='options' data-type='struct diff_options *' data-ref="100options">options</dfn>, <em>void</em> *<dfn class="local col1 decl" id="101data" title='data' data-type='void *' data-ref="101data">data</dfn>);</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><b>typedef</b> <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *(*<dfn class="typedef" id="diff_prefix_fn_t" title='diff_prefix_fn_t' data-type='struct strbuf *(*)(struct diff_options *, void *)' data-ref="diff_prefix_fn_t">diff_prefix_fn_t</dfn>)(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col2 decl" id="102opt" title='opt' data-type='struct diff_options *' data-ref="102opt">opt</dfn>, <em>void</em> *<dfn class="local col3 decl" id="103data" title='data' data-type='void *' data-ref="103data">data</dfn>);</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_RAW" data-ref="_M/DIFF_FORMAT_RAW">DIFF_FORMAT_RAW</dfn>		0x0001</u></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_DIFFSTAT" data-ref="_M/DIFF_FORMAT_DIFFSTAT">DIFF_FORMAT_DIFFSTAT</dfn>	0x0002</u></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_NUMSTAT" data-ref="_M/DIFF_FORMAT_NUMSTAT">DIFF_FORMAT_NUMSTAT</dfn>	0x0004</u></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_SUMMARY" data-ref="_M/DIFF_FORMAT_SUMMARY">DIFF_FORMAT_SUMMARY</dfn>	0x0008</u></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_PATCH" data-ref="_M/DIFF_FORMAT_PATCH">DIFF_FORMAT_PATCH</dfn>	0x0010</u></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_SHORTSTAT" data-ref="_M/DIFF_FORMAT_SHORTSTAT">DIFF_FORMAT_SHORTSTAT</dfn>	0x0020</u></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_DIRSTAT" data-ref="_M/DIFF_FORMAT_DIRSTAT">DIFF_FORMAT_DIRSTAT</dfn>	0x0040</u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><i>/* These override all above */</i></td></tr>
+<tr><th id="52">52</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_NAME" data-ref="_M/DIFF_FORMAT_NAME">DIFF_FORMAT_NAME</dfn>	0x0100</u></td></tr>
+<tr><th id="53">53</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_NAME_STATUS" data-ref="_M/DIFF_FORMAT_NAME_STATUS">DIFF_FORMAT_NAME_STATUS</dfn>	0x0200</u></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_CHECKDIFF" data-ref="_M/DIFF_FORMAT_CHECKDIFF">DIFF_FORMAT_CHECKDIFF</dfn>	0x0400</u></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><i>/* Same as output_format = 0 but we know that -s flag was given</i></td></tr>
+<tr><th id="57">57</th><td><i> * and we should not give default value to output_format.</i></td></tr>
+<tr><th id="58">58</th><td><i> */</i></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_NO_OUTPUT" data-ref="_M/DIFF_FORMAT_NO_OUTPUT">DIFF_FORMAT_NO_OUTPUT</dfn>	0x0800</u></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/DIFF_FORMAT_CALLBACK" data-ref="_M/DIFF_FORMAT_CALLBACK">DIFF_FORMAT_CALLBACK</dfn>	0x1000</u></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_RECURSIVE" data-ref="_M/DIFF_OPT_RECURSIVE">DIFF_OPT_RECURSIVE</dfn>           (1 &lt;&lt;  0)</u></td></tr>
+<tr><th id="64">64</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_TREE_IN_RECURSIVE" data-ref="_M/DIFF_OPT_TREE_IN_RECURSIVE">DIFF_OPT_TREE_IN_RECURSIVE</dfn>   (1 &lt;&lt;  1)</u></td></tr>
+<tr><th id="65">65</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_BINARY" data-ref="_M/DIFF_OPT_BINARY">DIFF_OPT_BINARY</dfn>              (1 &lt;&lt;  2)</u></td></tr>
+<tr><th id="66">66</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_TEXT" data-ref="_M/DIFF_OPT_TEXT">DIFF_OPT_TEXT</dfn>                (1 &lt;&lt;  3)</u></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_FULL_INDEX" data-ref="_M/DIFF_OPT_FULL_INDEX">DIFF_OPT_FULL_INDEX</dfn>          (1 &lt;&lt;  4)</u></td></tr>
+<tr><th id="68">68</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_SILENT_ON_REMOVE" data-ref="_M/DIFF_OPT_SILENT_ON_REMOVE">DIFF_OPT_SILENT_ON_REMOVE</dfn>    (1 &lt;&lt;  5)</u></td></tr>
+<tr><th id="69">69</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_FIND_COPIES_HARDER" data-ref="_M/DIFF_OPT_FIND_COPIES_HARDER">DIFF_OPT_FIND_COPIES_HARDER</dfn>  (1 &lt;&lt;  6)</u></td></tr>
+<tr><th id="70">70</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_FOLLOW_RENAMES" data-ref="_M/DIFF_OPT_FOLLOW_RENAMES">DIFF_OPT_FOLLOW_RENAMES</dfn>      (1 &lt;&lt;  7)</u></td></tr>
+<tr><th id="71">71</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_RENAME_EMPTY" data-ref="_M/DIFF_OPT_RENAME_EMPTY">DIFF_OPT_RENAME_EMPTY</dfn>        (1 &lt;&lt;  8)</u></td></tr>
+<tr><th id="72">72</th><td><i>/* (1 &lt;&lt;  9) unused */</i></td></tr>
+<tr><th id="73">73</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_HAS_CHANGES" data-ref="_M/DIFF_OPT_HAS_CHANGES">DIFF_OPT_HAS_CHANGES</dfn>         (1 &lt;&lt; 10)</u></td></tr>
+<tr><th id="74">74</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_QUICK" data-ref="_M/DIFF_OPT_QUICK">DIFF_OPT_QUICK</dfn>               (1 &lt;&lt; 11)</u></td></tr>
+<tr><th id="75">75</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_NO_INDEX" data-ref="_M/DIFF_OPT_NO_INDEX">DIFF_OPT_NO_INDEX</dfn>            (1 &lt;&lt; 12)</u></td></tr>
+<tr><th id="76">76</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_ALLOW_EXTERNAL" data-ref="_M/DIFF_OPT_ALLOW_EXTERNAL">DIFF_OPT_ALLOW_EXTERNAL</dfn>      (1 &lt;&lt; 13)</u></td></tr>
+<tr><th id="77">77</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_EXIT_WITH_STATUS" data-ref="_M/DIFF_OPT_EXIT_WITH_STATUS">DIFF_OPT_EXIT_WITH_STATUS</dfn>    (1 &lt;&lt; 14)</u></td></tr>
+<tr><th id="78">78</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_REVERSE_DIFF" data-ref="_M/DIFF_OPT_REVERSE_DIFF">DIFF_OPT_REVERSE_DIFF</dfn>        (1 &lt;&lt; 15)</u></td></tr>
+<tr><th id="79">79</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_CHECK_FAILED" data-ref="_M/DIFF_OPT_CHECK_FAILED">DIFF_OPT_CHECK_FAILED</dfn>        (1 &lt;&lt; 16)</u></td></tr>
+<tr><th id="80">80</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_RELATIVE_NAME" data-ref="_M/DIFF_OPT_RELATIVE_NAME">DIFF_OPT_RELATIVE_NAME</dfn>       (1 &lt;&lt; 17)</u></td></tr>
+<tr><th id="81">81</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_IGNORE_SUBMODULES" data-ref="_M/DIFF_OPT_IGNORE_SUBMODULES">DIFF_OPT_IGNORE_SUBMODULES</dfn>   (1 &lt;&lt; 18)</u></td></tr>
+<tr><th id="82">82</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_DIRSTAT_CUMULATIVE" data-ref="_M/DIFF_OPT_DIRSTAT_CUMULATIVE">DIFF_OPT_DIRSTAT_CUMULATIVE</dfn>  (1 &lt;&lt; 19)</u></td></tr>
+<tr><th id="83">83</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_DIRSTAT_BY_FILE" data-ref="_M/DIFF_OPT_DIRSTAT_BY_FILE">DIFF_OPT_DIRSTAT_BY_FILE</dfn>     (1 &lt;&lt; 20)</u></td></tr>
+<tr><th id="84">84</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_ALLOW_TEXTCONV" data-ref="_M/DIFF_OPT_ALLOW_TEXTCONV">DIFF_OPT_ALLOW_TEXTCONV</dfn>      (1 &lt;&lt; 21)</u></td></tr>
+<tr><th id="85">85</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_DIFF_FROM_CONTENTS" data-ref="_M/DIFF_OPT_DIFF_FROM_CONTENTS">DIFF_OPT_DIFF_FROM_CONTENTS</dfn>  (1 &lt;&lt; 22)</u></td></tr>
+<tr><th id="86">86</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_DIRTY_SUBMODULES" data-ref="_M/DIFF_OPT_DIRTY_SUBMODULES">DIFF_OPT_DIRTY_SUBMODULES</dfn>    (1 &lt;&lt; 24)</u></td></tr>
+<tr><th id="87">87</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_IGNORE_UNTRACKED_IN_SUBMODULES" data-ref="_M/DIFF_OPT_IGNORE_UNTRACKED_IN_SUBMODULES">DIFF_OPT_IGNORE_UNTRACKED_IN_SUBMODULES</dfn> (1 &lt;&lt; 25)</u></td></tr>
+<tr><th id="88">88</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_IGNORE_DIRTY_SUBMODULES" data-ref="_M/DIFF_OPT_IGNORE_DIRTY_SUBMODULES">DIFF_OPT_IGNORE_DIRTY_SUBMODULES</dfn> (1 &lt;&lt; 26)</u></td></tr>
+<tr><th id="89">89</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_OVERRIDE_SUBMODULE_CONFIG" data-ref="_M/DIFF_OPT_OVERRIDE_SUBMODULE_CONFIG">DIFF_OPT_OVERRIDE_SUBMODULE_CONFIG</dfn> (1 &lt;&lt; 27)</u></td></tr>
+<tr><th id="90">90</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_DIRSTAT_BY_LINE" data-ref="_M/DIFF_OPT_DIRSTAT_BY_LINE">DIFF_OPT_DIRSTAT_BY_LINE</dfn>     (1 &lt;&lt; 28)</u></td></tr>
+<tr><th id="91">91</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_FUNCCONTEXT" data-ref="_M/DIFF_OPT_FUNCCONTEXT">DIFF_OPT_FUNCCONTEXT</dfn>         (1 &lt;&lt; 29)</u></td></tr>
+<tr><th id="92">92</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_PICKAXE_IGNORE_CASE" data-ref="_M/DIFF_OPT_PICKAXE_IGNORE_CASE">DIFF_OPT_PICKAXE_IGNORE_CASE</dfn> (1 &lt;&lt; 30)</u></td></tr>
+<tr><th id="93">93</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_DEFAULT_FOLLOW_RENAMES" data-ref="_M/DIFF_OPT_DEFAULT_FOLLOW_RENAMES">DIFF_OPT_DEFAULT_FOLLOW_RENAMES</dfn> (1U &lt;&lt; 31)</u></td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_TST" data-ref="_M/DIFF_OPT_TST">DIFF_OPT_TST</dfn>(opts, flag)    ((opts)-&gt;flags &amp; DIFF_OPT_##flag)</u></td></tr>
+<tr><th id="96">96</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_TOUCHED" data-ref="_M/DIFF_OPT_TOUCHED">DIFF_OPT_TOUCHED</dfn>(opts, flag)    ((opts)-&gt;touched_flags &amp; DIFF_OPT_##flag)</u></td></tr>
+<tr><th id="97">97</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_SET" data-ref="_M/DIFF_OPT_SET">DIFF_OPT_SET</dfn>(opts, flag)    (((opts)-&gt;flags |= DIFF_OPT_##flag),((opts)-&gt;touched_flags |= DIFF_OPT_##flag))</u></td></tr>
+<tr><th id="98">98</th><td><u>#define <dfn class="macro" id="_M/DIFF_OPT_CLR" data-ref="_M/DIFF_OPT_CLR">DIFF_OPT_CLR</dfn>(opts, flag)    (((opts)-&gt;flags &amp;= ~DIFF_OPT_##flag),((opts)-&gt;touched_flags |= DIFF_OPT_##flag))</u></td></tr>
+<tr><th id="99">99</th><td><u>#define <dfn class="macro" id="_M/DIFF_XDL_TST" data-ref="_M/DIFF_XDL_TST">DIFF_XDL_TST</dfn>(opts, flag)    ((opts)-&gt;xdl_opts &amp; XDF_##flag)</u></td></tr>
+<tr><th id="100">100</th><td><u>#define <dfn class="macro" id="_M/DIFF_XDL_SET" data-ref="_M/DIFF_XDL_SET">DIFF_XDL_SET</dfn>(opts, flag)    ((opts)-&gt;xdl_opts |= XDF_##flag)</u></td></tr>
+<tr><th id="101">101</th><td><u>#define <dfn class="macro" id="_M/DIFF_XDL_CLR" data-ref="_M/DIFF_XDL_CLR">DIFF_XDL_CLR</dfn>(opts, flag)    ((opts)-&gt;xdl_opts &amp;= ~XDF_##flag)</u></td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><u>#define <dfn class="macro" id="_M/DIFF_WITH_ALG" data-ref="_M/DIFF_WITH_ALG">DIFF_WITH_ALG</dfn>(opts, flag)   (((opts)-&gt;xdl_opts &amp; ~XDF_DIFF_ALGORITHM_MASK) | XDF_##flag)</u></td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><b>enum</b> <dfn class="type def" id="diff_words_type" title='diff_words_type' data-ref="diff_words_type">diff_words_type</dfn> {</td></tr>
+<tr><th id="106">106</th><td>	<dfn class="enum" id="diff_words_type::DIFF_WORDS_NONE" title='diff_words_type::DIFF_WORDS_NONE' data-ref="diff_words_type::DIFF_WORDS_NONE">DIFF_WORDS_NONE</dfn> = <var>0</var>,</td></tr>
+<tr><th id="107">107</th><td>	<dfn class="enum" id="diff_words_type::DIFF_WORDS_PORCELAIN" title='diff_words_type::DIFF_WORDS_PORCELAIN' data-ref="diff_words_type::DIFF_WORDS_PORCELAIN">DIFF_WORDS_PORCELAIN</dfn>,</td></tr>
+<tr><th id="108">108</th><td>	<dfn class="enum" id="diff_words_type::DIFF_WORDS_PLAIN" title='diff_words_type::DIFF_WORDS_PLAIN' data-ref="diff_words_type::DIFF_WORDS_PLAIN">DIFF_WORDS_PLAIN</dfn>,</td></tr>
+<tr><th id="109">109</th><td>	<dfn class="enum" id="diff_words_type::DIFF_WORDS_COLOR" title='diff_words_type::DIFF_WORDS_COLOR' data-ref="diff_words_type::DIFF_WORDS_COLOR">DIFF_WORDS_COLOR</dfn></td></tr>
+<tr><th id="110">110</th><td>};</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><b>enum</b> <dfn class="type def" id="diff_submodule_format" title='diff_submodule_format' data-ref="diff_submodule_format">diff_submodule_format</dfn> {</td></tr>
+<tr><th id="113">113</th><td>	<dfn class="enum" id="diff_submodule_format::DIFF_SUBMODULE_SHORT" title='diff_submodule_format::DIFF_SUBMODULE_SHORT' data-ref="diff_submodule_format::DIFF_SUBMODULE_SHORT">DIFF_SUBMODULE_SHORT</dfn> = <var>0</var>,</td></tr>
+<tr><th id="114">114</th><td>	<dfn class="enum" id="diff_submodule_format::DIFF_SUBMODULE_LOG" title='diff_submodule_format::DIFF_SUBMODULE_LOG' data-ref="diff_submodule_format::DIFF_SUBMODULE_LOG">DIFF_SUBMODULE_LOG</dfn>,</td></tr>
+<tr><th id="115">115</th><td>	<dfn class="enum" id="diff_submodule_format::DIFF_SUBMODULE_INLINE_DIFF" title='diff_submodule_format::DIFF_SUBMODULE_INLINE_DIFF' data-ref="diff_submodule_format::DIFF_SUBMODULE_INLINE_DIFF">DIFF_SUBMODULE_INLINE_DIFF</dfn></td></tr>
+<tr><th id="116">116</th><td>};</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><b>struct</b> <dfn class="type def" id="diff_options" title='diff_options' data-ref="diff_options">diff_options</dfn> {</td></tr>
+<tr><th id="119">119</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="diff_options::orderfile" title='diff_options::orderfile' data-ref="diff_options::orderfile">orderfile</dfn>;</td></tr>
+<tr><th id="120">120</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="diff_options::pickaxe" title='diff_options::pickaxe' data-ref="diff_options::pickaxe">pickaxe</dfn>;</td></tr>
+<tr><th id="121">121</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="diff_options::single_follow" title='diff_options::single_follow' data-ref="diff_options::single_follow">single_follow</dfn>;</td></tr>
+<tr><th id="122">122</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="diff_options::a_prefix" title='diff_options::a_prefix' data-ref="diff_options::a_prefix">a_prefix</dfn>, *<dfn class="decl" id="diff_options::b_prefix" title='diff_options::b_prefix' data-ref="diff_options::b_prefix">b_prefix</dfn>;</td></tr>
+<tr><th id="123">123</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="diff_options::line_prefix" title='diff_options::line_prefix' data-ref="diff_options::line_prefix">line_prefix</dfn>;</td></tr>
+<tr><th id="124">124</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="diff_options::line_prefix_length" title='diff_options::line_prefix_length' data-ref="diff_options::line_prefix_length">line_prefix_length</dfn>;</td></tr>
+<tr><th id="125">125</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_options::flags" title='diff_options::flags' data-ref="diff_options::flags">flags</dfn>;</td></tr>
+<tr><th id="126">126</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_options::touched_flags" title='diff_options::touched_flags' data-ref="diff_options::touched_flags">touched_flags</dfn>;</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td>	<i>/* diff-filter bits */</i></td></tr>
+<tr><th id="129">129</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="diff_options::filter" title='diff_options::filter' data-ref="diff_options::filter">filter</dfn>;</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>	<em>int</em> <dfn class="decl" id="diff_options::use_color" title='diff_options::use_color' data-ref="diff_options::use_color">use_color</dfn>;</td></tr>
+<tr><th id="132">132</th><td>	<em>int</em> <dfn class="decl" id="diff_options::context" title='diff_options::context' data-ref="diff_options::context">context</dfn>;</td></tr>
+<tr><th id="133">133</th><td>	<em>int</em> <dfn class="decl" id="diff_options::interhunkcontext" title='diff_options::interhunkcontext' data-ref="diff_options::interhunkcontext">interhunkcontext</dfn>;</td></tr>
+<tr><th id="134">134</th><td>	<em>int</em> <dfn class="decl" id="diff_options::break_opt" title='diff_options::break_opt' data-ref="diff_options::break_opt">break_opt</dfn>;</td></tr>
+<tr><th id="135">135</th><td>	<em>int</em> <dfn class="decl" id="diff_options::detect_rename" title='diff_options::detect_rename' data-ref="diff_options::detect_rename">detect_rename</dfn>;</td></tr>
+<tr><th id="136">136</th><td>	<em>int</em> <dfn class="decl" id="diff_options::irreversible_delete" title='diff_options::irreversible_delete' data-ref="diff_options::irreversible_delete">irreversible_delete</dfn>;</td></tr>
+<tr><th id="137">137</th><td>	<em>int</em> <dfn class="decl" id="diff_options::skip_stat_unmatch" title='diff_options::skip_stat_unmatch' data-ref="diff_options::skip_stat_unmatch">skip_stat_unmatch</dfn>;</td></tr>
+<tr><th id="138">138</th><td>	<em>int</em> <dfn class="decl" id="diff_options::line_termination" title='diff_options::line_termination' data-ref="diff_options::line_termination">line_termination</dfn>;</td></tr>
+<tr><th id="139">139</th><td>	<em>int</em> <dfn class="decl" id="diff_options::output_format" title='diff_options::output_format' data-ref="diff_options::output_format">output_format</dfn>;</td></tr>
+<tr><th id="140">140</th><td>	<em>int</em> <dfn class="decl" id="diff_options::pickaxe_opts" title='diff_options::pickaxe_opts' data-ref="diff_options::pickaxe_opts">pickaxe_opts</dfn>;</td></tr>
+<tr><th id="141">141</th><td>	<em>int</em> <dfn class="decl" id="diff_options::rename_score" title='diff_options::rename_score' data-ref="diff_options::rename_score">rename_score</dfn>;</td></tr>
+<tr><th id="142">142</th><td>	<em>int</em> <dfn class="decl" id="diff_options::rename_limit" title='diff_options::rename_limit' data-ref="diff_options::rename_limit">rename_limit</dfn>;</td></tr>
+<tr><th id="143">143</th><td>	<em>int</em> <dfn class="decl" id="diff_options::needed_rename_limit" title='diff_options::needed_rename_limit' data-ref="diff_options::needed_rename_limit">needed_rename_limit</dfn>;</td></tr>
+<tr><th id="144">144</th><td>	<em>int</em> <dfn class="decl" id="diff_options::degraded_cc_to_c" title='diff_options::degraded_cc_to_c' data-ref="diff_options::degraded_cc_to_c">degraded_cc_to_c</dfn>;</td></tr>
+<tr><th id="145">145</th><td>	<em>int</em> <dfn class="decl" id="diff_options::show_rename_progress" title='diff_options::show_rename_progress' data-ref="diff_options::show_rename_progress">show_rename_progress</dfn>;</td></tr>
+<tr><th id="146">146</th><td>	<em>int</em> <dfn class="decl" id="diff_options::dirstat_permille" title='diff_options::dirstat_permille' data-ref="diff_options::dirstat_permille">dirstat_permille</dfn>;</td></tr>
+<tr><th id="147">147</th><td>	<em>int</em> <dfn class="decl" id="diff_options::setup" title='diff_options::setup' data-ref="diff_options::setup">setup</dfn>;</td></tr>
+<tr><th id="148">148</th><td>	<em>int</em> <dfn class="decl" id="diff_options::abbrev" title='diff_options::abbrev' data-ref="diff_options::abbrev">abbrev</dfn>;</td></tr>
+<tr><th id="149">149</th><td>	<em>int</em> <dfn class="decl" id="diff_options::ita_invisible_in_index" title='diff_options::ita_invisible_in_index' data-ref="diff_options::ita_invisible_in_index">ita_invisible_in_index</dfn>;</td></tr>
+<tr><th id="150">150</th><td><i>/* white-space error highlighting */</i></td></tr>
+<tr><th id="151">151</th><td><u>#define <dfn class="macro" id="_M/WSEH_NEW" data-ref="_M/WSEH_NEW">WSEH_NEW</dfn> 1</u></td></tr>
+<tr><th id="152">152</th><td><u>#define <dfn class="macro" id="_M/WSEH_CONTEXT" data-ref="_M/WSEH_CONTEXT">WSEH_CONTEXT</dfn> 2</u></td></tr>
+<tr><th id="153">153</th><td><u>#define <dfn class="macro" id="_M/WSEH_OLD" data-ref="_M/WSEH_OLD">WSEH_OLD</dfn> 4</u></td></tr>
+<tr><th id="154">154</th><td>	<em>unsigned</em> <dfn class="decl" id="diff_options::ws_error_highlight" title='diff_options::ws_error_highlight' data-ref="diff_options::ws_error_highlight">ws_error_highlight</dfn>;</td></tr>
+<tr><th id="155">155</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="diff_options::prefix" title='diff_options::prefix' data-ref="diff_options::prefix">prefix</dfn>;</td></tr>
+<tr><th id="156">156</th><td>	<em>int</em> <dfn class="decl" id="diff_options::prefix_length" title='diff_options::prefix_length' data-ref="diff_options::prefix_length">prefix_length</dfn>;</td></tr>
+<tr><th id="157">157</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="diff_options::stat_sep" title='diff_options::stat_sep' data-ref="diff_options::stat_sep">stat_sep</dfn>;</td></tr>
+<tr><th id="158">158</th><td>	<em>long</em> <dfn class="decl" id="diff_options::xdl_opts" title='diff_options::xdl_opts' data-ref="diff_options::xdl_opts">xdl_opts</dfn>;</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td>	<em>int</em> <dfn class="decl" id="diff_options::stat_width" title='diff_options::stat_width' data-ref="diff_options::stat_width">stat_width</dfn>;</td></tr>
+<tr><th id="161">161</th><td>	<em>int</em> <dfn class="decl" id="diff_options::stat_name_width" title='diff_options::stat_name_width' data-ref="diff_options::stat_name_width">stat_name_width</dfn>;</td></tr>
+<tr><th id="162">162</th><td>	<em>int</em> <dfn class="decl" id="diff_options::stat_graph_width" title='diff_options::stat_graph_width' data-ref="diff_options::stat_graph_width">stat_graph_width</dfn>;</td></tr>
+<tr><th id="163">163</th><td>	<em>int</em> <dfn class="decl" id="diff_options::stat_count" title='diff_options::stat_count' data-ref="diff_options::stat_count">stat_count</dfn>;</td></tr>
+<tr><th id="164">164</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="diff_options::word_regex" title='diff_options::word_regex' data-ref="diff_options::word_regex">word_regex</dfn>;</td></tr>
+<tr><th id="165">165</th><td>	<b>enum</b> <a class="type" href="#diff_words_type" title='diff_words_type' data-ref="diff_words_type">diff_words_type</a> <dfn class="decl" id="diff_options::word_diff" title='diff_options::word_diff' data-ref="diff_options::word_diff">word_diff</dfn>;</td></tr>
+<tr><th id="166">166</th><td>	<b>enum</b> <a class="type" href="#diff_submodule_format" title='diff_submodule_format' data-ref="diff_submodule_format">diff_submodule_format</a> <dfn class="decl" id="diff_options::submodule_format" title='diff_options::submodule_format' data-ref="diff_options::submodule_format">submodule_format</dfn>;</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td>	<i>/* this is set by diffcore for DIFF_FORMAT_PATCH */</i></td></tr>
+<tr><th id="169">169</th><td>	<em>int</em> <dfn class="decl" id="diff_options::found_changes" title='diff_options::found_changes' data-ref="diff_options::found_changes">found_changes</dfn>;</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td>	<i>/* to support internal diff recursion by --follow hack*/</i></td></tr>
+<tr><th id="172">172</th><td>	<em>int</em> <dfn class="decl" id="diff_options::found_follow" title='diff_options::found_follow' data-ref="diff_options::found_follow">found_follow</dfn>;</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td>	<em>void</em> (*<dfn class="decl" id="diff_options::set_default" title='diff_options::set_default' data-ref="diff_options::set_default">set_default</dfn>)(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="diff_options::file" title='diff_options::file' data-ref="diff_options::file">file</dfn>;</td></tr>
+<tr><th id="177">177</th><td>	<em>int</em> <dfn class="decl" id="diff_options::close_file" title='diff_options::close_file' data-ref="diff_options::close_file">close_file</dfn>;</td></tr>
+<tr><th id="178">178</th><td></td></tr>
+<tr><th id="179">179</th><td>	<b>struct</b> <a class="type" href="pathspec.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> <dfn class="decl" id="diff_options::pathspec" title='diff_options::pathspec' data-ref="diff_options::pathspec">pathspec</dfn>;</td></tr>
+<tr><th id="180">180</th><td>	<a class="typedef" href="#pathchange_fn_t" title='pathchange_fn_t' data-type='int (*)(struct diff_options *, struct combine_diff_path *)' data-ref="pathchange_fn_t">pathchange_fn_t</a> <dfn class="decl" id="diff_options::pathchange" title='diff_options::pathchange' data-ref="diff_options::pathchange">pathchange</dfn>;</td></tr>
+<tr><th id="181">181</th><td>	<a class="typedef" href="#change_fn_t" title='change_fn_t' data-type='void (*)(struct diff_options *, unsigned int, unsigned int, const struct object_id *, const struct object_id *, int, int, const char *, unsigned int, unsigned int)' data-ref="change_fn_t">change_fn_t</a> <dfn class="decl" id="diff_options::change" title='diff_options::change' data-ref="diff_options::change">change</dfn>;</td></tr>
+<tr><th id="182">182</th><td>	<a class="typedef" href="#add_remove_fn_t" title='add_remove_fn_t' data-type='void (*)(struct diff_options *, int, unsigned int, const struct object_id *, int, const char *, unsigned int)' data-ref="add_remove_fn_t">add_remove_fn_t</a> <dfn class="decl" id="diff_options::add_remove" title='diff_options::add_remove' data-ref="diff_options::add_remove">add_remove</dfn>;</td></tr>
+<tr><th id="183">183</th><td>	<a class="typedef" href="#diff_format_fn_t" title='diff_format_fn_t' data-type='void (*)(struct diff_queue_struct *, struct diff_options *, void *)' data-ref="diff_format_fn_t">diff_format_fn_t</a> <dfn class="decl" id="diff_options::format_callback" title='diff_options::format_callback' data-ref="diff_options::format_callback">format_callback</dfn>;</td></tr>
+<tr><th id="184">184</th><td>	<em>void</em> *<dfn class="decl" id="diff_options::format_callback_data" title='diff_options::format_callback_data' data-ref="diff_options::format_callback_data">format_callback_data</dfn>;</td></tr>
+<tr><th id="185">185</th><td>	<a class="typedef" href="#diff_prefix_fn_t" title='diff_prefix_fn_t' data-type='struct strbuf *(*)(struct diff_options *, void *)' data-ref="diff_prefix_fn_t">diff_prefix_fn_t</a> <dfn class="decl" id="diff_options::output_prefix" title='diff_options::output_prefix' data-ref="diff_options::output_prefix">output_prefix</dfn>;</td></tr>
+<tr><th id="186">186</th><td>	<em>void</em> *<dfn class="decl" id="diff_options::output_prefix_data" title='diff_options::output_prefix_data' data-ref="diff_options::output_prefix_data">output_prefix_data</dfn>;</td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td>	<em>int</em> <dfn class="decl" id="diff_options::diff_path_counter" title='diff_options::diff_path_counter' data-ref="diff_options::diff_path_counter">diff_path_counter</dfn>;</td></tr>
+<tr><th id="189">189</th><td>};</td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td><b>enum</b> <dfn class="type def" id="color_diff" title='color_diff' data-ref="color_diff">color_diff</dfn> {</td></tr>
+<tr><th id="192">192</th><td>	<dfn class="enum" id="color_diff::DIFF_RESET" title='color_diff::DIFF_RESET' data-ref="color_diff::DIFF_RESET">DIFF_RESET</dfn> = <var>0</var>,</td></tr>
+<tr><th id="193">193</th><td>	<dfn class="enum" id="color_diff::DIFF_CONTEXT" title='color_diff::DIFF_CONTEXT' data-ref="color_diff::DIFF_CONTEXT">DIFF_CONTEXT</dfn> = <var>1</var>,</td></tr>
+<tr><th id="194">194</th><td>	<dfn class="enum" id="color_diff::DIFF_METAINFO" title='color_diff::DIFF_METAINFO' data-ref="color_diff::DIFF_METAINFO">DIFF_METAINFO</dfn> = <var>2</var>,</td></tr>
+<tr><th id="195">195</th><td>	<dfn class="enum" id="color_diff::DIFF_FRAGINFO" title='color_diff::DIFF_FRAGINFO' data-ref="color_diff::DIFF_FRAGINFO">DIFF_FRAGINFO</dfn> = <var>3</var>,</td></tr>
+<tr><th id="196">196</th><td>	<dfn class="enum" id="color_diff::DIFF_FILE_OLD" title='color_diff::DIFF_FILE_OLD' data-ref="color_diff::DIFF_FILE_OLD">DIFF_FILE_OLD</dfn> = <var>4</var>,</td></tr>
+<tr><th id="197">197</th><td>	<dfn class="enum" id="color_diff::DIFF_FILE_NEW" title='color_diff::DIFF_FILE_NEW' data-ref="color_diff::DIFF_FILE_NEW">DIFF_FILE_NEW</dfn> = <var>5</var>,</td></tr>
+<tr><th id="198">198</th><td>	<dfn class="enum" id="color_diff::DIFF_COMMIT" title='color_diff::DIFF_COMMIT' data-ref="color_diff::DIFF_COMMIT">DIFF_COMMIT</dfn> = <var>6</var>,</td></tr>
+<tr><th id="199">199</th><td>	<dfn class="enum" id="color_diff::DIFF_WHITESPACE" title='color_diff::DIFF_WHITESPACE' data-ref="color_diff::DIFF_WHITESPACE">DIFF_WHITESPACE</dfn> = <var>7</var>,</td></tr>
+<tr><th id="200">200</th><td>	<dfn class="enum" id="color_diff::DIFF_FUNCINFO" title='color_diff::DIFF_FUNCINFO' data-ref="color_diff::DIFF_FUNCINFO">DIFF_FUNCINFO</dfn> = <var>8</var></td></tr>
+<tr><th id="201">201</th><td>};</td></tr>
+<tr><th id="202">202</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="diff_get_color" title='diff_get_color' data-ref="diff_get_color">diff_get_color</dfn>(<em>int</em> <dfn class="local col4 decl" id="104diff_use_color" title='diff_use_color' data-type='int' data-ref="104diff_use_color">diff_use_color</dfn>, <b>enum</b> <a class="type" href="#color_diff" title='color_diff' data-ref="color_diff">color_diff</a> <dfn class="local col5 decl" id="105ix" title='ix' data-type='enum color_diff' data-ref="105ix">ix</dfn>);</td></tr>
+<tr><th id="203">203</th><td><u>#define <dfn class="macro" id="_M/diff_get_color_opt" data-ref="_M/diff_get_color_opt">diff_get_color_opt</dfn>(o, ix) \</u></td></tr>
+<tr><th id="204">204</th><td><u>	diff_get_color((o)-&gt;use_color, ix)</u></td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="diff_line_prefix" title='diff_line_prefix' data-ref="diff_line_prefix">diff_line_prefix</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="208">208</th><td></td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td><b>extern</b> <em>const</em> <em>char</em> <dfn class="decl" id="mime_boundary_leader" title='mime_boundary_leader' data-ref="mime_boundary_leader">mime_boundary_leader</dfn>[];</td></tr>
+<tr><th id="211">211</th><td></td></tr>
+<tr><th id="212">212</th><td><b>extern</b> <b>struct</b> <a class="type" href="#combine_diff_path" title='combine_diff_path' data-ref="combine_diff_path">combine_diff_path</a> *<dfn class="decl" id="diff_tree_paths" title='diff_tree_paths' data-ref="diff_tree_paths">diff_tree_paths</dfn>(</td></tr>
+<tr><th id="213">213</th><td>	<b>struct</b> <a class="type" href="#combine_diff_path" title='combine_diff_path' data-ref="combine_diff_path">combine_diff_path</a> *<dfn class="local col6 decl" id="106p" title='p' data-type='struct combine_diff_path *' data-ref="106p">p</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col7 decl" id="107oid" title='oid' data-type='const struct object_id *' data-ref="107oid">oid</dfn>,</td></tr>
+<tr><th id="214">214</th><td>	<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> **<dfn class="local col8 decl" id="108parents_oid" title='parents_oid' data-type='const struct object_id **' data-ref="108parents_oid">parents_oid</dfn>, <em>int</em> <dfn class="local col9 decl" id="109nparent" title='nparent' data-type='int' data-ref="109nparent">nparent</dfn>,</td></tr>
+<tr><th id="215">215</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col0 decl" id="110base" title='base' data-type='struct strbuf *' data-ref="110base">base</dfn>, <b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col1 decl" id="111opt" title='opt' data-type='struct diff_options *' data-ref="111opt">opt</dfn>);</td></tr>
+<tr><th id="216">216</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diff_tree_oid" title='diff_tree_oid' data-ref="diff_tree_oid">diff_tree_oid</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col2 decl" id="112old_oid" title='old_oid' data-type='const struct object_id *' data-ref="112old_oid">old_oid</dfn>,</td></tr>
+<tr><th id="217">217</th><td>			 <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="113new_oid" title='new_oid' data-type='const struct object_id *' data-ref="113new_oid">new_oid</dfn>,</td></tr>
+<tr><th id="218">218</th><td>			 <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="114base" title='base' data-type='const char *' data-ref="114base">base</dfn>, <b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col5 decl" id="115opt" title='opt' data-type='struct diff_options *' data-ref="115opt">opt</dfn>);</td></tr>
+<tr><th id="219">219</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diff_root_tree_oid" title='diff_root_tree_oid' data-ref="diff_root_tree_oid">diff_root_tree_oid</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col6 decl" id="116new_oid" title='new_oid' data-type='const struct object_id *' data-ref="116new_oid">new_oid</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="117base" title='base' data-type='const char *' data-ref="117base">base</dfn>,</td></tr>
+<tr><th id="220">220</th><td>			      <b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col8 decl" id="118opt" title='opt' data-type='struct diff_options *' data-ref="118opt">opt</dfn>);</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td><b>struct</b> <dfn class="type def" id="combine_diff_path" title='combine_diff_path' data-ref="combine_diff_path">combine_diff_path</dfn> {</td></tr>
+<tr><th id="223">223</th><td>	<b>struct</b> <a class="type" href="#combine_diff_path" title='combine_diff_path' data-ref="combine_diff_path">combine_diff_path</a> *<dfn class="decl" id="combine_diff_path::next" title='combine_diff_path::next' data-ref="combine_diff_path::next">next</dfn>;</td></tr>
+<tr><th id="224">224</th><td>	<em>char</em> *<dfn class="decl" id="combine_diff_path::path" title='combine_diff_path::path' data-ref="combine_diff_path::path">path</dfn>;</td></tr>
+<tr><th id="225">225</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="combine_diff_path::mode" title='combine_diff_path::mode' data-ref="combine_diff_path::mode">mode</dfn>;</td></tr>
+<tr><th id="226">226</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="combine_diff_path::oid" title='combine_diff_path::oid' data-ref="combine_diff_path::oid">oid</dfn>;</td></tr>
+<tr><th id="227">227</th><td>	<b>struct</b> <dfn class="type def" id="combine_diff_parent" title='combine_diff_parent' data-ref="combine_diff_parent"><a class="type" href="#combine_diff_parent" title='combine_diff_parent' data-ref="combine_diff_parent">combine_diff_parent</a></dfn> {</td></tr>
+<tr><th id="228">228</th><td>		<em>char</em> <dfn class="decl" id="combine_diff_parent::status" title='combine_diff_parent::status' data-ref="combine_diff_parent::status">status</dfn>;</td></tr>
+<tr><th id="229">229</th><td>		<em>unsigned</em> <em>int</em> <dfn class="decl" id="combine_diff_parent::mode" title='combine_diff_parent::mode' data-ref="combine_diff_parent::mode">mode</dfn>;</td></tr>
+<tr><th id="230">230</th><td>		<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="combine_diff_parent::oid" title='combine_diff_parent::oid' data-ref="combine_diff_parent::oid">oid</dfn>;</td></tr>
+<tr><th id="231">231</th><td>	} <dfn class="decl" id="combine_diff_path::parent" title='combine_diff_path::parent' data-ref="combine_diff_path::parent">parent</dfn>[<a class="macro" href="git-compat-util.h.html#28" title="" data-ref="_M/FLEX_ARRAY">FLEX_ARRAY</a>];</td></tr>
+<tr><th id="232">232</th><td>};</td></tr>
+<tr><th id="233">233</th><td><u>#define <dfn class="macro" id="_M/combine_diff_path_size" data-ref="_M/combine_diff_path_size">combine_diff_path_size</dfn>(n, l) \</u></td></tr>
+<tr><th id="234">234</th><td><u>	st_add4(sizeof(struct combine_diff_path), (l), 1, \</u></td></tr>
+<tr><th id="235">235</th><td><u>		st_mult(sizeof(struct combine_diff_parent), (n)))</u></td></tr>
+<tr><th id="236">236</th><td></td></tr>
+<tr><th id="237">237</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="show_combined_diff" title='show_combined_diff' data-ref="show_combined_diff">show_combined_diff</dfn>(<b>struct</b> <a class="type" href="#combine_diff_path" title='combine_diff_path' data-ref="combine_diff_path">combine_diff_path</a> *<dfn class="local col9 decl" id="119elem" title='elem' data-type='struct combine_diff_path *' data-ref="119elem">elem</dfn>, <em>int</em> <dfn class="local col0 decl" id="120num_parent" title='num_parent' data-type='int' data-ref="120num_parent">num_parent</dfn>,</td></tr>
+<tr><th id="238">238</th><td>			      <em>int</em> <dfn class="local col1 decl" id="121dense" title='dense' data-type='int' data-ref="121dense">dense</dfn>, <b>struct</b> <a class="type" href="#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *);</td></tr>
+<tr><th id="239">239</th><td></td></tr>
+<tr><th id="240">240</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_tree_combined" title='diff_tree_combined' data-ref="diff_tree_combined">diff_tree_combined</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col2 decl" id="122oid" title='oid' data-type='const struct object_id *' data-ref="122oid">oid</dfn>, <em>const</em> <b>struct</b> <a class="type" href="sha1-array.h.html#oid_array" title='oid_array' data-ref="oid_array">oid_array</a> *<dfn class="local col3 decl" id="123parents" title='parents' data-type='const struct oid_array *' data-ref="123parents">parents</dfn>, <em>int</em> <dfn class="local col4 decl" id="124dense" title='dense' data-type='int' data-ref="124dense">dense</dfn>, <b>struct</b> <a class="type" href="#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col5 decl" id="125rev" title='rev' data-type='struct rev_info *' data-ref="125rev">rev</dfn>);</td></tr>
+<tr><th id="241">241</th><td></td></tr>
+<tr><th id="242">242</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_tree_combined_merge" title='diff_tree_combined_merge' data-ref="diff_tree_combined_merge">diff_tree_combined_merge</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col6 decl" id="126commit" title='commit' data-type='const struct commit *' data-ref="126commit">commit</dfn>, <em>int</em> <dfn class="local col7 decl" id="127dense" title='dense' data-type='int' data-ref="127dense">dense</dfn>, <b>struct</b> <a class="type" href="#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col8 decl" id="128rev" title='rev' data-type='struct rev_info *' data-ref="128rev">rev</dfn>);</td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td><em>void</em> <dfn class="decl" id="diff_set_mnemonic_prefix" title='diff_set_mnemonic_prefix' data-ref="diff_set_mnemonic_prefix">diff_set_mnemonic_prefix</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *<dfn class="local col9 decl" id="129options" title='options' data-type='struct diff_options *' data-ref="129options">options</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="130a" title='a' data-type='const char *' data-ref="130a">a</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="131b" title='b' data-type='const char *' data-ref="131b">b</dfn>);</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diff_can_quit_early" title='diff_can_quit_early' data-ref="diff_can_quit_early">diff_can_quit_early</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="247">247</th><td></td></tr>
+<tr><th id="248">248</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_addremove" title='diff_addremove' data-ref="diff_addremove">diff_addremove</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *,</td></tr>
+<tr><th id="249">249</th><td>			   <em>int</em> <dfn class="local col2 decl" id="132addremove" title='addremove' data-type='int' data-ref="132addremove">addremove</dfn>,</td></tr>
+<tr><th id="250">250</th><td>			   <em>unsigned</em> <dfn class="local col3 decl" id="133mode" title='mode' data-type='unsigned int' data-ref="133mode">mode</dfn>,</td></tr>
+<tr><th id="251">251</th><td>			   <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col4 decl" id="134oid" title='oid' data-type='const struct object_id *' data-ref="134oid">oid</dfn>,</td></tr>
+<tr><th id="252">252</th><td>			   <em>int</em> <dfn class="local col5 decl" id="135oid_valid" title='oid_valid' data-type='int' data-ref="135oid_valid">oid_valid</dfn>,</td></tr>
+<tr><th id="253">253</th><td>			   <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="136fullpath" title='fullpath' data-type='const char *' data-ref="136fullpath">fullpath</dfn>, <em>unsigned</em> <dfn class="local col7 decl" id="137dirty_submodule" title='dirty_submodule' data-type='unsigned int' data-ref="137dirty_submodule">dirty_submodule</dfn>);</td></tr>
+<tr><th id="254">254</th><td></td></tr>
+<tr><th id="255">255</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_change" title='diff_change' data-ref="diff_change">diff_change</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *,</td></tr>
+<tr><th id="256">256</th><td>			<em>unsigned</em> <dfn class="local col8 decl" id="138mode1" title='mode1' data-type='unsigned int' data-ref="138mode1">mode1</dfn>, <em>unsigned</em> <dfn class="local col9 decl" id="139mode2" title='mode2' data-type='unsigned int' data-ref="139mode2">mode2</dfn>,</td></tr>
+<tr><th id="257">257</th><td>			<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col0 decl" id="140old_oid" title='old_oid' data-type='const struct object_id *' data-ref="140old_oid">old_oid</dfn>,</td></tr>
+<tr><th id="258">258</th><td>			<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col1 decl" id="141new_oid" title='new_oid' data-type='const struct object_id *' data-ref="141new_oid">new_oid</dfn>,</td></tr>
+<tr><th id="259">259</th><td>			<em>int</em> <dfn class="local col2 decl" id="142old_oid_valid" title='old_oid_valid' data-type='int' data-ref="142old_oid_valid">old_oid_valid</dfn>, <em>int</em> <dfn class="local col3 decl" id="143new_oid_valid" title='new_oid_valid' data-type='int' data-ref="143new_oid_valid">new_oid_valid</dfn>,</td></tr>
+<tr><th id="260">260</th><td>			<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="144fullpath" title='fullpath' data-type='const char *' data-ref="144fullpath">fullpath</dfn>,</td></tr>
+<tr><th id="261">261</th><td>			<em>unsigned</em> <dfn class="local col5 decl" id="145dirty_submodule1" title='dirty_submodule1' data-type='unsigned int' data-ref="145dirty_submodule1">dirty_submodule1</dfn>, <em>unsigned</em> <dfn class="local col6 decl" id="146dirty_submodule2" title='dirty_submodule2' data-type='unsigned int' data-ref="146dirty_submodule2">dirty_submodule2</dfn>);</td></tr>
+<tr><th id="262">262</th><td></td></tr>
+<tr><th id="263">263</th><td><b>extern</b> <b>struct</b> <dfn class="type" id="diff_filepair" title='diff_filepair' data-ref="diff_filepair"><a class="type" href="#diff_filepair" title='diff_filepair' data-ref="diff_filepair">diff_filepair</a></dfn> *<dfn class="decl" id="diff_unmerge" title='diff_unmerge' data-ref="diff_unmerge">diff_unmerge</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="147path" title='path' data-type='const char *' data-ref="147path">path</dfn>);</td></tr>
+<tr><th id="264">264</th><td></td></tr>
+<tr><th id="265">265</th><td><u>#define <dfn class="macro" id="_M/DIFF_SETUP_REVERSE" data-ref="_M/DIFF_SETUP_REVERSE">DIFF_SETUP_REVERSE</dfn>      	1</u></td></tr>
+<tr><th id="266">266</th><td><u>#define <dfn class="macro" id="_M/DIFF_SETUP_USE_CACHE" data-ref="_M/DIFF_SETUP_USE_CACHE">DIFF_SETUP_USE_CACHE</dfn>		2</u></td></tr>
+<tr><th id="267">267</th><td><u>#define <dfn class="macro" id="_M/DIFF_SETUP_USE_SIZE_CACHE" data-ref="_M/DIFF_SETUP_USE_SIZE_CACHE">DIFF_SETUP_USE_SIZE_CACHE</dfn>	4</u></td></tr>
+<tr><th id="268">268</th><td></td></tr>
+<tr><th id="269">269</th><td><i>/*</i></td></tr>
+<tr><th id="270">270</th><td><i> * Poor man's alternative to parse-option, to allow both stuck form</i></td></tr>
+<tr><th id="271">271</th><td><i> * (--option=value) and separate form (--option value).</i></td></tr>
+<tr><th id="272">272</th><td><i> */</i></td></tr>
+<tr><th id="273">273</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_long_opt" title='parse_long_opt' data-ref="parse_long_opt">parse_long_opt</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="148opt" title='opt' data-type='const char *' data-ref="148opt">opt</dfn>, <em>const</em> <em>char</em> **<dfn class="local col9 decl" id="149argv" title='argv' data-type='const char **' data-ref="149argv">argv</dfn>,</td></tr>
+<tr><th id="274">274</th><td>			 <em>const</em> <em>char</em> **<dfn class="local col0 decl" id="150optarg" title='optarg' data-type='const char **' data-ref="150optarg">optarg</dfn>);</td></tr>
+<tr><th id="275">275</th><td></td></tr>
+<tr><th id="276">276</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="git_diff_basic_config" title='git_diff_basic_config' data-ref="git_diff_basic_config">git_diff_basic_config</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="151var" title='var' data-type='const char *' data-ref="151var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="152value" title='value' data-type='const char *' data-ref="152value">value</dfn>, <em>void</em> *<dfn class="local col3 decl" id="153cb" title='cb' data-type='void *' data-ref="153cb">cb</dfn>);</td></tr>
+<tr><th id="277">277</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="git_diff_heuristic_config" title='git_diff_heuristic_config' data-ref="git_diff_heuristic_config">git_diff_heuristic_config</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="154var" title='var' data-type='const char *' data-ref="154var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="155value" title='value' data-type='const char *' data-ref="155value">value</dfn>, <em>void</em> *<dfn class="local col6 decl" id="156cb" title='cb' data-type='void *' data-ref="156cb">cb</dfn>);</td></tr>
+<tr><th id="278">278</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="init_diff_ui_defaults" title='init_diff_ui_defaults' data-ref="init_diff_ui_defaults">init_diff_ui_defaults</dfn>(<em>void</em>);</td></tr>
+<tr><th id="279">279</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="git_diff_ui_config" title='git_diff_ui_config' data-ref="git_diff_ui_config">git_diff_ui_config</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="157var" title='var' data-type='const char *' data-ref="157var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="158value" title='value' data-type='const char *' data-ref="158value">value</dfn>, <em>void</em> *<dfn class="local col9 decl" id="159cb" title='cb' data-type='void *' data-ref="159cb">cb</dfn>);</td></tr>
+<tr><th id="280">280</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_setup" title='diff_setup' data-ref="diff_setup">diff_setup</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="281">281</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diff_opt_parse" title='diff_opt_parse' data-ref="diff_opt_parse">diff_opt_parse</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *, <em>const</em> <em>char</em> **, <em>int</em>, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="282">282</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_setup_done" title='diff_setup_done' data-ref="diff_setup_done">diff_setup_done</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="283">283</th><td></td></tr>
+<tr><th id="284">284</th><td><u>#define <dfn class="macro" id="_M/DIFF_DETECT_RENAME" data-ref="_M/DIFF_DETECT_RENAME">DIFF_DETECT_RENAME</dfn>	1</u></td></tr>
+<tr><th id="285">285</th><td><u>#define <dfn class="macro" id="_M/DIFF_DETECT_COPY" data-ref="_M/DIFF_DETECT_COPY">DIFF_DETECT_COPY</dfn>	2</u></td></tr>
+<tr><th id="286">286</th><td></td></tr>
+<tr><th id="287">287</th><td><u>#define <dfn class="macro" id="_M/DIFF_PICKAXE_ALL" data-ref="_M/DIFF_PICKAXE_ALL">DIFF_PICKAXE_ALL</dfn>	1</u></td></tr>
+<tr><th id="288">288</th><td><u>#define <dfn class="macro" id="_M/DIFF_PICKAXE_REGEX" data-ref="_M/DIFF_PICKAXE_REGEX">DIFF_PICKAXE_REGEX</dfn>	2</u></td></tr>
+<tr><th id="289">289</th><td></td></tr>
+<tr><th id="290">290</th><td><u>#define <dfn class="macro" id="_M/DIFF_PICKAXE_KIND_S" data-ref="_M/DIFF_PICKAXE_KIND_S">DIFF_PICKAXE_KIND_S</dfn>	4 /* traditional plumbing counter */</u></td></tr>
+<tr><th id="291">291</th><td><u>#define <dfn class="macro" id="_M/DIFF_PICKAXE_KIND_G" data-ref="_M/DIFF_PICKAXE_KIND_G">DIFF_PICKAXE_KIND_G</dfn>	8 /* grep in the patch */</u></td></tr>
+<tr><th id="292">292</th><td></td></tr>
+<tr><th id="293">293</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diffcore_std" title='diffcore_std' data-ref="diffcore_std">diffcore_std</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="294">294</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diffcore_fix_diff_index" title='diffcore_fix_diff_index' data-ref="diffcore_fix_diff_index">diffcore_fix_diff_index</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="295">295</th><td></td></tr>
+<tr><th id="296">296</th><td><u>#define <dfn class="macro" id="_M/COMMON_DIFF_OPTIONS_HELP" data-ref="_M/COMMON_DIFF_OPTIONS_HELP">COMMON_DIFF_OPTIONS_HELP</dfn> \</u></td></tr>
+<tr><th id="297">297</th><td><u>"\ncommon diff options:\n" \</u></td></tr>
+<tr><th id="298">298</th><td><u>"  -z            output diff-raw with lines terminated with NUL.\n" \</u></td></tr>
+<tr><th id="299">299</th><td><u>"  -p            output patch format.\n" \</u></td></tr>
+<tr><th id="300">300</th><td><u>"  -u            synonym for -p.\n" \</u></td></tr>
+<tr><th id="301">301</th><td><u>"  --patch-with-raw\n" \</u></td></tr>
+<tr><th id="302">302</th><td><u>"                output both a patch and the diff-raw format.\n" \</u></td></tr>
+<tr><th id="303">303</th><td><u>"  --stat        show diffstat instead of patch.\n" \</u></td></tr>
+<tr><th id="304">304</th><td><u>"  --numstat     show numeric diffstat instead of patch.\n" \</u></td></tr>
+<tr><th id="305">305</th><td><u>"  --patch-with-stat\n" \</u></td></tr>
+<tr><th id="306">306</th><td><u>"                output a patch and prepend its diffstat.\n" \</u></td></tr>
+<tr><th id="307">307</th><td><u>"  --name-only   show only names of changed files.\n" \</u></td></tr>
+<tr><th id="308">308</th><td><u>"  --name-status show names and status of changed files.\n" \</u></td></tr>
+<tr><th id="309">309</th><td><u>"  --full-index  show full object name on index lines.\n" \</u></td></tr>
+<tr><th id="310">310</th><td><u>"  --abbrev=&lt;n&gt;  abbreviate object names in diff-tree header and diff-raw.\n" \</u></td></tr>
+<tr><th id="311">311</th><td><u>"  -R            swap input file pairs.\n" \</u></td></tr>
+<tr><th id="312">312</th><td><u>"  -B            detect complete rewrites.\n" \</u></td></tr>
+<tr><th id="313">313</th><td><u>"  -M            detect renames.\n" \</u></td></tr>
+<tr><th id="314">314</th><td><u>"  -C            detect copies.\n" \</u></td></tr>
+<tr><th id="315">315</th><td><u>"  --find-copies-harder\n" \</u></td></tr>
+<tr><th id="316">316</th><td><u>"                try unchanged files as candidate for copy detection.\n" \</u></td></tr>
+<tr><th id="317">317</th><td><u>"  -l&lt;n&gt;         limit rename attempts up to &lt;n&gt; paths.\n" \</u></td></tr>
+<tr><th id="318">318</th><td><u>"  -O&lt;file&gt;      reorder diffs according to the &lt;file&gt;.\n" \</u></td></tr>
+<tr><th id="319">319</th><td><u>"  -S&lt;string&gt;    find filepair whose only one side contains the string.\n" \</u></td></tr>
+<tr><th id="320">320</th><td><u>"  --pickaxe-all\n" \</u></td></tr>
+<tr><th id="321">321</th><td><u>"                show all files diff when -S is used and hit is found.\n" \</u></td></tr>
+<tr><th id="322">322</th><td><u>"  -a  --text    treat all files as text.\n"</u></td></tr>
+<tr><th id="323">323</th><td></td></tr>
+<tr><th id="324">324</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diff_queue_is_empty" title='diff_queue_is_empty' data-ref="diff_queue_is_empty">diff_queue_is_empty</dfn>(<em>void</em>);</td></tr>
+<tr><th id="325">325</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_flush" title='diff_flush' data-ref="diff_flush">diff_flush</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a>*);</td></tr>
+<tr><th id="326">326</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_warn_rename_limit" title='diff_warn_rename_limit' data-ref="diff_warn_rename_limit">diff_warn_rename_limit</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="160varname" title='varname' data-type='const char *' data-ref="160varname">varname</dfn>, <em>int</em> <dfn class="local col1 decl" id="161needed" title='needed' data-type='int' data-ref="161needed">needed</dfn>, <em>int</em> <dfn class="local col2 decl" id="162degraded_cc" title='degraded_cc' data-type='int' data-ref="162degraded_cc">degraded_cc</dfn>);</td></tr>
+<tr><th id="327">327</th><td></td></tr>
+<tr><th id="328">328</th><td><i>/* diff-raw status letters */</i></td></tr>
+<tr><th id="329">329</th><td><u>#define <dfn class="macro" id="_M/DIFF_STATUS_ADDED" data-ref="_M/DIFF_STATUS_ADDED">DIFF_STATUS_ADDED</dfn>		'A'</u></td></tr>
+<tr><th id="330">330</th><td><u>#define <dfn class="macro" id="_M/DIFF_STATUS_COPIED" data-ref="_M/DIFF_STATUS_COPIED">DIFF_STATUS_COPIED</dfn>		'C'</u></td></tr>
+<tr><th id="331">331</th><td><u>#define <dfn class="macro" id="_M/DIFF_STATUS_DELETED" data-ref="_M/DIFF_STATUS_DELETED">DIFF_STATUS_DELETED</dfn>		'D'</u></td></tr>
+<tr><th id="332">332</th><td><u>#define <dfn class="macro" id="_M/DIFF_STATUS_MODIFIED" data-ref="_M/DIFF_STATUS_MODIFIED">DIFF_STATUS_MODIFIED</dfn>		'M'</u></td></tr>
+<tr><th id="333">333</th><td><u>#define <dfn class="macro" id="_M/DIFF_STATUS_RENAMED" data-ref="_M/DIFF_STATUS_RENAMED">DIFF_STATUS_RENAMED</dfn>		'R'</u></td></tr>
+<tr><th id="334">334</th><td><u>#define <dfn class="macro" id="_M/DIFF_STATUS_TYPE_CHANGED" data-ref="_M/DIFF_STATUS_TYPE_CHANGED">DIFF_STATUS_TYPE_CHANGED</dfn>	'T'</u></td></tr>
+<tr><th id="335">335</th><td><u>#define <dfn class="macro" id="_M/DIFF_STATUS_UNKNOWN" data-ref="_M/DIFF_STATUS_UNKNOWN">DIFF_STATUS_UNKNOWN</dfn>		'X'</u></td></tr>
+<tr><th id="336">336</th><td><u>#define <dfn class="macro" id="_M/DIFF_STATUS_UNMERGED" data-ref="_M/DIFF_STATUS_UNMERGED">DIFF_STATUS_UNMERGED</dfn>		'U'</u></td></tr>
+<tr><th id="337">337</th><td></td></tr>
+<tr><th id="338">338</th><td><i>/* these are not diff-raw status letters proper, but used by</i></td></tr>
+<tr><th id="339">339</th><td><i> * diffcore-filter insn to specify additional restrictions.</i></td></tr>
+<tr><th id="340">340</th><td><i> */</i></td></tr>
+<tr><th id="341">341</th><td><u>#define <dfn class="macro" id="_M/DIFF_STATUS_FILTER_AON" data-ref="_M/DIFF_STATUS_FILTER_AON">DIFF_STATUS_FILTER_AON</dfn>		'*'</u></td></tr>
+<tr><th id="342">342</th><td><u>#define <dfn class="macro" id="_M/DIFF_STATUS_FILTER_BROKEN" data-ref="_M/DIFF_STATUS_FILTER_BROKEN">DIFF_STATUS_FILTER_BROKEN</dfn>	'B'</u></td></tr>
+<tr><th id="343">343</th><td></td></tr>
+<tr><th id="344">344</th><td><i>/*</i></td></tr>
+<tr><th id="345">345</th><td><i> * This is different from find_unique_abbrev() in that</i></td></tr>
+<tr><th id="346">346</th><td><i> * it stuffs the result with dots for alignment.</i></td></tr>
+<tr><th id="347">347</th><td><i> */</i></td></tr>
+<tr><th id="348">348</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="diff_aligned_abbrev" title='diff_aligned_abbrev' data-ref="diff_aligned_abbrev">diff_aligned_abbrev</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="163sha1" title='sha1' data-type='const struct object_id *' data-ref="163sha1">sha1</dfn>, <em>int</em>);</td></tr>
+<tr><th id="349">349</th><td></td></tr>
+<tr><th id="350">350</th><td><i>/* do not report anything on removed paths */</i></td></tr>
+<tr><th id="351">351</th><td><u>#define <dfn class="macro" id="_M/DIFF_SILENT_ON_REMOVED" data-ref="_M/DIFF_SILENT_ON_REMOVED">DIFF_SILENT_ON_REMOVED</dfn> 01</u></td></tr>
+<tr><th id="352">352</th><td><i>/* report racily-clean paths as modified */</i></td></tr>
+<tr><th id="353">353</th><td><u>#define <dfn class="macro" id="_M/DIFF_RACY_IS_MODIFIED" data-ref="_M/DIFF_RACY_IS_MODIFIED">DIFF_RACY_IS_MODIFIED</dfn> 02</u></td></tr>
+<tr><th id="354">354</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="run_diff_files" title='run_diff_files' data-ref="run_diff_files">run_diff_files</dfn>(<b>struct</b> <a class="type" href="#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col4 decl" id="164revs" title='revs' data-type='struct rev_info *' data-ref="164revs">revs</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col5 decl" id="165option" title='option' data-type='unsigned int' data-ref="165option">option</dfn>);</td></tr>
+<tr><th id="355">355</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="run_diff_index" title='run_diff_index' data-ref="run_diff_index">run_diff_index</dfn>(<b>struct</b> <a class="type" href="#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col6 decl" id="166revs" title='revs' data-type='struct rev_info *' data-ref="166revs">revs</dfn>, <em>int</em> <dfn class="local col7 decl" id="167cached" title='cached' data-type='int' data-ref="167cached">cached</dfn>);</td></tr>
+<tr><th id="356">356</th><td></td></tr>
+<tr><th id="357">357</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="do_diff_cache" title='do_diff_cache' data-ref="do_diff_cache">do_diff_cache</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *, <b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="358">358</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diff_flush_patch_id" title='diff_flush_patch_id' data-ref="diff_flush_patch_id">diff_flush_patch_id</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *, <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *, <em>int</em>);</td></tr>
+<tr><th id="359">359</th><td></td></tr>
+<tr><th id="360">360</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="diff_result_code" title='diff_result_code' data-ref="diff_result_code">diff_result_code</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *, <em>int</em>);</td></tr>
+<tr><th id="361">361</th><td></td></tr>
+<tr><th id="362">362</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="diff_no_index" title='diff_no_index' data-ref="diff_no_index">diff_no_index</dfn>(<b>struct</b> <a class="type" href="#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *, <em>int</em>, <em>const</em> <em>char</em> **);</td></tr>
+<tr><th id="363">363</th><td></td></tr>
+<tr><th id="364">364</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="index_differs_from" title='index_differs_from' data-ref="index_differs_from">index_differs_from</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="168def" title='def' data-type='const char *' data-ref="168def">def</dfn>, <em>int</em> <dfn class="local col9 decl" id="169diff_flags" title='diff_flags' data-type='int' data-ref="169diff_flags">diff_flags</dfn>, <em>int</em> <dfn class="local col0 decl" id="170ita_invisible_in_index" title='ita_invisible_in_index' data-type='int' data-ref="170ita_invisible_in_index">ita_invisible_in_index</dfn>);</td></tr>
+<tr><th id="365">365</th><td></td></tr>
+<tr><th id="366">366</th><td><i>/*</i></td></tr>
+<tr><th id="367">367</th><td><i> * Fill the contents of the filespec "df", respecting any textconv defined by</i></td></tr>
+<tr><th id="368">368</th><td><i> * its userdiff driver.  The "driver" parameter must come from a</i></td></tr>
+<tr><th id="369">369</th><td><i> * previous call to get_textconv(), and therefore should either be NULL or have</i></td></tr>
+<tr><th id="370">370</th><td><i> * textconv enabled.</i></td></tr>
+<tr><th id="371">371</th><td><i> *</i></td></tr>
+<tr><th id="372">372</th><td><i> * Note that the memory ownership of the resulting buffer depends on whether</i></td></tr>
+<tr><th id="373">373</th><td><i> * the driver field is NULL. If it is, then the memory belongs to the filespec</i></td></tr>
+<tr><th id="374">374</th><td><i> * struct. If it is non-NULL, then "outbuf" points to a newly allocated buffer</i></td></tr>
+<tr><th id="375">375</th><td><i> * that should be freed by the caller.</i></td></tr>
+<tr><th id="376">376</th><td><i> */</i></td></tr>
+<tr><th id="377">377</th><td><b>extern</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="fill_textconv" title='fill_textconv' data-ref="fill_textconv">fill_textconv</dfn>(<b>struct</b> <a class="type" href="#userdiff_driver" title='userdiff_driver' data-ref="userdiff_driver">userdiff_driver</a> *<dfn class="local col1 decl" id="171driver" title='driver' data-type='struct userdiff_driver *' data-ref="171driver">driver</dfn>,</td></tr>
+<tr><th id="378">378</th><td>			    <b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *<dfn class="local col2 decl" id="172df" title='df' data-type='struct diff_filespec *' data-ref="172df">df</dfn>,</td></tr>
+<tr><th id="379">379</th><td>			    <em>char</em> **<dfn class="local col3 decl" id="173outbuf" title='outbuf' data-type='char **' data-ref="173outbuf">outbuf</dfn>);</td></tr>
+<tr><th id="380">380</th><td></td></tr>
+<tr><th id="381">381</th><td><i>/*</i></td></tr>
+<tr><th id="382">382</th><td><i> * Look up the userdiff driver for the given filespec, and return it if</i></td></tr>
+<tr><th id="383">383</th><td><i> * and only if it has textconv enabled (otherwise return NULL). The result</i></td></tr>
+<tr><th id="384">384</th><td><i> * can be passed to fill_textconv().</i></td></tr>
+<tr><th id="385">385</th><td><i> */</i></td></tr>
+<tr><th id="386">386</th><td><b>extern</b> <b>struct</b> <a class="type" href="#userdiff_driver" title='userdiff_driver' data-ref="userdiff_driver">userdiff_driver</a> *<dfn class="decl" id="get_textconv" title='get_textconv' data-ref="get_textconv">get_textconv</dfn>(<b>struct</b> <a class="type" href="#diff_filespec" title='diff_filespec' data-ref="diff_filespec">diff_filespec</a> *<dfn class="local col4 decl" id="174one" title='one' data-type='struct diff_filespec *' data-ref="174one">one</dfn>);</td></tr>
+<tr><th id="387">387</th><td></td></tr>
+<tr><th id="388">388</th><td><i>/*</i></td></tr>
+<tr><th id="389">389</th><td><i> * Prepare diff_filespec and convert it using diff textconv API</i></td></tr>
+<tr><th id="390">390</th><td><i> * if the textconv driver exists.</i></td></tr>
+<tr><th id="391">391</th><td><i> * Return 1 if the conversion succeeds, 0 otherwise.</i></td></tr>
+<tr><th id="392">392</th><td><i> */</i></td></tr>
+<tr><th id="393">393</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="textconv_object" title='textconv_object' data-ref="textconv_object">textconv_object</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="175path" title='path' data-type='const char *' data-ref="175path">path</dfn>, <em>unsigned</em> <dfn class="local col6 decl" id="176mode" title='mode' data-type='unsigned int' data-ref="176mode">mode</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col7 decl" id="177oid" title='oid' data-type='const struct object_id *' data-ref="177oid">oid</dfn>, <em>int</em> <dfn class="local col8 decl" id="178oid_valid" title='oid_valid' data-type='int' data-ref="178oid_valid">oid_valid</dfn>, <em>char</em> **<dfn class="local col9 decl" id="179buf" title='buf' data-type='char **' data-ref="179buf">buf</dfn>, <em>unsigned</em> <em>long</em> *<dfn class="local col0 decl" id="180buf_size" title='buf_size' data-type='unsigned long *' data-ref="180buf_size">buf_size</dfn>);</td></tr>
+<tr><th id="394">394</th><td></td></tr>
+<tr><th id="395">395</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_rename_score" title='parse_rename_score' data-ref="parse_rename_score">parse_rename_score</dfn>(<em>const</em> <em>char</em> **<dfn class="local col1 decl" id="181cp_p" title='cp_p' data-type='const char **' data-ref="181cp_p">cp_p</dfn>);</td></tr>
+<tr><th id="396">396</th><td></td></tr>
+<tr><th id="397">397</th><td><b>extern</b> <em>long</em> <dfn class="decl" id="parse_algorithm_value" title='parse_algorithm_value' data-ref="parse_algorithm_value">parse_algorithm_value</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="182value" title='value' data-type='const char *' data-ref="182value">value</dfn>);</td></tr>
+<tr><th id="398">398</th><td></td></tr>
+<tr><th id="399">399</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="print_stat_summary" title='print_stat_summary' data-ref="print_stat_summary">print_stat_summary</dfn>(<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col3 decl" id="183fp" title='fp' data-type='FILE *' data-ref="183fp">fp</dfn>, <em>int</em> <dfn class="local col4 decl" id="184files" title='files' data-type='int' data-ref="184files">files</dfn>,</td></tr>
+<tr><th id="400">400</th><td>			      <em>int</em> <dfn class="local col5 decl" id="185insertions" title='insertions' data-type='int' data-ref="185insertions">insertions</dfn>, <em>int</em> <dfn class="local col6 decl" id="186deletions" title='deletions' data-type='int' data-ref="186deletions">deletions</dfn>);</td></tr>
+<tr><th id="401">401</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="setup_diff_pager" title='setup_diff_pager' data-ref="setup_diff_pager">setup_diff_pager</dfn>(<b>struct</b> <a class="type" href="#diff_options" title='diff_options' data-ref="diff_options">diff_options</a> *);</td></tr>
+<tr><th id="402">402</th><td></td></tr>
+<tr><th id="403">403</th><td><u>#<span data-ppcond="4">endif</span> /* DIFF_H */</u></td></tr>
+<tr><th id="404">404</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='apply.c.html'>codebrowser/apply.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

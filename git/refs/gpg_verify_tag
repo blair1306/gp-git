@@ -1,0 +1,4 @@
+<dec f='codebrowser/tag.h' l='20' type='int gpg_verify_tag(const struct object_id * oid, const char * name_to_report, unsigned int flags)'/>
+<use f='codebrowser/builtin/tag.c' l='116' u='c' c='verify_tag'/>
+<use f='codebrowser/builtin/verify-tag.c' l='69' u='c' c='cmd_verify_tag'/>
+<def f='codebrowser/tag.c' l='36' ll='63' type='int gpg_verify_tag(const struct object_id * oid, const char * name_to_report, unsigned int flags)'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/khash.h' l='63' type='khint_t'/>
+<use f='codebrowser/khash.h' l='94' u='w' c='kh_clear_sha1'/>
+<use f='codebrowser/khash.h' l='118' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='165' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='174' u='r' c='kh_put_sha1'/>
+<use f='codebrowser/khash.h' l='202' u='w' c='kh_put_sha1'/>
+<use f='codebrowser/khash.h' l='207' u='w' c='kh_put_sha1'/>
+<use f='codebrowser/khash.h' l='216' u='w' c='kh_del_sha1'/>
+<dec f='codebrowser/khash.h' l='63' type='khint_t'/>
+<use f='codebrowser/khash.h' l='94' u='w' c='kh_clear_sha1_pos'/>
+<use f='codebrowser/khash.h' l='118' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='165' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='174' u='r' c='kh_put_sha1_pos'/>
+<use f='codebrowser/khash.h' l='202' u='w' c='kh_put_sha1_pos'/>
+<use f='codebrowser/khash.h' l='207' u='w' c='kh_put_sha1_pos'/>
+<use f='codebrowser/khash.h' l='216' u='w' c='kh_del_sha1_pos'/>
+<offset>32</offset>

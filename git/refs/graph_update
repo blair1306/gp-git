@@ -1,0 +1,12 @@
+<dec f='codebrowser/graph.h' l='54' type='void graph_update(struct git_graph * graph, struct commit * commit)'/>
+<doc f='codebrowser/graph.h' l='45'>/*
+ * Update a git_graph with a new commit.
+ * This will cause the graph to begin outputting lines for the new commit
+ * the next time graph_next_line() is called.
+ *
+ * If graph_update() is called before graph_is_commit_finished() returns 1,
+ * the next call to graph_next_line() will output an ellipsis (&quot;...&quot;)
+ * to indicate that a portion of the graph is missing.
+ */</doc>
+<def f='codebrowser/graph.c' l='605' ll='665' type='void graph_update(struct git_graph * graph, struct commit * commit)'/>
+<use f='codebrowser/revision.c' l='3340' u='c' c='get_revision'/>

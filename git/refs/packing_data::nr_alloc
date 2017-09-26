@@ -1,0 +1,6 @@
+<dec f='codebrowser/pack-objects.h' l='47' type='uint32_t'/>
+<offset>96</offset>
+<use f='codebrowser/pack-objects.c' l='95' u='r' c='packlist_alloc'/>
+<use f='codebrowser/pack-objects.c' l='96' u='w' c='packlist_alloc'/>
+<use f='codebrowser/pack-objects.c' l='96' u='r' c='packlist_alloc'/>
+<use f='codebrowser/pack-objects.c' l='97' u='r' c='packlist_alloc'/>

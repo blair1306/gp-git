@@ -1,0 +1,14 @@
+<dec f='codebrowser/cache.h' l='102'/>
+<use f='codebrowser/cache.h' l='279' u='c'/>
+<use f='codebrowser/cache.h' l='316' u='c'/>
+<doc f='codebrowser/cache.h' l='96'>/*
+ * A &quot;directory link&quot; is a link to another git directory.
+ *
+ * The value 0160000 is not normally a valid mode, and
+ * also just happens to be S_IFDIR + S_IFLNK
+ */</doc>
+<use f='codebrowser/cache-tree.c' l='358' u='c'/>
+<use f='codebrowser/entry.c' l='325' u='c'/>
+<use f='codebrowser/fast-import.c' l='2382' u='c'/>
+<use f='codebrowser/fsck.c' l='581' u='c'/>
+<use f='codebrowser/read-cache.c' l='251' u='c'/>

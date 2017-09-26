@@ -1,0 +1,11 @@
+<dec f='codebrowser/revision.h' l='283' type='0'/>
+<use f='codebrowser/builtin/log.c' l='274' c='log_show_early'/>
+<use f='codebrowser/revision.c' l='2982' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='2984' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='2988' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='2991' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='2996' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='2999' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='3007' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='3019' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='3158' c='get_revision_1'/>

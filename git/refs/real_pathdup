@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='1130' type='char * real_pathdup(const char * path, int die_on_error)'/>
+<def f='codebrowser/abspath.c' l='217' ll='228' type='char * real_pathdup(const char * path, int die_on_error)'/>
+<use f='codebrowser/builtin/init-db.c' l='342' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='493' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='564' u='c' c='cmd_init_db'/>
+<use f='codebrowser/dir.c' l='2857' u='c' c='connect_work_tree_and_git_dir'/>
+<use f='codebrowser/dir.c' l='2858' u='c' c='connect_work_tree_and_git_dir'/>
+<use f='codebrowser/repository.c' l='78' u='c' c='repo_init_gitdir'/>
+<use f='codebrowser/repository.c' l='100' u='c' c='repo_set_worktree'/>
+<use f='codebrowser/setup.c' l='739' u='c' c='setup_discovered_git_dir'/>
+<use f='codebrowser/setup.c' l='851' u='c' c='canonicalize_ceiling_entry'/>
+<use f='codebrowser/submodule.c' l='1842' u='c' c='relocate_single_git_dir_into_superproject'/>
+<use f='codebrowser/submodule.c' l='1851' u='c' c='relocate_single_git_dir_into_superproject'/>
+<use f='codebrowser/submodule.c' l='1907' u='c' c='absorb_git_dir_into_superproject'/>
+<use f='codebrowser/submodule.c' l='1908' u='c' c='absorb_git_dir_into_superproject'/>
+<use f='codebrowser/worktree.c' l='220' u='c' c='find_worktree'/>

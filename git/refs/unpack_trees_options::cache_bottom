@@ -1,0 +1,15 @@
+<dec f='codebrowser/unpack-trees.h' l='54' type='int'/>
+<offset>640</offset>
+<use f='codebrowser/unpack-trees.c' l='483' u='r' c='mark_ce_used'/>
+<use f='codebrowser/unpack-trees.c' l='484' u='r' c='mark_ce_used'/>
+<use f='codebrowser/unpack-trees.c' l='485' u='r' c='mark_ce_used'/>
+<use f='codebrowser/unpack-trees.c' l='489' u='w' c='mark_ce_used'/>
+<use f='codebrowser/unpack-trees.c' l='535' u='r' c='next_cache_entry'/>
+<use f='codebrowser/unpack-trees.c' l='594' u='w' c='restore_cache_bottom'/>
+<use f='codebrowser/unpack-trees.c' l='604' u='r' c='switch_cache_bottom'/>
+<use f='codebrowser/unpack-trees.c' l='608' u='w' c='switch_cache_bottom'/>
+<use f='codebrowser/unpack-trees.c' l='610' u='w' c='switch_cache_bottom'/>
+<use f='codebrowser/unpack-trees.c' l='872' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='883' u='r' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='884' u='w' c='find_cache_pos'/>
+<use f='codebrowser/unpack-trees.c' l='1049' u='w' c='unpack_callback'/>

@@ -1,0 +1,12 @@
+<def f='codebrowser/pathspec.h' l='29' ll='47'/>
+<size>56</size>
+<mbr r='pathspec_item::match' o='0' t='char *'/>
+<mbr r='pathspec_item::original' o='64' t='char *'/>
+<mbr r='pathspec_item::magic' o='128' t='unsigned int'/>
+<mbr r='pathspec_item::len' o='160' t='int'/>
+<mbr r='pathspec_item::prefix' o='192' t='int'/>
+<mbr r='pathspec_item::nowildcard_len' o='224' t='int'/>
+<mbr r='pathspec_item::flags' o='256' t='int'/>
+<mbr r='pathspec_item::attr_match_nr' o='288' t='int'/>
+<mbr r='pathspec_item::attr_match' o='320' t='struct attr_match *'/>
+<mbr r='pathspec_item::attr_check' o='384' t='struct attr_check *'/>

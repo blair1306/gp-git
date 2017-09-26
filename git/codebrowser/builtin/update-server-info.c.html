@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>update-server-info.c source code [codebrowser/builtin/update-server-info.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/builtin/update-server-info.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>builtin</a>/<a href='update-server-info.c.html'>update-server-info.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../config.h.html">"config.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../builtin.h.html">"builtin.h"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../parse-options.h.html">"parse-options.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><em>static</em> <em>const</em> <em>char</em> * <em>const</em> <dfn class="tu decl def" id="update_server_info_usage" title='update_server_info_usage' data-type='const char *const [2]' data-ref="update_server_info_usage">update_server_info_usage</dfn>[] = {</td></tr>
+<tr><th id="7">7</th><td>	<a class="macro" href="../gettext.h.html#89" title="(&quot;git update-server-info [--force]&quot;)" data-ref="_M/N_">N_</a>(<q>"git update-server-info [--force]"</q>),</td></tr>
+<tr><th id="8">8</th><td>	<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span></td></tr>
+<tr><th id="9">9</th><td>};</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><em>int</em> <dfn class="decl def" id="cmd_update_server_info" title='cmd_update_server_info' data-ref="cmd_update_server_info">cmd_update_server_info</dfn>(<em>int</em> <dfn class="local col1 decl" id="1argc" title='argc' data-type='int' data-ref="1argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col2 decl" id="2argv" title='argv' data-type='const char **' data-ref="2argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3prefix" title='prefix' data-type='const char *' data-ref="3prefix">prefix</dfn>)</td></tr>
+<tr><th id="12">12</th><td>{</td></tr>
+<tr><th id="13">13</th><td>	<em>int</em> <dfn class="local col4 decl" id="4force" title='force' data-type='int' data-ref="4force">force</dfn> = <var>0</var>;</td></tr>
+<tr><th id="14">14</th><td>	<b>struct</b> <a class="type" href="../parse-options.h.html#option" title='option' data-ref="option">option</a> <dfn class="local col5 decl" id="5options" title='options' data-type='struct option [2]' data-ref="5options">options</dfn>[] = {</td></tr>
+<tr><th id="15">15</th><td>		<a class="macro" href="../parse-options.h.html#243" title="{ OPTION_COUNTUP, (&apos;f&apos;), (&quot;force&quot;), ((&amp;force)), ((void*)0), (((&quot;update the info files from scratch&quot;))), PARSE_OPT_NOARG }" data-ref="_M/OPT__FORCE">OPT__FORCE</a>(&amp;<a class="local col4 ref" href="#4force" title='force' data-ref="4force">force</a>, <a class="macro" href="../gettext.h.html#89" title="(&quot;update the info files from scratch&quot;)" data-ref="_M/N_">N_</a>(<q>"update the info files from scratch"</q>)),</td></tr>
+<tr><th id="16">16</th><td>		<a class="macro" href="../parse-options.h.html#115" title="{ OPTION_END }" data-ref="_M/OPT_END">OPT_END</a>()</td></tr>
+<tr><th id="17">17</th><td>	};</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td>	<a class="ref" href="../config.h.html#git_config" title='git_config' data-ref="git_config">git_config</a>(<a class="ref" href="../config.h.html#git_default_config" title='git_default_config' data-ref="git_default_config">git_default_config</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="20">20</th><td>	<a class="local col1 ref" href="#1argc" title='argc' data-ref="1argc">argc</a> = <a class="ref" href="../parse-options.h.html#parse_options" title='parse_options' data-ref="parse_options">parse_options</a>(<a class="local col1 ref" href="#1argc" title='argc' data-ref="1argc">argc</a>, <a class="local col2 ref" href="#2argv" title='argv' data-ref="2argv">argv</a>, <a class="local col3 ref" href="#3prefix" title='prefix' data-ref="3prefix">prefix</a>, <a class="local col5 ref" href="#5options" title='options' data-ref="5options">options</a>,</td></tr>
+<tr><th id="21">21</th><td>			     <a class="tu ref" href="#update_server_info_usage" title='update_server_info_usage' data-use='r' data-ref="update_server_info_usage">update_server_info_usage</a>, <var>0</var>);</td></tr>
+<tr><th id="22">22</th><td>	<b>if</b> (<a class="local col1 ref" href="#1argc" title='argc' data-ref="1argc">argc</a> &gt; <var>0</var>)</td></tr>
+<tr><th id="23">23</th><td>		<a class="ref" href="../parse-options.h.html#usage_with_options" title='usage_with_options' data-ref="usage_with_options">usage_with_options</a>(<a class="tu ref" href="#update_server_info_usage" title='update_server_info_usage' data-use='r' data-ref="update_server_info_usage">update_server_info_usage</a>, <a class="local col5 ref" href="#5options" title='options' data-ref="5options">options</a>);</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td>	<b>return</b> !!<a class="ref" href="../cache.h.html#update_server_info" title='update_server_info' data-ref="update_server_info">update_server_info</a>(<a class="local col4 ref" href="#4force" title='force' data-ref="4force">force</a>);</td></tr>
+<tr><th id="26">26</th><td>}</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/connected.h' l='19' type='int'/>
+<offset>0</offset>
+<doc f='codebrowser/connected.h' l='18'>/* Avoid printing any errors to stderr. */</doc>
+<use f='codebrowser/builtin/fetch.c' l='917' u='w' c='quickfetch'/>
+<use f='codebrowser/connected.c' l='72' u='r' c='check_connected'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/merge-recursive.h' l='17' type='unsigned int'/>
+<offset>352</offset>
+<use f='codebrowser/builtin/merge.c' l='667' u='w' c='try_merge_strategy'/>
+<use f='codebrowser/merge-recursive.c' l='888' u='r' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='1798' u='r' c='process_entry'/>
+<use f='codebrowser/merge-recursive.c' l='2171' u='w' c='init_merge_options'/>
+<use f='codebrowser/merge-recursive.c' l='2219' u='w' c='parse_merge_opt'/>
+<use f='codebrowser/merge-recursive.c' l='2221' u='w' c='parse_merge_opt'/>

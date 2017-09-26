@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs/refs-internal.h' l='177' type='int refs_read_raw_ref(struct ref_store * ref_store, const char * refname, unsigned char * sha1, struct strbuf * referent, unsigned int * type)'/>
+<def f='codebrowser/refs.c' l='1404' ll='1409' type='int refs_read_raw_ref(struct ref_store * ref_store, const char * refname, unsigned char * sha1, struct strbuf * referent, unsigned int * type)'/>
+<use f='codebrowser/refs.c' l='1447' u='c' c='refs_resolve_ref_unsafe'/>
+<use f='codebrowser/refs.c' l='1881' u='c' c='refs_verify_refname_available'/>
+<use f='codebrowser/refs/files-backend.c' l='315' u='c' c='files_read_raw_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='355' u='c' c='files_read_raw_ref'/>

@@ -1,0 +1,3 @@
+<dec f='include/curl/curl.h' l='608'/>
+<doc f='include/curl/curl.h' l='606'>/* Since long deprecated options with no code in the lib that does anything
+   with them. */</doc>

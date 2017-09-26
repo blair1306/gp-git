@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='520' type='void read_gitfile_error_die(int error_code, const char * path, const char * dir)'/>
+<def f='codebrowser/setup.c' l='523' ll='545' type='void read_gitfile_error_die(int error_code, const char * path, const char * dir)'/>
+<use f='codebrowser/setup.c' l='622' u='c' c='read_gitfile_gently'/>
+<use f='codebrowser/submodule.c' l='1891' u='c' c='absorb_git_dir_into_superproject'/>

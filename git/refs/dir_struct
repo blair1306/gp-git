@@ -1,0 +1,18 @@
+<def f='codebrowser/dir.h' l='144' ll='198'/>
+<size>272</size>
+<mbr r='dir_struct::nr' o='0' t='int'/>
+<mbr r='dir_struct::alloc' o='32' t='int'/>
+<mbr r='dir_struct::ignored_nr' o='64' t='int'/>
+<mbr r='dir_struct::ignored_alloc' o='96' t='int'/>
+<mbr r='dir_struct::flags' o='128' t='enum (anonymous enum at /home/jon/workspace/git/dir.h:147:2)'/>
+<mbr r='dir_struct::entries' o='192' t='struct dir_entry **'/>
+<mbr r='dir_struct::ignored' o='256' t='struct dir_entry **'/>
+<mbr r='dir_struct::exclude_per_dir' o='320' t='const char *'/>
+<mbr r='dir_struct::exclude_list_group' o='384' t='struct exclude_list_group [3]'/>
+<mbr r='dir_struct::exclude_stack' o='768' t='struct exclude_stack *'/>
+<mbr r='dir_struct::exclude' o='832' t='struct exclude *'/>
+<mbr r='dir_struct::basebuf' o='896' t='struct strbuf'/>
+<mbr r='dir_struct::untracked' o='1088' t='struct untracked_cache *'/>
+<mbr r='dir_struct::ss_info_exclude' o='1152' t='struct sha1_stat'/>
+<mbr r='dir_struct::ss_excludes_file' o='1632' t='struct sha1_stat'/>
+<mbr r='dir_struct::unmanaged_exclude_files' o='2112' t='unsigned int'/>

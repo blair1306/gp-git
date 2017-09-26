@@ -1,0 +1,13 @@
+<dec f='codebrowser/submodule-config.h' l='21' type='unsigned char [20]'/>
+<offset>512</offset>
+<doc f='codebrowser/submodule-config.h' l='20'>/* the sha1 blob id of the responsible .gitmodules file */</doc>
+<use f='codebrowser/submodule-config.c' l='46' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='46' u='r' c='config_path_cmp'/>
+<use f='codebrowser/submodule-config.c' l='58' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='58' u='r' c='config_name_cmp'/>
+<use f='codebrowser/submodule-config.c' l='119' u='r' c='cache_put_path'/>
+<use f='codebrowser/submodule-config.c' l='130' u='r' c='cache_remove_path'/>
+<use f='codebrowser/submodule-config.c' l='143' u='r' c='cache_add'/>
+<use f='codebrowser/submodule-config.c' l='159' u='r' c='cache_lookup_path'/>
+<use f='codebrowser/submodule-config.c' l='179' u='r' c='cache_lookup_name'/>
+<use f='codebrowser/submodule-config.c' l='231' u='r' c='lookup_or_create_by_name'/>

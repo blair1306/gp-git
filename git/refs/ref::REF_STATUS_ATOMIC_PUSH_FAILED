@@ -1,0 +1,3 @@
+<dec f='codebrowser/remote.h' l='125' type='12'/>
+<use f='codebrowser/send-pack.c' l='345' u='r' c='atomic_push_failure'/>
+<use f='codebrowser/transport.c' l='437' c='print_one_push_status'/>

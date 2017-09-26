@@ -1,0 +1,5 @@
+<dec f='include/curl/curl.h' l='2089' type='struct curl_slist **'/>
+<offset>64</offset>
+<doc f='include/curl/curl.h' l='2089'>/* for each index in this array, there&apos;s a
+                                   linked list with textual information in the
+                                   format &quot;name: value&quot; */</doc>

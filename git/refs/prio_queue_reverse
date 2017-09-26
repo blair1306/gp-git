@@ -1,0 +1,4 @@
+<dec f='codebrowser/prio-queue.h' l='52' type='void prio_queue_reverse(struct prio_queue * )'/>
+<doc f='codebrowser/prio-queue.h' l='51'>/* Reverse the LIFO elements */</doc>
+<use f='codebrowser/commit.c' l='719' u='c' c='sort_in_topological_order'/>
+<def f='codebrowser/prio-queue.c' l='18' ll='26' type='void prio_queue_reverse(struct prio_queue * queue)'/>

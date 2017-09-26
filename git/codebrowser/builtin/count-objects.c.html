@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>count-objects.c source code [codebrowser/builtin/count-objects.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/builtin/count-objects.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>builtin</a>/<a href='count-objects.c.html'>count-objects.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Builtin "git count-objects".</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (c) 2006 Junio C Hamano</i></td></tr>
+<tr><th id="5">5</th><td><i> */</i></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../config.h.html">"config.h"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="../dir.h.html">"dir.h"</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="../builtin.h.html">"builtin.h"</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="../parse-options.h.html">"parse-options.h"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="../quote.h.html">"quote.h"</a></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><em>static</em> <em>unsigned</em> <em>long</em> <dfn class="tu decl def" id="garbage" title='garbage' data-type='unsigned long' data-ref="garbage">garbage</dfn>;</td></tr>
+<tr><th id="15">15</th><td><em>static</em> <a class="typedef" href="../../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="tu decl def" id="size_garbage" title='size_garbage' data-type='off_t' data-ref="size_garbage">size_garbage</dfn>;</td></tr>
+<tr><th id="16">16</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="verbose" title='verbose' data-type='int' data-ref="verbose">verbose</dfn>;</td></tr>
+<tr><th id="17">17</th><td><em>static</em> <em>unsigned</em> <em>long</em> <dfn class="tu decl def" id="loose" title='loose' data-type='unsigned long' data-ref="loose">loose</dfn>, <dfn class="tu decl def" id="packed" title='packed' data-type='unsigned long' data-ref="packed">packed</dfn>, <dfn class="tu decl def" id="packed_loose" title='packed_loose' data-type='unsigned long' data-ref="packed_loose">packed_loose</dfn>;</td></tr>
+<tr><th id="18">18</th><td><em>static</em> <a class="typedef" href="../../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="tu decl def" id="loose_size" title='loose_size' data-type='off_t' data-ref="loose_size">loose_size</dfn>;</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><em>static</em> <em>const</em> <em>char</em> *<dfn class="tu decl def" id="bits_to_msg" title='bits_to_msg' data-type='const char * bits_to_msg(unsigned int seen_bits)' data-ref="bits_to_msg">bits_to_msg</dfn>(<em>unsigned</em> <dfn class="local col1 decl" id="1seen_bits" title='seen_bits' data-type='unsigned int' data-ref="1seen_bits">seen_bits</dfn>)</td></tr>
+<tr><th id="21">21</th><td>{</td></tr>
+<tr><th id="22">22</th><td>	<b>switch</b> (<a class="local col1 ref" href="#1seen_bits" title='seen_bits' data-ref="1seen_bits">seen_bits</a>) {</td></tr>
+<tr><th id="23">23</th><td>	<b>case</b> <var>0</var>:</td></tr>
+<tr><th id="24">24</th><td>		<b>return</b> <q>"no corresponding .idx or .pack"</q>;</td></tr>
+<tr><th id="25">25</th><td>	<b>case</b> <a class="macro" href="../cache.h.html#1627" title="4" data-ref="_M/PACKDIR_FILE_GARBAGE">PACKDIR_FILE_GARBAGE</a>:</td></tr>
+<tr><th id="26">26</th><td>		<b>return</b> <q>"garbage found"</q>;</td></tr>
+<tr><th id="27">27</th><td>	<b>case</b> <a class="macro" href="../cache.h.html#1625" title="1" data-ref="_M/PACKDIR_FILE_PACK">PACKDIR_FILE_PACK</a>:</td></tr>
+<tr><th id="28">28</th><td>		<b>return</b> <q>"no corresponding .idx"</q>;</td></tr>
+<tr><th id="29">29</th><td>	<b>case</b> <a class="macro" href="../cache.h.html#1626" title="2" data-ref="_M/PACKDIR_FILE_IDX">PACKDIR_FILE_IDX</a>:</td></tr>
+<tr><th id="30">30</th><td>		<b>return</b> <q>"no corresponding .pack"</q>;</td></tr>
+<tr><th id="31">31</th><td>	<b>case</b> <a class="macro" href="../cache.h.html#1625" title="1" data-ref="_M/PACKDIR_FILE_PACK">PACKDIR_FILE_PACK</a>|<a class="macro" href="../cache.h.html#1626" title="2" data-ref="_M/PACKDIR_FILE_IDX">PACKDIR_FILE_IDX</a>:</td></tr>
+<tr><th id="32">32</th><td>	<b>default</b>:</td></tr>
+<tr><th id="33">33</th><td>		<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="34">34</th><td>	}</td></tr>
+<tr><th id="35">35</th><td>}</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="real_report_garbage" title='real_report_garbage' data-type='void real_report_garbage(unsigned int seen_bits, const char * path)' data-ref="real_report_garbage">real_report_garbage</dfn>(<em>unsigned</em> <dfn class="local col2 decl" id="2seen_bits" title='seen_bits' data-type='unsigned int' data-ref="2seen_bits">seen_bits</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3path" title='path' data-type='const char *' data-ref="3path">path</dfn>)</td></tr>
+<tr><th id="38">38</th><td>{</td></tr>
+<tr><th id="39">39</th><td>	<b>struct</b> <a class="type" href="../../include/x86_64-linux-gnu/bits/stat.h.html#stat" title='stat' data-ref="stat">stat</a> <dfn class="local col4 decl" id="4st" title='st' data-type='struct stat' data-ref="4st">st</dfn>;</td></tr>
+<tr><th id="40">40</th><td>	<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5desc" title='desc' data-type='const char *' data-ref="5desc">desc</dfn> = <a class="tu ref" href="#bits_to_msg" title='bits_to_msg' data-use='c' data-ref="bits_to_msg">bits_to_msg</a>(<a class="local col2 ref" href="#2seen_bits" title='seen_bits' data-ref="2seen_bits">seen_bits</a>);</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>	<b>if</b> (!<a class="local col5 ref" href="#5desc" title='desc' data-ref="5desc">desc</a>)</td></tr>
+<tr><th id="43">43</th><td>		<b>return</b>;</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>	<b>if</b> (!<a class="ref" href="../../include/x86_64-linux-gnu/sys/stat.h.html#216" title='stat' data-ref="stat64">stat</a>(<a class="local col3 ref" href="#3path" title='path' data-ref="3path">path</a>, &amp;<a class="local col4 ref" href="#4st" title='st' data-ref="4st">st</a>))</td></tr>
+<tr><th id="46">46</th><td>		<a class="tu ref" href="#size_garbage" title='size_garbage' data-use='w' data-ref="size_garbage">size_garbage</a> += <a class="local col4 ref" href="#4st" title='st' data-ref="4st">st</a>.<a class="ref" href="../../include/x86_64-linux-gnu/bits/stat.h.html#stat::st_size" title='stat::st_size' data-ref="stat::st_size">st_size</a>;</td></tr>
+<tr><th id="47">47</th><td>	<a class="ref" href="../git-compat-util.h.html#warning" title='warning' data-ref="warning">warning</a>(<q>"%s: %s"</q>, <a class="local col5 ref" href="#5desc" title='desc' data-ref="5desc">desc</a>, <a class="local col3 ref" href="#3path" title='path' data-ref="3path">path</a>);</td></tr>
+<tr><th id="48">48</th><td>	<a class="tu ref" href="#garbage" title='garbage' data-use='w' data-ref="garbage">garbage</a>++;</td></tr>
+<tr><th id="49">49</th><td>}</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="loose_garbage" title='loose_garbage' data-type='void loose_garbage(const char * path)' data-ref="loose_garbage">loose_garbage</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="6path" title='path' data-type='const char *' data-ref="6path">path</dfn>)</td></tr>
+<tr><th id="52">52</th><td>{</td></tr>
+<tr><th id="53">53</th><td>	<b>if</b> (<a class="tu ref" href="#verbose" title='verbose' data-use='r' data-ref="verbose">verbose</a>)</td></tr>
+<tr><th id="54">54</th><td>		<a class="ref" href="../cache.h.html#report_garbage" title='report_garbage' data-ref="report_garbage">report_garbage</a>(<a class="macro" href="../cache.h.html#1627" title="4" data-ref="_M/PACKDIR_FILE_GARBAGE">PACKDIR_FILE_GARBAGE</a>, <a class="local col6 ref" href="#6path" title='path' data-ref="6path">path</a>);</td></tr>
+<tr><th id="55">55</th><td>}</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="count_loose" title='count_loose' data-type='int count_loose(const struct object_id * oid, const char * path, void * data)' data-ref="count_loose">count_loose</dfn>(<em>const</em> <b>struct</b> <a class="type" href="../cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col7 decl" id="7oid" title='oid' data-type='const struct object_id *' data-ref="7oid">oid</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8path" title='path' data-type='const char *' data-ref="8path">path</dfn>, <em>void</em> *<dfn class="local col9 decl" id="9data" title='data' data-type='void *' data-ref="9data">data</dfn>)</td></tr>
+<tr><th id="58">58</th><td>{</td></tr>
+<tr><th id="59">59</th><td>	<b>struct</b> <a class="type" href="../../include/x86_64-linux-gnu/bits/stat.h.html#stat" title='stat' data-ref="stat">stat</a> <dfn class="local col0 decl" id="10st" title='st' data-type='struct stat' data-ref="10st">st</dfn>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>	<b>if</b> (<a class="ref" href="../../include/x86_64-linux-gnu/sys/stat.h.html#266" title='lstat' data-ref="lstat64">lstat</a>(<a class="local col8 ref" href="#8path" title='path' data-ref="8path">path</a>, &amp;<a class="local col0 ref" href="#10st" title='st' data-ref="10st">st</a>) || !<a class="macro" href="../../include/x86_64-linux-gnu/sys/stat.h.html#131" title="((((st.st_mode)) &amp; 0170000) == (0100000))" data-ref="_M/S_ISREG">S_ISREG</a>(<a class="local col0 ref" href="#10st" title='st' data-ref="10st">st</a>.<a class="ref" href="../../include/x86_64-linux-gnu/bits/stat.h.html#stat::st_mode" title='stat::st_mode' data-ref="stat::st_mode">st_mode</a>))</td></tr>
+<tr><th id="62">62</th><td>		<a class="tu ref" href="#loose_garbage" title='loose_garbage' data-use='c' data-ref="loose_garbage">loose_garbage</a>(<a class="local col8 ref" href="#8path" title='path' data-ref="8path">path</a>);</td></tr>
+<tr><th id="63">63</th><td>	<b>else</b> {</td></tr>
+<tr><th id="64">64</th><td>		<a class="tu ref" href="#loose_size" title='loose_size' data-use='w' data-ref="loose_size">loose_size</a> += <a class="macro" href="../git-compat-util.h.html#588" title="((st).st_blocks * 512)" data-ref="_M/on_disk_bytes">on_disk_bytes</a>(<a class="local col0 ref" href="#10st" title='st' data-ref="10st">st</a>);</td></tr>
+<tr><th id="65">65</th><td>		<a class="tu ref" href="#loose" title='loose' data-use='w' data-ref="loose">loose</a>++;</td></tr>
+<tr><th id="66">66</th><td>		<b>if</b> (<a class="tu ref" href="#verbose" title='verbose' data-use='r' data-ref="verbose">verbose</a> &amp;&amp; <a class="ref" href="../cache.h.html#has_sha1_pack" title='has_sha1_pack' data-ref="has_sha1_pack">has_sha1_pack</a>(<a class="local col7 ref" href="#7oid" title='oid' data-ref="7oid">oid</a>-&gt;<a class="ref" href="../cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>))</td></tr>
+<tr><th id="67">67</th><td>			<a class="tu ref" href="#packed_loose" title='packed_loose' data-use='w' data-ref="packed_loose">packed_loose</a>++;</td></tr>
+<tr><th id="68">68</th><td>	}</td></tr>
+<tr><th id="69">69</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="70">70</th><td>}</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="count_cruft" title='count_cruft' data-type='int count_cruft(const char * __xpg_basename, const char * path, void * data)' data-ref="count_cruft">count_cruft</dfn>(<em>const</em> <em>char</em> *<a class="macro" href="../../include/libgen.h.html#35" title="__xpg_basename" data-ref="_M/basename">basename</a>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="11path" title='path' data-type='const char *' data-ref="11path">path</dfn>, <em>void</em> *<dfn class="local col2 decl" id="12data" title='data' data-type='void *' data-ref="12data">data</dfn>)</td></tr>
+<tr><th id="73">73</th><td>{</td></tr>
+<tr><th id="74">74</th><td>	<a class="tu ref" href="#loose_garbage" title='loose_garbage' data-use='c' data-ref="loose_garbage">loose_garbage</a>(<a class="local col1 ref" href="#11path" title='path' data-ref="11path">path</a>);</td></tr>
+<tr><th id="75">75</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="76">76</th><td>}</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="print_alternate" title='print_alternate' data-type='int print_alternate(struct alternate_object_database * alt, void * data)' data-ref="print_alternate">print_alternate</dfn>(<b>struct</b> <a class="type" href="../cache.h.html#alternate_object_database" title='alternate_object_database' data-ref="alternate_object_database">alternate_object_database</a> *<dfn class="local col3 decl" id="13alt" title='alt' data-type='struct alternate_object_database *' data-ref="13alt">alt</dfn>, <em>void</em> *<dfn class="local col4 decl" id="14data" title='data' data-type='void *' data-ref="14data">data</dfn>)</td></tr>
+<tr><th id="79">79</th><td>{</td></tr>
+<tr><th id="80">80</th><td>	<a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"alternate: "</q>);</td></tr>
+<tr><th id="81">81</th><td>	<a class="ref" href="../quote.h.html#quote_c_style" title='quote_c_style' data-ref="quote_c_style">quote_c_style</a>(<a class="local col3 ref" href="#13alt" title='alt' data-ref="13alt">alt</a>-&gt;<a class="ref" href="../cache.h.html#alternate_object_database::path" title='alternate_object_database::path' data-ref="alternate_object_database::path">path</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <a class="macro" href="../../include/stdio.h.html#173" title="stdout" data-ref="_M/stdout">stdout</a>, <var>0</var>);</td></tr>
+<tr><th id="82">82</th><td>	<a class="ref" href="../../include/stdio.h.html#putchar" title='putchar' data-ref="putchar">putchar</a>(<kbd>'\n'</kbd>);</td></tr>
+<tr><th id="83">83</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="84">84</th><td>}</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><em>static</em> <em>char</em> <em>const</em> * <em>const</em> <dfn class="tu decl def" id="count_objects_usage" title='count_objects_usage' data-type='const char *const [2]' data-ref="count_objects_usage">count_objects_usage</dfn>[] = {</td></tr>
+<tr><th id="87">87</th><td>	<a class="macro" href="../gettext.h.html#89" title="(&quot;git count-objects [-v] [-H | --human-readable]&quot;)" data-ref="_M/N_">N_</a>(<q>"git count-objects [-v] [-H | --human-readable]"</q>),</td></tr>
+<tr><th id="88">88</th><td>	<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span></td></tr>
+<tr><th id="89">89</th><td>};</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><em>int</em> <dfn class="decl def" id="cmd_count_objects" title='cmd_count_objects' data-ref="cmd_count_objects">cmd_count_objects</dfn>(<em>int</em> <dfn class="local col5 decl" id="15argc" title='argc' data-type='int' data-ref="15argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col6 decl" id="16argv" title='argv' data-type='const char **' data-ref="16argv">argv</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="17prefix" title='prefix' data-type='const char *' data-ref="17prefix">prefix</dfn>)</td></tr>
+<tr><th id="92">92</th><td>{</td></tr>
+<tr><th id="93">93</th><td>	<em>int</em> <dfn class="local col8 decl" id="18human_readable" title='human_readable' data-type='int' data-ref="18human_readable">human_readable</dfn> = <var>0</var>;</td></tr>
+<tr><th id="94">94</th><td>	<b>struct</b> <a class="type" href="../parse-options.h.html#option" title='option' data-ref="option">option</a> <dfn class="local col9 decl" id="19opts" title='opts' data-type='struct option [3]' data-ref="19opts">opts</dfn>[] = {</td></tr>
+<tr><th id="95">95</th><td>		<a class="macro" href="../parse-options.h.html#235" title="{ OPTION_COUNTUP, (&apos;v&apos;), (&quot;verbose&quot;), ((&amp;verbose)), ((void*)0), (((&quot;be verbose&quot;))), PARSE_OPT_NOARG }" data-ref="_M/OPT__VERBOSE">OPT__VERBOSE</a>(&amp;<a class="tu ref" href="#verbose" title='verbose' data-use='a' data-ref="verbose">verbose</a>, <a class="macro" href="../gettext.h.html#89" title="(&quot;be verbose&quot;)" data-ref="_M/N_">N_</a>(<q>"be verbose"</q>)),</td></tr>
+<tr><th id="96">96</th><td>		<a class="macro" href="../parse-options.h.html#127" title="{ OPTION_SET_INT, (&apos;H&apos;), (&quot;human-readable&quot;), (&amp;human_readable), ((void*)0), ((&quot;print sizes in human readable format&quot;)), PARSE_OPT_NOARG, ((void*)0), (1) }" data-ref="_M/OPT_BOOL">OPT_BOOL</a>(<kbd>'H'</kbd>, <q>"human-readable"</q>, &amp;<a class="local col8 ref" href="#18human_readable" title='human_readable' data-ref="18human_readable">human_readable</a>,</td></tr>
+<tr><th id="97">97</th><td>			 <a class="macro" href="../gettext.h.html#89" title="(&quot;print sizes in human readable format&quot;)" data-ref="_M/N_">N_</a>(<q>"print sizes in human readable format"</q>)),</td></tr>
+<tr><th id="98">98</th><td>		<a class="macro" href="../parse-options.h.html#115" title="{ OPTION_END }" data-ref="_M/OPT_END">OPT_END</a>(),</td></tr>
+<tr><th id="99">99</th><td>	};</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>	<a class="ref" href="../config.h.html#git_config" title='git_config' data-ref="git_config">git_config</a>(<a class="ref" href="../config.h.html#git_default_config" title='git_default_config' data-ref="git_default_config">git_default_config</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>	<a class="local col5 ref" href="#15argc" title='argc' data-ref="15argc">argc</a> = <a class="ref" href="../parse-options.h.html#parse_options" title='parse_options' data-ref="parse_options">parse_options</a>(<a class="local col5 ref" href="#15argc" title='argc' data-ref="15argc">argc</a>, <a class="local col6 ref" href="#16argv" title='argv' data-ref="16argv">argv</a>, <a class="local col7 ref" href="#17prefix" title='prefix' data-ref="17prefix">prefix</a>, <a class="local col9 ref" href="#19opts" title='opts' data-ref="19opts">opts</a>, <a class="tu ref" href="#count_objects_usage" title='count_objects_usage' data-use='r' data-ref="count_objects_usage">count_objects_usage</a>, <var>0</var>);</td></tr>
+<tr><th id="104">104</th><td>	<i>/* we do not take arguments other than flags for now */</i></td></tr>
+<tr><th id="105">105</th><td>	<b>if</b> (<a class="local col5 ref" href="#15argc" title='argc' data-ref="15argc">argc</a>)</td></tr>
+<tr><th id="106">106</th><td>		<a class="ref" href="../parse-options.h.html#usage_with_options" title='usage_with_options' data-ref="usage_with_options">usage_with_options</a>(<a class="tu ref" href="#count_objects_usage" title='count_objects_usage' data-use='r' data-ref="count_objects_usage">count_objects_usage</a>, <a class="local col9 ref" href="#19opts" title='opts' data-ref="19opts">opts</a>);</td></tr>
+<tr><th id="107">107</th><td>	<b>if</b> (<a class="tu ref" href="#verbose" title='verbose' data-use='r' data-ref="verbose">verbose</a>) {</td></tr>
+<tr><th id="108">108</th><td>		<a class="ref" href="../cache.h.html#report_garbage" title='report_garbage' data-ref="report_garbage">report_garbage</a> = <a class="tu ref" href="#real_report_garbage" title='real_report_garbage' data-use='r' data-ref="real_report_garbage">real_report_garbage</a>;</td></tr>
+<tr><th id="109">109</th><td>		<a class="ref" href="../path.h.html#report_linked_checkout_garbage" title='report_linked_checkout_garbage' data-ref="report_linked_checkout_garbage">report_linked_checkout_garbage</a>();</td></tr>
+<tr><th id="110">110</th><td>	}</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>	<a class="ref" href="../cache.h.html#for_each_loose_file_in_objdir" title='for_each_loose_file_in_objdir' data-ref="for_each_loose_file_in_objdir">for_each_loose_file_in_objdir</a>(<a class="ref" href="../cache.h.html#get_object_directory" title='get_object_directory' data-ref="get_object_directory">get_object_directory</a>(),</td></tr>
+<tr><th id="113">113</th><td>				      <a class="tu ref" href="#count_loose" title='count_loose' data-use='r' data-ref="count_loose">count_loose</a>, <a class="tu ref" href="#count_cruft" title='count_cruft' data-use='r' data-ref="count_cruft">count_cruft</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td>	<b>if</b> (<a class="tu ref" href="#verbose" title='verbose' data-use='r' data-ref="verbose">verbose</a>) {</td></tr>
+<tr><th id="116">116</th><td>		<b>struct</b> <a class="type" href="../cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *<dfn class="local col0 decl" id="20p" title='p' data-type='struct packed_git *' data-ref="20p">p</dfn>;</td></tr>
+<tr><th id="117">117</th><td>		<em>unsigned</em> <em>long</em> <dfn class="local col1 decl" id="21num_pack" title='num_pack' data-type='unsigned long' data-ref="21num_pack">num_pack</dfn> = <var>0</var>;</td></tr>
+<tr><th id="118">118</th><td>		<a class="typedef" href="../../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col2 decl" id="22size_pack" title='size_pack' data-type='off_t' data-ref="22size_pack">size_pack</dfn> = <var>0</var>;</td></tr>
+<tr><th id="119">119</th><td>		<b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col3 decl" id="23loose_buf" title='loose_buf' data-type='struct strbuf' data-ref="23loose_buf">loose_buf</dfn> = <a class="macro" href="../strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="120">120</th><td>		<b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col4 decl" id="24pack_buf" title='pack_buf' data-type='struct strbuf' data-ref="24pack_buf">pack_buf</dfn> = <a class="macro" href="../strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="121">121</th><td>		<b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col5 decl" id="25garbage_buf" title='garbage_buf' data-type='struct strbuf' data-ref="25garbage_buf">garbage_buf</dfn> = <a class="macro" href="../strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="122">122</th><td>		<b>if</b> (!<a class="ref" href="../cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a>)</td></tr>
+<tr><th id="123">123</th><td>			<a class="ref" href="../cache.h.html#prepare_packed_git" title='prepare_packed_git' data-ref="prepare_packed_git">prepare_packed_git</a>();</td></tr>
+<tr><th id="124">124</th><td>		<b>for</b> (<a class="local col0 ref" href="#20p" title='p' data-ref="20p">p</a> = <a class="ref" href="../cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a>; <a class="local col0 ref" href="#20p" title='p' data-ref="20p">p</a>; <a class="local col0 ref" href="#20p" title='p' data-ref="20p">p</a> = <a class="local col0 ref" href="#20p" title='p' data-ref="20p">p</a>-&gt;<a class="ref" href="../cache.h.html#packed_git::next" title='packed_git::next' data-ref="packed_git::next">next</a>) {</td></tr>
+<tr><th id="125">125</th><td>			<b>if</b> (!<a class="local col0 ref" href="#20p" title='p' data-ref="20p">p</a>-&gt;<a class="ref" href="../cache.h.html#packed_git::pack_local" title='packed_git::pack_local' data-ref="packed_git::pack_local">pack_local</a>)</td></tr>
+<tr><th id="126">126</th><td>				<b>continue</b>;</td></tr>
+<tr><th id="127">127</th><td>			<b>if</b> (<a class="ref" href="../cache.h.html#open_pack_index" title='open_pack_index' data-ref="open_pack_index">open_pack_index</a>(<a class="local col0 ref" href="#20p" title='p' data-ref="20p">p</a>))</td></tr>
+<tr><th id="128">128</th><td>				<b>continue</b>;</td></tr>
+<tr><th id="129">129</th><td>			<a class="tu ref" href="#packed" title='packed' data-use='w' data-ref="packed">packed</a> += <a class="local col0 ref" href="#20p" title='p' data-ref="20p">p</a>-&gt;<a class="ref" href="../cache.h.html#packed_git::num_objects" title='packed_git::num_objects' data-ref="packed_git::num_objects">num_objects</a>;</td></tr>
+<tr><th id="130">130</th><td>			<a class="local col2 ref" href="#22size_pack" title='size_pack' data-ref="22size_pack">size_pack</a> += <a class="local col0 ref" href="#20p" title='p' data-ref="20p">p</a>-&gt;<a class="ref" href="../cache.h.html#packed_git::pack_size" title='packed_git::pack_size' data-ref="packed_git::pack_size">pack_size</a> + <a class="local col0 ref" href="#20p" title='p' data-ref="20p">p</a>-&gt;<a class="ref" href="../cache.h.html#packed_git::index_size" title='packed_git::index_size' data-ref="packed_git::index_size">index_size</a>;</td></tr>
+<tr><th id="131">131</th><td>			<a class="local col1 ref" href="#21num_pack" title='num_pack' data-ref="21num_pack">num_pack</a>++;</td></tr>
+<tr><th id="132">132</th><td>		}</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>		<b>if</b> (<a class="local col8 ref" href="#18human_readable" title='human_readable' data-ref="18human_readable">human_readable</a>) {</td></tr>
+<tr><th id="135">135</th><td>			<a class="ref" href="../strbuf.h.html#strbuf_humanise_bytes" title='strbuf_humanise_bytes' data-ref="strbuf_humanise_bytes">strbuf_humanise_bytes</a>(&amp;<a class="local col3 ref" href="#23loose_buf" title='loose_buf' data-ref="23loose_buf">loose_buf</a>, <a class="tu ref" href="#loose_size" title='loose_size' data-use='r' data-ref="loose_size">loose_size</a>);</td></tr>
+<tr><th id="136">136</th><td>			<a class="ref" href="../strbuf.h.html#strbuf_humanise_bytes" title='strbuf_humanise_bytes' data-ref="strbuf_humanise_bytes">strbuf_humanise_bytes</a>(&amp;<a class="local col4 ref" href="#24pack_buf" title='pack_buf' data-ref="24pack_buf">pack_buf</a>, <a class="local col2 ref" href="#22size_pack" title='size_pack' data-ref="22size_pack">size_pack</a>);</td></tr>
+<tr><th id="137">137</th><td>			<a class="ref" href="../strbuf.h.html#strbuf_humanise_bytes" title='strbuf_humanise_bytes' data-ref="strbuf_humanise_bytes">strbuf_humanise_bytes</a>(&amp;<a class="local col5 ref" href="#25garbage_buf" title='garbage_buf' data-ref="25garbage_buf">garbage_buf</a>, <a class="tu ref" href="#size_garbage" title='size_garbage' data-use='r' data-ref="size_garbage">size_garbage</a>);</td></tr>
+<tr><th id="138">138</th><td>		} <b>else</b> {</td></tr>
+<tr><th id="139">139</th><td>			<a class="ref" href="../strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(&amp;<a class="local col3 ref" href="#23loose_buf" title='loose_buf' data-ref="23loose_buf">loose_buf</a>, <q>"%lu"</q>,</td></tr>
+<tr><th id="140">140</th><td>				    (<em>unsigned</em> <em>long</em>)(<a class="tu ref" href="#loose_size" title='loose_size' data-use='r' data-ref="loose_size">loose_size</a> / <var>1024</var>));</td></tr>
+<tr><th id="141">141</th><td>			<a class="ref" href="../strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(&amp;<a class="local col4 ref" href="#24pack_buf" title='pack_buf' data-ref="24pack_buf">pack_buf</a>, <q>"%lu"</q>,</td></tr>
+<tr><th id="142">142</th><td>				    (<em>unsigned</em> <em>long</em>)(<a class="local col2 ref" href="#22size_pack" title='size_pack' data-ref="22size_pack">size_pack</a> / <var>1024</var>));</td></tr>
+<tr><th id="143">143</th><td>			<a class="ref" href="../strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(&amp;<a class="local col5 ref" href="#25garbage_buf" title='garbage_buf' data-ref="25garbage_buf">garbage_buf</a>, <q>"%lu"</q>,</td></tr>
+<tr><th id="144">144</th><td>				    (<em>unsigned</em> <em>long</em>)(<a class="tu ref" href="#size_garbage" title='size_garbage' data-use='r' data-ref="size_garbage">size_garbage</a> / <var>1024</var>));</td></tr>
+<tr><th id="145">145</th><td>		}</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>		<a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"count: %lu\n"</q>, <a class="tu ref" href="#loose" title='loose' data-use='r' data-ref="loose">loose</a>);</td></tr>
+<tr><th id="148">148</th><td>		<a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"size: %s\n"</q>, <a class="local col3 ref" href="#23loose_buf" title='loose_buf' data-ref="23loose_buf">loose_buf</a>.<a class="ref" href="../strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="149">149</th><td>		<a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"in-pack: %lu\n"</q>, <a class="tu ref" href="#packed" title='packed' data-use='r' data-ref="packed">packed</a>);</td></tr>
+<tr><th id="150">150</th><td>		<a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"packs: %lu\n"</q>, <a class="local col1 ref" href="#21num_pack" title='num_pack' data-ref="21num_pack">num_pack</a>);</td></tr>
+<tr><th id="151">151</th><td>		<a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"size-pack: %s\n"</q>, <a class="local col4 ref" href="#24pack_buf" title='pack_buf' data-ref="24pack_buf">pack_buf</a>.<a class="ref" href="../strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="152">152</th><td>		<a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"prune-packable: %lu\n"</q>, <a class="tu ref" href="#packed_loose" title='packed_loose' data-use='r' data-ref="packed_loose">packed_loose</a>);</td></tr>
+<tr><th id="153">153</th><td>		<a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"garbage: %lu\n"</q>, <a class="tu ref" href="#garbage" title='garbage' data-use='r' data-ref="garbage">garbage</a>);</td></tr>
+<tr><th id="154">154</th><td>		<a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"size-garbage: %s\n"</q>, <a class="local col5 ref" href="#25garbage_buf" title='garbage_buf' data-ref="25garbage_buf">garbage_buf</a>.<a class="ref" href="../strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="155">155</th><td>		<a class="ref" href="../cache.h.html#foreach_alt_odb" title='foreach_alt_odb' data-ref="foreach_alt_odb">foreach_alt_odb</a>(<a class="tu ref" href="#print_alternate" title='print_alternate' data-use='r' data-ref="print_alternate">print_alternate</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="156">156</th><td>		<a class="ref" href="../strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(&amp;<a class="local col3 ref" href="#23loose_buf" title='loose_buf' data-ref="23loose_buf">loose_buf</a>);</td></tr>
+<tr><th id="157">157</th><td>		<a class="ref" href="../strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(&amp;<a class="local col4 ref" href="#24pack_buf" title='pack_buf' data-ref="24pack_buf">pack_buf</a>);</td></tr>
+<tr><th id="158">158</th><td>		<a class="ref" href="../strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(&amp;<a class="local col5 ref" href="#25garbage_buf" title='garbage_buf' data-ref="25garbage_buf">garbage_buf</a>);</td></tr>
+<tr><th id="159">159</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="160">160</th><td>		<b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col6 decl" id="26buf" title='buf' data-type='struct strbuf' data-ref="26buf">buf</dfn> = <a class="macro" href="../strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="161">161</th><td>		<b>if</b> (<a class="local col8 ref" href="#18human_readable" title='human_readable' data-ref="18human_readable">human_readable</a>)</td></tr>
+<tr><th id="162">162</th><td>			<a class="ref" href="../strbuf.h.html#strbuf_humanise_bytes" title='strbuf_humanise_bytes' data-ref="strbuf_humanise_bytes">strbuf_humanise_bytes</a>(&amp;<a class="local col6 ref" href="#26buf" title='buf' data-ref="26buf">buf</a>, <a class="tu ref" href="#loose_size" title='loose_size' data-use='r' data-ref="loose_size">loose_size</a>);</td></tr>
+<tr><th id="163">163</th><td>		<b>else</b></td></tr>
+<tr><th id="164">164</th><td>			<a class="ref" href="../strbuf.h.html#strbuf_addf" title='strbuf_addf' data-ref="strbuf_addf">strbuf_addf</a>(&amp;<a class="local col6 ref" href="#26buf" title='buf' data-ref="26buf">buf</a>, <q>"%lu kilobytes"</q>,</td></tr>
+<tr><th id="165">165</th><td>				    (<em>unsigned</em> <em>long</em>)(<a class="tu ref" href="#loose_size" title='loose_size' data-use='r' data-ref="loose_size">loose_size</a> / <var>1024</var>));</td></tr>
+<tr><th id="166">166</th><td>		<a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"%lu objects, %s\n"</q>, <a class="tu ref" href="#loose" title='loose' data-use='r' data-ref="loose">loose</a>, <a class="local col6 ref" href="#26buf" title='buf' data-ref="26buf">buf</a>.<a class="ref" href="../strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="167">167</th><td>		<a class="ref" href="../strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(&amp;<a class="local col6 ref" href="#26buf" title='buf' data-ref="26buf">buf</a>);</td></tr>
+<tr><th id="168">168</th><td>	}</td></tr>
+<tr><th id="169">169</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="170">170</th><td>}</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

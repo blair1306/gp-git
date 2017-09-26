@@ -1,0 +1,20 @@
+<dec f='codebrowser/cache.h' l='475' type='int'/>
+<use f='codebrowser/builtin/init-db.c' l='207' u='w' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='478' u='a' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='478' u='a' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='478' u='a' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='478' u='a' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='530' u='r' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='545' u='r' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='557' u='r' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='558' u='w' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='560' u='r' c='cmd_init_db'/>
+<use f='codebrowser/config.c' l='1039' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='25' type='int'/>
+<use f='codebrowser/environment.c' l='166' u='r' c='is_bare_repository'/>
+<doc f='codebrowser/environment.c' l='25'>/* unspecified */</doc>
+<use f='codebrowser/git.c' l='151' u='w' c='handle_options'/>
+<use f='codebrowser/setup.c' l='474' u='w' c='check_repository_format_gently'/>
+<use f='codebrowser/setup.c' l='475' u='r' c='check_repository_format_gently'/>
+<use f='codebrowser/setup.c' l='663' u='r' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='748' u='r' c='setup_discovered_git_dir'/>

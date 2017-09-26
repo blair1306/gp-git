@@ -1,0 +1,10 @@
+<dec f='codebrowser/refs/ref-cache.h' l='89' type='struct ref_cache *'/>
+<use f='codebrowser/refs/files-backend.c' l='195' u='r' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='243' u='r' c='loose_fill_ref_dir'/>
+<offset>128</offset>
+<doc f='codebrowser/refs/ref-cache.h' l='88'>/* The ref_cache containing this entry: */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='25' u='r' c='get_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='28' u='r' c='get_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='28' u='r' c='get_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='96' u='w' c='create_dir_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='167' u='r' c='search_for_subdir'/>

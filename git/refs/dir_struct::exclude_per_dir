@@ -1,0 +1,35 @@
+<dec f='codebrowser/dir.h' l='161' type='const char *'/>
+<offset>320</offset>
+<doc f='codebrowser/dir.h' l='160'>/* Exclude info */</doc>
+<use f='codebrowser/builtin/ls-files.c' l='551' u='a' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='551' u='a' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='551' u='a' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='551' u='a' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='606' u='r' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/read-tree.c' l='64' u='w' c='exclude_per_directory_cb'/>
+<use f='codebrowser/dir.c' l='1157' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1181' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2055' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2056' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2324' u='w' c='setup_standard_excludes'/>
+<use f='codebrowser/unpack-trees.c' l='1602' u='w' c='verify_clean_subdirectory'/>
+<use f='codebrowser/unpack-trees.c' l='1602' u='r' c='verify_clean_subdirectory'/>

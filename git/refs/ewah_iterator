@@ -1,0 +1,10 @@
+<def f='codebrowser/ewah/ewok.h' l='134' ll='142'/>
+<size>64</size>
+<mbr r='ewah_iterator::buffer' o='0' t='const eword_t *'/>
+<mbr r='ewah_iterator::buffer_size' o='64' t='size_t'/>
+<mbr r='ewah_iterator::pointer' o='128' t='size_t'/>
+<mbr r='ewah_iterator::compressed' o='192' t='eword_t'/>
+<mbr r='ewah_iterator::literals' o='256' t='eword_t'/>
+<mbr r='ewah_iterator::rl' o='320' t='eword_t'/>
+<mbr r='ewah_iterator::lw' o='384' t='eword_t'/>
+<mbr r='ewah_iterator::b' o='448' t='int'/>

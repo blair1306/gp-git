@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='665' type='struct cache_entry * make_cache_entry(unsigned int mode, const unsigned char * sha1, const char * path, int stage, unsigned int refresh_options)'/>
+<use f='codebrowser/apply.c' l='4084' u='c' c='build_fake_ancestor'/>
+<use f='codebrowser/builtin/checkout.c' l='233' u='c' c='checkout_merged'/>
+<use f='codebrowser/builtin/difftool.c' l='324' u='c' c='checkout_path'/>
+<use f='codebrowser/builtin/difftool.c' l='491' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/reset.c' l='135' u='c' c='update_index_from_diff'/>
+<use f='codebrowser/merge-recursive.c' l='230' u='c' c='add_cacheinfo'/>
+<def f='codebrowser/read-cache.c' l='728' ll='754' type='struct cache_entry * make_cache_entry(unsigned int mode, const unsigned char * sha1, const char * path, int stage, unsigned int refresh_options)'/>
+<use f='codebrowser/resolve-undo.c' l='148' u='c' c='unmerge_index_entry_at'/>

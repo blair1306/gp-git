@@ -1,0 +1,6 @@
+<dec f='codebrowser/commit.h' l='30' type='struct name_decoration *'/>
+<offset>0</offset>
+<use f='codebrowser/log-tree.c' l='84' u='w' c='add_name_decoration'/>
+<use f='codebrowser/log-tree.c' l='192' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='209' u='r' c='current_pointed_by_HEAD'/>
+<use f='codebrowser/log-tree.c' l='276' u='r' c='format_decorations_extended'/>

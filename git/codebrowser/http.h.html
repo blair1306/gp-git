@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>http.h source code [codebrowser/http.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="active_request_slot,buffer,http_follow_config,http_get_options,http_object_request,http_pack_request,slot_results "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/http.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='http.h.html'>http.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/HTTP_H">HTTP_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/HTTP_H" data-ref="_M/HTTP_H">HTTP_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../include/curl/curl.h.html">&lt;curl/curl.h&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../include/curl/easy.h.html">&lt;curl/easy.h&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="strbuf.h.html">"strbuf.h"</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="remote.h.html">"remote.h"</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="url.h.html">"url.h"</a></u></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><i>/*</i></td></tr>
+<tr><th id="14">14</th><td><i> * We detect based on the cURL version if multi-transfer is</i></td></tr>
+<tr><th id="15">15</th><td><i> * usable in this implementation and define this symbol accordingly.</i></td></tr>
+<tr><th id="16">16</th><td><i> * This shouldn't be set by the Makefile or by the user (e.g. via CFLAGS).</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td><u>#undef <span class="macro" data-ref="_M/USE_CURL_MULTI">USE_CURL_MULTI</span></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">if</span> <a class="macro" href="../include/curl/curlver.h.html#60" title="0x072f00" data-ref="_M/LIBCURL_VERSION_NUM">LIBCURL_VERSION_NUM</a> &gt;= 0x071000</u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/USE_CURL_MULTI" data-ref="_M/USE_CURL_MULTI">USE_CURL_MULTI</dfn></u></td></tr>
+<tr><th id="22">22</th><td><u>#define <dfn class="macro" id="_M/DEFAULT_MAX_REQUESTS" data-ref="_M/DEFAULT_MAX_REQUESTS">DEFAULT_MAX_REQUESTS</dfn> 5</u></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="20">endif</span></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="25">if</span> <a class="macro" href="../include/curl/curlver.h.html#60" title="0x072f00" data-ref="_M/LIBCURL_VERSION_NUM">LIBCURL_VERSION_NUM</a> &lt; 0x070704</u></td></tr>
+<tr><th id="26">26</th><td><u>#define curl_global_cleanup() do { /* nothing */ } while (0)</u></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="25">endif</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">if</span> <a class="macro" href="../include/curl/curlver.h.html#60" title="0x072f00" data-ref="_M/LIBCURL_VERSION_NUM">LIBCURL_VERSION_NUM</a> &lt; 0x070800</u></td></tr>
+<tr><th id="29">29</th><td><u>#define curl_global_init(a) do { /* nothing */ } while (0)</u></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="28">endif</span></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="32">if</span> (<a class="macro" href="../include/curl/curlver.h.html#60" title="0x072f00" data-ref="_M/LIBCURL_VERSION_NUM">LIBCURL_VERSION_NUM</a> &lt; 0x070c04) || (<a class="macro" href="../include/curl/curlver.h.html#60" title="0x072f00" data-ref="_M/LIBCURL_VERSION_NUM">LIBCURL_VERSION_NUM</a> == 0x071000)</u></td></tr>
+<tr><th id="33">33</th><td><u>#define NO_CURL_EASY_DUPHANDLE</u></td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="32">endif</span></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">if</span> <a class="macro" href="../include/curl/curlver.h.html#60" title="0x072f00" data-ref="_M/LIBCURL_VERSION_NUM">LIBCURL_VERSION_NUM</a> &lt; 0x070a03</u></td></tr>
+<tr><th id="37">37</th><td><u>#define CURLE_HTTP_RETURNED_ERROR CURLE_HTTP_NOT_FOUND</u></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="40">if</span> <a class="macro" href="../include/curl/curlver.h.html#60" title="0x072f00" data-ref="_M/LIBCURL_VERSION_NUM">LIBCURL_VERSION_NUM</a> &lt; 0x070c03</u></td></tr>
+<tr><th id="41">41</th><td><u>#define NO_CURL_IOCTL</u></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="40">endif</span></u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><i>/*</i></td></tr>
+<tr><th id="45">45</th><td><i> * CURLOPT_USE_SSL was known as CURLOPT_FTP_SSL up to 7.16.4,</i></td></tr>
+<tr><th id="46">46</th><td><i> * and the constants were known as CURLFTPSSL_*</i></td></tr>
+<tr><th id="47">47</th><td><i>*/</i></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="48">if</span> !defined(<span class="macro" data-ref="_M/CURLOPT_USE_SSL">CURLOPT_USE_SSL</span>) &amp;&amp; defined(<a class="macro" href="../include/curl/curl.h.html#1694" data-ref="_M/CURLOPT_FTP_SSL">CURLOPT_FTP_SSL</a>)</u></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/CURLOPT_USE_SSL" data-ref="_M/CURLOPT_USE_SSL">CURLOPT_USE_SSL</dfn> CURLOPT_FTP_SSL</u></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/CURLUSESSL_TRY" data-ref="_M/CURLUSESSL_TRY">CURLUSESSL_TRY</dfn> CURLFTPSSL_TRY</u></td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="48">endif</span></u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><b>struct</b> <dfn class="type def" id="slot_results" title='slot_results' data-ref="slot_results">slot_results</dfn> {</td></tr>
+<tr><th id="54">54</th><td>	<a class="typedef" href="../include/curl/curl.h.html#CURLcode" title='CURLcode' data-type='enum CURLcode' data-ref="CURLcode">CURLcode</a> <dfn class="decl" id="slot_results::curl_result" title='slot_results::curl_result' data-ref="slot_results::curl_result">curl_result</dfn>;</td></tr>
+<tr><th id="55">55</th><td>	<em>long</em> <dfn class="decl" id="slot_results::http_code" title='slot_results::http_code' data-ref="slot_results::http_code">http_code</dfn>;</td></tr>
+<tr><th id="56">56</th><td>	<em>long</em> <dfn class="decl" id="slot_results::auth_avail" title='slot_results::auth_avail' data-ref="slot_results::auth_avail">auth_avail</dfn>;</td></tr>
+<tr><th id="57">57</th><td>	<em>long</em> <dfn class="decl" id="slot_results::http_connectcode" title='slot_results::http_connectcode' data-ref="slot_results::http_connectcode">http_connectcode</dfn>;</td></tr>
+<tr><th id="58">58</th><td>};</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><b>struct</b> <dfn class="type def" id="active_request_slot" title='active_request_slot' data-ref="active_request_slot">active_request_slot</dfn> {</td></tr>
+<tr><th id="61">61</th><td>	<a class="typedef" href="../include/curl/curl.h.html#CURL" title='CURL' data-type='void' data-ref="CURL">CURL</a> *<dfn class="decl" id="active_request_slot::curl" title='active_request_slot::curl' data-ref="active_request_slot::curl">curl</dfn>;</td></tr>
+<tr><th id="62">62</th><td>	<em>int</em> <dfn class="decl" id="active_request_slot::in_use" title='active_request_slot::in_use' data-ref="active_request_slot::in_use">in_use</dfn>;</td></tr>
+<tr><th id="63">63</th><td>	<a class="typedef" href="../include/curl/curl.h.html#CURLcode" title='CURLcode' data-type='enum CURLcode' data-ref="CURLcode">CURLcode</a> <dfn class="decl" id="active_request_slot::curl_result" title='active_request_slot::curl_result' data-ref="active_request_slot::curl_result">curl_result</dfn>;</td></tr>
+<tr><th id="64">64</th><td>	<em>long</em> <dfn class="decl" id="active_request_slot::http_code" title='active_request_slot::http_code' data-ref="active_request_slot::http_code">http_code</dfn>;</td></tr>
+<tr><th id="65">65</th><td>	<em>int</em> *<dfn class="decl" id="active_request_slot::finished" title='active_request_slot::finished' data-ref="active_request_slot::finished">finished</dfn>;</td></tr>
+<tr><th id="66">66</th><td>	<b>struct</b> <a class="type" href="#slot_results" title='slot_results' data-ref="slot_results">slot_results</a> *<dfn class="decl" id="active_request_slot::results" title='active_request_slot::results' data-ref="active_request_slot::results">results</dfn>;</td></tr>
+<tr><th id="67">67</th><td>	<em>void</em> *<dfn class="decl" id="active_request_slot::callback_data" title='active_request_slot::callback_data' data-ref="active_request_slot::callback_data">callback_data</dfn>;</td></tr>
+<tr><th id="68">68</th><td>	<em>void</em> (*<dfn class="decl" id="active_request_slot::callback_func" title='active_request_slot::callback_func' data-ref="active_request_slot::callback_func">callback_func</dfn>)(<em>void</em> *<dfn class="local col5 decl" id="175data" title='data' data-type='void *' data-ref="175data">data</dfn>);</td></tr>
+<tr><th id="69">69</th><td>	<b>struct</b> <a class="type" href="#active_request_slot" title='active_request_slot' data-ref="active_request_slot">active_request_slot</a> *<dfn class="decl" id="active_request_slot::next" title='active_request_slot::next' data-ref="active_request_slot::next">next</dfn>;</td></tr>
+<tr><th id="70">70</th><td>};</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><b>struct</b> <dfn class="type def" id="buffer" title='buffer' data-ref="buffer">buffer</dfn> {</td></tr>
+<tr><th id="73">73</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="buffer::buf" title='buffer::buf' data-ref="buffer::buf">buf</dfn>;</td></tr>
+<tr><th id="74">74</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="buffer::posn" title='buffer::posn' data-ref="buffer::posn">posn</dfn>;</td></tr>
+<tr><th id="75">75</th><td>};</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><i>/* Curl request read/write callbacks */</i></td></tr>
+<tr><th id="78">78</th><td><b>extern</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="fread_buffer" title='fread_buffer' data-ref="fread_buffer">fread_buffer</dfn>(<em>char</em> *<dfn class="local col6 decl" id="176ptr" title='ptr' data-type='char *' data-ref="176ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="177eltsize" title='eltsize' data-type='size_t' data-ref="177eltsize">eltsize</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="178nmemb" title='nmemb' data-type='size_t' data-ref="178nmemb">nmemb</dfn>, <em>void</em> *<dfn class="local col9 decl" id="179strbuf" title='strbuf' data-type='void *' data-ref="179strbuf">strbuf</dfn>);</td></tr>
+<tr><th id="79">79</th><td><b>extern</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="fwrite_buffer" title='fwrite_buffer' data-ref="fwrite_buffer">fwrite_buffer</dfn>(<em>char</em> *<dfn class="local col0 decl" id="180ptr" title='ptr' data-type='char *' data-ref="180ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="181eltsize" title='eltsize' data-type='size_t' data-ref="181eltsize">eltsize</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="182nmemb" title='nmemb' data-type='size_t' data-ref="182nmemb">nmemb</dfn>, <em>void</em> *<dfn class="local col3 decl" id="183strbuf" title='strbuf' data-type='void *' data-ref="183strbuf">strbuf</dfn>);</td></tr>
+<tr><th id="80">80</th><td><b>extern</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="fwrite_null" title='fwrite_null' data-ref="fwrite_null">fwrite_null</dfn>(<em>char</em> *<dfn class="local col4 decl" id="184ptr" title='ptr' data-type='char *' data-ref="184ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="185eltsize" title='eltsize' data-type='size_t' data-ref="185eltsize">eltsize</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="186nmemb" title='nmemb' data-type='size_t' data-ref="186nmemb">nmemb</dfn>, <em>void</em> *<dfn class="local col7 decl" id="187strbuf" title='strbuf' data-type='void *' data-ref="187strbuf">strbuf</dfn>);</td></tr>
+<tr><th id="81">81</th><td><u>#<span data-ppcond="81">ifndef</span> <span class="macro" data-ref="_M/NO_CURL_IOCTL">NO_CURL_IOCTL</span></u></td></tr>
+<tr><th id="82">82</th><td><b>extern</b> <a class="typedef" href="../include/curl/curl.h.html#curlioerr" title='curlioerr' data-type='enum curlioerr' data-ref="curlioerr">curlioerr</a> <dfn class="decl" id="ioctl_buffer" title='ioctl_buffer' data-ref="ioctl_buffer">ioctl_buffer</dfn>(<a class="typedef" href="../include/curl/curl.h.html#CURL" title='CURL' data-type='void' data-ref="CURL">CURL</a> *<dfn class="local col8 decl" id="188handle" title='handle' data-type='CURL *' data-ref="188handle">handle</dfn>, <em>int</em> <dfn class="local col9 decl" id="189cmd" title='cmd' data-type='int' data-ref="189cmd">cmd</dfn>, <em>void</em> *<dfn class="local col0 decl" id="190clientp" title='clientp' data-type='void *' data-ref="190clientp">clientp</dfn>);</td></tr>
+<tr><th id="83">83</th><td><u>#<span data-ppcond="81">endif</span></u></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><i>/* Slot lifecycle functions */</i></td></tr>
+<tr><th id="86">86</th><td><b>extern</b> <b>struct</b> <a class="type" href="#active_request_slot" title='active_request_slot' data-ref="active_request_slot">active_request_slot</a> *<dfn class="decl" id="get_active_slot" title='get_active_slot' data-ref="get_active_slot">get_active_slot</dfn>(<em>void</em>);</td></tr>
+<tr><th id="87">87</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="start_active_slot" title='start_active_slot' data-ref="start_active_slot">start_active_slot</dfn>(<b>struct</b> <a class="type" href="#active_request_slot" title='active_request_slot' data-ref="active_request_slot">active_request_slot</a> *<dfn class="local col1 decl" id="191slot" title='slot' data-type='struct active_request_slot *' data-ref="191slot">slot</dfn>);</td></tr>
+<tr><th id="88">88</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="run_active_slot" title='run_active_slot' data-ref="run_active_slot">run_active_slot</dfn>(<b>struct</b> <a class="type" href="#active_request_slot" title='active_request_slot' data-ref="active_request_slot">active_request_slot</a> *<dfn class="local col2 decl" id="192slot" title='slot' data-type='struct active_request_slot *' data-ref="192slot">slot</dfn>);</td></tr>
+<tr><th id="89">89</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="finish_all_active_slots" title='finish_all_active_slots' data-ref="finish_all_active_slots">finish_all_active_slots</dfn>(<em>void</em>);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i>/*</i></td></tr>
+<tr><th id="92">92</th><td><i> * This will run one slot to completion in a blocking manner, similar to how</i></td></tr>
+<tr><th id="93">93</th><td><i> * curl_easy_perform would work (but we don't want to use that, because</i></td></tr>
+<tr><th id="94">94</th><td><i> * we do not want to intermingle calls to curl_multi and curl_easy).</i></td></tr>
+<tr><th id="95">95</th><td><i> *</i></td></tr>
+<tr><th id="96">96</th><td><i> */</i></td></tr>
+<tr><th id="97">97</th><td><em>int</em> <dfn class="decl" id="run_one_slot" title='run_one_slot' data-ref="run_one_slot">run_one_slot</dfn>(<b>struct</b> <a class="type" href="#active_request_slot" title='active_request_slot' data-ref="active_request_slot">active_request_slot</a> *<dfn class="local col3 decl" id="193slot" title='slot' data-type='struct active_request_slot *' data-ref="193slot">slot</dfn>,</td></tr>
+<tr><th id="98">98</th><td>		 <b>struct</b> <a class="type" href="#slot_results" title='slot_results' data-ref="slot_results">slot_results</a> *<dfn class="local col4 decl" id="194results" title='results' data-type='struct slot_results *' data-ref="194results">results</dfn>);</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><u>#<span data-ppcond="100">ifdef</span> <a class="macro" href="#21" data-ref="_M/USE_CURL_MULTI">USE_CURL_MULTI</a></u></td></tr>
+<tr><th id="101">101</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="fill_active_slots" title='fill_active_slots' data-ref="fill_active_slots">fill_active_slots</dfn>(<em>void</em>);</td></tr>
+<tr><th id="102">102</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="add_fill_function" title='add_fill_function' data-ref="add_fill_function">add_fill_function</dfn>(<em>void</em> *<dfn class="local col5 decl" id="195data" title='data' data-type='void *' data-ref="195data">data</dfn>, <em>int</em> (*<dfn class="local col6 decl" id="196fill" title='fill' data-type='int (*)(void *)' data-ref="196fill">fill</dfn>)(<em>void</em> *));</td></tr>
+<tr><th id="103">103</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="step_active_slots" title='step_active_slots' data-ref="step_active_slots">step_active_slots</dfn>(<em>void</em>);</td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="100">endif</span></u></td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="http_init" title='http_init' data-ref="http_init">http_init</dfn>(<b>struct</b> <a class="type" href="remote.h.html#remote" title='remote' data-ref="remote">remote</a> *<dfn class="local col7 decl" id="197remote" title='remote' data-type='struct remote *' data-ref="197remote">remote</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="198url" title='url' data-type='const char *' data-ref="198url">url</dfn>,</td></tr>
+<tr><th id="107">107</th><td>		      <em>int</em> <dfn class="local col9 decl" id="199proactive_auth" title='proactive_auth' data-type='int' data-ref="199proactive_auth">proactive_auth</dfn>);</td></tr>
+<tr><th id="108">108</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="http_cleanup" title='http_cleanup' data-ref="http_cleanup">http_cleanup</dfn>(<em>void</em>);</td></tr>
+<tr><th id="109">109</th><td><b>extern</b> <b>struct</b> <a class="type" href="../include/curl/curl.h.html#curl_slist" title='curl_slist' data-ref="curl_slist">curl_slist</a> *<dfn class="decl" id="http_copy_default_headers" title='http_copy_default_headers' data-ref="http_copy_default_headers">http_copy_default_headers</dfn>(<em>void</em>);</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><b>extern</b> <em>long</em> <em>int</em> <dfn class="decl" id="git_curl_ipresolve" title='git_curl_ipresolve' data-ref="git_curl_ipresolve">git_curl_ipresolve</dfn>;</td></tr>
+<tr><th id="112">112</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="active_requests" title='active_requests' data-ref="active_requests">active_requests</dfn>;</td></tr>
+<tr><th id="113">113</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="http_is_verbose" title='http_is_verbose' data-ref="http_is_verbose">http_is_verbose</dfn>;</td></tr>
+<tr><th id="114">114</th><td><b>extern</b> <a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="decl" id="http_post_buffer" title='http_post_buffer' data-ref="http_post_buffer">http_post_buffer</dfn>;</td></tr>
+<tr><th id="115">115</th><td><b>extern</b> <b>struct</b> <dfn class="type" id="credential" title='credential' data-ref="credential"><a class="type" href="#credential" title='credential' data-ref="credential">credential</a></dfn> <dfn class="decl" id="http_auth" title='http_auth' data-ref="http_auth">http_auth</dfn>;</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><b>extern</b> <em>char</em> <dfn class="decl" id="curl_errorstr" title='curl_errorstr' data-ref="curl_errorstr">curl_errorstr</dfn>[<a class="macro" href="../include/curl/curl.h.html#678" title="256" data-ref="_M/CURL_ERROR_SIZE">CURL_ERROR_SIZE</a>];</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><b>enum</b> <dfn class="type def" id="http_follow_config" title='http_follow_config' data-ref="http_follow_config">http_follow_config</dfn> {</td></tr>
+<tr><th id="120">120</th><td>	<dfn class="enum" id="http_follow_config::HTTP_FOLLOW_NONE" title='http_follow_config::HTTP_FOLLOW_NONE' data-ref="http_follow_config::HTTP_FOLLOW_NONE">HTTP_FOLLOW_NONE</dfn>,</td></tr>
+<tr><th id="121">121</th><td>	<dfn class="enum" id="http_follow_config::HTTP_FOLLOW_ALWAYS" title='http_follow_config::HTTP_FOLLOW_ALWAYS' data-ref="http_follow_config::HTTP_FOLLOW_ALWAYS">HTTP_FOLLOW_ALWAYS</dfn>,</td></tr>
+<tr><th id="122">122</th><td>	<dfn class="enum" id="http_follow_config::HTTP_FOLLOW_INITIAL" title='http_follow_config::HTTP_FOLLOW_INITIAL' data-ref="http_follow_config::HTTP_FOLLOW_INITIAL">HTTP_FOLLOW_INITIAL</dfn></td></tr>
+<tr><th id="123">123</th><td>};</td></tr>
+<tr><th id="124">124</th><td><b>extern</b> <b>enum</b> <a class="type" href="#http_follow_config" title='http_follow_config' data-ref="http_follow_config">http_follow_config</a> <dfn class="decl" id="http_follow_config" title='http_follow_config' data-ref="http_follow_config">http_follow_config</dfn>;</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="missing__target" title='missing__target' data-ref="missing__target">missing__target</dfn>(<em>int</em> <dfn class="local col0 decl" id="200code" title='code' data-type='int' data-ref="200code">code</dfn>, <em>int</em> <dfn class="local col1 decl" id="201result" title='result' data-type='int' data-ref="201result">result</dfn>)</td></tr>
+<tr><th id="127">127</th><td>{</td></tr>
+<tr><th id="128">128</th><td>	<b>return</b>	<i>/* file:// URL -- do we ever use one??? */</i></td></tr>
+<tr><th id="129">129</th><td>		(<a class="local col1 ref" href="#201result" title='result' data-ref="201result">result</a> == <a class="enum" href="../include/curl/curl.h.html#CURLE_FILE_COULDNT_READ_FILE" title='CURLE_FILE_COULDNT_READ_FILE' data-ref="CURLE_FILE_COULDNT_READ_FILE">CURLE_FILE_COULDNT_READ_FILE</a>) ||</td></tr>
+<tr><th id="130">130</th><td>		<i>/* <a href="http://">http://</a> and <a href="https://">https://</a> URL */</i></td></tr>
+<tr><th id="131">131</th><td>		(<a class="local col0 ref" href="#200code" title='code' data-ref="200code">code</a> == <var>404</var> &amp;&amp; <a class="local col1 ref" href="#201result" title='result' data-ref="201result">result</a> == <a class="enum" href="../include/curl/curl.h.html#CURLE_HTTP_RETURNED_ERROR" title='CURLE_HTTP_RETURNED_ERROR' data-ref="CURLE_HTTP_RETURNED_ERROR">CURLE_HTTP_RETURNED_ERROR</a>) ||</td></tr>
+<tr><th id="132">132</th><td>		<i>/* ftp:// URL */</i></td></tr>
+<tr><th id="133">133</th><td>		(<a class="local col0 ref" href="#200code" title='code' data-ref="200code">code</a> == <var>550</var> &amp;&amp; <a class="local col1 ref" href="#201result" title='result' data-ref="201result">result</a> == <a class="enum" href="../include/curl/curl.h.html#CURLE_FTP_COULDNT_RETR_FILE" title='CURLE_FTP_COULDNT_RETR_FILE' data-ref="CURLE_FTP_COULDNT_RETR_FILE">CURLE_FTP_COULDNT_RETR_FILE</a>)</td></tr>
+<tr><th id="134">134</th><td>		;</td></tr>
+<tr><th id="135">135</th><td>}</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><u>#define <dfn class="macro" id="_M/missing_target" data-ref="_M/missing_target">missing_target</dfn>(a) missing__target((a)-&gt;http_code, (a)-&gt;curl_result)</u></td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><i>/* Helpers for modifying and creating URLs */</i></td></tr>
+<tr><th id="140">140</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="append_remote_object_url" title='append_remote_object_url' data-ref="append_remote_object_url">append_remote_object_url</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col2 decl" id="202buf" title='buf' data-type='struct strbuf *' data-ref="202buf">buf</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="203url" title='url' data-type='const char *' data-ref="203url">url</dfn>,</td></tr>
+<tr><th id="141">141</th><td>				     <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="204hex" title='hex' data-type='const char *' data-ref="204hex">hex</dfn>,</td></tr>
+<tr><th id="142">142</th><td>				     <em>int</em> <dfn class="local col5 decl" id="205only_two_digit_prefix" title='only_two_digit_prefix' data-type='int' data-ref="205only_two_digit_prefix">only_two_digit_prefix</dfn>);</td></tr>
+<tr><th id="143">143</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="get_remote_object_url" title='get_remote_object_url' data-ref="get_remote_object_url">get_remote_object_url</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="206url" title='url' data-type='const char *' data-ref="206url">url</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="207hex" title='hex' data-type='const char *' data-ref="207hex">hex</dfn>,</td></tr>
+<tr><th id="144">144</th><td>				   <em>int</em> <dfn class="local col8 decl" id="208only_two_digit_prefix" title='only_two_digit_prefix' data-type='int' data-ref="208only_two_digit_prefix">only_two_digit_prefix</dfn>);</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><i>/* Options for http_get_*() */</i></td></tr>
+<tr><th id="147">147</th><td><b>struct</b> <dfn class="type def" id="http_get_options" title='http_get_options' data-ref="http_get_options">http_get_options</dfn> {</td></tr>
+<tr><th id="148">148</th><td>	<em>unsigned</em> <dfn class="decl" id="http_get_options::no_cache" title='http_get_options::no_cache' data-ref="http_get_options::no_cache">no_cache</dfn>:<var>1</var>,</td></tr>
+<tr><th id="149">149</th><td>		 <dfn class="decl" id="http_get_options::keep_error" title='http_get_options::keep_error' data-ref="http_get_options::keep_error">keep_error</dfn>:<var>1</var>,</td></tr>
+<tr><th id="150">150</th><td>		 <dfn class="decl" id="http_get_options::initial_request" title='http_get_options::initial_request' data-ref="http_get_options::initial_request">initial_request</dfn>:<var>1</var>;</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td>	<i>/* If non-NULL, returns the content-type of the response. */</i></td></tr>
+<tr><th id="153">153</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="decl" id="http_get_options::content_type" title='http_get_options::content_type' data-ref="http_get_options::content_type">content_type</dfn>;</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td>	<i>/*</i></td></tr>
+<tr><th id="156">156</th><td><i>	 * If non-NULL, and content_type above is non-NULL, returns</i></td></tr>
+<tr><th id="157">157</th><td><i>	 * the charset parameter from the content-type. If none is</i></td></tr>
+<tr><th id="158">158</th><td><i>	 * present, returns an empty string.</i></td></tr>
+<tr><th id="159">159</th><td><i>	 */</i></td></tr>
+<tr><th id="160">160</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="decl" id="http_get_options::charset" title='http_get_options::charset' data-ref="http_get_options::charset">charset</dfn>;</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td>	<i>/*</i></td></tr>
+<tr><th id="163">163</th><td><i>	 * If non-NULL, returns the URL we ended up at, including any</i></td></tr>
+<tr><th id="164">164</th><td><i>	 * redirects we followed.</i></td></tr>
+<tr><th id="165">165</th><td><i>	 */</i></td></tr>
+<tr><th id="166">166</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="decl" id="http_get_options::effective_url" title='http_get_options::effective_url' data-ref="http_get_options::effective_url">effective_url</dfn>;</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td>	<i>/*</i></td></tr>
+<tr><th id="169">169</th><td><i>	 * If both base_url and effective_url are non-NULL, the base URL will</i></td></tr>
+<tr><th id="170">170</th><td><i>	 * be munged to reflect any redirections going from the requested url</i></td></tr>
+<tr><th id="171">171</th><td><i>	 * to effective_url. See the definition of update_url_from_redirect</i></td></tr>
+<tr><th id="172">172</th><td><i>	 * for details.</i></td></tr>
+<tr><th id="173">173</th><td><i>	 */</i></td></tr>
+<tr><th id="174">174</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="decl" id="http_get_options::base_url" title='http_get_options::base_url' data-ref="http_get_options::base_url">base_url</dfn>;</td></tr>
+<tr><th id="175">175</th><td>};</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td><i>/* Return values for http_get_*() */</i></td></tr>
+<tr><th id="178">178</th><td><u>#define <dfn class="macro" id="_M/HTTP_OK" data-ref="_M/HTTP_OK">HTTP_OK</dfn>			0</u></td></tr>
+<tr><th id="179">179</th><td><u>#define <dfn class="macro" id="_M/HTTP_MISSING_TARGET" data-ref="_M/HTTP_MISSING_TARGET">HTTP_MISSING_TARGET</dfn>	1</u></td></tr>
+<tr><th id="180">180</th><td><u>#define <dfn class="macro" id="_M/HTTP_ERROR" data-ref="_M/HTTP_ERROR">HTTP_ERROR</dfn>		2</u></td></tr>
+<tr><th id="181">181</th><td><u>#define <dfn class="macro" id="_M/HTTP_START_FAILED" data-ref="_M/HTTP_START_FAILED">HTTP_START_FAILED</dfn>	3</u></td></tr>
+<tr><th id="182">182</th><td><u>#define <dfn class="macro" id="_M/HTTP_REAUTH" data-ref="_M/HTTP_REAUTH">HTTP_REAUTH</dfn>	4</u></td></tr>
+<tr><th id="183">183</th><td><u>#define <dfn class="macro" id="_M/HTTP_NOAUTH" data-ref="_M/HTTP_NOAUTH">HTTP_NOAUTH</dfn>	5</u></td></tr>
+<tr><th id="184">184</th><td></td></tr>
+<tr><th id="185">185</th><td><i>/*</i></td></tr>
+<tr><th id="186">186</th><td><i> * Requests a URL and stores the result in a strbuf.</i></td></tr>
+<tr><th id="187">187</th><td><i> *</i></td></tr>
+<tr><th id="188">188</th><td><i> * If the result pointer is NULL, a HTTP HEAD request is made instead of GET.</i></td></tr>
+<tr><th id="189">189</th><td><i> */</i></td></tr>
+<tr><th id="190">190</th><td><em>int</em> <dfn class="decl" id="http_get_strbuf" title='http_get_strbuf' data-ref="http_get_strbuf">http_get_strbuf</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="209url" title='url' data-type='const char *' data-ref="209url">url</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col0 decl" id="210result" title='result' data-type='struct strbuf *' data-ref="210result">result</dfn>, <b>struct</b> <a class="type" href="#http_get_options" title='http_get_options' data-ref="http_get_options">http_get_options</a> *<dfn class="local col1 decl" id="211options" title='options' data-type='struct http_get_options *' data-ref="211options">options</dfn>);</td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="http_fetch_ref" title='http_fetch_ref' data-ref="http_fetch_ref">http_fetch_ref</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="212base" title='base' data-type='const char *' data-ref="212base">base</dfn>, <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col3 decl" id="213ref" title='ref' data-type='struct ref *' data-ref="213ref">ref</dfn>);</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><i>/* Helpers for fetching packs */</i></td></tr>
+<tr><th id="195">195</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="http_get_info_packs" title='http_get_info_packs' data-ref="http_get_info_packs">http_get_info_packs</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="214base_url" title='base_url' data-type='const char *' data-ref="214base_url">base_url</dfn>,</td></tr>
+<tr><th id="196">196</th><td>	<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> **<dfn class="local col5 decl" id="215packs_head" title='packs_head' data-type='struct packed_git **' data-ref="215packs_head">packs_head</dfn>);</td></tr>
+<tr><th id="197">197</th><td></td></tr>
+<tr><th id="198">198</th><td><b>struct</b> <dfn class="type def" id="http_pack_request" title='http_pack_request' data-ref="http_pack_request">http_pack_request</dfn> {</td></tr>
+<tr><th id="199">199</th><td>	<em>char</em> *<dfn class="decl" id="http_pack_request::url" title='http_pack_request::url' data-ref="http_pack_request::url">url</dfn>;</td></tr>
+<tr><th id="200">200</th><td>	<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *<dfn class="decl" id="http_pack_request::target" title='http_pack_request::target' data-ref="http_pack_request::target">target</dfn>;</td></tr>
+<tr><th id="201">201</th><td>	<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> **<dfn class="decl" id="http_pack_request::lst" title='http_pack_request::lst' data-ref="http_pack_request::lst">lst</dfn>;</td></tr>
+<tr><th id="202">202</th><td>	<a class="typedef" href="../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="http_pack_request::packfile" title='http_pack_request::packfile' data-ref="http_pack_request::packfile">packfile</dfn>;</td></tr>
+<tr><th id="203">203</th><td>	<em>char</em> <dfn class="decl" id="http_pack_request::tmpfile" title='http_pack_request::tmpfile' data-ref="http_pack_request::tmpfile">tmpfile</dfn>[<a class="macro" href="../include/linux/limits.h.html#12" title="4096" data-ref="_M/PATH_MAX">PATH_MAX</a>];</td></tr>
+<tr><th id="204">204</th><td>	<b>struct</b> <a class="type" href="#active_request_slot" title='active_request_slot' data-ref="active_request_slot">active_request_slot</a> *<dfn class="decl" id="http_pack_request::slot" title='http_pack_request::slot' data-ref="http_pack_request::slot">slot</dfn>;</td></tr>
+<tr><th id="205">205</th><td>};</td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td><b>extern</b> <b>struct</b> <a class="type" href="#http_pack_request" title='http_pack_request' data-ref="http_pack_request">http_pack_request</a> *<dfn class="decl" id="new_http_pack_request" title='new_http_pack_request' data-ref="new_http_pack_request">new_http_pack_request</dfn>(</td></tr>
+<tr><th id="208">208</th><td>	<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *<dfn class="local col6 decl" id="216target" title='target' data-type='struct packed_git *' data-ref="216target">target</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="217base_url" title='base_url' data-type='const char *' data-ref="217base_url">base_url</dfn>);</td></tr>
+<tr><th id="209">209</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="finish_http_pack_request" title='finish_http_pack_request' data-ref="finish_http_pack_request">finish_http_pack_request</dfn>(<b>struct</b> <a class="type" href="#http_pack_request" title='http_pack_request' data-ref="http_pack_request">http_pack_request</a> *<dfn class="local col8 decl" id="218preq" title='preq' data-type='struct http_pack_request *' data-ref="218preq">preq</dfn>);</td></tr>
+<tr><th id="210">210</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="release_http_pack_request" title='release_http_pack_request' data-ref="release_http_pack_request">release_http_pack_request</dfn>(<b>struct</b> <a class="type" href="#http_pack_request" title='http_pack_request' data-ref="http_pack_request">http_pack_request</a> *<dfn class="local col9 decl" id="219preq" title='preq' data-type='struct http_pack_request *' data-ref="219preq">preq</dfn>);</td></tr>
+<tr><th id="211">211</th><td></td></tr>
+<tr><th id="212">212</th><td><i>/* Helpers for fetching object */</i></td></tr>
+<tr><th id="213">213</th><td><b>struct</b> <dfn class="type def" id="http_object_request" title='http_object_request' data-ref="http_object_request">http_object_request</dfn> {</td></tr>
+<tr><th id="214">214</th><td>	<em>char</em> *<dfn class="decl" id="http_object_request::url" title='http_object_request::url' data-ref="http_object_request::url">url</dfn>;</td></tr>
+<tr><th id="215">215</th><td>	<em>char</em> <dfn class="decl" id="http_object_request::tmpfile" title='http_object_request::tmpfile' data-ref="http_object_request::tmpfile">tmpfile</dfn>[<a class="macro" href="../include/linux/limits.h.html#12" title="4096" data-ref="_M/PATH_MAX">PATH_MAX</a>];</td></tr>
+<tr><th id="216">216</th><td>	<em>int</em> <dfn class="decl" id="http_object_request::localfile" title='http_object_request::localfile' data-ref="http_object_request::localfile">localfile</dfn>;</td></tr>
+<tr><th id="217">217</th><td>	<a class="typedef" href="../include/curl/curl.h.html#CURLcode" title='CURLcode' data-type='enum CURLcode' data-ref="CURLcode">CURLcode</a> <dfn class="decl" id="http_object_request::curl_result" title='http_object_request::curl_result' data-ref="http_object_request::curl_result">curl_result</dfn>;</td></tr>
+<tr><th id="218">218</th><td>	<em>char</em> <dfn class="decl" id="http_object_request::errorstr" title='http_object_request::errorstr' data-ref="http_object_request::errorstr">errorstr</dfn>[<a class="macro" href="../include/curl/curl.h.html#678" title="256" data-ref="_M/CURL_ERROR_SIZE">CURL_ERROR_SIZE</a>];</td></tr>
+<tr><th id="219">219</th><td>	<em>long</em> <dfn class="decl" id="http_object_request::http_code" title='http_object_request::http_code' data-ref="http_object_request::http_code">http_code</dfn>;</td></tr>
+<tr><th id="220">220</th><td>	<em>unsigned</em> <em>char</em> <dfn class="decl" id="http_object_request::sha1" title='http_object_request::sha1' data-ref="http_object_request::sha1">sha1</dfn>[<var>20</var>];</td></tr>
+<tr><th id="221">221</th><td>	<em>unsigned</em> <em>char</em> <dfn class="decl" id="http_object_request::real_sha1" title='http_object_request::real_sha1' data-ref="http_object_request::real_sha1">real_sha1</dfn>[<var>20</var>];</td></tr>
+<tr><th id="222">222</th><td>	<a class="macro" href="cache.h.html#31" title="SHA1_CTX" data-ref="_M/git_SHA_CTX">git_SHA_CTX</a> <dfn class="decl" id="http_object_request::c" title='http_object_request::c' data-ref="http_object_request::c">c</dfn>;</td></tr>
+<tr><th id="223">223</th><td>	<a class="typedef" href="cache.h.html#git_zstream" title='git_zstream' data-type='struct git_zstream' data-ref="git_zstream">git_zstream</a> <dfn class="decl" id="http_object_request::stream" title='http_object_request::stream' data-ref="http_object_request::stream">stream</dfn>;</td></tr>
+<tr><th id="224">224</th><td>	<em>int</em> <dfn class="decl" id="http_object_request::zret" title='http_object_request::zret' data-ref="http_object_request::zret">zret</dfn>;</td></tr>
+<tr><th id="225">225</th><td>	<em>int</em> <dfn class="decl" id="http_object_request::rename" title='http_object_request::rename' data-ref="http_object_request::rename">rename</dfn>;</td></tr>
+<tr><th id="226">226</th><td>	<b>struct</b> <a class="type" href="#active_request_slot" title='active_request_slot' data-ref="active_request_slot">active_request_slot</a> *<dfn class="decl" id="http_object_request::slot" title='http_object_request::slot' data-ref="http_object_request::slot">slot</dfn>;</td></tr>
+<tr><th id="227">227</th><td>};</td></tr>
+<tr><th id="228">228</th><td></td></tr>
+<tr><th id="229">229</th><td><b>extern</b> <b>struct</b> <a class="type" href="#http_object_request" title='http_object_request' data-ref="http_object_request">http_object_request</a> *<dfn class="decl" id="new_http_object_request" title='new_http_object_request' data-ref="new_http_object_request">new_http_object_request</dfn>(</td></tr>
+<tr><th id="230">230</th><td>	<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="220base_url" title='base_url' data-type='const char *' data-ref="220base_url">base_url</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col1 decl" id="221sha1" title='sha1' data-type='unsigned char *' data-ref="221sha1">sha1</dfn>);</td></tr>
+<tr><th id="231">231</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="process_http_object_request" title='process_http_object_request' data-ref="process_http_object_request">process_http_object_request</dfn>(<b>struct</b> <a class="type" href="#http_object_request" title='http_object_request' data-ref="http_object_request">http_object_request</a> *<dfn class="local col2 decl" id="222freq" title='freq' data-type='struct http_object_request *' data-ref="222freq">freq</dfn>);</td></tr>
+<tr><th id="232">232</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="finish_http_object_request" title='finish_http_object_request' data-ref="finish_http_object_request">finish_http_object_request</dfn>(<b>struct</b> <a class="type" href="#http_object_request" title='http_object_request' data-ref="http_object_request">http_object_request</a> *<dfn class="local col3 decl" id="223freq" title='freq' data-type='struct http_object_request *' data-ref="223freq">freq</dfn>);</td></tr>
+<tr><th id="233">233</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="abort_http_object_request" title='abort_http_object_request' data-ref="abort_http_object_request">abort_http_object_request</dfn>(<b>struct</b> <a class="type" href="#http_object_request" title='http_object_request' data-ref="http_object_request">http_object_request</a> *<dfn class="local col4 decl" id="224freq" title='freq' data-type='struct http_object_request *' data-ref="224freq">freq</dfn>);</td></tr>
+<tr><th id="234">234</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="release_http_object_request" title='release_http_object_request' data-ref="release_http_object_request">release_http_object_request</dfn>(<b>struct</b> <a class="type" href="#http_object_request" title='http_object_request' data-ref="http_object_request">http_object_request</a> *<dfn class="local col5 decl" id="225freq" title='freq' data-type='struct http_object_request *' data-ref="225freq">freq</dfn>);</td></tr>
+<tr><th id="235">235</th><td></td></tr>
+<tr><th id="236">236</th><td><i>/* setup routine for curl_easy_setopt CURLOPT_DEBUGFUNCTION */</i></td></tr>
+<tr><th id="237">237</th><td><em>void</em> <dfn class="decl" id="setup_curl_trace" title='setup_curl_trace' data-ref="setup_curl_trace">setup_curl_trace</dfn>(<a class="typedef" href="../include/curl/curl.h.html#CURL" title='CURL' data-type='void' data-ref="CURL">CURL</a> *<dfn class="local col6 decl" id="226handle" title='handle' data-type='CURL *' data-ref="226handle">handle</dfn>);</td></tr>
+<tr><th id="238">238</th><td><u>#<span data-ppcond="1">endif</span> /* HTTP_H */</u></td></tr>
+<tr><th id="239">239</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='http-fetch.c.html'>codebrowser/http-fetch.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

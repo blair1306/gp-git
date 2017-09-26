@@ -1,0 +1,10 @@
+<dec f='codebrowser/graph.c' l='62' type='0'/>
+<use f='codebrowser/graph.c' l='284' u='r' c='graph_init'/>
+<use f='codebrowser/graph.c' l='285' u='r' c='graph_init'/>
+<use f='codebrowser/graph.c' l='658' u='r' c='graph_update'/>
+<use f='codebrowser/graph.c' l='944' u='r' c='graph_output_commit_line'/>
+<use f='codebrowser/graph.c' l='1023' u='r' c='graph_output_post_merge_line'/>
+<use f='codebrowser/graph.c' l='1173' u='r' c='graph_output_collapsing_line'/>
+<use f='codebrowser/graph.c' l='1179' c='graph_next_line'/>
+<use f='codebrowser/graph.c' l='1241' u='r' c='graph_padding_line'/>
+<use f='codebrowser/graph.c' l='1246' u='r' c='graph_is_commit_finished'/>

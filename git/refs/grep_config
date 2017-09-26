@@ -1,0 +1,8 @@
+<dec f='codebrowser/grep.h' l='178' type='int grep_config(const char * var, const char * value, void * )'/>
+<use f='codebrowser/builtin/grep.c' l='277' u='c' c='grep_cmd_config'/>
+<use f='codebrowser/builtin/log.c' l='440' u='c' c='git_log_config'/>
+<def f='codebrowser/grep.c' l='71' ll='132' type='int grep_config(const char * var, const char * value, void * cb)'/>
+<doc f='codebrowser/grep.c' l='67'>/*
+ * Read the configuration file once and store it in
+ * the grep_defaults template.
+ */</doc>

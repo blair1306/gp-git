@@ -1,0 +1,23 @@
+<dec f='codebrowser/cache.h' l='731' type='int'/>
+<use f='codebrowser/apply.c' l='3818' u='r' c='path_is_beyond_symlink_1'/>
+<use f='codebrowser/builtin/mv.c' l='225' u='r' c='cmd_mv'/>
+<use f='codebrowser/config.c' l='1028' u='w' c='git_default_core_config'/>
+<use f='codebrowser/dir.c' l='67' u='r' c='fspathcmp'/>
+<use f='codebrowser/dir.c' l='72' u='r' c='fspathncmp'/>
+<use f='codebrowser/dir.c' l='121' u='r' c='fnmatch_icase_mem'/>
+<use f='codebrowser/dir.c' l='1263' u='r' c='dir_add_name'/>
+<use f='codebrowser/dir.c' l='1300' u='r' c='directory_exists_in_index_icase'/>
+<use f='codebrowser/dir.c' l='1319' u='r' c='directory_exists_in_index'/>
+<use f='codebrowser/dir.c' l='1558' u='r' c='treat_one_path'/>
+<use f='codebrowser/dir.c' l='2170' u='r' c='cmp_icase'/>
+<def f='codebrowser/environment.c' l='22' type='int'/>
+<use f='codebrowser/merge-recursive.c' l='625' u='r' c='remove_file'/>
+<use f='codebrowser/merge-recursive.c' l='627' u='r' c='remove_file'/>
+<use f='codebrowser/name-hash.c' l='112' u='r' c='hash_index_entry'/>
+<use f='codebrowser/name-hash.c' l='206' u='r' c='lookup_lazy_params'/>
+<use f='codebrowser/name-hash.c' l='631' u='r' c='remove_name_hash'/>
+<use f='codebrowser/read-cache.c' l='677' u='r' c='add_to_index'/>
+<use f='codebrowser/read-cache.c' l='681' u='r' c='add_to_index'/>
+<use f='codebrowser/read-cache.c' l='699' u='r' c='add_to_index'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='217' u='w' c='cmd_main'/>
+<use f='codebrowser/unpack-trees.c' l='1641' u='r' c='check_ok_to_remove'/>

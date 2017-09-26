@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1465' type='const char *'/>
+<offset>384</offset>
+<use f='codebrowser/builtin/blame.c' l='138' u='r' c='get_ac_line'/>
+<use f='codebrowser/builtin/blame.c' l='139' u='r' c='get_ac_line'/>
+<use f='codebrowser/builtin/blame.c' l='139' u='r' c='get_ac_line'/>
+<use f='codebrowser/builtin/commit.c' l='595' u='r' c='determine_author_info'/>
+<use f='codebrowser/builtin/commit.c' l='595' u='r' c='determine_author_info'/>
+<use f='codebrowser/ident.c' l='326' u='w' c='split_ident_line'/>
+<use f='codebrowser/ident.c' l='330' u='r' c='split_ident_line'/>
+<use f='codebrowser/ident.c' l='336' u='w' c='split_ident_line'/>
+<use f='codebrowser/pretty.c' l='417' u='r' c='show_ident_date'/>
+<use f='codebrowser/pretty.c' l='418' u='r' c='show_ident_date'/>

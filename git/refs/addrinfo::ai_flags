@@ -1,0 +1,6 @@
+<dec f='include/netdb.h' l='569' type='int'/>
+<offset>0</offset>
+<doc f='include/netdb.h' l='569'>/* Input flags.  */</doc>
+<use f='codebrowser/daemon.c' l='620' u='w' c='lookup_hostname'/>
+<use f='codebrowser/daemon.c' l='940' u='w' c='setup_named_sock'/>
+<use f='codebrowser/ident.c' l='101' u='w' c='canonical_name'/>

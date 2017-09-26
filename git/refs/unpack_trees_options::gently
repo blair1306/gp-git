@@ -1,0 +1,11 @@
+<dec f='codebrowser/unpack-trees.h' l='49' type='unsigned int'/>
+<offset>416</offset>
+<use f='codebrowser/builtin/checkout.c' l='508' u='w' c='merge_working_tree'/>
+<use f='codebrowser/unpack-trees.c' l='268' u='r' c='check_submodule_move_head'/>
+<use f='codebrowser/unpack-trees.c' l='849' u='r' c='unpack_failed'/>
+<use f='codebrowser/unpack-trees.c' l='1427' u='r' c='reject_merge'/>
+<use f='codebrowser/unpack-trees.c' l='1475' u='r' c='verify_uptodate_1'/>
+<use f='codebrowser/unpack-trees.c' l='1494' u='r' c='verify_uptodate_1'/>
+<use f='codebrowser/unpack-trees.c' l='1605' u='r' c='verify_clean_subdirectory'/>
+<use f='codebrowser/unpack-trees.c' l='1675' u='r' c='check_ok_to_remove'/>
+<use f='codebrowser/unpack-trees.c' l='2114' u='r' c='bind_merge'/>

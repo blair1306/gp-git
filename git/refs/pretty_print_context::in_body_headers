@@ -1,0 +1,14 @@
+<dec f='codebrowser/commit.h' l='172' type='struct string_list'/>
+<offset>960</offset>
+<doc f='codebrowser/commit.h' l='168'>/*
+	 * Fields below here are manipulated internally by pp_* functions and
+	 * should not be counted on by callers.
+	 */</doc>
+<use f='codebrowser/pretty.c' l='459' u='a' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='1614' u='m' c='pp_title_line'/>
+<use f='codebrowser/pretty.c' l='1615' u='m' c='pp_title_line'/>
+<use f='codebrowser/pretty.c' l='1636' u='m' c='pp_title_line'/>
+<use f='codebrowser/pretty.c' l='1638' u='m' c='pp_title_line'/>
+<use f='codebrowser/pretty.c' l='1639' u='m' c='pp_title_line'/>
+<use f='codebrowser/pretty.c' l='1640' u='m' c='pp_title_line'/>
+<use f='codebrowser/pretty.c' l='1642' u='a' c='pp_title_line'/>

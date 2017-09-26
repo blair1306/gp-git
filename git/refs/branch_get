@@ -1,0 +1,26 @@
+<dec f='codebrowser/remote.h' l='223' type='struct branch * branch_get(const char * name)'/>
+<use f='codebrowser/builtin/branch.c' l='120' u='c' c='branch_merged'/>
+<use f='codebrowser/builtin/branch.c' l='716' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='738' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='761' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/checkout.c' l='605' u='c' c='report_tracking'/>
+<use f='codebrowser/builtin/fetch.c' l='387' u='c' c='get_ref_map'/>
+<use f='codebrowser/builtin/fetch.c' l='621' u='c' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='991' u='c' c='check_not_current_branch'/>
+<use f='codebrowser/builtin/log.c' l='1271' u='c' c='get_base_commit'/>
+<use f='codebrowser/builtin/log.c' l='1907' u='c' c='cmd_cherry'/>
+<use f='codebrowser/builtin/merge.c' l='888' u='c' c='setup_with_upstream'/>
+<use f='codebrowser/builtin/pull.c' l='299' u='c' c='config_get_rebase'/>
+<use f='codebrowser/builtin/pull.c' l='394' u='c' c='die_no_merge_candidates'/>
+<use f='codebrowser/builtin/pull.c' l='633' u='c' c='get_upstream_branch'/>
+<use f='codebrowser/builtin/pull.c' l='697' u='c' c='get_rebase_fork_point'/>
+<use f='codebrowser/builtin/push.c' l='67' u='c' c='map_refspec'/>
+<use f='codebrowser/builtin/push.c' l='220' u='c' c='setup_default_push_refspecs'/>
+<use f='codebrowser/ref-filter.c' l='1354' u='c' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1365' u='c' c='populate_value'/>
+<def f='codebrowser/remote.c' l='1642' ll='1653' type='struct branch * branch_get(const char * name)'/>
+<use f='codebrowser/sha1_name.c' l='1256' u='c' c='interpret_branch_mark'/>
+<use f='codebrowser/sha1_name.c' l='1259' u='c' c='interpret_branch_mark'/>
+<use f='codebrowser/wt-status.c' l='1009' u='c' c='wt_longstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1790' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1929' u='c' c='wt_porcelain_v2_print_tracking'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/revision.h' l='172' type='struct string_list *'/>
+<offset>2240</offset>
+<use f='codebrowser/builtin/log.c' l='1742' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1745' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1794' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1798' u='r' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='368' u='r' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='368' u='r' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='370' u='r' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='371' u='r' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='374' u='r' c='log_write_email_headers'/>

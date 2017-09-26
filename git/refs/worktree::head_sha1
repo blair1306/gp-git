@@ -1,0 +1,6 @@
+<dec f='codebrowser/worktree.h' l='9' type='unsigned char [20]'/>
+<offset>256</offset>
+<use f='codebrowser/builtin/worktree.c' l='393' u='r' c='show_worktree_porcelain'/>
+<use f='codebrowser/builtin/worktree.c' l='413' u='r' c='show_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='438' u='r' c='measure_widths'/>
+<use f='codebrowser/worktree.c' l='34' u='r' c='add_head_info'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/diff.h' l='165' type='enum diff_words_type'/>
+<offset>1664</offset>
+<use f='codebrowser/diff.c' l='1171' u='r' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1189' u='r' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='2521' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2526' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='3936' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3940' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3944' u='r' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3945' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3949' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3952' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3955' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3957' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3962' u='r' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3963' u='w' c='diff_opt_parse'/>

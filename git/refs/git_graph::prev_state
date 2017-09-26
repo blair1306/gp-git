@@ -1,0 +1,12 @@
+<dec f='codebrowser/graph.c' l='161' type='enum graph_state'/>
+<use f='codebrowser/graph.c' l='285' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='320' u='w' c='graph_update_state'/>
+<use f='codebrowser/graph.c' l='802' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='922' u='r' c='graph_output_commit_line'/>
+<use f='codebrowser/graph.c' l='1241' u='w' c='graph_padding_line'/>
+<offset>256</offset>
+<doc f='codebrowser/graph.c' l='156'>/*
+	 * The output state for the previous line of output.
+	 * This is primarily used to determine how the first merge line
+	 * should appear, based on the last line of the previous commit.
+	 */</doc>

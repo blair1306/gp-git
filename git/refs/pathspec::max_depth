@@ -1,0 +1,11 @@
+<dec f='codebrowser/pathspec.h' l='28' type='int'/>
+<offset>96</offset>
+<use f='codebrowser/builtin/grep.c' l='1014' u='w' c='cmd_grep'/>
+<use f='codebrowser/dir.c' l='396' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/dir.c' l='399' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/dir.c' l='427' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/dir.c' l='432' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/tree-walk.c' l='952' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='956' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='979' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='985' u='r' c='do_match'/>

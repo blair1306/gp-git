@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1044' type='int git_config_perm(const char * var, const char * value)'/>
+<use f='codebrowser/builtin/init-db.c' l='453' u='c' c='shared_callback'/>
+<use f='codebrowser/environment.c' l='329' u='c' c='get_shared_repository'/>
+<def f='codebrowser/setup.c' l='1123' ll='1172' type='int git_config_perm(const char * var, const char * value)'/>

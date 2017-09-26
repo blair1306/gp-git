@@ -1,0 +1,12 @@
+<dec f='codebrowser/line-log.h' l='38' type='void sort_and_merge_range_set(struct range_set * )'/>
+<use f='codebrowser/builtin/blame.c' l='893' u='c' c='cmd_blame'/>
+<doc f='codebrowser/line-log.h' l='34'>/*
+ * In-place pass of sorting and merging the ranges in the range set,
+ * to sort and make the ranges disjoint.
+ */</doc>
+<def f='codebrowser/line-log.c' l='111' ll='134' type='void sort_and_merge_range_set(struct range_set * rs)'/>
+<use f='codebrowser/line-log.c' l='616' u='c' c='parse_lines'/>
+<doc f='codebrowser/line-log.c' l='107'>/*
+ * In-place pass of sorting and merging the ranges in the range set,
+ * to establish the invariants when we get the ranges from the user
+ */</doc>

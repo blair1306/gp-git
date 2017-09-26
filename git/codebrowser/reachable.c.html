@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>reachable.c source code [codebrowser/reachable.c] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="connectivity_progress,recent_data "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/reachable.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='reachable.c.html'>reachable.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="refs.h.html">"refs.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="tag.h.html">"tag.h"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="commit.h.html">"commit.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="blob.h.html">"blob.h"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="diff.h.html">"diff.h"</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="revision.h.html">"revision.h"</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="reachable.h.html">"reachable.h"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="cache-tree.h.html">"cache-tree.h"</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="progress.h.html">"progress.h"</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="list-objects.h.html">"list-objects.h"</a></u></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><b>struct</b> <dfn class="type def" id="connectivity_progress" title='connectivity_progress' data-ref="connectivity_progress">connectivity_progress</dfn> {</td></tr>
+<tr><th id="14">14</th><td>	<b>struct</b> <a class="type" href="reachable.h.html#progress" title='progress' data-ref="progress">progress</a> *<dfn class="tu decl" id="connectivity_progress::progress" title='connectivity_progress::progress' data-type='struct progress *' data-ref="connectivity_progress::progress">progress</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<em>unsigned</em> <em>long</em> <dfn class="tu decl" id="connectivity_progress::count" title='connectivity_progress::count' data-type='unsigned long' data-ref="connectivity_progress::count">count</dfn>;</td></tr>
+<tr><th id="16">16</th><td>};</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="update_progress" title='update_progress' data-type='void update_progress(struct connectivity_progress * cp)' data-ref="update_progress">update_progress</dfn>(<b>struct</b> <a class="type" href="#connectivity_progress" title='connectivity_progress' data-ref="connectivity_progress">connectivity_progress</a> *<dfn class="local col1 decl" id="1cp" title='cp' data-type='struct connectivity_progress *' data-ref="1cp">cp</dfn>)</td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td>	<a class="local col1 ref" href="#1cp" title='cp' data-ref="1cp">cp</a>-&gt;<a class="tu ref" href="#connectivity_progress::count" title='connectivity_progress::count' data-use='w' data-ref="connectivity_progress::count">count</a>++;</td></tr>
+<tr><th id="21">21</th><td>	<b>if</b> ((<a class="local col1 ref" href="#1cp" title='cp' data-ref="1cp">cp</a>-&gt;<a class="tu ref" href="#connectivity_progress::count" title='connectivity_progress::count' data-use='r' data-ref="connectivity_progress::count">count</a> &amp; <var>1023</var>) == <var>0</var>)</td></tr>
+<tr><th id="22">22</th><td>		<a class="ref" href="progress.h.html#display_progress" title='display_progress' data-ref="display_progress">display_progress</a>(<a class="local col1 ref" href="#1cp" title='cp' data-ref="1cp">cp</a>-&gt;<a class="tu ref" href="#connectivity_progress::progress" title='connectivity_progress::progress' data-use='r' data-ref="connectivity_progress::progress">progress</a>, <a class="local col1 ref" href="#1cp" title='cp' data-ref="1cp">cp</a>-&gt;<a class="tu ref" href="#connectivity_progress::count" title='connectivity_progress::count' data-use='r' data-ref="connectivity_progress::count">count</a>);</td></tr>
+<tr><th id="23">23</th><td>}</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="add_one_ref" title='add_one_ref' data-type='int add_one_ref(const char * path, const struct object_id * oid, int flag, void * cb_data)' data-ref="add_one_ref">add_one_ref</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2path" title='path' data-type='const char *' data-ref="2path">path</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="3oid" title='oid' data-type='const struct object_id *' data-ref="3oid">oid</dfn>,</td></tr>
+<tr><th id="26">26</th><td>		       <em>int</em> <dfn class="local col4 decl" id="4flag" title='flag' data-type='int' data-ref="4flag">flag</dfn>, <em>void</em> *<dfn class="local col5 decl" id="5cb_data" title='cb_data' data-type='void *' data-ref="5cb_data">cb_data</dfn>)</td></tr>
+<tr><th id="27">27</th><td>{</td></tr>
+<tr><th id="28">28</th><td>	<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col6 decl" id="6revs" title='revs' data-type='struct rev_info *' data-ref="6revs">revs</dfn> = (<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *)<a class="local col5 ref" href="#5cb_data" title='cb_data' data-ref="5cb_data">cb_data</a>;</td></tr>
+<tr><th id="29">29</th><td>	<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col7 decl" id="7object" title='object' data-type='struct object *' data-ref="7object">object</dfn>;</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>	<b>if</b> ((<a class="local col4 ref" href="#4flag" title='flag' data-ref="4flag">flag</a> &amp; <a class="macro" href="refs.h.html#240" title="0x01" data-ref="_M/REF_ISSYMREF">REF_ISSYMREF</a>) &amp;&amp; (<a class="local col4 ref" href="#4flag" title='flag' data-ref="4flag">flag</a> &amp; <a class="macro" href="refs.h.html#251" title="0x04" data-ref="_M/REF_ISBROKEN">REF_ISBROKEN</a>)) {</td></tr>
+<tr><th id="32">32</th><td>		<a class="ref" href="git-compat-util.h.html#warning" title='warning' data-ref="warning">warning</a>(<q>"symbolic ref is dangling: %s"</q>, <a class="local col2 ref" href="#2path" title='path' data-ref="2path">path</a>);</td></tr>
+<tr><th id="33">33</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="34">34</th><td>	}</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>	<a class="local col7 ref" href="#7object" title='object' data-ref="7object">object</a> = <a class="ref" href="object.h.html#parse_object_or_die" title='parse_object_or_die' data-ref="parse_object_or_die">parse_object_or_die</a>(<a class="local col3 ref" href="#3oid" title='oid' data-ref="3oid">oid</a>, <a class="local col2 ref" href="#2path" title='path' data-ref="2path">path</a>);</td></tr>
+<tr><th id="37">37</th><td>	<a class="ref" href="revision.h.html#add_pending_object" title='add_pending_object' data-ref="add_pending_object">add_pending_object</a>(<a class="local col6 ref" href="#6revs" title='revs' data-ref="6revs">revs</a>, <a class="local col7 ref" href="#7object" title='object' data-ref="7object">object</a>, <q>""</q>);</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="40">40</th><td>}</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><i  data-doc="mark_object">/*</i></td></tr>
+<tr><th id="43">43</th><td><i  data-doc="mark_object"> * The traversal will have already marked us as SEEN, so we</i></td></tr>
+<tr><th id="44">44</th><td><i  data-doc="mark_object"> * only need to handle any progress reporting here.</i></td></tr>
+<tr><th id="45">45</th><td><i  data-doc="mark_object"> */</i></td></tr>
+<tr><th id="46">46</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="mark_object" title='mark_object' data-type='void mark_object(struct object * obj, const char * name, void * data)' data-ref="mark_object">mark_object</dfn>(<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col8 decl" id="8obj" title='obj' data-type='struct object *' data-ref="8obj">obj</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="9name" title='name' data-type='const char *' data-ref="9name">name</dfn>, <em>void</em> *<dfn class="local col0 decl" id="10data" title='data' data-type='void *' data-ref="10data">data</dfn>)</td></tr>
+<tr><th id="47">47</th><td>{</td></tr>
+<tr><th id="48">48</th><td>	<a class="tu ref" href="#update_progress" title='update_progress' data-use='c' data-ref="update_progress">update_progress</a>(<a class="local col0 ref" href="#10data" title='data' data-ref="10data">data</a>);</td></tr>
+<tr><th id="49">49</th><td>}</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="mark_commit" title='mark_commit' data-type='void mark_commit(struct commit * c, void * data)' data-ref="mark_commit">mark_commit</dfn>(<b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col1 decl" id="11c" title='c' data-type='struct commit *' data-ref="11c">c</dfn>, <em>void</em> *<dfn class="local col2 decl" id="12data" title='data' data-type='void *' data-ref="12data">data</dfn>)</td></tr>
+<tr><th id="52">52</th><td>{</td></tr>
+<tr><th id="53">53</th><td>	<a class="tu ref" href="#mark_object" title='mark_object' data-use='c' data-ref="mark_object">mark_object</a>(&amp;<a class="local col1 ref" href="#11c" title='c' data-ref="11c">c</a>-&gt;<a class="ref" href="commit.h.html#commit::object" title='commit::object' data-ref="commit::object">object</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <a class="local col2 ref" href="#12data" title='data' data-ref="12data">data</a>);</td></tr>
+<tr><th id="54">54</th><td>}</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><b>struct</b> <dfn class="type def" id="recent_data" title='recent_data' data-ref="recent_data">recent_data</dfn> {</td></tr>
+<tr><th id="57">57</th><td>	<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="tu decl" id="recent_data::revs" title='recent_data::revs' data-type='struct rev_info *' data-ref="recent_data::revs">revs</dfn>;</td></tr>
+<tr><th id="58">58</th><td>	<a class="typedef" href="git-compat-util.h.html#timestamp_t" title='timestamp_t' data-type='uintmax_t' data-ref="timestamp_t">timestamp_t</a> <dfn class="tu decl" id="recent_data::timestamp" title='recent_data::timestamp' data-type='timestamp_t' data-ref="recent_data::timestamp">timestamp</dfn>;</td></tr>
+<tr><th id="59">59</th><td>};</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="add_recent_object" title='add_recent_object' data-type='void add_recent_object(const struct object_id * oid, timestamp_t mtime, struct recent_data * data)' data-ref="add_recent_object">add_recent_object</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="13oid" title='oid' data-type='const struct object_id *' data-ref="13oid">oid</dfn>,</td></tr>
+<tr><th id="62">62</th><td>			      <a class="typedef" href="git-compat-util.h.html#timestamp_t" title='timestamp_t' data-type='uintmax_t' data-ref="timestamp_t">timestamp_t</a> <dfn class="local col4 decl" id="14mtime" title='mtime' data-type='timestamp_t' data-ref="14mtime">mtime</dfn>,</td></tr>
+<tr><th id="63">63</th><td>			      <b>struct</b> <a class="type" href="#recent_data" title='recent_data' data-ref="recent_data">recent_data</a> *<dfn class="local col5 decl" id="15data" title='data' data-type='struct recent_data *' data-ref="15data">data</dfn>)</td></tr>
+<tr><th id="64">64</th><td>{</td></tr>
+<tr><th id="65">65</th><td>	<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col6 decl" id="16obj" title='obj' data-type='struct object *' data-ref="16obj">obj</dfn>;</td></tr>
+<tr><th id="66">66</th><td>	<b>enum</b> <a class="type" href="cache.h.html#object_type" title='object_type' data-ref="object_type">object_type</a> <dfn class="local col7 decl" id="17type" title='type' data-type='enum object_type' data-ref="17type">type</dfn>;</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>	<b>if</b> (<a class="local col4 ref" href="#14mtime" title='mtime' data-ref="14mtime">mtime</a> &lt;= <a class="local col5 ref" href="#15data" title='data' data-ref="15data">data</a>-&gt;<a class="tu ref" href="#recent_data::timestamp" title='recent_data::timestamp' data-use='r' data-ref="recent_data::timestamp">timestamp</a>)</td></tr>
+<tr><th id="69">69</th><td>		<b>return</b>;</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>	<i>/*</i></td></tr>
+<tr><th id="72">72</th><td><i>	 * We do not want to call parse_object here, because</i></td></tr>
+<tr><th id="73">73</th><td><i>	 * inflating blobs and trees could be very expensive.</i></td></tr>
+<tr><th id="74">74</th><td><i>	 * However, we do need to know the correct type for</i></td></tr>
+<tr><th id="75">75</th><td><i>	 * later processing, and the revision machinery expects</i></td></tr>
+<tr><th id="76">76</th><td><i>	 * commits and tags to have been parsed.</i></td></tr>
+<tr><th id="77">77</th><td><i>	 */</i></td></tr>
+<tr><th id="78">78</th><td>	<a class="local col7 ref" href="#17type" title='type' data-ref="17type">type</a> = <a class="ref" href="cache.h.html#sha1_object_info" title='sha1_object_info' data-ref="sha1_object_info">sha1_object_info</a>(<a class="local col3 ref" href="#13oid" title='oid' data-ref="13oid">oid</a>-&gt;<a class="ref" href="cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="79">79</th><td>	<b>if</b> (<a class="local col7 ref" href="#17type" title='type' data-ref="17type">type</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="80">80</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"unable to get object info for %s"</q>, <a class="ref" href="cache.h.html#oid_to_hex" title='oid_to_hex' data-ref="oid_to_hex">oid_to_hex</a>(<a class="local col3 ref" href="#13oid" title='oid' data-ref="13oid">oid</a>));</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>	<b>switch</b> (<a class="local col7 ref" href="#17type" title='type' data-ref="17type">type</a>) {</td></tr>
+<tr><th id="83">83</th><td>	<b>case</b> <a class="enum" href="cache.h.html#object_type::OBJ_TAG" title='object_type::OBJ_TAG' data-ref="object_type::OBJ_TAG">OBJ_TAG</a>:</td></tr>
+<tr><th id="84">84</th><td>	<b>case</b> <a class="enum" href="cache.h.html#object_type::OBJ_COMMIT" title='object_type::OBJ_COMMIT' data-ref="object_type::OBJ_COMMIT">OBJ_COMMIT</a>:</td></tr>
+<tr><th id="85">85</th><td>		<a class="local col6 ref" href="#16obj" title='obj' data-ref="16obj">obj</a> = <a class="ref" href="object.h.html#parse_object_or_die" title='parse_object_or_die' data-ref="parse_object_or_die">parse_object_or_die</a>(<a class="local col3 ref" href="#13oid" title='oid' data-ref="13oid">oid</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="86">86</th><td>		<b>break</b>;</td></tr>
+<tr><th id="87">87</th><td>	<b>case</b> <a class="enum" href="cache.h.html#object_type::OBJ_TREE" title='object_type::OBJ_TREE' data-ref="object_type::OBJ_TREE">OBJ_TREE</a>:</td></tr>
+<tr><th id="88">88</th><td>		<a class="local col6 ref" href="#16obj" title='obj' data-ref="16obj">obj</a> = (<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *)<a class="ref" href="tree.h.html#lookup_tree" title='lookup_tree' data-ref="lookup_tree">lookup_tree</a>(<a class="local col3 ref" href="#13oid" title='oid' data-ref="13oid">oid</a>);</td></tr>
+<tr><th id="89">89</th><td>		<b>break</b>;</td></tr>
+<tr><th id="90">90</th><td>	<b>case</b> <a class="enum" href="cache.h.html#object_type::OBJ_BLOB" title='object_type::OBJ_BLOB' data-ref="object_type::OBJ_BLOB">OBJ_BLOB</a>:</td></tr>
+<tr><th id="91">91</th><td>		<a class="local col6 ref" href="#16obj" title='obj' data-ref="16obj">obj</a> = (<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *)<a class="ref" href="blob.h.html#lookup_blob" title='lookup_blob' data-ref="lookup_blob">lookup_blob</a>(<a class="local col3 ref" href="#13oid" title='oid' data-ref="13oid">oid</a>);</td></tr>
+<tr><th id="92">92</th><td>		<b>break</b>;</td></tr>
+<tr><th id="93">93</th><td>	<b>default</b>:</td></tr>
+<tr><th id="94">94</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"unknown object type for %s: %s"</q>,</td></tr>
+<tr><th id="95">95</th><td>		    <a class="ref" href="cache.h.html#oid_to_hex" title='oid_to_hex' data-ref="oid_to_hex">oid_to_hex</a>(<a class="local col3 ref" href="#13oid" title='oid' data-ref="13oid">oid</a>), <a class="ref" href="object.h.html#typename" title='typename' data-ref="typename">typename</a>(<a class="local col7 ref" href="#17type" title='type' data-ref="17type">type</a>));</td></tr>
+<tr><th id="96">96</th><td>	}</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>	<b>if</b> (!<a class="local col6 ref" href="#16obj" title='obj' data-ref="16obj">obj</a>)</td></tr>
+<tr><th id="99">99</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"unable to lookup %s"</q>, <a class="ref" href="cache.h.html#oid_to_hex" title='oid_to_hex' data-ref="oid_to_hex">oid_to_hex</a>(<a class="local col3 ref" href="#13oid" title='oid' data-ref="13oid">oid</a>));</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>	<a class="ref" href="revision.h.html#add_pending_object" title='add_pending_object' data-ref="add_pending_object">add_pending_object</a>(<a class="local col5 ref" href="#15data" title='data' data-ref="15data">data</a>-&gt;<a class="tu ref" href="#recent_data::revs" title='recent_data::revs' data-use='r' data-ref="recent_data::revs">revs</a>, <a class="local col6 ref" href="#16obj" title='obj' data-ref="16obj">obj</a>, <q>""</q>);</td></tr>
+<tr><th id="102">102</th><td>}</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="add_recent_loose" title='add_recent_loose' data-type='int add_recent_loose(const struct object_id * oid, const char * path, void * data)' data-ref="add_recent_loose">add_recent_loose</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col8 decl" id="18oid" title='oid' data-type='const struct object_id *' data-ref="18oid">oid</dfn>,</td></tr>
+<tr><th id="105">105</th><td>			    <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="19path" title='path' data-type='const char *' data-ref="19path">path</dfn>, <em>void</em> *<dfn class="local col0 decl" id="20data" title='data' data-type='void *' data-ref="20data">data</dfn>)</td></tr>
+<tr><th id="106">106</th><td>{</td></tr>
+<tr><th id="107">107</th><td>	<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/bits/stat.h.html#stat" title='stat' data-ref="stat">stat</a> <dfn class="local col1 decl" id="21st" title='st' data-type='struct stat' data-ref="21st">st</dfn>;</td></tr>
+<tr><th id="108">108</th><td>	<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col2 decl" id="22obj" title='obj' data-type='struct object *' data-ref="22obj">obj</dfn> = <a class="ref" href="object.h.html#lookup_object" title='lookup_object' data-ref="lookup_object">lookup_object</a>(<a class="local col8 ref" href="#18oid" title='oid' data-ref="18oid">oid</a>-&gt;<a class="ref" href="cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>);</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>	<b>if</b> (<a class="local col2 ref" href="#22obj" title='obj' data-ref="22obj">obj</a> &amp;&amp; <a class="local col2 ref" href="#22obj" title='obj' data-ref="22obj">obj</a>-&gt;<a class="ref" href="object.h.html#object::flags" title='object::flags' data-ref="object::flags">flags</a> &amp; <a class="macro" href="revision.h.html#11" title="(1u&lt;&lt;0)" data-ref="_M/SEEN">SEEN</a>)</td></tr>
+<tr><th id="111">111</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>	<b>if</b> (<a class="ref" href="../include/x86_64-linux-gnu/sys/stat.h.html#216" title='stat' data-ref="stat64">stat</a>(<a class="local col9 ref" href="#19path" title='path' data-ref="19path">path</a>, &amp;<a class="local col1 ref" href="#21st" title='st' data-ref="21st">st</a>) &lt; <var>0</var>) {</td></tr>
+<tr><th id="114">114</th><td>		<i>/*</i></td></tr>
+<tr><th id="115">115</th><td><i>		 * It's OK if an object went away during our iteration; this</i></td></tr>
+<tr><th id="116">116</th><td><i>		 * could be due to a simultaneous repack. But anything else</i></td></tr>
+<tr><th id="117">117</th><td><i>		 * we should abort, since we might then fail to mark objects</i></td></tr>
+<tr><th id="118">118</th><td><i>		 * which should not be pruned.</i></td></tr>
+<tr><th id="119">119</th><td><i>		 */</i></td></tr>
+<tr><th id="120">120</th><td>		<b>if</b> (<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> == <a class="macro" href="../include/asm-generic/errno-base.h.html#5" title="2" data-ref="_M/ENOENT">ENOENT</a>)</td></tr>
+<tr><th id="121">121</th><td>			<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="122">122</th><td>		<b>return</b> <a class="macro" href="git-compat-util.h.html#447" title="(error_errno(&quot;unable to stat %s&quot;, oid_to_hex(oid)), const_error())" data-ref="_M/error_errno">error_errno</a>(<q>"unable to stat %s"</q>, <a class="ref" href="cache.h.html#oid_to_hex" title='oid_to_hex' data-ref="oid_to_hex">oid_to_hex</a>(<a class="local col8 ref" href="#18oid" title='oid' data-ref="18oid">oid</a>));</td></tr>
+<tr><th id="123">123</th><td>	}</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td>	<a class="tu ref" href="#add_recent_object" title='add_recent_object' data-use='c' data-ref="add_recent_object">add_recent_object</a>(<a class="local col8 ref" href="#18oid" title='oid' data-ref="18oid">oid</a>, <a class="local col1 ref" href="#21st" title='st' data-ref="21st">st</a>.<a class="macro" href="../include/x86_64-linux-gnu/bits/stat.h.html#95" title="st_mtim.tv_sec" data-ref="_M/st_mtime">st_mtime</a>, <a class="local col0 ref" href="#20data" title='data' data-ref="20data">data</a>);</td></tr>
+<tr><th id="126">126</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="127">127</th><td>}</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="add_recent_packed" title='add_recent_packed' data-type='int add_recent_packed(const struct object_id * oid, struct packed_git * p, uint32_t pos, void * data)' data-ref="add_recent_packed">add_recent_packed</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="23oid" title='oid' data-type='const struct object_id *' data-ref="23oid">oid</dfn>,</td></tr>
+<tr><th id="130">130</th><td>			     <b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *<dfn class="local col4 decl" id="24p" title='p' data-type='struct packed_git *' data-ref="24p">p</dfn>, <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col5 decl" id="25pos" title='pos' data-type='uint32_t' data-ref="25pos">pos</dfn>,</td></tr>
+<tr><th id="131">131</th><td>			     <em>void</em> *<dfn class="local col6 decl" id="26data" title='data' data-type='void *' data-ref="26data">data</dfn>)</td></tr>
+<tr><th id="132">132</th><td>{</td></tr>
+<tr><th id="133">133</th><td>	<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col7 decl" id="27obj" title='obj' data-type='struct object *' data-ref="27obj">obj</dfn> = <a class="ref" href="object.h.html#lookup_object" title='lookup_object' data-ref="lookup_object">lookup_object</a>(<a class="local col3 ref" href="#23oid" title='oid' data-ref="23oid">oid</a>-&gt;<a class="ref" href="cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>);</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>	<b>if</b> (<a class="local col7 ref" href="#27obj" title='obj' data-ref="27obj">obj</a> &amp;&amp; <a class="local col7 ref" href="#27obj" title='obj' data-ref="27obj">obj</a>-&gt;<a class="ref" href="object.h.html#object::flags" title='object::flags' data-ref="object::flags">flags</a> &amp; <a class="macro" href="revision.h.html#11" title="(1u&lt;&lt;0)" data-ref="_M/SEEN">SEEN</a>)</td></tr>
+<tr><th id="136">136</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="137">137</th><td>	<a class="tu ref" href="#add_recent_object" title='add_recent_object' data-use='c' data-ref="add_recent_object">add_recent_object</a>(<a class="local col3 ref" href="#23oid" title='oid' data-ref="23oid">oid</a>, <a class="local col4 ref" href="#24p" title='p' data-ref="24p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::mtime" title='packed_git::mtime' data-ref="packed_git::mtime">mtime</a>, <a class="local col6 ref" href="#26data" title='data' data-ref="26data">data</a>);</td></tr>
+<tr><th id="138">138</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="139">139</th><td>}</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><em>int</em> <dfn class="decl def" id="add_unseen_recent_objects_to_traversal" title='add_unseen_recent_objects_to_traversal' data-ref="add_unseen_recent_objects_to_traversal">add_unseen_recent_objects_to_traversal</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col8 decl" id="28revs" title='revs' data-type='struct rev_info *' data-ref="28revs">revs</dfn>,</td></tr>
+<tr><th id="142">142</th><td>					   <a class="typedef" href="git-compat-util.h.html#timestamp_t" title='timestamp_t' data-type='uintmax_t' data-ref="timestamp_t">timestamp_t</a> <dfn class="local col9 decl" id="29timestamp" title='timestamp' data-type='timestamp_t' data-ref="29timestamp">timestamp</dfn>)</td></tr>
+<tr><th id="143">143</th><td>{</td></tr>
+<tr><th id="144">144</th><td>	<b>struct</b> <a class="type" href="#recent_data" title='recent_data' data-ref="recent_data">recent_data</a> <dfn class="local col0 decl" id="30data" title='data' data-type='struct recent_data' data-ref="30data">data</dfn>;</td></tr>
+<tr><th id="145">145</th><td>	<em>int</em> <dfn class="local col1 decl" id="31r" title='r' data-type='int' data-ref="31r">r</dfn>;</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>	<a class="local col0 ref" href="#30data" title='data' data-ref="30data">data</a>.<a class="tu ref" href="#recent_data::revs" title='recent_data::revs' data-use='w' data-ref="recent_data::revs">revs</a> = <a class="local col8 ref" href="#28revs" title='revs' data-ref="28revs">revs</a>;</td></tr>
+<tr><th id="148">148</th><td>	<a class="local col0 ref" href="#30data" title='data' data-ref="30data">data</a>.<a class="tu ref" href="#recent_data::timestamp" title='recent_data::timestamp' data-use='w' data-ref="recent_data::timestamp">timestamp</a> = <a class="local col9 ref" href="#29timestamp" title='timestamp' data-ref="29timestamp">timestamp</a>;</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td>	<a class="local col1 ref" href="#31r" title='r' data-ref="31r">r</a> = <a class="ref" href="cache.h.html#for_each_loose_object" title='for_each_loose_object' data-ref="for_each_loose_object">for_each_loose_object</a>(<a class="tu ref" href="#add_recent_loose" title='add_recent_loose' data-use='r' data-ref="add_recent_loose">add_recent_loose</a>, &amp;<a class="local col0 ref" href="#30data" title='data' data-ref="30data">data</a>,</td></tr>
+<tr><th id="151">151</th><td>				  <a class="macro" href="cache.h.html#1783" title="0x1" data-ref="_M/FOR_EACH_OBJECT_LOCAL_ONLY">FOR_EACH_OBJECT_LOCAL_ONLY</a>);</td></tr>
+<tr><th id="152">152</th><td>	<b>if</b> (<a class="local col1 ref" href="#31r" title='r' data-ref="31r">r</a>)</td></tr>
+<tr><th id="153">153</th><td>		<b>return</b> <a class="local col1 ref" href="#31r" title='r' data-ref="31r">r</a>;</td></tr>
+<tr><th id="154">154</th><td>	<b>return</b> <a class="ref" href="cache.h.html#for_each_packed_object" title='for_each_packed_object' data-ref="for_each_packed_object">for_each_packed_object</a>(<a class="tu ref" href="#add_recent_packed" title='add_recent_packed' data-use='r' data-ref="add_recent_packed">add_recent_packed</a>, &amp;<a class="local col0 ref" href="#30data" title='data' data-ref="30data">data</a>,</td></tr>
+<tr><th id="155">155</th><td>				      <a class="macro" href="cache.h.html#1783" title="0x1" data-ref="_M/FOR_EACH_OBJECT_LOCAL_ONLY">FOR_EACH_OBJECT_LOCAL_ONLY</a>);</td></tr>
+<tr><th id="156">156</th><td>}</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><em>void</em> <dfn class="decl def" id="mark_reachable_objects" title='mark_reachable_objects' data-ref="mark_reachable_objects">mark_reachable_objects</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col2 decl" id="32revs" title='revs' data-type='struct rev_info *' data-ref="32revs">revs</dfn>, <em>int</em> <dfn class="local col3 decl" id="33mark_reflog" title='mark_reflog' data-type='int' data-ref="33mark_reflog">mark_reflog</dfn>,</td></tr>
+<tr><th id="159">159</th><td>			    <a class="typedef" href="git-compat-util.h.html#timestamp_t" title='timestamp_t' data-type='uintmax_t' data-ref="timestamp_t">timestamp_t</a> <dfn class="local col4 decl" id="34mark_recent" title='mark_recent' data-type='timestamp_t' data-ref="34mark_recent">mark_recent</dfn>, <b>struct</b> <a class="type" href="reachable.h.html#progress" title='progress' data-ref="progress">progress</a> *<dfn class="local col5 decl" id="35progress" title='progress' data-type='struct progress *' data-ref="35progress">progress</dfn>)</td></tr>
+<tr><th id="160">160</th><td>{</td></tr>
+<tr><th id="161">161</th><td>	<b>struct</b> <a class="type" href="#connectivity_progress" title='connectivity_progress' data-ref="connectivity_progress">connectivity_progress</a> <dfn class="local col6 decl" id="36cp" title='cp' data-type='struct connectivity_progress' data-ref="36cp">cp</dfn>;</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td>	<i>/*</i></td></tr>
+<tr><th id="164">164</th><td><i>	 * Set up revision parsing, and mark us as being interested</i></td></tr>
+<tr><th id="165">165</th><td><i>	 * in all object types, not just commits.</i></td></tr>
+<tr><th id="166">166</th><td><i>	 */</i></td></tr>
+<tr><th id="167">167</th><td>	<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>-&gt;<a class="ref" href="revision.h.html#rev_info::tag_objects" title='rev_info::tag_objects' data-ref="rev_info::tag_objects">tag_objects</a> = <var>1</var>;</td></tr>
+<tr><th id="168">168</th><td>	<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>-&gt;<a class="ref" href="revision.h.html#rev_info::blob_objects" title='rev_info::blob_objects' data-ref="rev_info::blob_objects">blob_objects</a> = <var>1</var>;</td></tr>
+<tr><th id="169">169</th><td>	<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>-&gt;<a class="ref" href="revision.h.html#rev_info::tree_objects" title='rev_info::tree_objects' data-ref="rev_info::tree_objects">tree_objects</a> = <var>1</var>;</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td>	<i>/* Add all refs from the index file */</i></td></tr>
+<tr><th id="172">172</th><td>	<a class="ref" href="revision.h.html#add_index_objects_to_pending" title='add_index_objects_to_pending' data-ref="add_index_objects_to_pending">add_index_objects_to_pending</a>(<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>, <var>0</var>);</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td>	<i>/* Add all external refs */</i></td></tr>
+<tr><th id="175">175</th><td>	<a class="ref" href="refs.h.html#for_each_ref" title='for_each_ref' data-ref="for_each_ref">for_each_ref</a>(<a class="tu ref" href="#add_one_ref" title='add_one_ref' data-use='r' data-ref="add_one_ref">add_one_ref</a>, <a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>);</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td>	<i>/* detached HEAD is not included in the list above */</i></td></tr>
+<tr><th id="178">178</th><td>	<a class="ref" href="refs.h.html#head_ref" title='head_ref' data-ref="head_ref">head_ref</a>(<a class="tu ref" href="#add_one_ref" title='add_one_ref' data-use='r' data-ref="add_one_ref">add_one_ref</a>, <a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>);</td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td>	<i>/* Add all reflog info */</i></td></tr>
+<tr><th id="181">181</th><td>	<b>if</b> (<a class="local col3 ref" href="#33mark_reflog" title='mark_reflog' data-ref="33mark_reflog">mark_reflog</a>)</td></tr>
+<tr><th id="182">182</th><td>		<a class="ref" href="revision.h.html#add_reflogs_to_pending" title='add_reflogs_to_pending' data-ref="add_reflogs_to_pending">add_reflogs_to_pending</a>(<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>, <var>0</var>);</td></tr>
+<tr><th id="183">183</th><td></td></tr>
+<tr><th id="184">184</th><td>	<a class="local col6 ref" href="#36cp" title='cp' data-ref="36cp">cp</a>.<a class="tu ref" href="#connectivity_progress::progress" title='connectivity_progress::progress' data-use='w' data-ref="connectivity_progress::progress">progress</a> = <a class="local col5 ref" href="#35progress" title='progress' data-ref="35progress">progress</a>;</td></tr>
+<tr><th id="185">185</th><td>	<a class="local col6 ref" href="#36cp" title='cp' data-ref="36cp">cp</a>.<a class="tu ref" href="#connectivity_progress::count" title='connectivity_progress::count' data-use='w' data-ref="connectivity_progress::count">count</a> = <var>0</var>;</td></tr>
+<tr><th id="186">186</th><td></td></tr>
+<tr><th id="187">187</th><td>	<i>/*</i></td></tr>
+<tr><th id="188">188</th><td><i>	 * Set up the revision walk - this will move all commits</i></td></tr>
+<tr><th id="189">189</th><td><i>	 * from the pending list to the commit walking list.</i></td></tr>
+<tr><th id="190">190</th><td><i>	 */</i></td></tr>
+<tr><th id="191">191</th><td>	<b>if</b> (<a class="ref" href="revision.h.html#prepare_revision_walk" title='prepare_revision_walk' data-ref="prepare_revision_walk">prepare_revision_walk</a>(<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>))</td></tr>
+<tr><th id="192">192</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"revision walk setup failed"</q>);</td></tr>
+<tr><th id="193">193</th><td>	<a class="ref" href="list-objects.h.html#traverse_commit_list" title='traverse_commit_list' data-ref="traverse_commit_list">traverse_commit_list</a>(<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>, <a class="tu ref" href="#mark_commit" title='mark_commit' data-use='r' data-ref="mark_commit">mark_commit</a>, <a class="tu ref" href="#mark_object" title='mark_object' data-use='r' data-ref="mark_object">mark_object</a>, &amp;<a class="local col6 ref" href="#36cp" title='cp' data-ref="36cp">cp</a>);</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td>	<b>if</b> (<a class="local col4 ref" href="#34mark_recent" title='mark_recent' data-ref="34mark_recent">mark_recent</a>) {</td></tr>
+<tr><th id="196">196</th><td>		<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>-&gt;<a class="ref" href="revision.h.html#rev_info::ignore_missing_links" title='rev_info::ignore_missing_links' data-ref="rev_info::ignore_missing_links">ignore_missing_links</a> = <var>1</var>;</td></tr>
+<tr><th id="197">197</th><td>		<b>if</b> (<a class="ref" href="#add_unseen_recent_objects_to_traversal" title='add_unseen_recent_objects_to_traversal' data-ref="add_unseen_recent_objects_to_traversal">add_unseen_recent_objects_to_traversal</a>(<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>, <a class="local col4 ref" href="#34mark_recent" title='mark_recent' data-ref="34mark_recent">mark_recent</a>))</td></tr>
+<tr><th id="198">198</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"unable to mark recent objects"</q>);</td></tr>
+<tr><th id="199">199</th><td>		<b>if</b> (<a class="ref" href="revision.h.html#prepare_revision_walk" title='prepare_revision_walk' data-ref="prepare_revision_walk">prepare_revision_walk</a>(<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>))</td></tr>
+<tr><th id="200">200</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"revision walk setup failed"</q>);</td></tr>
+<tr><th id="201">201</th><td>		<a class="ref" href="list-objects.h.html#traverse_commit_list" title='traverse_commit_list' data-ref="traverse_commit_list">traverse_commit_list</a>(<a class="local col2 ref" href="#32revs" title='revs' data-ref="32revs">revs</a>, <a class="tu ref" href="#mark_commit" title='mark_commit' data-use='r' data-ref="mark_commit">mark_commit</a>, <a class="tu ref" href="#mark_object" title='mark_object' data-use='r' data-ref="mark_object">mark_object</a>, &amp;<a class="local col6 ref" href="#36cp" title='cp' data-ref="36cp">cp</a>);</td></tr>
+<tr><th id="202">202</th><td>	}</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td>	<a class="ref" href="progress.h.html#display_progress" title='display_progress' data-ref="display_progress">display_progress</a>(<a class="local col6 ref" href="#36cp" title='cp' data-ref="36cp">cp</a>.<a class="tu ref" href="#connectivity_progress::progress" title='connectivity_progress::progress' data-use='r' data-ref="connectivity_progress::progress">progress</a>, <a class="local col6 ref" href="#36cp" title='cp' data-ref="36cp">cp</a>.<a class="tu ref" href="#connectivity_progress::count" title='connectivity_progress::count' data-use='r' data-ref="connectivity_progress::count">count</a>);</td></tr>
+<tr><th id="205">205</th><td>}</td></tr>
+<tr><th id="206">206</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/grep.h' l='199' type='char *'/>
+<offset>192</offset>
+<use f='codebrowser/grep.c' l='1462' u='r' c='show_funcname_line'/>
+<use f='codebrowser/grep.c' l='1465' u='r' c='show_funcname_line'/>
+<use f='codebrowser/grep.c' l='1494' u='r' c='show_pre_context'/>
+<use f='codebrowser/grep.c' l='1498' u='r' c='show_pre_context'/>
+<use f='codebrowser/grep.c' l='1625' u='w' c='fill_textconv_grep'/>
+<use f='codebrowser/grep.c' l='1711' u='r' c='grep_source_1'/>
+<use f='codebrowser/grep.c' l='1906' u='w' c='grep_buffer'/>
+<use f='codebrowser/grep.c' l='1922' u='w' c='grep_source_init'/>
+<use f='codebrowser/grep.c' l='1952' u='r' c='grep_source_clear_data'/>
+<use f='codebrowser/grep.c' l='1952' u='w' c='grep_source_clear_data'/>
+<use f='codebrowser/grep.c' l='1966' u='w' c='grep_source_load_oid'/>
+<use f='codebrowser/grep.c' l='1969' u='r' c='grep_source_load_oid'/>
+<use f='codebrowser/grep.c' l='2005' u='w' c='grep_source_load_file'/>
+<use f='codebrowser/grep.c' l='2012' u='r' c='grep_source_load'/>
+<use f='codebrowser/grep.c' l='2021' u='r' c='grep_source_load'/>
+<use f='codebrowser/grep.c' l='2046' u='r' c='grep_source_is_binary'/>

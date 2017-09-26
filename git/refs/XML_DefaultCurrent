@@ -1,0 +1,5 @@
+<dec f='include/expat.h' l='650' type='void XML_DefaultCurrent(XML_Parser parser)'/>
+<doc f='include/expat.h' l='645'>/* This can be called within a handler for a start element, end
+   element, processing instruction or character data.  It causes the
+   corresponding markup to be passed to the default handler.
+*/</doc>

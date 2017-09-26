@@ -1,0 +1,14 @@
+<dec f='include/unistd.h' l='340' type='__off64_t lseek(int __fd, __off64_t __offset, int __whence)'/>
+<dec f='include/unistd.h' l='348' type='__off64_t lseek64(int __fd, __off64_t __offset, int __whence)'/>
+<use f='codebrowser/builtin/index-pack.c' l='1171' u='c' c='parse_pack_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='736' u='c' c='write_reused_pack'/>
+<use f='codebrowser/bulk-checkin.c' l='197' u='c' c='deflate_to_pack'/>
+<use f='codebrowser/bulk-checkin.c' l='232' u='c' c='deflate_to_pack'/>
+<use f='codebrowser/csum-file.c' l='168' u='c' c='sha1file_truncate'/>
+<use f='codebrowser/fast-import.c' l='987' u='c' c='loosen_small_pack'/>
+<use f='codebrowser/http.c' l='2235' u='c' c='new_http_object_request'/>
+<use f='codebrowser/pack-write.c' l='220' u='c' c='fixup_pack_header_footer'/>
+<use f='codebrowser/pack-write.c' l='224' u='c' c='fixup_pack_header_footer'/>
+<use f='codebrowser/sha1_file.c' l='1198' u='c' c='open_packed_git_1'/>
+<use f='codebrowser/streaming.c' l='536' u='c' c='stream_blob_to_fd'/>
+<use f='codebrowser/streaming.c' l='545' u='c' c='stream_blob_to_fd'/>

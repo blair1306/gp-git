@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='304' type='int delayed_reachability_test(struct shallow_info * si, int c)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='886' u='c' c='update_shallow_ref'/>
+<def f='codebrowser/shallow.c' l='726' ll='747' type='int delayed_reachability_test(struct shallow_info * si, int c)'/>
+<doc f='codebrowser/shallow.c' l='725'>/* (Delayed) step 7, reachability test at commit level */</doc>

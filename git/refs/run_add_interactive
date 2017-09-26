@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='313' type='int run_add_interactive(const char * revision, const char * patch_mode, const struct pathspec * pathspec)'/>
+<def f='codebrowser/builtin/add.c' l='160' ll='179' type='int run_add_interactive(const char * revision, const char * patch_mode, const struct pathspec * pathspec)'/>
+<use f='codebrowser/builtin/add.c' l='191' u='c' c='interactive_add'/>
+<use f='codebrowser/builtin/checkout.c' l='275' u='c' c='checkout_paths'/>
+<use f='codebrowser/builtin/reset.c' l='338' u='c' c='cmd_reset'/>

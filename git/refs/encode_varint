@@ -1,0 +1,8 @@
+<dec f='codebrowser/varint.h' l='4' type='int encode_varint(uintmax_t , unsigned char * )'/>
+<use f='codebrowser/dir.c' l='2457' u='c' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2464' u='c' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2493' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2501' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2515' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/read-cache.c' l='2095' u='c' c='ce_write_entry'/>
+<def f='codebrowser/varint.c' l='20' ll='30' type='int encode_varint(uintmax_t value, unsigned char * buf)'/>

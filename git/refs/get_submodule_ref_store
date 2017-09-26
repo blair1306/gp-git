@@ -1,0 +1,21 @@
+<dec f='codebrowser/refs.h' l='736' type='struct ref_store * get_submodule_ref_store(const char * submodule)'/>
+<doc f='codebrowser/refs.h' l='726'>/*
+ * Return the ref_store instance for the specified submodule. For the
+ * main repository, use submodule==NULL; such a call cannot fail. For
+ * a submodule, the submodule must exist and be a nonbare repository,
+ * otherwise return NULL. If the requested reference store has not yet
+ * been initialized, initialize it first.
+ *
+ * For backwards compatibility, submodule==&quot;&quot; is treated the same as
+ * submodule==NULL.
+ */</doc>
+<use f='codebrowser/refs.c' l='341' u='c' c='for_each_tag_ref_submodule'/>
+<use f='codebrowser/refs.c' l='357' u='c' c='for_each_branch_ref_submodule'/>
+<use f='codebrowser/refs.c' l='373' u='c' c='for_each_remote_ref_submodule'/>
+<use f='codebrowser/refs.c' l='1331' u='c' c='for_each_ref_submodule'/>
+<use f='codebrowser/refs.c' l='1358' u='c' c='for_each_ref_in_submodule'/>
+<use f='codebrowser/refs.c' l='1370' u='c' c='for_each_fullref_in_submodule'/>
+<use f='codebrowser/refs.c' l='1520' u='c' c='resolve_gitlink_ref'/>
+<use f='codebrowser/refs.c' l='1523' u='c' c='resolve_gitlink_ref'/>
+<def f='codebrowser/refs.c' l='1635' ll='1673' type='struct ref_store * get_submodule_ref_store(const char * submodule)'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='35' u='c' c='get_store'/>

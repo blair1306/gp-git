@@ -1,0 +1,10 @@
+<dec f='codebrowser/pack-objects.h' l='18' type='enum object_type'/>
+<use f='codebrowser/builtin/pack-objects.c' l='472' u='r' c='write_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1403' u='a' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1413' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1416' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1472' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1828' u='r' c='try_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1829' u='r' c='try_delta'/>
+<offset>864</offset>
+<doc f='codebrowser/pack-objects.h' l='18'>/* could be delta */</doc>

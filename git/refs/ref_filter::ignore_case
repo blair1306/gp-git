@@ -1,0 +1,7 @@
+<dec f='codebrowser/ref-filter.h' l='67' type='unsigned int'/>
+<use f='codebrowser/builtin/branch.c' l='640' u='w' c='cmd_branch'/>
+<offset>514</offset>
+<use f='codebrowser/builtin/for-each-ref.c' l='74' u='w' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='458' u='w' c='cmd_tag'/>
+<use f='codebrowser/ref-filter.c' l='1622' u='r' c='match_pattern'/>
+<use f='codebrowser/ref-filter.c' l='1653' u='r' c='match_name_as_path'/>

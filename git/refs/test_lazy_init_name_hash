@@ -1,0 +1,17 @@
+<dec f='codebrowser/cache.h' l='352' type='int test_lazy_init_name_hash(struct index_state * istate, int try_threaded)'/>
+<doc f='codebrowser/cache.h' l='351'>/* Name hashing */</doc>
+<def f='codebrowser/name-hash.c' l='608' ll='616' type='int test_lazy_init_name_hash(struct index_state * istate, int try_threaded)'/>
+<doc f='codebrowser/name-hash.c' l='599'>/*
+ * A test routine for t/helper/ sources.
+ *
+ * Returns the number of threads used or 0 when
+ * the non-threaded code path was used.
+ *
+ * Requesting threading WILL NOT override guards
+ * in lookup_lazy_params().
+ */</doc>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='36' u='c' c='dump_run'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='38' u='c' c='dump_run'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='74' u='c' c='time_runs'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='137' u='c' c='analyze_run'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='146' u='c' c='analyze_run'/>

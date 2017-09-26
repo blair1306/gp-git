@@ -1,0 +1,22 @@
+<dec f='codebrowser/diff.h' l='207' type='const char * diff_line_prefix(struct diff_options * )'/>
+<use f='codebrowser/combine-diff.c' l='984' u='c' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1182' u='c' c='show_raw_diff'/>
+<use f='codebrowser/combine-diff.c' l='1410' u='c' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1514' u='c' c='diff_tree_combined'/>
+<use f='codebrowser/diff.c' l='521' u='c' c='emit_line_0'/>
+<use f='codebrowser/diff.c' l='761' u='c' c='emit_rewrite_diff'/>
+<use f='codebrowser/diff.c' l='963' u='c' c='fn_out_diff_words_aux'/>
+<use f='codebrowser/diff.c' l='1091' u='c' c='diff_words_show'/>
+<def f='codebrowser/diff.c' l='1227' ll='1235' type='const char * diff_line_prefix(struct diff_options * opt)'/>
+<use f='codebrowser/diff.c' l='1275' u='c' c='fn_out_consume'/>
+<use f='codebrowser/diff.c' l='1605' u='c' c='show_stats'/>
+<use f='codebrowser/diff.c' l='1855' u='c' c='show_shortstats'/>
+<use f='codebrowser/diff.c' l='1869' u='c' c='show_numstat'/>
+<use f='codebrowser/diff.c' l='1911' u='c' c='gather_dirstat'/>
+<use f='codebrowser/diff.c' l='2164' u='c' c='checkdiff_consume'/>
+<use f='codebrowser/diff.c' l='2350' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='3133' u='c' c='fill_metainfo'/>
+<use f='codebrowser/diff.c' l='4227' u='c' c='diff_flush_raw'/>
+<use f='codebrowser/diff.c' l='4459' u='c' c='flush_one_pair'/>
+<use f='codebrowser/diff.c' l='4499' u='c' c='diff_summary'/>
+<use f='codebrowser/diff.c' l='4813' u='c' c='diff_flush'/>

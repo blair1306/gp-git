@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='144' type='int cmd_check_mailmap(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/check-mailmap.c' l='39' ll='67' type='int cmd_check_mailmap(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='376'/>
+<use f='codebrowser/git.c' l='376'/>
+<use f='codebrowser/git.c' l='376'/>
+<use f='codebrowser/git.c' l='376'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/urlmatch.h' l='45' type='const char *'/>
+<use f='codebrowser/builtin/config.c' l='432' u='w' c='get_urlmatch'/>
+<use f='codebrowser/builtin/config.c' l='433' c='get_urlmatch'/>
+<use f='codebrowser/builtin/config.c' l='433' u='r' c='get_urlmatch'/>
+<use f='codebrowser/builtin/config.c' l='433' u='r' c='get_urlmatch'/>
+<use f='codebrowser/builtin/config.c' l='463' u='r' c='get_urlmatch'/>
+<offset>1152</offset>
+<use f='codebrowser/http.c' l='906' u='w' c='http_init'/>
+<use f='codebrowser/urlmatch.c' l='561' u='r' c='urlmatch_config_entry'/>
+<use f='codebrowser/urlmatch.c' l='600' u='r' c='urlmatch_config_entry'/>

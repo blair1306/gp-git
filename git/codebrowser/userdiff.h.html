@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>userdiff.h source code [codebrowser/userdiff.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="userdiff_driver,userdiff_funcname "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/userdiff.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='userdiff.h.html'>userdiff.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/USERDIFF_H">USERDIFF_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/USERDIFF_H" data-ref="_M/USERDIFF_H">USERDIFF_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="notes-cache.h.html">"notes-cache.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <dfn class="type def" id="userdiff_funcname" title='userdiff_funcname' data-ref="userdiff_funcname">userdiff_funcname</dfn> {</td></tr>
+<tr><th id="7">7</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="userdiff_funcname::pattern" title='userdiff_funcname::pattern' data-ref="userdiff_funcname::pattern">pattern</dfn>;</td></tr>
+<tr><th id="8">8</th><td>	<em>int</em> <dfn class="decl" id="userdiff_funcname::cflags" title='userdiff_funcname::cflags' data-ref="userdiff_funcname::cflags">cflags</dfn>;</td></tr>
+<tr><th id="9">9</th><td>};</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><b>struct</b> <dfn class="type def" id="userdiff_driver" title='userdiff_driver' data-ref="userdiff_driver">userdiff_driver</dfn> {</td></tr>
+<tr><th id="12">12</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="userdiff_driver::name" title='userdiff_driver::name' data-ref="userdiff_driver::name">name</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="userdiff_driver::external" title='userdiff_driver::external' data-ref="userdiff_driver::external">external</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>int</em> <dfn class="decl" id="userdiff_driver::binary" title='userdiff_driver::binary' data-ref="userdiff_driver::binary">binary</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<b>struct</b> <a class="type" href="#userdiff_funcname" title='userdiff_funcname' data-ref="userdiff_funcname">userdiff_funcname</a> <dfn class="decl" id="userdiff_driver::funcname" title='userdiff_driver::funcname' data-ref="userdiff_driver::funcname">funcname</dfn>;</td></tr>
+<tr><th id="16">16</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="userdiff_driver::word_regex" title='userdiff_driver::word_regex' data-ref="userdiff_driver::word_regex">word_regex</dfn>;</td></tr>
+<tr><th id="17">17</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="userdiff_driver::textconv" title='userdiff_driver::textconv' data-ref="userdiff_driver::textconv">textconv</dfn>;</td></tr>
+<tr><th id="18">18</th><td>	<b>struct</b> <a class="type" href="notes-cache.h.html#notes_cache" title='notes_cache' data-ref="notes_cache">notes_cache</a> *<dfn class="decl" id="userdiff_driver::textconv_cache" title='userdiff_driver::textconv_cache' data-ref="userdiff_driver::textconv_cache">textconv_cache</dfn>;</td></tr>
+<tr><th id="19">19</th><td>	<em>int</em> <dfn class="decl" id="userdiff_driver::textconv_want_cache" title='userdiff_driver::textconv_want_cache' data-ref="userdiff_driver::textconv_want_cache">textconv_want_cache</dfn>;</td></tr>
+<tr><th id="20">20</th><td>};</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><em>int</em> <dfn class="decl" id="userdiff_config" title='userdiff_config' data-ref="userdiff_config">userdiff_config</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="109k" title='k' data-type='const char *' data-ref="109k">k</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="110v" title='v' data-type='const char *' data-ref="110v">v</dfn>);</td></tr>
+<tr><th id="23">23</th><td><b>struct</b> <a class="type" href="#userdiff_driver" title='userdiff_driver' data-ref="userdiff_driver">userdiff_driver</a> *<dfn class="decl" id="userdiff_find_by_name" title='userdiff_find_by_name' data-ref="userdiff_find_by_name">userdiff_find_by_name</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="111name" title='name' data-type='const char *' data-ref="111name">name</dfn>);</td></tr>
+<tr><th id="24">24</th><td><b>struct</b> <a class="type" href="#userdiff_driver" title='userdiff_driver' data-ref="userdiff_driver">userdiff_driver</a> *<dfn class="decl" id="userdiff_find_by_path" title='userdiff_find_by_path' data-ref="userdiff_find_by_path">userdiff_find_by_path</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="112path" title='path' data-type='const char *' data-ref="112path">path</dfn>);</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><i>/*</i></td></tr>
+<tr><th id="27">27</th><td><i> * Initialize any textconv-related fields in the driver and return it, or NULL</i></td></tr>
+<tr><th id="28">28</th><td><i> * if it does not have textconv enabled at all.</i></td></tr>
+<tr><th id="29">29</th><td><i> */</i></td></tr>
+<tr><th id="30">30</th><td><b>struct</b> <a class="type" href="#userdiff_driver" title='userdiff_driver' data-ref="userdiff_driver">userdiff_driver</a> *<dfn class="decl" id="userdiff_get_textconv" title='userdiff_get_textconv' data-ref="userdiff_get_textconv">userdiff_get_textconv</dfn>(<b>struct</b> <a class="type" href="#userdiff_driver" title='userdiff_driver' data-ref="userdiff_driver">userdiff_driver</a> *<dfn class="local col3 decl" id="113driver" title='driver' data-type='struct userdiff_driver *' data-ref="113driver">driver</dfn>);</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="1">endif</span> /* USERDIFF */</u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='archive-zip.c.html'>codebrowser/archive-zip.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

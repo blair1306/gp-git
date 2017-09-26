@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs.h' l='291' type='int for_each_ref_in(const char * prefix, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/bisect.c' l='431' u='c' c='read_bisect_refs'/>
+<use f='codebrowser/builtin/rev-parse.c' l='565' u='c' c='handle_ref_opt'/>
+<use f='codebrowser/builtin/rev-parse.c' l='760' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/rev-parse.c' l='761' u='c' c='cmd_rev_parse'/>
+<def f='codebrowser/refs.c' l='1340' ll='1343' type='int for_each_ref_in(const char * prefix, each_ref_fn * fn, void * cb_data)'/>

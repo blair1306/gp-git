@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit.h' l='305' type='void prune_shallow(int show_only)'/>
+<use f='codebrowser/builtin/prune.c' l='155' u='c' c='cmd_prune'/>
+<def f='codebrowser/shallow.c' l='356' ll='380' type='void prune_shallow(int show_only)'/>
+<doc f='codebrowser/shallow.c' l='352'>/*
+ * mark_reachable_objects() should have been run prior to this and all
+ * reachable commits marked as &quot;SEEN&quot;.
+ */</doc>

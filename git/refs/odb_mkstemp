@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1651' type='int odb_mkstemp(struct strbuf * template, const char * pattern)'/>
+<doc f='codebrowser/cache.h' l='1645'>/*
+ * Create a temporary file rooted in the object database directory, or
+ * die on failure. The filename is taken from &quot;pattern&quot;, which should have the
+ * usual &quot;XXXXXX&quot; trailer, and the resulting filename is written into the
+ * &quot;template&quot; buffer. Returns the open descriptor.
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='312' u='c' c='open_pack_file'/>
+<def f='codebrowser/environment.c' l='247' ll='265' type='int odb_mkstemp(struct strbuf * template, const char * pattern)'/>
+<use f='codebrowser/fast-import.c' l='901' u='c' c='start_packfile'/>
+<use f='codebrowser/pack-bitmap-write.c' l='520' u='c' c='bitmap_writer_finish'/>
+<use f='codebrowser/pack-write.c' l='75' u='c' c='write_idx_file'/>
+<use f='codebrowser/pack-write.c' l='335' u='c' c='create_tmp_packfile'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/remote.h' l='172' type='struct refspec * parse_push_refspec(int nr_refspec, const char ** refspec)'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1155' u='c' c='push_check'/>
+<def f='codebrowser/remote.c' l='621' ll='624' type='struct refspec * parse_push_refspec(int nr_refspec, const char ** refspec)'/>
+<use f='codebrowser/remote.c' l='704' u='c' c='remote_get_1'/>
+<use f='codebrowser/remote.c' l='739' u='c' c='for_each_remote'/>
+<use f='codebrowser/remote.c' l='1406' u='c' c='check_push_refs'/>
+<use f='codebrowser/remote.c' l='1447' u='c' c='match_push_refs'/>

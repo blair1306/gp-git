@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='360' type='void for_each_mergetag(each_mergetag_fn fn, struct commit * commit, void * data)'/>
+<use f='codebrowser/builtin/replace.c' l='384' u='c' c='check_mergetags'/>
+<def f='codebrowser/commit.c' l='1294' ll='1305' type='void for_each_mergetag(each_mergetag_fn fn, struct commit * commit, void * data)'/>
+<use f='codebrowser/log-tree.c' l='532' u='c' c='show_mergetag'/>

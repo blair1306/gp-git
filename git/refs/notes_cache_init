@@ -1,0 +1,3 @@
+<dec f='codebrowser/notes-cache.h' l='11' type='void notes_cache_init(struct notes_cache * c, const char * name, const char * validity)'/>
+<def f='codebrowser/notes-cache.c' l='31' ll='45' type='void notes_cache_init(struct notes_cache * c, const char * name, const char * validity)'/>
+<use f='codebrowser/userdiff.c' l='294' u='c' c='userdiff_get_textconv'/>

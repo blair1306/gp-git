@@ -1,0 +1,20 @@
+<dec f='codebrowser/commit.h' l='190' type='void format_commit_message(const struct commit * commit, const char * format, struct strbuf * sb, const struct pretty_print_context * context)'/>
+<use f='codebrowser/archive.c' l='57' u='c' c='format_subst'/>
+<use f='codebrowser/builtin/commit.c' l='695' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='728' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1067' u='c' c='find_author_by_nickname'/>
+<use f='codebrowser/builtin/commit.c' l='1449' u='c' c='print_summary'/>
+<use f='codebrowser/builtin/commit.c' l='1450' u='c' c='print_summary'/>
+<use f='codebrowser/builtin/commit.c' l='1457' u='c' c='print_summary'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='373' u='c' c='shortlog'/>
+<use f='codebrowser/builtin/notes.c' l='735' u='c' c='merge_commit'/>
+<use f='codebrowser/builtin/shortlog.c' l='158' u='c' c='shortlog_add_commit'/>
+<use f='codebrowser/builtin/shortlog.c' l='163' u='c' c='shortlog_add_commit'/>
+<use f='codebrowser/log-tree.c' l='331' u='c' c='fmt_output_commit'/>
+<use f='codebrowser/notes-cache.c' l='22' u='c' c='notes_cache_match_validity'/>
+<def f='codebrowser/pretty.c' l='1483' ll='1526' type='void format_commit_message(const struct commit * commit, const char * format, struct strbuf * sb, const struct pretty_print_context * pretty_ctx)'/>
+<use f='codebrowser/pretty.c' l='1776' u='c' c='pretty_print_commit'/>
+<use f='codebrowser/sha1_name.c' l='371' u='c' c='show_ambiguous_object'/>
+<use f='codebrowser/submodule.c' l='501' u='c' c='print_submodule_summary'/>
+<use f='codebrowser/submodule.c' l='1722' u='c' c='print_commit'/>
+<use f='codebrowser/t/helper/test-revision-walking.c' l='21' u='c' c='print_commit'/>

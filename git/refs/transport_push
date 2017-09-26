@@ -1,0 +1,3 @@
+<dec f='codebrowser/transport.h' l='228' type='int transport_push(struct transport * connection, int refspec_nr, const char ** refspec, int flags, unsigned int * reject_reasons)'/>
+<use f='codebrowser/builtin/push.c' l='336' u='c' c='push_with_options'/>
+<def f='codebrowser/transport.c' l='967' ll='1097' type='int transport_push(struct transport * transport, int refspec_nr, const char ** refspec, int flags, unsigned int * reject_reasons)'/>

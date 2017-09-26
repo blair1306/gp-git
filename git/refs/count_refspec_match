@@ -1,0 +1,6 @@
+<dec f='codebrowser/remote.h' l='142' type='int count_refspec_match(const char * , struct ref * refs, struct ref ** matched_ref)'/>
+<use f='codebrowser/builtin/push.c' l='48' u='c' c='map_refspec'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1165' u='c' c='push_check'/>
+<def f='codebrowser/remote.c' l='1006' ll='1060' type='int count_refspec_match(const char * pattern, struct ref * refs, struct ref ** matched_ref)'/>
+<use f='codebrowser/remote.c' l='1131' u='c' c='match_explicit_lhs'/>
+<use f='codebrowser/remote.c' l='1182' u='c' c='match_explicit'/>

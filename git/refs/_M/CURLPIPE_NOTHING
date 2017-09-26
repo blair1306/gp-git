@@ -1,0 +1,2 @@
+<dec f='include/curl/multi.h' l='78'/>
+<doc f='include/curl/multi.h' l='77'>/* bitmask bits for CURLMOPT_PIPELINING */</doc>

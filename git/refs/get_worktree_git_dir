@@ -1,0 +1,7 @@
+<dec f='codebrowser/worktree.h' l='39' type='const char * get_worktree_git_dir(const struct worktree * wt)'/>
+<doc f='codebrowser/worktree.h' l='35'>/*
+ * Return git dir of the worktree. Note that the path may be relative.
+ * If wt is NULL, git dir of current worktree is returned.
+ */</doc>
+<use f='codebrowser/worktree.c' l='113' u='c' c='mark_current_worktree'/>
+<def f='codebrowser/worktree.c' l='172' ll='180' type='const char * get_worktree_git_dir(const struct worktree * wt)'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/walker.h' l='18' type='int'/>
+<use f='codebrowser/http-fetch.c' l='82' u='r' c='cmd_main'/>
+<offset>480</offset>
+<use f='codebrowser/http-walker.c' l='541' u='w' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='614' u='w' c='get_http_walker'/>

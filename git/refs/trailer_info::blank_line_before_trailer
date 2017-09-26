@@ -1,0 +1,8 @@
+<dec f='codebrowser/trailer.h' l='9' type='int'/>
+<offset>0</offset>
+<doc f='codebrowser/trailer.h' l='5'>/*
+	 * True if there is a blank line before the location pointed to by
+	 * trailer_start.
+	 */</doc>
+<use f='codebrowser/trailer.c' l='902' u='r' c='process_input_file'/>
+<use f='codebrowser/trailer.c' l='1042' u='w' c='trailer_info_get'/>

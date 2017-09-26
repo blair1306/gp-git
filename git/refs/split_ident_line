@@ -1,0 +1,26 @@
+<dec f='codebrowser/cache.h' l='1472' type='int split_ident_line(struct ident_split * , const char * , int )'/>
+<doc f='codebrowser/cache.h' l='1468'>/*
+ * Signals an success with 0, but time part of the result may be NULL
+ * if the input lacks timestamp and zone
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='1357' u='c' c='get_commit_info'/>
+<use f='codebrowser/builtin/blame.c' l='116' u='c' c='get_ac_line'/>
+<use f='codebrowser/builtin/check-mailmap.c' l='24' u='c' c='check_mailmap'/>
+<use f='codebrowser/builtin/commit.c' l='532' u='c' c='assert_split_ident'/>
+<use f='codebrowser/builtin/commit.c' l='584' u='c' c='determine_author_info'/>
+<use f='codebrowser/builtin/commit.c' l='603' u='c' c='determine_author_info'/>
+<use f='codebrowser/builtin/fast-export.c' l='512' u='c' c='anonymize_ident_line'/>
+<use f='codebrowser/builtin/log.c' l='1574' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/shortlog.c' l='60' u='c' c='insert_one_record'/>
+<use f='codebrowser/commit.c' l='605' u='c' c='record_author_date'/>
+<def f='codebrowser/ident.c' l='264' ll='339' type='int split_ident_line(struct ident_split * split, const char * line, int len)'/>
+<doc f='codebrowser/ident.c' l='257'>/*
+ * Reverse of fmt_ident(); given an ident line, split the fields
+ * to allow the caller to parse it.
+ * Signal a success by returning 0, but date/tz fields of the result
+ * can still be NULL if the input line only has the name/email part
+ * (e.g. reading from a reflog entry).
+ */</doc>
+<use f='codebrowser/pretty.c' l='439' u='c' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='687' u='c' c='format_person_part'/>
+<use f='codebrowser/revision.c' l='2872' u='c' c='commit_rewrite_person'/>

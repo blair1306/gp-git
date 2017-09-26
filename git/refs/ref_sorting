@@ -1,0 +1,7 @@
+<def f='codebrowser/ref-filter.h' l='28' ll='34'/>
+<size>16</size>
+<mbr r='ref_sorting::next' o='0' t='struct ref_sorting *'/>
+<mbr r='ref_sorting::atom' o='64' t='int'/>
+<mbr r='ref_sorting::reverse' o='96' t='unsigned int'/>
+<mbr r='ref_sorting::ignore_case' o='97' t='unsigned int'/>
+<mbr r='ref_sorting::version' o='98' t='unsigned int'/>

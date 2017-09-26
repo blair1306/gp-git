@@ -1,0 +1,8 @@
+<dec f='codebrowser/remote.h' l='38' type='int'/>
+<offset>928</offset>
+<use f='codebrowser/remote.c' l='102' u='r' c='add_fetch_refspec'/>
+<use f='codebrowser/remote.c' l='102' u='r' c='add_fetch_refspec'/>
+<use f='codebrowser/remote.c' l='102' u='w' c='add_fetch_refspec'/>
+<use f='codebrowser/remote.c' l='102' u='w' c='add_fetch_refspec'/>
+<use f='codebrowser/remote.c' l='102' u='r' c='add_fetch_refspec'/>
+<use f='codebrowser/remote.c' l='102' u='r' c='add_fetch_refspec'/>

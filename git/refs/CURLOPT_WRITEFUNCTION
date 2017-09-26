@@ -1,0 +1,11 @@
+<dec f='include/curl/curl.h' l='897' macro='1' type='20011'/>
+<use f='codebrowser/http-push.c' l='189' u='r' c='curl_setup_http_get'/>
+<use f='codebrowser/http-push.c' l='205' u='r' c='curl_setup_http'/>
+<use f='codebrowser/http-walker.c' l='377' u='r' c='fetch_alternates'/>
+<use f='codebrowser/http.c' l='1108' u='r' c='get_active_slot'/>
+<use f='codebrowser/http.c' l='1676' u='r' c='http_request'/>
+<use f='codebrowser/http.c' l='1681' u='r' c='http_request'/>
+<use f='codebrowser/http.c' l='2081' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2248' u='r' c='new_http_object_request'/>
+<use f='codebrowser/remote-curl.c' l='525' u='r' c='probe_rpc'/>
+<use f='codebrowser/remote-curl.c' l='677' u='r' c='post_rpc'/>

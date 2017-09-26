@@ -1,0 +1,6 @@
+<def f='codebrowser/cache.h' l='1278' ll='1292'/>
+<size>56</size>
+<mbr r='object_context::tree' o='0' t='unsigned char [20]'/>
+<mbr r='object_context::mode' o='160' t='unsigned int'/>
+<mbr r='object_context::symlink_path' o='192' t='struct strbuf'/>
+<mbr r='object_context::path' o='384' t='char *'/>

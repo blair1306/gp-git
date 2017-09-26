@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1409' type='0'/>
+<use f='codebrowser/archive.c' l='38' u='r' c='format_subst'/>
+<use f='codebrowser/builtin/am.c' l='1375' macro='1' u='r'/>
+<use f='codebrowser/builtin/blame.c' l='797' c='cmd_blame'/>
+<use f='codebrowser/builtin/commit.c' l='868' macro='1' u='r'/>
+<use f='codebrowser/builtin/commit.c' l='1065' u='r' c='find_author_by_nickname'/>
+<use f='codebrowser/builtin/shortlog.c' l='153' u='r' c='shortlog_add_commit'/>
+<use f='codebrowser/date.c' l='821' u='r' c='parse_date_type'/>
+<use f='codebrowser/ref-filter.c' l='869' u='r' c='grab_date'/>
+<use f='codebrowser/ref-filter.c' l='869' u='r' c='grab_date'/>
+<use f='codebrowser/submodule.c' l='1721' u='r' c='print_commit'/>
+<use f='codebrowser/t/helper/test-revision-walking.c' l='20' u='r' c='print_commit'/>

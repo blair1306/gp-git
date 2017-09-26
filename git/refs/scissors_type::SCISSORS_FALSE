@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin/am.c' l='88' type='0'/>
+<use f='codebrowser/builtin/am.c' l='457' u='r' c='am_load'/>
+<use f='codebrowser/builtin/am.c' l='1039' c='am_setup'/>
+<use f='codebrowser/builtin/am.c' l='1249' c='parse_mail'/>
+<doc f='codebrowser/builtin/am.c' l='88'>/* pass --no-scissors to git-mailinfo */</doc>

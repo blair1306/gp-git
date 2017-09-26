@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>bundle.h source code [codebrowser/bundle.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="bundle_header,ref_list,ref_list_entry "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/bundle.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='bundle.h.html'>bundle.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/BUNDLE_H">BUNDLE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/BUNDLE_H" data-ref="_M/BUNDLE_H">BUNDLE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <dfn class="type def" id="ref_list" title='ref_list' data-ref="ref_list">ref_list</dfn> {</td></tr>
+<tr><th id="7">7</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="ref_list::nr" title='ref_list::nr' data-ref="ref_list::nr">nr</dfn>, <dfn class="decl" id="ref_list::alloc" title='ref_list::alloc' data-ref="ref_list::alloc">alloc</dfn>;</td></tr>
+<tr><th id="8">8</th><td>	<b>struct</b> <dfn class="type def" id="ref_list_entry" title='ref_list_entry' data-ref="ref_list_entry"><a class="type" href="#ref_list_entry" title='ref_list_entry' data-ref="ref_list_entry">ref_list_entry</a></dfn> {</td></tr>
+<tr><th id="9">9</th><td>		<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="ref_list_entry::oid" title='ref_list_entry::oid' data-ref="ref_list_entry::oid">oid</dfn>;</td></tr>
+<tr><th id="10">10</th><td>		<em>char</em> *<dfn class="decl" id="ref_list_entry::name" title='ref_list_entry::name' data-ref="ref_list_entry::name">name</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	} *<dfn class="decl" id="ref_list::list" title='ref_list::list' data-ref="ref_list::list">list</dfn>;</td></tr>
+<tr><th id="12">12</th><td>};</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><b>struct</b> <dfn class="type def" id="bundle_header" title='bundle_header' data-ref="bundle_header">bundle_header</dfn> {</td></tr>
+<tr><th id="15">15</th><td>	<b>struct</b> <a class="type" href="#ref_list" title='ref_list' data-ref="ref_list">ref_list</a> <dfn class="decl" id="bundle_header::prerequisites" title='bundle_header::prerequisites' data-ref="bundle_header::prerequisites">prerequisites</dfn>;</td></tr>
+<tr><th id="16">16</th><td>	<b>struct</b> <a class="type" href="#ref_list" title='ref_list' data-ref="ref_list">ref_list</a> <dfn class="decl" id="bundle_header::references" title='bundle_header::references' data-ref="bundle_header::references">references</dfn>;</td></tr>
+<tr><th id="17">17</th><td>};</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><em>int</em> <dfn class="decl" id="is_bundle" title='is_bundle' data-ref="is_bundle">is_bundle</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1path" title='path' data-type='const char *' data-ref="1path">path</dfn>, <em>int</em> <dfn class="local col2 decl" id="2quiet" title='quiet' data-type='int' data-ref="2quiet">quiet</dfn>);</td></tr>
+<tr><th id="20">20</th><td><em>int</em> <dfn class="decl" id="read_bundle_header" title='read_bundle_header' data-ref="read_bundle_header">read_bundle_header</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3path" title='path' data-type='const char *' data-ref="3path">path</dfn>, <b>struct</b> <a class="type" href="#bundle_header" title='bundle_header' data-ref="bundle_header">bundle_header</a> *<dfn class="local col4 decl" id="4header" title='header' data-type='struct bundle_header *' data-ref="4header">header</dfn>);</td></tr>
+<tr><th id="21">21</th><td><em>int</em> <dfn class="decl" id="create_bundle" title='create_bundle' data-ref="create_bundle">create_bundle</dfn>(<b>struct</b> <a class="type" href="#bundle_header" title='bundle_header' data-ref="bundle_header">bundle_header</a> *<dfn class="local col5 decl" id="5header" title='header' data-type='struct bundle_header *' data-ref="5header">header</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="6path" title='path' data-type='const char *' data-ref="6path">path</dfn>,</td></tr>
+<tr><th id="22">22</th><td>		<em>int</em> <dfn class="local col7 decl" id="7argc" title='argc' data-type='int' data-ref="7argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col8 decl" id="8argv" title='argv' data-type='const char **' data-ref="8argv">argv</dfn>);</td></tr>
+<tr><th id="23">23</th><td><em>int</em> <dfn class="decl" id="verify_bundle" title='verify_bundle' data-ref="verify_bundle">verify_bundle</dfn>(<b>struct</b> <a class="type" href="#bundle_header" title='bundle_header' data-ref="bundle_header">bundle_header</a> *<dfn class="local col9 decl" id="9header" title='header' data-type='struct bundle_header *' data-ref="9header">header</dfn>, <em>int</em> <dfn class="local col0 decl" id="10verbose" title='verbose' data-type='int' data-ref="10verbose">verbose</dfn>);</td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/BUNDLE_VERBOSE" data-ref="_M/BUNDLE_VERBOSE">BUNDLE_VERBOSE</dfn> 1</u></td></tr>
+<tr><th id="25">25</th><td><em>int</em> <dfn class="decl" id="unbundle" title='unbundle' data-ref="unbundle">unbundle</dfn>(<b>struct</b> <a class="type" href="#bundle_header" title='bundle_header' data-ref="bundle_header">bundle_header</a> *<dfn class="local col1 decl" id="11header" title='header' data-type='struct bundle_header *' data-ref="11header">header</dfn>, <em>int</em> <dfn class="local col2 decl" id="12bundle_fd" title='bundle_fd' data-type='int' data-ref="12bundle_fd">bundle_fd</dfn>, <em>int</em> <dfn class="local col3 decl" id="13flags" title='flags' data-type='int' data-ref="13flags">flags</dfn>);</td></tr>
+<tr><th id="26">26</th><td><em>int</em> <dfn class="decl" id="list_bundle_refs" title='list_bundle_refs' data-ref="list_bundle_refs">list_bundle_refs</dfn>(<b>struct</b> <a class="type" href="#bundle_header" title='bundle_header' data-ref="bundle_header">bundle_header</a> *<dfn class="local col4 decl" id="14header" title='header' data-type='struct bundle_header *' data-ref="14header">header</dfn>,</td></tr>
+<tr><th id="27">27</th><td>		<em>int</em> <dfn class="local col5 decl" id="15argc" title='argc' data-type='int' data-ref="15argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col6 decl" id="16argv" title='argv' data-type='const char **' data-ref="16argv">argv</dfn>);</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/bundle.c.html'>codebrowser/builtin/bundle.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

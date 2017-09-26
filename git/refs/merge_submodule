@@ -1,0 +1,3 @@
+<dec f='codebrowser/submodule.h' l='99' type='int merge_submodule(struct object_id * result, const char * path, const struct object_id * base, const struct object_id * a, const struct object_id * b, int search)'/>
+<use f='codebrowser/merge-recursive.c' l='998' u='c' c='merge_file_1'/>
+<def f='codebrowser/submodule.c' l='1730' ll='1820' type='int merge_submodule(struct object_id * result, const char * path, const struct object_id * base, const struct object_id * a, const struct object_id * b, int search)'/>

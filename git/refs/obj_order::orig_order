@@ -1,0 +1,6 @@
+<dec f='codebrowser/diffcore.h' l='121' type='int'/>
+<offset>64</offset>
+<doc f='codebrowser/diffcore.h' l='120'>/* setup/used by order_objects() */</doc>
+<use f='codebrowser/diffcore-order.c' l='88' u='r' c='compare_objs_order'/>
+<use f='codebrowser/diffcore-order.c' l='88' u='r' c='compare_objs_order'/>
+<use f='codebrowser/diffcore-order.c' l='101' u='w' c='order_objects'/>

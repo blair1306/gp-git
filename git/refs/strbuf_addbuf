@@ -1,0 +1,60 @@
+<dec f='codebrowser/strbuf.h' l='264' type='void strbuf_addbuf(struct strbuf * sb, const struct strbuf * sb2)'/>
+<use f='codebrowser/abspath.c' l='128' u='c' c='strbuf_realpath'/>
+<use f='codebrowser/abspath.c' l='181' u='c' c='strbuf_realpath'/>
+<doc f='codebrowser/strbuf.h' l='261'>/**
+ * Copy the contents of another buffer at the end of the current one.
+ */</doc>
+<use f='codebrowser/archive.c' l='295' u='c' c='reject_entry'/>
+<use f='codebrowser/builtin/am.c' l='1297' u='c' c='parse_mail'/>
+<use f='codebrowser/builtin/commit.c' l='701' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='530' u='c' c='fmt_merge_msg_sigs'/>
+<use f='codebrowser/builtin/log.c' l='952' u='c' c='add_branch_description'/>
+<use f='codebrowser/builtin/merge.c' l='764' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/merge.c' l='783' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/tag.c' l='495' u='c' c='cmd_tag'/>
+<use f='codebrowser/daemon.c' l='132' u='c' c='expand_path'/>
+<use f='codebrowser/daemon.c' l='147' u='c' c='expand_path'/>
+<use f='codebrowser/daemon.c' l='634' u='c' c='lookup_hostname'/>
+<use f='codebrowser/dir.c' l='1180' u='c' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2495' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2517' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2521' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2522' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/fast-import.c' l='2024' u='c' c='parse_data'/>
+<use f='codebrowser/fast-import.c' l='2841' u='c' c='parse_new_commit'/>
+<use f='codebrowser/fast-import.c' l='2921' u='c' c='parse_new_tag'/>
+<use f='codebrowser/ident.c' l='88' u='c' c='add_mailname_host'/>
+<use f='codebrowser/lockfile.c' l='67' u='c' c='resolve_symlink'/>
+<use f='codebrowser/mailinfo.c' l='28' u='c' c='get_sane_name'/>
+<use f='codebrowser/mailinfo.c' l='145' u='c' c='handle_from'/>
+<use f='codebrowser/mailinfo.c' l='212' u='c' c='handle_header'/>
+<use f='codebrowser/mailinfo.c' l='513' u='c' c='decode_header'/>
+<use f='codebrowser/mailinfo.c' l='520' u='c' c='decode_header'/>
+<use f='codebrowser/mailinfo.c' l='617' u='c' c='decode_transfer_encoding'/>
+<use f='codebrowser/mailinfo.c' l='732' u='c' c='check_inbody_header'/>
+<use f='codebrowser/mailinfo.c' l='750' u='c' c='check_inbody_header'/>
+<use f='codebrowser/mailinfo.c' l='809' u='c' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='896' u='c' c='read_one_header_line'/>
+<use f='codebrowser/mailinfo.c' l='1006' u='c' c='handle_body'/>
+<use f='codebrowser/path.c' l='563' u='c' c='do_submodule_path'/>
+<use f='codebrowser/pretty.c' l='1384' u='c' c='format_and_pad_commit'/>
+<use f='codebrowser/pretty.c' l='1608' u='c' c='pp_title_line'/>
+<use f='codebrowser/ref-filter.c' l='480' u='c' c='pop_stack_element'/>
+<use f='codebrowser/ref-filter.c' l='2103' u='c' c='format_ref_array_item'/>
+<use f='codebrowser/rerere.c' l='449' u='c' c='handle_path'/>
+<use f='codebrowser/rerere.c' l='453' u='c' c='handle_path'/>
+<use f='codebrowser/run-command.c' l='1525' u='c' c='pp_start_one'/>
+<use f='codebrowser/run-command.c' l='1537' u='c' c='pp_start_one'/>
+<use f='codebrowser/run-command.c' l='1617' u='c' c='pp_collect_finished'/>
+<use f='codebrowser/setup.c' l='285' u='c' c='get_common_dir_noenv'/>
+<use f='codebrowser/setup.c' l='1051' u='c' c='setup_git_directory_gently'/>
+<use f='codebrowser/sha1_name.c' l='1118' u='c' c='interpret_nth_prior_checkout'/>
+<use f='codebrowser/sha1_name.c' l='1206' u='c' c='reinterpret'/>
+<def f='codebrowser/strbuf.c' l='200' ll='205' type='void strbuf_addbuf(struct strbuf * sb, const struct strbuf * sb2)'/>
+<use f='codebrowser/strbuf.c' l='720' u='c' c='strbuf_add_real_path'/>
+<use f='codebrowser/sub-process.c' l='43' u='c' c='subprocess_read_status'/>
+<use f='codebrowser/tmp-objdir.c' l='269' u='c' c='tmp_objdir_migrate'/>
+<use f='codebrowser/trace.c' l='188' u='c' c='trace_strbuf_fl'/>
+<use f='codebrowser/trailer.c' l='1029' u='c' c='trailer_info_get'/>
+<use f='codebrowser/wt-status.c' l='858' u='c' c='wt_longstatus_print_submodule_summary'/>
+<use f='codebrowser/wt-status.c' l='1169' u='c' c='abbrev_sha1_in_line'/>

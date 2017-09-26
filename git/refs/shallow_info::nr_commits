@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='295' type='int'/>
+<offset>704</offset>
+<use f='codebrowser/shallow.c' l='738' u='w' c='delayed_reachability_test'/>
+<use f='codebrowser/shallow.c' l='742' u='r' c='delayed_reachability_test'/>

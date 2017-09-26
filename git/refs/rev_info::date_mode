@@ -1,0 +1,13 @@
+<dec f='codebrowser/revision.h' l='158' type='struct date_mode'/>
+<offset>1024</offset>
+<use f='codebrowser/builtin/blame.c' l='710' u='w' c='cmd_blame'/>
+<use f='codebrowser/builtin/blame.c' l='762' u='r' c='cmd_blame'/>
+<use f='codebrowser/builtin/log.c' l='136' u='a' c='cmd_log_init_defaults'/>
+<use f='codebrowser/builtin/log.c' l='473' u='r' c='show_tagger'/>
+<use f='codebrowser/builtin/merge.c' l='365' u='r' c='squash_message'/>
+<use f='codebrowser/builtin/rev-list.c' l='122' u='r' c='show_commit'/>
+<use f='codebrowser/log-tree.c' l='639' u='a' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='673' u='r' c='show_log'/>
+<use f='codebrowser/revision.c' l='1991' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1994' u='a' c='handle_revision_opt'/>
+<use f='codebrowser/submodule.c' l='491' u='r' c='print_submodule_summary'/>

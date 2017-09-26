@@ -1,0 +1,26 @@
+<dec f='codebrowser/connect.h' l='11' type='int server_supports(const char * feature)'/>
+<def f='codebrowser/connect.c' l='250' ll='253' type='int server_supports(const char * feature)'/>
+<use f='codebrowser/fetch-pack.c' l='921' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='925' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='928' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='934' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='938' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='942' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='946' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='950' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='954' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='956' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='958' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='960' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='971' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='975' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='979' u='c' c='do_fetch_pack'/>
+<use f='codebrowser/send-pack.c' l='403' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='405' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='407' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='409' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='411' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='413' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='415' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='417' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='419' u='c' c='send_pack'/>

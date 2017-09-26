@@ -1,0 +1,16 @@
+<dec f='codebrowser/revision.h' l='193' type='timestamp_t'/>
+<offset>9920</offset>
+<use f='codebrowser/builtin/diff-files.c' l='56' u='r' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-index.c' l='47' u='r' c='cmd_diff_index'/>
+<use f='codebrowser/builtin/diff.c' l='143' u='r' c='builtin_diff_index'/>
+<use f='codebrowser/bundle.c' l='218' u='r' c='is_tag_in_date_range'/>
+<use f='codebrowser/bundle.c' l='233' u='r' c='is_tag_in_date_range'/>
+<use f='codebrowser/bundle.c' l='233' u='r' c='is_tag_in_date_range'/>
+<use f='codebrowser/revision.c' l='1056' u='r' c='limit_list'/>
+<use f='codebrowser/revision.c' l='1056' u='r' c='limit_list'/>
+<use f='codebrowser/revision.c' l='1352' u='w' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1739' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1742' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1745' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2989' u='r' c='get_commit_action'/>
+<use f='codebrowser/revision.c' l='2990' u='r' c='get_commit_action'/>

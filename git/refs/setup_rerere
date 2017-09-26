@@ -1,0 +1,9 @@
+<dec f='codebrowser/rerere.h' l='25' type='int setup_rerere(struct string_list * , int )'/>
+<use f='codebrowser/builtin/rerere.c' l='89' u='c' c='cmd_rerere'/>
+<use f='codebrowser/builtin/rerere.c' l='104' u='c' c='cmd_rerere'/>
+<use f='codebrowser/rerere.c' l='601' u='c' c='rerere_remaining'/>
+<def f='codebrowser/rerere.c' l='888' ll='905' type='int setup_rerere(struct string_list * merge_rr, int flags)'/>
+<use f='codebrowser/rerere.c' l='917' u='c' c='rerere'/>
+<use f='codebrowser/rerere.c' l='1111' u='c' c='rerere_forget'/>
+<use f='codebrowser/rerere.c' l='1189' u='c' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1241' u='c' c='rerere_clear'/>

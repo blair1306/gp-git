@@ -1,0 +1,41 @@
+<dec f='codebrowser/remote.h' l='87' type='char *'/>
+<offset>576</offset>
+<use f='codebrowser/builtin/ls-remote.c' l='110' u='r' c='cmd_ls_remote'/>
+<use f='codebrowser/builtin/ls-remote.c' l='111' u='r' c='cmd_ls_remote'/>
+<use f='codebrowser/connect.c' l='105' u='w' c='annotate_refs_with_symref_info'/>
+<use f='codebrowser/http.c' l='1871' u='w' c='http_fetch_ref'/>
+<use f='codebrowser/remote-curl.c' l='390' u='r' c='output_refs'/>
+<use f='codebrowser/remote-curl.c' l='391' u='r' c='output_refs'/>
+<use f='codebrowser/remote.c' l='947' u='w' c='copy_ref'/>
+<use f='codebrowser/remote.c' l='947' u='r' c='copy_ref'/>
+<use f='codebrowser/remote.c' l='971' u='r' c='free_ref'/>
+<use f='codebrowser/remote.c' l='1926' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='1929' u='r' c='resolve_remote_symref'/>
+<use f='codebrowser/remote.c' l='2168' u='r' c='guess_remote_head'/>
+<use f='codebrowser/remote.c' l='2169' u='r' c='guess_remote_head'/>
+<use f='codebrowser/transport-helper.c' l='397' u='r' c='fetch_with_fetch'/>
+<use f='codebrowser/transport-helper.c' l='397' u='r' c='fetch_with_fetch'/>
+<use f='codebrowser/transport-helper.c' l='496' u='r' c='fetch_with_import'/>
+<use f='codebrowser/transport-helper.c' l='496' u='r' c='fetch_with_import'/>
+<use f='codebrowser/transport-helper.c' l='533' u='r' c='fetch_with_import'/>
+<use f='codebrowser/transport-helper.c' l='533' u='r' c='fetch_with_import'/>
+<use f='codebrowser/transport-helper.c' l='1063' u='w' c='get_refs_list'/>

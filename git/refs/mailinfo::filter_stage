@@ -1,0 +1,6 @@
+<dec f='codebrowser/mailinfo.h' l='28' type='int'/>
+<offset>1536</offset>
+<doc f='codebrowser/mailinfo.h' l='28'>/* still reading log or are we copying patch? */</doc>
+<use f='codebrowser/mailinfo.c' l='758' u='r' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='821' u='r' c='handle_filter'/>
+<use f='codebrowser/mailinfo.c' l='825' u='w' c='handle_filter'/>

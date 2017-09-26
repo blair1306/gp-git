@@ -1,0 +1,15 @@
+<dec f='codebrowser/refs.h' l='61' type='const char * refs_resolve_ref_unsafe(struct ref_store * refs, const char * refname, int resolve_flags, unsigned char * sha1, int * flags)'/>
+<use f='codebrowser/refs.c' l='201' u='c' c='refs_resolve_refdup'/>
+<use f='codebrowser/refs.c' l='224' u='c' c='refs_read_ref_full'/>
+<def f='codebrowser/refs.c' l='1412' ll='1486' type='const char * refs_resolve_ref_unsafe(struct ref_store * refs, const char * refname, int resolve_flags, unsigned char * sha1, int * flags)'/>
+<use f='codebrowser/refs.c' l='1499' u='c' c='resolve_ref_unsafe'/>
+<use f='codebrowser/refs.c' l='1529' u='c' c='resolve_gitlink_ref'/>
+<doc f='codebrowser/refs.c' l='1411'>/* This function needs to return a meaningful errno on failure */</doc>
+<use f='codebrowser/refs/files-backend.c' l='198' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='901' u='c' c='lock_ref_sha1_basic'/>
+<use f='codebrowser/refs/files-backend.c' l='920' u='c' c='lock_ref_sha1_basic'/>
+<use f='codebrowser/refs/files-backend.c' l='1283' u='c' c='files_rename_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1679' u='c' c='commit_ref_update'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='136' u='c' c='cmd_resolve_ref'/>
+<use f='codebrowser/worktree.c' l='31' u='c' c='add_head_info'/>
+<use f='codebrowser/worktree.c' l='329' u='c' c='find_shared_symref'/>

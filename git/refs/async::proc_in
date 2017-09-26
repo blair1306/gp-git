@@ -1,0 +1,6 @@
+<dec f='codebrowser/run-command.h' l='137' type='int'/>
+<offset>256</offset>
+<use f='codebrowser/run-command.c' l='933' u='r' c='run_thread'/>
+<use f='codebrowser/run-command.c' l='943' u='r' c='die_async'/>
+<use f='codebrowser/run-command.c' l='944' u='r' c='die_async'/>
+<use f='codebrowser/run-command.c' l='1127' u='w' c='start_async'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/compat/bswap.h' l='160'/>
+<use f='codebrowser/dir.c' l='2707' u='c'/>
+<use f='codebrowser/ewah/ewah_io.c' l='131' u='c'/>
+<use f='codebrowser/ewah/ewah_io.c' l='134' u='c'/>
+<use f='codebrowser/ewah/ewah_io.c' l='151' u='c'/>
+<use f='codebrowser/pack-bitmap.c' l='199' u='c'/>
+<use f='codebrowser/pack-bitmap.c' l='630' u='c'/>
+<use f='codebrowser/read-cache.c' l='1579' u='c'/>
+<use f='codebrowser/read-cache.c' l='1580' u='c'/>
+<use f='codebrowser/read-cache.c' l='1581' u='c'/>
+<use f='codebrowser/read-cache.c' l='1582' u='c'/>
+<use f='codebrowser/read-cache.c' l='1583' u='c'/>
+<use f='codebrowser/read-cache.c' l='1584' u='c'/>
+<use f='codebrowser/read-cache.c' l='1585' u='c'/>
+<use f='codebrowser/read-cache.c' l='1586' u='c'/>
+<use f='codebrowser/read-cache.c' l='1587' u='c'/>
+<use f='codebrowser/read-cache.c' l='1588' u='c'/>

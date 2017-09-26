@@ -1,0 +1,14 @@
+<dec f='include/x86_64-linux-gnu/bits/time.h' l='33' type='__suseconds_t'/>
+<offset>64</offset>
+<doc f='include/x86_64-linux-gnu/bits/time.h' l='33'>/* Microseconds.  */</doc>
+<use f='codebrowser/builtin/log.c' l='302' u='w' c='log_show_early'/>
+<use f='codebrowser/builtin/log.c' l='336' u='w' c='setup_early_output'/>
+<use f='codebrowser/http.c' l='1244' u='w' c='run_active_slot'/>
+<use f='codebrowser/http.c' l='1247' u='w' c='run_active_slot'/>
+<use f='codebrowser/http.c' l='1267' u='r' c='run_active_slot'/>
+<use f='codebrowser/http.c' l='1269' u='w' c='run_active_slot'/>
+<use f='codebrowser/progress.c' l='63' u='w' c='set_progress_signal'/>
+<use f='codebrowser/t/helper/test-date.c' l='82' u='w' c='cmd_main'/>
+<use f='codebrowser/trace.c' l='116' u='r' c='prepare_trace_line'/>
+<use f='codebrowser/trace.c' l='401' u='r' c='gettimeofday_nanos'/>
+<use f='codebrowser/wrapper.c' l='505' u='r' c='git_mkstemps_mode'/>

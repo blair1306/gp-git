@@ -1,0 +1,29 @@
+<dec f='codebrowser/cache.h' l='498' type='int is_git_directory(const char * path)'/>
+<doc f='codebrowser/cache.h' l='493'>/*
+ * Return true if the given path is a git directory; note that this _just_
+ * looks at the directory itself. If you want to know whether &quot;foo/.git&quot;
+ * is a repository, you must feed that path, not just &quot;foo&quot;.
+ */</doc>
+<use f='codebrowser/builtin/clone.c' l='153' u='c' c='get_repo_path_1'/>
+<use f='codebrowser/path.c' l='802' u='c' c='enter_repo'/>
+<use f='codebrowser/path.c' l='827' u='c' c='enter_repo'/>
+<def f='codebrowser/setup.c' l='308' ll='344' type='int is_git_directory(const char * suspect)'/>
+<use f='codebrowser/setup.c' l='354' u='c' c='is_nonbare_repository_dir'/>
+<use f='codebrowser/setup.c' l='612' u='c' c='read_gitfile_gently'/>
+<use f='codebrowser/setup.c' l='646' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='946' u='c' c='setup_git_directory_gently_1'/>
+<use f='codebrowser/setup.c' l='957' u='c' c='setup_git_directory_gently_1'/>
+<use f='codebrowser/setup.c' l='1193' u='c' c='resolve_gitdir_gently'/>
+<doc f='codebrowser/setup.c' l='297'>/*
+ * Test if it looks like we&apos;re at a git directory.
+ * We want to see:
+ *
+ *  - either an objects/ directory _or_ the proper
+ *    GIT_OBJECT_DIRECTORY environment variable
+ *  - a refs/ directory
+ *  - either a HEAD symlink or a HEAD file that is formatted as
+ *    a proper &quot;ref:&quot;, or a regular file HEAD that has a properly
+ *    formatted sha1 object name.
+ */</doc>
+<use f='codebrowser/submodule.c' l='1329' u='c' c='is_submodule_modified'/>
+<use f='codebrowser/submodule.c' l='2041' u='c' c='submodule_to_gitdir'/>

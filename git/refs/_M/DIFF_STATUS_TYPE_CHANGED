@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='334'/>
+<use f='codebrowser/builtin/add.c' l='84' u='c'/>
+<use f='codebrowser/builtin/fast-export.c' l='378' u='c'/>
+<use f='codebrowser/diff.c' l='3697' u='c'/>
+<use f='codebrowser/diff.c' l='4392' u='c'/>
+<use f='codebrowser/wt-status.c' l='285' u='c'/>
+<use f='codebrowser/wt-status.c' l='465' u='c'/>
+<use f='codebrowser/wt-status.c' l='539' u='c'/>

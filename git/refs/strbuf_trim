@@ -1,0 +1,35 @@
+<dec f='codebrowser/strbuf.h' l='168' type='void strbuf_trim(struct strbuf * )'/>
+<doc f='codebrowser/strbuf.h' l='164'>/**
+ * Strip whitespace from the beginning (`ltrim`), end (`rtrim`), or both side
+ * (`trim`) of a string.
+ */</doc>
+<use f='codebrowser/bisect.c' l='445' u='c' c='read_bisect_paths'/>
+<use f='codebrowser/builtin/am.c' l='250' u='c' c='read_state_file'/>
+<use f='codebrowser/builtin/clean.c' l='468' u='c' c='parse_choice'/>
+<use f='codebrowser/builtin/clean.c' l='581' u='c' c='list_and_choose'/>
+<use f='codebrowser/builtin/clean.c' l='663' u='c' c='filter_by_patterns_cmd'/>
+<use f='codebrowser/builtin/clean.c' l='676' u='c' c='filter_by_patterns_cmd'/>
+<use f='codebrowser/builtin/clean.c' l='761' u='c' c='ask_each_cmd'/>
+<use f='codebrowser/builtin/notes.c' l='736' u='c' c='merge_commit'/>
+<use f='codebrowser/config.c' l='426' u='c' c='git_config_parse_parameter'/>
+<use f='codebrowser/ident.c' l='157' u='c' c='ident_default_name'/>
+<use f='codebrowser/ident.c' l='174' u='c' c='ident_default_email'/>
+<use f='codebrowser/mailinfo.c' l='54' u='c' c='parse_bogus_from'/>
+<use f='codebrowser/mailinfo.c' l='194' u='c' c='handle_from'/>
+<use f='codebrowser/mailinfo.c' l='331' u='c' c='cleanup_subject'/>
+<use f='codebrowser/notes-cache.c' l='23' u='c' c='notes_cache_match_validity'/>
+<use f='codebrowser/remote-curl.c' l='259' u='c' c='show_http_message'/>
+<use f='codebrowser/remote.c' l='295' u='c' c='read_branches_file'/>
+<use f='codebrowser/sequencer.c' l='1593' u='c' c='rollback_is_safe'/>
+<use f='codebrowser/sequencer.c' l='1935' u='c' c='apply_autostash'/>
+<use f='codebrowser/shell.c' l='96' u='c' c='run_shell'/>
+<def f='codebrowser/strbuf.c' l='71' ll='75' type='void strbuf_trim(struct strbuf * sb)'/>
+<use f='codebrowser/trailer.c' l='245' u='c' c='apply_command'/>
+<use f='codebrowser/trailer.c' l='625' u='c' c='parse_trailer'/>
+<use f='codebrowser/trailer.c' l='627' u='c' c='parse_trailer'/>
+<use f='codebrowser/trailer.c' l='630' u='c' c='parse_trailer'/>
+<use f='codebrowser/trailer.c' l='702' u='c' c='process_command_line_args'/>
+<use f='codebrowser/version.c' l='29' u='c' c='git_user_agent_sanitized'/>
+<use f='codebrowser/worktree.c' l='246' u='c' c='is_worktree_locked'/>
+<use f='codebrowser/wt-status.c' l='1161' u='c' c='abbrev_sha1_in_line'/>
+<use f='codebrowser/wt-status.c' l='1189' u='c' c='read_rebase_todolist'/>

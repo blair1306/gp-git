@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='8' type='0'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1148' u='r' c='push_check'/>
+<use f='codebrowser/submodule.c' l='978' u='r' c='push_submodule'/>
+<use f='codebrowser/submodule.c' l='1049' u='r' c='push_unpushed_submodules'/>

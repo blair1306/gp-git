@@ -1,0 +1,4 @@
+<dec f='codebrowser/xdiff-interface.h' l='20' type='int parse_hunk_header(char * line, int len, int * ob, int * on, int * nb, int * nn)'/>
+<use f='codebrowser/combine-diff.c' l='350' u='c' c='consume_line'/>
+<use f='codebrowser/diff.c' l='958' u='c' c='fn_out_diff_words_aux'/>
+<def f='codebrowser/xdiff-interface.c' l='29' ll='58' type='int parse_hunk_header(char * line, int len, int * ob, int * on, int * nb, int * nn)'/>

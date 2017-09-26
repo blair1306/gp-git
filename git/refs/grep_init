@@ -1,0 +1,9 @@
+<dec f='codebrowser/grep.h' l='179' type='void grep_init(struct grep_opt * , const char * prefix)'/>
+<use f='codebrowser/builtin/grep.c' l='893' u='c' c='cmd_grep'/>
+<def f='codebrowser/grep.c' l='139' ll='166' type='void grep_init(struct grep_opt * opt, const char * prefix)'/>
+<doc f='codebrowser/grep.c' l='134'>/*
+ * Initialize one instance of grep_opt and copy the
+ * default values from the template we read the configuration
+ * information in an earlier call to git_config(grep_config).
+ */</doc>
+<use f='codebrowser/revision.c' l='1362' u='c' c='init_revisions'/>

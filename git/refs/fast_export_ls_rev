@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/fast_export.h' l='26' type='int fast_export_ls_rev(uint32_t rev, const char * path, uint32_t * mode_out, struct strbuf * dataref_out)'/>
+<def f='codebrowser/vcs-svn/fast_export.c' l='302' ll='307' type='int fast_export_ls_rev(uint32_t rev, const char * path, uint32_t * mode, struct strbuf * dataref)'/>
+<doc f='codebrowser/vcs-svn/fast_export.h' l='25'>/* If there is no such file at that rev, returns -1, errno == ENOENT. */</doc>
+<use f='codebrowser/vcs-svn/repo_tree.c' l='35' u='c' c='repo_copy'/>

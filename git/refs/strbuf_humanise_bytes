@@ -1,0 +1,12 @@
+<dec f='codebrowser/strbuf.h' l='317' type='void strbuf_humanise_bytes(struct strbuf * buf, off_t bytes)'/>
+<doc f='codebrowser/strbuf.h' l='313'>/**
+ * Append the given byte size as a human-readable string (i.e. 12.23 KiB,
+ * 3.50 MiB).
+ */</doc>
+<use f='codebrowser/builtin/count-objects.c' l='135' u='c' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/count-objects.c' l='136' u='c' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/count-objects.c' l='137' u='c' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/count-objects.c' l='162' u='c' c='cmd_count_objects'/>
+<use f='codebrowser/progress.c' l='135' u='c' c='throughput_string'/>
+<use f='codebrowser/progress.c' l='137' u='c' c='throughput_string'/>
+<def f='codebrowser/strbuf.c' l='671' ll='688' type='void strbuf_humanise_bytes(struct strbuf * buf, off_t bytes)'/>

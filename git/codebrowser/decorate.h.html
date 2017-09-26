@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>decorate.h source code [codebrowser/decorate.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="decoration,object_decoration "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/decorate.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='decorate.h.html'>decorate.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/DECORATE_H">DECORATE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/DECORATE_H" data-ref="_M/DECORATE_H">DECORATE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="object_decoration" title='object_decoration' data-ref="object_decoration">object_decoration</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<em>const</em> <b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="object_decoration::base" title='object_decoration::base' data-ref="object_decoration::base">base</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<em>void</em> *<dfn class="decl" id="object_decoration::decoration" title='object_decoration::decoration' data-ref="object_decoration::decoration">decoration</dfn>;</td></tr>
+<tr><th id="7">7</th><td>};</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>struct</b> <dfn class="type def" id="decoration" title='decoration' data-ref="decoration">decoration</dfn> {</td></tr>
+<tr><th id="10">10</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="decoration::name" title='decoration::name' data-ref="decoration::name">name</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="decoration::size" title='decoration::size' data-ref="decoration::size">size</dfn>, <dfn class="decl" id="decoration::nr" title='decoration::nr' data-ref="decoration::nr">nr</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<b>struct</b> <a class="type" href="#object_decoration" title='object_decoration' data-ref="object_decoration">object_decoration</a> *<dfn class="decl" id="decoration::hash" title='decoration::hash' data-ref="decoration::hash">hash</dfn>;</td></tr>
+<tr><th id="13">13</th><td>};</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>extern</b> <em>void</em> *<dfn class="decl" id="add_decoration" title='add_decoration' data-ref="add_decoration">add_decoration</dfn>(<b>struct</b> <a class="type" href="#decoration" title='decoration' data-ref="decoration">decoration</a> *<dfn class="local col1 decl" id="61n" title='n' data-type='struct decoration *' data-ref="61n">n</dfn>, <em>const</em> <b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col2 decl" id="62obj" title='obj' data-type='const struct object *' data-ref="62obj">obj</dfn>, <em>void</em> *<dfn class="local col3 decl" id="63decoration" title='decoration' data-type='void *' data-ref="63decoration">decoration</dfn>);</td></tr>
+<tr><th id="16">16</th><td><b>extern</b> <em>void</em> *<dfn class="decl" id="lookup_decoration" title='lookup_decoration' data-ref="lookup_decoration">lookup_decoration</dfn>(<b>struct</b> <a class="type" href="#decoration" title='decoration' data-ref="decoration">decoration</a> *<dfn class="local col4 decl" id="64n" title='n' data-type='struct decoration *' data-ref="64n">n</dfn>, <em>const</em> <b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="local col5 decl" id="65obj" title='obj' data-type='const struct object *' data-ref="65obj">obj</dfn>);</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='alloc.c.html'>codebrowser/alloc.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

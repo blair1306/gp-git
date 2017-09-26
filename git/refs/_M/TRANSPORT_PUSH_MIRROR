@@ -1,0 +1,12 @@
+<dec f='codebrowser/transport.h' l='137'/>
+<use f='codebrowser/builtin/push.c' l='382' u='c'/>
+<use f='codebrowser/builtin/push.c' l='393' u='c'/>
+<use f='codebrowser/builtin/push.c' l='399' u='c'/>
+<use f='codebrowser/builtin/push.c' l='400' u='c'/>
+<use f='codebrowser/builtin/push.c' l='408' u='c'/>
+<use f='codebrowser/builtin/push.c' l='526' u='c'/>
+<use f='codebrowser/builtin/push.c' l='567' u='c'/>
+<use f='codebrowser/transport-helper.c' l='831' u='c'/>
+<use f='codebrowser/transport.c' l='555' u='c'/>
+<use f='codebrowser/transport.c' l='997' u='c'/>
+<use f='codebrowser/transport.c' l='1016' u='c'/>

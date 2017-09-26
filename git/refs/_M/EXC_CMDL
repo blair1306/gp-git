@@ -1,0 +1,19 @@
+<dec f='codebrowser/dir.h' l='175'/>
+<doc f='codebrowser/dir.h' l='163'>/*
+	 * We maintain three groups of exclude pattern lists:
+	 *
+	 * EXC_CMDL lists patterns explicitly given on the command line.
+	 * EXC_DIRS lists patterns obtained from per-directory ignore files.
+	 * EXC_FILE lists patterns from fallback ignore files, e.g.
+	 *   - .git/info/exclude
+	 *   - core.excludesfile
+	 *
+	 * Each group contains multiple exclude lists, a single list
+	 * per source.
+	 */</doc>
+<use f='codebrowser/builtin/clean.c' l='672' u='c'/>
+<use f='codebrowser/builtin/clean.c' l='959' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='584' u='c'/>
+<use f='codebrowser/dir.c' l='1043' u='c'/>
+<use f='codebrowser/dir.c' l='2063' u='c'/>
+<use f='codebrowser/dir.c' l='2372' u='c'/>

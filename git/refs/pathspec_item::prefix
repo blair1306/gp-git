@@ -1,0 +1,13 @@
+<dec f='codebrowser/pathspec.h' l='33' type='int'/>
+<offset>192</offset>
+<use f='codebrowser/dir.c' l='157' u='r' c='common_prefix_len'/>
+<use f='codebrowser/dir.c' l='305' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='306' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='446' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='488' u='r' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='566' u='w' c='parse_pathspec'/>
+<use f='codebrowser/tree-walk.c' l='846' u='r' c='basecmp'/>
+<use f='codebrowser/tree-walk.c' l='846' u='r' c='basecmp'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/config.h' l='46' type='void read_early_config(config_fn_t cb, void * data)'/>
+<use f='codebrowser/alias.c' l='24' u='c' c='alias_lookup'/>
+<def f='codebrowser/config.c' l='1633' ll='1661' type='void read_early_config(config_fn_t cb, void * data)'/>
+<use f='codebrowser/help.c' l='293' u='c' c='help_unknown_cmd'/>
+<use f='codebrowser/pager.c' l='57' u='c' c='git_pager'/>
+<use f='codebrowser/pager.c' l='218' u='c' c='check_pager_config'/>
+<use f='codebrowser/t/helper/test-config.c' l='88' u='c' c='cmd_main'/>

@@ -1,0 +1,3 @@
+<dec f='include/curl/curl.h' l='253' type='char *'/>
+<offset>0</offset>
+<doc f='include/curl/curl.h' l='252'>/* If some of these fields is not NULL, it is a pointer to b_data. */</doc>

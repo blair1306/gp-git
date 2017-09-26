@@ -1,0 +1,8 @@
+<dec f='codebrowser/git-compat-util.h' l='1123' type='int remove_or_warn(unsigned int mode, const char * path)'/>
+<doc f='codebrowser/git-compat-util.h' l='1119'>/*
+ * Calls the correct function out of {unlink,rmdir}_or_warn based on
+ * the supplied file mode.
+ */</doc>
+<use f='codebrowser/apply.c' l='4241' u='c' c='remove_file'/>
+<use f='codebrowser/unpack-trees.c' l='327' u='c' c='unlink_entry'/>
+<def f='codebrowser/wrapper.c' l='601' ll='604' type='int remove_or_warn(unsigned int mode, const char * file)'/>

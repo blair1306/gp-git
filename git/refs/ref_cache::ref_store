@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs/ref-cache.h' l='18' type='struct ref_store *'/>
+<offset>64</offset>
+<doc f='codebrowser/refs/ref-cache.h' l='17'>/* A pointer to the ref_store whose cache this is: */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='28' u='r' c='get_ref_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='51' u='w' c='create_ref_cache'/>

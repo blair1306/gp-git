@@ -1,0 +1,11 @@
+<dec f='codebrowser/graph.c' l='145' type='int'/>
+<use f='codebrowser/graph.c' l='495' u='w' c='graph_update_width'/>
+<use f='codebrowser/graph.c' l='700' u='r' c='graph_pad_horizontally'/>
+<use f='codebrowser/graph.c' l='703' u='r' c='graph_pad_horizontally'/>
+<use f='codebrowser/graph.c' l='736' u='r' c='graph_width'/>
+<offset>160</offset>
+<doc f='codebrowser/graph.c' l='140'>/*
+	 * The width of the graph output for this commit.
+	 * All rows for this commit are padded to this width, so that
+	 * messages printed after the graph output are aligned.
+	 */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1312' type='int get_oid_tree(const char * str, struct object_id * oid)'/>
+<use f='codebrowser/builtin/am.c' l='1146' u='c' c='index_has_changes'/>
+<use f='codebrowser/builtin/am.c' l='1423' u='c' c='write_index_patch'/>
+<use f='codebrowser/builtin/commit-tree.c' l='109' u='c' c='cmd_commit_tree'/>
+<def f='codebrowser/sha1_name.c' l='1382' ll='1387' type='int get_oid_tree(const char * name, struct object_id * oid)'/>

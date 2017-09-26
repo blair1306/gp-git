@@ -1,0 +1,18 @@
+<dec f='codebrowser/advice.h' l='25' type='void advise(const char * advice)'/>
+<def f='codebrowser/advice.c' l='46' ll='63' type='void advise(const char * advice)'/>
+<use f='codebrowser/advice.c' l='104' u='c' c='error_resolve_conflict'/>
+<use f='codebrowser/advice.c' l='119' u='c' c='die_conclude_merge'/>
+<use f='codebrowser/branch.c' l='121' u='c' c='install_branch_config'/>
+<use f='codebrowser/branch.c' l='260' u='c' c='create_branch'/>
+<use f='codebrowser/builtin/add.c' l='333' u='c' c='check_embedded_repo'/>
+<use f='codebrowser/builtin/push.c' l='283' u='c' c='advise_pull_before_push'/>
+<use f='codebrowser/builtin/push.c' l='290' u='c' c='advise_checkout_pull_push'/>
+<use f='codebrowser/builtin/push.c' l='297' u='c' c='advise_ref_already_exists'/>
+<use f='codebrowser/builtin/push.c' l='304' u='c' c='advise_ref_fetch_first'/>
+<use f='codebrowser/builtin/push.c' l='311' u='c' c='advise_ref_needs_force'/>
+<use f='codebrowser/sequencer.c' l='280' u='c' c='print_advice'/>
+<use f='codebrowser/sequencer.c' l='283' u='c' c='print_advice'/>
+<use f='codebrowser/sequencer.c' l='361' u='c' c='error_dirty_index'/>
+<use f='codebrowser/sequencer.c' l='1555' u='c' c='create_seq_dir'/>
+<use f='codebrowser/sha1_name.c' l='379' u='c' c='show_ambiguous_object'/>
+<use f='codebrowser/sha1_name.c' l='430' u='c' c='get_short_oid'/>

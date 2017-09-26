@@ -1,0 +1,10 @@
+<dec f='codebrowser/color.h' l='67' type='int'/>
+<doc f='codebrowser/color.h' l='63'>/*
+ * Generally the color code will lazily figure this out itself, but
+ * this provides a mechanism for callers to override autodetection.
+ */</doc>
+<use f='codebrowser/builtin/config.c' l='724' u='w' c='cmd_config'/>
+<def f='codebrowser/color.c' l='6' type='int'/>
+<use f='codebrowser/color.c' l='329' u='r' c='check_auto_color'/>
+<use f='codebrowser/color.c' l='330' u='w' c='check_auto_color'/>
+<use f='codebrowser/color.c' l='331' u='r' c='check_auto_color'/>

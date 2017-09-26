@@ -1,0 +1,18 @@
+<dec f='codebrowser/path.h' l='78' type='const char * git_path_merge_head()'/>
+<use f='codebrowser/blame.c' l='113' u='c' c='append_merge_parents'/>
+<use f='codebrowser/blame.c' l='117' u='c' c='append_merge_parents'/>
+<use f='codebrowser/blame.c' l='123' u='c' c='append_merge_parents'/>
+<use f='codebrowser/branch.c' l='329' u='c' c='remove_branch_state'/>
+<use f='codebrowser/builtin/commit.c' l='182' u='c' c='determine_whence'/>
+<use f='codebrowser/builtin/commit.c' l='826' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1707' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1797' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/merge.c' l='244' u='c' c='drop_save'/>
+<use f='codebrowser/builtin/merge.c' l='926' u='c' c='write_merge_state'/>
+<use f='codebrowser/builtin/merge.c' l='1152' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1168' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1179' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/pull.c' l='833' u='c' c='cmd_pull'/>
+<use f='codebrowser/builtin/reset.c' l='42' u='c' c='is_merge'/>
+<def f='codebrowser/path.c' l='1365' macro='1' type='const char * git_path_merge_head()'/>
+<use f='codebrowser/wt-status.c' l='1519' u='c' c='wt_status_get_state'/>

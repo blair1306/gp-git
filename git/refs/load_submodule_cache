@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule.h' l='49' type='void load_submodule_cache()'/>
+<use f='codebrowser/builtin/read-tree.c' l='167' u='c' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/reset.c' l='311' u='c' c='cmd_reset'/>
+<def f='codebrowser/submodule.c' l='224' ll='231' type='void load_submodule_cache()'/>

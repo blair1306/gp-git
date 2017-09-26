@@ -1,0 +1,4 @@
+<dec f='include/pwd.h' l='56' type='char *'/>
+<offset>256</offset>
+<doc f='include/pwd.h' l='56'>/* Home directory.  */</doc>
+<use f='codebrowser/path.c' l='729' u='r' c='expand_user_path'/>

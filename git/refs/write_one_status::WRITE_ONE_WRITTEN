@@ -1,0 +1,3 @@
+<dec f='codebrowser/builtin/pack-objects.c' l='499' type='1'/>
+<use f='codebrowser/builtin/pack-objects.c' l='553' u='r' c='write_one'/>
+<doc f='codebrowser/builtin/pack-objects.c' l='499'>/* normal */</doc>

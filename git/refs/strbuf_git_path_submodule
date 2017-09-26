@@ -1,0 +1,4 @@
+<dec f='codebrowser/path.h' l='28' type='int strbuf_git_path_submodule(struct strbuf * sb, const char * path, const char * fmt)'/>
+<def f='codebrowser/path.c' l='592' ll='602' type='int strbuf_git_path_submodule(struct strbuf * buf, const char * path, const char * fmt)'/>
+<use f='codebrowser/submodule.c' l='150' u='c' c='add_submodule_odb'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='29' u='c' c='get_store'/>

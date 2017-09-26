@@ -1,0 +1,4 @@
+<dec f='codebrowser/dir.h' l='69' type='struct untracked_cache_dir *'/>
+<offset>128</offset>
+<use f='codebrowser/dir.c' l='1106' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1131' u='w' c='prep_exclude'/>

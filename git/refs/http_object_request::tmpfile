@@ -1,0 +1,18 @@
+<dec f='codebrowser/http.h' l='215' type='char [4096]'/>
+<offset>64</offset>
+<use f='codebrowser/http.c' l='2164' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2164' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2169' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2170' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2174' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2181' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2184' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2187' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2192' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2238' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2294' u='r' c='finish_http_object_request'/>
+<use f='codebrowser/http.c' l='2296' u='r' c='finish_http_object_request'/>
+<use f='codebrowser/http.c' l='2303' u='r' c='finish_http_object_request'/>
+<use f='codebrowser/http.c' l='2307' u='r' c='finish_http_object_request'/>
+<use f='codebrowser/http.c' l='2311' u='r' c='finish_http_object_request'/>
+<use f='codebrowser/http.c' l='2318' u='r' c='abort_http_object_request'/>

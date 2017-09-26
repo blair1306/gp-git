@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='61' type='struct object_array'/>
+<offset>192</offset>
+<doc f='codebrowser/revision.h' l='60'>/* Parents of shown commits */</doc>
+<use f='codebrowser/revision.c' l='3194' u='a' c='create_boundary_commit_list'/>
+<use f='codebrowser/revision.c' l='3310' u='a' c='get_revision_internal'/>
+<use f='codebrowser/revision.c' l='3311' u='a' c='get_revision_internal'/>

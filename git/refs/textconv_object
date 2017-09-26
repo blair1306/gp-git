@@ -1,0 +1,13 @@
+<dec f='codebrowser/diff.h' l='393' type='int textconv_object(const char * path, unsigned int mode, const struct object_id * oid, int oid_valid, char ** buf, unsigned long * buf_size)'/>
+<doc f='codebrowser/diff.h' l='388'>/*
+ * Prepare diff_filespec and convert it using diff textconv API
+ * if the textconv driver exists.
+ * Return 1 if the conversion succeeds, 0 otherwise.
+ */</doc>
+<use f='codebrowser/blame.c' l='213' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/blame.c' l='297' u='c' c='fill_origin_blob'/>
+<use f='codebrowser/blame.c' l='1829' u='c' c='setup_scoreboard'/>
+<use f='codebrowser/builtin/cat-file.c' l='113' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='303' u='c' c='print_object_or_die'/>
+<use f='codebrowser/builtin/log.c' l='495' u='c' c='show_blob_object'/>
+<def f='codebrowser/diff.c' l='5260' ll='5281' type='int textconv_object(const char * path, unsigned int mode, const struct object_id * oid, int oid_valid, char ** buf, unsigned long * buf_size)'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/compat/obstack.h' l='175' type='unsigned int'/>
+<offset>642</offset>
+<doc f='codebrowser/compat/obstack.h' l='175'>/* No longer used, as we now call the failed
+				   handler on error, but retained for binary
+				   compatibility.  */</doc>

@@ -1,0 +1,37 @@
+<dec f='codebrowser/tree.h' l='6' type='const char *'/>
+<use f='codebrowser/builtin/grep.c' l='446' u='r' c='grep_submodule'/>
+<use f='codebrowser/builtin/grep.c' l='608' u='r' c='grep_object'/>
+<use f='codebrowser/builtin/ls-tree.c' l='87' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/mktree.c' l='60' u='r' c='write_tree'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1339' u='r' c='add_preferred_base'/>
+<use f='codebrowser/cache-tree.c' l='404' u='r' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='410' u='r' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='412' u='r' c='update_one'/>
+<use f='codebrowser/fast-import.c' l='3123' u='r' c='print_ls'/>
+<use f='codebrowser/match-trees.c' l='219' u='r' c='splice_tree'/>
+<use f='codebrowser/notes.c' l='688' u='r' c='tree_write_stack_finish_subtree'/>
+<use f='codebrowser/notes.c' l='1167' u='r' c='write_notes_tree'/>
+<use f='codebrowser/tag.c' l='146' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='146' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tree-walk.c' l='87' u='r' c='fill_tree_descriptor'/>
+<use f='codebrowser/tree-walk.c' l='537' u='r' c='get_tree_entry'/>
+<use f='codebrowser/tree-walk.c' l='606' u='r' c='get_tree_entry_follow_symlinks'/>
+<def f='codebrowser/tree.c' l='10' type='const char *'/>

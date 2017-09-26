@@ -1,0 +1,9 @@
+<dec f='codebrowser/blame.h' l='25' type='struct blame_origin *'/>
+<use f='codebrowser/blame.c' l='14' u='r' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='15' u='r' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='1463' u='r' c='pass_blame'/>
+<use f='codebrowser/blame.c' l='1465' u='w' c='pass_blame'/>
+<offset>64</offset>
+<doc f='codebrowser/blame.h' l='24'>/* Record preceding blame record for this blob */</doc>
+<use f='codebrowser/builtin/blame.c' l='222' u='r' c='write_filename_info'/>
+<use f='codebrowser/builtin/blame.c' l='223' u='r' c='write_filename_info'/>

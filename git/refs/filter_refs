@@ -1,0 +1,17 @@
+<dec f='codebrowser/ref-filter.h' l='105' type='int filter_refs(struct ref_array * array, struct ref_filter * filter, unsigned int type)'/>
+<use f='codebrowser/builtin/branch.c' l='405' u='c' c='print_ref_list'/>
+<doc f='codebrowser/ref-filter.h' l='99'>/*
+ * API for filtering a set of refs. Based on the type of refs the user
+ * has requested, we iterate through those refs and apply filters
+ * as per the given ref_filter structure and finally store the
+ * filtered refs in the ref_array structure.
+ */</doc>
+<use f='codebrowser/builtin/for-each-ref.c' l='78' u='c' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='60' u='c' c='list_tags'/>
+<def f='codebrowser/ref-filter.c' l='1956' ll='2002' type='int filter_refs(struct ref_array * array, struct ref_filter * filter, unsigned int type)'/>
+<doc f='codebrowser/ref-filter.c' l='1950'>/*
+ * API for filtering a set of refs. Based on the type of refs the user
+ * has requested, we iterate through those refs and apply filters
+ * as per the given ref_filter structure and finally store the
+ * filtered refs in the ref_array structure.
+ */</doc>

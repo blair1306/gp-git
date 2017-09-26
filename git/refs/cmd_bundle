@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='138' type='int cmd_bundle(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/bundle.c' l='18' ll='67' type='int cmd_bundle(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='372'/>
+<use f='codebrowser/git.c' l='372'/>
+<use f='codebrowser/git.c' l='372'/>
+<use f='codebrowser/git.c' l='372'/>

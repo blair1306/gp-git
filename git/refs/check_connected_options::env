@@ -1,0 +1,9 @@
+<dec f='codebrowser/connected.h' l='40' type='const char **'/>
+<offset>256</offset>
+<doc f='codebrowser/connected.h' l='37'>/*
+	 * Insert these variables into the environment of the child process.
+	 */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='889' u='w' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1298' u='w' c='set_connectivity_errors'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1485' u='w' c='execute_commands'/>
+<use f='codebrowser/connected.c' l='66' u='r' c='check_connected'/>

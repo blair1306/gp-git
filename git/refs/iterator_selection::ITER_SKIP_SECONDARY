@@ -1,0 +1,7 @@
+<dec f='codebrowser/iterator.h' l='55' type='4'/>
+<use f='codebrowser/iterator.h' l='66' u='r'/>
+<use f='codebrowser/iterator.h' l='69' u='r'/>
+<use f='codebrowser/iterator.h' l='75' u='r'/>
+<use f='codebrowser/iterator.h' l='78' u='r'/>
+<doc f='codebrowser/iterator.h' l='54'>/* Discard the value from the secondary iterator? */</doc>
+<use f='codebrowser/refs/iterator.c' l='150' u='r' c='merge_ref_iterator_advance'/>

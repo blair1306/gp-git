@@ -1,0 +1,8 @@
+<dec f='codebrowser/worktree.h' l='45' type='struct worktree * find_worktree(struct worktree ** list, const char * prefix, const char * arg)'/>
+<doc f='codebrowser/worktree.h' l='41'>/*
+ * Search a worktree that can be unambiguously identified by
+ * &quot;arg&quot;. &quot;prefix&quot; must not be NULL.
+ */</doc>
+<use f='codebrowser/builtin/worktree.c' l='489' u='c' c='lock_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='522' u='c' c='unlock_worktree'/>
+<def f='codebrowser/worktree.c' l='207' ll='227' type='struct worktree * find_worktree(struct worktree ** list, const char * prefix, const char * arg)'/>

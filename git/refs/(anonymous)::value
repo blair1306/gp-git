@@ -1,0 +1,4 @@
+<dec f='include/openssl/conf.h' l='77' type='char *'/>
+<offset>128</offset>
+<dec f='include/expat.h' l='1027' type='long'/>
+<offset>128</offset>

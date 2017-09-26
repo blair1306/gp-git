@@ -1,0 +1,6 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='131'/>
+<use f='codebrowser/ll-merge.c' l='359' u='c'/>
+<use f='codebrowser/ll-merge.c' l='379' u='c'/>
+<use f='codebrowser/ll-merge.c' l='397' u='c'/>
+<use f='codebrowser/ll-merge.c' l='404' u='c'/>
+<use f='codebrowser/xdiff/xmerge.c' l='208' u='c'/>

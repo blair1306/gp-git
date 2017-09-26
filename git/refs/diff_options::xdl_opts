@@ -1,0 +1,26 @@
+<dec f='codebrowser/diff.h' l='158' type='long'/>
+<offset>1408</offset>
+<use f='codebrowser/builtin/blame.c' l='738' u='r' c='cmd_blame'/>
+<use f='codebrowser/combine-diff.c' l='1151' u='r' c='show_patch_diff'/>
+<use f='codebrowser/diff.c' l='2507' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2599' u='r' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='3389' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='3391' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='3428' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='3429' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='3430' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='3875' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='3877' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='3879' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='3881' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='3883' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='3885' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='3887' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='3889' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='3891' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3891' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='3893' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3893' macro='1' u='r'/>
+<use f='codebrowser/diff.c' l='3900' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='3901' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3902' u='w' c='diff_opt_parse'/>

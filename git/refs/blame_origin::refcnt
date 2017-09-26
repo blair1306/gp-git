@@ -1,0 +1,8 @@
+<dec f='codebrowser/blame.h' l='23' type='int'/>
+<use f='codebrowser/blame.h' l='159' u='w' c='blame_origin_incref'/>
+<use f='codebrowser/blame.c' l='12' u='w' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='43' u='w' c='make_origin'/>
+<use f='codebrowser/blame.c' l='431' u='r' c='sanity_check_refcnt'/>
+<use f='codebrowser/blame.c' l='435' u='r' c='sanity_check_refcnt'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/blame.c' l='411' u='r' c='emit_other'/>

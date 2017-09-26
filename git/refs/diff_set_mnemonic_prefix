@@ -1,0 +1,7 @@
+<dec f='codebrowser/diff.h' l='244' type='void diff_set_mnemonic_prefix(struct diff_options * options, const char * a, const char * b)'/>
+<use f='codebrowser/builtin/diff.c' l='85' u='c' c='builtin_diff_b_f'/>
+<use f='codebrowser/diff-lib.c' l='94' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='517' u='c' c='run_diff_index'/>
+<use f='codebrowser/diff-no-index.c' l='292' u='c' c='diff_no_index'/>
+<def f='codebrowser/diff.c' l='2315' ll='2321' type='void diff_set_mnemonic_prefix(struct diff_options * options, const char * a, const char * b)'/>
+<use f='codebrowser/diff.c' l='2352' u='c' c='builtin_diff'/>

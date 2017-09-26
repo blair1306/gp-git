@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack-objects.h' l='39' type='1'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1639' u='r' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1640' u='r' c='break_delta_chains'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1665' u='r' c='break_delta_chains'/>

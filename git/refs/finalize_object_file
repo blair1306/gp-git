@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='1209' type='int finalize_object_file(const char * tmpfile, const char * filename)'/>
+<use f='codebrowser/builtin/index-pack.c' l='1437' u='c' c='final'/>
+<use f='codebrowser/builtin/index-pack.c' l='1445' u='c' c='final'/>
+<use f='codebrowser/fast-import.c' l='960' u='c' c='keep_pack'/>
+<use f='codebrowser/fast-import.c' l='964' u='c' c='keep_pack'/>
+<use f='codebrowser/http.c' l='1849' u='c' c='http_get_file'/>
+<use f='codebrowser/http.c' l='1935' u='c' c='fetch_and_setup_pack_index'/>
+<use f='codebrowser/http.c' l='2044' u='c' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2045' u='c' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2311' u='c' c='finish_http_object_request'/>
+<def f='codebrowser/sha1_file.c' l='3196' ll='3234' type='int finalize_object_file(const char * tmpfile, const char * filename)'/>
+<use f='codebrowser/sha1_file.c' l='3370' u='c' c='write_loose_object'/>
+<doc f='codebrowser/sha1_file.c' l='3193'>/*
+ * Move the just written object into its final resting place.
+ */</doc>
+<use f='codebrowser/tmp-objdir.c' l='230' u='c' c='migrate_one'/>

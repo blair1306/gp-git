@@ -1,0 +1,3 @@
+<dec f='codebrowser/dir.h' l='155' type='128'/>
+<use f='codebrowser/builtin/clean.c' l='951' u='r' c='cmd_clean'/>
+<use f='codebrowser/dir.c' l='2121' u='r' c='read_directory'/>

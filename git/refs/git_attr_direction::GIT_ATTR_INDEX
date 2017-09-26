@@ -1,0 +1,5 @@
+<dec f='codebrowser/attr.h' l='74' type='2'/>
+<use f='codebrowser/archive.c' l='256' u='r' c='write_archive_entries'/>
+<use f='codebrowser/attr.c' l='713' u='r' c='git_attr_set_direction'/>
+<use f='codebrowser/attr.c' l='772' u='r' c='read_attr'/>
+<use f='codebrowser/builtin/check-attr.c' l='123' u='r' c='cmd_check_attr'/>

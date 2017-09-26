@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff-delta.c' l='130' type='struct index_entry *[]'/>
+<use f='codebrowser/diff-delta.c' l='274' u='r' c='create_delta_index'/>
+<use f='codebrowser/diff-delta.c' l='375' u='r' c='create_delta'/>
+<use f='codebrowser/diff-delta.c' l='375' u='r' c='create_delta'/>
+<offset>256</offset>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/trace.h' l='18' type='void trace_disable(struct trace_key * key)'/>
+<use f='codebrowser/trace.c' l='66' u='c' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='76' u='c' c='get_trace_fd'/>
+<def f='codebrowser/trace.c' l='83' ll='92' type='void trace_disable(struct trace_key * key)'/>
+<use f='codebrowser/trace.c' l='135' u='c' c='trace_write'/>

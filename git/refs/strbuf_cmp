@@ -1,0 +1,10 @@
+<dec f='codebrowser/strbuf.h' l='188' type='int strbuf_cmp(const struct strbuf * , const struct strbuf * )'/>
+<doc f='codebrowser/strbuf.h' l='183'>/**
+ * Compare two buffers. Returns an integer less than, equal to, or greater
+ * than zero if the first buffer is found, respectively, to be less than,
+ * to match, or be greater than the second buffer.
+ */</doc>
+<use f='codebrowser/builtin/commit.c' l='1451' u='c' c='print_summary'/>
+<use f='codebrowser/remote-curl.c' l='334' u='c' c='discover_refs'/>
+<use f='codebrowser/rerere.c' l='431' u='c' c='handle_path'/>
+<def f='codebrowser/strbuf.c' l='155' ll='162' type='int strbuf_cmp(const struct strbuf * a, const struct strbuf * b)'/>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>apply.h source code [codebrowser/apply.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="apply_state,apply_verbosity,apply_ws_error_action,apply_ws_ignore "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/apply.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='apply.h.html'>apply.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/APPLY_H">APPLY_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/APPLY_H" data-ref="_M/APPLY_H">APPLY_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>enum</b> <dfn class="type def" id="apply_ws_error_action" title='apply_ws_error_action' data-ref="apply_ws_error_action">apply_ws_error_action</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<dfn class="enum" id="apply_ws_error_action::nowarn_ws_error" title='apply_ws_error_action::nowarn_ws_error' data-ref="apply_ws_error_action::nowarn_ws_error">nowarn_ws_error</dfn>,</td></tr>
+<tr><th id="6">6</th><td>	<dfn class="enum" id="apply_ws_error_action::warn_on_ws_error" title='apply_ws_error_action::warn_on_ws_error' data-ref="apply_ws_error_action::warn_on_ws_error">warn_on_ws_error</dfn>,</td></tr>
+<tr><th id="7">7</th><td>	<dfn class="enum" id="apply_ws_error_action::die_on_ws_error" title='apply_ws_error_action::die_on_ws_error' data-ref="apply_ws_error_action::die_on_ws_error">die_on_ws_error</dfn>,</td></tr>
+<tr><th id="8">8</th><td>	<dfn class="enum" id="apply_ws_error_action::correct_ws_error" title='apply_ws_error_action::correct_ws_error' data-ref="apply_ws_error_action::correct_ws_error">correct_ws_error</dfn></td></tr>
+<tr><th id="9">9</th><td>};</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><b>enum</b> <dfn class="type def" id="apply_ws_ignore" title='apply_ws_ignore' data-ref="apply_ws_ignore">apply_ws_ignore</dfn> {</td></tr>
+<tr><th id="12">12</th><td>	<dfn class="enum" id="apply_ws_ignore::ignore_ws_none" title='apply_ws_ignore::ignore_ws_none' data-ref="apply_ws_ignore::ignore_ws_none">ignore_ws_none</dfn>,</td></tr>
+<tr><th id="13">13</th><td>	<dfn class="enum" id="apply_ws_ignore::ignore_ws_change" title='apply_ws_ignore::ignore_ws_change' data-ref="apply_ws_ignore::ignore_ws_change">ignore_ws_change</dfn></td></tr>
+<tr><th id="14">14</th><td>};</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><b>enum</b> <dfn class="type def" id="apply_verbosity" title='apply_verbosity' data-ref="apply_verbosity">apply_verbosity</dfn> {</td></tr>
+<tr><th id="17">17</th><td>	<dfn class="enum" id="apply_verbosity::verbosity_silent" title='apply_verbosity::verbosity_silent' data-ref="apply_verbosity::verbosity_silent">verbosity_silent</dfn> = -<var>1</var>,</td></tr>
+<tr><th id="18">18</th><td>	<dfn class="enum" id="apply_verbosity::verbosity_normal" title='apply_verbosity::verbosity_normal' data-ref="apply_verbosity::verbosity_normal">verbosity_normal</dfn> = <var>0</var>,</td></tr>
+<tr><th id="19">19</th><td>	<dfn class="enum" id="apply_verbosity::verbosity_verbose" title='apply_verbosity::verbosity_verbose' data-ref="apply_verbosity::verbosity_verbose">verbosity_verbose</dfn> = <var>1</var></td></tr>
+<tr><th id="20">20</th><td>};</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i>/*</i></td></tr>
+<tr><th id="23">23</th><td><i> * We need to keep track of how symlinks in the preimage are</i></td></tr>
+<tr><th id="24">24</th><td><i> * manipulated by the patches.  A patch to add a/b/c where a/b</i></td></tr>
+<tr><th id="25">25</th><td><i> * is a symlink should not be allowed to affect the directory</i></td></tr>
+<tr><th id="26">26</th><td><i> * the symlink points at, but if the same patch removes a/b,</i></td></tr>
+<tr><th id="27">27</th><td><i> * it is perfectly fine, as the patch removes a/b to make room</i></td></tr>
+<tr><th id="28">28</th><td><i> * to create a directory a/b so that a/b/c can be created.</i></td></tr>
+<tr><th id="29">29</th><td><i> *</i></td></tr>
+<tr><th id="30">30</th><td><i> * See also "struct string_list symlink_changes" in "struct</i></td></tr>
+<tr><th id="31">31</th><td><i> * apply_state".</i></td></tr>
+<tr><th id="32">32</th><td><i> */</i></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/APPLY_SYMLINK_GOES_AWAY" data-ref="_M/APPLY_SYMLINK_GOES_AWAY">APPLY_SYMLINK_GOES_AWAY</dfn> 01</u></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/APPLY_SYMLINK_IN_RESULT" data-ref="_M/APPLY_SYMLINK_IN_RESULT">APPLY_SYMLINK_IN_RESULT</dfn> 02</u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><b>struct</b> <dfn class="type def" id="apply_state" title='apply_state' data-ref="apply_state">apply_state</dfn> {</td></tr>
+<tr><th id="37">37</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="apply_state::prefix" title='apply_state::prefix' data-ref="apply_state::prefix">prefix</dfn>;</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td>	<i>/* These are lock_file related */</i></td></tr>
+<tr><th id="40">40</th><td>	<b>struct</b> <a class="type" href="lockfile.h.html#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="decl" id="apply_state::lock_file" title='apply_state::lock_file' data-ref="apply_state::lock_file">lock_file</dfn>;</td></tr>
+<tr><th id="41">41</th><td>	<em>int</em> <dfn class="decl" id="apply_state::newfd" title='apply_state::newfd' data-ref="apply_state::newfd">newfd</dfn>;</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>	<i>/* These control what gets looked at and modified */</i></td></tr>
+<tr><th id="44">44</th><td>	<em>int</em> <dfn class="decl" id="apply_state::apply" title='apply_state::apply' data-ref="apply_state::apply">apply</dfn>; <i>/* this is not a dry-run */</i></td></tr>
+<tr><th id="45">45</th><td>	<em>int</em> <dfn class="decl" id="apply_state::cached" title='apply_state::cached' data-ref="apply_state::cached">cached</dfn>; <i>/* apply to the index only */</i></td></tr>
+<tr><th id="46">46</th><td>	<em>int</em> <dfn class="decl" id="apply_state::check" title='apply_state::check' data-ref="apply_state::check">check</dfn>; <i>/* preimage must match working tree, don't actually apply */</i></td></tr>
+<tr><th id="47">47</th><td>	<em>int</em> <dfn class="decl" id="apply_state::check_index" title='apply_state::check_index' data-ref="apply_state::check_index">check_index</dfn>; <i>/* preimage must match the indexed version */</i></td></tr>
+<tr><th id="48">48</th><td>	<em>int</em> <dfn class="decl" id="apply_state::update_index" title='apply_state::update_index' data-ref="apply_state::update_index">update_index</dfn>; <i>/* check_index &amp;&amp; apply */</i></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>	<i>/* These control cosmetic aspect of the output */</i></td></tr>
+<tr><th id="51">51</th><td>	<em>int</em> <dfn class="decl" id="apply_state::diffstat" title='apply_state::diffstat' data-ref="apply_state::diffstat">diffstat</dfn>; <i>/* just show a diffstat, and don't actually apply */</i></td></tr>
+<tr><th id="52">52</th><td>	<em>int</em> <dfn class="decl" id="apply_state::numstat" title='apply_state::numstat' data-ref="apply_state::numstat">numstat</dfn>; <i>/* just show a numeric diffstat, and don't actually apply */</i></td></tr>
+<tr><th id="53">53</th><td>	<em>int</em> <dfn class="decl" id="apply_state::summary" title='apply_state::summary' data-ref="apply_state::summary">summary</dfn>; <i>/* just report creation, deletion, etc, and don't actually apply */</i></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>	<i>/* These boolean parameters control how the apply is done */</i></td></tr>
+<tr><th id="56">56</th><td>	<em>int</em> <dfn class="decl" id="apply_state::allow_overlap" title='apply_state::allow_overlap' data-ref="apply_state::allow_overlap">allow_overlap</dfn>;</td></tr>
+<tr><th id="57">57</th><td>	<em>int</em> <dfn class="decl" id="apply_state::apply_in_reverse" title='apply_state::apply_in_reverse' data-ref="apply_state::apply_in_reverse">apply_in_reverse</dfn>;</td></tr>
+<tr><th id="58">58</th><td>	<em>int</em> <dfn class="decl" id="apply_state::apply_with_reject" title='apply_state::apply_with_reject' data-ref="apply_state::apply_with_reject">apply_with_reject</dfn>;</td></tr>
+<tr><th id="59">59</th><td>	<em>int</em> <dfn class="decl" id="apply_state::no_add" title='apply_state::no_add' data-ref="apply_state::no_add">no_add</dfn>;</td></tr>
+<tr><th id="60">60</th><td>	<em>int</em> <dfn class="decl" id="apply_state::threeway" title='apply_state::threeway' data-ref="apply_state::threeway">threeway</dfn>;</td></tr>
+<tr><th id="61">61</th><td>	<em>int</em> <dfn class="decl" id="apply_state::unidiff_zero" title='apply_state::unidiff_zero' data-ref="apply_state::unidiff_zero">unidiff_zero</dfn>;</td></tr>
+<tr><th id="62">62</th><td>	<em>int</em> <dfn class="decl" id="apply_state::unsafe_paths" title='apply_state::unsafe_paths' data-ref="apply_state::unsafe_paths">unsafe_paths</dfn>;</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>	<i>/* Other non boolean parameters */</i></td></tr>
+<tr><th id="65">65</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="apply_state::index_file" title='apply_state::index_file' data-ref="apply_state::index_file">index_file</dfn>;</td></tr>
+<tr><th id="66">66</th><td>	<b>enum</b> <a class="type" href="#apply_verbosity" title='apply_verbosity' data-ref="apply_verbosity">apply_verbosity</a> <dfn class="decl" id="apply_state::apply_verbosity" title='apply_state::apply_verbosity' data-ref="apply_state::apply_verbosity">apply_verbosity</dfn>;</td></tr>
+<tr><th id="67">67</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="apply_state::fake_ancestor" title='apply_state::fake_ancestor' data-ref="apply_state::fake_ancestor">fake_ancestor</dfn>;</td></tr>
+<tr><th id="68">68</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="apply_state::patch_input_file" title='apply_state::patch_input_file' data-ref="apply_state::patch_input_file">patch_input_file</dfn>;</td></tr>
+<tr><th id="69">69</th><td>	<em>int</em> <dfn class="decl" id="apply_state::line_termination" title='apply_state::line_termination' data-ref="apply_state::line_termination">line_termination</dfn>;</td></tr>
+<tr><th id="70">70</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="apply_state::root" title='apply_state::root' data-ref="apply_state::root">root</dfn>;</td></tr>
+<tr><th id="71">71</th><td>	<em>int</em> <dfn class="decl" id="apply_state::p_value" title='apply_state::p_value' data-ref="apply_state::p_value">p_value</dfn>;</td></tr>
+<tr><th id="72">72</th><td>	<em>int</em> <dfn class="decl" id="apply_state::p_value_known" title='apply_state::p_value_known' data-ref="apply_state::p_value_known">p_value_known</dfn>;</td></tr>
+<tr><th id="73">73</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="apply_state::p_context" title='apply_state::p_context' data-ref="apply_state::p_context">p_context</dfn>;</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>	<i>/* Exclude and include path parameters */</i></td></tr>
+<tr><th id="76">76</th><td>	<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> <dfn class="decl" id="apply_state::limit_by_name" title='apply_state::limit_by_name' data-ref="apply_state::limit_by_name">limit_by_name</dfn>;</td></tr>
+<tr><th id="77">77</th><td>	<em>int</em> <dfn class="decl" id="apply_state::has_include" title='apply_state::has_include' data-ref="apply_state::has_include">has_include</dfn>;</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>	<i>/* Various "current state" */</i></td></tr>
+<tr><th id="80">80</th><td>	<em>int</em> <dfn class="decl" id="apply_state::linenr" title='apply_state::linenr' data-ref="apply_state::linenr">linenr</dfn>; <i>/* current line number */</i></td></tr>
+<tr><th id="81">81</th><td>	<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> <dfn class="decl" id="apply_state::symlink_changes" title='apply_state::symlink_changes' data-ref="apply_state::symlink_changes">symlink_changes</dfn>; <i>/* we have to track symlinks */</i></td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>	<i>/*</i></td></tr>
+<tr><th id="84">84</th><td><i>	 * For "diff-stat" like behaviour, we keep track of the biggest change</i></td></tr>
+<tr><th id="85">85</th><td><i>	 * we've seen, and the longest filename. That allows us to do simple</i></td></tr>
+<tr><th id="86">86</th><td><i>	 * scaling.</i></td></tr>
+<tr><th id="87">87</th><td><i>	 */</i></td></tr>
+<tr><th id="88">88</th><td>	<em>int</em> <dfn class="decl" id="apply_state::max_change" title='apply_state::max_change' data-ref="apply_state::max_change">max_change</dfn>;</td></tr>
+<tr><th id="89">89</th><td>	<em>int</em> <dfn class="decl" id="apply_state::max_len" title='apply_state::max_len' data-ref="apply_state::max_len">max_len</dfn>;</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>	<i>/*</i></td></tr>
+<tr><th id="92">92</th><td><i>	 * Records filenames that have been touched, in order to handle</i></td></tr>
+<tr><th id="93">93</th><td><i>	 * the case where more than one patches touch the same file.</i></td></tr>
+<tr><th id="94">94</th><td><i>	 */</i></td></tr>
+<tr><th id="95">95</th><td>	<b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> <dfn class="decl" id="apply_state::fn_table" title='apply_state::fn_table' data-ref="apply_state::fn_table">fn_table</dfn>;</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>	<i>/*</i></td></tr>
+<tr><th id="98">98</th><td><i>	 * This is to save reporting routines before using</i></td></tr>
+<tr><th id="99">99</th><td><i>	 * set_error_routine() or set_warn_routine() to install muting</i></td></tr>
+<tr><th id="100">100</th><td><i>	 * routines when in verbosity_silent mode.</i></td></tr>
+<tr><th id="101">101</th><td><i>	 */</i></td></tr>
+<tr><th id="102">102</th><td>	<em>void</em> (*<dfn class="decl" id="apply_state::saved_error_routine" title='apply_state::saved_error_routine' data-ref="apply_state::saved_error_routine">saved_error_routine</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="489err" title='err' data-type='const char *' data-ref="489err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col0 decl" id="490params" title='params' data-type='struct __va_list_tag *' data-ref="490params">params</dfn>);</td></tr>
+<tr><th id="103">103</th><td>	<em>void</em> (*<dfn class="decl" id="apply_state::saved_warn_routine" title='apply_state::saved_warn_routine' data-ref="apply_state::saved_warn_routine">saved_warn_routine</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="491warn" title='warn' data-type='const char *' data-ref="491warn">warn</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col2 decl" id="492params" title='params' data-type='struct __va_list_tag *' data-ref="492params">params</dfn>);</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td>	<i>/* These control whitespace errors */</i></td></tr>
+<tr><th id="106">106</th><td>	<b>enum</b> <a class="type" href="#apply_ws_error_action" title='apply_ws_error_action' data-ref="apply_ws_error_action">apply_ws_error_action</a> <dfn class="decl" id="apply_state::ws_error_action" title='apply_state::ws_error_action' data-ref="apply_state::ws_error_action">ws_error_action</dfn>;</td></tr>
+<tr><th id="107">107</th><td>	<b>enum</b> <a class="type" href="#apply_ws_ignore" title='apply_ws_ignore' data-ref="apply_ws_ignore">apply_ws_ignore</a> <dfn class="decl" id="apply_state::ws_ignore_action" title='apply_state::ws_ignore_action' data-ref="apply_state::ws_ignore_action">ws_ignore_action</dfn>;</td></tr>
+<tr><th id="108">108</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="apply_state::whitespace_option" title='apply_state::whitespace_option' data-ref="apply_state::whitespace_option">whitespace_option</dfn>;</td></tr>
+<tr><th id="109">109</th><td>	<em>int</em> <dfn class="decl" id="apply_state::whitespace_error" title='apply_state::whitespace_error' data-ref="apply_state::whitespace_error">whitespace_error</dfn>;</td></tr>
+<tr><th id="110">110</th><td>	<em>int</em> <dfn class="decl" id="apply_state::squelch_whitespace_errors" title='apply_state::squelch_whitespace_errors' data-ref="apply_state::squelch_whitespace_errors">squelch_whitespace_errors</dfn>;</td></tr>
+<tr><th id="111">111</th><td>	<em>int</em> <dfn class="decl" id="apply_state::applied_after_fixing_ws" title='apply_state::applied_after_fixing_ws' data-ref="apply_state::applied_after_fixing_ws">applied_after_fixing_ws</dfn>;</td></tr>
+<tr><th id="112">112</th><td>};</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><b>extern</b> <em>int</em> <a class="decl" href="apply.c.html#apply_parse_options" title='apply_parse_options' data-ref="apply_parse_options" id="apply_parse_options">apply_parse_options</a>(<em>int</em> <dfn class="local col3 decl" id="493argc" title='argc' data-type='int' data-ref="493argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col4 decl" id="494argv" title='argv' data-type='const char **' data-ref="494argv">argv</dfn>,</td></tr>
+<tr><th id="115">115</th><td>			       <b>struct</b> <a class="type" href="#apply_state" title='apply_state' data-ref="apply_state">apply_state</a> *<dfn class="local col5 decl" id="495state" title='state' data-type='struct apply_state *' data-ref="495state">state</dfn>,</td></tr>
+<tr><th id="116">116</th><td>			       <em>int</em> *<dfn class="local col6 decl" id="496force_apply" title='force_apply' data-type='int *' data-ref="496force_apply">force_apply</dfn>, <em>int</em> *<dfn class="local col7 decl" id="497options" title='options' data-type='int *' data-ref="497options">options</dfn>,</td></tr>
+<tr><th id="117">117</th><td>			       <em>const</em> <em>char</em> * <em>const</em> *<dfn class="local col8 decl" id="498apply_usage" title='apply_usage' data-type='const char *const *' data-ref="498apply_usage">apply_usage</dfn>);</td></tr>
+<tr><th id="118">118</th><td><b>extern</b> <em>int</em> <a class="decl" href="apply.c.html#init_apply_state" title='init_apply_state' data-ref="init_apply_state" id="init_apply_state">init_apply_state</a>(<b>struct</b> <a class="type" href="#apply_state" title='apply_state' data-ref="apply_state">apply_state</a> *<dfn class="local col9 decl" id="499state" title='state' data-type='struct apply_state *' data-ref="499state">state</dfn>,</td></tr>
+<tr><th id="119">119</th><td>			    <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="500prefix" title='prefix' data-type='const char *' data-ref="500prefix">prefix</dfn>,</td></tr>
+<tr><th id="120">120</th><td>			    <b>struct</b> <a class="type" href="lockfile.h.html#lock_file" title='lock_file' data-ref="lock_file">lock_file</a> *<dfn class="local col1 decl" id="501lock_file" title='lock_file' data-type='struct lock_file *' data-ref="501lock_file">lock_file</dfn>);</td></tr>
+<tr><th id="121">121</th><td><b>extern</b> <em>void</em> <a class="decl" href="apply.c.html#clear_apply_state" title='clear_apply_state' data-ref="clear_apply_state" id="clear_apply_state">clear_apply_state</a>(<b>struct</b> <a class="type" href="#apply_state" title='apply_state' data-ref="apply_state">apply_state</a> *<dfn class="local col2 decl" id="502state" title='state' data-type='struct apply_state *' data-ref="502state">state</dfn>);</td></tr>
+<tr><th id="122">122</th><td><b>extern</b> <em>int</em> <a class="decl" href="apply.c.html#check_apply_state" title='check_apply_state' data-ref="check_apply_state" id="check_apply_state">check_apply_state</a>(<b>struct</b> <a class="type" href="#apply_state" title='apply_state' data-ref="apply_state">apply_state</a> *<dfn class="local col3 decl" id="503state" title='state' data-type='struct apply_state *' data-ref="503state">state</dfn>, <em>int</em> <dfn class="local col4 decl" id="504force_apply" title='force_apply' data-type='int' data-ref="504force_apply">force_apply</dfn>);</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><i>/*</i></td></tr>
+<tr><th id="125">125</th><td><i> * Some aspects of the apply behavior are controlled by the following</i></td></tr>
+<tr><th id="126">126</th><td><i> * bits in the "options" parameter passed to apply_all_patches().</i></td></tr>
+<tr><th id="127">127</th><td><i> */</i></td></tr>
+<tr><th id="128">128</th><td><u>#define <dfn class="macro" id="_M/APPLY_OPT_INACCURATE_EOF" data-ref="_M/APPLY_OPT_INACCURATE_EOF">APPLY_OPT_INACCURATE_EOF</dfn>	(1&lt;&lt;0) /* accept inaccurate eof */</u></td></tr>
+<tr><th id="129">129</th><td><u>#define <dfn class="macro" id="_M/APPLY_OPT_RECOUNT" data-ref="_M/APPLY_OPT_RECOUNT">APPLY_OPT_RECOUNT</dfn>		(1&lt;&lt;1) /* accept inaccurate line count */</u></td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><b>extern</b> <em>int</em> <a class="decl" href="apply.c.html#apply_all_patches" title='apply_all_patches' data-ref="apply_all_patches" id="apply_all_patches">apply_all_patches</a>(<b>struct</b> <a class="type" href="#apply_state" title='apply_state' data-ref="apply_state">apply_state</a> *<dfn class="local col5 decl" id="505state" title='state' data-type='struct apply_state *' data-ref="505state">state</dfn>,</td></tr>
+<tr><th id="132">132</th><td>			     <em>int</em> <dfn class="local col6 decl" id="506argc" title='argc' data-type='int' data-ref="506argc">argc</dfn>,</td></tr>
+<tr><th id="133">133</th><td>			     <em>const</em> <em>char</em> **<dfn class="local col7 decl" id="507argv" title='argv' data-type='const char **' data-ref="507argv">argv</dfn>,</td></tr>
+<tr><th id="134">134</th><td>			     <em>int</em> <dfn class="local col8 decl" id="508options" title='options' data-type='int' data-ref="508options">options</dfn>);</td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="137">137</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='apply.c.html'>codebrowser/apply.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

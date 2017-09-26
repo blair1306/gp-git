@@ -1,0 +1,51 @@
+<dec f='codebrowser/cache.h' l='1192' type='int sha1_object_info(const unsigned char * , unsigned long * )'/>
+<doc f='codebrowser/cache.h' l='1191'>/* Read and unpack a sha1 file into memory, write memory to a sha1 file */</doc>
+<use f='codebrowser/archive-tar.c' l='279' u='c' c='write_tar_entry'/>
+<use f='codebrowser/archive-zip.c' l='328' u='c' c='write_zip_entry'/>
+<use f='codebrowser/blame.c' l='84' u='c' c='verify_working_tree_path'/>
+<use f='codebrowser/blame.c' l='509' u='c' c='fill_blob_sha1_and_mode'/>
+<use f='codebrowser/builtin/cat-file.c' l='117' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='141' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='151' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/fast-export.c' l='935' u='c' c='import_marks'/>
+<use f='codebrowser/builtin/fetch.c' l='624' u='c' c='update_local_ref'/>
+<use f='codebrowser/builtin/fsck.c' l='67' u='c' c='printable_type'/>
+<use f='codebrowser/builtin/index-pack.c' l='223' u='c' c='check_object'/>
+<use f='codebrowser/builtin/index-pack.c' l='812' u='c' c='sha1_object'/>
+<use f='codebrowser/builtin/ls-tree.c' l='97' u='c' c='show_tree'/>
+<use f='codebrowser/builtin/mktree.c' l='119' u='c' c='mktree_line'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1504' u='c' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1566' u='c' c='drop_reused_delta'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2631' u='c' c='add_loose_object'/>
+<use f='codebrowser/builtin/prune.c' l='53' u='c' c='prune_object'/>
+<use f='codebrowser/builtin/replace.c' l='56' u='c' c='show_reference'/>
+<use f='codebrowser/builtin/replace.c' l='57' u='c' c='show_reference'/>
+<use f='codebrowser/builtin/replace.c' l='165' u='c' c='replace_object_oid'/>
+<use f='codebrowser/builtin/replace.c' l='166' u='c' c='replace_object_oid'/>
+<use f='codebrowser/builtin/replace.c' l='293' u='c' c='edit_and_replace'/>
+<use f='codebrowser/builtin/tag.c' l='213' u='c' c='create_tag'/>
+<use f='codebrowser/builtin/tag.c' l='296' u='c' c='create_reflog_msg'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='200' u='c' c='check_object'/>
+<use f='codebrowser/diff.c' l='2911' u='c' c='diff_populate_filespec'/>
+<use f='codebrowser/fast-import.c' l='1913' u='c' c='read_marks'/>
+<use f='codebrowser/fast-import.c' l='2443' u='c' c='file_change_m'/>
+<use f='codebrowser/fast-import.c' l='2603' u='c' c='note_change_n'/>
+<use f='codebrowser/fast-import.c' l='2890' u='c' c='parse_new_tag'/>
+<use f='codebrowser/fast-import.c' l='3048' u='c' c='dereference'/>
+<use f='codebrowser/object.c' l='257' u='c' c='parse_object'/>
+<use f='codebrowser/pack-bitmap-write.c' l='76' u='c' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/reachable.c' l='78' u='c' c='add_recent_object'/>
+<use f='codebrowser/refs.c' l='261' u='c' c='peel_object'/>
+<use f='codebrowser/remote.c' l='1337' u='c' c='add_missing_tags'/>
+<use f='codebrowser/sequencer.c' l='2326' u='c' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sha1_file.c' l='2155' u='c' c='retry_bad_packed_offset'/>
+<def f='codebrowser/sha1_file.c' l='3043' ll='3054' type='int sha1_object_info(const unsigned char * sha1, unsigned long * sizep)'/>
+<use f='codebrowser/sha1_file.c' l='3704' u='c' c='assert_sha1_type'/>
+<doc f='codebrowser/sha1_file.c' l='3042'>/* returns enum object_type or negative */</doc>
+<use f='codebrowser/sha1_name.c' l='238' u='c' c='disambiguate_commit_only'/>
+<use f='codebrowser/sha1_name.c' l='247' u='c' c='disambiguate_committish_only'/>
+<use f='codebrowser/sha1_name.c' l='262' u='c' c='disambiguate_tree_only'/>
+<use f='codebrowser/sha1_name.c' l='271' u='c' c='disambiguate_treeish_only'/>
+<use f='codebrowser/sha1_name.c' l='286' u='c' c='disambiguate_blob_only'/>
+<use f='codebrowser/sha1_name.c' l='365' u='c' c='show_ambiguous_object'/>
+<use f='codebrowser/tag.c' l='44' u='c' c='gpg_verify_tag'/>

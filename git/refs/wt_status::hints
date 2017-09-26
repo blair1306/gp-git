@@ -1,0 +1,25 @@
+<dec f='codebrowser/wt-status.h' l='82' type='int'/>
+<offset>6400</offset>
+<use f='codebrowser/builtin/commit.c' l='202' u='w' c='status_init_config'/>
+<use f='codebrowser/builtin/commit.c' l='788' u='w' c='prepare_to_commit'/>
+<use f='codebrowser/wt-status.c' l='174' u='r' c='wt_longstatus_print_unmerged_header'/>
+<use f='codebrowser/wt-status.c' l='201' u='r' c='wt_longstatus_print_cached_header'/>
+<use f='codebrowser/wt-status.c' l='219' u='r' c='wt_longstatus_print_dirty_header'/>
+<use f='codebrowser/wt-status.c' l='237' u='r' c='wt_longstatus_print_other_header'/>
+<use f='codebrowser/wt-status.c' l='1050' u='r' c='show_merge_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1060' u='r' c='show_merge_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1076' u='r' c='show_am_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1228' u='r' c='show_rebase_information'/>
+<use f='codebrowser/wt-status.c' l='1244' u='r' c='show_rebase_information'/>
+<use f='codebrowser/wt-status.c' l='1276' u='r' c='show_rebase_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1286' u='r' c='show_rebase_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1298' u='r' c='show_rebase_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1310' u='r' c='show_rebase_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1326' u='r' c='show_cherry_pick_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1345' u='r' c='show_revert_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1369' u='r' c='show_bisect_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1634' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1645' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1651' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1657' u='r' c='wt_longstatus_print'/>
+<use f='codebrowser/wt-status.c' l='1663' u='r' c='wt_longstatus_print'/>

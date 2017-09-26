@@ -1,0 +1,57 @@
+<def f='codebrowser/diff.h' l='118' ll='189'/>
+<size>336</size>
+<mbr r='diff_options::orderfile' o='0' t='const char *'/>
+<mbr r='diff_options::pickaxe' o='64' t='const char *'/>
+<mbr r='diff_options::single_follow' o='128' t='const char *'/>
+<mbr r='diff_options::a_prefix' o='192' t='const char *'/>
+<mbr r='diff_options::b_prefix' o='256' t='const char *'/>
+<mbr r='diff_options::line_prefix' o='320' t='const char *'/>
+<mbr r='diff_options::line_prefix_length' o='384' t='size_t'/>
+<mbr r='diff_options::flags' o='448' t='unsigned int'/>
+<mbr r='diff_options::touched_flags' o='480' t='unsigned int'/>
+<mbr r='diff_options::filter' o='512' t='unsigned int'/>
+<mbr r='diff_options::use_color' o='544' t='int'/>
+<mbr r='diff_options::context' o='576' t='int'/>
+<mbr r='diff_options::interhunkcontext' o='608' t='int'/>
+<mbr r='diff_options::break_opt' o='640' t='int'/>
+<mbr r='diff_options::detect_rename' o='672' t='int'/>
+<mbr r='diff_options::irreversible_delete' o='704' t='int'/>
+<mbr r='diff_options::skip_stat_unmatch' o='736' t='int'/>
+<mbr r='diff_options::line_termination' o='768' t='int'/>
+<mbr r='diff_options::output_format' o='800' t='int'/>
+<mbr r='diff_options::pickaxe_opts' o='832' t='int'/>
+<mbr r='diff_options::rename_score' o='864' t='int'/>
+<mbr r='diff_options::rename_limit' o='896' t='int'/>
+<mbr r='diff_options::needed_rename_limit' o='928' t='int'/>
+<mbr r='diff_options::degraded_cc_to_c' o='960' t='int'/>
+<mbr r='diff_options::show_rename_progress' o='992' t='int'/>
+<mbr r='diff_options::dirstat_permille' o='1024' t='int'/>
+<mbr r='diff_options::setup' o='1056' t='int'/>
+<mbr r='diff_options::abbrev' o='1088' t='int'/>
+<mbr r='diff_options::ita_invisible_in_index' o='1120' t='int'/>
+<mbr r='diff_options::ws_error_highlight' o='1152' t='unsigned int'/>
+<mbr r='diff_options::prefix' o='1216' t='const char *'/>
+<mbr r='diff_options::prefix_length' o='1280' t='int'/>
+<mbr r='diff_options::stat_sep' o='1344' t='const char *'/>
+<mbr r='diff_options::xdl_opts' o='1408' t='long'/>
+<mbr r='diff_options::stat_width' o='1472' t='int'/>
+<mbr r='diff_options::stat_name_width' o='1504' t='int'/>
+<mbr r='diff_options::stat_graph_width' o='1536' t='int'/>
+<mbr r='diff_options::stat_count' o='1568' t='int'/>
+<mbr r='diff_options::word_regex' o='1600' t='const char *'/>
+<mbr r='diff_options::word_diff' o='1664' t='enum diff_words_type'/>
+<mbr r='diff_options::submodule_format' o='1696' t='enum diff_submodule_format'/>
+<mbr r='diff_options::found_changes' o='1728' t='int'/>
+<mbr r='diff_options::found_follow' o='1760' t='int'/>
+<mbr r='diff_options::set_default' o='1792' t='void (*)(struct diff_options *)'/>
+<mbr r='diff_options::file' o='1856' t='FILE *'/>
+<mbr r='diff_options::close_file' o='1920' t='int'/>
+<mbr r='diff_options::pathspec' o='1984' t='struct pathspec'/>
+<mbr r='diff_options::pathchange' o='2176' t='pathchange_fn_t'/>
+<mbr r='diff_options::change' o='2240' t='change_fn_t'/>
+<mbr r='diff_options::add_remove' o='2304' t='add_remove_fn_t'/>
+<mbr r='diff_options::format_callback' o='2368' t='diff_format_fn_t'/>
+<mbr r='diff_options::format_callback_data' o='2432' t='void *'/>
+<mbr r='diff_options::output_prefix' o='2496' t='diff_prefix_fn_t'/>
+<mbr r='diff_options::output_prefix_data' o='2560' t='void *'/>
+<mbr r='diff_options::diff_path_counter' o='2624' t='int'/>

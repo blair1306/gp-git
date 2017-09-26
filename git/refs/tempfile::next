@@ -1,0 +1,4 @@
+<dec f='codebrowser/tempfile.h' l='83' type='struct tempfile *volatile'/>
+<offset>0</offset>
+<use f='codebrowser/tempfile.c' l='72' u='r' c='remove_tempfiles'/>
+<use f='codebrowser/tempfile.c' l='108' u='w' c='prepare_tempfile_object'/>

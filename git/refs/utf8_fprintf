@@ -1,0 +1,8 @@
+<dec f='codebrowser/utf8.h' l='14' type='int utf8_fprintf(FILE * , const char * )'/>
+<use f='codebrowser/parse-options.c' l='573' u='c' c='usage_argh'/>
+<use f='codebrowser/parse-options.c' l='634' u='c' c='usage_with_options_internal'/>
+<def f='codebrowser/utf8.c' l='423' ll='438' type='int utf8_fprintf(FILE * stream, const char * format)'/>
+<doc f='codebrowser/utf8.c' l='419'>/*
+ * Wrapper for fprintf and returns the total number of columns required
+ * for the printed string, assuming that the string is utf8.
+ */</doc>

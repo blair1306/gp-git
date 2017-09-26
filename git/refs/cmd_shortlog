@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='218' type='int cmd_shortlog(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/shortlog.c' l='241' ll='305' type='int cmd_shortlog(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='460'/>
+<use f='codebrowser/git.c' l='460'/>
+<use f='codebrowser/git.c' l='460'/>
+<use f='codebrowser/git.c' l='460'/>

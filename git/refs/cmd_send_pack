@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='217' type='int cmd_send_pack(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/send-pack.c' l='126' ll='306' type='int cmd_send_pack(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='459'/>
+<use f='codebrowser/git.c' l='459'/>
+<use f='codebrowser/git.c' l='459'/>
+<use f='codebrowser/git.c' l='459'/>

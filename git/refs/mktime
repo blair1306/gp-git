@@ -1,0 +1,3 @@
+<dec f='include/time.h' l='199' type='time_t mktime(struct tm * __tp)'/>
+<use f='codebrowser/date.c' l='760' u='c' c='parse_date_basic'/>
+<use f='codebrowser/date.c' l='885' u='c' c='update_tm'/>

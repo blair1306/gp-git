@@ -1,0 +1,4 @@
+<dec f='codebrowser/walker.h' l='36' type='void walker_free(struct walker * walker)'/>
+<use f='codebrowser/http-fetch.c' l='89' u='c' c='cmd_main'/>
+<use f='codebrowser/remote-curl.c' l='783' u='c' c='fetch_dumb'/>
+<def f='codebrowser/walker.c' l='330' ll='334' type='void walker_free(struct walker * walker)'/>

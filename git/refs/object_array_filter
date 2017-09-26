@@ -1,0 +1,8 @@
+<dec f='codebrowser/object.h' l='126' type='void object_array_filter(struct object_array * array, object_array_each_func_t want, void * cb_data)'/>
+<doc f='codebrowser/object.h' l='121'>/*
+ * Apply want to each entry in array, retaining only the entries for
+ * which the function returns true.  Preserve the order of the entries
+ * that are retained.
+ */</doc>
+<def f='codebrowser/object.c' l='356' ll='372' type='void object_array_filter(struct object_array * array, object_array_each_func_t want, void * cb_data)'/>
+<use f='codebrowser/revision.c' l='3187' u='c' c='gc_boundary'/>

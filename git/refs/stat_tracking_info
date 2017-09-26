@@ -1,0 +1,17 @@
+<dec f='codebrowser/remote.h' l='259' type='int stat_tracking_info(struct branch * branch, int * num_ours, int * num_theirs, const char ** upstream_name)'/>
+<doc f='codebrowser/remote.h' l='258'>/* Reporting of tracking info */</doc>
+<use f='codebrowser/ref-filter.c' l='1220' u='c' c='fill_remote_ref_details'/>
+<use f='codebrowser/ref-filter.c' l='1238' u='c' c='fill_remote_ref_details'/>
+<def f='codebrowser/remote.c' l='1992' ll='2059' type='int stat_tracking_info(struct branch * branch, int * num_ours, int * num_theirs, const char ** upstream_name)'/>
+<use f='codebrowser/remote.c' l='2071' u='c' c='format_tracking_info'/>
+<doc f='codebrowser/remote.c' l='1983'>/*
+ * Compare a branch with its upstream, and save their differences (number
+ * of commits) in *num_ours and *num_theirs. The name of the upstream branch
+ * (or NULL if no upstream is defined) is returned via *upstream_name, if it
+ * is not itself NULL.
+ *
+ * Returns -1 if num_ours and num_theirs could not be filled in (e.g., no
+ * upstream defined, or ref does not exist), 0 otherwise.
+ */</doc>
+<use f='codebrowser/wt-status.c' l='1794' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1931' u='c' c='wt_porcelain_v2_print_tracking'/>

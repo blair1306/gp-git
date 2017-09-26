@@ -1,0 +1,8 @@
+<dec f='codebrowser/revision.h' l='222' type='struct commit_list *'/>
+<offset>16896</offset>
+<use f='codebrowser/revision.c' l='3108' u='r' c='track_linear'/>
+<use f='codebrowser/revision.c' l='3118' u='r' c='track_linear'/>
+<use f='codebrowser/revision.c' l='3119' u='w' c='track_linear'/>
+<use f='codebrowser/revision.c' l='3343' u='r' c='get_revision'/>
+<use f='codebrowser/revision.c' l='3344' u='r' c='get_revision'/>
+<use f='codebrowser/revision.c' l='3345' u='w' c='get_revision'/>

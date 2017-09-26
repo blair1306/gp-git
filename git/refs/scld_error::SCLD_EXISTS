@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1069' type='-3'/>
+<use f='codebrowser/builtin/difftool.c' l='267' c='ensure_leading_directories'/>
+<use f='codebrowser/builtin/init-db.c' l='512' c='cmd_init_db'/>
+<use f='codebrowser/merge-recursive.c' l='751' u='r' c='make_room_for_path'/>
+<use f='codebrowser/refs/files-backend.c' l='487' c='lock_raw_ref'/>
+<use f='codebrowser/sha1_file.c' l='135' u='r' c='safe_create_leading_directories'/>

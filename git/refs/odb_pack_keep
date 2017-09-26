@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1667' type='int odb_pack_keep(const char * name)'/>
+<doc f='codebrowser/cache.h' l='1662'>/*
+ * Create a pack .keep file named &quot;name&quot; (which should generally be the output
+ * of odb_pack_name). Returns a file descriptor opened for writing, or -1 on
+ * error.
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='1417' u='c' c='final'/>
+<def f='codebrowser/environment.c' l='267' ll='278' type='int odb_pack_keep(const char * name)'/>
+<use f='codebrowser/fast-import.c' l='952' u='c' c='keep_pack'/>

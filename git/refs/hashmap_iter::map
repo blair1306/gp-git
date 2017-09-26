@@ -1,0 +1,5 @@
+<dec f='codebrowser/hashmap.h' l='371' type='struct hashmap *'/>
+<offset>0</offset>
+<use f='codebrowser/hashmap.c' l='242' u='w' c='hashmap_iter_init'/>
+<use f='codebrowser/hashmap.c' l='256' u='r' c='hashmap_iter_next'/>
+<use f='codebrowser/hashmap.c' l='259' u='r' c='hashmap_iter_next'/>

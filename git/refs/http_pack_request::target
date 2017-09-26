@@ -1,0 +1,4 @@
+<dec f='codebrowser/http.h' l='200' type='struct packed_git *'/>
+<offset>64</offset>
+<use f='codebrowser/http.c' l='2004' u='r' c='finish_http_pack_request'/>
+<use f='codebrowser/http.c' l='2063' u='w' c='new_http_pack_request'/>

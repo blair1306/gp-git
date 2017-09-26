@@ -1,0 +1,16 @@
+<dec f='codebrowser/http.h' l='204' type='struct active_request_slot *'/>
+<offset>33024</offset>
+<use f='codebrowser/http-push.c' l='335' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='336' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='337' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='342' u='r' c='start_fetch_packed'/>
+<use f='codebrowser/http-walker.c' l='443' u='r' c='http_fetch_pack'/>
+<use f='codebrowser/http-walker.c' l='445' u='r' c='http_fetch_pack'/>
+<use f='codebrowser/http-walker.c' l='446' u='r' c='http_fetch_pack'/>
+<use f='codebrowser/http.c' l='1996' u='w' c='release_http_pack_request'/>
+<use f='codebrowser/http.c' l='2079' u='w' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2080' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2081' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2082' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2083' u='r' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2096' u='r' c='new_http_pack_request'/>

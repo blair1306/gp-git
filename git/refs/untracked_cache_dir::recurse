@@ -1,0 +1,10 @@
+<dec f='codebrowser/dir.h' l='120' type='unsigned int'/>
+<offset>546</offset>
+<use f='codebrowser/dir.c' l='739' u='w' c='invalidate_directory'/>
+<use f='codebrowser/dir.c' l='1756' u='r' c='read_cached_dir'/>
+<use f='codebrowser/dir.c' l='1783' u='w' c='close_cached_dir'/>
+<use f='codebrowser/dir.c' l='2091' u='w' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2462' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2474' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2592' u='w' c='read_one_dir'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='27' u='r' c='dump'/>

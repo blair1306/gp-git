@@ -1,0 +1,9 @@
+<dec f='codebrowser/utf8.h' l='70' type='void strbuf_utf8_align(struct strbuf * buf, align_type position, unsigned int width, const char * s)'/>
+<doc f='codebrowser/utf8.h' l='64'>/*
+ * Align the string given and store it into a strbuf as per the
+ * &apos;position&apos; and &apos;width&apos;. If the given string length is larger than
+ * &apos;width&apos; than then the input string is not truncated and no
+ * alignment is done.
+ */</doc>
+<use f='codebrowser/ref-filter.c' l='492' u='c' c='end_align_handler'/>
+<def f='codebrowser/utf8.c' l='662' ll='681' type='void strbuf_utf8_align(struct strbuf * buf, align_type position, unsigned int width, const char * s)'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/commit.h' l='390' type='int compare_commits_by_commit_date(const void * a_, const void * b_, void * unused)'/>
+<use f='codebrowser/blame.c' l='417' u='c' c='compare_commits_by_reverse_commit_date'/>
+<use f='codebrowser/blame.c' l='1761' u='r' c='setup_scoreboard'/>
+<def f='codebrowser/commit.c' l='634' ll='643' type='int compare_commits_by_commit_date(const void * a_, const void * b_, void * unused)'/>
+<use f='codebrowser/commit.c' l='669' u='r' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='783' u='r' c='paint_down_to_common'/>
+<use f='codebrowser/commit.c' l='783' u='r' c='paint_down_to_common'/>
+<use f='codebrowser/fetch-pack.c' l='50'/>
+<use f='codebrowser/fetch-pack.c' l='50'/>
+<use f='codebrowser/upload-pack.c' l='326' u='r' c='reachable'/>
+<use f='codebrowser/upload-pack.c' l='326' u='r' c='reachable'/>

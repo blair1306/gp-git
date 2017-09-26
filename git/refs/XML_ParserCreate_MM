@@ -1,0 +1,10 @@
+<dec f='include/expat.h' l='233' type='XML_Parser XML_ParserCreate_MM(const XML_Char * encoding, const XML_Memory_Handling_Suite * memsuite, const XML_Char * namespaceSeparator)'/>
+<doc f='include/expat.h' l='223'>/* Constructs a new parser using the memory management suite referred to
+   by memsuite. If memsuite is NULL, then use the standard library memory
+   suite. If namespaceSeparator is non-NULL it creates a parser with
+   namespace processing as described above. The character pointed at
+   will serve as the namespace separator.
+
+   All further memory operations used for the created parser will come from
+   the given suite.
+*/</doc>

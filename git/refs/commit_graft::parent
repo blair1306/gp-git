@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='246' type='struct object_id []'/>
+<offset>192</offset>
+<doc f='codebrowser/commit.h' l='246'>/* more */</doc>
+<use f='codebrowser/commit.c' l='158' u='m' c='read_graft_line'/>
+<use f='codebrowser/commit.c' l='360' u='a' c='parse_commit_buffer'/>

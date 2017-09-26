@@ -1,0 +1,6 @@
+<def f='codebrowser/commit.h' l='318' ll='323'/>
+<size>32</size>
+<mbr r='commit_extra_header::next' o='0' t='struct commit_extra_header *'/>
+<mbr r='commit_extra_header::key' o='64' t='char *'/>
+<mbr r='commit_extra_header::value' o='128' t='char *'/>
+<mbr r='commit_extra_header::len' o='192' t='size_t'/>

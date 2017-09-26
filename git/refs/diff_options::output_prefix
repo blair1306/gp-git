@@ -1,0 +1,11 @@
+<dec f='codebrowser/diff.h' l='185' type='diff_prefix_fn_t'/>
+<offset>2496</offset>
+<use f='codebrowser/diff.c' l='1230' u='r' c='diff_line_prefix'/>
+<use f='codebrowser/diff.c' l='1233' u='r' c='diff_line_prefix'/>
+<use f='codebrowser/graph.c' l='254' u='r' c='graph_setup_line_prefix'/>
+<use f='codebrowser/graph.c' l='255' u='w' c='graph_setup_line_prefix'/>
+<use f='codebrowser/graph.c' l='312' u='w' c='graph_init'/>
+<use f='codebrowser/line-log.c' l='866' u='r' c='output_prefix'/>
+<use f='codebrowser/line-log.c' l='867' u='r' c='output_prefix'/>
+<use f='codebrowser/log-tree.c' l='753' u='r' c='log_tree_diff_flush'/>
+<use f='codebrowser/log-tree.c' l='755' u='r' c='log_tree_diff_flush'/>

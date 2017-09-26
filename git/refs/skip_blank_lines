@@ -1,0 +1,8 @@
+<dec f='codebrowser/commit.h' l='189' type='const char * skip_blank_lines(const char * msg)'/>
+<use f='codebrowser/builtin/commit.c' l='718' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/reset.c' l='109' u='c' c='print_new_head_line'/>
+<use f='codebrowser/commit.c' l='416' u='c' c='find_commit_subject'/>
+<def f='codebrowser/pretty.c' l='523' ll='535' type='const char * skip_blank_lines(const char * msg)'/>
+<use f='codebrowser/pretty.c' l='889' u='c' c='parse_commit_message'/>
+<use f='codebrowser/pretty.c' l='893' u='c' c='parse_commit_message'/>
+<use f='codebrowser/pretty.c' l='1815' u='c' c='pretty_print_commit'/>

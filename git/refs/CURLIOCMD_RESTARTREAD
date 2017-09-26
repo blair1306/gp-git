@@ -1,0 +1,4 @@
+<dec f='include/curl/curl.h' l='368' type='1'/>
+<doc f='include/curl/curl.h' l='368'>/* restart the read stream from start */</doc>
+<use f='codebrowser/http.c' l='169' c='ioctl_buffer'/>
+<use f='codebrowser/remote-curl.c' l='450' c='rpc_ioctl'/>

@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/confname.h' l='253'/>
+<use f='codebrowser/thread-utils.c' l='13' u='a'/>
+<use f='codebrowser/thread-utils.c' l='23' u='a'/>
+<use f='codebrowser/thread-utils.c' l='56' u='a'/>
+<use f='codebrowser/thread-utils.c' l='57' u='c'/>

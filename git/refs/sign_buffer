@@ -1,0 +1,11 @@
+<dec f='codebrowser/gpg-interface.h' l='29' type='int sign_buffer(struct strbuf * buffer, struct strbuf * signature, const char * signing_key)'/>
+<use f='codebrowser/builtin/tag.c' l='127' u='c' c='do_sign'/>
+<use f='codebrowser/commit.c' l='1104' u='c' c='do_sign_commit'/>
+<def f='codebrowser/gpg-interface.c' l='154' ll='193' type='int sign_buffer(struct strbuf * buffer, struct strbuf * signature, const char * signing_key)'/>
+<doc f='codebrowser/gpg-interface.c' l='148'>/*
+ * Create a detached signature for the contents of &quot;buffer&quot; and append
+ * it after &quot;signature&quot;; &quot;buffer&quot; and &quot;signature&quot; can be the same
+ * strbuf instance, which would cause the detached signature appended
+ * at the end.
+ */</doc>
+<use f='codebrowser/send-pack.c' l='315' u='c' c='generate_push_cert'/>

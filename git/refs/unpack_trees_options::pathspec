@@ -1,0 +1,5 @@
+<dec f='codebrowser/unpack-trees.h' l='56' type='struct pathspec *'/>
+<offset>768</offset>
+<use f='codebrowser/diff-lib.c' l='502' u='w' c='diff_cache'/>
+<use f='codebrowser/diff-lib.c' l='503' u='r' c='diff_cache'/>
+<use f='codebrowser/unpack-trees.c' l='1298' u='r' c='unpack_trees'/>

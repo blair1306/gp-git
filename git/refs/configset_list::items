@@ -1,0 +1,11 @@
+<dec f='codebrowser/config.h' l='142' type='struct configset_list_item *'/>
+<offset>0</offset>
+<use f='codebrowser/config.c' l='1618' u='r' c='configset_iter'/>
+<use f='codebrowser/config.c' l='1619' u='r' c='configset_iter'/>
+<use f='codebrowser/config.c' l='1703' u='w' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='r' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='r' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1704' u='r' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1743' u='w' c='git_configset_init'/>
+<use f='codebrowser/config.c' l='1760' u='r' c='git_configset_clear'/>
+<use f='codebrowser/config.c' l='1763' u='w' c='git_configset_clear'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/list.h' l='133'/>
+<use f='codebrowser/http-walker.c' l='128' u='c'/>
+<doc f='codebrowser/list.h' l='129'>/*
+ * Iterate forward over the elements list. The list elements can be
+ * removed from the list while doing this.
+ */</doc>
+<use f='codebrowser/sha1_file.c' l='2334' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2349' u='c'/>
+<use f='codebrowser/trailer.c' l='363' u='c'/>
+<use f='codebrowser/trailer.c' l='934' u='c'/>

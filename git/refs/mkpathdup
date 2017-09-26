@@ -1,0 +1,30 @@
+<dec f='codebrowser/path.h' l='33' type='char * mkpathdup(const char * fmt)'/>
+<use f='codebrowser/builtin/branch.c' l='225' u='c' c='delete_branches'/>
+<use f='codebrowser/builtin/checkout.c' l='623' u='c' c='update_refs_for_switch'/>
+<use f='codebrowser/builtin/clone.c' l='375' u='c' c='copy_alternates'/>
+<use f='codebrowser/builtin/clone.c' l='959' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/prune.c' l='150' u='c' c='cmd_prune'/>
+<use f='codebrowser/builtin/repack.c' l='222' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/repack.c' l='223' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/repack.c' l='317' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/repack.c' l='324' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/repack.c' l='347' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/repack.c' l='348' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/repack.c' l='379' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/repack.c' l='381' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/repack.c' l='401' u='c' c='cmd_repack'/>
+<use f='codebrowser/config.c' l='1551' u='c' c='do_git_config_sequence'/>
+<use f='codebrowser/merge-recursive.c' l='911' u='c' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='912' u='c' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='913' u='c' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='916' u='c' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='917' u='c' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='918' u='c' c='merge_3way'/>
+<def f='codebrowser/path.c' l='478' ll='487' type='char * mkpathdup(const char * fmt)'/>
+<use f='codebrowser/path.c' l='1336' u='c' c='xdg_config_home'/>
+<use f='codebrowser/path.c' l='1340' u='c' c='xdg_config_home'/>
+<use f='codebrowser/path.c' l='1351' u='c' c='xdg_cache_home'/>
+<use f='codebrowser/path.c' l='1355' u='c' c='xdg_cache_home'/>
+<use f='codebrowser/server-info.c' l='14' u='c' c='update_info_file'/>
+<use f='codebrowser/server-info.c' l='261' u='c' c='update_info_packs'/>
+<use f='codebrowser/sha1_file.c' l='579' u='c' c='compute_alternate_path'/>

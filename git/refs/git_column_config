@@ -1,0 +1,8 @@
+<dec f='codebrowser/column.h' l='31' type='int git_column_config(const char * var, const char * value, const char * command, unsigned int * colopts)'/>
+<use f='codebrowser/builtin/branch.c' l='82' u='c' c='git_branch_config'/>
+<use f='codebrowser/builtin/clean.c' l='107' u='c' c='git_clean_config'/>
+<use f='codebrowser/builtin/column.c' l='17' u='c' c='column_config'/>
+<use f='codebrowser/builtin/commit.c' l='1277' u='c' c='git_status_config'/>
+<use f='codebrowser/builtin/help.c' l='254' u='c' c='git_help_config'/>
+<use f='codebrowser/builtin/tag.c' l='160' u='c' c='git_tag_config'/>
+<def f='codebrowser/column.c' l='334' ll='349' type='int git_column_config(const char * var, const char * value, const char * command, unsigned int * colopts)'/>

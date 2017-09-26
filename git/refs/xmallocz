@@ -1,0 +1,28 @@
+<dec f='codebrowser/git-compat-util.h' l='793' type='void * xmallocz(size_t size)'/>
+<use f='codebrowser/builtin/check-ref-format.c' l='23' u='c' c='collapse_slashes'/>
+<use f='codebrowser/builtin/index-pack.c' l='458' u='c' c='unpack_entry_data'/>
+<use f='codebrowser/builtin/index-pack.c' l='563' u='c' c='unpack_data'/>
+<use f='codebrowser/builtin/merge-tree.c' l='177' u='c' c='traverse_path'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='99' u='c' c='get_data'/>
+<use f='codebrowser/builtin/worktree.c' l='60' u='c' c='prune_worktree'/>
+<use f='codebrowser/column.c' l='177' u='c' c='display_table'/>
+<use f='codebrowser/combine-diff.c' l='1044' u='c' c='show_patch_diff'/>
+<use f='codebrowser/config.c' l='363' u='c' c='git_config_parse_key_1'/>
+<use f='codebrowser/dir.c' l='789' u='c' c='add_excludes'/>
+<use f='codebrowser/entry.c' l='10' u='c' c='create_directories'/>
+<use f='codebrowser/grep.c' l='1996' u='c' c='grep_source_load_file'/>
+<use f='codebrowser/imap-send.c' l='895' u='c' c='cram'/>
+<use f='codebrowser/imap-send.c' l='1188' u='c' c='lf_to_crlf'/>
+<use f='codebrowser/ll-merge.c' l='211' u='c' c='ll_ext_merge'/>
+<use f='codebrowser/patch-delta.c' l='36' u='c' c='patch_delta'/>
+<use f='codebrowser/pathspec.c' l='125' u='c' c='attr_value_unescape'/>
+<use f='codebrowser/refs.c' l='163' u='c' c='refname_is_safe'/>
+<use f='codebrowser/setup.c' l='95' u='c' c='prefix_path_gently'/>
+<use f='codebrowser/setup.c' l='585' u='c' c='read_gitfile_gently'/>
+<use f='codebrowser/sha1_file.c' l='1893' u='c' c='unpack_sha1_rest'/>
+<use f='codebrowser/strbuf.c' l='756' u='c' c='xstrdup_tolower'/>
+<use f='codebrowser/t/helper/test-path-utils.c' l='176' u='c' c='cmd_main'/>
+<def f='codebrowser/wrapper.c' l='106' ll='109' type='void * xmallocz(size_t size)'/>
+<use f='codebrowser/wrapper.c' l='124' u='c' c='xmemdupz'/>
+<use f='codebrowser/wt-status.c' l='323' u='c' c='wt_longstatus_print_unmerged_data'/>
+<use f='codebrowser/wt-status.c' l='357' u='c' c='wt_longstatus_print_change_data'/>

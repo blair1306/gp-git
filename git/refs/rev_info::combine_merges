@@ -1,0 +1,18 @@
+<dec f='codebrowser/revision.h' l='132' type='unsigned int'/>
+<offset>972</offset>
+<use f='codebrowser/builtin/diff-files.c' l='65' u='r' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff-files.c' l='67' u='w' c='cmd_diff_files'/>
+<use f='codebrowser/builtin/diff.c' l='194' u='r' c='builtin_diff_combined'/>
+<use f='codebrowser/builtin/diff.c' l='195' u='w' c='builtin_diff_combined'/>
+<use f='codebrowser/builtin/diff.c' l='245' u='r' c='builtin_diff_files'/>
+<use f='codebrowser/builtin/diff.c' l='247' u='w' c='builtin_diff_files'/>
+<use f='codebrowser/builtin/log.c' l='550' u='r' c='show_setup_revisions_tweak'/>
+<use f='codebrowser/builtin/log.c' l='552' u='w' c='show_setup_revisions_tweak'/>
+<use f='codebrowser/builtin/log.c' l='675' u='r' c='log_setup_revisions_tweak'/>
+<use f='codebrowser/builtin/log.c' l='679' u='r' c='log_setup_revisions_tweak'/>
+<use f='codebrowser/diff-lib.c' l='175' u='r' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='339' u='r' c='show_modified'/>
+<use f='codebrowser/log-tree.c' l='817' u='r' c='log_tree_diff'/>
+<use f='codebrowser/revision.c' l='1884' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1888' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2349' u='r' c='setup_revisions'/>

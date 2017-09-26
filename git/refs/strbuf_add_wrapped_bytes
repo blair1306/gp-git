@@ -1,0 +1,5 @@
+<dec f='codebrowser/utf8.h' l='21' type='void strbuf_add_wrapped_bytes(struct strbuf * buf, const char * data, int len, int indent, int indent2, int width)'/>
+<use f='codebrowser/pretty.c' l='476' u='c' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='480' u='c' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='1605' u='c' c='pp_title_line'/>
+<def f='codebrowser/utf8.c' l='346' ll='352' type='void strbuf_add_wrapped_bytes(struct strbuf * buf, const char * data, int len, int indent, int indent2, int width)'/>

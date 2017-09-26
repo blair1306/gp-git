@@ -1,0 +1,18 @@
+<dec f='codebrowser/commit.h' l='59' type='struct commit * lookup_commit_or_die(const struct object_id * oid, const char * ref_name)'/>
+<doc f='codebrowser/commit.h' l='54'>/*
+ * Look up object named by &quot;oid&quot;, dereference tag as necessary,
+ * get a commit and return it. If &quot;oid&quot; does not dereference to
+ * a commit, use ref_name to report an error and die.
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='1459' u='c' c='parse_mail_rebase'/>
+<use f='codebrowser/builtin/commit.c' l='1666' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='638' u='c' c='fmt_merge_msg'/>
+<use f='codebrowser/builtin/log.c' l='1280' u='c' c='get_base_commit'/>
+<use f='codebrowser/builtin/merge.c' l='1129' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/replace.c' l='332' u='c' c='replace_parents'/>
+<use f='codebrowser/builtin/replace.c' l='398' u='c' c='create_graft'/>
+<def f='codebrowser/commit.c' l='37' ll='47' type='struct commit * lookup_commit_or_die(const struct object_id * oid, const char * ref_name)'/>
+<use f='codebrowser/http-push.c' l='1564' u='c' c='verify_merge_base'/>
+<use f='codebrowser/http-push.c' l='1565' u='c' c='verify_merge_base'/>
+<use f='codebrowser/revision.c' l='1396' u='c' c='prepare_show_merge'/>
+<use f='codebrowser/revision.c' l='1399' u='c' c='prepare_show_merge'/>

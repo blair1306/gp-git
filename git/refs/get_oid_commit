@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1310' type='int get_oid_commit(const char * str, struct object_id * oid)'/>
+<use f='codebrowser/builtin/am.c' l='1652' u='c' c='do_commit'/>
+<use f='codebrowser/builtin/commit-tree.c' l='59' u='c' c='cmd_commit_tree'/>
+<def f='codebrowser/sha1_name.c' l='1375' ll='1380' type='int get_oid_commit(const char * name, struct object_id * oid)'/>

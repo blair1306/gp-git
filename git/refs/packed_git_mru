@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1614' type='struct mru *'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1014' u='r' c='want_object_in_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1032' u='r' c='want_object_in_pack'/>
+<def f='codebrowser/sha1_file.c' l='719' type='struct mru *'/>
+<use f='codebrowser/sha1_file.c' l='1574' u='r' c='prepare_packed_git_mru'/>
+<use f='codebrowser/sha1_file.c' l='1576' u='r' c='prepare_packed_git_mru'/>
+<use f='codebrowser/sha1_file.c' l='2878' u='r' c='find_pack_entry'/>
+<use f='codebrowser/sha1_file.c' l='2880' u='r' c='find_pack_entry'/>

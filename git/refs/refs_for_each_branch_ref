@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='284' type='int refs_for_each_branch_ref(struct ref_store * refs, each_ref_fn * fn, void * cb_data)'/>
+<def f='codebrowser/refs.c' l='345' ll='348' type='int refs_for_each_branch_ref(struct ref_store * refs, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='352' u='c' c='for_each_branch_ref'/>
+<use f='codebrowser/refs.c' l='357' u='c' c='for_each_branch_ref_submodule'/>

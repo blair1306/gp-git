@@ -1,0 +1,5 @@
+<dec f='codebrowser/ref-filter.h' l='82' type='int'/>
+<use f='codebrowser/builtin/branch.c' l='412' u='w' c='print_ref_list'/>
+<offset>96</offset>
+<use f='codebrowser/ref-filter.c' l='111' u='r' c='color_atom_parser'/>
+<use f='codebrowser/ref-filter.c' l='684' u='r' c='verify_ref_format'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/string-list.h' l='4' ll='7'/>
+<size>16</size>
+<mbr r='string_list_item::string' o='0' t='char *'/>
+<mbr r='string_list_item::util' o='64' t='void *'/>

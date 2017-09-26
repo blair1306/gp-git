@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs.h' l='243'/>
+<doc f='codebrowser/refs.h' l='242'>/* Reference is a packed reference. */</doc>
+<use f='codebrowser/ref-filter.c' l='1379' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='686' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2561' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='247' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='350' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='353' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='386' u='c'/>

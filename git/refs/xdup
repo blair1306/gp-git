@@ -1,0 +1,5 @@
+<dec f='codebrowser/git-compat-util.h' l='805' type='int xdup(int fd)'/>
+<use f='codebrowser/transport-helper.c' l='438' u='c' c='get_importer'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='511' u='c' c='svndump_init_fd'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='513' u='c' c='svndump_init_fd'/>
+<def f='codebrowser/wrapper.c' l='372' ll='378' type='int xdup(int fd)'/>

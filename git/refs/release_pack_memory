@@ -1,0 +1,5 @@
+<dec f='codebrowser/git-compat-util.h' l='752' type='void release_pack_memory(size_t )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2117' u='c' c='try_to_free_from_threads'/>
+<def f='codebrowser/sha1_file.c' l='908' ll='913' type='void release_pack_memory(size_t need)'/>
+<use f='codebrowser/sha1_file.c' l='938' u='c' c='xmmap_gently'/>
+<use f='codebrowser/sha1_file.c' l='1312' u='c' c='try_to_free_pack_memory'/>

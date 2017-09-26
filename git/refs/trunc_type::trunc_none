@@ -1,0 +1,3 @@
+<dec f='codebrowser/pretty.c' l='759' type='0'/>
+<use f='codebrowser/pretty.c' l='1062' u='r' c='parse_padding_placeholder'/>
+<use f='codebrowser/pretty.c' l='1381' c='format_and_pad_commit'/>

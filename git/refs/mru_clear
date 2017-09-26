@@ -1,0 +1,3 @@
+<dec f='codebrowser/mru.h' l='43' type='void mru_clear(struct mru * mru)'/>
+<def f='codebrowser/mru.c' l='40' ll='50' type='void mru_clear(struct mru * mru)'/>
+<use f='codebrowser/sha1_file.c' l='1574' u='c' c='prepare_packed_git_mru'/>

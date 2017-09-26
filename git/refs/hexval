@@ -1,0 +1,9 @@
+<def f='codebrowser/cache.h' l='1256' ll='1259' type='unsigned int hexval(unsigned char c)'/>
+<use f='codebrowser/cache.h' l='1267' u='c' c='hex2chr'/>
+<use f='codebrowser/cache.h' l='1268' u='c' c='hex2chr'/>
+<use f='codebrowser/color.c' l='57' u='c' c='get_hex_color'/>
+<use f='codebrowser/color.c' l='57' u='c' c='get_hex_color'/>
+<use f='codebrowser/mailinfo.c' l='374' u='c' c='decode_q_segment'/>
+<use f='codebrowser/mailinfo.c' l='374' u='c' c='decode_q_segment'/>
+<use f='codebrowser/notes.c' l='354' u='c' c='get_oid_hex_segment'/>
+<use f='codebrowser/notes.c' l='354' u='c' c='get_oid_hex_segment'/>

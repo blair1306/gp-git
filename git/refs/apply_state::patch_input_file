@@ -1,0 +1,4 @@
+<dec f='codebrowser/apply.h' l='68' type='const char *'/>
+<use f='codebrowser/apply.c' l='1650' u='r' c='record_ws_error'/>
+<use f='codebrowser/apply.c' l='4635' u='w' c='apply_patch'/>
+<offset>832</offset>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/diffcore.h' l='47' type='unsigned int'/>
+<offset>534</offset>
+<doc f='codebrowser/diffcore.h' l='47'>/* only appear in combined diff */</doc>
+<use f='codebrowser/combine-diff.c' l='1274' u='w' c='combined_pair'/>
+<use f='codebrowser/combine-diff.c' l='1276' u='w' c='combined_pair'/>

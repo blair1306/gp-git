@@ -1,0 +1,6 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='32'/>
+<use f='codebrowser/builtin/blame.c' l='683' u='c'/>
+<use f='codebrowser/combine-diff.c' l='130' u='c'/>
+<use f='codebrowser/combine-diff.c' l='148' u='c'/>
+<use f='codebrowser/xdiff/xutils.c' l='178' u='c'/>
+<use f='codebrowser/xdiff/xutils.c' l='242' u='c'/>

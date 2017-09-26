@@ -1,0 +1,3 @@
+<dec f='codebrowser/pretty.c' l='751' type='0'/>
+<use f='codebrowser/pretty.c' l='1401' u='r' c='format_and_pad_commit'/>
+<use f='codebrowser/pretty.c' l='1435' u='r' c='format_commit_item'/>

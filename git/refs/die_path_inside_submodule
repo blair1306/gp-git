@@ -1,0 +1,7 @@
+<dec f='codebrowser/submodule.h' l='63' type='void die_path_inside_submodule(const struct index_state * istate, const struct pathspec * ps)'/>
+<use f='codebrowser/builtin/add.c' l='439' u='c' c='cmd_add'/>
+<use f='codebrowser/builtin/check-ignore.c' l='95' u='c' c='check_ignore'/>
+<def f='codebrowser/submodule.c' l='371' ll='399' type='void die_path_inside_submodule(const struct index_state * istate, const struct pathspec * ps)'/>
+<doc f='codebrowser/submodule.c' l='368'>/*
+ * Dies if any paths in the provided pathspec descends into a submodule
+ */</doc>

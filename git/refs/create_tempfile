@@ -1,0 +1,10 @@
+<dec f='codebrowser/tempfile.h' l='97' type='int create_tempfile(struct tempfile * tempfile, const char * path)'/>
+<doc f='codebrowser/tempfile.h' l='92'>/*
+ * Attempt to create a temporary file at the specified `path`. Return
+ * a file descriptor for writing to it, or -1 on error. It is an error
+ * if a file already exists at that path.
+ */</doc>
+<use f='codebrowser/lockfile.c' l='83' u='c' c='lock_file'/>
+<use f='codebrowser/refs/packed-backend.c' l='630' u='c' c='commit_packed_refs'/>
+<def f='codebrowser/tempfile.c' l='118' ll='143' type='int create_tempfile(struct tempfile * tempfile, const char * path)'/>
+<doc f='codebrowser/tempfile.c' l='117'>/* Make sure errno contains a meaningful value on error */</doc>

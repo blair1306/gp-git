@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ll-merge.h source code [codebrowser/ll-merge.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ll_merge_options "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/ll-merge.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='ll-merge.h.html'>ll-merge.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Low level 3-way in-core file merge.</i></td></tr>
+<tr><th id="3">3</th><td><i> */</i></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#<span data-ppcond="5">ifndef</span> <span class="macro" data-ref="_M/LL_MERGE_H">LL_MERGE_H</span></u></td></tr>
+<tr><th id="6">6</th><td><u>#define <dfn class="macro" id="_M/LL_MERGE_H" data-ref="_M/LL_MERGE_H">LL_MERGE_H</dfn></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>struct</b> <dfn class="type def" id="ll_merge_options" title='ll_merge_options' data-ref="ll_merge_options">ll_merge_options</dfn> {</td></tr>
+<tr><th id="9">9</th><td>	<em>unsigned</em> <dfn class="decl" id="ll_merge_options::virtual_ancestor" title='ll_merge_options::virtual_ancestor' data-ref="ll_merge_options::virtual_ancestor">virtual_ancestor</dfn> : <var>1</var>;</td></tr>
+<tr><th id="10">10</th><td>	<em>unsigned</em> <dfn class="decl" id="ll_merge_options::variant" title='ll_merge_options::variant' data-ref="ll_merge_options::variant">variant</dfn> : <var>2</var>;	<i>/* favor ours, favor theirs, or union merge */</i></td></tr>
+<tr><th id="11">11</th><td>	<em>unsigned</em> <dfn class="decl" id="ll_merge_options::renormalize" title='ll_merge_options::renormalize' data-ref="ll_merge_options::renormalize">renormalize</dfn> : <var>1</var>;</td></tr>
+<tr><th id="12">12</th><td>	<em>long</em> <dfn class="decl" id="ll_merge_options::xdl_opts" title='ll_merge_options::xdl_opts' data-ref="ll_merge_options::xdl_opts">xdl_opts</dfn>;</td></tr>
+<tr><th id="13">13</th><td>};</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><em>int</em> <dfn class="decl" id="ll_merge" title='ll_merge' data-ref="ll_merge">ll_merge</dfn>(<a class="typedef" href="xdiff/xdiff.h.html#mmbuffer_t" title='mmbuffer_t' data-type='struct s_mmbuffer' data-ref="mmbuffer_t">mmbuffer_t</a> *<dfn class="local col6 decl" id="346result_buf" title='result_buf' data-type='mmbuffer_t *' data-ref="346result_buf">result_buf</dfn>,</td></tr>
+<tr><th id="16">16</th><td>	     <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="347path" title='path' data-type='const char *' data-ref="347path">path</dfn>,</td></tr>
+<tr><th id="17">17</th><td>	     <a class="typedef" href="xdiff/xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col8 decl" id="348ancestor" title='ancestor' data-type='mmfile_t *' data-ref="348ancestor">ancestor</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="349ancestor_label" title='ancestor_label' data-type='const char *' data-ref="349ancestor_label">ancestor_label</dfn>,</td></tr>
+<tr><th id="18">18</th><td>	     <a class="typedef" href="xdiff/xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col0 decl" id="350ours" title='ours' data-type='mmfile_t *' data-ref="350ours">ours</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="351our_label" title='our_label' data-type='const char *' data-ref="351our_label">our_label</dfn>,</td></tr>
+<tr><th id="19">19</th><td>	     <a class="typedef" href="xdiff/xdiff.h.html#mmfile_t" title='mmfile_t' data-type='struct s_mmfile' data-ref="mmfile_t">mmfile_t</a> *<dfn class="local col2 decl" id="352theirs" title='theirs' data-type='mmfile_t *' data-ref="352theirs">theirs</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="353their_label" title='their_label' data-type='const char *' data-ref="353their_label">their_label</dfn>,</td></tr>
+<tr><th id="20">20</th><td>	     <em>const</em> <b>struct</b> <a class="type" href="#ll_merge_options" title='ll_merge_options' data-ref="ll_merge_options">ll_merge_options</a> *<dfn class="local col4 decl" id="354opts" title='opts' data-type='const struct ll_merge_options *' data-ref="354opts">opts</dfn>);</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><em>int</em> <dfn class="decl" id="ll_merge_marker_size" title='ll_merge_marker_size' data-ref="ll_merge_marker_size">ll_merge_marker_size</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="355path" title='path' data-type='const char *' data-ref="355path">path</dfn>);</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="5">endif</span></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='apply.c.html'>codebrowser/apply.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

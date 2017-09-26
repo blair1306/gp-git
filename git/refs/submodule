@@ -1,0 +1,15 @@
+<def f='codebrowser/submodule-config.h' l='12' ll='23'/>
+<size>88</size>
+<doc f='codebrowser/submodule-config.h' l='8'>/*
+ * Submodule entry containing the information about a certain submodule
+ * in a certain revision.
+ */</doc>
+<mbr r='submodule::path' o='0' t='const char *'/>
+<mbr r='submodule::name' o='64' t='const char *'/>
+<mbr r='submodule::url' o='128' t='const char *'/>
+<mbr r='submodule::fetch_recurse' o='192' t='int'/>
+<mbr r='submodule::ignore' o='256' t='const char *'/>
+<mbr r='submodule::branch' o='320' t='const char *'/>
+<mbr r='submodule::update_strategy' o='384' t='struct submodule_update_strategy'/>
+<mbr r='submodule::gitmodules_sha1' o='512' t='unsigned char [20]'/>
+<mbr r='submodule::recommend_shallow' o='672' t='int'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache-tree.h' l='51' type='int write_cache_as_tree(unsigned char * sha1, int flags, const char * prefix)'/>
+<use f='codebrowser/builtin/am.c' l='1649' u='c' c='do_commit'/>
+<use f='codebrowser/builtin/am.c' l='2030' u='c' c='clean_index'/>
+<use f='codebrowser/builtin/merge.c' l='633' u='c' c='write_tree_trivial'/>
+<use f='codebrowser/builtin/write-tree.c' l='41' u='c' c='cmd_write_tree'/>
+<def f='codebrowser/cache-tree.c' l='657' ll='660' type='int write_cache_as_tree(unsigned char * sha1, int flags, const char * prefix)'/>
+<use f='codebrowser/sequencer.c' l='955' u='c' c='do_pick_commit'/>

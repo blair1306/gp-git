@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1686' type='struct packed_git * add_packed_git(const char * path, size_t path_len, int local)'/>
+<use f='codebrowser/builtin/index-pack.c' l='1549' u='c' c='read_idx_option'/>
+<use f='codebrowser/connected.c' l='47' u='c' c='check_connected'/>
+<use f='codebrowser/fast-import.c' l='1034' u='c' c='end_packfile'/>
+<def f='codebrowser/sha1_file.c' l='1315' ll='1361' type='struct packed_git * add_packed_git(const char * path, size_t path_len, int local)'/>
+<use f='codebrowser/sha1_file.c' l='1479' u='c' c='prepare_packed_git_one'/>

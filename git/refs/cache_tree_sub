@@ -1,0 +1,12 @@
+<def f='codebrowser/cache-tree.h' l='9' ll='15'/>
+<dec f='codebrowser/cache-tree.h' l='28' type='struct cache_tree_sub * cache_tree_sub(struct cache_tree * , const char * )'/>
+<size>24</size>
+<mbr r='cache_tree_sub::cache_tree' o='0' t='struct cache_tree *'/>
+<mbr r='cache_tree_sub::count' o='64' t='int'/>
+<mbr r='cache_tree_sub::namelen' o='96' t='int'/>
+<mbr r='cache_tree_sub::used' o='128' t='int'/>
+<mbr r='cache_tree_sub::name' o='160' t='char []'/>
+<def f='codebrowser/cache-tree.c' l='94' ll='98' type='struct cache_tree_sub * cache_tree_sub(struct cache_tree * it, const char * path)'/>
+<use f='codebrowser/cache-tree.c' l='557' u='c' c='read_one'/>
+<use f='codebrowser/cache-tree.c' l='679' u='c' c='prime_cache_tree_rec'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='49' u='c' c='dump_cache_tree'/>

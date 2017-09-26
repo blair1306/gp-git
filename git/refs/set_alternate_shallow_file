@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='274' type='void set_alternate_shallow_file(const char * path, int override)'/>
+<use f='codebrowser/environment.c' l='160' u='c' c='setup_git_env'/>
+<use f='codebrowser/git.c' l='188' u='c' c='handle_options'/>
+<def f='codebrowser/shallow.c' l='20' ll='28' type='void set_alternate_shallow_file(const char * path, int override)'/>

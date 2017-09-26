@@ -1,0 +1,15 @@
+<dec f='codebrowser/refs/ref-cache.h' l='40' type='struct object_id'/>
+<offset>0</offset>
+<doc f='codebrowser/refs/ref-cache.h' l='34'>/*
+	 * The name of the object to which this reference resolves
+	 * (which may be a tag object).  If REF_ISBROKEN, this is
+	 * null.  If REF_ISSYMREF, then this is the name of the object
+	 * referred to by the last reference in the symlink chain.
+	 */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='349' u='a' c='add_packed_ref'/>
+<use f='codebrowser/refs/packed-backend.c' l='385' u='m' c='packed_read_raw_ref'/>
+<use f='codebrowser/refs/ref-cache.c' l='40' u='a' c='create_ref_entry'/>
+<use f='codebrowser/refs/ref-cache.c' l='278' u='a' c='is_dup_ref'/>
+<use f='codebrowser/refs/ref-cache.c' l='278' u='a' c='is_dup_ref'/>
+<use f='codebrowser/refs/ref-cache.c' l='487' u='a' c='cache_ref_iterator_advance'/>
+<use f='codebrowser/refs/ref-cache.c' l='512' u='m' c='peel_entry'/>

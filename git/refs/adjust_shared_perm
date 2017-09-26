@@ -1,0 +1,18 @@
+<dec f='codebrowser/cache.h' l='1045' type='int adjust_shared_perm(const char * path)'/>
+<use f='codebrowser/builtin/init-db.c' l='216' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='224' u='c' c='create_default_files'/>
+<use f='codebrowser/copy.c' l='55' u='c' c='copy_file'/>
+<use f='codebrowser/pack-bitmap-write.c' l='542' u='c' c='bitmap_writer_finish'/>
+<use f='codebrowser/pack-write.c' l='350' u='c' c='finish_tmp_packfile'/>
+<use f='codebrowser/pack-write.c' l='355' u='c' c='finish_tmp_packfile'/>
+<def f='codebrowser/path.c' l='859' ll='879' type='int adjust_shared_perm(const char * path)'/>
+<use f='codebrowser/path.c' l='889' u='c' c='safe_create_dir'/>
+<use f='codebrowser/read-cache.c' l='2433' u='c' c='write_shared_index'/>
+<use f='codebrowser/refs/files-backend.c' l='1501' u='c' c='log_ref_setup'/>
+<use f='codebrowser/server-info.c' l='33' u='c' c='update_info_file'/>
+<use f='codebrowser/sha1_file.c' l='105' u='c' c='mkdir_in_gitdir'/>
+<use f='codebrowser/sha1_file.c' l='154' u='c' c='safe_create_leading_directories'/>
+<use f='codebrowser/sha1_file.c' l='3231' u='c' c='finalize_object_file'/>
+<use f='codebrowser/sha1_file.c' l='3296' u='c' c='create_tmpfile'/>
+<use f='codebrowser/tempfile.c' l='135' u='c' c='create_tempfile'/>
+<use f='codebrowser/tmp-objdir.c' l='224' u='c' c='migrate_one'/>

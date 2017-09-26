@@ -1,0 +1,10 @@
+<dec f='include/netdb.h' l='575' type='char *'/>
+<offset>256</offset>
+<doc f='include/netdb.h' l='575'>/* Canonical name for service location.  */</doc>
+<use f='codebrowser/daemon.c' l='630' u='r' c='lookup_hostname'/>
+<use f='codebrowser/daemon.c' l='632' u='r' c='lookup_hostname'/>
+<use f='codebrowser/ident.c' l='103' u='r' c='canonical_name'/>
+<use f='codebrowser/ident.c' l='103' c='canonical_name'/>
+<use f='codebrowser/ident.c' l='103' u='r' c='canonical_name'/>
+<use f='codebrowser/ident.c' l='103' u='r' c='canonical_name'/>
+<use f='codebrowser/ident.c' l='104' u='r' c='canonical_name'/>

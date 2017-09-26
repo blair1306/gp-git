@@ -1,0 +1,6 @@
+<def f='codebrowser/hashmap.h' l='383' ll='388' type='void * hashmap_iter_first(struct hashmap * map, struct hashmap_iter * iter)'/>
+<doc f='codebrowser/hashmap.h' l='382'>/* Initializes the iterator and returns the first entry, if any. */</doc>
+<use f='codebrowser/builtin/describe.c' l='316' u='c' c='describe'/>
+<use f='codebrowser/submodule-config.c' l='501' u='c' c='config_from'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='43' u='c' c='dump_run'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='49' u='c' c='dump_run'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/git-compat-util.h' l='114'/>
+<use f='codebrowser/builtin/config.c' l='551' u='c'/>
+<use f='codebrowser/builtin/config.c' l='561' u='c'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='64' u='c'/>
+<use f='codebrowser/sha1_name.c' l='398' u='c'/>

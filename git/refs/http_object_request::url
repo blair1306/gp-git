@@ -1,0 +1,11 @@
+<dec f='codebrowser/http.h' l='214' type='char *'/>
+<offset>0</offset>
+<use f='codebrowser/http-walker.c' l='523' u='r' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='524' u='r' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='542' u='r' c='fetch_object'/>
+<use f='codebrowser/http.c' l='2200' u='w' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2250' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2268' u='r' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2329' u='r' c='release_http_object_request'/>
+<use f='codebrowser/http.c' l='2330' u='r' c='release_http_object_request'/>
+<use f='codebrowser/http.c' l='2330' u='w' c='release_http_object_request'/>

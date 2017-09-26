@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1492' type='struct index_state *'/>
+<offset>0</offset>
+<use f='codebrowser/apply.c' l='3337' u='w' c='checkout_target'/>
+<use f='codebrowser/builtin/checkout-index.c' l='208' u='w' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout.c' l='360' u='w' c='checkout_paths'/>
+<use f='codebrowser/entry.c' l='217' u='r' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='342' u='r' c='write_entry'/>
+<use f='codebrowser/entry.c' l='347' u='r' c='write_entry'/>
+<use f='codebrowser/unpack-trees.c' l='361' u='w' c='check_updates'/>

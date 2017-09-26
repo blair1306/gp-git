@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin.h' l='100' type='const char []'/>
+<use f='codebrowser/builtin/help.c' l='472' u='r' c='cmd_help'/>
+<use f='codebrowser/builtin/help.c' l='482' u='r' c='cmd_help'/>
+<def f='codebrowser/git.c' l='14' ll='15' type='const char [181]'/>
+<use f='codebrowser/git.c' l='665' u='r' c='cmd_main'/>

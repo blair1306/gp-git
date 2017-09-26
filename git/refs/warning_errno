@@ -1,0 +1,24 @@
+<dec f='codebrowser/git-compat-util.h' l='422' type='void warning_errno(const char * err)'/>
+<use f='codebrowser/bisect.c' l='866' u='c' c='check_good_are_ancestors_of_bad'/>
+<use f='codebrowser/builtin/clean.c' l='181' u='c' c='remove_dirs'/>
+<use f='codebrowser/builtin/clean.c' l='217' u='c' c='remove_dirs'/>
+<use f='codebrowser/builtin/clean.c' l='241' u='c' c='remove_dirs'/>
+<use f='codebrowser/builtin/clean.c' l='1034' u='c' c='cmd_clean'/>
+<use f='codebrowser/builtin/difftool.c' l='640' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/help.c' l='133' u='c' c='exec_woman_emacs'/>
+<use f='codebrowser/builtin/help.c' l='154' u='c' c='exec_man_konqueror'/>
+<use f='codebrowser/builtin/help.c' l='163' u='c' c='exec_man_man'/>
+<use f='codebrowser/builtin/pack-objects.c' l='851' u='c' c='write_pack_file'/>
+<use f='codebrowser/builtin/pack-objects.c' l='859' u='c' c='write_pack_file'/>
+<use f='codebrowser/builtin/rm.c' l='134' u='c' c='check_local_mod'/>
+<use f='codebrowser/credential-cache--daemon.c' l='183' u='c' c='serve_cache_loop'/>
+<use f='codebrowser/credential-cache--daemon.c' l='188' u='c' c='serve_cache_loop'/>
+<use f='codebrowser/ident.c' l='82' u='c' c='add_mailname_host'/>
+<use f='codebrowser/ident.c' l='125' u='c' c='add_domainname'/>
+<use f='codebrowser/read-cache.c' l='2407' u='c' c='clean_shared_index_files'/>
+<use f='codebrowser/rerere.c' l='687' u='c' c='merge'/>
+<use f='codebrowser/sequencer.c' l='331' u='c' c='read_oneliner'/>
+<use f='codebrowser/sha1_file.c' l='3367' u='c' c='write_loose_object'/>
+<def f='codebrowser/usage.c' l='194' ll='202' type='void warning_errno(const char * warn)'/>
+<use f='codebrowser/wrapper.c' l='424' u='c' c='warn_on_inaccessible'/>
+<use f='codebrowser/wrapper.c' l='572' u='c' c='warn_if_unremovable'/>

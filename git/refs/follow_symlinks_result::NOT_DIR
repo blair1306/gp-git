@@ -1,0 +1,8 @@
+<dec f='codebrowser/tree-walk.h' l='60' type='-4'/>
+<doc f='codebrowser/tree-walk.h' l='60'>/*
+		       * Somewhere along the symlink chain, a path is
+		       * requested which contains a file as a
+		       * non-final element.
+		       */</doc>
+<use f='codebrowser/builtin/cat-file.c' l='381' c='batch_one_object'/>
+<use f='codebrowser/tree-walk.c' l='695' u='r' c='get_tree_entry_follow_symlinks'/>

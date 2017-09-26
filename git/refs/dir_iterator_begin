@@ -1,0 +1,12 @@
+<dec f='codebrowser/dir-iterator.h' l='68' type='struct dir_iterator * dir_iterator_begin(const char * path)'/>
+<def f='codebrowser/dir-iterator.c' l='185' ll='202' type='struct dir_iterator * dir_iterator_begin(const char * path)'/>
+<doc f='codebrowser/dir-iterator.h' l='59'>/*
+ * Start a directory iteration over path. Return a dir_iterator that
+ * holds the internal state of the iteration.
+ *
+ * The iteration includes all paths under path, not including path
+ * itself and not including &quot;.&quot; or &quot;..&quot; entries.
+ *
+ * path is the starting directory. An internal copy will be made.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='2069' u='c' c='files_reflog_iterator_begin'/>

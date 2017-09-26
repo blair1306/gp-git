@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>versioncmp.c source code [codebrowser/versioncmp.c] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="suffix_match "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/versioncmp.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='versioncmp.c.html'>versioncmp.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="config.h.html">"config.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="string-list.h.html">"string-list.h"</a></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><i>/*</i></td></tr>
+<tr><th id="6">6</th><td><i> * versioncmp(): copied from string/strverscmp.c in glibc commit</i></td></tr>
+<tr><th id="7">7</th><td><i> * ee9247c38a8def24a59eb5cfb7196a98bef8cfdc, reformatted to Git coding</i></td></tr>
+<tr><th id="8">8</th><td><i> * style. The implementation is under LGPL-2.1 and Git relicenses it</i></td></tr>
+<tr><th id="9">9</th><td><i> * to GPLv2.</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><i>/*</i></td></tr>
+<tr><th id="13">13</th><td><i> * states: S_N: normal, S_I: comparing integral part, S_F: comparing</i></td></tr>
+<tr><th id="14">14</th><td><i> * fractionnal parts, S_Z: idem but with leading Zeroes only</i></td></tr>
+<tr><th id="15">15</th><td><i> */</i></td></tr>
+<tr><th id="16">16</th><td><u>#define  <dfn class="macro" id="_M/S_N" data-ref="_M/S_N">S_N</dfn>    0x0</u></td></tr>
+<tr><th id="17">17</th><td><u>#define  <dfn class="macro" id="_M/S_I" data-ref="_M/S_I">S_I</dfn>    0x3</u></td></tr>
+<tr><th id="18">18</th><td><u>#define  <dfn class="macro" id="_M/S_F" data-ref="_M/S_F">S_F</dfn>    0x6</u></td></tr>
+<tr><th id="19">19</th><td><u>#define  <dfn class="macro" id="_M/S_Z" data-ref="_M/S_Z">S_Z</dfn>    0x9</u></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><i>/* result_type: CMP: return diff; LEN: compare using len_diff/diff */</i></td></tr>
+<tr><th id="22">22</th><td><u>#define  <dfn class="macro" id="_M/CMP" data-ref="_M/CMP">CMP</dfn>    2</u></td></tr>
+<tr><th id="23">23</th><td><u>#define  <dfn class="macro" id="_M/LEN" data-ref="_M/LEN">LEN</dfn>    3</u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><em>static</em> <em>const</em> <b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="tu decl def" id="prereleases" title='prereleases' data-type='const struct string_list *' data-ref="prereleases">prereleases</dfn>;</td></tr>
+<tr><th id="26">26</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="initialized" title='initialized' data-type='int' data-ref="initialized">initialized</dfn>;</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>struct</b> <dfn class="type def" id="suffix_match" title='suffix_match' data-ref="suffix_match">suffix_match</dfn> {</td></tr>
+<tr><th id="29">29</th><td>	<em>int</em> <dfn class="tu decl" id="suffix_match::conf_pos" title='suffix_match::conf_pos' data-type='int' data-ref="suffix_match::conf_pos">conf_pos</dfn>;</td></tr>
+<tr><th id="30">30</th><td>	<em>int</em> <dfn class="tu decl" id="suffix_match::start" title='suffix_match::start' data-type='int' data-ref="suffix_match::start">start</dfn>;</td></tr>
+<tr><th id="31">31</th><td>	<em>int</em> <dfn class="tu decl" id="suffix_match::len" title='suffix_match::len' data-type='int' data-ref="suffix_match::len">len</dfn>;</td></tr>
+<tr><th id="32">32</th><td>};</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="find_better_matching_suffix" title='find_better_matching_suffix' data-type='void find_better_matching_suffix(const char * tagname, const char * suffix, int suffix_len, int start, int conf_pos, struct suffix_match * match)' data-ref="find_better_matching_suffix">find_better_matching_suffix</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1tagname" title='tagname' data-type='const char *' data-ref="1tagname">tagname</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2suffix" title='suffix' data-type='const char *' data-ref="2suffix">suffix</dfn>,</td></tr>
+<tr><th id="35">35</th><td>					<em>int</em> <dfn class="local col3 decl" id="3suffix_len" title='suffix_len' data-type='int' data-ref="3suffix_len">suffix_len</dfn>, <em>int</em> <dfn class="local col4 decl" id="4start" title='start' data-type='int' data-ref="4start">start</dfn>, <em>int</em> <dfn class="local col5 decl" id="5conf_pos" title='conf_pos' data-type='int' data-ref="5conf_pos">conf_pos</dfn>,</td></tr>
+<tr><th id="36">36</th><td>					<b>struct</b> <a class="type" href="#suffix_match" title='suffix_match' data-ref="suffix_match">suffix_match</a> *<dfn class="local col6 decl" id="6match" title='match' data-type='struct suffix_match *' data-ref="6match">match</dfn>)</td></tr>
+<tr><th id="37">37</th><td>{</td></tr>
+<tr><th id="38">38</th><td>	<i>/*</i></td></tr>
+<tr><th id="39">39</th><td><i>	 * A better match either starts earlier or starts at the same offset</i></td></tr>
+<tr><th id="40">40</th><td><i>	 * but is longer.</i></td></tr>
+<tr><th id="41">41</th><td><i>	 */</i></td></tr>
+<tr><th id="42">42</th><td>	<em>int</em> <dfn class="local col7 decl" id="7end" title='end' data-type='int' data-ref="7end">end</dfn> = <a class="local col6 ref" href="#6match" title='match' data-ref="6match">match</a>-&gt;<a class="tu ref" href="#suffix_match::len" title='suffix_match::len' data-use='r' data-ref="suffix_match::len">len</a> &lt; <a class="local col3 ref" href="#3suffix_len" title='suffix_len' data-ref="3suffix_len">suffix_len</a> ? <a class="local col6 ref" href="#6match" title='match' data-ref="6match">match</a>-&gt;<a class="tu ref" href="#suffix_match::start" title='suffix_match::start' data-use='r' data-ref="suffix_match::start">start</a> : <a class="local col6 ref" href="#6match" title='match' data-ref="6match">match</a>-&gt;<a class="tu ref" href="#suffix_match::start" title='suffix_match::start' data-use='r' data-ref="suffix_match::start">start</a>-<var>1</var>;</td></tr>
+<tr><th id="43">43</th><td>	<em>int</em> <dfn class="local col8 decl" id="8i" title='i' data-type='int' data-ref="8i">i</dfn>;</td></tr>
+<tr><th id="44">44</th><td>	<b>for</b> (<a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a> = <a class="local col4 ref" href="#4start" title='start' data-ref="4start">start</a>; <a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a> &lt;= <a class="local col7 ref" href="#7end" title='end' data-ref="7end">end</a>; <a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>++)</td></tr>
+<tr><th id="45">45</th><td>		<b>if</b> (<a class="ref" href="git-compat-util.h.html#starts_with" title='starts_with' data-ref="starts_with">starts_with</a>(<a class="local col1 ref" href="#1tagname" title='tagname' data-ref="1tagname">tagname</a> + <a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>, <a class="local col2 ref" href="#2suffix" title='suffix' data-ref="2suffix">suffix</a>)) {</td></tr>
+<tr><th id="46">46</th><td>			<a class="local col6 ref" href="#6match" title='match' data-ref="6match">match</a>-&gt;<a class="tu ref" href="#suffix_match::conf_pos" title='suffix_match::conf_pos' data-use='w' data-ref="suffix_match::conf_pos">conf_pos</a> = <a class="local col5 ref" href="#5conf_pos" title='conf_pos' data-ref="5conf_pos">conf_pos</a>;</td></tr>
+<tr><th id="47">47</th><td>			<a class="local col6 ref" href="#6match" title='match' data-ref="6match">match</a>-&gt;<a class="tu ref" href="#suffix_match::start" title='suffix_match::start' data-use='w' data-ref="suffix_match::start">start</a> = <a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>;</td></tr>
+<tr><th id="48">48</th><td>			<a class="local col6 ref" href="#6match" title='match' data-ref="6match">match</a>-&gt;<a class="tu ref" href="#suffix_match::len" title='suffix_match::len' data-use='w' data-ref="suffix_match::len">len</a> = <a class="local col3 ref" href="#3suffix_len" title='suffix_len' data-ref="3suffix_len">suffix_len</a>;</td></tr>
+<tr><th id="49">49</th><td>			<b>break</b>;</td></tr>
+<tr><th id="50">50</th><td>		}</td></tr>
+<tr><th id="51">51</th><td>}</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><i  data-doc="swap_prereleases">/*</i></td></tr>
+<tr><th id="54">54</th><td><i  data-doc="swap_prereleases"> * off is the offset of the first different character in the two strings</i></td></tr>
+<tr><th id="55">55</th><td><i  data-doc="swap_prereleases"> * s1 and s2. If either s1 or s2 contains a prerelease suffix containing</i></td></tr>
+<tr><th id="56">56</th><td><i  data-doc="swap_prereleases"> * that offset or a suffix ends right before that offset, then that</i></td></tr>
+<tr><th id="57">57</th><td><i  data-doc="swap_prereleases"> * string will be forced to be on top.</i></td></tr>
+<tr><th id="58">58</th><td><i  data-doc="swap_prereleases"> *</i></td></tr>
+<tr><th id="59">59</th><td><i  data-doc="swap_prereleases"> * If both s1 and s2 contain a (different) suffix around that position,</i></td></tr>
+<tr><th id="60">60</th><td><i  data-doc="swap_prereleases"> * their order is determined by the order of those two suffixes in the</i></td></tr>
+<tr><th id="61">61</th><td><i  data-doc="swap_prereleases"> * configuration.</i></td></tr>
+<tr><th id="62">62</th><td><i  data-doc="swap_prereleases"> * If any of the strings contains more than one different suffixes around</i></td></tr>
+<tr><th id="63">63</th><td><i  data-doc="swap_prereleases"> * that position, then that string is sorted according to the contained</i></td></tr>
+<tr><th id="64">64</th><td><i  data-doc="swap_prereleases"> * suffix which starts at the earliest offset in that string.</i></td></tr>
+<tr><th id="65">65</th><td><i  data-doc="swap_prereleases"> * If more than one different contained suffixes start at that earliest</i></td></tr>
+<tr><th id="66">66</th><td><i  data-doc="swap_prereleases"> * offset, then that string is sorted according to the longest of those</i></td></tr>
+<tr><th id="67">67</th><td><i  data-doc="swap_prereleases"> * suffixes.</i></td></tr>
+<tr><th id="68">68</th><td><i  data-doc="swap_prereleases"> *</i></td></tr>
+<tr><th id="69">69</th><td><i  data-doc="swap_prereleases"> * Return non-zero if *diff contains the return value for versioncmp()</i></td></tr>
+<tr><th id="70">70</th><td><i  data-doc="swap_prereleases"> */</i></td></tr>
+<tr><th id="71">71</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="swap_prereleases" title='swap_prereleases' data-type='int swap_prereleases(const char * s1, const char * s2, int off, int * diff)' data-ref="swap_prereleases">swap_prereleases</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="9s1" title='s1' data-type='const char *' data-ref="9s1">s1</dfn>,</td></tr>
+<tr><th id="72">72</th><td>			    <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10s2" title='s2' data-type='const char *' data-ref="10s2">s2</dfn>,</td></tr>
+<tr><th id="73">73</th><td>			    <em>int</em> <dfn class="local col1 decl" id="11off" title='off' data-type='int' data-ref="11off">off</dfn>,</td></tr>
+<tr><th id="74">74</th><td>			    <em>int</em> *<dfn class="local col2 decl" id="12diff" title='diff' data-type='int *' data-ref="12diff">diff</dfn>)</td></tr>
+<tr><th id="75">75</th><td>{</td></tr>
+<tr><th id="76">76</th><td>	<em>int</em> <dfn class="local col3 decl" id="13i" title='i' data-type='int' data-ref="13i">i</dfn>;</td></tr>
+<tr><th id="77">77</th><td>	<b>struct</b> <a class="type" href="#suffix_match" title='suffix_match' data-ref="suffix_match">suffix_match</a> <dfn class="local col4 decl" id="14match1" title='match1' data-type='struct suffix_match' data-ref="14match1">match1</dfn> = { -<var>1</var>, <a class="local col1 ref" href="#11off" title='off' data-ref="11off">off</a>, -<var>1</var> };</td></tr>
+<tr><th id="78">78</th><td>	<b>struct</b> <a class="type" href="#suffix_match" title='suffix_match' data-ref="suffix_match">suffix_match</a> <dfn class="local col5 decl" id="15match2" title='match2' data-type='struct suffix_match' data-ref="15match2">match2</dfn> = { -<var>1</var>, <a class="local col1 ref" href="#11off" title='off' data-ref="11off">off</a>, -<var>1</var> };</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>	<b>for</b> (<a class="local col3 ref" href="#13i" title='i' data-ref="13i">i</a> = <var>0</var>; <a class="local col3 ref" href="#13i" title='i' data-ref="13i">i</a> &lt; <a class="tu ref" href="#prereleases" title='prereleases' data-use='r' data-ref="prereleases">prereleases</a>-&gt;<a class="ref" href="string-list.h.html#string_list::nr" title='string_list::nr' data-ref="string_list::nr">nr</a>; <a class="local col3 ref" href="#13i" title='i' data-ref="13i">i</a>++) {</td></tr>
+<tr><th id="81">81</th><td>		<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="16suffix" title='suffix' data-type='const char *' data-ref="16suffix">suffix</dfn> = <a class="tu ref" href="#prereleases" title='prereleases' data-use='r' data-ref="prereleases">prereleases</a>-&gt;<a class="ref" href="string-list.h.html#string_list::items" title='string_list::items' data-ref="string_list::items">items</a>[<a class="local col3 ref" href="#13i" title='i' data-ref="13i">i</a>].<a class="ref" href="string-list.h.html#string_list_item::string" title='string_list_item::string' data-ref="string_list_item::string">string</a>;</td></tr>
+<tr><th id="82">82</th><td>		<em>int</em> <dfn class="local col7 decl" id="17start" title='start' data-type='int' data-ref="17start">start</dfn>, <dfn class="local col8 decl" id="18suffix_len" title='suffix_len' data-type='int' data-ref="18suffix_len">suffix_len</dfn> = <a class="ref" href="../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col6 ref" href="#16suffix" title='suffix' data-ref="16suffix">suffix</a>);</td></tr>
+<tr><th id="83">83</th><td>		<b>if</b> (<a class="local col8 ref" href="#18suffix_len" title='suffix_len' data-ref="18suffix_len">suffix_len</a> &lt; <a class="local col1 ref" href="#11off" title='off' data-ref="11off">off</a>)</td></tr>
+<tr><th id="84">84</th><td>			<a class="local col7 ref" href="#17start" title='start' data-ref="17start">start</a> = <a class="local col1 ref" href="#11off" title='off' data-ref="11off">off</a> - <a class="local col8 ref" href="#18suffix_len" title='suffix_len' data-ref="18suffix_len">suffix_len</a>;</td></tr>
+<tr><th id="85">85</th><td>		<b>else</b></td></tr>
+<tr><th id="86">86</th><td>			<a class="local col7 ref" href="#17start" title='start' data-ref="17start">start</a> = <var>0</var>;</td></tr>
+<tr><th id="87">87</th><td>		<a class="tu ref" href="#find_better_matching_suffix" title='find_better_matching_suffix' data-use='c' data-ref="find_better_matching_suffix">find_better_matching_suffix</a>(<a class="local col9 ref" href="#9s1" title='s1' data-ref="9s1">s1</a>, <a class="local col6 ref" href="#16suffix" title='suffix' data-ref="16suffix">suffix</a>, <a class="local col8 ref" href="#18suffix_len" title='suffix_len' data-ref="18suffix_len">suffix_len</a>, <a class="local col7 ref" href="#17start" title='start' data-ref="17start">start</a>,</td></tr>
+<tr><th id="88">88</th><td>					    <a class="local col3 ref" href="#13i" title='i' data-ref="13i">i</a>, &amp;<a class="local col4 ref" href="#14match1" title='match1' data-ref="14match1">match1</a>);</td></tr>
+<tr><th id="89">89</th><td>		<a class="tu ref" href="#find_better_matching_suffix" title='find_better_matching_suffix' data-use='c' data-ref="find_better_matching_suffix">find_better_matching_suffix</a>(<a class="local col0 ref" href="#10s2" title='s2' data-ref="10s2">s2</a>, <a class="local col6 ref" href="#16suffix" title='suffix' data-ref="16suffix">suffix</a>, <a class="local col8 ref" href="#18suffix_len" title='suffix_len' data-ref="18suffix_len">suffix_len</a>, <a class="local col7 ref" href="#17start" title='start' data-ref="17start">start</a>,</td></tr>
+<tr><th id="90">90</th><td>					    <a class="local col3 ref" href="#13i" title='i' data-ref="13i">i</a>, &amp;<a class="local col5 ref" href="#15match2" title='match2' data-ref="15match2">match2</a>);</td></tr>
+<tr><th id="91">91</th><td>	}</td></tr>
+<tr><th id="92">92</th><td>	<b>if</b> (<a class="local col4 ref" href="#14match1" title='match1' data-ref="14match1">match1</a>.<a class="tu ref" href="#suffix_match::conf_pos" title='suffix_match::conf_pos' data-use='r' data-ref="suffix_match::conf_pos">conf_pos</a> == -<var>1</var> &amp;&amp; <a class="local col5 ref" href="#15match2" title='match2' data-ref="15match2">match2</a>.<a class="tu ref" href="#suffix_match::conf_pos" title='suffix_match::conf_pos' data-use='r' data-ref="suffix_match::conf_pos">conf_pos</a> == -<var>1</var>)</td></tr>
+<tr><th id="93">93</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="94">94</th><td>	<b>if</b> (<a class="local col4 ref" href="#14match1" title='match1' data-ref="14match1">match1</a>.<a class="tu ref" href="#suffix_match::conf_pos" title='suffix_match::conf_pos' data-use='r' data-ref="suffix_match::conf_pos">conf_pos</a> == <a class="local col5 ref" href="#15match2" title='match2' data-ref="15match2">match2</a>.<a class="tu ref" href="#suffix_match::conf_pos" title='suffix_match::conf_pos' data-use='r' data-ref="suffix_match::conf_pos">conf_pos</a>)</td></tr>
+<tr><th id="95">95</th><td>		<i>/* Found the same suffix in both, e.g. "-rc" in "v1.0-rcX"</i></td></tr>
+<tr><th id="96">96</th><td><i>		 * and "v1.0-rcY": the caller should decide based on "X"</i></td></tr>
+<tr><th id="97">97</th><td><i>		 * and "Y". */</i></td></tr>
+<tr><th id="98">98</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td>	<b>if</b> (<a class="local col4 ref" href="#14match1" title='match1' data-ref="14match1">match1</a>.<a class="tu ref" href="#suffix_match::conf_pos" title='suffix_match::conf_pos' data-use='r' data-ref="suffix_match::conf_pos">conf_pos</a> &gt;= <var>0</var> &amp;&amp; <a class="local col5 ref" href="#15match2" title='match2' data-ref="15match2">match2</a>.<a class="tu ref" href="#suffix_match::conf_pos" title='suffix_match::conf_pos' data-use='r' data-ref="suffix_match::conf_pos">conf_pos</a> &gt;= <var>0</var>)</td></tr>
+<tr><th id="101">101</th><td>		*<a class="local col2 ref" href="#12diff" title='diff' data-ref="12diff">diff</a> = <a class="local col4 ref" href="#14match1" title='match1' data-ref="14match1">match1</a>.<a class="tu ref" href="#suffix_match::conf_pos" title='suffix_match::conf_pos' data-use='r' data-ref="suffix_match::conf_pos">conf_pos</a> - <a class="local col5 ref" href="#15match2" title='match2' data-ref="15match2">match2</a>.<a class="tu ref" href="#suffix_match::conf_pos" title='suffix_match::conf_pos' data-use='r' data-ref="suffix_match::conf_pos">conf_pos</a>;</td></tr>
+<tr><th id="102">102</th><td>	<b>else</b> <b>if</b> (<a class="local col4 ref" href="#14match1" title='match1' data-ref="14match1">match1</a>.<a class="tu ref" href="#suffix_match::conf_pos" title='suffix_match::conf_pos' data-use='r' data-ref="suffix_match::conf_pos">conf_pos</a> &gt;= <var>0</var>)</td></tr>
+<tr><th id="103">103</th><td>		*<a class="local col2 ref" href="#12diff" title='diff' data-ref="12diff">diff</a> = -<var>1</var>;</td></tr>
+<tr><th id="104">104</th><td>	<b>else</b> <i>/* if (match2.conf_pos &gt;= 0) */</i></td></tr>
+<tr><th id="105">105</th><td>		*<a class="local col2 ref" href="#12diff" title='diff' data-ref="12diff">diff</a> = <var>1</var>;</td></tr>
+<tr><th id="106">106</th><td>	<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="107">107</th><td>}</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><i>/*</i></td></tr>
+<tr><th id="110">110</th><td><i> * Compare S1 and S2 as strings holding indices/version numbers,</i></td></tr>
+<tr><th id="111">111</th><td><i> * returning less than, equal to or greater than zero if S1 is less</i></td></tr>
+<tr><th id="112">112</th><td><i> * than, equal to or greater than S2 (for more info, see the texinfo</i></td></tr>
+<tr><th id="113">113</th><td><i> * doc).</i></td></tr>
+<tr><th id="114">114</th><td><i> */</i></td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><em>int</em> <dfn class="decl def" id="versioncmp" title='versioncmp' data-ref="versioncmp">versioncmp</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="19s1" title='s1' data-type='const char *' data-ref="19s1">s1</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="20s2" title='s2' data-type='const char *' data-ref="20s2">s2</dfn>)</td></tr>
+<tr><th id="117">117</th><td>{</td></tr>
+<tr><th id="118">118</th><td>	<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col1 decl" id="21p1" title='p1' data-type='const unsigned char *' data-ref="21p1">p1</dfn> = (<em>const</em> <em>unsigned</em> <em>char</em> *) <a class="local col9 ref" href="#19s1" title='s1' data-ref="19s1">s1</a>;</td></tr>
+<tr><th id="119">119</th><td>	<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col2 decl" id="22p2" title='p2' data-type='const unsigned char *' data-ref="22p2">p2</dfn> = (<em>const</em> <em>unsigned</em> <em>char</em> *) <a class="local col0 ref" href="#20s2" title='s2' data-ref="20s2">s2</a>;</td></tr>
+<tr><th id="120">120</th><td>	<em>unsigned</em> <em>char</em> <dfn class="local col3 decl" id="23c1" title='c1' data-type='unsigned char' data-ref="23c1">c1</dfn>, <dfn class="local col4 decl" id="24c2" title='c2' data-type='unsigned char' data-ref="24c2">c2</dfn>;</td></tr>
+<tr><th id="121">121</th><td>	<em>int</em> <dfn class="local col5 decl" id="25state" title='state' data-type='int' data-ref="25state">state</dfn>, <dfn class="local col6 decl" id="26diff" title='diff' data-type='int' data-ref="26diff">diff</dfn>;</td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td>	<i>/*</i></td></tr>
+<tr><th id="124">124</th><td><i>	 * Symbol(s)    0       [1-9]   others</i></td></tr>
+<tr><th id="125">125</th><td><i>	 * Transition   (10) 0  (01) d  (00) x</i></td></tr>
+<tr><th id="126">126</th><td><i>	 */</i></td></tr>
+<tr><th id="127">127</th><td>	<em>static</em> <em>const</em> <a class="typedef" href="../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> <dfn class="local col7 decl" id="27next_state" title='next_state' data-type='const uint8_t [12]' data-ref="27next_state">next_state</dfn>[] = {</td></tr>
+<tr><th id="128">128</th><td>		<i>/* state    x    d    0  */</i></td></tr>
+<tr><th id="129">129</th><td>		<i>/* S_N */</i>  <a class="macro" href="#16" title="0x0" data-ref="_M/S_N">S_N</a>, <a class="macro" href="#17" title="0x3" data-ref="_M/S_I">S_I</a>, <a class="macro" href="#19" title="0x9" data-ref="_M/S_Z">S_Z</a>,</td></tr>
+<tr><th id="130">130</th><td>		<i>/* S_I */</i>  <a class="macro" href="#16" title="0x0" data-ref="_M/S_N">S_N</a>, <a class="macro" href="#17" title="0x3" data-ref="_M/S_I">S_I</a>, <a class="macro" href="#17" title="0x3" data-ref="_M/S_I">S_I</a>,</td></tr>
+<tr><th id="131">131</th><td>		<i>/* S_F */</i>  <a class="macro" href="#16" title="0x0" data-ref="_M/S_N">S_N</a>, <a class="macro" href="#18" title="0x6" data-ref="_M/S_F">S_F</a>, <a class="macro" href="#18" title="0x6" data-ref="_M/S_F">S_F</a>,</td></tr>
+<tr><th id="132">132</th><td>		<i>/* S_Z */</i>  <a class="macro" href="#16" title="0x0" data-ref="_M/S_N">S_N</a>, <a class="macro" href="#18" title="0x6" data-ref="_M/S_F">S_F</a>, <a class="macro" href="#19" title="0x9" data-ref="_M/S_Z">S_Z</a></td></tr>
+<tr><th id="133">133</th><td>	};</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>	<em>static</em> <em>const</em> <a class="typedef" href="../include/x86_64-linux-gnu/sys/types.h.html#194" title='int8_t' data-type='signed char' data-ref="int8_t">int8_t</a> <dfn class="local col8 decl" id="28result_type" title='result_type' data-type='const int8_t [36]' data-ref="28result_type">result_type</dfn>[] = {</td></tr>
+<tr><th id="136">136</th><td>		<i>/* state   x/x  x/d  x/0  d/x  d/d  d/0  0/x  0/d  0/0  */</i></td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td>		<i>/* S_N */</i>  <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#23" title="3" data-ref="_M/LEN">LEN</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>,</td></tr>
+<tr><th id="139">139</th><td>		<i>/* S_I */</i>  <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, -<var>1</var>,  -<var>1</var>,  +<var>1</var>,  <a class="macro" href="#23" title="3" data-ref="_M/LEN">LEN</a>, <a class="macro" href="#23" title="3" data-ref="_M/LEN">LEN</a>, +<var>1</var>,  <a class="macro" href="#23" title="3" data-ref="_M/LEN">LEN</a>, <a class="macro" href="#23" title="3" data-ref="_M/LEN">LEN</a>,</td></tr>
+<tr><th id="140">140</th><td>		<i>/* S_F */</i>  <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>,</td></tr>
+<tr><th id="141">141</th><td>		<i>/* S_Z */</i>  <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, +<var>1</var>,  +<var>1</var>,  -<var>1</var>,  <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, -<var>1</var>,  <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>, <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a></td></tr>
+<tr><th id="142">142</th><td>	};</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td>	<b>if</b> (<a class="local col1 ref" href="#21p1" title='p1' data-ref="21p1">p1</a> == <a class="local col2 ref" href="#22p2" title='p2' data-ref="22p2">p2</a>)</td></tr>
+<tr><th id="145">145</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>	<a class="local col3 ref" href="#23c1" title='c1' data-ref="23c1">c1</a> = *<a class="local col1 ref" href="#21p1" title='p1' data-ref="21p1">p1</a>++;</td></tr>
+<tr><th id="148">148</th><td>	<a class="local col4 ref" href="#24c2" title='c2' data-ref="24c2">c2</a> = *<a class="local col2 ref" href="#22p2" title='p2' data-ref="22p2">p2</a>++;</td></tr>
+<tr><th id="149">149</th><td>	<i>/* Hint: '0' is a digit too.  */</i></td></tr>
+<tr><th id="150">150</th><td>	<a class="local col5 ref" href="#25state" title='state' data-ref="25state">state</a> = <a class="macro" href="#16" title="0x0" data-ref="_M/S_N">S_N</a> + ((<a class="local col3 ref" href="#23c1" title='c1' data-ref="23c1">c1</a> == <kbd>'0'</kbd>) + (<a class="macro" href="git-compat-util.h.html#947" title="((sane_ctype[(unsigned char)(c1)] &amp; (0x02)) != 0)" data-ref="_M/isdigit">isdigit</a> (<a class="local col3 ref" href="#23c1" title='c1' data-ref="23c1">c1</a>) != <var>0</var>));</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td>	<b>while</b> ((<a class="local col6 ref" href="#26diff" title='diff' data-ref="26diff">diff</a> = <a class="local col3 ref" href="#23c1" title='c1' data-ref="23c1">c1</a> - <a class="local col4 ref" href="#24c2" title='c2' data-ref="24c2">c2</a>) == <var>0</var>) {</td></tr>
+<tr><th id="153">153</th><td>		<b>if</b> (<a class="local col3 ref" href="#23c1" title='c1' data-ref="23c1">c1</a> == <kbd>'\0'</kbd>)</td></tr>
+<tr><th id="154">154</th><td>			<b>return</b> <a class="local col6 ref" href="#26diff" title='diff' data-ref="26diff">diff</a>;</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td>		<a class="local col5 ref" href="#25state" title='state' data-ref="25state">state</a> = <a class="local col7 ref" href="#27next_state" title='next_state' data-ref="27next_state">next_state</a>[<a class="local col5 ref" href="#25state" title='state' data-ref="25state">state</a>];</td></tr>
+<tr><th id="157">157</th><td>		<a class="local col3 ref" href="#23c1" title='c1' data-ref="23c1">c1</a> = *<a class="local col1 ref" href="#21p1" title='p1' data-ref="21p1">p1</a>++;</td></tr>
+<tr><th id="158">158</th><td>		<a class="local col4 ref" href="#24c2" title='c2' data-ref="24c2">c2</a> = *<a class="local col2 ref" href="#22p2" title='p2' data-ref="22p2">p2</a>++;</td></tr>
+<tr><th id="159">159</th><td>		<a class="local col5 ref" href="#25state" title='state' data-ref="25state">state</a> += (<a class="local col3 ref" href="#23c1" title='c1' data-ref="23c1">c1</a> == <kbd>'0'</kbd>) + (<a class="macro" href="git-compat-util.h.html#947" title="((sane_ctype[(unsigned char)(c1)] &amp; (0x02)) != 0)" data-ref="_M/isdigit">isdigit</a> (<a class="local col3 ref" href="#23c1" title='c1' data-ref="23c1">c1</a>) != <var>0</var>);</td></tr>
+<tr><th id="160">160</th><td>	}</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td>	<b>if</b> (!<a class="tu ref" href="#initialized" title='initialized' data-use='r' data-ref="initialized">initialized</a>) {</td></tr>
+<tr><th id="163">163</th><td>		<em>const</em> <b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="local col9 decl" id="29deprecated_prereleases" title='deprecated_prereleases' data-type='const struct string_list *' data-ref="29deprecated_prereleases">deprecated_prereleases</dfn>;</td></tr>
+<tr><th id="164">164</th><td>		<a class="tu ref" href="#initialized" title='initialized' data-use='w' data-ref="initialized">initialized</a> = <var>1</var>;</td></tr>
+<tr><th id="165">165</th><td>		<a class="tu ref" href="#prereleases" title='prereleases' data-use='w' data-ref="prereleases">prereleases</a> = <a class="ref" href="config.h.html#git_config_get_value_multi" title='git_config_get_value_multi' data-ref="git_config_get_value_multi">git_config_get_value_multi</a>(<q>"versionsort.suffix"</q>);</td></tr>
+<tr><th id="166">166</th><td>		<a class="local col9 ref" href="#29deprecated_prereleases" title='deprecated_prereleases' data-ref="29deprecated_prereleases">deprecated_prereleases</a> = <a class="ref" href="config.h.html#git_config_get_value_multi" title='git_config_get_value_multi' data-ref="git_config_get_value_multi">git_config_get_value_multi</a>(<q>"versionsort.prereleasesuffix"</q>);</td></tr>
+<tr><th id="167">167</th><td>		<b>if</b> (<a class="tu ref" href="#prereleases" title='prereleases' data-use='r' data-ref="prereleases">prereleases</a>) {</td></tr>
+<tr><th id="168">168</th><td>			<b>if</b> (<a class="local col9 ref" href="#29deprecated_prereleases" title='deprecated_prereleases' data-ref="29deprecated_prereleases">deprecated_prereleases</a>)</td></tr>
+<tr><th id="169">169</th><td>				<a class="ref" href="git-compat-util.h.html#warning" title='warning' data-ref="warning">warning</a>(<q>"ignoring versionsort.prereleasesuffix because versionsort.suffix is set"</q>);</td></tr>
+<tr><th id="170">170</th><td>		} <b>else</b></td></tr>
+<tr><th id="171">171</th><td>			<a class="tu ref" href="#prereleases" title='prereleases' data-use='w' data-ref="prereleases">prereleases</a> = <a class="local col9 ref" href="#29deprecated_prereleases" title='deprecated_prereleases' data-ref="29deprecated_prereleases">deprecated_prereleases</a>;</td></tr>
+<tr><th id="172">172</th><td>	}</td></tr>
+<tr><th id="173">173</th><td>	<b>if</b> (<a class="tu ref" href="#prereleases" title='prereleases' data-use='r' data-ref="prereleases">prereleases</a> &amp;&amp; <a class="tu ref" href="#swap_prereleases" title='swap_prereleases' data-use='c' data-ref="swap_prereleases">swap_prereleases</a>(<a class="local col9 ref" href="#19s1" title='s1' data-ref="19s1">s1</a>, <a class="local col0 ref" href="#20s2" title='s2' data-ref="20s2">s2</a>, (<em>const</em> <em>char</em> *) <a class="local col1 ref" href="#21p1" title='p1' data-ref="21p1">p1</a> - <a class="local col9 ref" href="#19s1" title='s1' data-ref="19s1">s1</a> - <var>1</var>,</td></tr>
+<tr><th id="174">174</th><td>					    &amp;<a class="local col6 ref" href="#26diff" title='diff' data-ref="26diff">diff</a>))</td></tr>
+<tr><th id="175">175</th><td>		<b>return</b> <a class="local col6 ref" href="#26diff" title='diff' data-ref="26diff">diff</a>;</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td>	<a class="local col5 ref" href="#25state" title='state' data-ref="25state">state</a> = <a class="local col8 ref" href="#28result_type" title='result_type' data-ref="28result_type">result_type</a>[<a class="local col5 ref" href="#25state" title='state' data-ref="25state">state</a> * <var>3</var> + (((<a class="local col4 ref" href="#24c2" title='c2' data-ref="24c2">c2</a> == <kbd>'0'</kbd>) + (<a class="macro" href="git-compat-util.h.html#947" title="((sane_ctype[(unsigned char)(c2)] &amp; (0x02)) != 0)" data-ref="_M/isdigit">isdigit</a> (<a class="local col4 ref" href="#24c2" title='c2' data-ref="24c2">c2</a>) != <var>0</var>)))];</td></tr>
+<tr><th id="178">178</th><td></td></tr>
+<tr><th id="179">179</th><td>	<b>switch</b> (<a class="local col5 ref" href="#25state" title='state' data-ref="25state">state</a>) {</td></tr>
+<tr><th id="180">180</th><td>	<b>case</b> <a class="macro" href="#22" title="2" data-ref="_M/CMP">CMP</a>:</td></tr>
+<tr><th id="181">181</th><td>		<b>return</b> <a class="local col6 ref" href="#26diff" title='diff' data-ref="26diff">diff</a>;</td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td>	<b>case</b> <a class="macro" href="#23" title="3" data-ref="_M/LEN">LEN</a>:</td></tr>
+<tr><th id="184">184</th><td>		<b>while</b> (<a class="macro" href="git-compat-util.h.html#947" title="((sane_ctype[(unsigned char)(*p1++)] &amp; (0x02)) != 0)" data-ref="_M/isdigit">isdigit</a> (*<a class="local col1 ref" href="#21p1" title='p1' data-ref="21p1">p1</a>++))</td></tr>
+<tr><th id="185">185</th><td>			<b>if</b> (!<a class="macro" href="git-compat-util.h.html#947" title="((sane_ctype[(unsigned char)(*p2++)] &amp; (0x02)) != 0)" data-ref="_M/isdigit">isdigit</a> (*<a class="local col2 ref" href="#22p2" title='p2' data-ref="22p2">p2</a>++))</td></tr>
+<tr><th id="186">186</th><td>				<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td>		<b>return</b> <a class="macro" href="git-compat-util.h.html#947" title="((sane_ctype[(unsigned char)(*p2)] &amp; (0x02)) != 0)" data-ref="_M/isdigit">isdigit</a> (*<a class="local col2 ref" href="#22p2" title='p2' data-ref="22p2">p2</a>) ? -<var>1</var> : <a class="local col6 ref" href="#26diff" title='diff' data-ref="26diff">diff</a>;</td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td>	<b>default</b>:</td></tr>
+<tr><th id="191">191</th><td>		<b>return</b> <a class="local col5 ref" href="#25state" title='state' data-ref="25state">state</a>;</td></tr>
+<tr><th id="192">192</th><td>	}</td></tr>
+<tr><th id="193">193</th><td>}</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

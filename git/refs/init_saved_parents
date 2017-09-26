@@ -1,0 +1,2 @@
+<def f='codebrowser/revision.c' l='3025' macro='1' type='void init_saved_parents(struct saved_parents * s)'/>
+<use f='codebrowser/revision.c' l='3039' u='c' c='save_parents'/>

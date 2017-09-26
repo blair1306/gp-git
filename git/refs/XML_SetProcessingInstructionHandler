@@ -1,0 +1,1 @@
+<dec f='include/expat.h' l='551' type='void XML_SetProcessingInstructionHandler(XML_Parser parser, XML_ProcessingInstructionHandler handler)'/>

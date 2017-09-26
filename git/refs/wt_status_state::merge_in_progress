@@ -1,0 +1,4 @@
+<dec f='codebrowser/wt-status.h' l='100' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/wt-status.c' l='1520' u='w' c='wt_status_get_state'/>
+<use f='codebrowser/wt-status.c' l='1543' u='r' c='wt_longstatus_print_state'/>

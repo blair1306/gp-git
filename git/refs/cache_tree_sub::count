@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache-tree.h' l='11' type='int'/>
+<offset>64</offset>
+<doc f='codebrowser/cache-tree.h' l='11'>/* internally used by update_one() */</doc>
+<use f='codebrowser/cache-tree.c' l='306' u='w' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='341' u='r' c='update_one'/>

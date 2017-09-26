@@ -1,0 +1,8 @@
+<dec f='codebrowser/xdiff-interface.h' l='30' type='int'/>
+<use f='codebrowser/builtin/merge-file.c' l='56' u='r' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='57' u='r' c='cmd_merge_file'/>
+<use f='codebrowser/ll-merge.c' l='113' u='r' c='ll_xdl_merge'/>
+<use f='codebrowser/ll-merge.c' l='114' u='r' c='ll_xdl_merge'/>
+<def f='codebrowser/xdiff-interface.c' l='299' type='int'/>
+<use f='codebrowser/xdiff-interface.c' l='307' u='w' c='git_xmerge_config'/>
+<use f='codebrowser/xdiff-interface.c' l='309' u='w' c='git_xmerge_config'/>

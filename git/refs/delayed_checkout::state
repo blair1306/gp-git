@@ -1,0 +1,13 @@
+<dec f='codebrowser/convert.h' l='52' type='enum ce_delay_state'/>
+<offset>0</offset>
+<doc f='codebrowser/convert.h' l='46'>/*
+	 * State of the currently processed cache entry. If the state is
+	 * CE_CAN_DELAY, then the filter can delay the current cache entry.
+	 * If the state is CE_RETRY, then this signals the filter that the
+	 * cache entry was requested before.
+	 */</doc>
+<use f='codebrowser/convert.c' l='614' u='r' c='apply_multi_file_filter'/>
+<use f='codebrowser/entry.c' l='144' u='w' c='enable_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='170' u='w' c='finish_delayed_checkout'/>
+<use f='codebrowser/entry.c' l='283' u='r' c='write_entry'/>
+<use f='codebrowser/entry.c' l='285' u='r' c='write_entry'/>

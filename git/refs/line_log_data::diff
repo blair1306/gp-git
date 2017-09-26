@@ -1,0 +1,4 @@
+<dec f='codebrowser/line-log.h' l='54' type='struct diff_ranges'/>
+<offset>512</offset>
+<use f='codebrowser/line-log.c' l='880' u='a' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='1094' u='a' c='process_all_files'/>

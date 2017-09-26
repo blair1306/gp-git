@@ -1,0 +1,11 @@
+<dec f='codebrowser/revision.h' l='137' type='unsigned int'/>
+<offset>975</offset>
+<use f='codebrowser/builtin/log.c' l='245' u='r' c='show_early_header'/>
+<use f='codebrowser/builtin/log.c' l='246' u='w' c='show_early_header'/>
+<use f='codebrowser/builtin/log.c' l='598' u='r' c='cmd_show'/>
+<use f='codebrowser/builtin/log.c' l='605' u='w' c='cmd_show'/>
+<use f='codebrowser/builtin/log.c' l='617' u='r' c='cmd_show'/>
+<use f='codebrowser/builtin/log.c' l='625' u='w' c='cmd_show'/>
+<use f='codebrowser/builtin/log.c' l='1817' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='570' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='588' u='w' c='show_log'/>

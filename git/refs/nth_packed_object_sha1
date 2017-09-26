@@ -1,0 +1,20 @@
+<dec f='codebrowser/cache.h' l='1704' type='const unsigned char * nth_packed_object_sha1(struct packed_git * , uint32_t n)'/>
+<doc f='codebrowser/cache.h' l='1698'>/*
+ * Return the SHA-1 of the nth object within the specified packfile.
+ * Open the index if it is not already open.  The return value points
+ * at the SHA-1 within the mmapped index.  Return NULL if there is an
+ * error.
+ */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='1455' u='c' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2610' u='c' c='add_objects_in_unpacked_packs'/>
+<use f='codebrowser/pack-bitmap.c' l='227' u='c' c='load_bitmap_entries_v1'/>
+<use f='codebrowser/pack-bitmap.c' l='627' u='c' c='show_objects_for_type'/>
+<use f='codebrowser/pack-bitmap.c' l='1034' u='c' c='rebuild_existing_bitmaps'/>
+<use f='codebrowser/pack-check.c' l='96' u='c' c='verify_packfile'/>
+<use f='codebrowser/sha1_file.c' l='2114' u='c' c='get_delta_base_sha1'/>
+<use f='codebrowser/sha1_file.c' l='2153' u='c' c='retry_bad_packed_offset'/>
+<use f='codebrowser/sha1_file.c' l='2545' u='c' c='unpack_entry'/>
+<use f='codebrowser/sha1_file.c' l='2634' u='c' c='unpack_entry'/>
+<def f='codebrowser/sha1_file.c' l='2697' ll='2715' type='const unsigned char * nth_packed_object_sha1(struct packed_git * p, uint32_t n)'/>
+<use f='codebrowser/sha1_file.c' l='2721' u='c' c='nth_packed_object_oid'/>
+<use f='codebrowser/sha1_name.c' l='163' u='c' c='unique_in_pack'/>

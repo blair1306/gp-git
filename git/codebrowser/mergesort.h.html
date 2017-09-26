@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>mergesort.h source code [codebrowser/mergesort.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/mergesort.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='mergesort.h.html'>mergesort.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/MERGESORT_H">MERGESORT_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/MERGESORT_H" data-ref="_M/MERGESORT_H">MERGESORT_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/*</i></td></tr>
+<tr><th id="5">5</th><td><i> * Sort linked list in place.</i></td></tr>
+<tr><th id="6">6</th><td><i> * - get_next_fn() returns the next element given an element of a linked list.</i></td></tr>
+<tr><th id="7">7</th><td><i> * - set_next_fn() takes two elements A and B, and makes B the "next" element</i></td></tr>
+<tr><th id="8">8</th><td><i> *   of A on the list.</i></td></tr>
+<tr><th id="9">9</th><td><i> * - compare_fn() takes two elements A and B, and returns negative, 0, positive</i></td></tr>
+<tr><th id="10">10</th><td><i> *   as the same sign as "subtracting" B from A.</i></td></tr>
+<tr><th id="11">11</th><td><i> */</i></td></tr>
+<tr><th id="12">12</th><td><em>void</em> *<dfn class="decl" id="llist_mergesort" title='llist_mergesort' data-ref="llist_mergesort">llist_mergesort</dfn>(<em>void</em> *<dfn class="local col4 decl" id="14list" title='list' data-type='void *' data-ref="14list">list</dfn>,</td></tr>
+<tr><th id="13">13</th><td>		      <em>void</em> *(*<dfn class="local col5 decl" id="15get_next_fn" title='get_next_fn' data-type='void *(*)(const void *)' data-ref="15get_next_fn">get_next_fn</dfn>)(<em>const</em> <em>void</em> *),</td></tr>
+<tr><th id="14">14</th><td>		      <em>void</em> (*<dfn class="local col6 decl" id="16set_next_fn" title='set_next_fn' data-type='void (*)(void *, void *)' data-ref="16set_next_fn">set_next_fn</dfn>)(<em>void</em> *, <em>void</em> *),</td></tr>
+<tr><th id="15">15</th><td>		      <em>int</em> (*<dfn class="local col7 decl" id="17compare_fn" title='compare_fn' data-type='int (*)(const void *, const void *)' data-ref="17compare_fn">compare_fn</dfn>)(<em>const</em> <em>void</em> *, <em>const</em> <em>void</em> *));</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='blame.c.html'>codebrowser/blame.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

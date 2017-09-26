@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='321' type='int refs_for_each_rawref(struct ref_store * refs, each_ref_fn * fn, void * cb_data)'/>
+<doc f='codebrowser/refs.h' l='320'>/* can be used to learn about broken ref and symref */</doc>
+<def f='codebrowser/refs.c' l='1393' ll='1397' type='int refs_for_each_rawref(struct ref_store * refs, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='1401' u='c' c='for_each_rawref'/>
+<use f='codebrowser/refs/files-backend.c' l='2680' u='c' c='files_initial_transaction_commit'/>

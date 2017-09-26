@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='218' type='int report_path_error(const char * ps_matched, const struct pathspec * pathspec, const char * prefix)'/>
+<use f='codebrowser/builtin/checkout.c' l='325' u='c' c='checkout_paths'/>
+<use f='codebrowser/builtin/commit.c' l='274' u='c' c='list_paths'/>
+<use f='codebrowser/builtin/ls-files.c' l='673' u='c' c='cmd_ls_files'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='265' u='c' c='module_list_compute'/>
+<def f='codebrowser/dir.c' l='478' ll='517' type='int report_path_error(const char * ps_matched, const struct pathspec * pathspec, const char * prefix)'/>

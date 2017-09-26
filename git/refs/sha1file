@@ -1,0 +1,13 @@
+<def f='codebrowser/csum-file.h' l='7' ll='18'/>
+<size>10640</size>
+<doc f='codebrowser/csum-file.h' l='6'>/* A SHA1-protected file */</doc>
+<mbr r='sha1file::fd' o='0' t='int'/>
+<mbr r='sha1file::check_fd' o='32' t='int'/>
+<mbr r='sha1file::offset' o='64' t='unsigned int'/>
+<mbr r='sha1file::ctx' o='128' t='SHA1_CTX'/>
+<mbr r='sha1file::total' o='19328' t='off_t'/>
+<mbr r='sha1file::tp' o='19392' t='struct progress *'/>
+<mbr r='sha1file::name' o='19456' t='const char *'/>
+<mbr r='sha1file::do_crc' o='19520' t='int'/>
+<mbr r='sha1file::crc32' o='19552' t='uint32_t'/>
+<mbr r='sha1file::buffer' o='19584' t='unsigned char [8192]'/>

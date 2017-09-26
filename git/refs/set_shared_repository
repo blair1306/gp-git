@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='755' type='void set_shared_repository(int value)'/>
+<doc f='codebrowser/cache.h' l='749'>/*
+ * Accessors for the core.sharedrepository config which lazy-load the value
+ * from the config (if not already set). The &quot;reset&quot; function can be
+ * used to unset &quot;set&quot; or cached value, meaning that the value will be loaded
+ * fresh from the config file on the next call to get_shared_repository().
+ */</doc>
+<use f='codebrowser/builtin/init-db.c' l='209' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='507' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='519' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='537' u='c' c='cmd_init_db'/>
+<def f='codebrowser/environment.c' l='317' ll='321' type='void set_shared_repository(int value)'/>

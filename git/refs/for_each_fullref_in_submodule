@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs.h' l='307' type='int for_each_fullref_in_submodule(const char * submodule, const char * prefix, each_ref_fn * fn, void * cb_data, unsigned int broken)'/>
+<def f='codebrowser/refs.c' l='1362' ll='1372' type='int for_each_fullref_in_submodule(const char * submodule, const char * prefix, each_ref_fn * fn, void * cb_data, unsigned int broken)'/>
+<use f='codebrowser/revision.c' l='2075' u='c' c='for_each_bisect_ref'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/gpg-interface.h' l='28' type='void parse_gpg_output(struct signature_check * )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='649' u='c' c='prepare_push_cert_sha1'/>
+<def f='codebrowser/gpg-interface.c' l='38' ll='65' type='void parse_gpg_output(struct signature_check * sigc)'/>
+<use f='codebrowser/gpg-interface.c' l='83' u='c' c='check_signature'/>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/diff.h' l='377' type='size_t fill_textconv(struct userdiff_driver * driver, struct diff_filespec * df, char ** outbuf)'/>
+<doc f='codebrowser/diff.h' l='366'>/*
+ * Fill the contents of the filespec &quot;df&quot;, respecting any textconv defined by
+ * its userdiff driver.  The &quot;driver&quot; parameter must come from a
+ * previous call to get_textconv(), and therefore should either be NULL or have
+ * textconv enabled.
+ *
+ * Note that the memory ownership of the resulting buffer depends on whether
+ * the driver field is NULL. If it is, then the memory belongs to the filespec
+ * struct. If it is non-NULL, then &quot;outbuf&quot; points to a newly allocated buffer
+ * that should be freed by the caller.
+ */</doc>
+<use f='codebrowser/combine-diff.c' l='306' u='c' c='grab_blob'/>
+<use f='codebrowser/combine-diff.c' l='1026' u='c' c='show_patch_diff'/>
+<use f='codebrowser/diff.c' l='781' u='c' c='emit_rewrite_diff'/>
+<use f='codebrowser/diff.c' l='782' u='c' c='emit_rewrite_diff'/>
+<use f='codebrowser/diff.c' l='2490' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2491' u='c' c='builtin_diff'/>
+<def f='codebrowser/diff.c' l='5212' ll='5258' type='size_t fill_textconv(struct userdiff_driver * driver, struct diff_filespec * df, char ** outbuf)'/>
+<use f='codebrowser/diff.c' l='5278' u='c' c='textconv_object'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='149' u='c' c='pickaxe_match'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='150' u='c' c='pickaxe_match'/>
+<use f='codebrowser/grep.c' l='1612' u='c' c='fill_textconv_grep'/>

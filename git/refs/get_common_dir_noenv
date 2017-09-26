@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='486' type='int get_common_dir_noenv(struct strbuf * sb, const char * gitdir)'/>
+<use f='codebrowser/path.c' l='566' u='c' c='do_submodule_path'/>
+<use f='codebrowser/refs/files-backend.c' l='58' u='c' c='files_ref_store_create'/>
+<use f='codebrowser/repository.c' l='34' u='c' c='find_common_dir'/>
+<use f='codebrowser/setup.c' l='264' u='c' c='get_common_dir'/>
+<def f='codebrowser/setup.c' l='268' ll='295' type='int get_common_dir_noenv(struct strbuf * sb, const char * gitdir)'/>
+<use f='codebrowser/worktree.c' l='354' u='c' c='submodule_uses_worktrees'/>

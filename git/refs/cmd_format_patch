@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='167' type='int cmd_format_patch(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/log.c' l='1401' ll='1839' type='int cmd_format_patch(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='402'/>
+<use f='codebrowser/git.c' l='402'/>
+<use f='codebrowser/git.c' l='402'/>
+<use f='codebrowser/git.c' l='402'/>

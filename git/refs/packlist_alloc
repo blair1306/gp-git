@@ -1,0 +1,3 @@
+<dec f='codebrowser/pack-objects.h' l='53' type='struct object_entry * packlist_alloc(struct packing_data * pdata, const unsigned char * sha1, uint32_t index_pos)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1052' u='c' c='create_object_entry'/>
+<def f='codebrowser/pack-objects.c' l='89' ll='111' type='struct object_entry * packlist_alloc(struct packing_data * pdata, const unsigned char * sha1, uint32_t index_pos)'/>

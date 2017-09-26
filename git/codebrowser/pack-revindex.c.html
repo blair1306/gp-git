@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pack-revindex.c source code [codebrowser/pack-revindex.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/pack-revindex.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='pack-revindex.c.html'>pack-revindex.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="pack-revindex.h.html">"pack-revindex.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/*</i></td></tr>
+<tr><th id="5">5</th><td><i> * Pack index for existing packs give us easy access to the offsets into</i></td></tr>
+<tr><th id="6">6</th><td><i> * corresponding pack file where each object's data starts, but the entries</i></td></tr>
+<tr><th id="7">7</th><td><i> * do not store the size of the compressed representation (uncompressed</i></td></tr>
+<tr><th id="8">8</th><td><i> * size is easily available by examining the pack entry header).  It is</i></td></tr>
+<tr><th id="9">9</th><td><i> * also rather expensive to find the sha1 for an object given its offset.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * The pack index file is sorted by object name mapping to offset;</i></td></tr>
+<tr><th id="12">12</th><td><i> * this revindex array is a list of offset/index_nr pairs</i></td></tr>
+<tr><th id="13">13</th><td><i> * ordered by offset, so if you know the offset of an object, next offset</i></td></tr>
+<tr><th id="14">14</th><td><i> * is where its packed representation ends and the index_nr can be used to</i></td></tr>
+<tr><th id="15">15</th><td><i> * get the object sha1 from the main index.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><i  data-doc="sort_revindex">/*</i></td></tr>
+<tr><th id="19">19</th><td><i  data-doc="sort_revindex"> * This is a least-significant-digit radix sort.</i></td></tr>
+<tr><th id="20">20</th><td><i  data-doc="sort_revindex"> *</i></td></tr>
+<tr><th id="21">21</th><td><i  data-doc="sort_revindex"> * It sorts each of the "n" items in "entries" by its offset field. The "max"</i></td></tr>
+<tr><th id="22">22</th><td><i  data-doc="sort_revindex"> * parameter must be at least as large as the largest offset in the array,</i></td></tr>
+<tr><th id="23">23</th><td><i  data-doc="sort_revindex"> * and lets us quit the sort early.</i></td></tr>
+<tr><th id="24">24</th><td><i  data-doc="sort_revindex"> */</i></td></tr>
+<tr><th id="25">25</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="sort_revindex" title='sort_revindex' data-type='void sort_revindex(struct revindex_entry * entries, unsigned int n, off_t max)' data-ref="sort_revindex">sort_revindex</dfn>(<b>struct</b> <a class="type" href="pack-revindex.h.html#revindex_entry" title='revindex_entry' data-ref="revindex_entry">revindex_entry</a> *<dfn class="local col1 decl" id="1entries" title='entries' data-type='struct revindex_entry *' data-ref="1entries">entries</dfn>, <em>unsigned</em> <dfn class="local col2 decl" id="2n" title='n' data-type='unsigned int' data-ref="2n">n</dfn>, <a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col3 decl" id="3max" title='max' data-type='off_t' data-ref="3max">max</dfn>)</td></tr>
+<tr><th id="26">26</th><td>{</td></tr>
+<tr><th id="27">27</th><td>	<i>/*</i></td></tr>
+<tr><th id="28">28</th><td><i>	 * We use a "digit" size of 16 bits. That keeps our memory</i></td></tr>
+<tr><th id="29">29</th><td><i>	 * usage reasonable, and we can generally (for a 4G or smaller</i></td></tr>
+<tr><th id="30">30</th><td><i>	 * packfile) quit after two rounds of radix-sorting.</i></td></tr>
+<tr><th id="31">31</th><td><i>	 */</i></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/DIGIT_SIZE" data-ref="_M/DIGIT_SIZE">DIGIT_SIZE</dfn> (16)</u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/BUCKETS" data-ref="_M/BUCKETS">BUCKETS</dfn> (1 &lt;&lt; DIGIT_SIZE)</u></td></tr>
+<tr><th id="34">34</th><td>	<i>/*</i></td></tr>
+<tr><th id="35">35</th><td><i>	 * We want to know the bucket that a[i] will go into when we are using</i></td></tr>
+<tr><th id="36">36</th><td><i>	 * the digit that is N bits from the (least significant) end.</i></td></tr>
+<tr><th id="37">37</th><td><i>	 */</i></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/BUCKET_FOR" data-ref="_M/BUCKET_FOR">BUCKET_FOR</dfn>(a, i, bits) (((a)[(i)].<a class="ref" href="pack-revindex.h.html#revindex_entry::offset" title='revindex_entry::offset' data-ref="revindex_entry::offset">offset</a> &gt;&gt; (bits)) &amp; (BUCKETS-1))</u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>	<i>/*</i></td></tr>
+<tr><th id="41">41</th><td><i>	 * We need O(n) temporary storage. Rather than do an extra copy of the</i></td></tr>
+<tr><th id="42">42</th><td><i>	 * partial results into "entries", we sort back and forth between the</i></td></tr>
+<tr><th id="43">43</th><td><i>	 * real array and temporary storage. In each iteration of the loop, we</i></td></tr>
+<tr><th id="44">44</th><td><i>	 * keep track of them with alias pointers, always sorting from "from"</i></td></tr>
+<tr><th id="45">45</th><td><i>	 * to "to".</i></td></tr>
+<tr><th id="46">46</th><td><i>	 */</i></td></tr>
+<tr><th id="47">47</th><td>	<b>struct</b> <a class="type" href="pack-revindex.h.html#revindex_entry" title='revindex_entry' data-ref="revindex_entry">revindex_entry</a> *<dfn class="local col4 decl" id="4tmp" title='tmp' data-type='struct revindex_entry *' data-ref="4tmp">tmp</dfn>, *<dfn class="local col5 decl" id="5from" title='from' data-type='struct revindex_entry *' data-ref="5from">from</dfn>, *<dfn class="local col6 decl" id="6to" title='to' data-type='struct revindex_entry *' data-ref="6to">to</dfn>;</td></tr>
+<tr><th id="48">48</th><td>	<em>int</em> <dfn class="local col7 decl" id="7bits" title='bits' data-type='int' data-ref="7bits">bits</dfn>;</td></tr>
+<tr><th id="49">49</th><td>	<em>unsigned</em> *<dfn class="local col8 decl" id="8pos" title='pos' data-type='unsigned int *' data-ref="8pos">pos</dfn>;</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td>	<a class="macro" href="git-compat-util.h.html#820" title="(pos) = xmalloc(st_mult(sizeof(*(pos)), ((1 &lt;&lt; (16)))))" data-ref="_M/ALLOC_ARRAY">ALLOC_ARRAY</a>(<a class="local col8 ref" href="#8pos" title='pos' data-ref="8pos">pos</a>, <a class="macro" href="#33" title="(1 &lt;&lt; (16))" data-ref="_M/BUCKETS">BUCKETS</a>);</td></tr>
+<tr><th id="52">52</th><td>	<a class="macro" href="git-compat-util.h.html#820" title="(tmp) = xmalloc(st_mult(sizeof(*(tmp)), (n)))" data-ref="_M/ALLOC_ARRAY">ALLOC_ARRAY</a>(<a class="local col4 ref" href="#4tmp" title='tmp' data-ref="4tmp">tmp</a>, <a class="local col2 ref" href="#2n" title='n' data-ref="2n">n</a>);</td></tr>
+<tr><th id="53">53</th><td>	<a class="local col5 ref" href="#5from" title='from' data-ref="5from">from</a> = <a class="local col1 ref" href="#1entries" title='entries' data-ref="1entries">entries</a>;</td></tr>
+<tr><th id="54">54</th><td>	<a class="local col6 ref" href="#6to" title='to' data-ref="6to">to</a> = <a class="local col4 ref" href="#4tmp" title='tmp' data-ref="4tmp">tmp</a>;</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>	<i>/*</i></td></tr>
+<tr><th id="57">57</th><td><i>	 * If (max &gt;&gt; bits) is zero, then we know that the radix digit we are</i></td></tr>
+<tr><th id="58">58</th><td><i>	 * on (and any higher) will be zero for all entries, and our loop will</i></td></tr>
+<tr><th id="59">59</th><td><i>	 * be a no-op, as everybody lands in the same zero-th bucket.</i></td></tr>
+<tr><th id="60">60</th><td><i>	 */</i></td></tr>
+<tr><th id="61">61</th><td>	<b>for</b> (<a class="local col7 ref" href="#7bits" title='bits' data-ref="7bits">bits</a> = <var>0</var>; <a class="local col3 ref" href="#3max" title='max' data-ref="3max">max</a> &gt;&gt; <a class="local col7 ref" href="#7bits" title='bits' data-ref="7bits">bits</a>; <a class="local col7 ref" href="#7bits" title='bits' data-ref="7bits">bits</a> += <a class="macro" href="#32" title="(16)" data-ref="_M/DIGIT_SIZE">DIGIT_SIZE</a>) {</td></tr>
+<tr><th id="62">62</th><td>		<em>unsigned</em> <dfn class="local col9 decl" id="9i" title='i' data-type='unsigned int' data-ref="9i">i</dfn>;</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>		<a class="ref" href="../include/string.h.html#memset" title='memset' data-ref="memset">memset</a>(<a class="local col8 ref" href="#8pos" title='pos' data-ref="8pos">pos</a>, <var>0</var>, <a class="macro" href="#33" title="(1 &lt;&lt; (16))" data-ref="_M/BUCKETS">BUCKETS</a> * <b>sizeof</b>(*<a class="local col8 ref" href="#8pos" title='pos' data-ref="8pos">pos</a>));</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>		<i>/*</i></td></tr>
+<tr><th id="67">67</th><td><i>		 * We want pos[i] to store the index of the last element that</i></td></tr>
+<tr><th id="68">68</th><td><i>		 * will go in bucket "i" (actually one past the last element).</i></td></tr>
+<tr><th id="69">69</th><td><i>		 * To do this, we first count the items that will go in each</i></td></tr>
+<tr><th id="70">70</th><td><i>		 * bucket, which gives us a relative offset from the last</i></td></tr>
+<tr><th id="71">71</th><td><i>		 * bucket. We can then cumulatively add the index from the</i></td></tr>
+<tr><th id="72">72</th><td><i>		 * previous bucket to get the true index.</i></td></tr>
+<tr><th id="73">73</th><td><i>		 */</i></td></tr>
+<tr><th id="74">74</th><td>		<b>for</b> (<a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a> = <var>0</var>; <a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a> &lt; <a class="local col2 ref" href="#2n" title='n' data-ref="2n">n</a>; <a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a>++)</td></tr>
+<tr><th id="75">75</th><td>			<a class="local col8 ref" href="#8pos" title='pos' data-ref="8pos">pos</a>[<a class="macro" href="#38" title="(((from)[(i)].offset &gt;&gt; (bits)) &amp; ((1 &lt;&lt; (16))-1))" data-ref="_M/BUCKET_FOR">BUCKET_FOR</a>(<a class="local col5 ref" href="#5from" title='from' data-ref="5from">from</a>, <a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a>, <a class="local col7 ref" href="#7bits" title='bits' data-ref="7bits">bits</a>)]++;</td></tr>
+<tr><th id="76">76</th><td>		<b>for</b> (<a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a> = <var>1</var>; <a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a> &lt; <a class="macro" href="#33" title="(1 &lt;&lt; (16))" data-ref="_M/BUCKETS">BUCKETS</a>; <a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a>++)</td></tr>
+<tr><th id="77">77</th><td>			<a class="local col8 ref" href="#8pos" title='pos' data-ref="8pos">pos</a>[<a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a>] += <a class="local col8 ref" href="#8pos" title='pos' data-ref="8pos">pos</a>[<a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a>-<var>1</var>];</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>		<i>/*</i></td></tr>
+<tr><th id="80">80</th><td><i>		 * Now we can drop the elements into their correct buckets (in</i></td></tr>
+<tr><th id="81">81</th><td><i>		 * our temporary array).  We iterate the pos counter backwards</i></td></tr>
+<tr><th id="82">82</th><td><i>		 * to avoid using an extra index to count up. And since we are</i></td></tr>
+<tr><th id="83">83</th><td><i>		 * going backwards there, we must also go backwards through the</i></td></tr>
+<tr><th id="84">84</th><td><i>		 * array itself, to keep the sort stable.</i></td></tr>
+<tr><th id="85">85</th><td><i>		 *</i></td></tr>
+<tr><th id="86">86</th><td><i>		 * Note that we use an unsigned iterator to make sure we can</i></td></tr>
+<tr><th id="87">87</th><td><i>		 * handle 2^32-1 objects, even on a 32-bit system. But this</i></td></tr>
+<tr><th id="88">88</th><td><i>		 * means we cannot use the more obvious "i &gt;= 0" loop condition</i></td></tr>
+<tr><th id="89">89</th><td><i>		 * for counting backwards, and must instead check for</i></td></tr>
+<tr><th id="90">90</th><td><i>		 * wrap-around with UINT_MAX.</i></td></tr>
+<tr><th id="91">91</th><td><i>		 */</i></td></tr>
+<tr><th id="92">92</th><td>		<b>for</b> (<a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a> = <a class="local col2 ref" href="#2n" title='n' data-ref="2n">n</a> - <var>1</var>; <a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a> != <span class="macro" title="(2147483647 *2U +1U)" data-ref="_M/UINT_MAX">UINT_MAX</span>; <a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a>--)</td></tr>
+<tr><th id="93">93</th><td>			<a class="local col6 ref" href="#6to" title='to' data-ref="6to">to</a>[--<a class="local col8 ref" href="#8pos" title='pos' data-ref="8pos">pos</a>[<a class="macro" href="#38" title="(((from)[(i)].offset &gt;&gt; (bits)) &amp; ((1 &lt;&lt; (16))-1))" data-ref="_M/BUCKET_FOR">BUCKET_FOR</a>(<a class="local col5 ref" href="#5from" title='from' data-ref="5from">from</a>, <a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a>, <a class="local col7 ref" href="#7bits" title='bits' data-ref="7bits">bits</a>)]] = <a class="local col5 ref" href="#5from" title='from' data-ref="5from">from</a>[<a class="local col9 ref" href="#9i" title='i' data-ref="9i">i</a>];</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>		<i>/*</i></td></tr>
+<tr><th id="96">96</th><td><i>		 * Now "to" contains the most sorted list, so we swap "from" and</i></td></tr>
+<tr><th id="97">97</th><td><i>		 * "to" for the next iteration.</i></td></tr>
+<tr><th id="98">98</th><td><i>		 */</i></td></tr>
+<tr><th id="99">99</th><td>		<a class="macro" href="git-compat-util.h.html#537" title="do { void *_swap_a_ptr = &amp;(from); void *_swap_b_ptr = &amp;(to); unsigned char _swap_buffer[sizeof(from)]; memcpy(_swap_buffer, _swap_a_ptr, sizeof(from)); memcpy(_swap_a_ptr, _swap_b_ptr, sizeof(from) + (sizeof(char [1 - 2*!(sizeof(from) == sizeof(to))]) - 1)); memcpy(_swap_b_ptr, _swap_buffer, sizeof(from)); } while (0)" data-ref="_M/SWAP">SWAP</a>(<a class="local col5 ref" href="#5from" title='from' data-ref="5from">from</a>, <a class="local col6 ref" href="#6to" title='to' data-ref="6to">to</a>);</td></tr>
+<tr><th id="100">100</th><td>	}</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>	<i>/*</i></td></tr>
+<tr><th id="103">103</th><td><i>	 * If we ended with our data in the original array, great. If not,</i></td></tr>
+<tr><th id="104">104</th><td><i>	 * we have to move it back from the temporary storage.</i></td></tr>
+<tr><th id="105">105</th><td><i>	 */</i></td></tr>
+<tr><th id="106">106</th><td>	<b>if</b> (<a class="local col5 ref" href="#5from" title='from' data-ref="5from">from</a> != <a class="local col1 ref" href="#1entries" title='entries' data-ref="1entries">entries</a>)</td></tr>
+<tr><th id="107">107</th><td>		<a class="macro" href="git-compat-util.h.html#823" title="copy_array((entries), (tmp), (n), sizeof(*(entries)) + (sizeof(char [1 - 2*!(sizeof(*(entries)) == sizeof(*(tmp)))]) - 1))" data-ref="_M/COPY_ARRAY">COPY_ARRAY</a>(<a class="local col1 ref" href="#1entries" title='entries' data-ref="1entries">entries</a>, <a class="local col4 ref" href="#4tmp" title='tmp' data-ref="4tmp">tmp</a>, <a class="local col2 ref" href="#2n" title='n' data-ref="2n">n</a>);</td></tr>
+<tr><th id="108">108</th><td>	<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col4 ref" href="#4tmp" title='tmp' data-ref="4tmp">tmp</a>);</td></tr>
+<tr><th id="109">109</th><td>	<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col8 ref" href="#8pos" title='pos' data-ref="8pos">pos</a>);</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><u>#undef <a class="macro" href="#38" data-ref="_M/BUCKET_FOR">BUCKET_FOR</a></u></td></tr>
+<tr><th id="112">112</th><td><u>#undef <a class="macro" href="#33" data-ref="_M/BUCKETS">BUCKETS</a></u></td></tr>
+<tr><th id="113">113</th><td><u>#undef <a class="macro" href="#32" data-ref="_M/DIGIT_SIZE">DIGIT_SIZE</a></u></td></tr>
+<tr><th id="114">114</th><td>}</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><i  data-doc="create_pack_revindex">/*</i></td></tr>
+<tr><th id="117">117</th><td><i  data-doc="create_pack_revindex"> * Ordered list of offsets of objects in the pack.</i></td></tr>
+<tr><th id="118">118</th><td><i  data-doc="create_pack_revindex"> */</i></td></tr>
+<tr><th id="119">119</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="create_pack_revindex" title='create_pack_revindex' data-type='void create_pack_revindex(struct packed_git * p)' data-ref="create_pack_revindex">create_pack_revindex</dfn>(<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *<dfn class="local col0 decl" id="10p" title='p' data-type='struct packed_git *' data-ref="10p">p</dfn>)</td></tr>
+<tr><th id="120">120</th><td>{</td></tr>
+<tr><th id="121">121</th><td>	<em>unsigned</em> <dfn class="local col1 decl" id="11num_ent" title='num_ent' data-type='unsigned int' data-ref="11num_ent">num_ent</dfn> = <a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::num_objects" title='packed_git::num_objects' data-ref="packed_git::num_objects">num_objects</a>;</td></tr>
+<tr><th id="122">122</th><td>	<em>unsigned</em> <dfn class="local col2 decl" id="12i" title='i' data-type='unsigned int' data-ref="12i">i</dfn>;</td></tr>
+<tr><th id="123">123</th><td>	<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="13index" title='index' data-type='const char *' data-ref="13index">index</dfn> = <a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::index_data" title='packed_git::index_data' data-ref="packed_git::index_data">index_data</a>;</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td>	<a class="macro" href="git-compat-util.h.html#820" title="(p-&gt;revindex) = xmalloc(st_mult(sizeof(*(p-&gt;revindex)), (num_ent + 1)))" data-ref="_M/ALLOC_ARRAY">ALLOC_ARRAY</a>(<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>, <a class="local col1 ref" href="#11num_ent" title='num_ent' data-ref="11num_ent">num_ent</a> + <var>1</var>);</td></tr>
+<tr><th id="126">126</th><td>	<a class="local col3 ref" href="#13index" title='index' data-ref="13index">index</a> += <var>4</var> * <var>256</var>;</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td>	<b>if</b> (<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::index_version" title='packed_git::index_version' data-ref="packed_git::index_version">index_version</a> &gt; <var>1</var>) {</td></tr>
+<tr><th id="129">129</th><td>		<em>const</em> <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> *<dfn class="local col4 decl" id="14off_32" title='off_32' data-type='const uint32_t *' data-ref="14off_32">off_32</dfn> =</td></tr>
+<tr><th id="130">130</th><td>			(<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> *)(<a class="local col3 ref" href="#13index" title='index' data-ref="13index">index</a> + <var>8</var> + <a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::num_objects" title='packed_git::num_objects' data-ref="packed_git::num_objects">num_objects</a> * (<var>20</var> + <var>4</var>));</td></tr>
+<tr><th id="131">131</th><td>		<em>const</em> <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> *<dfn class="local col5 decl" id="15off_64" title='off_64' data-type='const uint32_t *' data-ref="15off_64">off_64</dfn> = <a class="local col4 ref" href="#14off_32" title='off_32' data-ref="14off_32">off_32</a> + <a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::num_objects" title='packed_git::num_objects' data-ref="packed_git::num_objects">num_objects</a>;</td></tr>
+<tr><th id="132">132</th><td>		<b>for</b> (<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a> = <var>0</var>; <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a> &lt; <a class="local col1 ref" href="#11num_ent" title='num_ent' data-ref="11num_ent">num_ent</a>; <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>++) {</td></tr>
+<tr><th id="133">133</th><td>			<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col6 decl" id="16off" title='off' data-type='uint32_t' data-ref="16off">off</dfn> = <a class="macro" href="compat/bswap.h.html#87" title="git_bswap32(*off_32++)" data-ref="_M/ntohl">ntohl</a>(*<a class="local col4 ref" href="#14off_32" title='off_32' data-ref="14off_32">off_32</a>++);</td></tr>
+<tr><th id="134">134</th><td>			<b>if</b> (!(<a class="local col6 ref" href="#16off" title='off' data-ref="16off">off</a> &amp; <var>0x80000000</var>)) {</td></tr>
+<tr><th id="135">135</th><td>				<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>[<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>].<a class="ref" href="pack-revindex.h.html#revindex_entry::offset" title='revindex_entry::offset' data-ref="revindex_entry::offset">offset</a> = <a class="local col6 ref" href="#16off" title='off' data-ref="16off">off</a>;</td></tr>
+<tr><th id="136">136</th><td>			} <b>else</b> {</td></tr>
+<tr><th id="137">137</th><td>				<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>[<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>].<a class="ref" href="pack-revindex.h.html#revindex_entry::offset" title='revindex_entry::offset' data-ref="revindex_entry::offset">offset</a> =</td></tr>
+<tr><th id="138">138</th><td>					((<a class="typedef" href="../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="macro" href="compat/bswap.h.html#87" title="git_bswap32(*off_64++)" data-ref="_M/ntohl">ntohl</a>(*<a class="local col5 ref" href="#15off_64" title='off_64' data-ref="15off_64">off_64</a>++)) &lt;&lt; <var>32</var>;</td></tr>
+<tr><th id="139">139</th><td>				<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>[<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>].<a class="ref" href="pack-revindex.h.html#revindex_entry::offset" title='revindex_entry::offset' data-ref="revindex_entry::offset">offset</a> |=</td></tr>
+<tr><th id="140">140</th><td>					<a class="macro" href="compat/bswap.h.html#87" title="git_bswap32(*off_64++)" data-ref="_M/ntohl">ntohl</a>(*<a class="local col5 ref" href="#15off_64" title='off_64' data-ref="15off_64">off_64</a>++);</td></tr>
+<tr><th id="141">141</th><td>			}</td></tr>
+<tr><th id="142">142</th><td>			<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>[<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>].<a class="ref" href="pack-revindex.h.html#revindex_entry::nr" title='revindex_entry::nr' data-ref="revindex_entry::nr">nr</a> = <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>;</td></tr>
+<tr><th id="143">143</th><td>		}</td></tr>
+<tr><th id="144">144</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="145">145</th><td>		<b>for</b> (<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a> = <var>0</var>; <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a> &lt; <a class="local col1 ref" href="#11num_ent" title='num_ent' data-ref="11num_ent">num_ent</a>; <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>++) {</td></tr>
+<tr><th id="146">146</th><td>			<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col7 decl" id="17hl" title='hl' data-type='uint32_t' data-ref="17hl">hl</dfn> = *((<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> *)(<a class="local col3 ref" href="#13index" title='index' data-ref="13index">index</a> + <var>24</var> * <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>));</td></tr>
+<tr><th id="147">147</th><td>			<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>[<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>].<a class="ref" href="pack-revindex.h.html#revindex_entry::offset" title='revindex_entry::offset' data-ref="revindex_entry::offset">offset</a> = <a class="macro" href="compat/bswap.h.html#87" title="git_bswap32(hl)" data-ref="_M/ntohl">ntohl</a>(<a class="local col7 ref" href="#17hl" title='hl' data-ref="17hl">hl</a>);</td></tr>
+<tr><th id="148">148</th><td>			<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>[<a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>].<a class="ref" href="pack-revindex.h.html#revindex_entry::nr" title='revindex_entry::nr' data-ref="revindex_entry::nr">nr</a> = <a class="local col2 ref" href="#12i" title='i' data-ref="12i">i</a>;</td></tr>
+<tr><th id="149">149</th><td>		}</td></tr>
+<tr><th id="150">150</th><td>	}</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td>	<i>/* This knows the pack format -- the 20-byte trailer</i></td></tr>
+<tr><th id="153">153</th><td><i>	 * follows immediately after the last object data.</i></td></tr>
+<tr><th id="154">154</th><td><i>	 */</i></td></tr>
+<tr><th id="155">155</th><td>	<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>[<a class="local col1 ref" href="#11num_ent" title='num_ent' data-ref="11num_ent">num_ent</a>].<a class="ref" href="pack-revindex.h.html#revindex_entry::offset" title='revindex_entry::offset' data-ref="revindex_entry::offset">offset</a> = <a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::pack_size" title='packed_git::pack_size' data-ref="packed_git::pack_size">pack_size</a> - <var>20</var>;</td></tr>
+<tr><th id="156">156</th><td>	<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>[<a class="local col1 ref" href="#11num_ent" title='num_ent' data-ref="11num_ent">num_ent</a>].<a class="ref" href="pack-revindex.h.html#revindex_entry::nr" title='revindex_entry::nr' data-ref="revindex_entry::nr">nr</a> = -<var>1</var>;</td></tr>
+<tr><th id="157">157</th><td>	<a class="tu ref" href="#sort_revindex" title='sort_revindex' data-use='c' data-ref="sort_revindex">sort_revindex</a>(<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>, <a class="local col1 ref" href="#11num_ent" title='num_ent' data-ref="11num_ent">num_ent</a>, <a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::pack_size" title='packed_git::pack_size' data-ref="packed_git::pack_size">pack_size</a>);</td></tr>
+<tr><th id="158">158</th><td>}</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><em>void</em> <dfn class="decl def" id="load_pack_revindex" title='load_pack_revindex' data-ref="load_pack_revindex">load_pack_revindex</dfn>(<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *<dfn class="local col8 decl" id="18p" title='p' data-type='struct packed_git *' data-ref="18p">p</dfn>)</td></tr>
+<tr><th id="161">161</th><td>{</td></tr>
+<tr><th id="162">162</th><td>	<b>if</b> (!<a class="local col8 ref" href="#18p" title='p' data-ref="18p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>)</td></tr>
+<tr><th id="163">163</th><td>		<a class="tu ref" href="#create_pack_revindex" title='create_pack_revindex' data-use='c' data-ref="create_pack_revindex">create_pack_revindex</a>(<a class="local col8 ref" href="#18p" title='p' data-ref="18p">p</a>);</td></tr>
+<tr><th id="164">164</th><td>}</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td><em>int</em> <dfn class="decl def" id="find_revindex_position" title='find_revindex_position' data-ref="find_revindex_position">find_revindex_position</dfn>(<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *<dfn class="local col9 decl" id="19p" title='p' data-type='struct packed_git *' data-ref="19p">p</dfn>, <a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col0 decl" id="20ofs" title='ofs' data-type='off_t' data-ref="20ofs">ofs</dfn>)</td></tr>
+<tr><th id="167">167</th><td>{</td></tr>
+<tr><th id="168">168</th><td>	<em>int</em> <dfn class="local col1 decl" id="21lo" title='lo' data-type='int' data-ref="21lo">lo</dfn> = <var>0</var>;</td></tr>
+<tr><th id="169">169</th><td>	<em>int</em> <dfn class="local col2 decl" id="22hi" title='hi' data-type='int' data-ref="22hi">hi</dfn> = <a class="local col9 ref" href="#19p" title='p' data-ref="19p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::num_objects" title='packed_git::num_objects' data-ref="packed_git::num_objects">num_objects</a> + <var>1</var>;</td></tr>
+<tr><th id="170">170</th><td>	<b>struct</b> <a class="type" href="pack-revindex.h.html#revindex_entry" title='revindex_entry' data-ref="revindex_entry">revindex_entry</a> *<dfn class="local col3 decl" id="23revindex" title='revindex' data-type='struct revindex_entry *' data-ref="23revindex">revindex</dfn> = <a class="local col9 ref" href="#19p" title='p' data-ref="19p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a>;</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td>	<b>do</b> {</td></tr>
+<tr><th id="173">173</th><td>		<em>unsigned</em> <dfn class="local col4 decl" id="24mi" title='mi' data-type='unsigned int' data-ref="24mi">mi</dfn> = <a class="local col1 ref" href="#21lo" title='lo' data-ref="21lo">lo</a> + (<a class="local col2 ref" href="#22hi" title='hi' data-ref="22hi">hi</a> - <a class="local col1 ref" href="#21lo" title='lo' data-ref="21lo">lo</a>) / <var>2</var>;</td></tr>
+<tr><th id="174">174</th><td>		<b>if</b> (<a class="local col3 ref" href="#23revindex" title='revindex' data-ref="23revindex">revindex</a>[<a class="local col4 ref" href="#24mi" title='mi' data-ref="24mi">mi</a>].<a class="ref" href="pack-revindex.h.html#revindex_entry::offset" title='revindex_entry::offset' data-ref="revindex_entry::offset">offset</a> == <a class="local col0 ref" href="#20ofs" title='ofs' data-ref="20ofs">ofs</a>) {</td></tr>
+<tr><th id="175">175</th><td>			<b>return</b> <a class="local col4 ref" href="#24mi" title='mi' data-ref="24mi">mi</a>;</td></tr>
+<tr><th id="176">176</th><td>		} <b>else</b> <b>if</b> (<a class="local col0 ref" href="#20ofs" title='ofs' data-ref="20ofs">ofs</a> &lt; <a class="local col3 ref" href="#23revindex" title='revindex' data-ref="23revindex">revindex</a>[<a class="local col4 ref" href="#24mi" title='mi' data-ref="24mi">mi</a>].<a class="ref" href="pack-revindex.h.html#revindex_entry::offset" title='revindex_entry::offset' data-ref="revindex_entry::offset">offset</a>)</td></tr>
+<tr><th id="177">177</th><td>			<a class="local col2 ref" href="#22hi" title='hi' data-ref="22hi">hi</a> = <a class="local col4 ref" href="#24mi" title='mi' data-ref="24mi">mi</a>;</td></tr>
+<tr><th id="178">178</th><td>		<b>else</b></td></tr>
+<tr><th id="179">179</th><td>			<a class="local col1 ref" href="#21lo" title='lo' data-ref="21lo">lo</a> = <a class="local col4 ref" href="#24mi" title='mi' data-ref="24mi">mi</a> + <var>1</var>;</td></tr>
+<tr><th id="180">180</th><td>	} <b>while</b> (<a class="local col1 ref" href="#21lo" title='lo' data-ref="21lo">lo</a> &lt; <a class="local col2 ref" href="#22hi" title='hi' data-ref="22hi">hi</a>);</td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td>	<a class="macro" href="git-compat-util.h.html#446" title="(error(&quot;bad offset for revindex&quot;), const_error())" data-ref="_M/error">error</a>(<q>"bad offset for revindex"</q>);</td></tr>
+<tr><th id="183">183</th><td>	<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="184">184</th><td>}</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><b>struct</b> <a class="type" href="pack-revindex.h.html#revindex_entry" title='revindex_entry' data-ref="revindex_entry">revindex_entry</a> *<dfn class="decl def" id="find_pack_revindex" title='find_pack_revindex' data-ref="find_pack_revindex">find_pack_revindex</dfn>(<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *<dfn class="local col5 decl" id="25p" title='p' data-type='struct packed_git *' data-ref="25p">p</dfn>, <a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col6 decl" id="26ofs" title='ofs' data-type='off_t' data-ref="26ofs">ofs</dfn>)</td></tr>
+<tr><th id="187">187</th><td>{</td></tr>
+<tr><th id="188">188</th><td>	<em>int</em> <dfn class="local col7 decl" id="27pos" title='pos' data-type='int' data-ref="27pos">pos</dfn>;</td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td>	<a class="ref" href="#load_pack_revindex" title='load_pack_revindex' data-ref="load_pack_revindex">load_pack_revindex</a>(<a class="local col5 ref" href="#25p" title='p' data-ref="25p">p</a>);</td></tr>
+<tr><th id="191">191</th><td>	<a class="local col7 ref" href="#27pos" title='pos' data-ref="27pos">pos</a> = <a class="ref" href="#find_revindex_position" title='find_revindex_position' data-ref="find_revindex_position">find_revindex_position</a>(<a class="local col5 ref" href="#25p" title='p' data-ref="25p">p</a>, <a class="local col6 ref" href="#26ofs" title='ofs' data-ref="26ofs">ofs</a>);</td></tr>
+<tr><th id="192">192</th><td></td></tr>
+<tr><th id="193">193</th><td>	<b>if</b> (<a class="local col7 ref" href="#27pos" title='pos' data-ref="27pos">pos</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="194">194</th><td>		<b>return</b> <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td>	<b>return</b> <a class="local col5 ref" href="#25p" title='p' data-ref="25p">p</a>-&gt;<a class="ref" href="cache.h.html#packed_git::revindex" title='packed_git::revindex' data-ref="packed_git::revindex">revindex</a> + <a class="local col7 ref" href="#27pos" title='pos' data-ref="27pos">pos</a>;</td></tr>
+<tr><th id="197">197</th><td>}</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

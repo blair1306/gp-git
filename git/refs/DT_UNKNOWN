@@ -1,0 +1,14 @@
+<dec f='include/dirent.h' l='99' type='0'/>
+<use f='codebrowser/cache.h' l='306' macro='1' u='r'/>
+<use f='codebrowser/builtin/add.c' l='487' macro='1' u='r'/>
+<use f='codebrowser/builtin/check-ignore.c' l='75' macro='1' c='check_ignore'/>
+<use f='codebrowser/builtin/clean.c' l='685' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='991' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1497' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1510' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1524' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1530' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1533' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1536' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1560' macro='1' u='r'/>
+<use f='codebrowser/unpack-trees.c' l='1709' macro='1' u='r'/>

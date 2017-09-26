@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='176' type='int cmd_interpret_trailers(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/interpret-trailers.c' l='19' ll='49' type='int cmd_interpret_trailers(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='413'/>
+<use f='codebrowser/git.c' l='413'/>
+<use f='codebrowser/git.c' l='413'/>
+<use f='codebrowser/git.c' l='413'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs/files-backend.c' l='982' type='2'/>
+<use f='codebrowser/refs/files-backend.c' l='1010' u='r' c='try_remove_empty_parents'/>
+<use f='codebrowser/refs/files-backend.c' l='1026' u='r' c='try_remove_empty_parents'/>
+<use f='codebrowser/refs/files-backend.c' l='1027' u='r' c='try_remove_empty_parents'/>
+<use f='codebrowser/refs/files-backend.c' l='2598' u='r' c='files_transaction_finish'/>

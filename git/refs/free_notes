@@ -1,0 +1,22 @@
+<dec f='codebrowser/notes.h' l='246' type='void free_notes(struct notes_tree * t)'/>
+<doc f='codebrowser/notes.h' l='240'>/*
+ * Free (and de-initialize) the given notes_tree structure
+ *
+ * IMPORTANT: Changes made to the given notes_tree since the last, successful
+ * call to write_notes_tree() will be lost.
+ */</doc>
+<use f='codebrowser/builtin/notes.c' l='327' u='c' c='notes_copy_from_stdin'/>
+<use f='codebrowser/builtin/notes.c' l='386' u='c' c='list'/>
+<use f='codebrowser/builtin/notes.c' l='437' u='c' c='add'/>
+<use f='codebrowser/builtin/notes.c' l='473' u='c' c='add'/>
+<use f='codebrowser/builtin/notes.c' l='549' u='c' c='copy'/>
+<use f='codebrowser/builtin/notes.c' l='635' u='c' c='append_edit'/>
+<use f='codebrowser/builtin/notes.c' l='673' u='c' c='show'/>
+<use f='codebrowser/builtin/notes.c' l='742' u='c' c='merge_commit'/>
+<use f='codebrowser/builtin/notes.c' l='873' u='c' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='933' u='c' c='remove_cmd'/>
+<use f='codebrowser/builtin/notes.c' l='961' u='c' c='prune'/>
+<use f='codebrowser/notes-utils.c' l='176' u='c' c='finish_copy_notes_for_rewrite'/>
+<def f='codebrowser/notes.c' l='1191' ll='1206' type='void free_notes(struct notes_tree * t)'/>
+<use f='codebrowser/remote-testsvn.c' l='71' u='c' c='read_ref_note'/>
+<use f='codebrowser/remote-testsvn.c' l='162' u='c' c='check_or_regenerate_marks'/>

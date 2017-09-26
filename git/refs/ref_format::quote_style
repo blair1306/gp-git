@@ -1,0 +1,21 @@
+<dec f='codebrowser/ref-filter.h' l='81' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/for-each-ref.c' l='27' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='27' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='29' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='29' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='31' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='31' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='33' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='33' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='27' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='27' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='29' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='29' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='31' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='31' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='33' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='33' u='a' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='64' u='r' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='64' u='r' c='cmd_for_each_ref'/>
+<use f='codebrowser/ref-filter.c' l='2078' u='r' c='format_ref_array_item'/>

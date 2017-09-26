@@ -1,0 +1,11 @@
+<dec f='codebrowser/ref-filter.h' l='63' type='struct commit *'/>
+<offset>448</offset>
+<use f='codebrowser/builtin/tag.c' l='438' u='r' c='cmd_tag'/>
+<use f='codebrowser/builtin/tag.c' l='481' u='r' c='cmd_tag'/>
+<use f='codebrowser/ref-filter.c' l='1860' u='r' c='ref_filter_handler'/>
+<use f='codebrowser/ref-filter.c' l='1922' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='1923' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='1946' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='1998' u='r' c='filter_refs'/>
+<use f='codebrowser/ref-filter.c' l='2198' u='w' c='parse_opt_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='2199' u='r' c='parse_opt_merge_filter'/>

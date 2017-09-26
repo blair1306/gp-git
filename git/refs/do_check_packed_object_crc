@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1205' type='int'/>
+<doc f='codebrowser/cache.h' l='1204'>/* global flag to enable extra checks when accessing packed objects */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='2389' u='w' c='prepare_pack'/>
+<def f='codebrowser/sha1_file.c' l='2500' type='int'/>
+<use f='codebrowser/sha1_file.c' l='2540' u='r' c='unpack_entry'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/refs/refs-internal.h' l='508'/>
+<use f='codebrowser/refs.c' l='1667' u='c'/>
+<doc f='codebrowser/refs/refs-internal.h' l='507'>/* ref_store_init flags */</doc>
+<use f='codebrowser/refs/files-backend.c' l='159' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='277' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='660' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='766' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1786' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1857' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1970' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2061' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='373' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='394' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='479' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='573' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='586' u='c'/>

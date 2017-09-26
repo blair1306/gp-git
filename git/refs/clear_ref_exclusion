@@ -1,0 +1,11 @@
+<dec f='codebrowser/revision.h' l='227' type='void clear_ref_exclusion(struct string_list ** )'/>
+<use f='codebrowser/builtin/rev-parse.c' l='566' u='c' c='handle_ref_opt'/>
+<def f='codebrowser/revision.c' l='1172' ll='1179' type='void clear_ref_exclusion(struct string_list ** ref_excludes_p)'/>
+<use f='codebrowser/revision.c' l='2111' u='c' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2114' u='c' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2122' u='c' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2125' u='c' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2130' u='c' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2139' u='c' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2144' u='c' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2149' u='c' c='handle_revision_pseudo_opt'/>

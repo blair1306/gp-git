@@ -1,0 +1,12 @@
+<dec f='codebrowser/wt-status.h' l='52' type='2'/>
+<use f='codebrowser/builtin/commit.c' l='1287' u='r' c='git_status_config'/>
+<use f='codebrowser/builtin/commit.c' l='1345' u='r' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1345' u='r' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1345' u='r' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1345' u='r' c='cmd_status'/>
+<use f='codebrowser/builtin/commit.c' l='1621' u='r' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1621' u='r' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1621' u='r' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1621' u='r' c='cmd_commit'/>
+<use f='codebrowser/wt-status.c' l='449' u='r' c='wt_status_collect_changed_cb'/>
+<use f='codebrowser/wt-status.c' l='2237' c='wt_status_print'/>

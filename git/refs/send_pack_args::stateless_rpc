@@ -1,0 +1,12 @@
+<dec f='codebrowser/send-pack.h' l='24' type='unsigned int'/>
+<offset>75</offset>
+<use f='codebrowser/builtin/send-pack.c' l='206' u='w' c='cmd_send_pack'/>
+<use f='codebrowser/builtin/send-pack.c' l='215' u='r' c='cmd_send_pack'/>
+<use f='codebrowser/builtin/send-pack.c' l='250' u='r' c='cmd_send_pack'/>
+<use f='codebrowser/send-pack.c' l='91' u='r' c='pack_objects'/>
+<use f='codebrowser/send-pack.c' l='117' u='r' c='pack_objects'/>
+<use f='codebrowser/send-pack.c' l='544' u='r' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='571' u='r' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='590' u='r' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='594' u='r' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='601' u='r' c='send_pack'/>

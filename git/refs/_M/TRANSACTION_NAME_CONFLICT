@@ -1,0 +1,8 @@
+<dec f='codebrowser/refs.h' l='572'/>
+<doc f='codebrowser/refs.h' l='571'>/* Naming conflict (for example, the ref names A and A/B conflict). */</doc>
+<use f='codebrowser/builtin/fetch.c' l='466' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='513' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='608' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2108' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2154' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2693' u='c'/>

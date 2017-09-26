@@ -1,0 +1,27 @@
+<dec f='codebrowser/rerere.h' l='22' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/rerere.c' l='73' u='r' c='assign_variant'/>
+<use f='codebrowser/rerere.c' l='80' u='w' c='assign_variant'/>
+<use f='codebrowser/rerere.c' l='88' u='r' c='rerere_path'/>
+<use f='codebrowser/rerere.c' l='92' u='r' c='rerere_path'/>
+<use f='codebrowser/rerere.c' l='173' u='r' c='has_rerere_resolution'/>
+<use f='codebrowser/rerere.c' l='184' u='w' c='new_rerere_id_hex'/>
+<use f='codebrowser/rerere.c' l='230' u='w' c='read_rr'/>
+<use f='codebrowser/rerere.c' l='251' u='r' c='write_rr'/>
+<use f='codebrowser/rerere.c' l='252' u='r' c='write_rr'/>
+<use f='codebrowser/rerere.c' l='254' u='r' c='write_rr'/>
+<use f='codebrowser/rerere.c' l='733' u='r' c='remove_variant'/>
+<use f='codebrowser/rerere.c' l='751' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='778' u='w' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='786' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='786' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='803' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='1042' u='w' c='rerere_forget_one_path'/>
+<use f='codebrowser/rerere.c' l='1043' u='r' c='rerere_forget_one_path'/>
+<use f='codebrowser/rerere.c' l='1044' u='w' c='rerere_forget_one_path'/>
+<use f='codebrowser/rerere.c' l='1065' u='r' c='rerere_forget_one_path'/>
+<use f='codebrowser/rerere.c' l='1157' u='r' c='unlink_rr_item'/>
+<use f='codebrowser/rerere.c' l='1211' u='w' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1212' u='r' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1213' u='w' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1215' u='r' c='rerere_gc'/>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/rerere.h' l='21' type='struct rerere_dir *'/>
+<offset>0</offset>
+<use f='codebrowser/rerere.c' l='54' u='r' c='rerere_id_hex'/>
+<use f='codebrowser/rerere.c' l='71' u='r' c='assign_variant'/>
+<use f='codebrowser/rerere.c' l='177' u='r' c='has_rerere_resolution'/>
+<use f='codebrowser/rerere.c' l='183' u='w' c='new_rerere_id_hex'/>
+<use f='codebrowser/rerere.c' l='733' u='r' c='remove_variant'/>
+<use f='codebrowser/rerere.c' l='748' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='757' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='805' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='809' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='811' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='1043' u='r' c='rerere_forget_one_path'/>
+<use f='codebrowser/rerere.c' l='1065' u='r' c='rerere_forget_one_path'/>
+<use f='codebrowser/rerere.c' l='1157' u='r' c='unlink_rr_item'/>
+<use f='codebrowser/rerere.c' l='1211' u='w' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1212' u='r' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1215' u='r' c='rerere_gc'/>

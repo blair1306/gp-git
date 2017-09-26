@@ -1,0 +1,9 @@
+<dec f='codebrowser/connect.c' l='258' type='3'/>
+<use f='codebrowser/connect.c' l='276' c='prot_name'/>
+<use f='codebrowser/connect.c' l='288' u='r' c='get_protocol'/>
+<use f='codebrowser/connect.c' l='292' u='r' c='get_protocol'/>
+<use f='codebrowser/connect.c' l='294' u='r' c='get_protocol'/>
+<use f='codebrowser/connect.c' l='642' u='r' c='parse_connect_url'/>
+<use f='codebrowser/connect.c' l='671' u='r' c='parse_connect_url'/>
+<use f='codebrowser/connect.c' l='789' u='r' c='git_connect'/>
+<use f='codebrowser/connect.c' l='843' u='r' c='git_connect'/>

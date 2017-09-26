@@ -1,0 +1,3 @@
+<dec f='codebrowser/transport.h' l='238' type='void transport_take_over(struct transport * transport, struct child_process * child)'/>
+<use f='codebrowser/transport-helper.c' l='95' u='c' c='do_take_over'/>
+<def f='codebrowser/transport.c' l='612' ll='638' type='void transport_take_over(struct transport * transport, struct child_process * child)'/>

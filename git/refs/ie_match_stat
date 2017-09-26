@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='682' type='int ie_match_stat(const struct index_state * , const struct cache_entry * , struct stat * , unsigned int )'/>
+<use f='codebrowser/apply.c' l='3373' macro='1' u='c'/>
+<use f='codebrowser/builtin/rm.c' l='167' macro='1' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='272' macro='1' u='c'/>
+<use f='codebrowser/diff-lib.c' l='72' macro='1' u='c'/>
+<use f='codebrowser/diff.c' l='2777' macro='1' u='c'/>
+<use f='codebrowser/entry.c' l='392' macro='1' u='c'/>
+<use f='codebrowser/preload-index.c' l='64' u='c' c='preload_thread'/>
+<def f='codebrowser/read-cache.c' l='303' ll='357' type='int ie_match_stat(const struct index_state * istate, const struct cache_entry * ce, struct stat * st, unsigned int options)'/>
+<use f='codebrowser/read-cache.c' l='365' u='c' c='ie_modified'/>
+<use f='codebrowser/read-cache.c' l='682' u='c' c='add_to_index'/>
+<use f='codebrowser/read-cache.c' l='1265' u='c' c='refresh_cache_ent'/>
+<use f='codebrowser/submodule.c' l='65' macro='1' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1469' u='c' c='verify_uptodate_1'/>
+<use f='codebrowser/unpack-trees.c' l='1624' u='c' c='icase_exists'/>
+<use f='codebrowser/unpack-trees.c' l='2148' u='c' c='oneway_merge'/>

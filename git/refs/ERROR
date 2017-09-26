@@ -1,0 +1,3 @@
+<dec f='codebrowser/builtin/fast-export.c' l='32' type='0'/>
+<use f='codebrowser/builtin/fast-export.c' l='32'/>
+<use f='codebrowser/builtin/fast-export.c' l='64' u='r' c='parse_opt_tag_of_filtered_mode'/>

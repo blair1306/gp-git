@@ -1,0 +1,7 @@
+<dec f='codebrowser/revision.h' l='141' type='unsigned int'/>
+<offset>979</offset>
+<use f='codebrowser/builtin/log.c' l='179' u='r' c='cmd_log_init_finish'/>
+<use f='codebrowser/revision.c' l='1915' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1933' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1943' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1951' u='w' c='handle_revision_opt'/>

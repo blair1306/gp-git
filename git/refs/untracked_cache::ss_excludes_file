@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='128' type='struct sha1_stat'/>
+<offset>480</offset>
+<use f='codebrowser/dir.c' l='2085' u='m' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2087' u='w' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2488' u='m' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2490' u='m' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2704' u='a' c='read_untracked_extension'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='58' u='m' c='cmd_main'/>

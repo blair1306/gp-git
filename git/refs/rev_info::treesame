@@ -1,0 +1,10 @@
+<dec f='codebrowser/revision.h' l='206' type='struct decoration'/>
+<offset>16000</offset>
+<use f='codebrowser/revision.c' l='487' u='a' c='initialise_treesame'/>
+<use f='codebrowser/revision.c' l='518' u='a' c='compact_treesame'/>
+<use f='codebrowser/revision.c' l='539' u='a' c='compact_treesame'/>
+<use f='codebrowser/revision.c' l='554' u='a' c='update_treesame'/>
+<use f='codebrowser/revision.c' l='644' u='m' c='try_to_simplify_commit'/>
+<use f='codebrowser/revision.c' l='2403' u='a' c='remove_duplicate_parents'/>
+<use f='codebrowser/revision.c' l='2505' u='a' c='leave_one_treesame_to_parent'/>
+<use f='codebrowser/revision.c' l='2791' u='m' c='prepare_revision_walk'/>

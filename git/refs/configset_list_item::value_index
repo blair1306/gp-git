@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='132' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/config.c' l='1619' u='r' c='configset_iter'/>
+<use f='codebrowser/config.c' l='1706' u='w' c='configset_add_value'/>

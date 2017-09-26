@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1561' type='void add_to_alternates_file(const char * dir)'/>
+<doc f='codebrowser/cache.h' l='1557'>/*
+ * Add the directory to the on-disk alternates file; the new entry will also
+ * take effect in the current process.
+ */</doc>
+<use f='codebrowser/builtin/clone.c' l='330' u='c' c='add_one_reference'/>
+<use f='codebrowser/builtin/clone.c' l='372' u='c' c='copy_alternates'/>
+<use f='codebrowser/builtin/clone.c' l='377' u='c' c='copy_alternates'/>
+<use f='codebrowser/builtin/clone.c' l='455' u='c' c='clone_local'/>
+<def f='codebrowser/sha1_file.c' l='490' ll='533' type='void add_to_alternates_file(const char * reference)'/>

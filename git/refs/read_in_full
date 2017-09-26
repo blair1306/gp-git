@@ -1,0 +1,34 @@
+<dec f='codebrowser/git-compat-util.h' l='637' type='ssize_t read_in_full(int fd, void * buf, size_t count)'/>
+<dec f='codebrowser/cache.h' l='1876' type='ssize_t read_in_full(int fd, void * buf, size_t count)'/>
+<doc f='codebrowser/git-compat-util.h' l='632'>/*
+ * Forward decl that will remind us if its twin in cache.h changes.
+ * This function is used in compat/pread.c.  But we can&apos;t include
+ * cache.h there.
+ */</doc>
+<use f='codebrowser/builtin/clone.c' l='163' u='c' c='get_repo_path_1'/>
+<use f='codebrowser/builtin/get-tar-commit-id.c' l='28' u='c' c='cmd_get_tar_commit_id'/>
+<use f='codebrowser/builtin/worktree.c' l='61' u='c' c='prune_worktree'/>
+<use f='codebrowser/bulk-checkin.c' l='117' u='c' c='stream_to_pack'/>
+<use f='codebrowser/combine-diff.c' l='1046' u='c' c='show_patch_diff'/>
+<use f='codebrowser/credential-cache.c' l='27' u='c' c='send_request'/>
+<use f='codebrowser/credential-cache.c' l='54' u='c' c='spawn_daemon'/>
+<use f='codebrowser/csum-file.c' l='18' u='c' c='flush'/>
+<use f='codebrowser/csum-file.c' l='76' u='c' c='sha1close'/>
+<use f='codebrowser/dir.c' l='790' u='c' c='add_excludes'/>
+<use f='codebrowser/fsck.c' l='152' u='c' c='init_skiplist'/>
+<use f='codebrowser/grep.c' l='1997' u='c' c='grep_source_load_file'/>
+<use f='codebrowser/http-backend.c' l='294' u='c' c='read_request'/>
+<use f='codebrowser/ll-merge.c' l='212' u='c' c='ll_ext_merge'/>
+<use f='codebrowser/pack-write.c' l='222' u='c' c='fixup_pack_header_footer'/>
+<use f='codebrowser/pack-write.c' l='290' u='c' c='index_pack_lockfile'/>
+<use f='codebrowser/path.c' l='661' u='c' c='validate_headref'/>
+<use f='codebrowser/pkt-line.c' l='255' u='c' c='get_packet_data'/>
+<use f='codebrowser/setup.c' l='586' u='c' c='read_gitfile_gently'/>
+<use f='codebrowser/sha1_file.c' l='1183' u='c' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='1200' u='c' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='3596' u='c' c='index_core'/>
+<use f='codebrowser/sha1_file.c' l='3689' u='c' c='read_pack_header'/>
+<use f='codebrowser/strbuf.c' l='368' u='c' c='strbuf_read'/>
+<use f='codebrowser/upload-pack.c' l='550' u='c' c='get_reachable_list'/>
+<use f='codebrowser/upload-pack.c' l='590' u='c' c='has_unreachable'/>
+<def f='codebrowser/wrapper.c' l='312' ll='329' type='ssize_t read_in_full(int fd, void * buf, size_t count)'/>

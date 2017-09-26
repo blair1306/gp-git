@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>usage.c source code [codebrowser/usage.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/usage.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='usage.c.html'>usage.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * GIT - The information manager from hell</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) Linus Torvalds, 2005</i></td></tr>
+<tr><th id="5">5</th><td><i> */</i></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="git-compat-util.h.html">"git-compat-util.h"</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><em>void</em> <dfn class="decl def" id="vreportf" title='vreportf' data-ref="vreportf">vreportf</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1prefix" title='prefix' data-type='const char *' data-ref="1prefix">prefix</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2err" title='err' data-type='const char *' data-ref="2err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col3 decl" id="3params" title='params' data-type='struct __va_list_tag *' data-ref="3params">params</dfn>)</td></tr>
+<tr><th id="10">10</th><td>{</td></tr>
+<tr><th id="11">11</th><td>	<em>char</em> <dfn class="local col4 decl" id="4msg" title='msg' data-type='char [4096]' data-ref="4msg">msg</dfn>[<var>4096</var>];</td></tr>
+<tr><th id="12">12</th><td>	<em>char</em> *<dfn class="local col5 decl" id="5p" title='p' data-type='char *' data-ref="5p">p</dfn>;</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td>	<a class="ref" href="../include/stdio.h.html#vsnprintf" title='vsnprintf' data-ref="vsnprintf">vsnprintf</a>(<a class="local col4 ref" href="#4msg" title='msg' data-ref="4msg">msg</a>, <b>sizeof</b>(<a class="local col4 ref" href="#4msg" title='msg' data-ref="4msg">msg</a>), <a class="local col2 ref" href="#2err" title='err' data-ref="2err">err</a>, <a class="local col3 ref" href="#3params" title='params' data-ref="3params">params</a>);</td></tr>
+<tr><th id="15">15</th><td>	<b>for</b> (<a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a> = <a class="local col4 ref" href="#4msg" title='msg' data-ref="4msg">msg</a>; *<a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a>; <a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a>++) {</td></tr>
+<tr><th id="16">16</th><td>		<b>if</b> (<a class="macro" href="git-compat-util.h.html#955" title="(((sane_ctype[(unsigned char)(*p)] &amp; (0x40)) != 0))" data-ref="_M/iscntrl">iscntrl</a>(*<a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a>) &amp;&amp; *<a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a> != <kbd>'\t'</kbd> &amp;&amp; *<a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a> != <kbd>'\n'</kbd>)</td></tr>
+<tr><th id="17">17</th><td>			*<a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a> = <kbd>'?'</kbd>;</td></tr>
+<tr><th id="18">18</th><td>	}</td></tr>
+<tr><th id="19">19</th><td>	<a class="ref" href="../include/stdio.h.html#fprintf" title='fprintf' data-ref="fprintf">fprintf</a>(<a class="macro" href="../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>, <q>"%s%s\n"</q>, <a class="local col1 ref" href="#1prefix" title='prefix' data-ref="1prefix">prefix</a>, <a class="local col4 ref" href="#4msg" title='msg' data-ref="4msg">msg</a>);</td></tr>
+<tr><th id="20">20</th><td>}</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><em>static</em> <a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <em>void</em> <dfn class="tu decl def" id="usage_builtin" title='usage_builtin' data-type='void usage_builtin(const char * err, struct __va_list_tag * params)' data-ref="usage_builtin">usage_builtin</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="6err" title='err' data-type='const char *' data-ref="6err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col7 decl" id="7params" title='params' data-type='struct __va_list_tag *' data-ref="7params">params</dfn>)</td></tr>
+<tr><th id="23">23</th><td>{</td></tr>
+<tr><th id="24">24</th><td>	<a class="ref" href="#vreportf" title='vreportf' data-ref="vreportf">vreportf</a>(<q>"usage: "</q>, <a class="local col6 ref" href="#6err" title='err' data-ref="6err">err</a>, <a class="local col7 ref" href="#7params" title='params' data-ref="7params">params</a>);</td></tr>
+<tr><th id="25">25</th><td>	<a class="ref" href="../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>129</var>);</td></tr>
+<tr><th id="26">26</th><td>}</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><em>static</em> <a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <em>void</em> <dfn class="tu decl def" id="die_builtin" title='die_builtin' data-type='void die_builtin(const char * err, struct __va_list_tag * params)' data-ref="die_builtin">die_builtin</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8err" title='err' data-type='const char *' data-ref="8err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col9 decl" id="9params" title='params' data-type='struct __va_list_tag *' data-ref="9params">params</dfn>)</td></tr>
+<tr><th id="29">29</th><td>{</td></tr>
+<tr><th id="30">30</th><td>	<a class="ref" href="#vreportf" title='vreportf' data-ref="vreportf">vreportf</a>(<q>"fatal: "</q>, <a class="local col8 ref" href="#8err" title='err' data-ref="8err">err</a>, <a class="local col9 ref" href="#9params" title='params' data-ref="9params">params</a>);</td></tr>
+<tr><th id="31">31</th><td>	<a class="ref" href="../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>128</var>);</td></tr>
+<tr><th id="32">32</th><td>}</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="error_builtin" title='error_builtin' data-type='void error_builtin(const char * err, struct __va_list_tag * params)' data-ref="error_builtin">error_builtin</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10err" title='err' data-type='const char *' data-ref="10err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col1 decl" id="11params" title='params' data-type='struct __va_list_tag *' data-ref="11params">params</dfn>)</td></tr>
+<tr><th id="35">35</th><td>{</td></tr>
+<tr><th id="36">36</th><td>	<a class="ref" href="#vreportf" title='vreportf' data-ref="vreportf">vreportf</a>(<q>"error: "</q>, <a class="local col0 ref" href="#10err" title='err' data-ref="10err">err</a>, <a class="local col1 ref" href="#11params" title='params' data-ref="11params">params</a>);</td></tr>
+<tr><th id="37">37</th><td>}</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="warn_builtin" title='warn_builtin' data-type='void warn_builtin(const char * warn, struct __va_list_tag * params)' data-ref="warn_builtin">warn_builtin</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12warn" title='warn' data-type='const char *' data-ref="12warn">warn</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col3 decl" id="13params" title='params' data-type='struct __va_list_tag *' data-ref="13params">params</dfn>)</td></tr>
+<tr><th id="40">40</th><td>{</td></tr>
+<tr><th id="41">41</th><td>	<a class="ref" href="#vreportf" title='vreportf' data-ref="vreportf">vreportf</a>(<q>"warning: "</q>, <a class="local col2 ref" href="#12warn" title='warn' data-ref="12warn">warn</a>, <a class="local col3 ref" href="#13params" title='params' data-ref="13params">params</a>);</td></tr>
+<tr><th id="42">42</th><td>}</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="die_is_recursing_builtin" title='die_is_recursing_builtin' data-type='int die_is_recursing_builtin()' data-ref="die_is_recursing_builtin">die_is_recursing_builtin</dfn>(<em>void</em>)</td></tr>
+<tr><th id="45">45</th><td>{</td></tr>
+<tr><th id="46">46</th><td>	<em>static</em> <em>int</em> <dfn class="local col4 decl" id="14dying" title='dying' data-type='int' data-ref="14dying">dying</dfn>;</td></tr>
+<tr><th id="47">47</th><td>	<i>/*</i></td></tr>
+<tr><th id="48">48</th><td><i>	 * Just an arbitrary number X where "a &lt; x &lt; b" where "a" is</i></td></tr>
+<tr><th id="49">49</th><td><i>	 * "maximum number of pthreads we'll ever plausibly spawn" and</i></td></tr>
+<tr><th id="50">50</th><td><i>	 * "b" is "something less than Inf", since the point is to</i></td></tr>
+<tr><th id="51">51</th><td><i>	 * prevent infinite recursion.</i></td></tr>
+<tr><th id="52">52</th><td><i>	 */</i></td></tr>
+<tr><th id="53">53</th><td>	<em>static</em> <em>const</em> <em>int</em> <dfn class="local col5 decl" id="15recursion_limit" title='recursion_limit' data-type='const int' data-ref="15recursion_limit">recursion_limit</dfn> = <var>1024</var>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>	<a class="local col4 ref" href="#14dying" title='dying' data-ref="14dying">dying</a>++;</td></tr>
+<tr><th id="56">56</th><td>	<b>if</b> (<a class="local col4 ref" href="#14dying" title='dying' data-ref="14dying">dying</a> &gt; <a class="local col5 ref" href="#15recursion_limit" title='recursion_limit' data-ref="15recursion_limit">recursion_limit</a>) {</td></tr>
+<tr><th id="57">57</th><td>		<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="58">58</th><td>	} <b>else</b> <b>if</b> (<a class="local col4 ref" href="#14dying" title='dying' data-ref="14dying">dying</a> == <var>2</var>) {</td></tr>
+<tr><th id="59">59</th><td>		<a class="ref" href="#warning" title='warning' data-ref="warning">warning</a>(<q>"die() called many times. Recursion error or racy threaded death!"</q>);</td></tr>
+<tr><th id="60">60</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="61">61</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="62">62</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="63">63</th><td>	}</td></tr>
+<tr><th id="64">64</th><td>}</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><i  data-doc="usage_routine">/* If we are in a dlopen()ed .so write to a global variable would segfault</i></td></tr>
+<tr><th id="67">67</th><td><i  data-doc="usage_routine"> * (ugh), so keep things static. */</i></td></tr>
+<tr><th id="68">68</th><td><em>static</em> <a class="macro" href="git-compat-util.h.html#386" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN_PTR">NORETURN_PTR</a> <em>void</em> (*<dfn class="tu decl def" id="usage_routine" title='usage_routine' data-type='void (*)(const char *, struct __va_list_tag *) __attribute__((noreturn))' data-ref="usage_routine">usage_routine</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="16err" title='err' data-type='const char *' data-ref="16err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col7 decl" id="17params" title='params' data-type='struct __va_list_tag *' data-ref="17params">params</dfn>) = <a class="tu ref" href="#usage_builtin" title='usage_builtin' data-use='r' data-ref="usage_builtin">usage_builtin</a>;</td></tr>
+<tr><th id="69">69</th><td><em>static</em> <a class="macro" href="git-compat-util.h.html#386" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN_PTR">NORETURN_PTR</a> <em>void</em> (*<dfn class="tu decl def" id="die_routine" title='die_routine' data-type='void (*)(const char *, struct __va_list_tag *) __attribute__((noreturn))' data-ref="die_routine">die_routine</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="18err" title='err' data-type='const char *' data-ref="18err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col9 decl" id="19params" title='params' data-type='struct __va_list_tag *' data-ref="19params">params</dfn>) = <a class="tu ref" href="#die_builtin" title='die_builtin' data-ref="die_builtin">die_builtin</a>;</td></tr>
+<tr><th id="70">70</th><td><em>static</em> <em>void</em> (*<dfn class="tu decl def" id="error_routine" title='error_routine' data-type='void (*)(const char *, struct __va_list_tag *)' data-ref="error_routine">error_routine</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="20err" title='err' data-type='const char *' data-ref="20err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col1 decl" id="21params" title='params' data-type='struct __va_list_tag *' data-ref="21params">params</dfn>) = <a class="tu ref" href="#error_builtin" title='error_builtin' data-ref="error_builtin">error_builtin</a>;</td></tr>
+<tr><th id="71">71</th><td><em>static</em> <em>void</em> (*<dfn class="tu decl def" id="warn_routine" title='warn_routine' data-type='void (*)(const char *, struct __va_list_tag *)' data-ref="warn_routine">warn_routine</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="22err" title='err' data-type='const char *' data-ref="22err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col3 decl" id="23params" title='params' data-type='struct __va_list_tag *' data-ref="23params">params</dfn>) = <a class="tu ref" href="#warn_builtin" title='warn_builtin' data-ref="warn_builtin">warn_builtin</a>;</td></tr>
+<tr><th id="72">72</th><td><em>static</em> <em>int</em> (*<dfn class="tu decl def" id="die_is_recursing" title='die_is_recursing' data-type='int (*)(void)' data-ref="die_is_recursing">die_is_recursing</dfn>)(<em>void</em>) = <a class="tu ref" href="#die_is_recursing_builtin" title='die_is_recursing_builtin' data-ref="die_is_recursing_builtin">die_is_recursing_builtin</a>;</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><em>void</em> <dfn class="decl def" id="set_die_routine" title='set_die_routine' data-ref="set_die_routine">set_die_routine</dfn>(<a class="macro" href="git-compat-util.h.html#386" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN_PTR">NORETURN_PTR</a> <em>void</em> (*<dfn class="local col4 decl" id="24routine" title='routine' data-type='void (*)(const char *, struct __va_list_tag *) __attribute__((noreturn))' data-ref="24routine">routine</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="25err" title='err' data-type='const char *' data-ref="25err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col6 decl" id="26params" title='params' data-type='struct __va_list_tag *' data-ref="26params">params</dfn>))</td></tr>
+<tr><th id="75">75</th><td>{</td></tr>
+<tr><th id="76">76</th><td>	<a class="tu ref" href="#die_routine" title='die_routine' data-use='w' data-ref="die_routine">die_routine</a> = <a class="local col4 ref" href="#24routine" title='routine' data-ref="24routine">routine</a>;</td></tr>
+<tr><th id="77">77</th><td>}</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><em>void</em> <dfn class="decl def" id="set_error_routine" title='set_error_routine' data-ref="set_error_routine">set_error_routine</dfn>(<em>void</em> (*<dfn class="local col7 decl" id="27routine" title='routine' data-type='void (*)(const char *, struct __va_list_tag *)' data-ref="27routine">routine</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="28err" title='err' data-type='const char *' data-ref="28err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col9 decl" id="29params" title='params' data-type='struct __va_list_tag *' data-ref="29params">params</dfn>))</td></tr>
+<tr><th id="80">80</th><td>{</td></tr>
+<tr><th id="81">81</th><td>	<a class="tu ref" href="#error_routine" title='error_routine' data-use='w' data-ref="error_routine">error_routine</a> = <a class="local col7 ref" href="#27routine" title='routine' data-ref="27routine">routine</a>;</td></tr>
+<tr><th id="82">82</th><td>}</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><em>void</em> (*<dfn class="decl def" id="get_error_routine" title='get_error_routine' data-ref="get_error_routine">get_error_routine</dfn>(<em>void</em>))(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="30err" title='err' data-type='const char *' data-ref="30err">err</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col1 decl" id="31params" title='params' data-type='struct __va_list_tag *' data-ref="31params">params</dfn>)</td></tr>
+<tr><th id="85">85</th><td>{</td></tr>
+<tr><th id="86">86</th><td>	<b>return</b> <a class="tu ref" href="#error_routine" title='error_routine' data-use='r' data-ref="error_routine">error_routine</a>;</td></tr>
+<tr><th id="87">87</th><td>}</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><em>void</em> <dfn class="decl def" id="set_warn_routine" title='set_warn_routine' data-ref="set_warn_routine">set_warn_routine</dfn>(<em>void</em> (*<dfn class="local col2 decl" id="32routine" title='routine' data-type='void (*)(const char *, struct __va_list_tag *)' data-ref="32routine">routine</dfn>)(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="33warn" title='warn' data-type='const char *' data-ref="33warn">warn</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col4 decl" id="34params" title='params' data-type='struct __va_list_tag *' data-ref="34params">params</dfn>))</td></tr>
+<tr><th id="90">90</th><td>{</td></tr>
+<tr><th id="91">91</th><td>	<a class="tu ref" href="#warn_routine" title='warn_routine' data-use='w' data-ref="warn_routine">warn_routine</a> = <a class="local col2 ref" href="#32routine" title='routine' data-ref="32routine">routine</a>;</td></tr>
+<tr><th id="92">92</th><td>}</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><em>void</em> (*<dfn class="decl def" id="get_warn_routine" title='get_warn_routine' data-ref="get_warn_routine">get_warn_routine</dfn>(<em>void</em>))(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="35warn" title='warn' data-type='const char *' data-ref="35warn">warn</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col6 decl" id="36params" title='params' data-type='struct __va_list_tag *' data-ref="36params">params</dfn>)</td></tr>
+<tr><th id="95">95</th><td>{</td></tr>
+<tr><th id="96">96</th><td>	<b>return</b> <a class="tu ref" href="#warn_routine" title='warn_routine' data-use='r' data-ref="warn_routine">warn_routine</a>;</td></tr>
+<tr><th id="97">97</th><td>}</td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><em>void</em> <dfn class="decl def" id="set_die_is_recursing_routine" title='set_die_is_recursing_routine' data-ref="set_die_is_recursing_routine">set_die_is_recursing_routine</dfn>(<em>int</em> (*<dfn class="local col7 decl" id="37routine" title='routine' data-type='int (*)(void)' data-ref="37routine">routine</dfn>)(<em>void</em>))</td></tr>
+<tr><th id="100">100</th><td>{</td></tr>
+<tr><th id="101">101</th><td>	<a class="tu ref" href="#die_is_recursing" title='die_is_recursing' data-use='w' data-ref="die_is_recursing">die_is_recursing</a> = <a class="local col7 ref" href="#37routine" title='routine' data-ref="37routine">routine</a>;</td></tr>
+<tr><th id="102">102</th><td>}</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><em>void</em> <a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <dfn class="decl def" id="usagef" title='usagef' data-ref="usagef">usagef</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="38err" title='err' data-type='const char *' data-ref="38err">err</dfn>, ...)</td></tr>
+<tr><th id="105">105</th><td>{</td></tr>
+<tr><th id="106">106</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col9 decl" id="39params" title='params' data-type='va_list' data-ref="39params">params</dfn>;</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td>	<span class="macro" title="__builtin_va_start(params, err)" data-ref="_M/va_start">va_start</span>(<a class="local col9 ref" href="#39params" title='params' data-ref="39params">params</a>, <a class="local col8 ref" href="#38err" title='err' data-ref="38err">err</a>);</td></tr>
+<tr><th id="109">109</th><td>	<a class="tu ref" href="#usage_routine" title='usage_routine' data-use='r' data-ref="usage_routine">usage_routine</a>(<a class="local col8 ref" href="#38err" title='err' data-ref="38err">err</a>, <a class="local col9 ref" href="#39params" title='params' data-ref="39params">params</a>);</td></tr>
+<tr><th id="110">110</th><td>	<span class="macro" title="__builtin_va_end(params)" data-ref="_M/va_end">va_end</span>(<a class="local col9 ref" href="#39params" title='params' data-ref="39params">params</a>);</td></tr>
+<tr><th id="111">111</th><td>}</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><em>void</em> <a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <dfn class="decl def" id="usage" title='usage' data-ref="usage">usage</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="40err" title='err' data-type='const char *' data-ref="40err">err</dfn>)</td></tr>
+<tr><th id="114">114</th><td>{</td></tr>
+<tr><th id="115">115</th><td>	<a class="ref" href="#usagef" title='usagef' data-ref="usagef">usagef</a>(<q>"%s"</q>, <a class="local col0 ref" href="#40err" title='err' data-ref="40err">err</a>);</td></tr>
+<tr><th id="116">116</th><td>}</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><em>void</em> <a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <dfn class="decl def" id="die" title='die' data-ref="die">die</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="41err" title='err' data-type='const char *' data-ref="41err">err</dfn>, ...)</td></tr>
+<tr><th id="119">119</th><td>{</td></tr>
+<tr><th id="120">120</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col2 decl" id="42params" title='params' data-type='va_list' data-ref="42params">params</dfn>;</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td>	<b>if</b> (<a class="tu ref" href="#die_is_recursing" title='die_is_recursing' data-use='r' data-ref="die_is_recursing">die_is_recursing</a>()) {</td></tr>
+<tr><th id="123">123</th><td>		<a class="ref" href="../include/stdio.h.html#fputs" title='fputs' data-ref="fputs">fputs</a>(<q>"fatal: recursion detected in die handler\n"</q>, <a class="macro" href="../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>);</td></tr>
+<tr><th id="124">124</th><td>		<a class="ref" href="../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>128</var>);</td></tr>
+<tr><th id="125">125</th><td>	}</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td>	<span class="macro" title="__builtin_va_start(params, err)" data-ref="_M/va_start">va_start</span>(<a class="local col2 ref" href="#42params" title='params' data-ref="42params">params</a>, <a class="local col1 ref" href="#41err" title='err' data-ref="41err">err</a>);</td></tr>
+<tr><th id="128">128</th><td>	<a class="tu ref" href="#die_routine" title='die_routine' data-use='r' data-ref="die_routine">die_routine</a>(<a class="local col1 ref" href="#41err" title='err' data-ref="41err">err</a>, <a class="local col2 ref" href="#42params" title='params' data-ref="42params">params</a>);</td></tr>
+<tr><th id="129">129</th><td>	<span class="macro" title="__builtin_va_end(params)" data-ref="_M/va_end">va_end</span>(<a class="local col2 ref" href="#42params" title='params' data-ref="42params">params</a>);</td></tr>
+<tr><th id="130">130</th><td>}</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><em>static</em> <em>const</em> <em>char</em> *<dfn class="tu decl def" id="fmt_with_err" title='fmt_with_err' data-type='const char * fmt_with_err(char * buf, int n, const char * fmt)' data-ref="fmt_with_err">fmt_with_err</dfn>(<em>char</em> *<dfn class="local col3 decl" id="43buf" title='buf' data-type='char *' data-ref="43buf">buf</dfn>, <em>int</em> <dfn class="local col4 decl" id="44n" title='n' data-type='int' data-ref="44n">n</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="45fmt" title='fmt' data-type='const char *' data-ref="45fmt">fmt</dfn>)</td></tr>
+<tr><th id="133">133</th><td>{</td></tr>
+<tr><th id="134">134</th><td>	<em>char</em> <dfn class="local col6 decl" id="46str_error" title='str_error' data-type='char [256]' data-ref="46str_error">str_error</dfn>[<var>256</var>], *<dfn class="local col7 decl" id="47err" title='err' data-type='char *' data-ref="47err">err</dfn>;</td></tr>
+<tr><th id="135">135</th><td>	<em>int</em> <dfn class="local col8 decl" id="48i" title='i' data-type='int' data-ref="48i">i</dfn>, <dfn class="local col9 decl" id="49j" title='j' data-type='int' data-ref="49j">j</dfn>;</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td>	<a class="local col7 ref" href="#47err" title='err' data-ref="47err">err</a> = <a class="ref" href="../include/string.h.html#strerror" title='strerror' data-ref="strerror">strerror</a>(<a class="macro" href="../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a>);</td></tr>
+<tr><th id="138">138</th><td>	<b>for</b> (<a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a> = <a class="local col9 ref" href="#49j" title='j' data-ref="49j">j</a> = <var>0</var>; <a class="local col7 ref" href="#47err" title='err' data-ref="47err">err</a>[<a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a>] &amp;&amp; <a class="local col9 ref" href="#49j" title='j' data-ref="49j">j</a> &lt; <b>sizeof</b>(<a class="local col6 ref" href="#46str_error" title='str_error' data-ref="46str_error">str_error</a>) - <var>1</var>; ) {</td></tr>
+<tr><th id="139">139</th><td>		<b>if</b> ((<a class="local col6 ref" href="#46str_error" title='str_error' data-ref="46str_error">str_error</a>[<a class="local col9 ref" href="#49j" title='j' data-ref="49j">j</a>++] = <a class="local col7 ref" href="#47err" title='err' data-ref="47err">err</a>[<a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a>++]) != <kbd>'%'</kbd>)</td></tr>
+<tr><th id="140">140</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="141">141</th><td>		<b>if</b> (<a class="local col9 ref" href="#49j" title='j' data-ref="49j">j</a> &lt; <b>sizeof</b>(<a class="local col6 ref" href="#46str_error" title='str_error' data-ref="46str_error">str_error</a>) - <var>1</var>) {</td></tr>
+<tr><th id="142">142</th><td>			<a class="local col6 ref" href="#46str_error" title='str_error' data-ref="46str_error">str_error</a>[<a class="local col9 ref" href="#49j" title='j' data-ref="49j">j</a>++] = <kbd>'%'</kbd>;</td></tr>
+<tr><th id="143">143</th><td>		} <b>else</b> {</td></tr>
+<tr><th id="144">144</th><td>			<i>/* No room to double the '%', so we overwrite it with</i></td></tr>
+<tr><th id="145">145</th><td><i>			 * '\0' below */</i></td></tr>
+<tr><th id="146">146</th><td>			<a class="local col9 ref" href="#49j" title='j' data-ref="49j">j</a>--;</td></tr>
+<tr><th id="147">147</th><td>			<b>break</b>;</td></tr>
+<tr><th id="148">148</th><td>		}</td></tr>
+<tr><th id="149">149</th><td>	}</td></tr>
+<tr><th id="150">150</th><td>	<a class="local col6 ref" href="#46str_error" title='str_error' data-ref="46str_error">str_error</a>[<a class="local col9 ref" href="#49j" title='j' data-ref="49j">j</a>] = <var>0</var>;</td></tr>
+<tr><th id="151">151</th><td>	<a class="ref" href="../include/stdio.h.html#snprintf" title='snprintf' data-ref="snprintf">snprintf</a>(<a class="local col3 ref" href="#43buf" title='buf' data-ref="43buf">buf</a>, <a class="local col4 ref" href="#44n" title='n' data-ref="44n">n</a>, <q>"%s: %s"</q>, <a class="local col5 ref" href="#45fmt" title='fmt' data-ref="45fmt">fmt</a>, <a class="local col6 ref" href="#46str_error" title='str_error' data-ref="46str_error">str_error</a>);</td></tr>
+<tr><th id="152">152</th><td>	<b>return</b> <a class="local col3 ref" href="#43buf" title='buf' data-ref="43buf">buf</a>;</td></tr>
+<tr><th id="153">153</th><td>}</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><em>void</em> <a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <dfn class="decl def" id="die_errno" title='die_errno' data-ref="die_errno">die_errno</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="50fmt" title='fmt' data-type='const char *' data-ref="50fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="156">156</th><td>{</td></tr>
+<tr><th id="157">157</th><td>	<em>char</em> <dfn class="local col1 decl" id="51buf" title='buf' data-type='char [1024]' data-ref="51buf">buf</dfn>[<var>1024</var>];</td></tr>
+<tr><th id="158">158</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col2 decl" id="52params" title='params' data-type='va_list' data-ref="52params">params</dfn>;</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td>	<b>if</b> (<a class="tu ref" href="#die_is_recursing" title='die_is_recursing' data-use='r' data-ref="die_is_recursing">die_is_recursing</a>()) {</td></tr>
+<tr><th id="161">161</th><td>		<a class="ref" href="../include/stdio.h.html#fputs" title='fputs' data-ref="fputs">fputs</a>(<q>"fatal: recursion detected in die_errno handler\n"</q>,</td></tr>
+<tr><th id="162">162</th><td>			<a class="macro" href="../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>);</td></tr>
+<tr><th id="163">163</th><td>		<a class="ref" href="../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>128</var>);</td></tr>
+<tr><th id="164">164</th><td>	}</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td>	<span class="macro" title="__builtin_va_start(params, fmt)" data-ref="_M/va_start">va_start</span>(<a class="local col2 ref" href="#52params" title='params' data-ref="52params">params</a>, <a class="local col0 ref" href="#50fmt" title='fmt' data-ref="50fmt">fmt</a>);</td></tr>
+<tr><th id="167">167</th><td>	<a class="tu ref" href="#die_routine" title='die_routine' data-use='r' data-ref="die_routine">die_routine</a>(<a class="tu ref" href="#fmt_with_err" title='fmt_with_err' data-use='c' data-ref="fmt_with_err">fmt_with_err</a>(<a class="local col1 ref" href="#51buf" title='buf' data-ref="51buf">buf</a>, <b>sizeof</b>(<a class="local col1 ref" href="#51buf" title='buf' data-ref="51buf">buf</a>), <a class="local col0 ref" href="#50fmt" title='fmt' data-ref="50fmt">fmt</a>), <a class="local col2 ref" href="#52params" title='params' data-ref="52params">params</a>);</td></tr>
+<tr><th id="168">168</th><td>	<span class="macro" title="__builtin_va_end(params)" data-ref="_M/va_end">va_end</span>(<a class="local col2 ref" href="#52params" title='params' data-ref="52params">params</a>);</td></tr>
+<tr><th id="169">169</th><td>}</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td><u>#undef <a class="macro" href="git-compat-util.h.html#447" data-ref="_M/error_errno">error_errno</a></u></td></tr>
+<tr><th id="172">172</th><td><em>int</em> <dfn class="decl def" id="error_errno" title='error_errno' data-ref="error_errno">error_errno</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="53fmt" title='fmt' data-type='const char *' data-ref="53fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="173">173</th><td>{</td></tr>
+<tr><th id="174">174</th><td>	<em>char</em> <dfn class="local col4 decl" id="54buf" title='buf' data-type='char [1024]' data-ref="54buf">buf</dfn>[<var>1024</var>];</td></tr>
+<tr><th id="175">175</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col5 decl" id="55params" title='params' data-type='va_list' data-ref="55params">params</dfn>;</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td>	<span class="macro" title="__builtin_va_start(params, fmt)" data-ref="_M/va_start">va_start</span>(<a class="local col5 ref" href="#55params" title='params' data-ref="55params">params</a>, <a class="local col3 ref" href="#53fmt" title='fmt' data-ref="53fmt">fmt</a>);</td></tr>
+<tr><th id="178">178</th><td>	<a class="tu ref" href="#error_routine" title='error_routine' data-use='r' data-ref="error_routine">error_routine</a>(<a class="tu ref" href="#fmt_with_err" title='fmt_with_err' data-use='c' data-ref="fmt_with_err">fmt_with_err</a>(<a class="local col4 ref" href="#54buf" title='buf' data-ref="54buf">buf</a>, <b>sizeof</b>(<a class="local col4 ref" href="#54buf" title='buf' data-ref="54buf">buf</a>), <a class="local col3 ref" href="#53fmt" title='fmt' data-ref="53fmt">fmt</a>), <a class="local col5 ref" href="#55params" title='params' data-ref="55params">params</a>);</td></tr>
+<tr><th id="179">179</th><td>	<span class="macro" title="__builtin_va_end(params)" data-ref="_M/va_end">va_end</span>(<a class="local col5 ref" href="#55params" title='params' data-ref="55params">params</a>);</td></tr>
+<tr><th id="180">180</th><td>	<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="181">181</th><td>}</td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td><u>#undef <a class="macro" href="git-compat-util.h.html#446" data-ref="_M/error">error</a></u></td></tr>
+<tr><th id="184">184</th><td><em>int</em> <dfn class="decl def" id="error" title='error' data-ref="error">error</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="56err" title='err' data-type='const char *' data-ref="56err">err</dfn>, ...)</td></tr>
+<tr><th id="185">185</th><td>{</td></tr>
+<tr><th id="186">186</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col7 decl" id="57params" title='params' data-type='va_list' data-ref="57params">params</dfn>;</td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td>	<span class="macro" title="__builtin_va_start(params, err)" data-ref="_M/va_start">va_start</span>(<a class="local col7 ref" href="#57params" title='params' data-ref="57params">params</a>, <a class="local col6 ref" href="#56err" title='err' data-ref="56err">err</a>);</td></tr>
+<tr><th id="189">189</th><td>	<a class="tu ref" href="#error_routine" title='error_routine' data-use='r' data-ref="error_routine">error_routine</a>(<a class="local col6 ref" href="#56err" title='err' data-ref="56err">err</a>, <a class="local col7 ref" href="#57params" title='params' data-ref="57params">params</a>);</td></tr>
+<tr><th id="190">190</th><td>	<span class="macro" title="__builtin_va_end(params)" data-ref="_M/va_end">va_end</span>(<a class="local col7 ref" href="#57params" title='params' data-ref="57params">params</a>);</td></tr>
+<tr><th id="191">191</th><td>	<b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="192">192</th><td>}</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><em>void</em> <dfn class="decl def" id="warning_errno" title='warning_errno' data-ref="warning_errno">warning_errno</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="58warn" title='warn' data-type='const char *' data-ref="58warn">warn</dfn>, ...)</td></tr>
+<tr><th id="195">195</th><td>{</td></tr>
+<tr><th id="196">196</th><td>	<em>char</em> <dfn class="local col9 decl" id="59buf" title='buf' data-type='char [1024]' data-ref="59buf">buf</dfn>[<var>1024</var>];</td></tr>
+<tr><th id="197">197</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col0 decl" id="60params" title='params' data-type='va_list' data-ref="60params">params</dfn>;</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td>	<span class="macro" title="__builtin_va_start(params, warn)" data-ref="_M/va_start">va_start</span>(<a class="local col0 ref" href="#60params" title='params' data-ref="60params">params</a>, <a class="local col8 ref" href="#58warn" title='warn' data-ref="58warn">warn</a>);</td></tr>
+<tr><th id="200">200</th><td>	<a class="tu ref" href="#warn_routine" title='warn_routine' data-use='r' data-ref="warn_routine">warn_routine</a>(<a class="tu ref" href="#fmt_with_err" title='fmt_with_err' data-use='c' data-ref="fmt_with_err">fmt_with_err</a>(<a class="local col9 ref" href="#59buf" title='buf' data-ref="59buf">buf</a>, <b>sizeof</b>(<a class="local col9 ref" href="#59buf" title='buf' data-ref="59buf">buf</a>), <a class="local col8 ref" href="#58warn" title='warn' data-ref="58warn">warn</a>), <a class="local col0 ref" href="#60params" title='params' data-ref="60params">params</a>);</td></tr>
+<tr><th id="201">201</th><td>	<span class="macro" title="__builtin_va_end(params)" data-ref="_M/va_end">va_end</span>(<a class="local col0 ref" href="#60params" title='params' data-ref="60params">params</a>);</td></tr>
+<tr><th id="202">202</th><td>}</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td><em>void</em> <dfn class="decl def" id="warning" title='warning' data-ref="warning">warning</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="61warn" title='warn' data-type='const char *' data-ref="61warn">warn</dfn>, ...)</td></tr>
+<tr><th id="205">205</th><td>{</td></tr>
+<tr><th id="206">206</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col2 decl" id="62params" title='params' data-type='va_list' data-ref="62params">params</dfn>;</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td>	<span class="macro" title="__builtin_va_start(params, warn)" data-ref="_M/va_start">va_start</span>(<a class="local col2 ref" href="#62params" title='params' data-ref="62params">params</a>, <a class="local col1 ref" href="#61warn" title='warn' data-ref="61warn">warn</a>);</td></tr>
+<tr><th id="209">209</th><td>	<a class="tu ref" href="#warn_routine" title='warn_routine' data-use='r' data-ref="warn_routine">warn_routine</a>(<a class="local col1 ref" href="#61warn" title='warn' data-ref="61warn">warn</a>, <a class="local col2 ref" href="#62params" title='params' data-ref="62params">params</a>);</td></tr>
+<tr><th id="210">210</th><td>	<span class="macro" title="__builtin_va_end(params)" data-ref="_M/va_end">va_end</span>(<a class="local col2 ref" href="#62params" title='params' data-ref="62params">params</a>);</td></tr>
+<tr><th id="211">211</th><td>}</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><em>static</em> <a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <em>void</em> <dfn class="tu decl def" id="BUG_vfl" title='BUG_vfl' data-type='void BUG_vfl(const char * file, int line, const char * fmt, struct __va_list_tag * params)' data-ref="BUG_vfl">BUG_vfl</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="63file" title='file' data-type='const char *' data-ref="63file">file</dfn>, <em>int</em> <dfn class="local col4 decl" id="64line" title='line' data-type='int' data-ref="64line">line</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="65fmt" title='fmt' data-type='const char *' data-ref="65fmt">fmt</dfn>, <span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col6 decl" id="66params" title='params' data-type='struct __va_list_tag *' data-ref="66params">params</dfn>)</td></tr>
+<tr><th id="214">214</th><td>{</td></tr>
+<tr><th id="215">215</th><td>	<em>char</em> <dfn class="local col7 decl" id="67prefix" title='prefix' data-type='char [256]' data-ref="67prefix">prefix</dfn>[<var>256</var>];</td></tr>
+<tr><th id="216">216</th><td></td></tr>
+<tr><th id="217">217</th><td>	<i>/* truncation via snprintf is OK here */</i></td></tr>
+<tr><th id="218">218</th><td>	<b>if</b> (<a class="local col3 ref" href="#63file" title='file' data-ref="63file">file</a>)</td></tr>
+<tr><th id="219">219</th><td>		<a class="ref" href="../include/stdio.h.html#snprintf" title='snprintf' data-ref="snprintf">snprintf</a>(<a class="local col7 ref" href="#67prefix" title='prefix' data-ref="67prefix">prefix</a>, <b>sizeof</b>(<a class="local col7 ref" href="#67prefix" title='prefix' data-ref="67prefix">prefix</a>), <q>"BUG: %s:%d: "</q>, <a class="local col3 ref" href="#63file" title='file' data-ref="63file">file</a>, <a class="local col4 ref" href="#64line" title='line' data-ref="64line">line</a>);</td></tr>
+<tr><th id="220">220</th><td>	<b>else</b></td></tr>
+<tr><th id="221">221</th><td>		<a class="ref" href="../include/stdio.h.html#snprintf" title='snprintf' data-ref="snprintf">snprintf</a>(<a class="local col7 ref" href="#67prefix" title='prefix' data-ref="67prefix">prefix</a>, <b>sizeof</b>(<a class="local col7 ref" href="#67prefix" title='prefix' data-ref="67prefix">prefix</a>), <q>"BUG: "</q>);</td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td>	<a class="ref" href="#vreportf" title='vreportf' data-ref="vreportf">vreportf</a>(<a class="local col7 ref" href="#67prefix" title='prefix' data-ref="67prefix">prefix</a>, <a class="local col5 ref" href="#65fmt" title='fmt' data-ref="65fmt">fmt</a>, <a class="local col6 ref" href="#66params" title='params' data-ref="66params">params</a>);</td></tr>
+<tr><th id="224">224</th><td>	<a class="ref" href="../include/stdlib.h.html#abort" title='abort' data-ref="abort">abort</a>();</td></tr>
+<tr><th id="225">225</th><td>}</td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td><u>#<span data-ppcond="227">ifdef</span> <a class="macro" href="git-compat-util.h.html#1088" data-ref="_M/HAVE_VARIADIC_MACROS">HAVE_VARIADIC_MACROS</a></u></td></tr>
+<tr><th id="228">228</th><td><a class="macro" href="git-compat-util.h.html#385" title="__attribute__((__noreturn__))" data-ref="_M/NORETURN">NORETURN</a> <em>void</em> <dfn class="decl def" id="BUG_fl" title='BUG_fl' data-ref="BUG_fl">BUG_fl</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="68file" title='file' data-type='const char *' data-ref="68file">file</dfn>, <em>int</em> <dfn class="local col9 decl" id="69line" title='line' data-type='int' data-ref="69line">line</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="70fmt" title='fmt' data-type='const char *' data-ref="70fmt">fmt</dfn>, ...)</td></tr>
+<tr><th id="229">229</th><td>{</td></tr>
+<tr><th id="230">230</th><td>	<span class='typedef' title='va_list' data-type='__gnuc_va_list' data-ref="va_list">va_list</span> <dfn class="local col1 decl" id="71ap" title='ap' data-type='va_list' data-ref="71ap">ap</dfn>;</td></tr>
+<tr><th id="231">231</th><td>	<span class="macro" title="__builtin_va_start(ap, fmt)" data-ref="_M/va_start">va_start</span>(<a class="local col1 ref" href="#71ap" title='ap' data-ref="71ap">ap</a>, <a class="local col0 ref" href="#70fmt" title='fmt' data-ref="70fmt">fmt</a>);</td></tr>
+<tr><th id="232">232</th><td>	<a class="tu ref" href="#BUG_vfl" title='BUG_vfl' data-use='c' data-ref="BUG_vfl">BUG_vfl</a>(<a class="local col8 ref" href="#68file" title='file' data-ref="68file">file</a>, <a class="local col9 ref" href="#69line" title='line' data-ref="69line">line</a>, <a class="local col0 ref" href="#70fmt" title='fmt' data-ref="70fmt">fmt</a>, <a class="local col1 ref" href="#71ap" title='ap' data-ref="71ap">ap</a>);</td></tr>
+<tr><th id="233">233</th><td>	<span class="macro" title="__builtin_va_end(ap)" data-ref="_M/va_end">va_end</span>(<a class="local col1 ref" href="#71ap" title='ap' data-ref="71ap">ap</a>);</td></tr>
+<tr><th id="234">234</th><td>}</td></tr>
+<tr><th id="235">235</th><td><u>#<span data-ppcond="227">else</span></u></td></tr>
+<tr><th id="236">236</th><td>NORETURN <em>void</em> BUG(<em>const</em> <em>char</em> *fmt, ...)</td></tr>
+<tr><th id="237">237</th><td>{</td></tr>
+<tr><th id="238">238</th><td>	va_list ap;</td></tr>
+<tr><th id="239">239</th><td>	va_start(ap, fmt);</td></tr>
+<tr><th id="240">240</th><td>	BUG_vfl(NULL, <var>0</var>, fmt, ap);</td></tr>
+<tr><th id="241">241</th><td>	va_end(ap);</td></tr>
+<tr><th id="242">242</th><td>}</td></tr>
+<tr><th id="243">243</th><td><u>#<span data-ppcond="227">endif</span></u></td></tr>
+<tr><th id="244">244</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

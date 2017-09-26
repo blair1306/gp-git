@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs.h' l='294' type='int for_each_tag_ref(each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='667' u='c' c='compute_write_order'/>
+<def f='codebrowser/refs.c' l='334' ll='337' type='int for_each_tag_ref(each_ref_fn * fn, void * cb_data)'/>

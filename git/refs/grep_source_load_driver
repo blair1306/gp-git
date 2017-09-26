@@ -1,0 +1,6 @@
+<dec f='codebrowser/grep.h' l='211' type='void grep_source_load_driver(struct grep_source * gs)'/>
+<use f='codebrowser/builtin/grep.c' l='106' u='c' c='add_work'/>
+<use f='codebrowser/grep.c' l='1437' u='c' c='match_funcname'/>
+<use f='codebrowser/grep.c' l='1672' u='c' c='grep_source_1'/>
+<def f='codebrowser/grep.c' l='2026' ll='2037' type='void grep_source_load_driver(struct grep_source * gs)'/>
+<use f='codebrowser/grep.c' l='2041' u='c' c='grep_source_is_binary'/>

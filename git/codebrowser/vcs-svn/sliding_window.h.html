@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sliding_window.h source code [codebrowser/vcs-svn/sliding_window.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="sliding_view "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/vcs-svn/sliding_window.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>vcs-svn</a>/<a href='sliding_window.h.html'>sliding_window.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/SLIDING_WINDOW_H_">SLIDING_WINDOW_H_</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/SLIDING_WINDOW_H_" data-ref="_M/SLIDING_WINDOW_H_">SLIDING_WINDOW_H_</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../strbuf.h.html">"strbuf.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <dfn class="type def" id="sliding_view" title='sliding_view' data-ref="sliding_view">sliding_view</dfn> {</td></tr>
+<tr><th id="7">7</th><td>	<b>struct</b> <a class="type" href="line_buffer.h.html#line_buffer" title='line_buffer' data-ref="line_buffer">line_buffer</a> *<dfn class="decl" id="sliding_view::file" title='sliding_view::file' data-ref="sliding_view::file">file</dfn>;</td></tr>
+<tr><th id="8">8</th><td>	<a class="typedef" href="../../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="decl" id="sliding_view::off" title='sliding_view::off' data-ref="sliding_view::off">off</dfn>;</td></tr>
+<tr><th id="9">9</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="sliding_view::width" title='sliding_view::width' data-ref="sliding_view::width">width</dfn>;</td></tr>
+<tr><th id="10">10</th><td>	<a class="typedef" href="../../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="decl" id="sliding_view::max_off" title='sliding_view::max_off' data-ref="sliding_view::max_off">max_off</dfn>;	<i>/* -1 means unlimited */</i></td></tr>
+<tr><th id="11">11</th><td>	<b>struct</b> <a class="type" href="../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="sliding_view::buf" title='sliding_view::buf' data-ref="sliding_view::buf">buf</dfn>;</td></tr>
+<tr><th id="12">12</th><td>};</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><u>#define <dfn class="macro" id="_M/SLIDING_VIEW_INIT" data-ref="_M/SLIDING_VIEW_INIT">SLIDING_VIEW_INIT</dfn>(input, len)	{ (input), 0, 0, (len), STRBUF_INIT }</u></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="move_window" title='move_window' data-ref="move_window">move_window</dfn>(<b>struct</b> <a class="type" href="#sliding_view" title='sliding_view' data-ref="sliding_view">sliding_view</a> *<dfn class="local col5 decl" id="5view" title='view' data-type='struct sliding_view *' data-ref="5view">view</dfn>, <a class="typedef" href="../../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col6 decl" id="6off" title='off' data-type='off_t' data-ref="6off">off</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="7width" title='width' data-type='size_t' data-ref="7width">width</dfn>);</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../t/helper/test-svn-fe.c.html'>codebrowser/t/helper/test-svn-fe.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

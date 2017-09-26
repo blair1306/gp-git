@@ -1,0 +1,19 @@
+<dec f='codebrowser/ref-filter.h' l='48' type='struct ref_array_item **'/>
+<use f='codebrowser/builtin/branch.c' l='292' u='r' c='calc_maxwidth'/>
+<use f='codebrowser/builtin/branch.c' l='420' u='r' c='print_ref_list'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/for-each-ref.c' l='84' u='r' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='64' u='r' c='list_tags'/>
+<use f='codebrowser/ref-filter.c' l='1882' u='w' c='ref_filter_handler'/>
+<use f='codebrowser/ref-filter.c' l='1882' u='r' c='ref_filter_handler'/>
+<use f='codebrowser/ref-filter.c' l='1882' u='r' c='ref_filter_handler'/>
+<use f='codebrowser/ref-filter.c' l='1883' u='r' c='ref_filter_handler'/>
+<use f='codebrowser/ref-filter.c' l='1901' u='r' c='ref_array_clear'/>
+<use f='codebrowser/ref-filter.c' l='1902' u='r' c='ref_array_clear'/>
+<use f='codebrowser/ref-filter.c' l='1902' u='w' c='ref_array_clear'/>
+<use f='codebrowser/ref-filter.c' l='1917' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='1933' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='1939' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='1939' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='2046' u='r' c='ref_array_sort'/>
+<use f='codebrowser/ref-filter.c' l='2046' u='r' c='ref_array_sort'/>

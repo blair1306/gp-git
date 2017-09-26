@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='862' type='struct string_list'/>
+<offset>192</offset>
+<use f='codebrowser/setup.c' l='429' u='a' c='check_repo_format'/>
+<use f='codebrowser/setup.c' l='471' u='a' c='check_repository_format_gently'/>
+<use f='codebrowser/setup.c' l='495' u='a' c='read_repository_format'/>
+<use f='codebrowser/setup.c' l='509' u='m' c='verify_repository_format'/>
+<use f='codebrowser/setup.c' l='514' u='m' c='verify_repository_format'/>
+<use f='codebrowser/setup.c' l='516' u='m' c='verify_repository_format'/>

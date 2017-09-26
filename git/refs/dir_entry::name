@@ -1,0 +1,55 @@
+<dec f='codebrowser/dir.h' l='10' type='char []'/>
+<use f='codebrowser/dir.h' l='338' u='r' c='dir_path_match'/>
+<use f='codebrowser/dir.h' l='340' u='r' c='dir_path_match'/>
+<offset>32</offset>
+<doc f='codebrowser/dir.h' l='10'>/* more */</doc>
+<use f='codebrowser/builtin/add.c' l='348' c='add_files'/>
+<use f='codebrowser/builtin/add.c' l='354' u='r' c='add_files'/>
+<use f='codebrowser/builtin/add.c' l='355' u='r' c='add_files'/>
+<use f='codebrowser/builtin/clean.c' l='976' u='r' c='cmd_clean'/>
+<use f='codebrowser/builtin/clean.c' l='985' u='r' c='cmd_clean'/>
+<use f='codebrowser/builtin/clean.c' l='986' c='cmd_clean'/>
+<use f='codebrowser/builtin/clean.c' l='992' u='r' c='cmd_clean'/>
+<use f='codebrowser/builtin/grep.c' l='674' u='r' c='grep_directory'/>
+<use f='codebrowser/builtin/ls-files.c' l='132' u='r' c='show_dir_entry'/>
+<use f='codebrowser/builtin/ls-files.c' l='133' u='r' c='show_dir_entry'/>
+<use f='codebrowser/builtin/ls-files.c' l='143' u='r' c='show_other_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='158' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='158' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='164' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='167' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='181' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='186' u='r' c='show_killed_files'/>
+<use f='codebrowser/builtin/ls-files.c' l='186' u='r' c='show_killed_files'/>
+<use f='codebrowser/dir.c' l='1254' u='r' c='dir_entry_new'/>
+<use f='codebrowser/dir.c' l='1887' u='r' c='cmp_dir_entry'/>
+<use f='codebrowser/dir.c' l='1887' u='r' c='cmp_dir_entry'/>
+<use f='codebrowser/dir.c' l='1894' u='r' c='check_dir_entry_contains'/>
+<use f='codebrowser/dir.c' l='1895' u='r' c='check_dir_entry_contains'/>
+<use f='codebrowser/dir.c' l='1895' u='r' c='check_dir_entry_contains'/>
+<use f='codebrowser/wt-status.c' l='673' u='r' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='675' u='r' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='681' u='r' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='683' u='r' c='wt_status_collect_untracked'/>

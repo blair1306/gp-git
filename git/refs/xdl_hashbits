@@ -1,0 +1,5 @@
+<dec f='codebrowser/xdiff/xutils.h' l='38' type='unsigned int xdl_hashbits(unsigned int size)'/>
+<use f='codebrowser/xdiff/xhistogram.c' l='295' u='c' c='histogram_diff'/>
+<use f='codebrowser/xdiff/xprepare.c' l='74' u='c' c='xdl_init_classifier'/>
+<use f='codebrowser/xdiff/xprepare.c' l='187' u='c' c='xdl_prepare_ctx'/>
+<def f='codebrowser/xdiff/xutils.c' l='283' ll='288' type='unsigned int xdl_hashbits(unsigned int size)'/>

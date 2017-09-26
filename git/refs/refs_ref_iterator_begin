@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs/refs-internal.h' l='372' type='struct ref_iterator * refs_ref_iterator_begin(struct ref_store * refs, const char * prefix, int trim, int flags)'/>
+<def f='codebrowser/refs.c' l='1274' ll='1295' type='struct ref_iterator * refs_ref_iterator_begin(struct ref_store * refs, const char * prefix, int trim, int flags)'/>
+<use f='codebrowser/refs.c' l='1314' u='c' c='do_for_each_ref'/>
+<use f='codebrowser/refs.c' l='1905' u='c' c='refs_verify_refname_available'/>
+<doc f='codebrowser/refs/refs-internal.h' l='365'>/*
+ * Return an iterator that goes over each reference in `refs` for
+ * which the refname begins with prefix. If trim is non-zero, then
+ * trim that many characters off the beginning of each refname. flags
+ * can be DO_FOR_EACH_INCLUDE_BROKEN to include broken references in
+ * the iteration.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='808' u='c' c='files_ref_iterator_begin'/>

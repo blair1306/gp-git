@@ -1,0 +1,9 @@
+<def f='codebrowser/list.h' l='77' ll='80' type='void list_del(struct list_head * elem)'/>
+<use f='codebrowser/list.h' l='85' u='c' c='list_del_init'/>
+<use f='codebrowser/list.h' l='161' u='c' c='list_replace_init'/>
+<use f='codebrowser/http-walker.c' l='118' u='c' c='release_object_request'/>
+<doc f='codebrowser/list.h' l='76'>/* Remove element from list. */</doc>
+<use f='codebrowser/sha1_file.c' l='2304' u='c' c='detach_delta_base_cache_entry'/>
+<use f='codebrowser/trailer.c' l='282' u='c' c='apply_arg_if_exists'/>
+<use f='codebrowser/trailer.c' l='367' u='c' c='process_trailers_lists'/>
+<use f='codebrowser/trailer.c' l='935' u='c' c='free_all'/>

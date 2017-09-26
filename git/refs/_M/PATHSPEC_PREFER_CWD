@@ -1,0 +1,13 @@
+<dec f='codebrowser/pathspec.h' l='58'/>
+<doc f='codebrowser/pathspec.h' l='57'>/* parse_pathspec flags */</doc>
+<use f='codebrowser/builtin/clean.c' l='964' u='c'/>
+<use f='codebrowser/builtin/grep.c' l='1011' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='439' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='625' u='c'/>
+<use f='codebrowser/builtin/ls-tree.c' l='179' u='c'/>
+<use f='codebrowser/builtin/rerere.c' l='79' u='c'/>
+<use f='codebrowser/builtin/rm.c' l='275' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='719' u='c'/>
+<use f='codebrowser/pathspec.c' l='550' u='c'/>
+<use f='codebrowser/pathspec.c' l='559' u='c'/>
+<use f='codebrowser/pathspec.c' l='612' u='c'/>

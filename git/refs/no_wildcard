@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='213' type='int no_wildcard(const char * string)'/>
+<use f='codebrowser/builtin/checkout.c' l='996' u='c' c='parse_branchname_arg'/>
+<def f='codebrowser/dir.c' l='534' ll='537' type='int no_wildcard(const char * string)'/>
+<use f='codebrowser/dir.c' l='571' u='c' c='parse_exclude_pattern'/>
+<use f='codebrowser/pathspec.c' l='482' u='c' c='init_pathspec_item'/>
+<use f='codebrowser/setup.c' l='198' u='c' c='looks_like_pathspec'/>

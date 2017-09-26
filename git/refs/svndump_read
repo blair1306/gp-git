@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/svndump.h' l='6' type='void svndump_read(const char * url, const char * local_ref, const char * notes_ref)'/>
+<use f='codebrowser/remote-testsvn.c' l='215' u='c' c='cmd_import'/>
+<use f='codebrowser/t/helper/test-svn-fe.c' l='43' u='c' c='cmd_main'/>
+<def f='codebrowser/vcs-svn/svndump.c' l='325' ll='483' type='void svndump_read(const char * url, const char * local_ref, const char * notes_ref)'/>

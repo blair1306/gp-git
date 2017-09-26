@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='94' type='unsigned int'/>
+<offset>935</offset>
+<use f='codebrowser/revision.c' l='675' u='r' c='try_to_simplify_commit'/>
+<use f='codebrowser/revision.c' l='1803' u='w' c='handle_revision_opt'/>

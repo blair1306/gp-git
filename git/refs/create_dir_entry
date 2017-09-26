@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs/ref-cache.h' l='183' type='struct ref_entry * create_dir_entry(struct ref_cache * cache, const char * dirname, size_t len, int incomplete)'/>
+<use f='codebrowser/refs/files-backend.c' l='195' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='242' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='267' u='c' c='get_loose_ref_cache'/>
+<doc f='codebrowser/refs/ref-cache.h' l='178'>/*
+ * Create a struct ref_entry object for the specified dirname.
+ * dirname is the name of the directory with a trailing slash (e.g.,
+ * &quot;refs/heads/&quot;) or &quot;&quot; for the top-level directory.
+ */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='53' u='c' c='create_ref_cache'/>
+<def f='codebrowser/refs/ref-cache.c' l='89' ll='99' type='struct ref_entry * create_dir_entry(struct ref_cache * cache, const char * dirname, size_t len, int incomplete)'/>
+<use f='codebrowser/refs/ref-cache.c' l='167' u='c' c='search_for_subdir'/>

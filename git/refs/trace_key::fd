@@ -1,0 +1,10 @@
+<dec f='codebrowser/trace.h' l='9' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/trace.c' l='50' u='r' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='56' u='w' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='58' u='w' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='60' u='w' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='68' u='w' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='80' u='r' c='get_trace_fd'/>
+<use f='codebrowser/trace.c' l='88' u='r' c='trace_disable'/>
+<use f='codebrowser/trace.c' l='89' u='w' c='trace_disable'/>

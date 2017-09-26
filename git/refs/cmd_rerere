@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='211' type='int cmd_rerere(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/rerere.c' l='52' ll='117' type='int cmd_rerere(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='453'/>
+<use f='codebrowser/git.c' l='453'/>
+<use f='codebrowser/git.c' l='453'/>
+<use f='codebrowser/git.c' l='453'/>

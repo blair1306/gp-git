@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs/refs-internal.h' l='646' type='ref_transaction_commit_fn *'/>
+<use f='codebrowser/refs.c' l='2041' u='r' c='initial_ref_transaction_commit'/>
+<offset>448</offset>

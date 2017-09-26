@@ -1,0 +1,22 @@
+<dec f='codebrowser/cache.h' l='714' type='int refresh_index(struct index_state * , unsigned int flags, const struct pathspec * pathspec, char * seen, const char * header_msg)'/>
+<use f='codebrowser/builtin/add.c' l='150' u='c' c='refresh'/>
+<use f='codebrowser/builtin/am.c' l='1130' macro='1' u='c'/>
+<use f='codebrowser/builtin/am.c' l='1949' macro='1' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='497' macro='1' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='332' macro='1' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='474' macro='1' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='486' macro='1' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='1389' u='c' c='cmd_status'/>
+<use f='codebrowser/builtin/describe.c' l='541' u='c' c='cmd_describe'/>
+<use f='codebrowser/builtin/diff.c' l='215' macro='1' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='330' macro='1' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='645' macro='1' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='794' macro='1' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1399' macro='1' u='c'/>
+<use f='codebrowser/builtin/reset.c' l='378' u='c' c='cmd_reset'/>
+<use f='codebrowser/builtin/rm.c' l='277' u='c' c='cmd_rm'/>
+<use f='codebrowser/builtin/update-index.c' l='769' macro='1' u='c'/>
+<use f='codebrowser/merge.c' l='58' macro='1' u='c'/>
+<def f='codebrowser/read-cache.c' l='1325' ll='1416' type='int refresh_index(struct index_state * istate, unsigned int flags, const struct pathspec * pathspec, char * seen, const char * header_msg)'/>
+<use f='codebrowser/sequencer.c' l='1183' u='c' c='read_and_refresh_cache'/>
+<use f='codebrowser/wt-status.c' l='2304' macro='1' u='c'/>

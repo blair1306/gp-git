@@ -1,0 +1,6 @@
+<dec f='include/netdb.h' l='576' type='struct addrinfo *'/>
+<offset>320</offset>
+<doc f='include/netdb.h' l='576'>/* Pointer to next in list.  */</doc>
+<use f='codebrowser/connect.c' l='398' u='r' c='git_tcp_connect_sock'/>
+<use f='codebrowser/daemon.c' l='948' u='r' c='setup_named_sock'/>
+<use f='codebrowser/imap-send.c' l='981' u='r' c='imap_open_store'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/log-tree.h' l='27' type='void load_ref_decorations(int flags)'/>
+<use f='codebrowser/builtin/log.c' l='209' u='c' c='cmd_log_init_finish'/>
+<def f='codebrowser/log-tree.c' l='151' ll='161' type='void load_ref_decorations(int flags)'/>
+<use f='codebrowser/pretty.c' l='1180' u='c' c='format_commit_one'/>
+<use f='codebrowser/pretty.c' l='1184' u='c' c='format_commit_one'/>
+<use f='codebrowser/revision.c' l='1779' u='c' c='handle_revision_opt'/>

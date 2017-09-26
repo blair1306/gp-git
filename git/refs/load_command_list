@@ -1,0 +1,6 @@
+<dec f='codebrowser/help.h' l='21' type='void load_command_list(const char * prefix, struct cmdnames * main_cmds, struct cmdnames * other_cmds)'/>
+<use f='codebrowser/builtin/help.c' l='286' u='c' c='is_git_command'/>
+<use f='codebrowser/builtin/help.c' l='464' u='c' c='cmd_help'/>
+<use f='codebrowser/builtin/merge.c' l='128' u='c' c='get_strategy'/>
+<def f='codebrowser/help.c' l='140' ll='172' type='void load_command_list(const char * prefix, struct cmdnames * main_cmds, struct cmdnames * other_cmds)'/>
+<use f='codebrowser/help.c' l='295' u='c' c='help_unknown_cmd'/>

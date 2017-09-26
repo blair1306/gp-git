@@ -1,0 +1,11 @@
+<dec f='codebrowser/tag.h' l='15' type='struct tag * lookup_tag(const struct object_id * oid)'/>
+<use f='codebrowser/builtin/describe.c' l='88' u='c' c='replace_name'/>
+<use f='codebrowser/builtin/describe.c' l='94' u='c' c='replace_name'/>
+<use f='codebrowser/builtin/describe.c' l='254' u='c' c='display_name'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2347' u='c' c='add_tag_chain'/>
+<use f='codebrowser/builtin/replace.c' l='359' u='c' c='check_one_mergetag'/>
+<use f='codebrowser/log-tree.c' l='492' u='c' c='show_one_mergetag'/>
+<use f='codebrowser/object.c' l='219' u='c' c='parse_object_buffer'/>
+<use f='codebrowser/sha1_name.c' l='374' u='c' c='show_ambiguous_object'/>
+<def f='codebrowser/tag.c' l='92' ll='98' type='struct tag * lookup_tag(const struct object_id * oid)'/>
+<use f='codebrowser/tag.c' l='151' u='c' c='parse_tag_buffer'/>

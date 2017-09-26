@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='1722' type='off_t find_pack_entry_one(const unsigned char * sha1, struct packed_git * )'/>
+<doc f='codebrowser/cache.h' l='1718'>/*
+ * If the object named sha1 is present in the specified packfile,
+ * return its offset within the packfile; otherwise, return 0.
+ */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='1021' u='c' c='want_object_in_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2566' u='c' c='mark_in_pack_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2663' u='c' c='has_sha1_pack_kept_or_nonlocal'/>
+<use f='codebrowser/connected.c' l='89' u='c' c='check_connected'/>
+<use f='codebrowser/pack-bitmap.c' l='376' u='c' c='bitmap_position_packfile'/>
+<use f='codebrowser/pack-bitmap.c' l='646' u='c' c='in_bitmapped_pack'/>
+<use f='codebrowser/sha1_file.c' l='2080' u='c' c='get_delta_base'/>
+<def f='codebrowser/sha1_file.c' l='2761' ll='2811' type='off_t find_pack_entry_one(const unsigned char * sha1, struct packed_git * p)'/>
+<use f='codebrowser/sha1_file.c' l='2847' u='c' c='fill_pack_entry'/>
+<use f='codebrowser/sha1_file.c' l='2893' u='c' c='find_sha1_pack'/>

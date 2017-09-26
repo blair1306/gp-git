@@ -1,0 +1,8 @@
+<dec f='codebrowser/reflog-walk.c' l='109' type='size_t'/>
+<use f='codebrowser/reflog-walk.c' l='198' u='r' c='add_reflog_for_walk'/>
+<use f='codebrowser/reflog-walk.c' l='198' u='r' c='add_reflog_for_walk'/>
+<use f='codebrowser/reflog-walk.c' l='198' u='r' c='add_reflog_for_walk'/>
+<use f='codebrowser/reflog-walk.c' l='199' u='w' c='add_reflog_for_walk'/>
+<use f='codebrowser/reflog-walk.c' l='303' u='r' c='reflog_walk_empty'/>
+<use f='codebrowser/reflog-walk.c' l='329' u='r' c='next_reflog_entry'/>
+<offset>64</offset>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/http.h' l='66' type='struct slot_results *'/>
+<offset>256</offset>
+<use f='codebrowser/http-push.c' l='449' u='w' c='refresh_lock'/>
+<use f='codebrowser/http-push.c' l='855' u='w' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='885' u='w' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='952' u='w' c='unlock_remote'/>
+<use f='codebrowser/http-push.c' l='1139' u='w' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1213' u='w' c='locking_available'/>
+<use f='codebrowser/http-push.c' l='1380' u='w' c='update_remote'/>
+<use f='codebrowser/http-push.c' l='1493' u='w' c='update_remote_info_refs'/>
+<use f='codebrowser/http-push.c' l='1651' u='w' c='delete_remote_branch'/>
+<use f='codebrowser/http-walker.c' l='443' u='w' c='http_fetch_pack'/>
+<use f='codebrowser/http.c' l='208' u='r' c='finish_active_slot'/>
+<use f='codebrowser/http.c' l='209' u='r' c='finish_active_slot'/>
+<use f='codebrowser/http.c' l='210' u='r' c='finish_active_slot'/>
+<use f='codebrowser/http.c' l='213' u='r' c='finish_active_slot'/>
+<use f='codebrowser/http.c' l='219' u='r' c='finish_active_slot'/>
+<use f='codebrowser/http.c' l='1097' u='w' c='get_active_slot'/>
+<use f='codebrowser/http.c' l='1422' u='w' c='run_one_slot'/>

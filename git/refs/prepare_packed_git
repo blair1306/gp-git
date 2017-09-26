@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='1630' type='void prepare_packed_git()'/>
+<use f='codebrowser/builtin/count-objects.c' l='123' u='c' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/fsck.c' l='709' u='c' c='cmd_fsck'/>
+<use f='codebrowser/builtin/gc.c' l='174' u='c' c='too_many_packs'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3049' u='c' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='631' u='c' c='cmd_pack_redundant'/>
+<use f='codebrowser/fast-import.c' l='3471' u='c' c='cmd_main'/>
+<use f='codebrowser/http-backend.c' l='520' u='c' c='get_info_packs'/>
+<use f='codebrowser/pack-bitmap.c' l='336' u='c' c='open_pack_bitmap'/>
+<use f='codebrowser/server-info.c' l='201' u='c' c='init_pack_info'/>
+<use f='codebrowser/sha1_file.c' l='1515' u='c' c='approximate_object_count'/>
+<def f='codebrowser/sha1_file.c' l='1580' ll='1593' type='void prepare_packed_git()'/>
+<use f='codebrowser/sha1_file.c' l='1599' u='c' c='reprepare_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='2874' u='c' c='find_pack_entry'/>
+<use f='codebrowser/sha1_file.c' l='3879' u='c' c='for_each_packed_object'/>
+<use f='codebrowser/sha1_name.c' l='194' u='c' c='find_short_packed_object'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/sequencer.h' l='11' type='2'/>
+<use f='codebrowser/builtin/rebase--helper.c' l='29' u='r' c='cmd_rebase__helper'/>
+<use f='codebrowser/sequencer.c' l='134' u='r' c='is_rebase_i'/>
+<use f='codebrowser/sequencer.c' l='220' c='action_name'/>

@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>remote.h source code [codebrowser/remote.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="branch,match_refs_flags,push_cas,push_cas_option,ref,refspec,remote "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/remote.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='remote.h.html'>remote.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/REMOTE_H">REMOTE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/REMOTE_H" data-ref="_M/REMOTE_H">REMOTE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="parse-options.h.html">"parse-options.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="hashmap.h.html">"hashmap.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><b>enum</b> {</td></tr>
+<tr><th id="8">8</th><td>	<dfn class="enum" id="REMOTE_UNCONFIGURED" title='REMOTE_UNCONFIGURED' data-ref="REMOTE_UNCONFIGURED">REMOTE_UNCONFIGURED</dfn> = <var>0</var>,</td></tr>
+<tr><th id="9">9</th><td>	<dfn class="enum" id="REMOTE_CONFIG" title='REMOTE_CONFIG' data-ref="REMOTE_CONFIG">REMOTE_CONFIG</dfn>,</td></tr>
+<tr><th id="10">10</th><td>	<dfn class="enum" id="REMOTE_REMOTES" title='REMOTE_REMOTES' data-ref="REMOTE_REMOTES">REMOTE_REMOTES</dfn>,</td></tr>
+<tr><th id="11">11</th><td>	<dfn class="enum" id="REMOTE_BRANCHES" title='REMOTE_BRANCHES' data-ref="REMOTE_BRANCHES">REMOTE_BRANCHES</dfn></td></tr>
+<tr><th id="12">12</th><td>};</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><b>struct</b> <dfn class="type def" id="remote" title='remote' data-ref="remote">remote</dfn> {</td></tr>
+<tr><th id="15">15</th><td>	<b>struct</b> <a class="type" href="hashmap.h.html#hashmap_entry" title='hashmap_entry' data-ref="hashmap_entry">hashmap_entry</a> <dfn class="decl" id="remote::ent" title='remote::ent' data-ref="remote::ent">ent</dfn>;  <i>/* must be first */</i></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="remote::name" title='remote::name' data-ref="remote::name">name</dfn>;</td></tr>
+<tr><th id="18">18</th><td>	<em>int</em> <dfn class="decl" id="remote::origin" title='remote::origin' data-ref="remote::origin">origin</dfn>, <dfn class="decl" id="remote::configured_in_repo" title='remote::configured_in_repo' data-ref="remote::configured_in_repo">configured_in_repo</dfn>;</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="remote::foreign_vcs" title='remote::foreign_vcs' data-ref="remote::foreign_vcs">foreign_vcs</dfn>;</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td>	<em>const</em> <em>char</em> **<dfn class="decl" id="remote::url" title='remote::url' data-ref="remote::url">url</dfn>;</td></tr>
+<tr><th id="23">23</th><td>	<em>int</em> <dfn class="decl" id="remote::url_nr" title='remote::url_nr' data-ref="remote::url_nr">url_nr</dfn>;</td></tr>
+<tr><th id="24">24</th><td>	<em>int</em> <dfn class="decl" id="remote::url_alloc" title='remote::url_alloc' data-ref="remote::url_alloc">url_alloc</dfn>;</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>	<em>const</em> <em>char</em> **<dfn class="decl" id="remote::pushurl" title='remote::pushurl' data-ref="remote::pushurl">pushurl</dfn>;</td></tr>
+<tr><th id="27">27</th><td>	<em>int</em> <dfn class="decl" id="remote::pushurl_nr" title='remote::pushurl_nr' data-ref="remote::pushurl_nr">pushurl_nr</dfn>;</td></tr>
+<tr><th id="28">28</th><td>	<em>int</em> <dfn class="decl" id="remote::pushurl_alloc" title='remote::pushurl_alloc' data-ref="remote::pushurl_alloc">pushurl_alloc</dfn>;</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>	<em>const</em> <em>char</em> **<dfn class="decl" id="remote::push_refspec" title='remote::push_refspec' data-ref="remote::push_refspec">push_refspec</dfn>;</td></tr>
+<tr><th id="31">31</th><td>	<b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="decl" id="remote::push" title='remote::push' data-ref="remote::push">push</dfn>;</td></tr>
+<tr><th id="32">32</th><td>	<em>int</em> <dfn class="decl" id="remote::push_refspec_nr" title='remote::push_refspec_nr' data-ref="remote::push_refspec_nr">push_refspec_nr</dfn>;</td></tr>
+<tr><th id="33">33</th><td>	<em>int</em> <dfn class="decl" id="remote::push_refspec_alloc" title='remote::push_refspec_alloc' data-ref="remote::push_refspec_alloc">push_refspec_alloc</dfn>;</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>	<em>const</em> <em>char</em> **<dfn class="decl" id="remote::fetch_refspec" title='remote::fetch_refspec' data-ref="remote::fetch_refspec">fetch_refspec</dfn>;</td></tr>
+<tr><th id="36">36</th><td>	<b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="decl" id="remote::fetch" title='remote::fetch' data-ref="remote::fetch">fetch</dfn>;</td></tr>
+<tr><th id="37">37</th><td>	<em>int</em> <dfn class="decl" id="remote::fetch_refspec_nr" title='remote::fetch_refspec_nr' data-ref="remote::fetch_refspec_nr">fetch_refspec_nr</dfn>;</td></tr>
+<tr><th id="38">38</th><td>	<em>int</em> <dfn class="decl" id="remote::fetch_refspec_alloc" title='remote::fetch_refspec_alloc' data-ref="remote::fetch_refspec_alloc">fetch_refspec_alloc</dfn>;</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>	<i>/*</i></td></tr>
+<tr><th id="41">41</th><td><i>	 * -1 to never fetch tags</i></td></tr>
+<tr><th id="42">42</th><td><i>	 * 0 to auto-follow tags on heuristic (default)</i></td></tr>
+<tr><th id="43">43</th><td><i>	 * 1 to always auto-follow tags</i></td></tr>
+<tr><th id="44">44</th><td><i>	 * 2 to always fetch tags</i></td></tr>
+<tr><th id="45">45</th><td><i>	 */</i></td></tr>
+<tr><th id="46">46</th><td>	<em>int</em> <dfn class="decl" id="remote::fetch_tags" title='remote::fetch_tags' data-ref="remote::fetch_tags">fetch_tags</dfn>;</td></tr>
+<tr><th id="47">47</th><td>	<em>int</em> <dfn class="decl" id="remote::skip_default_update" title='remote::skip_default_update' data-ref="remote::skip_default_update">skip_default_update</dfn>;</td></tr>
+<tr><th id="48">48</th><td>	<em>int</em> <dfn class="decl" id="remote::mirror" title='remote::mirror' data-ref="remote::mirror">mirror</dfn>;</td></tr>
+<tr><th id="49">49</th><td>	<em>int</em> <dfn class="decl" id="remote::prune" title='remote::prune' data-ref="remote::prune">prune</dfn>;</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="remote::receivepack" title='remote::receivepack' data-ref="remote::receivepack">receivepack</dfn>;</td></tr>
+<tr><th id="52">52</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="remote::uploadpack" title='remote::uploadpack' data-ref="remote::uploadpack">uploadpack</dfn>;</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>	<i>/*</i></td></tr>
+<tr><th id="55">55</th><td><i>	 * for curl remotes only</i></td></tr>
+<tr><th id="56">56</th><td><i>	 */</i></td></tr>
+<tr><th id="57">57</th><td>	<em>char</em> *<dfn class="decl" id="remote::http_proxy" title='remote::http_proxy' data-ref="remote::http_proxy">http_proxy</dfn>;</td></tr>
+<tr><th id="58">58</th><td>	<em>char</em> *<dfn class="decl" id="remote::http_proxy_authmethod" title='remote::http_proxy_authmethod' data-ref="remote::http_proxy_authmethod">http_proxy_authmethod</dfn>;</td></tr>
+<tr><th id="59">59</th><td>};</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><b>struct</b> <a class="type" href="#remote" title='remote' data-ref="remote">remote</a> *<dfn class="decl" id="remote_get" title='remote_get' data-ref="remote_get">remote_get</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="22name" title='name' data-type='const char *' data-ref="22name">name</dfn>);</td></tr>
+<tr><th id="62">62</th><td><b>struct</b> <a class="type" href="#remote" title='remote' data-ref="remote">remote</a> *<dfn class="decl" id="pushremote_get" title='pushremote_get' data-ref="pushremote_get">pushremote_get</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="23name" title='name' data-type='const char *' data-ref="23name">name</dfn>);</td></tr>
+<tr><th id="63">63</th><td><em>int</em> <dfn class="decl" id="remote_is_configured" title='remote_is_configured' data-ref="remote_is_configured">remote_is_configured</dfn>(<b>struct</b> <a class="type" href="#remote" title='remote' data-ref="remote">remote</a> *<dfn class="local col4 decl" id="24remote" title='remote' data-type='struct remote *' data-ref="24remote">remote</dfn>, <em>int</em> <dfn class="local col5 decl" id="25in_repo" title='in_repo' data-type='int' data-ref="25in_repo">in_repo</dfn>);</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="each_remote_fn" title='each_remote_fn' data-type='int (struct remote *, void *)' data-ref="each_remote_fn">each_remote_fn</dfn>(<b>struct</b> <a class="type" href="#remote" title='remote' data-ref="remote">remote</a> *<dfn class="local col6 decl" id="26remote" title='remote' data-type='struct remote *' data-ref="26remote">remote</dfn>, <em>void</em> *<dfn class="local col7 decl" id="27priv" title='priv' data-type='void *' data-ref="27priv">priv</dfn>);</td></tr>
+<tr><th id="66">66</th><td><em>int</em> <dfn class="decl" id="for_each_remote" title='for_each_remote' data-ref="for_each_remote">for_each_remote</dfn>(<a class="typedef" href="#each_remote_fn" title='each_remote_fn' data-type='int (struct remote *, void *)' data-ref="each_remote_fn">each_remote_fn</a> <dfn class="local col8 decl" id="28fn" title='fn' data-type='each_remote_fn *' data-ref="28fn">fn</dfn>, <em>void</em> *<dfn class="local col9 decl" id="29priv" title='priv' data-type='void *' data-ref="29priv">priv</dfn>);</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><em>int</em> <dfn class="decl" id="remote_has_url" title='remote_has_url' data-ref="remote_has_url">remote_has_url</dfn>(<b>struct</b> <a class="type" href="#remote" title='remote' data-ref="remote">remote</a> *<dfn class="local col0 decl" id="30remote" title='remote' data-type='struct remote *' data-ref="30remote">remote</dfn>, <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="31url" title='url' data-type='const char *' data-ref="31url">url</dfn>);</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><b>struct</b> <dfn class="type def" id="refspec" title='refspec' data-ref="refspec">refspec</dfn> {</td></tr>
+<tr><th id="71">71</th><td>	<em>unsigned</em> <dfn class="decl" id="refspec::force" title='refspec::force' data-ref="refspec::force">force</dfn> : <var>1</var>;</td></tr>
+<tr><th id="72">72</th><td>	<em>unsigned</em> <dfn class="decl" id="refspec::pattern" title='refspec::pattern' data-ref="refspec::pattern">pattern</dfn> : <var>1</var>;</td></tr>
+<tr><th id="73">73</th><td>	<em>unsigned</em> <dfn class="decl" id="refspec::matching" title='refspec::matching' data-ref="refspec::matching">matching</dfn> : <var>1</var>;</td></tr>
+<tr><th id="74">74</th><td>	<em>unsigned</em> <dfn class="decl" id="refspec::exact_sha1" title='refspec::exact_sha1' data-ref="refspec::exact_sha1">exact_sha1</dfn> : <var>1</var>;</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>	<em>char</em> *<dfn class="decl" id="refspec::src" title='refspec::src' data-ref="refspec::src">src</dfn>;</td></tr>
+<tr><th id="77">77</th><td>	<em>char</em> *<dfn class="decl" id="refspec::dst" title='refspec::dst' data-ref="refspec::dst">dst</dfn>;</td></tr>
+<tr><th id="78">78</th><td>};</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><b>extern</b> <em>const</em> <b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="decl" id="tag_refspec" title='tag_refspec' data-ref="tag_refspec">tag_refspec</dfn>;</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><b>struct</b> <dfn class="type def" id="ref" title='ref' data-ref="ref">ref</dfn> {</td></tr>
+<tr><th id="83">83</th><td>	<b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="ref::next" title='ref::next' data-ref="ref::next">next</dfn>;</td></tr>
+<tr><th id="84">84</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="ref::old_oid" title='ref::old_oid' data-ref="ref::old_oid">old_oid</dfn>;</td></tr>
+<tr><th id="85">85</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="ref::new_oid" title='ref::new_oid' data-ref="ref::new_oid">new_oid</dfn>;</td></tr>
+<tr><th id="86">86</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="ref::old_oid_expect" title='ref::old_oid_expect' data-ref="ref::old_oid_expect">old_oid_expect</dfn>; <i>/* used by expect-old */</i></td></tr>
+<tr><th id="87">87</th><td>	<em>char</em> *<dfn class="decl" id="ref::symref" title='ref::symref' data-ref="ref::symref">symref</dfn>;</td></tr>
+<tr><th id="88">88</th><td>	<em>unsigned</em> <em>int</em></td></tr>
+<tr><th id="89">89</th><td>		<dfn class="decl" id="ref::force" title='ref::force' data-ref="ref::force">force</dfn>:<var>1</var>,</td></tr>
+<tr><th id="90">90</th><td>		<dfn class="decl" id="ref::forced_update" title='ref::forced_update' data-ref="ref::forced_update">forced_update</dfn>:<var>1</var>,</td></tr>
+<tr><th id="91">91</th><td>		<dfn class="decl" id="ref::expect_old_sha1" title='ref::expect_old_sha1' data-ref="ref::expect_old_sha1">expect_old_sha1</dfn>:<var>1</var>,</td></tr>
+<tr><th id="92">92</th><td>		<dfn class="decl" id="ref::deletion" title='ref::deletion' data-ref="ref::deletion">deletion</dfn>:<var>1</var>;</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td>	<b>enum</b> {</td></tr>
+<tr><th id="95">95</th><td>		<dfn class="enum" id="ref::REF_NOT_MATCHED" title='ref::REF_NOT_MATCHED' data-ref="ref::REF_NOT_MATCHED">REF_NOT_MATCHED</dfn> = <var>0</var>, <i>/* initial value */</i></td></tr>
+<tr><th id="96">96</th><td>		<dfn class="enum" id="ref::REF_MATCHED" title='ref::REF_MATCHED' data-ref="ref::REF_MATCHED">REF_MATCHED</dfn>,</td></tr>
+<tr><th id="97">97</th><td>		<dfn class="enum" id="ref::REF_UNADVERTISED_NOT_ALLOWED" title='ref::REF_UNADVERTISED_NOT_ALLOWED' data-ref="ref::REF_UNADVERTISED_NOT_ALLOWED">REF_UNADVERTISED_NOT_ALLOWED</dfn></td></tr>
+<tr><th id="98">98</th><td>	} <dfn class="decl" id="ref::match_status" title='ref::match_status' data-ref="ref::match_status">match_status</dfn>;</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td>	<i>/*</i></td></tr>
+<tr><th id="101">101</th><td><i>	 * Order is important here, as we write to FETCH_HEAD</i></td></tr>
+<tr><th id="102">102</th><td><i>	 * in numeric order. And the default NOT_FOR_MERGE</i></td></tr>
+<tr><th id="103">103</th><td><i>	 * should be 0, so that xcalloc'd structures get it</i></td></tr>
+<tr><th id="104">104</th><td><i>	 * by default.</i></td></tr>
+<tr><th id="105">105</th><td><i>	 */</i></td></tr>
+<tr><th id="106">106</th><td>	<b>enum</b> {</td></tr>
+<tr><th id="107">107</th><td>		<dfn class="enum" id="ref::FETCH_HEAD_MERGE" title='ref::FETCH_HEAD_MERGE' data-ref="ref::FETCH_HEAD_MERGE">FETCH_HEAD_MERGE</dfn> = -<var>1</var>,</td></tr>
+<tr><th id="108">108</th><td>		<dfn class="enum" id="ref::FETCH_HEAD_NOT_FOR_MERGE" title='ref::FETCH_HEAD_NOT_FOR_MERGE' data-ref="ref::FETCH_HEAD_NOT_FOR_MERGE">FETCH_HEAD_NOT_FOR_MERGE</dfn> = <var>0</var>,</td></tr>
+<tr><th id="109">109</th><td>		<dfn class="enum" id="ref::FETCH_HEAD_IGNORE" title='ref::FETCH_HEAD_IGNORE' data-ref="ref::FETCH_HEAD_IGNORE">FETCH_HEAD_IGNORE</dfn> = <var>1</var></td></tr>
+<tr><th id="110">110</th><td>	} <dfn class="decl" id="ref::fetch_head_status" title='ref::fetch_head_status' data-ref="ref::fetch_head_status">fetch_head_status</dfn>;</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>	<b>enum</b> {</td></tr>
+<tr><th id="113">113</th><td>		<dfn class="enum" id="ref::REF_STATUS_NONE" title='ref::REF_STATUS_NONE' data-ref="ref::REF_STATUS_NONE">REF_STATUS_NONE</dfn> = <var>0</var>,</td></tr>
+<tr><th id="114">114</th><td>		<dfn class="enum" id="ref::REF_STATUS_OK" title='ref::REF_STATUS_OK' data-ref="ref::REF_STATUS_OK">REF_STATUS_OK</dfn>,</td></tr>
+<tr><th id="115">115</th><td>		<dfn class="enum" id="ref::REF_STATUS_REJECT_NONFASTFORWARD" title='ref::REF_STATUS_REJECT_NONFASTFORWARD' data-ref="ref::REF_STATUS_REJECT_NONFASTFORWARD">REF_STATUS_REJECT_NONFASTFORWARD</dfn>,</td></tr>
+<tr><th id="116">116</th><td>		<dfn class="enum" id="ref::REF_STATUS_REJECT_ALREADY_EXISTS" title='ref::REF_STATUS_REJECT_ALREADY_EXISTS' data-ref="ref::REF_STATUS_REJECT_ALREADY_EXISTS">REF_STATUS_REJECT_ALREADY_EXISTS</dfn>,</td></tr>
+<tr><th id="117">117</th><td>		<dfn class="enum" id="ref::REF_STATUS_REJECT_NODELETE" title='ref::REF_STATUS_REJECT_NODELETE' data-ref="ref::REF_STATUS_REJECT_NODELETE">REF_STATUS_REJECT_NODELETE</dfn>,</td></tr>
+<tr><th id="118">118</th><td>		<dfn class="enum" id="ref::REF_STATUS_REJECT_FETCH_FIRST" title='ref::REF_STATUS_REJECT_FETCH_FIRST' data-ref="ref::REF_STATUS_REJECT_FETCH_FIRST">REF_STATUS_REJECT_FETCH_FIRST</dfn>,</td></tr>
+<tr><th id="119">119</th><td>		<dfn class="enum" id="ref::REF_STATUS_REJECT_NEEDS_FORCE" title='ref::REF_STATUS_REJECT_NEEDS_FORCE' data-ref="ref::REF_STATUS_REJECT_NEEDS_FORCE">REF_STATUS_REJECT_NEEDS_FORCE</dfn>,</td></tr>
+<tr><th id="120">120</th><td>		<dfn class="enum" id="ref::REF_STATUS_REJECT_STALE" title='ref::REF_STATUS_REJECT_STALE' data-ref="ref::REF_STATUS_REJECT_STALE">REF_STATUS_REJECT_STALE</dfn>,</td></tr>
+<tr><th id="121">121</th><td>		<dfn class="enum" id="ref::REF_STATUS_REJECT_SHALLOW" title='ref::REF_STATUS_REJECT_SHALLOW' data-ref="ref::REF_STATUS_REJECT_SHALLOW">REF_STATUS_REJECT_SHALLOW</dfn>,</td></tr>
+<tr><th id="122">122</th><td>		<dfn class="enum" id="ref::REF_STATUS_UPTODATE" title='ref::REF_STATUS_UPTODATE' data-ref="ref::REF_STATUS_UPTODATE">REF_STATUS_UPTODATE</dfn>,</td></tr>
+<tr><th id="123">123</th><td>		<dfn class="enum" id="ref::REF_STATUS_REMOTE_REJECT" title='ref::REF_STATUS_REMOTE_REJECT' data-ref="ref::REF_STATUS_REMOTE_REJECT">REF_STATUS_REMOTE_REJECT</dfn>,</td></tr>
+<tr><th id="124">124</th><td>		<dfn class="enum" id="ref::REF_STATUS_EXPECTING_REPORT" title='ref::REF_STATUS_EXPECTING_REPORT' data-ref="ref::REF_STATUS_EXPECTING_REPORT">REF_STATUS_EXPECTING_REPORT</dfn>,</td></tr>
+<tr><th id="125">125</th><td>		<dfn class="enum" id="ref::REF_STATUS_ATOMIC_PUSH_FAILED" title='ref::REF_STATUS_ATOMIC_PUSH_FAILED' data-ref="ref::REF_STATUS_ATOMIC_PUSH_FAILED">REF_STATUS_ATOMIC_PUSH_FAILED</dfn></td></tr>
+<tr><th id="126">126</th><td>	} <dfn class="decl" id="ref::status" title='ref::status' data-ref="ref::status">status</dfn>;</td></tr>
+<tr><th id="127">127</th><td>	<em>char</em> *<dfn class="decl" id="ref::remote_status" title='ref::remote_status' data-ref="ref::remote_status">remote_status</dfn>;</td></tr>
+<tr><th id="128">128</th><td>	<b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="ref::peer_ref" title='ref::peer_ref' data-ref="ref::peer_ref">peer_ref</dfn>; <i>/* when renaming */</i></td></tr>
+<tr><th id="129">129</th><td>	<em>char</em> <dfn class="decl" id="ref::name" title='ref::name' data-ref="ref::name">name</dfn>[<a class="macro" href="git-compat-util.h.html#28" title="" data-ref="_M/FLEX_ARRAY">FLEX_ARRAY</a>]; <i>/* more */</i></td></tr>
+<tr><th id="130">130</th><td>};</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><u>#define <dfn class="macro" id="_M/REF_NORMAL" data-ref="_M/REF_NORMAL">REF_NORMAL</dfn>	(1u &lt;&lt; 0)</u></td></tr>
+<tr><th id="133">133</th><td><u>#define <dfn class="macro" id="_M/REF_HEADS" data-ref="_M/REF_HEADS">REF_HEADS</dfn>	(1u &lt;&lt; 1)</u></td></tr>
+<tr><th id="134">134</th><td><u>#define <dfn class="macro" id="_M/REF_TAGS" data-ref="_M/REF_TAGS">REF_TAGS</dfn>	(1u &lt;&lt; 2)</u></td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><b>extern</b> <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="find_ref_by_name" title='find_ref_by_name' data-ref="find_ref_by_name">find_ref_by_name</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col2 decl" id="32list" title='list' data-type='const struct ref *' data-ref="32list">list</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="33name" title='name' data-type='const char *' data-ref="33name">name</dfn>);</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="alloc_ref" title='alloc_ref' data-ref="alloc_ref">alloc_ref</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="34name" title='name' data-type='const char *' data-ref="34name">name</dfn>);</td></tr>
+<tr><th id="139">139</th><td><b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="copy_ref" title='copy_ref' data-ref="copy_ref">copy_ref</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col5 decl" id="35ref" title='ref' data-type='const struct ref *' data-ref="35ref">ref</dfn>);</td></tr>
+<tr><th id="140">140</th><td><b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="copy_ref_list" title='copy_ref_list' data-ref="copy_ref_list">copy_ref_list</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col6 decl" id="36ref" title='ref' data-type='const struct ref *' data-ref="36ref">ref</dfn>);</td></tr>
+<tr><th id="141">141</th><td><em>void</em> <dfn class="decl" id="sort_ref_list" title='sort_ref_list' data-ref="sort_ref_list">sort_ref_list</dfn>(<b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> **, <em>int</em> (*<dfn class="local col7 decl" id="37cmp" title='cmp' data-type='int (*)(const void *, const void *)' data-ref="37cmp">cmp</dfn>)(<em>const</em> <em>void</em> *, <em>const</em> <em>void</em> *));</td></tr>
+<tr><th id="142">142</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="count_refspec_match" title='count_refspec_match' data-ref="count_refspec_match">count_refspec_match</dfn>(<em>const</em> <em>char</em> *, <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col8 decl" id="38refs" title='refs' data-type='struct ref *' data-ref="38refs">refs</dfn>, <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> **<dfn class="local col9 decl" id="39matched_ref" title='matched_ref' data-type='struct ref **' data-ref="39matched_ref">matched_ref</dfn>);</td></tr>
+<tr><th id="143">143</th><td><em>int</em> <dfn class="decl" id="ref_compare_name" title='ref_compare_name' data-ref="ref_compare_name">ref_compare_name</dfn>(<em>const</em> <em>void</em> *, <em>const</em> <em>void</em> *);</td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><em>int</em> <dfn class="decl" id="check_ref_type" title='check_ref_type' data-ref="check_ref_type">check_ref_type</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col0 decl" id="40ref" title='ref' data-type='const struct ref *' data-ref="40ref">ref</dfn>, <em>int</em> <dfn class="local col1 decl" id="41flags" title='flags' data-type='int' data-ref="41flags">flags</dfn>);</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td><i>/*</i></td></tr>
+<tr><th id="148">148</th><td><i> * Frees the entire list and peers of elements.</i></td></tr>
+<tr><th id="149">149</th><td><i> */</i></td></tr>
+<tr><th id="150">150</th><td><em>void</em> <dfn class="decl" id="free_refs" title='free_refs' data-ref="free_refs">free_refs</dfn>(<b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col2 decl" id="42ref" title='ref' data-type='struct ref *' data-ref="42ref">ref</dfn>);</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><b>struct</b> <a class="type" href="sha1-array.h.html#oid_array" title='oid_array' data-ref="oid_array" id="oid_array">oid_array</a>;</td></tr>
+<tr><th id="153">153</th><td><b>extern</b> <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> **<dfn class="decl" id="get_remote_heads" title='get_remote_heads' data-ref="get_remote_heads">get_remote_heads</dfn>(<em>int</em> <dfn class="local col3 decl" id="43in" title='in' data-type='int' data-ref="43in">in</dfn>, <em>char</em> *<dfn class="local col4 decl" id="44src_buf" title='src_buf' data-type='char *' data-ref="44src_buf">src_buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="45src_len" title='src_len' data-type='size_t' data-ref="45src_len">src_len</dfn>,</td></tr>
+<tr><th id="154">154</th><td>				     <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> **<dfn class="local col6 decl" id="46list" title='list' data-type='struct ref **' data-ref="46list">list</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col7 decl" id="47flags" title='flags' data-type='unsigned int' data-ref="47flags">flags</dfn>,</td></tr>
+<tr><th id="155">155</th><td>				     <b>struct</b> <a class="type" href="sha1-array.h.html#oid_array" title='oid_array' data-ref="oid_array">oid_array</a> *<dfn class="local col8 decl" id="48extra_have" title='extra_have' data-type='struct oid_array *' data-ref="48extra_have">extra_have</dfn>,</td></tr>
+<tr><th id="156">156</th><td>				     <b>struct</b> <a class="type" href="sha1-array.h.html#oid_array" title='oid_array' data-ref="oid_array">oid_array</a> *<dfn class="local col9 decl" id="49shallow" title='shallow' data-type='struct oid_array *' data-ref="49shallow">shallow</dfn>);</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><em>int</em> <dfn class="decl" id="resolve_remote_symref" title='resolve_remote_symref' data-ref="resolve_remote_symref">resolve_remote_symref</dfn>(<b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col0 decl" id="50ref" title='ref' data-type='struct ref *' data-ref="50ref">ref</dfn>, <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col1 decl" id="51list" title='list' data-type='struct ref *' data-ref="51list">list</dfn>);</td></tr>
+<tr><th id="159">159</th><td><em>int</em> <dfn class="decl" id="ref_newer" title='ref_newer' data-ref="ref_newer">ref_newer</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col2 decl" id="52new_oid" title='new_oid' data-type='const struct object_id *' data-ref="52new_oid">new_oid</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col3 decl" id="53old_oid" title='old_oid' data-type='const struct object_id *' data-ref="53old_oid">old_oid</dfn>);</td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td><i>/*</i></td></tr>
+<tr><th id="162">162</th><td><i> * Remove and free all but the first of any entries in the input list</i></td></tr>
+<tr><th id="163">163</th><td><i> * that map the same remote reference to the same local reference.  If</i></td></tr>
+<tr><th id="164">164</th><td><i> * there are two entries that map different remote references to the</i></td></tr>
+<tr><th id="165">165</th><td><i> * same local reference, emit an error message and die.  Return a</i></td></tr>
+<tr><th id="166">166</th><td><i> * pointer to the head of the resulting list.</i></td></tr>
+<tr><th id="167">167</th><td><i> */</i></td></tr>
+<tr><th id="168">168</th><td><b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="ref_remove_duplicates" title='ref_remove_duplicates' data-ref="ref_remove_duplicates">ref_remove_duplicates</dfn>(<b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col4 decl" id="54ref_map" title='ref_map' data-type='struct ref *' data-ref="54ref_map">ref_map</dfn>);</td></tr>
+<tr><th id="169">169</th><td></td></tr>
+<tr><th id="170">170</th><td><em>int</em> <dfn class="decl" id="valid_fetch_refspec" title='valid_fetch_refspec' data-ref="valid_fetch_refspec">valid_fetch_refspec</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="55refspec" title='refspec' data-type='const char *' data-ref="55refspec">refspec</dfn>);</td></tr>
+<tr><th id="171">171</th><td><b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="decl" id="parse_fetch_refspec" title='parse_fetch_refspec' data-ref="parse_fetch_refspec">parse_fetch_refspec</dfn>(<em>int</em> <dfn class="local col6 decl" id="56nr_refspec" title='nr_refspec' data-type='int' data-ref="56nr_refspec">nr_refspec</dfn>, <em>const</em> <em>char</em> **<dfn class="local col7 decl" id="57refspec" title='refspec' data-type='const char **' data-ref="57refspec">refspec</dfn>);</td></tr>
+<tr><th id="172">172</th><td><b>extern</b> <b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="decl" id="parse_push_refspec" title='parse_push_refspec' data-ref="parse_push_refspec">parse_push_refspec</dfn>(<em>int</em> <dfn class="local col8 decl" id="58nr_refspec" title='nr_refspec' data-type='int' data-ref="58nr_refspec">nr_refspec</dfn>, <em>const</em> <em>char</em> **<dfn class="local col9 decl" id="59refspec" title='refspec' data-type='const char **' data-ref="59refspec">refspec</dfn>);</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><em>void</em> <dfn class="decl" id="free_refspec" title='free_refspec' data-ref="free_refspec">free_refspec</dfn>(<em>int</em> <dfn class="local col0 decl" id="60nr_refspec" title='nr_refspec' data-type='int' data-ref="60nr_refspec">nr_refspec</dfn>, <b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="local col1 decl" id="61refspec" title='refspec' data-type='struct refspec *' data-ref="61refspec">refspec</dfn>);</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="query_refspecs" title='query_refspecs' data-ref="query_refspecs">query_refspecs</dfn>(<b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="local col2 decl" id="62specs" title='specs' data-type='struct refspec *' data-ref="62specs">specs</dfn>, <em>int</em> <dfn class="local col3 decl" id="63nr" title='nr' data-type='int' data-ref="63nr">nr</dfn>, <b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="local col4 decl" id="64query" title='query' data-type='struct refspec *' data-ref="64query">query</dfn>);</td></tr>
+<tr><th id="177">177</th><td><em>char</em> *<dfn class="decl" id="apply_refspecs" title='apply_refspecs' data-ref="apply_refspecs">apply_refspecs</dfn>(<b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="local col5 decl" id="65refspecs" title='refspecs' data-type='struct refspec *' data-ref="65refspecs">refspecs</dfn>, <em>int</em> <dfn class="local col6 decl" id="66nr_refspec" title='nr_refspec' data-type='int' data-ref="66nr_refspec">nr_refspec</dfn>,</td></tr>
+<tr><th id="178">178</th><td>		     <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="67name" title='name' data-type='const char *' data-ref="67name">name</dfn>);</td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td><em>int</em> <dfn class="decl" id="check_push_refs" title='check_push_refs' data-ref="check_push_refs">check_push_refs</dfn>(<b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col8 decl" id="68src" title='src' data-type='struct ref *' data-ref="68src">src</dfn>, <em>int</em> <dfn class="local col9 decl" id="69nr_refspec" title='nr_refspec' data-type='int' data-ref="69nr_refspec">nr_refspec</dfn>, <em>const</em> <em>char</em> **<dfn class="local col0 decl" id="70refspec" title='refspec' data-type='const char **' data-ref="70refspec">refspec</dfn>);</td></tr>
+<tr><th id="181">181</th><td><em>int</em> <dfn class="decl" id="match_push_refs" title='match_push_refs' data-ref="match_push_refs">match_push_refs</dfn>(<b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col1 decl" id="71src" title='src' data-type='struct ref *' data-ref="71src">src</dfn>, <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> **<dfn class="local col2 decl" id="72dst" title='dst' data-type='struct ref **' data-ref="72dst">dst</dfn>,</td></tr>
+<tr><th id="182">182</th><td>		    <em>int</em> <dfn class="local col3 decl" id="73nr_refspec" title='nr_refspec' data-type='int' data-ref="73nr_refspec">nr_refspec</dfn>, <em>const</em> <em>char</em> **<dfn class="local col4 decl" id="74refspec" title='refspec' data-type='const char **' data-ref="74refspec">refspec</dfn>, <em>int</em> <dfn class="local col5 decl" id="75all" title='all' data-type='int' data-ref="75all">all</dfn>);</td></tr>
+<tr><th id="183">183</th><td><em>void</em> <dfn class="decl" id="set_ref_status_for_push" title='set_ref_status_for_push' data-ref="set_ref_status_for_push">set_ref_status_for_push</dfn>(<b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col6 decl" id="76remote_refs" title='remote_refs' data-type='struct ref *' data-ref="76remote_refs">remote_refs</dfn>, <em>int</em> <dfn class="local col7 decl" id="77send_mirror" title='send_mirror' data-type='int' data-ref="77send_mirror">send_mirror</dfn>,</td></tr>
+<tr><th id="184">184</th><td>	<em>int</em> <dfn class="local col8 decl" id="78force_update" title='force_update' data-type='int' data-ref="78force_update">force_update</dfn>);</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><i>/*</i></td></tr>
+<tr><th id="187">187</th><td><i> * Given a list of the remote refs and the specification of things to</i></td></tr>
+<tr><th id="188">188</th><td><i> * fetch, makes a (separate) list of the refs to fetch and the local</i></td></tr>
+<tr><th id="189">189</th><td><i> * refs to store into.</i></td></tr>
+<tr><th id="190">190</th><td><i> *</i></td></tr>
+<tr><th id="191">191</th><td><i> * *tail is the pointer to the tail pointer of the list of results</i></td></tr>
+<tr><th id="192">192</th><td><i> * beforehand, and will be set to the tail pointer of the list of</i></td></tr>
+<tr><th id="193">193</th><td><i> * results afterward.</i></td></tr>
+<tr><th id="194">194</th><td><i> *</i></td></tr>
+<tr><th id="195">195</th><td><i> * missing_ok is usually false, but when we are adding branch.$name.merge</i></td></tr>
+<tr><th id="196">196</th><td><i> * it is Ok if the branch is not at the remote anymore.</i></td></tr>
+<tr><th id="197">197</th><td><i> */</i></td></tr>
+<tr><th id="198">198</th><td><em>int</em> <dfn class="decl" id="get_fetch_map" title='get_fetch_map' data-ref="get_fetch_map">get_fetch_map</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col9 decl" id="79remote_refs" title='remote_refs' data-type='const struct ref *' data-ref="79remote_refs">remote_refs</dfn>, <em>const</em> <b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="local col0 decl" id="80refspec" title='refspec' data-type='const struct refspec *' data-ref="80refspec">refspec</dfn>,</td></tr>
+<tr><th id="199">199</th><td>		  <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> ***<dfn class="local col1 decl" id="81tail" title='tail' data-type='struct ref ***' data-ref="81tail">tail</dfn>, <em>int</em> <dfn class="local col2 decl" id="82missing_ok" title='missing_ok' data-type='int' data-ref="82missing_ok">missing_ok</dfn>);</td></tr>
+<tr><th id="200">200</th><td></td></tr>
+<tr><th id="201">201</th><td><b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="get_remote_ref" title='get_remote_ref' data-ref="get_remote_ref">get_remote_ref</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col3 decl" id="83remote_refs" title='remote_refs' data-type='const struct ref *' data-ref="83remote_refs">remote_refs</dfn>, <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="84name" title='name' data-type='const char *' data-ref="84name">name</dfn>);</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><i>/*</i></td></tr>
+<tr><th id="204">204</th><td><i> * For the given remote, reads the refspec's src and sets the other fields.</i></td></tr>
+<tr><th id="205">205</th><td><i> */</i></td></tr>
+<tr><th id="206">206</th><td><em>int</em> <dfn class="decl" id="remote_find_tracking" title='remote_find_tracking' data-ref="remote_find_tracking">remote_find_tracking</dfn>(<b>struct</b> <a class="type" href="#remote" title='remote' data-ref="remote">remote</a> *<dfn class="local col5 decl" id="85remote" title='remote' data-type='struct remote *' data-ref="85remote">remote</dfn>, <b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="local col6 decl" id="86refspec" title='refspec' data-type='struct refspec *' data-ref="86refspec">refspec</dfn>);</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td><b>struct</b> <dfn class="type def" id="branch" title='branch' data-ref="branch">branch</dfn> {</td></tr>
+<tr><th id="209">209</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="branch::name" title='branch::name' data-ref="branch::name">name</dfn>;</td></tr>
+<tr><th id="210">210</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="branch::refname" title='branch::refname' data-ref="branch::refname">refname</dfn>;</td></tr>
+<tr><th id="211">211</th><td></td></tr>
+<tr><th id="212">212</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="branch::remote_name" title='branch::remote_name' data-ref="branch::remote_name">remote_name</dfn>;</td></tr>
+<tr><th id="213">213</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="branch::pushremote_name" title='branch::pushremote_name' data-ref="branch::pushremote_name">pushremote_name</dfn>;</td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td>	<em>const</em> <em>char</em> **<dfn class="decl" id="branch::merge_name" title='branch::merge_name' data-ref="branch::merge_name">merge_name</dfn>;</td></tr>
+<tr><th id="216">216</th><td>	<b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> **<dfn class="decl" id="branch::merge" title='branch::merge' data-ref="branch::merge">merge</dfn>;</td></tr>
+<tr><th id="217">217</th><td>	<em>int</em> <dfn class="decl" id="branch::merge_nr" title='branch::merge_nr' data-ref="branch::merge_nr">merge_nr</dfn>;</td></tr>
+<tr><th id="218">218</th><td>	<em>int</em> <dfn class="decl" id="branch::merge_alloc" title='branch::merge_alloc' data-ref="branch::merge_alloc">merge_alloc</dfn>;</td></tr>
+<tr><th id="219">219</th><td></td></tr>
+<tr><th id="220">220</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="branch::push_tracking_ref" title='branch::push_tracking_ref' data-ref="branch::push_tracking_ref">push_tracking_ref</dfn>;</td></tr>
+<tr><th id="221">221</th><td>};</td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td><b>struct</b> <a class="type" href="#branch" title='branch' data-ref="branch">branch</a> *<dfn class="decl" id="branch_get" title='branch_get' data-ref="branch_get">branch_get</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="87name" title='name' data-type='const char *' data-ref="87name">name</dfn>);</td></tr>
+<tr><th id="224">224</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="remote_for_branch" title='remote_for_branch' data-ref="remote_for_branch">remote_for_branch</dfn>(<b>struct</b> <a class="type" href="#branch" title='branch' data-ref="branch">branch</a> *<dfn class="local col8 decl" id="88branch" title='branch' data-type='struct branch *' data-ref="88branch">branch</dfn>, <em>int</em> *<dfn class="local col9 decl" id="89explicit" title='explicit' data-type='int *' data-ref="89explicit">explicit</dfn>);</td></tr>
+<tr><th id="225">225</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="pushremote_for_branch" title='pushremote_for_branch' data-ref="pushremote_for_branch">pushremote_for_branch</dfn>(<b>struct</b> <a class="type" href="#branch" title='branch' data-ref="branch">branch</a> *<dfn class="local col0 decl" id="90branch" title='branch' data-type='struct branch *' data-ref="90branch">branch</dfn>, <em>int</em> *<dfn class="local col1 decl" id="91explicit" title='explicit' data-type='int *' data-ref="91explicit">explicit</dfn>);</td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td><em>int</em> <dfn class="decl" id="branch_has_merge_config" title='branch_has_merge_config' data-ref="branch_has_merge_config">branch_has_merge_config</dfn>(<b>struct</b> <a class="type" href="#branch" title='branch' data-ref="branch">branch</a> *<dfn class="local col2 decl" id="92branch" title='branch' data-type='struct branch *' data-ref="92branch">branch</dfn>);</td></tr>
+<tr><th id="228">228</th><td><em>int</em> <dfn class="decl" id="branch_merge_matches" title='branch_merge_matches' data-ref="branch_merge_matches">branch_merge_matches</dfn>(<b>struct</b> <a class="type" href="#branch" title='branch' data-ref="branch">branch</a> *, <em>int</em> <dfn class="local col3 decl" id="93n" title='n' data-type='int' data-ref="93n">n</dfn>, <em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="229">229</th><td></td></tr>
+<tr><th id="230">230</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> * Return the fully-qualified refname of the tracking branch for `branch`.</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc"> * I.e., what "branch@{upstream}" would give you. Returns NULL if no</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc"> * upstream is defined.</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> * If `err` is not NULL and no upstream is defined, a more specific error</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> * message is recorded there (if the function does not return NULL, then</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"> * `err` is not touched).</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="239">239</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="branch_get_upstream" title='branch_get_upstream' data-ref="branch_get_upstream">branch_get_upstream</dfn>(<b>struct</b> <a class="type" href="#branch" title='branch' data-ref="branch">branch</a> *<dfn class="local col4 decl" id="94branch" title='branch' data-type='struct branch *' data-ref="94branch">branch</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col5 decl" id="95err" title='err' data-type='struct strbuf *' data-ref="95err">err</dfn>);</td></tr>
+<tr><th id="240">240</th><td></td></tr>
+<tr><th id="241">241</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc"> * Return the tracking branch that corresponds to the ref we would push to</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc"> * given a bare `git push` while `branch` is checked out.</i></td></tr>
+<tr><th id="244">244</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="245">245</th><td><i class="doc"> * The return value and `err` conventions match those of `branch_get_upstream`.</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="247">247</th><td><em>const</em> <em>char</em> *<dfn class="decl" id="branch_get_push" title='branch_get_push' data-ref="branch_get_push">branch_get_push</dfn>(<b>struct</b> <a class="type" href="#branch" title='branch' data-ref="branch">branch</a> *<dfn class="local col6 decl" id="96branch" title='branch' data-type='struct branch *' data-ref="96branch">branch</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col7 decl" id="97err" title='err' data-type='struct strbuf *' data-ref="97err">err</dfn>);</td></tr>
+<tr><th id="248">248</th><td></td></tr>
+<tr><th id="249">249</th><td><i>/* Flags to match_refs. */</i></td></tr>
+<tr><th id="250">250</th><td><b>enum</b> <dfn class="type def" id="match_refs_flags" title='match_refs_flags' data-ref="match_refs_flags">match_refs_flags</dfn> {</td></tr>
+<tr><th id="251">251</th><td>	<dfn class="enum" id="match_refs_flags::MATCH_REFS_NONE" title='match_refs_flags::MATCH_REFS_NONE' data-ref="match_refs_flags::MATCH_REFS_NONE">MATCH_REFS_NONE</dfn>		= <var>0</var>,</td></tr>
+<tr><th id="252">252</th><td>	<dfn class="enum" id="match_refs_flags::MATCH_REFS_ALL" title='match_refs_flags::MATCH_REFS_ALL' data-ref="match_refs_flags::MATCH_REFS_ALL">MATCH_REFS_ALL</dfn> 		= (<var>1</var> &lt;&lt; <var>0</var>),</td></tr>
+<tr><th id="253">253</th><td>	<dfn class="enum" id="match_refs_flags::MATCH_REFS_MIRROR" title='match_refs_flags::MATCH_REFS_MIRROR' data-ref="match_refs_flags::MATCH_REFS_MIRROR">MATCH_REFS_MIRROR</dfn>	= (<var>1</var> &lt;&lt; <var>1</var>),</td></tr>
+<tr><th id="254">254</th><td>	<dfn class="enum" id="match_refs_flags::MATCH_REFS_PRUNE" title='match_refs_flags::MATCH_REFS_PRUNE' data-ref="match_refs_flags::MATCH_REFS_PRUNE">MATCH_REFS_PRUNE</dfn>	= (<var>1</var> &lt;&lt; <var>2</var>),</td></tr>
+<tr><th id="255">255</th><td>	<dfn class="enum" id="match_refs_flags::MATCH_REFS_FOLLOW_TAGS" title='match_refs_flags::MATCH_REFS_FOLLOW_TAGS' data-ref="match_refs_flags::MATCH_REFS_FOLLOW_TAGS">MATCH_REFS_FOLLOW_TAGS</dfn>	= (<var>1</var> &lt;&lt; <var>3</var>)</td></tr>
+<tr><th id="256">256</th><td>};</td></tr>
+<tr><th id="257">257</th><td></td></tr>
+<tr><th id="258">258</th><td><i>/* Reporting of tracking info */</i></td></tr>
+<tr><th id="259">259</th><td><em>int</em> <dfn class="decl" id="stat_tracking_info" title='stat_tracking_info' data-ref="stat_tracking_info">stat_tracking_info</dfn>(<b>struct</b> <a class="type" href="#branch" title='branch' data-ref="branch">branch</a> *<dfn class="local col8 decl" id="98branch" title='branch' data-type='struct branch *' data-ref="98branch">branch</dfn>, <em>int</em> *<dfn class="local col9 decl" id="99num_ours" title='num_ours' data-type='int *' data-ref="99num_ours">num_ours</dfn>, <em>int</em> *<dfn class="local col0 decl" id="100num_theirs" title='num_theirs' data-type='int *' data-ref="100num_theirs">num_theirs</dfn>,</td></tr>
+<tr><th id="260">260</th><td>		       <em>const</em> <em>char</em> **<dfn class="local col1 decl" id="101upstream_name" title='upstream_name' data-type='const char **' data-ref="101upstream_name">upstream_name</dfn>);</td></tr>
+<tr><th id="261">261</th><td><em>int</em> <dfn class="decl" id="format_tracking_info" title='format_tracking_info' data-ref="format_tracking_info">format_tracking_info</dfn>(<b>struct</b> <a class="type" href="#branch" title='branch' data-ref="branch">branch</a> *<dfn class="local col2 decl" id="102branch" title='branch' data-type='struct branch *' data-ref="102branch">branch</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col3 decl" id="103sb" title='sb' data-type='struct strbuf *' data-ref="103sb">sb</dfn>);</td></tr>
+<tr><th id="262">262</th><td></td></tr>
+<tr><th id="263">263</th><td><b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="get_local_heads" title='get_local_heads' data-ref="get_local_heads">get_local_heads</dfn>(<em>void</em>);</td></tr>
+<tr><th id="264">264</th><td><i>/*</i></td></tr>
+<tr><th id="265">265</th><td><i> * Find refs from a list which are likely to be pointed to by the given HEAD</i></td></tr>
+<tr><th id="266">266</th><td><i> * ref. If 'all' is false, returns the most likely ref; otherwise, returns a</i></td></tr>
+<tr><th id="267">267</th><td><i> * list of all candidate refs. If no match is found (or 'head' is NULL),</i></td></tr>
+<tr><th id="268">268</th><td><i> * returns NULL. All returns are newly allocated and should be freed.</i></td></tr>
+<tr><th id="269">269</th><td><i> */</i></td></tr>
+<tr><th id="270">270</th><td><b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="guess_remote_head" title='guess_remote_head' data-ref="guess_remote_head">guess_remote_head</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col4 decl" id="104head" title='head' data-type='const struct ref *' data-ref="104head">head</dfn>,</td></tr>
+<tr><th id="271">271</th><td>			      <em>const</em> <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col5 decl" id="105refs" title='refs' data-type='const struct ref *' data-ref="105refs">refs</dfn>,</td></tr>
+<tr><th id="272">272</th><td>			      <em>int</em> <dfn class="local col6 decl" id="106all" title='all' data-type='int' data-ref="106all">all</dfn>);</td></tr>
+<tr><th id="273">273</th><td></td></tr>
+<tr><th id="274">274</th><td><i>/* Return refs which no longer exist on remote */</i></td></tr>
+<tr><th id="275">275</th><td><b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="get_stale_heads" title='get_stale_heads' data-ref="get_stale_heads">get_stale_heads</dfn>(<b>struct</b> <a class="type" href="#refspec" title='refspec' data-ref="refspec">refspec</a> *<dfn class="local col7 decl" id="107refs" title='refs' data-type='struct refspec *' data-ref="107refs">refs</dfn>, <em>int</em> <dfn class="local col8 decl" id="108ref_count" title='ref_count' data-type='int' data-ref="108ref_count">ref_count</dfn>, <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col9 decl" id="109fetch_map" title='fetch_map' data-type='struct ref *' data-ref="109fetch_map">fetch_map</dfn>);</td></tr>
+<tr><th id="276">276</th><td></td></tr>
+<tr><th id="277">277</th><td><i>/*</i></td></tr>
+<tr><th id="278">278</th><td><i> * Compare-and-swap</i></td></tr>
+<tr><th id="279">279</th><td><i> */</i></td></tr>
+<tr><th id="280">280</th><td><u>#define <dfn class="macro" id="_M/CAS_OPT_NAME" data-ref="_M/CAS_OPT_NAME">CAS_OPT_NAME</dfn> "force-with-lease"</u></td></tr>
+<tr><th id="281">281</th><td></td></tr>
+<tr><th id="282">282</th><td><b>struct</b> <dfn class="type def" id="push_cas_option" title='push_cas_option' data-ref="push_cas_option">push_cas_option</dfn> {</td></tr>
+<tr><th id="283">283</th><td>	<em>unsigned</em> <dfn class="decl" id="push_cas_option::use_tracking_for_rest" title='push_cas_option::use_tracking_for_rest' data-ref="push_cas_option::use_tracking_for_rest">use_tracking_for_rest</dfn>:<var>1</var>;</td></tr>
+<tr><th id="284">284</th><td>	<b>struct</b> <dfn class="type def" id="push_cas" title='push_cas' data-ref="push_cas"><a class="type" href="#push_cas" title='push_cas' data-ref="push_cas">push_cas</a></dfn> {</td></tr>
+<tr><th id="285">285</th><td>		<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="push_cas::expect" title='push_cas::expect' data-ref="push_cas::expect">expect</dfn>;</td></tr>
+<tr><th id="286">286</th><td>		<em>unsigned</em> <dfn class="decl" id="push_cas::use_tracking" title='push_cas::use_tracking' data-ref="push_cas::use_tracking">use_tracking</dfn>:<var>1</var>;</td></tr>
+<tr><th id="287">287</th><td>		<em>char</em> *<dfn class="decl" id="push_cas::refname" title='push_cas::refname' data-ref="push_cas::refname">refname</dfn>;</td></tr>
+<tr><th id="288">288</th><td>	} *<dfn class="decl" id="push_cas_option::entry" title='push_cas_option::entry' data-ref="push_cas_option::entry">entry</dfn>;</td></tr>
+<tr><th id="289">289</th><td>	<em>int</em> <dfn class="decl" id="push_cas_option::nr" title='push_cas_option::nr' data-ref="push_cas_option::nr">nr</dfn>;</td></tr>
+<tr><th id="290">290</th><td>	<em>int</em> <dfn class="decl" id="push_cas_option::alloc" title='push_cas_option::alloc' data-ref="push_cas_option::alloc">alloc</dfn>;</td></tr>
+<tr><th id="291">291</th><td>};</td></tr>
+<tr><th id="292">292</th><td></td></tr>
+<tr><th id="293">293</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parseopt_push_cas_option" title='parseopt_push_cas_option' data-ref="parseopt_push_cas_option">parseopt_push_cas_option</dfn>(<em>const</em> <b>struct</b> <a class="type" href="parse-options.h.html#option" title='option' data-ref="option">option</a> *, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="110arg" title='arg' data-type='const char *' data-ref="110arg">arg</dfn>, <em>int</em> <dfn class="local col1 decl" id="111unset" title='unset' data-type='int' data-ref="111unset">unset</dfn>);</td></tr>
+<tr><th id="294">294</th><td></td></tr>
+<tr><th id="295">295</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="is_empty_cas" title='is_empty_cas' data-ref="is_empty_cas">is_empty_cas</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#push_cas_option" title='push_cas_option' data-ref="push_cas_option">push_cas_option</a> *);</td></tr>
+<tr><th id="296">296</th><td><em>void</em> <dfn class="decl" id="apply_push_cas" title='apply_push_cas' data-ref="apply_push_cas">apply_push_cas</dfn>(<b>struct</b> <a class="type" href="#push_cas_option" title='push_cas_option' data-ref="push_cas_option">push_cas_option</a> *, <b>struct</b> <a class="type" href="#remote" title='remote' data-ref="remote">remote</a> *, <b>struct</b> <a class="type" href="#ref" title='ref' data-ref="ref">ref</a> *);</td></tr>
+<tr><th id="297">297</th><td></td></tr>
+<tr><th id="298">298</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="299">299</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='branch.c.html'>codebrowser/branch.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

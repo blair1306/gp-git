@@ -1,0 +1,4 @@
+<def f='codebrowser/tempfile.h' l='211' ll='214' type='int is_tempfile_active(struct tempfile * tempfile)'/>
+<use f='codebrowser/lockfile.h' l='183' u='c' c='is_lock_file_locked'/>
+<use f='codebrowser/builtin/gc.c' l='244' u='c' c='lock_repo_for_gc'/>
+<use f='codebrowser/diff.c' l='691' u='c' c='remove_tempfile'/>

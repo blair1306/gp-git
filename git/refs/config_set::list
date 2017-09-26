@@ -1,0 +1,24 @@
+<dec f='codebrowser/config.h' l='149' type='struct configset_list'/>
+<offset>448</offset>
+<use f='codebrowser/config.c' l='1615' u='a' c='configset_iter'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1703' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1704' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1704' u='m' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1741' u='m' c='git_configset_init'/>
+<use f='codebrowser/config.c' l='1742' u='m' c='git_configset_init'/>
+<use f='codebrowser/config.c' l='1743' u='m' c='git_configset_init'/>
+<use f='codebrowser/config.c' l='1760' u='m' c='git_configset_clear'/>
+<use f='codebrowser/config.c' l='1761' u='m' c='git_configset_clear'/>
+<use f='codebrowser/config.c' l='1762' u='m' c='git_configset_clear'/>
+<use f='codebrowser/config.c' l='1763' u='m' c='git_configset_clear'/>

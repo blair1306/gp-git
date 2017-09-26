@@ -1,0 +1,14 @@
+<dec f='codebrowser/remote.h' l='46' type='int'/>
+<offset>960</offset>
+<doc f='codebrowser/remote.h' l='40'>/*
+	 * -1 to never fetch tags
+	 * 0 to auto-follow tags on heuristic (default)
+	 * 1 to always auto-follow tags
+	 * 2 to always fetch tags
+	 */</doc>
+<use f='codebrowser/builtin/fetch.c' l='1084' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1090' u='r' c='do_fetch'/>
+<use f='codebrowser/builtin/fetch.c' l='1092' u='r' c='do_fetch'/>
+<use f='codebrowser/remote.c' l='325' u='w' c='read_branches_file'/>
+<use f='codebrowser/remote.c' l='432' u='w' c='handle_config'/>
+<use f='codebrowser/remote.c' l='434' u='w' c='handle_config'/>

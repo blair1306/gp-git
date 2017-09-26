@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule-config.h' l='40' type='const struct submodule * submodule_from_name(const struct object_id * commit_or_tree, const char * name)'/>
+<def f='codebrowser/submodule-config.c' l='581' ll='586' type='const struct submodule * submodule_from_name(const struct object_id * treeish_name, const char * name)'/>
+<use f='codebrowser/submodule.c' l='1193' u='c' c='get_next_submodule'/>
+<use f='codebrowser/t/helper/test-submodule-config.c' l='58' u='c' c='cmd_main'/>

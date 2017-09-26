@@ -1,0 +1,14 @@
+<dec f='codebrowser/diffcore.h' l='43' type='unsigned int'/>
+<offset>531</offset>
+<doc f='codebrowser/diffcore.h' l='43'>/* For submodules: its work tree is dirty */</doc>
+<use f='codebrowser/diff.c' l='2369' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2380' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2789' u='r' c='diff_populate_gitlink'/>
+<use f='codebrowser/diff.c' l='4283' u='r' c='diff_unmodified_pair'/>
+<use f='codebrowser/diff.c' l='4283' u='r' c='diff_unmodified_pair'/>
+<use f='codebrowser/diff.c' l='4418' u='r' c='diff_resolve_rename_copy'/>
+<use f='codebrowser/diff.c' l='4419' u='r' c='diff_resolve_rename_copy'/>
+<use f='codebrowser/diff.c' l='5107' u='w' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5145' u='w' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5146' u='w' c='diff_change'/>
+<use f='codebrowser/wt-status.c' l='446' u='r' c='wt_status_collect_changed_cb'/>

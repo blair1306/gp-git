@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='221' type='enum config_origin_type'/>
+<offset>96</offset>
+<use f='codebrowser/config.c' l='1713' u='w' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1718' u='w' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='2900' u='r' c='current_config_origin_type'/>

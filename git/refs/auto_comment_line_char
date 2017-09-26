@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='790' type='int'/>
+<use f='codebrowser/builtin/commit.c' l='799' u='r' c='prepare_to_commit'/>
+<use f='codebrowser/config.c' l='1180' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1183' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='85' type='int'/>

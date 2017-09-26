@@ -1,0 +1,33 @@
+<dec f='include/curl/curl.h' l='2062' type='struct curl_slist * curl_slist_append(struct curl_slist * , const char * )'/>
+<doc f='include/curl/curl.h' l='2054'>/*
+ * NAME curl_slist_append()
+ *
+ * DESCRIPTION
+ *
+ * Appends a string to a linked list. If no list exists, it will be created
+ * first. Returns the new list, after appending.
+ */</doc>
+<use f='codebrowser/http-push.c' l='218' u='c' c='get_dav_token_headers'/>
+<use f='codebrowser/http-push.c' l='223' u='c' c='get_dav_token_headers'/>
+<use f='codebrowser/http-push.c' l='228' u='c' c='get_dav_token_headers'/>
+<use f='codebrowser/http-push.c' l='424' u='c' c='start_move'/>
+<use f='codebrowser/http-push.c' l='425' u='c' c='start_move'/>
+<use f='codebrowser/http-push.c' l='881' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='882' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='1135' u='c' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1136' u='c' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1209' u='c' c='locking_available'/>
+<use f='codebrowser/http-push.c' l='1210' u='c' c='locking_available'/>
+<use f='codebrowser/http.c' l='380' u='c' c='http_options'/>
+<use f='codebrowser/http.c' l='929' u='c' c='http_init'/>
+<use f='codebrowser/http.c' l='931' u='c' c='http_init'/>
+<use f='codebrowser/http.c' l='1438' u='c' c='http_copy_default_headers'/>
+<use f='codebrowser/http.c' l='1688' u='c' c='http_request'/>
+<use f='codebrowser/http.c' l='1699' u='c' c='http_request'/>
+<use f='codebrowser/remote-curl.c' l='515' u='c' c='probe_rpc'/>
+<use f='codebrowser/remote-curl.c' l='516' u='c' c='probe_rpc'/>
+<use f='codebrowser/remote-curl.c' l='587' u='c' c='post_rpc'/>
+<use f='codebrowser/remote-curl.c' l='588' u='c' c='post_rpc'/>
+<use f='codebrowser/remote-curl.c' l='589' u='c' c='post_rpc'/>
+<use f='codebrowser/remote-curl.c' l='604' u='c' c='post_rpc'/>
+<use f='codebrowser/remote-curl.c' l='653' u='c' c='post_rpc'/>

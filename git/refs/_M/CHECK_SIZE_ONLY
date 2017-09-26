@@ -1,0 +1,9 @@
+<dec f='codebrowser/diffcore.h' l='58'/>
+<use f='codebrowser/diff.c' l='465' u='c'/>
+<use f='codebrowser/diff.c' l='2021' u='c'/>
+<use f='codebrowser/diff.c' l='2025' u='c'/>
+<use f='codebrowser/diff.c' l='2812' u='c'/>
+<use f='codebrowser/diff.c' l='4942' u='c'/>
+<use f='codebrowser/diff.c' l='4943' u='c'/>
+<use f='codebrowser/diffcore-rename.c' l='167' u='c'/>
+<use f='codebrowser/diffcore-rename.c' l='170' u='c'/>

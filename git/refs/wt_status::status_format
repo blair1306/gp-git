@@ -1,0 +1,6 @@
+<dec f='codebrowser/wt-status.h' l='84' type='enum wt_status_format'/>
+<offset>6432</offset>
+<use f='codebrowser/builtin/commit.c' l='516' u='w' c='run_status'/>
+<use f='codebrowser/builtin/commit.c' l='1398' u='w' c='cmd_status'/>
+<use f='codebrowser/wt-status.c' l='449' u='r' c='wt_status_collect_changed_cb'/>
+<use f='codebrowser/wt-status.c' l='2236' u='r' c='wt_status_print'/>

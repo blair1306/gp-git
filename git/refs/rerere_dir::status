@@ -1,0 +1,20 @@
+<dec f='codebrowser/rerere.c' l='33' type='unsigned char *'/>
+<use f='codebrowser/rerere.c' l='40' u='r' c='free_rerere_dirs'/>
+<use f='codebrowser/rerere.c' l='60' u='w' c='fit_variant'/>
+<use f='codebrowser/rerere.c' l='60' u='r' c='fit_variant'/>
+<use f='codebrowser/rerere.c' l='60' u='r' c='fit_variant'/>
+<use f='codebrowser/rerere.c' l='62' u='r' c='fit_variant'/>
+<use f='codebrowser/rerere.c' l='76' u='r' c='assign_variant'/>
+<use f='codebrowser/rerere.c' l='126' u='r' c='scan_rerere_dir'/>
+<use f='codebrowser/rerere.c' l='129' u='r' c='scan_rerere_dir'/>
+<use f='codebrowser/rerere.c' l='153' u='w' c='find_rerere_dir'/>
+<use f='codebrowser/rerere.c' l='177' u='r' c='has_rerere_resolution'/>
+<use f='codebrowser/rerere.c' l='733' u='r' c='remove_variant'/>
+<use f='codebrowser/rerere.c' l='757' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='775' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='805' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='809' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='811' u='r' c='do_rerere_one_path'/>
+<use f='codebrowser/rerere.c' l='1157' u='r' c='unlink_rr_item'/>
+<use f='codebrowser/rerere.c' l='1215' u='r' c='rerere_gc'/>
+<offset>256</offset>

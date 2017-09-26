@@ -1,0 +1,30 @@
+<dec f='codebrowser/worktree.h' l='7' type='char *'/>
+<use f='codebrowser/branch.c' l='360' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<use f='codebrowser/branch.c' l='361' u='r' c='replace_each_worktree_head_symref'/>
+<offset>128</offset>
+<doc f='codebrowser/worktree.h' l='7'>/* NULL if HEAD is broken or detached */</doc>
+<use f='codebrowser/builtin/worktree.c' l='396' u='r' c='show_worktree_porcelain'/>
+<use f='codebrowser/builtin/worktree.c' l='397' u='r' c='show_worktree_porcelain'/>
+<use f='codebrowser/builtin/worktree.c' l='416' u='r' c='show_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='417' u='r' c='show_worktree'/>
+<use f='codebrowser/worktree.c' l='16' u='r' c='free_worktrees'/>
+<use f='codebrowser/worktree.c' l='39' u='w' c='add_head_info'/>

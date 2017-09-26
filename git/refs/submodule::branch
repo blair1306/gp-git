@@ -1,0 +1,29 @@
+<dec f='codebrowser/submodule-config.h' l='18' type='const char *'/>
+<offset>320</offset>
+<use f='codebrowser/builtin/submodule--helper.c' l='1076' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1079' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1097' u='r' c='remote_submodule_branch'/>
+<use f='codebrowser/submodule-config.c' l='77' u='r' c='free_one_config'/>
+<use f='codebrowser/submodule-config.c' l='228' u='w' c='lookup_or_create_by_name'/>
+<use f='codebrowser/submodule-config.c' l='443' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='447' u='r' c='parse_config'/>
+<use f='codebrowser/submodule-config.c' l='448' u='w' c='parse_config'/>

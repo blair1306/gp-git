@@ -1,0 +1,30 @@
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='219' type='int fstat(int __fd, struct stat * __buf)'/>
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='229' type='int fstat64(int __fd, struct stat64 * __buf)'/>
+<def f='include/x86_64-linux-gnu/sys/stat.h' l='465' ll='469' macro='1' type='int fstat(int __fd, struct stat * __statbuf)'/>
+<def f='include/x86_64-linux-gnu/sys/stat.h' l='514' ll='518' macro='1' type='int fstat64(int __fd, struct stat64 * __statbuf)'/>
+<use f='codebrowser/builtin/gc.c' l='71' u='c' c='process_log_file'/>
+<use f='codebrowser/builtin/gc.c' l='265' u='c' c='lock_repo_for_gc'/>
+<use f='codebrowser/builtin/hash-object.c' l='38' u='c' c='hash_fd'/>
+<use f='codebrowser/builtin/index-pack.c' l='1168' u='c' c='parse_pack_objects'/>
+<use f='codebrowser/builtin/merge.c' l='954' u='c' c='default_edit_option'/>
+<use f='codebrowser/builtin/merge.c' l='955' u='c' c='default_edit_option'/>
+<use f='codebrowser/builtin/replace.c' l='270' u='c' c='import_object'/>
+<use f='codebrowser/compat/fopen.c' l='25' u='c' c='git_fopen'/>
+<use f='codebrowser/config.c' l='2544' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/config.c' l='2772' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/dir.c' l='762' u='c' c='add_excludes'/>
+<use f='codebrowser/entry.c' l='113' u='c' c='fstat_output'/>
+<use f='codebrowser/git.c' l='347' u='c' c='run_builtin'/>
+<use f='codebrowser/http-backend.c' l='181' u='c' c='send_local_file'/>
+<use f='codebrowser/ll-merge.c' l='208' u='c' c='ll_ext_merge'/>
+<use f='codebrowser/pack-bitmap.c' l='275' u='c' c='open_pack_bitmap_1'/>
+<use f='codebrowser/read-cache.c' l='1749' u='c' c='do_read_index'/>
+<use f='codebrowser/read-cache.c' l='2139' u='c' c='verify_index_from'/>
+<use f='codebrowser/read-cache.c' l='2637' u='c' c='stat_validity_update'/>
+<use f='codebrowser/sha1_file.c' l='465' u='c' c='read_info_alternates'/>
+<use f='codebrowser/sha1_file.c' l='758' u='c' c='check_packed_git_idx'/>
+<use f='codebrowser/sha1_file.c' l='1160' u='c' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='1779' u='c' c='map_sha1_file_1'/>
+<use f='codebrowser/t/helper/test-delta.c' l='31' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-delta.c' l='45' u='c' c='cmd_main'/>
+<use f='codebrowser/write_or_die.c' l='28' u='c' c='maybe_flush_or_die'/>

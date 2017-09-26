@@ -1,0 +1,17 @@
+<def f='codebrowser/xdiff/xdiffi.c' l='706' ll='718'/>
+<size>16</size>
+<doc f='codebrowser/xdiff/xdiffi.c' l='691'>/*
+ * Represent a group of changed lines in an xdfile_t (i.e., a contiguous group
+ * of lines that was inserted or deleted from the corresponding version of the
+ * file). We consider there to be such a group at the beginning of the file, at
+ * the end of the file, and between any two unchanged lines, though most such
+ * groups will usually be empty.
+ *
+ * If the first line in a group is equal to the line following the group, then
+ * the group can be slid down. Similarly, if the last line in a group is equal
+ * to the line preceding the group, then the group can be slid up. See
+ * group_slide_down() and group_slide_up().
+ *
+ * Note that loops that are testing for changed lines in xdf-&gt;rchg do not need
+ * index bounding since the array is prepared with a zero at position -1 and N.
+ */</doc>

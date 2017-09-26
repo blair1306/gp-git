@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1716' type='off_t nth_packed_object_offset(const struct packed_git * , uint32_t n)'/>
+<doc f='codebrowser/cache.h' l='1712'>/*
+ * Return the offset of the nth object within the specified packfile.
+ * The index must already be opened.
+ */</doc>
+<use f='codebrowser/pack-check.c' l='99' u='c' c='verify_packfile'/>
+<def f='codebrowser/sha1_file.c' l='2742' ll='2759' type='off_t nth_packed_object_offset(const struct packed_git * p, uint32_t n)'/>
+<use f='codebrowser/sha1_file.c' l='2804' u='c' c='find_pack_entry_one'/>

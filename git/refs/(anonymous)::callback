@@ -1,0 +1,4 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='48' type='collision_block_callback'/>
+<offset>896</offset>
+<use f='codebrowser/sha1dc/sha1.c' l='1769' u='w' c='SHA1DCInit'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1807' u='w' c='SHA1DCSetCallback'/>

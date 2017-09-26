@@ -1,0 +1,5 @@
+<dec f='codebrowser/compat/obstack.h' l='263'/>
+<doc f='codebrowser/compat/obstack.h' l='258'>/* For GNU C, if not -traditional,
+   we can define these macros to compute all args only once
+   without using a global variable.
+   Also, we can avoid using the `temp&apos; slot, to make faster code.  */</doc>

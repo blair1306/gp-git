@@ -1,0 +1,6 @@
+<def f='codebrowser/line-log.h' l='11' ll='13'/>
+<size>16</size>
+<doc f='codebrowser/line-log.h' l='9'>/* A range [start,end].  Lines are numbered starting at 0, and the
+ * ranges include start but exclude end. */</doc>
+<mbr r='range::start' o='0' t='long'/>
+<mbr r='range::end' o='64' t='long'/>

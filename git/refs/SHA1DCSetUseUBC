@@ -1,0 +1,6 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='79' type='void SHA1DCSetUseUBC(SHA1_CTX * , int )'/>
+<doc f='codebrowser/sha1dc/sha1.h' l='75'>/*
+    Function to disable or enable the use of Unavoidable Bitconditions (provides a significant speed up).
+    Enabled by default
+ */</doc>
+<def f='codebrowser/sha1dc/sha1.c' l='1781' ll='1787' type='void SHA1DCSetUseUBC(SHA1_CTX * ctx, int ubc_check)'/>

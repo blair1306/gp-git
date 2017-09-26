@@ -1,0 +1,5 @@
+<dec f='codebrowser/transport.h' l='249' type='void transport_verify_remote_names(int nr_heads, const char ** heads)'/>
+<doc f='codebrowser/transport.h' l='248'>/* common methods used by transport.c and builtin/send-pack.c */</doc>
+<use f='codebrowser/builtin/send-pack.c' l='262' u='c' c='cmd_send_pack'/>
+<def f='codebrowser/transport.c' l='516' ll='537' type='void transport_verify_remote_names(int nr_heads, const char ** heads)'/>
+<use f='codebrowser/transport.c' l='972' u='c' c='transport_push'/>

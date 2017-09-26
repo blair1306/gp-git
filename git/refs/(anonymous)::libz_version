@@ -1,0 +1,3 @@
+<dec f='include/curl/curl.h' l='2290' type='const char *'/>
+<offset>448</offset>
+<doc f='include/curl/curl.h' l='2290'>/* human readable string */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/dir.h' l='318' type='int git_fnmatch(const struct pathspec_item * item, const char * pattern, const char * string, int prefix)'/>
+<def f='codebrowser/dir.c' l='75' ll='100' type='int git_fnmatch(const struct pathspec_item * item, const char * pattern, const char * string, int prefix)'/>
+<use f='codebrowser/dir.c' l='329' u='c' c='match_pathspec_item'/>
+<use f='codebrowser/tree-walk.c' l='997' u='c' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1051' u='c' c='do_match'/>

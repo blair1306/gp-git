@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='417' type='int for_each_reflog_ent_reverse(const char * refname, each_reflog_ent_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='836' u='c' c='read_ref_at'/>
+<def f='codebrowser/refs.c' l='1957' ll='1962' type='int for_each_reflog_ent_reverse(const char * refname, each_reflog_ent_fn * fn, void * cb_data)'/>
+<use f='codebrowser/sha1_name.c' l='1116' u='c' c='interpret_nth_prior_checkout'/>
+<use f='codebrowser/wt-status.c' l='1447' u='c' c='wt_status_get_detached_from'/>

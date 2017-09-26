@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='193' type='int cmd_mv(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/mv.c' l='118' ll='302' type='int cmd_mv(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='432'/>
+<use f='codebrowser/git.c' l='432'/>
+<use f='codebrowser/git.c' l='432'/>
+<use f='codebrowser/git.c' l='432'/>

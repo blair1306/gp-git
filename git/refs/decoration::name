@@ -1,0 +1,13 @@
+<dec f='codebrowser/decorate.h' l='10' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/blame.c' l='1771' u='w' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1802' u='w' c='setup_scoreboard'/>
+<use f='codebrowser/builtin/rev-list.c' l='103' u='r' c='show_commit'/>
+<use f='codebrowser/log-tree.c' l='553' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='616' u='r' c='show_log'/>
+<use f='codebrowser/revision.c' l='644' u='r' c='try_to_simplify_commit'/>
+<use f='codebrowser/revision.c' l='2041' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='2368' u='r' c='setup_revisions'/>
+<use f='codebrowser/revision.c' l='2791' u='w' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='2806' u='r' c='prepare_revision_walk'/>
+<use f='codebrowser/revision.c' l='2964' u='r' c='want_ancestry'/>

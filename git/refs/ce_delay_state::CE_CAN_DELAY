@@ -1,0 +1,3 @@
+<dec f='codebrowser/convert.h' l='41' type='1'/>
+<use f='codebrowser/convert.c' l='614' u='r' c='apply_multi_file_filter'/>
+<use f='codebrowser/entry.c' l='144' u='r' c='enable_delayed_checkout'/>

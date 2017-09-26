@@ -1,0 +1,12 @@
+<dec f='codebrowser/grep.h' l='224' type='int'/>
+<use f='codebrowser/grep.h' l='230' u='r' c='grep_read_lock'/>
+<use f='codebrowser/grep.h' l='236' u='r' c='grep_read_unlock'/>
+<doc f='codebrowser/grep.h' l='220'>/*
+ * Mutex used around access to the attributes machinery if
+ * opt-&gt;use_threads.  Must be initialized/destroyed by callers!
+ */</doc>
+<use f='codebrowser/builtin/grep.c' l='209' u='w' c='start_threads'/>
+<use f='codebrowser/builtin/grep.c' l='263' u='w' c='wait_all'/>
+<def f='codebrowser/grep.c' l='1403' type='int'/>
+<use f='codebrowser/grep.c' l='1413' u='r' c='grep_attr_lock'/>
+<use f='codebrowser/grep.c' l='1419' u='r' c='grep_attr_unlock'/>

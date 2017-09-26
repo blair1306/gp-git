@@ -1,0 +1,4 @@
+<def f='codebrowser/object.h' l='4' ll='7'/>
+<size>16</size>
+<mbr r='object_list::item' o='0' t='struct object *'/>
+<mbr r='object_list::next' o='64' t='struct object_list *'/>

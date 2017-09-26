@@ -1,0 +1,7 @@
+<dec f='codebrowser/thread-utils.h' l='7' type='int online_cpus()'/>
+<use f='codebrowser/builtin/index-pack.c' l='1762' u='c' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3001' u='c' c='cmd_pack_objects'/>
+<use f='codebrowser/name-hash.c' l='209' u='c' c='lookup_lazy_params'/>
+<use f='codebrowser/run-command.c' l='1448' u='c' c='pp_init'/>
+<use f='codebrowser/t/helper/test-online-cpus.c' l='6' u='c' c='cmd_main'/>
+<def f='codebrowser/thread-utils.c' l='21' ll='62' type='int online_cpus()'/>

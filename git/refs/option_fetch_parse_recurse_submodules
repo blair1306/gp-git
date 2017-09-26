@@ -1,0 +1,14 @@
+<dec f='codebrowser/submodule-config.h' l='33' type='int option_fetch_parse_recurse_submodules(const struct option * opt, const char * arg, int unset)'/>
+<use f='codebrowser/builtin/fetch.c' l='129'/>
+<use f='codebrowser/builtin/fetch.c' l='129'/>
+<use f='codebrowser/builtin/fetch.c' l='153'/>
+<use f='codebrowser/builtin/fetch.c' l='153'/>
+<use f='codebrowser/builtin/fetch.c' l='129'/>
+<use f='codebrowser/builtin/fetch.c' l='129'/>
+<use f='codebrowser/builtin/fetch.c' l='153'/>
+<use f='codebrowser/builtin/fetch.c' l='153'/>
+<use f='codebrowser/builtin/pull.c' l='125'/>
+<use f='codebrowser/builtin/pull.c' l='125'/>
+<use f='codebrowser/builtin/pull.c' l='125'/>
+<use f='codebrowser/builtin/pull.c' l='125'/>
+<def f='codebrowser/submodule-config.c' l='270' ll='289' type='int option_fetch_parse_recurse_submodules(const struct option * opt, const char * arg, int unset)'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/config.h' l='75' type='int git_env_bool(const char * , int )'/>
+<use f='codebrowser/attr.c' l='842' u='c' c='git_attr_system'/>
+<def f='codebrowser/config.c' l='1519' ll='1523' type='int git_env_bool(const char * k, int def)'/>
+<use f='codebrowser/config.c' l='1539' u='c' c='git_config_system'/>
+<doc f='codebrowser/config.c' l='1515'>/*
+ * Parse environment variable &apos;k&apos; as a boolean (in various
+ * possible spellings); if missing, use the default value &apos;def&apos;.
+ */</doc>
+<use f='codebrowser/pager.c' l='139' u='c' c='pager_in_use'/>
+<use f='codebrowser/pathspec.c' l='211' u='c' c='get_literal_global'/>
+<use f='codebrowser/pathspec.c' l='221' u='c' c='get_glob_global'/>
+<use f='codebrowser/pathspec.c' l='231' u='c' c='get_noglob_global'/>
+<use f='codebrowser/pathspec.c' l='241' u='c' c='get_icase_global'/>
+<use f='codebrowser/prompt.c' l='64' u='c' c='git_prompt'/>
+<use f='codebrowser/read-cache.c' l='2246' u='c' c='do_write_index'/>
+<use f='codebrowser/refs.c' l='1281' u='c' c='refs_ref_iterator_begin'/>
+<use f='codebrowser/remote-curl.c' l='290' u='c' c='discover_refs'/>
+<use f='codebrowser/setup.c' l='691' u='c' c='setup_explicit_git_dir'/>
+<use f='codebrowser/setup.c' l='931' u='c' c='setup_git_directory_gently_1'/>
+<use f='codebrowser/transport.c' l='744' u='c' c='is_transport_allowed'/>

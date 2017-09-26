@@ -1,0 +1,10 @@
+<def f='codebrowser/strbuf.h' l='124' ll='127' type='size_t strbuf_avail(const struct strbuf * sb)'/>
+<use f='codebrowser/strbuf.h' l='206' u='c' c='strbuf_addch'/>
+<doc f='codebrowser/strbuf.h' l='121'>/**
+ * Determine the amount of allocated but unused memory.
+ */</doc>
+<use f='codebrowser/convert.c' l='323' u='c' c='crlf_to_git'/>
+<use f='codebrowser/convert.c' l='855' u='c' c='ident_to_git'/>
+<use f='codebrowser/strbuf.c' l='276' u='c' c='strbuf_vaddf'/>
+<use f='codebrowser/strbuf.c' l='283' u='c' c='strbuf_vaddf'/>
+<use f='codebrowser/strbuf.c' l='286' u='c' c='strbuf_vaddf'/>

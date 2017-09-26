@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='669' type='int index_name_is_other(const struct index_state * , const char * , int )'/>
+<use f='codebrowser/builtin/clean.c' l='976' macro='1' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='143' u='c' c='show_other_files'/>
+<use f='codebrowser/dir.c' l='1274' u='c' c='dir_add_ignored'/>
+<def f='codebrowser/read-cache.c' l='2563' ll='2580' type='int index_name_is_other(const struct index_state * istate, const char * name, int namelen)'/>
+<doc f='codebrowser/read-cache.c' l='2554'>/*
+ * Returns 1 if the path is an &quot;other&quot; path with respect to
+ * the index; that is, the path is not mentioned in the index at all,
+ * either as a file, a directory with some files in the index,
+ * or as an unmerged entry.
+ *
+ * We helpfully remove a trailing &quot;/&quot; from directories so that
+ * the output of read_directory can be used as-is.
+ */</doc>
+<use f='codebrowser/wt-status.c' l='673' macro='1' u='c'/>
+<use f='codebrowser/wt-status.c' l='681' macro='1' u='c'/>

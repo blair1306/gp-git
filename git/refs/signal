@@ -1,0 +1,16 @@
+<dec f='include/signal.h' l='102' type='__sighandler_t signal(int __sig, __sighandler_t __handler)'/>
+<use f='codebrowser/builtin/log.c' l='343' u='c' c='finish_early_output'/>
+<use f='codebrowser/builtin/merge-index.c' l='75' u='c' c='cmd_merge_index'/>
+<use f='codebrowser/builtin/verify-commit.c' l='90' u='c' c='cmd_verify_commit'/>
+<use f='codebrowser/common-main.c' l='23' u='c' c='restore_sigpipe_to_default'/>
+<use f='codebrowser/connect.c' l='786' u='c' c='git_connect'/>
+<use f='codebrowser/credential-cache--daemon.c' l='291' u='c' c='cmd_main'/>
+<use f='codebrowser/daemon.c' l='423' u='c' c='run_service'/>
+<use f='codebrowser/daemon.c' l='883' u='c' c='child_handler'/>
+<use f='codebrowser/daemon.c' l='1094' u='c' c='service_loop'/>
+<use f='codebrowser/progress.c' l='72' u='c' c='clear_progress_signal'/>
+<use f='codebrowser/run-command.c' l='718' u='c' c='start_command'/>
+<use f='codebrowser/run-command.c' l='719' u='c' c='start_command'/>
+<use f='codebrowser/run-command.c' l='1030' u='c' c='check_pipe'/>
+<use f='codebrowser/sigchain.c' l='25' u='c' c='sigchain_push'/>
+<use f='codebrowser/sigchain.c' l='39' u='c' c='sigchain_pop'/>

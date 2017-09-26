@@ -1,0 +1,13 @@
+<dec f='codebrowser/dir.h' l='30' type='unsigned int'/>
+<offset>288</offset>
+<doc f='codebrowser/dir.h' l='30'>/* EXC_FLAG_* */</doc>
+<use f='codebrowser/builtin/check-ignore.c' l='36' u='r' c='output_exclude'/>
+<use f='codebrowser/builtin/check-ignore.c' l='37' u='r' c='output_exclude'/>
+<use f='codebrowser/dir.c' l='596' u='w' c='add_exclude'/>
+<use f='codebrowser/dir.c' l='990' u='r' c='last_exclude_matching_from_list'/>
+<use f='codebrowser/dir.c' l='997' u='r' c='last_exclude_matching_from_list'/>
+<use f='codebrowser/dir.c' l='1001' u='r' c='last_exclude_matching_from_list'/>
+<use f='codebrowser/dir.c' l='1011' u='r' c='last_exclude_matching_from_list'/>
+<use f='codebrowser/dir.c' l='1031' u='r' c='is_excluded_from_list'/>
+<use f='codebrowser/dir.c' l='1146' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1246' u='r' c='is_excluded'/>

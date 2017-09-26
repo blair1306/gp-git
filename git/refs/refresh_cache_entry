@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='715' type='struct cache_entry * refresh_cache_entry(struct cache_entry * , unsigned int )'/>
+<use f='codebrowser/merge-recursive.c' l='238' u='c' c='add_cacheinfo'/>
+<use f='codebrowser/read-cache.c' l='750' u='c' c='make_cache_entry'/>
+<def f='codebrowser/read-cache.c' l='1418' ll='1422' type='struct cache_entry * refresh_cache_entry(struct cache_entry * ce, unsigned int options)'/>

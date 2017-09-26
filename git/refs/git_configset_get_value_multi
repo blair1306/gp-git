@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='155' type='const struct string_list * git_configset_get_value_multi(struct config_set * cs, const char * key)'/>
+<use f='codebrowser/config.c' l='1786' u='c' c='git_configset_get_value'/>
+<def f='codebrowser/config.c' l='1795' ll='1799' type='const struct string_list * git_configset_get_value_multi(struct config_set * cs, const char * key)'/>
+<use f='codebrowser/config.c' l='1939' u='c' c='repo_config_get_value_multi'/>
+<use f='codebrowser/t/helper/test-config.c' l='175' u='c' c='cmd_main'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/ref-filter.c' l='366' type='uintmax_t'/>
+<use f='codebrowser/ref-filter.c' l='741' u='w' c='grab_common_values'/>
+<use f='codebrowser/ref-filter.c' l='788' u='w' c='grab_commit_values'/>
+<use f='codebrowser/ref-filter.c' l='789' u='r' c='grab_commit_values'/>
+<use f='codebrowser/ref-filter.c' l='893' u='w' c='grab_date'/>
+<use f='codebrowser/ref-filter.c' l='897' u='w' c='grab_date'/>
+<use f='codebrowser/ref-filter.c' l='2019' u='r' c='cmp_ref_sorting'/>
+<use f='codebrowser/ref-filter.c' l='2019' u='r' c='cmp_ref_sorting'/>
+<use f='codebrowser/ref-filter.c' l='2021' u='r' c='cmp_ref_sorting'/>
+<use f='codebrowser/ref-filter.c' l='2021' u='r' c='cmp_ref_sorting'/>
+<offset>128</offset>
+<doc f='codebrowser/ref-filter.c' l='366'>/* used for sorting when not FIELD_STR */</doc>

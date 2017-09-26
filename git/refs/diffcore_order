@@ -1,0 +1,5 @@
+<dec f='codebrowser/diffcore.h' l='114' type='void diffcore_order(const char * orderfile)'/>
+<use f='codebrowser/combine-diff.c' l='1346' u='c' c='find_paths_generic'/>
+<use f='codebrowser/combine-diff.c' l='1469' u='c' c='diff_tree_combined'/>
+<use f='codebrowser/diff.c' l='5011' u='c' c='diffcore_std'/>
+<def f='codebrowser/diffcore-order.c' l='114' ll='131' type='void diffcore_order(const char * orderfile)'/>

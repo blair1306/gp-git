@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1532' type='size_t'/>
+<offset>256</offset>
+<use f='codebrowser/sha1_file.c' l='269' u='r' c='alt_scratch_buf'/>
+<use f='codebrowser/sha1_file.c' l='485' u='w' c='alloc_alt_odb'/>

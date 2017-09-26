@@ -1,0 +1,5 @@
+<dec f='codebrowser/rerere.h' l='10'/>
+<use f='codebrowser/builtin/rerere.c' l='89' u='c'/>
+<use f='codebrowser/builtin/rerere.c' l='104' u='c'/>
+<use f='codebrowser/rerere.c' l='601' u='c'/>
+<use f='codebrowser/rerere.c' l='898' u='c'/>

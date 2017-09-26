@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='56' type='1'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='56'>/* No more transmissions.  */</doc>
+<use f='codebrowser/credential-cache.c' l='21' macro='1' u='r'/>
+<use f='codebrowser/send-pack.c' l='574' macro='1' u='r'/>
+<use f='codebrowser/transport-helper.c' l='1177' macro='1' u='r'/>

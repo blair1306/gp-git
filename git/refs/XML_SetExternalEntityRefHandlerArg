@@ -1,0 +1,5 @@
+<dec f='include/expat.h' l='633' type='void XML_SetExternalEntityRefHandlerArg(XML_Parser parser, void * arg)'/>
+<doc f='include/expat.h' l='628'>/* If a non-NULL value for arg is specified here, then it will be
+   passed as the first argument to the external entity ref handler
+   instead of the parser object.
+*/</doc>

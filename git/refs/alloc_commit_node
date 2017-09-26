@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1921' type='void * alloc_commit_node()'/>
+<def f='codebrowser/alloc.c' l='91' ll='97' type='void * alloc_commit_node()'/>
+<use f='codebrowser/blame.c' l='164' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/commit.c' l='53' u='c' c='lookup_commit'/>
+<use f='codebrowser/merge-recursive.c' l='76' u='c' c='make_virtual_commit'/>

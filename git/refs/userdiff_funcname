@@ -1,0 +1,4 @@
+<def f='codebrowser/userdiff.h' l='6' ll='9'/>
+<size>16</size>
+<mbr r='userdiff_funcname::pattern' o='0' t='const char *'/>
+<mbr r='userdiff_funcname::cflags' o='64' t='int'/>

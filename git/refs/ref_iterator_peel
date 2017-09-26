@@ -1,0 +1,12 @@
+<dec f='codebrowser/refs/refs-internal.h' l='344' type='int ref_iterator_peel(struct ref_iterator * ref_iterator, struct object_id * peeled)'/>
+<doc f='codebrowser/refs/refs-internal.h' l='340'>/*
+ * If possible, peel the reference currently being viewed by the
+ * iterator. Return 0 on success.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='668' u='c' c='files_peel_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='736' u='c' c='files_ref_iterator_peel'/>
+<def f='codebrowser/refs/iterator.c' l='16' ll='20' type='int ref_iterator_peel(struct ref_iterator * ref_iterator, struct object_id * peeled)'/>
+<use f='codebrowser/refs/iterator.c' l='180' u='c' c='merge_ref_iterator_peel'/>
+<use f='codebrowser/refs/iterator.c' l='329' u='c' c='prefix_ref_iterator_peel'/>
+<use f='codebrowser/refs/packed-backend.c' l='449' u='c' c='packed_ref_iterator_peel'/>
+<use f='codebrowser/refs/packed-backend.c' l='654' u='c' c='commit_packed_refs'/>

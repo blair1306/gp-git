@@ -1,0 +1,8 @@
+<dec f='codebrowser/commit.h' l='134' type='7'/>
+<use f='codebrowser/commit.h' l='142' u='r' c='cmit_fmt_is_mail'/>
+<use f='codebrowser/pretty.c' l='97' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='97' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='97' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='97' u='r' c='setup_commit_formats'/>
+<use f='codebrowser/pretty.c' l='500' c='pp_user_info'/>
+<use f='codebrowser/pretty.c' l='1754' u='r' c='pp_remainder'/>

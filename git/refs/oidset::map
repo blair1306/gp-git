@@ -1,0 +1,9 @@
+<dec f='codebrowser/oidset.h' l='20' type='struct hashmap'/>
+<offset>0</offset>
+<use f='codebrowser/fetch-pack.c' l='613' u='m' c='tip_oids_contain'/>
+<use f='codebrowser/oidset.c' l='22' u='m' c='oidset_contains'/>
+<use f='codebrowser/oidset.c' l='26' u='a' c='oidset_contains'/>
+<use f='codebrowser/oidset.c' l='33' u='m' c='oidset_insert'/>
+<use f='codebrowser/oidset.c' l='34' u='a' c='oidset_insert'/>
+<use f='codebrowser/oidset.c' l='43' u='a' c='oidset_insert'/>
+<use f='codebrowser/oidset.c' l='49' u='a' c='oidset_clear'/>

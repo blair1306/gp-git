@@ -1,0 +1,27 @@
+<dec f='codebrowser/cache.h' l='482' type='char * get_object_directory()'/>
+<use f='codebrowser/builtin/count-objects.c' l='112' u='c' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/fsck.c' l='698' u='c' c='cmd_fsck'/>
+<use f='codebrowser/builtin/init-db.c' l='300' u='c' c='create_object_directory'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2649' u='c' c='add_unreachable_loose_objects'/>
+<use f='codebrowser/builtin/prune-packed.c' l='42' u='c' c='prune_packed_objects'/>
+<use f='codebrowser/builtin/prune.c' l='145' u='c' c='cmd_prune'/>
+<use f='codebrowser/builtin/prune.c' l='149' u='c' c='cmd_prune'/>
+<use f='codebrowser/builtin/prune.c' l='150' u='c' c='cmd_prune'/>
+<use f='codebrowser/builtin/repack.c' l='222' u='c' c='cmd_repack'/>
+<use f='codebrowser/bulk-checkin.c' l='46' u='c' c='finish_bulk_checkin'/>
+<def f='codebrowser/environment.c' l='240' ll='245' type='char * get_object_directory()'/>
+<use f='codebrowser/http-backend.c' l='514' u='c' c='get_info_packs'/>
+<use f='codebrowser/pack-write.c' l='295' u='c' c='index_pack_lockfile'/>
+<use f='codebrowser/server-info.c' l='198' u='c' c='init_pack_info'/>
+<use f='codebrowser/server-info.c' l='261' u='c' c='update_info_packs'/>
+<use f='codebrowser/sha1_file.c' l='261' u='c' c='sha1_file_name'/>
+<use f='codebrowser/sha1_file.c' l='286' u='c' c='odb_pack_name'/>
+<use f='codebrowser/sha1_file.c' l='437' u='c' c='link_alt_odb_entries'/>
+<use f='codebrowser/sha1_file.c' l='648' u='c' c='prepare_alt_odb'/>
+<use f='codebrowser/sha1_file.c' l='1586' u='c' c='prepare_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='3320' u='c' c='write_loose_object'/>
+<use f='codebrowser/sha1_file.c' l='3841' u='c' c='for_each_loose_object'/>
+<use f='codebrowser/sha1_name.c' l='104' u='c' c='find_short_object_filename'/>
+<use f='codebrowser/tmp-objdir.c' l='135' u='c' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='164' u='c' c='tmp_objdir_create'/>
+<use f='codebrowser/tmp-objdir.c' l='270' u='c' c='tmp_objdir_migrate'/>

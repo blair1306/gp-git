@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='1838' type='int sha1_object_info_extended(const unsigned char * , struct object_info * , unsigned int flags)'/>
+<use f='codebrowser/builtin/cat-file.c' l='79' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='90' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/cat-file.c' l='341' u='c' c='batch_object_write'/>
+<def f='codebrowser/sha1_file.c' l='2974' ll='3040' type='int sha1_object_info_extended(const unsigned char * sha1, struct object_info * oi, unsigned int flags)'/>
+<use f='codebrowser/sha1_file.c' l='3031' u='c' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_file.c' l='3050' u='c' c='sha1_object_info'/>
+<use f='codebrowser/sha1_file.c' l='3083' u='c' c='read_object'/>
+<use f='codebrowser/sha1_file.c' l='3466' u='c' c='has_sha1_file_with_flags'/>
+<use f='codebrowser/streaming.c' l='116' u='c' c='istream_source'/>

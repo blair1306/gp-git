@@ -1,0 +1,10 @@
+<dec f='codebrowser/run-command.h' l='144' type='int finish_async(struct async * async)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='734' u='c' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='750' u='c' c='run_and_feed_hook'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1490' u='c' c='execute_commands'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1802' u='c' c='unpack_with_sideband'/>
+<use f='codebrowser/convert.c' l='491' u='c' c='apply_single_file_filter'/>
+<use f='codebrowser/fetch-pack.c' l='894' u='c' c='get_pack'/>
+<def f='codebrowser/run-command.c' l='1152' ll='1163' type='int finish_async(struct async * async)'/>
+<use f='codebrowser/send-pack.c' l='585' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='606' u='c' c='send_pack'/>

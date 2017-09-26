@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1434' type='int parse_date(const char * date, struct strbuf * out)'/>
+<use f='codebrowser/builtin/commit.c' l='550' u='c' c='parse_force_date'/>
+<def f='codebrowser/date.c' l='795' ll='803' type='int parse_date(const char * date, struct strbuf * result)'/>
+<use f='codebrowser/fast-import.c' l='2109' u='c' c='parse_ident'/>
+<use f='codebrowser/ident.c' l='415' u='c' c='fmt_ident'/>
+<use f='codebrowser/t/helper/test-date.c' l='55' u='c' c='parse_dates'/>

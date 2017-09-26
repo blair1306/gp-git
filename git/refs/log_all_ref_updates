@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='806' type='enum log_refs_config'/>
+<use f='codebrowser/branch.c' l='294' u='w' c='create_branch'/>
+<use f='codebrowser/builtin/init-db.c' l='266' u='r' c='create_default_files'/>
+<use f='codebrowser/config.c' l='1055' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1057' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1059' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='68' type='enum log_refs_config'/>
+<use f='codebrowser/refs.c' l='716' u='r' c='should_autocreate_reflog'/>
+<use f='codebrowser/refs/files-backend.c' l='1375' u='r' c='files_rename_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1376' u='w' c='files_rename_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1382' u='w' c='files_rename_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1561' u='r' c='files_log_ref_write'/>
+<use f='codebrowser/refs/files-backend.c' l='1562' u='w' c='files_log_ref_write'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/dir.h' l='263' type='void clear_directory(struct dir_struct * dir)'/>
+<use f='codebrowser/builtin/check-ignore.c' l='188' u='c' c='cmd_check_ignore'/>
+<use f='codebrowser/builtin/clean.c' l='702' u='c' c='filter_by_patterns_cmd'/>
+<def f='codebrowser/dir.c' l='2365' ll='2390' type='void clear_directory(struct dir_struct * dir)'/>
+<doc f='codebrowser/dir.c' l='2361'>/*
+ * Frees memory within dir which was allocated for exclude lists and
+ * the exclude_stack.  Does not free dir itself.
+ */</doc>
+<use f='codebrowser/wt-status.c' l='689' u='c' c='wt_status_collect_untracked'/>

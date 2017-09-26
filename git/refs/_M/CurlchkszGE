@@ -1,0 +1,4 @@
+<dec f='include/curl/curlrules.h' l='134'/>
+<use f='include/curl/curlrules.h' l='163' u='c'/>
+<use f='include/curl/curlrules.h' l='183' u='c'/>
+<use f='include/curl/curlrules.h' l='242' u='w'/>

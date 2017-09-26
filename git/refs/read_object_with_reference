@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1399' type='void * read_object_with_reference(const unsigned char * sha1, const char * required_type, unsigned long * size, unsigned char * sha1_ret)'/>
+<use f='codebrowser/builtin/cat-file.c' l='160' u='c' c='cat_one_file'/>
+<use f='codebrowser/builtin/grep.c' l='446' u='c' c='grep_submodule'/>
+<use f='codebrowser/builtin/grep.c' l='608' u='c' c='grep_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1339' u='c' c='add_preferred_base'/>
+<use f='codebrowser/fast-import.c' l='2583' u='c' c='note_change_n'/>
+<use f='codebrowser/fast-import.c' l='2653' u='c' c='parse_from_existing'/>
+<use f='codebrowser/fast-import.c' l='2732' u='c' c='parse_merge'/>
+<def f='codebrowser/sha1_file.c' l='3129' ll='3175' type='void * read_object_with_reference(const unsigned char * sha1, const char * required_type_name, unsigned long * size, unsigned char * actual_sha1_return)'/>
+<use f='codebrowser/tree-walk.c' l='87' u='c' c='fill_tree_descriptor'/>
+<use f='codebrowser/tree-walk.c' l='537' u='c' c='get_tree_entry'/>
+<use f='codebrowser/tree-walk.c' l='605' u='c' c='get_tree_entry_follow_symlinks'/>

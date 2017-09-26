@@ -1,0 +1,3 @@
+<dec f='codebrowser/tree.h' l='37' type='int read_tree(struct tree * tree, int stage, struct pathspec * pathspec, struct index_state * istate)'/>
+<use f='codebrowser/builtin/ls-files.c' l='442' u='c' c='overlay_tree_on_index'/>
+<def f='codebrowser/tree.c' l='154' ll='193' type='int read_tree(struct tree * tree, int stage, struct pathspec * match, struct index_state * istate)'/>

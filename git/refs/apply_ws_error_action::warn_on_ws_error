@@ -1,0 +1,5 @@
+<dec f='codebrowser/apply.h' l='6' type='1'/>
+<use f='codebrowser/apply.c' l='34' u='r' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='38' u='r' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='90' u='r' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='165' u='r' c='set_default_whitespace_mode'/>

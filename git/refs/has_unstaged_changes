@@ -1,0 +1,8 @@
+<dec f='codebrowser/wt-status.h' l='134' type='int has_unstaged_changes(int ignore_submodules)'/>
+<doc f='codebrowser/wt-status.h' l='133'>/* The following functions expect that the caller took care of reading the index. */</doc>
+<use f='codebrowser/sequencer.c' l='2215' u='c' c='commit_staged_changes'/>
+<def f='codebrowser/wt-status.c' l='2259' ll='2271' type='int has_unstaged_changes(int ignore_submodules)'/>
+<use f='codebrowser/wt-status.c' l='2309' u='c' c='require_clean_work_tree'/>
+<doc f='codebrowser/wt-status.c' l='2256'>/**
+ * Returns 1 if there are unstaged changes, 0 otherwise.
+ */</doc>

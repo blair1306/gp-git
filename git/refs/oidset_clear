@@ -1,0 +1,8 @@
+<dec f='codebrowser/oidset.h' l='43' type='void oidset_clear(struct oidset * set)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='297' u='c' c='write_head_info'/>
+<doc f='codebrowser/oidset.h' l='39'>/**
+ * Remove all entries from the oidset, freeing any resources associated with
+ * it.
+ */</doc>
+<use f='codebrowser/fetch-pack.c' l='691' u='c' c='filter_refs'/>
+<def f='codebrowser/oidset.c' l='47' ll='50' type='void oidset_clear(struct oidset * set)'/>

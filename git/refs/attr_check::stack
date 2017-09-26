@@ -1,0 +1,7 @@
+<dec f='codebrowser/attr.h' l='42' type='struct attr_stack *'/>
+<offset>256</offset>
+<use f='codebrowser/attr.c' l='560' u='a' c='drop_all_attr_stacks'/>
+<use f='codebrowser/attr.c' l='652' u='a' c='attr_check_clear'/>
+<use f='codebrowser/attr.c' l='1114' u='a' c='collect_some_attrs'/>
+<use f='codebrowser/attr.c' l='1116' u='r' c='collect_some_attrs'/>
+<use f='codebrowser/attr.c' l='1133' u='r' c='collect_some_attrs'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/commit.h' l='272' type='struct commit_list * get_shallow_commits_by_rev_list(int ac, const char ** av, int shallow_flag, int not_shallow_flag)'/>
+<def f='codebrowser/shallow.c' l='153' ll='216' type='struct commit_list * get_shallow_commits_by_rev_list(int ac, const char ** av, int shallow_flag, int not_shallow_flag)'/>
+<doc f='codebrowser/shallow.c' l='147'>/*
+ * Given rev-list arguments, run rev-list. All reachable commits
+ * except border ones are marked with not_shallow_flag. Border commits
+ * are marked with shallow_flag. The list of border/shallow commits
+ * are also returned.
+ */</doc>
+<use f='codebrowser/upload-pack.c' l='726' u='c' c='deepen_by_rev_list'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/diffcore.h' l='41' type='unsigned int'/>
+<offset>529</offset>
+<doc f='codebrowser/diffcore.h' l='41'>/* data should be free()&apos;ed */</doc>
+<use f='codebrowser/diff-no-index.c' l='73' u='w' c='populate_from_stdin'/>
+<use f='codebrowser/diff.c' l='2800' u='w' c='diff_populate_gitlink'/>
+<use f='codebrowser/diff.c' l='2862' u='w' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2905' u='w' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2925' u='w' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2932' u='r' c='diff_free_filespec_blob'/>
+<use f='codebrowser/diff.c' l='2937' u='r' c='diff_free_filespec_blob'/>
+<use f='codebrowser/diff.c' l='2938' u='w' c='diff_free_filespec_blob'/>

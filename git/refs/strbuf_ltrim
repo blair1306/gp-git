@@ -1,0 +1,5 @@
+<dec f='codebrowser/strbuf.h' l='170' type='void strbuf_ltrim(struct strbuf * )'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='374' u='c' c='shortlog'/>
+<use f='codebrowser/daemon.c' l='353' u='c' c='run_access_hook'/>
+<use f='codebrowser/strbuf.c' l='74' u='c' c='strbuf_trim'/>
+<def f='codebrowser/strbuf.c' l='83' ll='92' type='void strbuf_ltrim(struct strbuf * sb)'/>

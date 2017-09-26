@@ -1,0 +1,7 @@
+<dec f='codebrowser/dir.h' l='201' type='int count_slashes(const char * s)'/>
+<use f='codebrowser/apply.c' l='789' u='c' c='guess_p_value'/>
+<use f='codebrowser/apply.c' l='793' u='c' c='guess_p_value'/>
+<doc f='codebrowser/dir.h' l='200'>/*Count the number of slashes for string s*/</doc>
+<use f='codebrowser/builtin/show-branch.c' l='435' u='c' c='append_matching_ref'/>
+<use f='codebrowser/builtin/show-branch.c' l='526' u='c' c='append_one_rev'/>
+<def f='codebrowser/dir.c' l='56' ll='63' type='int count_slashes(const char * s)'/>

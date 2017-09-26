@@ -1,0 +1,24 @@
+<dec f='codebrowser/refs/refs-internal.h' l='639' type='const char *'/>
+<use f='codebrowser/refs.c' l='26' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<use f='codebrowser/refs.c' l='26' u='r' c='find_ref_storage_backend'/>
+<offset>64</offset>
+<use f='codebrowser/refs/files-backend.c' l='94' u='r' c='files_downcast'/>
+<use f='codebrowser/refs/packed-backend.c' l='121' u='r' c='packed_downcast'/>

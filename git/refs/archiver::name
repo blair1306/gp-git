@@ -1,0 +1,50 @@
+<dec f='codebrowser/archive.h' l='23' type='const char *'/>
+<use f='codebrowser/archive-tar.c' l='364' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='364' u='r' c='find_tar_filter'/>
+<use f='codebrowser/archive-tar.c' l='383' u='w' c='tar_filter_config'/>
+<offset>0</offset>
+<use f='codebrowser/archive.c' l='282' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='282' u='r' c='lookup_archiver'/>
+<use f='codebrowser/archive.c' l='462' u='r' c='parse_archive_args'/>
+<use f='codebrowser/archive.c' l='542' u='r' c='archive_format_from_filename'/>
+<use f='codebrowser/archive.c' l='543' u='r' c='archive_format_from_filename'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/tmp-objdir.h' l='27' type='struct tmp_objdir * tmp_objdir_create()'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1712' u='c' c='unpack'/>
+<doc f='codebrowser/tmp-objdir.h' l='24'>/*
+ * Create a new temporary object directory; returns NULL on failure.
+ */</doc>
+<def f='codebrowser/tmp-objdir.c' l='123' ll='170' type='struct tmp_objdir * tmp_objdir_create()'/>

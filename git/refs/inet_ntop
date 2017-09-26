@@ -1,0 +1,9 @@
+<dec f='include/arpa/inet.h' l='64' type='const char * inet_ntop(int __af, const void *restrict __cp, char *restrict __buf, socklen_t __len)'/>
+<doc f='include/arpa/inet.h' l='61'>/* Convert a Internet address in binary network format for interface
+   type AF in buffer starting at CP to presentation form and place
+   result in buffer of length LEN astarting at BUF.  */</doc>
+<use f='codebrowser/daemon.c' l='626' u='c' c='lookup_hostname'/>
+<use f='codebrowser/daemon.c' l='851' u='c' c='handle'/>
+<use f='codebrowser/daemon.c' l='859' u='c' c='handle'/>
+<use f='codebrowser/daemon.c' l='913' u='c' c='ip2str'/>
+<use f='codebrowser/daemon.c' l='917' u='c' c='ip2str'/>

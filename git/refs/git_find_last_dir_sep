@@ -1,0 +1,7 @@
+<def f='codebrowser/git-compat-util.h' l='374' ll='377' type='char * git_find_last_dir_sep(const char * path)'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='59' macro='1' u='c'/>
+<use f='codebrowser/config.c' l='149' macro='1' u='c'/>
+<use f='codebrowser/config.c' l='191' macro='1' u='c'/>
+<use f='codebrowser/exec_cmd.c' l='48' macro='1' u='c'/>
+<use f='codebrowser/git.c' l='630' macro='1' u='c'/>
+<use f='codebrowser/unix-socket.c' l='45' macro='1' u='c'/>

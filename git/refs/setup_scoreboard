@@ -1,0 +1,3 @@
+<dec f='codebrowser/blame.h' l='171' type='void setup_scoreboard(struct blame_scoreboard * sb, const char * path, struct blame_origin ** orig)'/>
+<def f='codebrowser/blame.c' l='1749' ll='1848' type='void setup_scoreboard(struct blame_scoreboard * sb, const char * path, struct blame_origin ** orig)'/>
+<use f='codebrowser/builtin/blame.c' l='867' u='c' c='cmd_blame'/>

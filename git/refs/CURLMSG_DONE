@@ -1,0 +1,4 @@
+<dec f='include/curl/multi.h' l='84' type='1'/>
+<doc f='include/curl/multi.h' l='84'>/* This easy handle has completed. &apos;result&apos; contains
+                   the CURLcode of the transfer */</doc>
+<use f='codebrowser/http.c' l='242' u='r' c='process_curl_messages'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/commit.h' l='287' type='struct oid_array *'/>
+<offset>320</offset>
+<use f='codebrowser/builtin/receive-pack.c' l='1809' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1818' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1870' u='w' c='update_shallow_info'/>
+<use f='codebrowser/fetch-pack.c' l='1104' u='w' c='update_shallow'/>
+<use f='codebrowser/shallow.c' l='567' u='r' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='675' u='r' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='680' u='r' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='692' u='r' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='715' u='r' c='post_assign_shallow'/>

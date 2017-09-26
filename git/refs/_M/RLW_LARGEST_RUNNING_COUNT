@@ -1,0 +1,7 @@
+<dec f='codebrowser/ewah/ewok_rlw.h' l='26'/>
+<use f='codebrowser/ewah/ewok_rlw.h' l='64' u='c'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='75' u='c'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='80' u='c'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='84' u='c'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='85' u='c'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='176' u='c'/>

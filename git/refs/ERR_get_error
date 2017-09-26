@@ -1,0 +1,2 @@
+<dec f='include/openssl/err.h' l='321' type='unsigned long ERR_get_error()'/>
+<use f='codebrowser/imap-send.c' l='192' u='c' c='ssl_socket_perror'/>

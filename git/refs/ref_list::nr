@@ -1,0 +1,17 @@
+<dec f='codebrowser/bundle.h' l='7' type='unsigned int'/>
+<offset>0</offset>
+<use f='codebrowser/bundle.c' l='18' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='18' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='18' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='19' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='20' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='21' u='w' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='110' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='143' u='r' c='verify_bundle'/>
+<use f='codebrowser/bundle.c' l='155' u='r' c='verify_bundle'/>
+<use f='codebrowser/bundle.c' l='188' u='r' c='verify_bundle'/>
+<use f='codebrowser/bundle.c' l='189' u='r' c='verify_bundle'/>
+<use f='codebrowser/bundle.c' l='192' u='r' c='verify_bundle'/>
+<use f='codebrowser/bundle.c' l='197' u='r' c='verify_bundle'/>
+<use f='codebrowser/bundle.c' l='198' u='r' c='verify_bundle'/>
+<use f='codebrowser/transport.c' l='88' u='r' c='get_refs_from_bundle'/>

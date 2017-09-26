@@ -1,0 +1,11 @@
+<dec f='codebrowser/revision.h' l='220' type='struct saved_parents *'/>
+<offset>16832</offset>
+<doc f='codebrowser/revision.h' l='219'>/* copies of the parent lists, for --full-diff display */</doc>
+<use f='codebrowser/revision.c' l='3037' u='r' c='save_parents'/>
+<use f='codebrowser/revision.c' l='3038' u='w' c='save_parents'/>
+<use f='codebrowser/revision.c' l='3039' u='r' c='save_parents'/>
+<use f='codebrowser/revision.c' l='3042' u='r' c='save_parents'/>
+<use f='codebrowser/revision.c' l='3063' u='r' c='free_saved_parents'/>
+<use f='codebrowser/revision.c' l='3064' u='r' c='free_saved_parents'/>
+<use f='codebrowser/revision.c' l='3071' u='r' c='get_saved_parents'/>
+<use f='codebrowser/revision.c' l='3074' u='r' c='get_saved_parents'/>

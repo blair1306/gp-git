@@ -1,0 +1,8 @@
+<dec f='codebrowser/dir.h' l='114' type='struct stat_data'/>
+<offset>128</offset>
+<use f='codebrowser/dir.c' l='1693' u='a' c='valid_cached_dir'/>
+<use f='codebrowser/dir.c' l='1693' u='r' c='valid_cached_dir'/>
+<use f='codebrowser/dir.c' l='1697' u='a' c='valid_cached_dir'/>
+<use f='codebrowser/dir.c' l='1700' u='a' c='valid_cached_dir'/>
+<use f='codebrowser/dir.c' l='2449' u='a' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2650' u='a' c='read_stat'/>

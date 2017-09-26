@@ -1,0 +1,28 @@
+<dec f='codebrowser/refs.h' l='99' type='int refs_verify_refname_available(struct ref_store * refs, const char * refname, const struct string_list * extras, const struct string_list * skip, struct strbuf * err)'/>
+<doc f='codebrowser/refs.h' l='81'>/*
+ * Return 0 if a reference named refname could be created without
+ * conflicting with the name of an existing reference. Otherwise,
+ * return a negative value and write an explanation to err. If extras
+ * is non-NULL, it is a list of additional refnames with which refname
+ * is not allowed to conflict. If skip is non-NULL, ignore potential
+ * conflicts with refs in skip (e.g., because they are scheduled for
+ * deletion in the same operation). Behavior is undefined if the same
+ * name is listed in both extras and skip.
+ *
+ * Two reference names conflict if one of them exactly matches the
+ * leading components of the other; e.g., &quot;foo/bar&quot; conflicts with
+ * both &quot;foo&quot; and with &quot;foo/bar/baz&quot; but not with &quot;foo/bar&quot; or
+ * &quot;foo/barbados&quot;.
+ *
+ * extras and skip must be sorted.
+ */</doc>
+<use f='codebrowser/refs.c' l='1241' u='c' c='refs_rename_ref_available'/>
+<def f='codebrowser/refs.c' l='1845' ll='1932' type='int refs_verify_refname_available(struct ref_store * refs, const char * refname, const struct string_list * extras, const struct string_list * skip, struct strbuf * err)'/>
+<use f='codebrowser/refs/files-backend.c' l='496' u='c' c='lock_raw_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='601' u='c' c='lock_raw_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='638' u='c' c='lock_raw_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='913' u='c' c='lock_ref_sha1_basic'/>
+<use f='codebrowser/refs/files-backend.c' l='927' u='c' c='lock_ref_sha1_basic'/>
+<use f='codebrowser/refs/files-backend.c' l='942' u='c' c='lock_ref_sha1_basic'/>
+<use f='codebrowser/refs/files-backend.c' l='2690' u='c' c='files_initial_transaction_commit'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='148' u='c' c='cmd_verify_ref'/>

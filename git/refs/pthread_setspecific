@@ -1,0 +1,5 @@
+<dec f='include/pthread.h' l='1122' type='int pthread_setspecific(pthread_key_t __key, const void * __pointer)'/>
+<doc f='include/pthread.h' l='1121'>/* Store POINTER in the thread-specific data slot identified by KEY. */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='377' u='c' c='set_thread_data'/>
+<use f='codebrowser/run-command.c' l='932' u='c' c='run_thread'/>
+<use f='codebrowser/run-command.c' l='956' u='c' c='async_die_is_recursing'/>

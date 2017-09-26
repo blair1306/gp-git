@@ -1,0 +1,4 @@
+<dec f='codebrowser/iterator.h' l='32' type='-1'/>
+<doc f='codebrowser/iterator.h' l='31'>/* End the iteration without an error: */</doc>
+<use f='codebrowser/refs/iterator.c' l='135' u='r' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='243' u='r' c='overlay_iterator_select'/>

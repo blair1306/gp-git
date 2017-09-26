@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1962' type='void ws_check_emit(const char * line, int len, unsigned int ws_rule, FILE * stream, const char * set, const char * reset, const char * ws)'/>
+<use f='codebrowser/diff.c' l='592' u='c' c='emit_line_checked'/>
+<use f='codebrowser/diff.c' l='2184' u='c' c='checkdiff_consume'/>
+<def f='codebrowser/ws.c' l='248' ll='253' type='void ws_check_emit(const char * line, int len, unsigned int ws_rule, FILE * stream, const char * set, const char * reset, const char * ws)'/>

@@ -1,0 +1,20 @@
+<def f='codebrowser/cache-tree.h' l='17' ll='23'/>
+<dec f='codebrowser/cache-tree.h' l='25' type='struct cache_tree * cache_tree()'/>
+<size>40</size>
+<mbr r='cache_tree::entry_count' o='0' t='int'/>
+<mbr r='cache_tree::oid' o='32' t='struct object_id'/>
+<mbr r='cache_tree::subtree_nr' o='192' t='int'/>
+<mbr r='cache_tree::subtree_alloc' o='224' t='int'/>
+<mbr r='cache_tree::down' o='256' t='struct cache_tree_sub **'/>
+<use f='codebrowser/builtin/checkout.c' l='588' u='c' c='merge_working_tree'/>
+<def f='codebrowser/cache-tree.c' l='11' ll='16' type='struct cache_tree * cache_tree()'/>
+<use f='codebrowser/cache-tree.c' l='294' u='c' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='506' u='c' c='read_one'/>
+<use f='codebrowser/cache-tree.c' l='623' u='c' c='write_index_as_tree'/>
+<use f='codebrowser/cache-tree.c' l='680' u='c' c='prime_cache_tree_rec'/>
+<use f='codebrowser/cache-tree.c' l='691' u='c' c='prime_cache_tree'/>
+<use f='codebrowser/cache-tree.c' l='731' u='c' c='update_main_cache_tree'/>
+<use f='codebrowser/merge-recursive.c' l='300' u='c' c='write_tree_from_memory'/>
+<use f='codebrowser/sequencer.c' l='508' u='c' c='is_index_unchanged'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='60' u='c' c='cmd_main'/>
+<use f='codebrowser/unpack-trees.c' l='1395' u='c' c='unpack_trees'/>

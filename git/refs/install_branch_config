@@ -1,0 +1,6 @@
+<dec f='codebrowser/branch.h' l='55' type='int install_branch_config(int flag, const char * local, const char * origin, const char * remote)'/>
+<def f='codebrowser/branch.c' l='58' ll='127' type='int install_branch_config(int flag, const char * local, const char * origin, const char * remote)'/>
+<use f='codebrowser/branch.c' l='159' u='c' c='setup_tracking'/>
+<use f='codebrowser/builtin/clone.c' l='686' u='c' c='update_head'/>
+<use f='codebrowser/builtin/clone.c' l='1159' u='c' c='cmd_clone'/>
+<use f='codebrowser/transport.c' l='59' u='c' c='set_upstreams'/>

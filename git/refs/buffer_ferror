@@ -1,0 +1,8 @@
+<dec f='codebrowser/vcs-svn/line_buffer.h' l='22' type='int buffer_ferror(struct line_buffer * buf)'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='153' u='c' c='get_response_line'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='160' u='c' c='die_short_read'/>
+<def f='codebrowser/vcs-svn/line_buffer.c' l='62' ll='65' type='int buffer_ferror(struct line_buffer * buf)'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='13' u='c' c='input_error'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='72' u='c' c='error_short_read'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='149' u='c' c='die_short_read'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='475' u='c' c='svndump_read'/>

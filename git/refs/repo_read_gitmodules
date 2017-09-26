@@ -1,0 +1,6 @@
+<dec f='codebrowser/submodule.h' l='51' type='void repo_read_gitmodules(struct repository * repo)'/>
+<use f='codebrowser/builtin/grep.c' l='422' u='c' c='grep_submodule'/>
+<use f='codebrowser/builtin/ls-files.c' l='213' u='c' c='show_submodule'/>
+<use f='codebrowser/builtin/ls-files.c' l='613' u='c' c='cmd_ls_files'/>
+<def f='codebrowser/submodule.c' l='239' ll='254' type='void repo_read_gitmodules(struct repository * repo)'/>
+<use f='codebrowser/submodule.c' l='258' u='c' c='gitmodules_config'/>

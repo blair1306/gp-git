@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='148' type='int cmd_clone(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/clone.c' l='865' ll='1203' type='int cmd_clone(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='384'/>
+<use f='codebrowser/git.c' l='384'/>
+<use f='codebrowser/git.c' l='384'/>
+<use f='codebrowser/git.c' l='384'/>

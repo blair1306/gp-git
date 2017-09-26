@@ -1,0 +1,20 @@
+<dec f='codebrowser/config.h' l='61' type='int git_config_pathname(const char ** , const char * , const char * )'/>
+<use f='codebrowser/builtin/commit.c' l='1510' u='c' c='git_commit_config'/>
+<use f='codebrowser/builtin/config.c' l='158' u='c' c='format_config'/>
+<use f='codebrowser/builtin/fsck.c' l='85' u='c' c='fsck_config'/>
+<use f='codebrowser/builtin/init-db.c' l='155' u='c' c='git_init_db_config'/>
+<use f='codebrowser/builtin/log.c' l='812' u='c' c='git_format_config'/>
+<use f='codebrowser/builtin/receive-pack.c' l='141' u='c' c='receive_pack_config'/>
+<def f='codebrowser/config.c' l='989' ll='997' type='int git_config_pathname(const char ** dest, const char * var, const char * value)'/>
+<use f='codebrowser/config.c' l='1033' u='c' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1036' u='c' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1193' u='c' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1328' u='c' c='git_default_mailmap_config'/>
+<use f='codebrowser/config.c' l='1872' u='c' c='git_configset_get_pathname'/>
+<use f='codebrowser/diff.c' l='275' u='c' c='git_diff_ui_config'/>
+<use f='codebrowser/http.c' l='275' u='c' c='http_options'/>
+<use f='codebrowser/http.c' l='278' u='c' c='http_options'/>
+<use f='codebrowser/http.c' l='282' u='c' c='http_options'/>
+<use f='codebrowser/http.c' l='285' u='c' c='http_options'/>
+<use f='codebrowser/http.c' l='328' u='c' c='http_options'/>
+<use f='codebrowser/http.c' l='365' u='c' c='http_options'/>

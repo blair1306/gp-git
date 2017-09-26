@@ -1,0 +1,5 @@
+<dec f='codebrowser/iterator.h' l='72' type='3'/>
+<use f='codebrowser/iterator.h' l='75' u='r'/>
+<doc f='codebrowser/iterator.h' l='71'>/* Yield the value from iter1: */</doc>
+<use f='codebrowser/refs/iterator.c' l='245' u='r' c='overlay_iterator_select'/>
+<use f='codebrowser/refs/iterator.c' l='252' u='r' c='overlay_iterator_select'/>

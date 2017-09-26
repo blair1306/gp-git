@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>bisect.h source code [codebrowser/bisect.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="rev_list_info "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/bisect.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='bisect.h.html'>bisect.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/BISECT_H">BISECT_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/BISECT_H" data-ref="_M/BISECT_H">BISECT_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>extern</b> <b>struct</b> <a class="type" href="commit.h.html#commit_list" title='commit_list' data-ref="commit_list">commit_list</a> *<a class="decl" href="bisect.c.html#find_bisection" title='find_bisection' data-ref="find_bisection" id="find_bisection">find_bisection</a>(<b>struct</b> <a class="type" href="commit.h.html#commit_list" title='commit_list' data-ref="commit_list">commit_list</a> *<dfn class="local col6 decl" id="136list" title='list' data-type='struct commit_list *' data-ref="136list">list</dfn>,</td></tr>
+<tr><th id="5">5</th><td>					  <em>int</em> *<dfn class="local col7 decl" id="137reaches" title='reaches' data-type='int *' data-ref="137reaches">reaches</dfn>, <em>int</em> *<dfn class="local col8 decl" id="138all" title='all' data-type='int *' data-ref="138all">all</dfn>,</td></tr>
+<tr><th id="6">6</th><td>					  <em>int</em> <dfn class="local col9 decl" id="139find_all" title='find_all' data-type='int' data-ref="139find_all">find_all</dfn>);</td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>extern</b> <b>struct</b> <a class="type" href="commit.h.html#commit_list" title='commit_list' data-ref="commit_list">commit_list</a> *<a class="decl" href="bisect.c.html#filter_skipped" title='filter_skipped' data-ref="filter_skipped" id="filter_skipped">filter_skipped</a>(<b>struct</b> <a class="type" href="commit.h.html#commit_list" title='commit_list' data-ref="commit_list">commit_list</a> *<dfn class="local col0 decl" id="140list" title='list' data-type='struct commit_list *' data-ref="140list">list</dfn>,</td></tr>
+<tr><th id="9">9</th><td>					  <b>struct</b> <a class="type" href="commit.h.html#commit_list" title='commit_list' data-ref="commit_list">commit_list</a> **<dfn class="local col1 decl" id="141tried" title='tried' data-type='struct commit_list **' data-ref="141tried">tried</dfn>,</td></tr>
+<tr><th id="10">10</th><td>					  <em>int</em> <dfn class="local col2 decl" id="142show_all" title='show_all' data-type='int' data-ref="142show_all">show_all</dfn>,</td></tr>
+<tr><th id="11">11</th><td>					  <em>int</em> *<dfn class="local col3 decl" id="143count" title='count' data-type='int *' data-ref="143count">count</dfn>,</td></tr>
+<tr><th id="12">12</th><td>					  <em>int</em> *<dfn class="local col4 decl" id="144skipped_first" title='skipped_first' data-type='int *' data-ref="144skipped_first">skipped_first</dfn>);</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><u>#define <dfn class="macro" id="_M/BISECT_SHOW_ALL" data-ref="_M/BISECT_SHOW_ALL">BISECT_SHOW_ALL</dfn>		(1&lt;&lt;0)</u></td></tr>
+<tr><th id="15">15</th><td><u>#define <dfn class="macro" id="_M/REV_LIST_QUIET" data-ref="_M/REV_LIST_QUIET">REV_LIST_QUIET</dfn>		(1&lt;&lt;1)</u></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><b>struct</b> <dfn class="type def" id="rev_list_info" title='rev_list_info' data-ref="rev_list_info">rev_list_info</dfn> {</td></tr>
+<tr><th id="18">18</th><td>	<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="decl" id="rev_list_info::revs" title='rev_list_info::revs' data-ref="rev_list_info::revs">revs</dfn>;</td></tr>
+<tr><th id="19">19</th><td>	<em>int</em> <dfn class="decl" id="rev_list_info::flags" title='rev_list_info::flags' data-ref="rev_list_info::flags">flags</dfn>;</td></tr>
+<tr><th id="20">20</th><td>	<em>int</em> <dfn class="decl" id="rev_list_info::show_timestamp" title='rev_list_info::show_timestamp' data-ref="rev_list_info::show_timestamp">show_timestamp</dfn>;</td></tr>
+<tr><th id="21">21</th><td>	<em>int</em> <dfn class="decl" id="rev_list_info::hdr_termination" title='rev_list_info::hdr_termination' data-ref="rev_list_info::hdr_termination">hdr_termination</dfn>;</td></tr>
+<tr><th id="22">22</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="rev_list_info::header_prefix" title='rev_list_info::header_prefix' data-ref="rev_list_info::header_prefix">header_prefix</dfn>;</td></tr>
+<tr><th id="23">23</th><td>};</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><b>extern</b> <em>int</em> <a class="decl" href="bisect.c.html#bisect_next_all" title='bisect_next_all' data-ref="bisect_next_all" id="bisect_next_all">bisect_next_all</a>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="145prefix" title='prefix' data-type='const char *' data-ref="145prefix">prefix</dfn>, <em>int</em> <dfn class="local col6 decl" id="146no_checkout" title='no_checkout' data-type='int' data-ref="146no_checkout">no_checkout</dfn>);</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><b>extern</b> <em>int</em> <a class="decl" href="bisect.c.html#estimate_bisect_steps" title='estimate_bisect_steps' data-ref="estimate_bisect_steps" id="estimate_bisect_steps">estimate_bisect_steps</a>(<em>int</em> <dfn class="local col7 decl" id="147all" title='all' data-type='int' data-ref="147all">all</dfn>);</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><b>extern</b> <em>void</em> <a class="decl" href="bisect.c.html#read_bisect_terms" title='read_bisect_terms' data-ref="read_bisect_terms" id="read_bisect_terms">read_bisect_terms</a>(<em>const</em> <em>char</em> **<dfn class="local col8 decl" id="148bad" title='bad' data-type='const char **' data-ref="148bad">bad</dfn>, <em>const</em> <em>char</em> **<dfn class="local col9 decl" id="149good" title='good' data-type='const char **' data-ref="149good">good</dfn>);</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='bisect.c.html'>codebrowser/bisect.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

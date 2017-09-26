@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='287' type='char *'/>
+<offset>192</offset>
+<use f='codebrowser/remote.c' l='2264' u='r' c='clear_cas_option'/>
+<use f='codebrowser/remote.c' l='2277' u='w' c='add_cas_entry'/>
+<use f='codebrowser/remote.c' l='2348' u='r' c='apply_cas'/>

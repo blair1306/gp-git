@@ -1,0 +1,11 @@
+<dec f='codebrowser/tempfile.h' l='209' type='FILE * fdopen_tempfile(struct tempfile * tempfile, const char * mode)'/>
+<use f='codebrowser/lockfile.h' l='210' u='c' c='fdopen_lock_file'/>
+<doc f='codebrowser/tempfile.h' l='203'>/*
+ * Associate a stdio stream with the temporary file (which must still
+ * be open). Return `NULL` (*without* deleting the file) on error. The
+ * stream is closed automatically when `close_tempfile()` is called or
+ * when the file is deleted or renamed.
+ */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='638' u='c' c='commit_packed_refs'/>
+<def f='codebrowser/tempfile.c' l='206' ll='215' type='FILE * fdopen_tempfile(struct tempfile * tempfile, const char * mode)'/>
+<use f='codebrowser/trailer.c' l='964' u='c' c='create_in_place_tempfile'/>

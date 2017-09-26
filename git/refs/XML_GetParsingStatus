@@ -1,0 +1,6 @@
+<dec f='include/expat.h' l='853' type='void XML_GetParsingStatus(XML_Parser parser, XML_ParsingStatus * status)'/>
+<doc f='include/expat.h' l='847'>/* Returns status of parser with respect to being initialized, parsing,
+   finished, or suspended and processing the final buffer.
+   XXX XML_Parse() and XML_ParseBuffer() should return XML_ParsingStatus,
+   XXX with XML_FINISHED_OK or XML_FINISHED_ERROR replacing XML_FINISHED
+*/</doc>

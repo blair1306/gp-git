@@ -1,0 +1,5 @@
+<dec f='codebrowser/ewah/ewok.h' l='43'/>
+<use f='codebrowser/ewah/bitmap.c' l='157' u='c'/>
+<use f='codebrowser/pack-bitmap.c' l='621' u='c'/>
+<use f='codebrowser/pack-bitmap.c' l='763' u='c'/>
+<use f='codebrowser/pack-bitmap.c' l='995' u='c'/>

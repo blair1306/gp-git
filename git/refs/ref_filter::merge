@@ -1,0 +1,6 @@
+<dec f='codebrowser/ref-filter.h' l='62' type='enum (anonymous enum at /home/jon/workspace/git/ref-filter.h:58:2)'/>
+<use f='codebrowser/builtin/branch.c' l='630' u='r' c='cmd_branch'/>
+<offset>384</offset>
+<use f='codebrowser/ref-filter.c' l='1938' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='2183' u='r' c='parse_opt_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='2191' u='w' c='parse_opt_merge_filter'/>

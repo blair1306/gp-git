@@ -1,0 +1,4 @@
+<dec f='codebrowser/git-compat-util.h' l='1025' type='int git_qsort_s(void * base, size_t nmemb, size_t size, int (*)(const void *, const void *, void *) compar, void * ctx)'/>
+<def f='codebrowser/compat/qsort_s.c' l='48' ll='69' type='int git_qsort_s(void * b, size_t n, size_t s, int (*)(const void *, const void *, void *) cmp, void * ctx)'/>
+<use f='codebrowser/ref-filter.c' l='2046' macro='1' u='c'/>
+<use f='codebrowser/string-list.c' l='237' macro='1' u='c'/>

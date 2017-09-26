@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='858' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/init-db.c' l='133' u='r' c='copy_templates'/>
+<use f='codebrowser/setup.c' l='417' u='w' c='check_repo_format'/>
+<use f='codebrowser/setup.c' l='457' u='r' c='check_repository_format_gently'/>
+<use f='codebrowser/setup.c' l='493' u='w' c='read_repository_format'/>
+<use f='codebrowser/setup.c' l='497' u='r' c='read_repository_format'/>
+<use f='codebrowser/setup.c' l='503' u='r' c='verify_repository_format'/>
+<use f='codebrowser/setup.c' l='505' u='r' c='verify_repository_format'/>
+<use f='codebrowser/setup.c' l='509' u='r' c='verify_repository_format'/>
+<use f='codebrowser/worktree.c' l='363' u='r' c='submodule_uses_worktrees'/>

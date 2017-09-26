@@ -1,0 +1,30 @@
+<dec f='codebrowser/sha1-array.h' l='13' type='void oid_array_append(struct oid_array * array, const struct object_id * oid)'/>
+<use f='codebrowser/bisect.c' l='419' u='c' c='register_ref'/>
+<use f='codebrowser/bisect.c' l='421' u='c' c='register_ref'/>
+<use f='codebrowser/builtin/cat-file.c' l='422' u='c' c='batch_loose_object'/>
+<use f='codebrowser/builtin/cat-file.c' l='431' u='c' c='batch_packed_object'/>
+<use f='codebrowser/builtin/diff.c' l='197' u='c' c='builtin_diff_combined'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2759' u='c' c='record_recent_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2764' u='c' c='record_recent_commit'/>
+<use f='codebrowser/builtin/pull.c' l='349' u='c' c='get_merge_heads'/>
+<use f='codebrowser/builtin/receive-pack.c' l='887' u='c' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1593' u='c' c='read_head_info'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1867' u='c' c='update_shallow_info'/>
+<use f='codebrowser/combine-diff.c' l='1539' u='c' c='diff_tree_combined_merge'/>
+<use f='codebrowser/connect.c' l='157' u='c' c='get_remote_heads'/>
+<use f='codebrowser/connect.c' l='173' u='c' c='get_remote_heads'/>
+<use f='codebrowser/fetch-pack.c' l='1085' u='c' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1103' u='c' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1121' u='c' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1123' u='c' c='update_shallow'/>
+<use f='codebrowser/fsck.c' l='159' u='c' c='init_skiplist'/>
+<use f='codebrowser/parse-options-cb.c' l='109' u='c' c='parse_opt_object_name'/>
+<def f='codebrowser/sha1-array.c' l='5' ll='10' type='void oid_array_append(struct oid_array * array, const struct object_id * oid)'/>
+<use f='codebrowser/sha1_name.c' l='84' u='c' c='append_loose_object'/>
+<use f='codebrowser/sha1_name.c' l='439' u='c' c='collect_ambiguous'/>
+<use f='codebrowser/submodule.c' l='762' u='c' c='collect_changed_submodules_cb'/>
+<use f='codebrowser/submodule.c' l='1084' u='c' c='append_oid_to_array'/>
+<use f='codebrowser/submodule.c' l='1095' u='c' c='check_for_new_submodule_commits'/>
+<use f='codebrowser/t/helper/test-sha1-array.c' l='22' u='c' c='cmd_main'/>
+<use f='codebrowser/transport.c' l='1031' u='c' c='transport_push'/>
+<use f='codebrowser/transport.c' l='1055' u='c' c='transport_push'/>

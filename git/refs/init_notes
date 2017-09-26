@@ -1,0 +1,29 @@
+<dec f='codebrowser/notes.h' l='101' type='void init_notes(struct notes_tree * t, const char * notes_ref, combine_notes_fn combine_notes, int flags)'/>
+<doc f='codebrowser/notes.h' l='82'>/*
+ * Initialize the given notes_tree with the notes tree structure at the given
+ * ref. If given ref is NULL, the value of the $GIT_NOTES_REF environment
+ * variable is used, and if that is missing, the default notes ref is used
+ * (&quot;refs/notes/commits&quot;).
+ *
+ * If you need to re-initialize a notes_tree structure (e.g. when switching from
+ * one notes ref to another), you must first de-initialize the notes_tree
+ * structure by calling free_notes(struct notes_tree *).
+ *
+ * If you pass t == NULL, the default internal notes_tree will be initialized.
+ *
+ * The combine_notes function that is passed becomes the default combine_notes
+ * function for the given notes_tree. If NULL is passed, the default
+ * combine_notes function is combine_notes_concatenate().
+ *
+ * Precondition: The notes_tree structure is zeroed (this can be achieved with
+ * memset(t, 0, sizeof(struct notes_tree)))
+ */</doc>
+<use f='codebrowser/builtin/notes.c' l='291' u='c' c='notes_copy_from_stdin'/>
+<use f='codebrowser/builtin/notes.c' l='339' u='c' c='init_notes_check'/>
+<use f='codebrowser/builtin/notes.c' l='723' u='c' c='merge_commit'/>
+<use f='codebrowser/notes-cache.c' l='43' u='c' c='notes_cache_init'/>
+<def f='codebrowser/notes.c' l='1002' ll='1040' type='void init_notes(struct notes_tree * t, const char * notes_ref, combine_notes_fn combine_notes, int flags)'/>
+<use f='codebrowser/notes.c' l='1050' u='c' c='load_notes_trees'/>
+<use f='codebrowser/notes.c' l='1231' u='c' c='format_note'/>
+<use f='codebrowser/remote-testsvn.c' l='61' u='c' c='read_ref_note'/>
+<use f='codebrowser/remote-testsvn.c' l='144' u='c' c='check_or_regenerate_marks'/>

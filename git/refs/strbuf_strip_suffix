@@ -1,0 +1,11 @@
+<def f='codebrowser/strbuf.h' l='482' ll='489' type='int strbuf_strip_suffix(struct strbuf * sb, const char * suffix)'/>
+<use f='codebrowser/builtin/add.c' l='329' u='c' c='check_embedded_repo'/>
+<use f='codebrowser/builtin/verify-pack.c' l='31' u='c' c='verify_one_pack'/>
+<use f='codebrowser/http-walker.c' l='308' u='c' c='process_alternates_response'/>
+<use f='codebrowser/mailinfo.c' l='731' u='c' c='check_inbody_header'/>
+<use f='codebrowser/trailer.c' l='919' u='c' c='process_input_file'/>
+<use f='codebrowser/transport.c' l='1267' u='c' c='refs_from_alternate_cb'/>
+<use f='codebrowser/worktree.c' l='55' u='c' c='get_main_worktree'/>
+<use f='codebrowser/worktree.c' l='57' u='c' c='get_main_worktree'/>
+<use f='codebrowser/worktree.c' l='86' u='c' c='get_linked_worktree'/>
+<use f='codebrowser/worktree.c' l='89' u='c' c='get_linked_worktree'/>

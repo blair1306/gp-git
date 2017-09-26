@@ -1,0 +1,10 @@
+<dec f='codebrowser/pack.h' l='14' type='uint32_t'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/index-pack.c' l='337' u='r' c='parse_pack_header'/>
+<use f='codebrowser/builtin/index-pack.c' l='1701' u='w' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='486' u='r' c='unpack_all'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='547' u='w' c='cmd_unpack_objects'/>
+<use f='codebrowser/fast-import.c' l='909' u='w' c='start_packfile'/>
+<use f='codebrowser/pack-write.c' l='182' u='w' c='write_pack_header'/>
+<use f='codebrowser/sha1_file.c' l='1185' u='r' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='3693' u='r' c='read_pack_header'/>

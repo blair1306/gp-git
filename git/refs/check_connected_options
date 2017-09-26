@@ -1,0 +1,12 @@
+<def f='codebrowser/connected.h' l='17' ll='41'/>
+<size>40</size>
+<doc f='codebrowser/connected.h' l='13'>/*
+ * Named-arguments struct for check_connected. All arguments are
+ * optional, and can be left to defaults as set by CHECK_CONNECTED_INIT.
+ */</doc>
+<mbr r='check_connected_options::quiet' o='0' t='int'/>
+<mbr r='check_connected_options::shallow_file' o='64' t='const char *'/>
+<mbr r='check_connected_options::transport' o='128' t='struct transport *'/>
+<mbr r='check_connected_options::err_fd' o='192' t='int'/>
+<mbr r='check_connected_options::progress' o='224' t='int'/>
+<mbr r='check_connected_options::env' o='256' t='const char **'/>

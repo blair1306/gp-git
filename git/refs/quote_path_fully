@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='728' type='int'/>
+<use f='codebrowser/config.c' l='1018' u='w' c='git_default_core_config'/>
+<def f='codebrowser/quote.c' l='5' type='int'/>
+<use f='codebrowser/quote.c' l='176' u='r' c='sq_must_quote'/>

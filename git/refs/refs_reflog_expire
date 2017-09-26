@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs.h' l='708' type='int refs_reflog_expire(struct ref_store * refs, const char * refname, const unsigned char * sha1, unsigned int flags, reflog_expiry_prepare_fn * prepare_fn, reflog_expiry_should_prune_fn * should_prune_fn, reflog_expiry_cleanup_fn * cleanup_fn, void * policy_cb_data)'/>
+<doc f='codebrowser/refs.h' l='702'>/*
+ * Expire reflog entries for the specified reference. sha1 is the old
+ * value of the reference. flags is a combination of the constants in
+ * enum expire_reflog_flags. The three function pointers are described
+ * above. On success, return zero.
+ */</doc>
+<def f='codebrowser/refs.c' l='2010' ll='2021' type='int refs_reflog_expire(struct ref_store * refs, const char * refname, const unsigned char * sha1, unsigned int flags, reflog_expiry_prepare_fn * prepare_fn, reflog_expiry_should_prune_fn * should_prune_fn, reflog_expiry_cleanup_fn * cleanup_fn, void * policy_cb_data)'/>
+<use f='codebrowser/refs.c' l='2030' u='c' c='reflog_expire'/>

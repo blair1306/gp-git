@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='72'/>
+<use f='codebrowser/cache.h' l='76' u='c'/>
+<use f='codebrowser/cache.h' l='937' u='c'/>
+<doc f='codebrowser/cache.h' l='71'>/* The length in byte and in hex digits of the largest possible hash value. */</doc>
+<use f='codebrowser/wt-status.h' l='85' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='59' u='c'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1209' u='c'/>
+<use f='codebrowser/pack-check.c' l='57' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1610' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3901' u='c'/>

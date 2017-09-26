@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='637'/>
+<use f='codebrowser/builtin/difftool.c' l='495' u='c'/>
+<use f='codebrowser/read-cache.c' l='1184' u='c'/>
+<use f='codebrowser/tree.c' l='59' u='c'/>

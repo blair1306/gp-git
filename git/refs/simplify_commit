@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='290' type='enum commit_action simplify_commit(struct rev_info * revs, struct commit * commit)'/>
+<use f='codebrowser/builtin/log.c' l='264' u='c' c='log_show_early'/>
+<def f='codebrowser/revision.c' l='3080' ll='3099' type='enum commit_action simplify_commit(struct rev_info * revs, struct commit * commit)'/>
+<use f='codebrowser/revision.c' l='3157' u='c' c='get_revision_1'/>

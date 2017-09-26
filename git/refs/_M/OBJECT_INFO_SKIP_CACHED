@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1835'/>
+<doc f='codebrowser/cache.h' l='1834'>/* Do not check cached storage */</doc>
+<use f='codebrowser/sha1_file.c' l='2986' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3467' u='c'/>

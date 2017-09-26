@@ -1,0 +1,6 @@
+<def f='include/curl/curl.h' l='2087' ll='2092'/>
+<size>16</size>
+<doc f='include/curl/curl.h' l='2085'>/* info about the certificate chain, only for OpenSSL builds. Asked
+   for with CURLOPT_CERTINFO / CURLINFO_CERTINFO */</doc>
+<mbr r='curl_certinfo::num_of_certs' o='0' t='int'/>
+<mbr r='curl_certinfo::certinfo' o='64' t='struct curl_slist **'/>

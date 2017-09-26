@@ -1,0 +1,5 @@
+<dec f='codebrowser/git-compat-util.h' l='4'/>
+<use f='include/features.h' l='312' u='a'/>
+<use f='include/features.h' l='312' u='c'/>
+<use f='include/zconf.h' l='470' u='a'/>
+<use f='include/zconf.h' l='470' u='c'/>

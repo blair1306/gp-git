@@ -1,0 +1,16 @@
+<dec f='codebrowser/graph.c' l='155' type='enum graph_state'/>
+<use f='codebrowser/graph.c' l='284' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='320' u='r' c='graph_update_state'/>
+<use f='codebrowser/graph.c' l='321' u='w' c='graph_update_state'/>
+<use f='codebrowser/graph.c' l='658' u='r' c='graph_update'/>
+<use f='codebrowser/graph.c' l='659' u='w' c='graph_update'/>
+<use f='codebrowser/graph.c' l='662' u='w' c='graph_update'/>
+<use f='codebrowser/graph.c' l='664' u='w' c='graph_update'/>
+<use f='codebrowser/graph.c' l='1178' u='r' c='graph_next_line'/>
+<use f='codebrowser/graph.c' l='1208' u='r' c='graph_padding_line'/>
+<use f='codebrowser/graph.c' l='1246' u='r' c='graph_is_commit_finished'/>
+<offset>224</offset>
+<doc f='codebrowser/graph.c' l='151'>/*
+	 * The current output state.
+	 * This tells us what kind of line graph_next_line() should output.
+	 */</doc>

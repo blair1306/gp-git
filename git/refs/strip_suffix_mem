@@ -1,0 +1,11 @@
+<def f='codebrowser/git-compat-util.h' l='508' ll='516' type='int strip_suffix_mem(const char * buf, size_t * len, const char * suffix)'/>
+<use f='codebrowser/git-compat-util.h' l='528' u='c' c='strip_suffix'/>
+<use f='codebrowser/strbuf.h' l='484' u='c' c='strbuf_strip_suffix'/>
+<doc f='codebrowser/git-compat-util.h' l='504'>/*
+ * If buf ends with suffix, return 1 and subtract the length of the suffix
+ * from *len. Otherwise, return 0 and leave *len untouched.
+ */</doc>
+<use f='codebrowser/builtin/clone.c' l='269' u='c' c='guess_dir_name'/>
+<use f='codebrowser/http.c' l='1765' u='c' c='update_url_from_redirect'/>
+<use f='codebrowser/sha1_file.c' l='1331' u='c' c='add_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='1465' u='c' c='prepare_packed_git_one'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/unpack-trees.h' l='44' type='unsigned int'/>
+<offset>256</offset>
+<use f='codebrowser/builtin/checkout.c' l='421' u='w' c='reset_tree'/>
+<use f='codebrowser/unpack-trees.c' l='575' u='r' c='unpack_index_entry'/>
+<use f='codebrowser/unpack-trees.c' l='1013' u='r' c='unpack_callback'/>

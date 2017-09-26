@@ -1,0 +1,14 @@
+<def f='codebrowser/lockfile.h' l='247' ll='250' type='int close_lock_file(struct lock_file * lk)'/>
+<doc f='codebrowser/lockfile.h' l='238'>/*
+ * If the lockfile is still open, close it (and the file pointer if it
+ * has been opened using `fdopen_lock_file()`) without renaming the
+ * lockfile over the file being locked. Return 0 upon success. On
+ * failure to `close(2)`, return a negative value and roll back the
+ * lock file. Usually `commit_lock_file()`, `commit_lock_file_to()`,
+ * or `rollback_lock_file()` should eventually be called if
+ * `close_lock_file()` succeeds.
+ */</doc>
+<use f='codebrowser/read-cache.c' l='2339' u='c' c='do_write_locked_index'/>
+<use f='codebrowser/refs/files-backend.c' l='1403' u='c' c='close_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='2847' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/refs/packed-backend.c' l='548' u='c' c='packed_refs_lock'/>

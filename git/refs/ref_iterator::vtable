@@ -1,0 +1,8 @@
+<dec f='codebrowser/refs/refs-internal.h' l='324' type='struct ref_iterator_vtable *'/>
+<offset>0</offset>
+<use f='codebrowser/refs/iterator.c' l='13' u='r' c='ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='19' u='r' c='ref_iterator_peel'/>
+<use f='codebrowser/refs/iterator.c' l='24' u='r' c='ref_iterator_abort'/>
+<use f='codebrowser/refs/iterator.c' l='30' u='w' c='base_ref_iterator_init'/>
+<use f='codebrowser/refs/iterator.c' l='39' u='w' c='base_ref_iterator_free'/>
+<use f='codebrowser/refs/iterator.c' l='81' u='r' c='is_empty_ref_iterator'/>

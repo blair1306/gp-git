@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='154' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/log-tree.c' l='677' u='w' c='show_log'/>
+<use f='codebrowser/pretty.c' l='1595' u='r' c='pp_title_line'/>

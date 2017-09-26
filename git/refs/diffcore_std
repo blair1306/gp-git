@@ -1,0 +1,23 @@
+<dec f='codebrowser/diff.h' l='293' type='void diffcore_std(struct diff_options * )'/>
+<use f='codebrowser/blame.c' l='561' u='c' c='find_origin'/>
+<use f='codebrowser/blame.c' l='630' u='c' c='find_rename'/>
+<use f='codebrowser/blame.c' l='1266' u='c' c='find_copy_in_parent'/>
+<use f='codebrowser/builtin/am.c' l='1154' u='c' c='index_has_changes'/>
+<use f='codebrowser/builtin/diff.c' l='96' u='c' c='builtin_diff_b_f'/>
+<use f='codebrowser/builtin/diff.c' l='121' u='c' c='builtin_diff_blobs'/>
+<use f='codebrowser/builtin/log.c' l='1063' u='c' c='make_cover_letter'/>
+<use f='codebrowser/builtin/merge.c' l='422' u='c' c='finish'/>
+<use f='codebrowser/builtin/reset.c' l='162' u='c' c='read_from_tree'/>
+<use f='codebrowser/combine-diff.c' l='1340' u='c' c='find_paths_generic'/>
+<use f='codebrowser/combine-diff.c' l='1467' u='c' c='diff_tree_combined'/>
+<use f='codebrowser/diff-lib.c' l='244' u='c' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='519' u='c' c='run_diff_index'/>
+<use f='codebrowser/diff-no-index.c' l='293' u='c' c='diff_no_index'/>
+<def f='codebrowser/diff.c' l='4994' ll='5023' type='void diffcore_std(struct diff_options * options)'/>
+<use f='codebrowser/line-log.c' l='825' u='c' c='queue_diffs'/>
+<use f='codebrowser/log-tree.c' l='730' u='c' c='log_tree_diff_flush'/>
+<use f='codebrowser/merge-recursive.c' l='533' u='c' c='get_renames'/>
+<use f='codebrowser/notes-merge.c' l='132' u='c' c='diff_tree_remote'/>
+<use f='codebrowser/notes-merge.c' l='195' u='c' c='diff_tree_local'/>
+<use f='codebrowser/patch-ids.c' l='24' u='c' c='commit_patch_id'/>
+<use f='codebrowser/tree-diff.c' l='619' u='c' c='try_to_follow_renames'/>

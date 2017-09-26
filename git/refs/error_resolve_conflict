@@ -1,0 +1,4 @@
+<dec f='codebrowser/advice.h' l='26' type='int error_resolve_conflict(const char * me)'/>
+<def f='codebrowser/advice.c' l='83' ll='107' type='int error_resolve_conflict(const char * me)'/>
+<use f='codebrowser/advice.c' l='111' u='c' c='die_resolve_conflict'/>
+<use f='codebrowser/sequencer.c' l='355' u='c' c='error_dirty_index'/>

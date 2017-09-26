@@ -1,0 +1,8 @@
+<dec f='codebrowser/attr.c' l='453' type='struct attr_stack *'/>
+<use f='codebrowser/attr.c' l='488' u='r' c='drop_attr_stack'/>
+<use f='codebrowser/attr.c' l='854' u='w' c='push_stack'/>
+<use f='codebrowser/attr.c' l='923' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='942' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='1041' u='r' c='fill'/>
+<use f='codebrowser/attr.c' l='1076' u='r' c='determine_macros'/>
+<offset>0</offset>

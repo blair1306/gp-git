@@ -1,0 +1,7 @@
+<dec f='codebrowser/object.h' l='133' type='void object_array_remove_duplicates(struct object_array * array)'/>
+<doc f='codebrowser/object.h' l='129'>/*
+ * Remove from array all but the first entry with a given name.
+ * Warning: this function uses an O(N^2) algorithm.
+ */</doc>
+<use f='codebrowser/bundle.c' l='450' u='c' c='create_bundle'/>
+<def f='codebrowser/object.c' l='397' ll='412' type='void object_array_remove_duplicates(struct object_array * array)'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1869' type='int copy_fd(int ifd, int ofd)'/>
+<use f='codebrowser/convert.c' l='437' u='c' c='filter_buffer_or_fd'/>
+<def f='codebrowser/copy.c' l='3' ll='16' type='int copy_fd(int ifd, int ofd)'/>
+<use f='codebrowser/copy.c' l='42' u='c' c='copy_file'/>

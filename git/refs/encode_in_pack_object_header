@@ -1,0 +1,15 @@
+<dec f='codebrowser/pack.h' l='93' type='int encode_in_pack_object_header(unsigned char * hdr, int hdr_len, enum object_type , uintmax_t )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='294' u='c' c='write_no_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='368' u='c' c='write_reuse_object'/>
+<use f='codebrowser/bulk-checkin.c' l='108' u='c' c='stream_to_pack'/>
+<use f='codebrowser/fast-import.c' l='1180' u='c' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1192' u='c' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1255' u='c' c='stream_blob'/>
+<def f='codebrowser/pack-write.c' l='307' ll='328' type='int encode_in_pack_object_header(unsigned char * hdr, int hdr_len, enum object_type type, uintmax_t size)'/>
+<doc f='codebrowser/pack-write.c' l='300'>/*
+ * The per-object header is a pretty dense thing, which is
+ *  - first byte: low four bits are &quot;size&quot;, then three bits of &quot;type&quot;,
+ *    and the high bit is &quot;size continues&quot;.
+ *  - each byte afterwards: low seven bits are size continuation,
+ *    with the high bit being &quot;size continues&quot;
+ */</doc>

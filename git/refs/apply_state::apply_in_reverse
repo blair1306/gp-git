@@ -1,0 +1,13 @@
+<dec f='codebrowser/apply.h' l='57' type='int'/>
+<use f='codebrowser/apply.c' l='1714' u='r' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='1719' u='r' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='1727' u='r' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='2871' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='3044' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='3093' u='r' c='apply_binary_fragment'/>
+<use f='codebrowser/apply.c' l='4655' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4963' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4963' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4963' u='a' c='apply_parse_options'/>
+<use f='codebrowser/apply.c' l='4963' u='a' c='apply_parse_options'/>
+<offset>448</offset>

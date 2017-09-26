@@ -1,0 +1,11 @@
+<dec f='codebrowser/pathspec.h' l='36' type='int'/>
+<offset>288</offset>
+<use f='codebrowser/dir.c' l='233' u='r' c='match_attrs'/>
+<use f='codebrowser/dir.c' l='309' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='163' u='w' c='parse_pathspec_attr_match'/>
+<use f='codebrowser/pathspec.c' l='200' u='r' c='parse_pathspec_attr_match'/>
+<use f='codebrowser/pathspec.c' l='407' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='639' u='r' c='copy_pathspec'/>
+<use f='codebrowser/pathspec.c' l='640' u='r' c='copy_pathspec'/>
+<use f='codebrowser/pathspec.c' l='641' u='r' c='copy_pathspec'/>
+<use f='codebrowser/pathspec.c' l='658' u='r' c='clear_pathspec'/>

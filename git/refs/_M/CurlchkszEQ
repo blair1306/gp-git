@@ -1,0 +1,8 @@
+<dec f='include/curl/curlrules.h' l='132'/>
+<use f='include/curl/curlrules.h' l='143' u='c'/>
+<use f='include/curl/curlrules.h' l='153' u='c'/>
+<use f='include/curl/curlrules.h' l='173' u='c'/>
+<use f='include/curl/curlrules.h' l='241' u='w'/>
+<doc f='include/curl/curlrules.h' l='128'>/*
+ * Macros private to this header file.
+ */</doc>

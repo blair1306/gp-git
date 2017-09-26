@@ -1,0 +1,5 @@
+<dec f='codebrowser/git-compat-util.h' l='416' type='void usagef(const char * err)'/>
+<use f='codebrowser/builtin/diff.c' l='338' u='c' c='cmd_diff'/>
+<use f='codebrowser/builtin/merge-recursive.c' l='36' u='c' c='cmd_merge_recursive'/>
+<def f='codebrowser/usage.c' l='104' ll='111' type='void usagef(const char * err)'/>
+<use f='codebrowser/usage.c' l='115' u='c' c='usage'/>

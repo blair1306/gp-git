@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack.h' l='63' type='uint32_t'/>
+<offset>32</offset>
+<use f='codebrowser/pack-write.c' l='93' u='w' c='write_idx_file'/>
+<use f='codebrowser/sha1_file.c' l='772' u='r' c='check_packed_git_idx'/>

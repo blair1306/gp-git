@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='1207' type='int check_sha1_signature(const unsigned char * sha1, void * buf, unsigned long size, const char * type)'/>
+<use f='codebrowser/builtin/fast-export.c' l='243' u='c' c='export_blob'/>
+<use f='codebrowser/builtin/index-pack.c' l='1380' u='c' c='fix_unresolved_deltas'/>
+<use f='codebrowser/builtin/mktag.c' l='31' u='c' c='verify_object'/>
+<use f='codebrowser/object.c' l='258' u='c' c='parse_object'/>
+<use f='codebrowser/object.c' l='268' u='c' c='parse_object'/>
+<use f='codebrowser/pack-check.c' l='143' u='c' c='verify_packfile'/>
+<def f='codebrowser/sha1_file.c' l='1634' ll='1674' type='int check_sha1_signature(const unsigned char * sha1, void * map, unsigned long size, const char * type)'/>
+<use f='codebrowser/sha1_file.c' l='3993' u='c' c='read_loose_object'/>
+<doc f='codebrowser/sha1_file.c' l='1628'>/*
+ * With an in-core object data in &quot;map&quot;, rehash it to make sure the
+ * object name actually matches &quot;sha1&quot; to detect object corruption.
+ * With &quot;map&quot; == NULL, try reading the object named with &quot;sha1&quot; using
+ * the streaming interface and rehash it to do the same.
+ */</doc>

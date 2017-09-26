@@ -1,0 +1,17 @@
+<dec f='codebrowser/cache.h' l='319'/>
+<use f='codebrowser/apply.c' l='4257' u='c'/>
+<use f='codebrowser/apply.c' l='4422' u='c'/>
+<use f='codebrowser/blame.c' l='255' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='79' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='275' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='408' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='595' u='c'/>
+<use f='codebrowser/read-cache.c' l='73' u='c'/>
+<use f='codebrowser/read-cache.c' l='614' u='c'/>
+<use f='codebrowser/read-cache.c' l='649' u='c'/>
+<use f='codebrowser/read-cache.c' l='741' u='c'/>
+<use f='codebrowser/read-cache.c' l='1577' u='c'/>
+<use f='codebrowser/read-cache.c' l='2541' u='c'/>
+<use f='codebrowser/tree.c' l='26' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='778' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1287' u='c'/>

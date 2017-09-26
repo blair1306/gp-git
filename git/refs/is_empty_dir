@@ -1,0 +1,10 @@
+<dec f='codebrowser/dir.h' l='276' type='int is_empty_dir(const char * dir)'/>
+<use f='codebrowser/builtin/clone.c' l='941' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/rm.c' l='81' u='c' c='submodules_absorb_gitdir_if_needed'/>
+<use f='codebrowser/builtin/rm.c' l='127' u='c' c='check_local_mod'/>
+<use f='codebrowser/builtin/worktree.c' l='204' u='c' c='add_worktree'/>
+<def f='codebrowser/dir.c' l='2221' ll='2238' type='int is_empty_dir(const char * path)'/>
+<use f='codebrowser/merge-recursive.c' l='695' u='c' c='dir_in_way'/>
+<use f='codebrowser/notes-merge.c' l='270' u='c' c='check_notes_merge_worktree'/>
+<use f='codebrowser/submodule.c' l='1445' u='c' c='bad_to_remove_submodule'/>
+<use f='codebrowser/submodule.c' l='1651' u='c' c='submodule_move_head'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/refs/refs-internal.h' l='327' type='unsigned int'/>
+<offset>192</offset>
+<use f='codebrowser/refs/files-backend.c' l='714' u='r' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='719' u='w' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='719' u='r' c='files_ref_iterator_advance'/>
+<use f='codebrowser/refs/files-backend.c' l='1109' u='r' c='files_pack_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='2023' u='w' c='files_reflog_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='33' u='w' c='base_ref_iterator_init'/>
+<use f='codebrowser/refs/iterator.c' l='161' u='w' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='161' u='r' c='merge_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='313' u='w' c='prefix_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='313' u='r' c='prefix_ref_iterator_advance'/>
+<use f='codebrowser/refs/iterator.c' l='383' u='r' c='do_for_each_ref_iterator'/>
+<use f='codebrowser/refs/packed-backend.c' l='427' u='r' c='packed_ref_iterator_advance'/>
+<use f='codebrowser/refs/packed-backend.c' l='432' u='w' c='packed_ref_iterator_advance'/>
+<use f='codebrowser/refs/packed-backend.c' l='432' u='r' c='packed_ref_iterator_advance'/>
+<use f='codebrowser/refs/ref-cache.c' l='488' u='w' c='cache_ref_iterator_advance'/>

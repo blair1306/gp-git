@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='281' type='void advertise_shallow_grafts(int )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='301' u='c' c='write_head_info'/>
+<def f='codebrowser/shallow.c' l='345' ll='350' type='void advertise_shallow_grafts(int fd)'/>
+<use f='codebrowser/upload-pack.c' l='990' u='c' c='upload_pack'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/remote.h' l='62' type='struct remote * pushremote_get(const char * name)'/>
+<use f='codebrowser/builtin/push.c' l='364' u='c' c='do_push'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1147' u='c' c='push_check'/>
+<def f='codebrowser/remote.c' l='713' ll='716' type='struct remote * pushremote_get(const char * name)'/>

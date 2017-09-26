@@ -1,0 +1,9 @@
+<dec f='codebrowser/branch.h' l='54'/>
+<use f='codebrowser/branch.c' l='89' u='c'/>
+<use f='codebrowser/branch.c' l='138' u='c'/>
+<doc f='codebrowser/branch.h' l='49'>/*
+ * Configure local branch &quot;local&quot; as downstream to branch &quot;remote&quot;
+ * from remote &quot;origin&quot;.  Used by git branch --set-upstream.
+ * Returns 0 on success.
+ */</doc>
+<use f='codebrowser/transport.c' l='59' u='c'/>

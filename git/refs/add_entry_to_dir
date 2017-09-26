@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs/ref-cache.h' l='212' type='void add_entry_to_dir(struct ref_dir * dir, struct ref_entry * entry)'/>
+<use f='codebrowser/refs/files-backend.c' l='194' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='223' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='244' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/files-backend.c' l='266' u='c' c='get_loose_ref_cache'/>
+<doc f='codebrowser/refs/ref-cache.h' l='207'>/*
+ * Add a ref_entry to the end of dir (unsorted).  Entry is always
+ * stored directly in dir; no recursion into subdirectories is
+ * done.
+ */</doc>
+<def f='codebrowser/refs/ref-cache.c' l='7' ll='17' type='void add_entry_to_dir(struct ref_dir * dir, struct ref_entry * entry)'/>
+<use f='codebrowser/refs/ref-cache.c' l='168' u='c' c='search_for_subdir'/>
+<use f='codebrowser/refs/ref-cache.c' l='258' u='c' c='add_ref_entry'/>

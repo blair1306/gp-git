@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='251' type='void parse_revision_opt(struct rev_info * revs, struct parse_opt_ctx_t * ctx, const struct option * options, const char *const * usagestr)'/>
+<use f='codebrowser/builtin/blame.c' l='734' u='c' c='cmd_blame'/>
+<use f='codebrowser/builtin/shortlog.c' l='276' u='c' c='cmd_shortlog'/>
+<def f='codebrowser/revision.c' l='2057' ll='2069' type='void parse_revision_opt(struct rev_info * revs, struct parse_opt_ctx_t * ctx, const struct option * options, const char *const * usagestr)'/>

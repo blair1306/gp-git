@@ -1,0 +1,7 @@
+<def f='codebrowser/ewah/ewok.h' l='58' ll='64'/>
+<size>40</size>
+<mbr r='ewah_bitmap::buffer' o='0' t='eword_t *'/>
+<mbr r='ewah_bitmap::buffer_size' o='64' t='size_t'/>
+<mbr r='ewah_bitmap::alloc_size' o='128' t='size_t'/>
+<mbr r='ewah_bitmap::bit_size' o='192' t='size_t'/>
+<mbr r='ewah_bitmap::rlw' o='256' t='eword_t *'/>

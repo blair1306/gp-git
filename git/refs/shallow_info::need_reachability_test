@@ -1,0 +1,10 @@
+<dec f='codebrowser/commit.h' l='291' type='int *'/>
+<offset>448</offset>
+<use f='codebrowser/builtin/receive-pack.c' l='1814' u='w' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1815' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1821' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1829' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1839' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1840' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/shallow.c' l='728' u='r' c='delayed_reachability_test'/>
+<use f='codebrowser/shallow.c' l='744' u='r' c='delayed_reachability_test'/>

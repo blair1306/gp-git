@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='162' type='int cmd_fast_export(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/fast-export.c' l='972' ll='1075' type='int cmd_fast_export(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='397'/>
+<use f='codebrowser/git.c' l='397'/>
+<use f='codebrowser/git.c' l='397'/>
+<use f='codebrowser/git.c' l='397'/>

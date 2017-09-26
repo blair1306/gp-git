@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pack.h source code [codebrowser/pack.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="pack_header,pack_idx_entry,pack_idx_header,pack_idx_option "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/pack.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='pack.h.html'>pack.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/PACK_H">PACK_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/PACK_H" data-ref="_M/PACK_H">PACK_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="object.h.html">"object.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="csum-file.h.html">"csum-file.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><i>/*</i></td></tr>
+<tr><th id="8">8</th><td><i> * Packed object header</i></td></tr>
+<tr><th id="9">9</th><td><i> */</i></td></tr>
+<tr><th id="10">10</th><td><u>#define <dfn class="macro" id="_M/PACK_SIGNATURE" data-ref="_M/PACK_SIGNATURE">PACK_SIGNATURE</dfn> 0x5041434b	/* "PACK" */</u></td></tr>
+<tr><th id="11">11</th><td><u>#define <dfn class="macro" id="_M/PACK_VERSION" data-ref="_M/PACK_VERSION">PACK_VERSION</dfn> 2</u></td></tr>
+<tr><th id="12">12</th><td><u>#define <dfn class="macro" id="_M/pack_version_ok" data-ref="_M/pack_version_ok">pack_version_ok</dfn>(v) ((v) == htonl(2) || (v) == htonl(3))</u></td></tr>
+<tr><th id="13">13</th><td><b>struct</b> <dfn class="type def" id="pack_header" title='pack_header' data-ref="pack_header">pack_header</dfn> {</td></tr>
+<tr><th id="14">14</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="pack_header::hdr_signature" title='pack_header::hdr_signature' data-ref="pack_header::hdr_signature">hdr_signature</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="pack_header::hdr_version" title='pack_header::hdr_version' data-ref="pack_header::hdr_version">hdr_version</dfn>;</td></tr>
+<tr><th id="16">16</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="pack_header::hdr_entries" title='pack_header::hdr_entries' data-ref="pack_header::hdr_entries">hdr_entries</dfn>;</td></tr>
+<tr><th id="17">17</th><td>};</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><i>/*</i></td></tr>
+<tr><th id="20">20</th><td><i> * The first four bytes of index formats later than version 1 should</i></td></tr>
+<tr><th id="21">21</th><td><i> * start with this signature, as all older git binaries would find this</i></td></tr>
+<tr><th id="22">22</th><td><i> * value illegal and abort reading the file.</i></td></tr>
+<tr><th id="23">23</th><td><i> *</i></td></tr>
+<tr><th id="24">24</th><td><i> * This is the case because the number of objects in a packfile</i></td></tr>
+<tr><th id="25">25</th><td><i> * cannot exceed 1,431,660,000 as every object would need at least</i></td></tr>
+<tr><th id="26">26</th><td><i> * 3 bytes of data and the overall packfile cannot exceed 4 GiB with</i></td></tr>
+<tr><th id="27">27</th><td><i> * version 1 of the index file due to the offsets limited to 32 bits.</i></td></tr>
+<tr><th id="28">28</th><td><i> * Clearly the signature exceeds this maximum.</i></td></tr>
+<tr><th id="29">29</th><td><i> *</i></td></tr>
+<tr><th id="30">30</th><td><i> * Very old git binaries will also compare the first 4 bytes to the</i></td></tr>
+<tr><th id="31">31</th><td><i> * next 4 bytes in the index and abort with a "non-monotonic index"</i></td></tr>
+<tr><th id="32">32</th><td><i> * error if the second 4 byte word is smaller than the first 4</i></td></tr>
+<tr><th id="33">33</th><td><i> * byte word.  This would be true in the proposed future index</i></td></tr>
+<tr><th id="34">34</th><td><i> * format as idx_signature would be greater than idx_version.</i></td></tr>
+<tr><th id="35">35</th><td><i> */</i></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/PACK_IDX_SIGNATURE" data-ref="_M/PACK_IDX_SIGNATURE">PACK_IDX_SIGNATURE</dfn> 0xff744f63	/* "\377tOc" */</u></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><b>struct</b> <dfn class="type def" id="pack_idx_option" title='pack_idx_option' data-ref="pack_idx_option">pack_idx_option</dfn> {</td></tr>
+<tr><th id="39">39</th><td>	<em>unsigned</em> <dfn class="decl" id="pack_idx_option::flags" title='pack_idx_option::flags' data-ref="pack_idx_option::flags">flags</dfn>;</td></tr>
+<tr><th id="40">40</th><td>	<i>/* flag bits */</i></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/WRITE_IDX_VERIFY" data-ref="_M/WRITE_IDX_VERIFY">WRITE_IDX_VERIFY</dfn> 01 /* verify only, do not write the idx file */</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/WRITE_IDX_STRICT" data-ref="_M/WRITE_IDX_STRICT">WRITE_IDX_STRICT</dfn> 02</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="pack_idx_option::version" title='pack_idx_option::version' data-ref="pack_idx_option::version">version</dfn>;</td></tr>
+<tr><th id="45">45</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="pack_idx_option::off32_limit" title='pack_idx_option::off32_limit' data-ref="pack_idx_option::off32_limit">off32_limit</dfn>;</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>	<i>/*</i></td></tr>
+<tr><th id="48">48</th><td><i>	 * List of offsets that would fit within off32_limit but</i></td></tr>
+<tr><th id="49">49</th><td><i>	 * need to be written out as 64-bit entity for byte-for-byte</i></td></tr>
+<tr><th id="50">50</th><td><i>	 * verification.</i></td></tr>
+<tr><th id="51">51</th><td><i>	 */</i></td></tr>
+<tr><th id="52">52</th><td>	<em>int</em> <dfn class="decl" id="pack_idx_option::anomaly_alloc" title='pack_idx_option::anomaly_alloc' data-ref="pack_idx_option::anomaly_alloc">anomaly_alloc</dfn>, <dfn class="decl" id="pack_idx_option::anomaly_nr" title='pack_idx_option::anomaly_nr' data-ref="pack_idx_option::anomaly_nr">anomaly_nr</dfn>;</td></tr>
+<tr><th id="53">53</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> *<dfn class="decl" id="pack_idx_option::anomaly" title='pack_idx_option::anomaly' data-ref="pack_idx_option::anomaly">anomaly</dfn>;</td></tr>
+<tr><th id="54">54</th><td>};</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="reset_pack_idx_option" title='reset_pack_idx_option' data-ref="reset_pack_idx_option">reset_pack_idx_option</dfn>(<b>struct</b> <a class="type" href="#pack_idx_option" title='pack_idx_option' data-ref="pack_idx_option">pack_idx_option</a> *);</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><i>/*</i></td></tr>
+<tr><th id="59">59</th><td><i> * Packed object index header</i></td></tr>
+<tr><th id="60">60</th><td><i> */</i></td></tr>
+<tr><th id="61">61</th><td><b>struct</b> <dfn class="type def" id="pack_idx_header" title='pack_idx_header' data-ref="pack_idx_header">pack_idx_header</dfn> {</td></tr>
+<tr><th id="62">62</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="pack_idx_header::idx_signature" title='pack_idx_header::idx_signature' data-ref="pack_idx_header::idx_signature">idx_signature</dfn>;</td></tr>
+<tr><th id="63">63</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="pack_idx_header::idx_version" title='pack_idx_header::idx_version' data-ref="pack_idx_header::idx_version">idx_version</dfn>;</td></tr>
+<tr><th id="64">64</th><td>};</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><i>/*</i></td></tr>
+<tr><th id="67">67</th><td><i> * Common part of object structure used for write_idx_file</i></td></tr>
+<tr><th id="68">68</th><td><i> */</i></td></tr>
+<tr><th id="69">69</th><td><b>struct</b> <dfn class="type def" id="pack_idx_entry" title='pack_idx_entry' data-ref="pack_idx_entry">pack_idx_entry</dfn> {</td></tr>
+<tr><th id="70">70</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="decl" id="pack_idx_entry::oid" title='pack_idx_entry::oid' data-ref="pack_idx_entry::oid">oid</dfn>;</td></tr>
+<tr><th id="71">71</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="pack_idx_entry::crc32" title='pack_idx_entry::crc32' data-ref="pack_idx_entry::crc32">crc32</dfn>;</td></tr>
+<tr><th id="72">72</th><td>	<a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="decl" id="pack_idx_entry::offset" title='pack_idx_entry::offset' data-ref="pack_idx_entry::offset">offset</dfn>;</td></tr>
+<tr><th id="73">73</th><td>};</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><b>struct</b> <a class="type" href="csum-file.h.html#progress" title='progress' data-ref="progress" id="progress">progress</a>;</td></tr>
+<tr><th id="77">77</th><td><i>/* Note, the data argument could be NULL if object type is blob */</i></td></tr>
+<tr><th id="78">78</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="verify_fn" title='verify_fn' data-type='int (*)(const struct object_id *, enum object_type, unsigned long, void *, int *)' data-ref="verify_fn">verify_fn</dfn>)(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *, <b>enum</b> <a class="type" href="cache.h.html#object_type" title='object_type' data-ref="object_type">object_type</a>, <em>unsigned</em> <em>long</em>, <em>void</em>*, <em>int</em>*);</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="write_idx_file" title='write_idx_file' data-ref="write_idx_file">write_idx_file</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12index_name" title='index_name' data-type='const char *' data-ref="12index_name">index_name</dfn>, <b>struct</b> <a class="type" href="#pack_idx_entry" title='pack_idx_entry' data-ref="pack_idx_entry">pack_idx_entry</a> **<dfn class="local col3 decl" id="13objects" title='objects' data-type='struct pack_idx_entry **' data-ref="13objects">objects</dfn>, <em>int</em> <dfn class="local col4 decl" id="14nr_objects" title='nr_objects' data-type='int' data-ref="14nr_objects">nr_objects</dfn>, <em>const</em> <b>struct</b> <a class="type" href="#pack_idx_option" title='pack_idx_option' data-ref="pack_idx_option">pack_idx_option</a> *, <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col5 decl" id="15sha1" title='sha1' data-type='const unsigned char *' data-ref="15sha1">sha1</dfn>);</td></tr>
+<tr><th id="81">81</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="check_pack_crc" title='check_pack_crc' data-ref="check_pack_crc">check_pack_crc</dfn>(<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *<dfn class="local col6 decl" id="16p" title='p' data-type='struct packed_git *' data-ref="16p">p</dfn>, <b>struct</b> <a class="type" href="cache.h.html#pack_window" title='pack_window' data-ref="pack_window">pack_window</a> **<dfn class="local col7 decl" id="17w_curs" title='w_curs' data-type='struct pack_window **' data-ref="17w_curs">w_curs</dfn>, <a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col8 decl" id="18offset" title='offset' data-type='off_t' data-ref="18offset">offset</dfn>, <a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col9 decl" id="19len" title='len' data-type='off_t' data-ref="19len">len</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col0 decl" id="20nr" title='nr' data-type='unsigned int' data-ref="20nr">nr</dfn>);</td></tr>
+<tr><th id="82">82</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="verify_pack_index" title='verify_pack_index' data-ref="verify_pack_index">verify_pack_index</dfn>(<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *);</td></tr>
+<tr><th id="83">83</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="verify_pack" title='verify_pack' data-ref="verify_pack">verify_pack</dfn>(<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *, <a class="typedef" href="#verify_fn" title='verify_fn' data-type='int (*)(const struct object_id *, enum object_type, unsigned long, void *, int *)' data-ref="verify_fn">verify_fn</a> <dfn class="local col1 decl" id="21fn" title='fn' data-type='verify_fn' data-ref="21fn">fn</dfn>, <b>struct</b> <a class="type" href="csum-file.h.html#progress" title='progress' data-ref="progress">progress</a> *, <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>);</td></tr>
+<tr><th id="84">84</th><td><b>extern</b> <a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="decl" id="write_pack_header" title='write_pack_header' data-ref="write_pack_header">write_pack_header</dfn>(<b>struct</b> <a class="type" href="csum-file.h.html#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *<dfn class="local col2 decl" id="22f" title='f' data-type='struct sha1file *' data-ref="22f">f</dfn>, <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>);</td></tr>
+<tr><th id="85">85</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="fixup_pack_header_footer" title='fixup_pack_header_footer' data-ref="fixup_pack_header_footer">fixup_pack_header_footer</dfn>(<em>int</em>, <em>unsigned</em> <em>char</em> *, <em>const</em> <em>char</em> *, <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>, <em>unsigned</em> <em>char</em> *, <a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a>);</td></tr>
+<tr><th id="86">86</th><td><b>extern</b> <em>char</em> *<dfn class="decl" id="index_pack_lockfile" title='index_pack_lockfile' data-ref="index_pack_lockfile">index_pack_lockfile</dfn>(<em>int</em> <dfn class="local col3 decl" id="23fd" title='fd' data-type='int' data-ref="23fd">fd</dfn>);</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><i>/*</i></td></tr>
+<tr><th id="89">89</th><td><i> * The "hdr" output buffer should be at least this big, which will handle sizes</i></td></tr>
+<tr><th id="90">90</th><td><i> * up to 2^67.</i></td></tr>
+<tr><th id="91">91</th><td><i> */</i></td></tr>
+<tr><th id="92">92</th><td><u>#define <dfn class="macro" id="_M/MAX_PACK_OBJECT_HEADER" data-ref="_M/MAX_PACK_OBJECT_HEADER">MAX_PACK_OBJECT_HEADER</dfn> 10</u></td></tr>
+<tr><th id="93">93</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="encode_in_pack_object_header" title='encode_in_pack_object_header' data-ref="encode_in_pack_object_header">encode_in_pack_object_header</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="24hdr" title='hdr' data-type='unsigned char *' data-ref="24hdr">hdr</dfn>, <em>int</em> <dfn class="local col5 decl" id="25hdr_len" title='hdr_len' data-type='int' data-ref="25hdr_len">hdr_len</dfn>,</td></tr>
+<tr><th id="94">94</th><td>					<b>enum</b> <a class="type" href="cache.h.html#object_type" title='object_type' data-ref="object_type">object_type</a>, <a class="typedef" href="../include/stdint.h.html#uintmax_t" title='uintmax_t' data-type='unsigned long' data-ref="uintmax_t">uintmax_t</a>);</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><u>#define <dfn class="macro" id="_M/PH_ERROR_EOF" data-ref="_M/PH_ERROR_EOF">PH_ERROR_EOF</dfn>		(-1)</u></td></tr>
+<tr><th id="97">97</th><td><u>#define <dfn class="macro" id="_M/PH_ERROR_PACK_SIGNATURE" data-ref="_M/PH_ERROR_PACK_SIGNATURE">PH_ERROR_PACK_SIGNATURE</dfn>	(-2)</u></td></tr>
+<tr><th id="98">98</th><td><u>#define <dfn class="macro" id="_M/PH_ERROR_PROTOCOL" data-ref="_M/PH_ERROR_PROTOCOL">PH_ERROR_PROTOCOL</dfn>	(-3)</u></td></tr>
+<tr><th id="99">99</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="read_pack_header" title='read_pack_header' data-ref="read_pack_header">read_pack_header</dfn>(<em>int</em> <dfn class="local col6 decl" id="26fd" title='fd' data-type='int' data-ref="26fd">fd</dfn>, <b>struct</b> <a class="type" href="#pack_header" title='pack_header' data-ref="pack_header">pack_header</a> *);</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><b>extern</b> <b>struct</b> <a class="type" href="csum-file.h.html#sha1file" title='sha1file' data-ref="sha1file">sha1file</a> *<dfn class="decl" id="create_tmp_packfile" title='create_tmp_packfile' data-ref="create_tmp_packfile">create_tmp_packfile</dfn>(<em>char</em> **<dfn class="local col7 decl" id="27pack_tmp_name" title='pack_tmp_name' data-type='char **' data-ref="27pack_tmp_name">pack_tmp_name</dfn>);</td></tr>
+<tr><th id="102">102</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="finish_tmp_packfile" title='finish_tmp_packfile' data-ref="finish_tmp_packfile">finish_tmp_packfile</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col8 decl" id="28name_buffer" title='name_buffer' data-type='struct strbuf *' data-ref="28name_buffer">name_buffer</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="29pack_tmp_name" title='pack_tmp_name' data-type='const char *' data-ref="29pack_tmp_name">pack_tmp_name</dfn>, <b>struct</b> <a class="type" href="#pack_idx_entry" title='pack_idx_entry' data-ref="pack_idx_entry">pack_idx_entry</a> **<dfn class="local col0 decl" id="30written_list" title='written_list' data-type='struct pack_idx_entry **' data-ref="30written_list">written_list</dfn>, <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col1 decl" id="31nr_written" title='nr_written' data-type='uint32_t' data-ref="31nr_written">nr_written</dfn>, <b>struct</b> <a class="type" href="#pack_idx_option" title='pack_idx_option' data-ref="pack_idx_option">pack_idx_option</a> *<dfn class="local col2 decl" id="32pack_idx_opts" title='pack_idx_opts' data-type='struct pack_idx_option *' data-ref="32pack_idx_opts">pack_idx_opts</dfn>, <em>unsigned</em> <em>char</em> <dfn class="local col3 decl" id="33sha1" title='sha1' data-type='unsigned char *' data-ref="33sha1">sha1</dfn>[]);</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="105">105</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/fsck.c.html'>codebrowser/builtin/fsck.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

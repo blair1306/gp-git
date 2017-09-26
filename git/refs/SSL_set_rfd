@@ -1,0 +1,2 @@
+<dec f='include/openssl/ssl.h' l='2157' type='int SSL_set_rfd(SSL * s, int fd)'/>
+<use f='codebrowser/imap-send.c' l='318' u='c' c='ssl_socket_connect'/>

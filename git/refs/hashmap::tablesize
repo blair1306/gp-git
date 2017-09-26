@@ -1,0 +1,22 @@
+<dec f='codebrowser/hashmap.h' l='194' type='unsigned int'/>
+<offset>224</offset>
+<doc f='codebrowser/hashmap.h' l='188'>/*
+	 * tablesize is the allocated size of the hash table. A non-0 value
+	 * indicates that the hashmap is initialized. It may also be useful
+	 * for statistical purposes (i.e. `size / tablesize` is the current
+	 * load factor).
+	 */</doc>
+<use f='codebrowser/attr.c' l='105' u='r' c='attr_hashmap_get'/>
+<use f='codebrowser/attr.c' l='123' u='r' c='attr_hashmap_add'/>
+<use f='codebrowser/fetch-pack.c' l='613' u='r' c='tip_oids_contain'/>
+<use f='codebrowser/hashmap.c' l='78' u='w' c='alloc_table'/>
+<use f='codebrowser/hashmap.c' l='106' u='r' c='bucket'/>
+<use f='codebrowser/hashmap.c' l='111' u='r' c='hashmap_bucket'/>
+<use f='codebrowser/hashmap.c' l='116' u='r' c='rehash'/>
+<use f='codebrowser/hashmap.c' l='211' u='r' c='hashmap_add'/>
+<use f='codebrowser/hashmap.c' l='229' u='r' c='hashmap_remove'/>
+<use f='codebrowser/hashmap.c' l='256' u='r' c='hashmap_iter_next'/>
+<use f='codebrowser/hashmap.c' l='284' u='r' c='memintern'/>
+<use f='codebrowser/refs.c' l='1584' u='r' c='lookup_ref_store_map'/>
+<use f='codebrowser/refs.c' l='1628' u='r' c='register_ref_store_map'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='238' u='r' c='cmd_main'/>

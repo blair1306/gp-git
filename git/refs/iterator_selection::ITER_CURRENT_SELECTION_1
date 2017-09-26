@@ -1,0 +1,4 @@
+<dec f='codebrowser/iterator.h' l='49' type='1'/>
+<use f='codebrowser/iterator.h' l='69' u='r'/>
+<use f='codebrowser/iterator.h' l='72' u='r'/>
+<doc f='codebrowser/iterator.h' l='48'>/* iter1 is the &quot;current&quot; iterator this round: */</doc>

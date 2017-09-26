@@ -1,0 +1,5 @@
+<dec f='codebrowser/pack-objects.h' l='27' type='unsigned int'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1065' u='w' c='create_object_entry'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1709' u='w' c='get_object_details'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2409' u='r' c='prepare_pack'/>
+<offset>969</offset>

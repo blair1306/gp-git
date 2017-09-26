@@ -1,0 +1,5 @@
+<def f='codebrowser/apply.c' l='279' ll='286'/>
+<size>48</size>
+<doc f='codebrowser/apply.c' l='276'>/*
+ * This represents a &quot;file&quot;, which is an array of &quot;lines&quot;.
+ */</doc>

@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/bits/sigaction.h' l='46' type='int'/>
+<offset>1088</offset>
+<doc f='include/x86_64-linux-gnu/bits/sigaction.h' l='45'>/* Special flags.  */</doc>
+<use f='codebrowser/builtin/log.c' l='325' u='w' c='setup_early_output'/>
+<use f='codebrowser/fast-import.c' l='542' u='w' c='set_checkpoint_signal'/>
+<use f='codebrowser/progress.c' l='59' u='w' c='set_progress_signal'/>

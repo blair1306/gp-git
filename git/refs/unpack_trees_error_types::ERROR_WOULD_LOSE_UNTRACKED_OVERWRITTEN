@@ -1,0 +1,6 @@
+<dec f='codebrowser/unpack-trees.h' l='18' type='3'/>
+<use f='codebrowser/unpack-trees.c' l='156' u='w' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='463' u='r' c='apply_sparse_checkout'/>
+<use f='codebrowser/unpack-trees.c' l='1361' u='r' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1743' u='r' c='verify_absent_sparse'/>
+<use f='codebrowser/unpack-trees.c' l='1773' u='r' c='merged_entry'/>

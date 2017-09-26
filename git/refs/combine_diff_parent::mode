@@ -1,0 +1,18 @@
+<dec f='codebrowser/diff.h' l='229' type='unsigned int'/>
+<offset>32</offset>
+<use f='codebrowser/combine-diff.c' l='50' u='w' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='81' u='w' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='944' u='r' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='1039' u='r' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1076' u='r' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1092' u='r' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1148' u='r' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1202' u='r' c='show_raw_diff'/>
+<use f='codebrowser/combine-diff.c' l='1271' u='r' c='combined_pair'/>
+<use f='codebrowser/diff-lib.c' l='160' u='w' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='353' u='w' c='show_modified'/>
+<use f='codebrowser/diff-lib.c' l='356' u='w' c='show_modified'/>
+<use f='codebrowser/tree-diff.c' l='77' u='r' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='78' u='r' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='93' u='r' c='emit_diff_first_parent_only'/>
+<use f='codebrowser/tree-diff.c' l='250' u='w' c='emit_path'/>

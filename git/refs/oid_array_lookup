@@ -1,0 +1,11 @@
+<dec f='codebrowser/sha1-array.h' l='14' type='int oid_array_lookup(struct oid_array * array, const struct object_id * oid)'/>
+<use f='codebrowser/bisect.c' l='503' u='c' c='filter_skipped'/>
+<use f='codebrowser/bisect.c' l='793' u='c' c='check_merge_bases'/>
+<use f='codebrowser/bisect.c' l='795' u='c' c='check_merge_bases'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2693' u='c' c='loosened_object_can_be_discarded'/>
+<use f='codebrowser/fsck.c' l='283' u='c' c='report'/>
+<use f='codebrowser/ref-filter.c' l='1764' u='c' c='match_points_at'/>
+<use f='codebrowser/ref-filter.c' l='1771' u='c' c='match_points_at'/>
+<def f='codebrowser/sha1-array.c' l='29' ll='34' type='int oid_array_lookup(struct oid_array * array, const struct object_id * oid)'/>
+<use f='codebrowser/sha1_name.c' l='120' u='c' c='find_short_object_filename'/>
+<use f='codebrowser/t/helper/test-sha1-array.c' l='26' u='c' c='cmd_main'/>

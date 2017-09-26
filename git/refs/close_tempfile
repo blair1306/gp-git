@@ -1,0 +1,16 @@
+<dec f='codebrowser/tempfile.h' l='233' type='int close_tempfile(struct tempfile * tempfile)'/>
+<use f='codebrowser/lockfile.h' l='249' u='c' c='close_lock_file'/>
+<doc f='codebrowser/tempfile.h' l='225'>/*
+ * If the temporary file is still open, close it (and the file pointer
+ * too, if it has been opened using `fdopen_tempfile()`) without
+ * deleting the file. Return 0 upon success. On failure to `close(2)`,
+ * return a negative value and delete the file. Usually
+ * `delete_tempfile()` or `rename_tempfile()` should eventually be
+ * called if `close_tempfile()` succeeds.
+ */</doc>
+<use f='codebrowser/diff.c' l='2975' u='c' c='prep_temp_blob'/>
+<use f='codebrowser/read-cache.c' l='2306' u='c' c='do_write_index'/>
+<use f='codebrowser/shallow.c' l='302' u='c' c='setup_temporary_shallow'/>
+<def f='codebrowser/tempfile.c' l='238' ll='269' type='int close_tempfile(struct tempfile * tempfile)'/>
+<use f='codebrowser/tempfile.c' l='286' u='c' c='rename_tempfile'/>
+<use f='codebrowser/tempfile.c' l='306' u='c' c='delete_tempfile'/>

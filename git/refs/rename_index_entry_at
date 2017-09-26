@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='641' type='void rename_index_entry_at(struct index_state * , int pos, const char * new_name)'/>
+<use f='codebrowser/builtin/mv.c' l='291' macro='1' u='c'/>
+<def f='codebrowser/read-cache.c' l='68' ll='84' type='void rename_index_entry_at(struct index_state * istate, int nr, const char * new_name)'/>

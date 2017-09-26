@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='488' type='const char * get_git_namespace()'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1043' u='c' c='update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1212' u='c' c='check_aliased_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1338' u='c' c='reject_updates_to_hidden'/>
+<def f='codebrowser/environment.c' l='189' ll='194' type='const char * get_git_namespace()'/>
+<use f='codebrowser/environment.c' l='199' u='c' c='strip_namespace'/>
+<use f='codebrowser/refs.c' l='384' u='c' c='head_ref_namespaced'/>
+<use f='codebrowser/refs.c' l='1386' u='c' c='for_each_namespaced_ref'/>

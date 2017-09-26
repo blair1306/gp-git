@@ -1,0 +1,4 @@
+<dec f='codebrowser/trailer.h' l='25' type='void process_trailers(const char * file, int in_place, int trim_empty, struct string_list * trailers)'/>
+<use f='codebrowser/builtin/interpret-trailers.c' l='39' u='c' c='cmd_interpret_trailers'/>
+<use f='codebrowser/builtin/interpret-trailers.c' l='43' u='c' c='cmd_interpret_trailers'/>
+<def f='codebrowser/trailer.c' l='971' ll='1005' type='void process_trailers(const char * file, int in_place, int trim_empty, struct string_list * trailers)'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/diff.h' l='196' type='4'/>
+<use f='codebrowser/combine-diff.c' l='733' u='r' c='dump_sline'/>
+<use f='codebrowser/diff.c' l='75' u='r' c='parse_diff_color_slot'/>
+<use f='codebrowser/diff.c' l='610' u='r' c='emit_del_line'/>
+<use f='codebrowser/diff.c' l='1197' u='r' c='init_diff_words_data'/>
+<use f='codebrowser/diff.c' l='1610' u='r' c='show_stats'/>
+<use f='codebrowser/diff.c' l='2364' u='r' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2375' u='r' c='builtin_diff'/>
+<use f='codebrowser/line-log.c' l='887' u='r' c='dump_diff_hacky_one'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/grep.h' l='125' type='const char *'/>
+<offset>320</offset>
+<use f='codebrowser/builtin/grep.c' l='322' u='r' c='grep_oid'/>
+<use f='codebrowser/builtin/grep.c' l='353' u='r' c='grep_file'/>
+<use f='codebrowser/grep.c' l='144' u='w' c='grep_init'/>

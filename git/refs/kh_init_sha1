@@ -1,0 +1,4 @@
+<def f='codebrowser/khash.h' l='321' macro='1' type='kh_sha1_t * kh_init_sha1()'/>
+<use f='codebrowser/pack-bitmap-write.c' l='255' u='c' c='bitmap_writer_build'/>
+<use f='codebrowser/pack-bitmap-write.c' l='366' u='c' c='bitmap_writer_reuse_bitmaps'/>
+<use f='codebrowser/pack-bitmap.c' l='306' u='c' c='load_pack_bitmap'/>

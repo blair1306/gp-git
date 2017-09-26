@@ -1,0 +1,4 @@
+<dec f='codebrowser/fsck.h' l='34' type='fsck_error'/>
+<use f='codebrowser/builtin/fsck.c' l='673' u='w' c='cmd_fsck'/>
+<offset>64</offset>
+<use f='codebrowser/fsck.c' l='295' u='r' c='report'/>

@@ -1,0 +1,28 @@
+<dec f='include/dirent.h' l='165' type='struct dirent * readdir(DIR * __dirp)'/>
+<dec f='include/dirent.h' l='173' type='struct dirent64 * readdir64(DIR * __dirp)'/>
+<use f='codebrowser/builtin/clean.c' l='190' u='c' c='remove_dirs'/>
+<use f='codebrowser/builtin/clone.c' l='413' u='c' c='copy_or_link_directory'/>
+<use f='codebrowser/builtin/gc.c' l='153' u='c' c='too_many_loose_objects'/>
+<use f='codebrowser/builtin/init-db.c' l='42' u='c' c='copy_templates_1'/>
+<use f='codebrowser/builtin/mailsplit.c' l='132' u='c' c='populate_maildir_list'/>
+<use f='codebrowser/builtin/prune.c' l='94' u='c' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='66' u='c' c='remove_temporary_files'/>
+<use f='codebrowser/builtin/repack.c' l='97' u='c' c='get_non_kept_pack_filenames'/>
+<use f='codebrowser/builtin/worktree.c' l='101' u='c' c='prune_worktrees'/>
+<use f='codebrowser/diff-no-index.c' l='28' u='c' c='read_directory_contents'/>
+<use f='codebrowser/dir-iterator.c' l='120' u='c' c='dir_iterator_advance'/>
+<use f='codebrowser/dir.c' l='1749' u='c' c='read_cached_dir'/>
+<use f='codebrowser/dir.c' l='2230' u='c' c='is_empty_dir'/>
+<use f='codebrowser/dir.c' l='2274' u='c' c='remove_dir_recurse'/>
+<use f='codebrowser/entry.c' l='56' u='c' c='remove_subtree'/>
+<use f='codebrowser/help.c' l='119' u='c' c='list_commands_in_dir'/>
+<use f='codebrowser/notes-merge.c' l='694' u='c' c='notes_merge_commit'/>
+<use f='codebrowser/read-cache.c' l='2397' u='c' c='clean_shared_index_files'/>
+<use f='codebrowser/refs/files-backend.c' l='179' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/rerere.c' l='121' u='c' c='scan_rerere_dir'/>
+<use f='codebrowser/rerere.c' l='1199' u='c' c='rerere_gc'/>
+<use f='codebrowser/sha1_file.c' l='1454' u='c' c='prepare_packed_git_one'/>
+<use f='codebrowser/sha1_file.c' l='3740' u='c' c='for_each_file_in_obj_subdir'/>
+<use f='codebrowser/tmp-objdir.c' l='206' u='c' c='read_dir_paths'/>
+<use f='codebrowser/worktree.c' l='146' u='c' c='get_worktrees'/>
+<use f='codebrowser/worktree.c' l='379' u='c' c='submodule_uses_worktrees'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='295' type='int is_empty_cas(const struct push_cas_option * )'/>
+<use f='codebrowser/builtin/push.c' l='327' u='c' c='push_with_options'/>
+<use f='codebrowser/builtin/send-pack.c' l='277' u='c' c='cmd_send_pack'/>
+<def f='codebrowser/remote.c' l='2315' ll='2318' type='int is_empty_cas(const struct push_cas_option * cas)'/>
+<use f='codebrowser/transport.c' l='1011' u='c' c='transport_push'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs/ref-cache.h' l='78' type='int'/>
+<offset>32</offset>
+<use f='codebrowser/refs/ref-cache.c' l='9' u='r' c='add_entry_to_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='9' u='r' c='add_entry_to_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='9' u='w' c='add_entry_to_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='9' u='w' c='add_entry_to_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='9' u='r' c='add_entry_to_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='9' u='r' c='add_entry_to_dir'/>
+<use f='codebrowser/refs/ref-cache.c' l='86' u='w' c='clear_ref_dir'/>

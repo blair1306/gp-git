@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>log-tree.h source code [codebrowser/log-tree.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="log_info "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/log-tree.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='log-tree.h.html'>log-tree.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/LOG_TREE_H">LOG_TREE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/LOG_TREE_H" data-ref="_M/LOG_TREE_H">LOG_TREE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="revision.h.html">"revision.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>struct</b> <dfn class="type def" id="log_info" title='log_info' data-ref="log_info">log_info</dfn> {</td></tr>
+<tr><th id="7">7</th><td>	<b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="decl" id="log_info::commit" title='log_info::commit' data-ref="log_info::commit">commit</dfn>, *<dfn class="decl" id="log_info::parent" title='log_info::parent' data-ref="log_info::parent">parent</dfn>;</td></tr>
+<tr><th id="8">8</th><td>};</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><em>int</em> <dfn class="decl" id="parse_decorate_color_config" title='parse_decorate_color_config' data-ref="parse_decorate_color_config">parse_decorate_color_config</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="118var" title='var' data-type='const char *' data-ref="118var">var</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="119slot_name" title='slot_name' data-type='const char *' data-ref="119slot_name">slot_name</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="120value" title='value' data-type='const char *' data-ref="120value">value</dfn>);</td></tr>
+<tr><th id="11">11</th><td><em>void</em> <dfn class="decl" id="init_log_tree_opt" title='init_log_tree_opt' data-ref="init_log_tree_opt">init_log_tree_opt</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *);</td></tr>
+<tr><th id="12">12</th><td><em>int</em> <dfn class="decl" id="log_tree_diff_flush" title='log_tree_diff_flush' data-ref="log_tree_diff_flush">log_tree_diff_flush</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *);</td></tr>
+<tr><th id="13">13</th><td><em>int</em> <dfn class="decl" id="log_tree_commit" title='log_tree_commit' data-ref="log_tree_commit">log_tree_commit</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *, <b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *);</td></tr>
+<tr><th id="14">14</th><td><em>int</em> <dfn class="decl" id="log_tree_opt_parse" title='log_tree_opt_parse' data-ref="log_tree_opt_parse">log_tree_opt_parse</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *, <em>const</em> <em>char</em> **, <em>int</em>);</td></tr>
+<tr><th id="15">15</th><td><em>void</em> <dfn class="decl" id="show_log" title='show_log' data-ref="show_log">show_log</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col1 decl" id="121opt" title='opt' data-type='struct rev_info *' data-ref="121opt">opt</dfn>);</td></tr>
+<tr><th id="16">16</th><td><em>void</em> <dfn class="decl" id="format_decorations_extended" title='format_decorations_extended' data-ref="format_decorations_extended">format_decorations_extended</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col2 decl" id="122sb" title='sb' data-type='struct strbuf *' data-ref="122sb">sb</dfn>, <em>const</em> <b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col3 decl" id="123commit" title='commit' data-type='const struct commit *' data-ref="123commit">commit</dfn>,</td></tr>
+<tr><th id="17">17</th><td>			     <em>int</em> <dfn class="local col4 decl" id="124use_color" title='use_color' data-type='int' data-ref="124use_color">use_color</dfn>,</td></tr>
+<tr><th id="18">18</th><td>			     <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="125prefix" title='prefix' data-type='const char *' data-ref="125prefix">prefix</dfn>,</td></tr>
+<tr><th id="19">19</th><td>			     <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="126separator" title='separator' data-type='const char *' data-ref="126separator">separator</dfn>,</td></tr>
+<tr><th id="20">20</th><td>			     <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="127suffix" title='suffix' data-type='const char *' data-ref="127suffix">suffix</dfn>);</td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/format_decorations" data-ref="_M/format_decorations">format_decorations</dfn>(strbuf, commit, color) \</u></td></tr>
+<tr><th id="22">22</th><td><u>			     format_decorations_extended((strbuf), (commit), (color), " (", ", ", ")")</u></td></tr>
+<tr><th id="23">23</th><td><em>void</em> <dfn class="decl" id="show_decorations" title='show_decorations' data-ref="show_decorations">show_decorations</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col8 decl" id="128opt" title='opt' data-type='struct rev_info *' data-ref="128opt">opt</dfn>, <b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col9 decl" id="129commit" title='commit' data-type='struct commit *' data-ref="129commit">commit</dfn>);</td></tr>
+<tr><th id="24">24</th><td><em>void</em> <dfn class="decl" id="log_write_email_headers" title='log_write_email_headers' data-ref="log_write_email_headers">log_write_email_headers</dfn>(<b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *<dfn class="local col0 decl" id="130opt" title='opt' data-type='struct rev_info *' data-ref="130opt">opt</dfn>, <b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col1 decl" id="131commit" title='commit' data-type='struct commit *' data-ref="131commit">commit</dfn>,</td></tr>
+<tr><th id="25">25</th><td>			     <em>const</em> <em>char</em> **<dfn class="local col2 decl" id="132extra_headers_p" title='extra_headers_p' data-type='const char **' data-ref="132extra_headers_p">extra_headers_p</dfn>,</td></tr>
+<tr><th id="26">26</th><td>			     <em>int</em> *<dfn class="local col3 decl" id="133need_8bit_cte_p" title='need_8bit_cte_p' data-type='int *' data-ref="133need_8bit_cte_p">need_8bit_cte_p</dfn>);</td></tr>
+<tr><th id="27">27</th><td><em>void</em> <dfn class="decl" id="load_ref_decorations" title='load_ref_decorations' data-ref="load_ref_decorations">load_ref_decorations</dfn>(<em>int</em> <dfn class="local col4 decl" id="134flags" title='flags' data-type='int' data-ref="134flags">flags</dfn>);</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/FORMAT_PATCH_NAME_MAX" data-ref="_M/FORMAT_PATCH_NAME_MAX">FORMAT_PATCH_NAME_MAX</dfn> 64</u></td></tr>
+<tr><th id="30">30</th><td><em>void</em> <dfn class="decl" id="fmt_output_commit" title='fmt_output_commit' data-ref="fmt_output_commit">fmt_output_commit</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *, <b>struct</b> <a class="type" href="commit.h.html#commit" title='commit' data-ref="commit">commit</a> *, <b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *);</td></tr>
+<tr><th id="31">31</th><td><em>void</em> <dfn class="decl" id="fmt_output_subject" title='fmt_output_subject' data-ref="fmt_output_subject">fmt_output_subject</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="135subject" title='subject' data-type='const char *' data-ref="135subject">subject</dfn>, <b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *);</td></tr>
+<tr><th id="32">32</th><td><em>void</em> <dfn class="decl" id="fmt_output_email_subject" title='fmt_output_email_subject' data-ref="fmt_output_email_subject">fmt_output_email_subject</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *, <b>struct</b> <a class="type" href="revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> *);</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='bisect.c.html'>codebrowser/bisect.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/revision.h' l='130' type='unsigned int'/>
+<use f='codebrowser/bisect.c' l='888' u='w' c='show_diff_tree'/>
+<offset>970</offset>
+<use f='codebrowser/builtin/commit.c' l='1480' u='w' c='print_summary'/>
+<use f='codebrowser/builtin/log.c' l='125' u='w' c='cmd_log_init_defaults'/>
+<use f='codebrowser/builtin/log.c' l='654' u='w' c='cmd_log_reflog'/>
+<use f='codebrowser/builtin/log.c' l='1512' u='w' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/rev-list.c' l='118' u='r' c='show_commit'/>
+<use f='codebrowser/builtin/rev-list.c' l='303' u='w' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='349' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='363' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/combine-diff.c' l='1407' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/log-tree.c' l='545' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='743' u='r' c='log_tree_diff_flush'/>
+<use f='codebrowser/revision.c' l='1890' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1892' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1901' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1956' u='w' c='handle_revision_opt'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='192' type='int cmd_mktree(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/mktree.c' l='142' ll='192' type='int cmd_mktree(int ac, const char ** av, const char * prefix)'/>
+<use f='codebrowser/git.c' l='431'/>
+<use f='codebrowser/git.c' l='431'/>
+<use f='codebrowser/git.c' l='431'/>
+<use f='codebrowser/git.c' l='431'/>

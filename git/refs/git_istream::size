@@ -1,0 +1,9 @@
+<dec f='codebrowser/streaming.c' l='68' type='unsigned long'/>
+<use f='codebrowser/streaming.c' l='162' u='r' c='open_istream'/>
+<use f='codebrowser/streaming.c' l='268' u='w' c='attach_stream_filter'/>
+<use f='codebrowser/streaming.c' l='345' u='a' c='open_istream_loose'/>
+<use f='codebrowser/streaming.c' l='438' u='a' c='open_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='470' u='r' c='read_istream_incore'/>
+<use f='codebrowser/streaming.c' l='488' u='a' c='open_istream_incore'/>
+<offset>64</offset>
+<doc f='codebrowser/streaming.c' l='68'>/* inflated size of full object */</doc>

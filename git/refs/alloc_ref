@@ -1,0 +1,22 @@
+<dec f='codebrowser/remote.h' l='138' type='struct ref * alloc_ref(const char * name)'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='34' u='c' c='add_sought_entry'/>
+<use f='codebrowser/builtin/fetch.c' l='314' u='c' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='315' u='c' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='802' u='c' c='store_updated_refs'/>
+<use f='codebrowser/connect.c' l='192' u='c' c='get_remote_heads'/>
+<use f='codebrowser/http-push.c' l='1411' u='c' c='one_remote_ref'/>
+<use f='codebrowser/http-push.c' l='1447' u='c' c='add_remote_info_ref'/>
+<use f='codebrowser/remote-curl.c' l='209' u='c' c='parse_info_refs'/>
+<use f='codebrowser/remote-curl.c' l='221' u='c' c='parse_info_refs'/>
+<use f='codebrowser/remote-curl.c' l='883' u='c' c='parse_fetch'/>
+<def f='codebrowser/remote.c' l='932' ll='935' type='struct ref * alloc_ref(const char * name)'/>
+<use f='codebrowser/remote.c' l='1072' u='c' c='alloc_delete_ref'/>
+<use f='codebrowser/remote.c' l='1092' u='c' c='try_explicit_object_name'/>
+<use f='codebrowser/remote.c' l='1100' u='c' c='make_linked_ref'/>
+<use f='codebrowser/remote.c' l='1827' u='c' c='get_expanded_map'/>
+<use f='codebrowser/remote.c' l='1865' u='c' c='get_local_ref'/>
+<use f='codebrowser/remote.c' l='1888' u='c' c='get_fetch_map'/>
+<use f='codebrowser/remote.c' l='2137' u='c' c='one_local_ref'/>
+<use f='codebrowser/transport-helper.c' l='1061' u='c' c='get_refs_list'/>
+<use f='codebrowser/transport.c' l='90' u='c' c='get_refs_from_bundle'/>
+<use f='codebrowser/walker.c' l='195' u='c' c='interpret_target'/>

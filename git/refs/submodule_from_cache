@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule-config.h' l='44' type='const struct submodule * submodule_from_cache(struct repository * repo, const struct object_id * treeish_name, const char * key)'/>
+<use f='codebrowser/repository.c' l='163' u='c' c='repo_submodule_init'/>
+<def f='codebrowser/submodule-config.c' l='595' ll='602' type='const struct submodule * submodule_from_cache(struct repository * repo, const struct object_id * treeish_name, const char * key)'/>
+<use f='codebrowser/submodule.c' l='284' u='c' c='is_submodule_active'/>

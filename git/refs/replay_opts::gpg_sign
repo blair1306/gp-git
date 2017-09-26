@@ -1,0 +1,18 @@
+<dec f='codebrowser/sequencer.h' l='31' type='char *'/>
+<offset>384</offset>
+<use f='codebrowser/builtin/revert.c' l='112' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='112' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='112' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='112' u='a' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='191' u='w' c='run_sequencer'/>
+<use f='codebrowser/builtin/revert.c' l='191' u='r' c='run_sequencer'/>
+<use f='codebrowser/sequencer.c' l='190' u='r' c='gpg_sign_opt_quoted'/>
+<use f='codebrowser/sequencer.c' l='191' u='r' c='gpg_sign_opt_quoted'/>
+<use f='codebrowser/sequencer.c' l='200' u='r' c='sequencer_remove_state'/>
+<use f='codebrowser/sequencer.c' l='655' u='r' c='run_git_commit'/>
+<use f='codebrowser/sequencer.c' l='656' u='r' c='run_git_commit'/>
+<use f='codebrowser/sequencer.c' l='1438' u='a' c='populate_opts_cb'/>
+<use f='codebrowser/sequencer.c' l='1484' u='r' c='read_populate_opts'/>
+<use f='codebrowser/sequencer.c' l='1485' u='w' c='read_populate_opts'/>
+<use f='codebrowser/sequencer.c' l='1751' u='r' c='save_opts'/>
+<use f='codebrowser/sequencer.c' l='1752' u='r' c='save_opts'/>

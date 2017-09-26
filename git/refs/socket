@@ -1,0 +1,8 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='113' type='int socket(int __domain, int __type, int __protocol)'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='110'>/* Create a new socket of type TYPE in domain DOMAIN, using
+   protocol PROTOCOL.  If PROTOCOL is zero, one is chosen automatically.
+   Returns a file descriptor for the new socket, or -1 for errors.  */</doc>
+<use f='codebrowser/connect.c' l='399' u='c' c='git_tcp_connect_sock'/>
+<use f='codebrowser/daemon.c' l='951' u='c' c='setup_named_sock'/>
+<use f='codebrowser/imap-send.c' l='984' u='c' c='imap_open_store'/>
+<use f='codebrowser/unix-socket.c' l='6' u='c' c='unix_stream_socket'/>

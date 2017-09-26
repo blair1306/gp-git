@@ -1,0 +1,10 @@
+<dec f='codebrowser/strbuf.h' l='436' type='int strbuf_getcwd(struct strbuf * sb)'/>
+<use f='codebrowser/abspath.c' l='103' u='c' c='strbuf_realpath'/>
+<doc f='codebrowser/strbuf.h' l='433'>/**
+ * Set the buffer to the path of the current working directory.
+ */</doc>
+<use f='codebrowser/setup.c' l='985' u='c' c='discover_git_directory'/>
+<use f='codebrowser/setup.c' l='1049' u='c' c='setup_git_directory_gently'/>
+<def f='codebrowser/strbuf.c' l='434' ll='464' type='int strbuf_getcwd(struct strbuf * sb)'/>
+<use f='codebrowser/unix-socket.c' l='61' u='c' c='unix_sockaddr_init'/>
+<use f='codebrowser/wrapper.c' l='631' u='c' c='xgetcwd'/>

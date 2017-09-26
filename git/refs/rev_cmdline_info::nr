@@ -1,0 +1,8 @@
+<dec f='codebrowser/revision.h' l='34' type='unsigned int'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/fast-export.c' l='802' u='r' c='get_tags_and_duplicates'/>
+<use f='codebrowser/builtin/log.c' l='966' u='r' c='find_branch_name'/>
+<use f='codebrowser/list-objects.c' l='167' u='r' c='mark_edges_uninteresting'/>
+<use f='codebrowser/revision.c' l='1106' u='r' c='add_rev_cmdline'/>
+<use f='codebrowser/revision.c' l='1113' u='w' c='add_rev_cmdline'/>
+<use f='codebrowser/sequencer.c' l='2341' u='r' c='sequencer_pick_revisions'/>

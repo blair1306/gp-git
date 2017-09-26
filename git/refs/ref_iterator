@@ -1,0 +1,54 @@
+<def f='codebrowser/refs/refs-internal.h' l='323' ll='328'/>
+<size>32</size>
+<doc f='codebrowser/refs/refs-internal.h' l='275'>/*
+ * Reference iterators
+ *
+ * A reference iterator encapsulates the state of an in-progress
+ * iteration over references. Create an instance of `struct
+ * ref_iterator` via one of the functions in this module.
+ *
+ * A freshly-created ref_iterator doesn&apos;t yet point at a reference. To
+ * advance the iterator, call ref_iterator_advance(). If successful,
+ * this sets the iterator&apos;s refname, oid, and flags fields to describe
+ * the next reference and returns ITER_OK. The data pointed at by
+ * refname and oid belong to the iterator; if you want to retain them
+ * after calling ref_iterator_advance() again or calling
+ * ref_iterator_abort(), you must make a copy. When the iteration has
+ * been exhausted, ref_iterator_advance() releases any resources
+ * assocated with the iteration, frees the ref_iterator object, and
+ * returns ITER_DONE. If you want to abort the iteration early, call
+ * ref_iterator_abort(), which also frees the ref_iterator object and
+ * any associated resources. If there was an internal error advancing
+ * to the next entry, ref_iterator_advance() aborts the iteration,
+ * frees the ref_iterator, and returns ITER_ERROR.
+ *
+ * The reference currently being looked at can be peeled by calling
+ * ref_iterator_peel(). This function is often faster than peel_ref(),
+ * so it should be preferred when iterating over references.
+ *
+ * Putting it all together, a typical iteration looks like this:
+ *
+ *     int ok;
+ *     struct ref_iterator *iter = ...;
+ *
+ *     while ((ok = ref_iterator_advance(iter)) == ITER_OK) {
+ *             if (want_to_stop_iteration()) {
+ *                     ok = ref_iterator_abort(iter);
+ *                     break;
+ *             }
+ *
+ *             // Access information about the current reference:
+ *             if (!(iter-&gt;flags &amp; REF_ISSYMREF))
+ *                     printf(&quot;%s is %s\n&quot;, iter-&gt;refname, oid_to_hex(&amp;iter-&gt;oid));
+ *
+ *             // If you need to peel the reference:
+ *             ref_iterator_peel(iter, &amp;oid);
+ *     }
+ *
+ *     if (ok != ITER_DONE)
+ *             handle_error();
+ */</doc>
+<mbr r='ref_iterator::vtable' o='0' t='struct ref_iterator_vtable *'/>
+<mbr r='ref_iterator::refname' o='64' t='const char *'/>
+<mbr r='ref_iterator::oid' o='128' t='const struct object_id *'/>
+<mbr r='ref_iterator::flags' o='192' t='unsigned int'/>

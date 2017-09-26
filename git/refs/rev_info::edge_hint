@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='103' type='unsigned int'/>
+<offset>944</offset>
+<use f='codebrowser/http-push.c' l='1923' u='w' c='cmd_main'/>
+<use f='codebrowser/list-objects.c' l='141' u='r' c='mark_edge_parents_uninteresting'/>
+<use f='codebrowser/revision.c' l='1856' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1861' u='w' c='handle_revision_opt'/>

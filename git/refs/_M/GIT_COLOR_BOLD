@@ -1,0 +1,3 @@
+<dec f='codebrowser/color.h' l='26'/>
+<use f='codebrowser/builtin/clean.c' l='48' u='c'/>
+<use f='codebrowser/diff.c' l='52' u='c'/>

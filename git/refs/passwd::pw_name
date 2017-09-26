@@ -1,0 +1,9 @@
+<dec f='include/pwd.h' l='51' type='char *'/>
+<offset>0</offset>
+<doc f='include/pwd.h' l='51'>/* Username.  */</doc>
+<use f='codebrowser/daemon.c' l='1161' u='r' c='drop_privileges'/>
+<use f='codebrowser/ident.c' l='40' u='w' c='xgetpwuid_self'/>
+<use f='codebrowser/ident.c' l='65' u='r' c='copy_gecos'/>
+<use f='codebrowser/ident.c' l='66' u='r' c='copy_gecos'/>
+<use f='codebrowser/ident.c' l='145' u='r' c='copy_email'/>
+<use f='codebrowser/ident.c' l='398' u='r' c='fmt_ident'/>

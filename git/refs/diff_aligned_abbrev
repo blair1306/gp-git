@@ -1,0 +1,10 @@
+<dec f='codebrowser/diff.h' l='348' type='const char * diff_aligned_abbrev(const struct object_id * sha1, int )'/>
+<doc f='codebrowser/diff.h' l='344'>/*
+ * This is different from find_unique_abbrev() in that
+ * it stuffs the result with dots for alignment.
+ */</doc>
+<use f='codebrowser/combine-diff.c' l='1207' u='c' c='show_raw_diff'/>
+<use f='codebrowser/combine-diff.c' l='1209' u='c' c='show_raw_diff'/>
+<def f='codebrowser/diff.c' l='4180' ll='4220' type='const char * diff_aligned_abbrev(const struct object_id * oid, int len)'/>
+<use f='codebrowser/diff.c' l='4230' u='c' c='diff_flush_raw'/>
+<use f='codebrowser/diff.c' l='4232' u='c' c='diff_flush_raw'/>

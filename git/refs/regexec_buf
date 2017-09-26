@@ -1,0 +1,8 @@
+<def f='codebrowser/git-compat-util.h' l='1039' ll='1046' type='int regexec_buf(const regex_t * preg, const char * buf, size_t size, size_t nmatch, regmatch_t * pmatch, int eflags)'/>
+<use f='codebrowser/diff.c' l='1014' u='c' c='find_word_boundaries'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='35' u='c' c='diffgrep_consume'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='49' u='c' c='diff_grep'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='52' u='c' c='diff_grep'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='85' u='c' c='contains'/>
+<use f='codebrowser/grep.c' l='1108' u='c' c='patmatch'/>
+<use f='codebrowser/xdiff-interface.c' l='233' u='c' c='ff_regexp'/>

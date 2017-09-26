@@ -1,0 +1,14 @@
+<dec f='codebrowser/cache.h' l='541' type='const char * setup_git_directory_gently(int * )'/>
+<use f='codebrowser/builtin/check-ref-format.c' l='44' u='c' c='check_ref_format_branch'/>
+<use f='codebrowser/builtin/diff.c' l='302' u='c' c='cmd_diff'/>
+<use f='codebrowser/builtin/hash-object.c' l='114' u='c' c='cmd_hash_object'/>
+<use f='codebrowser/builtin/help.c' l='486' u='c' c='cmd_help'/>
+<use f='codebrowser/builtin/stripspace.c' l='49' u='c' c='cmd_stripspace'/>
+<use f='codebrowser/git.c' l='234' u='c' c='handle_alias'/>
+<use f='codebrowser/git.c' l='317' u='c' c='run_builtin'/>
+<use f='codebrowser/imap-send.c' l='1503' u='c' c='cmd_main'/>
+<use f='codebrowser/remote-curl.c' l='1035' u='c' c='cmd_main'/>
+<def f='codebrowser/setup.c' l='1026' ll='1121' type='const char * setup_git_directory_gently(int * nongit_ok)'/>
+<use f='codebrowser/setup.c' l='1188' u='c' c='setup_git_directory'/>
+<use f='codebrowser/t/helper/test-path-utils.c' l='233' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-subprocess.c' l='9' u='c' c='cmd_main'/>

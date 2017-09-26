@@ -1,0 +1,15 @@
+<dec f='codebrowser/unpack-trees.h' l='55' type='struct dir_struct *'/>
+<offset>704</offset>
+<use f='codebrowser/builtin/checkout.c' l='512' u='w' c='merge_working_tree'/>
+<use f='codebrowser/builtin/checkout.c' l='512' u='r' c='merge_working_tree'/>
+<use f='codebrowser/builtin/checkout.c' l='513' u='r' c='merge_working_tree'/>
+<use f='codebrowser/builtin/checkout.c' l='514' u='r' c='merge_working_tree'/>
+<use f='codebrowser/builtin/read-tree.c' l='59' u='r' c='exclude_per_directory_cb'/>
+<use f='codebrowser/builtin/read-tree.c' l='62' u='r' c='exclude_per_directory_cb'/>
+<use f='codebrowser/builtin/read-tree.c' l='65' u='w' c='exclude_per_directory_cb'/>
+<use f='codebrowser/builtin/read-tree.c' l='210' u='r' c='cmd_read_tree'/>
+<use f='codebrowser/merge.c' l='70' u='w' c='checkout_fast_forward'/>
+<use f='codebrowser/unpack-trees.c' l='1601' u='r' c='verify_clean_subdirectory'/>
+<use f='codebrowser/unpack-trees.c' l='1602' u='r' c='verify_clean_subdirectory'/>
+<use f='codebrowser/unpack-trees.c' l='1644' u='r' c='check_ok_to_remove'/>
+<use f='codebrowser/unpack-trees.c' l='1645' u='r' c='check_ok_to_remove'/>

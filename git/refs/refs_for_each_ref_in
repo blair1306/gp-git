@@ -1,0 +1,8 @@
+<dec f='codebrowser/refs.h' l='280' type='int refs_for_each_ref_in(struct ref_store * refs, const char * prefix, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='331' u='c' c='refs_for_each_tag_ref'/>
+<use f='codebrowser/refs.c' l='347' u='c' c='refs_for_each_branch_ref'/>
+<use f='codebrowser/refs.c' l='363' u='c' c='refs_for_each_remote_ref'/>
+<def f='codebrowser/refs.c' l='1334' ll='1338' type='int refs_for_each_ref_in(struct ref_store * refs, const char * prefix, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='1342' u='c' c='for_each_ref_in'/>
+<use f='codebrowser/refs.c' l='1358' u='c' c='for_each_ref_in_submodule'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='125' u='c' c='cmd_for_each_ref'/>

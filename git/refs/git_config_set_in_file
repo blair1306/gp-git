@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='63' type='void git_config_set_in_file(const char * , const char * , const char * )'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='704' u='c' c='module_clone'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='708' u='c' c='module_clone'/>
+<def f='codebrowser/config.c' l='2383' ll='2387' type='void git_config_set_in_file(const char * config_filename, const char * key, const char * value)'/>
+<use f='codebrowser/dir.c' l='2864' u='c' c='connect_work_tree_and_git_dir'/>

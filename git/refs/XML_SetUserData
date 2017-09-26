@@ -1,0 +1,5 @@
+<dec f='include/expat.h' l='671' type='void XML_SetUserData(XML_Parser parser, void * userData)'/>
+<use f='codebrowser/http-push.c' l='903' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='1155' u='c' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1229' u='c' c='locking_available'/>
+<doc f='include/expat.h' l='669'>/* This value is passed as the userData argument to callbacks. */</doc>

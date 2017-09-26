@@ -1,0 +1,6 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='96' type='void SHA1DCUpdate(SHA1_CTX * , const char * , size_t )'/>
+<doc f='codebrowser/sha1dc/sha1.h' l='95'>/* update SHA-1 context with buffer contents */</doc>
+<def f='codebrowser/sha1dc/sha1.c' l='1810' ll='1847' type='void SHA1DCUpdate(SHA1_CTX * ctx, const char * buf, size_t len)'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1862' u='c' c='SHA1DCFinal'/>
+<use f='codebrowser/sha1dc_git.c' l='19' u='c' c='git_SHA1DCUpdate'/>
+<use f='codebrowser/sha1dc_git.c' l='23' u='c' c='git_SHA1DCUpdate'/>

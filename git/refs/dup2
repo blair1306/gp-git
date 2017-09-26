@@ -1,0 +1,10 @@
+<dec f='include/unistd.h' l='537' type='int dup2(int __fd, int __fd2)'/>
+<doc f='include/unistd.h' l='536'>/* Duplicate FD to FD2, closing FD2 and making it open on the same file.  */</doc>
+<use f='codebrowser/archive-tar.c' l='459' u='c' c='write_tar_filter_archive'/>
+<use f='codebrowser/builtin/archive.c' l='19' u='c' c='create_output_file'/>
+<use f='codebrowser/builtin/gc.c' l='444' u='c' c='cmd_gc'/>
+<use f='codebrowser/column.c' l='399' u='c' c='run_column_filter'/>
+<use f='codebrowser/column.c' l='412' u='c' c='stop_column_filter'/>
+<use f='codebrowser/pager.c' l='127' u='c' c='setup_pager'/>
+<use f='codebrowser/pager.c' l='129' u='c' c='setup_pager'/>
+<use f='codebrowser/run-command.c' l='302' u='c' c='child_dup2'/>

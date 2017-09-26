@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='1116' type='int raceproof_create_file(const char * path, create_file_fn * fn, void * cb)'/>
+<doc f='codebrowser/cache.h' l='1105'>/*
+ * Create a file in dirname(path) by calling fn, creating leading
+ * directories if necessary. Retry a few times in case we are racing
+ * with another process that is trying to clean up the directory that
+ * contains path. See the documentation for create_file_fn for more
+ * details.
+ *
+ * Return the value and set the errno that resulted from the most
+ * recent call of fn. fn is always called at least once, and will be
+ * called more than once if it returns ENOENT or EISDIR.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='952' u='c' c='lock_ref_sha1_basic'/>
+<use f='codebrowser/refs/files-backend.c' l='1235' u='c' c='rename_tmp_log'/>
+<use f='codebrowser/refs/files-backend.c' l='1468' u='c' c='log_ref_setup'/>
+<def f='codebrowser/sha1_file.c' l='175' ll='241' type='int raceproof_create_file(const char * path, create_file_fn * fn, void * cb)'/>

@@ -1,0 +1,21 @@
+<dec f='codebrowser/tree-walk.h' l='13' type='unsigned int'/>
+<offset>256</offset>
+<use f='codebrowser/fsck.c' l='552' u='r' c='fsck_tree'/>
+<use f='codebrowser/match-trees.c' l='132' u='r' c='match_trees'/>
+<use f='codebrowser/match-trees.c' l='191' u='r' c='splice_tree'/>
+<use f='codebrowser/tree-diff.c' l='55' u='r' c='tree_entry_pathcmp'/>
+<use f='codebrowser/tree-diff.c' l='56' u='r' c='tree_entry_pathcmp'/>
+<use f='codebrowser/tree-diff.c' l='57' u='r' c='tree_entry_pathcmp'/>
+<use f='codebrowser/tree-diff.c' l='301' u='r' c='skip_uninteresting'/>
+<use f='codebrowser/tree-diff.c' l='305' u='w' c='skip_uninteresting'/>
+<use f='codebrowser/tree-diff.c' l='443' u='r' c='ll_diff_tree_paths'/>
+<use f='codebrowser/tree-diff.c' l='446' u='r' c='ll_diff_tree_paths'/>
+<use f='codebrowser/tree-walk.c' l='57' u='w' c='init_tree_desc_internal'/>
+<use f='codebrowser/tree-walk.c' l='110' u='r' c='update_tree_entry_internal'/>
+<use f='codebrowser/tree-walk.c' l='118' u='w' c='update_tree_entry_internal'/>
+<use f='codebrowser/tree-walk.c' l='139' u='w' c='update_tree_entry_gently'/>
+<use f='codebrowser/tree-walk.c' l='148' u='r' c='tree_entry'/>
+<use f='codebrowser/tree-walk.c' l='158' u='r' c='tree_entry_gently'/>
+<use f='codebrowser/tree-walk.c' l='290' u='r' c='extended_entry_extract'/>
+<use f='codebrowser/tree-walk.c' l='326' u='r' c='extended_entry_extract'/>
+<use f='codebrowser/tree-walk.c' l='498' u='r' c='find_tree_entry'/>

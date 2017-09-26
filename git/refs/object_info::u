@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1821' type='union (anonymous union at /home/jon/workspace/git/cache.h:1807:2)'/>
+<offset>448</offset>
+<use f='codebrowser/sha1_file.c' l='3033' u='m' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_file.c' l='3034' u='m' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_file.c' l='3035' u='m' c='sha1_object_info_extended'/>
+<use f='codebrowser/streaming.c' l='124' u='m' c='istream_source'/>
+<use f='codebrowser/streaming.c' l='431' u='m' c='open_istream_pack_non_delta'/>
+<use f='codebrowser/streaming.c' l='432' u='m' c='open_istream_pack_non_delta'/>

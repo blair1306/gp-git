@@ -1,0 +1,7 @@
+<dec f='codebrowser/hashmap.h' l='345' type='int hashmap_bucket(const struct hashmap * map, unsigned int hash)'/>
+<doc f='codebrowser/hashmap.h' l='341'>/*
+ * Returns the `bucket` an entry is stored in.
+ * Useful for multithreaded read access.
+ */</doc>
+<def f='codebrowser/hashmap.c' l='109' ll='112' type='int hashmap_bucket(const struct hashmap * map, unsigned int hash)'/>
+<use f='codebrowser/name-hash.c' l='268' u='c' c='compute_dir_lock_nr'/>

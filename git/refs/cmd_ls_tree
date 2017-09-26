@@ -1,0 +1,7 @@
+<dec f='codebrowser/builtin.h' l='180' type='int cmd_ls_tree(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/builtin/cat-file.c' l='126' u='c' c='cat_one_file'/>
+<def f='codebrowser/builtin/ls-tree.c' l='121' ll='188' type='int cmd_ls_tree(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='417'/>
+<use f='codebrowser/git.c' l='417'/>
+<use f='codebrowser/git.c' l='417'/>
+<use f='codebrowser/git.c' l='417'/>

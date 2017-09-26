@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='745' type='size_t'/>
+<use f='codebrowser/builtin/index-pack.c' l='402' u='r' c='prune_base_data'/>
+<use f='codebrowser/config.c' l='1134' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='42' type='size_t'/>
+<use f='codebrowser/sha1_file.c' l='2352' u='r' c='add_delta_base_cache'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/commit.h' l='19' type='unsigned int'/>
+<use f='codebrowser/alloc.c' l='95' u='w' c='alloc_commit_node'/>
+<offset>256</offset>
+<use f='codebrowser/commit.c' l='236' macro='1' u='r'/>
+<use f='codebrowser/commit.c' l='236' macro='1' u='r'/>
+<use f='codebrowser/commit.c' l='587' macro='1' u='r'/>
+<use f='codebrowser/commit.c' l='587' macro='1' u='r'/>
+<use f='codebrowser/commit.c' l='590' macro='1' u='r'/>
+<use f='codebrowser/commit.c' l='590' macro='1' u='r'/>
+<use f='codebrowser/object.c' l='161' u='w' c='object_as_type'/>
+<use f='codebrowser/ref-filter.c' l='1498' macro='1' u='r'/>
+<use f='codebrowser/ref-filter.c' l='1498' macro='1' u='r'/>
+<use f='codebrowser/revision.c' l='3025' macro='1' u='r'/>
+<use f='codebrowser/revision.c' l='3025' macro='1' u='r'/>
+<use f='codebrowser/shallow.c' l='432' macro='1' u='r'/>
+<use f='codebrowser/shallow.c' l='432' macro='1' u='r'/>

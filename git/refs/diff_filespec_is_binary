@@ -1,0 +1,14 @@
+<dec f='codebrowser/diffcore.h' l='63' type='int diff_filespec_is_binary(struct diff_filespec * )'/>
+<def f='codebrowser/diff.c' l='2290' ll='2307' type='int diff_filespec_is_binary(struct diff_filespec * one)'/>
+<use f='codebrowser/diff.c' l='2428' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2429' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2444' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2445' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2571' u='c' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='2571' u='c' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='2639' u='c' c='builtin_checkdiff'/>
+<use f='codebrowser/diff.c' l='3175' u='c' c='fill_metainfo'/>
+<use f='codebrowser/diff.c' l='3176' u='c' c='fill_metainfo'/>
+<use f='codebrowser/diff.c' l='4645' u='c' c='diff_get_patch_id'/>
+<use f='codebrowser/diff.c' l='4646' u='c' c='diff_get_patch_id'/>
+<use f='codebrowser/diffcore-delta.c' l='131' u='c' c='hash_chars'/>

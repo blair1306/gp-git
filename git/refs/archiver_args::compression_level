@@ -1,0 +1,9 @@
+<dec f='codebrowser/archive.h' l='17' type='int'/>
+<use f='codebrowser/archive-tar.c' l='447' u='r' c='write_tar_filter_archive'/>
+<use f='codebrowser/archive-tar.c' l='448' u='r' c='write_tar_filter_archive'/>
+<offset>608</offset>
+<use f='codebrowser/archive-zip.c' l='335' u='r' c='write_zip_entry'/>
+<use f='codebrowser/archive-zip.c' l='368' u='r' c='write_zip_entry'/>
+<use f='codebrowser/archive-zip.c' l='449' u='r' c='write_zip_entry'/>
+<use f='codebrowser/archive.c' l='478' u='w' c='parse_archive_args'/>
+<use f='codebrowser/archive.c' l='481' u='w' c='parse_archive_args'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='312' type='int interactive_add(int argc, const char ** argv, const char * prefix, int patch)'/>
+<def f='codebrowser/builtin/add.c' l='181' ll='194' type='int interactive_add(int argc, const char ** argv, const char * prefix, int patch)'/>
+<use f='codebrowser/builtin/add.c' l='381' u='c' c='cmd_add'/>
+<use f='codebrowser/builtin/commit.c' l='365' u='c' c='prepare_index'/>

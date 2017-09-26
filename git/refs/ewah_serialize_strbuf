@@ -1,0 +1,7 @@
+<dec f='codebrowser/ewah/ewok.h' l='92' type='int ewah_serialize_strbuf(struct ewah_bitmap * self, struct strbuf * )'/>
+<use f='codebrowser/dir.c' l='2518' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2519' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2520' u='c' c='write_untracked_extension'/>
+<def f='codebrowser/ewah/ewah_io.c' l='121' ll='124' type='int ewah_serialize_strbuf(struct ewah_bitmap * self, struct strbuf * sb)'/>
+<use f='codebrowser/split-index.c' l='51' u='c' c='write_link_extension'/>
+<use f='codebrowser/split-index.c' l='52' u='c' c='write_link_extension'/>

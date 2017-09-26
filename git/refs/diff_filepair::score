@@ -1,0 +1,21 @@
+<dec f='codebrowser/diffcore.h' l='68' type='unsigned short'/>
+<offset>128</offset>
+<use f='codebrowser/diff.c' l='2557' u='r' c='builtin_diffstat'/>
+<use f='codebrowser/diff.c' l='3102' u='r' c='similarity_index'/>
+<use f='codebrowser/diff.c' l='3160' u='r' c='fill_metainfo'/>
+<use f='codebrowser/diff.c' l='3199' u='r' c='run_diff_cmd'/>
+<use f='codebrowser/diff.c' l='4234' u='r' c='diff_flush_raw'/>
+<use f='codebrowser/diff.c' l='4519' u='r' c='diff_summary'/>
+<use f='codebrowser/diff.c' l='4524' u='r' c='diff_summary'/>
+<use f='codebrowser/diff.c' l='4696' u='r' c='is_summary_empty'/>
+<use f='codebrowser/diff.c' l='4855' u='r' c='match_filter'/>
+<use f='codebrowser/diff.c' l='4857' u='r' c='match_filter'/>
+<use f='codebrowser/diffcore-break.c' l='199' u='w' c='diffcore_break'/>
+<use f='codebrowser/diffcore-break.c' l='205' u='w' c='diffcore_break'/>
+<use f='codebrowser/diffcore-break.c' l='247' u='w' c='merge_broken'/>
+<use f='codebrowser/diffcore-break.c' l='247' u='r' c='merge_broken'/>
+<use f='codebrowser/diffcore-rename.c' l='80' u='r' c='register_rename_src'/>
+<use f='codebrowser/diffcore-rename.c' l='226' u='w' c='record_rename_pair'/>
+<use f='codebrowser/diffcore-rename.c' l='228' u='w' c='record_rename_pair'/>
+<use f='codebrowser/diffcore-rename.c' l='487' u='r' c='diffcore_rename'/>
+<use f='codebrowser/wt-status.c' l='536' u='r' c='wt_status_collect_updated_cb'/>

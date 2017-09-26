@@ -1,0 +1,8 @@
+<dec f='include/x86_64-linux-gnu/bits/string2.h' l='1097' type='char * __strpbrk_c2(const char * __s, int __accept1, int __accept2)'/>
+<def f='include/x86_64-linux-gnu/bits/string2.h' l='1099' ll='1106' macro='1' type='char * __strpbrk_c2(const char * __s, int __accept1, int __accept2)'/>
+<use f='codebrowser/refs.h' l='326' macro='1' u='c'/>
+<use f='codebrowser/builtin/cat-file.c' l='502' macro='1' u='c'/>
+<use f='codebrowser/builtin/mktag.c' l='113' macro='1' u='c'/>
+<use f='codebrowser/builtin/mktag.c' l='114' macro='1' u='c'/>
+<use f='codebrowser/builtin/rev-parse.c' l='461' macro='1' u='c'/>
+<use f='codebrowser/sideband.c' l='67' macro='1' u='c'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='855' type='int'/>
+<use f='codebrowser/builtin/gc.c' l='452' u='r' c='cmd_gc'/>
+<use f='codebrowser/builtin/prune.c' l='122' u='r' c='cmd_prune'/>
+<use f='codebrowser/builtin/repack.c' l='209' u='r' c='cmd_repack'/>
+<def f='codebrowser/environment.c' l='29' type='int'/>
+<use f='codebrowser/setup.c' l='470' u='w' c='check_repository_format_gently'/>

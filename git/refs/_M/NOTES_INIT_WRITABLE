@@ -1,0 +1,18 @@
+<dec f='codebrowser/notes.h' l='80'/>
+<doc f='codebrowser/notes.h' l='75'>/*
+ * By default, the notes tree is only readable, and the notes ref can be
+ * any treeish. The notes tree can however be made writable with this flag,
+ * in which case only strict ref names can be used.
+ */</doc>
+<use f='codebrowser/builtin/notes.c' l='291' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='342' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='432' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='523' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='601' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='821' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='913' u='c'/>
+<use f='codebrowser/builtin/notes.c' l='955' u='c'/>
+<use f='codebrowser/notes-cache.c' l='35' u='c'/>
+<use f='codebrowser/notes-utils.c' l='155' u='c'/>
+<use f='codebrowser/notes.c' l='1023' u='c'/>
+<use f='codebrowser/notes.c' l='1031' u='c'/>

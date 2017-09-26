@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs/ref-cache.h' l='199' type='struct ref_cache * create_ref_cache(struct ref_store * refs, fill_ref_dir_fn * fill_ref_dir)'/>
+<use f='codebrowser/refs/files-backend.c' l='257' u='c' c='get_loose_ref_cache'/>
+<doc f='codebrowser/refs/ref-cache.h' l='190'>/*
+ * Return a pointer to a new `ref_cache`. Its top-level starts out
+ * marked incomplete. If `fill_ref_dir` is non-NULL, it is the
+ * function called to fill in incomplete directories in the
+ * `ref_cache` when they are accessed. If it is NULL, then the whole
+ * `ref_cache` must be filled (including clearing its directories&apos;
+ * `REF_INCOMPLETE` bits) before it is used, and `refs` can be NULL,
+ * too.
+ */</doc>
+<use f='codebrowser/refs/packed-backend.c' l='208' u='c' c='read_packed_refs'/>
+<def f='codebrowser/refs/ref-cache.c' l='46' ll='55' type='struct ref_cache * create_ref_cache(struct ref_store * refs, fill_ref_dir_fn * fill_ref_dir)'/>

@@ -1,0 +1,19 @@
+<dec f='include/time.h' l='192' type='time_t time(time_t * __timer)'/>
+<use f='codebrowser/archive.c' l='370' u='c' c='parse_treeish_arg'/>
+<use f='codebrowser/blame.c' l='163' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/gc.c' l='275' u='c' c='lock_repo_for_gc'/>
+<use f='codebrowser/builtin/log.c' l='928' u='c' c='gen_message_id'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1958' u='c' c='cmd_receive_pack'/>
+<use f='codebrowser/builtin/reflog.c' l='519' u='c' c='cmd_reflog_expire'/>
+<use f='codebrowser/credential-cache--daemon.c' l='28' u='c' c='cache_credential'/>
+<use f='codebrowser/credential-cache--daemon.c' l='55' u='c' c='check_expirations'/>
+<use f='codebrowser/date.c' l='480' u='c' c='match_multi_number'/>
+<use f='codebrowser/date.c' l='859' u='c' c='datestamp'/>
+<use f='codebrowser/fast-import.c' l='430' u='c' c='write_crash_report'/>
+<use f='codebrowser/http-backend.c' l='109' u='c' c='hdr_cache_forever'/>
+<use f='codebrowser/http-push.c' l='459' u='c' c='refresh_lock'/>
+<use f='codebrowser/http-push.c' l='473' u='c' c='check_locks'/>
+<use f='codebrowser/http-push.c' l='933' u='c' c='lock_remote'/>
+<use f='codebrowser/rerere.c' l='1185' u='c' c='rerere_gc'/>
+<use f='codebrowser/sha1_file.c' l='655' u='c' c='freshen_file'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='53' u='c' c='timespec_arg'/>

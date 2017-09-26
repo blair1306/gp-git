@@ -1,0 +1,4 @@
+<dec f='codebrowser/prio-queue.h' l='32' type='void *'/>
+<offset>128</offset>
+<use f='codebrowser/commit.c' l='674' u='w' c='sort_in_topological_order'/>
+<use f='codebrowser/prio-queue.c' l='7' u='r' c='compare'/>

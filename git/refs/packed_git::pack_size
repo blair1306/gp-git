@@ -1,0 +1,20 @@
+<dec f='codebrowser/cache.h' l='1590' type='off_t'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/count-objects.c' l='130' u='r' c='cmd_count_objects'/>
+<use f='codebrowser/builtin/pack-objects.c' l='740' u='r' c='write_reused_pack'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='410' u='r' c='pack_set_bytecount'/>
+<use f='codebrowser/fast-import.c' l='1352' u='r' c='gfi_unpack_entry'/>
+<use f='codebrowser/fast-import.c' l='1370' u='w' c='gfi_unpack_entry'/>
+<use f='codebrowser/pack-check.c' l='72' u='r' c='verify_packfile'/>
+<use f='codebrowser/pack-revindex.c' l='155' u='r' c='create_pack_revindex'/>
+<use f='codebrowser/pack-revindex.c' l='157' u='r' c='create_pack_revindex'/>
+<use f='codebrowser/sha1_file.c' l='1165' u='r' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='1168' u='w' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='1169' u='r' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='1198' u='r' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='1241' u='r' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1243' u='r' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1264' u='r' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1278' u='r' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1355' u='w' c='add_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='2826' u='r' c='is_pack_valid'/>

@@ -1,0 +1,63 @@
+<dec f='codebrowser/cache.h' l='934' type='const char * find_unique_abbrev(const unsigned char * sha1, int len)'/>
+<doc f='codebrowser/cache.h' l='919'>/*
+ * Return an abbreviated sha1 unique within this repository&apos;s object database.
+ * The result will be at least `len` characters long, and will be NUL
+ * terminated.
+ *
+ * The non-`_r` version returns a static buffer which remains valid until 4
+ * more calls to find_unique_abbrev are made.
+ *
+ * The `_r` variant writes to a buffer supplied by the caller, which must be at
+ * least `GIT_SHA1_HEXSZ + 1` bytes. The return value is the number of bytes
+ * written (excluding the NUL terminator).
+ *
+ * Note that while this version avoids the static buffer, it is not fully
+ * reentrant, as it calls into other non-reentrant git code.
+ */</doc>
+<use f='codebrowser/builtin/blame.c' l='502' u='c' c='update_auto_abbrev'/>
+<use f='codebrowser/builtin/branch.c' l='275' u='c' c='delete_branches'/>
+<use f='codebrowser/builtin/checkout.c' l='408' u='c' c='describe_detached_head'/>
+<use f='codebrowser/builtin/checkout.c' l='776' u='c' c='suggest_reattach'/>
+<use f='codebrowser/builtin/describe.c' l='274' u='c' c='show_suffix'/>
+<use f='codebrowser/builtin/describe.c' l='378' u='c' c='describe'/>
+<use f='codebrowser/builtin/log.c' l='1865' u='c' c='print_commit'/>
+<use f='codebrowser/builtin/log.c' l='1870' u='c' c='print_commit'/>
+<use f='codebrowser/builtin/ls-files.c' l='242' u='c' c='show_ce'/>
+<use f='codebrowser/builtin/ls-files.c' l='273' u='c' c='show_ru_info'/>
+<use f='codebrowser/builtin/ls-tree.c' l='106' u='c' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='110' u='c' c='show_tree'/>
+<use f='codebrowser/builtin/merge.c' l='1363' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1365' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/name-rev.c' l='331' u='c' c='show_name'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1243' u='c' c='check_aliased_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1244' u='c' c='check_aliased_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1246' u='c' c='check_aliased_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1247' u='c' c='check_aliased_update'/>
+<use f='codebrowser/builtin/reset.c' l='102' u='c' c='print_new_head_line'/>
+<use f='codebrowser/builtin/rev-list.c' l='92' u='c' c='show_commit'/>
+<use f='codebrowser/builtin/rev-parse.c' l='162' u='c' c='show_rev'/>
+<use f='codebrowser/builtin/show-branch.c' l='295' u='c' c='show_one_commit'/>
+<use f='codebrowser/builtin/show-ref.c' l='32' u='c' c='show_one'/>
+<use f='codebrowser/builtin/show-ref.c' l='42' u='c' c='show_one'/>
+<use f='codebrowser/builtin/tag.c' l='102' u='c' c='delete_tag'/>
+<use f='codebrowser/builtin/tag.c' l='553' u='c' c='cmd_tag'/>
+<use f='codebrowser/builtin/worktree.c' l='413' u='c' c='show_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='438' u='c' c='measure_widths'/>
+<use f='codebrowser/combine-diff.c' l='918' u='c' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='922' u='c' c='show_combined_header'/>
+<use f='codebrowser/diff.c' l='3108' u='c' c='diff_abbrev_oid'/>
+<use f='codebrowser/log-tree.c' l='168' u='c' c='show_parents'/>
+<use f='codebrowser/log-tree.c' l='176' u='c' c='show_children'/>
+<use f='codebrowser/log-tree.c' l='550' u='c' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='612' u='c' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='620' u='c' c='show_log'/>
+<use f='codebrowser/ref-filter.c' l='712' u='c' c='grab_objectname'/>
+<use f='codebrowser/ref-filter.c' l='718' u='c' c='grab_objectname'/>
+<use f='codebrowser/sequencer.c' l='235' u='c' c='short_commit_name'/>
+<use f='codebrowser/sha1_name.c' l='380' u='c' c='show_ambiguous_object'/>
+<def f='codebrowser/sha1_name.c' l='520' ll='528' type='const char * find_unique_abbrev(const unsigned char * sha1, int len)'/>
+<use f='codebrowser/tag.c' l='49' u='c' c='gpg_verify_tag'/>
+<use f='codebrowser/tag.c' l='57' u='c' c='gpg_verify_tag'/>
+<use f='codebrowser/wt-status.c' l='1325' u='c' c='show_cherry_pick_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1344' u='c' c='show_revert_in_progress'/>
+<use f='codebrowser/wt-status.c' l='1464' u='c' c='wt_status_get_detached_from'/>

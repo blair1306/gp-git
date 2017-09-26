@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1419' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/date.c' l='258' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='849' u='w' c='parse_date_format'/>

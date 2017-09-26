@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='224' type='int cmd_symbolic_ref(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/symbolic-ref.c' l='35' ll='79' type='int cmd_symbolic_ref(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='468'/>
+<use f='codebrowser/git.c' l='468'/>
+<use f='codebrowser/git.c' l='468'/>
+<use f='codebrowser/git.c' l='468'/>

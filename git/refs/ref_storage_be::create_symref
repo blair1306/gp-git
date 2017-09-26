@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs/refs-internal.h' l='650' type='create_symref_fn *'/>
+<use f='codebrowser/refs.c' l='1729' u='r' c='refs_create_symref'/>
+<offset>640</offset>

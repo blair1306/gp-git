@@ -1,0 +1,3 @@
+<dec f='codebrowser/bundle.h' l='19' type='int is_bundle(const char * path, int quiet)'/>
+<def f='codebrowser/bundle.c' l='92' ll='104' type='int is_bundle(const char * path, int quiet)'/>
+<use f='codebrowser/transport.c' l='789' u='c' c='transport_get'/>

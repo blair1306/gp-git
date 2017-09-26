@@ -1,0 +1,7 @@
+<def f='codebrowser/lockfile.h' l='291' ll='294' type='int commit_lock_file_to(struct lock_file * lk, const char * path)'/>
+<doc f='codebrowser/lockfile.h' l='287'>/*
+ * Like `commit_lock_file()`, but rename the lockfile to the provided
+ * `path`. `path` must be on the same filesystem as the lock file.
+ */</doc>
+<use f='codebrowser/lockfile.c' l='207' u='c' c='commit_lock_file'/>
+<use f='codebrowser/read-cache.c' l='2323' u='c' c='commit_locked_index'/>

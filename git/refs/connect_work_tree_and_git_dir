@@ -1,0 +1,10 @@
+<dec f='codebrowser/dir.h' l='356' type='void connect_work_tree_and_git_dir(const char * work_tree, const char * git_dir)'/>
+<dec f='codebrowser/submodule.h' l='115' type='void connect_work_tree_and_git_dir(const char * work_tree, const char * git_dir)'/>
+<use f='codebrowser/builtin/mv.c' l='280' u='c' c='cmd_mv'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='695' u='c' c='module_clone'/>
+<def f='codebrowser/dir.c' l='2840' ll='2872' type='void connect_work_tree_and_git_dir(const char * work_tree_, const char * git_dir_)'/>
+<use f='codebrowser/dir.c' l='2883' u='c' c='relocate_gitdir'/>
+<doc f='codebrowser/dir.c' l='2839'>/* Update gitfile and core.worktree setting to connect work tree and git dir */</doc>
+<use f='codebrowser/submodule.c' l='1586' u='c' c='submodule_move_head'/>
+<use f='codebrowser/submodule.c' l='1596' u='c' c='submodule_move_head'/>
+<use f='codebrowser/submodule.c' l='1903' u='c' c='absorb_git_dir_into_superproject'/>

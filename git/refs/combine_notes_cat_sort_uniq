@@ -1,0 +1,4 @@
+<dec f='codebrowser/notes.h' l='32' type='int combine_notes_cat_sort_uniq(unsigned char * cur_sha1, const unsigned char * new_sha1)'/>
+<use f='codebrowser/notes-merge.c' l='461' u='r' c='merge_one_change'/>
+<use f='codebrowser/notes-utils.c' l='85' u='r' c='parse_combine_notes_fn'/>
+<def f='codebrowser/notes.c' l='905' ll='932' type='int combine_notes_cat_sort_uniq(unsigned char * cur_sha1, const unsigned char * new_sha1)'/>

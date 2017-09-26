@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='171' type='const struct string_list * repo_config_get_value_multi(struct repository * repo, const char * key)'/>
+<def f='codebrowser/config.c' l='1935' ll='1940' type='const struct string_list * repo_config_get_value_multi(struct repository * repo, const char * key)'/>
+<use f='codebrowser/config.c' l='2024' u='c' c='git_config_get_value_multi'/>
+<use f='codebrowser/submodule.c' l='299' u='c' c='is_submodule_active'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/dir.h' l='140' type='int'/>
+<offset>1408</offset>
+<use f='codebrowser/dir.c' l='735' u='w' c='invalidate_directory'/>
+<use f='codebrowser/dir.c' l='2146' u='r' c='read_directory'/>
+<use f='codebrowser/dir.c' l='2151' u='r' c='read_directory'/>
+<use f='codebrowser/dir.c' l='2767' u='w' c='invalidate_one_directory'/>

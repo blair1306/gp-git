@@ -1,0 +1,2 @@
+<def f='codebrowser/commit.c' l='587' macro='1' type='void clear_indegree_slab(struct indegree_slab * s)'/>
+<use f='codebrowser/commit.c' l='753' u='c' c='sort_in_topological_order'/>

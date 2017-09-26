@@ -1,0 +1,14 @@
+<dec f='include/expat.h' l='667' type='void XML_SetReturnNSTriplet(XML_Parser parser, int do_nst)'/>
+<doc f='include/expat.h' l='652'>/* If do_nst is non-zero, and namespace processing is in effect, and
+   a name has a prefix (i.e. an explicit namespace qualifier) then
+   that name is returned as a triplet in a single string separated by
+   the separator character specified when the parser was created: URI
+   + sep + local_name + sep + prefix.
+
+   If do_nst is zero, then namespace information is returned in the
+   default manner (URI + sep + local_name) whether or not the name
+   has a prefix.
+
+   Note: Calling XML_SetReturnNSTriplet after XML_Parse or
+     XML_ParseBuffer has no effect.
+*/</doc>

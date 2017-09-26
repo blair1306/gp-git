@@ -1,0 +1,8 @@
+<dec f='codebrowser/notes.h' l='287' type='struct notes_tree ** load_notes_trees(struct string_list * refs, int flags)'/>
+<doc f='codebrowser/notes.h' l='283'>/*
+ * Load the notes tree from each ref listed in &apos;refs&apos;.  The output is
+ * an array of notes_tree*, terminated by a NULL.
+ */</doc>
+<use f='codebrowser/notes-utils.c' l='155' u='c' c='init_copy_notes_for_rewrite'/>
+<def f='codebrowser/notes.c' l='1042' ll='1055' type='struct notes_tree ** load_notes_trees(struct string_list * refs, int flags)'/>
+<use f='codebrowser/notes.c' l='1086' u='c' c='init_display_notes'/>

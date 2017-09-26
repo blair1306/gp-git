@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='688' type='int index_path(unsigned char * sha1, const char * path, struct stat * st, unsigned int flags)'/>
+<use f='codebrowser/builtin/update-index.c' l='283' u='c' c='add_one_path'/>
+<use f='codebrowser/diff.c' l='3244' u='c' c='diff_fill_oid_info'/>
+<use f='codebrowser/notes-merge.c' l='712' u='c' c='notes_merge_commit'/>
+<use f='codebrowser/read-cache.c' l='692' u='c' c='add_to_index'/>
+<def f='codebrowser/sha1_file.c' l='3655' ll='3685' type='int index_path(unsigned char * sha1, const char * path, struct stat * st, unsigned int flags)'/>

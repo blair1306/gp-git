@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='150' type='int cmd_column(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/column.c' l='20' ll='60' type='int cmd_column(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='385'/>
+<use f='codebrowser/git.c' l='385'/>
+<use f='codebrowser/git.c' l='385'/>
+<use f='codebrowser/git.c' l='385'/>

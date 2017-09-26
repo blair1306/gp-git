@@ -1,0 +1,12 @@
+<dec f='codebrowser/mailinfo.h' l='18' type='const char *'/>
+<use f='codebrowser/builtin/am.c' l='1226' u='w' c='parse_mail'/>
+<use f='codebrowser/builtin/am.c' l='1228' u='w' c='parse_mail'/>
+<offset>768</offset>
+<use f='codebrowser/builtin/mailinfo.c' l='24' u='w' c='cmd_mailinfo'/>
+<use f='codebrowser/builtin/mailinfo.c' l='34' u='w' c='cmd_mailinfo'/>
+<use f='codebrowser/builtin/mailinfo.c' l='36' u='w' c='cmd_mailinfo'/>
+<use f='codebrowser/builtin/mailinfo.c' l='38' u='w' c='cmd_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='431' u='r' c='convert_to_utf8'/>
+<use f='codebrowser/mailinfo.c' l='434' u='r' c='convert_to_utf8'/>
+<use f='codebrowser/mailinfo.c' l='436' u='r' c='convert_to_utf8'/>
+<use f='codebrowser/mailinfo.c' l='440' u='r' c='convert_to_utf8'/>

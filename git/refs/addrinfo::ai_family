@@ -1,0 +1,12 @@
+<dec f='include/netdb.h' l='570' type='int'/>
+<offset>32</offset>
+<doc f='include/netdb.h' l='570'>/* Protocol family for socket.  */</doc>
+<use f='codebrowser/connect.c' l='382' u='w' c='git_tcp_connect_sock'/>
+<use f='codebrowser/connect.c' l='384' u='w' c='git_tcp_connect_sock'/>
+<use f='codebrowser/connect.c' l='399' u='r' c='git_tcp_connect_sock'/>
+<use f='codebrowser/daemon.c' l='937' u='w' c='setup_named_sock'/>
+<use f='codebrowser/daemon.c' l='951' u='r' c='setup_named_sock'/>
+<use f='codebrowser/daemon.c' l='961' u='r' c='setup_named_sock'/>
+<use f='codebrowser/daemon.c' l='979' u='r' c='setup_named_sock'/>
+<use f='codebrowser/daemon.c' l='986' u='r' c='setup_named_sock'/>
+<use f='codebrowser/imap-send.c' l='984' u='r' c='imap_open_store'/>

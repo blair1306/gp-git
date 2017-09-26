@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='214' type='int cmd_rev_parse(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/rev-parse.c' l='569' ll='941' type='int cmd_rev_parse(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='456'/>
+<use f='codebrowser/git.c' l='456'/>
+<use f='codebrowser/git.c' l='456'/>
+<use f='codebrowser/git.c' l='456'/>

@@ -1,0 +1,11 @@
+<dec f='include/utime.h' l='40' type='__time_t'/>
+<offset>64</offset>
+<doc f='include/utime.h' l='40'>/* Modification time.  */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='857' u='w' c='write_pack_file'/>
+<use f='codebrowser/copy.c' l='25' u='w' c='copy_times'/>
+<use f='codebrowser/sha1_file.c' l='655' u='w' c='freshen_file'/>
+<use f='codebrowser/sha1_file.c' l='3365' u='w' c='write_loose_object'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='100' u='w' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='103' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='103' u='r' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='107' u='r' c='cmd_main'/>

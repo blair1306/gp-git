@@ -1,0 +1,2 @@
+<dec f='include/expat.h' l='994' type='const XML_LChar * XML_ExpatVersion()'/>
+<doc f='include/expat.h' l='992'>/* Return a string containing the version number of this expat */</doc>

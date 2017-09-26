@@ -1,0 +1,18 @@
+<dec f='codebrowser/graph.h' l='80' type='int graph_next_line(struct git_graph * graph, struct strbuf * sb)'/>
+<doc f='codebrowser/graph.h' l='68'>/*
+ * Output the next line for a graph.
+ * This formats the next graph line into the specified strbuf.  It is not
+ * terminated with a newline.
+ *
+ * Returns 1 if the line includes the current commit, and 0 otherwise.
+ * graph_next_line() will return 1 exactly once for each time
+ * graph_update() is called.
+ *
+ * NOTE: This function isn&apos;t used in Git outside graph.c but it is used
+ * by CGit (http://git.zx2c4.com/cgit/) to wrap HTML around graph lines.
+ */</doc>
+<def f='codebrowser/graph.c' l='1176' ll='1201' type='int graph_next_line(struct git_graph * graph, struct strbuf * sb)'/>
+<use f='codebrowser/graph.c' l='1209' u='c' c='graph_padding_line'/>
+<use f='codebrowser/graph.c' l='1270' u='c' c='graph_show_commit'/>
+<use f='codebrowser/graph.c' l='1292' u='c' c='graph_show_oneline'/>
+<use f='codebrowser/graph.c' l='1325' u='c' c='graph_show_remainder'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/strbuf.h' l='615' type='char * xstrvfmt(const char * fmt, struct __va_list_tag * ap)'/>
+<doc f='codebrowser/strbuf.h' l='610'>/**
+ * Create a newly allocated string using printf format. You can do this easily
+ * with a strbuf, but this provides a shortcut to save a few lines.
+ */</doc>
+<def f='codebrowser/strbuf.c' l='763' ll='768' type='char * xstrvfmt(const char * fmt, struct __va_list_tag * ap)'/>
+<use f='codebrowser/strbuf.c' l='776' u='c' c='xstrfmt'/>

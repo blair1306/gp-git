@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='145'/>
+<doc f='codebrowser/cache.h' l='141'>/*
+ * Basic data structures for the directory cache
+ */</doc>
+<use f='codebrowser/read-cache.c' l='1518' u='c'/>
+<use f='codebrowser/read-cache.c' l='2226' u='c'/>

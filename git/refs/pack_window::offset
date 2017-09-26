@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1581' type='off_t'/>
+<offset>128</offset>
+<use f='codebrowser/sha1_file.c' l='1224' u='r' c='in_window'/>
+<use f='codebrowser/sha1_file.c' l='1263' u='w' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1264' u='r' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1274' u='r' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1278' u='r' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1296' u='r' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='2826' u='r' c='is_pack_valid'/>

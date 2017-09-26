@@ -1,0 +1,15 @@
+<dec f='codebrowser/strbuf.h' l='457' type='void strbuf_add_real_path(struct strbuf * sb, const char * path)'/>
+<doc f='codebrowser/strbuf.h' l='445'>/**
+ * Canonize `path` (make it absolute, resolve symlinks, remove extra
+ * slashes) and append it to `sb`.  Die with an informative error
+ * message if there is a problem.
+ *
+ * The directory part of `path` (i.e., everything up to the last
+ * dir_sep) must denote a valid, existing directory, but the last
+ * component need not exist.
+ *
+ * Callers that don&apos;t mind links should use the more lightweight
+ * strbuf_add_absolute_path() instead.
+ */</doc>
+<use f='codebrowser/setup.c' l='286' u='c' c='get_common_dir_noenv'/>
+<def f='codebrowser/strbuf.c' l='715' ll='724' type='void strbuf_add_real_path(struct strbuf * sb, const char * path)'/>

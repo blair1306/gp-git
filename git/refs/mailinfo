@@ -1,0 +1,30 @@
+<def f='codebrowser/mailinfo.h' l='6' ll='36'/>
+<dec f='codebrowser/mailinfo.h' l='39' type='int mailinfo(struct mailinfo * , const char * msg, const char * patch)'/>
+<use f='codebrowser/builtin/am.c' l='1261' u='c' c='parse_mail'/>
+<size>272</size>
+<mbr r='mailinfo::input' o='0' t='FILE *'/>
+<mbr r='mailinfo::output' o='64' t='FILE *'/>
+<mbr r='mailinfo::patchfile' o='128' t='FILE *'/>
+<mbr r='mailinfo::name' o='192' t='struct strbuf'/>
+<mbr r='mailinfo::email' o='384' t='struct strbuf'/>
+<mbr r='mailinfo::keep_subject' o='576' t='int'/>
+<mbr r='mailinfo::keep_non_patch_brackets_in_subject' o='608' t='int'/>
+<mbr r='mailinfo::add_message_id' o='640' t='int'/>
+<mbr r='mailinfo::use_scissors' o='672' t='int'/>
+<mbr r='mailinfo::use_inbody_headers' o='704' t='int'/>
+<mbr r='mailinfo::metainfo_charset' o='768' t='const char *'/>
+<mbr r='mailinfo::content' o='832' t='struct strbuf *[5]'/>
+<mbr r='mailinfo::content_top' o='1152' t='struct strbuf **'/>
+<mbr r='mailinfo::charset' o='1216' t='struct strbuf'/>
+<mbr r='mailinfo::message_id' o='1408' t='char *'/>
+<mbr r='mailinfo::transfer_encoding' o='1472' t='enum (anonymous enum at /home/jon/workspace/git/mailinfo.h:24:2)'/>
+<mbr r='mailinfo::patch_lines' o='1504' t='int'/>
+<mbr r='mailinfo::filter_stage' o='1536' t='int'/>
+<mbr r='mailinfo::header_stage' o='1568' t='int'/>
+<mbr r='mailinfo::inbody_header_accum' o='1600' t='struct strbuf'/>
+<mbr r='mailinfo::p_hdr_data' o='1792' t='struct strbuf **'/>
+<mbr r='mailinfo::s_hdr_data' o='1856' t='struct strbuf **'/>
+<mbr r='mailinfo::log_message' o='1920' t='struct strbuf'/>
+<mbr r='mailinfo::input_error' o='2112' t='int'/>
+<use f='codebrowser/builtin/mailinfo.c' l='59' u='c' c='cmd_mailinfo'/>
+<def f='codebrowser/mailinfo.c' l='1082' ll='1124' type='int mailinfo(struct mailinfo * mi, const char * msg, const char * patch)'/>

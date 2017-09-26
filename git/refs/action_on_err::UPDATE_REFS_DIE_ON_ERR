@@ -1,0 +1,22 @@
+<dec f='codebrowser/refs.h' l='454' type='1'/>
+<use f='codebrowser/bisect.c' l='688' u='r' c='bisect_checkout'/>
+<use f='codebrowser/bisect.c' l='692' u='r' c='bisect_checkout'/>
+<use f='codebrowser/builtin/am.c' l='1062' u='r' c='am_setup'/>
+<use f='codebrowser/builtin/am.c' l='1680' u='r' c='do_commit'/>
+<use f='codebrowser/builtin/am.c' l='2141' u='r' c='am_abort'/>
+<use f='codebrowser/builtin/checkout.c' l='667' u='r' c='update_refs_for_switch'/>
+<use f='codebrowser/builtin/clone.c' l='613' u='r' c='write_followtags'/>
+<use f='codebrowser/builtin/clone.c' l='685' u='r' c='update_head'/>
+<use f='codebrowser/builtin/clone.c' l='692' u='r' c='update_head'/>
+<use f='codebrowser/builtin/clone.c' l='700' u='r' c='update_head'/>
+<use f='codebrowser/builtin/merge.c' l='403' u='r' c='finish'/>
+<use f='codebrowser/builtin/merge.c' l='1242' u='r' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1338' u='r' c='cmd_merge'/>
+<use f='codebrowser/builtin/notes.c' l='740' u='r' c='merge_commit'/>
+<use f='codebrowser/builtin/notes.c' l='853' u='r' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='858' u='r' c='merge'/>
+<use f='codebrowser/builtin/pull.c' l='543' u='r' c='pull_into_void'/>
+<use f='codebrowser/builtin/update-ref.c' l='442' u='r' c='cmd_update_ref'/>
+<use f='codebrowser/notes-utils.c' l='53' u='r' c='commit_notes'/>
+<use f='codebrowser/refs.c' l='1024' c='refs_update_ref'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='245' u='r' c='cmd_update_ref'/>

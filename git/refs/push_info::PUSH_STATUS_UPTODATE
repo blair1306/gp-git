@@ -1,0 +1,3 @@
+<dec f='codebrowser/builtin/remote.c' l='372' type='2'/>
+<use f='codebrowser/builtin/remote.c' l='412' u='r' c='get_push_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='1025' c='show_push_info_item'/>

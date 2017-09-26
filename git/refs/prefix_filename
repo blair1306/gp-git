@@ -1,0 +1,31 @@
+<dec f='codebrowser/cache.h' l='556' type='char * prefix_filename(const char * prefix, const char * path)'/>
+<def f='codebrowser/abspath.c' l='249' ll='266' type='char * prefix_filename(const char * pfx, const char * arg)'/>
+<doc f='codebrowser/cache.h' l='546'>/*
+ * Concatenate &quot;prefix&quot; (if len is non-zero) and &quot;path&quot;, with no
+ * connecting characters (so &quot;prefix&quot; should end with a &quot;/&quot;).
+ * Unlike prefix_path, this should be used if the named file does
+ * not have to interact with index entry; i.e. name of a random file
+ * on the filesystem.
+ *
+ * The return value is always a newly allocated string (even if the
+ * prefix was empty).
+ */</doc>
+<use f='codebrowser/apply.c' l='2059' u='c' c='prefix_one'/>
+<use f='codebrowser/apply.c' l='4824' u='c' c='apply_all_patches'/>
+<use f='codebrowser/builtin/bundle.c' l='28' u='c' c='cmd_bundle'/>
+<use f='codebrowser/builtin/config.c' l='533' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/hash-object.c' l='117' u='c' c='cmd_hash_object'/>
+<use f='codebrowser/builtin/hash-object.c' l='149' u='c' c='cmd_hash_object'/>
+<use f='codebrowser/builtin/log.c' l='1108' u='c' c='set_outdir'/>
+<use f='codebrowser/builtin/mailinfo.c' l='56' u='c' c='cmd_mailinfo'/>
+<use f='codebrowser/builtin/mailinfo.c' l='57' u='c' c='cmd_mailinfo'/>
+<use f='codebrowser/builtin/merge-file.c' l='75' u='c' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/merge-file.c' l='97' u='c' c='cmd_merge_file'/>
+<use f='codebrowser/builtin/rev-parse.c' l='233' u='c' c='show_file'/>
+<use f='codebrowser/builtin/worktree.c' l='346' u='c' c='add'/>
+<use f='codebrowser/diff-no-index.c' l='269' u='c' c='diff_no_index'/>
+<use f='codebrowser/diff.c' l='4017' u='c' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='4064' u='c' c='diff_opt_parse'/>
+<use f='codebrowser/parse-options.c' l='44' u='c' c='fix_filename'/>
+<use f='codebrowser/setup.c' l='153' u='c' c='check_filename'/>
+<use f='codebrowser/worktree.c' l='219' u='c' c='find_worktree'/>

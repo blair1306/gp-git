@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='611' type='int index_dir_exists(struct index_state * istate, const char * name, int namelen)'/>
+<use f='codebrowser/dir.c' l='1297' u='c' c='directory_exists_in_index_icase'/>
+<def f='codebrowser/name-hash.c' l='671' ll='678' type='int index_dir_exists(struct index_state * istate, const char * name, int namelen)'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/hashmap.h' l='145' type='struct hashmap_entry *'/>
+<use f='codebrowser/hashmap.h' l='252' u='w' c='hashmap_entry_init'/>
+<offset>0</offset>
+<doc f='codebrowser/hashmap.h' l='141'>/*
+	 * next points to the next entry in case of collisions (i.e. if
+	 * multiple entries map to the same bucket)
+	 */</doc>
+<use f='codebrowser/hashmap.c' l='126' u='r' c='rehash'/>
+<use f='codebrowser/hashmap.c' l='128' u='w' c='rehash'/>
+<use f='codebrowser/hashmap.c' l='141' u='a' c='find_entry_ptr'/>
+<use f='codebrowser/hashmap.c' l='193' u='r' c='hashmap_get_next'/>
+<use f='codebrowser/hashmap.c' l='194' u='r' c='hashmap_get_next'/>
+<use f='codebrowser/hashmap.c' l='205' u='w' c='hashmap_add'/>
+<use f='codebrowser/hashmap.c' l='223' u='r' c='hashmap_remove'/>
+<use f='codebrowser/hashmap.c' l='224' u='w' c='hashmap_remove'/>
+<use f='codebrowser/hashmap.c' l='252' u='r' c='hashmap_iter_next'/>

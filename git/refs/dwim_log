@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs.h' l='143' type='int dwim_log(const char * str, int len, unsigned char * sha1, char ** ref)'/>
+<use f='codebrowser/builtin/reflog.c' l='605' u='c' c='cmd_reflog_expire'/>
+<use f='codebrowser/builtin/reflog.c' l='671' u='c' c='cmd_reflog_delete'/>
+<use f='codebrowser/reflog-walk.c' l='165' u='c' c='add_reflog_for_walk'/>
+<def f='codebrowser/refs.c' l='519' ll='553' type='int dwim_log(const char * str, int len, unsigned char * sha1, char ** log)'/>
+<use f='codebrowser/sha1_name.c' l='658' u='c' c='get_oid_basic'/>

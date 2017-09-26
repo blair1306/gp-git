@@ -1,0 +1,3 @@
+<def f='codebrowser/tempfile.h' l='197' ll='201' type='int xmks_tempfile(struct tempfile * tempfile, const char * template)'/>
+<doc f='codebrowser/tempfile.h' l='196'>/* See &quot;mks_tempfile functions&quot; above. */</doc>
+<use f='codebrowser/shallow.c' l='297' u='c' c='setup_temporary_shallow'/>

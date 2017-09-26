@@ -1,0 +1,10 @@
+<dec f='codebrowser/refs.h' l='462' type='struct ref_transaction * ref_store_transaction_begin(struct ref_store * refs, struct strbuf * err)'/>
+<doc f='codebrowser/refs.h' l='458'>/*
+ * Begin a reference transaction.  The reference transaction must
+ * be freed by calling ref_transaction_free().
+ */</doc>
+<use f='codebrowser/refs.c' l='671' u='c' c='refs_delete_ref'/>
+<def f='codebrowser/refs.c' l='852' ll='861' type='struct ref_transaction * ref_store_transaction_begin(struct ref_store * refs, struct strbuf * err)'/>
+<use f='codebrowser/refs.c' l='865' u='c' c='ref_transaction_begin'/>
+<use f='codebrowser/refs.c' l='1008' u='c' c='refs_update_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1042' u='c' c='prune_ref'/>

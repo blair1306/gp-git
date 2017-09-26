@@ -1,0 +1,12 @@
+<dec f='codebrowser/gpg-interface.h' l='30' type='int verify_signed_buffer(const char * payload, size_t payload_size, const char * signature, size_t signature_size, struct strbuf * gpg_output, struct strbuf * gpg_status)'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='499' u='c' c='fmt_merge_msg_sigs'/>
+<use f='codebrowser/builtin/receive-pack.c' l='641' u='c' c='prepare_push_cert_sha1'/>
+<use f='codebrowser/gpg-interface.c' l='76' u='c' c='check_signature'/>
+<def f='codebrowser/gpg-interface.c' l='200' ll='241' type='int verify_signed_buffer(const char * payload, size_t payload_size, const char * signature, size_t signature_size, struct strbuf * gpg_output, struct strbuf * gpg_status)'/>
+<doc f='codebrowser/gpg-interface.c' l='195'>/*
+ * Run &quot;gpg&quot; to see if the payload matches the detached signature.
+ * gpg_output, when set, receives the diagnostic output from GPG.
+ * gpg_status, when set, receives the status output from GPG.
+ */</doc>
+<use f='codebrowser/log-tree.c' l='446' u='c' c='show_signature'/>
+<use f='codebrowser/log-tree.c' l='516' u='c' c='show_one_mergetag'/>

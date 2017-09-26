@@ -1,0 +1,5 @@
+<dec f='codebrowser/fetch-pack.c' l='232' type='1'/>
+<use f='codebrowser/fetch-pack.c' l='271' u='r' c='get_ack'/>
+<use f='codebrowser/fetch-pack.c' l='278' u='r' c='get_ack'/>
+<use f='codebrowser/fetch-pack.c' l='479' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='547' u='r' c='find_common'/>

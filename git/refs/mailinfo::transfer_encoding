@@ -1,0 +1,8 @@
+<dec f='codebrowser/mailinfo.h' l='26' type='enum (anonymous enum at /home/jon/workspace/git/mailinfo.h:24:2)'/>
+<offset>1472</offset>
+<use f='codebrowser/mailinfo.c' l='269' u='w' c='handle_content_transfer_encoding'/>
+<use f='codebrowser/mailinfo.c' l='271' u='w' c='handle_content_transfer_encoding'/>
+<use f='codebrowser/mailinfo.c' l='273' u='w' c='handle_content_transfer_encoding'/>
+<use f='codebrowser/mailinfo.c' l='605' u='r' c='decode_transfer_encoding'/>
+<use f='codebrowser/mailinfo.c' l='946' u='w' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='986' u='r' c='handle_body'/>

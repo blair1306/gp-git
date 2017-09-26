@@ -1,0 +1,22 @@
+<dec f='codebrowser/apply.h' l='106' type='enum apply_ws_error_action'/>
+<use f='codebrowser/apply.c' l='34' u='w' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='38' u='w' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='42' u='w' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='46' u='w' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='50' u='w' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='55' u='w' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='90' u='w' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='165' u='w' c='set_default_whitespace_mode'/>
+<use f='codebrowser/apply.c' l='1715' u='r' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='1720' u='r' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='1728' u='r' c='parse_fragment'/>
+<use f='codebrowser/apply.c' l='2471' u='r' c='match_fragment'/>
+<use f='codebrowser/apply.c' l='2543' u='r' c='match_fragment'/>
+<use f='codebrowser/apply.c' l='2910' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='3024' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='3027' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='3038' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='4677' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4860' u='r' c='apply_all_patches'/>
+<offset>2304</offset>
+<doc f='codebrowser/apply.h' l='105'>/* These control whitespace errors */</doc>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack-bitmap.h' l='11' type='uint16_t'/>
+<offset>48</offset>
+<use f='codebrowser/pack-bitmap-write.c' l='526' u='w' c='bitmap_writer_finish'/>
+<use f='codebrowser/pack-bitmap.c' l='150' u='r' c='load_bitmap_header'/>

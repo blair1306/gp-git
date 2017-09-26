@@ -1,0 +1,24 @@
+<dec f='codebrowser/git-compat-util.h' l='959'/>
+<use f='codebrowser/builtin/config.c' l='211' u='c'/>
+<use f='codebrowser/builtin/config.c' l='213' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='92' u='c'/>
+<use f='codebrowser/config.c' l='378' u='c'/>
+<use f='codebrowser/config.c' l='579' u='c'/>
+<use f='codebrowser/config.c' l='653' u='c'/>
+<use f='codebrowser/config.c' l='714' u='c'/>
+<use f='codebrowser/fsck.c' l='103' u='c'/>
+<use f='codebrowser/fsck.c' l='233' u='c'/>
+<use f='codebrowser/fsck.c' l='261' u='c'/>
+<use f='codebrowser/http.c' l='1512' u='c'/>
+<use f='codebrowser/mailinfo.c' l='500' u='c'/>
+<use f='codebrowser/path.c' l='899' u='c'/>
+<use f='codebrowser/path.c' l='899' u='c'/>
+<use f='codebrowser/strbuf.c' l='114' u='c'/>
+<use f='codebrowser/strbuf.c' l='758' u='c'/>
+<use f='codebrowser/urlmatch.c' l='172' u='c'/>
+<use f='codebrowser/urlmatch.c' l='253' u='c'/>
+<use f='codebrowser/wildmatch.c' l='66' u='c'/>
+<use f='codebrowser/wildmatch.c' l='68' u='c'/>
+<use f='codebrowser/wildmatch.c' l='147' u='c'/>
+<use f='codebrowser/wildmatch.c' l='151' u='c'/>
+<dec f='include/ctype.h' l='228'/>

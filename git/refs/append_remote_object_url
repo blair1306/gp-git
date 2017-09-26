@@ -1,0 +1,6 @@
+<dec f='codebrowser/http.h' l='140' type='void append_remote_object_url(struct strbuf * buf, const char * url, const char * hex, int only_two_digit_prefix)'/>
+<doc f='codebrowser/http.h' l='139'>/* Helpers for modifying and creating URLs */</doc>
+<use f='codebrowser/http-push.c' l='393' u='c' c='start_put'/>
+<use f='codebrowser/http-push.c' l='396' u='c' c='start_put'/>
+<def f='codebrowser/http.c' l='1342' ll='1351' type='void append_remote_object_url(struct strbuf * buf, const char * url, const char * hex, int only_two_digit_prefix)'/>
+<use f='codebrowser/http.c' l='1357' u='c' c='get_remote_object_url'/>

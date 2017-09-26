@@ -1,0 +1,34 @@
+<dec f='codebrowser/strbuf.h' l='232' type='void strbuf_splice(struct strbuf * , size_t pos, size_t len, const void * , size_t )'/>
+<doc f='codebrowser/strbuf.h' l='228'>/**
+ * Remove the bytes between `pos..pos+len` and replace it with the given
+ * data.
+ */</doc>
+<use f='codebrowser/apply.c' l='2241' u='c' c='show_stats'/>
+<use f='codebrowser/builtin/checkout.c' l='464' u='c' c='setup_branch_path'/>
+<use f='codebrowser/builtin/fetch.c' l='570' u='c' c='find_and_replace'/>
+<use f='codebrowser/builtin/remote.c' l='655' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='705' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='720' u='c' c='mv'/>
+<use f='codebrowser/builtin/remote.c' l='724' u='c' c='mv'/>
+<use f='codebrowser/builtin/replace.c' l='337' u='c' c='replace_parents'/>
+<use f='codebrowser/config.c' l='194' u='c' c='prepare_include_condition_pattern'/>
+<use f='codebrowser/path.c' l='94' u='c' c='replace_dir'/>
+<use f='codebrowser/path.c' l='379' u='c' c='adjust_git_path'/>
+<use f='codebrowser/path.c' l='382' u='c' c='adjust_git_path'/>
+<use f='codebrowser/pretty.c' l='591' u='c' c='replace_encoding_header'/>
+<use f='codebrowser/read-cache.c' l='2108' u='c' c='ce_write_entry'/>
+<use f='codebrowser/refs/files-backend.c' l='1918' u='c' c='files_for_each_reflog_ent_reverse'/>
+<use f='codebrowser/refs/files-backend.c' l='1932' u='c' c='files_for_each_reflog_ent_reverse'/>
+<use f='codebrowser/refs/files-backend.c' l='1951' u='c' c='files_for_each_reflog_ent_reverse'/>
+<use f='codebrowser/revision.c' l='2886' u='c' c='commit_rewrite_person'/>
+<use f='codebrowser/sequencer.c' l='579' u='c' c='read_env_script'/>
+<use f='codebrowser/sequencer.c' l='581' u='c' c='read_env_script'/>
+<use f='codebrowser/sequencer.c' l='838' u='c' c='update_squash_messages'/>
+<use f='codebrowser/sequencer.c' l='2425' u='c' c='append_signoff'/>
+<use f='codebrowser/sequencer.c' l='2430' u='c' c='append_signoff'/>
+<use f='codebrowser/sha1_name.c' l='1336' u='c' c='strbuf_check_branch_ref'/>
+<def f='codebrowser/strbuf.c' l='164' ll='181' type='void strbuf_splice(struct strbuf * sb, size_t pos, size_t len, const void * data, size_t dlen)'/>
+<use f='codebrowser/strbuf.c' l='185' u='c' c='strbuf_insert'/>
+<use f='codebrowser/strbuf.c' l='190' u='c' c='strbuf_remove'/>
+<use f='codebrowser/trailer.c' l='120' u='c' c='strbuf_replace'/>
+<use f='codebrowser/tree-walk.c' l='741' u='c' c='get_tree_entry_follow_symlinks'/>

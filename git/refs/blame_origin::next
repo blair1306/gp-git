@@ -1,0 +1,32 @@
+<dec f='codebrowser/blame.h' l='43' type='struct blame_origin *'/>
+<use f='codebrowser/blame.c' l='18' u='r' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='21' u='w' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='21' u='r' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='23' u='r' c='blame_origin_decref'/>
+<use f='codebrowser/blame.c' l='44' u='w' c='make_origin'/>
+<use f='codebrowser/blame.c' l='57' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='61' u='w' c='get_origin'/>
+<use f='codebrowser/blame.c' l='61' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='62' u='w' c='get_origin'/>
+<use f='codebrowser/blame.c' l='481' u='r' c='queue_blames'/>
+<use f='codebrowser/blame.c' l='530' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='1558' u='r' c='assign_blame'/>
+<offset>128</offset>
+<doc f='codebrowser/blame.h' l='26'>/* origins are put in a list linked via `next&apos; hanging off the
+	 * corresponding commit&apos;s util field in order to make finding
+	 * them fast.  The presence in this chain does not count
+	 * towards the origin&apos;s reference count.  It is tempting to
+	 * let it count as long as the commit is pending examination,
+	 * but even under circumstances where the commit will be
+	 * present multiple times in the priority queue of unexamined
+	 * commits, processing the first instance will not leave any
+	 * work requiring the origin data for the second instance.  An
+	 * interspersed commit changing that would have to be
+	 * preexisting with a different ancestry and with the same
+	 * commit date in order to wedge itself between two instances
+	 * of the same commit in the priority queue _and_ produce
+	 * blame entries relevant for it.  While we don&apos;t want to let
+	 * us get tripped up by this case, it certainly does not seem
+	 * worth optimizing for.
+	 */</doc>
+<use f='codebrowser/builtin/blame.c' l='460' u='r' c='output'/>

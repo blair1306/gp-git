@@ -1,0 +1,9 @@
+<def f='codebrowser/notes-utils.h' l='30' ll='38'/>
+<size>48</size>
+<mbr r='notes_rewrite_cfg::trees' o='0' t='struct notes_tree **'/>
+<mbr r='notes_rewrite_cfg::cmd' o='64' t='const char *'/>
+<mbr r='notes_rewrite_cfg::enabled' o='128' t='int'/>
+<mbr r='notes_rewrite_cfg::combine' o='192' t='combine_notes_fn'/>
+<mbr r='notes_rewrite_cfg::refs' o='256' t='struct string_list *'/>
+<mbr r='notes_rewrite_cfg::refs_from_env' o='320' t='int'/>
+<mbr r='notes_rewrite_cfg::mode_from_env' o='352' t='int'/>

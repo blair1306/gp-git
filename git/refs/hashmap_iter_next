@@ -1,0 +1,14 @@
+<dec f='codebrowser/hashmap.h' l='380' type='void * hashmap_iter_next(struct hashmap_iter * iter)'/>
+<use f='codebrowser/hashmap.h' l='387' u='c' c='hashmap_iter_first'/>
+<doc f='codebrowser/hashmap.h' l='379'>/* Returns the next hashmap_entry, or NULL if there are no more entries. */</doc>
+<use f='codebrowser/attr.c' l='174' u='c' c='all_attrs_init'/>
+<use f='codebrowser/builtin/describe.c' l='317' u='c' c='describe'/>
+<use f='codebrowser/builtin/difftool.c' l='540' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='559' u='c' c='run_dir_diff'/>
+<use f='codebrowser/config.c' l='1754' u='c' c='git_configset_clear'/>
+<use f='codebrowser/hashmap.c' l='179' u='c' c='hashmap_free'/>
+<def f='codebrowser/hashmap.c' l='247' ll='261' type='void * hashmap_iter_next(struct hashmap_iter * iter)'/>
+<use f='codebrowser/submodule-config.c' l='96' u='c' c='submodule_cache_clear'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='232' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='46' u='c' c='dump_run'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='52' u='c' c='dump_run'/>

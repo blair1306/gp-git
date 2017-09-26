@@ -1,0 +1,6 @@
+<dec f='codebrowser/convert.h' l='99' type='void free_stream_filter(struct stream_filter * )'/>
+<use f='codebrowser/convert.c' l='1462' u='c' c='cascade_free_fn'/>
+<use f='codebrowser/convert.c' l='1463' u='c' c='cascade_free_fn'/>
+<def f='codebrowser/convert.c' l='1666' ll='1669' type='void free_stream_filter(struct stream_filter * filter)'/>
+<use f='codebrowser/streaming.c' l='188' u='c' c='close_istream_filtered'/>
+<use f='codebrowser/streaming.c' l='512' u='c' c='stream_blob_to_fd'/>

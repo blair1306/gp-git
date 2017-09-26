@@ -1,0 +1,14 @@
+<def f='codebrowser/repository.h' l='8' ll='83'/>
+<size>88</size>
+<mbr r='repository::gitdir' o='0' t='char *'/>
+<mbr r='repository::commondir' o='64' t='char *'/>
+<mbr r='repository::objectdir' o='128' t='char *'/>
+<mbr r='repository::graft_file' o='192' t='char *'/>
+<mbr r='repository::index_file' o='256' t='char *'/>
+<mbr r='repository::worktree' o='320' t='char *'/>
+<mbr r='repository::submodule_prefix' o='384' t='char *'/>
+<mbr r='repository::config' o='448' t='struct config_set *'/>
+<mbr r='repository::submodule_cache' o='512' t='struct submodule_cache *'/>
+<mbr r='repository::index' o='576' t='struct index_state *'/>
+<mbr r='repository::ignore_env' o='640' t='unsigned int'/>
+<mbr r='repository::different_commondir' o='641' t='unsigned int'/>

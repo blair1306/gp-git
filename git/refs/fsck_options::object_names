@@ -1,0 +1,16 @@
+<dec f='codebrowser/fsck.h' l='38' type='struct decoration *'/>
+<use f='codebrowser/builtin/fsck.c' l='52' u='r' c='describe_object'/>
+<use f='codebrowser/builtin/fsck.c' l='400' u='r' c='fsck_handle_reflog_oid'/>
+<use f='codebrowser/builtin/fsck.c' l='453' u='r' c='fsck_handle_ref'/>
+<use f='codebrowser/builtin/fsck.c' l='604' u='r' c='fsck_cache_tree'/>
+<use f='codebrowser/builtin/fsck.c' l='688' u='w' c='cmd_fsck'/>
+<use f='codebrowser/builtin/fsck.c' l='745' u='r' c='cmd_fsck'/>
+<use f='codebrowser/builtin/fsck.c' l='781' u='r' c='cmd_fsck'/>
+<offset>320</offset>
+<use f='codebrowser/fsck.c' l='304' u='r' c='get_object_name'/>
+<use f='codebrowser/fsck.c' l='306' u='r' c='get_object_name'/>
+<use f='codebrowser/fsck.c' l='316' u='r' c='put_object_name'/>
+<use f='codebrowser/fsck.c' l='318' u='r' c='put_object_name'/>
+<use f='codebrowser/fsck.c' l='323' u='r' c='put_object_name'/>
+<use f='codebrowser/fsck.c' l='334' u='r' c='describe_object'/>
+<use f='codebrowser/fsck.c' l='334' u='r' c='describe_object'/>

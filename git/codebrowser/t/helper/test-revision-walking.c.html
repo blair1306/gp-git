@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>test-revision-walking.c source code [codebrowser/t/helper/test-revision-walking.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/t/helper/test-revision-walking.c'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>t</a>/<a href='./'>helper</a>/<a href='test-revision-walking.c.html'>test-revision-walking.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * test-revision-walking.c: test revision walking API.</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * (C) 2012 Heiko Voigt &lt;hvoigt@hvoigt.net&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This code is free software; you can redistribute it and/or modify</i></td></tr>
+<tr><th id="7">7</th><td><i> * it under the terms of the GNU General Public License version 2 as</i></td></tr>
+<tr><th id="8">8</th><td><i> * published by the Free Software Foundation.</i></td></tr>
+<tr><th id="9">9</th><td><i> */</i></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="../../cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="../../commit.h.html">"commit.h"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="../../diff.h.html">"diff.h"</a></u></td></tr>
+<tr><th id="14">14</th><td><u>#include <a href="../../revision.h.html">"revision.h"</a></u></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="print_commit" title='print_commit' data-type='void print_commit(struct commit * commit)' data-ref="print_commit">print_commit</dfn>(<b>struct</b> <a class="type" href="../../commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col1 decl" id="1commit" title='commit' data-type='struct commit *' data-ref="1commit">commit</dfn>)</td></tr>
+<tr><th id="17">17</th><td>{</td></tr>
+<tr><th id="18">18</th><td>	<b>struct</b> <a class="type" href="../../strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="local col2 decl" id="2sb" title='sb' data-type='struct strbuf' data-ref="2sb">sb</dfn> = <a class="macro" href="../../strbuf.h.html#71" title="{ .alloc = 0, .len = 0, .buf = strbuf_slopbuf }" data-ref="_M/STRBUF_INIT">STRBUF_INIT</a>;</td></tr>
+<tr><th id="19">19</th><td>	<b>struct</b> <a class="type" href="../../commit.h.html#pretty_print_context" title='pretty_print_context' data-ref="pretty_print_context">pretty_print_context</a> <dfn class="local col3 decl" id="3ctx" title='ctx' data-type='struct pretty_print_context' data-ref="3ctx">ctx</dfn> = {<var>0</var>};</td></tr>
+<tr><th id="20">20</th><td>	<a class="local col3 ref" href="#3ctx" title='ctx' data-ref="3ctx">ctx</a>.<a class="ref" href="../../commit.h.html#pretty_print_context::date_mode" title='pretty_print_context::date_mode' data-ref="pretty_print_context::date_mode">date_mode</a>.<a class="ref" href="../../cache.h.html#date_mode::type" title='date_mode::type' data-ref="date_mode::type">type</a> = <a class="enum" href="../../cache.h.html#date_mode_type::DATE_NORMAL" title='date_mode_type::DATE_NORMAL' data-ref="date_mode_type::DATE_NORMAL">DATE_NORMAL</a>;</td></tr>
+<tr><th id="21">21</th><td>	<a class="ref" href="../../commit.h.html#format_commit_message" title='format_commit_message' data-ref="format_commit_message">format_commit_message</a>(<a class="local col1 ref" href="#1commit" title='commit' data-ref="1commit">commit</a>, <q>" %m %s"</q>, &amp;<a class="local col2 ref" href="#2sb" title='sb' data-ref="2sb">sb</a>, &amp;<a class="local col3 ref" href="#3ctx" title='ctx' data-ref="3ctx">ctx</a>);</td></tr>
+<tr><th id="22">22</th><td>	<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"%s\n"</q>, <a class="local col2 ref" href="#2sb" title='sb' data-ref="2sb">sb</a>.<a class="ref" href="../../strbuf.h.html#strbuf::buf" title='strbuf::buf' data-ref="strbuf::buf">buf</a>);</td></tr>
+<tr><th id="23">23</th><td>	<a class="ref" href="../../strbuf.h.html#strbuf_release" title='strbuf_release' data-ref="strbuf_release">strbuf_release</a>(&amp;<a class="local col2 ref" href="#2sb" title='sb' data-ref="2sb">sb</a>);</td></tr>
+<tr><th id="24">24</th><td>}</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="run_revision_walk" title='run_revision_walk' data-type='int run_revision_walk()' data-ref="run_revision_walk">run_revision_walk</dfn>(<em>void</em>)</td></tr>
+<tr><th id="27">27</th><td>{</td></tr>
+<tr><th id="28">28</th><td>	<b>struct</b> <a class="type" href="../../revision.h.html#rev_info" title='rev_info' data-ref="rev_info">rev_info</a> <dfn class="local col4 decl" id="4rev" title='rev' data-type='struct rev_info' data-ref="4rev">rev</dfn>;</td></tr>
+<tr><th id="29">29</th><td>	<b>struct</b> <a class="type" href="../../commit.h.html#commit" title='commit' data-ref="commit">commit</a> *<dfn class="local col5 decl" id="5commit" title='commit' data-type='struct commit *' data-ref="5commit">commit</dfn>;</td></tr>
+<tr><th id="30">30</th><td>	<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="6argv" title='argv' data-type='const char *[3]' data-ref="6argv">argv</dfn>[] = {<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <q>"--all"</q>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>};</td></tr>
+<tr><th id="31">31</th><td>	<em>int</em> <dfn class="local col7 decl" id="7argc" title='argc' data-type='int' data-ref="7argc">argc</dfn> = <a class="macro" href="../../git-compat-util.h.html#77" title="(sizeof(argv) / sizeof((argv)[0]) + (sizeof(char [1 - 2*!(!__builtin_types_compatible_p(__typeof__(argv), __typeof__(&amp;(argv)[0])))]) - 1))" data-ref="_M/ARRAY_SIZE">ARRAY_SIZE</a>(<a class="local col6 ref" href="#6argv" title='argv' data-ref="6argv">argv</a>) - <var>1</var>;</td></tr>
+<tr><th id="32">32</th><td>	<em>int</em> <dfn class="local col8 decl" id="8got_revision" title='got_revision' data-type='int' data-ref="8got_revision">got_revision</dfn> = <var>0</var>;</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>	<a class="ref" href="../../revision.h.html#init_revisions" title='init_revisions' data-ref="init_revisions">init_revisions</a>(&amp;<a class="local col4 ref" href="#4rev" title='rev' data-ref="4rev">rev</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="35">35</th><td>	<a class="ref" href="../../revision.h.html#setup_revisions" title='setup_revisions' data-ref="setup_revisions">setup_revisions</a>(<a class="local col7 ref" href="#7argc" title='argc' data-ref="7argc">argc</a>, <a class="local col6 ref" href="#6argv" title='argv' data-ref="6argv">argv</a>, &amp;<a class="local col4 ref" href="#4rev" title='rev' data-ref="4rev">rev</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="36">36</th><td>	<b>if</b> (<a class="ref" href="../../revision.h.html#prepare_revision_walk" title='prepare_revision_walk' data-ref="prepare_revision_walk">prepare_revision_walk</a>(&amp;<a class="local col4 ref" href="#4rev" title='rev' data-ref="4rev">rev</a>))</td></tr>
+<tr><th id="37">37</th><td>		<a class="ref" href="../../git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"revision walk setup failed"</q>);</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td>	<b>while</b> ((<a class="local col5 ref" href="#5commit" title='commit' data-ref="5commit">commit</a> = <a class="ref" href="../../revision.h.html#get_revision" title='get_revision' data-ref="get_revision">get_revision</a>(&amp;<a class="local col4 ref" href="#4rev" title='rev' data-ref="4rev">rev</a>)) != <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="40">40</th><td>		<a class="tu ref" href="#print_commit" title='print_commit' data-use='c' data-ref="print_commit">print_commit</a>(<a class="local col5 ref" href="#5commit" title='commit' data-ref="5commit">commit</a>);</td></tr>
+<tr><th id="41">41</th><td>		<a class="local col8 ref" href="#8got_revision" title='got_revision' data-ref="8got_revision">got_revision</a> = <var>1</var>;</td></tr>
+<tr><th id="42">42</th><td>	}</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>	<a class="ref" href="../../revision.h.html#reset_revision_walk" title='reset_revision_walk' data-ref="reset_revision_walk">reset_revision_walk</a>();</td></tr>
+<tr><th id="45">45</th><td>	<b>return</b> <a class="local col8 ref" href="#8got_revision" title='got_revision' data-ref="8got_revision">got_revision</a>;</td></tr>
+<tr><th id="46">46</th><td>}</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><em>int</em> <dfn class="decl def" id="cmd_main" title='cmd_main' data-ref="cmd_main">cmd_main</dfn>(<em>int</em> <dfn class="local col9 decl" id="9argc" title='argc' data-type='int' data-ref="9argc">argc</dfn>, <em>const</em> <em>char</em> **<dfn class="local col0 decl" id="10argv" title='argv' data-type='const char **' data-ref="10argv">argv</dfn>)</td></tr>
+<tr><th id="49">49</th><td>{</td></tr>
+<tr><th id="50">50</th><td>	<b>if</b> (<a class="local col9 ref" href="#9argc" title='argc' data-ref="9argc">argc</a> &lt; <var>2</var>)</td></tr>
+<tr><th id="51">51</th><td>		<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>	<a class="ref" href="../../cache.h.html#setup_git_directory" title='setup_git_directory' data-ref="setup_git_directory">setup_git_directory</a>();</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>	<b>if</b> (!<a class="macro" href="../../../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (argv[1]) &amp;&amp; __builtin_constant_p (&quot;run-twice&quot;) &amp;&amp; (__s1_len = __builtin_strlen (argv[1]), __s2_len = __builtin_strlen (&quot;run-twice&quot;), (!((size_t)(const void *)((argv[1]) + 1) - (size_t)(const void *)(argv[1]) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;run-twice&quot;) + 1) - (size_t)(const void *)(&quot;run-twice&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (argv[1], &quot;run-twice&quot;) : (__builtin_constant_p (argv[1]) &amp;&amp; ((size_t)(const void *)((argv[1]) + 1) - (size_t)(const void *)(argv[1]) == 1) &amp;&amp; (__s1_len = __builtin_strlen (argv[1]), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;run-twice&quot;) &amp;&amp; ((size_t)(const void *)((&quot;run-twice&quot;) + 1) - (size_t)(const void *)(&quot;run-twice&quot;) == 1) ? __builtin_strcmp (argv[1], &quot;run-twice&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;run-twice&quot;); int __result = (((const unsigned char *) (const char *) (argv[1]))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (argv[1]))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (argv[1]))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (argv[1]))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;run-twice&quot;) &amp;&amp; ((size_t)(const void *)((&quot;run-twice&quot;) + 1) - (size_t)(const void *)(&quot;run-twice&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;run-twice&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (argv[1]) &amp;&amp; ((size_t)(const void *)((argv[1]) + 1) - (size_t)(const void *)(argv[1]) == 1) ? __builtin_strcmp (argv[1], &quot;run-twice&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (argv[1]); int __result = (((const unsigned char *) (const char *) (&quot;run-twice&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;run-twice&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;run-twice&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;run-twice&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (argv[1], &quot;run-twice&quot;)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col0 ref" href="#10argv" title='argv' data-ref="10argv">argv</a>[<var>1</var>], <q>"run-twice"</q>)) {</td></tr>
+<tr><th id="56">56</th><td>		<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"1st\n"</q>);</td></tr>
+<tr><th id="57">57</th><td>		<b>if</b> (!<a class="tu ref" href="#run_revision_walk" title='run_revision_walk' data-use='c' data-ref="run_revision_walk">run_revision_walk</a>())</td></tr>
+<tr><th id="58">58</th><td>			<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="59">59</th><td>		<a class="ref" href="../../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"2nd\n"</q>);</td></tr>
+<tr><th id="60">60</th><td>		<b>if</b> (!<a class="tu ref" href="#run_revision_walk" title='run_revision_walk' data-use='c' data-ref="run_revision_walk">run_revision_walk</a>())</td></tr>
+<tr><th id="61">61</th><td>			<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="64">64</th><td>	}</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>	<a class="ref" href="../../../include/stdio.h.html#fprintf" title='fprintf' data-ref="fprintf">fprintf</a>(<a class="macro" href="../../../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>, <q>"check usage\n"</q>);</td></tr>
+<tr><th id="67">67</th><td>	<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="68">68</th><td>}</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/git-compat-util.h' l='949'/>
+<use f='codebrowser/blame.c' l='992' u='c'/>
+<use f='codebrowser/config.c' l='318' u='c'/>
+<use f='codebrowser/config.c' l='2732' u='c'/>
+<use f='codebrowser/date.c' l='340' u='c'/>
+<use f='codebrowser/grep.c' l='1053' u='c'/>
+<use f='codebrowser/http.c' l='1559' u='c'/>
+<use f='codebrowser/pathspec.c' l='115' u='c'/>
+<use f='codebrowser/pretty.c' l='339' u='c'/>
+<use f='codebrowser/send-pack.c' l='367' u='c'/>
+<use f='codebrowser/setup.c' l='180' u='c'/>
+<use f='codebrowser/strbuf.c' l='647' u='c'/>
+<use f='codebrowser/trailer.c' l='79' u='c'/>
+<use f='codebrowser/trailer.c' l='597' u='c'/>
+<use f='codebrowser/transport.c' l='1199' u='c'/>
+<use f='codebrowser/url.c' l='14' u='c'/>
+<use f='codebrowser/utf8.c' l='314' u='c'/>
+<dec f='include/ctype.h' l='197'/>
+<use f='codebrowser/xdiff/xmerge.c' l='401' u='c'/>

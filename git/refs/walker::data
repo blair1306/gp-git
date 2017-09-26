@@ -1,0 +1,11 @@
+<dec f='codebrowser/walker.h' l='7' type='void *'/>
+<offset>0</offset>
+<use f='codebrowser/http-walker.c' l='92' u='r' c='process_object_response'/>
+<use f='codebrowser/http-walker.c' l='146' u='r' c='prefetch'/>
+<use f='codebrowser/http-walker.c' l='200' u='r' c='process_alternates_response'/>
+<use f='codebrowser/http-walker.c' l='342' u='r' c='fetch_alternates'/>
+<use f='codebrowser/http-walker.c' l='557' u='r' c='fetch'/>
+<use f='codebrowser/http-walker.c' l='574' u='r' c='fetch_ref'/>
+<use f='codebrowser/http-walker.c' l='580' u='r' c='cleanup'/>
+<use f='codebrowser/http-walker.c' l='594' u='w' c='cleanup'/>
+<use f='codebrowser/http-walker.c' l='619' u='w' c='get_http_walker'/>

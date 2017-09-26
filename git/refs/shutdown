@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='261' type='int shutdown(int __fd, int __how)'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='255'>/* Shut down all or part of the connection open on socket FD.
+   HOW determines what to shut down:
+     SHUT_RD   = No more receptions;
+     SHUT_WR   = No more transmissions;
+     SHUT_RDWR = No more receptions or transmissions.
+   Returns 0 on success, -1 for errors.  */</doc>
+<use f='codebrowser/credential-cache.c' l='21' u='c' c='send_request'/>
+<use f='codebrowser/send-pack.c' l='574' u='c' c='send_pack'/>
+<use f='codebrowser/transport-helper.c' l='1177' u='c' c='udt_close_if_finished'/>

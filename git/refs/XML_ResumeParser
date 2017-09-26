@@ -1,0 +1,13 @@
+<dec f='include/expat.h' l='833' type='enum XML_Status XML_ResumeParser(XML_Parser parser)'/>
+<doc f='include/expat.h' l='820'>/* Resumes parsing after it has been suspended with XML_StopParser().
+   Must not be called from within a handler call-back. Returns same
+   status codes as XML_Parse() or XML_ParseBuffer().
+   Additional error code XML_ERROR_NOT_SUSPENDED possible.   
+
+   *Note*:
+   This must be called on the most deeply nested child parser instance
+   first, and on its parent parser only after the child parser has finished,
+   to be applied recursively until the document entity&apos;s parser is restarted.
+   That is, the parent parser will not resume by itself and it is up to the
+   application to call XML_ResumeParser() on it at the appropriate moment.
+*/</doc>

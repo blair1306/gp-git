@@ -1,0 +1,7 @@
+<dec f='codebrowser/exec_cmd.h' l='11' type='int execv_git_cmd(const char ** argv)'/>
+<doc f='codebrowser/exec_cmd.h' l='11'>/* NULL terminated */</doc>
+<use f='codebrowser/builtin/notes.c' l='671' u='c' c='show'/>
+<def f='codebrowser/exec_cmd.c' l='114' ll='127' type='int execv_git_cmd(const char ** argv)'/>
+<use f='codebrowser/exec_cmd.c' l='150' u='c' c='execl_git_cmd'/>
+<use f='codebrowser/shell.c' l='25' u='c' c='do_generic_cmd'/>
+<use f='codebrowser/shell.c' l='38' u='c' c='do_cvs_cmd'/>

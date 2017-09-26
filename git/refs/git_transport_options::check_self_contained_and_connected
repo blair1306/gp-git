@@ -1,0 +1,6 @@
+<dec f='codebrowser/transport.h' l='14' type='unsigned int'/>
+<offset>3</offset>
+<use f='codebrowser/builtin/clone.c' l='1107' u='w' c='cmd_clone'/>
+<use f='codebrowser/transport-helper.c' l='415' u='r' c='fetch_with_fetch'/>
+<use f='codebrowser/transport-helper.c' l='665' u='r' c='fetch'/>
+<use f='codebrowser/transport.c' l='229' u='r' c='fetch_refs_via_pack'/>

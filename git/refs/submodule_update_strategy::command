@@ -1,0 +1,8 @@
+<dec f='codebrowser/submodule.h' l='32' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/submodule-config.c' l='78' u='r' c='free_one_config'/>
+<use f='codebrowser/submodule-config.c' l='225' u='w' c='lookup_or_create_by_name'/>
+<use f='codebrowser/submodule.c' l='404' u='r' c='parse_submodule_update_strategy'/>
+<use f='codebrowser/submodule.c' l='405' u='w' c='parse_submodule_update_strategy'/>
+<use f='codebrowser/submodule.c' l='416' u='w' c='parse_submodule_update_strategy'/>
+<use f='codebrowser/submodule.c' l='437' u='r' c='submodule_strategy_to_string'/>

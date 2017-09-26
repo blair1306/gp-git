@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='802' type='0'/>
+<use f='codebrowser/config.c' l='1059' u='r' c='git_default_core_config'/>
+<use f='codebrowser/refs/files-backend.c' l='1376' u='r' c='files_rename_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1562' u='r' c='files_log_ref_write'/>

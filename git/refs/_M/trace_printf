@@ -1,0 +1,40 @@
+<dec f='codebrowser/trace.h' l='80'/>
+<doc f='codebrowser/trace.h' l='64'>/*
+ * Note: with C99 variadic macros, __VA_ARGS__ must include the last fixed
+ * parameter (&apos;format&apos; in this case). Otherwise, a call without variable
+ * arguments will have a surplus &apos;,&apos;. E.g.:
+ *
+ *  #define foo(format, ...) bar(format, __VA_ARGS__)
+ *  foo(&quot;test&quot;);
+ *
+ * will expand to
+ *
+ *  bar(&quot;test&quot;,);
+ *
+ * which is invalid (note the &apos;,)&apos;). With GNUC, &apos;##__VA_ARGS__&apos; drops the
+ * comma, but this is non-standard.
+ */</doc>
+<use f='codebrowser/exec_cmd.c' l='123' u='c'/>
+<use f='codebrowser/notes-merge.c' l='124' u='c'/>
+<use f='codebrowser/notes-merge.c' l='143' u='c'/>
+<use f='codebrowser/notes-merge.c' l='168' u='c'/>
+<use f='codebrowser/notes-merge.c' l='187' u='c'/>
+<use f='codebrowser/notes-merge.c' l='204' u='c'/>
+<use f='codebrowser/notes-merge.c' l='212' u='c'/>
+<use f='codebrowser/notes-merge.c' l='254' u='c'/>
+<use f='codebrowser/notes-merge.c' l='373' u='c'/>
+<use f='codebrowser/notes-merge.c' l='419' u='c'/>
+<use f='codebrowser/notes-merge.c' l='475' u='c'/>
+<use f='codebrowser/notes-merge.c' l='478' u='c'/>
+<use f='codebrowser/notes-merge.c' l='485' u='c'/>
+<use f='codebrowser/notes-merge.c' l='488' u='c'/>
+<use f='codebrowser/notes-merge.c' l='492' u='c'/>
+<use f='codebrowser/notes-merge.c' l='498' u='c'/>
+<use f='codebrowser/notes-merge.c' l='515' u='c'/>
+<use f='codebrowser/notes-merge.c' l='548' u='c'/>
+<use f='codebrowser/notes-merge.c' l='560' u='c'/>
+<use f='codebrowser/notes-merge.c' l='579' u='c'/>
+<use f='codebrowser/notes-merge.c' l='655' u='c'/>
+<use f='codebrowser/run-command.c' l='41' u='c'/>
+<use f='codebrowser/run-command.c' l='1452' u='c'/>
+<use f='codebrowser/run-command.c' l='1484' u='c'/>

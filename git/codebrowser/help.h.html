@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>help.h source code [codebrowser/help.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="cmdname,cmdnames "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/help.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='help.h.html'>help.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/HELP_H">HELP_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/HELP_H" data-ref="_M/HELP_H">HELP_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="cmdnames" title='cmdnames' data-ref="cmdnames">cmdnames</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<em>int</em> <dfn class="decl" id="cmdnames::alloc" title='cmdnames::alloc' data-ref="cmdnames::alloc">alloc</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<em>int</em> <dfn class="decl" id="cmdnames::cnt" title='cmdnames::cnt' data-ref="cmdnames::cnt">cnt</dfn>;</td></tr>
+<tr><th id="7">7</th><td>	<b>struct</b> <dfn class="type def" id="cmdname" title='cmdname' data-ref="cmdname"><a class="type" href="#cmdname" title='cmdname' data-ref="cmdname">cmdname</a></dfn> {</td></tr>
+<tr><th id="8">8</th><td>		<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="cmdname::len" title='cmdname::len' data-ref="cmdname::len">len</dfn>; <i>/* also used for similarity index in help.c */</i></td></tr>
+<tr><th id="9">9</th><td>		<em>char</em> <dfn class="decl" id="cmdname::name" title='cmdname::name' data-ref="cmdname::name">name</dfn>[<a class="macro" href="git-compat-util.h.html#28" title="" data-ref="_M/FLEX_ARRAY">FLEX_ARRAY</a>];</td></tr>
+<tr><th id="10">10</th><td>	} **<dfn class="decl" id="cmdnames::names" title='cmdnames::names' data-ref="cmdnames::names">names</dfn>;</td></tr>
+<tr><th id="11">11</th><td>};</td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><em>static</em> <b>inline</b> <em>void</em> <dfn class="decl def" id="mput_char" title='mput_char' data-ref="mput_char">mput_char</dfn>(<em>char</em> <dfn class="local col1 decl" id="1c" title='c' data-type='char' data-ref="1c">c</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="2num" title='num' data-type='unsigned int' data-ref="2num">num</dfn>)</td></tr>
+<tr><th id="14">14</th><td>{</td></tr>
+<tr><th id="15">15</th><td>	<b>while</b>(<a class="local col2 ref" href="#2num" title='num' data-ref="2num">num</a>--)</td></tr>
+<tr><th id="16">16</th><td>		<a class="ref" href="../include/stdio.h.html#putchar" title='putchar' data-ref="putchar">putchar</a>(<a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a>);</td></tr>
+<tr><th id="17">17</th><td>}</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="list_common_cmds_help" title='list_common_cmds_help' data-ref="list_common_cmds_help">list_common_cmds_help</dfn>(<em>void</em>);</td></tr>
+<tr><th id="20">20</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="help_unknown_cmd" title='help_unknown_cmd' data-ref="help_unknown_cmd">help_unknown_cmd</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3cmd" title='cmd' data-type='const char *' data-ref="3cmd">cmd</dfn>);</td></tr>
+<tr><th id="21">21</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="load_command_list" title='load_command_list' data-ref="load_command_list">load_command_list</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="4prefix" title='prefix' data-type='const char *' data-ref="4prefix">prefix</dfn>,</td></tr>
+<tr><th id="22">22</th><td>			      <b>struct</b> <a class="type" href="#cmdnames" title='cmdnames' data-ref="cmdnames">cmdnames</a> *<dfn class="local col5 decl" id="5main_cmds" title='main_cmds' data-type='struct cmdnames *' data-ref="5main_cmds">main_cmds</dfn>,</td></tr>
+<tr><th id="23">23</th><td>			      <b>struct</b> <a class="type" href="#cmdnames" title='cmdnames' data-ref="cmdnames">cmdnames</a> *<dfn class="local col6 decl" id="6other_cmds" title='other_cmds' data-type='struct cmdnames *' data-ref="6other_cmds">other_cmds</dfn>);</td></tr>
+<tr><th id="24">24</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="add_cmdname" title='add_cmdname' data-ref="add_cmdname">add_cmdname</dfn>(<b>struct</b> <a class="type" href="#cmdnames" title='cmdnames' data-ref="cmdnames">cmdnames</a> *<dfn class="local col7 decl" id="7cmds" title='cmds' data-type='struct cmdnames *' data-ref="7cmds">cmds</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8name" title='name' data-type='const char *' data-ref="8name">name</dfn>, <em>int</em> <dfn class="local col9 decl" id="9len" title='len' data-type='int' data-ref="9len">len</dfn>);</td></tr>
+<tr><th id="25">25</th><td><i>/* Here we require that excludes is a sorted list. */</i></td></tr>
+<tr><th id="26">26</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="exclude_cmds" title='exclude_cmds' data-ref="exclude_cmds">exclude_cmds</dfn>(<b>struct</b> <a class="type" href="#cmdnames" title='cmdnames' data-ref="cmdnames">cmdnames</a> *<dfn class="local col0 decl" id="10cmds" title='cmds' data-type='struct cmdnames *' data-ref="10cmds">cmds</dfn>, <b>struct</b> <a class="type" href="#cmdnames" title='cmdnames' data-ref="cmdnames">cmdnames</a> *<dfn class="local col1 decl" id="11excludes" title='excludes' data-type='struct cmdnames *' data-ref="11excludes">excludes</dfn>);</td></tr>
+<tr><th id="27">27</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="is_in_cmdlist" title='is_in_cmdlist' data-ref="is_in_cmdlist">is_in_cmdlist</dfn>(<b>struct</b> <a class="type" href="#cmdnames" title='cmdnames' data-ref="cmdnames">cmdnames</a> *<dfn class="local col2 decl" id="12cmds" title='cmds' data-type='struct cmdnames *' data-ref="12cmds">cmds</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="13name" title='name' data-type='const char *' data-ref="13name">name</dfn>);</td></tr>
+<tr><th id="28">28</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="list_commands" title='list_commands' data-ref="list_commands">list_commands</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="14colopts" title='colopts' data-type='unsigned int' data-ref="14colopts">colopts</dfn>, <b>struct</b> <a class="type" href="#cmdnames" title='cmdnames' data-ref="cmdnames">cmdnames</a> *<dfn class="local col5 decl" id="15main_cmds" title='main_cmds' data-type='struct cmdnames *' data-ref="15main_cmds">main_cmds</dfn>, <b>struct</b> <a class="type" href="#cmdnames" title='cmdnames' data-ref="cmdnames">cmdnames</a> *<dfn class="local col6 decl" id="16other_cmds" title='other_cmds' data-type='struct cmdnames *' data-ref="16other_cmds">other_cmds</dfn>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i>/*</i></td></tr>
+<tr><th id="31">31</th><td><i> * call this to die(), when it is suspected that the user mistyped a</i></td></tr>
+<tr><th id="32">32</th><td><i> * ref to the command, to give suggested "correct" refs.</i></td></tr>
+<tr><th id="33">33</th><td><i> */</i></td></tr>
+<tr><th id="34">34</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="help_unknown_ref" title='help_unknown_ref' data-ref="help_unknown_ref">help_unknown_ref</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="17ref" title='ref' data-type='const char *' data-ref="17ref">ref</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="18cmd" title='cmd' data-type='const char *' data-ref="18cmd">cmd</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="19error" title='error' data-type='const char *' data-ref="19error">error</dfn>);</td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="1">endif</span> /* HELP_H */</u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/help.c.html'>codebrowser/builtin/help.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

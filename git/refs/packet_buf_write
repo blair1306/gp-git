@@ -1,0 +1,23 @@
+<dec f='codebrowser/pkt-line.h' l='25' type='void packet_buf_write(struct strbuf * buf, const char * fmt)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1895' u='c' c='report'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1899' u='c' c='report'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1902' u='c' c='report'/>
+<use f='codebrowser/fetch-pack.c' l='381' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='384' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='397' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='400' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='406' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='453' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='499' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='530' u='c' c='find_common'/>
+<def f='codebrowser/pkt-line.c' l='191' ll='198' type='void packet_buf_write(struct strbuf * buf, const char * fmt)'/>
+<use f='codebrowser/remote-curl.c' l='831' u='c' c='fetch_git'/>
+<use f='codebrowser/remote-curl.c' l='967' u='c' c='push_git'/>
+<use f='codebrowser/send-pack.c' l='225' u='c' c='advertise_shallow_grafts_cb'/>
+<use f='codebrowser/send-pack.c' l='318' u='c' c='generate_push_cert'/>
+<use f='codebrowser/send-pack.c' l='321' u='c' c='generate_push_cert'/>
+<use f='codebrowser/send-pack.c' l='324' u='c' c='generate_push_cert'/>
+<use f='codebrowser/send-pack.c' l='525' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='531' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='541' u='c' c='send_pack'/>
+<use f='codebrowser/shallow.c' l='254' u='c' c='write_one_shallow'/>

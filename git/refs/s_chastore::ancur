@@ -1,0 +1,5 @@
+<dec f='codebrowser/xdiff/xtypes.h' l='36' type='chanode_t *'/>
+<offset>256</offset>
+<use f='codebrowser/xdiff/xutils.c' l='83' u='w' c='xdl_cha_init'/>
+<use f='codebrowser/xdiff/xutils.c' l='104' u='r' c='xdl_cha_alloc'/>
+<use f='codebrowser/xdiff/xutils.c' l='116' u='w' c='xdl_cha_alloc'/>

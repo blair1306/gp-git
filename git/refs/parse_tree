@@ -1,0 +1,18 @@
+<def f='codebrowser/tree.h' l='20' ll='23' type='int parse_tree(struct tree * tree)'/>
+<use f='codebrowser/builtin/am.c' l='1943' u='c' c='fast_forward_to'/>
+<use f='codebrowser/builtin/am.c' l='1943' u='c' c='fast_forward_to'/>
+<use f='codebrowser/builtin/am.c' l='1983' u='c' c='merge_tree'/>
+<use f='codebrowser/builtin/checkout.c' l='428' u='c' c='reset_tree'/>
+<use f='codebrowser/builtin/clone.c' l='747' u='c' c='checkout'/>
+<use f='codebrowser/builtin/commit.c' l='320' u='c' c='create_base_index'/>
+<use f='codebrowser/builtin/diff-tree.c' l='49' u='c' c='stdin_diff_trees'/>
+<use f='codebrowser/builtin/merge.c' l='623' u='c' c='read_tree_trivial'/>
+<use f='codebrowser/builtin/read-tree.c' l='245' u='c' c='cmd_read_tree'/>
+<use f='codebrowser/cache-tree.c' l='678' u='c' c='prime_cache_tree_rec'/>
+<use f='codebrowser/fsck.c' l='347' u='c' c='fsck_walk_tree'/>
+<use f='codebrowser/http-push.c' l='1297' u='c' c='process_tree'/>
+<use f='codebrowser/merge-recursive.c' l='249' u='c' c='init_tree_desc_from_tree'/>
+<use f='codebrowser/merge.c' l='89' u='c' c='checkout_fast_forward'/>
+<use f='codebrowser/revision.c' l='55' u='c' c='mark_tree_contents_uninteresting'/>
+<use f='codebrowser/tree.c' l='72' u='c' c='read_tree_1'/>
+<use f='codebrowser/walker.c' l='39' u='c' c='process_tree'/>

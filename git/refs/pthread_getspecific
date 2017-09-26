@@ -1,0 +1,5 @@
+<dec f='include/pthread.h' l='1119' type='void * pthread_getspecific(pthread_key_t __key)'/>
+<doc f='include/pthread.h' l='1118'>/* Return current value of the thread-specific data slot identified by KEY.  */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='366' u='c' c='get_thread_data'/>
+<use f='codebrowser/run-command.c' l='942' u='c' c='die_async'/>
+<use f='codebrowser/run-command.c' l='955' u='c' c='async_die_is_recursing'/>

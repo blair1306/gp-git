@@ -1,0 +1,28 @@
+<dec f='codebrowser/cache.h' l='1591' type='const void *'/>
+<offset>192</offset>
+<use f='codebrowser/builtin/index-pack.c' l='1517' u='r' c='read_v2_anomalous_offsets'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='253' u='r' c='cmp_two_packs'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='254' u='r' c='cmp_two_packs'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='360' u='r' c='sizeof_union'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='361' u='r' c='sizeof_union'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='556' u='r' c='add_pack'/>
+<use f='codebrowser/pack-check.c' l='42' u='r' c='check_pack_crc'/>
+<use f='codebrowser/pack-check.c' l='55' u='r' c='verify_packfile'/>
+<use f='codebrowser/pack-check.c' l='174' u='r' c='verify_pack_index'/>
+<use f='codebrowser/pack-check.c' l='193' u='r' c='verify_pack'/>
+<use f='codebrowser/pack-revindex.c' l='123' u='r' c='create_pack_revindex'/>
+<use f='codebrowser/sha1_file.c' l='843' u='w' c='check_packed_git_idx'/>
+<use f='codebrowser/sha1_file.c' l='855' u='r' c='open_pack_index'/>
+<use f='codebrowser/sha1_file.c' l='1084' u='r' c='close_pack_index'/>
+<use f='codebrowser/sha1_file.c' l='1085' u='r' c='close_pack_index'/>
+<use f='codebrowser/sha1_file.c' l='1086' u='w' c='close_pack_index'/>
+<use f='codebrowser/sha1_file.c' l='1143' u='r' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='1202' u='r' c='open_packed_git_1'/>
+<use f='codebrowser/sha1_file.c' l='2700' u='r' c='nth_packed_object_sha1'/>
+<use f='codebrowser/sha1_file.c' l='2704' u='r' c='nth_packed_object_sha1'/>
+<use f='codebrowser/sha1_file.c' l='2731' u='r' c='check_pack_index_ptr'/>
+<use f='codebrowser/sha1_file.c' l='2744' u='r' c='nth_packed_object_offset'/>
+<use f='codebrowser/sha1_file.c' l='2764' u='r' c='find_pack_entry_one'/>
+<use f='codebrowser/sha1_file.c' l='2765' u='r' c='find_pack_entry_one'/>
+<use f='codebrowser/sha1_file.c' l='2775' u='r' c='find_pack_entry_one'/>
+<use f='codebrowser/sha1_file.c' l='2776' u='r' c='find_pack_entry_one'/>

@@ -1,0 +1,195 @@
+<dec f='codebrowser/blame.h' l='60' type='char []'/>
+<use f='codebrowser/blame.c' l='41' u='r' c='make_origin'/>
+<use f='codebrowser/blame.c' l='58' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='58' u='r' c='get_origin'/>
+<use f='codebrowser/blame.c' l='297' u='r' c='fill_origin_blob'/>
+<use f='codebrowser/blame.c' l='307' c='fill_origin_blob'/>
+<use f='codebrowser/blame.c' l='433' c='sanity_check_refcnt'/>
+<use f='codebrowser/blame.c' l='506' u='r' c='fill_blob_sha1_and_mode'/>
+<use f='codebrowser/blame.c' l='531' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='531' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='547' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='565' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='581' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='591' u='r' c='find_origin'/>
+<use f='codebrowser/blame.c' l='621' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='635' u='r' c='find_rename'/>
+<use f='codebrowser/blame.c' l='1255' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1255' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<use f='codebrowser/blame.c' l='1282' u='r' c='find_copy_in_parent'/>
+<offset>648</offset>
+<use f='codebrowser/builtin/blame.c' l='225' u='r' c='write_filename_info'/>
+<use f='codebrowser/builtin/blame.c' l='228' u='r' c='write_filename_info'/>
+<use f='codebrowser/builtin/blame.c' l='414' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='529' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='529' u='r' c='find_alignment'/>
+<use f='codebrowser/builtin/blame.c' l='531' u='r' c='find_alignment'/>

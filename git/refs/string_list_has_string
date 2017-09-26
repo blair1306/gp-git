@@ -1,0 +1,25 @@
+<dec f='codebrowser/string-list.h' l='55' type='int string_list_has_string(const struct string_list * list, const char * string)'/>
+<doc f='codebrowser/string-list.h' l='54'>/* Use these functions only on sorted lists: */</doc>
+<use f='codebrowser/builtin/fetch.c' l='288' u='c' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='289' u='c' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/mv.c' l='239' u='c' c='cmd_mv'/>
+<use f='codebrowser/builtin/remote.c' l='909' u='c' c='show_remote_info_item'/>
+<use f='codebrowser/builtin/remote.c' l='912' u='c' c='show_remote_info_item'/>
+<use f='codebrowser/builtin/remote.c' l='914' u='c' c='show_remote_info_item'/>
+<use f='codebrowser/builtin/repack.c' l='422' u='c' c='cmd_repack'/>
+<use f='codebrowser/builtin/show-ref.c' l='134' u='c' c='exclude_existing'/>
+<use f='codebrowser/entry.c' l='291' u='c' c='write_entry'/>
+<use f='codebrowser/merge-recursive.c' l='657' u='c' c='unique_path'/>
+<use f='codebrowser/merge-recursive.c' l='658' u='c' c='unique_path'/>
+<use f='codebrowser/refs.c' l='298' u='c' c='warn_if_dangling_symref'/>
+<use f='codebrowser/refs.c' l='1226' u='c' c='find_descendant_ref'/>
+<use f='codebrowser/refs.c' l='1878' u='c' c='refs_verify_refname_available'/>
+<use f='codebrowser/refs.c' l='1887' u='c' c='refs_verify_refname_available'/>
+<use f='codebrowser/refs.c' l='1909' u='c' c='refs_verify_refname_available'/>
+<use f='codebrowser/refs/files-backend.c' l='2639' u='c' c='ref_present'/>
+<use f='codebrowser/remote.c' l='1335' u='c' c='add_missing_tags'/>
+<use f='codebrowser/remote.c' l='1510' u='c' c='match_push_refs'/>
+<use f='codebrowser/remote.c' l='2225' u='c' c='get_stale_heads_cb'/>
+<use f='codebrowser/rerere.c' l='835' u='c' c='do_plain_rerere'/>
+<def f='codebrowser/string-list.c' l='83' ll='88' type='int string_list_has_string(const struct string_list * list, const char * string)'/>
+<use f='codebrowser/transport.c' l='735' u='c' c='is_transport_allowed'/>

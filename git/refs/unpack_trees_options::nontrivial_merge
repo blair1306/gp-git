@@ -1,0 +1,4 @@
+<dec f='codebrowser/unpack-trees.h' l='40' type='unsigned int'/>
+<offset>128</offset>
+<use f='codebrowser/unpack-trees.c' l='1333' u='r' c='unpack_trees'/>
+<use f='codebrowser/unpack-trees.c' l='2006' u='w' c='threeway_merge'/>

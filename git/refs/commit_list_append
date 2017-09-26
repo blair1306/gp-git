@@ -1,0 +1,27 @@
+<dec f='codebrowser/commit.h' l='112' type='struct commit_list ** commit_list_append(struct commit * commit, struct commit_list ** next)'/>
+<use f='codebrowser/builtin/commit.c' l='1706' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/commit.c' l='1714' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/merge.c' l='802' u='c' c='merge_trivial'/>
+<use f='codebrowser/builtin/merge.c' l='803' u='c' c='merge_trivial'/>
+<use f='codebrowser/commit.c' l='448' u='c' c='copy_commit_list'/>
+<use f='codebrowser/commit.c' l='789' u='c' c='paint_down_to_common'/>
+<def f='codebrowser/commit.c' l='1615' ll='1623' type='struct commit_list ** commit_list_append(struct commit * commit, struct commit_list ** next)'/>
+<doc f='codebrowser/commit.c' l='1598'>/*
+ * Append a commit to the end of the commit_list.
+ *
+ * next starts by pointing to the variable that holds the head of an
+ * empty commit_list, and is updated to point to the &quot;next&quot; field of
+ * the last item on the list as new commits are appended.
+ *
+ * Usage example:
+ *
+ *     struct commit_list *list;
+ *     struct commit_list **next = &amp;list;
+ *
+ *     next = commit_list_append(c1, next);
+ *     next = commit_list_append(c2, next);
+ *     assert(commit_list_count(list) == 2);
+ *     return list;
+ */</doc>
+<use f='codebrowser/line-log.c' l='1165' u='c' c='process_ranges_merge_commit'/>
+<use f='codebrowser/revision.c' l='2781' u='c' c='prepare_revision_walk'/>

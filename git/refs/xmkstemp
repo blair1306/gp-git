@@ -1,0 +1,6 @@
+<dec f='codebrowser/git-compat-util.h' l='808' type='int xmkstemp(char * template)'/>
+<use f='codebrowser/builtin/init-db.c' l='275' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/unpack-file.c' l='17' u='c' c='create_temp_file'/>
+<use f='codebrowser/ll-merge.c' l='156' u='c' c='create_temp'/>
+<use f='codebrowser/t/helper/test-mktemp.c' l='11' u='c' c='cmd_main'/>
+<def f='codebrowser/wrapper.c' l='448' ll='468' type='int xmkstemp(char * template)'/>

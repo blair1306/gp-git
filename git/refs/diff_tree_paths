@@ -1,0 +1,4 @@
+<dec f='codebrowser/diff.h' l='212' type='struct combine_diff_path * diff_tree_paths(struct combine_diff_path * p, const struct object_id * oid, const struct object_id ** parents_oid, int nparent, struct strbuf * base, struct diff_options * opt)'/>
+<use f='codebrowser/combine-diff.c' l='1379' u='c' c='find_paths_multitree'/>
+<def f='codebrowser/tree-diff.c' l='549' ll='565' type='struct combine_diff_path * diff_tree_paths(struct combine_diff_path * p, const struct object_id * oid, const struct object_id ** parents_oid, int nparent, struct strbuf * base, struct diff_options * opt)'/>
+<use f='codebrowser/tree-diff.c' l='686' u='c' c='ll_diff_tree_oid'/>

@@ -1,0 +1,22 @@
+<dec f='include/stdio.h' l='622' type='char * fgets(char *restrict __s, int __n, FILE *restrict __stream)'/>
+<doc f='include/stdio.h' l='618'>/* Get a newline-terminated string of finite length from STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/attr.c' l='733' u='c' c='read_attr_from_file'/>
+<use f='codebrowser/builtin/diff-tree.c' l='167' u='c' c='cmd_diff_tree'/>
+<use f='codebrowser/builtin/fast-export.c' l='914' u='c' c='import_marks'/>
+<use f='codebrowser/builtin/name-rev.c' l='474' u='c' c='cmd_name_rev'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2505' u='c' c='read_object_list_from_stdin'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2780' u='c' c='get_object_list'/>
+<use f='codebrowser/builtin/pack-redundant.c' l='651' u='c' c='cmd_pack_redundant'/>
+<use f='codebrowser/builtin/remote-ext.c' l='172' u='c' c='command_loop'/>
+<use f='codebrowser/builtin/remote-fd.c' l='30' u='c' c='command_loop'/>
+<use f='codebrowser/builtin/show-ref.c' l='110' u='c' c='exclude_existing'/>
+<use f='codebrowser/config.c' l='2783' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/fast-import.c' l='1897' u='c' c='read_marks'/>
+<use f='codebrowser/mailmap.c' l='193' u='c' c='read_mailmap_file'/>
+<use f='codebrowser/server-info.c' l='140' u='c' c='read_pack_info_file'/>
+<use f='codebrowser/shallow.c' l='67' u='c' c='is_repository_shallow'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='156' u='c' c='cmd_main'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='76' u='c' c='buffer_read_line'/>

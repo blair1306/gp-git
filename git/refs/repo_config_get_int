@@ -1,0 +1,3 @@
+<dec f='codebrowser/config.h' l='177' type='int repo_config_get_int(struct repository * repo, const char * key, int * dest)'/>
+<def f='codebrowser/config.c' l='1960' ll='1965' type='int repo_config_get_int(struct repository * repo, const char * key, int * dest)'/>
+<use f='codebrowser/config.c' l='2039' u='c' c='git_config_get_int'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/diffcore.h' l='49' type='int'/>
+<offset>535</offset>
+<doc f='codebrowser/diffcore.h' l='48'>/* data should be considered &quot;binary&quot;; -1 means &quot;don&apos;t know yet&quot; */</doc>
+<use f='codebrowser/diff.c' l='2292' u='r' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2295' u='w' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2299' u='r' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2300' u='w' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2302' u='r' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2303' u='w' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2306' u='r' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2685' u='w' c='alloc_filespec'/>
+<use f='codebrowser/diff.c' l='2885' u='r' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2886' u='w' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2917' u='r' c='diff_populate_filespec'/>
+<use f='codebrowser/diff.c' l='2918' u='w' c='diff_populate_filespec'/>

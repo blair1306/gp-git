@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1451' type='const char * ident_default_name()'/>
+<use f='codebrowser/builtin/config.c' l='476' u='c' c='default_user_config'/>
+<def f='codebrowser/ident.c' l='153' ll='160' type='const char * ident_default_name()'/>
+<use f='codebrowser/ident.c' l='383' u='c' c='fmt_ident'/>

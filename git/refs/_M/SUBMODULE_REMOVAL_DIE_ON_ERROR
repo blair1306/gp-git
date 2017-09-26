@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule.h' l='95'/>
+<use f='codebrowser/builtin/rm.c' l='170' u='c'/>
+<use f='codebrowser/submodule.c' l='1468' u='c'/>
+<use f='codebrowser/submodule.c' l='1481' u='c'/>

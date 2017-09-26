@@ -1,0 +1,7 @@
+<dec f='codebrowser/url.h' l='7' type='char * url_decode_mem(const char * url, int len)'/>
+<use f='codebrowser/credential.c' l='348' u='c' c='credential_from_url'/>
+<use f='codebrowser/credential.c' l='352' u='c' c='credential_from_url'/>
+<use f='codebrowser/credential.c' l='353' u='c' c='credential_from_url'/>
+<use f='codebrowser/credential.c' l='360' u='c' c='credential_from_url'/>
+<use f='codebrowser/url.c' l='72' u='c' c='url_decode'/>
+<def f='codebrowser/url.c' l='75' ll='87' type='char * url_decode_mem(const char * url, int len)'/>

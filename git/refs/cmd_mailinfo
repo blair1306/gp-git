@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='182' type='int cmd_mailinfo(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/mailinfo.c' l='14' ll='65' type='int cmd_mailinfo(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='418'/>
+<use f='codebrowser/git.c' l='418'/>
+<use f='codebrowser/git.c' l='418'/>
+<use f='codebrowser/git.c' l='418'/>

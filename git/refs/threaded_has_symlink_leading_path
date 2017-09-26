@@ -1,0 +1,7 @@
+<dec f='codebrowser/cache.h' l='1521' type='int threaded_has_symlink_leading_path(struct cache_def * , const char * , int )'/>
+<use f='codebrowser/preload-index.c' l='60' u='c' c='preload_thread'/>
+<def f='codebrowser/symlinks.c' l='200' ll='203' type='int threaded_has_symlink_leading_path(struct cache_def * cache, const char * name, int len)'/>
+<use f='codebrowser/symlinks.c' l='210' u='c' c='has_symlink_leading_path'/>
+<doc f='codebrowser/symlinks.c' l='197'>/*
+ * Return non-zero if path &apos;name&apos; has a leading symlink component
+ */</doc>

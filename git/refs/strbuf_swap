@@ -1,0 +1,25 @@
+<def f='codebrowser/strbuf.h' l='110' ll='113' type='void strbuf_swap(struct strbuf * a, struct strbuf * b)'/>
+<use f='codebrowser/abspath.c' l='188' u='c' c='strbuf_realpath'/>
+<doc f='codebrowser/strbuf.h' l='107'>/**
+ * Swap the contents of two string buffers.
+ */</doc>
+<use f='codebrowser/builtin/check-attr.c' l='90' u='c' c='check_attr_stdin_paths'/>
+<use f='codebrowser/builtin/check-ignore.c' l='134' u='c' c='check_ignore_stdin_paths'/>
+<use f='codebrowser/builtin/checkout-index.c' l='241' u='c' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/hash-object.c' l='70' u='c' c='hash_stdin_paths'/>
+<use f='codebrowser/builtin/update-index.c' l='1094' u='c' c='cmd_update_index'/>
+<use f='codebrowser/convert.c' l='496' u='c' c='apply_single_file_filter'/>
+<use f='codebrowser/convert.c' l='662' u='c' c='apply_multi_file_filter'/>
+<use f='codebrowser/fast-import.c' l='1209' u='c' c='store_object'/>
+<use f='codebrowser/mailinfo.c' l='133' u='c' c='unquote_quoted_pair'/>
+<use f='codebrowser/pretty.c' l='908' u='c' c='strbuf_wrap'/>
+<use f='codebrowser/ref-filter.c' l='493' u='c' c='end_align_handler'/>
+<use f='codebrowser/ref-filter.c' l='526' u='c' c='if_then_else_handler'/>
+<use f='codebrowser/ref-filter.c' l='634' u='c' c='end_atom_handler'/>
+<use f='codebrowser/refs/files-backend.c' l='336' u='c' c='files_read_raw_ref'/>
+<use f='codebrowser/rerere.c' l='432' u='c' c='handle_path'/>
+<use f='codebrowser/strbuf.c' l='937' u='c' c='strbuf_normalize_path'/>
+<use f='codebrowser/utf8.c' l='399' u='c' c='strbuf_utf8_replace'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='105' u='c' c='handle_property'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='113' u='c' c='handle_property'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='194' u='c' c='read_props'/>

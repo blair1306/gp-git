@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='738' type='const char *'/>
+<use f='codebrowser/attr.c' l='834' u='r' c='get_home_gitattributes'/>
+<use f='codebrowser/attr.c' l='835' u='w' c='get_home_gitattributes'/>
+<use f='codebrowser/attr.c' l='837' u='r' c='get_home_gitattributes'/>
+<use f='codebrowser/config.c' l='1033' u='a' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='34' type='const char *'/>

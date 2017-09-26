@@ -1,0 +1,17 @@
+<dec f='codebrowser/wt-status.h' l='38' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/wt-status.c' l='380' u='r' c='wt_longstatus_print_change_data'/>
+<use f='codebrowser/wt-status.c' l='418' u='r' c='short_submodule_status'/>
+<use f='codebrowser/wt-status.c' l='443' u='r' c='wt_status_collect_changed_cb'/>
+<use f='codebrowser/wt-status.c' l='444' u='w' c='wt_status_collect_changed_cb'/>
+<use f='codebrowser/wt-status.c' l='450' u='w' c='wt_status_collect_changed_cb'/>
+<use f='codebrowser/wt-status.c' l='769' u='r' c='wt_status_check_worktree_changes'/>
+<use f='codebrowser/wt-status.c' l='770' u='r' c='wt_status_check_worktree_changes'/>
+<use f='codebrowser/wt-status.c' l='776' u='r' c='wt_status_check_worktree_changes'/>
+<use f='codebrowser/wt-status.c' l='797' u='r' c='wt_longstatus_print_changed'/>
+<use f='codebrowser/wt-status.c' l='798' u='r' c='wt_longstatus_print_changed'/>
+<use f='codebrowser/wt-status.c' l='1710' u='r' c='wt_shortstatus_status'/>
+<use f='codebrowser/wt-status.c' l='1711' u='r' c='wt_shortstatus_status'/>
+<use f='codebrowser/wt-status.c' l='1999' u='r' c='wt_porcelain_v2_fix_up_changed'/>
+<use f='codebrowser/wt-status.c' l='2040' u='r' c='wt_porcelain_v2_print_changed_entry'/>
+<use f='codebrowser/wt-status.c' l='2040' u='r' c='wt_porcelain_v2_print_changed_entry'/>

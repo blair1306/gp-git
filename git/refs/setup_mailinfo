@@ -1,0 +1,4 @@
+<dec f='codebrowser/mailinfo.h' l='38' type='void setup_mailinfo(struct mailinfo * )'/>
+<use f='codebrowser/builtin/am.c' l='1223' u='c' c='parse_mail'/>
+<use f='codebrowser/builtin/mailinfo.c' l='21' u='c' c='cmd_mailinfo'/>
+<def f='codebrowser/mailinfo.c' l='1140' ll='1152' type='void setup_mailinfo(struct mailinfo * mi)'/>

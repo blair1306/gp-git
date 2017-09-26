@@ -1,0 +1,15 @@
+<dec f='codebrowser/refs.h' l='382' type='int refs_delete_ref(struct ref_store * refs, const char * msg, const char * refname, const unsigned char * old_sha1, unsigned int flags)'/>
+<doc f='codebrowser/refs.h' l='374'>/*
+ * Delete the specified reference. If old_sha1 is non-NULL, then
+ * verify that the current value of the reference is old_sha1 before
+ * deleting it. If old_sha1 is NULL, delete the reference if it
+ * exists, regardless of its old value. It is an error for old_sha1 to
+ * be NULL_SHA1. msg and flags are passed through to
+ * ref_transaction_delete().
+ */</doc>
+<def f='codebrowser/refs.c' l='658' ll='684' type='int refs_delete_ref(struct ref_store * refs, const char * msg, const char * refname, const unsigned char * old_sha1, unsigned int flags)'/>
+<use f='codebrowser/refs.c' l='689' u='c' c='delete_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1166' u='c' c='files_delete_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='1306' u='c' c='files_rename_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='1322' u='c' c='files_rename_ref'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='226' u='c' c='cmd_delete_ref'/>

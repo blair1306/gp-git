@@ -1,0 +1,14 @@
+<dec f='codebrowser/revision.h' l='64' type='struct rev_cmdline_info'/>
+<offset>320</offset>
+<doc f='codebrowser/revision.h' l='63'>/* The end-points specified by the end user */</doc>
+<use f='codebrowser/builtin/fast-export.c' l='1047' u='a' c='cmd_fast_export'/>
+<use f='codebrowser/builtin/log.c' l='966' u='m' c='find_branch_name'/>
+<use f='codebrowser/builtin/log.c' l='967' u='m' c='find_branch_name'/>
+<use f='codebrowser/builtin/log.c' l='976' u='m' c='find_branch_name'/>
+<use f='codebrowser/builtin/log.c' l='977' u='m' c='find_branch_name'/>
+<use f='codebrowser/list-objects.c' l='167' u='m' c='mark_edges_uninteresting'/>
+<use f='codebrowser/list-objects.c' l='168' u='m' c='mark_edges_uninteresting'/>
+<use f='codebrowser/revision.c' l='1105' u='a' c='add_rev_cmdline'/>
+<use f='codebrowser/sequencer.c' l='2341' u='m' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2342' u='m' c='sequencer_pick_revisions'/>
+<use f='codebrowser/sequencer.c' l='2344' u='m' c='sequencer_pick_revisions'/>

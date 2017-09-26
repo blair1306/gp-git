@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='286' type='int refs_for_each_remote_ref(struct ref_store * refs, each_ref_fn * fn, void * cb_data)'/>
+<def f='codebrowser/refs.c' l='361' ll='364' type='int refs_for_each_remote_ref(struct ref_store * refs, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='368' u='c' c='for_each_remote_ref'/>
+<use f='codebrowser/refs.c' l='373' u='c' c='for_each_remote_ref_submodule'/>

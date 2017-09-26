@@ -1,0 +1,2 @@
+<dec f='include/x86_64-linux-gnu/sys/syslog.h' l='96'/>
+<use f='codebrowser/daemon.c' l='1353' u='c'/>

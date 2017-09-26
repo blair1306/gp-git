@@ -1,0 +1,10 @@
+<dec f='codebrowser/shortlog.h' l='12' type='int'/>
+<use f='codebrowser/builtin/log.c' l='1041' u='w' c='make_cover_letter'/>
+<offset>384</offset>
+<use f='codebrowser/builtin/shortlog.c' l='212' u='w' c='parse_wrap_args'/>
+<use f='codebrowser/builtin/shortlog.c' l='218' u='w' c='parse_wrap_args'/>
+<use f='codebrowser/builtin/shortlog.c' l='220' u='r' c='parse_wrap_args'/>
+<use f='codebrowser/builtin/shortlog.c' l='223' u='r' c='parse_wrap_args'/>
+<use f='codebrowser/builtin/shortlog.c' l='223' u='r' c='parse_wrap_args'/>
+<use f='codebrowser/builtin/shortlog.c' l='237' u='w' c='shortlog_init'/>
+<use f='codebrowser/builtin/shortlog.c' l='310' u='r' c='add_wrapped_shortlog_msg'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/userdiff.h' l='13' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/diff.c' l='3205' u='r' c='run_diff_cmd'/>
+<use f='codebrowser/diff.c' l='3206' u='r' c='run_diff_cmd'/>
+<use f='codebrowser/userdiff.c' l='248' u='a' c='userdiff_config'/>

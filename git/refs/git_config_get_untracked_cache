@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='211' type='int git_config_get_untracked_cache()'/>
+<use f='codebrowser/builtin/update-index.c' l='1127' u='c' c='cmd_update_index'/>
+<use f='codebrowser/builtin/update-index.c' l='1139' u='c' c='cmd_update_index'/>
+<def f='codebrowser/config.c' l='2097' ll='2119' type='int git_config_get_untracked_cache()'/>
+<use f='codebrowser/read-cache.c' l='1689' u='c' c='tweak_untracked_cache'/>

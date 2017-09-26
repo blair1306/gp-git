@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='1726' type='4'/>
+<doc f='include/curl/curl.h' l='1726'>/* use version 2 for HTTPS, version 1.1 for HTTP */</doc>

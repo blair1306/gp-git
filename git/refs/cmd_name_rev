@@ -1,0 +1,7 @@
+<dec f='codebrowser/builtin.h' l='194' type='int cmd_name_rev(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/builtin/describe.c' l='506' u='c' c='cmd_describe'/>
+<def f='codebrowser/builtin/name-rev.c' l='389' ll='498' type='int cmd_name_rev(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='433'/>
+<use f='codebrowser/git.c' l='433'/>
+<use f='codebrowser/git.c' l='433'/>
+<use f='codebrowser/git.c' l='433'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/commit.h' l='292' type='int *'/>
+<offset>512</offset>
+<use f='codebrowser/builtin/receive-pack.c' l='1816' u='w' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1817' u='r' c='prepare_shallow_update'/>
+<use f='codebrowser/shallow.c' l='741' u='r' c='delayed_reachability_test'/>
+<use f='codebrowser/shallow.c' l='746' u='r' c='delayed_reachability_test'/>

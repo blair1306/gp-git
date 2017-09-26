@@ -1,0 +1,4 @@
+<dec f='codebrowser/builtin/tag.c' l='201' type='2'/>
+<use f='codebrowser/builtin/tag.c' l='241' u='r' c='create_tag'/>
+<use f='codebrowser/builtin/tag.c' l='258' u='r' c='create_tag'/>
+<use f='codebrowser/builtin/tag.c' l='528' u='r' c='cmd_tag'/>

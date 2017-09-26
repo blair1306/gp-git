@@ -1,0 +1,22 @@
+<dec f='codebrowser/tempfile.h' l='85' type='volatile int'/>
+<offset>96</offset>
+<use f='codebrowser/read-cache.c' l='2192' u='r' c='do_write_index'/>
+<use f='codebrowser/tempfile.c' l='103' u='w' c='prepare_tempfile_object'/>
+<use f='codebrowser/tempfile.c' l='123' u='w' c='create_tempfile'/>
+<use f='codebrowser/tempfile.c' l='125' u='r' c='create_tempfile'/>
+<use f='codebrowser/tempfile.c' l='127' u='w' c='create_tempfile'/>
+<use f='codebrowser/tempfile.c' l='129' u='r' c='create_tempfile'/>
+<use f='codebrowser/tempfile.c' l='142' u='r' c='create_tempfile'/>
+<use f='codebrowser/tempfile.c' l='159' u='w' c='mks_tempfile_sm'/>
+<use f='codebrowser/tempfile.c' l='160' u='r' c='mks_tempfile_sm'/>
+<use f='codebrowser/tempfile.c' l='166' u='r' c='mks_tempfile_sm'/>
+<use f='codebrowser/tempfile.c' l='181' u='w' c='mks_tempfile_tsm'/>
+<use f='codebrowser/tempfile.c' l='182' u='r' c='mks_tempfile_tsm'/>
+<use f='codebrowser/tempfile.c' l='188' u='r' c='mks_tempfile_tsm'/>
+<use f='codebrowser/tempfile.c' l='213' u='r' c='fdopen_tempfile'/>
+<use f='codebrowser/tempfile.c' l='228' u='r' c='get_tempfile_fd'/>
+<use f='codebrowser/tempfile.c' l='240' u='r' c='close_tempfile'/>
+<use f='codebrowser/tempfile.c' l='247' u='w' c='close_tempfile'/>
+<use f='codebrowser/tempfile.c' l='273' u='r' c='reopen_tempfile'/>
+<use f='codebrowser/tempfile.c' l='277' u='w' c='reopen_tempfile'/>
+<use f='codebrowser/tempfile.c' l='278' u='r' c='reopen_tempfile'/>

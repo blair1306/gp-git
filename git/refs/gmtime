@@ -1,0 +1,2 @@
+<dec f='include/time.h' l='239' type='struct tm * gmtime(const time_t * __timer)'/>
+<use f='codebrowser/date.c' l='70' u='c' c='time_to_tm'/>

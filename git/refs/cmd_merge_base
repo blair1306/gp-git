@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='185' type='int cmd_merge_base(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/merge-base.c' l='210' ll='263' type='int cmd_merge_base(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='421'/>
+<use f='codebrowser/git.c' l='421'/>
+<use f='codebrowser/git.c' l='421'/>
+<use f='codebrowser/git.c' l='421'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/wt-status.h' l='73' type='int'/>
+<offset>672</offset>
+<use f='codebrowser/builtin/commit.c' l='1383' u='w' c='cmd_status'/>
+<use f='codebrowser/wt-status.c' l='663' u='r' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='1622' u='r' c='wt_longstatus_print'/>

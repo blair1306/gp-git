@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin/clean.c' l='39' type='2'/>
+<use f='codebrowser/builtin/clean.c' l='51'/>
+<use f='codebrowser/builtin/clean.c' l='92' u='r' c='parse_clean_color_slot'/>
+<use f='codebrowser/builtin/clean.c' l='339' u='r' c='print_highlight_menu_stuff'/>
+<use f='codebrowser/builtin/clean.c' l='574' u='r' c='list_and_choose'/>
+<use f='codebrowser/builtin/clean.c' l='659' u='r' c='filter_by_patterns_cmd'/>

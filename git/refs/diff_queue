@@ -1,0 +1,12 @@
+<dec f='codebrowser/diffcore.h' l='105' type='struct diff_filepair * diff_queue(struct diff_queue_struct * , struct diff_filespec * , struct diff_filespec * )'/>
+<use f='codebrowser/builtin/diff.c' l='63' u='c' c='stuff_change'/>
+<use f='codebrowser/diff-no-index.c' l='116' u='c' c='queue_diff'/>
+<use f='codebrowser/diff-no-index.c' l='194' u='c' c='queue_diff'/>
+<def f='codebrowser/diff.c' l='4161' ll='4171' type='struct diff_filepair * diff_queue(struct diff_queue_struct * queue, struct diff_filespec * one, struct diff_filespec * two)'/>
+<use f='codebrowser/diff.c' l='5110' u='c' c='diff_addremove'/>
+<use f='codebrowser/diff.c' l='5147' u='c' c='diff_change'/>
+<use f='codebrowser/diff.c' l='5170' u='c' c='diff_unmerge'/>
+<use f='codebrowser/diffcore-break.c' l='198' u='c' c='diffcore_break'/>
+<use f='codebrowser/diffcore-break.c' l='204' u='c' c='diffcore_break'/>
+<use f='codebrowser/diffcore-break.c' l='246' u='c' c='merge_broken'/>
+<use f='codebrowser/diffcore-rename.c' l='223' u='c' c='record_rename_pair'/>

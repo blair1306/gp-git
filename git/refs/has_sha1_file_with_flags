@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1231' type='int has_sha1_file_with_flags(const unsigned char * sha1, int flags)'/>
+<use f='codebrowser/cache.h' l='1234' u='c' c='has_sha1_file'/>
+<doc f='codebrowser/cache.h' l='1226'>/*
+ * Convenience for sha1_object_info_extended() with a NULL struct
+ * object_info. OBJECT_INFO_SKIP_CACHED is automatically set; pass
+ * nonzero flags to also set other flags.
+ */</doc>
+<use f='codebrowser/builtin/fetch.c' l='266' u='c' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='281' u='c' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/fetch.c' l='302' u='c' c='find_non_local_tags'/>
+<use f='codebrowser/builtin/index-pack.c' l='797' u='c' c='sha1_object'/>
+<def f='codebrowser/sha1_file.c' l='3462' ll='3468' type='int has_sha1_file_with_flags(const unsigned char * sha1, int flags)'/>
+<use f='codebrowser/sha1_file.c' l='3477' u='c' c='has_object_file_with_flags'/>

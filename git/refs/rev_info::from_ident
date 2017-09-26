@@ -1,0 +1,6 @@
+<dec f='codebrowser/revision.h' l='171' type='struct ident_split'/>
+<offset>1728</offset>
+<use f='codebrowser/builtin/log.c' l='1574' u='a' c='cmd_format_patch'/>
+<use f='codebrowser/log-tree.c' l='684' u='m' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='684' u='m' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='685' u='a' c='show_log'/>

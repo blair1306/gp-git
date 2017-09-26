@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1255' type='const signed char [256]'/>
+<use f='codebrowser/cache.h' l='1258' u='r' c='hexval'/>
+<def f='codebrowser/hex.c' l='3' ll='36' type='const signed char [256]'/>
+<use f='codebrowser/sha1_name.c' l='911' macro='1' u='r'/>
+<use f='codebrowser/wildmatch.c' l='256' macro='1' u='r'/>

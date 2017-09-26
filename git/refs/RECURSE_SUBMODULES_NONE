@@ -1,0 +1,4 @@
+<dec f='codebrowser/submodule.h' l='14' type='-2'/>
+<use f='codebrowser/submodule-config.c' l='226' u='r' c='lookup_or_create_by_name'/>
+<use f='codebrowser/submodule-config.c' l='392' u='r' c='parse_config'/>
+<use f='codebrowser/submodule.c' l='1199' u='r' c='get_next_submodule'/>

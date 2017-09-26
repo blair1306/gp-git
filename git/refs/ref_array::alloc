@@ -1,0 +1,3 @@
+<dec f='codebrowser/ref-filter.h' l='47' type='int'/>
+<offset>32</offset>
+<use f='codebrowser/ref-filter.c' l='1903' u='w' c='ref_array_clear'/>

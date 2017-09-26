@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='157' type='const char *'/>
+<offset>1344</offset>
+<use f='codebrowser/diff.c' l='4815' u='r' c='diff_flush'/>
+<use f='codebrowser/diff.c' l='4817' u='r' c='diff_flush'/>
+<use f='codebrowser/log-tree.c' l='414' u='w' c='log_write_email_headers'/>

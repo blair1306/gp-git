@@ -1,0 +1,12 @@
+<def f='codebrowser/cache.h' l='1184' ll='1189' type='const unsigned char * lookup_replace_object(const unsigned char * sha1)'/>
+<doc f='codebrowser/cache.h' l='1178'>/*
+ * If object sha1 should be replaced, return the replacement object&apos;s
+ * name (replaced recursively, if necessary).  The return value is
+ * either sha1 or a pointer to a permanently-allocated value.  When
+ * object replacement is suppressed, always return sha1.
+ */</doc>
+<use f='codebrowser/builtin/mktag.c' l='27' u='c' c='verify_object'/>
+<use f='codebrowser/object.c' l='247' u='c' c='parse_object'/>
+<use f='codebrowser/sha1_file.c' l='2980' u='c' c='sha1_object_info_extended'/>
+<use f='codebrowser/sha1_file.c' l='3102' u='c' c='read_sha1_file_extended'/>
+<use f='codebrowser/streaming.c' l='139' u='c' c='open_istream'/>

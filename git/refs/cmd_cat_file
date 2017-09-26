@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='139' type='int cmd_cat_file(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/cat-file.c' l='549' ll='636' type='int cmd_cat_file(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='373'/>
+<use f='codebrowser/git.c' l='373'/>
+<use f='codebrowser/git.c' l='373'/>
+<use f='codebrowser/git.c' l='373'/>

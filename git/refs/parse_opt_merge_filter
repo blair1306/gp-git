@@ -1,0 +1,27 @@
+<dec f='codebrowser/ref-filter.h' l='125' type='int parse_opt_merge_filter(const struct option * opt, const char * arg, int unset)'/>
+<use f='codebrowser/builtin/branch.c' l='589' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='589' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='590' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='590' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='589' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='589' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='590' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='590' macro='1' u='r'/>
+<doc f='codebrowser/ref-filter.h' l='124'>/*  Function to parse --merged and --no-merged options */</doc>
+<use f='codebrowser/builtin/for-each-ref.c' l='44' macro='1' u='r'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='44' macro='1' u='r'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='45' macro='1' u='r'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='45' macro='1' u='r'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='44' macro='1' u='r'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='44' macro='1' u='r'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='45' macro='1' u='r'/>
+<use f='codebrowser/builtin/for-each-ref.c' l='45' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='403' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='403' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='404' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='404' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='403' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='403' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='404' macro='1' u='r'/>
+<use f='codebrowser/builtin/tag.c' l='404' macro='1' u='r'/>
+<def f='codebrowser/ref-filter.c' l='2177' ll='2203' type='int parse_opt_merge_filter(const struct option * opt, const char * arg, int unset)'/>

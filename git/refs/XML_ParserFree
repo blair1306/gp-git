@@ -1,0 +1,5 @@
+<dec f='include/expat.h' l='986' type='void XML_ParserFree(XML_Parser parser)'/>
+<use f='codebrowser/http-push.c' l='916' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='1168' u='c' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1242' u='c' c='locking_available'/>
+<doc f='include/expat.h' l='984'>/* Frees memory used by the parser. */</doc>

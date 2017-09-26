@@ -1,0 +1,12 @@
+<dec f='codebrowser/mailinfo.h' l='7' type='FILE *'/>
+<use f='codebrowser/builtin/am.c' l='1259' u='w' c='parse_mail'/>
+<use f='codebrowser/builtin/am.c' l='1264' u='r' c='parse_mail'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/mailinfo.c' l='53' u='w' c='cmd_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='905' u='r' c='find_boundary'/>
+<use f='codebrowser/mailinfo.c' l='950' u='r' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='955' u='r' c='handle_boundary'/>
+<use f='codebrowser/mailinfo.c' l='1024' u='r' c='handle_body'/>
+<use f='codebrowser/mailinfo.c' l='1104' u='r' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1110' u='r' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1113' u='r' c='mailinfo'/>

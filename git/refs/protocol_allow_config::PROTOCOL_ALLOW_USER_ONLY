@@ -1,0 +1,4 @@
+<dec f='codebrowser/transport.c' l='674' type='1'/>
+<use f='codebrowser/transport.c' l='686' u='r' c='parse_protocol_config'/>
+<use f='codebrowser/transport.c' l='728' u='r' c='get_protocol_config'/>
+<use f='codebrowser/transport.c' l='742' c='is_transport_allowed'/>

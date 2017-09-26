@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache-tree.h' l='26' type='void cache_tree_free(struct cache_tree ** )'/>
+<use f='codebrowser/builtin/merge.c' l='621' u='c' c='read_tree_trivial'/>
+<use f='codebrowser/builtin/read-tree.c' l='242' u='c' c='cmd_read_tree'/>
+<def f='codebrowser/cache-tree.c' l='18' ll='33' type='void cache_tree_free(struct cache_tree ** it_p)'/>
+<use f='codebrowser/cache-tree.c' l='27' u='c' c='cache_tree_free'/>
+<use f='codebrowser/cache-tree.c' l='126' u='c' c='do_invalidate_path'/>
+<use f='codebrowser/cache-tree.c' l='215' u='c' c='discard_unused_subtrees'/>
+<use f='codebrowser/cache-tree.c' l='567' u='c' c='read_one'/>
+<use f='codebrowser/cache-tree.c' l='620' u='c' c='write_index_as_tree'/>
+<use f='codebrowser/cache-tree.c' l='690' u='c' c='prime_cache_tree'/>
+<use f='codebrowser/merge-recursive.c' l='279' u='c' c='git_merge_trees'/>
+<use f='codebrowser/read-cache.c' l='1895' u='c' c='discard_index'/>
+<use f='codebrowser/tree.c' l='190' u='c' c='read_tree'/>

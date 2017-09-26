@@ -1,0 +1,17 @@
+<dec f='codebrowser/bisect.h' l='8' type='struct commit_list * filter_skipped(struct commit_list * list, struct commit_list ** tried, int show_all, int * count, int * skipped_first)'/>
+<def f='codebrowser/bisect.c' l='482' ll='530' type='struct commit_list * filter_skipped(struct commit_list * list, struct commit_list ** tried, int show_all, int * count, int * skipped_first)'/>
+<use f='codebrowser/bisect.c' l='600' u='c' c='managed_skipped'/>
+<doc f='codebrowser/bisect.c' l='469'>/*
+ * In this function, passing a not NULL skipped_first is very special.
+ * It means that we want to know if the first commit in the list is
+ * skipped because we will want to test a commit away from it if it is
+ * indeed skipped.
+ * So if the first commit is skipped, we cannot take the shortcut to
+ * just &quot;return list&quot; when we find the first non skipped commit, we
+ * have to return a fully filtered list.
+ *
+ * We use (*skipped_first == -1) to mean &quot;it has been found that the
+ * first commit is not skipped&quot;. In this case *skipped_first is set back
+ * to 0 just before the function returns.
+ */</doc>
+<use f='codebrowser/builtin/rev-list.c' l='225' u='c' c='show_bisect_vars'/>

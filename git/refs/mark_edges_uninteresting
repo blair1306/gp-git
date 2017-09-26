@@ -1,0 +1,6 @@
+<dec f='codebrowser/list-objects.h' l='9' type='void mark_edges_uninteresting(struct rev_info * , show_edge_fn )'/>
+<use f='codebrowser/bisect.c' l='638' u='c' c='bisect_common'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2811' u='c' c='get_object_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='395' u='c' c='cmd_rev_list'/>
+<use f='codebrowser/http-push.c' l='1929' u='c' c='cmd_main'/>
+<def f='codebrowser/list-objects.c' l='148' ll='179' type='void mark_edges_uninteresting(struct rev_info * revs, show_edge_fn show_edge)'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='1828'/>
+<doc f='codebrowser/cache.h' l='1824'>/*
+ * Initializer for a &quot;struct object_info&quot; that wants no items. You may
+ * also memset() the memory to all-zeroes.
+ */</doc>
+<use f='codebrowser/builtin/cat-file.c' l='58' u='c'/>
+<use f='codebrowser/builtin/cat-file.c' l='458' u='c'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1546' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2003' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2976' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3046' u='c'/>
+<use f='codebrowser/sha1_file.c' l='3077' u='c'/>
+<use f='codebrowser/streaming.c' l='138' u='c'/>

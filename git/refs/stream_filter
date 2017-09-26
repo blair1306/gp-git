@@ -1,0 +1,22 @@
+<dec f='codebrowser/convert.h' l='114' type='int stream_filter(struct stream_filter * , const char * input, size_t * isize_p, char * output, size_t * osize_p)'/>
+<doc f='codebrowser/convert.h' l='102'>/*
+ * Use as much input up to *isize_p and fill output up to *osize_p;
+ * update isize_p and osize_p to indicate how much buffer space was
+ * consumed and filled. Return 0 on success, non-zero on error.
+ *
+ * Some filters may need to buffer the input and look-ahead inside it
+ * to decide what to output, and they may consume more than zero bytes
+ * of input and still not produce any output. After feeding all the
+ * input, pass NULL as input and keep calling this function, to let
+ * such filters know there is no more input coming and it is time for
+ * them to produce the remaining output based on the buffered input.
+ */</doc>
+<def f='codebrowser/convert.c' l='1234' ll='1236'/>
+<use f='codebrowser/convert.c' l='1414' u='c' c='cascade_filter_fn'/>
+<use f='codebrowser/convert.c' l='1428' u='c' c='cascade_filter_fn'/>
+<use f='codebrowser/convert.c' l='1447' u='c' c='cascade_filter_fn'/>
+<def f='codebrowser/convert.c' l='1671' ll='1676' type='int stream_filter(struct stream_filter * filter, const char * input, size_t * isize_p, char * output, size_t * osize_p)'/>
+<size>8</size>
+<mbr r='stream_filter::vtbl' o='0' t='struct stream_filter_vtbl *'/>
+<use f='codebrowser/streaming.c' l='215' u='c' c='read_istream_filtered'/>
+<use f='codebrowser/streaming.c' l='227' u='c' c='read_istream_filtered'/>

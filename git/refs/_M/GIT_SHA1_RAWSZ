@@ -1,0 +1,26 @@
+<dec f='codebrowser/cache.h' l='68'/>
+<use f='codebrowser/cache.h' l='942' u='c'/>
+<use f='codebrowser/cache.h' l='962' u='c'/>
+<use f='codebrowser/cache.h' l='979' u='c'/>
+<doc f='codebrowser/cache.h' l='67'>/* The length in bytes and in hex digits of an object name (SHA-1 value). */</doc>
+<use f='codebrowser/builtin/fast-export.c' l='331' u='c'/>
+<use f='codebrowser/builtin/fast-export.c' l='332' u='c'/>
+<use f='codebrowser/builtin/fast-export.c' l='339' u='c'/>
+<use f='codebrowser/builtin/patch-id.c' l='66' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='348' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='349' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='573' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='575' u='c'/>
+<use f='codebrowser/commit.c' l='151' u='c'/>
+<use f='codebrowser/fast-import.c' l='1434' u='c'/>
+<use f='codebrowser/fast-import.c' l='1481' u='c'/>
+<use f='codebrowser/hex.c' l='41' u='c'/>
+<use f='codebrowser/hex.c' l='70' u='c'/>
+<use f='codebrowser/notes.c' l='200' u='c'/>
+<use f='codebrowser/notes.c' l='439' u='c'/>
+<use f='codebrowser/notes.c' l='449' u='c'/>
+<use f='codebrowser/notes.c' l='455' u='c'/>
+<use f='codebrowser/notes.c' l='555' u='c'/>
+<use f='codebrowser/notes.c' l='660' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1607' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1612' u='c'/>

@@ -1,0 +1,8 @@
+<dec f='include/curl/curl.h' l='1956' type='char * curl_version()'/>
+<doc f='include/curl/curl.h' l='1949'>/*
+ * NAME curl_version()
+ *
+ * DESCRIPTION
+ *
+ * Returns a static ascii string of the libcurl version.
+ */</doc>

@@ -1,0 +1,15 @@
+<dec f='include/pthread.h' l='754' type='int pthread_mutex_destroy(pthread_mutex_t * __mutex)'/>
+<doc f='include/pthread.h' l='753'>/* Destroy a mutex.  */</doc>
+<use f='codebrowser/builtin/grep.c' l='257' u='c' c='wait_all'/>
+<use f='codebrowser/builtin/grep.c' l='258' u='c' c='wait_all'/>
+<use f='codebrowser/builtin/grep.c' l='259' u='c' c='wait_all'/>
+<use f='codebrowser/builtin/index-pack.c' l='167' u='c' c='cleanup_thread'/>
+<use f='codebrowser/builtin/index-pack.c' l='168' u='c' c='cleanup_thread'/>
+<use f='codebrowser/builtin/index-pack.c' l='169' u='c' c='cleanup_thread'/>
+<use f='codebrowser/builtin/index-pack.c' l='170' u='c' c='cleanup_thread'/>
+<use f='codebrowser/builtin/index-pack.c' l='172' u='c' c='cleanup_thread'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2164' u='c' c='cleanup_threaded_search'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2165' u='c' c='cleanup_threaded_search'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2166' u='c' c='cleanup_threaded_search'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2321' u='c' c='ll_find_deltas'/>
+<use f='codebrowser/name-hash.c' l='249' u='c' c='cleanup_dir_mutex'/>

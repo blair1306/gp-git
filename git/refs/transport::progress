@@ -1,0 +1,17 @@
+<dec f='codebrowser/transport.h' l='123' type='unsigned int'/>
+<offset>899</offset>
+<doc f='codebrowser/transport.h' l='117'>/**
+	 * Transports should not set this directly, and should use this
+	 * value without having to check isatty(2), -q/--quiet
+	 * (transport-&gt;verbose &lt; 0), etc. - checking has already been done
+	 * in transport_set_verbosity().
+	 **/</doc>
+<use f='codebrowser/builtin/clone.c' l='651' u='r' c='update_remote_refs'/>
+<use f='codebrowser/builtin/clone.c' l='1182' u='r' c='cmd_clone'/>
+<use f='codebrowser/transport-helper.c' l='351' u='r' c='standard_options'/>
+<use f='codebrowser/transport.c' l='103' u='r' c='fetch_refs_from_bundle'/>
+<use f='codebrowser/transport.c' l='223' u='r' c='fetch_refs_via_pack'/>
+<use f='codebrowser/transport.c' l='560' u='r' c='git_transport_push'/>
+<use f='codebrowser/transport.c' l='762' u='w' c='transport_get'/>
+<use f='codebrowser/transport.c' l='881' u='w' c='transport_set_verbosity'/>
+<use f='codebrowser/transport.c' l='883' u='w' c='transport_set_verbosity'/>

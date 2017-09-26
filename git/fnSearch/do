@@ -1,0 +1,4 @@
+do_diff_cache|do_diff_cache
+do_read_index|do_read_index
+do_for_each_ref_iterator|do_for_each_ref_iterator
+do_lookup_replace_object|do_lookup_replace_object

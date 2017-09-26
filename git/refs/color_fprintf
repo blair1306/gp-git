@@ -1,0 +1,23 @@
+<dec f='codebrowser/color.h' l='88' type='int color_fprintf(FILE * fp, const char * color, const char * fmt)'/>
+<def f='codebrowser/color.c' l='390' ll='398' type='int color_fprintf(FILE * fp, const char * color, const char * fmt)'/>
+<use f='codebrowser/wt-status.c' l='1689' u='c' c='wt_shortstatus_unmerged'/>
+<use f='codebrowser/wt-status.c' l='1707' u='c' c='wt_shortstatus_status'/>
+<use f='codebrowser/wt-status.c' l='1711' u='c' c='wt_shortstatus_status'/>
+<use f='codebrowser/wt-status.c' l='1752' u='c' c='wt_shortstatus_other'/>
+<use f='codebrowser/wt-status.c' l='1771' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1780' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1783' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1792' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1802' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1803' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1809' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1811' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1813' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1814' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1816' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1817' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1819' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1820' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1821' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1822' u='c' c='wt_shortstatus_print_tracking'/>
+<use f='codebrowser/wt-status.c' l='1825' u='c' c='wt_shortstatus_print_tracking'/>

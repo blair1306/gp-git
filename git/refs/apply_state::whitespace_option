@@ -1,0 +1,4 @@
+<dec f='codebrowser/apply.h' l='108' type='const char *'/>
+<use f='codebrowser/apply.c' l='164' u='r' c='set_default_whitespace_mode'/>
+<use f='codebrowser/apply.c' l='4785' u='w' c='apply_option_parse_whitespace'/>
+<offset>2368</offset>

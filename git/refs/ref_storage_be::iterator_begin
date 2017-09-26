@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs/refs-internal.h' l='654' type='ref_iterator_begin_fn *'/>
+<use f='codebrowser/refs.c' l='1285' u='r' c='refs_ref_iterator_begin'/>
+<offset>832</offset>

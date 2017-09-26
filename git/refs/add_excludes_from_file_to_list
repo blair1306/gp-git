@@ -1,0 +1,3 @@
+<dec f='codebrowser/dir.h' l='256' type='int add_excludes_from_file_to_list(const char * fname, const char * base, int baselen, struct exclude_list * el, struct index_state * istate)'/>
+<def f='codebrowser/dir.c' l='837' ll='842' type='int add_excludes_from_file_to_list(const char * fname, const char * base, int baselen, struct exclude_list * el, struct index_state * istate)'/>
+<use f='codebrowser/unpack-trees.c' l='1261' u='c' c='unpack_trees'/>

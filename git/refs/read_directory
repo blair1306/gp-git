@@ -1,0 +1,4 @@
+<dec f='codebrowser/dir.h' l='224' type='int read_directory(struct dir_struct * , struct index_state * istate, const char * path, int len, const struct pathspec * pathspec)'/>
+<use f='codebrowser/dir.c' l='203' u='c' c='fill_directory'/>
+<def f='codebrowser/dir.c' l='2095' ll='2158' type='int read_directory(struct dir_struct * dir, struct index_state * istate, const char * path, int len, const struct pathspec * pathspec)'/>
+<use f='codebrowser/unpack-trees.c' l='1603' u='c' c='verify_clean_subdirectory'/>

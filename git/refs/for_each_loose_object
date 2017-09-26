@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1788' type='int for_each_loose_object(each_loose_object_fn * , void * , unsigned int flags)'/>
+<use f='codebrowser/builtin/cat-file.c' l='474' u='c' c='batch_objects'/>
+<use f='codebrowser/builtin/fsck.c' l='695' u='c' c='cmd_fsck'/>
+<use f='codebrowser/reachable.c' l='150' u='c' c='add_unseen_recent_objects_to_traversal'/>
+<def f='codebrowser/sha1_file.c' l='3836' ll='3852' type='int for_each_loose_object(each_loose_object_fn * cb, void * data, unsigned int flags)'/>

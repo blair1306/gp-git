@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>attr.h source code [codebrowser/attr.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="attr_check,attr_check_item,git_attr_direction "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/attr.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='attr.h.html'>attr.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/ATTR_H">ATTR_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/ATTR_H" data-ref="_M/ATTR_H">ATTR_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/* An attribute is a pointer to this opaque structure */</i></td></tr>
+<tr><th id="5">5</th><td><b>struct</b> <dfn class="type" id="git_attr" title='git_attr' data-ref="git_attr">git_attr</dfn>;</td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><i>/* opaque structures used internally for attribute collection */</i></td></tr>
+<tr><th id="8">8</th><td><b>struct</b> <dfn class="type" id="all_attrs_item" title='all_attrs_item' data-ref="all_attrs_item">all_attrs_item</dfn>;</td></tr>
+<tr><th id="9">9</th><td><b>struct</b> <dfn class="type" id="attr_stack" title='attr_stack' data-ref="attr_stack">attr_stack</dfn>;</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><i>/*</i></td></tr>
+<tr><th id="12">12</th><td><i> * Given a string, return the gitattribute object that</i></td></tr>
+<tr><th id="13">13</th><td><i> * corresponds to it.</i></td></tr>
+<tr><th id="14">14</th><td><i> */</i></td></tr>
+<tr><th id="15">15</th><td><em>const</em> <b>struct</b> <a class="type" href="#git_attr" title='git_attr' data-ref="git_attr">git_attr</a> *<dfn class="decl" id="git_attr" title='git_attr' data-ref="git_attr">git_attr</dfn>(<em>const</em> <em>char</em> *);</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><i>/* Internal use */</i></td></tr>
+<tr><th id="18">18</th><td><b>extern</b> <em>const</em> <em>char</em> <dfn class="decl" id="git_attr__true" title='git_attr__true' data-ref="git_attr__true">git_attr__true</dfn>[];</td></tr>
+<tr><th id="19">19</th><td><b>extern</b> <em>const</em> <em>char</em> <dfn class="decl" id="git_attr__false" title='git_attr__false' data-ref="git_attr__false">git_attr__false</dfn>[];</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><i>/* For public to check git_attr_check results */</i></td></tr>
+<tr><th id="22">22</th><td><u>#define <dfn class="macro" id="_M/ATTR_TRUE" data-ref="_M/ATTR_TRUE">ATTR_TRUE</dfn>(v) ((v) == git_attr__true)</u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/ATTR_FALSE" data-ref="_M/ATTR_FALSE">ATTR_FALSE</dfn>(v) ((v) == git_attr__false)</u></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/ATTR_UNSET" data-ref="_M/ATTR_UNSET">ATTR_UNSET</dfn>(v) ((v) == NULL)</u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><i>/*</i></td></tr>
+<tr><th id="27">27</th><td><i> * Send one or more git_attr_check to git_check_attrs(), and</i></td></tr>
+<tr><th id="28">28</th><td><i> * each 'value' member tells what its value is.</i></td></tr>
+<tr><th id="29">29</th><td><i> * Unset one is returned as NULL.</i></td></tr>
+<tr><th id="30">30</th><td><i> */</i></td></tr>
+<tr><th id="31">31</th><td><b>struct</b> <dfn class="type def" id="attr_check_item" title='attr_check_item' data-ref="attr_check_item">attr_check_item</dfn> {</td></tr>
+<tr><th id="32">32</th><td>	<em>const</em> <b>struct</b> <a class="type" href="#git_attr" title='git_attr' data-ref="git_attr">git_attr</a> *<dfn class="decl" id="attr_check_item::attr" title='attr_check_item::attr' data-ref="attr_check_item::attr">attr</dfn>;</td></tr>
+<tr><th id="33">33</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="attr_check_item::value" title='attr_check_item::value' data-ref="attr_check_item::value">value</dfn>;</td></tr>
+<tr><th id="34">34</th><td>};</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><b>struct</b> <dfn class="type def" id="attr_check" title='attr_check' data-ref="attr_check">attr_check</dfn> {</td></tr>
+<tr><th id="37">37</th><td>	<em>int</em> <dfn class="decl" id="attr_check::nr" title='attr_check::nr' data-ref="attr_check::nr">nr</dfn>;</td></tr>
+<tr><th id="38">38</th><td>	<em>int</em> <dfn class="decl" id="attr_check::alloc" title='attr_check::alloc' data-ref="attr_check::alloc">alloc</dfn>;</td></tr>
+<tr><th id="39">39</th><td>	<b>struct</b> <a class="type" href="#attr_check_item" title='attr_check_item' data-ref="attr_check_item">attr_check_item</a> *<dfn class="decl" id="attr_check::items" title='attr_check::items' data-ref="attr_check::items">items</dfn>;</td></tr>
+<tr><th id="40">40</th><td>	<em>int</em> <dfn class="decl" id="attr_check::all_attrs_nr" title='attr_check::all_attrs_nr' data-ref="attr_check::all_attrs_nr">all_attrs_nr</dfn>;</td></tr>
+<tr><th id="41">41</th><td>	<b>struct</b> <a class="type" href="#all_attrs_item" title='all_attrs_item' data-ref="all_attrs_item">all_attrs_item</a> *<dfn class="decl" id="attr_check::all_attrs" title='attr_check::all_attrs' data-ref="attr_check::all_attrs">all_attrs</dfn>;</td></tr>
+<tr><th id="42">42</th><td>	<b>struct</b> <a class="type" href="#attr_stack" title='attr_stack' data-ref="attr_stack">attr_stack</a> *<dfn class="decl" id="attr_check::stack" title='attr_check::stack' data-ref="attr_check::stack">stack</dfn>;</td></tr>
+<tr><th id="43">43</th><td>};</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><b>extern</b> <b>struct</b> <a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a> *<dfn class="decl" id="attr_check_alloc" title='attr_check_alloc' data-ref="attr_check_alloc">attr_check_alloc</dfn>(<em>void</em>);</td></tr>
+<tr><th id="46">46</th><td><b>extern</b> <b>struct</b> <a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a> *<dfn class="decl" id="attr_check_initl" title='attr_check_initl' data-ref="attr_check_initl">attr_check_initl</dfn>(<em>const</em> <em>char</em> *, ...);</td></tr>
+<tr><th id="47">47</th><td><b>extern</b> <b>struct</b> <a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a> *<dfn class="decl" id="attr_check_dup" title='attr_check_dup' data-ref="attr_check_dup">attr_check_dup</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a> *<dfn class="local col9 decl" id="319check" title='check' data-type='const struct attr_check *' data-ref="319check">check</dfn>);</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><b>extern</b> <b>struct</b> <a class="type" href="#attr_check_item" title='attr_check_item' data-ref="attr_check_item">attr_check_item</a> *<dfn class="decl" id="attr_check_append" title='attr_check_append' data-ref="attr_check_append">attr_check_append</dfn>(<b>struct</b> <a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a> *<dfn class="local col0 decl" id="320check" title='check' data-type='struct attr_check *' data-ref="320check">check</dfn>,</td></tr>
+<tr><th id="50">50</th><td>						 <em>const</em> <b>struct</b> <a class="type" href="#git_attr" title='git_attr' data-ref="git_attr">git_attr</a> *<dfn class="local col1 decl" id="321attr" title='attr' data-type='const struct git_attr *' data-ref="321attr">attr</dfn>);</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="attr_check_reset" title='attr_check_reset' data-ref="attr_check_reset">attr_check_reset</dfn>(<b>struct</b> <a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a> *<dfn class="local col2 decl" id="322check" title='check' data-type='struct attr_check *' data-ref="322check">check</dfn>);</td></tr>
+<tr><th id="53">53</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="attr_check_clear" title='attr_check_clear' data-ref="attr_check_clear">attr_check_clear</dfn>(<b>struct</b> <a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a> *<dfn class="local col3 decl" id="323check" title='check' data-type='struct attr_check *' data-ref="323check">check</dfn>);</td></tr>
+<tr><th id="54">54</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="attr_check_free" title='attr_check_free' data-ref="attr_check_free">attr_check_free</dfn>(<b>struct</b> <a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a> *<dfn class="local col4 decl" id="324check" title='check' data-type='struct attr_check *' data-ref="324check">check</dfn>);</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><i>/*</i></td></tr>
+<tr><th id="57">57</th><td><i> * Return the name of the attribute represented by the argument.  The</i></td></tr>
+<tr><th id="58">58</th><td><i> * return value is a pointer to a null-delimited string that is part</i></td></tr>
+<tr><th id="59">59</th><td><i> * of the internal data structure; it should not be modified or freed.</i></td></tr>
+<tr><th id="60">60</th><td><i> */</i></td></tr>
+<tr><th id="61">61</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="git_attr_name" title='git_attr_name' data-ref="git_attr_name">git_attr_name</dfn>(<em>const</em> <b>struct</b> <a class="type" href="#git_attr" title='git_attr' data-ref="git_attr">git_attr</a> *);</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="git_check_attr" title='git_check_attr' data-ref="git_check_attr">git_check_attr</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="325path" title='path' data-type='const char *' data-ref="325path">path</dfn>, <b>struct</b> <a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a> *<dfn class="local col6 decl" id="326check" title='check' data-type='struct attr_check *' data-ref="326check">check</dfn>);</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><i>/*</i></td></tr>
+<tr><th id="66">66</th><td><i> * Retrieve all attributes that apply to the specified path.</i></td></tr>
+<tr><th id="67">67</th><td><i> * check holds the attributes and their values.</i></td></tr>
+<tr><th id="68">68</th><td><i> */</i></td></tr>
+<tr><th id="69">69</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="git_all_attrs" title='git_all_attrs' data-ref="git_all_attrs">git_all_attrs</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="327path" title='path' data-type='const char *' data-ref="327path">path</dfn>, <b>struct</b> <a class="type" href="#attr_check" title='attr_check' data-ref="attr_check">attr_check</a> *<dfn class="local col8 decl" id="328check" title='check' data-type='struct attr_check *' data-ref="328check">check</dfn>);</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><b>enum</b> <dfn class="type def" id="git_attr_direction" title='git_attr_direction' data-ref="git_attr_direction">git_attr_direction</dfn> {</td></tr>
+<tr><th id="72">72</th><td>	<dfn class="enum" id="git_attr_direction::GIT_ATTR_CHECKIN" title='git_attr_direction::GIT_ATTR_CHECKIN' data-ref="git_attr_direction::GIT_ATTR_CHECKIN">GIT_ATTR_CHECKIN</dfn>,</td></tr>
+<tr><th id="73">73</th><td>	<dfn class="enum" id="git_attr_direction::GIT_ATTR_CHECKOUT" title='git_attr_direction::GIT_ATTR_CHECKOUT' data-ref="git_attr_direction::GIT_ATTR_CHECKOUT">GIT_ATTR_CHECKOUT</dfn>,</td></tr>
+<tr><th id="74">74</th><td>	<dfn class="enum" id="git_attr_direction::GIT_ATTR_INDEX" title='git_attr_direction::GIT_ATTR_INDEX' data-ref="git_attr_direction::GIT_ATTR_INDEX">GIT_ATTR_INDEX</dfn></td></tr>
+<tr><th id="75">75</th><td>};</td></tr>
+<tr><th id="76">76</th><td><em>void</em> <dfn class="decl" id="git_attr_set_direction" title='git_attr_set_direction' data-ref="git_attr_set_direction">git_attr_set_direction</dfn>(<b>enum</b> <a class="type" href="#git_attr_direction" title='git_attr_direction' data-ref="git_attr_direction">git_attr_direction</a> <dfn class="local col9 decl" id="329new_direction" title='new_direction' data-type='enum git_attr_direction' data-ref="329new_direction">new_direction</dfn>,</td></tr>
+<tr><th id="77">77</th><td>			    <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col0 decl" id="330istate" title='istate' data-type='struct index_state *' data-ref="330istate">istate</dfn>);</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><b>extern</b> <em>void</em> <dfn class="decl" id="attr_start" title='attr_start' data-ref="attr_start">attr_start</dfn>(<em>void</em>);</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><u>#<span data-ppcond="1">endif</span> /* ATTR_H */</u></td></tr>
+<tr><th id="82">82</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='archive.c.html'>codebrowser/archive.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

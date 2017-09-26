@@ -1,0 +1,10 @@
+<dec f='codebrowser/http.h' l='112' type='int'/>
+<use f='codebrowser/http-walker.c' l='219' u='w' c='process_alternates_response'/>
+<def f='codebrowser/http.c' l='21' type='int'/>
+<use f='codebrowser/http.c' l='195' u='w' c='closedown_active_slot'/>
+<use f='codebrowser/http.c' l='1059' u='r' c='get_active_slot'/>
+<use f='codebrowser/http.c' l='1061' u='r' c='get_active_slot'/>
+<use f='codebrowser/http.c' l='1095' u='w' c='get_active_slot'/>
+<use f='codebrowser/http.c' l='1147' u='w' c='start_active_slot'/>
+<use f='codebrowser/http.c' l='1186' u='r' c='fill_active_slots'/>
+<use f='codebrowser/http.c' l='1215' u='r' c='step_active_slots'/>

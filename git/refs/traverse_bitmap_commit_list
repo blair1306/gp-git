@@ -1,0 +1,4 @@
+<dec f='codebrowser/pack-bitmap.h' l='39' type='void traverse_bitmap_commit_list(show_reachable_fn show_reachable)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2751' u='c' c='get_object_list_from_bitmap'/>
+<use f='codebrowser/builtin/rev-list.c' l='386' u='c' c='cmd_rev_list'/>
+<def f='codebrowser/pack-bitmap.c' l='806' ll='823' type='void traverse_bitmap_commit_list(show_reachable_fn show_reachable)'/>

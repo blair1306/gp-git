@@ -1,0 +1,27 @@
+<dec f='codebrowser/pathspec.h' l='27' type='unsigned int'/>
+<offset>64</offset>
+<use f='codebrowser/builtin/add.c' l='471' macro='1' u='r'/>
+<use f='codebrowser/builtin/add.c' l='471' macro='1' u='r'/>
+<use f='codebrowser/builtin/diff.c' l='77' macro='1' u='r'/>
+<use f='codebrowser/builtin/diff.c' l='77' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='143' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='143' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='384' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='384' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='395' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/dir.c' l='426' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/dir.c' l='455' u='r' c='match_pathspec'/>
+<use f='codebrowser/dir.c' l='1424' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1424' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1465' macro='1' u='r'/>
+<use f='codebrowser/dir.c' l='1465' macro='1' u='r'/>
+<use f='codebrowser/pathspec.c' l='544' u='w' c='parse_pathspec'/>
+<use f='codebrowser/pathspec.c' l='604' u='w' c='parse_pathspec'/>
+<use f='codebrowser/pathspec.c' l='617' u='r' c='parse_pathspec'/>
+<use f='codebrowser/tree-diff.c' l='592' macro='1' u='r'/>
+<use f='codebrowser/tree-diff.c' l='592' macro='1' u='r'/>
+<use f='codebrowser/tree-walk.c' l='941' macro='1' u='r'/>
+<use f='codebrowser/tree-walk.c' l='941' macro='1' u='r'/>
+<use f='codebrowser/tree-walk.c' l='951' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='978' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='1130' u='r' c='tree_entry_interesting'/>

@@ -1,0 +1,7 @@
+<def f='codebrowser/builtin/unpack-objects.c' l='32' ll='35'/>
+<size>16</size>
+<doc f='codebrowser/builtin/unpack-objects.c' l='27'>/*
+ * When running under --strict mode, objects whose reachability are
+ * suspect are kept in core without getting written in the object
+ * store.
+ */</doc>

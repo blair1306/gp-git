@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='544' type='char * prefix_path_gently(const char * prefix, int len, int * remaining, const char * path)'/>
+<use f='codebrowser/pathspec.c' l='438' u='c' c='init_pathspec_item'/>
+<def f='codebrowser/setup.c' l='89' ll='116' type='char * prefix_path_gently(const char * prefix, int len, int * remaining_prefix, const char * path)'/>
+<use f='codebrowser/setup.c' l='120' u='c' c='prefix_path'/>
+<use f='codebrowser/setup.c' l='129' u='c' c='path_inside_repo'/>
+<doc f='codebrowser/setup.c' l='78'>/*
+ * Normalize &quot;path&quot;, prepending the &quot;prefix&quot; for relative paths. If
+ * remaining_prefix is not NULL, return the actual prefix still
+ * remains in the path. For example, prefix = sub1/sub2/ and path is
+ *
+ *  foo          -&gt; sub1/sub2/foo  (full prefix)
+ *  ../foo       -&gt; sub1/foo       (remaining prefix is sub1/)
+ *  ../../bar    -&gt; bar            (no remaining prefix)
+ *  ../../sub1/sub2/foo -&gt; sub1/sub2/foo (but no remaining prefix)
+ *  `pwd`/../bar -&gt; sub1/bar       (no remaining prefix)
+ */</doc>

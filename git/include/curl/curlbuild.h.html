@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>curlbuild.h source code [include/curl/curlbuild.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/curl/curlbuild.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>curl</a>/<a href='curlbuild.h.html'>curlbuild.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* include/curl/curlbuild.h.  Generated from curlbuild.h.in by configure.  */</i></td></tr>
+<tr><th id="2">2</th><td><u>#<span data-ppcond="2">ifndef</span> <span class="macro" data-ref="_M/__CURL_CURLBUILD_H">__CURL_CURLBUILD_H</span></u></td></tr>
+<tr><th id="3">3</th><td><u>#define <dfn class="macro" id="_M/__CURL_CURLBUILD_H" data-ref="_M/__CURL_CURLBUILD_H">__CURL_CURLBUILD_H</dfn></u></td></tr>
+<tr><th id="4">4</th><td><i>/***************************************************************************</i></td></tr>
+<tr><th id="5">5</th><td><i> *                                  _   _ ____  _</i></td></tr>
+<tr><th id="6">6</th><td><i> *  Project                     ___| | | |  _ \| |</i></td></tr>
+<tr><th id="7">7</th><td><i> *                             / __| | | | |_) | |</i></td></tr>
+<tr><th id="8">8</th><td><i> *                            | (__| |_| |  _ &lt;| |___</i></td></tr>
+<tr><th id="9">9</th><td><i> *                             \___|\___/|_| \_\_____|</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Copyright (C) 1998 - 2012, Daniel Stenberg, &lt;daniel@haxx.se&gt;, et al.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * This software is licensed as described in the file COPYING, which</i></td></tr>
+<tr><th id="14">14</th><td><i> * you should have received as part of this distribution. The terms</i></td></tr>
+<tr><th id="15">15</th><td><i> * are also available at <a href="http://curl.haxx.se/docs/copyright.html">http://curl.haxx.se/docs/copyright.html</a>.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You may opt to use, copy, modify, merge, publish, distribute and/or sell</i></td></tr>
+<tr><th id="18">18</th><td><i> * copies of the Software, and permit persons to whom the Software is</i></td></tr>
+<tr><th id="19">19</th><td><i> * furnished to do so, under the terms of the COPYING file.</i></td></tr>
+<tr><th id="20">20</th><td><i> *</i></td></tr>
+<tr><th id="21">21</th><td><i> * This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY</i></td></tr>
+<tr><th id="22">22</th><td><i> * KIND, either express or implied.</i></td></tr>
+<tr><th id="23">23</th><td><i> *</i></td></tr>
+<tr><th id="24">24</th><td><i> ***************************************************************************/</i></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><i>/* ================================================================ */</i></td></tr>
+<tr><th id="27">27</th><td><i>/*               NOTES FOR CONFIGURE CAPABLE SYSTEMS                */</i></td></tr>
+<tr><th id="28">28</th><td><i>/* ================================================================ */</i></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i>/*</i></td></tr>
+<tr><th id="31">31</th><td><i> * NOTE 1:</i></td></tr>
+<tr><th id="32">32</th><td><i> * -------</i></td></tr>
+<tr><th id="33">33</th><td><i> *</i></td></tr>
+<tr><th id="34">34</th><td><i> * Nothing in this file is intended to be modified or adjusted by the</i></td></tr>
+<tr><th id="35">35</th><td><i> * curl library user nor by the curl library builder.</i></td></tr>
+<tr><th id="36">36</th><td><i> *</i></td></tr>
+<tr><th id="37">37</th><td><i> * If you think that something actually needs to be changed, adjusted</i></td></tr>
+<tr><th id="38">38</th><td><i> * or fixed in this file, then, report it on the libcurl development</i></td></tr>
+<tr><th id="39">39</th><td><i> * mailing list: <a href="http://cool.haxx.se/mailman/listinfo/curl-library/">http://cool.haxx.se/mailman/listinfo/curl-library/</a></i></td></tr>
+<tr><th id="40">40</th><td><i> *</i></td></tr>
+<tr><th id="41">41</th><td><i> * This header file shall only export symbols which are 'curl' or 'CURL'</i></td></tr>
+<tr><th id="42">42</th><td><i> * prefixed, otherwise public name space would be polluted.</i></td></tr>
+<tr><th id="43">43</th><td><i> *</i></td></tr>
+<tr><th id="44">44</th><td><i> * NOTE 2:</i></td></tr>
+<tr><th id="45">45</th><td><i> * -------</i></td></tr>
+<tr><th id="46">46</th><td><i> *</i></td></tr>
+<tr><th id="47">47</th><td><i> * Right now you might be staring at file include/curl/curlbuild.h.in or</i></td></tr>
+<tr><th id="48">48</th><td><i> * at file include/curl/curlbuild.h, this is due to the following reason:</i></td></tr>
+<tr><th id="49">49</th><td><i> *</i></td></tr>
+<tr><th id="50">50</th><td><i> * On systems capable of running the configure script, the configure process</i></td></tr>
+<tr><th id="51">51</th><td><i> * will overwrite the distributed include/curl/curlbuild.h file with one that</i></td></tr>
+<tr><th id="52">52</th><td><i> * is suitable and specific to the library being configured and built, which</i></td></tr>
+<tr><th id="53">53</th><td><i> * is generated from the include/curl/curlbuild.h.in template file.</i></td></tr>
+<tr><th id="54">54</th><td><i> *</i></td></tr>
+<tr><th id="55">55</th><td><i> */</i></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><i>/* ================================================================ */</i></td></tr>
+<tr><th id="58">58</th><td><i>/*  DEFINITION OF THESE SYMBOLS SHALL NOT TAKE PLACE ANYWHERE ELSE  */</i></td></tr>
+<tr><th id="59">59</th><td><i>/* ================================================================ */</i></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><u>#<span data-ppcond="61">ifdef</span> <span class="macro" data-ref="_M/CURL_SIZEOF_LONG">CURL_SIZEOF_LONG</span></u></td></tr>
+<tr><th id="62">62</th><td><u>#error "CURL_SIZEOF_LONG shall not be defined except in curlbuild.h"</u></td></tr>
+<tr><th id="63">63</th><td>   Error Compilation_aborted_CURL_SIZEOF_LONG_already_defined</td></tr>
+<tr><th id="64">64</th><td><u>#<span data-ppcond="61">endif</span></u></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><u>#<span data-ppcond="66">ifdef</span> <span class="macro" data-ref="_M/CURL_TYPEOF_CURL_SOCKLEN_T">CURL_TYPEOF_CURL_SOCKLEN_T</span></u></td></tr>
+<tr><th id="67">67</th><td><u>#error "CURL_TYPEOF_CURL_SOCKLEN_T shall not be defined except in curlbuild.h"</u></td></tr>
+<tr><th id="68">68</th><td>   Error Compilation_aborted_CURL_TYPEOF_CURL_SOCKLEN_T_already_defined</td></tr>
+<tr><th id="69">69</th><td><u>#<span data-ppcond="66">endif</span></u></td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><u>#<span data-ppcond="71">ifdef</span> <span class="macro" data-ref="_M/CURL_SIZEOF_CURL_SOCKLEN_T">CURL_SIZEOF_CURL_SOCKLEN_T</span></u></td></tr>
+<tr><th id="72">72</th><td><u>#error "CURL_SIZEOF_CURL_SOCKLEN_T shall not be defined except in curlbuild.h"</u></td></tr>
+<tr><th id="73">73</th><td>   Error Compilation_aborted_CURL_SIZEOF_CURL_SOCKLEN_T_already_defined</td></tr>
+<tr><th id="74">74</th><td><u>#<span data-ppcond="71">endif</span></u></td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><u>#<span data-ppcond="76">ifdef</span> <span class="macro" data-ref="_M/CURL_TYPEOF_CURL_OFF_T">CURL_TYPEOF_CURL_OFF_T</span></u></td></tr>
+<tr><th id="77">77</th><td><u>#error "CURL_TYPEOF_CURL_OFF_T shall not be defined except in curlbuild.h"</u></td></tr>
+<tr><th id="78">78</th><td>   Error Compilation_aborted_CURL_TYPEOF_CURL_OFF_T_already_defined</td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="76">endif</span></u></td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><u>#<span data-ppcond="81">ifdef</span> <span class="macro" data-ref="_M/CURL_FORMAT_CURL_OFF_T">CURL_FORMAT_CURL_OFF_T</span></u></td></tr>
+<tr><th id="82">82</th><td><u>#error "CURL_FORMAT_CURL_OFF_T shall not be defined except in curlbuild.h"</u></td></tr>
+<tr><th id="83">83</th><td>   Error Compilation_aborted_CURL_FORMAT_CURL_OFF_T_already_defined</td></tr>
+<tr><th id="84">84</th><td><u>#<span data-ppcond="81">endif</span></u></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><u>#<span data-ppcond="86">ifdef</span> <span class="macro" data-ref="_M/CURL_FORMAT_CURL_OFF_TU">CURL_FORMAT_CURL_OFF_TU</span></u></td></tr>
+<tr><th id="87">87</th><td><u>#error "CURL_FORMAT_CURL_OFF_TU shall not be defined except in curlbuild.h"</u></td></tr>
+<tr><th id="88">88</th><td>   Error Compilation_aborted_CURL_FORMAT_CURL_OFF_TU_already_defined</td></tr>
+<tr><th id="89">89</th><td><u>#<span data-ppcond="86">endif</span></u></td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><u>#<span data-ppcond="91">ifdef</span> <span class="macro" data-ref="_M/CURL_FORMAT_OFF_T">CURL_FORMAT_OFF_T</span></u></td></tr>
+<tr><th id="92">92</th><td><u>#error "CURL_FORMAT_OFF_T shall not be defined except in curlbuild.h"</u></td></tr>
+<tr><th id="93">93</th><td>   Error Compilation_aborted_CURL_FORMAT_OFF_T_already_defined</td></tr>
+<tr><th id="94">94</th><td><u>#<span data-ppcond="91">endif</span></u></td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><u>#<span data-ppcond="96">ifdef</span> <span class="macro" data-ref="_M/CURL_SIZEOF_CURL_OFF_T">CURL_SIZEOF_CURL_OFF_T</span></u></td></tr>
+<tr><th id="97">97</th><td><u>#error "CURL_SIZEOF_CURL_OFF_T shall not be defined except in curlbuild.h"</u></td></tr>
+<tr><th id="98">98</th><td>   Error Compilation_aborted_CURL_SIZEOF_CURL_OFF_T_already_defined</td></tr>
+<tr><th id="99">99</th><td><u>#<span data-ppcond="96">endif</span></u></td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><u>#<span data-ppcond="101">ifdef</span> <span class="macro" data-ref="_M/CURL_SUFFIX_CURL_OFF_T">CURL_SUFFIX_CURL_OFF_T</span></u></td></tr>
+<tr><th id="102">102</th><td><u>#error "CURL_SUFFIX_CURL_OFF_T shall not be defined except in curlbuild.h"</u></td></tr>
+<tr><th id="103">103</th><td>   Error Compilation_aborted_CURL_SUFFIX_CURL_OFF_T_already_defined</td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="101">endif</span></u></td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><u>#<span data-ppcond="106">ifdef</span> <span class="macro" data-ref="_M/CURL_SUFFIX_CURL_OFF_TU">CURL_SUFFIX_CURL_OFF_TU</span></u></td></tr>
+<tr><th id="107">107</th><td><u>#error "CURL_SUFFIX_CURL_OFF_TU shall not be defined except in curlbuild.h"</u></td></tr>
+<tr><th id="108">108</th><td>   Error Compilation_aborted_CURL_SUFFIX_CURL_OFF_TU_already_defined</td></tr>
+<tr><th id="109">109</th><td><u>#<span data-ppcond="106">endif</span></u></td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><i>/* ================================================================ */</i></td></tr>
+<tr><th id="112">112</th><td><i>/*  EXTERNAL INTERFACE SETTINGS FOR CONFIGURE CAPABLE SYSTEMS ONLY  */</i></td></tr>
+<tr><th id="113">113</th><td><i>/* ================================================================ */</i></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><i>/* Configure process defines this to 1 when it finds out that system  */</i></td></tr>
+<tr><th id="116">116</th><td><i>/* header file ws2tcpip.h must be included by the external interface. */</i></td></tr>
+<tr><th id="117">117</th><td><i>/* #undef CURL_PULL_WS2TCPIP_H */</i></td></tr>
+<tr><th id="118">118</th><td><u>#<span data-ppcond="118">ifdef</span> <span class="macro" data-ref="_M/CURL_PULL_WS2TCPIP_H">CURL_PULL_WS2TCPIP_H</span></u></td></tr>
+<tr><th id="119">119</th><td><u>#  ifndef WIN32_LEAN_AND_MEAN</u></td></tr>
+<tr><th id="120">120</th><td><u>#    define WIN32_LEAN_AND_MEAN</u></td></tr>
+<tr><th id="121">121</th><td><u>#  endif</u></td></tr>
+<tr><th id="122">122</th><td><u>#  include &lt;windows.h&gt;</u></td></tr>
+<tr><th id="123">123</th><td><u>#  include &lt;winsock2.h&gt;</u></td></tr>
+<tr><th id="124">124</th><td><u>#  include &lt;ws2tcpip.h&gt;</u></td></tr>
+<tr><th id="125">125</th><td><u>#<span data-ppcond="118">endif</span></u></td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><i>/* Configure process defines this to 1 when it finds out that system   */</i></td></tr>
+<tr><th id="128">128</th><td><i>/* header file sys/types.h must be included by the external interface. */</i></td></tr>
+<tr><th id="129">129</th><td><u>#define <dfn class="macro" id="_M/CURL_PULL_SYS_TYPES_H" data-ref="_M/CURL_PULL_SYS_TYPES_H">CURL_PULL_SYS_TYPES_H</dfn> 1</u></td></tr>
+<tr><th id="130">130</th><td><u>#<span data-ppcond="130">ifdef</span> <a class="macro" href="#129" data-ref="_M/CURL_PULL_SYS_TYPES_H">CURL_PULL_SYS_TYPES_H</a></u></td></tr>
+<tr><th id="131">131</th><td><u>#  include <a href="../x86_64-linux-gnu/sys/types.h.html">&lt;sys/types.h&gt;</a></u></td></tr>
+<tr><th id="132">132</th><td><u>#<span data-ppcond="130">endif</span></u></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><i>/* Configure process defines this to 1 when it finds out that system */</i></td></tr>
+<tr><th id="135">135</th><td><i>/* header file stdint.h must be included by the external interface.  */</i></td></tr>
+<tr><th id="136">136</th><td><i>/* #undef CURL_PULL_STDINT_H */</i></td></tr>
+<tr><th id="137">137</th><td><u>#<span data-ppcond="137">ifdef</span> <span class="macro" data-ref="_M/CURL_PULL_STDINT_H">CURL_PULL_STDINT_H</span></u></td></tr>
+<tr><th id="138">138</th><td><u>#  include &lt;stdint.h&gt;</u></td></tr>
+<tr><th id="139">139</th><td><u>#<span data-ppcond="137">endif</span></u></td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><i>/* Configure process defines this to 1 when it finds out that system  */</i></td></tr>
+<tr><th id="142">142</th><td><i>/* header file inttypes.h must be included by the external interface. */</i></td></tr>
+<tr><th id="143">143</th><td><i>/* #undef CURL_PULL_INTTYPES_H */</i></td></tr>
+<tr><th id="144">144</th><td><u>#<span data-ppcond="144">ifdef</span> <span class="macro" data-ref="_M/CURL_PULL_INTTYPES_H">CURL_PULL_INTTYPES_H</span></u></td></tr>
+<tr><th id="145">145</th><td><u>#  include &lt;inttypes.h&gt;</u></td></tr>
+<tr><th id="146">146</th><td><u>#<span data-ppcond="144">endif</span></u></td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><i>/* Configure process defines this to 1 when it finds out that system    */</i></td></tr>
+<tr><th id="149">149</th><td><i>/* header file sys/socket.h must be included by the external interface. */</i></td></tr>
+<tr><th id="150">150</th><td><u>#define <dfn class="macro" id="_M/CURL_PULL_SYS_SOCKET_H" data-ref="_M/CURL_PULL_SYS_SOCKET_H">CURL_PULL_SYS_SOCKET_H</dfn> 1</u></td></tr>
+<tr><th id="151">151</th><td><u>#<span data-ppcond="151">ifdef</span> <a class="macro" href="#150" data-ref="_M/CURL_PULL_SYS_SOCKET_H">CURL_PULL_SYS_SOCKET_H</a></u></td></tr>
+<tr><th id="152">152</th><td><u>#  include <a href="../x86_64-linux-gnu/sys/socket.h.html">&lt;sys/socket.h&gt;</a></u></td></tr>
+<tr><th id="153">153</th><td><u>#<span data-ppcond="151">endif</span></u></td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><i>/* Configure process defines this to 1 when it finds out that system  */</i></td></tr>
+<tr><th id="156">156</th><td><i>/* header file sys/poll.h must be included by the external interface. */</i></td></tr>
+<tr><th id="157">157</th><td><i>/* #undef CURL_PULL_SYS_POLL_H */</i></td></tr>
+<tr><th id="158">158</th><td><u>#<span data-ppcond="158">ifdef</span> <span class="macro" data-ref="_M/CURL_PULL_SYS_POLL_H">CURL_PULL_SYS_POLL_H</span></u></td></tr>
+<tr><th id="159">159</th><td><u>#  include &lt;sys/poll.h&gt;</u></td></tr>
+<tr><th id="160">160</th><td><u>#<span data-ppcond="158">endif</span></u></td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td><i>/* The size of `long', as computed by sizeof. */</i></td></tr>
+<tr><th id="163">163</th><td><u>#define <dfn class="macro" id="_M/CURL_SIZEOF_LONG" data-ref="_M/CURL_SIZEOF_LONG">CURL_SIZEOF_LONG</dfn> 8</u></td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><i>/* Integral data type used for curl_socklen_t. */</i></td></tr>
+<tr><th id="166">166</th><td><u>#define <dfn class="macro" id="_M/CURL_TYPEOF_CURL_SOCKLEN_T" data-ref="_M/CURL_TYPEOF_CURL_SOCKLEN_T">CURL_TYPEOF_CURL_SOCKLEN_T</dfn> <a class="typedef" href="../unistd.h.html#socklen_t" title='socklen_t' data-type='__socklen_t' data-ref="socklen_t">socklen_t</a></u></td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><i>/* The size of `curl_socklen_t', as computed by sizeof. */</i></td></tr>
+<tr><th id="169">169</th><td><u>#define <dfn class="macro" id="_M/CURL_SIZEOF_CURL_SOCKLEN_T" data-ref="_M/CURL_SIZEOF_CURL_SOCKLEN_T">CURL_SIZEOF_CURL_SOCKLEN_T</dfn> 4</u></td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td><i>/* Data type definition of curl_socklen_t. */</i></td></tr>
+<tr><th id="172">172</th><td><b>typedef</b> <a class="macro" href="#166" title="socklen_t" data-ref="_M/CURL_TYPEOF_CURL_SOCKLEN_T">CURL_TYPEOF_CURL_SOCKLEN_T</a> <dfn class="typedef" id="curl_socklen_t" title='curl_socklen_t' data-type='socklen_t' data-ref="curl_socklen_t">curl_socklen_t</dfn>;</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><i>/* Signed integral data type used for curl_off_t. */</i></td></tr>
+<tr><th id="175">175</th><td><u>#define <dfn class="macro" id="_M/CURL_TYPEOF_CURL_OFF_T" data-ref="_M/CURL_TYPEOF_CURL_OFF_T">CURL_TYPEOF_CURL_OFF_T</dfn> long</u></td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td><i>/* Data type definition of curl_off_t. */</i></td></tr>
+<tr><th id="178">178</th><td><b>typedef</b> <a class="macro" href="#175" title="long" data-ref="_M/CURL_TYPEOF_CURL_OFF_T">CURL_TYPEOF_CURL_OFF_T</a> <dfn class="typedef" id="curl_off_t" title='curl_off_t' data-type='long' data-ref="curl_off_t">curl_off_t</dfn>;</td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td><i>/* curl_off_t formatting string directive without "%" conversion specifier. */</i></td></tr>
+<tr><th id="181">181</th><td><u>#define <dfn class="macro" id="_M/CURL_FORMAT_CURL_OFF_T" data-ref="_M/CURL_FORMAT_CURL_OFF_T">CURL_FORMAT_CURL_OFF_T</dfn> "ld"</u></td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td><i>/* unsigned curl_off_t formatting string without "%" conversion specifier. */</i></td></tr>
+<tr><th id="184">184</th><td><u>#define <dfn class="macro" id="_M/CURL_FORMAT_CURL_OFF_TU" data-ref="_M/CURL_FORMAT_CURL_OFF_TU">CURL_FORMAT_CURL_OFF_TU</dfn> "lu"</u></td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><i>/* curl_off_t formatting string directive with "%" conversion specifier. */</i></td></tr>
+<tr><th id="187">187</th><td><u>#define <dfn class="macro" id="_M/CURL_FORMAT_OFF_T" data-ref="_M/CURL_FORMAT_OFF_T">CURL_FORMAT_OFF_T</dfn> "%ld"</u></td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><i>/* The size of `curl_off_t', as computed by sizeof. */</i></td></tr>
+<tr><th id="190">190</th><td><u>#define <dfn class="macro" id="_M/CURL_SIZEOF_CURL_OFF_T" data-ref="_M/CURL_SIZEOF_CURL_OFF_T">CURL_SIZEOF_CURL_OFF_T</dfn> 8</u></td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td><i>/* curl_off_t constant suffix. */</i></td></tr>
+<tr><th id="193">193</th><td><u>#define <dfn class="macro" id="_M/CURL_SUFFIX_CURL_OFF_T" data-ref="_M/CURL_SUFFIX_CURL_OFF_T">CURL_SUFFIX_CURL_OFF_T</dfn> L</u></td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td><i>/* unsigned curl_off_t constant suffix. */</i></td></tr>
+<tr><th id="196">196</th><td><u>#define <dfn class="macro" id="_M/CURL_SUFFIX_CURL_OFF_TU" data-ref="_M/CURL_SUFFIX_CURL_OFF_TU">CURL_SUFFIX_CURL_OFF_TU</dfn> UL</u></td></tr>
+<tr><th id="197">197</th><td></td></tr>
+<tr><th id="198">198</th><td><u>#<span data-ppcond="2">endif</span> /* __CURL_CURLBUILD_H */</u></td></tr>
+<tr><th id="199">199</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../codebrowser/http-fetch.c.html'>codebrowser/http-fetch.c</a><br/>Generated on <em>2017-Aug-29</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

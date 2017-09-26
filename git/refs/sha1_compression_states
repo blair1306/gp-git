@@ -1,0 +1,4 @@
+<dec f='codebrowser/sha1dc/sha1.h' l='21' type='void sha1_compression_states(uint32_t * , const uint32_t * , uint32_t * , uint32_t (*)[5] )'/>
+<doc f='codebrowser/sha1dc/sha1.h' l='20'>/* only stores states ii (the state between step ii-1 and step ii) when DOSTORESTATEii is defined in ubc_check.h */</doc>
+<def f='codebrowser/sha1dc/sha1.c' l='374' ll='789' type='void sha1_compression_states(uint32_t * ihv, const uint32_t * m, uint32_t * W, uint32_t (*)[5] states)'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1716' u='c' c='sha1_process'/>

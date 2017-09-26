@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>oidset.c source code [codebrowser/oidset.c] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="oidset_entry "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/oidset.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='oidset.c.html'>oidset.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="oidset.h.html">"oidset.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="oidset_entry" title='oidset_entry' data-ref="oidset_entry">oidset_entry</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<b>struct</b> <a class="type" href="hashmap.h.html#hashmap_entry" title='hashmap_entry' data-ref="hashmap_entry">hashmap_entry</a> <dfn class="tu decl" id="oidset_entry::hash" title='oidset_entry::hash' data-type='struct hashmap_entry' data-ref="oidset_entry::hash">hash</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> <dfn class="tu decl" id="oidset_entry::oid" title='oidset_entry::oid' data-type='struct object_id' data-ref="oidset_entry::oid">oid</dfn>;</td></tr>
+<tr><th id="7">7</th><td>};</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="oidset_hashcmp" title='oidset_hashcmp' data-type='int oidset_hashcmp(const void * unused_cmp_data, const void * va, const void * vb, const void * vkey)' data-ref="oidset_hashcmp">oidset_hashcmp</dfn>(<em>const</em> <em>void</em> *<dfn class="local col1 decl" id="1unused_cmp_data" title='unused_cmp_data' data-type='const void *' data-ref="1unused_cmp_data">unused_cmp_data</dfn>,</td></tr>
+<tr><th id="10">10</th><td>			  <em>const</em> <em>void</em> *<dfn class="local col2 decl" id="2va" title='va' data-type='const void *' data-ref="2va">va</dfn>, <em>const</em> <em>void</em> *<dfn class="local col3 decl" id="3vb" title='vb' data-type='const void *' data-ref="3vb">vb</dfn>,</td></tr>
+<tr><th id="11">11</th><td>			  <em>const</em> <em>void</em> *<dfn class="local col4 decl" id="4vkey" title='vkey' data-type='const void *' data-ref="4vkey">vkey</dfn>)</td></tr>
+<tr><th id="12">12</th><td>{</td></tr>
+<tr><th id="13">13</th><td>	<em>const</em> <b>struct</b> <a class="type" href="#oidset_entry" title='oidset_entry' data-ref="oidset_entry">oidset_entry</a> *<dfn class="local col5 decl" id="5a" title='a' data-type='const struct oidset_entry *' data-ref="5a">a</dfn> = <a class="local col2 ref" href="#2va" title='va' data-ref="2va">va</a>, *<dfn class="local col6 decl" id="6b" title='b' data-type='const struct oidset_entry *' data-ref="6b">b</dfn> = <a class="local col3 ref" href="#3vb" title='vb' data-ref="3vb">vb</a>;</td></tr>
+<tr><th id="14">14</th><td>	<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col7 decl" id="7key" title='key' data-type='const struct object_id *' data-ref="7key">key</dfn> = <a class="local col4 ref" href="#4vkey" title='vkey' data-ref="4vkey">vkey</a>;</td></tr>
+<tr><th id="15">15</th><td>	<b>return</b> <a class="ref" href="cache.h.html#oidcmp" title='oidcmp' data-ref="oidcmp">oidcmp</a>(&amp;<a class="local col5 ref" href="#5a" title='a' data-ref="5a">a</a>-&gt;<a class="tu ref" href="#oidset_entry::oid" title='oidset_entry::oid' data-use='a' data-ref="oidset_entry::oid">oid</a>, <a class="local col7 ref" href="#7key" title='key' data-ref="7key">key</a> ? <a class="local col7 ref" href="#7key" title='key' data-ref="7key">key</a> : &amp;<a class="local col6 ref" href="#6b" title='b' data-ref="6b">b</a>-&gt;<a class="tu ref" href="#oidset_entry::oid" title='oidset_entry::oid' data-use='a' data-ref="oidset_entry::oid">oid</a>);</td></tr>
+<tr><th id="16">16</th><td>}</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><em>int</em> <dfn class="decl def" id="oidset_contains" title='oidset_contains' data-ref="oidset_contains">oidset_contains</dfn>(<em>const</em> <b>struct</b> <a class="type" href="oidset.h.html#oidset" title='oidset' data-ref="oidset">oidset</a> *<dfn class="local col8 decl" id="8set" title='set' data-type='const struct oidset *' data-ref="8set">set</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col9 decl" id="9oid" title='oid' data-type='const struct object_id *' data-ref="9oid">oid</dfn>)</td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td>	<b>struct</b> <a class="type" href="hashmap.h.html#hashmap_entry" title='hashmap_entry' data-ref="hashmap_entry">hashmap_entry</a> <dfn class="local col0 decl" id="10key" title='key' data-type='struct hashmap_entry' data-ref="10key">key</dfn>;</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td>	<b>if</b> (!<a class="local col8 ref" href="#8set" title='set' data-ref="8set">set</a>-&gt;<a class="ref" href="oidset.h.html#oidset::map" title='oidset::map' data-ref="oidset::map">map</a>.<a class="ref" href="hashmap.h.html#hashmap::cmpfn" title='hashmap::cmpfn' data-ref="hashmap::cmpfn">cmpfn</a>)</td></tr>
+<tr><th id="23">23</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td>	<a class="ref" href="hashmap.h.html#hashmap_entry_init" title='hashmap_entry_init' data-ref="hashmap_entry_init">hashmap_entry_init</a>(&amp;<a class="local col0 ref" href="#10key" title='key' data-ref="10key">key</a>, <a class="ref" href="hashmap.h.html#sha1hash" title='sha1hash' data-ref="sha1hash">sha1hash</a>(<a class="local col9 ref" href="#9oid" title='oid' data-ref="9oid">oid</a>-&gt;<a class="ref" href="cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>));</td></tr>
+<tr><th id="26">26</th><td>	<b>return</b> !!<a class="ref" href="hashmap.h.html#hashmap_get" title='hashmap_get' data-ref="hashmap_get">hashmap_get</a>(&amp;<a class="local col8 ref" href="#8set" title='set' data-ref="8set">set</a>-&gt;<a class="ref" href="oidset.h.html#oidset::map" title='oidset::map' data-ref="oidset::map">map</a>, &amp;<a class="local col0 ref" href="#10key" title='key' data-ref="10key">key</a>, <a class="local col9 ref" href="#9oid" title='oid' data-ref="9oid">oid</a>);</td></tr>
+<tr><th id="27">27</th><td>}</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><em>int</em> <dfn class="decl def" id="oidset_insert" title='oidset_insert' data-ref="oidset_insert">oidset_insert</dfn>(<b>struct</b> <a class="type" href="oidset.h.html#oidset" title='oidset' data-ref="oidset">oidset</a> *<dfn class="local col1 decl" id="11set" title='set' data-type='struct oidset *' data-ref="11set">set</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col2 decl" id="12oid" title='oid' data-type='const struct object_id *' data-ref="12oid">oid</dfn>)</td></tr>
+<tr><th id="30">30</th><td>{</td></tr>
+<tr><th id="31">31</th><td>	<b>struct</b> <a class="type" href="#oidset_entry" title='oidset_entry' data-ref="oidset_entry">oidset_entry</a> *<dfn class="local col3 decl" id="13entry" title='entry' data-type='struct oidset_entry *' data-ref="13entry">entry</dfn>;</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>	<b>if</b> (!<a class="local col1 ref" href="#11set" title='set' data-ref="11set">set</a>-&gt;<a class="ref" href="oidset.h.html#oidset::map" title='oidset::map' data-ref="oidset::map">map</a>.<a class="ref" href="hashmap.h.html#hashmap::cmpfn" title='hashmap::cmpfn' data-ref="hashmap::cmpfn">cmpfn</a>)</td></tr>
+<tr><th id="34">34</th><td>		<a class="ref" href="hashmap.h.html#hashmap_init" title='hashmap_init' data-ref="hashmap_init">hashmap_init</a>(&amp;<a class="local col1 ref" href="#11set" title='set' data-ref="11set">set</a>-&gt;<a class="ref" href="oidset.h.html#oidset::map" title='oidset::map' data-ref="oidset::map">map</a>, <a class="tu ref" href="#oidset_hashcmp" title='oidset_hashcmp' data-use='r' data-ref="oidset_hashcmp">oidset_hashcmp</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <var>0</var>);</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>	<b>if</b> (<a class="ref" href="#oidset_contains" title='oidset_contains' data-ref="oidset_contains">oidset_contains</a>(<a class="local col1 ref" href="#11set" title='set' data-ref="11set">set</a>, <a class="local col2 ref" href="#12oid" title='oid' data-ref="12oid">oid</a>))</td></tr>
+<tr><th id="37">37</th><td>		<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td>	<a class="local col3 ref" href="#13entry" title='entry' data-ref="13entry">entry</a> = <a class="ref" href="git-compat-util.h.html#xmalloc" title='xmalloc' data-ref="xmalloc">xmalloc</a>(<b>sizeof</b>(*<a class="local col3 ref" href="#13entry" title='entry' data-ref="13entry">entry</a>));</td></tr>
+<tr><th id="40">40</th><td>	<a class="ref" href="hashmap.h.html#hashmap_entry_init" title='hashmap_entry_init' data-ref="hashmap_entry_init">hashmap_entry_init</a>(&amp;<a class="local col3 ref" href="#13entry" title='entry' data-ref="13entry">entry</a>-&gt;<a class="tu ref" href="#oidset_entry::hash" title='oidset_entry::hash' data-use='a' data-ref="oidset_entry::hash">hash</a>, <a class="ref" href="hashmap.h.html#sha1hash" title='sha1hash' data-ref="sha1hash">sha1hash</a>(<a class="local col2 ref" href="#12oid" title='oid' data-ref="12oid">oid</a>-&gt;<a class="ref" href="cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>));</td></tr>
+<tr><th id="41">41</th><td>	<a class="ref" href="cache.h.html#oidcpy" title='oidcpy' data-ref="oidcpy">oidcpy</a>(&amp;<a class="local col3 ref" href="#13entry" title='entry' data-ref="13entry">entry</a>-&gt;<a class="tu ref" href="#oidset_entry::oid" title='oidset_entry::oid' data-use='a' data-ref="oidset_entry::oid">oid</a>, <a class="local col2 ref" href="#12oid" title='oid' data-ref="12oid">oid</a>);</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>	<a class="ref" href="hashmap.h.html#hashmap_add" title='hashmap_add' data-ref="hashmap_add">hashmap_add</a>(&amp;<a class="local col1 ref" href="#11set" title='set' data-ref="11set">set</a>-&gt;<a class="ref" href="oidset.h.html#oidset::map" title='oidset::map' data-ref="oidset::map">map</a>, <a class="local col3 ref" href="#13entry" title='entry' data-ref="13entry">entry</a>);</td></tr>
+<tr><th id="44">44</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="45">45</th><td>}</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><em>void</em> <dfn class="decl def" id="oidset_clear" title='oidset_clear' data-ref="oidset_clear">oidset_clear</dfn>(<b>struct</b> <a class="type" href="oidset.h.html#oidset" title='oidset' data-ref="oidset">oidset</a> *<dfn class="local col4 decl" id="14set" title='set' data-type='struct oidset *' data-ref="14set">set</dfn>)</td></tr>
+<tr><th id="48">48</th><td>{</td></tr>
+<tr><th id="49">49</th><td>	<a class="ref" href="hashmap.h.html#hashmap_free" title='hashmap_free' data-ref="hashmap_free">hashmap_free</a>(&amp;<a class="local col4 ref" href="#14set" title='set' data-ref="14set">set</a>-&gt;<a class="ref" href="oidset.h.html#oidset::map" title='oidset::map' data-ref="oidset::map">map</a>, <var>1</var>);</td></tr>
+<tr><th id="50">50</th><td>}</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

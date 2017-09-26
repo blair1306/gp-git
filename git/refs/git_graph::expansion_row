@@ -1,0 +1,16 @@
+<dec f='codebrowser/graph.c' l='150' type='int'/>
+<use f='codebrowser/graph.c' l='283' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='638' u='w' c='graph_update'/>
+<use f='codebrowser/graph.c' l='777' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='778' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='790' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='791' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='792' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='808' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='825' u='w' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='826' u='r' c='graph_output_pre_commit_line'/>
+<offset>192</offset>
+<doc f='codebrowser/graph.c' l='146'>/*
+	 * The next expansion row to print
+	 * when state is GRAPH_PRE_COMMIT
+	 */</doc>

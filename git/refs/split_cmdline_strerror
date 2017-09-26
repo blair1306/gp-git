@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1975' type='const char * split_cmdline_strerror(int cmdline_errno)'/>
+<doc f='codebrowser/cache.h' l='1974'>/* Takes a negative value returned by split_cmdline */</doc>
+<def f='codebrowser/alias.c' l='87' ll='90' type='const char * split_cmdline_strerror(int split_cmdline_errno)'/>
+<use f='codebrowser/builtin/merge.c' l='540' u='c' c='parse_branch_merge_options'/>
+<use f='codebrowser/git.c' l='252' u='c' c='handle_alias'/>
+<use f='codebrowser/pager.c' l='79' u='c' c='setup_pager_env'/>
+<use f='codebrowser/shell.c' l='102' u='c' c='run_shell'/>
+<use f='codebrowser/shell.c' l='210' u='c' c='cmd_main'/>

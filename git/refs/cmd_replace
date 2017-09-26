@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='244' type='int cmd_replace(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/replace.c' l='424' ll='505' type='int cmd_replace(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='452'/>
+<use f='codebrowser/git.c' l='452'/>
+<use f='codebrowser/git.c' l='452'/>
+<use f='codebrowser/git.c' l='452'/>

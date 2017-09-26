@@ -1,0 +1,8 @@
+<dec f='codebrowser/hashmap.h' l='113' type='unsigned int memihash_cont(unsigned int hash_seed, const void * buf, size_t len)'/>
+<def f='codebrowser/hashmap.c' l='57' ll='68' type='unsigned int memihash_cont(unsigned int hash_seed, const void * buf, size_t len)'/>
+<doc f='codebrowser/hashmap.c' l='53'>/*
+ * Incoporate another chunk of data into a memihash
+ * computation.
+ */</doc>
+<use f='codebrowser/name-hash.c' l='287' u='c' c='hash_dir_entry_with_parent_and_prefix'/>
+<use f='codebrowser/name-hash.c' l='444' u='c' c='handle_range_1'/>

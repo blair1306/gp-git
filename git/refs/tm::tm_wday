@@ -1,0 +1,6 @@
+<dec f='include/time.h' l='141' type='int'/>
+<offset>192</offset>
+<use f='codebrowser/date.c' l='254' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='262' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='374' u='w' c='match_alpha'/>
+<use f='codebrowser/date.c' l='1052' u='r' c='approxidate_alpha'/>

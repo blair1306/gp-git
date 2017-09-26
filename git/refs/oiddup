@@ -1,0 +1,2 @@
+<def f='codebrowser/cache.h' l='970' ll='975' type='struct object_id * oiddup(const struct object_id * src)'/>
+<use f='codebrowser/grep.c' l='1931' u='c' c='grep_source_init'/>

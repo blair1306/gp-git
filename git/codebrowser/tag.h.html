@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>tag.h source code [codebrowser/tag.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="tag "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/tag.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='tag.h.html'>tag.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/TAG_H">TAG_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/TAG_H" data-ref="_M/TAG_H">TAG_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="object.h.html">"object.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="tag_type" title='tag_type' data-ref="tag_type">tag_type</dfn>;</td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>struct</b> <dfn class="type def" id="tag" title='tag' data-ref="tag">tag</dfn> {</td></tr>
+<tr><th id="9">9</th><td>	<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> <dfn class="decl" id="tag::object" title='tag::object' data-ref="tag::object">object</dfn>;</td></tr>
+<tr><th id="10">10</th><td>	<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="tag::tagged" title='tag::tagged' data-ref="tag::tagged">tagged</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	<em>char</em> *<dfn class="decl" id="tag::tag" title='tag::tag' data-ref="tag::tag">tag</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<a class="typedef" href="git-compat-util.h.html#timestamp_t" title='timestamp_t' data-type='uintmax_t' data-ref="timestamp_t">timestamp_t</a> <dfn class="decl" id="tag::date" title='tag::date' data-ref="tag::date">date</dfn>;</td></tr>
+<tr><th id="13">13</th><td>};</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>extern</b> <b>struct</b> <a class="type" href="#tag" title='tag' data-ref="tag">tag</a> *<dfn class="decl" id="lookup_tag" title='lookup_tag' data-ref="lookup_tag">lookup_tag</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col6 decl" id="256oid" title='oid' data-type='const struct object_id *' data-ref="256oid">oid</dfn>);</td></tr>
+<tr><th id="16">16</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_tag_buffer" title='parse_tag_buffer' data-ref="parse_tag_buffer">parse_tag_buffer</dfn>(<b>struct</b> <a class="type" href="#tag" title='tag' data-ref="tag">tag</a> *<dfn class="local col7 decl" id="257item" title='item' data-type='struct tag *' data-ref="257item">item</dfn>, <em>const</em> <em>void</em> *<dfn class="local col8 decl" id="258data" title='data' data-type='const void *' data-ref="258data">data</dfn>, <em>unsigned</em> <em>long</em> <dfn class="local col9 decl" id="259size" title='size' data-type='unsigned long' data-ref="259size">size</dfn>);</td></tr>
+<tr><th id="17">17</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="parse_tag" title='parse_tag' data-ref="parse_tag">parse_tag</dfn>(<b>struct</b> <a class="type" href="#tag" title='tag' data-ref="tag">tag</a> *<dfn class="local col0 decl" id="260item" title='item' data-type='struct tag *' data-ref="260item">item</dfn>);</td></tr>
+<tr><th id="18">18</th><td><b>extern</b> <b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="deref_tag" title='deref_tag' data-ref="deref_tag">deref_tag</dfn>(<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *, <em>const</em> <em>char</em> *, <em>int</em>);</td></tr>
+<tr><th id="19">19</th><td><b>extern</b> <b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *<dfn class="decl" id="deref_tag_noverify" title='deref_tag_noverify' data-ref="deref_tag_noverify">deref_tag_noverify</dfn>(<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> *);</td></tr>
+<tr><th id="20">20</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="gpg_verify_tag" title='gpg_verify_tag' data-ref="gpg_verify_tag">gpg_verify_tag</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col1 decl" id="261oid" title='oid' data-type='const struct object_id *' data-ref="261oid">oid</dfn>,</td></tr>
+<tr><th id="21">21</th><td>		<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="262name_to_report" title='name_to_report' data-type='const char *' data-ref="262name_to_report">name_to_report</dfn>, <em>unsigned</em> <dfn class="local col3 decl" id="263flags" title='flags' data-type='unsigned int' data-ref="263flags">flags</dfn>);</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="1">endif</span> /* TAG_H */</u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='alloc.c.html'>codebrowser/alloc.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

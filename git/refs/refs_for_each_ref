@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs.h' l='278' type='int refs_for_each_ref(struct ref_store * refs, each_ref_fn * fn, void * cb_data)'/>
+<doc f='codebrowser/refs.h' l='269'>/*
+ * The following functions invoke the specified callback function for
+ * each reference indicated.  If the function ever returns a nonzero
+ * value, stop the iteration and return that value.  Please note that
+ * it is not safe to modify references while an iteration is in
+ * progress, unless the same callback function invocation that
+ * modifies the reference also returns a nonzero value to immediately
+ * stop the iteration. Returned references are sorted.
+ */</doc>
+<def f='codebrowser/refs.c' l='1319' ll='1322' type='int refs_for_each_ref(struct ref_store * refs, each_ref_fn * fn, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='1326' u='c' c='for_each_ref'/>
+<use f='codebrowser/refs.c' l='1331' u='c' c='for_each_ref_submodule'/>

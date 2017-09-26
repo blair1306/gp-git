@@ -1,0 +1,10 @@
+<dec f='codebrowser/strbuf.h' l='370' type='ssize_t strbuf_read_once(struct strbuf * , int fd, size_t hint)'/>
+<doc f='codebrowser/strbuf.h' l='364'>/**
+ * Read the contents of a given file descriptor partially by using only one
+ * attempt of xread. The third argument can be used to give a hint about the
+ * file size, to avoid reallocs. Returns the number of new bytes appended to
+ * the sb.
+ */</doc>
+<use f='codebrowser/run-command.c' l='1285' u='c' c='pump_io_round'/>
+<use f='codebrowser/run-command.c' l='1565' u='c' c='pp_buffer_stderr'/>
+<def f='codebrowser/strbuf.c' l='387' ll='396' type='ssize_t strbuf_read_once(struct strbuf * sb, int fd, size_t hint)'/>

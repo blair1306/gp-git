@@ -1,0 +1,10 @@
+<def f='codebrowser/convert.h' l='20' ll='24'/>
+<dec f='codebrowser/convert.h' l='26' type='enum auto_crlf'/>
+<use f='codebrowser/config.c' l='1140' u='w' c='git_default_core_config'/>
+<use f='codebrowser/config.c' l='1143' u='w' c='git_default_core_config'/>
+<use f='codebrowser/convert.c' l='162' u='r' c='text_eol_is_crlf'/>
+<use f='codebrowser/convert.c' l='164' u='r' c='text_eol_is_crlf'/>
+<use f='codebrowser/convert.c' l='1065' u='r' c='convert_attrs'/>
+<use f='codebrowser/convert.c' l='1067' u='r' c='convert_attrs'/>
+<use f='codebrowser/convert.c' l='1069' u='r' c='convert_attrs'/>
+<def f='codebrowser/environment.c' l='48' type='enum auto_crlf'/>

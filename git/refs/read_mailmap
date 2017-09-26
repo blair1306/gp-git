@@ -1,0 +1,8 @@
+<dec f='codebrowser/mailmap.h' l='4' type='int read_mailmap(struct string_list * map, char ** repo_abbrev)'/>
+<use f='codebrowser/builtin/blame.c' l='923' u='c' c='cmd_blame'/>
+<use f='codebrowser/builtin/check-mailmap.c' l='50' u='c' c='cmd_check_mailmap'/>
+<use f='codebrowser/builtin/commit.c' l='1058' u='c' c='find_author_by_nickname'/>
+<use f='codebrowser/builtin/log.c' l='193' u='c' c='cmd_log_init_finish'/>
+<use f='codebrowser/builtin/shortlog.c' l='233' u='c' c='shortlog_init'/>
+<def f='codebrowser/mailmap.c' l='239' ll='254' type='int read_mailmap(struct string_list * map, char ** repo_abbrev)'/>
+<use f='codebrowser/pretty.c' l='672' u='c' c='mailmap_name'/>

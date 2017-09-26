@@ -1,0 +1,6 @@
+<dec f='include/curl/curl.h' l='1769' type='1'/>
+<doc f='include/curl/curl.h' l='1769'>/* TLS 1.x */</doc>
+<use f='codebrowser/http.c' l='54'/>
+<use f='codebrowser/http.c' l='54'/>
+<use f='codebrowser/http.c' l='54'/>
+<use f='codebrowser/http.c' l='54'/>

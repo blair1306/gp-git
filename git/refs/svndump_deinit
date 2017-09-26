@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/svndump.h' l='7' type='void svndump_deinit()'/>
+<use f='codebrowser/remote-testsvn.c' l='216' u='c' c='cmd_import'/>
+<use f='codebrowser/t/helper/test-svn-fe.c' l='44' u='c' c='cmd_main'/>
+<def f='codebrowser/vcs-svn/svndump.c' l='517' ll='532' type='void svndump_deinit()'/>

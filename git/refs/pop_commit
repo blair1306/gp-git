@@ -1,0 +1,26 @@
+<dec f='codebrowser/commit.h' l='218' type='struct commit * pop_commit(struct commit_list ** stack)'/>
+<use f='codebrowser/builtin/describe.c' l='224' u='c' c='finish_depth_computation'/>
+<use f='codebrowser/builtin/describe.c' l='329' u='c' c='describe'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='577' u='c' c='find_merge_parents'/>
+<use f='codebrowser/builtin/merge.c' l='983' u='c' c='reduce_parents'/>
+<use f='codebrowser/builtin/reflog.c' l='232' u='c' c='mark_reachable'/>
+<use f='codebrowser/builtin/rev-parse.c' l='287' u='c' c='try_difference'/>
+<use f='codebrowser/builtin/show-branch.c' l='206' u='c' c='join_revs'/>
+<use f='codebrowser/builtin/show-branch.c' l='484' u='c' c='show_merge_base'/>
+<use f='codebrowser/builtin/show-branch.c' l='893' u='c' c='cmd_show_branch'/>
+<use f='codebrowser/commit.c' l='457' u='c' c='free_commit_list'/>
+<use f='codebrowser/commit.c' l='503' u='c' c='pop_most_recent_commit'/>
+<use f='codebrowser/commit.c' l='548' u='c' c='clear_commit_marks_many'/>
+<def f='codebrowser/commit.c' l='570' ll='580' type='struct commit * pop_commit(struct commit_list ** stack)'/>
+<use f='codebrowser/commit.c' l='855' u='c' c='merge_bases_many'/>
+<use f='codebrowser/commit.c' l='1541' u='c' c='commit_tree_extended'/>
+<use f='codebrowser/merge-recursive.c' l='2041' u='c' c='merge_recursive'/>
+<use f='codebrowser/remote.c' l='1939' u='c' c='unmark_and_free'/>
+<use f='codebrowser/revision.c' l='102' u='c' c='mark_parents_uninteresting'/>
+<use f='codebrowser/revision.c' l='1033' u='c' c='limit_list'/>
+<use f='codebrowser/revision.c' l='2729' u='c' c='simplify_merges'/>
+<use f='codebrowser/revision.c' l='2741' u='c' c='simplify_merges'/>
+<use f='codebrowser/revision.c' l='3130' u='c' c='get_revision_1'/>
+<use f='codebrowser/revision.c' l='3243' u='c' c='get_revision_internal'/>
+<use f='codebrowser/revision.c' l='3332' u='c' c='get_revision'/>
+<use f='codebrowser/shallow.c' l='490' u='c' c='paint_down'/>

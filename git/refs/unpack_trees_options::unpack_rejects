@@ -1,0 +1,13 @@
+<dec f='codebrowser/unpack-trees.h' l='63' type='struct string_list [10]'/>
+<offset>1536</offset>
+<doc f='codebrowser/unpack-trees.h' l='59'>/*
+	 * Store error messages in an array, each case
+	 * corresponding to a error message type
+	 */</doc>
+<use f='codebrowser/unpack-trees.c' l='175' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='175' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='175' u='r' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='175' u='a' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='176' u='m' c='setup_unpack_trees_porcelain'/>
+<use f='codebrowser/unpack-trees.c' l='224' u='a' c='add_rejected_path'/>
+<use f='codebrowser/unpack-trees.c' l='236' u='a' c='display_error_msgs'/>

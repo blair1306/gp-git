@@ -1,0 +1,8 @@
+<dec f='codebrowser/revision.h' l='259' type='void reset_revision_walk()'/>
+<use f='codebrowser/builtin/log.c' l='1737' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/pack-bitmap-write.c' l='268' u='c' c='bitmap_writer_build'/>
+<use f='codebrowser/pack-bitmap.c' l='724' u='c' c='prepare_bitmap_walk'/>
+<def f='codebrowser/revision.c' l='2760' ll='2763' type='void reset_revision_walk()'/>
+<use f='codebrowser/submodule.c' l='804' u='c' c='collect_changed_submodules'/>
+<use f='codebrowser/submodule.c' l='1691' u='c' c='find_first_merges'/>
+<use f='codebrowser/t/helper/test-revision-walking.c' l='44' u='c' c='run_revision_walk'/>

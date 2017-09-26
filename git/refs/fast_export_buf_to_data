@@ -1,0 +1,3 @@
+<dec f='codebrowser/vcs-svn/fast_export.h' l='20' type='void fast_export_buf_to_data(const struct strbuf * data)'/>
+<def f='codebrowser/vcs-svn/fast_export.c' l='237' ll='242' type='void fast_export_buf_to_data(const struct strbuf * data)'/>
+<use f='codebrowser/vcs-svn/svndump.c' l='321' u='c' c='end_revision'/>

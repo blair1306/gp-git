@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1201' type='int unpack_sha1_header(git_zstream * stream, unsigned char * map, unsigned long mapsize, void * buffer, unsigned long bufsiz)'/>
+<def f='codebrowser/sha1_file.c' l='1838' ll='1852' type='int unpack_sha1_header(git_zstream * stream, unsigned char * map, unsigned long mapsize, void * buffer, unsigned long bufsiz)'/>
+<use f='codebrowser/sha1_file.c' l='2946' u='c' c='sha1_loose_object_info'/>
+<use f='codebrowser/sha1_file.c' l='3971' u='c' c='read_loose_object'/>
+<use f='codebrowser/streaming.c' l='340' u='c' c='open_istream_loose'/>

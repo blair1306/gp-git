@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1447' type='const char * git_author_info(int )'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='298' u='c' c='credit_people'/>
+<use f='codebrowser/builtin/var.c' l='36'/>
+<use f='codebrowser/builtin/var.c' l='36'/>
+<use f='codebrowser/builtin/var.c' l='36'/>
+<use f='codebrowser/builtin/var.c' l='36'/>
+<use f='codebrowser/commit.c' l='1548' u='c' c='commit_tree_extended'/>
+<def f='codebrowser/ident.c' l='430' ll='440' type='const char * git_author_info(int flag)'/>

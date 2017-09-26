@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='679'/>
+<doc f='codebrowser/cache.h' l='678'>/* ignore non-existent files during stat update  */</doc>
+<use f='codebrowser/merge-recursive.c' l='238' u='c'/>
+<use f='codebrowser/read-cache.c' l='1230' u='c'/>
+<use f='codebrowser/read-cache.c' l='1340' u='c'/>

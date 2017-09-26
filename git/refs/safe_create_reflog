@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs.h' l='362' type='int safe_create_reflog(const char * refname, int force_create, struct strbuf * err)'/>
+<use f='codebrowser/builtin/checkout.c' l='629' u='c' c='update_refs_for_switch'/>
+<def f='codebrowser/refs.c' l='1993' ll='1998' type='int safe_create_reflog(const char * refname, int force_create, struct strbuf * err)'/>

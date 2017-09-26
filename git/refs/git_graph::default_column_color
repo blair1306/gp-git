@@ -1,0 +1,10 @@
+<dec f='codebrowser/graph.c' l='228' type='unsigned short'/>
+<use f='codebrowser/graph.c' l='296' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='412' u='r' c='graph_get_current_column_color'/>
+<use f='codebrowser/graph.c' l='420' u='w' c='graph_increment_column_color'/>
+<use f='codebrowser/graph.c' l='420' u='r' c='graph_increment_column_color'/>
+<offset>768</offset>
+<doc f='codebrowser/graph.c' l='224'>/*
+	 * The current default column color being used.  This is
+	 * stored as an index into the array column_colors.
+	 */</doc>

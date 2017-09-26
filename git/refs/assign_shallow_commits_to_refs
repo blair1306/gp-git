@@ -1,0 +1,20 @@
+<dec f='codebrowser/commit.h' l='301' type='void assign_shallow_commits_to_refs(struct shallow_info * info, uint32_t ** used, int * ref_status)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1812' u='c' c='prepare_shallow_update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1878' u='c' c='update_shallow_info'/>
+<use f='codebrowser/fetch-pack.c' l='1115' u='c' c='update_shallow'/>
+<use f='codebrowser/fetch-pack.c' l='1138' u='c' c='update_shallow'/>
+<def f='codebrowser/shallow.c' l='563' ll='636' type='void assign_shallow_commits_to_refs(struct shallow_info * info, uint32_t ** used, int * ref_status)'/>
+<doc f='codebrowser/shallow.c' l='549'>/*
+ * Step 6(+7), associate shallow commits with new refs
+ *
+ * info-&gt;ref must be initialized before calling this function.
+ *
+ * If used is not NULL, it&apos;s an array of info-&gt;shallow-&gt;nr
+ * bitmaps. The n-th bit set in the m-th bitmap if ref[n] needs the
+ * m-th shallow commit from info-&gt;shallow.
+ *
+ * If used is NULL, &quot;ours&quot; and &quot;theirs&quot; are updated. And if ref_status
+ * is not NULL it&apos;s an array of ref-&gt;nr ints. ref_status[i] is true if
+ * the ref needs some shallow commits from either info-&gt;ours or
+ * info-&gt;theirs.
+ */</doc>

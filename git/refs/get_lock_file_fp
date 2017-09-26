@@ -1,0 +1,1 @@
+<def f='codebrowser/lockfile.h' l='227' ll='230' type='FILE * get_lock_file_fp(struct lock_file * lk)'/>

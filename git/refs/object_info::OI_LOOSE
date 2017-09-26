@@ -1,0 +1,3 @@
+<dec f='codebrowser/cache.h' l='1803' type='1'/>
+<use f='codebrowser/sha1_file.c' l='2970' u='r' c='sha1_loose_object_info'/>
+<use f='codebrowser/streaming.c' l='121' c='istream_source'/>

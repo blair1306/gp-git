@@ -1,0 +1,5 @@
+<dec f='codebrowser/config.h' l='54' type='int64_t git_config_int64(const char * , const char * )'/>
+<use f='codebrowser/builtin/config.c' l='145' u='c' c='format_config'/>
+<use f='codebrowser/builtin/config.c' l='285' u='c' c='normalize_value'/>
+<use f='codebrowser/builtin/receive-pack.c' l='222' u='c' c='receive_pack_config'/>
+<def f='codebrowser/config.c' l='908' ll='914' type='int64_t git_config_int64(const char * name, const char * value)'/>

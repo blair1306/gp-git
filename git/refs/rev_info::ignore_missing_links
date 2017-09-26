@@ -1,0 +1,11 @@
+<dec f='codebrowser/revision.h' l='87' type='unsigned int'/>
+<offset>929</offset>
+<use f='codebrowser/builtin/pack-objects.c' l='2815' u='w' c='get_object_list'/>
+<use f='codebrowser/list-objects.c' l='87' u='r' c='process_tree'/>
+<use f='codebrowser/list-objects.c' l='88' u='r' c='process_tree'/>
+<use f='codebrowser/pack-bitmap.c' l='722' u='w' c='prepare_bitmap_walk'/>
+<use f='codebrowser/pack-bitmap.c' l='725' u='w' c='prepare_bitmap_walk'/>
+<use f='codebrowser/reachable.c' l='196' u='w' c='mark_reachable_objects'/>
+<use f='codebrowser/revision.c' l='231' u='r' c='handle_commit'/>
+<use f='codebrowser/revision.c' l='791' u='r' c='add_parents_to_list'/>
+<use f='codebrowser/revision.c' l='3151' u='r' c='get_revision_1'/>

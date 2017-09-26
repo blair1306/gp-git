@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='147' type='int cmd_cherry_pick(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/revert.c' l='218' ll='229' type='int cmd_cherry_pick(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='382'/>
+<use f='codebrowser/git.c' l='382'/>
+<use f='codebrowser/git.c' l='382'/>
+<use f='codebrowser/git.c' l='382'/>

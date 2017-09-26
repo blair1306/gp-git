@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='141' type='int'/>
+<offset>864</offset>
+<use f='codebrowser/diff.c' l='3845' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='3856' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diffcore-rename.c' l='447' u='r' c='diffcore_rename'/>
+<use f='codebrowser/merge-recursive.c' l='528' u='w' c='get_renames'/>
+<use f='codebrowser/tree-diff.c' l='616' u='w' c='try_to_follow_renames'/>
+<use f='codebrowser/tree-diff.c' l='616' u='r' c='try_to_follow_renames'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/revision.h' l='37' type='struct object *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/fast-export.c' l='776' u='r' c='get_commit'/>
+<use f='codebrowser/builtin/fast-export.c' l='778' u='r' c='get_commit'/>
+<use f='codebrowser/builtin/fast-export.c' l='780' u='r' c='get_commit'/>
+<use f='codebrowser/builtin/fast-export.c' l='827' u='r' c='get_tags_and_duplicates'/>
+<use f='codebrowser/builtin/log.c' l='977' u='r' c='find_branch_name'/>
+<use f='codebrowser/list-objects.c' l='168' u='r' c='mark_edges_uninteresting'/>
+<use f='codebrowser/revision.c' l='1109' u='w' c='add_rev_cmdline'/>

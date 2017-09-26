@@ -1,0 +1,7 @@
+<dec f='codebrowser/revision.h' l='111' type='unsigned int'/>
+<offset>953</offset>
+<use f='codebrowser/revision.c' l='1007' u='r' c='limit_left_right'/>
+<use f='codebrowser/revision.c' l='1071' u='r' c='limit_list'/>
+<use f='codebrowser/revision.c' l='1821' u='r' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1828' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1833' u='w' c='handle_revision_opt'/>

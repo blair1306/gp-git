@@ -1,0 +1,12 @@
+fstat64|fstat
+fstat64|fstat64
+fstatat64|fstatat
+fstatat64|fstatat64
+fspathcmp|fspathcmp
+fspathncmp|fspathncmp
+fsck_error_function|fsck_error_function
+fsck_object|fsck_object
+fsck_set_msg_type|fsck_set_msg_type
+fsck_set_msg_types|fsck_set_msg_types
+fsck_walk|fsck_walk
+fsync_or_die|fsync_or_die

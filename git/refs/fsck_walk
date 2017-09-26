@@ -1,0 +1,13 @@
+<dec f='codebrowser/fsck.h' l='51' type='int fsck_walk(struct object * obj, void * data, struct fsck_options * options)'/>
+<use f='codebrowser/builtin/fsck.c' l='173' u='c' c='traverse_one_object'/>
+<use f='codebrowser/builtin/fsck.c' l='339' u='c' c='fsck_obj'/>
+<doc f='codebrowser/fsck.h' l='44'>/* descend in all linked child objects
+ * the return value is:
+ *    -1	error in processing the object
+ *    &lt;0	return value of the callback, which lead to an abort
+ *    &gt;0	return value of the first signaled error &gt;0 (in the case of no other errors)
+ *    0		everything OK
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='855' u='c' c='sha1_object'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='213' u='c' c='check_object'/>
+<def f='codebrowser/fsck.c' l='458' ll='479' type='int fsck_walk(struct object * obj, void * data, struct fsck_options * options)'/>

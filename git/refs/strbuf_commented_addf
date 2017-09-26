@@ -1,0 +1,12 @@
+<dec f='codebrowser/strbuf.h' l='330' type='void strbuf_commented_addf(struct strbuf * sb, const char * fmt)'/>
+<doc f='codebrowser/strbuf.h' l='325'>/**
+ * Add a formatted string prepended by a comment character and a
+ * blank to the buffer.
+ */</doc>
+<use f='codebrowser/builtin/branch.c' l='524' u='c' c='edit_branch_description'/>
+<use f='codebrowser/builtin/merge.c' l='767' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/tag.c' l='242' u='c' c='create_tag'/>
+<use f='codebrowser/builtin/tag.c' l='244' u='c' c='create_tag'/>
+<use f='codebrowser/sequencer.c' l='417' u='c' c='append_conflicts_hint'/>
+<use f='codebrowser/sequencer.c' l='421' u='c' c='append_conflicts_hint'/>
+<def f='codebrowser/strbuf.c' l='254' ll='269' type='void strbuf_commented_addf(struct strbuf * sb, const char * fmt)'/>

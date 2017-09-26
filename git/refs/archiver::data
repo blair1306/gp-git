@@ -1,0 +1,7 @@
+<dec f='codebrowser/archive.h' l='26' type='void *'/>
+<use f='codebrowser/archive-tar.c' l='393' u='r' c='tar_filter_config'/>
+<use f='codebrowser/archive-tar.c' l='394' u='w' c='tar_filter_config'/>
+<use f='codebrowser/archive-tar.c' l='443' u='r' c='write_tar_filter_archive'/>
+<use f='codebrowser/archive-tar.c' l='446' u='r' c='write_tar_filter_archive'/>
+<use f='codebrowser/archive-tar.c' l='491' u='r' c='init_tar_archiver'/>
+<offset>192</offset>

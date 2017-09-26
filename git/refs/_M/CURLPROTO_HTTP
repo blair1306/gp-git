@@ -1,0 +1,5 @@
+<dec f='include/curl/curl.h' l='798'/>
+<doc f='include/curl/curl.h' l='797'>/* CURLPROTO_ defines are for the CURLOPT_*PROTOCOLS options */</doc>
+<use f='codebrowser/http.c' l='680' u='a'/>
+<use f='codebrowser/http.c' l='686' u='c'/>
+<use f='codebrowser/http.c' l='795' u='a'/>

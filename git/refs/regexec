@@ -1,0 +1,14 @@
+<dec f='include/regex.h' l='566' type='int regexec(const regex_t *restrict __preg, const char *restrict __string, size_t __nmatch, regmatch_t *restrict __pmatch, int __eflags)'/>
+<use f='codebrowser/git-compat-util.h' l='1045' u='c' c='regexec_buf'/>
+<use f='codebrowser/apply.c' l='841' u='c' c='has_epoch_timestamp'/>
+<use f='codebrowser/builtin/am.c' l='615' u='c' c='is_mail'/>
+<use f='codebrowser/builtin/config.c' l='180' u='c' c='collect_config'/>
+<use f='codebrowser/builtin/config.c' l='183' u='c' c='collect_config'/>
+<use f='codebrowser/builtin/remote.c' l='1576' u='c' c='set_url'/>
+<use f='codebrowser/config.c' l='2199' u='c' c='matches'/>
+<use f='codebrowser/http-backend.c' l='682' u='c' c='cmd_main'/>
+<use f='codebrowser/line-range.c' l='95' u='c' c='parse_loc'/>
+<use f='codebrowser/line-range.c' l='140' u='c' c='find_funcname_matching_regexp'/>
+<use f='codebrowser/sha1_name.c' l='1043' u='c' c='get_oid_oneline'/>
+<use f='codebrowser/t/helper/test-regex.c' l='29' u='c' c='test_regex_bug'/>
+<use f='codebrowser/t/helper/test-regex.c' l='71' u='c' c='cmd_main'/>

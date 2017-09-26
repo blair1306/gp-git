@@ -1,0 +1,5 @@
+<dec f='codebrowser/blame.h' l='147' type='void (*)(struct blame_entry *, void *)'/>
+<use f='codebrowser/blame.c' l='1592' u='r' c='assign_blame'/>
+<use f='codebrowser/blame.c' l='1593' u='r' c='assign_blame'/>
+<offset>1344</offset>
+<use f='codebrowser/builtin/blame.c' l='925' u='w' c='cmd_blame'/>

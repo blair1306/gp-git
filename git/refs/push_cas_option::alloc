@@ -1,0 +1,8 @@
+<dec f='codebrowser/remote.h' l='290' type='int'/>
+<offset>160</offset>
+<use f='codebrowser/remote.c' l='2274' u='r' c='add_cas_entry'/>
+<use f='codebrowser/remote.c' l='2274' u='r' c='add_cas_entry'/>
+<use f='codebrowser/remote.c' l='2274' u='w' c='add_cas_entry'/>
+<use f='codebrowser/remote.c' l='2274' u='w' c='add_cas_entry'/>
+<use f='codebrowser/remote.c' l='2274' u='r' c='add_cas_entry'/>
+<use f='codebrowser/remote.c' l='2274' u='r' c='add_cas_entry'/>

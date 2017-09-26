@@ -1,0 +1,6 @@
+<dec f='codebrowser/userdiff.h' l='8' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/diff.c' l='2514' u='r' c='builtin_diff'/>
+<use f='codebrowser/grep.c' l='1440' u='r' c='match_funcname'/>
+<use f='codebrowser/line-range.c' l='205' u='r' c='parse_range_funcname'/>
+<use f='codebrowser/userdiff.c' l='204' u='w' c='parse_funcname'/>

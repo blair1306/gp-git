@@ -1,0 +1,6 @@
+<dec f='codebrowser/config.h' l='66' type='int git_config_parse_key(const char * , char ** , int * )'/>
+<use f='codebrowser/builtin/config.c' l='223' u='c' c='get_value'/>
+<def f='codebrowser/config.c' l='397' ll='400' type='int git_config_parse_key(const char * key, char ** store_key, int * baselen)'/>
+<use f='codebrowser/config.c' l='432' u='c' c='git_config_parse_parameter'/>
+<use f='codebrowser/config.c' l='1672' u='c' c='configset_find_element'/>
+<use f='codebrowser/config.c' l='2437' u='c' c='git_config_set_multivar_in_file_gently'/>

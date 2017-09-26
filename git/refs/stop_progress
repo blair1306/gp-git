@@ -1,0 +1,23 @@
+<dec f='codebrowser/progress.h' l='10' type='void stop_progress(struct progress ** progress)'/>
+<use f='codebrowser/builtin/blame.c' l='932' u='c' c='cmd_blame'/>
+<use f='codebrowser/builtin/fsck.c' l='192' u='c' c='traverse_reachable'/>
+<use f='codebrowser/builtin/fsck.c' l='552' u='c' c='fsck_object_dir'/>
+<use f='codebrowser/builtin/fsck.c' l='727' u='c' c='cmd_fsck'/>
+<use f='codebrowser/builtin/index-pack.c' l='1158' u='c' c='parse_pack_objects'/>
+<use f='codebrowser/builtin/index-pack.c' l='1247' u='c' c='conclude_pack'/>
+<use f='codebrowser/builtin/log.c' l='1830' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/pack-objects.c' l='876' u='c' c='write_pack_file'/>
+<use f='codebrowser/builtin/pack-objects.c' l='901' u='c' c='write_pack_file'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2437' u='c' c='prepare_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='3084' u='c' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/prune-packed.c' l='47' u='c' c='prune_packed_objects'/>
+<use f='codebrowser/builtin/prune.c' l='144' u='c' c='cmd_prune'/>
+<use f='codebrowser/builtin/rev-list.c' l='409' u='c' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='500' u='c' c='unpack_all'/>
+<use f='codebrowser/diffcore-rename.c' l='576' u='c' c='diffcore_rename'/>
+<use f='codebrowser/pack-bitmap-write.c' l='322' u='c' c='bitmap_writer_build'/>
+<use f='codebrowser/pack-bitmap-write.c' l='441' u='c' c='bitmap_writer_select_commits'/>
+<use f='codebrowser/pack-bitmap.c' l='968' u='c' c='test_bitmap_walk'/>
+<use f='codebrowser/pack-bitmap.c' l='1063' u='c' c='rebuild_existing_bitmaps'/>
+<def f='codebrowser/progress.c' l='240' ll='243' type='void stop_progress(struct progress ** p_progress)'/>
+<use f='codebrowser/unpack-trees.c' l='398' u='c' c='check_updates'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/reflog-walk.h' l='17' type='void get_reflog_selector(struct strbuf * sb, struct reflog_walk_info * reflog_info, const struct date_mode * dmode, int force_date, int shorten)'/>
+<use f='codebrowser/pretty.c' l='1192' u='c' c='format_commit_one'/>
+<def f='codebrowser/reflog-walk.c' l='204' ll='236' type='void get_reflog_selector(struct strbuf * sb, struct reflog_walk_info * reflog_info, const struct date_mode * dmode, int force_date, int shorten)'/>
+<use f='codebrowser/reflog-walk.c' l='288' u='c' c='show_reflog_message'/>

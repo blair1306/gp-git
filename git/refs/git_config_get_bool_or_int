@@ -1,0 +1,2 @@
+<dec f='codebrowser/config.h' l='208' type='int git_config_get_bool_or_int(const char * key, int * is_bool, int * dest)'/>
+<def f='codebrowser/config.c' l='2052' ll='2055' type='int git_config_get_bool_or_int(const char * key, int * is_bool, int * dest)'/>

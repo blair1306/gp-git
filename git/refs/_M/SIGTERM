@@ -1,0 +1,11 @@
+<dec f='include/x86_64-linux-gnu/bits/signum.h' l='47'/>
+<use f='codebrowser/daemon.c' l='423' u='c'/>
+<use f='codebrowser/daemon.c' l='805' u='c'/>
+<use f='codebrowser/run-command.c' l='81' u='c'/>
+<use f='codebrowser/sigchain.c' l='49' u='c'/>
+<use f='codebrowser/sigchain.c' l='58' u='c'/>
+<use f='codebrowser/sub-process.c' l='58' u='c'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='17' u='c'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='18' u='c'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='19' u='c'/>
+<use f='codebrowser/t/helper/test-sigchain.c' l='20' u='c'/>

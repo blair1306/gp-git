@@ -1,0 +1,4 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='114' type='void * xdl_mmfile_first(mmfile_t * mmf, long * size)'/>
+<use f='codebrowser/xdiff/xprepare.c' l='195' u='c' c='xdl_prepare_ctx'/>
+<def f='codebrowser/xdiff/xutils.c' l='65' ll='69' type='void * xdl_mmfile_first(mmfile_t * mmf, long * size)'/>
+<use f='codebrowser/xdiff/xutils.c' l='129' u='c' c='xdl_guess_lines'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/commit.h' l='165' type='int'/>
+<offset>832</offset>
+<use f='codebrowser/builtin/rev-list.c' l='126' u='w' c='show_commit'/>
+<use f='codebrowser/log-tree.c' l='681' u='w' c='show_log'/>
+<use f='codebrowser/pretty.c' l='961' u='r' c='parse_color'/>
+<use f='codebrowser/pretty.c' l='967' u='r' c='parse_color'/>
+<use f='codebrowser/pretty.c' l='991' u='r' c='parse_color'/>
+<use f='codebrowser/pretty.c' l='1083' u='r' c='format_commit_one'/>

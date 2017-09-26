@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='1544' type='char []'/>
+<offset>2560</offset>
+<use f='codebrowser/builtin/count-objects.c' l='81' u='r' c='print_alternate'/>
+<use f='codebrowser/builtin/fsck.c' l='702' u='r' c='cmd_fsck'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='544' u='r' c='add_possible_reference_from_superproject'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='548' u='r' c='add_possible_reference_from_superproject'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='548' u='r' c='add_possible_reference_from_superproject'/>
+<use f='codebrowser/sha1_file.c' l='326' u='r' c='alt_odb_usable'/>
+<use f='codebrowser/sha1_file.c' l='482' u='r' c='alloc_alt_odb'/>
+<use f='codebrowser/sha1_file.c' l='1589' u='r' c='prepare_packed_git'/>
+<use f='codebrowser/sha1_file.c' l='3828' u='r' c='loose_from_alt_odb'/>
+<use f='codebrowser/transport.c' l='1265' u='r' c='refs_from_alternate_cb'/>

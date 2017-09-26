@@ -1,0 +1,12 @@
+<def f='codebrowser/dir.h' l='65' ll='70'/>
+<size>24</size>
+<doc f='codebrowser/dir.h' l='59'>/*
+ * The contents of the per-directory exclude files are lazily read on
+ * demand and then cached in memory, one per exclude_stack struct, in
+ * order to avoid opening and parsing each one every time that
+ * directory is traversed.
+ */</doc>
+<mbr r='exclude_stack::prev' o='0' t='struct exclude_stack *'/>
+<mbr r='exclude_stack::baselen' o='64' t='int'/>
+<mbr r='exclude_stack::exclude_ix' o='96' t='int'/>
+<mbr r='exclude_stack::ucd' o='128' t='struct untracked_cache_dir *'/>

@@ -1,0 +1,6 @@
+<dec f='include/curl/curl.h' l='918' macro='1' type='10015'/>
+<use f='codebrowser/http.c' l='1109' u='r' c='get_active_slot'/>
+<use f='codebrowser/remote-curl.c' l='522' u='r' c='probe_rpc'/>
+<use f='codebrowser/remote-curl.c' l='623' u='r' c='post_rpc'/>
+<use f='codebrowser/remote-curl.c' l='654' u='r' c='post_rpc'/>
+<use f='codebrowser/remote-curl.c' l='667' u='r' c='post_rpc'/>

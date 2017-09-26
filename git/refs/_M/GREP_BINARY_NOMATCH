@@ -1,0 +1,3 @@
+<dec f='codebrowser/grep.h' l='140'/>
+<use f='codebrowser/builtin/grep.c' l='801' u='c'/>
+<use f='codebrowser/grep.c' l='1692' u='c'/>

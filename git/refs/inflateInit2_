@@ -1,0 +1,2 @@
+<dec f='include/zlib.h' l='1641' type='int inflateInit2_(z_streamp strm, int windowBits, const char * version, int stream_size)'/>
+<use f='codebrowser/zlib.c' l='90' macro='1' u='c'/>

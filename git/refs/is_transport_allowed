@@ -1,0 +1,19 @@
+<dec f='codebrowser/transport.h' l='167' type='int is_transport_allowed(const char * type, int from_user)'/>
+<doc f='codebrowser/transport.h' l='156'>/*
+ * Check whether a transport is allowed by the environment.
+ *
+ * Type should generally be the URL scheme, as described in
+ * Documentation/git.txt
+ *
+ * from_user specifies if the transport was given by the user.  If unknown pass
+ * a -1 to read from the environment to determine if the transport was given by
+ * the user.
+ *
+ */</doc>
+<use f='codebrowser/http-walker.c' l='187' u='c' c='is_alternate_allowed'/>
+<use f='codebrowser/http.c' l='685' u='c' c='get_curl_allowed_protocols'/>
+<use f='codebrowser/http.c' l='687' u='c' c='get_curl_allowed_protocols'/>
+<use f='codebrowser/http.c' l='689' u='c' c='get_curl_allowed_protocols'/>
+<use f='codebrowser/http.c' l='691' u='c' c='get_curl_allowed_protocols'/>
+<def f='codebrowser/transport.c' l='731' ll='749' type='int is_transport_allowed(const char * type, int from_user)'/>
+<use f='codebrowser/transport.c' l='753' u='c' c='transport_check_allowed'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/blame.h' l='114' type='unsigned long'/>
+<use f='codebrowser/blame.c' l='1624' u='r' c='prepare_lines'/>
+<use f='codebrowser/blame.c' l='1821' u='w' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1830' u='a' c='setup_scoreboard'/>
+<use f='codebrowser/blame.c' l='1834' u='a' c='setup_scoreboard'/>
+<offset>576</offset>
+<use f='codebrowser/builtin/blame.c' l='363' u='r' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='366' u='r' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='440' u='r' c='emit_other'/>
+<use f='codebrowser/builtin/blame.c' l='443' u='r' c='emit_other'/>

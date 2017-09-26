@@ -1,0 +1,20 @@
+<dec f='codebrowser/diffcore.h' l='95' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/combine-diff.c' l='1295' u='w' c='handle_combined_callback'/>
+<use f='codebrowser/diff.c' l='4157' u='r' c='diff_q'/>
+<use f='codebrowser/diff.c' l='4157' u='r' c='diff_q'/>
+<use f='codebrowser/diff.c' l='4157' u='w' c='diff_q'/>
+<use f='codebrowser/diff.c' l='4157' u='w' c='diff_q'/>
+<use f='codebrowser/diff.c' l='4157' u='r' c='diff_q'/>
+<use f='codebrowser/diff.c' l='4157' u='r' c='diff_q'/>
+<use f='codebrowser/diff.c' l='4677' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='4835' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='4869' macro='1' u='w'/>
+<use f='codebrowser/diff.c' l='4955' macro='1' u='w'/>
+<use f='codebrowser/diffcore-break.c' l='167' macro='1' u='w'/>
+<use f='codebrowser/diffcore-break.c' l='267' macro='1' u='w'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='172' macro='1' u='w'/>
+<use f='codebrowser/diffcore-rename.c' l='590' macro='1' u='w'/>
+<use f='codebrowser/line-log.c' l='767' macro='1' u='w'/>
+<use f='codebrowser/line-log.c' l='774' macro='1' u='w'/>
+<use f='codebrowser/line-log.c' l='819' macro='1' u='w'/>

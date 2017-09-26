@@ -1,0 +1,6 @@
+<def f='codebrowser/trace.h' l='7' ll='12'/>
+<size>16</size>
+<mbr r='trace_key::key' o='0' t='const char *const'/>
+<mbr r='trace_key::fd' o='64' t='int'/>
+<mbr r='trace_key::initialized' o='96' t='unsigned int'/>
+<mbr r='trace_key::need_close' o='97' t='unsigned int'/>

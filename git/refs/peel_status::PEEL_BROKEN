@@ -1,0 +1,7 @@
+<dec f='codebrowser/refs/refs-internal.h' l='111' type='-4'/>
+<doc f='codebrowser/refs/refs-internal.h' l='106'>/*
+	 * ref_entry cannot be peeled because it is broken (i.e., the
+	 * symbolic reference cannot even be resolved to an object
+	 * name):
+	 */</doc>
+<use f='codebrowser/refs/ref-cache.c' l='508' u='r' c='peel_entry'/>

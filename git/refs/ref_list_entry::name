@@ -1,0 +1,27 @@
+<dec f='codebrowser/bundle.h' l='10' type='char *'/>
+<offset>192</offset>
+<use f='codebrowser/bundle.c' l='20' u='w' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='114' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='114' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='120' u='r' c='list_refs'/>
+<use f='codebrowser/bundle.c' l='148' u='r' c='verify_bundle'/>
+<use f='codebrowser/bundle.c' l='153' u='r' c='verify_bundle'/>
+<use f='codebrowser/transport.c' l='90' u='r' c='get_refs_from_bundle'/>

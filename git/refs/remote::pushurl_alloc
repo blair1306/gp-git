@@ -1,0 +1,8 @@
+<dec f='codebrowser/remote.h' l='28' type='int'/>
+<offset>544</offset>
+<use f='codebrowser/remote.c' l='114' u='r' c='add_pushurl'/>
+<use f='codebrowser/remote.c' l='114' u='r' c='add_pushurl'/>
+<use f='codebrowser/remote.c' l='114' u='w' c='add_pushurl'/>
+<use f='codebrowser/remote.c' l='114' u='w' c='add_pushurl'/>
+<use f='codebrowser/remote.c' l='114' u='r' c='add_pushurl'/>
+<use f='codebrowser/remote.c' l='114' u='r' c='add_pushurl'/>

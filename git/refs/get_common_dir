@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='487' type='int get_common_dir(struct strbuf * sb, const char * gitdir)'/>
+<use f='codebrowser/builtin/clone.c' l='460' u='c' c='clone_local'/>
+<use f='codebrowser/builtin/clone.c' l='461' u='c' c='clone_local'/>
+<def f='codebrowser/setup.c' l='257' ll='266' type='int get_common_dir(struct strbuf * sb, const char * gitdir)'/>
+<use f='codebrowser/setup.c' l='320' u='c' c='is_git_directory'/>
+<use f='codebrowser/setup.c' l='447' u='c' c='check_repository_format_gently'/>
+<use f='codebrowser/setup.c' l='1007' u='c' c='discover_git_directory'/>
+<use f='codebrowser/sha1_file.c' l='585' u='c' c='compute_alternate_path'/>

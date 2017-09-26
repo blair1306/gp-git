@@ -1,0 +1,124 @@
+<def f='codebrowser/revision.h' l='55' ll='224'/>
+<size>2128</size>
+<mbr r='rev_info::commits' o='0' t='struct commit_list *'/>
+<mbr r='rev_info::pending' o='64' t='struct object_array'/>
+<mbr r='rev_info::boundary_commits' o='192' t='struct object_array'/>
+<mbr r='rev_info::cmdline' o='320' t='struct rev_cmdline_info'/>
+<mbr r='rev_info::ref_excludes' o='448' t='struct string_list *'/>
+<mbr r='rev_info::prefix' o='512' t='const char *'/>
+<mbr r='rev_info::def' o='576' t='const char *'/>
+<mbr r='rev_info::prune_data' o='640' t='struct pathspec'/>
+<mbr r='rev_info::rev_input_given' o='832' t='int'/>
+<mbr r='rev_info::sort_order' o='864' t='enum rev_sort_order'/>
+<mbr r='rev_info::early_output' o='896' t='unsigned int'/>
+<mbr r='rev_info::ignore_missing' o='928' t='unsigned int'/>
+<mbr r='rev_info::ignore_missing_links' o='929' t='unsigned int'/>
+<mbr r='rev_info::dense' o='930' t='unsigned int'/>
+<mbr r='rev_info::prune' o='931' t='unsigned int'/>
+<mbr r='rev_info::no_walk' o='932' t='unsigned int'/>
+<mbr r='rev_info::show_all' o='934' t='unsigned int'/>
+<mbr r='rev_info::remove_empty_trees' o='935' t='unsigned int'/>
+<mbr r='rev_info::simplify_history' o='936' t='unsigned int'/>
+<mbr r='rev_info::topo_order' o='937' t='unsigned int'/>
+<mbr r='rev_info::simplify_merges' o='938' t='unsigned int'/>
+<mbr r='rev_info::simplify_by_decoration' o='939' t='unsigned int'/>
+<mbr r='rev_info::tag_objects' o='940' t='unsigned int'/>
+<mbr r='rev_info::tree_objects' o='941' t='unsigned int'/>
+<mbr r='rev_info::blob_objects' o='942' t='unsigned int'/>
+<mbr r='rev_info::verify_objects' o='943' t='unsigned int'/>
+<mbr r='rev_info::edge_hint' o='944' t='unsigned int'/>
+<mbr r='rev_info::edge_hint_aggressive' o='945' t='unsigned int'/>
+<mbr r='rev_info::limited' o='946' t='unsigned int'/>
+<mbr r='rev_info::unpacked' o='947' t='unsigned int'/>
+<mbr r='rev_info::boundary' o='948' t='unsigned int'/>
+<mbr r='rev_info::count' o='950' t='unsigned int'/>
+<mbr r='rev_info::left_right' o='951' t='unsigned int'/>
+<mbr r='rev_info::left_only' o='952' t='unsigned int'/>
+<mbr r='rev_info::right_only' o='953' t='unsigned int'/>
+<mbr r='rev_info::rewrite_parents' o='954' t='unsigned int'/>
+<mbr r='rev_info::print_parents' o='955' t='unsigned int'/>
+<mbr r='rev_info::show_source' o='956' t='unsigned int'/>
+<mbr r='rev_info::show_decorations' o='957' t='unsigned int'/>
+<mbr r='rev_info::reverse' o='958' t='unsigned int'/>
+<mbr r='rev_info::reverse_output_stage' o='959' t='unsigned int'/>
+<mbr r='rev_info::cherry_pick' o='960' t='unsigned int'/>
+<mbr r='rev_info::cherry_mark' o='961' t='unsigned int'/>
+<mbr r='rev_info::bisect' o='962' t='unsigned int'/>
+<mbr r='rev_info::ancestry_path' o='963' t='unsigned int'/>
+<mbr r='rev_info::first_parent_only' o='964' t='unsigned int'/>
+<mbr r='rev_info::line_level_traverse' o='965' t='unsigned int'/>
+<mbr r='rev_info::diff' o='966' t='unsigned int'/>
+<mbr r='rev_info::full_diff' o='967' t='unsigned int'/>
+<mbr r='rev_info::show_root_diff' o='968' t='unsigned int'/>
+<mbr r='rev_info::no_commit_id' o='969' t='unsigned int'/>
+<mbr r='rev_info::verbose_header' o='970' t='unsigned int'/>
+<mbr r='rev_info::ignore_merges' o='971' t='unsigned int'/>
+<mbr r='rev_info::combine_merges' o='972' t='unsigned int'/>
+<mbr r='rev_info::dense_combined_merges' o='973' t='unsigned int'/>
+<mbr r='rev_info::always_show_header' o='974' t='unsigned int'/>
+<mbr r='rev_info::shown_one' o='975' t='unsigned int'/>
+<mbr r='rev_info::shown_dashes' o='976' t='unsigned int'/>
+<mbr r='rev_info::show_merge' o='977' t='unsigned int'/>
+<mbr r='rev_info::show_notes' o='978' t='unsigned int'/>
+<mbr r='rev_info::show_notes_given' o='979' t='unsigned int'/>
+<mbr r='rev_info::show_signature' o='980' t='unsigned int'/>
+<mbr r='rev_info::pretty_given' o='981' t='unsigned int'/>
+<mbr r='rev_info::abbrev_commit' o='982' t='unsigned int'/>
+<mbr r='rev_info::abbrev_commit_given' o='983' t='unsigned int'/>
+<mbr r='rev_info::zero_commit' o='984' t='unsigned int'/>
+<mbr r='rev_info::use_terminator' o='985' t='unsigned int'/>
+<mbr r='rev_info::missing_newline' o='986' t='unsigned int'/>
+<mbr r='rev_info::date_mode_explicit' o='987' t='unsigned int'/>
+<mbr r='rev_info::preserve_subject' o='988' t='unsigned int'/>
+<mbr r='rev_info::disable_stdin' o='989' t='unsigned int'/>
+<mbr r='rev_info::leak_pending' o='990' t='unsigned int'/>
+<mbr r='rev_info::track_linear' o='991' t='unsigned int'/>
+<mbr r='rev_info::track_first_time' o='992' t='unsigned int'/>
+<mbr r='rev_info::linear' o='993' t='unsigned int'/>
+<mbr r='rev_info::date_mode' o='1024' t='struct date_mode'/>
+<mbr r='rev_info::expand_tabs_in_log' o='1216' t='int'/>
+<mbr r='rev_info::expand_tabs_in_log_default' o='1248' t='int'/>
+<mbr r='rev_info::abbrev' o='1280' t='unsigned int'/>
+<mbr r='rev_info::commit_format' o='1312' t='enum cmit_fmt'/>
+<mbr r='rev_info::loginfo' o='1344' t='struct log_info *'/>
+<mbr r='rev_info::nr' o='1408' t='int'/>
+<mbr r='rev_info::total' o='1440' t='int'/>
+<mbr r='rev_info::mime_boundary' o='1472' t='const char *'/>
+<mbr r='rev_info::patch_suffix' o='1536' t='const char *'/>
+<mbr r='rev_info::numbered_files' o='1600' t='int'/>
+<mbr r='rev_info::reroll_count' o='1632' t='int'/>
+<mbr r='rev_info::message_id' o='1664' t='char *'/>
+<mbr r='rev_info::from_ident' o='1728' t='struct ident_split'/>
+<mbr r='rev_info::ref_message_ids' o='2240' t='struct string_list *'/>
+<mbr r='rev_info::add_signoff' o='2304' t='int'/>
+<mbr r='rev_info::extra_headers' o='2368' t='const char *'/>
+<mbr r='rev_info::log_reencode' o='2432' t='const char *'/>
+<mbr r='rev_info::subject_prefix' o='2496' t='const char *'/>
+<mbr r='rev_info::no_inline' o='2560' t='int'/>
+<mbr r='rev_info::show_log_size' o='2592' t='int'/>
+<mbr r='rev_info::mailmap' o='2624' t='struct string_list *'/>
+<mbr r='rev_info::grep_filter' o='2688' t='struct grep_opt'/>
+<mbr r='rev_info::invert_grep' o='9664' t='int'/>
+<mbr r='rev_info::graph' o='9728' t='struct git_graph *'/>
+<mbr r='rev_info::skip_count' o='9792' t='int'/>
+<mbr r='rev_info::max_count' o='9824' t='int'/>
+<mbr r='rev_info::max_age' o='9856' t='timestamp_t'/>
+<mbr r='rev_info::min_age' o='9920' t='timestamp_t'/>
+<mbr r='rev_info::min_parents' o='9984' t='int'/>
+<mbr r='rev_info::max_parents' o='10016' t='int'/>
+<mbr r='rev_info::include_check' o='10048' t='int (*)(struct commit *, void *)'/>
+<mbr r='rev_info::include_check_data' o='10112' t='void *'/>
+<mbr r='rev_info::diffopt' o='10176' t='struct diff_options'/>
+<mbr r='rev_info::pruning' o='12864' t='struct diff_options'/>
+<mbr r='rev_info::reflog_info' o='15552' t='struct reflog_walk_info *'/>
+<mbr r='rev_info::children' o='15616' t='struct decoration'/>
+<mbr r='rev_info::merge_simplification' o='15808' t='struct decoration'/>
+<mbr r='rev_info::treesame' o='16000' t='struct decoration'/>
+<mbr r='rev_info::notes_opt' o='16192' t='struct display_notes_opt'/>
+<mbr r='rev_info::count_left' o='16512' t='int'/>
+<mbr r='rev_info::count_right' o='16544' t='int'/>
+<mbr r='rev_info::count_same' o='16576' t='int'/>
+<mbr r='rev_info::line_log_data' o='16640' t='struct decoration'/>
+<mbr r='rev_info::saved_parents_slab' o='16832' t='struct saved_parents *'/>
+<mbr r='rev_info::previous_parents' o='16896' t='struct commit_list *'/>
+<mbr r='rev_info::break_bar' o='16960' t='const char *'/>

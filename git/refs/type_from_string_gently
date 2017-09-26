@@ -1,0 +1,9 @@
+<dec f='codebrowser/object.h' l='56' type='int type_from_string_gently(const char * str, ssize_t , int gentle)'/>
+<use f='codebrowser/builtin/cat-file.c' l='139' macro='1' u='c'/>
+<use f='codebrowser/builtin/hash-object.c' l='41' macro='1' u='c'/>
+<use f='codebrowser/builtin/mktag.c' l='30' macro='1' u='c'/>
+<use f='codebrowser/builtin/mktree.c' l='113' macro='1' u='c'/>
+<use f='codebrowser/fsck.c' l='852' u='c' c='fsck_tag_buffer'/>
+<def f='codebrowser/object.c' l='36' ll='52' type='int type_from_string_gently(const char * str, ssize_t len, int gentle)'/>
+<use f='codebrowser/sha1_file.c' l='1960' u='c' c='parse_sha1_header_extended'/>
+<use f='codebrowser/sha1_file.c' l='3139' macro='1' u='c'/>

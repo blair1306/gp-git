@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/line_buffer.h' l='19' type='FILE * buffer_tmpfile_rewind(struct line_buffer * buf)'/>
+<doc f='codebrowser/vcs-svn/line_buffer.h' l='19'>/* prepare to write. */</doc>
+<use f='codebrowser/vcs-svn/fast_export.c' l='202' u='c' c='apply_delta'/>
+<def f='codebrowser/vcs-svn/line_buffer.c' l='46' ll='50' type='FILE * buffer_tmpfile_rewind(struct line_buffer * buf)'/>

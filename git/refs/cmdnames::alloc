@@ -1,0 +1,15 @@
+<dec f='codebrowser/help.h' l='5' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/help.c' l='21' u='r' c='add_cmdname'/>
+<use f='codebrowser/help.c' l='21' u='r' c='add_cmdname'/>
+<use f='codebrowser/help.c' l='21' u='w' c='add_cmdname'/>
+<use f='codebrowser/help.c' l='21' u='w' c='add_cmdname'/>
+<use f='codebrowser/help.c' l='21' u='r' c='add_cmdname'/>
+<use f='codebrowser/help.c' l='21' u='r' c='add_cmdname'/>
+<use f='codebrowser/help.c' l='32' u='w' c='clean_cmdnames'/>
+<use f='codebrowser/help.c' l='268' u='r' c='add_cmd_list'/>
+<use f='codebrowser/help.c' l='268' u='r' c='add_cmd_list'/>
+<use f='codebrowser/help.c' l='268' u='w' c='add_cmd_list'/>
+<use f='codebrowser/help.c' l='268' u='w' c='add_cmd_list'/>
+<use f='codebrowser/help.c' l='268' u='r' c='add_cmd_list'/>
+<use f='codebrowser/help.c' l='268' u='r' c='add_cmd_list'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/refs.h' l='426'/>
+<use f='codebrowser/builtin/check-ref-format.c' l='68' u='c'/>
+<use f='codebrowser/builtin/check-ref-format.c' l='70' u='c'/>
+<use f='codebrowser/builtin/reflog.c' l='717' u='c'/>
+<use f='codebrowser/builtin/update-ref.c' l='70' u='c'/>
+<use f='codebrowser/connect.c' l='71' u='c'/>
+<use f='codebrowser/connect.c' l='72' u='c'/>
+<use f='codebrowser/fast-import.c' l='762' u='c'/>
+<use f='codebrowser/refs.c' l='140' u='c'/>
+<use f='codebrowser/refs.c' l='935' u='c'/>
+<use f='codebrowser/refs.c' l='1426' u='c'/>
+<use f='codebrowser/refs.c' l='1473' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='217' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='249' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='342' u='c'/>
+<use f='codebrowser/remote.c' l='535' u='c'/>
+<use f='codebrowser/transport.c' l='533' u='c'/>

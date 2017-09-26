@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit.h' l='306' type='struct trace_key'/>
+<use f='codebrowser/builtin/receive-pack.c' l='881' u='a' c='update_shallow_ref'/>
+<def f='codebrowser/shallow.c' l='382' type='struct trace_key'/>
+<use f='codebrowser/shallow.c' l='391' u='a' c='prepare_shallow_info'/>
+<use f='codebrowser/shallow.c' l='422' u='a' c='remove_nonexistent_theirs_shallow'/>
+<use f='codebrowser/shallow.c' l='572' u='a' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='678' u='a' c='post_assign_shallow'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='221' type='int cmd_status(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/commit.c' l='1337' ll='1411' type='int cmd_status(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='465'/>
+<use f='codebrowser/git.c' l='465'/>
+<use f='codebrowser/git.c' l='465'/>
+<use f='codebrowser/git.c' l='465'/>

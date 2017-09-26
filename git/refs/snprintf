@@ -1,0 +1,15 @@
+<dec f='include/stdio.h' l='386' type='int snprintf(char *restrict __s, size_t __maxlen, const char *restrict __format)'/>
+<doc f='include/stdio.h' l='385'>/* Maximum chars of output to write in MAXLEN.  */</doc>
+<use f='codebrowser/daemon.c' l='188' u='c' c='path_ok'/>
+<use f='codebrowser/daemon.c' l='232' u='c' c='path_ok'/>
+<use f='codebrowser/http.c' l='2070' u='c' c='new_http_pack_request'/>
+<use f='codebrowser/http.c' l='2164' u='c' c='new_http_object_request'/>
+<use f='codebrowser/http.c' l='2167' u='c' c='new_http_object_request'/>
+<use f='codebrowser/log-tree.c' l='382' u='c' c='log_write_email_headers'/>
+<use f='codebrowser/log-tree.c' l='403' u='c' c='log_write_email_headers'/>
+<use f='codebrowser/refs.c' l='1077' u='c' c='shorten_unambiguous_ref'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='91' u='c' c='perf_hashmap'/>
+<use f='codebrowser/usage.c' l='151' u='c' c='fmt_with_err'/>
+<use f='codebrowser/usage.c' l='219' u='c' c='BUG_vfl'/>
+<use f='codebrowser/usage.c' l='221' u='c' c='BUG_vfl'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='102' u='c' c='fast_export_begin_commit'/>

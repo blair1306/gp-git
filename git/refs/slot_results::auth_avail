@@ -1,0 +1,6 @@
+<dec f='codebrowser/http.h' l='56' type='long'/>
+<offset>128</offset>
+<use f='codebrowser/http.c' l='213' u='a' c='finish_active_slot'/>
+<use f='codebrowser/http.c' l='1399' u='r' c='handle_curl_result'/>
+<use f='codebrowser/http.c' l='1400' u='r' c='handle_curl_result'/>
+<use f='codebrowser/remote-curl.c' l='583' u='r' c='post_rpc'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/line-range.h' l='37' type='const char * skip_range_arg(const char * arg)'/>
+<doc f='codebrowser/line-range.h' l='28'>/*
+ * Scan past a range argument that could be parsed by
+ * &apos;parse_range_arg&apos;, to help the caller determine the start of the
+ * filename in &apos;-L n,m:file&apos; syntax.
+ *
+ * Returns a pointer to the first character after the &apos;n,m&apos; part, or
+ * NULL in case the argument is obviously malformed.
+ */</doc>
+<use f='codebrowser/line-log.c' l='575' u='c' c='parse_lines'/>
+<def f='codebrowser/line-range.c' l='278' ll='289' type='const char * skip_range_arg(const char * arg)'/>

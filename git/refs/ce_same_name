@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='667' type='int ce_same_name(const struct cache_entry * a, const struct cache_entry * b)'/>
+<def f='codebrowser/read-cache.c' l='785' ll='789' type='int ce_same_name(const struct cache_entry * a, const struct cache_entry * b)'/>
+<use f='codebrowser/read-cache.c' l='1157' u='c' c='add_index_entry_with_check'/>
+<use f='codebrowser/rerere.c' l='544' u='c' c='check_one_conflict'/>
+<use f='codebrowser/rerere.c' l='551' u='c' c='check_one_conflict'/>
+<use f='codebrowser/revision.c' l='1421' u='c' c='prepare_show_merge'/>

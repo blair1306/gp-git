@@ -1,0 +1,9 @@
+<dec f='include/curl/multi.h' l='138' type='CURLMcode curl_multi_remove_handle(CURLM * multi_handle, CURL * curl_handle)'/>
+<doc f='include/curl/multi.h' l='131'>/*
+  * Name:    curl_multi_remove_handle()
+  *
+  * Desc:    removes a curl handle from the multi stack again
+  *
+  * Returns: CURLMcode type, general multi error code.
+  */</doc>
+<use f='codebrowser/http.c' l='230' u='c' c='xmulti_remove_handle'/>

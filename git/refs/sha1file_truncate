@@ -1,0 +1,5 @@
+<dec f='codebrowser/csum-file.h' l='27' type='int sha1file_truncate(struct sha1file * , struct sha1file_checkpoint * )'/>
+<use f='codebrowser/bulk-checkin.c' l='229' u='c' c='deflate_to_pack'/>
+<use f='codebrowser/bulk-checkin.c' l='241' u='c' c='deflate_to_pack'/>
+<def f='codebrowser/csum-file.c' l='163' ll='174' type='int sha1file_truncate(struct sha1file * f, struct sha1file_checkpoint * checkpoint)'/>
+<use f='codebrowser/fast-import.c' l='1219' u='c' c='truncate_pack'/>

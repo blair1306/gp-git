@@ -1,0 +1,4 @@
+<dec f='codebrowser/merge-recursive.h' l='59' type='struct tree * write_tree_from_memory(struct merge_options * o)'/>
+<use f='codebrowser/builtin/checkout.c' l='566' u='c' c='merge_working_tree'/>
+<def f='codebrowser/merge-recursive.c' l='283' ll='311' type='struct tree * write_tree_from_memory(struct merge_options * o)'/>
+<use f='codebrowser/merge-recursive.c' l='1989' u='c' c='merge_trees'/>

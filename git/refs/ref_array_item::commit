@@ -1,0 +1,6 @@
+<dec f='codebrowser/ref-filter.h' l='41' type='struct commit *'/>
+<offset>320</offset>
+<use f='codebrowser/ref-filter.c' l='1880' u='w' c='ref_filter_handler'/>
+<use f='codebrowser/ref-filter.c' l='1918' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='1919' u='r' c='do_merge_filter'/>
+<use f='codebrowser/ref-filter.c' l='1934' u='r' c='do_merge_filter'/>

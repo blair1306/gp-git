@@ -1,0 +1,19 @@
+<def f='codebrowser/hashmap.h' l='293' ll='300' type='void * hashmap_get_from_hash(const struct hashmap * map, unsigned int hash, const void * keydata)'/>
+<doc f='codebrowser/hashmap.h' l='281'>/*
+ * Returns the hashmap entry for the specified hash code and key data,
+ * or NULL if not found.
+ *
+ * `map` is the hashmap structure.
+ * `hash` is the hash code of the entry to look up.
+ *
+ * If an entry with matching hash code is found, `keydata` is passed to
+ * `hashmap_cmp_fn` to decide whether the entry matches the key. The
+ * `entry_or_key` parameter of `hashmap_cmp_fn` points to a hashmap_entry
+ * structure that should not be used in the comparison.
+ */</doc>
+<use f='codebrowser/builtin/describe.c' l='70' u='c' c='find_commit_name'/>
+<use f='codebrowser/diffcore-rename.c' l='282' u='c' c='find_identical_files'/>
+<use f='codebrowser/name-hash.c' l='709' u='c' c='index_file_exists'/>
+<use f='codebrowser/refs.c' l='1588' u='c' c='lookup_ref_store_map'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='122' u='c' c='perf_hashmap'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='205' u='c' c='cmd_main'/>

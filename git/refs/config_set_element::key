@@ -1,0 +1,47 @@
+<dec f='codebrowser/config.h' l='126' type='char *'/>
+<offset>128</offset>
+<use f='codebrowser/config.c' l='1624' u='r' c='configset_iter'/>
+<use f='codebrowser/config.c' l='1625' u='r' c='configset_iter'/>
+<use f='codebrowser/config.c' l='1676' u='w' c='configset_find_element'/>
+<use f='codebrowser/config.c' l='1697' u='w' c='configset_add_value'/>
+<use f='codebrowser/config.c' l='1734' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1734' u='r' c='config_set_element_cmp'/>
+<use f='codebrowser/config.c' l='1755' u='r' c='git_configset_clear'/>

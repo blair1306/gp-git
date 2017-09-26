@@ -1,0 +1,9 @@
+<dec f='codebrowser/object.h' l='26'/>
+<use f='codebrowser/builtin/diff.c' l='261' u='c'/>
+<use f='codebrowser/builtin/fast-export.c' l='975' u='c'/>
+<use f='codebrowser/builtin/grep.c' l='770' u='c'/>
+<use f='codebrowser/builtin/name-rev.c' l='391' u='c'/>
+<use f='codebrowser/shallow.c' l='82' u='c'/>
+<use f='codebrowser/submodule.c' l='1663' u='c'/>
+<use f='codebrowser/upload-pack.c' l='698' u='c'/>
+<use f='codebrowser/upload-pack.c' l='735' u='c'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/submodule.h' l='15' type='-1'/>
+<use f='codebrowser/builtin/fetch.c' l='53'/>
+<use f='codebrowser/builtin/fetch.c' l='1224' u='r' c='add_options_to_argv'/>
+<use f='codebrowser/builtin/pull.c' l='497' c='run_fetch'/>
+<use f='codebrowser/builtin/pull.c' l='906' u='r' c='cmd_pull'/>
+<use f='codebrowser/builtin/pull.c' l='925' u='r' c='cmd_pull'/>
+<use f='codebrowser/builtin/pull.c' l='932' u='r' c='cmd_pull'/>
+<use f='codebrowser/builtin/push.c' l='504' u='r' c='git_push_config'/>
+<use f='codebrowser/builtin/push.c' l='574' u='r' c='cmd_push'/>
+<use f='codebrowser/submodule-config.c' l='248' u='r' c='parse_fetch_recurse'/>
+<use f='codebrowser/submodule-config.c' l='325' u='r' c='parse_push_recurse'/>
+<use f='codebrowser/submodule.c' l='1204' u='r' c='get_next_submodule'/>
+<use f='codebrowser/submodule.c' l='1212' u='r' c='get_next_submodule'/>
+<use f='codebrowser/submodule.c' l='1218' u='r' c='get_next_submodule'/>

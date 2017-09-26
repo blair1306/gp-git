@@ -1,0 +1,3 @@
+<dec f='codebrowser/tree-walk.h' l='43' type='int tree_entry_gently(struct tree_desc * , struct name_entry * )'/>
+<use f='codebrowser/fsck.c' l='353' u='c' c='fsck_walk_tree'/>
+<def f='codebrowser/tree-walk.c' l='156' ll='165' type='int tree_entry_gently(struct tree_desc * desc, struct name_entry * entry)'/>

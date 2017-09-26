@@ -1,0 +1,13 @@
+<dec f='include/x86_64-linux-gnu/bits/fcntl-linux.h' l='45'/>
+<use f='codebrowser/builtin/index-pack.c' l='316' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='94' u='c'/>
+<use f='codebrowser/compat/terminal.c' l='39' u='c'/>
+<use f='codebrowser/environment.c' l='271' u='c'/>
+<use f='codebrowser/environment.c' l='277' u='c'/>
+<use f='codebrowser/run-command.c' l='642' u='c'/>
+<use f='codebrowser/setup.c' l='1201' u='c'/>
+<use f='codebrowser/tempfile.c' l='124' u='c'/>
+<use f='codebrowser/tempfile.c' l='128' u='c'/>
+<use f='codebrowser/wrapper.c' l='222' u='c'/>
+<use f='codebrowser/wrapper.c' l='222' u='c'/>
+<use f='codebrowser/wrapper.c' l='517' u='c'/>

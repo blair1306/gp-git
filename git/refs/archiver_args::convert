@@ -1,0 +1,7 @@
+<dec f='codebrowser/archive.h' l='16' type='unsigned int'/>
+<use f='codebrowser/archive-tar.c' l='278' u='r' c='write_tar_entry'/>
+<offset>578</offset>
+<use f='codebrowser/archive-zip.c' l='338' u='r' c='write_zip_entry'/>
+<use f='codebrowser/archive.c' l='72' u='r' c='sha1_file_to_archive'/>
+<use f='codebrowser/archive.c' l='118' u='w' c='write_archive_entry'/>
+<use f='codebrowser/archive.c' l='133' u='w' c='write_archive_entry'/>

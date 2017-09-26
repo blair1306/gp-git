@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs/ref-cache.h' l='187' type='struct ref_entry * create_ref_entry(const char * refname, const struct object_id * oid, int flag)'/>
+<use f='codebrowser/refs/files-backend.c' l='224' u='c' c='loose_fill_ref_dir'/>
+<use f='codebrowser/refs/packed-backend.c' l='255' u='c' c='read_packed_refs'/>
+<use f='codebrowser/refs/packed-backend.c' l='353' u='c' c='add_packed_ref'/>
+<def f='codebrowser/refs/ref-cache.c' l='34' ll='44' type='struct ref_entry * create_ref_entry(const char * refname, const struct object_id * oid, int flag)'/>

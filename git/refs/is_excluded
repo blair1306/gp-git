@@ -1,0 +1,12 @@
+<dec f='codebrowser/dir.h' l='250' type='int is_excluded(struct dir_struct * dir, struct index_state * istate, const char * name, int * dtype)'/>
+<use f='codebrowser/builtin/add.c' l='488' u='c' c='cmd_add'/>
+<use f='codebrowser/builtin/clean.c' l='687' u='c' c='filter_by_patterns_cmd'/>
+<use f='codebrowser/builtin/ls-files.c' l='284' u='c' c='ce_excluded'/>
+<def f='codebrowser/dir.c' l='1240' ll='1248' type='int is_excluded(struct dir_struct * dir, struct index_state * istate, const char * pathname, int * dtype_p)'/>
+<use f='codebrowser/dir.c' l='1591' u='c' c='treat_one_path'/>
+<doc f='codebrowser/dir.c' l='1235'>/*
+ * Loads the exclude lists for the directory containing pathname, then
+ * scans all exclude lists to determine whether pathname is excluded.
+ * Returns 1 if true, otherwise 0.
+ */</doc>
+<use f='codebrowser/unpack-trees.c' l='1645' u='c' c='check_ok_to_remove'/>

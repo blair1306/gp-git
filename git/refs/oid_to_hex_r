@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1346' type='char * oid_to_hex_r(char * out, const struct object_id * oid)'/>
+<use f='codebrowser/builtin/blame.c' l='340' u='c' c='emit_porcelain'/>
+<use f='codebrowser/builtin/blame.c' l='380' u='c' c='emit_other'/>
+<use f='codebrowser/builtin/merge-index.c' l='25' u='c' c='merge_entry'/>
+<use f='codebrowser/builtin/rev-list.c' l='243' u='c' c='show_bisect_vars'/>
+<use f='codebrowser/diff.c' l='2977' u='c' c='prep_temp_blob'/>
+<use f='codebrowser/diff.c' l='3024' u='c' c='prepare_temp_file'/>
+<use f='codebrowser/diff.c' l='3026' u='c' c='prepare_temp_file'/>
+<def f='codebrowser/hex.c' l='80' ll='83' type='char * oid_to_hex_r(char * buffer, const struct object_id * oid)'/>

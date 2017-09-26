@@ -1,0 +1,10 @@
+<dec f='codebrowser/pack.h' l='80' type='const char * write_idx_file(const char * index_name, struct pack_idx_entry ** objects, int nr_objects, const struct pack_idx_option * , const unsigned char * sha1)'/>
+<use f='codebrowser/builtin/index-pack.c' l='1791' u='c' c='cmd_index_pack'/>
+<use f='codebrowser/fast-import.c' l='940' u='c' c='create_index'/>
+<def f='codebrowser/pack-write.c' l='45' ll='176' type='const char * write_idx_file(const char * index_name, struct pack_idx_entry ** objects, int nr_objects, const struct pack_idx_option * opts, const unsigned char * sha1)'/>
+<use f='codebrowser/pack-write.c' l='353' u='c' c='finish_tmp_packfile'/>
+<doc f='codebrowser/pack-write.c' l='40'>/*
+ * On entry *sha1 contains the pack content SHA1 hash, on exit it is
+ * the SHA1 hash of sorted object names. The objects array passed in
+ * will be sorted by SHA1 on exit.
+ */</doc>

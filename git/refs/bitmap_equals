@@ -1,0 +1,3 @@
+<dec f='codebrowser/ewah/ewok.h' l='212' type='int bitmap_equals(struct bitmap * self, struct bitmap * other)'/>
+<def f='codebrowser/ewah/bitmap.c' l='175' ll='199' type='int bitmap_equals(struct bitmap * self, struct bitmap * other)'/>
+<use f='codebrowser/pack-bitmap.c' l='970' u='c' c='test_bitmap_walk'/>

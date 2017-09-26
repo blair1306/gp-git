@@ -1,0 +1,4 @@
+<dec f='codebrowser/advice.h' l='29' type='void detach_advice(const char * new_name)'/>
+<def f='codebrowser/advice.c' l='123' ll='135' type='void detach_advice(const char * new_name)'/>
+<use f='codebrowser/builtin/checkout.c' l='671' u='c' c='update_refs_for_switch'/>
+<use f='codebrowser/builtin/clone.c' l='725' u='c' c='checkout'/>

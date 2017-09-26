@@ -1,0 +1,10 @@
+<dec f='codebrowser/shortlog.h' l='8' type='int'/>
+<offset>256</offset>
+<use f='codebrowser/builtin/shortlog.c' l='76' u='r' c='insert_one_record'/>
+<use f='codebrowser/builtin/shortlog.c' l='159' u='r' c='shortlog_add_commit'/>
+<use f='codebrowser/builtin/shortlog.c' l='252' u='a' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/shortlog.c' l='252' u='a' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/shortlog.c' l='252' u='a' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/shortlog.c' l='252' u='a' c='cmd_shortlog'/>
+<use f='codebrowser/builtin/shortlog.c' l='321' u='r' c='shortlog_output'/>
+<use f='codebrowser/builtin/shortlog.c' l='324' u='r' c='shortlog_output'/>

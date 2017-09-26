@@ -1,0 +1,24 @@
+<dec f='codebrowser/git-compat-util.h' l='803' type='ssize_t xwrite(int fd, const void * buf, size_t len)'/>
+<use f='codebrowser/builtin/index-pack.c' l='1464' u='c' c='final'/>
+<use f='codebrowser/builtin/receive-pack.c' l='335' u='c' c='report_message'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='579' u='c' c='cmd_unpack_objects'/>
+<use f='codebrowser/csum-file.c' l='29' u='c' c='flush'/>
+<use f='codebrowser/http.c' l='2128' u='c' c='fwrite_sha1_file'/>
+<use f='codebrowser/run-command.c' l='296' u='c' c='child_die'/>
+<use f='codebrowser/run-command.c' l='330' u='c' c='child_error_fn'/>
+<use f='codebrowser/run-command.c' l='336' u='c' c='child_warn_fn'/>
+<use f='codebrowser/run-command.c' l='342' u='c' c='child_die_fn'/>
+<use f='codebrowser/run-command.c' l='1268' u='c' c='pump_io_round'/>
+<use f='codebrowser/sideband.c' l='78' u='c' c='recv_sideband'/>
+<use f='codebrowser/sideband.c' l='101' u='c' c='recv_sideband'/>
+<use f='codebrowser/streaming.c' l='546' u='c' c='stream_blob_to_fd'/>
+<use f='codebrowser/transport-helper.c' l='238' u='c' c='disconnect_helper'/>
+<use f='codebrowser/transport-helper.c' l='1224' u='c' c='udt_do_write'/>
+<use f='codebrowser/upload-pack.c' l='83' u='c' c='send_client_data'/>
+<def f='codebrowser/wrapper.c' l='276' ll='292' type='ssize_t xwrite(int fd, const void * buf, size_t len)'/>
+<use f='codebrowser/wrapper.c' l='337' u='c' c='write_in_full'/>
+<doc f='codebrowser/wrapper.c' l='271'>/*
+ * xwrite() is the same a write(), but it automatically restarts write()
+ * operations with a recoverable error (EAGAIN and EINTR). xwrite() DOES NOT
+ * GUARANTEE that &quot;len&quot; bytes is written even if the operation is successful.
+ */</doc>

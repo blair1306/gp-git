@@ -1,0 +1,8 @@
+<dec f='codebrowser/apply.h' l='107' type='enum apply_ws_ignore'/>
+<use f='codebrowser/apply.c' l='67' u='w' c='parse_ignorewhitespace_option'/>
+<use f='codebrowser/apply.c' l='71' u='w' c='parse_ignorewhitespace_option'/>
+<use f='codebrowser/apply.c' l='91' u='w' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='2539' u='r' c='match_fragment'/>
+<use f='codebrowser/apply.c' l='4775' u='w' c='apply_option_parse_space_change'/>
+<use f='codebrowser/apply.c' l='4777' u='w' c='apply_option_parse_space_change'/>
+<offset>2336</offset>

@@ -1,0 +1,11 @@
+<def f='codebrowser/tree-walk.h' l='69' ll='80'/>
+<size>88</size>
+<mbr r='traverse_info::traverse_path' o='0' t='const char *'/>
+<mbr r='traverse_info::prev' o='64' t='struct traverse_info *'/>
+<mbr r='traverse_info::name' o='128' t='struct name_entry'/>
+<mbr r='traverse_info::pathlen' o='320' t='int'/>
+<mbr r='traverse_info::pathspec' o='384' t='struct pathspec *'/>
+<mbr r='traverse_info::df_conflicts' o='448' t='unsigned long'/>
+<mbr r='traverse_info::fn' o='512' t='traverse_callback_t'/>
+<mbr r='traverse_info::data' o='576' t='void *'/>
+<mbr r='traverse_info::show_all_errors' o='640' t='int'/>

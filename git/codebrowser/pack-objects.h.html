@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pack-objects.h source code [codebrowser/pack-objects.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="object_entry,packing_data "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/pack-objects.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='pack-objects.h.html'>pack-objects.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/PACK_OBJECTS_H">PACK_OBJECTS_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/PACK_OBJECTS_H" data-ref="_M/PACK_OBJECTS_H">PACK_OBJECTS_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><b>struct</b> <dfn class="type def" id="object_entry" title='object_entry' data-ref="object_entry">object_entry</dfn> {</td></tr>
+<tr><th id="5">5</th><td>	<b>struct</b> <a class="type" href="pack.h.html#pack_idx_entry" title='pack_idx_entry' data-ref="pack_idx_entry">pack_idx_entry</a> <dfn class="decl" id="object_entry::idx" title='object_entry::idx' data-ref="object_entry::idx">idx</dfn>;</td></tr>
+<tr><th id="6">6</th><td>	<em>unsigned</em> <em>long</em> <dfn class="decl" id="object_entry::size" title='object_entry::size' data-ref="object_entry::size">size</dfn>;	<i>/* uncompressed size */</i></td></tr>
+<tr><th id="7">7</th><td>	<b>struct</b> <a class="type" href="cache.h.html#packed_git" title='packed_git' data-ref="packed_git">packed_git</a> *<dfn class="decl" id="object_entry::in_pack" title='object_entry::in_pack' data-ref="object_entry::in_pack">in_pack</dfn>;	<i>/* already in pack */</i></td></tr>
+<tr><th id="8">8</th><td>	<a class="typedef" href="../include/unistd.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="decl" id="object_entry::in_pack_offset" title='object_entry::in_pack_offset' data-ref="object_entry::in_pack_offset">in_pack_offset</dfn>;</td></tr>
+<tr><th id="9">9</th><td>	<b>struct</b> <a class="type" href="#object_entry" title='object_entry' data-ref="object_entry">object_entry</a> *<dfn class="decl" id="object_entry::delta" title='object_entry::delta' data-ref="object_entry::delta">delta</dfn>;	<i>/* delta base object */</i></td></tr>
+<tr><th id="10">10</th><td>	<b>struct</b> <a class="type" href="#object_entry" title='object_entry' data-ref="object_entry">object_entry</a> *<dfn class="decl" id="object_entry::delta_child" title='object_entry::delta_child' data-ref="object_entry::delta_child">delta_child</dfn>; <i>/* deltified objects who bases me */</i></td></tr>
+<tr><th id="11">11</th><td>	<b>struct</b> <a class="type" href="#object_entry" title='object_entry' data-ref="object_entry">object_entry</a> *<dfn class="decl" id="object_entry::delta_sibling" title='object_entry::delta_sibling' data-ref="object_entry::delta_sibling">delta_sibling</dfn>; <i>/* other deltified objects who</i></td></tr>
+<tr><th id="12">12</th><td><i>					     * uses the same base as me</i></td></tr>
+<tr><th id="13">13</th><td><i>					     */</i></td></tr>
+<tr><th id="14">14</th><td>	<em>void</em> *<dfn class="decl" id="object_entry::delta_data" title='object_entry::delta_data' data-ref="object_entry::delta_data">delta_data</dfn>;	<i>/* cached delta (uncompressed) */</i></td></tr>
+<tr><th id="15">15</th><td>	<em>unsigned</em> <em>long</em> <dfn class="decl" id="object_entry::delta_size" title='object_entry::delta_size' data-ref="object_entry::delta_size">delta_size</dfn>;	<i>/* delta data size (uncompressed) */</i></td></tr>
+<tr><th id="16">16</th><td>	<em>unsigned</em> <em>long</em> <dfn class="decl" id="object_entry::z_delta_size" title='object_entry::z_delta_size' data-ref="object_entry::z_delta_size">z_delta_size</dfn>;	<i>/* delta data size (compressed) */</i></td></tr>
+<tr><th id="17">17</th><td>	<b>enum</b> <a class="type" href="cache.h.html#object_type" title='object_type' data-ref="object_type">object_type</a> <dfn class="decl" id="object_entry::type" title='object_entry::type' data-ref="object_entry::type">type</dfn>;</td></tr>
+<tr><th id="18">18</th><td>	<b>enum</b> <a class="type" href="cache.h.html#object_type" title='object_type' data-ref="object_type">object_type</a> <dfn class="decl" id="object_entry::in_pack_type" title='object_entry::in_pack_type' data-ref="object_entry::in_pack_type">in_pack_type</dfn>;	<i>/* could be delta */</i></td></tr>
+<tr><th id="19">19</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="object_entry::hash" title='object_entry::hash' data-ref="object_entry::hash">hash</dfn>;			<i>/* name hint hash */</i></td></tr>
+<tr><th id="20">20</th><td>	<em>unsigned</em> <em>int</em> <dfn class="decl" id="object_entry::in_pack_pos" title='object_entry::in_pack_pos' data-ref="object_entry::in_pack_pos">in_pack_pos</dfn>;</td></tr>
+<tr><th id="21">21</th><td>	<em>unsigned</em> <em>char</em> <dfn class="decl" id="object_entry::in_pack_header_size" title='object_entry::in_pack_header_size' data-ref="object_entry::in_pack_header_size">in_pack_header_size</dfn>;</td></tr>
+<tr><th id="22">22</th><td>	<em>unsigned</em> <dfn class="decl" id="object_entry::preferred_base" title='object_entry::preferred_base' data-ref="object_entry::preferred_base">preferred_base</dfn>:<var>1</var>; <i>/*</i></td></tr>
+<tr><th id="23">23</th><td><i>				    * we do not pack this, but is available</i></td></tr>
+<tr><th id="24">24</th><td><i>				    * to be used as the base object to delta</i></td></tr>
+<tr><th id="25">25</th><td><i>				    * objects against.</i></td></tr>
+<tr><th id="26">26</th><td><i>				    */</i></td></tr>
+<tr><th id="27">27</th><td>	<em>unsigned</em> <dfn class="decl" id="object_entry::no_try_delta" title='object_entry::no_try_delta' data-ref="object_entry::no_try_delta">no_try_delta</dfn>:<var>1</var>;</td></tr>
+<tr><th id="28">28</th><td>	<em>unsigned</em> <dfn class="decl" id="object_entry::tagged" title='object_entry::tagged' data-ref="object_entry::tagged">tagged</dfn>:<var>1</var>; <i>/* near the very tip of refs */</i></td></tr>
+<tr><th id="29">29</th><td>	<em>unsigned</em> <dfn class="decl" id="object_entry::filled" title='object_entry::filled' data-ref="object_entry::filled">filled</dfn>:<var>1</var>; <i>/* assigned write-order */</i></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>	<i>/*</i></td></tr>
+<tr><th id="32">32</th><td><i>	 * State flags for depth-first search used for analyzing delta cycles.</i></td></tr>
+<tr><th id="33">33</th><td><i>	 *</i></td></tr>
+<tr><th id="34">34</th><td><i>	 * The depth is measured in delta-links to the base (so if A is a delta</i></td></tr>
+<tr><th id="35">35</th><td><i>	 * against B, then A has a depth of 1, and B a depth of 0).</i></td></tr>
+<tr><th id="36">36</th><td><i>	 */</i></td></tr>
+<tr><th id="37">37</th><td>	<b>enum</b> {</td></tr>
+<tr><th id="38">38</th><td>		<dfn class="enum" id="object_entry::DFS_NONE" title='object_entry::DFS_NONE' data-ref="object_entry::DFS_NONE">DFS_NONE</dfn> = <var>0</var>,</td></tr>
+<tr><th id="39">39</th><td>		<dfn class="enum" id="object_entry::DFS_ACTIVE" title='object_entry::DFS_ACTIVE' data-ref="object_entry::DFS_ACTIVE">DFS_ACTIVE</dfn>,</td></tr>
+<tr><th id="40">40</th><td>		<dfn class="enum" id="object_entry::DFS_DONE" title='object_entry::DFS_DONE' data-ref="object_entry::DFS_DONE">DFS_DONE</dfn></td></tr>
+<tr><th id="41">41</th><td>	} <dfn class="decl" id="object_entry::dfs_state" title='object_entry::dfs_state' data-ref="object_entry::dfs_state">dfs_state</dfn>;</td></tr>
+<tr><th id="42">42</th><td>	<em>int</em> <dfn class="decl" id="object_entry::depth" title='object_entry::depth' data-ref="object_entry::depth">depth</dfn>;</td></tr>
+<tr><th id="43">43</th><td>};</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><b>struct</b> <dfn class="type def" id="packing_data" title='packing_data' data-ref="packing_data">packing_data</dfn> {</td></tr>
+<tr><th id="46">46</th><td>	<b>struct</b> <a class="type" href="#object_entry" title='object_entry' data-ref="object_entry">object_entry</a> *<dfn class="decl" id="packing_data::objects" title='packing_data::objects' data-ref="packing_data::objects">objects</dfn>;</td></tr>
+<tr><th id="47">47</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="packing_data::nr_objects" title='packing_data::nr_objects' data-ref="packing_data::nr_objects">nr_objects</dfn>, <dfn class="decl" id="packing_data::nr_alloc" title='packing_data::nr_alloc' data-ref="packing_data::nr_alloc">nr_alloc</dfn>;</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>	<a class="typedef" href="../include/x86_64-linux-gnu/sys/types.h.html#196" title='int32_t' data-type='int' data-ref="int32_t">int32_t</a> *<dfn class="decl" id="packing_data::index" title='packing_data::index' data-ref="packing_data::index">index</dfn>;</td></tr>
+<tr><th id="50">50</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="packing_data::index_size" title='packing_data::index_size' data-ref="packing_data::index_size">index_size</dfn>;</td></tr>
+<tr><th id="51">51</th><td>};</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><b>struct</b> <a class="type" href="#object_entry" title='object_entry' data-ref="object_entry">object_entry</a> *<dfn class="decl" id="packlist_alloc" title='packlist_alloc' data-ref="packlist_alloc">packlist_alloc</dfn>(<b>struct</b> <a class="type" href="#packing_data" title='packing_data' data-ref="packing_data">packing_data</a> *<dfn class="local col1 decl" id="1pdata" title='pdata' data-type='struct packing_data *' data-ref="1pdata">pdata</dfn>,</td></tr>
+<tr><th id="54">54</th><td>				    <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col2 decl" id="2sha1" title='sha1' data-type='const unsigned char *' data-ref="2sha1">sha1</dfn>,</td></tr>
+<tr><th id="55">55</th><td>				    <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col3 decl" id="3index_pos" title='index_pos' data-type='uint32_t' data-ref="3index_pos">index_pos</dfn>);</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><b>struct</b> <a class="type" href="#object_entry" title='object_entry' data-ref="object_entry">object_entry</a> *<dfn class="decl" id="packlist_find" title='packlist_find' data-ref="packlist_find">packlist_find</dfn>(<b>struct</b> <a class="type" href="#packing_data" title='packing_data' data-ref="packing_data">packing_data</a> *<dfn class="local col4 decl" id="4pdata" title='pdata' data-type='struct packing_data *' data-ref="4pdata">pdata</dfn>,</td></tr>
+<tr><th id="58">58</th><td>				   <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col5 decl" id="5sha1" title='sha1' data-type='const unsigned char *' data-ref="5sha1">sha1</dfn>,</td></tr>
+<tr><th id="59">59</th><td>				   <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> *<dfn class="local col6 decl" id="6index_pos" title='index_pos' data-type='uint32_t *' data-ref="6index_pos">index_pos</dfn>);</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><em>static</em> <b>inline</b> <a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl def" id="pack_name_hash" title='pack_name_hash' data-ref="pack_name_hash">pack_name_hash</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="7name" title='name' data-type='const char *' data-ref="7name">name</dfn>)</td></tr>
+<tr><th id="62">62</th><td>{</td></tr>
+<tr><th id="63">63</th><td>	<a class="typedef" href="../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="local col8 decl" id="8c" title='c' data-type='uint32_t' data-ref="8c">c</dfn>, <dfn class="local col9 decl" id="9hash" title='hash' data-type='uint32_t' data-ref="9hash">hash</dfn> = <var>0</var>;</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td>	<b>if</b> (!<a class="local col7 ref" href="#7name" title='name' data-ref="7name">name</a>)</td></tr>
+<tr><th id="66">66</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>	<i>/*</i></td></tr>
+<tr><th id="69">69</th><td><i>	 * This effectively just creates a sortable number from the</i></td></tr>
+<tr><th id="70">70</th><td><i>	 * last sixteen non-whitespace characters. Last characters</i></td></tr>
+<tr><th id="71">71</th><td><i>	 * count "most", so things that end in ".c" sort together.</i></td></tr>
+<tr><th id="72">72</th><td><i>	 */</i></td></tr>
+<tr><th id="73">73</th><td>	<b>while</b> ((<a class="local col8 ref" href="#8c" title='c' data-ref="8c">c</a> = *<a class="local col7 ref" href="#7name" title='name' data-ref="7name">name</a>++) != <var>0</var>) {</td></tr>
+<tr><th id="74">74</th><td>		<b>if</b> (<a class="macro" href="git-compat-util.h.html#946" title="((sane_ctype[(unsigned char)(c)] &amp; (0x01)) != 0)" data-ref="_M/isspace">isspace</a>(<a class="local col8 ref" href="#8c" title='c' data-ref="8c">c</a>))</td></tr>
+<tr><th id="75">75</th><td>			<b>continue</b>;</td></tr>
+<tr><th id="76">76</th><td>		<a class="local col9 ref" href="#9hash" title='hash' data-ref="9hash">hash</a> = (<a class="local col9 ref" href="#9hash" title='hash' data-ref="9hash">hash</a> &gt;&gt; <var>2</var>) + (<a class="local col8 ref" href="#8c" title='c' data-ref="8c">c</a> &lt;&lt; <var>24</var>);</td></tr>
+<tr><th id="77">77</th><td>	}</td></tr>
+<tr><th id="78">78</th><td>	<b>return</b> <a class="local col9 ref" href="#9hash" title='hash' data-ref="9hash">hash</a>;</td></tr>
+<tr><th id="79">79</th><td>}</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="82">82</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/pack-objects.c.html'>codebrowser/builtin/pack-objects.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

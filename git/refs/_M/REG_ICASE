@@ -1,0 +1,8 @@
+<dec f='include/regex.h' l='277'/>
+<doc f='include/regex.h' l='275'>/* If this bit is set, then ignore case when matching.
+   If not set, then case is significant.  */</doc>
+<use f='codebrowser/diffcore-pickaxe.c' l='226' u='c'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='232' u='c'/>
+<use f='codebrowser/grep.c' l='600' u='c'/>
+<use f='codebrowser/grep.c' l='666' u='c'/>
+<use f='codebrowser/t/helper/test-regex.c' l='12' u='c'/>

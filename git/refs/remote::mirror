@@ -1,0 +1,9 @@
+<dec f='codebrowser/remote.h' l='48' type='int'/>
+<offset>1024</offset>
+<use f='codebrowser/builtin/push.c' l='381' u='r' c='do_push'/>
+<use f='codebrowser/builtin/remote.c' l='384' u='r' c='get_push_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='433' u='r' c='get_push_ref_states_noquery'/>
+<use f='codebrowser/builtin/remote.c' l='1201' u='r' c='show'/>
+<use f='codebrowser/builtin/remote.c' l='1406' u='r' c='add_branches'/>
+<use f='codebrowser/remote.c' l='387' u='w' c='handle_config'/>
+<use f='codebrowser/remote.c' l='1748' u='r' c='branch_get_push_1'/>

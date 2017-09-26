@@ -1,0 +1,13 @@
+<dec f='codebrowser/line-log.h' l='17' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/line-log.c' l='21' u='r' c='range_set_grow'/>
+<use f='codebrowser/line-log.c' l='21' u='r' c='range_set_grow'/>
+<use f='codebrowser/line-log.c' l='21' u='w' c='range_set_grow'/>
+<use f='codebrowser/line-log.c' l='21' u='w' c='range_set_grow'/>
+<use f='codebrowser/line-log.c' l='21' u='r' c='range_set_grow'/>
+<use f='codebrowser/line-log.c' l='21' u='r' c='range_set_grow'/>
+<use f='codebrowser/line-log.c' l='29' u='w' c='range_set_init'/>
+<use f='codebrowser/line-log.c' l='38' u='w' c='range_set_release'/>
+<use f='codebrowser/line-log.c' l='54' u='w' c='range_set_move'/>
+<use f='codebrowser/line-log.c' l='54' u='r' c='range_set_move'/>
+<use f='codebrowser/line-log.c' l='56' u='w' c='range_set_move'/>

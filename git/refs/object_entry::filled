@@ -1,0 +1,7 @@
+<dec f='codebrowser/pack-objects.h' l='29' type='unsigned int'/>
+<use f='codebrowser/builtin/pack-objects.c' l='576' u='r' c='add_to_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='579' u='w' c='add_to_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='645' u='w' c='compute_write_order'/>
+<use f='codebrowser/builtin/pack-objects.c' l='712' u='r' c='compute_write_order'/>
+<offset>971</offset>
+<doc f='codebrowser/pack-objects.h' l='29'>/* assigned write-order */</doc>

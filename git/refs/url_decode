@@ -1,0 +1,5 @@
+<dec f='codebrowser/url.h' l='6' type='char * url_decode(const char * url)'/>
+<use f='codebrowser/connect.c' l='630' u='c' c='parse_connect_url'/>
+<use f='codebrowser/credential.c' l='366' u='c' c='credential_from_url'/>
+<use f='codebrowser/remote-testsvn.c' l='301' u='c' c='cmd_main'/>
+<def f='codebrowser/url.c' l='70' ll='73' type='char * url_decode(const char * url)'/>

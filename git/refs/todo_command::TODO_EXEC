@@ -1,0 +1,4 @@
+<dec f='codebrowser/sequencer.c' l='765' type='6'/>
+<use f='codebrowser/sequencer.c' l='1268' u='r' c='parse_insn_line'/>
+<use f='codebrowser/sequencer.c' l='2060' u='r' c='pick_commits'/>
+<doc f='codebrowser/sequencer.c' l='764'>/* commands that do something else than handling a single commit */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='127' type='const char *'/>
+<offset>256</offset>
+<doc f='codebrowser/xdiff/xdiff.h' l='127'>/* label for mf1 */</doc>
+<use f='codebrowser/builtin/merge-file.c' l='88' u='w' c='cmd_merge_file'/>
+<use f='codebrowser/ll-merge.c' l='118' u='w' c='ll_xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='478' u='r' c='xdl_do_merge'/>

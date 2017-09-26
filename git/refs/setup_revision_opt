@@ -1,0 +1,7 @@
+<def f='codebrowser/revision.h' l='240' ll='246'/>
+<size>32</size>
+<mbr r='setup_revision_opt::def' o='0' t='const char *'/>
+<mbr r='setup_revision_opt::tweak' o='64' t='void (*)(struct rev_info *, struct setup_revision_opt *)'/>
+<mbr r='setup_revision_opt::submodule' o='128' t='const char *'/>
+<mbr r='setup_revision_opt::assume_dashdash' o='192' t='int'/>
+<mbr r='setup_revision_opt::revarg_opt' o='224' t='unsigned int'/>

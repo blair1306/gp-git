@@ -1,0 +1,16 @@
+<dec f='codebrowser/mergesort.h' l='12' type='void * llist_mergesort(void * list, void *(*)(const void *) get_next_fn, void (*)(void *, void *) set_next_fn, int (*)(const void *, const void *) compare_fn)'/>
+<use f='codebrowser/blame.c' l='409' u='c' c='blame_sort_final'/>
+<use f='codebrowser/blame.c' l='1379' u='c' c='distribute_blame'/>
+<doc f='codebrowser/mergesort.h' l='4'>/*
+ * Sort linked list in place.
+ * - get_next_fn() returns the next element given an element of a linked list.
+ * - set_next_fn() takes two elements A and B, and makes B the &quot;next&quot; element
+ *   of A on the list.
+ * - compare_fn() takes two elements A and B, and returns negative, 0, positive
+ *   as the same sign as &quot;subtracting&quot; B from A.
+ */</doc>
+<use f='codebrowser/commit.c' l='496' u='c' c='commit_list_sort_by_date'/>
+<def f='codebrowser/mergesort.c' l='26' ll='73' type='void * llist_mergesort(void * list, void *(*)(const void *) get_next_fn, void (*)(void *, void *) set_next_fn, int (*)(const void *, const void *) compare_fn)'/>
+<use f='codebrowser/remote.c' l='1003' u='c' c='sort_ref_list'/>
+<use f='codebrowser/sha1_file.c' l='1566' u='c' c='rearrange_packed_git'/>
+<use f='codebrowser/t/helper/test-mergesort.c' l='45' u='c' c='cmd_main'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/khash.h' l='239'/>
+<doc f='codebrowser/khash.h' l='233'>/*! @function
+  @abstract     Test whether a bucket contains data.
+  @param  h     Pointer to the hash table [khash_t(name)*]
+  @param  x     Iterator to the bucket [khint_t]
+  @return       1 if containing data; 0 otherwise [int]
+ */</doc>

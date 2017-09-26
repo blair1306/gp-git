@@ -1,0 +1,3 @@
+<dec f='codebrowser/exec_cmd.h' l='13' type='int execl_git_cmd(const char * cmd)'/>
+<use f='codebrowser/builtin/help.c' l='387' u='c' c='open_html'/>
+<def f='codebrowser/exec_cmd.c' l='130' ll='151' type='int execl_git_cmd(const char * cmd)'/>

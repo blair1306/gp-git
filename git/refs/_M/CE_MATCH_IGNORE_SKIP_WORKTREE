@@ -1,0 +1,10 @@
+<dec f='codebrowser/cache.h' l='677'/>
+<doc f='codebrowser/cache.h' l='676'>/* do stat comparison even if CE_SKIP_WORKTREE is true */</doc>
+<use f='codebrowser/apply.c' l='3373' u='c'/>
+<use f='codebrowser/entry.c' l='392' u='c'/>
+<use f='codebrowser/read-cache.c' l='309' u='c'/>
+<use f='codebrowser/read-cache.c' l='634' u='c'/>
+<use f='codebrowser/read-cache.c' l='1229' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1468' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1624' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='2148' u='c'/>

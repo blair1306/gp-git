@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='229' type='int cmd_update_index(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/update-index.c' l='907' ll='1163' type='int cmd_update_index(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='472'/>
+<use f='codebrowser/git.c' l='472'/>
+<use f='codebrowser/git.c' l='472'/>
+<use f='codebrowser/git.c' l='472'/>

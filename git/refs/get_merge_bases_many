@@ -1,0 +1,4 @@
+<dec f='codebrowser/commit.h' l='255' type='struct commit_list * get_merge_bases_many(struct commit * one, int n, struct commit ** twos)'/>
+<use f='codebrowser/bisect.c' l='787' u='c' c='check_merge_bases'/>
+<use f='codebrowser/builtin/log.c' l='1281' u='c' c='get_base_commit'/>
+<def f='codebrowser/commit.c' l='986' ll='991' type='struct commit_list * get_merge_bases_many(struct commit * one, int n, struct commit ** twos)'/>

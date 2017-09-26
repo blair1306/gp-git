@@ -1,0 +1,4 @@
+<dec f='codebrowser/apply.h' l='131' type='int apply_all_patches(struct apply_state * state, int argc, const char ** argv, int options)'/>
+<def f='codebrowser/apply.c' l='4801' ll='4908' type='int apply_all_patches(struct apply_state * state, int argc, const char ** argv, int options)'/>
+<use f='codebrowser/builtin/am.c' l='1516' u='c' c='run_apply'/>
+<use f='codebrowser/builtin/apply.c' l='31' u='c' c='cmd_apply'/>

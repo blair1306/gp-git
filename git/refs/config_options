@@ -1,0 +1,5 @@
+<def f='codebrowser/config.h' l='31' ll='35'/>
+<size>24</size>
+<mbr r='config_options::respect_includes' o='0' t='unsigned int'/>
+<mbr r='config_options::commondir' o='64' t='const char *'/>
+<mbr r='config_options::git_dir' o='128' t='const char *'/>

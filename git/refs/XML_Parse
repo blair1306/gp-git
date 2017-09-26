@@ -1,0 +1,13 @@
+<dec f='include/expat.h' l='778' type='enum XML_Status XML_Parse(XML_Parser parser, const char * s, int len, int isFinal)'/>
+<use f='codebrowser/http-push.c' l='907' u='c' c='lock_remote'/>
+<use f='codebrowser/http-push.c' l='1159' u='c' c='remote_ls'/>
+<use f='codebrowser/http-push.c' l='1232' u='c' c='locking_available'/>
+<doc f='include/expat.h' l='768'>/* Parses some input. Returns XML_STATUS_ERROR if a fatal error is
+   detected.  The last call to XML_Parse must have isFinal true; len
+   may be zero for this call (or any other).
+
+   Though the return values for these functions has always been
+   described as a Boolean value, the implementation, at least for the
+   1.95.x series, has always returned exactly one of the XML_Status
+   values.
+*/</doc>

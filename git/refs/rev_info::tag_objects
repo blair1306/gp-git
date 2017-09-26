@@ -1,0 +1,12 @@
+<dec f='codebrowser/revision.h' l='99' type='unsigned int'/>
+<offset>940</offset>
+<use f='codebrowser/builtin/rev-list.c' l='354' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/builtin/rev-list.c' l='384' u='r' c='cmd_rev_list'/>
+<use f='codebrowser/pack-bitmap-write.c' l='262' u='w' c='bitmap_writer_build'/>
+<use f='codebrowser/pack-bitmap.c' l='953' u='w' c='test_bitmap_walk'/>
+<use f='codebrowser/reachable.c' l='167' u='w' c='mark_reachable_objects'/>
+<use f='codebrowser/revision.c' l='225' u='r' c='handle_commit'/>
+<use f='codebrowser/revision.c' l='1849' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1853' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1858' u='w' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1864' u='w' c='handle_revision_opt'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/color.h' l='47'/>
+<doc f='codebrowser/color.h' l='46'>/* A special value meaning &quot;no color selected&quot; */</doc>
+<use f='codebrowser/wt-status.c' l='33' u='c'/>

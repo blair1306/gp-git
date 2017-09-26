@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>fetch-pack.h source code [codebrowser/fetch-pack.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="fetch_pack_args "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/fetch-pack.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='fetch-pack.h.html'>fetch-pack.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/FETCH_PACK_H">FETCH_PACK_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/FETCH_PACK_H" data-ref="_M/FETCH_PACK_H">FETCH_PACK_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="string-list.h.html">"string-list.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="run-command.h.html">"run-command.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><b>struct</b> <a class="type" href="sha1-array.h.html#oid_array" title='oid_array' data-ref="oid_array" id="oid_array">oid_array</a>;</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>struct</b> <dfn class="type def" id="fetch_pack_args" title='fetch_pack_args' data-ref="fetch_pack_args">fetch_pack_args</dfn> {</td></tr>
+<tr><th id="10">10</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="fetch_pack_args::uploadpack" title='fetch_pack_args::uploadpack' data-ref="fetch_pack_args::uploadpack">uploadpack</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	<em>int</em> <dfn class="decl" id="fetch_pack_args::unpacklimit" title='fetch_pack_args::unpacklimit' data-ref="fetch_pack_args::unpacklimit">unpacklimit</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<em>int</em> <dfn class="decl" id="fetch_pack_args::depth" title='fetch_pack_args::depth' data-ref="fetch_pack_args::depth">depth</dfn>;</td></tr>
+<tr><th id="13">13</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="fetch_pack_args::deepen_since" title='fetch_pack_args::deepen_since' data-ref="fetch_pack_args::deepen_since">deepen_since</dfn>;</td></tr>
+<tr><th id="14">14</th><td>	<em>const</em> <b>struct</b> <a class="type" href="string-list.h.html#string_list" title='string_list' data-ref="string_list">string_list</a> *<dfn class="decl" id="fetch_pack_args::deepen_not" title='fetch_pack_args::deepen_not' data-ref="fetch_pack_args::deepen_not">deepen_not</dfn>;</td></tr>
+<tr><th id="15">15</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::deepen_relative" title='fetch_pack_args::deepen_relative' data-ref="fetch_pack_args::deepen_relative">deepen_relative</dfn>:<var>1</var>;</td></tr>
+<tr><th id="16">16</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::quiet" title='fetch_pack_args::quiet' data-ref="fetch_pack_args::quiet">quiet</dfn>:<var>1</var>;</td></tr>
+<tr><th id="17">17</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::keep_pack" title='fetch_pack_args::keep_pack' data-ref="fetch_pack_args::keep_pack">keep_pack</dfn>:<var>1</var>;</td></tr>
+<tr><th id="18">18</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::lock_pack" title='fetch_pack_args::lock_pack' data-ref="fetch_pack_args::lock_pack">lock_pack</dfn>:<var>1</var>;</td></tr>
+<tr><th id="19">19</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::use_thin_pack" title='fetch_pack_args::use_thin_pack' data-ref="fetch_pack_args::use_thin_pack">use_thin_pack</dfn>:<var>1</var>;</td></tr>
+<tr><th id="20">20</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::fetch_all" title='fetch_pack_args::fetch_all' data-ref="fetch_pack_args::fetch_all">fetch_all</dfn>:<var>1</var>;</td></tr>
+<tr><th id="21">21</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::stdin_refs" title='fetch_pack_args::stdin_refs' data-ref="fetch_pack_args::stdin_refs">stdin_refs</dfn>:<var>1</var>;</td></tr>
+<tr><th id="22">22</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::diag_url" title='fetch_pack_args::diag_url' data-ref="fetch_pack_args::diag_url">diag_url</dfn>:<var>1</var>;</td></tr>
+<tr><th id="23">23</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::verbose" title='fetch_pack_args::verbose' data-ref="fetch_pack_args::verbose">verbose</dfn>:<var>1</var>;</td></tr>
+<tr><th id="24">24</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::no_progress" title='fetch_pack_args::no_progress' data-ref="fetch_pack_args::no_progress">no_progress</dfn>:<var>1</var>;</td></tr>
+<tr><th id="25">25</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::include_tag" title='fetch_pack_args::include_tag' data-ref="fetch_pack_args::include_tag">include_tag</dfn>:<var>1</var>;</td></tr>
+<tr><th id="26">26</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::stateless_rpc" title='fetch_pack_args::stateless_rpc' data-ref="fetch_pack_args::stateless_rpc">stateless_rpc</dfn>:<var>1</var>;</td></tr>
+<tr><th id="27">27</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::check_self_contained_and_connected" title='fetch_pack_args::check_self_contained_and_connected' data-ref="fetch_pack_args::check_self_contained_and_connected">check_self_contained_and_connected</dfn>:<var>1</var>;</td></tr>
+<tr><th id="28">28</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::self_contained_and_connected" title='fetch_pack_args::self_contained_and_connected' data-ref="fetch_pack_args::self_contained_and_connected">self_contained_and_connected</dfn>:<var>1</var>;</td></tr>
+<tr><th id="29">29</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::cloning" title='fetch_pack_args::cloning' data-ref="fetch_pack_args::cloning">cloning</dfn>:<var>1</var>;</td></tr>
+<tr><th id="30">30</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::update_shallow" title='fetch_pack_args::update_shallow' data-ref="fetch_pack_args::update_shallow">update_shallow</dfn>:<var>1</var>;</td></tr>
+<tr><th id="31">31</th><td>	<em>unsigned</em> <dfn class="decl" id="fetch_pack_args::deepen" title='fetch_pack_args::deepen' data-ref="fetch_pack_args::deepen">deepen</dfn>:<var>1</var>;</td></tr>
+<tr><th id="32">32</th><td>};</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i>/*</i></td></tr>
+<tr><th id="35">35</th><td><i> * sought represents remote references that should be updated from.</i></td></tr>
+<tr><th id="36">36</th><td><i> * On return, the names that were found on the remote will have been</i></td></tr>
+<tr><th id="37">37</th><td><i> * marked as such.</i></td></tr>
+<tr><th id="38">38</th><td><i> */</i></td></tr>
+<tr><th id="39">39</th><td><b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="decl" id="fetch_pack" title='fetch_pack' data-ref="fetch_pack">fetch_pack</dfn>(<b>struct</b> <a class="type" href="#fetch_pack_args" title='fetch_pack_args' data-ref="fetch_pack_args">fetch_pack_args</a> *<dfn class="local col1 decl" id="1args" title='args' data-type='struct fetch_pack_args *' data-ref="1args">args</dfn>,</td></tr>
+<tr><th id="40">40</th><td>		       <em>int</em> <dfn class="local col2 decl" id="2fd" title='fd' data-type='int *' data-ref="2fd">fd</dfn>[], <b>struct</b> <a class="type" href="run-command.h.html#child_process" title='child_process' data-ref="child_process">child_process</a> *<dfn class="local col3 decl" id="3conn" title='conn' data-type='struct child_process *' data-ref="3conn">conn</dfn>,</td></tr>
+<tr><th id="41">41</th><td>		       <em>const</em> <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> *<dfn class="local col4 decl" id="4ref" title='ref' data-type='const struct ref *' data-ref="4ref">ref</dfn>,</td></tr>
+<tr><th id="42">42</th><td>		       <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5dest" title='dest' data-type='const char *' data-ref="5dest">dest</dfn>,</td></tr>
+<tr><th id="43">43</th><td>		       <b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> **<dfn class="local col6 decl" id="6sought" title='sought' data-type='struct ref **' data-ref="6sought">sought</dfn>,</td></tr>
+<tr><th id="44">44</th><td>		       <em>int</em> <dfn class="local col7 decl" id="7nr_sought" title='nr_sought' data-type='int' data-ref="7nr_sought">nr_sought</dfn>,</td></tr>
+<tr><th id="45">45</th><td>		       <b>struct</b> <a class="type" href="sha1-array.h.html#oid_array" title='oid_array' data-ref="oid_array">oid_array</a> *<dfn class="local col8 decl" id="8shallow" title='shallow' data-type='struct oid_array *' data-ref="8shallow">shallow</dfn>,</td></tr>
+<tr><th id="46">46</th><td>		       <em>char</em> **<dfn class="local col9 decl" id="9pack_lockfile" title='pack_lockfile' data-type='char **' data-ref="9pack_lockfile">pack_lockfile</dfn>);</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><i>/*</i></td></tr>
+<tr><th id="49">49</th><td><i> * Print an appropriate error message for each sought ref that wasn't</i></td></tr>
+<tr><th id="50">50</th><td><i> * matched.  Return 0 if all sought refs were matched, otherwise 1.</i></td></tr>
+<tr><th id="51">51</th><td><i> */</i></td></tr>
+<tr><th id="52">52</th><td><em>int</em> <dfn class="decl" id="report_unmatched_refs" title='report_unmatched_refs' data-ref="report_unmatched_refs">report_unmatched_refs</dfn>(<b>struct</b> <a class="type" href="remote.h.html#ref" title='ref' data-ref="ref">ref</a> **<dfn class="local col0 decl" id="10sought" title='sought' data-type='struct ref **' data-ref="10sought">sought</dfn>, <em>int</em> <dfn class="local col1 decl" id="11nr_sought" title='nr_sought' data-type='int' data-ref="11nr_sought">nr_sought</dfn>);</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/clone.c.html'>codebrowser/builtin/clone.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

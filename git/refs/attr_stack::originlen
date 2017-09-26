@@ -1,0 +1,5 @@
+<dec f='codebrowser/attr.c' l='455' type='size_t'/>
+<use f='codebrowser/attr.c' l='853' u='w' c='push_stack'/>
+<use f='codebrowser/attr.c' l='932' u='r' c='prepare_attr_stack'/>
+<use f='codebrowser/attr.c' l='1050' u='r' c='fill'/>
+<offset>128</offset>

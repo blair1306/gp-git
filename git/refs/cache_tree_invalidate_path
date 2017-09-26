@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache-tree.h' l='27' type='void cache_tree_invalidate_path(struct index_state * , const char * )'/>
+<use f='codebrowser/blame.c' l='264' u='c' c='fake_working_tree_commit'/>
+<use f='codebrowser/builtin/update-index.c' l='236' u='c' c='mark_ce_flags'/>
+<def f='codebrowser/cache-tree.c' l='146' ll='150' type='void cache_tree_invalidate_path(struct index_state * istate, const char * path)'/>
+<use f='codebrowser/read-cache.c' l='80' u='c' c='rename_index_entry_at'/>
+<use f='codebrowser/read-cache.c' l='552' u='c' c='remove_file_from_index'/>
+<use f='codebrowser/read-cache.c' l='778' u='c' c='chmod_index_entry'/>
+<use f='codebrowser/read-cache.c' l='1129' u='c' c='add_index_entry_with_check'/>
+<use f='codebrowser/unpack-trees.c' l='1517' u='c' c='invalidate_ce_path'/>

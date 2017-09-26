@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>tree.h source code [codebrowser/tree.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="tree "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/tree.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='tree.h.html'>tree.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/TREE_H">TREE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/TREE_H" data-ref="_M/TREE_H">TREE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="object.h.html">"object.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>extern</b> <em>const</em> <em>char</em> *<dfn class="decl" id="tree_type" title='tree_type' data-ref="tree_type">tree_type</dfn>;</td></tr>
+<tr><th id="7">7</th><td><b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf" id="strbuf">strbuf</a>;</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>struct</b> <dfn class="type def" id="tree" title='tree' data-ref="tree">tree</dfn> {</td></tr>
+<tr><th id="10">10</th><td>	<b>struct</b> <a class="type" href="object.h.html#object" title='object' data-ref="object">object</a> <dfn class="decl" id="tree::object" title='tree::object' data-ref="tree::object">object</dfn>;</td></tr>
+<tr><th id="11">11</th><td>	<em>void</em> *<dfn class="decl" id="tree::buffer" title='tree::buffer' data-ref="tree::buffer">buffer</dfn>;</td></tr>
+<tr><th id="12">12</th><td>	<em>unsigned</em> <em>long</em> <dfn class="decl" id="tree::size" title='tree::size' data-ref="tree::size">size</dfn>;</td></tr>
+<tr><th id="13">13</th><td>};</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>struct</b> <a class="type" href="#tree" title='tree' data-ref="tree">tree</a> *<dfn class="decl" id="lookup_tree" title='lookup_tree' data-ref="lookup_tree">lookup_tree</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col1 decl" id="41oid" title='oid' data-type='const struct object_id *' data-ref="41oid">oid</dfn>);</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><em>int</em> <dfn class="decl" id="parse_tree_buffer" title='parse_tree_buffer' data-ref="parse_tree_buffer">parse_tree_buffer</dfn>(<b>struct</b> <a class="type" href="#tree" title='tree' data-ref="tree">tree</a> *<dfn class="local col2 decl" id="42item" title='item' data-type='struct tree *' data-ref="42item">item</dfn>, <em>void</em> *<dfn class="local col3 decl" id="43buffer" title='buffer' data-type='void *' data-ref="43buffer">buffer</dfn>, <em>unsigned</em> <em>long</em> <dfn class="local col4 decl" id="44size" title='size' data-type='unsigned long' data-ref="44size">size</dfn>);</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><em>int</em> <dfn class="decl" id="parse_tree_gently" title='parse_tree_gently' data-ref="parse_tree_gently">parse_tree_gently</dfn>(<b>struct</b> <a class="type" href="#tree" title='tree' data-ref="tree">tree</a> *<dfn class="local col5 decl" id="45tree" title='tree' data-type='struct tree *' data-ref="45tree">tree</dfn>, <em>int</em> <dfn class="local col6 decl" id="46quiet_on_missing" title='quiet_on_missing' data-type='int' data-ref="46quiet_on_missing">quiet_on_missing</dfn>);</td></tr>
+<tr><th id="20">20</th><td><em>static</em> <b>inline</b> <em>int</em> <dfn class="decl def" id="parse_tree" title='parse_tree' data-ref="parse_tree">parse_tree</dfn>(<b>struct</b> <a class="type" href="#tree" title='tree' data-ref="tree">tree</a> *<dfn class="local col7 decl" id="47tree" title='tree' data-type='struct tree *' data-ref="47tree">tree</dfn>)</td></tr>
+<tr><th id="21">21</th><td>{</td></tr>
+<tr><th id="22">22</th><td>	<b>return</b> <a class="ref" href="#parse_tree_gently" title='parse_tree_gently' data-ref="parse_tree_gently">parse_tree_gently</a>(<a class="local col7 ref" href="#47tree" title='tree' data-ref="47tree">tree</a>, <var>0</var>);</td></tr>
+<tr><th id="23">23</th><td>}</td></tr>
+<tr><th id="24">24</th><td><em>void</em> <dfn class="decl" id="free_tree_buffer" title='free_tree_buffer' data-ref="free_tree_buffer">free_tree_buffer</dfn>(<b>struct</b> <a class="type" href="#tree" title='tree' data-ref="tree">tree</a> *<dfn class="local col8 decl" id="48tree" title='tree' data-type='struct tree *' data-ref="48tree">tree</dfn>);</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><i>/* Parses and returns the tree in the given ent, chasing tags and commits. */</i></td></tr>
+<tr><th id="27">27</th><td><b>struct</b> <a class="type" href="#tree" title='tree' data-ref="tree">tree</a> *<dfn class="decl" id="parse_tree_indirect" title='parse_tree_indirect' data-ref="parse_tree_indirect">parse_tree_indirect</dfn>(<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col9 decl" id="49oid" title='oid' data-type='const struct object_id *' data-ref="49oid">oid</dfn>);</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/READ_TREE_RECURSIVE" data-ref="_M/READ_TREE_RECURSIVE">READ_TREE_RECURSIVE</dfn> 1</u></td></tr>
+<tr><th id="30">30</th><td><b>typedef</b> <em>int</em> (*<dfn class="typedef" id="read_tree_fn_t" title='read_tree_fn_t' data-type='int (*)(const unsigned char *, struct strbuf *, const char *, unsigned int, int, void *)' data-ref="read_tree_fn_t">read_tree_fn_t</dfn>)(<em>const</em> <em>unsigned</em> <em>char</em> *, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *, <em>const</em> <em>char</em> *, <em>unsigned</em> <em>int</em>, <em>int</em>, <em>void</em> *);</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="read_tree_recursive" title='read_tree_recursive' data-ref="read_tree_recursive">read_tree_recursive</dfn>(<b>struct</b> <a class="type" href="#tree" title='tree' data-ref="tree">tree</a> *<dfn class="local col0 decl" id="50tree" title='tree' data-type='struct tree *' data-ref="50tree">tree</dfn>,</td></tr>
+<tr><th id="33">33</th><td>			       <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="51base" title='base' data-type='const char *' data-ref="51base">base</dfn>, <em>int</em> <dfn class="local col2 decl" id="52baselen" title='baselen' data-type='int' data-ref="52baselen">baselen</dfn>,</td></tr>
+<tr><th id="34">34</th><td>			       <em>int</em> <dfn class="local col3 decl" id="53stage" title='stage' data-type='int' data-ref="53stage">stage</dfn>, <em>const</em> <b>struct</b> <a class="type" href="cache.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col4 decl" id="54pathspec" title='pathspec' data-type='const struct pathspec *' data-ref="54pathspec">pathspec</dfn>,</td></tr>
+<tr><th id="35">35</th><td>			       <a class="typedef" href="#read_tree_fn_t" title='read_tree_fn_t' data-type='int (*)(const unsigned char *, struct strbuf *, const char *, unsigned int, int, void *)' data-ref="read_tree_fn_t">read_tree_fn_t</a> <dfn class="local col5 decl" id="55fn" title='fn' data-type='read_tree_fn_t' data-ref="55fn">fn</dfn>, <em>void</em> *<dfn class="local col6 decl" id="56context" title='context' data-type='void *' data-ref="56context">context</dfn>);</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="read_tree" title='read_tree' data-ref="read_tree">read_tree</dfn>(<b>struct</b> <a class="type" href="#tree" title='tree' data-ref="tree">tree</a> *<dfn class="local col7 decl" id="57tree" title='tree' data-type='struct tree *' data-ref="57tree">tree</dfn>, <em>int</em> <dfn class="local col8 decl" id="58stage" title='stage' data-type='int' data-ref="58stage">stage</dfn>, <b>struct</b> <a class="type" href="cache.h.html#pathspec" title='pathspec' data-ref="pathspec">pathspec</a> *<dfn class="local col9 decl" id="59pathspec" title='pathspec' data-type='struct pathspec *' data-ref="59pathspec">pathspec</dfn>,</td></tr>
+<tr><th id="38">38</th><td>		     <b>struct</b> <a class="type" href="cache.h.html#index_state" title='index_state' data-ref="index_state">index_state</a> *<dfn class="local col0 decl" id="60istate" title='istate' data-type='struct index_state *' data-ref="60istate">istate</dfn>);</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="1">endif</span> /* TREE_H */</u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='alloc.c.html'>codebrowser/alloc.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/advice.h' l='13' type='int'/>
+<def f='codebrowser/advice.c' l='11' type='int'/>
+<use f='codebrowser/advice.c' l='32' u='a'/>
+<use f='codebrowser/advice.c' l='32' u='a'/>
+<use f='codebrowser/advice.c' l='32' u='a'/>
+<use f='codebrowser/advice.c' l='32' u='a'/>
+<use f='codebrowser/wt-status.c' l='691' u='r' c='wt_status_collect_untracked'/>
+<use f='codebrowser/wt-status.c' l='1624' u='r' c='wt_longstatus_print'/>

@@ -1,0 +1,27 @@
+<dec f='codebrowser/cache.h' l='200'/>
+<doc f='codebrowser/cache.h' l='191'>/*
+ * Range 0xFFFF0FFF in ce_flags is divided into
+ * two parts: in-memory flags and on-disk ones.
+ * Flags in CE_EXTENDED_FLAGS will get saved on-disk
+ * if you want to save a new flag, add it in
+ * CE_EXTENDED_FLAGS
+ *
+ * In-memory only flags
+ */</doc>
+<use f='codebrowser/builtin/checkout.c' l='83' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='97' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='298' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='265' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='322' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='341' u='c'/>
+<use f='codebrowser/builtin/ls-files.c' l='461' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='288' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='342' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='386' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='391' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='439' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='457' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='460' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='465' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='1753' u='c'/>
+<use f='codebrowser/unpack-trees.c' l='2149' u='c'/>

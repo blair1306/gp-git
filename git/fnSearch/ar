@@ -1,0 +1,9 @@
+archive_format_from_filename|archive_format_from_filename
+argv_array_clear|argv_array_clear
+argv_array_detach|argv_array_detach
+argv_array_init|argv_array_init
+argv_array_pop|argv_array_pop
+argv_array_push|argv_array_push
+argv_array_pushf|argv_array_pushf
+argv_array_pushl|argv_array_pushl
+argv_array_pushv|argv_array_pushv

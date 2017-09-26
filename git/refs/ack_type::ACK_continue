@@ -1,0 +1,3 @@
+<dec f='codebrowser/fetch-pack.c' l='233' type='2'/>
+<use f='codebrowser/fetch-pack.c' l='273' u='r' c='get_ack'/>
+<use f='codebrowser/fetch-pack.c' l='486' c='find_common'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/repository.h' l='14' type='char *'/>
+<offset>0</offset>
+<doc f='codebrowser/repository.h' l='10'>/*
+	 * Path to the git directory.
+	 * Cannot be NULL after initialization.
+	 */</doc>
+<use f='codebrowser/config.c' l='1884' u='r' c='repo_read_config'/>
+<use f='codebrowser/environment.c' l='172' u='r' c='have_git_dir'/>
+<use f='codebrowser/environment.c' l='177' u='r' c='get_git_dir'/>
+<use f='codebrowser/environment.c' l='179' u='r' c='get_git_dir'/>
+<use f='codebrowser/path.c' l='397' u='r' c='strbuf_worktree_gitdir'/>
+<use f='codebrowser/repository.c' l='41' u='r' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='48' u='r' c='repo_setup_env'/>
+<use f='codebrowser/repository.c' l='62' u='w' c='repo_set_gitdir'/>
+<use f='codebrowser/repository.c' l='203' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='204' u='w' c='repo_clear'/>
+<use f='codebrowser/setup.c' l='1108' u='r' c='setup_git_directory_gently'/>

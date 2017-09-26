@@ -1,0 +1,9 @@
+<dec f='codebrowser/ref-filter.h' l='40' type='const char *'/>
+<offset>256</offset>
+<use f='codebrowser/ref-filter.c' l='1293' u='r' c='get_symref'/>
+<use f='codebrowser/ref-filter.c' l='1296' u='r' c='get_symref'/>
+<use f='codebrowser/ref-filter.c' l='1319' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1321' u='w' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1323' u='r' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1324' u='w' c='populate_value'/>
+<use f='codebrowser/ref-filter.c' l='1891' u='r' c='free_array_item'/>

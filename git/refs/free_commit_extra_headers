@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='341' type='void free_commit_extra_headers(struct commit_extra_header * extra)'/>
+<use f='codebrowser/builtin/commit.c' l='1773' u='c' c='cmd_commit'/>
+<use f='codebrowser/commit.c' l='1304' u='c' c='for_each_mergetag'/>
+<def f='codebrowser/commit.c' l='1373' ll='1382' type='void free_commit_extra_headers(struct commit_extra_header * extra)'/>
+<use f='codebrowser/commit.c' l='1395' u='c' c='commit_tree'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/tree-walk.h' l='33' type='void update_tree_entry(struct tree_desc * )'/>
+<doc f='codebrowser/tree-walk.h' l='28'>/*
+ * The _gently versions of these functions warn and return false on a
+ * corrupt tree entry rather than dying,
+ */</doc>
+<use f='codebrowser/match-trees.c' l='155' u='c' c='match_trees'/>
+<use f='codebrowser/match-trees.c' l='205' u='c' c='splice_tree'/>
+<use f='codebrowser/tree-diff.c' l='308' u='c' c='skip_uninteresting'/>
+<use f='codebrowser/tree-diff.c' l='402' u='c' c='update_tp_entries'/>
+<use f='codebrowser/tree-diff.c' l='508' u='c' c='ll_diff_tree_paths'/>
+<use f='codebrowser/tree-diff.c' l='519' u='c' c='ll_diff_tree_paths'/>
+<def f='codebrowser/tree-walk.c' l='124' ll='130' type='void update_tree_entry(struct tree_desc * desc)'/>
+<use f='codebrowser/tree-walk.c' l='152' u='c' c='tree_entry'/>
+<use f='codebrowser/tree-walk.c' l='301' u='c' c='extended_entry_extract'/>
+<use f='codebrowser/tree-walk.c' l='336' u='c' c='extended_entry_extract'/>
+<use f='codebrowser/tree-walk.c' l='347' u='c' c='update_extended_entry'/>
+<use f='codebrowser/tree-walk.c' l='505' u='c' c='find_tree_entry'/>

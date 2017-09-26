@@ -1,0 +1,5 @@
+<dec f='codebrowser/dir.h' l='195' type='struct sha1_stat'/>
+<offset>1152</offset>
+<use f='codebrowser/dir.c' l='2079' u='m' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2082' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2338' u='a' c='setup_standard_excludes'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/reflog-walk.c' l='111' type='struct commit_reflog *'/>
+<use f='codebrowser/reflog-walk.c' l='209' u='r' c='get_reflog_selector'/>
+<use f='codebrowser/reflog-walk.c' l='241' u='r' c='get_reflog_message'/>
+<use f='codebrowser/reflog-walk.c' l='257' u='r' c='get_reflog_ident'/>
+<use f='codebrowser/reflog-walk.c' l='269' u='r' c='get_reflog_timestamp'/>
+<use f='codebrowser/reflog-walk.c' l='282' u='r' c='show_reflog_message'/>
+<use f='codebrowser/reflog-walk.c' l='283' u='r' c='show_reflog_message'/>
+<use f='codebrowser/reflog-walk.c' l='344' u='w' c='next_reflog_entry'/>
+<offset>448</offset>

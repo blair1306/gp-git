@@ -1,0 +1,15 @@
+<dec f='codebrowser/diff.h' l='280' type='void diff_setup(struct diff_options * )'/>
+<use f='codebrowser/blame.c' l='543' u='c' c='find_origin'/>
+<use f='codebrowser/blame.c' l='617' u='c' c='find_rename'/>
+<use f='codebrowser/blame.c' l='1240' u='c' c='find_copy_in_parent'/>
+<use f='codebrowser/builtin/am.c' l='1149' u='c' c='index_has_changes'/>
+<use f='codebrowser/builtin/log.c' l='1343' u='c' c='prepare_bases'/>
+<use f='codebrowser/builtin/merge.c' l='414' u='c' c='finish'/>
+<use f='codebrowser/diff-no-index.c' l='244' u='c' c='diff_no_index'/>
+<def f='codebrowser/diff.c' l='3368' ll='3401' type='void diff_setup(struct diff_options * options)'/>
+<use f='codebrowser/merge-recursive.c' l='521' u='c' c='get_renames'/>
+<use f='codebrowser/notes-merge.c' l='127' u='c' c='diff_tree_remote'/>
+<use f='codebrowser/notes-merge.c' l='190' u='c' c='diff_tree_local'/>
+<use f='codebrowser/patch-ids.c' l='62' u='c' c='init_patch_ids'/>
+<use f='codebrowser/revision.c' l='1365' u='c' c='init_revisions'/>
+<use f='codebrowser/tree-diff.c' l='610' u='c' c='try_to_follow_renames'/>

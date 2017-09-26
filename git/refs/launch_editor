@@ -1,0 +1,18 @@
+<dec f='codebrowser/strbuf.h' l='551' type='int launch_editor(const char * path, struct strbuf * buffer, const char *const * env)'/>
+<doc f='codebrowser/strbuf.h' l='544'>/**
+ * Launch the user preferred editor to edit a file and fill the buffer
+ * with the file&apos;s contents upon the user completing their editing. The
+ * third argument can be used to set the environment which the editor is
+ * run in. If the buffer is NULL the editor is launched as usual but the
+ * file&apos;s contents are not read into the buffer upon completion.
+ */</doc>
+<use f='codebrowser/builtin/add.c' l='228' u='c' c='edit_patch'/>
+<use f='codebrowser/builtin/am.c' l='1752' u='c' c='do_interactive'/>
+<use f='codebrowser/builtin/branch.c' l='531' u='c' c='edit_branch_description'/>
+<use f='codebrowser/builtin/commit.c' l='966' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/config.c' l='623' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/merge.c' l='775' u='c' c='prepare_to_commit'/>
+<use f='codebrowser/builtin/notes.c' l='194' u='c' c='prepare_note_data'/>
+<use f='codebrowser/builtin/replace.c' l='301' u='c' c='edit_and_replace'/>
+<use f='codebrowser/builtin/tag.c' l='250' u='c' c='create_tag'/>
+<def f='codebrowser/editor.c' l='32' ll='68' type='int launch_editor(const char * path, struct strbuf * buffer, const char *const * env)'/>

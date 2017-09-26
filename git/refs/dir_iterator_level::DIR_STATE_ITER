@@ -1,0 +1,3 @@
+<dec f='codebrowser/dir-iterator.c' l='23' type='0'/>
+<use f='codebrowser/dir-iterator.c' l='81' u='r' c='dir_iterator_advance'/>
+<use f='codebrowser/dir-iterator.c' l='157' u='r' c='dir_iterator_advance'/>

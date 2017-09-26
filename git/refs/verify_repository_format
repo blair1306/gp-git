@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='878' type='int verify_repository_format(const struct repository_format * format, struct strbuf * err)'/>
+<doc f='codebrowser/cache.h' l='873'>/*
+ * Verify that the repository described by repository_format is something we
+ * can read. If it is, return 0. Otherwise, return -1, and &quot;err&quot; will describe
+ * any errors encountered.
+ */</doc>
+<use f='codebrowser/builtin/init-db.c' l='134' u='c' c='copy_templates'/>
+<use f='codebrowser/repository.c' l='113' u='c' c='read_and_verify_repository_format'/>
+<use f='codebrowser/setup.c' l='460' u='c' c='check_repository_format_gently'/>
+<def f='codebrowser/setup.c' l='500' ll='521' type='int verify_repository_format(const struct repository_format * format, struct strbuf * err)'/>
+<use f='codebrowser/setup.c' l='1014' u='c' c='discover_git_directory'/>

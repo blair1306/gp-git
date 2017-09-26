@@ -1,0 +1,5 @@
+<dec f='codebrowser/builtin.h' l='108' type='unsigned int'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='628' u='r' c='fmt_merge_msg'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='703' u='w' c='cmd_fmt_merge_msg'/>
+<use f='codebrowser/builtin/merge.c' l='997' u='w' c='prepare_merge_message'/>

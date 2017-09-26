@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sha1dc_git.c source code [codebrowser/sha1dc_git.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/sha1dc_git.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='sha1dc_git.c.html'>sha1dc_git.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * This code is included at the end of sha1dc/sha1.c with the</i></td></tr>
+<tr><th id="3">3</th><td><i> * SHA1DC_CUSTOM_TRAILING_INCLUDE_SHA1_C macro.</i></td></tr>
+<tr><th id="4">4</th><td><i> */</i></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><em>void</em> <dfn class="decl def" id="git_SHA1DCFinal" title='git_SHA1DCFinal' data-ref="git_SHA1DCFinal">git_SHA1DCFinal</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col0 decl" id="70hash" title='hash' data-type='unsigned char *' data-ref="70hash">hash</dfn>[<var>20</var>], <a class="typedef" href="sha1dc/sha1.h.html#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a> *<dfn class="local col1 decl" id="71ctx" title='ctx' data-type='SHA1_CTX *' data-ref="71ctx">ctx</dfn>)</td></tr>
+<tr><th id="7">7</th><td>{</td></tr>
+<tr><th id="8">8</th><td>	<b>if</b> (!<a class="ref" href="sha1dc/sha1.c.html#SHA1DCFinal" title='SHA1DCFinal' data-ref="SHA1DCFinal">SHA1DCFinal</a>(<a class="local col0 ref" href="#70hash" title='hash' data-ref="70hash">hash</a>, <a class="local col1 ref" href="#71ctx" title='ctx' data-ref="71ctx">ctx</a>))</td></tr>
+<tr><th id="9">9</th><td>		<b>return</b>;</td></tr>
+<tr><th id="10">10</th><td>	<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"SHA-1 appears to be part of a collision attack: %s"</q>,</td></tr>
+<tr><th id="11">11</th><td>	    <a class="ref" href="cache.h.html#sha1_to_hex" title='sha1_to_hex' data-ref="sha1_to_hex">sha1_to_hex</a>(<a class="local col0 ref" href="#70hash" title='hash' data-ref="70hash">hash</a>));</td></tr>
+<tr><th id="12">12</th><td>}</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><em>void</em> <dfn class="decl def" id="git_SHA1DCUpdate" title='git_SHA1DCUpdate' data-ref="git_SHA1DCUpdate">git_SHA1DCUpdate</dfn>(<a class="typedef" href="sha1dc/sha1.h.html#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a> *<dfn class="local col2 decl" id="72ctx" title='ctx' data-type='SHA1_CTX *' data-ref="72ctx">ctx</dfn>, <em>const</em> <em>void</em> *<dfn class="local col3 decl" id="73vdata" title='vdata' data-type='const void *' data-ref="73vdata">vdata</dfn>, <em>unsigned</em> <em>long</em> <dfn class="local col4 decl" id="74len" title='len' data-type='unsigned long' data-ref="74len">len</dfn>)</td></tr>
+<tr><th id="15">15</th><td>{</td></tr>
+<tr><th id="16">16</th><td>	<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="75data" title='data' data-type='const char *' data-ref="75data">data</dfn> = <a class="local col3 ref" href="#73vdata" title='vdata' data-ref="73vdata">vdata</a>;</td></tr>
+<tr><th id="17">17</th><td>	<i>/* We expect an unsigned long, but sha1dc only takes an int */</i></td></tr>
+<tr><th id="18">18</th><td>	<b>while</b> (<a class="local col4 ref" href="#74len" title='len' data-ref="74len">len</a> &gt; <span class="macro" title="2147483647" data-ref="_M/INT_MAX">INT_MAX</span>) {</td></tr>
+<tr><th id="19">19</th><td>		<a class="ref" href="sha1dc/sha1.c.html#SHA1DCUpdate" title='SHA1DCUpdate' data-ref="SHA1DCUpdate">SHA1DCUpdate</a>(<a class="local col2 ref" href="#72ctx" title='ctx' data-ref="72ctx">ctx</a>, <a class="local col5 ref" href="#75data" title='data' data-ref="75data">data</a>, <span class="macro" title="2147483647" data-ref="_M/INT_MAX">INT_MAX</span>);</td></tr>
+<tr><th id="20">20</th><td>		<a class="local col5 ref" href="#75data" title='data' data-ref="75data">data</a> += <span class="macro" title="2147483647" data-ref="_M/INT_MAX">INT_MAX</span>;</td></tr>
+<tr><th id="21">21</th><td>		<a class="local col4 ref" href="#74len" title='len' data-ref="74len">len</a> -= <span class="macro" title="2147483647" data-ref="_M/INT_MAX">INT_MAX</span>;</td></tr>
+<tr><th id="22">22</th><td>	}</td></tr>
+<tr><th id="23">23</th><td>	<a class="ref" href="sha1dc/sha1.c.html#SHA1DCUpdate" title='SHA1DCUpdate' data-ref="SHA1DCUpdate">SHA1DCUpdate</a>(<a class="local col2 ref" href="#72ctx" title='ctx' data-ref="72ctx">ctx</a>, <a class="local col5 ref" href="#75data" title='data' data-ref="75data">data</a>, <a class="local col4 ref" href="#74len" title='len' data-ref="74len">len</a>);</td></tr>
+<tr><th id="24">24</th><td>}</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='sha1dc/sha1.c.html'>codebrowser/sha1dc/sha1.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

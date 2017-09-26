@@ -1,0 +1,12 @@
+<def f='codebrowser/notes.c' l='38' ll='41'/>
+<size>40</size>
+<doc f='codebrowser/notes.c' l='28'>/*
+ * Leaf nodes come in two variants, note entries and subtree entries,
+ * distinguished by the LSb of the leaf node pointer (see above).
+ * As a note entry, the key is the SHA1 of the referenced object, and the
+ * value is the SHA1 of the note object.
+ * As a subtree entry, the key is the prefix SHA1 (w/trailing NULs) of the
+ * referenced object, using the last byte of the key to store the length of
+ * the prefix. The value is the SHA1 of the tree object containing the notes
+ * subtree.
+ */</doc>

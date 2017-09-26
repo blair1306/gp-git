@@ -1,0 +1,7 @@
+<dec f='codebrowser/commit.h' l='268' type='int for_each_commit_graft(each_commit_graft_fn , void * )'/>
+<def f='codebrowser/commit.c' l='212' ll='218' type='int for_each_commit_graft(each_commit_graft_fn fn, void * cb_data)'/>
+<use f='codebrowser/log-tree.c' l='159' u='c' c='load_ref_decorations'/>
+<use f='codebrowser/send-pack.c' l='233' u='c' c='advertise_shallow_grafts_buf'/>
+<use f='codebrowser/shallow.c' l='272' u='c' c='write_shallow_commits_1'/>
+<use f='codebrowser/shallow.c' l='349' u='c' c='advertise_shallow_grafts'/>
+<use f='codebrowser/upload-pack.c' l='145' u='c' c='create_pack_file'/>

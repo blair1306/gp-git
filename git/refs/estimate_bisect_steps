@@ -1,0 +1,14 @@
+<dec f='codebrowser/bisect.h' l='27' type='int estimate_bisect_steps(int all)'/>
+<use f='codebrowser/bisect.c' l='992' u='c' c='bisect_next_all'/>
+<def f='codebrowser/bisect.c' l='1033' ll='1045' type='int estimate_bisect_steps(int all)'/>
+<doc f='codebrowser/bisect.c' l='1023'>/*
+ * Estimate the number of bisect steps left (after the current step)
+ *
+ * For any x between 0 included and 2^n excluded, the probability for
+ * n - 1 steps left looks like:
+ *
+ * P(2^n + x) == (2^n - x) / (2^n + x)
+ *
+ * and P(2^n + x) &lt; 0.5 means 2^n &lt; 3x
+ */</doc>
+<use f='codebrowser/builtin/rev-list.c' l='255' u='c' c='show_bisect_vars'/>

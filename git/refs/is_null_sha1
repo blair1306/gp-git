@@ -1,0 +1,19 @@
+<def f='codebrowser/cache.h' l='950' ll='953' type='int is_null_sha1(const unsigned char * sha1)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='656' u='c' c='prepare_push_cert_sha1'/>
+<use f='codebrowser/cache-tree.c' l='357' u='c' c='update_one'/>
+<use f='codebrowser/dir.c' l='1170' u='c' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2452' u='c' c='write_one_dir'/>
+<use f='codebrowser/notes.c' l='816' u='c' c='combine_notes_concatenate'/>
+<use f='codebrowser/notes.c' l='822' u='c' c='combine_notes_concatenate'/>
+<use f='codebrowser/notes.c' l='875' u='c' c='string_list_add_note_lines'/>
+<use f='codebrowser/read-cache.c' l='1847' u='c' c='read_index_from'/>
+<use f='codebrowser/refs.c' l='633' u='c' c='delete_pseudoref'/>
+<use f='codebrowser/refs.c' l='775' u='c' c='read_ref_at_ent'/>
+<use f='codebrowser/refs.c' l='814' u='c' c='read_ref_at_ent_oldest'/>
+<use f='codebrowser/refs.c' l='934' u='c' c='ref_transaction_update'/>
+<use f='codebrowser/refs.c' l='955' u='c' c='ref_transaction_create'/>
+<use f='codebrowser/refs.c' l='967' u='c' c='ref_transaction_delete'/>
+<use f='codebrowser/refs.c' l='1530' u='c' c='resolve_gitlink_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='886' u='c' c='lock_ref_sha1_basic'/>
+<use f='codebrowser/submodule-config.c' l='390' u='c' c='parse_config'/>
+<use f='codebrowser/walker.c' l='27' u='c' c='report_missing'/>

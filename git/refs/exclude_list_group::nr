@@ -1,0 +1,11 @@
+<dec f='codebrowser/dir.h' l='73' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/dir.c' l='851' u='r' c='add_exclude_list'/>
+<use f='codebrowser/dir.c' l='851' u='r' c='add_exclude_list'/>
+<use f='codebrowser/dir.c' l='851' u='r' c='add_exclude_list'/>
+<use f='codebrowser/dir.c' l='852' u='w' c='add_exclude_list'/>
+<use f='codebrowser/dir.c' l='1045' u='r' c='last_exclude_matching_from_lists'/>
+<use f='codebrowser/dir.c' l='1087' u='w' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1130' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2063' u='r' c='validate_untracked_cache'/>
+<use f='codebrowser/dir.c' l='2374' u='r' c='clear_directory'/>

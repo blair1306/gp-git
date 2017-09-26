@@ -1,0 +1,6 @@
+<def f='codebrowser/rerere.c' l='30' ll='34'/>
+<size>40</size>
+<mbr r='rerere_dir::sha1' o='0' t='unsigned char [20]'/>
+<mbr r='rerere_dir::status_alloc' o='160' t='int'/>
+<mbr r='rerere_dir::status_nr' o='192' t='int'/>
+<mbr r='rerere_dir::status' o='256' t='unsigned char *'/>

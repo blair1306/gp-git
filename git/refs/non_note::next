@@ -1,0 +1,13 @@
+<dec f='codebrowser/notes.c' l='52' type='struct non_note *'/>
+<use f='codebrowser/notes.c' l='376' u='w' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='393' u='w' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='399' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='399' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='400' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='412' u='w' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='412' u='r' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='413' u='w' c='add_non_note'/>
+<use f='codebrowser/notes.c' l='756' u='r' c='write_each_non_note_until'/>
+<use f='codebrowser/notes.c' l='1199' u='r' c='free_notes'/>
+<offset>0</offset>
+<doc f='codebrowser/notes.c' l='52'>/* grounded (last-&gt;next == NULL) */</doc>

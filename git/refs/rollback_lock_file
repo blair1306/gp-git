@@ -1,0 +1,55 @@
+<def f='codebrowser/lockfile.h' l='302' ll='305' type='void rollback_lock_file(struct lock_file * lk)'/>
+<use f='codebrowser/apply.c' l='4896' u='c' c='apply_all_patches'/>
+<doc f='codebrowser/lockfile.h' l='296'>/*
+ * Roll back `lk`: close the file descriptor and/or file pointer and
+ * remove the lockfile. It is a NOOP to call `rollback_lock_file()`
+ * for a `lock_file` object that has already been committed or rolled
+ * back.
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='1963' u='c' c='fast_forward_to'/>
+<use f='codebrowser/builtin/am.c' l='1998' u='c' c='merge_tree'/>
+<use f='codebrowser/builtin/commit.c' l='211' u='c' c='rollback_index_files'/>
+<use f='codebrowser/builtin/commit.c' l='214' u='c' c='rollback_index_files'/>
+<use f='codebrowser/builtin/commit.c' l='215' u='c' c='rollback_index_files'/>
+<use f='codebrowser/builtin/commit.c' l='232' u='c' c='commit_index_files'/>
+<use f='codebrowser/builtin/commit.c' l='430' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/difftool.c' l='619' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/gc.c' l='91' u='c' c='process_log_file'/>
+<use f='codebrowser/builtin/gc.c' l='283' u='c' c='lock_repo_for_gc'/>
+<use f='codebrowser/builtin/merge.c' l='649' u='c' c='try_merge_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='689' u='c' c='try_merge_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='798' u='c' c='merge_trivial'/>
+<use f='codebrowser/builtin/receive-pack.c' l='892' u='c' c='update_shallow_ref'/>
+<use f='codebrowser/builtin/update-index.c' l='1160' u='c' c='cmd_update_index'/>
+<use f='codebrowser/bundle.c' l='473' u='c' c='create_bundle'/>
+<use f='codebrowser/cache-tree.c' l='652' u='c' c='write_index_as_tree'/>
+<use f='codebrowser/config.c' l='2641' u='c' c='git_config_set_multivar_in_file_gently'/>
+<use f='codebrowser/config.c' l='2839' u='c' c='git_config_rename_section_in_file'/>
+<use f='codebrowser/fast-import.c' l='1873' u='c' c='dump_marks'/>
+<use f='codebrowser/fetch-pack.c' l='1065' u='c' c='update_shallow'/>
+<use f='codebrowser/merge.c' l='95' u='c' c='checkout_fast_forward'/>
+<use f='codebrowser/read-cache.c' l='2186' u='c' c='update_index_if_able'/>
+<use f='codebrowser/refs.c' l='608' u='c' c='write_pseudoref'/>
+<use f='codebrowser/refs.c' l='615' u='c' c='write_pseudoref'/>
+<use f='codebrowser/refs.c' l='645' u='c' c='delete_pseudoref'/>
+<use f='codebrowser/refs.c' l='650' u='c' c='delete_pseudoref'/>
+<use f='codebrowser/refs/files-backend.c' l='423' u='c' c='unlock_ref'/>
+<use f='codebrowser/refs/files-backend.c' l='2857' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/refs/files-backend.c' l='2870' u='c' c='files_reflog_expire'/>
+<use f='codebrowser/refs/packed-backend.c' l='578' u='c' c='packed_refs_unlock'/>
+<use f='codebrowser/rerere.c' l='726' u='c' c='update_paths'/>
+<use f='codebrowser/rerere.c' l='1227' u='c' c='rerere_gc'/>
+<use f='codebrowser/rerere.c' l='1252' u='c' c='rerere_clear'/>
+<use f='codebrowser/sequencer.c' l='298' u='c' c='write_message'/>
+<use f='codebrowser/sequencer.c' l='302' u='c' c='write_message'/>
+<use f='codebrowser/sequencer.c' l='306' u='c' c='write_message'/>
+<use f='codebrowser/sequencer.c' l='475' u='c' c='do_recursive_merge'/>
+<use f='codebrowser/sequencer.c' l='1179' u='c' c='read_and_refresh_cache'/>
+<use f='codebrowser/sequencer.c' l='1186' u='c' c='read_and_refresh_cache'/>
+<use f='codebrowser/sequencer.c' l='1191' u='c' c='read_and_refresh_cache'/>
+<use f='codebrowser/sequencer.c' l='1571' u='c' c='save_head'/>
+<use f='codebrowser/sequencer.c' l='1576' u='c' c='save_head'/>
+<use f='codebrowser/sequencer.c' l='1581' u='c' c='save_head'/>
+<use f='codebrowser/sha1_file.c' l='518' u='c' c='add_to_alternates_file'/>
+<use f='codebrowser/shallow.c' l='377' u='c' c='prune_shallow'/>
+<use f='codebrowser/wt-status.c' l='2307' u='c' c='require_clean_work_tree'/>

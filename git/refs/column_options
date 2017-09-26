@@ -1,0 +1,6 @@
+<def f='codebrowser/column.h' l='22' ll='27'/>
+<size>24</size>
+<mbr r='column_options::width' o='0' t='int'/>
+<mbr r='column_options::padding' o='32' t='int'/>
+<mbr r='column_options::indent' o='64' t='const char *'/>
+<mbr r='column_options::nl' o='128' t='const char *'/>

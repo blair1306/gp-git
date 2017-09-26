@@ -1,0 +1,3 @@
+<dec f='codebrowser/dir.h' l='154' type='64'/>
+<use f='codebrowser/builtin/ls-files.c' l='304' u='r' c='show_files'/>
+<use f='codebrowser/dir.c' l='1585' u='r' c='treat_one_path'/>

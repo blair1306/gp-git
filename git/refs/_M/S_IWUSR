@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='172'/>
+<dec f='include/fcntl.h' l='105'/>
+<use f='codebrowser/builtin/repack.c' l='384' u='c'/>
+<use f='codebrowser/path.c' l='845' u='c'/>
+<use f='codebrowser/trailer.c' l='953' u='c'/>

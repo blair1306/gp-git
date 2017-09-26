@@ -1,0 +1,7 @@
+<dec f='codebrowser/git-compat-util.h' l='113'/>
+<use f='codebrowser/builtin/index-pack.c' l='527' u='c'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1436' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='378' u='c'/>
+<use f='codebrowser/pack-write.c' l='267' u='c'/>
+<use f='codebrowser/sha1_file.c' l='2069' u='c'/>
+<use f='codebrowser/varint.c' l='11' u='c'/>

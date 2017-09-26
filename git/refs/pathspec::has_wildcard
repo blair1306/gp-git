@@ -1,0 +1,6 @@
+<dec f='codebrowser/pathspec.h' l='25' type='unsigned int'/>
+<offset>32</offset>
+<use f='codebrowser/archive.c' l='260' u='r' c='write_archive_entries'/>
+<use f='codebrowser/builtin/ls-tree.c' l='183' u='w' c='cmd_ls_tree'/>
+<use f='codebrowser/pathspec.c' l='603' u='w' c='parse_pathspec'/>
+<use f='codebrowser/tree-walk.c' l='938' u='r' c='do_match'/>

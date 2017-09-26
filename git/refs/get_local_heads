@@ -1,0 +1,8 @@
+<dec f='codebrowser/remote.h' l='263' type='struct ref * get_local_heads()'/>
+<use f='codebrowser/builtin/push.c' l='107' u='c' c='set_refspecs'/>
+<use f='codebrowser/builtin/remote.c' l='387' u='c' c='get_push_ref_states'/>
+<use f='codebrowser/builtin/send-pack.c' l='264' u='c' c='cmd_send_pack'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='1154' u='c' c='push_check'/>
+<use f='codebrowser/http-push.c' l='1805' u='c' c='cmd_main'/>
+<def f='codebrowser/remote.c' l='2144' ll='2150' type='struct ref * get_local_heads()'/>
+<use f='codebrowser/transport.c' l='982' u='c' c='transport_push'/>

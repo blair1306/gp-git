@@ -1,0 +1,9 @@
+<dec f='codebrowser/transport.h' l='246' type='int bidirectional_transfer_loop(int input, int output)'/>
+<use f='codebrowser/builtin/remote-ext.c' l='156' u='c' c='run_child'/>
+<use f='codebrowser/builtin/remote-fd.c' l='46' u='c' c='command_loop'/>
+<def f='codebrowser/transport-helper.c' l='1393' ll='1417' type='int bidirectional_transfer_loop(int input, int output)'/>
+<doc f='codebrowser/transport-helper.c' l='1388'>/*
+ * Copies data from stdin to output and from input to stdout simultaneously.
+ * Additionally filtering through given filter. If filter is NULL, uses
+ * identity filter.
+ */</doc>

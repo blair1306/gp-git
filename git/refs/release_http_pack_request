@@ -1,0 +1,6 @@
+<dec f='codebrowser/http.h' l='210' type='void release_http_pack_request(struct http_pack_request * preq)'/>
+<use f='codebrowser/http-push.c' l='328' u='c' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='344' u='c' c='start_fetch_packed'/>
+<use f='codebrowser/http-push.c' l='590' u='c' c='finish_request'/>
+<use f='codebrowser/http-walker.c' l='458' u='c' c='http_fetch_pack'/>
+<def f='codebrowser/http.c' l='1990' ll='1999' type='void release_http_pack_request(struct http_pack_request * preq)'/>

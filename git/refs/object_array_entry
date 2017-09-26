@@ -1,0 +1,6 @@
+<def f='codebrowser/object.h' l='12' ll='23'/>
+<size>32</size>
+<mbr r='object_array_entry::item' o='0' t='struct object *'/>
+<mbr r='object_array_entry::name' o='64' t='char *'/>
+<mbr r='object_array_entry::path' o='128' t='char *'/>
+<mbr r='object_array_entry::mode' o='192' t='unsigned int'/>

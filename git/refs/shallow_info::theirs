@@ -1,0 +1,14 @@
+<dec f='codebrowser/commit.h' l='286' type='int *'/>
+<offset>192</offset>
+<use f='codebrowser/fetch-pack.c' l='1123' u='r' c='update_shallow'/>
+<use f='codebrowser/shallow.c' l='397' u='w' c='prepare_shallow_info'/>
+<use f='codebrowser/shallow.c' l='397' u='r' c='prepare_shallow_info'/>
+<use f='codebrowser/shallow.c' l='406' u='r' c='prepare_shallow_info'/>
+<use f='codebrowser/shallow.c' l='413' u='r' c='clear_shallow_info'/>
+<use f='codebrowser/shallow.c' l='425' u='r' c='remove_nonexistent_theirs_shallow'/>
+<use f='codebrowser/shallow.c' l='425' u='r' c='remove_nonexistent_theirs_shallow'/>
+<use f='codebrowser/shallow.c' l='426' u='r' c='remove_nonexistent_theirs_shallow'/>
+<use f='codebrowser/shallow.c' l='577' u='r' c='assign_shallow_commits_to_refs'/>
+<use f='codebrowser/shallow.c' l='685' u='r' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='685' u='r' c='post_assign_shallow'/>
+<use f='codebrowser/shallow.c' l='686' u='r' c='post_assign_shallow'/>

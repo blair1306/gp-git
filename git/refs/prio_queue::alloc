@@ -1,0 +1,9 @@
+<dec f='codebrowser/prio-queue.h' l='33' type='int'/>
+<offset>192</offset>
+<use f='codebrowser/prio-queue.c' l='32' u='w' c='clear_prio_queue'/>
+<use f='codebrowser/prio-queue.c' l='41' u='r' c='prio_queue_put'/>
+<use f='codebrowser/prio-queue.c' l='41' u='r' c='prio_queue_put'/>
+<use f='codebrowser/prio-queue.c' l='41' u='w' c='prio_queue_put'/>
+<use f='codebrowser/prio-queue.c' l='41' u='w' c='prio_queue_put'/>
+<use f='codebrowser/prio-queue.c' l='41' u='r' c='prio_queue_put'/>
+<use f='codebrowser/prio-queue.c' l='41' u='r' c='prio_queue_put'/>

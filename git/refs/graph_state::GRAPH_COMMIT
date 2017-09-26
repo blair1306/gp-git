@@ -1,0 +1,6 @@
+<dec f='codebrowser/graph.c' l='65' type='3'/>
+<use f='codebrowser/graph.c' l='664' u='r' c='graph_update'/>
+<use f='codebrowser/graph.c' l='753' u='r' c='graph_output_skip_line'/>
+<use f='codebrowser/graph.c' l='827' u='r' c='graph_output_pre_commit_line'/>
+<use f='codebrowser/graph.c' l='1188' c='graph_next_line'/>
+<use f='codebrowser/graph.c' l='1208' u='r' c='graph_padding_line'/>

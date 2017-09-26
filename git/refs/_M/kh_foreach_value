@@ -1,0 +1,8 @@
+<dec f='codebrowser/khash.h' l='312'/>
+<doc f='codebrowser/khash.h' l='306'>/*! @function
+  @abstract     Iterate over the values in the hash table
+  @param  h     Pointer to the hash table [khash_t(name)*]
+  @param  vvar  Variable to which value will be assigned
+  @param  code  Block of code to execute
+ */</doc>
+<use f='codebrowser/pack-bitmap.c' l='1047' u='c'/>

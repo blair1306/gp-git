@@ -1,0 +1,5 @@
+<dec f='include/libgen.h' l='26' type='char * dirname(char * __path)'/>
+<doc f='include/libgen.h' l='25'>/* Return directory part of PATH or &quot;.&quot; if none is available.  */</doc>
+<use f='codebrowser/builtin/am.c' l='853' u='c' c='split_mail_stgit_series'/>
+<use f='codebrowser/credential-cache--daemon.c' l='232' u='c' c='init_socket_directory'/>
+<use f='codebrowser/t/helper/test-path-utils.c' l='52' u='c' c='posix_dirname'/>

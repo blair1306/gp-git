@@ -1,0 +1,2 @@
+<dec f='include/openssl/hmac.h' l='98' type='unsigned char * HMAC(const EVP_MD * evp_md, const void * key, int key_len, const unsigned char * d, size_t n, unsigned char * md, unsigned int * md_len)'/>
+<use f='codebrowser/imap-send.c' l='882' u='c' c='cram'/>

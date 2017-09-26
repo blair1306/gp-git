@@ -1,0 +1,5 @@
+<dec f='include/string.h' l='343' type='char * strtok(char *restrict __s, const char *restrict __delim)'/>
+<doc f='include/string.h' l='342'>/* Divide S into tokens separated by characters in DELIM.  */</doc>
+<use f='codebrowser/t/helper/test-hashmap.c' l='162' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='167' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='171' u='c' c='cmd_main'/>

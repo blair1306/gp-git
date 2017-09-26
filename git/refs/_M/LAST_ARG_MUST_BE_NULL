@@ -1,0 +1,6 @@
+<dec f='codebrowser/git-compat-util.h' l='402'/>
+<use f='codebrowser/commit.h' l='392' u='c'/>
+<use f='codebrowser/argv-array.h' l='18' u='c'/>
+<use f='codebrowser/run-command.h' l='67' u='c'/>
+<use f='codebrowser/exec_cmd.h' l='12' u='c'/>
+<use f='codebrowser/builtin/revert.c' l='76' u='c'/>

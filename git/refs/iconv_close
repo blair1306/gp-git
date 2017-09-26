@@ -1,0 +1,6 @@
+<dec f='include/iconv.h' l='51' type='int iconv_close(iconv_t __cd)'/>
+<doc f='include/iconv.h' l='47'>/* Free resources allocated for descriptor CD for code conversion.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/utf8.c' l='535' u='c' c='reencode_string_len'/>

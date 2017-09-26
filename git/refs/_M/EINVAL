@@ -1,0 +1,17 @@
+<dec f='include/asm-generic/errno-base.h' l='25'/>
+<use f='codebrowser/config.c' l='786' u='c'/>
+<use f='codebrowser/config.c' l='799' u='c'/>
+<use f='codebrowser/config.c' l='816' u='c'/>
+<use f='codebrowser/config.c' l='826' u='c'/>
+<use f='codebrowser/connected.c' l='94' u='c'/>
+<use f='codebrowser/read-cache.c' l='1293' u='c'/>
+<use f='codebrowser/read-cache.c' l='1388' u='c'/>
+<use f='codebrowser/refs.c' l='1429' u='c'/>
+<use f='codebrowser/refs.c' l='1476' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='328' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='405' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='623' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1682' u='c'/>
+<use f='codebrowser/tempfile.c' l='125' u='c'/>
+<use f='codebrowser/wrapper.c' l='491' u='c'/>
+<use f='codebrowser/wrapper.c' l='496' u='c'/>

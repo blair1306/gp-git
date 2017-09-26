@@ -1,0 +1,24 @@
+<dec f='codebrowser/cache.h' l='480' type='const char * get_git_dir()'/>
+<use f='codebrowser/builtin/config.c' l='542' u='c' c='cmd_config'/>
+<use f='codebrowser/builtin/difftool.c' l='204' u='c' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='731' u='c' c='cmd_difftool'/>
+<use f='codebrowser/builtin/init-db.c' l='216' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='354' u='c' c='init_db'/>
+<use f='codebrowser/builtin/init-db.c' l='359' u='c' c='init_db'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1017' u='c' c='update_worktree'/>
+<use f='codebrowser/builtin/submodule--helper.c' l='666' u='c' c='module_clone'/>
+<use f='codebrowser/config.c' l='1643' u='c' c='read_early_config'/>
+<def f='codebrowser/environment.c' l='175' ll='180' type='const char * get_git_dir()'/>
+<use f='codebrowser/path.c' l='360' u='c' c='report_linked_checkout_garbage'/>
+<use f='codebrowser/read-cache.c' l='2392' u='c' c='clean_shared_index_files'/>
+<use f='codebrowser/read-cache.c' l='2395' u='c' c='clean_shared_index_files'/>
+<use f='codebrowser/refs.c' l='1615' u='c' c='get_main_ref_store'/>
+<use f='codebrowser/remote-testsvn.c' l='315' u='c' c='cmd_main'/>
+<use f='codebrowser/setup.c' l='366' u='c' c='is_inside_git_dir'/>
+<use f='codebrowser/setup.c' l='389' u='c' c='setup_work_tree'/>
+<use f='codebrowser/setup.c' l='391' u='c' c='setup_work_tree'/>
+<use f='codebrowser/setup.c' l='1176' u='c' c='check_repository_format'/>
+<use f='codebrowser/trace.c' l='333' u='c' c='trace_repo_setup'/>
+<use f='codebrowser/transport-helper.c' l='129' u='c' c='get_helper'/>
+<use f='codebrowser/worktree.c' l='108' u='c' c='mark_current_worktree'/>
+<use f='codebrowser/worktree.c' l='175' u='c' c='get_worktree_git_dir'/>

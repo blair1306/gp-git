@@ -1,0 +1,6 @@
+<dec f='codebrowser/cache.h' l='1276'/>
+<doc f='codebrowser/cache.h' l='1275'>/* used when the code does not know or care what the default abbrev is */</doc>
+<use f='codebrowser/diff.c' l='3112' u='c'/>
+<use f='codebrowser/sha1_name.c' l='498' u='c'/>
+<use f='codebrowser/sha1_name.c' l='499' u='c'/>
+<use f='codebrowser/transport.c' l='466' u='c'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/diff.h' l='184' type='void *'/>
+<offset>2432</offset>
+<use f='codebrowser/builtin/add.c' l='118' u='w' c='add_files_to_cache'/>
+<use f='codebrowser/builtin/merge.c' l='870' u='w' c='evaluate_result'/>
+<use f='codebrowser/builtin/reset.c' l='158' u='w' c='read_from_tree'/>
+<use f='codebrowser/combine-diff.c' l='1299' u='r' c='handle_combined_callback'/>
+<use f='codebrowser/diff.c' l='4829' u='r' c='diff_flush'/>
+<use f='codebrowser/submodule.c' l='800' u='w' c='collect_changed_submodules'/>
+<use f='codebrowser/wt-status.c' l='573' u='w' c='wt_status_collect_changes_worktree'/>
+<use f='codebrowser/wt-status.c' l='606' u='w' c='wt_status_collect_changes_index'/>

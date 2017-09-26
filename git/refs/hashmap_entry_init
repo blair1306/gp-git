@@ -1,0 +1,51 @@
+<def f='codebrowser/hashmap.h' l='248' ll='253' type='void hashmap_entry_init(void * entry, unsigned int hash)'/>
+<use f='codebrowser/hashmap.h' l='298' u='c' c='hashmap_get_from_hash'/>
+<doc f='codebrowser/hashmap.h' l='237'>/*
+ * Initializes a hashmap_entry structure.
+ *
+ * `entry` points to the entry to initialize.
+ * `hash` is the hash code of the entry.
+ *
+ * The hashmap_entry structure does not hold references to external resources,
+ * and it is safe to just discard it once you are done with it (i.e. if
+ * your structure was allocated with xmalloc(), you can just free(3) it,
+ * and if it is on stack, you can just let it go out of scope).
+ */</doc>
+<use f='codebrowser/attr.c' l='108' u='c' c='attr_hashmap_get'/>
+<use f='codebrowser/attr.c' l='127' u='c' c='attr_hashmap_add'/>
+<use f='codebrowser/builtin/describe.c' l='117' u='c' c='add_to_known_names'/>
+<use f='codebrowser/builtin/difftool.c' l='170' u='c' c='add_left_or_right'/>
+<use f='codebrowser/builtin/difftool.c' l='243' u='c' c='changed_files'/>
+<use f='codebrowser/builtin/difftool.c' l='470' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='629' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/fast-export.c' l='119' u='c' c='anonymize_mem'/>
+<use f='codebrowser/builtin/fast-export.c' l='126' u='c' c='anonymize_mem'/>
+<use f='codebrowser/config.c' l='1675' u='c' c='configset_find_element'/>
+<use f='codebrowser/config.c' l='1696' u='c' c='configset_add_value'/>
+<use f='codebrowser/diffcore-rename.c' l='325' u='c' c='insert_file_table'/>
+<use f='codebrowser/hashmap.c' l='288' u='c' c='memintern'/>
+<use f='codebrowser/hashmap.c' l='294' u='c' c='memintern'/>
+<use f='codebrowser/name-hash.c' l='36' u='c' c='find_dir_entry__hash'/>
+<use f='codebrowser/name-hash.c' l='71' u='c' c='hash_dir_entry'/>
+<use f='codebrowser/name-hash.c' l='109' u='c' c='hash_index_entry'/>
+<use f='codebrowser/name-hash.c' l='299' u='c' c='hash_dir_entry_with_parent_and_prefix'/>
+<use f='codebrowser/name-hash.c' l='490' u='c' c='lazy_name_thread_proc'/>
+<use f='codebrowser/oidset.c' l='25' u='c' c='oidset_contains'/>
+<use f='codebrowser/oidset.c' l='40' u='c' c='oidset_insert'/>
+<use f='codebrowser/patch-ids.c' l='86' u='c' c='init_patch_id_entry'/>
+<use f='codebrowser/refs.c' l='1561' u='c' c='alloc_ref_store_hash_entry'/>
+<use f='codebrowser/remote.c' l='169' u='c' c='make_remote'/>
+<use f='codebrowser/remote.c' l='180' u='c' c='make_remote'/>
+<use f='codebrowser/sha1_file.c' l='2267' u='c' c='get_delta_base_cache_entry'/>
+<use f='codebrowser/sha1_file.c' l='2366' u='c' c='add_delta_base_cache'/>
+<use f='codebrowser/sub-process.c' l='23' u='c' c='subprocess_find_entry'/>
+<use f='codebrowser/sub-process.c' l='99' u='c' c='subprocess_start'/>
+<use f='codebrowser/submodule-config.c' l='122' u='c' c='cache_put_path'/>
+<use f='codebrowser/submodule-config.c' l='134' u='c' c='cache_remove_path'/>
+<use f='codebrowser/submodule-config.c' l='146' u='c' c='cache_add'/>
+<use f='codebrowser/submodule-config.c' l='162' u='c' c='cache_lookup_path'/>
+<use f='codebrowser/submodule-config.c' l='182' u='c' c='cache_lookup_name'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='37' u='c' c='alloc_test_entry'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='103' u='c' c='perf_hashmap'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='116' u='c' c='perf_hashmap'/>
+<use f='codebrowser/t/helper/test-hashmap.c' l='219' u='c' c='cmd_main'/>

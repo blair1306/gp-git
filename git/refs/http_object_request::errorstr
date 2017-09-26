@@ -1,0 +1,6 @@
+<dec f='codebrowser/http.h' l='218' type='char [256]'/>
+<offset>32896</offset>
+<use f='codebrowser/http-walker.c' l='526' u='r' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='526' u='r' c='fetch_object'/>
+<use f='codebrowser/http-walker.c' l='538' c='fetch_object'/>
+<use f='codebrowser/http.c' l='2249' c='new_http_object_request'/>

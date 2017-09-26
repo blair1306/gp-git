@@ -1,0 +1,11 @@
+<dec f='codebrowser/cache.h' l='1489' type='int ident_cmp(const struct ident_split * , const struct ident_split * )'/>
+<doc f='codebrowser/cache.h' l='1482'>/*
+ * Compare split idents for equality or strict ordering. Note that we
+ * compare only the ident part of the line, ignoring any timestamp.
+ *
+ * Because there are two fields, we must choose one as the primary key; we
+ * currently arbitrarily pick the email.
+ */</doc>
+<use f='codebrowser/builtin/commit.c' l='855' u='c' c='prepare_to_commit'/>
+<def f='codebrowser/ident.c' l='520' ll='532' type='int ident_cmp(const struct ident_split * a, const struct ident_split * b)'/>
+<use f='codebrowser/pretty.c' l='451' u='c' c='pp_user_info'/>

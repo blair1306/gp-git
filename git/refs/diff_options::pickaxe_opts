@@ -1,0 +1,8 @@
+<dec f='codebrowser/diff.h' l='140' type='int'/>
+<offset>832</offset>
+<use f='codebrowser/diff.c' l='4005' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='4009' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='4013' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='4015' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='174' u='r' c='pickaxe'/>
+<use f='codebrowser/diffcore-pickaxe.c' l='219' u='r' c='diffcore_pickaxe'/>

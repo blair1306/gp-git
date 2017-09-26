@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='135' type='int cmd_bisect__helper(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/bisect--helper.c' l='11' ll='31' type='int cmd_bisect__helper(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='369'/>
+<use f='codebrowser/git.c' l='369'/>
+<use f='codebrowser/git.c' l='369'/>
+<use f='codebrowser/git.c' l='369'/>

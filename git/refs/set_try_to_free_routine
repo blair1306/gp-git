@@ -1,0 +1,6 @@
+<dec f='codebrowser/git-compat-util.h' l='755' type='try_to_free_t set_try_to_free_routine(try_to_free_t )'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2157' u='c' c='init_threaded_search'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2162' u='c' c='cleanup_threaded_search'/>
+<use f='codebrowser/sha1_file.c' l='1324' u='c' c='add_packed_git'/>
+<use f='codebrowser/trace.c' l='105' u='c' c='prepare_trace_line'/>
+<def f='codebrowser/wrapper.c' l='33' ll='40' type='try_to_free_t set_try_to_free_routine(try_to_free_t routine)'/>

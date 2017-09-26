@@ -1,0 +1,14 @@
+<dec f='codebrowser/notes.h' l='51' type='struct notes_tree'/>
+<use f='codebrowser/builtin/notes.c' l='292' u='a' c='notes_copy_from_stdin'/>
+<use f='codebrowser/builtin/notes.c' l='340' u='a' c='init_notes_check'/>
+<use f='codebrowser/notes-utils.c' l='40' u='a' c='commit_notes'/>
+<def f='codebrowser/notes.c' l='74' type='struct notes_tree'/>
+<use f='codebrowser/notes.c' l='1010' u='a' c='init_notes'/>
+<use f='codebrowser/notes.c' l='1096' u='a' c='add_note'/>
+<use f='codebrowser/notes.c' l='1112' u='a' c='remove_note'/>
+<use f='codebrowser/notes.c' l='1129' u='a' c='get_note'/>
+<use f='codebrowser/notes.c' l='1139' u='a' c='for_each_note'/>
+<use f='codebrowser/notes.c' l='1151' u='a' c='write_notes_tree'/>
+<use f='codebrowser/notes.c' l='1177' u='a' c='prune_notes'/>
+<use f='codebrowser/notes.c' l='1194' u='a' c='free_notes'/>
+<use f='codebrowser/notes.c' l='1229' u='a' c='format_note'/>

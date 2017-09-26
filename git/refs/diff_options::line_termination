@@ -1,0 +1,18 @@
+<dec f='codebrowser/diff.h' l='138' type='int'/>
+<offset>768</offset>
+<use f='codebrowser/builtin/log.c' l='248' u='r' c='show_early_header'/>
+<use f='codebrowser/combine-diff.c' l='1184' u='r' c='show_raw_diff'/>
+<use f='codebrowser/combine-diff.c' l='1411' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/combine-diff.c' l='1515' u='r' c='diff_tree_combined'/>
+<use f='codebrowser/diff.c' l='1877' u='r' c='show_numstat'/>
+<use f='codebrowser/diff.c' l='1881' u='r' c='show_numstat'/>
+<use f='codebrowser/diff.c' l='1884' u='r' c='show_numstat'/>
+<use f='codebrowser/diff.c' l='3375' u='w' c='diff_setup'/>
+<use f='codebrowser/diff.c' l='3998' u='w' c='diff_opt_parse'/>
+<use f='codebrowser/diff.c' l='4224' u='r' c='diff_flush_raw'/>
+<use f='codebrowser/diff.c' l='4460' u='r' c='flush_one_pair'/>
+<use f='codebrowser/diff.c' l='4814' u='r' c='diff_flush'/>
+<use f='codebrowser/log-tree.c' l='560' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='583' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='586' u='r' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='720' u='r' c='show_log'/>

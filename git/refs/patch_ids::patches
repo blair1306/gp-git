@@ -1,0 +1,6 @@
+<dec f='codebrowser/patch-ids.h' l='11' type='struct hashmap'/>
+<offset>0</offset>
+<use f='codebrowser/patch-ids.c' l='66' u='a' c='init_patch_ids'/>
+<use f='codebrowser/patch-ids.c' l='72' u='a' c='free_patch_ids'/>
+<use f='codebrowser/patch-ids.c' l='102' u='a' c='has_commit_patch_id'/>
+<use f='codebrowser/patch-ids.c' l='119' u='a' c='add_commit_patch_id'/>

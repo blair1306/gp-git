@@ -1,0 +1,6 @@
+<dec f='codebrowser/path.h' l='79' type='const char * git_path_fetch_head()'/>
+<use f='codebrowser/builtin/fetch.c' l='753' u='c' c='store_updated_refs'/>
+<use f='codebrowser/builtin/fetch.c' l='1005' u='c' c='truncate_fetch_head'/>
+<use f='codebrowser/builtin/merge.c' l='1015' u='c' c='handle_fetch_head'/>
+<use f='codebrowser/builtin/pull.c' l='338' u='c' c='get_merge_heads'/>
+<def f='codebrowser/path.c' l='1366' macro='1' type='const char * git_path_fetch_head()'/>

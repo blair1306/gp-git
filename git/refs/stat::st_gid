@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/stat.h' l='65' type='__gid_t'/>
+<offset>256</offset>
+<doc f='include/x86_64-linux-gnu/bits/stat.h' l='65'>/* Group ID of the file&apos;s group.*/</doc>
+<use f='codebrowser/read-cache.c' l='95' u='r' c='fill_stat_data'/>
+<use f='codebrowser/read-cache.c' l='119' u='r' c='match_stat_data'/>

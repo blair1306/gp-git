@@ -1,0 +1,18 @@
+<dec f='codebrowser/config.h' l='52' type='int git_parse_maybe_bool(const char * )'/>
+<use f='codebrowser/builtin/log.c' l='64' u='c' c='parse_decoration_style'/>
+<use f='codebrowser/builtin/log.c' l='828' u='c' c='git_format_config'/>
+<use f='codebrowser/builtin/merge.c' l='571' u='c' c='git_merge_config'/>
+<use f='codebrowser/builtin/merge.c' l='947' u='c' c='default_edit_option'/>
+<use f='codebrowser/builtin/pull.c' l='42' u='c' c='parse_config_rebase'/>
+<use f='codebrowser/builtin/pull.c' l='277' u='c' c='config_get_ff'/>
+<use f='codebrowser/builtin/push.c' l='484' u='c' c='git_push_config'/>
+<use f='codebrowser/builtin/remote.c' l='304' u='c' c='config_read_branches'/>
+<use f='codebrowser/builtin/send-pack.c' l='108' u='c' c='send_pack_config'/>
+<def f='codebrowser/config.c' l='949' ll='957' type='int git_parse_maybe_bool(const char * value)'/>
+<use f='codebrowser/config.c' l='961' u='c' c='git_config_maybe_bool'/>
+<use f='codebrowser/config.c' l='1860' u='c' c='git_configset_get_maybe_bool'/>
+<use f='codebrowser/pager.c' l='197' u='c' c='pager_command_config'/>
+<use f='codebrowser/send-pack.c' l='25' u='c' c='option_parse_push_signed'/>
+<use f='codebrowser/submodule-config.c' l='241' u='c' c='parse_fetch_recurse'/>
+<use f='codebrowser/submodule-config.c' l='294' u='c' c='parse_update_recurse'/>
+<use f='codebrowser/submodule-config.c' l='314' u='c' c='parse_push_recurse'/>

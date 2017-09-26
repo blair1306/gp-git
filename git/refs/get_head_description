@@ -1,0 +1,5 @@
+<dec f='codebrowser/ref-filter.h' l='127' type='char * get_head_description()'/>
+<use f='codebrowser/builtin/branch.c' l='299' u='c' c='calc_maxwidth'/>
+<doc f='codebrowser/ref-filter.h' l='126'>/*  Get the current HEAD&apos;s description */</doc>
+<def f='codebrowser/ref-filter.c' l='1254' ll='1289' type='char * get_head_description()'/>
+<use f='codebrowser/ref-filter.c' l='1302' u='c' c='get_refname'/>

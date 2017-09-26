@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='737' type='const char *'/>
+<use f='codebrowser/apply.c' l='27' u='a' c='git_apply_config'/>
+<use f='codebrowser/apply.c' l='101' u='r' c='init_apply_state'/>
+<use f='codebrowser/apply.c' l='101' u='r' c='init_apply_state'/>
+<def f='codebrowser/environment.c' l='33' type='const char *'/>

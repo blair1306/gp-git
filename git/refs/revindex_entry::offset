@@ -1,0 +1,16 @@
+<dec f='codebrowser/pack-revindex.h' l='7' type='off_t'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/pack-objects.c' l='373' u='r' c='write_reuse_object'/>
+<use f='codebrowser/pack-bitmap.c' l='632' u='r' c='show_objects_for_type'/>
+<use f='codebrowser/pack-bitmap.c' l='800' u='r' c='reuse_partial_packfile_from_bitmap'/>
+<use f='codebrowser/pack-revindex.c' l='38' u='r' c='sort_revindex'/>
+<use f='codebrowser/pack-revindex.c' l='38' u='r' c='sort_revindex'/>
+<use f='codebrowser/pack-revindex.c' l='135' u='w' c='create_pack_revindex'/>
+<use f='codebrowser/pack-revindex.c' l='137' u='w' c='create_pack_revindex'/>
+<use f='codebrowser/pack-revindex.c' l='139' u='w' c='create_pack_revindex'/>
+<use f='codebrowser/pack-revindex.c' l='147' u='w' c='create_pack_revindex'/>
+<use f='codebrowser/pack-revindex.c' l='155' u='w' c='create_pack_revindex'/>
+<use f='codebrowser/pack-revindex.c' l='174' u='r' c='find_revindex_position'/>
+<use f='codebrowser/pack-revindex.c' l='176' u='r' c='find_revindex_position'/>
+<use f='codebrowser/sha1_file.c' l='2412' u='r' c='packed_object_info'/>
+<use f='codebrowser/sha1_file.c' l='2542' u='r' c='unpack_entry'/>

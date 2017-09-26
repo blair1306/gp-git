@@ -1,0 +1,24 @@
+<dec f='codebrowser/parse-options.h' l='104' type='int'/>
+<offset>32</offset>
+<use f='codebrowser/builtin/grep.c' l='695' u='r' c='context_callback'/>
+<use f='codebrowser/builtin/rev-parse.c' l='369' u='r' c='parseopt_dump'/>
+<use f='codebrowser/builtin/rev-parse.c' l='370' u='r' c='parseopt_dump'/>
+<use f='codebrowser/builtin/rev-parse.c' l='466' u='w' c='cmd_parseopt'/>
+<use f='codebrowser/builtin/rev-parse.c' l='470' u='w' c='cmd_parseopt'/>
+<use f='codebrowser/parse-options-cb.c' l='67' u='r' c='parse_opt_verbosity_cb'/>
+<use f='codebrowser/parse-options-cb.c' l='188' u='r' c='recreate_opt'/>
+<use f='codebrowser/parse-options-cb.c' l='190' u='r' c='recreate_opt'/>
+<use f='codebrowser/parse-options.c' l='15' u='r' c='optbug'/>
+<use f='codebrowser/parse-options.c' l='17' u='r' c='optbug'/>
+<use f='codebrowser/parse-options.c' l='20' u='r' c='optbug'/>
+<use f='codebrowser/parse-options.c' l='69' u='r' c='opt_command_mode_error'/>
+<use f='codebrowser/parse-options.c' l='210' u='r' c='parse_short_opt'/>
+<use f='codebrowser/parse-options.c' l='341' u='r' c='parse_nodash_opt'/>
+<use f='codebrowser/parse-options.c' l='378' u='r' c='parse_options_check'/>
+<use f='codebrowser/parse-options.c' l='379' u='r' c='parse_options_check'/>
+<use f='codebrowser/parse-options.c' l='381' u='r' c='parse_options_check'/>
+<use f='codebrowser/parse-options.c' l='623' u='r' c='usage_with_options_internal'/>
+<use f='codebrowser/parse-options.c' l='625' u='r' c='usage_with_options_internal'/>
+<use f='codebrowser/parse-options.c' l='627' u='r' c='usage_with_options_internal'/>
+<use f='codebrowser/parse-options.c' l='629' u='r' c='usage_with_options_internal'/>
+<use f='codebrowser/parse-options.c' l='675' u='r' c='opterror'/>

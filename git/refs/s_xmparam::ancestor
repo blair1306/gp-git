@@ -1,0 +1,6 @@
+<dec f='codebrowser/xdiff/xdiff.h' l='126' type='const char *'/>
+<offset>192</offset>
+<doc f='codebrowser/xdiff/xdiff.h' l='126'>/* label for orig */</doc>
+<use f='codebrowser/builtin/merge-file.c' l='87' u='w' c='cmd_merge_file'/>
+<use f='codebrowser/ll-merge.c' l='117' u='w' c='ll_xdl_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='477' u='r' c='xdl_do_merge'/>

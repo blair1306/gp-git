@@ -1,0 +1,35 @@
+<dec f='codebrowser/cache.h' l='605' type='int write_locked_index(struct index_state * , struct lock_file * lock, unsigned int flags)'/>
+<use f='codebrowser/apply.c' l='4096' u='c' c='build_fake_ancestor'/>
+<use f='codebrowser/apply.c' l='4883' u='c' c='apply_all_patches'/>
+<use f='codebrowser/builtin/add.c' l='512' u='c' c='cmd_add'/>
+<use f='codebrowser/builtin/am.c' l='1131' u='c' c='refresh_and_write_cache'/>
+<use f='codebrowser/builtin/am.c' l='1967' u='c' c='fast_forward_to'/>
+<use f='codebrowser/builtin/am.c' l='2002' u='c' c='merge_tree'/>
+<use f='codebrowser/builtin/checkout-index.c' l='255' u='c' c='cmd_checkout_index'/>
+<use f='codebrowser/builtin/checkout.c' l='379' u='c' c='checkout_paths'/>
+<use f='codebrowser/builtin/checkout.c' l='593' u='c' c='merge_working_tree'/>
+<use f='codebrowser/builtin/clone.c' l='752' u='c' c='checkout'/>
+<use f='codebrowser/builtin/commit.c' l='359' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='378' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='404' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='426' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='476' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/commit.c' l='488' u='c' c='prepare_index'/>
+<use f='codebrowser/builtin/difftool.c' l='617' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/merge.c' l='647' u='c' c='try_merge_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='687' u='c' c='try_merge_strategy'/>
+<use f='codebrowser/builtin/merge.c' l='796' u='c' c='merge_trivial'/>
+<use f='codebrowser/builtin/mv.c' l='298' u='c' c='cmd_mv'/>
+<use f='codebrowser/builtin/read-tree.c' l='263' u='c' c='cmd_read_tree'/>
+<use f='codebrowser/builtin/reset.c' l='388' u='c' c='cmd_reset'/>
+<use f='codebrowser/builtin/rm.c' l='390' u='c' c='cmd_rm'/>
+<use f='codebrowser/builtin/update-index.c' l='1156' u='c' c='cmd_update_index'/>
+<use f='codebrowser/cache-tree.c' l='630' u='c' c='write_index_as_tree'/>
+<use f='codebrowser/merge-recursive.c' l='2150' u='c' c='merge_recursive_generic'/>
+<use f='codebrowser/merge.c' l='94' u='c' c='checkout_fast_forward'/>
+<use f='codebrowser/read-cache.c' l='2185' u='c' c='update_index_if_able'/>
+<def f='codebrowser/read-cache.c' l='2481' ll='2517' type='int write_locked_index(struct index_state * istate, struct lock_file * lock, unsigned int flags)'/>
+<use f='codebrowser/rerere.c' l='723' u='c' c='update_paths'/>
+<use f='codebrowser/sequencer.c' l='468' u='c' c='do_recursive_merge'/>
+<use f='codebrowser/sequencer.c' l='1185' u='c' c='read_and_refresh_cache'/>
+<use f='codebrowser/t/helper/test-scrap-cache-tree.c' l='15' u='c' c='cmd_main'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/kwset.h' l='30' type='int'/>
+<offset>0</offset>
+<doc f='codebrowser/kwset.h' l='30'>/* Index number of matching keyword. */</doc>
+<use f='codebrowser/kwset.c' l='728' u='w' c='cwexec'/>
+<use f='codebrowser/kwset.c' l='752' u='w' c='kwsexec'/>

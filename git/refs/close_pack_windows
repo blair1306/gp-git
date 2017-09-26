@@ -1,0 +1,5 @@
+<dec f='codebrowser/cache.h' l='1682' type='void close_pack_windows(struct packed_git * )'/>
+<use f='codebrowser/fast-import.c' l='1017' u='c' c='end_packfile'/>
+<use f='codebrowser/fast-import.c' l='1361' u='c' c='gfi_unpack_entry'/>
+<def f='codebrowser/sha1_file.c' l='953' ll='967' type='void close_pack_windows(struct packed_git * p)'/>
+<use f='codebrowser/sha1_file.c' l='983' u='c' c='close_pack'/>

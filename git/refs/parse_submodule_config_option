@@ -1,0 +1,5 @@
+<dec f='codebrowser/submodule-config.h' l='37' type='int parse_submodule_config_option(const char * var, const char * value)'/>
+<use f='codebrowser/diff.c' l='347' u='c' c='git_diff_basic_config'/>
+<def f='codebrowser/submodule-config.c' l='576' ll='579' type='int parse_submodule_config_option(const char * var, const char * value)'/>
+<use f='codebrowser/submodule.c' l='179' u='c' c='git_modules_config'/>
+<use f='codebrowser/t/helper/test-submodule-config.c' l='15' u='c' c='git_test_config'/>

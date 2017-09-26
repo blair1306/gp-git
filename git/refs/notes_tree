@@ -1,0 +1,10 @@
+<def f='codebrowser/notes.h' l='43' ll='51'/>
+<size>56</size>
+<mbr r='notes_tree::root' o='0' t='struct int_node *'/>
+<mbr r='notes_tree::first_non_note' o='64' t='struct non_note *'/>
+<mbr r='notes_tree::prev_non_note' o='128' t='struct non_note *'/>
+<mbr r='notes_tree::ref' o='192' t='char *'/>
+<mbr r='notes_tree::update_ref' o='256' t='char *'/>
+<mbr r='notes_tree::combine_notes' o='320' t='combine_notes_fn'/>
+<mbr r='notes_tree::initialized' o='384' t='int'/>
+<mbr r='notes_tree::dirty' o='416' t='int'/>

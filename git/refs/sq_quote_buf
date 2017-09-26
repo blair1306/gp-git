@@ -1,0 +1,50 @@
+<dec f='codebrowser/quote.h' l='32' type='void sq_quote_buf(struct strbuf * , const char * src)'/>
+<doc f='codebrowser/quote.h' l='6'>/* Help to copy the thing properly quoted for the shell safety.
+ * any single quote is replaced with &apos;\&apos;&apos;, any exclamation point
+ * is replaced with &apos;\!&apos;, and the whole thing is enclosed in a
+ * single quote pair.
+ *
+ * For example, if you are passing the result to system() as an
+ * argument:
+ *
+ * sprintf(cmd, &quot;foobar %s %s&quot;, sq_quote(arg0), sq_quote(arg1))
+ *
+ * would be appropriate.  If the system() is going to call ssh to
+ * run the command on the other side:
+ *
+ * sprintf(cmd, &quot;git-diff-tree %s %s&quot;, sq_quote(arg0), sq_quote(arg1));
+ * sprintf(rcmd, &quot;ssh %s %s&quot;, sq_quote(host), sq_quote(cmd));
+ *
+ * Note that the above examples leak memory!  Remember to free result from
+ * sq_quote() in a real application.
+ *
+ * sq_quote_buf() writes to an existing buffer of specified size; it
+ * will return the number of characters that would have been written
+ * excluding the final null regardless of the buffer size.
+ *
+ * sq_quotef() quotes the entire formatted string as a single result.
+ */</doc>
+<use f='codebrowser/builtin/am.c' l='350' u='c' c='write_author_script'/>
+<use f='codebrowser/builtin/am.c' l='354' u='c' c='write_author_script'/>
+<use f='codebrowser/builtin/am.c' l='358' u='c' c='write_author_script'/>
+<use f='codebrowser/builtin/rev-parse.c' l='378' u='c' c='parseopt_dump'/>
+<use f='codebrowser/config.c' l='311' u='c' c='git_config_push_parameter'/>
+<use f='codebrowser/connect.c' l='837' u='c' c='git_connect'/>
+<use f='codebrowser/convert.c' l='412' u='c' c='filter_buffer_or_fd'/>
+<use f='codebrowser/ll-merge.c' l='183' u='c' c='ll_ext_merge'/>
+<def f='codebrowser/quote.c' l='24' ll='44' type='void sq_quote_buf(struct strbuf * dst, const char * src)'/>
+<use f='codebrowser/quote.c' l='55' u='c' c='sq_quotef'/>
+<use f='codebrowser/quote.c' l='67' u='c' c='sq_quote_argv'/>
+<doc f='codebrowser/quote.c' l='12'>/* Help to copy the thing properly quoted for the shell safety.
+ * any single quote is replaced with &apos;\&apos;&apos;, any exclamation point
+ * is replaced with &apos;\!&apos;, and the whole thing is enclosed in a
+ * single quote pair.
+ *
+ * E.g.
+ *  original     sq_quote     result
+ *  name     ==&gt; name      ==&gt; &apos;name&apos;
+ *  a b      ==&gt; a b       ==&gt; &apos;a b&apos;
+ *  a&apos;b      ==&gt; a&apos;\&apos;&apos;b    ==&gt; &apos;a&apos;\&apos;&apos;b&apos;
+ *  a!b      ==&gt; a&apos;\!&apos;b    ==&gt; &apos;a&apos;\!&apos;b&apos;
+ */</doc>
+<use f='codebrowser/ref-filter.c' l='437' u='c' c='quote_formatting'/>

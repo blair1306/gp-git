@@ -1,0 +1,5 @@
+<dec f='codebrowser/color.h' l='61' type='const int'/>
+<use f='codebrowser/builtin/show-branch.c' l='34' u='r' c='get_color_code'/>
+<def f='codebrowser/color.c' l='28' type='const int'/>
+<doc f='codebrowser/color.c' l='27'>/* Ignore the RESET at the end when giving the size */</doc>
+<use f='codebrowser/graph.c' l='268' u='r' c='graph_init'/>

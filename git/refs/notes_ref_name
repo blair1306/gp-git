@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='844' type='char *'/>
+<use f='codebrowser/config.c' l='1169' u='w' c='git_default_core_config'/>
+<def f='codebrowser/environment.c' l='61' type='char *'/>
+<use f='codebrowser/notes.c' l='996' u='r' c='default_notes_ref'/>

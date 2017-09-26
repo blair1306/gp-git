@@ -1,0 +1,4 @@
+<dec f='codebrowser/blob.h' l='14' type='int parse_blob_buffer(struct blob * item, void * buffer, unsigned long size)'/>
+<def f='codebrowser/blob.c' l='14' ll='18' type='int parse_blob_buffer(struct blob * item, void * buffer, unsigned long size)'/>
+<use f='codebrowser/object.c' l='191' u='c' c='parse_object_buffer'/>
+<use f='codebrowser/object.c' l='262' u='c' c='parse_object'/>

@@ -1,0 +1,59 @@
+<dec f='codebrowser/blob.h' l='6' type='const char *'/>
+<use f='codebrowser/apply.c' l='3149' u='r' c='apply_binary'/>
+<use f='codebrowser/apply.c' l='3194' u='r' c='apply_binary'/>
+<use f='codebrowser/apply.c' l='3548' u='r' c='try_threeway'/>
+<use f='codebrowser/apply.c' l='3564' u='r' c='try_threeway'/>
+<use f='codebrowser/apply.c' l='3577' u='r' c='try_threeway'/>
+<use f='codebrowser/apply.c' l='4285' u='r' c='add_index_file'/>
+<def f='codebrowser/blob.c' l='4' type='const char *'/>
+<use f='codebrowser/builtin/checkout.c' l='230' u='r' c='checkout_merged'/>
+<use f='codebrowser/builtin/hash-object.c' l='86' u='r' c='cmd_hash_object'/>
+<use f='codebrowser/builtin/ls-tree.c' l='68' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/ls-tree.c' l='95' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/notes.c' l='203' u='r' c='write_note_data'/>
+<use f='codebrowser/fast-import.c' l='3124' u='r' c='print_ls'/>
+<use f='codebrowser/merge-recursive.c' l='989' u='r' c='merge_file_1'/>
+<use f='codebrowser/notes.c' l='846' u='r' c='combine_notes_concatenate'/>
+<use f='codebrowser/notes.c' l='926' u='r' c='combine_notes_cat_sort_uniq'/>
+<use f='codebrowser/read-cache.c' l='624' u='r' c='set_object_name_for_intent_to_add_entry'/>
+<use f='codebrowser/sha1_file.c' l='3673' u='r' c='index_path'/>
+<use f='codebrowser/sha1_file.c' l='3674' u='r' c='index_path'/>
+<use f='codebrowser/tag.c' l='144' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='144' u='r' c='parse_tag_buffer'/>

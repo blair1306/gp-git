@@ -1,0 +1,4 @@
+<dec f='codebrowser/shortlog.h' l='18' type='char *'/>
+<offset>576</offset>
+<use f='codebrowser/builtin/shortlog.c' l='79' u='r' c='insert_one_record'/>
+<use f='codebrowser/builtin/shortlog.c' l='233' u='a' c='shortlog_init'/>

@@ -1,0 +1,7 @@
+<def f='codebrowser/pack.h' l='61' ll='64'/>
+<size>8</size>
+<doc f='codebrowser/pack.h' l='58'>/*
+ * Packed object index header
+ */</doc>
+<mbr r='pack_idx_header::idx_signature' o='0' t='uint32_t'/>
+<mbr r='pack_idx_header::idx_version' o='32' t='uint32_t'/>

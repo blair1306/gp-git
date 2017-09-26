@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs/refs-internal.h' l='666' type='struct ref_storage_be'/>
+<use f='codebrowser/refs.c' l='20' u='a'/>
+<use f='codebrowser/refs/files-backend.c' l='54' u='a' c='files_ref_store_create'/>
+<use f='codebrowser/refs/files-backend.c' l='92' u='a' c='files_downcast'/>
+<def f='codebrowser/refs/files-backend.c' l='2896' ll='2922' type='struct ref_storage_be'/>

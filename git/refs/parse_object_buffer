@@ -1,0 +1,13 @@
+<dec f='codebrowser/object.h' l='105' type='struct object * parse_object_buffer(const struct object_id * oid, enum object_type type, unsigned long size, void * buffer, int * eaten_p)'/>
+<doc f='codebrowser/object.h' l='101'>/* Given the result of read_sha1_file(), returns the object after
+ * parsing it.  eaten_p indicates if the object has a borrowed copy
+ * of buffer and the caller should not free() it.
+ */</doc>
+<use f='codebrowser/builtin/fast-export.c' l='245' u='c' c='export_blob'/>
+<use f='codebrowser/builtin/fsck.c' l='379' u='c' c='fsck_obj_buffer'/>
+<use f='codebrowser/builtin/fsck.c' l='501' u='c' c='parse_loose_object'/>
+<use f='codebrowser/builtin/index-pack.c' l='848' u='c' c='sha1_object'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='263' u='c' c='write_object'/>
+<def f='codebrowser/object.c' l='182' ll='230' type='struct object * parse_object_buffer(const struct object_id * oid, enum object_type type, unsigned long size, void * buffer, int * eaten_p)'/>
+<use f='codebrowser/object.c' l='274' u='c' c='parse_object'/>
+<use f='codebrowser/ref-filter.c' l='701' u='c' c='get_obj'/>

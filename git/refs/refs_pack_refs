@@ -1,0 +1,9 @@
+<dec f='codebrowser/refs.h' l='345' type='int refs_pack_refs(struct ref_store * refs, unsigned int flags)'/>
+<doc f='codebrowser/refs.h' l='341'>/*
+ * Write a packed-refs file for the current repository.
+ * flags: Combination of the above PACK_REFS_* flags.
+ */</doc>
+<use f='codebrowser/builtin/pack-refs.c' l='20' u='c' c='cmd_pack_refs'/>
+<def f='codebrowser/refs.c' l='1708' ll='1711' type='int refs_pack_refs(struct ref_store * refs, unsigned int flags)'/>
+<doc f='codebrowser/refs.c' l='1707'>/* backend functions */</doc>
+<use f='codebrowser/t/helper/test-ref-store.c' l='69' u='c' c='cmd_pack_refs'/>

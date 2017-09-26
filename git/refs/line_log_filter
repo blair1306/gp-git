@@ -1,0 +1,3 @@
+<dec f='codebrowser/line-log.h' l='59' type='int line_log_filter(struct rev_info * rev)'/>
+<def f='codebrowser/line-log.c' l='1226' ll='1251' type='int line_log_filter(struct rev_info * rev)'/>
+<use f='codebrowser/revision.c' l='2803' u='c' c='prepare_revision_walk'/>

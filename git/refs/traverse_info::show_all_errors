@@ -1,0 +1,4 @@
+<dec f='codebrowser/tree-walk.h' l='79' type='int'/>
+<offset>640</offset>
+<use f='codebrowser/tree-walk.c' l='470' u='r' c='traverse_trees'/>
+<use f='codebrowser/unpack-trees.c' l='1297' u='w' c='unpack_trees'/>

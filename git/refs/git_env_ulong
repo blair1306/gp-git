@@ -1,0 +1,9 @@
+<dec f='codebrowser/config.h' l='76' type='unsigned long git_env_ulong(const char * , unsigned long )'/>
+<def f='codebrowser/config.c' l='1529' ll='1535' type='unsigned long git_env_ulong(const char * k, unsigned long val)'/>
+<doc f='codebrowser/config.c' l='1525'>/*
+ * Parse environment variable &apos;k&apos; as ulong with possibly a unit
+ * suffix; if missing, use the default value &apos;val&apos;.
+ */</doc>
+<use f='codebrowser/http-backend.c' l='708' u='c' c='cmd_main'/>
+<use f='codebrowser/sha1_file.c' l='919' u='c' c='mmap_limit_check'/>
+<use f='codebrowser/wrapper.c' l='17' u='c' c='memory_limit_check'/>

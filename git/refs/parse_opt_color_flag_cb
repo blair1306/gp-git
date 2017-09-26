@@ -1,0 +1,14 @@
+<dec f='codebrowser/parse-options.h' l='224' type='int parse_opt_color_flag_cb(const struct option * , const char * , int )'/>
+<use f='codebrowser/builtin/branch.c' l='568' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='568' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='568' macro='1' u='r'/>
+<use f='codebrowser/builtin/branch.c' l='568' macro='1' u='r'/>
+<use f='codebrowser/builtin/grep.c' l='837' macro='1' u='r'/>
+<use f='codebrowser/builtin/grep.c' l='837' macro='1' u='r'/>
+<use f='codebrowser/builtin/grep.c' l='837' macro='1' u='r'/>
+<use f='codebrowser/builtin/grep.c' l='837' macro='1' u='r'/>
+<use f='codebrowser/builtin/show-branch.c' l='629' macro='1' u='r'/>
+<use f='codebrowser/builtin/show-branch.c' l='629' macro='1' u='r'/>
+<use f='codebrowser/builtin/show-branch.c' l='629' macro='1' u='r'/>
+<use f='codebrowser/builtin/show-branch.c' l='629' macro='1' u='r'/>
+<def f='codebrowser/parse-options-cb.c' l='44' ll='57' type='int parse_opt_color_flag_cb(const struct option * opt, const char * arg, int unset)'/>

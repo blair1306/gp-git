@@ -1,0 +1,13 @@
+<dec f='include/x86_64-linux-gnu/sys/poll.h' l='42' type='short'/>
+<offset>32</offset>
+<doc f='include/x86_64-linux-gnu/sys/poll.h' l='42'>/* Types of events poller cares about.  */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='372' u='w' c='copy_to_sideband'/>
+<use f='codebrowser/builtin/upload-archive.c' l='105' u='w' c='cmd_upload_archive'/>
+<use f='codebrowser/builtin/upload-archive.c' l='107' u='w' c='cmd_upload_archive'/>
+<use f='codebrowser/credential-cache--daemon.c' l='170' u='w' c='serve_cache_loop'/>
+<use f='codebrowser/daemon.c' l='1091' u='w' c='service_loop'/>
+<use f='codebrowser/run-command.c' l='1245' u='w' c='pump_io_round'/>
+<use f='codebrowser/run-command.c' l='1472' u='w' c='pp_init'/>
+<use f='codebrowser/upload-pack.c' l='177' u='w' c='create_pack_file'/>
+<use f='codebrowser/upload-pack.c' l='183' u='w' c='create_pack_file'/>
+<use f='codebrowser/wrapper.c' l='239' u='w' c='handle_nonblock'/>

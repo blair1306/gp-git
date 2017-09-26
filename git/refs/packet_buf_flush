@@ -1,0 +1,9 @@
+<dec f='codebrowser/pkt-line.h' l='24' type='void packet_buf_flush(struct strbuf * buf)'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1905' u='c' c='report'/>
+<use f='codebrowser/fetch-pack.c' l='409' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='459' u='c' c='find_common'/>
+<def f='codebrowser/pkt-line.c' l='102' ll='106' type='void packet_buf_flush(struct strbuf * buf)'/>
+<use f='codebrowser/remote-curl.c' l='834' u='c' c='fetch_git'/>
+<use f='codebrowser/remote-curl.c' l='968' u='c' c='push_git'/>
+<use f='codebrowser/send-pack.c' l='539' u='c' c='send_pack'/>
+<use f='codebrowser/send-pack.c' l='546' u='c' c='send_pack'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/refs.h' l='401' type='int refs_delete_reflog(struct ref_store * refs, const char * refname)'/>
+<doc f='codebrowser/refs.h' l='400'>/** Delete a reflog */</doc>
+<def f='codebrowser/refs.c' l='2000' ll='2003' type='int refs_delete_reflog(struct ref_store * refs, const char * refname)'/>
+<use f='codebrowser/refs.c' l='2007' u='c' c='delete_reflog'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='207' u='c' c='cmd_delete_reflog'/>

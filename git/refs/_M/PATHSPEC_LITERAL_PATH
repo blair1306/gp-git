@@ -1,0 +1,11 @@
+<dec f='codebrowser/pathspec.h' l='71'/>
+<doc f='codebrowser/pathspec.h' l='65'>/*
+ * For the callers that just need pure paths from somewhere else, not
+ * from command line. Global --*-pathspecs options are ignored. No
+ * magic is parsed in each pathspec either. If PATHSPEC_LITERAL is
+ * allowed, then it will automatically set for every pathspec.
+ */</doc>
+<use f='codebrowser/blame.c' l='552' u='c'/>
+<use f='codebrowser/pathspec.c' l='410' u='c'/>
+<use f='codebrowser/revision.c' l='1426' u='c'/>
+<use f='codebrowser/tree-diff.c' l='646' u='c'/>

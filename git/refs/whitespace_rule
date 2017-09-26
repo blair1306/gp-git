@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1959' type='unsigned int whitespace_rule(const char * )'/>
+<use f='codebrowser/apply.c' l='2136' u='c' c='parse_chunk'/>
+<use f='codebrowser/diff.c' l='786' u='c' c='emit_rewrite_diff'/>
+<use f='codebrowser/diff.c' l='2502' u='c' c='builtin_diff'/>
+<use f='codebrowser/diff.c' l='2627' u='c' c='builtin_checkdiff'/>
+<def f='codebrowser/ws.c' l='10' ll='15'/>
+<def f='codebrowser/ws.c' l='74' ll='107' type='unsigned int whitespace_rule(const char * pathname)'/>
+<size>16</size>

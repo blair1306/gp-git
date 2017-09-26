@@ -1,0 +1,8 @@
+<dec f='codebrowser/xdiff/xtypes.h' l='58' type='unsigned long *'/>
+<offset>1024</offset>
+<use f='codebrowser/xdiff/xdiffi.c' l='364' u='r' c='xdl_do_diff'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='368' u='r' c='xdl_do_diff'/>
+<use f='codebrowser/xdiff/xprepare.c' l='234' u='w' c='xdl_prepare_ctx'/>
+<use f='codebrowser/xdiff/xprepare.c' l='256' u='r' c='xdl_free_ctx'/>
+<use f='codebrowser/xdiff/xprepare.c' l='420' u='r' c='xdl_cleanup_records'/>
+<use f='codebrowser/xdiff/xprepare.c' l='432' u='r' c='xdl_cleanup_records'/>

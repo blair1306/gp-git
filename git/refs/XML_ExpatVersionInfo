@@ -1,0 +1,4 @@
+<dec f='include/expat.h' l='1006' type='XML_Expat_Version XML_ExpatVersionInfo()'/>
+<doc f='include/expat.h' l='1002'>/* Return an XML_Expat_Version structure containing numeric version
+   number information for this version of expat.
+*/</doc>

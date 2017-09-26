@@ -1,0 +1,14 @@
+<dec f='codebrowser/cache.h' l='1589' type='struct pack_window *'/>
+<offset>64</offset>
+<use f='codebrowser/sha1_file.c' l='873' u='r' c='scan_windows'/>
+<use f='codebrowser/sha1_file.c' l='900' u='w' c='unuse_one_window'/>
+<use f='codebrowser/sha1_file.c' l='955' u='r' c='close_pack_windows'/>
+<use f='codebrowser/sha1_file.c' l='956' u='r' c='close_pack_windows'/>
+<use f='codebrowser/sha1_file.c' l='964' u='w' c='close_pack_windows'/>
+<use f='codebrowser/sha1_file.c' l='1014' u='r' c='find_lru_pack'/>
+<use f='codebrowser/sha1_file.c' l='1017' u='r' c='find_lru_pack'/>
+<use f='codebrowser/sha1_file.c' l='1251' u='r' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1287' u='r' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='1288' u='w' c='use_pack'/>
+<use f='codebrowser/sha1_file.c' l='2823' u='r' c='is_pack_valid'/>
+<use f='codebrowser/sha1_file.c' l='2824' u='r' c='is_pack_valid'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/revision.h' l='138' type='unsigned int'/>
+<offset>976</offset>
+<use f='codebrowser/log-tree.c' l='697' u='w' c='show_log'/>
+<use f='codebrowser/log-tree.c' l='729' u='w' c='log_tree_diff_flush'/>
+<use f='codebrowser/log-tree.c' l='770' u='r' c='log_tree_diff_flush'/>

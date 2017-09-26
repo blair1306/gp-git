@@ -1,0 +1,16 @@
+<dec f='codebrowser/grep.h' l='107' type='enum grep_expr_node'/>
+<offset>0</offset>
+<use f='codebrowser/grep.c' l='692' u='w' c='compile_pattern_atom'/>
+<use f='codebrowser/grep.c' l='722' u='w' c='compile_pattern_not'/>
+<use f='codebrowser/grep.c' l='747' u='w' c='compile_pattern_and'/>
+<use f='codebrowser/grep.c' l='767' u='w' c='compile_pattern_or'/>
+<use f='codebrowser/grep.c' l='821' u='r' c='dump_grep_expression_1'/>
+<use f='codebrowser/grep.c' l='864' u='w' c='grep_true_expr'/>
+<use f='codebrowser/grep.c' l='871' u='w' c='grep_or_expr'/>
+<use f='codebrowser/grep.c' l='930' u='r' c='grep_splice_or'/>
+<use f='codebrowser/grep.c' l='932' u='r' c='grep_splice_or'/>
+<use f='codebrowser/grep.c' l='993' u='r' c='free_pattern_expr'/>
+<use f='codebrowser/grep.c' l='1230' u='r' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1256' u='r' c='match_expr_eval'/>
+<use f='codebrowser/grep.c' l='1860' u='r' c='clr_hit_marker'/>
+<use f='codebrowser/grep.c' l='1871' u='r' c='chk_hit_marker'/>

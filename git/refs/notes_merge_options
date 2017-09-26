@@ -1,0 +1,8 @@
+<def f='codebrowser/notes-merge.h' l='13' ll='20'/>
+<size>56</size>
+<mbr r='notes_merge_options::local_ref' o='0' t='const char *'/>
+<mbr r='notes_merge_options::remote_ref' o='64' t='const char *'/>
+<mbr r='notes_merge_options::commit_msg' o='128' t='struct strbuf'/>
+<mbr r='notes_merge_options::verbosity' o='320' t='int'/>
+<mbr r='notes_merge_options::strategy' o='352' t='enum notes_merge_strategy'/>
+<mbr r='notes_merge_options::has_worktree' o='384' t='unsigned int'/>

@@ -1,0 +1,9 @@
+<dec f='include/curl/curl.h' l='2118'/>
+<use f='include/curl/curl.h' l='2128' u='c'/>
+<use f='include/curl/curl.h' l='2145' u='c'/>
+<use f='include/curl/curl.h' l='2148' u='c'/>
+<use f='include/curl/curl.h' l='2157' u='c'/>
+<use f='include/curl/curl.h' l='2158' u='c'/>
+<use f='include/curl/curl.h' l='2159' u='c'/>
+<use f='include/curl/curl.h' l='2163' u='c'/>
+<use f='include/curl/curl.h' l='2168' u='c'/>

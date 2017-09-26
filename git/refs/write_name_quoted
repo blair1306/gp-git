@@ -1,0 +1,18 @@
+<dec f='codebrowser/quote.h' l='61' type='void write_name_quoted(const char * name, FILE * , int terminator)'/>
+<use f='codebrowser/apply.c' l='4130' u='c' c='numstat_patch_list'/>
+<use f='codebrowser/builtin/blame.c' l='225' u='c' c='write_filename_info'/>
+<use f='codebrowser/builtin/blame.c' l='228' u='c' c='write_filename_info'/>
+<use f='codebrowser/builtin/check-ignore.c' l='40' u='c' c='output_exclude'/>
+<use f='codebrowser/combine-diff.c' l='1218' u='c' c='show_raw_diff'/>
+<use f='codebrowser/diff.c' l='1880' u='c' c='show_numstat'/>
+<use f='codebrowser/diff.c' l='1889' u='c' c='show_numstat'/>
+<use f='codebrowser/diff.c' l='1891' u='c' c='show_numstat'/>
+<use f='codebrowser/diff.c' l='4247' u='c' c='diff_flush_raw'/>
+<use f='codebrowser/diff.c' l='4248' u='c' c='diff_flush_raw'/>
+<use f='codebrowser/diff.c' l='4254' u='c' c='diff_flush_raw'/>
+<use f='codebrowser/diff.c' l='4460' u='c' c='flush_one_pair'/>
+<use f='codebrowser/diff.c' l='4470' u='c' c='show_file_mode_name'/>
+<use f='codebrowser/diff.c' l='4481' u='c' c='show_mode_change'/>
+<use f='codebrowser/diff.c' l='4521' u='c' c='diff_summary'/>
+<def f='codebrowser/quote.c' l='281' ll='289' type='void write_name_quoted(const char * name, FILE * fp, int terminator)'/>
+<use f='codebrowser/quote.c' l='297' u='c' c='write_name_quoted_relative'/>

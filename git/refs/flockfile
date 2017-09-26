@@ -1,0 +1,3 @@
+<dec f='include/stdio.h' l='912' type='void flockfile(FILE * __stream)'/>
+<doc f='include/stdio.h' l='911'>/* Acquire ownership of STREAM.  */</doc>
+<use f='codebrowser/config.c' l='1445' u='c' c='git_config_from_file'/>

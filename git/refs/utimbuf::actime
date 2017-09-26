@@ -1,0 +1,8 @@
+<dec f='include/utime.h' l='39' type='__time_t'/>
+<offset>0</offset>
+<doc f='include/utime.h' l='39'>/* Access time.  */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='856' u='w' c='write_pack_file'/>
+<use f='codebrowser/copy.c' l='24' u='w' c='copy_times'/>
+<use f='codebrowser/sha1_file.c' l='655' u='w' c='freshen_file'/>
+<use f='codebrowser/sha1_file.c' l='3364' u='w' c='write_loose_object'/>
+<use f='codebrowser/t/helper/test-chmtime.c' l='99' u='w' c='cmd_main'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/walker.h' l='33' type='int walker_fetch(struct walker * impl, int targets, char ** target, const char ** write_ref, const char * write_ref_log_details)'/>
+<use f='codebrowser/http-fetch.c' l='77' u='c' c='cmd_main'/>
+<doc f='codebrowser/walker.h' l='32'>/* If write_ref_log_details is set, additional text will appear in the ref log. */</doc>
+<use f='codebrowser/remote-curl.c' l='782' u='c' c='fetch_dumb'/>
+<def f='codebrowser/walker.c' l='256' ll='328' type='int walker_fetch(struct walker * walker, int targets, char ** target, const char ** write_ref, const char * write_ref_log_details)'/>

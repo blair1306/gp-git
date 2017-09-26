@@ -1,0 +1,7 @@
+<dec f='codebrowser/blame.h' l='167' type='void assign_blame(struct blame_scoreboard * sb, int opt)'/>
+<def f='codebrowser/blame.c' l='1547' ll='1609' type='void assign_blame(struct blame_scoreboard * sb, int opt)'/>
+<doc f='codebrowser/blame.c' l='1543'>/*
+ * The main loop -- while we have blobs with lines whose true origin
+ * is still unknown, pick one blob, and allow its lines to pass blames
+ * to its parents. */</doc>
+<use f='codebrowser/builtin/blame.c' l='930' u='c' c='cmd_blame'/>

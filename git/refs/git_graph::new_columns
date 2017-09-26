@@ -1,0 +1,24 @@
+<dec f='codebrowser/graph.c' l='203' type='struct column *'/>
+<use f='codebrowser/graph.c' l='304' u='w' c='graph_init'/>
+<use f='codebrowser/graph.c' l='304' u='r' c='graph_init'/>
+<use f='codebrowser/graph.c' l='334' u='w' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='334' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='334' u='r' c='graph_ensure_capacity'/>
+<use f='codebrowser/graph.c' l='446' u='r' c='graph_insert_into_new_columns'/>
+<use f='codebrowser/graph.c' l='456' u='r' c='graph_insert_into_new_columns'/>
+<use f='codebrowser/graph.c' l='457' u='r' c='graph_insert_into_new_columns'/>
+<use f='codebrowser/graph.c' l='513' u='a' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='513' u='r' c='graph_update_columns'/>
+<use f='codebrowser/graph.c' l='726' u='r' c='graph_output_padding_line'/>
+<use f='codebrowser/graph.c' l='865' u='r' c='graph_draw_octopus_merge'/>
+<use f='codebrowser/graph.c' l='868' u='r' c='graph_draw_octopus_merge'/>
+<use f='codebrowser/graph.c' l='954' u='r' c='find_new_column_by_commit'/>
+<use f='codebrowser/graph.c' l='955' u='r' c='find_new_column_by_commit'/>
+<use f='codebrowser/graph.c' l='1140' u='r' c='graph_output_collapsing_line'/>
+<use f='codebrowser/graph.c' l='1151' u='r' c='graph_output_collapsing_line'/>
+<use f='codebrowser/graph.c' l='1155' u='r' c='graph_output_collapsing_line'/>
+<offset>576</offset>
+<doc f='codebrowser/graph.c' l='199'>/*
+	 * The new column state after we output the current commit.
+	 * Only valid when state is GRAPH_COLLAPSING.
+	 */</doc>

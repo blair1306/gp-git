@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='341' type='unsigned int'/>
+<offset>448</offset>
+<use f='codebrowser/name-hash.c' l='581' u='r' c='lazy_init_name_hash'/>
+<use f='codebrowser/name-hash.c' l='596' u='w' c='lazy_init_name_hash'/>
+<use f='codebrowser/name-hash.c' l='620' u='r' c='add_name_hash'/>
+<use f='codebrowser/name-hash.c' l='626' u='r' c='remove_name_hash'/>
+<use f='codebrowser/name-hash.c' l='721' u='r' c='free_name_hash'/>
+<use f='codebrowser/name-hash.c' l='723' u='w' c='free_name_hash'/>

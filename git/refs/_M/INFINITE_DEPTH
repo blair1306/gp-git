@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='262'/>
+<doc f='codebrowser/commit.h' l='261'>/* largest positive number a signed 32-bit integer can contain */</doc>
+<use f='codebrowser/builtin/fetch.c' l='1354' u='c'/>
+<use f='codebrowser/shallow.c' l='108' u='c'/>
+<use f='codebrowser/upload-pack.c' l='690' u='c'/>

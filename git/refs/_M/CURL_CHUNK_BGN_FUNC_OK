@@ -1,0 +1,2 @@
+<dec f='include/curl/curl.h' l='269'/>
+<doc f='include/curl/curl.h' l='268'>/* return codes for CURLOPT_CHUNK_BGN_FUNCTION */</doc>

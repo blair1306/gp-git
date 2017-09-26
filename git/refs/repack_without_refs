@@ -1,0 +1,13 @@
+<dec f='codebrowser/refs/packed-backend.h' l='22' type='int repack_without_refs(struct ref_store * ref_store, struct string_list * refnames, struct strbuf * err)'/>
+<use f='codebrowser/refs/files-backend.c' l='1156' u='c' c='files_delete_refs'/>
+<use f='codebrowser/refs/files-backend.c' l='2584' u='c' c='files_transaction_finish'/>
+<def f='codebrowser/refs/packed-backend.c' l='698' ll='743' type='int repack_without_refs(struct ref_store * ref_store, struct string_list * refnames, struct strbuf * err)'/>
+<doc f='codebrowser/refs/packed-backend.c' l='689'>/*
+ * Rewrite the packed-refs file, omitting any refs listed in
+ * &apos;refnames&apos;. On error, leave packed-refs unchanged, write an error
+ * message to &apos;err&apos;, and return a nonzero value. The packed refs lock
+ * must be held when calling this function; it will still be held when
+ * the function returns.
+ *
+ * The refs in &apos;refnames&apos; needn&apos;t be sorted. `err` must not be NULL.
+ */</doc>

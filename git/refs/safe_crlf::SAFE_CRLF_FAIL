@@ -1,0 +1,3 @@
+<dec f='codebrowser/convert.h' l='13' type='1'/>
+<use f='codebrowser/convert.c' l='297' u='r' c='crlf_to_git'/>
+<use f='codebrowser/diff.c' l='2818' u='r' c='diff_populate_filespec'/>

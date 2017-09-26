@@ -1,0 +1,14 @@
+<dec f='codebrowser/refs/refs-internal.h' l='448' type='void base_ref_iterator_free(struct ref_iterator * iter)'/>
+<doc f='codebrowser/refs/refs-internal.h' l='443'>/*
+ * Base class destructor for ref_iterators. Destroy the ref_iterator
+ * part of iter and shallow-free the object. This is meant to be
+ * called only by the destructors of derived classes.
+ */</doc>
+<use f='codebrowser/refs/files-backend.c' l='748' u='c' c='files_ref_iterator_abort'/>
+<use f='codebrowser/refs/files-backend.c' l='2048' u='c' c='files_reflog_iterator_abort'/>
+<def f='codebrowser/refs/iterator.c' l='36' ll='41' type='void base_ref_iterator_free(struct ref_iterator * iter)'/>
+<use f='codebrowser/refs/iterator.c' l='60' u='c' c='empty_ref_iterator_abort'/>
+<use f='codebrowser/refs/iterator.c' l='197' u='c' c='merge_ref_iterator_abort'/>
+<use f='codebrowser/refs/iterator.c' l='341' u='c' c='prefix_ref_iterator_abort'/>
+<use f='codebrowser/refs/packed-backend.c' l='462' u='c' c='packed_ref_iterator_abort'/>
+<use f='codebrowser/refs/ref-cache.c' l='546' u='c' c='cache_ref_iterator_abort'/>

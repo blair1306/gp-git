@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='1432' type='void show_date_relative(timestamp_t time, int tz, const struct timeval * now, struct strbuf * timebuf)'/>
+<def f='codebrowser/date.c' l='110' ll='182' type='void show_date_relative(timestamp_t time, int tz, const struct timeval * now, struct strbuf * timebuf)'/>
+<use f='codebrowser/date.c' l='219' u='c' c='show_date'/>
+<use f='codebrowser/t/helper/test-date.c' l='17' u='c' c='show_relative_dates'/>

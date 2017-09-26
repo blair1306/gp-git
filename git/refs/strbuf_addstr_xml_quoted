@@ -1,0 +1,8 @@
+<dec f='codebrowser/strbuf.h' l='559' type='void strbuf_addstr_xml_quoted(struct strbuf * sb, const char * s)'/>
+<doc f='codebrowser/strbuf.h' l='555'>/**
+ * Append s to sb, with the characters &apos;&lt;&apos;, &apos;&gt;&apos;, &apos;&amp;&apos; and &apos;&quot;&apos; converted
+ * into XML entities.
+ */</doc>
+<use f='codebrowser/http-push.c' l='179' u='c' c='xml_entities'/>
+<use f='codebrowser/imap-send.c' l='1246' u='c' c='wrap_in_html'/>
+<def f='codebrowser/strbuf.c' l='608' ll='632' type='void strbuf_addstr_xml_quoted(struct strbuf * buf, const char * s)'/>

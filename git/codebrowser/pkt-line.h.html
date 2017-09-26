@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pkt-line.h source code [codebrowser/pkt-line.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/pkt-line.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='pkt-line.h.html'>pkt-line.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/PKTLINE_H">PKTLINE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/PKTLINE_H" data-ref="_M/PKTLINE_H">PKTLINE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="git-compat-util.h.html">"git-compat-util.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="strbuf.h.html">"strbuf.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><i>/*</i></td></tr>
+<tr><th id="8">8</th><td><i> * Write a packetized stream, where each line is preceded by</i></td></tr>
+<tr><th id="9">9</th><td><i> * its length (including the header) as a 4-byte hex number.</i></td></tr>
+<tr><th id="10">10</th><td><i> * A length of 'zero' means end of stream (and a length of 1-3</i></td></tr>
+<tr><th id="11">11</th><td><i> * would be an error).</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * This is all pretty stupid, but we use this packetized line</i></td></tr>
+<tr><th id="14">14</th><td><i> * format to make a streaming format possible without ever</i></td></tr>
+<tr><th id="15">15</th><td><i> * over-running the read buffers. That way we'll never read</i></td></tr>
+<tr><th id="16">16</th><td><i> * into what might be the pack data (which should go to another</i></td></tr>
+<tr><th id="17">17</th><td><i> * process entirely).</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> * The writing side could use stdio, but since the reading</i></td></tr>
+<tr><th id="20">20</th><td><i> * side can't, we stay with pure read/write interfaces.</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td><em>void</em> <dfn class="decl" id="packet_flush" title='packet_flush' data-ref="packet_flush">packet_flush</dfn>(<em>int</em> <dfn class="local col5 decl" id="65fd" title='fd' data-type='int' data-ref="65fd">fd</dfn>);</td></tr>
+<tr><th id="23">23</th><td><em>void</em> <dfn class="decl" id="packet_write_fmt" title='packet_write_fmt' data-ref="packet_write_fmt">packet_write_fmt</dfn>(<em>int</em> <dfn class="local col6 decl" id="66fd" title='fd' data-type='int' data-ref="66fd">fd</dfn>, <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="67fmt" title='fmt' data-type='const char *' data-ref="67fmt">fmt</dfn>, ...) <b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)));</td></tr>
+<tr><th id="24">24</th><td><em>void</em> <dfn class="decl" id="packet_buf_flush" title='packet_buf_flush' data-ref="packet_buf_flush">packet_buf_flush</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col8 decl" id="68buf" title='buf' data-type='struct strbuf *' data-ref="68buf">buf</dfn>);</td></tr>
+<tr><th id="25">25</th><td><em>void</em> <dfn class="decl" id="packet_buf_write" title='packet_buf_write' data-ref="packet_buf_write">packet_buf_write</dfn>(<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col9 decl" id="69buf" title='buf' data-type='struct strbuf *' data-ref="69buf">buf</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="70fmt" title='fmt' data-type='const char *' data-ref="70fmt">fmt</dfn>, ...) <b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)));</td></tr>
+<tr><th id="26">26</th><td><em>int</em> <dfn class="decl" id="packet_flush_gently" title='packet_flush_gently' data-ref="packet_flush_gently">packet_flush_gently</dfn>(<em>int</em> <dfn class="local col1 decl" id="71fd" title='fd' data-type='int' data-ref="71fd">fd</dfn>);</td></tr>
+<tr><th id="27">27</th><td><em>int</em> <dfn class="decl" id="packet_write_fmt_gently" title='packet_write_fmt_gently' data-ref="packet_write_fmt_gently">packet_write_fmt_gently</dfn>(<em>int</em> <dfn class="local col2 decl" id="72fd" title='fd' data-type='int' data-ref="72fd">fd</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="73fmt" title='fmt' data-type='const char *' data-ref="73fmt">fmt</dfn>, ...) <b>__attribute__</b>((format (printf, <var>2</var>, <var>3</var>)));</td></tr>
+<tr><th id="28">28</th><td><em>int</em> <dfn class="decl" id="write_packetized_from_fd" title='write_packetized_from_fd' data-ref="write_packetized_from_fd">write_packetized_from_fd</dfn>(<em>int</em> <dfn class="local col4 decl" id="74fd_in" title='fd_in' data-type='int' data-ref="74fd_in">fd_in</dfn>, <em>int</em> <dfn class="local col5 decl" id="75fd_out" title='fd_out' data-type='int' data-ref="75fd_out">fd_out</dfn>);</td></tr>
+<tr><th id="29">29</th><td><em>int</em> <dfn class="decl" id="write_packetized_from_buf" title='write_packetized_from_buf' data-ref="write_packetized_from_buf">write_packetized_from_buf</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="76src_in" title='src_in' data-type='const char *' data-ref="76src_in">src_in</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="77len" title='len' data-type='size_t' data-ref="77len">len</dfn>, <em>int</em> <dfn class="local col8 decl" id="78fd_out" title='fd_out' data-type='int' data-ref="78fd_out">fd_out</dfn>);</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i>/*</i></td></tr>
+<tr><th id="32">32</th><td><i> * Read a packetized line into the buffer, which must be at least size bytes</i></td></tr>
+<tr><th id="33">33</th><td><i> * long. The return value specifies the number of bytes read into the buffer.</i></td></tr>
+<tr><th id="34">34</th><td><i> *</i></td></tr>
+<tr><th id="35">35</th><td><i> * If src_buffer and *src_buffer are not NULL, it should point to a buffer</i></td></tr>
+<tr><th id="36">36</th><td><i> * containing the packet data to parse, of at least *src_len bytes.  After the</i></td></tr>
+<tr><th id="37">37</th><td><i> * function returns, src_buf will be incremented and src_len decremented by the</i></td></tr>
+<tr><th id="38">38</th><td><i> * number of bytes consumed.</i></td></tr>
+<tr><th id="39">39</th><td><i> *</i></td></tr>
+<tr><th id="40">40</th><td><i> * If src_buffer (or *src_buffer) is NULL, then data is read from the</i></td></tr>
+<tr><th id="41">41</th><td><i> * descriptor "fd".</i></td></tr>
+<tr><th id="42">42</th><td><i> *</i></td></tr>
+<tr><th id="43">43</th><td><i> * If options does not contain PACKET_READ_GENTLE_ON_EOF, we will die under any</i></td></tr>
+<tr><th id="44">44</th><td><i> * of the following conditions:</i></td></tr>
+<tr><th id="45">45</th><td><i> *</i></td></tr>
+<tr><th id="46">46</th><td><i> *   1. Read error from descriptor.</i></td></tr>
+<tr><th id="47">47</th><td><i> *</i></td></tr>
+<tr><th id="48">48</th><td><i> *   2. Protocol error from the remote (e.g., bogus length characters).</i></td></tr>
+<tr><th id="49">49</th><td><i> *</i></td></tr>
+<tr><th id="50">50</th><td><i> *   3. Receiving a packet larger than "size" bytes.</i></td></tr>
+<tr><th id="51">51</th><td><i> *</i></td></tr>
+<tr><th id="52">52</th><td><i> *   4. Truncated output from the remote (e.g., we expected a packet but got</i></td></tr>
+<tr><th id="53">53</th><td><i> *      EOF, or we got a partial packet followed by EOF).</i></td></tr>
+<tr><th id="54">54</th><td><i> *</i></td></tr>
+<tr><th id="55">55</th><td><i> * If options does contain PACKET_READ_GENTLE_ON_EOF, we will not die on</i></td></tr>
+<tr><th id="56">56</th><td><i> * condition 4 (truncated input), but instead return -1. However, we will still</i></td></tr>
+<tr><th id="57">57</th><td><i> * die for the other 3 conditions.</i></td></tr>
+<tr><th id="58">58</th><td><i> *</i></td></tr>
+<tr><th id="59">59</th><td><i> * If options contains PACKET_READ_CHOMP_NEWLINE, a trailing newline (if</i></td></tr>
+<tr><th id="60">60</th><td><i> * present) is removed from the buffer before returning.</i></td></tr>
+<tr><th id="61">61</th><td><i> */</i></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/PACKET_READ_GENTLE_ON_EOF" data-ref="_M/PACKET_READ_GENTLE_ON_EOF">PACKET_READ_GENTLE_ON_EOF</dfn> (1u&lt;&lt;0)</u></td></tr>
+<tr><th id="63">63</th><td><u>#define <dfn class="macro" id="_M/PACKET_READ_CHOMP_NEWLINE" data-ref="_M/PACKET_READ_CHOMP_NEWLINE">PACKET_READ_CHOMP_NEWLINE</dfn> (1u&lt;&lt;1)</u></td></tr>
+<tr><th id="64">64</th><td><em>int</em> <dfn class="decl" id="packet_read" title='packet_read' data-ref="packet_read">packet_read</dfn>(<em>int</em> <dfn class="local col9 decl" id="79fd" title='fd' data-type='int' data-ref="79fd">fd</dfn>, <em>char</em> **<dfn class="local col0 decl" id="80src_buffer" title='src_buffer' data-type='char **' data-ref="80src_buffer">src_buffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col1 decl" id="81src_len" title='src_len' data-type='size_t *' data-ref="81src_len">src_len</dfn>, <em>char</em></td></tr>
+<tr><th id="65">65</th><td>		*<dfn class="local col2 decl" id="82buffer" title='buffer' data-type='char *' data-ref="82buffer">buffer</dfn>, <em>unsigned</em> <dfn class="local col3 decl" id="83size" title='size' data-type='unsigned int' data-ref="83size">size</dfn>, <em>int</em> <dfn class="local col4 decl" id="84options" title='options' data-type='int' data-ref="84options">options</dfn>);</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><i>/*</i></td></tr>
+<tr><th id="68">68</th><td><i> * Convenience wrapper for packet_read that is not gentle, and sets the</i></td></tr>
+<tr><th id="69">69</th><td><i> * CHOMP_NEWLINE option. The return value is NULL for a flush packet,</i></td></tr>
+<tr><th id="70">70</th><td><i> * and otherwise points to a static buffer (that may be overwritten by</i></td></tr>
+<tr><th id="71">71</th><td><i> * subsequent calls). If the size parameter is not NULL, the length of the</i></td></tr>
+<tr><th id="72">72</th><td><i> * packet is written to it.</i></td></tr>
+<tr><th id="73">73</th><td><i> */</i></td></tr>
+<tr><th id="74">74</th><td><em>char</em> *<dfn class="decl" id="packet_read_line" title='packet_read_line' data-ref="packet_read_line">packet_read_line</dfn>(<em>int</em> <dfn class="local col5 decl" id="85fd" title='fd' data-type='int' data-ref="85fd">fd</dfn>, <em>int</em> *<dfn class="local col6 decl" id="86size" title='size' data-type='int *' data-ref="86size">size</dfn>);</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><i>/*</i></td></tr>
+<tr><th id="77">77</th><td><i> * Convenience wrapper for packet_read that sets the PACKET_READ_GENTLE_ON_EOF</i></td></tr>
+<tr><th id="78">78</th><td><i> * and CHOMP_NEWLINE options. The return value specifies the number of bytes</i></td></tr>
+<tr><th id="79">79</th><td><i> * read into the buffer or -1 on truncated input. If the *dst_line parameter</i></td></tr>
+<tr><th id="80">80</th><td><i> * is not NULL it will return NULL for a flush packet or when the number of</i></td></tr>
+<tr><th id="81">81</th><td><i> * bytes copied is zero and otherwise points to a static buffer (that may be</i></td></tr>
+<tr><th id="82">82</th><td><i> * overwritten by subsequent calls). If the size parameter is not NULL, the</i></td></tr>
+<tr><th id="83">83</th><td><i> * length of the packet is written to it.</i></td></tr>
+<tr><th id="84">84</th><td><i> */</i></td></tr>
+<tr><th id="85">85</th><td><em>int</em> <dfn class="decl" id="packet_read_line_gently" title='packet_read_line_gently' data-ref="packet_read_line_gently">packet_read_line_gently</dfn>(<em>int</em> <dfn class="local col7 decl" id="87fd" title='fd' data-type='int' data-ref="87fd">fd</dfn>, <em>int</em> *<dfn class="local col8 decl" id="88size" title='size' data-type='int *' data-ref="88size">size</dfn>, <em>char</em> **<dfn class="local col9 decl" id="89dst_line" title='dst_line' data-type='char **' data-ref="89dst_line">dst_line</dfn>);</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><i>/*</i></td></tr>
+<tr><th id="88">88</th><td><i> * Same as packet_read_line, but read from a buf rather than a descriptor;</i></td></tr>
+<tr><th id="89">89</th><td><i> * see packet_read for details on how src_* is used.</i></td></tr>
+<tr><th id="90">90</th><td><i> */</i></td></tr>
+<tr><th id="91">91</th><td><em>char</em> *<dfn class="decl" id="packet_read_line_buf" title='packet_read_line_buf' data-ref="packet_read_line_buf">packet_read_line_buf</dfn>(<em>char</em> **<dfn class="local col0 decl" id="90src_buf" title='src_buf' data-type='char **' data-ref="90src_buf">src_buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col1 decl" id="91src_len" title='src_len' data-type='size_t *' data-ref="91src_len">src_len</dfn>, <em>int</em> *<dfn class="local col2 decl" id="92size" title='size' data-type='int *' data-ref="92size">size</dfn>);</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><i>/*</i></td></tr>
+<tr><th id="94">94</th><td><i> * Reads a stream of variable sized packets until a flush packet is detected.</i></td></tr>
+<tr><th id="95">95</th><td><i> */</i></td></tr>
+<tr><th id="96">96</th><td><a class="typedef" href="../include/unistd.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="decl" id="read_packetized_to_strbuf" title='read_packetized_to_strbuf' data-ref="read_packetized_to_strbuf">read_packetized_to_strbuf</dfn>(<em>int</em> <dfn class="local col3 decl" id="93fd_in" title='fd_in' data-type='int' data-ref="93fd_in">fd_in</dfn>, <b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> *<dfn class="local col4 decl" id="94sb_out" title='sb_out' data-type='struct strbuf *' data-ref="94sb_out">sb_out</dfn>);</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><u>#define <dfn class="macro" id="_M/DEFAULT_PACKET_MAX" data-ref="_M/DEFAULT_PACKET_MAX">DEFAULT_PACKET_MAX</dfn> 1000</u></td></tr>
+<tr><th id="99">99</th><td><u>#define <dfn class="macro" id="_M/LARGE_PACKET_MAX" data-ref="_M/LARGE_PACKET_MAX">LARGE_PACKET_MAX</dfn> 65520</u></td></tr>
+<tr><th id="100">100</th><td><u>#define <dfn class="macro" id="_M/LARGE_PACKET_DATA_MAX" data-ref="_M/LARGE_PACKET_DATA_MAX">LARGE_PACKET_DATA_MAX</dfn> (LARGE_PACKET_MAX - 4)</u></td></tr>
+<tr><th id="101">101</th><td><b>extern</b> <em>char</em> <dfn class="decl" id="packet_buffer" title='packet_buffer' data-ref="packet_buffer">packet_buffer</dfn>[<a class="macro" href="#99" title="65520" data-ref="_M/LARGE_PACKET_MAX">LARGE_PACKET_MAX</a>];</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="104">104</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='builtin/archive.c.html'>codebrowser/builtin/archive.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

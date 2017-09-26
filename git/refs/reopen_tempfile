@@ -1,0 +1,22 @@
+<dec f='codebrowser/tempfile.h' l='254' type='int reopen_tempfile(struct tempfile * tempfile)'/>
+<use f='codebrowser/lockfile.h' l='273' u='c' c='reopen_lock_file'/>
+<doc f='codebrowser/tempfile.h' l='235'>/*
+ * Re-open a temporary file that has been closed using
+ * `close_tempfile()` but not yet deleted or renamed. This can be used
+ * to implement a sequence of operations like the following:
+ *
+ * * Create temporary file.
+ *
+ * * Write new contents to file, then `close_tempfile()` to cause the
+ *   contents to be written to disk.
+ *
+ * * Pass the name of the temporary file to another program to allow
+ *   it (and nobody else) to inspect or even modify the file&apos;s
+ *   contents.
+ *
+ * * `reopen_tempfile()` to reopen the temporary file. Make further
+ *   updates to the contents.
+ *
+ * * `rename_tempfile()` to move the file to its permanent location.
+ */</doc>
+<def f='codebrowser/tempfile.c' l='271' ll='279' type='int reopen_tempfile(struct tempfile * tempfile)'/>

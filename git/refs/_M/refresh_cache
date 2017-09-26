@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='380'/>
+<use f='codebrowser/builtin/am.c' l='1130' u='c'/>
+<use f='codebrowser/builtin/am.c' l='1949' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='497' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='332' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='474' u='c'/>
+<use f='codebrowser/builtin/commit.c' l='486' u='c'/>
+<use f='codebrowser/builtin/diff.c' l='215' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='330' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='645' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='794' u='c'/>
+<use f='codebrowser/builtin/merge.c' l='1399' u='c'/>
+<use f='codebrowser/builtin/update-index.c' l='769' u='c'/>
+<use f='codebrowser/merge.c' l='58' u='c'/>
+<use f='codebrowser/wt-status.c' l='2304' u='c'/>

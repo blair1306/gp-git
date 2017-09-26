@@ -1,0 +1,9 @@
+<dec f='codebrowser/cache.h' l='1199'/>
+<use f='codebrowser/builtin/pack-objects.c' l='731' u='c'/>
+<use f='codebrowser/pack-bitmap.c' l='269' u='c'/>
+<use f='codebrowser/sha1_file.c' l='461' u='c'/>
+<use f='codebrowser/sha1_file.c' l='753' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1159' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1742' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1750' u='c'/>
+<use f='codebrowser/sha1_file.c' l='1772' u='c'/>

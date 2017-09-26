@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>dir-iterator.h source code [codebrowser/dir-iterator.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="dir_iterator "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/dir-iterator.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='dir-iterator.h.html'>dir-iterator.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/DIR_ITERATOR_H">DIR_ITERATOR_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/DIR_ITERATOR_H" data-ref="_M/DIR_ITERATOR_H">DIR_ITERATOR_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/*</i></td></tr>
+<tr><th id="5">5</th><td><i> * Iterate over a directory tree.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * Iterate over a directory tree, recursively, including paths of all</i></td></tr>
+<tr><th id="8">8</th><td><i> * types and hidden paths. Skip "." and ".." entries and don't follow</i></td></tr>
+<tr><th id="9">9</th><td><i> * symlinks except for the original path.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * Every time dir_iterator_advance() is called, update the members of</i></td></tr>
+<tr><th id="12">12</th><td><i> * the dir_iterator structure to reflect the next path in the</i></td></tr>
+<tr><th id="13">13</th><td><i> * iteration. The order that paths are iterated over within a</i></td></tr>
+<tr><th id="14">14</th><td><i> * directory is undefined, but directory paths are always iterated</i></td></tr>
+<tr><th id="15">15</th><td><i> * over before the subdirectory contents.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * A typical iteration looks like this:</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> *     int ok;</i></td></tr>
+<tr><th id="20">20</th><td><i> *     struct iterator *iter = dir_iterator_begin(path);</i></td></tr>
+<tr><th id="21">21</th><td><i> *</i></td></tr>
+<tr><th id="22">22</th><td><i> *     while ((ok = dir_iterator_advance(iter)) == ITER_OK) {</i></td></tr>
+<tr><th id="23">23</th><td><i> *             if (want_to_stop_iteration()) {</i></td></tr>
+<tr><th id="24">24</th><td><i> *                     ok = dir_iterator_abort(iter);</i></td></tr>
+<tr><th id="25">25</th><td><i> *                     break;</i></td></tr>
+<tr><th id="26">26</th><td><i> *             }</i></td></tr>
+<tr><th id="27">27</th><td><i> *</i></td></tr>
+<tr><th id="28">28</th><td><i> *             // Access information about the current path:</i></td></tr>
+<tr><th id="29">29</th><td><i> *             if (S_ISDIR(iter-&gt;st.st_mode))</i></td></tr>
+<tr><th id="30">30</th><td><i> *                     printf("%s is a directory\n", iter-&gt;relative_path);</i></td></tr>
+<tr><th id="31">31</th><td><i> *     }</i></td></tr>
+<tr><th id="32">32</th><td><i> *</i></td></tr>
+<tr><th id="33">33</th><td><i> *     if (ok != ITER_DONE)</i></td></tr>
+<tr><th id="34">34</th><td><i> *             handle_error();</i></td></tr>
+<tr><th id="35">35</th><td><i> *</i></td></tr>
+<tr><th id="36">36</th><td><i> * Callers are allowed to modify iter-&gt;path while they are working,</i></td></tr>
+<tr><th id="37">37</th><td><i> * but they must restore it to its original contents before calling</i></td></tr>
+<tr><th id="38">38</th><td><i> * dir_iterator_advance() again.</i></td></tr>
+<tr><th id="39">39</th><td><i> */</i></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><b>struct</b> <dfn class="type def" id="dir_iterator" title='dir_iterator' data-ref="dir_iterator">dir_iterator</dfn> {</td></tr>
+<tr><th id="42">42</th><td>	<i>/* The current path: */</i></td></tr>
+<tr><th id="43">43</th><td>	<b>struct</b> <a class="type" href="strbuf.h.html#strbuf" title='strbuf' data-ref="strbuf">strbuf</a> <dfn class="decl" id="dir_iterator::path" title='dir_iterator::path' data-ref="dir_iterator::path">path</dfn>;</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>	<i>/*</i></td></tr>
+<tr><th id="46">46</th><td><i>	 * The current path relative to the starting path. This part</i></td></tr>
+<tr><th id="47">47</th><td><i>	 * of the path always uses "/" characters to separate path</i></td></tr>
+<tr><th id="48">48</th><td><i>	 * components:</i></td></tr>
+<tr><th id="49">49</th><td><i>	 */</i></td></tr>
+<tr><th id="50">50</th><td>	<em>const</em> <em>char</em> *<dfn class="decl" id="dir_iterator::relative_path" title='dir_iterator::relative_path' data-ref="dir_iterator::relative_path">relative_path</dfn>;</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>	<i>/* The current basename: */</i></td></tr>
+<tr><th id="53">53</th><td>	<em>const</em> <em>char</em> *<a class="macro" href="../include/libgen.h.html#35" title="__xpg_basename" data-ref="_M/basename">basename</a>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>	<i>/* The result of calling lstat() on path: */</i></td></tr>
+<tr><th id="56">56</th><td>	<b>struct</b> <a class="type" href="../include/x86_64-linux-gnu/bits/stat.h.html#stat" title='stat' data-ref="stat">stat</a> <dfn class="decl" id="dir_iterator::st" title='dir_iterator::st' data-ref="dir_iterator::st">st</dfn>;</td></tr>
+<tr><th id="57">57</th><td>};</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><i>/*</i></td></tr>
+<tr><th id="60">60</th><td><i> * Start a directory iteration over path. Return a dir_iterator that</i></td></tr>
+<tr><th id="61">61</th><td><i> * holds the internal state of the iteration.</i></td></tr>
+<tr><th id="62">62</th><td><i> *</i></td></tr>
+<tr><th id="63">63</th><td><i> * The iteration includes all paths under path, not including path</i></td></tr>
+<tr><th id="64">64</th><td><i> * itself and not including "." or ".." entries.</i></td></tr>
+<tr><th id="65">65</th><td><i> *</i></td></tr>
+<tr><th id="66">66</th><td><i> * path is the starting directory. An internal copy will be made.</i></td></tr>
+<tr><th id="67">67</th><td><i> */</i></td></tr>
+<tr><th id="68">68</th><td><b>struct</b> <a class="type" href="#dir_iterator" title='dir_iterator' data-ref="dir_iterator">dir_iterator</a> *<a class="decl" href="dir-iterator.c.html#dir_iterator_begin" title='dir_iterator_begin' data-ref="dir_iterator_begin" id="dir_iterator_begin">dir_iterator_begin</a>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="1path" title='path' data-type='const char *' data-ref="1path">path</dfn>);</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><i>/*</i></td></tr>
+<tr><th id="71">71</th><td><i> * Advance the iterator to the first or next item and return ITER_OK.</i></td></tr>
+<tr><th id="72">72</th><td><i> * If the iteration is exhausted, free the dir_iterator and any</i></td></tr>
+<tr><th id="73">73</th><td><i> * resources associated with it and return ITER_DONE. On error, free</i></td></tr>
+<tr><th id="74">74</th><td><i> * dir_iterator and associated resources and return ITER_ERROR. It is</i></td></tr>
+<tr><th id="75">75</th><td><i> * a bug to use iterator or call this function again after it has</i></td></tr>
+<tr><th id="76">76</th><td><i> * returned ITER_DONE or ITER_ERROR.</i></td></tr>
+<tr><th id="77">77</th><td><i> */</i></td></tr>
+<tr><th id="78">78</th><td><em>int</em> <a class="decl" href="dir-iterator.c.html#dir_iterator_advance" title='dir_iterator_advance' data-ref="dir_iterator_advance" id="dir_iterator_advance">dir_iterator_advance</a>(<b>struct</b> <a class="type" href="#dir_iterator" title='dir_iterator' data-ref="dir_iterator">dir_iterator</a> *<dfn class="local col2 decl" id="2iterator" title='iterator' data-type='struct dir_iterator *' data-ref="2iterator">iterator</dfn>);</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><i>/*</i></td></tr>
+<tr><th id="81">81</th><td><i> * End the iteration before it has been exhausted. Free the</i></td></tr>
+<tr><th id="82">82</th><td><i> * dir_iterator and any associated resources and return ITER_DONE. On</i></td></tr>
+<tr><th id="83">83</th><td><i> * error, free the dir_iterator and return ITER_ERROR.</i></td></tr>
+<tr><th id="84">84</th><td><i> */</i></td></tr>
+<tr><th id="85">85</th><td><em>int</em> <a class="decl" href="dir-iterator.c.html#dir_iterator_abort" title='dir_iterator_abort' data-ref="dir_iterator_abort" id="dir_iterator_abort">dir_iterator_abort</a>(<b>struct</b> <a class="type" href="#dir_iterator" title='dir_iterator' data-ref="dir_iterator">dir_iterator</a> *<dfn class="local col3 decl" id="3iterator" title='iterator' data-type='struct dir_iterator *' data-ref="3iterator">iterator</dfn>);</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='dir-iterator.c.html'>codebrowser/dir-iterator.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

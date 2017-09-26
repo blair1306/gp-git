@@ -1,0 +1,5 @@
+<dec f='codebrowser/patch-ids.h' l='20' type='struct patch_id * has_commit_patch_id(struct commit * , struct patch_ids * )'/>
+<use f='codebrowser/builtin/log.c' l='1700' u='c' c='cmd_format_patch'/>
+<use f='codebrowser/builtin/log.c' l='1948' u='c' c='cmd_cherry'/>
+<def f='codebrowser/patch-ids.c' l='90' ll='103' type='struct patch_id * has_commit_patch_id(struct commit * commit, struct patch_ids * ids)'/>
+<use f='codebrowser/revision.c' l='871' u='c' c='cherry_pick_list'/>

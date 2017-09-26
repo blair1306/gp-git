@@ -1,0 +1,3 @@
+<dec f='codebrowser/fsck.c' l='70' macro='1' type='6'/>
+<use f='codebrowser/fsck.c' l='837' u='r' c='fsck_tag_buffer'/>
+<use f='codebrowser/fsck.c' l='907' u='r' c='fsck_object'/>

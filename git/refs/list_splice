@@ -1,0 +1,2 @@
+<def f='codebrowser/list.h' l='106' ll='115' type='void list_splice(struct list_head * add, struct list_head * head)'/>
+<doc f='codebrowser/list.h' l='105'>/* Join two lists. */</doc>

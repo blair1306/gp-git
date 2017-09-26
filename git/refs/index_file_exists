@@ -1,0 +1,12 @@
+<dec f='codebrowser/cache.h' l='613' type='struct cache_entry * index_file_exists(struct index_state * istate, const char * name, int namelen, int igncase)'/>
+<use f='codebrowser/apply.c' l='3818' macro='1' u='c'/>
+<use f='codebrowser/dir.c' l='1263' u='c' c='dir_add_name'/>
+<use f='codebrowser/dir.c' l='1300' u='c' c='directory_exists_in_index_icase'/>
+<use f='codebrowser/dir.c' l='1494' u='c' c='get_index_dtype'/>
+<use f='codebrowser/dir.c' l='1558' u='c' c='treat_one_path'/>
+<use f='codebrowser/entry.c' l='217' u='c' c='finish_delayed_checkout'/>
+<use f='codebrowser/merge-recursive.c' l='627' macro='1' u='c'/>
+<def f='codebrowser/name-hash.c' l='703' ll='717' type='struct cache_entry * index_file_exists(struct index_state * istate, const char * name, int namelen, int icase)'/>
+<use f='codebrowser/read-cache.c' l='681' u='c' c='add_to_index'/>
+<use f='codebrowser/unpack-trees.c' l='1623' u='c' c='icase_exists'/>
+<use f='codebrowser/unpack-trees.c' l='1669' u='c' c='check_ok_to_remove'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/submodule-config.h' l='50' type='void submodule_free()'/>
+<use f='codebrowser/builtin/grep.c' l='645' u='c' c='grep_objects'/>
+<def f='codebrowser/submodule-config.c' l='604' ll='608' type='void submodule_free()'/>
+<use f='codebrowser/t/helper/test-submodule-config.c' l='74' u='c' c='cmd_main'/>
+<use f='codebrowser/unpack-trees.c' l='293' u='c' c='reload_gitmodules_file'/>

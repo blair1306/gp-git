@@ -1,0 +1,4 @@
+<def f='codebrowser/prio-queue.h' l='24' ll='27'/>
+<size>16</size>
+<mbr r='prio_queue_entry::ctr' o='0' t='unsigned int'/>
+<mbr r='prio_queue_entry::data' o='64' t='void *'/>

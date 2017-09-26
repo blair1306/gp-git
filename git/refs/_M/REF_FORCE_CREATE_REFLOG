@@ -1,0 +1,4 @@
+<dec f='codebrowser/refs.h' l='355'/>
+<use f='codebrowser/builtin/tag.c' l='547' u='c'/>
+<use f='codebrowser/builtin/update-ref.c' l='378' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1565' u='c'/>

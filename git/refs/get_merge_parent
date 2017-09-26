@@ -1,0 +1,11 @@
+<dec f='codebrowser/commit.h' l='375' type='struct commit * get_merge_parent(const char * name)'/>
+<doc f='codebrowser/commit.h' l='370'>/*
+ * Given &quot;name&quot; from the command line to merge, find the commit object
+ * and return it, while storing merge_remote_desc in its -&gt;util field,
+ * to allow callers to tell if we are told to merge a tag.
+ */</doc>
+<use f='codebrowser/builtin/commit.c' l='1711' u='c' c='cmd_commit'/>
+<use f='codebrowser/builtin/merge.c' l='447' u='c' c='merge_name'/>
+<use f='codebrowser/builtin/merge.c' l='1044' u='c' c='handle_fetch_head'/>
+<use f='codebrowser/builtin/merge.c' l='1081' u='c' c='collect_parents'/>
+<def f='codebrowser/commit.c' l='1584' ll='1596' type='struct commit * get_merge_parent(const char * name)'/>

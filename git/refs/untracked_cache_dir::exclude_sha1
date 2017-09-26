@@ -1,0 +1,10 @@
+<dec f='codebrowser/dir.h' l='122' type='unsigned char [20]'/>
+<offset>552</offset>
+<doc f='codebrowser/dir.h' l='121'>/* null SHA-1 means this directory does not have .gitignore */</doc>
+<use f='codebrowser/dir.c' l='1170' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1201' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='1203' u='r' c='prep_exclude'/>
+<use f='codebrowser/dir.c' l='2452' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2454' u='r' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2663' u='r' c='read_sha1'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='26' u='r' c='dump'/>

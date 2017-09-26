@@ -1,0 +1,24 @@
+<dec f='include/x86_64-linux-gnu/bits/poll.h' l='25'/>
+<doc f='include/x86_64-linux-gnu/bits/poll.h' l='22'>/* Event types that can be polled for.  These bits may be set in `events&apos;
+   to indicate the interesting event types; they will appear in `revents&apos;
+   to indicate the status of the file descriptor.  */</doc>
+<use f='codebrowser/builtin/receive-pack.c' l='372' u='c'/>
+<use f='codebrowser/builtin/upload-archive.c' l='105' u='c'/>
+<use f='codebrowser/builtin/upload-archive.c' l='107' u='c'/>
+<use f='codebrowser/builtin/upload-archive.c' l='115' u='c'/>
+<use f='codebrowser/builtin/upload-archive.c' l='119' u='c'/>
+<use f='codebrowser/credential-cache--daemon.c' l='170' u='c'/>
+<use f='codebrowser/credential-cache--daemon.c' l='177' u='c'/>
+<use f='codebrowser/daemon.c' l='1091' u='c'/>
+<use f='codebrowser/daemon.c' l='1111' u='c'/>
+<use f='codebrowser/run-command.c' l='1264' u='c'/>
+<use f='codebrowser/run-command.c' l='1284' u='c'/>
+<use f='codebrowser/run-command.c' l='1350' u='c'/>
+<use f='codebrowser/run-command.c' l='1357' u='c'/>
+<use f='codebrowser/run-command.c' l='1472' u='c'/>
+<use f='codebrowser/run-command.c' l='1564' u='c'/>
+<use f='codebrowser/upload-pack.c' l='177' u='c'/>
+<use f='codebrowser/upload-pack.c' l='183' u='c'/>
+<use f='codebrowser/upload-pack.c' l='201' u='c'/>
+<use f='codebrowser/upload-pack.c' l='218' u='c'/>
+<use f='codebrowser/wrapper.c' l='264' u='c'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/split-index.h' l='31' type='void prepare_to_write_split_index(struct index_state * istate)'/>
+<use f='codebrowser/read-cache.c' l='2349' u='c' c='write_split_index'/>
+<def f='codebrowser/split-index.c' l='176' ll='262' type='void prepare_to_write_split_index(struct index_state * istate)'/>

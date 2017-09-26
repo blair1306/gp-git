@@ -1,0 +1,3 @@
+<def f='codebrowser/shallow.c' l='432' macro='1' type='uint32_t ** ref_bitmap_at_peek(struct ref_bitmap * s, const struct commit * c, int add_if_missing)'/>
+<use f='codebrowser/shallow.c' l='432' macro='1' u='c'/>
+<use f='codebrowser/shallow.c' l='432' macro='1' u='c'/>

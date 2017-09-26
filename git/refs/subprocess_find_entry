@@ -1,0 +1,5 @@
+<dec f='codebrowser/sub-process.h' l='64' type='struct subprocess_entry * subprocess_find_entry(struct hashmap * hashmap, const char * cmd)'/>
+<use f='codebrowser/convert.c' l='570' u='c' c='apply_multi_file_filter'/>
+<use f='codebrowser/convert.c' l='677' u='c' c='async_query_available_blobs'/>
+<doc f='codebrowser/sub-process.h' l='63'>/* Find a subprocess in the subprocess hashmap. */</doc>
+<def f='codebrowser/sub-process.c' l='19' ll='26' type='struct subprocess_entry * subprocess_find_entry(struct hashmap * hashmap, const char * cmd)'/>

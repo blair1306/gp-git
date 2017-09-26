@@ -1,0 +1,25 @@
+<dec f='codebrowser/refs.h' l='642' type='int update_ref(const char * msg, const char * refname, const unsigned char * new_sha1, const unsigned char * old_sha1, unsigned int flags, enum action_on_err onerr)'/>
+<use f='codebrowser/bisect.c' l='688' u='c' c='bisect_checkout'/>
+<use f='codebrowser/bisect.c' l='692' u='c' c='bisect_checkout'/>
+<use f='codebrowser/builtin/checkout.c' l='666' u='c' c='update_refs_for_switch'/>
+<use f='codebrowser/builtin/clone.c' l='612' u='c' c='write_followtags'/>
+<use f='codebrowser/builtin/clone.c' l='684' u='c' c='update_head'/>
+<use f='codebrowser/builtin/clone.c' l='691' u='c' c='update_head'/>
+<use f='codebrowser/builtin/clone.c' l='699' u='c' c='update_head'/>
+<use f='codebrowser/builtin/merge.c' l='401' u='c' c='finish'/>
+<use f='codebrowser/builtin/merge.c' l='1241' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/merge.c' l='1337' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/notes.c' l='738' u='c' c='merge_commit'/>
+<use f='codebrowser/builtin/notes.c' l='852' u='c' c='merge'/>
+<use f='codebrowser/builtin/notes.c' l='857' u='c' c='merge'/>
+<use f='codebrowser/builtin/pull.c' l='543' u='c' c='pull_into_void'/>
+<use f='codebrowser/builtin/update-ref.c' l='440' u='c' c='cmd_update_ref'/>
+<use f='codebrowser/notes-cache.c' l='62' u='c' c='notes_cache_write'/>
+<use f='codebrowser/notes-utils.c' l='52' u='c' c='commit_notes'/>
+<use f='codebrowser/refs.c' l='991' u='c' c='update_ref_oid'/>
+<def f='codebrowser/refs.c' l='1039' ll='1046' type='int update_ref(const char * msg, const char * refname, const unsigned char * new_sha1, const unsigned char * old_sha1, unsigned int flags, enum action_on_err onerr)'/>
+<use f='codebrowser/sequencer.c' l='1117' u='c' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='1121' u='c' c='do_pick_commit'/>
+<use f='codebrowser/sequencer.c' l='2123' u='c' c='pick_commits'/>
+<use f='codebrowser/transport-helper.c' l='798' u='c' c='push_update_refs_status'/>
+<use f='codebrowser/transport.c' l='309' u='c' c='transport_update_tracking_ref'/>

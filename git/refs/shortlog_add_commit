@@ -1,0 +1,4 @@
+<dec f='codebrowser/shortlog.h' l='26' type='void shortlog_add_commit(struct shortlog * log, struct commit * commit)'/>
+<use f='codebrowser/builtin/log.c' l='1045' u='c' c='make_cover_letter'/>
+<def f='codebrowser/builtin/shortlog.c' l='143' ll='170' type='void shortlog_add_commit(struct shortlog * log, struct commit * commit)'/>
+<use f='codebrowser/builtin/shortlog.c' l='179' u='c' c='get_from_rev'/>

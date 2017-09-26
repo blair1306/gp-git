@@ -1,0 +1,10 @@
+<dec f='codebrowser/grep.h' l='72' type='regex_t'/>
+<offset>384</offset>
+<use f='codebrowser/grep.c' l='601' u='a' c='compile_fixed_regexp'/>
+<use f='codebrowser/grep.c' l='607' u='a' c='compile_fixed_regexp'/>
+<use f='codebrowser/grep.c' l='608' u='a' c='compile_fixed_regexp'/>
+<use f='codebrowser/grep.c' l='669' u='a' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='672' u='a' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='673' u='a' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='1026' u='a' c='free_grep_patterns'/>
+<use f='codebrowser/grep.c' l='1108' u='a' c='patmatch'/>

@@ -1,0 +1,65 @@
+<dec f='codebrowser/strbuf.h' l='136' type='void strbuf_grow(struct strbuf * , size_t )'/>
+<use f='codebrowser/strbuf.h' l='207' u='c' c='strbuf_addch'/>
+<doc f='codebrowser/strbuf.h' l='129'>/**
+ * Ensure that at least this amount of unused memory is available after
+ * `len`. This is used when you know a typical size for what you will add
+ * and want to avoid repetitive automatic resizing of the underlying buffer.
+ * This is never a needed operation, but can be critical for performance in
+ * some cases.
+ */</doc>
+<use f='codebrowser/apply.c' l='435' u='c' c='read_patch_file'/>
+<use f='codebrowser/apply.c' l='3230' u='c' c='read_blob_object'/>
+<use f='codebrowser/archive-tar.c' l='153' u='c' c='strbuf_append_ext_header'/>
+<use f='codebrowser/archive.c' l='120' u='c' c='write_archive_entry'/>
+<use f='codebrowser/builtin/notes.c' l='216' u='c' c='parse_msg_arg'/>
+<use f='codebrowser/builtin/notes.c' l='612' u='c' c='append_edit'/>
+<use f='codebrowser/cache-tree.c' l='392' u='c' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='454' u='c' c='write_one'/>
+<use f='codebrowser/convert.c' l='324' u='c' c='crlf_to_git'/>
+<use f='codebrowser/convert.c' l='365' u='c' c='crlf_to_worktree'/>
+<use f='codebrowser/convert.c' l='856' u='c' c='ident_to_git'/>
+<use f='codebrowser/convert.c' l='906' u='c' c='ident_to_worktree'/>
+<use f='codebrowser/diff.c' l='1440' u='c' c='pprint_rename'/>
+<use f='codebrowser/fast-import.c' l='1473' u='c' c='mktree'/>
+<use f='codebrowser/http-backend.c' l='526' u='c' c='get_info_packs'/>
+<use f='codebrowser/http.c' l='1504' u='c' c='extract_content_type'/>
+<use f='codebrowser/ident.c' l='245' u='c' c='strbuf_addstr_without_crud'/>
+<use f='codebrowser/path.c' l='987' u='c' c='relative_path'/>
+<use f='codebrowser/pkt-line.c' l='351' u='c' c='read_packetized_to_strbuf'/>
+<use f='codebrowser/pretty.c' l='269' u='c' c='add_rfc822_quoted'/>
+<use f='codebrowser/pretty.c' l='365' u='c' c='add_rfc2047'/>
+<use f='codebrowser/pretty.c' l='865' u='c' c='format_subject'/>
+<use f='codebrowser/pretty.c' l='1562' u='c' c='pp_header'/>
+<use f='codebrowser/pretty.c' l='1573' u='c' c='pp_header'/>
+<use f='codebrowser/pretty.c' l='1578' u='c' c='pp_header'/>
+<use f='codebrowser/pretty.c' l='1597' u='c' c='pp_title_line'/>
+<use f='codebrowser/pretty.c' l='1747' u='c' c='pp_remainder'/>
+<use f='codebrowser/quote.c' l='64' u='c' c='sq_quote_argv'/>
+<use f='codebrowser/refs.c' l='1868' u='c' c='refs_verify_refname_available'/>
+<use f='codebrowser/strbuf.c' l='26' u='c' c='strbuf_init'/>
+<use f='codebrowser/strbuf.c' l='40' u='c' c='strbuf_detach'/>
+<use f='codebrowser/strbuf.c' l='54' u='c' c='strbuf_attach'/>
+<def f='codebrowser/strbuf.c' l='58' ll='69' type='void strbuf_grow(struct strbuf * sb, size_t extra)'/>
+<use f='codebrowser/strbuf.c' l='175' u='c' c='strbuf_splice'/>
+<use f='codebrowser/strbuf.c' l='195' u='c' c='strbuf_add'/>
+<use f='codebrowser/strbuf.c' l='202' u='c' c='strbuf_addbuf'/>
+<use f='codebrowser/strbuf.c' l='209' u='c' c='strbuf_addchars'/>
+<use f='codebrowser/strbuf.c' l='277' u='c' c='strbuf_vaddf'/>
+<use f='codebrowser/strbuf.c' l='284' u='c' c='strbuf_vaddf'/>
+<use f='codebrowser/strbuf.c' l='351' u='c' c='strbuf_fread'/>
+<use f='codebrowser/strbuf.c' l='365' u='c' c='strbuf_read'/>
+<use f='codebrowser/strbuf.c' l='380' u='c' c='strbuf_read'/>
+<use f='codebrowser/strbuf.c' l='391' u='c' c='strbuf_read_once'/>
+<use f='codebrowser/strbuf.c' l='416' u='c' c='strbuf_readlink'/>
+<use f='codebrowser/strbuf.c' l='440' u='c' c='strbuf_getcwd'/>
+<use f='codebrowser/strbuf.c' l='654' u='c' c='strbuf_add_urlencode'/>
+<use f='codebrowser/strbuf.c' l='823' u='c' c='strbuf_addftime'/>
+<use f='codebrowser/strbuf.c' l='837' u='c' c='strbuf_addftime'/>
+<use f='codebrowser/strbuf.c' l='851' u='c' c='strbuf_add_unique_abbrev'/>
+<use f='codebrowser/strbuf.c' l='895' u='c' c='strbuf_stripspace'/>
+<use f='codebrowser/strbuf.c' l='926' u='c' c='strbuf_normalize_path'/>
+<use f='codebrowser/symlinks.c' l='124' u='c' c='lstat_cache_matchlen'/>
+<use f='codebrowser/tmp-objdir.c' l='143' u='c' c='tmp_objdir_create'/>
+<use f='codebrowser/tree-walk.c' l='393' u='c' c='traverse_trees'/>
+<use f='codebrowser/utf8.c' l='365' u='c' c='strbuf_utf8_replace'/>
+<use f='codebrowser/vcs-svn/svndiff.c' l='276' u='c' c='apply_one_window'/>

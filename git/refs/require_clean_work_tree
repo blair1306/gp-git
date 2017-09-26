@@ -1,0 +1,8 @@
+<dec f='codebrowser/wt-status.h' l='136' type='int require_clean_work_tree(const char * action, const char * hint, int ignore_submodules, int gently)'/>
+<use f='codebrowser/builtin/pull.c' l='851' u='c' c='cmd_pull'/>
+<use f='codebrowser/sequencer.c' l='1872' u='c' c='do_exec'/>
+<def f='codebrowser/wt-status.c' l='2298' ll='2332' type='int require_clean_work_tree(const char * action, const char * hint, int ignore_submodules, int gently)'/>
+<doc f='codebrowser/wt-status.c' l='2294'>/**
+ * If the work tree has unstaged or uncommitted changes, dies with the
+ * appropriate message.
+ */</doc>

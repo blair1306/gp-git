@@ -1,0 +1,5 @@
+<dec f='codebrowser/remote.h' l='159' type='int ref_newer(const struct object_id * new_oid, const struct object_id * old_oid)'/>
+<use f='codebrowser/builtin/remote.c' l='416' u='c' c='get_push_ref_states'/>
+<use f='codebrowser/http-push.c' l='1867' u='c' c='cmd_main'/>
+<use f='codebrowser/remote.c' l='1590' u='c' c='set_ref_status_for_push'/>
+<def f='codebrowser/remote.c' l='1944' ll='1981' type='int ref_newer(const struct object_id * new_oid, const struct object_id * old_oid)'/>

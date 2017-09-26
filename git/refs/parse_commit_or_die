@@ -1,0 +1,12 @@
+<dec f='codebrowser/commit.h' l='67' type='void parse_commit_or_die(struct commit * item)'/>
+<use f='codebrowser/builtin/checkout.c' l='836' u='c' c='switch_branches'/>
+<use f='codebrowser/builtin/checkout.c' l='1043' u='c' c='parse_branchname_arg'/>
+<use f='codebrowser/builtin/fast-export.c' l='544' u='c' c='handle_commit'/>
+<use f='codebrowser/builtin/fast-export.c' l='566' u='c' c='handle_commit'/>
+<def f='codebrowser/commit.c' l='401' ll='406' type='void parse_commit_or_die(struct commit * item)'/>
+<use f='codebrowser/log-tree.c' l='800' u='c' c='log_tree_diff'/>
+<use f='codebrowser/log-tree.c' l='825' u='c' c='log_tree_diff'/>
+<use f='codebrowser/log-tree.c' l='840' u='c' c='log_tree_diff'/>
+<use f='codebrowser/ref-filter.c' l='1551' u='c' c='contains_test'/>
+<use f='codebrowser/shallow.c' l='106' u='c' c='get_shallow_commits'/>
+<use f='codebrowser/upload-pack.c' l='673' u='c' c='send_unshallow'/>

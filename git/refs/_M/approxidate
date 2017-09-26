@@ -1,0 +1,15 @@
+<dec f='codebrowser/cache.h' l='1438'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2860' u='c'/>
+<use f='codebrowser/builtin/reflog.c' l='681' u='c'/>
+<use f='codebrowser/builtin/rev-parse.c' l='222' u='c'/>
+<use f='codebrowser/builtin/show-branch.c' l='733' u='c'/>
+<use f='codebrowser/config.c' l='2090' u='c'/>
+<use f='codebrowser/config.c' l='2091' u='c'/>
+<use f='codebrowser/fetch-pack.c' l='399' u='c'/>
+<use f='codebrowser/parse-options-cb.c' l='34' u='c'/>
+<use f='codebrowser/read-cache.c' l='2365' u='c'/>
+<use f='codebrowser/reflog-walk.c' l='141' u='c'/>
+<use f='codebrowser/revision.c' l='1733' u='c'/>
+<use f='codebrowser/revision.c' l='1736' u='c'/>
+<use f='codebrowser/revision.c' l='1742' u='c'/>
+<use f='codebrowser/revision.c' l='1745' u='c'/>

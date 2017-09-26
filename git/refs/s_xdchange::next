@@ -1,0 +1,24 @@
+<dec f='codebrowser/xdiff/xdiffi.h' l='41' type='struct s_xdchange *'/>
+<offset>0</offset>
+<use f='codebrowser/xdiff/xdiffi.c' l='392' u='w' c='xdl_add_change'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='975' u='r' c='xdl_free_script'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='985' u='r' c='xdl_call_hunk_func'/>
+<use f='codebrowser/xdiff/xdiffi.c' l='1001' u='r' c='xdl_mark_ignorable'/>
+<use f='codebrowser/xdiff/xemit.c' l='60' u='r' c='xdl_get_hunk'/>
+<use f='codebrowser/xdiff/xemit.c' l='61' u='r' c='xdl_get_hunk'/>
+<use f='codebrowser/xdiff/xemit.c' l='73' u='r' c='xdl_get_hunk'/>
+<use f='codebrowser/xdiff/xemit.c' l='73' u='r' c='xdl_get_hunk'/>
+<use f='codebrowser/xdiff/xemit.c' l='168' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='237' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='238' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='238' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='242' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xemit.c' l='268' u='r' c='xdl_emit_diff'/>
+<use f='codebrowser/xdiff/xmerge.c' l='375' u='r' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='382' u='r' c='xdl_refine_conflicts'/>
+<use f='codebrowser/xdiff/xmerge.c' l='511' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='526' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='567' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='569' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='585' u='r' c='xdl_do_merge'/>
+<use f='codebrowser/xdiff/xmerge.c' l='601' u='r' c='xdl_do_merge'/>

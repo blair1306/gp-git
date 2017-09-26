@@ -1,0 +1,7 @@
+<dec f='codebrowser/csum-file.h' l='39' type='void crc32_begin(struct sha1file * )'/>
+<use f='codebrowser/builtin/index-pack.c' l='1328' u='c' c='append_obj_to_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='439' u='c' c='write_object'/>
+<use f='codebrowser/bulk-checkin.c' l='217' u='c' c='deflate_to_pack'/>
+<def f='codebrowser/csum-file.c' l='176' ll='180' type='void crc32_begin(struct sha1file * f)'/>
+<use f='codebrowser/fast-import.c' l='1171' u='c' c='store_object'/>
+<use f='codebrowser/fast-import.c' l='1251' u='c' c='stream_blob'/>

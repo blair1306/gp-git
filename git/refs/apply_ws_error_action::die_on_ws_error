@@ -1,0 +1,6 @@
+<dec f='codebrowser/apply.h' l='7' type='2'/>
+<use f='codebrowser/apply.c' l='46' u='r' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='50' u='r' c='parse_whitespace_option'/>
+<use f='codebrowser/apply.c' l='3038' u='r' c='apply_one_fragment'/>
+<use f='codebrowser/apply.c' l='4677' u='r' c='apply_patch'/>
+<use f='codebrowser/apply.c' l='4860' u='r' c='apply_all_patches'/>

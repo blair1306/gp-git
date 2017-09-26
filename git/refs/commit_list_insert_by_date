@@ -1,0 +1,13 @@
+<dec f='codebrowser/commit.h' l='115' type='struct commit_list * commit_list_insert_by_date(struct commit * item, struct commit_list ** list)'/>
+<use f='codebrowser/builtin/describe.c' l='243' u='c' c='finish_depth_computation'/>
+<use f='codebrowser/builtin/describe.c' l='366' u='c' c='describe'/>
+<use f='codebrowser/builtin/describe.c' l='397' u='c' c='describe'/>
+<use f='codebrowser/builtin/show-branch.c' l='227' u='c' c='join_revs'/>
+<use f='codebrowser/builtin/show-branch.c' l='826' u='c' c='cmd_show_branch'/>
+<def f='codebrowser/commit.c' l='460' ll='471' type='struct commit_list * commit_list_insert_by_date(struct commit * item, struct commit_list ** list)'/>
+<use f='codebrowser/commit.c' l='510' u='c' c='pop_most_recent_commit'/>
+<use f='codebrowser/commit.c' l='808' u='c' c='paint_down_to_common'/>
+<use f='codebrowser/commit.c' l='857' u='c' c='merge_bases_many'/>
+<use f='codebrowser/commit.c' l='981' u='c' c='get_merge_bases_many_0'/>
+<use f='codebrowser/revision.c' l='723' u='c' c='commit_list_insert_by_date_cached'/>
+<use f='codebrowser/revision.c' l='725' u='c' c='commit_list_insert_by_date_cached'/>

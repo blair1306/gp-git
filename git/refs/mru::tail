@@ -1,0 +1,8 @@
+<dec f='codebrowser/mru.h' l='38' type='struct mru_entry *'/>
+<offset>64</offset>
+<use f='codebrowser/mru.c' l='8' u='r' c='mru_append'/>
+<use f='codebrowser/mru.c' l='11' u='r' c='mru_append'/>
+<use f='codebrowser/mru.c' l='12' u='r' c='mru_append'/>
+<use f='codebrowser/mru.c' l='15' u='w' c='mru_append'/>
+<use f='codebrowser/mru.c' l='30' u='w' c='mru_mark'/>
+<use f='codebrowser/mru.c' l='49' u='w' c='mru_clear'/>

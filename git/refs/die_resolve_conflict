@@ -1,0 +1,5 @@
+<dec f='codebrowser/advice.h' l='27' type='void die_resolve_conflict(const char * me)'/>
+<def f='codebrowser/advice.c' l='109' ll='113' type='void die_resolve_conflict(const char * me)'/>
+<use f='codebrowser/builtin/commit.c' l='333' u='c' c='refresh_cache_or_die'/>
+<use f='codebrowser/builtin/merge.c' l='1177' u='c' c='cmd_merge'/>
+<use f='codebrowser/builtin/pull.c' l='831' u='c' c='cmd_pull'/>

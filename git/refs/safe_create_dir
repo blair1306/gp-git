@@ -1,0 +1,16 @@
+<dec f='codebrowser/cache.h' l='2032' type='void safe_create_dir(const char * dir, int share)'/>
+<doc f='codebrowser/cache.h' l='2026'>/*
+ * Create a directory and (if share is nonzero) adjust its permissions
+ * according to the shared_repository setting. Only use this for
+ * directories under $GIT_DIR.  Don&apos;t use it for working tree
+ * directories.
+ */</doc>
+<use f='codebrowser/builtin/init-db.c' l='41' u='c' c='copy_templates_1'/>
+<use f='codebrowser/builtin/init-db.c' l='223' u='c' c='create_default_files'/>
+<use f='codebrowser/builtin/init-db.c' l='303' u='c' c='create_object_directory'/>
+<use f='codebrowser/builtin/init-db.c' l='307' u='c' c='create_object_directory'/>
+<use f='codebrowser/builtin/init-db.c' l='311' u='c' c='create_object_directory'/>
+<use f='codebrowser/builtin/init-db.c' l='363' u='c' c='init_db'/>
+<def f='codebrowser/path.c' l='881' ll='891' type='void safe_create_dir(const char * dir, int share)'/>
+<use f='codebrowser/refs/files-backend.c' l='2886' u='c' c='files_init_db'/>
+<use f='codebrowser/refs/files-backend.c' l='2890' u='c' c='files_init_db'/>

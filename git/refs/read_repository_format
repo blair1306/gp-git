@@ -1,0 +1,13 @@
+<dec f='codebrowser/cache.h' l='871' type='int read_repository_format(struct repository_format * format, const char * path)'/>
+<doc f='codebrowser/cache.h' l='865'>/*
+ * Read the repository format characteristics from the config file &quot;path&quot; into
+ * &quot;format&quot; struct. Returns the numeric version. On error, -1 is returned,
+ * format-&gt;version is set to -1, and all other fields in the struct are
+ * undefined.
+ */</doc>
+<use f='codebrowser/builtin/init-db.c' l='126' u='c' c='copy_templates'/>
+<use f='codebrowser/repository.c' l='110' u='c' c='read_and_verify_repository_format'/>
+<use f='codebrowser/setup.c' l='449' u='c' c='check_repository_format_gently'/>
+<def f='codebrowser/setup.c' l='490' ll='498' type='int read_repository_format(struct repository_format * format, const char * path)'/>
+<use f='codebrowser/setup.c' l='1011' u='c' c='discover_git_directory'/>
+<use f='codebrowser/worktree.c' l='362' u='c' c='submodule_uses_worktrees'/>

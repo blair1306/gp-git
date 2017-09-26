@@ -1,0 +1,33 @@
+<dec f='codebrowser/khash.h' l='65' type='const unsigned char **'/>
+<use f='codebrowser/khash.h' l='85' u='r' c='kh_destroy_sha1'/>
+<use f='codebrowser/khash.h' l='104' u='r' c='kh_get_sha1'/>
+<use f='codebrowser/khash.h' l='124' u='w' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='124' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='124' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='134' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='147' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='147' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='151' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='159' u='w' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='159' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='159' u='r' c='kh_resize_sha1'/>
+<use f='codebrowser/khash.h' l='188' u='r' c='kh_put_sha1'/>
+<use f='codebrowser/khash.h' l='200' u='r' c='kh_put_sha1'/>
+<use f='codebrowser/khash.h' l='205' u='r' c='kh_put_sha1'/>
+<dec f='codebrowser/khash.h' l='65' type='const unsigned char **'/>
+<use f='codebrowser/khash.h' l='85' u='r' c='kh_destroy_sha1_pos'/>
+<use f='codebrowser/khash.h' l='104' u='r' c='kh_get_sha1_pos'/>
+<use f='codebrowser/khash.h' l='124' u='w' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='124' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='124' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='134' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='147' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='147' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='151' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='159' u='w' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='159' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='159' u='r' c='kh_resize_sha1_pos'/>
+<use f='codebrowser/khash.h' l='188' u='r' c='kh_put_sha1_pos'/>
+<use f='codebrowser/khash.h' l='200' u='r' c='kh_put_sha1_pos'/>
+<use f='codebrowser/khash.h' l='205' u='r' c='kh_put_sha1_pos'/>
+<offset>192</offset>

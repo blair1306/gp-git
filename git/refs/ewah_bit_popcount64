@@ -1,0 +1,9 @@
+<def f='codebrowser/ewah/ewok.h' l='33' ll='39' type='uint32_t ewah_bit_popcount64(uint64_t x)'/>
+<doc f='codebrowser/ewah/ewok.h' l='27'>/**
+ * Do not use __builtin_popcountll. The GCC implementation
+ * is notoriously slow on all platforms.
+ *
+ * See: http://gcc.gnu.org/bugzilla/show_bug.cgi?id=36041
+ */</doc>
+<use f='codebrowser/ewah/bitmap.c' l='170' u='c' c='bitmap_popcount'/>
+<use f='codebrowser/pack-bitmap.c' l='857' u='c' c='count_object_type'/>

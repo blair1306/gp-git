@@ -1,0 +1,10 @@
+<dec f='codebrowser/mailinfo.h' l='34' type='struct strbuf'/>
+<use f='codebrowser/builtin/am.c' l='1297' u='a' c='parse_mail'/>
+<offset>1920</offset>
+<use f='codebrowser/mailinfo.c' l='787' u='a' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='804' u='a' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='809' u='a' c='handle_commit_msg'/>
+<use f='codebrowser/mailinfo.c' l='1117' u='m' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1117' u='m' c='mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1146' u='a' c='setup_mailinfo'/>
+<use f='codebrowser/mailinfo.c' l='1176' u='a' c='clear_mailinfo'/>

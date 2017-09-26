@@ -1,0 +1,6 @@
+<dec f='codebrowser/worktree.h' l='11' type='int'/>
+<offset>448</offset>
+<use f='codebrowser/builtin/worktree.c' l='390' u='r' c='show_worktree_porcelain'/>
+<use f='codebrowser/builtin/worktree.c' l='409' u='r' c='show_worktree'/>
+<use f='codebrowser/worktree.c' l='63' u='w' c='get_main_worktree'/>
+<use f='codebrowser/worktree.c' l='314' u='r' c='find_shared_symref'/>

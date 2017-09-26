@@ -1,0 +1,6 @@
+<dec f='codebrowser/http.h' l='224' type='int'/>
+<offset>55808</offset>
+<use f='codebrowser/http-walker.c' l='540' u='r' c='fetch_object'/>
+<use f='codebrowser/http.c' l='2140' u='w' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2143' u='r' c='fwrite_sha1_file'/>
+<use f='codebrowser/http.c' l='2302' u='r' c='finish_http_object_request'/>

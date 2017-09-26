@@ -1,0 +1,9 @@
+<dec f='codebrowser/object.h' l='108' type='struct object * lookup_unknown_object(const unsigned char * sha1)'/>
+<doc f='codebrowser/object.h' l='107'>/** Returns the object, with potentially excess memory allocated. **/</doc>
+<use f='codebrowser/builtin/fsck.c' l='617' u='c' c='mark_object_for_connectivity'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2611' u='c' c='add_objects_in_unpacked_packs'/>
+<use f='codebrowser/http-push.c' l='1426' u='c' c='one_remote_ref'/>
+<def f='codebrowser/object.c' l='174' ll='180' type='struct object * lookup_unknown_object(const unsigned char * sha1)'/>
+<use f='codebrowser/refs.c' l='258' u='c' c='peel_object'/>
+<use f='codebrowser/upload-pack.c' l='898' u='c' c='mark_our_ref'/>
+<use f='codebrowser/walker.c' l='286' u='c' c='walker_fetch'/>

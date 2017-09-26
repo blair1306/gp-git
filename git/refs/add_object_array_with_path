@@ -1,0 +1,5 @@
+<dec f='codebrowser/object.h' l='117' type='void add_object_array_with_path(struct object * obj, const char * name, struct object_array * array, unsigned int mode, const char * path)'/>
+<use f='codebrowser/builtin/grep.c' l='996' u='c' c='cmd_grep'/>
+<def f='codebrowser/object.c' l='308' ll='338' type='void add_object_array_with_path(struct object * obj, const char * name, struct object_array * array, unsigned int mode, const char * path)'/>
+<use f='codebrowser/object.c' l='342' u='c' c='add_object_array'/>
+<use f='codebrowser/revision.c' l='160' u='c' c='add_pending_object_with_path'/>

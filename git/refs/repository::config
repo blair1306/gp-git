@@ -1,0 +1,31 @@
+<dec f='codebrowser/repository.h' l='59' type='struct config_set *'/>
+<offset>448</offset>
+<doc f='codebrowser/repository.h' l='54'>/*
+	 * Repository&apos;s config which contains key-value pairs from the usual
+	 * set of config files (i.e. repo specific .git/config, user wide
+	 * ~/.gitconfig, XDG config file and the global /etc/gitconfig)
+	 */</doc>
+<use f='codebrowser/config.c' l='1886' u='r' c='repo_read_config'/>
+<use f='codebrowser/config.c' l='1887' u='w' c='repo_read_config'/>
+<use f='codebrowser/config.c' l='1889' u='r' c='repo_read_config'/>
+<use f='codebrowser/config.c' l='1891' u='r' c='repo_read_config'/>
+<use f='codebrowser/config.c' l='1893' u='r' c='repo_read_config'/>
+<use f='codebrowser/config.c' l='1910' u='r' c='git_config_check_init'/>
+<use f='codebrowser/config.c' l='1910' u='r' c='git_config_check_init'/>
+<use f='codebrowser/config.c' l='1917' u='r' c='repo_config_clear'/>
+<use f='codebrowser/config.c' l='1917' u='r' c='repo_config_clear'/>
+<use f='codebrowser/config.c' l='1919' u='r' c='repo_config_clear'/>
+<use f='codebrowser/config.c' l='1925' u='r' c='repo_config'/>
+<use f='codebrowser/config.c' l='1932' u='r' c='repo_config_get_value'/>
+<use f='codebrowser/config.c' l='1939' u='r' c='repo_config_get_value_multi'/>
+<use f='codebrowser/config.c' l='1947' u='r' c='repo_config_get_string_const'/>
+<use f='codebrowser/config.c' l='1964' u='r' c='repo_config_get_int'/>
+<use f='codebrowser/config.c' l='1971' u='r' c='repo_config_get_ulong'/>
+<use f='codebrowser/config.c' l='1978' u='r' c='repo_config_get_bool'/>
+<use f='codebrowser/config.c' l='1985' u='r' c='repo_config_get_bool_or_int'/>
+<use f='codebrowser/config.c' l='1992' u='r' c='repo_config_get_maybe_bool'/>
+<use f='codebrowser/config.c' l='2000' u='r' c='repo_config_get_pathname'/>
+<use f='codebrowser/repository.c' l='218' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='219' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='220' u='r' c='repo_clear'/>
+<use f='codebrowser/repository.c' l='221' u='w' c='repo_clear'/>

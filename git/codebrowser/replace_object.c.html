@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>replace_object.c source code [codebrowser/replace_object.c] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="replace_object "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/replace_object.c'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='replace_object.c.html'>replace_object.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="cache.h.html">"cache.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="sha1-lookup.h.html">"sha1-lookup.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="refs.h.html">"refs.h"</a></u></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="commit.h.html">"commit.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/*</i></td></tr>
+<tr><th id="7">7</th><td><i> * An array of replacements.  The array is kept sorted by the original</i></td></tr>
+<tr><th id="8">8</th><td><i> * sha1.</i></td></tr>
+<tr><th id="9">9</th><td><i> */</i></td></tr>
+<tr><th id="10">10</th><td><em>static</em> <b>struct</b> <dfn class="type def" id="replace_object" title='replace_object' data-ref="replace_object"><a class="type" href="#replace_object" title='replace_object' data-ref="replace_object">replace_object</a></dfn> {</td></tr>
+<tr><th id="11">11</th><td>	<em>unsigned</em> <em>char</em> <dfn class="tu decl" id="replace_object::original" title='replace_object::original' data-type='unsigned char [20]' data-ref="replace_object::original">original</dfn>[<var>20</var>];</td></tr>
+<tr><th id="12">12</th><td>	<em>unsigned</em> <em>char</em> <dfn class="tu decl" id="replace_object::replacement" title='replace_object::replacement' data-type='unsigned char [20]' data-ref="replace_object::replacement">replacement</dfn>[<var>20</var>];</td></tr>
+<tr><th id="13">13</th><td>} **<dfn class="tu decl def" id="replace_object" title='replace_object' data-type='struct replace_object **' data-ref="replace_object">replace_object</dfn>;</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="replace_object_alloc" title='replace_object_alloc' data-type='int' data-ref="replace_object_alloc">replace_object_alloc</dfn>, <dfn class="tu decl def" id="replace_object_nr" title='replace_object_nr' data-type='int' data-ref="replace_object_nr">replace_object_nr</dfn>;</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><em>static</em> <em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="tu decl def" id="replace_sha1_access" title='replace_sha1_access' data-type='const unsigned char * replace_sha1_access(size_t index, void * table)' data-ref="replace_sha1_access">replace_sha1_access</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="1index" title='index' data-type='size_t' data-ref="1index">index</dfn>, <em>void</em> *<dfn class="local col2 decl" id="2table" title='table' data-type='void *' data-ref="2table">table</dfn>)</td></tr>
+<tr><th id="18">18</th><td>{</td></tr>
+<tr><th id="19">19</th><td>	<b>struct</b> <a class="type" href="#replace_object" title='replace_object' data-ref="replace_object">replace_object</a> **<dfn class="local col3 decl" id="3replace" title='replace' data-type='struct replace_object **' data-ref="3replace">replace</dfn> = <a class="local col2 ref" href="#2table" title='table' data-ref="2table">table</a>;</td></tr>
+<tr><th id="20">20</th><td>	<b>return</b> <a class="local col3 ref" href="#3replace" title='replace' data-ref="3replace">replace</a>[<a class="local col1 ref" href="#1index" title='index' data-ref="1index">index</a>]-&gt;<a class="tu ref" href="#replace_object::original" title='replace_object::original' data-use='r' data-ref="replace_object::original">original</a>;</td></tr>
+<tr><th id="21">21</th><td>}</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="replace_object_pos" title='replace_object_pos' data-type='int replace_object_pos(const unsigned char * sha1)' data-ref="replace_object_pos">replace_object_pos</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="4sha1" title='sha1' data-type='const unsigned char *' data-ref="4sha1">sha1</dfn>)</td></tr>
+<tr><th id="24">24</th><td>{</td></tr>
+<tr><th id="25">25</th><td>	<b>return</b> <a class="ref" href="sha1-lookup.h.html#sha1_pos" title='sha1_pos' data-ref="sha1_pos">sha1_pos</a>(<a class="local col4 ref" href="#4sha1" title='sha1' data-ref="4sha1">sha1</a>, <a class="tu ref" href="#replace_object" title='replace_object' data-use='r' data-ref="replace_object">replace_object</a>, <a class="tu ref" href="#replace_object_nr" title='replace_object_nr' data-use='r' data-ref="replace_object_nr">replace_object_nr</a>,</td></tr>
+<tr><th id="26">26</th><td>			<a class="tu ref" href="#replace_sha1_access" title='replace_sha1_access' data-use='r' data-ref="replace_sha1_access">replace_sha1_access</a>);</td></tr>
+<tr><th id="27">27</th><td>}</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="register_replace_object" title='register_replace_object' data-type='int register_replace_object(struct replace_object * replace, int ignore_dups)' data-ref="register_replace_object">register_replace_object</dfn>(<b>struct</b> <a class="type" href="#replace_object" title='replace_object' data-ref="replace_object">replace_object</a> *<dfn class="local col5 decl" id="5replace" title='replace' data-type='struct replace_object *' data-ref="5replace">replace</dfn>,</td></tr>
+<tr><th id="30">30</th><td>				   <em>int</em> <dfn class="local col6 decl" id="6ignore_dups" title='ignore_dups' data-type='int' data-ref="6ignore_dups">ignore_dups</dfn>)</td></tr>
+<tr><th id="31">31</th><td>{</td></tr>
+<tr><th id="32">32</th><td>	<em>int</em> <dfn class="local col7 decl" id="7pos" title='pos' data-type='int' data-ref="7pos">pos</dfn> = <a class="tu ref" href="#replace_object_pos" title='replace_object_pos' data-use='c' data-ref="replace_object_pos">replace_object_pos</a>(<a class="local col5 ref" href="#5replace" title='replace' data-ref="5replace">replace</a>-&gt;<a class="tu ref" href="#replace_object::original" title='replace_object::original' data-use='r' data-ref="replace_object::original">original</a>);</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>	<b>if</b> (<var>0</var> &lt;= <a class="local col7 ref" href="#7pos" title='pos' data-ref="7pos">pos</a>) {</td></tr>
+<tr><th id="35">35</th><td>		<b>if</b> (<a class="local col6 ref" href="#6ignore_dups" title='ignore_dups' data-ref="6ignore_dups">ignore_dups</a>)</td></tr>
+<tr><th id="36">36</th><td>			<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col5 ref" href="#5replace" title='replace' data-ref="5replace">replace</a>);</td></tr>
+<tr><th id="37">37</th><td>		<b>else</b> {</td></tr>
+<tr><th id="38">38</th><td>			<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="tu ref" href="#replace_object" title='replace_object' data-use='r' data-ref="replace_object">replace_object</a>[<a class="local col7 ref" href="#7pos" title='pos' data-ref="7pos">pos</a>]);</td></tr>
+<tr><th id="39">39</th><td>			<a class="tu ref" href="#replace_object" title='replace_object' data-use='r' data-ref="replace_object">replace_object</a>[<a class="local col7 ref" href="#7pos" title='pos' data-ref="7pos">pos</a>] = <a class="local col5 ref" href="#5replace" title='replace' data-ref="5replace">replace</a>;</td></tr>
+<tr><th id="40">40</th><td>		}</td></tr>
+<tr><th id="41">41</th><td>		<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="42">42</th><td>	}</td></tr>
+<tr><th id="43">43</th><td>	<a class="local col7 ref" href="#7pos" title='pos' data-ref="7pos">pos</a> = -<a class="local col7 ref" href="#7pos" title='pos' data-ref="7pos">pos</a> - <var>1</var>;</td></tr>
+<tr><th id="44">44</th><td>	<a class="macro" href="cache.h.html#583" title="do { if ((replace_object_nr + 1) &gt; replace_object_alloc) { if ((((replace_object_alloc)+16)*3/2) &lt; (replace_object_nr + 1)) replace_object_alloc = (replace_object_nr + 1); else replace_object_alloc = (((replace_object_alloc)+16)*3/2); (replace_object) = xrealloc((replace_object), st_mult(sizeof(*(replace_object)), (replace_object_alloc))); } } while (0)" data-ref="_M/ALLOC_GROW">ALLOC_GROW</a>(<a class="tu ref" href="#replace_object" title='replace_object' data-use='w' data-ref="replace_object"><a class="tu ref" href="#replace_object" title='replace_object' data-use='r' data-ref="replace_object"><a class="tu ref" href="#replace_object" title='replace_object' data-use='r' data-ref="replace_object">replace_object</a></a></a>, <a class="tu ref" href="#replace_object_nr" title='replace_object_nr' data-use='r' data-ref="replace_object_nr">replace_object_nr</a> + <var>1</var>, <a class="tu ref" href="#replace_object_alloc" title='replace_object_alloc' data-use='r' data-ref="replace_object_alloc"><a class="tu ref" href="#replace_object_alloc" title='replace_object_alloc' data-use='w' data-ref="replace_object_alloc"><a class="tu ref" href="#replace_object_alloc" title='replace_object_alloc' data-use='w' data-ref="replace_object_alloc">replace_object_alloc</a></a></a>);</td></tr>
+<tr><th id="45">45</th><td>	<a class="tu ref" href="#replace_object_nr" title='replace_object_nr' data-use='w' data-ref="replace_object_nr">replace_object_nr</a>++;</td></tr>
+<tr><th id="46">46</th><td>	<b>if</b> (<a class="local col7 ref" href="#7pos" title='pos' data-ref="7pos">pos</a> &lt; <a class="tu ref" href="#replace_object_nr" title='replace_object_nr' data-use='r' data-ref="replace_object_nr">replace_object_nr</a>)</td></tr>
+<tr><th id="47">47</th><td>		<a class="ref" href="../include/string.h.html#memmove" title='memmove' data-ref="memmove">memmove</a>(<a class="tu ref" href="#replace_object" title='replace_object' data-use='r' data-ref="replace_object">replace_object</a> + <a class="local col7 ref" href="#7pos" title='pos' data-ref="7pos">pos</a> + <var>1</var>,</td></tr>
+<tr><th id="48">48</th><td>			<a class="tu ref" href="#replace_object" title='replace_object' data-use='r' data-ref="replace_object">replace_object</a> + <a class="local col7 ref" href="#7pos" title='pos' data-ref="7pos">pos</a>,</td></tr>
+<tr><th id="49">49</th><td>			(<a class="tu ref" href="#replace_object_nr" title='replace_object_nr' data-use='r' data-ref="replace_object_nr">replace_object_nr</a> - <a class="local col7 ref" href="#7pos" title='pos' data-ref="7pos">pos</a> - <var>1</var>) *</td></tr>
+<tr><th id="50">50</th><td>			<b>sizeof</b>(*<a class="tu ref" href="#replace_object" title='replace_object' data-use='r' data-ref="replace_object">replace_object</a>));</td></tr>
+<tr><th id="51">51</th><td>	<a class="tu ref" href="#replace_object" title='replace_object' data-use='r' data-ref="replace_object">replace_object</a>[<a class="local col7 ref" href="#7pos" title='pos' data-ref="7pos">pos</a>] = <a class="local col5 ref" href="#5replace" title='replace' data-ref="5replace">replace</a>;</td></tr>
+<tr><th id="52">52</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="53">53</th><td>}</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><em>static</em> <em>int</em> <dfn class="tu decl def" id="register_replace_ref" title='register_replace_ref' data-type='int register_replace_ref(const char * refname, const struct object_id * oid, int flag, void * cb_data)' data-ref="register_replace_ref">register_replace_ref</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="8refname" title='refname' data-type='const char *' data-ref="8refname">refname</dfn>,</td></tr>
+<tr><th id="56">56</th><td>				<em>const</em> <b>struct</b> <a class="type" href="cache.h.html#object_id" title='object_id' data-ref="object_id">object_id</a> *<dfn class="local col9 decl" id="9oid" title='oid' data-type='const struct object_id *' data-ref="9oid">oid</dfn>,</td></tr>
+<tr><th id="57">57</th><td>				<em>int</em> <dfn class="local col0 decl" id="10flag" title='flag' data-type='int' data-ref="10flag">flag</dfn>, <em>void</em> *<dfn class="local col1 decl" id="11cb_data" title='cb_data' data-type='void *' data-ref="11cb_data">cb_data</dfn>)</td></tr>
+<tr><th id="58">58</th><td>{</td></tr>
+<tr><th id="59">59</th><td>	<i>/* Get sha1 from refname */</i></td></tr>
+<tr><th id="60">60</th><td>	<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="12slash" title='slash' data-type='const char *' data-ref="12slash">slash</dfn> = <a class="ref" href="../include/string.h.html#strrchr" title='strrchr' data-ref="strrchr">strrchr</a>(<a class="local col8 ref" href="#8refname" title='refname' data-ref="8refname">refname</a>, <kbd>'/'</kbd>);</td></tr>
+<tr><th id="61">61</th><td>	<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="13hash" title='hash' data-type='const char *' data-ref="13hash">hash</dfn> = <a class="local col2 ref" href="#12slash" title='slash' data-ref="12slash">slash</a> ? <a class="local col2 ref" href="#12slash" title='slash' data-ref="12slash">slash</a> + <var>1</var> : <a class="local col8 ref" href="#8refname" title='refname' data-ref="8refname">refname</a>;</td></tr>
+<tr><th id="62">62</th><td>	<b>struct</b> <a class="type" href="#replace_object" title='replace_object' data-ref="replace_object">replace_object</a> *<dfn class="local col4 decl" id="14repl_obj" title='repl_obj' data-type='struct replace_object *' data-ref="14repl_obj">repl_obj</dfn> = <a class="ref" href="git-compat-util.h.html#xmalloc" title='xmalloc' data-ref="xmalloc">xmalloc</a>(<b>sizeof</b>(*<a class="local col4 ref" href="#14repl_obj" title='repl_obj' data-ref="14repl_obj">repl_obj</a>));</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>	<b>if</b> (<a class="ref" href="../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col3 ref" href="#13hash" title='hash' data-ref="13hash">hash</a>) != <var>40</var> || <a class="ref" href="cache.h.html#get_sha1_hex" title='get_sha1_hex' data-ref="get_sha1_hex">get_sha1_hex</a>(<a class="local col3 ref" href="#13hash" title='hash' data-ref="13hash">hash</a>, <a class="local col4 ref" href="#14repl_obj" title='repl_obj' data-ref="14repl_obj">repl_obj</a>-&gt;<a class="tu ref" href="#replace_object::original" title='replace_object::original' data-use='r' data-ref="replace_object::original">original</a>)) {</td></tr>
+<tr><th id="65">65</th><td>		<a class="ref" href="../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col4 ref" href="#14repl_obj" title='repl_obj' data-ref="14repl_obj">repl_obj</a>);</td></tr>
+<tr><th id="66">66</th><td>		<a class="ref" href="git-compat-util.h.html#warning" title='warning' data-ref="warning">warning</a>(<q>"bad replace ref name: %s"</q>, <a class="local col8 ref" href="#8refname" title='refname' data-ref="8refname">refname</a>);</td></tr>
+<tr><th id="67">67</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="68">68</th><td>	}</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>	<i>/* Copy sha1 from the read ref */</i></td></tr>
+<tr><th id="71">71</th><td>	<a class="ref" href="cache.h.html#hashcpy" title='hashcpy' data-ref="hashcpy">hashcpy</a>(<a class="local col4 ref" href="#14repl_obj" title='repl_obj' data-ref="14repl_obj">repl_obj</a>-&gt;<a class="tu ref" href="#replace_object::replacement" title='replace_object::replacement' data-use='r' data-ref="replace_object::replacement">replacement</a>, <a class="local col9 ref" href="#9oid" title='oid' data-ref="9oid">oid</a>-&gt;<a class="ref" href="cache.h.html#object_id::hash" title='object_id::hash' data-ref="object_id::hash">hash</a>);</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>	<i>/* Register new object */</i></td></tr>
+<tr><th id="74">74</th><td>	<b>if</b> (<a class="tu ref" href="#register_replace_object" title='register_replace_object' data-use='c' data-ref="register_replace_object">register_replace_object</a>(<a class="local col4 ref" href="#14repl_obj" title='repl_obj' data-ref="14repl_obj">repl_obj</a>, <var>1</var>))</td></tr>
+<tr><th id="75">75</th><td>		<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"duplicate replace ref: %s"</q>, <a class="local col8 ref" href="#8refname" title='refname' data-ref="8refname">refname</a>);</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>	<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="78">78</th><td>}</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="prepare_replace_object" title='prepare_replace_object' data-type='void prepare_replace_object()' data-ref="prepare_replace_object">prepare_replace_object</dfn>(<em>void</em>)</td></tr>
+<tr><th id="81">81</th><td>{</td></tr>
+<tr><th id="82">82</th><td>	<em>static</em> <em>int</em> <dfn class="local col5 decl" id="15replace_object_prepared" title='replace_object_prepared' data-type='int' data-ref="15replace_object_prepared">replace_object_prepared</dfn>;</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>	<b>if</b> (<a class="local col5 ref" href="#15replace_object_prepared" title='replace_object_prepared' data-ref="15replace_object_prepared">replace_object_prepared</a>)</td></tr>
+<tr><th id="85">85</th><td>		<b>return</b>;</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>	<a class="ref" href="refs.h.html#for_each_replace_ref" title='for_each_replace_ref' data-ref="for_each_replace_ref">for_each_replace_ref</a>(<a class="tu ref" href="#register_replace_ref" title='register_replace_ref' data-use='r' data-ref="register_replace_ref">register_replace_ref</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="88">88</th><td>	<a class="local col5 ref" href="#15replace_object_prepared" title='replace_object_prepared' data-ref="15replace_object_prepared">replace_object_prepared</a> = <var>1</var>;</td></tr>
+<tr><th id="89">89</th><td>	<b>if</b> (!<a class="tu ref" href="#replace_object_nr" title='replace_object_nr' data-use='r' data-ref="replace_object_nr">replace_object_nr</a>)</td></tr>
+<tr><th id="90">90</th><td>		<a class="ref" href="cache.h.html#check_replace_refs" title='check_replace_refs' data-ref="check_replace_refs">check_replace_refs</a> = <var>0</var>;</td></tr>
+<tr><th id="91">91</th><td>}</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><i>/* We allow "recursive" replacement. Only within reason, though */</i></td></tr>
+<tr><th id="94">94</th><td><u>#define <dfn class="macro" id="_M/MAXREPLACEDEPTH" data-ref="_M/MAXREPLACEDEPTH">MAXREPLACEDEPTH</dfn> 5</u></td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><i>/*</i></td></tr>
+<tr><th id="97">97</th><td><i> * If a replacement for object sha1 has been set up, return the</i></td></tr>
+<tr><th id="98">98</th><td><i> * replacement object's name (replaced recursively, if necessary).</i></td></tr>
+<tr><th id="99">99</th><td><i> * The return value is either sha1 or a pointer to a</i></td></tr>
+<tr><th id="100">100</th><td><i> * permanently-allocated value.  This function always respects replace</i></td></tr>
+<tr><th id="101">101</th><td><i> * references, regardless of the value of check_replace_refs.</i></td></tr>
+<tr><th id="102">102</th><td><i> */</i></td></tr>
+<tr><th id="103">103</th><td><em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="decl def" id="do_lookup_replace_object" title='do_lookup_replace_object' data-ref="do_lookup_replace_object">do_lookup_replace_object</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col6 decl" id="16sha1" title='sha1' data-type='const unsigned char *' data-ref="16sha1">sha1</dfn>)</td></tr>
+<tr><th id="104">104</th><td>{</td></tr>
+<tr><th id="105">105</th><td>	<em>int</em> <dfn class="local col7 decl" id="17pos" title='pos' data-type='int' data-ref="17pos">pos</dfn>, <dfn class="local col8 decl" id="18depth" title='depth' data-type='int' data-ref="18depth">depth</dfn> = <a class="macro" href="#94" title="5" data-ref="_M/MAXREPLACEDEPTH">MAXREPLACEDEPTH</a>;</td></tr>
+<tr><th id="106">106</th><td>	<em>const</em> <em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="19cur" title='cur' data-type='const unsigned char *' data-ref="19cur">cur</dfn> = <a class="local col6 ref" href="#16sha1" title='sha1' data-ref="16sha1">sha1</a>;</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td>	<a class="tu ref" href="#prepare_replace_object" title='prepare_replace_object' data-use='c' data-ref="prepare_replace_object">prepare_replace_object</a>();</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>	<i>/* Try to recursively replace the object */</i></td></tr>
+<tr><th id="111">111</th><td>	<b>do</b> {</td></tr>
+<tr><th id="112">112</th><td>		<b>if</b> (--<a class="local col8 ref" href="#18depth" title='depth' data-ref="18depth">depth</a> &lt; <var>0</var>)</td></tr>
+<tr><th id="113">113</th><td>			<a class="ref" href="git-compat-util.h.html#die" title='die' data-ref="die">die</a>(<q>"replace depth too high for object %s"</q>,</td></tr>
+<tr><th id="114">114</th><td>			    <a class="ref" href="cache.h.html#sha1_to_hex" title='sha1_to_hex' data-ref="sha1_to_hex">sha1_to_hex</a>(<a class="local col6 ref" href="#16sha1" title='sha1' data-ref="16sha1">sha1</a>));</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td>		<a class="local col7 ref" href="#17pos" title='pos' data-ref="17pos">pos</a> = <a class="tu ref" href="#replace_object_pos" title='replace_object_pos' data-use='c' data-ref="replace_object_pos">replace_object_pos</a>(<a class="local col9 ref" href="#19cur" title='cur' data-ref="19cur">cur</a>);</td></tr>
+<tr><th id="117">117</th><td>		<b>if</b> (<var>0</var> &lt;= <a class="local col7 ref" href="#17pos" title='pos' data-ref="17pos">pos</a>)</td></tr>
+<tr><th id="118">118</th><td>			<a class="local col9 ref" href="#19cur" title='cur' data-ref="19cur">cur</a> = <a class="tu ref" href="#replace_object" title='replace_object' data-use='r' data-ref="replace_object">replace_object</a>[<a class="local col7 ref" href="#17pos" title='pos' data-ref="17pos">pos</a>]-&gt;<a class="tu ref" href="#replace_object::replacement" title='replace_object::replacement' data-use='r' data-ref="replace_object::replacement">replacement</a>;</td></tr>
+<tr><th id="119">119</th><td>	} <b>while</b> (<var>0</var> &lt;= <a class="local col7 ref" href="#17pos" title='pos' data-ref="17pos">pos</a>);</td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td>	<b>return</b> <a class="local col9 ref" href="#19cur" title='cur' data-ref="19cur">cur</a>;</td></tr>
+<tr><th id="122">122</th><td>}</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/grep.h' l='87' type='unsigned int'/>
+<offset>1666</offset>
+<use f='codebrowser/grep.c' l='619' u='w' c='compile_regexp'/>
+<use f='codebrowser/grep.c' l='1173' u='r' c='match_one_pattern'/>

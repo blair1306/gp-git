@@ -1,0 +1,21 @@
+<dec f='codebrowser/iterator.h' l='17'/>
+<use f='codebrowser/iterator.h' l='32' u='c'/>
+<use f='codebrowser/dir-iterator.c' l='182' u='c'/>
+<doc f='codebrowser/iterator.h' l='14'>/*
+ * The iterator is exhausted and has been freed.
+ */</doc>
+<use f='codebrowser/refs.c' l='1918' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='724' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='743' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='1130' u='c'/>
+<use f='codebrowser/refs/files-backend.c' l='2043' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='61' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='187' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='190' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='194' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='318' u='c'/>
+<use f='codebrowser/refs/iterator.c' l='336' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='437' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='456' u='c'/>
+<use f='codebrowser/refs/packed-backend.c' l='666' u='c'/>
+<use f='codebrowser/refs/ref-cache.c' l='547' u='c'/>

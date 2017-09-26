@@ -1,0 +1,5 @@
+<dec f='codebrowser/tempfile.h' l='193' type='int xmks_tempfile_m(struct tempfile * tempfile, const char * template, int mode)'/>
+<use f='codebrowser/tempfile.h' l='200' u='c' c='xmks_tempfile'/>
+<doc f='codebrowser/tempfile.h' l='192'>/* See &quot;mks_tempfile functions&quot; above. */</doc>
+<def f='codebrowser/tempfile.c' l='191' ll='204' type='int xmks_tempfile_m(struct tempfile * tempfile, const char * template, int mode)'/>
+<use f='codebrowser/trailer.c' l='962' u='c' c='create_in_place_tempfile'/>

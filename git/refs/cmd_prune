@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='199' type='int cmd_prune(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/prune.c' l='100' ll='158' type='int cmd_prune(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='440'/>
+<use f='codebrowser/git.c' l='440'/>
+<use f='codebrowser/git.c' l='440'/>
+<use f='codebrowser/git.c' l='440'/>

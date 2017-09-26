@@ -1,0 +1,4 @@
+<dec f='codebrowser/string-list.h' l='56' type='int string_list_find_insert_index(const struct string_list * list, const char * string, int negative_existing_index)'/>
+<use f='codebrowser/mailmap.c' l='271' u='c' c='lookup_prefix'/>
+<use f='codebrowser/refs.c' l='1219' u='c' c='find_descendant_ref'/>
+<def f='codebrowser/string-list.c' l='90' ll='98' type='int string_list_find_insert_index(const struct string_list * list, const char * string, int negative_existing_index)'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/strbuf.h' l='524' ll='528' type='struct strbuf ** strbuf_split(const struct strbuf * sb, int terminator)'/>
+<use f='codebrowser/builtin/notes.c' l='300' u='c' c='notes_copy_from_stdin'/>
+<use f='codebrowser/environment.c' l='135' u='c' c='expand_namespace'/>
+<use f='codebrowser/mailinfo.c' l='1001' u='c' c='handle_body'/>

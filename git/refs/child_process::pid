@@ -1,0 +1,15 @@
+<dec f='codebrowser/run-command.h' l='14' type='pid_t'/>
+<offset>320</offset>
+<use f='codebrowser/daemon.c' l='805' u='r' c='kill_some_child'/>
+<use f='codebrowser/daemon.c' l='817' u='r' c='check_dead_children'/>
+<use f='codebrowser/run-command.c' l='661' u='w' c='start_command'/>
+<use f='codebrowser/run-command.c' l='663' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='746' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='749' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='764' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='767' u='w' c='start_command'/>
+<use f='codebrowser/run-command.c' l='829' u='r' c='start_command'/>
+<use f='codebrowser/run-command.c' l='867' u='r' c='finish_command'/>
+<use f='codebrowser/run-command.c' l='874' u='r' c='finish_command_in_signal'/>
+<use f='codebrowser/run-command.c' l='1426' u='r' c='kill_children'/>
+<use f='codebrowser/sub-process.c' l='58' u='r' c='subprocess_stop'/>

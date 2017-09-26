@@ -1,0 +1,4 @@
+<dec f='codebrowser/cache.h' l='818' type='0'/>
+<use f='codebrowser/branch.c' l='40' c='should_setup_rebase'/>
+<use f='codebrowser/config.c' l='1280' u='r' c='git_default_branch_config'/>
+<use f='codebrowser/environment.c' l='55'/>

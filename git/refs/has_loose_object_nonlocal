@@ -1,0 +1,8 @@
+<dec f='codebrowser/cache.h' l='1246' type='int has_loose_object_nonlocal(const unsigned char * sha1)'/>
+<doc f='codebrowser/cache.h' l='1241'>/*
+ * Return true iff an alternate object database has a loose object
+ * with the specified name.  This function does not respect replace
+ * references.
+ */</doc>
+<use f='codebrowser/builtin/pack-objects.c' l='1000' u='c' c='want_object_in_pack'/>
+<def f='codebrowser/sha1_file.c' l='698' ll='701' type='int has_loose_object_nonlocal(const unsigned char * sha1)'/>

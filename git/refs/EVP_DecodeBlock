@@ -1,0 +1,2 @@
+<dec f='include/openssl/evp.h' l='688' type='int EVP_DecodeBlock(unsigned char * t, const unsigned char * f, int n)'/>
+<use f='codebrowser/imap-send.c' l='878' u='c' c='cram'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/commit.h' l='252' type='struct commit_graft * lookup_commit_graft(const struct object_id * oid)'/>
+<def f='codebrowser/commit.c' l='202' ll='210' type='struct commit_graft * lookup_commit_graft(const struct object_id * oid)'/>
+<use f='codebrowser/commit.c' l='337' u='c' c='parse_commit_buffer'/>
+<use f='codebrowser/fsck.c' l='739' u='c' c='fsck_commit_buffer'/>
+<use f='codebrowser/shallow.c' l='110' u='c' c='get_shallow_commits'/>
+<use f='codebrowser/shallow.c' l='401' u='c' c='prepare_shallow_info'/>

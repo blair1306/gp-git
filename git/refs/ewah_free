@@ -1,0 +1,16 @@
+<dec f='codebrowser/ewah/ewok.h' l='85' type='void ewah_free(struct ewah_bitmap * self)'/>
+<doc f='codebrowser/ewah/ewok.h' l='82'>/**
+ * Free all the memory of the bitmap
+ */</doc>
+<use f='codebrowser/dir.c' l='2525' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2526' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2527' u='c' c='write_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2753' u='c' c='read_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2754' u='c' c='read_untracked_extension'/>
+<use f='codebrowser/dir.c' l='2755' u='c' c='read_untracked_extension'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='300' ll='309' type='void ewah_free(struct ewah_bitmap * self)'/>
+<use f='codebrowser/ewah/ewah_bitmap.c' l='692' u='c' c='ewah_pool_free'/>
+<use f='codebrowser/split-index.c' l='168' u='c' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='169' u='c' c='merge_base_index'/>
+<use f='codebrowser/split-index.c' l='268' u='c' c='finish_writing_split_index'/>
+<use f='codebrowser/split-index.c' l='269' u='c' c='finish_writing_split_index'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/path.h' l='41' type='void strbuf_repo_git_path(struct strbuf * sb, const struct repository * repo, const char * fmt)'/>
+<def f='codebrowser/path.c' l='430' ll='438' type='void strbuf_repo_git_path(struct strbuf * sb, const struct repository * repo, const char * fmt)'/>
+<use f='codebrowser/repository.c' l='181' u='c' c='repo_submodule_init'/>

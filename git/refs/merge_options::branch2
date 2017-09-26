@@ -1,0 +1,26 @@
+<dec f='codebrowser/merge-recursive.h' l='9' type='const char *'/>
+<use f='codebrowser/builtin/am.c' l='1618' u='w' c='fall_back_threeway'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/checkout.c' l='574' u='w' c='merge_working_tree'/>
+<use f='codebrowser/builtin/merge-recursive.c' l='66' u='w' c='cmd_merge_recursive'/>
+<use f='codebrowser/builtin/merge-recursive.c' l='70' u='r' c='cmd_merge_recursive'/>
+<use f='codebrowser/builtin/merge-recursive.c' l='71' u='r' c='cmd_merge_recursive'/>
+<use f='codebrowser/builtin/merge-recursive.c' l='74' u='w' c='cmd_merge_recursive'/>
+<use f='codebrowser/builtin/merge-recursive.c' l='74' u='r' c='cmd_merge_recursive'/>
+<use f='codebrowser/builtin/merge-recursive.c' l='77' u='r' c='cmd_merge_recursive'/>
+<use f='codebrowser/builtin/merge.c' l='676' u='w' c='try_merge_strategy'/>
+<use f='codebrowser/merge-recursive.c' l='1304' u='r' c='conflict_rename_rename_2to1'/>
+<use f='codebrowser/merge-recursive.c' l='1307' u='r' c='conflict_rename_rename_2to1'/>
+<use f='codebrowser/merge-recursive.c' l='1385' u='r' c='process_renames'/>
+<use f='codebrowser/merge-recursive.c' l='1389' u='r' c='process_renames'/>
+<use f='codebrowser/merge-recursive.c' l='1665' u='r' c='handle_modify_delete'/>
+<use f='codebrowser/merge-recursive.c' l='1669' u='r' c='handle_modify_delete'/>
+<use f='codebrowser/merge-recursive.c' l='1718' u='r' c='merge_content'/>
+<use f='codebrowser/merge-recursive.c' l='1727' u='r' c='merge_content'/>
+<use f='codebrowser/merge-recursive.c' l='1869' u='r' c='process_entry'/>
+<use f='codebrowser/merge-recursive.c' l='1874' u='r' c='process_entry'/>
+<use f='codebrowser/merge-recursive.c' l='2063' u='r' c='merge_recursive'/>
+<use f='codebrowser/merge-recursive.c' l='2065' u='w' c='merge_recursive'/>
+<use f='codebrowser/merge-recursive.c' l='2070' u='w' c='merge_recursive'/>
+<use f='codebrowser/merge-recursive.c' l='2129' u='r' c='merge_recursive_generic'/>
+<use f='codebrowser/sequencer.c' l='447' u='w' c='do_recursive_merge'/>

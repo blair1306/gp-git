@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin/reflog.c' l='34' type='1'/>
+<use f='codebrowser/builtin/reflog.c' l='303' u='r' c='should_expire_reflog_ent'/>
+<use f='codebrowser/builtin/reflog.c' l='341' u='r' c='reflog_expiry_prepare'/>
+<use f='codebrowser/builtin/reflog.c' l='347' u='r' c='reflog_expiry_prepare'/>
+<use f='codebrowser/builtin/reflog.c' l='351' u='r' c='reflog_expiry_prepare'/>
+<use f='codebrowser/builtin/reflog.c' l='370' u='r' c='reflog_expiry_cleanup'/>

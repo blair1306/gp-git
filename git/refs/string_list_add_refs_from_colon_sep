@@ -1,0 +1,9 @@
+<dec f='codebrowser/notes.h' l='299' type='void string_list_add_refs_from_colon_sep(struct string_list * list, const char * globs)'/>
+<doc f='codebrowser/notes.h' l='294'>/*
+ * Add all refs from a colon-separated glob list &apos;globs&apos; to the end of
+ * &apos;list&apos;.  Empty components are ignored.  This helper is used to
+ * parse GIT_NOTES_DISPLAY_REF style environment variables.
+ */</doc>
+<use f='codebrowser/notes-utils.c' l='146' u='c' c='init_copy_notes_for_rewrite'/>
+<def f='codebrowser/notes.c' l='960' ll='975' type='void string_list_add_refs_from_colon_sep(struct string_list * list, const char * globs)'/>
+<use f='codebrowser/notes.c' l='1070' u='c' c='init_display_notes'/>

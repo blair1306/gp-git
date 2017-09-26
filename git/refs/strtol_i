@@ -1,0 +1,6 @@
+<def f='codebrowser/git-compat-util.h' l='997' ll='1008' type='int strtol_i(const char * s, int base, int * result)'/>
+<use f='codebrowser/ref-filter.c' l='125' u='c' c='refname_atom_parser_internal'/>
+<use f='codebrowser/ref-filter.c' l='129' u='c' c='refname_atom_parser_internal'/>
+<use f='codebrowser/revision.c' l='1716' u='c' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1910' u='c' c='handle_revision_opt'/>
+<use f='codebrowser/sub-process.c' l='142' u='c' c='handshake_version'/>

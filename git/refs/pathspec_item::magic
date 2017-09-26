@@ -1,0 +1,24 @@
+<dec f='codebrowser/pathspec.h' l='32' type='unsigned int'/>
+<use f='codebrowser/pathspec.h' l='84' u='r' c='ps_strncmp'/>
+<use f='codebrowser/pathspec.h' l='93' u='r' c='ps_strcmp'/>
+<offset>128</offset>
+<use f='codebrowser/builtin/add.c' l='480' u='r' c='cmd_add'/>
+<use f='codebrowser/builtin/add.c' l='483' u='r' c='cmd_add'/>
+<use f='codebrowser/dir.c' l='92' u='r' c='git_fnmatch'/>
+<use f='codebrowser/dir.c' l='95' u='r' c='git_fnmatch'/>
+<use f='codebrowser/dir.c' l='99' u='r' c='git_fnmatch'/>
+<use f='codebrowser/dir.c' l='154' u='r' c='common_prefix_len'/>
+<use f='codebrowser/dir.c' l='156' u='r' c='common_prefix_len'/>
+<use f='codebrowser/dir.c' l='305' u='r' c='match_pathspec_item'/>
+<use f='codebrowser/dir.c' l='411' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/dir.c' l='412' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/dir.c' l='421' u='r' c='do_match_pathspec'/>
+<use f='codebrowser/pathspec.c' l='421' u='w' c='init_pathspec_item'/>
+<use f='codebrowser/pathspec.c' l='592' u='r' c='parse_pathspec'/>
+<use f='codebrowser/pathspec.c' l='594' u='r' c='parse_pathspec'/>
+<use f='codebrowser/pathspec.c' l='595' u='r' c='parse_pathspec'/>
+<use f='codebrowser/pathspec.c' l='604' u='r' c='parse_pathspec'/>
+<use f='codebrowser/tree-walk.c' l='764' u='r' c='match_entry'/>
+<use f='codebrowser/tree-walk.c' l='845' u='r' c='basecmp'/>
+<use f='codebrowser/tree-walk.c' l='968' u='r' c='do_match'/>
+<use f='codebrowser/tree-walk.c' l='969' u='r' c='do_match'/>

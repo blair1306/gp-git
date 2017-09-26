@@ -1,0 +1,13 @@
+<dec f='codebrowser/git-compat-util.h' l='93'/>
+<doc f='codebrowser/git-compat-util.h' l='87'>/*
+ * Signed integer overflow is undefined in C, so here&apos;s a helper macro
+ * to detect if the sum of two integers will overflow.
+ *
+ * Requires: a &gt;= 0, typeof(a) equals typeof(b)
+ */</doc>
+<use f='codebrowser/builtin/index-pack.c' l='299' u='c'/>
+<use f='codebrowser/builtin/pack-objects.c' l='550' u='c'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='89' u='c'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='191' u='c'/>
+<use f='codebrowser/vcs-svn/fast_export.c' l='223' u='c'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='39' u='c'/>

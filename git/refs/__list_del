@@ -1,0 +1,4 @@
+<def f='codebrowser/list.h' l='70' ll='74' type='void __list_del(struct list_head * prev, struct list_head * next)'/>
+<use f='codebrowser/list.h' l='79' u='c' c='list_del'/>
+<use f='codebrowser/list.h' l='92' u='c' c='list_move'/>
+<doc f='codebrowser/list.h' l='69'>/* Remove element from list. */</doc>

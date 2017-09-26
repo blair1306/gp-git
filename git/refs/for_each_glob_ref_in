@@ -1,0 +1,7 @@
+<dec f='codebrowser/refs.h' l='299' type='int for_each_glob_ref_in(each_ref_fn * fn, const char * pattern, const char * prefix, void * cb_data)'/>
+<use f='codebrowser/builtin/rev-parse.c' l='563' u='c' c='handle_ref_opt'/>
+<def f='codebrowser/refs.c' l='392' ll='419' type='int for_each_glob_ref_in(each_ref_fn * fn, const char * pattern, const char * prefix, void * cb_data)'/>
+<use f='codebrowser/refs.c' l='423' u='c' c='for_each_glob_ref'/>
+<use f='codebrowser/revision.c' l='2138' u='c' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2143' u='c' c='handle_revision_pseudo_opt'/>
+<use f='codebrowser/revision.c' l='2148' u='c' c='handle_revision_pseudo_opt'/>

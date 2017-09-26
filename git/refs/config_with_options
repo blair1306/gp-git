@@ -1,0 +1,9 @@
+<dec f='codebrowser/config.h' l='48' type='int config_with_options(config_fn_t fn, void * , struct git_config_source * config_source, const struct config_options * opts)'/>
+<use f='codebrowser/builtin/config.c' l='244' u='c' c='get_value'/>
+<use f='codebrowser/builtin/config.c' l='322' u='c' c='get_color'/>
+<use f='codebrowser/builtin/config.c' l='354' u='c' c='get_colorbool'/>
+<use f='codebrowser/builtin/config.c' l='443' u='c' c='get_urlmatch'/>
+<use f='codebrowser/builtin/config.c' l='588' u='c' c='cmd_config'/>
+<def f='codebrowser/config.c' l='1582' ll='1608' type='int config_with_options(config_fn_t fn, void * data, struct git_config_source * config_source, const struct config_options * opts)'/>
+<use f='codebrowser/config.c' l='1657' u='c' c='read_early_config'/>
+<use f='codebrowser/config.c' l='1893' u='c' c='repo_read_config'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/color.h' l='32'/>
+<use f='codebrowser/color.c' l='17' u='c'/>
+<use f='codebrowser/diff.c' l='53' u='c'/>
+<use f='codebrowser/grep.c' l='47' u='c'/>

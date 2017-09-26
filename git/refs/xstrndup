@@ -1,0 +1,26 @@
+<dec f='codebrowser/git-compat-util.h' l='796' type='char * xstrndup(const char * str, size_t len)'/>
+<use f='codebrowser/builtin/clone.c' l='278' u='c' c='guess_dir_name'/>
+<use f='codebrowser/builtin/fetch.c' l='1186' u='c' c='get_remote_group'/>
+<use f='codebrowser/builtin/grep.c' l='383' u='c' c='append_path'/>
+<use f='codebrowser/builtin/init-db.c' l='563' u='c' c='cmd_init_db'/>
+<use f='codebrowser/builtin/remote.c' l='297' u='c' c='config_read_branches'/>
+<use f='codebrowser/builtin/worktree.c' l='368' u='c' c='add'/>
+<use f='codebrowser/exec_cmd.c' l='51' u='c' c='git_extract_argv0_path'/>
+<use f='codebrowser/line-log.c' l='579' u='c' c='parse_lines'/>
+<use f='codebrowser/line-range.c' l='196' u='c' c='parse_range_funcname'/>
+<use f='codebrowser/path.c' l='200' u='c' c='add_to_trie'/>
+<use f='codebrowser/path.c' l='1241' u='c' c='strip_path_suffix'/>
+<use f='codebrowser/remote.c' l='178' u='c' c='make_remote'/>
+<use f='codebrowser/remote.c' l='209' u='c' c='make_branch'/>
+<use f='codebrowser/remote.c' l='234' u='c' c='make_rewrite'/>
+<use f='codebrowser/remote.c' l='521' u='c' c='parse_refspec_internal'/>
+<use f='codebrowser/remote.c' l='534' u='c' c='parse_refspec_internal'/>
+<use f='codebrowser/sha1_name.c' l='691' u='c' c='get_oid_basic'/>
+<use f='codebrowser/sha1_name.c' l='895' u='c' c='peel_onion'/>
+<use f='codebrowser/trailer.c' l='511' u='c' c='git_trailer_config'/>
+<use f='codebrowser/transport.c' l='782' u='c' c='transport_get'/>
+<use f='codebrowser/tree-walk.c' l='397' u='c' c='traverse_trees'/>
+<use f='codebrowser/tree-walk.c' l='399' u='c' c='traverse_trees'/>
+<use f='codebrowser/utf8.c' l='349' u='c' c='strbuf_add_wrapped_bytes'/>
+<def f='codebrowser/wrapper.c' l='127' ll='131' type='char * xstrndup(const char * str, size_t len)'/>
+<use f='codebrowser/xdiff-interface.c' l='274' u='c' c='xdiff_set_find_func'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/revision.h' l='209' type='struct display_notes_opt'/>
+<offset>16192</offset>
+<doc f='codebrowser/revision.h' l='208'>/* notes-specific options: which refs to show */</doc>
+<use f='codebrowser/builtin/log.c' l='182' u='a' c='cmd_log_init_finish'/>
+<use f='codebrowser/builtin/log.c' l='1620' u='a' c='cmd_format_patch'/>
+<use f='codebrowser/revision.c' l='1371' u='m' c='init_revisions'/>
+<use f='codebrowser/revision.c' l='1916' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1935' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1936' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1939' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1944' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1947' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1948' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1949' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1952' u='m' c='handle_revision_opt'/>
+<use f='codebrowser/revision.c' l='1954' u='m' c='handle_revision_opt'/>

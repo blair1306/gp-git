@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/poll.h' l='27'/>
+<use f='codebrowser/run-command.c' l='1264' u='c'/>
+<use f='codebrowser/run-command.c' l='1267' u='c'/>
+<use f='codebrowser/run-command.c' l='1343' u='c'/>
+<use f='codebrowser/wrapper.c' l='286' u='c'/>

@@ -1,0 +1,4 @@
+<dec f='include/stdio.h' l='784' type='__off64_t ftello(FILE * __stream)'/>
+<dec f='include/stdio.h' l='819' type='__off64_t ftello64(FILE * __stream)'/>
+<use f='codebrowser/http.c' l='1675' u='c' c='http_request'/>
+<use f='codebrowser/http.c' l='2090' u='c' c='new_http_pack_request'/>

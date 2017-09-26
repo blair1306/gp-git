@@ -1,0 +1,7 @@
+<dec f='codebrowser/tmp-objdir.h' l='52' type='void tmp_objdir_add_as_alternate(const struct tmp_objdir * )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1725' u='c' c='unpack'/>
+<doc f='codebrowser/tmp-objdir.h' l='48'>/*
+ * Add the temporary object directory as an alternate object store in the
+ * current process.
+ */</doc>
+<def f='codebrowser/tmp-objdir.c' l='288' ll='291' type='void tmp_objdir_add_as_alternate(const struct tmp_objdir * t)'/>

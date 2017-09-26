@@ -1,0 +1,22 @@
+<dec f='codebrowser/cache.h' l='767' type='int'/>
+<use f='codebrowser/cache.h' l='1186' u='r' c='lookup_replace_object'/>
+<doc f='codebrowser/cache.h' l='759'>/*
+ * Do replace refs need to be checked this run?  This variable is
+ * initialized to true unless --no-replace-object is used or
+ * $GIT_NO_REPLACE_OBJECTS is set, but is set to false by some
+ * commands that do not want replace references to be active.  As an
+ * optimization it is also set to false if replace references have
+ * been sought but there were none.
+ */</doc>
+<use f='codebrowser/builtin/fsck.c' l='667' u='w' c='cmd_fsck'/>
+<use f='codebrowser/builtin/index-pack.c' l='1646' u='w' c='cmd_index_pack'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2951' u='w' c='cmd_pack_objects'/>
+<use f='codebrowser/builtin/prune.c' l='116' u='w' c='cmd_prune'/>
+<use f='codebrowser/builtin/replace.c' l='448' u='w' c='cmd_replace'/>
+<use f='codebrowser/builtin/unpack-objects.c' l='511' u='w' c='cmd_unpack_objects'/>
+<def f='codebrowser/environment.c' l='49' type='int'/>
+<use f='codebrowser/environment.c' l='153' u='w' c='setup_git_env'/>
+<use f='codebrowser/git.c' l='89' u='w' c='handle_options'/>
+<use f='codebrowser/log-tree.c' l='102' u='r' c='add_ref_decoration'/>
+<use f='codebrowser/replace_object.c' l='90' u='w' c='prepare_replace_object'/>
+<use f='codebrowser/upload-pack.c' l='1052' u='w' c='cmd_main'/>

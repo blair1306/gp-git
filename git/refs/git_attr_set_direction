@@ -1,0 +1,6 @@
+<dec f='codebrowser/attr.h' l='76' type='void git_attr_set_direction(enum git_attr_direction new_direction, struct index_state * istate)'/>
+<use f='codebrowser/archive.c' l='256' u='c' c='write_archive_entries'/>
+<def f='codebrowser/attr.c' l='710' ll='721' type='void git_attr_set_direction(enum git_attr_direction new_direction, struct index_state * istate)'/>
+<use f='codebrowser/builtin/check-attr.c' l='123' u='c' c='cmd_check_attr'/>
+<use f='codebrowser/unpack-trees.c' l='366' u='c' c='check_updates'/>
+<use f='codebrowser/unpack-trees.c' l='400' u='c' c='check_updates'/>

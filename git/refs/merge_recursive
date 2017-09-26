@@ -1,0 +1,10 @@
+<dec f='codebrowser/merge-recursive.h' l='34' type='int merge_recursive(struct merge_options * o, struct commit * h1, struct commit * h2, struct commit_list * ancestors, struct commit ** result)'/>
+<doc f='codebrowser/merge-recursive.h' l='33'>/* merge_trees() but with recursive ancestor consolidation */</doc>
+<use f='codebrowser/builtin/merge.c' l='682' u='c' c='try_merge_strategy'/>
+<def f='codebrowser/merge-recursive.c' l='2010' ll='2101' type='int merge_recursive(struct merge_options * o, struct commit * h1, struct commit * h2, struct commit_list * ca, struct commit ** result)'/>
+<use f='codebrowser/merge-recursive.c' l='2066' u='c' c='merge_recursive'/>
+<use f='codebrowser/merge-recursive.c' l='2144' u='c' c='merge_recursive_generic'/>
+<doc f='codebrowser/merge-recursive.c' l='2006'>/*
+ * Merge the commits h1 and h2, return the resulting virtual
+ * commit object and a flag indicating the cleanness of the merge.
+ */</doc>

@@ -1,0 +1,7 @@
+<dec f='include/stdlib.h' l='515' type='void abort()'/>
+<doc f='include/stdlib.h' l='514'>/* Abort execution and generate a core-dump.  */</doc>
+<use f='codebrowser/kwset.c' l='231' u='c' c='kwsincr'/>
+<use f='codebrowser/kwset.c' l='251' u='c' c='kwsincr'/>
+<use f='codebrowser/kwset.c' l='255' u='c' c='kwsincr'/>
+<use f='codebrowser/sha1dc/sha1.c' l='1697' u='c' c='sha1_recompression_step'/>
+<use f='codebrowser/usage.c' l='224' u='c' c='BUG_vfl'/>

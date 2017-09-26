@@ -1,0 +1,26 @@
+<dec f='codebrowser/tag.h' l='18' type='struct object * deref_tag(struct object * , const char * , int )'/>
+<use f='codebrowser/blame.c' l='1656' u='c' c='find_single_final'/>
+<use f='codebrowser/blame.c' l='1687' u='c' c='dwim_reverse_initial'/>
+<use f='codebrowser/blame.c' l='1722' u='c' c='find_single_initial'/>
+<use f='codebrowser/builtin/diff.c' l='400' u='c' c='cmd_diff'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='345' u='c' c='shortlog'/>
+<use f='codebrowser/builtin/grep.c' l='641' u='c' c='grep_objects'/>
+<use f='codebrowser/builtin/name-rev.c' l='439' u='c' c='cmd_name_rev'/>
+<use f='codebrowser/commit.c' l='25' u='c' c='lookup_commit_reference_gently'/>
+<use f='codebrowser/fetch-pack.c' l='125' u='c' c='rev_list_insert_ref'/>
+<use f='codebrowser/fetch-pack.c' l='142' u='c' c='clear_marks'/>
+<use f='codebrowser/fetch-pack.c' l='749' u='c' c='everything_local'/>
+<use f='codebrowser/http-backend.c' l='441' u='c' c='show_text_ref'/>
+<use f='codebrowser/http-push.c' l='1472' u='c' c='add_remote_info_ref'/>
+<use f='codebrowser/line-log.c' l='482' u='c' c='check_single_commit'/>
+<use f='codebrowser/merge-recursive.c' l='2107' u='c' c='get_ref'/>
+<use f='codebrowser/remote.c' l='1955' u='c' c='ref_newer'/>
+<use f='codebrowser/remote.c' l='1960' u='c' c='ref_newer'/>
+<use f='codebrowser/server-info.c' l='64' u='c' c='add_info_ref'/>
+<use f='codebrowser/sha1_name.c' l='254' u='c' c='disambiguate_committish_only'/>
+<use f='codebrowser/sha1_name.c' l='278' u='c' c='disambiguate_treeish_only'/>
+<use f='codebrowser/sha1_name.c' l='865' u='c' c='peel_onion'/>
+<use f='codebrowser/sha1_name.c' l='997' u='c' c='handle_one_ref'/>
+<use f='codebrowser/shallow.c' l='91' u='c' c='get_shallow_commits'/>
+<def f='codebrowser/tag.c' l='65' ll='78' type='struct object * deref_tag(struct object * o, const char * warn, int warnlen)'/>
+<use f='codebrowser/upload-pack.c' l='368' u='c' c='ok_to_give_up'/>

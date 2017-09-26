@@ -1,0 +1,8 @@
+<dec f='codebrowser/progress.c' l='33' type='int'/>
+<use f='codebrowser/progress.c' l='101' u='w' c='display'/>
+<use f='codebrowser/progress.c' l='199' u='r' c='display_throughput'/>
+<use f='codebrowser/progress.c' l='200' u='r' c='display_throughput'/>
+<use f='codebrowser/progress.c' l='220' u='w' c='start_progress_delay'/>
+<use f='codebrowser/progress.c' l='251' u='r' c='stop_progress_msg'/>
+<use f='codebrowser/progress.c' l='265' u='r' c='stop_progress_msg'/>
+<offset>64</offset>

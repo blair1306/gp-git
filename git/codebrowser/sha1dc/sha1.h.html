@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sha1.h source code [codebrowser/sha1dc/sha1.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/sha1dc/sha1.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>sha1dc</a>/<a href='sha1.h.html'>sha1.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i><a href="../sha1dc_git.h.html">/***</a></i></td></tr>
+<tr><th id="2">2</th><td><i><a href="../sha1dc_git.h.html">* Copyrig</a>ht 2017 Marc Stevens &lt;marc@marc-stevens.nl&gt;, Dan Shumow &lt;danshu@microsoft.com&gt;</i></td></tr>
+<tr><th id="3">3</th><td><i>* Distributed under the MIT Software License.</i></td></tr>
+<tr><th id="4">4</th><td><i>* See accompanying file LICENSE.txt or copy at</i></td></tr>
+<tr><th id="5">5</th><td><i>* <a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a></i></td></tr>
+<tr><th id="6">6</th><td><i>***/</i></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><u>#<span data-ppcond="8">ifndef</span> <span class="macro" data-ref="_M/SHA1DC_SHA1_H">SHA1DC_SHA1_H</span></u></td></tr>
+<tr><th id="9">9</th><td><u>#define <dfn class="macro" id="_M/SHA1DC_SHA1_H" data-ref="_M/SHA1DC_SHA1_H">SHA1DC_SHA1_H</dfn></u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><u>#<span data-ppcond="11">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="12">12</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="13">13</th><td><u>#<span data-ppcond="11">endif</span></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#<span data-ppcond="15">ifndef</span> <span class="macro" data-ref="_M/SHA1DC_NO_STANDARD_INCLUDES">SHA1DC_NO_STANDARD_INCLUDES</span></u></td></tr>
+<tr><th id="16">16</th><td><u>#include &lt;stdint.h&gt;</u></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="15">endif</span></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><i>/* sha-1 compression function that takes an already expanded message, and additionally store intermediate states */</i></td></tr>
+<tr><th id="20">20</th><td><i>/* only stores states ii (the state between step ii-1 and step ii) when DOSTORESTATEii is defined in ubc_check.h */</i></td></tr>
+<tr><th id="21">21</th><td><em>void</em> <dfn class="decl" id="sha1_compression_states" title='sha1_compression_states' data-ref="sha1_compression_states">sha1_compression_states</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>[<var>5</var>], <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>[<var>16</var>], <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>[<var>80</var>], <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>[<var>80</var>][<var>5</var>]);</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><i>/*</i></td></tr>
+<tr><th id="24">24</th><td><i>// Function type for sha1_recompression_step_T (uint32_t ihvin[5], uint32_t ihvout[5], const uint32_t me2[80], const uint32_t state[5]).</i></td></tr>
+<tr><th id="25">25</th><td><i>// Where 0 &lt;= T &lt; 80</i></td></tr>
+<tr><th id="26">26</th><td><i>//       me2 is an expanded message (the expansion of an original message block XOR'ed with a disturbance vector's message block difference.)</i></td></tr>
+<tr><th id="27">27</th><td><i>//       state is the internal state (a,b,c,d,e) before step T of the SHA-1 compression function while processing the original message block.</i></td></tr>
+<tr><th id="28">28</th><td><i>// The function will return:</i></td></tr>
+<tr><th id="29">29</th><td><i>//       ihvin: The reconstructed input chaining value.</i></td></tr>
+<tr><th id="30">30</th><td><i>//       ihvout: The reconstructed output chaining value.</i></td></tr>
+<tr><th id="31">31</th><td><i>*/</i></td></tr>
+<tr><th id="32">32</th><td><b>typedef</b> <em>void</em>(*<dfn class="typedef" id="sha1_recompression_type" title='sha1_recompression_type' data-type='void (*)(uint32_t *, uint32_t *, const uint32_t *, const uint32_t *)' data-ref="sha1_recompression_type">sha1_recompression_type</dfn>)(<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>*, <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>*, <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>*, <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>*);</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i>/* A callback function type that can be set to be called when a collision block has been found: */</i></td></tr>
+<tr><th id="35">35</th><td><i>/* void collision_block_callback(uint64_t byteoffset, const uint32_t ihvin1[5], const uint32_t ihvin2[5], const uint32_t m1[80], const uint32_t m2[80]) */</i></td></tr>
+<tr><th id="36">36</th><td><b>typedef</b> <em>void</em>(*<dfn class="typedef" id="collision_block_callback" title='collision_block_callback' data-type='void (*)(uint64_t, const uint32_t *, const uint32_t *, const uint32_t *, const uint32_t *)' data-ref="collision_block_callback">collision_block_callback</dfn>)(<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>, <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>*, <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>*, <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>*, <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a>*);</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><i>/* The SHA-1 context. */</i></td></tr>
+<tr><th id="39">39</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="40">40</th><td>	<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="decl" id="(anonymous)::total" title='(anonymous struct)::total' data-ref="(anonymous)::total">total</dfn>;</td></tr>
+<tr><th id="41">41</th><td>	<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="(anonymous)::ihv" title='(anonymous struct)::ihv' data-ref="(anonymous)::ihv">ihv</dfn>[<var>5</var>];</td></tr>
+<tr><th id="42">42</th><td>	<em>unsigned</em> <em>char</em> <dfn class="decl" id="(anonymous)::buffer" title='(anonymous struct)::buffer' data-ref="(anonymous)::buffer">buffer</dfn>[<var>64</var>];</td></tr>
+<tr><th id="43">43</th><td>	<em>int</em> <dfn class="decl" id="(anonymous)::found_collision" title='(anonymous struct)::found_collision' data-ref="(anonymous)::found_collision">found_collision</dfn>;</td></tr>
+<tr><th id="44">44</th><td>	<em>int</em> <dfn class="decl" id="(anonymous)::safe_hash" title='(anonymous struct)::safe_hash' data-ref="(anonymous)::safe_hash">safe_hash</dfn>;</td></tr>
+<tr><th id="45">45</th><td>	<em>int</em> <dfn class="decl" id="(anonymous)::detect_coll" title='(anonymous struct)::detect_coll' data-ref="(anonymous)::detect_coll">detect_coll</dfn>;</td></tr>
+<tr><th id="46">46</th><td>	<em>int</em> <dfn class="decl" id="(anonymous)::ubc_check" title='(anonymous struct)::ubc_check' data-ref="(anonymous)::ubc_check">ubc_check</dfn>;</td></tr>
+<tr><th id="47">47</th><td>	<em>int</em> <dfn class="decl" id="(anonymous)::reduced_round_coll" title='(anonymous struct)::reduced_round_coll' data-ref="(anonymous)::reduced_round_coll">reduced_round_coll</dfn>;</td></tr>
+<tr><th id="48">48</th><td>	<a class="typedef" href="#collision_block_callback" title='collision_block_callback' data-type='void (*)(uint64_t, const uint32_t *, const uint32_t *, const uint32_t *, const uint32_t *)' data-ref="collision_block_callback">collision_block_callback</a> <dfn class="decl" id="(anonymous)::callback" title='(anonymous struct)::callback' data-ref="(anonymous)::callback">callback</dfn>;</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>	<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="(anonymous)::ihv1" title='(anonymous struct)::ihv1' data-ref="(anonymous)::ihv1">ihv1</dfn>[<var>5</var>];</td></tr>
+<tr><th id="51">51</th><td>	<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="(anonymous)::ihv2" title='(anonymous struct)::ihv2' data-ref="(anonymous)::ihv2">ihv2</dfn>[<var>5</var>];</td></tr>
+<tr><th id="52">52</th><td>	<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="(anonymous)::m1" title='(anonymous struct)::m1' data-ref="(anonymous)::m1">m1</dfn>[<var>80</var>];</td></tr>
+<tr><th id="53">53</th><td>	<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="(anonymous)::m2" title='(anonymous struct)::m2' data-ref="(anonymous)::m2">m2</dfn>[<var>80</var>];</td></tr>
+<tr><th id="54">54</th><td>	<a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="(anonymous)::states" title='(anonymous struct)::states' data-ref="(anonymous)::states">states</dfn>[<var>80</var>][<var>5</var>];</td></tr>
+<tr><th id="55">55</th><td>} <dfn class="typedef" id="SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</dfn>;</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><i>/* Initialize SHA-1 context. */</i></td></tr>
+<tr><th id="58">58</th><td><em>void</em> <dfn class="decl" id="SHA1DCInit" title='SHA1DCInit' data-ref="SHA1DCInit">SHA1DCInit</dfn>(<a class="typedef" href="#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a>*);</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><i>/*</i></td></tr>
+<tr><th id="61">61</th><td><i>    Function to enable safe SHA-1 hashing:</i></td></tr>
+<tr><th id="62">62</th><td><i>    Collision attacks are thwarted by hashing a detected near-collision block 3 times.</i></td></tr>
+<tr><th id="63">63</th><td><i>    Think of it as extending SHA-1 from 80-steps to 240-steps for such blocks:</i></td></tr>
+<tr><th id="64">64</th><td><i>        The best collision attacks against SHA-1 have complexity about 2^60,</i></td></tr>
+<tr><th id="65">65</th><td><i>        thus for 240-steps an immediate lower-bound for the best cryptanalytic attacks would be 2^180.</i></td></tr>
+<tr><th id="66">66</th><td><i>        An attacker would be better off using a generic birthday search of complexity 2^80.</i></td></tr>
+<tr><th id="67">67</th><td><i></i></td></tr>
+<tr><th id="68">68</th><td><i>   Enabling safe SHA-1 hashing will result in the correct SHA-1 hash for messages where no collision attack was detected,</i></td></tr>
+<tr><th id="69">69</th><td><i>   but it will result in a different SHA-1 hash for messages where a collision attack was detected.</i></td></tr>
+<tr><th id="70">70</th><td><i>   This will automatically invalidate SHA-1 based digital signature forgeries.</i></td></tr>
+<tr><th id="71">71</th><td><i>   Enabled by default.</i></td></tr>
+<tr><th id="72">72</th><td><i>*/</i></td></tr>
+<tr><th id="73">73</th><td><em>void</em> <dfn class="decl" id="SHA1DCSetSafeHash" title='SHA1DCSetSafeHash' data-ref="SHA1DCSetSafeHash">SHA1DCSetSafeHash</dfn>(<a class="typedef" href="#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a>*, <em>int</em>);</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><i>/*</i></td></tr>
+<tr><th id="76">76</th><td><i>    Function to disable or enable the use of Unavoidable Bitconditions (provides a significant speed up).</i></td></tr>
+<tr><th id="77">77</th><td><i>    Enabled by default</i></td></tr>
+<tr><th id="78">78</th><td><i> */</i></td></tr>
+<tr><th id="79">79</th><td><em>void</em> <dfn class="decl" id="SHA1DCSetUseUBC" title='SHA1DCSetUseUBC' data-ref="SHA1DCSetUseUBC">SHA1DCSetUseUBC</dfn>(<a class="typedef" href="#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a>*, <em>int</em>);</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><i>/*</i></td></tr>
+<tr><th id="82">82</th><td><i>    Function to disable or enable the use of Collision Detection.</i></td></tr>
+<tr><th id="83">83</th><td><i>    Enabled by default.</i></td></tr>
+<tr><th id="84">84</th><td><i> */</i></td></tr>
+<tr><th id="85">85</th><td><em>void</em> <dfn class="decl" id="SHA1DCSetUseDetectColl" title='SHA1DCSetUseDetectColl' data-ref="SHA1DCSetUseDetectColl">SHA1DCSetUseDetectColl</dfn>(<a class="typedef" href="#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a>*, <em>int</em>);</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><i>/* function to disable or enable the detection of reduced-round SHA-1 collisions */</i></td></tr>
+<tr><th id="88">88</th><td><i>/* disabled by default */</i></td></tr>
+<tr><th id="89">89</th><td><em>void</em> <dfn class="decl" id="SHA1DCSetDetectReducedRoundCollision" title='SHA1DCSetDetectReducedRoundCollision' data-ref="SHA1DCSetDetectReducedRoundCollision">SHA1DCSetDetectReducedRoundCollision</dfn>(<a class="typedef" href="#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a>*, <em>int</em>);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i>/* function to set a callback function, pass NULL to disable */</i></td></tr>
+<tr><th id="92">92</th><td><i>/* by default no callback set */</i></td></tr>
+<tr><th id="93">93</th><td><em>void</em> <dfn class="decl" id="SHA1DCSetCallback" title='SHA1DCSetCallback' data-ref="SHA1DCSetCallback">SHA1DCSetCallback</dfn>(<a class="typedef" href="#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a>*, <a class="typedef" href="#collision_block_callback" title='collision_block_callback' data-type='void (*)(uint64_t, const uint32_t *, const uint32_t *, const uint32_t *, const uint32_t *)' data-ref="collision_block_callback">collision_block_callback</a>);</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><i>/* update SHA-1 context with buffer contents */</i></td></tr>
+<tr><th id="96">96</th><td><em>void</em> <dfn class="decl" id="SHA1DCUpdate" title='SHA1DCUpdate' data-ref="SHA1DCUpdate">SHA1DCUpdate</dfn>(<a class="typedef" href="#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a>*, <em>const</em> <em>char</em>*, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>);</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><i>/* obtain SHA-1 hash from SHA-1 context */</i></td></tr>
+<tr><th id="99">99</th><td><i>/* returns: 0 = no collision detected, otherwise = collision found =&gt; warn user for active attack */</i></td></tr>
+<tr><th id="100">100</th><td><em>int</em>  <dfn class="decl" id="SHA1DCFinal" title='SHA1DCFinal' data-ref="SHA1DCFinal">SHA1DCFinal</dfn>(<em>unsigned</em> <em>char</em>[<var>20</var>], <a class="typedef" href="#SHA1_CTX" title='SHA1_CTX' data-type='struct SHA1_CTX' data-ref="SHA1_CTX">SHA1_CTX</a>*);</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><u>#<span data-ppcond="102">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="103">103</th><td>}</td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="102">endif</span></u></td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><u>#<span data-ppcond="106">ifdef</span> <span class="macro" data-ref="_M/SHA1DC_CUSTOM_TRAILING_INCLUDE_SHA1_H">SHA1DC_CUSTOM_TRAILING_INCLUDE_SHA1_H</span></u></td></tr>
+<tr><th id="107">107</th><td><u>#include <span class="macro" title="&quot;sha1dc_git.h&quot;" data-ref="_M/SHA1DC_CUSTOM_TRAILING_INCLUDE_SHA1_H">SHA1DC_CUSTOM_TRAILING_INCLUDE_SHA1_H</span></u></td></tr>
+<tr><th id="108">108</th><td><u>#<span data-ppcond="106">endif</span></u></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><u>#<span data-ppcond="8">endif</span></u></td></tr>
+<tr><th id="111">111</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../abspath.c.html'>codebrowser/abspath.c</a><br/>Generated on <em>2017-Aug-29</em> from project codebrowser revision <em>v2.14.1-326-g3dc57eb</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

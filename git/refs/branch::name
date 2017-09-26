@@ -1,0 +1,90 @@
+<dec f='codebrowser/remote.h' l='209' type='const char *'/>
+<offset>0</offset>
+<use f='codebrowser/builtin/branch.c' l='730' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='736' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='752' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='754' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='757' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='777' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='792' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='793' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='794' u='r' c='cmd_branch'/>
+<use f='codebrowser/builtin/fetch.c' l='636' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/fetch.c' l='636' u='r' c='update_local_ref'/>
+<use f='codebrowser/builtin/pull.c' l='303' u='r' c='config_get_rebase'/>
+<use f='codebrowser/builtin/pull.c' l='437' u='r' c='die_no_merge_candidates'/>
+<use f='codebrowser/builtin/pull.c' l='710' u='r' c='get_rebase_fork_point'/>
+<use f='codebrowser/builtin/push.c' l='158' u='r' c='die_push_simple'/>
+<use f='codebrowser/builtin/push.c' l='180' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='182' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='185' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/builtin/push.c' l='190' u='r' c='setup_push_upstream'/>
+<use f='codebrowser/remote.c' l='199' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='199' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='200' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='201' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='209' u='w' c='make_branch'/>
+<use f='codebrowser/remote.c' l='211' u='w' c='make_branch'/>
+<use f='codebrowser/remote.c' l='212' u='r' c='make_branch'/>
+<use f='codebrowser/remote.c' l='1694' u='r' c='branch_get_upstream'/>
+<use f='codebrowser/remote.c' l='1697' u='r' c='branch_get_upstream'/>
+<use f='codebrowser/remote.c' l='1730' u='r' c='branch_get_push_1'/>
+<use f='codebrowser/remote.c' l='1741' u='r' c='branch_get_push_1'/>

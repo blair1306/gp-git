@@ -1,0 +1,17 @@
+<dec f='codebrowser/refs.h' l='105' type='int ref_exists(const char * refname)'/>
+<use f='codebrowser/branch.c' l='187' u='c' c='validate_new_branchname'/>
+<use f='codebrowser/builtin/branch.c' l='474' u='c' c='rename_branch'/>
+<use f='codebrowser/builtin/branch.c' l='692' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='729' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='778' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/branch.c' l='781' u='c' c='cmd_branch'/>
+<use f='codebrowser/builtin/checkout.c' l='696' u='c' c='update_refs_for_switch'/>
+<use f='codebrowser/builtin/merge.c' l='499' u='c' c='merge_name'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1132' u='c' c='update'/>
+<use f='codebrowser/builtin/remote.c' l='344' u='c' c='get_ref_states'/>
+<use f='codebrowser/builtin/remote.c' l='1265' u='c' c='set_head'/>
+<use f='codebrowser/builtin/worktree.c' l='209' u='c' c='add_worktree'/>
+<use f='codebrowser/builtin/worktree.c' l='360' u='c' c='add'/>
+<def f='codebrowser/refs.c' l='240' ll='244' type='int ref_exists(const char * refname)'/>
+<use f='codebrowser/refs.c' l='1126' u='c' c='shorten_unambiguous_ref'/>
+<use f='codebrowser/remote.c' l='1692' u='c' c='branch_get_upstream'/>

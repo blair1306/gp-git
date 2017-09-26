@@ -1,0 +1,7 @@
+blame_coalesce|blame_coalesce
+blame_entry_prepend|blame_entry_prepend
+blame_entry_score|blame_entry_score
+blame_nth_line|blame_nth_line
+blame_origin_decref|blame_origin_decref
+blame_origin_incref|blame_origin_incref
+blame_sort_final|blame_sort_final

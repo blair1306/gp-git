@@ -1,0 +1,3 @@
+<dec f='codebrowser/refs/refs-internal.h' l='657' type='reflog_iterator_begin_fn *'/>
+<use f='codebrowser/refs.c' l='1938' u='r' c='refs_for_each_reflog'/>
+<offset>960</offset>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/ref-filter.h' l='29' type='struct ref_sorting *'/>
+<offset>0</offset>
+<use f='codebrowser/ref-filter.c' l='2036' u='r' c='compare_refs'/>
+<use f='codebrowser/ref-filter.c' l='2146' u='w' c='ref_default_sorting'/>
+<use f='codebrowser/ref-filter.c' l='2156' u='w' c='parse_ref_sorting'/>

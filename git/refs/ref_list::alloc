@@ -1,0 +1,8 @@
+<dec f='codebrowser/bundle.h' l='7' type='unsigned int'/>
+<offset>32</offset>
+<use f='codebrowser/bundle.c' l='18' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='18' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='18' u='w' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='18' u='w' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='18' u='r' c='add_to_ref_list'/>
+<use f='codebrowser/bundle.c' l='18' u='r' c='add_to_ref_list'/>

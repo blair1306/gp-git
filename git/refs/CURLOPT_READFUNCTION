@@ -1,0 +1,5 @@
+<dec f='include/curl/curl.h' l='901' macro='1' type='20012'/>
+<use f='codebrowser/http-push.c' l='200' u='r' c='curl_setup_http'/>
+<use f='codebrowser/http.c' l='1107' u='r' c='get_active_slot'/>
+<use f='codebrowser/imap-send.c' l='1439' u='r' c='setup_curl'/>
+<use f='codebrowser/remote-curl.c' l='606' u='r' c='post_rpc'/>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/cache-tree.h' l='19' type='struct object_id'/>
+<offset>32</offset>
+<use f='codebrowser/builtin/commit.c' l='1767' u='m' c='cmd_commit'/>
+<use f='codebrowser/builtin/fsck.c' l='595' u='a' c='fsck_cache_tree'/>
+<use f='codebrowser/builtin/fsck.c' l='598' u='a' c='fsck_cache_tree'/>
+<use f='codebrowser/cache-tree.c' l='227' u='m' c='cache_tree_fully_valid'/>
+<use f='codebrowser/cache-tree.c' l='255' u='m' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='342' u='m' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='406' u='m' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='411' u='m' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='412' u='m' c='update_one'/>
+<use f='codebrowser/cache-tree.c' l='469' u='m' c='write_one'/>
+<use f='codebrowser/cache-tree.c' l='526' u='m' c='read_one'/>
+<use f='codebrowser/cache-tree.c' l='646' u='m' c='write_index_as_tree'/>
+<use f='codebrowser/cache-tree.c' l='649' u='m' c='write_index_as_tree'/>
+<use f='codebrowser/cache-tree.c' l='668' u='a' c='prime_cache_tree_rec'/>
+<use f='codebrowser/cache-tree.c' l='723' u='a' c='cache_tree_matches_traversal'/>
+<use f='codebrowser/merge-recursive.c' l='308' u='a' c='write_tree_from_memory'/>
+<use f='codebrowser/revision.c' l='1251' u='a' c='add_cache_tree'/>
+<use f='codebrowser/sequencer.c' l='514' u='a' c='is_index_unchanged'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='13' u='a' c='dump_one'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='35' u='a' c='dump_cache_tree'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='35' u='a' c='dump_cache_tree'/>

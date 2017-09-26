@@ -1,0 +1,10 @@
+<dec f='codebrowser/remote.h' l='127' type='char *'/>
+<offset>768</offset>
+<use f='codebrowser/builtin/send-pack.c' l='88' u='r' c='print_helper_status'/>
+<use f='codebrowser/builtin/send-pack.c' l='89' u='r' c='print_helper_status'/>
+<use f='codebrowser/remote.c' l='948' u='w' c='copy_ref'/>
+<use f='codebrowser/remote.c' l='948' u='r' c='copy_ref'/>
+<use f='codebrowser/remote.c' l='970' u='r' c='free_ref'/>
+<use f='codebrowser/send-pack.c' l='203' u='w' c='receive_status'/>
+<use f='codebrowser/transport-helper.c' l='765' u='w' c='push_update_ref_status'/>
+<use f='codebrowser/transport.c' l='429' u='r' c='print_one_push_status'/>

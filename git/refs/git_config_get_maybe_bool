@@ -1,0 +1,4 @@
+<dec f='codebrowser/config.h' l='209' type='int git_config_get_maybe_bool(const char * key, int * dest)'/>
+<def f='codebrowser/config.c' l='2057' ll='2060' type='int git_config_get_maybe_bool(const char * key, int * dest)'/>
+<use f='codebrowser/config.c' l='2106' u='c' c='git_config_get_untracked_cache'/>
+<use f='codebrowser/config.c' l='2125' u='c' c='git_config_get_split_index'/>

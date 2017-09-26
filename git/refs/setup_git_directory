@@ -1,0 +1,29 @@
+<dec f='codebrowser/cache.h' l='542' type='const char * setup_git_directory()'/>
+<use f='codebrowser/archive.c' l='514' u='c' c='write_archive'/>
+<use f='codebrowser/builtin/grep.c' l='917' u='c' c='cmd_grep'/>
+<use f='codebrowser/builtin/hash-object.c' l='112' u='c' c='cmd_hash_object'/>
+<use f='codebrowser/builtin/rev-parse.c' l='599' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/builtin/rev-parse.c' l='626' u='c' c='cmd_rev_parse'/>
+<use f='codebrowser/fast-import.c' l='3452' u='c' c='cmd_main'/>
+<use f='codebrowser/git.c' l='314' u='c' c='run_builtin'/>
+<use f='codebrowser/http-fetch.c' l='65' u='c' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1769' u='c' c='cmd_main'/>
+<use f='codebrowser/http-push.c' l='1921' u='c' c='cmd_main'/>
+<use f='codebrowser/remote-testsvn.c' l='290' u='c' c='cmd_main'/>
+<def f='codebrowser/setup.c' l='1186' ll='1189' type='const char * setup_git_directory()'/>
+<doc f='codebrowser/setup.c' l='1180'>/*
+ * Returns the &quot;prefix&quot;, a path to the current working directory
+ * relative to the work tree root, or NULL, if the current working
+ * directory is not a strict subdirectory of the work tree root. The
+ * prefix always ends with a &apos;/&apos; character.
+ */</doc>
+<use f='codebrowser/t/helper/test-config.c' l='92' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-dump-cache-tree.c' l='61' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-dump-untracked-cache.c' l='49' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-lazy-init-name-hash.c' l='210' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-match-trees.c' l='9' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-read-cache.c' l='8' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='283' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-revision-walking.c' l='53' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-scrap-cache-tree.c' l='10' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-submodule-config.c' l='39' u='c' c='cmd_main'/>

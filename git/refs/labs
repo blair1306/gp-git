@@ -1,0 +1,6 @@
+<dec f='include/stdlib.h' l='775' type='long labs(long __x)'/>
+<use f='codebrowser/builtin/am.c' l='915' u='c' c='hg_patch_to_mail'/>
+<use f='codebrowser/builtin/am.c' l='915' u='c' c='hg_patch_to_mail'/>
+<use f='codebrowser/builtin/receive-pack.c' l='563' u='c' c='check_nonce'/>
+<use f='codebrowser/config.c' l='789' u='c' c='git_parse_signed'/>
+<use f='codebrowser/config.c' l='791' u='c' c='git_parse_signed'/>

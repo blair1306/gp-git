@@ -1,0 +1,71 @@
+<dec f='codebrowser/object.h' l='92' type='struct object * parse_object(const struct object_id * oid)'/>
+<doc f='codebrowser/object.h' l='87'>/*
+ * Returns the object, having parsed it to find out what it is.
+ *
+ * Returns NULL if the object is missing or corrupt.
+ */</doc>
+<use f='codebrowser/builtin/diff-tree.c' l='71' u='c' c='diff_tree_stdin'/>
+<use f='codebrowser/builtin/diff.c' l='399' u='c' c='cmd_diff'/>
+<use f='codebrowser/builtin/fast-export.c' l='784' u='c' c='get_commit'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='345' u='c' c='shortlog'/>
+<use f='codebrowser/builtin/fmt-merge-msg.c' l='564' u='c' c='find_merge_parents'/>
+<use f='codebrowser/builtin/fsck.c' l='439' u='c' c='fsck_handle_ref'/>
+<use f='codebrowser/builtin/fsck.c' l='595' u='c' c='fsck_cache_tree'/>
+<use f='codebrowser/builtin/log.c' l='608' u='c' c='cmd_show'/>
+<use f='codebrowser/builtin/name-rev.c' l='190' u='c' c='name_ref'/>
+<use f='codebrowser/builtin/name-rev.c' l='248' u='c' c='name_ref'/>
+<use f='codebrowser/builtin/name-rev.c' l='437' u='c' c='cmd_name_rev'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1106' u='c' c='update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1107' u='c' c='update'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1130' u='c' c='update'/>
+<use f='codebrowser/builtin/reflog.c' l='130' u='c' c='commit_is_complete'/>
+<use f='codebrowser/builtin/rev-list.c' l='187' u='c' c='finish_object'/>
+<use f='codebrowser/bundle.c' l='145' u='c' c='verify_bundle'/>
+<use f='codebrowser/commit.c' l='25' u='c' c='lookup_commit_reference_gently'/>
+<use f='codebrowser/commit.c' l='1591' u='c' c='get_merge_parent'/>
+<use f='codebrowser/fetch-pack.c' l='83' u='c' c='cache_one_alternate'/>
+<use f='codebrowser/fetch-pack.c' l='125' u='c' c='rev_list_insert_ref'/>
+<use f='codebrowser/fetch-pack.c' l='142' u='c' c='clear_marks'/>
+<use f='codebrowser/fetch-pack.c' l='431' u='c' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='562' u='c' c='mark_complete'/>
+<use f='codebrowser/fetch-pack.c' l='569' u='c' c='mark_complete'/>
+<use f='codebrowser/fetch-pack.c' l='721' u='c' c='everything_local'/>
+<use f='codebrowser/fsck.c' l='464' u='c' c='fsck_walk'/>
+<use f='codebrowser/http-backend.c' l='435' u='c' c='show_text_ref'/>
+<use f='codebrowser/http-push.c' l='723' u='c' c='one_remote_object'/>
+<use f='codebrowser/http-push.c' l='1458' u='c' c='add_remote_info_ref'/>
+<use f='codebrowser/log-tree.c' l='109' u='c' c='add_ref_decoration'/>
+<use f='codebrowser/log-tree.c' l='115' u='c' c='add_ref_decoration'/>
+<use f='codebrowser/log-tree.c' l='136' u='c' c='add_ref_decoration'/>
+<use f='codebrowser/merge-recursive.c' l='2107' u='c' c='get_ref'/>
+<use f='codebrowser/object.c' l='235' u='c' c='parse_object_or_die'/>
+<def f='codebrowser/object.c' l='242' ll='280' type='struct object * parse_object(const struct object_id * oid)'/>
+<use f='codebrowser/pretty.c' l='1140' u='c' c='format_commit_one'/>
+<use f='codebrowser/ref-filter.c' l='1766' u='c' c='match_points_at'/>
+<use f='codebrowser/reflog-walk.c' l='310' u='c' c='next_reflog_commit'/>
+<use f='codebrowser/refs/files-backend.c' l='1611' u='c' c='write_ref_to_lockfile'/>
+<use f='codebrowser/remote.c' l='1955' u='c' c='ref_newer'/>
+<use f='codebrowser/remote.c' l='1960' u='c' c='ref_newer'/>
+<use f='codebrowser/revision.c' l='182' u='c' c='add_head_to_pending'/>
+<use f='codebrowser/revision.c' l='194' u='c' c='get_reference'/>
+<use f='codebrowser/revision.c' l='229' u='c' c='handle_commit'/>
+<use f='codebrowser/revision.c' l='1202' u='c' c='handle_one_reflog_commit'/>
+<use f='codebrowser/revision.c' l='1478' u='c' c='handle_dotdot_1'/>
+<use f='codebrowser/revision.c' l='1479' u='c' c='handle_dotdot_1'/>
+<use f='codebrowser/server-info.c' l='56' u='c' c='add_info_ref'/>
+<use f='codebrowser/sha1_name.c' l='254' u='c' c='disambiguate_committish_only'/>
+<use f='codebrowser/sha1_name.c' l='278' u='c' c='disambiguate_treeish_only'/>
+<use f='codebrowser/sha1_name.c' l='788' u='c' c='peel_to_type'/>
+<use f='codebrowser/sha1_name.c' l='861' u='c' c='peel_onion'/>
+<use f='codebrowser/sha1_name.c' l='866' u='c' c='peel_onion'/>
+<use f='codebrowser/sha1_name.c' l='993' u='c' c='handle_one_ref'/>
+<use f='codebrowser/sha1_name.c' l='1039' u='c' c='get_oid_oneline'/>
+<use f='codebrowser/tag.c' l='69' u='c' c='deref_tag'/>
+<use f='codebrowser/tag.c' l='83' u='c' c='deref_tag_noverify'/>
+<use f='codebrowser/tree.c' l='244' u='c' c='parse_tree_indirect'/>
+<use f='codebrowser/tree.c' l='257' u='c' c='parse_tree_indirect'/>
+<use f='codebrowser/upload-pack.c' l='300' u='c' c='got_oid'/>
+<use f='codebrowser/upload-pack.c' l='338' u='c' c='reachable'/>
+<use f='codebrowser/upload-pack.c' l='759' u='c' c='receive_needs'/>
+<use f='codebrowser/upload-pack.c' l='825' u='c' c='receive_needs'/>
+<use f='codebrowser/walker.c' l='183' u='c' c='loop'/>

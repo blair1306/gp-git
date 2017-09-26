@@ -1,0 +1,6 @@
+<def f='codebrowser/refs/files-backend.c' l='23' ll='33'/>
+<size>48</size>
+<doc f='codebrowser/refs/files-backend.c' l='19'>/*
+ * Future: need to be in &quot;struct repository&quot;
+ * when doing a full libification.
+ */</doc>

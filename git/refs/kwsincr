@@ -1,0 +1,9 @@
+<dec f='codebrowser/kwset.h' l='47' type='const char * kwsincr(kwset_t , const char * , size_t )'/>
+<doc f='codebrowser/kwset.h' l='44'>/* Incrementally extend the keyword set to include the given string.
+   Return NULL for success, or an error message.  Remember an index
+   number for each keyword included in the set. */</doc>
+<use f='codebrowser/diffcore-pickaxe.c' l='241' u='c' c='diffcore_pickaxe'/>
+<use f='codebrowser/grep.c' l='642' u='c' c='compile_regexp'/>
+<def f='codebrowser/kwset.c' l='125' ll='281' type='const char * kwsincr(kwset_t kws, const char * text, size_t len)'/>
+<doc f='codebrowser/kwset.c' l='123'>/* Add the given string to the contents of the keyword set.  Return NULL
+   for success, an error message otherwise. */</doc>

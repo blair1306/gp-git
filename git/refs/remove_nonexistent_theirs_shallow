@@ -1,0 +1,5 @@
+<dec f='codebrowser/commit.h' l='300' type='void remove_nonexistent_theirs_shallow(struct shallow_info * )'/>
+<use f='codebrowser/builtin/receive-pack.c' l='1858' u='c' c='update_shallow_info'/>
+<use f='codebrowser/fetch-pack.c' l='1099' u='c' c='update_shallow'/>
+<def f='codebrowser/shallow.c' l='418' ll='430' type='void remove_nonexistent_theirs_shallow(struct shallow_info * info)'/>
+<doc f='codebrowser/shallow.c' l='416'>/* Step 4, remove non-existent ones in &quot;theirs&quot; after getting the pack */</doc>

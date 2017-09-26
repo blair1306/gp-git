@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='236' type='int cmd_verify_tag(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/verify-tag.c' l='31' ll='78' type='int cmd_verify_tag(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='480'/>
+<use f='codebrowser/git.c' l='480'/>
+<use f='codebrowser/git.c' l='480'/>
+<use f='codebrowser/git.c' l='480'/>

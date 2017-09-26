@@ -1,0 +1,15 @@
+<dec f='codebrowser/pack-objects.h' l='8' type='off_t'/>
+<use f='codebrowser/builtin/pack-objects.c' l='371' u='r' c='write_reuse_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1062' u='w' c='create_object_entry'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1396' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1425' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1430' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1444' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1445' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1488' u='r' c='check_object'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1526' u='r' c='pack_offset_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1526' u='r' c='pack_offset_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1527' u='r' c='pack_offset_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1527' u='r' c='pack_offset_sort'/>
+<use f='codebrowser/builtin/pack-objects.c' l='1559' u='r' c='drop_reused_delta'/>
+<offset>384</offset>

@@ -1,0 +1,27 @@
+<dec f='codebrowser/vcs-svn/line_buffer.h' l='10' type='FILE *'/>
+<offset>80000</offset>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='14' u='w' c='buffer_init'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='15' u='r' c='buffer_init'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='22' u='w' c='buffer_fdinit'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='23' u='r' c='buffer_fdinit'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='30' u='w' c='buffer_tmpfile_init'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='31' u='r' c='buffer_tmpfile_init'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='39' u='r' c='buffer_deinit'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='40' u='r' c='buffer_deinit'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='41' u='r' c='buffer_deinit'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='42' u='r' c='buffer_deinit'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='48' u='r' c='buffer_tmpfile_rewind'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='49' u='r' c='buffer_tmpfile_rewind'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='54' u='r' c='buffer_tmpfile_prepare_to_read'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='57' u='r' c='buffer_tmpfile_prepare_to_read'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='64' u='r' c='buffer_ferror'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='69' u='r' c='buffer_read_char'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='76' u='r' c='buffer_read_line'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='82' u='r' c='buffer_read_line'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='97' u='r' c='buffer_read_binary'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='104' u='r' c='buffer_copy_bytes'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='104' u='r' c='buffer_copy_bytes'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='107' u='r' c='buffer_copy_bytes'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='120' u='r' c='buffer_skip_bytes'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='120' u='r' c='buffer_skip_bytes'/>
+<use f='codebrowser/vcs-svn/line_buffer.c' l='123' u='r' c='buffer_skip_bytes'/>

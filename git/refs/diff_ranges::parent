@@ -1,0 +1,17 @@
+<dec f='codebrowser/line-log.h' l='24' type='struct range_set'/>
+<offset>0</offset>
+<use f='codebrowser/line-log.c' l='230' u='a' c='diff_ranges_init'/>
+<use f='codebrowser/line-log.c' l='236' u='a' c='diff_ranges_release'/>
+<use f='codebrowser/line-log.c' l='321' u='a' c='collect_diff_cb'/>
+<use f='codebrowser/line-log.c' l='411' u='a' c='diff_ranges_filter_touched'/>
+<use f='codebrowser/line-log.c' l='412' u='m' c='diff_ranges_filter_touched'/>
+<use f='codebrowser/line-log.c' l='413' u='m' c='diff_ranges_filter_touched'/>
+<use f='codebrowser/line-log.c' l='433' u='m' c='range_set_shift_diff'/>
+<use f='codebrowser/line-log.c' l='465' u='a' c='range_set_map_across_diff'/>
+<use f='codebrowser/line-log.c' l='931' u='m' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='933' u='m' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='935' u='m' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='937' u='m' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='954' u='m' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='954' u='m' c='dump_diff_hacky_one'/>
+<use f='codebrowser/line-log.c' l='1040' u='m' c='process_diff_filepair'/>

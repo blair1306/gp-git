@@ -1,0 +1,6 @@
+<dec f='codebrowser/tempfile.h' l='168' type='int mks_tempfile_tsm(struct tempfile * tempfile, const char * template, int suffixlen, int mode)'/>
+<use f='codebrowser/tempfile.h' l='175' u='c' c='mks_tempfile_ts'/>
+<use f='codebrowser/tempfile.h' l='182' u='c' c='mks_tempfile_tm'/>
+<use f='codebrowser/tempfile.h' l='189' u='c' c='mks_tempfile_t'/>
+<doc f='codebrowser/tempfile.h' l='167'>/* See &quot;mks_tempfile functions&quot; above. */</doc>
+<def f='codebrowser/tempfile.c' l='169' ll='189' type='int mks_tempfile_tsm(struct tempfile * tempfile, const char * template, int suffixlen, int mode)'/>

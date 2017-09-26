@@ -1,0 +1,2 @@
+<dec f='codebrowser/iterator.h' l='69' type='5'/>
+<doc f='codebrowser/iterator.h' l='68'>/* Discard the value from iter0 without yielding anything this round: */</doc>

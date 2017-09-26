@@ -1,0 +1,5 @@
+<dec f='codebrowser/revision.h' l='256' type='int handle_revision_arg(const char * arg, struct rev_info * revs, int flags, unsigned int revarg_opt)'/>
+<use f='codebrowser/builtin/pack-objects.c' l='2802' u='c' c='get_object_list'/>
+<def f='codebrowser/revision.c' l='1541' ll='1612' type='int handle_revision_arg(const char * arg_, struct rev_info * revs, int flags, unsigned int revarg_opt)'/>
+<use f='codebrowser/revision.c' l='1659' u='c' c='read_revisions_from_stdin'/>
+<use f='codebrowser/revision.c' l='2269' u='c' c='setup_revisions'/>

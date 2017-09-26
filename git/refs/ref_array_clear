@@ -1,0 +1,7 @@
+<dec f='codebrowser/ref-filter.h' l='107' type='void ref_array_clear(struct ref_array * array)'/>
+<use f='codebrowser/builtin/branch.c' l='432' u='c' c='print_ref_list'/>
+<doc f='codebrowser/ref-filter.h' l='106'>/*  Clear all memory allocated to ref_array */</doc>
+<use f='codebrowser/builtin/for-each-ref.c' l='85' u='c' c='cmd_for_each_ref'/>
+<use f='codebrowser/builtin/tag.c' l='65' u='c' c='list_tags'/>
+<def f='codebrowser/ref-filter.c' l='1896' ll='1904' type='void ref_array_clear(struct ref_array * array)'/>
+<doc f='codebrowser/ref-filter.c' l='1895'>/* Free all memory allocated for ref_array */</doc>

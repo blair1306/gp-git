@@ -1,0 +1,5 @@
+<dec f='codebrowser/dir.h' l='344' type='int cmp_dir_entry(const void * p1, const void * p2)'/>
+<use f='codebrowser/builtin/clean.c' l='866' u='c' c='correct_untracked_entries'/>
+<def f='codebrowser/dir.c' l='1882' ll='1888' type='int cmp_dir_entry(const void * p1, const void * p2)'/>
+<use f='codebrowser/dir.c' l='2112' u='r' c='read_directory'/>
+<use f='codebrowser/dir.c' l='2113' u='r' c='read_directory'/>

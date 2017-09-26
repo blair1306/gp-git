@@ -1,0 +1,6 @@
+<dec f='codebrowser/remote.h' l='18' type='int'/>
+<offset>224</offset>
+<use f='codebrowser/remote.c' l='266' u='w' c='read_remotes_file'/>
+<use f='codebrowser/remote.c' l='301' u='w' c='read_branches_file'/>
+<use f='codebrowser/remote.c' l='385' u='w' c='handle_config'/>
+<use f='codebrowser/remote.c' l='723' u='r' c='remote_is_configured'/>

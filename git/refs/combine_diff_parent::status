@@ -1,0 +1,10 @@
+<dec f='codebrowser/diff.h' l='228' type='char'/>
+<offset>0</offset>
+<use f='codebrowser/combine-diff.c' l='51' u='w' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='82' u='w' c='intersect_paths'/>
+<use f='codebrowser/combine-diff.c' l='931' u='r' c='show_combined_header'/>
+<use f='codebrowser/combine-diff.c' l='1214' u='r' c='show_raw_diff'/>
+<use f='codebrowser/diff-lib.c' l='161' u='w' c='run_diff_files'/>
+<use f='codebrowser/diff-lib.c' l='352' u='w' c='show_modified'/>
+<use f='codebrowser/diff-lib.c' l='355' u='w' c='show_modified'/>
+<use f='codebrowser/tree-diff.c' l='235' u='w' c='emit_path'/>

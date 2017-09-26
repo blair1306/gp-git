@@ -1,0 +1,6 @@
+<def f='codebrowser/iterator.h' l='30' ll='79'/>
+<doc f='codebrowser/iterator.h' l='25'>/*
+ * Return values for selector functions for merge iterators. The
+ * numerical values of these constants are important and must be
+ * compatible with ITER_DONE and ITER_ERROR.
+ */</doc>

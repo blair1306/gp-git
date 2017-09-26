@@ -1,0 +1,11 @@
+<dec f='codebrowser/diff.h' l='355' type='int run_diff_index(struct rev_info * revs, int cached)'/>
+<use f='codebrowser/builtin/am.c' l='1439' u='c' c='write_index_patch'/>
+<use f='codebrowser/builtin/am.c' l='1591' u='c' c='fall_back_threeway'/>
+<use f='codebrowser/builtin/checkout.c' l='399' u='c' c='show_local_changes'/>
+<use f='codebrowser/builtin/diff-index.c' l='59' u='c' c='cmd_diff_index'/>
+<use f='codebrowser/builtin/diff.c' l='156' u='c' c='builtin_diff_index'/>
+<def f='codebrowser/diff-lib.c' l='509' ll='522' type='int run_diff_index(struct rev_info * revs, int cached)'/>
+<use f='codebrowser/diff-lib.c' l='551' u='c' c='index_differs_from'/>
+<use f='codebrowser/wt-status.c' l='611' u='c' c='wt_status_collect_changes_index'/>
+<use f='codebrowser/wt-status.c' l='985' u='c' c='wt_longstatus_print_verbose'/>
+<use f='codebrowser/wt-status.c' l='2290' u='c' c='has_uncommitted_changes'/>

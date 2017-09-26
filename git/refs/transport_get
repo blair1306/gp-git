@@ -1,0 +1,10 @@
+<dec f='codebrowser/transport.h' l='154' type='struct transport * transport_get(struct remote * , const char * )'/>
+<use f='codebrowser/builtin/archive.c' l='38' u='c' c='run_remote_archiver'/>
+<doc f='codebrowser/transport.h' l='153'>/* Returns a transport suitable for the url */</doc>
+<use f='codebrowser/builtin/clone.c' l='1062' u='c' c='cmd_clone'/>
+<use f='codebrowser/builtin/fetch.c' l='1028' u='c' c='prepare_transport'/>
+<use f='codebrowser/builtin/ls-remote.c' l='95' u='c' c='cmd_ls_remote'/>
+<use f='codebrowser/builtin/push.c' l='416' u='c' c='do_push'/>
+<use f='codebrowser/builtin/push.c' l='424' u='c' c='do_push'/>
+<use f='codebrowser/builtin/remote.c' l='862' u='c' c='get_remote_ref_states'/>
+<def f='codebrowser/transport.c' l='757' ll='838' type='struct transport * transport_get(struct remote * remote, const char * url)'/>

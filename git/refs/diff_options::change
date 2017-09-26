@@ -1,0 +1,5 @@
+<dec f='codebrowser/diff.h' l='181' type='change_fn_t'/>
+<offset>2240</offset>
+<use f='codebrowser/diff.c' l='3385' u='w' c='diff_setup'/>
+<use f='codebrowser/revision.c' l='1347' u='w' c='init_revisions'/>
+<use f='codebrowser/tree-diff.c' l='78' u='r' c='emit_diff_first_parent_only'/>

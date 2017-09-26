@@ -1,0 +1,11 @@
+<dec f='include/expat.h' l='961' type='const char * XML_GetInputContext(XML_Parser parser, int * offset, int * size)'/>
+<doc f='include/expat.h' l='950'>/* If XML_CONTEXT_BYTES is defined, returns the input buffer, sets
+   the integer pointed to by offset to the offset within this buffer
+   of the current parse position, and sets the integer pointed to by size
+   to the size of this buffer (the number of input bytes). Otherwise
+   returns a NULL pointer. Also returns a NULL pointer if a parse isn&apos;t
+   active.
+
+   NOTE: The character pointer returned should not be used outside
+   the handler that makes the call.
+*/</doc>

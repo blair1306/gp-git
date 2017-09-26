@@ -1,0 +1,4 @@
+<dec f='codebrowser/run-command.h' l='46' type='unsigned int'/>
+<offset>584</offset>
+<use f='codebrowser/git.c' l='569' u='w' c='execv_dashed_external'/>
+<use f='codebrowser/run-command.c' l='51' u='r' c='cleanup_children'/>

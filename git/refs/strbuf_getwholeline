@@ -1,0 +1,23 @@
+<dec f='codebrowser/strbuf.h' l='423' type='int strbuf_getwholeline(struct strbuf * , FILE * , int )'/>
+<doc f='codebrowser/strbuf.h' l='419'>/**
+ * Like `strbuf_getline`, but keeps the trailing terminator (if
+ * any) in the buffer.
+ */</doc>
+<use f='codebrowser/builtin/blame.c' l='489' u='c' c='read_ancestry'/>
+<use f='codebrowser/builtin/mailsplit.c' l='99' u='c' c='split_one'/>
+<use f='codebrowser/builtin/mailsplit.c' l='197' u='c' c='split_maildir'/>
+<use f='codebrowser/builtin/mailsplit.c' l='248' u='c' c='split_mbox'/>
+<use f='codebrowser/builtin/notes.c' l='925' u='c' c='remove_cmd'/>
+<use f='codebrowser/builtin/patch-id.c' l='83' u='c' c='get_one_patchid'/>
+<use f='codebrowser/bundle.c' l='288' u='c' c='compute_and_write_prerequisites'/>
+<use f='codebrowser/commit.c' l='175' u='c' c='read_graft_file'/>
+<use f='codebrowser/mailinfo.c' l='1024' u='c' c='handle_body'/>
+<use f='codebrowser/refs/files-backend.c' l='1982' u='c' c='files_for_each_reflog_ent'/>
+<use f='codebrowser/refs/packed-backend.c' l='228' u='c' c='read_packed_refs'/>
+<use f='codebrowser/rerere.c' l='207' u='c' c='read_rr'/>
+<use f='codebrowser/rerere.c' l='357' u='c' c='rerere_file_getline'/>
+<def f='codebrowser/strbuf.c' l='467' ll='512' type='int strbuf_getwholeline(struct strbuf * sb, FILE * fp, int term)'/>
+<use f='codebrowser/strbuf.c' l='541' u='c' c='strbuf_getdelim'/>
+<use f='codebrowser/strbuf.c' l='550' u='c' c='strbuf_getline'/>
+<use f='codebrowser/submodule.c' l='1351' u='c' c='is_submodule_modified'/>
+<use f='codebrowser/t/helper/test-mergesort.c' l='31' u='c' c='cmd_main'/>

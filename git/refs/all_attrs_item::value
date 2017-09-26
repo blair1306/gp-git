@@ -1,0 +1,8 @@
+<dec f='codebrowser/attr.c' l='137' type='const char *'/>
+<use f='codebrowser/attr.c' l='188' u='w' c='all_attrs_init'/>
+<use f='codebrowser/attr.c' l='1022' u='a' c='fill_one'/>
+<use f='codebrowser/attr.c' l='1062' u='r' c='macroexpand_one'/>
+<use f='codebrowser/attr.c' l='1124' u='w' c='collect_some_attrs'/>
+<use f='codebrowser/attr.c' l='1144' u='r' c='git_check_attr'/>
+<use f='codebrowser/attr.c' l='1162' u='r' c='git_all_attrs'/>
+<offset>64</offset>

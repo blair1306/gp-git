@@ -1,0 +1,6 @@
+<def f='codebrowser/ref-filter.c' l='1498' macro='1'/>
+<size>24</size>
+<mbr r='contains_cache::slab_size' o='0' t='unsigned int'/>
+<mbr r='contains_cache::stride' o='32' t='unsigned int'/>
+<mbr r='contains_cache::slab_count' o='64' t='unsigned int'/>
+<mbr r='contains_cache::slab' o='128' t='enum contains_result **'/>

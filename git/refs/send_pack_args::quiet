@@ -1,0 +1,7 @@
+<dec f='codebrowser/send-pack.h' l='14' type='unsigned int'/>
+<offset>65</offset>
+<use f='codebrowser/builtin/send-pack.c' l='201' u='w' c='cmd_send_pack'/>
+<use f='codebrowser/builtin/send-pack.c' l='247' u='r' c='cmd_send_pack'/>
+<use f='codebrowser/send-pack.c' l='83' u='r' c='pack_objects'/>
+<use f='codebrowser/send-pack.c' l='456' u='r' c='send_pack'/>
+<use f='codebrowser/transport.c' l='559' u='w' c='git_transport_push'/>

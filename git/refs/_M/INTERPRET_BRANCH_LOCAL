@@ -1,0 +1,32 @@
+<dec f='codebrowser/cache.h' l='1385'/>
+<doc f='codebrowser/cache.h' l='1359'>/*
+ * This reads short-hand syntax that not only evaluates to a commit
+ * object name, but also can act as if the end user spelled the name
+ * of the branch from the command line.
+ *
+ * - &quot;@{-N}&quot; finds the name of the Nth previous branch we were on, and
+ *   places the name of the branch in the given buf and returns the
+ *   number of characters parsed if successful.
+ *
+ * - &quot;&lt;branch&gt;@{upstream}&quot; finds the name of the other ref that
+ *   &lt;branch&gt; is configured to merge with (missing &lt;branch&gt; defaults
+ *   to the current branch), and places the name of the branch in the
+ *   given buf and returns the number of characters parsed if
+ *   successful.
+ *
+ * If the input is not of the accepted format, it returns a negative
+ * number to signal an error.
+ *
+ * If the input was ok but there are not N branch switches in the
+ * reflog, it returns 0.
+ *
+ * If &quot;allowed&quot; is non-zero, it is a treated as a bitfield of allowable
+ * expansions: local branches (&quot;refs/heads/&quot;), remote branches
+ * (&quot;refs/remotes/&quot;), or &quot;HEAD&quot;. If no &quot;allowed&quot; bits are set, any expansion is
+ * allowed, even ones to refs outside of those namespaces.
+ */</doc>
+<use f='codebrowser/builtin/branch.c' l='208' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='461' u='c'/>
+<use f='codebrowser/sha1_name.c' l='1225' u='c'/>
+<use f='codebrowser/sha1_name.c' l='1282' u='c'/>
+<use f='codebrowser/sha1_name.c' l='1333' u='c'/>

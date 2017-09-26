@@ -1,0 +1,4 @@
+<dec f='codebrowser/revision.h' l='279' type='void add_reflogs_to_pending(struct rev_info * , unsigned int flags)'/>
+<use f='codebrowser/reachable.c' l='182' u='c' c='mark_reachable_objects'/>
+<def f='codebrowser/revision.c' l='1235' ll='1242' type='void add_reflogs_to_pending(struct rev_info * revs, unsigned int flags)'/>
+<use f='codebrowser/revision.c' l='2151' u='c' c='handle_revision_pseudo_opt'/>

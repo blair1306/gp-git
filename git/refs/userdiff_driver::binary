@@ -1,0 +1,12 @@
+<dec f='codebrowser/userdiff.h' l='14' type='int'/>
+<use f='codebrowser/archive-zip.c' l='271' u='r' c='entry_is_binary'/>
+<use f='codebrowser/archive-zip.c' l='272' u='r' c='entry_is_binary'/>
+<offset>128</offset>
+<use f='codebrowser/combine-diff.c' l='1084' u='r' c='show_patch_diff'/>
+<use f='codebrowser/combine-diff.c' l='1085' u='r' c='show_patch_diff'/>
+<use f='codebrowser/diff.c' l='2294' u='r' c='diff_filespec_is_binary'/>
+<use f='codebrowser/diff.c' l='2295' u='r' c='diff_filespec_is_binary'/>
+<use f='codebrowser/grep.c' l='2042' u='r' c='grep_source_is_binary'/>
+<use f='codebrowser/grep.c' l='2043' u='r' c='grep_source_is_binary'/>
+<use f='codebrowser/userdiff.c' l='238' u='w' c='userdiff_config'/>
+<use f='codebrowser/userdiff.c' l='246' u='a' c='userdiff_config'/>

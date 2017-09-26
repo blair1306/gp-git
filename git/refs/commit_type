@@ -1,0 +1,30 @@
+<dec f='codebrowser/commit.h' l='26' type='const char *'/>
+<use f='codebrowser/builtin/describe.c' l='292' u='r' c='describe'/>
+<use f='codebrowser/builtin/ls-tree.c' l='80' u='r' c='show_tree'/>
+<use f='codebrowser/builtin/replace.c' l='413' u='r' c='create_graft'/>
+<def f='codebrowser/commit.c' l='20' type='const char *'/>
+<use f='codebrowser/commit.c' l='1570' u='r' c='commit_tree_extended'/>
+<use f='codebrowser/fast-import.c' l='2584' u='r' c='note_change_n'/>
+<use f='codebrowser/fast-import.c' l='2654' u='r' c='parse_from_existing'/>
+<use f='codebrowser/fast-import.c' l='2733' u='r' c='parse_merge'/>
+<use f='codebrowser/fast-import.c' l='3122' u='r' c='print_ls'/>
+<use f='codebrowser/tag.c' l='148' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>
+<use f='codebrowser/tag.c' l='148' u='r' c='parse_tag_buffer'/>

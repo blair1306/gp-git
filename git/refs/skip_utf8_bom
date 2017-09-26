@@ -1,0 +1,4 @@
+<dec f='codebrowser/utf8.h' l='17' type='int skip_utf8_bom(char ** , size_t )'/>
+<use f='codebrowser/attr.c' l='736' u='c' c='read_attr_from_file'/>
+<use f='codebrowser/dir.c' l='818' u='c' c='add_excludes'/>
+<def f='codebrowser/utf8.c' l='653' ll='660' type='int skip_utf8_bom(char ** text, size_t len)'/>

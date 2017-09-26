@@ -1,0 +1,6 @@
+<def f='codebrowser/commit.c' l='587' macro='1' type='int * indegree_slab_at(struct indegree_slab * s, const struct commit * c)'/>
+<use f='codebrowser/commit.c' l='681' u='c' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='692' u='c' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='710' u='c' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='731' u='c' c='sort_in_topological_order'/>
+<use f='codebrowser/commit.c' l='748' u='c' c='sort_in_topological_order'/>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/wildmatch.h' l='13' type='int wildmatch(const char * pattern, const char * text, unsigned int flags)'/>
+<use f='codebrowser/apply.c' l='2100' u='c' c='use_patch'/>
+<use f='codebrowser/builtin/describe.c' l='151' u='c' c='get_name'/>
+<use f='codebrowser/builtin/describe.c' l='167' u='c' c='get_name'/>
+<use f='codebrowser/builtin/ls-remote.c' l='27' u='c' c='tail_match'/>
+<use f='codebrowser/builtin/name-rev.c' l='133' u='c' c='subpath_matches'/>
+<use f='codebrowser/builtin/reflog.c' l='489' u='c' c='set_reflog_expiry_param'/>
+<use f='codebrowser/builtin/replace.c' l='44' u='c' c='show_reference'/>
+<use f='codebrowser/builtin/show-branch.c' l='441' u='c' c='append_matching_ref'/>
+<use f='codebrowser/config.c' l='241' u='c' c='include_by_gitdir'/>
+<use f='codebrowser/diffcore-order.c' l='70' u='c' c='match_order'/>
+<use f='codebrowser/dir.c' l='93' u='c' c='git_fnmatch'/>
+<use f='codebrowser/dir.c' l='98' u='c' c='git_fnmatch'/>
+<use f='codebrowser/dir.c' l='123' u='c' c='fnmatch_icase_mem'/>
+<use f='codebrowser/ref-filter.c' l='1635' u='c' c='match_pattern'/>
+<use f='codebrowser/ref-filter.c' l='1666' u='c' c='match_name_as_path'/>
+<use f='codebrowser/refs.c' l='251' u='c' c='filter_refs'/>
+<use f='codebrowser/revision.c' l='1143' u='c' c='ref_excluded'/>
+<use f='codebrowser/t/helper/test-wildmatch.c' l='14' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-wildmatch.c' l='16' u='c' c='cmd_main'/>
+<use f='codebrowser/t/helper/test-wildmatch.c' l='18' u='c' c='cmd_main'/>
+<def f='codebrowser/wildmatch.c' l='275' ll='278' type='int wildmatch(const char * pattern, const char * text, unsigned int flags)'/>
+<doc f='codebrowser/wildmatch.c' l='274'>/* Match the &quot;pattern&quot; against the &quot;text&quot; string. */</doc>

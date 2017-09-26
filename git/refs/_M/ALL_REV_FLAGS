@@ -1,0 +1,8 @@
+<dec f='codebrowser/revision.h' l='23'/>
+<use f='codebrowser/bisect.c' l='828' u='c'/>
+<use f='codebrowser/builtin/checkout.c' l='809' u='c'/>
+<use f='codebrowser/bundle.c' l='179' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1945' u='c'/>
+<use f='codebrowser/ref-filter.c' l='1946' u='c'/>
+<use f='codebrowser/remote.c' l='2054' u='c'/>
+<use f='codebrowser/remote.c' l='2055' u='c'/>

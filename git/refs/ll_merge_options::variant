@@ -1,0 +1,11 @@
+<dec f='codebrowser/ll-merge.h' l='10' type='unsigned int'/>
+<offset>1</offset>
+<doc f='codebrowser/ll-merge.h' l='10'>/* favor ours, favor theirs, or union merge */</doc>
+<use f='codebrowser/ll-merge.c' l='58' u='r' c='ll_binary_merge'/>
+<use f='codebrowser/ll-merge.c' l='80' u='r' c='ll_binary_merge'/>
+<use f='codebrowser/ll-merge.c' l='111' u='r' c='ll_xdl_merge'/>
+<use f='codebrowser/ll-merge.c' l='136' u='w' c='ll_union_merge'/>
+<use f='codebrowser/merge-recursive.c' l='893' u='w' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='897' u='w' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='900' u='w' c='merge_3way'/>
+<use f='codebrowser/merge-recursive.c' l='903' u='w' c='merge_3way'/>

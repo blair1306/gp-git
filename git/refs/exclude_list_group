@@ -1,0 +1,5 @@
+<def f='codebrowser/dir.h' l='72' ll='75'/>
+<size>16</size>
+<mbr r='exclude_list_group::nr' o='0' t='int'/>
+<mbr r='exclude_list_group::alloc' o='32' t='int'/>
+<mbr r='exclude_list_group::el' o='64' t='struct exclude_list *'/>

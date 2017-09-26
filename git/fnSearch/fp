@@ -1,0 +1,3 @@
+fputc_unlocked|fputc_unlocked
+fprintf_ln|fprintf_ln
+fprintf_or_die|fprintf_or_die

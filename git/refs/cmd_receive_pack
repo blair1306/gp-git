@@ -1,0 +1,6 @@
+<dec f='codebrowser/builtin.h' l='205' type='int cmd_receive_pack(int argc, const char ** argv, const char * prefix)'/>
+<def f='codebrowser/builtin/receive-pack.c' l='1924' ll='2030' type='int cmd_receive_pack(int argc, const char ** argv, const char * prefix)'/>
+<use f='codebrowser/git.c' l='446'/>
+<use f='codebrowser/git.c' l='446'/>
+<use f='codebrowser/git.c' l='446'/>
+<use f='codebrowser/git.c' l='446'/>

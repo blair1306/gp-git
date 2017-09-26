@@ -1,0 +1,28 @@
+<dec f='codebrowser/ewah/ewok.h' l='132' type='void ewah_set(struct ewah_bitmap * self, size_t i)'/>
+<doc f='codebrowser/ewah/ewok.h' l='115'>/**
+ * Set a given bit on the bitmap.
+ *
+ * The bit at position `pos` will be set to true. Because of the
+ * way that the bitmap is compressed, a set bit cannot be unset
+ * later on.
+ *
+ * Furthermore, since the bitmap uses streaming compression, bits
+ * can only set incrementally.
+ *
+ * E.g.
+ *		ewah_set(bitmap, 1); // ok
+ *		ewah_set(bitmap, 76); // ok
+ *		ewah_set(bitmap, 77); // ok
+ *		ewah_set(bitmap, 8712800127); // ok
+ *		ewah_set(bitmap, 25); // failed, assert raised
+ */</doc>
+<use f='codebrowser/dir.c' l='2446' u='c' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2448' u='c' c='write_one_dir'/>
+<use f='codebrowser/dir.c' l='2453' u='c' c='write_one_dir'/>
+<def f='codebrowser/ewah/ewah_bitmap.c' l='210' ll='245' type='void ewah_set(struct ewah_bitmap * self, size_t i)'/>
+<use f='codebrowser/pack-bitmap-write.c' l='83' u='c' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/pack-bitmap-write.c' l='87' u='c' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/pack-bitmap-write.c' l='91' u='c' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/pack-bitmap-write.c' l='95' u='c' c='bitmap_writer_build_type_index'/>
+<use f='codebrowser/split-index.c' l='234' u='c' c='prepare_to_write_split_index'/>
+<use f='codebrowser/split-index.c' l='236' u='c' c='prepare_to_write_split_index'/>

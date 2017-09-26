@@ -1,0 +1,14 @@
+<dec f='codebrowser/diff.h' l='331'/>
+<use f='codebrowser/builtin/add.c' l='60' u='c'/>
+<use f='codebrowser/builtin/add.c' l='91' u='c'/>
+<use f='codebrowser/builtin/fast-export.c' l='359' u='c'/>
+<use f='codebrowser/diff.c' l='3694' u='c'/>
+<use f='codebrowser/diff.c' l='4390' u='c'/>
+<use f='codebrowser/diff.c' l='4502' u='c'/>
+<use f='codebrowser/diff.c' l='4690' u='c'/>
+<use f='codebrowser/notes-merge.c' l='50' u='c'/>
+<use f='codebrowser/tree-diff.c' l='236' u='c'/>
+<use f='codebrowser/wt-status.c' l='279' u='c'/>
+<use f='codebrowser/wt-status.c' l='458' u='c'/>
+<use f='codebrowser/wt-status.c' l='527' u='c'/>
+<use f='codebrowser/wt-status.c' l='776' u='c'/>

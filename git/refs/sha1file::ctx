@@ -1,0 +1,8 @@
+<dec f='codebrowser/csum-file.h' l='11' type='SHA1_CTX'/>
+<offset>128</offset>
+<use f='codebrowser/csum-file.c' l='50' u='a' c='sha1flush'/>
+<use f='codebrowser/csum-file.c' l='61' u='a' c='sha1close'/>
+<use f='codebrowser/csum-file.c' l='113' u='a' c='sha1write'/>
+<use f='codebrowser/csum-file.c' l='152' u='a' c='sha1fd_throughput'/>
+<use f='codebrowser/csum-file.c' l='160' u='r' c='sha1file_checkpoint'/>
+<use f='codebrowser/csum-file.c' l='171' u='w' c='sha1file_truncate'/>

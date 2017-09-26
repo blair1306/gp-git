@@ -1,0 +1,4 @@
+<dec f='codebrowser/vcs-svn/sliding_window.h' l='7' type='struct line_buffer *'/>
+<offset>0</offset>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='66' u='r' c='move_window'/>
+<use f='codebrowser/vcs-svn/sliding_window.c' l='73' u='r' c='move_window'/>

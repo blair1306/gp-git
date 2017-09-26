@@ -1,0 +1,23 @@
+<dec f='include/time.h' l='137' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/archive-zip.c' l='611' u='r' c='dos_time'/>
+<use f='codebrowser/date.c' l='27' u='r' c='tm_to_time_t'/>
+<use f='codebrowser/date.c' l='30' u='r' c='tm_to_time_t'/>
+<use f='codebrowser/date.c' l='241' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='250' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='256' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='265' u='r' c='show_date'/>
+<use f='codebrowser/date.c' l='396' u='w' c='match_alpha'/>
+<use f='codebrowser/date.c' l='396' u='r' c='match_alpha'/>
+<use f='codebrowser/date.c' l='401' u='w' c='match_alpha'/>
+<use f='codebrowser/date.c' l='401' u='r' c='match_alpha'/>
+<use f='codebrowser/date.c' l='469' u='w' c='match_multi_number'/>
+<use f='codebrowser/date.c' l='522' u='r' c='nodate'/>
+<use f='codebrowser/date.c' l='718' u='w' c='parse_date_basic'/>
+<use f='codebrowser/date.c' l='902' u='r' c='date_time'/>
+<use f='codebrowser/date.c' l='904' u='w' c='date_time'/>
+<use f='codebrowser/date.c' l='929' u='r' c='date_pm'/>
+<use f='codebrowser/date.c' l='935' u='w' c='date_pm'/>
+<use f='codebrowser/date.c' l='943' u='r' c='date_am'/>
+<use f='codebrowser/date.c' l='949' u='w' c='date_am'/>
+<use f='codebrowser/trace.c' l='115' u='r' c='prepare_trace_line'/>

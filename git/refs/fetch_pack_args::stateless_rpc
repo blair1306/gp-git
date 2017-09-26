@@ -1,0 +1,16 @@
+<dec f='codebrowser/fetch-pack.h' l='26' type='unsigned int'/>
+<offset>267</offset>
+<use f='codebrowser/builtin/fetch-pack.c' l='126' u='w' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='163' u='r' c='cmd_fetch_pack'/>
+<use f='codebrowser/builtin/fetch-pack.c' l='183' u='r' c='cmd_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='240' u='r' c='consume_shallow_list'/>
+<use f='codebrowser/fetch-pack.c' l='289' u='r' c='send_request'/>
+<use f='codebrowser/fetch-pack.c' l='307' u='r' c='next_flush'/>
+<use f='codebrowser/fetch-pack.c' l='334' u='r' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='439' u='r' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='442' u='r' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='469' u='r' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='491' u='r' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='507' u='r' c='find_common'/>
+<use f='codebrowser/fetch-pack.c' l='930' u='r' c='do_fetch_pack'/>
+<use f='codebrowser/fetch-pack.c' l='993' u='r' c='do_fetch_pack'/>

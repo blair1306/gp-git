@@ -1,0 +1,42 @@
+<dec f='codebrowser/hashmap.h' l='278' type='void * hashmap_get(const struct hashmap * map, const void * key, const void * keydata)'/>
+<use f='codebrowser/hashmap.h' l='299' u='c' c='hashmap_get_from_hash'/>
+<doc f='codebrowser/hashmap.h' l='255'>/*
+ * Returns the hashmap entry for the specified key, or NULL if not found.
+ *
+ * `map` is the hashmap structure.
+ *
+ * `key` is a user data structure that starts with hashmap_entry that has at
+ * least been initialized with the proper hash code (via `hashmap_entry_init`).
+ *
+ * `keydata` is a data structure that holds just enough information to check
+ * for equality to a given entry.
+ *
+ * If the key data is variable-sized (e.g. a FLEX_ARRAY string) or quite large,
+ * it is undesirable to create a full-fledged entry structure on the heap and
+ * copy all the key data into the structure.
+ *
+ * In this case, the `keydata` parameter can be used to pass
+ * variable-sized key data directly to the comparison function, and the `key`
+ * parameter can be a stripped-down, fixed size entry structure allocated on the
+ * stack.
+ *
+ * If an entry with matching hash code is found, `key` and `keydata` are passed
+ * to `hashmap_cmp_fn` to decide whether the entry matches the key.
+ */</doc>
+<use f='codebrowser/attr.c' l='111' u='c' c='attr_hashmap_get'/>
+<use f='codebrowser/builtin/difftool.c' l='171' u='c' c='add_left_or_right'/>
+<use f='codebrowser/builtin/difftool.c' l='471' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='630' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/difftool.c' l='632' u='c' c='run_dir_diff'/>
+<use f='codebrowser/builtin/fast-export.c' l='122' u='c' c='anonymize_mem'/>
+<use f='codebrowser/config.c' l='1677' u='c' c='configset_find_element'/>
+<def f='codebrowser/hashmap.c' l='186' ll='189' type='void * hashmap_get(const struct hashmap * map, const void * key, const void * keydata)'/>
+<use f='codebrowser/hashmap.c' l='290' u='c' c='memintern'/>
+<use f='codebrowser/name-hash.c' l='38' u='c' c='find_dir_entry__hash'/>
+<use f='codebrowser/oidset.c' l='26' u='c' c='oidset_contains'/>
+<use f='codebrowser/patch-ids.c' l='102' u='c' c='has_commit_patch_id'/>
+<use f='codebrowser/remote.c' l='171' u='c' c='make_remote'/>
+<use f='codebrowser/sha1_file.c' l='2270' u='c' c='get_delta_base_cache_entry'/>
+<use f='codebrowser/sub-process.c' l='25' u='c' c='subprocess_find_entry'/>
+<use f='codebrowser/submodule-config.c' l='165' u='c' c='cache_lookup_path'/>
+<use f='codebrowser/submodule-config.c' l='185' u='c' c='cache_lookup_name'/>

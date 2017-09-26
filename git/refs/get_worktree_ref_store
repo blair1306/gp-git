@@ -1,0 +1,6 @@
+<dec f='codebrowser/refs.h' l='737' type='struct ref_store * get_worktree_ref_store(const struct worktree * wt)'/>
+<use f='codebrowser/branch.c' l='364' u='c' c='replace_each_worktree_head_symref'/>
+<def f='codebrowser/refs.c' l='1675' ll='1699' type='struct ref_store * get_worktree_ref_store(const struct worktree * wt)'/>
+<use f='codebrowser/t/helper/test-ref-store.c' l='52' u='c' c='get_store'/>
+<use f='codebrowser/worktree.c' l='31' u='c' c='add_head_info'/>
+<use f='codebrowser/worktree.c' l='328' u='c' c='find_shared_symref'/>

@@ -1,0 +1,10 @@
+<def f='codebrowser/strbuf.h' l='64' ll='68'/>
+<size>24</size>
+<doc f='codebrowser/strbuf.h' l='59'>/**
+ * This is the string buffer structure. The `len` member can be used to
+ * determine the current length of the string, and `buf` member provides
+ * access to the string itself.
+ */</doc>
+<mbr r='strbuf::alloc' o='0' t='size_t'/>
+<mbr r='strbuf::len' o='64' t='size_t'/>
+<mbr r='strbuf::buf' o='128' t='char *'/>
